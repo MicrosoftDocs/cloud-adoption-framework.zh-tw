@@ -4,7 +4,7 @@
       "docset_name": "cloud-adoption-framework",
       "build_source_folder": "docs",
       "build_output_subfolder": "cloud-adoption-framework",
-      "locale": "zh-TW",
+      "locale": "zh-tw",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -15,16 +15,14 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [
-    "mikki@microsoft.com"
-  ],
+  "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
+    "live",
     "master-sxs"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cloud-adoption-framework",
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cloud-adoption-framework.zh-tw",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
@@ -32,7 +30,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-TW",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-tw",
       "branch": "master",
       "branch_mapping": {}
     },
