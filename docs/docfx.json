@@ -39,6 +39,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/azure/cloud-adoption-framework/breadcrumb/toc.json",
       "bilingual_type": "hover over",
+      "disable_contribution_on_translation_quality": ["MT"],
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cloud-adoption-framework.zh-tw",
