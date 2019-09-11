@@ -1,0 +1,107 @@
+---
+title: 了解合作關係和支援選項
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: 說明可支援移轉工作的選項和方法
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
+ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
+ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905635"
+---
+# <a name="understand-partnership-options"></a>了解合作關係選項
+
+在移轉期間，雲端採用小組會實際地將工作負載移轉至雲端。 不同於在定義[數位資產](../../../digital-estate/index.md)或建置核心雲端基礎結構時的協作工作和問題解決工作，移轉更像是一系列重複執行的工作。 除了重複層面外，也可能有需要深入了解所選雲端提供者的測試和調整工作。 此程序的重複性質有時可由合作夥伴完美處理，從而降低對全職員工的負擔。 此外，當重複性程序遇到執行異常時，合作夥伴或許可以更好地配合深度的技術專業知識。
+
+合作夥伴往往會和一家或少數幾家雲端廠商密切配合。 為了更清楚地說明合作關係選項，本文其餘部分假設所選中的雲端提供者是 Microsoft Azure。
+
+在計劃、建置或遷移期間，公司一般會有四個執行合作關係選項：
+
+- **引導式自助服務。** 現有的技術小組會執行移轉，並由 Microsoft 提供協助。
+- **FastTrack for Azure。** 使用 Microsoft FastTrack for Azure 計劃來加速移轉。
+- **解決方案合作夥伴。** 與 Azure 解決方案合作夥伴或雲端解決方案合作夥伴 (CSP) 取得聯繫來加速移轉。
+- **支援的自助服務。** 由獲得 Microsoft 支援的現有技術人員來完成執行。
+
+## <a name="guided-self-service"></a>引導式自助服務
+
+如果組織自行規劃 Azure 移轉，Microsoft 隨時都能從旁協助其走完整個旅程。 為了協助組織快速移轉至 Azure，Microsoft 及其合作夥伴開發了一組廣泛的架構、指南、工具和服務，以降低風險並加快虛擬機器、應用程式和資料庫的移轉速度。 這些工具和服務支援廣泛的作業系統、程式設計語言、架構及資料庫等選擇。
+
+- **評估和移轉工具。** Azure 提供各種工具供您在雲端轉換的不同階段使用，包括評估現有的基礎結構。 如需詳細資訊，請參閱後續＜移轉＞章節中的＜評估＞一節。
+- **[Microsoft 雲端採用架構](../../index.md)。** 此架構為雲端採用和移轉提供了結構化的方法。 此架構的基礎是已在許多 Microsoft 支援的客戶互動中經過證實的作法，而且此架構會組織成一系列的步驟 (從架構、設計到實作)。 在每個步驟中，支援指引可協助您設計應用程式架構。
+- **[雲端設計模式](/azure/architecture/patterns)。** Azure 提供了一些實用的雲端設計模式供您在雲端中建置可靠、可擴充且安全的工作負載。 每個模式都會說明模式處理的問題、套用模式的考量，以及以 Azure 為基礎的範例。 大部分的模式會包括程式碼範例或程式碼片段，示範如何在 Azure 上實作模式。 不過，這些模式與任何分散式系統都有關聯 (無論是裝載於 Azure 或其他雲端平台上)。
+- **[雲端基本概念](/azure/architecture/guide)。** 基本概念有助於教導核心概念實作的基本方法。 此指南可協助技術人員思考超越單一 Azure 服務的解決方案。
+- **[範例案例](/azure/architecture/example-scenario)。** 此指南提供得自實際客戶實作的參考，會概述以往的客戶為了達成特定業務目標所遵循的工具、方法和程序。
+- **[參考架構](/azure/architecture/reference-architectures)。** 參考架構是依案例排列，將相關架構群組在一起。 每個架構都包含建議的做法，以及延展性、可用性、管理性和安全性的考量。 大部分還包含可部署的解決方案。
+
+## <a name="fasttrack-for-azure"></a>FastTrack for Azure
+
+[FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure) 提供來自 Azure 工程師的直接協助，與夥伴共同協助客戶快速、放心地建置 Azure 解決方案。 FastTrack 會帶來實際客戶體驗的最佳做法和工具，引領客戶一路完成 Azure 解決方案的安裝、設定、開發和生產，包括：
+
+- 資料中心移轉
+- Azure 上的 Windows Server
+- Azure 上的 Linux
+- SAP on Azure
+- 業務持續性和災害復原 (BCDR)
+- 高效能運算*
+- 雲端原生的應用程式
+- DevOps
+- 應用程式現代化
+- 雲端級分析**
+- 智慧型應用程式
+- 智慧代理程式**
+- 移往 Azure 的資料現代化
+- 安全性與管理
+- 分散於全球的資料
+- IoT***
+
+*在美國、加拿大、英國與西歐提供有限預覽
+
+**在英國與西歐提供有限預覽
+
+***將於 2019 年 H2 提供
+
+在 FastTrack for Azure 的典型互動期間，Microsoft 會協助您確定企業願景，以成功規劃及開發 Azure 解決方案。 該小組會評估架構需求，並提供指導方針、設計準則、工具與資源，以協助您建置、部署及管理 Azure 解決方案。 該小組可依要求匹配經驗豐富而可提供部署服務的合作夥伴，並定期聯繫以確保部署進展順利，並協助排除阻礙。
+
+FastTrack for Azure 的典型互動主要階段如下：
+
+- **探索。** 找出重要的專案關係人、針對所要解決的問題了解其目標或願景，然後評估架構需求。
+- **實現解決方案。** 了解建置應用程式的設計原則、檢閱應用程式與解決方案的架構，並取得指導和工具，以推動概念證明 (PoC) 到生產階段的落實。
+- **持續的合作關係。** Azure 工程師和計劃經理會定期聯繫，以確保部署進展順利以及協助排除阻礙。
+
+## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>與雲端採用架構方法配合的 Microsoft 服務供應項目
+
+![Microsoft 服務的雲端採用架構方法](../../../_images/mcs-program-approach.jpg)
+
+**評定：** Microsoft 服務會使用[統一的資料和工具驅動方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) (包含架構研討會、Azure 即時資訊、安全性和身分識別威脅模型以及各種工具) 來讓您深入了解現有 Azure 環境的挑戰、風險、建議和問題，以及所獲得的重要成果 (例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf))。
+
+**採用：** 透過 Microsoft 服務的 [Azure 雲端基礎](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)，藉由將您的需求對應至最適當的參考架構和計劃來建立核心的 Azure 設計、模式和治理架構；設計和部署工作負載所需的基礎結構、管理、安全性和身分識別。
+
+**遷移/最佳化：** Microsoft 服務的[雲端現代化解決方案](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)提供完整的方法讓您將應用程式和基礎結構移至 Azure，以及在由簡潔的移轉方案所支援的雲端中進行一次最佳化和現代化。
+
+**創新：** Microsoft 服務的[卓越雲端中心（CCoE）解決方案](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)提供 DevOps 的訓練，並使用結合規範性雲端原生服務管理和安全性控制的 DevOps 準則，以協助推動業務創新。提高靈活性，並在安全、可預測且彈性的服務傳遞和作業管理功能內，將時間縮減為價值。
+
+## <a name="azure-support"></a>Azure 支援
+
+如果您有問題或需要協助，請[建立支援要求](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)。 如果您的支援要求需要深入的技術指引，請瀏覽 [Azure 支援方案](https://azure.microsoft.com/support/plans)來為您的需求尋找最能配合的方案。
+
+## <a name="azure-solutions-partner"></a>Azure 解決方案合作夥伴
+
+Microsoft 認證解決方案提供者專門根據全球客戶的解決方案，提供最新 Microsoft 技術。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
+
+從可以提供現成或自訂 Azure 解決方案的合作夥伴，以及可以部署和管理這些解決方案的合作夥伴取得協助：
+
+- **[尋找雲端解決方案合作夥伴](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
+- **[尋找受控服務合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure 受控服務合作夥伴 (MSP) 可藉由引導雲端旅程的所有層面來協助企業轉移至 Azure。 從諮詢、移轉和營運管理，雲端 MSP 會向客戶展示採用雲端所能帶來的所有好處。 其也可作為單一窗口來提供常見的支援、佈建和帳單體驗，而這些全都是透過彈性的隨用隨付 (PAYG) 業務模型來進行。
+
+## <a name="next-steps"></a>後續步驟
+
+在選取合作夥伴和支援策略後，即可更新[發行和反覆執行待辦項目](./release-iteration-backlog.md)以反映所規劃的工作和任務。
+
+> [!div class="nextstepaction"]
+> [使用發行和反覆執行待辦項目來管理變更](./release-iteration-backlog.md)

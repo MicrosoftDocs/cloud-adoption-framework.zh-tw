@@ -1,0 +1,51 @@
+---
+title: 效能結果的範例
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: 效能結果的範例
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 04/04/2019
+ms.topic: guide
+ms.service: cloud-adoption-framework
+ms.subservice: strategy
+ms.openlocfilehash: 2a8e4d118e48e11cce979dcb82f23329554d0d61
+ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70819812"
+---
+# <a name="examples-of-performance-outcomes"></a>效能結果的範例
+
+如[商務結果](index.md)中所述, 有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于常見的商務量值: 效能。
+
+在現今的技術社會中, 客戶會假設應用程式正常運作, 而且一律可供使用。 當不符合此預期時, 會導致信譽損毀, 且成本高昂且長期持續。
+
+## <a name="performance"></a>效能
+
+最大型的雲端運算服務在安全的資料中心全球網路上執行，並定期升級至最新一代快速有效率的運算硬體。 這對單一公司資料中心提供了數個優點, 例如降低應用程式的網路延遲, 以及更高的規模經濟。
+
+以地球上最大的網路之一連結的高效率基礎100結構, 讓您的業務轉型並降低成本。 Azure 擁有比其他任何雲端提供者更多的全域區域。 這會轉譯成使應用程式更接近全球使用者所需的規模, 保留資料的存放區, 並為客戶提供完整的合規性與復原選項。
+
+- **範例 1**:服務公司正與託管多個營運基礎結構資產的主控提供者合作。 這些系統會遇到頻繁的中斷和效能不佳的問題。 公司將其資產遷移至 Azure, 以利用雲端的 SLA 和效能控制。 停機時間的代價是, 每分鐘中斷大約15000美元。 由於每個月有四到八個小時的中斷, 因此可以輕鬆地論證此組織的轉換。
+
+- **範例 2：** 取用者投資公司是在雲端應用程式創新投入的初期階段。 敏捷式流程和 DevOps 已成熟良好, 但應用程式效能已尖峰。 作為更成熟的轉換, 公司根據使用需求來啟動程式, 以監視和自動調整大小。 公司能夠使用 Azure 效能管理工具來消除調整大小的問題, 導致交易的增加 5%。
+
+## <a name="reliability"></a>可靠性
+
+由於雲端運算能讓資料在雲端提供者網路多個備援站台上進行鏡像處理，因此資料備份、災害復原與商務持續性變得可容易且更實惠。
+
+其中一項重要的功能是確保公司資料永遠不會遺失, 而且即使伺服器損毀、電力中斷或自然災難, 應用程式仍可供使用。 您可以將資料備份至 Azure, 藉此確保您的資料安全且可復原。
+
+Azure 備份是可降低基礎結構成本的簡單解決方案, 同時提供增強的安全性機制來保護您的資料免于勒索軟體。 有了一個解決方案, 您就可以保護在 Azure 中執行的工作負載, 以及跨 Linux、Windows、VMware 和 Hyper-v 的內部部署環境。 您可以藉由讓應用程式在 Azure 中執行, 以確保業務持續性。
+
+Azure Site Recovery 可讓您輕鬆地在 Azure 區域之間複寫應用程式來測試嚴重損壞修復。 您也可以將內部部署 VMware 和 Hyper-v 虛擬機器和實體伺服器複寫至 Azure, 以在主要網站中斷時維持可用狀態。 而且, 您可以在主要網站再次啟動並執行時, 將工作負載復原到其中。
+
+- **範例**：石油和天然氣公司使用 Azure 技術來執行完整的 site recovery。 該公司選擇不完全採用雲端來進行日常作業, 但雲端的嚴重損壞修復和業務持續性 (DRBC) 功能仍會保護其資料中心。 身為數十萬英里的颶風, 其執行夥伴已開始將網站復原至 Azure。 在耗盡風暴之前, 所有任務關鍵性資產都在 Azure 中執行, 以防止任何停機時間。
+
+## <a name="next-steps"></a>後續步驟
+
+瞭解如何[使用商務結果範本](./how-to-use-the-business-outcome-template.md)。
+
+> [!div class="nextstepaction"]
+> [使用商務結果範本](./how-to-use-the-business-outcome-template.md)
