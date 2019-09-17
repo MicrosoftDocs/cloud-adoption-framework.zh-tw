@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829250"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023427"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
-雲端合理化是評估資產以判斷何種方法最適合用來將其裝載於雲端的程序。 在您決定[方法](approach.md)並匯總[清查](inventory.md)之後, 雲端合理化就可以開始。 [雲端合理化](rationalize.md)會討論最常見的合理化選項。
+雲端合理化是評估資產以判斷何種方法最適合用來將其裝載於雲端的程序。 在您決定[方法](./approach.md)並匯總[清查](./inventory.md)之後, 雲端合理化就可以開始。 [雲端合理化](./rationalize.md)會討論最常見的合理化選項。
 
 ## <a name="traditional-view-of-rationalization"></a>合理化的傳統檢視
 
@@ -30,7 +30,7 @@ ms.locfileid: "70829250"
 
 **定性分析:** 下一組決策需要以定性分析的形式來進行人類智慧。 通常, 這裡所提的問題對於解決方案而言是唯一的, 而且只能由商務專案關係人和 power 使用者回答。 這些決策通常會延遲處理常式, 因此會大幅降低問題。 這種分析通常會針對每個應用程式耗用40到80的 FTE 小時。
 
-如需建立定性分析問題清單的相關指引, 請參閱[數位資產規劃方法](approach.md)。
+如需建立定性分析問題清單的相關指引, 請參閱[數位資產規劃方法](./approach.md)。
 
 **合理化決策:** 如果合理化小組的經驗豐富，定性和量化資料將可建立明確的決策。 只可惜，合理化經驗豐富的小組僱用成本高昂，或是需要好幾個月的事前訓練。
 
@@ -60,7 +60,7 @@ ms.locfileid: "70829250"
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>量化分析：簡化決策
 
-不論清查探索的方法為何, 量化分析都可以推動初始決策和假設。 尤其是在嘗試找出第一個工作負載時，或合理化的目標是高階成本比較時，更是如此。 在漸進式合理化程式中，雲端策略小組和雲端採用小組會將這[五個合理化的](5-rs-of-rationalization.md)能力限制為兩個精確的決策，而且只會套用這些量化因素。 這可簡化分析, 並減少磁片磁碟機變更所需的初始資料量。
+不論清查探索的方法為何, 量化分析都可以推動初始決策和假設。 尤其是在嘗試找出第一個工作負載時，或合理化的目標是高階成本比較時，更是如此。 在漸進式合理化程式中，雲端策略小組和雲端採用小組會將這[五個合理化的](./5-rs-of-rationalization.md)能力限制為兩個精確的決策，而且只會套用這些量化因素。 這可簡化分析, 並減少磁片磁碟機變更所需的初始資料量。
 
 例如, 如果組織在 IaaS 遷移至雲端的過程中, 您可以假設大部分的工作負載都將被淘汰或重新裝載。
 
@@ -116,7 +116,7 @@ ms.locfileid: "70829250"
 
 ### <a name="qualitative-analysis"></a>定性分析
 
-雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 此共同作業會建立受控制的機會, 以建立及測試定性的分析準則。 較小的人口會建立一個機會來調查受影響的使用者, 並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素, 請參閱[5 Rs 中合理化](5-rs-of-rationalization.md)的特定合理化目標。
+雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 此共同作業會建立受控制的機會, 以建立及測試定性的分析準則。 較小的人口會建立一個機會來調查受影響的使用者, 並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素, 請參閱[5 Rs 中合理化](./5-rs-of-rationalization.md)的特定合理化目標。
 
 ### <a name="migration"></a>遷移
 
@@ -161,4 +161,4 @@ ms.locfileid: "70829250"
 合理化工作的輸出是由所選轉換影響的所有資產的優先順序待處理專案。 此待辦項目現已可作為雲端服務成本計算模型的基礎。
 
 > [!div class="nextstepaction"]
-> [根據數位資產調整成本模型](calculate.md)
+> [根據數位資產調整成本模型](./calculate.md)

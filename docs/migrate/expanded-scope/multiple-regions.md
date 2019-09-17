@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3977618981212e2c0dc4dcd95ae14bf4dc773499
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 2d834b9e7c3e661561dc44b8d3104ef819f0c6af
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905598"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025494"
 ---
 # <a name="multiple-geographic-regions"></a>多個地理區域
 
@@ -74,8 +74,8 @@ ms.locfileid: "70905598"
 
 當移轉範圍包含多個區域時，雲端採用小組應評估下列整備考量：
 
-- 資料主權可能需要將某些資產在地化，但有許多資產可能不受這些合規性限制所控管。 記錄、報告、網路路由、身分識別和其他核心 IT 服務等項目可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 我們的建議是，雲端採用小組應評估這些服務的共用服務模型，如[具有共用服務的中樞和輪輻拓撲參考架構](/azure/architecture/reference-architectures/hybrid-networking/shared-services)所述
-- 在為類似環境部署多個執行個體時，環境處理站可能會建立一致性、改善治理並加快部署速度。 [大型企業治理旅程](../../governance/journeys/complex-enterprise/index.md)建立了一個方法，其會產生規模橫跨多個區域的環境處理站。
+- 資料主權可能需要將某些資產在地化，但有許多資產可能不受這些合規性限制所控管。 記錄、報告、網路路由、身分識別和其他核心 IT 服務等項目可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 我們的建議是，雲端採用小組應評估這些服務的共用服務模型，如[具有共用服務的中樞和輪輻拓撲參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)所述
+- 在為類似環境部署多個執行個體時，環境處理站可能會建立一致性、改善治理並加快部署速度。 [大型企業治理旅程](../../govern/guides/complex/index.md)建立了一個方法，其會產生規模橫跨多個區域的環境處理站。
 
 該小組一旦熟悉基準方法且整備也可配合之後，就必須考慮幾個資料驅動必要條件：
 
@@ -94,14 +94,14 @@ ms.locfileid: "70905598"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評估程序進行期間的建議動作
 
-**評估跨資料中心的相依性：** [Azure Migrate 中的相依性視覺效果工具](/azure/migrate/concepts-dependency-visualization)可協助您找出相依性。 在移轉之前使用此工具集是不錯的一般最佳做法。 不過，在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
+**評估跨資料中心的相依性：** [Azure Migrate 中的相依性視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可協助您找出相依性。 在移轉之前使用此工具集是不錯的一般最佳做法。 不過，在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
 > 兩個重要事項：首先，必須有了解資產位置和 IP 位址架構的主題專家才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。
 
-**識別全球使用者影響：** 得自必要條件使用者設定檔分析的輸出應該能識別會受全球使用者設定檔影響的任何工作負載。 當移轉候選方案位於受影響的工作負載清單中時，在為移轉做準備的架構設計人員應該要諮詢網路和作業主題專家，以驗證網路路由和效能預期。 架構內至少應包含最接近的網路作業中心 (NOC) 與 Azure 之間的 ExpressRoute 連線。 [ExpressRoute 連線的參考架構](/azure/architecture/reference-architectures/hybrid-networking/expressroute)有助於設定所需的連線。
+**識別全球使用者影響：** 得自必要條件使用者設定檔分析的輸出應該能識別會受全球使用者設定檔影響的任何工作負載。 當移轉候選方案位於受影響的工作負載清單中時，在為移轉做準備的架構設計人員應該要諮詢網路和作業主題專家，以驗證網路路由和效能預期。 架構內至少應包含最接近的網路作業中心 (NOC) 與 Azure 之間的 ExpressRoute 連線。 [ExpressRoute 連線的參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)有助於設定所需的連線。
 
-**合規性設計：** 得自必要條件使用者設定檔分析的輸出應該能識別會受資料主權需求影響的任何工作負載。 在評估程序的架構活動進行期間，所指派的架構設計人員應該要諮詢合規性主題專家，以了解跨多個區域進行移轉/部署的任何需求。 這些需求會大幅影響設計策略。 [多區域 Web 應用程式](/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構有助於設計。
+**合規性設計：** 得自必要條件使用者設定檔分析的輸出應該能識別會受資料主權需求影響的任何工作負載。 在評估程序的架構活動進行期間，所指派的架構設計人員應該要諮詢合規性主題專家，以了解跨多個區域進行移轉/部署的任何需求。 這些需求會大幅影響設計策略。 [多區域 Web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構有助於設計。
 
 > [!WARNING]
 > 在使用上述任一參考架構時，可能必須從複寫程序中排除特定資料元素以符合資料主權需求。 這會在升階程序中添加額外的步驟。
@@ -118,10 +118,10 @@ ms.locfileid: "70905598"
 
 **網路頻寬設計：** 在複寫和後續進行同步處理期間，二進位資料會透過網路從來源資料中心移至目標 Azure 資料中心內的 Site Recovery 保存庫。 此程序會耗用頻寬。 將工作負載複製到第二個區域將會讓耗用的頻寬量加倍。 當頻寬有限或工作負載涉及大量設定或資料漂移時，便可能會干擾到完成移轉所需的時間。 更重要的是，還可能會影響使用者或應用程式的體驗，只因為其仍依賴來源資料中心的頻寬。
 
-**資料同步處理：** 消耗頻寬最大的因素往往是資料平台在進行同步處理。 如[多區域 Web 應用程式](/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構所定義，系統往往必須進行資料同步處理才能讓應用程式保持一致。 如果這是應用程式所需的操作狀態，則最好在遷移應用程式和中介層資產之前，先完成來源資料平台與每個雲端平台之間的同步處理工作。
-**資料同步處理：** 消耗頻寬最大的因素往往是資料平台在進行同步處理。 如[多區域 Web 應用程式](/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構所定義，系統往往必須進行資料同步處理才能讓應用程式保持一致。 如果這是應用程式所需的操作狀態，則最好在遷移應用程式和中介層資產之前，先完成來源資料平台與每個雲端平台之間的同步處理工作。
+**資料同步處理：** 消耗頻寬最大的因素往往是資料平台在進行同步處理。 如[多區域 Web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構所定義，系統往往必須進行資料同步處理才能讓應用程式保持一致。 如果這是應用程式所需的操作狀態，則最好在遷移應用程式和中介層資產之前，先完成來源資料平台與每個雲端平台之間的同步處理工作。
+**資料同步處理：** 消耗頻寬最大的因素往往是資料平台在進行同步處理。 如[多區域 Web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)和[多區域多層式架構應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)的參考架構所定義，系統往往必須進行資料同步處理才能讓應用程式保持一致。 如果這是應用程式所需的操作狀態，則最好在遷移應用程式和中介層資產之前，先完成來源資料平台與每個雲端平台之間的同步處理工作。
 
-**Azure 至 Azure 災害復原：** 還有一個替代選項可以進一步降低複雜性。 如果時間表和資料同步處理方法採用有兩個步驟的部署，則 [Azure 至 Azure 災害復原](/azure/site-recovery/azure-to-azure-architecture)也是可以接受的解決方案。 在此案例中，會先使用單一 Site Recovery 保存庫和設定或處理序伺服器設計將工作負載遷移至第一個 Azure 資料中心。 工作負載經過測試後，即可從遷移遷移後的資產復原到第二個 Azure 資料中心。 這種方法可減少對來源資料中心資源的影響，並利用 Azure 資料中心之間所能提供的更快傳送速率和高頻寬上限。
+**Azure 至 Azure 災害復原：** 還有一個替代選項可以進一步降低複雜性。 如果時間表和資料同步處理方法採用有兩個步驟的部署，則 [Azure 至 Azure 災害復原](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture)也是可以接受的解決方案。 在此案例中，會先使用單一 Site Recovery 保存庫和設定或處理序伺服器設計將工作負載遷移至第一個 Azure 資料中心。 工作負載經過測試後，即可從遷移遷移後的資產復原到第二個 Azure 資料中心。 這種方法可減少對來源資料中心資源的影響，並利用 Azure 資料中心之間所能提供的更快傳送速率和高頻寬上限。
 
 > [!NOTE]
 > 這種方法可能會提高短期移轉成本，因為這可能會導致額外的輸出頻寬費用。

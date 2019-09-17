@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833475"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025410"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>管理累加移轉工作中的變更
 
-本文假設移轉程序在本質上是累加的，且會與[控管程序](../../../governance/index.md)平行執行。 不過，您可以使用相同的指引，在傳統瀑布式變更管理方法的工作分工結構中導入初始作業。
+本文假設移轉程序在本質上是累加的，且會與[控管程序](../../../govern/index.md)平行執行。 不過，您可以使用相同的指引，在傳統瀑布式變更管理方法的工作分工結構中導入初始作業。
 
 ## <a name="release-backlog"></a>發行待處理項目
 

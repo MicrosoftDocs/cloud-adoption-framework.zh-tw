@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828678"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022330"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件檢查清單
 
@@ -21,7 +21,7 @@ ms.locfileid: "70828678"
 
 ## <a name="strategic-inputs"></a>策略性輸入
 
-正確的策略性輸入可確保所做的工作會因應商務結果而達成。 [雲端採用架構的策略區段](../business-strategy/index.md)提供一系列的練習, 以開發清楚的策略。 這些練習的輸出會饋送雲端採用方案。 在開發計畫之前, 請確定下列專案已妥善定義為這些練習的結果:
+正確的策略性輸入可確保所做的工作會因應商務結果而達成。 [雲端採用架構的策略區段](../strategy/index.md)提供一系列的練習, 以開發清楚的策略。 這些練習的輸出會饋送雲端採用方案。 在開發計畫之前, 請確定下列專案已妥善定義為這些練習的結果:
 
 - **清除動機**:為什麼我們採用雲端？
 - **定義的商務結果**:我們預期會從採用雲端看到哪些結果？

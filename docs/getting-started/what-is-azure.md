@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829146"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023322"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Azure 就像其他雲端平台一樣，需仰賴名為**虛擬化**的技術。 
 
 每個網狀架構控制器執行個體都會連線至執行雲端協調流程軟體的另一組伺服器，一般稱之為**前端**。 前端會主控 Web 服務、RESTful API，以及雲端執行的所有功能所使用的內部 Azure 資料庫。
 
-例如，前端會裝載處理客戶要求的服務，以配置 Azure 資源（例如[虛擬機器](/azure/virtual-machines)）和服務（如[Cosmos DB](/azure/cosmos-db/introduction)）。 首先，前端會驗證使用者，並確認使用者是否有權配置要求的資源。 若是如此，前端會檢查資料庫，找出具有足夠容量的伺服器機架，然後指示該機架上的網狀架構控制器配置資源。
+例如，前端會裝載處理客戶要求的服務，以配置 Azure 資源（例如[虛擬機器](https://docs.microsoft.com/azure/virtual-machines)）和服務（如[Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)）。 首先，前端會驗證使用者，並確認使用者是否有權配置要求的資源。 若是如此，前端會檢查資料庫，找出具有足夠容量的伺服器機架，然後指示該機架上的網狀架構控制器配置資源。
 
 基本上，Azure 是一個龐大的伺服器和網路硬體集合，執行一組複雜的分散式應用程式，以協調這些伺服器上的虛擬化硬體和軟體的設定和操作。 這是讓 azure 更強大&mdash;的使用者不再負責維護和升級硬體的這種協調流程，因為 Azure 會在幕後完成這一切。
 
@@ -45,8 +45,4 @@ Azure 就像其他雲端平台一樣，需仰賴名為**虛擬化**的技術。 
 既然您已瞭解 Azure 內部，請瞭解雲端資源管理。
 
 > [!div class="nextstepaction"]
-> [深入了解資源管理](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [深入了解資源管理](../govern/resource-consistency/what-is-governance.md)

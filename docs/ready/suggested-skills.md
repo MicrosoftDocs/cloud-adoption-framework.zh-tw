@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819149"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025121"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -24,7 +24,7 @@ ms.locfileid: "70819149"
 根據雲端採用工作的相關動機和業務成果，領導人可能需要建立新的組織結構或虛擬小組 (V 小組) 來輔助各種功能。 下列文章可協助您開發必要技能，以根據所需的結果來結構化這些小組：
 
 - [一開始的組織定位](./index.md)：概述用於輔助特定目標的組織定位和各種小組結構。
-- [打破孤島和封地模式](../organization/fiefdoms-silos.md)：了解兩個常見的組織反模式，以及引導小組進行生產性共同作業的方式。
+- [打破孤島和封地模式](../organize/fiefdoms-silos.md)：了解兩個常見的組織反模式，以及引導小組進行生產性共同作業的方式。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
 

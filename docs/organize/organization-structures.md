@@ -1,0 +1,101 @@
+---
+title: 建立小組結構
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: 建立小組結構
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 09/10/2019
+ms.topic: article
+ms.service: cloud-adoption-framework
+ms.subservice: organize
+ms.custom: organize
+ms.openlocfilehash: dbc3c21876f61444f3927fe4c61cf1b4302625b6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71026495"
+---
+# <a name="establish-team-structures"></a>建立小組結構
+
+每個雲端功能都是由每個雲端採用的人員所提供。 這些指派和小組結構可以開發成長，也可以故意設計成符合定義的小組結構。
+
+隨著採用需求的成長，需要平衡和結構。 本文提供一般小組結構在組織成熟度各個階段的範例。 下圖和清單概述以一般成熟階段為基礎的結構。 使用這些範例來尋找最符合您操作需求的組織結構。
+
+![組織成熟度週期](../_images/ready/org-ready-maturity.png)
+
+組織結構通常會透過以下所述的一般成熟度模型進行移動:
+
+1. [僅限雲端採用小組](#cloud-adoption-team-only)
+2. [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
+3. [中央 IT](#central-it)
+4. [策略性對齊](#strategic-alignment)
+5. [操作對齊](#operational-alignment)
+6. [卓越的雲端中心 (CCoE)](#cloud-center-of-excellence)
+
+大部分的公司從*雲端採用小組*開始。 不過，我們建議您建立更類似[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構的組織結構。
+
+## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
+
+雲端採用小組是所有雲端採用工作的系統核心。 這個小組會驅動可實現採用的技術變更。 根據採用工作的目標，這個團隊可能會包含各種小組成員，負責處理一組廣泛的技術和商務任務。
+
+![雲端採用小組, 搭配治理和安全性小組](../_images/ready/org-ready-adoption-only.png)
+
+針對小規模或初期採用的工作，這個小組可能會很小，只是一個人。 在較大規模或延遲的工作中，通常會有數個雲端採用小組，每個團隊大約有六位工程師。 不論大小或工作為何，任何雲端採用小組的一致層面，都是提供將解決方案上架到雲端的方法。 對於某些組織來說, 這可能是足夠的組織結構。 [雲端採用小組](./cloud-adoption.md)一文提供深入瞭解雲端採用小組的結構、組合和功能。
+
+> [!WARNING]
+> *僅*以雲端採用小組 (或多個雲端採用小組) 操作會被視為*反模式*, 應予以避免。 至少，請考慮[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)。
+
+## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法: 最基本的可行產品 (MVP)
+
+我們建議您有兩個小組在雲端採用工作之間建立平衡。 這兩個小組會負責進行採用工作中的各種功能。
+
+- **雲端採用小組：** 這個小組負責所採用之解決方案的技術解決方案、商務對齊、專案管理和作業。
+- **雲端治理小組:** 為了平衡雲端採用小組, 雲端治理小組致力於確保所採用解決方案的卓越程度。 雲端治理小組負責平臺成熟度、平臺營運、治理和自動化。
+
+![雲端治理平衡的雲端採用](../_images/ready/org-ready-best-practice.png)
+
+這個經過證實的方法被視為 MVP，因為它可能不是持續性的。 每個小組都會戴上許多的帽子, 如責任、參與、 [*諮詢、通知*(RACI) 圖表](./raci-alignment.md)中所述。
+
+下列各節將描述一個完全配備的已證明組織結構，以及將適當結構對齊至您組織的方法。
+
+## <a name="central-it"></a>集中式 IT
+
+隨著採用規模的調整，雲端治理小組可能會努力與來自多個雲端採用小組的創新流程保持一致。 這在具有大量合規性、作業或安全性需求的環境中更是如此。 在這個階段，公司通常會將雲端責任轉移給現有的中央 IT 小組。 如果該小組能夠重新評估工具、處理常式和人員，以更大規模地支援雲端採用，則包含中央 IT 小組可以增加顯著的價值。 從營運、自動化、安全性及系統管理的主題專家，到現代化的中央 IT，都能推動有效的營運創新。
+
+![使用中央 IT 模型進行雲端採用](../_images/ready/org-ready-central-it.png)
+
+可惜的是，中央 IT 階段可以是組織成熟度的其中一個風險最高階段。 中央 IT 小組必須加入具有強大成長思維的資料表。 如果小組將雲端視為增加和調整其功能的機會，那麼它可以在整個過程中提供絕佳價值。 不過，如果中央 IT 小組將雲端採用主要視為其現有模型的威脅，則中央 IT 小組會成為雲端採用小組及其所支援之商務目標的障礙。 有些中央 IT 小組花了數個月或甚至幾年的時間，嘗試強制雲端與內部部署的方法保持一致，只有負面的結果。 雲端不需要在中央 IT 中變更所有專案，但需要變更。 如果 IT 小組在中央 IT 團隊內的防禦改變，此一階段的成熟度可能很快就會成為文化反模式。
+
+雲端採用方案的重點在於平臺即服務（PaaS）、DevOps 或其他需要較少作業支援的解決方案，較不可能在此成熟度階段看到價值。 相反地，這些類型的解決方案最可能是藉由嘗試集中進行妨礙運作或封鎖。 較高的成熟度層級（像是[雲端的卓越（CCoE））](#cloud-center-of-excellence)更可能會針對這些類型的轉型成果產生正面的結果。 若要瞭解雲端中中央 IT 與 CCoE 之間的差異，請參閱[卓越的雲端中心](./cloud-center-of-excellence.md)。
+
+## <a name="strategic-alignment"></a>策略性對齊
+
+隨著雲端採用的投資成長並實現商業價值，商務專案關係人經常會變得更多。 定義的雲端策略小組（如下圖所示）會將這些商務專案關係人對應到最大化雲端採用投資所實現的價值。
+
+![新增定義的雲端策略小組](../_images/ready/org-ready-strategy-aligned.png)
+
+當成熟度發生成長時，由於 IT 導向的雲端採用工作，因此策略性的對齊通常會在治理或中央 IT 小組之前。 當企業領導雲端採用成果時，將焦點放在作業模型和組織的重點可能會稍早發生。 可能的話，商務結果和雲端策略小組都應該在程式中及早定義。
+
+## <a name="operational-alignment"></a>操作對齊
+
+實現雲端採用成果的商業價值需要穩定的作業。 雲端中的作業可能需要新的工具、處理常式或技能。 當需要穩定的 IT 作業來達成商業成果時，請務必新增定義的雲端作業小組，如下所示。
+
+![新增定義的雲端操作小組](../_images/ready/org-ready-operations-aligned.png)
+
+雲端作業可以由現有的 IT 作業角色來傳遞。 但是，將雲端作業委派給 IT 營運以外的其他方並不常見。 受管理的服務提供者、DevOps 團隊和業務單位，通常會採用與雲端作業相關聯的責任，以及 IT 營運提供的支援和護欄。 這在雲端採用方面日益普遍，著重在 DevOps 或 PaaS 部署上。
+
+## <a name="cloud-center-of-excellence"></a>雲端卓越中心
+
+在最高的成熟度狀態中，雲端優先的現代化營運模式是一項卓越的雲端中心。 這種方法提供中央 IT 功能，例如治理、安全性、平臺和自動化。
+
+![雲端卓越中心](../_images/ready/org-ready-ccoe.png)
+
+這個結構與上述中央 IT 結構之間的主要差異在於自助服務的重點。 此結構中的小組會以盡可能地委派控制項的目的來進行組織。 將治理和合規性作法與雲端原生解決方案一致，可以建立護欄和保護機制。 與中央 IT 模型不同的是，雲端原生方法可將創新最大化，並將作業額外負荷降至最低。 若要採用此模型，必須將 IT 流程現代化的相互合約用於企業和 IT 領導。 此模型不太可能發生成長，而且通常需要主管支援。
+
+## <a name="next-steps"></a>後續步驟
+
+在符合組織結構成熟度的特定階段之後，您就可以使用[RACI 圖表](./raci-alignment.md)來對應每個小組的責任與責任。
+
+> [!div class="nextstepaction"]
+> [對齊適當的 RACI 圖](./raci-alignment.md)

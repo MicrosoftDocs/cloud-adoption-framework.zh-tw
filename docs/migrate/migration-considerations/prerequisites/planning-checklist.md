@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833293"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022604"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>移轉環境規劃檢查清單 - 在移轉前先驗證環境是否已就緒
 
@@ -33,7 +33,7 @@ ms.locfileid: "70833293"
 
 無論您是否選擇要在初始移轉期間與更廣泛的雲端控管策略達成一致，都必須確保您的雲端部署環境已適當設定而可支援工作負載。
 
-如果您打算從一開始就讓移轉與雲端控管策略保持一致，您必須套用[雲端治理的五個專業領域](../../../governance/governance-disciplines.md)，以利傳達可讓雲端環境符合整體公司需求的原則、工具鏈和強制執行機制的決策。 請參閱雲端採用架構的[可採取動作的控管設計指南](../../../governance/journeys/index.md)，以取得如何使用 Azure 服務來實作此模型的範例。
+如果您打算從一開始就讓移轉與雲端控管策略保持一致，您必須套用[雲端治理的五個專業領域](../../../govern/governance-disciplines.md)，以利傳達可讓雲端環境符合整體公司需求的原則、工具鏈和強制執行機制的決策。 請參閱雲端採用架構的[可採取動作的控管設計指南](../../../govern/guides/index.md)，以取得如何使用 Azure 服務來實作此模型的範例。
 
 如果您的初始移轉並未與更廣泛的雲端控管策略緊密保持一致，則仍需要管理組織、存取和基礎結構規劃的一般問題。 請參閱 [Azure整備指南](../../../ready/azure-readiness-guide/index.md)，以利做出這些雲端整備決策。
 
@@ -64,7 +64,7 @@ ms.locfileid: "70833293"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果環境符合最低需求，即可將其視為通過移轉整備核准的環境。 [文化複雜性和變更管理](./culture-complexity.md)有助於調整角色和責任，以確保在計劃執行期間能符合適當預期。
+如果環境符合最低需求，即可將其視為通過移轉整備核准的環境。 [文化複雜性和變更管理](./cultural-complexity.md)有助於調整角色和責任，以確保在計劃執行期間能符合適當預期。
 
 > [!div class="nextstepaction"]
-> [文化複雜性和變更管理](./culture-complexity.md)
+> [文化複雜性和變更管理](./cultural-complexity.md)

@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99255722c28b9bb6c33f78e226cb8135e7c7be17
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b358c4d07e4adb30c0420c9d1b3bc85c25e9ce95
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825987"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024947"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -55,9 +55,9 @@ ms.locfileid: "70825987"
 **深入了解：**
 
 - [使用](https://azure.microsoft.com/pricing/calculator) Azure 定價計算機。
-- [取得 Azure Migrate 概觀](/azure/migrate/migrate-overview)。
-- [了解](/azure/migrate/concepts-assessment-calculation) Azure Migrate 評量。
-- [深入了解](/azure/dms/dms-overview) Azure 資料庫移轉服務。
+- [取得 Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-overview)。
+- [了解](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) Azure Migrate 評量。
+- [深入了解](https://docs.microsoft.com/azure/dms/dms-overview) Azure 資料庫移轉服務。
 
 ## <a name="best-practice-right-size-vms"></a>最佳做法：大小適當的 VM
 
@@ -78,9 +78,9 @@ ms.locfileid: "70825987"
 
 **深入了解：**
 
-- [深入了解](/azure/virtual-machines/windows/sizes) VM 類型與大小調整，以及將大小對應到類型。
-- [規劃](/azure/cloud-services/cloud-services-sizes-specs) VM 大小調整。
-- [檢閱](/azure/migrate/contoso-migration-assessment) 虛構 Contoso 公司的範例評量。
+- [深入了解](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) VM 類型與大小調整，以及將大小對應到類型。
+- [規劃](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs) VM 大小調整。
+- [檢閱](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment) 虛構 Contoso 公司的範例評量。
 
 ## <a name="best-practice-select-the-right-storage"></a>最佳做法：選取適當的儲存體
 
@@ -149,12 +149,12 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 **深入了解：**
 
 - [檢閱](https://azure.microsoft.com/pricing/details/storage) Azure 儲存體定價。
-- [了解](/azure/storage/common/storage-import-export-service) 如何使用 Azure 匯入/匯出將大量資料移轉到 Azure Blob 與檔案。
-- [比較](/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) Blob、檔案與磁碟儲存體資料類型。
-- [深入了解](/azure/storage/blobs/storage-blob-storage-tiers)存取層。
-- [檢閱](/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)不同類型的儲存體帳戶。
-- 了解[儲存體備援](/azure/storage/common/storage-redundancy)、[LRS](/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[ZRS](/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[GRS](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), 與[讀取權限 GRS](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage)。
-- [深入了解](/azure/storage/files/storage-files-introduction) Azure 檔案。
+- [了解](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) 如何使用 Azure 匯入/匯出將大量資料移轉到 Azure Blob 與檔案。
+- [比較](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) Blob、檔案與磁碟儲存體資料類型。
+- [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)存取層。
+- [檢閱](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)不同類型的儲存體帳戶。
+- 了解[儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)、[LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), 與[讀取權限 GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage)。
+- [深入了解](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) Azure 檔案。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>最佳做法：利用 Azure Hybrid 優勢
 
@@ -166,7 +166,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 - [查看](https://azure.microsoft.com/pricing/hybrid-benefit) Hybrid Benefit 節費計算機。
 - [深入了解](https://azure.microsoft.com/pricing/hybrid-benefit)適用於 Windows Server 的 Hybrid Benefit。
-- [檢閱](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) SQL Server Azure VM 的定價指導方針。
+- [檢閱](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) SQL Server Azure VM 的定價指導方針。
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>最佳做法：使用保留的 VM 執行個體
 
@@ -184,9 +184,9 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 **深入了解：**
 
-- [了解](/azure/billing/billing-save-compute-costs-reservations) Azure 保留。
+- [了解](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure 保留。
 - [閱讀](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)保留執行個體常見問題集。
-- [取得 SQL Server Azure VM 定價指導方針](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)。
+- [取得 SQL Server Azure VM 定價指導方針](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)。
 
 ## <a name="best-practice-aggregate-cloud-spend-across-subscriptions"></a>最佳做法：彙總跨訂用帳戶的雲端費用
 
@@ -196,9 +196,9 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 **深入了解：**
 
-- [取得 Azure 使用量 API 概觀](/azure/billing/billing-consumption-api-overview)。
-- [了解](/power-bi/desktop-connect-azure-consumption-insights)如何在 Power BI Desktop 中連線到 Azure 使用量見解。
-- [了解如何](/azure/billing/billing-manage-access)使用角色型存取控制 (RBAC) 管理 Azure 帳單資訊存取權。
+- [取得 Azure 使用量 API 概觀](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
+- [了解](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)如何在 Power BI Desktop 中連線到 Azure 使用量見解。
+- [了解如何](https://docs.microsoft.com/azure/billing/billing-manage-access)使用角色型存取控制 (RBAC) 管理 Azure 帳單資訊存取權。
 
 ## <a name="after-migration"></a>移轉之後
 
@@ -241,11 +241,11 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- [取得 Azure 成本管理 概觀](/azure/cost-management/overview)。
-- [了解如何](/azure/cost-management/cost-mgt-best-practices)使用 Azure 成本管理來最佳化您的雲端投資。
-- [了解如何](/azure/cost-management/use-reports)使用 Azure 成本管理報告。
-- [取得](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)從建議最佳化成本的指南。
-- [檢閱](/rest/api/consumption/budgets) Azure 使用量 API。
+- [取得 Azure 成本管理 概觀](https://docs.microsoft.com/azure/cost-management/overview)。
+- [了解如何](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices)使用 Azure 成本管理來最佳化您的雲端投資。
+- [了解如何](https://docs.microsoft.com/azure/cost-management/use-reports)使用 Azure 成本管理報告。
+- [取得](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)從建議最佳化成本的指南。
+- [檢閱](https://docs.microsoft.com/rest/api/consumption/budgets) Azure 使用量 API。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>最佳做法：監視資源使用量
 
@@ -259,9 +259,9 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- 取得 [Azure 監視器](/azure/azure-monitor/overview) 與 [Azure Advisor](/azure/advisor/advisor-overview) 概觀。
-- [取得](/azure/advisor/advisor-cost-recommendations) Advisor 成本建議。
-- [了解如何[從建議最佳化成本](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)，以及[防止非預期的費用](/azure/billing/billing-getting-started)。
+- 取得 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview) 與 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 概觀。
+- [取得](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor 成本建議。
+- [了解如何[從建議最佳化成本](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)，以及[防止非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)。
 - 了解 [Azure Resource Optimization (ARO) Toolkit](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>最佳做法：實作資源群組預算
@@ -273,8 +273,8 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- [了解如何](/azure/billing/billing-cost-management-budget-scenario)使用 Azure Budgets 來管理成本。
-- [依照教學課程](/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json)建立及管理 Azure 預算。
+- [了解如何](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)使用 Azure Budgets 來管理成本。
+- [依照教學課程](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json)建立及管理 Azure 預算。
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>最佳做法：最佳化 Azure 監視器保留
 
@@ -288,7 +288,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- [了解](/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)如何監視使用量及估計成本。
+- [了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)如何監視使用量及估計成本。
 
 ## <a name="best-practice-optimize-storage"></a>最佳做法：最佳化儲體
 
@@ -301,8 +301,8 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- [深入了解](/azure/storage/blobs/storage-blob-storage-tiers)存取層。
-- [取得 StorSimple 概觀](/azure/azure-monitor/overview) 與 [StorSimple 定價](https://azure.microsoft.com/pricing/details/storsimple)。
+- [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)存取層。
+- [取得 StorSimple 概觀](https://docs.microsoft.com/azure/azure-monitor/overview) 與 [StorSimple 定價](https://azure.microsoft.com/pricing/details/storsimple)。
 
 ## <a name="best-practice-automate-vm-optimization"></a>最佳做法：自動化 VM 最佳化
 
@@ -312,10 +312,10 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 **深入了解：**
 
-- [了解如何](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)使用垂直自動調整規模。
+- [了解如何](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)使用垂直自動調整規模。
 - [排定](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) VM 自動啟動。
-- [了解如何](/azure/automation/automation-solution-vm-management) 在 Azure 自動化中開始或停止 VM 離線時間。
-- [取得更多資訊]，關於 [Azure Advisor](/azure/advisor/advisor-overview) 與 [Azure 資源最佳化 (ARO) 工具組](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)。
+- [了解如何](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) 在 Azure 自動化中開始或停止 VM 離線時間。
+- [取得更多資訊]，關於 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 與 [Azure 資源最佳化 (ARO) 工具組](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)。
 
 ## <a name="best-practices-use-logic-apps-and-runbooks-with-budgets-api"></a>最佳做法：搭配預算 API 使用 Logic Apps 與 Runbook
 
@@ -329,8 +329,8 @@ Azure 提供 REST API，它可以存取您的租用戶帳單資訊。
 
 **深入了解：**
 
-- [深入了解](/rest/api/consumption/budgets)預算 API。
-- 使用帳單 API [取得](/azure/billing/billing-usage-rate-card-overview) Azure 使用量見解。
+- [深入了解](https://docs.microsoft.com/rest/api/consumption/budgets)預算 API。
+- 使用帳單 API [取得](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) Azure 使用量見解。
 
 ## <a name="best-practice-implement-serverless-technologies"></a>最佳做法：實作無伺服器技術
 
@@ -347,5 +347,5 @@ VM 工作負載通常會依「現況」移轉以避免停機。 VM 通常可能�
 
 檢閱其他最佳做法：
 
-- 移轉後的安全性及管理[最佳做法](migrate-best-practices-security-management.md)。
-- 移轉後的網路功能[最佳做法](migrate-best-practices-networking.md)。
+- 移轉後的安全性及管理[最佳做法](./migrate-best-practices-security-management.md)。
+- 移轉後的網路功能[最佳做法](./migrate-best-practices-networking.md)。

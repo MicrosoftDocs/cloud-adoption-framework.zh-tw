@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905602"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022740"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -27,11 +27,11 @@ ms.locfileid: "70905602"
 
 在整合治理或合規性需求時，基本 Azure 環境的設定可能會大幅變更。 若要了解必要條件的變更情形，請務必了解需求的本質。 在開始進行任何需要治理或合規性的移轉之前，應該先在雲端環境中選擇並實作方法。 以下是一些在移轉期間經常會看到的高階方法：
 
-**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../governance/journeys/index.md)方法便已足夠，此方法會包含最簡可行產品 (MVP) 實行，隨後並有治理成熟度的目標反覆項目可供解決採用方案中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
+**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)方法便已足夠，此方法會包含最簡可行產品 (MVP) 實行，隨後並有治理成熟度的目標反覆項目可供解決採用方案中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
 
-**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶，[ISO 27001 共用服務藍圖範例](/azure/governance/blueprints/samples/iso27001-shared/index)可作為更有效的 MVP 以在反覆性程序中及早產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
+**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶，[ISO 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)可作為更有效的 MVP 以在反覆性程序中及早產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
-**虛擬資料中心：** 您可能需要更強固的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](https://docs.microsoft.com/azure/architecture/vdc)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
+**虛擬資料中心：** 您可能需要更強固的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>可供完成必要條件的合作關係選項
 
@@ -49,19 +49,19 @@ ms.locfileid: "70905602"
 
 治理和合規性評估需求是極度專屬於客戶的，因此無法針對評估期間所採取的實際步驟提供一般性的指引。 不過，建議您在程序中納入工作和時間配置，以「配合合規性/治理需求」。 若要進一步了解這些需求，請參閱下列連結：
 
-若要深入了解治理，請檢閱[雲端治理的五個專業領域](/azure/architecture/cloud-adoption/governance/governance-disciplines)。 雲端採用架構的這個區段也包含範本，範本內會記載這五個區段各自的原則、指引和需求：
+若要深入了解治理，請檢閱[雲端治理的五個專業領域](../../govern/governance-disciplines.md)。 雲端採用架構的這個區段也包含範本，範本內會記載這五個區段各自的原則、指引和需求：
 
-- [成本管理](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [安全性基準](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [資源一致性](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [身分識別基準](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [部署加速](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [成本管理](../../govern/cost-management/template.md)
+- [安全性基準](../../govern/security-baseline/template.md)
+- [資源一致性]。/../govern/resource-consistency/template.md)
+- [身分識別基準].。/../govern/identity-baseline/template.md)
+- [部署加速](../../govern/deployment-acceleration/template.md)
 
-如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](/azure/architecture/cloud-adoption/governance/corporate-policy)。
+如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
 
-在最佳化和升階程序進行期間，建議雲端治理小組花點時間來測試及驗證其策略是否遵循治理和合規性標準。 此外，您也可以在這個步驟插入程序來讓雲端治理小組擷取範本，以便為未來的專案提供額外的[部署加速](/azure/architecture/cloud-adoption/governance/deployment-acceleration)機制。
+在最佳化和升階程序進行期間，建議雲端治理小組花點時間來測試及驗證其策略是否遵循治理和合規性標準。 此外，您也可以在這個步驟插入程序來讓雲端治理小組擷取範本，以便為未來的專案提供額外的[部署加速](../../govern/deployment-acceleration/index.md)機制。
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最佳化和升階程序期間的建議動作
 

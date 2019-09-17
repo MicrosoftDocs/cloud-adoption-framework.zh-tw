@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cf5b641bb894c9784f01e4e9eaae545b6b38a30d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828535"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022201"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -37,8 +37,8 @@ ms.locfileid: "70828535"
 > [!NOTE]
 > Azure 參考架構提供範例範本，可讓您用來實作您自己的周邊網路：
 >
-> - [實作 Azure 與內部部署資料中心之間的 DMZ](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [實作 Azure 與網際網路之間的 DMZ](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [實作 Azure 與內部部署資料中心之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 
 通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
 
@@ -110,55 +110,55 @@ Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "元件重疊範例"
-[1]: ./images/network-hub-spoke-high-level.png "高階中樞和輪輻範例"
-[2]: ./images/network-hub-spokes-cluster.png "中樞和支點叢集"
-[3]: ./images/network-spoke-to-spoke.png "支點對支點"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "中樞支點的區塊層級圖表"
-[5]: ./images/network-users-groups-subsciptions.png "使用者、群組、訂用帳戶和專案"
-[6]: ./images/network-infrastructure-high-level.png "高階基礎結構圖"
-[7]: ./images/network-highlevel-perimeter-networks.png "高階基礎結構圖"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "VNet 對等和周邊網路"
-[9]: ./images/network-high-level-diagram-monitoring.png "高階監視圖"
-[10]: ./images/network-high-level-workloads.png "高階工作負載圖"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "元件重疊範例"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "高階中樞和輪輻範例"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "中樞和支點叢集"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "支點對支點"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "中樞支點的區塊層級圖表"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "使用者、群組、訂用帳戶和專案"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "高階基礎結構圖"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "高階基礎結構圖"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNet 對等和周邊網路"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "高階監視圖"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "高階工作負載圖"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[virtual-networks]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[perimeter-network]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[DDoS]: /azure/virtual-network/ddos-protection-overview
-[PIP]: /azure/virtual-network/virtual-network-public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AFDWAF]: /azure/frontdoor/waf-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[AppGWWAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
+[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
+[virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
+[network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
+[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/virtual-network-public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

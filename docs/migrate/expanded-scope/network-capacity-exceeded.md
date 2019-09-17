@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb6a5adeac25293539edd5d97c816fad2865345c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825740"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024753"
 ---
 # <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>移轉工作期間儲存體需求超過網路容量
 
@@ -29,11 +29,11 @@ ms.locfileid: "70825740"
 
 **獨立資料存放區的離線傳輸：** 下圖所示範例會使用 Azure 資料箱來進行線上和離線資料傳輸。 這些方法可用來在移轉工作負載之前，先將大量資料運送至雲端。 在離線資料傳輸中，來源資料會複製到 Azure 資料箱，然後實體運送至 Microsoft，再以檔案或 Blob 的形式傳輸至 Azure 儲存體帳戶。 此程序可用來在進行其他移轉工作之前，先運送未直接繫結至特定工作負載的資料。 這麼做可減少需要透過網路運送的資料量，以便在網路限制內完成移轉工作。
 
-這種方法可用來傳輸資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](/azure/databox/data-box-deploy-copy-data)、[NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+這種方法可用來傳輸資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
 另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
-![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migration/databox.png)
+![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migrate/databox.png)
 
 ## <a name="assess-process-changes"></a>評估程序變更
 
@@ -58,13 +58,13 @@ ms.locfileid: "70825740"
 
 ### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
 
-**複製儲存體：** 這種方法可用來傳輸資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](/azure/databox/data-box-deploy-copy-data)、[NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+**複製儲存體：** 這種方法可用來傳輸資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
 另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
-**運送裝置：** 複製資料後，便可以將裝置[運送到 Microsoft](/azure/databox/data-box-deploy-picked-up)。 收到資料並匯入之後，資料就可在 Azure 儲存體帳戶中使用。
+**運送裝置：** 複製資料後，便可以將裝置[運送到 Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)。 收到資料並匯入之後，資料就可在 Azure 儲存體帳戶中使用。
 
-**還原資產：** [確認資料](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)可在儲存體帳戶中使用。 確認之後，就可以透過 Blob 或在 Azure 檔案儲存體中使用資料。 如果資料是 VHD/VHDX 檔案，則檔案可以轉換為受控磁碟。 隨後，您就可以使用這些受控磁碟來具現化虛擬機器，以建立原始內部部署資產的複本。
+**還原資產：** [確認資料](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)可在儲存體帳戶中使用。 確認之後，就可以透過 Blob 或在 Azure 檔案儲存體中使用資料。 如果資料是 VHD/VHDX 檔案，則檔案可以轉換為受控磁碟。 隨後，您就可以使用這些受控磁碟來具現化虛擬機器，以建立原始內部部署資產的複本。
 
 **同步處理：** 如果漂移的同步處理是遷移後資產的需求，則可以使用其中一個[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)來同步處理檔案，直到資產還原為止。
 

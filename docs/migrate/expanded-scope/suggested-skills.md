@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833553"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024715"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>移轉旅程「遷移」階段期間的技能整備程度路徑
 
@@ -23,16 +23,16 @@ ms.locfileid: "70833553"
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-「遷移」程序的實作將會以移轉旅程中，從[「計畫」](../../business-strategy/suggested-skills.md)和[「就緒」](../../organization/suggested-skills.md)階段所取得的技能為基礎。
+「遷移」程序的實作將會以移轉旅程中，從[「計畫」](../../strategy/suggested-skills.md)和[「就緒」](../../organize/suggested-skills.md)階段所取得的技能為基礎。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 
 下列工具可協助小組執行評估活動：
 
 - [平衡組合](./balance-the-portfolio.md)：確保應用程式組合之間的投資配置平衡且適當。
-- [建置業務理由](../../business-strategy/cloud-migration-business-case.md)：建立並了解促進雲端移轉工作的商業理由。
+- [建置業務理由](../../strategy/cloud-migration-business-case.md)：建立並了解促進雲端移轉工作的商業理由。
 - [合理化數位資產](../../digital-estate/rationalize.md)：合理化數位資產中的資產。
-- [應用程式組合評估](/learn/modules/app-and-infra-migration-and-modernization)：應用程式組合內有關移轉或創新選項的決策準則。
+- [應用程式組合評估](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization)：應用程式組合內有關移轉或創新選項的決策準則。
 - [評估和規劃 Microsoft Azure 移轉](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning)：協助評估內部部署工作負載的 PluralSight 課程
 
 在評估過程中，架構設計人員必須為每個工作負載建構解決方案。 下列技能資源可協助您準備這些工作的架構：
@@ -45,7 +45,7 @@ ms.locfileid: "70833553"
 
 下列教學課程可以協助小組準備移轉活動：
 
-- [移轉至 Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Site Recovery 將 VM 遷移至 Azure。
+- [移轉至 Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Site Recovery 將 VM 遷移至 Azure。
 - [將工作負載重新裝載至 Azure](https://aka.ms/rehostcourse)：指導檢視人員如何將工作負載重新裝載至 Azure 的 PluralSight 課程
 - [將實體和虛擬伺服器移轉至 Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents)：將伺服器遷移至 Azure 的 PluralSight 課程
 - [在 Azure 中匯入和匯出資料](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents)：在 Azure 中來回移動資料的 PluralSight 課程

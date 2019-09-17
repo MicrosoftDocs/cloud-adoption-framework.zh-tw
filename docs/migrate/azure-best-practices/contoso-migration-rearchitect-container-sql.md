@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6b9d2e5f4b230358985d04aca075cb89e8214422
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829939"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024462"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>將內部部署應用程式重新建構至 Azure 容器和 Azure SQL Database
 
@@ -61,7 +61,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 ### <a name="proposed-architecture"></a>建議的架構
 
-- 針對應用程式的資料庫層，Contoso 已透過[這篇文章](/azure/sql-database/sql-database-features)來比較 Azure SQL Database 和 SQL Server。 因為下列幾個原因，其決定使用 Azure SQL Database：
+- 針對應用程式的資料庫層，Contoso 已透過[這篇文章](https://docs.microsoft.com/azure/sql-database/sql-database-features)來比較 Azure SQL Database 和 SQL Server。 因為下列幾個原因，其決定使用 Azure SQL Database：
   - Azure SQL Database 是由關聯式資料庫管理的服務。 其在多個服務層級上提供可預測的效能，而且幾乎免管理。 優點包括無須停機的動態延展性、內建智慧最佳化及全球延展性和可用性。
   - Contoso 會使用輕量型 Data Migration Assistant (DMA) 來評估內部部署資料庫，並將其移轉至 Azure SQL。
   - 透過軟體保證，Contoso 可以使用適用於 SQL Server 的 Azure Hybrid Benefit，以折扣優惠在 SQL Database 上交換其現有授權。 這可以提供最多 30% 的折扣。
@@ -103,7 +103,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | 提供完全受控的智慧型關聯式雲端資料庫服務。 | 根據功能、輸送量和大小計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | 建置及操作全年持續運作，並能隨時調整的分散式應用程式 | 根據大小、位置和計算節點的持續時間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/service-fabric)。
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -114,8 +114,8 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 **需求** | **詳細資料**
 --- | ---
 **Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
-**Azure 基礎結構** | [了解](contoso-migration-infrastructure.md) Contoso 先前如何設定 Azure 基礎結構。
-**開發人員必要條件** | 在開發人員工作站上，Contoso 需要下列工具：<br/><br/> - [Visual Studio 2017 Community 版本：15.5 版](https://www.visualstudio.com)<br/><br/> - 已啟用.NET 工作負載。<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 或更新版本](/azure/service-fabric/service-fabric-get-started)<br/><br/> 已設定為使用 Windows 容器的 - [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
+**Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 先前如何設定 Azure 基礎結構。
+**開發人員必要條件** | 在開發人員工作站上，Contoso 需要下列工具：<br/><br/> - [Visual Studio 2017 Community 版本：15.5 版](https://www.visualstudio.com)<br/><br/> - 已啟用.NET 工作負載。<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 或更新版本](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> 已設定為使用 Windows 容器的 - [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -166,8 +166,8 @@ Contoso 管理員會佈建 Azure SQL 資料庫。
 
 **需要其他協助？**
 
-- [說明](/azure/sql-database/sql-database-get-started-portal)如何佈建 SQL Database。
-- [深入了解](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)虛擬核心的資源限制。
+- [說明](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)如何佈建 SQL Database。
+- [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)虛擬核心的資源限制。
 
 ## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>步驟 2:建立 ACR 和佈建 Azure 容器
 
@@ -298,7 +298,7 @@ Contoso 管理員現在可以使用 DMA 來移轉 SmartHotel360 資料庫。
 
 **需要其他協助？**
 
-[深入了解](/azure/sql-database/sql-database-firewall-configure)建立及管理 Azure SQL Database 的防火牆規則。
+[深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure)建立及管理 Azure SQL Database 的防火牆規則。
 
 ### <a name="migrate"></a>移轉
 
@@ -582,23 +582,23 @@ Contoso 管理員現在會設定 Azure DevOps Services 來執行建置和發行�
 
 ### <a name="security"></a>安全性
 
-- Contoso 管理員必須確保其新的 **SmartHotel-Registration** 資料庫很安全。 [深入了解](/azure/sql-database/sql-database-security-overview)。
+- Contoso 管理員必須確保其新的 **SmartHotel-Registration** 資料庫很安全。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 特別是，他們應將容器更新為搭配使用 SSL 與憑證。
-- 他們應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](/azure/service-fabric/service-fabric-application-secret-management)。
+- 他們應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups"></a>備份
 
-- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
-- Contoso 管理員應考慮實作容錯移轉群組，為該資料庫提供區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
-- 他們可以利用適用於 ACR 進階 SKU 的異地複寫。 [深入了解](/azure/container-registry/container-registry-geo-replication)。
+- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 管理員應考慮實作容錯移轉群組，為該資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- 他們可以利用適用於 ACR 進階 SKU 的異地複寫。 [深入了解](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - 當用於容器的 Web App 可供使用時，Contoso 須考慮在主要的美國東部 2 和美國中部區域部署 Web 應用程式。 Contoso 管理員可以設定流量管理員，以確保在發生區域性的運行中斷時可進行容錯移轉。
-- Cosmos DB 會自動備份。 Contoso 會[閱讀](/azure/cosmos-db/online-backup-and-restore)此程序以便深入了解。
+- Cosmos DB 會自動備份。 Contoso 會[閱讀](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)此程序以便深入了解。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 部署好所有資源之後，Contoso 應根據[基礎結構規劃](contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
+- 部署好所有資源之後，Contoso 應根據[基礎結構規劃](./contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
 - 所有授權費用都會併入 Contoso 使用的 PaaS 服務中。 這將會從 EA 中扣除。
-- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](/azure/cost-management/overview) Azure 成本管理。
+- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。
 
 ## <a name="conclusion"></a>結論
 

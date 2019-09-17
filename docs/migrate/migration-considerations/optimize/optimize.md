@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825493"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022652"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -36,7 +36,7 @@ ms.locfileid: "70825493"
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>使用 Azure 成本管理進行效能評定和最佳化
 
-[Azure 成本管理](/azure/cost-management/overview)由 Microsoft 的子公司 Cloudyn 所授權，可透明且準確地管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
+[Azure 成本管理](https://docs.microsoft.com/azure/cost-management/overview)由 Microsoft 的子公司 Cloudyn 所授權，可透明且準確地管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
 
 歷史資料有助於管理成本，因為它可分析隨時間變化的使用量和成本以辨識趨勢，而這些趨勢隨後可用來預測未來的費用。 「成本管理」也包含有用的成本預測報告。 成本配置可根據標記原則來分析成本，藉以管理成本。 您可將成本配置用於回報/退款，以顯示資源使用量和相關成本，進而影響消費行為或對租用戶客戶收費。 存取控制可確保使用者和小組只能存取所需的成本管理資料，以協助管理成本。 警示可以在出現異常消費或超支時，透過自動通知協助您管理成本。 警示也可以在出現異常消費和超支風險時，自動通知利害關係人。 多種不同報告皆支援以預算和成本閾值為基礎的警示。
 

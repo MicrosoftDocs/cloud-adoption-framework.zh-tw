@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c3d25b0a4e421b2fa8ea5e88f6385a91721713ca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819591"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022860"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -48,9 +48,9 @@ Azure 會提供虛擬網路 (VNet)：
 
 **深入了解：**
 
-- [取得 Azure VNet 概觀](/azure/virtual-network/virtual-networks-overview)。
-- [閱讀](/azure/virtual-network/virtual-networks-faq)網路常見問題集。
-- [了解](/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits)網路限制。
+- [取得 Azure VNet 概觀](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。
+- [閱讀](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)網路常見問題集。
+- [了解](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits)網路限制。
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>最佳做法：實作中樞和輪輻網路拓撲
 
@@ -72,9 +72,9 @@ Azure 會提供虛擬網路 (VNet)：
 
 **深入了解：**
 
-- [了解](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)中樞和輪輻拓撲。
-- 取得用來執行 Azure [Windows](/azure/architecture/reference-architectures/n-tier/windows-vm) 和 [Linux](/azure/architecture/reference-architectures/n-tier/linux-vm) VM 的網路建議。
-- [了解](/azure/virtual-network/virtual-network-peering-overview) VNet 對等互連。
+- [了解](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)中樞和輪輻拓撲。
+- 取得用來執行 Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) 和 [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) VM 的網路建議。
+- [了解](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) VNet 對等互連。
 
 ## <a name="best-practice-design-subnets"></a>最佳做法：設計子網路
 
@@ -99,8 +99,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 **深入了解：**
 
-- [了解](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)如何設計子網路。
-- [了解](/azure/migrate/contoso-migration-infrastructure)虛構公司 (Contoso) 如何讓其網路基礎結構做好移轉準備。
+- [了解](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)如何設計子網路。
+- [了解](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)虛構公司 (Contoso) 如何讓其網路基礎結構做好移轉準備。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>最佳做法：設定 DNS 伺服器
 
@@ -119,8 +119,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 **深入了解：**
 
-- [了解](/azure/migrate/contoso-migration-infrastructure)您在使用自有 DNS 伺服器時的名稱解析。
-- [了解](/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) DNS 命名規則和限制。
+- [了解](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)您在使用自有 DNS 伺服器時的名稱解析。
+- [了解](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) DNS 命名規則和限制。
 
 ## <a name="best-practice-set-up-availability-zones"></a>最佳做法：設定可用性區域
 
@@ -143,7 +143,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 **深入了解：**
 
-- [取得可用性區域概觀](/azure/availability-zones/az-overview)。
+- [取得可用性區域概觀](https://docs.microsoft.com/azure/availability-zones/az-overview)。
 
 ## <a name="design-hybrid-cloud-networking"></a>設計混合式雲端網路
 
@@ -154,7 +154,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 **深入了解：**
 
-- [深入了解](/azure/architecture/reference-architectures/hybrid-networking/vpn)混合式雲端網路。
+- [深入了解](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)混合式雲端網路。
 
 ## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>最佳做法：實作高可用性的站對站 VPN
 
@@ -186,13 +186,13 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 **深入了解：**
 
-- [檢閱](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)相容的內部部署 VPN 裝置。
-- [取得 VPN 閘道概觀](/azure/vpn-gateway/vpn-gateway-about-vpngateways)。
-- [了解](/azure/vpn-gateway/vpn-gateway-highlyavailable)高可用性的 VPN 連線。
-- [了解](/azure/vpn-gateway/vpn-gateway-plan-design)如何規劃和設計 VPN 閘道。
-- [檢閱](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) VPN 閘道設定。
-- [檢閱](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)閘道 SKU。
-- [了解](/azure/vpn-gateway/vpn-gateway-bgp-overview)如何設定 BGP 與 Azure VPN 閘道。
+- [檢閱](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)相容的內部部署 VPN 裝置。
+- [取得 VPN 閘道概觀](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)。
+- [了解](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)高可用性的 VPN 連線。
+- [了解](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design)如何規劃和設計 VPN 閘道。
+- [檢閱](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) VPN 閘道設定。
+- [檢閱](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)閘道 SKU。
+- [了解](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview)如何設定 BGP 與 Azure VPN 閘道。
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>最佳做法：為 VPN 閘道設定閘道
 
@@ -216,7 +216,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - Azure WAN 的內建儀表板可提供即時的疑難排解深入解析讓您節省時間，並可讓您輕鬆地追蹤大規模的站對站連線。
 
 **深入了解：** 
-[了解](/azure/virtual-wan/virtual-wan-about) Azure 虛擬 WAN。
+[了解](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) Azure 虛擬 WAN。
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>最佳做法：為任務關鍵連線實作 ExpressRoute
 
@@ -232,8 +232,8 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 
 **深入了解：**
 
-- [閱讀 ExpressRoute 概觀](/azure/expressroute/expressroute-introduction)。
-- [了解](/azure/expressroute/expressroute-erdirect-about) ExpressRoute Direct。
+- [閱讀 ExpressRoute 概觀](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)。
+- [了解](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) ExpressRoute Direct。
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>最佳做法：使用 BGP 社群將 ExpressRoute 路由最佳化
 
@@ -276,7 +276,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 
 **深入了解：**
 
-- [了解](/azure/expressroute/expressroute-optimize-routing)如何將路由最佳化。
+- [了解](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing)如何將路由最佳化。
 
 ## <a name="securing-vnets"></a>保護 VNet
 
@@ -284,8 +284,8 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 
 **深入了解：**
 
-- [取得網路安全性最佳做法的概觀](/azure/security/azure-security-network-security-best-practices)。
-- [了解如何](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)設計安全的網路。
+- [取得網路安全性最佳做法的概觀](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices)。
+- [了解如何](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)設計安全的網路。
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>最佳做法：實作 Azure 周邊網路
 
@@ -306,7 +306,7 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 
 **深入了解：**
 
-- [了解](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)如何在 Azure 與內部部署資料中心之間部署周邊網路。
+- [了解](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)如何在 Azure 與內部部署資料中心之間部署周邊網路。
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>最佳做法：使用 NSG 篩選 VNet 流量
 
@@ -346,8 +346,8 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 
 **深入了解：**
 
-- [了解](/azure/virtual-network/security-overview) NSG。
-- [檢閱](/azure/virtual-network/security-overview#service-tags) NSG 可用的服務標籤。
+- [了解](https://docs.microsoft.com/azure/virtual-network/security-overview) NSG。
+- [檢閱](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) NSG 可用的服務標籤。
 
 ## <a name="best-practice-use-application-security-groups"></a>最佳做法：使用應用程式安全性群組
 
@@ -386,7 +386,7 @@ Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組�
 
 **深入了解：**
 
-- [了解](/azure/virtual-network/security-overview#application-security-groups)應用程式安全性群組。
+- [了解](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups)應用程式安全性群組。
 
 ### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>最佳做法：使用 VNet 服務端點保護對於 PaaS 的存取
 
@@ -401,7 +401,7 @@ VNet 服務端點可透過直接連線，將 VNet 私人位址空間和身分識
 
 **深入了解：**
 
-- [了解](/azure/virtual-network/virtual-network-service-endpoints-overview) VNet 服務端點。
+- [了解](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) VNet 服務端點。
 
 ## <a name="best-practice-control-public-ip-addresses"></a>最佳做法：控制公用 IP 位址
 
@@ -417,8 +417,8 @@ Azure 中的公用 IP 位址可與 VM、負載平衡器、應用程式閘道和 
 
 **深入了解：**
 
-- [了解](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) Azure 中的公用 IP 位址。
-- [深入了解](/azure/security-center/security-center-just-in-time) Azure 資訊安全中心內的 Just-In-Time VM 存取。
+- [了解](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) Azure 中的公用 IP 位址。
+- [深入了解](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) Azure 資訊安全中心內的 Just-In-Time VM 存取。
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>針對網路利用 Azure 安全性功能
 
@@ -441,8 +441,8 @@ Azure 防火牆是受控、雲端式網路安全性服務，可以保護您的 V
 
 **深入了解：**
 
-- [取得 Azure 防火牆概觀](/azure/firewall/overview)。
-- [了解](/azure/firewall/fqdn-tags) FQDN 標籤。
+- [取得 Azure 防火牆概觀](https://docs.microsoft.com/azure/firewall/overview)。
+- [了解](https://docs.microsoft.com/azure/firewall/fqdn-tags) FQDN 標籤。
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>最佳做法：部署 Web 應用程式防火牆 (WAF)
 
@@ -459,8 +459,8 @@ Web 應用程式防火牆 (WAF) 是 Azure 應用程式閘道的一項功能。
 
 **深入了解：**
 
-- [了解](/azure/application-gateway/waf-overview) WAF。
-- [檢閱](/azure/application-gateway/application-gateway-waf-configuration) WAF 限制與排除項目。
+- [了解](https://docs.microsoft.com/azure/application-gateway/waf-overview) WAF。
+- [檢閱](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) WAF 限制與排除項目。
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>最佳做法：實作 Azure 網路監看員
 
@@ -478,8 +478,8 @@ Azure 網路監看員會提供工具讓您監視 Azure VNet 中的資源與通�
 
 **深入了解：**
 
-- [取得網路監看員概觀](/azure/network-watcher)。
-- [深入了解](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) NSG 流程記錄。
+- [取得網路監看員概觀](https://docs.microsoft.com/azure/network-watcher)。
+- [深入了解](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) NSG 流程記錄。
 
 ## <a name="use-partner-tools-in-the-azure-marketplace"></a>使用 Azure Marketplace 中的合作夥伴工具
 
@@ -510,11 +510,11 @@ NVA 防火牆 | NVA 防火牆伺服器陣列和 Azure 防火牆一樣，擁有�
 
 **深入了解：**
 
-- [了解](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)如何在 Azure VNet 中使用 NVA。
+- [了解](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)如何在 Azure VNet 中使用 NVA。
 
 ## <a name="next-steps"></a>後續步驟
 
 檢閱其他最佳做法：
 
-- 移轉後的安全性及管理[最佳做法](migrate-best-practices-security-management.md)。
-- 移轉後的成本管理[最佳做法](migrate-best-practices-costs.md)。
+- 移轉後的安全性及管理[最佳做法](./migrate-best-practices-security-management.md)。
+- 移轉後的成本管理[最佳做法](./migrate-best-practices-costs.md)。

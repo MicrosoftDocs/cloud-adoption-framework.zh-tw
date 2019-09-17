@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 32a24f51a44c088331ea47a65a5d71e3d02cedf4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820332"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024339"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載內部部署應用程式
 
@@ -97,7 +97,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 **服務** | **說明** | **成本**
 --- | --- | ---
 [資料移轉小幫手](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA 會從內部部署的 SQL Server 電腦本機執行，並透過站對站 VPN 將資料庫移轉至 Azure。 | DMA 是可下載的免費工具。
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery 可協調和管理 Azure VM 以及內部部署 VM 和實體伺服器的移轉和災害復原。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/site-recovery)費用和定價。
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery 可協調和管理 Azure VM 以及內部部署 VM 和實體伺服器的移轉和災害復原。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/site-recovery)費用和定價。
 
 ## <a name="migration-process"></a>移轉程序
 
@@ -122,9 +122,9 @@ Contoso 管理員會將應用程式 VM 移轉至 Azure。
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。
-**Azure 基礎結構** | [了解](contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。<br/><br/> 深入了解 Site Recovery 具體的[網路](/azure/site-recovery/vmware-physical-azure-support-matrix#network)和[儲存體](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)需求。
-**Site Recovery (內部部署)** | 內部部署 vCenter 伺服器應執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。<br/><br/> VM 必須符合 [Azure 需求](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)。<br/><br/> 支援的[網路](/azure/site-recovery/vmware-physical-azure-support-matrix#network)和[儲存體](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)組態。<br/><br/> 您要複寫的 VM 必須符合 [Azure 需求](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)。
+**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
+**Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。<br/><br/> 深入了解 Site Recovery 具體的[網路](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)和[儲存體](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)需求。
+**Site Recovery (內部部署)** | 內部部署 vCenter 伺服器應執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。<br/><br/> VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)。<br/><br/> 支援的[網路](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)和[儲存體](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)組態。<br/><br/> 您要複寫的 VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -175,8 +175,8 @@ Contoso 管理員會依照下列方式設定叢集：
 
 **需要其他協助？**
 
-- [取得說明](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)以了解如何佈建 SQL Server VM。
-- [了解](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)如何為不同的 SQL Server SKU 設定 VM。
+- [取得說明](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)以了解如何佈建 SQL Server VM。
+- [了解](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)如何為不同的 SQL Server SKU 設定 VM。
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>步驟 2：部署並設定叢集
 
@@ -246,8 +246,8 @@ Contoso 管理員現在已可啟用 Always On：
 
 **需要其他協助？**
 
-- [深入了解](/windows-server/failover-clustering/deploy-cloud-witness)雲端見證以及如何為其設定儲存體帳戶。
-- [取得指示](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)以了解如何設定叢集和建立可用性群組。
+- [深入了解](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness)雲端見證以及如何為其設定儲存體帳戶。
+- [取得指示](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)以了解如何設定叢集和建立可用性群組。
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>步驟 3：部署 Azure Load Balancer
 
@@ -305,8 +305,8 @@ Contoso 管理員建立了健康情況探查，讓負載平衡器能夠監視應
 
 **需要其他協助？**
 
-- 對 Azure Load Balancer [取得概觀](/azure/load-balancer/load-balancer-overview)。
-- [了解](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)如何建立負載平衡器。
+- 對 Azure Load Balancer [取得概觀](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)。
+- [了解](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)如何建立負載平衡器。
 
 ## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>步驟 4：為 Azure 進行 Site Recovery 服務的準備工作
 
@@ -318,7 +318,7 @@ Contoso 管理員建立了健康情況探查，讓負載平衡器能夠監視應
 
 Contoso 管理員的設定方式如下：
 
-1. Contoso 在[部署 Azure 基礎結構](contoso-migration-rehost-vm-sql-ag.md)時，即已建立可用於 Site Recovery 的網路/子網路。
+1. Contoso 在[部署 Azure 基礎結構](./contoso-migration-rehost-vm-sql-ag.md)時，即已建立可用於 Site Recovery 的網路/子網路。
 
     - SmartHotel360 應用程式是一個生產應用程式，而 WEBVM 將會移轉至美國東部 2 主要區域中的 Azure 生產網路 (VNET-PROD-EUS2)。
     - WEBVM 將會置於 ContosoRG 資源群組中 (用於生產資源)，並且置於生產子網路中 (PROD-FE-EUS2)。
@@ -336,7 +336,7 @@ Contoso 管理員的設定方式如下：
 
 **需要其他協助？**
 
-[了解](/azure/site-recovery/tutorial-prepare-azure)如何為 Azure 進行 Site Recovery 的設定。
+[了解](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)如何為 Azure 進行 Site Recovery 的設定。
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>步驟 5：為內部部署 VMware 進行 Site Recovery 的準備工作
 
@@ -390,8 +390,8 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 **需要其他協助？**
 
-- [了解](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)如何建立和指派自動探索所需的角色。
-- [深入了解](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)建立行動服務推送安裝的帳戶。
+- [了解](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)如何建立和指派自動探索所需的角色。
+- [深入了解](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)建立行動服務推送安裝的帳戶。
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>步驟 6：使用 Site Recovery 將內部部署 VM 複寫至 Azure
 
@@ -497,9 +497,9 @@ Contoso 管理員現在會指定目標複寫設定。
 
 **需要其他協助？**
 
-- 您可以在[設定內部部署 VMware VM 的災害復原](/azure/site-recovery/vmware-azure-tutorial)中，閱讀所有步驟的詳細逐步解說。
-- 您會得到詳細的操作說明，協助您[設定來源環境](/azure/site-recovery/vmware-azure-set-up-source)、[部署組態伺服器](/azure/site-recovery/vmware-azure-deploy-configuration-server)以及[指定複寫設定](/azure/site-recovery/vmware-azure-set-up-replication)。
-- 您可以深入了解如何[啟用複寫](/azure/site-recovery/vmware-azure-enable-replication)。
+- 您可以在[設定內部部署 VMware VM 的災害復原](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial)中，閱讀所有步驟的詳細逐步解說。
+- 您會得到詳細的操作說明，協助您[設定來源環境](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source)、[部署組態伺服器](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server)以及[指定複寫設定](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication)。
+- 您可以深入了解如何[啟用複寫](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication)。
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>步驟 7：安裝 Data Migration Assistant (DMA)
 
@@ -577,9 +577,9 @@ DMA 會透過 Contoso 資料中心與 Azure 之間的站對站 VPN 連線來連�
 
 **需要其他協助？**
 
-- 了解如何建立[可用性群組](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)和[接聽程式](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)。
-- 手動[設定叢集以使用負載平衡器 IP 位址](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)。
-- [深入了解](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)如何建立和使用 SAS。
+- 了解如何建立[可用性群組](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)和[接聽程式](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)。
+- 手動[設定叢集以使用負載平衡器 IP 位址](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)。
+- [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)如何建立和使用 SAS。
 
 ## <a name="step-8-migrate-the-vm-with-site-recovery"></a>步驟 8：使用 Site Recovery 移轉 VM
 
@@ -631,9 +631,9 @@ Contoso 管理員會執行快速測試容錯移轉，然後移轉 VM。
 
 **需要其他協助？**
 
-- [了解](/azure/site-recovery/tutorial-dr-drill-azure)如何執行測試容錯移轉。
-- [了解](/azure/site-recovery/site-recovery-create-recovery-plans)如何建立復原計畫。
-- [了解](/azure/site-recovery/site-recovery-failover)如何容錯移轉至 Azure。
+- [了解](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)如何執行測試容錯移轉。
+- [了解](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)如何建立復原計畫。
+- [了解](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)如何容錯移轉至 Azure。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
@@ -659,20 +659,20 @@ Contoso 安全性小組會檢查 WEBVM、SQLAOG1 和 SQLAOG2 等 Azure VM，以�
 - 小組考慮使用 Azure 磁碟加密和 Key Vault 來保護磁碟上的資料。
 - 小組應評估透明資料加密 (TDE)，然後在執行於新的 SQL AOG 的 SmartHotel360 資料庫上加以啟用。 [深入了解](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。
 
-[深入了解](/azure/security/azure-security-best-practices-vms) VM 的安全措施。
+[深入了解](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) VM 的安全措施。
 
 ## <a name="bcdr"></a>BCDR
 
  針對商務持續性和災害復原 (BCDR)，Contoso 採取下列動作：
 
-- 保護資料安全：Contoso 會使用 Azure 備份服務，備份 WEBVM、SQLAOG1 和 SQLAOG2 VM 上的資料。 [深入了解](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- Contoso 也將了解如何使用 Azure 儲存體將 SQL Server 直接備份至 Blob 儲存體。 [深入了解](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
-- 保持應用程式啟動及執行：Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](/azure/site-recovery/azure-to-azure-quickstart)。
+- 保護資料安全：Contoso 會使用 Azure 備份服務，備份 WEBVM、SQLAOG1 和 SQLAOG2 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- Contoso 也將了解如何使用 Azure 儲存體將 SQL Server 直接備份至 Blob 儲存體。 [深入了解](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
+- 保持應用程式啟動及執行：Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
 1. Contoso 為他們的 WEBVM 準備了現有的授權，且將運用 Azure Hybrid Benefit。 Contoso 會轉換現有的 Azure VM，以便充分利用這個定價。
-2. Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](/azure/cost-management/overview) Azure 成本管理。
+2. Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。
 
 ## <a name="conclusion"></a>結論
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906016"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023419"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>開始使用雲端遷移旅程
 
@@ -70,7 +70,7 @@ ms.locfileid: "70906016"
 
 雲端策略和規劃是一種方法，著重于協調商務成果、優先順序和條件約束，以建立清楚的遷移策略和計畫。 結果計畫（或「遷移待處理專案」）概述跨 IT 組合進行遷移和現代化的方法，這可能會跨越整個資料中心、多個工作負載，或其他的基礎結構、應用程式和資料集合。 在雲端實行工作方面，適當管理 IT 組合將有助於推動所需的商務成果。
 
-![雲端採用架構概觀](../_images/cloud-adoption-framework-overview.png)
+![雲端採用架構概觀](../_images/caf-overview.png)
 
 **開始使用：** 本文的其餘部分會準備讀者，以適當地應用雲端採用架構的雲端策略和規劃方法。 它也會概述其他資源和連結，可協助讀者採用這種方法來引導雲端執行工作。
 
@@ -80,14 +80,14 @@ ms.locfileid: "70906016"
 
 如上圖所示，此架構會將策略性決策與少量包含的處理常式對齊，而這些進程會在反復模型中運作。 線上性檔中所述，下列每個程式都應該與雲端執行的反復專案平行處理。 每個進程的連結都會協助定義結束狀態，以及成熟到所需結束狀態的方法：
 
-- **[計畫](../business-strategy/index.md):** 當技術實現與清楚的商業目標一致時，不論技術決策為何，都能更輕鬆地測量並讓多個雲端實行工作的成功率一致。
+- **[計畫](../strategy/index.md):** 當技術實現與清楚的商業目標一致時，不論技術決策為何，都能更輕鬆地測量並讓多個雲端實行工作的成功率一致。
 - **[準備就緒](../ready/index.md)：** 針對即將進行的變更準備商務、文化、人員和環境，會導致每個工作成功，並加速執行和變更專案。
 - **採用：** 確保能夠適當地在 IT 和商務程式上執行所需的變更，以達成商業成果。
   - **[遷移](../migrate/index.md):** [雲端實施方法](#cloud-implementation)的反復執行遵循評估、遷移、優化和保護 & 管理的測試程式，以建立可重複的流程來遷移工作負載。
 - **[操作](../operating-model/index.md)：** 定義可管理的作業模式，以在採用之後引導活動。
-  - **[組織](../organization/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
-  - **[治理](../governance/index.md)：** 讓公司原則符合有形風險，並透過原則、程式和雲端式治理工具加以降低。
-  - **[管理](../operations/index.md)：** 擴充 IT 營運以確保雲端式解決方案可以使用現代化、雲端優先的作業工具，透過安全且符合成本效益的程式來運作。
+  - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
+  - **[治理](../govern/index.md)：** 讓公司原則符合有形風險，並透過原則、程式和雲端式治理工具加以降低。
+  - **[管理](../manage/index.md)：** 擴充 IT 營運以確保雲端式解決方案可以使用現代化、雲端優先的作業工具，透過安全且符合成本效益的程式來運作。
 
 此架構會在整個遷移體驗中，用來解決不明確、管理變更，並引導跨功能小組實現商務成果。
 
@@ -140,6 +140,6 @@ ms.locfileid: "70906016"
 >
 > [移轉](../migrate/index.md)
 >
-> [2gb/s](../operations/index.md)
+> [管理](../manage/index.md)
 >
-> [制約](../governance/index.md)
+> [制約](../govern/index.md)

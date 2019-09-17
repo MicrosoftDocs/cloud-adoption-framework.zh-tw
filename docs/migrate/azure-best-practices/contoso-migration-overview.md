@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6af51f1fa6526e2ea7cf13a824c7834d631aa59
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820579"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024959"
 ---
 # <a name="application-migration-patterns-and-examples"></a>應用程式移轉模式和範例
 
@@ -59,49 +59,49 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 **文章** | **詳細資料**
 --- | ---
-[評估內部部署資源是否可移轉至 Azure](contoso-migration-assessment.md) | 本文說明如何評估在 VMware 上執行的內部部署應用程式。 在此範例中，範例組織會使用 Azure Migrate 服務來評估應用程式 VM，並使用 Database Migration Assistant 來評估應用程式 SQL Server 資料庫。
+[評估內部部署資源是否可移轉至 Azure](./contoso-migration-assessment.md) | 本文說明如何評估在 VMware 上執行的內部部署應用程式。 在此範例中，範例組織會使用 Azure Migrate 服務來評估應用程式 VM，並使用 Database Migration Assistant 來評估應用程式 SQL Server 資料庫。
 
 ### <a name="infrastructure"></a>基礎結構
 
 **文章** | **詳細資料**
 --- | ---
-[部署 Azure 基礎結構](contoso-migration-infrastructure.md) | 本文說明組織如何準備其內部部署基礎結構和其 Azure 基礎結構以進行移轉。 本文中建立的基礎結構範例，會供本節中提供的其他範例參考。
+[部署 Azure 基礎結構](./contoso-migration-infrastructure.md) | 本文說明組織如何準備其內部部署基礎結構和其 Azure 基礎結構以進行移轉。 本文中建立的基礎結構範例，會供本節中提供的其他範例參考。
 
 ### <a name="windows-server-workloads"></a>Windows Server 工作負載
 
 **文章** | **詳細資料**
 --- | ---
-[將應用程式重新裝載在 Azure VM 上](contoso-migration-rehost-vm.md) | 本文提供使用 Azure Site Recovery 服務將內部部署應用程式 VM 移轉至 Azure 的範例。
-[在 Azure 容器和 Azure SQL Database 中重新建構應用程式](contoso-migration-rearchitect-container-sql.md) | 本文提供範例說明如何在重新建構應用程式 Web 層作為在 Azure Service Fabric 中執行的 Windows 容器，以及具有 Azure SQL Database 的資料庫時，移轉應用程式。
+[將應用程式重新裝載在 Azure VM 上](./contoso-migration-rehost-vm.md) | 本文提供使用 Azure Site Recovery 服務將內部部署應用程式 VM 移轉至 Azure 的範例。
+[在 Azure 容器和 Azure SQL Database 中重新建構應用程式](./contoso-migration-rearchitect-container-sql.md) | 本文提供範例說明如何在重新建構應用程式 Web 層作為在 Azure Service Fabric 中執行的 Windows 容器，以及具有 Azure SQL Database 的資料庫時，移轉應用程式。
 
 ### <a name="linux-workloads"></a>Linux 工作負載
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式](contoso-migration-rehost-linux-vm-mysql.md) | 本文提供使用 Site Recovery 將 Linux 裝載的應用程式移轉至 Azure VM 的範例。 它會使用 MySQL Workbench 將應用程式資料庫遷移至適用於 MySQL 的 Azure 資料庫。
-[將 Linux 應用程式重新裝載至 Azure VM](contoso-migration-rehost-linux-vm.md) | 此範例說明如何使用 Site Recovery 服務，完成將 Linux 型應用程式「隨即移轉」至 Azure VM 的作業。
+[在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式](./contoso-migration-rehost-linux-vm-mysql.md) | 本文提供使用 Site Recovery 將 Linux 裝載的應用程式移轉至 Azure VM 的範例。 它會使用 MySQL Workbench 將應用程式資料庫遷移至適用於 MySQL 的 Azure 資料庫。
+[將 Linux 應用程式重新裝載至 Azure VM](./contoso-migration-rehost-linux-vm.md) | 此範例說明如何使用 Site Recovery 服務，完成將 Linux 型應用程式「隨即移轉」至 Azure VM 的作業。
 
 ### <a name="sql-server-workloads"></a>SQL Server 工作負載
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure VM 和 SQL Database 受控執行個體上重新裝載應用程式](contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供將內部部署應用程式「隨即移轉」至 Azure 的範例。 此作業須使用 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 來移轉應用程式前端 VM，並使用 [Azure 資料庫移轉服務](/azure/dms/dms-overview)將應用程式資料庫移轉至 Azure SQL Database 受控執行個體。
-[在 Azure VM 上和 SQL Server Always On 可用性群組中重新裝載應用程式](contoso-migration-rehost-vm-sql-ag.md) | 此範例說明如何使用 Azure 裝載的 SQL Server VM 移轉應用程式和資料。 範例中會使用 Site Recovery 來移轉應用程式 VM，並使用 Azure 資料庫移轉服務，將應用程式資料庫移轉至受到 SQL Server 可用性群組保護的 SQL Server 叢集。
+[在 Azure VM 和 SQL Database 受控執行個體上重新裝載應用程式](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供將內部部署應用程式「隨即移轉」至 Azure 的範例。 此作業須使用 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) 來移轉應用程式前端 VM，並使用 [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)將應用程式資料庫移轉至 Azure SQL Database 受控執行個體。
+[在 Azure VM 上和 SQL Server Always On 可用性群組中重新裝載應用程式](./contoso-migration-rehost-vm-sql-ag.md) | 此範例說明如何使用 Azure 裝載的 SQL Server VM 移轉應用程式和資料。 範例中會使用 Site Recovery 來移轉應用程式 VM，並使用 Azure 資料庫移轉服務，將應用程式資料庫移轉至受到 SQL Server 可用性群組保護的 SQL Server 叢集。
 
 ### <a name="aspnet--php--java-apps"></a>ASP.NET/PHP/Java 應用程式
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure Web 應用程式和 Azure SQL Database 中重構應用程式](contoso-migration-refactor-web-app-sql.md) | 此範例說明如何將內部部署 Windows 型應用程式移轉至 Azure Web 應用程式，以及使用 Database Migration Assistant 將應用程式資料庫移轉至 Azure SQL Server 執行個體。
-[使用 Azure App Service、Azure 流量管理員及適用於 MySQL 的 Azure 資料庫，將 Linux 應用程式重構至多個區域](contoso-migration-refactor-linux-app-service-mysql.md) | 此範例說明如何使用 Azure 流量管理員，將內部部署 Linux 型應用程式移轉至多個 Azure 區域的 Azure Web 應用程式，與 GitHub 整合以進行持續傳遞。 應用程式資料庫會移轉至適用於 MySQL 的 Azure 資料庫執行個體。
-[在 Azure 中重建應用程式](contoso-migration-rebuild.md) | 本文提供的範例說明如何使用各種 Azure 功能和受控服務來重建內部部署應用程式，包括 Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure 認知服務及 Azure Cosmos DB。
-[在 Azure DevOps Services 上重構 Team Foundation Server](contoso-migration-tfs-vsts.md) | 本文中的範例說明將內部部署 Team Foundation Server 部署移轉至 Azure 中的 Azure DevOps Services。
+[在 Azure Web 應用程式和 Azure SQL Database 中重構應用程式](./contoso-migration-refactor-web-app-sql.md) | 此範例說明如何將內部部署 Windows 型應用程式移轉至 Azure Web 應用程式，以及使用 Database Migration Assistant 將應用程式資料庫移轉至 Azure SQL Server 執行個體。
+[使用 Azure App Service、Azure 流量管理員及適用於 MySQL 的 Azure 資料庫，將 Linux 應用程式重構至多個區域](./contoso-migration-refactor-linux-app-service-mysql.md) | 此範例說明如何使用 Azure 流量管理員，將內部部署 Linux 型應用程式移轉至多個 Azure 區域的 Azure Web 應用程式，與 GitHub 整合以進行持續傳遞。 應用程式資料庫會移轉至適用於 MySQL 的 Azure 資料庫執行個體。
+[在 Azure 中重建應用程式](./contoso-migration-rebuild.md) | 本文提供的範例說明如何使用各種 Azure 功能和受控服務來重建內部部署應用程式，包括 Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure 認知服務及 Azure Cosmos DB。
+[在 Azure DevOps Services 上重構 Team Foundation Server](./contoso-migration-tfs-vsts.md) | 本文中的範例說明將內部部署 Team Foundation Server 部署移轉至 Azure 中的 Azure DevOps Services。
 
 ### <a name="migration-scaling"></a>移轉調整
 
 **文章** | **詳細資料**
 --- | ---
-[對 Azure 進行大規模移轉](contoso-migration-scale.md) | 本文說明如何讓範例組織準備好對 Azure 進行完整規模的移轉。
+[對 Azure 進行大規模移轉](./contoso-migration-scale.md) | 本文說明如何讓範例組織準備好對 Azure 進行完整規模的移轉。
 
 ### <a name="demo-apps"></a>示範應用程式
 

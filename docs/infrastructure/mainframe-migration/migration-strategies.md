@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70831356"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024382"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
@@ -48,7 +48,7 @@ MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實�
 
 Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中) 複寫資料，提供額外的可用性。 萬一發生 Azure 失敗，計算資源可以存取本機或區域層級的複寫資料。
 
-當您使用 Azure 平台作為服務 (PaaS) 資源時 (例如 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos Database](/azure/cosmos-db/introduction))，Azure 可以自動處理容錯移轉。 當您使用 Azure 基礎結構即服務（IaaS）時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
+當您使用 Azure 平台作為服務 (PaaS) 資源時 (例如 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction))，Azure 可以自動處理容錯移轉。 當您使用 Azure 基礎結構即服務（IaaS）時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
 
 ## <a name="scalability"></a>延展性
 
@@ -60,7 +60,7 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
-透過大型主機耦合工具也可提供自動化異地備援，雖然費用很高，且通常會保留用於任務關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](/azure/backup/backup-introduction-to-azure-backup)、[復原](/azure/site-recovery/site-recovery-overview)和[備援](/azure/storage/common/storage-redundancy)。
+透過大型主機耦合工具也可提供自動化異地備援，雖然費用很高，且通常會保留用於任務關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
 
 ## <a name="storage"></a>儲存體
 
@@ -73,7 +73,7 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 - **中央儲存體：** 直接位於大型主機的處理器上，也稱為處理器或實際儲存體。
 - **輔助儲存體：** 與大型主機位在不同地方，此類型包含 DASD 上的儲存體，也稱為分頁儲存體。
 
-雲端提供一組有彈性、可擴充的選項，且您只要為所需的那些選項付費。 [Azure 儲存體](/azure/storage/common/storage-introduction)提供可大幅調整的資料物件存放區、雲端檔案系統服務、可靠的訊息存放區，以及 NoSQL 存放區。 針對 VM，受控和非受控磁碟可提供安全的永續性磁碟儲存體。
+雲端提供一組有彈性、可擴充的選項，且您只要為所需的那些選項付費。 [Azure 儲存體](https://docs.microsoft.com/azure/storage/common/storage-introduction)提供可大幅調整的資料物件存放區、雲端檔案系統服務、可靠的訊息存放區，以及 NoSQL 存放區。 針對 VM，受控和非受控磁碟可提供安全的永續性磁碟儲存體。
 
 ## <a name="mainframe-development-and-testing"></a>大型主機的開發與測試
 
@@ -88,4 +88,4 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [大型主機應用程式移轉](application-strategies.md)
+> [大型主機應用程式移轉](./application-strategies.md)

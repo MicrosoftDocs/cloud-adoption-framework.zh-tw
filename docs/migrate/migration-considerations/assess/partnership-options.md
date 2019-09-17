@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905635"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022662"
 ---
 # <a name="understand-partnership-options"></a>了解合作關係選項
 
@@ -34,10 +34,10 @@ ms.locfileid: "70905635"
 
 - **評估和移轉工具。** Azure 提供各種工具供您在雲端轉換的不同階段使用，包括評估現有的基礎結構。 如需詳細資訊，請參閱後續＜移轉＞章節中的＜評估＞一節。
 - **[Microsoft 雲端採用架構](../../index.md)。** 此架構為雲端採用和移轉提供了結構化的方法。 此架構的基礎是已在許多 Microsoft 支援的客戶互動中經過證實的作法，而且此架構會組織成一系列的步驟 (從架構、設計到實作)。 在每個步驟中，支援指引可協助您設計應用程式架構。
-- **[雲端設計模式](/azure/architecture/patterns)。** Azure 提供了一些實用的雲端設計模式供您在雲端中建置可靠、可擴充且安全的工作負載。 每個模式都會說明模式處理的問題、套用模式的考量，以及以 Azure 為基礎的範例。 大部分的模式會包括程式碼範例或程式碼片段，示範如何在 Azure 上實作模式。 不過，這些模式與任何分散式系統都有關聯 (無論是裝載於 Azure 或其他雲端平台上)。
-- **[雲端基本概念](/azure/architecture/guide)。** 基本概念有助於教導核心概念實作的基本方法。 此指南可協助技術人員思考超越單一 Azure 服務的解決方案。
-- **[範例案例](/azure/architecture/example-scenario)。** 此指南提供得自實際客戶實作的參考，會概述以往的客戶為了達成特定業務目標所遵循的工具、方法和程序。
-- **[參考架構](/azure/architecture/reference-architectures)。** 參考架構是依案例排列，將相關架構群組在一起。 每個架構都包含建議的做法，以及延展性、可用性、管理性和安全性的考量。 大部分還包含可部署的解決方案。
+- **[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。** Azure 提供了一些實用的雲端設計模式供您在雲端中建置可靠、可擴充且安全的工作負載。 每個模式都會說明模式處理的問題、套用模式的考量，以及以 Azure 為基礎的範例。 大部分的模式會包括程式碼範例或程式碼片段，示範如何在 Azure 上實作模式。 不過，這些模式與任何分散式系統都有關聯 (無論是裝載於 Azure 或其他雲端平台上)。
+- **[雲端基本概念](https://docs.microsoft.com/azure/architecture/guide)。** 基本概念有助於教導核心概念實作的基本方法。 此指南可協助技術人員思考超越單一 Azure 服務的解決方案。
+- **[範例案例](https://docs.microsoft.com/azure/architecture/example-scenario)。** 此指南提供得自實際客戶實作的參考，會概述以往的客戶為了達成特定業務目標所遵循的工具、方法和程序。
+- **[參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures)。** 參考架構是依案例排列，將相關架構群組在一起。 每個架構都包含建議的做法，以及延展性、可用性、管理性和安全性的考量。 大部分還包含可部署的解決方案。
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ FastTrack for Azure 的典型互動主要階段如下：
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>與雲端採用架構方法配合的 Microsoft 服務供應項目
 
-![Microsoft 服務的雲端採用架構方法](../../../_images/mcs-program-approach.jpg)
+![Microsoft 服務的雲端採用架構方法](../../../_images/migrate/mcs-program-approach.jpg)
 
 **評定：** Microsoft 服務會使用[統一的資料和工具驅動方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) (包含架構研討會、Azure 即時資訊、安全性和身分識別威脅模型以及各種工具) 來讓您深入了解現有 Azure 環境的挑戰、風險、建議和問題，以及所獲得的重要成果 (例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf))。
 

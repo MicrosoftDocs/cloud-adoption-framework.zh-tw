@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829237"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023452"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>跨任何雲端採用旅程實現成功
 
@@ -22,12 +22,12 @@ ms.locfileid: "70829237"
 
 在此架構中，啟用是一種核心主題。 下列檢查清單包含一系列的主題，應內嵌在任何雲端採用工作中，以確保在 IT 與企業中的旅程得以成功：
 
-- **圖**建立清楚的[商業成果](../business-strategy/business-outcomes/index.md)、定義的[數位資產計畫](../digital-estate/index.md)，並充分瞭解[採用](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)待辦專案。
+- **圖**建立清楚的[商業成果](../strategy/business-outcomes/index.md)、定義的[數位資產計畫](../digital-estate/index.md)，並充分瞭解[採用](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)待辦專案。
 - **就緒：** 透過[技能和學習計劃](../ready/technical-skills.md)，確保員工的準備就緒。
 - **2gb/s**定義可管理的作業模式，以在採用之後引導活動。
-  - **[組織](../organization/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
-  - **制約**讓適當的[治理專業領域](../governance/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
-  - **管理：** IT 組合的持續性[作業](../operations/index.md)，可將商務程式的中斷降到最低，並確保 IT 組合的穩定性。
+  - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
+  - **制約**讓適當的[治理專業領域](../govern/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
+  - **管理：** IT 組合的持續[營運管理](../manage/index.md)，讓商務程式的中斷降到最低，並確保 it 組合的穩定性。
   - **部門**配合適當的[合作關係和支援選項](../migrate/migration-considerations/assess/partnership-options.md)。
 
 ## <a name="additional-tools"></a>其他工具
@@ -38,7 +38,7 @@ ms.locfileid: "70829237"
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819162"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021945"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
@@ -43,7 +43,7 @@ ms.locfileid: "70819162"
 
 也務必形成兩個其他高階小組：治理小組和安全性小組。 這些小組負責設計、實作和持續稽核企業的治理與安全性原則。 治理小組需要曾用過資產保護、成本管理、群組原則及相關主題的成員。 安全性小組需要十分熟悉最新業界安全性標準以及企業安全性需求的成員。
 
-![雲端策略小組，和治理與安全性小組](../_images/getting-started-overview-1.png)
+![雲端策略小組，和治理與安全性小組](../_images/ready/getting-started-overview-1.png)
 
 治理小組負責在雲端中設計和實作企業的治理模型，以及部署和維護屬於數位轉型的共用基礎結構資產。 這些資產包括將內部部署網路連線到雲端中虛擬網路所需的硬體、軟體和雲端資源。
 
@@ -53,9 +53,9 @@ ms.locfileid: "70819162"
 
 您企業數位轉型的下一個步驟，是要讓雲端策略小組的成員了解雲端技術將如何變更企業執行業務的方式。 這是您的業務、人員和技術變更的準備及規劃。 雲端策略小組的成員務必了解新功能，以及雲端與內部部署之間的差異。
 
-![雲端策略、治理和安全性小組了解在雲端中操作的最佳做法。](../_images/getting-started-overview-2.png)
+![雲端策略、治理和安全性小組了解在雲端中操作的最佳做法。](../_images/ready/getting-started-overview-2.png)
 
-了解雲端的起點是學習高階 [Azure 運作方式](../getting-started/what-is-azure.md)。 接下來，深入了解[在 Azure 中治理](../governance/resource-consistency/what-is-governance.md)的基本概念以準備[了解資源存取管理](../governance/resource-consistency/azure-resource-access.md)。
+了解雲端的起點是學習高階 [Azure 運作方式](../getting-started/what-is-azure.md)。 接下來，深入了解[在 Azure 中治理](../govern/resource-consistency/what-is-governance.md)的基本概念以準備[了解資源存取管理](../govern/resource-consistency/resource-access-management.md)。
 
 如需進階學習，治理小組應檢閱目錄的治理小節中的概念和設計指南。 基礎結構和工作負載各節適合用於了解一般架構和雲端中的工作負載。
 
@@ -93,7 +93,7 @@ ms.locfileid: "70819162"
 
 小組採用優先設定的清單，並逐步完成每個高階解決方案來設計每個解決方案。 設計程序會牽涉到新基礎結構和新工作負載的規格。 它們所遵循的人員及程序的角色也可能會變更。 每個設計小組也務必在這個階段包含治理和安全性小組以檢閱每一項設計。 每一項設計都必須落在治理與安全性小組所定義的原則和程序中，且這些小組必須包含在每一項設計的最終核准中。
 
-![雲端策略小組將高階解決方案交付給設計與實作小組。](../_images/getting-started-overview-3.png)
+![雲端策略小組將高階解決方案交付給設計與實作小組。](../_images/ready/getting-started-overview-3.png)
 
 每個解決方案的設計都是重要工作。 設計建立時，必須與其他小組的其他解決方案設計一起考量。 例如，如果數個設計會導致現有內部部署應用程式和服務移轉至雲端，將這些群組在一起並設計整體的移轉策略可能更有效率。 另舉一例，可能無法遷移某些現有的內部部署應用程式和服務，解決方案可能是要將其取代為新的開發或第三方服務。 在此情況下，將這些群組在一起，並判斷它們判斷之間的重疊，以判斷第三方服務是否可用於多個解決方案，可能更有效率。
 

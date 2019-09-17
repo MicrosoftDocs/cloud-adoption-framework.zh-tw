@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821164"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025137"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>在 Azure 上重建內部部署應用程式
 
@@ -109,7 +109,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 **需求** | **詳細資料**
 --- | ---
 **Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
-**Azure 基礎結構** | [了解](contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。
+**Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。
 **開發人員必要條件** | 在開發人員工作站上，Contoso 需要下列工具：<br/><br/> - [Visual Studio 2017 Community 版本：15.5 版](https://www.visualstudio.com)<br/><br/> 已啟用 .NET 工作負載。<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> 已設定為使用 Windows 容器的 [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Contoso 管理員會依下列方式進行佈建：
     ![AKS](./media/contoso-migration-rebuild/aks2.png)
 4. 他們會選取 [檢視] > [整合式終端機]，以在 Visual Studio Code 中開啟整合式終端機。
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
-5. 在 PowerShell 整合式終端機中，他們會使用 Connect-AzureRmAccount 命令登入 Azure。 [深入了解](/powershell/azure/get-started-azureps)如何開始使用 PowerShell。
+5. 在 PowerShell 整合式終端機中，他們會使用 Connect-AzureRmAccount 命令登入 Azure。 [深入了解](https://docs.microsoft.com/powershell/azure/get-started-azureps)如何開始使用 PowerShell。
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 6. 他們會執行 **az login** 命令來驗證 Azure CLI，並遵循指示以使用其網頁瀏覽器進行驗證。 [深入了解](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Contoso 管理員會依下列方式部署應用程式。
 
 ### <a name="security"></a>安全性
 
-- Contoso 必須確保新資料庫安全無虞。 [深入了解](/azure/sql-database/sql-database-security-overview)。
+- Contoso 必須確保新資料庫安全無虞。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 應用程式必須更新為搭配使用 SSL 與憑證。 容器執行個體應重新部署為會在 443 上接聽。
-- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](/azure/service-fabric/service-fabric-application-secret-management)。
+- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>備份和災害復原
 
-- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
-- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
-- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解](/azure/container-registry/container-registry-geo-replication)。
-- Cosmos DB 會自動備份。 Contoso 可以[深入了解](/azure/cosmos-db/online-backup-and-restore)這個程序。
+- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
+- Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 部署好所有資源之後，Contoso 應根據[基礎結構規劃](contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
+- 部署好所有資源之後，Contoso 應根據[基礎結構規劃](./contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
 - 所有授權費用都會併入 Contoso 使用的 PaaS 服務中。 這將會從 EA 中扣除。
-- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](/azure/cost-management/overview) Azure 成本管理。
+- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。
 
 ## <a name="conclusion"></a>結論
 

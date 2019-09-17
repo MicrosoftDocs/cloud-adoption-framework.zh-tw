@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825480"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022635"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>讓遷移後的應用程式準備好進行生產環境升階
 
@@ -21,7 +21,7 @@ ms.locfileid: "70825480"
 
 ## <a name="validate-the-business-change-plan"></a>驗證業務變更方案
 
-當業務使用者或客戶利用技術解決方案來執行驅動業務的程序時，就會發生轉換。 整備是驗證[業務變更方案](business-change-plan.md)的絕佳機會，並可確保會對涉及的業務和技術小組進行適當的訓練。 尤其是請確定您已正確傳達變更方案的下列技術相關層面：
+當業務使用者或客戶利用技術解決方案來執行驅動業務的程序時，就會發生轉換。 整備是驗證[業務變更方案](./business-change-plan.md)的絕佳機會，並可確保會對涉及的業務和技術小組進行適當的訓練。 尤其是請確定您已正確傳達變更方案的下列技術相關層面：
 
 - 終端使用者訓練已完成 (或至少已規劃)。
 - 任何中斷時段都已確實傳達並通過核准。

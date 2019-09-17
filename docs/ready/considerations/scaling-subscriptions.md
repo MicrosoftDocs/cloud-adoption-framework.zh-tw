@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905363"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025151"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
 
@@ -39,7 +39,7 @@ ms.locfileid: "70905363"
 
 - 針對不同資源類型，訂用帳戶會有不同的限制。 例如，訂用帳戶中的虛擬網路數目會受限。 當訂用帳戶快達到其任何限制時，您就需要建立另一個訂用帳戶，並將新資源放入該處。
 
-  如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額與條件約束](/azure/azure-subscription-service-limits)。
+  如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額與條件約束](https://docs.microsoft.com/azure/azure-subscription-service-limits)。
 
 - 每個訂用帳戶都可以針對可部署的資源類型和支援的區域，執行自己的原則。
 
@@ -59,7 +59,7 @@ ms.locfileid: "70905363"
 
 您也可以選擇針對您組織特有的其他商業或技術原因，來建立其他訂用帳戶。 訂用帳戶之間的資料輸入和輸出可能會有一些額外成本。
 
-您可以將許多資源類型從一個訂用帳戶移至另一個訂用帳戶，或使用自動化部署將資源遷移至另一個訂用帳戶。 如需詳細資訊，請參閱[將 Azure 資源移至另一個資源群組戶或訂用帳](/azure/azure-resource-manager/resource-group-move-resources)。
+您可以將許多資源類型從一個訂用帳戶移至另一個訂用帳戶，或使用自動化部署將資源遷移至另一個訂用帳戶。 如需詳細資訊，請參閱[將 Azure 資源移至另一個資源群組戶或訂用帳](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
 
 ## <a name="managing-multiple-subscriptions"></a>管理多個訂用帳戶
 
@@ -76,7 +76,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 藉由依賴此繼承模型，您可以在階層中安排訂用帳戶，讓每個訂用帳戶都遵循適當的原則和安全性控制項。
 
-![用來組織 Azure 資源的四個範圍層級](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![用來組織 Azure 資源的四個範圍層級](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 根管理群組上的任何存取權或原則指派，都會套用至目錄中的所有資源。 請仔細考慮要在此範圍上定義的項目。 這應該僅包含您必須擁有的指派。
 
@@ -86,26 +86,26 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 ![管理群組階層的範例](../../_images/ready/management-group-hierarchy.png)
 
-如需詳細資訊，請參閱[使用 Azure 管理群組來組織資源](/azure/governance/management-groups)。
+如需詳細資訊，請參閱[使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/governance/management-groups)。
 
 ## <a name="tips-for-creating-new-subscriptions"></a>建立新訂用帳戶的秘訣
 
 - 識別負責建立新訂用帳戶的人員。
 - 決定訂用帳戶中的預設資源。
 - 決定所有標準訂用帳戶的型態。 這些考量包括 RBAC 存取、原則、標記和基礎結構資源。
-- 可能的話，請[使用服務主體](/azure/azure-resource-manager/grant-access-to-create-subscription)來建立新的訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
+- 可能的話，請[使用服務主體](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription)來建立新的訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
 - 如果您是 Enterprise 合約 (EA) 客戶，請要求 Azure 支援服務為您的組織封鎖非 EA 訂用帳戶的建立。
 
 ## <a name="related-resources"></a>相關資源
 
 - [Azure 基礎概念](./fundamental-concepts.md)。
-- [使用 Azure 管理群組來組織資源](/azure/governance/management-groups)。
-- [提高存取權以管理所有 Azure 訂用帳戶和管理群組](/azure/role-based-access-control/elevate-access-global-admin)。
-- [將 Azure 資源移至另一個資源群組或訂用帳戶](/azure/azure-resource-manager/resource-group-move-resources)。
+- [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/governance/management-groups)。
+- [提高存取權以管理所有 Azure 訂用帳戶和管理群組](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)。
+- [將 Azure 資源移至另一個資源群組或訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
 
 ## <a name="next-steps"></a>後續步驟
 
-部署 Azure 資源時，檢閱並遵循[建議的命名和標記慣例](./name-and-tag.md)。
+部署 Azure 資源時，檢閱並遵循[建議的命名和標記慣例](./naming-and-tagging.md)。
 
 > [!div class="nextstepaction"]
-> [建議的命名和標記慣例](./name-and-tag.md)
+> [建議的命名和標記慣例](./naming-and-tagging.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fc992a4c00a1acd99481d6090563ecef38c5fedb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70832305"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025103"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>將 Team Foundation Server 部署重構到 Azure DevOps Services
 
@@ -47,7 +47,7 @@ Contoso 雲端小組已擬定好移轉至 Azure DevOps Services 的目標：
 - TFS 將會遷移至 Azure DevOps Services。
 - Contoso 目前有一個名為 `ContosoDev` 的 TFS 集合，將會遷移至稱為 `contosodevmigration.visualstudio.com` 的 Azure DevOps Services 組織。
 - 去年的專案、工作項目、錯誤 (bug) 和反覆項目將會遷移至 Azure DevOps Services。
-- Contoso 將會使用他們在移轉規劃之初[部署其 Azure 基礎結構](contoso-migration-infrastructure.md)時所設定的 Azure Active Directory。
+- Contoso 將會使用他們在移轉規劃之初[部署其 Azure 基礎結構](./contoso-migration-infrastructure.md)時所設定的 Azure Active Directory。
 
 ![案例架構](./media/contoso-migration-tfs-vsts/architecture.png)
 
@@ -71,8 +71,8 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。
-**Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。
+**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
+**Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。
 **內部部署 TFS 伺服器** | 內部部署必須在此過程中執行或升級為 TFS 2018 Upgrade 2。
 
 ## <a name="scenario-steps"></a>案例步驟
@@ -95,15 +95,15 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需要其他協助？**
 
-- [Azure 儲存體簡介](/azure/storage/common/storage-introduction)。
-- [建立儲存體帳戶](/azure/storage/common/storage-create-storage-account)。
+- [Azure 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
+- [建立儲存體帳戶](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)。
 
 ## <a name="step-2-upgrade-tfs"></a>步驟 2:升級 TFS
 
 Contoso 管理員會將 TFS 伺服器升級至 TFS 2018 Update 2。 在他們開始之前：
 
 - 他們下載了 [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads)
-- 他們驗證[硬體需求](/tfs/server/requirements)，並詳閱[版本資訊](/visualstudio/releasenotes/tfs2018-relnotes)和[升級注意事項](/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)。
+- 他們驗證[硬體需求](https://docs.microsoft.com/tfs/server/requirements)，並詳閱[版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)和[升級注意事項](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)。
 
 他們會依照下列方式進行升級：
 
@@ -128,7 +128,7 @@ Contoso 管理員會將 TFS 伺服器升級至 TFS 2018 Update 2。 在他們開
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 在執行某些 TFS 升級時，必須在升級完成後執行 [設定功能精靈]。 [深入了解](/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
+> 在執行某些 TFS 升級時，必須在升級完成後執行 [設定功能精靈]。 [深入了解](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
 
 **需要其他協助？**
 
@@ -464,13 +464,13 @@ Contoso 管理員會先進行試執行移轉，以確定一切都正常運作。
 
 **需要其他協助？**
 
-[深入了解](/azure/devops/repos/git/import-from-TFVC?view=vsts)如何從 TFVC 匯入。
+[深入了解](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts)如何從 TFVC 匯入。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
 移轉完成後，Contoso 必須執行下列作業：
 
-- 檢閱[匯入之後](/azure/devops/articles/migration-post-import?view=vsts)一文，以了解其他匯入活動的相關資訊。
+- 檢閱[匯入之後](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts)一文，以了解其他匯入活動的相關資訊。
 - 刪除 TFVC 存放庫，或將其置於唯讀模式中。 不得使用程式碼基底，但可以參考其歷程記錄。
 
 ## <a name="post-migration-training"></a>移轉後訓練

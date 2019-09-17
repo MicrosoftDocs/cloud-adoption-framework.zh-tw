@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829367"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023625"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
-雲端合理化是評估資產的程式, 以判斷在雲端中遷移或現代化每個資產的最佳方式。 如需合理化程式的詳細資訊, 請參閱[什麼是數位資產？](index.md)。
+雲端合理化是評估資產的程式, 以判斷在雲端中遷移或現代化每個資產的最佳方式。 如需合理化程式的詳細資訊, 請參閱[什麼是數位資產？](./index.md)。
 
 ## <a name="rationalization-context"></a>合理化內容
 
@@ -161,4 +161,4 @@ ms.locfileid: "70829367"
 同時, 您可以將這五個合理化應用程式套用到數位資產, 以協助您針對每個應用程式的未來狀態做出合理化決策。
 
 > [!div class="nextstepaction"]
-> [什麼是數位資產？](index.md)
+> [什麼是數位資產？](./index.md)

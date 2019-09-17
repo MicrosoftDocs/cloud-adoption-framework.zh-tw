@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 021dccdbabc7d2c51b26e98b7bc6380f3a2aa8d3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821073"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025027"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
 
@@ -24,7 +24,7 @@ ms.locfileid: "70821073"
 
 Contoso 在考慮遷移至 Azure 時，該公司需要進行技術和財務方面的評量，以判斷其內部部署工作負載是否適合雲端移轉。 尤其是，Contoso 小組想要評定機器和資料庫是否能與移轉作業相容。 該小組想要預估在 Azure 中執行 Contoso 的資源所需的容量和成本。
 
-為了開始進行和更加了解其中所涉及的技術，Contoso 會評定兩個內部部署應用程式 (在下表中摘要說明)。 該公司會評定可重新裝載和重構應用程式以供移轉的移轉案例。 在[移轉範例概觀](contoso-migration-overview.md)中深入了解重新裝載與重構。
+為了開始進行和更加了解其中所涉及的技術，Contoso 會評定兩個內部部署應用程式 (在下表中摘要說明)。 該公司會評定可重新裝載和重構應用程式以供移轉的移轉案例。 在[移轉範例概觀](./contoso-migration-overview.md)中深入了解重新裝載與重構。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -74,8 +74,8 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
 技術 | 描述 | 成本
 --- | --- | ---
 [資料移轉小幫手](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 Data Migration Assistant 來評定和偵測可能影響其在 Azure 中資料庫功能的相容性問題。 Data Migration Assistant 會評定 SQL 來源和目標之間的功能同位。 其會建議如何改善效能和可靠性。 | Data Migration Assistant 是免費、可下載的工具。
-[Azure Migrate](/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
-[服務對應](/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate 會使用服務對應來顯示該公司想要遷移的機器彼此之間的相依性。 | 服務對應是 Azure 監視器記錄的一部分。 目前，Contoso 可免費使用服務對應 180 天。
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
+[服務對應](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate 會使用服務對應來顯示該公司想要遷移的機器彼此之間的相依性。 | 服務對應是 Azure 監視器記錄的一部分。 目前，Contoso 可免費使用服務對應 180 天。
 
 在此案例中，Contoso 會下載並執行 Data Migration Assistant，以評定其旅遊應用程式的內部部署 SQL Server 資料庫。 Contoso 會使用 Azure Migrate 搭配相依性對應來評定應用程式 VM，再將其遷移至 Azure。
 
@@ -110,8 +110,8 @@ Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 - 至少兩個內部部署 VMware VM，且其中一個要執行 SQL Server 資料庫。
 - 可在每部 VM 上安裝 Azure Migrate 代理程式的權限。
 - VM 應該要能直接連線到網際網路。
-  - 您可以限制只能透過網際網路存取[所需的 URL](/azure/migrate/concepts-collector)。
-  - 如果您的 VM 沒有網際網路連線，則 VM 上必須安裝 Azure [Log Analytics 閘道](/azure/azure-monitor/platform/gateway)，並將代理程式流量導向透過該閘道。
+  - 您可以限制只能透過網際網路存取[所需的 URL](https://docs.microsoft.com/azure/migrate/concepts-collector)。
+  - 如果您的 VM 沒有網際網路連線，則 VM 上必須安裝 Azure [Log Analytics 閘道](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)，並將代理程式流量導向透過該閘道。
 - 執行 SQL Server 執行個體的 VM 所具有的 FQDN，以供評估資料庫。
 - SQL Server VM 上所執行的 Windows 防火牆應該在 TCP 通訊埠 1433 (預設值) 允許外部連線。 此設定可讓 Data Migration Assistant 能夠連線。
 
@@ -218,7 +218,7 @@ Contoso 會確認其有權限可藉由匯入 .ova 格式的檔案來建立 VM。
 
 ### <a name="verify-ports"></a>確認連接埠
 
-Contoso 評量會使用相依性對應。 若要進行相依性對應，所要評定的 VM 上必須安裝代理程式。 該代理程式必須能從每個 VM 上的 TCP 連接埠 443 連線到 Azure。 了解[連線需求](/azure/log-analytics/log-analytics-concept-hybrid)。
+Contoso 評量會使用相依性對應。 若要進行相依性對應，所要評定的 VM 上必須安裝代理程式。 該代理程式必須能從每個 VM 上的 TCP 連接埠 443 連線到 Azure。 了解[連線需求](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid)。
 
 ## <a name="step-4-discover-vms"></a>步驟 4：探索 VM
 
@@ -279,7 +279,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
     **範例:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. 產生的雜湊應符合[評定 VMWare VM 以進行移轉](/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
+3. 產生的雜湊應符合[評定 VMWare VM 以進行移轉](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
 
 ### <a name="create-the-collector-appliance"></a>建立收集器設備
 
@@ -449,7 +449,7 @@ Contoso 現在可以確認機器相依性並建立群組。 接著，會執行�
 
 2. 為了檢視評量，Contoso 會選取 [管理] > [評量]。
 
-Contoso 會使用預設評量設定，但您可以[自訂設定](/azure/migrate/how-to-modify-assessment)。
+Contoso 會使用預設評量設定，但您可以[自訂設定](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment)。
 
 ### <a name="analyze-the-vm-assessment"></a>分析 VM 評估
 
@@ -519,4 +519,4 @@ Azure Migrate 評量包括內部部署與 Azure 的相容性、建議的 Azure V
 
 ## <a name="next-steps"></a>後續步驟
 
-在 Contoso 將此工作負載評定為可能的移轉候選項之後，即可開始準備其內部部署基礎結構及其 Azure 基礎結構以進行移轉。 如需 Contoso 如何執行這些程序的範例，請參閱雲端採用架構遷移最佳做法一節中的[部署 Azure 基礎結構](contoso-migration-infrastructure.md)一文。
+在 Contoso 將此工作負載評定為可能的移轉候選項之後，即可開始準備其內部部署基礎結構及其 Azure 基礎結構以進行移轉。 如需 Contoso 如何執行這些程序的範例，請參閱雲端採用架構遷移最佳做法一節中的[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)一文。

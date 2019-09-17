@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829289"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023505"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>收集數位資產的清查資料
 
-開發清查是[數位資產規劃](index.md)的第一步。 在此流程中, 會收集支援特定商務功能的 IT 資產清單, 以供日後分析和合理化。 本文假設分析的最後方法最適合用於規劃。 如需詳細資訊，請參閱[數位資產規劃方法](./approach.md)。
+開發清查是[數位資產規劃](./index.md)的第一步。 在此流程中, 會收集支援特定商務功能的 IT 資產清單, 以供日後分析和合理化。 本文假設分析的最後方法最適合用於規劃。 如需詳細資訊，請參閱[數位資產規劃方法](./approach.md)。
 
 ## <a name="take-inventory-of-a-digital-estate"></a>清查數位資產
 
@@ -38,4 +38,4 @@ ms.locfileid: "70829289"
 清查經過編譯和驗證之後, 就可以合理化。 清查合理化是數位資產規劃的下一個步驟。
 
 > [!div class="nextstepaction"]
-> [合理化數位資產](rationalize.md)
+> [合理化數位資產](./rationalize.md)

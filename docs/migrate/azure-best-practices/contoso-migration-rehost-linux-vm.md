@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e0f83c51d3b335d4a4385fd39351d6ab6fa3a78d
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906385"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024997"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM
 
@@ -69,8 +69,8 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **考量** | **詳細資料**
 --- | ---
-**優點** | 這兩個應用程式 VM 都會移至 Azure (不需變更)，讓移轉變簡單。<br/><br/> 由於 Contoso 對這兩個應用程式 VM 使用「隨即轉移」，所以應用程式資料庫不需要任何特殊設定或移轉工具。<br/><br/> Contoso 會保留 Azure 中應用程式 VM 的完整控制權。 <br/><br/> 應用程式 VM 會執行 Ubuntu 16.04-TLS，這是經過背書的 Linux 散發套件。 [深入了解](/azure/virtual-machines/linux/endorsed-distros)。
-**缺點** | 應用程式的 Web 和資料層會保留單一容錯移轉點。 <br/><br/> Contoso 必須繼續支持此應用程式作為 Azure VM，而不是轉向適用於 MySQL 的 Azure App Service 與 Azure Database 等受控服務。<br/><br/> Contoso 意識到透過「隨即轉移」VM 移轉讓事情保持簡單，他們就無法充分利用[適用於 MySQL 的 Azure 資料庫](/azure/mysql/overview)所提供的功能 (內建的高可用性、可預測的效能、簡單調整、自動備份和內建安全性)。
+**優點** | 這兩個應用程式 VM 都會移至 Azure (不需變更)，讓移轉變簡單。<br/><br/> 由於 Contoso 對這兩個應用程式 VM 使用「隨即轉移」，所以應用程式資料庫不需要任何特殊設定或移轉工具。<br/><br/> Contoso 會保留 Azure 中應用程式 VM 的完整控制權。 <br/><br/> 應用程式 VM 會執行 Ubuntu 16.04-TLS，這是經過背書的 Linux 散發套件。 [深入了解](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
+**缺點** | 應用程式的 Web 和資料層會保留單一容錯移轉點。 <br/><br/> Contoso 必須繼續支持此應用程式作為 Azure VM，而不是轉向適用於 MySQL 的 Azure App Service 與 Azure Database 等受控服務。<br/><br/> Contoso 意識到透過「隨即轉移」VM 移轉讓事情保持簡單，他們就無法充分利用[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)所提供的功能 (內建的高可用性、可預測的效能、簡單調整、自動備份和內建安全性)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -79,16 +79,17 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 Contoso 會按照下列方式進行遷移：
 
 - 在第一個步驟中，Contoso 會準備以及設定 Azure Migrate 伺服器移轉的 Azure 元件，然後準備內部部署 VMware 基礎結構。
-- 他們已備妥 [Azure 基礎結構](contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate 伺服器移轉工具來新增 VM 複寫的設定。 
+- 他們已備妥 [Azure 基礎結構](./contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate 伺服器移轉工具來新增 VM 複寫的設定。 
 - 等一切就緒，Contoso 就可以開始複寫 VM。
 - 複寫功能啟用且正常運作後，Contoso 會將 VM 容錯移轉至 Azure，而加以遷移。
 
-![移轉程序](./media/contoso-migration-rehost-linux-vm/migraton-process-az-migrate.png)
+![移轉程序](./media/contoso-migration-rehost-linux-vm/migration-process-az-migrate.png)
+
 ### <a name="azure-services"></a>Azure 服務
 
 **服務** | **說明** | **成本**
 --- | --- | ---
-[Azure Migrate 伺服器移轉](/azure/migrate/contoso-migration-rehost-linux-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate/)費用和定價。
+[Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate/)費用和定價。
 
 
 ## <a name="prerequisites"></a>必要條件
@@ -99,10 +100,10 @@ Contoso 會按照下列方式進行遷移：
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。
-**Azure 基礎結構** |  [了解](contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。<br/><br/> 深入瞭解 Azure Migrate 伺服器移轉的特定[必要條件](/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites)需求。
+**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
+**Azure 基礎結構** |  [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。<br/><br/> 深入瞭解 Azure Migrate 伺服器移轉的特定[必要條件](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites)需求。
 **內部部署伺服器** | 內部部署 vCenter 伺服器應執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。
-**內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](/azure/virtual-machines/linux/endorsed-distros)。
+**內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -126,7 +127,7 @@ Contoso 會按照下列方式進行遷移：
 
 他們依照下列方式進行其設定：
 
-1. 設定網路 - Contoso 已設定好網路，當他們 [部署 Azure 基礎結構](contoso-migration-infrastructure.md) 時，就可以用於 Azure Migrate 伺服器移轉。
+1. 設定網路 - Contoso 已設定好網路，當他們 [部署 Azure 基礎結構](./contoso-migration-infrastructure.md) 時，就可以用於 Azure Migrate 伺服器移轉。
 
     - SmartHotel360 應用程式為生產應用程式，而且 VM 會被移轉至美國東部 2 主要區域的 Azure 生產網路 (VNET-PROD-EUS2)。
     - 這兩個 VM 會置於可作為生產資源的 ContosoRG 資源群組中。
@@ -140,7 +141,7 @@ Contoso 會按照下列方式進行遷移：
 
 **需要其他協助？**
 
-[深入了解](/azure/migrate/)設定 Azure Migrate 伺服器移轉工具。 
+[深入了解](https://docs.microsoft.com/azure/migrate/)設定 Azure Migrate 伺服器移轉工具。 
 
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
@@ -153,7 +154,7 @@ Contoso 會按照下列方式進行遷移：
 
 **需要其他協助？**
 
-- [深入了解](/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration)準備 VM 以進行移轉
+- [深入了解](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration)準備 VM 以進行移轉
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>步驟 3：複寫內部部署 VM
 
@@ -277,8 +278,8 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 
 **需要其他協助？**
 
-- [了解](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)如何執行測試容錯移轉。
-- [深入了解](/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。 
+- [了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)如何執行測試容錯移轉。
+- [深入了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。 
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
@@ -303,17 +304,17 @@ Contoso 安全性小組會檢閱 OSTICKETWEB 和 OSTICKETMYSQLVM，判斷是否�
 - 小組會檢閱 VM 的網路安全性群組 (NSG) 以控制存取權。 NSG 可用來確保只可以傳遞該應用程式允許的流量。
 - 小組也會考慮使用磁碟加密和 Azure Key Vault 來保護 VM 磁碟上的資料。
 
-[深入了解](/azure/security/azure-security-best-practices-vms) VM 的安全措施。
+[深入了解](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) VM 的安全措施。
 
 ### <a name="bcdr"></a>BCDR
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](/azure/site-recovery/azure-to-azure-quickstart)。
+- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 部署資源之後，Contoso 會指派 [Azure 基礎結構部署](contoso-migration-infrastructure.md#set-up-tagging)期間定義的 Azure 標記。
+- 部署資源之後，Contoso 會指派 [Azure 基礎結構部署](./contoso-migration-infrastructure.md#set-up-tagging)期間定義的 Azure 標記。
 - Contoso 沒有 Ubuntu 伺服器相關授權問題。
-- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](/azure/cost-management/overview) Azure 成本管理。
+- Contoso 會啟用 Microsoft 子公司 Cloudyn 授權的 Azure 成本管理。 它是一種多雲端成本管理解決方案，可協助您使用和管理 Azure 和其他雲端資源。 [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。

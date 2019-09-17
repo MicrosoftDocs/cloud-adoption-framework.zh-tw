@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825350"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025347"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>為技術複雜度預做準備：敏捷式變更管理
 
@@ -46,7 +46,7 @@ INVEST 是許多敏捷式方法中常見的縮略字，用於撰寫使用者劇�
 
 一開始，移轉待辦項目的工作負載未必符合上一節中所述的 INVEST 準則。 然而，它們可當作初始清查中資產的邏輯分組，作為未來工作的預留位置。 這些預留位置在技術上可能不正確，但可當作與企業協調的基礎。
 
-![移轉過程中所用的移轉、發行與反覆運算待辦項目之間的關聯性](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![移轉過程中所用的移轉、發行與反覆運算待辦項目之間的關聯性](../../../_images/migrate/backlog-relationships.png)
 
 *移轉、發行與反覆運算待辦項目會追蹤移轉過程中不同的活動層級。*
 

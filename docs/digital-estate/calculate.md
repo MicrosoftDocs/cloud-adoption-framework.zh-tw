@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c1fb4224c7a8865785b795ad8f28bfa04779ce89
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829354"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023526"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>根據數位資產調整成本模型以預測雲端成本
 
@@ -22,9 +22,9 @@ ms.locfileid: "70829354"
 
 Azure 定價工具可協助您以透明和精確度來管理雲端支出, 讓您可以充分利用 Azure 和其他雲端。 這些工具可用來監視、配置及最佳化雲端成本，讓客戶放心加速未來的投資。
 
-- [Azure Migrate](/azure/migrate/migrate-overview)：Azure Migrate 可能是成本模型對齊最符合成本效益的方法。 只要使用這項工具，數位資產的[清查](inventory.md)、[有限合理化](rationalize.md)和成本計算全都可以完成。
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)：Azure Migrate 可能是成本模型對齊最符合成本效益的方法。 只要使用這項工具，數位資產的[清查](./inventory.md)、[有限合理化](./rationalize.md)和成本計算全都可以完成。
 
-- [擁有權總成本（TCO）計算機](https://azure.com/tco)：透過 Azure 雲端平台降低內部部署基礎結構的擁有權總成本 (TCO)。 使用 Azure TCO 計算機，可預估您將應用程式工作負載移至 Azure 所省下的成本。 提供內部部署環境的簡短描述, 以取得立即報告。
+- [擁有權總成本（TCO）計算機](https://azure.microsoft.com/pricing/tco/calculator/)：透過 Azure 雲端平台降低內部部署基礎結構的擁有權總成本 (TCO)。 使用 Azure TCO 計算機，可預估您將應用程式工作負載移至 Azure 所省下的成本。 提供內部部署環境的簡短描述, 以取得立即報告。
 
 - [Azure 定價計算機](https://azure.microsoft.com/pricing)：使用我們的定價計算機來估計您預期的每月帳單。 使用計費入口網站隨時追蹤實際的帳戶使用量及帳單。 設定自動電子郵件計費警示, 以在您的支出超過設定的金額時通知您。
 

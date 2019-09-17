@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833397"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025458"
 ---
 # <a name="business-change-plan"></a>業務變更方案
 
@@ -25,7 +25,7 @@ ms.locfileid: "70833397"
 
 雖然方法可能不一，但大部分的使用者採用方案都有普遍的主題。 這些主題通常會以可配合增量改變的風險控制和促進方法為基礎。 下圖所示的 Eason 矩陣會呈現各種採用類型的主題背後有何驅動因素。
 
-![使用者採用顧慮的 Eason 矩陣](../../../_images/eason-matrix.jpg)
+![使用者採用顧慮的 Eason 矩陣](../../../_images/migrate/eason-matrix.jpg)
 
 使用者採用類型的 Eason 矩陣。
 
@@ -37,8 +37,8 @@ ms.locfileid: "70833397"
 
 **上游問題。** 上游問題會探討使用者採用發生之前的影響或變更：
 
-- 預期的[業務成果](../../../business-strategy/business-outcomes/index.md)是否已量化？
-- 業務影響是否會對應到已定義的[學習計量](../../../business-strategy/learning-metrics.md)？
+- 預期的[業務成果](../../../strategy/business-outcomes/index.md)是否已量化？
+- 業務影響是否會對應到已定義的[學習計量](../../../strategy/learning-metrics.md)？
 - 哪些業務程序和小組會利用此技術解決方案？
 - 公司中有誰最能在測試和意見反應方面配合進階使用者？
 - 受影響的業務主管是否有參與規劃優先順序和移轉？

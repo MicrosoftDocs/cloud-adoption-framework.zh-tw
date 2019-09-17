@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905294"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025164"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -69,7 +69,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 
 電子郵件帳戶可以與多個 Azure 訂用帳戶相關聯。 帳戶管理員可以將訂用帳戶轉移到另一個帳戶。
 
-如需 Azure 中定義的角色詳細說明，請參閱[傳統訂用帳戶管理員角色、Azure RBAC 角色和 Azure AD 管理員角色](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
+如需 Azure 中定義的角色詳細說明，請參閱[傳統訂用帳戶管理員角色、Azure RBAC 角色和 Azure AD 管理員角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
 ## <a name="subscriptions-and-regions"></a>訂用帳戶和區域
 
@@ -84,13 +84,13 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 
 下列資源會提供本文所述概念的詳細資訊：
 
-- [Azure 如何運作？](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Azure 中的資源存取管理](../../governance/resource-consistency/azure-resource-access.md)
-- [Azure Resource Manager 概觀](/azure/azure-resource-manager/resource-group-overview)
-- [Azure 資源的角色型存取控制 (RBAC)](/azure/role-based-access-control/overview)
-- [什麼是 Azure Active Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
-- [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租用戶](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Azure AD Connect 的拓撲](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Azure 如何運作？](../../getting-started/what-is-azure.md)
+- [Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
+- [Azure Resource Manager 概觀](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Azure 資源的角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [什麼是 Azure Active Directory？](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租用戶](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Azure AD Connect 的拓撲](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Microsoft 雲端供應項目的訂閱、授權、帳戶和租用戶](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>後續步驟

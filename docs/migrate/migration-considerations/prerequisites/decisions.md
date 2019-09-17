@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825376"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025422"
 ---
 # <a name="decisions-that-affect-migrations"></a>會影響移轉的決策
 
@@ -49,7 +49,7 @@ ms.locfileid: "70825376"
 
 ## <a name="effort"></a>投入量
 
-移轉工作可能因涉及工作負載的大小和複雜度而有很大的差異。 涉及數百個虛擬機器 (VM) 的小規模工作負載移轉可作為策略性程序，且可能使用自動化工具 (例如 [Azure Migrate](/azure/migrate/migrate-overview)) 來執行。 相反地，數萬個工作負載的大型企業移轉則需要高度策略性程序，且可能牽涉到大量重構、重建和更換與平台即服務 (PaaS) 和軟體即服務 (SaaS) 功能整合的現有應用程式。 [找出並平衡計劃性移轉的範圍](../../expanded-scope/balance-the-portfolio.md)，是很重要的。
+移轉工作可能因涉及工作負載的大小和複雜度而有很大的差異。 涉及數百個虛擬機器 (VM) 的小規模工作負載移轉可作為策略性程序，且可能使用自動化工具 (例如 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)) 來執行。 相反地，數萬個工作負載的大型企業移轉則需要高度策略性程序，且可能牽涉到大量重構、重建和更換與平台即服務 (PaaS) 和軟體即服務 (SaaS) 功能整合的現有應用程式。 [找出並平衡計劃性移轉的範圍](../../expanded-scope/balance-the-portfolio.md)，是很重要的。
 
 在進行任何可能對目前的移轉計劃有長期影響的決策之前，請務必達成下列決策的共識。
 

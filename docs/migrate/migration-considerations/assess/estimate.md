@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819487"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025443"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 
@@ -23,7 +23,7 @@ ms.locfileid: "70819487"
 
 您的數位資產大小會直接影響移轉決策。 涉及不到 250 個 VM 的移轉，可能會比涉及超過 10,000 個 VM 的移轉容易預估得多。 強烈建議您選取較小的工作負載作為第一次移轉。 這讓您的小組在嘗試估計較大且較複雜的工作負載移轉之前，有機會先了解如何估計簡單移轉工作的成本。
 
-但請注意，儘管是較小、單一工作負載的移轉，仍可能牽涉到數量差異很大的支援資產。 如果您的移轉涉及不到 1,000 個 VM，則 [Azure Migrate](/azure/migrate/migrate-overview) 之類的工具應該就足以收集關於清查和預測成本的資料。 [數位資產計算](../../../digital-estate/calculate.md)的相關文章會說明其他成本預估工具選項。
+但請注意，儘管是較小、單一工作負載的移轉，仍可能牽涉到數量差異很大的支援資產。 如果您的移轉涉及不到 1,000 個 VM，則 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) 之類的工具應該就足以收集關於清查和預測成本的資料。 [數位資產計算](../../../digital-estate/calculate.md)的相關文章會說明其他成本預估工具選項。
 
 針對超過 1,000 個裝置的數位資產，您仍然可以將預估細分成四或五個可操作的反覆項目，讓預估程序更容易管理。 對於較大的資產，或是在需要較高水準的預測精確度時，您可能需要更完整的方法，例如「雲端採用架構」的[數位資產](../../../digital-estate/index.md)一節所說明的方法。
 

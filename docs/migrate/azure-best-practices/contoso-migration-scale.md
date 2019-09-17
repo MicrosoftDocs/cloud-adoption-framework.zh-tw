@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 30a510d5acd5773253524200ea65e52a3325e10d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829614"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023984"
 ---
 # <a name="scale-a-migration-to-azure"></a>對 Azure 進行大規模移轉
 
@@ -46,7 +46,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 ## <a name="current-deployment"></a>目前的部署
 
-在規劃和設定 [Azure 基礎結構](contoso-migration-infrastructure.md)並試驗完上表所述的不同概念證明 (POC) 移轉組合之後，Contoso 已準備就緒，可以開始對 Azure 進行大規模的完整移轉。 Contoso 想要移轉的內容如下。
+在規劃和設定 [Azure 基礎結構](./contoso-migration-infrastructure.md)並試驗完上表所述的不同概念證明 (POC) 移轉組合之後，Contoso 已準備就緒，可以開始對 Azure 進行大規模的完整移轉。 Contoso 想要移轉的內容如下。
 
 <!--markdownlint-disable MD033 -->
 
@@ -123,7 +123,7 @@ POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早�
 技術債務 | 無/一些/嚴重 | 詳細目錄項目是否執行或使用不受支援的產品、平台或作業系統？
 防火牆影響 | Y/N | 應用程式是否與網際網路/外部流量進行通訊？  其是否與防火牆整合？
 安全性問題 | Y/N | 應用程式是否有已知的安全性問題？  應用程式是否使用未加密資料或過期平台？
-移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [深入了解](contoso-migration-overview.md#migration-patterns)。
+移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [深入了解](./contoso-migration-overview.md#migration-patterns)。
 技術複雜度 | 1-5 | 移轉有多複雜？ 此值應由 Contoso DevOps 和相關合作夥伴來定義。
 業務關鍵性 | 1-5 | 此應用程式對業務有多重要？ 例如，小型工作群組應用程式可能會獲得 1 分，跨組織使用的重要應用程式可能會獲得 5 分。 這個分數會影響移轉的優先順序高低。
 移轉優先順序 | 1/2/3 | 應用程式的移轉優先順序為何？
@@ -156,7 +156,7 @@ Azure Migrate 服務可協助您探索及評估內部部署 VMware VM，以做�
 Contoso 必須使用 Azure Migrate 來正確提供這項移轉的規模。
 
 - Contoso 會使用 Azure Migrate 來對應用程式逐一進行評估。 這可確保 Azure Migrate 會將資料即時傳回 Azure 入口網站。
-- Contoso 系統管理員要了解如何[大規模部署 Azure Migrate](/azure/migrate/how-to-scale-assessment)
+- Contoso 系統管理員要了解如何[大規模部署 Azure Migrate](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment)
 - Contoso 在下表中摘要記下了 Azure Migrate 的限制。
 
 **動作** | **限制**
@@ -209,8 +209,8 @@ Contoso 可以考慮四個廣泛的移轉策略。
 
 Contoso 主要使用兩個 Azure 服務和工具來進行移轉：
 
-- [Azure Site Recovery](/azure/site-recovery/site-recovery-overview)：協調災害復原，並將內部部署 VM 遷移至 Azure。
-- [Azure 資料庫移轉服務](/azure/dms/dms-overview)：將 SQL Server、MySQL 和 Oracle 等內部部署資料庫遷移到 Azure。
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)：協調災害復原，並將內部部署 VM 遷移至 Azure。
+- [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)：將 SQL Server、MySQL 和 Oracle 等內部部署資料庫遷移到 Azure。
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -219,7 +219,7 @@ Contoso 主要使用兩個 Azure 服務和工具來進行移轉：
 1. Site Recovery 可讓您協調從內部部署網站複寫至 Azure。
 2. 複寫在設定和執行時，內部部署機器可以容錯移轉至 Azure，以完成移轉。
 
-Contoso 已[完成 POC](contoso-migration-rehost-vm.md) 來了解 Site Recovery 如何協助他們遷移到雲端。
+Contoso 已[完成 POC](./contoso-migration-rehost-vm.md) 來了解 Site Recovery 如何協助他們遷移到雲端。
 
 ##### <a name="using-site-recovery-at-scale"></a>大規模使用 Site Recovery
 
@@ -233,7 +233,7 @@ Contoso 計劃執行多個「隨即轉移」移轉。 為確保其可行性，Si
 
 ###### <a name="gather-on-premises-information"></a>收集內部部署資訊
 
-Contoso 可以使用 [Site Recovery 部署規劃工具](/azure/site-recovery/site-recovery-deployment-planner)來完成下列步驟：
+Contoso 可以使用 [Site Recovery 部署規劃工具](https://docs.microsoft.com/azure/site-recovery/site-recovery-deployment-planner)來完成下列步驟：
 
 - Contoso 可以使用此工具來遠端剖析 VM，而不會對生產環境造成影響。 這有助於找出複寫和容錯移轉所需的頻寬和儲存體。
 - Contoso 不需安裝任何 Site Recovery 內部部署元件，即可執行此工具。
@@ -262,10 +262,10 @@ Contoso 必須了解如何根據容量考量來部署這些元件。
 --- | ---
 **最大每日變動率** | 單一處理序伺服器可以處理多達 2 TB 的每日變動率。 由於一個 VM 只能使用一個處理序伺服器，所複寫 VM 支援的每日最大資料變動率會是 2 TB。
 **最大輸送量** | 標準 Azure 儲存體帳戶每秒可處理最多 20,000 個要求，複寫中 VM 的每秒輸入/輸出作業 (IOPS) 數應保持在此限制內。 例如，如果某個 VM 有 5 個磁碟，且該 VM 上的每個磁碟會產生 120 IOPS (8K 大小)，則它會保持在 Azure 的每個磁碟 IOPS 限制 (500) 內。<br/><br/> 請注意，所需的儲存體帳戶數目等於來源機器 IOPS 總數除以 20,000。 複寫的機器只能屬於 Azure 中的單一儲存體帳戶。
-**組態伺服器** | 根據 Contoso 所估計的一起複寫 100=200 VM 以及[組態伺服器調整大小需求](/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server)，Contoso 估計值所需的組態伺服器機器如下：<br/><br/> CPU：16 個 vCPU (2 個插槽 * 8 核心 @ 2.5GHz)<br/><br/> 記憶體：32 GB<br/><br/> 快取磁碟：1 TB<br/><br/> 資料變更率：1 TB 至 2 TB。<br/><br/> 除了調整大小需求，Contoso 還必須確定該組態伺服器完美地位在和所要遷移 VM 相同的網路與 LAN 區段上。
+**組態伺服器** | 根據 Contoso 所估計的一起複寫 100=200 VM 以及[組態伺服器調整大小需求](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server)，Contoso 估計值所需的組態伺服器機器如下：<br/><br/> CPU：16 個 vCPU (2 個插槽 * 8 核心 @ 2.5GHz)<br/><br/> 記憶體：32 GB<br/><br/> 快取磁碟：1 TB<br/><br/> 資料變更率：1 TB 至 2 TB。<br/><br/> 除了調整大小需求，Contoso 還必須確定該組態伺服器完美地位在和所要遷移 VM 相同的網路與 LAN 區段上。
 **處理序伺服器** | Contoso 會部署獨立的專用處理序伺服器，並使其能夠複寫 100 至 200 個 VM：<br/><br/> CPU：16 個 vCPU (2 個插槽 * 8 核心 @ 2.5GHz)<br/><br/> 記憶體：32 GB<br/><br/> 快取磁碟：1 TB<br/><br/> 資料變更率：1 TB 至 2 TB。<br/><br/> 處理序伺服器會竭力運作，因此其位置應該落在 ESXi 主機上，以便應付複寫所需的磁碟 I/O、網路流量和 CPU。 為此，Contoso 會考慮使用專用主機。
-**網路功能** | Contoso 已檢閱目前的站對站 VPN 基礎結構，並決定實作 Azure ExpressRoute。 此實作很重要，因為它會減少延遲，並提升通往 Contoso 主要美國東部 2 Azure 區域的頻寬。<br/><br/> **監視：** Contoso 將需要仔細監視來自處理序伺服器的資料。 如果資料負載超過網路頻寬處理能力，Contoso 會考慮[將處理序伺服器的頻寬節流](/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth)。
-**Azure 儲存體** | 為了移轉，Contoso 必須識別目標 Azure 儲存體帳戶的正確類型和數目。 Site Recovery 會將 VM 資料複寫至 Azure 儲存體。<br/><br/> Site Recovery 可以複寫至標準或進階的 (SSD) 儲存體帳戶。<br/><br/> 為了決定儲存體，Contoso 必須檢閱[儲存體限制](/azure/virtual-machines/windows/disks-types)，並考慮一段時間後的預期成長和使用量增加。 知道移轉速度和優先順序後，Contoso 決定使用進階 SSD<br/><br/>
+**網路功能** | Contoso 已檢閱目前的站對站 VPN 基礎結構，並決定實作 Azure ExpressRoute。 此實作很重要，因為它會減少延遲，並提升通往 Contoso 主要美國東部 2 Azure 區域的頻寬。<br/><br/> **監視：** Contoso 將需要仔細監視來自處理序伺服器的資料。 如果資料負載超過網路頻寬處理能力，Contoso 會考慮[將處理序伺服器的頻寬節流](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth)。
+**Azure 儲存體** | 為了移轉，Contoso 必須識別目標 Azure 儲存體帳戶的正確類型和數目。 Site Recovery 會將 VM 資料複寫至 Azure 儲存體。<br/><br/> Site Recovery 可以複寫至標準或進階的 (SSD) 儲存體帳戶。<br/><br/> 為了決定儲存體，Contoso 必須檢閱[儲存體限制](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)，並考慮一段時間後的預期成長和使用量增加。 知道移轉速度和優先順序後，Contoso 決定使用進階 SSD<br/><br/>
 Contoso 已決定對部署至 Azure 的所有 VM 使用受控磁碟。 所需的 IOPS 將會決定磁碟會是標準 HDD、標準 SSD 還是進階 (SSD)。<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -309,7 +309,7 @@ Contoso 將資源移至 Azure 後，必須加以簡化以提高效能，同時�
 - 此授權解決方案由 Microsoft 的子公司 Cloudyn 所建置，可讓 Contoso 透明且準確地管理雲端支出。 它會提供工具來監視、配置及去除雲端成本。
 - Azure 成本管理會提供簡單的儀表板報告，以協助進行成本配置、回報和退款。
 - 成本管理可以識別未充分使用的資源，以便 Contoso 管理及調整，藉此最佳化雲端支出。
-- [深入了解](/azure/cost-management/overview) Azure 成本管理。
+- [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。
 
 ![成本管理](./media/contoso-migration-scale/cost-management.png)
 
@@ -350,16 +350,16 @@ Contoso 會仰賴 Azure 資訊安全中心為混合式雲端工作負載提供�
 
 - 透過這些工具，Contoso 可以輕鬆從來源收集資料並取得豐富見解。 例如，Contoso 可以測量 VM 的 CPU 磁碟和記憶體使用量、檢視多部 VM 之間的應用程式和網路相依性，並追蹤應用程式效能。
 - Contoso 會使用這些雲端監視工具來採取行動，並與服務解決方案整合。
-- [深入了解](/azure/monitoring-and-diagnostics/monitoring-overview) Azure 監視。
+- [深入了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview) Azure 監視。
 
 ### <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
 
 Contoso 必須針對其 Azure 資源備有商務持續性和災害復原 (BCDR) 策略。
 
-- Azure 可提供[內建的 BCDR 功能](/azure/architecture/resiliency/disaster-recovery-azure-applications)，讓資料保持安全並讓應用程式/服務正常運作。
+- Azure 可提供[內建的 BCDR 功能](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications)，讓資料保持安全並讓應用程式/服務正常運作。
 - 除了內建功能外，Contoso 還想要確保其可以從失敗中復原，避免耗費資源的業務中斷情況、符合合規性目標，以及保護資料免於遭受勒索軟體攻擊和人為錯誤。 請這樣做：
   - Contoso 會部署 Azure 備份，以這個符合成本效益的解決方案來備份 Azure 資源。 由於它是內建功能，因此 Contoso 只需要幾個簡單的步驟就能設定雲端備份。
-  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [深入了解](/azure/site-recovery/azure-to-azure-quickstart)。
+  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ## <a name="conclusion"></a>結論
 

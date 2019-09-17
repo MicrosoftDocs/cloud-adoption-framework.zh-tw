@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 060672fb65b983c4ba520dab24097508ba78367d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 96eb90f5761fd53ab0c4e6b128c77e441c7b36cd
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833891"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025326"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>調整雲端現有的角色、技能和流程
 
@@ -54,7 +54,7 @@ IT 人員的成員通常會擔心如何取得支援擴充功能和新職責所�
 
 ## <a name="next-steps"></a>後續步驟
 
-確保正確支援已翻譯的角色是小組的工作。 若要對此指引採取行動，請參閱[組織準備就緒簡介](../organization/index.md)，以識別正確的小組結構和參與者。
+確保正確支援已翻譯的角色是小組的工作。 若要對此指引採取行動，請參閱[組織準備就緒簡介](../organize/index.md)，以識別正確的小組結構和參與者。
 
 > [!div class="nextstepaction"]
 > [識別正確的小組結構](./index.md)

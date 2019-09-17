@@ -11,59 +11,59 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 897b6f3f5d3c506cc79050dd3453e30b677382b1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833696"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025263"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
-群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 將使用者指派至適當群組以及從中移除，有助於保持特定使用者的最新許可權。 Azure [角色型存取控制 (RBAC)](/azure/role-based-access-control/overview) 提供更細緻的存取管理，以根據使用者角色組織資源。
+群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 將使用者指派至適當群組以及從中移除，有助於保持特定使用者的最新許可權。 Azure [角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) 提供更細緻的存取管理，以根據使用者角色組織資源。
 
-如需建議 RBAC 做法作為身分識別和安全性策略一部分的概觀，請參閱 [Azure 身分識別管理和存取控制安全性最佳做法](/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control)。
+如需建議 RBAC 做法作為身分識別和安全性策略一部分的概觀，請參閱 [Azure 身分識別管理和存取控制安全性最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control)。
 
 ## <a name="overview-of-role-based-access-control"></a>角色型存取控制概觀
 
-藉由使用[角色型存取控制](/azure/role-based-access-control/overview)，您可以區分小組內的職責，並僅授與特定 Azure Active Directory (Azure AD) 使用者、群組、服務主體或受控識別的足夠存取權來執行其作業。 您可以限制每一組資源的許可權，而不是讓每個人不受限制地存取您的 Azure 訂用帳戶或資源。
+藉由使用[角色型存取控制](https://docs.microsoft.com/azure/role-based-access-control/overview)，您可以區分小組內的職責，並僅授與特定 Azure Active Directory (Azure AD) 使用者、群組、服務主體或受控識別的足夠存取權來執行其作業。 您可以限制每一組資源的許可權，而不是讓每個人不受限制地存取您的 Azure 訂用帳戶或資源。
 
-[RBAC 角色定義](/azure/role-based-access-control/role-definitions)會列出指派給該角色的使用者或群組允許或不允許的作業。 角色的[範圍](/azure/role-based-access-control/overview#scope)會指定要將這些定義的許可權套用到哪些資源。 您可以在多個層級指定範圍：管理群組、訂用帳戶、資源群組或資源。 範圍會以父子式關聯性進行結構化。
+[RBAC 角色定義](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)會列出指派給該角色的使用者或群組允許或不允許的作業。 角色的[範圍](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope)會指定要將這些定義的許可權套用到哪些資源。 您可以在多個層級指定範圍：管理群組、訂用帳戶、資源群組或資源。 範圍會以父子式關聯性進行結構化。
 
-![RBAC 範圍階層](./images/rbac-scope.png)
+![RBAC 範圍階層](../../_images/azure-best-practices/rbac-scope.png)
 
-如需將使用者和群組指派給特定角色並將角色指派給範圍的詳細指示，請參閱[使用 RBAC 管理 Azure 資源的存取權](/azure/role-based-access-control/role-assignments-portal)。
+如需將使用者和群組指派給特定角色並將角色指派給範圍的詳細指示，請參閱[使用 RBAC 管理 Azure 資源的存取權](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal)。
 
 在規劃存取控制策略時，請使用最低許可權存取模型，僅授與使用者執行其工作所需的許可權。 下圖顯示透過這種方法使用 RBAC 的建議模式。
 
-![使用 RBAC 的建議模式](./images/rbac-least-privilege.png)
+![使用 RBAC 的建議模式](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](/azure/azure-resource-manager/resource-group-overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](/azure/active-directory/fundamentals/active-directory-manage-groups)。
+> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](https://docs.microsoft.com/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
 
 ## <a name="using-built-in-rbac-roles"></a>使用內建的 RBAC 角色
 
 Azure 提供許多內建角色定義，其中包含三個核心角色來提供存取權：
 
-- [擁有者](/azure/role-based-access-control/built-in-roles#owner)角色可以管理所有事項，包括對於資源的存取。
-- [參與者](/azure/role-based-access-control/built-in-roles#contributor)角色可以管理所有事項，但不包括對於資源的存取。
-- [讀者](/azure/role-based-access-control/built-in-roles#reader)角色可以檢視所有項目，但是無法進行變更。
+- [擁有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)角色可以管理所有事項，包括對於資源的存取。
+- [參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)角色可以管理所有事項，但不包括對於資源的存取。
+- [讀者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader)角色可以檢視所有項目，但是無法進行變更。
 
 從這些核心存取層級開始，其他內建角色會提供更詳細的控制項來存取特定資源類型或 Azure 功能。 例如，您可以使用下列內建角色來管理對虛擬機器的存取：
 
-- [虛擬機器系統管理員登入](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login)角色可以在入口網站中檢視虛擬機器，並以_系統管理員_身分登入。
-- [虛擬機器參與者](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor)角色可以管理虛擬機器，但無法存取它們所連線的虛擬網路或儲存體帳戶。
-- [虛擬機器使用者登入](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login)角色可以在入口網站中檢視虛擬機器，並以一般使用者身分登入。
+- [虛擬機器系統管理員登入](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login)角色可以在入口網站中檢視虛擬機器，並以_系統管理員_身分登入。
+- [虛擬機器參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor)角色可以管理虛擬機器，但無法存取它們所連線的虛擬網路或儲存體帳戶。
+- [虛擬機器使用者登入](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login)角色可以在入口網站中檢視虛擬機器，並以一般使用者身分登入。
 
 如需使用內建角色來管理特定功能存取權的另一個範例，請參閱[追蹤營業單位、環境或專案之間的成本](./track-costs.md#provide-the-right-level-of-cost-access)中有關控制成本追蹤功能存取的討論。
 
-如需可用內建角色的完整清單，請參閱[適用於 Azure 資源的內建角色](/azure/role-based-access-control/built-in-roles)。
+如需可用內建角色的完整清單，請參閱[適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)。
 
 ## <a name="using-custom-roles"></a>使用自訂角色
 
 雖然內建至 Azure 的角色支援各種不同存取控制案例，但是可能不符合貴組織或小組的所有需求。 例如，如果您有一個負責管理虛擬機器和 Azure SQL Database 資源的單一使用者群組，您可能會想要建立自訂角色，以最佳化所需存取控制的管理。
 
-Azure RBAC 文件包含[建立自訂角色](/azure/role-based-access-control/custom-roles)的相關指示，以及[角色定義的運作方式](/azure/role-based-access-control/role-definitions)的詳細資料。
+Azure RBAC 文件包含[建立自訂角色](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)的相關指示，以及[角色定義的運作方式](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)的詳細資料。
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>為大型組織區分職責與角色
 

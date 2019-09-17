@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833735"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022275"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>排定雲端採用方案的工作負載優先順序並加以定義
 
@@ -44,7 +44,7 @@ ms.locfileid: "70833735"
 
 在前一篇文章中,[雲端採用方案和 Azure DevOps](./template.md)中, 您已在 Azure DevOps 中建立雲端採用方案。
 
-您現在可以在雲端採用方案中, 以10個清單的功能來表示工作負載。 執行此動作的最簡單方式是在 Microsoft Excel 中進行大量編輯。 若要準備工作站進行大量編輯, 請參閱[使用 Excel 大量加入或修改工作專案](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
+您現在可以在雲端採用方案中, 以10個清單的功能來表示工作負載。 執行此動作的最簡單方式是在 Microsoft Excel 中進行大量編輯。 若要準備工作站進行大量編輯, 請參閱[使用 Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
 
 該文章中的步驟5會告訴您選取 [**輸入清單**]。 請改為選取 [**查詢清單**]。 然後, 從 [**選取查詢**] 下拉式清單中, 選取 [**工作負載範本**] 查詢。 該查詢會將單一工作負載遷移的所有相關工作載入您的試算表。
 
