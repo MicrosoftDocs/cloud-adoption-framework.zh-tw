@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818892"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024737"
 ---
 # <a name="optimize-and-transform"></a>最佳化和轉換
 
@@ -60,13 +60,13 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone target="docs"
 
-- [管理 Azure 資源的保留](/azure/billing/billing-manage-reserved-vm-instance)
-- [調整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)
-- [使用 Azure CLI 調整 Linux 虛擬機器大小](/azure/virtual-machines/linux/change-vm-size)
+- [管理 Azure 資源的保留](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [調整 Windows VM 大小](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [使用 Azure CLI 調整 Linux 虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 合作夥伴可以使用合作夥伴中心來審查使用方式。
 
-- [針對最大保留使用量進行 Microsoft Azure VM 大小調整](/partner-center/azure-usage)
+- [針對最大保留使用量進行 Microsoft Azure VM 大小調整](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -75,7 +75,7 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 1. 移至 [儲存體帳戶]  。
 1. 選取所需的儲存體帳戶。
 1. 選取 [設定]  並調整儲存體帳戶的屬性，以符合您的需求。
-1. 選取 [ **儲存**]。
+1. 選取 [儲存]  。
 
 ::: zone target="chromeless"
 
@@ -126,8 +126,8 @@ Azure 成本管理可搭配 Azure Advisor，提供成本最佳化建議。 Azure
 
 ::: zone target="docs"
 
-- [教學課程：透過建議最佳化成本](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [使用 Azure 計費與成本管理避免非預期的費用](/azure/billing/billing-getting-started)
-- [使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)
+- [教學課程：透過建議最佳化成本](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [使用 Azure 計費與成本管理避免非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

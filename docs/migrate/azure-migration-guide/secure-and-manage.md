@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7d742242f2639708914927aedbf45d1c59020c7d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818722"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022748"
 ---
 # <a name="secure-and-manage"></a>保護及管理
 
@@ -41,7 +41,7 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ## <a name="read-more"></a>閱讀更多資訊
 
-- [Azure 監視器概觀](/azure/azure-monitor/overview)。
+- [Azure 監視器概觀](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ Azure 服務健康狀態包含：
 
 ## <a name="read-more"></a>閱讀更多資訊
 
-若要深入了解，請參閱 [Azure 服務健康狀態文件](/azure/service-health)。
+若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來�
 
 ## <a name="read-more"></a>閱讀更多資訊
 
-[概觀](/azure/advisor/advisor-overview)。
+[概觀](https://docs.microsoft.com/azure/advisor/advisor-overview)。
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化�
 
 ## <a name="read-more"></a>閱讀更多資訊
 
-[概觀](/azure/security-center/security-center-intro)
+[概觀](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ::: zone target="docs"
 
-[概觀](/azure/backup/backup-introduction-to-azure-backup)
+[概觀](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
 
 ::: zone-end
 
@@ -194,7 +194,7 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 
 ## <a name="learn-more"></a>深入了解
 
-- [Azure Site Recovery 概觀](/azure/site-recovery/site-recovery-overview)
-- [將 Azure VM 複寫到另一個區域](/azure/site-recovery/azure-to-azure-quickstart)
+- [Azure Site Recovery 概觀](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+- [將 Azure VM 複寫到另一個區域](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ::: zone-end

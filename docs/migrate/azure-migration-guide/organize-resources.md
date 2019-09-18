@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818739"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022760"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
@@ -76,9 +76,9 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 若要深入了解，請參閱：
 
-- [了解 Azure 中的資源存取管理](../../governance/resource-consistency/azure-resource-access.md)
-- [使用 Azure 管理群組來組織資源](/azure/azure-resource-manager/management-groups-overview)
-- [訂用帳戶服務的限制](/azure/azure-subscription-service-limits)
+- [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
+- [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 ::: zone target="docs"
 
-我們建議您檢閱並採用[模式與實例指南](/azure/architecture/best-practices/naming-conventions)。
+我們建議您檢閱並採用[模式與實例指南](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)。
 
 >[!TIP]
 >避免使用任何特殊字元 (`-` 或 `_`) 作為任何名稱的第一個或最後一個字元。 這些字元會導致大部分驗證規則失敗。
@@ -133,8 +133,8 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 | 實體 | 影響範圍 | 長度 | 大小寫 | 有效字元 | 建議模式 | 範例 |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |Subscription |1-90 |不區分大小寫 |英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|可用性設定組 |Resource group |1-80 |不區分大小寫 |英數字元、底線和連字號 |`<service-short-name>-<context>-as` |`profx-sql-as` |
+|資源群組 |訂用帳戶 |1-90 |不區分大小寫 |英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
+|可用性設定組 |資源群組 |1-80 |不區分大小寫 |英數字元、底線和連字號 |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tag |相關聯的實體 |512 (名稱)、256 (值) |不區分大小寫 |英數字元 |`"key" : "value"` |`"department" : "Central IT"` |
 
 # <a name="resource-tagstabresourcetags"></a>[資源標記](#tab/ResourceTags)
@@ -151,7 +151,7 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 每個資源或資源群組最多都可以有 15 個標記名稱/值組。 不過，此限制只適用於直接套用至資源群組或資源的標記。
 
-如需標記的進一步資訊，請參閱 [Azure 架構中心的 Azure 資源命名慣例](../../ready/considerations/name-and-tag.md#metadata-tags)
+如需標記的進一步資訊，請參閱 [Azure 架構中心的 Azure 資源命名慣例](../../ready/considerations/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱[使用標記來組織 Azure 資源](/azure/azure-resource-manager/resource-group-using-tags)。
+若要深入了解，請參閱[使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。
 
 ::: zone-end
 

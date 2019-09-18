@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c3ae19f9d8115e7d07241d22074d26ae5592560
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818535"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022067"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 
@@ -35,10 +35,10 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
  開始監視：
 
-- [應用程式](/azure/application-insights/app-insights-overview)
-- [容器](/azure/monitoring/monitoring-container-overview)
-- [虛擬機器](/azure/monitoring/monitoring-service-map)
-- [網路](/azure/networking/network-monitoring-overview)
+- [應用程式](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+- [容器](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
+- [虛擬機器](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
+- [網路](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
 
 若要監視其他資源，請尋找 Azure Marketplace 中的其他解決方案。
 
@@ -46,7 +46,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 監視器文件](/azure/monitoring-and-diagnostics)。
+若要深入了解，請參閱 [Azure 監視器文件](https://docs.microsoft.com/azure/monitoring-and-diagnostics)。
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Azure 服務健康狀態包含：
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 服務健康狀態文件](/azure/service-health)。
+若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
@@ -121,7 +121,7 @@ Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來�
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure Advisor 文件](/azure/advisor)。
+若要深入了解，請參閱 [Azure Advisor 文件](https://docs.microsoft.com/azure/advisor)。
 
 ::: zone-end
 
@@ -151,6 +151,6 @@ Azure 資訊安全中心提供兩個層級：免費層和標準層。 安全性�
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center)。
+若要深入了解，請參閱 [Azure 資訊安全中心文件](https://docs.microsoft.com/azure/security-center)。
 
 ::: zone-end

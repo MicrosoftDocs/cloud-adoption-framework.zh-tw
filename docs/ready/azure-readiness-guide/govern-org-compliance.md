@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818637"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025248"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
-在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](http://aka.ms/caf/gov/assess)來找出貴組織的雲端治理方法中可能出現的差距。 如需如何開發治理程序的詳細資訊，請參閱[適用於 Azure 的雲端採用架構治理指引](../../governance/index.md)。
+在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](http://aka.ms/caf/gov/assess)來找出貴組織的雲端治理方法中可能出現的差距。 如需如何開發治理程序的詳細資訊，請參閱[適用於 Azure 的雲端採用架構治理指引](../../govern/index.md)。
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 若要深入了解，請參閱：
 
-- [Azure 藍圖](/azure/governance/blueprints)
+- [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)
 - [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準型藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 若要深入了解，請參閱：
 
-- [Azure 原則](/azure/azure-policy)
+- [Azure 原則](https://docs.microsoft.com/azure/azure-policy)
 - [雲端採用架構：原則強制執行決策指南](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 
 若要深入了解，請參閱：
 
-- [Azure 資訊安全中心](/azure/security-center)
-- [Just-In-Time 虛擬機器存取](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center)
+- [Just-In-Time 虛擬機器存取](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [標準與免費定價層](https://azure.microsoft.com/pricing/details/security-center)
-- [雲端採用架構：安全性基準治理專業領域](../../governance/security-baseline/index.md)
+- [雲端採用架構：安全性基準治理專業領域](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

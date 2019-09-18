@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f16380af623a6d9cd01e5064599f2688f5136df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818654"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022110"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>透過角色型存取控制來管理對 Azure 環境的存取
 
@@ -87,7 +87,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 若要深入了解，請參閱：
 
-- [什麼是角色型存取控制 (RBAC)？](/azure/role-based-access-control/overview)
+- [什麼是角色型存取控制 (RBAC)？](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [雲端採用架構：使用角色型存取控制](../azure-best-practices/roles.md)
 
 ::: zone-end

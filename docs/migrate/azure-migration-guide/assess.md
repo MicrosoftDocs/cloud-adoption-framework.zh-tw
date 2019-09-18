@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818824"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022828"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
@@ -58,8 +58,8 @@ Azure Migrate 服務會評估要移轉至 Azure 的內部部署基礎結構、�
 
 ### <a name="read-more"></a>閱讀更多資訊
 
-- [Azure Migrate 概觀](/azure/migrate/migrate-services-overview)
-- [將實體或虛擬伺服器遷移至 Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [將實體或虛擬伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure 入口網站中的 Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Azure Migrate 服務會評估要移轉至 Azure 的內部部署基礎結構、�
 
 服務對應可自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 您可以藉由服務對應，將伺服器視為提供重要服務的互連系統，藉此來檢視伺服器。 不需要進行任何設定，只要安裝了代理程式，服務對應就會顯示橫跨任何 TCP 連線架構的伺服器、處理序、輸入和輸出連線的延遲，和連接埠之間的連線。
 
-Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 [相依性視覺效果](/azure/migrate/concepts-dependency-visualization)會概述這項整合的完整詳細資料。 如果您使用 Azure 移轉服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
+Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 [相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)會概述這項整合的完整詳細資料。 如果您使用 Azure 移轉服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>使用服務對應來啟用相依性視覺效果
 
 若要使用相依性視覺效果，您需要在待分析的每個內部部署機器上，下載及安裝代理程式。
 
-- 必須在每個機器上安裝 [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows)。
-- 必須在每個機器上安裝[相依性代理程式](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
+- 必須在每個機器上安裝 [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)。
+- 必須在每個機器上安裝[相依性代理程式](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
 - 此外，如果您有無法連線至網際網路的機器，則必須在該機器上下載並安裝 Log Analytics 閘道。
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>閱讀更多資訊
 
-- [在 Azure 中使用服務對應解決方案](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate 和服務對應：相依性視覺效果](/azure/migrate/concepts-dependency-visualization)
+- [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[案例和專案關係人](#tab/Scenarios)

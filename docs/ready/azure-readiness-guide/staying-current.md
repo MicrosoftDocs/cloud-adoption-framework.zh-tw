@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818484"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022018"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>使用 Microsoft Azure 隨時掌握最新動態
 
@@ -25,7 +25,7 @@ ms.locfileid: "70818484"
 
 下列資源可協助您掌握 Azure 的最新資訊：
 
-- [Azure 服務健康狀態](/azure/service-health/service-health-overview)
+- [Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - 「服務健康狀態」和警示可提供有關進行中服務問題、計劃性維護和健康狀態諮詢的通知。 此資源也包含要從 Azure 中移除的功能相關資訊。
 - [Azure 更新](https://azure.microsoft.com/updates)
   - 訂閱 Azure 更新，以接收產品更新相關公告。 簡短摘要會連結到進一步的詳細資料，以便輕鬆追隨更新。

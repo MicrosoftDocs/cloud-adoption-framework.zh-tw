@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818756"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022776"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
@@ -50,7 +50,7 @@ Azure Migrate 提供下列功能：
 
 ### <a name="read-more"></a>閱讀更多資訊
 
-- [Azure Migrate 教學課程 - 將實體或虛擬化伺服器遷移至 Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate 教學課程 - 將實體或虛擬化伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Azure Site Recovery 服務可管理將內部部署資源移轉至 Azure 的工�
 下列步驟概述使用 Site Recovery 進行移轉的程序：
 
 > [!TIP]
-> 視案例之不同，下列步驟可能略有差異。 如需詳細資訊，請參閱[將內部部署機器移轉至 Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure) 一文。
+> 視案例之不同，下列步驟可能略有差異。 如需詳細資訊，請參閱[將內部部署機器移轉至 Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure) 一文。
 
 ### <a name="prepare-azure-site-recovery-service"></a>準備 Azure Site Recovery 服務
 
@@ -102,7 +102,7 @@ Azure Site Recovery 服務可管理將內部部署資源移轉至 Azure 的工�
 
 如需詳細資訊，請參閱
 
-- [將內部部署機器移轉至 Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [將內部部署機器移轉至 Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 
 如需詳細資訊，請參閱
 
-- [Azure 資料庫移轉服務概觀](/azure/dms/dms-overview)
-- [建立 Azure 資料庫移轉服務的執行個體](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Azure 資料庫移轉服務概觀](https://docs.microsoft.com/azure/dms/dms-overview)
+- [建立 Azure 資料庫移轉服務的執行個體](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure 入口網站中的 Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure 入口網站：建立移轉專案](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Data Migration Assistant (DMA) 可藉由偵測可能對您新版 SQL Server or A
 1. 按 [下一步]  開始進行評估。
 1. 在 Data Migration Assistant 工具集內檢視結果。
 
-對於企業，我們建議依照[使用 DMA 評估企業及整合評估報告](/sql/dma/dma-consolidatereports)中所述的方法來評估多個伺服器、結合報告，然後使用提供的 Power BI 報告來分析結果。
+對於企業，我們建議依照[使用 DMA 評估企業及整合評估報告](https://docs.microsoft.com/sql/dma/dma-consolidatereports)中所述的方法來評估多個伺服器、結合報告，然後使用提供的 Power BI 報告來分析結果。
 
 如需詳細資訊，包括詳細的使用步驟，請參閱：
 
-- [Data Migration Assistant 概觀](/sql/dma/dma-overview)
-- [使用 DMA 評估企業及整合評估報告](/sql/dma/dma-consolidatereports)
-- [使用 Power BI 分析由 Data Migration Assistant 建立的整合評估報告](/sql/dma/dma-powerbiassesreport)
+- [Data Migration Assistant 概觀](https://docs.microsoft.com/sql/dma/dma-overview)
+- [使用 DMA 評估企業及整合評估報告](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [使用 Power BI 分析由 Data Migration Assistant 建立的整合評估報告](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>SQL Server 移轉小幫手
 
-Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動地將資料庫從 Microsoft Access、DB2、MySQL、Oracle 和 SAP ASE 移轉至 SQL Server。 一般概念是使用這些工具進行收集、評估，然後再進行檢閱，但由於每個來源系統的程序有所差異，建議您查看詳細的 [SQL Server 移轉小幫手](/sql/ssma/sql-server-migration-assistant)文件。
+Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動地將資料庫從 Microsoft Access、DB2、MySQL、Oracle 和 SAP ASE 移轉至 SQL Server。 一般概念是使用這些工具進行收集、評估，然後再進行檢閱，但由於每個來源系統的程序有所差異，建議您查看詳細的 [SQL Server 移轉小幫手](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)文件。
 
 如需詳細資訊，請參閱
 
-- [SQL Server 移轉小幫手概觀](/sql/ssma/sql-server-migration-assistant)
+- [SQL Server 移轉小幫手概觀](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>資料庫測試助理
 
@@ -194,7 +194,7 @@ Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動
 
 如需詳細資訊，請參閱
 
-- [資料庫測試助理概觀](/sql/dea/database-experimentation-assistant-overview)
+- [資料庫測試助理概觀](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[第三方移轉工具](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 # <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
 
-當您將資源移轉至雲端環境時，請務必定期執行成本分析。 這有助於避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載 (在 **[最佳化和轉換](optimize-and-transform.md)** 一節中會更詳細地討論)。
+當您將資源移轉至雲端環境時，請務必定期執行成本分析。 這有助於避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載 (在 **[最佳化和轉換](./optimize-and-transform.md)** 一節中會更詳細地討論)。
