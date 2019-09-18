@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->當商務需求改變時，Azure 管理群組可讓您輕鬆重新組織管理階層與訂用帳戶群組指派。 不過，請記住階層中該群組下的所有訂用帳戶，都會繼承原則與套用至管理群組的角色指派。 如果您打算重新指派訂用帳戶之間的管理群組，請確定您已了解可能會造成任何原則和角色指派變更項目。 如需詳細資訊，請參閱 [Azure 管理群組文件](/azure/governance/management-groups)。
+>當商務需求改變時，Azure 管理群組可讓您輕鬆重新組織管理階層與訂用帳戶群組指派。 不過，請記住階層中該群組下的所有訂用帳戶，都會繼承原則與套用至管理群組的角色指派。 如果您打算重新指派訂用帳戶之間的管理群組，請確定您已了解可能會造成任何原則和角色指派變更項目。 如需詳細資訊，請參閱 [Azure 管理群組文件](https://docs.microsoft.com/azure/governance/management-groups)。
 
 ### <a name="governance-of-resources"></a>資源治理
 
@@ -19,15 +19,15 @@ Azure 提供數個內建原則與角色定義，您可以指派給管理群組�
 
 由於支援治理 MVP 所需的原則，需要套用至所有目前的訂用帳戶，因此將使用根管理群組中建立的內建定義和自訂定義組合，來實作下列商務需求：
 
-1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這將需要[自訂原則定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。 
+1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這將需要[自訂原則定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。
 2. 需要在所有資源上使用下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可以使用「需要指定標籤」內建定義來處理。
 3. 需要資源的「應用程式」  標記應該符合相關資源群組的名稱。 這可以使用「需要標籤及其值」內建定義來處理。
 
-如需定義自訂原則的詳細資訊，請參閱 [Azure 原則文件](/azure/governance/policy/tutorials/create-custom-policy-definition)。 如需自訂原則的指導方針與範例，請參閱 [Azure 原則範例網站](/azure/governance/policy/samples)和相關聯的 [GitHub 存放庫](https://github.com/Azure/azure-policy)。
+如需定義自訂原則的詳細資訊，請參閱 [Azure 原則文件](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)。 如需自訂原則的指導方針與範例，請參閱 [Azure 原則範例網站](https://docs.microsoft.com/azure/governance/policy/samples)和相關聯的 [GitHub 存放庫](https://github.com/Azure/azure-policy)。
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>使用 Azure 藍圖指派 Azure 原則和 RBAC 角色
 
-Azure 原則可以指派於資源群組、訂用帳戶，以及管理群組層級，而且可以併入 [Azure 藍圖](/azure/governance/blueprints/overview)定義中。 雖然此治理 MVP 中定義的原則需求會套用到所有目前的訂用帳戶，但未來的部署很可能需要例外狀況或替代的原則。 如此一來，使用管理群組指派原則，讓所有子訂用帳戶繼承這些指派，可能不具備足夠的彈性支援這些案例。
+Azure 原則可以指派於資源群組、訂用帳戶，以及管理群組層級，而且可以併入 [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)定義中。 雖然此治理 MVP 中定義的原則需求會套用到所有目前的訂用帳戶，但未來的部署很可能需要例外狀況或替代的原則。 如此一來，使用管理群組指派原則，讓所有子訂用帳戶繼承這些指派，可能不具備足夠的彈性支援這些案例。
 
 Azure 藍圖允許指派一致的原則和角色、Resource Manager 範本的應用程式，以及跨多個訂用帳戶部署資源群組。 如同原則定義，藍圖定義會儲存到管理群組或訂用帳戶，並可透過繼承提供給管理群組階層中的任何子訂用.帳戶。
 
@@ -41,7 +41,7 @@ Azure 藍圖允許指派一致的原則和角色、Resource Manager 範本的應
 3. 發佈藍圖定義。
 4. 將 `governance-baseline` 藍圖定義指派給所有訂用帳戶。
 
-如需有關建立和使用藍圖定義 的詳細資訊，請參閱 [Azure 藍圖文件](/azure/governance/blueprints/overview)。
+如需有關建立和使用藍圖定義 的詳細資訊，請參閱 [Azure 藍圖文件](https://docs.microsoft.com/azure/governance/blueprints/overview)。
 
 ### <a name="secure-hybrid-vnet"></a>安全混合式 VNet
 
@@ -50,9 +50,9 @@ Azure 藍圖允許指派一致的原則和角色、Resource Manager 範本的應
 在雲端環境中完全建立信任之前，務必要嚴密控制和監視內部部署環境與雲端工作負載之間允許的任何通訊，以及保護內部部署網路，防止可能未經授權的雲端式資源存取。 若要支援這些案例，治理 MVP 可新增下列最佳做法：
 
 1. 建立雲端安全混合式 VNet。
-    1. [VPN 參考架構](/azure/architecture/reference-architectures/hybrid-networking/vpn)會建立在 Azure 中建立 VPN 閘道的模式和部署模型。
+    1. [VPN 參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)會建立在 Azure 中建立 VPN 閘道的模式和部署模型。
     2. 驗證內部部署安全性和流量管理機制，會將已連線的雲端網路視為不受信任。 雲端中裝載的資源和服務應該只能存取授權的內部部署服務。
-    3. 驗證內部部署資料中心中的本機 Edge 裝置可與 [Azure VPN 閘道需求](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)相容，並設定為存取公用網際網路。
+    3. 驗證內部部署資料中心中的本機 Edge 裝置可與 [Azure VPN 閘道需求](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)相容，並設定為存取公用網際網路。
 1. 在根管理群組中，建立名為 `secure-hybrid-vnet` 的第二個藍圖定義。
     1. 將 VPN 閘道的 Resource Manager 範本作為成品新增至藍圖定義。
     2. 將虛擬網路的 Resource Manager 範本作為成品新增至藍圖定義。
