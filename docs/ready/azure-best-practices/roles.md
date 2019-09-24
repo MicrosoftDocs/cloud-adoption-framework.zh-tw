@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025263"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224323"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -28,7 +28,7 @@ ms.locfileid: "71025263"
 
 藉由使用[角色型存取控制](https://docs.microsoft.com/azure/role-based-access-control/overview)，您可以區分小組內的職責，並僅授與特定 Azure Active Directory (Azure AD) 使用者、群組、服務主體或受控識別的足夠存取權來執行其作業。 您可以限制每一組資源的許可權，而不是讓每個人不受限制地存取您的 Azure 訂用帳戶或資源。
 
-[RBAC 角色定義](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)會列出指派給該角色的使用者或群組允許或不允許的作業。 角色的[範圍](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope)會指定要將這些定義的許可權套用到哪些資源。 您可以在多個層級指定範圍：管理群組、訂用帳戶、資源群組或資源。 範圍會以父子式關聯性進行結構化。
+[RBAC 角色定義](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)會列出指派給該角色的使用者或群組允許或不允許的作業。 角色的[範圍](/azure/role-based-access-control/index#scope)會指定要將這些定義的許可權套用到哪些資源。 您可以在多個層級指定範圍：管理群組、訂用帳戶、資源群組或資源。 範圍會以父子式關聯性進行結構化。
 
 ![RBAC 範圍階層](../../_images/azure-best-practices/rbac-scope.png)
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 成本管理動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027931"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223616"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>成本管理動機和業務風險
 
@@ -37,9 +37,9 @@ ms.locfileid: "71027931"
 組織之間的風險會有所不同，但以下是常見的成本相關風險，您可以將其作為起點，以在雲端治理小組內進行討論：
 
 - **預算控制：** 未控制預算，可能導致對於雲端廠商的過度支出。
-- **使用量損失：** 未使用的 Prepurchases 或 precommitments 可能會導致投資浪費。
+- **使用量損失：** 未使用的 Prepurchases 或 precommitments 可能會導致投資遺失。
 - **消費異常：** 在任一個方向中以未預期的方式突然增加，即為不當使用的指標。
-- **過度布建資產：** 在超過應用程式或虛擬機器 (VM) 需求的設定中部署資產時，它們會增加成本並形成浪費。
+- **過度布建資產：** 當資產部署在超過應用程式或虛擬機器（VM）需求的設定時，可能會造成浪費。
 
 ## <a name="next-steps"></a>後續步驟
 

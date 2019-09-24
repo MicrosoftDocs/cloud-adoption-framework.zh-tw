@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030709"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221390"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>雲端監視指南：警示
 
@@ -94,7 +94,7 @@ Azure 監視器包括與其他監視平臺整合的支援, 以及 ServiceNow 之
 
 **客體作業系統遙測**有多個路徑可進入系統。
 
-- 若要對此資料發出警示, 最快的方式是將它匯入為自訂計量。 請使用 Azure 診斷延伸模組, 然後使用計量警示來執行這項操作。 不過, 自訂計量目前為預覽狀態, 而且[比其他選項更昂貴](https://azure.microsoft.com/pricing/details/monitor/)。
+- 若要對此資料發出警示, 最快的方式是將它匯入為自訂計量。 請使用 Azure 診斷延伸模組, 然後使用計量警示來執行這項操作。 不過, 自訂計量目前為預覽狀態, 而且[比其他選項更昂貴](https://azure.microsoft.com/pricing/details/monitor)。
 
 - 最低但最慢的方法是將它傳送至 Azure logs Kusto 存放區。 在 VM 上執行 Log Analytics 代理程式是取得所有客體作業系統計量和記錄資料到此存放區的最佳方式。
 
@@ -113,9 +113,9 @@ Azure 監視器包括與其他監視平臺整合的支援, 以及 ServiceNow 之
 
 - [動態臨界](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds)值。 動態閾值會查看資源在一段時間內的活動, 並建立上限和較低的「正常行為」閾值。 當受監視的計量超出這些臨界值時, 您會收到警示。
 
-- [Multisignal 警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/)。 您可以從兩個不同的資源類型, 建立使用兩個不同輸入組合的計量警示。 例如, 如果您想要在 VM 的 CPU 超過 90% 時引發警示, 而且特定 Azure 服務匯流排佇列中的訊息數目已超過特定數量, 則您不需要建立記錄查詢就可以這麼做。 這只適用于兩個信號。 如果您有更複雜的查詢, 請將計量資料摘要到 Azure 監視器記錄存放區, 並使用記錄查詢。
+- [Multisignal 警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)。 您可以從兩個不同的資源類型, 建立使用兩個不同輸入組合的計量警示。 例如, 如果您想要在 VM 的 CPU 超過 90% 時引發警示, 而且特定 Azure 服務匯流排佇列中的訊息數目已超過特定數量, 則您不需要建立記錄查詢就可以這麼做。 這只適用于兩個信號。 如果您有更複雜的查詢, 請將計量資料摘要到 Azure 監視器記錄存放區, 並使用記錄查詢。
 
-- [多資源警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/)。 Azure 監視器允許套用至所有 VM 資源的單一計量警示規則。 這項功能可以節省您的時間, 因為您不需要為每個 VM 建立個別警示。 這種警示類型的定價相同。 如果您已建立50警示以監視 50 Vm 的 CPU 使用量, 或為1個警示監視所有 50 Vm 的 CPU 使用量, 則會以相同的量來計算成本。 您也可以搭配使用這些類型的警示與動態臨界值。
+- [多資源警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)。 Azure 監視器允許套用至所有 VM 資源的單一計量警示規則。 這項功能可以節省您的時間, 因為您不需要為每個 VM 建立個別警示。 這種警示類型的定價相同。 如果您已建立50警示以監視 50 Vm 的 CPU 使用量, 或為1個警示監視所有 50 Vm 的 CPU 使用量, 則會以相同的量來計算成本。 您也可以搭配使用這些類型的警示與動態臨界值。
 
 搭配使用時, 這些功能可以將警示通知和基礎警示的管理降到最低, 藉此節省時間。
 

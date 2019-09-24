@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 檢閱合理化數位資產的可用選項。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023625"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223863"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -69,7 +69,7 @@ ms.locfileid: "71023625"
 
 - 更快速且更短的更新
 - 程式碼可攜性
-- 更高的雲端效率 (資源、速度、成本)
+- 更高的雲端效率（資源、速度、成本、管理的作業）
 
 量化分析因素：
 
@@ -77,6 +77,7 @@ ms.locfileid: "71023625"
 - 相依性 (篩選網路)
 - 使用者流量 (頁面檢視、頁面瀏覽時間、載入時間)
 - 開發平臺 (語言、資料平臺、仲介層服務)
+- 資料庫（CPU、記憶體、儲存體、版本）
 
 定性分析因素：
 
@@ -102,6 +103,7 @@ ms.locfileid: "71023625"
 - 相依性 (篩選網路)
 - 使用者流量 (頁面檢視、頁面瀏覽時間、載入時間)
 - 開發平台 (語言、資料平台、中介層服務)
+- 資料庫（CPU、記憶體、儲存體、版本）
 
 定性分析因素：
 
@@ -125,6 +127,7 @@ ms.locfileid: "71023625"
 - 相依性 (篩選網路)
 - 使用者流量 (頁面檢視、頁面瀏覽時間、載入時間)
 - 開發平台 (語言、資料平台、中介層服務)
+- 資料庫（CPU、記憶體、儲存體、版本）
 
 定性分析因素：
 
@@ -148,6 +151,7 @@ ms.locfileid: "71023625"
 - VM 大小 (CPU、記憶體、儲存體)
 - 相依性 (篩選網路)
 - 即將淘汰的資產
+- 資料庫（CPU、記憶體、儲存體、版本）
 
 定性分析因素：
 

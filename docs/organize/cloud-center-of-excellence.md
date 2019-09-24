@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224349"
 ---
 # <a name="cloud-center-of-excellence"></a>雲端卓越中心
 
@@ -32,7 +32,7 @@ CCoE 需要下列各項功能之間的共同作業:
 
 ## <a name="impact-and-cultural-change"></a>影響和文化變更
 
-當此函式正確地結構化並受到支援時, 參與者可以加速創新和遷移工作, 同時降低變更的整體成本並增加企業的靈活性。 成功實行時, 此函式可能會產生顯著的上市時間縮減。 隨著小組實務成熟, 您可以看到品質指標的增加, 包括可靠性、效能效率、安全性、維護性和客戶滿意度。 如果公司打算執行大規模的雲端遷移工作, 或想要使用雲端來驅動與市場差異相關聯的創新, 這些提升效率、彈性和品質方面特別重要。
+當此函式正確地結構化並受到支援時, 參與者可以加速創新和遷移工作, 同時降低變更的整體成本並增加企業的靈活性。 成功實行時, 此函式可能會產生顯著的上市時間縮減。 隨著小組實務成熟，品質指標將會改善，包括可靠性、效能效率、安全性、維護性和客戶滿意度。 如果公司打算執行大規模的雲端遷移工作, 或想要使用雲端來驅動與市場差異相關聯的創新, 這些提升效率、彈性和品質方面特別重要。
 
 成功時, CCoE 模型會在其中建立重大的文化轉變。 CCoE 方法的基本部署, 是做為企業的代理人、合作夥伴或代表。 此模型是從傳統觀點轉移到企業和 IT 資產之間的營運單位或抽象層的一種模式。
 

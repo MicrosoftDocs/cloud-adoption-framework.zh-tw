@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023419"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223065"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>開始使用雲端遷移旅程
 
@@ -84,7 +84,7 @@ ms.locfileid: "71023419"
 - **[準備就緒](../ready/index.md)：** 針對即將進行的變更準備商務、文化、人員和環境，會導致每個工作成功，並加速執行和變更專案。
 - **採用：** 確保能夠適當地在 IT 和商務程式上執行所需的變更，以達成商業成果。
   - **[遷移](../migrate/index.md):** [雲端實施方法](#cloud-implementation)的反復執行遵循評估、遷移、優化和保護 & 管理的測試程式，以建立可重複的流程來遷移工作負載。
-- **[操作](../operating-model/index.md)：** 定義可管理的作業模式，以在採用之後引導活動。
+- **[操作](../operate/index.md)：** 定義可管理的作業模式，以在採用之後引導活動。
   - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
   - **[治理](../govern/index.md)：** 讓公司原則符合有形風險，並透過原則、程式和雲端式治理工具加以降低。
   - **[管理](../manage/index.md)：** 擴充 IT 營運以確保雲端式解決方案可以使用現代化、雲端優先的作業工具，透過安全且符合成本效益的程式來運作。

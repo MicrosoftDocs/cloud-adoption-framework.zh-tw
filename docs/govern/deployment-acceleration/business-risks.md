@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 深入了解雲端治理策略一部分的部署加速專業領域。
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029367"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220713"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>部署加速動機和業務風險
 
-本文討論客戶通常會在雲端治理策略中採用部署加速專業領域的原因。 它也提供幾個驅使原則聲明之業務風險的範例。
+本文討論客戶通常會在雲端治理策略中採用部署加速專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>部署加速是否相關？
+## <a name="deployment-acceleration-relevancy"></a>部署加速相關性
 
 內部部署系統通常會使用基準映像或安裝指令碼來部署。 通常需要額外設定，這可能會牽涉到多個步驟或人為介入。 這些手動流程容易出錯，經常會導致「設定漂移」，需要耗時進行疑難排解和補救工作。
 

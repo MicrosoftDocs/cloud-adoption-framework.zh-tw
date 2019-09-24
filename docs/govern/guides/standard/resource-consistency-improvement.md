@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029565"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222231"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>標準 Enterprise 指南：改善資源一致性
 
@@ -84,31 +84,31 @@ ms.locfileid: "71029565"
 本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
 
 1. 雲端營運小組將定義操作監控工具和自動化補救工具。 雲端治理小組將會支援這些探索流程。 在此使用案例中，雲端作業小組選擇 Azure 監視器做為監視任務關鍵性應用程式的主要工具。
-1. 在 Azure DevOps 中建立存放庫來存放所有相關的 Resource Manager 範本和指令碼式的組態，並為這些項目設定版本。
-1. Azure Vault 實作：
-    1. 定義及部署用於備份和復原程序的 Azure Vault。
-    1. 建立 Resource Manager 範本以在每個訂用帳戶中建立保存庫。
-1. 更新所有訂用帳戶的 Azure 原則：
+2. 在 Azure DevOps 中建立存放庫來存放所有相關的 Resource Manager 範本和指令碼式的組態，並為這些項目設定版本。
+3. Azure 復原服務保存庫的執行：
+    1. 定義及部署用於備份和復原程式的 Azure 復原服務保存庫。
+    2. 建立 Resource Manager 範本以在每個訂用帳戶中建立保存庫。
+4. 更新所有訂用帳戶的 Azure 原則：
     1. 在所有訂用帳戶上稽核並強制執行重要性和資料分類，以識別任何具有任務關鍵性資產的訂用帳戶。
-    1. 稽核並限制使用已核准的映像。
-1. Azure 監視器實作：
-    1. 找到任務關鍵性的訂用帳戶後，使用 PowerShell 建立 Azure 監視器工作區。 這是預先部署程式。
-    1. 在部署測試期間，雲端作業小組會部署必要的代理程式和測試探索。
-1. 針對包含任務關鍵性應用程式的所有訂用帳戶更新 Azure 原則。
+    2. 稽核並限制使用已核准的映像。
+5. Azure 監視器實作：
+    1. 一旦識別出要徑任務的工作負載，請建立 Azure 監視器工作區。
+    2. 在部署測試期間，雲端作業小組會部署必要的代理程式和測試探索。
+6. 針對包含任務關鍵性應用程式的所有訂用帳戶更新 Azure 原則。
     1. 稽核並強制執行使用 NSG 連到所有 NIC 和子網路的應用程式。 網路和 IT 安全性會定義 NSG。
-    1. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
-    1. 稽核並強制執行使用者定義路由表的限制。
-    1. 稽核並強制對所有虛擬機器部署 Azure 監視器代理程式。
-    1. 稽核並強制訂用帳戶中必須有 Azure Vault。
-1. 防火牆組態：
+    2. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
+    3. 稽核並強制執行使用者定義路由表的限制。
+    4. 稽核並強制對所有虛擬機器部署 Azure 監視器代理程式。
+    5. 請審核並強制 Azure 復原服務保存庫存在於訂用帳戶中。
+7. 防火牆組態：
     1. 識別符合安全性需求的 Azure 防火牆設定。 或者，識別與 Azure 相容的第三方應用裝置。
     1. 建立 Resource Manager 範本來部署具有必要設定的防火牆。
-1. Azure 藍圖：
+8. Azure 藍圖：
     1. 建立名為 `protected-data` 的新 Azure 藍圖。
-    1. 對藍圖新增防火牆和 Azure Vault 範本。
-    1. 為受保護資料的訂用帳戶新增原則。
-    1. 將藍圖發佈到任何要裝載任務關鍵性應用程式的管理群組。
-    1. 對每個受影響的訂用帳戶及現有藍圖套用新的藍圖。
+    2. 對藍圖新增防火牆和 Azure Vault 範本。
+    3. 為受保護資料的訂用帳戶新增原則。
+    4. 將藍圖發佈到任何將裝載任務關鍵性應用程式的管理群組。
+    5. 對每個受影響的訂用帳戶及現有藍圖套用新的藍圖。
 
 ## <a name="conclusion"></a>結論
 

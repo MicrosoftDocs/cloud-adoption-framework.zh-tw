@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026895"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220661"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>複雜企業的治理指南：說明的規範性指導方針
 
@@ -59,13 +59,17 @@ ms.locfileid: "71026895"
 
 ### <a name="resource-consistency"></a>資源一致性
 
-資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[階層式一致性](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** 做為主要資源一致性模式。
+資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
 
-- 應針對每個應用程式建立資源群組。 應針對每個應用程式原型建立管理群組。 Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
-- 作為部署程序的一部分，所有資產的資源一致性範本應該儲存在原始檔控制中。
-- 每個資源群組應符合特定工作負載或應用程式。
-- 所定義的 Azure 管理群組階層應以巢狀群組表示計費責任歸屬和應用程式擁有權。
-- Azure 原則的廣泛實作可能會超出小組的時間承諾，並可能無法在此時提供更多價值。 不過，應建立簡單的預設原則並套用至每個資源群組，以強制執行最初的幾個雲端治理原則聲明。 這會用來定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
+- 系統會為使用生命週期方法的應用程式建立資源群組：所有建立、維護及淘汰的專案，都應位於單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
+- Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
+- 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
+- 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
+- Azure 管理群組可在公司原則成熟時更新治理設計。
+- Azure 原則的廣泛實作可能會超出小組的時間承諾，並可能無法在此時提供大量的價值。 不過，應建立簡單的預設原則並套用至每個管理群組，以強制執行少量目前的雲端治理原則陳述。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
+
+>[!IMPORTANT]
+>每當資源群組中的資源不再共用相同的生命週期時，就應該將它移到另一個資源群組。 範例包括一般資料庫和網路元件。 雖然它們可以服務開發中的應用程式，但它們也可以提供其他用途，因此應該存在於其他資源群組中。
 
 ### <a name="resource-tagging"></a>資源標記
 
@@ -122,7 +126,7 @@ ms.locfileid: "71026895"
 
 ## <a name="next-steps"></a>後續步驟
 
-在實作本指南後，每個雲端採用小組即可使用可靠的治理基礎繼續進行下去。 雲端治理小組將會平行處理，持續更新公司原則和治理專業領域。
+在實作本指南後，每個雲端採用小組即可使用可靠的治理基礎繼續進行下去。 同時，雲端治理小組也會努力持續更新公司原則和治理專業領域。
 
 這兩個小組都會使用容錯指標來識別下一組要繼續支援雲端採用所需的改善。 此公司的下一步是對其治理基準進行累加改善，以支援具有傳統或協力廠商多重要素驗證需求的應用程式。
 

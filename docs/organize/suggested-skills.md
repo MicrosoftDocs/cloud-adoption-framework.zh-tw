@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029351"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224284"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移的「就緒」階段期間的技能就緒性路徑
 
@@ -44,9 +44,9 @@ ms.locfileid: "71029351"
 
 在準備階段中, 架構設計人員必須設計跨越所有 Azure 環境的解決方案。 下列資源可以為這些工作準備:
 
-- [雲端架構基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/)：PluralSight 的課程可協助架構設計正確的基礎解決方案。
-- [Microsoft Azure 架構](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/)：在 Azure 架構中基礎架構設計人員的 PluralSight 課程。
-- [設計 Microsoft Azure 移轉](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/)：一個 PluralSight 課程, 可協助架構設計師設計一個遷移解決方案。
+- [雲端架構基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：PluralSight 的課程可協助架構設計正確的基礎解決方案。
+- [Microsoft Azure 架構](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：在 Azure 架構中基礎架構設計人員的 PluralSight 課程。
+- [設計 Microsoft Azure 移轉](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：一個 PluralSight 課程, 可協助架構設計師設計一個遷移解決方案。
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
@@ -75,4 +75,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任
 
 - [開發人員](/learn/browse/?roles=developer&term=infrastructure)可以使用瞭解資源, 在架構、治理、現代化活動方面提供協助。
 
-如需其他學習路徑，請瀏覽[學習目錄](/learn/browse/)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。
+如需其他學習路徑，請瀏覽[學習目錄](/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 配合公司原則來調整您的雲端治理設計指南
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029151"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223754"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>配合公司原則來調整您的雲端治理設計指南
 
 在根據您的[已識別風險](./business-risk.md)來[定義雲端原則](./policy-definition.md)之後，您必須產生可採取行動的指引，與 IT 人員和開發人員參考的這些原則保持一致。 起草雲端治理設計指南可讓您根據為[五個治理專業領域](../governance-disciplines.md)所產生的原則聲明，指定特定的結構化、技術和流程選擇。

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026897"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222326"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -79,14 +79,14 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 - **保護混合式 VNet 藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這個最佳做法需要讓 DMZ 跨網路界限啟用 Active Directory Domain Services。
 - **Azure Resource Manager 範本：**
     1. 定義 NSG 以封鎖外部流量，並允許內部流量。
-    1. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。
+    2. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。
 - Azure 原則：將 NSG 套用至所有資源。
 - Azure 藍圖：
     1. 建立名為 `active-directory-virtual-machines` 的藍圖。
-    1. 將每個 Active Directory 範本和原則新增至藍圖。
-    1. 將藍圖發行至任何適用的管理群組中。
-    1. 將藍圖套用至任何需要舊版或協力廠商多重要素驗證的訂用帳戶。
-    1. 在 Azure 中執行的 Active Directory 實例現在可以做為內部部署 Active Directory 解決方案的延伸模組，讓它能夠與現有的多因素驗證工具整合，並提供宣告式驗證，兩者都是透過現有的 Active Directory 功能。
+    2. 將每個 Active Directory 範本和原則新增至藍圖。
+    3. 將藍圖發行至任何適用的管理群組中。
+    4. 將藍圖套用至任何需要舊版或協力廠商多重要素驗證的訂用帳戶。
+    5. 在 Azure 中執行的 Active Directory 實例現在可以做為內部部署 Active Directory 解決方案的延伸模組，讓它能夠與現有的多因素驗證工具整合，並提供宣告式驗證，兩者都是透過現有的 Active Directory 功能。
 
 ## <a name="conclusion"></a>結論
 

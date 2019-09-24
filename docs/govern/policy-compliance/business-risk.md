@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端遷移期間的業務風險
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026498"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220391"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "71026498"
 
 - 在測試早期，會部署幾乎沒有相關資料的少數資產。 風險很小。
 - 部署第一個工作負載之後，風險會上升一點。 藉由選擇具有小型使用者的原本就低風險應用程式，即可輕鬆補救此風險。
-- 隨著更多工作負載上線，風險會在每次發行時變更。 新應用程式上線，風險會變更。
+- 隨著更多工作負載上線，風險會在每次發行時變更。 新的應用程式上線和風險改變。
 - 公司將前 10-20 個應用程式遷移到線上時的風險勢態，與第 1000 個應用程式在雲端進入生產環境時的截然不同。
 
 在傳統的內部部署資產中累積的資產可能會隨時間累積。 企業和 IT 小組的成熟度也以類似的方式增長。 這樣平行成長可能傾向於建立一些不必要的原則負擔。
@@ -54,9 +54,9 @@ ms.locfileid: "71026498"
 
 以下是一些可包含在 MVP 中的商業風險基本範例：
 
-- 所有資產都有可能被終止（透過錯誤、錯誤或維護）。
+- 所有資產都有刪除的風險（透過錯誤、錯誤或維護）。
 - 所有資產都有產生太多費用的風險。
-- 所有資產可能會受到弱式密碼的危害。
+- 所有資產可能會受到弱式密碼或不安全的設定所危害。
 - 任何已開放埠暴露于網際網路的資產都有危害的風險。
 
 上述範例旨在將 MVP 業務風險建立為理論。 每個環境的實際清單會是唯一的。

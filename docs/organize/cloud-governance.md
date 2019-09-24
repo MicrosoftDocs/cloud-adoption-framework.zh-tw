@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bb40dc63fcf125548e2734cc18edf36adacb2570
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027527"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223998"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -69,7 +69,7 @@ ms.locfileid: "71027527"
 
 ## <a name="maturation-of-cloud-governance-capability"></a>雲端治理功能成熟
 
-有些大型組織有現有的專屬小組, 著重于 IT 治理。 這些小組會透過 ITIL 或 ITSM 等方法, 將 IT 組合的風險管理特殊化。 當這些小組存在時, 可以快速加速下列成熟度模型。 不過, 建議 IT 治理小組複習雲端治理模型, 以瞭解治理在雲端中如何稍微轉移。 主要文章包括將[公司原則擴充至雲端](../govern/corporate-policy.md), 以及[五個雲端治理專業領域](../govern/governance-disciplines.md)。
+有些大型組織有現有的專屬小組, 著重于 IT 治理。 這些小組會透過 ITIL 或 ITSM 等方法, 將 IT 組合的風險管理特殊化。 當這些小組存在時, 可以快速加速下列成熟度模型。 不過, 建議 IT 治理小組複習雲端治理模型, 以瞭解治理在雲端中如何稍微轉移。 主要文章包括將[公司原則擴充至雲端](../govern/corporate-policy.md)，以及[五個雲端治理專業領域](../govern/governance-disciplines.md)。
 
 **無治理:** 組織通常不需要明確的治理計畫就能移入雲端。 在長時間之前, 安全性、成本、規模和作業方面的顧慮, 會開始觸發有關治理模型需求的交談, 以及讓人員員工與該模型相關聯的程式。 先啟動那些交談後才會被視為疑慮, 是克服「無治理」反模式的最佳第一個步驟。 [定義公司原則](../govern/corporate-policy.md)的章節有助於協助這些交談。
 

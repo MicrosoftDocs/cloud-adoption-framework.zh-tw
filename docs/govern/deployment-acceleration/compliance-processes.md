@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速原則合規性流程
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c127a1c8bc8bce7608f0e146b36785fcee82dc0b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029772"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222598"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 

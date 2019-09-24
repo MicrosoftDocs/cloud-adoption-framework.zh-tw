@@ -8,12 +8,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 88944a786bb783d1a2e4bf651c142b8148b0dd2e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 52789f374b619a974181ed3dbd15e2206e9afdad
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027113"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223975"
 ---
 # <a name="building-a-cost-conscious-organization"></a>打造符合成本效益的組織
 
@@ -63,7 +63,7 @@ ms.locfileid: "71027113"
 
 ## <a name="cloud-governance-team"></a>雲端治理小組
 
-一般來說,[雲端治理小組](./cloud-governance.md)會負責整個雲端採用工作的成本管理。 如雲端採用架構治理方法的[成本管理專業領域](../govern/cost-management/index.md)主題中所述, 成本管理是雲端治理的五個專業領域中的第一個。 這些文章概述雲端治理小組的一系列更深入責任。
+一般來說,[雲端治理小組](./cloud-governance.md)會負責整個雲端採用工作的成本管理。 如雲端採用架構治理方法的[成本管理專業領域](../govern/cost-management/index.md)主題中所述，成本管理是雲端治理的五個專業領域中的第一個。 這些文章概述雲端治理小組的一系列更深入責任。
 
 這項工作著重于下列與符合成本重視之組織開發相關的活動:
 

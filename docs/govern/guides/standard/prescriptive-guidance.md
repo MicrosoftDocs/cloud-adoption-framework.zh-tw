@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026685"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223824"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>標準 Enterprise 指南：說明的規範性指導方針
 
@@ -61,7 +61,7 @@ ms.locfileid: "71026685"
 
 資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
 
-- 系統會為使用生命週期方法的應用程式建立資源群組：一起建立的所有專案會一起維護，而一併淘汰可以放在同一個資源群組中。
+- 系統會為使用生命週期方法的應用程式建立資源群組：所有建立、維護及淘汰的專案，都應位於單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
 - 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
@@ -116,7 +116,7 @@ ms.locfileid: "71026685"
 
 ## <a name="next-steps"></a>後續步驟
 
-在實作本指南後，每個雲端採用小組即可使用可靠的治理基礎繼續進行下去。 雲端治理小組將會平行處理，持續更新公司原則和治理專業領域。
+在實作本指南後，每個雲端採用小組即可使用可靠的治理基礎繼續進行下去。 同時，雲端治理小組也會持續更新公司原則和治理專業領域。
 
 這兩個小組會使用承受度指標，來識別要繼續支援雲端採用所需的下一組改良功能。 對於本指南中的虛構公司，下一個步驟是改善安全性基準，以支援將受保護的資料移至雲端。
 

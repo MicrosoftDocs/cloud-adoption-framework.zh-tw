@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準專業領域改進
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8ad6b84a67bb81459fbd78ebe413a93c1a58e099
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027690"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221730"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 56a989e975625c9d8f0f3db80dab9043dca3a479
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030944"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221506"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>大規模設定 Azure 管理服務
 
@@ -30,7 +30,7 @@ ms.locfileid: "71030944"
 
 [Azure 管理工具和服務](./tools-services.md)中所討論的所有管理解決方案, 都需要在 azure 虛擬機器 (vm) 和內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則, 大規模上架您的 Azure Vm。 指派原則以確保代理程式已安裝在您所有的 Azure Vm 上, 並聯機至正確的 Log Analytics 工作區。
 
-Azure 原則具有內建的[原則計畫](https://docs.microsoft.com/azure/governance/policy/index.md#initiative-definition), 其中包含 Log Analytics 代理程式和[Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), 這是適用於 VM 的 Azure 監視器所需的。
+Azure 原則具有內建的[原則計畫](/azure/governance/policy/index#initiative-definition), 其中包含 Log Analytics 代理程式和[Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), 這是適用於 VM 的 Azure 監視器所需的。
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -138,7 +138,7 @@ Azure 原則具有內建的[原則計畫](https://docs.microsoft.com/azure/gover
     > [!NOTE]
     > 伺服器名稱必須完全符合運算式中包含的值, 而且不應該包含功能變數名稱尾碼。
 
-5. 選取 [ **儲存**]。
+5. 選取 [儲存]。
 
 6. 根據預設, 範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋, 並會自動更新。
 
@@ -201,7 +201,7 @@ Azure Log Analytics 代理程式健全狀況解決方案可讓您深入瞭解 Wi
 4. 選取該工作區的 [**編輯設定] >** 。
 5. 選取 [定價層]。
 6. 選擇 [**免費**] 選項。
-7. 選取 [ **儲存**]。
+7. 選取 [儲存]。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024198"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224304"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM 和適用於 MySQL 的 Azure 資料庫
 
@@ -432,7 +432,7 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 - 從本機備份作業中移除內部部署 VM。
 - 更新內部文件以顯示新的位置和 IP 位址。
 - 檢閱與內部部署 VM 互動的任何資源，並更新任何相關的設定或文件，以反映新的組態。
-- Contoso 使用了 Azure Migrate 服務搭配相依性對應，評定要進行遷移的 **OSTICKETWEB** VM。 基於此目的，他們現在應該從 VM 中移除他們所安裝的代理程式 (Microsoft Monitoring Agent/Dependency Agent)。
+- Contoso 使用了 Azure Migrate 服務搭配相依性對應，評定要進行遷移的 **OSTICKETWEB** VM。 他們現在應該從 VM 中移除其所安裝的代理程式（Microsoft Monitoring Agent 和 Microsoft Dependency Agent）。
 
 ## <a name="review-the-deployment"></a>檢閱部署
 

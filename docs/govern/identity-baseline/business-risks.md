@@ -4,29 +4,29 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030480"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222184"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>身分識別基準動機和業務風險
 
-本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供幾個驅使原則聲明之業務風險的範例。
+本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>身分識別基準是否相關？
+## <a name="identity-baseline-relevancy"></a>身分識別基準相關性
 
 傳統內部部署目錄的設計目的是讓企業能夠嚴格控制其內部網路和資料中心內使用者、群組及角色的權限和原則。 這通常是為了支援單一租用戶實作，讓服務僅能在內部部署環境內使用。
 
-雲端身分識別服務旨在將組織的驗證和存取控制功能展開至網際網路。 它們支援多組織使用者管理，並可在雲端應用程式和部署中用來管理使用者和存取原則。 公用雲端平台有某種形式的雲端原生身分識別服務，支援管理和部署工作，並且能夠使用您現有的內部部署身分識別解決方案來[變化整合的層級](../../decision-guides/identity/index.md)。 這些功能都可能會導致雲端身分識別原則比傳統內部部署解決方案所需的更加複雜。
+雲端身分識別服務會將組織的驗證和存取控制功能擴展到網際網路。 它們支援多組織使用者管理，並可在雲端應用程式和部署中用來管理使用者和存取原則。 公用雲端平臺具有雲端原生身分識別服務，可支援管理和部署工作，而且能夠與您現有的內部部署身分識別解決方案進行[不同的整合層級](../../decision-guides/identity/index.md)。 這些功能都可能會導致雲端身分識別原則比傳統內部部署解決方案所需的更加複雜。
 
 身分識別基準專業領域對於您的雲端部署的重要性取決於您的小組大小，並且需要整合您的雲端型身分識別解決方案與現有內部部署身分識別服務。 初始測試部署可能不需要太多的使用者組織或管理，但隨著您的雲端資產成熟，您可能必須支援更複雜的組織整合和集中化管理。
 

@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 建立處理常式，以確保符合公司原則。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027302"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222053"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>建立原則遵循流程
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 建立您的雲端原則聲明並且草擬設計指南之後，您必須建立策略以確保您的雲端部署符合原則需求。 此策略必須包含您的雲端治理小組進行中的審查和通訊程式、建立原則違規何時需要採取行動的準則，以及定義自動化監視和合規性系統的需求，而這將會偵測違規並觸發補救動作。
 
@@ -57,6 +53,8 @@ I've defined policies, I've provided an architecture guide. Now how do I monitor
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 
 因應原則變更，定期更新文件和訓練教材，並確保教育工作能夠將更新的需求和指引傳授給相關的 IT 人員。
+
+在雲端旅程的各個階段中，您可能會發現，最好洽詢合作夥伴和專業訓練計畫，以強化您的小組在技術上與 cti 的教育。 此外，許多人發現，正式認證是您教育產品群組的重要補充，應加以考慮。
 
 ### <a name="establish-escalation-paths"></a>建立呈核路徑
 

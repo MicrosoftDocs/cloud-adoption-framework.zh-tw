@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準範例原則聲明
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030265"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221651"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -40,7 +40,7 @@ ms.locfileid: "71030265"
 
 **原則聲明：** 所有受保護的資料在待用時都必須經過加密。
 
-**潛在的設計選項：** 請參閱 [Azure 加密概觀](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)一文，以取得如何在 Azure 平台上執行待用資料加密的討論。
+**潛在的設計選項：** 請參閱 [Azure 加密概觀](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)一文，以取得如何在 Azure 平台上執行待用資料加密的討論。 也應該考慮其他控制項，例如在帳戶資料加密中，以及如何變更儲存體帳戶設定的控制。
 
 ## <a name="network-isolation"></a>網路隔離
 
@@ -56,15 +56,15 @@ ms.locfileid: "71030265"
 
 **原則聲明：** 沒有包含受保護資料的任何子網路可以透過公用網際網路或跨資料中心直接存取。 這些子網路的存取必須透過中繼子網路進行路由。 這些子網路的所有存取都必須經過防火牆解決方案，該解決方案可以執行封包掃描和封鎖功能。
 
-**潛在的設計選項：** 在 Azure 中，請藉由部署[公用網際網路與雲端型網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)，來保護公用端點。
+**潛在的設計選項：** 在 Azure 中，請藉由部署[公用網際網路與雲端型網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)，來保護公用端點。 請考慮[Azure 防火牆](https://docs.microsoft.com/azure/firewall)的部署、設定和自動化。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 
 **技術風險：** 分散式阻斷服務 (DDoS) 攻擊會導致業務中斷。
 
-**原則聲明：** 將自動化 DDoS 風險降低機制部署至所有可公開存取的網路端點。
+**原則聲明：** 將自動化 DDoS 風險降低機制部署至所有可公開存取的網路端點。 沒有任何 DDoS，IaaS 支援的公眾面向網站不應公開至網際網路。
 
-**潛在的設計選項：** 使用 [Azure DDoS 保護](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)將 DDoS 攻擊所造成的中斷情況降到最低。
+**潛在的設計選項：** 使用[Azure DDoS 保護](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)標準，將 DDoS 攻擊所造成的中斷降至最低。
 
 ## <a name="secure-on-premises-connectivity"></a>保護內部部署連線
 
@@ -88,7 +88,7 @@ ms.locfileid: "71030265"
 
 **原則聲明：** 安全性小組應定期檢閱可能影響雲端部署的趨勢與潛在攻擊，以更新雲端中使用的安全性基準工具。
 
-**潛在的設計選項：** 建立定期安全性檢閱會議，包括相關 IT 和治理小組成員。 請參閱現有的安全性資料和計量，以在目前的原則和安全性基準工具中建立間距，並更新原則以補救任何新的風險。
+**潛在的設計選項：** 建立定期安全性檢閱會議，包括相關 IT 和治理小組成員。 請參閱現有的安全性資料和計量，以在目前的原則和安全性基準工具中建立間距，並更新原則以補救任何新的風險。 利用[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)和[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)，針對您的部署特定的新興威脅，取得可操作的深入解析。
 
 ## <a name="next-steps"></a>後續步驟
 

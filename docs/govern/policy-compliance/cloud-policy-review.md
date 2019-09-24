@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何進行雲端原則審查。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223845"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "71026889"
 雲端轉換會建立天然的變化點，以重新考慮過去的舊版原則決策。 雲端中的技術功能和預設流程大幅改變，固有風險也大幅改變。 使用先前的範例，磁帶備份原則會從單一失敗點的風險中詞幹分析，方法是將資料放在一個位置，而業務需要藉由降低此風險來將風險設定檔降至最低。 在雲端部署中，有數個選項可提供相同的風險降低，且復原時間目標 (RTO) 更低。 例如:
 
 - 雲端原生解決方案可以啟用 Azure SQL Database 的異地複寫。
-- 混合式解決方案可以使用 Azure Site Recovery 將 IaaS 工作負載複寫到多個資料中心。
+- 混合式解決方案可以使用 Azure Site Recovery 將 IaaS 工作負載複寫至 Azure。
 
 當執行雲端轉換時，原則通常可控管雲端採用小組可用的許多工具、服務和程序。 如果這些原則是以舊技術為基礎，則可能會妨礙小組推動變革的工作。 在最糟的情況下，移轉小組會完全忽略重要原則，以便採取因應措施。 兩者都不是可接受的結果。
 
@@ -43,8 +43,8 @@ ms.locfileid: "71026889"
 
 1. 檢閱與特定專業領域相關的現有內部部署原則，並尋找兩個重要資料點：舊版相依性和已識別的業務風險。
 2. 藉由詢問簡單的問題來評估每項業務風險：「業務風險仍然存在於雲端模型嗎？」
-3. 如果風險仍然存在，請記錄必要的緩和措施來重寫原則，而不是技術解決方案。
-4. 與雲端採用小組一起檢閱更新後的原則，以了解所需風險降低的潛在解決方案。
+3. 如果風險仍然存在，請記錄必要的業務緩和，而不是技術解決方案，以重寫原則。
+4. 請參閱雲端採用小組的更新原則，以瞭解所需風險降低的潛在技術解決方案。
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>舊原則的原則檢閱範例
 
@@ -55,6 +55,7 @@ ms.locfileid: "71026889"
   - 假設的業務風險，該風險與生產設備相同的實體位置中的備份儲存體相關聯。
 - 風險仍然存在嗎？ 是的。 即使在雲端，對於單一設備的相依性仍會產生一些風險。 此風險影響業務的可能性比在內部部署解決方案中出現還要低，但仍有風險存在。
 - 重新撰寫原則。 在全資料中心發生災害的情況下，必須有辦法在中斷的 24 小時內，於不同的資料中心和不同的地理位置還原生產系統。
+  - 也請務必考慮，在上述需求中指定的時間軸可能已由不再存在於雲端中的技術條件約束所設定。 請務必先瞭解雲端的技術限制和功能，再直接套用舊版的 RTO/RPO。
 - 與雲端採用小組一起檢閱。 根據所實作的解決方案，遵守此資源一致性原則的方法有很多種。
 
 ## <a name="next-steps"></a>後續步驟

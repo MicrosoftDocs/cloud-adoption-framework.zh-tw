@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複雜企業的治理指南：改善資源一致性專業領域
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223823"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雜企業的治理指南：改善資源一致性專業領域
 
@@ -65,7 +65,7 @@ ms.locfileid: "71029768"
 5. 治理工具必須確認會針對所有任務關鍵性應用程式或受保護的資料，收集適當層級的記錄資料。
 6. 治理程序必須確認任務關鍵性應用程式和受保護資料的備份、復原和 SLA 遵循皆正確實作。
 7. 治理工具必須限制只對已核准的映像進行虛擬機器部署。
-8. 治理工具必須強制**避免**在支援任務關鍵性應用程式的所有已部署資產上進行自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新之資產必須包含在 IT 部門所負責的處理程序中。
+8. 治理工具必須強制**避免**在支援任務關鍵性應用程式的所有已部署資產上進行自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新的資產必須包含在 IT 作業所擁有的進程中，才能快速且有效地更新這些伺服器。
 9. 治理工具必須確認與成本、重要性、SLA、應用程式及資料類別相關的標記。 所有的值都必須符合雲端治理小組所管理的預先定義值。
 10. 治理流程必須包含部署期間和一般週期的稽核，以確保所有資產之間的一致性。
 11. 安全性小組應定期檢閱可能影響雲端部署的趨勢與攻擊，以更新雲端中使用的安全性基準工具。
@@ -85,25 +85,25 @@ ms.locfileid: "71029768"
 
 1. 作為外部相依性，雲端營運小組必須定義操作監控工具、商務持續性和嚴重損壞修復（BCDR）工具，以及自動化的補救工具。 雲端治理小組接著可以支援必要的探索流程。
     1. 在此使用案例中，雲端作業小組選擇 Azure 監視器做為監視任務關鍵性應用程式的主要工具。
-    1. 該小組也選擇 Azure Site Recovery 作為主要的 BCDR 工具。
-1. Azure Site Recovery 的執行。
-    1. 定義及部署用於備份和復原程序的 Azure Vault。
-    1. 建立 Azure 資源管理範本，以便在每個訂用帳戶中建立保存庫。
-1. Azure 監視器的執行。
-    1. 識別任務關鍵性的訂用帳戶後，可使用 PowerShell 建立分析工作區。 這是預先部署程式。
+    2. 該小組也選擇 Azure Site Recovery 作為主要的 BCDR 工具。
+2. Azure Site Recovery 的執行。
+    1. 定義及部署用於備份和復原程式的 Azure Site Recovery Vault。
+    2. 建立 Azure 資源管理範本，以便在每個訂用帳戶中建立保存庫。
+3. Azure 監視器的執行。
+    1. 一旦識別出關鍵性的訂用帳戶，就可以建立 log analytics 工作區。
 
 **個別雲端採用訂用帳戶：** 下列內容將確保監控解決方案可以探索每個訂用帳戶，並準備包含在 BCDR 做法中。
 
 1. 適用于任務關鍵性節點的 Azure 原則：
     1. 僅稽核和強制使用標準角色。
-    1. 稽核和強制執行所有儲存體帳戶的加密。
-    1. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
-    1. 稽核並強制執行使用者定義路由表的限制。
-    1. 稽核和強制 Windows 和 Linux 虛擬機器的 Log Analytics 代理程式部署。
+    2. 稽核和強制執行所有儲存體帳戶的加密。
+    3. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
+    4. 稽核並強制執行使用者定義路由表的限制。
+    5. 稽核和強制 Windows 和 Linux 虛擬機器的 Log Analytics 代理程式部署。
 2. Azure 藍圖：
     1. 建立名為 `mission-critical-workloads-and-protected-data` 的藍圖。 除了受保護的資料藍圖之外，此藍圖也將運用資產。
-    1. 將新的 Azure 原則新增到藍圖中。
-    1. 將藍圖運用於預期裝載任務關鍵型應用程式的任何訂用帳戶。
+    2. 將新的 Azure 原則新增到藍圖中。
+    3. 將藍圖運用於預期裝載任務關鍵型應用程式的任何訂用帳戶。
 
 ## <a name="conclusion"></a>結論
 

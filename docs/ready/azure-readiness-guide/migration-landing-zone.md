@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025212"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223934"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -33,7 +33,7 @@ ms.locfileid: "71025212"
 ![藍圖定位](../../_images/ready/blueprint-overview.png)
 
 - 字母 A 位在標示為此藍圖範圍的曲線內。 該範圍主要在傳達此藍圖涵蓋了有限的架構複雜性，但是以相對中等的合規性需求為基礎。
-- 具有高度複雜性和嚴格合規性需求的客戶，可能較適合使用合作夥伴的擴充藍圖，或其中一個[以標準為基礎的藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/)。
+- 具有高度複雜性和嚴格合規性需求的客戶，可能較適合使用合作夥伴的擴充藍圖，或其中一個[以標準為基礎的藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)。
 - 大部分客戶的需求會落在這兩個極端之間的區域。 字母 B 代表[登陸區域考量](../considerations/index.md)文章中所述的程序。 對於此空間中的客戶，您可以使用在這些文章中找到的決策指南，識別要新增至「雲端採用架構」移轉登陸區域藍圖的節點。 此方法可讓您自訂藍圖以符合您的需求。
 
 ## <a name="use-this-blueprint"></a>使用此藍圖
@@ -65,7 +65,7 @@ ms.locfileid: "71025212"
 |訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)|
 |管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
 |資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
-|Data|N/A|[在 Azure 中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Data|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-guidance.md)         |
 |命名和標記標準|N/A|[命名和標記最佳做法](../considerations/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|
@@ -73,7 +73,7 @@ ms.locfileid: "71025212"
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>從此藍圖自訂或部署登陸區域
 
-深入了解並從 [Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index) 下載「雲端採用架構」移轉登陸區域藍圖的參考範例，以進行部署或自訂。
+深入瞭解並下載雲端採用架構的參考範例遷移登陸區域藍圖，以從[Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)進行部署或自訂。
 
 您也可以在入口網站中取得藍圖範例。 如需如何部署藍圖的詳細資訊，請參閱 [Azure 藍圖](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint)。
 

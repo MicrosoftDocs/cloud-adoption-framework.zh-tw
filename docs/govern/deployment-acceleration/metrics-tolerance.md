@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速的計量、指標及風險承受度
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029771"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220701"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>部署加速的計量、指標及風險承受度
 
-本文旨在協助您量化商務風險承受度，因為這與部署加速息息相關。 定義計量和指標可協助您建立商務案例，藉此讓部署加速專業領域變得更完善。
+本文將協助您量化商務風險承受度，因為這與部署加速有關。 定義計量和指標可協助您建立商務案例，藉此讓部署加速專業領域變得更完善。
 
 ## <a name="metrics"></a>計量
 
@@ -34,7 +34,7 @@ ms.locfileid: "71029771"
 
 <!-- "en-us" location is required for the URL below. -->
 
-在雲端採用旅程的初期，就請考慮採用 DevOps 或 [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) 組織文化。 傳統的公司 IT 組織通常會有孤立的作業、安全性和開發團隊，這些小組通常無法正常合作，或甚至彼此形成對立或惡意。 及早認清這些挑戰並整合來自各個小組的重要關係人，將有助於企業確保在採用雲端時的靈活度，而又保有安全且治理完善的環境。
+傳統的公司 IT 組織通常會有孤立的作業、安全性和開發團隊，這些小組通常無法正常合作，或甚至彼此形成對立或惡意。 及早認清這些挑戰並整合來自各個小組的重要關係人，將有助於企業確保在採用雲端時的靈活度，而又保有安全且治理完善的環境。 因此，您應該考慮在雲端採用旅程的初期採用 DevOps 或[DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops)組織文化。 
 
 請與 DevSecOps 小組和業務關係人一同找出與設定相關的[業務風險](./business-risks.md)，然後判斷在設定風險承受度時可接受的基準。 雲端採用架構指引的這一節提供範例，但您公司或部署的詳細風險和基準可能會有所不同。
 

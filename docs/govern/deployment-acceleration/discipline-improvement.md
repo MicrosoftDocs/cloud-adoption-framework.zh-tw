@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速專業領域改進
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028949"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220757"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -52,6 +52,7 @@ ms.locfileid: "71028949"
 
 - 對於新的雲端式應用程式，在開發流程初期引進完全自動化的部署。 此投資將改進測試流程的可靠性，並確保開發、QA 和生產環境之間的一致性。
 - 使用原始檔控制平台 (例如 GitHub 或 Azure DevOps) 來儲存所有部署成品 (例如部署範本或設定指令碼)。
+- 將所有秘密、密碼、憑證和連接字串儲存在[Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - 實作您的[部署加速工具鏈](./toolchain.md)之前，請考慮先執行試驗測試，以確定它會盡可能地簡化您的部署。 在預先部署階段期間套用試驗測試的意見反應，視需要重複執行。
 - 評估應用程式的邏輯與實體架構，並找機會來將應用程式資源部署自動化，或使用其他雲端式資源改進架構的某些部分。
 - 更新架構方針文件，以包含部署與使用者採用方案，並散發給重要的專案關係人。

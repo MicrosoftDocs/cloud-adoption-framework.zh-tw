@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026659"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223979"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -168,7 +168,7 @@ Scaffold 的第二個要件包含使用[Azure 原則和計畫](https://docs.micr
 
 若要保護對資源的存取, 您必須先設定您的身分識別提供者, 然後設定角色和存取權。 連線至您內部部署 Active Directory 的 Azure Active Directory (Azure AD) 是 Azure 身分識別的基礎。 話雖如此, Azure AD與內部部署 Active Directory 不同, 但請務必瞭解 Azure AD 租使用者是什麼, 以及它與您的 Azure 註冊有何關聯。 請參閱可用的[資訊](../govern/resource-consistency/resource-access-management.md), 以取得 Azure AD 和內部部署 Active Directory 的穩固基礎。 若要將您的 Active Directory 連線並同步處理至 Azure AD, 請在內部部署環境中安裝和設定[Azure AD Connect 工具](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
-![架構圖表](../_images/reference/ad-architecture.png)
+![AD 架構的圖表](../_images/reference/ad-architecture.png)
 
 Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理員或共同管理員。 存取傳統模型中的訂用帳戶，意味著存取入口網站中的所有資源。 缺乏細微控制導致訂用帳戶激增，進而為 Azure Enrollment 提供合理的存取控制層級。 不再需要此種訂用帳戶激增情況。 透過角色型存取控制 (RBAC), 您可以將使用者指派給標準角色, 以提供一般存取權, 例如「擁有者」、「參與者」或「讀者」, 甚至建立您自己的角色。
 

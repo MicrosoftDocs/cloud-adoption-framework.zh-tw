@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 579f6eb761a6e59ab179e99c4c607f87897b4215
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024997"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224166"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM
 
@@ -79,7 +79,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 Contoso 會按照下列方式進行遷移：
 
 - 在第一個步驟中，Contoso 會準備以及設定 Azure Migrate 伺服器移轉的 Azure 元件，然後準備內部部署 VMware 基礎結構。
-- 他們已備妥 [Azure 基礎結構](./contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate 伺服器移轉工具來新增 VM 複寫的設定。 
+- 他們已備妥 [Azure 基礎結構](./contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate 伺服器移轉工具來新增 VM 複寫的設定。
 - 等一切就緒，Contoso 就可以開始複寫 VM。
 - 複寫功能啟用且正常運作後，Contoso 會將 VM 容錯移轉至 Azure，而加以遷移。
 
@@ -89,8 +89,7 @@ Contoso 會按照下列方式進行遷移：
 
 **服務** | **說明** | **成本**
 --- | --- | ---
-[Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate/)費用和定價。
-
+[Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -113,7 +112,7 @@ Contoso 會按照下列方式進行遷移：
 
 > [!div class="checklist"]
 >
-> - **步驟 1：準備 Azure 以進行 Azure Migrate 伺服器移轉。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。 
+> - **步驟 1：準備 Azure 以進行 Azure Migrate 伺服器移轉。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。
 > - **步驟 2：準備內部部署 VMware 以進行 Azure Migrate 伺服器移轉。** 他們會準備帳戶以便探索 VM，並且準備在容錯移轉後連線至 Azure VM。
 > - **步驟 3：複寫 VM。** 他們要設定複寫，然後開始將 VM 複寫至 Azure 儲存體。
 > - **步驟 4：使用 Azure Migrate 伺服器移轉來移轉 VM。** 他們會執行測試容錯移轉，確定一切都能正常運作，然後執行完整的容錯移轉，以便將 VM 遷移至 Azure。
@@ -123,26 +122,24 @@ Contoso 會按照下列方式進行遷移：
 以下是 Contoso 將 VM 移轉至 Azure 時，所需的 Azure 元件：
 
 - 容錯移轉期間建立 Azure VM 時，這些 VM 所在的 VNet。
-- Azure Migrate 伺服器移轉工具佈建。 
+- Azure Migrate 伺服器移轉工具佈建。
 
 他們依照下列方式進行其設定：
 
-1. 設定網路 - Contoso 已設定好網路，當他們 [部署 Azure 基礎結構](./contoso-migration-infrastructure.md) 時，就可以用於 Azure Migrate 伺服器移轉。
+1. **設定網路：** Contoso 已設定網路，可在[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時用於 Azure Migrate 伺服器遷移
 
     - SmartHotel360 應用程式為生產應用程式，而且 VM 會被移轉至美國東部 2 主要區域的 Azure 生產網路 (VNET-PROD-EUS2)。
     - 這兩個 VM 會置於可作為生產資源的 ContosoRG 資源群組中。
     - 應用程式前端 VM (WEBVM) 將移轉至生產網路中的前端子網路 (PROD-FE-EUS2)。
     - 應用程式前端 VM (SQLVM) 將移轉至生產網路中的資料庫子網路 (PROD-DB-EUS2)。
 
-
-2. 佈建 Azure Migrate 伺服器移轉工具 - 網路和儲存體帳戶準備就緒之後，Contoso 現在會建立復原服務保存庫 (ContosoMigrationVault)，然後將它放在主要美國東部 2 區域的 ContosoFailoverRG 資源群組中。
+2. **提供 Azure Migrate 伺服器遷移工具：** 網路和儲存體帳戶準備就緒之後，Contoso 現在會建立復原服務保存庫 (ContosoMigrationVault)，然後將它放在美國東部 2 主要區域的 ContosoFailoverRG 資源群組中。
 
     ![Azure Migrate 伺服器移轉工具](./media/contoso-migration-rehost-linux-vm/server-migration-tool.png)
 
 **需要其他協助？**
 
-[深入了解](https://docs.microsoft.com/azure/migrate/)設定 Azure Migrate 伺服器移轉工具。 
-
+[深入了解](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate 伺服器移轉工具。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
 
@@ -158,7 +155,6 @@ Contoso 會按照下列方式進行遷移：
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>步驟 3：複寫內部部署 VM
 
-
 Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure 的作業。
 
 完成探索之後，您就可以開始將 VMware VM 複寫至 Azure。
@@ -168,7 +164,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     ![複寫 VM](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
 2. 在 [複寫] > [來源設定] > [您的電腦虛擬化了嗎] 中，選取 [是，使用 VMware vSphere]。
-3. 在 [內部部署設備] 中，選取您設定的 Azure Migrate 設備名稱 > [確定]。 
+3. 在 [內部部署設備] 中，選取您設定的 Azure Migrate 設備名稱 > [確定]。
 
     ![來源設定](./media/contoso-migration-rehost-linux-vm/source-settings.png)
 
@@ -181,31 +177,26 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 5. 在 [虛擬機器] 中，視需要搜尋 VM，並檢查您要遷移的每個 VM。 然後按 [下一步：**目標設定]** 。
 
-
 6. 在 [目標設定] 中，選取訂用帳戶、您的遷移目標區域，並指定 Azure VM 在移轉後所在的資源群組。 在 [虛擬網路] 中，選取 Azure VM 在移轉後所將加入的 Azure VNet/子網路。
 7. 在 [Azure Hybrid Benefit] 中：
 
     - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後按 [下一步]。
     - 如果您有 Windows Server 機器涵蓋於有效的軟體保證或 Windows Server 訂用帳戶下，且您想要將權益套用至要移轉的機器，請選取 [是]。 然後按 [下一步]。
 
-
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements)。
 
-    - **VM 大小**：如果您使用評估建議，[VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來選擇大小。 或者，您可以在 [Azure VM 大小] 中手動選擇大小。 
-    - **OS 磁碟**：指定 VM 的 OS (開機) 磁碟。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。 
+    - **VM 大小**：如果您使用評估建議，[VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來選擇大小。 或者，您可以在 [Azure VM 大小] 中手動選擇大小。
+    - **OS 磁碟**：指定 VM 的 OS (開機) 磁碟。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組**：如果 VM 在移轉後應位於 Azure 可用性設定組中，請指定設定組。 此設定組必須位於您為移轉指定的目標資源群組中。
 
 9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後按 [下一步]。
     - 您可以從複寫排除磁碟。
-    - 如果您排除磁碟，則在移轉後磁碟將不會出現在 Azure VM 上。 
-
+    - 如果您排除磁碟，則在移轉後磁碟將不會出現在 Azure VM 上。
 
 10. 在 [檢閱並啟動複寫] 中檢閱設定，然後按一下 [複寫] 以啟動伺服器的初始複寫。
 
 > [!NOTE]
 > 您可以在複寫開始之前隨時更新複寫設定 (經由 [管理] > [複寫機器])。 在複寫啟動後，就無法變更設定。
-
-
 
 ## <a name="step-4-migrate-the-vms"></a>步驟 4：遷移 VM
 
@@ -228,7 +219,6 @@ Contoso 管理員會執行一次快速的容錯移轉測試，然後再執行一
 
     ![清除移轉](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
-
 ### <a name="migrate-the-vms"></a>遷移 VM
 
 Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
@@ -243,8 +233,6 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
     - 如果您不想關閉 VM，請選取 [否]
 4. VM 會啟動移轉作業。 請在 Azure 通知中追蹤該作業。
 5. 作業完成後，您可以從 [虛擬機器] 頁面檢視及管理 VM。
-
-
 
 ### <a name="connect-the-vm-to-the-database"></a>將 VM 連線到資料庫
 
@@ -279,7 +267,7 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 **需要其他協助？**
 
 - [了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)如何執行測試容錯移轉。
-- [深入了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。 
+- [深入了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
@@ -291,7 +279,7 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 - 從本機備份作業中移除內部部署 VM。
 - 更新其內部文件以顯示新位置，以及 OSTICKETWEB 和 OSTICKETMYSQL 的 IP 位址。
 - 檢閱與 VM 互動的任何資源，並更新任何相關的設定或文件，以反映新的組態。
-- Contoso 使用了 Azure Migrate 服務搭配相依性對應，評定要進行遷移的 VM。 基於此目的，管理員應該從 VM 中移除 Microsoft Monitoring Agent 以及他們所安裝的 Dependency Agent。
+- Contoso 使用了 Azure Migrate 服務搭配相依性對應，評定要進行遷移的 VM。 系統管理員應該從 VM 中移除 Microsoft Monitoring Agent，以及他們針對此目的所安裝的 Microsoft Dependency Agent。
 
 ## <a name="review-the-deployment"></a>檢閱部署
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030269"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221363"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -21,7 +21,7 @@ ms.locfileid: "71030269"
 
 ## <a name="onboarding-by-using-automation"></a>使用自動化上架
 
-本指南提供支援的 GitHub 存放庫, 其中包含範例程式碼[CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), 它會提供範例腳本和 Azure Resource Manager 範本, 協助您將 Azure 伺服器管理服務的部署作業自動化。
+本指南提供支援的 GitHub 存放庫, 其中包含範例程式碼[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), 它會提供範例腳本和 Azure Resource Manager 範本, 協助您將 Azure 伺服器管理服務的部署作業自動化。
 
 這些範例檔案說明如何使用 Azure PowerShell Cmdlet 來自動化下列工作:
 
@@ -33,7 +33,7 @@ ms.locfileid: "71030269"
 
 4. 啟用工作區的更新管理和變更追蹤和清查。
 
-5. 使用 Azure 原則將 Azure Vm 上架 (原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Dependency Agent)。
+5. 使用 Azure 原則將 Azure Vm 上架（原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Dependency Agent）。
 
 6. 藉由在內部部署伺服器上安裝 Log Analytics 代理程式來將其上架。
 

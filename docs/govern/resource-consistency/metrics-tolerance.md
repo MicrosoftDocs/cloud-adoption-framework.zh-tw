@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性的計量、指標及風險承受度
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027091"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222955"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>資源一致性的計量、指標及風險承受度
 
-本文旨在協助您量化商務風險承受度，因為這與資源一致性息息相關。 定義計量和指標可協助您建立商務案例，藉此讓資源一一致性專業領域變得更完善。
+本文將協助您量化商務風險承受度，因為這與資源一致性相關。 定義計量和指標可協助您建立商務案例，藉此讓資源一一致性專業領域變得更完善。
 
 ## <a name="metrics"></a>計量
 
@@ -33,7 +33,7 @@ ms.locfileid: "71027091"
 - **資源存留期。** 自上次部署或修改資源以來的時間。
 - **重要條件中的 Vm。** 已部署的 VM 數目，其中已偵測到一或多個重大問題，您必須解決這類問題，才能還原正常的功能。
 - **警示（依嚴重性）。** 有關已部署資產的警示總數 (依嚴重性細分)。
-- **狀況不良的子網連結。** 有網路連線問題的資源數目。
+- **狀況不良的網路連結。** 有網路連線問題的資源數目。
 - **狀況不良的服務端點。** 外部網路端點的問題數目。
 - **雲端提供者服務健全狀況事件。** 雲端提供者造成的中斷或效能事件的數目。
 - **服務等級協定。** 這可以包括 Microsoft 對 Azure 服務執行時間與連線能力的承諾，以及企業對其內外部客戶的承諾。

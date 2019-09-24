@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 法規合規性簡介
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027092"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222022"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 
-這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 其僅供一般認知使用。 如需[Azure 合規性供應](https://aka.ms/allcompliance)專案的更多詳細資訊，請至[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)。 此外，所有可下載的檔都可供[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的特定 Azure 客戶使用。
+這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 如需[Azure 合規性供應](https://aka.ms/allcompliance)專案的更多詳細資訊，請至[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)。 此外，所有可下載的檔都可供[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的特定 Azure 客戶使用。
 
 法規合規性是指確保公司遵循其地理位置中的規定，或主動採用的產業標準所需之規則的專業和程式。 針對 IT 法規合規性，人員和程式會監視公司系統，以偵測並防止違反這些治理法規和標準所建立的原則和程式。 這也適用于廣泛的監視和強制執行程式。 根據產業和地理位置而定，這些程式可能會變得冗長且複雜。
 
@@ -42,7 +42,7 @@ ms.locfileid: "71027092"
 
 ## <a name="gdpr"></a>GDPR
 
-這個領域最重要的其中一項發展就是歐盟最近制定的一般資料保護規範 (GDPR)，旨在強化歐盟境內的個人資料保護。 GDPR 要求有關個人的資料（例如，「姓名、家庭位址、相片、電子郵件地址、銀行細節、社交網路網站上的文章、醫療資訊或電腦的 IP 位址」）會保留在 EU 的伺服器上，而不會傳送出去其中的。 這也需要公司通知個人任何資料缺口，並規定公司擁有資料保護長（DPO）。 其他國家/地區具有 (或正在開發) 相似類型的法規。
+在此領域中最重要的其中一項發展是一般資料保護規定（GDPR），其設計目的是為了加強歐盟內個人的資料保護。 GDPR 要求有關個人的資料（例如，「姓名、家庭位址、相片、電子郵件地址、銀行細節、社交網路網站上的文章、醫療資訊或電腦的 IP 位址」）會保留在 EU 的伺服器上，而不會傳送出去其中的。 這也需要公司通知個人任何資料缺口，並規定公司擁有資料保護長（DPO）。 其他國家/地區具有 (或正在開發) 相似類型的法規。
 
 ## <a name="compliant-foundation-in-azure"></a>Azure 中的符合規範基礎
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027310"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222294"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>複雜企業的治理指南：多層控管
 
@@ -57,4 +57,3 @@ ms.locfileid: "71027310"
 - **雲端採用小組：** 有關應用程式或工作負載的詳細決策和執行，可以由每個雲端採用小組在治理需求的內容中進行。 有時，小組也可以要求其他的 Azure 資源一致性範本，以加速採用工作。
 
 每個層級的治理實作詳細資料將需要每個小組之間協調。 本指南中所述的治理 MVP 和治理改良有助於協調協調。
-

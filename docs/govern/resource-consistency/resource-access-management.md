@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明 Azure 中的資源存取管理建構：Azure Resource Manager、訂用帳戶、資源群組和資源
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027693"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223030"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "71027693"
 
 ## <a name="what-is-an-azure-resource-group"></a>什麼是 Azure 資源群組？
 
-Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)。 資源群組是只是一個邏輯建構，將多個資源群組在一起，系統就能以單一實體的形式來管理這些資源。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。
+Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)。 資源群組只是將多個資源分組在一起的邏輯結構，因此可以根據_生命週期和安全性_，以單一實體的形式進行管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 還有另一種方式：在一起合作的所有專案，一起一起管理，並淘汰在一起，一起放在資源群組中。
 
 ![包含資源](../../_images/govern/design/governance-1-10.png)
 的資源群組圖*2-資源群組包含資源。*
@@ -42,7 +42,7 @@ Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microso
 
 ## <a name="what-is-an-azure-subscription"></a>什麼是 Azure 訂用帳戶？
 
-Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源群組及其資源群組在一起。 不過，Azure 訂用帳戶也與 Azure Resource Manager 所使用的控制項相關聯。 這代表什麼？ 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
+Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源群組及其資源群組在一起。 不過，Azure 訂用帳戶也與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
 
 ![Azure 訂](../../_images/govern/design/governance-1-11.png)
 用帳戶*圖 3-azure 訂*用帳戶。

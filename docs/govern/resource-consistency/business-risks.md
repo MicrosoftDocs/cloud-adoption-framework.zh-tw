@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性動機和商務風險
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026496"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222010"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>資源一致性動機和商務風險
 
@@ -22,7 +22,7 @@ ms.locfileid: "71026496"
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>資源一致性有相關性嗎？
+## <a name="resource-consistency-relevancy"></a>資源一致性相關性
 
 談到部署資源和工作負載，雲端提供比多數傳統內部部署資料中心更高的靈活度和彈性。 不過，這些潛在的雲端優勢也伴隨潛在管理缺點，可能嚴重危害您雲端採用的成功。 您已經部署哪些資產？ 哪些小組擁有何種資產？ 您有足夠支援工作負載的資源嗎？ 如何知道工作負載是否狀況良好？
 

@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端移轉擴充範圍檢查清單
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817327"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224367"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>雲端移轉的擴充範圍
 
@@ -27,7 +27,7 @@ ms.locfileid: "70817327"
 
 - **業務導向的範圍變更：**
   - [平衡組合](./balance-the-portfolio.md)
-  - [支援全球市場](./multiple-regions.md)
+  - [支援全球市場](../../decision-guides/regions/index.md)
   - 移轉期間的成本意識 (將於 2019 年第 3 季提供) 
 - **文化特性導向的範圍變更：**
   - 變更管理和核准程序 (將於 2019 年第 3 季提供) 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027293"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224187"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>建置雲端移轉的商業論證
 
@@ -22,7 +22,7 @@ ms.locfileid: "71027293"
 
 ## <a name="dispelling-cloud-migration-myths"></a>解開雲端移轉的迷思
 
-**迷思：雲端一定比較便宜。** 通常會認為, 在雲端中操作資料中心的成本, 一律比在內部部署環境中運作。 雖然此假設通常是 true, 但不一定會發生這種情況。 有時候雲端作業成本會較高。 這些較高的成本通常是因成本管理不佳、系統架構不一致、程式重複、非典型的系統設定, 或更大的人員配置成本所造成。 幸好, 您可以緩和這些問題的許多, 以創造初期的 ROI。 遵循[建立商業理由](#building-the-business-justification)的指導方針, 可協助您偵測並避免這些不一致。 解開這裡所述的其他誤解也可以提供協助。
+**迷思：雲端一律較便宜。** 通常會認為, 在雲端中操作資料中心的成本, 一律比在內部部署環境中運作。 雖然此假設通常是 true, 但不一定會發生這種情況。 有時候雲端作業成本會較高。 這些較高的成本通常是因成本管理不佳、系統架構不一致、程式重複、非典型的系統設定, 或更大的人員配置成本所造成。 幸好, 您可以緩和這些問題的許多, 以創造初期的 ROI。 遵循[建立商業理由](#building-the-business-justification)的指導方針, 可協助您偵測並避免這些不一致。 解開這裡所述的其他誤解也可以提供協助。
 
 **迷思：所有項目都應移至雲端。** 事實上, 有些商業驅動程式可能會導致您選擇混合式解決方案。 在您完成商務模型之前, 請先完成第一次迴圈的量化分析, 如[數位資產文章](../digital-estate/5-rs-of-rationalization.md)中所述。 如需有關合理化所牽涉之個別量化驅動程式的詳細資訊, 請參閱[合理化的 5 Rs](../digital-estate/5-rs-of-rationalization.md)。 兩種方法都會使用可輕易取得的清查資料和簡單的量化分析，來識別可能導致雲端中的成本較高的工作負載或應用程式。 這些方法也可以識別哪些相依性或流量模式會使您必須使用混合式解決方案。
 

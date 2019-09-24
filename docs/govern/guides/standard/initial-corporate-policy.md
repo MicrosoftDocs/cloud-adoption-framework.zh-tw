@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029160"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223655"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準 Enterprise 指南：治理策略背後的初始公司原則
 
@@ -33,7 +33,7 @@ ms.locfileid: "71029160"
 
 目前的風險承受度很高，且投資雲端治理的意願偏低。 因此，承受度指標可當作早期警告系統來觸發更多時間和精力的投資。 如果和在觀察到下列指標時，您應該反復改善治理策略。
 
-- **成本管理：** 部署到雲端的規模超過 100 項資產，或每月支出超過每個月 $1,000 美元。
+- **成本管理：** 部署的規模超過預先決定的資源數量限制或每月成本。
 - **安全性基準：** 在定義的雲端採用計劃中納入受保護的資料。
 - **資源一致性：** 在定義的雲端採用計劃中納入任何任務關鍵性應用程式。
 

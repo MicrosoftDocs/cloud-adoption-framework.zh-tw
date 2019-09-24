@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性原則聲明範例
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030023"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221976"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 
@@ -74,8 +74,8 @@ ms.locfileid: "71030023"
 
 **原則聲明：** 您將實作下列原則：
 
-- 治理工具必須確認所有與任務關鍵性應用程式或受保護資料相關的資產都會受到監視，以了解資源損耗與最佳化的情形。
-- 治理工具必須確認會針對所有任務關鍵性應用程式或受保護的資料，收集適當層級的記錄資料。
+- 治理工具必須驗證所有資產都包含在監視中，以因應資源耗盡、安全性、合規性和優化。
+- 治理工具必須驗證是否針對所有應用程式和資料收集適當的記錄資料層級。
 
 **潛在的設計選項：** [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)是 Azure 中的預設監視服務，且在部署資源時，可以透過[Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)來強制執行一致的監視。
 
@@ -85,7 +85,7 @@ ms.locfileid: "71030023"
 
 **原則聲明：** 所有任務關鍵性應用程式和受保護的資料都必須實作備份和復原解決方案，以將中斷或系統失敗的商務影響降到最低。
 
-**潛在的設計選項：** [Azure Site Recovery] 服務提供備份、復原及複寫功能，目的在將商務持續性和災害復原 (BCDR) 之使用案例中的中斷期間降到最低。
+**潛在的設計選項：** [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)服務提供備份、復原和複寫功能，可將商務持續性和嚴重損壞修復（BCDR）案例中的中斷期間降到最低。
 
 ## <a name="next-steps"></a>後續步驟
 

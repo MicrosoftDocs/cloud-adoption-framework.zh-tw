@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準原則合規性流程
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6494f64b91a0a59f235efbc21030c65fa5e7ded8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5f5de9c25574e36648930ce6de835d73eb0685fa
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030061"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221796"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>安全性基準原則合規性流程
 

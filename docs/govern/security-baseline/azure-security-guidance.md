@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft 提供哪些安全性指引？
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029374"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222907"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Microsoft 提供哪些安全性指引？
+# <a name="microsoft-security-guidance"></a>Microsoft 安全性指導方針
 
-## <a name="security-guidance-and-tools"></a>安全性指引和工具
+## <a name="tools"></a>工具
 
 Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合規性管理員以協助處理下列事項：
 
@@ -52,7 +52,7 @@ Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合�
 
 ## <a name="unique-intelligent-insights"></a>唯一的 Intelligent Insights
 
-隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。
+隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。 [閱讀更多資訊](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Azure 威脅情報
 

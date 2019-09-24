@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026510"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221414"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
@@ -96,4 +96,4 @@ ms.locfileid: "71026510"
 - [Azure 檔案同步服務](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Azure 更新管理解決方案是免費的, 但與資料內嵌相關的成本很小。 根據經驗法則, 每個月的資料內嵌前 5 GB 是免費的。 我們通常會發現每部機器每月大約使用 25 MB。 因此, 每個月大約200部機器已免費涵蓋。 針對每部額外的伺服器，將額外的伺服器數目乘以每個月 25 MB。 將儲存體成本乘以所需的儲存體總量。 [儲存體成本可在這裡](https://azure.microsoft.com/pricing/details/storage/)取得。 每一部額外的伺服器都應該對成本有一定的影響。
+> Azure 更新管理解決方案是免費的, 但與資料內嵌相關的成本很小。 根據經驗法則, 每個月的資料內嵌前 5 GB 是免費的。 我們通常會發現每部機器每月大約使用 25 MB。 因此, 每個月大約200部機器已免費涵蓋。 針對每部額外的伺服器，將額外的伺服器數目乘以每個月 25 MB。 將儲存體成本乘以所需的儲存體總量。 [儲存體成本可在這裡](https://azure.microsoft.com/pricing/details/storage)取得。 每一部額外的伺服器都應該對成本有一定的影響。

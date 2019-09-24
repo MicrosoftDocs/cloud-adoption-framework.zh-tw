@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029566"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220546"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -105,26 +105,26 @@ CIO 已花了數個月的時間來與同事和公司的法務人員共同作業�
 **建立企業 IT 中樞和輪輻訂用帳戶來集中化安全性基準：** 在這種最佳作法中，現有的治理容量會由[中樞和輪輻拓撲與共享服務](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)包裝在一起，並提供一些來自雲端治理小組的重要新增專案。
 
 1. Azure DevOps 存放庫。 在 Azure DevOps 中建立存放庫來存放所有相關的 Azure Resource Manager 範本和指令碼式的組態，並為這些項目設定版本。
-1. 中樞和輪輻範本：
+2. 中樞和輪輻範本：
     1. [具有共用服務參考架構的中樞和輪輻拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)中的指引可用來為公司 IT 中樞所需的資產產生 Resource Manager 範本。
-    1. 使用那些範本，此結構就能重複，以作為中央治理策略的一部分。
-    1. 除了目前的參考架構，建議您建立「網路安全性群組」範本來捕捉任何埠封鎖或允許清單需求，以讓 VNet 裝載防火牆。 此網路安全性群組與先前的群組不同，因為它會是允許公用流量進入 VNet 的第一個網路安全性群組。
-1. 建立 Azure 原則。 建立名`Hub NSG Enforcement`為的原則，以強制設定指派給在此訂用帳戶中建立之任何 VNet 的網路安全性群組。 針對來賓設定套用內建原則，如下所示：
+    2. 使用那些範本，此結構就能重複，以作為中央治理策略的一部分。
+    3. 除了目前的參考架構，建議您建立「網路安全性群組」範本來捕捉任何埠封鎖或允許清單需求，以讓 VNet 裝載防火牆。 此網路安全性群組與先前的群組不同，因為它會是允許公用流量進入 VNet 的第一個網路安全性群組。
+3. 建立 Azure 原則。 建立名`Hub NSG Enforcement`為的原則，以強制設定指派給在此訂用帳戶中建立之任何 VNet 的網路安全性群組。 針對來賓設定套用內建原則，如下所示：
     1. 稽核 Windows 網頁伺服器目前使用安全的通訊協定。
-    1. 稽核 Linux 及 Windows 電腦內密碼安全性設定皆設定正確。
-1. 公司 IT 藍圖
+    2. 稽核 Linux 及 Windows 電腦內密碼安全性設定皆設定正確。
+4. 公司 IT 藍圖
     1. 建立名為 `corporate-it-subscription` 的 Azure 藍圖。
-    1. 新增中樞和輪輻範本和`Hub NSG Enforcement`原則。
-1. 展開初始管理群組階層。
+    2. 新增中樞和輪輻範本和`Hub NSG Enforcement`原則。
+5. 展開初始管理群組階層。
     1. 針對每個已要求支援受保護資料的管理群組，`corporate-it-subscription-blueprint` 藍圖提供加速的中樞解決方案。
-    1. 由於這個虛構範例中的管理群組除了營業單位階層，還包含區域階層，因此，會將此藍圖部署於每個區域。
-    1. 針對管理群組階層中的每個區域，建立名為 `Corporate IT Subscription` 的訂用帳戶。
-    1. 將 `corporate-it-subscription-blueprint` 藍圖套用至每個區域執行個體。
-    1. 這將在每個區域中，為每個營業單位建立中樞。 注意：進一步節省成本可能會實現，但會在每個區域中跨營業單位共用中樞。
-1. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
+    2. 由於這個虛構範例中的管理群組除了營業單位階層，還包含區域階層，因此，會將此藍圖部署於每個區域。
+    3. 針對管理群組階層中的每個區域，建立名為 `Corporate IT Subscription` 的訂用帳戶。
+    4. 將 `corporate-it-subscription-blueprint` 藍圖套用至每個區域執行個體。
+    5. 這將在每個區域中，為每個營業單位建立中樞。 注意：進一步節省成本可能會實現，但會在每個區域中跨營業單位共用中樞。
+6. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
     1. 將 GPO 轉換成 DSC – GitHub 中的[Microsoft 基準管理專案](https://github.com/Microsoft/BaselineManagement)可以加速這項工作。 * 請務必使用 Resource Manager 範本，以平行方式將 DSC 儲存於存放庫。
-    1. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何執行個體中。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
-    1. 目前的藍圖計畫要啟用自訂的來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
+    2. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何執行個體中。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
+    3. 目前的藍圖計畫要啟用自訂的來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
 **將其他治理套用到雲端採用訂用帳戶（輪輻）：** 根據`Corporate IT Subscription`，針對應用程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
 
@@ -132,38 +132,38 @@ CIO 已花了數個月的時間來與同事和公司的法務人員共同作業�
 
 1. 網路對等互連範本。 此範本會將每個訂用帳戶中的 VNet 與公司 IT 訂用帳戶中的中樞 VNet 進行對等互連。
     1. 先前章節的參考架構、[具有共用服務的中樞和輪輻拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)，產生了可啟用 VNet 對等互連的 Resource Manager 範本。
-    1. 該範本可用來做為從先前的治理反復專案修改 DMZ 範本的指南。
-    1. 基本上，我們現在要將 VNet 對等互連新增至 DMZ VNet，後者先前已透過 VPN 連線到本機邊緣裝置。
-    1. *** 它還建議也應該從此範本中移除 VPN，以確保不會在未通過公司 IT 訂用帳戶和防火牆的情況下，將任何流量路由傳送到內部部署資料中心。
-    1. Azure 自動化將需要其他[網路設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)，才能將 DSC 套用至裝載的 VM。
-1. 修改網路安全性群組。 封鎖網路安全性群組中的所有公用**和**直接內部部署流量。 唯一的輸入流量應該會通過公司 IT 訂用帳戶中的 VNet 對等。
+    2. 該範本可用來做為從先前的治理反復專案修改 DMZ 範本的指南。
+    3. 我們現在會將 VNet 對等互連新增至先前透過 VPN 連線到本機邊緣裝置的 DMZ VNet。
+    4. *** 它還建議也應該從此範本中移除 VPN，以確保不會在未通過公司 IT 訂用帳戶和防火牆的情況下，將任何流量路由傳送到內部部署資料中心。 您也可以在 ExpressRoute 線路 outge 時，將此 VPN 設定為容錯移轉線路。
+    5. Azure 自動化將需要其他[網路設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)，才能將 DSC 套用至裝載的 VM。
+2. 修改網路安全性群組。 封鎖網路安全性群組中的所有公用**和**直接內部部署流量。 唯一的輸入流量應該會通過公司 IT 訂用帳戶中的 VNet 對等。
     1. 在先前的反復專案中，已建立網路安全性群組來封鎖所有公用流量，並允許清單所有的內部流量。 現在，我們想要將此網路安全性群組轉成一個位。
-    1. 新的網路安全性群組設定應該會封鎖所有公用流量，以及來自本機資料中心的所有流量。
-    1. 進入此 VNet 的流量應該只會來自 VNet 對等另一端的 VNet。
-1. Azure 資訊安全中心實作：
+    2. 新的網路安全性群組設定應該會封鎖所有公用流量，以及來自本機資料中心的所有流量。
+    3. 進入此 VNet 的流量應該只會來自 VNet 對等另一端的 VNet。
+3. Azure 資訊安全中心實作：
     1. 為包含受保護資料分類的任何管理群組設定 Azure 資訊安全中心。
-    1. 依預設將自動佈建設定為開啟，以確保會修補合規性。
-    1. 建立 OS 安全性設定。 定義設定的 IT 安全性。
-    1. 初次使用 Azure 資訊安全中心時支援 IT 安全性。 將安全性中心的使用轉移到 IT 安全性，但保有治理持續改進的存取權。
-    1. 建立 Resource Manager 範本，此範本會反映訂用帳戶內 Azure 資訊安全中心設定所需的變更。
-1. 更新所有訂用帳戶的 Azure 原則。
+    2. 依預設將自動佈建設定為開啟，以確保會修補合規性。
+    3. 建立 OS 安全性設定。 定義設定的 IT 安全性。
+    4. 初次使用 Azure 資訊安全中心時支援 IT 安全性。 將安全性中心的使用轉移到 IT 安全性，但保有治理持續改進的存取權。
+    5. 建立 Resource Manager 範本，此範本會反映訂用帳戶內 Azure 資訊安全中心設定所需的變更。
+4. 更新所有訂用帳戶的 Azure 原則。
     1. 在所有管理群組和訂用帳戶上稽核並強制執行嚴重性和資料分類，以識別具有受保護資料分類的任何訂用帳戶。
-    1. 僅稽核並強制使用已核准的 OS 映像。
-    1. 根據每個節點的安全性需求稽核並強制執行來賓設定。
-1. 為包含受保護資料分類的所有訂用帳戶更新 Azure 原則。
+    2. 僅稽核並強制使用已核准的 OS 映像。
+    3. 根據每個節點的安全性需求稽核並強制執行來賓設定。
+5. 為包含受保護資料分類的所有訂用帳戶更新 Azure 原則。
     1. 僅稽核和強制使用標準角色
-    1. 為個別節點上待用的所有儲存體帳戶和檔案，稽核並強制執行加密的應用程式。
-    1. 請審核並強制執行新版本 DMZ 網路安全性群組的應用程式。
-    1. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
-    1. 稽核並強制執行使用者定義的路由表限制。
-1. Azure 藍圖：
+    2. 為個別節點上待用的所有儲存體帳戶和檔案，稽核並強制執行加密的應用程式。
+    3. 請審核並強制執行新版本 DMZ 網路安全性群組的應用程式。
+    4. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。
+    5. 稽核並強制執行使用者定義的路由表限制。
+6. Azure 藍圖：
     1. 建立名為 `protected-data` 的 Azure 藍圖。
-    1. 將 VNet 對等、網路安全性群組和 Azure 資訊安全中心範本新增至藍圖。
-    1. 請確定藍圖中**未**包含上一個反復專案 Active Directory 的範本。 公司 IT 訂用帳戶將提供所有對 Active Directory 的相依性。
-    1. 終止先前反復專案中部署的任何現有 Active Directory Vm。
-    1. 為受保護資料的訂用帳戶新增原則。
-    1. 將藍圖發佈到任何要裝載受保護資料的管理群組。
-    1. 對每個受影響的訂用帳戶及現有藍圖套用新的藍圖。
+    2. 將 VNet 對等、網路安全性群組和 Azure 資訊安全中心範本新增至藍圖。
+    3. 請確定藍圖中**未**包含上一個反復專案 Active Directory 的範本。 公司 IT 訂用帳戶將提供所有對 Active Directory 的相依性。
+    4. 終止先前反復專案中部署的任何現有 Active Directory Vm。
+    5. 為受保護資料的訂用帳戶新增原則。
+    6. 將藍圖發佈到任何將裝載受保護資料的管理群組。
+    7. 對每個受影響的訂用帳戶及現有藍圖套用新的藍圖。
 
 ## <a name="conclusion"></a>結論
 

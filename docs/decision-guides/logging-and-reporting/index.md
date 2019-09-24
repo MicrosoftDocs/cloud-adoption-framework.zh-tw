@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223620"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -69,7 +69,7 @@ ms.locfileid: "71025782"
 
 ### <a name="gateway-aggregation"></a>閘道彙總
 
-對於雲端遙測資料量很大，或現有內部部署監視系統需要先修改記錄資料才能加以處理的案例，可能就需要記錄資料[閘道彙總](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md)服務。
+對於雲端遙測資料量很大，或現有內部部署監視系統需要先修改記錄資料才能加以處理的案例，可能就需要記錄資料[閘道彙總](/azure/architecture/patterns/gateway-aggregation)服務。
 
 閘道服務會部署至您的雲端提供者。 然後將相關應用程式和服務設定為提交遙測資料給閘道，而不是提交給預設的記錄系統。 接著閘道可以處理資料 (彙總、結合或設定資料格式)，然後再將資料提交給您的監視服務以進行擷取及分析。
 

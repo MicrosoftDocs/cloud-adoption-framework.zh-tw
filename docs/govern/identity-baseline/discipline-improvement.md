@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準專業領域改進
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030932"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220479"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -46,7 +46,7 @@ ms.locfileid: "71030932"
 - 定義角色和指派，這些項目將會治理雲端中的身分識別和存取管理。
 - 定義您的內部部署群組，並對應至相對應的雲端型角色。
 - 清查身分識別提供者 (包括自訂應用程式所使用的資料庫驅動身分識別)。
-- 請考量合併或整合身分識別提供者 (有重複項目存在) 的選項，以簡化整體身分識別解決方案。
+- 合併並整合身分識別提供者（重複存在），以簡化整體身分識別解決方案並降低風險。
 - 評估現有身分識別提供者的混合式相容性。
 - 針對非混合式相容的身分識別提供者，評估合併或取代選項。
 
@@ -98,7 +98,7 @@ ms.locfileid: "71030932"
 - 驗證並精簡您的混合式身分[識別策略](../../decision-guides/identity/index.md)。
 - 確定每個應用程式或工作負載在發行之前，都持續與身分識別策略保持一致。
 - 驗證單一登入 (SSO) 和無縫 SSO 對於您的應用程式如預期般運作。
-- 可行時減少或消除替代身分識別存放區的數量。
+- 減少或排除替代身分識別存放區的數目。
 - 審查任何應用程式內或資料庫內身分識別存放區的需求。 落在適當身分識別提供者 (第一方或第三方) 範圍外的身分識別，可以代表應用程式和使用者的風險。
 - 啟用[內部部署同盟應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup)的條件式存取。
 - 跨全域區域在多個中樞 (具有區域之間的同步處理) 中散佈身分識別。
@@ -120,6 +120,7 @@ ms.locfileid: "71030932"
 **潛在的活動：**
 
 - 進行身分識別原則的定期稽核並遵循做法。
+- 確保機密的使用者帳戶（CEO、CFO、VP 等等）一律會啟用多重要素驗證和異常登入偵測。
 - 定期掃描惡意動作項目和資料外洩，特別是與身分識別詐騙相關的項目，例如潛在的系統管理員帳戶接管。
 - 設定監視和報告工具。
 - 請考量更緊密地與安全性和防止詐騙系統整合。

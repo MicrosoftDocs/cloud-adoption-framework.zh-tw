@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何以累加方式提升您的初始雲端治理基礎。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/13/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d4a0338daa65ea4269077f15acee05cd99a5fb10
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7e4c0516e1c52f1fc6ddd8b42485902cb24d58e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026690"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223649"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>改善您的初始雲端治理基礎
 
@@ -28,14 +28,14 @@ ms.locfileid: "71026690"
 > [!IMPORTANT]
 > 資源組織可能會影響此規範性指引的套用方式。 請務必從最符合您在上一個步驟中執行的初始雲端治理基礎的建議開始。
 
-|風險/需求 | 中小型企業 | 大型企業 |
+|風險/需求 | 標準企業 | 複雜企業 |
 |---|---|---|
 |雲端中的敏感性資料|[規範性指引](./guides/standard/security-baseline-improvement.md)|[規範性指引](./guides/complex/security-baseline-improvement.md)|
 |雲端中的任務關鍵性應用程式|[規範性指引](./guides/standard/resource-consistency-improvement.md)|[規範性指引](./guides/complex/resource-consistency-improvement.md)|
 |雲端成本管理|[規範性指引](./guides/standard/cost-management-improvement.md)|[規範性指引](./guides/complex/cost-management-improvement.md)|
 |多重雲端|[規範性指引](./guides/standard/multicloud-improvement.md)|[規範性指引](./guides/complex/multicloud-improvement.md)|
-|複雜/舊版身分識別管理|         |[規範性指引](./guides/complex/identity-baseline-improvement.md)|
-|多層控管|         |[規範性指引](./guides/complex/multiple-layers-of-governance.md)|
+|複雜/舊版身分識別管理|N/A|[規範性指引](./guides/complex/identity-baseline-improvement.md)|
+|多層控管|N/A|[規範性指引](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>後續步驟
 

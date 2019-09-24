@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端安全性基準。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dfb7969d19017c003ef961c18e87b8cb110ccd4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40bcd90d632bedd4e924942ac6efae5034cc0af8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026901"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221776"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>瞭解雲端安全性基準
 

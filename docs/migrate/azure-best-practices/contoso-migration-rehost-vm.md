@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024012"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224114"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>將內部部署應用程式重新裝載至 Azure VM
 
@@ -95,7 +95,7 @@ Contoso 會使用 Azure Migrate 伺服器移轉工具無代理程式方法，將
 
 **服務** | **說明** | **成本**
 --- | --- | ---
-[Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate/)費用和定價。
+[Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -144,7 +144,7 @@ Contoso 會使用 Azure Migrate 伺服器移轉工具無代理程式方法，將
 
 **需要其他協助？**
 
-[深入了解](https://docs.microsoft.com/azure/migrate/)設定 Azure Migrate 伺服器移轉工具。
+[深入了解](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate 伺服器移轉工具。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
 

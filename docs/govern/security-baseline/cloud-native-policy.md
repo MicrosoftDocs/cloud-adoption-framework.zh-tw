@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端原生安全性基準原則
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029167"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222892"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
 [安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 這個專業領域著重在一般安全性主題，包括保護網路、數位資產、資料等等。如[原則審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的**範例原則**：雲端原生、企業和雲端設計原則符合每個專業領域的規範。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
-> Microsoft 並未指揮公司或 IT 原則。 本文旨在協助您準備內部原則檢閱。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 不建議照原狀使用此範例原則。
+> Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審查。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 建議您不要使用此範例原則。
 
 ## <a name="policy-alignment"></a>原則對齊
 
@@ -54,10 +54,10 @@ ms.locfileid: "71029167"
 
 網路控制的雲端原生原則可能包含如下需求：
 
-- 內部部署資源的混合式連線（在技術上可以在 Azure 中執行）可能不允許用於雲端原生原則中。 混合式連線經過證明是必要的，更強固的企業安全性原則範例是更相關的參考。
+- 在雲端原生原則中，可能不允許混合式連線至內部部署資源。 混合式連線經過證明是必要的，更強固的企業安全性原則範例是更相關的參考。
 - 使用者可以使用虛擬網路和網路安全性群組，建立與 Azure 的連線。
-- 原生 Windows Azure 防火牆會藉由限制的連接埠存取，防止主機有惡意網路流量。 這項原則的一個好例子，就是透過 RDP-TCP/UDP 埠3389，將流量直接封鎖（或不啟用）至 VM 的需求。
-- 如 Azure 應用程式閘道 web 應用程式防火牆（WAF）和 Azure DDoS 保護保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應該停用或誤用。
+- 原生 Windows Azure 防火牆會藉由限制的連接埠存取，防止主機有惡意網路流量。 這項原則的一個好例子是，透過 SSH/RDP 直接對 VM 進行封鎖（或不啟用）流量的需求。
+- 如 Azure 應用程式閘道 web 應用程式防火牆（WAF）和 Azure DDoS 保護保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
 
 ### <a name="data-protection"></a>資料保護
 
@@ -65,8 +65,8 @@ ms.locfileid: "71029167"
 
 - 資料加密控制內建於虛擬機器儲存體和 SQL Database 的服務。
 - 由於資料會在雲端與客戶之間移動，可以使用業界標準加密通訊協定加以保護。
-- Azure Key Vault 可讓使用者保護及控制雲端應用程式和服務所使用的密碼編譯金鑰和其他祕密。
-- Azure 資訊保護可協助分類、標記及保護您的應用程式中的敏感性資料。
+- Azure Key Vault 可讓使用者保護及控制雲端應用程式和服務所使用的密碼編譯金鑰、密碼、連接字串和憑證。
+- Azure 資訊保護將有助於分類、標記和保護應用程式內的機密資料。
 
 雖然這些功能內建於 Azure 中，上述各項需要設定，且可能會增加成本。 強烈建議每個雲端原生功能與[資料分類策略](../policy-compliance/data-classification.md)的對齊方式。
 
@@ -78,6 +78,7 @@ ms.locfileid: "71029167"
 - 持續監視和安全性評量，以確保合規性並補救任何弱點。
 - 可簡化調查的互動式工具和內容相關威脅情報。
 - 廣泛的記錄，並與現有的安全性資訊整合。
+- 減少昂貴、非整合、一項安全性解決方案的需求。
 
 ### <a name="extending-cloud-native-policies"></a>擴充雲端原生原則
 
@@ -87,7 +88,9 @@ ms.locfileid: "71029167"
 
 - **保護 Vm。** 安全性應該是每個組織的第一優先項目，若要有效率則需要一些事項。 您必須評估您的安全性狀態、防範安全性威脅，然後偵測並快速回應發生的威脅。
 - **保護 VM 內容。** 設定定期自動備份是保護以免發生使用者錯誤的基本要務。 這樣還不夠，您也必須確定您的備份安全不會受到網路攻擊，而且可以在需要時取用。
-- **監視 Vm 和應用程式。** 此模式包含數個工作，包括深入解析您 VM 的健康情況、了解它們之間的互動，並建立監視應用程式 (由這些 VM 執行) 的方式。 這些工作都是保持應用程式全天候執行不可或缺的項目。
+- **監視應用程式。** 此模式包含數個工作，包括深入解析您 VM 的健康情況、了解它們之間的互動，並建立監視應用程式 (由這些 VM 執行) 的方式。 這些工作都是保持應用程式全天候執行不可或缺的項目。
+- **保護和審核資料存取。** 組織應審查所有資料存取，並利用先進的機器學習功能來呼叫與一般存取模式的偏差。
+- **容錯移轉實務。** 具有低容錯能力的雲端作業必須能夠從網路安全性或平臺事件進行損毀修復和/或復原。 這些程式不一定要記載，但應該每季進行練習。
 
 ## <a name="next-steps"></a>後續步驟
 

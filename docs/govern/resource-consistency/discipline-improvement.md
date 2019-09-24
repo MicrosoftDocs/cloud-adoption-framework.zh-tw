@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性專業領域的改進
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028715"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223018"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -101,7 +101,7 @@ ms.locfileid: "71028715"
 - 判斷您的組織是否要求對業務單位的損益 (P&L) 進行更清楚的財務調整。
 - 對於全球組織，請實作您的 SLA 合規性及主權需求。
 - 對於雲端彙總，請將閘道解決方案部署到雲端提供者。
-- 對於不允許混合式或閘道選項的工具，請使用作業的監視工具將監視緊密結合。
+- 對於不允許混合式或閘道選項的工具，請使用橫跨所有資料中心和雲端的操作監視工具，緊密地進行監視。
 
 ## <a name="operate-and-post-implementation"></a>操作和實作後
 

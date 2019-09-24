@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021921"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224212"
 ---
 # <a name="storage-design-decisions"></a>儲存體設計決策
 
@@ -39,7 +39,7 @@ ms.locfileid: "71021921"
 - **您需要支援巨量資料分析工作負載嗎？** [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 建置於 Azure Blob 儲存體之上。 Data Lake Storage Gen 2 可以支援大型企業 Data Lake 功能。 它也可以處理儲存數 PB 的資訊，同時維持數百 GB 的輸送量。
 - **您是否需要提供雲端原生檔案共用？** Azure 有兩個主要服務，可提供裝載於雲端的檔案共用：Azure NetApp Files 和 Azure 檔案儲存體。 [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) 提供適用於一般企業工作負載 (例如 SAP) 的高效能 NFS 共用。 [Azure 檔案儲存體](https://docs.microsoft.com/azure/storage/files/storage-files-introduction)提供可透過 SMB 3.0 和 HTTPS 存取的檔案共用。
 - **您是否需要支援適用於內部部署高效能運算 (HPC) 工作負載的混合式雲端儲存體？** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) 是一種混合式快取解決方案，可讓您使用雲端式儲存體來擴充內部部署儲存體功能。 針對包含 1000 到 40000 CPU 核心計算伺服器陣列的大量讀取 HPC 工作負載，Avere vFXT for Azure 已最佳化。 Avere vFXT for Azure 可以與內部部署硬體網路連接儲存裝置 (NAS)、Azure Blob 儲存體或兩者整合。
-- **您需要執行大規模的封存，並將您的內部部署資料同步處理至雲端嗎？** [Azure 資料箱](https://docs.microsoft.com/azure/databox-family/)產品的設計，是為了協助您將大量資料從內部部署環境移至雲端。 [Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview)是位於內部部署環境的虛擬裝置。 資料箱閘道可協助您管理前往雲端的大規模資料移轉。 如果您需要在將資料移至雲端之前進行分析、轉換或篩選，您可以使用 [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview)，這是部署至內部部署環境的已啟用 AI 實體邊緣計算裝置。 Data Box Edge 加速處理，並將資料安全傳輸至 Azure。
+- **您需要執行大規模的封存，並將您的內部部署資料同步處理至雲端嗎？** [Azure 資料箱](https://docs.microsoft.com/azure/databox-family)產品的設計，是為了協助您將大量資料從內部部署環境移至雲端。 [Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview)是位於內部部署環境的虛擬裝置。 資料箱閘道可協助您管理前往雲端的大規模資料移轉。 如果您需要在將資料移至雲端之前進行分析、轉換或篩選，您可以使用 [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview)，這是部署至內部部署環境的已啟用 AI 實體邊緣計算裝置。 Data Box Edge 加速處理，並將資料安全傳輸至 Azure。
 - **您要將現有的內部部署檔案共用擴充為使用雲端儲存空間嗎？** [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide)可讓您使用 Azure 檔案儲存體服務，作為裝載於內部部署 Windows Server 電腦上檔案共用的延伸模組。 同步處理服務會將 Windows Server 轉換成 Azure 檔案共用的快速快取。 它可讓您存取共用的內部部署電腦使用 Windows Server 上可用的任何通訊協定。
 
 ## <a name="common-storage-scenarios"></a>常見的儲存體案例

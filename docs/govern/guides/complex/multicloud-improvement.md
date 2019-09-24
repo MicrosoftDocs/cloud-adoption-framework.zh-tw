@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 大型企業指南：多重雲端改進
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027308"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220606"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>大型企業指南：多重雲端改進
 
 ## <a name="advancing-the-narrative"></a>推進敘述
 
-Microsoft 意識到客戶會基於特定用途來採用多個雲端。 本指南中的虛構公司不會發生任何例外狀況。 與 Azure 採用旅程圖並用，該企業成功收購了一家小型但互補的企業。 該企業正在不同的雲端提供者上執行其所有 IT 作業。
+Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指南中的虛構公司不會發生任何例外狀況。 透過其 Azure 採用旅程，企業成功導致小型但互補的企業。 該企業正在不同的雲端提供者上執行其所有 IT 作業。
 
 本文將說明整合新組織時所產生的變化。 基於敘述的目的，我們假設此公司已完成此治理指南中所述的每項治理反覆運算。
 
@@ -64,23 +64,23 @@ Microsoft 意識到客戶會基於特定用途來採用多個雲端。 本指南
 
 1. 網路連線。 由治理支援的網路和 IT 安全性所執行。
     1. 將來自 MPLS 或租用行提供者的連接新增至新的雲端，將會整合網路。 新增路由表和防火牆設定，將控制環境之間的存取與流量。
-1. 合併識別提供者。 根據次要雲端中所裝載的工作負載而定，有各種不同選項可用於合併識別提供者。 以下是一些範例：
+2. 合併識別提供者。 根據次要雲端中所裝載的工作負載而定，有各種不同選項可用於合併識別提供者。 以下是一些範例：
     1. 對於使用 OAuth 2 進行驗證的應用程式，可能只會將次要雲端上 Active Directory 中的使用者複製寫到現有的 Azure AD 租用戶。
-    1. 另一方面，這兩個內部部署識別提供者之間的同盟，可讓使用者從新的 Active Directory 網域複寫到 Azure。
-1. 將資產新增至 Azure Site Recovery。
+    2. 另一方面，這兩個內部部署識別提供者之間的同盟，可讓使用者從新的 Active Directory 網域複寫到 Azure。
+3. 將資產新增至 Azure Site Recovery。
     1. Azure Site Recovery 是從一開始就建立成混合式和多重雲端工具。
-    1. 次要雲端中的虛擬機器可能會受到用來保護內部部署資產的相同 Azure Site Recovery 流程所保護。
-1. 將資產新增至 Azure 成本管理。
+    2. 次要雲端中的虛擬機器可能會受到用來保護內部部署資產的相同 Azure Site Recovery 流程所保護。
+4. 將資產新增至 Azure 成本管理。
     1. Azure 成本管理從一開始就建立為多重雲端工具。
-    1. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理相容。 可能需要額外成本。
-1. 將資產新增至 Azure 監視器。
+    2. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理相容。 可能需要額外成本。
+5. 將資產新增至 Azure 監視器。
     1. 一開始已從混合式雲端工具建置 Azure 監視器。
-    1. 次要雲端中的虛擬機器可能會與 Azure 監視器代理程式相容，能夠將它們包含於 Azure 監視器以進行操作監控。
-1. 治理強制工具。
+    2. 次要雲端中的虛擬機器可能會與 Azure 監視器代理程式相容，能夠將它們包含於 Azure 監視器以進行操作監控。
+6. 治理強制工具。
     1. 加強治理為雲端特有。
-    1. 治理指南中所建立的公司原則不是雲端特有的。 儘管實作可能因雲端而異，但原則聲明還是能夠套用到次要提供者。
+    2. 治理指南中所建立的公司原則不是雲端特有的。 儘管實作可能因雲端而異，但原則聲明還是能夠套用到次要提供者。
 
-隨著多重雲端的採用成長，上述治理設計將持續成熟。
+根據技術需求或特定商務需求，應將多雲端採用包含在需要的位置。 隨著多重雲端採用的成長，將會造成複雜性和安全性風險。
 
 ## <a name="next-steps"></a>後續步驟
 

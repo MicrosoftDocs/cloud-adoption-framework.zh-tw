@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025027"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221446"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
 
@@ -242,8 +242,8 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 6. 在 *[專案詳細資料] 中，指定專案名稱以及要在其中建立專案的地理位置。 支援的地區有美國、亞洲、歐洲、澳大利亞、英國、加拿大、印度和日本。
 
-    * 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
-    * 當您執行移轉時，可以選取任何目的地區域。
+    - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
+    - 當您執行移轉時，可以選取任何目的地區域。
 
 7. 按一下 [下一步]。
 
@@ -312,14 +312,13 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
     ![Azure Migrate 收集器 - 確認必要條件](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. 登入 **Azure** 帳戶，然後選取您稍早建立的訂用帳戶和 Azure Migrate 專案。 並請輸入**設備**的名稱，如此您便可以在 Azure 入口網站中加以識別。 
-7. 在 [指定 vCenter Server 詳細資料] 中，Contoso 會輸入 vCenter Server 執行個體的名稱 (FQDN) 或 IP 位址，以及用於探索的唯讀認證。
-8. Contoso 會選取 VM 探索的範圍。 收集器只能探索指定範圍內的虛擬機器。 範圍可以設定為特定資料夾、資料中心或叢集。 
+5. 登入 **Azure** 帳戶，然後選取您稍早建立的訂用帳戶和 Azure Migrate 專案。 也請輸入**設備**的名稱，以便您可以在 Azure 入口網站中識別。
+6. 在 [指定 vCenter Server 詳細資料] 中，Contoso 會輸入 vCenter Server 執行個體的名稱 (FQDN) 或 IP 位址，以及用於探索的唯讀認證。
+7. Contoso 會選取 VM 探索的範圍。 收集器只能探索指定範圍內的虛擬機器。 範圍可以設定為特定資料夾、資料中心或叢集。
 
     ![指定 vCenter Server 詳細資料](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. 收集器現在會開始探索並收集與 Contoso 環境相關的資訊。 
+8. 收集器現在會開始探索並收集與 Contoso 環境相關的資訊。
 
     ![檢視收集進度](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,8 +348,8 @@ Contoso 為了檢視其所要評定 VM 之間的相依性，會在應用程式 V
 
 1. 在 [機器] 中，Contoso 會選取機器。 在 [相依性] 資料行中，Contoso 會選取 [需要安裝]。
 2. 在 [探索機器] 窗格中，Contoso 會：
-    - 下載每部 Windows VM 的 Microsoft Monitoring Agent (MMA) 和 Dependency Agent。
-    - 下載每部 Linux VM 的 MMA 和 Dependency Agent。
+    - 下載每個 Windows VM 的 Microsoft Monitoring Agent （MMA）和 Microsoft Dependency Agent。
+    - 下載每個 Linux VM 的 MMA 和 Dependency agent。
 3. Contoso 會複製工作區識別碼和金鑰。 Contoso 在安裝 MMA 時，需要工作區識別碼和金鑰。
 
     ![代理程式下載](./media/contoso-migration-assessment/download-agents.png)
@@ -375,10 +374,10 @@ Contoso 會在每部 VM 上執行安裝。
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>在 Windows VM 上安裝 Dependency Agent
 
-1. Contoso 會按兩下所下載的 Dependency Agent。
+1. Contoso 會按兩下所下載的 Dependency agent。
 2. Contoso 會接受授權條款並等候安裝完成。
 
-    ![Dependency Agent 安裝程式 - 安裝中](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Dependency Agent 安裝程式-安裝](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>在 Linux VM 上安裝代理程式
 
@@ -389,9 +388,11 @@ Contoso 會在每部 VM 上執行安裝。
 1. Contoso 會使用下列命令，在每個 VM 上安裝 Python ctypes 程式庫：
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso 必須執行此命令，以 root 身分安裝 MMA 代理程式。 為了變成 root 身分，Contoso 會執行下列命令，然後輸入 root 密碼：
 
     `sudo -i`
+
 3. Contoso 會安裝 MMA：
     - Contoso 會在命令中輸入工作區識別碼和金鑰。
     - 命令是針對 64 位元。
@@ -404,11 +405,11 @@ Contoso 會在每部 VM 上執行安裝。
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>在 Linux VM 上安裝 Dependency Agent
 
-安裝 MMA 之後，Contoso 會在 Linux VM 上安裝 Dependency Agent：
+安裝 MMA 之後，Contoso 會在 Linux Vm 上安裝 Dependency agent：
 
-1. 使用 InstallDependencyAgent-Linux64.bin (具有自我解壓縮二進位檔的殼層指令碼)，即可在 Linux 電腦上安裝 Dependency Agent。 Contoso 會使用 sh 來執行檔案，或對檔案本身新增執行權限。
+1. 相依性代理程式會使用 Installdependencyagent-linux64.bin (（具有自我解壓縮二進位檔的 shell 腳本）安裝在 Linux 電腦上。 Contoso 會使用 sh 來執行檔案，或對檔案本身新增執行權限。
 
-2. Contoso 會以 root 身分安裝 Linux Dependency Agent：
+2. Contoso 會以 root 身分安裝 Linux Dependency agent：
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s

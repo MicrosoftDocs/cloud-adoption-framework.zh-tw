@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028956"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222292"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>安全性基準動機和業務風險
 
@@ -22,7 +22,7 @@ ms.locfileid: "71028956"
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>安全性基準是否相關？
+## <a name="security-baseline-relevancy"></a>安全性基準相關性
 
 安全性是任何 IT 組織的一大考量。 雲端部署面臨許多與裝載於傳統內部部署資料中心的工作負載相同的安全性風險。 不過，公用雲端平台的性質，缺乏對儲存和執行工作負載之實體硬體的直接擁有權，意味著雲端安全性需要其本身的原則和程序。
 

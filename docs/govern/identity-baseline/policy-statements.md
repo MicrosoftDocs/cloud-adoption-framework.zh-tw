@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準範例原則聲明
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027305"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222124"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 
@@ -67,11 +67,11 @@ ms.locfileid: "71027305"
 
 **原則聲明：** 部署需要客戶驗證的任何應用程式時，必須使用適用於內部使用者的主要身分識別提供者核准的身分識別提供者。
 
-**潛在的設計選項：** 在內部與客戶識別提供者之間實作[與 Azure Active Directory 同盟](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)。
+**潛在的設計選項：** 在您的內部和客戶身分識別提供者之間[，使用 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)來執行同盟，或利用[Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>身分識別檢閱
 
-**技術風險：** 當業務隨著時間發生變化時，您就需要增加新的雲端部署或其他安全性考量，而這可能會增加安全資源遭受未經授權存取的風險。
+**技術風險：** 隨著一段時間的業務變更，新增雲端部署或其他安全性考慮可能會增加未經授權存取安全資源的風險。
 
 **原則聲明：** 雲端治理流程必須包括與身分識別管理小組一起進行每季檢閱，以找出雲端資產設定應該避免的惡意執行者或使用模式。
 

@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7db1ed24f23ff9ba931e556356c04b6bb127092a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030468"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224146"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "71030468"
 - **開發/測試:** 從內部部署環境移除開發/測試, 為開發人員提供控制、彈性和自助功能。
 - **簡單應用程式 (少於五個):** 現代化和遷移簡單的應用程式, 以快速取得開發人員和操作體驗。
 - **效能實驗室:** 當您需要在實驗室設定中進行大規模的效能時, 請在短時間內使用雲端快速且符合成本效益地布建這些實驗室。
-- **資料平臺：** 使用可調整的計算來建立 data lake，以進行分析、報告或機器學習服務工作負載。
+- **資料平臺：** 使用傾印/還原方法或資料移轉服務，建立具有可擴充計算的 data lake 來進行分析、報告或機器學習工作負載，以及遷移至受控資料庫。
 
 ## <a name="next-steps"></a>後續步驟
 

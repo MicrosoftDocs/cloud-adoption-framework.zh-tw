@@ -4,20 +4,20 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明 Azure 上的雲端資源治理
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 083b18c0c8c5edc0dc21a198df32e8934929299c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030706"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221855"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-is-cloud-resource-governance"></a>什麼是雲端資源治理？
+# <a name="cloud-resource-governance"></a>雲端資源治理？
 
 在[Azure 如何運作？](../../getting-started/what-is-azure.md)中，您已瞭解 azure 是代表使用者執行虛擬化硬體和軟體的伺服器和網路硬體的集合。 Azure 可讓您的組織應用程式開發和 IT 部門輕鬆地視需要建立、讀取、更新和刪除資源。
 

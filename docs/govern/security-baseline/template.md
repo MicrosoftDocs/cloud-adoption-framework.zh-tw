@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的安全性基準概念。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026698"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222816"
 ---
 # <a name="security-baseline-template"></a>安全性基準範本
 
-實作變更的第一個步驟就是溝通所需變更。 同樣適用於變更治理做法。 以下的一般範本提供記錄和通訊原則聲明的起點，以管理雲端中的安全性相關問題。
+執行變更的第一個步驟是傳達所需的內容。 同樣適用於變更治理做法。 下列範本提供一個起點，說明如何記載和通訊原則聲明，以管理雲端中的安全性相關問題。
 
 做為討論進度，請使用此範本的結構作為模型，以取得定義組織安全性基準原則聲明所需的業務風險、風險承受度、合規性程式和工具。
 

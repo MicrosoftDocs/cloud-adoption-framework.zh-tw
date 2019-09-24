@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性範本
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029168"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221913"
 ---
 # <a name="resource-consistency-template"></a>資源一致性範本
 
-實作變更的第一個步驟就是溝通所需的變更。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以控制雲端中的 IT 作業和管理。
+執行變更的第一個步驟是傳達所需的內容。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以控制雲端中的 IT 作業和管理。
 
 做為討論進度，請使用此範本的結構作為模型，以取得定義組織資源一致性原則聲明所需的業務風險、風險承受度、合規性程式和工具。
 

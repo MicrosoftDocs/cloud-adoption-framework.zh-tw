@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性原則的合規性程序
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030707"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223715"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>資源一致性原則的合規性程序
 
@@ -60,6 +60,7 @@ ms.locfileid: "71030707"
 - **偵測到布建不足資源。** 若偵測到使用超過 80% CPU 或記憶體容量的資源，應該自動相應增加或佈建更多資源，以增加產能。
 - **未標記的資源建立。** 對於任何要建立資源的要求，若沒有必要的中繼標記，都會自動遭到拒絕。
 - **偵測到重大資源中斷。** 所有偵測到的任務關鍵性中斷都會通知 IT 人員。 如果無法立即解決中斷情形，員工將會呈報問題，並通知工作負載擁有者和雲端治理小組。 如果需要原則修訂以防止未來發生事件，雲端治理小組將會追蹤此問題，直到解決和更新指引為止。
+- **設定漂移。** 偵測到不符合所建立基準的資源應該觸發警示，並使用如 Azure 自動化、Chef、Puppet、Ansible 等設定管理工具自動補救。
 
 ## <a name="next-steps"></a>後續步驟
 
