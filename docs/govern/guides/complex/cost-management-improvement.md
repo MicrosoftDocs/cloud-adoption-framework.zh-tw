@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029366"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220178"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
@@ -66,14 +66,14 @@ ms.locfileid: "71029366"
 本文的這一節將會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
 
 1. 在 Azure 企業版入口網站中進行變更，以對加拿大部署的部門系統管理員收費。
-1. 實作 Azure 成本管理。
+2. 實作 Azure 成本管理。
     1. 建立正確層級的存取範圍，以便與訂用帳戶模式和資源群組模式保持一致。 假設與先前文章中定義的治理 MVP 一致，這將需要在高階報告上執行的雲端治理小組進行**註冊帳戶範圍**存取。 治理以外的其他小組 (例如加拿大採購小組) 將需要存取**資源群組範圍**。
-    1. 在 Azure 成本管理中建立預算。
-    1. 檢閱初始建議並採取動作。 建議使用週期性流程來支援報告流程。
-    1. 設定及執行初始和週期性 Azure 成本管理報告。
-1. 更新 Azure 原則。
+    2. 在 Azure 成本管理中建立預算。
+    3. 檢閱初始建議並採取動作。 建議使用週期性流程來支援報告流程。
+    4. 設定及執行初始和週期性 Azure 成本管理報告。
+3. 更新 Azure 原則。
     1. 稽核標記、管理群組、訂用帳戶及資源群組值，以識別任何偏差。
-    1. 建立 SKU 大小選項，以限制對於部署規劃文件中列出之 SKU 的部署。
+    2. 建立 SKU 大小選項，以限制對於部署規劃文件中列出之 SKU 的部署。
 
 ## <a name="conclusion"></a>結論
 

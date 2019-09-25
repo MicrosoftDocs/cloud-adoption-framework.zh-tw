@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024348"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224163"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>部署移轉基礎結構
 
@@ -496,7 +496,7 @@ Azure IaaS 元件位於生產網路中。 每個應用程式層都有其本身�
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>美國中部生產網路中的子網路 (VNET-PROD-CUS)
 
-次要的美國中部區域會有一個與主要美國東部 2 區域中的生產網路相類似的生產網路。
+與主要美國東部2區域中的生產網路平行處理，次要美國中部區域中會有一個生產網路。
 
 **子網路** | **CIDR** | **位址** | **在子網路中**
 --- | --- | --- | ---
