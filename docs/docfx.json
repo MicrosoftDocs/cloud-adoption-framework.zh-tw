@@ -17,13 +17,21 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "src": "_bread",
+        "dest": "bread",
+        "files": [
+          "**/*.yml"
+        ]
       }
     ],
     "resource": [
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -37,13 +45,20 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/azure/cloud-adoption-framework/breadcrumb/toc.json",
+      "breadcrumb_path": "/azure/cloud-adoption-framework/_bread/toc.json",
       "bilingual_type": "hover over",
       "disable_contribution_on_translation_quality": ["MT"],
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cloud-adoption-framework.zh-tw",
-      "feedback_product_url": " https://azure-architecture.uservoice.com/forums/918625-architecture-guidance"   
+      "feedback_product_url": " https://azure-architecture.uservoice.com/forums/918625-architecture-guidance",
+      "ms.service": "cloud-adoption-framework",
+      "brand": "azure",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "architecture-center",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {},
     "template": [],
