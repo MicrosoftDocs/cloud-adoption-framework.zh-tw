@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816392"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224369"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
-任何企業級規模的[雲端採用方案](../plan/index.md)，都會包含不保證在建立新商業邏輯方面進行大量投資的工作負載。 這些工作負載可以透過任意數目的方法移至雲端；原形移轉、原形最佳化或現代化。 其中每一個都會視為移轉。 下列練習將協助建立反覆流程，來評估、移轉、最佳化、保護及管理這些工作負載。
+任何企業級規模的[雲端採用方案](../plan/index.md)，都會包含不保證在建立新商業邏輯方面進行大量投資的工作負載。 這些工作負載可以透過任意數目的方法移至雲端；原形移轉、原形最佳化或現代化。 這些方法各自都是一種移轉。 下列練習將協助建立反覆流程，來評估、移轉、最佳化、保護及管理這些工作負載。
 
 ## <a name="getting-started"></a>開始使用
 
@@ -126,7 +126,7 @@ ms.locfileid: "70816392"
 
 ## <a name="iterative-migration-process"></a>反覆的移轉流程
 
-基本上，移轉至雲端包含四個簡單階段：評估、移轉、最佳化，以及保護和管理。 CAF 這一節教導讀者將流程每個階段的回報發揮到極致，並使這些階段與您的雲端採用方案保持一致。 下圖描述反覆方法中的那些階段：
+基本上，移轉至雲端包含四個簡單階段：評估、移轉、最佳化，以及保護和管理。 雲端採用架構的這一節會教導讀者將流程每個階段的回報發揮到極致，並使這些階段與您的雲端採用方案保持一致。 下圖描述反覆方法中的那些階段：
 
 ![雲端採用架構移轉模型](../_images/operational-transformation-migrate.png)
 

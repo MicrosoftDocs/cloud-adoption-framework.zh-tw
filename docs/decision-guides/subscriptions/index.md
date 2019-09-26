@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 移轉中作為核心服務的雲端平台訂用帳戶。
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023641"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221002"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -67,13 +67,8 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 每個組織將其應用程式分類的方式各有不同，通常會根據特定的應用程式或服務，或是應用程式原型之類的訂用帳戶來分隔訂用帳戶。 此類別通常會設計為支援可能耗用大部分訂用帳戶有限資源的工作負載，或個別的任務關鍵性工作負載，以確保它們不會在這些限制之下與其他工作負載競爭。 可能會證明此模式下之個別訂用帳戶的部分工作負載包括：
 
 - 任務關鍵性工作負載。
-- 使用受保護資料的應用程式。
-- 實驗性應用程式。
+- 屬於貴公司內「已售出貨物成本」(COGS) 一部分的應用程式。 範例：X 公司小工具的每個執行個體都包含會傳送遙測資料的 Azure IoT 模組。 在 COGS 中，這可能需要使用專用訂用帳戶來進行會計/治理工作。
 - 受限於法規需求 (例如 HIPAA 或 FedRAMP) 的應用程式。
-- 批次工作負載。
-- 巨量資料工作負載，例如 Hadoop。
-- 使用像 Kubernetes 此類部署協調器的容器化工作負載。
-- Analytics 工作負載。
 
 ### <a name="functional-pattern"></a>功能模式
 
@@ -97,7 +92,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 - [Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [大型企業中的多層治理](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [多個地理區域](../../migrate/expanded-scope/multiple-regions.md)
+- [多個地理區域](../regions/index.md)
 
 ## <a name="next-steps"></a>後續步驟
 

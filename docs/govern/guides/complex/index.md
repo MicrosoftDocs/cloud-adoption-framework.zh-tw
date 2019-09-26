@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 適用於複雜企業的治理指南
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63b66858c023ff85e1ff6f8adc811540f3034e2d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025750"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220568"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -40,9 +40,10 @@ ms.locfileid: "71025750"
 每個應用程式都應該在管理群組、訂用帳戶，以及資源群組階層的適當區域中部署。 在部署規劃期間，雲端治理小組將在階層中建立必要的節點，使雲端採用小組更具產能。
 
 1. 定義每個營業單位的管理群組，其具有能詳細反映地理位置和環境類型 (例如生產或非生產) 的階層。
-1. 建立各個獨特的營業單位、地理位置、環境和「應用程式分類」組合的訂用帳戶。
-1. 建立適用於每個應用程式的單獨資源群組。
-1. 在此群組階層的每個層級套用[一致的命名法](../../../ready/considerations/naming-and-tagging.md)。
+2. 針對個別業務單位或地理位置的每一個唯一組合，建立生產和非生產訂用帳戶。 在建立多個訂用帳戶時，請務必謹慎。 如需詳細資訊，請參閱[這裡](../../../decision-guides/subscriptions/index.md)。
+3. 在此群組階層的每個層級套用[一致的命名法](../../../ready/considerations/naming-and-tagging.md)。
+4. 在部署資源群組時，應該要考慮其內容的生命週期：一起開發的所有項目要一起管理，並一起淘汰。 如需資源群組最佳做法的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md)。
+5. [區域選取](../../../decision-guides/regions/index.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
 
 ![大型企業資源組織圖](../../../_images/govern/large-enterprise-resource-organization.png)
 

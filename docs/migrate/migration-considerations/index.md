@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024694"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224041"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 

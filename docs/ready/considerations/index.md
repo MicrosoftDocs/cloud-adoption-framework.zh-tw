@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816222"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224247"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
@@ -48,5 +48,5 @@ ms.locfileid: "70816222"
 - **成本需求**。 根據組織採用雲端的動機以及對此環境所做的操作承諾，可能需要針對此登陸區域變更各種成本管理設定。
 - **監視決策**。 根據登陸區域的操作需求，可以部署各種監視工具。 監視決策文章可以協助您判定最適合部署的工具。
 - **使用角色型存取控制**。 Azure [角色型存取控制 (RBAC)](../azure-best-practices/roles.md) 提供更細緻的群組型存取管理，以根據使用者角色組織資源。
-- **原則決策**。 Azure 藍圖範例提供預先建立的合規性藍圖，每個藍圖都有預先定義的原則計劃。 原則決策協助根據您的需求和限制告知如何選出最佳藍圖或原則計畫。
+- **原則決策**。 [Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)提供預先建立的合規性藍圖，每個藍圖都有預先定義的原則計劃。 原則決策協助根據您的需求和限制告知如何選出最佳藍圖或原則計畫。
 - **[建立混合式雲端一致性](../../infrastructure/misc/hybrid-consistency.md)** 。 建立混合式雲端解決方案，以提供您組織雲端創新的優勢，同時保有內部部署管理的許多便利性。

@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的部署加速。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 55dc7554e72f5ca1e2a19a29cf93f8b075b93c9b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025944"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222717"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -71,7 +71,7 @@ ms.locfileid: "71025944"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>業務風險</h3>
+                        <h3>商務風險</h3>
                         <p class="x-hidden-focus">了解通常與部署加速專業領域相關聯的動機與風險。</p>
                     </div>
                 </div>

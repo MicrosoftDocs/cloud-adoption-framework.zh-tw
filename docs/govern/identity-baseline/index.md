@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的身分識別基準
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026080"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222253"
 ---
 # <a name="identity-baseline-discipline-overview"></a>身分識別基準專業領域概觀
 
@@ -26,7 +26,7 @@ ms.locfileid: "71026080"
 
 ＜雲端採用架構＞中的本節將概述開發身分識別基準專業領域作為雲端治理略一部分的方法。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應涉及與負責實作和管理貴組織身分識別管理解決方案的 IT 小組相關成員進行互動與討論。
 
-如果貴組織沒有身分識別基準和安全性方面的內部專業知識，請考慮聘請外部顧問成為此專業領域的一部分。 此外，考慮聘請 [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或其他外部雲端採用專家來討論此專業領域的相關適宜。
+如果貴組織沒有身分識別基準和安全性方面的內部專業知識，請考慮聘請外部顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用合作夥伴來討論此專業領域的相關事宜。
 
 ## <a name="policy-statements"></a>Policy statements
 
@@ -71,7 +71,7 @@ ms.locfileid: "71026080"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>業務風險</h3>
+                        <h3>商務風險</h3>
                         <p class="x-hidden-focus">了解通常與身分識別基準專業領域相關聯的動機與風險。</p>
                     </div>
                 </div>

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222406"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 
@@ -41,8 +41,9 @@ ms.locfileid: "71025779"
 
 1. 每種類型環境 (例如生產、開發和測試) 都有一個管理群組。
 2. 兩個訂用帳戶，一個供生產環境使用，另一個供非生產環境使用。
-3. 這些訂用帳戶中具有套用 RBAC 的相關資源群組。
-4. 應該在此群組階層的每個層級套用[一致的命名法](../../../ready/considerations/naming-and-tagging.md)。
+3. 應該在此群組階層的每個層級套用[一致的命名法](../../../ready/considerations/naming-and-tagging.md)。
+4. 在部署資源群組時，應該要考慮其內容的生命週期：一起開發的所有項目要一起管理，並一起淘汰。 如需資源群組最佳做法的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md)。
+5. [區域選取](../../../decision-guides/regions/index.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
 
 以下是使用中的這種模式的一個範例：
 

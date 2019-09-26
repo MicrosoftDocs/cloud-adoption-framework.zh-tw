@@ -2,19 +2,19 @@
 title: 資源一致性決策指南
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解規劃 Azure 移轉時的資源一致性。
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023774"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221120"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -32,16 +32,22 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 在 Azure 中，[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)是以邏輯方式將訂用帳戶內的資源分組的核心資源組織機制。
 
-資源群組會做為具有一般生命週期或共用管理條件約束 (例如原則或以角色為基礎的存取控制 (RBAC) 要求) 的資源容器。 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 某些動作可套用於資源群組中的所有資源。 例如，刪除資源群組即可移除該群組內的所有資源。 用於建立資源群組的常見模式，通常區分為兩種類別：
+資源群組會做為具有一般生命週期和共用管理條件約束 (例如原則或以角色為基礎的存取控制 (RBAC) 要求) 的資源容器。 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 所有控制平面動作都會對資源群組中的所有資源採取行動。 例如，刪除資源群組也會刪除該群組內的所有資源。 資源群組管理的慣用模式是考慮：
 
-- **傳統 IT 工作負載：** 最常見的分組方式為依照相同生命週期內的項目分組，例如應用程式。 依照應用程式分組，即可進行個別應用程式管理。
-- **敏捷式 IT 工作負載：** 著重於外部客戶面向的雲端應用程式。 資源群組通常會反映出部署 (例如 Web 層或應用程式層) 和管理的功能層次。
+1. 資源群組的內容是否一起開發？
+1. 資源群組的內容是否由相同的人員或小組一起管理、更新和監視？
+1. 資源群組的內容是否一起淘汰？
+
+如果您對上述任一點回答了「否」  ，則應該將有問題的資源放在另一個資源群組中的其他位置。
+
+> [!IMPORTANT]
+> 資源群組也是區域專屬的項目，不過，資源常常會在相同資源群組內的不同區域中，因為其會以如上所述方式一起接受管理。 如需區域選取的詳細資訊，請參閱[這裡](../regions/index.md)。
 
 ## <a name="deployment-consistency"></a>部署一致性
 
 Azure 平台皆建置在基本的資源分組機制之上，提供的系統可使用範本將資源部署至雲端環境。 您可以在部署工作負載時使用範本建立一致的組織和命名慣例，強制執行您資源部署和管理設計的各個層面。
 
-[Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
+[Azure Resource Manager 範本](/azure/azure-resource-manager/template-deployment-overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
 
 例如，您可以使用標準範本部署，將包含兩個虛擬機器的 Web 伺服器工作負載，部署為結合負載平衡器的 Web 伺服器，以分散伺服器之間的流量。 然後只要需要這類型的工作負載，就可以重複使用此範本建立結構完全相同的虛擬機器與負載平衡器組合，僅需變更涉及的部署名稱和 IP 位址。
 
