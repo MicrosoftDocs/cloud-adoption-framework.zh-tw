@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022760"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224061"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
