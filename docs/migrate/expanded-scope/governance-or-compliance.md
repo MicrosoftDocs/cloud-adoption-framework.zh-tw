@@ -54,7 +54,7 @@ ms.locfileid: "71022740"
 - [成本管理](../../govern/cost-management/template.md)
 - [安全性基準](../../govern/security-baseline/template.md)
 - [資源一致性]。/../govern/resource-consistency/template.md)
-- [身分識別基準].。/../govern/identity-baseline/template.md)
+- [身分識別基準]../../govern/identity-baseline/template.md)
 - [部署加速](../../govern/deployment-acceleration/template.md)
 
 如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。
