@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022828"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224396"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
@@ -75,7 +75,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 若要使用相依性視覺效果，您需要在待分析的每個內部部署機器上，下載及安裝代理程式。
 
 - 必須在每個機器上安裝 [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)。
-- 必須在每個機器上安裝[相依性代理程式](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
+- 必須在每部機器上安裝 [Microsoft 相依性代理程式](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
 - 此外，如果您有無法連線至網際網路的機器，則必須在該機器上下載並安裝 Log Analytics 閘道。
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 - [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[案例和專案關係人](#tab/Scenarios)
 

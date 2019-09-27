@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224065"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
@@ -196,6 +196,14 @@ Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動
 
 - [資料庫測試助理概觀](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Cosmos DB 資料移轉工具
+
+Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cosmos DB 集合和資料表。 您可以從 JSON 檔案、CSV 檔案、SQL、MongoDB、Azure 資料表儲存體、Amazon DynamoDB 及 Azure Cosmos DB SQL API 集合匯入資料。 針對 SQL API 從單一分割區集合移轉到多重分割區集合時，也可以使用資料移轉工具。
+
+如需詳細資訊，請參閱
+
+- [Cosmos DB 資料移轉工具](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[第三方移轉工具](#tab/third-party-tools)
 
 有數個第三方移轉工具和 ISV 服務可協助您進行移轉程序。 每項工具各有不同的優點和功能。 這些工具包括：
@@ -224,16 +232,28 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 [深入了解](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Cosmos DB 合作夥伴
+
+您可從各式各樣資深的系統整合者合作夥伴和工具中選擇，以針對 NoSQL 資料庫需求支援 Azure Cosmos DB 移轉。
+
+[深入了解](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 請造訪 [Azure 移轉中心](https://azure.microsoft.com/migration/support)，查看有哪些組織提供現成可用的合作夥伴技術解決方案以因應您的移轉案例，並深入了解其他第三方移轉工具和支援服務。
+
+造訪 [Azure Database 移轉指南](https://datamigration.microsoft.com)，了解原生和合作夥伴的一系列資料庫移轉選項及逐步指引。
 
 # <a name="project-management-toolstabproject-management-tools"></a>[專案管理工具](#tab/project-management-tools)
 
-不受追蹤和管理的專案較可能會發生問題。 為確保能有成功的結果，我們認為您必須使用專案管理工具。 目前有許多不同的工具可供使用，而您組織中的專案管理人員可能已有偏好的工具。 Microsoft 提供下列專案管理工具，可搭配使用以提供更廣泛的功能：
+不受追蹤和管理的專案較可能會發生問題。 為確保能有成功的結果，我們認為您必須使用專案管理工具。 目前有許多不同的工具可供使用，而您組織中的專案管理人員可能已有偏好的工具。
+
+Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用[這些指示](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template)部署範本。 您可以修改範本以反映要遷移的[工作負載](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads)和[資產](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets)。
+
+Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更廣泛的功能：
 
 - [Microsoft Planner](https://tasks.office.com)：以簡單的視覺化方式組織團隊合作。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software)：專案組合管理、資源容量管理、財務管理、時程表和排程管理。
 - [Microsoft Teams](https://products.office.com/microsoft-teams)：小組共同作業與通訊工具。 Teams 也整合了 Planner 和其他工具來改善共同作業。
-- [Azure DevOps](https://dev.azure.com)：您可以使用 Azure DevOps 以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
+- [Azure DevOps](https://dev.azure.com)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
 
 這些工具並非唯一可用的工具。 另有許多第三方工具也廣泛用於專案管理社群中。
 
