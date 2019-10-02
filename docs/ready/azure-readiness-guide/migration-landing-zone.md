@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何在 Azure 中部署移轉登陸區域。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223934"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811113"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -75,7 +75,7 @@ ms.locfileid: "71223934"
 
 深入瞭解並下載雲端採用架構的參考範例遷移登陸區域藍圖，以從[Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)進行部署或自訂。
 
-您也可以在入口網站中取得藍圖範例。 如需如何部署藍圖的詳細資訊，請參閱 [Azure 藍圖](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint)。
+您也可以在入口網站中取得藍圖範例。 如需如何建立藍圖的詳細資訊，請參閱[Azure 藍圖](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint)。
 
 如需在此藍圖或所產生的登陸區域上應進行的自訂指引，請參閱[登陸區域考量](../considerations/index.md)文章。
 

@@ -12,6 +12,10 @@
         - name: 規劃
           tocHref: /azure/cloud-adoption-framework/plan/
           topicHref: /azure/cloud-adoption-framework/plan
+          items:
+            - name: 數位資產
+              tocHref: /azure/cloud-adoption-framework/digital-estate/
+              topicHref: /azure/cloud-adoption-framework/digital-estate
         - name: 就緒
           tocHref: /azure/cloud-adoption-framework/ready/
           topicHref: /azure/cloud-adoption-framework/ready
@@ -36,3 +40,10 @@
             - name: 管理
               tocHref: /azure/cloud-adoption-framework/manage/
               topicHref: /azure/cloud-adoption-framework/manage
+        - name: 參考
+          tocHref: /azure/cloud-adoption-framework/reference/
+          topicHref: /azure/cloud-adoption-framework/reference
+          items:
+            - name: 決策指南
+              tocHref: /azure/cloud-adoption-framework/decision-guides/
+              topicHref: /azure/cloud-adoption-framework/decision-guides
