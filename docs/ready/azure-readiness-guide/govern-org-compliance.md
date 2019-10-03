@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何設定 Azure 環境的控管、安全性和合規性。
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224282"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804473"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
-在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](http://aka.ms/caf/gov/assess)來找出貴組織的雲端治理方法中可能出現的差距。 如需如何開發治理程序的詳細資訊，請參閱[適用於 Azure 的雲端採用架構治理指引](../../govern/index.md)。
+在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](https://cafbaseline.com)來找出貴組織的雲端治理方法中可能出現的差距。 如需如何開發治理程序的詳細資訊，請參閱[適用於 Azure 的雲端採用架構治理指引](../../govern/index.md)。
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
 
@@ -77,8 +77,8 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-1. 前往[藍圖 - 藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
-1. 選取您在先前步驟中建立的藍圖。
+1. 移至[藍圖 - 藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
+1. 選取您在先前步驟中建立的藍圖定義。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]  。
 1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]  。
 
@@ -165,6 +165,7 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>動作
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::

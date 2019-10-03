@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: 建立操作適用性檢閱
               href: manage/operational-fitness-review.md
+            - name: 集中化管理作業
+              href: manage/centralize-operations.md
     - name: 參考
       items:
         - name: 雲端採用架構藍圖
