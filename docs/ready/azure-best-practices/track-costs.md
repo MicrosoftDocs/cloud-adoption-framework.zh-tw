@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022173"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967743"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -40,7 +40,7 @@ ms.locfileid: "71022173"
 
 ### <a name="resource-organization"></a>資源組織
 
-有數種方法可以組織資產。 本節概述的最佳做法，是以大型企業的需求為基礎，並將成本結構散佈在不同的營業單位、地理位置和 IT 組織。 [中小型企業治理旅程圖](../../govern/guides/standard/index.md)中提供較小、較不複雜組織的類似最佳做法。
+有數種方法可以組織資產。 本節概述的最佳做法，是以大型企業的需求為基礎，並將成本結構散佈在不同的營業單位、地理位置和 IT 組織。 [標準的企業治理指南](../../govern/guides/standard/index.md)中提供較小、較不復雜的組織的類似最佳作法。
 
 針對大型企業，下列管理群組、訂用帳戶和資源群組的模型會建立一個階層，讓每個小組都能擁有正確的可見度層級來執行其職責。 當企業需要成本控制來避免預算溢出時，它可以將 Azure 藍圖或 Azure 原則這類治理工具套用到此結構內的訂用帳戶，以快速封鎖未來的成本錯誤。
 

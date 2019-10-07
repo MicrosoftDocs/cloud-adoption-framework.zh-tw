@@ -1,7 +1,7 @@
 ---
-title: 標準 Enterprise 指南：治理策略背後的初始公司原則
+title: 標準企業治理指南：治理策略背後的初始公司原則
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準 Enterprise 指南：治理策略背後的初始公司原則
+description: 標準企業治理指南：治理策略背後的初始公司原則
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223655"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967541"
 ---
-# <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準 Enterprise 指南：治理策略背後的初始公司原則
+# <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的初始公司原則
 
 下列公司原則會定義初始治理位置，這是本指南的起點。 本文定義初期風險、初始原則聲明，以及強制執行原則聲明的初期流程。
 

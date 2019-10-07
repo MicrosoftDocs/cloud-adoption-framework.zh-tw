@@ -1,7 +1,7 @@
 ---
-title: 標準 Enterprise 指南：改善資源一致性
+title: 標準企業治理指南：改善資源一致性
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準 Enterprise 指南：改善資源一致性
+description: 標準企業治理指南：改善資源一致性
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222231"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967457"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>標準 Enterprise 指南：改善資源一致性
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準企業治理指南：改善資源一致性
 
 本文會藉由新增資源一致性控制項來支援任務關鍵性應用程式，藉此提升敘述。
 

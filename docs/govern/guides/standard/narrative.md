@@ -1,5 +1,5 @@
 ---
-title: 標準 Enterprise 指南：治理策略背後的敘述
+title: 標準企業治理指南：治理策略背後的敘述
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 這段敘述在標準企業的雲端採用旅程期間，會建立治理的使用案例。
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028523"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967462"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>標準 Enterprise 指南：治理策略背後的敘述
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
 下列敘述描述在[標準企業的雲端採用旅程](./index.md)期間的治理使用案例。 在執行旅程之前，請務必瞭解此敘述中反映的假設和原理。 然後您可以讓治理策略與貴組織的旅程更一致。
 
@@ -52,7 +52,7 @@ ms.locfileid: "71028523"
 - CIO 正在審查個人資料和財務資料的原則，以允許未來的州目標。
 - 應用程式開發和 BI 團隊希望在未來的 24 個月內，根據客戶業務開發和新產品的願景，將雲端式解決方案發佈到生產環境中。
 - 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 預計這將在未來五年內節省約 2500 萬美元的成本。
-    ![內部部署成本與 Azure 成本，示範未來五年的美元傳回 $ 25M 美元](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    @no__t 0On-內部部署成本與 Azure 成本相比，示範在未來五年來的 $ 25M USD 傳回 @ no__t-1
 - 公司打算改變 it 投資的方式，因為它會將已認可的資本支出重新置放為營運費用。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 
 ## <a name="next-steps"></a>後續步驟

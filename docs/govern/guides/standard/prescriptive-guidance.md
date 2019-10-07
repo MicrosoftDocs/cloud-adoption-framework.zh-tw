@@ -1,5 +1,5 @@
 ---
-title: 標準 Enterprise 指南：說明的規範性指導方針
+title: 標準企業治理指南：說明的規範性指導方針
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解標準企業治理的規範性指導方針。
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223824"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967499"
 ---
-# <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>標準 Enterprise 指南：說明的規範性指導方針
+# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>標準企業治理指南：說明的規範性指導方針
 
 治理指南會從一組初始的[公司原則](./initial-corporate-policy.md)開始。 這些原則是用來建立可反映[建議做法](./index.md)的治理 MVP。
 

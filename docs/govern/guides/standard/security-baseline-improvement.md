@@ -1,7 +1,7 @@
 ---
-title: 標準 Enterprise 指南：改善安全性基準專業領域
+title: 標準企業治理指南：改善安全性基準專業領域
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準 Enterprise 指南：改善安全性基準專業領域
+description: 標準企業治理指南：改善安全性基準專業領域
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223777"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967334"
 ---
-# <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>標準 Enterprise 指南：改善安全性基準專業領域
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
 本文會藉由新增支援將受保護的資料移至雲端的安全性控制項來推進敘述。
 

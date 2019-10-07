@@ -1,7 +1,7 @@
 ---
-title: 標準 Enterprise 指南：改善成本管理專業領域
+title: 標準 enterprise 指南：改善成本管理專業領域
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準 Enterprise 指南：改善成本管理專業領域
+description: 標準 enterprise 指南：改善成本管理專業領域
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5cbf9a6cdb3776e763fc27492ad499679b4d1327
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028723"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967582"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 Enterprise 指南：改善成本管理專業領域
+# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 enterprise 指南：改善成本管理專業領域
 
 本文藉由將成本控制新增至治理 MVP 來推進敘述。
 

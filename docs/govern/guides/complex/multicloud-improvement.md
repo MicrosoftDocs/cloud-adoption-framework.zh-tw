@@ -1,7 +1,7 @@
 ---
 title: 複雜企業的治理指南：多重雲端改進
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 大型企業指南：多重雲端改進
+description: 複雜企業的治理指南：多重雲端改進
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220606"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967659"
 ---
-# <a name="large-enterprise-guide-multicloud-improvement"></a>大型企業指南：多重雲端改進
+# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雜企業的治理指南：多重雲端改進
 
 ## <a name="advancing-the-narrative"></a>推進敘述
 
