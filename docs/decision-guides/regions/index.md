@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224587"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967701"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -110,7 +110,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 當移轉範圍包含多個區域時，雲端採用小組應評估下列整備考量：
 
 - 資料主權可能需要將某些資產在地化，但有許多資產可能不受這些合規性限制所控管。 記錄、報告、網路路由、身分識別和其他核心 IT 服務等項目可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 我們的建議是，雲端採用小組應評估這些服務的共用服務模型，如[具有共用服務的中樞和輪輻拓撲參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)所述
-- 在為類似環境部署多個執行個體時，環境處理站可能會建立一致性、改善治理並加快部署速度。 [大型企業治理旅程](../../govern/guides/complex/index.md)建立了一個方法，其會產生規模橫跨多個區域的環境。
+- 在為類似環境部署多個執行個體時，環境處理站可能會建立一致性、改善治理並加快部署速度。 [複雜企業治理指南](../../govern/guides/complex/index.md)建立了一套方法，會產生規模橫跨多個區域的環境。
 
 該小組一旦熟悉基準方法且整備也可配合之後，就必須考慮幾個資料驅動必要條件：
 

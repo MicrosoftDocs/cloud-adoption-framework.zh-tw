@@ -66,8 +66,6 @@
               href: digital-estate/calculate.md
         - name: 初始組織對齊
           href: plan/initial-org-alignment.md
-        - name: 技能整備程度 - 調整角色、技能和程序
-          href: plan/adapt-roles-skills-processes.md
         - name: 雲端採用方案
           items:
             - name: 簡介
@@ -426,7 +424,7 @@
               items:
                 - name: 概觀
                   href: govern/guides/index.md
-                - name: 中小型企業指南
+                - name: 標準企業治理指南
                   items:
                     - name: 概觀
                       href: govern/guides/standard/index.md
@@ -444,7 +442,7 @@
                       href: govern/guides/standard/cost-management-improvement.md
                     - name: 多重雲端案例
                       href: govern/guides/standard/multicloud-improvement.md
-                - name: 大型企業指南
+                - name: 適用於複雜企業的治理指南
                   items:
                     - name: 概觀
                       href: govern/guides/complex/index.md
@@ -685,8 +683,9 @@
         - name: 雲端採用架構藍圖
           href: reference/roadmap.md
         - name: 決策指南
-          href: decision-guides/index.md
           items:
+            - name: 概觀
+              href: decision-guides/index.md
             - name: 訂用帳戶
               href: decision-guides/subscriptions/index.md
             - name: 身分識別
