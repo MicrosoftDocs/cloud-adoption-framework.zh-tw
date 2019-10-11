@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024814"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967219"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
@@ -71,7 +71,7 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每�
 ## <a name="additional-resources"></a>其他資源
 
 - [使用 Azure Migrate 設定和檢閱評估](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是[成本管理專業領域](../../govern/cost-management/index.md)和[大型企業成本管理改進指南](../../govern/guides/complex/cost-management-improvement.md)的指引。
+- 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，有關[成本管理專業領域](../../govern/cost-management/index.md)與[複雜企業治理指南中的成本管理改進](../../govern/guides/complex/cost-management-improvement.md)的指導方針。
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[在移轉期間和之後估計和最佳化 VM 成本](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時�
 
 ## <a name="additional-resources"></a>其他資源
 
-- 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是[成本管理專業領域](../../govern/cost-management/index.md)和[大型企業增量成本管理改進指南](../../govern/guides/complex/cost-management-improvement.md)的指引。
+- 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，有關[成本管理專業領域](../../govern/cost-management/index.md)與[複雜企業治理指南中的增量成本管理改進](../../govern/guides/complex/cost-management-improvement.md)的指導方針。
 - 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
 - 如需 Azure 成本管理的詳細資訊，請參閱[了解和使用範圍](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)。
 
@@ -142,4 +142,4 @@ Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時�
 
 ## <a name="additional-resources"></a>其他資源
 
-如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是[成本管理專業領域](../../govern/cost-management/index.md)和[大型企業治理增量成本管理改進指南](../../govern/guides/complex/cost-management-improvement.md)的指引。
+如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，有關[成本管理專業領域](../../govern/cost-management/index.md)與[複雜企業治理指南中的增量成本管理改進](../../govern/guides/complex/cost-management-improvement.md)的指導方針。
