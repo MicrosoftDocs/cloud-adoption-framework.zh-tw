@@ -92,24 +92,24 @@
       items:
         - name: 概觀
           href: ready/index.md
-        - name: Azure 移轉整備程度指南
+        - name: Azure 設定指南
           items:
             - name: 開始之前
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: 組織資源
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: 管理存取權
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: 管理成本和帳單
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 規畫治理、安全性及合規性
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: 使用監視及報告
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: 隨時得知 Azure 的最新動態
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: 部署移轉登陸區域
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: 登陸區域考量
           items:
             - name: 概觀
@@ -404,196 +404,196 @@
           items:
             - name: 概觀
               href: innovate/index.md
+    - name: 治理
+      items:
+        - name: 概觀
+          href: govern/index.md
+        - name: 方法
+          href: govern/methodology.md
+        - name: 基準測試
+          href: govern/benchmark.md
+        - name: 初始治理基礎
+          href: govern/initial-foundation.md
+        - name: 治理基礎改進
+          href: govern/foundation-improvements.md
+        - name: 治理指南
+          items:
+            - name: 概觀
+              href: govern/guides/index.md
+            - name: 標準企業治理指南
+              items:
+                - name: 概觀
+                  href: govern/guides/standard/index.md
+                - name: 記述
+                  href: govern/guides/standard/narrative.md
+                - name: 初始公司原則
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: 規範性指引
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: 改善安全性基準專業領域
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: 改善資源一致性專業領域
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: 改善成本管理專業領域
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: 多重雲端案例
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: 適用於複雜企業的治理指南
+              items:
+                - name: 概觀
+                  href: govern/guides/complex/index.md
+                - name: 記述
+                  href: govern/guides/complex/narrative.md
+                - name: 初始公司原則
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: 規範性指引
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: 改善身分識別基準專業領域
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: 改善安全性基準專業領域
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: 改善資源一致性專業領域
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: 改善成本管理專業領域
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: 多重雲端案例
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: 多層控管
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: 治理考量
+          items:
+            - name: 評估公司原則
+              href: govern/corporate-policy.md
+            - name: 雲端就緒的公司原則與合規性
+              items:
+                - name: 讓公司原則達到雲端就緒狀態
+                  href: govern/policy-compliance/index.md
+                - name: 了解商務風險
+                  href: govern/policy-compliance/business-risk.md
+                - name: 評估風險承受度
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: 定義公司原則
+                  href: govern/policy-compliance/policy-definition.md
+                - name: 讓設計與原則保持一致
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: 建立原則遵循流程
+                  href: govern/policy-compliance/processes.md
+                - name: 法規遵循
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: 雲端安全性整備程度
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: 雲端原則檢閱
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: 資料分類
+                  href: govern/policy-compliance/data-classification.md
+        - name: 雲端治理的專業領域
+          href: govern/governance-disciplines.md
+        - name: 實作雲端治理的專業領域
+          items:
+            - name: 成本管理
+              items:
+                - name: 成本管理概觀
+                  href: govern/cost-management/index.md
+                - name: 下載範本
+                  href: govern/cost-management/template.md
+                - name: 了解商務風險
+                  href: govern/cost-management/business-risks.md
+                - name: 風險風險承受度計量和指標
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: 成本管理原則範例
+                  href: govern/cost-management/policy-statements.md
+                - name: 原則合規性流程
+                  href: govern/cost-management/compliance-processes.md
+                - name: 改善成本管理
+                  href: govern/cost-management/discipline-improvement.md
+                - name: 適用於成本管理的 Azure 工具
+                  href: govern/cost-management/toolchain.md
+            - name: 安全性基準
+              items:
+                - name: 安全性基準概觀
+                  href: govern/security-baseline/index.md
+                - name: 下載範本
+                  href: govern/security-baseline/template.md
+                - name: 了解商務風險
+                  href: govern/security-baseline/business-risks.md
+                - name: 風險風險承受度計量和指標
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: 安全性基準原則範例
+                  href: govern/security-baseline/policy-statements.md
+                - name: 原則合規性流程
+                  href: govern/security-baseline/compliance-processes.md
+                - name: 改善安全性基準
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: 雲端原生安全性基準
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: 額外的 Azure 安全性指引
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: 適用於安全性基準的 Azure 工具
+                  href: govern/security-baseline/toolchain.md
+            - name: 身分識別基準
+              items:
+                - name: 身分識別基準概觀
+                  href: govern/identity-baseline/index.md
+                - name: 下載範本
+                  href: govern/identity-baseline/template.md
+                - name: 了解商務風險
+                  href: govern/identity-baseline/business-risks.md
+                - name: 風險風險承受度計量和指標
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: 身分識別基準原則範例
+                  href: govern/identity-baseline/policy-statements.md
+                - name: 原則合規性流程
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: 改善身分識別基準
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: 適用於身分識別基準的 Azure 工具
+                  href: govern/identity-baseline/toolchain.md
+            - name: 資源一致性
+              items:
+                - name: 資源一致性概觀
+                  href: govern/resource-consistency/index.md
+                - name: 下載範本
+                  href: govern/resource-consistency/template.md
+                - name: 了解商務風險
+                  href: govern/resource-consistency/business-risks.md
+                - name: 風險風險承受度計量和指標
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: 資源一致性原則範例
+                  href: govern/resource-consistency/policy-statements.md
+                - name: 原則合規性流程
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: 改善資源一致性
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: 適用於資源一致性的 Azure 工具
+                  href: govern/resource-consistency/toolchain.md
+                - name: 資源存取管理
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: 簡單工作負載的治理設計
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: 多個小組的控管設計
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: 部署加速
+              items:
+                - name: 部署加速概觀
+                  href: govern/deployment-acceleration/index.md
+                - name: 下載範本
+                  href: govern/deployment-acceleration/template.md
+                - name: 了解商務風險
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: 風險風險承受度計量和指標
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: 部署加速原則範例
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: 原則合規性流程
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: 改善部署加速
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: 適用於部署加速的 Azure 工具
+                  href: govern/deployment-acceleration/toolchain.md
     - name: 操作
       items:
         - name: 概觀
           href: operate/index.md
-        - name: 治理
-          items:
-            - name: 概觀
-              href: govern/index.md
-            - name: 方法
-              href: govern/methodology.md
-            - name: 基準測試
-              href: govern/benchmark.md
-            - name: 初始治理基礎
-              href: govern/initial-foundation.md
-            - name: 治理基礎改進
-              href: govern/foundation-improvements.md
-            - name: 治理指南
-              items:
-                - name: 概觀
-                  href: govern/guides/index.md
-                - name: 標準企業治理指南
-                  items:
-                    - name: 概觀
-                      href: govern/guides/standard/index.md
-                    - name: 記述
-                      href: govern/guides/standard/narrative.md
-                    - name: 初始公司原則
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: 規範性指引
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: 改善安全性基準專業領域
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: 改善資源一致性專業領域
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: 改善成本管理專業領域
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: 多重雲端案例
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: 適用於複雜企業的治理指南
-                  items:
-                    - name: 概觀
-                      href: govern/guides/complex/index.md
-                    - name: 記述
-                      href: govern/guides/complex/narrative.md
-                    - name: 初始公司原則
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: 規範性指引
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: 改善身分識別基準專業領域
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: 改善安全性基準專業領域
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: 改善資源一致性專業領域
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: 改善成本管理專業領域
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: 多重雲端案例
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: 多層控管
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: 治理考量
-              items:
-                - name: 評估公司原則
-                  href: govern/corporate-policy.md
-                - name: 雲端就緒的公司原則與合規性
-                  items:
-                    - name: 讓公司原則達到雲端就緒狀態
-                      href: govern/policy-compliance/index.md
-                    - name: 了解商務風險
-                      href: govern/policy-compliance/business-risk.md
-                    - name: 評估風險承受度
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: 定義公司原則
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: 讓設計與原則保持一致
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: 建立原則遵循流程
-                      href: govern/policy-compliance/processes.md
-                    - name: 法規遵循
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: 雲端安全性整備程度
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: 雲端原則檢閱
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: 資料分類
-                      href: govern/policy-compliance/data-classification.md
-                - name: 雲端治理的專業領域
-                  href: govern/governance-disciplines.md
-                - name: 實作雲端治理的專業領域
-                  items:
-                    - name: 成本管理
-                      items:
-                        - name: 成本管理概觀
-                          href: govern/cost-management/index.md
-                        - name: 下載範本
-                          href: govern/cost-management/template.md
-                        - name: 了解商務風險
-                          href: govern/cost-management/business-risks.md
-                        - name: 風險風險承受度計量和指標
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: 成本管理原則範例
-                          href: govern/cost-management/policy-statements.md
-                        - name: 原則合規性流程
-                          href: govern/cost-management/compliance-processes.md
-                        - name: 改善成本管理
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: 適用於成本管理的 Azure 工具
-                          href: govern/cost-management/toolchain.md
-                    - name: 安全性基準
-                      items:
-                        - name: 安全性基準概觀
-                          href: govern/security-baseline/index.md
-                        - name: 下載範本
-                          href: govern/security-baseline/template.md
-                        - name: 了解商務風險
-                          href: govern/security-baseline/business-risks.md
-                        - name: 風險風險承受度計量和指標
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: 安全性基準原則範例
-                          href: govern/security-baseline/policy-statements.md
-                        - name: 原則合規性流程
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: 改善安全性基準
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: 雲端原生安全性基準
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: 額外的 Azure 安全性指引
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: 適用於安全性基準的 Azure 工具
-                          href: govern/security-baseline/toolchain.md
-                    - name: 身分識別基準
-                      items:
-                        - name: 身分識別基準概觀
-                          href: govern/identity-baseline/index.md
-                        - name: 下載範本
-                          href: govern/identity-baseline/template.md
-                        - name: 了解商務風險
-                          href: govern/identity-baseline/business-risks.md
-                        - name: 風險風險承受度計量和指標
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: 身分識別基準原則範例
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: 原則合規性流程
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: 改善身分識別基準
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: 適用於身分識別基準的 Azure 工具
-                          href: govern/identity-baseline/toolchain.md
-                    - name: 資源一致性
-                      items:
-                        - name: 資源一致性概觀
-                          href: govern/resource-consistency/index.md
-                        - name: 下載範本
-                          href: govern/resource-consistency/template.md
-                        - name: 了解商務風險
-                          href: govern/resource-consistency/business-risks.md
-                        - name: 風險風險承受度計量和指標
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: 資源一致性原則範例
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: 原則合規性流程
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: 改善資源一致性
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: 適用於資源一致性的 Azure 工具
-                          href: govern/resource-consistency/toolchain.md
-                        - name: 資源存取管理
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: 簡單工作負載的治理設計
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: 多個小組的控管設計
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: 部署加速
-                      items:
-                        - name: 部署加速概觀
-                          href: govern/deployment-acceleration/index.md
-                        - name: 下載範本
-                          href: govern/deployment-acceleration/template.md
-                        - name: 了解商務風險
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: 風險風險承受度計量和指標
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: 部署加速原則範例
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: 原則合規性流程
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: 改善部署加速
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: 適用於部署加速的 Azure 工具
-                          href: govern/deployment-acceleration/toolchain.md
         - name: 組織
           items:
             - name: 管理組織一致性
@@ -681,7 +681,7 @@
     - name: 參考
       items:
         - name: 雲端採用架構藍圖
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: 決策指南
           items:
             - name: 概觀

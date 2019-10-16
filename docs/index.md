@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024427"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377933"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>適用於 Azure 的 Microsoft 雲端採用架構
 
@@ -159,7 +159,7 @@ ms.locfileid: "71024427"
 - [雲端移轉](./migrate/index.md)
 - [雲端治理](./govern/guides/index.md)
 
-隨著雲端採用架構接近正式運作階段，我們會頻繁地加以擴充。 這些擴充會增加每一節的深度，並新增內容章節。 如需詳細資訊，請參閱[雲端採用架構藍圖](./reference/roadmap.md)。
+隨著雲端採用架構接近正式運作階段，我們會頻繁地加以擴充。 這些擴充會增加每一節的深度，並新增內容章節。 如需詳細資訊，請參閱[雲端採用架構藍圖](./reference/index.md)。
 
 ## <a name="intent"></a>Intent
 
