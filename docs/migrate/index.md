@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224369"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378271"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -57,7 +57,7 @@ ms.locfileid: "71224369"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>移轉您的第一個工作負載</h3>
-請運用 Azure 移轉指南，來引導您移轉第一個工作負載。 這將協助您熟悉調整採用工作所需的工具和方法。
+請運用 Azure 移轉指南，引導您移轉第一個工作負載。 這將協助您熟悉調整採用工作所需的工具和方法。
                         </div>
                     </div>
                 </div>

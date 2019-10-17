@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816154"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378324"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "70816154"
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ ms.locfileid: "70816154"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Azure 移轉整備程度指南</h3>
-檢閱 Azure 移轉整備程度指南，以熟悉您需要用來建立登陸區域的工具和方法。
+                            <h3>Azure 設定指南</h3>
+檢閱 Azure 設定指南，熟悉您需要用來建立登陸區域的工具和方法。
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ ms.locfileid: "70816154"
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ ms.locfileid: "70816154"
 
 ## <a name="next-steps"></a>後續步驟
 
-若要做好採用雲端的準備，請檢閱 [Azure 移轉整備程度指南](./azure-readiness-guide/index.md)。
+若要做好採用雲端的準備，請檢閱 [Azure 設定指南](./azure-setup-guide/index.md)。
 
 > [!div class="nextstepaction"]
-> [Azure 移轉整備程度指南](./azure-readiness-guide/index.md)
+> [Azure 設定指南](./azure-setup-guide/index.md)

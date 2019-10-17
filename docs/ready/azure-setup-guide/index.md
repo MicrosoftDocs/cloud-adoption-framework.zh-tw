@@ -8,14 +8,14 @@ ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC
+ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
+ms.openlocfilehash: ef754732e45b15da29a2471341b234ae02656ce7
 ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378373"
+ms.locfileid: "72378926"
 ---
 # <a name="before-you-start"></a>開始之前
 

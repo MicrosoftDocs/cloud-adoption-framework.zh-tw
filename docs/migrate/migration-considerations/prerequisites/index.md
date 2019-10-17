@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022622"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378402"
 ---
 # <a name="prerequisites-for-migration"></a>移轉的必要條件
 
@@ -60,7 +60,7 @@ ms.locfileid: "71022622"
 - **變更管理整備程度。** 建立並溝通用來追蹤移轉期間之技術性變更的方案。 更多關於本主題的資訊將在 2019 年第 3 季提供。
 - **業務使用者共識。** 建立方案以協助業務使用者社群針對移轉的執行做好準備。 更多關於本主題的資訊將在 2019 年第 3 季提供。
 - **數位資產清查和分析。** 執行對數位資產進行清查及分析所需的工具。 如需詳細資訊，請參閱[數位資產](../../../digital-estate/index.md)的雲端採用架構討論。
-- **雲端整備程度。** 評估目標部署環境以確保其符合前面幾個工作負載候選項目的需求。 請參閱 [Azure 移轉整備程度指南](../../../ready/azure-readiness-guide/index.md)以取得詳細資訊。
+- **雲端整備程度。** 評估目標部署環境以確保其符合前面幾個工作負載候選項目的需求。 請參閱 [Azure 設定指南](../../../ready/azure-setup-guide/index.md)以取得詳細資訊。
 
 本系列中的其餘文章將能協助執行每個作業。
 
