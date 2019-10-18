@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221120"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547877"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -47,7 +47,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 Azure 平台皆建置在基本的資源分組機制之上，提供的系統可使用範本將資源部署至雲端環境。 您可以在部署工作負載時使用範本建立一致的組織和命名慣例，強制執行您資源部署和管理設計的各個層面。
 
-[Azure Resource Manager 範本](/azure/azure-resource-manager/template-deployment-overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
+[Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
 
 例如，您可以使用標準範本部署，將包含兩個虛擬機器的 Web 伺服器工作負載，部署為結合負載平衡器的 Web 伺服器，以分散伺服器之間的流量。 然後只要需要這類型的工作負載，就可以重複使用此範本建立結構完全相同的虛擬機器與負載平衡器組合，僅需變更涉及的部署名稱和 IP 位址。
 
