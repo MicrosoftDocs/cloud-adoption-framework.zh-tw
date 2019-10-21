@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 移轉中作為核心服務的雲端平台訂用帳戶。
 author: alexbuckgit
 ms.author: abuck
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221002"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683508"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
