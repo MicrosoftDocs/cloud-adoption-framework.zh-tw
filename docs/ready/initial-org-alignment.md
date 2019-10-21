@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b15cee23f81027e3b5597079e61fcc7ac0e534e2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021945"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548736"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
@@ -35,7 +35,7 @@ ms.locfileid: "71021945"
 <!--6. Develop processes for operating in the cloud to make solutions more robust in terms of availability, resiliency, and security.
 1. Optimize solutions for performance, scalability, and cost efficiency.-->
 
-## <a name="step-1-create-a-cloud-strategy-team"></a>步驟 1:建立雲端策略小組
+## <a name="step-1-create-a-cloud-strategy-team"></a>步驟1：建立雲端策略小組
 
 您企業數位轉型的第一個步驟是納入跨組織的商務領導人，以建立雲端策略小組 (CST)。 此小組是由財務、IT 基礎結構和應用程式群組的商務領導人所組成。 這些小組可協助雲端分析和測試階段。
 
@@ -49,7 +49,7 @@ ms.locfileid: "71021945"
 
 安全性小組會負責在雲端中設計和實作企業的安全性原則，與治理小組密切合作。 安全性小組擁有內部部署網路安全性界限的延伸，以包括雲端中的虛擬網路。 這可能會採用下列形式：擁有及維護雲端虛擬網路上的輸入和輸出防火牆，以及確保工具和原則防止未經授權的資源部署。
 
-## <a name="step-2-learn-whats-new-in-the-cloud"></a>步驟 2:了解雲端的新功能
+## <a name="step-2-learn-whats-new-in-the-cloud"></a>步驟2：瞭解雲端的新功能
 
 您企業數位轉型的下一個步驟，是要讓雲端策略小組的成員了解雲端技術將如何變更企業執行業務的方式。 這是您的業務、人員和技術變更的準備及規劃。 雲端策略小組的成員務必了解新功能，以及雲端與內部部署之間的差異。
 
@@ -59,17 +59,17 @@ ms.locfileid: "71021945"
 
 如需進階學習，治理小組應檢閱目錄的治理小節中的概念和設計指南。 基礎結構和工作負載各節適合用於了解一般架構和雲端中的工作負載。
 
-## <a name="step-3-identify-gaps-in-business-strategy"></a>步驟 3：找出商務策略的落差
+## <a name="step-3-identify-gaps-in-business-strategy"></a>步驟3：識別商務策略中的間距
 
 下一個步驟是讓雲端策略團隊列舉需要數位轉型解決方案的商務問題。 例如，企業可能會有硬體生命週期結束而需要更換的現有內部部署資料中心。 在另一個範例中，企業可能會遇到新功能和服務上市時間的困難，並可能會落後競爭。 這些間距代表貴企業數位轉型的「目標」。
 
 商務策略中的間距可以分為下列類別：
 
-| Category | 描述 |
+| 類別 | 描述 |
 | --- | --- |
 | 成本管理 | 代表企業技術付款方式的差距。 |
-| 管理 | 代表企業用來保護其資產，避免不當使用而造成成本過度使用、安全性問題或相容性問題的差距。 |
-| 合規性 | 代表企業符合其本身內部處理程序和原則，以及外部法律、規定和標準方式的差距。 |
+| 控管 | 代表企業用來保護其資產，避免不當使用而造成成本過度使用、安全性問題或相容性問題的差距。 |
+| 法規遵循 | 代表企業符合其本身內部處理程序和原則，以及外部法律、規定和標準方式的差距。 |
 | 安全性 | 代表企業保護其技術和資料資產免於外部威脅方式的間距。 |
 | 資料治理 | 代表企業管理其資料，特別是客戶資料方式的差距。 例如，歐盟的一般資料保護規定 (GDPR) 對於保護客戶資料有嚴格的要求，可能需要新的硬體和軟體。 |
 
@@ -87,7 +87,7 @@ ms.locfileid: "71021945"
 
 此程序的輸出是配合商務分類的高階解決方案堆疊排名清單。
 
-## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>步驟 4：對應高階解決方案與商務群組來設計解決方案
+## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>步驟4：將高階解決方案與商務群組對齊以設計解決方案
 
 現在已列舉數位轉型的目標、設定優先順序，且提議高階解決方案；下一個步驟是讓雲端策略小組對齊每個高階解決方案，與每個企業群組中的設計和實作小組。
 
@@ -99,11 +99,11 @@ ms.locfileid: "71021945"
 
 一旦解決方案的設計完成之後，小組會繼續進行每一項設計的實作階段。 每個解決方案設計的實作階段可以使用標準專案管理程序來執行。
 
-## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>步驟 5：調整雲端的現有角色、技術和流程
+## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>步驟5：調整雲端現有的角色、技能和流程
 
 在 IT 產業歷史的每個階段，最重要的產業變更通常會依人員角色中的變更標示。 從大型主機轉換到用戶端/伺服器模型期間，電腦操作員角色會大量消失，並由系統管理員所取代。 當虛擬化的時代來臨時，個人使用實體伺服器的需求將會消失，並取代為虛擬化專業人員的需求。 同樣地，隨著機構轉移至雲端運算，角色很可能會再次變更。 例如，資料中心專家可能取代雲端財務分析師。 即使是在 IT 職稱維持不變的情況下，每日的工作角色已大幅改變。
 
-IT 部門人員可能會對其角色和職位覺得有點焦慮，因為他們了解到支援雲端解決方案需要一組不同的技巧。 但是，探索並了解新雲端技術的敏捷員工不必感到這種恐懼。 它們可以主導採用雲端服務，並協助組織了解並運用相關聯的變更。
+IT 部門人員可能會對其角色和職位覺得有點焦慮，因為他們了解到支援雲端解決方案需要一組不同的技巧。 但是，探索並學習新雲端技術的 agile 員工並不需要擔心。 它們可以主導採用雲端服務，並協助組織了解並運用相關聯的變更。
 
 ### <a name="capturing-concerns"></a>擷取的考量
 

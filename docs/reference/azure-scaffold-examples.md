@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 208bab0093d8add065a8c8f5ad2b92d9ff012fe8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029757"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378051"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>實作 Azure 企業 Scaffold 的範例
 
 > [!NOTE]
-> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式, 請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-readiness-guide/migration-landing-zone.md), 以及 (或)[登陸區域的考慮](../ready/considerations/index.md)。
+> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)，以及（或）[登陸區域的考慮](../ready/considerations/index.md)。
 
 本文提供企業如何實作 [Azure 企業 Scaffold](./azure-scaffold.md) 建議的範例。 它會使用名為 Contoso 的虛構公司來說明常見案例的最佳作法。
 
@@ -45,11 +45,11 @@ Contoso 正在建置原始程式碼管理系統 (BitBucket)，以供世界各地
 
 Dave 會建立一個訂用帳戶，以支援所有業務單位常見的開發人員工具。 Dave 需要針對訂用帳戶和資源群組建立有意義的名稱 (適用於應用程式和網路)。 他會建立下列訂用帳戶和資源群組︰
 
-| 項目 | Name | 描述 |
+| Item | Name | 描述 |
 | --- | --- | --- |
-| 訂閱 |Contoso ETS DeveloperTools Production |支援一般開發人員工具 |
-| 資源群組 |bitbucket-prod-rg |包含應用程式 Web 伺服器和資料庫伺服器 |
-| 資源群組 |corenetworks-prod-rg |包含虛擬網路和站對站閘道連線 |
+| Subscription |Contoso ETS DeveloperTools Production |支援一般開發人員工具 |
+| Resource group |bitbucket-prod-rg |包含應用程式 Web 伺服器和資料庫伺服器 |
+| Resource group |corenetworks-prod-rg |包含虛擬網路和站對站閘道連線 |
 
 ### <a name="role-based-access-control"></a>角色型存取控制
 
@@ -57,14 +57,14 @@ Dave 會建立一個訂用帳戶，以支援所有業務單位常見的開發人
 
 Dave 為訂用帳戶指派下列角色︰
 
-| Role | 指派給 | 描述 |
+| 角色 | 指派對象 | 描述 |
 | --- | --- | --- |
 | [擁有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) |來自 Contoso 內部部署 Active Directory 的受控識別碼 |此識別碼會透過 Contoso 的身分識別管理工具，以即時（JIT）存取來控制，並確保訂用帳戶擁有者存取權受到完整的審核 |
 | [安全性讀取者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader) |安全性和風險管理部門 |此角色可讓使用者查看 Azure 資訊安全中心和資源的狀態 |
 | [網路參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#network-contributor) |網路小組 |此角色可讓 Contoso 的網路小組管理站對站 VPN 和虛擬網路 |
 | *自訂角色* |應用程式擁有者 |Dave 會建立一個角色，以授與修改資源群組內資源的能力。 如需詳細資訊，請參閱[AZURE RBAC 中的自訂角色](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) |
 
-### <a name="policies"></a>policies
+### <a name="policies"></a>原則
 
 Dave 管理訂用帳戶中資源的需求如下︰
 
@@ -74,12 +74,12 @@ Dave 管理訂用帳戶中資源的需求如下︰
 
 他會透過[Azure 原則](https://docs.microsoft.com/azure/azure-policy/azure-policy-introduction)來建立下列原則：
 
-| 欄位 | 效果 | 描述 |
+| 欄位 | 影響 | 描述 |
 | --- | --- | --- |
-| 位置 |稽核 |稽核在任何區域中的資源建立 |
-| 型別 |拒絕 |拒絕建立 G 系列虛擬機器 |
-| tags |拒絕 |需要應用程式擁有者標籤 |
-| tags |拒絕 |需要成本中心標籤 |
+| location |稽核 |稽核在任何區域中的資源建立 |
+| 類型 |deny |拒絕建立 G 系列虛擬機器 |
+| tags |deny |需要應用程式擁有者標籤 |
+| tags |deny |需要成本中心標籤 |
 | tags |附加 |將標籤名稱 **BusinessUnit** 和標籤值 **ETS** 附加至所有資源 |
 
 ### <a name="resource-tags"></a>資源標籤
@@ -91,7 +91,7 @@ Dave 了解他需要有帳單上的特定資訊，才能識別 BitBucket 實作�
 | 標籤名稱 | 標籤值 |
 | --- | --- |
 | ApplicationOwner |管理此應用程式的人員名稱 |
-| 成本中心 |負責支付 Azure 耗用量之群組的成本中心 |
+| CostCenter |負責支付 Azure 耗用量之群組的成本中心 |
 | BusinessUnit |**ETS** (與訂用帳戶相關聯的業務單位) |
 
 ### <a name="core-network"></a>核心網路
@@ -112,7 +112,7 @@ Dave 認為從 Contoso 的公司網路至內部虛擬網路的連線必須受到
 
 他會建立下列[資源鎖定](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)：
 
-| 鎖定類型 | Resource | 描述 |
+| 鎖定類型 | 資源 | 描述 |
 | --- | --- | --- |
 | **CanNotDelete** |內部 vnet |防止使用者刪除虛擬網路或子網路，但不會防止新增子網路 |
 
@@ -136,28 +136,28 @@ Dave 登入 Azure 企業版入口網站，並看到供應鏈部門已經存在�
 
 | 訂用帳戶用途 | Name |
 | --- | --- |
-| 程式開發 |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
-| 生產 |Contoso SupplyChain Operations LoyaltyCard Production |
+| 開發 |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
+| 生產環境 |Contoso SupplyChain Operations LoyaltyCard Production |
 
-### <a name="policies"></a>policies
+### <a name="policies"></a>原則
 
 Dave 和 Alice 一起討論應用程式並認定此應用程式只為北美地區的客戶提供服務。 Alice 和她的小組計劃使用 Azure 的應用程式服務環境和 Azure SQL 來建立應用程式。 它們可能需要在開發期間建立虛擬機器。 Alice 想要確保她的開發人員具有探索和檢查問題所需的資源，而不需透過 ETS 協助。
 
 他們針對**開發訂用帳戶**訂定下列原則︰
 
-| 欄位 | 效果 | 描述 |
+| 欄位 | 影響 | 描述 |
 | --- | --- | --- |
-| 位置 |稽核 |稽核在任何區域中的資源建立 |
+| location |稽核 |稽核在任何區域中的資源建立 |
 
 它們不會限制使用者可以在開發中建立的 SKU 類型，而且不需要任何資源群組或資源的標籤。
 
 他們針對**生產訂用帳戶**訂定下列原則︰
 
-| 欄位 | 效果 | 描述 |
+| 欄位 | 影響 | 描述 |
 | --- | --- | --- |
-| 位置 |拒絕 |拒絕在美國資料中心以外建立任何資源 |
-| tags |拒絕 |需要應用程式擁有者標籤 |
-| tags |拒絕 |需要部門標籤 |
+| location |deny |拒絕在美國資料中心以外建立任何資源 |
+| tags |deny |需要應用程式擁有者標籤 |
+| tags |deny |需要部門標籤 |
 | tags |附加 |將標籤附加至每個表示生產環境的資源群組 |
 
 它們不會限制使用者可以在生產環境中建立的 SKU 類型。
@@ -195,7 +195,7 @@ Dave 和 Alice 協商並決定在環境中的一些重要資源上新增資源�
 
 他們可建立下列鎖定︰
 
-| 鎖定類型 | Resource | 描述 |
+| 鎖定類型 | 資源 | 描述 |
 | --- | --- | --- |
 | **CanNotDelete** |外部 vnet |為了防止人們刪除虛擬網路或子網路。 此鎖定無法防止新增子網路 |
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967318"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547514"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -30,7 +30,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 在此敘述的上一個階段中，公司已經開始透過 CI/CD 管線主動將生產應用程式推送至雲端。
 
-從那時起，某些將會影響治理的事項已經改變：
+從那時起，某些事項已經改變，將會影響治理：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要會由 Azure 監視器與相關的自動化來管理。
@@ -47,7 +47,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 **商務取得成本：** 取得新業務的預估將在五年內獲利。 由於報酬率偏低，因此，董事會希望盡可能地控制收購成本。 這會產生使成本控制和技術整合彼此衝突的風險。
 
-此業務風險可能會延伸出少數技術風險：
+此業務風險會延伸成少數技術風險：
 
 - 雲端遷移可能會產生額外的購置成本。
 - 新環境可能不會受到適當的控管，而可能導致原則違規。
@@ -81,7 +81,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
     1. 加強治理為雲端特有。
     2. 治理指南中所建立的公司原則不是雲端特有的。 儘管實作可能因雲端而異，但原則還是能夠套用到次要提供者。
 
-根據技術需求或特定商務需求，應將多雲端採用包含在需要的位置。 隨著多重雲端採用的成長，將會造成複雜性和安全性風險。
+根據技術需求或特定商務需求，應將多重雲端採用包含在需要的位置。 隨著多重雲端的採用成長，將會造成複雜性和安全性風險。
 
 ## <a name="conclusion"></a>結論
 

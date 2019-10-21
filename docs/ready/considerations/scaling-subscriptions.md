@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025151"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548783"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
 
@@ -45,7 +45,7 @@ ms.locfileid: "71025151"
 
 - 公用雲端區域和主權或政府雲端區域中的訂用帳戶有不同的限制。 這些通常是由環境間不同的資料分類層級所驅動。
 
-- 如果您因為安全性或合規性而完全隔離不同的使用者集合，您可能需要個別的訂用帳戶。 例如，國家政府組織可能需要將訂用帳戶的存取權限制為僅供公民使用。
+- 如果您因為安全性或合規性而完全隔離不同的使用者集合，您可能需要個別的訂用帳戶。 例如，國家政府組織可能需要將訂用帳戶的存取許可權制為僅限公民。
 
 - 不同的訂用帳戶可能會有不同類型的供應項目，每個供應項目都有自己的條款和權益。
 
@@ -65,9 +65,9 @@ ms.locfileid: "71025151"
 
 如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 但如果您有許多訂用帳戶，您應該考慮建立管理群組階層，以簡化您的訂用帳戶及資源管理。
 
-管理群組可讓您有效率地管理組織訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
+管理群組可讓您有效率地管理組織訂閱的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
 
-管理群組會以單一階層的方式排列。 您可以在 Azure Active Directory (Azure AD) 租用戶中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
+管理群組會以單一階層的方式排列。 您會在 Azure Active Directory （Azure AD）租使用者中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 階層中某一層級所套用的任何存取或原則，都會由其底下的層級繼承。 資源擁有者或訂用帳戶擁有者無法改變繼承的原則。 這項限制有助於改善治理方式。
 
@@ -76,7 +76,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 藉由依賴此繼承模型，您可以在階層中安排訂用帳戶，讓每個訂用帳戶都遵循適當的原則和安全性控制項。
 
-![用來組織 Azure 資源的四個範圍層級](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![用來組織 Azure 資源的四個範圍層級](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 根管理群組上的任何存取權或原則指派，都會套用至目錄中的所有資源。 請仔細考慮要在此範圍上定義的項目。 這應該僅包含您必須擁有的指派。
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022604"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378390"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>移轉環境規劃檢查清單 - 在移轉前先驗證環境是否已就緒
 
@@ -35,7 +35,7 @@ ms.locfileid: "71022604"
 
 如果您打算從一開始就讓移轉與雲端控管策略保持一致，您必須套用[雲端治理的五個專業領域](../../../govern/governance-disciplines.md)，以利傳達可讓雲端環境符合整體公司需求的原則、工具鏈和強制執行機制的決策。 請參閱雲端採用架構的[可採取動作的控管設計指南](../../../govern/guides/index.md)，以取得如何使用 Azure 服務來實作此模型的範例。
 
-如果您的初始移轉並未與更廣泛的雲端控管策略緊密保持一致，則仍需要管理組織、存取和基礎結構規劃的一般問題。 請參閱 [Azure整備指南](../../../ready/azure-readiness-guide/index.md)，以利做出這些雲端整備決策。
+如果您的初始移轉並未與更廣泛的雲端控管策略緊密保持一致，則仍需要管理組織、存取和基礎結構規劃的一般問題。 如需這些雲端就緒決策的協助，請參閱[Azure 設定指南](../../../ready/azure-setup-guide/index.md)。
 
 > [!CAUTION]
 > 強烈建議您針對初始工作負載移轉以外的任何移轉制定控管策略。

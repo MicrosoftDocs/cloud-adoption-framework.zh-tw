@@ -1,19 +1,19 @@
 ---
 title: 複寫和同步處理在移轉程序中扮演什麼角色？
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
+description: 雲端移轉內的程序，其著重於將工作負載遷移至雲端的工作。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e65631f0adf2584bbf0ee24b10d20df73ece715
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833410"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549138"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "70833410"
 規劃將任何二進位來源複寫到新的目的地時，在規劃和執行期間必須謹慎考慮幾項基本法則。
 
 - **光速。** 在移動大量資料時，光纖仍是最快速的選項。 可惜的是，這類纜線移動資料的速度只有光速的三分之二。 這表示，沒有任何方法可進行瞬間或無限制的資料複寫。
-- **WAN 管線的速度。** 比資料移動速度更重要的是上行頻寬，此頻寬會定義公司的現有 WAN 每秒可傳輸到目標資料中心的資料量。
+- **WAN 管線的速度。** 高於資料移動速度的衍生性是上行頻寬，其定義每秒可對目標資料中心的公司現有 WAN 執行的資料量。
 - **WAN 擴充的速度。** 如果預算允許，則可以為公司的 WAN 解決方案新增額外的頻寬。 不過，購買、佈建及整合額外的光纖連線，可能需要數週或數個月的時間。
 - **磁碟速度。** 如果資料可以移動得更快，且來源二進位檔與目標目的地之間的頻寬沒有限制，物理性仍將是限制因素。 資料至多只能以從來源磁碟讀取的速度進行複寫。 讀取資料中心的每個 (或零個) 旋轉型磁碟，都需要時間。
 - **人工計算的速度。** 磁碟和光線的移動速度比人工決策程序更快。 當一群人需要共同作業並進行決策時，產生結果的速度會更慢。 複寫無法克服人類智慧的相關延遲。

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e96bfc25f86a4992d0e08f09f64d5e1178a23dad
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1d7c6e39e143ecc74a58fa5364469c46acf9523
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825363"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548296"
 ---
 # <a name="migration-backlog-review"></a>移轉待處理項目檢閱
 

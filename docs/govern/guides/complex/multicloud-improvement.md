@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967659"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547653"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雜企業的治理指南：多重雲端改進
 
@@ -28,7 +28,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 在此敘述的上一個階段中，公司已開始實行成本控制和成本監視，因為雲端支出會成為公司一般營運費用的一部分。
 
-從那時起，某些將會影響治理的事項已經改變：
+從那時起，某些事項已經改變，將會影響治理：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要是由 Azure 監視器和相關的自動化功能來管理。
@@ -45,7 +45,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 **商務取得成本：** 取得新業務的預估將在五年內獲利。 由於報酬率偏低，因此，董事會希望盡可能地控制收購成本。 這會產生使成本控制和技術整合彼此衝突的風險。
 
-此業務風險可能會延伸出少數技術風險：
+此業務風險會延伸成少數技術風險：
 
 - 雲端遷移的風險會產生額外的購置成本。
 - 此外，若新環境未正確治理或導致違反原則，則會產生另一個風險。
@@ -60,7 +60,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量
 
-本文的這一節會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
+本文的這一節會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更會履行新的公司原則聲明。
 
 1. 網路連線。 由治理支援的網路和 IT 安全性所執行。
     1. 將來自 MPLS 或租用行提供者的連接新增至新的雲端，將會整合網路。 新增路由表和防火牆設定，將控制環境之間的存取與流量。
@@ -80,7 +80,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
     1. 加強治理為雲端特有。
     2. 治理指南中所建立的公司原則不是雲端特有的。 儘管實作可能因雲端而異，但原則聲明還是能夠套用到次要提供者。
 
-根據技術需求或特定商務需求，應將多雲端採用包含在需要的位置。 隨著多重雲端採用的成長，將會造成複雜性和安全性風險。
+根據技術需求或特定商務需求，應將多重雲端採用包含在需要的位置。 隨著多重雲端的採用成長，將會造成複雜性和安全性風險。
 
 ## <a name="next-steps"></a>後續步驟
 

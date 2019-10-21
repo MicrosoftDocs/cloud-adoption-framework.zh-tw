@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811113"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548918"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
-「移轉登陸區域」一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。 移轉登陸區域是 Azure 移轉整備程度指南中最後一項交付成果。 本文結合本指南討論的所有整備主題，並會將所做決策套用至您第一個移轉登陸區域的部署。
+「移轉登陸區域」一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。 遷移登陸區域是 Azure 設定指南的最後一項交付成果。 本文結合本指南討論的所有整備主題，並會將所做決策套用至您第一個移轉登陸區域的部署。
 
 下列各節將概述常用來建立移轉期間適用環境的登陸區域。 本文中所述的環境或登陸區域也可在 Azure 藍圖中取得。 您可以使用「雲端採用架構」移轉登陸區域藍圖，只需按一下即可部署已定義的環境。
 
@@ -44,10 +44,10 @@ ms.locfileid: "71811113"
 
 我們定義此初始登陸區域時，已使用下列假設或條件約束。 如果這些假設符合您的條件約束，您可以使用藍圖來建立您的第一個登陸區域。 藍圖也可以加以擴充，以建立符合您特有條件限制的登陸區域藍圖。
 
-- **訂用帳戶限制：** 此採用工作不應超過[訂用帳戶限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
-- **合規性：** 此登陸區域不需要第三方合規性需求。
-- **架構複雜性：** 架構複雜性不需要額外的生產訂用帳戶。
-- **共用服務：** Azure 中沒有任何現有共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
+- **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-subscription-service-limits)用帳戶限制。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
+- **合規性：** 此登陸區域不需要協力廠商合規性需求。
+- **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
+- **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
 
 如果這些假設與您目前的環境一致，則此藍圖可能是開始建立您登陸區域的絕佳位置。
 
@@ -60,16 +60,16 @@ ms.locfileid: "71811113"
 |移轉工具|將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。|[移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)|
 |記錄和監視|將會布建 Operational Insights 工作區和診斷儲存體帳戶。|         |
 |網路|將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。|[網路決策](../considerations/network-decisions.md)|
-|身分識別|假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。|[身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|身分識別|假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。|[身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |原則|此藍圖目前會假設未套用任何 Azure 原則。|         |
 |訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)|
 |管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
 |資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
-|Data|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) |
+|資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-guidance.md)         |
 |命名和標記標準|N/A|[命名和標記最佳做法](../considerations/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|
-|計算|N/A|[計算選項](../considerations/compute-decisions.md)|
+|運算|N/A|[計算選項](../considerations/compute-decisions.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>從此藍圖自訂或部署登陸區域
 

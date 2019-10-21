@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022740"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549225"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -27,21 +27,21 @@ ms.locfileid: "71022740"
 
 在整合治理或合規性需求時，基本 Azure 環境的設定可能會大幅變更。 若要了解必要條件的變更情形，請務必了解需求的本質。 在開始進行任何需要治理或合規性的移轉之前，應該先在雲端環境中選擇並實作方法。 以下是一些在移轉期間經常會看到的高階方法：
 
-**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)方法便已足夠，此方法會包含最簡可行產品 (MVP) 實行，隨後並有治理成熟度的目標反覆項目可供解決採用方案中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
+**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)是一種充分的方法，其中包含最基本的可行產品（MVP）實行，並遵循治理成熟度的目標反復專案來解決有形的風險在採用計畫中識別。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
 
-**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶，[ISO 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)可作為更有效的 MVP 以在反覆性程序中及早產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
+**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
-**虛擬資料中心：** 您可能需要更強固的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
+**虛擬資料中心：** 可能需要更健全的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>可供完成必要條件的合作關係選項
 
-**Microsoft 服務：** Microsoft 服務會提供可配合雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項的解決方案供應項目，以確保有最適當的治理或合規性模型。 請使用[安全雲端深入解析 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) 解決方案供應項目以建立客戶在 Azure 中部署的資料驅動圖，並在識別現有部署架構的最佳化時驗證客戶的 Azure 實作成熟度，以移除治理的安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
+**Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項一致，以確保最適當的治理或合規性模型。 請使用[安全雲端深入解析 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) 解決方案供應項目以建立客戶在 Azure 中部署的資料驅動圖，並在識別現有部署架構的最佳化時驗證客戶的 Azure 實作成熟度，以移除治理的安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
 
-- **雲端基礎：** 使用[混合式雲端基礎 (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) 解決方案供應項目來建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實作包含共用服務和 IaaS 工作負載的最簡可行產品。
-- **雲端現代化：** 請使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應項目作為完整方法，來將應用程式、資料和基礎結構移至符合企業需求的雲端，以及在該雲端中進行一次最佳化和現代化。
-- **使用雲端來創新：** 透過一套創新且獨特[的雲端中心卓越（CCoE）](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)解決方案方法來與客戶互動，以建立現代化的 IT 組織，同時保有 DevOps 的彈性，同時保有控制能力。 實作敏捷方法來擷取業務需求、重複使用可與安全性、合規性和服務管理原則配合的部署套件，並維護可與操作程序配合的 Azure 平台。
+- **雲端基礎：** 使用[混合式雲端基礎（HCF）](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)解決方案供應專案，建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實作包含共用服務和 IaaS 工作負載的最簡可行產品。
+- **雲端現代化：** 使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應專案做為將應用程式、資料和基礎結構移至企業級雲端的完整方法，以及在雲端優化和現代化一次。
+- **使用雲端創新：** 透過一套創新且獨特[的雲端中心卓越（CCoE）](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)解決方案方法來與客戶互動，以建立現代化的 IT 組織，同時保有 DevOps 的彈性，同時保有控制能力。 實作敏捷方法來擷取業務需求、重複使用可與安全性、合規性和服務管理原則配合的部署套件，並維護可與操作程序配合的 Azure 平台。
 
-## <a name="assess-process-changes"></a>評估程序變更
+## <a name="assess-process-changes"></a>評定程序變更
 
 評估期間需要額外的決策以配合所需的治理方法。 雲端治理小組應該先為雲端採用小組的所有成員提供原則聲明、架構指引或治理/合規性需求，再評估工作負載。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71022740"
 - [成本管理](../../govern/cost-management/template.md)
 - [安全性基準](../../govern/security-baseline/template.md)
 - [資源一致性]。/../govern/resource-consistency/template.md)
-- [身分識別基準]../../govern/identity-baseline/template.md)
+- [身分識別基準].。/../govern/identity-baseline/template.md)
 - [部署加速](../../govern/deployment-acceleration/template.md)
 
 如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。

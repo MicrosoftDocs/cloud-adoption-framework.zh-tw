@@ -1,7 +1,7 @@
 ---
-title: 標準企業治理指南：說明的規範性指導方針
+title: 標準企業治理指南：說明的最佳做法
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 瞭解標準企業治理的規範性指導方針。
+description: 瞭解標準企業治理的最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967499"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547475"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>標準企業治理指南：說明的規範性指導方針
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 
-治理指南會從一組初始的[公司原則](./initial-corporate-policy.md)開始。 這些原則是用來建立可反映[建議做法](./index.md)的治理 MVP。
+治理指南會從一組初始的[公司原則](./initial-corporate-policy.md)開始。 這些原則會用來建立治理 MVP，以反映出[最佳做法](./index.md)。
 
 在本文中，我們會討論建立治理 MVP 所需的策略概要。 治理 MVP 的核心在於[部署加速](../../deployment-acceleration/index.md)專業領域。 在此階段套用的工具和模式，將可讓您在未來擴充治理所需的增量改善。
 
@@ -28,7 +28,7 @@ ms.locfileid: "71967499"
 
 為建立起點，本文將針對建立治理 MVP (所有採用的基礎) 所需的身分識別基準、安全性基準和部署加速，討論其背後的策略概要。
 
-![漸進式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
+![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>實作程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "71967499"
 
 這項實作也可以使用簡單的檢查清單來說明：
 
-1. 尋求有關以下核心相依性的決策：身分識別、網路功能、監視和加密。
+1. 關於核心相依性的請求決策：身分識別、網路功能、監視和加密。
 2. 判斷在強制執行公司原則時要使用的模式。
 3. 針對資源一致性、資源標記和記錄和報告專業領域，判斷適當的治理模式。
 4. 實作符合所選原則強制執行模式的治理工具，以套用相依性決策和治理決策。
@@ -61,12 +61,12 @@ ms.locfileid: "71967499"
 
 資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
 
-- 系統會為使用生命週期方法的應用程式建立資源群組：所有建立、維護及淘汰的專案，都應位於單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
+- 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
 - 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
 - Azure 管理群組可在公司原則成熟時更新治理設計。
-- Azure 原則的廣泛實作可能會超出小組的時間承諾，並可能無法在此時提供大量的價值。 不過，應建立簡單的預設原則並套用至每個管理群組，以強制執行少量目前的雲端治理原則陳述。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
+- Azure 原則的廣泛執行可能會超過小組的時間承諾，而且目前可能不會提供很大的價值。 不過，應建立簡單的預設原則並套用至每個管理群組，以強制執行少量目前的雲端治理原則陳述。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
 
 >[!IMPORTANT]
 >每當資源群組中的資源不再共用相同的生命週期時，就應該將它移到另一個資源群組。 範例包括一般資料庫和網路元件。 雖然它們可以服務開發中的應用程式，但它們也可以提供其他用途，因此應該存在於其他資源群組中。
@@ -99,7 +99,7 @@ ms.locfileid: "71967499"
 
 **每月審查和報告：** 雲端治理小組每個月都會執行所有雲端部署的審查，以驗證原則的持續一致。 如果發現偏差，他們就會記下這些偏差，然後將其分享給雲端採用小組。 如果強制作業沒有造成業務中斷或資料流失的風險，就會自動強制執行原則。 在 audit 結束時，雲端治理小組會為雲端策略小組和每個雲端採用小組編譯報告，以溝通整體遵循原則。 報告也會儲存以便用於稽核和法律用途。
 
-**每季原則審查：** 雲端治理小組和雲端策略小組每季都會回顧審查結果，並建議變更公司原則。 這些建議中有許多都是持續改進與觀察使用量模式的結果。 核准的原則變更會在後續的稽核週期內整合至治理工具中。
+**每季原則審查：** 雲端治理小組和雲端策略小組每季都會回顧審查結果，並建議變更公司原則。 這些建議之中，有許多是持續不斷改進的結果以及使用模式的觀察。 核准的原則變更會在後續的稽核週期內整合至治理工具中。
 
 ## <a name="alternative-patterns"></a>替代模式
 

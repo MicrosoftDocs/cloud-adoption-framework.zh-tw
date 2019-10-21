@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028322"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547679"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雜企業的治理指南：治理策略背後的初始公司原則
 
@@ -35,10 +35,10 @@ CIO 最近與 IT 治理小組見面，以瞭解個人資料和任務關鍵性原
 
 目前的風險承受度很高，且投資雲端治理的意願偏低。 因此，承受度指標可當作早期警告系統來觸發時間和精力的投資。 如果觀察到下列指標，最好事先推進治理策略。
 
-- **成本管理：** 部署到雲端的規模超過 1,000 項資產，或每月支出超過每個月 $10,000 美元。
-- **身分識別基準：** 包含具有舊版或協力廠商多重要素驗證需求的應用程式。
-- **安全性基準：** 在定義的雲端採用計劃中納入受保護的資料。
-- **資源一致性：** 在定義的雲端採用計劃中納入任何任務關鍵性應用程式。
+- **成本管理：** 部署的規模超過1000個資產到雲端，或每月支出超過每個月 $10000 美元。
+- 身分**識別基準：** 包含具有舊版或協力廠商多重要素驗證需求的應用程式。
+- **安全性基準：** 在定義的雲端採用方案中納入受保護的資料。
+- **資源一致性：** 在定義的雲端採用計畫中包含任何任務關鍵性應用程式。
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
@@ -47,4 +47,4 @@ CIO 最近與 IT 治理小組見面，以瞭解個人資料和任務關鍵性原
 此公司原則會準備雲端治理小組來實行治理 MVP，這將成為採用的基礎。 下一步是實作此 MVP。
 
 > [!div class="nextstepaction"]
-> [說明的規範性指導方針](./prescriptive-guidance.md)
+> [說明的最佳做法](./prescriptive-guidance.md)

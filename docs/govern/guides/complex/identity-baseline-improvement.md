@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222326"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547724"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -43,7 +43,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 新的未來狀態計劃需要準備更強固的身分識別基準解決方案，以便遷移需要使用舊式驗證的 750 個虛擬機器。 除了這兩個資料中心之外，這項挑戰預期會影響其他資料中心內類似的資產百分比。
 
-未來的狀態現在也需要有從雲端提供者到公司的 MPLS/專線解決方案的連線。
+未來的狀態現在也需要從雲端提供者連接到公司的 MPLS/租用型解決方案。
 
 目前和未來狀態的變更會產生新風險，因此需要新的原則聲明。
 
@@ -53,7 +53,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 **現有的身分識別相依性。** 對現有驗證和身分識別服務的相依性可能會延遲或阻礙將某些工作負載移轉至雲端的工作。 若未能讓這兩個資料中心準時恢復上線，將會產生好幾百萬美元的資料中心租賃費用。
 
-此業務風險可能會延伸出少數技術風險：
+此業務風險會延伸成少數技術風險：
 
 - 舊式驗證可能無法在雲端中使用，而限制了某些應用程式的部署。
 - 目前的協力廠商多重要素驗證解決方案可能無法在雲端中使用，而限制了某些應用程式的部署。
@@ -67,7 +67,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 - 所選擇的雲端提供者必須提供可透過舊式方法進行驗證的途徑。
 - 選擇的雲端提供者必須提供使用目前協力廠商多因素驗證解決方案進行驗證的方法。
-- 應該在雲端提供者與公司的電信提供者之間建立高速的私人連線，以將雲端提供者連線至全球的資料中心網路。
+- 在雲端提供者與公司的電信提供者之間，應建立高速私人連線，將雲端提供者連接到資料中心的全球網路。
 - 在建立好足夠的安全性需求之前，不得讓輸入的公用流量存取裝載在雲端的公司資產。 所有連接埠都要封鎖位於全域 WAN 之外的來源。
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量

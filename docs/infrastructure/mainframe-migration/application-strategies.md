@@ -1,5 +1,5 @@
 ---
-title: 大型主機移轉：大型主機應用程式移轉
+title: 大型主機遷移：大型主機應用程式遷移
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
 author: njray
@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024419"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547953"
 ---
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
@@ -21,15 +21,15 @@ ms.locfileid: "71024419"
 
 應用程式移轉通常涉及下列一或多項策略：
 
-- **重新裝載：** 您可以從大型主機移動現有的程式碼、程式和應用程式，再重新編譯程式碼，使其可在雲端執行個體中裝載的大型主機模擬器中執行。 此外，此方法通常會先將應用程式移至雲端式模擬器，然後再將資料庫移轉至雲端式資料庫。 在轉換資料和檔案時需要一些工程和重構。
+- **重新裝載：** 您可以從大型主機移動現有程式碼、程式和應用程式，然後重新編譯程式碼，以在裝載于雲端實例的大型主機模擬器中執行。 此外，此方法通常會先將應用程式移至雲端式模擬器，然後再將資料庫移轉至雲端式資料庫。 在轉換資料和檔案時需要一些工程和重構。
 
     或者，您可以使用傳統的主機服務提供者來重新裝載。 使用雲端的主要好處之一，是可以將基礎結構管理工作外包。 您可以找到為您裝載大型主機工作負載的資料中心提供者。 此模式可換得時間、避免廠商鎖定，以及節省臨時成本。
 
-- **廢止**所有不再需要的應用程式，均應在移轉前淘汰。
+- **淘汰：** 所有不再需要的應用程式都應該在遷移之前淘汰。
 
-- **重建：** 有些組織會選擇使用新式技術完全重寫程式。 由於這種方法的增加成本和複雜度，並不像「隨即轉移」方法一般。 進行此類型的移轉後，一般通常會使用程式碼轉換引擎開始取代模組和程式碼。
+- **重建：** 有些組織選擇使用現代化技術完全重寫程式。 由於這種方法的增加成本和複雜度，並不像「隨即轉移」方法一般。 進行此類型的移轉後，一般通常會使用程式碼轉換引擎開始取代模組和程式碼。
 
-- **取代：** 此方法會將大型主機功能取代為雲端中的對等功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，目前也已有許多產業特定應用程式，可用來解決先前由自訂大型主機解決方案負責解決的問題。
+- **取代：** 這種方法會將大型主機功能取代為雲端中的對等功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，目前也已有許多產業特定應用程式，可用來解決先前由自訂大型主機解決方案負責解決的問題。
 
 建議您先規劃最初要移轉的工作負載，然後再確認移動相關聯的應用程式、舊版程式碼基底和資料庫的的需求。
 
@@ -63,13 +63,13 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 ![使用模擬軟體將大型主機環境遷移至 Azure 的「隨即轉移」](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-在 Azure 上，模擬環境可用來執行 TP 管理員和使用 JCL 的批次作業。 在資料層中，DB2 會取代為 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)，但也可以使用 Microsoft SQL Server、DB2 LUW 或 Oracle Database。 模擬器支援 IMS、VSAM 和 SEQ。 大型主機的系統管理工具會取代為在 VM 中執行的 Azure 服務和其他廠商提供的軟體。
+在 Azure 上，模擬環境可用來執行 TP 管理員和使用 JCL 的批次作業。 在資料層中，DB2 會取代為 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)，但也可以使用 Microsoft SQL Server、DB2 LUW 或 Oracle Database。 模擬器支援 IMS、VSAM 和 SEQ。 大型主機的系統管理工具會由 Azure 服務，以及其他廠商在 Vm 中執行的軟體所取代。
 
-畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如:
+畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如：
 
-- Windows 型 VM：Internet Information Server (IIS) 以及用於畫面處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
+- 以 Windows 為基礎的 Vm： Internet Information Server （IIS），以及用於螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
 
-- Linux 型 VM：可用的 Java 型應用程式伺服器，例如用於畫面處理和 Java 商務功能的 Apache Tomcat。 針對資料存取和交易，請使用 JDBC。
+- 以 Linux 為基礎的 Vm：可用的 JAVA 應用程式伺服器，例如用於螢幕處理的 Apache Tomcat 和以 JAVA 為基礎的商務功能。 針對資料存取和交易，請使用 JDBC。
 
 ## <a name="migrate-batch-workloads-to-azure"></a>將批次工作負載移轉至 Azure
 
@@ -77,7 +77,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 若要使用 Azure 將批次效能最佳化，請考慮使用[計算](https://docs.microsoft.com/azure/virtual-machines/windows/overview)、[儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)、[網路](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)和[監視](https://docs.microsoft.com/azure/azure-monitor/overview)選項，如下所示。
 
-### <a name="compute"></a>計算
+### <a name="compute"></a>運算
 
 使用︰
 
@@ -109,7 +109,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ## <a name="migrate-development-environments"></a>移轉開發環境
 
-雲端的分散式架構依賴一組不同的開發工具，以提供新式作法和程式設計語言的優勢。 為了簡化這項轉換，您可以將開發環境與其他專為模擬 IBM z/OS 環境而設計的工具搭配使用。 下列清單顯示 Microsoft 和其他廠商提供的選項：
+雲端的分散式架構依賴一組不同的開發工具，以提供現代化實務和程式設計語言的優勢。 為了簡化這項轉換，您可以將開發環境與其他專為模擬 IBM z/OS 環境而設計的工具搭配使用。 下列清單顯示 Microsoft 和其他廠商提供的選項：
 
 | 元件        | Azure 選項                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,21 +139,21 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 資料庫移轉也包含下列元件：
 
-- **資料庫管理員：** 提供對資料庫中所含資料的存取權。 在 z/OS 環境中，資料庫管理員會在其本身的分割區中執行。
-- **應用程式要求者：** 接受來自應用程式的要求，然後將其傳至應用程式伺服器。
-- **線上資源介面卡：** 包含用於 CICS 交易中的應用程式要求者元件。
-- **Batch 資源介面卡：** 實作 z/OS 批次應用程式的應用程式要求者元件。
-- **互動式 SQL （ISQL）：** 以 CICS 應用程式和介面的形式執行，讓使用者能夠輸入 SQL 陳述式或運算子命令。
-- **CICS 應用程式：** 使用 CICS 中的可用資源和資料來源，在 CICS 的控制下執行。
-- **Batch 應用程式：** 執行處理邏輯而無須與使用者進行互動式通訊，例如，產生大量資料更新，或從資料庫產生報表。
+- **資料庫管理員：** 提供資料庫中資料的存取權。 在 z/OS 環境中，資料庫管理員會在其本身的分割區中執行。
+- **應用程式**要求者：接受來自應用程式的要求，然後再將它們傳遞給應用程式伺服器。
+- **線上資源介面卡：** 包含用於 CICS 交易的應用程式要求者元件。
+- **Batch 資源介面卡：** 執行 z/OS 批次應用程式的應用程式要求者元件。
+- **互動式 SQL （ISQL）：** 以 CICS 應用程式和介面的形式執行，讓使用者可以輸入 SQL 語句或運算子命令。
+- **CICS 應用程式：** 使用 CICS 的可用資源和資料來源，在 CICS 的控制下執行。
+- **Batch 應用程式：** 執行進程邏輯，而不需要與使用者進行互動式通訊，例如，產生大量資料更新或從資料庫產生報表。
 
 ## <a name="optimize-scale-and-throughput-for-azure"></a>最佳化 Azure 的規模和輸送量
 
-一般而言，大型主機會相應增加，而雲端則會相應放大。若要對執行於 Azure 上的大型主機式應用程式進行規模和輸送量的最佳化，請務必了解大型主機如何區隔和隔離應用程式。 z/OS 大型主機會使用名為「邏輯分割區」(LPARS) 的功能，來隔離及管理單一執行個體上特定應用程式的資源。
+一般來說，大型主機會相應增加，而雲端會向外延展。若要將在 Azure 上執行的大型主機應用程式調整規模和輸送量優化，請務必瞭解如何將應用程式分開和隔離。 z/OS 大型主機會使用名為「邏輯分割區」(LPARS) 的功能，來隔離及管理單一執行個體上特定應用程式的資源。
 
 例如，大型主機可能會對具有相關 COBOL 程式的 CICS 區域使用一個邏輯分割區 (LPAR)，並且對 DB2 使用另一個 LPAR。 其他 LPAR 通常用於開發、測試和預備環境。
 
-在 Azure 上，常會使用個別的 VM 來達到此目的。 Azure 架構通常會為應用程式層部署 VM、為資料層部署不同一組 VM，且再部署另一組用於開發，依此類推。 每個處理層都可以使用最適合該環境的 Vm 和功能類型來進行優化。
+在 Azure 上，使用不同的 Vm 來提供此用途較為常見。 Azure 架構通常會為應用程式層部署 VM、為資料層部署不同一組 VM，且再部署另一組用於開發，依此類推。 每個處理層都可以使用最適合該環境的 Vm 和功能類型來進行優化。
 
 此外，每一層也都可提供適當的災害復原服務。 例如，生產環境和資料庫 VM 可能需要熱復原或暖復原，而開發和測試 VM 則支援冷復原。
 
@@ -175,7 +175,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 Azure 提供經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。 某些工作負載比較容易移轉。 其他依賴舊式系統軟體 (例如 CICS 與 IMS) 的工作負載，可以使用合作夥伴解決方案重新裝載，再分階段移轉至 Azure。 無論您如何選擇，Microsoft 與合作夥伴都很樂意協助您達成 Azure 的最佳化，同時保有大型主機系統軟體功能。
 
-## <a name="learn-more"></a>更多資訊
+## <a name="learn-more"></a>了解更多
 
 如需詳細資訊，請參閱下列資源：
 

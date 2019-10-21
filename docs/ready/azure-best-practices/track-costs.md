@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967743"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548954"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -83,7 +83,7 @@ Azure 成本管理支援每個範圍的下列內建角色：
 
 一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 不過，[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅限成本管理讀者。 這是因為他們不會牽涉到在 Azure 成本管理工具內設定預算。
 
-### <a name="scope"></a>`Scope`
+### <a name="scope"></a>Scope
 
 下列範圍和角色設定會建立成本管理所需的可見度。 這種最佳做法可能需要較小的變更，以符合資產組織決策。
 
@@ -115,7 +115,7 @@ Azure 成本管理是一種妥善記載的工具，可用於設定預算，並�
 
 ### <a name="get-started-with-azure-cost-management"></a>開始使用 Azure 成本管理
 
-如需開始使用 Azure 成本管理的詳細資訊，請參閱[如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json) (機器翻譯)。
+如需開始使用 Azure 成本管理的詳細資訊，請參閱[如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (機器翻譯)。
 
 ### <a name="use-azure-cost-management"></a>使用 Azure 成本管理
 

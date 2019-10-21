@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223018"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548093"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -54,12 +54,12 @@ ms.locfileid: "71223018"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
 - 藉由在預先部署階段推出，來實現您的[資源一致性工具鏈](./toolchain.md)。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針文件，並散發給重要的專案關係人。
 - 在已設定優先權的移轉待辦項目上實作資源部署工作。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
@@ -76,14 +76,14 @@ ms.locfileid: "71223018"
 - 執行存取性能以測量收到的服務品質。
 - 請考慮使用組態設定和資源建立規則部署[原則](https://docs.microsoft.com/azure/governance/policy/overview)來管理 SLA 強制。
 
-## <a name="adopt-and-migrate"></a>採用和移轉
+## <a name="adopt-and-migrate"></a>採用和遷移
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[資源一致性工具鏈](./toolchain.md)從預先部署遷移至生產環境。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 - 移轉任何現有的自動化補救指令碼或工具，以支援定義的 SLA 需求。
 
@@ -109,7 +109,7 @@ ms.locfileid: "71223018"
 
 **最小的建議活動：**
 
-- 根據組織不斷變化之成本管理需求的更新，自訂[資源一致性工具鏈](./toolchain.md)。
+- 根據貴組織變更成本管理需求的更新，自訂您的[資源一致性工具鏈](./toolchain.md)。
 - 考慮將任何通知和報告自動化，以反映實際資源使用量。
 - 精簡架構方針，以引導未來的採用程序。
 - 定期教育受影響的小組，以確保會持續遵循架構方針。
@@ -130,6 +130,6 @@ ms.locfileid: "71223018"
 既然您已了解雲端資源治理的概念，請繼續深入了解在 Azure 中[如何管理資源存取權](./resource-access-management.md)，以準備學習如何設計[簡單工作負載](./governance-simple-workload.md)和[多個小組](./governance-multiple-teams.md)的治理模型。
 
 > [!div class="nextstepaction"]
-> [瞭解 azure](./resource-access-management.md) 
-> 中的資源存取管理瞭解
->  [azure 的服務等級協定](https://azure.microsoft.com/support/legal/sla)[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)
+> [瞭解 azure 中的資源存取管理](./resource-access-management.md)
+> [瞭解適用于 azure 的服務等級協定](https://azure.microsoft.com/support/legal/sla)
+> [瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

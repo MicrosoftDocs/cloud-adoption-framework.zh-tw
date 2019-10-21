@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022400"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549004"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -34,7 +34,7 @@ ms.locfileid: "71022400"
 > - [在 Azure 中實作中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [在 Azure 中實作中樞和輪輻網路拓撲與共用服務](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 ![中樞和輪輻網路拓撲的範例][1]
 
@@ -75,7 +75,7 @@ ms.locfileid: "71022400"
 
 架構設計人員可能會想要跨多個虛擬網路部署一個多層式工作負載。 透過虛擬網路對等互連，輪輻可以連線至相同中樞或不同中樞內的其他輪輻。
 
-此案例的常見範例是，應用程式處理伺服器位於一個輪輻 (或虛擬網路) 中。 資料庫則部署在多個輪輻 (或虛擬網路) 中。 在此情況下，可以輕易地透過虛擬網路對等互連將輪輻互相連線，而避免透過中樞傳輸。 此解決方案的目的是仔細檢閱架構和安全性，以確定略過中樞時並不會略過可能僅存在於中樞的重要安全性或稽核點。
+此案例的常見範例是，應用程式處理伺服器位於一個輪輻 (或虛擬網路) 中。 資料庫則部署在多個輪輻 (或虛擬網路) 中。 在此情況下，可以輕易地透過虛擬網路對等互連將輪輻互相連線，而避免透過中樞傳輸。 解決方法是執行仔細的架構和安全性審查，以確保略過中樞不會略過可能只存在於中樞的重要安全性或審核點。
 
 ![連線到中樞及彼此連線的輪輻][3]
 

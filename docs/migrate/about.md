@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829952"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547246"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中進行雲端移轉
 
@@ -34,11 +34,11 @@ ms.locfileid: "70829952"
 
 雲端架構設計師可引導並促使這些對象共同合作。 此系列指南的內容旨在協助雲端架構設計師促進與正確對象進行正確的對話，藉以推動必要的決策。 由雲端推動的企業轉型必須由雲端架構設計師居中協助指導整個業務和 IT 的決策。
 
-**本節中的雲端架構設計師專業化：** 雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 本節專為雲端架構設計師而設計，其具備現有內部部署環境相關專業領域知識，以及了解該環境對移轉選項有何影響。
+本節**中的雲端架構設計人員特製化：** 雲端採用架構的每個部分都代表雲端架構設計師角色的不同特製化或變體。 本節專為雲端架構設計師而設計，其具備現有內部部署環境相關專業領域知識，以及了解該環境對移轉選項有何影響。
 
-**職責區分：** 許多企業中會區分職責，以限制存取公司環境的生產系統或區段。 在這種情況下，移轉程序會變得更複雜。 在某些情況下，這些角色和職責可能需要多個雲端架構設計師，才能橫跨整個移轉程序。
+**責任分隔：** 在許多企業中，會有責任區隔，以限制存取公司環境的生產系統或區段。 在這種情況下，移轉程序會變得更複雜。 在某些情況下，這些角色和職責可能需要多個雲端架構設計師，才能橫跨整個移轉程序。
 
-**合作選項** 在上述每個程序中，小組將學習技術執行的新技能和方法。 擴展現有小組成員的技能是執行期間的一個選項。 雇用其他人員。 與第三方合作通常可明顯加速作業及降低風險。 [合作選項](./migration-considerations/assess/partnership-options.md)可協助引導選擇最佳合作選項的決策。
+**合作選項** 在上述每個程序中，小組將學習技術執行的新技能和方法。 在執行期間，擴充現有小組成員之間的技術技能是一個選項。 雇用其他人員。 與第三方合作通常可明顯加速作業及降低風險。 [合作選項](./migration-considerations/assess/partnership-options.md)可協助引導選擇最佳合作選項的決策。
 
 ## <a name="next-steps"></a>後續步驟
 

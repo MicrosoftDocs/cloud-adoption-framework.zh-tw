@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 開始使用雲端遷移旅程
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223065"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547833"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>開始使用雲端遷移旅程
 
@@ -36,7 +36,7 @@ ms.locfileid: "71223065"
 
 |重要的商務活動 | 遷移動機 | 創新動機 |
 |---------|---------|---------|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改善客戶體驗/合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
+| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省費用<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改善客戶體驗/合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -52,7 +52,7 @@ ms.locfileid: "71223065"
 
 「雲端採用架構」建立了一個高階的方案結構，準備好將所有雲端採用所需的投入程度分組。 此執行摘要會以該高階流程為基礎，建立反復的流程，讓您能夠在所有雲端遷移活動的單一方法中提升/轉移/優化工作**和**現代化工作。
 
-此方法包含兩種方法或焦點區域：雲端策略 & 規劃和雲端實施。 雲端遷移的[動機](#motivations)或所需的商務成果，通常會決定小組應投入多少時間來進行[策略和規劃](#cloud-strategy-and-planning)與[實施](#cloud-implementation)。 這些動機也會影響每個順序或平行執行的決策。
+此方法包含兩種方法或重點區域：雲端策略 & 規劃和雲端執行。 雲端遷移的[動機](#motivations)或所需的商務成果，通常會決定小組應投入多少時間來進行[策略和規劃](#cloud-strategy-and-planning)與[實施](#cloud-implementation)。 這些動機也會影響每個順序或平行執行的決策。
 
 ## <a name="cloud-implementation"></a>雲端執行
 
@@ -64,7 +64,7 @@ ms.locfileid: "71223065"
 
 雲端遷移通常會被視為廣泛程式中的單一專案，以簡化 IT 作業、成本或複雜度。 雲端實行方法有助於將一系列工作負載遷移中的技術工作，與雲端策略和規劃中所述的高階商業價值進行比對。
 
-**開始使用：** 若要開始使用雲端， [azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 準備就緒指南](../ready/azure-readiness-guide/index.md)概述在執行雲端時必須成功的工具和高階程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[擴充的範圍檢查清單](../migrate/expanded-scope/index.md)、[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的限制、程式、小組結構和目標。
+**開始使用：** 若要開始進行雲端執行， [azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 設定指南](../ready/azure-setup-guide/index.md)概述在執行雲端時必須成功的工具和高階程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[擴充的範圍檢查清單](../migrate/expanded-scope/index.md)、[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的限制、程式、小組結構和目標。
 
 ## <a name="cloud-strategy-and-planning"></a>雲端策略和規劃
 
@@ -80,14 +80,14 @@ ms.locfileid: "71223065"
 
 如上圖所示，此架構會將策略性決策與少量包含的處理常式對齊，而這些進程會在反復模型中運作。 線上性檔中所述，下列每個程式都應該與雲端執行的反復專案平行處理。 每個進程的連結都會協助定義結束狀態，以及成熟到所需結束狀態的方法：
 
-- **[計畫](../strategy/index.md):** 當技術實現與清楚的商業目標一致時，不論技術決策為何，都能更輕鬆地測量並讓多個雲端實行工作的成功率一致。
-- **[準備就緒](../ready/index.md)：** 針對即將進行的變更準備商務、文化、人員和環境，會導致每個工作成功，並加速執行和變更專案。
+- **[計畫](../strategy/index.md)：** 當技術實現與清楚的商業目標一致時，不論技術決策為何，都能更輕鬆地測量並讓多個雲端實行工作的成功率一致。
+- **[就緒](../ready/index.md)：** 針對即將進行的變更準備商務、文化、人員和環境，會導致每個工作成功，並加速執行和變更專案。
 - **採用：** 確保能夠適當地在 IT 和商務程式上執行所需的變更，以達成商業成果。
-  - **[遷移](../migrate/index.md):** [雲端實施方法](#cloud-implementation)的反復執行遵循評估、遷移、優化和保護 & 管理的測試程式，以建立可重複的流程來遷移工作負載。
-- **[操作](../operate/index.md)：** 定義可管理的作業模式，以在採用之後引導活動。
-  - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
-  - **[治理](../govern/index.md)：** 讓公司原則符合有形風險，並透過原則、程式和雲端式治理工具加以降低。
-  - **[管理](../manage/index.md)：** 擴充 IT 營運以確保雲端式解決方案可以使用現代化、雲端優先的作業工具，透過安全且符合成本效益的程式來運作。
+  - **[遷移](../migrate/index.md)：** [雲端實施方法](#cloud-implementation)的反復執行遵循評估、遷移、優化和保護 & 管理的測試程式，以建立可重複的流程來遷移工作負載。
+  - **[創新](../innovate/index.md)：** 透過創新活動推動商業價值，以發揮新的技術技能和擴充的商務功能。
+- **[管控](../govern/index.md)：** 讓公司原則符合有形風險，並透過原則、程式和雲端式治理工具加以降低。
+- **[管理](../manage/index.md)：** 擴充 IT 營運以確保雲端式解決方案可以使用現代化、雲端優先的作業工具，透過安全且符合成本效益的程式來運作。
+- **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
 
 此架構會在整個遷移體驗中，用來解決不明確、管理變更，並引導跨功能小組實現商務成果。
 
@@ -134,12 +134,18 @@ ms.locfileid: "71223065"
 雲端採用架構是生命週期解決方案。 其設計目的是要協助剛開始旅程的讀者，以及深入探討其遷移的讀者。 因此，內容非常適用，而且是特定物件。 接下來的步驟最符合讀者想要改善的高階流程。
 
 > [!div class="nextstepaction"]
+> [策略](../strategy/index.md)
+>
 > [規劃](../plan/index.md)
 >
-> [就緒](../ready/index.md)
+> [準備好](../ready/index.md)
 >
 > [移轉](../migrate/index.md)
 >
-> [管理](../manage/index.md)
+> [創新](../innovate/index.md)
 >
 > [制約](../govern/index.md)
+>
+> [管理](../manage/index.md)
+>
+> [向上](../organize/index.md)

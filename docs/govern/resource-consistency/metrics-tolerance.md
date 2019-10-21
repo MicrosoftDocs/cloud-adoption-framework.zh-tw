@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222955"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548061"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>資源一致性的計量、指標及風險承受度
 
@@ -36,7 +36,7 @@ ms.locfileid: "71222955"
 - **狀況不良的網路連結。** 有網路連線問題的資源數目。
 - **狀況不良的服務端點。** 外部網路端點的問題數目。
 - **雲端提供者服務健全狀況事件。** 雲端提供者造成的中斷或效能事件的數目。
-- **服務等級協定。** 這可以包括 Microsoft 對 Azure 服務執行時間與連線能力的承諾，以及企業對其內外部客戶的承諾。
+- **服務等級協定。** 這可能包括 Microsoft 對於 Azure 服務執行時間和連線能力的承諾，以及企業對其外部和內部客戶所做出的承諾。
 - **服務可用性。** 與預期執行時間相比，裝載於雲端之工作負載的實際執行時間百分比。
 - **復原時間目標（RTO）。** 應用程式在事件發生之後可能無法使用的最大可接受時間。
 - **復原點目標（RPO）。** 在災害期間可接受的最大資料遺失時間長度。 例如，如果您在單一資料庫中儲存資料，沒有複寫到其他資料庫，且每小時執行備份，可能會遺失最多一個小時的資料。

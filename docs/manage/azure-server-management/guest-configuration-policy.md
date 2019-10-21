@@ -8,25 +8,25 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221579"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547278"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
-Azure 原則[來賓](/azure/governance/policy/concepts/guest-configuration)設定延伸模組可讓您在虛擬機器中, 對設定進行審核。 目前只有在 Azure Vm 上才支援來賓設定。
+Azure 原則[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定延伸模組可讓您在虛擬機器中，對設定進行審核。 目前只有在 Azure Vm 上才支援來賓設定。
 
-您可以在 Azure 原則入口網站頁面上搜尋「來賓設定」類別, 以尋找來賓設定原則的清單。 您也可以在 PowerShell 視窗中執行此 Cmdlet 來尋找清單:
+您可以在 Azure 原則入口網站頁面上搜尋「來賓設定」類別，以尋找來賓設定原則的清單。 您也可以在 PowerShell 視窗中執行此 Cmdlet 來尋找清單：
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> 來賓設定功能會定期更新, 以支援其他原則集。 定期檢查是否有新支援的原則, 並評估其是否適合您的需求。
+> 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新支援的原則，並評估其是否適合您的需求。
 
 <!-- TODO: Update these links when available. 
 
@@ -37,14 +37,14 @@ By default, we recommend enabling the following policies:
 
 -->
 
-## <a name="deployment"></a>部署
+## <a name="deployment"></a>Deployment
 
-您可以使用下列範例 PowerShell 腳本來部署這些原則:
+您可以使用下列範例 PowerShell 腳本來部署這些原則：
 
 - 確認 Windows 和 Linux 電腦中的密碼安全性設定已正確設定。
 - 確認 Windows Vm 上的憑證不會接近到期日。
 
- 執行此腳本之前, 您必須使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時, 您必須提供要套用原則的訂用帳戶名稱。
+ 執行此腳本之前，您必須使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，您必須提供要套用原則的訂用帳戶名稱。
 
 ```powershell
 

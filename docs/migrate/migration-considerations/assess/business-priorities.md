@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05d9441eb8867ff47ad23ccc44a9b58d8e010499
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833501"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549205"
 ---
-# <a name="business-priorities---maintaining-alignment"></a>業務優先順序 - 維護一致性
+# <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊
 
 *轉換*通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
 

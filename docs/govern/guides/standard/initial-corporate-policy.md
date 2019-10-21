@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 20dc2136f997f69cafbbff241994de90e942c7db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967541"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547563"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的初始公司原則
 
@@ -34,8 +34,8 @@ ms.locfileid: "71967541"
 目前的風險承受度很高，且投資雲端治理的意願偏低。 因此，承受度指標可當作早期警告系統來觸發更多時間和精力的投資。 如果和在觀察到下列指標時，您應該反復改善治理策略。
 
 - **成本管理：** 部署的規模超過預先決定的資源數量限制或每月成本。
-- **安全性基準：** 在定義的雲端採用計劃中納入受保護的資料。
-- **資源一致性：** 在定義的雲端採用計劃中納入任何任務關鍵性應用程式。
+- **安全性基準：** 在定義的雲端採用方案中納入受保護的資料。
+- **資源一致性：** 在定義的雲端採用計畫中包含任何任務關鍵性應用程式。
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
@@ -44,4 +44,4 @@ ms.locfileid: "71967541"
 此公司原則會準備雲端治理小組來實行治理 MVP，這將成為採用的基礎。 下一步是實作此 MVP。
 
 > [!div class="nextstepaction"]
-> [說明的規範性指導方針](./prescriptive-guidance.md)
+> [說明的最佳做法](./prescriptive-guidance.md)

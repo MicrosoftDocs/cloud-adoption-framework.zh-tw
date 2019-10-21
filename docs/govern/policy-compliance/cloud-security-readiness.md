@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: afde9af7da83bfd8d95847542d5f7236d318121e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220454"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547373"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO 雲端整備指南
 
@@ -29,7 +29,7 @@ Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導�
 
 在這種檢閱中，CISO 必須負責在現有原則/合規性的限制，以及雲端提供者較為優異的安全性狀態之間，取得安全的平衡性。 此程序的測量可以透過許多形式達成，並通常會以可安全地卸載到雲端提供者的安全性原則數目來測量。
 
-**傳輸安全性風險：** 隨著服務被移到基礎結構即服務 (IaaS) 裝載模型，企業將能在硬體的佈建上肩負起較少的直接風險。 但此風險並沒有就此消失，而是被轉換到雲端廠商身上。 若雲端廠商的硬體布建方法提供相同層級的風險降低，在安全的可重複程式中，硬體布建執行的風險就會從公司 IT 的責任領域移除並轉移至雲端那裡. 這可減少公司 IT 負責管理的整體安全性風險，雖然風險本身仍應定期追蹤和審核。
+**傳輸安全性風險：** 當服務移至基礎結構即服務（IaaS）裝載模型時，企業會針對硬體布建承擔較不直接的風險。 但此風險並沒有就此消失，而是被轉換到雲端廠商身上。 若雲端廠商的硬體布建方法提供相同層級的風險降低，在安全的可重複程式中，硬體布建執行的風險就會從公司 IT 的責任領域移除並轉移至雲端那裡. 這可減少公司 IT 負責管理的整體安全性風險，雖然風險本身仍應定期追蹤和審核。
 
 當解決方案進一步「向上堆疊」以併入平臺即服務（PaaS）或軟體即服務（SaaS）模型時，可以避免或轉移額外的風險。 當風險被安全地移到雲端提供者時，執行、監視及強制執行安全性原則或其他合規性原則的成本也都能安全地降低。
 
@@ -72,7 +72,7 @@ Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導�
 
 ## <a name="next-steps"></a>後續步驟
 
-針對任何治理策略採取動作的第一步，便是[原則檢閱](./cloud-policy-review.md)。 [原則與合規性](./index.md)在原則審查期間可能是有用的指南。
+在任何治理策略中採取動作的第一個步驟是[原則審查](./cloud-policy-review.md)。 [原則與合規性](./index.md)在原則審查期間可能是有用的指南。
 
 > [!div class="nextstepaction"]
 > [針對原則檢閱進行準備](./cloud-policy-review.md)

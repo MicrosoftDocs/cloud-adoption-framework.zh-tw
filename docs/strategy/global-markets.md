@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028743"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548614"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "71028743"
 
 ## <a name="employee-usage-patterns"></a>員工使用模式
 
-請務必瞭解全域使用者如何存取與使用者位於相同國家/地區的應用程式。 通常是時間通用 Wan （廣域網路）會根據現有的網路通訊協定來路由傳送使用者。 在傳統的內部部署環境中，某些條件約束會限制 WAN 設計。 這些條件約束可能會導致不佳的使用者體驗，因為在雲端採用之前未正確瞭解。
+請務必瞭解全域使用者如何存取與使用者位於相同國家/地區的應用程式。 全球的廣域網路（Wan）會根據現有的網路通訊協定來路由傳送使用者。 在傳統的內部部署環境中，某些條件約束會限制 WAN 設計。 這些條件約束可能會導致不佳的使用者體驗，因為在雲端採用之前未正確瞭解。
 
 在雲端模型中，商用網際網路也會開啟許多新的選項。 跨多個地理位置溝通員工的散佈，可協助雲端採用小組設計 WAN 解決方案，以建立正面的使用者體驗 **，並**可能降低網路成本。
 

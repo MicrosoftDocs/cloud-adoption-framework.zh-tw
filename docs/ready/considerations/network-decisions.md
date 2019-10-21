@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5303c426ec4eb7adaf8f22a37532c5b1dad14df
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 39eaf02d2701cc6f9ba2c12751b5e53ff1386776
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224219"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548801"
 ---
 # <a name="networking-design-decisions"></a>網路設計決策
 
@@ -32,7 +32,7 @@ ms.locfileid: "71224219"
 回答下列有關工作負載的問題，以協助您根據 Azure 網路服務決策樹來做出決策：
 
 - **您的工作負載是否需要虛擬網路？** 受控平台即服務 (PaaS) 資源類型使用不一定需要虛擬網路的基礎平台網路功能。 如果您的工作負載不需要進階的網路功能，而且您不需要部署基礎結構即服務 (IaaS) 資源，則 [PaaS 資源所提供的預設原生網路功能](../../decision-guides/software-defined-network/paas-only.md)可能會符合您的工作負載連線能力和流量管理需求。
-- **您的工作負載是否需要虛擬網路與內部部署資料中心之間的連線能力？** Azure 提供兩種用來建立混合式網路功能的解決方案：Azure VPN 閘道和 Azure ExpressRoute。 [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)會透過站對站 VPN，將您的內部部署網路連線到 Azure，方法和您設定及連線到遠端分公司很類似。 VPN 閘道具有 1.25 GBps 的最大頻寬。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) 使用 Azure 與您內部部署基礎結構之間的私人連線，提供更高的可靠性和較低的延遲。 ExpressRoute 的頻寬選項範圍從 50 MBps 到 100 GBps。
+- **您的工作負載是否需要虛擬網路與內部部署資料中心之間的連線能力？** Azure 提供兩種用來建立混合式網路功能的解決方案： Azure VPN 閘道和 Azure ExpressRoute。 [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)會透過站對站 VPN，將您的內部部署網路連線到 Azure，方法和您設定及連線到遠端分公司很類似。 VPN 閘道具有 1.25 GBps 的最大頻寬。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) 使用 Azure 與您內部部署基礎結構之間的私人連線，提供更高的可靠性和較低的延遲。 ExpressRoute 的頻寬選項範圍從 50 MBps 到 100 GBps。
 - **您是否需要使用內部部署網路裝置來檢查和稽核傳出流量？** 針對雲端原生工作負載，您可以[使用 Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)或雲端託管第三方[網路虛擬裝置 (NVA)](https://azure.microsoft.com/solutions/network-appliances) 來檢查和稽核進出公用網際網路的流量。 不過，許多企業 IT 安全性原則都需要網際網路繫結的連出流量，才能通過組織內部部署環境中集中管理的裝置。 [強制通道](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)支援這些案例。 並非所有受控服務都支援強制通道。 當服務或功能部署在虛擬網路內時，[Azure App Service 中的 App Service 環境](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure API 管理](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure SQL Database 中的受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks) 和 [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight) 等服務和功能支援此設定。
 - **您是否需要連接多個虛擬網路？** 您可以使用[虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)來連接多個 [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)的執行個體。 對等互連可支援跨訂用帳戶和區域的連接。 針對您提供跨多個訂用帳戶共用的服務，或需要管理大量網路對等互連的案例，請考慮採用[中樞和輪輻網路架構](../../decision-guides/software-defined-network/hub-spoke.md)，或使用 [Azure虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)。 虛擬網路對等互連只會提供兩個對等互連網路之間的連線能力。 根據預設，它不會跨多個對等互連提供可轉移的連線能力。
 - **您的工作負載是否可透過網際網路存取？** Azure 提供的服務是設計用來協助您管理及保護應用程式和服務的外部存取：
@@ -61,7 +61,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 我需要以最佳方式將流量分散到全球 Azure 區域的服務，同時提供高可用性和回應性。 | [Azure 流量管理員](https://docs.microsoft.com/azure/traffic-manager)<br/>[Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 | 我需要新增私人網路連線，以從我的公司網路存取 Microsoft 雲端服務，如同存取我自己資料中心內的內部部署。 | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | 我需要在網路案例層級進行監視與診斷。 | [Azure 網路監看員](https://docs.microsoft.com/azure/network-watcher) |
-| 我需要內建高可用性、不受限制的雲端延展性及零維護的原生防火牆功能。 | [Azure 防火牆](https://docs.microsoft.com/azure/firewall) |
+| 我需要原生防火牆功能，具有內建的高可用性、不受限制的雲端擴充性，以及零的維護。 | [Azure 防火牆](https://docs.microsoft.com/azure/firewall) |
 | 我需要安全地連接商業辦公室、零售地點和網站。 | [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan) |
 | 我需要可調整並已加強安全性的傳遞點，適用於微服務型全域 Web 應用程式。 | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 
@@ -96,6 +96,6 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 在您的網路設計過程中，請參閱下列文章：
 
-- [虛擬網路規劃](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 了解如何根據您的隔離、連線和位置需求規劃虛擬網路。
-- [適用於網路安全性的 Azure 最佳做法](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
-- [將工作負載遷移至 Azure 時的網路最佳做法](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 取得如何實作 Azure 網路以支援 IaaS 型和 PaaS 型工作負載的其他指引。
+- [虛擬網路規劃](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何根據您的隔離、連線和位置需求規劃虛擬網路。
+- [適用於網路安全性的 Azure 最佳做法](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
+- [將工作負載遷移至 Azure 時的網路最佳做法](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 取得如何實作 Azure 網路以支援 IaaS 型和 PaaS 型工作負載的其他指引。

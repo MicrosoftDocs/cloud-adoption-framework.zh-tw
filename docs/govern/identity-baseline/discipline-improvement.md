@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220479"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547457"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -52,7 +52,7 @@ ms.locfileid: "71220479"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
@@ -82,7 +82,7 @@ ms.locfileid: "71220479"
   - 針對其他系統管理角色啟用 JIT 的特殊許可權身分識別基準（PIM）（使用限時啟動）。
   - 將使用者帳戶與全域管理員帳戶分開（以確保系統管理員不會不慎開啟電子郵件或執行與其全域管理員帳戶相關聯的程式）。
 
-## <a name="adopt-and-migrate"></a>採用和移轉
+## <a name="adopt-and-migrate"></a>採用和遷移
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
@@ -110,7 +110,7 @@ ms.locfileid: "71220479"
 
 **最小的建議活動：**
 
-- 根據貴組織變動身分識別需求的變更，自訂您的[身分識別基準工具鏈](./toolchain.md)。
+- 根據組織變更的身分識別需求，自訂您的身分[識別基準工具鏈](./toolchain.md)。
 - 將通知和報告自動化，以警示您潛在的惡意威脅。
 - 監視和報告系統使用量和使用者採用進度。
 - 報告部署後計量，並散發給專案關係人。

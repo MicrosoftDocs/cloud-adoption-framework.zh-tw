@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024653"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549156"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 
@@ -27,8 +27,8 @@ ms.locfileid: "71024653"
 
 ## <a name="common-infrastructure-evaluation-activities"></a>一般基礎結構評估活動
 
-- VMware 需求：[檢閱適用於 VMware 的 Azure Site Recovery 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix)。
-- Hyper-V 需求：[檢閱適用於 Hyper-V 的 Azure Site Recovery 需求](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix)。
+- VMware 需求：請[參閱 vmware 的 Azure Site Recovery 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix)。
+- Hyper-v 需求：請[參閱 hyper-v 的 Azure Site Recovery 需求](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix)。
 
 務必記載主機組態、複寫的 VM 組態、儲存體需求或網路組態中的任何差異。
 
@@ -36,7 +36,7 @@ ms.locfileid: "71024653"
 
 - 記錄目前資料庫部署的復原點目標和復原時間目標。 這些資料用於[架構活動](./architect.md)以協助進行決策。
 - 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱 [SQL Server 高可用性解決方案指南](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)。
-- 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應至相容的 Azure PaaS 解決方案，像是適用於 [MySQL](https://docs.microsoft.com/azure/mysql)、[Postgres](https://docs.microsoft.com/azure/postgresql) 或 [MariaDB](https://docs.microsoft.com/azure/mariadb)的 [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) 或 [Azure DB](https://docs.microsoft.com/azure/sql-database)。
+- 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應至相容的 azure PaaS 解決方案，例如[Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)或適用于[MySQL](https://docs.microsoft.com/azure/mysql)的[azure DB](https://docs.microsoft.com/azure/sql-database) 、[于 postgresql](https://docs.microsoft.com/azure/postgresql)或[適用于 mariadb](https://docs.microsoft.com/azure/mariadb)。
 - 當 PaaS 相容性是不需要任何補救的選項時，請洽詢負責[架構活動](./architect.md)的小組。 PaaS 移轉可以大幅節省時間，並降低大部分雲端解決方案的擁有權總成本 (TCO)。
 - 當 PaaS 相容性是需要補救的選項時，請洽詢負責[架構活動](./architect.md)和[補救活動](../migrate/remediate.md)的小組。 在許多情況下，資料庫解決方案的 PaaS 移轉優點可能會超越補救時間的增加。
 - 記載要遷移的每個資料庫的大小和變動率。

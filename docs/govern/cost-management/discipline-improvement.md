@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2bb94c18833ccfd8594088da29b63f8006b6fa94
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1c546512b2b9407d9edf54648e704209f8d460ea
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222685"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547789"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 
@@ -53,12 +53,12 @@ ms.locfileid: "71222685"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
 - 藉由在預先部署階段推出來執行您的[成本管理工具鏈](./toolchain.md)。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 - 決定您的購買需求是否要與預算和目標保持一致。
 
@@ -68,14 +68,14 @@ ms.locfileid: "71222685"
 - 使用[資源一致性策略](../../decision-guides/resource-consistency/index.md)，在一段時間內強制執行架構和成本方針。
 - 判斷是否有任何成本異常會影響您的採用和遷移計畫。
 
-## <a name="adopt-and-migrate"></a>採用和移轉
+## <a name="adopt-and-migrate"></a>採用和遷移
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[成本管理工具鏈](./toolchain.md)從預先部署遷移至生產環境。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
 **潛在的活動：**
@@ -91,7 +91,7 @@ ms.locfileid: "71222685"
 
 **最小的建議活動：**
 
-- 根據貴組織成本管理需求的變更，自訂您的[成本管理工具鏈](./toolchain.md)。
+- 根據組織成本管理需求的變更，自訂您的[成本管理工具鏈](./toolchain.md)。
 - 考慮將任何通知和報告自動化，以反映實際支出。
 - 精簡架構方針，以引導未來的採用程序。
 - 定期教育受影響的小組，以確保會持續遵循架構方針。

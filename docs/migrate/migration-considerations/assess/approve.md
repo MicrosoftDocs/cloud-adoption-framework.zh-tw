@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833527"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549214"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>在移轉前核准架構變更
 
@@ -21,9 +21,9 @@ ms.locfileid: "70833527"
 
 ## <a name="business-impact-and-approval"></a>業務衝擊與核准
 
-在移轉期間，某些事項可能以會影響業務的方式變更。 雖然有時無法避免變更，但應該避免由於未揭露或未記載的變更所造成的意外情況。 若要在整個移轉過程中維持關係人支援，請務必避免意外情況。 意外的應用程式擁有者或業務關係人可能會延緩或終止雲端採用工作。
+在移轉期間，某些事項可能以會影響業務的方式變更。 雖然有時無法避免變更，但由於公開或未記載的變更所造成的意外，應該是。 若要在整個遷移工作中維持專案關係人支援，請務必避免意外。 意外的應用程式擁有者或業務關係人可能會延緩或終止雲端採用工作。
 
-在移轉之前，務必使工作負載的業務擁有者準備好因應可能影響業務流程的任何變更，例如以下各項的變更：
+在遷移之前，請務必準備工作負載的商務擁有者，以進行可能影響商務程式的任何變更，例如的變更：
 
 - 服務等級協定。
 - 會影響終端使用者的存取模式或安全性需求。

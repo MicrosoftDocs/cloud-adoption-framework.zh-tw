@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825454"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548368"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>回顧如何協助建立成長型思維？
 
-「文化將策略當早餐吃掉了。」 如果最佳移轉方案沒有來自領導階層的行政支援和鼓勵，很容易就毀了。 學習、成長，甚至失敗都是成長型思維的核心。 它們也是任何轉型工作的核心。
+「文化將策略當早餐吃掉了。」 如果最佳遷移計畫沒有主管的支援和鼓勵，就可以輕易地復原。 學習、成長，甚至失敗都是成長型思維的核心。 它們也是任何轉型工作的核心。
 
 在企業轉型期間，謙卑和好奇心最為重要。 採用數位轉型需要有充足的謙卑和好奇心。 定期內省和鼓勵環境都會強化這些特徵。 若鼓勵員工承擔風險，他們會發現更好的解決方案。 當員工被允許失敗並學習時，他們就成功了。 回顧是這類調查和成長的機會。
 

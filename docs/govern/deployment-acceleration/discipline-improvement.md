@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220757"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547775"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -62,7 +62,7 @@ ms.locfileid: "71220757"
 
 - 定義持續整合和持續部署 (CI/CD) 管線，透過開發、QA 及生產環境完全管理發行應用程式更新的程序。
 
-## <a name="adopt-and-migrate"></a>採用和移轉
+## <a name="adopt-and-migrate"></a>採用和遷移
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
@@ -83,7 +83,7 @@ ms.locfileid: "71220757"
 
 **最小的建議活動：**
 
-- 根據對於貴組織變更身分識別需求的變更，自訂您的[部署加速工具鏈](./toolchain.md)。
+- 根據組織變更的身分識別需求，自訂您的[部署加速工具鏈](./toolchain.md)。
 - 將通知和報告自動化，以警示您潛在的設定問題或惡意威脅。
 - 監視和報告應用程式與資源使用量。
 - 報告部署後計量，並散發給專案關係人。

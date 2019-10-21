@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967462"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547435"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
@@ -24,7 +24,7 @@ ms.locfileid: "71967462"
 
 董事會今年開始計劃以多種方式為企業注入活力。 他們將推動改善客戶體驗以獲得市場佔有率的領導地位。 他們也將推動新產品和服務，將公司定位為業界的思想領導者。 他們同時還盡力減少浪費並縮減不必要的成本。 雖然令人生畏，但董事會和領導階層的行動展現出這項工作將盡可能地將資金集中投入未來發展。
 
-過去，公司的 CIO 對於這些策略對話並沒有發言的權利。 但是，未來的願景在本質上與技術發展息息相關，因此 IT 擁有一席之地，可以幫助指導這些重大計劃。 IT 現在應該以新的方式提供。 小組尚未針對這些變更進行準備，而且很可能會與學習曲線一起困難。
+在過去，公司的 CIO 已從這些策略性交談中排除。 但是，未來的願景在本質上與技術發展息息相關，因此 IT 擁有一席之地，可以幫助指導這些重大計劃。 IT 現在應該以新的方式提供。 小組尚未針對這些變更進行準備，而且很可能會與學習曲線一起困難。
 
 ## <a name="business-characteristics"></a>商務特性
 
@@ -52,7 +52,7 @@ ms.locfileid: "71967462"
 - CIO 正在審查個人資料和財務資料的原則，以允許未來的州目標。
 - 應用程式開發和 BI 團隊希望在未來的 24 個月內，根據客戶業務開發和新產品的願景，將雲端式解決方案發佈到生產環境中。
 - 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 預計這將在未來五年內節省約 2500 萬美元的成本。
-    @no__t 0On-內部部署成本與 Azure 成本相比，示範在未來五年來的 $ 25M USD 傳回 @ no__t-1
+    ![On 內部部署成本與 Azure 成本相比，示範未來五年的 $ 25M 美元報酬 ](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - 公司打算改變 it 投資的方式，因為它會將已認可的資本支出重新置放為營運費用。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 
 ## <a name="next-steps"></a>後續步驟

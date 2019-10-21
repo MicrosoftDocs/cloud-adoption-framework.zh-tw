@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025422"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548302"
 ---
 # <a name="decisions-that-affect-migrations"></a>會影響移轉的決策
 
@@ -55,7 +55,7 @@ ms.locfileid: "71025422"
 
 ### <a name="effort-type"></a>工作類型
 
-在任何大規模 (> 250 個 VM) 的移轉中，都會使用「合理化的五 R 策略」中討論的各種不同轉換選項來移轉資產：*重新裝載*、*重構*、*重新架構*、*重建*和*取代*。
+在任何規模的大規模（> 250 部 Vm）遷移中，會使用各種不同的轉換選項來遷移資產，這些是在合理化的五個 Rs 中討論的：*重新裝載*、*重構*、*重新架構*、 *Rebuild*和*Replace*。
 
 有些工作負載會透過*重建*或*重新架構*程序進行現代化，而建立含有新功能和技術功能的新式應用程式。 其他資產則會經歷*重構*程序，例如移至容器或其他更新式的裝載和操作方法，這不一定會影響解決方案的程式碼基底。 虛擬機器和其他更妥善建立的資產通常會經歷*重新裝載*程序，而將這些資產從資料中心轉換至雲端。 某些工作負載可移轉至雲端，但應使用符合相同商務需求的服務型 (SaaS 型) 雲端服務來*取代*，例如使用 Office 365 作為移轉 Exchange Server 執行個體的替代方案。
 
@@ -88,9 +88,9 @@ ms.locfileid: "71025422"
 
 ## <a name="next-steps"></a>後續步驟
 
-在整個小組都了解程序之後，就可以檢閱技術必要條件。 [移轉環境規劃檢查清單](./planning-checklist.md)有助於確保技術基礎已準備好進行移轉。
+在小組之間瞭解程式之後，就可以複習技術必要條件。 [移轉環境規劃檢查清單](./planning-checklist.md)有助於確保技術基礎已準備好進行移轉。
 
-在整個小組都了解程序之後，就可以檢閱技術必要條件。[遷移規劃檢查清單] 將有助於確保技術基礎已準備好進行移轉。
+一旦瞭解小組中的程式之後，就可以開始審查技術必要條件。 [遷移規劃檢查清單] 將有助於確保技術基礎已準備好進行遷移。
 
 > [!div class="nextstepaction"]
 > [檢閱移轉規劃檢查清單](./planning-checklist.md)

@@ -1,0 +1,65 @@
+---
+title: 營運合規性-雲端管理和作業
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: 營運合規性-雲端管理和作業
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 10/07/2019
+ms.topic: article
+ms.service: cloud-adoption-framework
+ms.subservice: operate
+ms.openlocfilehash: 524f5f63dd6bf5fa99d8677fde06346d2a0c1902
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72557527"
+---
+# <a name="operational-compliance-in-cloud-management"></a>雲端管理中的營運合規性
+
+作業合規性建基於[清查和可見度](./inventory.md)的專業領域，做為雲端管理的第一個可行步驟。 此專業領域著重于定期遙測審查和補救工作（主動和回應式補救）。 這個專業領域是維護安全性、治理、效能和成本之間平衡的基石。
+
+## <a name="components-of-operations-compliance"></a>作業合規性的元件
+
+維護合規性以符合營運承諾，需要分析、自動化和人工補救。 有效的作業合規性需要幾個重要程式中的一致性：
+
+1. 資源一致性
+2. 環境一致性
+3. 資源設定一致性
+4. 更新一致性
+5. 補救自動化
+
+### <a name="resource-consistency"></a>資源一致性
+
+雲端管理小組可以對營運合規性進行的最有效步驟，就是在資源組織和標記中建立一致性。 當資源一致地組織並加上標籤時，其他所有作業工作會變得更容易。 如需更深入的資源一致性指引，請參閱雲端採用週期的[治理階段](../../govern/index.md)。 具體而言，[最初的治理基礎](../../govern/initial-foundation.md)檔會示範開始開發資源一致性的方式範例。
+
+### <a name="environment-consistency"></a>環境一致性
+
+一致的環境（或登陸區域）是操作合規性的下一個最重要步驟。 當登陸區域一致並透過自動化工具強制執行時，診斷和解決操作問題會明顯不復雜。 如需有關環境一致性的更深入指引，請參閱雲端採用生命週期的[準備階段](../../ready/index.md)。 該階段的練習會建立可重複的程式，以定義和成熟以程式碼為基礎的環境開發的一致程式碼優先方法。
+
+### <a name="resource-configuration-consistency"></a>資源設定一致性
+
+以治理和準備就緒方法為基礎，雲端管理應包含持續進行監視和評估遵循資源一致性需求的流程。 當工作負載變更或採用新版本時，雲端管理程式一定要評估任何設定變更，而不是透過自動化的方式來進行管制。
+
+發現不一致時，部分會因更新中的一致性而被解決，而其他則可能自動進行補救。
+
+### <a name="update-consistency"></a>更新一致性
+
+穩定性可能會導致穩定的作業。 但是，在雲端管理程式中需要進行一些變更。 特別是，定期修補和效能變更對於減少中斷和控制成本而言是不可或缺的。
+
+成熟雲端管理方法的許多價值之一，是穩定的，並且控制必要的變更。
+
+任何雲端管理基準都應該包含排程、控制及可能將必要更新自動化的方法。 這些更新應至少包含修補程式，但也可以包含效能、調整大小，以及更新資產的其他層面。
+
+### <a name="remediation-automation"></a>補救自動化
+
+作為雲端管理的增強基準，某些工作負載可能會因自動補救而受益。 當工作負載經常遇到無法透過程式碼或架構變更來解決的問題時，補救自動化可以降低雲端管理的負擔，並提高使用者滿意度。
+
+許多人認為任何問題（也就是可自動執行的）都應該透過解決技術債務來解決。 當長期解析非常謹慎時，它應該是預設選項。 不過，有一些商務案例讓您難以證明在解決技術債務時的大量投資。 當無法論證技術債務解析，但補救是一種常見且昂貴的負擔時，自動補救是下一個最佳解決方案。
+
+## <a name="next-steps"></a>後續步驟
+
+[保護和](./protect.md)復原是雲端管理基準中要考慮的下一個領域。
+
+> [!div class="nextstepaction"]
+> [保護與復原](./protect.md)
