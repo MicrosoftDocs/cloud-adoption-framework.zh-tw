@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 營運合規性-雲端管理和作業
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 524f5f63dd6bf5fa99d8677fde06346d2a0c1902
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bb6e4584da87d992f85b6ce90e21081c9c19d7c3
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557527"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682535"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的營運合規性
 
