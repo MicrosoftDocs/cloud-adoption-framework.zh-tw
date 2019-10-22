@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022578"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683764"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>安全性監視和管理工具
 
@@ -41,6 +41,16 @@ Azure 資訊安全中心為您的混合式雲端工作負載，提供統一的�
 
 深入了解可保護已遷移資產的 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center)。
 
+## <a name="service-health-monitoring"></a>服務健康情況監視
+
+Azure 服務健康狀態會在 Azure 服務問題對您產生影響時，提供個人化的警示與指導。 它會通知並協助您了解問題所帶來的影響，並在問題解決時通知您； 也會協助您針對可能影響資源可用性之預定進行的維修作業和變更做好準備。
+
+- **服務健康情況儀表板。** 檢查 Azure 服務和區域的整體健康情況，並提供目前服務問題的所有詳細更新、近期的計劃性維護，以及服務轉換等資訊。
+- **服務健康情況警示。** 設定警示，以在發生服務中斷等問題或即將進行計劃性維護時，通知您和您的小組。
+- **服務健康情況入口網站。** 檢閱過去的服務問題，並下載 Microsoft 的官方摘要和報告。
+
+深入瞭解 [Azure 服務健康狀態 ](https://docs.microsoft.com/azure/service-health)，隨時掌握已遷移資源的健康情況。
+
 ## <a name="protect-assets-and-data"></a>保護資產和資料
 
 Azure 備份提供保護 VM、檔案和資料的方法。 Azure 備份可協助許多功能，包括：
@@ -51,3 +61,13 @@ Azure 備份提供保護 VM、檔案和資料的方法。 Azure 備份可協助�
 - 復原受保護的資產。
 
 深入了解可備份已遷移資產的 [Azure 備份](https://docs.microsoft.com/azure/backup)。
+
+## <a name="optimize-resources"></a>資源最佳化
+
+Azure Advisor 是提供您最佳做法的個人化指南。 這項服務會分析您的組態和使用量遙測，並提供各項建議協助您將 Azure 資源最佳化，以獲得高可用性、安全性、效能並節省成本。 Advisor 的內嵌動作可協助您快速且輕鬆地修正建議內容，並將部署最佳化。
+
+- **Azure 最佳做法。** 充分運用遷移的 Azure 資源，獲得高可用性、安全性、效能並節省成本。
+- **逐步指引。** 使用引導式快速連結，有效率地修正建議內容。
+- **新建議警示。** 隨時掌握各項新建議內容，例如可適當調整 VM 大小以節省成本的其他機會。
+
+深入了解 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 以將遷移的資源最佳化。
