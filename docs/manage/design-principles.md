@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 套用設計原則和先進作業
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ace8d6c4e6752d99365fcf712cacdcf687e68e9a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8595dbadf5a10e19303a50f8eead1ae753612586
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557488"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683575"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和先進作業
 

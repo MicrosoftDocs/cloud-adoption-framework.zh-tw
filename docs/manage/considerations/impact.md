@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 業務重要性-雲端管理和作業
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2b5901699be735bddac260c9def1a884431d8989
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: be5cc97c7b42eb79f0ec9721376524dc2710e2c4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557540"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683623"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理中的業務衝擊
 

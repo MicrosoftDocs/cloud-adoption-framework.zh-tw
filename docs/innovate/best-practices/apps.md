@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 透過 Azure 中的應用程式進行互動的工具
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0479bd47ae68ccad7fa994149cd8b372e9a397a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557449"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683459"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 
@@ -28,7 +28,7 @@ ms.locfileid: "72557449"
 在本文中，假設產生應用程式的所有開始創造發明都是來自共用的解決方案（如「準備[採用](./ci-cd.md)」文章中所述）。 同時假設每個應用程式都會產生某種類型的客戶體驗（適用于內部或外部客戶）。 根據這些假設，下列三個路徑最常用於正在開發數位開始創造發明的雲端採用小組：
 
 - **公民開發人員：** 商務主題專家選擇使用公民開發人員工具，快速測試並驗證客戶假設是否能夠滿足客戶的需求，然後才吸引專業開發人員。
-- **新式 web 體驗：** 使用雲端平臺建立 web 現代化體驗，以推動快速部署和簡短的意見反應迴圈。
+- **智慧型體驗：** 使用雲端平臺建立現代化體驗，以推動快速部署和簡短的回饋迴圈。 在 web 應用程式上展開以注入智慧，或甚至整合 bot。
 - **雲端原生：** 建立新的家發明，它會自然利用雲端功能。
 
 每個路徑都會產生短期和長期的優點和缺點。 當卓越團隊的雲端治理、雲端作業和雲端中心準備好支援每一種方法時，就能以最小的持續性商務營運影響來加速採用。
@@ -38,7 +38,6 @@ ms.locfileid: "72557449"
 根據雲端採用小組所採用的路徑，Azure 提供的工具可加速小組能夠以客戶的方式建立。 下列 Azure 供應專案清單會根據上述決策路徑進行分組。 這些供應專案包括：
 
 - Azure App Service
-- Service Fabric
 - Azure Kubernetes Service
 - Azure Migrate
 - Azure Stack
