@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新-資料移轉服務
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7b6d9d2bb08bd4e3e34fe1cc67f4c6a006a75bb5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557397"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683424"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -46,5 +46,5 @@ ms.locfileid: "72557397"
 |PostgreSQL|適用於 PostgreSQL 的 Azure 資料庫|DMS|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MondoDB|Azure Cosmos DB Mongo API|DMS|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB Mongo API|DMS|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|PaaS & IaaS 選項的範圍|協力廠商或 Azure Migrate|各種類型|[決策樹](../considerations/data-oracle-migration.md)|
-|各種 NoSQL Db|Cosmo DB 或 IaaS 選項|程式性遷移或 Azure Migrate|各種類型|[決策樹](../considerations/data-no-sql-migration.md)|
+|Oracle|PaaS & IaaS 選項的範圍|協力廠商或 Azure Migrate|各種類型|[決策樹](../../migrate/expanded-scope/data-oracle-migration.md)|
+|各種 NoSQL Db|Cosmo DB 或 IaaS 選項|程式性遷移或 Azure Migrate|各種類型|[決策樹](../../migrate/expanded-scope/data-no-sql-migration.md)|

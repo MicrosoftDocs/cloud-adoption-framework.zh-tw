@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 跨雲端管理專業領域的管理調節
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0517816bd01221da8f5b4d97cc40dd39f4599b5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 294ea288af478e0e451c9fd38663a26acb10359d
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557566"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682599"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理調節
 

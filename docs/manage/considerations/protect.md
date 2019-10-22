@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 保護和復原-雲端管理和作業
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ab00e80297dc85aa028550faef8ff1a66f098c22
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2e055cb6105b9424259d2b8e86bdde7d64798479
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557514"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682459"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 

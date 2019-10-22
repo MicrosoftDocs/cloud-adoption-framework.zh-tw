@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-開發數位開始創造發明
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ae05ce486e9475c137bd8095517435bd74552ea9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 78f2e1df65a5cc30225c43888c13ca300daf3be8
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557787"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682721"
 ---
 # <a name="developing-digital-inventions"></a>開發數位開始創造發明
 

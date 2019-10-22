@@ -4,22 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-透過應用程式進行互動
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5dcfbc34c31346b4efada049fc46effac149cd68
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3db2349e3c1da7c80f3089ea187a3de72d006d1f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557254"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683308"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
 如[democratizing 資料](./data.md)文章中所述，資料是新的石油。 它燃料了各種數位經濟的創新。 以這種比喻為基礎，應用程式是將該燃料放入正確手中所需的激發站和基礎結構。
 
 在某些情況下，資料就足以推動變更並符合客戶的需求。 更常見的情況是，客戶需要的解決方案會要求應用程式塑造資料並建立經驗。 應用程式是我們與使用者互動的方式。 這些是回應客戶觸發程式所需的進程的主資料夾。 它們是客戶提供資料和接收指引的方式。 本文將概述幾個原則，以根據要驗證的假設來調整適當的應用程式方案。
+
+![透過應用程式參與](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>共用程式碼
 
@@ -36,11 +38,27 @@ ms.locfileid: "72557254"
 > [!NOTE]
 > 當您利用公民開發人員測試假設時，建議專業開發人員提供支援、審查和指引。 假設在大規模驗證之後，將應用程式轉換成更健全的程式設計模型的流程，將會加速創新。 與早期程式定義中的專業開發人員合作，稍後可能會產生更清楚的轉換。
 
-## <a name="modern-web-experiences"></a>新式 web 體驗
+## <a name="intelligent-experiences"></a>智慧型體驗
+
+智慧型體驗結合現代化 web 應用程式的速度和規模，以及認知服務和 bot 的智慧。 單獨，每個都可能足以滿足您客戶的需求。 結合可以透過數位體驗達成的需求，也會受到擴充，但仍可包含開發投資。
+
+### <a name="modern-web-apps"></a>新式 web 應用程式
 
 當需要應用程式或經驗以滿足客戶需求時，現代化 web 應用程式可能是達到該需求最快的方式。 新式 web 體驗可以快速地與內部或外部客戶互動，並允許在解決方案上快速反覆運算。
 
-Azure App Service 為您的應用程式提供裝載環境，以移除基礎結構管理和 OS 修補的負擔。 它提供自動調整規模以符合您的使用者需求，但受您定義的限制所約束，以保持檢查成本。 App Service 為 ASP.NET、ASP.NET Core、JAVA、Ruby、node.js、PHP 或 Python 等語言提供一流支援。 如果您需要裝載另一個執行時間堆疊，適用于容器的 Web 應用程式可讓您快速且輕鬆地在 App Service 環境中裝載 Docker 容器，以允許您將自訂程式碼堆疊裝載于從伺服器 busin 的環境中ess.
+### <a name="infusing-intelligence"></a>加入智慧型功能情報
+
+機器學習服務和人工智慧越來越適用于開發人員。 具有預測性功能的通用 Api 可廣泛使用，讓開發人員能夠透過擴充的資料和預測存取，更符合客戶的需求。
+
+將智慧新增至解決方案，可以啟用語音轉換文字、文字翻譯、電腦視覺，甚至是視覺效果搜尋。 透過這些擴充的功能，開發人員可以更輕鬆地建立運用智慧的解決方案，以建立互動式和現代化的體驗。
+
+### <a name="bots"></a>Bot
+
+Bot 提供的體驗比較不像使用電腦，比較像是與人溝通，或至少是與智慧型機器人溝通。 在不再需要直接人為介入的自動化系統上，Bot 可用於輪替簡單、重複性工作，例如預訂晚餐或蒐集設定檔資訊。 使用者可使用文字、互動式卡片和語音來與 Bot 交談。 Bot 互動可以是快速的問與答，也可以是以智慧方式提供服務存取權的複雜對話。
+
+Bot 很類似現代化 Web 應用程式，在網際網路上運作，並使用 API 來傳送和接收訊息。 視 Bot 的種類而定，Bot 的功能差異很大。 現代化 Bot 軟體依賴一些技術和工具，可在各種平台上提供日益複雜的體驗。 不過，簡單的 Bot 可能只會收到訊息，並以極少的相關程式碼來回應使用者。
+
+Bot 可執行其他類型的軟體可以執行的作業：讀取和寫入檔案、使用資料庫和 API，以及進行一般計算工作。 Bot 的特點就是其使用通常保留給人與人通訊的機制。
 
 ## <a name="cloud-native-solutions"></a>雲端原生解決方案
 
@@ -54,7 +72,7 @@ Azure App Service 為您的應用程式提供裝載環境，以移除基礎結�
 
 大部分的現代化形式，包括稍微重構應用程式，都包含在雲端採用架構內的[遷移方法](../../migrate/index.md)中。 該方法會透過將[數位資產](../../digital-estate/index.md)遷移至雲端的流程，引導雲端採用小組。 [Azure 遷移指南](../../migrate/azure-migration-guide/index.md)為相同的方法提供了一種簡單的方法，適用于少量的工作負載或甚至是單一應用程式。
 
-一旦遷移並現代化，就有多種方式可以利用解決方案來建立新的創新解決方案，以滿足客戶的需求。 比方說，[公民開發人員](#citizen-developers)可以測試假設或專業開發人員，以建立[現代化的 web 體驗](#modern-web-experiences)或[雲端原生解決方案](#cloud-native-solutions)。
+一旦遷移並現代化，就有多種方式可以利用解決方案來建立新的創新解決方案，以滿足客戶的需求。 比方說，[公民開發人員](#citizen-developers)可以測試假設或專業開發人員，以建立[智慧型體驗](#intelligent-experiences)或[雲端原生解決方案](#cloud-native-solutions)。
 
 ### <a name="extend-an-existing-solution"></a>擴充現有的解決方案
 
@@ -69,7 +87,7 @@ Azure App Service 為您的應用程式提供裝載環境，以移除基礎結�
 如果無法輕鬆擴充應用程式，可能需要重構解決方案。 在此方法中，工作負載會遷移至雲端。 遷移之後，會將應用程式的部分修改或複製為 web 服務或[微服務](/azure/architecture/guide/architecture-styles/microservices)，並以平行方式部署到現有的解決方案。 以平行服務為基礎的解決方案可視為擴充解決方案。 此解決方案只會將現有的解決方案包裝在雲端中託管的新體驗。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
 
 > [!CAUTION]
-> 重構/重新架構解決方案或集中商務邏輯可能很快就會成為耗時的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)，而不是客戶價值的來源。 這是創新的風險，特別是在假設驗證的初期。 有了設計解決方案的創意，應該會有一個不需要重構現有解決方案的 MVP 路徑。 最好是延遲重構，直到可以大規模驗證初始假設為止。
+> 重構或重新架構解決方案或集中商務邏輯可能很快就會成為耗時的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)，而不是客戶價值的來源。 這是創新的風險，特別是在假設驗證的初期。 有了設計解決方案的創意，應該會有一個不需要重構現有解決方案的 MVP 路徑。 最好是延遲重構，直到可以大規模驗證初始假設為止。
 
 ## <a name="operating-model-innovations"></a>操作模型創新
 
@@ -85,7 +103,7 @@ Azure App Service 為您的應用程式提供裝載環境，以移除基礎結�
 
 若要準備交付創新解決方案所需的許多反復專案，請務必預先考慮。 藉由優先列出無伺服器選項，儘早在程式中將營運負擔降至最低。
 
-在 Azure 中，無伺服器應用程式選項可能包括[Azure App Service](https://docs.microsoft.com/azure/app-service/overview)、 [Service Fabric](https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/service-fabric-microservices)、[容器](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)等。
+在 Azure 中，無伺服器應用程式選項可以包含[Azure App Service](https://docs.microsoft.com/azure/app-service/overview)或[容器](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)。
 
 Azure 會同時提供無伺服器交易資料選項，以減少額外負荷。 [[資料庫產品] 清單](https://docs.microsoft.com/azure/#pivot=products&panel=databases)提供裝載資料的選項，而不需要完整的資料平臺。
 

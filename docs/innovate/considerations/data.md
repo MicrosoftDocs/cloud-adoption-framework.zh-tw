@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-將大眾化資料
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0ce40f1d8b2a58b9a9c48a4181376e7b680b25c4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557748"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683265"
 ---
 # <a name="democratize-data"></a>將大眾化資料
 

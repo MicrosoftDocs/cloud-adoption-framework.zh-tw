@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-與裝置互動
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8c170b543344394396660ee299589a94365cff8f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 5a9ec9f38d89683482d7f98923aa0ef2ccf201b9
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557722"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683220"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 

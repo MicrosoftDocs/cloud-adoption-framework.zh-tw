@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-預測和影響
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2702f1e2807bd2119117283dcb8cfc4fb567c8f5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557150"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682634"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
