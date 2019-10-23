@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ef754732e45b15da29a2471341b234ae02656ce7
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 589e8b118ce85b54acdf53bde91d0e03228a5e3f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378926"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548865"
 ---
 # <a name="before-you-start"></a>開始之前
 
@@ -27,7 +27,7 @@ ms.locfileid: "72378926"
 
 在開始使用 Azure 服務來建置和部署解決方案之前，需要準備您的環境。 在本指南中，我們將介紹相關功能，以協助您組織資源、控制成本和保護與管理組織。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的整備程度一節](../index.md)。
 
-您將了解如何：
+您將學習如何：
 
 ::: zone target="chromeless"
 

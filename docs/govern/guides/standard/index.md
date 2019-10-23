@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967642"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547588"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 
 ## <a name="overview-of-best-practices"></a>最佳做法概觀
 
-這個治理指南會遵循虛構公司在治理成熟度各個階段的體驗， 並以實際的客戶體驗為基礎。 建議的做法則會以該虛構公司的條件約束和需求為主。
+這個治理指南會遵循虛構公司在治理成熟度各個階段的體驗， 並以實際的客戶體驗為基礎。 最佳做法則會以該虛構公司的條件約束和需求為主。
 
-此概觀會根據規範性指引來定義治理的最簡可行產品 (MVP) 以作為快速起點。 它也提供一些治理改進方法的連結，這些改進會隨著新業務或技術風險浮現而進一步新增更多建議的做法。
+此概觀會根據最佳做法來定義治理的最簡可行產品 (MVP) 以作為快速起點。 它也提供一些治理改進方法的連結，這些改進會隨著新業務或技術風險的出現而進一步新增更多最佳做法。
 
 > [!WARNING]
 > 這個 MVP 是基於一組假設的基準起點。 即便是這一系列最佳做法，也是以獨特的業務風險和風險承受度推動的公司原則。 若要查看您是否適用這些假設，請閱讀本文後面[較長的敘述](./narrative.md)。

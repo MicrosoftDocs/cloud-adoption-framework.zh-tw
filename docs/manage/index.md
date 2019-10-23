@@ -1,48 +1,146 @@
 ---
-title: 作業管理簡介
+title: 雲端管理
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 了解雲端採用架構中的作業管理。
+description: 雲端採用架構中的雲端管理
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221432"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547285"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>在雲端中建立作業管理實務
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
-雲端採用是實現商務價值的催化管道。 不過，要實現實際的商業價值，則要透過持續且穩定地部署至雲端的技術資產作業。 本節中的雲端採用架構，會指導讀者逐步完成各種轉換到雲端中的作業管理。
+必須要有紮實的規劃、整備和採用措施，才能提供[雲端策略](../strategy/index.md)。 但要提供實質的商務成果，卻要持續不斷地運作數位資產。 如果沒有為雲端解決方案規劃好可靠、管理完善的作業方法，結果只會徒勞無功。 下列練習可協助您開發所需的商業和技術方法，以便提供能夠實現持續作業的雲端管理措施。
 
-## <a name="actionable-best-practices"></a>可行的最佳做法
+## <a name="getting-started"></a>開始使用
 
-現代化的作業管理解決方案提供了多重雲端檢視的作業。 透過下列建議做法來管理的資產，可能存在於雲端、現有資料中心，或甚至競爭的雲端服務提供者中。 目前，該架構包含兩個參考的建議做法，可使雲端中的作業管理機制發展成熟：
+為了讓您針對此階段的雲端採用生命週期做好準備，此架構建議您進行以下練習：
 
-- [Azure 伺服器管理](./azure-server-management/index.md)：這是上架指南，可納入管理作業所需的雲端原生工具和服務。
-- [混合式監視](./monitor/index.md)：許多客戶已經在 System Center Operations Manager 上進行大量投資。 對於這些客戶，此混合式監視指南可協助客戶比較和對比雲端原生報表工具與 Operations Manager 工具。 透過這樣的比較，可讓您更輕鬆地決定要用於作業管理的工具。
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>建立管理基準</h3>
+定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>定義商務承諾</h3>
+記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>擴展管理基準</h3>
+根據商務承諾和營運決策，利用內含的最佳做法來實作所需的雲端管理工具。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>先進的作業和設計原則</h3>
+需要更高度商務承諾的平台或工作負載，可能需要更深入地檢閱架構，以提供復原能力和可靠性承諾。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>雲端作業
+## <a name="scalable-cloud-management-methodology"></a>可擴充的雲端管理方法
 
-這兩種最佳做法都建立在作業管理的未來狀態方法。
+上述步驟會建立可操作的方法，以供提供雲端採用架構的管理方法。
 
-![CAF 管理方法](../_images/manage/caf-manage.png)
+![管理雲端採用架構中的方法](../_images/manage/caf-manage.png)
 
-**業務配合：** 在管理方法中，所有的工作負載都依重要性和商業價值加以分類。 然後可以透過影響分析來衡量該分類，該影響分析會計算因效能降低或營業中斷而損失的價值。 利用這種實際的營收影響，雲端營運團隊可以與業務部門合作，建立在成本和效能之間取得平衡的承諾。
+## <a name="creating-a-balanced-cloud-portfolio"></a>建立平衡雲端組合
 
-**雲端運算專業領域：** 在業務進行配合之後，就更容易針對每個工作負載追踪和報告雲端作業的正確專業領域。 順著每個專業領域做出決策便可推動能讓企業容易了解的承諾。 這種共同作業的方法可讓業務專案關係人成為尋找成本和效能之間適當平衡的合作夥伴。
+如[業務配合](./considerations/business-alignment.md)一文所述，並非所有工作負載都具有任務關鍵性。 雲端組合內會有各種程度的營運管理需求。 業務配合工作可協助您掌握業務影響，並與業務協調管理成本，以確保您會有最適當的作業管理流程和工具。
 
-- **清查和可見性：** 作業管理至少需要一種清查資產並建立每種資產運行狀態的可見性方法。
-- **作業合規性：** 定期管理資產的設定、調整大小、成本和效能，是維持效能預期的關鍵。
-- **保護和復原：** 盡可能地減少作業中斷並加速復原，都有助於避免效能損失和對營收的影響。 偵測和復原是這個專業領域的重要層面。
-- **平台作業：** 所有的 IT 環境均包含一組常用的平台。 這些平台可能包含 SQL Server 或 HDInsight 之類的資料存放區。 其他常見的平台可能包含如 Kubernetes 或 AKS 容器解決方案。 無論是哪種平台，平台作業的成熟度均著重於根據工作負載如何部署、設定以及使用這些常用平台的自訂作業。
-- **工作負載作業：** 在最高層級的作業成熟度，雲端營運團隊能夠對業務成功至關重要的工作負載進行調整作業。 對於這些重要的工作負載，可用資料可以根據工作負載的使用量協助進行自動修復、調整大小或保護。
+## <a name="objective-of-this-content"></a>此內容的目標
 
-其他指導方針如[設計檢閱架構 (代號：雲端設計原則)](https://docs.microsoft.com/azure/architecture/reliability) 可以協助在上述專業領域內進行有關每個工作負載的詳細架構決策。
+此雲端採用架構小節中的指引有兩個目的：
 
-本節中的雲端採用架構將建置在這些主題上，以在您的組織內完善雲端作業。
+- 提供可操作的作業管理方法範例，顯示客戶常有的一般體驗。
+- 協助您根據商務承諾來建立個人化的管理解決方案。
+
+此內容適用於雲端作業團隊。 也與開發強大雲端作業或雲端設計原則基礎的雲端架構設計師息息相關。
+
+## <a name="intended-audience"></a>目標對象
+
+雲端採用架構的內容會影響企業的業務、技術和文化。 雲端採用架構的這個部分會與 IT 作業、IT 治理、財務、業務主管、網路、身分識別和雲端採用小組進行密切互動。 對於這些人員的各種相依性，需要雲端架構師使用此指引才能達成。 您往往要不只一次尋求這些團隊的協助。
+
+雲端架構設計師可引導並促使這些對象共同合作。 此系列指南的內容旨在協助雲端架構設計師促進與正確對象進行正確的對話，藉以推動必要的決策。 由雲端推動的業務轉型必須由雲端架構設計師居中協助指導整個業務和 IT 的決策。
+
+**本節中的雲端架構設計師專業化：** 雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 雲端採用架構的這一節是專為熱愛操作和管理部署解決方案的雲端架構設計師所設計的。 此架構經常將這些專家稱為「雲端作業」  或統稱為「雲端作業團隊」  。
+
+## <a name="use-this-guide"></a>使用本指南
+
+如果您想要從頭到尾按照本指南操作，此內容可協助您開發健全的雲端作業策略。 本指南會引導您了解此類策略的理論和實作。
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>後續步驟
+
+將方法套用至[建立清楚的商務承諾](./considerations/business-alignment.md)。
+
+> [!div class="nextstepaction"]
+> [建立清楚的商務承諾](./considerations/business-alignment.md)

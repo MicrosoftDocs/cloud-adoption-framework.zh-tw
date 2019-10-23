@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 適用於複雜企業的治理指南
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220568"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683553"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 

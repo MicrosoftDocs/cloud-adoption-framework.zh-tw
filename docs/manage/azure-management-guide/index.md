@@ -1,0 +1,61 @@
+---
+title: Azure 管理指南：開始之前
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: 了解如何使用逐步指引來管理 Azure 作業。
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 10/17/2019
+ms.topic: article
+ms.service: cloud-adoption-framework
+ms.subservice: operate
+ms.custom: fasttrack-edit, AQC
+ms.localizationpriority: high
+ms.openlocfilehash: c71dea28532c2bd90359e650a3462dddd059a2c5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72556491"
+---
+# <a name="before-you-start"></a>開始之前
+
+::: zone target="docs"
+
+> [!NOTE]
+> 本指南是雲端採用架構的創新指引起點。 您也可以在 Azure 快速入門中心內取得本指南。 如需 Azure 快速入門中心的連結，請參閱本文稍後的提示。
+
+::: zone-end
+
+Azure 管理指南的設計目的，是要協助積極的 Azure 客戶建立管理基準，以制定整個 Azure 的資源一致性。 本指南會概述任何 Azure 生產環境所需的基本工具，尤其是裝載了敏感性資料的環境。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的整備程度一節](../index.md)。
+
+## <a name="scope-of-this-guide"></a>本指南的範圍
+
+本指南會指導您該如何建立管理基準工具。 其內容也會概述相關辦法，讓您得以延伸基準或建立超越基準的復原能力。
+
+> [!div class="checklist"]
+>
+> - **清查和可見性：** 建立跨多個雲端的資產清查。 開發對於每個資產執行狀態的可見性。
+> - **作業合規性：** 建立控管規定和流程，確保每個狀態都已完成正確設定，並在妥善管理的環境中執行。
+> - **保護和復原：** 確保所有受控資產都有受到保護，並可使用基準管理工具加以復原。
+> - **增強的基準選項：** 評估可能符合商務需求的常見附加基準。
+> - **平台作業：** 使用妥善定義的服務目錄和集中管理的平台來延伸管理基準。
+> - **工作負載作業：** 延伸管理基準，以納入對於任務關鍵性工作負載的關注。
+
+## <a name="management-baseline"></a>管理基準
+
+管理基準是一組應套用至每個環境資產的最基本工具和流程。 管理基準中可以納入數個額外的選項。 接下來的幾篇文章會將焦點放在所需的最基本選項 (而不是所有可用的選項)，以加速雲端管理功能。
+
+::: zone target="docs"
+
+> [!TIP]
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 管理指南]  。 然後，遵循逐步指示來進行。
+
+後續步驟：[清查和可見性](./inventory.md)
+
+::: zone-end
+
+::: zone target="chromeless"
+
+本指南會提供互動式步驟讓您試用所推出的功能。 若要回到您先前離開的地方，請使用階層連結來瀏覽。
+
+::: zone-end

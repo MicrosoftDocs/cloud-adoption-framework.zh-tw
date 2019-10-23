@@ -27,9 +27,13 @@
             - name: 創新
               tocHref: /azure/cloud-adoption-framework/innovate/
               topicHref: /azure/cloud-adoption-framework/innovate
-        - name: 操作
-          tocHref: /azure/cloud-adoption-framework/operate/
-          topicHref: /azure/cloud-adoption-framework/operate
+              items:
+                - name: Azure 創新指南
+                  tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
+                  topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
+        - name: 作業模型
+          tocHref: /azure/cloud-adoption-framework/operating-model/
+          topicHref: /azure/cloud-adoption-framework/operating-model
           items:
             - name: 治理
               tocHref: /azure/cloud-adoption-framework/govern/

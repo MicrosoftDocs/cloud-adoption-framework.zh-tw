@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967596"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547577"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -70,6 +70,8 @@ ms.locfileid: "71967596"
 
 > [!WARNING]
 > 您可能需要更強固的治理起點。 在這種情況下，請考慮[下面](#azure-virtual-datacenter)所簡短描述的 [Azure 虛擬資料中心](#azure-virtual-datacenter)方法。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
+
+<!-- markdownlint-disable MD028 -->
 
 > [!NOTE]
 > 每個指南都不太可能完全符合您的狀況。 請選擇最接近您的狀況的指南，並用它當作起點。 在整個指南中，會提供額外資訊來協助您自訂決策，以符合特定準則。

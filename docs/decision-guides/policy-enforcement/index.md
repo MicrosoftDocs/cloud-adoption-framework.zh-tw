@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023703"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547870"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "71023703"
 
 ![繪製符合下列快速連結的原則強制執行選項 (從最簡單到最複雜)](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-跳至：[基準建議做法](#baseline-recommended-practices) | [原則合規性監視](#policy-compliance-monitoring) | [原則強制執行](#policy-enforcement) | [跨組織原則](#cross-organization-policy) | [自動化強制執行](#automated-enforcement)
+跳至：[基準最佳做法](#baseline-best-practices) | [原則合規性監視](#policy-compliance-monitoring) | [原則強制執行](#policy-enforcement) | [跨組織原則](#cross-organization-policy) | [自動化強制執行](#automated-enforcement)
 
 隨著您的雲端資產成長，您會面臨到跨更大的資源和訂用帳戶陣列維護及強制執行原則的對應需求。 當您的資產變得更大，組織原則需求也增加時，就必須擴充原則強制執行流程範圍，以確保遵循的原則皆一致並迅速偵測違規。
 
@@ -30,7 +30,7 @@ ms.locfileid: "71023703"
 
 決定原則強制執行流程範圍的主要因素，是組織的[雲端治理需求](../../govern/index.md)、雲端資產的大小與性質，以及[訂用帳戶設計](../subscriptions/index.md)如何反映組織。 當資產大小增加或集中管理原則強制執行的需求變大，兩者都有必要增加強制執行範圍。
 
-## <a name="baseline-recommended-practices"></a>基準建議做法
+## <a name="baseline-best-practices"></a>基準最佳做法
 
 對於單一訂用帳戶和簡單的雲端部署，使用 Azure 中資源和訂用帳戶的原生功能，即可強制執行許多公司原則。 一致使用雲端採用架構[決策指南](../index.md)中所討論的模式，可協助建立基準層級的原則合規性，而不需要另行投資原則強制執行。 這些功能包括：
 

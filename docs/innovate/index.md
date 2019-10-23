@@ -1,35 +1,122 @@
 ---
-title: 雲端創新
+title: 雲端採用架構中的雲端創新
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 雲端創新內容的簡介
+description: 了解雲端採用架構中的雲端創新。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 10/14/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4dbdaeecc094afd90df078a59774d886fd909924
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+layout: LandingPage
+ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816596"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72545135"
 ---
-# <a name="innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的創新
+# <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 
-雲端創造讓客戶創新的全新機會。
+每個 IT 組合都會集合一些工作負載和想法，藉此來大幅改善公司在市場上的地位。 雖然大部分的雲端採用工作都集中在現有工作負載的移轉和現代化，但透過採用雲端所衍生出的最大商業價值卻是來自創新活動，因為這些活動能夠實現新的技術技能並擴大商務功能。 雲端組合可以帶來最大的投資回報，因此本節的雲端採用架構將重點放在這個部分。
 
-> [!NOTE]
-> 在 2019 年第 3 季，雲端採用架構擴大，納入關於現代化和雲端原生方式的指引，以跨數位資產和應用程式組合推動創新。
+## <a name="getting-started"></a>開始使用
 
-## <a name="application-modernization-and-innovation"></a>應用程式現代化和創新
+為了讓您針對此階段的雲端採用生命週期做好準備，此架構建議您進行以下練習：
 
-雲端原生的應用程式與資料加速開發和實驗週期。 透過將解決方案或其元件現代化，舊版應用程式就可以利用許多相同的雲端原生優點。 使用雲端技術的新式 DevOps 與 SDLC 方法，可縮短從構想變成產品的時間。 綜合上述幾點，這些工具可吸引客戶採用此流程，建立時間更短的回饋迴圈和更佳的客戶體驗。
+<!-- markdownlint-disable MD033 -->
 
-## <a name="data-platform-modernization-and-innovation"></a>資料平台現代化和創新
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./business-value.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>商業價值共識</h3>
+在決定技術解決方案之前，請務必配合所需的商業價值。 該價值應與雲端策略相互呼應。 在此累加方法中，商業價值會以假設的客戶需求來呈現。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovation-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Azure 創新指南</h3>
+Azure 中所能使用的眾多雲端原生工具都可以加快創新解決方案的開發腳步。 根據假設的客戶，所適用的工具組合可能會不同。 建議您使用基本工具來建立最簡可行產品 (MVP)。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>最佳作法</h3>
+驗證架構決策是否遵循工具鏈中每個工具的最佳做法。 這些最佳做法有助於加快解決方案的開發腳步，並可作為穩定架構設計的參考。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/adoption.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>意見反應迴圈</h3>
+在反覆執行每項開發的期間，開發中的解決方案會讓團隊有機會和客戶一起學習。 快速且精確的客戶意見反應迴圈，會對測試、測量及學習有所幫助，從而縮減上市時間的影響。 了解 Azure 和 GitHub 如何讓意見反應迴圈加速運行。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-雲端可在常見平台內啟用新形式的資料。 增加速度、真實性、種類與資料數量，讓資料專業人員跨更廣泛的資料集開發深入見解和預測。 IoT 和 Azure Data Factory 等擴充的 Ingression 工具，可讓範圍更廣的小組雙向整合實體與虛擬產品間的資料。
+## <a name="methodology-summary"></a>方法摘要
 
-## <a name="infrastructure-modernization-and-innovation"></a>基礎結構現代化和創新
+[創新方法的考慮區段](./considerations/index.md)會為應用程式開發、DevOps、IT 和業務團隊建立共通的語言，以便實現創新。 上述練習會讓此方法在開發創新解決方案期間變得可行。
 
-部署、作業和治理基礎結構的現代化方法，就是迅速縮小開發與作業之間的落差。 使用一般範本，為各種不同的應用程式模式建立環境處理站，讓 IT 和作業小組加快部署速度，同時降低風險。 整合作業可讓 DevOps 不必維護設定漂移、安全性基準實作、作業監視及其他 IT 服務。 現代化並創新 IT 產品組合，以與 DevOps 更緊密配合，跨數位資產和應用程式組合加速創新。
+![雲端採用架構的創新方法](../_images/innovate/innovate-methodology.png)
+
+此方法是以現有的精簡方法為基礎，以便建立主題為雲端的客戶採用對話，以及可用來產生商業價值的科學模型。 此方法也能讓現有的 Azure 服務與可管理的決策流程互相配合，而讓您更輕鬆地找到合適的技術選項來解決特定客戶需求或假設。
+
+## <a name="next-steps"></a>後續步驟
+
+雲端創新期間的第一項練習是[建立商業價值共識](./business-value.md)。
+
+> [!div class="nextstepaction"]
+> [建立商業價值共識](./business-value.md)
