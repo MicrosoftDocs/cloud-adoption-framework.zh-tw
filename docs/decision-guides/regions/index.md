@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解雲端平台區域的選取。
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769412"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -44,7 +44,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 想要有健全的雲端部署，就需要有經過深思熟慮、已將 Azure 區域納入考量的網路。 在考慮過上述要作為部署目的地區域的特性之後，就必須部署網路。 雖然關於網路的詳盡討論不在本文涵蓋範圍內，但您必須考慮一些事項：
 
-1. Azure 區域會成對部署。 如果某個區域發生嚴重失敗，系統便會將同一地緣政治界限*內的另一個區域指定為其配對區域。 請考慮將部署到配對區域作為主要和次要復原策略。 *Azure 巴西明顯例外，其配對區域正好是美國中南部。 如需詳細資訊，請參閱[這裡](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions)。
+1. Azure 區域會成對部署。 如果某個區域發生嚴重失敗，系統便會將同一地緣政治界限*內的另一個區域指定為其配對區域。 請考慮將部署到配對區域作為主要和次要復原策略。 *Azure 巴西明顯例外，其配對區域正好是美國中南部。 如需深入了解，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
     1. Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
     1. 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
     1. 如果您不打算利用 GRS 來支援區域復原需求，則建議您「不要」  利用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。

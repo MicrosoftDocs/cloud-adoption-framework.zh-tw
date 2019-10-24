@@ -192,7 +192,7 @@
               href: migrate/index.md
             - name: Azure 移轉指南
               items:
-                - name: Azure 移轉指南簡介
+                - name: 開始之前
                   href: migrate/azure-migration-guide/index.md
                 - name: Azure 移轉的必要條件
                   href: migrate/azure-migration-guide/prerequisites.md
@@ -274,7 +274,7 @@
                               href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                         - name: 調整移轉規模
                           href: migrate/azure-best-practices/contoso-migration-scale.md
-                - name: 適用於遷移 VMware 主機的最佳做法
+                - name: 適用於遷移 VMWare 主機的最佳做法
                   items:
                     - name: 概觀
                       href: migrate/azure-best-practices/vmware-host.md
@@ -334,7 +334,7 @@
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 使用 VMware SRM 將私人雲端設定為災害復原網站
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                - name: 適用於遷移 SQL 伺服器的最佳做法
+                - name: 適用於遷移資料平台的最佳做法
                   items:
                     - name: 概觀
                       href: migrate/azure-best-practices/sql-migration.md
@@ -418,16 +418,16 @@
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 將 Oracle 線上遷移至適用於 PostgreSQL 的 Azure DB
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: 大型主機移轉
-                      items:
-                        - name: 概觀
-                          href: infrastructure/mainframe-migration/index.md
-                        - name: 迷思與事實
-                          href: infrastructure/mainframe-migration/myths-and-facts.md
-                        - name: 移轉策略
-                          href: infrastructure/mainframe-migration/migration-strategies.md
-                        - name: 應用程式策略
-                          href: infrastructure/mainframe-migration/application-strategies.md
+                - name: 適用於遷移大型主機的最佳做法
+                  items:
+                    - name: 概觀
+                      href: infrastructure/mainframe-migration/index.md
+                    - name: 迷思與事實
+                      href: infrastructure/mainframe-migration/myths-and-facts.md
+                    - name: 移轉策略
+                      href: infrastructure/mainframe-migration/migration-strategies.md
+                    - name: 應用程式策略
+                      href: infrastructure/mainframe-migration/application-strategies.md
                 - name: 適用於將工作負載最佳化的最佳做法
                   items:
                     - name: 針對工作負載估計成本和調整大小
@@ -546,7 +546,7 @@
               href: innovate/index.md
             - name: Azure 創新指南
               items:
-                - name: 簡介
+                - name: 開始之前
                   href: innovate/innovation-guide/index.md
                 - name: 針對客戶意見反應做好準備
                   href: innovate/innovation-guide/adoption.md
@@ -654,40 +654,6 @@
                   items:
                     - name: 概觀
                       href: innovate/best-practices/apps.md
-                    - name: 雲端原生
-                      items:
-                        - name: 雲端原生應用程式
-                          items:
-                            - name: 雲端原生應用程式的參考解決方案
-                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                            - name: 使用 SQL DB 建立 .Net Core 應用程式
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 使用 SQL DB 建立 .Net 應用程式
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 使用 MySQL 建立 PHP 應用程式
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 使用 MongoDB 建立 Node.js
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 建立 iOS 應用程式
-                              href: 'https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-ios-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 微服務
-                          items:
-                            - name: 在 Azure 中設計、建置及操作微服務
-                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 使用 Service Fabric 的微服務參考架構
-                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/service-fabric?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: 使用 Azure Kubernetes Services (AKS) 的微服務參考架構
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Azure 應用程式的設計指南
-                              href: 'https://docs.microsoft.com/azure/architecture/guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: 遷移/現代化然後創新
-                      items:
-                        - name: 遷移工作負載 (應用程式、VM 和資料)
-                          href: 'https://azure.microsoft.com/migration/'
-                        - name: 使用受控 Azure Kubernetes Services (AKS) 遷移現有應用程式
-                          href: 'https://azure.microsoft.com/solutions/architecture/migrate-existing-applications-with-aks/'
-                        - name: 透過 Azure Stack 和雲端原生應用程式來延伸舊版資料
-                          href: 'https://azure.microsoft.com/solutions/architecture/unlock-legacy-data/'
                     - name: 公民開發人員
                       items:
                         - name: 在 PowerApps 中建立應用程式
@@ -700,28 +666,58 @@
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-compliance-data-privacy?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 公民開發人員解決方案的資料外洩防護原則
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: 新式 Web 體驗
+                    - name: 智慧型體驗
                       items:
-                        - name: 雲端原生應用程式的參考解決方案
-                          href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                        - name: 使用 SQL DB 建立 .Net Core 應用程式
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 使用 SQL DB 建立 .Net 應用程式
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 使用 MySQL 建立 PHP 應用程式
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 使用 MongoDB 建立 Node.js
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 現代化 Web 應用程式
+                          items:
+                            - name: Web 應用程式參考解決方案
+                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                            - name: 使用 SQL DB 建立 .Net Core 應用程式
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 使用 SQL DB 建立 .Net 應用程式
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 使用 MySQL 建立 PHP 應用程式
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 使用 MongoDB 建立 Node.js
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 加入智慧型功能情報
+                          items:
+                            - name: Visual Studio 中的電腦視覺
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service'
+                            - name: 即時翻譯文字
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate'
+                            - name: 使用 LUIS 了解情感
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis'
+                            - name: 語音轉換文字
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows'
+                            - name: Bing Web 搜尋
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app'
+                            - name: 透過影像進行視覺搜尋
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/index'
+                        - name: ChatBots
+                          items:
+                            - name: 建立及部署基本 Bot
+                              href: 'https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy'
+                            - name: 學習路徑 - 使用 Azure Bot 服務建立 Bot
+                              href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/'
+                            - name: 存放庫 - Github 上的 Azure Bots 範例
+                              href: 'https://github.com/microsoft/botframework-sdk'
                     - name: 雲端原生應用程式
                       items:
                         - name: 微服務架構
                           items:
-                            - name: 使用 Azure Kubernetes Services (AKS) 的微服務參考架構
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 容器
-                          items:
                             - name: 在 Azure 中設計、建置及操作微服務
                               href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 使用 Azure Kubernetes Services (AKS) 的微服務參考架構
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 參考架構 - 無伺服器微服務範例
+                              href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 容器
+                          items:
+                            - name: 什麼是 Kubernetes？
+                              href: 'https://azure.microsoft.com/topic/what-is-kubernetes/'
+                            - name: 準備 Azure Kubernetes Service (AKS) 的應用程式
+                              href: 'https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: 建立 Azure Red Hat OpenShift 叢集
                               href: 'https://docs.microsoft.com/azure/openshift/tutorial-create-cluster?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Spring Boot 微服務
@@ -732,6 +728,16 @@
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: 將 Azure Cosmos DB 繫結至 Azure Spring Cloud 應用程式
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 事件驅動的應用程式
+                          items:
+                            - name: 學習路徑 - 建立無伺服器應用程式
+                              href: 'https://docs.microsoft.com/learn/paths/create-serverless-applications/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 函式開發人員指南
+                              href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 電子書 - 無伺服器運算操作手冊
+                              href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 文件 - Azure Functions
+                              href: 'https://docs.microsoft.com/azure/azure-functions/'
                 - name: 實現採用
                   items:
                     - name: 概觀
