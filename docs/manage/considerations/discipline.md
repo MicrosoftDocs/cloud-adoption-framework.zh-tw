@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 294ea288af478e0e451c9fd38663a26acb10359d
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 44bfe58f86a442a5129eee791e3da0f7a6b68031
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682599"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805805"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理調節
 
@@ -33,6 +33,8 @@ ms.locfileid: "72682599"
 - **工作負載特製化**：對於真正要徑任務的工作負載，可能會有成本上的理由，以更深入的方式管理該工作負載。 工作負載特製化會利用工作負載遙測來決定每日管理的更先進方法。 相同的資料通常會識別自動化、部署和設計方面的改進，使其比單獨操作管理能夠提供更高的穩定性、可靠性和復原能力。
 - **不支援**：對於分類為不支援或不重要的任何工作負載，溝通不會透過雲端管理專業領域傳遞的一般管理程式也同樣重要。
 
+組織也可以選擇將與[一或多個這些管理層級相關的功能外包給服務提供者](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)來提供更高的精確度和透明度。
+
 本系列的其餘文章將概述在每個專業領域中經常會發現的一些進程。
 [Azure 管理指南](../azure-management-guide/index.md)會以平行方式來示範可支援每個處理常式的工具。 如需建立管理基準的協助，請從 Azure 管理指南開始。 建立基準之後，本文系列和隨附的最佳作法可協助擴充該基準，以定義其他層級的管理支援。
 
@@ -46,8 +48,8 @@ ms.locfileid: "72682599"
 - **營運合規性：** 設定、調整大小、成本和資產效能的一般管理，是維護效能期望和管理基準的關鍵。
 - **保護與復原：** 將作業中斷和加速復原降至最低，有助於避免效能損失和收益影響。 在任何管理基準中，偵測和復原是此專業領域的基本層面。
 
-平臺特殊化層級的管理會從對應到平臺作業專業領域的程式和工具提取。
-同樣地，工作負載特製化層級的管理會從對應至工作負載作業專業領域的進程和工具提取。
+平臺特殊化層級的管理會從對應到平臺作業專業領域的程式和工具提取。 同樣地，工作負載特製化層級的管理會從對應至工作負載作業專業領域的進程和工具提取。
+
   
 ## <a name="next-steps"></a>後續步驟
 

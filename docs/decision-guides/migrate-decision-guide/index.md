@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023822"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888902"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 
@@ -32,7 +32,7 @@ ms.locfileid: "71023822"
 - **您的應用程式目前是在專用的虛擬機器上執行，還是與其他應用程式共用裝載？** 與在共用的伺服器上執行的應用程式相比，在專用的虛擬機器上執行的應用程式可能會更輕鬆地移轉到 PaaS 裝載選項。
 - **您的資料移轉是否會超過網路頻寬？** 內部部署資料來源與 Azure 之間的網路容量可能是資料移轉的瓶頸。 如果您需要傳送的資料面臨阻礙有效率或即時移轉的頻寬限制，您可能需要查看替代或離線的轉移機制。 Cloud Adoption Framework [有關移轉複寫的文章](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)討論了複寫限制如何影響移轉工作。 作為移轉評估的一部分，請諮詢您的 IT 小組，以確認您的本機和 WAN 頻寬是否能夠處理您的移轉需求。 另請參閱[移轉期間儲存體需求超過網路容量時的擴充範圍移轉案例](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites)。
 - **您的應用程式是否使用現有的 DevOps 管線？** 在許多情況下，可以輕鬆地重構 Azure 管線，以將應用程式部署到雲端式裝載環境。
-- **您的資料是否有複雜的資料儲存需求？** 生產應用程式通常需要高可用性的資料儲存體、提供 Always On 功能，和類似的服務執行時間和持續性功能。 以 Azure PaaS 為基礎的受控資料庫選項 (例如 Azure SQL Database、適用於 MySQL 的 Azure 資料庫，以及 Azure Cosmos DB) 均提供 99.99% 的執行時間服務等級協定。 相反，Azure VM 上以 IaaS 為基礎的 SQL Server 提供 99.95% 的單一執行個體服務等級協定。 如果您的資料無法現代化以使用 PaaS 儲存體選項，則確保較高的 IaaS 執行時間將涉及更複雜的資料儲存體案例，例如執行 SQL Server Always On 叢集，以及在執行個體之間不斷同步處理資料。 這可能涉及顯著的裝載及維護成本，因此在考慮資料移轉選項時，平衡正常執行時間需求、現代化工作和整體預算影響非常重要。
+- **您的資料是否有複雜的資料儲存需求？** 生產應用程式通常需要高度可用的資料儲存體、提供 Always On 功能，和類似的服務執行時間和持續性功能。 以 Azure PaaS 為基礎的受控資料庫選項 (例如 Azure SQL Database、適用於 MySQL 的 Azure 資料庫，以及 Azure Cosmos DB) 均提供 99.99% 的執行時間服務等級協定。 相反，Azure VM 上以 IaaS 為基礎的 SQL Server 提供 99.95% 的單一執行個體服務等級協定。 如果您的資料無法現代化以使用 PaaS 儲存體選項，則確保較高的 IaaS 執行時間將涉及更複雜的資料儲存體案例，例如執行 SQL Server Always On 叢集，以及在執行個體之間不斷同步處理資料。 這可能涉及顯著的裝載及維護成本，因此在考慮資料移轉選項時，平衡正常執行時間需求、現代化工作和整體預算影響非常重要。
 
 ## <a name="innovation-and-migration"></a>創新和移轉
 

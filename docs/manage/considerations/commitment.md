@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9ac7b930018e8eb8a8d750692de808be943db0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558125"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805810"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -43,7 +43,7 @@ ms.locfileid: "72558125"
 [Azure 管理指南](../azure-management-guide/index.md)概述 azure 中可用的管理工具。 在達到業務承諾之前，它應該決定可接受的標準層級管理基準，以套用至所有受控工作負載。 接著，它會根據 CPU 核心計數、磁碟空間和其他與資產相關的變數，計算 IT 組合中每個受控工作負載的標準管理成本。 它也會根據架構來估計每個工作負載的複合 SLA。
 
 > [!TIP]
-> IT 營運小組通常會針對初始複合 SLA 使用預設的最低 99.9% 執行時間。 他們也可以選擇根據平均工作負載來標準化管理成本，特別是針對具有最低限度記錄和儲存需求的解決方案。 將幾個中等重要性工作負載的成本平均，可以提供初始交談的起點。
+> IT 營運小組通常會針對初始複合 SLA 使用預設的最低99.9% 執行時間。 他們也可以選擇根據平均工作負載來標準化管理成本，特別是針對具有最低限度記錄和儲存需求的解決方案。 將幾個中等重要性工作負載的成本平均，可以提供初始交談的起點。
 
 > [!TIP]
 > 針對使用[Ops 管理活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理的讀者，應更新 ops 管理欄位以反映這些必要條件。 這些欄位包括承諾用量層級、複合 SLA 和每月成本。 每月成本應該代表每月新增的作業管理工具成本。
@@ -53,6 +53,8 @@ ms.locfileid: "72558125"
 ## <a name="management-responsibility"></a>管理責任
 
 在傳統的內部部署環境中，通常會假設管理環境的成本是 IT 營運所擁有的 sunk 成本。 在雲端中，管理是直接影響預算的有目的決策。 每個管理功能的成本可能會更直接針對部署至雲端的每個工作負載進行屬性化。 這種方式可提供更大的控制能力，但它確實為雲端營運小組和雲端策略小組建立了一項需求，必須先承諾遵守關於責任的合約。
+
+組織也可以選擇將[其一些持續的管理功能外包給服務提供者](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)，讓組織能夠更精確地控制授與資源的存取權，以及對服務提供者所執行的動作有更大的透明度。
 
 **委派的責任：** 由於不需要集中化並採用作業管理的額外負荷，因此許多組織的 IT 營運會考慮新的方法。 其中一個常見的方法稱為委派責任。 在卓越模型的雲端中心，平臺作業和平臺自動化提供了自助管理工具，可供商務導向營運小組使用，而不受中央 IT 營運小組的影響。 這種方法可讓商務專案關係人完全掌控與管理相關的預算。 此外，它也可讓 CCoE 確保正確地執行一組最小的護欄。 在此模型中，它會作為 broker 和指南，協助企業做出明智的決策。 商務營運負責監督相依工作負載的日常作業。
 
@@ -66,7 +68,7 @@ ms.locfileid: "72558125"
 
 ## <a name="cloud-tenancy"></a>雲端租賃
 
-雖然不建議這麼做，但企業在多個租使用者中支援資產並不常見。 針對多租使用者的燈塔文章提供幾個範例，說明多租使用者 Azure 環境的原因。 根據該文章中的範例，下一次的承諾是租使用者。
+對於大部分的企業而言，當所有資產都位於單一租使用者時，管理就會變得更容易。 不過，某些組織可能需要維護多個租使用者。 [使用 Azure 燈塔集中管理作業](../centralize-operations.md)一文提供一些範例，其中企業可能需要多租使用者的 Azure 環境。
 
 **此工作負載會與所有其他工作負載一起位於單一 Azure 租使用者嗎？**
 
