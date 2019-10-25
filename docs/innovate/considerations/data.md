@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683265"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888899"
 ---
 # <a name="democratize-data"></a>將大眾化資料
 
@@ -47,7 +47,7 @@ ms.locfileid: "72683265"
 資料控管是很廣泛的主題，可能需要它自己的專屬架構。 這不在[雲端採用架構](../../index.md)的範圍內。 不過，有幾個層面的資料控管，只要一開始就會驗證客戶假設。 以下是這些問題的幾個範例：
 
 - **共用資料是否區分大小寫？** [資料應該在](../../govern/policy-compliance/data-classification.md)任何公用共用之前分類，以保護客戶和公司的興趣。
-- **如果資料很敏感，是否受到保護？** 機密資料的保護應為任何大眾化資料的需求。 著重于[保護資料解決方案](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md)的範例工作負載會提供幾個用於保護資料的參考。
+- **如果資料很敏感，是否受到保護？** 機密資料的保護應為任何大眾化資料的需求。 著重于[保護資料解決方案](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions)的範例工作負載會提供幾個用於保護資料的參考。
 - **資料是否已編目？** 若要深入瞭解所共用的資料，將有助於進行長期的資料管理。 記錄資料的工具（例如 Azure 資料目錄）可以讓此程式在雲端中更容易進行。 有關資料和[資料來源之](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation)[批註](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate)的指引可協助加速此流程。
 
 當 democratization 資料對客戶為重點的假設很重要時，共用資料的治理應位於發行計畫的某處，以保護客戶、資料取用者和公司。

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549089"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888843"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -63,7 +63,7 @@ ms.locfileid: "72549089"
 以下代表將經常參與雲端治理活動的參與者：
 
 - 來自中間管理的領導人，以及已被任命為代表業務的重要角色中的直接參與者，將有助於評估風險承受度。
-- 雲端治理功能的提供是[雲端策略功能](./cloud-strategy.md)的延伸。 就像 CIO 和業務領導者預期會參與雲端策略功能，他們的直屬員工預期會參與雲端治理活動。
+- 雲端治理功能是由[雲端策略功能](./cloud-strategy.md)的延伸模組所提供。 就像 CIO 和業務領導者預期會參與雲端策略功能，他們的直屬員工預期會參與雲端治理活動。
 - 身為符合企業營運領導能力之業務單位成員的業務員工，應能夠做出關於企業和技術風險的決策。
 - 瞭解雲端轉型技術層面的資訊技術（IT）和資訊安全性（IS）員工可能會以輪替的容量提供服務，而不是一致的雲端治理功能提供者。
 
