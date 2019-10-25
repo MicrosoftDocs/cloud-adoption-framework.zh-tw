@@ -19,6 +19,13 @@
         - name: 就緒
           tocHref: /azure/cloud-adoption-framework/ready/
           topicHref: /azure/cloud-adoption-framework/ready
+          items:
+            - name: 最佳作法
+              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+            - name: 最佳作法
+              tocHref: /azure/security/fundamentals/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
         - name: 採用
           items:
             - name: 移轉
