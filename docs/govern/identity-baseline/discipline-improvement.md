@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547457"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915057"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -126,7 +126,7 @@ ms.locfileid: "72547457"
 - 請考量更緊密地與安全性和防止詐騙系統整合。
 - 定期檢閱提升權限使用者或角色的存取權限。
   - 識別有資格啟動管理員權限的每個使用者。
-- 檢閱上架、下架與認證更新流程。
+- 檢查上線、脫離和認證更新流程。
 - 調查身分識別存取管理 (IAM) 模組之間的自動化和通訊增加層級。
 - 請考量實作開發安全性作業 (DevSecOps) 方法。
 - 執行成本、安全性和使用者採用量測結果的影響分析。
