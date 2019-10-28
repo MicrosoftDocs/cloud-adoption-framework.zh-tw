@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547902"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915033"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -26,7 +26,7 @@ ms.locfileid: "72547902"
 
 判斷雲端記錄與報告策略時，關鍵點主要是依據您的組織在作業流程上所做的現有投資，以及對多重雲端策略在某種程度上的支援需求。
 
-有多種方式可用於記錄和報告雲端活動。 雲端原生和集中式記錄是運用訂用帳戶設計和訂用帳戶數目的兩個常見軟體即服務 (SaaS) 選項。
+有多種方式可用於記錄和報告雲端活動。 雲端原生和集中式記錄是運用訂用帳戶設計和訂用帳戶數目的兩個常見的受控服務選項。
 
 ## <a name="planning-your-monitoring-infrastructure"></a>規劃監視基礎結構
 
