@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: e816420e99bfb712db3ad8064b4c077df3edfcee
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548183"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979874"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -24,21 +24,21 @@ ms.locfileid: "72548183"
 
 ![雲端採用策略的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/introduction-cloud-adoption.png)
 
-此數位化轉型也使您有機會實現基礎結構、工作負載和應用程式的現代化。 根據商務策略和目標，採用混合式雲端模型可能是從內部部署到完全在雲端中運作之移轉過程的一部分。 在此旅程期間，IT 團隊面臨的挑戰是採用並實現雲端的快速價值。 它也必須了解如何有效地監視遷移至 Azure 的應用程式或服務，並繼續提供有效的 IT 作業/DevOps。
+此數位化轉型也使您有機會實現基礎結構、工作負載和應用程式的現代化。 根據商務策略和目標，採用混合式雲端模型可能包含在從內部部署到完全在雲端中運作的移轉過程中。 在此旅程期間，IT 團隊面臨的挑戰是採用並實現雲端的快速價值。 IT 團隊也必須了解如何有效地監視遷移至 Azure 的應用程式或服務，並繼續提供有效的 IT 作業和 DevOps。
 
-專案關係人想要使用雲端式軟體即服務 (SaaS) 監視和管理工具。 他們需要了解提供哪些服務和解決方案，以實現端到端的可見性、降低成本，並減少對傳統軟體式 IT 作業工具基礎結構和維護的關注。
+專案關係人想要使用雲端式軟體即服務 (SaaS) 監視和管理工具。 他們需要了解提供哪些服務和解決方案，可以實現端到端的可見性、降低成本，並減少對傳統軟體式 IT 作業工具基礎結構和維護的關注。
 
-不過，IT 通常偏好使用他們已投入大量資金的工具。 這支援其服務作業流程監視兩個雲端模型，最終目標是轉換至 SaaS 型供應項目。 這項選擇不僅因為需要時間來規劃、資源和資金來切換。 也是因為不清楚哪些產品或 Azure 服務適用於或可用於實現轉換。
+不過，IT 團隊通常偏好使用他們已投入大量資金的工具。 此方法可支援其服務作業流程監視兩個雲端模型，並以轉換至 SaaS 型供應項目作為最終目標。 IT 團隊偏好此方法不僅是因為切換需要時間、規劃、資源和資金。 也是因為不清楚哪些產品或 Azure 服務適用於或可用於實現轉換。
 
 本指南的目標是要提供詳細的參考，以協助企業 IT 經理、業務決策者、應用程式架構設計人員和應用程式開發人員了解：
 
 * Azure 監視平台針對其功能進行概述和比較。
 * 用於監視混合、私人和 Azure 原生工作負載的最佳解決方案。
-* 建議的監視方法，用於整體監視基礎結構和應用程式 (從端對端)。 這包括可部署的解決方案，適用於這些遷移至 Azure 的常見工作負載。
+* 建議的監視方法，用於整體監視基礎結構和應用程式 (端對端)。 此方法包括可部署的解決方案，可將這些常見的工作負載遷移至 Azure。
 
-本指南不是使用或配置個別 Azure 服務和解決方案的操作指南，但的確會在適用或可用時引用這些來源。 閱讀本指南後，您將了解如何遵循最佳做法和模式成功操作工作負載。
+本文不是使用或配置個別 Azure 服務和解決方案的操作指南，但的確會在適用或可用時引用這些來源。 閱讀本文後，您將了解如何遵循最佳做法和模式來讓工作負載成功運作。
 
-如果您不熟悉 Azure 監視器和 System Center Operations Manager，並希望在進一步深入之前更了解其獨特之處和彼此之間如何進行比較，請參閱[監視平台概觀](./platform-overview.md)。
+如果您不熟悉 Azure 監視器和 System Center Operations Manager，並希望深入了解其獨特之處和彼此之間如何進行比較，請參閱[監視平台概觀](./platform-overview.md)。
 
 ## <a name="audience"></a>對象
 
@@ -55,7 +55,7 @@ ms.locfileid: "72548183"
 
 ## <a name="products-and-services"></a>產品與服務
 
-可以使用選取的軟體和服務，監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 如下：
+有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 如下：
 
 * System Center Operations Manager
 * Azure 監視器現在包含 Log Analytics 和 Application Insights
@@ -64,7 +64,7 @@ ms.locfileid: "72548183"
 * Azure Logic Apps
 * Azure 事件中心
 
-本指南的第一版涵蓋了我們目前的監視平台 - Azure 監視器和 System Center Operations Manager，並概述了我們建議監視每個雲端部署模型的策略。 其中也包含第一組監視建議，從資料收集和警示開始。
+本指南的第一個版本涵蓋我們目前的監視平台：Azure 監視器和 System Center Operations Manager。 其中也會概述用於監視每個雲端部署模型的建議策略。 其中也包含第一組監視建議，從資料收集和警示開始。
 
 ## <a name="next-steps"></a>後續步驟
 
