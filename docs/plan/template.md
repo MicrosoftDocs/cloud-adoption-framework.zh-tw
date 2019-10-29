@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549179"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048222"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
@@ -45,10 +45,10 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 雲端採用方案會依活動類型來組織活動：
 
-- **Epics**：*長篇故事*代表雲端採用生命週期的整體階段。
-- **功能**：功能可用來組織每個階段內的特定目標。 例如，特定工作負載的遷移是一項功能。
-- **使用者故事**：使用者故事群組會根據特定目標，進入活動的邏輯集合。
-- **Tasks**：工作是要執行的實際工作。
+- **Epics：** *長篇故事*代表雲端採用生命週期的整體階段。
+- **功能：** 功能是用來組織每個階段內的特定目標。 例如，特定工作負載的遷移是一項功能。
+- **使用者故事：** 使用者故事群組會根據特定目標，進入活動的邏輯集合。
+- 工作 **：** 工作是要執行的實際工作。
 
 在每個層級，活動會接著根據相依性進行排序。 活動會連結至雲端採用架構中的文章，以明確地闡明目標或工作。
 

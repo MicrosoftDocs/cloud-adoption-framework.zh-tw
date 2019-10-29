@@ -1,7 +1,7 @@
 ---
-title: 跨任何雲端採用旅程實現客戶成功率
+title: 在雲端採用旅程期間讓客戶成功
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 跨任何雲端採用旅程實現客戶成功率
+description: 在整個雲端採用旅程中實現客戶的成功
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,26 +9,26 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023452"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048332"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>跨任何雲端採用旅程實現成功
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
-適用于 Azure 的 Microsoft Cloud 採用架構是以免費的自助工具提供，可引導讀者完成各種雲端採用工作。 本內容的重點在於協助客戶成功實現可由 Azure 啟用的商業目標。 不過，此內容也會考慮到讀者可能會因應廣泛的商務、文化或技術挑戰，而且可能有時需要雲端中立的位置。 因此，本指南的每個章節都是以 Azure first 方法為開頭，但遵循雲端中立性理論，可以跨商務和技術決策進行調整。
+雲端採用架構是免費的自助工具，可引導讀者完成各種雲端採用工作。 此架構可協助客戶成功實現可由 Microsoft Azure 啟用的商業目標。 不過，此內容也會辨識讀取器可能會解決廣泛的商務、文化或技術挑戰，有時可能需要雲端中立的位置。 因此，本指南的每一節都是從 Azure 優先的方法開始，然後遵循雲端中立的理論，以擴展各種商務和技術決策。
 
-在此架構中，啟用是一種核心主題。 下列檢查清單包含一系列的主題，應內嵌在任何雲端採用工作中，以確保在 IT 與企業中的旅程得以成功：
+在此架構中，啟用是一種核心主題。 下列檢查清單會逐項列出基本的雲端採用原則，確保 IT 和企業都能成功地考慮採用旅程：
 
-- **圖**建立清楚的[商業成果](../strategy/business-outcomes/index.md)、定義的[數位資產計畫](../digital-estate/index.md)，並充分瞭解[採用](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)待辦專案。
+- **計畫：** 建立清楚的[商業成果](../strategy/business-outcomes/index.md)、清楚定義的[數位資產](../digital-estate/index.md)，以及充分瞭解的[採用](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)待處理專案（backlog）。
 - **就緒：** 透過[技能和學習計劃](../ready/technical-skills.md)，確保員工的準備就緒。
-- **2gb/s**定義可管理的作業模式，以在採用之後引導活動。
+- **操作：** 定義可管理的作業模式，以在採用之後引導活動。
   - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
-  - **制約**讓適當的[治理專業領域](../govern/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
+  - **管控：** 讓適當的[治理專業領域](../govern/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
   - **管理：** IT 組合的持續[營運管理](../manage/index.md)，讓商務程式的中斷降到最低，並確保 it 組合的穩定性。
-  - **部門**配合適當的[合作關係和支援選項](../migrate/migration-considerations/assess/partnership-options.md)。
+  - **支援：** 配合適當的[合作關係和支援選項](../migrate/migration-considerations/assess/partnership-options.md)。
 
 ## <a name="additional-tools"></a>其他工具
 

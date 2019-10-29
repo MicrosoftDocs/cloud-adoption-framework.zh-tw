@@ -1,27 +1,27 @@
 ---
-title: 開始使用雲端遷移旅程
+title: 開始在 Azure 中進行雲端遷移旅程
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 開始使用雲端遷移旅程
+description: 開始在 Azure 中進行雲端遷移旅程。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547833"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048326"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>開始使用雲端遷移旅程
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
-瞭解如何使用適用于 Azure 的 Microsoft Cloud 採用架構來開始雲端遷移旅程。 此架構提供使用創新的雲端技術來轉換繼承應用程式工作負載的完整指引。
+使用適用于 Azure 的 Microsoft Cloud 採用架構來開始雲端遷移旅程。 此架構提供使用創新的雲端技術，將繼承應用程式工作負載轉換至雲端的完整指引。
 
 ## <a name="executive-summary"></a>執行摘要
 
-雲端採用架構可協助客戶執行簡化的雲端採用旅程。 此架構包含涵蓋端對端雲端採用旅程的詳細資訊，從目標商業成果開始，並以清楚定義的商業目標來調整雲端就緒程度和評量。 這些結果是透過針對雲端採用所定義的路徑來達成。 透過以遷移為基礎的採用，定義的路徑主要著重于完成將內部部署工作負載遷移至雲端。 有時候，此旅程包括工作負載的現代化，以增加從遷移投入的投資報酬率。
+雲端採用架構可協助客戶執行簡化的雲端採用旅程。 此架構包含端對端雲端採用旅程的詳細資訊，從目標商業成果開始，然後以清楚定義的商業目標來調整雲端就緒程度和評量。 這些結果是透過針對雲端採用所定義的路徑來達成。 透過以遷移為基礎的採用，定義的路徑主要著重于將內部部署工作負載遷移至雲端。 有時候，此旅程包括工作負載的現代化，以增加從遷移投入的投資報酬率。
 
 此架構主要是針對雲端架構設計人員和雲端策略小組，負責雲端採用工作。 不過，此架構中的許多主題與企業和 IT 的其他角色相關。 雲端架構設計人員經常做為 facilitators，以參與每個相關的角色。 此「執行摘要」的設計目的是要在加速對話之前準備各種角色。
 

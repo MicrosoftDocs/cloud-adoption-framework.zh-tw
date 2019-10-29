@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683424"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047761"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -25,7 +25,7 @@ ms.locfileid: "72683424"
 
 ## <a name="primary-toolset"></a>主要工具組
 
-當遷移和現代化目前位於內部內部部署的資料時，最常見的 Azure 工具選擇是[資料移轉服務（DMS）](https://docs.microsoft.com/azure/dms) ，這是較廣泛[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)工具鏈的一部分。 針對現有的 SQL Server 資料來源， [Data Migration Assistant （DMA）](/sql/dma/dma-overview)也可以提供評估和遷移較少量資料結構的協助。
+當遷移和現代化目前位於內部內部部署的資料時，最常見的 Azure 工具選擇是[資料移轉服務（DMS）](https://docs.microsoft.com/azure/dms) ，這是較廣泛[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)工具鏈的一部分。 針對現有的 SQL Server 資料來源， [Data Migration Assistant （DMA）](https://docs.microsoft.com/sql/dma/dma-overview)也可以提供評估和遷移較少量資料結構的協助。
 
 為了支援 Oracle 和 NoSQL 遷移，[資料移轉服務（DMS）](https://docs.microsoft.com/azure/dms)也可以用於目標資料庫的特定類型，例如 Oracle to 于 postgresql 或 MongoDB to Cosmos DB。 採用協力廠商工具或自訂遷移腳本以遷移至 Cosmos DB、HDInsight 或 IaaS 型 VM 選項更常見。
 

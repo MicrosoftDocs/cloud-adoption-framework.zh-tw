@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769598"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048255"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>虛擬資料中心：網路觀點
 
@@ -321,17 +321,17 @@ Operations Management Suite 中的[網路效能監控][NPM]解決方案可以端
 
 工作負載有各式各樣的可能性。 以下只是一些可能的工作負載類型：
 
-**內部 LOB 應用**程式：企業營運應用程式是電腦應用程式，對企業進行中的作業很重要。 LOB 應用程式具有一些共同特性：
+**內部 LOB 應用程式：** 企業營運應用程式是電腦應用程式，對於進行中的企業營運很重要。 LOB 應用程式具有一些共同特性：
 
-- **互動**的特質。 輸入資料後，會傳回結果或報告。
-- **資料驅動**&mdash;具資料密集性，需頻繁存取資料庫或其他儲存體。
-- **整合**&mdash;可與組織內部或外部的其他系統整合。
+- **互動式的本質：** 系統會輸入資料，並傳回結果或報告。
+- **資料驅動：** 資料密集的工作負載，經常存取資料庫或其他儲存體。
+- **整合式：** 提供與組織內部或外部的其他系統整合的工作負載。
 
 面向**客戶的網站（網際網路或內部）** ：與網際網路互動的大部分應用程式都是網站。 Azure 提供在 IaaS VM 上或從[Azure Web Apps][WebApps]網站（PaaS）執行網站的功能。 Azure Web Apps 可與允許將 Web Apps 部署在輪輻網路區域中的 VNet 整合。 內部面向網站不需要公開公用網際網路端點，因為資源可透過私人 VNet 中的私人非網際網路可路由位址來存取。
 
-**Big Data/Analytics**：當資料需要相應增加至大型磁片區時，資料庫可能無法適當地相應增加。 Hadoop 技術可讓系統對大量節點平行執行分散式查詢。 客戶可以選擇在 IaaS Vm 或 PaaS （[HDInsight][HDI]）中執行資料工作負載。 HDInsight 支援部署到以位置為基礎的 VNet，可以部署到虛擬資料中心輪輻中的叢集。
+**海量資料和分析：** 當資料需要相應增加至較大的磁片區時，資料庫可能無法適當地相應增加。 Hadoop 技術可讓系統對大量節點平行執行分散式查詢。 客戶可以選擇在 IaaS Vm 或 PaaS （[HDInsight][HDI]）中執行資料工作負載。 HDInsight 支援部署到以位置為基礎的 VNet，可以部署到虛擬資料中心輪輻中的叢集。
 
-**事件和訊息**： [Azure 事件中樞][EventHubs]是超大規模資料庫遙測內嵌服務，可收集、轉換及儲存數百萬個事件。 這個分散式串流平台提供低延遲和可設定的保留期，讓您能夠將大量遙測資料輸入 Azure，並從多個應用程式讀取該資料。 使用事件中樞，單一串流就可以同時支援即時和批次型管線。
+**事件和訊息：** [Azure 事件中樞][EventHubs]是超大規模資料庫遙測內嵌服務，可收集、轉換及儲存數百萬個事件。 這個分散式串流平台提供低延遲和可設定的保留期，讓您能夠將大量遙測資料輸入 Azure，並從多個應用程式讀取該資料。 使用事件中樞，單一串流就可以同時支援即時和批次型管線。
 
 您可以透過[Azure 服務匯流排][ServiceBus]，在應用程式與服務之間執行高度可靠的雲端訊息服務。 此方法可提供用戶端與伺服器之間的非同步代理傳訊、結構化的先進先出 (FIFO) 傳訊，以及發佈和訂閱功能。
 

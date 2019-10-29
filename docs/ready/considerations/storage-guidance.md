@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548762"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048418"
 ---
 # <a name="storage-design-decisions"></a>儲存體設計決策
 
@@ -61,7 +61,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | 我正在執行具有持續性磁碟區的容器。 | [Azure 檔案儲存體 (標準或進階)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure 磁碟儲存體 (標準、進階或 Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | 檔案 (RWX) 和封鎖 (RWO) 磁碟區驅動程式選項可用於 Azure Kubernetes Service (AKS) 與自訂 Kubernetes 部署。 持續性磁碟區可以對應到 Azure 磁碟儲存體磁碟或受控 Azure 檔案儲存體共用。 根據持續性磁碟區的工作負載需求，選擇進階與標準選項。 |
 | 我有 Data Lake (例如 HDFS 資料的 Hadoop 叢集)。 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure 磁碟儲存體 (標準或進階 SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Azure Blob 儲存體的 Data Lake Storage Gen 2 功能為平行分析提供了伺服器端 HDFS 相容性和 PB 規模。 它也提供 HA 和可靠性。 如有需要，Cloudera 之類的軟體可以在主要/背景工作節點上使用進階或標準 SSD。 |
 | 我有 SAP 或 SAP HANA 部署。 | [Azure 磁碟儲存體 (進階或 Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD 已進行最佳化，以提供第 1 層 SAP 工作負載的快速延遲。 Ultra SSD 現為預覽階段。 與 M 系列結合的進階 SSD 可提供公開上市 (GA) 選項。 |
-| 我有一個災害復原網站，其具有從主要伺服器同步處理的嚴格 RPO/RTO。 | [Azure 分頁 Blob](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | 複寫軟體會使用 Azure 分頁 Blob 來啟用 Azure 的低成本複寫，而不需要計算 VM，直到容錯移轉發生為止。 如需詳細資訊，請參閱 [Azure 磁碟儲存體文件](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。 **注意**：分頁 blob 最多支援 8 TB。 |
+| 我有一個災害復原網站，其具有從主要伺服器同步處理的嚴格 RPO/RTO。 | [Azure 分頁 Blob](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | 複寫軟體會使用 Azure 分頁 Blob 來啟用 Azure 的低成本複寫，而不需要計算 VM，直到容錯移轉發生為止。 如需詳細資訊，請參閱 [Azure 磁碟儲存體文件](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。 **注意：** 分頁 blob 最多支援 8 TB。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>檔案和物件儲存體案例
 
