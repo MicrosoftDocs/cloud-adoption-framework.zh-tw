@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224396"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549262"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
 在理想的移轉中，每個資產 (基礎結構、應用程式或資料) 都會與雲端平台相容，並準備好進行移轉。 但事實上，並非所有資產都應該遷移至雲端。 此外，並非每個資產都會與雲端平台相容。 在將工作負載遷移至雲端之前，請務必先評估工作負載和每個相關的資產 (基礎結構、應用程式和資料)。
 
 本節中的資源可協助您評估環境，以判斷其是否適合進行移轉以及要考慮使用什麼方法。
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[工具](#tab/Tools)
 

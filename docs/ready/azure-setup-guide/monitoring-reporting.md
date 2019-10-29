@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7d68ee904a5ef82c0ac7effd18e775483c441b7
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378977"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548875"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 

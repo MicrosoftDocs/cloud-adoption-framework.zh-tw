@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224065"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549252"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
 在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到「完成狀態」，包括原生工具、第三方工具和專案管理工具。
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[原生移轉工具](#tab/Tools)
 
@@ -44,7 +46,7 @@ Azure Migrate 提供下列功能：
 1. 選取 [新增工具]  以啟動移轉專案。
 1. 選取要裝載移轉的訂用帳戶、資源群組和地理位置。
 1. 選取 [選取評估工具]   >  **[Azure Migrate：伺服器評量]**  >  [下一步]  。
-1. 選取 [檢閱及新增工具]  ，並驗證組態。 按一下 [新增工具]  以起始用來建立移轉專案的作業，並註冊選取的解決方案。
+1. 選取 [檢閱 + 新增工具]  ，並驗證設定。 按一下 [新增工具]  以起始用來建立移轉專案的作業，並註冊選取的解決方案。
 
 <!-- TODO: TBA -->
 
@@ -202,7 +204,9 @@ Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cos
 
 如需詳細資訊，請參閱
 
-- [Cosmos DB 資料移轉工具](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Cosmos DB 資料移轉工具](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[第三方移轉工具](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 您可從各式各樣資深的系統整合者合作夥伴和工具中選擇，以針對 NoSQL 資料庫需求支援 Azure Cosmos DB 移轉。
 
-[深入了解](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[深入了解](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 請造訪 [Azure 移轉中心](https://azure.microsoft.com/migration/support)，查看有哪些組織提供現成可用的合作夥伴技術解決方案以因應您的移轉案例，並深入了解其他第三方移轉工具和支援服務。
 
