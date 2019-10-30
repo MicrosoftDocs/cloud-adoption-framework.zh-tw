@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2fa30c01de9d09af2c2947f940264d9156941589
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72698527"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048530"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ ms.locfileid: "72698527"
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 在 Azure 入口網站移至 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)，然後選取 [將您的環境移轉至 Azure]  。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [將環境遷移到 Azure]  ，然後遵循逐步指示進行。
 
 ::: zone-end
 

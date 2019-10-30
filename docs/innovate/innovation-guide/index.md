@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769315"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047445"
 ---
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-before-you-start"></a>Azure 創新指南：開始之前
 
 > [!NOTE]
-> 本指南可作為雲端採用架構的創新指引起點。 您也可以在 Azure 快速入門中心內取得本指南。 如需 Azure 快速入門中心的連結，請參閱本文稍後的提示。
+> 本指南可作為雲端採用架構的創新指引起點。 您也可以在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)內取得本指南。
 
 ::: zone-end
 
@@ -32,9 +32,9 @@ ms.locfileid: "72769315"
 
 ::: zone-end
 
-在開始使用 Azure 服務開發創新解決方案之前，您必須先準備環境，以納入客戶意見反應迴圈的管理機制。 在本指南中，我們引進了一些功能，來協助您與客戶互動、建立解決方案及促成採用。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的創新一節](../index.md)。
+在開始使用 Azure 服務開發創新解決方案之前，您必須先準備環境，包括準備好客戶意見反應迴圈的管理機制。 在本指南中，我們引進了一些功能，來協助您與客戶互動、建立解決方案及促成採用。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的創新一節](../index.md)。
 
-您將學習如何：
+在本指南中，您將了解如何：
 
 > [!div class="checklist"]
 >
@@ -43,12 +43,12 @@ ms.locfileid: "72769315"
 > - **透過應用程式參與：** 有些創新需要有吸引人的體驗。 請利用雲端原生應用程式平台來建立吸引人的體驗。
 > - **實現採用：** 發明值得鼓勵，但需要有可以減少摩擦的計劃，才能實現和擴大採用。 請為 CI/CD、DevOps 和其他採用促成因子部署基礎。
 > - **透過裝置來互動：** 建立環境體驗，讓應用程式和資料更貼近客戶的需求重點。 使用 Azure 可讓 IoT、混合實境和行動體驗變得更容易。
-> - **預測和影響：** 找出資料的模式。 運用這些模式，透過以 Azure 為基礎的預測性分析工具，來預測及影響客戶行為。
+> - **預測和影響：** 找出資料的模式。 讓這些模式發揮作用，透過以 Azure 為基礎的預測性分析工具，來預測及影響客戶行為。
 
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 設定簡介]  。 然後，遵循逐步指示來進行。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 創新指南]  ，然後遵循逐步指示進行。
 
 後續步驟：[使用共用存放庫和概念發想管理工具來做好創新準備](./adoption.md)
 

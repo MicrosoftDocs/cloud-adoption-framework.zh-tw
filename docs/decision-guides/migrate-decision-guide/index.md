@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888902"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047728"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "72888902"
 
 ## <a name="learn-more"></a>深入了解
 
-- **[雲端基本概念：Azure 計算選項的概觀](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** 。 提供 Azure IaaS 和 PaaS 計算選項功能的相關資訊。
-- **[雲端基本概念：選擇正確的資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** 。 討論 Azure 平台上可用的 PaaS 儲存體選項。
-- **[擴展範圍移轉：移轉工作期間儲存體需求超出網路容量](../../migrate/expanded-scope/network-capacity-exceeded.md)** 。 討論可用的網路頻寬阻礙資料移轉之案例的替代資料移轉機制。
-- **[SQL Database：在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** 。 討論選擇在裝載的基礎結構 (IaaS) 或裝載的服務 (PaaS) 環境中，裝載 SQL Server 工作負載的選項和業務理由。
+- **[雲端基本概念：Azure 計算選項的概觀](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)。** 提供 Azure IaaS 和 PaaS 計算選項功能的相關資訊。
+- **[雲端基本概念：選擇正確的資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。** 討論 Azure 平台上可用的 PaaS 儲存體選項。
+- **[擴展範圍移轉：移轉工作期間儲存體需求超過網路容量](../../migrate/expanded-scope/network-capacity-exceeded.md)。** 討論可用的網路頻寬阻礙資料移轉之案例的替代資料移轉機制。
+- **[SQL Database：在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)。** 討論選擇在裝載的基礎結構 (IaaS) 或裝載的服務 (PaaS) 環境中，裝載 SQL Server 工作負載的選項和業務理由。
