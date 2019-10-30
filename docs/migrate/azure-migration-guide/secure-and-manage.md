@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aaa00910fb37545949087c71d6300918a3435cc2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022748"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058750"
 ---
 # <a name="secure-and-manage"></a>保護及管理
 
@@ -39,7 +39,7 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>閱讀更多資訊
+## <a name="learn-more"></a>深入了解
 
 - [Azure 監視器概觀](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
@@ -70,7 +70,7 @@ Azure 服務健康狀態包含：
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>閱讀更多資訊
+## <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
 
@@ -93,7 +93,7 @@ Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來�
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>閱讀更多資訊
+## <a name="learn-more"></a>深入了解
 
 [概觀](https://docs.microsoft.com/azure/advisor/advisor-overview)。
 
@@ -116,7 +116,7 @@ Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化�
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>閱讀更多資訊
+## <a name="learn-more"></a>深入了解
 
 [概觀](https://docs.microsoft.com/azure/security-center/security-center-intro)
 

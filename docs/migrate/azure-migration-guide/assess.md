@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549262"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058808"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
@@ -58,7 +58,7 @@ Azure Migrate 服務會評估要移轉至 Azure 的內部部署基礎結構、�
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>閱讀更多資訊
+### <a name="learn-more"></a>深入了解
 
 - [Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [將實體或虛擬伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>閱讀更多資訊
+### <a name="learn-more"></a>深入了解
 
 - [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 建立核心雲端策略小組 (圍繞這些重要高階專案關係人來建置) 可協助讓組織準備好採用雲端，並引導整體的雲端移轉工作。 這個小組會負責了解雲端技術和移轉程序、識別移轉的業務理由，以及判斷最適合移轉工作使用的高階解決方案。 他們也有助於識別特定的應用程式和業務專案關係人並與之合作，以確保移轉成功。
 
-如需如何讓組織準備好進行雲端移轉工作的詳細資訊，請參閱雲端採用架構關於[初始組織配合](../../ready/initial-org-alignment.md)的文章。
+如需如何讓組織準備好進行雲端移轉工作的詳細資訊，請參閱雲端採用架構關於[初始組織配合](../../plan/initial-org-alignment.md)的文章。
 
 # <a name="timelinestabtimelines"></a>[時間表](#tab/Timelines)
 
