@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833449"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058859"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 
@@ -31,7 +31,7 @@ ms.locfileid: "70833449"
 - **變更應用程式設定。** 遷移後的應用程式可能需要變更變數 (例如相依資產的網路路徑)、變更服務帳戶或更新相依的 IP 位址。
 - **稍微變更網路路徑。** 您可能需要修改路由模式才能正確地將使用者流量路由傳送至新的資產。
     > [!NOTE]
-    > 這不是新資產的生產路由，而是用來允許正確路由傳送至一般資產的設定。
+    > 這不會將生產環境路由傳送至新的資產，而是允許適當地路由傳送至一般資產的設定。
 
 ## <a name="large-scale-remediation-tasks"></a>大規模修復工作
 

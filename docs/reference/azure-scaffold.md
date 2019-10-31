@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548775"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058172"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
 > [!NOTE]
-> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)，以及（或）[登陸區域的考慮](../ready/considerations/index.md)。
+> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)和[登陸區域考慮](../ready/considerations/index.md)。
 
 企業日漸採用公用雲端，以獲取其靈活度和彈性。 他們會依賴雲端的優勢來產生收益，並將企業的資源使用量優化。 Microsoft Azure 提供許多服務和功能，企業可以像堆積木一樣組合這些服務，以處理各式各樣的工作負載和應用程式。
 
@@ -290,7 +290,7 @@ Microsoft 提供數種工具，讓您能夠以視覺化、追蹤和管理您的�
 
 - **主動監視成本。** 身為成熟 Azure 使用者的組織會時常監視成本，並在有需要時採取動作。 某些組織甚至讓專員執行使用量的分析和建議變更，當這些人第一次找到執行多個月但未使用的 HDInsight 叢集時，組織就可以回本了。
 - **使用保留的 VM 實例。** 管理雲端成本的另一個重要原則是使用適用於作業的工具。 如果您的 IaaS VM 必須全天候持續，則使用保留的 VM 實例將可為您節省大量費用。 在自動關閉 Vm 和使用保留的 VM 實例之間尋找適當的平衡，會產生經驗和分析。
-- **有效地使用自動化。** 許多工作負載不需要每天執行。 每天關閉一次 VM 四小時，可以節省 15% 的成本。 自動化的回本速度相當快。
+- **有效地使用自動化。** 許多工作負載不需要每天執行。 每天關閉一次 VM 四小時，可以節省15% 的成本。 自動化的回本速度相當快。
 - **使用資源標記來取得可見度。** 如同本文中其他地方所述，使用資源標記會提供更好的成本分析。
 
 成本管理是專業領域，目的是要有效且高效率地執行公用雲端。 達到成功的企業可以控制其成本，並將其對應到實際的需求，而不是 overbuying 和希望的需求。

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023553"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058741"
 ---
 # <a name="software-defined-networking-paas-only"></a>軟體定義網路：僅限 PaaS
 
 當您實作平台即服務 (PaaS) 資源時，部署程序會利用對於該網路的有限控制項，自動建立假設的基礎網路，包括負載平衡、連接埠封鎖，以及連線至其他 PaaS 服務。
 
-在 Azure 中，可以將數個 PaaS 資源類型[部署到](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)或[連線到](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)虛擬網路，讓這些資源能與您現有的虛擬網路基礎結構整合。 其他服務（例如[App Service 環境](https://docs.microsoft.com/azure/app-service/environment/intro)、 [Azure Kubernetes services](https://docs.microsoft.com/azure/aks/intro-kubernetes)和[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) ）必須部署在虛擬網路內。 不過，在許多情況下，僅限 PaaS 的網路架構，僅依賴 PaaS 資源所提供的預設原生網路功能，足以符合工作負載的連線能力和流量管理需求。
+在 Azure 中，可以將數個 PaaS 資源類型[部署到](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)或[連線到](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)虛擬網路，讓這些資源能與您現有的虛擬網路基礎結構整合。 其他服務（例如[App Service 環境](https://docs.microsoft.com/azure/app-service/environment/intro)、 [Azure Kubernetes Service （AKS）](https://docs.microsoft.com/azure/aks/intro-kubernetes)和[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) ）必須部署在虛擬網路內。 不過，在許多情況下，僅限 PaaS 的網路架構，僅依賴 PaaS 資源所提供的預設原生網路功能，足以符合工作負載的連線能力和流量管理需求。
 
 如果您考慮使用僅限 PaaS 的網路架構，請務必驗證符合您需求的必要假設。
 

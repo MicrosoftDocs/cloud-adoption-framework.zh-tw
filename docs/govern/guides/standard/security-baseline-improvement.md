@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1f43bdf0e0d58c40f11e45caf0221f7983c9624
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547518"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058670"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 

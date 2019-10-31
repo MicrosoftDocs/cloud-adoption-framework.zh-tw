@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378051"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058062"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>實作 Azure 企業 Scaffold 的範例
 
 > [!NOTE]
-> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)，以及（或）[登陸區域的考慮](../ready/considerations/index.md)。
+> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)和[登陸區域考慮](../ready/considerations/index.md)。
 
 本文提供企業如何實作 [Azure 企業 Scaffold](./azure-scaffold.md) 建議的範例。 它會使用名為 Contoso 的虛構公司來說明常見案例的最佳作法。
 
@@ -138,6 +138,8 @@ Dave 登入 Azure 企業版入口網站，並看到供應鏈部門已經存在�
 | --- | --- |
 | 開發 |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | 生產環境 |Contoso SupplyChain Operations LoyaltyCard Production |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>原則
 

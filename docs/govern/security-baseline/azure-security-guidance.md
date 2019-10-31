@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548055"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058820"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合�
 
 ## <a name="unique-intelligent-insights"></a>唯一的 Intelligent Insights
 
-隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。 [閱讀更多資訊](https://docs.microsoft.com/azure/security-center/security-center-intro)
+隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。 如需詳細資訊，請參閱[Azure 資訊安全中心總覽](https://docs.microsoft.com/azure/security-center/security-center-intro)。
 
 ## <a name="azure-threat-intelligence"></a>Azure 威脅情報
 

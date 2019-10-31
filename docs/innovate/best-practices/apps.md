@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683459"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058622"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 
@@ -31,7 +31,7 @@ ms.locfileid: "72683459"
 - **智慧型體驗：** 使用雲端平臺建立現代化體驗，以推動快速部署和簡短的回饋迴圈。 在 web 應用程式上展開以注入智慧，或甚至整合 bot。
 - **雲端原生：** 建立新的家發明，它會自然利用雲端功能。
 
-每個路徑都會產生短期和長期的優點和缺點。 當卓越團隊的雲端治理、雲端作業和雲端中心準備好支援每一種方法時，就能以最小的持續性商務營運影響來加速採用。
+每個路徑都會產生短期和長期的優點和缺點。 當雲端治理小組、雲端營運小組和卓越團隊的雲端中心準備好支援每一種方法時，就能以最小的持續性商務營運影響來加速採用。
 
 ## <a name="toolchain"></a>工具鏈
 

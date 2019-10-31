@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 863f1270679a849d53bce04a8c2fded6019fc65f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548532"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058893"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -417,8 +417,8 @@ Azure 中的公用 IP 位址可與 VM、負載平衡器、應用程式閘道和 
 
 **深入了解：**
 
-- [了解](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) Azure 中的公用 IP 位址。
-- [深入了解](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) Azure 資訊安全中心內的 Just-In-Time VM 存取。
+- [Azure 中的公用 IP 位址](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [使用即時管理虛擬機器存取](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>針對網路利用 Azure 安全性功能
 
