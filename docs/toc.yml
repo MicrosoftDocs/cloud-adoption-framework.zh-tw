@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: 建立混合式雲端一致性
           href: infrastructure/misc/hybrid-consistency.md
+    - name: 擴充的範圍
+      items:
+        - name: Terraform 登陸區域
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: 網路邊界安全性
+          href: reference/networking-vdc.md
     - name: 最佳作法
       items:
         - name: 概觀
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: 其他最佳做法
                   items:
-                    - name: Azure 邊界安全性最佳做法
-                      href: reference/networking-vdc.md
                     - name: Azure 資料庫安全性最佳做法
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure 資料安全性和加密最佳做法
@@ -707,7 +711,7 @@
                       items:
                         - name: 在 Azure 中設計、建置及操作微服務
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: 使用 Azure Kubernetes Services (AKS) 的微服務參考架構
+                        - name: 使用 Azure Kubernetes Service (AKS) 的微服務參考架構
                           href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 參考架構 - 無伺服器微服務範例
                           href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'

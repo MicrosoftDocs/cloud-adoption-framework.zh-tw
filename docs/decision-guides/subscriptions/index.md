@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683508"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058711"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -26,7 +26,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 使用管理群組來區隔不同工作負載的一些基本範例包括：
 
-- **生產環境與非生產環境的比較：** 有些企業會建立管理群組以區隔其生產環境和非生產環境訂用帳戶。 管理群組可讓這些客戶更容易管理角色和原則。 例如，非生產環境訂用帳戶可允許開發人員擁有**參與者**存取權，但在生產環境中，他們只有**讀者**存取權。
+- **生產與非生產工作負載的比較：** 有些企業會建立管理群組以區隔其生產環境和非生產環境訂用帳戶。 管理群組可讓這些客戶更容易管理角色和原則。 例如，非生產環境訂用帳戶可允許開發人員擁有**參與者**存取權，但在生產環境中，他們只有**讀者**存取權。
 - **內部服務與外部服務的比較：** 就像生產環境工作負載與非生產環境工作負載那樣，對於內部服務與面相客戶的外部服務，企業通常會有不同的需求、原則和角色。
 
 本決策指南可協助您考慮不同的方法來組織您的管理群組階層。

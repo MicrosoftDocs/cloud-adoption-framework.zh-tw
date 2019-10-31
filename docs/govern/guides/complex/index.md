@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683553"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058694"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -39,7 +39,7 @@ ms.locfileid: "72683553"
 
 每個應用程式都應該在管理群組、訂用帳戶，以及資源群組階層的適當區域中部署。 在部署規劃期間，雲端治理小組將在階層中建立必要的節點，使雲端採用小組更具產能。
 
-1. 定義每個營業單位的管理群組，其具有能詳細反映地理位置和環境類型 (例如生產或非生產) 的階層。
+1. 定義每個營業單位的管理群組，其具有能詳細反映地理位置和環境類型 (例如生產或預先生產環境) 的階層。
 2. 針對個別業務單位或地理位置的每一個唯一組合，建立生產和非生產訂用帳戶。 在建立多個訂用帳戶時，請務必謹慎。 如需詳細資訊，請參閱[這裡](../../../decision-guides/subscriptions/index.md)。
 3. 在此群組階層的每個層級套用[一致的命名法](../../../ready/considerations/naming-and-tagging.md)。
 4. 在部署資源群組時，應該要考慮其內容的生命週期：一起開發的所有項目要一起管理，並一起淘汰。 如需資源群組最佳做法的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md)。
