@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058711"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238781"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "73058711"
 
 Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相關聯。 採用 Azure 首先建立 Azure 訂用帳戶、將它與帳戶建立關聯，然後將資源部署至訂用帳戶。 如需這些概念的概觀，請參閱 [Azure 基本概念](../../ready/considerations/fundamental-concepts.md)。
 
-當 Azure 中的數位資產增長時，您可能需要建立額外的訂用帳戶，以符合您的需求。 Azure 可讓您定義管理群組的階層來組織您的訂用帳戶，並輕鬆地將正確的原則套用至正確的資源。 如需詳細資訊，請參閱[使用多個 Azure 訂用帳戶進行調整](../../ready/considerations/scaling-subscriptions.md)。
+當 Azure 中的數位資產增長時，您可能需要建立額外的訂用帳戶，以符合您的需求。 Azure 可讓您定義管理群組的階層來組織您的訂用帳戶，並輕鬆地將正確的原則套用至正確的資源。 如需詳細資訊，請參閱[使用多個 Azure 訂用帳戶進行調整](../../ready/azure-best-practices/scaling-subscriptions.md)。
 
 使用管理群組來區隔不同工作負載的一些基本範例包括：
 

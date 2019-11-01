@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378023"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238849"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -40,7 +40,7 @@ IT 會協調標記重點，例如依據工作負載、功能或環境進行標�
 
 標準化命名慣例是組織雲端裝載資源的起點。 正確結構化的命名系統可讓您基於管理和會計計量目的快速識別資源。 如果您組織的其他部門具已有現有的 IT 命名慣例，請考慮您是否應採用一致的雲端命名慣例，或是否應建立個別的雲端標準。
 
-也請注意，不同的 Azure 資源類型具有不同[命名需求](../../ready/considerations/naming-and-tagging.md)。 您的命名慣例必須與這些命名需求相容。
+也請注意，不同的 Azure 資源類型具有不同[命名需求](../../ready/azure-best-practices/naming-and-tagging.md)。 您的命名慣例必須與這些命名需求相容。
 
 ## <a name="resource-tagging-patterns"></a>資源標記模式
 

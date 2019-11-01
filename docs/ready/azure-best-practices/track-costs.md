@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548954"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240147"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548954"
 
 成本控制 (如治理和其他管理建構) 取決於妥善管理的環境。 在所有資產的分類和組織中建立這類環境 (尤其是一個複雜的環境) 需要一致的進程。
 
-資產 (也稱為資源) 包括所有虛擬機器、資料來源，以及部署至雲端的應用程式。 Azure 提供數種機制來分類和組織資產。 [使用多個 Azure 訂用帳戶進行調整](../considerations/scaling-subscriptions.md)的詳細資料選項，可讓您根據多個準則來組織資源，以建立妥善管理的環境。 本文著重於 Azure 基本概念的應用，以提供雲端成本可見度。
+資產 (也稱為資源) 包括所有虛擬機器、資料來源，以及部署至雲端的應用程式。 Azure 提供數種機制來分類和組織資產。 [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)的詳細資料選項，可讓您根據多個準則來組織資源，以建立妥善管理的環境。 本文著重於 Azure 基本概念的應用，以提供雲端成本可見度。
 
 ### <a name="classification"></a>分類
 
@@ -35,7 +35,7 @@ ms.locfileid: "72548954"
 
 在營業單位、環境和專案之間準確追蹤成本資訊的第一個步驟，是定義標記標準。 第二個步驟是確定已一致地套用標記標準。 下列文章可協助您完成每個步驟：
 
-- [開發命名和標記標準](../considerations/naming-and-tagging.md)
+- [開發命名和標記標準](../azure-best-practices/naming-and-tagging.md)
 - [建立治理 MVP 來強制執行標記標準](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>資源組織
@@ -59,7 +59,7 @@ ms.locfileid: "72548954"
 
 本文的其餘部分假設您使用上圖中的最佳做法方法。 不過，下列文章可協助您將此方法套用至最適合貴公司的資源組織：
 
-- [使用多個 Azure 訂用帳戶進行調整](../considerations/scaling-subscriptions.md)
+- [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)
 - [部署治理 MVP 以治理妥善管理的環境標準](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>提供正確的成本存取層級
@@ -102,7 +102,7 @@ Azure 成本管理支援每個範圍的下列內建角色：
 
 - [卓越雲端中心](../../organize/cloud-center-of-excellence.md) 負責管理與共用服務相關的成本，需要訂用帳戶層級的成本管理參與者存取權。 此外，此小組可能需要資源群組或訂用帳戶 (包含 CCoE 自動化所部署的資產) 的成本管理參與者存取權，以了解這些自動化如何影響成本。
 
-  - **共用服務** 當卓越雲端中心參與時，最佳做法會建議在中樞/輪輻模型內的集中式共用服務訂用帳戶中，支援由 CCoE 管理的資產。 在此案例中，CCoE 可能具有該訂用帳戶的參與者或擁有者存取權，因此不需要為[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)進行額外的範圍指派。
+  - **共用服務** 當卓越的雲端中心參與時，最佳做法會建議從中樞和輪輻模型內的集中式共用服務訂用帳戶支援 CCoE 所管理的資產。 在此案例中，CCoE 可能具有該訂用帳戶的參與者或擁有者存取權，因此不需要為[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)進行額外的範圍指派。
   - **CCoE 自動化/控制項** CCoE 通常會為雲端採用小組提供控制項和自動化部署指令碼。 CCoE 有責任了解這些加速器如何影響成本。 若要取得該可見度，小組需要執行這些加速器的任何資源群組或訂用帳戶[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)存取權。
 
 - **雲端作業小組** 負責管理生產環境的持續成本，需要所有生產訂用帳戶的成本管理參與者存取權。

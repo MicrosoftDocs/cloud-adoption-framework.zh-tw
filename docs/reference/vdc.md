@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
-ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
+ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72001867"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239747"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
@@ -43,8 +43,8 @@ ms.locfileid: "72001867"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure 虛擬資料中心：隨即轉移指南</a></h3>
-        <p>本白皮書將討論企業 IT 人員和決策者可用來識別及規劃如何使用「隨即轉移」方法將應用程式和伺服器遷移至 Azure，並將任何額外的開發成本降至最低，同時優化雲端的流程裝載選項。</p>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure 虛擬資料中心：原形移轉指南</a></h3>
+        <p>本白皮書將討論企業 IT 人員和決策者可用來識別及規劃將應用程式和伺服器遷移至 Azure 的流程，並使用隨即轉移方法，將任何額外的開發成本降至最低，同時將雲端優化裝載選項。</p>
     </td>
 </tr>
 </table>

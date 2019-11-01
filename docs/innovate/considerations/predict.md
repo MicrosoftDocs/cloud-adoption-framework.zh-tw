@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 83165e21882b4979d0fb3b104fa4f2c12aed326c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682634"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239461"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -78,7 +78,7 @@ ms.locfileid: "72682634"
 
 ## <a name="next-steps"></a>後續步驟
 
-根據您所知創新[方法](./index.md)中有關[創新專業領域](./invention.md)所獲得的知識，您所擁有的技術工具必須以[理解的方式建立](./build.md)。
+根據在[創新方法](./index.md)中[家發明專業領域](./invention.md)所獲得的知識，您所知的技術工具必須以[理解的方式建立](./build.md)。
 
 > [!div class="nextstepaction"]
 > [以理解的組建](./build.md)

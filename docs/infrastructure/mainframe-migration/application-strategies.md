@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547953"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239442"
 ---
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
@@ -27,7 +27,7 @@ ms.locfileid: "72547953"
 
 - **淘汰：** 所有不再需要的應用程式都應該在遷移之前淘汰。
 
-- **重建：** 有些組織選擇使用現代化技術完全重寫程式。 由於這種方法的增加成本和複雜度，並不像「隨即轉移」方法一般。 進行此類型的移轉後，一般通常會使用程式碼轉換引擎開始取代模組和程式碼。
+- **重建：** 有些組織選擇使用現代化技術完全重寫程式。 由於這種方法的增加成本和複雜度，並不像是隨即轉移方法一般。 進行此類型的移轉後，一般通常會使用程式碼轉換引擎開始取代模組和程式碼。
 
 - **取代：** 這種方法會將大型主機功能取代為雲端中的對等功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，目前也已有許多產業特定應用程式，可用來解決先前由自訂大型主機解決方案負責解決的問題。
 
@@ -57,7 +57,7 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>將 OLTP 工作負載移轉至 Azure
 
-「隨即轉移」方法是將現有應用程式快速遷移至 Azure 的無程式碼選項。 每個應用程式都會依現狀移轉，因而提供使用雲端時無需承擔程式碼變更風險或費用的好處。 在 Azure 上使用大型主機交易處理 (TP) 監視器的模擬器時，可支援此方法。
+隨即轉移方法是將現有應用程式快速遷移至 Azure 的無程式碼選項。 每個應用程式都會依現狀移轉，因而提供使用雲端時無需承擔程式碼變更風險或費用的好處。 在 Azure 上使用大型主機交易處理 (TP) 監視器的模擬器時，可支援此方法。
 
 您可以從不同的廠商取得 TP 監視器，並在虛擬機器上執行，這是 Azure 上的基礎結構即服務 (IaaS) 選項。 下列執行前後圖表顯示 IBM DB2 (關聯式資料庫管理系統 (DBMS)) 所支援的線上應用程式在 IBM z/OS 大型主機上移轉的情形。 DB2 for z/OS 會使用虛擬儲存體存取方法 (VSAM) 檔案來儲存資料，並使用索引循序存取方法 (ISAM) 來處理一般檔案。 此架構也會使用 CICS 進行交易監視。
 

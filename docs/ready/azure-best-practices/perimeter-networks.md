@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022201"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240166"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -42,19 +42,19 @@ ms.locfileid: "71022201"
 
 通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
 
-![範例中樞和支點網路][7]
+![中樞和輪輻網路拓撲的範例][7]
 
-上圖顯示的範例是[中樞和支點網路](./hub-spoke-network-topology.md)，其可存取網際網路和內部部署網路的兩個周邊環境強制執行。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來相應增加，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
+上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來相應增加，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
 
 ## <a name="virtual-networks"></a>虛擬網路
 
 周邊網路通常是使用具有多個子網路的[虛擬網路][virtual-networks]來建置，以裝載不同類型的服務，透過 NVA、WAF 和 Azure 應用程式閘道來篩選及檢查進出網際網路的流量。
 
-## <a name="user-defined-routes"></a>使用者定義的路由
+## <a name="user-defined-routes"></a>使用者定義路由
 
 藉由使用[使用者定義的路由][user-defined-routes]，客戶可以部署防火牆、IDS/IPS 和其他虛擬設備。 然後，客戶可以透過這些安全性設備來路由傳送網路流量，以進行安全性界限原則強制執行、稽核及檢查。 您可以建立使用者定義的路由，以確保流量會通過指定的自訂 VM、NVA 和負載平衡器。
 
-在中樞和支點網路範例中，確保位於支點中的虛擬機器所產生的流量通過中樞內正確的虛擬設備，需要在支點的子網路中定義使用者定義的路由。 此路由會將內部負載平衡器的前端 IP 位址設定為下一個躍點。 內部負載平衡器會將內部流量分散到虛擬設備 (負載平衡器後端集區)。
+在中樞和輪輻網路範例中，確保位於輪輻中的虛擬機器所產生的流量通過中樞內正確的虛擬裝置，需要在輪輻的子網中定義使用者定義的路由。 此路由會將內部負載平衡器的前端 IP 位址設定為下一個躍點。 內部負載平衡器會將內部流量分散到虛擬設備 (負載平衡器後端集區)。
 
 ## <a name="azure-firewall"></a>Azure 防火牆
 
@@ -80,7 +80,7 @@ Azure 防火牆執行個體和[網路虛擬設備][NVA]防火牆使用一般的�
 
 Azure Load Balancer 也可以探查各種伺服器執行個體的健全狀況。 當執行個體無法回應探查時，負載平衡器會停止將流量傳送至狀況不良的執行個體。
 
-如需使用中樞和支點網路的範例，您可以將外部負載平衡器部署至中樞和支點。 在中樞中，負載平衡器會有效率地將流量路由傳送到支點中的服務。 在支點中，負載平衡器會管理應用程式流量。
+如需使用中樞和輪輻網路拓撲的範例，您可以將外部負載平衡器部署至中樞和輪輻。 在中樞中，負載平衡器會有效率地將流量路由傳送到支點中的服務。 在支點中，負載平衡器會管理應用程式流量。
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 

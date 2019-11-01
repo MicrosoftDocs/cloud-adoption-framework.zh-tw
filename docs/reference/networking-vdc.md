@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048255"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240092"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>虛擬資料中心：網路觀點
 
@@ -378,7 +378,7 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 ### <a name="summary"></a>總結
 
-虛擬資料中心是資料中心遷移的一種方法，可在 Azure 中建立可調整的架構，將雲端資源使用最大化、降低成本，並簡化系統管理。 虛擬資料中心是以中樞和輪輻網路拓撲為基礎，可在中樞內提供一般共用服務，並允許輪輻中的特定應用程式和工作負載。 虛擬資料中心也符合公司角色的結構，其中，中央 IT、DevOps 和營運和維護等不同部門在執行其特定角色時，會共同運作。 虛擬資料中心符合「隨即轉移」遷移的需求，但也提供原生雲端部署的許多優點。
+虛擬資料中心是資料中心遷移的一種方法，可在 Azure 中建立可調整的架構，將雲端資源使用最大化、降低成本，並簡化系統管理。 虛擬資料中心是以中樞和輪輻網路拓撲為基礎，可在中樞內提供一般共用服務，並允許輪輻中的特定應用程式和工作負載。 虛擬資料中心也符合公司角色的結構，其中，中央 IT、DevOps 和營運和維護等不同部門在執行其特定角色時，會共同運作。 虛擬資料中心滿足增益和轉移遷移的需求，但也提供原生雲端部署的許多優點。
 
 ## <a name="references"></a>參考
 
@@ -388,7 +388,7 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 |網路功能|負載平衡|連線能力|
 |-|-|-|
-|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
 |身分識別</br>|監視</br>|最佳做法</br>|
 |-|-|-|

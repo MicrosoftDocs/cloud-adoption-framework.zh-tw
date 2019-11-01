@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058893"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240039"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -120,7 +120,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 **深入了解：**
 
 - [了解](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)您在使用自有 DNS 伺服器時的名稱解析。
-- [了解](../../ready/considerations/naming-and-tagging.md) DNS 命名規則和限制。
+- [了解](../../ready/azure-best-practices/naming-and-tagging.md) DNS 命名規則和限制。
 
 ## <a name="best-practice-set-up-availability-zones"></a>最佳做法：設定可用性區域
 

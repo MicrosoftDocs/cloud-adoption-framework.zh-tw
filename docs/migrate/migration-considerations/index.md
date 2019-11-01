@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548476"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240270"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 
@@ -34,7 +34,7 @@ ms.locfileid: "72548476"
 
 ![移轉選項的資訊圖](../../_images/migrate/migration-options.png)
 
-遷移和現代化工作的範圍涵蓋使用基礎結構即服務 (IaaS) 功能 (不需要程式碼和應用程式變更) 的簡單「重新裝載」  (原形移轉)、包含少量變更的「重構」  ，以及為了修改和擴充程式碼與應用程式功能進行「重新建構」  ，以利用雲端技術。
+移轉和現代化工作的範圍涵蓋使用基礎結構即服務 (IaaS) 功能 (不需要程式碼和應用程式變更) 的簡單「重新裝載」  (也稱為「隨即移轉」  )、包含少量變更的「重構」  ，以及為了修改和擴充程式碼與應用程式功能進行「重新建構」  ，以利用雲端技術。
 
 雲端原生策略和平台即服務 (PaaS) 策略使用 Azure 平台供應項目和受控服務，來「重建」  內部部署工作負載。 在移轉程序中的一部分，有對等完全受控軟體即服務 (SaaS) 雲端式供應項目的工作負載，通常可由這些服務完全「取代」  。
 

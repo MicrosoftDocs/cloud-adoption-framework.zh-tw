@@ -8,16 +8,16 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024715"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240255"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>移轉旅程「遷移」階段期間的技能整備程度路徑
+# <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
-在雲端移轉期間，員工 (甚至是一些現任的系統整合合作夥伴或受控服務合作夥伴) 都需要開發新技能，以在移轉工作期間發揮作用。
+在雲端遷移期間，員工和一些委任系統整合合作夥伴或受控服務合作夥伴可能需要開發新的技能，才能在遷移工作期間生效。
 
 在任何移轉旅程的「遷移」階段期間，有四個不同程序會反覆地完成。 下列各節會參考技能資源的兩個必要條件，以針對這每個程序調整必要技能。
 
@@ -29,39 +29,39 @@ ms.locfileid: "71024715"
 
 下列工具可協助小組執行評估活動：
 
-- [平衡組合](./balance-the-portfolio.md)：確保應用程式組合之間的投資配置平衡且適當。
-- [建置業務理由](../../strategy/cloud-migration-business-case.md)：建立並了解促進雲端移轉工作的商業理由。
-- [合理化數位資產](../../digital-estate/rationalize.md)：合理化數位資產中的資產。
-- [應用程式組合評估](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization)：應用程式組合內有關移轉或創新選項的決策準則。
-- [評估和規劃 Microsoft Azure 移轉](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning)：協助評估內部部署工作負載的 PluralSight 課程
+- [平衡組合](./balance-the-portfolio.md)：確保跨應用程式組合的平衡和適當投資配置。
+- [打造商業理由](../../strategy/cloud-migration-business-case.md)：建立及瞭解促進雲端遷移工作的商業理由。
+- [合理化數位資產](../../digital-estate/rationalize.md)：合理化數位資產。
+- [應用程式組合評定](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization)：在應用程式組合中做出有關遷移或創新選項的決策準則。
+- [評估和規劃 Microsoft Azure 遷移](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning)：協助評估內部部署工作負載的 PluralSight 課程
 
 在評估過程中，架構設計人員必須為每個工作負載建構解決方案。 下列技能資源可協助您準備這些工作的架構：
 
-- [雲端架構基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：PluralSight 課程可協助您建構正確的基礎解決方案
-- [Microsoft Azure 架構](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：PluralSight 課程可在 Azure 架構中奠定基礎架構
-- [設計 Microsoft Azure 移轉](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)：PluralSight 課程可協助架構設計師設計移轉解決方案
+- [雲端架構的基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： PluralSight 課程協助架構設計正確的基礎解決方案
+- [Microsoft Azure 架構](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： Azure 架構中的 PluralSight 課程到基礎架構設計人員
+- [設計 Microsoft Azure 的遷移](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： PluralSight 課程，協助架構設計師設計遷移解決方案
 
 ## <a name="migrate-skilling-resources"></a>遷移技能資源
 
 下列教學課程可以協助小組準備移轉活動：
 
-- [移轉至 Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Site Recovery 將 VM 遷移至 Azure。
-- [將工作負載重新裝載至 Azure](https://aka.ms/rehostcourse)：指導檢視人員如何將工作負載重新裝載至 Azure 的 PluralSight 課程
-- [將實體和虛擬伺服器移轉至 Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents)：將伺服器遷移至 Azure 的 PluralSight 課程
-- [在 Azure 中匯入和匯出資料](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents)：在 Azure 中來回移動資料的 PluralSight 課程
+- [遷移至 azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Site Recovery 將 vm 遷移至 azure。
+- [將工作負載重新裝載至 azure](https://aka.ms/rehostcourse)： PluralSight 課程，教觀看者如何重新裝載工作負載至 azure
+- [將實體和虛擬伺服器遷移至 azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents)： PluralSight 課程，將伺服器遷移至 azure
+- 將[資料匯入和匯出至 azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents)： PluralSight 在 azure 之間移動資料的課程
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
 
 下列工具可協助小組將資源最佳化，並提升至生產環境：
 
-- [成本和大小](../azure-best-practices/migrate-best-practices-costs.md)：調整大小以配合成本和預算。
-- [升級工作負載](../azure-best-practices/migrate-best-practices-networking.md)：變更網路設定，以將生產使用者重新路由至已遷移的工作負載。
+- [成本和調整大小](../azure-best-practices/migrate-best-practices-costs.md)：調整大小以配合成本和預算。
+- [升級工作負載](../azure-best-practices/migrate-best-practices-networking.md)：變更網路設定，以將生產使用者重新路由至遷移的工作負載。
 
-## <a name="secure-and-manage-process-changes"></a>保護和管理程序變更
+## <a name="secure-and-manage-process-changes"></a>保護和管理流程變更
 
 下列工具可協助小組尋找保護和管理已遷移資產的方法：
 
-- [保護及管理 Azure 中的工作負載](../azure-best-practices/migrate-best-practices-security-management.md)：適用於保護和管理 Azure 中工作負載的最佳做法。
+- [保護和管理 azure 中的工作負載](../azure-best-practices/migrate-best-practices-security-management.md)：保護和管理 azure 中工作負載的最佳作法。
 
 ## <a name="next-steps"></a>後續步驟
 

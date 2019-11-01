@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548302"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239934"
 ---
 # <a name="decisions-that-affect-migrations"></a>會影響移轉的決策
 
@@ -33,7 +33,7 @@ ms.locfileid: "72548302"
 
 ### <a name="acting-on-migration-outcomes"></a>對移轉成果採取行動
 
-如果營運成果在清單中排名最高，則雲端採用架構的這一節就很適合您的小組。 在本節中，假設您需要將速度和成本節約的優先順序設為主要關鍵效能指標 (KPI)，在這種情況下，採用的移轉模式可妥善地與成果進行協調。 以移轉為主的模型非常倚賴基礎結構即服務 (IaaS) 資產的「隨即轉移」移轉，以利用資料中心並產生成本節約的效益。 在這種模型中可能會發生現代化，但在主要的移轉任務實現之前，現代化只是次要重點。
+如果營運成果在清單中排名最高，則雲端採用架構的這一節就很適合您的小組。 在本節中，假設您需要將速度和成本節約的優先順序設為主要關鍵效能指標 (KPI)，在這種情況下，採用的移轉模式可妥善地與成果進行協調。 以遷移為焦點的模型在基礎結構即服務（IaaS）資產的隨即轉移中，高度前提，以耗盡資料中心並產生成本節約。 在這種模型中可能會發生現代化，但在主要的移轉任務實現之前，現代化只是次要重點。
 
 ### <a name="acting-on-application-innovations"></a>對應用程式創新採取行動
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915033"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238756"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -58,7 +58,7 @@ ms.locfileid: "72915033"
 
 為了支援這種方法，您的雲端資源必須能夠透過結合[混合式網路功能](../software-defined-network/hybrid.md)和[雲端裝載網域服務](../identity/index.md#cloud-hosted-domain-services)，直接與您的內部部署系統通訊。 然後雲端虛擬網路才能以內部部署環境網路擴充功能的形式運作。 如此一來，雲端裝載工作負載才能直接與您的內部部署記錄和報告系統通訊。
 
-這個方法會運用您在監控工具上的現有投資，對任何雲端部署的應用程序或服務進行有限的修改。 這通常是進行「移植」移轉時支援監視的最快方法。 但是這不會擷取雲端 PaaS 和 SaaS 資源製造的記錄資料，而且將會省略雲端平台產生的任何 VM 相關記錄，例如 VM 狀態。 因此應將此模式視為實作更完善混合式監視解決方案之前的暫時性解決方案。
+這個方法會運用您在監控工具上的現有投資，對任何雲端部署的應用程序或服務進行有限的修改。 這通常是進行隨即移轉時支援監視的最快方法。 但是這不會擷取雲端 PaaS 和 SaaS 資源製造的記錄資料，而且將會省略雲端平台產生的任何 VM 相關記錄，例如 VM 狀態。 因此應將此模式視為實作更完善混合式監視解決方案之前的暫時性解決方案。
 
 僅限內部部署假設事項：
 

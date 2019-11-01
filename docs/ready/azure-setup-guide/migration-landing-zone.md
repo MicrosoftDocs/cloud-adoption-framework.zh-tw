@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 0eee9746f4d2ee5fcf078774e070ffc25d430f38
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379181"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240110"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -59,17 +59,17 @@ ms.locfileid: "72379181"
 |---------|---------|---------|
 |移轉工具|將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。|[移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)|
 |記錄和監視|將會布建 Operational Insights 工作區和診斷儲存體帳戶。|         |
-|網路|將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。|[網路決策](../considerations/network-decisions.md)|
+|網路|將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。|[網路決策](../considerations/networking-options.md)|
 |身分識別|假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。|[身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |原則|此藍圖目前會假設未套用任何 Azure 原則。|         |
-|訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)|
-|管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
-|資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../considerations/scaling-subscriptions.md)         |
+|訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)|
+|管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
+|資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
 |資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) |
-|儲存體|N/A|[Azure 儲存體指引](../considerations/storage-guidance.md)         |
-|命名和標記標準|N/A|[命名和標記最佳做法](../considerations/naming-and-tagging.md)         |
+|儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md)         |
+|命名和標記標準|N/A|[命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|
-|運算|N/A|[計算選項](../considerations/compute-decisions.md)|
+|運算|N/A|[計算選項](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>從此藍圖自訂或部署登陸區域
 

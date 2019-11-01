@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058163"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239771"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴經常使用 [部署] 登陸區域的其中一項工具，是 Hashicorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴常用來部署登陸區域的這類工具之一，是 Hashicorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 
@@ -67,17 +67,17 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 元件 | 決策 | 替代方法 |
 | --- | --- | --- |
 |記錄和監視 | 將使用 Azure 監視器 Log Analytics 工作區。 將會布建診斷儲存體帳戶和事件中樞。 |         |
-|網路 | N/A-網路將會在另一個登陸區域中執行。 |[網路決策](../considerations/network-decisions.md) |
+|網路 | N/A-網路將會在另一個登陸區域中執行。 |[網路決策](../considerations/networking-options.md) |
 |身分識別 | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | 原則 | 此登陸區域目前假設不會套用任何 Azure 原則。 | |
-|訂用帳戶設計 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../considerations/scaling-subscriptions.md) |
-| 管理群組 | N/A - 專為單一生產訂用帳戶所設計。 |[調整訂用帳戶](../considerations/scaling-subscriptions.md) |
-| 資源群組 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../considerations/scaling-subscriptions.md) |
+|訂用帳戶設計 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
+| 管理群組 | N/A - 專為單一生產訂用帳戶所設計。 |[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
+| 資源群組 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
 | 資料 | N/A | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
-|儲存體|N/A|[Azure 儲存體指引](../considerations/storage-guidance.md) |
-| 命名標準 | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱後面會加上隨機尾碼。 依照下表所述，強制使用標記。 | [命名和標記最佳做法](../considerations/naming-and-tagging.md) |
+|儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md) |
+| 命名標準 | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱後面會加上隨機尾碼。 依照下表所述，強制使用標記。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md) |
 | 成本管理 | N/A | [追蹤成本](../azure-best-practices/track-costs.md) |
-| 運算 | N/A | [計算選項](../considerations/compute-decisions.md) |
+| 運算 | N/A | [計算選項](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>標記標準
 

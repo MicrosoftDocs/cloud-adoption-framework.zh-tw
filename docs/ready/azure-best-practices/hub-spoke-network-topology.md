@@ -1,7 +1,7 @@
 ---
 title: 中樞和輪輻網路拓撲
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 中樞和輪輻網路拓撲
+description: 瞭解中樞和輪輻網路拓撲。
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549004"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239916"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -26,13 +26,13 @@ ms.locfileid: "72549004"
 - **克服訂用帳戶限制**。 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱訂用帳戶[限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)。
 - **考量分隔**。 您可以在中央 IT 小組和工作負載小組之間部署個別工作負載。
 
-較小的雲端資產可能無法受益於此模型所提供的新增結構和功能。 但較大的雲端採用工作應該考慮實作中樞和輪輻網路架構 (如果他們有前述問題的話)。
+較小的雲端資產可能無法受益於此模型所提供的新增結構和功能。 但較大的雲端採用工作應該考慮採用中樞和輪輻網路架構，如果它們有前述的任何疑慮。
 
 > [!NOTE]
-> Azure 參考架構網站有範例範本，當您實作自己的中樞和輪輻網路時，您可以使用該範本作為基礎：
+> Azure 參考架構網站包含範例範本，可讓您用來作為執行自己的中樞和輪輻網路的基礎：
 >
-> - [在 Azure 中實作中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [在 Azure 中實作中樞和輪輻網路拓撲與共用服務](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [在 Azure 中執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [在 Azure 中使用共用服務來執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>概觀
 
@@ -40,7 +40,7 @@ ms.locfileid: "72549004"
 
 如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 其支援通訊、共用資源和集中式安全性原則 (圖表中的「VNet 中樞」)，或適用於大規模分支對分支及分支對 Azure 通訊的虛擬 WAN 類型 (圖表中的「虛擬 WAN」)。
 
-中樞是中央網路區域，可控制和檢查區域之間的輸入或輸出流量：網際網路、內部部署和輪輻。 中樞和輪輻拓撲可讓 IT 部門有效地在中央位置強制執行安全性原則。 此外也可降低設定錯誤和暴露的可能性。
+中樞是中央網路區域，可控制和檢查區域之間的輸入或輸出流量：網際網路、內部部署和輪輻。 中樞和輪輻拓撲可讓您的 IT 部門以有效的方式在中央位置強制執行安全性原則。 此外也可降低設定錯誤和暴露的可能性。
 
 中樞通常包含輪輻所使用的一般服務元件。 以下是常用中央服務的範例：
 
@@ -61,7 +61,7 @@ ms.locfileid: "72549004"
 
 在 Azure 中，每個任何類型的元件都會部署在 Azure 訂用帳戶中。 不同 Azure 訂用帳戶中的 Azure 元件隔離可以滿足不同企業營運的需求，例如設定不同層級的存取和授權。
 
-單一中樞和輪輻實作可以相應增加為大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 (虛擬網路對等互連的數目上限即為一例。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額及條件約束] [限制]。
+單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 (虛擬網路對等互連的數目上限即為一例。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額及條件約束] [限制]。
 
 如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、虛擬 WAN 或站對站 VPN，將一或多個 Azure 區域中的多個中樞互相連線。
 
@@ -79,7 +79,7 @@ ms.locfileid: "72549004"
 
 ![連線到中樞及彼此連線的輪輻][3]
 
-支點也可以與作為中樞的支點互相連接。 這種方法會建立雙層階層：較高層級的輪輻 (層級 0) 會變成階層中較低輪輻 (層級 1) 的中樞。 必須實作中樞和輪輻實作的輪輻來將流量轉送到中央中樞，如此一來，流量才能傳送到內部部署網路或公用網際網路中的目的地。 具有雙層中樞的架構引進複雜路由，以移除簡單中樞和輪輻關聯性的優點。
+支點也可以與作為中樞的支點互相連接。 這種方法會建立雙層階層：較高層級的輪輻 (層級 0) 會變成階層中較低輪輻 (層級 1) 的中樞。 中樞和輪輻執行的輪輻需要將流量轉送到中央中樞，讓流量可以傳輸至其在內部部署網路或公用網際網路中的目的地。 具有兩種中樞層級的架構會引進複雜的路由，以移除簡單中樞和輪輻關聯性的優點。
 
 <!-- images -->
 

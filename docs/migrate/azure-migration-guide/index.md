@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048530"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239989"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ ms.locfileid: "73048530"
 
 本指南會逐步說明將應用程式和資源從內部部署環境移轉至 Azure 的基本概念。 專為複雜性最小的移轉範圍所設計。 若要判斷您的移轉是否適合使用本指南，請參閱 [本指南使用時機]  索引標籤。
 
-當您移轉至 Azure 時，您可能會使用 IaaS 型虛擬機器解決方案 (又稱為「重新裝載」或「隨即轉移」移轉) 依現狀移轉您的應用程式，或您可能彈性使用受控服務和其他雲端原生功能，將您的應用程式現代化。 如需這些選擇的詳細資訊，請參閱 [移轉選項]  索引標籤。 當您開發移轉策略時，可考量下列事項：
+遷移至 Azure 時，您可能會使用 IaaS 型虛擬機器解決方案 (又稱為「重新裝載」  或「隨即轉移」  移轉) 依現狀移轉您的應用程式，或您可能彈性使用受控服務和其他雲端原生功能，將您的應用程式現代化。 如需這些選擇的詳細資訊，請參閱 [移轉選項]  索引標籤。 當您開發移轉策略時，可考量下列事項：
 
 - 移轉的應用程式是否會在雲端中運作？
 - 對我的應用程式而言，最佳策略為何 (就技術、工具和移轉層面而言)？ 如需詳細資訊，請參閱 Microsoft 雲端採用架構的[移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)。
