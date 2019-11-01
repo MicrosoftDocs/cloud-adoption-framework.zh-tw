@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547870"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238861"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -57,7 +57,7 @@ ms.locfileid: "72547870"
 
 隨著您的雲端資產成長跨越需要強制執行的許多訂用帳戶，您必須將焦點放在整個雲端資產的強制執行策略，以確保原則一致性。
 
-您的[訂用帳戶設計](../subscriptions/index.md)必須考量原則，因為它與您的組織結構相關。 除了協助支援您的訂用帳戶設計內的複雜組織[Azure 管理群組](../../ready/considerations/scaling-subscriptions.md#managing-multiple-subscriptions)可用來跨多個訂用帳戶指派 Azure 原則規則。
+您的[訂用帳戶設計](../subscriptions/index.md)必須考量原則，因為它與您的組織結構相關。 除了協助支援您的訂用帳戶設計內的複雜組織[Azure 管理群組](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions)可用來跨多個訂用帳戶指派 Azure 原則規則。
 
 ## <a name="automated-enforcement"></a>自動化強制執行
 

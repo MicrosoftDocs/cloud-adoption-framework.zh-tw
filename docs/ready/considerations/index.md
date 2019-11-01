@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224247"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239795"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
@@ -27,10 +27,10 @@ ms.locfileid: "71224247"
 
 所有登陸區域都會提供裝載選項的結構。 此結構是透過治理控制項明確建立的，或是透過採用登陸區域內的服務有組織地建立的。 下列文章可協助您做出決策，它們將反映在藍圖或其他建立登陸區域的自動化指令碼中：
 
-- **[計算決策](./compute-decisions.md)** 。 若要將操作複雜度降至最低，請使計算選項與登陸區域的目的一致。 您可以使用自動化工具鏈 (例如 Azure 原則計劃和登陸區域藍圖) 來強制執行這項決策。
-- **[儲存體決策](./storage-guidance.md)** 。 選擇正確的 Azure 儲存體解決方案，以支援您的工作負載需求。
-- **[網路決策](./network-decisions.md)** 。 選擇網路服務、工具和架構，以支援您組織的工作負載、治理和連線能力需求。
-- **[資料庫資料](./data-decisions.md)** 。 判定哪一種資料庫技術最適合您工作負載的需求。
+- **[計算決策](./compute-options.md)** 。 若要將操作複雜度降至最低，請使計算選項與登陸區域的目的一致。 您可以使用自動化工具鏈 (例如 Azure 原則計劃和登陸區域藍圖) 來強制執行這項決策。
+- **[儲存體決策](./storage-options.md)** 。 選擇正確的 Azure 儲存體解決方案，以支援您的工作負載需求。
+- **[網路決策](./networking-options.md)** 。 選擇網路服務、工具和架構，以支援您組織的工作負載、治理和連線能力需求。
+- **[資料庫資料](./data-options.md)** 。 判定哪一種資料庫技術最適合您工作負載的需求。
 
 ## <a name="azure-fundamentals"></a>Azure 基礎
 
@@ -47,6 +47,6 @@ ms.locfileid: "71224247"
 
 - **成本需求**。 根據組織採用雲端的動機以及對此環境所做的操作承諾，可能需要針對此登陸區域變更各種成本管理設定。
 - **監視決策**。 根據登陸區域的操作需求，可以部署各種監視工具。 監視決策文章可以協助您判定最適合部署的工具。
-- **使用角色型存取控制**。 Azure [角色型存取控制 (RBAC)](../azure-best-practices/roles.md) 提供更細緻的群組型存取管理，以根據使用者角色組織資源。
+- **使用角色型存取控制**。 Azure [角色型存取控制 (RBAC)](../considerations/roles.md) 提供更細緻的群組型存取管理，以根據使用者角色組織資源。
 - **原則決策**。 [Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)提供預先建立的合規性藍圖，每個藍圖都有預先定義的原則計劃。 原則決策協助根據您的需求和限制告知如何選出最佳藍圖或原則計畫。
-- **[建立混合式雲端一致性](../../infrastructure/misc/hybrid-consistency.md)** 。 建立混合式雲端解決方案，以提供您組織雲端創新的優勢，同時保有內部部署管理的許多便利性。
+- **[建立混合式雲端一致性](./hybrid-consistency.md)** 。 建立混合式雲端解決方案，以提供您組織雲端創新的優勢，同時保有內部部署管理的許多便利性。
