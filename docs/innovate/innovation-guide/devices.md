@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769278"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047562"
 ---
 ::: zone target="docs"
 
@@ -29,7 +29,7 @@ ms.locfileid: "72769278"
 
 ::: zone-end
 
-透過間歇性連線和感知的邊緣裝置進行創新。 協調數百萬個這類裝置、取得及處理無限資料，並利用日益增加的多重感應、多重裝置體驗。 對於網路邊緣的裝置，Azure 提供了一個架構供您建置沉浸式且有效的商務解決方案。 Azure 和人工智慧 (AI) 技術相結合所實現的無所不在運算，可讓您建置您所能想到的各種智慧型應用程式和系統。
+透過間歇性連線和感知的邊緣裝置進行創新。 協調數百萬個這類裝置、取得及處理無限資料，並利用日益增加的多重感應、多重裝置體驗。 對於網路邊緣的裝置，Azure 提供了一個架構供您建置沉浸式且有效的商務解決方案。 您可以透過 Azure 和人工智慧 (AI) 技術相結合而實現的通用運算，建置所能想到的各種智慧型應用程式和系統。
 
 Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集和分析資料 (接近其使用者、資料或兩者)。 使用者可以透過高回應性的內容感知應用程式取得即時見解和體驗。 將部分工作負載移至邊緣，這些裝置就能以較少的時間將訊息傳送至雲端，並更快速地回應空間事件。
 
@@ -49,7 +49,9 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 <!-- markdownlint-enable MD025 -->
 
-架構出解決方案來以數十億規模的 IoT 裝置執行雙向通訊。 使用現成可用的裝置到雲端遙測資料來了解裝置的狀態，並且只要透過設定就能定義傳給其他 Azure 服務的訊息路由。 利用雲端到裝置的訊息，可靠地將命令及通知傳送至連接的裝置，並透過通知回條來追蹤訊息傳遞。 視需要自動重新傳送裝置訊息，以便配合間歇性連線。
+架構出解決方案來以數十億規模的 IoT 裝置執行雙向通訊。 使用現成可用的裝置到雲端遙測資料來了解裝置的狀態，並且只要透過設定就能定義傳給其他 Azure 服務的訊息路由。 您可利用雲端到裝置的訊息，可靠地將命令及通知傳送至連接的裝置，並透過通知回條來追蹤訊息傳遞。 而您將視需要自動重新傳送裝置訊息，以便配合間歇性連線。
+
+以下是您會發現的一些功能：
 
 - **增強安全性的通訊**通道，用以從 IoT 裝置傳送和接收資料。
 - **內建裝置管理**和佈建，以大規模連線和管理 IoT 裝置。
@@ -66,16 +68,18 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>動作
 
 若要建立 IoT 中樞：
 
 1. 移至 [IoT 中樞]  。
-2. 按一下 [建立 IoT 中樞]  。
+2. 選取 [建立 IoT 中樞]  。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實現完全自動的 Just-In-Time 佈建。
 
@@ -86,7 +90,9 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 若要建立 IoT 中樞裝置佈建服務：
 
 1. 移至 [IoT 中樞裝置佈建服務]  。
-2. 按一下 [建立裝置佈建服務]  。
+2. 選取 [建立裝置佈建服務]  。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -102,7 +108,7 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 **Azure Digital Twins 物件模型：** 此本體會描述智慧建築的區域 (region)、地點、樓層、辦公室、區域 (zone)、會議室和聚焦會議室，或是能源網的各種發電站、變電站、能源資源和客戶，並可使用 Digital Twins 物件模型和本體來建立模型。
 
-**空間智慧圖形：** 定義於 Digital Twins 物件模型中的空間、裝置和人員的階層式圖形，可支援繼承、篩選、周遊、延展性和擴充性。 您可透過裝載於 Azure 中的 REST API 集合來管理空間圖形並與其互動。
+**空間智慧圖形：** 定義於 Digital Twins 物件模型中的空間、裝置和人員的階層式圖形，可支援繼承、篩選、周遊、延展性和擴充性。 您可透過裝載於 Azure 的 REST API 集合來管理空間圖形並與其互動。
 
 ::: zone target="docs"
 
@@ -112,16 +118,16 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>動作
 
 若要建立 Azure Digital Twins：
 
-1. 從左窗格中選取 [建立資源]  。
-2. 搜尋「Digital Twins」，然後選取 [Digital Twins]  。
+1. 在左窗格中選取 [建立資源]  。
+2. 搜尋 **digital twins**，然後選取 [Digital Twins]  。
 3. 選取 [建立]  以啟動部署程序。
-4. 按一下下方的按鈕，以檢閱現有的 Digital Twins。
+4. 若要檢閱現有的 Digital Twins，請選取此按鈕：
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>動作
 
 若要使用位置智慧：
 
 1. 移至 [Azure 地圖服務帳戶]  。
-2. 按一下 [建立 Azure 地圖服務帳戶]  。
+2. 選取 [建立 Azure 地圖服務帳戶]  。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -172,7 +178,7 @@ Azure Spatial Anchors 可讓開發人員使用混合實境平台來察覺空間�
 
 **跨裝置共用全像投影：** 在您小組和客戶選擇的裝置上提供 3D 給他們，藉此加速決策和結果。 Spatial Anchors 可讓處於相同空間的人員輕鬆參與多使用者的混合實境應用程式。
 
-**吸引人的體驗：** 藉由建立空間錨點之間的關聯性來將兩者連接在一起，並提供某種使用者體驗，在這種體驗中，可能會有兩個以上必須由使用者互動才能完成工作的景點。 您的應用程式可以讓使用者將虛擬成品放在現實世界中。 在產業設定中，使用者可藉由將支援的裝置相機指向某機器，以接收其相關內容資訊。
+**吸引人的體驗：** 藉由建立空間錨點之間的關聯性來連結兩者，並提供某種使用者體驗，在這種體驗中，可能會有兩個以上必須由使用者互動才能完成工作的景點。 您的應用程式可以讓使用者將虛擬成品放在現實世界中。 在產業設定中，使用者可藉由將支援的裝置相機指向某機器，以接收其相關內容資訊。
 
 Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 SDK 所組成。
 
@@ -184,14 +190,14 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>動作
 
 若要使用空間體驗：
 
 1. 移至 [空間錨點帳戶]  。
-2. 按一下 [建立空間錨點帳戶]  。
+2. 選取 [建立空間錨點帳戶]  。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>動作
 
 若要使用遠端轉譯：
 
 1. 移至 [Batch 帳戶]  。
-2. 按一下 [建立 Batch 帳戶]  。
+2. 選取 [建立 Batch 帳戶]  。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 

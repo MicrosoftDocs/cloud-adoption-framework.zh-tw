@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379113"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980183"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
@@ -159,7 +159,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 - **自動化：** 您可能有定期執行的指令碼，其會根據「ShutdownTime」或「DeprovisionDate」等標記值來採取動作。
 - **計費：** 標記可以出現在發票上。 您可以使用「CostCenter」或「BillTo」等標記，協助將帳單分門別類。
 
-每個資源或資源群組最多都可以有 15 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
+每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
 如需更多的標記建議和範例，請參閱雲端採用架構的[標記指引](../considerations/naming-and-tagging.md)。
 
