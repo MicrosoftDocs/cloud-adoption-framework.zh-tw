@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547181"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566053"
 ---
 # <a name="evaluate-risk-tolerance"></a>評估風險承受度
 
@@ -38,7 +38,7 @@ ms.locfileid: "72547181"
 
 上述是幾個最常由客戶所反應的風險。 雲端治理小組和雲端採用小組可以開始開發風險設定檔，因為工作負載會遷移並準備好生產環境版本。 根據所需的商務結果和轉換工作，準備好進行交談以定義、精簡和管理風險。
 
-## <a name="understanding-risk-tolerance"></a>了解風險承受度
+## <a name="understand-risk-tolerance"></a>瞭解風險承受度
 
 識別風險是個相當直覺的程序。 IT 相關風險在產業中通常是標準的。 不過，這些風險的承受度是每個組織特有的。 而這也是商務和 IT 對話時常面臨瓶頸的地方。 因為雙方在對話時，基本上是以兩種不同的語言來交談。 下面的比較和問題是設計來開始交談之用，以協助雙方能取得更佳的了解，並計算出風險承受度。
 

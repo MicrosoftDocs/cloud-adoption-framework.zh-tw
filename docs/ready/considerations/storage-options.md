@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4a01f9d08ccab4061da71f9dbd64664d70f2d288
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243106"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561719"
 ---
 # <a name="review-your-storage-options"></a>檢查您的儲存體選項
 
@@ -72,12 +72,12 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | 我有一個檔案共用 (SMB 或 NFS)。 | [Azure 檔案儲存體 (標準或進階)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | 進階與標準 Azure 檔案儲存體層的選擇取決於 IOPS、輸送量和您的延遲一致性需求。 如果您有內部部署的 NetApp，請考量使用 Azure NetApp Files。 如果您需要將存取控制清單 (ACL) 和時間戳記遷移至雲端，Azure 檔案同步可以將所有這些設定帶入您的 Azure 檔案共用，作為便利的移轉路徑。 |
 | 我有適用於數 PB 資料的內部部署物件儲存體系統 (例如 Dell-EMC ECS)。 | [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) |  Azure Blob 儲存體提供進階、經常性存取、非經常性存取和封存層，以符合您的工作負載效能和成本需求。 |
 | 我有一個 DFSR 部署，或另一種方式來處理分公司。 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步提供多網站同步處理，讓檔案在雲端中的多部伺服器和原生 Azure 檔案共用之間保持同步。 使用雲端階層處理，移至內部部署的固定儲存體使用量。 雲端階層處理會將您的伺服器轉換成相關檔案的快取，同時在 Azure 檔案共用中調整幾乎不存取的資料。 |
-| 我有磁帶媒體櫃 (內部部署或異地)，用於備份/災害復原或長期資料保留。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob 儲存體封存層的可能成本最低，但可能需要數小時才能將離線資料複製到非經常性存取層、經常性存取層或進階層儲存體，以允許存取。 非經常性存取層以低成本提供即時存取。 |
+| 我有磁帶媒體櫃（內部部署或異地），用於備份和嚴重損壞修復或長期資料保留。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob 儲存體封存層的可能成本最低，但可能需要數小時才能將離線資料複製到非經常性存取層、經常性存取層或進階層儲存體，以允許存取。 非經常性存取層以低成本提供即時存取。 |
 | 我已設定檔案或物件儲存體來接收我的備份。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br/>[Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 若要使用最低成本儲存體來備份長期保留的資料，請將資料移至 Azure Blob 儲存體，並使用非經常性存取層和封存層。 若要針對伺服器（內部部署或 Azure VM）上的檔案資料啟用快速的嚴重損壞修復，請使用 Azure 檔案同步，將共用同步至個別的 Azure 檔案共用。使用 Azure 檔案共用快照集，您可以還原較舊的版本，並將其同步至已連線的伺服器，或在 Azure 檔案共用中以原生方式存取它們。 |
 | 我對災害復原網站執行資料複寫。 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步會移除災害復原伺服器的需求，並將檔案儲存在原生 Azure SMB 共用中。 快速的災害復原會快速重建故障內部部署伺服器上的任何資料。 您甚至可以讓多個伺服器位置保持同步，或使用雲端階層處理僅儲存相關的內部部署資料。 |
 | 我在中斷連線的情況下管理資料傳輸。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 使用 Data Box Edge 或資料箱閘道，您可以在中斷連線的情況下複製資料。 當閘道離線時，它會將您複製的所有檔案儲存在快取中，然後在您連線時上傳它們。 |
 | 我管理對雲端進行中的資料管線。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 將資料從經常產生資料的系統移至雲端，只要將資料直接複製到儲存體閘道即可。 如果他們需要稍後再存取該資料，則會直接放在該處。 |
-| 我有大量的資料會一次全部顯示。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 管理一次全部顯示的大量資料，例如將自動駕駛汽車拖回車庫，或基因定序機器完成其分析時。 以快速的本機速度將所有資料複製到資料箱閘道，然後讓閘道在您的網路允許的情況下上傳它。
+| 我有大量的資料會在同一時間抵達。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 管理同時抵達的大量資料，例如當自發車拉回車庫，或 gene 排序機器完成其分析時。 以快速的本機速度將所有資料複製到資料箱閘道，然後讓閘道在您的網路允許的情況下上傳它。
 
 ### <a name="plan-based-on-data-workloads"></a>根據資料工作負載進行規劃
 
@@ -109,7 +109,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files 服務是企業等級、高效能、計量檔案儲存體服務。 Azure NetApp Files 支援任何工作負載類型，預設為高度可用。 您可以選取服務和效能層級，並且透過服務設定快照集。 |
 | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge 是內部部署網路裝置，可將資料移入和移出 Azure。 Data Box Edge 具有已啟用 AI 的邊緣計算，以便在上傳期間預先處理資料。 「資料箱閘道」是該裝置的虛擬版本，但是具備相同的資料傳輸功能。 |
 | [Azure 資料箱閘道服務](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | Azure 資料箱閘道是可讓您順利將資料傳送到 Azure 的儲存體解決方案。 資料箱閘道是虛擬裝置，其基礎是佈建在虛化環境中或 Hypervisor 中的虛擬機器。 虛擬裝置位於內部部署環境，您可以使用 NFS 和 SMB 通訊協定將資料寫入其中。 裝置接著會將您的資料傳輸至 Azure 區塊 Blob 或 Azure 分頁 Blob，或 Azure 檔案儲存體。 |
-| [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure 是一個適用於資料密集高效能運算 (HPC) 工作的檔案系統快取解決方案。 利用雲端運算的擴充性，讓您的資料可隨時隨地存取，&mdash;even 儲存在您自己的內部部署硬體中的資料。 |
+| [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure 是一個適用於資料密集高效能運算 (HPC) 工作的檔案系統快取解決方案。 利用雲端運算的擴充性，讓您的資料隨時隨地都能存取，&mdash;即使是儲存在您自己的內部部署硬體中的資料也一樣。 |
 
 ## <a name="data-redundancy-and-availability"></a>資料備援和可用性
 
@@ -133,11 +133,11 @@ Azure 儲存體有各種不同的備援選項，可根據客戶需求來協助�
 
 [儲存體服務加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)提供待用加密，並保護資料安全，以符合組織安全性和合規性承諾。 所有 Azure 區域中的所有受控磁碟、快照集和映像預設都會啟用儲存體服務加密。 從 2017 年 6 月 10 日開始，所有新受控磁碟、快照集、映像和寫入至現有受控磁碟的新資料都會使用 Microsoft 所管理的金鑰進行自動待用加密。 如需詳細資訊，請造訪[受控磁碟常見問題集](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption)。
 
-Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault) 中的金鑰，將連接到 IaaS VM 的受控磁碟加密為待用和傳輸中的作業系統和資料磁碟。 對於 Windows，磁碟機是使用業界標準的 [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview) 加密技術來加密。 對於 Linux，磁碟是使用 [dm-crypt](https://wikipedia.org/wiki/Dm-crypt) (英文) 子系統來加密。 加密程序會與 Azure Key Vault 整合，可讓您控制和管理磁碟加密金鑰。 如需詳細資訊，請參閱 [Windows 和 Linux IaaS 虛擬機器適用的 Azure 磁碟加密](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview)。
+Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault) 中的金鑰，將連接到 IaaS VM 的受控磁碟加密為待用和傳輸中的作業系統和資料磁碟。 對於 Windows，磁碟機是使用業界標準的 [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 加密技術來加密。 對於 Linux，磁碟是使用 [dm-crypt](https://wikipedia.org/wiki/Dm-crypt) (英文) 子系統來加密。 加密程序會與 Azure Key Vault 整合，可讓您控制和管理磁碟加密金鑰。 如需詳細資訊，請參閱 [Windows 和 Linux IaaS 虛擬機器適用的 Azure 磁碟加密](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview)。
 
 ## <a name="regional-availability"></a>區域可用性
 
-您可以使用 Azure 依照您所需要的規模，將服務提供給身居*世界不同角落*的客戶及合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
+您可以使用 Azure 來提供規模的服務，*無論您身在何處*，都能觸及您的客戶和合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
 
 受控磁碟可在所有具有進階 SSD 和標準 SSD 供應項目的 Azure 區域中使用。 雖然 Ultra SSD 目前處於公開預覽狀態，但是只在一個可用性區域 (美國東部 2 區域) 中提供。 當您規劃需要 Ultra SSD 的任務關鍵性、最上層工作負載時，請確認區域可用性。
 
@@ -147,6 +147,6 @@ Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.micro
 
 ## <a name="data-residency-and-compliance-requirements"></a>資料落地和合規性需求
 
-您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需了解這些需求的協助，請參閱[利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
+您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需瞭解這些需求的協助，請參閱[使用 Azure 達成符合規範的資料存放區和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
 
-合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理及政治界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到符合規範的 Azure 地理位置中的區域。
+合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保資料存放區、主權、合規性及復原需求會在地理和政治界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到符合規範的 Azure 地理位置中的區域。

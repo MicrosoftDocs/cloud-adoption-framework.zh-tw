@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058768"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566023"
 ---
 # <a name="governance-design-for-multiple-teams"></a>多個小組的控管設計
 
@@ -176,7 +176,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
     ![加入參與者](../../_images/govern/design/governance-3-3.png)
 6. 第一個**工作負載擁有者**會在其中包含一組虛擬機器的兩個資源群組中，建立虛擬網路。 第一個**工作負載擁有者**會將 environment 和 managedBy 標記套用至所有資源。 請注意，Azure 服務限制計數器現在剩餘 997 個虛擬網路。
     建立虛擬網路](../../_images/govern/design/governance-3-4.png) ![
-7. 每個虛擬網路在建立時，並沒有與內部部署的連線。 在這種類型的架構中，每個虛擬網路必須對等互連至**共用基礎結構**環境中的 hub-vnet。 虛擬網路對等互連會建立兩個不同虛擬網路之間的連線，並且允許網路流量在兩者之間傳送。 請注意，虛擬網路對等互連原本並非可轉移。 必須在已連線的兩個虛擬網路其中一個指定對等互連，且只有在其中一個虛擬網路指定對等互連時，連線才會完成。 為了說明其效果，第一個**工作負載擁有者**會指定 **prod-vnet** 與 **hub-vnet** 之間的對等互連。 隨即建立第一個對等互連，但是沒有流量，因為從 **hub-vnet** 到 **prod-vnet** 的互補對等互連尚未指定。 第一個**工作負載擁有者**會連絡**網路作業**使用者，並且要求這個互補對等互連連線。
+7. 每個虛擬網路在建立時，並沒有與內部部署的連線。 在這種類型的架構中，每個虛擬網路必須對等互連至*共用基礎結構*環境中的 hub-vnet。 虛擬網路對等互連會建立兩個不同虛擬網路之間的連線，並且允許網路流量在兩者之間傳送。 請注意，虛擬網路對等互連原本並非可轉移。 必須在已連線的兩個虛擬網路其中一個指定對等互連，且只有在其中一個虛擬網路指定對等互連時，連線才會完成。 為了說明其效果，第一個**工作負載擁有者**會指定 **prod-vnet** 與 **hub-vnet** 之間的對等互連。 隨即建立第一個對等互連，但是沒有流量，因為從 **hub-vnet** 到 **prod-vnet** 的互補對等互連尚未指定。 第一個**工作負載擁有者**會連絡**網路作業**使用者，並且要求這個互補對等互連連線。
     ![建立對等互連連線](../../_images/govern/design/governance-3-5.png)
 8. **網路作業**使用者檢閱要求、核准，然後在 **hub-vnet** 的設定中指定對等互連。 對等互連連線現在已完成，網路流量會在兩個虛擬網路之間流動。
     ![建立對等互連連線](../../_images/govern/design/governance-3-6.png)
@@ -225,7 +225,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 
 因此，您可以根據您的需求優先順序，選取這兩個範例資源管理模型其中之一。 如果您預期貴組織不會達到單一訂用帳戶的服務限制，則您可以使用單一訂用帳戶與多個資源群組。 相反地，如果貴組織預期有許多工作負載，每個環境有多個訂用帳戶可能比較理想。
 
-## <a name="implementing-the-resource-management-model"></a>實作資源管理模型
+## <a name="implement-the-resource-management-model"></a>執行資源管理模型
 
 您已了解用來管理 Azure 資源存取權的數個不同模型。 現在您會逐步進行所需的步驟，使用一個訂用帳戶為設計指南的每個**共用基礎結構**、**生產**和**開發**環境，實作資源管理模型。 針對全部三個環境，您會有一個**訂用帳戶擁有者**。 每個工作負載會在**資源群組**中隔離，具有新增了**參與者**角色的**工作負載擁有者**。
 
@@ -259,7 +259,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 6. 建立**工作負載擁有者**的核准程序，以要求建立資源群組。 核准程序的實作方式有許多種，例如透過電子郵件，或者您可以使用如 [SharePoint 工作流程](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)的處理程序管理工具。 核准程序可以依照下列步驟：
     - **工作負載擁有者**為**開發**環境、**生產**環境或兩者中的必要 Azure 資源準備用料表，並且將它提交給**訂用帳戶擁有者**。
     - **訂用帳戶擁有者**檢閱用料表並驗證要求的資源，以確保要求的資源適合其規劃使用，例如，檢查要求的[虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)正確無誤。
-    - 如果要求未獲得核准，**工作負載擁有者**會收到通知。 如果要求通過核准，**訂用帳戶擁有者**會遵循貴組織的[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)來[建立要求的資源群組](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)，[新增**工作負載擁有者**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有[**參與者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的**工作負載擁有者**。
+    - 如果要求未獲得核准，**工作負載擁有者**會收到通知。 如果要求通過核准，**訂用帳戶擁有者**會遵循貴組織的[命名慣例](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)來[建立要求的資源群組](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)，[新增**工作負載擁有者**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有[**參與者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的**工作負載擁有者**。
 7. 為工作負載擁有者建立核准程序，以要求來自共用基礎結構擁有者的虛擬網路對等互連連線。 如同上一個步驟，這個核准程序可以使用電子郵件或處理程序管理工具來實作。
 
 既然您已實作治理模型，您可以部署共用基礎結構服務。

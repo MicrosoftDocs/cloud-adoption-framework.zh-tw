@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547724"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566316"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -31,7 +31,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 前兩個障礙會以平行方式進行管理。 本文會講述第三個和第四個障礙的解決方案。
 
-### <a name="expanding-the-cloud-governance-team"></a>擴充雲端治理小組
+### <a name="expand-the-cloud-governance-team"></a>擴充雲端治理小組
 
 雲端治理小組正在擴充。 由於需要另外支援身分識別管理，來自身分識別基準小組的系統管理員現在會參與每週一次的會議，好讓現有的小組成員了解有何改變。
 
@@ -45,7 +45,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 未來的狀態現在也需要從雲端提供者連接到公司的 MPLS/租用型解決方案。
 
-目前和未來狀態的變更會產生新風險，因此需要新的原則聲明。
+目前和未來狀態的變更會產生新風險，需要新的原則聲明。
 
 ## <a name="changes-in-tangible-risks"></a>有形風險的變更
 
@@ -53,7 +53,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 **現有的身分識別相依性。** 對現有驗證和身分識別服務的相依性可能會延遲或阻礙將某些工作負載移轉至雲端的工作。 若未能讓這兩個資料中心準時恢復上線，將會產生好幾百萬美元的資料中心租賃費用。
 
-此業務風險會延伸成少數技術風險：
+此業務風險可能會延伸出少數技術風險：
 
 - 舊式驗證可能無法在雲端中使用，而限制了某些應用程式的部署。
 - 目前的協力廠商多重要素驗證解決方案可能無法在雲端中使用，而限制了某些應用程式的部署。

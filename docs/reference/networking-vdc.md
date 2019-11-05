@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240092"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566692"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>虛擬資料中心：網路觀點
 
@@ -35,7 +35,7 @@ Microsoft Azure 提供具有企業級功能和可靠性的超大規模資料庫�
 
 雲端解決方案早先設計成在公用頻譜中裝載相對隔離的單一應用程式。 這種方法已良好運作多年。 其後，雲端解決方案的效益日漸顯著，開始有人在雲端上裝載多個大規模工作負載。 在雲端服務的整個生命週期中，解決一或多個區域中部署的安全性、可靠性、效能和成本考慮變得非常重要。
 
-下列雲端部署的**紅色方塊**顯示安全性缺口的範例。 **黃色**方塊會顯示跨工作負載優化網路虛擬裝置的空間。
+下列雲端部署圖表顯示安全性缺口的範例，以紅色方塊反白顯示。 黃色方塊會顯示跨工作負載優化網路虛擬裝置的空間。
 
 ![0][0]
 
@@ -87,7 +87,7 @@ Microsoft Azure 提供具有企業級功能和可靠性的超大規模資料庫�
 
 目錄服務是一種共用資訊基礎結構，用以尋找、管理和組織日常項目和網路資源。 這些資源可能包含磁碟區、資料夾、檔案、印表機、使用者、群組、裝置和其他物件。 目錄伺服器會將網路上的每個資源都視為物件。 資源的相關資訊會儲存為與該資源或物件建立關聯的屬性集合。
 
-所有 Microsoft Online 商務服務都依賴 Azure Active Directory (Azure AD) 來進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，並結合了核心目錄服務、進階身分識別與應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
+所有 Microsoft Online 商務服務都依賴 Azure Active Directory (Azure AD) 來進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，它結合了核心目錄服務、進階身分識別管制及應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
 
 不需要單一全域系統管理員，即可指派虛擬資料中心執行中的擁有權限。 相反地，每個特定部門、使用者群組或目錄服務中的服務，都可以擁有在虛擬資料中心執行中管理自己資源所需的許可權。 建構權限需要平衡。 權限太多可能會阻礙效能效率，而權限太少或鬆散可能會增加安全性風險。 Azure 角色型存取控制（RBAC）藉由針對虛擬資料中心執行中的資源提供更細緻的存取管理，協助解決此問題。
 
@@ -263,7 +263,7 @@ Azure 防火牆或 NVA 防火牆都會使用共同管理平面，其中有一組
 
 Azure Load Balancer 也可以探查各種伺服器實例的健全狀況，而且當實例無法回應探查時，負載平衡器會停止將流量傳送至狀況不良的實例。 在虛擬資料中心，外部負載平衡器會部署至中樞和輪輻。 在中樞中，可使用負載平衡器來有效率地將流量路由至輪輻中的服務，而且在輪輻中，負載平衡器可用來管理應用程式流量。
 
-[**Azure Front 門板**][AFD]（AFD）是 Microsoft 的高可用性和可擴充的 Web 應用程式加速平臺、全域 HTTP Load Balancer、應用程式保護和內容傳遞網路。 AFD 在 Microsoft 全球網路邊緣的100個以上的位置執行，可讓您建立、操作及相應放大您的動態 web 應用程式和靜態內容。 AFD 為您的應用程式提供世界級使用者效能、統一地區/戳記維護自動化、BCDR 自動化、統一用戶端/使用者資訊、快取和服務見解。 此平台可提供效能、可靠性和支援 SLA、合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
+[Azure Front 門板（AFD）][AFD]是 Microsoft 的高可用性和可擴充的 Web 應用程式加速平臺、全域 HTTP Load Balancer、應用程式保護和內容傳遞網路。 AFD 在 Microsoft 全球網路邊緣的100個以上的位置執行，可讓您建立、操作及相應放大您的動態 web 應用程式和靜態內容。 AFD 為您的應用程式提供世界級使用者效能、統一地區/戳記維護自動化、BCDR 自動化、統一用戶端/使用者資訊、快取和服務見解。 此平台可提供效能、可靠性和支援 SLA、合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
 
 [**應用程式閘道**][AppGW]Microsoft Azure 應用程式閘道是專用的虛擬裝置，可提供應用程式傳遞控制器（ADC）服務，為您的應用程式提供各種第7層負載平衡功能。 它會將 CPU 密集 SSL 終止卸載至應用程式閘道，讓您最佳化 Web 伺服器陣列的產能。 它也提供其他第 7 層路由功能，包括循環配置連入流量、以 Cookie 為基礎的工作階段同質、URL 路徑型路由，以及在單一應用程式閘道背後代管多個網站的能力。 Web 應用程式防火牆 (WAF) 也是提供為應用程式閘道 WAF SKU 的一部分。 此 SKU 會保護 Web 應用程式免於遭遇常見的 Web 弱點和攻擊。 應用程式閘道可以設定為面向網際網路的閘道、內部專用閘道或兩者混合。
 
@@ -327,7 +327,7 @@ Operations Management Suite 中的[網路效能監控][NPM]解決方案可以端
 - **資料驅動：** 資料密集的工作負載，經常存取資料庫或其他儲存體。
 - **整合式：** 提供與組織內部或外部的其他系統整合的工作負載。
 
-面向**客戶的網站（網際網路或內部）** ：與網際網路互動的大部分應用程式都是網站。 Azure 提供在 IaaS VM 上或從[Azure Web Apps][WebApps]網站（PaaS）執行網站的功能。 Azure Web Apps 可與允許將 Web Apps 部署在輪輻網路區域中的 VNet 整合。 內部面向網站不需要公開公用網際網路端點，因為資源可透過私人 VNet 中的私人非網際網路可路由位址來存取。
+面向**客戶的網站（網際網路或內部）：** 與網際網路互動的大部分應用程式都是網站。 Azure 提供在 IaaS VM 上或從[Azure Web Apps][WebApps]網站（PaaS）執行網站的功能。 Azure Web Apps 可與允許將 Web Apps 部署在輪輻網路區域中的 VNet 整合。 內部面向網站不需要公開公用網際網路端點，因為資源可透過私人 VNet 中的私人非網際網路可路由位址來存取。
 
 **海量資料和分析：** 當資料需要相應增加至較大的磁片區時，資料庫可能無法適當地相應增加。 Hadoop 技術可讓系統對大量節點平行執行分散式查詢。 客戶可以選擇在 IaaS Vm 或 PaaS （[HDInsight][HDI]）中執行資料工作負載。 HDInsight 支援部署到以位置為基礎的 VNet，可以部署到虛擬資料中心輪輻中的叢集。
 
@@ -337,7 +337,7 @@ Operations Management Suite 中的[網路效能監控][NPM]解決方案可以端
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>讓虛擬資料中心具有高可用性：多個虛擬資料中心
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>讓虛擬資料中心具有高可用性：多個虛擬資料中心
 
 到目前為止，本文著重于單一虛擬資料中心的設計，其中描述有助於復原的基本元件和架構。 Azure 功能（例如 Azure 負載平衡器、Nva、可用性設定組、擴展集和其他機制）會提供給系統，讓您能夠在生產服務中建立穩固的 SLA 層級。
 
@@ -376,7 +376,7 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 由於是使用 DNS，因此流量管理員僅適用於 Azure 公用端點。 服務通常用來控制或將流量轉移到 Azure Vm，並在虛擬資料中心實作為狀況良好的實例中 Web Apps。 即使在整個 Azure 區域失敗的情況中，流量管理員仍可復原，而且可以根據數個準則來控制不同虛擬資料中心內服務端點的使用者流量分配。 例如，特定虛擬資料中心執行中的服務失敗，或選取具有最低網路延遲的虛擬資料中心執行。
 
-### <a name="summary"></a>總結
+### <a name="summary"></a>摘要
 
 虛擬資料中心是資料中心遷移的一種方法，可在 Azure 中建立可調整的架構，將雲端資源使用最大化、降低成本，並簡化系統管理。 虛擬資料中心是以中樞和輪輻網路拓撲為基礎，可在中樞內提供一般共用服務，並允許輪輻中的特定應用程式和工作負載。 虛擬資料中心也符合公司角色的結構，其中，中央 IT、DevOps 和營運和維護等不同部門在執行其特定角色時，會共同運作。 虛擬資料中心滿足增益和轉移遷移的需求，但也提供原生雲端部署的許多優點。
 
@@ -388,9 +388,9 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 |網路功能|負載平衡|連線能力|
 |-|-|-|
-|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|身分識別</br>|監視</br>|最佳做法</br>|
+|身分識別</br>|監控</br>|最佳作法</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[角色基底存取控制][RBAC]</br>[預設 Azure AD 角色][Roles]</br></br></br> |[網路監看員][NetWatch]</br>[Azure 監視器][Monitor]</br>[活動記錄][ActLog]</br>[診斷記錄][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[網路效能監視器][NPM]|[周邊網路最佳做法][DMZ]</br>[訂用帳戶管理][SubMgmt]</br>[資源群組管理][RGMgmt]</br>[Azure 訂用帳戶限制][limits] </br></br></br>|
 

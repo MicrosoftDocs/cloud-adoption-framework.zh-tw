@@ -1,23 +1,23 @@
 ---
-title: 適用于 Azure 的 VMWare 主機遷移最佳做法
+title: 適用于 Azure 的 VMware 主機遷移最佳做法
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Azure 的 VMWare 主機遷移最佳做法簡介
+description: Azure 的 VMware 主機遷移最佳做法簡介
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c14445dcdeaba16a01d5adbdab0a2c47feb57915
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b55fc8fa06a5e33fde12754e893dd2309407746b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558008"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564674"
 ---
-# <a name="vmware-host-migration-best-practices-for-azure"></a>適用于 Azure 的 VMWare 主機遷移最佳做法
+# <a name="vmware-host-migration-best-practices-for-azure"></a>適用于 Azure 的 VMware 主機遷移最佳做法
 
-將整個 VMWare 主機遷移至 Azure，可以加速雲端採用架構中所述的標準遷移方法，如下圖所示。
+將整個 VMware 主機遷移至 Azure，可以加速雲端採用架構中所述的標準遷移方法，如下圖所示。
 
 ![雲端採用架構移轉模型](../../_images/operational-transformation-migrate.png)
 
@@ -27,4 +27,4 @@ ms.locfileid: "72558008"
 
 ## <a name="migration-best-practices"></a>移轉最佳做法
 
-左邊的目錄會列出多個 Microsoft web 內容的一些最佳作法，其可引導您執行 VMWare 主機遷移至 Azure VMWare 解決方案（AVS）。 將此頁面加入書簽，以快速參考完整的最佳作法清單。
+左邊的目錄會列出多個 Microsoft web 內容的一些最佳作法，其可引導您執行 VMware 主機遷移至 Azure VMware 解決方案（AVS）。 將此頁面加入書簽，以快速參考完整的最佳作法清單。

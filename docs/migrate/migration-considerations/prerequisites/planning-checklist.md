@@ -1,5 +1,5 @@
 ---
-title: 移轉環境 - 規劃檢查清單
+title: 遷移環境規劃檢查清單
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在移轉之前驗證環境是否已就緒
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378390"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564559"
 ---
-# <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>移轉環境規劃檢查清單 - 在移轉前先驗證環境是否已就緒
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 
 在移轉程序的初始步驟中，您必須在雲端建立正確的環境，以接收、裝載及支援資產的移轉。 本文將列載在進行移轉前須在目前的環境中驗證的事項。
 

@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 894c4c7431533aa29ad7fcc1cd08046651987f10
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239786"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561759"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -91,7 +91,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 - [什麼是 Azure Active Directory？](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租用戶](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Azure AD Connect 的拓撲](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [Microsoft 雲端供應項目的訂閱、授權、帳戶和租用戶](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Microsoft 雲端供應項目的訂閱、授權、帳戶和租用戶](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>後續步驟
 

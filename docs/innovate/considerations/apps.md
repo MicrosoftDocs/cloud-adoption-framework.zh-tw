@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047545"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565780"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -27,16 +27,16 @@ ms.locfileid: "73047545"
 
 小組可以更快速且精確地回應客戶的意見反應、市場變化，以及創新的機會，通常會將其各自的市場導向創新。 創新應用程式的第一個原則會匯總在[成長思維](./learn.md#growth-mindset)方式中：「共用程式碼」。 經過一段時間後，創新就會從文化的焦點中浮現出來。 為了維持創新，需要不同的觀點和貢獻。
 
-為了準備好進行創新，所有應用程式的開發都應該從共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com/)，可讓您快速建立共用程式碼儲存機制。 或者， [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops)是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure Repos 提供兩種類型的版本控制：
+為了準備好進行創新，所有應用程式的開發都應該從共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您快速建立共用程式碼儲存機制。 或者， [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure Repos 提供兩種類型的版本控制：
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制
-- [Team Foundation 版本控制（TFVC）](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制
+- [Team Foundation 版本控制（TFVC）](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制
 
 ## <a name="citizen-developers"></a>公民開發人員
 
 專業開發人員是創新的重要元件。 當假設有正確的大規模證明時，專業開發人員就必須穩定並準備解決方案以進行調整。 本文中所參考的大部分原則都需要專業開發人員的支援。 可惜的是，目前的趨勢建議專業開發人員的需求比開發人員還多。 此外，當您認為需要專業開發時，創新的成本和步調也比較不理想。 為了因應這些挑戰，公民開發人員提供一種方法來調整開發工作，並加速早期假設測試。
 
-當早期假設可以透過適用于應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和[Microsoft Flow](https://docs.microsoft.com/flow)預測的[AI](https://docs.microsoft.com//powerapps/use-ai-builder)產生器、工作流程和功能等工具進行驗證時，可以使用公民開發人員[BI](https://docs.microsoft.com/power-bi)用於資料耗用量。
+當早期假設可以透過適用于應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和[Microsoft Flow](https://docs.microsoft.com/flow)預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、工作流程和功能等工具進行驗證時，可以使用公民開發人員[BI](https://docs.microsoft.com/power-bi)用於資料耗用量。
 
 > [!NOTE]
 > 當您依賴公民開發人員測試假設時，建議您最好讓一些專業開發人員提供支援、審查和指導方針。 假設經過大規模驗證之後，將應用程式轉換成更健全的程式設計模型的流程，會加速創新。 藉由在早期的流程定義中牽涉到專業開發人員，您可以在稍後實現更整潔的轉換。
@@ -83,11 +83,11 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 - 現有的商務邏輯應該符合現有客戶的需求（或接近會議）。
 - 改善的體驗會更符合特定客戶世代的需求。
-- 最基本的可行產品（MVP）解決方案所需的商務邏輯，通常是透過多[層](/azure/architecture/guide/architecture-styles/n-tier)式 web 服務、API 或[微服務](/azure/architecture/guide/architecture-styles/microservices)設計來進行。 此方法包含將現有的解決方案包裝在雲端託管的新體驗中。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
+- 最基本的可行產品（MVP）解決方案所需的商務邏輯，通常是透過多[層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)式 web 服務、API 或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計來進行。 此方法包含將現有的解決方案包裝在雲端託管的新體驗中。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
 
 ### <a name="rebuild-an-existing-solution"></a>重建現有的解決方案
 
-如果無法輕鬆擴充應用程式，可能需要重構解決方案。 在此方法中，工作負載會遷移至雲端。 遷移應用程式之後，會將其部分修改或複製成 web 服務或[微服務](/azure/architecture/guide/architecture-styles/microservices)，並以平行方式部署到現有的解決方案。 以平行服務為基礎的解決方案可視為擴充解決方案。 此解決方案只會將現有的解決方案包裝在雲端中託管的新體驗。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
+如果無法輕鬆擴充應用程式，可能需要重構解決方案。 在此方法中，工作負載會遷移至雲端。 遷移應用程式之後，會將其部分修改或複製為與現有解決方案平行部署的 web 服務或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)。 以平行服務為基礎的解決方案可視為擴充解決方案。 此解決方案只會將現有的解決方案包裝在雲端中託管的新體驗。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
 
 > [!CAUTION]
 > 重構或重新架構解決方案或集中商務邏輯，可以快速觸發耗時的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)，而不是客戶價值的來源。 這是創新的風險，特別是在假設驗證的初期。 有了設計解決方案的創意，應該會有一個不需要重構現有解決方案的 MVP 路徑。 最好是延遲重構，直到可以大規模驗證初始假設為止。
@@ -98,7 +98,7 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 卓越雲端中心的自助作業管理模型類型，可讓您在解決方案環境內進行更緊密的控制和更快速的反復專案。 這些目標是藉由將營運控制和責任轉移給商務小組來完成。
 
-如果您的目標是要調整或符合現有解決方案的全球需求，您可能會發現這種方法足以驗證客戶假設。 在遷移解決方案並稍微現代化之後，商務小組可以調整它來測試各種假設。 這些通常牽涉到客戶世代，他們關心效能、全球散發和 IT 營運所妨礙運作的其他客戶需求。
+如果您想要調整或符合現有解決方案的全域需求，此方法可能就足以驗證客戶假設。 在遷移解決方案並稍微現代化之後，商務小組可以調整它來測試各種假設。 這些通常牽涉到客戶世代，他們關心效能、全球散發和 IT 營運所妨礙運作的其他客戶需求。
 
 ## <a name="reduce-overhead-and-management"></a>減少額外負荷和管理
 

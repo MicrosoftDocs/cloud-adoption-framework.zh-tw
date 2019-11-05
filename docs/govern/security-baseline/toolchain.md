@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bf3eea5486fbd349094663dc5f37527f5042bb5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221697"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565901"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure 中的安全性基準工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "71221697"
 
 下列 Azure 工具清單可協助您成熟支援安全性基準的原則和流程。
 
-| Tool | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) / [資源管理員](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)和[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | 對資源和建立資源套用存取控制   | 是                             | 否              | 是      | 否           | 否                    | 否            |
 | 保護虛擬網路                                    | 是                             | 否              | 否       | 是          | 否                    | 否            |
@@ -31,8 +31,8 @@ ms.locfileid: "71221697"
 | 管理混合式識別服務                            | 否                              | 否              | 是      | 否           | 否                    | 否            |
 | 限制允許的資源類型                         | 否                              | 否              | 否       | 是          | 否                    | 否            |
 | 強制執行地理區域限制                          | 否                              | 否              | 否       | 是          | 否                    | 否            |
-| 監視網路和資源的安全性健康情況          | 否                              | 否              | 否       | 否           | yes                   | 是           |
-| 偵測惡意活動                                  | 否                              | 否              | 否       | 否           | yes                   | 是           |
+| 監視網路和資源的安全性健康情況          | 否                              | 否              | 否       | 否           | 是                   | 是           |
+| 偵測惡意活動                                  | 否                              | 否              | 否       | 否           | 是                   | 是           |
 | 事先偵測弱點                        | 否                              | 否              | 否       | 否           | 是                   | 否            |
 | 設定備份和災害復原                     | 是                             | 否              | 否       | 否           | 否                    | 否            |
 

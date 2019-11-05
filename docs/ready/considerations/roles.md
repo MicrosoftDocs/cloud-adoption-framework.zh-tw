@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243132"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561785"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -41,7 +41,7 @@ ms.locfileid: "73243132"
 > [!NOTE]
 > 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](https://docs.microsoft.com/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
 
-## <a name="using-built-in-rbac-roles"></a>使用內建的 RBAC 角色
+## <a name="use-built-in-rbac-roles"></a>使用內建的 RBAC 角色
 
 Azure 提供許多內建角色定義，其中包含三個核心角色來提供存取權：
 
@@ -59,7 +59,7 @@ Azure 提供許多內建角色定義，其中包含三個核心角色來提供�
 
 如需可用內建角色的完整清單，請參閱[適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)。
 
-## <a name="using-custom-roles"></a>使用自訂角色
+## <a name="use-custom-roles"></a>使用自訂角色
 
 雖然內建至 Azure 的角色支援各種不同存取控制案例，但是可能不符合貴組織或小組的所有需求。 例如，如果您有一個負責管理虛擬機器和 Azure SQL Database 資源的單一使用者群組，您可能會想要建立自訂角色，以最佳化所需存取控制的管理。
 

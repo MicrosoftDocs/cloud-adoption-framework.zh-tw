@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025458"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564603"
 ---
 # <a name="business-change-plan"></a>業務變更方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "71025458"
 
 這些主題通常會以「引進新解決方案給使用者應主要著重於變更的風險控制和促進上」的假設作為基礎。 此外，IT 主要著重於技術變更的風險和該變更的促進上。
 
-## <a name="creating-business-change-plans"></a>建立業務變更方案
+## <a name="create-business-change-plans"></a>建立商務變更計畫
 
 業務變更方案不只會探討技術變更本身，還會假設移轉工作中的每個發行都可推動某種程度的業務程序變更。 其會探討技術變更的上下游。 下列問題可協助參與者從業務變更的觀點思考使用者採用，以發揮最大的業務影響：
 
@@ -67,4 +67,4 @@ ms.locfileid: "71025458"
 
 ## <a name="references"></a>參考
 
-- Eason, K.(1988) _Information technology and organizational change_, New York:Taylor and Francis.
+- Eason，K. （1988）_資訊技術和組織變革_，紐約： Taylor 和 Francis。

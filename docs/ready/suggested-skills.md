@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6da4db02744c1ca670588c4496524073d71b3eae
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240079"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566699"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -30,16 +30,16 @@ ms.locfileid: "73240079"
 
 在準備階段期間，我們需要技術人員來建立移轉登陸區域，以裝載、操作及管理遷移至雲端的工作負載。 您可以使用下列學習路徑來加速開發必要的技能：
 
-- [建立 azure 帳戶](/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所佈建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
-- [Azure 入口網站](/learn/modules/tour-azure-portal)：流覽 Azure 入口網站功能和服務，並自訂入口網站。
-- [Azure 簡介](/learn/modules/welcome-to-azure)：透過在雲端中建立並設定第一部虛擬機器來開始使用 azure。
-- [Azure 中的安全性簡介](/learn/modules/intro-to-security-in-azure)：討論在雲端工作時保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
-- [管理 azure 中的資源](/learn/paths/manage-resources-in-azure)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
-- [建立 VM](/learn/modules/create-windows-virtual-machine-in-azure)：使用 Azure 入口網站建立虛擬機器。
-- [Azure 網路](/learn/modules/intro-to-azure-networking)功能：瞭解 azure 網路功能的一些基本概念，以及 azure 網路功能如何協助提升復原能力並降低延遲。
-- [Azure 計算選項](/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
-- 使用[角色型存取控制（RBAC）保護資源安全](/learn/modules/secure-azure-resources-with-rbac)：使用 RBAC 來保護資源。
-- [資料儲存體選項](/learn/modules/intro-to-data-in-azure/index)： Azure 資料儲存體的優點。
+- [建立 azure 帳戶](https://docs.microsoft.com/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所佈建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
+- [Azure 入口網站](https://docs.microsoft.com/learn/modules/tour-azure-portal)：流覽 Azure 入口網站功能和服務，並自訂入口網站。
+- [Azure 簡介](https://docs.microsoft.com/learn/modules/welcome-to-azure)：透過在雲端中建立並設定第一部虛擬機器來開始使用 azure。
+- [Azure 中的安全性簡介](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure)：討論在雲端工作時保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
+- [管理 azure 中的資源](https://docs.microsoft.com/learn/paths/manage-resources-in-azure)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
+- [建立 VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)：使用 Azure 入口網站建立虛擬機器。
+- [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能：瞭解 azure 網路功能的一些基本概念，以及 azure 網路功能如何協助提升復原能力並降低延遲。
+- [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
+- 使用[角色型存取控制（RBAC）保護資源安全](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用 RBAC 來保護資源。
+- [資料儲存體選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index)： Azure 資料儲存體的優點。
 
 在準備階段期間，我們會需要架構設計人員來建構跨越所有 Azure 環境的解決方案。 下列技能建立資源可協助您準備這些工作的架構：
 
@@ -65,14 +65,16 @@ Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責
 
 下列範例是一些在 Microsoft Learn 上量身打造的學習路徑，可配合雲端採用架構的就緒部分：
 
-[Azure 基礎](learn/paths/azure-for-the-data-engineer/)：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。  瞭解 Azure 中雲端運算的優點，以及它可以如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的服務廣度，包括計算、網路、儲存體和安全性。 
+[Azure 基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。  瞭解 Azure 中雲端運算的優點，以及它可以如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的服務廣度，包括計算、網路、儲存體和安全性。
 
-[管理 azure 中的資源](learn/paths/azure-for-the-data-engineer/)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
+[管理 azure 中的資源](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
 
-[管理 Azure 中的基礎結構資源](learn/paths/administer-infrastructure-resources-in-azure/)：瞭解如何建立、管理、保護及調整虛擬機器資源。
+[管理 Azure 中的基礎結構資源](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure)：瞭解如何建立、管理、保護及調整虛擬機器資源。
 
-[將資料儲存在 azure 中](learn/paths/store-data-in-azure/)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 瞭解 Azure 中的儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您要儲存在雲端中的資料選擇正確的模型。
+[將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 瞭解 Azure 中的儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您要儲存在雲端中的資料選擇正確的模型。
 
-[在 azure 中架構絕佳解決方案](learn/paths/architect-great-solutions-in-azure/)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可調整的高效能解決方案。
+[在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
 
-如需其他學習路徑，請瀏覽[學習目錄](/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。
+## <a name="learn-more"></a>詳細資訊
+
+如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

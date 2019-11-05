@@ -1,54 +1,52 @@
 ---
-title: 自動上線和警示設定
+title: 自動上架
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 自動上線和警示設定
+description: 自動上架
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221363"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565396"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
-若要改善部署 Azure 伺服器管理服務的效率, 請考慮使用本指南前面幾節所討論的建議, 自動化管理服務的部署。 下列各節提供的腳本和範例範本, 是開發自己的上執行緒序自動化的起點。
+若要改善部署 Azure 伺服器管理服務的效率，請考慮將部署自動化，如本指南先前章節中所述。 下列各節提供的腳本和範例範本，是開發自己的上執行緒序自動化的起點。
 
-## <a name="onboarding-by-using-automation"></a>使用自動化上架
+本指南提供支援的 GitHub 存放庫範例程式碼[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples)。 存放庫提供範例腳本和 Azure Resource Manager 範本，可協助您將 Azure 伺服器管理服務的部署作業自動化。
 
-本指南提供支援的 GitHub 存放庫, 其中包含範例程式碼[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), 它會提供範例腳本和 Azure Resource Manager 範本, 協助您將 Azure 伺服器管理服務的部署作業自動化。
+範例檔案說明如何使用 Azure PowerShell Cmdlet 來自動化下列工作：
 
-這些範例檔案說明如何使用 Azure PowerShell Cmdlet 來自動化下列工作:
+- 建立[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。 （或者，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
-1. 建立[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)(或使用現有的工作區 (如果符合需求&mdash;, 請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning))。
+- 建立自動化帳戶。 （或者，如果符合需求，請使用現有的帳戶。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)）。
 
-2. 建立自動化帳戶 (或使用現有的帳戶, 如果符合需求&mdash;, 請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning))。
+- 連結自動化帳戶和 Log Analytics 工作區。 如果您是使用 Azure 入口網站進行上架，則不需要執行此步驟。
 
-3. 連結自動化帳戶和 Log Analytics 工作區 (如果是透過入口網站上架, 則不需要)。
+- 啟用工作區的更新管理，以及變更追蹤和清查。
 
-4. 啟用工作區的更新管理和變更追蹤和清查。
+- 使用 Azure 原則將 Azure Vm 上架。 原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Microsoft Dependency Agent。
 
-5. 使用 Azure 原則將 Azure Vm 上架（原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Dependency Agent）。
+- 藉由在內部部署伺服器上安裝 Log Analytics 代理程式來將其上架。
 
-6. 藉由在內部部署伺服器上安裝 Log Analytics 代理程式來將其上架。
+下表中所述的檔案會在此範例中使用。 您可以自訂它們以支援您自己的部署案例。
 
-下表中所述的檔案會在此範例中使用, 您可以自訂這些檔案以支援您自己的部署案例。
-
-| 檔案名稱 | 描述 |
+| 檔案名稱 | 說明 |
 |-----------|-------------|
-| New-AMSDeployment.ps1 | 主要的協調腳本會自動上線。 此 PowerShell 腳本需要現有的訂用帳戶, 但它會建立資源群組、位置、工作區和自動化帳戶 (如果不存在)。 |
-| Workspace-AutomationAccount.json | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
-| WorkspaceSolutions.json | 在 Log Analytics 工作區中啟用所需解決方案的 Resource Manager 範本。 |
-| ScopeConfig.json | Resource Manager 範本, 其使用具有變更追蹤解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
-| Enable-VMInsightsPerfCounters.ps1 | 可讓伺服器 VMInsight 及設定效能計數器的 PowerShell 腳本。 |
-| ChangeTracking-Filelist.json | Resource Manager 範本, 定義將由變更追蹤監視的檔案清單。 |
+| New-AMSDeployment. ps1 | 主要的協調腳本會自動上線。 它會建立資源群組，以及位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
+| 工作區-AutomationAccount. json | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
+| WorkspaceSolutions json | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
+| ScopeConfig json | Resource Manager 範本，其使用具有變更追蹤解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
+| Enable-VMInsightsPerfCounters. ps1 | 為伺服器啟用 VM 深入解析並設定效能計數器的 PowerShell 腳本。 |
+| 變更追蹤-Filelist. json | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
 
-您可以使用下列命令來執行 New-AMSDeployment:
+使用下列命令來執行 New-AMSDeployment：
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
@@ -56,7 +54,7 @@ ms.locfileid: "71221363"
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何設定基本警示, 以通知您的小組金鑰管理事件和問題。
+瞭解如何設定基本警示，以通知您的小組金鑰管理事件和問題。
 
 > [!div class="nextstepaction"]
 > [設定基本警示](./setup-alerts.md)

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915029"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564700"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -28,7 +28,7 @@ ms.locfileid: "72915029"
 
 **量化分析：** 在決策樹中，量化問題會推動第一層決策。 常見的問題包括下列各項：目前是否正在使用資產？ 若是如此，它是否已最佳化並適當調整大小？ 資產之間有哪些相依性？ 這些問題對清查的分類很重要。
 
-**定性分析：** 下一組決策需要以定性分析的形式來進行人類智慧。 通常，這裡所提的問題對於解決方案而言是唯一的，而且只能由商務專案關係人和 power 使用者回答。 這些決策通常會延遲處理常式，因此會大幅降低問題。 這種分析通常會針對每個應用程式耗用40到80的 FTE 小時。
+**定性分析：** 下一組決策需要以定性分析的形式來進行人類智慧。 這裡所提的問題通常是解決方案獨有的，而且只能由商務專案關係人和 power 使用者回答。 這些決策通常會延遲處理常式，因此會大幅降低問題。 這種分析通常會針對每個應用程式耗用40到80的 FTE 小時。
 
 如需建立定性分析問題清單的相關指引，請參閱[數位資產規劃方法](./approach.md)。
 

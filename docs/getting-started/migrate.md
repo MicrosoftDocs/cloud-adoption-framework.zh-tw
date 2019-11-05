@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048326"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564691"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -36,7 +36,7 @@ ms.locfileid: "73048326"
 
 |重要的商務活動 | 遷移動機 | 創新動機 |
 |---------|---------|---------|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省費用<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改善客戶體驗/合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
+| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ ms.locfileid: "73048326"
 
 ## <a name="migration-approach"></a>遷移方法
 
-「雲端採用架構」建立了一個高階的方案結構，準備好將所有雲端採用所需的投入程度分組。 此執行摘要會以該高階流程為基礎，建立反復的流程，讓您能夠在所有雲端遷移活動的單一方法中提升/轉移/優化工作**和**現代化工作。
+「雲端採用架構」建立了一個高階的方案結構，準備好將所有雲端採用所需的投入程度分組。 此執行摘要會以該高階流程為基礎，以建立反復程式，以在所有雲端遷移活動的單一方法中，優化投入時間和現代化工作。
 
 此方法包含兩種方法或重點區域：雲端策略 & 規劃和雲端執行。 雲端遷移的[動機](#motivations)或所需的商務成果，通常會決定小組應投入多少時間來進行[策略和規劃](#cloud-strategy-and-planning)與[實施](#cloud-implementation)。 這些動機也會影響每個順序或平行執行的決策。
 
@@ -138,7 +138,7 @@ ms.locfileid: "73048326"
 >
 > [規劃](../plan/index.md)
 >
-> [準備好](../ready/index.md)
+> [就緒](../ready/index.md)
 >
 > [移轉](../migrate/index.md)
 >

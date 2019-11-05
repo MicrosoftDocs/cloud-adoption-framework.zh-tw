@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888843"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566796"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -28,10 +28,10 @@ ms.locfileid: "72888843"
 - 企業架構
 - IT 營運
 - IT 基礎結構
-- 網路功能
+- 網路
 - 身分識別
 - 虛擬化
-- 商務持續性/嚴重損壞修復
+- 商務持續性和災害復原
 - IT 內的應用程式擁有者
 
 雲端治理功能會識別與目前和未來版本相關的風險。 這項功能會在評估風險、瞭解潛在影響，以及制定有關風險承受度的決策時出現。 在這種情況下，您可以快速更新方案，以反映[雲端採用功能](./cloud-adoption.md)的變動需求。

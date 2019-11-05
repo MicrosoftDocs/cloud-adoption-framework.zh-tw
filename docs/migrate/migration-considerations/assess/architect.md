@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240239"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566819"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>在移轉前建構工作負載
 
@@ -37,7 +37,7 @@ ms.locfileid: "73240239"
 - **支付技術債務。** 有些老舊的工作負載會帶來大量的技術債務。 這可能會增加任何雲端提供者的裝載成本，進而導致長期挑戰。 當技術債務不自然地增加裝載成本時，就應該評估替代架構。
 - **使用者流量模式。** 現有的解決方案可能取決於現有的網路路由模式。 這些模式可能會大幅降低效能。 此外，引進新的混合式廣域網路 (WAN) 解決方案可能需要數周或甚至數個月的時間。 考量各種核心基礎結構服務的流量模式和變更，及早在建構流程中針對這些障礙預做準備。
 
-## <a name="accelerating-business-value"></a>加速商業價值
+## <a name="accelerate-business-value"></a>加速商業價值
 
 有些案例可能需要不同於所假設 IaaS 重新裝載策略的架構。 以下是一些範例：
 

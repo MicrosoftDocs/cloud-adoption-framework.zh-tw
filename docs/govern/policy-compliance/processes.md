@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222053"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566126"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "71222053"
 
 規劃評估新的潛在風險，並視需要更新原則聲明和設計指南。 與 IT 人員和工作負載小組合作，持續評估新的 Azure 功能和服務。 同時排程五個治理專業領域的定期審核週期，以確保原則是最新且符合規範。
 
-### <a name="education"></a>教育
+### <a name="education"></a>教育訓練
 
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 
@@ -83,7 +83,7 @@ ms.locfileid: "71222053"
 | 安全性基準 | 偵測到可疑的使用者登入活動。 | 通知 IT 安全性小組，並停用可疑的使用者帳戶。 |
 | 資源一致性 | 工作負載的 CPU 使用率大於 90%。 | 通知 IT 作業小組並且相應放大其他資源來處理負載。 |
 
-## <a name="monitoring-and-compliance-automation"></a>監視與合規性自動化
+## <a name="automation-of-monitoring-and-compliance"></a>自動化監視和合規性
 
 在您定義合規性違規觸發程序和動作之後，您可以開始規劃如何最佳地使用記錄和報告工具及雲端平台的其他功能，協助自動化監視和原則合規性策略。
 

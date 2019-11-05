@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239916"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566775"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -61,7 +61,7 @@ ms.locfileid: "73239916"
 
 在 Azure 中，每個任何類型的元件都會部署在 Azure 訂用帳戶中。 不同 Azure 訂用帳戶中的 Azure 元件隔離可以滿足不同企業營運的需求，例如設定不同層級的存取和授權。
 
-單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 (虛擬網路對等互連的數目上限即為一例。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額及條件約束] [限制]。
+單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 其中一個範例是虛擬網路對等互連的最大數目。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額與條件約束](https://docs.microsoft.com/azure/azure-subscription-service-limits)。
 
 如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、虛擬 WAN 或站對站 VPN，將一或多個 Azure 區域中的多個中樞互相連線。
 

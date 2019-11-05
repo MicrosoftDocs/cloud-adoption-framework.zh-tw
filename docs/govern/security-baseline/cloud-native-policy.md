@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047852"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565962"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
-[安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 此專業領域著重于一般安全性主題，包括保護網路、數位資產、資料等等。如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的**範例原則**：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
+[安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 此專業領域著重于一般安全性主題，包括保護網路、數位資產、資料等等。如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
 > Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審查。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 建議您不要使用此範例原則。
@@ -82,7 +82,8 @@ ms.locfileid: "73047852"
 
 ### <a name="extending-cloud-native-policies"></a>擴充雲端原生原則
 
-使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 假設 Microsoft 有數千名網路安全性專家每天都能處理安全性，則偵測、預防或緩和網路攻擊的資源相當可觀。 事實上，雖然組織會擔心雲端是否安全，但大部分的人現在都瞭解到，Microsoft 的廠商和特製化基礎結構所做的投資程度，使得雲端比大部分的內部部署更安全能源.
+使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 假設 Microsoft 有數千名網路安全性專家每天都能處理安全性，則偵測、預防或緩和網路攻擊的資源相當可觀。 事實上，雖然組織會擔心雲端是否安全，但大部分的人都知道，Microsoft 所做的投資層級和專業的基礎結構，就是讓雲端比大部分的內部部署資料中心更安全。
+使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 假設 Microsoft 有數千名網路安全性專家每天都能處理安全性，則偵測、預防或緩和網路攻擊的資源相當可觀。 事實上，雖然組織會擔心雲端是否安全，但大部分的人都知道，Microsoft 所做的投資層級和專業的基礎結構，就是讓雲端比大部分的內部部署資料中心更安全。
 
 即使是雲端原生安全性基準的這項投資，建議任何安全性基準原則都會擴充預設的雲端原生原則。 以下是應該考慮的擴充原則範例，即使在雲端原生環境中也一樣：
 

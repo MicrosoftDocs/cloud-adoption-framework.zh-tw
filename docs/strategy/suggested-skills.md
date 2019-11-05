@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240014"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561646"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -55,16 +55,16 @@ ms.locfileid: "73240014"
 
 在準備階段期間，技術人員會建立可裝載、操作及管理已遷移至雲端之工作負載的遷移登陸區域。 這些學習路徑可協助您開發必要的技能：
 
-- [建立 Azure 帳戶](/learn/modules/create-an-azure-account)。 使用 Azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所布建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
-- [Azure 入口網站](/learn/modules/tour-azure-portal)。 瀏覽 Azure 入口網站的功能和服務，並自訂入口網站。
-- [Azure 簡介](/learn/modules/welcome-to-azure)。 藉由在雲端中建立並設定第一部虛擬機器來開始使用 Azure。
-- [Azure 中的安全性簡介](/learn/modules/intro-to-security-in-azure)。 了解在雲端工作時如何保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
-- [管理 Azure 中的資源](/learn/paths/manage-resources-in-azure)。 了解如何使用 Azure 命令列和 Web 入口網站來建立、管理及控制雲端式資源。
-- [建立 VM](/learn/modules/create-windows-virtual-machine-in-azure)。 使用 Azure 入口網站建立虛擬機器。
-- [Azure 網路](/learn/modules/intro-to-azure-networking)功能。 瞭解 Azure 網路功能的基本概念，以及 Azure 網路功能如何協助您提升復原能力並降低延遲。
-- [Azure 計算選項](/learn/modules/intro-to-azure-compute)。 瞭解 Azure 計算服務。
-- [使用 RBAC 保護資源](/learn/modules/secure-azure-resources-with-rbac)。 使用 RBAC 保護資源。
-- [資料儲存選項](/learn/modules/intro-to-data-in-azure/index)。 瞭解 Azure 資料儲存體的優點。
+- [建立 Azure 帳戶](https://docs.microsoft.com/learn/modules/create-an-azure-account)。 使用 Azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所布建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
+- [Azure 入口網站](https://docs.microsoft.com/learn/modules/tour-azure-portal)。 瀏覽 Azure 入口網站的功能和服務，並自訂入口網站。
+- [Azure 簡介](https://docs.microsoft.com/learn/modules/welcome-to-azure)。 藉由在雲端中建立並設定第一部虛擬機器來開始使用 Azure。
+- [Azure 中的安全性簡介](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure)。 了解在雲端工作時如何保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
+- [管理 Azure 中的資源](https://docs.microsoft.com/learn/paths/manage-resources-in-azure)。 了解如何使用 Azure 命令列和 Web 入口網站來建立、管理及控制雲端式資源。
+- [建立 VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)。 使用 Azure 入口網站建立虛擬機器。
+- [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能。 瞭解 Azure 網路功能的基本概念，以及 Azure 網路功能如何協助您提升復原能力並降低延遲。
+- [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)。 瞭解 Azure 計算服務。
+- [使用 RBAC 保護資源](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)。 使用 RBAC 保護資源。
+- [資料儲存選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index)。 瞭解 Azure 資料儲存體的優點。
 
 ## <a name="organizational-skills"></a>組織技能
 
@@ -89,8 +89,10 @@ Microsoft 和合作夥伴提供各種選項，以協助所有的使用者使用 
 
 Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責任的就緒程度並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數、層級並達成更多目標！
 
-以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略 potion。 
+以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略 potion。
 
-[瞭解 Microsoft Azure 的商業價值](/learn/paths/learn-business-value-of-azure/)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。 
+[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。
 
-若要探索其他學習路徑，請流覽「[學習目錄](/learn/browse)」。 使用**角色**篩選器，讓學習路徑與您的角色一致。
+## <a name="learn-more"></a>詳細資訊
+
+若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

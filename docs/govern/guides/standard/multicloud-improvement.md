@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547514"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566237"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -34,7 +34,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要會由 Azure 監視器與相關的自動化來管理。
-- 災害復原 / 商務持續性會由 Azure Vault 執行個體來控制。
+- 嚴重損壞修復和商務持續性是由 Azure 保存庫實例所控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。
 - Azure 藍圖、Azure 原則和 Azure 管理群組可用來對原則進行合規性自動化。
@@ -47,7 +47,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 **商務取得成本：** 取得新業務的預估將在五年內獲利。 由於報酬率偏低，因此，董事會希望盡可能地控制收購成本。 這會產生使成本控制和技術整合彼此衝突的風險。
 
-此業務風險會延伸成少數技術風險：
+此業務風險可能會延伸出少數技術風險：
 
 - 雲端遷移可能會產生額外的購置成本。
 - 新環境可能不會受到適當的控管，而可能導致原則違規。
