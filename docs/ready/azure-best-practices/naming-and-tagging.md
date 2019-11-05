@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243275"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564041"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Ready：建議的命名和標記慣例
 
@@ -157,7 +157,7 @@ Azure 架構中心的[命名規則和 Azure 資源的限制](https://docs.micros
 
 | 資產類型     | Scope        | 格式                                                     | 範例                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Resource group | Subscription | rg-\<應用程式 / 服務名稱\>-\<訂用帳戶類型\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| Resource group | Subscription | rg\<應用程式或服務名稱\>-\<訂用帳戶類型\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>虛擬網路
 

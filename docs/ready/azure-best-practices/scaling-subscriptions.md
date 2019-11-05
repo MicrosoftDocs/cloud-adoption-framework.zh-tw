@@ -8,14 +8,14 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbfe025b5e324ec685fcec3001cc8705ac001beb
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243262"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73563996"
 ---
-# <a name="scaling-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
+# <a name="scale-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
 
 組織通常需要一個以上的 Azure 訂用帳戶，做為資源限制和其他治理考慮的結果。 調整訂用帳戶的策略非常重要。
 
@@ -61,7 +61,7 @@ ms.locfileid: "73243262"
 
 您可以將許多資源類型從一個訂用帳戶移至另一個訂用帳戶，或使用自動化部署將資源遷移至另一個訂用帳戶。 如需詳細資訊，請參閱[將 Azure 資源移至另一個資源群組戶或訂用帳](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
 
-## <a name="managing-multiple-subscriptions"></a>管理多個訂用帳戶
+## <a name="manage-multiple-subscriptions"></a>管理多個訂用帳戶
 
 如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 但如果您有許多訂用帳戶，您應該考慮建立管理群組階層，以簡化您的訂用帳戶及資源管理。
 

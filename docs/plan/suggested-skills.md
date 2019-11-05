@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240216"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564206"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>技能就緒路徑入門
 
@@ -38,18 +38,15 @@ IT 人員的成員可能會覺得他們的角色和職位有點焦慮，因為�
 
 先前的每個學習路徑都會跨多種媒體類型分享機會，以最大化知識取得。
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責任的就緒程度並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和層級，並達成更多目標！
 以下是一些在 Microsoft Learn 上量身打造的學習路徑範例，其符合雲端採用架構的計畫區段：
 
-[發展您的 DevOps 實務](learn/paths/evolve-your-devops-practices/):D evops 是人員、程式和產品的結合，讓您能夠持續傳遞價值給您的終端使用者。 Azure DevOps 是一組服務，可提供您所需的工具來執行這項工作。 有了 Azure DevOps，您就可以在雲端或內部部署環境中，建立、測試及部署任何應用程式。
+[發展您的 DevOps 實務](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops 是人員、程式和產品的結合，讓您能夠持續傳遞價值給您的終端使用者。 Azure DevOps 是一組服務，可提供您所需的工具來執行這項工作。 有了 Azure DevOps，您就可以在雲端或內部部署環境中，建立、測試及部署任何應用程式。
 
-[適用于資料工程師的 Azure](learn/paths/azure-for-the-data-engineer/)：探索資料世界的演變，以及雲端技術的問世如何提供新的商機供企業探索。 您將瞭解各種可用的資料平臺技術，以及資料工程師可以如何利用這項技術來獲得組織的優勢。     
+[適用于資料工程師的 Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：探索資料世界的演變，以及雲端技術的問世如何提供新的商機供企業探索。 您將瞭解各種可用的資料平臺技術，以及資料工程師可以如何利用這項技術來獲得組織的優勢。
 
-若要探索其他學習路徑，請流覽 [瞭解目錄] （/learn/browse）。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。
+## <a name="learn-more"></a>了解更多
 
-
-
-
-
+若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

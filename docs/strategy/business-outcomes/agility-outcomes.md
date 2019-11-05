@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048078"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566637"
 ---
-# <a name="examples-of-agility-outcomes"></a>靈活性結果的範例 
+# <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
 如[商業成果總覽](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于 timeliest 商務量值：商業彈性。 瞭解貴公司的市場位置和競爭範圍，可以協助您清楚表達企業轉型旅程目標的商業成果。
 
@@ -37,7 +37,9 @@ ms.locfileid: "73048078"
 
 - **範例2：** 物流公司已探索到市場的未開發區段，但需要新版本的旗艦應用程式來捕捉此市場共用。 其較大的競爭者已進行相同的探索。 藉由執行具備雲端功能的應用程式創新工作，該公司會採用客戶對和 DevOps 導向的開發方法，使其更慢、舊版的競爭對手_x_個月。 這是市場上的快速入門保護客戶群。
 
-**Aurora 衛生護理**：醫療保健系統會將線上服務轉換成易記的數位體驗。 為了轉換其數位服務，Aurora 醫療保健護理將其網站遷移至 Microsoft Azure 平臺，並採用持續創新策略。
+### <a name="aurora-health-care"></a>Aurora 醫療保健
+
+醫療保健系統會將線上服務轉換成易記的數位體驗。 為了轉換其數位服務，Aurora 醫療保健護理將其網站遷移至 Microsoft Azure 平臺，並採用持續創新策略。
 
 > 「身為小組，我們著重于高品質的解決方案和速度。 選擇 Azure 對我們來說是非常轉型的決策。」  
 > Jamey Shiels  

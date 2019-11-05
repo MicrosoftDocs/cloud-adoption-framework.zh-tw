@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549214"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566839"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>在移轉前核准架構變更
 
@@ -54,7 +54,7 @@ CAB 通常包含來自多個 IT 和業務小組的專家，可為所有 IT 相�
 
 ### <a name="standardize-change"></a>標準化變更
 
-雲端採用小組禁不住針對要遷移至雲端的每個工作負載，考慮詳細的架構決策。 同樣地，使用雲端移轉作為催化劑來重構過去的架構決策也相當吸引人。 對於正在移轉數百個 VM 或數十個工作負載的組織而言，這兩種方法均可受到適度管理。 在遷移包含 1000 個或更多資產的資料中心時，上述每個方法都會被視為高風險的反面模式，其會大幅降低成功的可能性。 現代化、重構和重新架構每個應用程式，都需要不同的技能集和各種不同的變更，而這些工作會大規模產生對於人力的相依性。 這些相依性會對移轉工作帶來風險。
+雲端採用小組禁不住針對要遷移至雲端的每個工作負載，考慮詳細的架構決策。 同樣地，使用雲端移轉作為催化劑來重構過去的架構決策也相當吸引人。 對於正在移轉數百個 VM 或數十個工作負載的組織而言，這兩種方法均可受到適度管理。 在遷移包含 1000 個或更多資產的資料中心時，上述每個方法都會被視為高風險的反面模式，其會大幅降低成功的可能性。 現代化、重整和重新架構每個應用程式都需要不同的技能集和各種不同的變更，而這些工作會建立大規模人力的相依性。 這些相依性會對移轉工作帶來風險。
 
 [數位資產合理化](../../../digital-estate/rationalize.md)一文討論在將數位資產合理化時，基本假設的靈活度和省時影響。 標準化變更還有額外的好處。 雲端諮詢委員會或產品擁有者可藉由選擇預設合理化方法來控管移轉工作，進而審查並核准將一項變更套用至一長串的工作負載。 這將每個工作負載的技術核准，減少為需要重大架構變更才能與雲端相容的項目。
 

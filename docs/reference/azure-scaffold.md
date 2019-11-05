@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058172"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561818"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -263,7 +263,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 - **服務對應：** 服務對應提供您基礎結構元件的圖形化視圖、其程式，以及其他電腦和外部進程的相互相關性。 它會整合 Log Analytics 中的事件、效能資料和管理解決方案。
 
 > [!TIP]
-> 建立個別警示之前，請先建立並維護一組可在 Azure 警示之間共用的動作群組。 這可讓您集中維護以下項目的生命週期：收件者清單、通知傳遞方法 (電子郵件、SMS 電話號碼) 和外部動作的 Webhook (Azure 自動化 Runbook、Azure Functions / Logic Apps、ITSM)。
+> 建立個別警示之前，請先建立並維護一組可在 Azure 警示之間共用的動作群組。 這可讓您集中維護收件者清單的生命週期、通知傳遞方法（電子郵件、SMS 電話號碼），以及 webhook 至外部動作（Azure 自動化 runbook、Azure Functions 和 Logic Apps、ITSM）。
 
 ## <a name="cost-management"></a>成本管理
 
@@ -284,7 +284,7 @@ Microsoft 提供數種工具，讓您能夠以視覺化、追蹤和管理您的�
 
 - **Power BI Azure 使用量見解：** 您要為您的組織建立自己的視覺效果嗎？ 若是如此，Power BI 的 Azure 使用量見解內容套件就是您所選擇的工具。 使用此內容套件和 Power BI 您可以建立自訂視覺效果來代表您的組織、針對成本進行更深入的分析，並新增其他資料來源，以供進一步擴充。
 
-- **使用量 API：** [使用量 api](/rest/api/consumption)可讓您以程式設計方式存取成本和使用量資料，以及預算、保留實例和 marketplace 費用的資訊。 僅 Enterprise 註冊和某些 Web Direct 訂用帳戶可存取這些 API，不過它們可讓您將成本資料整合到您自己的工具和資料倉儲中。 您也可以透過[Azure CLI 來存取這些 api](/cli/azure/consumption?view=azure-cli-latest)。
+- **使用量 API：** [使用量 api](https://docs.microsoft.com/rest/api/consumption)可讓您以程式設計方式存取成本和使用量資料，以及預算、保留實例和 marketplace 費用的資訊。 僅 Enterprise 註冊和某些 Web Direct 訂用帳戶可存取這些 API，不過它們可讓您將成本資料整合到您自己的工具和資料倉儲中。 您也可以透過[Azure CLI 來存取這些 api](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)。
 
 身為長期且成熟的雲端使用者的客戶會遵循特定的最佳作法：
 
@@ -303,7 +303,7 @@ Microsoft 提供數種工具，讓您能夠以視覺化、追蹤和管理您的�
 
 - **Azure 自動化**是一種雲端式功能，可讓您撰寫 runbook （PowerShell 或 Python），並可讓您自動化進程、設定資源，甚至套用修補程式。 [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)具有一組廣泛的跨平台功能，並且可整合至您的部署，但因為範圍太廣泛，無法在此深入說明。
 - **事件方格**是完全受控的事件路由系統，可讓您對 Azure 環境中的事件做出回應。 就像 Azure 自動化是成熟雲端組織的連線組織，[事件方格](https://docs.microsoft.com/azure/event-grid)是良好自動化的連線組織。 您可以使用事件方格來建立簡單的無伺服器動作，以在每次建立新的資源時傳送電子郵件給系統管理員，並將該資源記錄到資料庫。 同樣的事件方格可以在刪除資源和從資料庫中移除項目時，發出通知。
-- **Azure Cloud Shell**是以瀏覽器為基礎的互動式[Shell](https://docs.microsoft.com/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 Azure Cloud Shell 提供其他重要工具的存取權（已安裝），以自動化您的環境，包括[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)、 [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure)和持續增加的其他[工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)清單，以管理容器、資料庫（sqlcmd）和個.
+- **Azure Cloud Shell**是以瀏覽器為基礎的互動式[Shell](https://docs.microsoft.com/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 Azure Cloud Shell 提供其他重要工具的存取權（已安裝），以自動化您的環境，包括[Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)、 [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure)和持續增加的其他[工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)清單，以管理容器、資料庫（sqlcmd）和個.
 
 自動化是一項全職工作，而且很快就會成為雲端團隊內最重要的作業工作之一。 採用「自動化優先」方法的組織在使用 Azure 上有更高的成就：
 

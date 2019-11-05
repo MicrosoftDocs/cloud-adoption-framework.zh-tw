@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239338"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566435"
 ---
 # <a name="application-migration-patterns-and-examples"></a>應用程式移轉模式和範例
 
@@ -88,7 +88,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 [在 Azure VM 和 SQL Database 受控執行個體上重新裝載應用程式](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供適用于內部部署應用程式的隨即轉移至 Azure 的範例。 此作業須使用 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) 來移轉應用程式前端 VM，並使用 [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)將應用程式資料庫移轉至 Azure SQL Database 受控執行個體。
 [在 Azure VM 上和 SQL Server Always On 可用性群組中重新裝載應用程式](./contoso-migration-rehost-vm-sql-ag.md) | 此範例說明如何使用 Azure 裝載的 SQL Server VM 移轉應用程式和資料。 範例中會使用 Site Recovery 來移轉應用程式 VM，並使用 Azure 資料庫移轉服務，將應用程式資料庫移轉至受到 SQL Server 可用性群組保護的 SQL Server 叢集。
 
-### <a name="aspnet--php--java-apps"></a>ASP.NET/PHP/Java 應用程式
+### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP 和 JAVA 應用程式
 
 **文章** | **詳細資料**
 --- | ---

@@ -47,7 +47,7 @@
 - 雖然使用了 Azure 管理群組，但階層應該還是相當簡單。
 - Azure 藍圖將用來對各個管理群組套用 RBAC 需求、Resource Manager 範本和 Azure 原則，以部署及更新訂用帳戶。
 
-## <a name="applying-the-dependent-patterns"></a>套用相依模式
+## <a name="apply-the-dependent-patterns"></a>套用相依模式
 
 下列決策代表要透過前述原則強制執行策略來強制執行的模式：
 

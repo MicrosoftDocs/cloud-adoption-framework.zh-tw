@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549110"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564282"
 ---
 # <a name="central-it-capabilities"></a>中央 IT 功能
 
@@ -93,7 +93,7 @@ ms.locfileid: "72549110"
 
 許多產業都必須嚴格遵守協力廠商合規性。 某些合規性需求仍然需要集中式 IT 控制措施。 傳遞這些合規性措施可以增加部署程式的時間，特別是針對尚未廣泛使用的新技術。 在這些案例中，預期會在採用初期階段時延遲部署。 與處理敏感性客戶資料，但可能不受協力廠商合規性需求所規範的公司一樣，我也有類似的情況。
 
-### <a name="operating-within-the-exceptions"></a>在例外狀況內操作
+### <a name="operate-within-the-exceptions"></a>在例外狀況中操作
 
 當需要集中式 IT 程式，而這些程式在採用新技術時建立適當的檢查點時，仍可快速解決這些創新檢查點。 治理和合規性需求的設計是為了保護敏感性的專案，而不是保護所有專案。 雲端提供簡單的機制來取得和部署隔離的資源，同時維持適當的護欄。
 

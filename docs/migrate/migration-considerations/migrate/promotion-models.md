@@ -1,5 +1,5 @@
 ---
-title: 升階模型 - 升階、階段或發行前小眾測試版
+title: 升級模型：單一步驟、分段或航班
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解升階對移轉活動的影響
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548444"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564609"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>升階模型 - 單一步驟、分段或一段
+# <a name="promotion-models-single-step-staged-or-flight"></a>升級模型：單一步驟、分段或航班
 
 在討論工作負載移轉時通常會將其視為單一活動。 這實際上是由可將數位資產加速移至雲端的較小活動所組成的集合。 移轉的最終活動之一，是將資產升階到生產環境。 升階是指為終端使用者變更生產系統的階段。 其作業通常很簡單，只要變更網路路由，將終端使用者重新導向至新的生產資產即可。 升階也是 IT 作業或雲端作業將操作管理程序的焦點從先前的生產系統變更為新生產系統的階段。
 

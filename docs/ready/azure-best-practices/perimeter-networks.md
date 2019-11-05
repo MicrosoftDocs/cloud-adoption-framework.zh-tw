@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240166"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564027"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -27,9 +27,9 @@ ms.locfileid: "73240166"
 周邊網路會利用下列 Azure 功能和服務：
 
 - [虛擬網路][virtual-networks]、[使用者定義的路由][user-defined-routes]和[網路安全性群組][network-security-groups]
-- [網路虛擬設備][NVA] (NVA)
+- [網路虛擬裝置（Nva）][NVA]
 - [Azure 負載平衡器][ALB]
-- [Azure 應用程式閘道][AppGW]和 [Web 應用程式防火牆][AppGWWAF] (WAF)
+- [Azure 應用程式閘道][AppGW]和[web 應用程式防火牆（WAF）][AppGWWAF]
 - [公用 IP][PIP]
 - 使用 [Web 應用程式防火牆][AFDWAF]的 [Azure Front Door][AFD]
 - [Azure 防火牆][AzFW]

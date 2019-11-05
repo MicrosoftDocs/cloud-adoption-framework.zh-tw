@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549225"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566918"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "72549225"
 **Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項一致，以確保最適當的治理或合規性模型。 請使用[安全雲端深入解析 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) 解決方案供應項目以建立客戶在 Azure 中部署的資料驅動圖，並在識別現有部署架構的最佳化時驗證客戶的 Azure 實作成熟度，以移除治理的安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
 
 - **雲端基礎：** 使用[混合式雲端基礎（HCF）](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)解決方案供應專案，建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實作包含共用服務和 IaaS 工作負載的最簡可行產品。
-- **雲端現代化：** 使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應專案做為將應用程式、資料和基礎結構移至企業級雲端的完整方法，以及在雲端優化和現代化一次。
+- **雲端現代化：** 使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應專案做為將應用程式、資料和基礎結構移至企業級雲端的完整方法，以及在雲端部署之後優化和現代化。
 - **使用雲端創新：** 透過一套創新且獨特[的雲端中心卓越（CCoE）](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)解決方案方法來與客戶互動，以建立現代化的 IT 組織，同時保有 DevOps 的彈性，同時保有控制能力。 實作敏捷方法來擷取業務需求、重複使用可與安全性、合規性和服務管理原則配合的部署套件，並維護可與操作程序配合的 Azure 平台。
 
 ## <a name="assess-process-changes"></a>評定程序變更

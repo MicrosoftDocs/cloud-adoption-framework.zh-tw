@@ -1,21 +1,21 @@
 ---
-title: 會影響移轉的決策
+title: 影響遷移的決策
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 針對移轉程序應做出的重要決策
+description: 有關遷移程式的重要決策。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239934"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564590"
 ---
-# <a name="decisions-that-affect-migrations"></a>會影響移轉的決策
+# <a name="decisions-that-affect-migration"></a>影響遷移的決策
 
 在移轉期間，有數個因素會影響決策和執行活動。 本文將說明這些決策的中心主題，並探討在雲端採用架構指引的這一節中討論移轉原則時所產生的幾個問題。
 
@@ -24,26 +24,26 @@ ms.locfileid: "73239934"
 任何採用工作的目的或目標，都可能對建議的執行方法產生顯著的影響。
 
 - **移轉。** 迫切的商業誘因、採用速度或成本節約，都是營運成果的範例。 這些成果對於推動 IT 或營運模型過渡變更的商業價值的工作而言非常重要。 雲端採用架構的「移轉」一節主要說明以移轉為主的業務成果。
-- **應用程式創新。** 改善客戶體驗和提高市佔率，是累加成果的範例。 這些成果來自於一系列以目前客戶的需求和期望為主的累加變更。
-- **資料驅動創新。** 新的產品或服務 (尤其是由資料所驅動的)，是突破性結果的範例。 這些成果來自於使用資料來打破市場現況的測試和預測。
+- **應用程式創新**。 改善客戶體驗和提高市佔率，是累加成果的範例。 這些成果來自於一系列以目前客戶的需求和期望為主的累加變更。
+- **資料驅動創新**。 新的產品或服務 (尤其是由資料所驅動的)，是突破性結果的範例。 這些成果來自於使用資料來打破市場現況的測試和預測。
 
 任何企業都不會只追求其中一項成果。 沒有營運，就不會有客戶，反之亦然。 雲端採用也是如此。 公司通常會致力於達成每項成果，但嘗試同時專注於所有成果，可能會分散您投入的心力，並導致可您業務需求創造最大效益的工作進度緩慢。
 
 這項必要條件並非要求您挑選這三個目標的其中一個，而是要協助您的雲端策略小組和雲端採用小組建立一組作業優先順序，以引導後續三到六個月的執行。 這些優先順序的設定方式是將三個條列選項，從*最重要*到*最不重要*的順序進行排名，因為它們關係到這個小組在後續一季或兩個季中可以投入的心力。
 
-### <a name="acting-on-migration-outcomes"></a>對移轉成果採取行動
+### <a name="act-on-migration-outcomes"></a>對遷移結果採取行動
 
 如果營運成果在清單中排名最高，則雲端採用架構的這一節就很適合您的小組。 在本節中，假設您需要將速度和成本節約的優先順序設為主要關鍵效能指標 (KPI)，在這種情況下，採用的移轉模式可妥善地與成果進行協調。 以遷移為焦點的模型在基礎結構即服務（IaaS）資產的隨即轉移中，高度前提，以耗盡資料中心並產生成本節約。 在這種模型中可能會發生現代化，但在主要的移轉任務實現之前，現代化只是次要重點。
 
-### <a name="acting-on-application-innovations"></a>對應用程式創新採取行動
+### <a name="act-on-application-innovations"></a>對應用程式創新採取行動
 
 如果您的主要誘因是市佔率和客戶體驗，這可能不是雲端採用架構中最適合用來引導小組工作的一節。 應用程式創新需要以工作負載的現代化和轉換為重心的計劃，而不考量基礎結構。 在這種情況下，本節中的指引可提供有用的資訊，但可能並非引導核心決策的最佳方法。
 
-### <a name="acting-on-data-innovations"></a>對資料創新採取行動
+### <a name="act-on-data-innovations"></a>對資料創新採取行動
 
 如果資料、測試、研究與開發 (R&D) 或新產品是您在未來六個月內的優先考量，這可能不是雲端採用架構中最適合用來引導小組工作的一節。 任何資料創新工作都可從移轉現有來源資料的指引受益。 不過，這項工作更大的焦點在於其他資料來源的輸入與整合。 透過預測和新體驗來擴充該指引，遠比移轉 IaaS 資產來得重要。
 
-## <a name="balancing-the-portfolio"></a>平衡組合
+## <a name="balance-the-portfolio"></a>平衡組合
 
 雲端採用架構的這一節會建立理論，以協助讀者了解處理平衡組合內各種變更的不同方法。 [平衡組合](../../expanded-scope/balance-the-portfolio.md)的相關文章是延伸範圍的一個範例，旨在協助您實踐這項理論。
 

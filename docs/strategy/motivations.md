@@ -1,63 +1,63 @@
 ---
-title: 動機為什麼我們要轉向雲端？
+title: 'Motivations: Why are we moving to the cloud?'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 雲端帳戶處理並移至雲端
+description: Cloud accounting and moving to the cloud
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028306"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561609"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機為什麼我們要轉向雲端？
+# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivations: Why are we moving to the cloud?
 
-「為什麼要移到雲端？」 對企業和技術專案關係人來說, 是一種常見的問題。 如果答案是: 「我們的面板 (或 CIO 或 C 層級的主管) 告訴我們移至雲端」, 表示企業不太可能達到所需的結果。
+"Why are we moving to the cloud?" is a common question for business and technical stakeholders alike. If the answer is, "Our board (or CIO, or C-level executives) told us to move to the cloud," it's unlikely that the business will achieve the desired outcomes.
 
-本文討論雲端遷移背後的幾個動機, 有助於產生更成功的商務結果。 這些選項有助於促進動機的交談, 最後是商業成果。
+This article discusses a few motivations behind cloud migration that can help produce more successful business outcomes. These options help facilitate a conversation about motivations and, ultimately, business outcomes.
 
 ## <a name="motivations"></a>動機
 
-雲端採用所支援的商業轉換可以由各種動機驅動。 很可能會有數個動機同時適用。 下表中的清單目標是要協助 spark 與哪些動機相關的概念。 從該處, 您可以設定優先順序並評估動機的潛在影響。 在本文中，我們建議您的雲端採用小組與各種主管和商務領導人合作，使用下列清單來瞭解哪些動機會受到雲端採用工作的影響。
+Business transformations that are supported by cloud adoption can be driven by various motivations. It's likely that several motivations apply at the same time. The goal of the lists in the following table is to help spark ideas about which motivations are relevant. From there, you can prioritize and assess the potential impacts of the motivations. In this article, we recommend that your cloud adoption team meet with various executives and business leaders using the list below to understand which of these motivations are affected by the cloud adoption effort.
 
 <!-- markdownlint-disable MD033 -->
 
-| 重大商業事件 | 遷移 | 創新 |
+| 重大商業事件 | 移轉 | 創新 |
 |---|---|---|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>縮減資本費用<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性 | 節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提高企業的靈活性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求 | 準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改良的客戶體驗與合作<br/><br/>產品或服務的轉換<br/><br/>新產品或服務的市場中斷 |
+| Datacenter exit<br/><br/>Merger, acquisition, or divestiture<br/><br/>Reduction in capital expenses<br/><br/>End of support for mission-critical technologies<br/><br/>Response to regulatory compliance changes<br/><br/>New data sovereignty requirements<br/><br/>Reduction of disruptions and improvement of IT stability | 節省費用<br/><br/>Reduction in vendor or technical complexity<br/><br/>Optimization of internal operations<br/><br/>Increase in business agility<br/><br/>Preparation for new technical capabilities<br/><br/>Scaling to meet market demands<br/><br/>Scaling to meet geographic demands | Preparation for new technical capabilities<br/><br/>Building new technical capabilities<br/><br/>Scaling to meet market demands<br/><br/>Scaling to meet geographic demands<br/><br/>Improved customer experiences and engagements<br/><br/>Transformation of products or services<br/><br/>Market disruption with new products or services |
 
-## <a name="classify-your-motivations"></a>將您的動機分類
+## <a name="classify-your-motivations"></a>Classify your motivations
 
-您的雲端採用動機可能會落在多個類別中。 當您正在建立動機清單時, 可能會出現趨勢。 動機傾向于與其他分類相關聯, 而不是其他的。 使用主要分類來協助引導您進行雲端採用策略的開發。
+Your motivations for cloud adoption will likely fall into multiple categories. As you're building the list of motivations, trends will likely emerge. Motivations tend to be associated more with one classification than with others. Use the predominant classification to help guide the development of your cloud adoption strategy.
 
-當關鍵商務事件的回應是最高優先順序時, 請務必及早參與[雲端實行](../getting-started/migrate.md#cloud-implementation), 通常與策略和規劃工作平行處理。 採用這種方法需要成長的思維，並根據所學到的直接經驗，來反復改善流程。
+When a response to critical business events is the highest priority, it's important to engage early in [cloud implementation](../getting-started/migrate.md#cloud-implementation), often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes, based on direct lessons learned.
 
-當遷移為最高優先順序時,[策略和規劃](../getting-started/migrate.md#cloud-strategy-and-planning)會在此程式初期扮演重要的角色。 我們建議您與規劃平行[執行第一個工作負載](../getting-started/migrate.md#cloud-implementation), 以協助小組瞭解並預測與雲端採用相關聯的任何學習曲線。
+When migration is the highest priority, [strategy and planning](../getting-started/migrate.md#cloud-strategy-and-planning) will play a vital role early in the process. We recommend that you [implement the first workload](../getting-started/migrate.md#cloud-implementation) in parallel with planning, to help the team understand and anticipate any learning curves that are associated with cloud adoption.
 
-當創新是最高的優先順序時, 策略和規劃會在此程式初期需要額外的投資, 以確保在雲端採用期間所做的投資組合和一致的調整。 如需進一步資訊和指引, 請參閱[瞭解創新旅程](../getting-started/innovate.md)。
+When innovation is the highest priority, strategy and planning will require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment made during cloud adoption. For further information and guidance, see [Understand the innovation journey](../getting-started/innovate.md).
 
-為了確保最睿智做法決策, 遷移程式中的所有參與者都應該清楚知道其動機。 下一節將概述客戶如何透過一致的策略方法來引導並影響最睿智做法決策。
+To ensure wiser decision-making, all participants in the migration process should have a clear awareness of their motivations. The following section outlines how customers can guide and effect wiser decisions through consistent, strategic methodologies.
 
-## <a name="motivation-driven-strategies"></a>動機驅動策略
+## <a name="motivation-driven-strategies"></a>Motivation-driven strategies
 
-本節將重點放在「*遷移*」和「*創新*動機」及其對應的策略。
+This section highlights the *Migration* and *Innovation* motivations and their corresponding strategies.
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
-在動機資料表的頂端附近列出的*遷移*動機, 是採用雲端的最常見, 但不一定是最重要的原因。 這些結果很重要, 但最有效率的方法是轉換到其他更實用的 worldviews。 這項重要的第一個步驟是雲端採用, 通常稱為*雲端遷移*。 此架構是指使用「[遷移](../getting-started/migrate.md)」一詞來執行雲端遷移的策略。
+The *Migration* motivations listed near the top of the Motivations table are the most common, but not necessarily the most significant, reasons for adopting the cloud. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption is often called a *cloud migration*. The framework refers to the strategy for executing a cloud migration by using the term [Migrate](../getting-started/migrate.md).
 
-有些動機與遷移策略非常一致。 此清單頂端的動機可能會明顯比接近清單底部的商務影響更小。
+Some motivations align well with a migrate strategy. The motives at the top of this list will likely have significantly less business impact than those toward the bottom of the list.
 
-- 節省成本。
-- 降低廠商或技術複雜性。
-- 內部作業的優化。
+- Cost savings.
+- Reduction in vendor or technical complexity.
+- Optimization of internal operations.
 - 增加企業的靈活性。
 - 準備新的技術功能。
 - 調整以符合市場需求。
@@ -65,9 +65,9 @@ ms.locfileid: "71028306"
 
 ### <a name="innovation"></a>創新
 
-資料是新的商品。 新式應用程式是將資料帶入各種體驗的供應鏈。 在現今的商業市場中, 很難找到不是以資料、深入解析和客戶經驗為基礎的轉型產品或服務。 在*創新*清單中較低的動機, 會與此架構中稱為[創新](../getting-started/innovate.md)的技術策略一致。
+Data is the new commodity. Modern apps are the supply chain that drives that data into various experiences. In today's business market, it's hard to find a transformative product or service that isn't built on top of data, insights, and customer experiences. 在*創新*清單中較低的動機，會與此架構中稱為[創新](../getting-started/innovate.md)的技術策略一致。
 
-下列清單所包含的動機, 會使 IT 組織更專注于創新策略, 而不是遷移策略。
+下列清單所包含的動機，會使 IT 組織更專注于創新策略，而不是遷移策略。
 
 - 增加企業的靈活性。
 - 準備新的技術功能。
@@ -79,7 +79,7 @@ ms.locfileid: "71028306"
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解預測的商務成果有助於協助您在記錄動機和支援計量時所需要的交談, 以符合您的商務策略。 接下來, 請閱讀通常與移至雲端相關的商務結果總覽。
+瞭解預測的商務成果有助於協助您在記錄動機和支援計量時所需要的交談，以符合您的商務策略。 接下來，請閱讀通常與移至雲端相關的商務結果總覽。
 
 > [!div class="nextstepaction"]
 > [商務成果總覽](./business-outcomes/index.md)

@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980249"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566887"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>藉由遷移 SQL Server 的實例來加速遷移
 
@@ -32,7 +32,7 @@ ms.locfileid: "72980249"
 - 高密度 **、低使用量資料庫：** SQL Server 的實例具有高密度的資料庫。 其中每個資料庫都有較低的交易磁片區，而且幾乎不需要計算資源的方式。 您應該考慮其他更現代化的解決方案，但基礎結構即服務（IaaS）方法可能會導致作業成本大幅降低。
 - **擁有權總成本：** 適用時，您可以將[Azure 混合式權益](https://azure.microsoft.com/pricing/hybrid-benefit)套用至清單價格，以建立 SQL Server 實例的最低擁有成本。 這對於在多重雲端案例中裝載 SQL Server 的客戶而言特別常見。
 - **遷移加速器：** 「隨即轉移」 SQL Server 實例的遷移可以在一個反復專案中移動數個資料庫。 這種方法有時可以讓未來的反復專案更明確地專注于應用程式和 Vm，這表示您可以在單一反覆運算中遷移更多工作負載。
-- **VMWare 遷移：** 常見的內部部署架構包括虛擬主機上的應用程式和 Vm，以及裸機上的資料庫。 在此案例中，您可以遷移整個 SQL Server 實例，以支援將 VMWare 主機遷移至 Azure VMWare 服務。 如需詳細資訊，請參閱[VMWare 主機遷移](./vmware-host.md)。
+- **VMware 遷移：** 常見的內部部署架構包括虛擬主機上的應用程式和 Vm，以及裸機上的資料庫。 在此案例中，您可以遷移整個 SQL Server 實例，以支援將 VMware 主機遷移至 Azure VMware 服務。 如需詳細資訊，請參閱[VMware 主機遷移](./vmware-host.md)。
 
 如果上述準則皆不適用於這項遷移，則最好繼續進行[標準遷移](../index.md)程式。 在標準程式中，資料結構會與每個工作負載一起反復遷移。
 
@@ -46,7 +46,7 @@ ms.locfileid: "72980249"
 
 以下是伺服器清查的範例：
 
-|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點的數目|
+|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |sql-01|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
 |sql-02|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
@@ -81,7 +81,7 @@ ms.locfileid: "72980249"
 
 對於可以遷移至 PaaS 解決方案的資料庫，在評估程式期間會完成下列動作。
 
-- **使用 DMA 進行評估：** 使用 Data Migration Assistant 來偵測可能影響目標 Azure SQL Database 受控實例中資料庫功能的相容性問題。 使用 DMA 來建議效能和可靠性改進，以及將架構、資料和非內含性物件從來源伺服器移至目標伺服器。 如需詳細資訊，請參閱[Data Migration Assistant](/sql/dma/dma-overview)。
+- **使用 DMA 進行評估：** 使用 Data Migration Assistant 來偵測可能影響目標 Azure SQL Database 受控實例中資料庫功能的相容性問題。 使用 DMA 來建議效能和可靠性改進，以及將架構、資料和非內含性物件從來源伺服器移至目標伺服器。 如需詳細資訊，請參閱[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)。
 - **補救和轉換：** 根據 DMA 的輸出，轉換來源資料架構以補救相容性問題。 使用相依應用程式測試已轉換的資料結構描述。
 
 ## <a name="migrate-process-changes"></a>遷移程序變更
@@ -96,15 +96,15 @@ ms.locfileid: "72980249"
 
 |遷移選項|目的|
 |---------|---------|
-|[Azure Database Migration Service](/sql/dma/dma-overview)|支援線上（最短停機時間）和離線（一次）大規模遷移至 Azure SQL Database 受控實例。 支援從： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017 進行遷移。|
-|[異動複寫](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Azure SQL Database 受控實例的異動複寫支援從下列版本進行遷移： SQL Server 2012 （SP2 CU8、SP3 或更新版本）、SQL Server 2014 （RTM CU10 或更新版本，或 SP1 CU3 或更新版本）、SQL Server 2016、SQL Server 2017。|
-|[大量載入](/sql/t-sql/statements/bulk-insert-transact-sql)|針對儲存在中的資料，使用大量載入 Azure SQL Database 受控實例： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017。|
+|[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|支援線上（最短停機時間）和離線（一次）大規模遷移至 Azure SQL Database 受控實例。 支援從： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017 進行遷移。|
+|[異動複寫](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Azure SQL Database 受控實例的異動複寫支援從下列版本進行遷移： SQL Server 2012 （SP2 CU8、SP3 或更新版本）、SQL Server 2014 （RTM CU10 或更新版本，或 SP1 CU3 或更新版本）、SQL Server 2016、SQL Server 2017。|
+|[大量載入](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|針對儲存在中的資料，使用大量載入 Azure SQL Database 受控實例： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017。|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>建議的遷移程式的指引和教學課程
 
 選擇使用「資料庫移轉服務」進行遷移的最佳指引，會放在所選的來源和目標平臺上。 下錶鏈接到使用資料庫移轉服務遷移 SQL database 之每個標準方法的教學課程。
 
-|來源  |目標  |工具  |遷移類型  |指導方針  |
+|來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Azure SQL Database|Database Migration Service|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
@@ -116,11 +116,11 @@ ms.locfileid: "72980249"
 
 將資料庫從 SQL Server 實例移至資料庫移轉服務之後，您可以在許多 PaaS 解決方案中重新裝載架構和資料。 不過，其他必要的服務可能仍在該伺服器上執行。 下列三個教學課程有助於將 SSIS、SSAS 和 SSRS 移至 Azure 上的對等 PaaS 服務。
 
-|來源  |目標  |工具  |遷移類型  |指導方針  |
+|來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory 整合執行時間|Azure Data Factory|離線|[教學課程](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services-表格式模型|Azure Analysis Services|SQL Server Data Tools|離線|[教學課程](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI 報表伺服器|Power BI|離線|[教學課程](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Power BI 報表伺服器|Power BI|離線|[教學課程](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>從 SQL Server 遷移至 IaaS 實例 SQL Server 的指引和教學課程
 
@@ -128,7 +128,7 @@ ms.locfileid: "72980249"
 
 使用此方法可在 SQL Server 的實例上遷移資料庫或其他服務。
 
-|來源  |目標  |工具  |遷移類型  |指導方針  |
+|來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|
 |單一實例 SQL Server|IaaS 上的 SQL Server|多變|離線|[教學課程](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
