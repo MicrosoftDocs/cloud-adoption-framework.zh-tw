@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378271"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566868"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -130,7 +130,7 @@ ms.locfileid: "72378271"
 
 ![雲端採用架構移轉模型](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>建立平衡雲端組合
+## <a name="create-a-balanced-cloud-portfolio"></a>建立平衡的雲端組合
 
 任何平衡技術組合都有由各種資產組成的混合資產。 某些應用程式已排程淘汰且提供最低限度支援。 其他應用程式或資產的支援處於維護狀態，但那些解決方案的功能是穩定的。 針對較新的商業流程，變更市場條件可能會刺激進行中的功能改進或現代化。 當推動營收來源的機會出現時，就會將新應用程式或資產引進生產環境中。 在資產的每個生命週期階段中，任何投資對營收和利潤的影響都會變更。 越接近生命週期階段後期，新功能或現代化工作可獲得高投資報酬的可能性就越小。
 

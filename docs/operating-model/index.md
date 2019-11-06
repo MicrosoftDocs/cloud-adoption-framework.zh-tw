@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683823"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564529"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型
 
@@ -36,7 +36,7 @@ Satya Nadella 說過： **「文化將策略當早餐吃掉了」** 。 作業�
 - [管理](../manage/index.md)：調整技術作業管理的持續流程，以實現最大的價值，並盡可能減少中斷的狀況。
 - [組織](../organize/index.md)：隨著作業模型逐漸成熟，由各種支援作業模型的團隊和功能所形成的組織也會成熟。
 
-## <a name="aligning-operating-models"></a>讓作業模型彼此配合
+## <a name="align-operating-models"></a>讓作業模型彼此配合
 
 雲端和數位經濟已顯露出其需要多個作業模型。 有時候，這是因為其需要支援多個公用雲端。 更常見的情況則是，由於要從內部部署轉移到雲端，因此彰顯了此一需求。 不論是哪種案例，您都必須讓作業模型彼此配合，才能獲得最大效能和最少浪費。
 

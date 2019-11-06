@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222717"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566373"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -35,7 +35,7 @@ ms.locfileid: "71222717"
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>開發部署加速治理原則聲明
+## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
 下列六個步驟將可協助您定義治理原則，以便在雲端環境中控制資源的部署與設定。
 

@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71025945"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564295"
 ---
-# <a name="managing-organizational-alignment"></a>管理組織調整
+# <a name="manage-organizational-alignment"></a>管理組織一致性
 
 若沒有妥善組織的人員，就不會有雲端採用。 成功的雲端採用是透過技能熟練的人員執行適當類型的工作、與明確定義的商務目標進行整合，以及在良好管理的環境中交互運作的結果。 若要提供有效的雲端作業模式，建立適當的員工組織結構非常重要。 本文概述了建立和維護適當組織結構的方法，其有四個步驟。
 
@@ -130,7 +130,7 @@ ms.locfileid: "71025945"
 - [雲端平台](./cloud-platform.md)：操作平台並讓平台更完善。
 - [雲端自動化](./cloud-automation.md)：加速採用與創新。
 
-## <a name="maturing-organizational-structures"></a>讓組織結構更成熟
+## <a name="mature-organizational-structures"></a>讓組織結構更成熟
 
 在某種程度上，上述每項功能在每次雲端採用工作中均有提供，都是明確或根據定義的團隊結構來提供。
 隨著採用需求的成長，創造平衡和結構的需求也在增長。 為了滿足這些需求，公司通常會遵循讓組織結構更成熟的過程。
@@ -139,7 +139,7 @@ ms.locfileid: "71025945"
 
 [決定組織結構成熟度](./organization-structures.md)一文提供了關於每個成熟度等級的更多細節。
 
-## <a name="aligning-raci-charts"></a>調整 RACI 圖表
+## <a name="align-raci-charts"></a>RACI 圖表一致性
 
 在每個成熟度等級，各種雲端功能的責任轉移到新的團隊。 透過將障礙移除和自動化變革，這種責任制的轉移加快了移轉作業和創新週期。 為了正確調整指派，[RACI 調整](./raci-alignment.md)一文分享 RACI 圖表給每個引用的組織結構。
 

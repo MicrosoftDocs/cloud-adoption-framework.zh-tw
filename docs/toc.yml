@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: 技能整備程度
               href: migrate/expanded-scope/suggested-skills.md
-            - name: VMware 主機移轉
+            - name: VMWare 主機移轉
               href: migrate/expanded-scope/vmware-host.md
             - name: SQL Server 移轉
               href: migrate/expanded-scope/sql-migration.md
@@ -475,13 +475,13 @@
               items:
                 - name: 概觀
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: 會影響移轉活動的決策
+                - name: 會影響移轉的決策
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: 環境規劃檢查清單
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: 對齊角色和職責
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: 用來管理變更的結構待處理項目
+                - name: 敏捷變更管理
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: 移轉待處理項目檢閱
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: 讓優先順序保持對齊
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: 評估工作負載和資產的整備程度
+                - name: 評估工作負載整備程度
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: 架構工作負載
                   href: migrate/migration-considerations/assess/architect.md
                 - name: 估計雲端成本
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: 接洽移轉夥伴和支援人員
+                - name: 了解合作關係選項
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: 管理累加式程序
+                - name: 管理變更
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: 變更核准程序
+                - name: 核准架構變更
                   href: migrate/migration-considerations/assess/approve.md
             - name: 遷移個別資產
               items:
                 - name: 概觀
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 升階模型 - 單一步驟、分段或一段
+                - name: 升階模型
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: 補救工作
+                - name: 修復資產
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: 將資產複寫到雲端
+                - name: 複寫資產
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: 複寫選項
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: 暫存用於測試和升階的工作負載
+                - name: 階段工作負載
                   href: migrate/migration-considerations/migrate/stage.md
             - name: 將工作負載最佳化並升階
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: 業務測試
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: 針對資產建立基準並加以最佳化
+                - name: 基準測試和重新調整資產大小
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: 已準備好升階
+                - name: 升階準備
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: 將工作負載升階到生產環境
+                - name: 升級到生產環境
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: 解除委任已淘汰的資產
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: 追溯性
+                - name: 進行追溯
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: 保護及管理生產環境中的工作負載
               items:

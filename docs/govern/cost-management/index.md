@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221159"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566414"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
@@ -33,7 +33,7 @@ ms.locfileid: "71221159"
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。
 
-## <a name="developing-cost-management-governance-policy-statements"></a>開發成本管理治理原則聲明
+## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
 下列六個步驟將協助您定義治理原則來控制環境中的成本。
 

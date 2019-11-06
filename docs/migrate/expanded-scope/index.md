@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548495"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564626"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>雲端移轉的擴充範圍
 
@@ -32,7 +32,7 @@ ms.locfileid: "72548495"
 
 ### <a name="technology-driven-scope-expansion"></a>技術導向範圍擴充
 
-- **[VMWare 移轉](./vmware-host.md)：** 遷移 VMware 主機可以加速整體的移轉進程。 所遷移的每個 VMware 主機都可以使用隨即轉移方法，將多個工作負載移至雲端。 在移轉之後，這些 VM 和工作負載可以留在 VMware 中，也可以遷移至新式雲端功能。
+- **[VMWare 移轉](./vmware-host.md)：** 遷移 VMWare 主機可以加速整體的移轉流程。 所遷移的每個 VMWare 主機都可以使用隨即轉移方法，將多個工作負載移至雲端。 在移轉之後，這些 VM 和工作負載可以留在 VMWare 中，也可以遷移至新式雲端功能。
 - **[SQL Server 移轉](./sql-migration.md)：** 遷移 SQL Server 可以加速整體的移轉進程。 所遷移的每個 SQL Server 都可以移動多個資料庫和服務，而可能加快多個工作負載的速度。
 - **[多個資料中心](./multiple-datacenters.md)：** 遷移多個資料中心會增加許多複雜性。 我們將會在評量、遷移、最佳化及管理程序期間討論其他考量，以針對更複雜的環境做好準備。
 - **[資料需求超過網路容量](./network-capacity-exceeded.md)：** 公司經常會因現有資料中心的容量、速度或穩定性已不再令人滿意，而選擇移轉至雲端。 不幸的是，那些相同的條件約束都會為移轉程序帶來複雜度，並需要在評量和移轉程序期間進行額外的規劃。
