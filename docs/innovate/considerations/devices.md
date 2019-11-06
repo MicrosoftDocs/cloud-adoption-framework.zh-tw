@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 37bff0c476746efadb86a179f03d5d7951ea0b81
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980127"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565657"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 
@@ -33,7 +33,7 @@ ms.locfileid: "72980127"
 
 環境體驗通常需要的 web 應用程式不超過一天。 透過[測量](./measure.md)並[向客戶學習](./learn.md)，可以觀察、追蹤和使用觸發客戶需求的行為，以建立更多的環境體驗。 下列清單摘要說明將環境解決方案整合到您的假設中的幾個方法，並提供下列段落中各項的詳細資訊。
 
-- 行動 **[體驗](#mobile-experience)** ：如同膝上型電腦，行動裝置應用程式在客戶環境中相當常見。 在某些情況下，這可能會提供足夠的互動層級，讓解決方案成為環境的功能。
+- 行動 **[體驗](#mobile-experience)：** 如同膝上型電腦，行動裝置應用程式在客戶環境中很普遍。 在某些情況下，這可能會提供足夠的互動層級，讓解決方案成為環境的功能。
 - **[Mixed reality](#mixed-reality)：** 有時，必須改變客戶的一般環境，才能進行互動環境。 此因素會造成客戶與解決方案互動，且必須符合需求的錯誤現實。 在此情況下，解決方案是在 false 現實中的環境。
 - **[整合式現實](#integrated-reality)：** 相較于真正的環境，整合式現實解決方案著重于在客戶現實中使用的裝置，以將解決方案整合到其自然行為中。 虛擬助理是將現實整合到周圍環境的絕佳範例。 較少的已知選項考慮物聯網（IoT）技術，其會整合已存在於客戶環境中的裝置。
 - 已 **[調整的事實](#adjusted-reality)：** 當這些環境解決方案中的任何一個使用雲端中的預測性分析，透過自然的內部環境來定義和提供與客戶的互動時，解決方案已調整現實。
@@ -46,7 +46,7 @@ ms.locfileid: "72980127"
 
 當客戶經常行動和變更位置時，可能代表特定解決方案最相關的環境體驗。 過去十年來，創新經常是由現有解決方案與行動體驗的整合所觸發。
 
-Azure App 服務是這種方法的絕佳範例。 在早期反復專案期間， [Azure App 服務的 web 應用程式功能](/azure/app-service/overview)可以用來測試假設。 隨著假設變得更複雜， [Azure App 服務的行動應用程式功能](/azure/app-service-mobile/)可以擴充 web 應用程式，以在各種行動平臺上執行。
+Azure App 服務是這種方法的絕佳範例。 在早期反復專案期間， [Azure App 服務的 web 應用程式功能](https://docs.microsoft.com/azure/app-service/overview)可以用來測試假設。 隨著假設變得更複雜， [Azure App 服務的行動應用程式功能](https://docs.microsoft.com/azure/app-service-mobile)可以擴充 web 應用程式，以在各種行動平臺上執行。
 
 ## <a name="mixed-reality"></a>混合現實
 
@@ -68,7 +68,7 @@ Mixed reality 解決方案代表環境經驗的下一個成熟層級。 這種�
 Azure 中的整合現實範例包括：
 
 - [Azure 物聯網（IoT）解決方案](https://docs.microsoft.com/azure/iot-fundamentals)是 azure 中的一組服務，可協助您管理裝置，並將來自這些裝置的資料流程到雲端，並向一般使用者送出。
-- [Azure Sphere](/azure-sphere)，這是硬體和軟體的組合。 Azure Sphere 是讓現有裝置安全地在裝置與 Azure IoT 解決方案之間傳輸資料的本質安全方式。
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere)，這是硬體和軟體的組合。 Azure Sphere 是讓現有裝置安全地在裝置與 Azure IoT 解決方案之間傳輸資料的本質安全方式。
 - [Azure Kinect 開發人員套件](https://docs.microsoft.com/azure/Kinect-dk)，具有先進的電腦視覺和語音模型的 AI 感應器。 這些感應器可以從直屬環境中收集視覺和音訊資料，並將這些輸入饋送至您的解決方案。
 
 您可以使用上述三種工具，從自然的環境指標和客戶的需求來收集資料。 您的解決方案可以從該處回應這些資料輸入，以解決需求，有時客戶甚至會知道該需求的觸發程式是否已發生。
@@ -81,7 +81,7 @@ Azure 中的整合現實範例包括：
 
 世界各地的工廠會提供更多調整現實的範例。 在整合現實的初期階段，裝置上的感應器偵測到過高的狀況，然後透過應用程式收到警示。 在已調整的事實中，客戶可能仍在參與，但意見反應迴圈較緊密。 在調整過的現實工廠中，一部裝置可能會在同一部電腦上偵測到位於元件線的某一部重要機器過熱。 在樓層的其他地方，第二部裝置接著會稍微減緩生產環境，讓電腦在條件解決後能夠很冷，然後繼續進行完整的步調。 在此情況下，客戶是第二方參與者。 客戶使用您的應用程式來設定規則，並瞭解這些規則對生產環境的影響，但不需要意見反應迴圈。
 
-[Azure 物聯網（IoT）解決方案](https://docs.microsoft.com/azure/iot-fundamentals)、 [Azure Sphere](/azure-sphere)和[azure Kinect 開發人員套件](https://docs.microsoft.com/azure/Kinect-dk)中所述的 azure 服務，都可以是已調整之現實解決方案的元件。 然後，您的原始應用程式和商務邏輯就會成為環境輸入與實體環境中應該進行的變更之間的媒介。
+[Azure 物聯網（IoT）解決方案](https://docs.microsoft.com/azure/iot-fundamentals)、 [Azure Sphere](https://docs.microsoft.com/azure-sphere)和[azure Kinect 開發人員套件](https://docs.microsoft.com/azure/Kinect-dk)中所述的 azure 服務，都可以是已調整之現實解決方案的元件。 然後，您的原始應用程式和商務邏輯就會成為環境輸入與實體環境中應該進行的變更之間的媒介。
 
 數位對應項是調整現實的另一個範例。 這一詞是指實體裝置的數位標記法，透過電腦、行動或混合現實格式呈現。 不同于較不復雜的3D 模型，數位對應項會反映從實體環境中實際裝置收集到的資料。 此解決方案可讓使用者以絕對不會在真實世界中完成的方式，與數位表示互動。 在這種方法中，實體裝置會調整混合現實環境。 不過，解決方案仍然會從整合式現實解決方案收集資料，並使用該資料來塑造客戶目前周圍的環境。
 

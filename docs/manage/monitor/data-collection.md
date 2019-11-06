@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979844"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564936"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -34,7 +34,7 @@ ms.locfileid: "72979844"
 
 ## <a name="develop-a-monitoring-configuration"></a>開發監視設定
 
-監視服務擁有者和小組通常會遵循一組共同的活動來開發監視設定。 這些活動會從初始規劃階段開始，在非生產環境中繼續進行測試和驗證，並延伸至部署到生產環境。 監視設定衍生自已知的失敗模式、模擬失敗的測試結果，以及組織中數人的經驗（服務台、營運、工程師和開發人員）。 這類設定會假設服務已存在、正在遷移至雲端，而且尚未重新架構。
+監視服務擁有者和小組通常會遵循一組共同的活動來開發監視設定。 這些活動會從初始規劃階段開始，在非生產環境中繼續進行測試和驗證，並延伸至部署到生產環境。 監視設定衍生自已知的失敗模式、模擬失敗的測試結果，以及組織中數人的經驗（服務台、營運、工程師和開發人員）。 這類設定假設服務已經存在，它正在遷移至雲端，而且尚未重新架構。
 
 針對服務層級的品質結果，請及早在開發程式中監視這些服務的健全狀況和可用性。 如果您事後監視該服務或應用程式的設計，您的結果將不會成功。
 

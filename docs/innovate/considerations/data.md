@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980063"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565712"
 ---
 # <a name="democratize-data"></a>將大眾化資料
 
@@ -80,7 +80,7 @@ ms.locfileid: "72980063"
 
 **虛擬化：** 資料的整合和內嵌有時可能會使創新變慢。 當資料虛擬化的解決方案已可供使用時，它可能代表更合理的方法。 內嵌與整合可以重複儲存和開發需求、新增資料延遲、增加受攻擊面區域、觸發品質問題，以及增加治理工作。 資料虛擬化是比較現代的替代方案，可將原始資料保留在單一位置，並建立來源資料的傳遞或快取查詢。
 
-SQL Server 2017 和 Azure SQL 資料倉儲都支援[PolyBase](/sql/relational-databases/polybase/polybase-guide) ，這是 Azure 中最常使用的資料虛擬化方法。
+SQL Server 2017 和 Azure SQL 資料倉儲都支援[PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) ，這是 Azure 中最常使用的資料虛擬化方法。
 
 ## <a name="next-steps"></a>後續步驟
 

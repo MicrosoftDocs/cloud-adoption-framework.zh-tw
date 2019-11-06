@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979905"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564981"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
@@ -88,7 +88,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 |新式 web 應用程式監視 | 是 | 否 |
 |舊版 web 應用程式監視 | 是，有限制，依 SDK 而有所不同<br> 支援監視較舊版本的 .NET 和 JAVA web 應用程式。 | 是，有限 |
 |監視 Azure Kubernetes Service 容器 | 是 | 否 |
-|監視 Docker/Windows 容器 | 是 | 否 |
+|監視 Docker 或 Windows 容器 | 是 | 否 |
 |網路效能監視 | 是 | 是，有限<br> 支援可用性檢查，並使用來自公司網路的簡易網路管理通訊協定（SNMP），從網路裝置收集基本統計資料。|
 |互動式資料分析 | 是 | 否<br> 依賴 SQL Server Reporting Services 預先定義的報表、協力廠商的視覺效果解決方案，或自訂的 Power BI 執行。 Operations Manager 資料倉儲的規模和效能限制。 與 Azure 監視器記錄整合，以作為資料匯總需求的替代方案。 您可以藉由設定 Log Analytics 連接器來達到整合。|
 |端對端診斷、根本原因分析，以及及時的疑難排解 | 是 | 是，有限<br> 僅支援內部部署基礎結構和應用程式的端對端診斷和疑難排解。 使用其他 System Center 元件或合作夥伴解決方案。|
@@ -131,7 +131,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>使用 Operations Manager 本身的缺點
 
-- 在 Operations Manager 中分析監視資料，通常是使用您從主控台存取的管理元件中所定義的預先定義的視圖、從 SQL Server Reporting Services （SSRS）報表，或使用者已建立的自訂視圖來執行。 目前無法執行資料的臨機操作分析。 Operations Manager 報告沒有彈性。 提供監視資料長期保留的資料倉儲不會調整或執行得很好。 如需撰寫 T-sql 語句、開發 Power BI 解決方案，或使用協力廠商解決方案的專長，必須支援 IT 組織中各種不同角色的需求。
+- 在 Operations Manager 中分析監視資料，通常是使用從主控台存取的管理元件、從 SQL Server Reporting Services （SSRS）報告，或使用者已建立的自訂視圖所提供的預先定義的視圖來執行。 臨機運算元據分析不是現成可用的。 Operations Manager 報告沒有彈性。 提供監視資料長期保留的資料倉儲不會調整或執行得很好。 如需撰寫 T-sql 語句、開發 Power BI 解決方案，或使用協力廠商解決方案的專長，必須支援 IT 組織中各種不同角色的需求。
 
 - Operations Manager 中的警示不支援複雜運算式或包含相互關聯邏輯。 為了協助減少雜訊，會將警示分組，以顯示兩者之間的關聯性，並識別其原因。
 
@@ -165,7 +165,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 - 啟用適用於 VM 的 Azure 監視器、容器的 Azure 監視器，以及 Application Insights 來偵測及診斷基礎結構與應用程式之間的問題。 如需更完整的分析，以及從多個元件或支援應用程式的相依性收集的資料相互關聯，您必須使用 Azure 監視器記錄。
 
-- 建立可套用至一組核心應用程式和服務元件的智慧型警示、協助減少複雜信號的動態閾值的警示雜訊，並根據機器學習服務演算法使用警示匯總，以協助快速識別問題.
+- 建立適用于一組核心應用程式和服務元件的智慧型警示，協助減少複雜信號的動態閾值的警示雜訊，並根據機器學習服務演算法使用警示匯總，協助您快速識別問題。
 
 - 定義查詢和儀表板的程式庫，以支援 IT 組織中各種不同角色的需求。
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5bcede8d56ae08228e302fb1af016013cb9ef8c3
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980133"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565713"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 
@@ -47,7 +47,7 @@ ms.locfileid: "72980133"
 
 現今的家發明挑戰並不相同。 雲端技術的無限潛能也會產生更多的實作為選項，以及如何運用這些可能的更深入考慮。
 
-創新方法會使用下列五個創新專業領域，以協助配合您的家發明和採用目標來調整您的實施決策：
+「創新」方法會使用下列創新專業領域，協助將您的實施決策與您的家發明和採用目標保持一致：
 
 - **資料平臺：** 可以使用新的來源和資料的變化。 其中有許多無法整合到舊版或內部部署應用程式，以建立符合成本效益的解決方案。 瞭解您希望在客戶中推動的變更，將會通知您資料平臺的決策。 這些決策將是內嵌、整合、分類和共用資料所選方法的延伸。 Microsoft 將此決策制定程式視為資料的 democratization。
 - **裝置互動：** IoT、行動和增強的現實會將數位和實體之間的線條模糊，以加速數位經濟。 瞭解客戶行為的真實世界互動，會推動裝置整合的相關決策。
@@ -55,7 +55,7 @@ ms.locfileid: "72980133"
 - **原始程式碼和部署：** 所有指導的開發人員之間的共同作業可改善品質和速度到市場。 意見反應與學習塑造市場領導者的快速回應。 對組建、測量和學習程式的承諾有助於加速工具採用決策。
 - **預測性解決方案：** 在數位經濟中，很少只能滿足客戶目前的需求。 客戶希望企業預期其後續步驟並預測未來的需求。 持續學習通常會演變成預測工具。 客戶需求和資料可用性的複雜性將有助於定義最佳工具和預測和影響的方法。
 
-在數位經濟中，最大的挑戰架構設計人員會清楚瞭解客戶的家發明和採用需求，然後決定最佳的雲端架構工具鏈，以滿足這些需求。
+在數位經濟中，最大的挑戰架構設計人員會清楚瞭解其客戶的家發明和採用需求，並決定要根據這些需求提供最佳的雲端工具鏈。
 
 ## <a name="next-steps"></a>後續步驟
 
