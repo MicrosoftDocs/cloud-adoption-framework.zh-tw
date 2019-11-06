@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024182"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239164"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>在 Azure VM 和 SQL Database 受控執行個體上重新裝載內部部署應用程式
 
@@ -39,7 +39,7 @@ Contoso 的 IT 領導小組已與該公司的企業合作夥伴密切合作，�
 Contoso 雲端小組已確定此次移轉的目標。 該公司會使用移轉目標來判斷最合適的移轉方法。
 
 - 移轉過後，應用程式不管是在 Azure 或 Contoso 的內部部署 VMware 環境中，都應具有相同的效能。 移到雲端，並不表示應用程式效能比較不重要。
-- Contoso 不想在這個應用程式上投注資源。 此應用程式對企業很重要，但是 Contoso 只想要以目前的格式將應用程式移至雲端。
+- Contoso 不想要投資應用程式。 此應用程式對企業很重要，但是 Contoso 只想要以目前的格式將應用程式移至雲端。
 - 在應用程式遷移之後，資料庫管理工作應會減到最少。
 - Contoso 不想對此應用程式使用 Azure SQL Database， 且正在尋求替代方案。
 
@@ -78,7 +78,7 @@ Contoso 雲端小組已確定此次移轉的目標。 該公司會使用移轉�
 
 - 受控執行個體的目標是為最新版內部部署 SQL Server 提供幾乎 100% 的相容性。 如果在內部部署環境或在 IaaS VM 上執行 SQL Server 的客戶想要在幾乎不需要變更設計的情況下，將其應用程式遷移至完全受控服務，Microsoft 建議使用受控執行個體。
 - Contoso 計劃將大量應用程式從內部部署環境遷移到 IaaS。 有許多都是由 ISV 提供。 Contoso 意識到使用受控執行個體將有助於確保這些應用程式的資料庫相容性，而不是使用可能不支援的 SQL Database。
-- Contoso 可以使用完全自動化的 Azure 資料庫移轉服務，直接執行對受控執行個體的「隨即轉移」移轉。 備妥此服務，Contoso 可以將它重複使用於未來的資料庫移轉。
+- Contoso 可以使用完全自動化的 Azure 資料庫移轉服務，輕鬆地將轉移轉移至受控執行個體。 備妥此服務，Contoso 可以將它重複使用於未來的資料庫移轉。
 - SQL 受控執行個體支援 SQL Server Agent，也就是 SmartHotel360 應用程式的重要問題。 Contoso 需要此相容性，否則就必須重新設計應用程式所需的維護方案。
 - Contoso 可以透過軟體保證使用適用於 SQL Server 的 Azure Hybrid Benefit，以折扣優惠在 SQL Database 受控執行個體上交換執行個體的現有授權。 這可讓 Contoso 最多節省 30% 的受控執行個體。
 - SQL 受控執行個體完全包含在虛擬網路中，因此可為 Contoso 的資料提供更高的隔離和安全性。 Contoso 可享有公用雲端的優勢，同時讓環境與公用網際網路保持隔離。
@@ -93,7 +93,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 **考量** | **詳細資料**
 --- | ---
 **優點** | WEBVM 會移至 Azure (不需變更)，讓移轉變得更簡單。<br/><br/> SQL 受控執行個體可援 Contoso 的技術需求和目標。<br/><br/> 受控執行個體將提供與其目前部署的 100% 相容性，同時將其從 SQL Server 2008 R2 中移走。<br/><br/> 他們可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit，來妥善運用軟體保證中的投資。<br/><br/> 他們可以重複使用 Azure 資料庫移轉服務進行其他未來的移轉作業。<br/><br/> SQL 受控執行個體具有 Contoso 不需設定的內建容錯功能。 這可確保資料層不再是單一的容錯移轉點。
-**缺點** | WEBVM 會執行 Windows Server 2008 R2。 雖然 Azure 支援此作業系統，但它不再是支援的平台。 [深入了解](https://support.microsoft.com/help/956893)。<br/><br/> Web 層會保留只有 WEBVM 提供服務的單一容錯移轉點。<br/><br/> Contoso 必須繼續支持此應用程式 Web 層作為 VM，而不是轉向 Azure App Service 等受控服務。<br/><br/> 在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。
+**缺點** | WEBVM 會執行 Windows Server 2008 R2。 雖然 Azure 支援此作業系統，但它不再是支援的平台。 [詳細資訊](https://support.microsoft.com/help/956893)。<br/><br/> Web 層會保留只有 WEBVM 提供服務的單一容錯移轉點。<br/><br/> Contoso 必須繼續支持此應用程式 Web 層作為 VM，而不是轉向 Azure App Service 等受控服務。<br/><br/> 在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -103,13 +103,13 @@ Contoso 會完成下列步驟，以將 SmartHotel360 應用程式的 Web 和資�
 
 1. Contoso 的 Azure 基礎結構已經備妥，所以只需要為此案例新增幾個特定 Azure 元件即可。
 2. 資料層會使用 Azure 資料庫移轉服務進行移轉。 此服務會透過 Contoso 資料中心與 Azure 之間的站對站 VPN 連線，來連線至內部部署 SQL Server VM。 接著，服務會移轉資料庫。
-3. Web 層將會透過 Site Recovery 使用「隨即轉移」進行移轉。 此程序需要準備內部部署 VMware 環境、設定和啟用複寫，以及將 VM 容錯移轉至 Azure 以便遷移。
+3. Web 層將使用 Site Recovery 的隨即轉移來進行遷移。 此程序需要準備內部部署 VMware 環境、設定和啟用複寫，以及將 VM 容錯移轉至 Azure 以便遷移。
 
      ![移轉架構](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 
 ### <a name="azure-services"></a>Azure 服務
 
-服務 | 描述 | 成本
+服務 | 說明 | 成本
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
 [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
@@ -121,7 +121,7 @@ Contoso 和其他使用者都必須符合此案例的下列先決條件：
 
 <!-- markdownlint-disable MD033 -->
 
-需求 | 詳細資料
+要求 | 詳細資料
 --- | ---
 **註冊受控執行個體預覽版** | 您必須已在 SQL Database 受控執行個體有限公開預覽版中註冊。 您必須有 Azure 訂用帳戶才能[註冊](https://portal.azure.com#create/Microsoft.SQLManagedInstance)。 註冊可能需要幾天的時間才能完成，因此務必在開始部署此案例之前完成註冊。
 **Azure 訂用帳戶** | 當您在這系列的第一篇文章中執行評量時，您應該已經建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有的訂用帳戶，而且您不是訂用帳戶的系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請參閱[使用角色型存取控制來管理 Site Recovery 存取](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
@@ -137,13 +137,13 @@ Contoso 和其他使用者都必須符合此案例的下列先決條件：
 
 > [!div class="checklist"]
 >
-> - **步驟 1：設定 SQL Database 受控執行個體。** Contoso 需要現有的受控執行個體，以作為內部部署 SQL Server 資料庫的移轉目的地。
-> - **步驟 2：準備 Azure 資料庫移轉服務。** Contoso 必須註冊資料庫移轉提供者、建立執行個體，然後建立 Azure 資料庫移轉服務專案。 Contoso 也必須為 Azure 資料庫移轉服務設定共用存取簽章 (SAS) 統一資源識別項 (URI)。 SAS URI 可提供 Contoso 儲存體帳戶資源的委派存取權，以便 Contoso 對儲存體物件授與有限的權限。 Contoso 會設定 SAS URI，以便 Azure 資料庫移轉服務存取儲存體帳戶容器 (此為服務在上傳 SQL Server 備份檔案時的上傳目的地)。
-> - **步驟 3：為 Azure 進行 Site Recovery 的準備工作。** Contoso 必須建立儲存體帳戶來保存 Site Recovery 的複寫資料。 它也必須建立 Azure 復原服務保存庫。
-> - **步驟 4：為內部部署 VMware 進行 Site Recovery 的準備工作。** Contoso 會準備帳戶以便探索 VM 和安裝代理程式，進而在容錯移轉後連線至 Azure VM。
-> - **步驟 5：複寫 VM。** 為了設定複寫，Contoso 會設定 Site Recovery 來源和目標環境、設定複寫原則，並開始將 VM 複寫至 Azure 儲存體。
-> - **步驟 6：使用 Azure 資料庫移轉服務來移轉資料庫。** Contoso 遷移資料庫。
-> - **步驟 7：使用 Site Recovery 移轉 VM。** Contoso 會執行測試容錯移轉，確定一切都能正常運作。 接著，Contoso 會執行完整的容錯移轉，將 VM 遷移至 Azure。
+> - **步驟1：設定 SQL Database 受控執行個體。** Contoso 需要現有的受控執行個體，以作為內部部署 SQL Server 資料庫的移轉目的地。
+> - **步驟2：準備 Azure 資料庫移轉服務。** Contoso 必須註冊資料庫移轉提供者、建立執行個體，然後建立 Azure 資料庫移轉服務專案。 Contoso 也必須為 Azure 資料庫移轉服務設定共用存取簽章 (SAS) 統一資源識別項 (URI)。 SAS URI 可提供 Contoso 儲存體帳戶資源的委派存取權，以便 Contoso 對儲存體物件授與有限的權限。 Contoso 會設定 SAS URI，以便 Azure 資料庫移轉服務存取儲存體帳戶容器 (此為服務在上傳 SQL Server 備份檔案時的上傳目的地)。
+> - **步驟3：準備 Azure 以進行 Site Recovery。** Contoso 必須建立儲存體帳戶來保存 Site Recovery 的複寫資料。 它也必須建立 Azure 復原服務保存庫。
+> - **步驟4：準備內部部署 VMware 以進行 Site Recovery。** Contoso 會準備帳戶以便探索 VM 和安裝代理程式，進而在容錯移轉後連線至 Azure VM。
+> - **步驟5：複寫 Vm。** 為了設定複寫，Contoso 會設定 Site Recovery 來源和目標環境、設定複寫原則，並開始將 VM 複寫至 Azure 儲存體。
+> - **步驟6：使用 Azure 資料庫移轉服務遷移資料庫。** Contoso 遷移資料庫。
+> - **步驟7：使用 Site Recovery 遷移 Vm。** Contoso 會執行測試容錯移轉，確定一切都能正常運作。 接著，Contoso 會執行完整的容錯移轉，將 VM 遷移至 Azure。
 
 ## <a name="step-1-prepare-a-sql-database-managed-instance"></a>步驟 1：準備 SQL Database 受控執行個體
 
@@ -242,7 +242,7 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 
 了解如何[佈建受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal)。
 
-## <a name="step-2-prepare-the-azure-database-migration-service"></a>步驟 2:準備 Azure 資料庫移轉服務
+## <a name="step-2-prepare-the-azure-database-migration-service"></a>步驟2：準備 Azure 資料庫移轉服務
 
 若要準備 Azure 資料庫移轉服務，Contoso 管理員需要執行一些作業：
 
@@ -274,13 +274,13 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 - 了解如何[設定 Azure 資料移轉服務](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)。
 - 了解如何[建立和使用 SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)。
 
-## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>步驟 3：為 Azure 進行 Site Recovery 服務的準備工作
+## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>步驟 3：針對 Site Recovery 服務準備 Azure
 
 Contoso 需要數個 Azure 元素，才能夠設定 Site Recovery 以便遷移其 Web 層 VM (**WEBMV**)：
 
 - 一個虛擬網路，容錯移轉的資源位於其中。
 - 用來保存複寫資料的儲存體帳戶。
-- Azure 中的復原服務保存庫。
+- Azure 中的一個復原服務保存庫。
 
 Contoso 管理員會按照下列方式設定 Site Recovery：
 
@@ -297,7 +297,7 @@ Contoso 管理員會按照下列方式設定 Site Recovery：
 
 了解如何[為 Azure 進行 Site Recovery 的設定](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)。
 
-## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>步驟 4：為內部部署 VMware 進行 Site Recovery 的準備工作
+## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>步驟 4：針對 Site Recovery 準備內部部署 VMware
 
 若要針對 Site Recovery 準備 VMware，Contoso 管理員必須完成下列工作：
 
@@ -411,7 +411,7 @@ Contoso 管理員現在會設定來源環境。 若要設定其來源環境，�
 
 Contoso 管理員現在會設定目標複寫環境：
 
-1. 在 [準備基礎結構] > [目標] 中，他們選取目標設定。
+1. 在 [準備基礎結構] > [目標] 中，他們會選取目標設定。
 2. Site Recovery 會確認在指定的目標中有儲存體帳戶和網路。
 
 ### <a name="create-a-replication-policy"></a>建立複寫原則
@@ -420,9 +420,9 @@ Contoso 管理員現在會設定目標複寫環境：
 
 1. 在 [準備基礎結構] > [複寫設定] > [複寫原則] >  [建立和關聯] 中，他們會建立 **ContosoMigrationPolicy** 原則。
 2. 他們使用預設設定：
-    - **RPO 臨界值：** 預設值是 60 分鐘。 這個值可定義復原點的建立頻率。 連續複寫超過此限制時會產生警示。
-    - **復原點保留期：** 預設值為 24 小時。 此值會指定每個復原點的保留週期有多長。 複寫的 VM 可以還原至一個週期內的任何時間點。
-    - **應用程式一致的快照頻率：** 預設值為 1 小時。 此值會指定應用程式一致快照的建立頻率。
+    - **RPO 閾值：** 預設值為60分鐘。 這個值可定義復原點的建立頻率。 連續複寫超過此限制時會產生警示。
+    - **復原點保留期：** 預設值為24小時。 此值會指定每個復原點的保留週期有多長。 複寫的 VM 可以還原至一個週期內的任何時間點。
+    - **應用程式一致快照集頻率：** 預設值為1小時。 這個值會指定應用程式一致快照的建立頻率。
 
     ![複寫原則 - 建立](./media/contoso-migration-rehost-vm-sql-managed-instance/replication-policy.png)
 
@@ -507,9 +507,9 @@ Contoso 管理員必須建立 Azure 資料庫移轉服務專案，然後移轉�
 
     ![資料庫移轉服務 - 驗證資料庫移轉](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-monitor2.png)
 
-## <a name="step-7-migrate-the-vm"></a>步驟 7：移轉 VM
+## <a name="step-7-migrate-the-vm"></a>步驟 7：遷移 VM
 
-Contoso 管理員會執行快速測試容錯移轉，然後移轉 VM。
+Contoso 管理員會執行快速測試容錯移轉，然後遷移 VM。
 
 ### <a name="run-a-test-failover"></a>執行測試容錯移轉
 
@@ -518,7 +518,7 @@ Contoso 管理員會執行快速測試容錯移轉，然後移轉 VM。
 1. 他們會針對最新的可用時間點 (**最近處理的**) 執行一次測試容錯移轉。
 2. 他們會選取 [先將機器關機再開始容錯移轉]。 選取這個選項後，Site Recovery 嘗試先關閉來源 VM，再觸發容錯移轉。 即使關機失敗，仍會繼續容錯移轉。
 3. 執行測試容錯移轉：a. 系統會執行先決條件檢查，以確保移轉所需的全部條件都已準備就緒。
-    b. 容錯移轉會處理資料，以便建立 Azure VM。 如果選取了最新的復原點，則會根據資料建立復原點。
+    b.這是另一個 C# 主控台應用程式。 容錯移轉會處理資料，以便建立 Azure VM。 如果選取了最新的復原點，則會根據資料建立復原點。
     c. 使用先前步驟中處理的資料來建立 Azure VM。
 4. 容錯移轉完成後，Azure VM 複本會出現在 Azure 入口網站中。 他們會確認一切運作正常：VM 的大小適中、已連線到正確的網路，且正在執行中。
 5. 確認容錯移轉測試之後，他們可以清除容錯移轉，並記錄任何觀察到的結果。
@@ -569,7 +569,7 @@ Contoso 管理員會執行快速測試容錯移轉，然後移轉 VM。
 
 - 從 vCenter Server 清查中移除 WEBVM 機器。
 - 從 vCenter Server 清查中移除 SQLVM 機器。
-- 從本機備份作業移除 WEBVM 和 SQLVM。
+- 從本機備份工作移除 WEBVM 和 SQLVM。
 - 更新內部文件以顯示 WEBVM 的新位置和 IP 位址。
 - 從內部文件中移除 SQLVM。 或者，Contoso 可以修改文件，將 SQLVM 顯示為已刪除且已不在 VM 清查中。
 - 檢閱與已解除委任 VM 互動的任何資源。 更新任何相關的設定或文件，以反映新的組態。
@@ -588,14 +588,14 @@ Contoso 安全性小組會檢閱 Azure VM 和 SQL Database 受控執行個體，
 
      ![受控執行個體安全性 - 威脅偵測](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-若要深入了解 VM 的安全性做法，請參閱 [Azure 中 IaaS 工作負載的安全性最佳做法](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)。
+若要深入了解 VM 的安全性做法，請參閱 [Azure 中 IaaS 工作負載的安全性最佳做法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
 
 ### <a name="bcdr"></a>BCDR
 
-針對商務持續性和災害復原 (BCDR)，Contoso 採取下列動作：
+針對商務持續性和災害復原 (BCDR)，Contoso 會採取下列動作：
 
-- 保護資料安全：Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- 保持應用程式啟動及執行：Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- 保護資料安全：Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- 保持應用程式啟動及執行：Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 - Contoso 深入了解如何管理 SQL 受控執行個體，包括[資料庫備份](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561818"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656652"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -115,7 +115,7 @@ Scaffold 的第一要件是一致的命名標準。 設計良好的命名標準�
 > [!TIP]
 > 針對命名慣例：
 >
-> - 檢閱並且盡可能採用[模式與實例指南](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)。 本指南可協助您決定有意義的命名標準，並提供廣泛的範例。
+> - 檢閱並且盡可能採用[模式與實例指南](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)。 本指南可協助您決定有意義的命名標準，並提供廣泛的範例。
 > - 使用 Resource Manager 原則來協助強制執行命名標準。
 >
 > 請記住，之後若要變更名稱會相當困難，因此現在多花幾分鐘，可省去您之後的麻煩。

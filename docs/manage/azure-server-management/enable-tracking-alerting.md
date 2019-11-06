@@ -8,28 +8,28 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f3faa122039097dd6f0f4df1d6f5071b77816545
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565424"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656628"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>啟用重大變更的追蹤和警示
 
-Azure 變更追蹤和清查會針對混合式環境的設定狀態以及對該環境的任何變更，提供警示。 您可以監視可能會影響已部署伺服器的重要檔案、服務、軟體和登錄變更。
+Azure 變更追蹤和清查提供混合式環境設定狀態的警示，以及該環境的變更。 它可以報告可能影響已部署伺服器的重要檔案、服務、軟體和登錄變更。
 
 Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議的登錄機碼清單，以供監視。 若要查看這份清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 **清查** > **編輯設定**。
 
 ![Azure 入口網站中 Azure 自動化清查視圖的螢幕擷取畫面](./media/change-tracking1.png)
 
-如需每個登錄機碼的詳細資訊，請參閱登錄機[碼變更追蹤](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking)。 您可以藉由選取每個金鑰來進行評估並加以啟用。 此設定會套用至目前工作區中啟用的所有 Vm。
+如需每個登錄機碼的詳細資訊，請參閱登錄機[碼變更追蹤](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking)。 選取任何金鑰進行評估，然後加以啟用。 此設定會套用至目前工作區中啟用的所有 Vm。
 
-您也可以追蹤重要的檔案變更。 例如，您可能會想要追蹤 C:\windows\system32\drivers\etc\hosts 檔案，因為 OS 會使用它來將主機名稱對應到 IP 位址。 對此檔案所做的任何變更可能會造成連線問題，或將流量重新導向至危險的網站。
+您也可以使用服務來追蹤重要的檔案變更。 例如，您可能會想要追蹤 C:\windows\system32\drivers\etc\hosts 檔案，因為 OS 會使用它來將主機名稱對應到 IP 位址。 對此檔案所做的變更可能會造成連線問題，或將流量重新導向至危險的網站。
 
-若要啟用主機檔案的檔案內容追蹤，請遵循啟用檔案[內容追蹤](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking)中的步驟。
+若要啟用主機檔案的檔案內容追蹤，請遵循[啟用檔案內容追蹤](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking)中的步驟。
 
-您也可以針對要追蹤之檔案所做的變更，加入警示。 例如，假設您想要設定對 hosts 檔案所做變更的警示。 首先，請在命令列上選取**Log analytics** ，或開啟連結的 log analytics 工作區的記錄搜尋，以前往 log analytics。 在 Log Analytics 中之後，使用下列查詢，搜尋主機檔案的內容變更：
+您也可以針對要追蹤之檔案的變更新增警示。 例如，假設您想要設定主機檔案變更的警示。 選取命令列上的**Log analytics**或已連結之 log Analytics 工作區的記錄搜尋。 在 Log Analytics 中，使用下列查詢來搜尋主機檔案的變更：
 
 ```kusto
 ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
@@ -39,9 +39,9 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 此查詢會搜尋路徑包含「主機」一詞之檔案內容的變更。 您也可以藉由變更 path 參數來搜尋特定檔案。 (例如，`FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
   
-查詢傳回結果之後，請選取 [**新增警示規則**] 以開啟 [警示規則編輯器]。 您也可以透過 Azure 入口網站中的 Azure 監視器，進入此編輯器。
+查詢傳回結果之後，請選取 [**新增警示規則**] 以開啟 [警示-規則編輯器]。 您也可以透過 Azure 入口網站中的 Azure 監視器，進入此編輯器。
 
-在 [警示規則編輯器] 中，檢查查詢，並視需要變更警示邏輯。 在此情況下，我們想要在環境中的任何電腦上偵測到任何變更時，產生警示。
+在警示規則編輯器中，檢查查詢，並視需要變更警示邏輯。 在此情況下，我們想要在環境中的任何電腦上偵測到任何變更時，產生警示。
 
 ![Azure 入口網站中 Log Analytics 警示規則編輯器的螢幕擷取畫面](./media/change-tracking3.png)
 
@@ -51,13 +51,13 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 設定所有參數和邏輯之後，請將警示套用至環境。
 
-## <a name="more-tracking-and-alerting-examples"></a>更多追蹤和警示範例
+## <a name="tracking-and-alerting-examples"></a>追蹤和警示範例
 
-以下是您可能想要考慮的一些追蹤和警示的常見案例：
+本節說明您可能想要使用之追蹤和警示的其他常見案例。
 
 ### <a name="driver-file-changed"></a>驅動程式檔案已變更
 
-偵測是否已變更、新增或移除驅動程式檔案。 適用于追蹤重要系統檔案的變更。
+使用下列查詢來偵測是否已變更、新增或移除驅動程式檔案。 這適用于追蹤重要系統檔案的變更。
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Files" and FileSystemPath contains " c:\\windows\\system32\\drivers\\"
@@ -65,7 +65,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ### <a name="specific-service-stopped"></a>特定服務已停止
 
-適用于追蹤系統重要服務的變更。
+使用下列查詢來追蹤系統重要服務的變更。
 
   ```kusto
   ConfigurationChange | where SvcState == "Stopped" and SvcName contains "w3svc"
@@ -73,7 +73,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ### <a name="new-software-installed"></a>已安裝新軟體
 
-適用于需要鎖定軟體設定的環境。
+針對需要鎖定軟體設定的環境，請使用下列查詢。
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Software" and ChangeCategory == "Added"
@@ -81,15 +81,15 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>特定軟體版本是或未安裝在電腦上
 
-有助於評估安全性。 請注意，此查詢會參考包含清查記錄的 `ConfigurationData`，並報告上次回報的設定狀態，而不會變更。
+使用下列查詢來評估安全性。 此查詢會參考 `ConfigurationData`，其中包含清查的記錄，並提供上次回報的設定狀態，而不會變更。
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
   ```
 
-### <a name="known-dll-changed-through-registry"></a>已知的 DLL 已透過登錄變更
+### <a name="known-dll-changed-through-the-registry"></a>已知的 DLL 已透過登錄變更
 
-適用于偵測已知登錄機碼的變更。
+使用下列查詢來偵測已知登錄機碼的變更。
 
   ```kusto
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
@@ -97,7 +97,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何使用 Azure 自動化[建立更新](./update-schedules.md)排程，來管理伺服器的更新。
+瞭解如何使用 Azure 自動化來[建立更新](./update-schedules.md)排程，以管理伺服器的更新。
 
 > [!div class="nextstepaction"]
 > [建立更新排程](./update-schedules.md)

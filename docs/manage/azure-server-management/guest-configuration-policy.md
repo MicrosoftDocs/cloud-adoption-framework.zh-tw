@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547278"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656323"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
-Azure 原則[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定延伸模組可讓您在虛擬機器中，對設定進行審核。 目前只有在 Azure Vm 上才支援來賓設定。
+您可以使用 [Azure 原則[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定] 延伸模組來審查虛擬機器中的設定。 目前只有在 Azure Vm 上才支援來賓設定。
 
-您可以在 Azure 原則入口網站頁面上搜尋「來賓設定」類別，以尋找來賓設定原則的清單。 您也可以在 PowerShell 視窗中執行此 Cmdlet 來尋找清單：
+若要尋找來賓設定原則的清單，請在 Azure 原則入口網站頁面上搜尋「來賓設定」。 或在 PowerShell 視窗中執行此 Cmdlet 來尋找清單：
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新支援的原則，並評估其是否適合您的需求。
+> 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新支援的原則，並評估其是否有用。
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Deployment
 
-您可以使用下列範例 PowerShell 腳本來部署這些原則：
+使用下列範例 PowerShell 腳本，將這些原則部署到：
 
 - 確認 Windows 和 Linux 電腦中的密碼安全性設定已正確設定。
 - 確認 Windows Vm 上的憑證不會接近到期日。
 
- 執行此腳本之前，您必須使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，您必須提供要套用原則的訂用帳戶名稱。
+ 執行此腳本之前，請使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，必須提供您想要套用原則的訂用帳戶名稱。
 
 ```powershell
 

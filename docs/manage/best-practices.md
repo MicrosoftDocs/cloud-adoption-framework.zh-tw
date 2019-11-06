@@ -1,5 +1,5 @@
 ---
-title: 操作管理簡介
+title: 作業管理簡介
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端採用架構中的營運管理。
 author: BrianBlanchard
@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565252"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656552"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 
-雲端採用是實現商業價值的 catalyst。 不過，實際的商業價值是透過部署至雲端的技術資產持續穩定的作業來實現。 雲端採用架構的這一節會引導您完成各種轉換，進入雲端的營運管理。
+雲端採用是實現商務價值的催化管道。 不過，要實現實際的商業價值，則要透過持續且穩定地部署至雲端的技術資產作業。 雲端採用架構的這一節會引導您完成各種轉換，進入雲端的營運管理。
 
-## <a name="actionable-best-practices"></a>可操作的最佳作法
+## <a name="actionable-best-practices"></a>可行的最佳做法
 
 新式作業管理解決方案會建立作業的多重雲端視圖。 透過下列最佳做法管理的資產可能會存在於雲端、現有資料中心，甚至是競爭雲端提供者中。 目前，此架構包含兩個最佳做法參考，以引導雲端中的作業管理成熟度：
 
@@ -42,6 +42,6 @@ ms.locfileid: "73565252"
 - **平臺作業：** 所有的 IT 環境都包含一組常用的平臺。 這些平臺可以包含資料存放區，例如 SQL Server 或 Azure HDInsight。 其他常見的平臺可以包含容器解決方案，例如 Azure Kubernetes Service （AKS）。 無論平臺為何，平臺作業成熟度都著重于根據一般平臺的部署、設定和使用方式，自訂作業。
 - **工作負載作業：** 在最高層級的營運成熟度中，雲端營運小組可以針對企業成功的關鍵工作負載調整作業。 針對這些高重要性的工作負載，可用的資料可協助自動化修復、調整大小，或根據其使用率來保護工作負載。
 
-如[設計審查架構（程式碼名稱：雲端設計原則）](https://docs.microsoft.com/azure/architecture/reliability)等其他指引，可以協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
+如[設計審查架構（程式碼名稱：雲端設計原則）](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview)等其他指引，可以協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
 
 雲端採用架構的這一節將會在上述每個主題上建立，以協助提升您組織內成熟的雲端作業。

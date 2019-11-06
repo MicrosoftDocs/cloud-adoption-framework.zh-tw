@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224304"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058639"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM 和適用於 MySQL 的 Azure 資料庫
 
@@ -34,7 +34,7 @@ IT 領導小組與商務合作夥伴密切合作，了解他們想要達成什�
 Contoso 雲端小組已針對此次移轉擬定好各項目標，以便決定最佳移轉方法：
 
 - 移轉之後，應用程式不管是在 Azure 或內部部署 VMware 環境中，都應具有相同的效能。 應用程式不管是在雲端中或在內部部署，都一樣重要。
-- Contoso 不想在這個應用程式上投注資源。 這對企業很重要，但以其目前的形式而言，Contoso 只想安全地移至雲端。
+- Contoso 不想要投資此應用程式。 這對企業很重要，但以其目前的形式而言，Contoso 只想安全地移至雲端。
 - Contoso 已完成幾次 Windows 應用程式移轉，所以想要了解如何在 Azure 中使用以 Linux 為基礎的基礎結構。
 - 將應用程式移到雲端之後，Contoso 想要將資料庫管理工作減到最少。
 
@@ -84,7 +84,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 ## <a name="prerequisites"></a>必要條件
 
-以下是 Contoso 在此案例中應該準備好的事項。
+以下是 Contoso 應該準備好的事項。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -92,7 +92,7 @@ Contoso 會按照下列方式完成移轉程序：
 --- | ---
 **Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
 **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定 Azure 基礎結構。<br/><br/> 深入了解 Site Recovery 具體的[網路](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)和[儲存體](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)需求。
-**內部部署伺服器** | 內部部署 vCenter 伺服器應執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。
+**內部部署伺服器** | 內部部署 vCenter 伺服器應該執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。
 **內部部署 VM** | [檢閱 Linux VM 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines)，這些機器支援透過 Site Recovery 移轉。<br/><br/> 確認支援的 [Linux 檔案和儲存系統](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage)。<br/><br/> VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)。
 
 <!-- markdownlint-enable MD033 -->
@@ -103,27 +103,27 @@ Contoso 會按照下列方式完成移轉程序：
 
 > [!div class="checklist"]
 >
-> - **步驟 1：針對 Site Recovery 準備 Azure。** 他們建立一個 Azure 儲存體帳戶來保存複寫的資料，並建立復原服務保存庫。
-> - **步驟 2：為內部部署 VMware 進行 Site Recovery 的準備工作。** 此外，準備帳戶以便探索 VM 和安裝代理程式，並且準備在容錯移轉後連線至 Azure VM。
-> - **步驟 3：佈建資料庫。** 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
-> - **步驟 4：複寫 VM。** 他們會設定 Site Recovery 的來源和目標環境、設定複寫原則，並開始將 VM 複寫至 Azure 儲存體。
-> - **步驟 5：遷移資料庫。** 他們會利用 MySQL 工具設定移轉。
-> - **步驟 6：使用 Site Recovery 遷移 VM。** 最後，他們會執行測試容錯移轉，確定一切都能正常運作，然後執行完整的容錯移轉，以便將 VM 遷移至 Azure。
+> - **步驟1：準備 Azure 以進行 Site Recovery。** 他們建立一個 Azure 儲存體帳戶來保存複寫的資料，並建立復原服務保存庫。
+> - **步驟2：準備內部部署 VMware 以進行 Site Recovery。** 此外，準備帳戶以便探索 VM 和安裝代理程式，並且準備在容錯移轉後連線至 Azure VM。
+> - **步驟3：布建資料庫。** 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
+> - **步驟4：複寫 Vm。** 他們會設定 Site Recovery 的來源和目標環境、設定複寫原則，並開始將 VM 複寫至 Azure 儲存體。
+> - **步驟5：遷移資料庫。** 他們會利用 MySQL 工具設定移轉。
+> - **步驟6：使用 Site Recovery 遷移 Vm。** 最後，他們會執行測試容錯移轉，確定一切都能正常運作，然後執行完整的容錯移轉，以便將 VM 遷移至 Azure。
 
-## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>步驟 1:為 Azure 進行 Site Recovery 服務的準備工作
+## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>步驟 1：針對 Site Recovery 服務準備 Azure
 
 Contoso 需要幾個可供 Site Recovery 使用的 Azure 元件：
 
 - 一個 VNet，容錯移轉的資源位於其中。 Contoso 已在 [Azure 基礎結構部署](./contoso-migration-infrastructure.md)期間建立 VNet
 - 新的 Azure 儲存體帳戶，用來保存複寫的資料。
-- Azure 中的復原服務保存庫。
+- Azure 中的一個復原服務保存庫。
 
 Contoso 管理員會建立儲存體帳戶和保存庫，如下所示：
 
 1. 他們會在美國東部 2 區域中，建立儲存體帳戶 (**contosovmsacc20180528**)。
 
     - 儲存體帳戶與復原服務保存庫必須位於相同的區域。
-    - 他們會使用一般用途的帳戶，並配備標準儲存體和 LRS 複寫。
+    - 他們使用一般用途的帳戶，並配備標準儲存體和 LRS 複寫。
 
     ![Site Recovery 儲存體](./media/contoso-migration-rehost-linux-vm-mysql/asr-storage.png)
 
@@ -135,9 +135,9 @@ Contoso 管理員會建立儲存體帳戶和保存庫，如下所示：
 
 [了解](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)如何為 Azure 進行 Site Recovery 的設定。
 
-## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>步驟 2：為內部部署 VMware 進行 Site Recovery 的準備工作
+## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>步驟 2：針對 Site Recovery 準備內部部署 VMware
 
-Contoso 管理員會按照下列方式，準備內部部署 VMware 基礎結構：
+Contoso 管理員會按照下列方式準備內部部署 VMware 基礎結構：
 
 - 他們會在 vCenter 伺服器上建立一個帳戶，用於自動執行 VM 探索。
 - 他們會建立一個帳戶，允許在要複寫的 VMware VM 上自動安裝行動服務。
@@ -150,10 +150,10 @@ Site Recovery 需要存取 VMware 伺服器才能：
 - 自動探索 VM。 需要至少一個唯讀帳戶。
 - 協調複寫、容錯移轉和容錯回復。 您需要可執行建立和移除磁碟以及開啟 VM 等作業的帳戶。
 
-Contoso 管理員會依照下列方式設定帳戶：
+Contoso 管理員依照下列方式設定帳戶：
 
 1. 他們在 vCenter 層級建立一個角色。
-2. 然後，他們會指派必要權限給角色。
+2. 然後他們會指派必要權限給角色。
 
 ### <a name="prepare-an-account-for-mobility-service-installation"></a>準備一個用來安裝行動服務的帳戶
 
@@ -174,7 +174,7 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 **需要其他協助？**
 
-- [了解](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)如何建立和指派自動探索所需的角色。
+- [深入了解](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)如何建立和指派自動探索所需的角色。
 - [深入了解](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)建立行動服務推送安裝的帳戶。
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>步驟 3：佈建適用於 MySQL 的 Azure 資料庫
@@ -238,7 +238,7 @@ Contoso 管理員會以下列方式來執行此動作：
     ![OVF 範本](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-wizard.png)
 
 3. 當他們第一次啟動 VM 時，VM 會在開機後進入 Windows Server 2016 安裝程序。 他們接受授權合約，並輸入系統管理員密碼。
-4. 安裝完成之後，他們以系統管理員身分登入 VM。 第一次登入時，依預設會執行 Azure Site Recovery 設定工具。
+4. 安裝完成之後，他們以系統管理員身分登入 VM。 第一次登入時，根據預設，Azure Site Recovery 設定工具會啟動。
 5. 在此工具中，他們指定一個名稱，用以在保存庫中註冊組態伺服器。
 6. 此工具會檢查 VM 是否可連線到 Azure。
 7. 連線建立後，他們登入 Azure 訂用帳戶。 認證必須能夠存取他們要在其中註冊組態伺服器的保存庫。
@@ -246,14 +246,14 @@ Contoso 管理員會以下列方式來執行此動作：
     ![註冊設定伺服器](./media/contoso-migration-rehost-linux-vm-mysql/config-server-register2.png)
 
 8. 此工具會執行一些設定工作，而後重新開機。
-9. 他們再次登入機器，組態伺服器管理精靈隨即自動啟動。
+9. 他們再次登入機器，組態伺服器管理精靈會自動啟動。
 10. 在此精靈中，他們選取要接收複寫流量的 NIC。 這項設定在完成之後即無法變更。
 11. 他們選取訂用帳戶、資源群組，以及在其中註冊組態伺服器的保存庫。
 
     ![保存庫](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
 
 12. 他們現在會下載並安裝 MySQL Server 和 VMware PowerCLI。
-13. 驗證之後，他們指定 vCenter 伺服器或 vSphere 主機的 FQDN 或 IP 位址。 他們會保留預設的連接埠，並且為 vCenter Server 指定易記名稱。
+13. 驗證之後，他們會指定 vCenter 伺服器或 vSphere 主機的 FQDN 或 IP 位址。 他們會保留預設的連接埠，並且為 vCenter Server 指定易記名稱。
 14. 他們會輸入為自動探索而建立的帳戶，以及 Site Recovery 將用於自動安裝行動服務的認證。
 
     ![vCenter](./media/contoso-migration-rehost-linux-vm-mysql/cswiz2.png)
@@ -265,7 +265,7 @@ Contoso 管理員會以下列方式來執行此動作：
 
 現在 Contoso 管理員會輸入目標複寫設定。
 
-1. 在 [準備基礎結構] > [目標] 中，他們選取目標設定。
+1. 在 [準備基礎結構] > [目標] 中，他們會選取目標設定。
 2. Site Recovery 會確認在指定的目標中有 Azure 儲存體帳戶和網路。
 
 ### <a name="create-a-replication-policy"></a>建立複寫原則
@@ -275,9 +275,9 @@ Contoso 管理員會以下列方式來執行此動作：
 1. 在 [準備基礎結構] > [複寫設定] > [複寫原則] >  [建立和關聯] 中，他們建立 **ContosoMigrationPolicy** 原則。
 
 2. 他們使用預設設定：
-    - **RPO 臨界值：** 預設值是 60 分鐘。 這個值可定義復原點的建立頻率。 連續複寫超過此限制時會產生警示。
-    - **復原點保留期：** 預設值為 24 小時。 此值會指定每個復原點的保留週期有多長。 複寫的 VM 可以還原至一個週期內的任何時間點。
-    - **應用程式一致的快照頻率：** 預設值是一小時。 此值會指定應用程式一致快照的建立頻率。
+    - **RPO 閾值：** 預設值為60分鐘。 這個值可定義復原點的建立頻率。 連續複寫超過此限制時會產生警示。
+    - **復原點保留期：** 預設值為24小時。 此值會指定每個復原點的保留週期有多長。 複寫的 VM 可以還原至一個週期內的任何時間點。
+    - **應用程式一致快照集頻率：** 預設值為一小時。 這個值會指定應用程式一致快照的建立頻率。
 
         ![建立複寫原則](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
@@ -295,7 +295,7 @@ Contoso 管理員會以下列方式來執行此動作：
 
 Contoso 管理員現在可以開始複寫 **OSTICKETWEB** VM。
 
-1. 在 [複寫應用程式] > [來源] > [+複寫] 中，他們選取來源設定。
+1. 在 [複寫應用程式] > [來源] > [+複寫] 中，他們會選取來源設定。
 2. 他們表示想要啟用虛擬機器，以及選取來源設定，包括 vCenter Server 和組態伺服器。
 
     ![啟用複寫](./media/contoso-migration-rehost-linux-vm-mysql/enable-replication-source.png)
@@ -368,9 +368,9 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 
 1. 他們會建立方案，並且在其中新增 **OSTICKETWEB**。
 
-    ![復原方案](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
+    ![復原計畫](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
 
-2. 他們根據此計畫執行容錯移轉。 他們會選取最新的復原點，然後指定 Site Recovery 應該在嘗試觸發容錯移轉之前，先關閉內部部署 VM。 他們可以在 [作業] 頁面上追蹤容錯移轉進度。
+2. 他們會對此方案執行容錯移轉。 他們會選取最新的復原點，然後指定 Site Recovery 應該在嘗試觸發容錯移轉之前，先關閉內部部署 VM。 他們可以到 [工作] 頁面追蹤容錯移轉進度。
 
     ![容錯移轉](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 
@@ -446,14 +446,14 @@ Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安�
 - 他們會考慮使用磁碟加密和 Azure KeyVault 來保護 VM 磁碟上的資料。
 - VM 與資料庫執行個體之間的通訊並未針對 SSL 進行設定。 他們必須這麼做，才能確保資料庫流量不會遭到駭客入侵。
 
-[深入了解](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) VM 的安全措施。
+如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
 
 ### <a name="bcdr"></a>BCDR
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
-- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
+- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
