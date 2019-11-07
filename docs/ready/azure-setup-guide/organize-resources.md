@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980183"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239811"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
@@ -40,7 +40,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 通常我們會在較高層級套用重要設定，而在較低層級套用專案特定需求。 例如，您可能想要確定組織的所有資源都部署到特定區域。 若要這樣做，請將原則套用至指定了允許位置的訂用帳戶。 當貴組織中其他使用者新增新的資源群組和資源時，會自動強制執行允許的位置。 請深入了解本指南的控管、安全性和合規性區段中所提供的原則。
 
-如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 如果您使用的訂用帳戶數量增加，則請考慮建立管理群組階層，以簡化訂用帳戶和資源的管理。 如需如何管理多個訂用帳戶的詳細資訊，請參閱[使用多個 Azure 訂用帳戶進行調整](../considerations/scaling-subscriptions.md)。
+如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 如果您使用的訂用帳戶數量增加，則請考慮建立管理群組階層，以簡化訂用帳戶和資源的管理。 如需如何管理多個訂用帳戶的詳細資訊，請參閱[使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)。
 
 在規劃合規性策略時，請與組織中擔任下列角色的人員合作：安全性和合規性、IT 管理、企業架構設計人員、網路、財務和採購。
 
@@ -79,7 +79,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 若要深入了解，請參閱：
 
 - [Azure 基本概念](../considerations/fundamental-concepts.md)
-- [使用多個 Azure 訂用帳戶進行調整](../considerations/scaling-subscriptions.md)
+- [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)
 - [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 - 在營運方面，則應確保名稱包含 IT 小組所需的資訊。 請使用可識別工作負載、應用程式、環境和重要性的詳細資料，以及可用來管理資源的其他實用資訊。
 
-不同的資源類型可能會有不同的長度限制和允許的字元，其中有許多會列在 Azure 最佳做法[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)一文中。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../considerations/naming-and-tagging.md)。
+不同的資源類型可能會有不同的長度限制和允許的字元，其中有許多會列在 Azure 最佳做法[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)一文中。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
 
 下表包含一些 Azure 資源範例類型的命名模式。
 
@@ -161,7 +161,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
-如需更多的標記建議和範例，請參閱雲端採用架構的[標記指引](../considerations/naming-and-tagging.md)。
+如需更多的標記建議和範例，請參閱雲端採用架構的[標記指引](../azure-best-practices/naming-and-tagging.md)。
 
 ::: zone target="docs"
 

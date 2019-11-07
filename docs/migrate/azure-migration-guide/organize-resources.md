@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e47e7e5f8528580d4aa268fd90e7aa838e5f70ba
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224061"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239945"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
@@ -151,7 +151,7 @@ Azure 中的資源組織結構有四個層級：管理群組、訂用帳戶、�
 
 每個資源或資源群組最多都可以有 15 個標記名稱/值組。 不過，此限制只適用於直接套用至資源群組或資源的標記。
 
-如需標記的進一步資訊，請參閱 [Azure 架構中心的 Azure 資源命名慣例](../../ready/considerations/naming-and-tagging.md#metadata-tags)
+如需標記的進一步資訊，請參閱 [Azure 架構中心的 Azure 資源命名慣例](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 

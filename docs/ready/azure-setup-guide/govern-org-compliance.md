@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c43cf0d12ba26ee0298e79f2f6b90cc5773b2df6
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ec4f0262c4d71752719285d225001a8fcf31d611
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379045"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73563420"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
@@ -92,7 +92,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 - [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)
 - [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準型藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

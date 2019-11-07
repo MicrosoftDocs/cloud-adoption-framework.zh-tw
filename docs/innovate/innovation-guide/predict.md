@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 507801a0332058917b585d335f859c1b41d48ce1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047629"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565526"
 ---
 ::: zone target="docs"
 
@@ -52,8 +52,8 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts)中，移至 [認知服務]  。
 2. 選取 [新增]  以在 Azure Marketplace 中尋找認知服務 API。
 3. 執行下列其中一個動作：
-   * 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace]  方塊中輸入此名稱。
-   * 如需認知服務 API 清單，請選取 [認知服務] 標頭旁的 [查看更多]  連結。
+   - 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace]  方塊中輸入此名稱。
+   - 如需認知服務 API 清單，請選取 [認知服務] 標頭旁的 [查看更多]  連結。
 
 ::: zone target="chromeless"
 

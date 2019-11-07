@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058540"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565559"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-使用 [Azure 開放資料集](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets)來增強您的分析，方法是將[假日](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays)、[天氣](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system)和[空間影像](https://azure.microsoft.com/services/open-datasets/catalog/hls)資料併入到模型中。
-
-後續步驟包括[將商業流程大眾化](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes)和[強化公民開發人員的能力](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers)。
 
 # <a name="insightstabinsights"></a>[深入解析](#tab/Insights)
 
