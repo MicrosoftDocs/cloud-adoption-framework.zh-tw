@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023457"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564737"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ ms.locfileid: "71023457"
 
 數位資產的測量會隨著所需的商務成果而不同。
 
-- **基礎結構移轉**。 當組織對內尋求成本、作業程序、靈活度的最佳化，或其作業的最佳化時，數位資產會著重在 VM、伺服器和工作負載上。
+- **基礎結構移轉：** 當組織對內尋求成本、作業程序、靈活度的最佳化，或其作業的最佳化時，數位資產會著重在 VM、伺服器和工作負載上。
 
-- **應用程式創新**。 若是客戶追求的轉型，著眼點會有些許不同。 其主要重心會放在支援客戶的應用程式、API 和交易資料上。 對於 VM 和網路設備通常較不注重。
+- **應用程式創新：** 若是客戶追求的轉型，著眼點會有些許不同。 其主要重心會放在支援客戶的應用程式、API 和交易資料上。 對於 VM 和網路設備通常較不注重。
 
-- **資料驅動創新**。 在現今的數位導向的市場中，若沒有堅實的資料基礎，就很難推出新的產品或服務。 在使用雲端的資料創新工作中，重點主要會放在整個組織的資料接收器上。
+- **資料驅動創新：** 在現今的數位導向的市場中，若沒有堅實的資料基礎，就很難推出新的產品或服務。 在使用雲端的資料創新工作中，重點主要會放在整個組織的資料接收器上。
 
 在組織了解最重要的轉型型態後，數位資產規劃就會變得更容易掌握。
 
