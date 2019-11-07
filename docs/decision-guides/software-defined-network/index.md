@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023741"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564779"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -32,7 +32,7 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 少於 1,000 個 VM 的小型單一區域部署不太可能大幅受到此轉折點影響。 相反地，包含超過 1,000 個 VM、多個業務部門，或多個地理區域市場的大量採用工作可能會明顯受到您 SDN 決策和這個關鍵轉折點影響。
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>選擇正確的虛擬網路架構
+## <a name="choose-the-right-virtual-networking-architectures"></a>選擇正確的虛擬網路架構
 
 本節將細述決策指南，以協助您選擇正確的虛擬網路架構。
 

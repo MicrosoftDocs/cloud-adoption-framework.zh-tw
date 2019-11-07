@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221758"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565935"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
@@ -35,7 +35,7 @@ ms.locfileid: "71221758"
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>開發安全性基準治理原則聲明
+## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
 下列六個步驟提供在開發安全性基準治理時所要考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論以及與組織內受影響的業務和 IT 和安全性小組討論，藉以建立管理安全性相關風險所需的原則和程序。
 

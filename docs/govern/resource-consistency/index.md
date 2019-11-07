@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222100"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565986"
 ---
 # <a name="resource-consistency-discipline-overview"></a>資源一致性專業領域的概觀
 
@@ -35,7 +35,7 @@ ms.locfileid: "71222100"
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>開發資源一致性治理原則陳述
+## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
 下列六個步驟提供在開發資源一致性治理時所要考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論，並與組織內受影響的業務和 IT 小組討論，藉以建立管理資源一致性風險所需的原則和程序。
 

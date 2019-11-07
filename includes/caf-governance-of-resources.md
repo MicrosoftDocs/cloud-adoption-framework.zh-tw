@@ -20,8 +20,8 @@ Azure 提供數個內建原則與角色定義，您可以指派給管理群組�
 由於支援治理 MVP 所需的原則，需要套用至所有目前的訂用帳戶，因此將使用根管理群組中建立的內建定義和自訂定義組合，來實作下列商務需求：
 
 1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這將需要[自訂原則定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。
-2. 需要在所有資源上使用下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可以使用「需要指定標籤」內建定義來處理。
-3. 需要資源的「應用程式」  標記應該符合相關資源群組的名稱。 這可以使用「需要標籤及其值」內建定義來處理。
+2. 需要在所有資源上使用下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可使用 `Require specified tag` 內建定義來處理。
+3. 要求資源的 `Application`標記應符合相關資源群組的名稱。 這可以使用「需要標籤及其值」內建定義來處理。
 
 如需定義自訂原則的詳細資訊，請參閱 [Azure 原則文件](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)。 如需自訂原則的指導方針與範例，請參閱 [Azure 原則範例網站](https://docs.microsoft.com/azure/governance/policy/samples)和相關聯的 [GitHub 存放庫](https://github.com/Azure/azure-policy)。
 

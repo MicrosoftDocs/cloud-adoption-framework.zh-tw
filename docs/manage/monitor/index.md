@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979874"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564926"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -34,7 +34,7 @@ ms.locfileid: "72979874"
 
 * Azure 監視平台針對其功能進行概述和比較。
 * 用於監視混合、私人和 Azure 原生工作負載的最佳解決方案。
-* 建議的監視方法，用於整體監視基礎結構和應用程式 (端對端)。 此方法包括可部署的解決方案，可將這些常見的工作負載遷移至 Azure。
+* 建議的端對端監視方法，用於監視基礎結構和應用程式。 此方法包括可部署的解決方案，可將這些常見的工作負載遷移至 Azure。
 
 本文不是使用或配置個別 Azure 服務和解決方案的操作指南，但的確會在適用或可用時引用這些來源。 閱讀本文後，您將了解如何遵循最佳做法和模式來讓工作負載成功運作。
 

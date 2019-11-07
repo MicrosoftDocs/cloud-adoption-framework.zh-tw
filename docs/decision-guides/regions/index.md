@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769412"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564818"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -29,7 +29,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
     1. [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
     1. 注意：[澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)有兩個區域雖由 Microsoft 管理，卻提供給澳大利亞政府及其客戶和承包商使用，因此會有和其他主權雲端類似的用戶端條件約束。
 
-## <a name="operating-in-multiple-geographic-regions"></a>在多個地理區域營運
+## <a name="operate-in-multiple-geographic-regions"></a>在多個地理區域營運
 
 對於在多個地理區域營運的企業，復原能力雖然重要，卻也會帶來更多複雜性。 這些複雜性會以四種主要形式表現：
 
@@ -44,17 +44,23 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 想要有健全的雲端部署，就需要有經過深思熟慮、已將 Azure 區域納入考量的網路。 在考慮過上述要作為部署目的地區域的特性之後，就必須部署網路。 雖然關於網路的詳盡討論不在本文涵蓋範圍內，但您必須考慮一些事項：
 
-1. Azure 區域會成對部署。 如果某個區域發生嚴重失敗，系統便會將同一地緣政治界限*內的另一個區域指定為其配對區域。 請考慮將部署到配對區域作為主要和次要復原策略。 *Azure 巴西明顯例外，其配對區域正好是美國中南部。 如需深入了解，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
-    1. Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
-    1. 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
-    1. 如果您不打算利用 GRS 來支援區域復原需求，則建議您「不要」  利用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
-    > [!WARNING]
-    > 請勿嘗試利用 Azure GRS 來備份或復原 VM。 相反地，請利用 [Azure 備份](https://azure.microsoft.com/services/backup)和 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) 以及[受控磁碟](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)來支援 IaaS 工作負載的復原。
-2. Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已進行最佳化，讓資料傳輸留在 Microsoft 骨幹上，並盡可能利用 [VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全球性部署的較大型組織可改為使用 [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)，以在各區域之間路由傳送流量，從而節省區域性輸出費用。
-3. Azure 資源群組是區域專屬的建構。 不過，讓資源群組內的資源跨越多個區域是很常見的事。 當您這麼做時，請務必考慮到在發生區域性失敗時，針對資源群組的控制平面作業將會在受影響的區域中失敗，但其他區域中的資源 (屬於該資源群組) 則會繼續運作。 這可能會同時影響到網路和資源群組的設計。
-4. Azure 內的許多 PaaS 服務支援[服務端點](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)或[私人連結](https://docs.microsoft.com/azure/private-link/private-link-overview)。 在考慮區域復原、移轉和治理時，這兩種解決方案都會大幅影響您的網路考量。
-5. 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 可讓您輕鬆地複寫到 N 個額外區域，就和 Cosmos DB 一樣。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中利用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
-6. 除了部署到多個區域以支援災害復原外，許多組織還會選擇以主動-主動模式進行部署，因此不需要容錯移轉功能。 這有額外的好處，那就是提供全球性負載平衡，並額外提升容錯和網路效能。 若要利用此模式，應用程式必須支援在多個區域中執行主動-主動模式。
+- Azure 區域會成對部署。 如果某個區域發生嚴重失敗，系統便會將同一地緣政治界限*內的另一個區域指定為其配對區域。 請考慮將部署到配對區域作為主要和次要復原策略。 *Azure 巴西明顯例外，其配對區域正好是美國中南部。 如需深入了解，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
+
+  - Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
+  - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
+  - 如果您不打算利用 GRS 來支援區域復原需求，則建議您「不要」  利用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
+  > [!WARNING]
+  > 請勿嘗試利用 Azure GRS 來備份或復原 VM。 相反地，請利用 [Azure 備份](https://azure.microsoft.com/services/backup)和 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) 以及 [Azure 受控磁碟](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)來支援 IaaS 工作負載的復原。
+
+- Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已進行最佳化，讓資料傳輸留在 Microsoft 骨幹上，並盡可能利用 [VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全球性部署的較大型組織可改為使用 [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)，以在各區域之間路由傳送流量，從而節省區域性輸出費用。
+
+- Azure 資源群組是區域專屬的建構。 不過，讓資源群組內的資源跨越多個區域是很常見的事。 當您這麼做時，請務必考慮到在發生區域性失敗時，針對資源群組的控制平面作業將會在受影響的區域中失敗，但其他區域中的資源 (屬於該資源群組) 則會繼續運作。 這可能會同時影響到網路和資源群組的設計。
+
+- Azure 內的許多 PaaS 服務支援[服務端點](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)或[私人連結](https://docs.microsoft.com/azure/private-link/private-link-overview)。 在考慮區域復原、移轉和治理時，這兩種解決方案都會大幅影響您的網路考量。
+
+- 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 可讓您輕鬆地複寫到 N 個額外區域，就和 Cosmos DB 一樣。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中利用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
+
+- 除了部署到多個區域以支援災害復原外，許多組織還會選擇以主動-主動模式進行部署，因此不需要容錯移轉功能。 這有額外的好處，那就是提供全球性負載平衡，並額外提升容錯和網路效能。 若要利用此模式，應用程式必須支援在多個區域中執行主動-主動模式。
 
 > [!WARNING]
 > Azure 區域是具有高可用性的建構，並且會對其中執行的服務套用 SLA。 不過，請絕對不要對任務關鍵性應用程式採用單一區域相依性。 請一律要對區域性失敗做好規劃，並實行復原和風險降低步驟。
@@ -70,7 +76,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 請讓移轉程序的變更彼此配合，以應付初始清查。
 
-## <a name="documenting-complexity"></a>記載複雜性
+## <a name="document-complexity"></a>記錄複雜度
 
 下表可協助記載得自上述步驟的結果：
 
@@ -99,7 +105,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 現有資料中心的位置會影響移轉策略。 幾個最常見的影響如下：
 
-**架構決策：** 目標區域/位置是在設計移轉策略時的首要步驟之一。 這通常會受到現有資產的位置所影響。 此外，是否有可用雲端服務以及這些服務的單位成本都可能會隨不同區域而異。 因此，了解資產現在和未來的位置將會影響架構決策，而且也會影響預算的估計。
+**架構決策：** 目標區域是在設計移轉策略時的首要步驟之一。 這通常會受到現有資產的位置所影響。 此外，是否有可用雲端服務以及這些服務的單位成本都可能會隨不同區域而異。 因此，了解資產現在和未來的位置將會影響架構決策，而且也會影響預算的估計。
 
 **資料中心相依性：** 根據上表的資料，全球各地的資料中心之間可能會互相依存。 許多以此規模類型進行營運的組織可能既未記載也未詳加了解這些相依性。 用來評估使用者設定檔的方法將有助於識別其中某些相依性。 不過，建議您在評估程序進行期間採取其他步驟來降低與此複雜性相關聯的風險。
 
@@ -114,7 +120,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 該小組一旦熟悉基準方法且整備也可配合之後，就必須考慮幾個資料驅動必要條件：
 
-- **一般探索：** 請完成上述的[記載複雜性](#documenting-complexity)資料表。
+- **一般探索：** 請完成上述的[記載複雜性](#document-complexity)資料表。
 - **對每個受影響的國家/地區執行使用者設定檔分析：** 請務必及早了解移轉程序中的一般終端使用者路由。 變更全球租用線路並將 ExpressRoute 等連線新增至雲端資料中心會讓網路功能延遲好幾個月。 請盡早在程序中解決這一點。
 - **初始數位資產合理化：** 每當移轉策略中增添了新的複雜性時，就應該完成初始的數位資產合理化作業。 如需協助，請參閱[數位資產合理化](../../digital-estate/index.md)的指引。
   - **其他數位資產需求：** 建立標記原則以識別會受到資料主權需求影響的工作負載。 所需的標記應該從數位資產合理化開始，並帶到遷移遷移後的資產。

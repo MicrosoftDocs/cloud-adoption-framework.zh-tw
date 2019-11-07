@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547577"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566245"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -62,7 +62,7 @@ ms.locfileid: "72547577"
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>雲端治理的漸進式方法
 
-## <a name="choosing-a-governance-guide"></a>選擇治理指南
+## <a name="choose-a-governance-guide"></a>選擇治理指南
 
 此指南示範如何實作治理 MVP。 從該處開始，每個指南都顯示了雲端治理小組如何與雲端採用小組合作，為其完成前置作業，以加速進行採用工作。 從基礎到後續改良和演進，雲端採用架構治理模型都會引導治理的應用。
 

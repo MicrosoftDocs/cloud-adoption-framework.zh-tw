@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238756"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564863"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -22,13 +22,13 @@ ms.locfileid: "73238756"
 
 ![規劃符合下列快速連結的記錄、報告和監視選項 (從最簡單到最複雜)](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-跳至：[規劃監視基礎結構](#planning-your-monitoring-infrastructure) | [雲端原生](#cloud-native) | [內部部署擴充](#on-premises-extension) | [閘道彙總](#gateway-aggregation) | [混合式監視 (內部部署)](#hybrid-monitoring-on-premises) | [混合式監視 (雲端式)](#hybrid-monitoring-cloud-based) | [多重雲端](#multicloud) | [深入了解](#learn-more)
+跳至：[規劃監視基礎結構](#plan-your-monitoring-infrastructure) | [雲端原生](#cloud-native) | [內部部署擴充](#on-premises-extension) | [閘道彙總](#gateway-aggregation) | [混合式監視 (內部部署)](#hybrid-monitoring-on-premises) | [混合式監視 (雲端式)](#hybrid-monitoring-cloud-based) | [多重雲端](#multicloud) | [深入了解](#learn-more)
 
 判斷雲端記錄與報告策略時，關鍵點主要是依據您的組織在作業流程上所做的現有投資，以及對多重雲端策略在某種程度上的支援需求。
 
 有多種方式可用於記錄和報告雲端活動。 雲端原生和集中式記錄是運用訂用帳戶設計和訂用帳戶數目的兩個常見的受控服務選項。
 
-## <a name="planning-your-monitoring-infrastructure"></a>規劃監視基礎結構
+## <a name="plan-your-monitoring-infrastructure"></a>規劃監視基礎結構
 
 規劃部署時，需考量記錄資料儲存位置，以及如何將雲端式報告和監視服務與現有的處理程序和工具整合。
 
@@ -47,7 +47,7 @@ ms.locfileid: "73238756"
 
 自訂 Azure 監視器式記錄解決方案可以依據較小型或實驗性部署中的每個訂用帳戶或工作負載進行實作，並以集中方式安排組織，以監控整個雲環境的記錄資料。
 
-**雲端原生假設事項**。 使用雲端原生記錄和報告系統時會假設以下事項：
+**雲端原生假設事項：** 使用雲端原生記錄和報告系統時會假設以下事項：
 
 - 您不需要將記錄資料從雲端工作負載整合到現有的內部部署系統中。
 - 您將不會使用雲端式報告系統監視內部部署系統。
@@ -87,7 +87,7 @@ ms.locfileid: "73238756"
 
 如果您已經投資並擁有取代難度高或取代代價高昂的內部部署監視系統，就可能需要將來自雲端工作負載的遙測資料整合到現有的內部部署監視解決方案。 在混合式內部部署監視系統中，內部部署遙測資料會繼續使用現有的內部部署監視系統。 雲端遙測資料則會直接傳送至內部部署監視系統，或者資料會傳送至 Azure 監視器，然後定期經過編譯並擷取到內部部署系統中。
 
-**內部部署混合式監視假設事項**。 使用內部部署記錄和報告系統以進行混合式監視時會假設以下事項：
+**內部部署混合式監視假設事項：** 使用內部部署記錄和報告系統以進行混合式監視時會假設以下事項：
 
 - 您需要使用現有的內部部署報告系統監視雲端工作負載。
 - 您需要維護記錄資料內部部署的擁有權。

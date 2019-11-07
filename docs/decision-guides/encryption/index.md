@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223893"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564885"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -103,7 +103,9 @@ PaaS 儲存體與資料庫資源通常會預設強制加密。 可以透過加�
 
 您的整體原則和合規性需求、所儲存資料的機密度，以及工作負載的效能需求，應該會決定哪些資產需要加密。
 
-**加密待用資料時的假設事項**。 加密待用資料時會假設以下事項：
+### <a name="assumptions-about-encrypting-data-at-rest"></a>加密待用資料時的假設事項
+
+加密待用資料時會假設以下事項：
 
 - 您儲存的資料並不是提供給公眾使用的資料。
 - 您的工作負載可以接受因磁碟加密而增加的延遲成本。

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979881"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565022"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -111,7 +111,7 @@ ms.locfileid: "72979881"
 
 ![管理雲端採用架構中的方法](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>建立平衡雲端組合
+## <a name="create-a-balanced-cloud-portfolio"></a>建立平衡的雲端組合
 
 如[業務配合](./considerations/business-alignment.md)一文所述，並非所有工作負載都具有任務關鍵性。 雲端組合內會有各種程度的營運管理需求。 業務配合工作可協助您掌握業務影響，並與業務協調管理成本，以確保您會有最適當的作業管理流程和工具。
 
