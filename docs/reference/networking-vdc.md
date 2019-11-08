@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566692"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753740"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>虛擬資料中心：網路觀點
 
@@ -87,7 +87,7 @@ Microsoft Azure 提供具有企業級功能和可靠性的超大規模資料庫�
 
 目錄服務是一種共用資訊基礎結構，用以尋找、管理和組織日常項目和網路資源。 這些資源可能包含磁碟區、資料夾、檔案、印表機、使用者、群組、裝置和其他物件。 目錄伺服器會將網路上的每個資源都視為物件。 資源的相關資訊會儲存為與該資源或物件建立關聯的屬性集合。
 
-所有 Microsoft Online 商務服務都依賴 Azure Active Directory (Azure AD) 來進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，它結合了核心目錄服務、進階身分識別管制及應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
+所有 Microsoft Online 商務服務都依賴 Azure Active Directory (Azure AD) 來進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，並結合了核心目錄服務、進階身分識別與應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
 
 不需要單一全域系統管理員，即可指派虛擬資料中心執行中的擁有權限。 相反地，每個特定部門、使用者群組或目錄服務中的服務，都可以擁有在虛擬資料中心執行中管理自己資源所需的許可權。 建構權限需要平衡。 權限太多可能會阻礙效能效率，而權限太少或鬆散可能會增加安全性風險。 Azure 角色型存取控制（RBAC）藉由針對虛擬資料中心執行中的資源提供更細緻的存取管理，協助解決此問題。
 
@@ -194,7 +194,7 @@ Azure 網狀架構會將基礎結構資源分配給租用戶工作負載，並�
 
 通常，在 IT 中，環境 (或層) 是部署和執行多個應用程式的系統。 大型企業使用開發環境（進行變更並加以測試）和生產環境（使用者使用的）。 這些環境之間通常都會分隔成數個預備環境，以允許分階段部署 (推出)、測試以及在發生問題時復原。 部署架構極大，但通常仍會遵循開始開發環境 (DEV) 和結束生產環境 (PROD) 的基本程序。
 
-這類多層式環境的通用架構包含用於開發和測試的 Azure DevOps，以及用於預備和生產環境的 UAT。 組織可以利用單一或多個 Azure AD 租用戶，來定義對這些環境的存取權和權限。 上圖顯示使用兩個不同 Azure AD 租用戶的情況：一個用於 Azure DevOps 和 UAT，另一個則專用於生產環境。
+這類多層式環境的通用架構包含用於開發和測試的 Azure DevOps，以及用於預備和生產環境的 UAT。 組織可以使用單一或多個 Azure AD 租使用者來定義這些環境的存取權和許可權。 上圖顯示使用兩個不同 Azure AD 租用戶的情況：一個用於 Azure DevOps 和 UAT，另一個則專用於生產環境。
 
 具有不同的 Azure AD 租用戶會強制執行環境之間的區隔。 相同的使用者群組 (例如中央 IT) 需要使用不同的 URI 憑證存取不同的 Azure AD 租用戶進行驗證，以修改專案的 Azure DevOps 或生產環境的角色或權限。 具有存取不同環境的不同使用者驗證可降低可能的中斷以及人為錯誤所導致的其他問題。
 
@@ -376,7 +376,7 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 由於是使用 DNS，因此流量管理員僅適用於 Azure 公用端點。 服務通常用來控制或將流量轉移到 Azure Vm，並在虛擬資料中心實作為狀況良好的實例中 Web Apps。 即使在整個 Azure 區域失敗的情況中，流量管理員仍可復原，而且可以根據數個準則來控制不同虛擬資料中心內服務端點的使用者流量分配。 例如，特定虛擬資料中心執行中的服務失敗，或選取具有最低網路延遲的虛擬資料中心執行。
 
-### <a name="summary"></a>摘要
+### <a name="summary"></a>總結
 
 虛擬資料中心是資料中心遷移的一種方法，可在 Azure 中建立可調整的架構，將雲端資源使用最大化、降低成本，並簡化系統管理。 虛擬資料中心是以中樞和輪輻網路拓撲為基礎，可在中樞內提供一般共用服務，並允許輪輻中的特定應用程式和工作負載。 虛擬資料中心也符合公司角色的結構，其中，中央 IT、DevOps 和營運和維護等不同部門在執行其特定角色時，會共同運作。 虛擬資料中心滿足增益和轉移遷移的需求，但也提供原生雲端部署的許多優點。
 
@@ -388,9 +388,9 @@ Azure 資料中心位在全球的許多區域。 選取多個 Azure 資料中心
 
 |網路功能|負載平衡|連線能力|
 |-|-|-|
-|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Azure 虛擬網路][VNet]</br>[網路安全性群組][network-security-groups]</br>[網路安全性群組記錄檔][nsg-log]</br>[使用者定義的路由][user-defined-routes]</br>[網路虛擬設備][NVA]</br>[公用 IP 位址][PIP]</br>[Azure DDoS][DDoS]</br>[Azure 防火牆][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer （L3）][ALB]</br>[應用程式閘道（L7）][AppGW]</br>[Web 應用程式防火牆]WAF</br>[Azure 流量管理員][traffic-manager]</br></br></br></br></br> |[VNet 對等互連][VNetPeering]</br>[虛擬私人網路][VPN]</br>[虛擬 WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|身分識別</br>|監控</br>|最佳作法</br>|
+|身分識別</br>|監視</br>|最佳做法</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[角色基底存取控制][RBAC]</br>[預設 Azure AD 角色][Roles]</br></br></br> |[網路監看員][NetWatch]</br>[Azure 監視器][Monitor]</br>[活動記錄][ActLog]</br>[診斷記錄][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[網路效能監視器][NPM]|[周邊網路最佳做法][DMZ]</br>[訂用帳戶管理][SubMgmt]</br>[資源群組管理][RGMgmt]</br>[Azure 訂用帳戶限制][limits] </br></br></br>|
 

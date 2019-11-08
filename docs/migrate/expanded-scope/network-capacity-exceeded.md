@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239966"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753488"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>資料需求在遷移工作期間超過網路容量
 
@@ -39,7 +39,7 @@ ms.locfileid: "73239966"
 
 如果一或多個工作負載的儲存需求超過網路容量，則 Azure 資料箱仍可用於進行離線資料傳輸。
 
-一般來說，Microsoft 的立場是除非網路無法使用，否則會建議使用網路傳輸方法。 這項建議是傳送速率的結果。 透過網路傳輸資料 (即使頻寬受限) 通常會比使用離線傳輸機制 (例如資料箱) 實體運送相同數量的資料更快。
+除非網路無法使用，否則網路傳輸是建議的方法。 即使頻寬受到限制，透過網路傳送資料的速度通常會比使用離線傳輸機制（如資料箱）實際傳送相同數量的資料更快。
 
 如果可以連線到 Azure，則應先進行分析再使用資料箱，特別是當工作負載的移轉具有時限的話。 只有在傳輸必要資料的時間超過使用資料箱填入、運送和還原資料的所需時間時，才建議使用資料箱。
 

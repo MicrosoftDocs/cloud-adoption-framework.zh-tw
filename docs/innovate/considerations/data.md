@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565712"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753029"
 ---
-# <a name="democratize-data"></a>將大眾化資料
+# <a name="democratize-data"></a>將資料大眾化
 
 在產業革命期間，煤力、石油和人力都是三個最具衍生性的資產。 這些資產內建的公司、移動的市場，最後改變了國家/地區。 在數位經濟中，有三個同樣重要的資產：資料、裝置和人為潛能。 每個資產都有絕佳的創新潛力。 針對現代化時代的任何創新工作，資料是新的石油。
 
-現今每一家公司都有隨身的資料，可以用來更有效地尋找及滿足客戶的需求。 可惜的是，將該資料進行挖掘以推動創新的程式，既耗費昂貴又耗時。 許多最有價值的解決方案可滿足客戶需求，因為適當的人員無法存取所需的資料。
+現今每一家公司都有隨身的資料，可讓您更有效地尋找及滿足客戶的需求。 可惜的是，將該資料進行挖掘以推動創新的程式，既耗費昂貴又耗時。 許多最有價值的解決方案可滿足客戶需求，因為適當的人員無法存取所需的資料。
 
 資料的 Democratization 是將這項資料帶入適當手中以推動創新的過程。 此程式可以採用數種形式，但它們通常包含內嵌或整合式原始資料、資料集中化、共用資料及保護資料的解決方案。 當這些方法成功時，公司周圍的專家就可以使用資料來測試假設。 在許多情況下，雲端採用小組可以只使用資料來建立，並快速解決現有[的](./build.md)客戶需求。
 
@@ -33,7 +33,7 @@ ms.locfileid: "73565712"
 
 當您[以客戶的理解方式建立](./build.md)時，所有程式都能提升客戶對技術解決方案的需求。 由於 democratizing 資料不例外，我們會從共用資料開始。 若要將大眾化資料，它必須包含與資料取用者共用資料的解決方案。 資料取用者可以是直接客戶或為客戶做出決策的 proxy。 核准的資料取用者可以分析、查閱和報告集中式資料，而不支援 IT 人員。
 
-許多成功的創新都是以最基本的可行產品（Mvp）啟動，以代表客戶提供手動、資料驅動的流程。 在此指引模型中，員工是資料取用者。 該員工會使用資料來協助客戶。 每次客戶參與手動支援時，就可以測試並驗證假設。 這種方法通常是一種符合成本效益的方法，可在您投入大量整合解決方案之前，先測試以客戶為焦點的假設。
+許多成功的創新已啟動為最基本的可行產品（MVP），可代表客戶提供手動、資料驅動的流程。 在此指引模型中，員工是資料取用者。 該員工會使用資料來協助客戶。 每次客戶參與手動支援時，就可以測試並驗證假設。 這種方法通常是一種符合成本效益的方法，可在您投入大量整合解決方案之前，先測試以客戶為焦點的假設。
 
 直接與資料取用者共用資料的主要工具組括自助式報告或內嵌在其他體驗中的資料，使用[Power BI](https://docs.microsoft.com/power-bi)之類的工具。
 
@@ -46,7 +46,7 @@ ms.locfileid: "73565712"
 
 資料控管是很廣泛的主題，可能需要它自己的專屬架構。 該程度的資料細微性超出[雲端採用架構](../../index.md)的範圍。 不過，有幾個層面的資料管理，您應該在客戶假設通過驗證後立即考慮。 例如：
 
-- **共用資料是否區分大小寫？** [資料應該在](../../govern/policy-compliance/data-classification.md)任何公用共用之前分類，以保護客戶和公司的興趣。
+- **共用資料是否區分大小寫？** [資料應](../../govern/policy-compliance/data-classification.md)在公開共用之前進行分類，以保護客戶和公司的興趣。
 - **如果資料很敏感，是否受到保護？** 機密資料的保護應為任何大眾化資料的需求。 著重于[保護資料解決方案](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions)的範例工作負載會提供幾個用於保護資料的參考。
 - **資料是否已編目？** 若要深入瞭解所共用的資料，將有助於進行長期的資料管理。 記錄資料的工具（例如 Azure 資料目錄）可以讓此程式在雲端中更容易進行。 有關資料和[資料來源之](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation)[批註](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate)的指引可協助加速此流程。
 
@@ -72,7 +72,7 @@ ms.locfileid: "73565712"
 
 **整合：** 位於現有資料存放區中的資料可以使用傳統資料移動技術，整合到集中式資料存放區。 這在牽涉到多重雲端資料存放區的案例中特別常見。 這些技術牽涉到從現有的資料存放區解壓縮資料，然後將其載入中央資料存放區。 在此程式中的某個時間點，通常會將資料轉換成更容易使用且與中央存放區相關。
 
-以雲端為基礎的工具已將這些技巧轉換成按使用量付費的工具，以降低進入資料收集和集中化的屏障。 資料移轉服務和 Data Factory 之類的工具是 Azure 中的兩個範例。 [Data factory 與 OLAP 資料存放區](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl)的參考架構是其中一個這類解決方案的範例。
+以雲端為基礎的工具已將這些技巧轉換成按使用量付費的工具，以降低進入資料收集和集中化的屏障。 Azure 資料庫移轉服務和 Azure Data Factory 之類的工具都是兩個範例。 [Data factory 與 OLAP 資料存放區](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl)的參考架構是其中一個這類解決方案的範例。
 
 內嵌 **：** 有些資料不在現有的資料存放區中。 當此暫時性資料是創新的主要來源時，您會想要考慮其他方法。 暫時性資料可以在各種現有的來源中找到，例如應用程式、Api、資料流程、IoT 裝置、區塊鏈、應用程式快取、媒體內容，甚至一般檔案。
 

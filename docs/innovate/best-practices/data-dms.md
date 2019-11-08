@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0b717222c7e5f1906330eb5b181d675f1247bb37
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565854"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752041"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "73565854"
 
 ## <a name="considerations-and-guidance"></a>考慮和指引
 
-當您使用資料庫移轉服務來進行資料的遷移和現代化時，請務必瞭解：
+當您使用 Azure 資料庫移轉服務來進行資料的遷移和現代化時，請務必瞭解：
 
 - 目前用來裝載資料來源的平臺。
 - 目前的版本。
@@ -47,7 +47,7 @@ ms.locfileid: "73565854"
 
 我們建議您決定可接受的商務停機時間，並測試離線遷移。 您會這麼做，以檢查還原時間是否符合可接受的停機時間。 如果無法接受還原時間，請執行線上遷移。
 
-|來源  |目標  |工具  |遷移類型  |指導方針  |
+|來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Azure SQL Database|Database Migration Service|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|

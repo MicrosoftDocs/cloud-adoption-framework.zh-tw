@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566237"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753077"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -47,7 +47,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 **商務取得成本：** 取得新業務的預估將在五年內獲利。 由於報酬率偏低，因此，董事會希望盡可能地控制收購成本。 這會產生使成本控制和技術整合彼此衝突的風險。
 
-此業務風險可能會延伸出少數技術風險：
+此業務風險會延伸成少數技術風險：
 
 - 雲端遷移可能會產生額外的購置成本。
 - 新環境可能不會受到適當的控管，而可能導致原則違規。
@@ -85,4 +85,4 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 ## <a name="conclusion"></a>結論
 
-這一系列的文章說明了治理最佳作法的累加式開發，與此虛構公司的體驗一致。 藉由從小規模開始 (但使用正確的基礎)，公司可以快速移動，而且還可以在對的時間套用對的治理方法。 MVP 本身不會保護客戶。 相反地，它會建立管理風險和新增保護的基礎。 從該處，已套用治理層來補救有形風險。 此處提供的確切旅程不會 100% 符合讀者的體驗。 但是，可以用此模式來累加治理方式。 建議讀者將這些最佳做法塑造成符合其獨特限制和治理需求的樣子。
+這一系列的文章說明了治理最佳作法的累加式開發，與此虛構公司的體驗一致。 藉由從小規模開始 (但使用正確的基礎)，公司可以快速移動，而且還可以在對的時間套用對的治理方法。 MVP 本身不會保護客戶。 相反地，它會建立管理風險和新增保護的基礎。 從該處，已套用治理層來補救有形風險。 此處提供的確切旅程不會 100% 符合讀者的體驗。 但是，可以用此模式來累加治理方式。 您應塑造這些最佳作法，以符合您自己獨特的條件約束和治理需求。

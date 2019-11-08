@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656652"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753764"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -195,13 +195,13 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 > [!TIP]
 >Azure 資訊安全中心是一種功能強大的工具，可讓您用來偵測威脅及保護企業的新功能，進行定期改良。 強烈建議一律啟用 Azure 資訊安全中心。
 
-### <a name="azure-resource-locks"></a>Azure 資源鎖定
+### <a name="locks-for-azure-resources"></a>Azure 資源的鎖定
 
-當您的組織將核心服務新增至訂用帳戶時，避免業務中斷變得越來越重要。 常見的其中一種中斷狀況是，針對 Azure 訂用帳戶執行的指令碼及工具誤刪資源，而造成意外結果。 [資源鎖定](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)可讓您限制對珍貴資源執行的作業，而修改或刪除這類資源會造成嚴重影響。 鎖定會套用至訂用帳戶、資源群組或甚至是個別的資源。 常見的使用案例是將鎖定套用至基礎資源，例如虛擬網路、閘道、網路安全性群組和金鑰儲存體帳戶。
+當您的組織將核心服務新增至訂用帳戶時，避免業務中斷變得越來越重要。 當 Azure 訂用帳戶中執行的腳本或工具不小心刪除資源時，就會發生一項常見的中斷。 [鎖定](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)會限制高價值資源的作業，而修改或刪除它們會有顯著的影響。 您可以將鎖定套用至訂用帳戶、資源群組或個別資源。 將鎖定套用至基礎資源，例如虛擬網路、閘道、網路安全性群組和金鑰儲存體帳戶。
 
-### <a name="secure-devops-toolkit"></a>安全的 DevOps 工具組
+### <a name="secure-devops-kit-for-azure"></a>適用于 Azure 的安全 DevOps 套件
 
-適用于 Azure 的 Secure DevOps 套件（AzSK）是一組由 Microsoft 自己的 IT 小組原先建立的腳本、工具、延伸模組和自動化功能，並透過[GitHub 以開放原始碼的形式發行](https://github.com/azsk/DevOpsKit-docs)。 AzSK 已經考慮到端對端的 Azure 訂用帳戶和資源安全性需求，適用于使用廣泛自動化的小組，並將安全性順暢地整合到原生 DevOps 工作流程中，協助完成這六個焦點領域的安全 DevOps：
+適用于 Azure 的 Secure DevOps 套件（AzSK）是一組由 Microsoft 自己的 IT 小組原先建立的腳本、工具、延伸模組和自動化功能，並透過[GitHub 以開放原始碼的形式發行](https://github.com/azsk/devopskit-docs)。 AzSK 已經考慮到端對端的 Azure 訂用帳戶和資源安全性需求，適用于使用廣泛自動化的小組，並將安全性順暢地整合到原生 DevOps 工作流程中，協助完成這六個焦點領域的安全 DevOps：
 
 - 保護訂用帳戶
 - 啟用安全開發
@@ -210,9 +210,9 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 - 警示和監視
 - 雲端風險管理
 
-![Azure DevOps 工具組](../_images/reference/secure-devops-kit.png)
+![適用于 Azure 的 Secure DevOps 套件總覽圖表](../_images/reference/secure-devops-kit.png)
 
-AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計畫的重要部分，並將其併入您的 scaffold 中，對於支援組織的風險管理目標而言至關重要。
+AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計畫的重要部分，並將其併入您的 scaffold 中，對於支援組織的風險管理目標而言非常重要。
 
 ### <a name="azure-update-management"></a>Azure 更新管理
 

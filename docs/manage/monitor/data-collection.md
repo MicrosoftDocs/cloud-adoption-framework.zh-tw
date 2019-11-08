@@ -1,5 +1,5 @@
 ---
-title: 雲端監視指南–收集正確的資料
+title: 雲端監視指南：收集正確的資料
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564936"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751523"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "73564936"
 - 使用 [儀表板] 向下切入功能，或支援自訂視圖來精簡。
 - 如果您需要詳細資訊記錄，計量應已協助將目標設為搜尋準則。 如果計量沒有説明，請在下一個事件中加以改善。
 
-採用這組指導原則有助於提供近乎即時的深入解析，以及更妥善管理您的服務。
+採用這組指導原則有助於提供近乎即時的深入解析，並更妥善管理您的服務。
 
 ## <a name="next-steps"></a>後續步驟
 

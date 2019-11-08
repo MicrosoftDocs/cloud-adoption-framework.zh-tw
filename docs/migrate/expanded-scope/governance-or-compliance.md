@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566918"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753547"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -47,7 +47,7 @@ ms.locfileid: "73566918"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評定程序進行期間的建議動作
 
-治理和合規性評估需求是極度專屬於客戶的，因此無法針對評估期間所採取的實際步驟提供一般性的指引。 不過，建議您在程序中納入工作和時間配置，以「配合合規性/治理需求」。 若要進一步了解這些需求，請參閱下列連結：
+治理和合規性評估需求是極度專屬於客戶的，因此無法針對評估期間所採取的實際步驟提供一般性的指引。 不過，此程式應該包含「符合規範/治理需求的一致」的工作和時間配置。 若要進一步了解這些需求，請參閱下列連結：
 
 若要深入了解治理，請檢閱[雲端治理的五個專業領域](../../govern/governance-disciplines.md)。 雲端採用架構的這個區段也包含範本，範本內會記載這五個區段各自的原則、指引和需求：
 
@@ -61,15 +61,15 @@ ms.locfileid: "73566918"
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
 
-在最佳化和升階程序進行期間，建議雲端治理小組花點時間來測試及驗證其策略是否遵循治理和合規性標準。 此外，您也可以在這個步驟插入程序來讓雲端治理小組擷取範本，以便為未來的專案提供額外的[部署加速](../../govern/deployment-acceleration/index.md)機制。
+在優化和升級過程中，雲端治理小組應該投入時間來測試及驗證遵循治理和合規性標準。 此外，您也可以在這個步驟插入程序來讓雲端治理小組擷取範本，以便為未來的專案提供額外的[部署加速](../../govern/deployment-acceleration/index.md)機制。
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最佳化和升階程序期間的建議動作
 
-在此程序進行期間，建議於專案計劃內納入時間配置，以供雲端治理小組對規劃要進行生產升階的每個工作負載執行合規性檢閱。
+在此過程中，專案計劃應該包含雲端治理小組的時間配置，以針對規劃生產升級的每個工作負載執行合規性檢查。
 
 ## <a name="next-steps"></a>後續步驟
 
-作為[擴充的範圍檢查清單](./index.md)的最後一個項目，建議讀者回到檢查清單並重新評估移轉工作的任何其他範圍需求。
+作為[擴充範圍檢查清單](./index.md)的最後一個專案，請返回檢查清單，然後重新評估遷移工作的任何其他範圍需求。
 
 > [!div class="nextstepaction"]
 > [擴充的範圍檢查清單](./index.md)

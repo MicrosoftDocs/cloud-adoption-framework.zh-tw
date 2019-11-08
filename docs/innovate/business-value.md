@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565758"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752013"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>培養創新商業價值的共識
 
@@ -75,5 +75,6 @@ ms.locfileid: "73565758"
 ## <a name="next-steps"></a>後續步驟
 
 在您調整商務價值主張並傳達之後，您就可以開始建立您的解決方案。
+
 > [!div class="nextstepaction"]
 > [回到創新練習以進行後續步驟](./index.md)

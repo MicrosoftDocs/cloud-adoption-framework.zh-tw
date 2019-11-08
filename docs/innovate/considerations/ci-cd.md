@@ -8,20 +8,20 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565683"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752097"
 ---
-# <a name="empower-adoption"></a>加強採用
+# <a name="empower-adoption"></a>實現採用
 
 創新的最終測試是客戶對您家發明的反應。 假設是否證明真了？ 客戶是否使用解決方案？ 它是否會調整以符合所需百分比使用者的需求？ 最重要的是，他們是否會繼續回頭？ 在最基本的可行產品（MVP）解決方案部署完成之前，都不會詢問這些問題。 在本文中，我們將著重于採用的專業領域。
 
 ## <a name="reduce-friction-that-affects-adoption"></a>減少影響採用的摩擦
 
-有幾個重要的難題，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，下列情況似乎非常熟悉。 本文的目標是要為雲端採用小組建立一個起點，這將會帶來創新和意見反應迴圈。 長期來說，此起點可以促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
+有幾個重要的難題，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，將會很熟悉下列各項。 本文為雲端採用小組建立燃料創新和意見反應迴圈的起點。 在未來，此起點可能會促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
 
 如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
 
@@ -69,7 +69,7 @@ Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipeli
 
 任何解決方案中的瑕疵都可能會建立誤報或誤否定。 非預期的錯誤可能會輕易地導致使用者採用計量的解釋。 他們也可以從不正確表示假設測試的客戶產生負面意見反應。
 
-在 MVP 解決方案的早期反復專案中，預期會發生瑕疵;早期採用者甚至可能會發現它們可愛。 在早期版本中，接受測試通常不存在。 不過，建立的其中一個層面會考慮到需要的驗證和假設。 兩者都可以在程式碼層級透過單元測試完成，並在部署前手動接受測試。 這兩種方法一起提供一些可靠性來進行測試。 長期來說，您應該努力自動化一系列定義完善的組建、單元和接受度測試。 這些會確保與假設和所產生解決方案更細微的微調相關的可靠計量。
+在 MVP 解決方案的早期反復專案中，預期會發生瑕疵;早期採用者甚至可能會發現它們可愛。 在早期版本中，接受測試通常不存在。 不過，建立的其中一個層面會考慮到需要的驗證和假設。 兩者都可以在程式碼層級透過單元測試完成，並在部署前手動接受測試。 這兩種方法一起提供一些可靠性來進行測試。 您應該努力自動化一系列定義完善的組建、單元和接受度測試。 這些會確保與假設和所產生解決方案更細微的微調相關的可靠計量。
 
 [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops)功能提供在手動或自動化測試執行期間開發和操作測試計劃的工具。
 

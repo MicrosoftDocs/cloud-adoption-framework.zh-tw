@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565780"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752075"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -45,7 +45,7 @@ ms.locfileid: "73565780"
 
 智慧型體驗結合現代化 web 應用程式的速度和規模，以及認知服務和 bot 的智慧。 這兩種技術都可以單獨滿足您的客戶需求。 當聰明地結合時，它們會擴大可透過數位體驗達成的需求範圍，同時協助包含開發成本。
 
-### <a name="modern-web-apps"></a>新式 web 應用程式
+### <a name="modern-web-apps"></a>現代化 Web 應用程式
 
 當需要應用程式或經驗以滿足客戶需求時，新式 web 應用程式可能是最快的方式。 新式 web 體驗可以快速地與內部或外部客戶互動，並允許在解決方案上快速反覆運算。
 

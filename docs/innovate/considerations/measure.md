@@ -8,14 +8,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c050e34feecfe26431c7105eef46d000fbb32cf8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565610"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752120"
 ---
-# <a name="measure-for-customer-impact"></a>對客戶影響的測量
+# <a name="measure-for-customer-impact"></a>測量客戶影響
 
 有數種方式可測量客戶的影響。 這篇文章將協助您定義計量，以驗證因[客戶理解](./build.md)而產生的假設。
 
@@ -35,7 +35,7 @@ ms.locfileid: "73565610"
 
 ### <a name="customer-flow-and-learning-metrics"></a>客戶流程和學習計量
 
-如果 MVP 解決方案驗證以客戶為焦點的假設，解決方案將會驅動客戶行為中的一些變更。 所有客戶世代的行為變更都應該改善商務結果。 請記住，變更客戶行為通常是一個多步驟的流程。 由於每個步驟都提供測量影響的機會，因此採用小組可以持續學習，並建立更好的解決方案。
+如果 MVP 解決方案驗證以客戶為焦點的假設，解決方案將會驅動客戶行為中的一些變更。 所有客戶世代的行為變更都應該改善商務結果。 請記住，變更客戶行為通常是多步驟的程式。 由於每個步驟都提供測量影響的機會，因此採用小組可以持續學習，並建立更好的解決方案。
 
 若要瞭解客戶行為的變更，首先要從 MVP 解決方案對應您希望看到的流程。
 

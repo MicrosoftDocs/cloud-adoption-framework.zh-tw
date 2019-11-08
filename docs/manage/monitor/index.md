@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564926"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752789"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
-雲端代表了企業採購以及使用技術資源方式的根本性轉變。 在過去，企業要承擔從基礎結構到軟體等所有技術層級的擁有權和責任。 現在，雲端為企業提供了視需要佈建和取用資源的潛力。
+雲端徹底改變企業採購和使用技術資源的方式。 在過去，企業要承擔從基礎結構到軟體等所有技術層級的擁有權和責任。 現在，雲端為企業提供了視需要佈建和取用資源的潛力。
 
 雖然雲端對於設計選擇提供幾乎無限的彈性，但企業仍在尋找經過實證且一致的方法來採用雲端技術。 每個企業對於雲端採用皆有不同的目標與進度，因此幾乎不可能使用一體適用的採用方法。
 

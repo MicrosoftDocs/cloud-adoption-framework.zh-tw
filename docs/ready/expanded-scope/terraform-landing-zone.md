@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561694"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753746"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
@@ -33,7 +33,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 ![使用 Terraform 的基礎登陸區域](../../_images/ready/foundations-terraform-landingzone.png)
 
-## <a name="capabilities"></a>功能
+## <a name="capabilities"></a>容量
 
 已部署的元件及其用途包括下列各項：
 
@@ -77,21 +77,21 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md) |
 | 命名標準 | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md) |
 | 成本管理 | N/A | [追蹤成本](../azure-best-practices/track-costs.md) |
-| 計算 | N/A | [計算選項](../considerations/compute-options.md) |
+| 運算 | N/A | [計算選項](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>標記標準
 
 所有資源和資源群組都必須有下列一組最小標記：
 
-| 標籤名稱 | 說明 | 金鑰 | 範例值 |
+| 標籤名稱 | 描述 | 索引鍵 | 範例值 |
 |--|--|--|--|
 | 業務單位 | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | BusinessUnit | 財務，行銷，{產品名稱}，CORP，共用 |
 | 成本中心 | 與此資源相關聯的會計成本中心。| CostCenter | Number |
 | 災害復原 | 應用程式、工作負載或服務的業務關鍵性。 | 災難 | 啟用 DR、未啟用 DR |
-| Environment | 應用程式、工作負載或服務的部署環境。 |  Env | 生產、開發、QA、階段、測試、訓練 |
+| 環境 | 應用程式、工作負載或服務的部署環境。 |  Env | 生產、開發、QA、階段、測試、訓練 |
 | 擁有者名稱 | 應用程式、工作負載或服務的擁有者。| 擁有者 | 電子郵件 |
 | 部署類型 | 定義維護資源的方式。 | deploymentType | Manual、Terraform |
-| 版本 | 已部署藍圖的版本。 | 版本 | v 0。1 |
+| 版本 | 已部署藍圖的版本。 | version | v 0。1 |
 | 應用程式名稱 | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。 | ApplicationName | 「應用程式名稱」 |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>自訂和部署您的第一個登陸區域
@@ -200,7 +200,7 @@ security_center = {
 - 將其他模組新增至藍圖。
 - 將其他登陸區域分層在其上。
 
-分層登陸區域是一個好方法，用來將系統分離、為您所使用的每個元件設定版本，以及為您的基礎結構即程式碼部署提供快速的創新和穩定性。
+分層登陸區域是一個很好的作法，用來分離系統、為您所使用的每個元件設定版本，以及為您的基礎結構做為程式碼部署提供快速的創新和穩定性。
 
 未來的參考架構將會針對中樞與輪輻拓撲示範此概念。
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058670"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753055"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
@@ -71,7 +71,7 @@ IT 和業務領導階層對於 IT、應用程式開發和 BI 小組的早期實�
 
 1. 所有已部署的資產都必須依據嚴重性和資料分類來分類。 分類會由雲端治理小組和應用程式擁有者進行檢查，然後再部署到雲端。
 2. 儲存或存取受保護資料的應用程式會以不同的方式進行管理。 至少應該劃分這些資料，以避免非預期地存取受保護的資料。
-3. 所有受保護的資料必須在待用時加密。 雖然這是所有 Azure 儲存體帳戶的預設值，但可能需要額外的加密策略，包括儲存體帳戶內的資料加密、Vm 的加密，以及使用 VM 中的 SQL 時的資料庫層級加密（TDE 和資料行）加密）。
+3. 所有受保護的資料必須在待用時加密。 雖然這是所有 Azure 儲存體帳戶的預設值，但可能需要額外的加密策略，包括儲存體帳戶內的資料加密、Vm 的加密，以及在 VM 中使用 SQL 時的資料庫層級加密（TDE 和資料行加密）).
 4. 在包含受保護資料的任何區段中提高權限應該是例外狀況。 任何這類例外狀況都會與雲端治理小組一起記錄，並定期進行審核。
 5. 包含受保護資料的網路子網路必須與其他任何子網路隔離。 受保護資料子網路之間的網路流量將定期稽核。
 6. 所有包含受保護資料的子網路都無法透過公用網際網路或跨資料中心直接存取。 這些子網路的存取必須透過中繼子網路進行路由。 對那些子網路的所有存取都必須經過防火牆解決方案，該解決方案可以執行封包掃描和封鎖功能。

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547246"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751278"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中進行雲端移轉
 
@@ -44,7 +44,7 @@ ms.locfileid: "72547246"
 
 對於想要完全遵循本指南的讀者，此內容將有助於開發強大的雲端移轉策略。 本指南會引導讀者了解此類策略的理論和實作。
 
-第一個步驟是建議讀者透過 [Azure 移轉指南](./azure-migration-guide/index.md)來瞭解在常見使用案例中移轉所需的一組標準工具和方法。 之後，可以透過[複雜的移轉案例](./expanded-scope/index.md)、[移轉最佳做法](./azure-best-practices/index.md)和[移轉考量](./migration-considerations/index.md)，擴充基準指引以符合讀者的需求。
+第一個步驟是逐步執行[Azure 遷移指南](./azure-migration-guide/index.md)，以瞭解在常見使用案例中進行遷移所需的一組標準工具和方法。 之後，可以透過[複雜的移轉案例](./expanded-scope/index.md)、[移轉最佳做法](./azure-best-practices/index.md)和[移轉考量](./migration-considerations/index.md)，擴充基準指引以符合讀者的需求。
 
 > [!div class="nextstepaction"]
 > [Azure 移轉指南](./azure-migration-guide/index.md)

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565713"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752003"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 
@@ -45,7 +45,7 @@ ms.locfileid: "73565713"
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>家發明數位經濟的挑戰
 
-現今的家發明挑戰並不相同。 雲端技術的無限潛能也會產生更多的實作為選項，以及如何運用這些可能的更深入考慮。
+現今的家發明挑戰並不相同。 雲端技術的無限潛能也會產生更多的實作為選項，以及如何使用這些可能的更深入考慮。
 
 「創新」方法會使用下列創新專業領域，協助將您的實施決策與您的家發明和採用目標保持一致：
 

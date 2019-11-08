@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565657"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752077"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 
@@ -48,14 +48,14 @@ ms.locfileid: "73565657"
 
 Azure App 服務是這種方法的絕佳範例。 在早期反復專案期間， [Azure App 服務的 web 應用程式功能](https://docs.microsoft.com/azure/app-service/overview)可以用來測試假設。 隨著假設變得更複雜， [Azure App 服務的行動應用程式功能](https://docs.microsoft.com/azure/app-service-mobile)可以擴充 web 應用程式，以在各種行動平臺上執行。
 
-## <a name="mixed-reality"></a>混合現實
+## <a name="mixed-reality"></a>混合實境
 
 Mixed reality 解決方案代表環境經驗的下一個成熟層級。 這種方法會擴大或複寫客戶的環境，它會建立現實的延伸，讓客戶在內操作。
 
 > [!IMPORTANT]
 > 如果虛擬實境（VR）裝置是必要的，而且還*不是客戶立即面臨或自然行為的一部分*，則增強或虛擬實境更是替代體驗，而不是環境經驗。
 
-遠端工作力之間的混合現實體驗日益普遍。 在需要共同作業或專長技能的產業中，其使用方式在當地市場中的成長速度更快。 針對遠端人力小組需要複雜產品的集中式實作為支援的情況，特別是針對增強式現實的溫床基礎。 在這些案例中，中央支援小組和遠端員工可能會利用增強的事實來處理、疑難排解和安裝產品。
+遠端工作力之間的混合現實體驗日益普遍。 在需要共同作業或專長技能的產業中，其使用方式在當地市場中的成長速度更快。 針對遠端人力小組需要複雜產品的集中式實作為支援的情況，特別是針對增強式現實的溫床基礎。 在這些案例中，中央支援小組和遠端員工可能會使用增強的事實來處理、疑難排解和安裝產品。
 
 例如，請考慮空間錨點的大小寫。 空間錨點可讓您使用物件來建立混合現實體驗，以在一段時間後跨裝置保存其各自的位置。 透過空間錨點，可以捕捉、記錄和保存特定的行為，藉此在使用者下一次在該增強環境中運作時提供環境體驗。 [Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/overview)是將此邏輯移至雲端的服務，可讓您跨裝置或甚至是跨解決方案共用體驗。
 
@@ -73,7 +73,7 @@ Azure 中的整合現實範例包括：
 
 您可以使用上述三種工具，從自然的環境指標和客戶的需求來收集資料。 您的解決方案可以從該處回應這些資料輸入，以解決需求，有時客戶甚至會知道該需求的觸發程式是否已發生。
 
-## <a name="adjusted-reality"></a>已調整現實
+## <a name="adjusted-reality"></a>已調整的實境
 
 環境經驗的最高形式是已調整的事實，通常稱為「*環境智慧*」。 已調整的事實是使用您的解決方案中的資訊來變更客戶的現實，而不需要他們直接與應用程式互動的方法。 在這種方法中，您最初建立以證明假設的應用程式可能不再相關。 相反地，環境中的裝置會協助 lambert 輸入和輸出，以符合客戶的需求。
 

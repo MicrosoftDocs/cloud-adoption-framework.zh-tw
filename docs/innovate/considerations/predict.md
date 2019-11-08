@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565578"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752979"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -46,9 +46,9 @@ ms.locfileid: "73565578"
 
 您可以使用各種不同的資料來源來提供預測功能：
 
-## <a name="insights"></a>深入解析
+## <a name="insights"></a>深入資訊
 
-主題專家會利用客戶需求和行為的相關資料，從原始資料的研究中開發基本的商業見解。 這些深入解析可以找出所需客戶行為的出現次數（或者，或者不想要的結果）。 在預測的反復專案中，這些深入解析有助於識別可能會產生正面結果的可能相互關聯。 如需有關啟用主題專家來開發見解的指引，請參閱[Democratizing data](./data.md)。
+主題專家會使用客戶需求和行為的相關資料，從原始資料的研究中開發基本的商業見解。 這些深入解析可以找出所需客戶行為的出現次數（或者，或者不想要的結果）。 在預測的反復專案中，這些深入解析有助於識別可能會產生正面結果的可能相互關聯。 如需有關啟用主題專家來開發見解的指引，請參閱[Democratizing data](./data.md)。
 
 ## <a name="patterns"></a>模式
 
@@ -70,7 +70,7 @@ ms.locfileid: "73565578"
 
 [設定 HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters)叢集討論在 Azure HDInsight 上公開針對 ML 服務所開發之預測的進程。
 
-## <a name="interactions"></a>互動
+## <a name="interactions"></a>互動次數
 
 透過 API 提供預測之後，您就可以使用它來影響客戶的行為。 這項影響會採用互動的形式。 與機器學習演算法的互動會發生在您的其他數位或環境體驗內。 透過應用程式或體驗收集資料時，會透過機器學習演算法來執行。 當演算法預測結果時，該預測可以透過現有的體驗與客戶共用。
 

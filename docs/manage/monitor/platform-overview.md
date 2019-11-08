@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564963"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751683"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>雲端監視指南：監視平臺總覽
 
@@ -26,7 +26,7 @@ Microsoft 提供兩種產品的各種監視功能： System Center Operations Ma
 
 ## <a name="the-story-of-system-center-operations-manager"></a>System Center Operations Manager 的故事
 
-在2000中，我們輸入了具有 Microsoft Operations Manager （MOM）2000的 [operations management] 欄位。 在2007中，我們引進了重新設計的產品版本，名為 System Center Operations Manager。 它除了簡單監視 Windows 伺服器之外，還會集中在強大的端對端服務和應用程式監視，包括不同的平臺、網路裝置，以及其他應用程式或服務相依性。 它是一種專為內部部署環境所建立的企業級監視平臺，與業界 IBM Tivoli 或 HP Operations Manager 的類別相同。 它已成長為支援監視在 Azure 中執行的計算和平臺資源、Amazon Web Services （AWS）和其他雲端提供者。
+在2000中，我們輸入了具有 Microsoft Operations Manager （MOM）2000的 [operations management] 欄位。 在2007中，我們引進了產品的重新設計後版本，名為 System Center Operations Manager。 它除了簡單監視 Windows 伺服器之外，還會集中在強大的端對端服務和應用程式監視，包括不同的平臺、網路裝置，以及其他應用程式或服務相依性。 它是一種專為內部部署環境所建立的企業級監視平臺，與業界 IBM Tivoli 或 HP Operations Manager 的類別相同。 它已成長為支援監視在 Azure 中執行的計算和平臺資源、Amazon Web Services （AWS）和其他雲端提供者。
 
 ## <a name="the-story-of-azure-monitor"></a>Azure 監視器的故事
 
@@ -34,7 +34,7 @@ Microsoft 提供兩種產品的各種監視功能： System Center Operations Ma
 
 Application Insights 引進了隨著產業中的變更轉移，其中雲端、行動裝置和 IoT 裝置的激增日益成長，並引進 DevOps 實務。 它會從 Operations Manager 的應用程式效能監視成長到 Azure 中的服務，並在其中針對以各種語言撰寫的 web 應用程式提供豐富的監視功能。 在2015中，已宣佈 Visual Studio 的 Application Insights 預覽，並在稍後將其稱為 Application Insights。 它會收集有關應用程式效能、要求和例外狀況的詳細資料，以及追蹤。
 
-在2015中，Azure Operational Insights 已公開上市。 它提供了 Log Analytics 分析服務，可從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件可提供各種預先封裝的管理和監視設定，這些設定包含查詢和分析邏輯、視覺效果和資料收集規則的集合，這些設定會針對這些案例做為安全性審核，健全狀況評估和警示管理。 之後，Azure Operational Insights 就稱為 Log Analytics。  
+在2015中，Azure Operational Insights 已公開上市。 它提供了 Log Analytics 分析服務，可從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件可提供各種預先封裝的管理和監視設定，這些設定包含查詢和分析邏輯、視覺效果和資料收集規則的集合，這些設定會針對這類案例做為安全性審核、健全狀況評量和警示管理。 之後，Azure Operational Insights 就稱為 Log Analytics。  
 
 在2016中，已在 Microsoft Ignite 會議上宣佈 Azure 監視器的預覽。 它提供一個通用的架構，可從使用架構的任何 Azure 服務收集平臺計量、資源診斷記錄，以及訂用帳戶層級的活動記錄事件。 之前，每個 Azure 服務都有自己的監視方法。
 
@@ -73,6 +73,8 @@ Azure 監視器是一項軟體即服務（SaaS）服務，其中支援它的所�
 ![Azure 監視器的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
 ## <a name="data-collection"></a>資料收集
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -114,7 +116,7 @@ Azure 監視器會從各種來源收集資料，包括 Azure 基礎結構和平�
 
 Azure 監視器會將資料收集與針對該資料所採取的動作隔開，以支援雲端環境中的分散式微服務。 它會將多個來源的資料合併到通用資料平臺，並根據收集到的資料提供分析、視覺化和警示功能。
 
-Azure 監視器所收集的所有資料都會儲存為記錄或計量，而不同的監視器功能會依賴其中一種。 計量包含時間序列中的數值，適用于近乎即時的警示和快速偵測問題。 記錄包含文字或數值資料，並受到強大的查詢語言支援，使其特別適用于執行複雜的分析。
+Azure 監視器所收集的所有資料都會儲存為記錄或計量，而不同的監視器功能會依賴其中一種。 計量包含時間序列中的數值，適用于近乎即時的警示和快速的問題偵測。 記錄包含文字或數值資料，並受到強大的查詢語言支援，使其特別適用于執行複雜的分析。
 
 因為監視器會將資料收集與該資料的動作分開，所以在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
 

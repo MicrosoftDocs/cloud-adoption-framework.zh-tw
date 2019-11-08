@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f0767ad4825a0b6b1506b8ee17e33eccf383325a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566766"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753650"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：接收器和 fiefdoms
 

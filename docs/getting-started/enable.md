@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656599"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753283"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -32,7 +32,7 @@ ms.locfileid: "73656599"
 
 ## <a name="additional-tools"></a>其他工具
 
-除了雲端採用架構之外，Microsoft 還涵蓋了可實現成功的其他主題。 本文強調幾個常見的工具，可大幅改善超越雲端採用架構範圍的成功。 建立雲端治理、彈性架構、技術技能和 DevOps 方法，對於任何雲端採用工作的成功都非常重要。 建議讀者將此頁面加入書簽以作為資源，以在整個雲端採用旅程中重新流覽。
+除了雲端採用架構之外，Microsoft 還涵蓋了可實現成功的其他主題。 本文強調幾個常見的工具，可大幅改善超越雲端採用架構範圍的成功。 建立雲端治理、彈性架構、技術技能和 DevOps 方法，對於任何雲端採用工作的成功都非常重要。 將此頁面加入書簽以作為資源，以在整個雲端採用旅程中重新流覽。
 
 <!-- markdownlint-disable MD033 -->
 

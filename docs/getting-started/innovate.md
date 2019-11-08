@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048429"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753104"
 ---
 # <a name="innovate-through-cloud-adoption"></a>透過雲端採用的創新
 
@@ -21,7 +21,7 @@ ms.locfileid: "73048429"
 
 ## <a name="motivations-behind-innovation"></a>創新背後的動機
 
-創新不是每個工作負載的正確採用路徑。 在自訂程式碼和資料管理方面，創新的路徑通常需要更大的投資，而不是其他路徑。 創新所花的時間比遷移或其他形式的現代化還長。 當客戶以下列商務結果為目標時，建議使用此路徑：
+創新不是每個工作負載的正確採用路徑。 在自訂程式碼和資料管理方面，創新的路徑通常需要更大的投資，而不是其他路徑。 創新所花的時間比遷移或其他形式的現代化還長。 當您將目標設為下列商務結果時，請遵循此路徑：
 
 - 準備新的技術功能。
 - 調整以符合市場需求。

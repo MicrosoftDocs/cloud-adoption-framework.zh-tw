@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564559"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753445"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 
@@ -27,7 +27,7 @@ ms.locfileid: "73564559"
 
 ## <a name="governance-alignment"></a>控管一致性
 
-關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應了解這項移轉是在受到有限控管的環境、完全受控的環境處理站，還是介於兩者間的某種變異環境中進行的。 如需更多關於控管一致性的選項和指引，請參閱關於[控管和合規性一致性](../../expanded-scope/governance-or-compliance.md)的文章。
+關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應該瞭解這項遷移功能是否會在有限的治理、完全受控的環境處理站，或介於之間進行某種變化的單一環境中進行登陸。 如需更多關於控管一致性的選項和指引，請參閱關於[控管和合規性一致性](../../expanded-scope/governance-or-compliance.md)的文章。
 
 ## <a name="cloud-readiness-implementation"></a>實作雲端整備
 
@@ -52,7 +52,7 @@ ms.locfileid: "73564559"
 
 ### <a name="resource-governance"></a>資源管理
 
-在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 建議雲端治理小組在進行移轉前應先定義並要求控管工具的最簡可行產品 (MVP) 的實作方式。
+在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 雲端治理小組應該在進行遷移之前，定義和要求治理工具的最低可行產品（MVP）實行。
 
 ## <a name="network"></a>網路
 

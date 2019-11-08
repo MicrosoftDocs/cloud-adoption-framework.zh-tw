@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 60c6b72590cc5f912572109f0cce10366413fdf0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 5b38b5d52ee5151a2ccd696f0049a9feea0d21a0
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565105"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752811"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -77,7 +77,7 @@ ms.locfileid: "73565105"
 
 進行中的網路、DNS、作業系統和其他基本層面的健全狀況和操作，都是重要的資料點，會納入任何工作負載的整體健全狀況。
 
-## <a name="processes"></a>處理序
+## <a name="processes"></a>程序
 
 可能比雲端管理平臺的功能更重要，雲端管理程式將會實現與企業的營運承諾。 任何雲端管理方法至少應該包含下列程式：
 
@@ -111,7 +111,7 @@ ms.locfileid: "73565105"
 
 與商務專案關係人之承諾的離線程式和通訊通常需要報告。 自助報告或定期報告可能是增強式管理基準的必要元件。
 
-### <a name="it-service-management-itsm-integration"></a>IT 服務管理（ITSM）整合
+### <a name="it-service-management-itsm-integration"></a>IT 服務管理 (ITSM) 整合
 
 ITSM 整合通常是作用於清查和可見度的第一個範例。 當發生與預期的效能模式的偏差時，ITSM 整合會使用來自雲端平臺的警示，在個別的服務管理工具中觸發票證以觸發修復活動。 某些作業模型可能需要 ITSM 整合，做為增強式管理基準的一個層面。
 

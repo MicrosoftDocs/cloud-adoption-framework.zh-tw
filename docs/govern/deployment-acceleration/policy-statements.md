@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566358"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752681"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 
@@ -32,7 +32,7 @@ ms.locfileid: "73566358"
 
 **原則聲明：** 所有部署至雲端的資產都應該盡可能使用範本或自動化腳本進行部署。
 
-**潛在的設計選項：** [Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)提供了基礎結構即程式碼的方法，可將您的資源部署至 Azure。 您也可以使用[Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview)作為一致的內部部署和雲端式部署工具。
+**潛在的設計選項：** [Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)會提供基礎結構即程式碼方法，將您的資源部署至 Azure。 您也可以使用[Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview)作為一致的內部部署和雲端式部署工具。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>缺少系統問題的可見性
 
@@ -43,7 +43,7 @@ ms.locfileid: "73566358"
 - 系統將針對所有生產系統和元件找出關鍵計量和診斷量值，而且會將監視與診斷工具套用至這些系統，並由操作人員定期監控。
 - 作業會考慮使用非生產環境（例如預備和 QA）中的監視和診斷工具，在生產環境中發生系統問題之前加以識別。
 
-**潛在的設計選項：** [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor)（也包括 Log Analytics 和 Application Insights）提供收集和分析遙測的工具，以協助您瞭解應用程式的執行和主動識別影響它們的問題以及它們所依賴的資源。 此外， [Azure 活動記錄](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)會報告在平台層級進行的所有變更，並且應該針對不相容的變更進行監視/審核。
+**潛在的設計選項：** [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor)（包括 Log Analytics 和 Application Insights）提供收集和分析遙測的工具，以協助您瞭解應用程式的執行和主動識別影響它們的問題以及它們所依賴的資源。 此外， [Azure 活動記錄](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)檔會報告在平台層級進行的所有變更，應加以監視並針對不符合規範的變更進行審核。
 
 ## <a name="configuration-security-reviews"></a>設定安全性檢閱
 

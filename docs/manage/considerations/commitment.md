@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565201"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752884"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -42,7 +42,7 @@ ms.locfileid: "73565201"
 
 ## <a name="it-operations-prerequisites"></a>IT 作業必要條件
 
-[Azure 管理指南](../azure-management-guide/index.md)概述 azure 中可用的管理工具。 在達到業務承諾之前，它應該決定可接受的標準層級管理基準，以套用至所有受控工作負載。 接著，它會根據 CPU 核心計數、磁碟空間和其他與資產相關的變數，計算 IT 組合中每個受控工作負載的標準管理成本。 它也會根據架構來估計每個工作負載的複合 SLA。
+[Azure 管理指南](../azure-management-guide/index.md)概述 azure 中可用的管理工具。 在達到業務承諾之前，IT 應該決定要套用至所有受控工作負載的可接受標準層級管理基準。 接著，它會根據 CPU 核心計數、磁碟空間和其他與資產相關的變數，計算 IT 組合中每個受控工作負載的標準管理成本。 它也會根據架構來估計每個工作負載的複合 SLA。
 
 > [!TIP]
 > IT 營運小組通常會針對初始複合 SLA 使用預設的最短99.9% 執行時間。 他們也可以選擇根據平均工作負載來標準化管理成本，特別是針對具有最低限度記錄和儲存需求的解決方案。 將幾個中等重要性工作負載的成本平均，可以提供初始交談的起點。

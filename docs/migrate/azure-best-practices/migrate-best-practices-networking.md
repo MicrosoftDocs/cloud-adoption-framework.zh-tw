@@ -8,19 +8,19 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753607"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
 在規劃和設計移轉時，除了移轉作業本身外，其中一個最重要的步驟便是設計和實作 Azure 網路。 本文說明在移轉至 Azure 中的 IaaS 和 PaaS 實作時，該如何設定網路的最佳做法。
 
 > [!IMPORTANT]
-> 本文所述的最佳做法和意見是以本文撰寫當下可用的 Azure 平台和服務作為基礎。 特色與功能會隨著時間改變。 這些建議不一定全都適用於您的部署，因此請選取適合您部署的建議。
+> 本文所述的最佳做法和意見是以本文撰寫當下可用的 Azure 平台和服務功能作為基礎。 特色與功能會隨著時間改變。 這些建議不一定全都適用於您的部署，因此請選取適合您部署的建議。
 
 ## <a name="design-virtual-networks"></a>設計虛擬網路
 
@@ -85,7 +85,7 @@ Azure 會提供虛擬網路 (VNet)：
 - 請根據技術和組織的需求來決定如何劃分子網路。
 - 請使用 CIDR 表示法建立子網路。
 - 在決定子網路的網路範圍時，務必請注意 Azure 會在每個子網路保留五個不得使用的 IP 位址。 例如，如果您建立最小的可用子網路 /29 (具有八個 IP 位址)，Azure 將會保留五個位址，因此您可以指派給子網路上主機的可用位址只剩三個。
-- 在大部分情況下，建議使用 /28 作為最小的子網路。
+- 在大部分的情況下，請使用/28 做為最小的子網。
 
 **範例：**
 
@@ -160,8 +160,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 若要實作站對站 VPN，請在 Azure 中設定 VPN 閘道。
 
-- VPN 閘道是特定的 VNet 閘道類型，可透過公用網際網路在 Azure VNet 與內部部署位置之間傳送加密流量。
-- 您也可以使用 VPN 閘道，透過 Microsoft 網路來傳送 Azure VNet 之間的已加密流量。
+- VPN 閘道是一種特定類型的 VNet 閘道，可透過公用網際網路在 Azure VNet 與內部部署位置之間傳送加密的流量。
+- VPN 閘道也可以透過 Microsoft 網路，在 Azure Vnet 之間傳送加密的流量。
 - 每個 VNet 只能有一個 VPN 閘道。
 - 您可以對相同的 VPN 閘道建立多個連線。 當您建立多個連線時，所有 VPN 通道都會共用可用的閘道頻寬。
 - 每個 Azure VPN 閘道都是由作用中-待命組態中的兩個執行個體組成。
@@ -175,7 +175,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 - 您需要一個 VNet，這個 VNet 的位址範圍沒有和 VPN 所要連線的內部部署網路重疊。
 - 在網路中建立閘道子網路。
-- 建立 VPN 閘道，指定閘道類型 (VPN) 以及閘道是原則式還是路由式的。 建議使用路由式 VPN，其功能較好且不會過時。
+- 建立 VPN 閘道，指定閘道類型 (VPN) 以及閘道是原則式還是路由式的。 以路由為基礎的 VPN 會被視為更有能力和未來的證明。
 - 建立內部部署的區域網路閘道，並設定內部部署 VPN 裝置。
 - 在 VNet 閘道與內部部署裝置之間建立容錯移轉站對站 VPN 連線。 使用路由式 VPN 可讓您對 Azure 建立「主動-被動」或「主動-主動」連線。 路由式也同時支援站對站 (從任何電腦) 和點對站 (從單一電腦) 連線。
 - 指定您想要使用的閘道 SKU。 這取決於您的工作負載需求、輸送量、功能和 SLA。

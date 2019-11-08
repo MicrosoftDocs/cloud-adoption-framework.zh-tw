@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565396"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751595"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -37,7 +37,7 @@ ms.locfileid: "73565396"
 
 下表中所述的檔案會在此範例中使用。 您可以自訂它們以支援您自己的部署案例。
 
-| 檔案名稱 | 說明 |
+| 檔案名稱 | 描述 |
 |-----------|-------------|
 | New-AMSDeployment. ps1 | 主要的協調腳本會自動上線。 它會建立資源群組，以及位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
 | 工作區-AutomationAccount. json | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |

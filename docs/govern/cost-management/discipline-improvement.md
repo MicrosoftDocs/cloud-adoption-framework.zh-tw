@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c546512b2b9407d9edf54648e704209f8d460ea
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547789"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753079"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 
@@ -87,7 +87,7 @@ ms.locfileid: "72547789"
 
 ## <a name="operate-and-post-implementation"></a>操作和實作後
 
-轉換完成之後，治理和操作必須依存於應用程式或工作負載的自然生命週期。 這個治理成熟度階段著重於通常會在實作解決方案且轉換週期開始穩定後隨之而來的活動。
+轉換完成之後，必須針對應用程式或工作負載的自然生命週期，讓治理和作業正常運作。 這個治理成熟度階段著重於通常會在實作解決方案且轉換週期開始穩定後隨之而來的活動。
 
 **最小的建議活動：**
 

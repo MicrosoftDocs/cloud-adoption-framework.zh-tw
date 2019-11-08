@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565317"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751655"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 
@@ -34,7 +34,7 @@ ms.locfileid: "73565317"
 
 您將用來將 Azure 管理服務上架的許多服務都需要 Log Analytics 工作區和連結的 Azure 自動化帳戶。
 
-[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案已設定為將其資料儲存在特定工作區中。 Azure 監視解決方案要求所有伺服器都必須連線到工作區，才能儲存及存取其記錄資料。
+[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案會設定為將其資料儲存在特定工作區中。 Azure 監視解決方案會要求所有伺服器都必須連線到工作區，以便能夠儲存和存取其記錄資料。
 
 某些管理服務需要[Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)帳戶。 您可以使用此帳戶和 Azure 自動化的功能來整合 Azure 服務和其他公用系統，以部署、設定和管理您的伺服器管理程式。
 

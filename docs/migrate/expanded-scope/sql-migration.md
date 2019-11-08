@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566887"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753533"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>藉由遷移 SQL Server 的實例來加速遷移
 
@@ -102,7 +102,7 @@ ms.locfileid: "73566887"
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>建議的遷移程式的指引和教學課程
 
-選擇使用「資料庫移轉服務」進行遷移的最佳指引，會放在所選的來源和目標平臺上。 下錶鏈接到使用資料庫移轉服務遷移 SQL database 之每個標準方法的教學課程。
+選擇使用 Azure 資料庫移轉服務來進行遷移的最佳指引，會放在所選的來源和目標平臺上。 下錶鏈接至使用 Azure 資料庫移轉服務遷移 SQL database 之每個標準方法的教學課程。
 
 |來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ ms.locfileid: "73566887"
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>適用于對等 PaaS 解決方案之各種服務的指引和教學課程
 
-將資料庫從 SQL Server 實例移至資料庫移轉服務之後，您可以在許多 PaaS 解決方案中重新裝載架構和資料。 不過，其他必要的服務可能仍在該伺服器上執行。 下列三個教學課程有助於將 SSIS、SSAS 和 SSRS 移至 Azure 上的對等 PaaS 服務。
+將資料庫從 SQL Server 實例移至 Azure 資料庫移轉服務之後，您可以在許多 PaaS 解決方案中重新裝載架構和資料。 不過，其他必要的服務可能仍在該伺服器上執行。 下列三個教學課程有助於將 SSIS、SSAS 和 SSRS 移至 Azure 上的對等 PaaS 服務。
 
 |來源  |確定目標  |工具  |遷移類型  |指導方針  |
 |---------|---------|---------|---------|---------|

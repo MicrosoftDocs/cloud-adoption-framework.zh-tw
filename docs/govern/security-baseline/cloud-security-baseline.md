@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548009"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752161"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>瞭解雲端安全性基準
 
@@ -27,7 +27,7 @@ ms.locfileid: "72548009"
 
 雲端安全性是傳統資訊安全性作法的延伸。 傳統 IT 安全性會包含原則與控制項來管理電腦安全性、網路安全性、資料保護、資訊使用方式等。 雲端中也需要這些相同的原則和控制項。 在任何雲端轉換期間，CISO 必須積極參與並瞭解雲端環境，以確保舊版的 IT 原則會對應到雲端中適當的控制層級。
 
-就最低限度而言，任何雲端安全性策略都應該考慮下列主題：
+任何雲端安全性策略至少應該考慮下列主題：
 
 - **將資料分類。** 進行適當的資料分類，以了解所有私密、受保護或高度機密的資料來源。 這將能協助在規劃期間管理風險。
 - **規劃混合式雲端案例。** 瞭解舊版的內部部署網路將如何連線到雲端，將有助於 CISO 識別並補救風險。

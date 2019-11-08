@@ -1,5 +1,5 @@
 ---
-title: 雲端監視指南–雲端部署模型的監視策略
+title: 雲端監視指南：雲端部署模型的監視策略
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564981"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752729"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
@@ -30,12 +30,13 @@ ms.locfileid: "73564981"
 ## <a name="azure-cloud-monitoring"></a>Azure 雲端監視
 
 Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源的單一來源。 其設計適用于下列雲端解決方案：
-* 建置於 Azure 上。
-* 支援以虛擬機器（VM）工作負載為基礎的商務功能，或使用微服務和其他平臺資源的複雜架構。
 
-它會監視堆疊的所有層，從租使用者服務開始，例如 Azure Active Directory Domain Services，以及訂用帳戶層級事件和 Azure 服務健康狀態。 
+- 建置於 Azure 上。
+- 支援以虛擬機器（VM）工作負載為基礎的商務功能，或使用微服務和其他平臺資源的複雜架構。
 
-它也會監視基礎結構資源，例如 Vm、儲存體和網路資源。 在最上層，它會監視您的應用程式。 
+它會監視堆疊的所有層，從租使用者服務開始，例如 Azure Active Directory Domain Services，以及訂用帳戶層級事件和 Azure 服務健康狀態。
+
+它也會監視基礎結構資源，例如 Vm、儲存體和網路資源。 在最上層，它會監視您的應用程式。
 
 藉由監視每個相依性，並收集每個相依性可以發出的正確信號，您就可以取得應用程式的可檢視性和所需的重要基礎結構。
 
@@ -45,18 +46,18 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 層次 | 資源 | Scope | 方法
 ---|---|---|----
-應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
+Application | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
 Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。
 Azure 資源-基礎結構即服務（IaaS） | 1. Azure 儲存體<br/> 2. Azure 應用程式閘道<br/> 3. 網路安全性群組<br/> 4. Azure 流量管理員<br/> 5. Azure 虛擬機器<br/> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。<br/> 2. 效能和診斷記錄（活動、存取、效能和防火牆）。<br/> 3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。<br/> 4. 監視端點狀態可用性。<br/> 5. 監視來賓 VM 作業系統（OS）中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。<br/> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。<br/> 2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。<br/> 5. 啟用適用於 VM 的 Azure 監視器。<br/> 6. 啟用容器的 Azure 監視器。
 網路 | 您的虛擬機器與一或多個端點（另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址）之間的通訊。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。
-Azure 訂閱 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。<br/><li> 具有 Azure 服務的服務健全狀況處於降級或無法使用的狀態。<br/><li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。<br/><li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <br/><li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。<br/><li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。
+Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。<br/><li> 具有 Azure 服務的服務健全狀況處於降級或無法使用的狀態。<br/><li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。<br/><li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <br/><li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。<br/><li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。
 Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="hybrid-cloud-monitoring"></a>混合式雲端監視
 
-對於許多組織而言，轉換至雲端必須逐漸進行，其中混合式雲端模型是旅程圖中最常見的第一個步驟。 您可以謹慎地選取適當的應用程式和基礎結構子集，以開始進行遷移，同時避免業務中斷。 不過，由於我們提供兩個支援此雲端模型的監視平臺，因此 IT 決策者可能無法確定哪一種是支援其商務和 IT 營運目標的最佳選擇。 
+對於許多組織而言，轉換至雲端必須逐漸進行，其中混合式雲端模型是旅程圖中最常見的第一個步驟。 您可以謹慎地選取適當的應用程式和基礎結構子集，以開始進行遷移，同時避免業務中斷。 不過，由於我們提供兩個支援此雲端模型的監視平臺，因此 IT 決策者可能無法確定哪一種是支援其商務和 IT 營運目標的最佳選擇。
 
 在本節中，我們會藉由檢查數個因素來解決不確定性，並提供對要考慮的平臺的瞭解。
 
@@ -72,9 +73,9 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 <!-- markdownlint-disable MD033 -->
 
-|需求 | Azure 監視器 | Operations Manager |
+|需求 | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|基礎結構需求 | 否 | 是<br> 至少需要一個管理伺服器，以及一個 SQL server 來裝載運算元據庫和報表資料倉儲資料庫。 當需要高可用性和嚴重損壞修復，而且有多個網站中的機器、不受信任的系統，以及其他複雜的設計考慮時，複雜度就會增加。|
+|基礎結構需求 | 否 | 是<br> 至少需要管理伺服器和 SQL server，才能裝載運算元據庫和報表資料倉儲資料庫。 當需要高可用性和嚴重損壞修復，而且有多個網站中的機器、不受信任的系統，以及其他複雜的設計考慮時，複雜度就會增加。|
 |有限的連線能力-無網際網路<br> 或隔離的網路 | 否 | 是 |
 |受限制的連線能力控制網際網路存取 | 是 | 是 |
 |有限的連線-經常中斷連線 | 是 | 是 |
@@ -115,7 +116,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 若要監視在 Azure 中執行的工作負載，您需要：
 
-- [適用于 Azure 的管理元件](https://www.microsoft.com/download/details.aspx?id=50013)。 它會收集 Azure 服務所發出的效能計量，例如 web 和背景工作角色、Application Insights 可用性測試（web 測試）、Azure 服務匯流排等等。 管理元件會使用 Azure REST API 來監視這些資源的可用性和效能。 某些 Azure 服務類型在管理元件中沒有計量或預先定義的監視，但是您仍然可以透過 Azure 管理元件中針對探索到的服務所定義的關聯性來監視它們。
+- [適用于 Azure 的管理元件](https://www.microsoft.com/download/details.aspx?id=50013)。 它會收集 Azure 服務所發出的效能計量，例如 web 和背景工作角色、Application Insights 可用性測試（web 測試）、Azure 服務匯流排等等。 管理元件會使用 Azure REST API 來監視這些資源的可用性和效能。 某些 Azure 服務類型在管理元件中沒有計量或預先定義的監視，但您仍然可以透過 Azure 管理元件中針對探索到的服務所定義的關聯性來監視它們。
 
 - [Azure SQL Database 的管理元件](https://www.microsoft.com/download/details.aspx?id=38829)，可使用 azure REST API 和 t-SQL 查詢 SQL Server 系統檢視，來監視 azure sql 資料庫和 azure sql Database 伺服器的可用性和效能。
 
@@ -137,7 +138,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 #### <a name="advantages-of-using-operations-manager-with-azure-monitor"></a>搭配 Azure 監視器使用 Operations Manager 的優點
 
-- Azure 監視器是解決 Operations Manager 限制的方式。 它藉由收集重要的效能和記錄資料，來補充 Operations Manager 資料倉儲資料庫。 Azure 監視器提供更佳的分析、效能（查詢大型資料磁片區時），以及比 Operations Manager 資料倉儲的保留期。 
+- Azure 監視器是解決 Operations Manager 限制的方式。 它藉由收集重要的效能和記錄資料，來補充 Operations Manager 資料倉儲資料庫。 Azure 監視器提供更佳的分析、效能（查詢大型資料磁片區時），以及比 Operations Manager 資料倉儲的保留期。
 
   有了 Azure 監視器查詢語言，您就可以建立更複雜且精密的查詢。 您可以在數秒內跨數 tb 的資料執行查詢。 您可以快速地將資料轉換成圓形圖、時間圖表和其他許多視覺效果。 若要分析此資料，您不再受限於使用以 SQL Server Reporting Services、自訂 SQL 查詢或其他因應措施為基礎的 Operations Manager 報表。
 
@@ -150,12 +151,11 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 - 藉由使用適用於 VM 的 Azure 監視器的「對應」功能，您可以從 Azure Vm 與內部部署 Vm 之間的網路連線監視標準連接計量。 這些計量包括回應時間、每分鐘的要求數、流量輸送量和連結。 您可以識別失敗的連線、疑難排解、執行遷移驗證、執行安全性分析，以及驗證服務的整體架構。 Map 可以自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 這項自動化可協助您識別不知道的連線和相依性、規劃和驗證遷移至 Azure，以及在事件解決期間將推測降至最低。
 
 - 藉由使用網路效能監控，您可以監視下列各項之間的網路連線：
+  - 您的公司網路和 Azure。
+  - 任務關鍵性多層式應用程式和微服務。
+  - 使用者位置和 web 應用程式（HTTP/HTTPS）。
 
-   - 您的公司網路和 Azure。
-   - 任務關鍵性多層式應用程式和微服務。
-   - 使用者位置和 web 應用程式（HTTP/HTTPS）。
-
-   此策略會提供網路層的可見度，而不需要 SNMP。 它也可以顯示在互動式拓撲圖中，這是來源與目的地端點之間路由的逐一躍點拓撲。 這是比嘗試在 Operations Manager 中的網路監視或您的環境中目前使用的其他網路監視工具來達成相同結果的最佳選擇。
+此策略會提供網路層的可見度，而不需要 SNMP。 它也可以顯示在互動式拓撲圖中，這是來源與目的地端點之間路由的逐一躍點拓撲。 這是比嘗試在 Operations Manager 中的網路監視或您的環境中目前使用的其他網路監視工具來達成相同結果的最佳選擇。
 
 ### <a name="monitor-with-azure-monitor"></a>使用 Azure 監視器進行監視
 
@@ -177,7 +177,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 ## <a name="private-cloud-monitoring"></a>私人雲端監視
 
-您可以使用 System Center Operations Manager 全面監視 Azure Stack。 具體而言，您可以監視在租使用者中執行的工作負載、資源層級、虛擬機器，以及裝載 Azure Stack （實體伺服器和網路交換器）的基礎結構。 
+您可以使用 System Center Operations Manager 全面監視 Azure Stack。 具體而言，您可以監視在租使用者中執行的工作負載、資源層級、虛擬機器，以及裝載 Azure Stack （實體伺服器和網路交換器）的基礎結構。
 
 您也可以使用 Azure Stack 所包含的[基礎結構監視功能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)組合來達成整體監視。 這些功能可協助您在 Azure Stack 中查看 Azure Stack 區域和[Azure 監視器服務](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)的健康情況和警示，以提供大部分服務的基本層級基礎結構計量和記錄。
 
