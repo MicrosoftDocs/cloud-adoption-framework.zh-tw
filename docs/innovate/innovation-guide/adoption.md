@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058115"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565572"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ ms.locfileid: "73058115"
 - **量化 (測試意見反應)：** 此意見反應會測量我們希望看見的動作。
 - **定性 (客戶意見反應)：** 此意見反應讓我們知道這些計量在客戶心目中所代表的意義。
 
-在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com/) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)的文章可協助您開始使用您的存放庫。
+在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)的文章可協助您開始使用您的存放庫。
 
 下列每個 Azure 工具都會與 GitHub 中裝載的專案整合 (或相容)：
 
@@ -126,7 +126,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 ### <a name="action"></a>動作
 
 Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。
-若要開始使用任一工具，請移至 [Azure DevOps](https://dev.azure.com/)。
+若要開始使用任一工具，請移至 [Azure DevOps](https://dev.azure.com)。
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 若要建立 DevOps 專案：
 
-1. 移至 [Azure DevOps 專案]  。
+1. 移至 [Azure DevOps Projects]  。
 2. 選取 [建立 DevOps 專案]  。
 3. 選取 [執行階段、架構和服務]  。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 這些文章將協助您使用 Azure Boards 搭配 GitHub 來集中管理意見反應：
 
-- [開始使用 Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards 和 GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [開始使用 Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards 和 GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[使用管線關閉迴圈](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 若要在管線中檢視目前的部署：
 
-1. 移至 [App Service]  。
+1. 移至 [應用程式服務]  。
 2. 從清單中選取所需的應用程式。
 3. 在 [應用程式服務] 窗格的 [部署]  區段中選取 [部署中心]  。
 
@@ -171,7 +171,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

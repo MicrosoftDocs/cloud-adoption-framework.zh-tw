@@ -10,28 +10,28 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557086"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565476"
 ---
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
-作業合規性是任何雲端管理基準中的第二個專業領域。
+_作業合規性_是任何雲端管理基準中的第二個專業領域。
 
 ![雲端管理基準](../../_images/manage/management-baseline.png)
 
-改善作業合規性可降低與設定漂移有關的中斷，或與系統未正確修補有關的弱點發生的可能性。
+改善作業合規性可減少發生與設定漂移有關的中斷，或與系統未正確修補有關的弱點。
 
-針對任何企業級環境，下表會概述任何管理基準的最低建議。
+針對任何企業級環境，下表會概述管理基準的最低建議。
 
 |Process  |工具  |目的  |
 |---------|---------|---------|
 |修補程式管理|更新管理|更新的管理和排程|
 |強制執行原則|Azure 原則|強制執行原則以確保環境和來賓的合規性|
-|環境 組態|Azure Blueprint|核心服務的自動化合規性|
+|環境設定|Azure 藍圖|核心服務的自動化合規性|
 
 ::: zone target="docs"
 
@@ -48,26 +48,29 @@ ms.locfileid: "72557086"
 
 - 適用於 Windows 或 Linux 的 Microsoft Monitoring Agent (MMA)
 - 適用於 Linux 的 PowerShell 預期狀態組態 (DSC)
-- 自動化 Hybrid Runbook Worker
+- Azure 自動化 Hybrid Runbook Worker
 - 適用於 Windows 電腦的 Microsoft Update 或 Windows Server Update Services (WSUS)
 
-如需詳細資訊，請參閱[更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)
+如需詳細資訊，請參閱[更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)。
 
 > [!WARNING]
-> 在使用更新管理之前，您必須先將 VM 或整個訂用帳戶上線到 Log Analytics 和 Azure 自動化。
-> 有兩種方式可以上線，請先遵循其中一種再繼續進行更新管理。
+> 在使用更新管理之前，您必須先將虛擬機器或整個訂用帳戶上線到 Log Analytics 和 Azure 自動化。
+>
+> 有兩種方式可以上線：
 >
 > - [單一 VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [整個訂用帳戶](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> 您應該先遵循其中一個方式，再繼續進行更新管理。
 
 ### <a name="manage-updates"></a>管理更新
 
 若要將原則套用至資源群組：
 
 1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts)。
-2. 選擇所列出的其中一個**自動化帳戶**。
-3. 尋找入口網站瀏覽的 [設定管理]  區段。
-4. 清查、變更管理和狀態設定各自都可用來控制受控 VM 的狀態和作業合規性。
+1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
+1. 移至 [設定管理]  。
+1. **清查**、**變更管理**和**狀態設定**都可用來控制受控 VM 的狀態和作業合規性。
 
 ::: zone target="chromeless"
 
@@ -90,11 +93,11 @@ ms.locfileid: "72557086"
 
 ::: zone-end
 
-Azure 原則會用於整個治理流程。 但在雲端管理流程中也一樣擁有極高價值。 除了能稽核和修復 Azure 資源外，Azure 原則還可以稽核機器內的設定。 此驗證會由「來賓設定」延伸模組和用戶端執行。 透過用戶端的延伸模組會驗證下列設定：
+Azure 原則會用於整個治理流程。 在雲端管理流程中也一樣擁有極高價值。 Azure 原則除了能稽核和修復 Azure 資源外，還可以稽核機器內的設定。 此驗證會由「來賓設定」延伸模組和用戶端執行。 透過用戶端的延伸模組會驗證下列設定：
 
-- 作業系統設定
-- 應用程式設定或目前狀態
-- 環境設定
+- 作業系統設定。
+- 應用程式設定或目前狀態。
+- 環境設定。
 
 Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用設定。
 
@@ -134,7 +137,9 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 ::: zone-end
 
-Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組可重複使用的 Azure 資源，其中實作並遵循組織的標準、模式和需求。 Azure 藍圖可讓開發小組在知道他們是以符合組織合規性進行建置的情況下，快速地建置及建立新環境，並使用內建元件 (例如網路) 加速開發和交貨。
+有了 Azure 藍圖，雲端架構設計人員和中央 IT 群組就可以定義一組可重複使用的 Azure 資源。 這些資源會實作組織的標準、模式和需求，並加以遵循。
+
+有了 Azure 藍圖，開發小組就可以快速建置並啟動新的環境。 小組也可以確信他們的建置符合組織合規性。 他們會使用一組內建元件 (例如網路功能) 來加速開發和傳遞。
 
 藍圖是以宣告方式來協調部署多種資源範本與其他成品，例如：
 
@@ -143,7 +148,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 - Azure Resource Manager 範本。
 - 資源群組。
 
-套用藍圖可在環境中強制執行作業合規性 (如果雲端治理小組尚未這麼做的話)。
+套用藍圖可在環境中強制執行作業合規性 (如果雲端治理小組尚未執行此強制動作的話)。
 
 ### <a name="create-a-blueprint"></a>建立藍圖
 
@@ -152,11 +157,12 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 ::: zone target="chromeless"
 
 1. 前往**藍圖 - 使用者入門**。
-1. 在 [建立藍圖]  區段中，選取 [建立]  。
+1. 在 [建立藍圖]  窗格中，選取 [建立]  。
 1. 篩選藍圖清單以選取適當的藍圖。
-1. 輸入 [藍圖名稱]  ，然後選取適當的 [定義位置]  。
-1. 按一下頁面底部的 [下一步:  成品 >>]，然後檢閱藍圖中包含的成品。
-1. 按一下 [儲存草稿]  。
+1. 在 [藍圖名稱]  方塊中，輸入藍圖名稱。
+1. 選取 [定義位置]  ，然後選擇適當的位置。
+1. 選取 [下一步：  成品 >>]，然後檢閱藍圖中包含的成品。
+1. 選取 [儲存草稿]  。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 ::: zone target="docs"
 
 1. 前往[藍圖 - 使用者入門](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
-1. 在 [建立藍圖]  區段中，選取 [建立]  。
+1. 在 [建立藍圖]  窗格中，選取 [建立]  。
 1. 篩選藍圖清單以選取適當的藍圖。
-1. 輸入 [藍圖名稱]  ，然後選取適當的 [定義位置]  。
-1. 按一下頁面底部的 [下一步:  成品 >>]，然後檢閱藍圖中包含的成品。
-1. 按一下 [儲存草稿]  。
+1. 在 [藍圖名稱]  方塊中，輸入藍圖名稱。
+1. 選取 [定義位置]  ，然後選擇適當的位置。
+1. 選取 [下一步：  成品 >>]，然後檢閱藍圖中包含的成品。
+1. 選取 [儲存草稿]  。
 
 ::: zone-end
 
@@ -179,10 +186,12 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="chromeless"
 
-1. 前往**藍圖 - 藍圖定義**。
+1. 移至**藍圖 - 藍圖定義**。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]  。
-1. 提供 [版本]  (例如 "1.0") 和任何 [變更附註]  ，然後選取 [發佈]  。
+1. 在 [版本]  方塊中輸入版本，例如 "1.0"。
+1. 在 [變更附註]  方塊中，輸入您的附註。
+1. 選取 [發佈]  。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -190,10 +199,14 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-1. 前往[藍圖 - 藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
+1. 移至[藍圖 - 藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]  。
-1. 提供 [版本]  (例如 "1.0") 和任何 [變更附註]  ，然後選取 [發佈]  。
+1. 在 [版本]  方塊中輸入版本，例如 "1.0"。
+1. 在 [變更附註]  方塊中，輸入您的附註。
+1. 選取 [發佈]  。
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>深入了解
 

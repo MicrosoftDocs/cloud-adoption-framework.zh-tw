@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e8a7ae0af3b64a6d7e04555fe64a6189d964b3ff
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 1519adff06d600b9829c9b7ff3ca82a0aa5a0160
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816562"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753369"
 ---
 # <a name="azure-migration-best-practices"></a>Azure 移轉最佳做法
 

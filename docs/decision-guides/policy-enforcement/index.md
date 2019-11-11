@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564843"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753148"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -51,13 +51,13 @@ ms.locfileid: "73564843"
 
 在 Azure 中，您可以在管理群組、訂用帳戶或資源群組層級套用組態設定和資源建立規則，協助確保原則對齊。
 
-[Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)是 Azure 服務，用於建立、指派和管理原則。 這些原則會對您的資源強制執行不同的規則和效果，讓這些資源能符合公司標準和服務等級協定的規範。 Azure 原則會評估您的資源是否符合指派的原則。 例如，您可能要限制環境中虛擬機器的 SKU 大小。 實作對應原則之後，會評估新資源和現有資源的合規性。 使用正確的原則，現有的資源就可以合規。
+[Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)是 Azure 服務，用於建立、指派和管理原則。 這些原則會對您的資源強制執行不同的規則和效果，讓這些資源能符合公司標準和服務等級協定的規範。 Azure 原則會評估您的資源是否符合指派的原則。 例如，您可能要限制環境中虛擬機器的 SKU 大小。 實作對應原則之後，新資源和現有資源都會針對合規性進行評估。 使用正確的原則，現有的資源就可以合規。
 
 ## <a name="cross-organization-policy"></a>跨組織原則
 
 隨著您的雲端資產成長跨越需要強制執行的許多訂用帳戶，您必須將焦點放在整個雲端資產的強制執行策略，以確保原則一致性。
 
-您的[訂用帳戶設計](../subscriptions/index.md)必須考量原則，因為它與您的組織結構相關。 除了協助支援您的訂用帳戶設計內的複雜組織[Azure 管理群組](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions)可用來跨多個訂用帳戶指派 Azure 原則規則。
+您的[訂用帳戶設計](../subscriptions/index.md)必須考量原則，因為這與您的組織結構相關。 除了協助支援您的訂用帳戶設計內的複雜組織[Azure 管理群組](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions)可用來跨多個訂用帳戶指派 Azure 原則規則。
 
 ## <a name="automated-enforcement"></a>自動化強制執行
 

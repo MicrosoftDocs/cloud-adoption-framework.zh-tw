@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683764"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753425"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>安全性監視和管理工具
 
-完成移轉之後，已遷移的資產應由受控制的 IT 作業來管理。 本文的目的不是建議有違最佳做法的做法。 反之，下列項目應視為保護及管理已遷移之資產 (不論是來自 IT 作業或作為 IT 作業獨立上線) 的最簡可行產品。
+完成移轉之後，已遷移的資產應由受控制的 IT 作業來管理。 本文內容不是有違最佳做法的做法。 反之，下列項目應視為保護及管理已遷移之資產 (不論是來自 IT 作業或作為 IT 作業獨立上線) 的最簡可行產品。
 
 ## <a name="monitoring"></a>監視
 

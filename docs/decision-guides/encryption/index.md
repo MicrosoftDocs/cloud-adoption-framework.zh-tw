@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564885"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753363"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -63,7 +63,7 @@ ms.locfileid: "73564885"
 
 ### <a name="on-premises-hold-your-own-key"></a>內部部署 (保存您自己的金鑰)
 
-在某些情況下，您可能會因為法規、原則技術原因的限制，而無法將金鑰儲存在雲端式金鑰管理系統中。 在這些情況下，您必須使用內部部署硬體產生金鑰、使用內部部署金鑰管理系統來儲存和管理金鑰，並佈建機制以允許雲端資源針對加密用途存取這些金鑰。 請注意，保留您自己金鑰的方法可能並未與所有以 Azure 為基礎的服務相容。
+某些情況可能會因為法規、原則技術原因的限制，而無法將金鑰儲存在雲端式金鑰管理系統中。 在這種情況下，您必須使用內部部署硬體產生金鑰、使用內部部署金鑰管理系統來儲存和管理金鑰，並建立可讓雲端資源存取這些金鑰以用於加密的方式。 請注意，保留您自己金鑰的方法可能並未與所有以 Azure 為基礎的服務相容。
 
 **內部部署金鑰管理假設事項：** 使用內部部署金鑰管理系統時會包含以下假設事項：
 
@@ -84,7 +84,7 @@ ms.locfileid: "73564885"
 
 資料傳輸中代表資料正在內部資源之間、在資料中心或外部網路之間，或在網際網路上移動。
 
-傳輸中資料的加密工作通常是透過要求針對流量使用 SSL/TLS 通訊協定來完成。 雲端裝載資源之間傳輸到外部網路或公用網際網路的流量應一律加密。 PaaS 資源通常也會預設對流量強制進行 SSL/TLS 加密。 我們建議雲端採用小組和工作負載擁有者，將虛擬網路內部所裝載 IaaS 資源之間的流量強制加密。
+傳輸中資料的加密通常是透過要求網路流量所需的 SSL/TLS 通訊協定來完成。 雲端託管資源與外部網路或公用網際網路之間的流量應一律加密。 根據預設，PaaS 資源通常會強制執行 SSL/TLS 加密。 針對虛擬網路內部所裝載 IaaS 資源之間的流量，您的雲端採用小組和工作負載擁有者應考慮對其進行強制加密。
 
 **加密傳輸中資料時的假設事項：** 實作傳輸中資料的適當加密原則時會假設以下事項：
 

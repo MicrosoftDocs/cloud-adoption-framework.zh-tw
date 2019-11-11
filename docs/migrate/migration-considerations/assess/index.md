@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816290"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753455"
 ---
 # <a name="assess-assets-prior-to-migration"></a>在移轉前評量資產
 
@@ -56,7 +56,7 @@ ms.locfileid: "70816290"
   - 為了避免在程序開始後發生意料外的情況，應至少要有一個業務代表參與核准程序。
 
 > [!CAUTION]
-> 這個責任和動作的完整清單可以支援涉及多個具不同責任層級的角色，且需要詳細核准程序的大型複雜移轉。 規模較小且較簡單的移轉作業，可能不需要此處所述的所有角色和動作。 若要判斷這些活動中有哪些可以為您提供價值，且有哪些會產生不必要的額外負荷，建議您的雲端採用小組和雲端策略小組針對首次工作負載移轉使用完整的程序。 在驗證並測試該工作負載之後，小組便能評估此程序並選擇未來應該使用的動作。
+> 這個責任和動作的完整清單可以支援涉及多個具不同責任層級的角色，且需要詳細核准程序的大型複雜移轉。 規模較小且較簡單的移轉作業，可能不需要此處所述的所有角色和動作。 若要判斷這些活動中有哪些可以為您提供價值，以及有哪些是不必要項目，建議您的雲端採用小組和雲端策略小組針對首次工作負載移轉使用此完整程序。 在驗證並測試該工作負載之後，小組便能評估此程序並選擇未來應該使用的動作。
 
 ## <a name="next-steps"></a>後續步驟
 

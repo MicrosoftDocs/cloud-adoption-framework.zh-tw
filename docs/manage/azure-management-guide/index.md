@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: abbcdd7214673fdad47946ae77f7dd0bdb7c57af
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1b0ecb840a5378acbabaf94f11e2aa1297c35427
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751537"
 ---
 ::: zone target="docs"
 

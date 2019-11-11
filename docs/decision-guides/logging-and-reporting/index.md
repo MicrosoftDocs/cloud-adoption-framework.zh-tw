@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564863"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753174"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -26,7 +26,7 @@ ms.locfileid: "73564863"
 
 判斷雲端記錄與報告策略時，關鍵點主要是依據您的組織在作業流程上所做的現有投資，以及對多重雲端策略在某種程度上的支援需求。
 
-有多種方式可用於記錄和報告雲端活動。 雲端原生和集中式記錄是運用訂用帳戶設計和訂用帳戶數目的兩個常見的受控服務選項。
+雲端中的活動可以用多種方式記錄和報告。 雲端原生和集中式記錄是運用訂用帳戶設計和訂用帳戶數目的兩個常見的受控服務選項。
 
 ## <a name="plan-your-monitoring-infrastructure"></a>規劃監視基礎結構
 
@@ -54,7 +54,7 @@ ms.locfileid: "73564863"
 
 ### <a name="on-premises-extension"></a>內部部署擴充功能
 
-對於移轉至雲端的應用程式和服務，可能需要大量的重新開發工作才能使用雲端式記錄和報告解決方案，例如 Azure 監視器。 在這些情況下，允許這些工作負載繼續向現有的內部部署系統傳送遙測資料可能是有意義的。
+對於移轉至雲端的應用程式和服務，可能需要大量的重新開發工作才能使用雲端式記錄和報告解決方案，例如 Azure 監視器。 在這些情況下，請考慮允許這些工作負載繼續向現有的內部部署系統傳送遙測資料。
 
 為了支援這種方法，您的雲端資源必須能夠透過結合[混合式網路功能](../software-defined-network/hybrid.md)和[雲端裝載網域服務](../identity/index.md#cloud-hosted-domain-services)，直接與您的內部部署系統通訊。 然後雲端虛擬網路才能以內部部署環境網路擴充功能的形式運作。 如此一來，雲端裝載工作負載才能直接與您的內部部署記錄和報告系統通訊。
 

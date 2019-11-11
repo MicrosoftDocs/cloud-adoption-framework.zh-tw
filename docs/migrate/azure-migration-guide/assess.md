@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: a2acba3f9aa06298922d2cc95d298d3792a9ada9
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058808"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239999"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 

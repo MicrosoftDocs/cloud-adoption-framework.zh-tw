@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023879"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753183"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 
@@ -73,7 +73,7 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 
 ### <a name="cloud-hosted-domain-services"></a>雲端託管網域服務
 
-如果您有工作負載相依於使用 Kerberos 或 NTLM 等舊版通訊協定的宣告式驗證，而這些工作負載無法重構以接受 SAML、OAuth 或 OpenID Connect 等新式驗證通訊協定，您可能需要將部分網域服務移轉至雲端作為雲端部署的一部分。
+如果您有工作負載相依於使用 Kerberos 或 NTLM 等舊版通訊協定的宣告式驗證，而這些工作負載無法重構以接受 SAML、OAuth 或 OpenID Connect 等新式驗證通訊協定，建議您將部分網域服務移轉至雲端作為雲端部署的一部分。
 
 此模式涉及在雲端式虛擬網路中部署執行 Active Directory 的虛擬機器，以提供 Active Directory 網域服務 (AD DS) 給雲端中的資源。 任何移轉至雲端網路的現有應用程式和服務應在稍加修改後可使用這些雲端裝載目錄伺服器。
 

@@ -19,8 +19,8 @@ Azure 提供數個內建原則與角色定義，您可以指派給管理群組�
 
 由於支援治理 MVP 所需的原則，需要套用至所有目前的訂用帳戶，因此將使用根管理群組中建立的內建定義和自訂定義組合，來實作下列商務需求：
 
-1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這將需要[自訂原則定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。
-2. 需要在所有資源上使用下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可使用 `Require specified tag` 內建定義來處理。
+1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這需要[自訂原則定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。
+2. 所有資源上都需要下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可使用 `Require specified tag` 內建定義來處理。
 3. 要求資源的 `Application`標記應符合相關資源群組的名稱。 這可以使用「需要標籤及其值」內建定義來處理。
 
 如需定義自訂原則的詳細資訊，請參閱 [Azure 原則文件](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)。 如需自訂原則的指導方針與範例，請參閱 [Azure 原則範例網站](https://docs.microsoft.com/azure/governance/policy/samples)和相關聯的 [GitHub 存放庫](https://github.com/Azure/azure-policy)。
@@ -53,7 +53,7 @@ Azure 藍圖允許指派一致的原則和角色、Resource Manager 範本的應
     1. [VPN 參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)會建立在 Azure 中建立 VPN 閘道的模式和部署模型。
     2. 驗證內部部署安全性和流量管理機制，會將已連線的雲端網路視為不受信任。 雲端中裝載的資源和服務應該只能存取授權的內部部署服務。
     3. 驗證內部部署資料中心中的本機 Edge 裝置可與 [Azure VPN 閘道需求](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)相容，並設定為存取公用網際網路。
-    4. 請注意，除了最簡單的工作負載以外，請勿將 VPN 通道視為任何項目的生產環境就緒線路。 除了少數需要內部部署連線的簡單工作負載以外，任何項目都應該利用 Azure ExpressRoute。
+    4. 請注意，除了最簡單的工作負載以外，請勿將 VPN 通道視為任何項目的生產環境就緒線路。 除了少數需要內部部署連線的簡單工作負載以外，任何項目都應該使用 Azure ExpressRoute。
 1. 在根管理群組中，建立名為 `secure-hybrid-vnet` 的第二個藍圖定義。
     1. 將 VPN 閘道的 Resource Manager 範本作為成品新增至藍圖定義。
     2. 將虛擬網路的 Resource Manager 範本作為成品新增至藍圖定義。
