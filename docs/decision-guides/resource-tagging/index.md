@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e02fa26454c4e10af7acae80bbe3b89e8ccaee84
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238849"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086817"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -73,7 +73,7 @@ IT 會協調標記重點，例如依據工作負載、功能或環境進行標�
 
 如需有關 Azure 中命名和標記的詳細資訊，請參閱：
 
-- [Azure 資源的命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)。 請參閱本指南了解建議的 Azure 資源命名慣例。
+- [Azure 資源的命名慣例](/azure/architecture/best-practices/resource-naming)。 請參閱本指南了解建議的 Azure 資源命名慣例。
 - [使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
 
 ## <a name="next-steps"></a>後續步驟
