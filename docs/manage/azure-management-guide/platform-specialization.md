@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5b775feb4b007629a6c93e762c8b02e5d5ef0a8a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752930"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 

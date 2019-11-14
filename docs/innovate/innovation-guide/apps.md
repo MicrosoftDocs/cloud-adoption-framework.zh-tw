@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058549"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751566"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ ms.locfileid: "73058549"
 
 Azure App Service 會為應用程式提供裝載環境，讓您不必承擔管理基礎結構和修補作業系統的重任。 提供此環境是為了能夠自動調整規模以符合使用者的需求，同時又不會超過您所定義的限制以防止成本失控。
 
-Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP 和 Python 等語言提供最頂級的支援。 如果您需要裝載其他執行階段堆疊，用於容器的 Web App 可讓您輕鬆快速地在 Azure App Service 環境中裝載 Docker 容器，藉此將您的自訂程式碼堆疊裝載於某個可讓您甩開伺服器事務的環境中。
+Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP 和 Python 等語言提供最頂級的支援。 如果您需要裝載其他執行階段堆疊，用於容器的 Web App 可讓您輕鬆快速地在 App Service 中裝載 Docker 容器，藉此將您的自訂程式碼堆疊裝載於某個可讓您甩開伺服器事務的環境中。
 
 ### <a name="action"></a>動作
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565385"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752909"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 
@@ -46,7 +46,7 @@ ms.locfileid: "73565385"
 
 這些集中式小組也會引導和指示工作負載特製化小組來操作其工作負載。 但日常的營運責任則落在 IT 之外的雲端管理小組。 這類分散式控制是卓越雲端中心成熟與否的其中一個主要指標。
 
-## <a name="beyond-platform-specialization---application-insights"></a>超越平台特製化 - Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>超越平台特製化：Application Insights
 
 您必須更詳細的特定工作負載資訊，才能提供明確的工作負載作業。 在持續改善階段期間，您必須將 Application Insights 新增至雲端管理工具鏈。
 

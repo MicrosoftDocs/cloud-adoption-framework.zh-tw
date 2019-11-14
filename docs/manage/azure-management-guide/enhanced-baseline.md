@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cfe7fdfa47b04cbcff7e09b18c5ba6a0b4fec795
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8cdd9a48d8d229fdca7cba383d677a49525d06cc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565516"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752961"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 
