@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564041"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086794"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Ready：建議的命名和標記慣例
 
@@ -52,7 +52,7 @@ Azure 架構中心的[命名規則和 Azure 資源的限制](https://docs.micros
 
 某些資源名稱 (例如具有公用端點或虛擬機器 DNS 標籤的 PaaS 服務) 具有全域範圍，這表示這些名稱在整個 Azure 平台中必須是唯一的。
 
-資源名稱有長度限制。 當您開發命名慣例時，透過其範圍和長度來平衡名稱中的內嵌內容是很重要的。 若要深入了解命名規則中各資源類型允許的字元、範圍和名稱長度，請參閱 [Azure 資源的命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)。
+資源名稱有長度限制。 當您開發命名慣例時，透過其範圍和長度來平衡名稱中的內嵌內容是很重要的。 若要深入了解命名規則中各資源類型允許的字元、範圍和名稱長度，請參閱 [Azure 資源的命名慣例](/azure/architecture/best-practices/resource-naming)。
 
 #### <a name="recommended-naming-components"></a>建議的命名元件
 
