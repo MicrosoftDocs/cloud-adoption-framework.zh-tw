@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564653"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159886"
 ---
 # <a name="understand-partnership-options"></a>了解合作關係選項
 
@@ -84,7 +84,7 @@ ms.locfileid: "73564653"
 
 **遷移/優化：** Microsoft 服務的[雲端現代化解決方案](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)提供完整的方法，讓您將應用程式和基礎結構移至 Azure，以及在雲端部署後優化並現代化，並以簡化的方式進行備份。
 
-**創新：** Microsoft 服務的[卓越雲端中心（CCoE）解決方案](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)提供 DevOps 的訓練，並使用結合規範性雲端原生服務管理和安全性控制的 DevOps 準則，以協助推動業務創新。提高靈活性，並在安全、可預測且彈性的服務傳遞和作業管理功能內，將時間縮減為價值。
+**創新：** Microsoft 服務的[卓越雲端中心（CCoE）解決方案](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)提供 DevOps 的訓練，並使用 DevOps 準則結合規範性雲端原生服務管理和安全性控制，以協助推動商業創新、增加靈活性，並在安全、可預測且彈性的服務交付和操作管理功能中降低價值。
 
 ## <a name="azure-support"></a>Azure 支援
 

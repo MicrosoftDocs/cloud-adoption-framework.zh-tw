@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753510"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159868"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 
@@ -23,7 +23,7 @@ ms.locfileid: "73753510"
 
 在雲端採用架構中討論原則的大部分內容都是雲端中立的。 不過，整備評估程序必須主要專屬於每個特定的雲端平台。 下列指引假設有遷移至 Azure 的意圖。 它也會假設對[複寫活動](../migrate/replicate.md)使用 Azure Migrate (也稱為 Azure Site Recovery)。 如需替代工具，請參閱[複製選項](../migrate/replicate-options.md)。
 
-本文並非用來記錄所有可能的評估活動。 假設每個環境和業務結果都將規定特定的需求。 為了協助加速建立這些需求，本文的其餘部分會分享一些與[基礎結構](#common-infrastructure-evaluation-activities)、[資料庫](#common-database-evaluation-activities)和[網路](#common-network-evaluation-activities)評估相關的常見評估活動。
+本文不會捕捉所有可能的評估活動。 假設每個環境和業務結果都將規定特定的需求。 為了協助加速建立這些需求，本文的其餘部分會分享一些與[基礎結構](#common-infrastructure-evaluation-activities)、[資料庫](#common-database-evaluation-activities)和[網路](#common-network-evaluation-activities)評估相關的常見評估活動。
 
 ## <a name="common-infrastructure-evaluation-activities"></a>一般基礎結構評估活動
 

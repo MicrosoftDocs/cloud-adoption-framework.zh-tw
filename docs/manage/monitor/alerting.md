@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
-ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
+ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912509"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160286"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>雲端監視指南：警示
 
@@ -67,7 +67,7 @@ Azure 監視器有四種類型的警示，每個都與儲存資料的儲存機�
 
 - [活動記錄警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log)：活動記錄存放區中專案的警示，但服務健康狀態資料除外。
 
-- [服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json)：特殊類型的警示，僅用於來自活動記錄存放區的服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
+- [服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications)：特殊類型的警示，僅用於來自活動記錄存放區的服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
 
 ### <a name="enable-alerting-through-partner-tools"></a>透過合作夥伴工具啟用警示
 

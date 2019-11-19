@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753483"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159906"
 ---
 # <a name="balance-the-portfolio"></a>平衡組合
 
@@ -95,7 +95,7 @@ ms.locfileid: "73753483"
   - 如果工作負載並非策略性的，但與現代化的雲端式應用程式裝載平台相容，則最好稍微重構應用程式以將其部署為新式應用程式。 這可藉由減少雲端移轉的整體 IaaS 和 OS 授權需求，而有助於整體成本的節省。
   - 如果工作負載是第三方應用程式，而且不打算將該工作負載的資料用於下游創新，則最好將其留作待辦項目上的重新裝載選項。
 
-這些問題不僅可為每個工作負載完成定性分析，還可引導對話來協助解決不平衡組合的複雜性。
+這些問題不應為每個工作負載完成的定性分析範圍，但有助於引導有關解決不平衡組合之複雜度的交談。
 
 ## <a name="migrate-process-changes"></a>遷移程序變更
 

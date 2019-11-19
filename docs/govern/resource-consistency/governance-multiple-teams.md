@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656698"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160472"
 ---
 # <a name="governance-design-for-multiple-teams"></a>多個小組的控管設計
 
@@ -82,19 +82,20 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 讓我們看看兩個範例權限模型，再稍微了解這個概念。 在第一個範例中，模型只信任服務管理員來建立資源群組。 在第二個範例中，模型在訂用帳戶範圍將內建擁有者角色指派給每個工作負載擁有者。
 
 在這兩個範例中，有一個訂用帳戶服務管理員在訂用帳戶範圍獲指派內建擁有者角色。 回想一下，內建的擁有者角色會授與擁有權限，包括管理資源的存取權。
+
 ![具有擁有者角色的訂用帳戶服務管理員](../../_images/govern/design/governance-2-1.png)
 *圖 3-具有指派內建擁有者角色之服務系統管理員的訂*用帳戶。
 
 1. 在第一個範例中，有**工作負載擁有者 A**，他們沒有訂用帳戶範圍的任何權限，也就是預設沒有資源存取權管理權限。 此使用者想要為其工作負載部署和管理資源。 他們必須連絡**服務管理員**以要求建立資源群組。
     ![工作負載擁有者要求建立資源群組 A](../../_images/govern/design/governance-2-2.png)
 2. **服務管理員**會檢查其要求，並建立**資源群組 A**。此時，**工作負載擁有者 A**仍然沒有執行任何動作的許可權。
-    ![服務管理員建立資源群組 A](../../_images/govern/design/governance-2-3.png)
+    ![服務管理員會建立資源群組 A](../../_images/govern/design/governance-2-3.png)
 3. **服務管理員**將**工作負載擁有者 A** 新增至**資源群組 A**，並指派[內建參與者角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)。 參與者角色授與**資源群組 A** 的所有權限，管理存取權限除外。
-    ![服務管理員將工作負載擁有者新增至資源群組 A](../../_images/govern/design/governance-2-4.png)
+    ![服務管理員會將工作負載擁有者 a 新增至資源群組 a](../../_images/govern/design/governance-2-4.png)
 4. 假設**工作負載擁有者 A** 具有需求，需要小組成員配對在工作負載容量規劃時，檢視 CPU 和網路流量監視資料。 因為**工作負載擁有者 A**已獲指派參與者角色，所以他們沒有許可權可以將使用者新增至**資源群組 A**。他們必須將此要求傳送給**服務管理員**。
     ![工作負載擁有者要求將工作負載參與者新增至資源群組](../../_images/govern/design/governance-2-5.png)
 5. **服務管理員**會檢查要求，並將兩個**工作負載參與者**使用者新增至**資源群組 A**。這兩個使用者都不需要管理資源的許可權，因此會獲指派[內建讀者角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)。
-    ![服務管理員將工作負載參與者新增至資源群組 A](../../_images/govern/design/governance-2-6.png)
+    ![服務管理員會將工作負載參與者新增至資源群組 A](../../_images/govern/design/governance-2-6.png)
 6. 接下來，**工作負載擁有者 B** 也需要資源群組包含其工作負載的資源。 如同**工作負載擁有者 A**，**工作負載擁有者 B** 最初沒有在訂用帳戶範圍採取任何動作的權限，因此他們必須將要求傳送給**服務管理員**。
     ![工作負載擁有者 B 要求建立資源群組 B](../../_images/govern/design/governance-2-7.png)
 7. **服務管理員**會檢查要求，並建立**資源群組 B**。 ![服務系統管理員建立資源群組 B](../../_images/govern/design/governance-2-8.png)

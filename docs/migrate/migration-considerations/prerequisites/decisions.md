@@ -1,5 +1,5 @@
 ---
-title: 影響遷移的決策
+title: 會影響移轉的決策
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 有關遷移程式的重要決策。
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564590"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159862"
 ---
-# <a name="decisions-that-affect-migration"></a>影響遷移的決策
+# <a name="decisions-that-affect-migration"></a>會影響移轉的決策
 
 在移轉期間，有數個因素會影響決策和執行活動。 本文將說明這些決策的中心主題，並探討在雲端採用架構指引的這一節中討論移轉原則時所產生的幾個問題。
 
@@ -80,8 +80,8 @@ ms.locfileid: "73564590"
 在繼續之前，請先記下以下假設，並與雲端策略小組和雲端採用小組分享：
 
 - 業務成果。
-- 角色。 這將會針對*評估*、*移轉*、*最佳化*和*保護和管理*移轉程序進行記錄和調整。
-- 對「完成」的定義。 這將會分別對*評估*、*移轉*、*最佳化*和*保護和管理*移轉程序進行記錄和調整。
+- 針對*評估*、*遷移*、*優化*和*保護和管理*遷移程式所記載和精簡的角色。
+- 已針對*評估*、*遷移*、*優化*和*保護和管理*遷移程式，分別定義完成、記載和調整。
 - 工作類型。
 - 工作規模。
 - 工作時間。

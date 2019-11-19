@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752884"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160384"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -60,7 +60,7 @@ ms.locfileid: "73752884"
 
 組織也可以選擇將[其一些持續的管理功能外包給服務提供者](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)，讓組織能夠更精確地控制授與其資源的存取權，以及更深入瞭解服務提供者所執行的動作。
 
-- **委派的責任：** 因為不需要集中管理和承擔作業管理額外負荷，所以許多組織的 IT 營運會考慮新的方法。 其中一個常見的方法稱為_委派責任_。 在卓越模型的雲端中心，平臺作業和平臺自動化提供了自助管理工具，可供商務導向作業小組使用，而不受中央 IT 營運小組的影響。 這種方法可讓商務專案關係人完全掌控管理相關預算。 它也能讓雲端中心的優秀（CCOE）小組確保已正確執行一組最小的護欄。 在此模型中，它會作為 broker 和指南，協助企業做出明智的決策。 商務營運負責監督相依工作負載的日常作業。
+- **委派的責任：** 因為不需要集中管理和承擔作業管理額外負荷，所以許多組織的 IT 營運會考慮新的方法。 其中一個常見的方法稱為_委派責任_。 在卓越模型的雲端中心，平臺作業和平臺自動化提供了自助管理工具，可供商務導向作業小組使用，而不受中央 IT 營運小組的影響。 這種方法可讓商務專案關係人完全掌控管理相關預算。 它也能讓雲端中心的優秀（CCoE）小組確保已正確執行一組最小的護欄。 在此模型中，它會作為 broker 和指南，協助企業做出明智的決策。 商務營運負責監督相依工作負載的日常作業。
 
 - **集中式責任：** 合規性需求、技術複雜性和某些共用服務模型可能需要_中央 IT_模型。 在此模型中，它會繼續行使其作業管理責任。 環境設計、管理控制項和治理工具可能會集中管理和控制，這會限制商務專案關係人在進行管理承諾時的角色。 但是對於雲端方法的成本和架構的可見度，讓集中化 IT 能夠更輕鬆地為每個工作負載溝通成本和層級的管理。
 

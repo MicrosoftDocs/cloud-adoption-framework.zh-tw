@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564027"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160515"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -38,7 +38,7 @@ ms.locfileid: "73564027"
 > Azure 參考架構提供範例範本，可讓您用來實作您自己的周邊網路：
 >
 > - [實作 Azure 與內部部署資料中心之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
 

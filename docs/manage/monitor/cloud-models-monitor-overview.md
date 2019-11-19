@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752729"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160257"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
 本文包含我們針對每個雲端部署模型所建議的監視策略（根據下列準則）：
 
 - 您必須維護 Operations Manager 或其他企業監視平臺的承諾，因為它已與您的 IT 作業程式、知識和專業知識整合，或某些功能尚未在 Azure 監視器中提供。
-- 您必須同時監視內部部署和公用雲端中的工作負載，或僅在雲端中。
+- 您必須在內部部署和公用雲端中，或只監視雲端中的工作負載。
 - 您的雲端遷移策略包括現代化 IT 作業，並移至我們的雲端監視服務和解決方案。
-- 您的關鍵系統可能是在私人雲端或實體硬體上裝載，且其為空中或實際隔離。 而且系統必須受到監視。
+- 您的重要系統可能有空中或實體隔離，或裝載于私人雲端或實體硬體上，而且這些系統必須受到監視。
 
 我們的策略包括監視基礎結構（計算、儲存體和伺服器工作負載）、應用程式（使用者、例外狀況和用戶端），以及網路資源的支援。 它提供完整的服務導向監視觀點。
 
@@ -104,7 +104,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 ### <a name="monitor-with-system-center-operations-manager"></a>使用 System Center Operations Manager 進行監視
 
-雖然 System Center Operations Manager 原本是設計為內部部署解決方案，可監視在 IT 環境中執行的應用程式、工作負載和基礎結構，但其演變為包含雲端監視功能。 它會與 Azure、Office 365 和 Amazon Web Services （AWS）整合。 它可以使用設計和更新的管理元件來監視這些不同的環境，以支援它們。  
+雖然 System Center Operations Manager 原本是設計為內部部署解決方案，可監視在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件，但其演變為包含雲端監視功能. 它會與 Azure、Office 365 和 Amazon Web Services （AWS）整合。 它可以使用設計和更新的管理元件來監視這些不同的環境，以支援它們。  
 
 對於已大幅投資 Operations Manager 以達成與 IT 服務管理流程和工具緊密整合的客戶，或對 Azure 的客戶而言，可透過下列方式瞭解問題
 
@@ -181,7 +181,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 您也可以使用 Azure Stack 所包含的[基礎結構監視功能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)組合來達成整體監視。 這些功能可協助您在 Azure Stack 中查看 Azure Stack 區域和[Azure 監視器服務](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)的健康情況和警示，以提供大部分服務的基本層級基礎結構計量和記錄。
 
-如果您已投資 Operations Manager，請使用 Azure Stack 管理元件來監視 Azure Stack 部署的可用性和健全狀況狀態。 這包括區域、資源提供者、更新、更新執行、縮放單位、單位節點、基礎結構角色和其實例（由硬體資源組成的邏輯實體）。 它會使用健康情況和更新資源提供者 REST Api 來與 Azure Stack 進行通訊。 若要監視實體伺服器和存放裝置，請使用 OEM 廠商的管理元件（例如，由聯想、Hewlett Packard 或 Dell 提供）。 Operations Manager 可以使用 SNMP 以原生方式監視網路交換器，以收集基本統計資料。 藉由下列兩個基本步驟，可以使用 Azure 管理元件來監視租使用者工作負載。 設定您想要監視的訂用帳戶，然後新增該訂用帳戶的監視。
+如果您已投資 Operations Manager，請使用 Azure Stack 管理元件來監視 Azure Stack 部署的可用性和健全狀況狀態，包括區域、資源提供者、更新、更新執行、縮放單位、單位節點、基礎結構角色及其實例（由硬體資源組成的邏輯實體）。 此管理元件會使用健康情況和更新資源提供者 REST Api 與 Azure Stack 進行通訊。 若要監視實體伺服器和存放裝置，請使用 OEM 廠商的管理元件（例如，由聯想、Hewlett Packard 或 Dell 提供）。 Operations Manager 可以使用 SNMP 以原生方式監視網路交換器，以收集基本統計資料。 藉由下列兩個基本步驟，可以使用 Azure 管理元件來監視租使用者工作負載。 設定您想要監視的訂用帳戶，然後新增該訂用帳戶的監視。
 
 ## <a name="next-steps"></a>後續步驟
 

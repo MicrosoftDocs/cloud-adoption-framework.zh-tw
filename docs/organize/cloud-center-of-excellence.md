@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564307"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160500"
 ---
 # <a name="cloud-center-of-excellence"></a>雲端卓越中心
 
@@ -22,7 +22,7 @@ ms.locfileid: "73564307"
 
 ## <a name="function-structure"></a>函數結構
 
-CCoE 需要下列各項功能之間的共同作業：
+CCoE 模型需要下列各項功能之間的共同作業：
 
 - 雲端採用（特別是解決方案架構設計人員）
 - 雲端策略（特別是方案和專案經理）
@@ -72,55 +72,55 @@ CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件�
 
 ## <a name="negotiations"></a>初始化
 
-At the root of any CCoE effort is an ongoing negotiation process. The CCoE team negotiates with existing IT functions to reduce central control. The trade-offs for the business in this negotiation are freedom, agility, and speed. The value of the trade-off for existing IT teams is delivered as new solutions. The new solutions provide the existing IT team with one or more of the following benefits:
+在任何 CCoE 投入的根目錄，都是進行中的協商程式。 CCoE 小組會與現有的 IT 功能協調，以降低中央控制。 這項協調的業務取捨是自由、靈活和速度。 現有 IT 小組的取捨價值是以新解決方案的形式提供。 新的解決方案提供現有的 IT 小組下列一或多項優點：
 
-- Ability to automate common issues.
-- Improvements in consistency (reduction in day-to-day frustrations).
-- Opportunity to learn and deploy new technical solutions.
-- Reductions in high severity incidents (fewer quick fixes or late-night pager-duty responses).
-- Ability to broaden their technical scope, addressing broader topics.
-- Participation in higher-level business solutions, addressing the impact of technology.
-- Reduction in menial maintenance tasks.
-- Increase in technology strategy and automation.
+- 能夠自動化常見問題。
+- 一致性的改進（每日挫折減少）。
+- 學習和部署新技術解決方案的機會。
+- 降低高嚴重性事件（較少的快速修正或延遲的呼機回應）。
+- 能夠擴大其技術範圍，並解決更廣泛的主題。
+- 參與較高層級的商務解決方案，以解決技術的影響。
+- 減少起來更加無趣維護工作。
+- 技術策略和自動化的增加。
 
-In exchange for these benefits, the existing IT function may be trading the following values, whether real or perceived:
+在 exchange 中，對於這些優點，現有的 IT 函式可能會與下列值進行交易，不論是真實或認知：
 
-- Sense of control from manual approval processes.
-- Sense of stability from change control.
-- Sense of job security from completion of necessary yet repetitive tasks.
-- Sense of consistency that comes from adherence to existing IT solution vendors.
+- 來自手動核准流程的控制權。
+- 變更控制的穩定性。
+- 從完成必要但重複的工作，到作業安全性的意義。
+- 遵守現有 IT 解決方案廠商的一致性。
 
-In healthy cloud-forward companies, this negotiation process is a dynamic conversation between peers and partnering IT teams. The technical details may be complex, but are manageable when IT understands the objective and is supportive of the CCoE efforts. When IT is less than supportive, the following section on enabling CCoE success can help overcome cultural blockers.
+在狀況良好的雲端轉送公司中，此協調程式是對等之間的動態交談，並與 IT 團隊合作。 技術細節可能很複雜，但可在瞭解目標時進行管理，並可 CCoE 工作。 當它小於支援時，以下有關啟用 CCoE success 的章節有助於克服文化障礙。
 
-## <a name="enable-ccoe-success"></a>Enable CCoE success
+## <a name="enable-ccoe-success"></a>啟用 CCoE 成功
 
-Before proceeding with this model, it is important to validate the company's tolerance for a growth mindset and IT's comfort with releasing central responsibilities. As mentioned above, the purpose of a CCoE is to exchange control for agility and speed.
+在繼續使用此模型之前，請務必驗證公司對成長思維的承受度，並放心地釋出中央責任。 如先前所述，CCoE 的目的是為了靈活和速度而交換控制權。
 
-This type of change takes time, experimentation, and negotiation. There will be bumps and set backs during this maturation process. However, if the team stays diligent and isn't discouraged from experimentation, there is a high probability of success in improving agility, speed, and reliability. One of the biggest factors in success or failure of a CCoE is support from leadership and key stakeholders.
+這種類型的變更需要時間、實驗和協調。 在此成熟過程中，將會有一些拐點和設定的備份。 不過，如果小組保持用心，而且不鼓勵進行實驗，則提升彈性、速度和可靠性的機率會很高。 CCoE 成功或失敗的最大因素之一，就是從領導和重要的專案關係人提供支援。
 
-### <a name="key-stakeholders"></a>Key stakeholders
+### <a name="key-stakeholders"></a>重要的專案關係人
 
-IT Leadership is the first and most obvious stakeholder. IT managers will play an important part. However, the support of the CIO and other executive-level IT leaders is needed during this process.
+IT 領導地位是第一個和最明顯的專案關係人。 IT 管理員將扮演重要的部分。 不過，在此過程中，需要 CIO 和其他主管層級 IT 領導人的支援。
 
-Less obvious is the need for business stakeholders. Business agility and time-to-market are key motivations for CCoE formation. As such, the key stakeholders should have a vested interest in these areas. Examples of business stakeholders include line-of-business leaders, finance executives, operations executives, and business product owners.
+較不明顯的是商務專案關係人的需求。 商業彈性和上市時間是 CCoE 構成的關鍵動機。 因此，重要的專案關係人在這些領域中應該有有意的興趣。 商務專案關係人的範例包括企業營運領導人、財務主管、營運主管和商務產品擁有者。
 
-### <a name="business-stakeholder-support"></a>Business stakeholder support
+### <a name="business-stakeholder-support"></a>商務專案關係人支援
 
-CCoE efforts can be accelerated with support from the business stakeholders. Much of the focus of CCoE efforts is centered around making long-term improvements to business agility and speed. Defining the impact of current operating models and the value of improvements is valuable as a guide and negotiation tool for the CCoE. Documenting the following items is suggested for CCoE support:
+透過商務專案關係人的支援，可以加速 CCoE 工作。 CCoE 投入的大部分重點在於讓長期改善企業的靈活性和速度。 定義目前作業模型的影響，以及改善的價值，對於 CCoE 的指南和協調工具而言相當重要。 建議您為 CCoE 支援記錄下列專案：
 
-- Establish a set of business outcomes and goals that are expected as a result of business agility and speed.
-- Clearly define pain points created by current IT processes (such as speed, agility, stability, and cost challenges).
-- Clearly define the historical impact of those pain points (such as lost market share, competitor gains in features and functions, poor customer experiences, and budget increases).
-- Define business improvement opportunities that are blocked by the current pain points and operating models.
-- Establish timelines and metrics related to those opportunities.
+- 建立一組商業結果和目標，這是企業彈性和速度所預期的結果。
+- 清楚定義目前 IT 程式所建立的痛點（例如速度、靈活性、穩定性和成本挑戰）。
+- 清楚地定義這些痛點的歷程記錄影響（例如，失去市場份額、功能和功能中的競爭者增益、客戶經驗不佳，以及預算增加）。
+- 定義目前的痛點和營運模式所封鎖的商業改進機會。
+- 建立與這些商機相關的時程表和計量。
 
-These data points are not an attack on IT. Instead, they help CCoE learn from the past and establish a realistic backlog and plan for improvement.
+這些資料點不是對它的攻擊。 相反地，它們會協助 CCoE 從過去學習，並建立真實的待處理專案並規劃改進。
 
-**Ongoing support and engagement:** CCoE teams can demonstrate quick returns in some areas. However, the higher-level goals, like business agility and time-to-market, can take much longer. During maturation, there is a high risk of the CCoE becoming discouraged or being pulled off to focus on other IT efforts.
+**持續的支援與參與：** CCoE 小組可以示範一些區域中的快速傳回。 不過，較高層級的目標（例如商務彈性和上市時間）可能需要更長的時間。 在成熟期間，CCoE 的風險很高，也不建議您將焦點放在其他 IT 工作。
 
-During the first six to nine months of CCoE efforts, we recommend that business stakeholders allocate time to meet monthly with the IT leadership and the CCoE. There is little need for formal ceremony to these meetings. Simply reminding the CCoE members and their leadership of the importance of this program can go along way to driving CCoE success.
+在 CCoE 工作的前六到九個月內，我們建議商務專案關係人在每月與 IT 領導和 CCoE 之間配置時間。 這些會議不需要正式的儀式。 只要提醒 CCoE 成員，其重要性就在此計畫的領導地位，就可以推動 CCoE 的成功。
 
-Additionally, we recommend that the business stakeholders stay informed of the progress and blockers experienced by the CCoE team. Many of their efforts will seem like technical minutiae. 不過，對於商務專案關係人而言，請務必瞭解計畫的進度，讓他們可以參與團隊何時失去串流，或是因其他優先順序而成為因應。
+此外，我們建議商務專案關係人隨時掌握 CCoE 小組所遇到的進度和封鎖程式。 其許多工作都看起來像技術 minutiae。 不過，對於商務專案關係人而言，請務必瞭解計畫的進度，讓他們可以參與團隊何時失去串流，或是因其他優先順序而成為因應。
 
 ### <a name="it-stakeholder-support"></a>IT 專案關係人支援
 
@@ -132,7 +132,7 @@ Additionally, we recommend that the business stakeholders stay informed of the p
 
 ## <a name="next-steps"></a>後續步驟
 
-卓越的雲端中心需要[雲端平臺功能](./cloud-platform.md)和[雲端自動化功能](./cloud-automation.md)。 下一步是要讓[雲端平臺功能](./cloud-platform.md)保持一致。
+CCoE 模型需要[雲端平臺功能](./cloud-platform.md)和[雲端自動化功能](./cloud-automation.md)。 下一步是要讓[雲端平臺功能](./cloud-platform.md)保持一致。
 
 > [!div class="nextstepaction"]
 > [配合雲端平臺功能](./cloud-platform.md)

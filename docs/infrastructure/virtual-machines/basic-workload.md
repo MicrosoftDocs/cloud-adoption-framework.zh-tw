@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548097"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160449"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 
@@ -36,20 +36,20 @@ ms.locfileid: "72548097"
 
 ## <a name="basic-web-application-paas"></a>基本 Web 應用程式 (PaaS)
 
-針對基本 Web 應用程式，請從 [Web 應用程式文件](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json)中選取其中一個 5 分鐘快速入門，並遵循其中的步驟。
+針對基本 Web 應用程式，請從 [Web 應用程式文件](https://docs.microsoft.com/azure/app-service)中選取其中一個 5 分鐘快速入門，並遵循其中的步驟。
 
 > [!NOTE]
 > 部分快速入門指南預設會部署資源群組。 在此情況下，不需要明確建立的資源群組。 否則，請將 Web 應用程式部署到先前建立的資源群組。
 
-部署簡單的工作負載之後，您可以深入瞭解將[基本 web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json)部署至 Azure 的最佳作法。
+部署簡單的工作負載之後，您可以深入瞭解將[基本 web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)部署至 Azure 的最佳作法。
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>單一 Windows 或 Linux VM (IaaS)
 
-針對在 VM 上執行的簡單工作負載，第一個步驟是部署虛擬網路。 Azure 中的所有基礎結構即服務 (IaaS) 資源 (例如虛擬機器、負載平衡器和閘道) 都需要虛擬網路。 請了解 [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json)，然後遵循步驟以[使用入口網站將虛擬網路部署至 Azure](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)。 當您在 Azure 入口網站中指定虛擬網路的設定時，請務必指定先前建立的資源群組名稱。
+針對在 VM 上執行的簡單工作負載，第一個步驟是部署虛擬網路。 Azure 中的所有基礎結構即服務 (IaaS) 資源 (例如虛擬機器、負載平衡器和閘道) 都需要虛擬網路。 請了解 [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)，然後遵循步驟以[使用入口網站將虛擬網路部署至 Azure](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)。 當您在 Azure 入口網站中指定虛擬網路的設定時，請務必指定先前建立的資源群組名稱。
 
-下一個步驟是決定要部署單一 Windows 或 Linux VM。 針對 Windows VM，請遵循步驟以[使用入口網站將 Windows VM 部署至 Azure](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)。 同樣地，當您在 Azure 入口網站中指定虛擬機器的設定時，請為先前建立的資源群組指定名稱。
+下一個步驟是決定要部署單一 Windows 或 Linux VM。 針對 Windows VM，請遵循步驟以[使用入口網站將 Windows VM 部署至 Azure](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)。 同樣地，當您在 Azure 入口網站中指定虛擬機器的設定時，請為先前建立的資源群組指定名稱。
 
-遵循步驟並部署 VM 之後，您可以瞭解[在 Azure 上執行 WINDOWS VM 的最佳作法](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)。 針對 Linux VM，請遵循步驟以[使用入口網站將 Linux VM 部署至 Azure](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)。 您也可以深入瞭解[在 Azure 上執行 LINUX VM 的最佳作法](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)。
+遵循步驟並部署 VM 之後，您可以瞭解[在 Azure 上執行 WINDOWS VM 的最佳作法](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm)。 針對 Linux VM，請遵循步驟以[使用入口網站將 Linux VM 部署至 Azure](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal)。 您也可以深入瞭解[在 Azure 上執行 LINUX VM 的最佳作法](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm)。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240110"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159582"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -65,7 +65,7 @@ ms.locfileid: "73240110"
 |訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)|
 |管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
 |資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
-|資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) |
+|資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md)         |
 |命名和標記標準|N/A|[命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|

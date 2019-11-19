@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565158"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160364"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理中的業務重要性
 
-在每個企業中，有少數工作負載都太重要而無法故障。 它們被視為要徑任務。 當這些工作負載發生中斷或效能降低時，對收益和獲利的負面影響可能會在整個公司中感到一致。
+在每個企業中，有少數工作負載都太重要而無法故障。 這些工作負載被視為要徑任務。 當這些工作負載發生中斷或效能降低時，對收益和獲利的負面影響可能會在整個公司中感到一致。
 
 在範圍的另一端，某些工作負載可能會在不使用的情況下，一次執行數個月。 這些工作負載的效能或中斷不佳，但影響已隔離並受到限制。
 
@@ -35,7 +35,7 @@ ms.locfileid: "73565158"
 | 關鍵任務 |  會影響公司的任務，而且可能會明顯影響公司的收益與損失聲明。 |
 | 單位-重大 | 會影響特定業務單位的任務，以及其利潤與損失聲明。 |
 | 高 | 可能不會妨礙任務，但會影響高重要性的程式。 在中斷的情況下可以量化可測量的損失。 |
-| 中型 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
+| 中 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
 | 低 | 對商務程式的影響無法衡量。 品牌損毀或上游損失都不太可能。 對單一小組的當地語系化影響很可能。 |
 | 不支援 | 沒有與此工作負載相關聯的商務擁有者、小組或程式，可能會對工作負載的持續管理進行任何投資。 |
 

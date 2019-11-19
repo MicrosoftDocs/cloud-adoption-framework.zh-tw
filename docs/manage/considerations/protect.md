@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752790"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160277"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 
@@ -31,7 +31,7 @@ Power business 作業的工作負載包含應用程式、資料、虛擬機器�
 
 ### <a name="recovery-time-objectives-rto"></a>復原時間目標（RTO）
 
-發生嚴重損壞時，復原時間目標就是將任何系統復原到其嚴重損壞狀態所應採取的時間量。 針對每個工作負載，這會包含還原 Vm 和應用程式的最低必要功能所需的時間。 它也包含還原應用程式所需之資料所需的時間量。
+發生嚴重損壞時，復原時間目標就是在發生嚴重損壞之前，將任何系統復原到其狀態所需的時間量。 針對每個工作負載，這會包含還原 Vm 和應用程式的最低必要功能所需的時間。 它也包含還原應用程式所需之資料所需的時間量。
 
 在商業方面，RTO 代表商務程式不服務的時間量。 針對任務關鍵性工作負載，此變數應該相對較低，讓商務程式能夠快速繼續。 針對較低優先順序的工作負載，標準的 RTO 層級可能不會對公司效能產生明顯的影響。
 
