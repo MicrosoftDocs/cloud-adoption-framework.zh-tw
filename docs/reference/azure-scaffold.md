@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753764"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160451"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -40,14 +40,14 @@ ms.locfileid: "73753764"
 
 Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實務作法為基礎。 這些用戶端的範圍是從雲端中的小型組織開發解決方案，到大型的跨國企業和獨立軟體廠商，他們正在遷移工作負載和開發雲端原生解決方案。 企業 scaffold 是「特殊用途」的彈性，可同時支援傳統的 IT 工作負載和敏捷式工作負載，例如根據 Azure 平臺功能建立軟體即服務（SaaS）應用程式的開發人員。
 
-企業 Scaffold 的用意是要成為 Azure 中每個新訂用帳戶的基礎。 它可讓系統管理員確保工作負載符合組織的最低治理需求，而不會阻礙事業群和開發人員快速達成他們自己的目標。 根據我們的經驗，這不會造成阻礙，反而是大幅加快公用雲端的成長。
+企業 scaffold 可以做為 Azure 中每個新訂用帳戶的基礎。 它可讓系統管理員確保工作負載符合組織的最低治理需求，而不會阻礙事業群和開發人員快速達成他們自己的目標。 我們的經驗顯示，這會大幅加速，而不會影響公用雲端的成長。
 
 > [!NOTE]
 > Microsoft 已發行稱為[Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)的新功能預覽，此功能可讓您封裝、管理及部署訂用帳戶和管理群組上常用的映像、範本、原則和指令碼。 這項功能像是座橋梁，以 Scaffold 的目的作為參考模型，然後將該模型部署到您的組織。
 >
 下圖顯示 Scaffold 的元件。 其基礎依賴於管理階層和訂用帳戶的可靠計畫。 其要件是由 Resource Manager 原則和強大的命名標準所組成。 Scaffold 的其餘部分是 Azure 核心功能，而這些功能可打造出安全且易於管理的環境，並與之連線。
 
-![企業 Scaffold](../_images/reference/scaffoldv2.png)
+![企業 scaffold](../_images/reference/scaffoldv2.png)
 
 ## <a name="define-your-hierarchy"></a>定義您的階層
 
@@ -228,7 +228,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 
 這項資訊可在多個層級上查看及採取動作，並持續改進。 Azure 會透過下圖中所述的服務，提供 Azure 資源的**共用**、**核心**和**深層**監視功能。
 
-![monitoring](../_images/reference/monitoring.png)
+![監視](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>共用功能
 
@@ -344,4 +344,4 @@ Azure 會提供內部功能和來自廣泛合作夥伴網路的第三方功能�
 
 治理是 Azure 成功的重要關鍵。 本文是以企業 Scaffold 的技術實作為目標，但只論及更廣泛的處理程序和元件之間的關聯性。 原則治理會從上而下流動，並由需要達成的業務來決定。 當然，Azure 治理模型的建立納入 IT 部門代表，但更重要的是應該具有來自事業群領導者及安全性和風險管理階層的強大代表性。 最後，企業 Scaffold 與降低業務風險有關，以達成組織的任務與目標。
 
-既然您已了解訂用帳戶治理，現在就可以參閱這些實務建議。 請參閱[實作 Azure 訂用帳戶治理的範例](./azure-scaffold-examples.md)。
+既然您已了解訂用帳戶治理，現在就可以參閱這些實務建議。 如需詳細資訊，請參閱[Azure 準備就緒的最佳做法](../ready/azure-best-practices/index.md)。
