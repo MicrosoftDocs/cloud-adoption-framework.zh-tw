@@ -1239,8 +1239,6 @@
       href: reference/cloud-operating-model.md
     - name: Azure 企業 Scaffold
       href: reference/azure-scaffold.md
-    - name: 實作 Azure 企業 Scaffold
-      href: reference/azure-scaffold-examples.md
     - name: 虛擬資料中心 (VDC)
       href: reference/vdc.md
     - name: Azure 如何運作？
