@@ -5,17 +5,17 @@ description: 了解如何為您的 Azure 管理環境設定監視、報告和警
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548875"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251357"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 
@@ -98,12 +98,13 @@ Azure 服務健康狀態包含：
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor 是免費的個人化雲端顧問，可協助您遵循及實作 Azure 部署的最佳做法。 它會分析資源組態和使用量遙測，然後建議有助於將環境最佳化的解決方案。 建議分為四個類別：
+Azure Advisor 是免費的個人化雲端顧問，可協助您遵循及實作 Azure 部署的最佳做法。 它會分析資源組態和使用量遙測，然後建議有助於將環境最佳化的解決方案。 建議分為以下幾個類別：
 
 - **高可用性：** 可改善商務關鍵應用程式的持續性。 建議做法可能包括將虛擬機器新增至可用性設定組，或新增異地備援的端點。
 - **安全性：** 可偵測可能導致安全性漏洞的威脅和弱點。 建議做法可能包括套用磁碟加密，或啟用網路安全性群組。
 - **效能：** 可提升應用程式的速度。 建議做法可能包括藉由建立索引或重新設定流量管理員設定來提升 SQL 查詢效能。
 - **成本：** 可最佳化並降低整體 Azure 費用。 建議做法可能包括將未充分使用的虛擬機器調整大小或關閉，或改用 Azure 保留項目以降低擁有權總成本。
+- **卓越的營運績效：** 改善流程和工作流程效率以及管理能力。 建議可能包括設定和強制執行 Azure 原則規則、修復不正確的記錄警示規則，以及設定 Azure 服務健康狀態警示。
 
 Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來提供建議。 您可以定期查看 Advisor 以獲得最新建議。
 

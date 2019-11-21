@@ -5,17 +5,17 @@ description: 了解如何設定預算、付款和了解 Azure 資源的發票。
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 57725e56c973a8fb094c50987d84c26a70c0ead6
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683829"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251669"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
@@ -65,8 +65,8 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每�
 
 產生的預估值 (如下圖所示) 可識別計算和儲存體的每月成本，這通常是雲端成本中最大的部分。
 
-![compute-storage-monthly-cost-estimate.png](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*圖 1 - Azure Migrate 中評量的成本詳細資料檢視影像。*
+![成本詳細資料檢視](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
+*圖 1 - 此影像顯示 Azure Migrate 中評估的成本詳細資料檢視。*
 
 ## <a name="additional-resources"></a>其他資源
 

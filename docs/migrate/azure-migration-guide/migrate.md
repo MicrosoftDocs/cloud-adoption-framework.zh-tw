@@ -5,17 +5,17 @@ description: 遷移資產
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753570"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251828"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
@@ -265,7 +265,7 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 
 當您移轉至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
-[Azure DevOps](https://dev.azure.com) 提供所有必要的功能，並且可讓整合 Azure、內部部署甚或其他雲端。 前往[此處](https://azure.microsoft.com/services/devops)深入了解。 如需引導式訓練，請參閱 [Azure DevOps 的 CI 和 CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
+Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱 [Azure DevOps 的 CI 和 CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
 
 # <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
 
