@@ -5,17 +5,17 @@ description: 了解如何透過角色型存取控制 (RBAC) 為 Azure 環境設�
 author: LijuKodicheraJayadevan
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ced1c366b4eb85c9692e9d65ebdbb034e32bc9b3
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 1cf7dfb41d9fc48cb00f8d8184fad5d2485eeb0c
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239873"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251762"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>透過角色型存取控制來管理對 Azure 環境的存取
 

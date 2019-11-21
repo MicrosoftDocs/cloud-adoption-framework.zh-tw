@@ -5,17 +5,17 @@ description: 評估數位資產
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 27fa0720308910db32a340943f584a4502f52e94
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753576"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251429"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 

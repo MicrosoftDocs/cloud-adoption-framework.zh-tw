@@ -5,17 +5,17 @@ description: 保護及管理
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: aaa00910fb37545949087c71d6300918a3435cc2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bd06a0e878b98ff52c7d2c5ab8a3b978758a2ef6
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058750"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251614"
 ---
 # <a name="secure-and-manage"></a>保護及管理
 

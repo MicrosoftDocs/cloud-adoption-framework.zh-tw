@@ -5,17 +5,17 @@ description: 移轉至 Azure 的必要條件
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: de42ed98f4b7101b2de10240988e9964f57cd415
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 93479cb16b25d40d2f49356b19c4722497bc19f4
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818909"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251796"
 ---
 ::: zone target="chromeless"
 

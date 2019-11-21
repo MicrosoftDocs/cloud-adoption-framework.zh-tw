@@ -5,17 +5,17 @@ description: 透過逐步指南了解如何有效地將組織的服務移轉至 
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 9f27c7fca9a9a5bd2f5c38f78b8db2092b24d014
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239989"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251493"
 ---
 ::: zone target="docs"
 

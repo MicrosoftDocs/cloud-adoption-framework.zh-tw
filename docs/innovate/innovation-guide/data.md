@@ -5,17 +5,17 @@ description: 了解如何使用 Azure 將資料大眾化
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 5203ae99a7cf3c5e78f72edf020234f3ea703d36
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565559"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251874"
 ---
 ::: zone target="docs"
 

@@ -5,17 +5,17 @@ description: 了解如何使用 Azure 來實現採用
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d686bc5bbd4224a52b4053995bad0feb8aa1da42
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 770356c4c8254246794a7e71f6d1c565060dcf5b
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058511"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251901"
 ---
 ::: zone target="docs"
 

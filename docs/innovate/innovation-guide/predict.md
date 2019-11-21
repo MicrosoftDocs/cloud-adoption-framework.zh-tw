@@ -5,17 +5,17 @@ description: 了解如何使用 Azure 進行預測和影響。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bee593827b58f1ccca6e82a3ae36d2b6352f0754
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160410"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251844"
 ---
 ::: zone target="docs"
 

@@ -5,17 +5,17 @@ description: 了解如何設定 Azure 環境的控管、安全性和合規性。
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ec4f0262c4d71752719285d225001a8fcf31d611
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7a305e1bd3ef8f3f7325905c523d9fe5ded2fc60
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73563420"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251323"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 

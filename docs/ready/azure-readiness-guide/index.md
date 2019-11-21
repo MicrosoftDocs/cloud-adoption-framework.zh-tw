@@ -5,17 +5,17 @@ description: 透過逐步指南了解如何有效地為組織設定 Azure。
 author: timleyden
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2748a79d0ee6cd60139f26ce3da96b46dc328e9e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b3c7d789265ec48adb177e1e2b7ffbb7e17ffdea
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566739"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251593"
 ---
 ::: zone target="docs"
 

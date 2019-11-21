@@ -5,17 +5,17 @@ description: Azure 創新指南 - 透過裝置來互動
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cf0671d4ea4c8d008010d43379cd782ff58e38ed
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047562"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251892"
 ---
 ::: zone target="docs"
 

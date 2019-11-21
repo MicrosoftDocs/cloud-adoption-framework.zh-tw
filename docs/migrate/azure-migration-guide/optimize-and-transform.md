@@ -5,17 +5,17 @@ description: 最佳化和轉換
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d8a7d7d547034492dabd57b75f741d9e6cd27994
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024737"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251641"
 ---
 # <a name="optimize-and-transform"></a>最佳化和轉換
 
