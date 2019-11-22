@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025137"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566604"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>在 Azure 上重建內部部署應用程式
 
@@ -54,7 +54,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項應用程式需求。 �
 - 這些 VM 位於 VMware ESXi 主機 **contosohost1.contoso.com** (6.5 版)
 - VMware 環境是由 VM 上執行的 vCenter Server 6.5 (**vcenter.contoso.com**) 進行管理。
 - Contoso 有內部部署資料中心 (contoso-datacenter) 以及內部部署網域控制站 (**contosodc1**)。
-- 移轉完成之後，將會解除委任 Contoso 資料中心的內部部署 VM。
+- 移轉完成之後，會解除委任 Contoso 資料中心的內部部署 VM。
 
 ### <a name="proposed-architecture"></a>建議的架構
 
@@ -93,14 +93,14 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **說明** | **成本**
+**服務** | **描述** | **成本**
 --- | --- | ---
-[AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
-[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/kubernetes-service)。
+[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/functions)。
+[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/container-registry)。
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [詳細資訊](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -110,7 +110,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 --- | ---
 **Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
 **Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。
-**開發人員必要條件** | 在開發人員工作站上，Contoso 需要下列工具：<br/><br/> - [Visual Studio 2017 Community 版本：15.5 版](https://www.visualstudio.com)<br/><br/> 已啟用 .NET 工作負載。<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> 已設定為使用 Windows 容器的 [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
+**開發人員必要條件** | 在開發人員工作站上，Contoso 需要下列工具：<br/><br/> - [Visual Studio 2017 Community 版本：15.5 版](https://www.visualstudio.com)<br/><br/> 已啟用 .NET 工作負載。<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> 已設定為使用 Windows 容器的 [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -120,30 +120,30 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 > [!div class="checklist"]
 >
-> - **步驟 1：佈建 AKS 和 ACR。** Contoso 會使用 PowerShell 佈建受控 AKS 叢集和 Azure 容器登錄。
-> - **步驟 2：建置 Docker 容器。** 他們會使用 Azure DevOps 來設定 Docker 容器的 CI，然後將其推送至 ACR。
-> - **步驟 3：部署後端微服務。** 他們會部署基礎結構的其餘部分，以供後端微服務使用。
-> - **步驟 4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 Blob 儲存體、Cosmos DB 和視覺 API。
-> - **步驟 5：移轉後端。** 他們會部署微服務並在 AKS 上執行，以移轉後端。
-> - **步驟 6：發佈前端。** 他們會將 SmartHotel360 應用程式發佈至 App Service，以及寵物服務將呼叫的函式應用程式。
+> - **步驟1：布建 AKS 和 ACR。** Contoso 會使用 PowerShell 佈建受控 AKS 叢集和 Azure 容器登錄。
+> - **步驟2：建立 Docker 容器。** 他們會使用 Azure DevOps 來設定 Docker 容器的 CI，然後將其推送至 ACR。
+> - **步驟3：部署後端微服務。** 他們會部署基礎結構的其餘部分，以供後端微服務使用。
+> - **步驟4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 Blob 儲存體、Cosmos DB 和視覺 API。
+> - **步驟5：遷移後端。** 他們會部署微服務並在 AKS 上執行，以移轉後端。
+> - **步驟6：發佈前端。** 他們會將 SmartHotel360 應用程式發佈至 App Service，以及寵物服務將呼叫的函式應用程式。
 
-## <a name="step-1-provision-back-end-resources"></a>步驟 1:佈建後端資源
+## <a name="step-1-provision-back-end-resources"></a>步驟 1：佈建後端資源
 
 Contoso 管理員會執行部署指令碼，使用 AKS 和 Azure Container Registry (ACR) 來建立受控 Kubernetes 叢集。
 
 - 本節的指示會使用 **SmartHotel360-Azure-backend** 存放庫。
-- **SmartHotel360-Azure-backend** GitHub 存放庫包含這部分部署的所有軟體。
+- **SmartHotel360-Azure-backend** GitHub 存放庫包含這部分部署的所有軟體。  
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
-1. 在開始之前，Contoso 管理員會確保在他們要用於部署的開發機器上已安裝所有先決條件軟體。
+1. 在開始之前，Contoso 管理員會確定所有先決條件軟體都安裝在用來部署的開發電腦上。
 2. 他們會使用 Git 將本機存放庫複製到開發機器：`git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>佈建 AKS 和 ACR
 
 Contoso 管理員會依下列方式進行佈建：
 
-1. 他們會使用 Visual Studio Code 來開啟資料夾，然後移至 **/deploy/k8s** 目錄，其中包含指令碼 **gen-aks-env.ps1**。
+1. 他們會使用 Visual Studio Code 開啟資料夾，並移至包含腳本**gen-aks-env.ps1**的 **/deploy/k8s**目錄。
 2. 他們會執行指令碼，使用 AKS 和 ACR 來建立受控 Kubernetes 叢集。
     ![AKS](./media/contoso-migration-rebuild/aks1.png)
 3. 在檔案開啟時，他們會將 $location 參數更新為 **eastus2**，並儲存檔案。
@@ -152,7 +152,7 @@ Contoso 管理員會依下列方式進行佈建：
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. 在 PowerShell 整合式終端機中，他們會使用 Connect-AzureRmAccount 命令登入 Azure。 [深入了解](https://docs.microsoft.com/powershell/azure/get-started-azureps)如何開始使用 PowerShell。
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. 他們會執行 **az login** 命令來驗證 Azure CLI，並遵循指示以使用其網頁瀏覽器進行驗證。 [深入了解](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
+6. 他們會執行 `az login` 命令來驗證 Azure CLI，並遵循指示使用其網頁瀏覽器進行驗證。 [深入了解](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. 他們會執行下列命令，以傳遞 ContosoRG 的資源群組名稱、AKS 叢集 smarthotel-aks-eus2 的名稱和新的登錄名稱。
 
@@ -178,13 +178,15 @@ Contoso 管理員會依下列方式進行佈建：
 
 11. 他們會執行下列命令來啟動 Kubernetes 儀表板：
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. 隨即會有瀏覽器索引標籤開啟為儀表板。 這是使用 Azure CLI 來建立通道的連線。
 
     ![AKS](./media/contoso-migration-rebuild/aks9.png)
 
-## <a name="step-2-configure-the-back-end-pipeline"></a>步驟 2:設定後端管線
+## <a name="step-2-configure-the-back-end-pipeline"></a>步驟 2：設定後端管線
 
 ### <a name="create-an-azure-devops-project-and-build"></a>建立 Azure DevOps 專案和組建
 
@@ -278,7 +280,7 @@ Contoso 會建立 Azure DevOps 專案，並設定 CI 組建來建立容器，再
 - 將微服務部署至 AKS 叢集。
 - 他們的第一步是使用 Azure DevOps 來更新微服務的連接字串。 接著，他們會設定新的 Azure DevOps 發行管線來部署微服務。
 - 本節中的指示會使用 [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend) 存放庫。
-- 請注意，此文章未涵蓋某些組態設定 (例如 Active Directory B2C)。 如需有關這些設定的詳細資訊，請參閱存放庫。
+- 本文未涵蓋部分設定設定（例如 Active Directory B2C）。 如需這些設定的詳細資訊，請參閱上述的存放庫。
 
 他們會建立管線：
 
@@ -500,7 +502,7 @@ Contoso 管理員現在已可發佈網站。
 11. 在 [環境] 中，他們會選取 [Staging] 底下的 [1 個作業, 1 個工作]。
 12. 選取訂用帳戶和應用程式名稱之後，他們會開啟 [Azure App Service 部署] 工作。 此部署已設定成使用 [預備環境] 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
 
-     ![插槽](./media/contoso-migration-rebuild/vsts-publishfront7.png)
+     ![位置](./media/contoso-migration-rebuild/vsts-publishfront7.png)
 
 13. 在 [管線] 中，他們會新增新的階段。
 
@@ -537,7 +539,7 @@ Contoso 管理員現在已可發佈網站。
 
 23. 管線會完成交換。
 
-    ![完成交換](./media/contoso-migration-rebuild/vsts-publishfront16.png)
+    ![完整的交換](./media/contoso-migration-rebuild/vsts-publishfront16.png)
 
 24. 小組會檢查 [生產環境] 位置，以確認該 Web 應用程式已於 `https://smarthotelcontoso.azurewebsites.net/` 投入生產環境。
 
@@ -559,11 +561,11 @@ Contoso 管理員會依下列方式部署應用程式。
 9. 建置成功之後，他們會建置發行管線，其中會新增 [使用位置的 Azure App Service 部署]。
 10. 他們會將環境命名為 **Prod**，然後選取訂用帳戶。 他們會將 [應用程式類型] 設定為 [函數應用程式]，並將應用程式服務名稱設定為 **smarthotelpetchecker**。
 
-    ![函數應用程式](./media/contoso-migration-rebuild/petchecker2.png)
+    ![函式應用程式](./media/contoso-migration-rebuild/petchecker2.png)
 
 11. 他們會新增 [建置] 成品。
 
-    ![成品](./media/contoso-migration-rebuild/petchecker3.png)
+    ![構件](./media/contoso-migration-rebuild/petchecker3.png)
 
 12. 他們會啟用 [持續部署觸發程序]，然後選取 [儲存]。
 13. 他們會選取 [將新組建排入佇列]，以執行完整的 CI/CD 管線。
@@ -583,17 +585,17 @@ Contoso 管理員會依下列方式部署應用程式。
 
 在 Azure 中有了所移轉的資源之後，Contoso 現在必須讓新基礎結構完整運作且受到保護。
 
-### <a name="security"></a>安全性
+### <a name="security"></a>Security
 
-- Contoso 必須確保新資料庫安全無虞。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso 必須確保新資料庫安全無虞。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 應用程式必須更新為搭配使用 SSL 與憑證。 容器執行個體應重新部署為會在 443 上接聽。
-- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
+- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [詳細資訊](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>備份和災害復原
 
-- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
-- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
+- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [詳細資訊](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

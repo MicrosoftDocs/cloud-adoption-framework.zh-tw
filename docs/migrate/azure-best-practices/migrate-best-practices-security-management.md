@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564767"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160047"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>保護及管理已移轉到 Azure 之工作負載的最佳做法
 
@@ -38,10 +38,10 @@ ms.locfileid: "73564767"
 
 Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，以提供能保護工作負載不受攻擊的安全性功能。 Azure 資訊安全中心能提供統一的安全性管理。 您可以從從資訊安全中心跨工作負載套用安全性原則、限制暴露在威脅下的風險，以及偵測並回應攻擊。 資訊安全中心會跨 Azure 租用戶分析資源及設定，然後提供安全性建議，其中包括：
 
-- **集中式原則管理** – 集中管理所有混合式雲端工作負載的安全性原則，確保符合公司或法規的安全性需求。
-- **連續安全性評估** – 監視機器、網路、儲存體與資料服務以及應用程式的安全性狀態，以找出潛在的安全性問題。
-- **的建議** – 運用已排定優先順序和可操作的安全性建議，在攻擊者入侵之前修正安全性弱點。
-- **已排定優先順序的警示和事件** - 藉由已排定優先順序的安全性警示和事件，首先專注處理最嚴重的威脅。
+- **集中式原則管理：** 藉由集中管理所有混合式雲端工作負載的安全性原則，確保符合公司或法規的安全性需求。
+- **持續安全性評估：** 監視機器、網路、儲存體和資料服務以及應用程式的安全性狀態，以找出潛在的安全性問題。
+- 可**操作的建議：** 補救安全性弱點，攻擊者可以利用已設定優先順序和可操作的安全性建議來加以入侵。
+- **排定優先順序的警示和事件：** 先專注于最重要的威脅，再加上優先順序的安全性警示和事件。
 
 除了評量和建議之外，Azure 資訊安全中心也能提供可針對特定資源啟用的其他安全性功能。
 
@@ -136,8 +136,7 @@ Azure 能提供數個解決方案：
   - Web 應用程式防火牆可以使用 Azure 監視器進行監視，並已整合至 Azure 資訊安全中心。
 
 ![保護 Web 應用程式](./media/migrate-best-practices-security-management/web-apps.png)
-
-*Azure 金鑰保存庫*
+*Azure Key Vault*
 
 **深入了解：**
 
@@ -175,7 +174,6 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 - 請養成經常檢閱記錄的習慣，或與您的安全性資訊與事件管理 (SIEM) 工具整合以自動檢閱異常狀況。 如果您不是使用「Premium 1」或「Premium 2」，便必須自行進行許多分析，或是使用您的 SIEM 系統。 分析包含尋找具風險的登入和事件，以及其他使用者攻擊模式。
 
 ![使用者和群組](./media/migrate-best-practices-security-management/azure-ad.png)
-
 *Azure AD 使用者和群組*
 
 **深入了解：**
@@ -214,19 +212,17 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 - 如果您會使用 Azure AD Connect 將內部部署 Active Directory 同步至 Azure AD，請考慮使內部部署安全性群組的名稱與 Azure 中資源群組的名稱相符。
 
 ![命名](./media/migrate-best-practices-security-management/naming.png)
-
 *資源群組命名*
 
 **深入了解：**
 
-- [了解](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)命名慣例。
+- [了解](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)命名慣例。
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>最佳做法：執行資源群組的刪除鎖定
 
 您最不想遇到的情況，便是資源群組被意外刪除而消失不見。 我們建議您實作刪除鎖定來避免發生此情況。
 
 ![刪除鎖定](./media/migrate-best-practices-security-management/locks.png)
-
 *刪除鎖定*
 
 **深入了解：**
@@ -359,7 +355,7 @@ Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備
 - **在復原服務保存庫中直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這能提供單一位置以追蹤及管理備份，以及更細微的備份與還原選項。 備份一天最多三次，並於檔案/資料夾層級執行。 它無法感知應用程式，且不支援 Linux。 使用此方法，在每個想要備份的 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
 - **將 VM 保護至 Azure 備份伺服器。** Azure 備份伺服器是搭配 Azure 備份免費提供。 VM 會被備份到本機 Azure 備份伺服器儲存體。 您接著會將 Azure 備份伺服器備份到 Azure 的保存庫中。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用程式層級進行備份，例如透過備份 SQL Server 或 SharePoint。
 
-針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 Azure 中已備份的待用資料會使用[儲存體服務加密 (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) 進行加密，以及適用於傳輸與儲存的資料。
+針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 Azure 中已備份的待用資料會使用[儲存體服務加密 (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) 進行加密，以及適用於傳輸與儲存的資料。
 
 ![Azure 備份](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure 備份*
@@ -401,8 +397,7 @@ Azure Site Recovery 是在發生中斷的情況下確保 Azure VM 可以上線�
 Site Recovery 會將 VM 從主要 Azure 區域複寫到次要 Azure 區域。 發生災害時，您會從主要區域將 VM 容錯移轉到次要區域，並如往常一般地繼續存取它們。 當作業返回正常時，您便可以將 VM 容錯回復到主要區域。
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
-*站台復原*
+*Site Recovery*
 
 **深入了解：**
 
@@ -420,7 +415,6 @@ Azure 受控磁碟會管理與 VM 磁碟相關的儲存體帳戶，從而簡化 
 - 您應該在可用性設定組中建立 VM，以取得高復原性和可用性。 發生計畫性或非計畫性的中斷時，可用性設定組能確保設定組中至少有一個 VM 會持續可用。
 
 ![受控磁碟](./media/migrate-best-practices-security-management/managed-disks.png)
-
 *受控磁碟*
 
 **深入了解：**

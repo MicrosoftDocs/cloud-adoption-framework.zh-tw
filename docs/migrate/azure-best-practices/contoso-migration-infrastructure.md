@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566507"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160374"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>部署移轉基礎結構
 
@@ -23,7 +23,7 @@ ms.locfileid: "73566507"
 - 提供的範例架構為 Contoso 專用。 進行有關訂用帳戶設計或網路架構的重要基礎結構決策時，請檢閱您自己的組織商務需求、結構和技術需求。
 - 您是否需要本文所說明的所有元素，取決於您的移轉策略。 例如，如果您只是要在 Azure 中建置雲端原生應用程式，則可能需要較不複雜的網路結構。
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>Overview
 
 Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 Contoso 通常有六大領域的事項需要考量：
 
@@ -47,14 +47,14 @@ Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 C
 
 ## <a name="on-premises-architecture"></a>內部部署架構
 
-下圖顯示目前的 Contoso 內部部署基礎結構。
+下圖顯示目前的 contoso 內部部署基礎結構。
 
  ![Contoso 架構](./media/contoso-migration-infrastructure/contoso-architecture.png)
 
 - Contoso 有一個位於美國東部紐約市的主要資料中心。
 - 在全美另有三家地區性分公司。
 - 主要資料中心透過光纖都會乙太網路連線 (500 mbps) 連到網際網路。
-- 每家分公司都會使用企業級連線從本機連到網際網路，透過 IPSec VPN 通道連回主要資料中心。 這可讓整個網路永久連線，並將網際網路連線最佳化。
+- 每家分公司皆使用企業級連線從本機連到網際網路，並透過 IPSec VPN 通道連回主要資料中心。 這可讓整個網路永久連線，並將網際網路連線最佳化。
 - 主要資料中心已透過 VMware 完全虛擬化。 Contoso 有兩部 ESXi 6.5 虛擬化主機，均由 vCenter Server 6.5 管理。
 - Contoso 使用 Active Directory 進行身分識別管理，並使用內部網路上的 DNS 伺服器。
 - 資料中心的網域控制站會在 VMware VM 上執行。 地區分公司的網域控制站會在實體伺服器上執行。
@@ -299,7 +299,7 @@ Azure 備份可讓您備份及還原 Azure VM 磁碟。
 - 備份在所有應用程式中都是一致的，以確保備份的資料在交易上是一致的，而且應用程式會在還原後啟動。
 - Azure 備份支援本地備援儲存體 (LRS)，以便在本機硬體故障時，在資料中心內複寫多個備份資料複本。
 - 發生區域性中斷時，Azure 備份也支援異地備援儲存體 (GRS)，以將您的備份資料複寫到次要配對的區域。
-- Azure 備份使用 AES 256 來加密傳輸中的資料。 已備份的待用資料是使用[儲存體服務加密 (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)進行加密。
+- Azure 備份使用 AES 256 來加密傳輸中的資料。 已備份的待用資料是使用[儲存體服務加密 (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)進行加密。
 
 Contoso 會在所有生產 VM 上使用 Azure 備份搭配 GRS，以確保工作負載資料會進行備份，並可在發生中斷或其他中斷情況時快速還原。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。
 
@@ -654,7 +654,7 @@ Contoso 在設定身分識別和存取控制時，即已開始設立控管和安
 
 Contoso 想要從幾個原則開始著手：
 
-- 其想要透過一項原則來確保資源只能部署在 EUS2 和 CUS 區域中。
+- 它想要確保資源只能部署在 EUS2 和 CU 區域中的原則。
 - 其想要將 VM SKU 限定為已核准的 SKU。 其目的是要確保不會使用昂貴的 VM SKU。
 
 #### <a name="limit-resources-to-regions"></a>將資源限定於區域
@@ -716,7 +716,7 @@ ServiceManager | 資源之 ITIL 服務管理員的電子郵件別名。
 COBPriority | BCDR 的企業所設定的優先順序。 1-5 的值。
 ENV | 可能的值為 DEV、STG、PROD。 分別代表開發、預備和生產。
 
-例如：
+例如︰
 
  ![Azure 標記](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -774,13 +774,13 @@ Contoso 會混合實作 NSG 與 ASG。 Contoso 對 NSG 管理有所顧慮。 其
 
 Contoso 建置了此機制尋找其應用程式的模型。
 
-![安全性](./media/contoso-migration-infrastructure/asg.png)
+![Security](./media/contoso-migration-infrastructure/asg.png)
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-**動作** | **名稱** | **來源** | **目標** | **連接埠**
+**Action** | **名稱** | **來源** | **目標** | **連接埠**
 --- | --- | --- | --- | ---
-允許 | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
+允許 | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
 允許 | AllowWebToApp | APP1-FE | APP1-APP | 80、443
 允許 | AllowAppToDB | APP1-APP | APP1-DB | 1433
 拒絕 | DenyAllInbound | 任意 | 任意 | 任意
