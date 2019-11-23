@@ -23,7 +23,7 @@ ms.locfileid: "73752828"
 > [!NOTE]
 > Azure SQL Database 受控執行個體目前處於預覽狀態。
 
-此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360) 進行下載。
+此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [github](https://github.com/Microsoft/SmartHotel360) 進行下載。
 
 ## <a name="business-drivers"></a>商業動機
 

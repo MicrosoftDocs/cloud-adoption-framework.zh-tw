@@ -20,7 +20,7 @@ ms.locfileid: "74160335"
 
 本文示範虛構公司 Contoso 如何在移轉至 Azure 的過程中，重新裝載在 VMware VM 上執行的兩層式 Windows .NET 應用程式。 Contoso 會將應用程式前端 VM 移轉至 Azure VM，並將應用程式資料庫移轉至 Azure SQL Server VM，在具有 SQL Server AlwaysOn 可用性群組的 Windows Server 容錯移轉叢集中執行。
 
-此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360) 進行下載。
+此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [github](https://github.com/Microsoft/SmartHotel360) 進行下載。
 
 ## <a name="business-drivers"></a>商業動機
 
@@ -429,7 +429,7 @@ Contoso 管理員會依照下列方式執行這些步驟：
     ![OVF 範本](./media/contoso-migration-rehost-vm-sql-ag/vcenter-wizard.png)
 
 3. 當他們第一次啟動 VM 時，就像是在安裝 Windows Server 2016 一樣。 他們接受授權合約，並輸入系統管理員密碼。
-4. 安裝完成之後，他們會以系統管理員身分登入 VM。 第一次登入時，依預設會執行 Azure Site Recovery 設定工具。
+4. 安裝完成之後，他們會以系統管理員身分登入 VM。 第一次登入時，根據預設，Azure Site Recovery 設定工具會啟動。
 5. 在此工具中，他們指定一個名稱，用以在保存庫中註冊組態伺服器。
 6. 此工具會檢查 VM 是否可連線到 Azure。 建立連線之後，他們會登入 Azure 訂用帳戶。 認證必須能夠存取您要在其中註冊組態伺服器的保存庫。
 
@@ -443,7 +443,7 @@ Contoso 管理員會依照下列方式執行這些步驟：
 
 11. 接著，他們下載並安裝 MySQL Server 和 VMware PowerCLI。
 12. 驗證之後，他們會指定 vCenter 伺服器或 vSphere 主機的 FQDN 或 IP 位址。 他們會保留預設的連接埠，並且為 vCenter Server 指定易記名稱。
-13. 他們指定先前為自動探索建立的帳戶，以及用來自動安裝行動服務的認證。 對於 Windows 機器，此帳戶需具備 VM 的本機系統管理員權限。
+13. 他們會指定為自動探索而建立的帳戶，以及用來自動安裝行動服務的認證。 對於 Windows 機器，此帳戶需具備 VM 的本機系統管理員權限。
 
     ![vCenter](./media/contoso-migration-rehost-vm-sql-ag/cswiz2.png)
 

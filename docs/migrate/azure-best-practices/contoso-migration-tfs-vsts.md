@@ -63,7 +63,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 ![移轉程序](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 
