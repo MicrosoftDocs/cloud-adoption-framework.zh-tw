@@ -18,7 +18,7 @@ ms.locfileid: "74251437"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
-「移轉登陸區域」一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。 A migration landing zone is the final deliverable of the Azure setup guide. 本文結合本指南討論的所有整備主題，並會將所做決策套用至您第一個移轉登陸區域的部署。
+「移轉登陸區域」一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。 遷移登陸區域是 Azure 設定指南的最後一項交付成果。 本文結合本指南討論的所有整備主題，並會將所做決策套用至您第一個移轉登陸區域的部署。
 
 下列各節將概述常用來建立移轉期間適用環境的登陸區域。 本文中所述的環境或登陸區域也可在 Azure 藍圖中取得。 您可以使用「雲端採用架構」移轉登陸區域藍圖，只需按一下即可部署已定義的環境。
 
@@ -44,10 +44,10 @@ ms.locfileid: "74251437"
 
 我們定義此初始登陸區域時，已使用下列假設或條件約束。 如果這些假設符合您的條件約束，您可以使用藍圖來建立您的第一個登陸區域。 藍圖也可以加以擴充，以建立符合您特有條件限制的登陸區域藍圖。
 
-- **Subscription limits:** This adoption effort isn't expected to exceed [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits). 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
-- **Compliance:** No third-party compliance requirements are needed in this landing zone.
-- **Architectural complexity:** Architectural complexity doesn't require additional production subscriptions.
-- **Shared services:** There are no existing shared services in Azure that require this subscription to be treated like a spoke in a hub and spoke architecture.
+- **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-subscription-service-limits)用帳戶限制。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
+- **合規性：** 此登陸區域不需要協力廠商合規性需求。
+- **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
+- **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
 
 如果這些假設與您目前的環境一致，則此藍圖可能是開始建立您登陸區域的絕佳位置。
 
@@ -65,17 +65,17 @@ ms.locfileid: "74251437"
 |訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)|
 |管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
 |資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
-|資料|N/A|[Choose the correct SQL Server option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) and [Azure Data Store guidance](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md)         |
 |命名和標記標準|N/A|[命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|
-|運算|N/A|[計算選項](../considerations/compute-options.md)|
+|計算|N/A|[計算選項](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>從此藍圖自訂或部署登陸區域
 
-Learn more and download a reference sample of the Cloud Adoption Framework migrate landing zone blueprint for deployment or customization from [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples).
+深入瞭解並下載雲端採用架構的參考範例遷移登陸區域藍圖，以從[Azure 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)進行部署或自訂。
 
-您也可以在入口網站中取得藍圖範例。 For details of how to create a blueprint, see [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+您也可以在入口網站中取得藍圖範例。 如需如何建立藍圖的詳細資訊，請參閱[Azure 藍圖](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint)。
 
 如需在此藍圖或所產生的登陸區域上應進行的自訂指引，請參閱[登陸區域考量](../considerations/index.md)文章。
 
