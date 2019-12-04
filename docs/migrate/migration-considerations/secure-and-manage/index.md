@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753425"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681795"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>安全性監視和管理工具
 
@@ -71,3 +71,11 @@ Azure Advisor 是提供您最佳做法的個人化指南。 這項服務會分�
 - **新建議警示。** 隨時掌握各項新建議內容，例如可適當調整 VM 大小以節省成本的其他機會。
 
 深入了解 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 以將遷移的資源最佳化。
+
+## <a name="suggested-skills"></a>建議的技能
+
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
+
+以下是在 Microsoft Learn 上量身打造的學習路徑範例，其與雲端採用架構的「安全」和「管理」部分一致： 
+
+[保護雲端資料的安全](https://docs.microsoft.com/learn/paths/secure-your-cloud-data/)：安全性和合規性是 Azure 的兩大設計訴求。 了解如何使用內建服務安全地儲存您的應用程式資料，確保只有經過授權的服務及用戶端可存取您的應用程式。
