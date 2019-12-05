@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: abfbdb31ccb9e0270f8ef93b1173726a372df53f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251463"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681704"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>使用 Microsoft Azure 隨時掌握最新動態
 
@@ -52,6 +52,8 @@ ms.locfileid: "74251463"
 
 如需可協助您隨時得知 Azure 最新動態的更深入內容，請查看以下所列的資源：
 
+- [Azure 圖表](https://azurecharts.com/)
+  - 此非官方資源會將過去 6 個月內所有的 Azure 更新資料視覺化，並納入其他實用圖表和公用程式，可協助您追蹤 Azure 中的變更。
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 由建置 Azure 的工程師示範的每週影片。 這些影片會進行示範、回答問題，以及分享見解。
   - 透過 [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 訂閱。

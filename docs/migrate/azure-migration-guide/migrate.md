@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251828"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681751"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
@@ -266,6 +266,14 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 當您移轉至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
 Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱 [Azure DevOps 的 CI 和 CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
+
+## <a name="suggested-skills"></a>建議的技能
+
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
+
+以下是在 Microsoft Learn 上量身打造的學習路徑範例，可補充雲端採用架構中 DevOps 指引設定的不足之處。 
+
+[透過 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。 
 
 # <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
 
