@@ -5,15 +5,15 @@ description: 了解登陸區域如何提供任何雲端採用環境的基本建�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 25ccd940207e6b8d081b68b154e921c2da599147
+ms.sourcegitcommit: 57208103dd80b6b169e7144a8e55994a56184740
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239795"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856792"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
