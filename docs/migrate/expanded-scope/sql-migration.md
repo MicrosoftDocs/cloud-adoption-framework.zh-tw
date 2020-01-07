@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753533"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328917"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>藉由遷移 SQL Server 的實例來加速遷移
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>藉由遷移多個資料庫或整個 SQL Server 來加速遷移
 
 遷移整個 SQL Server 實例可以加速工作負載遷移工作。 下列指導方針藉由將 SQL Server 的實例遷移至工作負載焦點的遷移工作，來擴充[Azure 遷移指南](../azure-migration-guide/index.md)的範圍。 這種方法可以使用單一資料平臺遷移來植入多個工作負載。 此範圍擴充所需的大部分工作都是在遷移工作的必要條件、評估、遷移和優化程式期間進行。
 
@@ -27,7 +27,7 @@ ms.locfileid: "73753533"
 
 不過，某些資料結構可以透過個別的資料平臺遷移更有效率地進行遷移。 以下是一些範例：
 
-- **服務結束：** 快速移動 SQL Server 實例以避免服務終止的挑戰，可以證明在標準遷移工作之外使用本指南。
+- **服務結束：** 在較大的遷移工作中，將 SQL Server 實例快速移動為隔離的反復專案，可以避免服務結束的問題。 本指南將協助您在更廣泛的遷移程式中整合 SQL Server 的遷移。 不過，如果您要遷移/升級 SQL Server，而不受任何其他雲端採用工作的影響，則[SQL Server 生命週期結束總覽](/sql/sql-server/end-of-support/sql-server-end-of-life-overview)或[SQL Server 遷移檔](/sql/sql-server/migrate/index)文章可能會提供更清楚的指引。
 - **SQL Server 服務：** 資料結構是更廣泛的解決方案的一部分，需要在虛擬機器上執行 SQL Server。 這對於使用 SQL Server 服務（例如 SQL Server Reporting Services、SQL Server Integration Services 或 SQL Server Analysis Services）的解決方案而言是很常見的。
 - 高密度 **、低使用量資料庫：** SQL Server 的實例具有高密度的資料庫。 其中每個資料庫都有較低的交易磁片區，而且幾乎不需要計算資源的方式。 您應該考慮其他更現代化的解決方案，但基礎結構即服務（IaaS）方法可能會導致作業成本大幅降低。
 - **擁有權總成本：** 適用時，您可以將[Azure 混合式權益](https://azure.microsoft.com/pricing/hybrid-benefit)套用至清單價格，以建立 SQL Server 實例的最低擁有成本。 這對於在多重雲端案例中裝載 SQL Server 的客戶而言特別常見。
@@ -46,26 +46,26 @@ ms.locfileid: "73753533"
 
 以下是伺服器清查的範例：
 
-|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
+|SQL Server|目的|版本|[重要性](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |sql-01|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
 |sql-02|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
 |sql-03|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
-|sql-04|BI|2012|高|XX|6|N/A|機密|是-多維度 cube|否|1|
+|sql-04|BI|2012|高|XX|6|N/A|Confidential|是-多維度 cube|否|1|
 |sql-05|整合|2008 R2|低|一般|20|是|N/A|N/A|否|1|
 
 ### <a name="database-inventory"></a>資料庫清查
 
 以下是上述其中一部伺服器的資料庫清查範例：
 
-|伺服器|資料庫|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant （DMA）結果|DMA 補救|目標平臺|
+|伺服器|資料庫|[重要性](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant （DMA）結果|DMA 補救|目標平台|
 |---------|---------|---------|---------|---------|---------|---------|
-|sql-01|DB-1|關鍵任務|高度機密|性|N/A|Azure SQL Database|
-|sql-01|DB-2|高|機密|需要變更架構|已執行的變更|Azure SQL Database|
-|sql-01|DB-1|高|一般|性|N/A|Azure SQL 受控實例|
-|sql-01|DB-1|低|高度機密|需要變更架構|已排程變更|Azure SQL 受控實例|
-|sql-01|DB-1|關鍵任務|一般|性|N/A|Azure SQL 受控實例|
-|sql-01|DB-2|高|機密|性|N/A|Azure SQL Database|
+|sql-01|DB-1|關鍵任務|高度機密|相容|N/A|Azure SQL Database|
+|sql-01|DB-2|高|Confidential|需要變更架構|已執行的變更|Azure SQL Database|
+|sql-01|DB-3|高|一般|相容|N/A|Azure SQL 受控執行個體|
+|sql-01|DB-4|低|高度機密|需要變更架構|已排程變更|Azure SQL 受控執行個體|
+|sql-01|DB-5|關鍵任務|一般|相容|N/A|Azure SQL 受控執行個體|
+|sql-01|DB-6|高|Confidential|相容|N/A|Azure SQL Database|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>與雲端採用方案整合
 
@@ -94,7 +94,7 @@ ms.locfileid: "73753533"
 
 建議的遷移和同步處理路徑會使用下列三個工具的組合。 下列各節將概述更複雜的遷移和同步處理選項，讓您有更多的目標和來源解決方案。
 
-|遷移選項|目的|
+|移轉選項|目的|
 |---------|---------|
 |[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|支援線上（最短停機時間）和離線（一次）大規模遷移至 Azure SQL Database 受控實例。 支援從： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017 進行遷移。|
 |[異動複寫](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Azure SQL Database 受控實例的異動複寫支援從下列版本進行遷移： SQL Server 2012 （SP2 CU8、SP3 或更新版本）、SQL Server 2014 （RTM CU10 或更新版本，或 SP1 CU3 或更新版本）、SQL Server 2016、SQL Server 2017。|
