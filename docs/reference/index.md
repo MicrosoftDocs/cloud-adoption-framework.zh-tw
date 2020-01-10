@@ -9,30 +9,30 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683741"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781516"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>適用於 Azure 的 Microsoft 雲端採用架構
+# <a name="cloud-adoption-framework-roadmap"></a>雲端採用架構藍圖
 
 雲端徹底改變企業採購和使用技術資源的方式。 傳統上，企業要承擔從基礎結構到軟體等所有技術層面的擁有權和責任。 雲端可讓企業只在需要時才佈建及取用資源。 不過，雲端採用是達成目標的方法。 企業會在發現可以帶來下列任何商機時採用雲端：
 
 - 企業**遷移**到雲端的動機如下：
-  - 將作業最佳化。
-  - 簡化技術。
-  - 提升業務敏捷性。
-  - 降低成本。
-  - 準備新的技術功能。
-  - 根據市場或地區需求做調整。
+  - 將作業最佳化
+  - 簡化技術
+  - 提升業務敏捷性
+  - 降低成本
+  - 準備新的技術功能
+  - 依市場需求或新的地理區域進行調整
 - 企業使用雲端來進行**創新**的動機如下：
-  - 改善客戶體驗。
-  - 提升客戶參與度。
-  - 產品轉型。
-  - 準備建置新的技術功能。
-  - 根據市場或地區需求做調整。
+  - 改善客戶體驗
+  - 提升客戶參與度
+  - 產品轉型
+  - 準備建置新的技術功能
+  - 依市場需求或新的地理區域進行調整
 
 ## <a name="vision-and-objectives"></a>願景和目標
 
@@ -46,7 +46,7 @@ ms.locfileid: "72683741"
 
 雲端採用架構是一個總體架構，其中的「規劃」、「準備」和「採用」階段是以雲端採用的移轉和創新動機為基礎，並且提供治理和操作指引的支援。
 
-Microsoft 正積極地與客戶、合作夥伴及內部團隊一起建立此理想架構。 為了鼓勵更多人加入，相關內容會在可供使用時發行公開預覽版。 這些公開預覽版可讓您進行測試、驗證，然後逐漸精簡指導方針。 當期望目標實現時，該架構便達到正式運作 (GA) 階段。
+架構已達到公開上市 (GA) 階段。 不過，我們仍在積極地與客戶、合作夥伴及內部團隊一起建立此架構。 為了鼓勵更多人加入，相關內容會在可供使用時發行。 這些公開版本可讓您進行測試、驗證，然後逐漸精簡指導方針。 
 
 若要成功採用雲端，客戶必須準備此數位轉型所需的人員、技術和流程。 雲端採用架構中有一個概述整體採用旅程 (包括移轉和創新) 的區段，可為客戶提供整體概觀。 此區段是由下列採用旅程階段所組成：
 

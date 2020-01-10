@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565932"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781703"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>適用於 Azure 的 Microsoft 雲端採用架構
 
@@ -52,7 +52,7 @@ ms.locfileid: "73565932"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>規劃</h3>
+                            <h3>計畫</h3>
 使可行的採用方案與業務成果保持一致。
                         </div>
                     </div>
@@ -90,7 +90,7 @@ ms.locfileid: "73565932"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>移轉</h3>
+                            <h3>遷移</h3>
 移轉和現代化現有的工作負載。
                         </div>
                     </div>
@@ -165,11 +165,11 @@ ms.locfileid: "73565932"
 
 ## <a name="intent"></a>Intent
 
-雲端徹底改變企業採購和使用技術資源的方式。 傳統上，企業要承擔從基礎結構到軟體等所有技術層面的擁有權和責任。 移至雲端可讓企業只在需要時才佈建及取用資源。 雖然雲端對於設計選擇提供大量彈性，但企業需要經過實證且一致的方法來採用雲端技術。 適用於 Azure 的 Microsoft 雲端採用架構符合該需求，它能協助指引進行雲端採用的決策。
+雲端徹底改變企業採購、使用和保護技術資源的方式。 傳統上，企業要承擔從基礎結構到軟體等所有技術層面的擁有權和責任。 移至雲端可讓企業只在需要時才佈建及取用資源。 雖然雲端對於設計選擇提供大量彈性，但企業需要經過實證且一致的方法來採用雲端技術。 適用於 Azure 的 Microsoft 雲端採用架構符合該需求，它能協助指引進行雲端採用的決策。
 
 不過，雲端採用是達成目標的唯一方法。 成功的雲端採用開始於選定雲端平台廠商之前。 當業務和 IT 部門的決策者意識到雲端可以加速特定的業務轉型目標時，雲端採用就已開始。 雲端採用架構有助於協調業務、文化和技術變革的策略，藉以實現所希望的業務成果。
 
-雲端採用架構提供適用於 Microsoft Azure 的技術指導方針。 由於企業可能仍在選擇雲端廠商的過程中，這個架構提供的指引適用於任何雲端，因此適用於任何可能的策略性決策。
+雲端採用架構提供適用於 Microsoft Azure 的技術指導方針。 由於企業可能仍在選擇雲端廠商的過程中，或希望採取多雲端架構；因此，此架構提供的指引適用於任何雲端，以及所有可能的策略性決策。
 
 ## <a name="intended-audience"></a>目標對象
 
