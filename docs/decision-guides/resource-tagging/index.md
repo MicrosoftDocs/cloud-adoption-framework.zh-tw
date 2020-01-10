@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1142ca43776ab9b147b23ef054d77d76d8aed212
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160240"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868012"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -59,7 +59,7 @@ IT 會協調標記重點，例如依據工作負載、功能或環境進行標�
 
 <!-- markdownlint-disable MD033 -->
 
-| 標記類型 | 範例 | 說明 |
+| 標記類型 | 範例 | 描述 |
 |-----|-----|-----|
 | 函數            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。                                 |
 | 分類        | confidentiality=private<br/>sla = 24hours                                 | 可依據資源使用方式和對它套用的原則將資源分類                               |
@@ -73,12 +73,12 @@ IT 會協調標記重點，例如依據工作負載、功能或環境進行標�
 
 如需有關 Azure 中命名和標記的詳細資訊，請參閱：
 
-- [Azure 資源的命名慣例](/azure/architecture/best-practices/resource-naming)。 請參閱本指南了解建議的 Azure 資源命名慣例。
+- [Azure 資源的命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)。 請參閱本指南了解建議的 Azure 資源命名慣例。
 - [使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
 
 ## <a name="next-steps"></a>後續步驟
 
-資源標記只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)以了解針對其他基礎架構類型訂定決策時，所使用的替代模式或模型。
+資源標記只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f4cc7aaa9a937327a4dd2ede4bf1c3c619cc632a
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781431"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868040"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
@@ -37,7 +37,7 @@ ms.locfileid: "75781431"
 每個登陸區域都是更廣泛解決方案的一部分，而此解決方案用於組織整個雲端環境中的資源。 Azure 基礎是組織的基本建置區塊。
 
 - **[Azure 基礎概念](./fundamental-concepts.md)** 。 了解在 Azure 用來組織資源的基本概念和詞彙，以及這些概念如何彼此相關。
-- **[資源一致性決策指南](../../decision-guides/resource-consistency/)** . 當您了解每個基礎時，資源組織決策指南就可以協助您做出決定登陸區域的決策。
+- **[資源一致性決策指南](../../decision-guides/resource-consistency/index.md)** . 當您了解每個基礎時，資源組織決策指南就可以協助您做出決定登陸區域的決策。
 
 ## <a name="governance-considerations"></a>治理考量
 
