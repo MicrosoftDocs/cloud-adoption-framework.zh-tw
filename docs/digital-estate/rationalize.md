@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564700"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781737"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
-雲端合理化是評估資產以判斷何種方法最適合用來將其裝載於雲端的程序。 在您決定[方法](./approach.md)並匯總[清查](./inventory.md)之後，雲端合理化就可以開始。 [雲端合理化](./rationalize.md)會討論最常見的合理化選項。
+雲端合理化是評估資產以判斷何種方法最適合用來將其裝載於雲端的程序。 在您決定[方法](./approach.md)並匯總[清查](./inventory.md)之後，雲端合理化就可以開始。 雲端合理化會討論最常見的合理化選項。
 
 ## <a name="traditional-view-of-rationalization"></a>合理化的傳統檢視
 

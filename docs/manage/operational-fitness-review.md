@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564897"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781669"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -37,7 +37,7 @@ ms.locfileid: "73564897"
 
 Microsoft 遵循的程式會形成本文所述程式的基礎。
 
-## <a name="understand-the-problem"></a>瞭解問題
+## <a name="understand-the-problem"></a>了解問題
 
 如同您在[快速](../getting-started/migrate.md)入門中所學到的，企業數位轉型的第一個步驟，是要藉由採用 Azure 來識別要解決的商務問題。 下一個步驟是判斷問題的高階解決方案，例如將工作負載遷移至雲端，或調整現有的內部部署服務以包含雲端功能。 最後，您可以設計和執行解決方案。
 
@@ -80,7 +80,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 ### <a name="service-review-phase"></a>服務審查階段
 
-服務審核階段是操作健身審查的核心。 其牽涉到下列步驟：
+服務審核階段是操作健身審查的核心。 流程有三個步驟：
 
 1. **監視服務計量**。 使用計分卡計量來監視服務，以確保服務符合商務期望。 服務監視是不可或缺的。 如果您無法監視與無功能性需求相關的一組服務，請將對應的計分卡計量視為紅色。 在此案例中，補救措施的第一個步驟是實作適當的服務監視機制。 例如，如果企業預期服務會使用99.99% 的可用性來運作，但沒有實際執行的遙測來測量可用性，假設您不符合需求。
 
@@ -120,7 +120,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 6. 最後，小組會回顧進行中的補救工作。 針對進行中工作的每個計分卡計量都會根據預期的準則進行審核。 針對符合計量準則的構成元件，服務擁有者會顯示記錄和監視資料，以確認符合準則。 針對不符合計量準則的構成元件，每個工程擁有者都會說明導致無法符合準則的問題，並提供任何新的補救設計。
 
-## <a name="recommended-resources"></a>建議的資源
+## <a name="recommended-resources"></a>推薦資源
 
 - [軟體品質的要素](https://docs.microsoft.com/azure/architecture/guide/pillars)。
     Azure 應用程式架構指南的這一節說明軟體品質的五大要素：擴充性、可用性、復原、管理和安全性。
@@ -130,3 +130,5 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
     本指南會從「_復原_」和「相關概念」一詞的定義開始。 然後，它會說明在應用程式的存留期（從設計和執行到部署和作業）上使用結構化方法來達到復原的流程。
 - [雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
     當工程團隊根據軟體品質的要素建置應用程式時，這些設計原則非常實用。
+- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/)。
+    Advisor 會根據您的使用方式和設定提供個人化的建議，協助您將資源優化，以達到高可用性、安全性、效能和成本。 

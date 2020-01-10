@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781449"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -26,6 +26,7 @@ ms.locfileid: "73566796"
 
 - IT 治理
 - 企業架構
+- 安全性
 - IT 營運
 - IT 基礎結構
 - 網路
@@ -33,6 +34,7 @@ ms.locfileid: "73566796"
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者
+- 財務擁有者
 
 雲端治理功能會識別與目前和未來版本相關的風險。 這項功能會在評估風險、瞭解潛在影響，以及制定有關風險承受度的決策時出現。 在這種情況下，您可以快速更新方案，以反映[雲端採用功能](./cloud-adoption.md)的變動需求。
 
@@ -69,7 +71,7 @@ ms.locfileid: "73566796"
 
 ## <a name="maturation-of-cloud-governance-capability"></a>雲端治理功能成熟
 
-有些大型組織有現有的專屬小組，著重于 IT 治理。 這些小組會透過 ITIL 或 ITSM 等方法，將 IT 組合的風險管理特殊化。 當這些小組存在時，可以快速加速下列成熟度模型。 不過，建議 IT 治理小組複習雲端治理模型，以瞭解治理在雲端中如何稍微轉移。 主要文章包括將[公司原則擴充至雲端](../govern/corporate-policy.md)，以及[五個雲端治理專業領域](../govern/governance-disciplines.md)。
+有些大型組織有現有的專屬小組，著重于 IT 治理。 這些小組會針對 IT 組合中的風險管理進行特殊化。 當這些小組存在時，可以快速加速下列成熟度模型。 不過，建議 IT 治理小組複習雲端治理模型，以瞭解治理在雲端中如何稍微轉移。 主要文章包括將[公司原則擴充至雲端](../govern/corporate-policy.md)，以及[五個雲端治理專業領域](../govern/governance-disciplines.md)。
 
 **無治理：** 組織通常不需要明確的治理計畫就能移入雲端。 在長時間之前，安全性、成本、規模和作業方面的顧慮，會開始觸發有關治理模型需求的交談，以及讓人員員工與該模型相關聯的程式。 先啟動那些交談後才會被視為疑慮，是克服「無治理」反模式的最佳第一個步驟。 [定義公司原則](../govern/corporate-policy.md)的章節有助於協助這些交談。
 

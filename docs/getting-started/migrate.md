@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564691"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781676"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -36,7 +36,7 @@ ms.locfileid: "73564691"
 
 |重要的商務活動 | 遷移動機 | 創新動機 |
 |---------|---------|---------|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
+| 資料中心的退出<br/><br/>企業併購或撤資<br/><br/>減少資本支出<br/><br/>終止對任務關鍵性技術的支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省費用<br/><br/>降低廠商或技術上的複雜性<br/><br/>追求內部營運的最佳化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理或市場需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>將安全性狀態和控制項現代化<br/><br/>調整以符合地理或市場需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -64,7 +64,7 @@ ms.locfileid: "73564691"
 
 雲端遷移通常會被視為廣泛程式中的單一專案，以簡化 IT 作業、成本或複雜度。 雲端實行方法有助於將一系列工作負載遷移中的技術工作，與雲端策略和規劃中所述的高階商業價值進行比對。
 
-**開始使用：** 若要開始進行雲端執行， [azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 設定指南](../ready/azure-setup-guide/index.md)概述在執行雲端時必須成功的工具和高階程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[擴充的範圍檢查清單](../migrate/expanded-scope/index.md)、[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的限制、程式、小組結構和目標。
+**開始使用：** 若要開始進行雲端執行， [azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 設定指南](../ready/azure-setup-guide/index.md)概述在執行雲端時必須成功的工具和高階程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[擴充的範圍檢查清單](../migrate/expanded-scope/index.md)、[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的條件約束、程式、小組結構和目標保持一致。
 
 ## <a name="cloud-strategy-and-planning"></a>雲端策略和規劃
 
@@ -93,13 +93,13 @@ ms.locfileid: "73564691"
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>遵循此方法所產生的常見文化特性變更
 
-實現所需商務成果的工作，可能會觸發對 IT 文化特性的輕微變化，以及對企業文化特性的某種程度。 以下是此程式中所見的一些常見文化特性變更：
+實現所需商務成果的工作，可能會對 IT 文化特性、安全性，以及某種程度的企業文化，觸發些許變更。 以下是此程式中所見的一些常見文化特性變更：
 
-- IT 小組可能會採用新的技能來支援雲端中的工作負載。
+- IT 和安全性小組可能會採用新的技能來支援雲端中的工作負載。
 - 雲端遷移的執行鼓勵反復或靈活的方法。
 - 包含雲端治理也傾向于激發 DevOps 方法。
 - 建立雲端策略小組可能會導致商務與 IT 領導人的整合更加緊密。
-- 這些變更通常會導致企業和 IT 的靈活性。
+- 這些變更通常會導致更高的商業和 IT 靈活性。
 
 文化變更不是雲端遷移或雲端採用架構的目標，但卻是常見的結果。
 文化特性變更不是直接引導，而文化特性的細微變更則內嵌于本指南的建議程式改進和方法中。
@@ -138,13 +138,13 @@ ms.locfileid: "73564691"
 >
 > [規劃](../plan/index.md)
 >
-> [就緒](../ready/index.md)
+> [準備好](../ready/index.md)
 >
 > [移轉](../migrate/index.md)
 >
 > [創新](../innovate/index.md)
 >
-> [制約](../govern/index.md)
+> [治理](../govern/index.md)
 >
 > [管理](../manage/index.md)
 >

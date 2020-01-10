@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753283"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781584"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -29,6 +29,8 @@ ms.locfileid: "73753283"
   - **管控：** 讓適當的[治理專業領域](../govern/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
   - **管理：** IT 組合的持續[營運管理](../manage/index.md)，讓商務程式的中斷降到最低，並確保 it 組合的穩定性。
   - **支援：** 配合適當的[合作關係和支援選項](../migrate/migration-considerations/assess/partnership-options.md)。
+
+另一個核心主題是安全性，這是成功採用雲端的關鍵品質屬性。 此架構整合了安全性，為您的雲端工作負載提供維護機密性、完整性和可用性保證的整合式指引。 
 
 ## <a name="additional-tools"></a>其他工具
 

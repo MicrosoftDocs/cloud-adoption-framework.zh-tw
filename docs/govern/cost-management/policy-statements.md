@@ -9,22 +9,22 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3ee38869badce877fc89784c1e90a60ed7ee04eb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566409"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781533"
 ---
 # <a name="cost-management-sample-policy-statements"></a>成本管理範例原則聲明
 
-每個雲端原則聲明都是一個指導方針，用來解決在風險評估流程中識別到的特定風險。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
+個別雲端原則聲明是解決在風險評估流程中識別出的特定風險方針。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
 
 - **業務風險：** 此原則將解決的風險摘要。
 - **原則聲明：** 原則需求的清楚摘要說明。
 - **設計選項：** IT 小組與開發人員可以在執行原則時使用的可操作建議、規格或其他指引。
 
-下列範例原則聲明會解決與一般成本相關的商務風險。 這些語句是您在草擬原則聲明以滿足組織需求時可以參考的範例。 這些範例並非禁止使用，而且可能會有數個原則選項來處理每個已識別的風險。 與企業和 IT 小組密切合作，找出您獨特風險的最佳原則。
+下列範例原則聲明會解決與一般成本相關的商務風險。 這些語句是您在草擬原則聲明以滿足組織需求時可以參考的範例。 這些範例並不是為了規範性，而且可能會有數個原則選項來處理每個已識別的風險。 與企業和 IT 小組密切合作，找出您獨特風險的最佳原則。
 
 ## <a name="future-proofing"></a>與未來技術的兼容性
 
