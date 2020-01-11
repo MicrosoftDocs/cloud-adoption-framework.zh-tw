@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557036"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868112"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>將 Team Foundation Server 部署重構到 Azure DevOps Services
 
@@ -102,8 +102,8 @@ Contoso 會按照下列方式完成移轉程序：
 
 Contoso 管理員會將 TFS 伺服器升級至 TFS 2018 Update 2。 在他們開始之前：
 
-- 他們下載了 [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads)
-- 他們驗證[硬體需求](/azure/devops/server/requirements)，並詳閱[版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)和[升級注意事項](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)。
+- 他們會下載[TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads)。
+- 他們驗證[硬體需求](https://docs.microsoft.com/azure/devops/server/requirements)，並詳閱[版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)和[升級注意事項](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)。
 
 他們會依照下列方式進行升級：
 
@@ -128,11 +128,11 @@ Contoso 管理員會將 TFS 伺服器升級至 TFS 2018 Update 2。 在他們開
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 在執行某些 TFS 升級時，必須在升級完成後執行 [設定功能精靈]。 [深入了解提出技術問題。
+> 在執行某些 TFS 升級時，必須在升級完成後執行 [設定功能精靈]。 [深入了解](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
 
 **需要其他協助？**
 
-了解如何[升級 TFS](/azure/devops/server/upgrade/get-started)。
+了解如何[升級 TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started)。
 
 ## <a name="step-3-validate-the-tfs-collection"></a>步驟 3：驗證 TFS 集合
 
@@ -266,7 +266,7 @@ Contoso 管理員會對 ContosoDev 集合資料庫執行 TFS 移轉工具而加�
 Contoso 會建立可匯入 Azure DevOps Services 中的備份 (DACPAC)。
 
 - SQL Server Data Tools 中的 SqlPackage.exe 會用來建立 DACPAC。 使用 SQL Server Data Tools 安裝的 SqlPackage.exe 有多個不同版本，位於具有 120、130 和 140 等名稱的資料夾下。 務必要使用正確的版本來準備 DACPAC。
-- TFS 2018 匯入需要使用 140 資料夾中的 SqlPackage.exe 或更高版本。 就 CONTOSOTFS 而言，此檔案位於下列資料夾中：**C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**。
+- TFS 2018 匯入需要使用 140 資料夾中的 SqlPackage.exe 或更高版本。 若為 CONTOSOTFS，此檔案位於資料夾： ' C:\Program Files （x86） \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140
 
 Contoso 管理員會產生 DACPAC，如下所示：
 
@@ -276,15 +276,15 @@ Contoso 管理員會產生 DACPAC，如下所示：
     SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
     ```
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. 此命令執行後，會出現下列訊息。
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. 他們會確認 DACPAC 檔案的屬性
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>將檔案更新至儲存體
 

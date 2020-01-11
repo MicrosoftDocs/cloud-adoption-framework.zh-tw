@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781669"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868057"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -130,5 +130,5 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
     本指南會從「_復原_」和「相關概念」一詞的定義開始。 然後，它會說明在應用程式的存留期（從設計和執行到部署和作業）上使用結構化方法來達到復原的流程。
 - [雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
     當工程團隊根據軟體品質的要素建置應用程式時，這些設計原則非常實用。
-- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/)。
-    Advisor 會根據您的使用方式和設定提供個人化的建議，協助您將資源優化，以達到高可用性、安全性、效能和成本。 
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor)。
+    Advisor 會根據您的使用方式和設定提供個人化的建議，協助您將資源優化，以達到高可用性、安全性、效能和成本。
