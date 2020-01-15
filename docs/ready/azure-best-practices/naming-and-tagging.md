@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
+ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868085"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76023356"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Ready：建議的命名和標記慣例
+# <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
-面臨大型的雲端採用工作時，以協助營運管理和支援會計需求的方式組織雲端式資產是常見的挑戰。 藉由將妥善定義的命名和中繼資料標記慣例套用到雲端託管的資源，IT 人員就可以快速尋找及管理資源。 妥善定義的名稱和標記也有助於使用計費 (chargeback) 和回報 (showback) 會計機制，讓雲端的使用成本與業務小組保持一致。
+以協助操作管理和支援會計需求的方式組織雲端式資產，是大型雲端採用的常見挑戰。 藉由將妥善定義的命名和中繼資料標記慣例套用到雲端託管的資源，IT 人員就可以快速尋找及管理資源。 妥善定義的名稱和標記也有助於使用計費 (chargeback) 和回報 (showback) 會計機制，讓雲端的使用成本與業務小組保持一致。
 
-Azure 架構中心的[命名規則和 Azure 資源的限制](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)指南提供一般建議和平臺限制。 下列會討論支援企業雲端採用工作的一般指引，並加入詳細建議。
+適用于[Azure 資源的命名規則和限制](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)的 Azure 架構中心指引提供一般建議和平臺限制。 下列討論會使用更詳細的建議來擴充該指引，特別是針對支援企業雲端採用工作。
 
-資源名稱可能難以變更。 在開始進行任何大規模的雲端部署之前，應先讓雲端採用小組建立完整的命名慣例。
+資源名稱可能難以變更。 開始進行任何大型雲端部署之前，請先建立完整命名慣例的優先順序。
 
 > [!NOTE]
-> 每個企業都有不同的組織和管理需求。 本文中的建議可作為您在雲端採用小組中進行討論的起點。
+> 每個企業都有不同的組織和管理需求。 這些建議提供一個起點，供您在雲端採用小組中討論。
 >
-> 在進行這些討論時，您可以使用下列範本，記下當您根據特定業務需求調整這些建議時，所制定的命名和標記決策。
+> 當這些討論繼續進行時，請使用下列範本來捕捉您在將這些建議與特定業務需求對齊時所進行的命名和標記決策。
 >
 > 下載[命名和標記慣例追蹤範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx)。
 
@@ -35,7 +35,7 @@ Azure 架構中心的[命名規則和 Azure 資源的限制](https://docs.micros
 
 命名和標記策略包含業務和營運詳細資料，這些是資源名稱和中繼資料標籤的元件：
 
-- 在業務方面，此策略可確保資源名稱和標記包含識別小組所需的組織資訊。 您可以與負責資源成本的業務擁有者一起使用資源。
+- 此策略的商務端可確保資源名稱和標籤包含識別小組所需的組織資訊。 您可以與負責資源成本的業務擁有者一起使用資源。
 - 在營運方面，可確保名稱和標記包含 IT 小組用來識別工作負載、應用程式、環境和重要性的資訊，以及用來管理資源的其他實用資訊。
 
 ### <a name="resource-naming"></a>資源命名
