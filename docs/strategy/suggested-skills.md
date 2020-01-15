@@ -1,19 +1,19 @@
 ---
-title: 技能整備程度路徑
+title: 規劃期間的技能就緒性路徑
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 技能整備程度路徑的概觀
+description: 遷移計畫階段期間的技能就緒性路徑的總覽。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
+ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561646"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943451"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -87,12 +87,12 @@ Microsoft 和合作夥伴提供各種選項，以協助所有的使用者使用 
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責任的就緒程度並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數、層級並達成更多目標！
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數、層級並達成更多目標！
 
 以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略 potion。
 
-[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。
+[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 內容會涵蓋 Microsoft Azure 雲端服務如何在受信任雲端平台上推動組織發展。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
 
-## <a name="learn-more"></a>詳細資訊
+## <a name="learn-more"></a>了解更多
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。
