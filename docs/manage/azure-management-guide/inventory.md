@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565470"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781771"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -33,7 +33,7 @@ ms.locfileid: "73565470"
 |記錄集中化|Log Analytics|適用於所有可見性用途的集中式記錄|
 |監視集中化|Azure 監視器|操作資料和趨勢的集中監視|
 |虛擬機器清查和變更追蹤|Azure 變更追蹤和清查|清查 VM 和監視來賓作業系統層級的變更|
-|服務健康情況|Azure 活動記錄檔|監視訂用帳戶層級的變更|
+|訂用帳戶監視|Azure 活動記錄檔|監視訂用帳戶層級的變更|
 |來賓作業系統監視|適用於 VM 的 Azure 監視器|監視 VM 的變更和效能|
 |網路監視|Azure 網路監看員|監視網路變更和效能|
 |DNS 監視|DNS 分析|DNS 的安全性、效能和作業|

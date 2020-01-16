@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565476"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781805"
 ---
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
@@ -32,6 +32,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 |修補程式管理|更新管理|更新的管理和排程|
 |強制執行原則|Azure 原則|強制執行原則以確保環境和來賓的合規性|
 |環境設定|Azure 藍圖|核心服務的自動化合規性|
+|資源組態|Desired State Configuration|在客體 OS 和環境的某些層面進行自動化設定|
 
 ::: zone target="docs"
 
