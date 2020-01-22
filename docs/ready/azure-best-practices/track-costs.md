@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240147"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520169"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -83,7 +83,7 @@ Azure 成本管理支援每個範圍的下列內建角色：
 
 一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 不過，[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅限成本管理讀者。 這是因為他們不會牽涉到在 Azure 成本管理工具內設定預算。
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>範圍
 
 下列範圍和角色設定會建立成本管理所需的可見度。 這種最佳做法可能需要較小的變更，以符合資產組織決策。
 
@@ -126,7 +126,7 @@ Azure 成本管理是一種妥善記載的工具，可用於設定預算，並�
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>使用 Azure 成本管理來管理 AWS 成本
 
-- [AWS 成本和使用量報告整合](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [AWS 成本和使用量報告整合](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [管理 AWS 成本](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>建立存取權、角色和範圍

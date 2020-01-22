@@ -1,7 +1,7 @@
 ---
-title: 技能整備程度路徑
+title: 建置技術技能
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 技能整備程度路徑的概觀
+description: 在準備階段遷移的過程中，瞭解技能就緒性路徑。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c8954fbb4e5c17ec43951270ded2708cfb3432df
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564234"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520152"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移的「就緒」階段期間的技能就緒性路徑
+# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移準備階段期間的技能就緒性路徑
 
 在遷移的準備階段，目標是要準備*開始*進行旅程。 這個階段是在兩個主要區域中完成的：組織和環境（技術）準備。 這兩者可能需要技術和非技術性參與者的新技能。 下列資訊可協助您的組織建立必要的技能。
 
