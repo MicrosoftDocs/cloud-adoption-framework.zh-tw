@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681813"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726347"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>在 Azure 上重建內部部署應用程式
 
@@ -41,7 +41,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項應用程式需求。 �
 - 其旅館必須接受應用程式所做的決策，所以用於寵物相片的 API 服務在真實世界中應該要準確可靠。 任何獲准進入的寵物都可以留在旅館內。
 - 為了滿足 DevOps 管線的需求，Contoso 會使用 Azure DevOps 搭配 Git 存放庫來進行原始程式碼管理 (SCM)。 他們將使用自動化建置和發行來建置程式碼，並將其部署至 Azure App Service、Azure Functions 及 AKS。
 - 後端上的微服務與前端上的網站需要不同的 CI/CD 管線。
-- 後端服務的發行週期與前端 Web 應用程式不同。 為了滿足此需求，他們將部署兩個不同的 DevOps 管線。
+- 後端服務的發行週期與前端 Web 應用程式不同。 為了符合此需求，他們會部署兩個不同的管線。
 - Contoso 需要管理部門核准才能進行所有前端網站部署，因此 CI/CD 管線必須提供此功能。
 
 ## <a name="solution-design"></a>解決方案設計
@@ -52,13 +52,13 @@ Contoso 雲端小組已針對此次移轉擬定好各項應用程式需求。 �
 
 - SmartHotel360 內部部署應用程式會分層至兩個 VM (WEBVM 和 SQLVM)。
 - 這些 VM 位於 VMware ESXi 主機 **contosohost1.contoso.com** (6.5 版)
-- VMware 環境由 VM 上執行的 VCenter Server 6.5 (**vcenter.contoso.com**) 所管理。
+- VMware 環境是由 VM 上執行的 vCenter Server 6.5 (**vcenter.contoso.com**) 進行管理。
 - Contoso 有內部部署資料中心 (contoso-datacenter) 以及內部部署網域控制站 (**contosodc1**)。
 - 移轉完成之後，將會解除委任 Contoso 資料中心的內部部署 VM。
 
 ### <a name="proposed-architecture"></a>建議的架構
 
-- 應用程式的前端在主要 Azure 區域中部署為 Azure App Service Web 應用程式。
+- 應用程式的前端會部署為主要 Azure 區域中的 Azure App Service web 應用程式。
 - Azure 函式提供寵物相片上傳功能，而網站則與此功能互動。
 - 寵物相片函式會使用 Azure 認知服務視覺 API 和 CosmosDB。
 - 網站的後端會使用微服務來建置。 這些微服務會部署到 Azure Kubernetes Service (AKS) 上所管理的容器。
@@ -77,7 +77,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 **考量** | **詳細資料**
 --- | ---
 **優點** | 使用 PaaS 和無伺服器解決方案來進行端對端部署可大幅減少 Contoso 必須提供的管理時間。<br/><br/> 移轉至微服務架構可讓 Contoso 隨著時間的進展輕鬆延伸解決方案。<br/><br/> 在將新功能上線時，不必中斷任何現有的解決方案程式碼基底。<br/><br/> Web 應用程式會設定為配有多個執行個體，所以不會有單一失敗點。<br/><br/> 會啟用自動調整功能，讓應用程式能夠處理不同的流量。<br/><br/> 移往 PaaS 服務後，Contoso 可以淘汰在 Windows Server 2008 R2 作業系統上執行的過時解決方案。<br/><br/> CosmosDB 有內建容錯能力，Contoso 不必進行設定。 這表示資料層不再是單一的容錯移轉點。
-**缺點** | 容器比其他移轉選項複雜得多。 其學習曲線可能會是 Contoso 的難題。 儘管有曲線，容器還是會帶來新的複雜等級，以提供更多價值。<br/><br/> Contoso 的營運團隊必須提升能力，以針對應用程式來了解和支援 Azure、容器及微服務。<br/><br/> Contoso 尚未針對整個解決方案完全實作 DevOps。 Contoso 必須在將服務部署至 AKS、Azure Functions 及 Azure App Service 時，考慮到這一點。
+**缺點** | 容器比其他移轉選項複雜得多。 其學習曲線可能會是 Contoso 的難題。 儘管有學習曲線的問題，但容器帶來了新的複雜度等級，而可提供許多價值。<br/><br/> Contoso 的營運團隊必須提升能力，以針對應用程式來了解和支援 Azure、容器及微服務。<br/><br/> Contoso 尚未針對整個解決方案完全實作 DevOps。 Contoso 必須在將服務部署至 AKS、Azure Functions 及 Azure App Service 時，考慮到這一點。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -95,10 +95,10 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **服務** | **說明** | **成本**
 --- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解提出技術問題。
-[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解提出技術問題。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解提出技術問題。
-[](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解提出技術問題。
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
+[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
+[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -134,7 +134,7 @@ Contoso 管理員會執行部署指令碼，使用 AKS 和 Azure Container Regis
 - 本節的指示會使用 **SmartHotel360-Azure-backend** 存放庫。
 - **SmartHotel360-Azure-backend** GitHub 存放庫包含這部分部署的所有軟體。  
 
-### <a name="prerequisites"></a>必要條件
+### <a name="ensure-prerequisites"></a>確保必要條件
 
 1. 在開始之前，Contoso 管理員會確定所有先決條件軟體都安裝在用來部署的開發電腦上。
 2. 他們會使用 Git 將本機存放庫複製到開發機器：`git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -445,7 +445,7 @@ Contoso 管理員會為前端網站建立兩個不同的專案。
 
 2. 他們會將 [SmartHotel360 front-end](https://github.com/Microsoft/SmartHotel360-public-web.git) Git 存放庫匯入至新專案。
 
-3. 針對函式應用程式，他們會建立另一個 Azure DevOps 專案 (SmartHotelPetChecker)，然後將 [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) Git 存放庫匯入至此專案。
+3. 針對函式應用程式，他們會建立另一個 Azure DevOps 專案 (SmartHotelPetChecker)，然後將 [PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) Git 存放庫匯入至此專案。
 
 ### <a name="configure-the-web-app"></a>設定 Web 應用程式
 
@@ -584,37 +584,36 @@ Contoso 管理員會依下列方式部署應用程式。
 14. 函式部署完成後會出現在 Azure 入口網站中，且狀態為**執行中**。
 
     ![部署函式](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. 他們會瀏覽至應用程式以測試 Pet Checker 應用程式是否如預期般運作，其位置在 [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets)。
 
 16. 他們會選取虛擬人偶以上傳圖片。
 
     ![部署函式](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. 他們想要檢查的第一張相片是一頭小型犬。
 
     ![部署函式](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. 應用程式傳回已接受的訊息。
 
     ![部署函式](./media/contoso-migration-rebuild/function9.png)
-    
 
-## <a name="review-the-deployment"></a>檢查部署
+## <a name="review-the-deployment"></a>檢閱部署
 
 在 Azure 中有了所移轉的資源之後，Contoso 現在必須讓新基礎結構完整運作且受到保護。
 
 ### <a name="security"></a>安全性
 
-- Contoso 必須確保新資料庫安全無虞。 [深入了解提出技術問題。
+- Contoso 必須確保新資料庫安全無虞。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 應用程式必須更新為搭配使用 SSL 與憑證。 容器執行個體應重新部署為會在 443 上接聽。
-- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解提出技術問題。
+- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>備份和災害復原
 
-- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解提出技術問題。
-- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解提出技術問題。
-- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解提出技術問題。
+- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
@@ -629,11 +628,10 @@ Contoso 管理員會依下列方式部署應用程式。
 
 ## <a name="suggested-skills"></a>建議的技能
 
-Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責任的就緒程度並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和層級，並達成更多目標！
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
 
 以下幾個範例會在與 Azure 中的 Contoso SmartHotel360 應用程式一致的 Microsoft Learn 上量身打造學習路徑。
 
 使用 Azure App Service： Azure 中的 Web apps 將[網站部署至 azure](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/)，可讓您輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注在網站的功能，並交由健全強大的 Azure 平台保障網站存取的安全性。
 
 [使用 Azure 認知願景服務來處理和分類影像](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)： azure 認知服務提供預先建立的功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用認知願景服務來偵測臉部、標記和分類影像，以及識別物件。
-

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
-ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
+ms.openlocfilehash: e1958d48eec112d11838835b853430c04601ab8b
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76023356"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726324"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
@@ -40,13 +40,13 @@ ms.locfileid: "76023356"
 
 ### <a name="resource-naming"></a>資源命名
 
-有效的命名慣例會使用重要資源資訊作為資源名稱的一部分，來組合資源名稱。 例如，若使用[本文稍後](#sample-naming-convention)討論的建議命名慣例，在實際執行的 SharePoint 工作負載上，公用 IP 資源的名稱會類似這樣：`pip-sharepoint-prod-westus-001`。
+有效的命名慣例會使用重要資源資訊作為資源名稱的一部分，來組合資源名稱。 例如，使用這些[建議的命名慣例](#sample-naming-convention)，實際執行 SharePoint 工作負載的公用 IP 資源會命名如下： `pip-sharepoint-prod-westus-001`。
 
 從名稱中，您可以快速地識別出資源類型、其相關聯的工作負載、其部署環境，以及裝載該資源的 Azure 區域。
 
 #### <a name="naming-scope"></a>命名範圍
 
-所有 Azure 資源類型的範圍都會定義資源名稱必須是唯一的層級。 資源在其範圍內必須有唯一的名稱。
+所有 Azure 資源類型的範圍會定義資源名稱必須是唯一的層級。 資源在其範圍內必須有唯一的名稱。
 
 例如，虛擬網路有資源群組範圍，這表示在指定的資源群組中，只能有一個名為 `vnet-prod-westus-001` 的網路。 但其他資源群組可以有自己名為 `vnet-prod-westus-001` 的虛擬網路。 再舉另一個例子，子網路會包含在虛擬網路的範圍內，這表示虛擬網路中的每個子網都必須有唯一的名稱。
 
@@ -62,11 +62,11 @@ ms.locfileid: "76023356"
 
 | 命名元件 | 說明 | 範例 |
 | --- | --- | --- |
-| 業務單位 | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 | *fin*, *mktg*, *product*, *it*, *corp* |
-| 訂用帳戶類型 | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。 | *prod,* s*hared, client* |
-| 應用程式或服務名稱 | 資源所屬應用程式、工作負載或服務的名稱。 | *navigator*, *emissions*, *sharepoint*, *hadoop* |
-| 部署環境 | 資源所支援工作負載的開發週期階段。 | *prod, dev, qa, stage, test* |
-| 地區 | 部署資源所在的 Azure 區域。 | *westus, eastus2, westeurope, usgovia* |
+| 業務單位 | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 | _fin_, _mktg_, _product_, _it_, _corp_ |
+| 訂用帳戶類型 | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。 | _生產_、_共用_、_用戶端_ |
+| 應用程式或服務名稱 | 資源所屬應用程式、工作負載或服務的名稱。 | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
+| 部署環境 | 資源所支援工作負載的開發週期階段。 | _生產_、_開發_、 _qa_、_階段_、_測試_ |
+| 地區 | 部署資源所在的 Azure 區域。 | _westus_、 _eastus2_、 _westeurope_、 _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>建議的資源類型首碼
 
@@ -77,35 +77,38 @@ ms.locfileid: "76023356"
 | 資源類型                       | 資源名稱首碼 |
 | ----------------------------------- | -------------------- |
 | 資源群組                      | rg-                  |
-| Azure 虛擬網路               | vnet-                |
+| 可用性設定組                    | 激勵               |
+| API 管理服務              | api                 |
+| 虛擬網路                     | vnet-                |
 | 虛擬網路閘道             | vnetgw-              |
 | 閘道連線                  | cn-                  |
 | 子網路                              | snet-                |
 | 網路安全性群組              | nsg-                 |
 | 路由表                         | 料               |
-| Azure 虛擬機器              | vm-                  |
+| 虛擬機器                     | vm                   |
 | VM 儲存體帳戶                  | stvm                 |
 | 公用 IP                           | pip-                 |
-| Azure Load Balancer                 | lb-                  |
+| 負載平衡器                       | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Key Vault                     | kv                  |
-| Azure Kubernetes Service            | aks                 |
-| Azure 服務匯流排                   | sb-                  |
-| Azure 服務匯流排佇列            | sbq-                 |
-| Azure 服務匯流排主題            | sbt                 |
-| Azure App Service 方案             | 圖                |
-| Azure Web Apps                      | 相關                 |
-| Azure Functions                     | func                |
-| Azure 雲端服務                | 會                 |
+| 金鑰保存庫                           | kv                  |
+| AKS 叢集                         | aks                 |
+| AKS 容器                       | con                 |
+| 服務匯流排                         | sb-                  |
+| 服務匯流排佇列                   | sbq-                 |
+| 服務匯流排主題                   | sbt                 |
+| App Service 方案                    | 圖                |
+| Web 應用程式                             | 相關                 |
+| 函式應用程式                        | func                |
+| 雲端服務                       | 會                 |
 | Azure SQL Database 伺服器           | server                 |
-| Azure SQL Database                  | sqldb-               |
-| Azure Cosmos DB                     | cosmos              |
-| Azure Cache for Redis               | redis-               |
-| 適用於 MySQL 的 Azure 資料庫            | mysql-               |
-| 適用於 PostgreSQL 的 Azure 資料庫       | psql                |
+| Azure SQL 資料庫                  | sqldb-               |
+| Cosmos DB 資料庫                  | cosmos              |
+| Azure Cache for Redis 快取         | redis-               |
+| MySQL 資料庫                      | mysql-               |
+| PostgreSQL 資料庫                 | psql                |
 | Azure SQL 資料倉儲            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure 儲存體                       | st                   |
+| 儲存體帳戶                     | st                   |
 | Azure StorSimple                    | ssimp                |
 | Azure 搜尋服務                        | srch-                |
 | Azure 認知服務            | 齒輪                 |
@@ -119,10 +122,10 @@ ms.locfileid: "76023356"
 | Power BI Embedded                   | pbi                 |
 | Azure 串流分析              | asa-                 |
 | Azure Data Factory                  | adf                 |
-| Azure 事件中樞                    | evh-                 |
-| Azure IoT 中心                       | iot                 |
-| Azure 通知中樞             | pubnames.ntf                 |
-| Azure 通知中樞命名空間   | ntfns-               |
+| 事件中樞                           | evh-                 |
+| IoT 中樞                             | iot                 |
+| 通知中樞                   | pubnames.ntf                 |
+| 通知中樞命名空間         | ntfns-               |
 
 ### <a name="metadata-tags"></a>中繼資料標記
 
@@ -132,18 +135,18 @@ ms.locfileid: "76023356"
 
 | 標記名稱                  | 說明                                                                                                                                                                                                    | 索引鍵               | 範例值                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| 應用程式名稱          | 與資源相關聯的應用程式、服務或工作負載名稱。                                                                                                                                 | *ApplicationName* | *{應用程式名稱}*                                    |
-| 核准者名稱             | 負責核准此資源相關成本的人員。                                                                                                                                               | *Approver*        | *{電子郵件}*                                       |
-| 需要的/核准的預算  | 配置給此應用程式、服務或工作負載的金額。                                                                                                                                                    | *BudgetAmount*    | *{\$}*                                          |
-| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | *BusinessUnit*    | *FINANCE, MARKETING,{產品名稱}, CORP, SHARED* |
-| 成本中心               | 與此資源相關聯的會計成本中心。                                                                                                                                                          | *CostCenter*      | *{數字}*                                      |
-| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                | *DR*              | *Mission-critical, Critical, Essential*         |
-| 專案的結束日期   | 排定淘汰應用程式、工作負載或服務的日期。                                                                                                                                  | *EndDate*         | *{日期}*                                        |
-| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                              | *Env*             | *Prod, Dev, QA, Stage, Test*                    |
-| 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                | *擁有者*           | *{電子郵件}*                                       |
-| 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                          | *Requestor*       | *{電子郵件}*                                       |
-| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                       | *ServiceClass*    | *Dev, Bronze, Silver, Gold*                     |
-| 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                           | *StartDate*       | *{日期}*                                        |
+| 應用程式名稱          | 與資源相關聯的應用程式、服務或工作負載名稱。                                                                                                                                 | _ApplicationName_ | _{應用程式名稱}_                                    |
+| 核准者名稱             | 負責核准此資源相關成本的人員。                                                                                                                                               | _Approver_        | _{電子郵件}_                                       |
+| 需要的/核准的預算  | 配置給此應用程式、服務或工作負載的金額。                                                                                                                                                    | _BudgetAmount_    | _{\$}_                                          |
+| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | _BusinessUnit_    | _財務_，_行銷_， _{產品名稱}_ ， _CORP_，_共用_ |
+| 成本中心               | 與此資源相關聯的會計成本中心。                                                                                                                                                          | _CostCenter_      | _{數字}_                                      |
+| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                | _DR_              | _任務關鍵性_、_關鍵_、_重要_         |
+| 專案的結束日期   | 排定淘汰應用程式、工作負載或服務的日期。                                                                                                                                  | _EndDate_         | _{日期}_                                        |
+| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                              | _Env_             | _生產_、_開發_、 _QA_、_階段_、_測試_                    |
+| 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                | _擁有者_           | _{電子郵件}_                                       |
+| 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                          | _Requestor_       | _{電子郵件}_                                       |
+| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                       | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                     |
+| 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                           | _StartDate_       | _{日期}_                                        |
 
 ## <a name="sample-naming-convention"></a>命名慣例的範例
 
@@ -168,8 +171,8 @@ ms.locfileid: "76023356"
 | 資產類型               | 範圍           | [格式]                                                                | 範例                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Azure 虛擬網路          | 資源群組  | vnet-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| 虛擬網路的虛擬閘道     | 虛擬網路 | vnetgw-v-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| 虛擬網路的區域閘道       | 虛擬閘道 | vnetgw-l-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| 虛擬網路的虛擬閘道     | 虛擬網路 | vnetgw-v-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                 | <ul><li>vnetgw-v-共用-eastus2-001 </li><li>vnetgw-v-westus-001 </li><li>vnetgw-v-client-eastus2-001</li></ul>                   |
+| 虛擬網路的區域閘道       | 虛擬閘道 | vnetgw-l-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                 | <ul><li>vnetgw-l-共用-eastus2-001 </li><li>vnetgw-l-westus-001 </li><li>vnetgw-l-eastus2-001</li></ul>                   |
 | 站對站連線 | 資源群組  | cn-\<區域閘道名稱\>-to-\<虛擬閘道名稱\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | 虛擬網路連線         | 資源群組  | cn-\<訂用帳戶 1\>\<區域 1\>-to-\<訂用帳戶 2\>\<區域 2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
 | 子網路                   | 虛擬網路 | snet-\<訂用帳戶\>-\<子區域\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -190,9 +193,9 @@ ms.locfileid: "76023356"
 
 | 資產類型           | 範圍  | [格式]                                                              | 範例                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | 全球 | 應用程式\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Functions      | 全球 | func-\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure 雲端服務 | 全球 | \<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | 全球 | 應用程式\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions      | 全球 | func-\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure 雲端服務 | 全球 | \<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure 服務匯流排
 
@@ -208,7 +211,7 @@ ms.locfileid: "76023356"
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Azure SQL Database 伺服器           | 全球             | sql\<應用程式名稱\>-\<環境\>      | <ul><li>sql-navigator-生產環境 </li><li>sql-排放-開發</li></ul>           |
 | Azure SQL Database                  | Azure SQL Database | sqldb-\<資料庫名稱 >-\<環境\>| <ul><li>sqldb-使用者-生產環境 </li><li>sqldb-使用者-開發人員</li></ul>               |
-| Azure Cosmos DB                     | 全球             | cosmos-\<應用程式名稱\>-\<環境\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | 全球             | cosmos-\<應用程式名稱\>-\<環境\>   | <ul><li>cosmos-navigator-生產環境 </li><li>cosmos-排放-開發</li></ul>       |
 | Azure Cache for Redis               | 全球             | redis-\<應用程式名稱\>-\<環境\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | 適用於 MySQL 的 Azure 資料庫            | 全球             | mysql-\<應用程式名稱\>-\<環境\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | 適用於 PostgreSQL 的 Azure 資料庫       | 全球             | psql-\<應用程式名稱\>-\<環境\>     | <ul><li>psql-navigator-生產環境 </li><li>psql-排放-開發</li></ul>         |
