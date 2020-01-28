@@ -45,7 +45,7 @@
       href: strategy/first-adoption-project.md
     - name: 建議的技能
       href: strategy/suggested-skills.md
-- name: 規劃
+- name: 計畫
   items:
     - name: 概觀
       href: plan/index.md
@@ -69,7 +69,7 @@
       items:
         - name: 概觀
           href: plan/plan-intro.md
-        - name: 必要條件
+        - name: Prerequisites
           href: plan/prerequisites.md
         - name: 將範本部署到 Azure DevOps
           href: plan/template.md
@@ -191,7 +191,7 @@
       href: ready/suggested-skills.md
 - name: 採用
   items:
-    - name: 移轉
+    - name: 遷移
       items:
         - name: 概觀
           href: migrate/index.md
@@ -283,7 +283,7 @@
               items:
                 - name: 概觀
                   href: migrate/azure-best-practices/vmware-host.md
-                - name: 必要條件
+                - name: Prerequisites
                   items:
                     - name: 保護您的環境
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -387,7 +387,7 @@
                       items:
                         - name: 將 SAP ASE 移轉至 Azure SQL DB
                           href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Access
+                    - name: 存取
                       items:
                         - name: 將 Access 移轉至 Azure SQL DB
                           href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -471,7 +471,7 @@
           items:
             - name: 概觀
               href: migrate/migration-considerations/index.md
-            - name: 必要條件
+            - name: Prerequisites
               items:
                 - name: 概觀
                   href: migrate/migration-considerations/prerequisites/index.md
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: 開始使用 Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: 使用 Azure Sphere 來無線部署應用程式
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: 使用 Azure Sphere 建立部署
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: 開始使用 Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: 建置您的第一個 Azure Kinect DK 應用程式
@@ -857,8 +857,6 @@
                   items:
                     - name: 從實驗到操作服務的 Azure Machine Learning
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Azure Machine Learning 發佈至 Web 服務以供應用程式取用
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: 在 Azure HDInsight 上運作 ML 服務
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: 治理
@@ -1193,7 +1191,7 @@
       items:
         - name: 概觀
           href: operating-model/index.md
-        - name: 術語
+        - name: 詞彙
           href: operating-model/terms.md
     - name: 決策指南
       items:
