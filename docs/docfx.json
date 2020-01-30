@@ -57,6 +57,7 @@
       "feedback_github_repo": "MicrosoftDocs/cloud-adoption-framework.zh-tw",
       "feedback_product_url": "https://azure-architecture.uservoice.com/forums/918625-architecture-guidance",
       "ms.service": "cloud-adoption-framework",
+      "titleSuffix": "Cloud Adoption Framework",
       "brand": "azure",
       "_op_documentIdPathDepotMapping": {
         "./": {
