@@ -1,6 +1,5 @@
 ---
 title: 自動上架
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 自動上架
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751595"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808017"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -37,7 +36,7 @@ ms.locfileid: "73751595"
 
 下表中所述的檔案會在此範例中使用。 您可以自訂它們以支援您自己的部署案例。
 
-| 檔案名稱 | 描述 |
+| 檔案名稱 | 說明 |
 |-----------|-------------|
 | New-AMSDeployment. ps1 | 主要的協調腳本會自動上線。 它會建立資源群組，以及位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
 | 工作區-AutomationAccount. json | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |

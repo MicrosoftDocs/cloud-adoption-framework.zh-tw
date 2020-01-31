@@ -1,6 +1,5 @@
 ---
 title: 管理組織調整
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 提供管理組織調整的方法概觀。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e715ed8c44d44d463bd5ff4ed0531258508ccc2f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564295"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800877"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 

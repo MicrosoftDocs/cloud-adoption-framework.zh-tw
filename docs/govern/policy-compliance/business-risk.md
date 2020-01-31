@@ -1,6 +1,5 @@
 ---
 title: 瞭解雲端遷移期間的業務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端遷移期間的業務風險
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 85ff0f9fa54542309a814fbca44c38de65805933
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 801420d31c5f1bbfef20ac610e06f7501bce5e6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752655"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806130"
 ---
 <!-- markdownlint-disable MD026 -->
 

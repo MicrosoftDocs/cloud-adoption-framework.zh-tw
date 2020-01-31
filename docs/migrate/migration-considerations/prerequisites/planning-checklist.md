@@ -1,6 +1,5 @@
 ---
 title: 遷移環境規劃檢查清單
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在移轉之前驗證環境是否已就緒
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753445"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801404"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 

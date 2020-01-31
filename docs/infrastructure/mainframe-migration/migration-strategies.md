@@ -1,6 +1,5 @@
 ---
-title: 大型主機移轉：從大型主機切換至 Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 大型主機遷移：將從主機切換至 Azure
 description: 針對目前在大型主機上執行的系統，將應用程式從大型主機環境遷移至 Azure。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221516"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808765"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
@@ -52,11 +51,11 @@ Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中
 
 ## <a name="scalability"></a>延展性
 
-大型主機通常是相應增加，而雲端環境是相應放大。大型主機可以使用結合設備（CF）向外延展，但是硬體和儲存體的高成本會使大型主機的相應放大變得昂貴。
+大型主機通常會相應增加，而雲端環境則會向外延展。大型主機可以使用結合設備（CF）向外延展，但是硬體和儲存體的高成本會使大型主機的相應放大變得昂貴。
 
 CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
 
-## <a name="backup-and-recovery"></a>備份與復原
+## <a name="backup-and-recovery"></a>備份及復原
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
@@ -70,8 +69,8 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 
 大型主機的實體儲存體類型包括：
 
-- **中央儲存體：** 直接位於大型主機的處理器上，也稱為處理器或實際儲存體。
-- **輔助儲存體：** 與大型主機位在不同地方，此類型包含 DASD 上的儲存體，也稱為分頁儲存體。
+- **中央儲存體：** 直接位於大型主機處理器上，這也稱為「處理器」或「實際存放裝置」。
+- **輔助儲存體：** 與大型主機分開，此型別包含 Dasd 上的儲存體，也稱為分頁儲存體。
 
 雲端提供一組有彈性、可擴充的選項，且您只要為所需的那些選項付費。 [Azure 儲存體](https://docs.microsoft.com/azure/storage/common/storage-introduction)提供可大幅調整的資料物件存放區、雲端檔案系統服務、可靠的訊息存放區，以及 NoSQL 存放區。 針對 VM，受控和非受控磁碟可提供安全的永續性磁碟儲存體。
 

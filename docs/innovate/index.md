@@ -1,6 +1,5 @@
 ---
 title: 雲端採用架構中的雲端創新
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解雲端採用架構中的雲端創新。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: c4acca0cc71a149f6cb7ab5ecd058a833967c7e1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868069"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808374"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 

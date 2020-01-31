@@ -1,19 +1,18 @@
 ---
 title: 執行移轉
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 執行移轉
+description: 取得說明在 Azure 中，遷移工作負載時可能牽涉到各種活動的文章總覽。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 21520edecc7ba874713561672cd0bd38aa96c0a2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818228"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802271"
 ---
 # <a name="execute-a-migration"></a>執行移轉
 

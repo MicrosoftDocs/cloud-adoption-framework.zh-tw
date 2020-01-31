@@ -1,6 +1,5 @@
 ---
 title: 定址接收器和 fiefdoms
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解反模式的定址接收器和 fiefdoms。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f0767ad4825a0b6b1506b8ee17e33eccf383325a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753650"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800809"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：接收器和 fiefdoms
 

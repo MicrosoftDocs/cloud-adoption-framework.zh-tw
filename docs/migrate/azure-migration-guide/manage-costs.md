@@ -1,6 +1,5 @@
 ---
 title: 聚焦在移轉的成本控制機制
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何設定預算、付款和了解 Azure 資源的發票。
 author: bandersmsft
 ms.author: banders
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 57725e56c973a8fb094c50987d84c26a70c0ead6
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251669"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803512"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 

@@ -1,6 +1,5 @@
 ---
 title: 大型主機移轉概觀
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 899e1575fa4e8c3bd83ebec38f0a38cb1e02d314
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547924"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808782"
 ---
 # <a name="mainframe-migration-overview"></a>大型主機移轉概觀
 

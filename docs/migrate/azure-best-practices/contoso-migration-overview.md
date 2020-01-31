@@ -1,6 +1,5 @@
 ---
 title: Azure 的應用程式移轉範例概觀
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 概述「雲端採用架構移轉」一節中包含的應用程式移轉範例。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566435"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807371"
 ---
 # <a name="application-migration-patterns-and-examples"></a>應用程式移轉模式和範例
 
@@ -33,7 +32,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 <!-- markdownlint-disable MD033 -->
 
-**模式** | **定義** | **使用時機**
+**模式** | **[定義]** | **使用時機**
 --- | --- | ---
 **重新裝載** | 通常稱為隨即_轉移_。 這個選項不需要變更程式碼，可讓您將現有的應用程式迅速移轉至 Azure。 每個應用程式皆依原狀移轉，可直接享有雲端優勢，而無須承擔變更程式碼的相關風險和成本。 | 需要將應用程式快速移轉至雲端時。<br/><br/> 想要在不修改應用程式的情況下進行移轉時。<br/><br/> 當應用程式在移轉後進行建構以便運用 [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) 延展性時。<br/><br/> 應用程式對您的業務很重要，但還不需要立即變更應用程式功能時。
 **重構** | 重構通常稱為「重新封裝」，需要對應用程式進行最小程度的變更，以便您連結至 [Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) 並使用雲端供應項目。<br/><br/> 例如，您可將現有應用程式移轉至 Azure App Service 或 Azure Kubernetes Service (AKS)。<br/><br/> 或者，您也可以將關聯式和非關聯式資料庫重構為 Azure SQL Database 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB 之類的選項。 | 若您的應用程式可輕鬆地重新封裝以在 Azure 中運作。<br/><br/> 若想採用 Azure 提供的創新式 DevOps 做法或針對工作負載使用容器策略會考慮 DevOps 時。<br/><br/> 若要選擇重構，您必須考量現有程式碼基礎的可攜性及可用的開發技能。

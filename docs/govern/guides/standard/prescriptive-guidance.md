@@ -1,6 +1,5 @@
 ---
 title: 標準企業治理指南：說明的最佳做法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解標準企業治理的最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547475"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806793"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 
@@ -99,7 +98,7 @@ ms.locfileid: "72547475"
 
 **每月審查和報告：** 雲端治理小組每個月都會執行所有雲端部署的審查，以驗證原則的持續一致。 如果發現偏差，他們就會記下這些偏差，然後將其分享給雲端採用小組。 如果強制作業沒有造成業務中斷或資料流失的風險，就會自動強制執行原則。 在 audit 結束時，雲端治理小組會為雲端策略小組和每個雲端採用小組編譯報告，以溝通整體遵循原則。 報告也會儲存以便用於稽核和法律用途。
 
-**每季原則審查：** 雲端治理小組和雲端策略小組每季都會回顧審查結果，並建議變更公司原則。 這些建議之中，有許多是持續不斷改進的結果以及使用模式的觀察。 核准的原則變更會在後續的稽核週期內整合至治理工具中。
+**每季原則審查：** 雲端治理小組和雲端策略小組每季都會回顧審查結果，並建議變更公司原則。 這些建議中有許多都是持續改進與觀察使用量模式的結果。 核准的原則變更會在後續的稽核週期內整合至治理工具中。
 
 ## <a name="alternative-patterns"></a>替代模式
 

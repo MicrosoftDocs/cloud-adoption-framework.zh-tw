@@ -1,6 +1,5 @@
 ---
 title: 安全性基準範例原則聲明
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準範例原則聲明
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160522"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808867"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
-每個雲端原則聲明都是一個指導方針，用來解決在風險評估流程中識別到的特定風險。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
+個別雲端原則聲明是解決在風險評估流程中識別出的特定風險方針。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
 
 - **技術風險：** 此原則將解決的風險摘要。
 - **原則聲明：** 原則需求的清楚摘要說明。

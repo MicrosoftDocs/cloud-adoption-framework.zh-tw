@@ -1,6 +1,5 @@
 ---
 title: Azure 中的安全性基準工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 這項工具的說明可協助改善 Azure 中的安全性基準。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565901"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808799"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure 中的安全性基準工具
 
-[安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 這個專業領域著重于建立原則來保護網路、資產，以及最重要的是雲端提供者解決方案上的資料的方式。 在雲端治理的五個專業領域中，安全性基準專業領域牽涉到數位資產和資料的分類。 它也包含與資料、資產和網路的安全性相關聯的風險、商務容錯和風險降低策略的檔。 從技術觀點來看，此專業領域也包括有關[加密](../../decision-guides/encryption/index.md)、[網路需求](../../decision-guides/software-defined-network/index.md)、混合式身分[識別策略](../../decision-guides/identity/index.md)，以及[自動化強制執行](../../decision-guides/policy-enforcement/index.md)安全性原則之工具的參與決策跨[資源群組](../../decision-guides/resource-consistency/index.md)。
+[安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 這個專業領域著重于建立原則來保護網路、資產，以及最重要的是雲端提供者解決方案上的資料的方式。 在雲端治理的五個專業領域中，安全性基準專業領域牽涉到數位資產和資料的分類。 它也包含與資料、資產和網路的安全性相關聯的風險、商務容錯和風險降低策略的檔。 從技術觀點來看，此專業領域也包括有關[加密](../../decision-guides/encryption/index.md)、[網路需求](../../decision-guides/software-defined-network/index.md)、混合式身分[識別策略](../../decision-guides/identity/index.md)，以及跨[資源群組](../../decision-guides/resource-consistency/index.md)[強制執行](../../decision-guides/policy-enforcement/index.md)安全性原則之工具的參與決策。
 
 下列 Azure 工具清單可協助您成熟支援安全性基準的原則和流程。
 

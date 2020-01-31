@@ -1,6 +1,5 @@
 ---
 title: 建置技術技能
-titleSuffix: Microsoft Cloud Adoption Framework in Azure
 description: 建置技術技能的簡介
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7602561bf0b8c1e935a05038cb38155e21a8ab86
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 41280878316a3bb7e78054800e1973ed1d480157
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561654"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798684"
 ---
 # <a name="build-technical-skills"></a>建置技術技能
 

@@ -1,6 +1,5 @@
 ---
 title: 移轉工具決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移轉工具決策指南
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 38c0e6b56a51155be10501328d68c08bd500847e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753337"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806742"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 

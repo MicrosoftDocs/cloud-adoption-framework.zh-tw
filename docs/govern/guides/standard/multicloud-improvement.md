@@ -1,6 +1,5 @@
 ---
 title: 標準企業治理指南：多重雲端改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準企業治理指南：多重雲端改進
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3952111d8e4c9bdc8c1920d72e763a56427bb397
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753077"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806147"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -30,7 +29,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 在此敘述的上一個階段中，公司已經開始透過 CI/CD 管線主動將生產應用程式推送至雲端。
 
-從那時起，某些事項已經改變，將會影響治理：
+從那時起，某些將會影響治理的事項已經改變：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要會由 Azure 監視器與相關的自動化來管理。
@@ -47,7 +46,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 **商務取得成本：** 取得新業務的預估將在五年內獲利。 由於報酬率偏低，因此，董事會希望盡可能地控制收購成本。 這會產生使成本控制和技術整合彼此衝突的風險。
 
-此業務風險會延伸成少數技術風險：
+此業務風險可能會延伸出少數技術風險：
 
 - 雲端遷移可能會產生額外的購置成本。
 - 新環境可能不會受到適當的控管，而可能導致原則違規。

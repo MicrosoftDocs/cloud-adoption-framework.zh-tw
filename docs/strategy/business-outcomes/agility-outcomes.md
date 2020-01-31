@@ -1,6 +1,5 @@
 ---
 title: 靈活性結果的範例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 靈活性結果的範例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566637"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798497"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
@@ -25,7 +24,7 @@ ms.locfileid: "73566637"
 
 ## <a name="why-is-agility-so-important"></a>為什麼靈活性很重要？
 
-市場變更的速度比以往更快。 2015年起，只有57家公司仍在財富 500 61 年內，&mdash;an 的比率是 88.6%。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
+市場變更的速度比以往更快。 2015年起，只有57家公司仍在財富 500 61 年內，&mdash;88.6 的周轉率百分比。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
 
 對於面臨新生威脅和創公司，商業彈性可能是商務計畫成功或失敗之間的差異。 快速調整市場變更可協助您的現有客戶，或從競爭對手領取市場。 下一節中的靈活性相關結果可協助在轉換期間傳達雲端的價值。
 

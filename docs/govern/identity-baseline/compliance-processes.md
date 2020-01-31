@@ -1,6 +1,5 @@
 ---
 title: 身分識別基準原則合規性流程
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準原則合規性流程
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566206"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807150"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>身分識別基準原則合規性流程
 
@@ -32,7 +31,7 @@ ms.locfileid: "73566206"
 
 **年度規劃：** 一年來，執行身分識別管理原則的高階審查。 探索身分識別服務環境的規劃變更與更新的雲端採用策略，以識別增加的潛在風險或者修改目前身分識別基礎結構模式的需求。 同時利用這個機會檢閱最新身分識別管理最佳做法，並且將其整合至您的原則和檢閱流程。
 
-**每季規劃：** 每季執行身分識別和存取控制審查資料的一般審查，並與雲端採用小組見面，以識別任何可能的新風險或作業需求，需要更新身分識別原則或存取控制中的變更示意圖.
+**每季規劃：** 每季執行身分識別和存取控制審查資料的一般審查，並與雲端採用小組見面，以識別任何可能的新風險或作業需求，需要更新身分識別原則或存取控制策略的變更。
 
 此規劃程式也是評估您的雲端治理小組目前成員資格的好時機，以取得與身分識別相關的新原則或變更原則與風險的相關知識差距。 邀請相關 IT 人員來參與檢閱及規劃，無論是作為小組的暫時技術顧問或永久成員。
 

@@ -1,6 +1,5 @@
 ---
 title: Azure 安全性指導方針
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft 提供哪些安全性指引？
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058820"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804906"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +31,7 @@ Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合�
 
 **服務信任平台 (STP)** 提供深度資訊和工具，協助您符合使用 Microsoft Cloud 服務的需求，包括 Azure、Office 365、Dynamics 365 和 Windows。 STP 是與 Microsoft Cloud 相關的一站式安全性、法規、合規性及隱私權資訊商店。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 STP 是建立來協助追蹤 Azure 內的法規合規性活動，包括：
 
-- **合規性管理員：** 合規性管理員是 Microsoft 服務信任平臺中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及驗證貴組織與 Microsoft Cloud 服務相關的法規合規性活動，例如 Office 365、Dynamics365和 Azure。 您可以在下一節找到更多詳細資料。
+- **合規性管理員：** 合規性管理員是 Microsoft 服務信任平臺中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及驗證貴組織與 Microsoft Cloud 服務相關的法規合規性活動，例如 Office 365、Dynamics 365 和 Azure。 您可以在下一節找到更多詳細資料。
 - **信任檔：** 目前有三種類別的指南，可提供您豐富的資源來評估 Microsoft Cloud;瞭解 Microsoft 在安全性、合規性和隱私權方面的作業;並協助您採取行動以改善資料保護功能。 這些區域包括：
 - **審查報告：** 審查報告可讓您隨時掌握 Microsoft Cloud 服務的最新隱私權、安全性及合規性相關資訊。 包括 ISO、SOC、FedRAMP 和其他稽核報告、橋接字母和獨立第三方稽核 Microsoft Cloud 服務 (例如 Azure、Office 365、Dynamics 365 等等) 的相關資料。
 - **資料保護指南：** 資料保護指南提供 Microsoft Cloud services 如何保護您的資料，以及如何為您的組織管理雲端資料安全性與合規性的相關資訊。 包括深入白皮書，提供 Microsoft 如何設計和操作雲端服務的詳細資料、常見問題集、年終安全性評量報告、滲透測試結果，以及可協助您進行風險評量並改善資料保護功能的指引。
@@ -47,7 +46,7 @@ Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合�
   - **資料主體要求：** GDPR 會授與個人（或資料主體）與處理其個人資料的特定許可權。 包括修正不正確資料、清除資料或限制其處理的權限，以及接收其資料和履行將資料傳送給另一個控制器之要求的權限。
   - **資料缺口：** GDPR 會在有違反個人資料的情況時，要求資料控制器和處理器的通知需求。 STP 提供您 Microsoft 起先如何嘗試防止缺口、Microsoft 如何偵測缺口以及 Microsoft 如何回應缺口事件並且以資料控制器身分通知您的相關資訊。
   - **資料保護影響評量：** Microsoft 協助控制器完成 GDPR 資料保護影響評量。 GDPR 提供詳盡的案例清單，其中 DPIA 必須執行，例如針對分析和類似活動目的的自動化處理、處理大規模特殊類別個人資料，以及大規模系統化監視可公開存取的區域。
-  - **其他資源：** 除了上述各節所討論的工具指引外，STP 也提供其他資源，包括區域合規性、安全性與合規性中心的其他資源，以及服務信任平臺的相關常見問題。合規性管理員和隱私權/GDPR。
+  - **其他資源：** 除了上述各節所討論的工具指引外，STP 也提供其他資源，包括區域合規性、安全性與合規性中心的其他資源，以及服務信任平臺、合規性管理員和隱私權/GDPR 的相關常見問題。
 - **區域合規性：** STP 為 Microsoft 線上服務提供了許多合規性檔和指引，以符合不同區域的合規性需求，包括捷克文共和國、波蘭和羅馬尼亞。
 
 ## <a name="unique-intelligent-insights"></a>唯一的 Intelligent Insights

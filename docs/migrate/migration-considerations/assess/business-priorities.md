@@ -1,6 +1,5 @@
 ---
 title: 在長期轉換程序期間維護業務優先順序
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在長期轉換程序期間維護業務優先順序。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2a48dad8cb7d64b766dc5b9a445aeda4245854e7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549205"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802713"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊
 

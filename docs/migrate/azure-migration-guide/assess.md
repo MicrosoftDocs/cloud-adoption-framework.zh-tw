@@ -1,6 +1,5 @@
 ---
 title: 評估數位資產
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 評估數位資產
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251429"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807065"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
@@ -68,7 +67,7 @@ Azure Migrate 服務會評估要移轉至 Azure 的內部部署基礎結構、�
 
 ## <a name="service-map"></a>服務對應
 
-服務對應可自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 您可以藉由服務對應，將伺服器視為提供重要服務的互連系統，藉此來檢視伺服器。 不需要進行任何設定，只要安裝了代理程式，服務對應就會顯示橫跨任何 TCP 連線架構的伺服器、處理序、輸入和輸出連線的延遲，和連接埠之間的連線。
+服務對應會自動在 Windows 及 Linux 系統上探索應用程式元件，並對應服務之間的通訊。 您可以藉由服務對應，將伺服器視為提供重要服務的互連系統，藉此來檢視伺服器。 不需要進行任何設定，只要安裝了代理程式，服務對應就會顯示橫跨任何 TCP 連線架構的伺服器、處理序、輸入和輸出連線的延遲，和連接埠之間的連線。
 
 Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 [相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)會概述這項整合的完整詳細資料。 如果您使用 Azure 移轉服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
 

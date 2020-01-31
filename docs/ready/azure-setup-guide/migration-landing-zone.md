@@ -1,6 +1,5 @@
 ---
 title: 在 Azure 中部署移轉登陸區域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何在 Azure 中部署移轉登陸區域。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251699"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799483"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 

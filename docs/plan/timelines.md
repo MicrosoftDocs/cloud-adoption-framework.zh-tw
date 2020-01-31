@@ -1,6 +1,5 @@
 ---
 title: 雲端採用方案中的時程表
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端採用方案中的時程表
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4918c5e4c9efefdd8785586bf8fb309684b654a7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549022"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800052"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>雲端採用方案中的時程表
 
@@ -21,7 +20,7 @@ ms.locfileid: "72549022"
 
 工作分解結構（WBS）通常會用於順序專案管理工具中。 它們代表相依工作在一段時間內的完成方式。 這類結構在工作的本質上很好用。 在雲端採用中發現的工作相互相關性，使這類結構變得更容易管理。 若要填滿此間隙，您可以藉由隱藏複雜性來估計以反復專案路徑指派為基礎的時間軸。
 
-## <a name="estimate-timelines"></a>估計時間軸
+## <a name="estimate-timelines"></a>預估時間表
 
 若要開發時程表，請從版本開始。 這些發行目標會針對任何業務影響建立目標日期。 反復專案有助於將這些版本與特定的持續時間進行對齊。
 

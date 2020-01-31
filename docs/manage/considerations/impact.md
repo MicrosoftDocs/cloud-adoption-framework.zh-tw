@@ -1,6 +1,5 @@
 ---
 title: 業務衝擊-雲端管理和營運
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 業務衝擊-雲端管理和營運
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752858"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807796"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理中的業務衝擊
 

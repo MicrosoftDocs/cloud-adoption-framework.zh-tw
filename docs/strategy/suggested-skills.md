@@ -1,6 +1,5 @@
 ---
 title: 規劃期間的技能就緒性路徑
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 遷移計畫階段期間的技能就緒性路徑的總覽。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
-ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
+ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75943451"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798106"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -91,7 +90,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略 potion。
 
-[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 內容會涵蓋 Microsoft Azure 雲端服務如何在受信任雲端平台上推動組織發展。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
+[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。
 
 ## <a name="learn-more"></a>了解更多
 

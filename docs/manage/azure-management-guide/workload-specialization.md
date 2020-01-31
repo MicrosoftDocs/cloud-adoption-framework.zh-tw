@@ -1,6 +1,5 @@
 ---
 title: 用於 Azure 中雲端管理的工作負載特製化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 改善工作負載特有的雲端管理作業
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752909"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808136"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 

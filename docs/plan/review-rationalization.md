@@ -1,6 +1,5 @@
 ---
 title: 檢閱合理化決策
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 檢閱合理化決策
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 47efac0b85198e95a76d40ad053a33c8051837ea
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564148"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800180"
 ---
 # <a name="review-rationalization-decisions"></a>檢閱合理化決策
 

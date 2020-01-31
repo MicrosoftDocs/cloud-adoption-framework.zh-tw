@@ -1,6 +1,5 @@
 ---
 title: Azure 伺服器管理工具和服務
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 伺服器管理工具和服務
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565272"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807932"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
@@ -21,7 +20,7 @@ ms.locfileid: "73565272"
 
 - 移轉
 - 安全
-- Protect
+- 保護
 - 監視
 - 設定
 - 治理
@@ -36,7 +35,7 @@ ms.locfileid: "73565272"
 
 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)是全方位的安全性管理應用程式。 藉由上架至資訊安全中心，您可以快速取得環境的安全性和法規合規性狀態的評量。 如需將伺服器上架到 Azure 資訊安全中心的指示，請參閱[設定訂用帳戶的 Azure 管理服務](./onboard-at-scale.md#azure-security-center)。
 
-## <a name="protect"></a>Protect
+## <a name="protect"></a>保護
 
 若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性嚴重損壞修復（BCDR）計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
 

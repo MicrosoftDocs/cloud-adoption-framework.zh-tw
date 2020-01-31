@@ -1,6 +1,5 @@
 ---
 title: 使用多個 Azure 訂用帳戶進行調整
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何使用多個 Azure 訂用帳戶進行調整。
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73563996"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799789"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
 
@@ -45,7 +44,7 @@ ms.locfileid: "73563996"
 
 - 公用雲端區域和主權或政府雲端區域中的訂用帳戶有不同的限制。 這些通常是由環境間不同的資料分類層級所驅動。
 
-- 如果您因為安全性或合規性而完全隔離不同的使用者集合，您可能需要個別的訂用帳戶。 例如，國家地區政府組織可能需要將訂用帳戶的存取許可權制為僅限公民。
+- 如果您因為安全性或合規性而完全隔離不同的使用者集合，您可能需要個別的訂用帳戶。 例如，國家政府組織可能需要將訂用帳戶的存取許可權制為僅限公民。
 
 - 不同的訂用帳戶可能會有不同類型的供應項目，每個供應項目都有自己的條款和權益。
 

@@ -1,6 +1,5 @@
 ---
 title: 身分識別決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 移轉中作為核心服務的身分識別。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753183"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807099"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 
@@ -34,10 +33,10 @@ ms.locfileid: "73753183"
 
 | 問題 | 雲端基準 | 目錄同步作業 | 雲端託管網域服務 | Active Directory Federation Services |
 |------|------|------|------|------|
-| 您目前是否沒有內部部署目錄服務？ | yes | 否 | 否 | 否 |
-| 您的工作負載是否需要在雲端和內部部署環境之間使用一組通用的使用者與群組？ | 否 | yes | 否 | 否 |
-| 您的工作負載相依於 Kerberos 或 NTLM 等舊版驗證機制嗎？ | 否 | 否 | yes | yes |
-| 您是否需要跨多個身分識別提供者的單一登入？ | 否 | 否 | 否 | yes |
+| 您目前是否沒有內部部署目錄服務？ | 是 | 否 | 否 | 否 |
+| 您的工作負載是否需要在雲端和內部部署環境之間使用一組通用的使用者與群組？ | 否 | 是 | 否 | 否 |
+| 您的工作負載相依於 Kerberos 或 NTLM 等舊版驗證機制嗎？ | 否 | 否 | 是 | 是 |
+| 您是否需要跨多個身分識別提供者的單一登入？ | 否 | 否 | 否 | 是 |
 
 在規劃移轉至 Azure 時，您將需要判斷如何以最佳方式整合現有的身分識別管理及雲端身分識別服務。 下列為常見整合案例。
 
@@ -61,7 +60,7 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 
 對於具有現有內部部署 Active Directory 基礎結構的組織，目錄同步作業通常是保留現有使用者和存取管理的最佳解決方案，同時可提供所需的 IAM 功能來管理雲端資源。 此程序會持續複寫 Azure AD 和內部部署目錄服務之間的目錄資訊，允許使用者使用常見的認證，並在整個組織內使用一致的身分識別、角色和權限系統。
 
-注意：採用 Office 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
+注意:採用 Office 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
 
 **目錄同步作業假設事項：** 使用同步處理身分識別解決方案的假設如下：
 

@@ -1,6 +1,5 @@
 ---
 title: 訂用帳戶決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 移轉中作為核心服務的雲端平台訂用帳戶。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 327077f912e916975eef08ad6613f3806a759bca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753146"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806572"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -96,7 +95,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 ## <a name="next-steps"></a>後續步驟
 
-訂用帳戶設計只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)以了解針對其他基礎架構類型訂定決策時，所使用的替代模式或模型。
+訂用帳戶設計只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

@@ -1,6 +1,5 @@
 ---
 title: 在雲端採用旅程期間讓客戶成功
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在整個雲端採用旅程中實現客戶的成功
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781584"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804481"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 

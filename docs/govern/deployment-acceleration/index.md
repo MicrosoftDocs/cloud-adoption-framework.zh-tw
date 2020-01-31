@@ -1,6 +1,5 @@
 ---
 title: 部署加速專業領域概觀
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的部署加速。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 02741fdaeab54267fbb54fcfaa0c65a3f1207045
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566373"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804175"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -24,7 +23,7 @@ ms.locfileid: "73566373"
 本文將概述公司在實作雲端解決方案的規劃、建置、採用及操作階段期間所體驗的部署加速流程。 沒有任何一份文件能夠滿足任一企業的所有需求。 因此，本文的每一節都將概述建議的最低和潛在活動。 這些活動的目的是要協助您建置[原則 MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy)，但也會建立[累加式原則](../policy-compliance/index.md#incremental-policy-growth)的改良架構。 雲端治理小組應決定要對這些活動進行多少投資，以改進部署加速效果。
 
 > [!NOTE]
-> 部署加速專業領域不會取代可讓貴組織有效部署和設定雲端式資源的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別潛在的業務風險，並且為負責管理雲端資源的 IT 人員提供風險降低指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
+> 部署加速專業領域不會取代可讓貴組織有效部署和設定雲端式資源的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別潛在商務風險，且為負責管理雲端資源的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責部署和設定雲端式工作負載的領導人。
 

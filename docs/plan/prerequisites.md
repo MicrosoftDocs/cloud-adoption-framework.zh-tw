@@ -1,6 +1,5 @@
 ---
 title: 有效雲端採用方案的必要條件
-titleSuffix: Microsoft Cloud Adoption Framework
 description: 瞭解有效雲端採用方案的必要條件。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 391abf359cd1da0af1d243c1a220b34a746642eb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240228"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800197"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
 

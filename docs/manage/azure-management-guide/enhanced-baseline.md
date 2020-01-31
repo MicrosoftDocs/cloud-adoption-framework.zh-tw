@@ -1,6 +1,5 @@
 ---
 title: Azure 中的增強管理基準
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 管理基準的常見改善
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8cdd9a48d8d229fdca7cba383d677a49525d06cc
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ad40011769152d906481fe8ffba5dead3f6b0ae5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752961"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808238"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 

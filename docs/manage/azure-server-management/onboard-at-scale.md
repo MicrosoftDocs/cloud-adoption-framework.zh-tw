@@ -1,6 +1,5 @@
 ---
 title: 設定訂用帳戶的 Azure 伺服器管理服務
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 設定訂用帳戶的 Azure 伺服器管理服務
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656641"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808085"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模設定 Azure 伺服器管理服務
 
@@ -48,7 +47,7 @@ Azure 原則具有內建的[原則方案](https://docs.microsoft.com/azure/gover
 
 若要指派上一節中所述的原則：
 
-1. 在 Azure 入口網站中，移至**Azure 原則** > **指派**  > **指派方案**。
+1. 在 Azure 入口網站中，移至**Azure 原則** > **指派** > **指派方案**。
 
     ![入口網站的原則介面螢幕擷取畫面](./media/onboarding-at-scale1.png)
 
@@ -160,7 +159,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
 
-建立完成後，當您選取 [ **View**  > **解決方案**] 時，工作區資源實例會顯示**AgentHealthAssessment** 。
+建立完成後，當您選取 [ **View** > **解決方案**] 時，工作區資源實例會顯示**AgentHealthAssessment** 。
 
 ### <a name="antimalware-assessment"></a>反惡意程式碼評估
 
@@ -175,7 +174,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
 
-建立完成後，當您選取 [ **View**  > **解決方案**] 時，工作區資源實例會顯示**反惡意**代碼。
+建立完成後，當您選取 [ **View** > **解決方案**] 時，工作區資源實例會顯示**反惡意**代碼。
 
 ### <a name="azure-monitor-for-vms"></a>適用於 VM 的 Azure 監視器
 

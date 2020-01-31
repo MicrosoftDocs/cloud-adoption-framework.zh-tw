@@ -1,6 +1,5 @@
 ---
 title: 作業模型簡介
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解雲端採用架構的作業模型。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753669"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806946"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型
 

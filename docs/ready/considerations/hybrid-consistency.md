@@ -1,6 +1,5 @@
 ---
 title: 建立混合式雲端一致性
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 定義建立混合式雲端一致性的方法。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95dfcf1dea3a6b1734f770609ced4c9b2c0b069b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243197"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799092"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>建立混合式雲端一致性
 

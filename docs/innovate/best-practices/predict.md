@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：在 Azure 中預測和影響的工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在 Azure 中預測和影響的工具
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9bb5f837ce3a7bb07fb108f48229f488df1b9dc7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 656074ea65f490dea1345c2e00742846323cf6db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565793"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808612"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>在 Azure 中預測和影響資料的工具
 
@@ -21,7 +20,7 @@ ms.locfileid: "73565793"
 
 ![雲端採用架構的預測和影響方法](../../_images/innovate/predict-and-influence.png)
 
-## <a name="alignment-to-the-methodology"></a>與方法的對齊
+## <a name="alignment-to-the-methodology"></a>與方法配合
 
 您可以透過下列程式的每個階段，加速這種類型的數位家發明。 這些階段會與上圖中顯示的方法一致。 此頁面左側的目錄中會列出加速數位家發明的技術指引。 這些文章會依階段分組以配合方法。
 

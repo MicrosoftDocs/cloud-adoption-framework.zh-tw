@@ -1,6 +1,5 @@
 ---
 title: 藉由遷移 SQL Server 的實例來加速遷移
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 遷移整個 SQL Server 實例可以加速工作負載遷移工作。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328917"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802985"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>藉由遷移多個資料庫或整個 SQL Server 來加速遷移
 
@@ -46,7 +45,7 @@ ms.locfileid: "75328917"
 
 以下是伺服器清查的範例：
 
-|SQL Server|目的|版本|[重要性](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
+|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |sql-01|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
 |sql-02|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
@@ -58,7 +57,7 @@ ms.locfileid: "75328917"
 
 以下是上述其中一部伺服器的資料庫清查範例：
 
-|伺服器|資料庫|[重要性](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant （DMA）結果|DMA 補救|目標平台|
+|伺服器|資料庫|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant （DMA）結果|DMA 補救|目標平臺|
 |---------|---------|---------|---------|---------|---------|---------|
 |sql-01|DB-1|關鍵任務|高度機密|相容|N/A|Azure SQL Database|
 |sql-01|DB-2|高|Confidential|需要變更架構|已執行的變更|Azure SQL Database|
@@ -94,7 +93,7 @@ ms.locfileid: "75328917"
 
 建議的遷移和同步處理路徑會使用下列三個工具的組合。 下列各節將概述更複雜的遷移和同步處理選項，讓您有更多的目標和來源解決方案。
 
-|移轉選項|目的|
+|遷移選項|目的|
 |---------|---------|
 |[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|支援線上（最短停機時間）和離線（一次）大規模遷移至 Azure SQL Database 受控實例。 支援從： SQL Server 2005、SQL Server 2008 和 SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016 和 SQL Server 2017 進行遷移。|
 |[異動複寫](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Azure SQL Database 受控實例的異動複寫支援從下列版本進行遷移： SQL Server 2012 （SP2 CU8、SP3 或更新版本）、SQL Server 2014 （RTM CU10 或更新版本，或 SP1 CU3 或更新版本）、SQL Server 2016、SQL Server 2017。|

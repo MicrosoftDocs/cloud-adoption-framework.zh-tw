@@ -1,6 +1,5 @@
 ---
 title: Azure 移轉整備程度最佳做法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移轉整備程度的最佳做法簡介
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4410c9628cbdf070d2862ba09812e4b968911419
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240165"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799874"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 

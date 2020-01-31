@@ -1,6 +1,5 @@
 ---
 title: 商務承諾：雲端管理和營運
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 商務承諾：雲端管理和營運
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160384"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807847"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 

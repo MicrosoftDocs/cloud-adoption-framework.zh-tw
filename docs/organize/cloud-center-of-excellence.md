@@ -1,6 +1,5 @@
 ---
 title: 雲端卓越中心
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 描述卓越雲端中心（CCoE）的構成。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1f25b3debed6110f7a45933fa3d4f724ff8390a5
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: ca5e016ac07702711d38b671d767969cd4280bd3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781822"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801115"
 ---
 # <a name="cloud-center-of-excellence"></a>雲端卓越中心
 

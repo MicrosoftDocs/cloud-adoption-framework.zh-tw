@@ -1,6 +1,5 @@
 ---
 title: 周邊網路
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 周邊網路
 author: tracsman
 ms.author: jonor
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 6125a428d67130d891623a30ca75a11527fbbe23
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160515"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799772"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 

@@ -1,6 +1,5 @@
 ---
 title: 協調小組間的責任
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何在各小組之間協調責任。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 87ff20e3e81b8b01e6405984a63a9192184a4fa5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549084"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800690"
 ---
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
@@ -40,22 +39,22 @@ ms.locfileid: "72549084"
 
 ## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
 
-|  |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+|  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端採用小組 |負|負|負|負|負|負|負|負|
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法：最基本的可行產品（MVP）
 
-|  |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+|  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端採用小組|負|負|負|負|參考|參考|參考|獲得|
 |雲端治理小組|參考|獲得|獲得|獲得|負|負|負|負|
 ||||||||||
-|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端自動化](./cloud-automation.md)|
+|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 
 ## <a name="central-it"></a>集中式 IT
 
-| |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+| |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端採用小組  |負|負|承擔    |承擔|獲得   |獲得   |獲得   |獲得   |
 |雲端治理小組|參考  |獲得   |獲得   |獲得   |負|參考  |承擔|獲得   |
@@ -65,28 +64,28 @@ ms.locfileid: "72549084"
 
 ## <a name="strategic-alignment"></a>策略性對齊
 
-|  |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+|  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
 |雲端採用小組  |負|參考  |承擔|負|獲得   |獲得   |獲得   |獲得   |
 |CCoE 模型 RACI      |參考  |獲得   |獲得   |獲得   |負|負|負|負|
 ||||||||||
-|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端自動化](./cloud-automation.md)|
+|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 
 ## <a name="operational-alignment"></a>操作對齊
 
-|  |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+|  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
 |雲端採用小組  |負|參考  |承擔|參考  |獲得   |獲得   |獲得   |獲得   |
 |雲端營運小組|參考  |參考  |承擔|負|參考  |獲得   |負|參考  |
 |CCoE 模型 RACI      |參考  |獲得   |獲得   |獲得   |負|負|承擔|負|
 ||||||||||
-|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端自動化](./cloud-automation.md)|
+|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>卓越的雲端中心（CCoE）
 
-|  |解決方案交付  |商務對齊  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平臺作業  |平臺自動化  |
+|  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
 |雲端採用小組  |負|參考  |承擔|參考  |獲得   |獲得   |獲得   |獲得   |
@@ -95,7 +94,7 @@ ms.locfileid: "72549084"
 |雲端平臺小組  |參考  |獲得   |獲得   |參考  |參考  |負|承擔|承擔|
 |雲端自動化團隊|參考  |獲得   |獲得   |獲得   |參考  |承擔|承擔|負|
 ||||||||||
-|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[雲端自動化](./cloud-automation.md)|
+|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 
 ## <a name="next-steps"></a>後續步驟
 

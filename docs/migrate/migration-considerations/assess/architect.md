@@ -1,6 +1,5 @@
 ---
 title: 在移轉前建構工作負載
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在移轉前建構工作負載
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b902f4b53784d30cd5de0b0eb77ed943e5e41aab
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566819"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802696"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>在移轉前建構工作負載
 

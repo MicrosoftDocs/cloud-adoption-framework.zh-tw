@@ -1,6 +1,5 @@
 ---
 title: 簡單工作負載的治理設計
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 設定 Azure 治理控制項以讓使用者部署簡單工作負載的指導方針。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566009"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803852"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -71,7 +70,7 @@ Azure 只信任由 [Azure AD](https://docs.microsoft.com/azure/active-directory)
 ![Azure 帳戶擁有者會將 * * 工作負載擁有者 * * 新增至訂用帳戶](../../_images/govern/design/governance-1-5.png)
 *圖 5-azure 帳戶擁有者會將工作負載擁有者新增至訂用帳戶。*
 
-Azure **帳戶擁有者**會藉由指派**角色型存取控制 (RBAC)** 角色，將權限授與[工作負載擁有者](https://docs.microsoft.com/azure/role-based-access-control)。 RBAC 角色會指定一組權限，讓**工作負載擁有者**針對個別資源類型或一組資源類型使用。
+Azure **帳戶擁有者**會藉由指派[角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) 角色，將權限授與**工作負載擁有者**。 RBAC 角色會指定一組權限，讓**工作負載擁有者**針對個別資源類型或一組資源類型使用。
 
 請注意，在此範例中，**帳戶擁有者**已獲得指派[內建**擁有者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)：
 
@@ -105,11 +104,11 @@ Azure **帳戶擁有者**會藉由指派**角色型存取控制 (RBAC)** 角色�
 
 若要開始，貴組織需要 Azure 帳戶。 如果貴組織擁有現有 [Microsoft Enterprise 合約](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx)，但是其中不包含 Azure，可以藉由預先付款承諾來新增 Azure。 如需詳細資訊，請參閱為[企業授權 Azure](https://azure.microsoft.com/pricing/enterprise-agreement)。
 
-在建立您的 Azure 帳戶時，會指定貴組織中的某位人員成為 Azure **帳戶擁有者**。 預設會接著建立 Azure Active Directory (Azure AD) 租用戶。 您的 Azure **帳戶擁有者**，必須為組織中身為[工作負載擁有者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)的人員**建立使用者帳戶**。
+在建立您的 Azure 帳戶時，會指定貴組織中的某位人員成為 Azure **帳戶擁有者**。 預設會接著建立 Azure Active Directory (Azure AD) 租用戶。 您的 Azure **帳戶擁有者**，必須為組織中身為**工作負載擁有者**的人員[建立使用者帳戶](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)。
 
 接下來，您的 Azure **帳戶擁有者**必須[建立訂用帳戶](https://docs.microsoft.com/partner-center/create-a-new-subscription)，並且將其[關聯到 Azure AD 租用戶](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。
 
-最後，既然已建立訂用帳戶，且您的 Azure AD 租用戶已與其相關聯，就可以將[工作負載擁有者，新增至具備內建**擁有者**角色](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)的訂用帳戶。
+最後，既然已建立訂用帳戶，且您的 Azure AD 租用戶已與其相關聯，就可以將**工作負載擁有者**[，新增至具備內建**擁有者**角色](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)的訂用帳戶。
 
 ## <a name="next-steps"></a>後續步驟
 

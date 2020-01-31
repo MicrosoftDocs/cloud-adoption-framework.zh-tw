@@ -1,6 +1,5 @@
 ---
 title: Azure 企業 Scaffold
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 描述可協助確保安全且易於管理之環境的企業 scaffold。
 author: rdendtler
 ms.author: rodend
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 442282951d0b76b1d3041ee43d0e7e464d07fccf
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76521131"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798786"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 

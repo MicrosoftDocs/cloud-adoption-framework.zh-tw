@@ -1,6 +1,5 @@
 ---
 title: 在移轉前預估雲端成本
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明在移轉前評估雲端成本的程序。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: be4fe4616b4f0599075ceac2b9c0838949b350c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0618676a995971951a27a5bdba66b7e9b126d7d6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548478"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802577"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 

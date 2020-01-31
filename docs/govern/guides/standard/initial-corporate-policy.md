@@ -1,6 +1,5 @@
 ---
 title: 標準企業治理指南：治理策略背後的初始公司原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準企業治理指南：治理策略背後的初始公司原則
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 20dc2136f997f69cafbbff241994de90e942c7db
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547563"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806164"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的初始公司原則
 

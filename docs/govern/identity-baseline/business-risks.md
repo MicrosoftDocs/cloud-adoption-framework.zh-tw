@@ -1,6 +1,5 @@
 ---
 title: 身分識別基準動機和業務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160112"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807133"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>身分識別基準動機和業務風險
 
-本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供幾個驅使原則聲明之業務風險的範例。
+本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
 <!-- markdownlint-disable MD026 -->
 
@@ -30,9 +29,9 @@ ms.locfileid: "74160112"
 
 身分識別基準專業領域對於您的雲端部署的重要性取決於您的小組大小，並且需要整合您的雲端型身分識別解決方案與現有內部部署身分識別服務。 初始測試部署可能不需要太多的使用者組織或管理，但隨著您的雲端資產成熟，您可能必須支援更複雜的組織整合和集中化管理。
 
-## <a name="business-risk"></a>商務風險
+## <a name="business-risk"></a>業務風險
 
-身分識別基準專業領域會嘗試解決與身分識別服務和存取控制相關的核心業務風險。 在您規劃和實作您的雲端部署時，與您的企業一起識別這些風險，並監視它們的關聯性。
+身分識別基準專業領域會嘗試解決與身分識別服務和存取控制相關的核心業務風險。 在您規劃和實作雲端部署時，與您的企業一起識別這些風險，並監視它們的關聯性。
 
 組織之間的風險會有所不同，但以下是常見的身分識別相關風險，您可以將其作為起點，以便在雲端治理小組內進行討論：
 

@@ -1,6 +1,5 @@
 ---
 title: 技能就緒路徑入門
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 技能就緒路徑入門
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564206"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800146"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>技能就緒路徑入門
 
@@ -40,7 +39,7 @@ IT 人員的成員可能會覺得他們的角色和職位有點焦慮，因為�
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn 是新的學習方法。 在雲端採用方面，新技能和責任的就緒程度並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和層級，並達成更多目標！
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
 以下是一些在 Microsoft Learn 上量身打造的學習路徑範例，其符合雲端採用架構的計畫區段：
 
 [發展您的 DevOps 實務](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops 是人員、程式和產品的結合，讓您能夠持續傳遞價值給您的終端使用者。 Azure DevOps 是一組服務，可提供您所需的工具來執行這項工作。 有了 Azure DevOps，您就可以在雲端或內部部署環境中，建立、測試及部署任何應用程式。

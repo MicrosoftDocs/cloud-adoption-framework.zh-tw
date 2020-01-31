@@ -1,6 +1,5 @@
 ---
 title: 在移轉前修復資產
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在移轉前修復不相容的資產
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058859"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802101"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 

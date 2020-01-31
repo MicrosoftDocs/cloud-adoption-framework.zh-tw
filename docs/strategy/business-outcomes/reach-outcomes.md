@@ -1,6 +1,5 @@
 ---
 title: 全球範圍的結果範例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 全球範圍的結果範例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b8c28314037e023423d48c604a1dd9bd6c4ad381
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047907"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798344"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 
 如[商務結果](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于常見的商務措施：觸及。 瞭解公司的全球化策略將有助於更清楚地表達商業轉型的目標商業成果。
 
-在整個財富500和小型企業中，服務和客戶群的全球化已成為三年以上的焦點。 隨著世界的縮小，任何企業都有機會參與全球商務。 支援全域作業的挑戰和成本高昂。 裝載世界各地的資料中心可能會耗用超過 80% 的年度 IT 預算。 使用私用線路來連接這些資料中心的廣域網路，每年可能會花費數百萬美元的成本。
+在整個財富500和小型企業中，服務和客戶群的全球化已成為三年以上的焦點。 隨著世界的縮小，任何企業都有機會參與全球商務。 支援全域作業的挑戰和成本高昂。 裝載世界各地的資料中心可能會耗用超過80% 的年度 IT 預算。 使用私用線路來連接這些資料中心的廣域網路，每年可能會花費數百萬美元的成本。
 
 雲端解決方案將全球化成本轉移到雲端提供者。 在 Azure 中，客戶可以快速地在與客戶或作業相同的區域中部署資源，而不需要購買和布建資料中心。 Microsoft 擁有全球最大的廣域網路，連接全球各地的資料中心。 連線能力和全域作業容量可供全球客戶隨選使用。
 
@@ -37,7 +36,7 @@ ms.locfileid: "73047907"
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解[客戶參與成果](./engagement-outcomes.md)。
+深入了解[客戶參與成果](./engagement-outcomes.md)。
 
 > [!div class="nextstepaction"]
 > [客戶參與成果](./engagement-outcomes.md)

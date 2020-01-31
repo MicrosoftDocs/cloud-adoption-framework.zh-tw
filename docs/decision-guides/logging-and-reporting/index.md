@@ -1,6 +1,5 @@
 ---
 title: 記錄與報告決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Azure 移轉中的新服務：記錄、報告和監視。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753174"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806759"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -34,10 +33,10 @@ ms.locfileid: "73753174"
 
 | 問題 | 雲端原生 | 內部部署擴充功能 | 混合式監視 | 閘道彙總 |
 |-----|-----|-----|-----|-----|
-| 您已經擁有內部部署監視基礎結構嗎？ | 否 | yes | 是 |  否 |
-| 您有避免將記錄資料儲存在外部儲存位置的需求嗎？ | 否 | yes | 否 | 否 |
-| 您需要整合雲端監視與內部部署系統嗎？ | 否 | 否 | yes | 否 |
-您需要先處理或篩選遙測資料再將它們提交至監視系統嗎？ | 否 | 否 | 否 | yes |
+| 您已經擁有內部部署監視基礎結構嗎？ | 否 | 是 | 是 |  否 |
+| 您有避免將記錄資料儲存在外部儲存位置的需求嗎？ | 否 | 是 | 否 | 否 |
+| 您需要整合雲端監視與內部部署系統嗎？ | 否 | 否 | 是 | 否 |
+您需要先處理或篩選遙測資料再將它們提交至監視系統嗎？ | 否 | 否 | 否 | 是 |
 
 ### <a name="cloud-native"></a>雲端原生
 

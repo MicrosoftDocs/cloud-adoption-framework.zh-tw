@@ -1,6 +1,5 @@
 ---
 title: 部署加速原則合規性流程
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速原則合規性流程
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566388"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806368"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 
@@ -62,7 +61,7 @@ ms.locfileid: "73566388"
 
 使用[雲端管理範本](./template.md)，記錄與目前雲端採用方案一致的流程和觸發程序。
 
-如需執行與採用方案一致的雲端管理原則指引，請參閱有關改良專業領域的文章。
+如需執行與採用方案一致的雲端管理原則指引，請參閱有關專業領域改進的文章。
 
 > [!div class="nextstepaction"]
 > [部署加速專業領域改進](./discipline-improvement.md)

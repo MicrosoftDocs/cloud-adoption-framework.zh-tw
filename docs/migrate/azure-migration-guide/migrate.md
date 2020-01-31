@@ -1,6 +1,5 @@
 ---
 title: 遷移資產
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 遷移資產
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681751"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807014"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
 
@@ -222,7 +221,7 @@ Cloudamize 是一項 ISV 服務，可用於移轉策略的所有階段。
 
 Zerto 提供可處理 Microsoft Hyper-v 和 VMware vSphere 環境的虛擬複寫功能。
 
-[深入了解](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[深入了解](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署�
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
 
-以下是在 Microsoft Learn 上量身打造的學習路徑範例，可補充雲端採用架構中 DevOps 指引設定的不足之處。 
+以下是在 Microsoft Learn 上量身打造的學習路徑範例，可補充雲端採用架構中 DevOps 指引設定的不足之處。
 
-[透過 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。 
+[透過 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。
 
 # <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
 

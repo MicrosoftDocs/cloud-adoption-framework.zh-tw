@@ -1,19 +1,18 @@
 ---
 title: 設定基本警示
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 設定基本警示
+description: 瞭解如何使用 Azure 伺服器管理服務來設定警示和通知，以協助您的 IT 小組留意任何問題。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5d7469f8613b38ffdaefb41410409fba0c9109fd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565290"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807949"
 ---
 # <a name="set-up-basic-alerts"></a>設定基本警示
 

@@ -1,6 +1,5 @@
 ---
 title: 操作模型術語
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解與操作模型相關的術語。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: c7a26fd5ff7b31d4868ac9e65780b4d194526baa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 650ee5e075382de5da855a6f90aac86a8f4706b7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73797544"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801200"
 ---
 # <a name="operating-model-terminology"></a>操作模型術語
 

@@ -1,6 +1,5 @@
 ---
 title: 標準企業治理指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準企業治理指南
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dc52ce58bf6ecb62723674c1c4ecfb12f72d07ca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239704"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806215"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 

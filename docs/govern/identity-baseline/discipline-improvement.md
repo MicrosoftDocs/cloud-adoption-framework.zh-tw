@@ -1,6 +1,5 @@
 ---
 title: 身分識別基準專業領域改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準專業領域改進
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915057"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807184"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -38,8 +37,8 @@ ms.locfileid: "72915057"
 **最小的建議活動：**
 
 - 評估您的[身分識別工具鏈](./toolchain.md)選項，並實作適用於貴組織的混合式策略。
-- 開發架構方針文件的草稿，並散發給重要的專案關係人。
-- 教育並涵蓋受到開發架構方針影響的人員和小組。
+- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
+- 教育並涵蓋受到開發架構指導方針影響的人員和小組。
 
 **潛在的活動：**
 
@@ -52,7 +51,7 @@ ms.locfileid: "72915057"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
@@ -82,14 +81,14 @@ ms.locfileid: "72915057"
   - 針對其他系統管理角色啟用 JIT 的特殊許可權身分識別基準（PIM）（使用限時啟動）。
   - 將使用者帳戶與全域管理員帳戶分開（以確保系統管理員不會不慎開啟電子郵件或執行與其全域管理員帳戶相關聯的程式）。
 
-## <a name="adopt-and-migrate"></a>採用和遷移
+## <a name="adopt-and-migrate"></a>採用和移轉
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[身分識別工具鏈](./toolchain.md)從開發環境移轉至生產環境。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
 **潛在的活動：**
@@ -114,7 +113,7 @@ ms.locfileid: "72915057"
 - 將通知和報告自動化，以警示您潛在的惡意威脅。
 - 監視和報告系統使用量和使用者採用進度。
 - 報告部署後計量，並散發給專案關係人。
-- 精簡架構方針，以引導未來的採用程序。
+- 精簡架構指導方針，以引導未來的採用程序。
 - 定期與受影響的小組通訊並且持續教育，以確保會持續遵循架構方針。
 
 **潛在的活動：**

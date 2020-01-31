@@ -1,19 +1,18 @@
 ---
 title: 回顧如何協助建立成長型思維？
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 雲端移轉內的程序，其著重於將工作負載遷移至雲端的工作。
+description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548368"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801506"
 ---
 <!-- markdownlint-disable MD026 -->
 

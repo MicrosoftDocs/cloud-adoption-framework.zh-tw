@@ -1,6 +1,5 @@
 ---
 title: 建立初始雲端治理基礎
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 藉由建立初始雲端治理基礎來開始使用雲端治理。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239520"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803784"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 

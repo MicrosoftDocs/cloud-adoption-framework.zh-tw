@@ -1,6 +1,5 @@
 ---
 title: 第一個雲端採用專案
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何執行您的第一個雲端採用專案。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753793"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798174"
 ---
 <!-- markdownlint-disable MD026 -->
 

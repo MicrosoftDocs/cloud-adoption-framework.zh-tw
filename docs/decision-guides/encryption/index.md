@@ -1,6 +1,5 @@
 ---
 title: 加密決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 移轉中作為核心服務的加密服務。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753363"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807048"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -38,9 +37,9 @@ ms.locfileid: "73753363"
 
 | 問題 | 雲端原生 | 攜帶您自己的金鑰 | 保存您自己的金鑰 |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
-| 您的組織是否缺乏集中管理金鑰和祕密的能力？                                                                    | yes          | 否     | 否          |
-| 您是否需要制訂規則，以限制建立可同時在內部部署硬體裝置和雲端使用的金鑰和秘密？ | 否           | yes    | 否          |
-| 您的組織是否已制訂規則或原則以防止在異地儲存金鑰？                | 否           | 否     | yes         |
+| 您的組織是否缺乏集中管理金鑰和祕密的能力？                                                                    | 是          | 否     | 否          |
+| 您是否需要制訂規則，以限制建立可同時在內部部署硬體裝置和雲端使用的金鑰和秘密？ | 否           | 是    | 否          |
+| 您的組織是否已制訂規則或原則以防止在異地儲存金鑰？                | 否           | 否     | 是         |
 
 ### <a name="cloud-native"></a>雲端原生
 

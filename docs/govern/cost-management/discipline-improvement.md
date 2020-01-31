@@ -1,6 +1,5 @@
 ---
 title: 成本管理專業領域改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 成本管理專業領域改進
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753079"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806470"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 
@@ -38,7 +37,7 @@ ms.locfileid: "73753079"
 **最小的建議活動：**
 
 - 評估您的[成本管理工具鏈](./toolchain.md)選項。
-- 開發架構方針文件的草稿，並散發給重要的專案關係人。
+- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
 - 教育並涵蓋受到開發架構方針影響的人員和小組。
 
 **潛在的活動：**
@@ -53,12 +52,12 @@ ms.locfileid: "73753079"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
 - 藉由在預先部署階段推出來執行您的[成本管理工具鏈](./toolchain.md)。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 - 決定您的購買需求是否要與預算和目標保持一致。
 
@@ -68,14 +67,14 @@ ms.locfileid: "73753079"
 - 使用[資源一致性策略](../../decision-guides/resource-consistency/index.md)，在一段時間內強制執行架構和成本方針。
 - 判斷是否有任何成本異常會影響您的採用和遷移計畫。
 
-## <a name="adopt-and-migrate"></a>採用和遷移
+## <a name="adopt-and-migrate"></a>採用和移轉
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[成本管理工具鏈](./toolchain.md)從預先部署遷移至生產環境。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
 **潛在的活動：**

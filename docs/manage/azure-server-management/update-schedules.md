@@ -1,6 +1,5 @@
 ---
 title: 建立更新排程
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 建立更新排程
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5bb3e37073c3c5d7f401f6d6c706314172eecf88
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 67e66c62d6d35d7eab94f9a7c1fb5e743f6f9feb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565270"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807915"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 

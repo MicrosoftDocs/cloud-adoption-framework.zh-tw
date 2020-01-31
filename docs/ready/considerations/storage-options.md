@@ -1,6 +1,5 @@
 ---
 title: 檢查您的儲存體選項
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 檢查 Azure 工作負載的儲存體選項。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561719"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799024"
 ---
 # <a name="review-your-storage-options"></a>檢查您的儲存體選項
 
@@ -101,7 +100,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 
 | **服務** | **說明** |
 |---|---|
-| [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體是 Microsoft 針對雲端推出的物件儲存體解決方案。 Blob 儲存體已針對儲存大量非結構化資料最佳化。 非結構化資料是指不符合特定資料模型或定義的資料，例如文字或二進位資料。<br/><br/>Blob 儲存體設計用來：<ul><li>直接提供映像或文件給瀏覽器。</li><li>儲存檔案供分散式存取。</li><li>串流傳輸視訊和音訊。</li><li>寫入記錄檔。</li><li>儲存備份和還原、災害復原和封存資料。</li><li>儲存資料供內部部署或 Azure 託管服務進行分析。</li></ul> |
+| [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體是 Microsoft 針對雲端推出的物件儲存體解決方案。 Blob 儲存體經過最佳化，已能妥善儲存大量的非結構化資料。 非結構化資料是指不符合特定資料模型或定義的資料，例如文字或二進位資料。<br/><br/>Blob 儲存體設計用來：<ul><li>直接提供映像或文件給瀏覽器。</li><li>儲存檔案供分散式存取。</li><li>串流傳輸視訊和音訊。</li><li>寫入記錄檔。</li><li>儲存備份和還原、災害復原和封存資料。</li><li>儲存資料供內部部署或 Azure 託管服務進行分析。</li></ul> |
 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) | Blob 儲存體支援 Azure Data Lake Storage Gen2，這是適用於雲端的 Microsoft 企業巨量資料分析解決方案。 Azure Data Lake Storage Gen2 提供階層式檔案系統和 Blob 儲存體的各項優點，包括低成本、分層式儲存體、高可用性、強式一致性，以及災害復原功能。 |
 | [Azure 磁碟儲存體](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) | Azure 磁碟儲存體提供持續性、高效能的區塊儲存體，以支援 Azure 虛擬機器。 Azure 磁片具有高耐用性、安全性，並提供業界唯一的單一實例 SLA，適用于使用 premium 或 ultra Ssd 的 Vm （[深入瞭解磁片類型](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)）。 Azure 磁碟可透過對應至 Azure 虛擬機器容錯網域的可用性設定組和可用性區域，提供高可用性。 此外，Azure 磁碟會作為 Azure 中的最上層資源來管理。 根據預設，系統會提供角色型存取控制 (RBAC)、原則和標記等 Azure Resource Manager 功能。 |
 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | Azure 檔案儲存體提供完全受控的原生 SMB 檔案共用作為服務，而不需要執行 VM。 您可以將 Azure 檔案儲存體共用掛接為任何 Azure VM 或內部部署機器的網路磁碟機。 |
@@ -137,7 +136,7 @@ Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.micro
 
 ## <a name="regional-availability"></a>區域可用性
 
-您可以使用 Azure 來提供規模的服務，*無論您身在何處*，都能觸及您的客戶和合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
+您可以使用 Azure 依照您所需要的規模，將服務提供給身居*世界不同角落*的客戶及合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
 
 受控磁碟可在所有具有進階 SSD 和標準 SSD 供應項目的 Azure 區域中使用。 雖然 Ultra SSD 目前處於公開預覽狀態，但是只在一個可用性區域 (美國東部 2 區域) 中提供。 當您規劃需要 Ultra SSD 的任務關鍵性、最上層工作負載時，請確認區域可用性。
 
@@ -147,6 +146,6 @@ Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.micro
 
 ## <a name="data-residency-and-compliance-requirements"></a>資料落地和合規性需求
 
-您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需瞭解這些需求的協助，請參閱[使用 Azure 達成符合規範的資料存放區和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
+您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需了解這些需求的協助，請參閱[利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
 
-合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保資料存放區、主權、合規性及復原需求會在地理和政治界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到符合規範的 Azure 地理位置中的區域。
+合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理及政治界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到符合規範的 Azure 地理位置中的區域。

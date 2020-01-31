@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：透過 Azure 中的應用程式進行互動的工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 透過 Azure 中的應用程式進行互動的工具
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565881"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808714"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 
@@ -21,7 +20,7 @@ ms.locfileid: "73565881"
 
 ![透過應用程式參與雲端採用架構的方法](../../_images/innovate/engage-via-apps.png)
 
-## <a name="alignment-to-the-methodology"></a>與方法的對齊
+## <a name="alignment-to-the-methodology"></a>與方法配合
 
 您可以透過下列每一種方法來加速這種類型的數位家發明。 上述影像也會顯示這些方法。 此頁面左側的目錄中會列出加速數位家發明的技術指引。 這些文章的分組方式，是以其方法來對齊整體方法的指導方針。
 

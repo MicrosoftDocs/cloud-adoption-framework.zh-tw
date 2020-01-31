@@ -1,7 +1,6 @@
 ---
-title: 標準 enterprise 指南：改善成本管理專業領域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準 enterprise 指南：改善成本管理專業領域
+title: 標準 enterprise guide：改善成本管理專業領域
+description: 標準 enterprise guide：改善成本管理專業領域
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967582"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806198"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 enterprise 指南：改善成本管理專業領域
+# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 enterprise guide：改善成本管理專業領域
 
 本文藉由將成本控制新增至治理 MVP 來推進敘述。
 
@@ -28,7 +27,7 @@ ms.locfileid: "71967582"
 
 在此敘述的先前階段中，IT 已淘汰 100% 的 DR 資料中心。 應用程式開發和 BI 小組已準備好使用生產環境流量。
 
-從那時起，某些事項已經改變，將會影響治理：
+從那時起，某些將會影響治理的事項已經改變：
 
 - 移轉小組已開始將 VM 移轉出生產環境資料中心外。
 - 應用程式開發小組會積極地透過 CI/CD 管線將生產環境應用程式推送至雲端。 這些應用程式可以因應使用者需求被動地進行調整。
@@ -43,23 +42,23 @@ ms.locfileid: "71967582"
 
 ## <a name="changes-in-tangible-risks"></a>有形風險的變更
 
-**預算控制：** 有一個固有風險是，自助功能將在新平台上導致超量且非預期的成本。 監視成本及降低持續成本風險的治理流程必須就緒，才能確保會持續與規劃的預算保持一致。
+**預算控制：** 有一項固有的風險是，自助功能會在新平臺上產生過多和非預期的成本。 監視成本及降低持續成本風險的治理流程必須就緒，才能確保會持續與規劃的預算保持一致。
 
-此業務風險會延伸成少數技術風險：
+此業務風險可能會延伸出少數技術風險：
 
 - 實際成本可能會超過計劃。
-- 業務狀況變更。 發生變更時，業務功能有可能必須耗用比預期還多的雲端服務，造成異常支出。 會有此額外支出被視為超額 (相對於計劃的必要調整) 的風險。
+- 業務狀況變更。 發生變更時，將出現業務功能必須耗用比預期還多之雲端服務的情況，因而導致支出異常狀況。 會有此額外支出被視為超額 (相對於計劃的必要調整) 的風險。
 - 系統可能會過度佈建，導致過多支出。
 
 ## <a name="incremental-improvement-of-the-policy-statements"></a>原則聲明的累加式改進
 
 下列原則變更將有助於補救新的風險和指南的執行。
 
-- 治理小組應該針對計劃每週監視所有雲端成本。 雲端成本與計劃之間偏差的報告要每月與 IT 主管和財務部門分享。 所有雲端成本和計劃更新應該要每月與 IT 主管和財務部門一起檢閱。
+- 治理小組應該針對計劃每週監視所有雲端成本。 雲端成本與方案之間的偏差報告，每月都要與 IT 主管和財務部門分享。 所有雲端成本和方案更新，每月都應該與 IT 主管和財務部門一起檢閱。
 - 所有成本必須針對權責目的配置給業務功能。
 - 應該針對最佳化商機持續監視雲端資產。
 - 雲端治理工具必須將資產調整大小選項限制為已核准的設定清單。 此工具必須確保所有資產都可探索且可透過成本監視解決方案來追蹤。
-- 在部署規劃期間，應該記錄與生產環境工作負載裝載相關聯的任何必要雲端資源。 本文件可協助精簡預算及準備其他自動化，以避免使用較昂貴的選項。 在此流程期間，應該考量雲端提供者提供的不同折扣工具，例如保留執行個體或授權成本降低。
+- 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 本文件可協助精簡預算及準備其他自動化，以避免使用較昂貴的選項。 在此流程期間，應該考量雲端提供者提供的不同折扣工具，例如保留執行個體或授權成本降低。
 - 所有應用程式擁有者都必須參加將工作負載最佳化的實務訓練，以更好的方式來控制雲端成本。
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量
@@ -69,11 +68,11 @@ ms.locfileid: "71967582"
 1. 實作 Azure 成本管理。
     1. 建立存取的正確範圍，與訂用帳戶模式和資源一致性專業領域保持一致。 假設與先前文章中定義的治理 MVP 一致，這需要在高階報告上執行之雲端治理小組的**註冊帳戶範圍**存取權。 治理之外的其他小組可能需要**資源群組範圍**存取權。
     1. 在 Azure 成本管理中建立預算。
-    1. 檢閱初始建議並且採取動作。 進行週期性流程以支援報告。
+    1. 檢閱初始建議並採取動作。 進行週期性流程以支援報告。
     1. 設定及執行初始和週期性 Azure 成本管理報告。
 2. 更新 Azure 原則
     1. 稽核標記、管理群組、訂用帳戶及資源群組值，以識別任何偏差。
-    1. 建立 SKU 大小選項以限制對於部署規劃文件中列出之 SKU 的部署。
+    1. 建立 SKU 大小選項，以限制對於部署規劃文件中列出之 SKU 的部署。
 
 ## <a name="conclusion"></a>結論
 

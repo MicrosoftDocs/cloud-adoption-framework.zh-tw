@@ -1,6 +1,5 @@
 ---
 title: 軟體定義網路：雲端原生
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端原生虛擬網路服務的討論。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160200"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806640"
 ---
 # <a name="software-defined-networking-cloud-native"></a>軟體定義網路：雲端原生
 

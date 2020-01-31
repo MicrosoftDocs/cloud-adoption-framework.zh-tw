@@ -1,6 +1,5 @@
 ---
 title: 雲端採用架構移轉模型
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端採用架構移轉模型
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240270"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802424"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 

@@ -1,6 +1,5 @@
 ---
 title: 建議的角色型存取控制
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 建議的角色型存取控制
 author: rotycenh
 ms.author: brblanch
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561785"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806861"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 

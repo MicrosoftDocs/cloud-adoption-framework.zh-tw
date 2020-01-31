@@ -1,6 +1,5 @@
 ---
 title: 法規合規性簡介
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 法規合規性簡介
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222022"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806113"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 
@@ -46,7 +45,7 @@ ms.locfileid: "71222022"
 
 ## <a name="compliant-foundation-in-azure"></a>Azure 中的符合規範基礎
 
-為了協助客戶符合其在全球受管制產業和市場的合規性義務，Azure&mdash;在廣度（供應專案總數）和深度（的數目）中維持最大的合規性組合評量範圍內的客戶面向服務）。 Azure 合規性供應項目分為四大塊 - 全球適用，US Government、業界專屬，以及區域/國家或地區專屬。
+為了協助客戶符合其在全球受管制產業和市場的合規性義務，Azure 在產業中保有最大的合規性組合&mdash;廣度（供應專案總數）和深度（評量範圍內的客戶面向服務數目）。 Azure 合規性供應項目分為四大塊 - 全球適用，US Government、業界專屬，以及區域/國家或地區專屬。
 
 Azure 合規性供應項目會以各種類型的保證為基礎，包括由獨立第三方稽核公司所產生的正式認證、證明、驗證、授權及評量，以及由 Microsoft 產生的契約修訂、自我評量及客戶指引文件。 本文件中的每個供應項目描述都會提供最新的範圍聲明，指出評量範圍包含哪些 Azure 客戶面向服務，並提供可下載的資源連結，以協助客戶履行自己的合規性義務。
 

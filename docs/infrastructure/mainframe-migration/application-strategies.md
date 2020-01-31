@@ -1,6 +1,5 @@
 ---
 title: 大型主機遷移：大型主機應用程式遷移
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239442"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808816"
 ---
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
@@ -77,7 +76,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 若要使用 Azure 將批次效能最佳化，請考慮使用[計算](https://docs.microsoft.com/azure/virtual-machines/windows/overview)、[儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)、[網路](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)和[監視](https://docs.microsoft.com/azure/azure-monitor/overview)選項，如下所示。
 
-### <a name="compute"></a>運算
+### <a name="compute"></a>計算
 
 使用︰
 
@@ -99,7 +98,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 - 分割儲存體，以將 IO 分散到多個 Azure 儲存體裝置。
 
-### <a name="networking"></a>網路功能
+### <a name="networking"></a>網路
 
 - 使用 [Azure 加速網路](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell)，以盡可能降低延遲。
 
@@ -125,7 +124,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ## <a name="migrate-databases-and-data"></a>移轉資料庫和資料
 
-應用程式移轉通常牽涉到重新裝載資料層。 您可以將 SQL Server、開放原始碼和其他關係資料庫移轉至 Azure 上完全受控的解決方案，例如[Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[適用于于 postgresql 的 azure 資料庫服務](https://docs.microsoft.com/azure/postgresql/overview)，以及[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview) [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)。
+應用程式移轉通常牽涉到重新裝載資料層。 您可以將 SQL Server、開放原始碼和其他關係資料庫移轉至 Azure 上完全受控的解決方案，例如[Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[適用于于 postgresql 的 Azure 資料庫服務](https://docs.microsoft.com/azure/postgresql/overview)，以及[azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)的[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)。
 
 例如，如果大型主機資料層使用下列項目，則可以進行移轉：
 

@@ -1,6 +1,5 @@
 ---
 title: 排定雲端採用方案的工作負載優先順序並加以定義
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 排定雲端採用方案的工作負載優先順序並加以定義
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240186"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799976"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>排定雲端採用方案的工作負載優先順序並加以定義
 
@@ -64,7 +63,7 @@ ms.locfileid: "73240186"
 
 ### <a name="business-inputs"></a>商務輸入
 
-| 資料點 | 描述 | 輸入 |
+| 資料點 | 說明 | 輸入 |
 |---|---|---|
 | 工作負載名稱 | 此工作負載的名稱為何？ |         |
 | 工作負載描述 | 在一個句子中，此工作負載的用途為何？ |         |
@@ -83,7 +82,7 @@ ms.locfileid: "73240186"
 
 ### <a name="technical-inputs"></a>技術輸入
 
-| 資料點 | 描述 | 輸入 |
+| 資料點 | 說明 | 輸入 |
 |---|---|---|
 | 採用方法 | 這項採用適合用於遷移或創新嗎？ |         |
 | 應用程式 ops 組長 | 列出負責此工作負載的效能和可用性的合作物件。 |         |
@@ -94,7 +93,7 @@ ms.locfileid: "73240186"
 | 應用程式 | 指定此工作負載中包含的任何應用程式的初始清單或計數。 |         |
 | VM | 指定工作負載中包含的任何 Vm 或伺服器的初始清單或計數。 |         |
 | 資料來源 | 指定工作負載中包含的任何資料來源的初始清單或計數。 |         |
-| 相依項目 | 列出工作負載中未包含的任何資產相依性。 |         |
+| 相依性 | 列出工作負載中未包含的任何資產相依性。 |         |
 | 使用者流量地理位置 | 列出具有大量使用者流量集合的地理位置。 |         |
 
 ## <a name="confirm-priorities"></a>確認優先順序

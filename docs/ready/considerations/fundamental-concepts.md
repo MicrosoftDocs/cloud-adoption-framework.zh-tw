@@ -1,6 +1,5 @@
 ---
 title: Azure 基礎概念
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解在 Azure 中使用的基本概念和詞彙，以及這些概念如何彼此相關。
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3b773c4715b064413cb07d15d750b1204ddf90a
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781499"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799143"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 

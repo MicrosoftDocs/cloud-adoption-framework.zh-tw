@@ -1,6 +1,5 @@
 ---
 title: 定義雲端治理的公司原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何建立原則來反映並補救風險。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223724"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806045"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
@@ -53,8 +52,8 @@ ms.locfileid: "71223724"
 個別雲端原則聲明是解決在風險評估流程中識別出的特定風險方針。 雖然這些原則可以整合到您更廣泛的公司原則檔中，但整個雲端採用架構指引中所討論的雲端原則聲明，通常是更精確的風險摘要和計畫來處理它們。 每個定義定義都應該包含下列資訊：
 
 - **業務風險：** 此原則將解決的風險摘要。
-- **原則聲明：** 對原則需求和目標的簡要說明。
-- **設計或技術指導：** 支援並強制執行此原則的可操作建議、規格或其他指引，IT 團隊和開發人員在設計與建置其雲端部署時可以使用該原則。
+- **原則聲明：** 原則需求和目標的簡短說明。
+- **設計或技術指導：** 可操作的建議、規格或其他指引，以支援和強制執行此原則，讓 IT 小組和開發人員可以在設計和建立其雲端部署時使用。
 
 如果您需要協助開始定義原則，請參閱治理章節概觀中介紹的[治理專業領域](../governance-disciplines.md)。 這些專業領域的文章包含移至雲端時所遇到的常見商業風險範例，以及用來補救這些風險的範例原則（例如，請參閱成本管理專業領域的[範例原則定義](../cost-management/policy-statements.md)）。
 

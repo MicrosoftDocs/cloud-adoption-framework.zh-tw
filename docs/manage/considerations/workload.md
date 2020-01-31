@@ -1,6 +1,5 @@
 ---
 title: 工作負載作業-雲端管理和作業
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 工作負載作業-雲端管理和作業
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7eca93ba324a0e41f2a04e81a6bfe8994c232fcd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565034"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807694"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -72,14 +71,14 @@ ms.locfileid: "73565034"
 工作負載中的資料和通訊投資，會針對下列三個領域之一的持續性作業，產生改善的建議：
 
 - 技術債務解決方法
-- 自動修復
+- 自動補救
 - 改良的系統設計
 
 ### <a name="technical-debt-resolution"></a>技術債務解決方法
 
 最佳的工作負載作業計畫仍然需要補救。 當您的雲端管理團隊想要保持連線以瞭解採用的投入時間和版本時，小組同樣應定期分享補救需求，以確保技術債務和 bug 對於您的開發小組而言是持續的優先考慮。
 
-### <a name="automated-remediation"></a>自動修復
+### <a name="automated-remediation"></a>自動補救
 
 藉由套用排列原則，我們可以指出80% 的負面業務影響可能是來自服務事件的20%。 當這些事件無法在正常的開發週期中解決時，補救自動化的投資可以大幅降低業務中斷。
 

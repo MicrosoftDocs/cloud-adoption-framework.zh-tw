@@ -1,6 +1,5 @@
 ---
 title: 多個資料中心
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 多個資料中心
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024798"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803070"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 
@@ -37,10 +36,10 @@ ms.locfileid: "71024798"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評定程序進行期間的建議動作
 
-**評估跨資料中心的相依性：** [Azure Migrate 中的相依性視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可協助您找出相依性。 在移轉之前使用此工具集是不錯的一般最佳做法。 不過，在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
+**評估跨資料中心**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在移轉之前使用此工具集是不錯的一般最佳做法。 不過，在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
-> 兩個重要事項：首先，必須有了解資產位置和 IP 位址架構的主題專家才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。
+> 兩個重要事項：首先，必須瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。
 
 ## <a name="migrate-process-changes"></a>遷移程序變更
 
@@ -50,7 +49,7 @@ ms.locfileid: "71024798"
 
 以下是嚴重影響雲端移轉成功與否的活動：
 
-- **評估網路衝突：** 將資料中心合併到單一雲端提供者時，有可能會產生網路、DNS 或其他衝突。 在移轉期間，務必測試衝突，以免中斷在雲端中裝載的生產系統。
+- **評估網路衝突：** 將資料中心合併到單一雲端提供者時，有可能會建立網路、DNS 或其他衝突。 在移轉期間，務必測試衝突，以免中斷在雲端中裝載的生產系統。
 - **更新路由表：** 通常，在合併網路或資料中心時，需要對路由表進行修改。
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
@@ -61,7 +60,7 @@ ms.locfileid: "71024798"
 
 在升階之前，請務必在此範圍擴充期間提供額外的測試層級。 在測試期間，請務必測試路由或其他網路衝突。 此外，務必隔離已部署的應用程式，並重新測試以驗證所有相依項目都已遷移至雲端。 在此情況下，隔離表示將已部署的環境與生產網路分開。 這麼做可攔截仍在內部部署環境中執行的被忽略資產。
 
-## <a name="secure-and-manage-process-changes"></a>保護和管理流程變更
+## <a name="secure-and-manage-process-changes"></a>保護和管理程序變更
 
 此範圍擴充不應變更安全和管理流程。
 

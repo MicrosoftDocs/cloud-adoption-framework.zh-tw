@@ -1,6 +1,5 @@
 ---
 title: 雲端合理化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 檢閱合理化數位資產的可用選項。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238809"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806555"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 

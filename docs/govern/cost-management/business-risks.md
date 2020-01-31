@@ -1,6 +1,5 @@
 ---
 title: 成本管理動機和業務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 成本管理動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753264"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806504"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>成本管理動機和業務風險
 
-本文將討論客戶通常會在雲端治理策略中採用成本管理專業領域的原因。 它也提供幾個驅使原則聲明之業務風險的範例。
+本文將討論客戶通常會在雲端治理策略中採用成本管理專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
 <!-- markdownlint-disable MD026 -->
 
@@ -30,9 +29,9 @@ ms.locfileid: "73753264"
 
 雲端提供在傳統內部部署資料中心前所未聞的自助功能。 這些新功能讓企業能夠更靈活、更少限制且更開放地採用新技術。 不過，自助的缺點是終端使用者會在不知情的情況下超過已配置的預算。 相反地，相同的使用者可以體驗方案中的變化，並且意外地不使用所預測的雲端服務數量。 在治理小組內，任一個方向的轉移可能性，會證明成本管理專業領域中投資的正當性。
 
-## <a name="business-risk"></a>商務風險
+## <a name="business-risk"></a>業務風險
 
-成本管理專業領域會嘗試解決與在裝載雲端式工作負載時所產生費用相關的核心業務風險。 在您規劃和實作您的雲端部署時，與您的企業一起識別這些風險，並監視它們的關聯性。
+成本管理專業領域會嘗試解決與在裝載雲端式工作負載時所產生費用相關的核心業務風險。 在您規劃和實作雲端部署時，與您的企業一起識別這些風險，並監視它們的關聯性。
 
 組織之間的風險會有所不同，但以下是常見的成本相關風險，您可以將其作為起點，以在雲端治理小組內進行討論：
 

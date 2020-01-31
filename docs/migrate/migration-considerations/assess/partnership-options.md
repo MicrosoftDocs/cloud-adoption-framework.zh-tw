@@ -1,6 +1,5 @@
 ---
 title: 了解合作關係和支援選項
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明可支援移轉工作的選項和方法
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159886"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802458"
 ---
 # <a name="understand-partnership-options"></a>了解合作關係選項
 
@@ -78,9 +77,9 @@ ms.locfileid: "74159886"
 
 ![Microsoft 服務的雲端採用架構方法](../../../_images/migrate/mcs-program-approach.jpg)
 
-**評估：** Microsoft 服務使用[統一、資料和工具導向的方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)，其中包含架構研討會、Azure 即時資訊、安全性和身分識別威脅模型，以及各種工具，以提供挑戰、風險、建議的深入解析並對現有的 Azure 環境發出問題，其中包含重要的結果，例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)。
+**評估：** Microsoft 服務使用以[統一、資料和工具為導向的方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)，其中包含架構研討會、Azure 即時資訊、安全性和身分識別威脅模型，以及各種工具，可讓您深入瞭解具有重要結果（例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)）的現有 Azure 環境的挑戰、風險、建議和問題。
 
-**採用：** 透過 Microsoft 服務的[Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)，藉由將您的需求對應至最適當的參考架構並規劃、設計和部署基礎結構，建立您的核心 Azure 設計、模式和治理架構。工作負載所需的管理、安全性和身分識別。
+**採用：** 透過 Microsoft 服務的[Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)，藉由將您的需求對應至最適當的參考架構並規劃、設計和部署工作負載所需的基礎結構、管理、安全性和身分識別，來建立您的核心 Azure 設計、模式和治理架構。
 
 **遷移/優化：** Microsoft 服務的[雲端現代化解決方案](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)提供完整的方法，讓您將應用程式和基礎結構移至 Azure，以及在雲端部署後優化並現代化，並以簡化的方式進行備份。
 

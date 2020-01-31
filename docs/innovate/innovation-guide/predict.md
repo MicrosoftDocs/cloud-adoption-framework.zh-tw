@@ -1,6 +1,5 @@
 ---
 title: Azure 創新指南：預測和影響
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何使用 Azure 進行預測和影響。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251844"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808255"
 ---
 ::: zone target="docs"
 
@@ -35,9 +34,9 @@ ms.locfileid: "74251844"
 
 |服務  |預先建置的模型  |建置和實驗  |使用 Python 來訓練和建置|所需技能|
 |---------|---------|---------|---------|---------|
-|Azure 認知服務|yes|否|否|API 和開發人員技能|
-|Azure Machine Learning Studio|yes|是|否|大致了解預測演算法|
-|Azure Machine Learning 服務|yes|是|yes|資料科學家|
+|Azure 認知服務|是|否|否|API 和開發人員技能|
+|Azure Machine Learning Studio|是|是|否|大致了解預測演算法|
+|Azure Machine Learning 服務|是|是|是|資料科學家|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure 認知服務](#tab/CognitiveServices)
 
@@ -51,7 +50,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts)中，移至 [認知服務]  。
 2. 選取 [新增]  以在 Azure Marketplace 中尋找認知服務 API。
-3. 執行下列其中一個動作：
+3. 執行下列任一步驟：
    - 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace]  方塊中輸入此名稱。
    - 如需認知服務 API 清單，請選取 [認知服務] 標頭旁的 [查看更多]  連結。
 

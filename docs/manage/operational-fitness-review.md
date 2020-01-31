@@ -1,6 +1,5 @@
 ---
 title: 建立操作適用性檢閱
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 操作基本概念的指導方針
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868057"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807558"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -37,7 +36,7 @@ ms.locfileid: "75868057"
 
 Microsoft 遵循的程式會形成本文所述程式的基礎。
 
-## <a name="understand-the-problem"></a>了解問題
+## <a name="understand-the-problem"></a>瞭解問題
 
 如同您在[快速](../getting-started/migrate.md)入門中所學到的，企業數位轉型的第一個步驟，是要藉由採用 Azure 來識別要解決的商務問題。 下一個步驟是判斷問題的高階解決方案，例如將工作負載遷移至雲端，或調整現有的內部部署服務以包含雲端功能。 最後，您可以設計和執行解決方案。
 
@@ -80,7 +79,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 ### <a name="service-review-phase"></a>服務審查階段
 
-服務審核階段是操作健身審查的核心。 流程有三個步驟：
+服務審核階段是操作健身審查的核心。 其牽涉到下列步驟：
 
 1. **監視服務計量**。 使用計分卡計量來監視服務，以確保服務符合商務期望。 服務監視是不可或缺的。 如果您無法監視與無功能性需求相關的一組服務，請將對應的計分卡計量視為紅色。 在此案例中，補救措施的第一個步驟是實作適當的服務監視機制。 例如，如果企業預期服務會使用99.99% 的可用性來運作，但沒有實際執行的遙測來測量可用性，假設您不符合需求。
 

@@ -1,6 +1,5 @@
 ---
 title: 雲端操作功能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 描述雲端操作功能的構成
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,24 +8,24 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c56b3d174438583e07ae3a610180b39318c83f5d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a33dc9921f5e7fcbe2ee05f9483097040d9b309b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027481"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801030"
 ---
 # <a name="cloud-operation-capabilities"></a>雲端操作功能
 
-企業轉型可能會透過雲端採用來啟用。 不過, 只有當部署至雲端的工作負載與效能預期一致時, 才會實現傳回。 當其他工作負載採用雲端技術時, 將需要額外的作業容量。
+企業轉型可能會透過雲端採用來啟用。 不過，只有當部署至雲端的工作負載與效能預期一致時，才會實現傳回。 當其他工作負載採用雲端技術時，將需要額外的作業容量。
 
-傳統的 IT 營運必須專注于維護各種低層級技術資產的目前狀態作業。 儲存體、cpu、記憶體、網路設備、伺服器和虛擬機器主機之類的專案都需要持續維護, 才能維持查看作業。 資本預算通常包含與年度或定期更新這些低層級資產相關的大量費用。
+傳統的 IT 營運必須專注于維護各種低層級技術資產的目前狀態作業。 儲存體、cpu、記憶體、網路設備、伺服器和虛擬機器主機之類的專案都需要持續維護，才能維持查看作業。 資本預算通常包含與年度或定期更新這些低層級資產相關的大量費用。
 
- 作業中的人力資本也會著重于監視、修復及補救與這些資產相關的問題。 在雲端中, 許多資本成本和作業活動都會轉移給雲端提供者。 這讓 IT 作業有機會改善並提供更大的額外價值。
+ 作業中的人力資本也會著重于監視、修復及補救與這些資產相關的問題。 在雲端中，許多資本成本和作業活動都會轉移給雲端提供者。 這讓 IT 作業有機會改善並提供更大的額外價值。
 
 ## <a name="possible-sources-for-this-capability"></a>這項功能的可能來源
 
-提供雲端作業功能所需的技能可以透過下列方式提供:
+提供雲端作業功能所需的技能可以透過下列方式提供：
 
 - IT 營運
 - 外包 IT 營運廠商
@@ -38,7 +37,7 @@ ms.locfileid: "71027481"
 
 ## <a name="key-responsibilities"></a>主要責任
 
-提供雲端作業功能的人員負責提供最大的工作負載效能, 以及同意的作業預算內的最低業務中斷。
+提供雲端作業功能的人員負責提供最大的工作負載效能，以及同意的作業預算內的最低業務中斷。
 
 ### <a name="strategic-tasks"></a>策略性工作
 
@@ -60,11 +59,11 @@ ms.locfileid: "71027481"
 
 ## <a name="meeting-cadence"></a>會議步調
 
-執行雲端作業功能的應用程式應牽涉到發行規劃和雲端中心的卓越規劃, 以提供意見反應並為營運需求做好準備。
+執行雲端作業功能的應用程式應牽涉到發行規劃和雲端中心的卓越規劃，以提供意見反應並為營運需求做好準備。
 
 ## <a name="next-steps"></a>後續步驟
 
-隨著採用和營運規模的增加, 請務必定義和自動化治理最佳作法, 以擴充現有的 IT 需求。 形成[卓越的雲端中心](./cloud-center-of-excellence.md)是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
+隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成[卓越的雲端中心](./cloud-center-of-excellence.md)是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
 
 > [!div class="nextstepaction"]
 > [建立卓越的雲端中心](./cloud-center-of-excellence.md)

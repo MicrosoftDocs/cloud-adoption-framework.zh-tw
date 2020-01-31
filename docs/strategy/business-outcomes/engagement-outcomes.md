@@ -1,6 +1,5 @@
 ---
 title: 客戶參與結果的範例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 客戶參與結果的範例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5ad76f9d1b5b34772396f28cd5c5ba829785f76c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047951"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798361"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>客戶參與結果的範例
 
@@ -42,7 +41,7 @@ ms.locfileid: "73047951"
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解[效能結果](./performance-outcomes.md)。
+深入了解[效能成果](./performance-outcomes.md)。
 
 > [!div class="nextstepaction"]
 > [效能結果](./performance-outcomes.md)

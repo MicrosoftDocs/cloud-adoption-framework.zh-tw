@@ -1,6 +1,5 @@
 ---
 title: 安全性基準專業領域改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準專業領域改進
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221730"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808901"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
@@ -119,6 +118,6 @@ ms.locfileid: "71221730"
 現在您已了解雲端安全性治理的概念，請繼續深入了解 [Microsoft 為 Azure 提供哪些安全性與最佳做法](./azure-security-guidance.md)。
 
 > [!div class="nextstepaction"]
-> [瞭解 azure](./azure-security-guidance.md) 
-> 的安全性指引 azure[安全性](https://docs.microsoft.com/azure/security/azure-security)
-> 簡介[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)
+> 瞭解 Azure
+> [簡介 azure 安全性](https://docs.microsoft.com/azure/security/azure-security)[的安全性指引](./azure-security-guidance.md)
+> [瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

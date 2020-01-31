@@ -1,6 +1,5 @@
 ---
 title: 針對遷移至 Azure 的工作負載來設定網路的最佳做法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在遷移至 Azure 之後，請取得最佳做法以了解如何針對遷移至 Azure 的工作負載來設定網路。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753607"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803869"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -87,7 +86,7 @@ Azure 會提供虛擬網路 (VNet)：
 - 在決定子網路的網路範圍時，務必請注意 Azure 會在每個子網路保留五個不得使用的 IP 位址。 例如，如果您建立最小的可用子網路 /29 (具有八個 IP 位址)，Azure 將會保留五個位址，因此您可以指派給子網路上主機的可用位址只剩三個。
 - 在大部分的情況下，請使用/28 做為最小的子網。
 
-**範例:**
+**範例︰**
 
 下表所舉的 VNet 範例會將位址空間 10.245.16.0/20 劃分成子網路，以便進行計劃性移轉。
 
@@ -115,7 +114,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 針對網路介面或雲端服務所指定的 DNS 伺服器，優先順序高於針對 VNet 所指定的 DNS 伺服器。
 - 在 Azure Resource Manager 部署模型中，您可以針 VNet 和網路介面指定 DNS 伺服器，但最佳做法是只在 VNet 上使用該設定。
 
-    ![DNS 伺服器](./media/migrate-best-practices-networking/dns2.png) VNet 的 DNS 伺服器
+    ![*VNet](./media/migrate-best-practices-networking/dns2.png) dns 伺服器的*dns 伺服器
 
 **深入了解：**
 
@@ -132,14 +131,14 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 某個地區內可用性區域的實體區隔可保護應用程式和資料不受資料中心故障影響。
 - 區域備援服務會將應用程式和資料複寫至所有可用性區域，以防出現單一失敗點。 使用可用性區域時，Azure 可提供 99.99% VM 執行時間的 SLA。
 
-    ![可用性區域](./media/migrate-best-practices-networking/availability-zone.png) 可用性區域
+    ![可用性區域](./media/migrate-best-practices-networking/availability-zone.png)*可用性區域*
 
 - 藉由將運算、儲存體、網路及資料資源共置於某個區域內並複寫至其他區域，您即可在移轉架構內規劃和建置高可用性。 支援可用性區域的 Azure 服務分成兩個類別：
   - 區域服務：您可將資源與特定區域產生關聯。 例如，VM、受控磁碟、IP 位址。
   - 區域冗余服務：資源會自動跨區域複寫。 例如︰區域備援儲存體、Azure SQL Database。
 - 您可以部署具有網際網路對向工作負載或應用程式層的標準 Azure 負載平衡器，以提供區域容錯。
 
-    ![負載平衡器](./media/migrate-best-practices-networking/load-balancer.png) 負載平衡器
+    ![負載平衡器](./media/migrate-best-practices-networking/load-balancer.png)*負載平衡*器
 
 **深入了解：**
 
@@ -239,7 +238,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 
 當您有多個 ExpressRoute 線路時，會有一個以上的路徑來連線到 Microsoft。 因此，可能會產生次佳的路由，而且您的流量可能會經由較長的路徑連到 Microsoft，而 Microsoft 也可能會經由較長的路徑連到您的網路。 網路路徑愈常，延遲愈久。 延遲對於應用程式效能和使用者體驗有直接的影響。
 
-**範例:**
+**範例︰**
 
 讓我們檢閱一個範例：
 
@@ -357,7 +356,7 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 - 應用程式安全性群組可讓您大規模重複使用您的安全性原則，而不需進行明確 IP 位址的手動維護。
 - 應用程式安全性群組可處理明確 IP 位址和多個規則集的複雜性，讓您專注於商務邏輯。
 
-**範例:**
+**範例︰**
 
 ![應用程式安全性群組](./media/migrate-best-practices-networking/asg.png)
 *應用程式安全性群組範例*
@@ -374,7 +373,7 @@ NIC4 | AsgDb
 
 <!--markdownlint-disable MD033 -->
 
-**規則名稱** | **用途** | **詳細資料**
+**規則名稱** | **目的** | **詳細資料**
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | 讓流量從網際網路流向 Web 伺服器。 來自網際網路的輸入流量會遭到 DenyAllInbound 預設安全性規則拒絕，因此 AsgLogic 或 AsgDb 應用程式安全性群組則不需要其他規則。 | 優先順序：100<br/><br/> 來源：網際網路<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgWeb<br/><br/> 目的地埠：80<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
 Deny-Database-All | AllowVNetInBound 預設安全性規則允許相同 VNet 中各資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序：120<br/><br/> 來源：*<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：全部<br/><br/> 存取：拒絕。

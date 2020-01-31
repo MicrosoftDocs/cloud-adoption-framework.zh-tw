@@ -1,6 +1,5 @@
 ---
 title: 配合公司原則來調整您的雲端治理設計指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 配合公司原則來調整您的雲端治理設計指南
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +7,16 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 522ab305b7538be303909a13d27879b3e98d2f67
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566138"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805365"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>配合公司原則來調整您的雲端治理設計指南
 
-在根據您的[已識別風險](./policy-definition.md)來[定義雲端原則](./business-risk.md)之後，您必須產生可採取行動的指引，與 IT 人員和開發人員參考的這些原則保持一致。 起草雲端治理設計指南可讓您根據為[五個治理專業領域](../governance-disciplines.md)所產生的原則聲明，指定特定的結構化、技術和流程選擇。
+在根據您的[已識別風險](./business-risk.md)來[定義雲端原則](./policy-definition.md)之後，您必須產生可採取行動的指引，與 IT 人員和開發人員參考的這些原則保持一致。 起草雲端治理設計指南可讓您根據為[五個治理專業領域](../governance-disciplines.md)所產生的原則聲明，指定特定的結構化、技術和流程選擇。
 
 雲端治理設計指南應該為最符合您原則需求之雲端部署的每個核心基礎結構元件，建立架構選擇和設計模式。 除此之外，您應該提供將會支援每個設計決策之技術、工具和流程的高階說明。
 

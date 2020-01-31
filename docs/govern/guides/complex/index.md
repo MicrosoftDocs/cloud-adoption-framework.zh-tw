@@ -1,6 +1,5 @@
 ---
 title: 適用於複雜企業的治理指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 適用於複雜企業的治理指南
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a678620e2d194fa2430579b0289ac39c0720204
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2485aa48a8af05fdf945f39523439743f30977c6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753234"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805739"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 

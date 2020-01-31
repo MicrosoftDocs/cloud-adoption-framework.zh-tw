@@ -1,6 +1,5 @@
 ---
 title: 合理化數位資產
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 評估數位資產以判斷將其裝載於雲端的最佳方法。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781737"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804549"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -118,7 +117,7 @@ ms.locfileid: "75781737"
 
 雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 此共同作業會建立受控制的機會，以建立及測試定性的分析準則。 較小的人口會建立一個機會來調查受影響的使用者，並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素，請參閱[5 Rs 中合理化](./5-rs-of-rationalization.md)的特定合理化目標。
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 與持續合理化的同時，雲端採用小組可以開始遷移小型工作負載，以擴展下列主要領域的學習：
 

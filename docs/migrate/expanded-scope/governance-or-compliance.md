@@ -1,6 +1,5 @@
 ---
 title: 治理或合規性策略
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 治理或合規性策略
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753547"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803121"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -27,7 +26,7 @@ ms.locfileid: "73753547"
 
 在整合治理或合規性需求時，基本 Azure 環境的設定可能會大幅變更。 若要了解必要條件的變更情形，請務必了解需求的本質。 在開始進行任何需要治理或合規性的移轉之前，應該先在雲端環境中選擇並實作方法。 以下是一些在移轉期間經常會看到的高階方法：
 
-**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)是一種充分的方法，其中包含最基本的可行產品（MVP）實行，並遵循治理成熟度的目標反復專案來解決有形的風險在採用計畫中識別。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
+**常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)是一種充分的方法，其中包含最基本的可行產品（MVP）實行，並遵循治理成熟度的目標反復專案來解決採用計畫中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
 
 **ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
@@ -54,7 +53,7 @@ ms.locfileid: "73753547"
 - [成本管理](../../govern/cost-management/template.md)
 - [安全性基準](../../govern/security-baseline/template.md)
 - [資源一致性]。/../govern/resource-consistency/template.md)
-- [身分識別基準].。/../govern/identity-baseline/template.md)
+- [身分識別基準]../../govern/identity-baseline/template.md)
 - [部署加速](../../govern/deployment-acceleration/template.md)
 
 如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。

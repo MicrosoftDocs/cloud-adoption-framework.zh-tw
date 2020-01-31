@@ -1,6 +1,5 @@
 ---
 title: 檢查您的計算選項
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 檢查 Azure 工作負載的計算選項。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561886"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799177"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 

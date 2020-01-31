@@ -1,6 +1,5 @@
 ---
 title: 藍圖
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解適用於 Azure 的 Microsoft 雲端採用架構藍圖。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781516"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798650"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>雲端採用架構藍圖
 

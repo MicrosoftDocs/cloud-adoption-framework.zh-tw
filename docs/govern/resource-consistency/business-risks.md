@@ -1,6 +1,5 @@
 ---
 title: 資源一致性動機和商務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性動機和商務風險
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222010"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807218"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>資源一致性動機和商務風險
 
@@ -32,7 +31,7 @@ ms.locfileid: "71222010"
 
 初始測試部署可能只需採用某些粗略命名和標記標準來支援您的資源一致性需求。 隨著您的雲端採用日趨成熟並部署更複雜任務關鍵性資產，在資源一致性專業領域的投資需求會快速增加。
 
-## <a name="business-risk"></a>商務風險
+## <a name="business-risk"></a>業務風險
 
 資源一致性專業領域會嘗試解決核心作業商務風險。 在您規劃和實作雲端部署時，與您的企業和 IT 小組一起識別這些風險，並監視它們的關聯性。
 

@@ -1,6 +1,5 @@
 ---
 title: 成本管理專業領域概觀
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的成本管理
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: abba9da343342c99fcfa657aa0abd1c55daaef55
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566414"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806487"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
@@ -28,7 +27,7 @@ ms.locfileid: "73566414"
 
 ## <a name="policy-statements"></a>Policy statements
 
-可操作的原則聲明和所產生的架構需求，均可做為成本管理專業領域的基礎。 若要查看原則聲明範例，請參閱關於[成本管理原則聲明](./policy-statements.md)的文章。 這些範例可做為貴組織治理原則的起點。
+可操作的原則聲明和所產生的架構需求，均可做為成本管理專業領域的基礎。 若要查看原則聲明範例，請參閱關於[成本管理原則聲明](./policy-statements.md)的文章。 這些範例可作為貴組織治理原則的起點。
 
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。
@@ -160,6 +159,6 @@ ms.locfileid: "73566414"
 開始評估特定環境中的商務風險。
 
 > [!div class="nextstepaction"]
-> [了解商務風險](./business-risks.md)
+> [了解業務風險](./business-risks.md)
 
 <!-- markdownlint-enable MD033 -->

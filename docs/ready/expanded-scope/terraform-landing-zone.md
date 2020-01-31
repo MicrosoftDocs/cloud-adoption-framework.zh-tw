@@ -1,6 +1,5 @@
 ---
 title: 使用 Terraform 來建立您的登陸區域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何使用 Terraform 來建立您的登陸區域。
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753746"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798973"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
@@ -27,7 +26,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 重複使用元件是基礎結構即程式碼的基本原則。 模組有助於定義跨環境內和跨環境之資源部署的標準和一致性。 用來部署第一個登陸區域的模組可在官方[Terraform](https://registry.terraform.io/search?q=aztfmod)登錄中取得。
 
-## <a name="architecture-diagram"></a>架構圖表
+## <a name="architecture-diagram"></a>架構圖
 
 第一個登陸區域會在您的訂用帳戶中部署下列元件：
 
@@ -77,16 +76,16 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md) |
 | 命名標準 | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md) |
 | 成本管理 | N/A | [追蹤成本](../azure-best-practices/track-costs.md) |
-| 運算 | N/A | [計算選項](../considerations/compute-options.md) |
+| 計算 | N/A | [計算選項](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>標記標準
 
 所有資源和資源群組都必須有下列一組最小標記：
 
-| 標籤名稱 | 描述 | 索引鍵 | 範例值 |
+| 標籤名稱 | 說明 | 索引鍵 | 範例值 |
 |--|--|--|--|
 | 業務單位 | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | BusinessUnit | 財務，行銷，{產品名稱}，CORP，共用 |
-| 成本中心 | 與此資源相關聯的會計成本中心。| CostCenter | Number |
+| 成本中心 | 與此資源相關聯的會計成本中心。| CostCenter | 數字 |
 | 災害復原 | 應用程式、工作負載或服務的業務關鍵性。 | 災難 | 啟用 DR、未啟用 DR |
 | 環境 | 應用程式、工作負載或服務的部署環境。 |  Env | 生產、開發、QA、階段、測試、訓練 |
 | 擁有者名稱 | 應用程式、工作負載或服務的擁有者。| 擁有者 | 電子郵件 |

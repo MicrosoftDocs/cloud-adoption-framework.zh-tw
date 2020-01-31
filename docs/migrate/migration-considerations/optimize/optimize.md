@@ -1,6 +1,5 @@
 ---
 title: 進行雲端資產的效能評定和大小調整
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 進行雲端資產的效能評定和大小調整
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7198bdc1332a9d55bca68a04fe1384727dc7284a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548416"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801829"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 

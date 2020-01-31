@@ -1,6 +1,5 @@
 ---
 title: 將資產與優先順序的工作負載對齊
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 將資產與優先順序的工作負載對齊
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ef5ffecd998bbe4e5adadd30cf24fe965e22b703
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 0f005e6b770edb3c89cb033113fdd07e1cd5af0b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048269"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800520"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對應至優先順序的工作負載
 
