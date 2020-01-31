@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：以客戶理解的方式打造
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 學習以客戶的理解來打造。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565743"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808544"
 ---
 # <a name="build-with-customer-empathy"></a>以客戶理解的方式打造
 

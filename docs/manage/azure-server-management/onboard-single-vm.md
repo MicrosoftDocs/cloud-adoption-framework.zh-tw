@@ -1,6 +1,5 @@
 ---
 title: 在單一 VM 上啟用伺服器管理服務以進行評估
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在單一 VM 上啟用伺服器管理服務以進行評估
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7ee8cab09fc5ad875240a10d7fe6f632d91432c9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751637"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808034"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>在單一 VM 上啟用伺服器管理服務以進行評估
 

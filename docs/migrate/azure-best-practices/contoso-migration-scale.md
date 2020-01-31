@@ -1,6 +1,5 @@
 ---
 title: 對 Azure 進行大規模移轉
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Contoso 如何處理對 Azure 的大規模移轉。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566455"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807303"
 ---
 # <a name="scale-a-migration-to-azure"></a>對 Azure 進行大規模移轉
 
@@ -90,7 +89,7 @@ Contoso 會在各種伺服器中執行數千個應用程式。 除了 CMDB 和�
 
 Contoso 會識別一些常見類別來分類詳細目錄中的資產。 這些分類對於 Contoso 決定進行遷移而言非常重要。 分類清單可協助建立移轉優先順序，並找出複雜的問題。
 
-**類別** | **指派的值** | **詳細資料**
+**類別目錄** | **指派的值** | **詳細資料**
 --- | --- | ---
 商務群組 | 商務群組名稱的清單 | 哪個群組負責詳細目錄項目？
 POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早期採用者？
@@ -116,14 +115,14 @@ POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早�
 
 為了擷取此評價程序，其在詳細目錄中新增了幾個額外的分類。
 
-**類別** | **指派的值** | **詳細資料**
+**類別目錄** | **指派的值** | **詳細資料**
 --- | --- | ---
 商務群組 | 商務群組名稱的清單 | 哪個群組負責詳細目錄項目？
 POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早期採用者？
 技術債務 | 無/一些/嚴重 | 詳細目錄項目是否執行或使用不受支援的產品、平台或作業系統？
 防火牆影響 | Y/N | 應用程式是否與網際網路/外部流量進行通訊？  其是否與防火牆整合？
 安全性問題 | Y/N | 應用程式是否有已知的安全性問題？  應用程式是否使用未加密資料或過期平台？
-移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [詳細資訊](./contoso-migration-overview.md#migration-patterns)。
+移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [深入了解](./contoso-migration-overview.md#migration-patterns)。
 技術複雜度 | 1-5 | 移轉有多複雜？ 此值應由 Contoso DevOps 和相關合作夥伴來定義。
 業務關鍵性 | 1-5 | 此應用程式對業務有多重要？ 例如，小型工作群組應用程式可能會獲得 1 分，跨組織使用的重要應用程式可能會獲得 5 分。 這個分數會影響移轉的優先順序高低。
 移轉優先順序 | 1/2/3 | 應用程式的移轉優先順序為何？
@@ -194,7 +193,7 @@ Contoso 可以考慮四個廣泛的移轉策略。
 
 <!--markdownlint-disable MD033 -->
 
-**策略** | **詳細資料** | **用法**
+**策略** | **詳細資料** | **使用量**
 --- | --- | ---
 **重新裝載** | 這通常稱為「隨即_轉移_」，這是將現有應用程式快速遷移至 Azure 的免費程式碼選項。<br/><br/> 應用程式皆依原狀移轉，可直接享有雲端優勢，而無須承擔變更程式碼的相關風險或成本。 | Contoso 可以重新裝載較不具策略性的應用程式，而不必變更程式碼。
 **重構** | 此策略也稱為「重新封裝」，只需要稍微變更應用程式程式碼或組態，就能將應用程式連線至 Azure PaaS，並利用雲端功能。 | Contoso 可以重構策略性應用程式，以便既保留相同的基本功能，又將其移到 Azure 平台上執行，例如 Azure App Service。<br/><br/> 此策略所需變更的程式碼最少。<br/><br/> 但另一方面，Contoso 必須維護 VM 平台，因為 Microsoft 不會幫它管理。
@@ -225,7 +224,7 @@ Contoso 已[完成 POC](./contoso-migration-rehost-vm.md) 來了解 Site Recover
 
 Contoso 打算執行多次增益與轉移遷移。 為確保其可行性，Site Recovery 每批次會複寫大約 100 個 VM。 為了了解其運作方式，Contoso 必須針對建議的 Site Recovery 移轉進行容量規劃。
 
-- Contoso 必須收集其流量大小的相關資訊。 特別是：
+- Contoso 必須收集其流量大小的相關資訊。 尤其是：
   - Contoso 需要判斷其所要複寫 VM 的變動率。
   - Contoso 也需要將內部部署網站對 Azure 的網路連線能力納入考量。
 - 為了回應容量和數量需求，Contoso 必須根據所需 VM 的每日資料變動率配置足夠的頻寬，以符合其復原點目標 (RPO)。
@@ -344,7 +343,7 @@ Contoso 會仰賴 Azure 資訊安全中心為混合式雲端工作負載提供�
 
 [深入了解](https://azure.microsoft.com/services/security-center)資訊安全中心。
 
-### <a name="monitoring"></a>監控
+### <a name="monitoring"></a>監視
 
 針對剛剛遷移的應用程式、基礎結構和目前執行 Azure 的資料，Contoso 需要了解其健康情況和效能。 Contoso 會使用內建的 Azure 雲端監視工具，例如 Azure 監視器、Log Analytics 工作區和 Application Insights。
 
@@ -359,7 +358,7 @@ Contoso 必須針對其 Azure 資源備有商務持續性和災害復原 (BCDR) 
 - Azure 可提供[內建的 BCDR 功能](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications)，讓資料保持安全並讓應用程式/服務正常運作。
 - 除了內建功能外，Contoso 還想要確保其可以從失敗中復原，避免耗費資源的業務中斷情況、符合合規性目標，以及保護資料免於遭受勒索軟體攻擊和人為錯誤。 作法：
   - Contoso 會部署 Azure 備份，以這個符合成本效益的解決方案來備份 Azure 資源。 因為它是內建的，所以 Contoso 可以用幾個簡單的步驟來設定雲端備份。
-  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ## <a name="conclusion"></a>結論
 

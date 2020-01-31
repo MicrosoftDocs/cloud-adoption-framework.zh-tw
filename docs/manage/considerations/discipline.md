@@ -1,6 +1,5 @@
 ---
 title: 跨雲端管理專業領域的管理調節
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 本文討論跨雲端管理專業領域的管理調節。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2e3aa2b27c503039d39bf3cc4a90b528f45d513e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6bd93d65c7db0972a6b2a0b55c8ee9bef1417f3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565174"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807813"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理調節
 

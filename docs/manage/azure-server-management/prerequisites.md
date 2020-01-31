@@ -1,6 +1,5 @@
 ---
 title: Azure 伺服器管理服務的先決條件規劃
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 伺服器管理服務的先決條件工具和規劃
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751655"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807966"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 

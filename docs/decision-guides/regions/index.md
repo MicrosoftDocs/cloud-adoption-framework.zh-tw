@@ -1,6 +1,5 @@
 ---
 title: 區域決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解雲端平台區域的選取。
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753306"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806708"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -80,12 +79,12 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 下表可協助記載得自上述步驟的結果：
 
-| 區域        | 國家 (地區)     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
+| 區域        | Country     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
-| 北美洲 | USA         | yes             | 合作夥伴和客戶 | yes                         | 否                            |
-| 北美洲 | 加拿大      | 否              | 客戶              | yes                         | yes                           |
-| 歐洲        | 德國     | yes             | 合作夥伴和客戶 | 否 - 只有網路           | yes                           |
-| 亞太地區  | 南韓 | yes             | 合作夥伴               | yes                         | 否                            |
+| 北美洲 | USA         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
+| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
+| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
+| 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -133,7 +132,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 在處理全球資產和使用者群的複雜性時，您必須在任何移轉候選方案的評估程序中新增幾個重要活動。 這些變更各自都會透過資料驅動方法讓您清楚了解全球使用者和資產所會受到的影響。
 
-### <a name="suggested-action-during-the-assess-process"></a>評估程序進行期間的建議動作
+### <a name="suggested-action-during-the-assess-process"></a>評定程序進行期間的建議動作
 
 **評估跨資料中心的相依性：** [Azure Migrate 中的相依性視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可協助您找出相依性。 在移轉之前使用這些工具是最佳做法。 在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
@@ -171,7 +170,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 解決最佳化和升階期間的全球複雜性可能需要在每個額外的區域中進行重複的工作。 有單一部署可為您所接受時，可能仍需要重複的業務測試和業務變更方案。
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最佳化和升階程序進行期間的建議動作
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最佳化和升階程序期間的建議動作
 
 **預先測試最佳化：** 和移轉工作一樣，初始自動化測試可以識別可能的最佳化機會。 如果是全球性的工作負載，請務必在每個區域獨立測試工作負載，因為網路或目標 Azure 資料中心的設定只要稍有變更就可能會影響效能。
 

@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：學習
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-學習內容
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753010"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808425"
 ---
 # <a name="learn-with-customers"></a>向客戶學習
 
@@ -56,4 +55,4 @@ ms.locfileid: "73753010"
 > [!div class="nextstepaction"]
 > [瞭解常見的封鎖器和挑戰](./challenges.md)
 
-這篇文章中的一些概念，是根據 Eric Ries 所撰寫[的精簡啟動](https://theleanstartup.com/book)中所述的主題來建立。
+這篇文章中的一些概念，是根據 Eric Ries 所撰寫[的精簡啟動](http://theleanstartup.com/book)中所述的主題來建立。

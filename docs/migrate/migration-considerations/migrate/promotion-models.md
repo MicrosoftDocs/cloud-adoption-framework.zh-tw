@@ -1,6 +1,5 @@
 ---
 title: 升級模型：單一步驟、分段或航班
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解升階對移轉活動的影響
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9206b90cc9d5ec3a7e8e084b216be713fb24f265
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564609"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802220"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>升級模型：單一步驟、分段或航班
 

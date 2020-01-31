@@ -1,6 +1,5 @@
 ---
 title: 雲端監視指南：收集正確的資料
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751523"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807609"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 

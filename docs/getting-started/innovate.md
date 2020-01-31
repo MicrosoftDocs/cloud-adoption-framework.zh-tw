@@ -1,6 +1,5 @@
 ---
 title: 透過雲端採用的創新
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何使用雲端採用架構，透過雲端採用進行創新。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 96a1bca8e52ec384f8b93582ab4b3eac2fa77dd4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753104"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805960"
 ---
 # <a name="innovate-through-cloud-adoption"></a>透過雲端採用的創新
 

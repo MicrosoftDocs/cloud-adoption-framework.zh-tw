@@ -1,6 +1,5 @@
 ---
 title: 安全性基準動機和業務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準動機和業務風險
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222292"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808952"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>安全性基準動機和業務風險
 
@@ -41,8 +40,8 @@ ms.locfileid: "71222292"
 
 組織之間的風險會有所不同，但以下是常見的安全性相關風險，您可以將其作為起點，以在雲端治理小組內進行討論：
 
-- **資料缺口：** 意外暴露或遺失裝載於雲端的敏感性資料，可能會導致失去客戶、合約問題或法律責任。
-- **服務中斷：** 由於不安全的基礎結構所導致的中斷和其他效能問題會中斷正常作業，並可能導致產能損失或業務損失。
+- **資料缺口：** 無意暴露或遺失敏感性雲端裝載的資料，可能會導致客戶遺失、合約問題或法律後果。
+- **服務中斷：** 因為不安全的基礎結構中斷正常作業，而中斷和其他效能問題，可能會導致生產力遺失或失去業務。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,6 +1,5 @@
 ---
 title: Azure 創新指南：針對客戶意見反應做好準備
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 針對客戶意見反應做好準備
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7bf52b9be08ae2122b6a7f20a19d99f5621fb0e4
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251931"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808357"
 ---
 ::: zone target="docs"
 

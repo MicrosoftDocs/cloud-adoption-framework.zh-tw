@@ -1,6 +1,5 @@
 ---
 title: 軟體定義網路決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 深入了解軟體定義網路這個 Azure 移轉過程中的核心服務。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564779"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806589"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -42,12 +41,12 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 | 問題 | 僅限 PaaS | 雲端原生 | 雲端 DMZ | 混合式 | 中樞與輪幅 |
 |-----|-----|-----|-----|-----|-----|
-| 您的工作負載將只會使用 PaaS 服務，而且除了服務本身所提供的網路功能，不需要任何網路功能嗎？ | yes | 否 | 否 | 否 | 否 |
-| 您的工作負載需要與內部部署應用程式整合嗎？ | 否 | 否 | yes | 是 | yes |
-| 您是否已在內部部署與雲端網路之間，建立了成熟的安全性原則和安全的連線？ | 否 | 否 | 否 | yes | yes |
-| 您的工作負載是否需要不會透過雲端識別服務支援的驗證服務，或者您是否需要直接存取內部部署網域控制站？ | 否 | 否 | 否 | yes | yes |
-| 您是否將需要部署和管理大量 VM 和工作負載？ | 否 | 否 | 否 | 否 | yes |
-| 將對資源的控制委派給個別工作負載小組時，您是否將需要提供集中式管理與內部部署連線能力？ | 否 | 否 | 否 | 否 | yes |
+| 您的工作負載將只會使用 PaaS 服務，而且除了服務本身所提供的網路功能，不需要任何網路功能嗎？ | 是 | 否 | 否 | 否 | 否 |
+| 您的工作負載需要與內部部署應用程式整合嗎？ | 否 | 否 | 是 | 是 | 是 |
+| 您是否已在內部部署與雲端網路之間，建立了成熟的安全性原則和安全的連線？ | 否 | 否 | 否 | 是 | 是 |
+| 您的工作負載是否需要不會透過雲端識別服務支援的驗證服務，或者您是否需要直接存取內部部署網域控制站？ | 否 | 否 | 否 | 是 | 是 |
+| 您是否將需要部署和管理大量 VM 和工作負載？ | 否 | 否 | 否 | 否 | 是 |
+| 將對資源的控制委派給個別工作負載小組時，您是否將需要提供集中式管理與內部部署連線能力？ | 否 | 否 | 否 | 否 | 是 |
 
 ## <a name="virtual-networking-architectures"></a>虛擬網路架構
 
@@ -68,7 +67,7 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 ## <a name="next-steps"></a>後續步驟
 
-軟體定義網路只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)以了解針對其他基礎架構類型訂定決策時，所使用的替代模式或模型。
+軟體定義網路只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

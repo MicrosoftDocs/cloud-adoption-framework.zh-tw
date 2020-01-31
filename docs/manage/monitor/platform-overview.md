@@ -1,6 +1,5 @@
 ---
 title: 雲端監視指南：監視平臺總覽
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 選擇在 Microsoft Azure 中使用 Azure 監視器或 System Center Operations Manager 的時機。
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751683"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807592"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>雲端監視指南：監視平臺總覽
 

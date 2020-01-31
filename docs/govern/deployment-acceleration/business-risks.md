@@ -1,6 +1,5 @@
 ---
 title: 驅使部署加速的動機和業務風險
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 深入了解雲端治理策略一部分的部署加速專業領域。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c9bdb912311aac6c926402753a678b9f191594c9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220713"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806385"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>部署加速動機和業務風險
 
@@ -36,9 +35,9 @@ ms.locfileid: "71220713"
 
 部署加速專業領域會嘗試解決下列業務風險。 在雲端採用期間，監視下列各項的相關性：
 
-- **服務中斷：** 缺乏可預測的可重複部署流程或未受管理的系統設定變更，會中斷正常作業以及導致遺失產能或遺失商務。
-- **成本超支：** 系統資源設定中非預期的變更會讓識別問題的根本原因更困難，提高開發、作業和維護的成本。
-- **組織效率不佳：** 開發、作業及安全性小組之間的屏障，會導致雲端技術的採用和整合雲端治理模型的開發效率出現無數的挑戰。
+- **服務中斷：** 缺少可預測的重複部署程式或系統設定的非受控變更，可能會中斷正常作業，而且可能會導致生產力遺失或失去業務。
+- **成本超支：** 系統資源設定中的非預期變更可讓識別問題的根本原因更棘手，進而提高開發、作業和維護的成本。
+- **組織效率**不佳：開發、作業和安全性小組之間的阻礙可能會造成許多挑戰，以有效採用雲端技術和開發統一的雲端治理模型。
 
 ## <a name="next-steps"></a>後續步驟
 

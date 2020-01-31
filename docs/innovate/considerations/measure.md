@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：量值
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-測量內容
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752120"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808408"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 
@@ -23,7 +22,7 @@ ms.locfileid: "73752120"
 
 在雲端採用生命週期的[策略階段](../../strategy/index.md)中，我們會檢查[動機](../../strategy/motivations.md)和[商務成果](../../strategy/business-outcomes/index.md)。 這些實務會提供一組用來測試客戶影響的計量。 當創新成功時，您通常會看到與您的策略目標一致的結果。
 
-建立學習計量之前，請定義您想要讓此創新影響的少數策略性計量。 這些策略性計量通常會與下列一或多個結果區域一致：[商業](../../strategy/business-outcomes/agility-outcomes.md)彈性、[客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)、[客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)、[財務衝擊](../../strategy/business-outcomes/fiscal-outcomes.md)，或在作業創新的案例中：[解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)。
+建立學習計量之前，請定義您想要讓此創新影響的少數策略性計量。 這些策略性計量通常符合下列一個或多個結果區域：[商業](../../strategy/business-outcomes/agility-outcomes.md)彈性、[客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)、[客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)、[財務衝擊](../../strategy/business-outcomes/fiscal-outcomes.md)，或在營運創新案例中：[解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)。
 
 記錄已同意的計量，並定期追蹤其影響。 但不會預期會導致這些計量中的任何一種反復專案出現。 如需有關設定和調整相關合作物件之預期的詳細資訊，請參閱反復專案的[承諾](./index.md#commitment-to-iteration)。
 

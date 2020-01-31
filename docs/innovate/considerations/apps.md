@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：參與應用程式
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-透過應用程式進行互動。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752075"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808561"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -36,7 +35,7 @@ ms.locfileid: "73752075"
 
 專業開發人員是創新的重要元件。 當假設有正確的大規模證明時，專業開發人員就必須穩定並準備解決方案以進行調整。 本文中所參考的大部分原則都需要專業開發人員的支援。 可惜的是，目前的趨勢建議專業開發人員的需求比開發人員還多。 此外，當您認為需要專業開發時，創新的成本和步調也比較不理想。 為了因應這些挑戰，公民開發人員提供一種方法來調整開發工作，並加速早期假設測試。
 
-當早期假設可以透過適用于應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和[Microsoft Flow](https://docs.microsoft.com/flow)預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、工作流程和功能等工具進行驗證時，可以使用公民開發人員[BI](https://docs.microsoft.com/power-bi)用於資料耗用量。
+當早期假設可以透過應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、工作流程[Microsoft Flow](https://docs.microsoft.com/flow) ，以及資料耗用量[Power BI](https://docs.microsoft.com/power-bi)進行驗證時，使用公民開發人員可能會是可行且有效的。
 
 > [!NOTE]
 > 當您依賴公民開發人員測試假設時，建議您最好讓一些專業開發人員提供支援、審查和指導方針。 假設經過大規模驗證之後，將應用程式轉換成更健全的程式設計模型的流程，會加速創新。 藉由在早期的流程定義中牽涉到專業開發人員，您可以在稍後實現更整潔的轉換。

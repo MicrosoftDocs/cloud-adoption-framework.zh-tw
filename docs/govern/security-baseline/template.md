@@ -1,6 +1,5 @@
 ---
 title: 安全性基準範本
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端治理相關的安全性基準概念。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8602676ceb6b3c1400254dc6f72cb2d9f99069b0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222816"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808833"
 ---
 # <a name="security-baseline-template"></a>安全性基準範本
 

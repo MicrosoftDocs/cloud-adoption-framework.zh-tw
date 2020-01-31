@@ -1,6 +1,5 @@
 ---
 title: 資源一致性專業領域的改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資源一致性專業領域的改進
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548093"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807235"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -39,9 +38,9 @@ ms.locfileid: "72548093"
 
 - 評估您的[資源一致性工具鏈](./toolchain.md)選項。
 - 了解雲端策略的授權需求。
-- 開發架構方針文件的草稿，並散發給重要的專案關係人。
+- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
 - 熟悉您用於部署、管理及以群組監視解決方案之所有資源的資源管理員。
-- 教育並涵蓋受到開發架構方針影響的人員和小組。
+- 教育並涵蓋受到開發架構指導方針影響的人員和小組。
 - 將已設定優先權的資源部署工作新增至您的移轉待辦項目中。
 
 **潛在的活動：**
@@ -54,12 +53,12 @@ ms.locfileid: "72548093"
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
-若要成功遷移環境，需要數個技術性和非技術性必要條件。 此流程著重於可繼續進行移轉的決策、整備和核心基礎結構。
+若要成功遷移環境，需要數個技術性和非技術性必要條件。 此程序著重於可繼續進行移轉的決策、整備和核心基礎結構。
 
 **最小的建議活動：**
 
 - 藉由在預先部署階段推出，來實現您的[資源一致性工具鏈](./toolchain.md)。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 在已設定優先權的移轉待辦項目上實作資源部署工作。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
@@ -76,14 +75,14 @@ ms.locfileid: "72548093"
 - 執行存取性能以測量收到的服務品質。
 - 請考慮使用組態設定和資源建立規則部署[原則](https://docs.microsoft.com/azure/governance/policy/overview)來管理 SLA 強制。
 
-## <a name="adopt-and-migrate"></a>採用和遷移
+## <a name="adopt-and-migrate"></a>採用和移轉
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[資源一致性工具鏈](./toolchain.md)從預先部署遷移至生產環境。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 - 移轉任何現有的自動化補救指令碼或工具，以支援定義的 SLA 需求。
 

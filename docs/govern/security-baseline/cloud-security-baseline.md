@@ -1,6 +1,5 @@
 ---
 title: 瞭解雲端安全性基準
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端安全性基準。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752161"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808884"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>瞭解雲端安全性基準
 
@@ -36,7 +35,7 @@ ms.locfileid: "73752161"
 
 ## <a name="protecting-data-and-privacy"></a>保護資料及隱私權
 
-針對世界各地的組織 &mdash;whether 政府、非營利組織或企業 &mdash;cloud 計算已成為其持續 IT 策略的關鍵區段。 雲端服務能讓所有規模的組織存取近乎無限的資料儲存空間，同時免除購買、維護及更新自己的網路和電腦系統的需求。 Microsoft 和其他雲端提供者皆提供 IT 基礎結構、平台，以及軟體即服務 (SaaS)，讓客戶得以視需求迅速地相應增加或減少，並只需為其所使用的運算能力和儲存體支付費用。
+針對世界各地的組織&mdash;政府、非營利組織或企業&mdash;雲端運算是否已成為其持續性 IT 策略的重要部分。 雲端服務能讓所有規模的組織存取近乎無限的資料儲存空間，同時免除購買、維護及更新自己的網路和電腦系統的需求。 Microsoft 和其他雲端提供者皆提供 IT 基礎結構、平台，以及軟體即服務 (SaaS)，讓客戶得以視需求迅速地相應增加或減少，並只需為其所使用的運算能力和儲存體支付費用。
 
 不過，隨著組織持續利用雲端服務的優點 (例如增加的選擇、靈活度及彈性)，同時提升效率並降低 IT 成本，他們必須考慮雲端服務的導入會如何影響其隱私權、安全性及合規性狀態。 Microsoft 已投注許多資源來使其雲端供應項目不僅具有可調整、可靠且可控制的特色，同時也能確保客戶資料會受到保護，並以透明的方式運用。
 

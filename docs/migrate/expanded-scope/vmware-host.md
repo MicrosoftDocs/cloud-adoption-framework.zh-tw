@@ -1,6 +1,5 @@
 ---
 title: 使用 VMware 主機加速遷移
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 使用 VMware 主機加速遷移
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 77d75127a497778056634f8a84a9021fa874a726
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566876"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802917"
 ---
 # <a name="accelerate-migration-with-vmware-hosts"></a>使用 VMware 主機加速遷移
 

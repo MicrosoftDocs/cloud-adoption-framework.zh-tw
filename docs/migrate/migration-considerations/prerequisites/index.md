@@ -1,6 +1,5 @@
 ---
 title: 移轉的必要條件
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移轉的必要條件
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 2f8fe1be35e1f629da3f57e1344b573e97ff571b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683786"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801455"
 ---
-# <a name="prerequisites-for-migration"></a>移轉的必要條件
+# <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 
 在開始任何移轉之前，您必須先準備移轉目標「環境」  以因應接下來的變更。 在此情況下，環境是指雲端中的技術基礎。 環境同時也代表驅動移轉的業務環境和心態。 同樣地，環境也包含執行變更和接收輸出之小組的文化特性。 沒有針對這些變更進行足夠準備，是移轉失敗最常見的原因。 本系列文章將會引導您完成準備環境的建議必要條件。
 

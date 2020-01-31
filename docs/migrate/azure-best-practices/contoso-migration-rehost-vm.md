@@ -1,6 +1,5 @@
 ---
 title: 使用 Azure Site Recovery 在 Azure Vm 上重新裝載應用程式
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解 Contoso 如何使用 Azure Site Recovery 服務，以將內部部署機器隨即轉移至 Azure 的方式，重新裝載內部部署應用程式。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: f38503b0cc998721726845fc1669f40ea8c845e4
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: cb6bb11ee8d87f5ca6069979894de6549bb4a33b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520186"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807320"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>在 Azure Vm 上重新裝載內部部署應用程式
 

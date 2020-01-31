@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：加強採用 Azure 的工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在 Azure 中加強採用的工具
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 203bd84154b038939b29cb42b53bfbac2b4d2360
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565883"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808697"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>在 Azure 中加強採用的工具
 
@@ -21,7 +20,7 @@ ms.locfileid: "73565883"
 
 ![雲端採用架構方法，讓採用](../../_images/innovate/empower-adoption-maturity.png)
 
-## <a name="alignment-to-the-methodology"></a>與方法的對齊
+## <a name="alignment-to-the-methodology"></a>與方法配合
 
 您可以透過下列成熟度層級來加速這種類型的數位家發明。 這些層級會與上圖中的成熟度模型一致。 此頁面左側的目錄中會列出加速數位家發明的技術指引。 這些文章會依成熟度層級分組。
 
@@ -40,8 +39,8 @@ ms.locfileid: "73565883"
 
 - Azure 藍圖
 - Azure 原則
-- Azure 資源管理員範本
-- Azure 監視器
+- Azure Resource Manager 範本
+- Azure Monitor
 
 此頁面左側的目錄會列出每個工具的指引，並與先前所述的成熟度模型對齊。
 

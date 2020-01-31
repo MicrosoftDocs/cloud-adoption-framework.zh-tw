@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：挑戰和障礙
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端創新簡介-挑戰和阻礙
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752003"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808527"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 

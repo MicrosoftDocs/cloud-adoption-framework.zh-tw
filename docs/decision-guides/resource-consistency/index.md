@@ -1,6 +1,5 @@
 ---
 title: 資源一致性決策指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解規劃 Azure 移轉時的資源一致性。
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f995a3f6ffb26f408a45610d7d0674e02bf6a31
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564807"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806691"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -22,7 +21,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 ![規劃符合下列快速連結的資源一致性選項 (從最簡單到最複雜)](../../_images/decision-guides/decision-guide-resource-consistency.png)
 
-跳至：[基本群組](#basic-grouping) | [部署一致性](#deployment-consistency) | [原則一致性](#policy-consistency) | [階層式一致性](#hierarchical-consistency)  | [自動化的一致性](#automated-consistency)
+跳至：[基本群組](#basic-grouping) | [部署一致性](#deployment-consistency) | [原則一致性](#policy-consistency) | [階層式一致性](#hierarchical-consistency) | [自動化的一致性](#automated-consistency)
 
 和雲端資產的資源一致性需求層級相關的決策，主要取決於下列因素：移轉後的數位資產大小、不符合您現有訂用帳戶設計方式的業務或環境需求，或需要在部署資源之後持續強制執行治理。
 

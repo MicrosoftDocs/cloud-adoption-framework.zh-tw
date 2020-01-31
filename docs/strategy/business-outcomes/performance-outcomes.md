@@ -1,6 +1,5 @@
 ---
 title: 效能結果的範例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 效能結果的範例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d772f7c8a2e7c76770a6496bb85acbac54debfe4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048356"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806827"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果的範例
 
@@ -29,7 +28,7 @@ ms.locfileid: "73048356"
 
 - **範例1：** 服務公司正與託管多個營運基礎結構資產的主控提供者合作。 這些系統會遇到頻繁的中斷和效能不佳的問題。 公司將其資產遷移至 Azure，以利用雲端的 SLA 和效能控制。 停機時間的代價是，每分鐘中斷大約15000美元。 由於每個月有四到八個小時的中斷，因此可以輕鬆地論證此組織的轉換。
 
-- **範例2：** 取用者投資公司是在雲端應用程式創新投入的初期階段。 敏捷式流程和 DevOps 已成熟良好，但應用程式效能已尖峰。 作為更成熟的轉換，公司根據使用需求來啟動程式，以監視和自動調整大小。 公司能夠使用 Azure 效能管理工具來消除調整大小的問題，導致交易的增加 5%。
+- **範例2：** 取用者投資公司是在雲端應用程式創新投入的初期階段。 敏捷式流程和 DevOps 已成熟良好，但應用程式效能已尖峰。 作為更成熟的轉換，公司根據使用需求來啟動程式，以監視和自動調整大小。 公司能夠使用 Azure 效能管理工具來消除調整大小的問題，導致交易的增加5%。
 
 ## <a name="reliability"></a>可靠性
 

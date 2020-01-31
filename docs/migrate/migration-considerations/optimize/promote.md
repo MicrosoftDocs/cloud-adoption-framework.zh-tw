@@ -1,6 +1,5 @@
 ---
 title: 要將移轉後的資源升階至生產環境需要什麼？
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c5606c0081e01cd20456ec6490b4d6fcd7bd914
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548412"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801676"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -29,7 +28,7 @@ ms.locfileid: "72548412"
 
 - **[評估](../assess/index.md)：** 工作負載已針對雲端相容性進行評估。
 - **[架構設計師](../assess/architect.md)：** 已正確架構工作負載的結構，以配合所選的雲端提供者。
-- 複寫 **[ ](../migrate/replicate.md)：** 資產已複寫至雲端環境。
+- **[複寫](../migrate/replicate.md)：** 資產已複寫至雲端環境。
 - **[階段](../migrate/stage.md)：** 已在雲端環境的暫存實例中還原複寫的資產。
 - **[商務測試](./business-test.md)：** 工作負載已受到商務使用者的完整測試和驗證。
 - **[商務變更計畫](./business-change-plan.md)：** 企業已根據生產升級，分享要進行變更的計畫;這應該包括使用者採用計畫、商務程式變更、需要定型的使用者，以及各種活動的時程表。

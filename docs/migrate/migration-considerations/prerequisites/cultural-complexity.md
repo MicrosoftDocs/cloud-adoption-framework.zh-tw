@@ -1,6 +1,5 @@
 ---
 title: 針對文化複雜度做準備：調整角色和責任
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 藉由協調角色和責任，為文化複雜度做準備。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548344"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801489"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>針對文化複雜度做準備：調整角色和責任
 
@@ -25,7 +24,7 @@ ms.locfileid: "72548344"
 
 在任何移轉中，都有一些應盡可能由企業執行的重要功能。 IT 人員通常可完成下列工作。 不過，企業參與成員可以協助您在後續的採用過程中降低阻礙。 它也可在整個移轉過程中確保專案關係人重要的相互投資。
 
-| 流程 | 活動 | 描述 |
+| 流程 | 活動 | 說明 |
 |---------|---------|---------|
 | 評估 | 業務目標 | 定義移轉工作所需的業務成果。 |
 | 評估 | 優先順序 | 確保能符合持續變動的業務優先順序和市場現況。 |
@@ -46,10 +45,10 @@ ms.locfileid: "72548344"
 > [!NOTE]
 > 在下表中，責任方應起始角色的對應。 該資料行應自訂以符合現有的程序，進而達成高效率的執行。 在理想的情況下，應將單一人員任命為責任方。
 
-| 流程 | 活動 | 描述 | 責任方 |
+| 流程 | 活動 | 說明 | 責任方 |
 |---------|---------|---------|---------|
-| 先決條件 | 數位資產 | 根據業務成果，使現有的清查符合基本假設。 | 雲端策略小組 |
-| 先決條件 | 移轉待處理項目 | 為要移轉的工作負載設定優先順序。 | 雲端策略小組 |
+| 必要條件 | 數位資產 | 根據業務成果，使現有的清查符合基本假設。 | 雲端策略小組 |
+| 必要條件 | 移轉待處理項目 | 為要移轉的工作負載設定優先順序。 | 雲端策略小組 |
 | 評估 | 架構 | 挑戰初始假設，以根據使用計量定義目標架構。 | 雲端採用小組 |
 | 評估 | 核准 | 核准建議的架構。 | 雲端策略小組 |
 | 移轉 | 複寫存取 | 存取現有的內部部署主機和資產，以建立複寫程序。 | 雲端採用小組 |

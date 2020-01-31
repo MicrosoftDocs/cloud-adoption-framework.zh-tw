@@ -1,6 +1,5 @@
 ---
 title: 軟體定義網路：雲端 DMZ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 此網路架構允許內部部署和雲端式網路之間的有限存取。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6b96fbae9c3e31fc4c133ce6a19589324a86dd83
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: eee22d6a0322a94ef0968c901642700fdc6247ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160037"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806657"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 

@@ -1,6 +1,5 @@
 ---
 title: 大型主機遷移：誤解和事實
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4adf229b1ffca1d1360d197ab09a04f0d9584ef8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547912"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808748"
 ---
 # <a name="mainframe-myths-and-facts"></a>大型主機迷思與事實
 
@@ -39,7 +38,7 @@ ms.locfileid: "72547912"
 
 雖然可能有一些隔離的實例，其中的雲端解決方案很短，但通常是因為無法散發應用程式演算法。 這些範例是例外狀況，而不是規則。
 
-## <a name="summary"></a>總結
+## <a name="summary"></a>摘要
 
 相較之下，Azure 提供的替代平臺能夠傳遞對等的大型主機功能和功能，而且成本更低。 此外，雲端以訂閱為基礎之訂用帳戶的擁有權總成本（TCO）與大型主機的成本模型相比，價格遠低於主機電腦。
 

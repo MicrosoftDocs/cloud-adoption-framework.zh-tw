@@ -1,6 +1,5 @@
 ---
 title: 部署基本工作負載
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 描述如何將基本工作負載部署到 Azure
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160449"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808731"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 

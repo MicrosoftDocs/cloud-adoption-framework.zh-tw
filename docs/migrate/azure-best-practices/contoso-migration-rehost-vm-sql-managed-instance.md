@@ -1,6 +1,5 @@
 ---
 title: 將內部部署應用程式移轉至 Azure VM 和 Azure SQL Database 受控執行個體，以重新裝載此應用程式
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Contoso 如何在 Azure VM 和 Azure SQL Database 受控執行個體上重新裝載內部部署應用程式。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781856"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807354"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>在 Azure VM 和 SQL Database 受控執行個體上重新裝載內部部署應用程式
 

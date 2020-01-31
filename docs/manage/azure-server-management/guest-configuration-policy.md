@@ -1,6 +1,5 @@
 ---
 title: 來賓設定原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 來賓設定原則
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c676766c2de524dcbe9ca66fc248c410b14e17d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656323"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808068"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
@@ -37,7 +36,7 @@ By default, we recommend that you enable the following policies:
 
 -->
 
-## <a name="deployment"></a>Deployment
+## <a name="deployment"></a>部署
 
 使用下列範例 PowerShell 腳本，將這些原則部署到：
 

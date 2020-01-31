@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：與 Azure 中的裝置互動的工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在 Azure 中與裝置互動的工具
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c649ef695e74dce0ae2ec21e1e0d666abc2a65e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83aa06b897c510b90993d77a119063c3fe5f1af1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565817"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808646"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>在 Azure 中與裝置互動的工具
 
@@ -21,7 +20,7 @@ ms.locfileid: "73565817"
 
 ![與裝置互動的雲端採用架構方法](../../_images/innovate/ambient-experiences.png)
 
-## <a name="alignment-to-the-methodology"></a>與方法的對齊
+## <a name="alignment-to-the-methodology"></a>與方法配合
 
 這種類型的數位家發明可以透過下列任一層級的環境體驗來傳遞。 這些層級會與上述影像中所示的方法一致。 此頁面左邊的目錄列出加速數位家發明的技術指引。 這些文章會依環境經驗的層級分組，以配合方法。
 

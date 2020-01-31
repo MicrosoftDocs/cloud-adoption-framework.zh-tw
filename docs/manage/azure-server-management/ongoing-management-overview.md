@@ -1,6 +1,5 @@
 ---
 title: 持續管理和安全性
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 持續管理和安全性
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: fc15e50f0919745faff89949dbac15169adc5c6c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565338"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807983"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>第3階段：持續的管理和安全性
 

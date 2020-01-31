@@ -1,6 +1,5 @@
 ---
 title: 複雜企業的治理指南：改善成本管理專業領域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複雜企業的治理指南：改善成本管理專業領域
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566337"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805722"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
@@ -30,7 +29,7 @@ ms.locfileid: "73566337"
 
 在此敘述的上一個階段，IT 小組已主動將含有受保護資料的生產工作負載移到 Azure。
 
-從那時起，某些事項已經改變，將會影響治理：
+從那時起，某些將會影響治理的事項已經改變：
 
 - 已從這兩個標記為淘汰的資料中心移除了 5,000 個資產。 採購和 IT 安全性會立即取消佈建剩餘的實體資產。
 - 應用程式開發小組已實作為 CI/CD 管線，以部署一些雲端原生應用程式，大幅影響客戶體驗。
@@ -44,7 +43,7 @@ ms.locfileid: "73566337"
 
 **預算控制：** 有一項固有的風險是，自助功能會在新平臺上產生過多和非預期的成本。 監視成本及降低持續成本風險的治理流程必須就緒，才能確保會持續與規劃的預算保持一致。
 
-此業務風險會延伸成少數技術風險：
+此業務風險可能會延伸出少數技術風險：
 
 - 有一個關於實際成本的風險是會超出方案。
 - 業務狀況變更。 發生變更時，將出現業務功能必須耗用比預期還多之雲端服務的情況，因而導致支出異常狀況。 有一項風險是，這些額外成本會視為超額部分，而不是計畫的必要調整。 如果成功，加拿大的實驗應該有助於補救此風險。
@@ -63,7 +62,7 @@ ms.locfileid: "73566337"
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量
 
-本文的這一節將會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更會履行新的公司原則聲明。
+本文的這一節將會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
 
 1. 在 Azure 企業版入口網站中進行變更，以對加拿大部署的部門系統管理員收費。
 2. 實作 Azure 成本管理。

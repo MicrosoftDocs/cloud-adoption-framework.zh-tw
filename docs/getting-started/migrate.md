@@ -1,6 +1,5 @@
 ---
 title: 開始在 Azure 中進行雲端遷移旅程
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 開始在 Azure 中進行雲端遷移旅程。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781676"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804447"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -36,7 +35,7 @@ ms.locfileid: "75781676"
 
 |重要的商務活動 | 遷移動機 | 創新動機 |
 |---------|---------|---------|
-| 資料中心的退出<br/><br/>企業併購或撤資<br/><br/>減少資本支出<br/><br/>終止對任務關鍵性技術的支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省費用<br/><br/>降低廠商或技術上的複雜性<br/><br/>追求內部營運的最佳化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理或市場需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>將安全性狀態和控制項現代化<br/><br/>調整以符合地理或市場需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
+| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省費用<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理或市場需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>將安全性狀態和控制項現代化<br/><br/>調整以符合地理或市場需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -144,7 +143,7 @@ ms.locfileid: "75781676"
 >
 > [創新](../innovate/index.md)
 >
-> [治理](../govern/index.md)
+> [制約](../govern/index.md)
 >
 > [管理](../manage/index.md)
 >

@@ -1,6 +1,5 @@
 ---
 title: 評估公司原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 評估公司原則，作為雲端治理策略的一部分。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: e4f9258095fa0002848bfe88ae43195c369221cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 59c4ac9c637d0c243d58cb93866ddfa8b9986de5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221177"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804328"
 ---
 # <a name="evaluate-corporate-policy"></a>評估公司原則
 
@@ -108,7 +107,7 @@ ms.locfileid: "71221177"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>處理序</h3>
+                        <h3>程序</h3>
                         <p>採用與創新活動的步調自然會建立原則違規。 執行相關程序會輔助監視及強制執行遵守原則。</p>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 ---
 title: 在 Azure 中重建內部部署應用程式
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Contoso 如何使用 Azure App Service、Azure Kubernetes Service、Cosmos DB、Azure Functions 和 Azure 認知服務在 Azure 中重建應用程式。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
-ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
+ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76726347"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807490"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>在 Azure 上重建內部部署應用程式
 

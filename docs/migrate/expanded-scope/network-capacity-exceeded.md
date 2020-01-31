@@ -1,6 +1,5 @@
 ---
 title: 超過網路容量
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在遷移工作期間，資料需求超過網路容量。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753488"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803087"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>資料需求在遷移工作期間超過網路容量
 
@@ -72,7 +71,7 @@ ms.locfileid: "73753488"
 
 最佳化活動不太可能受到範圍內的這項變更所影響。
 
-## <a name="secure-and-manage-process-changes"></a>保護和管理流程變更
+## <a name="secure-and-manage-process-changes"></a>保護和管理程序變更
 
 保護和管理活動不太可能受到範圍內的這項變更所影響。
 

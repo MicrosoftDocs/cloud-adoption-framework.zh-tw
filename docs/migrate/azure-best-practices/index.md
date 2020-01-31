@@ -1,6 +1,5 @@
 ---
 title: Azure 移轉最佳做法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移轉最佳做法簡介
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1519adff06d600b9829c9b7ff3ca82a0aa5a0160
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 5cc4a0cfdfe605fdd374055e782db2f0ce47c13f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753369"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807286"
 ---
 # <a name="azure-migration-best-practices"></a>Azure 移轉最佳做法
 

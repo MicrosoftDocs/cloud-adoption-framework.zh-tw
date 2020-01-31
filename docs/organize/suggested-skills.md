@@ -1,6 +1,5 @@
 ---
 title: 建置技術技能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在準備階段遷移的過程中，瞭解技能就緒性路徑。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: 7ba7d9044fcc26ecc152e4944dac4999c799bcf2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520152"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800673"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移準備階段期間的技能就緒性路徑
 

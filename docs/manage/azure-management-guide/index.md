@@ -1,6 +1,5 @@
 ---
 title: Azure 管理指南：開始之前
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解如何使用逐步指引來管理 Azure 作業。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1b0ecb840a5378acbabaf94f11e2aa1297c35427
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0dfab31bbdc9dc7aae6c5d82f77f8640dcc01874
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751537"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808221"
 ---
 ::: zone target="docs"
 

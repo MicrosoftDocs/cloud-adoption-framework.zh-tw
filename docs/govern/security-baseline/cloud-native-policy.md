@@ -1,6 +1,5 @@
 ---
 title: 雲端原生安全性基準原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端原生安全性基準原則
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752547"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808935"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 

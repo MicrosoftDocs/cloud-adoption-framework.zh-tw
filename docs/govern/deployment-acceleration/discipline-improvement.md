@@ -1,6 +1,5 @@
 ---
 title: 部署加速專業領域改進
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速專業領域改進
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547775"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805926"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -38,7 +37,7 @@ ms.locfileid: "72547775"
 **最小的建議活動：**
 
 - 評估您的[部署加速工具鏈](./toolchain.md)選項，並實作適用於貴組織的混合式策略。
-- 開發架構方針文件的草稿，並散發給重要的專案關係人。
+- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
 - 教育並涵蓋受到開發架構方針影響的人員和小組。
 - 訓練開發小組和 IT 人員，使其了解 DevSecOps 準則和策略，以及在部署加速專業領域中將部署完全自動化的重要性。
 
@@ -62,14 +61,14 @@ ms.locfileid: "72547775"
 
 - 定義持續整合和持續部署 (CI/CD) 管線，透過開發、QA 及生產環境完全管理發行應用程式更新的程序。
 
-## <a name="adopt-and-migrate"></a>採用和遷移
+## <a name="adopt-and-migrate"></a>採用和移轉
 
 移轉是一個累加式程序，著重於在現有的數位資產中移動、測試及採用應用程式或工作負載。
 
 **最小的建議活動：**
 
 - 將您的[部署加速工具鏈](./toolchain.md)從開發環境移轉至生產環境。
-- 更新架構方針文件，並散發給重要的專案關係人。
+- 更新架構指導方針文件，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的開發人員和 IT 採用。
 
 **潛在的活動：**

@@ -1,6 +1,5 @@
 ---
 title: 身分識別基準範本
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 身分識別基準範本
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fafd0d467940f2086731ff9e9575c7e6d12aaf0b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220411"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807201"
 ---
 # <a name="identity-baseline-template"></a>身分識別基準範本
 
-實作變更的第一個步驟就是溝通所需的變更。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以控制雲端中的身分識別服務。
+實作變更的第一個步驟就是溝通所需變更。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以控制雲端中的身分識別服務。
 
 做為討論進度，請使用此範本的結構作為模型，以取得定義組織身分識別基準原則聲明所需的商務風險、風險承受度、合規性程式和工具。
 
@@ -33,7 +32,7 @@ ms.locfileid: "71220411"
 
 ## <a name="next-steps"></a>後續步驟
 
-穩固的治理做法是從[了解業務風險](./business-risks.md)著手。 檢閱有關業務風險的文章，並開始記載與您目前的雲端採用方案對應的業務風險。
+穩固的治理做法是從[了解業務風險](./business-risks.md)著手。 檢閱有關商務風險的文章，並開始記載與您目前雲端採用方案保持一致的業務風險。
 
 > [!div class="nextstepaction"]
 > [了解業務風險](./business-risks.md)

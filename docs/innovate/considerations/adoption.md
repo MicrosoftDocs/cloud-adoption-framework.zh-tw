@@ -1,6 +1,5 @@
 ---
 title: 透過組建-測量-學習意見反應迴圈建立客戶合作關係
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解如何透過組建-測量-學習意見反應迴圈，建立與客戶之間的合作關係。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 75590b73aff96e3d90ca5103e0ec15e6ad0f0a1e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6dc67f308ea257500e71661585b172f7d3deb61a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047732"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808595"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
 

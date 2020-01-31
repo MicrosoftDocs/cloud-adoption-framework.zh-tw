@@ -1,6 +1,5 @@
 ---
 title: 將 Linux 服務台應用程式重構為 Azure App Service 及適用於 MySQL 的 Azure 資料庫
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Contoso 如何使用適用於 Web 層和 Azure SQL Database 的 GitHub，將內部部署 Linux 應用程式遷移至 Azure App Service，以便重構。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +7,18 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024204"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807456"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>將 Linux 應用程式重構至使用 Azure App Service、流量管理員及適用於 MySQL 的 Azure 資料庫的多個區域
 
 本文說明虛構公司 Contoso 如何重構兩層式以 Linux 為基礎的 Apache MySQL PHP (LAMP) 應用程式，使用 Azure App Service 與 GitHub 的整合和適用於 MySQL 的 Azure 資料庫將其從內部部署遷移至 Azure。
 
-此範例中使用的服務台應用程式 osTicket 是以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [github](https://github.com/osTicket/osTicket) 進行下載。
+此範例中使用的服務台應用程式 osTicket 以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [github](https://github.com/osTicket/osTicket) 進行下載。
 
 ## <a name="business-drivers"></a>商業動機
 
@@ -108,14 +107,14 @@ Contoso 會按照下列方式完成移轉程序：
 
 > [!div class="checklist"]
 >
-> - **步驟 1：佈建 Azure App Service。** Contoso 管理員會在主要和次要區域中佈建 Web 應用程式。
-> - **步驟 2：設定流量管理員。** 他們會在 Web 應用程式前面設定流量管理員，以便路由傳送及平衡流量負載。
-> - **步驟 3：佈建 MySQL。** 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
-> - **步驟 4：遷移資料庫。** 他們會使用 MySQL Workbench 來遷移資料庫。
-> - **步驟 5：設定 GitHub。** 他們會設定應用程式網站/程式碼的本機 GitHub 存放庫。
-> - **步驟 6：部署至 Web 應用程式。** 他們會從 GitHub 部署 Web 應用程式。
+> - **步驟1：布建 Azure App Service。** Contoso 管理員會在主要和次要區域中佈建 Web 應用程式。
+> - **步驟2：設定流量管理員。** 他們會在 Web 應用程式前面設定流量管理員，以便路由傳送及平衡流量負載。
+> - **步驟3：布建 MySQL。** 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
+> - **步驟4：遷移資料庫。** 他們會使用 MySQL Workbench 來遷移資料庫。
+> - **步驟5：設定 GitHub。** 他們會設定應用程式網站/程式碼的本機 GitHub 存放庫。
+> - **步驟6：部署 web 應用程式。** 他們會從 GitHub 部署 Web 應用程式。
 
-## <a name="step-1-provision-azure-app-service"></a>步驟 1:佈建 Azure App Service
+## <a name="step-1-provision-azure-app-service"></a>步驟1：布建 Azure App Service
 
 Contoso 管理員會使用 Azure App Service 佈建兩個 Web 應用程式 (每個區域一個)。
 
@@ -141,7 +140,7 @@ Contoso 管理員會使用 Azure App Service 佈建兩個 Web 應用程式 (每�
 - 了解 [Azure App Service Web 應用程式](https://docs.microsoft.com/azure/app-service/overview)。
 - 了解 [Linux 上的 Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)。
 
-## <a name="step-2-set-up-traffic-manager"></a>步驟 2:設定流量管理員
+## <a name="step-2-set-up-traffic-manager"></a>步驟 2：設定流量管理員
 
 Contoso 管理員會設定流量管理員，將輸入的 Web 要求導向至在 osTicket Web 層上執行的 Web 應用程式。
 
@@ -177,7 +176,7 @@ Contoso 管理員會在主要美國東部 2 區域中，佈建 MySQL 資料庫�
 
 4. 針對 [備份備援選項]，他們會選擇使用 [異地備援]。 此選項可讓他們在發生中斷時，在其次要美國中部區域中還原資料庫。 他們在佈建資料庫時，只能設定這個選項。
 
-    ![備援性](./media/contoso-migration-refactor-linux-app-service-mysql/db-redundancy.png)
+    ![備援](./media/contoso-migration-refactor-linux-app-service-mysql/db-redundancy.png)
 
 5. 他們會設定連線安全性。 在資料庫 > [連線安全性] 中，他們會設定防火牆規則，允許資料庫存取 Azure 服務。
 
@@ -231,7 +230,7 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 
     ![MySQL Workbench](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
 
-## <a name="step-5-set-up-github"></a>步驟 5：設定 GitHub
+## <a name="step-5-set-up-github"></a>步驟 5︰設定 GitHub
 
 Contoso 管理員會建立新的私人 GitHub 存放庫，並設定連到適用於 MySQL 的 Azure 資料庫中 osTicket 資料庫的連線。 然後，他們會將 Web 應用程式載入 Azure App Service 中。
 
@@ -263,7 +262,7 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並設定連到適用�
 
     ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github7.png)
 
-## <a name="step-6-configure-the-web-apps"></a>步驟 6：設定 Web 應用程式
+## <a name="step-6-configure-the-web-apps"></a>步驟6：設定 web 應用程式
 
 在移轉程序的最後一個步驟中，Contoso 管理員會使用 osTicket 網站來設定 Web 應用程式。
 
@@ -303,11 +302,11 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並設定連到適用�
 1. 在 App Service **APP-SRV-EUS2** 中，他們會開啟 [縮放單位]。
 2. 他們以單一規則設定新的自動調整設定，以便在目前執行個體的 CPU 百分比超過 70% 達到 10 分鐘時，將執行個體計數遞增一。
 
-    ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
+    ![自動調整規模](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
 3. 他們會在 **APP-SRV-CUS** 上設定相同的設定，確保應用程式容錯移轉到次要區域時會套用相同的行為。 唯一的差異在於他們將預設執行個體設定為 1，因為這僅適用於容錯移轉。
 
-   ![自動調整](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
+   ![自動調整規模](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 

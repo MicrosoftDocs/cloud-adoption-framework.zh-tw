@@ -1,6 +1,5 @@
 ---
 title: 評估風險承受度
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 說明與雲端轉換相關聯的業務風險
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566053"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806011"
 ---
 # <a name="evaluate-risk-tolerance"></a>評估風險承受度
 

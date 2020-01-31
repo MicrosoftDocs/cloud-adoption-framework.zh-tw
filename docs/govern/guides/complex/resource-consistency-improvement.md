@@ -1,6 +1,5 @@
 ---
 title: 複雜企業的治理指南：改善資源一致性專業領域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複雜企業的治理指南：改善資源一致性專業領域
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683552"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805535"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雜企業的治理指南：改善資源一致性專業領域
 
@@ -77,7 +76,7 @@ ms.locfileid: "72683552"
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量
 
-本文的這一節將會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更會履行新的公司原則聲明。
+本文的這一節將會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
 
 遵循此虛構範例的經驗，假設已發生受保護的資料變更。 在這個最佳做法的基礎上，下列內容將新增作業監控需求，為任務關鍵型應用程式準備訂用帳戶。
 

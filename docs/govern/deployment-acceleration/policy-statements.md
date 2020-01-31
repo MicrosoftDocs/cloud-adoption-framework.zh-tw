@@ -1,6 +1,5 @@
 ---
 title: 部署加速範例原則聲明
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 部署加速範例原則聲明
 author: alexbuckgit
 ms.author: abuck
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752681"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803937"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 
-每個雲端原則聲明都是一個指導方針，用來解決在風險評估流程中識別到的特定風險。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
+個別雲端原則聲明是解決在風險評估流程中識別出的特定風險方針。 這些聲明應該會提供風險的簡明摘要，以及如何處理這些風險的方案。 每個聲明定義都應該包含下列資訊：
 
 - **技術風險：** 此原則將解決的風險摘要。
 - **原則聲明：** 原則需求的清楚摘要說明。
@@ -43,7 +42,7 @@ ms.locfileid: "73752681"
 - 系統將針對所有生產系統和元件找出關鍵計量和診斷量值，而且會將監視與診斷工具套用至這些系統，並由操作人員定期監控。
 - 作業會考慮使用非生產環境（例如預備和 QA）中的監視和診斷工具，在生產環境中發生系統問題之前加以識別。
 
-**潛在的設計選項：** [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor)（包括 Log Analytics 和 Application Insights）提供收集和分析遙測的工具，以協助您瞭解應用程式的執行和主動識別影響它們的問題以及它們所依賴的資源。 此外， [Azure 活動記錄](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)檔會報告在平台層級進行的所有變更，應加以監視並針對不符合規範的變更進行審核。
+**潛在的設計選項：** [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor)（包括 Log Analytics 和 Application Insights）提供收集和分析遙測的工具，以協助您瞭解應用程式的執行方式，並主動識別影響它們的問題及其相依的資源。 此外， [Azure 活動記錄](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)檔會報告在平台層級進行的所有變更，應加以監視並針對不符合規範的變更進行審核。
 
 ## <a name="configuration-security-reviews"></a>設定安全性檢閱
 

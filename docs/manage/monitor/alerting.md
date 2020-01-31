@@ -1,6 +1,5 @@
 ---
 title: 雲端監視指南：警示
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9c13333e6d0e834a4c66d4a1bd6a72ccc9a1bdbb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160286"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807643"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>雲端監視指南：警示
 
@@ -79,7 +78,7 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 [管理解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)通常會將其資料儲存在 Azure 記錄存放區中。 這兩個例外狀況為容器適用於 VM 的 Azure 監視器和 Azure 監視器。 下表描述以特定資料類型和儲存位置為基礎的警示體驗。
 
-方案| Data type | 警示行為
+解決方案| Data type | 警示行為
 :---|:---|:---
 適用於容器的 Azure 監視器 | 從節點和 pod 計算的平均效能資料會寫入計量存放區。 | 如果您想要根據測量的使用量效能變化來警示，請建立計量警示，並在一段時間內匯總。
 || 使用從節點、控制器、容器和 pod 百分位數的計算效能資料，會寫入至記錄存放區。 容器記錄和清查資訊也會寫入至記錄存放區。 | 如果您想要根據叢集和容器的測量使用率變化來警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。

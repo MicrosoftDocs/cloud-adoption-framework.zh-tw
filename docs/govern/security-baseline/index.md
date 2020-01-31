@@ -1,6 +1,5 @@
 ---
 title: 安全性基準專業領域概觀
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全性基準專業領域概觀
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ecea5b28e64004f85b4312a35b78bef81048c050
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565935"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808969"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
@@ -164,4 +163,4 @@ ms.locfileid: "73565935"
 開始評估特定環境中的商務風險。
 
 > [!div class="nextstepaction"]
-> [了解商務風險](./business-risks.md)
+> [了解業務風險](./business-risks.md)

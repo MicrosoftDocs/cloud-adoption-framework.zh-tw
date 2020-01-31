@@ -1,6 +1,5 @@
 ---
 title: 平衡組合
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 精簡您的雲端組合。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159906"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803291"
 ---
 # <a name="balance-the-portfolio"></a>平衡組合
 
@@ -119,7 +118,7 @@ ms.locfileid: "74159906"
 
 在移轉工作內進行程序的最佳化和升階期間，不需要進行額外變更。
 
-## <a name="secure-and-manage-process-changes"></a>保護和管理流程變更
+## <a name="secure-and-manage-process-changes"></a>保護和管理程序變更
 
 在移轉工作內進行程序的保護和管理期間，不需要進行額外變更。
 

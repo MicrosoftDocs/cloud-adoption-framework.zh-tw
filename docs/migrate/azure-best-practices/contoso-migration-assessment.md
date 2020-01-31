@@ -1,6 +1,5 @@
 ---
 title: 評估要移轉至 Azure 的內部部署工作負載
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解 Contoso 如何評定其內部部署機器，以便使用 Azure Migrate 和 Data Migration Assistant 移轉至 Azure。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566479"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807473"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
 
@@ -47,7 +46,7 @@ osTicket<br/><br/> (Contoso 服務台應用程式) | 在含有 MySQL PHP (LAMP) 
 - 每家分公司皆使用企業級連線從本機連到網際網路，並透過 IPsec VPN 通道連回主要資料中心。 此設定可讓 Contoso 的整個網路永久連線，並將網際網路連線最佳化。
 - 主要資料中心已透過 VMware 完全虛擬化。 Contoso 有兩部 ESXi 6.5 虛擬化主機，均由 vCenter Server 6.5 管理。
 - Contoso 使用 Active Directory 來管理身分識別。 Contoso 會使用內部網路上的 DNS 伺服器。
-- 資料中心的網域控制站會在 VMware VM 上執行。 當地分公司的網域控制站會在實體伺服器上執行。
+- 資料中心的網域控制站會在 VMware VM 上執行。 地區分公司的網域控制站會在實體伺服器上執行。
 
 ## <a name="business-drivers"></a>商業動機
 
@@ -71,7 +70,7 @@ Contoso 雲端小組已識別其移轉評量的目標：
 
 Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公司的目標相符，應可提供 Contoso 所需的全部資訊。
 
-技術 | 描述 | 成本
+技術 | 說明 | 成本
 --- | --- | ---
 [資料移轉小幫手](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 Data Migration Assistant 來評定和偵測可能影響其在 Azure 中資料庫功能的相容性問題。 Data Migration Assistant 會評定 SQL 來源和目標之間的功能同位。 其會建議如何改善效能和可靠性。 | Data Migration Assistant 是免費、可下載的工具。
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
@@ -238,14 +237,14 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 4. 在 [開始使用] 中，按一下 [新增工具]。
 
-5. 在 [遷移專案] 中，選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有資源群組的話)。
+5. 在 [Migrate 專案] 中選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有的話)。
 
 6. 在 *[專案詳細資料] 中，指定專案名稱以及要在其中建立專案的地理位置。 支援的地區有美國、亞洲、歐洲、澳大利亞、英國、加拿大、印度和日本。
 
     - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
     - 當您執行移轉時，可以選取任何目的地區域。
 
-7. 按一下 [下一步]。
+7. 按 [下一步]。
 
 8. 在 [選取評估工具] 中，選取 [Azure Migrate：伺服器評估] > [下一步]。
 
@@ -276,7 +275,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
     ```C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]```
 
-    **範例：**
+    **範例︰**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
 3. 產生的雜湊應符合[評估 VMware vm 以進行遷移](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。

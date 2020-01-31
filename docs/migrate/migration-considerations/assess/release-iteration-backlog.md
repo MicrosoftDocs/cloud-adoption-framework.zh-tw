@@ -1,6 +1,5 @@
 ---
 title: 反覆項目和發行待處理項目
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 建置反覆項目和發行待處理項目
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 604ce189a1518f87660d8f29d33413581e9b00f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025410"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802441"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>管理累加移轉工作中的變更
 

@@ -1,6 +1,5 @@
 ---
 title: 準備公司的雲端 IT 原則
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 公司原則與雲端治理之關係的概念說明。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2c8907d3b80d6638ed7330063b231f22ae93943a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b2a260868a873828a1bc47584f479f129b6b255a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223687"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806079"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +23,7 @@ ms.locfileid: "71223687"
 
 雲端採用架構的不同之處在於購買週期，以及該週期如何產生有效的轉換。 由於沒有龐大的基本建設費用收購需求，工程師可以更快開始實驗及採用。 在大部分公司文化中，消除採用的資本支出障礙可能導致回饋循環、有機成長及漸進執行變得緊迫。
 
-雲端採用的移轉，需要是受治理的移轉。 在許多組織中，公司原則轉換透過漸進原則變更和自動化那些變更強制執行 (使用與雲端服務提供者一同設定的新定義能力)，而獲得改善的治理和更高的遵守率。
+雲端採用的移轉，需要是受治理的移轉。 在許多組織中，公司原則轉換透過漸進原則變更和自動化那些變更強制執行 (與雲端服務提供者一同定義的新能力)，而達到改善的治理和更高的遵守率。
 
 本文概述能協助您改變您公司原則的關鍵活動，以啟用展開的治理模型。
 
@@ -45,7 +44,7 @@ ms.locfileid: "71223687"
 > [!TIP]
 > 如果您的組織受第三方合規性治理，要考慮的一個最大業務風險為遵守[法規合規性](./regulatory-compliance.md)的風險。 此風險通常無法補救，反之可能需要嚴格遵守。 開始原則檢閱之前，請務必了解您的第三方合規性需求。
 
-## <a name="an-incremental-approach-to-cloud-governance"></a>雲端治理的漸進方法
+## <a name="an-incremental-approach-to-cloud-governance"></a>雲端治理的漸進式方法
 
 雲端治理的漸進方法假設不可超過[業務風險容忍](./risk-tolerance.md)。 相反地，它假設治理的角色是要加速業務變更、協助工程師了解架構指導方針，並確保定期交流及補救[業務風險](./business-risk.md)。 另一方面，治理的傳統角色可能會變成工程師或業務整體在採用上的障礙。
 

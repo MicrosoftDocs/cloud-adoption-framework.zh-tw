@@ -1,6 +1,5 @@
 ---
 title: 雲端監視指南
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 監視器和 System Center Operations Manager 的概觀
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6c2b4521443e76a9d85b35b78af4d5811091fccc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752789"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807575"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -40,7 +39,7 @@ ms.locfileid: "73752789"
 
 如果您不熟悉 Azure 監視器和 System Center Operations Manager，並希望深入了解其獨特之處和彼此之間如何進行比較，請參閱[監視平台概觀](./platform-overview.md)。
 
-## <a name="audience"></a>對象
+## <a name="audience"></a>適用對象
 
 本指南主要適用於企業系統管理員、IT 作業、IT 安全性和合規性、應用程式架構設計人員、工作負載開發擁有者，以及工作負載作業擁有者。
 
@@ -55,7 +54,7 @@ ms.locfileid: "73752789"
 
 ## <a name="products-and-services"></a>產品與服務
 
-有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 如下：
+有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 其中包括：
 
 * System Center Operations Manager
 * Azure 監視器現在包含 Log Analytics 和 Application Insights

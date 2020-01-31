@@ -1,6 +1,5 @@
 ---
 title: 雲端創新：在 Azure 中將大眾化資料的工具
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 在 Azure 中將大眾化資料的工具
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565848"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808680"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 
@@ -23,7 +22,7 @@ ms.locfileid: "73565848"
 
 ![Democratizing 資料的雲端採用架構方法](../../_images/innovate/democratize-data.png)
 
-## <a name="alignment-to-the-methodology"></a>與方法的對齊
+## <a name="alignment-to-the-methodology"></a>與方法配合
 
 這種類型的數位家發明可透過下列程式的每個階段加速，如上圖所示。 此頁面左側的目錄中會列出加速數位家發明的技術指引。 這些文章會依階段分組，以配合整體方法的指導方針。
 
@@ -48,7 +47,7 @@ ms.locfileid: "73565848"
 - 適用於 MySQL 的 Azure 資料庫
 - 適用於 MariaDB 的 Azure 資料庫
 - 適用於 PostgreSQL 的 Azure 資料庫超大規模資料庫
-- Azure 資料湖
+- Azure Data Lake
 - Azure 資料庫移轉服務
 - Azure SQL Database，包含或不含受控實例
 - Azure Data Factory

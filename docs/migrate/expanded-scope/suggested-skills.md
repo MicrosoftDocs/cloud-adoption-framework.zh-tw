@@ -1,6 +1,5 @@
 ---
 title: 雲端移轉的技能整備程度
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 雲端移轉的技能整備程度
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240255"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802934"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
@@ -57,7 +56,7 @@ ms.locfileid: "73240255"
 - [成本和調整大小](../azure-best-practices/migrate-best-practices-costs.md)：調整大小以配合成本和預算。
 - [升級工作負載](../azure-best-practices/migrate-best-practices-networking.md)：變更網路設定，以將生產使用者重新路由至遷移的工作負載。
 
-## <a name="secure-and-manage-process-changes"></a>保護和管理流程變更
+## <a name="secure-and-manage-process-changes"></a>保護和管理程序變更
 
 下列工具可協助小組尋找保護和管理已遷移資產的方法：
 

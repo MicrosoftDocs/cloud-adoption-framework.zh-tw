@@ -1,6 +1,5 @@
 ---
 title: 建立小組結構
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 建立小組結構
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811096"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800911"
 ---
 # <a name="establish-team-structures"></a>建立小組結構
 
@@ -24,14 +23,14 @@ ms.locfileid: "71811096"
 
 ![組織成熟度週期](../_images/ready/org-ready-maturity.png)
 
-組織結構通常會透過以下所述的一般成熟度模型進行移動:
+組織結構通常會透過以下所述的一般成熟度模型進行移動：
 
 1. [僅限雲端採用小組](#cloud-adoption-team-only)
 2. [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
 3. [中央 IT](#central-it)
 4. [策略性對齊](#strategic-alignment)
 5. [操作對齊](#operational-alignment)
-6. [卓越的雲端中心 (CCoE)](#cloud-center-of-excellence)
+6. [卓越的雲端中心（CCoE）](#cloud-center-of-excellence)
 
 大部分的公司從*雲端採用小組*開始。 不過，我們建議您建立更類似[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構的組織結構。
 
@@ -39,23 +38,23 @@ ms.locfileid: "71811096"
 
 雲端採用小組是所有雲端採用工作的系統核心。 這個小組會驅動可實現採用的技術變更。 根據採用工作的目標，這個團隊可能會包含各種小組成員，負責處理一組廣泛的技術和商務任務。
 
-![雲端採用小組, 搭配治理和安全性小組](../_images/ready/org-ready-adoption-only.png)
+![雲端採用小組，搭配治理和安全性小組](../_images/ready/org-ready-adoption-only.png)
 
-針對小規模或初期採用的工作，這個小組可能會很小，只是一個人。 在較大規模或延遲的工作中，通常會有數個雲端採用小組，每個團隊大約有六位工程師。 不論大小或工作為何，任何雲端採用小組的一致層面，都是提供將解決方案上架到雲端的方法。 對於某些組織來說, 這可能是足夠的組織結構。 [雲端採用小組](./cloud-adoption.md)一文提供深入瞭解雲端採用小組的結構、組合和功能。
+針對小規模或初期採用的工作，這個小組可能會很小，只是一個人。 在較大規模或延遲的工作中，通常會有數個雲端採用小組，每個團隊大約有六位工程師。 不論大小或工作為何，任何雲端採用小組的一致層面，都是提供將解決方案上架到雲端的方法。 對於某些組織來說，這可能是足夠的組織結構。 [雲端採用小組](./cloud-adoption.md)一文提供深入瞭解雲端採用小組的結構、組合和功能。
 
 > [!WARNING]
-> *僅*以雲端採用小組 (或多個雲端採用小組) 操作會被視為*反模式*, 應予以避免。 至少，請考慮[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)。
+> *僅*以雲端採用小組（或多個雲端採用小組）操作會被視為*反模式*，應予以避免。 至少，請考慮[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)。
 
-## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法: 最基本的可行產品 (MVP)
+## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法：最基本的可行產品（MVP）
 
 我們建議您有兩個小組在雲端採用工作之間建立平衡。 這兩個小組會負責進行採用工作中的各種功能。
 
 - **雲端採用小組：** 這個小組負責所採用之解決方案的技術解決方案、商務對齊、專案管理和作業。
-- **雲端治理小組:** 為了平衡雲端採用小組, 雲端治理小組致力於確保所採用解決方案的卓越程度。 雲端治理小組負責平臺成熟度、平臺營運、治理和自動化。
+- **雲端治理小組：** 為了平衡雲端採用小組，雲端治理小組致力於確保所採用解決方案的卓越程度。 雲端治理小組負責平臺成熟度、平臺營運、治理和自動化。
 
 ![雲端治理平衡的雲端採用](../_images/ready/org-ready-best-practice.png)
 
-這個經過證實的方法被視為 MVP，因為它可能不是持續性的。 每個小組都會戴上許多的帽子, 如責任、參與、 [*諮詢、通知*(RACI) 圖表](./raci-alignment.md)中所述。
+這個經過證實的方法被視為 MVP，因為它可能不是持續性的。 每個小組都會戴上許多的帽子，如責任、參與、 [*諮詢、通知*（RACI）圖表](./raci-alignment.md)中所述。
 
 下列各節將描述一個完全配備的已證明組織結構，以及將適當結構對齊至您組織的方法。
 

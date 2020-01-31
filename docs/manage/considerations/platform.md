@@ -1,6 +1,5 @@
 ---
 title: 平臺作業-雲端管理和作業
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 平臺作業-雲端管理和作業
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6a2cf644a7c046dfb62f6049c2eae6b283e6552b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 15531346d453bca72c74c09d9bc95eef8d4c9ac3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565083"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807728"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 

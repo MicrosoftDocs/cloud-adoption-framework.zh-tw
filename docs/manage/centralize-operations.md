@@ -1,6 +1,5 @@
 ---
 title: 集中化管理作業
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 集中管理作業的指引
 author: JnHs
 ms.author: jenhayes
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b88a1541a2f96dbd4b8d63572e44d493bce8cc45
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: a02e5804bd2ea18bd385634cbab57b21c8427bba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979948"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807881"
 ---
 # <a name="centralize-management-operations"></a>集中化管理作業
 
@@ -30,8 +29,8 @@ ms.locfileid: "72979948"
 
 例如，假設您的組織有一個租使用者*a*。然後，組織會取得兩個額外的*租使用者 B*和租使用者*C*，而且您有商業理由要求您將其維護為個別的租使用者。
 
-您的組織想要在所有租使用者中使用相同的原則定義、備份實務和安全性程式。 因為您已經有負責在租使用者 A 中執行這些工作的使用者（包括使用者群組和服務主體），所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的這些訂用帳戶可以執行這些作業任務. 然後，租使用者 A 會成為租使用者 B 和租使用者 C 的管理租使用者。
+貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有負責在租使用者 A 中執行這些工作的使用者（包括使用者群組和服務主體），所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的這些訂用帳戶可以執行這些作業任務. 然後，租使用者 A 會成為租使用者 B 和租使用者 C 的管理租使用者。
 
-![租使用者中的使用者管理租使用者 B 和租使用者 C 中的資源](../_images/manage/enterprise-azure-lighthouse.jpg)
+![租用戶 A 中的使用者管理租用戶 B 和租用戶 C 中的資源](../_images/manage/enterprise-azure-lighthouse.jpg)
 
 如需詳細資訊，請參閱[企業案例中的 Azure 燈塔](https://docs.microsoft.com/azure/lighthouse/concepts/enterprise)。

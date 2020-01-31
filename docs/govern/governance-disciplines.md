@@ -1,6 +1,5 @@
 ---
 title: 雲端治理的五個專業領域
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解雲端採用架構中的五個雲端治理專業領域。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f072870caf18eb460ccc3a34e02d7d1f44872406
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 022fafd48ae9c03ef8c2b19f7b966a73cab70081
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223154"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806334"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>雲端治理的五個專業領域
 

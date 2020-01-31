@@ -1,6 +1,5 @@
 ---
 title: 在 Azure 中多個小組的治理設計
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 為多個小組、多個工作負載和多個環境設定 Azure 治理控制項的指導方針。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160472"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804294"
 ---
 # <a name="governance-design-for-multiple-teams"></a>多個小組的控管設計
 
@@ -140,7 +139,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 2. **生產環境：** 代表多個生產工作負載的多個資源群組。 這些資源是用來裝載私人和公用對向的應用程式成品。 這些資源通常有最嚴謹的治理和安全性模型，以防止未經授權存取資源、應用程式程式碼和資料。
 3. **生產前環境：** 代表多個非生產就緒工作負載的多個資源群組。 這些資源是用來進行開發和測試。這些資源可能會有更寬鬆的治理模型，讓開發人員更具靈活性。 這些群組內的安全性應該會增加更接近「生產」應用程式開發進程的情況。
 
-針對這三種環境，需要依**工作負載擁有者**、**環境**或兩者來追蹤成本資料。 也就是說，您會想要知道**共用基礎結構**的持續成本、**生產**前和**生產**環境中個人所產生的成本，最後是**生產** **前和的整體成本生產**環境。
+針對這三種環境，需要依**工作負載擁有者**、**環境**或兩者來追蹤成本資料。 也就是說，您會想要知道**共用基礎結構**的持續成本、預先**生產**和**生產**環境中個人所產生的成本，最後是**生產**前和**生產**環境的整體成本。
 
 您已了解資源分成兩個層級：**訂用帳戶**和**資源群組**。 因此，第一個決策是如何依據**訂用帳戶**來組織環境。 只有兩種可能性：單一訂用帳戶或多個訂用帳戶。
 
@@ -260,7 +259,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 6. 建立**工作負載擁有者**的核准程序，以要求建立資源群組。 核准程序的實作方式有許多種，例如透過電子郵件，或者您可以使用如 [SharePoint 工作流程](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)的處理程序管理工具。 核准程序可以依照下列步驟：
     - **工作負載擁有者**為**開發**環境、**生產**環境或兩者中的必要 Azure 資源準備用料表，並且將它提交給**訂用帳戶擁有者**。
     - **訂用帳戶擁有者**檢閱用料表並驗證要求的資源，以確保要求的資源適合其規劃使用，例如，檢查要求的[虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)正確無誤。
-    - 如果要求未獲得核准，**工作負載擁有者**會收到通知。 如果要求通過核准，**訂用帳戶擁有者**會遵循貴組織的[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)來[建立要求的資源群組](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)，[新增**工作負載擁有者**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有[**參與者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的**工作負載擁有者**。
+    - 如果要求未獲得核准，**工作負載擁有者**會收到通知。 如果要求經過核准，**訂**用帳戶擁有者會依照您組織的[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)[建立要求的資源群組](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)、新增具有[**參與者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)[的**工作負載擁有**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)者，並將通知傳送給已建立資源群組的**工作負載擁有**者。
 7. 為工作負載擁有者建立核准程序，以要求來自共用基礎結構擁有者的虛擬網路對等互連連線。 如同上一個步驟，這個核准程序可以使用電子郵件或處理程序管理工具來實作。
 
 既然您已實作治理模型，您可以部署共用基礎結構服務。

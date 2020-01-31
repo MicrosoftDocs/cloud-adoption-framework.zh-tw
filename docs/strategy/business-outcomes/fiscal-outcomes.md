@@ -1,6 +1,5 @@
 ---
 title: 財會結果範例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 財會結果範例
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 350b13e993d2130dc72482cbe7cafb3823b6a4d8
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048375"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806844"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 

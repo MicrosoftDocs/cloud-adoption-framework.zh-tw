@@ -1,6 +1,5 @@
 ---
 title: 套用設計原則和先進作業
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 套用設計原則和先進作業
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752755"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807677"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和先進作業
 
@@ -90,13 +89,13 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 若要協助改善系統設計，請深入瞭解[Azure 架構](https://docs.microsoft.com/azure/architecture/guide/pillars)架構。 當您的系統設計改善時，請回到本文以尋找新的機會來改善並調整您環境中的改善。
 
-### <a name="automated-remediation"></a>自動修復
+### <a name="automated-remediation"></a>自動補救
 
 某些技術債務無法或不應解決。 解決方案可能需要太大的成本，所以就未矯正。 這可能會進行規劃，但可能會有較長的專案持續時間。 業務中斷可能不會對業務造成重大影響，或企業優先順序是快速復原，而不是投資彈性。
 
 當技術債務的解決方案不是企業想要走的途徑時，接下來他們通常會想要採用自動化補救。 使用 Azure 自動化和 Azure 監視器來偵測趨勢並提供自動化補救功能，是最常見的自動化補救方法。
 
-如需自動補救的指引，請參閱[Azure 自動化和警示](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook)。
+如需自動補救的指引，請參閱 [Azure 自動化和警示](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook)。
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>使用服務類別目錄來擴展解決方案
 
