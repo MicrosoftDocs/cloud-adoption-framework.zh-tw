@@ -1,18 +1,18 @@
 ---
 title: 平衡組合
-description: 精簡您的雲端組合。
+description: 探索平衡遷移、創新和實驗的策略，以充分運用您的雲端遷移工作。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d317ea1af4dae3d09d62eb39ebd057ab953341bd
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803291"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994207"
 ---
 # <a name="balance-the-portfolio"></a>平衡組合
 
