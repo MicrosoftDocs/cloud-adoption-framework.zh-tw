@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 152f8c13184ae367f982b6188d21f3dca2849cd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799075"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173378"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 

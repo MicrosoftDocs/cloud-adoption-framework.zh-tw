@@ -1,18 +1,18 @@
 ---
 title: 什麼是數位資產？
-description: 什麼是數位資產？
+description: 了解什麼是數位資產、如何測量，以及如何更新財務模型以反映您的數位資產。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a9e691016cba5fa33a16d92278c34c9bf02cdf96
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 380c50bdf55da7616d274ff038ec25d73c065459
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804617"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173345"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -1,6 +1,6 @@
 ---
 title: 評估數位資產
-description: 評估數位資產
+description: 這節的 Azure 移轉指南可協助您評估環境，以判斷應該遷移的內容，以及要考慮哪些遷移方法。
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807065"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173392"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 

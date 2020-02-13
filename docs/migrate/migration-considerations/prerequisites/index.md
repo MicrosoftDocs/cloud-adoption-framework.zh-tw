@@ -1,18 +1,18 @@
 ---
 title: 移轉的必要條件
-description: 移轉的必要條件
+description: 了解協助您準備移轉至雲端的必要條件，並協助您避免發生移轉失敗的常見原因。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f8fe1be35e1f629da3f57e1344b573e97ff571b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb7d0c8b0ee6ebd328ffd4807199e0b0e2620d35
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801455"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173327"
 ---
 # <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 
