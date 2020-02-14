@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
+ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799840"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77213587"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
@@ -59,13 +59,13 @@ ms.locfileid: "76799840"
 
 請盡量縮短命名元件的長度，避免超過資源名稱的長度限制。
 
-| 命名元件 | 說明 | 範例 |
+| 命名元件 | 描述 | 範例 |
 | --- | --- | --- |
 | 業務單位 | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 | _fin_, _mktg_, _product_, _it_, _corp_ |
 | 訂用帳戶類型 | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。 | _生產_、_共用_、_用戶端_ |
 | 應用程式或服務名稱 | 資源所屬應用程式、工作負載或服務的名稱。 | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
 | 部署環境 | 資源所支援工作負載的開發週期階段。 | _生產_、_開發_、 _qa_、_階段_、_測試_ |
-| 地區 | 部署資源所在的 Azure 區域。 | _westus_、 _eastus2_、 _westeurope_、 _usgovia_ |
+| 區域 | 部署資源所在的 Azure 區域。 | _westus_、 _eastus2_、 _westeurope_、 _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>建議的資源類型首碼
 
@@ -132,7 +132,7 @@ ms.locfileid: "76799840"
 
 您要套用至資源的標記，以及必要標記或選擇性標記的判定，會因為組織不同而有所差異。 下列清單提供可捕捉資源重要內容和相關資訊的常見標記範例。 請使用此清單作為建立您自有標記慣例的起點。
 
-| 標記名稱                  | 說明                                                                                                                                                                                                    | 索引鍵               | 範例值                                   |
+| 標記名稱                  | 描述                                                                                                                                                                                                    | Key               | 範例值                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
 | 應用程式名稱          | 與資源相關聯的應用程式、服務或工作負載名稱。                                                                                                                                 | _ApplicationName_ | _{應用程式名稱}_                                    |
 | 核准者名稱             | 負責核准此資源相關成本的人員。                                                                                                                                               | _Approver_        | _{電子郵件}_                                       |
@@ -144,7 +144,7 @@ ms.locfileid: "76799840"
 | 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                              | _Env_             | _生產_、_開發_、 _QA_、_階段_、_測試_                    |
 | 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                | _擁有者_           | _{電子郵件}_                                       |
 | 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                          | _Requestor_       | _{電子郵件}_                                       |
-| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                       | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                     |
+| Service 類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                       | _ServiceClass_    | _Dev_，_銅_，_銀_，git_金_                     |
 | 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                           | _StartDate_       | _{日期}_                                        |
 
 ## <a name="sample-naming-convention"></a>命名慣例的範例
@@ -157,13 +157,13 @@ ms.locfileid: "76799840"
 
 | 資產類型   | 範圍                        | [格式]                                             | 範例                                     |
 |--------------|------------------------------|----------------------------------------------------|----------------------------------------------|
-| 訂閱 | 帳戶/Enterprise 合約 | \<業務單位\>-\<訂用帳戶名稱\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
+| 訂用帳戶 | 帳戶/Enterprise 合約 | \<業務單位\>-\<訂用帳戶名稱\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
 
 ### <a name="resource-groups"></a>資源群組
 
 | 資產類型     | 範圍        | [格式]                                                     | 範例                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 資源群組 | 訂閱 | rg\<應用程式或服務名稱\>-\<訂用帳戶類型\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| 資源群組 | 訂用帳戶 | rg\<應用程式或服務名稱\>-\<訂用帳戶類型\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>虛擬網路
 
@@ -183,24 +183,24 @@ ms.locfileid: "76799840"
 | 資產類型         | 範圍          | [格式]                                                              | 範例                                                                             |
 |--------------------|----------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | Azure 虛擬機器    | 資源群組 | vm\<原則名稱或應用程式名稱\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| VM 儲存體帳戶 | 全球         | stvm\<效能類型\>\<應用程式名稱或產品名稱\>\<區域\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
-| DNS 標籤          | 全球         | \<M 的記錄\>.[\<區域\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
-| Azure Load Balancer      | 資源群組 | lb-\<應用程式名稱或角色\>\<環境\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
+| VM 儲存體帳戶 | 全域         | stvm\<效能類型\>\<應用程式名稱或產品名稱\>\<區域\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| DNS 標籤          | 全域         | \<M 的記錄\>.[\<區域\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
+| Azure 負載平衡器      | 資源群組 | lb-\<應用程式名稱或角色\>\<環境\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
 | NIC                | 資源群組 | nic-\<\#\#\>-\<VM 名稱\>-\<訂用帳戶\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
 
 ### <a name="paas-services"></a>PaaS 服務
 
 | 資產類型           | 範圍  | [格式]                                                              | 範例                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | 全球 | 應用程式\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Functions      | 全球 | func-\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure 雲端服務 | 全球 | \<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | 全域 | 應用程式\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions      | 全域 | func-\<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure 雲端服務 | 全域 | \<應用程式名稱\>-\<環境\>-\<\#\#\#\>。[{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure 服務匯流排
 
 | 資產類型         | 範圍       | [格式]                                                     | 範例                           |
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
-| Azure 服務匯流排        | 全球      | sb-\<應用程式名稱\>-\<環境\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
+| Azure 服務匯流排        | 全域      | sb-\<應用程式名稱\>-\<環境\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Azure 服務匯流排佇列 | 服務匯流排 | sbq-\<查詢描述項\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
 | Azure 服務匯流排主題 | 服務匯流排 | sbt-\<查詢描述項\>                                   | <ul><li>sbt-messagequery</li></ul>                   |
 
@@ -208,28 +208,28 @@ ms.locfileid: "76799840"
 
 | 資產類型                          | 範圍              | [格式]                                | 範例                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Azure SQL Database 伺服器           | 全球             | sql\<應用程式名稱\>-\<環境\>      | <ul><li>sql-navigator-生產環境 </li><li>sql-排放-開發</li></ul>           |
+| Azure SQL Database 伺服器           | 全域             | sql\<應用程式名稱\>-\<環境\>      | <ul><li>sql-navigator-生產環境 </li><li>sql-排放-開發</li></ul>           |
 | Azure SQL Database                  | Azure SQL Database | sqldb-\<資料庫名稱 >-\<環境\>| <ul><li>sqldb-使用者-生產環境 </li><li>sqldb-使用者-開發人員</li></ul>               |
-| Azure Cosmos DB                     | 全球             | cosmos-\<應用程式名稱\>-\<環境\>   | <ul><li>cosmos-navigator-生產環境 </li><li>cosmos-排放-開發</li></ul>       |
-| Azure Cache for Redis               | 全球             | redis-\<應用程式名稱\>-\<環境\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
-| 適用於 MySQL 的 Azure 資料庫            | 全球             | mysql-\<應用程式名稱\>-\<環境\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
-| 適用於 PostgreSQL 的 Azure 資料庫       | 全球             | psql-\<應用程式名稱\>-\<環境\>     | <ul><li>psql-navigator-生產環境 </li><li>psql-排放-開發</li></ul>         |
-| Azure SQL 資料倉儲            | 全球             | sqldw-\<應用程式名稱\>-\<環境\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | 全域             | cosmos-\<應用程式名稱\>-\<環境\>   | <ul><li>cosmos-navigator-生產環境 </li><li>cosmos-排放-開發</li></ul>       |
+| Azure Cache for Redis               | 全域             | redis-\<應用程式名稱\>-\<環境\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
+| 適用於 MySQL 的 Azure 資料庫            | 全域             | mysql-\<應用程式名稱\>-\<環境\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
+| 適用於 PostgreSQL 的 Azure 資料庫       | 全域             | psql-\<應用程式名稱\>-\<環境\>     | <ul><li>psql-navigator-生產環境 </li><li>psql-排放-開發</li></ul>         |
+| Azure SQL 資料倉儲            | 全域             | sqldw-\<應用程式名稱\>-\<環境\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
 | SQL Server Stretch Database         | Azure SQL Database | sqlstrdb-\<應用程式名稱\>-\<環境\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
 ### <a name="storage"></a>儲存體
 
 | 資產類型                              | 範圍  | [格式]                                                                        | 範例                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
-| Azure 儲存體帳戶 - 一般用途     | 全球 | st\<儲存體名稱\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
-| Azure 儲存體帳戶 - 診斷記錄 | 全球 | stdiag\<訂用帳戶名稱的前兩個字母和數字\>\<區域\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| Azure StorSimple                        | 全球 | ssimp\<應用程式名稱\>\<環境\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure 儲存體帳戶 - 一般用途     | 全域 | st\<儲存體名稱\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
+| Azure 儲存體帳戶 - 診斷記錄 | 全域 | stdiag\<訂用帳戶名稱的前兩個字母和數字\>\<區域\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
+| Azure StorSimple                        | 全域 | ssimp\<應用程式名稱\>\<環境\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
 ### <a name="ai--machine-learning"></a>AI + 機器學習服務
 
 | 資產類型                       | 範圍          | [格式]                            | 範例                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
-| Azure 搜尋服務                     | 全球         | srch-\<應用程式名稱\>-\<環境\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
+| Azure 搜尋服務                     | 全域         | srch-\<應用程式名稱\>-\<環境\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
 | Azure 認知服務         | 資源群組 | 齒輪-\<應用程式名稱\>-\<環境\>   | <ul><li>齒輪-navigator-生產環境 </li><li>齒輪-排放-開發</li></ul>     |
 | Azure Machine Learning 工作區 | 資源群組 | mlw-\<應用程式名稱\>-\<環境\>   | <ul><li>mlw-navigator-生產環境 </li><li>mlw-排放-開發</li></ul>     |
 
@@ -237,21 +237,21 @@ ms.locfileid: "76799840"
 
 | 資產類型                | 範圍  | [格式]                             | 範例                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
-| Azure Data Factory        | 全球 | adf-\<應用程式名稱\>\<環境\>    | <ul><li>adf-navigator-生產環境 </li><li>adf-排放-開發</li></ul>     |
-| Azure Data Lake 儲存體   | 全球 | dls\<應用程式名稱\>\<環境\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
-| Azure Data Lake Analytics | 全球 | dla\<應用程式名稱\>\<環境\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
-| Azure HDInsight - Spark   | 全球 | hdis-\<應用程式名稱\>-\<環境\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
-| Azure HDInsight - Hadoop  | 全球 | hdihd-\<應用程式名稱\>-\<環境\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
-| Azure HDInsight - R Server| 全球 | hdir-\<應用程式名稱\>-\<環境\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
-| Azure HDInsight - HBase   | 全球 | hdihb-\<應用程式名稱\>-\<環境\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
-| Power BI Embedded         | 全球 | pbi-\<應用程式名稱\>\<環境\>    | <ul><li>pbi-navigator-生產環境 </li><li>pbi-排放-開發</li></ul> |
+| Azure Data Factory        | 全域 | adf-\<應用程式名稱\>\<環境\>    | <ul><li>adf-navigator-生產環境 </li><li>adf-排放-開發</li></ul>     |
+| Azure Data Lake 儲存體   | 全域 | dls\<應用程式名稱\>\<環境\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
+| Azure Data Lake Analytics | 全域 | dla\<應用程式名稱\>\<環境\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
+| Azure HDInsight - Spark   | 全域 | hdis-\<應用程式名稱\>-\<環境\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
+| Azure HDInsight - Hadoop  | 全域 | hdihd-\<應用程式名稱\>-\<環境\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
+| Azure HDInsight - R Server| 全域 | hdir-\<應用程式名稱\>-\<環境\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
+| Azure HDInsight - HBase   | 全域 | hdihb-\<應用程式名稱\>-\<環境\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
+| Power BI Embedded         | 全域 | pbi-\<應用程式名稱\>\<環境\>    | <ul><li>pbi-navigator-生產環境 </li><li>pbi-排放-開發</li></ul> |
 
 ### <a name="data-streams--internet-of-things-iot"></a>資料流程/物聯網（IoT）
 
 | 資產類型                         | 範圍          | [格式]                             | 範例                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
 | Azure 串流分析             | 資源群組 | asa-\<應用程式名稱\>-\<環境\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
-| Azure IoT 中心                      | 全球         | iot\<應用程式名稱\>-\<環境\>   | <ul><li>iot-navigator-生產環境 </li><li>iot-排放-開發</li></ul>     |
-| Azure 事件中樞                   | 全球         | evh-\<應用程式名稱\>-\<環境\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure 通知中樞            | 資源群組 | pubnames.ntf-\<應用程式名稱\>-\<環境\>   | <ul><li>pubnames.ntf-navigator-生產環境 </li><li>pubnames.ntf-排放-開發</li></ul>     |
-| Azure 通知中樞命名空間  | 全球         | ntfns-\<應用程式名稱\>-\<環境\> | <ul><li>ntfns-navigator-生產環境 </li><li>ntfns-排放-開發</li></ul> |
+| Azure IoT 中樞                      | 全域         | iot\<應用程式名稱\>-\<環境\>   | <ul><li>iot-navigator-生產環境 </li><li>iot-排放-開發</li></ul>     |
+| Azure 事件中心                   | 全域         | evh-\<應用程式名稱\>-\<環境\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure 通知中心            | 資源群組 | pubnames.ntf-\<應用程式名稱\>-\<環境\>   | <ul><li>pubnames.ntf-navigator-生產環境 </li><li>pubnames.ntf-排放-開發</li></ul>     |
+| Azure 通知中樞命名空間  | 全域         | ntfns-\<應用程式名稱\>-\<環境\> | <ul><li>ntfns-navigator-生產環境 </li><li>ntfns-排放-開發</li></ul> |
