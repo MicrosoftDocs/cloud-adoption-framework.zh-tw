@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804481"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413194"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -69,7 +69,7 @@ ms.locfileid: "76804481"
                     </div>
                     <div class="cardText">
                         <h3>可靠的架構（復原）</h3>
-                        <p>在雲端中建置可靠的應用程式不同於傳統應用程式的開發。 儘管您在過去可能已購買更高階的硬體來相應增加，但在雲端環境中，您應進行相應放大而不是相應增加。 此目標不是試著完全避免失敗，而是將單一故障元件的影響降至最低。</p>
+                        <p>在雲端中建置可靠的應用程式不同於傳統應用程式的開發。 雖然在過去，您可能已經購買了多餘的高階硬體層級，以將整個應用程式平臺失敗的機率降到最低。 在雲端中，我們事先承認會發生失敗。 此目標不是試著完全避免失敗，而是將單一故障元件的影響降至最低。</p>
                     </div>
                 </div>
             </div>
