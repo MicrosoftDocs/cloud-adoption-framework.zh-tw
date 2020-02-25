@@ -1,6 +1,6 @@
 ---
-title: 標準企業治理指南：改善資源一致性
-description: 標準企業治理指南：改善資源一致性
+title: 標準企業治理：改善資源一致性
+description: 藉由在適用于 Azure 的 Microsoft Cloud 採用架構中新增復原、調整大小和監視控制項，改善治理基準並補救資源管理風險。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805994"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567668"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準企業治理指南：改善資源一致性
 

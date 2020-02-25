@@ -1,6 +1,6 @@
 ---
-title: 資源一致性的計量、指標及風險承受度
-description: 資源一致性的計量、指標及風險承受度
+title: 資源一致性風險承受度計量和指示器
+description: 在 Azure 的 Microsoft Cloud 採用架構中，量化與資源一致性相關的商務風險承受度。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805144"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567719"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>資源一致性的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為這與資源一致性相關。 定義計量和指標可協助您建立商務案例，藉此讓資源一一致性專業領域變得更完善。
 
-## <a name="metrics"></a>計量
+## <a name="metrics"></a>度量
 
 資源一致性專業領域著重於解決與雲端部署的作業管理相關的風險。 若要進行風險分析，您可以收集與 IT 作業相關的資料，以判斷要面對多少風險，以及針對您規劃的雲端部署投資資源一致性治理有多重要。
 

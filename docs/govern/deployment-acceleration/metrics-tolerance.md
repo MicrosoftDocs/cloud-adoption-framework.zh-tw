@@ -1,6 +1,6 @@
 ---
-title: 部署加速的計量、指標及風險承受度
-description: 部署加速的計量、指標及風險承受度
+title: 部署加速風險承受度計量和指示器
+description: 在適用于 Azure 的 Microsoft Cloud 採用架構中，量化與部署加速相關的商務風險承受度。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 26bbcd201d699c8f58d51bb4f83582417127fcbb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 18efcb5d46041a0fa87327832c0a4d819d0917b5
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804022"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567702"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>部署加速的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為這與部署加速有關。 定義計量和指標可協助您建立商務案例，藉此讓部署加速專業領域變得更完善。
 
-## <a name="metrics"></a>計量
+## <a name="metrics"></a>度量
 
 部署加速專業領域著重于如何設定、部署、更新和維護雲端資源的相關風險。 在採用此雲端治理專業領域時，下列資訊會很有用：
 
