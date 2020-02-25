@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
+ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803716"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599977"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -152,7 +152,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - [比較](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) Blob、檔案與磁碟儲存體資料類型。
 - [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)存取層。
 - [檢閱](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)不同類型的儲存體帳戶。
-- 了解[儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)、[LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), 與[讀取權限 GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage)。
+- 了解[儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)、[LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), 與[讀取權限 GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region)。
 - [深入了解](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) Azure 檔案。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>最佳做法：利用 Azure 混合式權益
