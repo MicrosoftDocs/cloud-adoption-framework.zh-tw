@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566679"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629210"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566679"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Azure 虛擬資料中心：網路觀點</a></h3>
-        <p>此線上文章概述可用來解決許多客戶在考慮移至雲端時所面臨之架構規模、效能和安全性問題的網路模式和設計。</p>
+        <h3><a href="./networking-vdc.md">虛擬資料中心：網路觀點</a></h3>
+        <p>這一份網路模式與設計的總覽，可解決客戶在規劃大規模雲端遷移時所面臨的架構規模、效能和安全性考慮。</p>
     </td>
 </tr>
 <tr>

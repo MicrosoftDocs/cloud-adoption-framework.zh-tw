@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798786"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629244"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -86,7 +86,7 @@ Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群�
 
 設計良好的管理群組，以及 Azure 原則和計畫，這是 Azure 的有效率治理骨幹。
 
-### <a name="subscriptions"></a>訂閱
+### <a name="subscriptions"></a>訂用帳戶
 
 在決定您的部門及帳戶 (或管理群組) 時，您會優先探討如何分配 Azure 環境以符合您的組織。 不過，訂用帳戶是實際工作的發生位置，而您在這裡的決策會影響安全性、擴充性和計費。 許多組織會查看下列模式來作為他們的指引：
 
@@ -162,7 +162,7 @@ Scaffold 的第二個要件包含使用[Azure 原則和計畫](https://docs.micr
 
 在此 [GitHub](https://github.com/Azure/azure-policy) 存放庫上，您可以找到多個示範原則和計畫如何套用至在 Azure 中各種資源的範例。
 
-## <a name="identity-and-access-management"></a>身分識別與存取管理
+## <a name="identity-and-access-management"></a>身分識別和存取管理
 
 開始使用公用雲端時，您會問自己的首要問題之一 (也是最重要的) 就是「誰應該有資源的存取權？」 以及「如何控制此存取權？」 在入口網站中控制對 Azure 入口網站和資源的存取，對於您在雲端中資產的長期安全而言，是不可或缺的。
 
@@ -338,7 +338,7 @@ Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
-Azure 會提供內部功能和來自廣泛合作夥伴網路的第三方功能，讓您擁有有效的安全性保障。 更重要的是，Microsoft 以[Azure 虛擬資料中心（VDC）](./networking-vdc.md)的形式提供最佳做法和指導方針。 當您從單一工作負載移到使用混合式功能的多個工作負載時，VDC 指引會提供您「配方」，讓您有彈性的網路，隨著您在 Azure 中的工作負載成長而成長。
+Azure 提供廣泛合作夥伴網路的內部和協力廠商功能，讓您有有效的安全性策略。 更重要的是，Microsoft 以[Azure 虛擬資料中心（VDC）](./networking-vdc.md)的形式提供最佳做法和指導方針。 當您從單一工作負載移到使用混合式功能的多個工作負載時，VDC 指引會提供您「配方」，讓您有彈性的網路，隨著您在 Azure 中的工作負載成長而成長。
 
 ## <a name="next-steps"></a>後續步驟
 
