@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173392"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567736"
 ---
 # <a name="assess-the-digital-estate"></a>評估數位資產
 
@@ -24,7 +24,7 @@ ms.locfileid: "77173392"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[工具](#tab/Tools)
+# <a name="tools"></a>[工具](#tab/Tools)
 
 下列工具可協助您評估環境，以判斷其是否適合進行移轉以及可使用的最佳方法。 如需如何選擇適當工具以支援移轉工作的實用資訊，請參閱[雲端採用架構的移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)。
 
@@ -51,7 +51,7 @@ Azure Migrate 服務會評估要移轉至 Azure 的內部部署基礎結構、�
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 - [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[案例和專案關係人](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[案例和專案關係人](#tab/Scenarios)
 
 ## <a name="scenarios"></a>案例
 
@@ -105,7 +105,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 如需如何讓組織準備好進行雲端移轉工作的詳細資訊，請參閱雲端採用架構關於[初始組織配合](../../plan/initial-org-alignment.md)的文章。
 
-# <a name="timelinestabtimelines"></a>[時間表](#tab/Timelines)
+# <a name="timelines"></a>[時間表](#tab/Timelines)
 
 一般而言，客戶會發現本指南所說明的移轉案例可以在 1 到 6 個月內完成。
 
@@ -117,7 +117,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 - **變更管理：** 貴公司是否有關於變更實作和核准的特定需求？
 - **部門法規：** 您是否必須遵守部門或企業法規？
 
-# <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
+# <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
 當您評估環境時，這會提供絕佳機會讓您得以納入成本分析步驟。 使用評估活動所收集的資料，您應該就能夠分析和預測成本。 除了任何一次性成本 (例如，增加的資料輸入) 外，此成本預測也應同時納入取用服務成本。
 
