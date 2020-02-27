@@ -1,6 +1,6 @@
 ---
 title: 軟體定義網路：混合式網路
-description: 討論混合式網路如何讓雲端虛擬網路連接到內部部署資源。
+description: 使用適用于 Azure 的雲端採用架構，瞭解混合式網路如何將雲端虛擬網路連接到內部部署資源。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f84dcbd1a215a34e2b05b63db2a08f64dca34a4b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806606"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708541"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>軟體定義網路：混合式網路
 
@@ -41,7 +41,7 @@ ms.locfileid: "76806606"
 - 調整混合式雲端環境內工作負載的數量和大小，可以對路由和流量管理增加大幅複雜性。
 - 您必須開發相容的管理和存取控制原則，以維護整個組織一致的治理。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 如需 Azure 中混合式網路功能的詳細資訊，請參閱：
 

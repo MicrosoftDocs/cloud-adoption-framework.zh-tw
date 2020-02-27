@@ -1,6 +1,6 @@
 ---
 title: 資源一致性原則聲明範例
-description: 資源一致性原則聲明範例
+description: 使用適用于 Azure 的雲端採用架構，取得可協助您草擬組織原則聲明的範例資源一致性原則聲明。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807252"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708133"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 

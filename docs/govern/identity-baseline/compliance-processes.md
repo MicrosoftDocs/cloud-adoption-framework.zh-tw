@@ -1,6 +1,6 @@
 ---
 title: 身分識別基準原則合規性流程
-description: 身分識別基準原則合規性流程
+description: 使用適用于 Azure 的雲端採用架構，學習建立支援身分識別基準治理專業領域之程式的方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba23836fdcfcd8dee6f90707487142f755e525b8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807150"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706978"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>身分識別基準原則合規性流程
 

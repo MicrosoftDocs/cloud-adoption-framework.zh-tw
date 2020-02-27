@@ -1,6 +1,6 @@
 ---
-title: 在 Azure 中多個小組的治理設計
-description: 為多個小組、多個工作負載和多個環境設定 Azure 治理控制項的指導方針。
+title: Azure 中的多個小組治理設計
+description: 尋找為多個小組、多個工作負載和多個環境設定 Azure 治理控制項的指導方針。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804294"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709578"
 ---
 # <a name="governance-design-for-multiple-teams"></a>多個小組的控管設計
 
@@ -176,7 +176,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
     ![加入參與者](../../_images/govern/design/governance-3-3.png)
 6. 第一個**工作負載擁有者**會在其中包含一組虛擬機器的兩個資源群組中，建立虛擬網路。 第一個**工作負載擁有者**會將 environment 和 managedBy 標記套用至所有資源。 請注意，Azure 服務限制計數器現在剩餘 997 個虛擬網路。
     建立虛擬網路](../../_images/govern/design/governance-3-4.png) ![
-7. 每個虛擬網路在建立時，並沒有與內部部署的連線。 在這種類型的架構中，每個虛擬網路必須對等互連至**共用基礎結構**環境中的 hub-vnet。 虛擬網路對等互連會建立兩個不同虛擬網路之間的連線，並且允許網路流量在兩者之間傳送。 請注意，虛擬網路對等互連原本並非可轉移。 必須在已連線的兩個虛擬網路其中一個指定對等互連，且只有在其中一個虛擬網路指定對等互連時，連線才會完成。 為了說明其效果，第一個**工作負載擁有者**會指定 **prod-vnet** 與 **hub-vnet** 之間的對等互連。 隨即建立第一個對等互連，但是沒有流量，因為從 **hub-vnet** 到 **prod-vnet** 的互補對等互連尚未指定。 第一個**工作負載擁有者**會連絡**網路作業**使用者，並且要求這個互補對等互連連線。
+7. 每個虛擬網路在建立時，並沒有與內部部署的連線。 在這種類型的架構中，每個虛擬網路必須對等互連至*共用基礎結構*環境中的 hub-vnet。 虛擬網路對等互連會建立兩個不同虛擬網路之間的連線，並且允許網路流量在兩者之間傳送。 請注意，虛擬網路對等互連原本並非可轉移。 必須在已連線的兩個虛擬網路其中一個指定對等互連，且只有在其中一個虛擬網路指定對等互連時，連線才會完成。 為了說明其效果，第一個**工作負載擁有者**會指定 **prod-vnet** 與 **hub-vnet** 之間的對等互連。 隨即建立第一個對等互連，但是沒有流量，因為從 **hub-vnet** 到 **prod-vnet** 的互補對等互連尚未指定。 第一個**工作負載擁有者**會連絡**網路作業**使用者，並且要求這個互補對等互連連線。
     ![建立對等互連連線](../../_images/govern/design/governance-3-5.png)
 8. **網路作業**使用者檢閱要求、核准，然後在 **hub-vnet** 的設定中指定對等互連。 對等互連連線現在已完成，網路流量會在兩個虛擬網路之間流動。
     ![建立對等互連連線](../../_images/govern/design/governance-3-6.png)

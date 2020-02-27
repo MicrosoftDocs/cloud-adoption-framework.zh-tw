@@ -1,6 +1,6 @@
 ---
 title: 建立原則遵循流程
-description: 建立處理常式，以確保符合公司原則。
+description: 建立策略和流程，以確保您的雲端部署符合原則需求。 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807167"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709459"
 ---
 <!-- markdownlint-disable MD026 -->
 

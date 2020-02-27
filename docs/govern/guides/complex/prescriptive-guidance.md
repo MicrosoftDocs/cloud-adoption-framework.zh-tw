@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：說明的最佳做法
-description: 瞭解複雜企業治理的最佳作法。
+title: 複雜的企業治理：最佳做法說明
+description: 使用適用于 Azure 的雲端採用架構，建立可反映複雜企業之最佳作法的治理最小可行產品（MVP）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806266"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709204"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
@@ -82,7 +82,7 @@ ms.locfileid: "76806266"
   - SLA
   - 環境
   - 應用程式原型
-  - 應用程式
+  - Application
   - 應用程式擁有者
 - 這些值搭配 Azure 管理群組及已部署資產的相關訂用帳戶，將可擬定治理、營運和安全性決策。
 

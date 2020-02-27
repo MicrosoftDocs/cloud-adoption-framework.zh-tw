@@ -1,6 +1,6 @@
 ---
 title: 法規合規性簡介
-description: 法規合規性簡介
+description: 深入瞭解可能會影響雲端治理的各種產業和地理位置中的合規性法規。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806113"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709374"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 

@@ -1,6 +1,6 @@
 ---
 title: 資源一致性專業領域的改進
-description: 資源一致性專業領域的改進
+description: 使用適用于 Azure 的雲端採用架構，瞭解在每個採用階段中開發和成熟資源一致性專業領域所需的工作。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e8c51da7dc0e45ee2722681872ca851ee385656
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807235"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709068"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 

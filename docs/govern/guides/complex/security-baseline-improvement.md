@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：改善安全性基準專業領域
-description: 複雜企業的治理指南：改善安全性基準專業領域
+title: 複雜的企業治理：改善安全性基準專業領域
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何新增可支援將受保護的資料移至雲端的安全性控制項。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806232"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706807"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 

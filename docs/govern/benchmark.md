@@ -1,6 +1,6 @@
 ---
-title: 評估您的轉換旅程
-description: 評估您的轉換旅程
+title: 評估您的雲端治理旅程
+description: 使用此治理基準工具來取得個人化報告，並為您的組織量身打造資源，以開始使用雲端治理。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806521"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708898"
 ---
 # <a name="assess-your-transformation-journey"></a>評估您的轉換旅程
 

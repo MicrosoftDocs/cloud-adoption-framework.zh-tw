@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：多層治理
-description: 複雜企業的治理指南：多層治理
+title: 複雜的企業治理：多個治理層
+description: 使用適用于 Azure 的雲端採用架構，透過大型企業中的多層治理來瞭解更高的複雜性層級。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806249"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709187"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>複雜企業的治理指南：多層治理
 

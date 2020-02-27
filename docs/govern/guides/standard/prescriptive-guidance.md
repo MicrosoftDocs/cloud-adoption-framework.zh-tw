@@ -1,6 +1,6 @@
 ---
-title: 標準企業治理指南：說明的最佳做法
-description: 瞭解標準企業治理的最佳作法。
+title: 標準企業治理：最佳做法說明
+description: 使用適用于 Azure 的雲端採用架構，針對反映標準企業最佳做法的治理建立最基本的可行產品（MVP）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806793"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709306"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 

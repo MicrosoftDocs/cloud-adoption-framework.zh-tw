@@ -1,6 +1,6 @@
 ---
 title: 部署加速原則合規性流程
-description: 部署加速原則合規性流程
+description: 使用適用于 Azure 的雲端採用架構，學習建立支援部署管理治理專業領域之程式的方法。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 149fe69eaa89fcc1b0ee7715dad8e4c46dadc963
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806368"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708762"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 

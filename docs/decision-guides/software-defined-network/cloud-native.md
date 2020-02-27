@@ -1,6 +1,6 @@
 ---
 title: 軟體定義網路：雲端原生
-description: 雲端原生虛擬網路服務的討論。
+description: 使用適用于 Azure 的雲端採用架構來瞭解將 Vm 部署至雲端時所需的雲端原生虛擬網路。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806640"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708592"
 ---
 # <a name="software-defined-networking-cloud-native"></a>軟體定義網路：雲端原生
 
-將 IaaS 資源（例如虛擬機器）部署到雲端平臺時，必須要有雲端原生虛擬網路。 從外部來源 (類似於 Web) 對虛擬網路的存取需要明確佈建。 這些類型的虛擬網路支援建立子網路、路由規則和虛擬防火牆，以及流量管理裝置。
+將 IaaS 資源（例如虛擬機器）部署到雲端平臺時，需要雲端原生虛擬網路。 從外部來源 (類似於 Web) 對虛擬網路的存取需要明確佈建。 這些類型的虛擬網路支援建立子網路、路由規則和虛擬防火牆，以及流量管理裝置。
 
 雲端原生虛擬網路不會相依于您組織的內部部署或其他 noncloud 資源，以支援雲端裝載的工作負載。 所有必要的資源都會佈建在虛擬網路本身，或使用受控 PaaS 供應項目進行佈建。
 

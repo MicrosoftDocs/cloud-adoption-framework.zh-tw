@@ -1,6 +1,6 @@
 ---
-title: 身分識別基準動機和業務風險
-description: 身分識別基準動機和業務風險
+title: 身分識別基準商務風險
+description: 瞭解並查看典型客戶在雲端治理策略中採用身分識別基準專業領域的範例。 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807133"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709323"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>身分識別基準動機和業務風險
 

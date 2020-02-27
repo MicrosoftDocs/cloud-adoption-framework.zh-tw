@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：支援的敘述
-description: 這段敘述在複雜的企業雲端採用旅程期間，會建立治理的使用案例。
+title: 複雜的企業治理：支援的敘述
+description: 使用適用于 Azure 的雲端採用架構，在複雜的企業雲端採用旅程圖期間，建立治理的使用案例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805552"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706909"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>複雜企業的治理指南：支援的敘述
 

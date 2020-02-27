@@ -1,18 +1,18 @@
 ---
-title: 定義雲端治理的公司原則
-description: 瞭解如何建立原則來反映並補救風險。
+title: 定義雲端治理公司原則
+description: 使用適用于 Azure 的雲端採用架構，學習如何建立可解決雲端轉換旅程期間已知風險和風險承受度的原則。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806045"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706671"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 

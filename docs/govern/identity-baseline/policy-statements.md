@@ -1,6 +1,6 @@
 ---
 title: 身分識別基準範例原則聲明
-description: 身分識別基準範例原則聲明
+description: 使用適用于 Azure 的雲端採用架構，取得可協助您草擬原則聲明的範例身分識別基準原則聲明。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4cf67b9580fb6b3970dc9982d9df94a809a73f36
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805042"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709289"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 

@@ -1,6 +1,6 @@
 ---
 title: Azure 中的資源一致性工具
-description: Azure 中的資源一致性工具
+description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以支援資源一致性治理專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 002b9d1fc559d87ef84614a6f1c085e08c6b9842
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805178"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708167"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 

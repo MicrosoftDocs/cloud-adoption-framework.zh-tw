@@ -1,6 +1,6 @@
 ---
 title: 雲端治理方法
-description: 對於在雲端採用架構中推動雲端治理的方法有基本了解。
+description: 使用以最基本的可行產品（MVP）為基礎的增量治理方法，以支援公司原則並快速地移至雲端採用。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807082"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709085"
 ---
 # <a name="cloud-governance-methodology"></a>雲端治理方法
 

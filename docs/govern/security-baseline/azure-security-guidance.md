@@ -1,6 +1,6 @@
 ---
-title: Azure 安全性指導方針
-description: Microsoft 提供哪些安全性指引？
+title: Azure 安全性指引
+description: 使用 Microsoft 服務信任平臺和合規性管理員，協助符合複雜的合規性義務並改善資料保護。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804906"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709527"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +32,7 @@ Microsoft 推出[服務信任平台](https://servicetrust.microsoft.com)和合�
 **服務信任平台 (STP)** 提供深度資訊和工具，協助您符合使用 Microsoft Cloud 服務的需求，包括 Azure、Office 365、Dynamics 365 和 Windows。 STP 是與 Microsoft Cloud 相關的一站式安全性、法規、合規性及隱私權資訊商店。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 STP 是建立來協助追蹤 Azure 內的法規合規性活動，包括：
 
 - **合規性管理員：** 合規性管理員是 Microsoft 服務信任平臺中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及驗證貴組織與 Microsoft Cloud 服務相關的法規合規性活動，例如 Office 365、Dynamics 365 和 Azure。 您可以在下一節找到更多詳細資料。
-- **信任檔：** 目前有三種類別的指南，可提供您豐富的資源來評估 Microsoft Cloud;瞭解 Microsoft 在安全性、合規性和隱私權方面的作業;並協助您採取行動以改善資料保護功能。 這些區域包括：
+- **信任檔：** 目前有三種類別的指南，可提供您豐富的資源來評估 Microsoft Cloud;瞭解 Microsoft 在安全性、合規性和隱私權方面的作業;並協助您採取行動以改善資料保護功能。 其中包括：
 - **審查報告：** 審查報告可讓您隨時掌握 Microsoft Cloud 服務的最新隱私權、安全性及合規性相關資訊。 包括 ISO、SOC、FedRAMP 和其他稽核報告、橋接字母和獨立第三方稽核 Microsoft Cloud 服務 (例如 Azure、Office 365、Dynamics 365 等等) 的相關資料。
 - **資料保護指南：** 資料保護指南提供 Microsoft Cloud services 如何保護您的資料，以及如何為您的組織管理雲端資料安全性與合規性的相關資訊。 包括深入白皮書，提供 Microsoft 如何設計和操作雲端服務的詳細資料、常見問題集、年終安全性評量報告、滲透測試結果，以及可協助您進行風險評量並改善資料保護功能的指引。
 - **Azure 安全性與合規性藍圖：** 藍圖提供的資源可協助您建立及啟動雲端提供的應用程式，以協助您遵守嚴格的法規和標準。 具有比其他任何雲端提供者更多的認證，您可以有信心地將關鍵工作負載部署至 Azure，使用包含下列項目的藍圖：

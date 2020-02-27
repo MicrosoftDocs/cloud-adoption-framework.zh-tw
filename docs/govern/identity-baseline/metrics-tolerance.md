@@ -1,6 +1,6 @@
 ---
-title: 身分識別基準的計量、指標及風險承受度
-description: 身分識別基準的計量、指標及風險承受度
+title: 身分識別基準風險承受度計量和指示器。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何量化與身分識別基準相關的商務風險承受度。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806028"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709340"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>身分識別基準的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為它與身分識別基準相關。 定義計量和指標可協助您建立商務案例，藉此讓身分識別基準專業領域變得更完善。
 
-## <a name="metrics"></a>計量
+## <a name="metrics"></a>度量
 
 身分識別基準著重於對個人、使用者群組或自動化程序進行識別、驗證及授權，並提供他們適當的存取權來存取雲端部署中的資源。 若要進行風險分析，您可以收集與識別服務相關的資料，以判斷要面對多少風險，以及針對您規劃的雲端部署投資身分識別基準治理有多重要。
 

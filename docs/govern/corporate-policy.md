@@ -1,6 +1,6 @@
 ---
-title: 評估公司原則
-description: 評估公司原則，作為雲端治理策略的一部分。
+title: 評估和定義公司原則
+description: 在雲端治理策略中，識別公司原則商務風險、風險承受度，以及原則與合規性程式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 59c4ac9c637d0c243d58cb93866ddfa8b9986de5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804328"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708915"
 ---
 # <a name="evaluate-corporate-policy"></a>評估公司原則
 
@@ -107,7 +107,7 @@ ms.locfileid: "76804328"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>程序</h3>
+                        <h3>處理序</h3>
                         <p>採用與創新活動的步調自然會建立原則違規。 執行相關程序會輔助監視及強制執行遵守原則。</p>
                     </div>
                 </div>

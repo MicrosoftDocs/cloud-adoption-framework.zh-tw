@@ -1,6 +1,6 @@
 ---
 title: 軟體定義網路：中樞和輪輻
-description: 雲端原生虛擬網路服務的討論。
+description: 使用適用于 Azure 的雲端採用架構，瞭解中樞和輪輻網路如何將您的網路基礎結構組織成多個連線的虛擬網路。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a24ccb7f382e03b3eb0138e94e6b02954c36bd87
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9138a686aedd3ba54352280b557b6ac622df6a46
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806623"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708575"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 
@@ -48,7 +48,7 @@ ms.locfileid: "76806623"
 
 中樞與輪輻架構通常會使用部署至同一個 Azure 區域的虛擬網路來實作，以便將網路之間的延遲降至最低。 不過，觸角擴及全球的大型組織可能需要跨多個區域部署工作負載，以滿足可用性、災害復原或法規需求。 中樞和輪輻模型可以使用 Azure[全域虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)，跨區域擴充集中管理和共用服務，並支援分散在世界各地的工作負載。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 如需如何在 Azure 上實作中樞與輪輻網路的範例，請參閱 Azure 參考架構網站上的下列範例：
 

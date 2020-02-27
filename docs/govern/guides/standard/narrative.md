@@ -1,6 +1,6 @@
 ---
-title: 標準企業治理指南：治理策略背後的敘述
-description: 這段敘述在標準企業的雲端採用旅程期間，會建立治理的使用案例。
+title: 標準企業治理：治理策略背後的敘述
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在標準的企業雲端採用旅程期間，建立治理的使用案例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d963053806a6a43476c7597be5dd628b6e187e06
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805518"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709272"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 

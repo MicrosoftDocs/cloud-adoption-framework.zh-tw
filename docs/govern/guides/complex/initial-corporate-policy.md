@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：治理策略背後的初始公司原則
-description: 複雜企業的治理指南：治理策略背後的初始公司原則
+title: 複雜的企業治理：初始公司原則
+description: 使用適用于 Azure 的雲端採用架構來定義初始治理位置、初期風險、初始原則聲明，以及早期強制執行程式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2949c89b5cafd472af98245a37cae43e69c634a4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: af39421f89b8aacb3bae1f759631ee72adda40cd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806300"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709153"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雜企業的治理指南：治理策略背後的初始公司原則
 

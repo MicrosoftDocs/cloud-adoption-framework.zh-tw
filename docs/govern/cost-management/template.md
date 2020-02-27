@@ -1,6 +1,6 @@
 ---
 title: 成本管理範本
-description: 使用此範本作為模型，以瞭解定義組織成本管理原則聲明所需的業務風險、風險承受度、合規性流程和工具。
+description: 使用此範本來定義成本管理原則聲明，以捕捉商務風險、風險承受度、合規性流程和工具。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173265"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708796"
 ---
 # <a name="cost-management-template"></a>成本管理範本
 

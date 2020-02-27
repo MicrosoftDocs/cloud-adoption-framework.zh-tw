@@ -1,6 +1,6 @@
 ---
 title: 建立初始雲端治理基礎
-description: 藉由建立初始雲端治理基礎來開始使用雲端治理。
+description: 使用適用于 Azure 的雲端採用架構，藉由建立初始雲端治理基礎來開始使用雲端治理。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803784"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708354"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 

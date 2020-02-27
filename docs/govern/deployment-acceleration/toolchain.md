@@ -1,6 +1,6 @@
 ---
 title: Azure 中的部署加速工具
-description: Azure 中的部署加速工具
+description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以支援部署加速治理專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806317"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709000"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -26,9 +26,9 @@ ms.locfileid: "76806317"
 |  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |執行公司原則     |是 |否  |否  |否 | 否 |否 |
-|跨訂用帳戶套用原則     |必要項 |是  |否  |否 | 否 |否 |
+|跨訂用帳戶套用原則     |必要 |是  |否  |否 | 否 |否 |
 |部署定義的資源     |否 |否  |是  |否 | 否 |否 |
-|建立完全相容的環境      |必要項 |必要項  |必要項  |是 | 否 |否 |
+|建立完全相容的環境      |必要 |必要  |必要  |是 | 否 |否 |
 |稽核原則      |是 |否  |否  |否 | 否 |否 |
 |查詢 Azure 資源      |否 |否  |否  |否 |是 |否 |
 |資源成本報告      |否 |否  |否  |否 |否 |是 |

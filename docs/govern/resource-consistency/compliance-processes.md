@@ -1,6 +1,6 @@
 ---
 title: 資源一致性原則的合規性程序
-description: 資源一致性原則的合規性程序
+description: 使用適用于 Azure 的雲端採用架構，學習建立支援資源一致性治理專業領域之程式的方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7fbb2d7b121c011005c4f900bf66cafb8977ffeb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805977"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709510"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>資源一致性原則的合規性程序
 

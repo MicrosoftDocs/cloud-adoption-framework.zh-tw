@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：改善成本管理專業領域
-description: 複雜企業的治理指南：改善成本管理專業領域
+title: 複雜的企業治理：改善成本管理專業領域
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將成本控制新增至治理最低可行產品（MVP）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b44f153c9e14f1425aa3bb1374c60243c9a3c326
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805722"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709034"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 

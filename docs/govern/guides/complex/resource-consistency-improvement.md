@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：改善資源一致性專業領域
-description: 複雜企業的治理指南：改善資源一致性專業領域
+title: 複雜的企業治理：改善資源一致性專業領域
+description: 使用適用于 Azure 的雲端採用架構來瞭解復原、調整大小和監視控制項，以改善治理基準並補救風險。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d7148df4bb06a0dc4ca035b89f7077888fb7306c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805535"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708932"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雜企業的治理指南：改善資源一致性專業領域
 

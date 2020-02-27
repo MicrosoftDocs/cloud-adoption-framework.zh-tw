@@ -1,6 +1,6 @@
 ---
 title: 進行雲端原則審查
-description: 瞭解如何進行雲端原則審查。
+description: 瞭解如何將現有的公司 IT 原則現代化，為雲端式資源提供對等層級的風險管理。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805059"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709119"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ ms.locfileid: "76805059"
 - 公司原則規定所有的生產系統都要有異地磁帶備份。 在此原則中，您可以看到兩個有趣的資料點：
   - 磁帶備份解決方案的舊版相依性
   - 假設的業務風險，該風險與生產設備相同的實體位置中的備份儲存體相關聯。
-- 風險仍然存在嗎？ 可以。 即使在雲端，對於單一設備的相依性仍會產生一些風險。 此風險影響業務的可能性比在內部部署解決方案中出現還要低，但仍有風險存在。
+- 風險仍然存在嗎？ 是。 即使在雲端，對於單一設備的相依性仍會產生一些風險。 此風險影響業務的可能性比在內部部署解決方案中出現還要低，但仍有風險存在。
 - 重新撰寫原則。 在全資料中心發生災害的情況下，必須有辦法在中斷的 24 小時內，於不同的資料中心和不同的地理位置還原生產系統。
   - 也請務必考慮，在上述需求中指定的時間軸可能已由不再存在於雲端中的技術條件約束所設定。 請務必先瞭解雲端的技術限制和功能，再直接套用舊版的 RTO/RPO。
 - 與雲端採用小組一起檢閱。 根據所實作的解決方案，遵守此資源一致性原則的方法有很多種。

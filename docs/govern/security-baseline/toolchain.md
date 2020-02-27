@@ -1,6 +1,6 @@
 ---
 title: Azure 中的安全性基準工具
-description: 這項工具的說明可協助改善 Azure 中的安全性基準。
+description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以支援安全性基準治理專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85b0d88d4a275c7215a498b95e0af6717bfac169
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808799"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707062"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure 中的安全性基準工具
 

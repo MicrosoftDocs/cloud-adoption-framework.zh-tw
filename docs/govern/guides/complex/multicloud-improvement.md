@@ -1,6 +1,6 @@
 ---
-title: 複雜企業的治理指南：多重雲端改進
-description: 複雜企業的治理指南：多重雲端改進
+title: 複雜的企業治理：多重雲端改進
+description: 使用適用于 Azure 的雲端採用架構來瞭解多個雲端，以及如何將多重雲端組織與複雜的企業整合。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805586"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709170"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雜企業的治理指南：多重雲端改進
 
