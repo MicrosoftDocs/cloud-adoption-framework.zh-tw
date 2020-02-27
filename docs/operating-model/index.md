@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806946"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629278"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型
 
@@ -23,7 +23,7 @@ ms.locfileid: "76806946"
 
 **如果採用是描述您所從事的活動，作業模型則是定義啟用採用的基礎人員和方式。**
 
-Satya Nadella 說過： **「文化將策略當早餐吃掉了」** 。 作業模型是 IT 文化的體現，並能以數個可測量的流程來表達。 當雲端是由強大的作業模型驅動時，文化便會推動策略，從而加快採用和實現商業價值的腳步。 相反地，如果在沒有任何作業模型的情況下採用成功了，回報雖然豐厚，卻會非常短暫。 若想長期保持成功，就一定要讓採用和作業模型齊頭並進。
+「文化將策略當早餐吃掉了。」 作業模型是 IT 文化的體現，並能以數個可測量的流程來表達。 當雲端是由強大的作業模型驅動時，文化便會推動策略，從而加快採用和實現商業價值的腳步。 相反地，如果在沒有任何作業模型的情況下採用成功了，回報雖然豐厚，卻會非常短暫。 若想長期保持成功，就一定要讓採用和作業模型齊頭並進。
 
 ## <a name="establish-your-operating-model"></a>建立您的作業模型
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799330"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567753"
 ---
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
@@ -22,7 +22,7 @@ ms.locfileid: "76799330"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 下圖顯示這些層級的關聯性。
 
@@ -121,7 +121,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[命名標準](#tab/NamingStandards)
+# <a name="naming-standards"></a>[命名標準](#tab/NamingStandards)
 
 良好的命名標準可協助您識別 Azure 入口網站中、帳單上和指令碼中的資源。 命名策略應該包含業務和營運詳細資料來作為資源名稱的元件：
 
@@ -146,7 +146,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 |可用性設定組 |資源群組 |1-80 |不區分大小寫 |英數字元、底線和連字號 |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tag |相關聯的實體 |512 (名稱)、256 (值) |不區分大小寫 |英數字元 |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[資源標記](#tab/ResourceTags)
+# <a name="resource-tags"></a>[資源標記](#tab/ResourceTags)
 
 標記可快速找出資源和資源群組。 您可將標籤套用至 Azure 資源，以便以邏輯方式依照類別組織這些資源。 每個標記都是由一個名稱和一個值所組成。 例如，您可以將「環境」名稱和「生產」值套用至生產環境中的所有資源。 標記應該包含資源相關的工作負載或應用程式、營運需求和擁有權資訊等內容。
 
@@ -156,7 +156,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 - **中繼資料和文件：** 系統管理員套用「ProjectOwner」之類的標記，即可輕易查看其所處理資源的相關詳細資料。
 - **自動化：** 您可能有定期執行的指令碼，其會根據「ShutdownTime」或「DeprovisionDate」等標記值來採取動作。
-- **計費：** 標記可以出現在發票上。 您可以使用「CostCenter」或「BillTo」等標記，協助將帳單分門別類。
+- **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
