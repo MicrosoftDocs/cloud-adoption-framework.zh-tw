@@ -1,18 +1,18 @@
 ---
-title: 大型主機遷移：誤解和事實
-description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
+title: 大型主機遷移的誤解和事實
+description: 瞭解如何區分有關大型主機的誤解，以及評估最適合 Azure 的大型主機工作負載。
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808748"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171305"
 ---
 # <a name="mainframe-myths-and-facts"></a>大型主機迷思與事實
 

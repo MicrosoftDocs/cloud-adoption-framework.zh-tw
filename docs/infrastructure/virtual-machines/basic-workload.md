@@ -1,18 +1,18 @@
 ---
-title: 部署基本工作負載
-description: 描述如何將基本工作負載部署到 Azure
+title: 在 Azure 中部署基本工作負載
+description: 瞭解核心雲端基礎結構元件和基本工作負載，例如基本 web 應用程式、單一虛擬機器和虛擬網路。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808731"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170693"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 

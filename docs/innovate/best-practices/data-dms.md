@@ -1,18 +1,18 @@
 ---
-title: 雲端創新： Azure 資料庫移轉服務
-description: 雲端創新-Azure 資料庫移轉服務
+title: 遷移資料的創新工具
+description: 瞭解 Azure 資料庫移轉服務和其他工具，以遷移和現代化資料，以準備進行雲端開始創造發明和創新。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808663"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171271"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -46,7 +46,7 @@ ms.locfileid: "76808663"
 
 我們建議您決定可接受的商務停機時間，並測試離線遷移。 您會這麼做，以檢查還原時間是否符合可接受的停機時間。 如果無法接受還原時間，請執行線上遷移。
 
-|來源  |確定目標  |工具  |遷移類型  |指導方針  |
+|來源  |目標  |工具  |遷移類型  |指引  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Azure SQL Database|Database Migration Service|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|

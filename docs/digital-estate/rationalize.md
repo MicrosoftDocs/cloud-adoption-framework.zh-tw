@@ -1,6 +1,6 @@
 ---
 title: 合理化數位資產
-description: 評估數位資產以判斷將其裝載於雲端的最佳方法。
+description: 使用雲端合理化來評估您的數位資產，並判斷在雲端中裝載它們的最佳方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804549"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170132"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -117,7 +117,7 @@ ms.locfileid: "76804549"
 
 雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 此共同作業會建立受控制的機會，以建立及測試定性的分析準則。 較小的人口會建立一個機會來調查受影響的使用者，並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素，請參閱[5 Rs 中合理化](./5-rs-of-rationalization.md)的特定合理化目標。
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 與持續合理化的同時，雲端採用小組可以開始遷移小型工作負載，以擴展下列主要領域的學習：
 

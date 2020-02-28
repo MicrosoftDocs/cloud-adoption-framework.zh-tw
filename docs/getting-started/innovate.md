@@ -1,18 +1,18 @@
 ---
 title: 透過雲端採用的創新
-description: 瞭解如何使用雲端採用架構，透過雲端採用進行創新。
+description: 瞭解創新方法，做為引導新雲端產品和服務開發的方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 96a1bca8e52ec384f8b93582ab4b3eac2fa77dd4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ef9291d07a9de6067ae6d47477c47b2d57449feb
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805960"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170098"
 ---
 # <a name="innovate-through-cloud-adoption"></a>透過雲端採用的創新
 

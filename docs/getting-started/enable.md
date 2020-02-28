@@ -1,6 +1,6 @@
 ---
-title: 在雲端採用旅程期間讓客戶成功
-description: 在整個雲端採用旅程中實現客戶的成功
+title: 實現雲端採用旅程成功
+description: 使用免費的自助雲端採用架構和其他工具，協助您制定雲端採用決策，讓客戶達到成功。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
-ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
+ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413194"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170166"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 

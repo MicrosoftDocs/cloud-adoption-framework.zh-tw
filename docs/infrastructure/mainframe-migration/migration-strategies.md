@@ -1,18 +1,18 @@
 ---
-title: 大型主機遷移：將從主機切換至 Azure
-description: 針對目前在大型主機上執行的系統，將應用程式從大型主機環境遷移至 Azure。
+title: 將應用程式從大型主機遷移至 Azure
+description: 取得在高可用性環境中，將從大型主機平臺切換至 Azure 超大規模資料庫計算和儲存體的技術指導方針。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808765"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171339"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
@@ -55,7 +55,7 @@ Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中
 
 CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
 
-## <a name="backup-and-recovery"></a>備份及復原
+## <a name="backup-and-recovery"></a>備份與復原
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 

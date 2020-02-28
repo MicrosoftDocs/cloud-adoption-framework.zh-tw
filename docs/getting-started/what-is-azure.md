@@ -1,6 +1,6 @@
 ---
 title: Azure 如何運作？
-description: Azure 內部運作方式的說明
+description: 瞭解 Azure 雲端平臺和雲端虛擬化的內部結構和功能的基本概念。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 79fc35b8fdcae1de012b9d2d8a2f67b43f3f9cc9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f74e5f6fa5abc263af73fcf69b489de6518c9e37
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804379"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169911"
 ---
 <!-- markdownlint-disable MD026 -->
 

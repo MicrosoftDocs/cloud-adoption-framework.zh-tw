@@ -1,6 +1,6 @@
 ---
 title: 部署加速業務風險
-description: 瞭解部署加速專業領域的業務風險，其可用於 Azure 的 Microsoft Cloud 採用架構中的治理策略。
+description: 使用適用于 Azure 的雲端採用架構來瞭解部署加速專業領域的業務風險，這可用於治理策略。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567685"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171424"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>部署加速動機和業務風險
 

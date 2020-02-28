@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：參與應用程式
-description: 雲端創新簡介-透過應用程式進行互動。
+title: 透過應用程式參與數位家發明
+description: 瞭解如何建立應用程式解決方案來塑造資料，並建立與客戶互動並支援創新的體驗。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808561"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170659"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 

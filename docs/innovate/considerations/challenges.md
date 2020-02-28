@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：挑戰和障礙
-description: 雲端創新簡介-挑戰和阻礙
+title: 客戶採用挑戰和障礙
+description: 使用適用于 Azure 的雲端採用架構，瞭解創新的常見採用與家發明相關的挑戰。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808527"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170608"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 

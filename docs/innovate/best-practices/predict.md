@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：在 Azure 中預測和影響的工具
-description: 在 Azure 中預測和影響的工具
+title: 預測和影響的創新工具
+description: 使用適用于 Azure 的雲端採用架構，尋找有助於偵測模式、整合預測，以及影響客戶行為的分析工具。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 656074ea65f490dea1345c2e00742846323cf6db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808612"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170761"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>在 Azure 中預測和影響資料的工具
 

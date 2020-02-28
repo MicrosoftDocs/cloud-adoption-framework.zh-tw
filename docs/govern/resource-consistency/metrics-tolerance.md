@@ -1,6 +1,6 @@
 ---
 title: 資源一致性風險承受度計量和指示器
-description: 在 Azure 的 Microsoft Cloud 採用架構中，量化與資源一致性相關的商務風險承受度。
+description: 使用適用于 Azure 的雲端採用架構來量化與資源一致性相關的商務風險承受度。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567719"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171356"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>資源一致性的計量、指標及風險承受度
 

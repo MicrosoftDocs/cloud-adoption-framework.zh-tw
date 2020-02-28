@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：在 Azure 中將大眾化資料的工具
-description: 在 Azure 中將大眾化資料的工具
+title: 將大眾化資料的創新工具
+description: 深入瞭解 Azure 資料目錄和其他服務，協助您快速測試假設，再擴充為更廣泛、更昂貴的數位開始創造發明。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808680"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171254"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 
@@ -40,7 +40,7 @@ ms.locfileid: "76808680"
 在 Azure 中，下列工具通常用來加速在前幾個階段的數位家發明：
 
 - Power BI
-- Azure Data Catalog
+- Azure 資料目錄
 - Azure SQL 資料倉儲
 - Azure Cosmos DB
 - 適用於 PostgreSQL 的 Azure 資料庫

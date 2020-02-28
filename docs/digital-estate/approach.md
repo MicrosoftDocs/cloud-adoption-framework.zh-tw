@@ -1,6 +1,6 @@
 ---
 title: 數位資產規劃方法
-description: 瞭解數位資產規劃的各種方法。
+description: 瞭解數位資產規劃的由上而下的工作負載導向、資產驅動或累加方法的特性和需求。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 453ac12e8c86aed46675c710395101ff3a121195
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806538"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170032"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 

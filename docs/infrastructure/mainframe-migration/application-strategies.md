@@ -1,18 +1,18 @@
 ---
-title: 大型主機遷移：大型主機應用程式遷移
-description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
+title: 大型主機應用程式遷移策略
+description: 瞭解重新裝載、淘汰、重建或取代應用程式的策略，以從大型主機環境遷移至 Azure。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808816"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171407"
 ---
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
@@ -98,7 +98,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 - 分割儲存體，以將 IO 分散到多個 Azure 儲存體裝置。
 
-### <a name="networking"></a>網路
+### <a name="networking"></a>網路功能
 
 - 使用 [Azure 加速網路](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell)，以盡可能降低延遲。
 
@@ -174,7 +174,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 Azure 提供經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。 某些工作負載比較容易移轉。 其他依賴舊式系統軟體 (例如 CICS 與 IMS) 的工作負載，可以使用合作夥伴解決方案重新裝載，再分階段移轉至 Azure。 無論您如何選擇，Microsoft 與合作夥伴都很樂意協助您達成 Azure 的最佳化，同時保有大型主機系統軟體功能。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 如需詳細資訊，請參閱下列資源：
 

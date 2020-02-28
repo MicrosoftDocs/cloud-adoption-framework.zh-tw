@@ -1,18 +1,18 @@
 ---
-title: 透過組建-測量-學習意見反應迴圈建立客戶合作關係
-description: 瞭解如何透過組建-測量-學習意見反應迴圈，建立與客戶之間的合作關係。
+title: 組建-測量-學習意見反應迴圈
+description: 打造客戶的理解、測量對客戶的影響，以及向客戶學習，以建立客戶合作關係。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6dc67f308ea257500e71661585b172f7d3deb61a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1f41d4f918cb4d8ca460e0d629ccffc4df9f5688
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808595"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170676"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
 

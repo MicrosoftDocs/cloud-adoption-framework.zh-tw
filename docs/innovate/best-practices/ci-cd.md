@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：加強採用 Azure 的工具
-description: 在 Azure 中加強採用的工具
+title: 促進採用的創新工具
+description: 瞭解使用創新方法的 Azure 工具，在假設成熟時，以累加方式移除摩擦並使採用更具效率。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808697"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171288"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>在 Azure 中加強採用的工具
 
@@ -39,8 +39,8 @@ ms.locfileid: "76808697"
 
 - Azure 藍圖
 - Azure 原則
-- Azure Resource Manager 範本
-- Azure Monitor
+- Azure 資源管理員範本
+- Azure 監視器
 
 此頁面左側的目錄會列出每個工具的指引，並與先前所述的成熟度模型對齊。
 

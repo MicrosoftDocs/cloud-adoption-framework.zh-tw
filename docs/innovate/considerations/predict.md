@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：預測和影響
-description: 雲端創新簡介-預測和影響
+title: 預測並影響客戶行為
+description: 使用預測模型，透過資料、深入解析、模式、預測和互動來開發預測功能。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808391"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171101"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -45,7 +45,7 @@ ms.locfileid: "76808391"
 
 您可以使用各種不同的資料來源來提供預測功能：
 
-## <a name="insights"></a>深入資訊
+## <a name="insights"></a>深入解析
 
 主題專家會使用客戶需求和行為的相關資料，從原始資料的研究中開發基本的商業見解。 這些深入解析可以找出所需客戶行為的出現次數（或者，或者不想要的結果）。 在預測的反復專案中，這些深入解析有助於識別可能會產生正面結果的可能相互關聯。 如需有關啟用主題專家來開發見解的指引，請參閱[Democratizing data](./data.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "76808391"
 
 [設定 HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters)叢集討論在 Azure HDInsight 上公開針對 ML 服務所開發之預測的進程。
 
-## <a name="interactions"></a>互動次數
+## <a name="interactions"></a>互動
 
 透過 API 提供預測之後，您就可以使用它來影響客戶的行為。 這項影響會採用互動的形式。 與機器學習演算法的互動會發生在您的其他數位或環境體驗內。 透過應用程式或體驗收集資料時，會透過機器學習演算法來執行。 當演算法預測結果時，該預測可以透過現有的體驗與客戶共用。
 

@@ -1,18 +1,18 @@
 ---
-title: 針對雲端創新的商業價值培養共識
-description: 瞭解如何培養雲端創新商業價值的共識。
+title: 培養創新商業價值的共識
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在專案關係人的雲端創新商業價值定義方面培養共識。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: caf36d701973c7ad8be64d0d5164b70ae3af5f75
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808578"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171203"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>培養創新商業價值的共識
 
