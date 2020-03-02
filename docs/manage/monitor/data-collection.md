@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807609"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223243"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -23,7 +23,7 @@ ms.locfileid: "76807609"
 
 仔細規劃監視和遷移。 一開始請先在規劃階段包含監視服務擁有者、作業管理員和其他相關人員，並繼續在整個開發和發行週期中參與。 其焦點將是根據下列準則開發監視設定：
 
-- 這項服務的組成為何，以及現今受監視的相依性是什麼？ 若是如此，是否有多項工具？ 是否有機會進行合併，而不會產生風險？
+- 什麼是服務的組合？ 這些相依性今天是否受監視？ 若是如此，是否有多項工具？ 是否有機會進行合併，而不會產生風險？
 - 服務的 SLA 為何，以及我要如何測量和報告？
 - 當事件引發時，服務儀表板應該看起來像什麼？ 對於服務擁有者以及支援服務的小組而言，儀表板的外觀為何？
 - 需要監視的資源會產生哪些計量？  

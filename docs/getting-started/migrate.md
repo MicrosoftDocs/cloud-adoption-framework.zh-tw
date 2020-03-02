@@ -3,16 +3,16 @@ title: 開始在 Azure 中進行雲端遷移旅程
 description: 取得使用創新的雲端技術將繼承應用程式工作負載轉換至雲端的完整指引。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223975"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -55,7 +55,7 @@ ms.locfileid: "78170183"
 
 ## <a name="cloud-implementation"></a>雲端執行
 
-雲端執行是一種反復的程式，可用於遷移及現代化數位資產，以配合目標商業成果和變更管理控制項。 在每次反覆運算期間，會遷移工作負載，或現代化與策略和計畫一致。 有關 IaaS、PaaS 或混合式的決策會在評估階段進行，以優化控制和執行。 這些決策會驅動遷移階段期間所使用的工具。 此模型可用於最少的策略和規劃。 不過，若要確保最大的企業傳回，強烈建議 IT 和業務都符合清楚的策略，並規劃引導實行活動。
+雲端執行是一種反復的程式，可用於遷移和現代化數位資產，並配合目標商業成果和變更管理控制項。 在每次反覆運算期間，會遷移工作負載，或現代化與策略和計畫一致。 IaaS、PaaS 或混合式的相關決策是在[遷移方法](../migrate/index.md)的評估階段進行，以優化控制和執行。 這些決策會驅動在相同方法中的每個遷移階段反復專案期間所使用的工具。 此模型可用於最少的策略和規劃。 不過，為了確保最大的企業傳回，IT 和企業都應該符合清楚的策略，並規劃引導實行活動。
 
 ![雲端採用架構的雲端實施方法](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "78170183"
 
 - Windows 和 SQL Server
 - Linux 和開放原始碼（OSS）資料庫
-- Unstructure/NoSQL 資料庫
+- 非結構化和 NoSQL 資料庫
 - SAP on Azure
 - 分析（資料倉儲，Data Lake）
 

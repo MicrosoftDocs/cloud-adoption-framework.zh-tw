@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171339"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223639"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
 作為執行傳統大型主機應用程式的替代平台，Azure 在高可用性環境中提供超大規模的計算能力和儲存體。 您可以取得現代化雲端式平台的價值和靈活性，而不需要與大型主機環境相關的成本。
@@ -59,7 +61,7 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
-透過大型主機耦合工具也可提供自動化異地備援，雖然費用很高，且通常會保留用於任務關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
+自動異地複寫也可透過大型主機結合設備來取得。 這種方法很昂貴，而且通常會保留給關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
 
 ## <a name="storage"></a>儲存體
 

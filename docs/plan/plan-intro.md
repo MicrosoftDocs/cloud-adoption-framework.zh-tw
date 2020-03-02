@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800316"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222153"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 
@@ -22,7 +22,7 @@ ms.locfileid: "76800316"
 
 雲端採用方案是以定義完善的策略開始。 策略至少應該概述雲端採用的動機、商業結果和業務理由。 然後，那些正面的傳回會依照實現它們所需的工作平衡。
 
-這是從數位資產（已提議或現有的）開始，這會將策略轉譯成更具體的工作負載和資產。 然後，您可以將這些有形元素對應到技術工作。 在那裡，適當組織結構中的熟練人員可以執行技術工作。 雲端採用方案將所有這些主題結合成一個方案，可以透過敏捷式專案管理實務來預測、預算、實施及管理。 這篇文章系列可協助您建立方案，並提供一些範本讓工作更輕鬆。
+這是從數位資產（已提議或現有的）開始，這會將策略轉譯成更具體的工作負載和資產。 然後，您可以將這些有形元素對應到技術工作。 在那裡，適當組織結構中的熟練人員可以執行技術工作。 雲端採用方案將這些主題結合成一個方案，可以透過敏捷式專案管理實務來預測、預算、實施及管理。 這篇文章系列可協助您建立方案，並提供一些範本讓工作更輕鬆。
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>從順序轉換到反復規劃
 

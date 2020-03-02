@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802016"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222253"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "76802016"
 
 ## <a name="required-prerequisites-to-replication"></a>複寫的必要條件
 
-在複寫之前，必須備妥*新平台*和硬體以接收二進位複本。 [必要條件](../prerequisites/index.md)的相關文章概述了要建立安全、健全且高效能的平台以接收二進位複本所需的最低環境需求。
+在複寫之前，必須備妥*新平台*和硬體以接收二進位複本。 關於[必要條件](../prerequisites/index.md)的文章概述最小的環境需求，以協助建立安全、健全且高效能的平臺來接收二進位複本。
 
 此外也必須準備好*來源二進位檔*，以進行複寫和同步處理。 有關評估、架構和修復的文章，分別說明需執行哪些動作來確保來源二進位檔已準備好進行複寫和同步處理。
 

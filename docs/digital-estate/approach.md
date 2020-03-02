@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170032"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222636"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 
@@ -23,7 +23,7 @@ ms.locfileid: "78170032"
 
 由上而下的評估方法會評估安全性層面。 安全性包括資料的分類（高、中或低業務影響）、合規性、主權和安全性風險需求。 這種方法會評估高階架構的複雜度。 它會評估驗證、資料結構、延遲需求、相依性和應用程式生命預期等層面。
 
-由上而下的方法也會測量應用程式的營運需求，例如服務等級、整合、維護視窗、監視和深入解析。 當所有這些層面都經過分析並納入考慮後，產生的分數會反映將此應用程式遷移到每個雲端平臺的相對困難： IaaS、PaaS 和 SaaS。
+由上而下的方法也會測量應用程式的營運需求，例如服務等級、整合、維護視窗、監視和深入解析。 當這些層面經過分析並考慮時，產生的分數會反映將此應用程式遷移到每個雲端平臺的相對困難： IaaS、PaaS 和 SaaS。
 
 此外，由上而下的評估會評估應用程式的財務優勢，例如營運效率、TCO、投資報酬率，以及其他適當的財務計量。 評量也會檢查應用程式的季節性（例如，當需求尖峰時是否有一年的時間）和整體計算負載。
 

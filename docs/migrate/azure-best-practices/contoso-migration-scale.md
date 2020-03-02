@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807303"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222824"
 ---
 # <a name="scale-a-migration-to-azure"></a>對 Azure 進行大規模移轉
 
@@ -102,7 +102,7 @@ POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早�
 評估程序進行期間，Contoso 必須識別應用程式執行所在的位置，並了解應用程式伺服器之間的相依性和連線。 Contoso 會透過幾個步驟來對應環境。
 
 1. 在第一個步驟中，Contoso 會探索伺服器和機器與個別應用程式、網路位置和群組的對應情形。
-2. 利用此資訊，Contoso 可以清楚地識別有少數相依性，因此適合快速移轉的應用程式。
+2. 透過這項資訊，Contoso 可以清楚地識別有少數相依性且適合快速遷移的應用程式。
 3. Contoso 可以使用此一對應來找出應用程式伺服器之間更複雜的相依性和通訊。 接著，Contoso 可以根據邏輯來群組這些伺服器以代表應用程式，，並根據這些群組來規劃移轉策略。
 
 對應完成後，Contoso 即可確保所有應用程式元件均已找出，並於建置移轉方案時納入考量。
@@ -122,7 +122,7 @@ POC 候選項目 | Y/N | 應用程式是否可作為雲端移轉的 POC 或早�
 技術債務 | 無/一些/嚴重 | 詳細目錄項目是否執行或使用不受支援的產品、平台或作業系統？
 防火牆影響 | Y/N | 應用程式是否與網際網路/外部流量進行通訊？  其是否與防火牆整合？
 安全性問題 | Y/N | 應用程式是否有已知的安全性問題？  應用程式是否使用未加密資料或過期平台？
-移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [深入了解](./contoso-migration-overview.md#migration-patterns)。
+移轉策略 | 重新裝載/重構/重新架構/重建 | 應用程式需要何種移轉？ 應用程式會如何部署到 Azure 中？ [詳細資訊](./contoso-migration-overview.md#migration-patterns)。
 技術複雜度 | 1-5 | 移轉有多複雜？ 此值應由 Contoso DevOps 和相關合作夥伴來定義。
 業務關鍵性 | 1-5 | 此應用程式對業務有多重要？ 例如，小型工作群組應用程式可能會獲得 1 分，跨組織使用的重要應用程式可能會獲得 5 分。 這個分數會影響移轉的優先順序高低。
 移轉優先順序 | 1/2/3 | 應用程式的移轉優先順序為何？
@@ -206,7 +206,7 @@ Contoso 可以考慮四個廣泛的移轉策略。
 
 ### <a name="evaluate-migration-tools"></a>評估移轉工具
 
-Contoso 主要使用兩個 Azure 服務和工具來進行移轉：
+Contoso 主要是使用幾個 Azure 服務和工具來進行遷移：
 
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)：協調災害復原，並將內部部署 VM 遷移至 Azure。
 - [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)：將 SQL Server、MySQL 和 Oracle 等內部部署資料庫遷移到 Azure。
@@ -358,7 +358,7 @@ Contoso 必須針對其 Azure 資源備有商務持續性和災害復原 (BCDR) 
 - Azure 可提供[內建的 BCDR 功能](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications)，讓資料保持安全並讓應用程式/服務正常運作。
 - 除了內建功能外，Contoso 還想要確保其可以從失敗中復原，避免耗費資源的業務中斷情況、符合合規性目標，以及保護資料免於遭受勒索軟體攻擊和人為錯誤。 作法：
   - Contoso 會部署 Azure 備份，以這個符合成本效益的解決方案來備份 Azure 資源。 因為它是內建的，所以 Contoso 可以用幾個簡單的步驟來設定雲端備份。
-  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+  - Contoso 會使用 Azure Site Recovery 來設定 Azure VM 的災害復原，以在 Azure 區域之間提供複寫、容錯移轉和容錯回復能力。 這種做法可確保 Azure VM 上執行的應用程式，能在主要區域發生中斷時在 Contoso 選擇的次要區域中繼續運作。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ## <a name="conclusion"></a>結論
 

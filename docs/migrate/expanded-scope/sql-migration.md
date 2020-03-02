@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c41a8ebbce9fa4a8f0036c2aa395706f44069263
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802985"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225487"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>藉由遷移多個資料庫或整個 SQL Server 來加速遷移
 
@@ -45,7 +45,7 @@ ms.locfileid: "76802985"
 
 以下是伺服器清查的範例：
 
-|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數|
+|SQL Server|目的|版本|[程度](../../manage/considerations/criticality.md)|[敏感性](../../govern/policy-compliance/data-classification.md)|資料庫計數|SSIS|SSRS|SSAS|叢集|節點數目|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |sql-01|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
 |sql-02|核心應用程式|2016|關鍵任務|高度機密|40|N/A|N/A|N/A|是|3|
@@ -103,7 +103,7 @@ ms.locfileid: "76802985"
 
 選擇使用 Azure 資料庫移轉服務來進行遷移的最佳指引，會放在所選的來源和目標平臺上。 下錶鏈接至使用 Azure 資料庫移轉服務遷移 SQL database 之每個標準方法的教學課程。
 
-|來源  |確定目標  |工具  |遷移類型  |指導方針  |
+|來源  |目標  |工具  |遷移類型  |指引  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Azure SQL Database|Database Migration Service|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
@@ -115,7 +115,7 @@ ms.locfileid: "76802985"
 
 將資料庫從 SQL Server 實例移至 Azure 資料庫移轉服務之後，您可以在許多 PaaS 解決方案中重新裝載架構和資料。 不過，其他必要的服務可能仍在該伺服器上執行。 下列三個教學課程有助於將 SSIS、SSAS 和 SSRS 移至 Azure 上的對等 PaaS 服務。
 
-|來源  |確定目標  |工具  |遷移類型  |指導方針  |
+|來源  |目標  |工具  |遷移類型  |指引  |
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory 整合執行時間|Azure Data Factory|離線|[教學課程](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services-表格式模型|Azure Analysis Services|SQL Server Data Tools|離線|[教學課程](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
@@ -127,7 +127,7 @@ ms.locfileid: "76802985"
 
 使用此方法可在 SQL Server 的實例上遷移資料庫或其他服務。
 
-|來源  |確定目標  |工具  |遷移類型  |指導方針  |
+|來源  |目標  |工具  |遷移類型  |指引  |
 |---------|---------|---------|---------|---------|
 |單一實例 SQL Server|IaaS 上的 SQL Server|多變|離線|[教學課程](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
@@ -137,7 +137,7 @@ ms.locfileid: "76802985"
 
 在理想的情況下，您會在與 SQL Server 實例相同的反復專案中遷移相依的工作負載、應用程式和 Vm。 當這種情況發生時，您可以測試工作負載和資料來源。 測試之後，您可以將資料結構升級至生產環境，並終止同步處理常式。
 
-現在讓我們來看一下資料庫移轉與工作負載遷移之間有顯著時間差距的案例。 可惜的是，在非工作負載驅動的遷移期間，這可能是優化程式的最大變更。 當您將多個資料庫移轉為 SQL Server 遷移的一部分時，這些資料庫可能會並存于雲端和內部部署中，以進行多個反復專案。 在這段時間內，您必須維護資料同步處理，直到這些相依資產被遷移、測試及升級為止。
+現在讓我們來看一下資料庫移轉與工作負載遷移之間有顯著時間差距的案例。 可惜的是，在不是工作負載驅動的遷移期間，優化程式的最大變更就是如此。 當您將多個資料庫移轉為 SQL Server 遷移的一部分時，這些資料庫可能會並存于雲端和內部部署中，以進行多個反復專案。 在這段時間內，您必須維護資料同步處理，直到這些相依資產被遷移、測試及升級為止。
 
 在所有相依的工作負載都升級之前，您和您的小組會負責支援從來源系統將資料同步處理到目標系統。 這種同步處理會耗用網路頻寬、雲端成本，而且最重要的是人們的時間。 在 SQL Server 遷移工作負載與所有相依的工作負載和應用程式之間適當地對齊採用方案，可以降低這種昂貴的負荷。
 

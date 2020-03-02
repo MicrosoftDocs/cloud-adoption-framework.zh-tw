@@ -3,28 +3,28 @@ title: 建立初始雲端治理基礎
 description: 使用適用于 Azure 的雲端採用架構，藉由建立初始雲端治理基礎來開始使用雲端治理。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 02/25/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708354"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223809"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 
-建立雲端治理是很廣泛的反復工作。 在速度與控制之間達成有效的平衡是很困難的，尤其是在雲端採用的早期階段。 雲端採用架構中的治理指導方針有助於透過敏捷式的採用方式來提供平衡。
+建立雲端治理是很廣泛的反復工作。 在速度與控制之間達成有效的平衡是很困難的，尤其是在雲端採用的早期方法執行期間。 雲端採用架構中的治理指導方針有助於透過敏捷式的採用方式來提供平衡。
 
 本文提供兩個建立治理初始基礎的選項。 其中一個選項可確保治理條件約束可以隨著採用計畫的實行進行調整和擴充，而且需求也會更清楚地定義。 根據預設，初始基礎會假設隔離和控制位置。 它也著重于資源組織，而不是資源管理。 這個輕量的起點稱為治理的_最小可行產品（MVP）_ 。 MVP 的目標是降低建立初始治理位置的障礙，然後讓解決方案的快速成熟解決各種有形風險。
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>已在使用雲端採用架構
 
-如果您已遵循雲端採用架構，可能已經部署了治理 MVP。 指引是任何操作模型的核心層面。 它存在於雲端採用週期的每個階段。 因此，[雲端採用架構](../index.md)會提供指引，將治理插入與[雲端採用方案](../plan/index.md)的執行相關的活動。 這項治理整合的其中一個範例是使用藍圖來部署一個或多個登陸區域，這些是[現成](../ready/index.md)的指導方針。 另一個範例是向[外擴充訂閱](../ready/azure-best-practices/scaling-subscriptions.md)的指引。 如果您已遵循上述任一建議，則下列 MVP 章節只會回顧現有的部署決策。 在快速審查之後，立即跳至[成熟的初始治理解決方案，並套用最佳作法的控制項](./foundation-improvements.md)。
+如果您已遵循雲端採用架構，可能已經部署了治理 MVP。 治理是任何操作模型的核心層面。 它存在於雲端採用週期的每個方法中。 因此，[雲端採用架構](../index.md)會提供指引，將治理插入與[雲端採用方案](../plan/index.md)的執行相關的活動。 這項治理整合的其中一個範例是使用藍圖來部署一個或多個登陸區域，這些是[現成](../ready/index.md)的指導方針。 另一個範例是向[外擴充訂閱](../ready/azure-best-practices/scaling-subscriptions.md)的指引。 如果您已遵循上述任一建議，則下列 MVP 章節只會回顧現有的部署決策。 在快速審查之後，立即跳至[成熟的初始治理解決方案，並套用最佳作法的控制項](./foundation-improvements.md)。
 
 ## <a name="establish-an-initial-governance-foundation"></a>建立初始的治理基礎
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709170"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223919"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雜企業的治理指南：多重雲端改進
 
@@ -31,7 +31,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要是由 Azure 監視器和相關的自動化功能來管理。
-- 嚴重損壞修復和業務持續性（DRBC）是由 Azure 保存庫實例所控制。
+- 商務持續性和嚴重損壞修復（BCDR）是由 Azure 保存庫實例所控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。
 - Azure 藍圖、Azure 原則和管理群組可用來對原則進行合規性自動化。

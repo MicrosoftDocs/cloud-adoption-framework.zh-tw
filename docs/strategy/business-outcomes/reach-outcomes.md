@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798344"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225231"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 
@@ -32,7 +32,7 @@ ms.locfileid: "76798344"
 
 在新市場中作業會引進額外的治理條件約束。 GDPR 是可能造成重大財務要是的治理準則的其中一個範例。 Azure 提供合規性供應專案，協助客戶符合受管制產業和全球市場的合規性義務。 如需詳細資訊，請參閱[Microsoft Azure 合規性的總覽](https://aka.ms/AzureCompliance)。
 
-- **範例：** 以美國為基礎的公用程式提供者已獲得合約，以提供加拿大的公用程式。 加拿大的資料主權法要求加拿大的資料必須保持在加拿大。 這家公司一直致力於進行雲端式應用程式創新工作，多年來。 因此，他們的軟體可以透過完整的腳本 DevOps 程式進行部署。 除了程式碼基底的幾個次要變更，他們能夠將程式碼的工作複本部署到加拿大的 Azure 資料中心，符合資料主權合規性並讓客戶保持一致。
+- **範例：** 以美國為基礎的公用程式提供者已獲得合約，以提供加拿大的公用程式。 加拿大的資料主權法要求加拿大的資料必須保持在加拿大。 這家公司一直致力於進行雲端式應用程式創新工作，多年來。 因此，他們的軟體可以透過完整的腳本 DevOps 程式來部署。 除了程式碼基底的幾個次要變更，他們能夠將程式碼的工作複本部署到加拿大的 Azure 資料中心，符合資料主權合規性並讓客戶保持一致。
 
 ## <a name="next-steps"></a>後續步驟
 

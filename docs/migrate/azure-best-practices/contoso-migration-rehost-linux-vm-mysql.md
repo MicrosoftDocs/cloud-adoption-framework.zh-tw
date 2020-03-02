@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807405"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223016"
 ---
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM 和適用於 MySQL 的 Azure 資料庫
 
 本文說明虛構公司 Contoso 如何重新裝載兩層式以 Linux 為基礎的 Apache/MySQL/PHP (LAMP) 應用程式，使用 Azure VM 和適用於 MySQL 的 Azure 資料庫將其從內部部署遷移至 Azure。
@@ -81,7 +83,7 @@ Contoso 會按照下列方式完成移轉程序：
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | 此服務可協調和管理 Azure VM 以及內部部署 VM 和實體伺服器的移轉和災害復原。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/site-recovery)費用和定價。
 [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它可為應用程式的開發與部署，提供完全受控、符合企業需求的社群 MySQL 資料庫即服務。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -165,7 +167,7 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
 
-容錯移轉至 Azure 之後，Contoso 希望能夠連線到 Azure VM。 若要這樣做，Contoso 管理員需要執行下列動作：
+在容錯移轉至 Azure 之後，Contoso 會想要連線到 Azure Vm。 若要啟用此動作，Contoso 管理員必須執行下列動作：
 
 - 若要透過網際網路存取，請在移轉前，先在內部部署 Linux VM 上啟用 SSH。 若為 Ubuntu，可以使用下列命令來完成此動作：**Sudo apt-get ssh install -y**。
 - 容錯移轉之後，他們應勾選 [開機診斷] 以檢視 VM 的螢幕擷取畫面。
@@ -191,7 +193,7 @@ Contoso 管理員會在主要美國東部 2 區域中，佈建 MySQL 資料庫�
 
 4. 針對 [備份備援選項]，他們會選擇使用 [異地備援]。 此選項可讓他們在發生中斷時，在其次要美國中部區域中還原資料庫。 他們在佈建資料庫時，只能設定這個選項。
 
-     ![備援](./media/contoso-migration-rehost-linux-vm-mysql/db-redundancy.png)
+     ![備援性](./media/contoso-migration-rehost-linux-vm-mysql/db-redundancy.png)
 
 5. 在 [VNET-PROD-EUS2] 網路 > [服務端點] 中，他們會新增 SQL 服務的服務端點 (資料庫子網路)。
 
@@ -214,7 +216,7 @@ Contoso 管理員必須先設定及啟用複寫，才可以將 Web VM 遷移至 
 
 ### <a name="confirm-deployment-planning"></a>確認部署規劃
 
-若要繼續，他們會選取 [是，我已經完成]，確認已經完成部署規劃。 在這個案例中，Contoso 只會移轉單一 VM，所以不需要部署規劃。
+若要繼續，請選取 **[是，我已完成]** 來確認完成。 在此案例中，Contoso 只會遷移一部虛擬機器，這不需要部署規劃。
 
 ### <a name="set-up-the-source-environment"></a>設定來源環境
 
@@ -311,7 +313,7 @@ Contoso 管理員現在可以開始複寫 **OSTICKETWEB** VM。
 
      ![行動服務](./media/contoso-migration-rehost-linux-vm-mysql/linux-mobility.png)
 
-6. 在 [複寫設定] > [設定複寫設定] 中，他們會確認已套用正確的複寫原則，然後選取 [啟用複寫]。 系統將會自動安裝行動服務。
+6. 在 複寫**設定** 中 > **設定複寫設定**，他們會檢查是否已套用正確的複寫原則，然後選取 **啟用**複寫。 系統將會自動安裝行動服務。
 7. 他們在 [作業] 中追踨複寫進度。 執行 [完成保護] 作業之後，機器即準備好進行容錯移轉。
 
 **需要其他協助？**
@@ -442,7 +444,7 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安全疑慮。
 
 - 他們會檢閱 VM 的網路安全性群組 (NSG) 來控制存取權。 NSG 可用來確保只可以傳遞該應用程式允許的流量。
-- 他們會考慮使用磁碟加密和 Azure KeyVault 來保護 VM 磁碟上的資料。
+- 他們考慮使用磁片加密和 Azure Key Vault 來保護 VM 磁片上的資料。
 - VM 與資料庫執行個體之間的通訊並未針對 SSL 進行設定。 他們必須這麼做，才能確保資料庫流量不會遭到駭客入侵。
 
 如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
@@ -451,8 +453,8 @@ Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安�
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
-- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
+- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

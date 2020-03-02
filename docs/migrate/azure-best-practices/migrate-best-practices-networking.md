@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803869"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225580"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | 讓流量從網際網路流向 Web 伺服器。 來自網際網路的輸入流量會遭到 DenyAllInbound 預設安全性規則拒絕，因此 AsgLogic 或 AsgDb 應用程式安全性群組則不需要其他規則。 | 優先順序：100<br/><br/> 來源：網際網路<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgWeb<br/><br/> 目的地埠：80<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
 Deny-Database-All | AllowVNetInBound 預設安全性規則允許相同 VNet 中各資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序：120<br/><br/> 來源：*<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：全部<br/><br/> 存取：拒絕。
-Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組流向 AsgDb 應用程式安全性群組。 此規則的優先順序高於 Deny-Database-All 規則，前者處理完後會處理後者，因此系統會允許來自 AsgLogic 應用程式安全性群組的流量，但所有其他流量仍會遭到封鎖。 | 優先順序：110<br/><br/> 來源： AsgLogic<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
+Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組流向 AsgDb 應用程式安全性群組。 此規則的優先順序高於 [拒絕-資料庫-全部] 規則，因此會先處理此規則。 因此，允許來自 AsgLogic 應用程式安全性群組的流量，並封鎖所有其他流量。 | 優先順序：110<br/><br/> 來源： AsgLogic<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
 
 <!--markdownlint-enable MD033 -->
 

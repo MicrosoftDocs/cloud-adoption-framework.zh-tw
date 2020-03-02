@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213604"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223261"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 
@@ -39,7 +39,7 @@ ms.locfileid: "77213604"
 - **營運合規性：** 設定、調整大小、成本和資產效能的一般管理，是維持效能預期的關鍵。
 - **保護與復原：** 最小化作業中斷和加速復原可協助企業避免效能損失和負面的收益影響。 偵測和復原是這個專業領域的重要層面。
 - **平臺作業：** 所有的 IT 環境都包含一組常用的平臺。 這些平臺可以包含資料存放區，例如 SQL Server 或 Azure HDInsight。 其他常見的平臺可以包含容器解決方案，例如 Azure Kubernetes Service （AKS）。 無論平臺為何，平臺作業成熟度都著重于根據一般平臺的部署、設定和使用方式，自訂作業。
-- **工作負載作業：** 在最高層級的營運成熟度中，雲端營運小組可以針對企業成功的關鍵工作負載調整作業。 針對這些高重要性的工作負載，可用的資料可協助自動化修復、調整大小，或根據其使用率來保護工作負載。
+- **工作負載作業：** 在最高層級的營運成熟度中，雲端營運小組可以微調重要工作負載的作業。 針對這些工作負載，可用的資料可協助自動化修復、調整大小，或根據其使用率來保護工作負載。
 
 如[設計審查架構（程式碼名稱：雲端設計原則）](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview)等其他指引，可以協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
 

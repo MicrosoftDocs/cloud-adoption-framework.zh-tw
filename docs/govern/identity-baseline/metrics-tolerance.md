@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709340"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223869"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>身分識別基準的計量、指標及風險承受度
 
@@ -53,7 +53,7 @@ ms.locfileid: "77709340"
 - **同盟觸發程式。** 使用_x_外部身分識別基準系統來執行身分識別同盟的公司，可以受益于投資身分識別基準專業領域，以確保同盟成員之間一致的組織原則。
 - **提升許可權的存取觸發程式。** 若公司擁有超過_x%_ 的使用者，且具有更高的管理工具和資源許可權，則應考慮投資身分識別基準專業領域，以將意外過度布建使用者存取權的風險降至最低。
 - **RBAC 觸發程式。** 使用角色型存取控制方法的資源低於_x%_ 的公司，應考慮投資身分識別基準專業領域，以識別將使用者存取權指派給資源的最佳方式。
-- **驗證失敗觸發程式。** 如果驗證失敗的公司代表超過_x%_ 的嘗試次數，則應投資身分識別基準專業領域，以確保驗證方法不會遭受外部攻擊，而且使用者能夠正確地使用驗證方法。
+- **驗證失敗觸發程式。** 如果驗證失敗的公司代表超過_x%_ 的嘗試次數，則應投資身分識別基準專業領域，以確保驗證方法不會遭受外部攻擊，而且使用者可以適當地進行驗證。
 - **授權失敗觸發程式。** 若公司的存取嘗試遭到拒絕超過_x%_ ，則應投資身分識別基準專業領域，以改善應用程式和存取控制的更新，並找出潛在的惡意存取嘗試。
 - **遭盜用的帳戶觸發程式。** 具有超過1個已遭入侵之帳戶的公司應投資身分識別基準專業領域，以改善驗證機制的強度和安全性，並改善用來補救遭入侵之帳戶相關風險的機制。
 

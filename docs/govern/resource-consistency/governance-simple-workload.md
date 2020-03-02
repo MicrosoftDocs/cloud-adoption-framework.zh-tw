@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709561"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223720"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -47,7 +47,7 @@ Azure 只信任由 [Azure AD](https://docs.microsoft.com/azure/active-directory)
 ![Azure AD 全域管理員建立工作負載擁有者帳戶](../../_images/govern/design/governance-1-2.png)
 *圖 2-Azure AD 全域管理員會建立工作負載擁有者使用者帳戶。*
 
-在這個使用者新增至**訂用帳戶**之前，您無法指派資源存取權限，因此您會在後續兩個章節進行這項操作。
+在將此使用者新增至**訂**用帳戶之前，您無法指派資源存取權限，因此您將在接下來的兩個區段中執行此動作。
 
 ## <a name="resource-management-scope"></a>資源管理範圍
 

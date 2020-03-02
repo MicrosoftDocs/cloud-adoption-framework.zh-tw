@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599977"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222623"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -85,7 +85,7 @@ ms.locfileid: "77599977"
 
 調整及管理內部部署儲存體 (SAN 或 NAS) 以及網路以支援它們的成本可能非常高，而且非常耗時。 檔案 (儲存體) 資料通常會移轉到is commonly migrated to 雲端，以協助解決作業與管理難題。 Microsoft 提供數個選項讓您將資料移動到 Azure，而且您需要制訂有關那些選項的決策。 為資料挑選正確的儲存體類型每個月可以為您的組織節省數萬塊錢。 一些考量：
 
-- 非經常存取的資料與非業務關鍵的資料不需要放置在最貴的儲存體上。
+- 不常存取且不是業務關鍵的資料，不需要放在成本最高的儲存體上。
 - 相反地，重要的業務關鍵資料應該放在較高層級的儲存體選項中。
 - 在進行移轉規劃期間，請建立資料清查並依重要性分類，以將它對應到最適當的儲存體。 考慮預算與成本，以及效能。 成本不應該是主要決策制訂因素。 挑選最便宜的選項可能會讓工作負載面臨效能與可用性風險。
 

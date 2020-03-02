@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808085"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223385"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模設定 Azure 伺服器管理服務
 
@@ -74,7 +74,7 @@ Azure 原則具有內建的[原則方案](https://docs.microsoft.com/azure/gover
 > [!NOTE]
 > 將 Azure 伺服器管理服務上架到伺服器之前，請先建立必要的[Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account)。
 
-針對內部部署伺服器，您必須手動下載並安裝[Log Analytics 代理程式和 Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並設定它們以連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**] > [ **Advanced settings**]。
+針對內部部署伺服器，您必須手動下載並安裝[Log Analytics 代理程式和 Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並設定它們以連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**] > [**高級設定**]。
 
 ![Azure 入口網站中 Log Analytics 工作區的 [高級設定] 螢幕擷取畫面](./media/onboarding-on-premises.png)
 
@@ -139,7 +139,7 @@ Azure 原則具有內建的[原則方案](https://docs.microsoft.com/azure/gover
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 **所有服務**，然後選取 **管理 + 治理**  > **解決方案**。
+1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**] [ > **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
 3. 搜尋**活動記錄分析**並加以選取。
 4. 選取 [建立]。
@@ -152,7 +152,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 **所有服務**，然後選取 **管理 + 治理**  > **解決方案**。
+1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**] [ > **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
 3. 搜尋**Azure Log Analytics 代理程式健全狀況**並加以選取。
 4. 選取 [建立]。
@@ -167,9 +167,9 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 **所有服務**，然後選取 **管理 + 治理**  > **解決方案**。
+1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，選取 [選取**管理 + 治理**] [ > **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
-3. 搜尋並選取 [**反惡意程式碼軟體評定**]。
+3. 搜尋，然後選取 [**反惡意程式碼軟體評定**]。
 4. 選取 [建立]。
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
@@ -187,7 +187,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 若要啟用 Azure 資訊安全中心免費層，請遵循下列步驟：
 
 1. 移至**資訊安全中心**入口網站頁面。
-2. 在 [**原則 & 相容性**] 底下，選取 [**安全性原則**]。
+2. 在 [**原則 &AMP; 相容性**] 底下，選取 [**安全性原則**]。
 3. 尋找您在右側窗格中建立的 Log Analytics 工作區資源。
 4. 選取該工作區的 [**編輯設定**]。
 5. 選取 [定價層]。

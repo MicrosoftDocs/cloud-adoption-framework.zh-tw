@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173404"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222221"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>建立小組結構
 
 每個雲端功能都是由每個雲端採用的人員所提供。 這些指派和小組結構可以開發成長，也可以故意設計成符合定義的小組結構。
@@ -60,7 +62,7 @@ ms.locfileid: "77173404"
 
 ## <a name="central-it"></a>集中式 IT
 
-隨著採用規模的調整，雲端治理小組可能會努力與來自多個雲端採用小組的創新流程保持一致。 這在具有大量合規性、作業或安全性需求的環境中更是如此。 在這個階段，公司通常會將雲端責任轉移給現有的中央 IT 小組。 如果該小組能夠重新評估工具、處理常式和人員，以更大規模地支援雲端採用，則包含中央 IT 小組可以增加顯著的價值。 從營運、自動化、安全性及系統管理的主題專家，到現代化的中央 IT，都能推動有效的營運創新。
+隨著採用規模的調整，雲端治理小組可能會努力與來自多個雲端採用小組的創新流程保持一致。 這在具有大量合規性、作業或安全性需求的環境中更是如此。 在這個階段，公司通常會將雲端責任轉移給現有的中央 IT 小組。 如果該小組可以重新評估工具、處理常式和人員，以更大規模地支援雲端採用，則包含中央 IT 小組可以增加顯著的價值。 從營運、自動化、安全性及系統管理的主題專家，到現代化的中央 IT，都能推動有效的營運創新。
 
 ![使用中央 IT 模型進行雲端採用](../_images/ready/org-ready-central-it.png)
 

@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b629cc932b54b7ef7c633cefc847ac3263477674
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807337"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222999"
 ---
+<!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>將內部部署 Linux 應用程式重新裝載至 Azure VM
 
 本文說明虛構公司 Contoso 如何使用 Azure IaaS VM 重新裝載兩層式 Linux 型Apache MySQL PHP (LAMP) 應用程式。
@@ -68,7 +70,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **考量** | **詳細資料**
 --- | ---
-**優點** | 這兩個應用程式 VM 都會移至 Azure (不需變更)，讓移轉變簡單。<br/><br/> 因為 Contoso 會針對這兩個應用程式 Vm 使用隨即轉移方法，所以應用程式資料庫不需要任何特殊設定或遷移工具。<br/><br/> Contoso 會保留 Azure 中應用程式 VM 的完整控制權。 <br/><br/> 應用程式 VM 會執行 Ubuntu 16.04-TLS，這是經過背書的 Linux 散發套件。 [深入了解](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
+**優點** | 這兩個應用程式 VM 都會移至 Azure (不需變更)，讓移轉變簡單。<br/><br/> 因為 Contoso 會針對這兩個應用程式 Vm 使用隨即轉移方法，所以應用程式資料庫不需要任何特殊設定或遷移工具。<br/><br/> Contoso 會保留 Azure 中應用程式 VM 的完整控制權。 <br/><br/> 應用程式 VM 會執行 Ubuntu 16.04-TLS，這是經過背書的 Linux 散發套件。 [詳細資訊](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
 **缺點** | 應用程式的 Web 和資料層會保留單一容錯移轉點。 <br/><br/> Contoso 必須繼續支持此應用程式作為 Azure VM，而不是轉向適用於 MySQL 的 Azure App Service 與 Azure Database 等受控服務。<br/><br/> Contoso 知道，透過隨即轉移 VM 遷移來簡化工作，並不會充分利用[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)所提供的功能（內建的高可用性、可預測的效能、簡單的調整、自動備份和內建的安全性）。
 
 <!-- markdownlint-enable MD033 -->
@@ -90,7 +92,7 @@ Contoso 會按照下列方式進行遷移：
 --- | --- | ---
 [Azure Migrate 伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 發生容錯移轉時，系統會建立 Azure VM 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -142,7 +144,7 @@ Contoso 會按照下列方式進行遷移：
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
 
-容錯移轉至 Azure 之後，Contoso 希望能夠連線到 Azure 中複寫的 VM。 若要這麼做，Contoso 管理員還需執行一些作業：
+在容錯移轉至 Azure 之後，Contoso 想要連線到 Azure 中複寫的 Vm。 若要這樣做，Contoso 管理員必須遵循下列步驟：
 
 - 若要透過網際網路存取 Azure VM，請在移轉前，先在內部部署 Linux VM 上啟用 SSH。 若為 Ubuntu，可以使用下列命令來完成此動作：**Sudo apt-get ssh install -y**。
 - 執行移轉 (容錯移轉) 之後，可以勾選 [開機診斷] 來檢視 VM 的螢幕擷取畫面。
@@ -158,7 +160,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 完成探索之後，您就可以開始將 VMware VM 複寫至 Azure。
 
-1. 在 [Azure Migrate 專案] > [伺服器]、[Azure Migrate：伺服器移轉] 中，按一下 [複寫]。
+1. 在 Azure Migrate 專案 >**伺服器**， **Azure Migrate：伺服器遷移** 中，**選取** 複寫。
 
     ![複寫 VM](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
@@ -175,14 +177,14 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
     ![選取評估](./media/contoso-migration-rehost-linux-vm/select-assessment.png)
 
-5. 在 [虛擬機器] 中，視需要搜尋 VM，並檢查您要遷移的每個 VM。 然後按 **[下一步：目標設定]** 。
+5. 在 [虛擬機器] 中，視需要搜尋 VM，並檢查您要遷移的每個 VM。 然後選取 **[下一步：目標設定]** 。
 
 6. 在 [目標設定] 中，選取訂用帳戶、您的遷移目標區域，並指定 Azure VM 在移轉後所在的資源群組。 在 [虛擬網路] 中，選取 Azure VM 在移轉後所將加入的 Azure VNet/子網路。
 
 7. 在  **Azure Hybrid Benefit**中，選取下列各項：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後按一下 [下一步]。
-    - 如果您有 Windows Server 機器涵蓋於有效的軟體保證或 Windows Server 訂用帳戶下，且您想要將權益套用至要移轉的機器，請選取 [是]。 然後按一下 [下一步]。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後選取 [下一步]。
+    - 如果您有 Windows Server 機器涵蓋於有效的軟體保證或 Windows Server 訂用帳戶下，且您想要將權益套用至要移轉的機器，請選取 [是]。 然後選取 [下一步]。
 
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -190,11 +192,11 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     - **OS 磁片：** 指定 VM 的 OS （開機）磁片。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此設定組必須位於您為移轉指定的目標資源群組中。
 
-9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後按一下 [下一步]。
+9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]。
     - 您可以從複寫排除磁碟。
     - 如果您排除磁碟，則在移轉後磁碟將不會出現在 Azure VM 上。
 
-10. 在 [檢閱並啟動複寫] 中檢閱設定，然後按一下 [複寫] 以啟動伺服器的初始複寫。
+10. 在 [**審查並啟動**複寫] 中，檢查設定，**然後選取 [複寫]，啟動**伺服器的初始複寫。
 
 > [!NOTE]
 > 您可以在複寫開始之前隨時更新複寫設定 (經由 [管理] > [複寫機器])。 在複寫啟動後，就無法變更設定。
@@ -205,18 +207,18 @@ Contoso 管理員會執行一次快速的容錯移轉測試，然後再執行一
 
 ### <a name="run-a-test-failover"></a>執行測試容錯移轉
 
-1. 在 [移轉目標] > [伺服器] > [Azure Migrate：伺服器移轉] 中，按一下 [測試遷移的伺服器]。
+1. 在 [**遷移目標**] > **伺服器** > **Azure Migrate： [伺服器遷移**] 中，選取 [**測試遷移的伺服器**]。
 
      ![測試遷移的伺服器](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
-2. 以滑鼠右鍵按一下要測試的 VM，然後按一下 [測試遷移]。
+2. 以滑鼠右鍵按一下要測試的 VM，然後選取 [**測試遷移**]。
 
     ![測試移轉](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 3. 在 [測試移轉] 中，選取 Azure VM 在移轉後將位於其中的 Azure VNet。 我們建議使用非生產 VNet。
 4. **測試移轉**作業隨即啟動。 請在入口網站通知中監視作業。
 5. 移轉完成之後，請在 Azure 入口網站的 [虛擬機器] 中檢視已遷移的 Azure VM。 機器名稱會具有尾碼 **-Test**。
-6. 測試完成之後，以滑鼠右鍵按一下 [複寫機器] 中的 Azure VM，然後按一下 [清除測試移轉]。
+6. 測試完成之後，以滑鼠右鍵按一下 [複寫**機器**] 中的 [Azure VM]，然後選取 [**清除測試遷移**]。
 
     ![清除移轉](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
@@ -224,7 +226,7 @@ Contoso 管理員會執行一次快速的容錯移轉測試，然後再執行一
 
 Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 
-1. 在 [Azure Migrate 專案] > [伺服器] > [Azure Migrate：伺服器移轉] 中，按一下 [複寫伺服器]。
+1. 在 Azure Migrate 專案 >**伺服器** > **Azure Migrate： 伺服器遷移** 中，選取 複寫**伺服器**。
 
     ![複寫伺服器](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -237,7 +239,7 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 
 ### <a name="connect-the-vm-to-the-database"></a>將 VM 連線到資料庫
 
-在移轉程序的最後一個步驟中，Contoso 管理員會將應用程式的連接字串更新為指向在 **OSTICKETMYSQL** VM 上執行的應用程式資料庫。
+在遷移程式的最後一個步驟中，Contoso 管理員會更新應用程式的連接字串，以指向在**OSTICKETMYSQL** VM 上執行的應用程式資料庫。
 
 1. 他們會使用 Putty 或另一個 SSH 用戶端，對 **OSTICKETWEB** VM 進行 SSH 連線。 VM 為私用的，所以會使用私人 IP 位址進行連線。
 
@@ -299,8 +301,8 @@ Contoso 安全性小組會檢閱 OSTICKETWEB 和 OSTICKETMYSQLVM，判斷是否�
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- **保護資料安全。** Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- **保持應用程式啟動及執行。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

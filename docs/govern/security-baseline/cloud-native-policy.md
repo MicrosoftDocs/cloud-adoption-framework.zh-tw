@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707487"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223742"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
@@ -90,7 +90,7 @@ ms.locfileid: "77707487"
 - **保護 VM 內容。** 設定定期自動備份是保護以免發生使用者錯誤的基本要務。 不過，這還不夠，您也必須確定您的備份可以安全地網路攻擊，而且可以在需要時使用。
 - **監視應用程式。** 此模式包含數個工作，包括深入解析您 VM 的健康情況、了解它們之間的互動，並建立監視應用程式 (由這些 VM 執行) 的方式。 這些工作都是保持應用程式全天候執行不可或缺的項目。
 - **保護和審核資料存取。** 組織應審查所有的資料存取權，並使用先進的機器學習功能來呼叫與一般存取模式的偏差。
-- **容錯移轉實務。** 具有低容錯能力的雲端作業必須能夠從網路安全性或平臺事件進行容錯回復或復原。 這些程式不一定要記載，但應該每季進行練習。
+- **容錯移轉實務。** 具有低容錯能力的雲端作業必須能夠容錯移轉或從網路安全性或平臺事件復原。 這些程式不一定要記載，但應該每季進行練習。
 
 ## <a name="next-steps"></a>後續步驟
 

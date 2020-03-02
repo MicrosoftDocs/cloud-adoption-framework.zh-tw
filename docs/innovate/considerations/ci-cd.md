@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170557"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223491"
 ---
 # <a name="empower-adoption"></a>實現採用
 
@@ -45,7 +45,7 @@ ms.locfileid: "78170557"
 
 當您要調整創新時，沒有比解決方案的共用程式碼基底更有價值的工具。 可惜的是，沒有可靠的方法可預測哪一個反復專案，或哪些 MVP 會產生獲勝的組合。 這就是為什麼要建立共用程式碼基底或儲存機制的原因不太早。 這是一項不應延遲的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)。 當小組逐一查看各種 MVP 解決方案時，共用存放庫可讓您輕鬆共同作業和加速開發。 當解決方案的變更向下拖曳學習計量時，版本控制可讓您回復為較早且更有效率的方案版本。
 
-管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您只需按幾下滑鼠就能建立共用程式碼儲存機制。 此外，Azure DevOps 的[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)功能可以用來建立[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)或[Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)存放庫。
+管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您只需幾個步驟就能建立共用程式碼儲存機制。 此外，Azure DevOps 的[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)功能可以用來建立[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)或[Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)存放庫。
 
 ## <a name="feedback-loops"></a>意見反應迴圈
 
@@ -61,7 +61,7 @@ ms.locfileid: "78170557"
 
 在持續整合中，程式碼變更經常會合並到主要分支中。 自動化的組建和測試程式可確保主要分支中的程式碼一律具有生產品質。 這可確保開發人員共同作業，以開發提供精確且可靠的意見反應迴圈的共用解決方案。
 
-Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)在 GitHub 或各種其他存放庫中只需按幾下，即可提供持續整合功能。
+Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)只要 GitHub 或各種其他存放庫中的幾個步驟，就能提供持續整合功能。
 深入瞭解[持續整合](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)，或如需詳細資訊，請參閱[實際操作實驗室](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)。 另外還有解決方案架構，可透過 Azure DevOps 加速建立[CI/CD 管線](https://azure.microsoft.com/solutions/devops)。
 
 ## <a name="reliable-testing"></a>可靠的測試

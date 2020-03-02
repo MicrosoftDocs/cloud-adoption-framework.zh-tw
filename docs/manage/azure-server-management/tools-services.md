@@ -7,27 +7,27 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807932"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223278"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如本指引的[總覽](./index.md)中所討論，Azure 伺服器管理服務的套件涵蓋下列領域：
 
-- 移轉
+- 遷移
 - 安全
-- 保護
+- Protect
 - 監視
 - 設定
 - 治理
 
 下列各節將簡短說明這些管理區域，並提供有關支援它們的主要 Azure 服務之詳細內容的連結。
 
-## <a name="migrate"></a>移轉
+## <a name="migrate"></a>遷移
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估是否適合進行遷移。 Azure Migrate 完成評估之後，您可以使用[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將您的內部部署機器遷移至 azure。
 
@@ -35,9 +35,9 @@ ms.locfileid: "76807932"
 
 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)是全方位的安全性管理應用程式。 藉由上架至資訊安全中心，您可以快速取得環境的安全性和法規合規性狀態的評量。 如需將伺服器上架到 Azure 資訊安全中心的指示，請參閱[設定訂用帳戶的 Azure 管理服務](./onboard-at-scale.md#azure-security-center)。
 
-## <a name="protect"></a>保護
+## <a name="protect"></a>Protect
 
-若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性嚴重損壞修復（BCDR）計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
+若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性和嚴重損壞修復（BCDR）計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
 
 當您建立資料保護策略時，請考慮將您的工作負載應用程式細分成不同的層級。 這種方法會有説明，因為每一層通常都需要自己獨特的保護計劃。 若要深入瞭解如何設計應用程式以進行復原，請參閱[為 Azure 設計復原應用程式](https://docs.microsoft.com/azure/architecture/resiliency)。
 
@@ -97,7 +97,7 @@ ms.locfileid: "76807932"
 - [Azure 資訊安全中心](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure 自動化](https://azure.microsoft.com/pricing/details/automation)，包括：
-  - 期望的狀態設定
+  - Desired State Configuration
   - Azure 更新管理服務
   - Azure 變更追蹤和清查服務
 

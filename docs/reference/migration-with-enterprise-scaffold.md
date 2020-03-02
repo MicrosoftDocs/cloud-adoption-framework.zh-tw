@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629244"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225276"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
 > [!NOTE]
@@ -47,7 +49,7 @@ Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實�
 >
 下圖顯示 Scaffold 的元件。 其基礎依賴於管理階層和訂用帳戶的可靠計畫。 其要件是由 Resource Manager 原則和強大的命名標準所組成。 Scaffold 的其餘部分是 Azure 核心功能，而這些功能可打造出安全且易於管理的環境，並與之連線。
 
-![企業 scaffold](../_images/reference/scaffoldv2.png)
+![企業 scaffold](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>定義您的階層
 
@@ -269,7 +271,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 
 從內部部署雲端移到公用雲端時，您會面臨的其中一個重大變更就是從資本支出 (購買硬體) 切換到營運支出 (支付所使用的服務)。 此參數也需要更小心地管理您的成本。 雲端的優點是，您只需要在不需要時關閉或調整服務的成本，就能以根本上的方式影響您所使用的服務。 刻意在雲端中管理您的成本是最佳作法，而一個成熟的客戶會每天執行。
 
-Microsoft 提供數種工具，讓您能夠以視覺化、追蹤和管理您的成本。 我們也提供一組完整的 API，可讓您自訂成本管理，並將其整合至您自己的工具和儀表板中。 這些工具會鬆散分組為 Azure 入口網站功能和外部功能。
+Microsoft 提供數種工具，可協助您視覺化、追蹤和管理您的成本。 我們也提供一組完整的 API，可讓您自訂成本管理，並將其整合至您自己的工具和儀表板中。 這些工具會鬆散分組為 Azure 入口網站功能和外部功能。
 
 ### <a name="azure-portal-capabilities"></a>Azure 入口網站功能
 

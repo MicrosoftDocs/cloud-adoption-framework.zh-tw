@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99f4a240f186af763c64f06aab580e5aecc4acc4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709136"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223956"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -39,10 +39,14 @@ ms.locfileid: "77709136"
 每個應用程式都應該在管理群組、訂用帳戶，以及資源群組階層的適當區域中部署。 在部署規劃期間，雲端治理小組將在階層中建立必要的節點，使雲端採用小組更具產能。
 
 1. 定義每個營業單位的管理群組，其具有能先詳細反映地理位置和環境類型 (例如實際執行或非商業執行環境) 的階層。
-2. 針對個別業務單位或地理位置的每一個唯一組合，建立實際執行訂用帳戶和非商業執行訂用帳戶。 建立多個訂用帳戶需要謹慎考慮。 如需詳細資訊，請參閱[訂用帳戶決策指南](../../../decision-guides/subscriptions/index.md)。
-3. 在此群組階層的每個層級套用[一致的命名法](../../../ready/azure-best-practices/naming-and-tagging.md)。
-4. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需有關資源群組最佳用法的詳細資訊，[請參閱這裡](../../../decision-guides/resource-consistency/index.md)。
-5. [區域選取](../../../decision-guides/regions/index.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
+
+1. 針對個別業務單位或地理位置的每一個唯一組合，建立實際執行訂用帳戶和非商業執行訂用帳戶。 建立多個訂用帳戶需要謹慎考慮。 如需詳細資訊，請參閱[訂用帳戶決策指南](../../../decision-guides/subscriptions/index.md)。
+
+1. 在此群組階層的每個層級套用[一致的命名法](../../../ready/azure-best-practices/naming-and-tagging.md)。
+
+1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需有關資源群組最佳用法的詳細資訊，[請參閱這裡](../../../decision-guides/resource-consistency/index.md)。
+
+1. [區域選取](../../../decision-guides/regions/index.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
 
 ![大型企業資源組織圖](../../../_images/govern/large-enterprise-resource-organization.png)
 

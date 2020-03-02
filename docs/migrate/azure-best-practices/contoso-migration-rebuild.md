@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807490"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223099"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>在 Azure 上重建內部部署應用程式
 
 本文示範虛構公司 Contoso 如何在移轉至 Azure 的過程中，重建在 VMware VM 上執行的兩層式 Windows .NET 應用程式。 Contoso 會將應用程式的前端 VM 遷移至 Azure App Service Web 應用程式。 應用程式後端的建置，則是使用 Azure Kubernetes Service (AKS) 所管理容器中部署的微服務來進行。 網站會與 Azure Functions 互動以提供寵物相片功能。
@@ -27,7 +29,7 @@ IT 領導小組與商務合作夥伴密切合作，以了解此次移轉所要�
 
 - **因應業務成長。** Contoso 正在成長，而想要為 Contoso 網站上的客戶提供差異化的體驗。
 - **變得敏捷。** Contoso 的因應速度必須能夠領先市場變化，才能在全球經濟中獲致成功。
-- **調整。** 隨著企業順利成長，Contoso IT 小組必須提供能夠同步成長的系統。
+- **調整。** 隨著企業順利成長，Contoso IT 小組必須提供能夠以相同步調成長的系統。
 - **降低成本。** Contoso 想要將授權費用降至最低。
 
 ## <a name="migration-goals"></a>移轉目標
@@ -75,7 +77,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **考量** | **詳細資料**
 --- | ---
-**優點** | 使用 PaaS 和無伺服器解決方案來進行端對端部署可大幅減少 Contoso 必須提供的管理時間。<br/><br/> 移轉至微服務架構可讓 Contoso 隨著時間的進展輕鬆延伸解決方案。<br/><br/> 在將新功能上線時，不必中斷任何現有的解決方案程式碼基底。<br/><br/> Web 應用程式會設定為配有多個執行個體，所以不會有單一失敗點。<br/><br/> 會啟用自動調整功能，讓應用程式能夠處理不同的流量。<br/><br/> 移往 PaaS 服務後，Contoso 可以淘汰在 Windows Server 2008 R2 作業系統上執行的過時解決方案。<br/><br/> CosmosDB 有內建容錯能力，Contoso 不必進行設定。 這表示資料層不再是單一的容錯移轉點。
+**優點** | 使用 PaaS 和無伺服器解決方案來進行端對端部署可大幅減少 Contoso 必須提供的管理時間。<br/><br/> 移至微服務架構可讓 Contoso 在一段時間內輕鬆擴充解決方案。<br/><br/> 在將新功能上線時，不必中斷任何現有的解決方案程式碼基底。<br/><br/> Web 應用程式會設定為配有多個執行個體，所以不會有單一失敗點。<br/><br/> 會啟用自動調整功能，讓應用程式能夠處理不同的流量。<br/><br/> 移往 PaaS 服務後，Contoso 可以淘汰在 Windows Server 2008 R2 作業系統上執行的過時解決方案。<br/><br/> CosmosDB 有內建容錯能力，Contoso 不必進行設定。 這表示資料層不再是單一的容錯移轉點。
 **缺點** | 容器比其他移轉選項複雜得多。 其學習曲線可能會是 Contoso 的難題。 儘管有學習曲線的問題，但容器帶來了新的複雜度等級，而可提供許多價值。<br/><br/> Contoso 的營運團隊必須提升能力，以針對應用程式來了解和支援 Azure、容器及微服務。<br/><br/> Contoso 尚未針對整個解決方案完全實作 DevOps。 Contoso 必須在將服務部署至 AKS、Azure Functions 及 Azure App Service 時，考慮到這一點。
 
 <!-- markdownlint-enable MD033 -->
@@ -94,12 +96,12 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **服務** | **說明** | **成本**
 --- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
-[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/kubernetes-service)。
+[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/functions)。
+[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/container-registry)。
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [詳細資訊](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -178,7 +180,7 @@ Contoso 管理員會依下列方式進行佈建：
 
 9. 部署完成之後，他們會安裝 **kubectl** 命令列工具。 Azure CloudShell 上已安裝此工具。
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Contoso 管理員會依下列方式進行佈建：
 
 11. 他們會執行下列命令來啟動 Kubernetes 儀表板：
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -244,7 +246,7 @@ Contoso 會建立 Azure DevOps 專案，並設定 CI 組建來建立容器，再
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
-12. 他們會再次輸入 docker-compose.yaml 檔案的路徑，然後選取 [推送服務映像] 並包含最新的標記。 當動作變更為 [推送服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動推送服務]。
+12. 同樣地，他們會將檔案輸入至 yaml 檔案，然後選取 [**推送服務映射**]，並包含最新的標記。 當動作變更為 [推送服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動推送服務]。
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -269,10 +271,11 @@ Contoso 會建立 Azure DevOps 專案，並設定 CI 組建來建立容器，再
 
 他們會如下所示地進行部署：
 
-1. 他們會開啟開發人員命令提示字元，然後使用 az login 命令來登入 Azure 訂用帳戶。
+1. 他們會開啟開發人員命令提示字元，並針對 Azure 訂用帳戶使用命令 `az login`。
+
 2. 他們會使用 deploy.cmd 檔案，透過輸入下列命令，將 Azure 資源部署在 ContosoRG 資源群組和 EUS2 區域：
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -353,7 +356,7 @@ Contoso 管理員需要部署將供前端應用程式使用的基礎結構。 �
 
 ### <a name="create-blob-storage-containers"></a>建立 Blob 儲存體容器
 
-1. 在 Azure 入口網站中，他們會開啟已建立的儲存體帳戶，然後選取 [Blob]。
+1. 在 [Azure 入口網站] 中，他們會開啟已建立的儲存體帳戶，然後選取 [ **blob**]。
 2. 他們會建立新的容器 (**Pets**)，並將公用存取層級設定為容器。 使用者會將其寵物相片上傳至此容器。
 
     ![儲存體 Blob](./media/contoso-migration-rebuild/blob1.png)
@@ -374,7 +377,7 @@ Contoso 管理員會佈建用於存放寵物資訊的 Cosmos 資料庫。
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. 他們會指定名稱 (**contososmarthotel**)、選取 SQL API，並將其放在美國東部 2 主要區域中的生產資源群組 ContosoRG 內。
+2. 他們會指定名稱（**contososmarthotel**）、選取 SQL API，並將它放在美國東部2主要區域的生產資源群組 ContosoRG 中。
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -392,15 +395,15 @@ Contoso 管理員會佈建「電腦視覺 API」。 函式會呼叫此 API 來�
 
 1. 他們會在 Azure Marketplace 中建立**電腦視覺**執行個體。
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision1.png)
+     ![電腦視覺](./media/contoso-migration-rebuild/vision1.png)
 
 2. 他們會在美國東部 2 主要區域的生產資源群組 ContosoRG 中佈建 API (**smarthotelpets**)。
 
-    ![Computer Vision](./media/contoso-migration-rebuild/vision2.png)
+    ![電腦視覺](./media/contoso-migration-rebuild/vision2.png)
 
 3. 他們會將 API 的連線設定儲存至文字檔，以供日後參考。
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision3.png)
+     ![電腦視覺](./media/contoso-migration-rebuild/vision3.png)
 
 ### <a name="provision-the-azure-web-app"></a>佈建 Azure Web 應用程式
 
@@ -509,7 +512,7 @@ Contoso 管理員現在已可發佈網站。
 
 10. 他們會選取成品上的閃電圖示，然後啟用持續部署。
 
-    ![持續部署](./media/contoso-migration-rebuild/vsts-publishfront6.png)
+    ![連續部署](./media/contoso-migration-rebuild/vsts-publishfront6.png)
 11. 在 [環境] 中，他們會選取 [Staging] 底下的 [1 個作業, 1 個工作]。
 12. 選取訂用帳戶和應用程式名稱之後，他們會開啟 [Azure App Service 部署] 工作。 此部署已設定成使用 [預備環境] 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
 
@@ -520,7 +523,7 @@ Contoso 管理員現在已可發佈網站。
     ![新增環境](./media/contoso-migration-rebuild/vsts-publishfront8.png)
 
 14. 他們會選取 [使用位置的 Azure App Service 部署]然後將環境命名為 **Prod**。
-15. 他們會選取 [1 個作業, 2 個工作]，然後選取訂用帳戶、應用程式服務名稱及**預備**位置。
+15. 他們會選取 [ **1 個作業]、[2 個工作**]，然後選取 [訂用帳戶]、[app service 名稱] 和**預備**位置。
 
     ![環境名稱](./media/contoso-migration-rebuild/vsts-publishfront10.png)
 
@@ -565,12 +568,12 @@ Contoso 管理員會依下列方式部署應用程式。
     ![部署函式](./media/contoso-migration-rebuild/function5.png)
 
 4. 他們會認可程式碼，然後透過同步處理將其送回 Azure DevOps，以發佈其變更。
-5. 他們會新增一個新的建置管線，然後選取 [Azure DevOps Git] 作為來源。
+5. 他們會新增新的組建管線，然後針對來源選取 [ **Azure DevOps Git** ]。
 6. 他們會選取 [ASP.NET Core (.NET Framework)] 範本。
 7. 他們會接受範本的預設值。
-8. 在 [觸發程序] 中，選取 [啟用持續整合]，然後選取 [儲存並排入佇列] 來啟動建置作業。
+8. 在 [**觸發**程式] 中，選取 [**啟用持續整合**]，然後選取 [**儲存 & 佇列**] 來啟動組建。
 9. 建置成功之後，他們會建置發行管線，其中會新增 [使用位置的 Azure App Service 部署]。
-10. 他們會將環境命名為 **Prod**，然後選取訂用帳戶。 他們會將 [應用程式類型] 設定為 [函數應用程式]，並將應用程式服務名稱設定為 **smarthotelpetchecker**。
+10. 他們將環境命名為「**生產**」，然後選取 [訂用帳戶]。 他們會將 [應用程式類型] 設定為 [函數應用程式]，並將應用程式服務名稱設定為 **smarthotelpetchecker**。
 
     ![函式應用程式](./media/contoso-migration-rebuild/petchecker2.png)
 
@@ -578,7 +581,7 @@ Contoso 管理員會依下列方式部署應用程式。
 
     ![構件](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. 他們會啟用 [持續部署觸發程序]，然後選取 [儲存]。
+12. 他們會啟用**持續部署觸發**程式，然後選取 [**儲存**]。
 13. 他們會選取 [將新組建排入佇列]，以執行完整的 CI/CD 管線。
 14. 函式部署完成後會出現在 Azure 入口網站中，且狀態為**執行中**。
 
@@ -604,15 +607,15 @@ Contoso 管理員會依下列方式部署應用程式。
 
 ### <a name="security"></a>安全性
 
-- Contoso 必須確保新資料庫安全無虞。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso 必須確保新資料庫安全無虞。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 應用程式必須更新為搭配使用 SSL 與憑證。 容器執行個體應重新部署為會在 443 上接聽。
-- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [深入了解](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
+- Contoso 應考慮使用 Key Vault 來保護其 Service Fabric 應用程式的祕密。 [詳細資訊](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>備份和災害復原
 
-- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
-- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [深入了解](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
+- Contoso 需要檢閱 Azure SQL Database 的備份需求。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 應考慮實作 SQL 容錯移轉群組，為資料庫提供區域性容錯移轉。 [詳細資訊](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso 可使用適用於 ACR 進階 SKU 的異地複寫功能。 [詳細資訊](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

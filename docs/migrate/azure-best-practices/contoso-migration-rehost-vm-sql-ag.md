@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807422"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222967"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>在 Azure Vm 上重新裝載內部部署應用程式，並 SQL Server Always On 可用性群組
+# <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>使用 Azure 虛擬機器和 SQL Server 重新裝載內部部署應用程式 Always On 可用性群組
 
-本文示範虛構公司 Contoso 如何在移轉至 Azure 的過程中，重新裝載在 VMware VM 上執行的兩層式 Windows .NET 應用程式。 Contoso 會將應用程式前端 VM 移轉至 Azure VM，並將應用程式資料庫移轉至 Azure SQL Server VM，在具有 SQL Server AlwaysOn 可用性群組的 Windows Server 容錯移轉叢集中執行。
+本文示範虛構公司 Contoso 如何在遷移至 Azure 的過程中，重新裝載在 VMware 虛擬機器（Vm）上執行的兩層式 Windows .NET 應用程式。 Contoso 會將應用程式前端 VM 移轉至 Azure VM，並將應用程式資料庫移轉至 Azure SQL Server VM，在具有 SQL Server AlwaysOn 可用性群組的 Windows Server 容錯移轉叢集中執行。
 
 此範例中使用的 SmartHotel360 應用程式以開放原始碼的形式提供。 如果想將它用於自己的測試目的，您可以從 [github](https://github.com/Microsoft/SmartHotel360) 進行下載。
 
@@ -27,8 +27,8 @@ IT 領導小組與商務合作夥伴密切合作，以了解此次移轉所要�
 
 - **因應業務成長。** Contoso 的業務量日益增多，對內部部署系統和基礎結構造成了壓力。
 - **提高效率。** Contoso 必須移除不必要的程序，並且簡化開發人員和使用者的程序。 企業亟需快速且不浪費時間或金錢的 IT 服務，進而更快滿足客戶的需求。
-- **提高靈活性。** Contoso IT 必須能夠更快因應企業的需求。 其因應速度必須能夠比市場變化更快，才能更在全球經濟中獲致成功。 它不得礙事，或成為企業的絆腳石。
-- **調整。** 隨著企業順利成長，Contoso IT 必須提供能夠同步成長的系統。
+- **提高靈活性。** Contoso IT 必須能夠更快因應企業的需求。 其回應速度必須比 marketplace 中的變更更快，才能在全球經濟中實現成功。 它不能用來取得或成為商務封鎖程式。
+- **調整。** 隨著企業順利成長，Contoso IT 必須提供可依相同步調成長的系統。
 
 ## <a name="migration-goals"></a>移轉目標
 
@@ -37,8 +37,8 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 這些目標�
 - 移轉之後，應用程式不管是在 Azure 或 VMware 中，應具有相同效能。 應用程式不管是在雲端中或在內部部署，都一樣重要。
 - Contoso 不想要投資此應用程式。 這對企業很重要，但以其目前的形式而言，Contoso 只想安全地移至雲端。
 - 應用程式的內部部署資料庫有可用性方面問題。 Contoso 想要將其部署於 Azure 中，作為具有容錯移轉能力的高可用性叢集。
-- Contoso 想要從目前的 SQL Server 2008 R2 平台升級至 SQL Server 2017。
-- Contoso 不想對此應用程式使用 Azure SQL Database，且正在尋求替代項目。
+- Contoso 想要從其目前的 SQL Server 2008 R2 平臺升級至 SQL Server 2017。
+- Contoso 正在尋找此應用程式 Azure SQL Database 的替代方案。
 
 ## <a name="solution-design"></a>解決方案設計
 
@@ -87,7 +87,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 **考量** | **詳細資料**
 --- | ---
 **優點** | WEBVM 會移至 Azure (不需變更)，讓移轉變得更簡單。<br/><br/> SQL Server 層將會在 SQL Server 2017 和 Windows Server 2016 上執行。 這會淘汰其目前的 Windows Server 2008 R2 作業系統，且執行 SQL Server 2017 將可支援 Contoso 的技術需求和目標。 IT 從 SQL Server 2008 R2 進行移轉時，可提供 100% 的相容性。<br/><br/> Contoso 可以使用 Azure Hybrid Benefit，充分發揮軟體保證的投資效益。<br/><br/> Azure 中高可用性 SQL Server 部署可提供容錯功能，使應用程式資料層不再是單一的容錯移轉點。
-**缺點** | WEBVM 會執行 Windows Server 2008 R2。 Azure 對此作業系統的支援僅限於特定角色 (2018 年 7 月)。 [深入了解](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。<br/><br/> 應用程式的 Web 層會保留單一容錯移轉點。<br/><br/> Contoso 必須繼續支持此 Web 層作為 Azure VM，而非移轉至 Azure App Service 等受控服務。<br/><br/> 透過選擇的解決方案，Contoso 必須繼續管理兩個 SQL Server VM，而非移轉至受控平台，例如 Azure SQL Database 受控執行個體。 此外，Contoso 可透過軟體保證，以折扣優惠在 Azure SQL Database 受控執行個體上交換其現有的授權。
+**缺點** | WEBVM 會執行 Windows Server 2008 R2。 Azure 對此作業系統的支援僅限於特定角色 (2018 年 7 月)。 [詳細資訊](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。<br/><br/> 應用程式的 Web 層會保留單一容錯移轉點。<br/><br/> Contoso 必須繼續支持此 Web 層作為 Azure VM，而非移轉至 Azure App Service 等受控服務。<br/><br/> 透過選擇的解決方案，Contoso 必須繼續管理兩個 SQL Server VM，而非移轉至受控平台，例如 Azure SQL Database 受控執行個體。 此外，Contoso 可透過軟體保證，以折扣優惠在 Azure SQL Database 受控執行個體上交換其現有的授權。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -113,7 +113,7 @@ Contoso 管理員會將應用程式 VM 移轉至 Azure。
 
 ![移轉程序](media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -368,7 +368,7 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>準備在容錯移轉後連接到 Azure VM
 
-容錯移轉之後，Contoso 想要能夠連線至 Azure VM。 為此，Contoso 管理員在移轉之前執行了下列作業：
+在容錯移轉之後，Contoso 想要連線到 Azure Vm。 若要這樣做，Contoso 管理員必須先執行下列步驟，再進行遷移：
 
 1. 為了透過網際網路存取，他們：
 
@@ -384,7 +384,7 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 此外，當他們執行容錯移轉時，需要檢查以下各項：
 
-- 觸發容錯移轉時，VM 上不應該有擱置的 Windows 更新。 如果有，在更新完成之前，使用者將無法登入 VM。
+- 觸發容錯移轉時，VM 上不應該有擱置的 Windows 更新。 如果有的話，使用者將無法登入 VM，直到更新完成為止。
 - 在容錯移轉之後，他們可以勾選 [開機診斷] 以檢視 VM 的螢幕擷取畫面。 若未解決問題，他們應確認 VM 是否執行中，並檢閱這些[疑難排解祕訣](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)。
 
 **需要其他協助？**
@@ -405,7 +405,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 ### <a name="confirm-deployment-planning"></a>確認部署規劃
 
-若要繼續，他們必須選取 [是，我已經完成]，確認自己已經完成部署規劃。 在此案例中，Contoso 僅移轉一個 VM，不需要部署計劃。
+若要繼續，他們必須選取 [是，我已經完成]，確認自己已經完成部署規劃。 在此案例中，Contoso 只會遷移 VM，而不需要部署規劃。
 
 ### <a name="set-up-the-source-environment"></a>設定來源環境
 
@@ -656,7 +656,7 @@ Contoso 安全性小組會檢查 WEBVM、SQLAOG1 和 SQLAOG2 等 Azure VM，以�
 
 - 小組會檢閱 VM 的網路安全性群組 (NSG) 以控制存取權。 NSG 可用來確保只可以傳遞該應用程式允許的流量。
 - 小組考慮使用 Azure 磁碟加密和 Key Vault 來保護磁碟上的資料。
-- 小組應評估透明資料加密 (TDE)，然後在執行於新的 SQL AOG 的 SmartHotel360 資料庫上加以啟用。 [深入了解](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。
+- 小組應評估透明資料加密 (TDE)，然後在執行於新的 SQL AOG 的 SmartHotel360 資料庫上加以啟用。 [詳細資訊](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。
 
 如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
 
@@ -664,9 +664,9 @@ Contoso 安全性小組會檢查 WEBVM、SQLAOG1 和 SQLAOG2 等 Azure VM，以�
 
 針對商務持續性和災害復原 (BCDR)，Contoso 採取下列動作：
 
-- 為了保護資料的安全，Contoso 會使用 Azure 備份服務，備份 WEBVM、SQLAOG1 和 SQLAOG2 Vm 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- Contoso 也將了解如何使用 Azure 儲存體將 SQL Server 直接備份至 Blob 儲存體。 [深入了解](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
-- 為了讓應用程式繼續運作，Contoso 會使用 Site Recovery 將 Azure 中的應用程式 Vm 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- 為了保護資料的安全，Contoso 會使用 Azure 備份服務，備份 WEBVM、SQLAOG1 和 SQLAOG2 Vm 上的資料。 [詳細資訊](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- Contoso 也將了解如何使用 Azure 儲存體將 SQL Server 直接備份至 Blob 儲存體。 [詳細資訊](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
+- 為了讓應用程式繼續運作，Contoso 會使用 Site Recovery 將 Azure 中的應用程式 Vm 複寫至次要區域。 [詳細資訊](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

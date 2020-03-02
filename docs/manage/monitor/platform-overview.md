@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807592"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223033"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>雲端監視指南：監視平臺總覽
 
 Microsoft 提供兩種產品的各種監視功能： System Center Operations Manager （專為內部部署設計，然後延伸至雲端）和 Azure 監視器（專為雲端設計，但也可以監視內部部署）系統工程. 這兩個供應專案提供核心監視服務，例如警示、服務執行時間追蹤、應用程式和基礎結構健全狀況監視、診斷和分析。
@@ -65,9 +67,9 @@ Operations Manager 需要大量的基礎結構和維護來支援管理群組，�
 
 ![Operations Manager 管理群組的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
-Azure 監視器是一項軟體即服務（SaaS）服務，其中支援它的所有基礎結構都在 Azure 中執行，並由 Microsoft 管理。 其設計目的是要大規模執行監視、分析和診斷，並可在所有國家雲端中使用。 支援 Azure 監視器所需的基礎結構核心部分（收集器、計量和記錄存放區，以及分析）由 Microsoft 維護。  
+Azure 監視器是軟體即服務（SaaS）供應專案，因此其支援的基礎結構會在 Azure 中執行，並由 Microsoft 管理。 它會大規模執行監視、分析及診斷。 其適用于所有國家/地區雲端。 支援 Azure 監視器的基礎結構核心部分（收集器、計量和記錄存放區，以及分析）由 Microsoft 維護。  
 
 ![Azure 監視器的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -99,7 +101,7 @@ Operations Manager 會執行工作流程的所有監視（規則、監視和物�
 
 ![Operations Manager 管理群組的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 #### <a name="data-sources"></a>資料來源
 
@@ -115,17 +117,17 @@ Azure 監視器會從各種來源收集資料，包括 Azure 基礎結構和平�
 
 Azure 監視器會將資料收集與針對該資料所採取的動作隔開，以支援雲端環境中的分散式微服務。 它會將多個來源的資料合併到通用資料平臺，並根據收集到的資料提供分析、視覺化和警示功能。
 
-Azure 監視器所收集的所有資料都會儲存為記錄或計量，而不同的監視器功能會依賴其中一種。 計量包含時間序列中的數值，適用于近乎即時的警示和快速的問題偵測。 記錄包含文字或數值資料，並受到強大的查詢語言支援，使其特別適用于執行複雜的分析。
+Azure 監視器所收集的資料會儲存為記錄或計量，而 Azure 監視器的不同功能會依賴這兩種方式。 計量包含時間序列中的數值，適用于近乎即時的警示和快速的問題偵測。 記錄包含文字或數值資料，而且可以使用功能強大的語言來查詢，特別適用于執行複雜的分析。
 
-因為監視器會將資料收集與該資料的動作分開，所以在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
+由於 Azure 監視器會將資料收集與對該資料的動作分隔開來，因此在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
 
-## <a name="health-monitoring"></a>狀況監控
+## <a name="health-monitoring"></a>健康狀況監視
 
 ### <a name="operations-manager"></a>Operations Manager
 
 Operations Manager 中的管理元件包含服務模型，其中描述受監視之應用程式的元件及其關聯性。 監視會根據代理程式上的資料和腳本，識別每個元件目前的健全狀況狀態。 健全狀況狀態會匯總，讓您可以快速地查看受監視電腦和應用程式的摘要健全狀況狀態。
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 Azure 監視器不會提供使用者可定義的方法來執行服務模型或監視器，以指出任何服務元件目前的健全狀況狀態。 由於監視解決方案是以 Azure 監視器的標準功能為基礎，因此不會提供狀態層級監視。 Azure 監視器的下列功能可能很有説明：
 
@@ -149,7 +151,7 @@ Operations Manager 提供四種基本方式來分析收集的資料：
 
 - **Operations Manager 命令 Shell：** 使用一組額外的 Cmdlet 擴充 Windows PowerShell，並且可以查詢和視覺化已收集的資料。 這包括圖形和其他視覺效果，以原生方式使用 PowerShell，或使用 Operations Manager HTML 式 web 主控台。
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 利用強大的 Azure 監視器分析引擎，您可以互動方式處理記錄資料，並將它們與其他監視資料結合，以進行趨勢和其他資料分析。 [Views] 和 [儀表板] 可讓您從 Azure 入口網站以各種不同的方式來視覺化查詢資料，並將其匯入 Power BI。 監視解決方案包含查詢和視圖，以呈現其所收集的資料。 適用于容器的深入解析（例如 Application Insights、適用於 VM 的 Azure 監視器和 Azure 監視器）包含自訂的視覺效果，可支援互動式監視案例。
 
@@ -161,7 +163,7 @@ Operations Manager 會建立警示，以回應預先定義的事件、達到效�
 
 管理元件包含各種預先定義的警示規則，適用于受監視應用程式中的不同重大狀況。 您可以調整這些規則，或建立自訂規則，以符合您環境的特定需求。
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 透過 Azure 監視器，您可以根據符合閾值的計量，或根據排程的查詢結果來建立警示。 雖然以度量為基礎的警示可以達到近乎即時的結果，但排定的查詢會有較長的回應時間，視資料內嵌和索引的速度而定。 不限於特定的代理程式，Azure 監視器中的記錄查詢警示可讓您分析多個工作區中儲存的所有資料的資料。 這些警示也會使用跨工作區查詢，包括來自特定 Application Insights 應用程式的資料。
 
@@ -175,7 +177,7 @@ Operations Manager 中的管理元件包含數百個個別的工作流程，而�
 
 Operations Manager 中的工作流程彼此獨立，使得跨多個受監視物件的分析變得很棘手。 這些監視案例必須以收集後的資料為基礎，這是可行的，但可能很難以，而且並不常見。
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 Azure 監視器會將資料收集與取自該資料的動作和分析分隔開來。 代理程式和其他資料來源會將記錄資料寫入至 Log Analytics 工作區，並將計量資料寫入計量資料庫，而不需要分析該資料或其使用方式的知識。 「監視」會從儲存的資料執行警示和其他動作，讓您能夠跨所有來源的資料執行分析。
 
@@ -187,7 +189,7 @@ Operations Manager 會在管理元件中執行所有監視邏輯，您可以自�
 
 Operations Manager SDK 可讓 Operations Manager 與協力廠商監視平臺或 IT 服務管理（ITSM）軟體整合。 某些合作夥伴管理元件也會使用 SDK 來支援監視網路裝置，並提供自訂的呈現體驗，例如方形 Up HTML5 儀表板或與 Microsoft Office Visio 的整合。
 
-### <a name="azure-monitor"></a>Azure Monitor
+### <a name="azure-monitor"></a>Azure 監視器
 
 Azure 監視器從 Azure 資源收集計量和記錄，幾乎不需要設定。 監視解決方案會新增監視應用程式或服務的邏輯，但它們仍可在監視中的標準記錄查詢和 views 內使用。 深入解析（例如 Application Insights 和適用於 VM 的 Azure 監視器）會使用監視器平臺來進行資料收集和處理。 它們也會提供其他工具來視覺化和分析資料。 您可以使用核心監視功能（例如記錄查詢和警示），將深入解析所收集的資料與其他資料結合。
 

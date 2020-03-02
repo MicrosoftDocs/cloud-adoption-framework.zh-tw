@@ -3,17 +3,17 @@ title: 合理化數位資產
 description: 使用雲端合理化來評估您的數位資產，並判斷在雲端中裝載它們的最佳方法。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170132"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225282"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -83,7 +83,7 @@ ms.locfileid: "78170132"
 
 不過，當您移至雲端帳戶處理模型時，淘汰資產可能會大幅節省年度營運成本和預先遷移的工作量。
 
-組織在完成量化分析後，淘汰20% 或以上的數位資產並不常見。 我們建議您先進行更多的定性分析，再決定這類動作。 在確認之後，淘汰這些資產可能會產生在雲端遷移中的第一個 ROI 勝利。 在許多情況下，這是最大的成本節約因素之一。 因此，我們建議雲端策略小組在進行資產的驗證和淘汰時，與遷移程式的組建階段平行處理，以實現初期的財務勝利。
+組織在完成量化分析後，淘汰20% 或以上的數位資產並不常見。 我們建議您在採取動作之前進行進一步的定性分析。 在確認之後，淘汰這些資產可能會產生雲端遷移的第一次 ROI 勝利。 這通常是最大的成本節約因素之一。 因此，雲端策略小組應該透過執行[遷移方法](../migrate/index.md)，同時監督資產的驗證和淘汰，以達成初期的財務勝利。
 
 ### <a name="program-adjustments"></a>方案調整
 

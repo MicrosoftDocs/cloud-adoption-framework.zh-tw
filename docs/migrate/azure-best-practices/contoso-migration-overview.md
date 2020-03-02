@@ -3,16 +3,16 @@ title: Azure 的應用程式移轉範例概觀
 description: 概述「雲端採用架構移轉」一節中包含的應用程式移轉範例。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807371"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222968"
 ---
 # <a name="application-migration-patterns-and-examples"></a>應用程式移轉模式和範例
 
@@ -28,7 +28,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 ## <a name="migration-patterns"></a>移轉模式
 
-移轉至雲端的策略可分成以下四大模式：重新裝載、重構、重新架構或重建。 您採用的策略取決於商業誘因和移轉目標。 您可以採用多種模式。 例如，您可選擇對簡單的應用程式，或對業務重要性不大的應用程式採取重新裝載的方式；而較複雜或具業務關鍵功能的應用程式則採用重新架構的方式。 我們來看一下這些模式。
+移轉至雲端的策略可分成以下四大模式：重新裝載、重構、重新架構或重建。 您採用的策略取決於商業誘因和移轉目標。 您可以採用多種模式。 例如，您可以選擇重新裝載簡單的應用程式，或對您的業務不重要的應用程式，但重新架構更複雜且業務關鍵性的應用程式。 我們來看一下這些模式。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 --- | --- | ---
 **重新裝載** | 通常稱為隨即_轉移_。 這個選項不需要變更程式碼，可讓您將現有的應用程式迅速移轉至 Azure。 每個應用程式皆依原狀移轉，可直接享有雲端優勢，而無須承擔變更程式碼的相關風險和成本。 | 需要將應用程式快速移轉至雲端時。<br/><br/> 想要在不修改應用程式的情況下進行移轉時。<br/><br/> 當應用程式在移轉後進行建構以便運用 [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) 延展性時。<br/><br/> 應用程式對您的業務很重要，但還不需要立即變更應用程式功能時。
 **重構** | 重構通常稱為「重新封裝」，需要對應用程式進行最小程度的變更，以便您連結至 [Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) 並使用雲端供應項目。<br/><br/> 例如，您可將現有應用程式移轉至 Azure App Service 或 Azure Kubernetes Service (AKS)。<br/><br/> 或者，您也可以將關聯式和非關聯式資料庫重構為 Azure SQL Database 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB 之類的選項。 | 若您的應用程式可輕鬆地重新封裝以在 Azure 中運作。<br/><br/> 若想採用 Azure 提供的創新式 DevOps 做法或針對工作負載使用容器策略會考慮 DevOps 時。<br/><br/> 若要選擇重構，您必須考量現有程式碼基礎的可攜性及可用的開發技能。
-**重新架構** | 若採用重新架構進行移轉，則會著重於修改和擴充應用程式功能及程式碼基礎，藉此將應用程式架構最佳化，以達成雲端延展性。<br/><br/> 例如，您可將單一應用程式劃分為數個微服務群組，如此即能輕鬆搭配運作和擴充。<br/><br/> 或者，您可將關聯式和非關聯式資料庫重新架構為完全受控的資料庫解決方案，例如 Azure SQL Database 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB。 | 您的應用程式需要主要修訂，以納入新功能或在雲端平台上有效地運作時。<br/><br/> 您想要使用現有應用程式投資、達到延展性要求、採用創新的 Azure DevOps 做法，以及盡可能避免使用虛擬機器時。
-**重建** | 重建的做法則更深入，您必須使用 Azure 雲端技術從頭重新打造應用程式。<br/><br/> 例如，使用 Azure Functions、Azure AI、Azure SQL Database 受控執行個體和 Azure Cosmos DB 等[雲端原生](https://azure.com/cloudnative)技術建置全新應用程式。 | 想要快速完成開發，且現有應用程式的功能及使用週期有限時。<br/><br/> 準備加速商務創新 (包括 Azure 提供的 DevOps 做法)、使用雲端原生技術建置全新應用程式，以及利用 AI、區塊鏈和 IoT 領域的先進技術時。
+**重新架構** | 若採用重新架構進行移轉，則會著重於修改和擴充應用程式功能及程式碼基礎，藉此將應用程式架構最佳化，以達成雲端延展性。<br/><br/> 例如，您可將單一應用程式劃分為數個微服務群組，如此即能輕鬆搭配運作和擴充。<br/><br/> 或者，您可將關聯式和非關聯式資料庫重新架構為完全受控的資料庫解決方案，例如 Azure SQL Database 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB。 | 您的應用程式需要主要修訂，以納入新功能或在雲端平台上有效地運作時。<br/><br/> 當您想要使用現有的應用程式投資、滿足擴充性需求、套用創新的 DevOps 做法，並將虛擬機器的使用降到最低。
+**重建** | 重建的做法則更深入，您必須使用 Azure 雲端技術從頭重新打造應用程式。<br/><br/> 例如，您可以使用 Azure Functions、Azure AI、Azure SQL Database 受控執行個體和 Azure Cosmos DB 等[雲端原生](https://azure.com/cloudnative)技術來建立環保欄位應用程式。 | 想要快速完成開發，且現有應用程式的功能及使用週期有限時。<br/><br/> 準備加速商務創新 (包括 Azure 提供的 DevOps 做法)、使用雲端原生技術建置全新應用程式，以及利用 AI、區塊鏈和 IoT 領域的先進技術時。
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>移轉範例文章
 
-本節中的文章提供數個常見移轉案例的範例。 每個範例都包含背景資訊和詳細的部署案例，說明如何設定移轉基礎結構，以及評估內部部署資源是否適合進行移轉。 本節後續將新增更多文章。
+本節提供數個常見遷移案例的範例。 每個範例都包含背景資訊和詳細的部署案例，說明如何設定遷移基礎結構，並評估內部部署資源的適用性以進行遷移。 本節後續將新增更多文章。
 
 ![一般移轉/現代化專案](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 **文章** | **詳細資料**
 --- | ---
-[評估內部部署資源是否可移轉至 Azure](./contoso-migration-assessment.md) | 本文說明如何評估在 VMware 上執行的內部部署應用程式。 在此範例中，範例組織會使用 Azure Migrate 服務來評估應用程式 VM，並使用 Database Migration Assistant 來評估應用程式 SQL Server 資料庫。
+[評估內部部署資源是否可移轉至 Azure](../../plan/contoso-migration-assessment.md) | 此計畫方法中的最佳做法文章討論如何對 VMware 上執行的內部部署應用程式進行評估。 在本文中，範例組織會使用 Azure Migrate 服務來評估應用程式虛擬機器，並使用 Data Migration Assistant 來 SQL Server 資料庫。
 
 ### <a name="infrastructure"></a>基礎結構
 
@@ -84,7 +84,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure VM 和 SQL Database 受控執行個體上重新裝載應用程式](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供適用于內部部署應用程式的隨即轉移至 Azure 的範例。 此作業須使用 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) 來移轉應用程式前端 VM，並使用 [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)將應用程式資料庫移轉至 Azure SQL Database 受控執行個體。
+[在 Azure VM 和 SQL Database 受控執行個體上重新裝載應用程式](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供適用于內部部署應用程式的隨即轉移至 Azure 的範例。 這種情況包括使用[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)將應用程式前端 VM，以及使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將應用程式資料庫移轉至 Azure SQL Database 受控執行個體。
 [在 Azure VM 上和 SQL Server Always On 可用性群組中重新裝載應用程式](./contoso-migration-rehost-vm-sql-ag.md) | 此範例說明如何使用 Azure 裝載的 SQL Server VM 移轉應用程式和資料。 範例中會使用 Site Recovery 來移轉應用程式 VM，並使用 Azure 資料庫移轉服務，將應用程式資料庫移轉至受到 SQL Server 可用性群組保護的 SQL Server 叢集。
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP 和 JAVA 應用程式

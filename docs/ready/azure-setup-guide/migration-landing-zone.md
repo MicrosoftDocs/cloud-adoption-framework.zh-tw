@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799483"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225337"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
 「移轉登陸區域」一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。 遷移登陸區域是 Azure 設定指南的最後一項交付成果。 本文結合本指南討論的所有整備主題，並會將所做決策套用至您第一個移轉登陸區域的部署。
 
-下列各節將概述常用來建立移轉期間適用環境的登陸區域。 本文中所述的環境或登陸區域也可在 Azure 藍圖中取得。 您可以使用「雲端採用架構」移轉登陸區域藍圖，只需按一下即可部署已定義的環境。
+下列各節將概述常用來建立移轉期間適用環境的登陸區域。 本文中所述的環境或登陸區域也可在 Azure 藍圖中取得。 您可以使用雲端採用架構遷移登陸區域藍圖，透過單一步驟來部署定義的環境。
 
 ## <a name="purpose-of-the-blueprint"></a>藍圖的用途
 

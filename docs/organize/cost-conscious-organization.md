@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800894"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225395"
 ---
 # <a name="build-a-cost-conscious-organization"></a>打造符合成本效益的組織
 
@@ -45,7 +45,7 @@ ms.locfileid: "76800894"
 
 - **責任：** 應根據預期的採用活動，在雲端策略、[雲端治理](./cloud-governance.md)和[雲端採用](./cloud-adoption.md)小組之間建立預算。 當發生與預算的偏差時，雲端策略小組和雲端治理小組必須合作夥伴，以快速判斷補救偏差的最佳做法。
 
-- **優化：** 在優化工作期間，雲端策略小組可以代表特定工作負載的投資和報酬價值。 如果工作負載對企業具有策略性價值或財務衝擊，應密切監控成本優化工作。 如果沒有對組織的策略性影響，而且工作負載效能不佳，則雲端策略小組可能會核准 overoptimization。 若要推動這些決策，小組必須能夠在每個專案的範圍內查看成本。
+- **優化：** 在優化工作期間，雲端策略小組可以代表特定工作負載的投資和報酬價值。 如果工作負載對企業具有策略性價值或財務衝擊，應密切監控成本優化工作。 如果沒有對組織的策略性影響，而且工作負載效能不佳，則雲端策略小組可能會核准過度優化。 若要推動這些決策，小組必須能夠在每個專案的範圍內查看成本。
 
 ## <a name="cloud-adoption-team"></a>雲端採用小組
 

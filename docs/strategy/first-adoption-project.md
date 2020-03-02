@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798174"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225254"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ ms.locfileid: "76798174"
 
 第一個採用專案的其他範例包括：
 
-- 嚴重損壞**修復和業務持續性（DRBC）：** 除了 Azure Site Recovery 以外，您還可以將多個 DRBC 策略實作為第一個專案。
+- **商務持續性和嚴重損壞修復（BCDR）：** 除了 Azure Site Recovery 以外，您還可以將多個 BCDR 策略實作為第一個專案。
 - **非生產：** 部署工作負載的非生產實例。
 - 封存 **：** 冷儲存體可能會對資料中心資源造成負擔。 將該資料移至雲端是一種穩固的快速勝利。
 - **終止支援（EOS）：** 遷移已達到支援終止的資產，是建立技術技能的另一個快速勝利。 它也可以從昂貴的支援合約或授權成本提供一些成本規避。

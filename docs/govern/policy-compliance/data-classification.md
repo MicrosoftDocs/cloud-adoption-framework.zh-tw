@@ -1,6 +1,6 @@
 ---
 title: 什麼是資料分類？
-description: 藉由判斷並指派組織資料的價值，使用資料分類作為雲端治理的起點。
+description: 資料分類可讓您判斷並指派組織資料的價值，並提供共同管理的起點。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706688"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223788"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 
-資料分類可讓您判斷並指派組織資料的價值，而且是治理的常見起點。 資料分類程式會依敏感度和業務影響來分類資料，以找出風險。 當資料經過分類時，您可以用保護敏感或重要資料的方式來管理它，以免遭竊或遺失。
+資料分類可讓您判斷並指派組織資料的價值，並提供共同管理的起點。 資料分類程式會依敏感度和業務影響來分類資料，以找出風險。 當資料經過分類時，您可以用保護敏感或重要資料的方式來管理它，以免遭竊或遺失。
 
 ## <a name="understand-data-risks-then-manage-them"></a>瞭解資料風險，然後加以管理
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801404"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222238"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 
@@ -26,7 +26,11 @@ ms.locfileid: "76801404"
 
 ## <a name="governance-alignment"></a>控管一致性
 
-關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應該瞭解這項遷移功能是否會在有限的治理、完全受控的環境處理站，或介於之間進行某種變化的單一環境中進行登陸。 如需更多關於控管一致性的選項和指引，請參閱關於[控管和合規性一致性](../../expanded-scope/governance-or-compliance.md)的文章。
+關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應該瞭解這項遷移功能是否會在有限的治理、完全受控的環境處理站，或介於之間進行某種變化的單一環境中進行登陸。 如需治理調整的其他指引，請參閱[管理方法](../../../govern/index.md)。
+
+## <a name="operations-management-alignment"></a>作業管理對齊
+
+將資產遷移至雲端之前，請務必瞭解與作業管理有關的任何需求或限制。 遷移環境至少應包含符合作業基準所需的任何需求。 如需作業對齊的其他指引，請參閱[管理方法](../../../manage/index.md)。
 
 ## <a name="cloud-readiness-implementation"></a>實作雲端整備
 

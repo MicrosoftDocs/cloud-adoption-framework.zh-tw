@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803835"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222695"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>保護及管理已移轉到 Azure 之工作負載的最佳做法
 
@@ -132,7 +132,7 @@ Azure 能提供數個解決方案：
 - **Web 應用程式防火牆：** Azure 應用程式閘道的功能，可提供 web 應用程式的集中式保護。
   - 它能在無需後端程式碼修改的情況下保護 Web 應用程式。
   - 它能在應用程式閘道背後同時保護多個 Web 應用程式。
-  - Web 應用程式防火牆可以使用 Azure 監視器進行監視，並已整合至 Azure 資訊安全中心。
+  - 您可以使用 Azure 監視器來監視 web 應用程式防火牆，並將其整合到 Azure 資訊安全中心。
 
 ![保護 Web 應用程式](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
@@ -152,7 +152,7 @@ Azure 能提供數個解決方案：
 - RBAC 會針對安全性主體指派存取權限。 安全性主體代表使用者、群組 (使用者的集合)、服務主體 (由應用程式和服務使用的身分識別)，以及受控識別 (由 Azure 自動管理的 Azure Active Directory 身分識別)。
 - RBAC 可以將角色指派給安全性主體 (例如擁有者、參與者及讀者)，以及能定義角色可執行之作業的角色定義 (權限的集合)。
 - RBAC 也可以設定範圍以設定角色的界線。 範圍可以設定於數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
-- 確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
+- 請確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
 
 ![存取控制](./media/migrate-best-practices-security-management/subscription.png)
 *存取控制 - IAM*
@@ -184,7 +184,7 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 
 Azure 提供能提供進階安全性選項的其他安全性功能。 這些最佳做法有一部分需要附加元件授權和進階選項。
 
-- **實作 Azure AD 管理單位 (AU)。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [深入了解](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
+- **實作 Azure AD 管理單位 (AU)。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [詳細資訊](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
 - **使用多重要素驗證。** 如果您有進階 Azure AD 授權，您可以在系統管理員帳戶上啟用並強制執行多重要素驗證。 網路釣魚是用來入侵帳戶認證的最常見方式。 當不良執行者擁有系統管理員帳戶認證之後，便沒有任何方法可以阻止他們進行會造成嚴重影響的動作 (例如刪除您所有的資源群組)。 您可以用數種方式建立多重要素驗證，包括電子郵件、驗證器應用程式和電話簡訊。 身為系統管理員，您可以選取最不具侵入性的選項。 多重要素驗證會與威脅分析和條件式存取原則整合，以隨機要求多重要素驗證挑戰回應。 深入了解[安全性指引](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)，以及[如何設定多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)。
 - **實作條件式存取。** 在大部分的小型和中型組織中，Azure 系統管理員和支援小組通常都會位於相同的地理位置中。 在此情況下，大部分的登入都會來自相同的區域。 如果這些位置的 IP 位址都相當固定，您應該不會看見系統管理員從這些區域以外的地方進行登入。 就算在遠端不良執行者成功入侵系統管理員認證的情況下，您也可以實作搭配多重要素驗證的條件式存取等安全性功能，以防止從遠端位置或來自隨機 IP 位址從詐騙位置進行的登入。 [深入了解](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)條件式存取，並檢閱在 Azure AD 中進行條件式存取的[最佳做法](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
 - **檢閱企業應用程式權限。** 隨著時間的經過，系統管理員可能會習慣直接選取來自 Microsoft 和協力廠商的連結，而未留意到該動作會對組織帶來什麼影響。 這些連結可能會顯示能將權限指派給 Azure 應用程式的同意畫面，且可能會允許讀取 Azure AD 資料的存取權，甚至是管理整個 Azure 訂用帳戶的完整存取權。 您應該定期檢閱由您的系統管理員和使用者允許存取 Azure 資源的應用程式。 確保這些應用程式只具有必要的權限。 此外，您可以在每季或每半年便傳送具有應用程式頁面連結的電子郵件給使用者，使他們能知道自己已允許哪些應用程式存取其組織資料。 [深入了解](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)應用程式類型，以及[如何控制](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal)Azure AD 中的應用程式指派。
@@ -405,13 +405,13 @@ Site Recovery 會將 VM 從主要 Azure 區域複寫到次要 Azure 區域。 �
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>最佳做法：使用受控磁片和可用性設定組
 
-Azure 會使用可用性設定組來以邏輯方式將 VM 分組在一起，以及將設定組中的 VM 與其他資源隔離。 可用性設定組中的 VM 會分散於多個具有個別子系統的容錯網域中以防止受到本機失敗的影響，且也會分散於多個更新網域中，以確保所有 VM 不會被設定為同時重新啟動。
+Azure 會使用可用性設定組來以邏輯方式將 VM 分組在一起，以及將設定組中的 VM 與其他資源隔離。 可用性設定組中的 Vm 會分散到多個具有不同子系統的容錯網域，以防止本機失敗。 Vm 也會分散到多個更新網域，以防止同時重新開機集合中的所有 Vm。
 
-Azure 受控磁碟會管理與 VM 磁碟相關的儲存體帳戶，從而簡化 Azure IaaS VM 的磁碟管理。
+Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來簡化 Azure 虛擬機器的磁片管理。
 
-- 建議您在可以的情況下優先使用受控磁碟。 您只需指定要使用的儲存體類型，以及所需的磁碟大小，Azure 就會在幕後替您建立並管理磁碟。
-- 您可以將現有磁碟轉換為受控磁碟。
-- 您應該在可用性設定組中建立 VM，以取得高復原性和可用性。 發生計畫性或非計畫性的中斷時，可用性設定組能確保設定組中至少有一個 VM 會持續可用。
+- 盡可能使用受控磁片。 您只需要指定您想要使用的儲存體類型和所需的磁片大小，Azure 就會為您建立並管理磁片。
+- 您可以將現有的磁片轉換成受控磁片。
+- 您應該在可用性設定組中建立 VM，以取得高復原性和可用性。 當發生計畫或非計畫的中斷時，可用性設定組會確保集合中至少有一個 VM 可供使用。
 
 ![受控磁碟](./media/migrate-best-practices-security-management/managed-disks.png)
 *受控磁碟*
