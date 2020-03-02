@@ -1,18 +1,18 @@
 ---
 title: 大型主機移轉概觀
-description: 將應用程式從大型主機環境遷移至 Azure，這是經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。
+description: 將大型主機工作負載、應用程式和資料庫遷移至 Azure，以獲得經過證實、具有高可用性且可調整的基礎結構，而不必承受許多大型主機的缺點。
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 899e1575fa4e8c3bd83ebec38f0a38cb1e02d314
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808782"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171373"
 ---
 # <a name="mainframe-migration-overview"></a>大型主機移轉概觀
 

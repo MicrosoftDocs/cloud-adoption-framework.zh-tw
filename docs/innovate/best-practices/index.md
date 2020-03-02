@@ -1,18 +1,18 @@
 ---
-title: 雲端創新：在 Azure 中開發數位發明
-description: 在 Azure 中開發數位發明
+title: 開發數位發明以利創新
+description: 使用適用於 Azure 的雲端採用架構來建置創新方法，並為數位發明打造工具鏈。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 19a58470b3c918532921b68be5904ff8b1f1f825
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d3beb01940da6b391bca2751866e5f484ce2f713
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808629"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170727"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>在 Azure 中開發數位發明
 

@@ -1,6 +1,6 @@
 ---
 title: 在適用於 Azure 的 Microsoft 雲端採用架構中治理
-description: 了解在適用於 Azure 的 Microsoft 雲端採用架構中治理。
+description: 使用適用於 Azure 的雲端採用架構，來了解如何評估現有的原則、建立初始治理基礎，並以反覆方式新增治理工具。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/11/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 60f1672f314c37dda35c19668f3df17b2c54f7db
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223704"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706926"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 

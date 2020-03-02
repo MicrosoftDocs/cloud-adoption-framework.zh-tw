@@ -1,6 +1,6 @@
 ---
 title: 訂用帳戶決策指南
-description: 了解在 Azure 移轉中作為核心服務的雲端平台訂用帳戶。
+description: 將訂用帳戶設計模式和管理群組，視為在 Azure 移轉期間組織資產的核心服務。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 327077f912e916975eef08ad6613f3806a759bca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f00377f4da5a3c95114571af36e4a759a26c63f3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806572"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707946"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 

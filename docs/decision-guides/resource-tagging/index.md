@@ -1,6 +1,6 @@
 ---
 title: 資源命名與標記決策指南
-description: 了解在 Azure 移轉中作為核心服務的資源組織與標記。
+description: 了解要組織雲端式資源時，對資源的命名和標記方法和選項，以作為 Azure 雲端採用架構的一部分。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90b69a21f1643d4545b2ea5bce46d0c3c499d9a3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806674"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708677"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 

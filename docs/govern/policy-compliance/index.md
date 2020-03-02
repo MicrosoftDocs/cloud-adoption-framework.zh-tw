@@ -1,6 +1,6 @@
 ---
 title: 準備公司的雲端 IT 原則
-description: 公司原則與雲端治理之關係的概念說明。
+description: 透過關鍵活動 (例如漸進式公司原則變更和自動化強制執行) 協助啟用擴充的治理模型。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b2a260868a873828a1bc47584f479f129b6b255a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e42cd5f8f551ddb4d68b19eab5e15c28cbe539ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806079"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709476"
 ---
 <!-- markdownlint-disable MD026 -->
 

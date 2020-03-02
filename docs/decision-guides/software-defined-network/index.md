@@ -1,6 +1,6 @@
 ---
 title: 軟體定義網路決策指南
-description: 深入了解軟體定義網路這個 Azure 移轉過程中的核心服務。
+description: 使用適用於 Azure 的雲端採用架構，了解軟體定義的網路如何透過軟體提供集中管理的虛擬化網路功能。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4fa9f16a2636cf5e8f1340bf51ae39e8db3198b0
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806589"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708728"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 

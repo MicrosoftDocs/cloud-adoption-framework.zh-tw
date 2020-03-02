@@ -1,18 +1,18 @@
 ---
 title: 數位經濟的創新
-description: 了解雲端採用架構中的雲端創新指導理論。
+description: 專注於了解客戶需求，並快速建置雲端創新，以塑造客戶與產品互動的方式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808459"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171169"
 ---
 # <a name="innovation-in-the-digital-economy"></a>數位經濟的創新
 

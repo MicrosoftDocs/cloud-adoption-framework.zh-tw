@@ -1,6 +1,6 @@
 ---
 title: 身分識別決策指南
-description: 了解在 Azure 移轉中作為核心服務的身分識別。
+description: 了解身分識別和存取管理 (IAM) 服務可讓您管理雲端中存取控制的方法。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807099"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707997"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 

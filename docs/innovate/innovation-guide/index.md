@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：開始之前
-description: 了解如何使用 Azure 來為客戶建立全新的創新解決方案。
+title: Azure 創新：開始之前
+description: 透過 Azure 功能讓環境做好雲端創新準備，以協助您與客戶互動、建置解決方案以及推動採用。
 author: matticusau
 ms.author: mlavery
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7929224bb8b0a3c0a9bec83ef5a08b492cb2d5f4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 262fe97adea985beb2f5f8331ba5a68572900d58
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808272"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170999"
 ---
 ::: zone target="docs"
 

@@ -1,6 +1,6 @@
 ---
 title: 記錄與報告決策指南
-description: 了解 Azure 移轉中的新服務：記錄、報告和監視。
+description: 開發核心記錄、報告和監視策略，以確保您的組織符合運作時間、安全性和原則合規性目標。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806759"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707657"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 

@@ -1,6 +1,6 @@
 ---
 title: 區域決策指南
-description: 了解雲端平台區域的選取。
+description: 了解雲端平台區域，以及可能影響 Azure 區域選取範圍的因素和特性。
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806708"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708490"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -25,7 +25,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 1. **主權：** 特定區域會專門用於特定主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其餘 Azure 區域徹底分開、不一定會由 Microsoft 管理，而且可能會受限於特定客戶類型。 這些主權區域包括：
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
     1. [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany) (即將淘汰，改為使用德國境內標準的非主權 Azure 區域)
-    1. [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
+    1. [Azure US Gov](https://azure.microsoft.com/global-infrastructure/government)
     1. 注意：[澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)中的兩個區域雖由 Microsoft 管理，卻提供給澳大利亞政府及其客戶和承包商使用，因此會有和其他主權雲端類似的用戶端條件約束。
 
 ## <a name="operate-in-multiple-geographic-regions"></a>在多個地理區域營運

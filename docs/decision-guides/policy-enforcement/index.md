@@ -1,6 +1,6 @@
 ---
 title: 原則強制執行決策指南
-description: 深入了解原則強制執行訂用帳戶是 Azure 移轉中的核心設計優先順序。
+description: 使用適用於 Azure 的雲端採用架構來了解在 Azure 移轉中作為核心設計優先事項的原則強制執行訂用帳戶。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2a5976d1aa1bb4ae0b1e8a0d810ae0acddabd883
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806725"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170982"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
