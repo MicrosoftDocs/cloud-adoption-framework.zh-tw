@@ -42,9 +42,11 @@ items:
             href: strategy/financial-models.md
           - name: 瞭解雲端會計
             href: strategy/cloud-accounting.md
+          - name: 平衡組合
+            href: strategy/balance-the-portfolio.md
       - name: 第一個雲端採用專案
         href: strategy/first-adoption-project.md
-      - name: 建議的技能
+      - name: 與策略相關的技能
         href: strategy/suggested-skills.md
   - name: 計畫
     items:
@@ -84,10 +86,16 @@ items:
             href: plan/iteration-paths.md
           - name: 預估時間表
             href: plan/timelines.md
-      - name: 建議的技能
-        href: plan/suggested-skills.md
-      - name: 針對雲端進行調整
-        href: plan/adapt-roles-skills-processes.md
+      - name: 技能整備程度方案
+        items:
+          - name: 建立整備程度方案
+            href: plan/adapt-roles-skills-processes.md
+          - name: 對應角色與技能
+            href: plan/suggested-skills.md
+      - name: 最佳作法
+        items:
+          - name: Azure 中的數位資產評量
+            href: plan/contoso-migration-assessment.md
   - name: 就緒
     items:
       - name: 概觀
@@ -108,32 +116,46 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: 隨時得知 Azure 的最新動態
             href: ready/azure-setup-guide/staying-current.md
-          - name: 部署移轉登陸區域
-            href: ready/azure-setup-guide/migration-landing-zone.md
-      - name: 登陸區域考量
+      - name: 第一個登陸區域
+        items:
+          - name: 什麼是登陸區域
+            href: ready/landing-zone/index.md
+          - name: 選擇第一個登陸區域
+            href: ready/landing-zone/first-landing-zone.md
+          - name: 移轉登陸區域藍圖
+            href: ready/landing-zone/migrate-landing-zone.md
+          - name: Terraform 登陸區域
+            href: ready/landing-zone/terraform-landing-zone.md
+      - name: 展開登陸區域
         items:
           - name: 概觀
             href: ready/considerations/index.md
-          - name: Azure 基礎概念
-            href: ready/considerations/fundamental-concepts.md
-          - name: 檢閱計算選項
-            href: ready/considerations/compute-options.md
-          - name: 檢閱網路功能選項
-            href: ready/considerations/networking-options.md
-          - name: 檢閱儲存體選項
-            href: ready/considerations/storage-options.md
-          - name: 檢閱資料選項
-            href: ready/considerations/data-options.md
-          - name: 角色型存取控制
-            href: ready/considerations/roles.md
-          - name: 建立混合式雲端一致性
-            href: ready/considerations/hybrid-consistency.md
-      - name: 擴充的範圍
-        items:
-          - name: Terraform 登陸區域
-            href: ready/expanded-scope/terraform-landing-zone.md
-          - name: 網路邊界安全性
-            href: reference/networking-vdc.md
+          - name: 基本登陸區域考量
+            items:
+              - name: Azure 基礎概念
+                href: ready/considerations/fundamental-concepts.md
+              - name: 檢閱計算選項
+                href: ready/considerations/compute-options.md
+              - name: 檢閱網路功能選項
+                href: ready/considerations/networking-options.md
+              - name: 檢閱儲存體選項
+                href: ready/considerations/storage-options.md
+              - name: 檢閱資料選項
+                href: ready/considerations/data-options.md
+              - name: 角色型存取控制
+                href: ready/considerations/roles.md
+              - name: 建立混合式雲端一致性
+                href: ready/considerations/hybrid-consistency.md
+          - name: 改善登陸區域安全性 (敏感性資料)
+            items:
+              - name: 在 Azure 中實作安全的混合式網路架構
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure 身分識別管理和存取控制安全性最佳做法
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure 網路安全性最佳做法
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure 作業安全性最佳做法
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: 最佳作法
         items:
           - name: 概觀
@@ -146,6 +168,8 @@ items:
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: 網路功能
             items:
+              - name: 網路邊界安全性
+                href: reference/networking-vdc.md
               - name: 規劃虛擬網路
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 網路安全性的最佳做法
@@ -188,7 +212,7 @@ items:
                 href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 監視使用量和消費
                 href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-      - name: 建議的技能
+      - name: 與就緒和登陸區域相關的技能
         href: ready/suggested-skills.md
   - name: 採用
     items:
@@ -200,90 +224,40 @@ items:
             items:
               - name: 開始之前
                 href: migrate/azure-migration-guide/index.md
-              - name: Azure 移轉的必要條件
-                href: migrate/azure-migration-guide/prerequisites.md
-              - name: 評估數位資產
+              - name: 評估每個工作負載並精簡方案
                 href: migrate/azure-migration-guide/assess.md
               - name: 遷移工作負載資產
                 href: migrate/azure-migration-guide/migrate.md
+              - name: 測試、最佳化及升階
+                href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: 聚焦在移轉的成本控制機制
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: 最佳化和轉換
-                href: migrate/azure-migration-guide/optimize-and-transform.md
-              - name: 保護及管理
-                href: migrate/azure-migration-guide/secure-and-manage.md
               - name: 取得協助
                 href: migrate/azure-migration-guide/assistance.md
-          - name: 擴充的範圍
-            items:
-              - name: 擴充的範圍檢查清單
-                href: migrate/expanded-scope/index.md
-              - name: 平衡組合
-                href: migrate/expanded-scope/balance-the-portfolio.md
-              - name: 技能整備程度
-                href: migrate/expanded-scope/suggested-skills.md
-              - name: VMWare 主機移轉
-                href: migrate/expanded-scope/vmware-host.md
-              - name: SQL Server 移轉
-                href: migrate/expanded-scope/sql-migration.md
-              - name: 多個資料中心
-                href: migrate/expanded-scope/multiple-datacenters.md
-              - name: 資料需求超過網路容量
-                href: migrate/expanded-scope/network-capacity-exceeded.md
-              - name: 治理和合規性
-                href: migrate/expanded-scope/governance-or-compliance.md
-          - name: 最佳作法
+          - name: 移轉案例
             items:
               - name: 概觀
-                href: migrate/azure-best-practices/index.md
-              - name: 評估工作負載
+                href: migrate/azure-best-practices/contoso-migration-overview.md
+              - name: Windows Server 工作負載
                 items:
-                  - name: 評估內部部署資源
-                    href: migrate/azure-best-practices/contoso-migration-assessment.md
-              - name: 遷移工作負載
+                  - name: 將 Windows 應用程式重新裝載至 Azure VM
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                  - name: 使用容器和 Azure SQL 重新架構 Windows 應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+              - name: Linux 工作負載
                 items:
-                  - name: 為遷移的工作負載設定網路
-                    href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                  - name: 應用程式移轉
-                    items:
-                      - name: 概觀
-                        href: migrate/azure-best-practices/contoso-migration-overview.md
-                      - name: 部署移轉基礎結構
-                        href: migrate/azure-best-practices/contoso-migration-infrastructure.md
-                      - name: Windows Server 工作負載
-                        items:
-                          - name: 將 Windows 應用程式重新裝載至 Azure VM
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                          - name: 使用容器和 Azure SQL 重新架構 Windows 應用程式
-                            href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
-                      - name: Linux 工作負載
-                        items:
-                          - name: 將 Linux 應用程式重新裝載至 Azure VM
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
-                          - name: 在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                      - name: SQL Server 工作負載
-                        items:
-                          - name: 將應用程式重新裝載在 Azure VM 和 Azure SQL Database 受控執行個體上
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                          - name: 在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載應用程式
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
-                      - name: ASP.NET/PHP/Java 應用程式
-                        items:
-                          - name: 在 Azure App Service 及 Azure SQL Database 上重構應用程式
-                            href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                          - name: 在 Azure App Service 及適用於 MySQL 的 Azure 資料庫上重構 Linux 應用程式
-                            href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
-                          - name: 在 Azure 中重建應用程式
-                            href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                          - name: 將 TFS 遷移至 Azure DevOps Services
-                            href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-                      - name: 調整移轉規模
-                        href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: 遷移 VMWare 主機
+                  - name: 將 Linux 應用程式重新裝載至 Azure VM
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                  - name: 在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                  - name: 在 Azure App Service 及適用於 MySQL 的 Azure 資料庫上重構 Linux 應用程式
+                    href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+              - name: VMWare 主機
                 items:
                   - name: 概觀
                     href: migrate/azure-best-practices/vmware-host.md
+                  - name: 遷移 VMWare 主機時的考量
+                    href: migrate/expanded-scope/vmware-host.md
                   - name: Prerequisites
                     items:
                       - name: 保護您的環境
@@ -336,7 +310,35 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 VMWare SRM 將私人雲端設定為災害復原網站
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: 遷移資料平台
+              - name: ASP.NET 應用程式
+                items:
+                  - name: 在 Azure App Service 及 Azure SQL Database 上重構應用程式
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: 在 Azure 中重建應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: 將 TFS 遷移至 Azure DevOps Services
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Java 應用程式
+                items:
+                  - name: 移轉選項
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Spring 至 Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat 至 Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat 至 AKS 上的容器
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic 至 Azure 虛擬機器
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SQL Server
+                items:
+                  - name: 遷移 SQL Server 時的考量
+                    href: migrate/expanded-scope/sql-migration.md
+                  - name: 將應用程式重新裝載在 Azure VM 和 Azure SQL Database 受控執行個體上
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: 在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: 資料平台
                 items:
                   - name: 概觀
                     href: migrate/azure-best-practices/sql-migration.md
@@ -420,7 +422,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 將 Oracle 線上遷移至適用於 PostgreSQL 的 Azure DB
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: 遷移大型主機
+              - name: 大型主機
                 items:
                   - name: 概觀
                     href: infrastructure/mainframe-migration/index.md
@@ -430,45 +432,49 @@ items:
                     href: infrastructure/mainframe-migration/migration-strategies.md
                   - name: 大型主機應用程式移轉
                     href: infrastructure/mainframe-migration/application-strategies.md
-              - name: 工作負載最佳化
-                items:
-                  - name: 針對工作負載估計成本和調整大小
-                    href: migrate/azure-best-practices/migrate-best-practices-costs.md
-              - name: 保護及管理工作負載
+              - name: 遷移安全的工作負載
                 items:
                   - name: 在移轉後保護和管理工作負載
                     href: migrate/azure-best-practices/migrate-best-practices-security-management.md
-                  - name: 其他最佳做法
-                    items:
-                      - name: Azure 資料庫安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure 資料安全性和加密最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure 身分識別管理和存取控制安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure 網路安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure 作業安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure PaaS 最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure Service Fabric 安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure VM 安全性的最佳作法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 在 Azure 中實作安全的混合式網路架構
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: IoT 安全性最佳做法
-                        href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 保護 Azure 中的 PaaS 資料庫
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 使用 Azure App Service 來保護 PaaS Web 與行動應用程式
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 使用 Azure 儲存體來保護 PaaS Web 與行動應用程式
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure 中 IaaS 工作負載的安全性最佳作法
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: 移轉考量
+                  - name: Azure 資料庫安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure 資料安全性和加密最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure PaaS 最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure Service Fabric 安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure VM 安全性的最佳作法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: IoT 安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: 保護 Azure 中的 PaaS 資料庫
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: 使用 Azure App Service 來保護 PaaS Web 與行動應用程式
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: 使用 Azure 儲存體來保護 PaaS Web 與行動應用程式
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure 中 IaaS 工作負載的安全性最佳作法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: 最佳作法
+            items:
+              - name: 概觀
+                href: migrate/azure-best-practices/index.md
+              - name: 多個資料中心
+                href: migrate/expanded-scope/multiple-datacenters.md
+              - name: 資料需求超過網路容量
+                href: migrate/expanded-scope/network-capacity-exceeded.md
+              - name: 為遷移的工作負載設定網路
+                href: migrate/azure-best-practices/migrate-best-practices-networking.md
+              - name: 部署移轉基礎結構
+                href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+              - name: 針對遷移後的工作負載進行成本最佳化
+                href: migrate/azure-best-practices/migrate-best-practices-costs.md
+              - name: 調整移轉規模
+                href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: 治理和合規性
+                href: migrate/expanded-scope/governance-or-compliance.md
+          - name: 流程改善
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
@@ -486,9 +492,9 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: 移轉待處理項目檢閱
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: 評估資產和工作負載
+              - name: 評量流程
                 items:
-                  - name: 在移轉前評估資產
+                  - name: 在移轉前驗證評估假設 - 新增 R 修正
                     href: migrate/migration-considerations/assess/index.md
                   - name: 讓優先順序保持對齊
                     href: migrate/migration-considerations/assess/business-priorities.md
@@ -496,7 +502,7 @@ items:
                     href: migrate/migration-considerations/assess/evaluate.md
                   - name: 架構工作負載
                     href: migrate/migration-considerations/assess/architect.md
-                  - name: 估計雲端成本
+                  - name: 更新並精簡初始雲端估計值
                     href: migrate/migration-considerations/assess/estimate.md
                   - name: 了解合作關係選項
                     href: migrate/migration-considerations/assess/partnership-options.md
@@ -504,7 +510,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: 核准架構變更
                     href: migrate/migration-considerations/assess/approve.md
-              - name: 遷移個別資產
+              - name: 移轉程序
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/migrate/index.md
@@ -518,7 +524,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: 階段工作負載
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 將工作負載最佳化並升階
+              - name: 測試、最佳化和升階程序
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/optimize/index.md
@@ -536,10 +542,8 @@ items:
                     href: migrate/migration-considerations/optimize/decommission.md
                   - name: 進行追溯
                     href: migrate/migration-considerations/optimize/retrospective.md
-              - name: 保護及管理生產環境中的工作負載
-                items:
-                  - name: 概觀
-                    href: migrate/migration-considerations/secure-and-manage/index.md
+          - name: 與移轉相關的技能
+            href: migrate/expanded-scope/suggested-skills.md
       - name: 創新
         items:
           - name: 概觀
@@ -560,39 +564,7 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: 預測和影響
                 href: innovate/innovation-guide/predict.md
-          - name: 考量
-            items:
-              - name: 概觀
-                href: innovate/considerations/index.md
-              - name: 商業價值共識
-                href: innovate/business-value.md
-              - name: 客戶採用
-                items:
-                  - name: 意見反應迴圈
-                    href: innovate/considerations/adoption.md
-                  - name: 以客戶理解的方式打造
-                    href: innovate/considerations/build.md
-                  - name: 測量客戶影響
-                    href: innovate/considerations/measure.md
-                  - name: 向客戶學習
-                    href: innovate/considerations/learn.md
-                  - name: 客戶挑戰和阻礙
-                    href: innovate/considerations/challenges.md
-              - name: 數位發明
-                items:
-                  - name: 開發數位發明
-                    href: innovate/considerations/invention.md
-                  - name: 將資料大眾化
-                    href: innovate/considerations/data.md
-                  - name: 透過應用程式參與
-                    href: innovate/considerations/apps.md
-                  - name: 實現採用
-                    href: innovate/considerations/ci-cd.md
-                  - name: 與裝置互動
-                    href: innovate/considerations/devices.md
-                  - name: 預測和影響
-                    href: innovate/considerations/predict.md
-          - name: 創新的最佳做法
+          - name: 最佳作法
             items:
               - name: 概觀和 Azure 工具鏈
                 href: innovate/best-practices/index.md
@@ -860,6 +832,38 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 在 Azure HDInsight 上運作 ML 服務
                         href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: 流程改善
+            items:
+              - name: 概觀
+                href: innovate/considerations/index.md
+              - name: 商業價值共識
+                href: innovate/business-value.md
+              - name: 客戶採用
+                items:
+                  - name: 意見反應迴圈
+                    href: innovate/considerations/adoption.md
+                  - name: 以客戶理解的方式打造
+                    href: innovate/considerations/build.md
+                  - name: 測量客戶影響
+                    href: innovate/considerations/measure.md
+                  - name: 向客戶學習
+                    href: innovate/considerations/learn.md
+                  - name: 客戶挑戰和阻礙
+                    href: innovate/considerations/challenges.md
+              - name: 數位發明
+                items:
+                  - name: 開發數位發明
+                    href: innovate/considerations/invention.md
+                  - name: 將資料大眾化
+                    href: innovate/considerations/data.md
+                  - name: 透過應用程式參與
+                    href: innovate/considerations/apps.md
+                  - name: 實現採用
+                    href: innovate/considerations/ci-cd.md
+                  - name: 與裝置互動
+                    href: innovate/considerations/devices.md
+                  - name: 預測和影響
+                    href: innovate/considerations/predict.md
   - name: 治理
     items:
       - name: 概觀
@@ -1186,7 +1190,7 @@ items:
         href: organize/cost-conscious-organization.md
       - name: 反模式 - IT 領域和 IT 穀倉
         href: organize/fiefdoms-silos.md
-  - name: 參考
+  - name: 資源
     items:
       - name: 雲端採用架構藍圖
         href: reference/index.md
@@ -1244,5 +1248,5 @@ items:
         href: reference/vdc.md
       - name: Azure 如何運作？
         href: getting-started/what-is-azure.md
-  - name: Azure Architecture Center
-    href: 'https://docs.microsoft.com/azure/architecture'
+      - name: Azure Architecture Center
+        href: 'https://docs.microsoft.com/azure/architecture'

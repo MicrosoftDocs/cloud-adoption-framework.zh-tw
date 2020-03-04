@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0dfab31bbdc9dc7aae6c5d82f77f8640dcc01874
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808221"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223475"
 ---
 ::: zone target="docs"
 
@@ -53,7 +53,7 @@ Azure 管理指南可協助 Azure 客戶建立管理基準，以制定整個 Azu
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 管理指南]  。 然後，遵循逐步指示來進行。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)，然後選取 [Azure 管理指南]  。 然後，遵循逐步指示來進行。
 
 下一步是[清查和可見性](./inventory.md)。
 

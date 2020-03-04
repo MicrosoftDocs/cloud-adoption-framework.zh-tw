@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171373"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223671"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>大型主機移轉概觀
 
 許多公司和組織，受益於將部分或所有其大型主機工作負載、應用程式和資料庫移動至雲端。 Azure 以雲端規模提供類似大型主機的功能，而沒有許多與大型主機相關聯的缺點。
@@ -34,13 +36,13 @@ ms.locfileid: "78171373"
 
 在 1950 年代晚期，大型主機是設計成相應增加伺服器，以執行大量線上交易和批次處理。 因此，大型主機有適用於線上交易的表單軟體 (又稱為綠色畫面)，以及處理批次執行的高效能 I/O 系統。
 
-大型主機具有高可靠性和高可用性的優良聲譽，且因能夠執行大型線上交易與批次工作而聞名。 交易是單一要求起始之處理的結果，此要求通常是來自在終端機的使用者。 交易也可能來自多個其他來源，包括網頁、遠端工作站，以及其他資訊系統的應用程式。 交易也可以在預先定義的時間自動觸發，如下圖所示。
+大型主機有公認的高可靠性和高可用性，而且能夠執行大型線上交易與批次工作。 交易是單一要求起始之處理的結果，此要求通常是來自在終端機的使用者。 交易也可能來自多個其他來源，包括網頁、遠端工作站，以及其他資訊系統的應用程式。 交易也可以在預先定義的時間自動觸發，如下圖所示。
 
 ![典型 IBM 大型主機架構中的元件](../../_images/mainframe-migration/mainframe-architecture.png)
 
 典型 IBM 大型主機架構包含這些共同元件：
 
-- **前端系統：** 使用者可以從終端機、網頁或遠端工作站起始交易。 大型主機應用程式通常會有自訂的使用者介面，在移轉至 Azure 之後仍可保留這些介面。 終端機模擬器仍用於存取大型主機應用程式，而且也稱為綠畫面終端機。
+- **前端系統：** 使用者可以從終端機、網頁或遠端工作站起始交易。 大型主機應用程式通常會有自訂的使用者介面，在移轉至 Azure 之後仍可保留這些介面。 終端機模擬器 (也稱為綠畫面終端機) 仍用於存取大型主機應用程式。
 
 - **應用程式層：** 大型主機通常包含客戶資訊管理系統 (CICS)，這是適用於 IBM z/OS 大型主機的先進交易管理套件，通常會搭配 IBM Information Management System (IMS) 訊息型交易管理員使用。 批次系統為大量帳戶記錄處理高輸送量資料更新。
 

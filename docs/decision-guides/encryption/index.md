@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707980"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222582"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -54,7 +54,7 @@ ms.locfileid: "77707980"
 
 採用「攜帶您自己的金鑰」方法，您可以在內部部署環境內的專用 HSM 硬體上產生金鑰，然後將這些金鑰安全地傳輸到雲端式管理系統 (例如 Azure Key Vault)，以便與裝載在雲端的資源搭配使用。
 
-**攜帶您自己的金鑰假設事項：** 在內部部署產生金鑰並將其與雲端式金鑰管理系統一起使用，包含以下假設事項：
+**攜帶您自己的金鑰假設：** 在內部部署產生金鑰並將其與雲端式金鑰管理系統一起使用，包含以下假設事項：
 
 - 您信任並採用雲端平台的基礎安全性和存取控制基礎結構裝載及使用您的金鑰和祕密。
 - 您的雲端裝載應用程式或服務能夠以強固且安全的方式存取和使用金鑰和祕密。
@@ -128,7 +128,7 @@ PaaS 儲存體與資料庫資源通常會預設強制加密。 可以透過加�
 
 ## <a name="next-steps"></a>後續步驟
 
-加密只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
+加密只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 若要了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型，請參閱[決策指南概觀](../index.md)。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

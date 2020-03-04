@@ -1,20 +1,20 @@
 ---
-title: 在移轉前評量資產
-description: 在移轉前評量資產
+title: 在移轉前驗證評估假設
+description: 在移轉前驗證評估假設
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802492"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222272"
 ---
-# <a name="assess-assets-prior-to-migration"></a>在移轉前評量資產
+# <a name="validate-assessment-assumptions-before-migration"></a>在移轉前驗證評估假設
 
 雖然許多現有的工作負載都很適合進行雲端移轉，但並非所有資產都能與雲端平台相容，且並非所有工作負載都能受益於將其裝載在雲端上。 [數位資產規劃](../../../digital-estate/index.md)可讓您產生可移轉之潛在工作負載的整體[移轉待辦項目](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing)。 不過，此規劃需要投入高層級的工作量。 它須仰賴雲端策略小組的假設，且不會深入探討技術性的考量。
 
@@ -44,11 +44,14 @@ ms.locfileid: "76802492"
 - **業務優先順序。** 小組了解移轉此工作負載的目的，其中包括任何預期會對業務產生的影響。
   - 雲端策略小組的成員應在雲端採用小組的指引下，負起此活動的最終責任。
 - **專案關係人共識。** 小組與內部專案關係人在期望和優先順序上取得共識，識別出移轉的成功準則。 在移轉後取得成功的定義為何？
+- **精簡合理化。** 評估有關合理化的初始假設。 是否應該使用不同的[合理化方法](../../../digital-estate/rationalize.md)來遷移此特定工作負載？
+- **現代化決策。** 無論合理化決策為何，是否都應該將工作負載中的各種資產現代化，以便利用 PaaS 架構的解決方案？
 - **成本。** 已估計目標架構的成本，且已調整整體預算。
 - **移轉支援。** 小組已決定移轉技術性作業的完成方式，其中包括與合作夥伴或 Microsoft 支援相關的決定。
 - **評估。** 已針對相容性和相依性評估工作負載。
   - 此活動應該指派給熟悉候選工作負載之架構和作業的主題專家。
 - **架構設計人員。** 小組已在已移轉之工作負載的最終狀態架構上取得共識。
+- **移轉工具。** 根據不同的現代化和建構方法，可能會使用各種不同的移轉工具來自動化移轉作業。 若是以提議的架構作為基礎，此移轉是否會利用最佳的[移轉工具](../../../decision-guides/migrate-decision-guide/index.md)？
 - **待辦項目共識。** 雲端採用小組會檢閱需求，並認可候選工作負載的移轉。 在認可之後，必須據此更新發行待辦項目和反覆項目待辦項目。
 - **分工結構圖或反向推演排程。** 小組建立主要里程碑的排程，識別出完成規劃、實作及檢閱程序後應達成的目標。
 - **最終核准。** 所有必要的核准者皆已檢閱方案，並同意資產的移轉方式。

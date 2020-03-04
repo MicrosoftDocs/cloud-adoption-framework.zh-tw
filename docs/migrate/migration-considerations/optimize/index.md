@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 87235584bc9da0f1a9e5124408b587eec864af48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: aed8ba9d97cfbc236d378066569b466302b66239
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801880"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225438"
 ---
 # <a name="optimize-migrated-workloads"></a>將已移轉的工作負載最佳化
 
@@ -22,7 +22,7 @@ ms.locfileid: "76801880"
 
 ## <a name="definition-of-done"></a>對「完成」  的定義
 
-最佳化程序完成的定義，是指當工作負載已正確設定、完成大小評估，並且已用於生產環境之中。
+當工作負載已正確設定、指定大小，並且部署至生產環境之中時，表示最佳化程序已完成。
 
 ## <a name="accountability-during-optimization"></a>最佳化期間的責任
 

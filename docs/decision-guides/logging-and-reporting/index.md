@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707657"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222768"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -44,7 +44,7 @@ ms.locfileid: "77707657"
 
 在此案例中，所有日誌資料都記錄並儲存在雲端中，而處理資訊並向 IT 人員呈現資訊的日誌記錄和報告工具是由 Azure 平台和 Azure 監視器提供。
 
-自訂 Azure 監視器式記錄解決方案可以依據較小型或實驗性部署中的每個訂用帳戶或工作負載進行實作，並以集中方式安排組織，以監控整個雲環境的記錄資料。
+以 Azure 監視器為基礎的自訂記錄解決方案可以在有需求時，針對較小型或實驗性部署中的每個訂用帳戶或工作負載執行。 這些解決方案採集中組織的方式，可監視整個雲端資產的記錄資料。
 
 **雲端原生假設事項：** 使用雲端原生記錄和報告系統時會假設以下事項：
 

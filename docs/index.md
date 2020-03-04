@@ -7,13 +7,13 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 10/14/2019
-ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.date: 02/28/2020
+ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170914"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223781"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>適用於 Azure 的 Microsoft 雲端採用架構
 
@@ -159,7 +159,7 @@ ms.locfileid: "78170914"
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 
-上述的每個階段都是雲端採用漫長生命週期的一部分。 下圖將每個階段湊在一起，以示範整個生命週期。 雲端採用架構是有完整生命週期的架構，可在每個階段為客戶提供支援。
+上述的每個方法都是雲端採用漫長生命週期的一部分。 下圖將每個方法湊在一起，以示範整個生命週期。 雲端採用架構是完整的生命週期架構，可在每個階段上提供特定解決方法給客戶，以克服常見的阻礙。
 
 ![雲端採用架構概觀](./_images/caf-overview.png)
 
