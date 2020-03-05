@@ -1,18 +1,18 @@
 ---
-title: 動機：為什麼我們要轉向雲端？
-description: 雲端帳戶處理並移至雲端
+title: 為什麼我們要轉向雲端？
+description: 使用適用于 Azure 的雲端採用架構來瞭解雲端遷移背後的動機，以協助產生更成功的商務成果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cb5de82fab4e5a1c9f93b82ce8c7065d741ca292
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337852"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -28,9 +28,9 @@ ms.locfileid: "76798140"
 
 <!-- markdownlint-disable MD033 -->
 
-| 重大商業事件 | 遷移 | 創新 |
+| 重大商業事件 | 移轉 | 推出 |
 |---|---|---|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>縮減資本費用<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性 | 節省費用<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提高企業的靈活性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求 | 準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改良的客戶體驗與合作<br/><br/>產品或服務的轉換<br/><br/>新產品或服務的市場中斷 |
+| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>縮減資本費用<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性 | 節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提高企業的靈活性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求 | 準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改良的客戶體驗與合作<br/><br/>產品或服務的轉換<br/><br/>新產品或服務的市場中斷 |
 
 ## <a name="classify-your-motivations"></a>將您的動機分類
 
@@ -48,7 +48,7 @@ ms.locfileid: "76798140"
 
 本節將重點放在「*遷移*」和「*創新*動機」及其對應的策略。
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 在動機資料表的頂端附近列出的*遷移*動機，是採用雲端的最常見，但不一定是最重要的原因。 這些結果很重要，但最有效率的方法是轉換到其他更實用的 worldviews。 這項重要的第一個步驟是雲端採用，通常稱為*雲端遷移*。 此架構是指使用「[遷移](../getting-started/migrate.md)」一詞來執行雲端遷移的策略。
 
@@ -62,7 +62,7 @@ ms.locfileid: "76798140"
 - 調整以符合市場需求。
 - 調整以符合地理需求。
 
-### <a name="innovation"></a>創新
+### <a name="innovation"></a>推出
 
 資料是新的商品。 新式應用程式是將資料帶入各種體驗的供應鏈。 在現今的商業市場中，很難找到不是以資料、深入解析和客戶經驗為基礎的轉型產品或服務。 在*創新*清單中較低的動機，會與此架構中稱為[創新](../getting-started/innovate.md)的技術策略一致。
 

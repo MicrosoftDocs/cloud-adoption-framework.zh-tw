@@ -1,6 +1,6 @@
 ---
-title: 建立雲端轉換的財務模型
-description: 如何建立雲端轉換的財務模型。
+title: 雲端遷移的財務模型
+description: 瞭解建立財務模型所需的內容，以準確地代表雲端轉換的完整商業價值。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 49cce1f4ade76350a820dae2f638edeacb380aa6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ebc85c5a76d9f53b0117567fc79de51488e9b51d
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798599"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337978"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>建立雲端轉換的財務模型
 

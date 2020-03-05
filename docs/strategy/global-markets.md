@@ -1,18 +1,18 @@
 ---
-title: 瞭解全球市場決策的影響
-description: 全球市場概念的說明
+title: 全球市場決策的影響
+description: 使用適用于 Azure 的雲端採用架構，瞭解全球市場決策對雲端的轉換旅程有何影響。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798157"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337825"
 ---
 <!-- markdownlint-disable MD026 -->
 

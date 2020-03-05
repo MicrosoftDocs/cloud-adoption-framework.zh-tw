@@ -1,18 +1,18 @@
 ---
-title: 客戶參與結果的範例
-description: 客戶參與結果的範例
+title: 客戶參與結果範例
+description: 瞭解客戶參與的範例，以瞭解客戶的需求，以及其在業務轉型旅程中的生態系統。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6d9e5096c0b3a7adbf8a814479db5fba6359cca0
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337955"
 ---
 <!-- cSpell:ignore Exak -->
 
