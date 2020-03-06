@@ -9,11 +9,11 @@ ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
 ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225282"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337400"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 

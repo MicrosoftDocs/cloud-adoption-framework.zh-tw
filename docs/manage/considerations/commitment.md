@@ -1,18 +1,18 @@
 ---
-title: 商務承諾：雲端管理和營運
-description: 商務承諾：雲端管理和營運
+title: 雲端管理的業務承諾
+description: 計算未來從分類和中斷的影響到各種工作負載，以做出更佳的商務決策和承諾。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807847"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341212"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
