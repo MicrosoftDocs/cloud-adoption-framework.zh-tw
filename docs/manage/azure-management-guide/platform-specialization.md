@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808170"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223522"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -55,7 +55,7 @@ ms.locfileid: "76808170"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[改善系統設計](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[改善系統設計](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[自動補救](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[自動補救](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[使用服務類別目錄來擴展解決方案](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[使用服務類別目錄來擴展解決方案](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 1. 在 Azure 入口網站中，移至 [受控應用程式中心 (預覽)]  。
 2. 在 [瀏覽]  窗格上，選取 [服務目錄應用程式]  。
-3. 按一下 [+ 新增]  ，從公司的服務類別目錄中選擇應用程式定義。
+3. 選取 [+ 新增]  ，從公司的服務類別目錄中選擇應用程式定義。
 
 系統會顯示您目前正在維護的任何受控應用程式。
 
@@ -153,7 +153,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[持續改善](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[持續改善](#tab/ContinuousImprovement)
 
 ::: zone-end
 

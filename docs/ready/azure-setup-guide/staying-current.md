@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799211"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222045"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>使用 Microsoft Azure 隨時掌握最新動態
 
@@ -22,7 +22,7 @@ ms.locfileid: "76799211"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resourcestabtopresources"></a>[重要資源](#tab/TopResources)
+# <a name="top-resources"></a>[重要資源](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -45,14 +45,14 @@ ms.locfileid: "76799211"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resourcestabadditionalresources"></a>[其他資源](#tab/AdditionalResources)
+# <a name="additional-resources"></a>[其他資源](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
 如需可協助您隨時得知 Azure 最新動態的更深入內容，請查看以下所列的資源：
 
 - [Azure 圖表](https://azurecharts.com/)
-  - 此非官方資源會將過去 6 個月內所有的 Azure 更新資料視覺化，並納入其他實用圖表和公用程式，可協助您追蹤 Azure 中的變更。
+  - 這個非官方的視覺效果會顯示過去六個月內所做的所有 Azure 更新。 其中包含其他實用的圖表和公用程式，可協助您追蹤 Azure 變更。
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 由建置 Azure 的工程師示範的每週影片。 這些影片會進行示範、回答問題，以及分享見解。
   - 透過 [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 訂閱。

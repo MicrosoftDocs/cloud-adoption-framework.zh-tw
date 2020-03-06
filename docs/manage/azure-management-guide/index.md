@@ -1,6 +1,6 @@
 ---
-title: Azure 管理指南：開始之前
-description: 了解如何使用逐步指引來管理 Azure 作業。
+title: Azure 管理概觀
+description: 了解「適用於 Azure 的雲端採用架構」，其中包含管理 Azure 生產環境所需基本工具的相關資訊。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223475"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341754"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Azure 管理指南：開始之前
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Azure 管理指南：開始之前
 
 > [!NOTE]
 > 本指南是雲端採用架構的創新指引起點。 您也可以在 Azure 快速入門中心內取得本指南。 如需 Azure 快速入門中心的連結，請參閱本文稍後的提示。

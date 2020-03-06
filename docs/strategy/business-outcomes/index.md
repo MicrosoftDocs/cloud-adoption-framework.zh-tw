@@ -1,18 +1,18 @@
 ---
-title: 哪些業務成果與轉換過程相關？
-description: 與雲端轉換相關之業務成果的說明。
+title: 轉換旅程的商務結果
+description: 使用「適用於 Azure 的雲端採用架構」，了解與雲端轉換相關聯的商務結果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 333e3f2e3be6db16cc8bd6f81360bc5b15f4725e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337936"
 ---
 <!-- markdownlint-disable MD026 -->
 

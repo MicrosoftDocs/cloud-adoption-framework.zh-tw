@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：針對客戶意見反應做好準備
-description: 針對客戶意見反應做好準備
+title: Azure 創新：準備意見回應
+description: 了解如何使用 Azure 工具，從 GitHub 中裝載的 Web 應用程式和 API 中收集量化和質化的意見反應。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808357"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171084"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ ms.locfileid: "76808357"
 
 下列每個 Azure 工具都會與 GitHub 中裝載的專案整合 (或相容)：
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[適用於 Web 應用程式的定量意見反應](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[適用於 Web 應用程式的定量意見反應](#tab/Quantitative-Apps)
 
 Application Insights 是一種監視工具，可針對應用程式的使用量提供近乎即時的定量意見反應。 此意見反應有助於測試和驗證您目前的假設，以形成待辦項目的下一個功能或使用者劇本。
 
@@ -74,7 +74,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 - [開始使用 Azure 監視器 Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [建置遙測儀表板](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[適用於 API 的定量意見反應](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[適用於 API 的定量意見反應](#tab/Quantitative-APIs)
 
 連線經濟改變了企業的創新方式。 市場和產業遭遇動盪的速度比以往還快。 動盪的形式很多，企業必須奮力對抗 _「創新者困境」_ ：如何設定變更步調，又不至於在持續的商業活動上摔一跤。
 
@@ -116,7 +116,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 - [使用 Azure 監視器來取得關於 API 的意見反應](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[定性意見反應](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[定性意見反應](#tab/Qualitative)
 
 您可以在待辦項目 (或面板) 將意見反應記錄為使用者劇本。 您也可以在這裡以可採取動作的工作形式來追蹤相關工作。 Azure Boards 可以直接整合到 GitHub 中，以便在意見反應-工作管理和任何原始程式碼之間獲得順暢的體驗。
 
@@ -154,7 +154,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 - [開始使用 Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards 和 GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[使用管線關閉迴圈](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[使用管線關閉迴圈](#tab/pipelines)
 
 對意見反應採取行動不一定表示新增客戶所要求的功能。 但是每個資料點都應該會導致某些變更。 該變更可能是您對事物的想法改變。 也可能是與所要求功能完全不同的技術變更。 無論是哪種情況，部署管線和工具 (如 Azure Pipelines) 都可讓您快速發佈這些變更，以便經常與客戶分享。
 

@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：透過裝置來互動
-description: Azure 創新指南 - 透過裝置來互動
+title: Azure 創新：透過裝置互動
+description: 了解 Azure 如何透過已連線和感知的邊緣裝置，提供一個架構供您建置沉浸式且有效的商務解決方案。
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808306"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171016"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[全球規模的 IoT 服務](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[全球規模的 IoT 服務](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 建置可重複使用、具有高度擴充性、可感知空間的體驗，讓實體和數位世界之間的串流資料彼此連結。 使用實體環境的全方位模型來增強客戶參與。 產生空間智慧圖形，用模型來呈現人員、空間和裝置之間的關聯性與互動情形。 從實體空間查詢資料，而不是從各不相同的感應器查詢。
 
@@ -136,7 +136,7 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[位置智慧](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[位置智慧](#tab/AzureMaps)
 
 除了鄰近地點、交通和路線等傳統位置功能以外，Azure 地圖服務還可讓企業建立使用即時位置智慧的解決方案，此即時位置智慧由世界級的行動技術合作夥伴 **TomTom** 和 **Moovit** 所提供。 利用地理空間服務，輕鬆將進階定位及執行功能整合到您的應用程式中。
 
@@ -169,7 +169,7 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[空間體驗](#tab/spatial)
+## <a name="spatial-experiences"></a>[空間體驗](#tab/spatial)
 
 Azure Spatial Anchors 可讓開發人員使用混合實境平台來察覺空間、指定精確的景點，以及從支援的裝置重新叫用這些景點。
 
@@ -204,7 +204,7 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure 遠端轉譯](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure 遠端轉譯](#tab/RemoteRender)
 
 在雲端轉譯高品質的互動式 3D 內容，並將它即時串流到您的裝置。 媒體和娛樂業的特效 (VFX) 會大量使用轉譯工作負載。 其他如廣告、零售、石油和天然氣及製造等許多產業，也會使用轉譯。
 

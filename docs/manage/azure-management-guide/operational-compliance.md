@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808187"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223553"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
 _作業合規性_是任何雲端管理基準中的第二個專業領域。
@@ -40,7 +42,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[更新管理](#tab/UpdateManagement)
+## <a name="update-management"></a>[更新管理](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure 原則](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure 原則](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
 
 ::: zone-end
 

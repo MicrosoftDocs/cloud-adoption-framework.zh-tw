@@ -1,28 +1,34 @@
 ---
-title: 最佳化和轉換
+title: 最佳化及升階
 description: Azure 遷移指南的這部分涵蓋最佳化區域，包括檢閱解決方案的設計、調整服務的大小，以及分析成本。
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994169"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222503"
 ---
-# <a name="optimize-and-transform"></a>最佳化和轉換
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-現在您已將服務遷移至 Azure，下一個階段包括針對可能的最佳化區域審查解決方案。 這可能包括審查解決方案的設計、適當調整服務大小，以及分析成本。
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>測試、最佳化及升階
+
+現在您已將服務遷移至 Azure，下一個階段包括針對可能的最佳化區域審查解決方案。 此工作可能包括審查解決方案的設計、適當調整服務大小，以及分析成本。
 
 這個階段也是將環境最佳化並執行環境可能轉換的機會。 例如，您可能已執行「重新裝載」移轉，且您的服務正在 Azure 上執行，您可以重新流覽解決方案設定或取用的服務，並可能執行「重構」來現代化和增加解決方案的功能。
 
-# <a name="right-size-assetstaboptimize"></a>[適當大小的資產](#tab/optimize)
+本文的其餘部分著重於可最佳化已遷移工作負載的工具。 達到效能和成本的平衡後，工作負載便已準備好升階至生產環境。 如需有關升階選項的指引，請參閱[最佳化及升階](../migration-considerations/optimize/index.md)中的程序改善文章。
+
+# <a name="right-size-assets"></a>[適當大小的資產](#tab/optimize)
 
 所有提供以耗用量為基礎之成本模型的 Azure 服務，都可以透過 Azure 入口網站、CLI 或 PowerShell 來調整大小。 正確設定服務大小的第一個步驟是審查其使用計量。 Azure 監視器服務可供存取這些計量。 您可能需要設定所分析服務的計量集合，並容許適當的時間來根據您的工作負載模式收集有意義的資料。
 
@@ -48,8 +54,7 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 1. 從清單中選取 [大小]  和所需的新大小。 您可能需要調整篩選條件，找出您所需的大小。
 1. 選取 [調整大小]  。
 
-請注意，調整生產虛擬機器的大小可能會導致服務中斷。 請先嘗試為您的 VM 套用正確的大小，再將其升階至生產環境。
-
+調整生產虛擬機器的大小可能會導致服務中斷。 請先嘗試為您的 VM 套用正確的大小，再將其升階至生產環境。
 
 ::: zone target="chromeless"
 
@@ -95,9 +100,9 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[成本管理](#tab/ManageCost)
+# <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
-請務必執行持續成本分析和審查。 這讓您有機會視需要調整資源大小，以平衡成本和工作負載。
+請務必執行持續成本分析和審查。 此工作讓您有機會視需要調整資源大小，以平衡成本和工作負載。
 
 Azure 成本管理可搭配 Azure Advisor，提供成本最佳化建議。 Azure Advisor 可協助您透過識別閒置及使用量過低的資源來最佳化及改善效率。
 

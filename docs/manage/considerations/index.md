@@ -1,18 +1,18 @@
 ---
-title: 雲端管理和作業 - 指導理論
-description: 雲端管理和作業 - 指導理論
+title: 雲端管理中的指導理論
+description: 使用「適用於 Azure 的雲端採用架構」來了解可在雲端中獲得成功的作業模型、流程和工具。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 88ff7f7f068eeb2c516717930f3633ac1473281f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b08e35ce2ac2d1bfd4a962b9bf5d29654c652c0a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807779"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341159"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>雲端的 IT 管理和作業
 

@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：預測和影響
-description: 了解如何使用 Azure 進行預測和影響。
+title: Azure 創新：預測和影響
+description: 了解 Azure 解決方案以預測客戶的需求，並將預測整合回到您的解決方案中，進而影響客戶行為。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808255"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170965"
 ---
 ::: zone target="docs"
 
@@ -38,7 +38,7 @@ ms.locfileid: "76808255"
 |Azure Machine Learning Studio|是|是|否|大致了解預測演算法|
 |Azure Machine Learning 服務|是|是|是|資料科學家|
 
-## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure 認知服務](#tab/CognitiveServices)
+## <a name="azure-cognitive-services"></a>[Azure 認知服務](#tab/CognitiveServices)
 
 Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認知服務可根據現有模型來做出預測，而不需要額外的訓練。 如果您的員工之中沒有可以訓練預測模型的資料科學家，認知服務就是最好的服務。 某些服務並不需要訓練。 其他服務則只需要最少的訓練。
 
@@ -70,7 +70,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
 如果認知服務內的現有模型無法配合所需的預測，Azure Machine Learning Studio 可能有辦法讓您建置所需的預測，而不需要高深的資料科學家技能。
 
@@ -101,7 +101,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 ::: zone-end
 
-## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Azure Machine Learning 服務](#tab/MachineLearningService)
+## <a name="azure-machine-learning-service"></a>[Azure Machine Learning 服務](#tab/MachineLearningService)
 
 Azure Machine Learning 服務會提供要更加深入地訓練客戶資料集所需的更高深程式碼架構方法。 資料科學家可以使用 Python 之類的語言進行訓練，然後再建置演算法來預測客戶需求。
 

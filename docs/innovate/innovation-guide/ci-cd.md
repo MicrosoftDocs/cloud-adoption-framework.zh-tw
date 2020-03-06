@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：實現採用
-description: 了解如何使用 Azure 來實現採用
+title: Azure 創新：實現採用
+description: 協助開發人員小組有效率地進行建置、促進安全的全球共同作業，以及移除 Azure 中的創新障礙。
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808323"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171050"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ ms.locfileid: "76808323"
 
 當組織能夠讓員工獲得支援而產生所要的價值時，便會實現創新。 能夠引發創新的其中一組人就是開發人員。 無論是哪個產業，開發人員都在價值產生和成長方面扮演越來越吃重的角色。 他們是我們這個時代的建築者，他們編寫這個世界的程式碼，矗立在創新的核心位置。 創新的組織會打造一種文化，讓開發人員有能力實現更多成果。
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[開發人員生產力](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[開發人員生產力](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>開發人員的速度
 
@@ -93,7 +93,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[共同創新](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[共同創新](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>透過合作來創新
 
@@ -111,7 +111,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 **移至 [Microsoft Teams 文件](https://docs.microsoft.com/MicrosoftTeams)**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[創新特性](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>使用 Azure DevOps 來創新
 
@@ -127,7 +127,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 Azure 有獨特的供應項目，可協助您在組織中引發大規模創新。 為了推動更多創新，現今的專業開發人員可以建立應用程式和建置組塊，讓組織中的其他專家能夠在可靠的基礎上建置應用程式。 透過 Azure，他們可以取得專家團隊支援的全面安全性，以及獲得深受企業、政府和新創公司信任的主動合規性。
 
-# <a name="liveops-innovationtabliveops"></a>[LiveOps 創新](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[LiveOps 創新](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>做好準備，迎向未來：LiveOps
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803512"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222658"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
@@ -34,7 +34,7 @@ ms.locfileid: "76803512"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[在移轉前預估 VM 成本](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[在移轉前預估 VM 成本](#tab/EstimateVMCosts)
 
 在移轉任何資產 (基礎結構、應用程式或資料) 之前，您都有機會根據對這些資產觀察到的效能準則，來估計成本及調整大小。 估計成本有兩個用途：它可實現成本控制，並且可提供檢查點以確保目前的預算可支應必要的效能需求。
 
@@ -54,13 +54,13 @@ ms.locfileid: "76803512"
 Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每月成本預估**。 下列步驟將會載入成本預估：
 
 1. 瀏覽至入口網站中的 [Azure Migrate 評量]。
-2. 在專案的 [概觀]  頁面中，選取 [+建立評估]  。
-3. 按一下 [檢視全部]  來檢閱評估屬性。
-4. 建立群組，並指定群組名稱。
-5. 選取您想要新增至群組的機器。
-6. 按一下 [建立評估]  以建立群組和評估。
-7. 建立評估之後，在 [概觀] > [儀表板] 中檢視該評估。
-8. 在入口網站瀏覽的 [評估詳細資料] 區段中，選取[成本詳細資料]  。
+1. 在專案的 [概觀]  頁面中，選取 [+建立評估]  。
+1. 選取 [檢視全部]  以檢閱評量屬性。
+1. 建立群組，並指定群組名稱。
+1. 選取您想要新增至群組的機器。
+1. 選取 [建立評估]  以建立群組和評估。
+1. 建立評估之後，在 [概觀] > [儀表板] 中檢視該評估。
+1. 在入口網站瀏覽的 [評估詳細資料] 區段中，選取[成本詳細資料]  。
 
 產生的預估值 (如下圖所示) 可識別計算和儲存體的每月成本，這通常是雲端成本中最大的部分。
 
@@ -72,7 +72,7 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每�
 - [使用 Azure Migrate 設定和檢閱評估](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，有關[成本管理專業領域](../../govern/cost-management/index.md)與[複雜企業治理指南中的成本管理改進](../../govern/guides/complex/cost-management-improvement.md)的指導方針。
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[在移轉期間和之後估計和最佳化 VM 成本](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[在移轉期間和之後估計和最佳化 VM 成本](#tab/EstimateOptimize)
 
 在移轉前估計成本，可提供可靠的成本預期目標。 此外，也可藉此機會考量要移轉的每個資產 (基礎結構、應用程式和資料) 的效能和成本需求。 不過，這仍是估計值。 一旦資產移轉並開始進行載入後，就可以根據實際或綜合負載更精確地計算成本。
 
@@ -94,7 +94,7 @@ Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時�
 
 下列步驟將為您的訂用帳戶載入 Azure 成本管理的成本分析資料：
 
-1. 瀏覽至入口網站中的 [成本管理 + 帳單]  。 如果在左窗格中沒有看到 [成本管理 + 計費]，請按一下 [所有服務]  。 在服務功能表窗格中，於 [監視與管理]  底下，按一下 [成本管理 + 計費]  。
+1. 瀏覽至入口網站中的 [成本管理 + 帳單]  。 如果在左窗格中沒有看到 [成本管理 + 計費]，請選取 [所有服務]  。 在服務功能表窗格中，於 [監視與管理]  底下，選取 [成本管理 + 計費]  。
 2. 在 [成本管理 + 帳單] 中，選取左側瀏覽窗格中的 [成本管理]  ，以開始分析雲端成本並將成本最佳化。
 3. 在 [成本管理] 中，選取 [成本分析]  。
     a. 使用 [範圍]  框，以切換至成本分析中的不同範圍。
@@ -107,7 +107,7 @@ Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時�
 - 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
 - 如需 Azure 成本管理的詳細資訊，請參閱[了解和使用範圍](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)。
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[將成本最佳化的提示和秘訣](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[將成本最佳化的提示和秘訣](#tab/TipsTricks)
 
 除了本文所述的工具之外，還有一些提示和秘訣可協助您快速降低整體雲端成本。 以下是一些應留意的簡要提示：
 

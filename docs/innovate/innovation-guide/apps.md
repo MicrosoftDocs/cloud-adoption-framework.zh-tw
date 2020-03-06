@@ -1,6 +1,6 @@
 ---
-title: Azure 創新指南：透過應用程式與客戶互動
-description: 了解如何使用 Azure，透過應用程式與客戶互動來進行創新。
+title: Azure 創新：透過應用程式參與
+description: 了解 Azure 服務如何協助您輕鬆地將現有 Web 和 API 應用程式現代化，並建立雲端原生應用程式。
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808340"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171067"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ ms.locfileid: "76808340"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[更快地帶來價值](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[更快地帶來價值](#tab/DeliverValueFaster)
 
 雲端式解決方案的優點之一，就是能夠更快地收集意見反應，並開始為使用者帶來價值。 無論該使用者是外部客戶還是貴公司內的使用者，獲得關於應用程式意見反應的速度都是越快越好。
 
@@ -131,7 +131,7 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 - [Azure SDK for Go 文件](https://docs.microsoft.com/azure/go)
 - [DevOps 解決方案](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[建立雲端原生的應用程式](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[建立雲端原生的應用程式](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Azure Red Hat OpenShift 提供靈活、自助的完全受控 OpenShift 叢集部
 
 **移至 [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[隔離失敗點](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[隔離失敗點](#tab/IsolatePointsOfFailure)
 
 當您開始從初始測試階段進行轉換時，請評估用來隔離和移除失敗點的方法。 由於 Azure 雲端平台具有分散本質，您可以將應用程式設計為既能讓失敗降到最低，又能改善效能。
 

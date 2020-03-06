@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994104"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222490"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>保護及管理
 
 將您的環境遷移至 Azure 之後，請務必考慮用來管理環境的安全性和方法。 Azure 提供許多特性和功能來滿足您解決方案中的這些需求。
 
-# <a name="azure-monitortabmonitor"></a>[Azure 監視器](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure 監視器](#tab/monitor)
 
 Azure 監視器可藉由提供全方位的解決方案，以便收集、分析及處理來自雲端和內部部署環境的遙測資料，進而將應用程式的可用性和效能最大化。 它可協助您了解您的應用程式表現如何，並主動識別影響它們的問題以及它們所依賴的資源。
 
@@ -44,7 +46,7 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Azure 服務健康狀態](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/servicehealth)
 
 當 Azure 服務中發生的問題影響您時，Azure 服務健康狀態會提供個人化指導及支援。 它會通知您並協助您了解問題所帶來的影響，並在問題解決時通知您； 也會協助您針對可能影響資源可用性之預定進行的維修作業和變更做好準備。
 
@@ -75,7 +77,7 @@ Azure 服務健康狀態包含：
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Azure Advisor](#tab/advisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來最佳化您的 Azure 部署。 它會分析您的資源及用量遙測， 並建議解決方案，協助改善效能、安全性及資料的高可用性，同時尋找降低整體 Azure 費用的機會。
 
@@ -98,7 +100,7 @@ Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來�
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Azure 資訊安全中心](#tab/security)
+# <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/security)
 
 Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化資料中心的安全性狀態，並在雲端 (無論在 Azure 中與否) 及內部部署的混合式工作負載全面提供進階威脅防護。
 
@@ -121,7 +123,7 @@ Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化�
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Azure 備份](#tab/backup)
+# <a name="azure-backup"></a>[Azure 備份](#tab/backup)
 
 Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還原 Microsoft Cloud 中的資料。 Azure 備份將以一個可靠、安全及具成本競爭力的雲端架構解決方案，取代您現有的內部部署或異地備份解決方案。
 
@@ -147,7 +149,7 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 稍早在本指南中，我們討論了如何在執行移轉的過程中使用 Azure Site Recovery。 但是在移轉完成後，它也會形成您的災害復原策略中的重要元件。
 
