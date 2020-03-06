@@ -1,6 +1,6 @@
 ---
-title: 雲端監視指南：監視平臺總覽
-description: 選擇在 Microsoft Azure 中使用 Azure 監視器或 System Center Operations Manager 的時機。
+title: 雲端監視平臺總覽
+description: 取得兩個監視平臺的高階總覽，協助您瞭解每個平臺如何提供核心監視功能。
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223033"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341193"
 ---
 <!-- cspell:ignore opsman ITSM -->
 
@@ -121,7 +121,7 @@ Azure 監視器所收集的資料會儲存為記錄或計量，而 Azure 監視�
 
 由於 Azure 監視器會將資料收集與對該資料的動作分隔開來，因此在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
 
-## <a name="health-monitoring"></a>健康狀況監視
+## <a name="health-monitoring"></a>健康情況監視
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -155,7 +155,7 @@ Operations Manager 提供四種基本方式來分析收集的資料：
 
 利用強大的 Azure 監視器分析引擎，您可以互動方式處理記錄資料，並將它們與其他監視資料結合，以進行趨勢和其他資料分析。 [Views] 和 [儀表板] 可讓您從 Azure 入口網站以各種不同的方式來視覺化查詢資料，並將其匯入 Power BI。 監視解決方案包含查詢和視圖，以呈現其所收集的資料。 適用于容器的深入解析（例如 Application Insights、適用於 VM 的 Azure 監視器和 Azure 監視器）包含自訂的視覺效果，可支援互動式監視案例。
 
-## <a name="alerting"></a>警示
+## <a name="alerting"></a>警示中
 
 ### <a name="operations-manager"></a>Operations Manager
 

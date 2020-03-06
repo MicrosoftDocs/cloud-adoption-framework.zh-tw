@@ -1,33 +1,33 @@
 ---
-title: Azure 伺服器管理工具和服務
-description: Azure 伺服器管理工具和服務
+title: Azure 伺服器管理服務
+description: 使用適用于 Azure 的雲端採用架構來瞭解 Azure 伺服器管理服務套件中的區域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341572"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如本指引的[總覽](./index.md)中所討論，Azure 伺服器管理服務的套件涵蓋下列領域：
 
-- 遷移
+- 移轉
 - 安全
-- Protect
+- 保護
 - 監視
 - 設定
 - 治理
 
 下列各節將簡短說明這些管理區域，並提供有關支援它們的主要 Azure 服務之詳細內容的連結。
 
-## <a name="migrate"></a>遷移
+## <a name="migrate"></a>移轉
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估是否適合進行遷移。 Azure Migrate 完成評估之後，您可以使用[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將您的內部部署機器遷移至 azure。
 
@@ -35,7 +35,7 @@ ms.locfileid: "78223278"
 
 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)是全方位的安全性管理應用程式。 藉由上架至資訊安全中心，您可以快速取得環境的安全性和法規合規性狀態的評量。 如需將伺服器上架到 Azure 資訊安全中心的指示，請參閱[設定訂用帳戶的 Azure 管理服務](./onboard-at-scale.md#azure-security-center)。
 
-## <a name="protect"></a>Protect
+## <a name="protect"></a>保護
 
 若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性和嚴重損壞修復（BCDR）計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
 
@@ -73,7 +73,7 @@ ms.locfileid: "78223278"
 
 這些服務是支援進行中作業的必要條件：
 
-- [更新管理](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments)會在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它支援 Windows 和 Linux 作業系統，並追蹤因遺失修補程式而造成的主要 OS 弱點和不符合的問題。
+- [更新管理](/azure/automation/automation-update-management)會在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它支援 Windows 和 Linux 作業系統，並追蹤因遺失修補程式而造成的主要 OS 弱點和不符合的問題。
 - [變更追蹤和清查](https://docs.microsoft.com/azure/automation/change-tracking)可讓您深入瞭解在您的環境中執行的軟體，並反白顯示任何已發生的變更。
 - [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)可讓您執行 Python 和 PowerShell 腳本或 runbook，將整個環境中的工作自動化。 當您使用自動化搭配[混合式 Runbook 背景工作角色](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)時，您也可以將 runbook 延伸至您的內部部署資源。
 - [Azure 自動化狀態設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview)可讓您直接從 Azure 推送 PowerShell DESIRED STATE CONFIGURATION （DSC）設定。 DSC 也可讓您監視和保留客體作業系統和工作負載的設定。
