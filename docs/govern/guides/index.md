@@ -1,6 +1,6 @@
 ---
 title: 雲端治理指南
-description: 檢閱雲端治理指南，這些指南說明了針對任何治理案例累加式方法的最佳做法。
+description: 回顧雲端治理指南，其中說明針對任何治理案例的累加方法最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -10,11 +10,11 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
-ms.translationtype: HT
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709221"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337735"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
