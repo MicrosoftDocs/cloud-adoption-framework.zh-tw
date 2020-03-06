@@ -1,6 +1,6 @@
 ---
 title: 數位經濟的創新
-description: 專注於了解客戶需求，並快速建置雲端創新，以塑造客戶與產品互動的方式。
+description: 專注于瞭解客戶需求，並快速建立雲端創新，以塑造您的客戶與您的產品的互動方式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
-ms.translationtype: HT
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171169"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337469"
 ---
 # <a name="innovation-in-the-digital-economy"></a>數位經濟的創新
 
@@ -35,7 +35,7 @@ ms.locfileid: "78171169"
 
 ## <a name="formula-for-innovation"></a>可產生創新的公式
 
-成功的創新不會是突然爆發的轉變事件，也不會是難以捉摸的神奇獨角獸。 要成功創新，更重要的是保持平衡，用簡單的方程式來說：**創新 = 發明 + 採用**。
+成功的創新不會是突然爆發的轉變事件，也不會是難以捉摸的神奇獨角獸。 創新的成功是更多的平衡動作，以簡單的方程式說明：**創新 = 家發明 + 採用**。
 
 創新會發生在發明和採用交集在一起時。 真正的創新是透過新方法、新流程和新技術來慢慢調整人類體驗而獲得的成果。 在這個公式中，發明代表著建立符合客戶需求的新解決方案。 相反地，採用則代表應用新解決方案來塑造人類的行為和互動方式。 想要在發明與採用之間找到最佳平衡點，需要反覆根據資料做出決策、持續學習和擁有成長思維。 此外，也需要有一些技術，以便在現今的數位社會裡跟上數不清的學習機會。
 
