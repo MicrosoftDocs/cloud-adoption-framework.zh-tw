@@ -1,18 +1,18 @@
 ---
-title: 技能就緒路徑入門
-description: 技能就緒路徑入門
+title: 開始學習技能就緒性路徑
+description: 藉由開始使用技能就緒路徑，協助組織瞭解和使用相關的變更，以引導採用雲端服務。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800146"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342026"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>技能就緒路徑入門
 
@@ -46,6 +46,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [適用于資料工程師的 Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：探索資料世界的演變，以及雲端技術的問世如何提供新的商機供企業探索。 您將瞭解各種可用的資料平臺技術，以及資料工程師可以如何利用這項技術來獲得組織的優勢。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>進一步了解
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

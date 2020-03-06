@@ -1,18 +1,18 @@
 ---
-title: 保護和復原-雲端管理和作業
-description: 保護和復原-雲端管理和作業
+title: 雲端管理中的保護與復原
+description: 瞭解針對潛在工作負載中斷進行準備的重要性。 這種準備工作可讓您的小組更快偵測到失敗，並更快速地復原。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9733c238903e2fa66f76337bb255c4cfda33896
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807711"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78340990"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 

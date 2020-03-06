@@ -1,18 +1,18 @@
 ---
-title: 上架至 Azure 伺服器管理服務
-description: 上架至 Azure 伺服器管理服務
+title: 將 Azure 伺服器管理服務上架
+description: 使用 Azure 虛擬機器和內部部署伺服器的資訊將 Azure 伺服器管理服務上架。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dcb6be86ec0bcf231cef8286768d014ae7489fea
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808000"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341516"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>第2階段：上架 Azure 伺服器管理服務
 

@@ -1,6 +1,6 @@
 ---
-title: 雲端監視指南：收集正確的資料
-description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
+title: 收集雲端中的監視資料
+description: 瞭解如何觀察雲端解決方案的健康狀態和可用性，以收集正確的監視資料。
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b537caf193601057da458b07cb62bdba64a7b6b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223243"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341101"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 

@@ -1,6 +1,6 @@
 ---
-title: 雲端監視指南：雲端部署模型的監視策略
-description: 選擇何時使用 Azure 監視器或 System Center Operations Manager Microsoft Azure
+title: 雲端部署模型的監視策略
+description: 使用適用于 Azure 的雲端採用架構，瞭解要採用哪些監視策略來進行雲端管理。
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341822"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
@@ -43,7 +43,7 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 <!-- markdownlint-disable MD033 -->
 
-階層 | 資源 | 範圍 | 方法
+層 | 資源 | 範圍 | 方法
 ---|---|---|----
 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
 Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。
@@ -72,7 +72,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 <!-- markdownlint-disable MD033 -->
 
-|需求 | Azure Monitor | Operations Manager |
+|需求 | Azure 監視器 | Operations Manager |
 |:--|:---|:---|
 |基礎結構需求 | 否 | 是<br> 至少需要管理伺服器和 SQL server，才能裝載運算元據庫和報表資料倉儲資料庫。 當需要高可用性和嚴重損壞修復，而且有多個網站中的機器、不受信任的系統，以及其他複雜的設計考慮時，複雜度就會增加。|
 |有限的連線能力-無網際網路<br> 或隔離的網路 | 否 | 是 |

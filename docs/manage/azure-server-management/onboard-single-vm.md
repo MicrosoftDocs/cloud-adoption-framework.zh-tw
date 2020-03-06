@@ -1,18 +1,18 @@
 ---
-title: 在單一 VM 上啟用伺服器管理服務以進行評估
-description: 在單一 VM 上啟用伺服器管理服務以進行評估
+title: 在 VM 上啟用伺服器管理服務
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在單一 VM 上啟用 Azure 伺服器管理服務。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808034"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341686"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>在單一 VM 上啟用伺服器管理服務以進行評估
 

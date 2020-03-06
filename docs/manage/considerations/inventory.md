@@ -1,18 +1,18 @@
 ---
-title: 清查和可見度-雲端管理和作業
-description: 清查和可見度-雲端管理和作業
+title: Azure 中的清查和可見性
+description: 瞭解要管理的內容（清查），以及這些受管理的工作負載和資產在一段時間內的變化（可見度）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29085f6ce1324f9f22acd0dc674c382163426233
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341213"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -47,7 +47,7 @@ ms.locfileid: "76807762"
 在任何雲端平臺上建立可見度需要幾個重要元件：
 
 - 責任與可見度
-- 清查
+- 詳細目錄
 - 集中式記錄
 - 變更追蹤
 - 效能遙測
@@ -56,7 +56,7 @@ ms.locfileid: "76807762"
 
 當您為每個工作負載建立承諾時，[管理責任](./commitment.md#management-responsibility)就是一項關鍵因素。 委派的責任會建立委派可見度的需求。 清查和可見度的第一個步驟是確保負責的合作物件可以存取正確的資料。 在您執行任何雲端原生工具以取得可見度之前，請確定每個作業小組都已設定每個監視工具的適當存取權和範圍。
 
-### <a name="inventory"></a>清查
+### <a name="inventory"></a>詳細目錄
 
 如果沒有人知道資產存在，就很難以管理資產。 您必須先清查並分類資產或工作負載，才可以管理該資產或工作負載。 針對穩定作業的第一個技術步驟是驗證清查和該清查的分類。
 
@@ -76,7 +76,7 @@ ms.locfileid: "76807762"
 
 進行中的網路、DNS、作業系統和其他基本層面的健全狀況和操作，都是重要的資料點，會納入任何工作負載的整體健全狀況。
 
-## <a name="processes"></a>程序
+## <a name="processes"></a>處理序
 
 可能比雲端管理平臺的功能更重要，雲端管理程式將會實現與企業的營運承諾。 任何雲端管理方法至少應該包含下列程式：
 
@@ -106,7 +106,7 @@ ms.locfileid: "76807762"
 
 沒有動作的資料會產生極小的傳回。 雲端管理可能會擴充至雲端原生工具和程式以外。 為了容納更廣泛的程式，可能需要增強雲端管理基準，以包含報告、IT 服務管理整合或資料集中化。 雲端管理可能需要在營運成熟度的各種階段中包含下列一或多個。
 
-### <a name="report"></a>報告
+### <a name="report"></a>Report
 
 與商務專案關係人之承諾的離線程式和通訊通常需要報告。 自助報告或定期報告可能是增強式管理基準的必要元件。
 

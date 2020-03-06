@@ -1,18 +1,18 @@
 ---
 title: 建立操作適用性檢閱
-description: 操作基本概念的指導方針
+description: 建立操作健身審查程式，以充分瞭解在生產環境中執行工作負載所產生的問題。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807558"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341805"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -119,7 +119,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 6. 最後，小組會回顧進行中的補救工作。 針對進行中工作的每個計分卡計量都會根據預期的準則進行審核。 針對符合計量準則的構成元件，服務擁有者會顯示記錄和監視資料，以確認符合準則。 針對不符合計量準則的構成元件，每個工程擁有者都會說明導致無法符合準則的問題，並提供任何新的補救設計。
 
-## <a name="recommended-resources"></a>推薦資源
+## <a name="recommended-resources"></a>建議的資源
 
 - [軟體品質的要素](https://docs.microsoft.com/azure/architecture/guide/pillars)。
     Azure 應用程式架構指南的這一節說明軟體品質的五大要素：擴充性、可用性、復原、管理和安全性。

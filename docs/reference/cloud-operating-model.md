@@ -1,6 +1,6 @@
 ---
-title: 雲端操作模式現在是適用于 Azure 的 Microsoft Cloud 採用架構
-description: 瞭解如何在雲端採用架構內使用雲端作業模式實務。
+title: 雲端操作模式現在是 Azure 的雲端採用架構
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何加速雲端採用的功能、原因及方式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048127"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341992"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>雲端作業模式現在是 Azure Microsoft Cloud 採用架構的一部分
 
 在 2018 年初，Microsoft 發行了雲端作業模型 (COM)。 COM 是一份指南，協助客戶瞭解數位轉型的**用途**和**原因**。 這可協助客戶瞭解所有需要解決的領域：商務策略、文化策略和技術策略。 COM 中未包含的內容是特定的「作法」，也就是客戶想_知道的「_ 從這裡開始到哪裡？」
 
-在2018年10月，我們開始回顧所有在 Microsoft 社區中散佈的模型，我們發現大約有60個不同的雲端採用模型。 我們建立了一個跨 Microsoft 團隊，將所有專案結合在一起，成為專屬的工程「產品」，並在服務、銷售和行銷之間定義了不同的實施。 這項工作成果建立單一模型，這是適用于 Azure 的 Microsoft Cloud 採用架構，其設計目的是要協助客戶瞭解**什麼**和**原因**，並提供有關**如何**協助他們加快其速度的整合指引雲端採用。 此專案的目標是要建立一個 Microsoft 的雲端採用方法。
+在2018年10月，我們開始回顧所有在 Microsoft 社區中散佈的模型，我們發現大約有60個不同的雲端採用模型。 我們建立了一個跨 Microsoft 團隊，將所有專案結合在一起，成為專屬的工程「產品」，並在服務、銷售和行銷之間定義了不同的實施。 這項工作成果建立單一模型，這是適用于 Azure 的 Microsoft Cloud 採用架構，其設計目的是協助客戶瞭解**什麼**和**原因**，並提供**如何**協助其加速雲端採用的整合指引。 此專案的目標是要建立一個 Microsoft 的雲端採用方法。
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>在雲端採用架構內使用雲端作業模式實務
 
@@ -32,7 +32,7 @@ ms.locfileid: "73048127"
 
 先前在 COM 中提供的指導方針仍然與雲端採用架構有關。 體驗不同，但雲端採用架構的結構只是該指引的擴充。 若要從 COM 轉換到雲端採用架構，請務必瞭解範圍和結構。 下列兩節將描述該轉換。
 
-## <a name="scope"></a>Scope
+## <a name="scope"></a>範圍
 
 COM 已建立由下列元件組成的範圍：
 
@@ -47,7 +47,7 @@ COM 已建立由下列元件組成的範圍：
 > [!NOTE]
 > 雲端採用架構的範圍有兩個顯著的清楚點。 在雲端採用架構中，商務策略超越了雲端成本的檔&mdash;其概念是瞭解動機、所需的結果、退貨和雲端成本，以建立可採取行動的計畫並清除商業理由。 在雲端採用架構中，人員策略超越訓練，以包含建立顯而易見的文化成熟度的方法。 藍圖的幾個領域包括 Agile 管理、DevOps 整合、客戶理解和對，以及精簡產品開發方法的影響。
 
-## <a name="structure"></a>Structure
+## <a name="structure"></a>結構
 
 COM 包含一個資訊圖，其中概述了雲端採用工作期間所需的各種決策和動作。 該圖形提供了一種清楚的方法來傳達後續步驟和相依的決策。
 

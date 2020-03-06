@@ -1,18 +1,18 @@
 ---
-title: 排定雲端採用方案的工作負載優先順序並加以定義
-description: 排定雲端採用方案的工作負載優先順序並加以定義
+title: 設定雲端採用的優先順序並定義工作負載
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何設定雲端採用方案的工作負載優先順序並加以定義。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799976"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341907"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>排定雲端採用方案的工作負載優先順序並加以定義
 
@@ -63,26 +63,26 @@ ms.locfileid: "76799976"
 
 ### <a name="business-inputs"></a>商務輸入
 
-| 資料點 | 說明 | 輸入 |
+| 資料點 | 描述 | 輸入 |
 |---|---|---|
 | 工作負載名稱 | 此工作負載的名稱為何？ |         |
 | 工作負載描述 | 在一個句子中，此工作負載的用途為何？ |         |
 | 採用動機 | 此工作負載會影響哪些雲端採用動機？ |         |
 | 主要贊助者 | 對於受影響的專案關係人而言，誰是要求前述動機的主要贊助者？ |         |
 | 業務單位 | 哪一個業務單位負責此工作負載的成本？ |         |
-| 商業流程 | 工作負載的變更會影響哪些商務程式？ |         |
+| 商務程式 | 工作負載的變更會影響哪些商務程式？ |         |
 | 商務團隊 | 哪些商務小組會受到變更影響？ |         |
 | 商務專案關係人 | 是否有任何業務會受到變更影響的主管？ |         |
 | 業務成果 | 企業會如何衡量這項工作的成功？ |         |
-| 計量 | 會使用哪些計量來追蹤成功？ |         |
+| 度量 | 會使用哪些計量來追蹤成功？ |         |
 | 法規遵循 | 此工作負載是否有任何協力廠商合規性需求？ |         |
 | 應用程式擁有者 | 誰負責與此工作負載相關聯之任何應用程式的業務影響？ |         |
 | 商務凍結期間 | 在任何時候，企業都不會允許變更嗎？ |         |
-| 地理位置 | 是否受此工作負載影響的任何地理位置？ |         |
+| 地域 | 是否受此工作負載影響的任何地理位置？ |         |
 
 ### <a name="technical-inputs"></a>技術輸入
 
-| 資料點 | 說明 | 輸入 |
+| 資料點 | 描述 | 輸入 |
 |---|---|---|
 | 採用方法 | 這項採用適合用於遷移或創新嗎？ |         |
 | 應用程式 ops 組長 | 列出負責此工作負載的效能和可用性的合作物件。 |         |

@@ -1,6 +1,6 @@
 ---
-title: 在 Azure 中部署移轉登陸區域
-description: 了解如何在 Azure 中部署移轉登陸區域。
+title: 部署 Azure 遷移登陸區域
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何使用登陸區域藍圖來部署定義的環境。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ba20999ecaf3b0abbde371fb965618fc24ee2479
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225337"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341876"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -59,12 +59,12 @@ ms.locfileid: "78225337"
 |移轉工具|將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。|[移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)|
 |記錄和監視|將會布建 Operational Insights 工作區和診斷儲存體帳戶。|         |
 |網路|將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。|[網路決策](../considerations/networking-options.md)|
-|身分識別|假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。|[身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
-|原則|此藍圖目前會假設未套用任何 Azure 原則。|         |
+|相同比較|假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。|[身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Policy(Windows Intune 說明：原則)|此藍圖目前會假設未套用任何 Azure 原則。|         |
 |訂用帳戶設計|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)|
 |管理群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
 |資源群組|N/A - 專為單一生產訂用帳戶所設計。|[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md)         |
-|資料|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
+|Data|N/A|在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md)         |
 |命名和標記標準|N/A|[命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)         |
 |成本管理|N/A|[追蹤成本](../azure-best-practices/track-costs.md)|

@@ -1,18 +1,18 @@
 ---
-title: 商務調整：雲端管理和作業
-description: 商務調整-雲端管理和營運
+title: 雲端管理中的商務調整
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何更有效地管理您的雲端作業，以及發展更緊密的商務調整。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114589d11b5e915400832d3d61a3ba91ca9d89fc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807864"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341431"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務對齊
 

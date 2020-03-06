@@ -1,18 +1,18 @@
 ---
-title: 調整雲端現有的角色、技能和流程
-description: 說明用來調整雲端現有角色、技能和流程的流程。
+title: 調整雲端的角色、技能和流程
+description: 使用適用于 Azure 的雲端採用架構，學習如何在您的組織轉移至雲端運算時，調整您現有的角色、技能和流程。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a39c38a8ac158a45e22930da98f7268e4db21174
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d016ee6fdc530774f759e100d704f9efc023c38b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800588"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341941"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>調整雲端現有的角色、技能和流程
 

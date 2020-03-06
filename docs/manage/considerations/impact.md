@@ -1,18 +1,18 @@
 ---
-title: 業務衝擊-雲端管理和營運
-description: 業務衝擊-雲端管理和營運
+title: 雲端管理中的業務衝擊
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何判斷及瞭解中斷或效能降低對您企業造成的影響。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807796"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341176"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理中的業務衝擊
 
