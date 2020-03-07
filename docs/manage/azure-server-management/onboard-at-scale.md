@@ -1,18 +1,18 @@
 ---
-title: 設定訂用帳戶的 Azure 伺服器管理服務
-description: 設定訂用帳戶的 Azure 伺服器管理服務
+title: 設定訂用帳戶的服務
+description: 瞭解如何將服務代理程式部署到您的伺服器並啟用管理解決方案，以設定訂用帳戶的 Azure 伺服器管理服務。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223385"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341573"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模設定 Azure 伺服器管理服務
 
