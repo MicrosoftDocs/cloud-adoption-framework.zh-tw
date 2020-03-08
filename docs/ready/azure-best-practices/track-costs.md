@@ -1,18 +1,18 @@
 ---
-title: 追蹤營業單位、環境或專案之間的成本
-description: 追蹤營業單位、環境或專案之間的成本
+title: 追蹤跨業務單位和環境的成本
+description: 使用適用于 Azure 的雲端採用架構，瞭解建立追蹤機制的決策和執行方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: bfd8fd5d227ea0329137015a41cd9f3cb8d8c19b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337390"
+ms.locfileid: "78383849"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
