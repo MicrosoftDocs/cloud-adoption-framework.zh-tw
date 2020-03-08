@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708150"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892441"
 ---
 # <a name="architectural-decision-guides"></a>架構決策指南
 
@@ -42,8 +42,6 @@ ms.locfileid: "77708150"
 [加密](./encryption/index.md)：採用加密措施保護敏感性資料，以滿足組織的合規性和安全性原則需求。
 
 [記錄和報告](./logging-and-reporting/index.md)：監視雲端型資源產生的記錄資料。 分析資料可提供工作負載的操作、維護與合規性狀態的健康情況見解。
-
-[區域指引](./regions/index.md)：會討論在 Azure 平台內將資源放置在區域中的適當決策準則。
 
 ## <a name="next-steps"></a>後續步驟
 

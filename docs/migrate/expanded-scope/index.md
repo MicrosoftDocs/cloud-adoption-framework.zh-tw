@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 730da49f910c34bf2bd94b8766cb292520201e50
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222323"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892628"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>雲端移轉的擴充範圍
 
@@ -26,15 +26,15 @@ ms.locfileid: "78222323"
 
 ### <a name="business-driven-scope-expansion"></a>業務導向範圍擴充
 
-- **[支援全球市場](../../decision-guides/regions/index.md)：** 業務是在多個地理區域中營運，其皆具有不同的資料主權需求。 為了符合那些需求，應該將額外考量納入必要條件檢閱及移轉期間的資產發佈。
+- **[支援全球市場](../azure-best-practices/multiple-regions.md)：** 業務是在多個地理區域中營運，其皆具有不同的資料主權需求。 為了符合那些需求，應該將額外考量納入必要條件檢閱及移轉期間的資產發佈。
 
 ### <a name="technology-driven-scope-expansion"></a>技術導向範圍擴充
 
-- **[VMWare 移轉](./vmware-host.md)：** 遷移 VMWare 主機可以加速整體的移轉流程。 所遷移的每個 VMWare 主機都可以使用隨即轉移方法，將多個工作負載移至雲端。 在移轉之後，這些 VM 和工作負載可以留在 VMWare 中，也可以遷移至新式雲端功能。
-- **[SQL Server 移轉](./sql-migration.md)：** 遷移 SQL Server 可以加速整體的移轉進程。 所遷移的每個 SQL Server 都可以移動多個資料庫和服務，而可能加快多個工作負載的速度。
-- **[多個資料中心](./multiple-datacenters.md)：** 遷移多個資料中心會大幅提高複雜性。 我們將會在評量、遷移、最佳化及管理程序期間討論其他考量，以針對更複雜的環境做好準備。
-- **[資料需求超過網路容量](./network-capacity-exceeded.md)：** 公司經常會因現有資料中心的容量、速度或穩定性已不再令人滿意，而選擇移轉至雲端。 不幸的是，那些相同的條件約束都會為移轉程序帶來複雜度，並需要在評量和移轉程序期間進行額外的規劃。
-- **[治理或合規性策略](./governance-or-compliance.md)：** 若治理和合規性是移轉成功與否的關鍵，IT 治理小組和雲端採用小組之間便需要取得進一步的共識。
+- **[VMWare 移轉](../azure-best-practices/vmware-host.md)：** 遷移 VMWare 主機可以加速整體的移轉流程。 所遷移的每個 VMWare 主機都可以使用隨即轉移方法，將多個工作負載移至雲端。 在移轉之後，這些 VM 和工作負載可以留在 VMWare 中，也可以遷移至新式雲端功能。
+- **[SQL Server 移轉](../azure-best-practices/sql-migration.md)：** 遷移 SQL Server 可以加速整體的移轉進程。 所遷移的每個 SQL Server 都可以移動多個資料庫和服務，而可能加快多個工作負載的速度。
+- **[多個資料中心](../azure-best-practices/multiple-datacenters.md)：** 遷移多個資料中心會大幅提高複雜性。 我們將會在評量、遷移、最佳化及管理程序期間討論其他考量，以針對更複雜的環境做好準備。
+- **[資料需求超過網路容量](../azure-best-practices/network-capacity-exceeded.md)：** 公司經常會因現有資料中心的容量、速度或穩定性已不再令人滿意，而選擇移轉至雲端。 不幸的是，那些相同的條件約束都會為移轉程序帶來複雜度，並需要在評量和移轉程序期間進行額外的規劃。
+- **[治理或合規性策略](../azure-best-practices/governance-or-compliance.md)：** 若治理和合規性是移轉成功與否的關鍵，IT 治理小組和雲端採用小組之間便需要取得進一步的共識。
 
 如果您的案例中有上述任何一項複雜性，則＜雲端採用架構＞中的本節很可能可以為您提供在移轉程序中適當對齊範圍所需的指引類型。
 
@@ -42,7 +42,7 @@ ms.locfileid: "78222323"
 
 ## <a name="next-steps"></a>後續步驟
 
-請瀏覽左側目錄以解決特定需求或範圍變更。 此外，清單上的第一個範圍強化：[支援全球市場](../../decision-guides/regions/index.md)，是檢閱這些案例的理想出發點。
+請瀏覽左側目錄以解決特定需求或範圍變更。 此外，清單上的第一個範圍強化：[支援全球市場](../azure-best-practices/multiple-regions.md)，是檢閱這些案例的理想出發點。
 
 > [!div class="nextstepaction"]
-> [支援全球市場](../../decision-guides/regions/index.md)
+> [支援全球市場](../azure-best-practices/multiple-regions.md)

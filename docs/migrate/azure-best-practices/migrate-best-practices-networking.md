@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225580"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892696"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
@@ -40,7 +40,7 @@ Azure 會提供虛擬網路 (VNet)：
 
 在移轉過程中建立 VNet 時，請務必要規劃 VNet IP 位址空間。
 
-- 對每個 VNet 所指派的位址空間不應大於 /16 的 CIDR 範圍。 VNet 允許使用 65536 個 IP 位址，指派比 /16 還要小的前置詞將會導致 IP 位址遺失。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
+- 對每個 VNet 所指派的位址空間不應大於 /16 的 CIDR 範圍。 Vnet 允許使用 65536 IP 位址，並指派較小的前置詞（例如具有131072位址的/15），會導致多餘的 IP 位址在其他位置變成 unusuable。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
 - VNet 位址空間不得與內部部署網路範圍重疊。
 - 請勿使用網路位址轉譯 (NAT)。
 - 位址重疊可能會導致網路無法連線且路由無法正常運作。 如果網路重疊，您必須重新設計網路，或使用網路位址轉譯 (NAT)。

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f00377f4da5a3c95114571af36e4a759a26c63f3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707946"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892407"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -91,7 +91,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 - [Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [大型企業中的多層治理](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [多個地理區域](../regions/index.md)
+- [多個地理區域](../../migrate/azure-best-practices/multiple-regions.md)
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223128"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892303"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Contoso 在設定身分識別和存取控制時，即已開始設立控管和安
 
 原則會指定原則定義，而原則指派則會指定應套用原則的範圍。 從管理群組到資源群組皆可涵蓋於此範圍中。 [了解](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)如何建立及管理原則。
 
-Contoso 想要從幾個原則開始著手：
+Contoso 想要開始幾個原則：
 
 - 它想要確保資源只能部署在 EUS2 和 CU 區域中的原則。
 - 其想要將 VM SKU 限定為已核准的 SKU。 其目的是要確保不會使用昂貴的 VM SKU。

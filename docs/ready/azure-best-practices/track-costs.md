@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bfd8fd5d227ea0329137015a41cd9f3cb8d8c19b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
-ms.translationtype: HT
+ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78383849"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78893331"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -82,7 +82,7 @@ Azure 成本管理支援每個範圍的下列內建角色：
 
 一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 不過，[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅限成本管理讀者。 這是因為他們不會牽涉到在 Azure 成本管理工具內設定預算。
 
-### <a name="scope"></a>範圍
+### <a name="scope"></a>影響範圍
 
 下列範圍和角色設定會建立成本管理所需的可見度。 這種最佳做法可能需要較小的變更，以符合資產組織決策。
 
@@ -114,14 +114,14 @@ Azure 成本管理是一種妥善記載的工具，可用於設定預算，並�
 
 ### <a name="get-started-with-azure-cost-management"></a>開始使用 Azure 成本管理
 
-如需開始使用 Azure 成本管理的詳細資訊，請參閱[如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (機器翻譯)。
+如需開始使用 Azure 成本管理的詳細資訊，請參閱[如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (機器翻譯)。
 
 ### <a name="use-azure-cost-management"></a>使用 Azure 成本管理
 
-- [建立及管理預算](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [匯出成本資料](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [根據建議最佳化成本](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [建立及管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [匯出成本資料](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [根據建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>使用 Azure 成本管理來管理 AWS 成本
 

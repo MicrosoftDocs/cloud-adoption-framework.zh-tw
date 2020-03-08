@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170166"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892237"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -22,7 +22,7 @@ ms.locfileid: "78170166"
 在此架構中，啟用是一種核心主題。 下列檢查清單會逐項列出基本的雲端採用原則，確保 IT 和企業都能成功地考慮採用旅程：
 
 - **計畫：** 建立清楚的[商業成果](../strategy/business-outcomes/index.md)、清楚定義的[數位資產](../digital-estate/index.md)，以及充分瞭解的[採用](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)待處理專案（backlog）。
-- **就緒：** 透過[技能和學習計劃](../ready/technical-skills.md)，確保員工的準備就緒。
+- **就緒：** 透過[技能和學習計劃](../ready/suggested-skills.md)，確保員工的準備就緒。
 - **操作：** 定義可管理的作業模式，以在採用之後引導活動。
   - **[組織](../organize/index.md)：** 讓人員和小組能夠提供適當的雲端作業和採用。
   - **管控：** 讓適當的[治理專業領域](../govern/index.md)一致地套用成本管理、風險降低、合規性，以及跨所有雲端採用的安全性基準。
@@ -77,7 +77,7 @@ ms.locfileid: "78170166"
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

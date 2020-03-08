@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1f6d7545814f51f79a45b619f73dab857ac582d3
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171271"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891984"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -57,5 +57,3 @@ ms.locfileid: "78171271"
 |PostgreSQL|適用於 PostgreSQL 的 Azure 資料庫|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|Azure Cosmos DB Mongo API|Database Migration Service|離線|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB Mongo API|Database Migration Service|線上|[教學課程](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|不同的平臺即服務（PaaS）和 IaaS 選項|合作夥伴的工具或 Azure Migrate|離線或線上|[決策樹](../../migrate/expanded-scope/data-oracle-migration.md)|
-|不同的 NoSQL DB 選項|Cosmo DB 或 IaaS 選項|程式性遷移或 Azure Migrate|離線或線上|[決策樹](../../migrate/expanded-scope/data-no-sql-migration.md)|

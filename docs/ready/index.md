@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: dfac24cfc71d1cccdfdf3bc64eb6390aece79466
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798922"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892475"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "76798922"
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-setup-guide/migration-landing-zone.md">
+        <a href="./landing-zone/migrate-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">

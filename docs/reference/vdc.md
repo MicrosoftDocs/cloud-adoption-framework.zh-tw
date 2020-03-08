@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 0a4c1777cc256b72fb3897b47d76c1c224b578da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629210"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891739"
 ---
+<!-- cSpell:ignore tracsman jonor -->
+
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
 > [!WARNING]

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223975"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892152"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -63,7 +63,7 @@ ms.locfileid: "78223975"
 
 雲端遷移通常會被視為廣泛程式中的單一專案，以簡化 IT 作業、成本或複雜度。 雲端實行方法有助於將一系列工作負載遷移中的技術工作，與雲端策略和規劃中所述的高階商業價值進行比對。
 
-**開始使用：** 若要開始進行雲端執行， [azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 設定指南](../ready/azure-setup-guide/index.md)概述在執行雲端時必須成功的工具和高階程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[擴充的範圍檢查清單](../migrate/expanded-scope/index.md)、[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的條件約束、程式、小組結構和目標保持一致。
+**開始使用：** 使用[azure 遷移指南](../migrate/azure-migration-guide/index.md)和[azure 設定指南](../ready/azure-setup-guide/index.md)開始雲端執行，其中概述成功執行雲端時所需的工具和高層級程式。 使用這些指南來遷移您的第一個工作負載，可協助小組在規劃過程中及早克服初始學習曲線。 之後，應該將其他考慮提供給[遷移最佳做法](../migrate/azure-best-practices/index.md)和[遷移考慮](../migrate/migration-considerations/index.md)，讓基準指引與您的工作獨特的條件約束、程式、小組結構和目標保持一致。
 
 ## <a name="cloud-strategy-and-planning"></a>雲端策略和規劃
 

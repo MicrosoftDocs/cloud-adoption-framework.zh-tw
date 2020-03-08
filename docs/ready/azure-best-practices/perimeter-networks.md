@@ -1,6 +1,6 @@
 ---
 title: 周邊網路
-description: 深入瞭解周邊網路（也稱為非軍事區域（Dmz））如何使用 Azure 功能和服務。
+description: 瞭解周邊網路（也稱為 Dmz）如何使用 Azure 功能和服務。
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994213"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892662"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>周邊網路
 
 [周邊網路][perimeter-network]可在雲端網路與內部部署或實體資料中心網路之間啟用安全連線，以及啟用任何進出網際網路的連線。 它們也稱為非管制區域 (DMZ)。
@@ -30,7 +32,7 @@ ms.locfileid: "76994213"
 - [Azure 負載平衡器][ALB]
 - [Azure 應用程式閘道][AppGW]和[web 應用程式防火牆（WAF）][AppGWWAF]
 - [公用 IP][PIP]
-- 使用 [Web 應用程式防火牆][AFDWAF]的 [Azure Front Door][AFD]
+- 使用 [Web 應用程式防火牆][AFD]的 [Azure Front Door][AFDWAF]
 - [Azure 防火牆][AzFW]
 
 > [!NOTE]
@@ -41,7 +43,7 @@ ms.locfileid: "76994213"
 
 通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
 
-![中樞和輪輻網路拓撲的範例][7]
+![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
 上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來相應增加，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
 
@@ -49,7 +51,7 @@ ms.locfileid: "76994213"
 
 周邊網路通常是使用具有多個子網路的[虛擬網路][virtual-networks]來建置，以裝載不同類型的服務，透過 NVA、WAF 和 Azure 應用程式閘道來篩選及檢查進出網際網路的流量。
 
-## <a name="user-defined-routes"></a>使用者定義路由
+## <a name="user-defined-routes"></a>使用者定義的路由
 
 藉由使用[使用者定義的路由][user-defined-routes]，客戶可以部署防火牆、IDS/IPS 和其他虛擬設備。 然後，客戶可以透過這些安全性設備來路由傳送網路流量，以進行安全性界限原則強制執行、稽核及檢查。 您可以建立使用者定義的路由，以確保流量會通過指定的自訂 VM、NVA 和負載平衡器。
 
@@ -107,40 +109,13 @@ Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護
 
 在攻擊期間和針對歷史記錄目的，可透過 Azure 監視器檢視取得即時遙測。 您可以使用 Azure 應用程式閘道中的 Web 應用程式防火牆來新增應用層保護。 針對 IPv4 Azure 公用 IP 位址提供保護。
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "元件重疊範例"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "高階中樞和輪輻範例"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "中樞和支點叢集"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "支點對支點"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "中樞支點的區塊層級圖表"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "使用者、群組、訂用帳戶和專案"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "高階基礎結構圖"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "高階基礎結構圖"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNet 對等和周邊網路"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "高階監視圖"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "高階工作負載圖"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

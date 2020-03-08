@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801506"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891898"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ ms.locfileid: "76801506"
 該項新成長最具體呈現在發行和反覆運算待辦項目的變更中。
 
 回顧表示發行或反覆運算的結束，因為小組獲得了經驗並學到課題，並調整[發行和反覆運算待辦項目](../assess/release-iteration-backlog.md)，以反映要測試的新程序和實驗。 這會透過移轉程序開始下一次反覆運算。
-
-## <a name="next-steps"></a>後續步驟
-
-此內容的[保護及管理](../secure-and-manage/index.md)一節有助於讓讀者準備好從移轉轉換到作業。
-
-> [!div class="nextstepaction"]
-> [安全的監視和管理工具](../secure-and-manage/index.md)

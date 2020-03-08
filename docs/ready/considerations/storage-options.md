@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6fb28316b55d92d0dc7c130d3e3c86bab942149
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341958"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892492"
 ---
 # <a name="review-your-storage-options"></a>檢查您的儲存體選項
 
@@ -128,7 +128,7 @@ Azure 儲存體有各種不同的備援選項，可根據客戶需求來協助�
 - 使用共用存取簽章，將委派存取權授與 Azure 儲存體中的資料物件。
 - 使用分析來追蹤當某人存取 Azure 中的儲存體時使用的驗證方法。
 
-這些安全性功能適用於 Azure Blob 儲存體 (區塊和頁面)，以及適用於 Azure 檔案儲存體。 取得 [Azure 儲存體安全性指南](https://docs.microsoft.com/azure/storage/common/storage-security-guide)中的詳細儲存體安全性指南。
+這些安全性功能適用於 Azure Blob 儲存體 (區塊和頁面)，以及適用於 Azure 檔案儲存體。 取得 [Azure 儲存體安全性指南](https://docs.microsoft.com/azure/storage/blobs/security-recommendations)中的詳細儲存體安全性指南。
 
 [儲存體服務加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)提供待用加密，並保護資料安全，以符合組織安全性和合規性承諾。 所有 Azure 區域中的所有受控磁碟、快照集和映像預設都會啟用儲存體服務加密。 從 2017 年 6 月 10 日開始，所有新受控磁碟、快照集、映像和寫入至現有受控磁碟的新資料都會使用 Microsoft 所管理的金鑰進行自動待用加密。 如需詳細資訊，請造訪[受控磁碟常見問題集](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption)。
 

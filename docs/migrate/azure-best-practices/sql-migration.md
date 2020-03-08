@@ -7,22 +7,18 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52c0c756ec6748b32486deca32054acfd15cd12b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8115a33c67c0099e97c0d368c007ac6a1099b0d9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803580"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892560"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>適用于 Azure 的 SQL Server 遷移最佳做法
 
 將整個 SQL Server 遷移至 Azure，可以加速雲端採用架構中所述的標準遷移方法，如下圖所示。
 
 ![雲端採用架構移轉模型](../../_images/operational-transformation-migrate.png)
-
-## <a name="migration-processes"></a>遷移程式
-
-[SQL Server 遷移的擴充範圍文章](../expanded-scope/sql-migration.md)概述整合 SQL Server 遷移與其他 Azure 遷移工作的方法，以降低複雜度並將程式標準化。
 
 ## <a name="migration-best-practices"></a>移轉最佳做法
 

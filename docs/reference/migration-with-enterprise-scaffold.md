@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225276"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892509"
 ---
 <!-- cSpell:ignore rodend subscope ITSM -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
 > [!NOTE]
-> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/azure-setup-guide/migration-landing-zone.md)和[登陸區域考慮](../ready/considerations/index.md)。
+> Azure 企業版樣板已整合到 Microsoft Cloud 採用架構中。 這篇文章中的內容現在是以新架構的 [[就緒](../ready/index.md)] 區段表示。 這篇文章將于2020年初淘汰。 若要開始使用新的程式，請參閱[準備好的總覽](../ready/index.md)、[建立您的第一個登陸區域](../ready/landing-zone/migrate-landing-zone.md)和[登陸區域考慮](../ready/considerations/index.md)。
 
 企業日漸採用公用雲端，以獲取其靈活度和彈性。 他們會依賴雲端的優勢來產生收益，並將企業的資源使用量優化。 Microsoft Azure 提供許多服務和功能，企業可以像堆積木一樣組合這些服務，以處理各式各樣的工作負載和應用程式。
 
@@ -77,7 +77,7 @@ Azure Enrollment 的三個常見模式如下︰
 
   ![地理模式](../_images/reference/geographic.png)
 
-雖然這些模式中的每一個都有其作用，但愈來愈多人採用**業務單位**模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和營運小組已建立以**聯邦**、**州**和**地方**為模型化之**商務單元**模式的有效子集。 如需詳細資訊，請參閱[在企業內組織訂閱和資源群組](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise)。
+雖然這些模式中的每一個都有其作用，但愈來愈多人採用**業務單位**模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和營運小組已建立以**聯邦**、**州**和**地方**為模型化之**商務單元**模式的有效子集。 如需詳細資訊，請參閱[在企業內組織訂閱和資源群組](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions)。
 
 ### <a name="azure-management-groups"></a>Azure 管理群組
 

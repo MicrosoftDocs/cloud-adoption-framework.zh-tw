@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342026"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892679"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>技能就緒路徑入門
 
@@ -28,7 +28,7 @@ IT 人員的成員可能會覺得他們的角色和職位有點焦慮，因為�
 - **[就緒](../ready/suggested-skills.md)：** 開發準備商務、文化、人員和環境以進行變更所需的技能。
 
 - **採用：** 採用技能與各種技術成果一致：
-  - **[遷移](../migrate/expanded-scope/suggested-skills.md)：** 取得實施雲端遷移計畫所需的技能。
+  - **[遷移](../migrate/suggested-skills.md)：** 取得實施雲端遷移計畫所需的技能。
   - **創新：** 取得提供創新新解決方案所需的技能。
 
 - **操作：** 與雲端採用作業模型相關的技能，與取得技能的各種機會一致：
@@ -46,6 +46,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [適用于資料工程師的 Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：探索資料世界的演變，以及雲端技術的問世如何提供新的商機供企業探索。 您將瞭解各種可用的資料平臺技術，以及資料工程師可以如何利用這項技術來獲得組織的優勢。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。
