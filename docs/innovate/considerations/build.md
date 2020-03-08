@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170625"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337543"
 ---
 # <a name="build-with-customer-empathy"></a>以客戶理解的方式打造
 
