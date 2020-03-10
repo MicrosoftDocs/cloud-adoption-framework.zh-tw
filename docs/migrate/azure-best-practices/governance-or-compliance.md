@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897975"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023734"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -52,8 +52,8 @@ ms.locfileid: "78897975"
 
 - [成本管理](../../govern/cost-management/template.md)
 - [安全性基準](../../govern/security-baseline/template.md)
-- [資源一致性]。/../govern/resource-consistency/template.md)
-- [身分識別基準]../../govern/identity-baseline/template.md)
+- [資源一致性](../../govern/resource-consistency/template.md)
+- [身分識別基準](../../govern/identity-baseline/template.md)
 - [部署加速](../../govern/deployment-acceleration/template.md)
 
 如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。

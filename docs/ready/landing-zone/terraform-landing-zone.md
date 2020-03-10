@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52abb490ed3364945bef887a8ed7f144f7dca14a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e6cfe951c3b499d101ed29208b2beba0c9867c48
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228531"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023890"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud Hashicorp's vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 Hashicorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 HashiCorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 

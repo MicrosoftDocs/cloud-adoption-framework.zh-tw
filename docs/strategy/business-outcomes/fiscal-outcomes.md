@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806844"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023846"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -55,6 +55,8 @@ ms.locfileid: "76806844"
 - **範例 #1：** 公司的資料中心會耗用大量百分比的年度 IT 預算。 它選擇進行雲端遷移，並將該資料中心的資產轉換為基礎結構即服務（IaaS）解決方案，創造為期三年的成本降低。
 - **範例 #2：** 一家控股公司最近取得了新公司。 在收購中，條款規定應該在六個月內從目前的資料中心移除新的實體。 若未這麼做，將會導致保留公司每月1000000美元。 在雲端遷移中將數位資產移到雲端，可讓您快速解除委任舊資產。
 - **範例 #3：** 已經考慮給取用者的收入稅務公司在一年的前三個月期間，會經歷70% 的年度收益。 今年的剩餘時間，其大型 IT 投資就相當休眠。 雲端遷移可以讓 IT 部署這三個月所需的計算/裝載容量。 在其餘的九個月，IaaS 成本將可藉由縮減計算使用量大幅降低。
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>範例： Coverdell
 

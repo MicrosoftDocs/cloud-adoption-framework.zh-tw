@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798497"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023931"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
 如[商業成果總覽](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于 timeliest 商務量值：商業彈性。 瞭解貴公司的市場位置和競爭範圍，可以協助您清楚表達企業轉型旅程目標的商業成果。
 
-傳統上，投資人員（Cio）和 IT 小組在核心任務關鍵性程式中被視為穩定性的來源。 這仍然是 true。 少數企業在 IT 平臺不穩定時，可以發揮良好的效果。 不過，在現今的業務世界中，預期會有更多的功能。 藉由與企業合作來提供市場優勢，它可以擴充到超過一個簡單的成本中心。 許多 Cio 和主管都認為穩定性只是 IT 的基準。 對於這些領導者而言，商業彈性是 IT 對企業貢獻的測量。
+傳統上，投資主管和 IT 小組在核心要徑任務程式中被視為穩定性的來源。 這仍然是 true。 少數企業在 IT 平臺不穩定時，可以發揮良好的效果。 不過，在現今的業務世界中，預期會有更多的功能。 藉由與企業合作來提供市場優勢，它可以擴充到超過一個簡單的成本中心。 許多投資人員和主管都認為穩定性只是 IT 的基準。 對於這些領導者而言，商業彈性是 IT 對企業貢獻的測量。
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ ms.locfileid: "76798497"
 ### <a name="aurora-health-care"></a>Aurora 醫療保健
 
 醫療保健系統會將線上服務轉換成易記的數位體驗。 為了轉換其數位服務，Aurora 醫療保健護理將其網站遷移至 Microsoft Azure 平臺，並採用持續創新策略。
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > 「身為小組，我們著重于高品質的解決方案和速度。 選擇 Azure 對我們來說是非常轉型的決策。」  
 > Jamey Shiels  

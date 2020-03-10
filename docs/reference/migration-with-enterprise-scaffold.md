@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892509"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023952"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 
@@ -314,7 +314,7 @@ Microsoft 提供數種工具，可協助您視覺化、追蹤和管理您的成�
 
 ## <a name="templates-and-devops"></a>範本和 DevOps
 
-如同自動化區段中所強調的，您的目標應該是讓組織透過由原始程式碼控制的範本和指令碼來佈建資源，並將環境的互動式設定降到最低。 使用此「基礎結構即程式碼」方法及用於持續部署的嚴謹 DevOps 程序，即可確保環境中的一致性並減少漂移。 幾乎每個 Azure 資源都可透過 [Azure Resource Manager JSON 範本](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) 搭配 PowerShell 或 Azure 跨平台 CLI 及 Hashicorp 的 Terraform (具有頂級支援且與 Azure Cloud Shell 整合) 等工具來部署。
+如同自動化區段中所強調的，您的目標應該是讓組織透過由原始程式碼控制的範本和指令碼來佈建資源，並將環境的互動式設定降到最低。 使用此「基礎結構即程式碼」方法及用於持續部署的嚴謹 DevOps 程序，即可確保環境中的一致性並減少漂移。 幾乎每個 Azure 資源都可透過[AZURE RESOURCE MANAGER JSON 範本](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)搭配 PowerShell 或 Azure 跨平臺 CLI 和工具（例如 HashiCorp 中的 Terraform，其具有第一個類別支援並整合至 Azure Cloud Shell）進行部署。
 
 文章（例如[使用 Azure Resource Manager 範本的最佳做法](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)）提供最佳做法的絕佳討論，並瞭解如何將 DevOps 方法套用至[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)工具鏈 Azure Resource Manager 範本。 花時間和工作來開發一組核心的特定範本，並使用 DevOps 工具鏈（例如 Azure DevOps、Jenkins、Bamboo、TeamCity 和 Concourse）開發持續傳遞管線，特別是針對您的生產和 QA 環境。 GitHub 上有一個大型的[Azure 快速入門範本](https://github.com/Azure/azure-quickstart-templates)程式庫，您可以用來作為範本的起點，而且您可以使用 Azure DevOps 快速建立雲端式傳遞管線。
 

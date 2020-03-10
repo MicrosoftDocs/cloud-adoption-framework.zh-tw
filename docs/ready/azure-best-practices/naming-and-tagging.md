@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 84102816304188bf1b22534938fb6aea267f0d8c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892645"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023732"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -75,6 +75,8 @@ ms.locfileid: "78892645"
 
 下列清單提供當您定義命名慣例時，可使用的建議 Azure 資源類型首碼。
 
+<!-- cSpell:disable -->
+
 ### <a name="general"></a>一般
 
 | 資產類型                      | 名稱前置詞 |
@@ -100,6 +102,7 @@ ms.locfileid: "78892645"
 | VPN 連線                   | cn-         |
 | 應用程式閘道              | agw-        |
 | 路由表                      | 料      |
+| 流量管理員設定檔          | traf-       |
 
 ### <a name="compute-and-web"></a>計算和 Web
 
@@ -149,7 +152,7 @@ ms.locfileid: "78892645"
 | Azure 認知服務         | 齒輪        |
 | Azure Machine Learning 工作區 | mlw-        |
 
-## <a name="analytics-and-iot"></a>分析和 IoT
+### <a name="analytics-and-iot"></a>分析和 IoT
 
 | 資產類型                      | 名稱前置詞 |
 |---------------------------------|-------------|
@@ -196,6 +199,8 @@ ms.locfileid: "78892645"
 | 資料庫移轉服務實例 | dms        |
 | 復原服務保存庫             | rsv-        |
 
+<!-- cSpell:enable -->
+
 ## <a name="metadata-tags"></a>中繼資料標記
 
 將中繼資料標記套用到雲端資源時，您可以包含資源名稱中無法包含的資產相關資訊。 您可以使用該資訊來對資源執行更複雜的篩選和報告。 建議您讓這些標記包含資源相關的工作負載或應用程式、營運需求和擁有權資訊等內容。 IT 或業務小組可以使用這些資訊來尋找資源，或產生資源使用量和計費的相關報告。
@@ -220,6 +225,8 @@ ms.locfileid: "78892645"
 ## <a name="example-names"></a>範例名稱
 
 下一節提供企業雲端部署中常見 Azure 資源類型的一些範例名稱。
+
+<!-- cSpell:disable -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 

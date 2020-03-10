@@ -7,16 +7,18 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 55724c594d75464827350c57e6a371f8876b17a0
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c9b517bf3dee1cd75d578531b86e4fb5cc33739f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342925"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023961"
 ---
+<!-- cSpell:ignore arnaud arnaudlh arnaul vCPUs tfvars southeastasia eastasia lalogs -->
+
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 Hashicorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 HashiCorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 
@@ -67,12 +69,12 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | --- | --- | --- |
 |記錄和監視 | 使用 Azure 監視器 Log Analytics 工作區。 已布建診斷儲存體帳戶和事件中樞。 |         |
 |網路 | N/A-網路會在另一個登陸區域中執行。 |[網路決策](../considerations/networking-options.md) |
-|相同比較 | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
-| Policy(Windows Intune 說明：原則) | 此登陸區域目前假設不會套用任何 Azure 原則。 | |
+|身分識別 | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
+| 原則 | 此登陸區域目前假設不會套用任何 Azure 原則。 | |
 |訂用帳戶設計 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
 | 管理群組 | N/A - 專為單一生產訂用帳戶所設計。 |[調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
 | 資源群組 | N/A - 專為單一生產訂用帳戶所設計。 | [調整訂用帳戶](../azure-best-practices/scaling-subscriptions.md) |
-| Data | N/A | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
+| 資料 | N/A | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 |儲存體|N/A|[Azure 儲存體指引](../considerations/storage-options.md) |
 | 命名標準 | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md) |
 | 成本管理 | N/A | [追蹤成本](../azure-best-practices/track-costs.md) |
@@ -90,8 +92,8 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 環境 | 應用程式、工作負載或服務的部署環境。 |  Env | 生產、開發、QA、階段、測試、訓練 |
 | 擁有者名稱 | 應用程式、工作負載或服務的擁有者。| 擁有者 | 電子郵件 |
 | 部署類型 | 定義維護資源的方式。 | deploymentType | Manual、Terraform |
-| 版本 | 已部署藍圖的版本。 | 版本 | v 0。1 |
-| Application Name | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。 | ApplicationName | 「應用程式名稱」 |
+| 版本 | 已部署藍圖的版本。 | version | v 0。1 |
+| 應用程式名稱 | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。 | ApplicationName | 「應用程式名稱」 |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>自訂和部署您的第一個登陸區域
 

@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341992"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023859"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>雲端作業模式現在是 Azure Microsoft Cloud 採用架構的一部分
 
-在 2018 年初，Microsoft 發行了雲端作業模型 (COM)。 COM 是一份指南，協助客戶瞭解數位轉型的**用途**和**原因**。 這可協助客戶瞭解所有需要解決的領域：商務策略、文化策略和技術策略。 COM 中未包含的內容是特定的「作法」，也就是客戶想_知道的「_ 從這裡開始到哪裡？」
+在 2018 年初，Microsoft 發行了雲端作業模型 (COM)。 COM 是一份指南，協助客戶瞭解數位轉型的**用途**和**原因**。 這可協助客戶瞭解所有需要解決的領域：商務策略、文化策略和技術策略。 COM 中未包含的內容是特定的「作法」步驟，_也就是_客戶想知道「哪裡可以從這裡開始？」
 
 在2018年10月，我們開始回顧所有在 Microsoft 社區中散佈的模型，我們發現大約有60個不同的雲端採用模型。 我們建立了一個跨 Microsoft 團隊，將所有專案結合在一起，成為專屬的工程「產品」，並在服務、銷售和行銷之間定義了不同的實施。 這項工作成果建立單一模型，這是適用于 Azure 的 Microsoft Cloud 採用架構，其設計目的是協助客戶瞭解**什麼**和**原因**，並提供**如何**協助其加速雲端採用的整合指引。 此專案的目標是要建立一個 Microsoft 的雲端採用方法。
 
@@ -32,7 +32,7 @@ ms.locfileid: "78341992"
 
 先前在 COM 中提供的指導方針仍然與雲端採用架構有關。 體驗不同，但雲端採用架構的結構只是該指引的擴充。 若要從 COM 轉換到雲端採用架構，請務必瞭解範圍和結構。 下列兩節將描述該轉換。
 
-## <a name="scope"></a>範圍
+## <a name="scope"></a>影響範圍
 
 COM 已建立由下列元件組成的範圍：
 

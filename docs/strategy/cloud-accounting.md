@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 016f0502108fa771490293bd6588f3fe7193fb07
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806810"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023822"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "76806810"
 
 通常會將它視為成本中心。 在傳統的 IT 會計模型中，它會合並所有 IT 資產的購買能力。 如同我們在[財務模型](./financial-models.md)一文中提到的，購買電源匯總可能包括軟體授權、CRM 授權的週期性費用、購買員工桌面，以及其他大量成本。
 
-當它作為成本中心時，它的認知價值主要是透過採購管理鏡頭來觀看。 這種認知讓面板或其他主管難以瞭解它所提供的真正價值。 採購成本傾向于 outweighing 組織新增的任何其他值，以扭曲其觀點。 此觀點說明為何通常會歸併到 CFO 或 COO 的責任。 這對它的認知很有限，而且可能很短的目擊北極熊。
+當它作為成本中心時，它的認知價值主要是透過採購管理鏡頭來觀看。 這種認知讓面板或其他主管難以瞭解它所提供的真正價值。 採購成本傾向于 outweighing 組織新增的任何其他值，以扭曲其觀點。 此觀點說明為何經常歸併財務長或首席營運主管的責任。 這對它的認知很有限，而且可能很短的目擊北極熊。
 
 ## <a name="central-it-accounting-profit-center-model"></a>中央 IT 會計（利潤中心模型）
 
@@ -34,7 +34,7 @@ ms.locfileid: "76806810"
 
 在中央 IT 會計模型中，IT 小組會標示所提供的服務，以考慮額外負荷、管理和其他預估費用。 接著，它會針對已標示的服務，將競爭業務單位計費。 在此模型中，CIO 預期會管理與這些服務銷售相關聯的 P & L。 這可能會產生膨脹的 IT 成本，以及中央 IT 與業務單位之間的競爭，特別是當它需要降低成本或不符合同意 Sla 時。 在技術或市場改變的過程中，任何新的技術都會造成中央 IT 的 P & L，使轉換變得很棘手。
 
-## <a name="chargeback"></a>存儲
+## <a name="chargeback"></a>計費
 
 將其信譽變更為成本中心的常見第一個步驟，就是執行會計的計費模型。 此模型在小型企業或高效率的 IT 組織中特別常見。 在計費模型中，與特定業務單位相關聯的任何 IT 成本，都會視為該業務單位預算的營運費用。 這種作法可降低對其產生的累計成本，讓商業價值更清楚地顯示。
 
