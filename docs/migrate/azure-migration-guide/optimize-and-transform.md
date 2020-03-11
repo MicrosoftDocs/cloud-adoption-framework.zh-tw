@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222503"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892458"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 
@@ -130,7 +130,7 @@ Azure 成本管理可搭配 Azure Advisor，提供成本最佳化建議。 Azure
 
 ::: zone target="docs"
 
-- [教學課程：透過建議最佳化成本](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [教學課程：透過建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [使用 Azure 計費與成本管理避免非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)
 - [使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 

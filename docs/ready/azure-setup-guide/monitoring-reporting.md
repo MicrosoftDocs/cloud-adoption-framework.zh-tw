@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799398"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023989"
 ---
+<!-- cSpell:ignore timleyden tileyden -->
+
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 
 Azure 提供許多服務，這些服務可共同提供一個全方位的解決方案，讓您從應用程式和支援這些服務的 Azure 資源收集遙測、加以分析並採取行動。 此外，這些服務可延伸至監視重要的內部部署資源，以提供混合式監視環境。
 
-# <a name="azure-monitortabazuremonitor"></a>[Azure 監視器](#tab/AzureMonitor)
+# <a name="azure-monitor"></a>[Azure 監視器](#tab/AzureMonitor)
 
 Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的整合中樞。 您可以使用它來取得資源的可見度。 透過 Azure 監視器，您將可找出並修正問題，進而將效能最佳化。 您也可以了解客戶的行為。
 
@@ -51,13 +53,15 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
 ## <a name="action"></a>動作
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-healthtabazureservicehealth"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
+# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
 
 Azure 服務健康狀態會提供您所用 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「服務健康狀態」，協助您了解對您資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
 
@@ -95,7 +99,7 @@ Azure 服務健康狀態包含：
 
 ::: zone-end
 
-# <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor 是免費的個人化雲端顧問，可協助您遵循及實作 Azure 部署的最佳做法。 它會分析資源組態和使用量遙測，然後建議有助於將環境最佳化的解決方案。 建議分為以下幾個類別：
 
@@ -125,7 +129,7 @@ Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來�
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
 
 Azure 資訊安全中心也會在監視策略中扮演重要角色。 它可協助您監視機器、網路、儲存體、資料服務和應用程式的安全性。 資訊安全中心可藉由使用機器學習和行為分析來協助您識別目標是 Azure 資源的作用中威脅，從而提供先進的威脅偵測。 其也提供威脅防護，可封鎖惡意程式碼或其他不必要的程式碼，並可減少暴露在暴力密碼破解攻擊和其他網路攻擊之下的介面區。
 

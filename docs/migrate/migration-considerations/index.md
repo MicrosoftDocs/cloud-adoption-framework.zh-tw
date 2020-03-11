@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: baeac7d27ff7aa71c011a2578968811820ebe22e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802424"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094752"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 
@@ -50,7 +50,7 @@ ms.locfileid: "76802424"
 
 此累加模型背後的原理是根據執行程序和下列資訊圖中的必要條件參考。
 
-![雲端採用架構移轉模型](../../_images/operational-transformation-migrate.png)
+![雲端採用架構移轉模型](../../_images/migrate/methodology.png)
 
 這些原則的一致應用是代表您雲端移轉程序的最終目標，不應將它視為必要的起始點。 隨著您的移轉工作成熟，請參考此小節中的指導方針，以協助定義支援您組織需求的最佳程序。
 
