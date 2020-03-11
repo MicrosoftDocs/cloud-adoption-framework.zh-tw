@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708711"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892390"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -40,7 +40,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 如果您對上述任一點回答了「否」  ，則應該將有問題的資源放在另一個資源群組中的其他位置。
 
 > [!IMPORTANT]
-> 資源群組也是區域專屬的項目；不過，資源常常會在相同資源群組內的不同區域中，因為其會以如上所述方式一起接受管理。 如需區域選擇的詳細資訊，請參閱[區域決策指南](../regions/index.md)。
+> 資源群組也是區域專屬的項目；不過，資源常常會在相同資源群組內的不同區域中，因為其會以如上所述方式一起接受管理。 如需如何選擇區域的詳細資訊，請參閱[多個區域](../../migrate/azure-best-practices/multiple-regions.md)。
 
 ## <a name="deployment-consistency"></a>部署一致性
 
