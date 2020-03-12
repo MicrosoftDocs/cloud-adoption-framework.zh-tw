@@ -1,18 +1,18 @@
 ---
 title: 初始組織對齊
-description: 初始組織對齊
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何完成您的初始組織調整，並讓您的小組準備好進行雲端採用。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42fd2e1668c0eb9411cc53679e4a81c5a9ca7a43
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2df963beba9087f8f3bfc2faf850eb384cd507a3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800350"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093769"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 

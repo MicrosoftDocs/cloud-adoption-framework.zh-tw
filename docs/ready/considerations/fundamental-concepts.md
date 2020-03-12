@@ -1,18 +1,18 @@
 ---
 title: Azure 基礎概念
-description: 了解在 Azure 中使用的基本概念和詞彙，以及這些概念如何彼此相關。
+description: 使用適用于 Azure 的雲端採用架構來瞭解 Azure 中所使用的基本概念和詞彙，以及這些概念彼此之間的關係。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799143"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092568"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 

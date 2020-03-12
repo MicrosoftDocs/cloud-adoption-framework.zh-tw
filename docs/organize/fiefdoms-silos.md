@@ -1,6 +1,6 @@
 ---
 title: 定址接收器和 fiefdoms
-description: 瞭解反模式的定址接收器和 fiefdoms。
+description: 瞭解可封鎖組織成長思維的反模式。 具體而言，請瞭解定址接收器和 fiefdom 反模式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 396e183e0e0af791c514e29b755c0b04a791f3a1
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222289"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093801"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：接收器和 fiefdoms
 

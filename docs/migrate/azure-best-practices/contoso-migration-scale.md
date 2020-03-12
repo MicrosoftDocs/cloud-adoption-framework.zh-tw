@@ -1,6 +1,6 @@
 ---
 title: 對 Azure 進行大規模移轉
-description: 了解 Contoso 如何處理對 Azure 的大規模移轉。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何規劃和執行大規模的遷移至 Azure。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/08/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222824"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091922"
 ---
 # <a name="scale-a-migration-to-azure"></a>對 Azure 進行大規模移轉
 

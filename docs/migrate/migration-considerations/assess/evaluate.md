@@ -1,18 +1,18 @@
 ---
 title: 評估工作負載整備程度
-description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
+description: 瞭解評估工作負載是否準備好要遷移至雲端所需的內容。 您將瞭解如何驗證所有資產和相關聯的相依性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3065dfa39af189c5275f966e758fe49004f4de00
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802543"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094785"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 

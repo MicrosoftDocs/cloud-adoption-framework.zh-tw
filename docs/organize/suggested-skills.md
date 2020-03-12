@@ -1,6 +1,6 @@
 ---
 title: 建置技術技能
-description: 在準備階段遷移的過程中，瞭解技能就緒性路徑。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何協助您的組織開發必要的技能，以符合所需結果的結構小組。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7ba7d9044fcc26ecc152e4944dac4999c799bcf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f1fa9c4705aaa437a0a532fd6463fe502f4df0bb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800673"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092618"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移準備階段期間的技能就緒性路徑
 
@@ -74,6 +74,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任
 
 - [開發人員](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)可以使用瞭解資源，在架構、治理、現代化活動方面提供協助。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

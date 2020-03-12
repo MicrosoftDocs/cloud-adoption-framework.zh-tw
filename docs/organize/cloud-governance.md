@@ -1,6 +1,6 @@
 ---
 title: 雲端治理功能
-description: 描述雲端治理功能的構成
+description: 使用適用于 Azure 的雲端採用架構，瞭解雲端治理功能如何確保適當地評估和管理風險和風險承受度。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 824ce55dd6dc78e0d4200efa9c2d1418b343ccb7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806895"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093897"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -28,7 +28,7 @@ ms.locfileid: "76806895"
 - 安全性
 - IT 營運
 - IT 基礎結構
-- 網路
+- 網路功能
 - 身分識別
 - 虛擬化
 - 商務持續性和災害復原

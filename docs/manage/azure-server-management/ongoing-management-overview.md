@@ -1,18 +1,18 @@
 ---
 title: 持續管理和安全性
-description: 持續管理和安全性
+description: 使用適用于 Azure 的雲端採用架構，學習如何專注于將支援您進行中作業的作業和安全性設定。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fc15e50f0919745faff89949dbac15169adc5c6c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a68479bf128ea79383a5529b82a7866e399abc71
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807983"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094587"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>第3階段：持續的管理和安全性
 

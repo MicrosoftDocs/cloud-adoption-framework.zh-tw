@@ -1,18 +1,18 @@
 ---
 title: 規劃期間的技能就緒性路徑
-description: 遷移計畫階段期間的技能就緒性路徑的總覽。
+description: 使用適用于 Azure 的雲端採用架構，在進行遷移的規劃階段瞭解技能就緒性路徑。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798106"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092829"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -57,7 +57,7 @@ ms.locfileid: "76798106"
 - [建立 Azure 帳戶](https://docs.microsoft.com/learn/modules/create-an-azure-account)。 使用 Azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所布建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
 - [Azure 入口網站](https://docs.microsoft.com/learn/modules/tour-azure-portal)。 瀏覽 Azure 入口網站的功能和服務，並自訂入口網站。
 - [Azure 簡介](https://docs.microsoft.com/learn/modules/welcome-to-azure)。 藉由在雲端中建立並設定第一部虛擬機器來開始使用 Azure。
-- [Azure 中的安全性簡介](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure)。 了解在雲端工作時如何保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
+- [Azure 中的安全性簡介](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure)。 瞭解在雲端中工作時保護基礎結構和資料的基本概念。 了解您的責任，以及 Azure 可為您處理的項目。
 - [管理 Azure 中的資源](https://docs.microsoft.com/learn/paths/manage-resources-in-azure)。 了解如何使用 Azure 命令列和 Web 入口網站來建立、管理及控制雲端式資源。
 - [建立 VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)。 使用 Azure 入口網站建立虛擬機器。
 - [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能。 瞭解 Azure 網路功能的基本概念，以及 Azure 網路功能如何協助您提升復原能力並降低延遲。
@@ -92,6 +92,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

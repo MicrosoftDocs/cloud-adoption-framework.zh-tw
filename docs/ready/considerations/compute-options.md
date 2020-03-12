@@ -1,18 +1,18 @@
 ---
 title: 檢查您的計算選項
-description: 檢查 Azure 工作負載的計算選項。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何判斷裝載工作負載的計算需求。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b2712867c8b5dbdf79e5f235ebd45fe02ae4bf20
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799177"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092563"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 

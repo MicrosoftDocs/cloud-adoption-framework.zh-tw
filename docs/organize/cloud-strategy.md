@@ -1,6 +1,6 @@
 ---
 title: 雲端策略功能
-description: 描述雲端策略功能的構成
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何讓技術活動符合商業成果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43973a5199f0c5f15e31381cddba56efab1ecb14
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800843"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093825"
 ---
 # <a name="cloud-strategy-capabilities"></a>雲端策略功能
 
@@ -25,10 +25,10 @@ ms.locfileid: "76800843"
 
 這項功能通常由下列角色類型提供。 定義雲端策略小組時，應該包含下列許多角色：
 
-- 金融
-- 企業營運
+- 財務
+- 商務營運
 - 人力資源
-- Dynamics 365
+- 作業
 - 企業架構
 - IT 基礎結構
 - 應用程式群組

@@ -1,6 +1,6 @@
 ---
 title: 財會結果範例
-description: 財會結果範例
+description: 使用適用于 Azure 的雲端採用架構來瞭解雲端轉換內容中的會計結果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 4f9ec4df29469f17f6c057f8d3c0308c66cf1ba5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023846"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092888"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 

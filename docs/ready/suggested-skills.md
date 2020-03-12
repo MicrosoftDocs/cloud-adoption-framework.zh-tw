@@ -1,18 +1,18 @@
 ---
 title: 技能整備程度路徑
-description: 技能整備程度路徑的概觀
+description: 使用適用于 Azure 的雲端採用架構，學習如何打造完成遷移旅程所需的技能。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f714931624eab819fafcf086e42d3ab765c13eed
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798769"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092912"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -74,6 +74,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>深入了解
 
 如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

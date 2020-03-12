@@ -1,18 +1,18 @@
 ---
 title: 全球範圍的結果範例
-description: 全球範圍的結果範例
+description: 使用適用于 Azure 的雲端採用架構，瞭解雲端轉換內容中的全球觸達結果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225231"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092468"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 

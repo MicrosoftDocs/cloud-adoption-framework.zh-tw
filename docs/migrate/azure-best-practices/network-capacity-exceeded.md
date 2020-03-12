@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898001"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094824"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>資料需求在遷移工作期間超過網路容量
 
 在雲端移轉中，資產會在現有資料中心與雲端之間透過網路進行複寫和同步處理。 不同工作負載的現有資料大小需求超過網路容量的情況並不少見。 在這種情況下，移轉程序的速度會變得很慢，在某些情況下甚至會完全停止。 下列指引將擴充 [Azure 移轉指南](../azure-migration-guide/index.md)的範圍，以提供可解決網路限制的解決方案。
@@ -28,7 +30,7 @@ ms.locfileid: "78898001"
 
 **獨立資料存放區的離線傳輸：** 下圖所示的範例是使用 Azure 資料箱進行線上和離線資料傳輸。 這些方法可用來在移轉工作負載之前，先將大量資料運送至雲端。 在離線資料傳輸中，來源資料會複製到 Azure 資料箱，然後實體運送至 Microsoft，再以檔案或 Blob 的形式傳輸至 Azure 儲存體帳戶。 此程序可用來在進行其他移轉工作之前，先運送未直接繫結至特定工作負載的資料。 這麼做可減少需要透過網路運送的資料量，以便在網路限制內完成移轉工作。
 
-這種方法可用來傳輸資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
 另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 

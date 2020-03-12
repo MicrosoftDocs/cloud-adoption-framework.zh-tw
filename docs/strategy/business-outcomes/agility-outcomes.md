@@ -1,18 +1,18 @@
 ---
 title: 靈活性結果的範例
-description: 靈活性結果的範例
+description: 使用適用于 Azure 的雲端採用架構，瞭解貴公司的市場位置和競爭優勢。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023931"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092956"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 

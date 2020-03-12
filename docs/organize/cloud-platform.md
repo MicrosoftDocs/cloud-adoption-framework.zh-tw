@@ -1,6 +1,6 @@
 ---
 title: 雲端平臺功能
-description: 描述雲端平臺功能的構成
+description: 使用適用于 Azure 的雲端採用架構來瞭解雲端平臺功能的構成。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 204c22e7682886d8c4f90e74aa3d881e32e6c7b0
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800962"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092712"
 ---
 # <a name="cloud-platform-capabilities"></a>雲端平臺功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "76800962"
 - IT 營運
 - IT 治理
 - IT 基礎結構
-- 網路
+- 網路功能
 - 身分識別
 - 虛擬化
 - 商務持續性和災害復原

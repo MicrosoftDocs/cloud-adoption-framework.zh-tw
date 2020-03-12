@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3525b8d84ee6dd54072a4fed401114578de7fcb3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807949"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094470"
 ---
 # <a name="set-up-basic-alerts"></a>設定基本警示
 

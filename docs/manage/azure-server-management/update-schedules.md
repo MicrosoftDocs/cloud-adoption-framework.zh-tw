@@ -1,18 +1,18 @@
 ---
 title: 建立更新排程
-description: 使用 Azure 入口網站或新的 PowerShell Cmdlet 模組來管理更新排程。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何使用 Azure 入口網站或新的 PowerShell Cmdlet 模組來管理更新排程。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2f049fce8c109c3028fa84c5822c0eb1053023bb
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: fd812b40ee6d55e543f6b8f61a8af32e34c2e2e2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173346"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094500"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 

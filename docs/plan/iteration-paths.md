@@ -1,18 +1,18 @@
 ---
 title: 建立反覆項目和發行方案
-description: 建立反覆項目和發行方案
+description: 使用適用于 Azure 的雲端採用架構來瞭解如何定義反復專案和發行計畫，以協助您管理您的實施。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: bdd0150aef6c04b43121b5bef1224bea93191e2c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8aaee4546568301eabbe774cea08c3d5d975bb3e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800333"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092678"
 ---
 # <a name="establish-iterations-and-release-plans"></a>建立反覆項目和發行方案
 
@@ -32,7 +32,7 @@ Agile 和其他反復的方法是以反覆運算和發行的概念為基礎。 �
 
 **範例：** 五個人員的雲端採用小組致力於為期兩周的短期衝刺。 根據目前的義務（例如會議和其他程式的支援），每個小組成員每週可持續提供20小時的時間來進行採用工作。 針對此小組，初始速度估計為每個短期衝刺100小時。
 
-## <a name="iteration-planning"></a>反復專案規劃
+## <a name="iteration-planning"></a>反覆項目規劃
 
 一開始，您會根據排定的待處理專案來評估技術工作，以規劃反復專案。 雲端採用小組會評估完成各種工作所需的工作量。 這些工作接著會指派給第一個可用的反復專案。
 

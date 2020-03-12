@@ -1,18 +1,18 @@
 ---
 title: 在移轉前修復資產
-description: 在移轉前修復不相容的資產
+description: 瞭解如何在開始遷移之前，修復您判斷與所選擇的雲端提供者不相容的任何資產。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802101"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092797"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 

@@ -1,6 +1,6 @@
 ---
 title: 雲端操作功能
-description: 描述雲端操作功能的構成
+description: 使用適用于 Azure 的雲端採用架構來學習雲端操作功能，並讓 IT 作業得以改善並提供額外的價值。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a33dc9921f5e7fcbe2ee05f9483097040d9b309b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 75077ee51cb5962c6553032e071fe0cc54505f6a
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801030"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092720"
 ---
 # <a name="cloud-operation-capabilities"></a>雲端操作功能
 

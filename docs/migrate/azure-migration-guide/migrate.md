@@ -1,6 +1,6 @@
 ---
 title: 遷移資產
-description: 本指南透過找出適當的工具以達到「完成狀態」，協助您啟動環境移轉，包括原生工具、第三方工具和專案管理工具。
+description: 藉由識別要使用的適當工具，包括原生工具、協力廠商工具和專案管理工具，起始遷移至 Azure。
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9da81d0f9c51343b7d31fbc5591607fdfd36a1aa
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892870"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092501"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -49,7 +49,7 @@ Azure Migrate 提供下列功能：
 1. 選取 **選取評定工具** > **Azure Migrate： 伺服器評估** ** >  下一步**。
 1. 選取 [檢閱 + 新增工具]，並驗證設定。 選取 [**新增工具**] 以起始作業來建立遷移專案，並註冊選取的方案。
 
-### <a name="learn-more"></a>進一步了解
+### <a name="learn-more"></a>深入了解
 
 - [Azure Migrate 教學課程 - 將實體或虛擬化伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 

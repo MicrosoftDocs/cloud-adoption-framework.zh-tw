@@ -1,6 +1,6 @@
 ---
 title: 中央 IT 功能
-description: 瞭解中央 IT 功能的構成方式。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何為您的雲端採用工作建立集中式 IT 小組。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 00cf24b493bbeacae5e3f3d35d2951cbe838219e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225402"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094006"
 ---
 # <a name="central-it-capabilities"></a>中央 IT 功能
 

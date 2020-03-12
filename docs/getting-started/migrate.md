@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892152"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094433"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -57,7 +57,7 @@ ms.locfileid: "78892152"
 
 雲端執行是一種反復的程式，可用於遷移和現代化數位資產，並配合目標商業成果和變更管理控制項。 在每次反覆運算期間，會遷移工作負載，或現代化與策略和計畫一致。 IaaS、PaaS 或混合式的相關決策是在[遷移方法](../migrate/index.md)的評估階段進行，以優化控制和執行。 這些決策會驅動在相同方法中的每個遷移階段反復專案期間所使用的工具。 此模型可用於最少的策略和規劃。 不過，為了確保最大的企業傳回，IT 和企業都應該符合清楚的策略，並規劃引導實行活動。
 
-![雲端採用架構的雲端實施方法](../_images/operational-transformation-migrate.png)
+![雲端採用架構的雲端實施方法](../_images/migrate/methodology.png)
 
 這項工作的重點是工作負載的遷移或現代化。 工作負載是基礎結構、應用程式和資料的集合，共同支援共同的商業目標或執行一般商務程式。 工作負載的範例包括企業營運應用程式、HR 薪資解決方案、CRM 解決方案、金融檔核准工作流程，或商業智慧方案等。 工作負載也可能包含共用的技術資源，例如支援數個其他解決方案的資料倉儲。 在某些情況下，工作負載可以由單一資產（例如獨立伺服器、應用程式或資料平臺）來表示。
 

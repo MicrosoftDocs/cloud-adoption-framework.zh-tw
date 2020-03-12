@@ -1,6 +1,6 @@
 ---
 title: 雲端卓越中心
-description: 描述卓越雲端中心（CCoE）的構成。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何建立卓越的雲端中心（CCoE）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ca5e016ac07702711d38b671d767969cd4280bd3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801115"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092654"
 ---
 # <a name="cloud-center-of-excellence"></a>雲端卓越中心
 
@@ -63,7 +63,7 @@ CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件�
 
 此轉換的範例：
 
-| 案例 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
+| 狀況 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
 |---------|---------|---------|
 | 布建生產 SQL Server | 網路、IT 和資料平臺小組會在數天或甚至數周內布建各種元件。 | 需要伺服器的小組會部署 Azure SQL Database 的 PaaS 實例。 或者，預先核准範本可用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
 | 布建開發環境 | 網路、IT、開發和 DevOps 小組同意規格和部署環境。 | 開發小組會定義自己的規格，並根據配置的預算來部署環境。 |

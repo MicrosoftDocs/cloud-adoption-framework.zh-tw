@@ -1,6 +1,6 @@
 ---
 title: 操作模型術語
-description: 瞭解與操作模型相關的術語。
+description: 瞭解與操作模型相關的術語。 術語可協助您瞭解操作模型如何融入企業規劃的更大主題。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 650ee5e075382de5da855a6f90aac86a8f4706b7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801200"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092751"
 ---
 # <a name="operating-model-terminology"></a>操作模型術語
 

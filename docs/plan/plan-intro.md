@@ -1,18 +1,18 @@
 ---
 title: 規劃雲端採用
-description: 規劃雲端採用
+description: 使用適用于 Azure 的雲端採用架構，瞭解雲端採用方案如何協助公司平衡其 IT 組合，並管理一段時間的轉換。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222153"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093546"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 

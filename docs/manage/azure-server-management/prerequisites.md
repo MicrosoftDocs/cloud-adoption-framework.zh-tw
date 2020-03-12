@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341574"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094643"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 
@@ -97,7 +97,7 @@ ms.locfileid: "78341574"
 > [!NOTE]
 > 當您使用 Azure 入口網站建立自動化帳戶時，入口網站預設會嘗試建立 Azure Resource Manager 和傳統部署模型資源的執行身分帳戶。 如果您的環境中沒有傳統虛擬機器，而且您不是訂用帳戶的共同管理員，則入口網站會建立 Resource Manager 的執行身分帳戶，但在部署傳統執行身分帳戶時，會產生錯誤。 如果您不想要支援傳統資源，可以忽略此錯誤。
 >
-> 您也可以使用[PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell)來建立執行身分帳戶。
+> 您也可以使用[PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell)來建立執行身分帳戶。
 
 ## <a name="next-steps"></a>後續步驟
 

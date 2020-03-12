@@ -1,18 +1,18 @@
 ---
 title: 會影響移轉的決策
-description: 有關遷移程式的重要決策。
+description: 使用適用于 Azure 的雲端採用架構來做出適當的決策，並選擇可支援成功遷移的執行活動。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3281f7a14c5af58e435be9e3a412fc5285da1b47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225471"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094072"
 ---
 <!-- cSpell:ignore migrateable -->
 

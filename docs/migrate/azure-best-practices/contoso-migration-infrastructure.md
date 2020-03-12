@@ -1,6 +1,6 @@
 ---
 title: 部署移轉基礎結構
-description: 了解 Contoso 如何設定移轉至 Azure 的 Azure 基礎結構。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何設定 Azure 基礎結構以遷移至 Azure 的說明範例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892303"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092426"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
