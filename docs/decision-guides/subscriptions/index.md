@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892407"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140683"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -55,7 +55,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 當組織新增工作負載至雲端時，訂用帳戶的不同擁有權或基本責任區分可能會在生產和非生產管理群組中產生多個訂用帳戶。 雖然這個方法提供基本工作負載分隔，但是它不會善用繼承模型，跨您的訂用帳戶子集自動套用原則。
 
-![工作負載分隔模式](../../_images/ready/management-group-hierarchy.png)
+![工作負載分隔模式](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>應用程式分類模式
 

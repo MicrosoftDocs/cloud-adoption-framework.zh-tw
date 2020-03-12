@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798650"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140564"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>雲端採用架構藍圖
 
@@ -45,7 +45,7 @@ ms.locfileid: "76798650"
 
 雲端採用架構是一個總體架構，其中的「規劃」、「準備」和「採用」階段是以雲端採用的移轉和創新動機為基礎，並且提供治理和操作指引的支援。
 
-架構已達到公開上市 (GA) 階段。 不過，我們仍在積極地與客戶、合作夥伴及內部團隊一起建立此架構。 為了鼓勵更多人加入，相關內容會在可供使用時發行。 這些公開版本可讓您進行測試、驗證，然後逐漸精簡指導方針。 
+架構已達到公開上市 (GA) 階段。 不過，我們仍在積極地與客戶、合作夥伴及內部團隊一起建立此架構。 為了鼓勵更多人加入，相關內容會在可供使用時發行。 這些公開版本可讓您進行測試、驗證，然後逐漸精簡指導方針。
 
 若要成功採用雲端，客戶必須準備此數位轉型所需的人員、技術和流程。 雲端採用架構中有一個概述整體採用旅程 (包括移轉和創新) 的區段，可為客戶提供整體概觀。 此區段是由下列採用旅程階段所組成：
 

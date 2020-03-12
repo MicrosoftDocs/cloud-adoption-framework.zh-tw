@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341754"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140281"
 ---
-# <a name="azure-management-guide-before-you-start"></a>Azure 管理指南：開始之前
-
-
 ::: zone target="docs"
 
+# <a name="azure-management-guide-before-you-start"></a>Azure 管理指南：開始之前
 
 > [!NOTE]
 > 本指南是雲端採用架構的創新指引起點。 您也可以在 Azure 快速入門中心內取得本指南。 如需 Azure 快速入門中心的連結，請參閱本文稍後的提示。
