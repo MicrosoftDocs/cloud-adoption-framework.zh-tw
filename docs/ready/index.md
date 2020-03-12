@@ -1,6 +1,6 @@
 ---
 title: 準備採用雲端
-description: 準備採用雲端時遵循的環境
+description: 了解如何建立一個登陸區域，以裝載您計劃在雲端中建置或移轉至雲端的工作負載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892475"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092528"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "78892475"
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ ms.locfileid: "78892475"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>第一個登陸區域</h3>
-評估雲端採用架構遷移登陸區域藍圖。 使用此藍圖來建立第一個移轉備妥登陸區域，進行快速實驗和學習。
+選擇最適當的登陸區域選項，為您的環境建立以程式碼為主的起點。
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ ms.locfileid: "78892475"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>展開藍圖</h3>
-使用登陸區域考量，來識別藍圖範本並做出任何必要的修改。
+                            <h3>展開登陸區域</h3>
+擴充第一個登陸區域，以符合雲端採用方案的平台需求。
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ ms.locfileid: "78892475"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>最佳作法</h3>
-根據對最佳做法章節驗證登陸區域，以確保適當地設定您的目前和未來登陸區域。
+根據對最佳做法驗證登陸區域的修改，以確保適當地設定您的目前和未來登陸區域。
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 ---
-title: 用於 Azure 中雲端管理的平台特製化
-description: 改善平台特有的雲端管理作業。
+title: 用於雲端管理的特製化平台
+description: 使用「適用於 Azure 的雲端採用架構」來改善平台專屬的雲端管理作業，包括改善系統設計和自動化修復。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 12643d3e26620760e9a13e29936617bfb246fe29
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223522"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341737"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 

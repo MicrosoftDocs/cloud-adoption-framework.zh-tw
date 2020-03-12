@@ -1,6 +1,6 @@
 ---
 title: 作業模型簡介
-description: 了解雲端採用架構的作業模型。
+description: 使用適用於 Azure 的雲端採用架構，了解如何建立適用於雲端的作業模型。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 9080bbafb2877e58c1a69cfe264657a33cfd4d98
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629278"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094034"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型
 

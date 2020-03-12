@@ -1,6 +1,6 @@
 ---
 title: 移轉至 Azure 的必要條件
-description: 移轉至 Azure 的必要條件
+description: 使用「適用於 Azure 的雲端採用架構」來了解如何準備 Azure 移轉，以及成功的移轉專案需要哪些必要條件。
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806980"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094800"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806980"
 
 本節中的資源可協助您準備好目前的環境，以移轉至 Azure。
 
-# <a name="overviewtaboverview"></a>[概觀](#tab/Overview)
+# <a name="overview"></a>[概觀](#tab/Overview)
 
 移轉至 Azure 的原因，包括要移除與舊版硬體相關聯的風險、降低資本支出、釋出資料中心空間，以及快速實現投資報酬率 (ROI)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "76806980"
 > - [Windows Server 2008 和 Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008)。
 > - [SQL Server 2008 和 SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008)。
 
-# <a name="understand-migration-approachestabapproach"></a>[了解移轉方法](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[了解移轉方法](#tab/Approach)
 
 用於將應用程式移轉至 Azure 的策略和工具，在很大程度上取決於您的商業動機、技術需求和時間表，以及對正在移轉的實際工作負載和資產 (基礎結構、應用程式和資料) 的深入理解。
 
@@ -73,7 +73,7 @@ ms.locfileid: "76806980"
 - [雲端採用架構移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)
 - [合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[規劃檢查清單](#tab/Checklist)
+# <a name="planning-checklist"></a>[規劃檢查清單](#tab/Checklist)
 
 開始進行移轉之前，您必須符合某些必要條件。 這些活動確切的詳細資料會隨著要移轉的環境而有所不同。 一般情況下，可套用下列檢查清單：
 

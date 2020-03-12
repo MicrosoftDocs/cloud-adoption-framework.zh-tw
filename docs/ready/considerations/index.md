@@ -1,18 +1,18 @@
 ---
 title: Azure 登陸區域考量
-description: 了解登陸區域如何提供任何雲端採用環境的基本建置區塊。
+description: 使用適用於 Azure 的雲端採用架構，了解登陸區域如何提供任何雲端採用環境的基本建置區塊。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: c08efda381eeaf713f79393f2959127d8a96970b
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173378"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092533"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 

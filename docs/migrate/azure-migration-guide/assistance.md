@@ -1,6 +1,6 @@
 ---
 title: 如何取得協助
-description: 如何在 Azure 旅程期間取得協助
+description: 了解如何在您的 Azure 移轉過程中取得協助。 適當的協助有助於加速您的移轉工作。
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803478"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094241"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76803478"
 
 我們知道在適當時間獲得適當支援將可加速移轉工作。 請檢閱以下協助途徑以符合您的需求。
 
-# <a name="support-planstabsupportplans"></a>[支援方案](#tab/SupportPlans)
+# <a name="support-plans"></a>[支援方案](#tab/SupportPlans)
 
 ## <a name="microsoft-support"></a>Microsoft 支援服務
 
@@ -101,7 +101,7 @@ Microsoft 會對所有 Azure 客戶提供基本支援方案。 您可以全天�
 
 ::: zone-end
 
-# <a name="partnerstabpartners"></a>[夥伴](#tab/Partners)
+# <a name="partners"></a>[夥伴](#tab/Partners)
 
 ## <a name="azure-solutions-partner"></a>Azure 解決方案合作夥伴
 

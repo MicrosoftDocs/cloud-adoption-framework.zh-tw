@@ -1,6 +1,6 @@
 ---
 title: Azure 中的增強管理基準
-description: 管理基準的常見改善
+description: 使用「適用於 Azure 的雲端採用架構」來了解管理基準的常見改善項目。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ad40011769152d906481fe8ffba5dead3f6b0ae5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808238"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092333"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 
@@ -60,7 +60,7 @@ ms.locfileid: "76808238"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-automationtabazureautomation"></a>[Azure 自動化](#tab/AzureAutomation)
+## <a name="azure-automation"></a>[Azure 自動化](#tab/AzureAutomation)
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-security-centertabazuresecuritycenter"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
 
 ::: zone-end
 

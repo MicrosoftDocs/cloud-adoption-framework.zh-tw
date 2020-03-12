@@ -1,6 +1,6 @@
 ---
-title: 用於 Azure 中雲端管理的工作負載特製化
-description: 改善工作負載特有的雲端管理作業
+title: 用於雲端管理的特殊化工作負載
+description: 使用「適用於 Azure 的雲端採用架構」來了解特殊化工作負載的雲端管理作業。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7108f90ac19e5a566e068e3292d2fab8bd1b7e3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808136"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341720"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 

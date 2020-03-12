@@ -1,6 +1,6 @@
 ---
 title: Azure 中的保護和復原
-description: 藉由減少復原時間來確保業務穩定性
+description: 了解如何藉由減少復原時間和業務中斷的可能性來確保商務穩定性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bd4a7d64cb6724865faab6ee1d19597368f654fd
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223543"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094704"
 ---
 # <a name="protect-and-recover-in-azure"></a>Azure 中的保護和復原
 

@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: 瞭解雲端會計
             href: strategy/cloud-accounting.md
-          - name: 平衡組合
-            href: strategy/balance-the-portfolio.md
       - name: 第一個雲端採用專案
         href: strategy/first-adoption-project.md
       - name: 其他考量
         items:
+          - name: 平衡競爭優先順序
+            href: strategy/balance-competing-priorities.md
+          - name: 平衡組合
+            href: strategy/balance-the-portfolio.md
           - name: 全球市場
             href: strategy/global-markets.md
       - name: 與策略相關的技能
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: VMWare 主機
                 items:
-                  - name: 概觀
+                  - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Prerequisites
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: 在移轉前驗證評估假設 - 新增 R 修正
                     href: migrate/migration-considerations/assess/index.md
+                  - name: 將工作負載分類
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: 讓優先順序保持對齊
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: 評估工作負載整備程度
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: 階段工作負載
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 測試、最佳化和升階程序
+              - name: 升階程序
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: 雲端採用架構藍圖
         href: reference/index.md
+      - name: 新功能
+        href: reference/whats-new.md
       - name: 作業模型
         items:
           - name: 概觀

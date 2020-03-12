@@ -1,6 +1,6 @@
 ---
 title: Azure 中的監視和報告
-description: 了解如何為您的 Azure 管理環境設定監視、報告和警示。
+description: 使用「適用於 Azure 的雲端採用架構」，了解如何為 Azure 管理環境設定監控、報告和警示。
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 1a45fda645231dcd9548c770dee0afd19b8df30c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023989"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093530"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 

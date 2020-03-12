@@ -1,6 +1,6 @@
 ---
 title: 雲端管理
-description: 雲端採用架構中的雲端管理
+description: 使用「適用於 Azure 的雲端採用架構」，了解如何開發有效管理雲端所需的商務和技術方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 43f3c7f56560489dda43b77c68da01c093be8a5e
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 4223a6c6103d97a945557bb81eeee3d337dbe12d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892135"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091967"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 

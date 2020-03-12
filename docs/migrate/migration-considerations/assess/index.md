@@ -1,18 +1,18 @@
 ---
 title: 在移轉前驗證評估假設
-description: 在移轉前驗證評估假設
+description: 使用適用於 Azure 的雲端採用架構，了解如何在開始遷移至雲端之前驗證評估假設。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222272"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094122"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>在移轉前驗證評估假設
 
@@ -62,7 +62,7 @@ ms.locfileid: "78222272"
 
 ## <a name="next-steps"></a>後續步驟
 
-在對評量程序取得基本認識之後，您便可以開始[在業務優先順序上取得共識](./business-priorities.md)。
+在對評量程序取得基本認識之後，您便可以開始[將工作負載分類](./classify.md)。
 
 > [!div class="nextstepaction"]
-> [在業務優先順序上取得共識](./business-priorities.md)
+> [將工作負載分類](./classify.md)

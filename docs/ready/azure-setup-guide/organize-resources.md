@@ -1,6 +1,6 @@
 ---
 title: 有效地組織 Azure 資源
-description: 有效地組織 Azure 環境以便管理的最佳做法。
+description: 了解有效組織 Azure 資源以便管理的最佳做法。
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567753"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024015"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
 組織雲端式資源對於保護、管理和追蹤工作負載相關的成本而言至關重要。 若要組織資源，請使用 Azure 平台內的管理階層、實作深思熟慮的命名慣例，並套用資源標記。
@@ -156,7 +158,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 - **中繼資料和文件：** 系統管理員套用「ProjectOwner」之類的標記，即可輕易查看其所處理資源的相關詳細資料。
 - **自動化：** 您可能有定期執行的指令碼，其會根據「ShutdownTime」或「DeprovisionDate」等標記值來採取動作。
-- **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
+- **成本最佳化：** 在 Azure 成本管理中，您可以套用成本中心標記作為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 

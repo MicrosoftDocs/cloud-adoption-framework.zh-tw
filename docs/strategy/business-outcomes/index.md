@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337936"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092386"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
-最成功的轉換過程始於業務成果。 採用雲端可能是一個昂貴又耗時的工作。 促進 IT 和其他業務領域適當等級的支援，是成功的重要關鍵。 Microsoft 的[業務成果架構](../index.md)旨在協助客戶識別簡明、已定義，並推動可觀察的結果或業務績效變化的業務成果，並由特定量值支援。
+最成功的轉換過程始於業務成果。 採用雲端可能是一個昂貴又耗時的工作。 促進 IT 和其他業務領域適當等級的支援，是成功的重要關鍵。 此文章系列旨在協助客戶識別簡明、已定義，並推動可觀察的結果或業務績效變化的業務成果，並由特定量值支援。
 
 在任何雲端轉換期間，在業務成果方面發言的能力支援透明度和跨功能的合作關係。 業務成果架構從一個簡單的範本開始，以幫助技術人員記錄並取得共識。 此範本可以與數個業務專案關係人一起使用，以收集各種業務成果，每個業務成果都可能受到公司轉換過程的影響。 您能以電子方式使用此範本，更棒的則是將它繪製在白板上，讓業務負責人和專案關係人參與以結果為中心的討論。
 

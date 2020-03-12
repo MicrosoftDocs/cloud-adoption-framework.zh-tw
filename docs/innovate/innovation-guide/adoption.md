@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171084"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891948"
 ---
 ::: zone target="docs"
 
@@ -76,7 +76,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ## <a name="quantitative-feedback-for-apis"></a>[適用於 API 的定量意見反應](#tab/Quantitative-APIs)
 
-連線經濟改變了企業的創新方式。 市場和產業遭遇動盪的速度比以往還快。 動盪的形式很多，企業必須奮力對抗 _「創新者困境」_ ：如何設定變更步調，又不至於在持續的商業活動上摔一跤。
+連線經濟改變了企業的創新方式。 市場和產業遭遇動盪的速度比以往還快。 動盪的形式很多，企業必須奮力對抗「創新者困境」  ：如何設定變更步調，又不至於在持續的商業活動上摔一跤。
 
 對外，企業會使用 API 來變更其與客戶和合作夥伴的互動方式。 對內，企業會使用 API 來順暢地連接企業的各個組成部分。 API 經濟的四個營運用建置組塊為：社交、行動、分析和雲端。 應用程式和服務可以透過符合成本效益的方式快速地連結起來，以產生更廣大的價值主張。
 
@@ -124,8 +124,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="action"></a>動作
 
-Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。
-若要開始使用任一工具，請移至 [Azure DevOps](https://dev.azure.com)。
+Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps](https://dev.azure.com)。
 
 ::: zone-end
 

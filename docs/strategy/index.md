@@ -1,6 +1,6 @@
 ---
 title: 開發雲端採用策略
-description: 使用雲端來讓您的業務策略更進一步。
+description: 使用適用於 Azure 的雲端採用架構，了解雲端如何協助您提升商務策略。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 5ecc4c99604b6991337ae4f4022a2a8ee0464b0f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5494b9485f67f51c79fac84ca2822bf041ea873f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798327"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092349"
 ---
 <!-- markdownlint-disable MD026 -->
 

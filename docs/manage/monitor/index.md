@@ -1,6 +1,6 @@
 ---
 title: 雲端監視指南
-description: Azure 監視器和 System Center Operations Manager 的概觀
+description: 了解 Azure 監視器、System Center Operations Manager，以及用於監視每個雲端部署模型的建議策略。
 author: MGoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6c2b4521443e76a9d85b35b78af4d5811091fccc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4303a51a1a6df47e07e22f3de87639230f4a4c71
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807575"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091444"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 

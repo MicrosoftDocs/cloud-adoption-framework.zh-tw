@@ -1,6 +1,6 @@
 ---
 title: Azure 中的清查和可見性
-description: 了解如何為您的 Azure 管理環境設定清查、監視、報告和警示。
+description: 了解可針對庫存執行狀態提供清查和可見性的工具，以便用於收集操作資料。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808204"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092126"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -44,7 +44,7 @@ ms.locfileid: "76808204"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Azure 服務健康狀態包含：
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Azure 服務健康狀態包含：
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure 監視器](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure 監視器](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[讓解決方案上線](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[讓解決方案上線](#tab/Configure-solutions)
 
 ::: zone-end
 

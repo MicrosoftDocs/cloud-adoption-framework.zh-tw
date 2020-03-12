@@ -1,6 +1,6 @@
 ---
 title: 評估每個工作負載並精簡方案
-description: 這節的 Azure 移轉指南可協助您評估環境，以判斷要遷移的內容，以及要考慮哪些遷移方法。
+description: 使用「適用於 Azure 的雲端採用架構」，評估您的環境是否適合進行移轉，以及應考慮哪些方法。
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225549"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094331"
 ---
 # <a name="assess-each-workload-and-refine-plans"></a>評估每個工作負載並精簡方案
 

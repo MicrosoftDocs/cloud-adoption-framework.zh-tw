@@ -1,6 +1,6 @@
 ---
-title: 在當今的雲端節奏下隨時得知 Azure 的最新動態
-description: 了解如何在當今的雲端節奏下，隨時掌握最新動態並使用 Azure 來管理變更。
+title: 隨時得知 Azure 的最新動態
+description: 使用「適用於 Azure 的雲端採用架構」，了解如何保持最新狀態，以及管理現今雲端節奏的變更。
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222045"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341975"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>使用 Microsoft Azure 隨時掌握最新動態
 
