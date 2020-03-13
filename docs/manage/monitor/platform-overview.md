@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341193"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140547"
 ---
-<!-- cspell:ignore opsman ITSM -->
+<!-- cSpell:ignore opsman ITSM -->
 
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>雲端監視指南：監視平臺總覽
 

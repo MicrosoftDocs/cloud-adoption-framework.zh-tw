@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341431"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140649"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務對齊
 
@@ -22,7 +22,7 @@ ms.locfileid: "78341431"
 
 建立商務對齊的第一個步驟是確保詞彙對齊。 IT 管理（例如大部分的工程職業相似性）已積累一系列的術語，或具有高度技術性的術語。 這類詞彙可能會對商務專案關係人造成混淆，並且難以將管理服務對應到商業價值。
 
-幸運的是，開發雲端採用策略和雲端採用方案的程式，會建立一種重新對應這些詞彙的絕佳機會。 此程式也會建立機會來重新思考對營運管理的承諾，與企業合作。 下列文章系列會引導您完成這三個特定詞彙的新方法，協助改善商務專案關係人之間的交談： 
+幸運的是，開發雲端採用策略和雲端採用方案的程式，會建立一種重新對應這些詞彙的絕佳機會。 此程式也會建立機會來重新思考對營運管理的承諾，與企業合作。 下列文章系列會引導您完成這三個特定詞彙的新方法，協助改善商務專案關係人之間的交談：
 
 - **[重要性](./criticality.md)：** 將工作負載對應至商務程式。 排名重要性，以專注于投資。
 - **[影響](./impact.md)：** 瞭解潛在中斷的影響，以協助評估雲端管理的投資報酬率。

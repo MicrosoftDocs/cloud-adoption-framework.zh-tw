@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0903b816dbbdf6d227870d8bae99fd585d1734e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222676"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140315"
 ---
 # <a name="software-defined-networking-cloud-native"></a>軟體定義網路：雲端原生
 
 將 IaaS 資源（例如虛擬機器）部署到雲端平臺時，需要雲端原生虛擬網路。 從外部來源 (類似於 Web) 對虛擬網路的存取需要明確佈建。 這些類型的虛擬網路支援建立子網路、路由規則和虛擬防火牆，以及流量管理裝置。
 
-雲端原生虛擬網路不會相依于您組織的內部部署或其他 noncloud 資源，以支援雲端裝載的工作負載。 所有必要的資源都會佈建在虛擬網路本身，或使用受控 PaaS 供應項目進行佈建。
+雲端原生虛擬網路不會相依于您組織的內部部署或其他非雲端資源，以支援雲端裝載的工作負載。 所有必要的資源都會佈建在虛擬網路本身，或使用受控 PaaS 供應項目進行佈建。
 
 ## <a name="cloud-native-assumptions"></a>雲端原生假設
 

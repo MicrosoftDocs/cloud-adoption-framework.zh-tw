@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a5eb582f994aee6869f9bec0a340b2a966cf1413
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092426"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140666"
 ---
-<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>部署移轉基礎結構
 
@@ -73,7 +73,7 @@ Contoso 將使用 [Enterprise 合約 (EA)](https://azure.microsoft.com/pricing/e
 - 如果 Contoso 因故超出其承諾用量和花費，Microsoft 將會就差額對他們開立發票。
 - 因前述承諾用量而產生的任何費用，都會採用 Contoso 合約中所載的相同費率。 超量不會有任何罰款。
 
-### <a name="manage-subscriptions"></a>管理訂用帳戶
+### <a name="manage-subscriptions"></a>管理訂閱
 
 向 Azure 支付費用後，Contoso 必須了解如何管理 Azure 訂用帳戶。 Contoso 具有 EA，因此在可設定的 Azure 訂用帳戶數目方面不受限制。
 
@@ -717,7 +717,7 @@ ServiceManager | 資源之 ITIL 服務管理員的電子郵件別名。
 COBPriority | BCDR 的企業所設定的優先順序。 1-5 的值。
 ENV | 可能的值為 DEV、STG、PROD。 分別代表開發、預備和生產。
 
-例如：
+例如，
 
  ![Azure 標記](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -781,10 +781,10 @@ Contoso 建置了此機制尋找其應用程式的模型。
 
 **動作** | **名稱** | **Source** | **Target** | **通訊埠**
 --- | --- | --- | --- | ---
-Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
-Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443
-Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
-拒絕 | DenyAllInbound | 任意 | 任意 | 任意
+允許 | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
+允許 | AllowWebToApp | APP1-FE | APP1-APP | 80、443
+允許 | AllowAppToDB | APP1-APP | APP1-DB | 1433
+拒絕 | DenyAllInbound | 任何 | 任何 | 任何
 
 ### <a name="encrypt-data"></a>加密資料
 

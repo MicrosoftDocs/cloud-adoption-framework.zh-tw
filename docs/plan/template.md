@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341924"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140598"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
-Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客戶。 其中也包含管理部署管線的工具，以及 DevOps 的其他重要層面。 
+Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客戶。 其中也包含管理部署管線的工具，以及 DevOps 的其他重要層面。
 
 在本文中，您將瞭解如何使用雲端採用方案範本，快速地將待處理專案部署至 Azure DevOps。 此範本會根據雲端採用架構中的指導方針，將雲端採用工作與標準化程式保持一致。
 

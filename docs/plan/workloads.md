@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341907"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140615"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>排定雲端採用方案的工作負載優先順序並加以定義
 
@@ -21,6 +21,8 @@ ms.locfileid: "78341907"
 相反地，我們建議您的小組將焦點放在徹底排列和記錄前10個工作負載的優先順序。 開始採用計畫之後，小組可以維護接下來10個最高優先順序的工作負載清單。 這個方法會提供足夠的資訊來規劃接下來的幾個反復專案。
 
 將方案限制為10個工作負載，可在商務準則變更時，鼓勵優先順序的彈性和對齊。 此方法也可讓雲端採用小組學習和精簡估計。 最重要的是，它會移除廣泛的規劃，做為有效商務變更的屏障。
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>什麼是工作負載？
 

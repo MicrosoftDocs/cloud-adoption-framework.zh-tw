@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223639"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140513"
 ---
-<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
@@ -57,7 +57,7 @@ Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中
 
 CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
 
-## <a name="backup-and-recovery"></a>備份與復原
+## <a name="backup-and-recovery"></a>備份及復原
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
