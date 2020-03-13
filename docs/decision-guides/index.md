@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892441"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140230"
 ---
 # <a name="architectural-decision-guides"></a>架構決策指南
 
@@ -37,7 +37,7 @@ ms.locfileid: "78892441"
 
 [資源標記](./resource-tagging/index.md)：組織雲端式資源以支援計費模型、雲端計量方法和管理，以及將資源使用量和成本最佳化。 資源標記需要一致且井然有序的命名和中繼資料配置。
 
-[軟體定義網路](./software-defined-network/index.md)：使用快速部署和修改虛擬網路功能，將安全工作負載部署到雲端。 軟體定義網路 (SDN) 可以支援敏捷工作流程、隔離資源，並且整合雲端型系統與您現有的 IT 基礎結構。
+[軟體定義網路](./software-defined-network/index.md)：使用快速部署和修改虛擬網路功能，將安全工作負載部署到雲端。 軟體定義網路可以支援敏捷工作流程、隔離資源，並且整合雲端型系統與您現有的 IT 基礎結構。
 
 [加密](./encryption/index.md)：採用加密措施保護敏感性資料，以滿足組織的合規性和安全性原則需求。
 
