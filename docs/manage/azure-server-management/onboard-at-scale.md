@@ -7,16 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341573"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312472"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模設定 Azure 伺服器管理服務
 
 您必須完成這兩項工作，才能將 Azure 伺服器管理服務上架到您的伺服器：
+
 - 將服務代理程式部署到您的伺服器
 - 啟用管理解決方案
 
@@ -178,7 +181,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 ### <a name="azure-monitor-for-vms"></a>適用於 VM 的 Azure 監視器
 
-您可以透過 VM 實例的 view 頁來啟用[適用於 VM 的 Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)，如在[單一 VM 上啟用管理服務以進行評估](./onboard-single-vm.md)中所述。 您不應該直接從 [**解決方案**] 頁面啟用解決方案，就像您針對本文所述的其他解決方案所做的一樣。 針對大規模部署，使用[自動化](./onboarding-automation.md)可能會更容易在工作區中啟用正確的解決方案。 
+您可以透過 VM 實例的 view 頁來啟用[適用於 VM 的 Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)，如在[單一 VM 上啟用管理服務以進行評估](./onboard-single-vm.md)中所述。 您不應該直接從 [**解決方案**] 頁面啟用解決方案，就像您針對本文所述的其他解決方案所做的一樣。 針對大規模部署，使用[自動化](./onboarding-automation.md)可能會更容易在工作區中啟用正確的解決方案。
 
 ### <a name="azure-security-center"></a>Azure 資訊安全中心
 

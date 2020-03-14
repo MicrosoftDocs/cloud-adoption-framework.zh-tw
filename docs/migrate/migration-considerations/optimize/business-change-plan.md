@@ -1,18 +1,18 @@
 ---
-title: 開發業務變更方案的指引
-description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
+title: 開發商務變更計畫
+description: 使用適用于 Azure 的雲端採用架構，瞭解商務變更計畫如何協助您執行更廣泛的使用者採用方案。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d1c842c672cc091deaad4e0b7f4ffc89231895c7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801965"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312028"
 ---
 # <a name="business-change-plan"></a>業務變更方案
 

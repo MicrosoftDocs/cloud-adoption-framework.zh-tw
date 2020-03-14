@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78893331"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312680"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -98,6 +98,8 @@ Azure 成本管理支援每個範圍的下列內建角色：
 - [雲端治理小組](../../organize/cloud-governance.md) 負責管理成本、預算對齊，以及跨所有採用工作進行報告，需要管理群組階層根層級的成本管理參與者存取權。
 
   - 在妥善管理的環境中，雲端治理小組可能已經有更高程度的存取權，因此不需要為[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)進行額外的範圍指派。
+
+<!-- cSpell:ignore automations -->
 
 - [卓越雲端中心](../../organize/cloud-center-of-excellence.md) 負責管理與共用服務相關的成本，需要訂用帳戶層級的成本管理參與者存取權。 此外，此小組可能需要資源群組或訂用帳戶 (包含 CCoE 自動化所部署的資產) 的成本管理參與者存取權，以了解這些自動化如何影響成本。
 

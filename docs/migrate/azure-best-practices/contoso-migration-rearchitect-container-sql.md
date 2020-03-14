@@ -1,6 +1,6 @@
 ---
 title: 在 Azure 容器和 Azure SQL Database 中重新建構應用程式
-description: 了解 Contoso 如何在 Azure Windows 容器和 Azure SQL Database 中重新建構應用程式。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將內部部署應用程式重新架構至 Azure 容器和 Azure SQL database。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223119"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311637"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 

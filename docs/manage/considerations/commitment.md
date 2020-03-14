@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341212"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312368"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 

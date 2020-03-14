@@ -1,18 +1,18 @@
 ---
 title: 了解合作關係和支援選項
-description: 說明可支援移轉工作的選項和方法
+description: 使用適用于 Azure 的雲端採用架構，瞭解支援遷移成本的合作關係選項和方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802458"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311858"
 ---
 # <a name="understand-partnership-options"></a>了解合作關係選項
 
@@ -43,7 +43,7 @@ ms.locfileid: "76802458"
 [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure) 提供來自 Azure 工程師的直接協助，與夥伴共同協助客戶快速、放心地建置 Azure 解決方案。 FastTrack 會帶來實際客戶體驗的最佳做法和工具，引領客戶一路完成 Azure 解決方案的安裝、設定、開發和生產，包括：
 
 - 資料中心移轉
-- Azure 上的 Windows Server on Azure
+- Azure 上的 Windows Server
 - Azure 上的 Linux
 - SAP on Azure
 - 業務持續性和災害復原 (BCDR)
@@ -67,7 +67,7 @@ ms.locfileid: "76802458"
 
 在 FastTrack for Azure 的典型互動期間，Microsoft 會協助您確定企業願景，以成功規劃及開發 Azure 解決方案。 該小組會評估架構需求，並提供指導方針、設計準則、工具與資源，以協助您建置、部署及管理 Azure 解決方案。 該小組可依要求匹配經驗豐富而可提供部署服務的合作夥伴，並定期聯繫以確保部署進展順利，並協助排除阻礙。
 
-一般的 FastTrack for Azure 連繫主要階段如下：
+FastTrack for Azure 的典型互動主要階段如下：
 
 - **探索。** 找出重要的專案關係人、針對所要解決的問題了解其目標或願景，然後評估架構需求。
 - **實現解決方案。** 了解建置應用程式的設計原則、檢閱應用程式與解決方案的架構，並取得指導和工具，以推動概念證明 (PoC) 到生產階段的落實。

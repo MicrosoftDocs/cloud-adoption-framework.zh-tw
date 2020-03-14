@@ -1,18 +1,18 @@
 ---
-title: 適用于 Azure 的 SQL Server 遷移最佳做法
-description: Azure 的 SQL Server 遷移最佳做法簡介
+title: 適用于 Azure 的伺服器遷移
+description: 使用適用于 Azure 的雲端採用架構來瞭解 SQL Server 的遷移最佳作法，以降低複雜度並將遷移程式標準化。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 25e89ccbca604ea7637d8c45b9a843491706ff04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e23d954835e20735ca5f8ab57e0139504c5f4c75
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094619"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311892"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>適用于 Azure 的 SQL Server 遷移最佳做法
 

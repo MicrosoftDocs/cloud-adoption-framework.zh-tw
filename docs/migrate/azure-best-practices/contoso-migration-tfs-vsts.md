@@ -1,6 +1,6 @@
 ---
-title: 將 Team Foundation Server 部署重構到 Azure 中的 Azure DevOps Services
-description: 了解 Contoso 如何藉由將內部部署的 TFS 部署遷移至 Azure 中的 Azure DevOps Services，以重構部署。
+title: 將 Team Foundation Server 部署重構至 Azure DevOps Services
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將內部部署 TFS 部署遷移至 Azure 中的 Azure DevOps Services，以進行重構。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 003a5674116f7964971710c5c8c67fc51fa03493
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222870"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311620"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 

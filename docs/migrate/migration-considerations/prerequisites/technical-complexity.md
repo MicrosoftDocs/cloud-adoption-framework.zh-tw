@@ -1,18 +1,18 @@
 ---
-title: 為技術複雜度預做準備：敏捷式變更管理
-description: 為技術複雜度預做準備 - 敏捷式變更管理
+title: 為 agile 變更管理的複雜性做好準備
+description: 使用適用于 Azure 的雲端採用架構來準備雲端架構設計人員，以進行與專案管理的交談，以說明變更管理的概念。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140632"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311824"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 

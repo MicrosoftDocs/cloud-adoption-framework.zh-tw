@@ -1,6 +1,6 @@
 ---
-title: 評估要移轉至 Azure 的內部部署工作負載
-description: 了解 Contoso 如何評定其內部部署機器，以便使用 Azure Migrate 和 Data Migration Assistant 移轉至 Azure。
+title: 評估 Azure 遷移的內部部署工作負載
+description: 瞭解如何評估內部部署應用程式以遷移至 Azure 的說明範例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 78d33031879a49bd70a6dcfb01be604ca4371e49
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228414"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312096"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 

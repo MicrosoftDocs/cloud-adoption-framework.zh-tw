@@ -1,18 +1,18 @@
 ---
 title: 在移轉前預估雲端成本
-description: 說明在移轉前評估雲端成本的程序。
+description: 瞭解可能會影響決策和執行活動的因素，以及各種評估雲端成本的選項。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0618676a995971951a27a5bdba66b7e9b126d7d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4e245937f6990cd6d7d13ffaccae60a2301fcb23
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802577"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312062"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 

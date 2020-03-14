@@ -1,6 +1,6 @@
 ---
-title: 將內部部署應用程式移轉至 Azure VM 和 Azure SQL Database 受控執行個體，以重新裝載此應用程式
-description: 了解 Contoso 如何在 Azure VM 和 Azure SQL Database 受控執行個體上重新裝載內部部署應用程式。
+title: Azure 上的重新裝載和 Azure SQL Database 受控執行個體
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何使用 Azure SQL Database 受控執行個體在 Azure Vm 上重新裝載內部部署應用程式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223079"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311960"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>在 Azure VM 和 SQL Database 受控執行個體上重新裝載內部部署應用程式
 

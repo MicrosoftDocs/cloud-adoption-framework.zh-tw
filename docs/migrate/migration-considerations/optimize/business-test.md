@@ -1,18 +1,18 @@
 ---
-title: 在移轉期間進行商務測試 (UAT) 的指引
-description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
+title: 遷移期間的商務測試指導方針
+description: 瞭解如何使用商務測試來請求驗證解決方案效能是否符合預期，並不會妨礙商務程式。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801948"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311744"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>在移轉期間進行商務測試 (UAT) 的指引
 

@@ -1,18 +1,18 @@
 ---
-title: 針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
-description: 取得針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法。
+title: 已遷移至 azure 的成本與大小調整工作負載
+description: 使用適用于 Azure 的雲端採用架構，以瞭解將工作負載遷移至 Azure 的成本和大小的最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892577"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311909"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 

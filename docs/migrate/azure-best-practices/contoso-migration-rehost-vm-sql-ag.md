@@ -1,6 +1,6 @@
 ---
-title: 藉由將應用程式遷移至 Azure Vm 和 SQL Server 來進行重新裝載 Always On 可用性群組
-description: 了解 Contoso 如何將內部部署應用程式移轉至 Azure VM 和 SQL Server Always On 可用性群組，以重新裝載該應用程式。
+title: Azure 上的重新裝載與 SQL Server Always On 可用性群組
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何藉由將內部部署應用程式遷移至 Azure Vm，並 SQL Server Always On 可用性群組來加以重新裝載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222967"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311535"
 ---
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>使用 Azure 虛擬機器和 SQL Server 重新裝載內部部署應用程式 Always On 可用性群組
 

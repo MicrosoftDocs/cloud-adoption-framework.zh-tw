@@ -1,18 +1,18 @@
 ---
-title: 升級模型：單一步驟、分段或航班
-description: 了解升階對移轉活動的影響
+title: 升級模型類型
+description: 瞭解雲端遷移中使用的三種常見的升級模型，以及您選擇的模型如何影響遷移和優化程式內所顯示的活動。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9206b90cc9d5ec3a7e8e084b216be713fb24f265
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6174c142f949052b3396fe4954a5f20f2eba58fd
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802220"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311841"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>升級模型：單一步驟、分段或航班
 

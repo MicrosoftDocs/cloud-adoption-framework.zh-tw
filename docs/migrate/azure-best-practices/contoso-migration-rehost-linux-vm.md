@@ -1,6 +1,6 @@
 ---
-title: 將內部部署 Linux 應用程式重新裝載至 Azure VM
-description: 了解 Contoso 如何將內部部署 Linux 應用程式移轉至 Azure VM 進行重新裝載。
+title: 在 Azure Vm 上重新裝載內部部署 Linux 應用程式
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何藉由將內部部署 Linux 應用程式遷移至 Azure Vm 來進行重新裝載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222999"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311943"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 

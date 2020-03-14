@@ -1,18 +1,18 @@
 ---
-title: 要將移轉後的資源升階至生產環境需要什麼？
-description: 雲端移轉內的程序，其著重於將工作負載移轉至雲端的工作。
+title: 將已遷移的資源升階至生產環境的需求
+description: 使用適用于 Azure 的雲端採用架構來瞭解將已遷移的資源升級至生產環境的一般工作和標準必要條件。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801676"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311807"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -26,13 +26,13 @@ ms.locfileid: "76801676"
 
 下列每個程序都應在生產環境部署之前執行、記載及驗證：
 
-- **[評估](../assess/index.md)：** 工作負載已針對雲端相容性進行評估。
-- **[架構設計師](../assess/architect.md)：** 已正確架構工作負載的結構，以配合所選的雲端提供者。
+- **[評估](../assess/index.md)：** 已評估工作負載的雲端相容性。
+- **[建構](../assess/architect.md)：** 已正確建構工作負載的結構，以配合所選的雲端提供者。
 - **[複寫](../migrate/replicate.md)：** 資產已複寫至雲端環境。
-- **[階段](../migrate/stage.md)：** 已在雲端環境的暫存實例中還原複寫的資產。
-- **[商務測試](./business-test.md)：** 工作負載已受到商務使用者的完整測試和驗證。
-- **[商務變更計畫](./business-change-plan.md)：** 企業已根據生產升級，分享要進行變更的計畫;這應該包括使用者採用計畫、商務程式變更、需要定型的使用者，以及各種活動的時程表。
-- **[就緒](./ready.md)：** 通常必須在升級前進行一系列的技術變更。
+- **[階段](../migrate/stage.md)：** 已在雲端環境的暫存執行個體中還原複寫的資產。
+- **[業務測試](./business-test.md)：** 商務使用者已完整測試並驗證工作負載。
+- **[業務變更方案](./business-change-plan.md)：** 企業已根據生產升階共用預定變更的計劃；其中應包含使用者採用計劃、業務程序的變更、需要訓練的使用者，以及各種活動的時間表。
+- **[準備就緒](./ready.md)：** 在升階前通常必須進行一系列的技術變更。
 
 ## <a name="best-practices-to-execute-prior-to-promotion"></a>升階前應執行的最佳做法
 
@@ -46,7 +46,7 @@ ms.locfileid: "76801676"
 - **資料分類。** 驗證資料分類，以確保已實作適當的保護和原則。
 - **資訊安全長 (CISO) 驗證。** 驗證資訊安全主管是否已審查工作負載、業務風險、風險承受度和緩和策略。
 
-## <a name="final-step-promote"></a>最後一個步驟：升級
+## <a name="final-step-promote"></a>最後步驟：升階
 
 工作負載將需要不同層級的詳細審查和升階程序。 不過，網路重新調整可作為所有升階發行通用的最後步驟。 當其他一切都準備就緒時，請更新 DNS 記錄或 IP 位址，以將流量路由傳送至已移轉的工作負載。
 

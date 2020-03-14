@@ -1,18 +1,18 @@
 ---
-title: 保護及管理已移轉到 Azure 之工作負載的最佳做法
-description: 在移轉至 Azure 之後，取得操作、管理及保護已移轉之工作負載的最佳做法。
+title: 保護和管理遷移至 Azure 的工作負載
+description: 使用適用于 Azure 的雲端採用架構，以瞭解操作、管理及保護已遷移工作負載的最佳做法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d61816b0140c36aa405025358a43068201bcad03
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222695"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311926"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>保護及管理已移轉到 Azure 之工作負載的最佳做法
 

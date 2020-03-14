@@ -1,18 +1,18 @@
 ---
-title: Azure 的應用程式移轉範例概觀
-description: 概述「雲端採用架構移轉」一節中包含的應用程式移轉範例。
+title: 適用于 Azure 的應用程式遷移範例
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何將內部部署基礎結構遷移至 Microsoft Azure 雲端。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337466"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312576"
 ---
 # <a name="application-migration-patterns-and-examples"></a>應用程式移轉模式和範例
 
@@ -54,13 +54,13 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 - 由於每種移轉案例的商務目標都略有不同，因此移轉策略也會有所差異。
 - 針對每個部署案例，我們提供的相關資訊包括：商業誘因和目標、提議的架構、執行移轉的步驟，以及清理建議和移轉完成後可採取的後續步驟。
 
-### <a name="assessment"></a>屬性值
+### <a name="assessment"></a>評量
 
 **文章** | **詳細資料**
 --- | ---
 [評估內部部署資源是否可移轉至 Azure](../../plan/contoso-migration-assessment.md) | 此計畫方法中的最佳做法文章討論如何對 VMware 上執行的內部部署應用程式進行評估。 在本文中，範例組織會使用 Azure Migrate 服務來評估應用程式虛擬機器，並使用 Data Migration Assistant 來 SQL Server 資料庫。
 
-### <a name="infrastructure"></a>基礎架構
+### <a name="infrastructure"></a>基礎結構
 
 **文章** | **詳細資料**
 --- | ---

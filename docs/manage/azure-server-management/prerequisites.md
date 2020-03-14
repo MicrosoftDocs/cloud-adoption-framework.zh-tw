@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094643"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312615"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 

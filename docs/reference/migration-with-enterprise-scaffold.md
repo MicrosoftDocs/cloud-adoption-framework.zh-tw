@@ -1,6 +1,6 @@
 ---
 title: Azure 企業 Scaffold
-description: 描述可協助確保安全且易於管理之環境的企業 scaffold。
+description: Azure enterprise scaffold 現在是適用于 Azure 的 Microsoft Cloud 採用架構。 瞭解如何解決治理需求，並以彈性的需求進行平衡。
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023952"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311603"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 

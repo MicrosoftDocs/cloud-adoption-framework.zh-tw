@@ -1,18 +1,18 @@
 ---
-title: 將 Linux 服務台應用程式重新裝載至 Azure 和適用於 MySQL 的 Azure 資料庫
-description: 了解 Contoso 如何將內部部署 Linux 應用程式移轉至 Azure VM 和適用於 MySQL 的 Azure 資料庫，以便重新裝載。
+title: 在 Azure 上重新裝載 Linux 服務中心應用程式並適用於 MySQL 的 Azure 資料庫
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何藉由將內部部署 Linux 應用程式遷移至 Azure Vm 和適用於 MySQL 的 Azure 資料庫來進行重新裝載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223016"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311467"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 
