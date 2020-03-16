@@ -1,6 +1,6 @@
 ---
 title: Azure 移轉指南簡介
-description: 透過逐步指南了解如何有效地將組織的服務移轉至 Azure。
+description: 使用「適用於 Azure 的雲端採用架構」，以了解如何有效遷移您的組織服務到 Azure。
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4d2bb420609bb703a1f32b0912eb9c17ccabe4e9
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5c9c4b5477537cd71947e8ddbeff5a64eeb378c4
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225507"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311875"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前
 
