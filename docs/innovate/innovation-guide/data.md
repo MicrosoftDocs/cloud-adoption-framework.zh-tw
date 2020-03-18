@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6981af0cab1d9be149675a85f09be0640970e30f
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223456"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140162"
 ---
-<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+<!-- cSpell:ignore Fcatalogs Faccounts FEnvironments -->
 
 ::: zone target="docs"
 

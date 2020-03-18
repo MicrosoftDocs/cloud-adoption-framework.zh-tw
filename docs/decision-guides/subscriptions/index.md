@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140683"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508027"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -49,7 +49,7 @@ Azure 中的每個資源 (例如虛擬機器或資料庫) 均與訂用帳戶相�
 
 一旦您準備好將工作負載部署至生產環境，您應該新增額外的訂用帳戶。 這可協助您將生產環境資料和其他資產保留在在開發/測試環境之外。 您也可以輕鬆地跨兩個訂用帳戶中的資源套用兩組不同的原則。
 
-![生產和非生產訂用帳戶模式](../../_images/ready/basic-subscription-model.png)
+![生產和非生產訂用帳戶模式](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>工作負載分隔模式
 
