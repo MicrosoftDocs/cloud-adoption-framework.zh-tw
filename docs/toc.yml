@@ -2,6 +2,8 @@ items:
   - name: 雲端採用架構
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: 新功能
+    href: getting-started/whats-new.md
   - name: 開始使用
     items:
       - name: 開始移轉旅程
@@ -124,7 +126,7 @@ items:
             href: ready/azure-setup-guide/staying-current.md
       - name: 第一個登陸區域
         items:
-          - name: 什麼是登陸區域
+          - name: 什麼是登陸區域？
             href: ready/landing-zone/index.md
           - name: 選擇第一個登陸區域
             href: ready/landing-zone/first-landing-zone.md
@@ -608,7 +610,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 Azure Data Lake Storage 來管理企業的巨量資料
                         href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 資料湖是什麼
+                      - name: 資料湖是什麼？
                         href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: 收集資料
                     items:
