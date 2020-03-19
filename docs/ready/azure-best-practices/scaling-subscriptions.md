@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: b734446a4bac7d8db12119b2248aece9a3377d37
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312654"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508384"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>使用多個 Azure 訂用帳戶進行調整
 
@@ -22,7 +22,7 @@ ms.locfileid: "79312654"
 
 在 Azure 中部署您的第一個生產工作負載時，您應該從兩個訂用帳戶開始：一個用於生產環境，另一個用於您的非生產（開發/測試）環境。
 
-![基本訂用帳戶模型，會在標示為「生產」和「非生產」的方塊旁顯示金鑰](../../_images/ready/basic-subscription-model.png)
+![基本訂用帳戶模型，會在標示為「生產」和「非生產」的方塊旁顯示金鑰](../../_images/ready/initial-subscription-model.png)
 
 我們之所以建議採用這種方法，是因為以下幾個原因：
 

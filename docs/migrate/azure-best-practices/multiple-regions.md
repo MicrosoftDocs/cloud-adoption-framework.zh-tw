@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508333"
 ---
 # <a name="azure-regions"></a>Azure 區域
 

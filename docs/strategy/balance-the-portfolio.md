@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092404"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508350"
 ---
 <!-- cSpell:ignore CSAT -->
 

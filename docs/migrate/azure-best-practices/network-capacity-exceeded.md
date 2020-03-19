@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094824"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508367"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -59,7 +59,7 @@ ms.locfileid: "79094824"
 
 ### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
 
-**複製儲存體：** 這種方法可用來傳送資料 HDFS、備份、封存、檔案伺服器、應用程式等。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+**複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
 另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 

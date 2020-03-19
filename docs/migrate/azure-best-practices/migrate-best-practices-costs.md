@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508401"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -191,7 +191,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 您終究會有多個 Azure 訂用帳戶。 例如，您可能需要額外的訂用帳戶來將開發與生產界限分開，或者您的平台可能需要為每個用戶端使用不同的訂用帳戶。 因此，跨所有訂用帳戶將資料報告彙總到單一平台的功能非常有價值。
 
-若要這樣做，您可以使用 Azure 成本管理 API。 接著，將資料彙總到單一來源 (例如 Azure SQL) 之後，您可以使用諸如 Power BI 的工具來呈現彙總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要主動深入解析成本管理的使用者，您可以根據部門、資源群組等來建立成本的特定觀點。您不需要為他們提供 Azure 帳單資料的完整存取權。
+若要這樣做，您可以使用 Azure 成本管理 API。 接著，將資料彙總到單一來源 (例如 Azure SQL) 之後，您可以使用諸如 Power BI 的工具來呈現彙總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要主動深入解析成本管理的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
 
 **深入了解：**
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508112"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -119,7 +119,7 @@ ms.locfileid: "77709357"
 **潛在的活動：**
 
 - 進行身分識別原則的定期稽核並遵循做法。
-- 確保機密的使用者帳戶（CEO、CFO、VP 等等）一律會啟用多重要素驗證和異常登入偵測。
+- 確保機密的使用者帳戶（例如企業主管的帳戶）一律會啟用多重要素驗證和異常登入偵測。
 - 定期掃描惡意動作項目和資料外洩，特別是與身分識別詐騙相關的項目，例如潛在的系統管理員帳戶接管。
 - 設定監視和報告工具。
 - 請考量更緊密地與安全性和防止詐騙系統整合。
