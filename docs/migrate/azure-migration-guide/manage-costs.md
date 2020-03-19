@@ -1,6 +1,6 @@
 ---
 title: 聚焦在移轉的成本控制機制
-description: 了解如何設定預算、付款和了解 Azure 資源的發票。
+description: 使用「適用於 Azure 的雲端採用架構」來了解如何設定預算、付款，並了解 Azure 資源的發票。
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222658"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312113"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
 無論我們在技術小組中的角色為何，雲端都會對我們的工作方式帶來一些改變。 成本就是這種改變的絕佳範例。 在過去，只有財務和 IT 領導階層才會關心 IT 資產的成本 (基礎結構、應用程式和資料)。 雲端可讓每一位 IT 成員進行決策，並做出為使用者提供更佳支援的決策。 不過，伴隨著這種能力的責任是，在做出這些決策時必須要有成本意識。
@@ -45,7 +47,7 @@ ms.locfileid: "78222658"
 - Azure [定價計算機](https://azure.microsoft.com/pricing/calculator)會根據手動輸入的 Azure 產品提供成本預估。
 - 有時候，決策需要比較未來的雲端成本和目前的內部部署成本。 [擁有權總成本 (TCO) 計算機](https://azure.microsoft.com/pricing/tco/calculator)可提供此類比較。
 
-這些手動成本計算機可單獨使用，以預測可能的支出和節省數額。 它們也可以與 Azure Migrate 的成本預測工具搭配使用，以根據替代架構或效能限制適當調整成本期望。
+這些手動成本計算機可單獨使用，以預測可能的支出和節省數額。 其也可以與 Azure Migrate 的成本預測工具搭配使用，以根據替代架構或效能限制適當調整成本期望。
 
 ## <a name="azure-migrate-calculations"></a>Azure Migrate 計算
 
