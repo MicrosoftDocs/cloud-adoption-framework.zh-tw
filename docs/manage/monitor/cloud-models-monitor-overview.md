@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341822"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069731"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
@@ -43,9 +43,9 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 <!-- markdownlint-disable MD033 -->
 
-層 | 資源 | 範圍 | 方法
+階層 | 資源 | 影響範圍 | 方法
 ---|---|---|----
-應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
+Application | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
 Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。
 Azure 資源-基礎結構即服務（IaaS） | 1. Azure 儲存體<br/> 2. Azure 應用程式閘道<br/> 3. 網路安全性群組<br/> 4. Azure 流量管理員<br/> 5. Azure 虛擬機器<br/> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。<br/> 2. 效能和診斷記錄（活動、存取、效能和防火牆）。<br/> 3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。<br/> 4. 監視端點狀態可用性。<br/> 5. 監視來賓 VM 作業系統（OS）中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。<br/> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。<br/> 2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。<br/> 5. 啟用適用於 VM 的 Azure 監視器。<br/> 6. 啟用容器的 Azure 監視器。
 網路 | 您的虛擬機器與一或多個端點（另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址）之間的通訊。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。

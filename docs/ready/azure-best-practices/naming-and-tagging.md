@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9e60e84659828efdc9802c45cf2f91ad945c8cda
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312498"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069783"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -135,6 +135,7 @@ ms.locfileid: "79312498"
 | MySQL 資料庫                 | mysql-      |
 | PostgreSQL 資料庫            | psql       |
 | Azure SQL 資料倉儲       | sqldw-      |
+| Azure Synapse Analytics        | syn        |
 | SQL Server Stretch Database    | sqlstrdb-   |
 
 ### <a name="storage"></a>儲存體

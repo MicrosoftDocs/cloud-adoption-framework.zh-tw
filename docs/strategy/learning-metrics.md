@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337879"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069800"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ ms.locfileid: "78337879"
 
 ## <a name="next-steps"></a>後續步驟
 
-當學習度量對齊之後，您就可以開始針對那些計量來[評估數位資產](../digital-estate/index.md)。 結果會是[轉換待處理專案或遷移待](../migrate/migration-considerations/prerequisites/technical-complexity.md)處理專案。
+當學習度量已對齊之後，您就可以開始[建立商業案例](cloud-migration-business-case.md)，針對這些計量進行傳遞。 
 
 > [!div class="nextstepaction"]
-> [評估數位資產](../digital-estate/index.md)
+> [建立雲端商務案例](cloud-migration-business-case.md)

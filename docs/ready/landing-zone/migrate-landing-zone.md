@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228453"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069760"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "78228453"
 
 這個初始登陸區域包含下列假設或條件約束。 如果這些假設符合您的條件約束，您可以使用藍圖來建立您的第一個登陸區域。 藍圖也可以加以擴充，以建立符合您特有條件限制的登陸區域藍圖。
 
-- **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-subscription-service-limits)用帳戶限制。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
+- **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-subscription-service-limits)用帳戶限制。
 - **合規性：** 此登陸區域不需要協力廠商合規性需求。
 - **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
 - **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
