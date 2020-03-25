@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337966"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225712"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>建置雲端移轉的商業論證
 
@@ -68,7 +68,7 @@ ms.locfileid: "78337966"
 
 ## <a name="migration-specific-initial-investment"></a>移轉特定的初始投資
 
-- 雲端提供者（例如 Azure）提供計算機來預估雲端投資。 [Azure 定價計算機](https://azure.microsoft.com/pricing)是其中一個範例。
+- 雲端提供者（例如 Azure）提供計算機來預估雲端投資。 [Azure 定價計算機](https://azure.com/calculator)是其中一個範例。
 - 有些雲端提供者也會提供成本差異計算機。 [Azure 擁有權總成本（TCO）計算機](https://azure.com/tco)就是其中一個範例。
 - 如需更精細的成本結構，請考慮[數位資產規劃](../digital-estate/index.md)練習。
 - 估計移轉的成本。

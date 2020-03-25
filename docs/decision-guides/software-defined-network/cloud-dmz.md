@@ -2,18 +2,18 @@
 title: 軟體定義網路：雲端 DMZ
 description: 瞭解雲端 DMZ 網路架構，這可讓您使用 VPN 來限制內部部署和雲端式網路之間的存取。
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca545c662f7249b8afeb1c750f6b07bd274c1c02
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc9963118d8f69fd78f9cf5d84f5c140c200aec5
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708609"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225848"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 
@@ -39,7 +39,7 @@ DMZ 會部署網路虛擬裝置 (NVA) 以實作防火牆和封包檢查等安全
 - 將內部部署網路與雲端網路連線，會使安全性需求變得更複雜。 雖然雲端網路與內部部署環境之間的連線會受到保護，但您仍然需要確保雲端資源受到保護。 任何為了存取雲端式工作負載所建立的公用 Ip，都必須使用[公開的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)或[Azure 防火牆](https://docs.microsoft.com/azure/firewall)來妥善保護。
 - 雲端 DMZ 架構常作為跳板，當內部部署與雲端網路之間的連線進一步受到保護且安全性原則一致時，讓您能更廣泛採用完整的混合式網路功能架構。 不過，它也適用于隔離的部署，其具有雲端 DMZ 方法滿足的特定安全性、身分識別和連線需求。
 
-## <a name="learn-more"></a>深入了解
+## <a name="learn-more"></a>進一步了解
 
 如需在 Azure 中執行雲端 DMZ 的詳細資訊，請參閱：
 

@@ -2,18 +2,18 @@
 title: 加密決策指南
 description: 執行加密原則，這是 Azure 移轉中的核心服務，可為您的雲端式工作負載和資料提供額外的安全性層級。
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: acc5e2bbaa665888b3453aa54e9292a99801f3df
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222582"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225882"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
