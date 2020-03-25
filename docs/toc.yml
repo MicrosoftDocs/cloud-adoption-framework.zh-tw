@@ -574,6 +574,18 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: 預測和影響
                 href: innovate/innovation-guide/predict.md
+          - name: 創新案例
+            items:
+              - name: Kubernetes
+                items:
+                  - name: 創新案例概觀
+                    href: innovate/kubernetes/index.md
+                  - name: 應用程式開發與部署
+                    href: innovate/kubernetes/application-development.md
+                  - name: 叢集設計和作業
+                    href: innovate/kubernetes/cluster-design-operations.md
+                  - name: 叢集和應用程式安全性
+                    href: innovate/kubernetes/cluster-application-security.md
           - name: 最佳作法
             items:
               - name: 概觀和 Azure 工具鏈
