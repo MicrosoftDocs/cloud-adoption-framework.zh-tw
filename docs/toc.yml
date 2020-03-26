@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: 監視平台概觀
                 href: manage/monitor/platform-overview.md
+              - name: 與監視相關的技能
+                href: manage/monitor/suggested-skills.md
           - name: 集中化管理作業
             href: manage/centralize-operations.md
           - name: 建立操作適用性檢閱
