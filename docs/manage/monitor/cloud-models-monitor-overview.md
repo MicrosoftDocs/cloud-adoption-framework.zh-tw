@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069731"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356261"
 ---
+<!-- cSpell:ignore savision -->
+
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>雲端監視指南：雲端部署模型的監視策略
 
 本文包含我們針對每個雲端部署模型所建議的監視策略（根據下列準則）：

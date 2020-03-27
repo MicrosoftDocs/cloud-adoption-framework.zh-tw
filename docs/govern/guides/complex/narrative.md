@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706909"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357091"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>複雜企業的治理指南：支援的敘述
 
 下列敘述會[在複雜的企業雲端採用旅程期間](./index.md)，建立治理的使用案例。 在操作指南中的建議之前，請務必瞭解此敘述中反映的假設和推理。 接著，您可以將治理策略與您自己組織的雲端採用旅程更一致。

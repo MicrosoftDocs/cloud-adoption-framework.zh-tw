@@ -1,18 +1,18 @@
 ---
 title: 反覆項目和發行待處理項目
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何建立反覆運算和發行待處理專案來組織您的工作。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何建立反復專案和發行待處理專案來組織您的工作。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7204511d8b3f83d18f8179e04c4fd400151a7f3a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4cbf0c7760ed2c471e1b462ae2712c544e9d0e8c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094169"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355504"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>管理累加移轉工作中的變更
 

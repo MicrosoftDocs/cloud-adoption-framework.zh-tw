@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3130494f151897d005a5ded28268d056f15bd15c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311943"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355961"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -290,7 +290,7 @@ Contoso 管理員現在會執行一次完整的容錯移轉，以完成移轉。
 
 ### <a name="security"></a>安全性
 
-Contoso 安全性小組會檢閱 OSTICKETWEB 和 OSTICKETMYSQLVM，判斷是否有任何安全疑慮。
+Contoso 安全性小組會回顧 OSTICKETWEB 和 OSTICKETMYSQL Vm，以判斷是否有任何安全性問題。
 
 - 小組會檢閱 VM 的網路安全性群組 (NSG) 以控制存取權。 NSG 可用來確保只可以傳遞該應用程式允許的流量。
 - 小組也會考慮使用磁碟加密和 Azure Key Vault 來保護 VM 磁碟上的資料。

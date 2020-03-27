@@ -1,20 +1,20 @@
 ---
-title: 設定雲端採用的優先順序並定義工作負載
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何設定雲端採用方案的工作負載優先順序並加以定義。
+title: 定義和設定雲端採用工作負載的優先順序
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何為雲端採用方案定義工作負載並設定其優先順序。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140615"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354704"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>排定雲端採用方案的工作負載優先順序並加以定義
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義和設定雲端採用方案的工作負載優先順序
 
 建立清楚、可採取動作的優先順序是成功採用雲端的其中一個秘密。 自然的誘惑是花時間定義在雲端採用期間可能會受到影響的所有工作負載。 但這是敵對，特別是在採用過程中。
 
@@ -28,7 +28,7 @@ ms.locfileid: "79140615"
 
 在雲端採用的環境中，工作負載是 IT 資產（伺服器、Vm、應用程式、資料或設備）的集合，共同支援已定義的進程。 工作負載可以支援一個以上的進程。 工作負載也可能相依于其他共用的資產或較大的平臺。 不過，工作負載應該已定義與相依資產相關的界限，以及依存于工作負載的處理常式。 通常，您可以藉由監視 IT 資產之間的網路流量來視覺化工作負載。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 必要條件清單中的策略性輸入可讓您更輕鬆地完成下列工作。 如需收集本文所討論資料的協助，請參閱[必要條件](./prerequisites.md)。
 

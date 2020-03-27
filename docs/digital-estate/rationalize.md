@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312420"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357259"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -124,8 +124,8 @@ ms.locfileid: "79312420"
 - 透過雲端提供者的平臺強化技能。
 - 定義符合長期願景所需的核心服務（和 Azure 標準）。
 - 進一步瞭解作業在轉換之後可能需要變更的方式。
-- 了解任何既有的商業風險，以及企業對這些風險的承受能力。
-- 根據企業的風險承受度，建立治理基準或最小可行性產品 (MVP)。
+- 瞭解任何固有的商業風險，以及企業對這些風險的承受度。
+- 根據企業的風險承受度，建立治理的基準或最小可行產品（MVP）。
 
 ## <a name="release-planning"></a>版本規劃
 

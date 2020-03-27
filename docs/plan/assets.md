@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342060"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354936"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對應至優先順序的工作負載
 
-工作負載是資產集合的概念描述： Vm、應用程式和資料來源。 前一篇文章的[優先順序與定義工作負載](./workloads.md)，提供收集將定義工作負載之資料的指引。 在遷移之前，該清單中的幾項技術輸入需要額外的驗證。 本文可協助驗證下列輸入：
+工作負載是資產集合的概念描述： Vm、應用程式和資料來源。 前一篇文章[定義和設定優先順序](./workloads.md)，提供收集將定義工作負載之資料的指引。 在遷移之前，該清單中的幾項技術輸入需要額外的驗證。 本文可協助驗證下列輸入：
 
 - **應用程式：** 列出此工作負載中包含的任何應用程式。
 - **Vm 和伺服器：** 列出工作負載中包含的任何 Vm 或伺服器。

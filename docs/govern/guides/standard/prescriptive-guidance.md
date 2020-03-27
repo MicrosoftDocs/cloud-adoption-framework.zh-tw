@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709306"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357051"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 
@@ -50,7 +50,7 @@ ms.locfileid: "77709306"
 
 ### <a name="subscription-design"></a>訂用帳戶設計
 
-決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組選擇了[生產與非生產](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern)訂用帳戶設計模式。
+決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已建立生產和非生產工作負載[生產和非生產](../../../ready/azure-best-practices/initial-subscriptions.md)訂用帳戶設計模式的訂閱。
 
 - 在目前的焦點下，不太可能需要部門。 部署應該會侷限在單一計費單位內。 在採用階段，甚至可能不會有集中管理計費的企業合約。 這個層級的採用可能會由單一的隨用隨付 Azure 訂用帳戶來管理。
 - 無論使用 EA 入口網站或企業合約是否存在，訂用帳戶模型仍應定義並同意，以將管理段無意的費用降至最低。

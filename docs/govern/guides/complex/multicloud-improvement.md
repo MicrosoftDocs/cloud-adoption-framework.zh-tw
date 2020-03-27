@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 05ee11a452044157458d5c27f3f1f522f0f1e617
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223919"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357084"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雜企業的治理指南：多重雲端改進
 
 ## <a name="advancing-the-narrative"></a>推進敘述

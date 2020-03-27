@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094652"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356383"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -43,7 +43,7 @@ ms.locfileid: "79094652"
 | WorkspaceSolutions json | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
 | ScopeConfig json | Resource Manager 範本，其使用具有變更追蹤解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
 | Enable-VMInsightsPerfCounters. ps1 | 為伺服器啟用 VM 深入解析並設定效能計數器的 PowerShell 腳本。 |
-| 變更追蹤-Filelist. json | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
+| 變更追蹤-FileList. json | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
 
 使用下列命令來執行 New-AMSDeployment：
 

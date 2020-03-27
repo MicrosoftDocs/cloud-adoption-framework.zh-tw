@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fd812b40ee6d55e543f6b8f61a8af32e34c2e2e2
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 64f2ee1d148cc769325bdb60dabe2deba5d04351
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094500"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356329"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 
@@ -66,7 +66,7 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
         [string]$AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCritialSecurity"
+        [string]$scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation

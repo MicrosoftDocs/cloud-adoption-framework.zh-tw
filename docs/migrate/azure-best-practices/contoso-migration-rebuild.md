@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223099"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356351"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -293,7 +293,7 @@ Contoso 會建立 Azure DevOps 專案，並設定 CI 組建來建立容器，再
 - 將微服務部署至 AKS 叢集。
 - 他們的第一步是使用 Azure DevOps 來更新微服務的連接字串。 接著，他們會設定新的 Azure DevOps 發行管線來部署微服務。
 - 本節中的指示會使用 [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend) 存放庫。
-- 本文未涵蓋部分設定設定（例如 Active Directory B2C）。 如需這些設定的詳細資訊，請參閱上述的存放庫。
+- 本文未涵蓋某些組態設定 (例如 Active Directory B2C)。 如需這些設定的詳細資訊，請參閱上述的存放庫。
 
 他們會建立管線：
 
@@ -634,6 +634,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下幾個範例會在與 Azure 中的 Contoso SmartHotel360 應用程式一致的 Microsoft Learn 上量身打造學習路徑。
 
-使用 Azure App Service： Azure 中的 Web apps 將[網站部署至 azure](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/)，可讓您輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注在網站的功能，並交由健全強大的 Azure 平台保障網站存取的安全性。
+使用 Azure App Service： Azure 中的 Web apps 將[網站部署至 azure](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service)，可讓您輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注在網站的功能，並交由健全強大的 Azure 平台保障網站存取的安全性。
 
-[使用 Azure 認知願景服務來處理和分類影像](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)： azure 認知服務提供預先建立的功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用認知願景服務來偵測臉部、標記和分類影像，以及識別物件。
+[使用 Azure 認知願景服務來處理和分類影像](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services)： azure 認知服務提供預先建立的功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用認知願景服務來偵測臉部、標記和分類影像，以及識別物件。

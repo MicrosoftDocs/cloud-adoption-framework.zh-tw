@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708813"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357173"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>成本管理的計量、指標及風險承受度
 
@@ -34,7 +34,7 @@ ms.locfileid: "77708813"
 
 ## <a name="risk-tolerance-indicators"></a>風險承受度指標
 
-在早期的小規模部署期間（例如開發/測試或實驗性第一個工作負載），成本管理可能會是相對較低的風險。 當部署愈來愈多個資產時，風險就會增加，而業務的風險承受度可能會降低。 此外，因為愈來愈多的雲端採用小組有能力將資產設定或部署至雲端，使得風險增加，而承受度降低。 反過來說，成本管理專業領域的成長，將會讓雲端採用階段上的人員部署更多創新的新技術。
+在早期的小規模部署期間（例如開發/測試或實驗性第一個工作負載），成本管理可能會是相對較低的風險。 隨著部署的資產越來越多，風險也會增加，而企業的風險承受度可能會遭到拒絕。 此外，因為愈來愈多的雲端採用小組有能力將資產設定或部署至雲端，使得風險增加，而承受度降低。 反過來說，成本管理專業領域的成長，將會讓雲端採用階段上的人員部署更多創新的新技術。
 
 在雲端採用的早期階段，您會與企業一起判斷風險承受度基準。 有了基準之後，您必須決定會觸發成本管理專業領域投資的準則。 這些準則可能會因為不同組織而有所差異。
 

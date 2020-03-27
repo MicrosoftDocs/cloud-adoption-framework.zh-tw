@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023734"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355566"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 

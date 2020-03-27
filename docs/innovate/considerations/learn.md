@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a7b717b9a8d4e81ac6dc644e51593d89e6fc3089
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312537"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356704"
 ---
+<!-- cSpell:ignore Satya Nadella Ries -->
+
 # <a name="learn-with-customers"></a>向客戶學習
 
 我們目前的客戶代表我們的最佳學習資源。 藉由與我們合作，可協助我們[打造客戶的理解](./build.md)，以尋找其需求的最佳解決方案。 它們也會產生[測量客戶影響](./measure.md)的度量，以協助建立最基本的可行產品（MVP）解決方案。 在本文中，我們將說明如何向客戶合作夥伴學習和。

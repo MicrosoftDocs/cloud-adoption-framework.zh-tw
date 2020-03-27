@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a83e2b8a0892e216106890e0bed0066be527e974
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709255"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357010"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
 本文會藉由新增多重雲端採用的控制項來推進敘述。
@@ -32,7 +34,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 從那時起，某些將會影響治理的事項已經改變：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
-- IT 作業或雲端作業主要會由 Azure 監視器與相關的自動化來管理。
+- IT 作業或雲端作業主要是由 Azure 監視器和相關的自動化程式來管理。
 - 嚴重損壞修復和商務持續性是由 Azure 保存庫實例所控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。

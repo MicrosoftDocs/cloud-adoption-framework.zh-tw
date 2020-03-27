@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706807"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357060"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -40,7 +40,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 - 已將數千個 IT 和商業資產部署至雲端。
 - 應用程式開發小組已實現持續整合和持續部署（CI/CD）管線，以部署具有改良的使用者體驗的雲端原生應用程式。 該應用程式尚不會與受保護的資料互動，因此不會備妥生產環境。
 - IT 內的商業智慧小組會從物流、庫存和第三方資料，積極地統籌雲端中的資料。 此資料將用於衍生可能形成業務流程的新預測。 但是，在將客戶和財務資料整合到資料平台之前，那些預測和見解都是不可行的。
-- IT 小組正在進行 CIO 和 CFO 的方案來淘汰兩個資料中心。 這兩個資料中心內的 3,500 個資產幾乎都已淘汰或移轉。
+- IT 小組正在進行 CIO 和 CFO 計畫，以淘汰兩個資料中心。 這兩個資料中心內的 3,500 個資產幾乎都已淘汰或移轉。
 - 機密個人和財務資料的相關原則已現代化。 不過，新的公司原則取決於相關安全性和治理原則的實施。 小組仍然停滯不前。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
@@ -133,7 +133,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     1. 先前章節的參考架構、[具有共用服務的中樞和輪輻拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)，產生了可啟用 VNet 對等互連的 Resource Manager 範本。
     2. 該範本可用來做為從先前的治理反復專案修改 DMZ 範本的指南。
     3. 我們現在會將 VNet 對等互連新增至先前透過 VPN 連線到本機邊緣裝置的 DMZ VNet。
-    4. 您也應該從這個範本移除 VPN，以確保不會透過公司的 IT 訂用帳戶和防火牆解決方案，直接將流量路由傳送至內部部署資料中心。 您也可以在 ExpressRoute 線路 outge 時，將此 VPN 設定為容錯移轉線路。
+    4. 您也應該從這個範本移除 VPN，以確保不會透過公司的 IT 訂用帳戶和防火牆解決方案，直接將流量路由傳送至內部部署資料中心。 您也可以在 ExpressRoute 電路中斷的情況下，將此 VPN 設定為容錯移轉線路。
     5. Azure 自動化將需要其他[網路設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)，才能將 DSC 套用至裝載的 VM。
 2. 修改網路安全性群組。 封鎖網路安全性群組中的所有公用**和**直接內部部署流量。 唯一的輸入流量應該會通過公司 IT 訂用帳戶中的 VNet 對等。
     1. 在先前的反復專案中，已建立網路安全性群組來封鎖所有公用流量，並允許清單所有的內部流量。 現在，我們想要將此網路安全性群組轉成一個位。

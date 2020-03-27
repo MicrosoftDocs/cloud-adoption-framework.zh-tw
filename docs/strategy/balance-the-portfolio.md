@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508350"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353476"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ ms.locfileid: "79508350"
 **次要重構：** 有些應用程式可以使用資料或應用層級的次要重構來現代化。 若要執行此工作，小組成員必須將資料部署至雲端式資料平台，或對應用程式的設定進行些許變更。 這可能需要對資料或應用程式開發主題專家提供有限程度的支援。 不過，此工作類似於 IT 實作者在部署第三方應用程式時所進行的工作。 此工作非常適合由雲端移轉小組或雲端策略小組來進行。 雖然此工作不像重新裝載移轉那麼快速，但執行時間會比重構工作還短。
 
 在遷移期間，應該以上述三種方式分割工作，並在適當的反復專案中由適當的小組執行。 雖然您應該 多樣化組合，但也請確定工作保持非常專注並加以隔離。
+
+## <a name="next-steps"></a>後續步驟
+
+瞭解[全球市場決策](./global-markets.md)會如何影響您的轉型旅程。
+
+> [!div class="nextstepaction"]
+> [瞭解全球市場](./global-markets.md)

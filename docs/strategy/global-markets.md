@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337825"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353485"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ ms.locfileid: "78337825"
 
 ## <a name="next-steps"></a>後續步驟
 
-一旦做出全球市場決策並傳達，小組就準備好開始針對這些計量[建立技術標準](../digital-estate/index.md)。
-結果會是[轉換待處理專案或遷移待](..//migrate/migration-considerations/prerequisites/technical-complexity.md)處理專案。
+瞭解雲端採用旅程[策略階段期間所需的技能](./suggested-skills.md)。
 
 > [!div class="nextstepaction"]
-> [評估數位資產](../digital-estate/index.md)
+> [與策略相關的技能](./suggested-skills.md)

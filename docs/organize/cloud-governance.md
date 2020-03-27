@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093897"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355009"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -90,7 +90,7 @@ ms.locfileid: "79093897"
 
 雲端保護者開始使用更先進的治理方法來加速平臺部署，並協助小組自助其環境需求，讓他們可以更快速地移動。 這些更先進的函式的範例可在治理 MVP 的累加改進中看到，例如[安全性基準的改進](../govern/guides/complex/security-baseline-improvement.md)。
 
-**雲端加速器：** 雲端保護者和雲端保管人會自然地收集腳本和自動化，以加速部署環境、平臺，甚至是各種應用程式的元件。 除了集中式治理責任之外，策劃和共用這些腳本會針對這些架構設計人員進行高度的尊重。
+**雲端加速器：** 雲端守護者和雲端保管人會自然地收集腳本和自動化程式，以加速部署環境、平臺，甚至是各種應用程式的元件。 除了集中式治理責任之外，策劃和共用這些腳本會針對這些架構設計人員進行高度的尊重。
 
 公開共用其策劃腳本的治理專業人員，有助於更快速地傳遞技術專案，並將控管融入工作負載的架構中。 此工作負載會影響和支援良好的設計模式，將雲端加速器提升至更高等級的治理專家。
 

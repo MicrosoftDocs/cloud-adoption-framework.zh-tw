@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312680"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354527"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312680"
 
 成本控制 (如治理和其他管理建構) 取決於妥善管理的環境。 在所有資產的分類和組織中建立這類環境 (尤其是一個複雜的環境) 需要一致的進程。
 
-資產 (也稱為資源) 包括所有虛擬機器、資料來源，以及部署至雲端的應用程式。 Azure 提供數種機制來分類和組織資產。 [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)的詳細資料選項，可讓您根據多個準則來組織資源，以建立妥善管理的環境。 本文著重於 Azure 基本概念的應用，以提供雲端成本可見度。
+資產 (也稱為資源) 包括所有虛擬機器、資料來源，以及部署至雲端的應用程式。 Azure 提供數種機制來分類和組織資產。 [組織和管理您的 Azure](../azure-best-practices/organize-subscriptions.md)訂用帳戶詳細資料選項，以根據多個準則來組織資源，以建立妥善管理的環境。 本文著重於 Azure 基本概念的應用，以提供雲端成本可見度。
 
 ### <a name="classification"></a>分類
 
@@ -58,8 +58,9 @@ ms.locfileid: "79312680"
 
 本文的其餘部分假設您使用上圖中的最佳做法方法。 不過，下列文章可協助您將此方法套用至最適合貴公司的資源組織：
 
-- [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)
-- [部署治理 MVP 以治理妥善管理的環境標準](../../govern/guides/complex/index.md)
+- [使用多個訂用帳戶調整您的 Azure 環境](../azure-best-practices/scale-subscriptions.md)
+- [組織和管理您的 Azure](../azure-best-practices/organize-subscriptions.md)訂用帳戶）
+- [部署治理 MVP 以管理妥善管理的環境標準](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>提供正確的成本存取層級
 

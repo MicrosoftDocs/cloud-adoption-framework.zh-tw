@@ -8,13 +8,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8f94e2b559f2f0e373c4ae1c2f05c9b90fa57fb
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 17450c59ff257e78a8f5603638eca35fe72e3abd
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226551"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356563"
 ---
+<!-- cSpell:ignore asabbour sabbour kured -->
+
 # <a name="cluster-and-application-security"></a>叢集和應用程式安全性
 
 熟悉 Kubernetes security essentials，並回顧叢集和應用程式安全性指引的安全設定。

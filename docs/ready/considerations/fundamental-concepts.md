@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092568"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353646"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -29,7 +29,7 @@ ms.locfileid: "79092568"
 - **Azure Active Directory （Azure AD）：** Microsoft 雲端式身分識別和存取管理服務。 Azure AD 可允許您的員工登入和存取資源。
 - **Azure AD 租使用者：** Azure AD 的專用且受信任的實例。 當您的組織初次註冊 Microsoft 雲端服務訂用帳戶 (例如 Microsoft Azure、Microsoft Intune 或 Office 365) 時，系統就會自動建立 Azure AD 租用戶。 一個 Azure 租用戶代表一個組織。
 - **Azure AD 目錄：** 每個 Azure AD 租使用者都有單一、專用且受信任的目錄。 此目錄包含租用戶的使用者、群組和應用程式。 此目錄可用來執行身分識別和存取租用戶資源的管理功能。 目錄可以與多個訂用帳戶相關聯，但每個訂用帳戶僅能與一個目錄相關聯。
-- **資源群組：** 您用來將訂用帳戶中的相關資源分組的邏輯容器。 每個資源只能存在於一個資源群組中。 資源群組允許在訂用帳戶內進行更細微的分組。 常用來代表在訂用帳戶內支援工作負載、應用程式或特定功能所需的資產集合。
+- **資源群組：** 您用來將訂用帳戶中的相關資源分組的邏輯容器。 每個資源只能存在於一個資源群組中。 資源群組允許在訂用帳戶內進行更細微的分組，通常用來代表在訂用帳戶內支援工作負載、應用程式或特定功能所需的資產集合。
 - **管理群組：** 您用於一個或多個訂用帳戶的邏輯容器。 您可以定義管理群組、訂用帳戶、資源群組和資源的階層，透過繼承來有效率地管理存取、原則和合規性。
 - **區域：** 在延遲定義的周邊內部署的一組 Azure 資料中心。 資料中心會透過專用且低延遲的區域網路進行連線。 大部分 Azure 資源都是在特定的 Azure 區域中執行。
 
@@ -94,7 +94,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 
 ## <a name="next-steps"></a>後續步驟
 
-現在您已了解基本的 Azure 概念，您可以接著了解[如何使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)。
+現在您已了解基本的 Azure 概念，您可以接著了解[如何使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)。
 
 > [!div class="nextstepaction"]
-> [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)
+> [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)

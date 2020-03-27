@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171356"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356912"
 ---
+<!-- cSpell:ignore MTBF MTTR -->
+
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>資源一致性的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為這與資源一致性相關。 定義計量和指標可協助您建立商務案例，藉此讓資源一一致性專業領域變得更完善。

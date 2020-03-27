@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508112"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356990"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
 身分識別基準專業領域著重在建立原則的方式，無論主控應用程式或工作負載的雲端提供者是誰，都確保使用者身分識別的一致性和持續性。 在五個雲端治理的專業領域中，身分識別基準包括關於[混合式身分識別策略](../../decision-guides/identity/index.md)的決策、身分識別存放庫的評估和延伸、實作單一登入 (相同登入)、稽核及監視未獲授權使用或惡意動作項目。 在某些情況下，也可能牽涉到現代化、合併或整合多個身分識別提供者的決策。

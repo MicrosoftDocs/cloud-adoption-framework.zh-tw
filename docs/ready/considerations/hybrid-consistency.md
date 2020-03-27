@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093032"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353661"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>建立混合式雲端一致性
 
 本文會引導您完成建立混合式雲端一致性的高階方法。
@@ -51,7 +53,7 @@ Azure 和 Azure Stack 為客戶面向和內部的企業營運應用程式開啟�
 
 - **邊緣和中斷連線的解決方案。** 若要解決延遲和連線需求，客戶可以在 Azure Stack 本機處理資料，然後在 Azure 中匯總以進一步分析。 他們可以在兩者之間使用通用應用程式邏輯。 許多客戶對此 edge 案例感興趣，涵蓋不同的內容，例如工廠樓層、巡航運送和上個軸。
 - **符合各種法規的雲端應用程式。** 客戶可以在 Azure 中開發及部署應用程式，並具備在 Azure Stack 上部署內部部署的完整彈性，以符合法規或原則需求。 不需要變更程式碼。 應用程式範例包括全域稽核、財務報告、外匯交易、線上遊戲和費用報告。 客戶有時會根據商務和技術需求，尋找將相同應用程式的不同實例部署至 Azure 或 Azure Stack。 Azure 可滿足大部分的需求，而 Azure Stack 可視需要補充部署方法。
-- **內部部署的雲端應用程式模型。** 客戶可以使用 Azure Web 服務、容器、無伺服器和微服務架構來更新及延伸現有應用程式，或建置新的應用程式。 您可以跨雲端中的 Azure 和內部部署的 Azure Stack，使用一致的 DevOps 程序。 即使是核心任務關鍵性應用程式，應用程式現代化也會越來越感興趣。
+- **內部部署的雲端應用程式模型。** 客戶可以使用 Azure web 服務、容器、微服務和無伺服器架構來更新和擴充現有的應用程式，或建立新的應用程式。 您可以跨雲端中的 Azure 和內部部署的 Azure Stack，使用一致的 DevOps 程序。 即使是核心任務關鍵性應用程式，應用程式現代化也會越來越感興趣。
 
 Azure Stack 透過兩種部署選項來提供現代化：
 
@@ -61,6 +63,8 @@ Azure Stack 透過兩種部署選項來提供現代化：
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Azure Stack 一部雲端生態系統
 
 您可以使用完整的 Azure 生態系統來加速 Azure Stack 的計畫：
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure 可確保 Azure 認證的大部分應用程式和服務都能在 Azure Stack 上執行。 有數個 Isv 將其解決方案延伸到 Azure Stack。 這些 Isv 包含 Bitnami、Docker、Kemp 技術、Pivotal Cloud Foundry、Red Hat Enterprise Linux 和 SUSE Linux。
 - 您可以選擇讓 Azure Stack 提供這些解決方案，並以完全受控服務的方式運作。 有數個合作夥伴會在 Azure 中提供受控服務供應專案，而且很快就會 Azure Stack。 這些合作夥伴包括 Tieto、Yourhosting、Revera、Pulsant 和 NTT。 這些合作夥伴透過雲端解決方案提供者（CSP）計畫，為 Azure 提供受控服務。 他們正在擴充其供應專案，以包含混合式解決方案。

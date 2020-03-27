@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091287"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356315"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>雲端監視指南：警示
 
 多年來，IT 組織會努力對抗企業中部署的監視工具所建立的警示疲勞。 許多系統會產生大量的警示，通常會被視為無意義，而其他警示則是相關的，但可能被忽略或略過。 因此，IT 和開發人員作業會努力符合內部或外部客戶所承諾的服務等級品質。 若要確保可靠性，必須瞭解基礎結構和應用程式的狀態。 若要將服務降低和中斷降到最低，或減少或減少事件的影響，您需要快速找出原因。

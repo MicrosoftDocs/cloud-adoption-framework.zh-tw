@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311858"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355316"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>了解合作關係選項
 
 在移轉期間，雲端採用小組會實際地將工作負載移轉至雲端。 不同於在定義[數位資產](../../../digital-estate/index.md)或建置核心雲端基礎結構時的協作工作和問題解決工作，移轉更像是一系列重複執行的工作。 除了重複層面外，也可能有需要深入了解所選雲端提供者的測試和調整工作。 此程序的重複性質有時可由合作夥伴完美處理，從而降低對全職員工的負擔。 此外，當重複性程序遇到執行異常時，合作夥伴或許可以更好地配合深度的技術專業知識。
@@ -96,7 +98,7 @@ Microsoft 認證解決方案提供者專門根據全球客戶的解決方案，�
 從可以提供現成或自訂 Azure 解決方案的合作夥伴，以及可以部署和管理這些解決方案的合作夥伴取得協助：
 
 - **[尋找雲端解決方案合作夥伴](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
-- **[尋找受控服務合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure 受控服務合作夥伴 (MSP) 可藉由引導雲端旅程的所有層面來協助企業轉移至 Azure。 從諮詢、移轉和營運管理，雲端 MSP 會向客戶展示採用雲端所能帶來的所有好處。 其也可作為單一窗口來提供常見的支援、佈建和帳單體驗，而這些全都是透過彈性的隨用隨付 (PAYG) 業務模型來進行。
+- **[尋找受控服務合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure 受控服務合作夥伴 (MSP) 可藉由引導雲端旅程的所有層面來協助企業轉移至 Azure。 從諮詢、移轉和營運管理，雲端 MSP 會向客戶展示採用雲端所能帶來的所有好處。 它們也可做為一站的共同支援、布建和計費體驗，全都具有彈性的隨用隨付商務模型。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342043"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354857"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
 
@@ -40,7 +40,7 @@ ms.locfileid: "78342043"
 
 ## <a name="next-steps"></a>後續步驟
 
-在小組熟悉策略性的輸入和數位資產合理化的輸入之後，就可以開始[工作負載優先順序](./workloads.md)的下一個步驟。
+將[雲端採用方案範本部署](./template.md)至 Azure DevOps。
 
 > [!div class="nextstepaction"]
-> [排定工作負載的優先順序並加以定義](./workloads.md)
+> [將範本部署至 Azure DevOps](./template.md)

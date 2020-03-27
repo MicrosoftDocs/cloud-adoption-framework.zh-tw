@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f34938fc6690949d017ee538c444a4ccef389aef
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707708"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357025"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
@@ -37,7 +37,7 @@ IT 和業務領導階層對於 IT、應用程式開發和 BI 小組的早期實�
 
 - 應用程式開發小組已實作為 CI/CD 管線，以改良的使用者體驗來部署雲端原生應用程式。 該應用程式尚未與受保護的資料互動，因此它不是生產環境就緒。
 - IT 內的商業智慧小組會主動從物流、庫存和協力廠商來源 curates 雲端中的資料。 此資料將用於衍生可能形成業務流程的新預測。 但是，在將客戶和財務資料整合到資料平台之前，那些預測和見解都是不可行的。
-- IT 小組正在進行 CIO 和 CFO 淘汰 DR 資料中心的計劃。 DR 資料中心內的 2,000 個資產中，有 1,000 多個資產已經遭到淘汰或移轉。
+- IT 小組正在進行 CIO 和 CFO 計畫，以淘汰 DR 資料中心。 DR 資料中心內的 2,000 個資產中，有 1,000 多個資產已經遭到淘汰或移轉。
 - 關於個人資料和財務資料的鬆散定義原則已經過現代化。 不過，新的公司原則取決於相關安全性和治理原則的實施。 小組仍然停滯不前。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態

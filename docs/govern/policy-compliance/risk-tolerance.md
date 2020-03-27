@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709493"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356921"
 ---
 # <a name="evaluate-risk-tolerance"></a>評估風險承受度
 
 每個商務決策都會產生新的風險。 對任何事務進行投資，都有機會造成損失。 新的產品或服務會產生市場失敗的風險。 對目前產品或服務做出變更，可能會減少市場佔有率。 雲端轉換並不提供每日商業風險的神奇解決方案。 相反地，連線的解決方案 (雲端或內部部署) 都會產生新的風險。 將資產部署到任何連線至網路的設施，也會將安全性弱點暴露到更廣泛的全球社群，進而提升潛在的威脅設定檔。 幸運的是，雲端提供者知道有哪些變更、增加和增加風險。 他們會投入大量投資，來代表客戶減少和管理這些風險。
 
-本文的重點並不在於雲端風險上。 相反地，它會討論與各種形式的雲端轉換相關的商務風險。 稍後在本文中，討論的重點將會轉換成了解商務風險承受度的方式。
+本文的重點並不在於雲端風險上。 相反地，它會討論與各種形式的雲端轉換相關的商務風險。 本文稍後會將焦點轉移到討論瞭解業務容錯風險的方式。
 
 <!-- markdownlint-disable MD026 -->
 

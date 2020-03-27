@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a1201c3e1bf05f7fc704b1a12744d8f031607169
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170761"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356827"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>在 Azure 中預測和影響資料的工具
 
@@ -34,10 +34,10 @@ ms.locfileid: "78170761"
 
 在 Azure 中，下列工具通常用來加速每個先前階段的數位家發明：
 
-- Azure Machine Learning
-- Azure HDInsight
-- Hadoop R ScaleR
-- Azure SQL 資料倉儲
+- [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
+- [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
+- [Hadoop R ScaleR](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
+- [Azure Synapse 分析](https://docs.microsoft.com/azure/synapse-analytics)
 
 每個工具對於每個預測和影響階段的協助都會反映在此頁面左側目錄中的指引。
 

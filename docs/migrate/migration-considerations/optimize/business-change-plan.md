@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1c842c672cc091deaad4e0b7f4ffc89231895c7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: fd8db03a28c5372ad5ca796607a079ffdcbe4f92
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312028"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355274"
 ---
 # <a name="business-change-plan"></a>業務變更方案
 
@@ -65,5 +65,7 @@ ms.locfileid: "79312028"
 > [在移轉期間進行商務測試 (UAT) 的指引](./business-test.md)
 
 ## <a name="references"></a>參考
+
+<!-- cSpell:ignore Eason -->
 
 - Eason，K. （1988）_資訊技術和組織變革_，紐約： Taylor 和 Francis。

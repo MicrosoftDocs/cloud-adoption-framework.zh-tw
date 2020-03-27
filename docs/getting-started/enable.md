@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5f611494bb395a06a763a500d7b94377177d3c71
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 2a6eab51a6254a5f7a2a7cf811b0a3857fd4d852
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140264"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357247"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -134,7 +134,7 @@ ms.locfileid: "79140264"
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="https://azure.microsoft.com/pricing/calculator/" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="https://azure.microsoft.com/pricing/calculator" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
@@ -164,3 +164,5 @@ ms.locfileid: "79140264"
 > [移轉](./migrate.md)
 >
 > [創新](./innovate.md)
+
+<!-- test:ignoreNextStep -->

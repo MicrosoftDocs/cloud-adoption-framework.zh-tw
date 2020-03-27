@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095305"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353680"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Microsoft Cloud 採用架構的新功能
 
@@ -39,7 +39,7 @@ ms.locfileid: "79095305"
 - [第一個登陸區域](../ready/landing-zone/first-landing-zone.md)：擴展各種登陸區域的比較
 - [遷移登陸區域](../ready/landing-zone/migrate-landing-zone.md)：移動先前的登陸區域藍圖一文，以區隔 CAF 藍圖的定義與第一個登陸區域的選擇，以允許更多登陸區域選項。
 - [Terraform 登陸區域](../ready/landing-zone/terraform-landing-zone.md)文章：從準備方法的「擴充範圍」一節移至準備方法的新「登陸區域」一節，將 Terraform 視為登陸區域交談中的第一個類別公民。
-- 在目錄中，將基本登陸區域考慮群組在「基本登陸區域考慮」底下。
+- 在「基本登陸區域考慮」下的目錄中，將基本登陸區域考慮群組在一起。
 - 將安全性最佳做法從遷移方法移至新登陸區域區段呼叫「改善登陸區域安全性（敏感性資料）」，以在生命週期中將讀者公開到本指引。
 
 ### <a name="refinements-to-the-azure-migration-guide"></a>改善 Azure 遷移指南

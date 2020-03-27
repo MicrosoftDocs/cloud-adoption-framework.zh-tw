@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312524"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356786"
 ---
 # <a name="build-with-customer-empathy"></a>以客戶理解的方式打造
 
@@ -102,6 +102,8 @@ MVP 解決方案通常是由簡單的 web 應用程式或資料解決方案所�
 有許多法規、合規性和產業需求，可能需要替代方法。 如果開發解決方案的公開版本建立了專利時間、智慧財產權保護、客戶資料流程失或違反既定需求的風險，則此方法可能不適用。 如果發現這類風險，請先洽詢法律顧問，再採用發行管理的任何引導式方法。
 
 ## <a name="references"></a>參考
+
+<!-- cSpell:ignore Ries -->
 
 本文中的一些概念是以「[*精簡啟動*](http://theleanstartup.com/book)」（Eric Ries，Crown Business，2011）中所討論的主題為基礎。
 

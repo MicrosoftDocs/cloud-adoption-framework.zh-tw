@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341771"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356773"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -105,7 +105,7 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 若要準備交付創新解決方案所需的許多反復專案，請務必預先考慮。 例如，優先列出無伺服器選項，儘早在程式中將營運負擔降至最低。 在 Azure 中，無伺服器應用程式選項可以包含[Azure App Service](https://docs.microsoft.com/azure/app-service/overview)或[容器](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)。
 
-Azure 會同時提供無伺服器交易資料選項，以減少額外負荷。 [[資料庫產品] 清單](/azure/)提供裝載資料的選項，而不需要完整的資料平臺。
+Azure 會同時提供無伺服器交易資料選項，以減少額外負荷。 [Azure 產品目錄](https://docs.microsoft.com/azure)提供的資料庫選項可裝載資料，而不需要完整的資料平臺。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171407"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356836"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
 將應用程式從大型主機環境移轉至 Azure 時，大部分的小組都會採行務實做法：適時適地盡可能重複使用，然後再進行分階段部署，以重寫或取代應用程式。
@@ -30,7 +32,7 @@ ms.locfileid: "78171407"
 
 - **取代：** 這種方法會將大型主機功能取代為雲端中的對等功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，目前也已有許多產業特定應用程式，可用來解決先前由自訂大型主機解決方案負責解決的問題。
 
-建議您先規劃最初要移轉的工作負載，然後再確認移動相關聯的應用程式、舊版程式碼基底和資料庫的的需求。
+您應該考慮從規劃要一開始遷移的工作負載開始，然後判斷移動相關聯的應用程式、舊版程式碼基底和資料庫的需求。
 
 ## <a name="mainframe-emulation-in-azure"></a>Azure 中的大型主機模擬
 

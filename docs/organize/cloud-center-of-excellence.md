@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092654"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355045"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>雲端卓越中心
 
 商務和技術靈活性是大多數 IT 組織的核心目標。 卓越的雲端中心（CCoE）是在速度和穩定性之間建立平衡的功能。
@@ -59,7 +61,7 @@ CCoE 是由四個高需求小組所組成的函式。 請務必允許進行有�
 
 ## <a name="solutions-and-controls"></a>解決方案和控制項
 
-CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件約束、風險和保護。 CCoE 的集體成果應該將該瞭解轉變為雲端原生（或混合式）解決方案或控制項，以實現所需的自助商業成果。 建立解決方案時，會以控制項或自動化形式與各種小組共用，以作為各種工作的護欄。 這些護欄有助於路由各種小組的免費流動活動，同時將責任委派給參與者，以進行各種不同的遷移或創新工作。
+CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件約束、風險和保護。 CCoE 的集體成果應該將該瞭解轉變為雲端原生（或混合式）解決方案或控制項，以實現所需的自助商業成果。 建立解決方案時，會以控制項或自動化流程的形式與各種小組共用，以作為各種工作的護欄。 這些護欄有助於路由各種小組的免費流動活動，同時將責任委派給參與者，以進行各種不同的遷移或創新工作。
 
 此轉換的範例：
 

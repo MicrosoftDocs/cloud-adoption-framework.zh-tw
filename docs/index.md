@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091980"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356851"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>適用於 Azure 的 Microsoft 雲端採用架構
 
@@ -182,6 +182,8 @@ ms.locfileid: "79091980"
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>如何使用適用於 Azure 的 Microsoft 雲端採用架構
 
 如果您的企業不熟悉 Azure，請從[開始使用雲端採用架構](./getting-started/migrate.md)開始閱讀。 本概觀會針對貴企業的數位轉型提供最佳做法，逐步說明流程中的每個步驟。
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [開始使用](./getting-started/migrate.md)

@@ -7,13 +7,15 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 124f8943b7014f7f9fffeb39d464f3ad28e85816
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341703"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356417"
 ---
+<!-- cSpell:ignore HKEY kusto -->
+
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>啟用重大變更的追蹤和警示
 
 Azure 變更追蹤和清查提供混合式環境設定狀態的警示，以及該環境的變更。 它可以報告可能影響已部署伺服器的重要檔案、服務、軟體和登錄變更。

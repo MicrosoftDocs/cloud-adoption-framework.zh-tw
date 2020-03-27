@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092486"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353546"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ ms.locfileid: "79092486"
 
 ## <a name="next-steps"></a>後續步驟
 
-開始第一個雲端採用專案之後，雲端策略小組就可以將其注意力轉向長期的[雲端採用計畫](../plan/index.md)。
+瞭解[平衡競爭優先順序](./balance-competing-priorities.md)的策略。
 
 > [!div class="nextstepaction"]
-> [打造您的雲端採用方案](../plan/index.md)
+> [平衡競爭優先順序](./balance-competing-priorities.md)

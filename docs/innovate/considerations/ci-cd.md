@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223491"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356753"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>實現採用
 
 創新的最終測試是客戶對您家發明的反應。 假設是否證明真了？ 客戶是否使用解決方案？ 它是否會調整以符合所需百分比使用者的需求？ 最重要的是，他們是否會繼續回頭？ 在最基本的可行產品（MVP）解決方案部署完成之前，都不會詢問這些問題。 在本文中，我們將著重于採用的專業領域。
@@ -43,7 +45,7 @@ ms.locfileid: "78223491"
 
 如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。
 
-當您要調整創新時，沒有比解決方案的共用程式碼基底更有價值的工具。 可惜的是，沒有可靠的方法可預測哪一個反復專案，或哪些 MVP 會產生獲勝的組合。 這就是為什麼要建立共用程式碼基底或儲存機制的原因不太早。 這是一項不應延遲的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)。 當小組逐一查看各種 MVP 解決方案時，共用存放庫可讓您輕鬆共同作業和加速開發。 當解決方案的變更向下拖曳學習計量時，版本控制可讓您回復為較早且更有效率的方案版本。
+當您調整創新時，沒有比解決方案的共用程式碼基底更有價值的工具。 可惜的是，沒有可靠的方法可預測哪一個反復專案，或哪些 MVP 會產生獲勝的組合。 這就是為什麼建立共用程式碼基底或儲存機制的原因不太早。 這是一項不應延遲的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)。 當小組逐一查看各種 MVP 解決方案時，共用存放庫可讓您輕鬆共同作業和加速開發。 當解決方案的變更向下拖曳學習計量時，版本控制可讓您回復為較早且更有效率的方案版本。
 
 管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您只需幾個步驟就能建立共用程式碼儲存機制。 此外，Azure DevOps 的[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)功能可以用來建立[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)或[Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)存放庫。
 

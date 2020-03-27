@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312147"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354121"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>針對遷移至 Azure 的工作負載來設定網路的最佳做法
 
 在規劃和設計移轉時，除了移轉作業本身外，其中一個最重要的步驟便是設計和實作 Azure 網路。 本文說明在移轉至 Azure 中的 IaaS 和 PaaS 實作時，該如何設定網路的最佳做法。
@@ -40,7 +42,7 @@ Azure 會提供虛擬網路 (VNet)：
 
 在移轉過程中建立 VNet 時，請務必要規劃 VNet IP 位址空間。
 
-- 對每個 VNet 所指派的位址空間不應大於 /16 的 CIDR 範圍。 Vnet 允許使用 65536 IP 位址，並指派較小的前置詞（例如具有131072位址的/15），會導致多餘的 IP 位址在其他位置變成 unusuable。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
+- 對每個 VNet 所指派的位址空間不應大於 /16 的 CIDR 範圍。 Vnet 允許使用 65536 IP 位址，並指派較小的前置詞（例如具有131072位址的/15），會導致多餘的 IP 位址無法在別處變成無法使用。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
 - VNet 位址空間不得與內部部署網路範圍重疊。
 - 請勿使用網路位址轉譯 (NAT)。
 - 位址重疊可能會導致網路無法連線且路由無法正常運作。 如果網路重疊，您必須重新設計網路，或使用網路位址轉譯 (NAT)。
@@ -177,7 +179,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 建立 VPN 閘道，指定閘道類型 (VPN) 以及閘道是原則式還是路由式的。 以路由為基礎的 VPN 會被視為更有能力和未來的證明。
 - 建立內部部署的區域網路閘道，並設定內部部署 VPN 裝置。
 - 在 VNet 閘道與內部部署裝置之間建立容錯移轉站對站 VPN 連線。 使用路由式 VPN 可讓您對 Azure 建立「主動-被動」或「主動-主動」連線。 路由式也同時支援站對站 (從任何電腦) 和點對站 (從單一電腦) 連線。
-- 指定您想要使用的閘道 SKU。 這取決於您的工作負載需求、輸送量、功能和 SLA。
+- 指定您想要使用的閘道 SKU。 這將取決於您的工作負載需求、輸送量、功能和 Sla。
 - 邊界閘道協定 (BGP) 是選擇性功能，可與 Azure ExpressRoute 和路由式 VPN 閘道搭配使用，以將內部部署 BGP 路由傳播至 VNet。
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)

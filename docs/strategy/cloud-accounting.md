@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092869"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354075"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>什麼是雲端帳戶處理？
@@ -58,7 +60,7 @@ ms.locfileid: "79092869"
 
 會計模型的選擇在系統設計中相當重要。 會計模型的選擇可能會影響訂用帳戶原則、命名標準、標記標準，以及原則和藍圖的設計。
 
-在您與企業合作以做出雲端帳戶處理模型和[全球市場](./global-markets.md)的決策之後，您就有足夠的資訊可以[開發 Azure foundation](../ready/index.md)。
+在您與企業合作以決定雲端帳戶處理模型和[全球市場](./global-markets.md)之後，您會有足夠的資訊可[選擇您的第一個雲端採用專案](./first-adoption-project.md)。
 
 > [!div class="nextstepaction"]
-> [開發 Azure 基礎](../ready/index.md)
+> [選擇您的第一個雲端採用專案](./first-adoption-project.md)

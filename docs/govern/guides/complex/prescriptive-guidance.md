@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312381"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357106"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
@@ -50,7 +50,7 @@ ms.locfileid: "79312381"
 
 ### <a name="subscription-design"></a>訂用帳戶設計
 
-決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇 **[混合](../../../decision-guides/subscriptions/index.md#mixed-patterns)** 的訂用帳戶設計模式。
+決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇 **[混合的訂](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** 用帳戶原則。
 
 - 出現有關 Azure 資源的新要求時，應針對每個營運地理位置中的每個主要業務單位建立「部門」。 在每個部門內，應為每個應用程式原型建立「訂用帳戶」。
 - 應用程式原型是以類似需求將應用程式分組的方式。 常見的範例包括：具有受保護資料的應用程式、受管制的應用程式（例如 HIPAA 或 FedRAMP）、低風險應用程式、具有內部部署相依性的應用程式、SAP 或 Azure 中的其他大型主機應用程式，或擴充的應用程式內部部署 SAP 或大型主機應用程式。 每個組織在資料分類和支援業務的應用程式類型上都有獨特需求。 數位資產的相依性對應可協助定義組織中的應用程式原型。

@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091922"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355633"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>對 Azure 進行大規模移轉
 
 本文將示範虛構公司 Contoso 如何大規模執行移轉至 Azure 的工作。 其正在思考如何規劃和執行超過 3,000 個工作負載、8,000 個資料庫和超過 10,000 個 VM 的移轉。
@@ -288,7 +290,7 @@ DMS 不是唯一的 Microsoft 資料庫移轉工具。 取得[工具和服務的
 
     ![DMS 規模調整](./media/contoso-migration-scale/dms.png)
 
-- Contoso 的另一個規模調整策略，是在資料移轉期間暫時將 Azure SQL 或 MySQL 資料庫目標執行個體相應增加到進階層 SKU。 在使用較低層級的 SKU 時，這麼做可以降低資料庫節流對資料轉送活動的影響。
+- Contoso 的另一個規模調整策略，是在資料移轉期間暫時將 Azure SQL 或 MySQL 資料庫目標執行個體擴大到進階層 SKU。 在使用較低層級的 SKU 時，這麼做可以降低資料庫節流對資料轉送活動的影響。
 
 ##### <a name="use-other-tools"></a>使用其他工具
 
@@ -306,7 +308,7 @@ Contoso 將資源移至 Azure 後，必須加以簡化以提高效能，同時�
 為了充分利用其雲端投資，Contoso 會利用免費的 Azure 成本管理工具。
 
 - 此授權解決方案由 Microsoft 的子公司 Cloudyn 所建置，可讓 Contoso 透明且準確地管理雲端支出。 它會提供工具來監視、配置及去除雲端成本。
-- Azure 成本管理會提供簡單的儀表板報告，以協助進行成本配置、回報和退款。
+- Azure 成本管理提供簡單的儀表板報告，以協助進行成本配置、回報和退款。
 - 成本管理可以識別未充分使用的資源，以便 Contoso 管理及調整，藉此最佳化雲端支出。
 - [深入了解](https://docs.microsoft.com/azure/cost-management/overview) Azure 成本管理。
 

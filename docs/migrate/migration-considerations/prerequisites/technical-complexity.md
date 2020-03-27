@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311824"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355154"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ INVEST 是許多敏捷式方法中常見的縮略字，用於撰寫使用者劇�
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>遷移待處理專案：對齊業務優先順序和時間
 
-移轉待辦項目可讓您追蹤可遷移工作負載的最上層組合。 在移轉之前，我們鼓勵雲端策略小組和雲端採用小組進行目前[數位資產](../../../digital-estate/index.md)的審查，並同意要遷移的工作負載優先順序清單。 此清單構成初始移轉待辦項目的基礎。
+「遷移待辦專案」可讓您追蹤可遷移的最上層工作負載組合。 在移轉之前，我們鼓勵雲端策略小組和雲端採用小組進行目前[數位資產](../../../digital-estate/index.md)的審查，並同意要遷移的工作負載優先順序清單。 此清單構成初始移轉待辦項目的基礎。
 
 一開始，移轉待辦項目的工作負載未必符合上一節中所述的 INVEST 準則。 然而，它們可當作初始清查中資產的邏輯分組，作為未來工作的預留位置。 這些預留位置在技術上可能不正確，但可當作與企業協調的基礎。
 

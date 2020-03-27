@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508401"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354168"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -73,7 +73,7 @@ ms.locfileid: "79508401"
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。
 - 每個類型中都有一些 VM 系列。
-- 此外，當您選取某個系列中的 VM 時，您只能在該系列中相應增加或相應減少 VM。 例如，DSv2\_2 可以相應增加到 DSv2\_4，但它無法變更為不同的系列，例如 Fsv2\_2。
+- 此外，當您選取某個系列中的 VM 時，您只能在該系列中相應增加或相應減少 VM。 例如，DSv2\_2 可以擴大到 DSv2\_4，但它無法變更為不同的系列，例如 Fsv2\_2。
 
 **深入了解：**
 
@@ -243,7 +243,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 - [取得 Azure 成本管理 概觀](https://docs.microsoft.com/azure/cost-management/overview)。
 - [了解如何](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)使用 Azure 成本管理來最佳化您的雲端投資。
 - [了解如何](https://docs.microsoft.com/azure/cost-management/use-reports)使用 Azure 成本管理報告。
-- [取得](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)從建議最佳化成本的指南。
+- [取得](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)從建議最佳化成本的指南。
 - [檢閱](https://docs.microsoft.com/rest/api/consumption/budgets) Azure 使用量 API。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>最佳做法：監視資源使用率
@@ -260,7 +260,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 - 取得 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview) 與 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 概觀。
 - [取得](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor 成本建議。
-- [了解如何[從建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)，以及[防止非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)。
+- [了解如何[從建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)，以及[防止非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)。
 - 了解 [Azure Resource Optimization (ARO) Toolkit](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>最佳做法：執行資源群組預算
@@ -273,7 +273,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 **深入了解：**
 
 - [了解如何](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)使用 Azure Budgets 來管理成本。
-- [依照教學課程](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json)建立及管理 Azure 預算。
+- [依照教學課程](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json)建立及管理 Azure 預算。
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>最佳做法：優化 Azure 監視器保留
 

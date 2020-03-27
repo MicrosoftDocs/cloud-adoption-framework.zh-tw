@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311620"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356280"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Contoso 雲端小組已擬定好移轉至 Azure DevOps Services 的目標：
 - 他們必須移轉去年的工作項目資料和歷程記錄。
 - 他們不想設定新的使用者名稱和密碼。 目前的所有系統指派都必須保留。
 - 他們想要從 Team Foundation 版本控制 (TFVC) 移轉至 Git，以進行原始檔控制。
-- 轉換至 Git 將會是「tip 遷移」，只會匯入最新版本的原始程式碼。 此移轉將在所有工作都因程式碼基底替換而停止的停機期間執行。 他們了解，在移動之後，將只有目前的主要分支歷程記錄可供使用。
+- 轉換至 Git 將會是「tip 遷移」，只會匯入最新版本的原始程式碼。 當程式碼基底轉移後，所有工作都會停止時，就會在停機期間發生。 他們了解，在移動之後，將只有目前的主要分支歷程記錄可供使用。
 - 他們想知道會有何變更，並且想在進行完整的移轉之前先進行測試。 他們想在移轉至 Azure DevOps Services 之後仍保留對 TFS 的存取。
 - 他們有多個集合，但是想先從只有幾個專案的集合開始嘗試，以進一步了解程序。
 - 他們了解 TFS 集合具有與 Azure DevOps Services 組織間的一對一關聯性，因此會有多個 URL。 不過，這與他們目前程式碼基底和專案分離的模型相符。

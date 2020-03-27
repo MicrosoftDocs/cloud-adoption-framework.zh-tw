@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 39373c0f2c4c7d96613fd10d5734a2826b6f1933
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 6cc61ff3b6dee171983ceef94c77d3aab715b2c7
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892059"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357161"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 �
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解使用適用于 Azure 的[Microsoft Cloud 採用架構來](https://docs.microsoft.com/azure/cloud-adoption-framework)進行雲端採用。
+深入瞭解使用適用于 Azure 的[Microsoft Cloud 採用架構來](../index.md)進行雲端採用。
 
 > [!div class="nextstepaction"]
-> [瞭解適用于 Azure 的 Microsoft Cloud 採用架構](https://docs.microsoft.com/azure/cloud-adoption-framework)
+> [瞭解適用于 Azure 的 Microsoft Cloud 採用架構](../index.md)

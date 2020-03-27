@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311603"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353752"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Azure Enrollment 的三個常見模式如下︰
 
   ![地理模式](../_images/reference/geographic.png)
 
-雖然這些模式中的每一個都有其作用，但愈來愈多人採用**業務單位**模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和營運小組已建立以**聯邦**、**州**和**地方**為模型化之**商務單元**模式的有效子集。 如需詳細資訊，請參閱[在企業內組織訂閱和資源群組](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions)。
+雖然這些模式中的每一個都有其作用，但愈來愈多人採用**業務單位**模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和營運小組已建立以**聯邦**、**州**和**地方**為模型化之**商務單元**模式的有效子集。 如需詳細資訊，請參閱[組織您的訂用帳戶和資源群組](../ready/azure-best-practices/organize-subscriptions.md)。
 
 ### <a name="azure-management-groups"></a>Azure 管理群組
 

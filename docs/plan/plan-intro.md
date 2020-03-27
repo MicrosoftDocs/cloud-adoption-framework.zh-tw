@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093546"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354867"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 
@@ -36,9 +36,9 @@ ms.locfileid: "79093546"
 
 1. **必要條件：** 在建立方案之前，請先確認所有先決條件步驟都已完成。
 2. **定義工作負載並設定其優先順序：** 設定前10個工作負載的優先順序，以建立初始採用待處理專案。
-3. **調整資產：** 識別支援優先順序工作負載所需的資產（建議或現有）。
-4. **審核合理化：** 請參閱合理化決策，以精簡採用路徑決策：遷移或創新。
-5. **定義反復專案和發行：** *反覆運算*是配置來執行工作的時間區塊。 *版本*是在觸發變更至生產進程之前要完成的工作定義。
+3. **將資產與工作負載對齊：** 識別支援優先順序工作負載所需的資產（建議或現有）。
+4. **回顧合理化決策：** 請參閱合理化決策，以精簡採用路徑決策：遷移或創新。
+5. **建立反復專案和發行計畫：** 反復*專案是配置*來執行工作的時間區塊。 *版本*是在觸發變更至生產進程之前要完成的工作定義。
 6. **估計時間軸：** 根據初始估計值，為發行規劃目的建立粗略的時程表。
 
 ## <a name="next-steps"></a>後續步驟

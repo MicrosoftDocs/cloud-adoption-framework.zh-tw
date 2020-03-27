@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094433"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357229"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -25,7 +25,7 @@ ms.locfileid: "79094433"
 此架構主要是針對雲端架構設計人員和雲端策略小組，負責雲端採用工作。 不過，此架構中的許多主題與企業和 IT 的其他角色相關。 雲端架構設計人員經常做為 facilitators，以參與每個相關的角色。 此「執行摘要」的設計目的是要在加速對話之前準備各種角色。
 
 > [!NOTE]
-> 本指導方針目前為公開預覽版。 在此預覽期間，會向客戶、合作夥伴和 Microsoft 團隊徹底測試術語、方法及指引。 因此，目錄和指引可能會在一段時間後稍微變更。
+> 本指導方針目前為公開預覽版。 在此預覽期間，會向客戶、合作夥伴和 Microsoft 團隊徹底測試術語、方法及指引。 因此，目錄和指導方針可能會在一段時間後稍微變更。
 
 ## <a name="motivations"></a>動機
 
@@ -148,3 +148,5 @@ ms.locfileid: "79094433"
 > [管理](../manage/index.md)
 >
 > [向上](../organize/index.md)
+
+<!-- test:ignoreNextStep -->

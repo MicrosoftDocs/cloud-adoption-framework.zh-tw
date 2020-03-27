@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311484"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356245"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>將 Linux 應用程式重構至使用 Azure App Service、流量管理員及適用於 MySQL 的 Azure 資料庫的多個區域
 
 本文說明虛構公司 Contoso 如何重構兩層式以 Linux 為基礎的 Apache MySQL PHP (LAMP) 應用程式，使用 Azure App Service 與 GitHub 的整合和適用於 MySQL 的 Azure 資料庫將其從內部部署遷移至 Azure。
@@ -72,7 +74,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標，以便決定最
 
 Contoso 會按照下列方式完成移轉程序：
 
-1. 在第一個步驟中，Contoso 管理員會設定 Azure 基礎結構，包括佈建 Azure App Service、設定流量管理員，以及佈建適用於 MySQL 的 Azure 資料庫執行個體。
+1. 在第一個步驟中，Contoso 管理員會設定 Azure 基礎結構，包括布建 Azure App Service、設定流量管理員，以及布建適用於 MySQL 的 Azure 資料庫實例。
 2. 準備好 Azure 之後，他們會使用 MySQL Workbench 來遷移資料庫。
 3. 在 Azure 中執行資料庫之後，他們會設定 GitHub 私人存放庫以便 Azure App Service 持續傳遞，並使用 osTicket 應用程式將它載入。
 4. 在 Azure 入口網站中，它們會將應用程式從 GitHub 載入至執行 Azure App Service 的 Docker 容器。
@@ -291,7 +293,7 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並設定連到適用�
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. 他們會設定 **osticket-eus2** 和 **osticket-cus** Web 應用程式，以允許自訂主機名稱。
+8. 他們會同時設定**osticket-eus2**和**osticket-cu** web 應用程式，以允許自訂主機名稱。
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 
