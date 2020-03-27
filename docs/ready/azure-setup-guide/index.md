@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 77d95d4d4be65bea8d37a722abe6f0459d43e43f
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
+ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024046"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80299046"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -49,7 +49,7 @@ ms.locfileid: "79024046"
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 設定簡介]  ，然後遵循逐步指示進行。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 設定指南]  ，然後遵循逐步指示進行。
 
 後續步驟：[組織資源以簡化設定的套用方式](./organize-resources.md)
 
