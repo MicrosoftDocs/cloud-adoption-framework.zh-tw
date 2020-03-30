@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: adb39a25cfb232b19bd983e5d4e0ab7d7370add1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170965"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356611"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 若要使用認知服務 API：
 
-1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts)中，移至 [認知服務]  。
+1. 在 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts)中，移至 [認知服務]  。
 2. 選取 [新增]  以在 Azure Marketplace 中尋找認知服務 API。
 3. 執行下列任一步驟：
    - 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace]  方塊中輸入此名稱。
@@ -58,7 +58,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts]" submitText="Go to Cognitive Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -66,7 +66,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 ::: zone target="docs"
 
-在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts)中直接移至 [認知服務]。
+在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts)中直接移至 [認知服務]。
 
 ::: zone-end
 
@@ -80,7 +80,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 您可以使用 Azure Machine Learning Studio 來建置模型並使用該模型進行實驗，其做法如下：
 
-1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces)中，移至 [Azure Machine Learning Studio]  。
+1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces)中，移至 [Azure Machine Learning Studio]  。
 2. 選取 [建立 Machine Learning Studio 工作區]  ，然後遵循提示來建立工作區。
 
    新的工作區會提供拖放功能介面，供您建置模型並使用該模型進行實驗，以替代深度訓練。
@@ -89,7 +89,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -97,7 +97,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 ::: zone target="docs"
 
-在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces)中直接移至 [Azure Machine Learning Studio]。
+在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces)中直接移至 [Azure Machine Learning Studio]。
 
 ::: zone-end
 
@@ -117,7 +117,7 @@ Azure Machine Learning 服務會提供要更加深入地訓練客戶資料集所
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -125,7 +125,7 @@ Azure Machine Learning 服務會提供要更加深入地訓練客戶資料集所
 
 ::: zone target="docs"
 
-在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces)中直接移至 [Azure Machine Learning Studio]。
+在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces)中直接移至 [Azure Machine Learning Studio]。
 
 ::: zone-end
 

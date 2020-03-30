@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6b859de12681e93912f934f6aa5e55c42fcfb9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171390"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392595"
 ---
 # <a name="deployment-acceleration-template"></a>部署加速範本
 
@@ -24,11 +24,7 @@ ms.locfileid: "78171390"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在雲端治理策略中定義有效部署加速專業領域的步驟。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx">下載治理專業領域範本</a>
-
-<!-- markdownlint-enable MD033 -->
+[下載治理專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

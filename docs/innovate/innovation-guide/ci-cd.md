@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6e0e0ddb2284a238274f9e5cc579e164a4378004
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171050"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356643"
 ---
 ::: zone target="docs"
 
@@ -87,7 +87,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 2. 選取 [建立 DevOps 專案]  。
 3. 選取 [執行階段、架構和服務]  。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

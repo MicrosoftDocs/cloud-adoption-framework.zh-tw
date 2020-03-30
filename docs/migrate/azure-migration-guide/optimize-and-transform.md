@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ab8ff4d3b73e38a0d88455fa675870da6a7f22ef
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: eff32a369c55011cea8fb8ace2e7bfae28680eda
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094811"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353873"
 ---
-<!-- cSpell:ignore Fservers Fdatabases -->
-
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
 # <a name="test-optimize-and-promote"></a>測試、最佳化及升階
@@ -96,7 +94,7 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone target="chromeless"
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases]" submitText="Go to SQL Databases" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2FServers%2FDatabases]" submitText="Go to SQL Databases" :::
 
 ::: zone-end
 

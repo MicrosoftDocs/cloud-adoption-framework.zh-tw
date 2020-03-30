@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b17a4aaaaa26d7cc1be33dd95f6a8905e1adc2b
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 71b16800dde767b7b257e4ac8bb63cf4083ddd23
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173203"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392363"
 ---
 # <a name="identity-baseline-template"></a>身分識別基準範本
 
@@ -24,11 +24,7 @@ ms.locfileid: "77173203"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您的雲端治理策略中定義有效身分識別基準專業領域的步驟。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx">下載治理專業領域範本</a>
-
-<!-- markdownlint-enable MD033 -->
+[下載治理專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

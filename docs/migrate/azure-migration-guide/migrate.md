@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312334"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353893"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cos
 
 UnifyCloud 是一種 ISV 服務，可提供評量、移轉和現代化的自動化工具。
 
-[深入了解](https://www.unifycloud.com/)
+[深入了解](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下是在 Microsoft Learn 上量身打造的學習路徑範例，可補充雲端採用架構中 DevOps 指引設定的不足之處。
 
-[透過 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。
+[透過 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。
 
 # <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 

@@ -1,6 +1,5 @@
 ---
 title: 叢集設計和作業
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 瞭解適用于叢集設計和作業的雲端採用架構中的 Kubernetes。
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356559"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392726"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>叢集設計和作業
 
-識別叢集設定和網路設計。 透過自動化基礎結構布建，來提供更高的擴充性。 藉由規劃商務持續性和嚴重損壞修復，維持高可用性。
+識別叢集設定和網路設計。 透過自動化基礎結構布建，來提供更高的擴充性。 藉由規劃商務持續性和災害復原，來維持高可用性。
 
 ## <a name="plan-train-and-proof"></a>規劃、定型和證明
 

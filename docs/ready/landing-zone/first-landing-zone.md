@@ -1,23 +1,22 @@
 ---
 title: Azure 登陸區域考量
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解登陸區域如何提供任何雲端採用環境的基本建置區塊。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092971"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392641"
 ---
 # <a name="first-landing-zone"></a>第一個登陸區域
 
-基礎結構即程式碼是在大多數雲端採用工作期間的自然轉換。 在雲端中部署第一個登陸區域，是移至程式碼驅動環境的常見起點。 本文將協助您瞭解「_登陸區域_」一詞，並決定哪一個登陸區域最適合您目前的採用需求。
+基礎結構即程式碼是大多數雲端採用工作期間的自然轉換方式。 在雲端中部署第一個登陸區域，是移至程式碼驅動環境的常見起點。 本文將協助您瞭解「_登陸區域_」一詞，並決定哪一個登陸區域最適合您目前的採用需求。
 
 ## <a name="code-first-approach-to-landing-zones"></a>登陸區域的程式碼優先方法
 

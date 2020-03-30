@@ -1,6 +1,5 @@
 ---
 title: 在雲端採用架構中的 Kubernetes
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 了解雲端採用架構中的 Kubernetes。
 author: sabbour
 ms.author: asabbour
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: faa2bb6829cb54b430991acb17f79b48f5384af4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e0956145f2fe0ccc0a38212194ae14f25a28991d
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356527"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392723"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 

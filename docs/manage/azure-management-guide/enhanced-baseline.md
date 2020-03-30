@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 223d6bf040987b7266d284d9175b588d08806c9f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092333"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356520"
 ---
+<!-- cSpell:ignore ITSMC -->
+
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 
 前三個雲端管理專業領域描述的是管理基準。 本指南中的前述文章概述了雲端管理服務的最簡可行產品 (MVP)，亦稱為管理基準。 本文會概述管理基準的一些常見改善。
@@ -74,7 +76,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 若要建立或管理 Runbook：
 
-1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts)。
+1. 移至 [Azure 自動化](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
 1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
 1. 移至 [程序自動化]  。
 1. 有了這個選項，您就可以建立或管理 Runbook、排程和其他自動化補救功能。
@@ -83,7 +85,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

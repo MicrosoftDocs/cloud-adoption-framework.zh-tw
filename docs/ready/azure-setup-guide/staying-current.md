@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225797"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353811"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>使用 Microsoft Azure 隨時掌握最新動態
 
 如 Microsoft Azure 這類的雲端平台，其變化速度比許多組織慣常的速度更快。 此種變更步調表示組織必須讓成員和程序適應新節奏。 如果您負責協助貴組織隨時掌握變更，您有時可能會覺得不堪負荷。 本節中所列的資源可協助您保持最新狀態。
@@ -54,9 +56,9 @@ ms.locfileid: "80225797"
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 由建置 Azure 的工程師示範的每週影片。 這些影片會進行示範、回答問題，以及分享見解。
   - 透過 [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 訂閱。
-- [Azure 圖表](https://azurecharts.com/)*
+- [Azure 圖表](https://azurecharts.com)*
   - 這個視覺效果會顯示過去六個月內所做的所有 Azure 更新。 其中包含其他實用的圖表和公用程式，可協助您追蹤 Azure 變更。
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Azure 治理功能 (例如 Azure 原則、原則計畫、原則別名和 RBAC) 的發行和變更追蹤。
 - [Azure Weekly](https://azureweekly.info)*
   - 這份由 [endjin](https://endjin.com) 提供的電子報包含關於 Microsoft Azure 的當周最新消息摘要。 也包含有趣的歷史內容。

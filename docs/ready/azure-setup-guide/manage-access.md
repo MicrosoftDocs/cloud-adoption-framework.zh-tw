@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 5fedbb5164da05b166d8a42d8d1ceaf43ee95185
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024067"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354437"
 ---
-<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+<!-- cSpell:ignore LijuKodicheraJayadevan -->
 
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>透過角色型存取控制來管理對 Azure 環境的存取
 
@@ -46,7 +46,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 1. 選取 [+新增]   > [新增角色指派]  。
 1. 選取角色，然後將存取權指派給使用者、群組或服務主體。
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" ::: form-end
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources/Subscriptions/ResourceGroups]" submitText="Go to resource groups" ::: form-end
 
 **授與訂用帳戶存取權：**
 
@@ -68,7 +68,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 若要對使用者授與資源群組的存取權：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups)]。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [存取控制 (IAM)]  。
 1. 選取 [+新增]   > [新增角色指派]  。

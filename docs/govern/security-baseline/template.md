@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707164"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392780"
 ---
 # <a name="security-baseline-template"></a>安全性基準範本
 
@@ -24,11 +24,7 @@ ms.locfileid: "77707164"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您雲端治理策略中定義有效安全性基準專業領域的步驟。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx">下載治理專業領域範本</a>
-
-<!-- markdownlint-enable MD033 -->
+[下載治理專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

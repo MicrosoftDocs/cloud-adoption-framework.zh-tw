@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6981af0cab1d9be149675a85f09be0640970e30f
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 0c3a584277d708a0dcef8fcf019ed76589a3fd16
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140162"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356662"
 ---
-<!-- cSpell:ignore Fcatalogs Faccounts FEnvironments -->
-
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Azure 創新指南：將資料大眾化
@@ -65,7 +63,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataCatalog%2Fcatalogs]" submitText="Go to Azure Data Catalog" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataCatalog%2FCatalogs]" submitText="Go to Azure Data Catalog" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -102,7 +100,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataShare%2Faccounts]" submitText="Go to Azure Data Shares" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataShare%2FAccounts]" submitText="Go to Azure Data Shares" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -139,7 +137,7 @@ Azure 時間序列深入解析的資料創新功能無限。 它可針對 IoT �
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.TimeSeriesInsights%2Fenvironments]" submitText="Go to Azure Time Series Insights" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.TimeSeriesInsights%2FEnvironments]" submitText="Go to Azure Time Series Insights" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

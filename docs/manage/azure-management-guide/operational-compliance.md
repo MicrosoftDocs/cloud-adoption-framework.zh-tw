@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094729"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356454"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 >
 > 有兩種方式可以上線：
 >
-> - [單一 VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [整個訂用帳戶](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [單一 VM](../../manage/azure-server-management/onboard-single-vm.md)
+> - [整個訂用帳戶](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > 您應該先遵循其中一個方式，再繼續進行更新管理。
 
@@ -69,7 +69,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 
 若要將原則套用至資源群組：
 
-1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts)。
+1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
 1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
 1. 移至 [設定管理]  。
 1. **清查**、**變更管理**和**狀態設定**都可用來控制受控 VM 的狀態和作業合規性。
@@ -78,7 +78,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

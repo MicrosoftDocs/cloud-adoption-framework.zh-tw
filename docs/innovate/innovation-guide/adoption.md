@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891948"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356679"
 ---
 ::: zone target="docs"
 
@@ -56,7 +56,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Go to Application Insights" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents]" submitText="Go to Application Insights" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -64,7 +64,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ::: zone target="docs"
 
-若要檢視應用程式相關資料，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents)。
+若要檢視應用程式相關資料，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents)。
 
 ::: zone-end
 
@@ -100,7 +100,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -108,7 +108,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ::: zone target="docs"
 
-若要開啟 API 管理服務，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice)。
+若要開啟 API 管理服務，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService)。
 
 ::: zone-end
 
@@ -140,7 +140,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 2. 選取 [建立 DevOps 專案]  。
 3. 選取 [執行階段、架構和服務]  。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -169,7 +169,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -177,7 +177,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 ::: zone target="docs"
 
-若要在 App Service 中檢視您的應用程式，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites)。
+若要在 App Service 中檢視您的應用程式，請移至 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites)。
 
 ::: zone-end
 

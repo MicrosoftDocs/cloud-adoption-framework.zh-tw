@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708796"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392471"
 ---
 # <a name="cost-management-template"></a>成本管理範本
 
@@ -24,11 +24,7 @@ ms.locfileid: "77708796"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您的雲端治理策略中定義有效成本管理專業領域的步驟。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">下載治理專業領域範本</a>
-
-<!-- markdownlint-enable MD033 -->
+[下載治理專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

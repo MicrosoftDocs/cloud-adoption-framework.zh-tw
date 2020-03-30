@@ -4,15 +4,15 @@ description: 深入瞭解適用于 Azure 的 Microsoft Cloud 採用架構的最�
 author: JanetCThomas
 ms.author: janet
 ms.date: 03/27/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6bde40ffaa84955811b2687b2b518d93d0c21589
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: c701d49a80ea0ec087f26f792b7ffe8dbd4c061f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357195"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392503"
 ---
 <!-- markdownlint-disable MD024 -->
 

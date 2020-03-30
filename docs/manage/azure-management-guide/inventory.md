@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0caf14e402c2c91b1c7b297df7f648d924f9e449
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092126"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356503"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -103,7 +103,7 @@ Azure 服務健康狀態包含：
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.OperationalInsights%2Fworkspaces]" submitText="Explore Azure Monitor" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.OperationalInsights%2FWorkspaces]" submitText="Explore Azure Monitor" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -174,8 +174,8 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 有兩種方式可以上線：
 
-- [單一 VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-- [整個訂用帳戶](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+- [單一 VM](../../manage/azure-server-management/onboard-single-vm.md)
+- [整個訂用帳戶](../../manage/azure-server-management/onboard-at-scale.md)
 
 每篇文章都會引導您完成一系列的步驟，以將下列解決方案上線：
 
