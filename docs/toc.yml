@@ -84,7 +84,7 @@ items:
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
-          - name: 設定優先順序並定義工作負載
+          - name: 定義工作負載並設定其優先順序
             href: plan/workloads.md
           - name: 使資產與工作負載保持一致
             href: plan/assets.md
@@ -170,8 +170,12 @@ items:
             href: ready/azure-best-practices/index.md
           - name: 資源組織
             items:
+              - name: 建立您的初始訂用帳戶
+                href: ready/azure-best-practices/initial-subscriptions.md
               - name: 使用多個訂用帳戶進行調整
-                href: ready/azure-best-practices/scaling-subscriptions.md
+                href: ready/azure-best-practices/scale-subscriptions.md
+              - name: 組織您的訂用帳戶
+                href: ready/azure-best-practices/organize-subscriptions.md
               - name: 命名和標記
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: 網路功能

@@ -1,31 +1,32 @@
 ---
 title: Azure 移轉整備程度的最佳做法
-description: 了解如何提供最佳做法和額外的指引，來協助您的小組建立並準備您的 Azure 環境。
+description: 了解最佳做法和額外的指引，協助您的小組建立並準備您的 Azure 環境。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093561"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354640"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 
-雲端移轉整備程度的很大一部分是為員工配備開始進行雲端採用所需的技術技能，並為將遷移到雲端的資產和工作負載準備遷移目標環境。 請閱讀這些最佳做法和其他指引，以協助您的小組準備 Azure 環境。
+雲端移轉整備程度要求為員工配備開始進行雲端採用所需的技術技能，並為將遷移到雲端的資產和工作負載準備遷移目標環境。 請閱讀這些最佳做法和其他指引，以協助您的小組準備 Azure 環境。
 
 ## <a name="azure-fundamentals"></a>Azure 基礎
 
 在 Azure 環境中組織及部署您的資產。
 
 - [Azure 基礎概念](../considerations/fundamental-concepts.md)。 了解重要的 Azure 概念和詞彙，以及這些概念彼此之間的關聯。
-- [建議的命名和標記慣例](../azure-best-practices/naming-and-tagging.md)。 參閱命名和標記資源的詳細建議。 這些建議支援企業雲端採用工作。
-- [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)。 了解使用多個 Azure 訂用帳戶進行調整的策略。
-- [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解 Azure 管理群組如何跨多個訂用帳戶管理資源、角色、原則和部署。
+- [建立您的初始訂用帳戶](./initial-subscriptions.md)。 建立一組初始的 Azure 訂用帳戶，以開始進行雲端採用。
+- [使用多個訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)。 了解建立其他訂用帳戶以調整 Azure 環境的原因和策略。
+- [使用 Azure 管理群組來組織資源](../azure-best-practices/organize-subscriptions.md)。 了解 Azure 管理群組如何跨多個訂用帳戶管理資源、角色、原則和部署。
+- [請遵循建議的命名和標記慣例](../azure-best-practices/naming-and-tagging.md)。 參閱命名和標記資源的詳細建議。 這些建議支援企業雲端採用工作。
 - [建立混合式雲端一致性](../considerations/hybrid-consistency.md)。 建立混合式雲端解決方案，以提供雲端創新的優勢，同時保有內部部署管理的許多便利性。
 
 ## <a name="networking"></a>網路功能

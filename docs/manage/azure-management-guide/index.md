@@ -1,6 +1,6 @@
 ---
 title: Azure 管理概觀
-description: 了解「適用於 Azure 的雲端採用架構」，其中包含管理 Azure 生產環境所需基本工具的相關資訊。
+description: 利用管理 Azure 生產環境所需基本工具的相關資訊，了解適用於 Azure 的雲端採用架構。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140281"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356492"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Azure 管理指南：開始之前
-
-> [!NOTE]
-> 本指南是雲端採用架構的創新指引起點。 您也可以在 Azure 快速入門中心內取得本指南。 如需 Azure 快速入門中心的連結，請參閱本文稍後的提示。
 
 ::: zone-end
 
@@ -31,7 +28,7 @@ ms.locfileid: "79140281"
 
 ::: zone-end
 
-Azure 管理指南可協助 Azure 客戶建立管理基準，以制定整個 Azure 的資源一致性。 本指南會概述任何 Azure 生產環境所需的基本工具，尤其是裝載了敏感性資料的環境。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的整備程度一節](../index.md)。
+Azure 管理指南可協助 Azure 客戶建立管理基準，以制定整個 Azure 的資源一致性。 本指南會概述任何 Azure 生產環境所需的基本工具，尤其是裝載了敏感性資料的環境。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱雲端採用架構的[移轉整備程度](../index.md)一節。
 
 ## <a name="scope-of-this-guide"></a>本指南的範圍
 
@@ -51,9 +48,6 @@ Azure 管理指南可協助 Azure 客戶建立管理基準，以制定整個 Azu
 管理基準是一組應套用至每個環境資產的最基本工具和流程。 管理基準中可以納入數個額外的選項。 接下來的幾篇文章將焦點放在所需的最基本選項 (而不是所有可用的選項)，以加速雲端管理功能。
 
 ::: zone target="docs"
-
-> [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)，然後選取 [Azure 管理指南]  。 然後，遵循逐步指示來進行。
 
 下一步是[清查和可見性](./inventory.md)。
 

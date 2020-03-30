@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299046"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354474"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -41,10 +41,10 @@ ms.locfileid: "80299046"
 >
 > - **組織資源：** 設定管理階層以便對資源群組一致地套用存取控制、原則和合規性，並使用標記功能來追蹤相關資源。
 > - **管理存取：** 使用角色型存取控制來確定使用者只擁有其真正需要的權限。
-> - **管理成本和計費：** 識別訂用帳戶類型、了解計費方式，以及明白如何控制成本。
+> - **管理成本和計費：** 識別訂用帳戶類型、了解計費方式，以及如何控制成本。
 > - **規劃治理、安全性和合規性：** 強制套用並自動執行原則和安全性設定，以協助您遵循適用的法律需求。
-> - **使用監視和報告：** 了解各項資源以協助您尋找和修正問題、將效能最佳化，或深入檢視客戶行為。
-> - **隨時得知 Azure 的最新動態：** 追蹤產品更新以便主動管理變更。
+> - **使用監視和報告：** 能夠查看各項資源，以尋找和修正問題、將效能最佳化，以及取得客戶行為的見解。
+> - **隨時得知 Azure 的最新動態：** 追蹤產品更新，以便主動進行變更管理。
 
 ::: zone target="docs"
 
