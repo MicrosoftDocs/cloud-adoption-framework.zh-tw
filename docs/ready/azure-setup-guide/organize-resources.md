@@ -9,21 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024015"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354344"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>組織 Azure 資源
 
-組織雲端式資源對於保護、管理和追蹤工作負載相關的成本而言至關重要。 若要組織資源，請使用 Azure 平台內的管理階層、實作深思熟慮的命名慣例，並套用資源標記。
+組織雲端式資源對於保護、管理和追蹤工作負載相關的成本而言至關重要。 若要組織您的資源，請定義管理群組階層、遵循妥善考慮的命名慣例，並套用資源標記。
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 下圖顯示這些層級的關聯性。
@@ -31,7 +32,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
    ![管理階層關聯性的圖示](./media/organize-resources/scope-levels.png)
 
 - **管理群組：** 這些群組是可協助您針對多個訂用帳戶管理存取、原則及合規性的容器。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。
-- **訂用帳戶：** 訂用帳戶會將使用者帳戶以及這些使用者帳戶所建立的資源歸類為同一個群組。 每個訂用帳戶均有可供建立和使用的資源數量限制或配額。 組織可以使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
+- **訂用帳戶：** 訂用帳戶會以邏輯方式關聯使用者帳戶以及這些使用者帳戶所建立的資源。 每個訂用帳戶均有可供建立和使用的資源數量限制或配額。 組織可以使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
 - **資源群組：** 資源群組是一個邏輯容器，可在其中部署與管理 Azure 資源 (例如 Web 應用程式、資料庫和儲存體帳戶)。
 - **資源：** 資源是所建立服務 (如虛擬機器、儲存體或 SQL 資料庫) 的執行個體。
 
@@ -41,7 +42,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 通常我們會在較高層級套用重要設定，而在較低層級套用專案特定需求。 例如，您可能想要確定組織的所有資源都部署到特定區域。 若要這樣做，請將原則套用至指定了允許位置的訂用帳戶。 當貴組織中其他使用者新增新的資源群組和資源時，會自動強制執行允許的位置。 請深入了解本指南的控管、安全性和合規性區段中所提供的原則。
 
-如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 如果您使用的訂用帳戶數量增加，則請考慮建立管理群組階層，以簡化訂用帳戶和資源的管理。 如需如何管理多個訂用帳戶的詳細資訊，請參閱[使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)。
+如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 如果您使用的訂用帳戶數量增加，則請考慮建立管理群組階層，以簡化訂用帳戶和資源的管理。 如需詳細資訊，請參閱[組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)。
 
 在規劃合規性策略時，請與組織中擔任下列角色的人員合作：安全性和合規性、IT 管理、企業架構設計人員、網路、財務和採購。
 
@@ -80,9 +81,11 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 若要深入了解，請參閱：
 
 - [Azure 基本概念](../considerations/fundamental-concepts.md)
-- [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scaling-subscriptions.md)
-- [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
+- [建立您的初始訂用帳戶](../azure-best-practices/initial-subscriptions.md)
+- [建立額外的 Azure 訂用帳戶以調整您的 Azure 環境](../azure-best-practices/scale-subscriptions.md)
+- [組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)
 - [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 # <a name="naming-standards"></a>[命名標準](#tab/NamingStandards)
 
-良好的命名標準可協助您識別 Azure 入口網站中、帳單上和指令碼中的資源。 命名策略應該包含業務和營運詳細資料來作為資源名稱的元件：
+良好的命名標準可協助您識別 Azure 入口網站中、帳單陳述式上和自動化指令碼中的資源。 命名策略應該包含業務和營運詳細資料來作為資源名稱的元件：
 
 - 在業務方面，此策略應該確保資源名稱包含識別小組所需的組織資訊。 您可以與負責資源成本的業務擁有者一起使用資源。
 
 - 在營運方面，則應確保名稱包含 IT 小組所需的資訊。 請使用可識別工作負載、應用程式、環境和重要性的詳細資料，以及可用來管理資源的其他實用資訊。
 
-不同的資源類型可能會有不同的長度限制和允許的字元，其中有許多會列在 Azure 最佳做法[命名慣例](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)一文中。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
+不同的資源類型具有不同的[命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
 
 下表包含一些 Azure 資源範例類型的命名模式。
 
@@ -170,7 +173,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups)]。
+1. 移至 [[資源群組](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [指派標記]  。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。
@@ -194,6 +197,6 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 1. 選取 [標記]  。
 1. 輸入新的名稱和值，或選取現有的名稱和值。
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end

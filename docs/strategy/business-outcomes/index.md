@@ -3,16 +3,16 @@ title: 轉換旅程的商務結果
 description: 使用「適用於 Azure 的雲端採用架構」，了解與雲端轉換相關聯的商務結果。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092386"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392509"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "79092386"
 
 ## <a name="sample-outcomes-by-category"></a>依類別的範例成果
 
-對於許多技術人員來說，談到業務成果，感覺就好像是一門外語一樣。 為了幫助簡化翻譯，Microsoft 在[業務成果架構](../index.md)中策劃了一組業務成果範例。 您可以使用這些範例，根據實際的轉換過程啟發並示範業務成果。
+對於許多技術人員來說，談到業務成果，感覺就好像是一門外語一樣。 為了協助您輕鬆轉譯，我們策展了一組商務結果範例。 您可以使用下列範例，根據實際的轉換過程啟發並示範業務成果。
 
 為了協助您更輕鬆地找到業務成果，我們將這些成果分成下列各個類別。 這種方法可以跨業務單位推動交談以建立共識。
 
