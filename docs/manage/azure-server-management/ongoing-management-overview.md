@@ -4,19 +4,19 @@ description: 使用適用于 Azure 的雲端採用架構，學習如何專注于
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a68479bf128ea79383a5529b82a7866e399abc71
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d006773b66bf9e41301c4d2e9b34018394594e28
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094587"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430545"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>第3階段：持續的管理和安全性
 
-在上架 Azure 伺服器管理服務之後，您必須將重點放在可支援您進行中作業的作業和安全性設定。 我們會藉由查看 Azure 資訊安全中心，開始保護您的環境。 接著，我們會設定原則，讓伺服器保持合規性並將一般工作自動化。 本節包含下列主題：
+在上架 Azure 伺服器管理服務之後，您必須將重點放在可支援您進行中作業的作業和安全性設定。 我們會藉由查看 Azure 資訊安全中心，開始保護您的環境。 接著，我們會設定原則，讓伺服器保持合規性並將一般工作自動化。 本節涵蓋下列主題：
 
 - **[解決安全性建議。](#address-security-recommendations)** Azure 資訊安全中心提供改善環境安全性的建議。 當您執行這些建議時，您會看到反映在安全性分數中的影響。
 - **[啟用來賓設定原則。](./guest-configuration-policy.md)** 使用 [Azure 原則來賓設定] 功能來審查虛擬機器中的設定。 例如，您可以檢查是否有任何憑證即將到期。

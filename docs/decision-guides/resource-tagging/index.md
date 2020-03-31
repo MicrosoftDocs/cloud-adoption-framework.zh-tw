@@ -4,16 +4,16 @@ description: 了解要組織雲端式資源時，對資源的命名和標記方�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2092d93a8a661495e98e1f6878616278d3fbfb66
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: cda5b1ee78dd3cf0a67fa6207835b52522e5405c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508061"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431422"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 

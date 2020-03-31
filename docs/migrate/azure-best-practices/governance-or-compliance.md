@@ -4,15 +4,15 @@ description: 治理或合規性策略
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 42eba9c774a063fe915db50b6615a3a59ce261c6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355566"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434019"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 

@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，學習建立支援資
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: dd9f23a35e4e97605c23fbc52d32433eab97539b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508095"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433658"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>資源一致性原則的合規性程序
 
@@ -55,8 +55,8 @@ ms.locfileid: "79508095"
 
 下列觸發程序和強制執行動作提供範例，您可以在規劃如何使用監視資料以解決原則違規時加以參考：
 
-- **偵測到過度布建資源。** 若偵測到使用低於 60% CPU 或記憶體容量的資源，應自動相應減少或取消佈建這些資源，以降低成本。
-- **偵測到布建不足資源。** 若偵測到使用超過 80% CPU 或記憶體容量的資源，應該自動相應增加或佈建更多資源，以增加產能。
+- **偵測到過度布建資源。** 若偵測到使用低於 60% CPU 或記憶體容量的資源，應自動縮小或取消佈建這些資源，以降低成本。
+- **偵測到布建不足資源。** 若偵測到使用超過 80% CPU 或記憶體容量的資源，應該自動擴大或佈建更多資源，以增加產能。
 - **未標記的資源建立。** 對於任何要建立資源的要求，若沒有必要的中繼標記，都會自動遭到拒絕。
 - **偵測到重大資源中斷。** 所有偵測到的任務關鍵性中斷都會通知 IT 人員。 如果無法立即解決中斷情形，員工將會呈報問題，並通知工作負載擁有者和雲端治理小組。 如果需要原則修訂以防止未來發生事件，雲端治理小組將會追蹤此問題，直到解決和更新指引為止。
 - **設定漂移。** 偵測到不符合所建立基準的資源應該觸發警示，並使用 Azure 自動化、Chef、Puppet 或 Ansible 等設定管理工具自動補救。

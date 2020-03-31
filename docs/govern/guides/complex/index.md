@@ -4,16 +4,16 @@ description: 跟著虛構的複雜企業經歷治理成熟度的各種階段，�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04f8c5e53eea03c0a25c84c03a09c4fa0ec60bff
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 45c32c1d6f4a20f956748da935303eb2e8b60552
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892081"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434464"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 

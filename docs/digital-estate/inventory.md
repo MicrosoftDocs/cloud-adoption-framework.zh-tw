@@ -4,15 +4,15 @@ description: 瞭解如何建立支援特定商務功能之 IT 資產的清查清
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1735c5e6f818f727cee3e28f11fbaf31610de8d8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 186013e2f626be18f0cef8beea66d638be9a793c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170081"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434818"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>收集數位資產的清查資料
 

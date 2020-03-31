@@ -4,15 +4,15 @@ description: 使用 Azure 變更追蹤和清查，針對混合式環境中的重
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356417"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434136"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 

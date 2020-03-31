@@ -4,16 +4,16 @@ description: 瞭解並查看典型客戶在雲端治理策略中採用安全性�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bef524646e6be5ca6cd0b638b9614af389972f9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 40b92c15af9ea4677d049cc76902d33e6807f139
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709017"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433636"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>安全性基準動機和業務風險
 

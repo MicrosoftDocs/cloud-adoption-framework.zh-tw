@@ -4,15 +4,15 @@ description: 瞭解客戶參與的範例，以瞭解客戶的需求，以及其�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6d9e5096c0b3a7adbf8a814479db5fba6359cca0
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: ca91b52aa11427d81e8f9244e1cc74a88972b842
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337955"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433767"
 ---
 <!-- cSpell:ignore Exak -->
 

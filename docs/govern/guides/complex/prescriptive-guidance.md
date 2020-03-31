@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，建立可反映複雜
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 482b517605b13e27fe2fc315d9d8f7495ed8618c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357106"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434359"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
@@ -82,7 +82,7 @@ ms.locfileid: "80357106"
   - SLA
   - 環境
   - 應用程式原型
-  - Application
+  - 應用程式
   - 應用程式擁有者
 - 這些值搭配 Azure 管理群組及已部署資產的相關訂用帳戶，將可擬定治理、營運和安全性決策。
 

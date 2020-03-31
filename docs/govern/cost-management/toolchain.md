@@ -4,16 +4,16 @@ description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 70014352d4b7f64f5c73a0fda96ef453f1a77176
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a0429ed857bce3b364f057af950657fed885cc74
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708779"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434612"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure 中的成本管理工具
 

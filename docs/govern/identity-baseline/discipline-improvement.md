@@ -4,16 +4,16 @@ description: 瞭解公司在雲端採用的每個階段，為了開發和成熟�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9f945ee790bf33d37601ba5a09c49581f95a5d9a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356990"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434991"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 

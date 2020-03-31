@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，學習如何打造完
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f714931624eab819fafcf086e42d3ab765c13eed
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: c45d566276315e1ae26a7a3de49403c2d7d531b0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092912"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431900"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -74,6 +74,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
 
-## <a name="learn-more"></a>深入了解
+## <a name="learn-more"></a>進一步了解
 
 如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

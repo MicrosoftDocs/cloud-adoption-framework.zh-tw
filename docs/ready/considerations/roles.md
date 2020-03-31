@@ -4,18 +4,18 @@ description: 瞭解如何將小組內的職責分開，並授與角色型存取�
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c4777f062725a74a98233bfe6851180d70bdfbf8
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 03defd0e428bd0caf4e83d4999ba5b42cf63b43a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092441"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433862"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
