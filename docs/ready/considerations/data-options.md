@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何判斷
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5fdafdfd9bfccd86e7ddcc1ee08afdf561d4e680
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: c9fa27ac671b17414a114a43f5224dd0e87de9d2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093744"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432112"
 ---
 <!-- cSpell:ignore HDFS -->
 

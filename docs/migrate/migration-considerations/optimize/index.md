@@ -4,15 +4,15 @@ description: 使用適用於 Azure 的雲端採用架構，準備要升級至生
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b59245a8665355b34c3f599d8515ceeb93eb7315
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094105"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432266"
 ---
 # <a name="optimize-migrated-workloads"></a>將已移轉的工作負載最佳化
 

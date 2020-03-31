@@ -4,16 +4,16 @@ description: 使用此範本做為記錄和通訊原則聲明的起點，以管�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 94570e0e4fbb41342dbe41e0377160449d832818
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392780"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425921"
 ---
 # <a name="security-baseline-template"></a>安全性基準範本
 

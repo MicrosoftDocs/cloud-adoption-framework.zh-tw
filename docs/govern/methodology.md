@@ -4,16 +4,16 @@ description: 使用以最基本的可行產品（MVP）為基礎的增量治理�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f7ec10f54231e401799abb81d72efb3cc3657959
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709085"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430968"
 ---
 # <a name="cloud-governance-methodology"></a>雲端治理方法
 

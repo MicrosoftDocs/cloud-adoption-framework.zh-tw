@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何判斷
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3e7c74a1d2afa880a0bdec5215b2237e8261ec79
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341176"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426350"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理中的業務衝擊
 

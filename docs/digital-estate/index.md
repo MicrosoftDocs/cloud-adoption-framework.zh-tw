@@ -4,15 +4,15 @@ description: 了解什麼是數位資產、如何測量，以及如何更新財�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 380c50bdf55da7616d274ff038ec25d73c065459
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: d4378959545fe6206497228195db0d1ce7fcf0e7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173345"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434838"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -4,15 +4,15 @@ description: 瞭解這些工具，並為管理 Azure 伺服器管理服務所需
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312615"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434089"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 

@@ -4,15 +4,15 @@ description: 在遷移工作期間，資料需求超過網路容量。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 5c410527182d7185a052bc99826ea06154fdae5f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508367"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429642"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 

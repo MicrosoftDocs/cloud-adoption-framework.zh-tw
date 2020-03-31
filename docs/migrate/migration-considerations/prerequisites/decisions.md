@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來做出適當的決策
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8d9207e5494ef6e645780c35477636c5ebcb9df2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355196"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429044"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -44,7 +44,7 @@ ms.locfileid: "80355196"
 
 如果資料、測試、研究與開發（R & D）或新產品在接下來六個月內是您的優先考慮，則本節可能不是雲端採用架構的最佳區段，可引導小組的工作。 任何資料創新工作都可從移轉現有來源資料的指引受益。 不過，這項工作更大的焦點在於其他資料來源的輸入與整合。 透過預測和新體驗來擴充該指引，遠比移轉 IaaS 資產來得重要。
 
-## <a name="effort"></a>投入量
+## <a name="effort"></a>投入時間
 
 移轉工作可能因涉及工作負載的大小和複雜度而有很大的差異。 涉及數百個虛擬機器 (VM) 的小規模工作負載移轉可作為策略性程序，且可能使用自動化工具 (例如 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)) 來執行。 相反地，數萬個工作負載的大型企業移轉則需要高度策略性程序，且可能牽涉到大量重構、重建和更換與平台即服務 (PaaS) 和軟體即服務 (SaaS) 功能整合的現有應用程式。 [找出並平衡計劃性移轉的範圍](../../../strategy/balance-the-portfolio.md)，是很重要的。
 

@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解如何協助您
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f1fa9c4705aaa437a0a532fd6463fe502f4df0bb
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 1191b2f359f2220c8ba73ffd0926859936f78b7d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092618"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428202"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移準備階段期間的技能就緒性路徑
 
@@ -74,6 +74,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任
 
 - [開發人員](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)可以使用瞭解資源，在架構、治理、現代化活動方面提供協助。
 
-## <a name="learn-more"></a>深入了解
+## <a name="learn-more"></a>進一步了解
 
 如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

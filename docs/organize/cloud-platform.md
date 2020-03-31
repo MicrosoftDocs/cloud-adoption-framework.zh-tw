@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解雲端平臺功
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 204c22e7682886d8c4f90e74aa3d881e32e6c7b0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 2dc5503c7c24263bf74c4708ffe5e1dca0b8b97b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092712"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428524"
 ---
 # <a name="cloud-platform-capabilities"></a>雲端平臺功能
 
@@ -30,7 +30,7 @@ ms.locfileid: "79092712"
 - IT 治理
 - IT 基礎結構
 - 網路功能
-- 身分識別
+- 相同比較
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者
@@ -43,7 +43,7 @@ ms.locfileid: "79092712"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱
+- 檢閱：
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)

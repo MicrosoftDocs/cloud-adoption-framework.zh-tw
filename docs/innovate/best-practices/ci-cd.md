@@ -4,15 +4,15 @@ description: 瞭解使用創新方法的 Azure 工具，在假設成熟時，以
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1688bf914e8cf0ef9882c13b73164d9980f844cd
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171288"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425593"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>在 Azure 中加強採用的工具
 

@@ -1,26 +1,26 @@
 ---
 title: 區域決策指南
-description: 瞭解雲端平臺區域，以及可能影響您的 Azure 區域選取專案的因素和特性。
+description: 了解雲端平台區域，以及可能影響 Azure 區域選取範圍的因素和特性。
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508333"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433027"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
 Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](https://azure.microsoft.com/global-infrastructure/regions)都有一組特定的特性，因此要選擇哪個區域來使用就變得格外重要。
 
 1. **可用的服務：** 部署到每個區域的服務會根據各種因素而有所不同。 選取含有您所需服務的區域，以將工作負載部署至其中。 如需每個區域中可用服務的詳細資訊，請參閱[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services)。
-1. **容量：** 每個區域都有最大容量。 雖然這通常會與使用者抽象化，但它可能會影響哪些類型的訂用帳戶可以部署哪些類型的服務，以及在何種情況下。 這與訂用帳戶配額不同。 如果您打算將大規模的資料中心遷移至 Azure，您可能會想要洽詢您當地的 Azure 欄位小組或客戶經理，以確認您可以視需要進行部署。
+1. **容量：** 每個區域都有最大容量。 一般來說，使用者雖不會對此有所概念，但這一點卻會影響哪些類型的訂用帳戶能夠在何種情況下部署哪些類型的服務。 這與訂用帳戶配額不同。 如果您打算大規模地將資料中心移轉至 Azure，您可以洽詢當地的 Azure 現場小組或客戶經理，來確認您是否能夠以所需規模進行部署。
 1. **條件約束：** 某些條件約束會放在特定區域的服務部署上。 例如，某些區域只能作為備份或容錯移轉目標。 其他值得注意的條件約束是[資料主權需求](https://azure.microsoft.com/global-infrastructure/geographies)。
 1. **主權：** 某些地區專屬於特定的主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其餘 Azure 區域徹底分開、不一定會由 Microsoft 管理，而且可能會受限於特定客戶類型。 這些主權區域包括：
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
@@ -82,9 +82,9 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 | 區域        | Country     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | USA         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
-| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
-| 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
+| 北美洲 | 加拿大      | 否              | Customers              | 是                         | 是                           |
+| 歐洲        | Germany     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
+| 亞太地區  | 韓國 | 是             | 合作夥伴               | 是                         | 否                            |
 
 <!-- markdownlint-disable MD026 -->
 

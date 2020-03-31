@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解如何完成您
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 2df963beba9087f8f3bfc2faf850eb384cd507a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 6b321c108fda144989fd2101c8fdfcd41eb4aaec
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093769"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428171"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 

@@ -4,15 +4,15 @@ description: 探索平衡遷移、創新和實驗的策略，以充分運用您�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 381359391d7fc39281d49d202f66edf5691be293
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353476"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433806"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "80353476"
 
 在平衡組合之前，請務必記載並分享商業成果，以促進雲端遷移工作。 下表可協助記載及分享所需的業務成果。 請務必注意，大部分企業都會一次追求數個成果。 此練習的重要性是要釐清與雲端移轉工作最直接相關的成果：
 
-|成果  |測量依據  |目標  |時間範圍  |此工作的優先順序  |
+|結果  |測量依據  |目標  |時間範圍  |此工作的優先順序  |
 |---------|---------|---------|---------|---------|
 |降低 IT 成本     |資料中心預算         |減少 200 萬美元         |12 個月         |#1         |
 |資料中心退場     |從資料中心退場         |2 個資料中心         |6 個月         |#2         |

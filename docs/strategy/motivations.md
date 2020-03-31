@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解雲端遷移背
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cb5de82fab4e5a1c9f93b82ce8c7065d741ca292
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: b504d5b7bb5c126a43464d0e776417b1ead0b8ac
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337852"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433722"
 ---
 <!-- markdownlint-disable MD026 -->
 

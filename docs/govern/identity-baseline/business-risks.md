@@ -4,16 +4,16 @@ description: 瞭解並查看典型客戶在雲端治理策略中採用身分識�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709323"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429896"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>身分識別基準動機和業務風險
 

@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解全球市場決
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3ad745b1fcef78ebeaac7d5e3199e92e069113e7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353485"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431449"
 ---
 <!-- markdownlint-disable MD026 -->
 

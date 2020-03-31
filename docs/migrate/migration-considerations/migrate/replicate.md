@@ -4,15 +4,15 @@ description: 瞭解複寫在遷移過程中所扮演的角色，以及如何規�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3d1251bba8da5ec17270de38ee94ed87483c4ac6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312602"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429330"
 ---
 <!-- markdownlint-disable MD026 -->
 

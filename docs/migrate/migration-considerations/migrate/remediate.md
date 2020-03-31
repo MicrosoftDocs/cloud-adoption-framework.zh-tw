@@ -4,15 +4,15 @@ description: 瞭解如何在開始遷移之前，修復您判斷與所選擇的�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355221"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429374"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 

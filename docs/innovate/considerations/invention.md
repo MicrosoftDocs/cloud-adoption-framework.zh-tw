@@ -4,15 +4,15 @@ description: 平衡家發明與採用以開發數位開始創造發明，同時�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356747"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427493"
 ---
 # <a name="develop-digital-inventions"></a>開發數位發明
 

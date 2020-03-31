@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將成
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 81140a69d3d024159c62b499de2e69cd57eb3d1f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709238"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434299"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 enterprise guide：改善成本管理專業領域
 

@@ -4,15 +4,15 @@ description: 使用適用於 Azure 的雲端採用架構，了解如何在開始
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094122"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429429"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>在移轉前驗證評估假設
 

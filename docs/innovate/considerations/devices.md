@@ -4,15 +4,15 @@ description: 瞭解透過客戶與環境經驗和裝置（而非應用程式）�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 05fc3e3b4ddb0ae630feaee57a345aec8870ea08
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171220"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433292"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 

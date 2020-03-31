@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解貴公司的市
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092956"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433778"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 

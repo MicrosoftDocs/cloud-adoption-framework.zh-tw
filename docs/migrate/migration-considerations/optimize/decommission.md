@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解如何在最少
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a62ef520f948d8bea415e4a65749944b91bb16c8
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: ef890dce11530f30a0863ab9a51dcc3832125e24
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092755"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432319"
 ---
 # <a name="decommission-retired-assets"></a>解除委任已淘汰的資產
 

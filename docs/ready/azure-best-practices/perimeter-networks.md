@@ -4,18 +4,18 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何為您
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d5e906caf5f0b9c2c241520a96311c48df565234
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093230"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433242"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "79093230"
 
 ![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來相應增加，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
+上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來擴大，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
 
 ## <a name="virtual-networks"></a>虛擬網路
 
@@ -75,7 +75,7 @@ Azure 防火牆執行個體和[網路虛擬設備][NVA]防火牆使用一般的�
 
 針對源自網際網路的流量使用一組 Azure 防火牆執行個體 (或 NVA)，針對源自內部部署的流量使用另一組。 對兩者僅使用一組防火牆會造成安全性風險，因為這並未提供兩組網路流量之間的安全性周邊。 使用個別的防火牆層級可降低檢查安全性規則的複雜度，並明確指出哪些規則對應到哪個傳入網路要求。
 
-## <a name="azure-load-balancer"></a>Azure Load Balancer
+## <a name="azure-load-balancer"></a>Azure 負載平衡器
 
 [Azure Load Balancer][ALB] 提供高可用性層級 4 (TCP、UDP) 服務，可將連入流量分散到負載平衡組中所定義的服務執行個體。 從前端端點 (公用 IP 端點或私人 IP 端點) 傳送到負載平衡器的流量，不論是否有位址轉譯，都可以轉散發至後端 IP 位址集區 (例如 NVA 或 VM)。
 
@@ -85,7 +85,7 @@ Azure Load Balancer 也可以探查各種伺服器執行個體的健全狀況。
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-[Azure Front Door Service][AFD] 是 Microsoft 的高可用性和可擴充 Web 應用程式加速平台和全域 HTTPS 負載平衡器。 您可以使用 Azure Front Door Service 來建置、操作及相應放大您的動態 Web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
+[Azure Front Door Service][AFD] 是 Microsoft 的高可用性和可擴充 Web 應用程式加速平台和全域 HTTPS 負載平衡器。 您可以使用 Azure Front Door Service 來建置、操作及擴增您的動態 Web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
 
 Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護自動化、BCDR 自動化、統一的用戶端/使用者資訊、快取和服務見解。 平台提供效能、可靠性和支援 SLA。 它也提供合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
 

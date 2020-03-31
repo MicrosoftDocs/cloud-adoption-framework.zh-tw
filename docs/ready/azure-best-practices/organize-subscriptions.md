@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解如何建立管
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e874c518537232104d9bbddbdf8e84841239e56b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 31265fa67c3a72cbb743df3e4e1a8f7283fa0fcb
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359773"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433280"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
@@ -27,7 +27,7 @@ Azure 管理群組可以有效率地管理組織訂用帳戶的存取、原則�
 Azure 提供四個層級的管理範圍：
 
 - 管理群組
-- 訂用帳戶
+- 訂閱
 - 資源群組
 - 資源
 

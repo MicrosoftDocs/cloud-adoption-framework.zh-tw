@@ -4,16 +4,16 @@ description: 了解身分識別和存取管理 (IAM) 服務可讓您管理雲端
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3fb64c89a36db98a4dbf186f2ff3609bae0c4a2b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6fd5df7d16a1b1155dbada69f7acea9617afb36a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225933"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431443"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 

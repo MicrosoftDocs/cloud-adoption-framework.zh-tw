@@ -4,16 +4,16 @@ description: Azure enterprise scaffold 現在是適用于 Azure 的 Microsoft Cl
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3a1f33fa671dbf42586e371c40ee814d105114d9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353752"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431974"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -55,7 +55,7 @@ Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實�
 
 Scaffold 的基礎是階層和直達訂用帳戶和資源群組的 Azure Enterprise 註冊關聯性。 Enterprise 註冊會以合約的角度來定義公司內部的 Azure 服務形式和用途。 在 Enterprise 合約中，您可以進一步將環境細分成部門、帳戶、訂用帳戶和資源群組，以符合您組織的結構。
 
-![階層](../_images/reference/agreement.png)
+![階層架構](../_images/reference/agreement.png)
 
 Azure 訂用帳戶是內含所有資源的基本單位。 它也可在 Azure 中定義數個限制，例如核心、虛擬網路和其他資源的數目。 資源群組可用來進一步精簡訂用帳戶模型，並啟用更自然的資源群組。
 
@@ -88,7 +88,7 @@ Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群�
 
 設計良好的管理群組，以及 Azure 原則和計畫，這是 Azure 的有效率治理骨幹。
 
-### <a name="subscriptions"></a>訂用帳戶
+### <a name="subscriptions"></a>訂閱
 
 在決定您的部門及帳戶 (或管理群組) 時，您會優先探討如何分配 Azure 環境以符合您的組織。 不過，訂用帳戶是實際工作的發生位置，而您在這裡的決策會影響安全性、擴充性和計費。 許多組織會查看下列模式來作為他們的指引：
 

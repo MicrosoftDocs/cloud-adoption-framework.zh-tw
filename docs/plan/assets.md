@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將資
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354936"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428165"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對應至優先順序的工作負載
 

@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解如何建立卓
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355045"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428666"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 

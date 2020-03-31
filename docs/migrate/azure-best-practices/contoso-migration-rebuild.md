@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2713ce102d115c4f5cd16ef37baaaa22a06acfc8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356351"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431074"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -82,7 +82,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 <!-- markdownlint-enable MD033 -->
 
-### <a name="migration-process"></a>移轉程序
+### <a name="migration-process"></a>移轉處理程序
 
 1. Contoso 會佈建 ACR、AKS 和 Cosmos DB。
 2. 其會佈建基礎結構以供部署使用，包括 Azure App Service Web 應用程式、儲存體帳戶、函式和 API。
@@ -90,7 +90,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 4. Contoso 會使用 PowerShell 指令碼將這些微服務部署至 AKS。
 5. 最後，他們會部署函式和 Web 應用程式。
 
-    ![移轉程序](./media/contoso-migration-rebuild/migration-process.png)
+    ![移轉處理程序](./media/contoso-migration-rebuild/migration-process.png)
 
 ### <a name="azure-services"></a>Azure 服務
 
@@ -101,7 +101,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [詳細資訊](https://azure.microsoft.com/pricing/details/container-registry)。
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [詳細資訊](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -162,7 +162,7 @@ Contoso 管理員會依下列方式進行佈建：
 
    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
-6. 他們會執行 **az login** 命令來驗證 Azure CLI，並遵循指示以使用其網頁瀏覽器進行驗證。 [深入了解](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
+6. 他們會執行 **az login** 命令來驗證 Azure CLI，並遵循指示以使用其網頁瀏覽器進行驗證。 [深入了解](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
 
    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
@@ -340,7 +340,7 @@ Contoso 會建立 Azure DevOps 專案，並設定 CI 組建來建立容器，再
 
 12. 他們會回到 [發行] 頁面，然後手動建立新的發行。
 
-    ![新增發行](./media/contoso-migration-rebuild/back-pipe12.png)
+    ![新發行](./media/contoso-migration-rebuild/back-pipe12.png)
 
 13. 他們會在建立發行之後選取該發行，然後在 [動作] 中選取 [部署]。
 

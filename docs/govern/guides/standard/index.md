@@ -4,16 +4,16 @@ description: 跟著虛構的標準企業經歷治理成熟度的各種階段，�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2ab2fa1cce7e779538137302a326ca49a291ad28
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 26aaf3285d5e68a5add2e91a213a6dfd29c1ca25
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892086"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434344"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 

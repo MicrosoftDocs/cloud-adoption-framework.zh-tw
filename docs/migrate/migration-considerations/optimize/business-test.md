@@ -4,15 +4,15 @@ description: 瞭解如何使用商務測試來請求驗證解決方案效能是�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 15ab13f8d5797921e125c3b397b44213afcde249
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311744"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432382"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>在移轉期間進行商務測試 (UAT) 的指引
 

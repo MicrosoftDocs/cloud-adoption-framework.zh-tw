@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解雲端採用功
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9d0f4faf86322729f468ddd7cfc6bd60e48240ef
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3169fd430ad24526557bb80163c16eff814c618f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092687"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428643"
 ---
 # <a name="cloud-adoption-capabilities"></a>雲端採用功能
 

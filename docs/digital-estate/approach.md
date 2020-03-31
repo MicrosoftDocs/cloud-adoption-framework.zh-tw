@@ -4,16 +4,16 @@ description: 瞭解數位資產規劃的由上而下的工作負載導向、資�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222636"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431027"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 

@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解複寫程式，
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 790ef71ed6a3880b23a851adc0054666e16c0dde
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 584ac5e962c9432e6a1824b3cbb88ff7cb24a35f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092842"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432532"
 ---
 # <a name="replication-options"></a>複寫選項
 

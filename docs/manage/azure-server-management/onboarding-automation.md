@@ -4,15 +4,15 @@ description: 使用上線範例檔案可協助您考慮自動化 Azure 伺服器
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356383"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430576"
 ---
 # <a name="automate-onboarding"></a>自動上架
 

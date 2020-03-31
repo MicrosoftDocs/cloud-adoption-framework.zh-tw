@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，學習如何建立可
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6c3ed91d77320f8c72b0a184dc2aa7054c0089d5
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706671"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434971"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 

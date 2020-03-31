@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解雲端治理功
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: cd6e80330f0de1108ded7a0e57e49c54380fb59b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355009"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428628"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "80355009"
 - IT 營運
 - IT 基礎結構
 - 網路功能
-- 身分識別
+- 相同比較
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者

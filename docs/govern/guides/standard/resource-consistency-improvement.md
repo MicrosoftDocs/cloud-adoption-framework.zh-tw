@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解如何改善治
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170812"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434217"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準企業治理指南：改善資源一致性
 

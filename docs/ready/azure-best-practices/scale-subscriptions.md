@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何使用
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd052e42bc9685701df831878c12ed37ed42395c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3d879119e84bb2beebacce7a8086f2e356132bc2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359760"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433230"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶來調整您的 Azure 環境
 
@@ -38,7 +38,7 @@ ms.locfileid: "80359760"
 
 - 推出
 - 移轉
-- 成本
+- Cost
 - 作業
 - 安全性
 - 控管

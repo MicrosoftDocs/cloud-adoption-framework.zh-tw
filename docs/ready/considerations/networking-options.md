@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解如何識別登
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 71c3a135a89d3ff09cf8511ca619c47db21e1ac9
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 38a9476014b45f4230df6f76b1762249d8a988db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093156"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433891"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 

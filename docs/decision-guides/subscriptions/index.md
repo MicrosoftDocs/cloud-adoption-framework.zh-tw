@@ -4,16 +4,16 @@ description: 了解訂用帳戶設計策略和管理群組階層，以組織您�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e733280147a16287e92ab93334111950a2583497
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2f50efb6e73f59affa8c2b463d363644a026b32c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355472"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431170"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 

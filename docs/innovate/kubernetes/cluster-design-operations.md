@@ -3,16 +3,16 @@ title: 叢集設計和作業
 description: 瞭解適用于叢集設計和作業的雲端採用架構中的 Kubernetes。
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 12/16/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 31ea5b2e5906f08de5197906b57cbe32337e80f9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392726"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426851"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 

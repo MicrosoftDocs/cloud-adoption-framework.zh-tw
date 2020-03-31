@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解雲端自動化
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f519425d83691db0b55ea6aa9d84b7371f632ac0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8e35ed2cdd90b51e13a29b0709f44ad395e9e0fb
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093926"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428621"
 ---
 # <a name="cloud-automation-capabilities"></a>雲端自動化功能
 
@@ -55,7 +55,7 @@ ms.locfileid: "79093926"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱
+- 檢閱：
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)

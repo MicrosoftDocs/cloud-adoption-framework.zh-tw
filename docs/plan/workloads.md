@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何為雲
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354704"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433976"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義和設定雲端採用方案的工作負載優先順序
 
@@ -28,7 +28,7 @@ ms.locfileid: "80354704"
 
 在雲端採用的環境中，工作負載是 IT 資產（伺服器、Vm、應用程式、資料或設備）的集合，共同支援已定義的進程。 工作負載可以支援一個以上的進程。 工作負載也可能相依于其他共用的資產或較大的平臺。 不過，工作負載應該已定義與相依資產相關的界限，以及依存于工作負載的處理常式。 通常，您可以藉由監視 IT 資產之間的網路流量來視覺化工作負載。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 必要條件清單中的策略性輸入可讓您更輕鬆地完成下列工作。 如需收集本文所討論資料的協助，請參閱[必要條件](./prerequisites.md)。
 
@@ -80,7 +80,7 @@ ms.locfileid: "80354704"
 | 法規遵循 | 此工作負載是否有任何協力廠商合規性需求？ |         |
 | 應用程式擁有者 | 誰負責與此工作負載相關聯之任何應用程式的業務影響？ |         |
 | 商務凍結期間 | 在任何時候，企業都不會允許變更嗎？ |         |
-| 地域 | 是否受此工作負載影響的任何地理位置？ |         |
+| 地理位置 | 是否受此工作負載影響的任何地理位置？ |         |
 
 ### <a name="technical-inputs"></a>技術輸入
 

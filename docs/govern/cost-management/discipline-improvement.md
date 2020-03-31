@@ -4,16 +4,16 @@ description: 瞭解公司在雲端採用的每個階段，為了開發和成熟�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 47d6cd60e67b6f17a3a9a3abef6788847854f2f1
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708830"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434713"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 

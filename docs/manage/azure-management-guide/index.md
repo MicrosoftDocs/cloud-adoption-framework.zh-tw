@@ -4,17 +4,17 @@ description: 利用管理 Azure 生產環境所需基本工具的相關資訊，
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 30ce3f5d074e7b446da6c11efe5aa81e1c25724f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356492"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426825"
 ---
 ::: zone target="docs"
 

@@ -4,16 +4,16 @@ description: 取得兩個監視平臺的高階總覽，協助您瞭解每個平�
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9712979e01f2d33dd4fda5039e97771040765f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140547"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433614"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 

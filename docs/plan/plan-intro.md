@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解雲端採用方
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e45d3fe552c13b502f61dfa91e0af85ad10e00b2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354867"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428101"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 

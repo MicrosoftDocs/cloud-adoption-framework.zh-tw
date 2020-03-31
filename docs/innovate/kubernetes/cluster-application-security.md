@@ -3,16 +3,16 @@ title: 叢集和應用程式安全性
 description: 瞭解適用于叢集和應用程式安全性的雲端採用架構中的 Kubernetes。
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 8d0265ff32f7cad82a98fd1dbc1070db40aa6167
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392753"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426875"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 

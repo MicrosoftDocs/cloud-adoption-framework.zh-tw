@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解雲端治理策
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3eff0f6130adc35d8c087d385d42b06e141f3c64
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706858"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433504"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>資源一致性動機和商務風險
 

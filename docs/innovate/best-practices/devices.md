@@ -4,15 +4,15 @@ description: 瞭解 Azure 工具以透過裝置和環境體驗進行互動，以
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c8fa6bb33a6f65052b5cbc4ad159490ff9a5ad23
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171237"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425404"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>在 Azure 中與裝置互動的工具
 

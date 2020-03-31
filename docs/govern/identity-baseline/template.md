@@ -4,16 +4,16 @@ description: 下載身分識別基準範本，並開始記載並傳達在雲端�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b16800dde767b7b257e4ac8bb63cf4083ddd23
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a5fb50a35c064ca72a04301122b0799a5d09999e
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392363"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429873"
 ---
 # <a name="identity-baseline-template"></a>身分識別基準範本
 

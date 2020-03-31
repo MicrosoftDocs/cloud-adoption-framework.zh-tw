@@ -4,15 +4,15 @@ description: 深入瞭解 Azure 資料目錄和其他服務，協助您快速測
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a22742755f9336fd1cbbae3bb4417314228a432d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 613e1ebaa3341b9aa96af659d0eb03cbc21a1303
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356802"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425615"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 
@@ -41,7 +41,7 @@ ms.locfileid: "80356802"
 
 - [Power BI](https://docs.microsoft.com/power-bi)
 - [Azure 資料目錄](https://docs.microsoft.com/azure/data-catalog)
-- [Azure Synapse 分析](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
 - [適用於 PostgreSQL 的 Azure 資料庫](https://docs.microsoft.com/azure/postgresql)
 - [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql)

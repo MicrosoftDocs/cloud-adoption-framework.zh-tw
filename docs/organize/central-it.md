@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何為您
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 00cf24b493bbeacae5e3f3d35d2951cbe838219e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 62c94478e46b30e2f4d905dc09774edaa474da50
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094006"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428687"
 ---
 # <a name="central-it-capabilities"></a>中央 IT 功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "79094006"
 - IT 治理
 - IT 基礎結構
 - 網路功能
-- 身分識別
+- 相同比較
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者
@@ -50,7 +50,7 @@ ms.locfileid: "79094006"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱
+- 檢閱：
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)

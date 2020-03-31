@@ -4,17 +4,17 @@ description: 透過 Azure 功能讓環境做好雲端創新準備，以協助您
 author: matticusau
 ms.author: mlavery
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 262fe97adea985beb2f5f8331ba5a68572900d58
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 46f730847f3c61a77ae9be4304939ff1a8f84ad1
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170999"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427068"
 ---
 ::: zone target="docs"
 

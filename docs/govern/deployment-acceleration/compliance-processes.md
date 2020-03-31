@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，學習建立支援部
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 149fe69eaa89fcc1b0ee7715dad8e4c46dadc963
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3c5d6d187e72217c16ca380f6ef433560b647574
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708762"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434574"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 

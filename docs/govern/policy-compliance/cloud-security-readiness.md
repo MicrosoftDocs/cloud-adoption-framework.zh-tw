@@ -4,15 +4,15 @@ description: 瞭解如何準備資訊安全機構（CISO），以進行雲端轉
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b30cac2fb4ba372c7fd11f8528ecac4c0f3e84c3
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356945"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433046"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -56,7 +56,7 @@ Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導�
 - [回應執法機關 (英文)](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
 - [嚴格的隱私權標準 (英文)](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
 
-合規性：
+規範：
 
 - [Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)
 - [通用控制項中樞](https://www.microsoft.com/trustcenter/Common-Controls-Hub)

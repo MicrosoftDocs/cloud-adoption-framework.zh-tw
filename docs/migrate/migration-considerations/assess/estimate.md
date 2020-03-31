@@ -4,15 +4,15 @@ description: 瞭解可能會影響決策和執行活動的因素，以及各種�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e245937f6990cd6d7d13ffaccae60a2301fcb23
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a9996ac0cc1b3ab324fb16b5f03f37adccaa84bb
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312062"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432818"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 

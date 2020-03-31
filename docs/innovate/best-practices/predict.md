@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，尋找有助於偵測
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a1201c3e1bf05f7fc704b1a12744d8f031607169
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9c261154f502fa96b053caead0ea999697a6f6b4
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356827"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433435"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>在 Azure 中預測和影響資料的工具
 
@@ -37,7 +37,7 @@ ms.locfileid: "80356827"
 - [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
 - [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
 - [Hadoop R ScaleR](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
-- [Azure Synapse 分析](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
 
 每個工具對於每個預測和影響階段的協助都會反映在此頁面左側目錄中的指引。
 

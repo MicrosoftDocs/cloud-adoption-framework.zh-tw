@@ -4,15 +4,15 @@ description: 計算未來從分類和中斷的影響到各種工作負載，以�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ef06eca77f253bab2d743c7df44286f51f531606
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312368"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430315"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 

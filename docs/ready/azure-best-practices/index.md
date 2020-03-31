@@ -4,15 +4,15 @@ description: 了解最佳做法和額外的指引，協助您的小組建立並�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9d14209da7c18a2ba8279977e3c860a3dd1d0589
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354640"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433948"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 

@@ -4,15 +4,15 @@ description: 專注於了解客戶需求，並快速建置雲端創新，以塑�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3e8824e93f5ecc1db8359d8361a4aa6c84dd00f4
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312266"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427625"
 ---
 # <a name="innovation-in-the-digital-economy"></a>數位經濟的創新
 

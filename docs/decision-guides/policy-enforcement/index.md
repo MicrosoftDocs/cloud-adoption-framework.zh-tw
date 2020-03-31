@@ -4,16 +4,16 @@ description: 使用適用於 Azure 的雲端採用架構來了解在 Azure 移�
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f873e95e70fbc9afb06a4603d4be6f9e757d869f
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9d480b98fc69e899185ea9633ebf00725557e908
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355550"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433175"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 

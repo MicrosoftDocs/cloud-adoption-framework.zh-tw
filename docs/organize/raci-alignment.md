@@ -4,16 +4,16 @@ description: 瞭解如何藉由開發跨小組的矩陣，識別負責、參與�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bd95aec82e3135222184ded49a7fc013f95a05e4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: af2ecfdfb10aa56993d893ef9bcc7152f4f3d702
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354962"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428298"
 ---
 <!-- cSpell:ignore ccoe -->
 

@@ -4,15 +4,15 @@ description: 瞭解如何區分有關大型主機的誤解，以及評估最適�
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356876"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425650"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 

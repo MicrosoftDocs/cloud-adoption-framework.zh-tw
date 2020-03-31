@@ -4,18 +4,18 @@ description: 瞭解中樞和輪輻網路拓撲，以更有效率地管理常見�
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: a2827273aa3fd28478c2615610f74f32b155a299
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 1d3d3de47ac46b775e94c89fc390cce84cb647a2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092589"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433996"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 

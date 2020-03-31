@@ -4,15 +4,15 @@ description: 了解協助您準備移轉至雲端的必要條件，並協助您�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb7d0c8b0ee6ebd328ffd4807199e0b0e2620d35
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173327"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429035"
 ---
 # <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 

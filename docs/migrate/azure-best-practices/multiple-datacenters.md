@@ -4,15 +4,15 @@ description: 多個資料中心
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 1a9e9082e4ceca7b83a4491c49e0932a3caaa9d7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898066"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429647"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 

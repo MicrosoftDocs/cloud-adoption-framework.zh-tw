@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，藉由使用 PowerShe
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cdaf9eaba2c7f8df6430dc3ef359e146515437fb
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 3f6d5cbc2485a8e5a3752f24659e8873abb40a8d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356406"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430605"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 

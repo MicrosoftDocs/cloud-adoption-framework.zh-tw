@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解建立和查看
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9bdf568c7f2a04273d2fec0b385c9abb2dfcbf79
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 229f640fed7024b35f67ea3b39c2e4bb2a24a3c2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094059"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428966"
 ---
 # <a name="migration-backlog-review"></a>移轉待處理項目檢閱
 

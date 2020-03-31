@@ -4,16 +4,16 @@ description: 瞭解雲端合理化，評估資產以判斷遷移或現代化雲�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170149"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431072"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -134,7 +134,7 @@ ms.locfileid: "78170149"
 - 商務程序受限於功能
 - 潛在的成本、體驗或營收提升
 
-## <a name="replace"></a>Replace
+## <a name="replace"></a>取代
 
 解決方案通常是使用目前提供的最佳技術和方法來實行。 有時候，軟體即服務（SaaS）應用程式可以為裝載的應用程式提供所有必要的功能。 在這些案例中，可以排程工作負載以供未來更換，以有效地將它從轉換工作中移除。
 

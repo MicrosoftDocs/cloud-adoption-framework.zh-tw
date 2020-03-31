@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解多個雲端，
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05ee11a452044157458d5c27f3f1f522f0f1e617
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 7fa026a06f2f42fda09783a29554e2a6c4797fcd
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357084"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434410"
 ---
 <!-- cSpell:ignore MPLS -->
 

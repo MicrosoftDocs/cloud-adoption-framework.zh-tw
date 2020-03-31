@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何讓技
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 43973a5199f0c5f15e31381cddba56efab1ecb14
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 02582dd6da694c64c8344e17fc301a26e5a82bc7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093825"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428505"
 ---
 # <a name="cloud-strategy-capabilities"></a>雲端策略功能
 

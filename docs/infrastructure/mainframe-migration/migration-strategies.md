@@ -4,15 +4,15 @@ description: 取得在高可用性環境中，將從大型主機平臺切換至 
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140513"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425526"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -55,7 +55,7 @@ Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中
 
 大型主機通常會相應增加，而雲端環境則會向外延展。大型主機可以使用結合設備（CF）向外延展，但是硬體和儲存體的高成本會使大型主機的相應放大變得昂貴。
 
-CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
+CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來擴大或縮小以符合使用者的規格。
 
 ## <a name="backup-and-recovery"></a>備份及復原
 

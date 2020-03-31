@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解針對生產環
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312011"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429222"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>讓遷移後的應用程式準備好進行生產環境升階
 

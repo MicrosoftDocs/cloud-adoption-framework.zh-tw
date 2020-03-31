@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，針對反映標準企
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4c39ddfed1a96cc6ee8433ceab1a00622a319986
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357051"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434237"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 

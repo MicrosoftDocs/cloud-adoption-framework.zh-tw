@@ -4,15 +4,15 @@ description: 深入瞭解 democratization，這是將資料帶入適當手中以
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 2fac366e56e279204a791d5d8813500fe57de8d6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170217"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433317"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
@@ -43,7 +43,7 @@ ms.locfileid: "78170217"
 
 共用資料可以快速產生您可以在客戶交談中使用的 MVP。 不過，若要將共用資料轉換成有用且可操作的知識，通常需要更多的。 透過資料共用來驗證假設之後，下一個階段的開發通常是資料管理。
 
-資料控管是很廣泛的主題，可能需要它自己的專屬架構。 該程度的資料細微性超出[雲端採用架構](../../index.md)的範圍。 不過，有幾個層面的資料管理，您應該在客戶假設通過驗證後立即考慮。 例如：
+資料控管是很廣泛的主題，可能需要它自己的專屬架構。 該程度的資料細微性超出[雲端採用架構](../../index.md)的範圍。 不過，有幾個層面的資料管理，您應該在客戶假設通過驗證後立即考慮。 例如，
 
 - **共用資料是否區分大小寫？** [資料應](../../govern/policy-compliance/data-classification.md)在公開共用之前進行分類，以保護客戶和公司的興趣。
 - **如果資料很敏感，是否受到保護？** 機密資料的保護應為任何大眾化資料的需求。 著重于[保護資料解決方案](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions)的範例工作負載會提供幾個用於保護資料的參考。

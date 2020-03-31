@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構，瞭解雲端轉換內
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 43cec9da3a49bb755f6fa35c757f5e7aaf342db1
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 18357fc22ee7cd482d5799bffcf7454bfaa77afa
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299121"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431698"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 

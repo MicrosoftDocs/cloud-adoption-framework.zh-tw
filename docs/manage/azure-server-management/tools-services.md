@@ -4,15 +4,15 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解 Azure 伺服�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341572"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434066"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
@@ -73,7 +73,7 @@ ms.locfileid: "78341572"
 
 這些服務是支援進行中作業的必要條件：
 
-- [更新管理](/azure/automation/automation-update-management)會在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它支援 Windows 和 Linux 作業系統，並追蹤因遺失修補程式而造成的主要 OS 弱點和不符合的問題。
+- [更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)會在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它支援 Windows 和 Linux 作業系統，並追蹤因遺失修補程式而造成的主要 OS 弱點和不符合的問題。
 - [變更追蹤和清查](https://docs.microsoft.com/azure/automation/change-tracking)可讓您深入瞭解在您的環境中執行的軟體，並反白顯示任何已發生的變更。
 - [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)可讓您執行 Python 和 PowerShell 腳本或 runbook，將整個環境中的工作自動化。 當您使用自動化搭配[混合式 Runbook 背景工作角色](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)時，您也可以將 runbook 延伸至您的內部部署資源。
 - [Azure 自動化狀態設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview)可讓您直接從 Azure 推送 PowerShell DESIRED STATE CONFIGURATION （DSC）設定。 DSC 也可讓您監視和保留客體作業系統和工作負載的設定。

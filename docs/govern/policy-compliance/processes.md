@@ -4,16 +4,16 @@ description: 建立策略和流程，以確保您的雲端部署符合原則需�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709459"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430817"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +47,7 @@ ms.locfileid: "77709459"
 
 規劃評估新的潛在風險，並視需要更新原則聲明和設計指南。 與 IT 人員和工作負載小組合作，持續評估新的 Azure 功能和服務。 同時排程五個治理專業領域的定期審核週期，以確保原則是最新且符合規範。
 
-### <a name="education"></a>教育訓練
+### <a name="education"></a>教育
 
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 

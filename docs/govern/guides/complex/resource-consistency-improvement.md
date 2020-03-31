@@ -4,16 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構來瞭解復原、調整
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7148df4bb06a0dc4ca035b89f7077888fb7306c
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 148a89cd63bfa7c29caea9f5b8f74f64132aed08
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708932"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434333"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雜企業的治理指南：改善資源一致性專業領域
 
