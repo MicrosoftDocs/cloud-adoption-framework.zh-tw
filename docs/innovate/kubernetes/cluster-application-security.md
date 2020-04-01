@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8d0265ff32f7cad82a98fd1dbc1070db40aa6167
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426875"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527251"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "80426875"
 > | **使用網路原則保護 pod 內部網路流量。** 套用最低許可權原則，以控制叢集中 pod 之間的網路流量。 | [使用網路原則保護內部 pod 流量](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **使用授權的 Ip 來限制對 API 伺服器的存取。** 藉由將 API 伺服器的存取限制為一組有限的 IP 位址範圍，來改善叢集安全性並將受攻擊面降至最低。 | [保護對 API 伺服器的存取](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **限制叢集輸出流量。** 如果您限制叢集的輸出流量，請瞭解要允許哪些埠和位址。 您可以使用 Azure 防火牆或協力廠商防火牆設備來保護您的輸出流量，並定義這些必要的埠和位址。 | [在 AKS 中控制叢集節點的輸出流量](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **使用 web 應用程式防火牆（WAF）保護流量。** 利用 Azure 應用程式閘道作為 Kubernetes 叢集的輸入控制器。  | [將 Azure 應用程式閘道設定為輸入控制器](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **使用 web 應用程式防火牆（WAF）保護流量。** 使用 Azure 應用程式閘道作為 Kubernetes 叢集的輸入控制器。  | [將 Azure 應用程式閘道設定為輸入控制器](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **將安全性和核心更新套用至背景工作節點。** 瞭解 AKS 節點更新體驗。 為了保護您的叢集，安全性更新會自動套用至 AKS 中的 Linux 節點。 這些更新包括 OS 安全性修正或核心更新。 這其中有一些更新需要重新啟動節點，才能完成此程序。 | [使用 kured 自動重新開機節點以套用更新](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **設定容器和叢集掃描解決方案。** 掃描已推送至 Azure Container Registry 的容器，並深入瞭解您的叢集節點、雲端流量和安全性控制。 | [Azure Container Registry 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Azure Kubernetes Service 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

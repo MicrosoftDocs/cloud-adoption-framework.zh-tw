@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45493245571d5df8d0ad349ba11cb1fe109027e5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426059"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527638"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的營運合規性
 
@@ -54,7 +54,7 @@ ms.locfileid: "80426059"
 
 作為雲端管理的增強基準，某些工作負載可能會因自動補救而受益。 當工作負載經常遇到無法透過程式碼或架構變更來解決的問題時，自動補救可以協助降低雲端管理的負擔，並提高使用者滿意度。
 
-許多人都認為，任何可自動化的問題都應該透過解決技術債務來解決。 當長期解析非常謹慎時，它應該是預設選項。 不過，許多商務案例都難以證明在解決技術債務時的大量投資。 如果無法證明這種解決方式，但補救是一種常見且昂貴的負擔，則自動補救是下一個最佳解決方案。
+許多人都認為，任何可自動化的問題都應該透過解決技術債務來解決。 當長期解析非常謹慎時，它應該是預設選項。 不過，某些商務案例讓您難以證明在解決技術債務時的大量投資。 如果無法證明這種解決方式，但補救是一種常見且昂貴的負擔，則自動補救是下一個最佳解決方案。
 
 ## <a name="next-steps"></a>後續步驟
 

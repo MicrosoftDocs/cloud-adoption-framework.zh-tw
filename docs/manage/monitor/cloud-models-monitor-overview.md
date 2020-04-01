@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8c27e37ac357fa4ab86377501da527a43eda017f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430020"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527085"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -45,9 +45,9 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 <!-- markdownlint-disable MD033 -->
 
-層 | 資源 | 範圍 | 方法
+階層 | 資源 | 影響範圍 | 方法
 ---|---|---|----
-應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
+Application | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
 Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。
 Azure 資源-基礎結構即服務（IaaS） | 1. Azure 儲存體<br/> 2. Azure 應用程式閘道<br/> 3. 網路安全性群組<br/> 4. Azure 流量管理員<br/> 5. Azure 虛擬機器<br/> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。<br/> 2. 效能和診斷記錄（活動、存取、效能和防火牆）。<br/> 3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。<br/> 4. 監視端點狀態可用性。<br/> 5. 監視來賓 VM 作業系統（OS）中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。<br/> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。<br/> 2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。<br/> 5. 啟用適用於 VM 的 Azure 監視器。<br/> 6. 啟用容器的 Azure 監視器。
 網路 | 您的虛擬機器與一或多個端點（另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址）之間的通訊。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。
@@ -160,7 +160,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 ### <a name="monitor-with-azure-monitor"></a>使用 Azure 監視器進行監視
 
-雖然遷移至雲端會帶來許多挑戰，但它也包含許多機會。 它可讓您的組織從一或多個內部部署企業監視工具進行遷移，不僅可能降低資本支出和營運成本，還能受益于雲端監視平臺之類的優點（例如 Azure 監視器可以雲端規模提供。 檢查您的監視和警示需求、現有監視工具的設定，以及轉換至雲端的工作負載。 當您的方案完成後，請設定 Azure 監視器。
+雖然遷移至雲端會帶來許多挑戰，但也提供了機會。 它可讓您的組織從一或多個內部部署企業監視工具進行遷移，不僅可能降低資本支出和營運成本，還能受益于雲端監視平臺之類的優點（例如 Azure 監視器可以雲端規模提供。 檢查您的監視和警示需求、現有監視工具的設定，以及轉換至雲端的工作負載。 當您的方案完成後，請設定 Azure 監視器。
 
 - 監視混合式基礎結構和應用程式，從簡單或多層式架構，其中元件裝載于 Azure、其他雲端提供者，以及您的公司網路。 這些元件可能包括一或多個 Vm、放置在可用性設定組或虛擬機器擴展集內的多個 Vm，或部署到在 Windows Server 或 Linux 容器上執行之 Azure Kubernetes Service （AKS）的容器化應用程式。
 

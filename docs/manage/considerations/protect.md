@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 322f08ba65aa513d5d76c772c45bfb6563662ffd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430222"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527576"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 
@@ -62,7 +62,7 @@ IT 環境中的大部分工作負載都支援特定的商務或技術程式。 �
 
 ### <a name="protect-and-recover-vms"></a>保護和復原 Vm
 
-大部分的工作負載在虛擬機器上有一些相依性，可裝載解決方案的各個層面。 若要在系統失敗後支援商務程式的工作負載，必須快速復原一些虛擬機器。
+大部分的工作負載在虛擬機器上有一些相依性，可裝載解決方案的各個層面。 若要在系統失敗後支援商務程式的工作負載，必須快速復原某些虛擬機器。
 
 這些虛擬機器的每一分鐘停機時間可能會導致收入流失或獲利降低。 當 VM 停機時間直接影響企業的會計績效時，RTO 非常重要。 虛擬機器可以使用複寫至次要網站，並自動復原（稱為熱復原模式的模型）來更快速地復原。 在復原的最高狀態中，可以將虛擬機器複寫到功能完整的次要網站。 這種較昂貴的方法稱為高可用性或熱熱復原模式。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 62c94478e46b30e2f4d905dc09774edaa474da50
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 5a70b89191f53c3475dd0d14f67d2c4dc4d68115
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428687"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526808"
 ---
 # <a name="central-it-capabilities"></a>中央 IT 功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "80428687"
 - IT 治理
 - IT 基礎結構
 - 網路功能
-- 相同比較
+- 身分識別
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者

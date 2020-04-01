@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425952"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527515"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -87,7 +87,7 @@ ms.locfileid: "80425952"
 
 **原則聲明：** 可能影響雲端部署的趨勢和潛在入侵，應定期由安全性小組審查，以提供雲端中使用的安全性基準工具的更新。
 
-**潛在的設計選項：** 建立週期性安全性審查會議，其中包括相關 IT 與治理小組成員。 請參閱現有的安全性資料和計量，以在目前的原則和安全性基準工具中建立間距，並更新原則以補救任何新的風險。 利用[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)和[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)，針對您的部署特定的新興威脅，取得可操作的深入解析。
+**潛在的設計選項：** 建立週期性安全性審查會議，其中包括相關 IT 與治理小組成員。 請參閱現有的安全性資料和計量，以在目前的原則和安全性基準工具中建立間距，並更新原則以補救任何新的風險。 使用[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)和[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)，針對您的部署特定的新興威脅，取得可操作的深入解析。
 
 ## <a name="next-steps"></a>後續步驟
 

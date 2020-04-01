@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3c41a207ed16364d4fc91625beeb9883bf6a8d0b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433357"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527669"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 
@@ -40,7 +40,7 @@ ms.locfileid: "80433357"
 
 在廣泛採用雲端之前，依賴資訊技術的家發明週期是費力又費時的。 採購和布建週期常常會延遲重要的第一步，直到有新的解決方案。 DevOps 解決方案和意見反應的成本會迴圈延遲小組在初期階段概念發想到和家發明共同作業的能力。 與開發人員環境和資料平臺相關的成本可防止任何人（但高度訓練的專業開發人員）參與建立新的解決方案。
 
-雲端藉由提供自助式自動化布建、輕量開發和部署工具，以及讓專業開發人員和公民開發人員合作建立快速的機會，克服了許多家發明的挑戰適用. 運用雲端進行創新，可大幅降低客戶的挑戰，並阻礙創新方的家發明端。
+雲端藉由提供自助式自動化布建、輕量開發和部署工具，以及讓專業開發人員和公民開發人員合作建立快速的機會，克服了許多家發明的挑戰適用. 使用雲端進行創新，可大幅降低客戶的挑戰，並阻礙創新方的家發明端。
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>家發明數位經濟的挑戰
 

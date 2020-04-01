@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 31ea5b2e5906f08de5197906b57cbe32337e80f9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426851"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527172"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -62,7 +62,7 @@ ms.locfileid: "80426851"
 
 ## <a name="optimize-and-scale"></a>優化和調整
 
-應用程式現在已進入生產階段，如何優化您的工作流程，並準備您的應用程式和小組進行調整？ 利用優化和調整檢查清單來準備。 您應該能夠回答下列問題：
+應用程式現在已進入生產階段，如何優化您的工作流程，並準備您的應用程式和小組進行調整？ 使用優化和調整檢查清單來準備。 您應該能夠回答下列問題：
 
 > [!div class="checklist"]
 >
@@ -77,5 +77,5 @@ ms.locfileid: "80426851"
 > | 檢查清單  | 資源 |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **自動調整叢集以符合應用程式需求。** 若要跟上應用程式的需求，您可能需要調整使用叢集自動調整程式自動執行工作負載的節點數目。 | [設定 Kubernetes cluster 自動調整程式](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **規劃商務持續性和嚴重損壞修復。** 規劃多區域部署、建立儲存體遷移計畫，以及啟用容器映射的異地複寫。 | [多重區域部署的最佳作法](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry 異地複寫](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **規劃商務持續性和嚴重損壞修復。** 規劃多區域部署、建立儲存體遷移計畫，以及啟用容器映射的異地複寫。 | [區域部署的最佳作法](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry 異地複寫](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **設定大規模的監視和疑難排解。** 在 Kubernetes 中設定應用程式的警示和監視。 瞭解預設設定、如何整合更先進的計量，以及如何新增您自己的自訂監視和警示，以可靠地操作您的應用程式。 | [開始進行 Kubernetes 的監視和警示（影片）](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [使用適用于容器的 Azure 監視器來設定警示](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [查看主要元件的診斷記錄](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Azure Kubernetes Service （AKS）診斷](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

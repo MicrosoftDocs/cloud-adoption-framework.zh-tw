@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d40789f1ef65711e7e6347b106e2fc9ce8784190
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434046"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527633"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 
 跨越[清查和可見度](./inventory.md)、作業[合規性](./operational-compliance.md)和[保護與](./protect.md)復原的雲端管理基準，可能會針對 IT 組合中的大部分工作負載提供足夠的雲端管理層級。 不過，該基準幾乎不足以支援完整的組合。 本文是根據雲端管理、組合作業的最常見下一個步驟來建立。
 
-IT 組合中的資產快速研究著重于所支援工作負載的模式。 在這些工作負載中，將會有一些常見的平臺。 根據公司內過去的技術決策，這些平臺可能會有很大的差異。
+IT 組合中的資產快速研究著重于所支援工作負載的模式。 在這些工作負載中，將會有常見的平臺。 根據公司內過去的技術決策，這些平臺可能會有很大的差異。
 
 對於某些組織而言，SQL Server、Oracle 或其他開放原始碼資料平臺會有相當大的相關性。 在其他組織中，共通性可能會以虛擬機器（Vm）或容器的主機平臺為基礎。 有些人可能會對應用程式或企業資源規劃（ERP）系統（例如 SAP、Oracle 或其他）有共同的相依性。
 

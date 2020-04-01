@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2378c3ba3e17a9c1408a07c65129dc853a83d8b2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432825"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527706"
 ---
 # <a name="workload-classification-before-migration"></a>遷移前的工作負載分類
 
@@ -24,7 +24,7 @@ ms.locfileid: "80432825"
 
 ## <a name="data-sensitivity"></a>資料敏感度
 
-如[資料分類](../../../govern/policy-compliance/data-classification.md)一文所述，資料分類會測量資料流程失對企業或客戶的影響。 治理和安全性小組會利用資料敏感性或資料分類作為安全性風險的指標。 在評估期間，雲端採用小組應該評估針對遷移目標的每個工作負載的資料分類，並與支援小組共用該分類。 嚴格處理「公用資料」的工作負載可能不會對支援小組造成任何影響。 不過，隨著資料進一步發展到範圍的「高度機密」端，治理和安全性小組在參與工作負載評估時，可能會有有意的興趣。
+如[資料分類](../../../govern/policy-compliance/data-classification.md)一文所述，資料分類會測量資料流程失對企業或客戶的影響。 治理和安全性小組會使用資料敏感性或資料分類作為安全性風險的指標。 在評估期間，雲端採用小組應該評估針對遷移目標的每個工作負載的資料分類，並與支援小組共用該分類。 嚴格處理「公用資料」的工作負載可能不會對支援小組造成任何影響。 不過，隨著資料進一步發展到範圍的「高度機密」端，治理和安全性小組在參與工作負載評估時，可能會有有意的興趣。
 
 儘早與您的安全性和治理小組合作，以定義下列專案：
 

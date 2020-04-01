@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6ed87d6a46dd1a31611c50ed5ce8d3c30c5849aa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354227"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527212"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -381,7 +381,7 @@ Azure VM 會以分頁 Blob 的形式儲存在 Azure 儲存體中。
 - [了解如何](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots)建立 Blob 快照集。
 - 檢閱 Blob 儲存體備份的[範例案例](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) \(英文\)。
 - [閱讀](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete)虛刪除的相關資訊。
-- [Azure 儲存體中的災害復原和強制容錯移轉 (預覽)](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Azure 儲存體中的災害復原和強制容錯移轉 (預覽)](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
 
 #### <a name="third-party-backup"></a>協力廠商備份
 

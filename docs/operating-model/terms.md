@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 03064395f85470335fc6cdb20bb0f9d7411ca678
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 03843aa441188bb0bd91d0febfdd5681d6a6670b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428844"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526829"
 ---
 # <a name="operating-model-terminology"></a>操作模型術語
 
@@ -35,7 +35,7 @@ ms.locfileid: "80428844"
 
 ## <a name="next-steps"></a>後續步驟
 
-[利用](./index.md)雲端採用架構所提供的作業模型來開發營運成熟度。
+[使用](./index.md)雲端採用架構所提供的作業模型來開發營運成熟度。
 
 > [!div class="nextstepaction"]
-> [運用操作模型](./index.md)
+> [使用操作模型](./index.md)

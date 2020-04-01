@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8d9712979e01f2d33dd4fda5039e97771040765f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433614"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527154"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -63,7 +63,7 @@ Oms 停止時，屬於 OMS 的服務功能不會變更。 它們是在 Azure 監
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager 需要大量的基礎結構和維護來支援管理群組，這是基本的功能單位。 管理群組至少包含一或多個管理伺服器、一個 SQL Server 實例、裝載操作和報表資料倉儲資料庫，以及代理程式。 管理群組設計的複雜性取決於數個因素，例如要監視的工作負載範圍，以及支援工作負載的裝置或電腦數目。 如果您需要高可用性和網站復原功能（通常是企業監視平臺的情況），基礎結構需求和相關維護可能會大幅增加。
+Operations Manager 需要大量的基礎結構和維護來支援管理群組，這是基本的功能單位。 管理群組至少包含一或多個管理伺服器、一個 SQL Server 實例、裝載操作和報表資料倉儲資料庫，以及代理程式。 管理群組設計的複雜性取決於多個因素，例如要監視的工作負載範圍，以及支援工作負載的裝置或電腦數目。 如果您需要高可用性和網站復原功能（通常是企業監視平臺的情況），基礎結構需求和相關維護可能會大幅增加。
 
 ![Operations Manager 管理群組的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 
@@ -121,7 +121,7 @@ Azure 監視器所收集的資料會儲存為記錄或計量，而 Azure 監視�
 
 由於 Azure 監視器會將資料收集與對該資料的動作分隔開來，因此在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
 
-## <a name="health-monitoring"></a>健康情況監視
+## <a name="health-monitoring"></a>健康狀況監視
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -155,7 +155,7 @@ Operations Manager 提供四種基本方式來分析收集的資料：
 
 利用強大的 Azure 監視器分析引擎，您可以互動方式處理記錄資料，並將它們與其他監視資料結合，以進行趨勢和其他資料分析。 [Views] 和 [儀表板] 可讓您從 Azure 入口網站以各種不同的方式來視覺化查詢資料，並將其匯入 Power BI。 監視解決方案包含查詢和視圖，以呈現其所收集的資料。 適用于容器的深入解析（例如 Application Insights、適用於 VM 的 Azure 監視器和 Azure 監視器）包含自訂的視覺效果，可支援互動式監視案例。
 
-## <a name="alerting"></a>警示中
+## <a name="alerting"></a>警示
 
 ### <a name="operations-manager"></a>Operations Manager
 

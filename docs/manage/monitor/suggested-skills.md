@@ -7,18 +7,18 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 128aa99a978f70525e2279868d2317dec8c965cb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433589"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527030"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>雲端監控的技能就緒
 
-在您遷移旅程的計畫階段中，目標是要開發引導執行所需的計畫。 這些方案也必須包含如何在這些工作負載轉換或發行到生產環境之前進行操作，而不會在之後執行。 商務專案關係人預期有價值的服務，而他們預期不會中斷。 IT 人員的成員意識到他們必須學習新技能並進行調整，讓他們能夠安心地利用整合式 Azure 服務，有效監視 Azure 和混合式環境中的資源。
+在您遷移旅程的計畫階段中，目標是要開發引導執行所需的計畫。 這些方案也必須包含如何在這些工作負載轉換或發行到生產環境之前進行操作，而不會在之後執行。 商務專案關係人預期有價值的服務，而他們預期不會中斷。 IT 人員的成員意識到他們必須學習新技能並進行調整，讓他們能夠安心地使用整合式 Azure 服務來有效監視 Azure 和混合式環境中的資源。
 
 您可以使用下列學習路徑來加速開發必要的技能：
 
@@ -81,6 +81,6 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 請參閱下列內容，以瞭解對最受歡迎的 ITSM framework [ITIL v4 和雲端運算技術白皮書](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)的更新，其重點在於將現有的 ITIL 指導方針與 DevOps、Agile 和瘦的最佳做法聯結在一起。 也請考慮[IT4IT 參考架構](https://www.opengroup.org/it4it)，以提供如何使用不受處理的架構來轉換它的替代藍圖。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。

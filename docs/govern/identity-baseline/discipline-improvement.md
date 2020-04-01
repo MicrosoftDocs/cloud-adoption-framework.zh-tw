@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f945ee790bf33d37601ba5a09c49581f95a5d9a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 48da6b708644030a2efc20dc0764bcb1b40ffe25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434991"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527601"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -130,7 +130,7 @@ ms.locfileid: "80434991"
 - 檢查上線、脫離和認證更新流程。
 - 調查身分識別存取管理 (IAM) 模組之間的自動化和通訊增加層級。
 - 請考量實作開發安全性作業 (DevSecOps) 方法。
-- 執行成本、安全性和使用者採用量測結果的影響分析。
+- 進行影響分析來測量成本、安全性和使用者採用的結果。
 - 定期產生影響報告，顯示系統所建立計量的變更，並且評估[混合式身分識別策略](../../decision-guides/identity/index.md)的業務影響。
 - 建立 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)所建議的整合監視。
 

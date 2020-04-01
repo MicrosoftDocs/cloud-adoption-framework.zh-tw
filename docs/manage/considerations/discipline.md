@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ccb7a6e428075a69532238f25fd89e825f2a4b35
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c57b2326475f9434aee0b98cf69bf85956ce076e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426331"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527116"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理調節
 
@@ -27,14 +27,14 @@ ms.locfileid: "80426331"
 作為起點，請考慮建立如上圖所示的管理層級，並在下列清單中建議：
 
 - **管理基準：** 雲端管理基準（或管理基準）是一組已定義的工具、程式和一致定價，可作為 Azure 中所有雲端管理的基礎。 若要建立雲端管理基準，並判斷哪些工具要包含在您企業的基準供應專案中，請參閱「雲端管理專業領域」一節中的清單。
-- **增強的基準：** 許多工作負載可能需要對不一定是單一平臺或工作負載特有的基準進行增強。 雖然這些增強功能對每個工作負載而言並不符合成本效益，但對於任何工作負載而言，應該要有一般的程式、工具和解決方案，以證明額外管理支援的成本。
+- **增強的基準：** 某些工作負載可能需要針對單一平臺或工作負載不一定特定的基準增強。 雖然這些增強功能對每個工作負載而言並不符合成本效益，但對於任何工作負載而言，應該要有一般的程式、工具和解決方案，以證明額外管理支援的成本。
 - **平臺特製化：** 在任何指定的環境中，某些常見的平臺會由各種不同的工作負載使用。 當企業採用雲端時，這種一般架構的共同點並不會改變。 平臺特製化是更高的管理層級，可套用資料和架構主題專業知識，以提供更高層級的作業管理。 平臺特製化的範例包括 SQL Server、容器、Active Directory 或其他服務特有的管理功能，可以透過一致、可重複的程式、工具和架構進行更佳的管理。
 - **工作負載特製化：** 對於真正要徑任務的工作負載，可能會有成本上的理由，以更深入的方式管理該工作負載。 工作負載特製化會套用工作負載遙測，以判斷更先進的日常管理方法。 相同的資料通常會識別自動化、部署和設計方面的改進，使其比單獨操作管理還能提供更高的穩定性、可靠性和復原能力。
 - **不支援：** 針對分類為不受支援或不重要的工作負載，溝通不會透過雲端管理專業領域傳遞的一般管理流程，同樣重要。
 
 組織也可以選擇將與[一或多個這些管理層級相關的功能外包給服務提供者](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)來提供更高的精確度和透明度。
 
-本系列的其餘文章概述許多在這些專業領域中經常會發現的進程。
+本系列中的其餘文章將概述在這些專業領域中經常發現的處理常式。
 [Azure 管理指南](../azure-management-guide/index.md)會以平行方式示範可支援每個處理常式的工具。 如需建立管理基準的協助，請從 Azure 管理指南開始。 建立基準之後，本文系列和隨附的最佳作法可協助擴充該基準，以定義其他層級的管理支援。
 
 ## <a name="cloud-management-disciplines"></a>雲端管理專業領域

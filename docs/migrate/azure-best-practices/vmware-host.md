@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e6c83204fae94210f9675654d106f4c224dfc912
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 735c958838cecc5704f38a76b2a27371628cdb66
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429612"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527745"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>適用于 Azure 的 VMware 主機遷移最佳做法
 
@@ -22,4 +22,4 @@ ms.locfileid: "80429612"
 
 ## <a name="migration-best-practices"></a>移轉最佳做法
 
-左邊的目錄會列出多個 Microsoft web 內容的一些最佳作法，其可引導您執行 VMware 主機遷移至 Azure VMware 解決方案（AVS）。 將此頁面加入書簽，以快速參考完整的最佳作法清單。
+左側的目錄列出多個 Microsoft web 內容的最佳作法，可引導您執行 VMware 主機遷移至 Azure VMware 解決方案（AVS）。 將此頁面加入書簽，以快速參考完整的最佳作法清單。
