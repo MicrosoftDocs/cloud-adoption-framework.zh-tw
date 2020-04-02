@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: f3d92caa6d71451975c47c1c596fe2332264388f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 48d8659e757c5cf078b33097a4be467e3c8ba2b9
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433940"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606641"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -75,7 +75,7 @@ ms.locfileid: "80433940"
 
 下列清單提供當您定義命名慣例時，可使用的建議 Azure 資源類型首碼。
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
 ### <a name="general"></a>一般
 
@@ -173,7 +173,7 @@ ms.locfileid: "80433940"
 | IoT 中樞                         | iot        |
 | Power BI Embedded               | pbi        |
 
-### <a name="integration"></a>Integration
+### <a name="integration"></a>整合
 
 | 資產類型        | 名稱前置詞 |
 |-------------------|-------------|
@@ -220,7 +220,7 @@ ms.locfileid: "80433940"
 | 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_、_開發_、 _QA_、_階段_、_測試_                       |
 | 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                      | _擁有者_           | _{電子郵件}_                                                  |
 | 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                                 | _Requestor_       | _{電子郵件}_                                                  |
-| Service 類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                          |
+| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                          |
 | 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                                  | _StartDate_       | _{日期}_                                                   |
 
 ## <a name="example-names"></a>範例名稱
@@ -233,7 +233,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-general"></a>範例名稱：一般
 
-| 資產類型                      | 範圍                              | [格式]                                                      | 範例                                                                                                                |
+| 資產類型                      | 影響範圍                              | [格式]                                                      | 範例                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | 訂用帳戶                    | 帳戶 <br/>Enterprise 合約 | \<業務單位\>-\<訂用帳戶名稱\>-\<\#\#\#\>          | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul>                                        |
 | 資源群組                  | 訂用帳戶                       | rg\<應用程式或服務名稱\>-\<訂用帳戶類型\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
@@ -241,7 +241,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-networking"></a>範例名稱：網路
 
-| 資產類型                   | 範圍           | [格式]                                                               | 範例                                                                                                                      |
+| 資產類型                   | 影響範圍           | [格式]                                                               | 範例                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 虛擬網路              | 資源群組  | vnet-\<訂用帳戶類型\>-\<區域\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | 子網路                       | 虛擬網路 | snet-\<訂用帳戶\>-\<子區域\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
@@ -258,7 +258,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-compute-and-web"></a>範例名稱： Compute 和 Web
 
-| 資產類型                  | 範圍          | [格式]                                                              | 範例                                                                                                                          |
+| 資產類型                  | 影響範圍          | [格式]                                                              | 範例                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | 虛擬機器             | 資源群組 | vm\<原則名稱或應用程式名稱\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | VM 儲存體帳戶          | 全域         | stvm\<效能類型\>\<應用程式名稱或產品名稱\>\<區域\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
@@ -270,7 +270,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-databases"></a>範例名稱：資料庫
 
-| 資產類型                     | 範圍              | [格式]                                 | 範例                                                                  |
+| 資產類型                     | 影響範圍              | [格式]                                 | 範例                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Azure SQL Database 伺服器      | 全域             | sql\<應用程式名稱\>-\<環境\>       | <ul><li>sql-navigator-生產環境 </li><li>sql-排放-開發</li></ul>           |
 | Azure SQL 資料庫             | Azure SQL Database | sqldb-\<資料庫名稱 >-\<環境\> | <ul><li>sqldb-使用者-生產環境 </li><li>sqldb-使用者-開發人員</li></ul>               |
@@ -283,7 +283,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-storage"></a>範例名稱：儲存體
 
-| 資產類型                        | 範圍  | [格式]                                                                        | 範例                                                              |
+| 資產類型                        | 影響範圍  | [格式]                                                                        | 範例                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | 儲存體帳戶（一般用途）     | 全域 | st\<儲存體名稱\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | 儲存體帳戶（診斷記錄） | 全域 | stdiag\<訂用帳戶名稱的前兩個字母和數字\>\<區域\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
@@ -291,7 +291,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-ai--machine-learning"></a>範例名稱： AI + Machine Learning
 
-| 資產類型                       | 範圍          | [格式]                            | 範例                                                          |
+| 資產類型                       | 影響範圍          | [格式]                            | 範例                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
 | Azue 認知搜尋           | 全域         | srch-\<應用程式名稱\>-\<環境\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
 | Azure 認知服務         | 資源群組 | 齒輪-\<應用程式名稱\>-\<環境\>  | <ul><li>齒輪-navigator-生產環境 </li><li>齒輪-排放-開發</li></ul>   |
@@ -299,7 +299,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-analytics-and-iot"></a>範例名稱：分析和 IoT
 
-| 資產類型                  | 範圍          | [格式]                              | 範例                                                              |
+| 資產類型                  | 影響範圍          | [格式]                              | 範例                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
 | Azure Data Factory          | 全域         | adf-\<應用程式名稱\>\<環境\>     | <ul><li>adf-navigator-生產環境 </li><li>adf-排放-開發</li></ul>       |
 | Azure 串流分析      | 資源群組 | asa-\<應用程式名稱\>-\<環境\>    | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>       |
@@ -314,7 +314,7 @@ ms.locfileid: "80433940"
 
 ### <a name="example-names-integration"></a>範例名稱：整合
 
-| 資產類型        | 範圍       | [格式]                                                     | 範例                                                      |
+| 資產類型        | 影響範圍       | [格式]                                                     | 範例                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
 | 服務匯流排       | 全域      | sb-\<應用程式名稱\>-\<環境\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | 服務匯流排佇列 | 服務匯流排 | sbq-\<查詢描述項\>                                   | <ul><li>sbq-messagequery</li></ul>                            |

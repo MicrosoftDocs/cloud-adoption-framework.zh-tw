@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 38a9476014b45f4230df6f76b1762249d8a988db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: aca8a2843001490924fbe922c11a2550e3522b11
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433891"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606628"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "80433891"
 回答下列有關工作負載的問題，以協助您根據 Azure 網路服務決策樹來做出決策：
 
 - **您的工作負載是否需要虛擬網路？** 受控平台即服務 (PaaS) 資源類型使用不一定需要虛擬網路的基礎平台網路功能。 如果您的工作負載不需要進階的網路功能，而且您不需要部署基礎結構即服務 (IaaS) 資源，則 [PaaS 資源所提供的預設原生網路功能](../../decision-guides/software-defined-network/paas-only.md)可能會符合您的工作負載連線能力和流量管理需求。
-- **您的工作負載是否需要虛擬網路與內部部署資料中心之間的連線能力？** Azure 提供兩種用來建立混合式網路功能的解決方案： Azure VPN 閘道和 Azure ExpressRoute。 [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)會透過站對站 VPN，將您的內部部署網路連線到 Azure，方法和您設定及連線到遠端分公司很類似。 VPN 閘道具有 1.25 GBps 的最大頻寬。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) 使用 Azure 與您內部部署基礎結構之間的私人連線，提供更高的可靠性和較低的延遲。 ExpressRoute 的頻寬選項範圍從 50 MBps 到 100 GBps。
+- **您的工作負載是否需要虛擬網路與內部部署資料中心之間的連線能力？** Azure 提供兩種用來建立混合式網路功能的解決方案： Azure VPN 閘道和 Azure ExpressRoute。 [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)會透過站對站 VPN，將您的內部部署網路連線到 Azure，方法和您設定及連線到遠端分公司很類似。 VPN 閘道的最大頻寬為 10 Gbps。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) 使用 Azure 與您內部部署基礎結構之間的私人連線，提供更高的可靠性和較低的延遲。 ExpressRoute 的頻寬選項範圍從 50 Mbps 到 100 Gbps。
 - **您是否需要使用內部部署網路裝置來檢查和稽核傳出流量？** 針對雲端原生工作負載，您可以[使用 Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)或雲端託管第三方[網路虛擬裝置 (NVA)](https://azure.microsoft.com/solutions/network-appliances) 來檢查和稽核進出公用網際網路的流量。 不過，許多企業 IT 安全性原則都需要網際網路繫結的連出流量，才能通過組織內部部署環境中集中管理的裝置。 [強制通道](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)支援這些案例。 並非所有受控服務都支援強制通道。 當服務或功能部署在虛擬網路內時，[Azure App Service 中的 App Service 環境](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure API 管理](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure SQL Database 中的受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks) 和 [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight) 等服務和功能支援此設定。
 - **您是否需要連接多個虛擬網路？** 您可以使用[虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)來連接多個 [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)的執行個體。 對等互連可支援跨訂用帳戶和區域的連接。 針對您提供跨多個訂用帳戶共用的服務，或需要管理大量網路對等互連的案例，請考慮採用[中樞和輪輻網路架構](../../decision-guides/software-defined-network/hub-spoke.md)，或使用 [Azure虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)。 虛擬網路對等互連只會提供兩個對等互連網路之間的連線能力。 根據預設，它不會跨多個對等互連提供可轉移的連線能力。
 - **您的工作負載是否可透過網際網路存取？** Azure 提供的服務是設計用來協助您管理及保護應用程式和服務的外部存取：

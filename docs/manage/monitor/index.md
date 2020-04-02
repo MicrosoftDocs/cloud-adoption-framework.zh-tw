@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426048"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606561"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -31,9 +31,9 @@ ms.locfileid: "80426048"
 
 本指南的目標是要提供詳細的參考，以協助企業 IT 經理、業務決策者、應用程式架構設計人員和應用程式開發人員了解：
 
-* Azure 監視平台針對其功能進行概述和比較。
-* 用於監視混合、私人和 Azure 原生工作負載的最佳解決方案。
-* 建議的端對端監視方法，用於監視基礎結構和應用程式。 此方法包括可部署的解決方案，可將這些常見的工作負載遷移至 Azure。
+- Azure 監視平台針對其功能進行概述和比較。
+- 用於監視混合、私人和 Azure 原生工作負載的最佳解決方案。
+- 建議的端對端監視方法，用於監視基礎結構和應用程式。 此方法包括可部署的解決方案，可將這些常見的工作負載遷移至 Azure。
 
 本文不是使用或配置個別 Azure 服務和解決方案的操作指南，但的確會在適用或可用時引用這些來源。 閱讀本文後，您將了解如何遵循最佳做法和模式來讓工作負載成功運作。
 
@@ -47,21 +47,21 @@ ms.locfileid: "80426048"
 
 本文是系列文章的其中一篇。 下列文章應依序一起閱讀：
 
-* 簡介 (本文)
-* [雲端部署模型的監視策略](./cloud-models-monitor-overview.md)
-* [收集正確的資料](./data-collection.md)
-* [警示](./alerting.md)
+- 簡介 (本文)
+- [雲端部署模型的監視策略](./cloud-models-monitor-overview.md)
+- [收集正確的資料](./data-collection.md)
+- [警示](./alerting.md)
 
 ## <a name="products-and-services"></a>產品與服務
 
 有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 其中包括：
 
-* System Center Operations Manager
-* Azure 監視器現在包含 Log Analytics 和 Application Insights
-* Azure 原則和 Azure 藍圖
-* Azure 自動化
-* Azure Logic Apps
-* Azure 事件中心
+- System Center Operations Manager
+- Azure 監視器現在包含 Log Analytics 和 Application Insights
+- Azure 原則和 Azure 藍圖
+- Azure 自動化
+- Azure Logic Apps
+- Azure 事件中心
 
 本指南的第一個版本涵蓋我們目前的監視平台：Azure 監視器和 System Center Operations Manager。 其中也會概述用於監視每個雲端部署模型的建議策略。 其中也包含第一組監視建議，從資料收集和警示開始。
 
