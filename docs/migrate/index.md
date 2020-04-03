@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 10fa2bf0f63351adbf50c04b2725090d0c350d2d
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 8d110115bf56dfa0fd40e4e26f9c1dde065d0209
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527766"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636486"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -45,7 +45,7 @@ ms.locfileid: "80527766"
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./expanded-scope/index.md">
+        <a href="./azure-best-practices/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
