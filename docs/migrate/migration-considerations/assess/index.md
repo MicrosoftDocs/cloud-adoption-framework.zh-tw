@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429429"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527671"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>在移轉前驗證評估假設
 
@@ -45,13 +45,13 @@ ms.locfileid: "80429429"
   - 雲端策略小組的成員應在雲端採用小組的指引下，負起此活動的最終責任。
 - **專案關係人共識。** 小組與內部專案關係人在期望和優先順序上取得共識，識別出移轉的成功準則。 在移轉後取得成功的定義為何？
 - **精簡合理化。** 評估有關合理化的初始假設。 是否應該使用不同的[合理化方法](../../../digital-estate/rationalize.md)來遷移此特定工作負載？
-- **現代化決策。** 無論合理化決策為何，是否都應該將工作負載中的各種資產現代化，以便利用 PaaS 架構的解決方案？
+- **現代化決策。** 無論合理化決策為何，是否都應該將工作負載中的各種資產現代化，以便使用 PaaS 架構的解決方案？
 - **成本。** 已估計目標架構的成本，且已調整整體預算。
 - **移轉支援。** 小組已決定移轉技術性作業的完成方式，其中包括與合作夥伴或 Microsoft 支援相關的決定。
 - **評估。** 已針對相容性和相依性評估工作負載。
   - 此活動應該指派給熟悉候選工作負載之架構和作業的主題專家。
 - **架構設計人員。** 小組已在已移轉之工作負載的最終狀態架構上取得共識。
-- **移轉工具。** 根據不同的現代化和建構方法，可能會使用各種不同的移轉工具來自動化移轉作業。 若是以提議的架構作為基礎，此移轉是否會利用最佳的[移轉工具](../../../decision-guides/migrate-decision-guide/index.md)？
+- **移轉工具。** 根據不同的現代化和建構方法，可能會使用各種不同的移轉工具來自動化移轉作業。 若是以提議的架構作為基礎，此移轉是否會使用最佳的[移轉工具](../../../decision-guides/migrate-decision-guide/index.md)？
 - **待辦項目共識。** 雲端採用小組會檢閱需求，並認可候選工作負載的移轉。 在認可之後，必須據此更新發行待辦項目和反覆項目待辦項目。
 - **分工結構圖或反向推演排程。** 小組建立主要里程碑的排程，識別出完成規劃、實作及檢閱程序後應達成的目標。
 - **最終核准。** 所有必要的核准者皆已檢閱方案，並同意資產的移轉方式。

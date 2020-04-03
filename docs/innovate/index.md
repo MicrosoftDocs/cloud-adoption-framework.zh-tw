@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427429"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527604"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 
@@ -59,7 +59,7 @@ ms.locfileid: "80427429"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Azure 創新指南</h3>
-Azure 包含數個可加快部署創新解決方案的雲端工具。 視您的假設而定，您可以考慮各種不同的工具組合。 建議您使用基本工具來建立最簡可行產品 (MVP)。
+Azure 包含可加快部署創新解決方案的雲端工具。 視您的假設而定，您可以考慮各種不同的工具組合。 建議您使用基本工具來建立最簡可行產品 (MVP)。
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [Azure 中的管理員容器](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)：Azure 容器執行個體 (ACI) 是在 Azure 中執行容器最快速且簡單的方式。 此學習路徑將告訴您如何建立和管理您的容器，以及如何使用 ACI 為 Kubernetes 提供彈性的規模。
 
-[建立無伺服器應用程式](https://docs.microsoft.com/learn/paths/create-serverless-applications)：Azure Functions 可建立由事件驅動、依需求計算的系統，以供各種不同的外部事件觸發。 了解如何運用函式來執行伺服器端邏輯，並建置信無伺服器架構。
+[建立無伺服器應用程式](https://docs.microsoft.com/learn/paths/create-serverless-applications)：Azure Functions 可建立由事件驅動、依需求計算的系統，以供各種不同的外部事件觸發。 了解如何使用函式來執行伺服器端邏輯，並建置無伺服器架構。
 
 如要探索其他學習路徑，請瀏覽[學習目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: 353cf2effa8158634f93299c504bd3c069b5d11b
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: de34df16a5c709ac5cffbdb355f70c60c8a18c25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093727"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527689"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -77,7 +77,7 @@ ms.locfileid: "79093727"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>建立小組</h3>
-定義將提供各種雲端功能的小組。 這裡列出一些最佳做法選項以供參考。
+定義將提供各種雲端功能的小組。 這裡列出多種最佳做法選項以供參考。
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ ms.locfileid: "79093727"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>RACI 矩陣</h3>
-明確定義的角色是任何作業模型的重要層面。 利用提供的 RACI 矩陣，將職責、責任、諮詢和知情角色對應到每個小組，以實現雲端作業模型的各種功能。
+明確定義的角色是任何作業模型的重要層面。 使用提供的 RACI 矩陣，將職責、責任、諮詢和知情角色對應到每個小組，以實現雲端作業模型的各種功能。
                         </div>
                     </div>
                 </div>

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 46f730847f3c61a77ae9be4304939ff1a8f84ad1
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 77183556afb043ef7e71a57c14f372f522684094
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427068"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527334"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ ms.locfileid: "80427068"
 >
 > - **管理客戶意見反應：** 設定工具和流程，以使用 GitHub 和 Azure DevOps 管理「建置-測量-學習」意見反應迴圈。
 > - **將資料大眾化：** 單單資料可能就足以讓客戶接受創新解決方案。 請在 Azure 中部署常見的資料選項。
-> - **透過應用程式參與：** 有些創新需要有吸引人的體驗。 請利用雲端原生應用程式平台來建立吸引人的體驗。
+> - **透過應用程式參與：** 有些創新需要有吸引人的體驗。 請使用雲端原生應用程式平台來建立吸引人的體驗。
 > - **實現採用：** 發明值得鼓勵，但需要有可以減少摩擦的計劃，才能實現和擴大採用。 請為 CI/CD、DevOps 和其他採用促成因子部署基礎。
 > - **透過裝置來互動：** 建立環境體驗，讓應用程式和資料更貼近客戶的需求重點。 使用 Azure 可讓 IoT、混合實境和行動體驗變得更容易。
 > - **預測和影響：** 找出資料的模式。 讓這些模式發揮作用，透過以 Azure 為基礎的預測性分析工具，來預測及影響客戶行為。
