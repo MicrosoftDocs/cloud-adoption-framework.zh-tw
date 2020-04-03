@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c410527182d7185a052bc99826ea06154fdae5f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2d836e6d5397a5b2ff36ab57ee23712cfe40561a
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429642"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636442"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -79,7 +79,7 @@ ms.locfileid: "80429642"
 
 ## <a name="next-steps"></a>後續步驟
 
-回到[擴充的範圍檢查清單](./index.md)，以確保您的移轉方法已完全配合。
+返回[遷移最佳做法檢查清單](./index.md)，以確保您的遷移方法完全一致。
 
 > [!div class="nextstepaction"]
-> [擴充的範圍檢查清單](./index.md)
+> [遷移最佳做法檢查清單](./index.md)

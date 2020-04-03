@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42eba9c774a063fe915db50b6615a3a59ce261c6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 760eee5216ad774e7f55b13257c46aef97008792
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434019"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636394"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -68,7 +68,7 @@ ms.locfileid: "80434019"
 
 ## <a name="next-steps"></a>後續步驟
 
-作為[擴充範圍檢查清單](./index.md)的最後一個專案，請返回檢查清單，然後重新評估遷移工作的任何其他範圍需求。
+作為[遷移最佳做法檢查清單](./index.md)的最後一個專案，請回到檢查清單，然後重新評估遷移工作的任何其他範圍需求。
 
 > [!div class="nextstepaction"]
-> [擴充的範圍檢查清單](./index.md)
+> [遷移最佳做法檢查清單](./index.md)

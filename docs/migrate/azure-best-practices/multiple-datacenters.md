@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a9e9082e4ceca7b83a4491c49e0932a3caaa9d7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429647"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636424"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 
@@ -66,7 +66,7 @@ ms.locfileid: "80429647"
 
 ## <a name="next-steps"></a>後續步驟
 
-回到[擴充的範圍檢查清單](./index.md)，以確保您的移轉方法完全一致。
+返回[遷移最佳做法檢查清單](./index.md)，以確保您的遷移方法完全一致。
 
 > [!div class="nextstepaction"]
-> [擴充的範圍檢查清單](./index.md)
+> [遷移最佳做法檢查清單](./index.md)

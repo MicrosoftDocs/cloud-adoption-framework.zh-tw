@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: adf99d715a5b1a867fd76a40d47fd0d46848f8ad
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527047"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636540"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 
@@ -97,7 +97,7 @@ ms.locfileid: "80527047"
 
 **最小範圍：** 創新方法說明如何透過商業價值共識來整合策略和計畫。 本指南會介紹雲端原生工具，以加速每個專業領域的創新，並隨附最佳做法來實現。 最後，「程式改進」一節會示範建立客戶理解的方法，同時尊重雲端採用旅程的計畫和策略。 這種方法的重點在於利用盡可能少的技術來提供創新。
 
-**擴充的範圍範例：** 有時候，創新可能相依于高敏感性工作負載的要徑任務。 當「客戶」是內部使用者時，在最早的反復專案期間，開發工作可能是任務關鍵性和高敏感度。 針對這些案例，採用小組應該使用 Azure 架構審查和 Azure 架構架構，及早評估程式中的先進結構設計。
+**擴充的範圍範例：** 有時候，創新可能相依于任務關鍵性或高敏感度的工作負載。 當「客戶」是內部使用者時，在最早的反復專案期間，開發工作可能是任務關鍵性和高敏感度。 針對這些案例，採用小組應該使用 Azure 架構審查和 Azure 架構架構，及早評估程式中的先進結構設計。
 
 ## <a name="balance-during-govern"></a>管理期間的平衡
 

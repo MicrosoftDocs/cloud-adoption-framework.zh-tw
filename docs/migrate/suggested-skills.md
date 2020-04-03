@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a491bf0c5530898e229c5f87e3ef09a55b100382
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e390fe341662fc2aedef82db2db33050e49efa6c
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428936"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636406"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
@@ -60,11 +60,11 @@ ms.locfileid: "80428936"
 
 下列工具可協助小組尋找保護和管理已遷移資產的方法：
 
-- [保護和管理 azure 中的工作負載](azure-best-practices/migrate-best-practices-security-management.md)：保護和管理 azure 中工作負載的最佳作法。
+- [保護和管理 azure 中的工作負載](./azure-best-practices/migrate-best-practices-security-management.md)：保護和管理 azure 中工作負載的最佳作法。
 
 ## <a name="next-steps"></a>後續步驟
 
-回到[擴充的範圍檢查清單](./index.md)，以確保您的移轉方法已完全配合。
+返回[遷移最佳做法檢查清單](./azure-best-practices/index.md)，以確保您的遷移方法完全一致。
 
 > [!div class="nextstepaction"]
-> [擴充的範圍檢查清單](./index.md)
+> [遷移最佳做法檢查清單](./index.md)
