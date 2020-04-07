@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 22f2718775b194196f65672f0cbc1712d0a3a4ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433554"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636402"
 ---
 # <a name="best-practices-for-cloud-migration"></a>雲端移轉的最佳做法
 
 如果您想遷移至 Azure，建議您以雲端採用架構中的 [Azure 移轉指南](../azure-migration-guide/index.md)作為起點。 該指南能引導您使用一組工具和基本方法，將虛擬機器遷移至雲端。 雲端採用架構的這一節，將說明許多超越基本雲端原生工具的最佳做法。
 
-## <a name="cloud-migration-best-practice-checklist"></a>雲端移轉最佳做法檢查清單
+## <a name="cloud-migration-best-practices-checklist"></a>雲端移轉最佳做法檢查清單
 
 下列檢查清單會概述常見的複雜度區域，其可能會需要將移轉範圍擴充至 [Azure 移轉指南](../azure-migration-guide/index.md)的範圍之外。
 

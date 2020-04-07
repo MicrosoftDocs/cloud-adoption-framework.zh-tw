@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432993"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636498"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前
 
@@ -55,7 +55,7 @@ ms.locfileid: "80432993"
 - 要移轉的元件相依性對應很容易定義。
 - 您的產業和此移轉相關的法規需求最少。
 
-如果上述有任一條件不適用於您的情況，就應該考慮改用[擴充範圍指南](../expanded-scope/index.md)。 我們也建議您向其中一個 Microsoft 小組或合作夥伴要求協助，執行需要擴充範圍指南的移轉。 有 Microsoft 或經認證的合作夥伴參與其中的客戶，較能成功移轉。 要求協助的詳細資訊可在本指南取得。
+如果上述有任一條件不適用於您的情況，就應該考慮改用其他[雲端移轉的最佳作法](../azure-best-practices/index.md)。 我們也建議您向其中一個 Microsoft 小組或合作夥伴要求協助，以執行更複雜的移轉。 有 Microsoft 或經認證的合作夥伴參與其中的客戶，較能成功移轉。 要求協助的詳細資訊可在本指南取得。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ ms.locfileid: "80432993"
 
 如需詳細資訊，請參閱
 
-- [擴充範圍指南](../expanded-scope/index.md)
+- [雲端移轉的最佳做法](../azure-best-practices/index.md)
 
 ::: zone-end
