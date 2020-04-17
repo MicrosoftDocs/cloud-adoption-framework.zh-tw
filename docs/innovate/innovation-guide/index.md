@@ -10,10 +10,10 @@ ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
 ms.openlocfilehash: 77183556afb043ef7e71a57c14f372f522684094
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527334"
 ---
 ::: zone target="docs"

@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
 ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527604"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新

@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
 ms.openlocfilehash: 6575848df4a20fd828ed2c07703881a171cbfb69
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80526831"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型

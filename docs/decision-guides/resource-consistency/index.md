@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04386ec98ed0ecb6269c53a60f64bc73f148b12f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434863"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996338"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -29,7 +29,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 ## <a name="basic-grouping"></a>基本分組
 
-在 Azure 中，[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)是以邏輯方式將訂用帳戶內的資源分組的核心資源組織機制。
+在 Azure 中，[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)是以邏輯方式將訂用帳戶內的資源分組的核心資源組織機制。
 
 資源群組會作為具有一般生命週期和共用管理條件約束 (例如原則或角色型存取控制 (RBAC) 要求) 的資源容器。 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 所有控制平面動作都會對資源群組中的所有資源採取行動。 例如，刪除資源群組也會刪除該群組內的所有資源。 資源群組管理的慣用模式是考慮：
 
@@ -46,7 +46,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 Azure 平台皆建置在基本的資源分組機制之上，提供的系統可使用範本將資源部署至雲端環境。 您可以在部署工作負載時使用範本建立一致的組織和命名慣例，強制執行您資源部署和管理設計的各個層面。
 
-[Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
+[Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
 
 例如，您可以使用標準範本部署，將包含兩個虛擬機器的 Web 伺服器工作負載，部署為結合負載平衡器的 Web 伺服器，以分散伺服器之間的流量。 然後只要需要這類型的工作負載，就可以重複使用此範本建立結構完全相同的虛擬機器與負載平衡器組合，僅需變更涉及的部署名稱和 IP 位址。
 

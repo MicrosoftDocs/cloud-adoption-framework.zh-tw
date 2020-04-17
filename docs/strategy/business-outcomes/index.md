@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80392509"
 ---
 <!-- markdownlint-disable MD026 -->

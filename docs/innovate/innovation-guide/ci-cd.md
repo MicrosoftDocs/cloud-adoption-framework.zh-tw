@@ -4,17 +4,17 @@ description: 協助開發人員小組有效率地進行建置、促進安全的�
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6e0e0ddb2284a238274f9e5cc579e164a4378004
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356643"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809019"
 ---
 ::: zone target="docs"
 
@@ -145,4 +145,4 @@ LiveOps 也有助於讓資料變得人性化。 LiveOps 方法會讓資料變得
 
 PlayFab 提供差異化、利潤更高的 LiveOps 工具和服務，以提高獲利並延長遊戲壽命。 PlayFab 完全不受裝置和平台限制，而且可以輕易地與社交識別提供者 (例如 Facebook) 或居中進行商務協調的商店平台 (Steam) 整合，並與 iOS、Android、Xbox 和 PlayStation 等裝置平台整合。 Azure 資料資產可讓 PlayFab 提供智慧型服務，以協助我們的客戶做出更好的遊戲和更聰明的決策、吸引並留住玩家，以及更快速地執行更多實驗和反覆執行來加快學習速度。
 
-**移至 [Azure PlayFab 文件](https://docs.microsoft.com/gaming/playfab/personas/liveops/liveops)**
+**移至 [Azure PlayFab 文件](https://docs.microsoft.com/gaming/playfab)**

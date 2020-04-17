@@ -10,10 +10,10 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77706926"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理

@@ -4,17 +4,17 @@ description: 了解有效組織 Azure 資源以便管理的最佳做法。
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354344"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997561"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,8 +24,7 @@ ms.locfileid: "80354344"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-<!-- cSpell:disable-next-line -->
-# <a name="azure-management-groups-and-hierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagementGroupsAndHierarchy)
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 下圖顯示這些層級的關聯性。
 
@@ -86,7 +85,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 - [組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)
 - [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
-- [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)
+- [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -161,7 +160,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 - **中繼資料和文件：** 系統管理員套用「ProjectOwner」之類的標記，即可輕易查看其所處理資源的相關詳細資料。
 - **自動化：** 您可能有定期執行的指令碼，其會根據「ShutdownTime」或「DeprovisionDate」等標記值來採取動作。
-- **成本最佳化：** 在 Azure 成本管理中，您可以套用成本中心標記作為篩選準則，以根據小組或部門使用量來報告費用。
+- **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
@@ -173,14 +172,14 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至 [[資源群組](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups)]。
+1. 移至 [[資源群組](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [指派標記]  。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱[使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。
+若要深入了解，請參閱[使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
 
 ::: zone-end
 

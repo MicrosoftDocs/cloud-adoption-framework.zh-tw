@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: deb432528c541fa17b9849d4c2b587740d7e36dd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434914"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996321"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -118,8 +118,8 @@ ms.locfileid: "80434914"
 
 - 一個統一平台，用來收集應用程式遙測資料、主機遙測資料 (例如 VM)、容器計量、Azure 平台計量，以及事件記錄檔。
 - 視覺效果、查詢、警示和分析工具。 它可提供虛擬機器、客體作業系統、虛擬網路，以及工作負載應用程式事件的深入解析。
-- [REST API](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough)，用來與外部服務整合，以及將監視與警示服務自動化。
-- 與許多熱門的第三方廠商[整合](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners)。
+- [REST API](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough)，用來與外部服務整合，以及將監視與警示服務自動化。
+- 與許多熱門的第三方廠商[整合](https://docs.microsoft.com/azure/azure-monitor/platform/partners)。
 
 ## <a name="next-steps"></a>後續步驟
 

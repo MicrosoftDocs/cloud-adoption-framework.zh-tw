@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
 ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
-ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80606561"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介

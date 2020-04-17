@@ -4,17 +4,17 @@ description: 了解 Azure 如何透過已連線和感知的邊緣裝置，提供
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 113fb918e24afd6356eb9eafe840dd97429e044e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b3bb752e823c9be61d61da8d2ea88a9cd5591709
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356622"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427171"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 

@@ -4,17 +4,17 @@ description: 使用「適用於 Azure 的雲端採用架構」來了解特殊化
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e2eac3d49f38a8b15ed822e177afb224afa20270
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356434"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426559"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 

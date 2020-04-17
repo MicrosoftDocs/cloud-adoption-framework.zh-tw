@@ -10,10 +10,10 @@ ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
 ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80636498"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前

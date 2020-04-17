@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
 ms.openlocfilehash: 4223a6c6103d97a945557bb81eeee3d337dbe12d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "79091967"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理

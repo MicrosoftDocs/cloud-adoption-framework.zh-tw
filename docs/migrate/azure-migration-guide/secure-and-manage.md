@@ -4,17 +4,17 @@ description: 深入瞭解您可以在遷移至 Azure 後，用來管理環境的
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7e9dd472d2913979211959d1f230bf4fb9c33cba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222490"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432942"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -46,7 +46,7 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/serviceHealth)
 
 當 Azure 服務中發生的問題影響您時，Azure 服務健康狀態會提供個人化指導及支援。 它會通知您並協助您了解問題所帶來的影響，並在問題解決時通知您； 也會協助您針對可能影響資源可用性之預定進行的維修作業和變更做好準備。
 
@@ -149,7 +149,7 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 稍早在本指南中，我們討論了如何在執行移轉的過程中使用 Azure Site Recovery。 但是在移轉完成後，它也會形成您的災害復原策略中的重要元件。
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80636402"
 ---
 # <a name="best-practices-for-cloud-migration"></a>雲端移轉的最佳做法

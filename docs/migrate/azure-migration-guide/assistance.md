@@ -4,17 +4,17 @@ description: 了解如何在您的 Azure 移轉過程中取得協助。 適當�
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e191c89a33d09315c332680b82a72caf0785e2f
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16b82b3be2789a764dcccecc6ef91ef91f3098b2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353909"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429530"
 ---
 <!-- cSpell:ignore MSPs -->
 
