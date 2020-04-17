@@ -1,60 +1,61 @@
-- name: Azure
-  tocHref: /azure
-  topicHref: /azure
-  items:
-    - name: 雲端採用架構
-      tocHref: /azure/cloud-adoption-framework/
-      topicHref: /azure/cloud-adoption-framework
-      items:
-        - name: 策略
-          tocHref: /azure/cloud-adoption-framework/strategy/
-          topicHref: /azure/cloud-adoption-framework/strategy
-        - name: 規劃
-          tocHref: /azure/cloud-adoption-framework/plan/
-          topicHref: /azure/cloud-adoption-framework/plan
-          items:
-            - name: 數位資產
-              tocHref: /azure/cloud-adoption-framework/digital-estate/
-              topicHref: /azure/cloud-adoption-framework/digital-estate
-        - name: 就緒
-          tocHref: /azure/cloud-adoption-framework/ready/
-          topicHref: /azure/cloud-adoption-framework/ready
-          items:
-            - name: 最佳作法
-              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
-              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
-            - name: 最佳作法
-              tocHref: /azure/security/fundamentals/
-              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
-        - name: 採用
-          items:
-            - name: 移轉
-              tocHref: /azure/cloud-adoption-framework/migrate/
-              topicHref: /azure/cloud-adoption-framework/migrate
-            - name: 創新
-              tocHref: /azure/cloud-adoption-framework/innovate/
-              topicHref: /azure/cloud-adoption-framework/innovate
-              items:
-                - name: Azure 創新指南
-                  tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
-                  topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
-        - name: 作業模型
-          tocHref: /azure/cloud-adoption-framework/operating-model/
-          topicHref: /azure/cloud-adoption-framework/operating-model
-          items:
-            - name: 治理
-              tocHref: /azure/cloud-adoption-framework/govern/
-              topicHref: /azure/cloud-adoption-framework/govern
-            - name: 組織
-              tocHref: /azure/cloud-adoption-framework/organize/
-              topicHref: /azure/cloud-adoption-framework/organize
-            - name: 管理
-              tocHref: /azure/cloud-adoption-framework/manage/
-              topicHref: /azure/cloud-adoption-framework/manage
-        - name: 參考
-          tocHref: /azure/cloud-adoption-framework/reference/
-          topicHref: /azure/cloud-adoption-framework/reference
-          items:
-            - name: 決策指南
-              tocHref: /azure/cloud-adoption-framework/decision-guides/
-              topicHref: /azure/cloud-adoption-framework/decision-guides
+items:
+  - name: Azure
+    tocHref: /azure
+    topicHref: /azure
+    items:
+      - name: 雲端採用架構
+        tocHref: /azure/cloud-adoption-framework/
+        topicHref: /azure/cloud-adoption-framework
+        items:
+          - name: 策略
+            tocHref: /azure/cloud-adoption-framework/strategy/
+            topicHref: /azure/cloud-adoption-framework/strategy
+          - name: 計畫
+            tocHref: /azure/cloud-adoption-framework/plan/
+            topicHref: /azure/cloud-adoption-framework/plan
+            items:
+              - name: 數位資產
+                tocHref: /azure/cloud-adoption-framework/digital-estate/
+                topicHref: /azure/cloud-adoption-framework/digital-estate
+          - name: 就緒
+            tocHref: /azure/cloud-adoption-framework/ready/
+            topicHref: /azure/cloud-adoption-framework/ready
+            items:
+              - name: 最佳作法
+                tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+                topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+              - name: 最佳作法
+                tocHref: /azure/security/fundamentals/
+                topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+          - name: 採用
+            items:
+              - name: 遷移
+                tocHref: /azure/cloud-adoption-framework/migrate/
+                topicHref: /azure/cloud-adoption-framework/migrate
+              - name: 創新
+                tocHref: /azure/cloud-adoption-framework/innovate/
+                topicHref: /azure/cloud-adoption-framework/innovate
+                items:
+                  - name: Azure 創新指南
+                    tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
+                    topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
+          - name: 作業模型
+            tocHref: /azure/cloud-adoption-framework/operating-model/
+            topicHref: /azure/cloud-adoption-framework/operating-model
+            items:
+              - name: 治理
+                tocHref: /azure/cloud-adoption-framework/govern/
+                topicHref: /azure/cloud-adoption-framework/govern
+              - name: 組織
+                tocHref: /azure/cloud-adoption-framework/organize/
+                topicHref: /azure/cloud-adoption-framework/organize
+              - name: 管理
+                tocHref: /azure/cloud-adoption-framework/manage/
+                topicHref: /azure/cloud-adoption-framework/manage
+          - name: 參考
+            tocHref: /azure/cloud-adoption-framework/reference/
+            topicHref: /azure/cloud-adoption-framework/reference
+            items:
+              - name: 決策指南
+                tocHref: /azure/cloud-adoption-framework/decision-guides/
+                topicHref: /azure/cloud-adoption-framework/decision-guides

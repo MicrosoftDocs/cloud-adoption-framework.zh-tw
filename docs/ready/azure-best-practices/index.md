@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9d14209da7c18a2ba8279977e3c860a3dd1d0589
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 107764931a6188f6976c5cfb8af0f74082c21e2b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433948"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997791"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 
@@ -35,7 +35,7 @@ ms.locfileid: "80433948"
 
 - [網路決策](../considerations/networking-options.md)。 選擇網路服務、工具和架構，它們將支援您組織的工作負載、治理和連線能力需求。
 - [虛擬網路規劃](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 根據隔離、連線能力和位置等需求來規劃虛擬網路。
-- [網路安全性的最佳做法](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用內建 Azure 功能來解決常見網路安全性問題的最佳做法。
+- [網路安全性的最佳做法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用內建 Azure 功能來解決常見網路安全性問題的最佳做法。
 - [周邊網路](./perimeter-networks.md)。 讓雲端網路與內部部署或實體資料中心網路之間能夠安全地連線，並能夠與網際網路雙向連線。
 - [中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)。 有效率地管理常見的通訊或安全性需求以適應複雜的工作負載，並解決潛在的 Azure 訂用帳戶限制。
 
@@ -43,7 +43,7 @@ ms.locfileid: "80433948"
 
 設計身分識別和存取控制基礎結構，以改善工作負載的安全性和管理效率。
 
-- [Azure 身分識別管理和存取控制安全性最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用內建 Azure 功能進行身分識別管理和存取控制的最佳做法。
+- [Azure 身分識別管理和存取控制安全性最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用內建 Azure 功能進行身分識別管理和存取控制的最佳做法。
 - [角色型存取控制最佳做法](../considerations/roles.md)。 能夠針對為使用者角色所組織的資源，進行更細緻、以群組為基礎的存取管理工作。
 - [在 Azure Active Directory 中保護混合式部署和雲端部署的特殊權限存取](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 確保組織的系統管理存取，和特殊權限帳戶在整個雲端和內部部署環境中，都是安全無虞的。
 

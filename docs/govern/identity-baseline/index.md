@@ -9,23 +9,23 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 91096409b17bce6aced180bff989c57934698aa3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 555128b25aa514bd1f98b2e0b53c3f4e1420cfef
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708983"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997450"
 ---
 # <a name="identity-baseline-discipline-overview"></a>身分識別基準專業領域概觀
 
-身分識別基準是[雲端採用架構治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 身分識別逐漸被視為雲端的主要安全邊界，從傳統著重於網路安全性轉變而來。 身分識別服務提供核心機制，以支援 IT 環境中的存取控制和組織，而身分識別基準專業領域可透過雲端採用工作一致地套用驗證和授權需求，以補充[安全性基準專業領域](../security-baseline/index.md)。
+身分識別基準是[雲端採用架構治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 身分識別逐漸被視為雲端的主要安全邊界，從傳統著重於網路安全性轉變而來。 身分識別服務提供核心機制，以支援 IT 環境中的存取控制和組織，而身分識別基準專業領域可透過雲端採用工作一致地套用驗證和授權需求，以補充[安全性基準專業領域](../security-baseline/index.md)。
 
 > [!NOTE]
 > 身分識別基準治理不會取代可讓貴組織管理及保護身分識別服務的現有 IT 小組、流程和程序。 此專業領域的主要目的是要找出潛在的身分識別相關業務風險，並將風險降低指引提供給負責實作、維護及操作身分識別管理基礎結構的 IT 人員。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
 ＜雲端採用架構＞中的本節將概述開發身分識別基準專業領域作為雲端治理略一部分的方法。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應涉及與負責實作和管理貴組織身分識別管理解決方案的 IT 小組相關成員進行互動與討論。
 
-如果貴組織沒有身分識別基準和安全性方面的內部專業知識，請考慮聘請外部顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用合作夥伴來討論此專業領域的相關事宜。
+如果貴組織沒有身分識別基準和安全性方面的內部專業知識，請考慮聘請外部顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用合作夥伴來討論此專業領域的相關事宜。
 
 ## <a name="policy-statements"></a>Policy statements
 

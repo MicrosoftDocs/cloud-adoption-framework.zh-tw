@@ -9,23 +9,23 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 75a0212628c41f82ceccd198c87e69d430b74258
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707419"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997265"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
-安全性基準是[雲端採用架構治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 安全性是任何 IT 部署的元件，而雲端本身有獨特的安全性問題。 許多企業都必須遵循法規需求，這些需求使得考量雲端轉換時保護敏感性資料成為組織的當務之急。 識別雲端環境潛在安全威脅並建立解決這些威脅的流程和程序，應該是任何 IT 安全性或網路安全性小組的首要任務。 隨著這些需求逐漸具體明朗，安全性基準專業領域可確保技術需求和安全性限制一致套用至雲端環境。
+安全性基準是[雲端採用架構治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 安全性是任何 IT 部署的元件，而雲端本身有獨特的安全性問題。 許多企業都必須遵循法規需求，這些需求使得考量雲端轉換時保護敏感性資料成為組織的當務之急。 識別雲端環境潛在安全威脅並建立解決這些威脅的流程和程序，應該是任何 IT 安全性或網路安全性小組的首要任務。 隨著這些需求逐漸具體明朗，安全性基準專業領域可確保技術需求和安全性限制一致套用至雲端環境。
 
 > [!NOTE]
 > 安全性基準治理不會取代可讓貴組織保護雲端部署的資源所用的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別與安全性相關的商務風險，且為負責安全性基礎結構的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
 本文概述開發安全性基準專業領域作為雲端治理策略一部分的方法。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的 IT 和安全性小組相關成員進行互動與討論，特別是負責實作網路、加密和身分識別服務的技術主管。
 
-對於雲端部署成功和更成功的業務推展而言，制定正確的安全性決策極為重要。 如果貴組織沒有網路安全性方面的內部專業知識，請考慮聘請外部安全顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用專家來討論此專業領域的相關事宜。
+對於雲端部署成功和更成功的業務推展而言，制定正確的安全性決策極為重要。 如果貴組織沒有網路安全性方面的內部專業知識，請考慮聘請外部安全顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用專家來討論此專業領域的相關事宜。
 
 ## <a name="policy-statements"></a>Policy statements
 

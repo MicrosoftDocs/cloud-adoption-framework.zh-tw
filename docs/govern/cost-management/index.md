@@ -10,15 +10,15 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77708864"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
-成本管理是 [Cloud Adoption Framework 治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 對於許多客戶而言，治理成本是採用雲端技術時的主要考量。 平衡效能需求、採用步調和雲端服務成本，頗具挑戰性。 這在實作雲端技術的主要業務轉換期間特別重要。 本節將概述開發成本管理專業領域作為雲端管理策略一部分的方法。
+成本管理是 [Cloud Adoption Framework 治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 對於許多客戶而言，治理成本是採用雲端技術時的主要考量。 平衡效能需求、採用步調和雲端服務成本，頗具挑戰性。 這在實作雲端技術的主要業務轉換期間特別重要。 本節將概述開發成本管理專業領域作為雲端管理策略一部分的方法。
 
 > [!NOTE]
 > 成本管理治理不會取代現有的業務小組、帳戶處理實務，以及牽涉到您組織中對 IT 相關成本進行財務管理的程序。 此專業領域的主要目的是找出與 IT 支出有關的潛在雲端相關風險，並提供降低風險指導方針給負責部署和管理雲端資源的業務和 IT 小組。

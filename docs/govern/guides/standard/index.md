@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 26aaf3285d5e68a5add2e91a213a6dfd29c1ca25
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a82bd7fea1e16819e2c69d6eafba0cbdf77e3559
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434344"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396130"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 
@@ -50,7 +50,7 @@ ms.locfileid: "80434344"
 
 這些模式會提供成長的空間，而不會不必要地使階層複雜化。
 
-[!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
+[!INCLUDE [governance-of-resources](../../../../includes/governance-of-resources.md)]
 
 ## <a name="iterative-governance-improvements"></a>反覆治理改進
 

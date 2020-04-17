@@ -4,17 +4,17 @@ description: 了解如何藉由減少復原時間和業務中斷的可能性來�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2da32f8a03eed3e3200408264748559cf2888402
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356467"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426582"
 ---
 <!-- cSpell:ignore siterecovery -->
 
