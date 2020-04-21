@@ -4,17 +4,17 @@ description: 使用「適用於 Azure 的雲端採用架構」，了解如何保
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353811"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808790"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -59,7 +59,7 @@ ms.locfileid: "80353811"
 - [Azure 圖表](https://azurecharts.com)*
   - 這個視覺效果會顯示過去六個月內所做的所有 Azure 更新。 其中包含其他實用的圖表和公用程式，可協助您追蹤 Azure 變更。
 - [AzAdvertizer](https://www.azadvertizer.net)*
-  - Azure 治理功能 (例如 Azure 原則、原則計畫、原則別名和 RBAC) 的發行和變更追蹤。
+  - Azure 治理功能 (例如 Azure 原則、原則計畫、原則別名和角色型存取控制 (RBAC)) 的發行和變更追蹤。
 - [Azure Weekly](https://azureweekly.info)*
   - 這份由 [endjin](https://endjin.com) 提供的電子報包含關於 Microsoft Azure 的當周最新消息摘要。 也包含有趣的歷史內容。
   - 透過[電子郵件](https://azureweekly.info)訂閱。
