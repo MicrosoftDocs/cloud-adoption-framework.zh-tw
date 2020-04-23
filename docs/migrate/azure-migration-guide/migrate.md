@@ -4,21 +4,21 @@ description: 藉由識別要使用的適當工具，包括原生工具、第三�
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353893"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396011"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
-# <a name="migrate-assets-infrastructure-apps-and-data"></a>移轉資產 (基礎結構、應用程式和資料)
+# <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
 在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到「完成狀態」，包括原生工具、第三方工具和專案管理工具。
 
@@ -130,7 +130,7 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 1. 選取 [+建立資源]  ，然後在 Marketplace 中搜尋 **Azure 資料庫移轉服務**。
 1. 完成 [建立移轉服務]  精靈，然後選取[建立]  。
 
-服務現已準備就緒，可移轉支援的源資料庫 (例如 SQL Server、MySQL、PostgreSQL 或 MongoDb)。
+服務現已準備就緒，可移轉支援的源資料庫 (例如 SQL Server、MySQL、PostgreSQL 或 MongoDB)。
 
 ::: zone target="chromeless"
 
@@ -262,7 +262,7 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 - [Microsoft Planner](https://tasks.office.com)：以簡單的視覺化方式組織團隊合作。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software)：專案組合管理、資源容量管理、財務管理、時程表和排程管理。
 - [Microsoft Teams](https://products.office.com/microsoft-teams)：小組共同作業與通訊工具。 Teams 也整合了 Planner 和其他工具來改善共同作業。
-- [Azure DevOps](https://dev.azure.com)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
+- [Azure DevOps Services](https://azure.microsoft.com/services/devops)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
 
 這些工具並非唯一可用的工具。 另有許多第三方工具也廣泛用於專案管理社群中。
 

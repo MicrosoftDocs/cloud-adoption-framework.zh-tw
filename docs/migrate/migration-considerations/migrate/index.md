@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 82ded4af4d3014187e012dbc7d371237d519b4ca
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392432"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119696"
 ---
-# <a name="execute-a-migration"></a>執行移轉
+# <a name="deploy-workloads"></a>部署工作負載
 
-在評估工作負載之後，便可以將它移轉至雲端。 這一系列的文章會說明執行移轉可能會涉及到的各種活動。
+評估工作負載之後，您可以將其部署至雲端或分段發行。 這一系列的文章說明此階段的移轉工作可能涉及的各種活動。
 
 ## <a name="objective"></a>目標
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 907cb23b61ffada1a97abe87545ed7d4cdd7d56a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 4ad4f5d1b5e3352d308ae31db1cc86bb87eb5b76
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392579"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120059"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,9 @@ ms.locfileid: "80392579"
 
 ## <a name="landing-zone-definition"></a>登陸區域定義
 
-登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」  一詞指的是一個邏輯結構，用於擷取採用所需雲端時必須成立的所有項目。
+登陸區域是用來裝載工作負載的環境，可透過程式碼預先佈建。 其中包括使用已定義的一組雲端服務和最佳做法讓您獲致成功的基本功能。
+
+明確而言，登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」  一詞指的是一個邏輯結構，用於擷取採用所需雲端時必須成立的所有項目。
 
 範圍：  功能完整的登陸區域會將支援客戶採用需求所需的所有平台資源列入考慮。
 
@@ -36,7 +38,7 @@ ms.locfileid: "80392579"
 
 登陸區域不一定要區分為 IaaS 或 PaaS 採用。 不過，建置登陸區域的目的是藉由履行訂用帳戶原則來支援採用方案。 支援採用方案可能需要多個混合必要元件的登陸區域。
 
-整體雲端採用方案的目的和範圍會定義所需的「管線配置」。 其他治理、合規性、安全性和操作管理需求，可能會新增至一開始的登陸區域範圍。 在採用初期階段，登陸區域可能會因為定義的需求和可接受的風險而包含較少的「管線配置」。  當有多個登陸區域存在時，每個登陸區域通常會相依於中樞，以透過共用服務模型提供必要控制項。
+整體雲端採用方案的目的和範圍會定義所需的「管線配置」。 其他治理、合規性、安全性和操作管理需求，可能會新增至一開始的登陸區域範圍。 在採用初期階段，登陸區域可能會因為定義的需求和可接受的風險而包含較少的「管線配置」。 當有多個登陸區域存在時，每個登陸區域通常會相依於中樞，以透過共用服務模型提供必要控制項。
 
 ## <a name="related-terms"></a>相關字詞
 
@@ -48,7 +50,7 @@ ms.locfileid: "80392579"
 
 ## <a name="next-steps"></a>後續步驟
 
-若要開始使用登陸區域，請[選擇第一個登陸區域](./first-landing-zone.md)。
+開始使用您的第一個登陸區域之前，請務必先了解對此方法具有引導作用的[重構原則](./refactor.md)。
 
 > [!div class="nextstepaction"]
-> [選擇第一個登陸區域](./first-landing-zone.md)
+> [重構登陸區域](./refactor.md)

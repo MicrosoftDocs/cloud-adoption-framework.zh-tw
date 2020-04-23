@@ -128,6 +128,8 @@ items:
         items:
           - name: 什麼是登陸區域？
             href: ready/landing-zone/index.md
+          - name: 重構登陸區域
+            href: ready/landing-zone/refactor.md
           - name: 選擇第一個登陸區域
             href: ready/landing-zone/first-landing-zone.md
           - name: 移轉登陸區域藍圖
@@ -138,32 +140,54 @@ items:
         items:
           - name: 概觀
             href: ready/considerations/index.md
-          - name: 基本登陸區域考量
+          - name: 登陸區域的測試驅動開發 (TDD)
+            href: ready/considerations/test-driven-development.md
+          - name: Azure 中的登陸區域 TDD
+            href: ready/considerations/azure-test-driven-development.md
+          - name: 從小規模著手並擴充
             items:
-              - name: Azure 基礎概念
-                href: ready/considerations/fundamental-concepts.md
-              - name: 檢閱計算選項
-                href: ready/considerations/compute-options.md
-              - name: 檢閱網路功能選項
-                href: ready/considerations/networking-options.md
-              - name: 檢閱儲存體選項
-                href: ready/considerations/storage-options.md
-              - name: 檢閱資料選項
-                href: ready/considerations/data-options.md
-              - name: 角色型存取控制
-                href: ready/considerations/roles.md
-              - name: 建立混合式雲端一致性
-                href: ready/considerations/hybrid-consistency.md
-          - name: 改善登陸區域安全性 (敏感性資料)
+              - name: 基本登陸區域考量
+                items:
+                  - name: 概觀
+                    href: ready/considerations/basic-considerations.md
+                  - name: Azure 基礎概念
+                    href: ready/considerations/fundamental-concepts.md
+                  - name: 檢閱計算選項
+                    href: ready/considerations/compute-options.md
+                  - name: 檢閱網路功能選項
+                    href: ready/considerations/networking-options.md
+                  - name: 檢閱儲存體選項
+                    href: ready/considerations/storage-options.md
+                  - name: 檢閱資料選項
+                    href: ready/considerations/data-options.md
+                  - name: 角色型存取控制
+                    href: ready/considerations/roles.md
+                  - name: 建立混合式雲端一致性
+                    href: ready/considerations/hybrid-consistency.md
+              - name: 改善登陸區域作業
+                href: ready/considerations/landing-zone-operations.md
+              - name: 改善登陸區域控管
+                href: ready/considerations/landing-zone-governance.md
+              - name: 改善登陸區域安全性
+                items:
+                  - name: 概觀
+                    href: ready/considerations/landing-zone-security.md
+                  - name: 將訂用帳戶上線至 Azure 資訊安全中心
+                    href: 'https://docs.microsoft.com/azure/security-center/security-center-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: 使 Azure Sentinel 上線
+                    href: 'https://docs.microsoft.com/azure/sentinel/quickstart-onboard?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: 在 Azure 中實作安全的混合式網路架構
+                    href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure 身分識別管理和存取控制安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure 網路安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure 作業安全性最佳做法
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: 開始使用企業規模
             items:
-              - name: 在 Azure 中實作安全的混合式網路架構
-                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Azure 身分識別管理和存取控制安全性最佳做法
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Azure 網路安全性最佳做法
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Azure 作業安全性最佳做法
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: 概觀
+                href: ready/considerations/enterprise-scale.md
       - name: 最佳作法
         items:
           - name: 概觀
@@ -234,11 +258,11 @@ items:
             items:
               - name: 開始之前
                 href: migrate/azure-migration-guide/index.md
-              - name: 評估每個工作負載並精簡方案
+              - name: 評估工作負載
                 href: migrate/azure-migration-guide/assess.md
-              - name: 遷移工作負載資產
+              - name: 部署工作負載
                 href: migrate/azure-migration-guide/migrate.md
-              - name: 測試、最佳化及升階
+              - name: 發行工作負載
                 href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: 聚焦在移轉的成本控制機制
                 href: migrate/azure-migration-guide/manage-costs.md
@@ -252,8 +276,6 @@ items:
                 items:
                   - name: 將 Windows 應用程式重新裝載至 Azure VM
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                  - name: 使用容器和 Azure SQL 重新架構 Windows 應用程式
-                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
               - name: Linux 工作負載
                 items:
                   - name: 將 Linux 應用程式重新裝載至 Azure VM
@@ -322,26 +344,32 @@ items:
                 items:
                   - name: 在 Azure App Service 及 Azure SQL Database 上重構應用程式
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: 在 Azure 中重建應用程式
+                  - name: 在 Azure App Service 及 Azure SQL Database 受控執行個體上重構應用程式
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
+                  - name: 在 Azure App Service 中重建應用程式
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
                   - name: 將 TFS 重構至 Azure DevOps Services
                     href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
               - name: Java 應用程式
                 items:
-                  - name: 移轉選項
+                  - name: 移轉概觀
                     href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 Spring 重構至 Azure App Service
+                  - name: Spring 至 Azure App Service
                     href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 Tomcat 重構至 Azure App Service
+                  - name: Tomcat 至 Azure App Service
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 Tomcat 重構至 AKS 上的容器
+                  - name: Tomcat 至 AKS 上的容器
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 WebLogic 重構至 Azure 虛擬機器
+                  - name: WebLogic 至 Azure 虛擬機器
                     href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 WebLogic 重構至 AKS 上的 WildFly
+                  - name: AKS 上的 WildFly 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-wildfly-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 WebLogic 至 WildFly
                     href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 將 WebSphere 重構至 AKS 上的 WildFly
+                  - name: AKS 上的 WebSphere 至 WildFly
                     href: 'https://docs.microsoft.com/azure/java/migrate-websphere-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 JBoss EAP 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
                   - name: 將應用程式重新裝載在 Azure VM 和 Azure SQL Database 受控執行個體上
@@ -354,83 +382,83 @@ items:
                     href: migrate/azure-best-practices/sql-migration.md
                   - name: Azure 資料庫移轉指南
                     items:
-                      - name: 將 SQL Server 重構至 Azure SQL DB
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 重構至 Azure SQL DB 受控執行個體
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: 將 SQL Server 重構至 Azure SQL Database
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
+                      - name: 將 SQL Server 重構至 Azure SQL Database 受控執行個體
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: 將 SQL Server 重構至 Azure VM 上的 SQL Server
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
                       - name: 將 SQL Server 重構至 Azure SQL DW
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw'
                       - name: MySQL
                         items:
-                          - name: 將 MySQL 重構至 Azure SQL DB
-                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: 將 MySQL 重構至適用於 MySQL 的 Azure DB
-                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 MySQL 重構至 Azure SQL Database
+                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb'
+                          - name: 將 MySQL 重構至適用於 MySQL 的 Azure 資料庫
+                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql'
                       - name: PostgreSQL
                         items:
-                          - name: 將 PostgreSQL 重構至適用於 PostgreSQL 的 Azure DB
-                            href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 PostgreSQL 重構至適用於 PostgreSQL 的 Azure 資料庫
+                            href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql'
                       - name: MariaDB
                         items:
-                          - name: 將 MariaDB 重構至適用於 MariaDB 的 Azure DB
-                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 MariaDB 重構至適用於 MariaDB 的 Azure 資料庫
+                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb'
                       - name: MongoDB
                         items:
                           - name: 將 MongoDB 重構至 Azure Cosmos DB
-                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb'
                       - name: Cassandra
                         items:
                           - name: 將 Cassandra 重構至 Azure Cosmos DB
-                            href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos'
                       - name: Oracle
                         items:
-                          - name: 將 Oracle 重構至 Azure SQL DB
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: 將 Oracle 重構至適用於 PostgreSQL 的 Azure DB
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 Oracle 重構至 Azure SQL Database
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb'
+                          - name: 將 Oracle 重構至適用於 PostgreSQL 的 Azure 資料庫
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql'
                           - name: 將 Oracle 重新架構至 Azure SQL DW
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw'
                       - name: DB2
                         items:
-                          - name: 將 DB2 重構至 Azure SQL DB
-                            href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 DB2 重構至 Azure SQL Database
+                            href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb'
                       - name: SAP ASE
                         items:
-                          - name: 將 SAP ASE 重構至 Azure SQL DB
-                            href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 SAP ASE 重構至 Azure SQL Database
+                            href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb'
                       - name: 存取
                         items:
-                          - name: 將 Access 重構至 Azure SQL DB
-                            href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 將 Access 重構至 Azure SQL Database
+                            href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb'
                   - name: Azure 資料庫移轉服務 (DMS) 教學課程
                     items:
                       - name: Azure 資料庫移轉服務
-                        href: 'https://docs.microsoft.com/azure/dms/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 離線遷移至 Azure SQL DB
+                        href: 'https://docs.microsoft.com/azure/dms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: 將 SQL Server 離線移轉至 Azure SQL Database
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 線上遷移至 Azure SQL DB
+                      - name: 將 SQL Server 線上移轉至 Azure SQL Database
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 離線遷移至 Azure SQL DB 受控執行個體
+                      - name: 將 SQL Server 離線移轉至 Azure SQL Database 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 線上遷移 Azure SQL DB 受控執行個體
+                      - name: 將 SQL Server 線上移轉至 Azure SQL Database 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 AWS RDS SQL Server 線上遷移至 Azure SQL D 或 Azure SQL DB 受控執行個體
+                      - name: 將 AWS RDS SQL Server 線上移轉至 Azure SQL Database 或 Azure SQL Database 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 MySQL 線上遷移至適用於 MySQL 的 Azure DB
+                      - name: 將 MySQL 線上移轉至適用於 MySQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 AWS RDS MySQL 線上遷移至適用於 MySQL 的 Azure DB
+                      - name: 將 AWS RDS MySQL 線上移轉至適用於 MySQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-mysql-server-azure-db-for-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將PostgreSQL 線上遷移至適用於 PostgreSQL 的 Azure DB
+                      - name: 將 PostgreSQL 線上移轉至適用於 PostgreSQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 AWS RDS PostgreSQL 線上遷移至適用於 PostgreSQL 的 Azure DB
+                      - name: 將 AWS RDS PostgreSQL 線上移轉至適用於 PostgreSQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-postgresql-server-azure-db-for-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 將 MongoDB 離線遷移至 Azure Cosmos DB Mongo API
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 將 MongoDB 線上遷移至 Azure Cosmos DB Mongo API
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 Oracle 線上遷移至適用於 PostgreSQL 的 Azure DB
+                      - name: 在線上將 Oracle 遷移至適用於 PostgreSQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 大型主機
                 items:
@@ -504,7 +532,7 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: 移轉待處理項目檢閱
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: 評量流程
+              - name: 評估工作負載
                 items:
                   - name: 在移轉前驗證評估假設 - 新增 R 修正
                     href: migrate/migration-considerations/assess/index.md
@@ -524,7 +552,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: 核准架構變更
                     href: migrate/migration-considerations/assess/approve.md
-              - name: 移轉程序
+              - name: 部署工作負載
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/migrate/index.md
@@ -538,7 +566,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: 階段工作負載
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 升階程序
+              - name: 發行工作負載
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/optimize/index.md
@@ -669,10 +697,10 @@ items:
                       - name: 現代化 Web 應用程式
                         items:
                           - name: Web 應用程式參考解決方案
-                            href: 'https://docs.microsoft.com/azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app'
-                          - name: 使用 SQL DB 建立 .NET Core 應用程式
+                            href: 'https://docs.microsoft.com/azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: 使用 Azure SQL Database 建立 .NET Core 應用程式
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: 使用 SQL DB 建立 .NET 應用程式
+                          - name: 使用 Azure SQL Database 建立 .NET 應用程式
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: 使用 MySQL 建立 PHP 應用程式
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -699,7 +727,7 @@ items:
                           - name: 學習路徑 - 使用 Azure Bot 服務建立 Bot
                             href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service'
                           - name: 存放庫 - GitHub 上的 Azure Bots 範例
-                            href: 'https://github.com/microsoft/botframework-sdk'
+                            href: 'https://github.com/Microsoft/botframework-sdk'
                   - name: 雲端原生應用程式
                     items:
                       - name: 微服務架構
@@ -733,9 +761,9 @@ items:
                           - name: Azure Functions 開發人員指南
                             href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Azure 無伺服器運算操成手冊
-                            href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook'
                           - name: Azure Functions 文件
-                            href: 'https://docs.microsoft.com/azure/azure-functions/'
+                            href: 'https://docs.microsoft.com/azure/azure-functions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 實現採用
                 items:
                   - name: 概觀
@@ -795,7 +823,7 @@ items:
                       - name: 保護行動體驗
                         items:
                           - name: 使用臉部、觸控或密碼來保護行動報表
-                            href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: 使用 Intune 保護行動工作流程
                             href: 'https://docs.microsoft.com/power-automate/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: 保護常見資料服務中的資料
@@ -992,6 +1020,8 @@ items:
                 href: govern/cost-management/compliance-processes.md
               - name: 改善成本管理
                 href: govern/cost-management/discipline-improvement.md
+              - name: 最佳作法
+                href: govern/cost-management/best-practices.md
               - name: 適用於成本管理的 Azure 工具
                 href: govern/cost-management/toolchain.md
           - name: 安全性基準
@@ -1220,10 +1250,8 @@ items:
         href: organize/fiefdoms-silos.md
   - name: 資源
     items:
-      - name: 雲端採用架構藍圖
-        href: reference/index.md
-      - name: 新功能
-        href: reference/whats-new.md
+      - name: 工具和範本
+        href: reference/tools-templates.md
       - name: 作業模型
         items:
           - name: 概觀

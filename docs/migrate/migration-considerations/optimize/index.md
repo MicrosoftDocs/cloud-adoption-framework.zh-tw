@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432266"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120700"
 ---
-# <a name="optimize-migrated-workloads"></a>將已移轉的工作負載最佳化
+# <a name="release-workloads"></a>發行工作負載
 
-在將工作負載及其支援資產移轉至雲端後，必須對該工作負載進行升級至生產環境的準備。 此程序中的活動會準備工作負載，評估相依資產的大小，然後協助企業為已移轉的雲端式工作負載做好用於生產環境用途的準備。
+在收集工作負載並將及其支援資產部署至雲端後，必須先進行準備工作，才能發行工作負載。 在這個階段的移轉工作中，會對企業進行工作負載集合的負載測試。 然後，會將其最佳化並記載。 當企業和 IT 小組檢閱並簽核工作負載部署後，這些工作負載就可發行，或遞交給控管、安全性和作業小組進行後續的作業。
 
-最佳化的目的是準備好已移轉的工作負載，以升級至生產環境用途。
+「發行工作負載」的目的是準備好已移轉的工作負載，以升級至生產環境用途。
 
 ## <a name="definition-of-done"></a>對「完成」  的定義
 

@@ -4,19 +4,19 @@ description: 使用「適用於 Azure 的雲端採用架構」，評估您的環
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094331"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120733"
 ---
-# <a name="assess-each-workload-and-refine-plans"></a>評估每個工作負載並精簡方案
+# <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
 本指南中的資源可協助您評估每個工作負載，並針對每個工作負載的移轉適用性提出挑戰，以及完成移轉選項的相關架構決策。
 

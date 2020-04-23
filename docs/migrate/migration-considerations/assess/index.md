@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527671"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119758"
 ---
-# <a name="validate-assessment-assumptions-before-migration"></a>在移轉前驗證評估假設
+# <a name="assess-workloads-and-validate-assumptions-before-migration"></a>在移轉之前評估工作負載並驗證假設
 
 雖然許多現有的工作負載都很適合進行雲端移轉，但並非所有資產都能與雲端平台相容，且並非所有工作負載都能受益於將其裝載在雲端上。 [數位資產規劃](../../../digital-estate/index.md)可讓您產生可移轉之潛在工作負載的整體[移轉待辦項目](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing)。 不過，此規劃需要投入高層級的工作量。 它須仰賴雲端策略小組的假設，且不會深入探討技術性的考量。
 

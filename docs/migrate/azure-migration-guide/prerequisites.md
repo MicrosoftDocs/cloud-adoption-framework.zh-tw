@@ -4,27 +4,27 @@ description: 使用「適用於 Azure 的雲端採用架構」來了解如何準
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094800"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997591"
 ---
-::: zone target="chromeless"
-
-# <a name="prerequisites"></a>Prerequisites
-
-::: zone-end
-
 ::: zone target="docs"
 
 # <a name="prerequisites-for-migrating-to-azure"></a>移轉至 Azure 的必要條件
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="prerequisites"></a>Prerequisites
 
 ::: zone-end
 
@@ -44,7 +44,7 @@ ms.locfileid: "79094800"
 
 ## <a name="migration-characteristics"></a>移轉特性
 
-本指南假設在進行此移轉之前，您的數位資產大部分都是由內部部署裝載的基礎結構所組成，而且可能包含裝載的業務關鍵應用程式。 在成功移轉後，資料資產的行為可能會與內部部署環境非常相似，但其基礎結構裝載在雲端資源中。 或者，理想的資料資產是您目前資料資產的一種變體，因為它具有內部部署基礎結構的各個層面，且其元件已經過重構而可最佳化並充分運用雲端平台。
+本指南假設在進行此移轉之前，您的數位資產大部分都是由內部部署裝載的基礎結構所組成，而且可能包含裝載的業務關鍵應用程式。 在成功移轉後，資料資產的行為可能會與內部部署環境非常相似，但其基礎結構裝載在雲端資源中。 或者，理想的資料資產是您目前資料資產的一種變體，因為其具有內部部署基礎結構的各個層面，且其元件已經過重構，以便最佳化並充分運用雲端平台。
 
 此移轉旅程的重點在於達成：
 

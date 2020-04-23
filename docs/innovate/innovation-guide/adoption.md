@@ -4,17 +4,17 @@ description: 了解如何使用 Azure 工具，從 GitHub 中裝載的 Web 應�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e8ccc7dcefb1fe2fe194e743fe139819ab29b01f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356679"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120484"
 ---
 ::: zone target="docs"
 
@@ -124,7 +124,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="action"></a>動作
 
-Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps](https://dev.azure.com)。
+Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](https://azure.microsoft.com/services/devops)。
 
 ::: zone-end
 

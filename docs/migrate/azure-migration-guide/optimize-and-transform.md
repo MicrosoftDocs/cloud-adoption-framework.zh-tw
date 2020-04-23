@@ -4,21 +4,21 @@ description: 了解如何檢閱解決方案以找出最佳化的可能區域，�
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eff32a369c55011cea8fb8ace2e7bfae28680eda
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353873"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119719"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
-# <a name="test-optimize-and-promote"></a>測試、最佳化及升階
+# <a name="release-workloads-test-optimize-and-handoff"></a>發行工作負載 (測試、最佳化和遞交)
 
 現在您已將服務遷移至 Azure，下一個階段包括針對可能的最佳化區域審查解決方案。 此工作可能包括審查解決方案的設計、適當調整服務大小，以及分析成本。
 
