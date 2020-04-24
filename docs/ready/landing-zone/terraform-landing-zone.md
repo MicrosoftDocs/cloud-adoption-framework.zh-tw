@@ -7,26 +7,26 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93f972130a696e7ebe5aeec8a01b7e7dcfe2d60b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431956"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997815"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 HashiCorp 的 Terraform。 本節說明如何使用原型登陸區域來部署 Azure 訂用帳戶的基本記錄、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 HashiCorp 的 Terraform。 本節說明如何使用範例登陸區域來部署 Azure 訂用帳戶的基本治理、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 
-適用于 Terraform 的雲端採用架構基礎登陸區域具有一組有限的責任和功能，可強制執行記錄、帳戶處理和安全性。 此登陸區域會使用稱為 Terraform 模組的標準元件，對環境中部署的所有資源強制執行一致性。
+適用于 Terraform 的雲端採用架構基礎登陸區域會提供功能，以強制執行記錄、帳戶處理和安全性。 此登陸區域會使用稱為 Terraform 模組的標準元件，對環境中部署的所有資源強制執行一致性。
 
 ## <a name="use-standard-modules"></a>使用標準模組
 
-重複使用元件是基礎結構即程式碼的基本原則。 模組有助於定義跨環境內和跨環境之資源部署的標準和一致性。 用來部署第一個登陸區域的模組可在官方[Terraform](https://registry.terraform.io/search?q=aztfmod)登錄中取得。
+重複使用元件是基礎結構即程式碼的基本原則。 模組有助於定義跨環境內和跨環境之資源部署的標準和一致性。 用來部署第一個登陸區域的模組可在官方[Terraform](https://registry.terraform.io/modules/aztfmod)登錄中取得。
 
 ## <a name="architecture-diagram"></a>架構圖
 
@@ -54,7 +54,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 定義此初始登陸區域時，會考慮下列假設或條件約束。 如果這些假設符合您的條件約束，您可以使用藍圖來建立您的第一個登陸區域。 藍圖也可以加以擴充，以建立符合您特有條件限制的登陸區域藍圖。
 
-- **訂用帳戶限制：** 這種採用成果不太可能會超過訂用帳戶[限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
+- **訂用帳戶限制：** 這種採用成果不太可能會超過訂用帳戶[限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)。 兩個常見指標為超過 25,000 部 VM 或 10,000 個 vCPU。
 - **合規性：** 此登陸區域不需要協力廠商合規性需求。
 - **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
 - **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
@@ -69,39 +69,39 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 記錄和監視 | 使用 Azure 監視器 Log Analytics 工作區。 已布建診斷儲存體帳戶和事件中樞。                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
 | 網路                | N/A-網路會在另一個登陸區域中執行。                                                                                                                                                                                                                    | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                 |
-| 相同比較               | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。                                                                                                                                                                        | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)                                                                                                                               |
-| Policy(Windows Intune 說明：原則)                 | 此登陸區域目前假設不會套用任何 Azure 原則。                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
+| 身分識別               | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。                                                                                                                                                                        | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
+| 原則                 | 此登陸區域目前假設不會套用任何 Azure 原則。                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | 訂用帳戶設計    | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | 資源群組        | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | 管理群組      | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [組織訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| Data                   | N/A                                                                                                                                                                                                                                                                      | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
-| 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指引](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| 資料                   | 不適用                                                                                                                                                                                                                                                                      | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
+| 儲存體                | 不適用                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
-| 成本管理        | N/A                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| 計算                | N/A                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| 成本管理        | 不適用                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
+| 計算                | 不適用                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>標記標準
 
 以下顯示的最小標記集必須存在於所有資源和資源群組上：
 
-| 標籤名稱          | 描述                                                                                        | Key             | 範例值                                    |
+| 標籤名稱          | 說明                                                                                        | Key             | 範例值                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
 | 業務單位     | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | BusinessUnit    | 財務，行銷，{產品名稱}，CORP，共用 |
 | 成本中心       | 與此資源相關聯的會計成本中心。                                              | CostCenter      | Number                                           |
-| 災害復原 | 應用程式、工作負載或服務的業務關鍵性。                                     | 災難              | 啟用 DR、未啟用 DR                       |
+| 災害復原 | 應用程式、工作負載或服務的業務關鍵性。                                     | DR              | 啟用 DR、未啟用 DR                       |
 | 環境       | 應用程式、工作負載或服務的部署環境。                                   | Env             | 生產、開發、QA、階段、測試、訓練             |
 | 擁有者名稱        | 應用程式、工作負載或服務的擁有者。                                                    | 擁有者           | 電子郵件                                            |
 | 部署類型   | 定義維護資源的方式。                                                    | deploymentType  | Manual、Terraform                                |
-| 版本           | 已部署藍圖的版本。                                                                 | 版本         | v 0。1                                             |
-| Application Name  | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。             | ApplicationName | 「應用程式名稱」                                       |
+| 版本           | 已部署藍圖的版本。                                                                 | version         | v 0。1                                             |
+| 應用程式名稱  | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。             | ApplicationName | 「應用程式名稱」                                       |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>自訂和部署您的第一個登陸區域
 
-您可以[複製 Terraform foundation 登陸區域](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)。 藉由修改 Terraform 變數，輕鬆地開始使用登陸區域。 在我們的範例中，我們會使用**blueprint_foundations tfvars**，因此 Terraform 會自動為您設定此檔案中的值。
+您可以[複製 Terraform foundation 登陸區域](https://github.com/azure/caf-terraform-landingzones)。 藉由修改 Terraform 變數，輕鬆地開始使用登陸區域。 在我們的範例中，我們會使用**blueprint_foundations tfvars**，因此 Terraform 會自動為您設定此檔案中的值。
 
 讓我們看看不同的變數區段。
 
-在第一個物件中，我們會在名為 `-hub-core-sec` 的 `southeastasia` 區域中建立兩個資源群組 `-hub-operations`，並在執行時間新增一個前置詞。
+在第一個物件中，我們會在名為`southeastasia` `-hub-core-sec`的區域中建立`-hub-operations`兩個資源群組，並在執行時間中新增一個前置詞。
 
 ```hcl
 resource_groups_hub = {
@@ -116,7 +116,7 @@ resource_groups_hub = {
 }
 ```
 
-接下來，我們會指定可設定基礎的區域。 在這裡，會使用 `southeastasia` 來部署所有資源。
+接下來，我們會指定可設定基礎的區域。 在這裡`southeastasia` ，是用來部署所有資源。
 
 ```hcl
 location_map = {
@@ -192,7 +192,7 @@ security_center = {
 
 ## <a name="get-started"></a>開始使用
 
-在您檢查設定之後，就可以部署設定，就像部署 Terraform 環境一樣。 建議您使用 rover，這是允許從 Windows、Linux 或 MacOS 進行部署的 Docker 容器。 您可以開始使用[Rover GitHub 存放庫](https://github.com/aztfmod/rover)。
+在您檢查設定之後，就可以部署設定，就像部署 Terraform 環境一樣。 建議您使用 rover，這是允許從 Windows、Linux 或 macOS 進行部署的 Docker 容器。 您可以開始使用[登陸區域](https://github.com/azure/caf-terraform-landingzones)。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -206,4 +206,4 @@ security_center = {
 未來的參考架構將會針對中樞與輪輻拓撲示範此概念。
 
 > [!div class="nextstepaction"]
-> [查看基礎 Terraform 登陸區域範例](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [查看基礎 Terraform 登陸區域範例](https://github.com/azure/caf-terraform-landingzones)

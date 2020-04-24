@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c45d566276315e1ae26a7a3de49403c2d7d531b0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431900"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997738"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -38,13 +38,13 @@ ms.locfileid: "80431900"
 - [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能：瞭解 azure 網路功能的一些基本概念，以及 azure 網路功能如何協助提升復原能力並降低延遲。
 - [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
 - 使用[角色型存取控制（RBAC）保護資源安全](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用 RBAC 來保護資源。
-- [資料儲存體選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index)： Azure 資料儲存體的優點。
+- [資料儲存體選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)： Azure 資料儲存體的優點。
 
 在準備階段期間，我們會需要架構設計人員來建構跨越所有 Azure 環境的解決方案。 下列技能建立資源可協助您準備這些工作的架構：
 
-- [雲端架構的基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： PluralSight 課程，協助架構正確的基礎解決方案。
-- [Microsoft Azure 架構](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： PluralSight 課程以在 Azure 架構中基礎架構設計人員。
-- [設計 Microsoft Azure 的遷移](https://app.pluralsight.com/library/courses/cloud-architecture-foundations)： PluralSight 課程，協助架構設計師設計遷移解決方案。
+- [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一個 Pluralsight 課程，可協助架構設計正確的基礎解決方案。
+- [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎架構設計人員的 Pluralsight 課程。
+- [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一種 Pluralsight 課程，可協助架構設計師設計遷移解決方案。
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
@@ -56,7 +56,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 - [MICROSOFT IT 專業人員職業中心](https://www.microsoft.com/itpro)：作為免費的線上資源，協助您對應雲端事業的途徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
 
-參加 [Microsoft Azure 認證訓練課程與測驗](https://www.microsoft.com/learning/azure-certification.aspx)，讓您的 Azure 知識獲得官方認證。
+參加 [Microsoft Azure 認證訓練課程與測驗](https://www.microsoft.com/learning/certification-overview.aspx)，讓您的 Azure 知識獲得官方認證。
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
@@ -64,16 +64,16 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 下列範例是一些在 Microsoft Learn 上量身打造的學習路徑，可配合雲端採用架構的就緒部分：
 
-[Azure 基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。  瞭解 Azure 中雲端運算的優點，以及它可以如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的服務廣度，包括計算、網路、儲存體和安全性。
+[Azure 基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 中雲端運算的優點，以及它可以如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的服務廣度，包括計算、網路、儲存體和安全性。
 
 [管理 azure 中的資源](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
 
 [管理 Azure 中的基礎結構資源](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure)：瞭解如何建立、管理、保護及調整虛擬機器資源。
 
-[將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 瞭解 Azure 中的儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您要儲存在雲端中的資料選擇正確的模型。
+[將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 了解 Azure 儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您想要在雲端中儲存的資料選擇正確的模型。
 
 [在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

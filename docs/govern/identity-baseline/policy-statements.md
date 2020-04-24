@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8594d37e41475ca26f96b89fe50591fbd0ecfc04
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434190"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997428"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 
@@ -42,7 +42,7 @@ ms.locfileid: "80434190"
 - 最低許可權存取模型將會套用至任何與任務關鍵性應用程式或受保護資料相關的資源。
 - 較高的許可權應該是例外狀況，而且任何這類例外狀況都必須與雲端治理小組一起記錄。 應定期稽核例外狀況。
 
-**潛在的設計選項：** 請參閱[Azure 身分識別管理最佳作法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)，以執行以角色為基礎的存取控制（RBAC）策略，根據[需要知道](https://wikipedia.org/wiki/Need_to_know)和[最低許可權的安全性](https://wikipedia.org/wiki/Principle_of_least_privilege)原則來限制存取。
+**潛在的設計選項：** 請參閱[Azure 身分識別管理最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)，以執行以角色為基礎的存取控制（RBAC）策略，根據[需要知道](https://wikipedia.org/wiki/Need_to_know)和[最低許可權的安全性](https://wikipedia.org/wiki/Principle_of_least_privilege)原則來限制存取。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>缺少內部部署與雲端之間的共用管理帳戶
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428987"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
@@ -61,7 +61,7 @@ ms.locfileid: "80428987"
 
 您的雲端式工作負載將需要佈建虛擬網路，以支援終端使用者和系統管理存取權。 根據資源組織和資源控管決策，您應選取符合 IT 安全性需求的網路方法。 此外，您的網路決策應遵循混合式網路的任何必要限制；在執行移轉待處理項目中的工作負載時，以及支援對裝載於內部部署之資源的任何存取時，皆必須符合這些限制。
 
-## <a name="identity"></a>相同比較
+## <a name="identity"></a>身分識別
 
 雲端式身分識別服務是為您的雲端資源提供身分識別與存取管理 (IAM) 的必要條件。 在繼續進行之前，請先讓您的身分識別管理原則與雲端採用方案達成一致。 例如，在移轉現有的內部部署資產時，請考慮使用[目錄同步](../../../decision-guides/identity/index.md)來支援混合式身分識別方法，讓您的內部部署和雲端環境之間在移轉期間和之後都能有一組一致的使用者認證。
 

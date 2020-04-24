@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6ed87d6a46dd1a31611c50ed5ce8d3c30c5849aa
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 134026b963602448e145cf118378977a4b03de58
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527212"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396179"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -50,14 +50,14 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
   - 在網際網路上開啟 VM RDP 連接埠 3389，將會使 VM 持續暴露在不良執行者活動之下。 由於 Azure IP 位址是眾所周知的，因此駭客會持續對它們進行探查，以對開啟的 3389 連接埠發動攻擊。
   - Just-In-Time 會使用能限制指定連接埠開啟時間的網路安全性群組 (NSG) 及傳入規則。
   - 在啟用 Just-In-Time 的情況下，資訊安全中心會檢查使用者是否具有 VM 的角色型存取控制 (RBAC) 寫入存取權限。 此外，還會指定使用者如何能連線到 VM 的規則。 如果權限沒問題，系統便會核准要求，且資訊安全中心會設定 NSG 以在您指定時間內允許針對選取連接埠的傳入流量。 時間到期時，NSG 便會返回其先前的狀態。
-- **自適性應用程式控制。** 使用動態允許清單來控制有哪些應用程式可在 VM 上執行，使 VM 不受惡意軟體和惡意程式碼的危害。
+- **適應性應用程式控制。** 使用動態允許清單來控制有哪些應用程式可在 VM 上執行，使 VM 不受惡意軟體和惡意程式碼的危害。
   - 自適性應用程式控制可讓您核准應用程式，並防止惡意使用者或系統管理員在 VM 上安裝未經核准或具檢查功能的應用程式。
     - 您可以對執行惡意應用程式的嘗試進行封鎖或警示、避免垃圾或惡意的應用程式，以及確保與您組織應用程式安全性原則之間的合規性。
 - **檔案完整性監視。** 確保在 VM 上執行之檔案的完整性。
   - 您不需要安裝軟體來造成 VM 問題。 變更系統檔案也可能會造成 VM 失敗或效能降低。 檔案完整性監視會檢查系統檔案及登錄設定是否發生變更，並在項目被更新的情況下通知您。
   - 資訊安全中心會建議您應監視的檔案。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [深入了解](https://docs.microsoft.com/azure/security-center/security-center-intro) Azure 資訊安全中心。
 - [深入了解](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) Just-in-Time VM 存取。
@@ -91,14 +91,14 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
   - TDE 可在不對應用程式層級進行變更的前提下，允許執行加密活動。
   - TDE 可以使用由 Microsoft 提供的加密金鑰，或者您也可以使用「攜帶您自己的金鑰」支援來自行提供金鑰。
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) IaaS VM 適用的 Azure 磁碟加密。
-- [啟用](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) IaaS Windows VM 適用的加密。
-- [了解](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)待用資料的 Azure 儲存體服務加密。
-- [閱讀](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault) Always Encrypted 的概觀。
-- [閱讀](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017)適用於 Azure SQL Database 的 TDE。
-- [了解](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql)搭配「攜帶您自己的金鑰」的 TDE。
+- 深入瞭解[虛擬機器和虛擬機器擴展集的 Azure 磁碟加密](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss)。
+- 啟用[Windows vm 的 Azure 磁碟加密](https://docs.microsoft.com/azure/virtual-machines/windows/disk-encryption-overview)。
+- 瞭解待用[資料的 Azure 儲存體服務加密](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)。
+- 閱讀[Always Encrypted 的總覽](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault)。
+- 閱讀[SQL Database 和 Azure Synapse 的透明資料加密](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql)。
+- 瞭解[AZURE SQL 透明資料加密與客戶管理的金鑰](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql)。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>最佳做法：使用反惡意程式碼保護 Vm
 
@@ -111,9 +111,9 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 ![適用於 VM 的 Antimalware](./media/migrate-best-practices-security-management/antimalware.png)
 *適用於 VM 的 Antimalware*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [深入了解](https://docs.microsoft.com/azure/security/azure-security-antimalware) Microsoft Antimalware。
+- 瞭解[Azure 雲端服務和虛擬機器的 Microsoft Antimalware](https://docs.microsoft.com/azure/security/fundamentals/antimalware)。
 
 ## <a name="best-practice-secure-web-apps"></a>最佳做法：保護 web 應用程式
 
@@ -139,13 +139,13 @@ Azure 能提供數個解決方案：
 ![保護 Web 應用程式](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [取得](https://docs.microsoft.com/azure/key-vault/key-vault-overview) Azure Key Vault 的概觀。
-- [了解](https://docs.microsoft.com/azure/application-gateway/waf-overview) Web 應用程式防火牆。
+- [深入瞭解](https://docs.microsoft.com/azure/application-gateway/waf-overview)web 應用程式防火牆。
 - [取得](https://docs.microsoft.com/azure/app-service/environment/intro) App Service 環境簡介。
 - [了解如何](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault)設定 Web 應用程式以從 Key Vault 讀取祕密。
-- [了解](https://docs.microsoft.com/azure/application-gateway/waf-overview) Web 應用程式防火牆。
+- [深入瞭解](https://docs.microsoft.com/azure/application-gateway/waf-overview)web 應用程式防火牆。
 
 ## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>最佳做法：審查訂閱和資源許可權
 
@@ -159,7 +159,7 @@ Azure 能提供數個解決方案：
 ![存取控制](./media/migrate-best-practices-security-management/subscription.png)
 *存取控制 - IAM*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [關於](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC。
 - [了解](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal)如何使用 RBAC 和 Azure 入口網站來管理存取權。
@@ -177,7 +177,7 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 ![使用者和群組](./media/migrate-best-practices-security-management/azure-ad.png)
 *Azure AD 使用者和群組*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) Azure 監視器中的 Azure AD 活動記錄。
 - [了解如何](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs)在 Azure AD 入口網站中對活動報告進行稽核。
@@ -186,10 +186,10 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 
 Azure 提供能提供進階安全性選項的其他安全性功能。 這些最佳做法有一部分需要附加元件授權和進階選項。
 
-- **實作 Azure AD 管理單位 (AU)。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [詳細資訊](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
+- **執行 Azure AD 管理單位（AU）。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [深入了解](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
 - **使用多重要素驗證。** 如果您有進階 Azure AD 授權，您可以在系統管理員帳戶上啟用並強制執行多重要素驗證。 網路釣魚是用來入侵帳戶認證的最常見方式。 當不良執行者擁有系統管理員帳戶認證之後，便沒有任何方法可以阻止他們進行會造成嚴重影響的動作 (例如刪除您所有的資源群組)。 您可以用數種方式建立多重要素驗證，包括電子郵件、驗證器應用程式和電話簡訊。 身為系統管理員，您可以選取最不具侵入性的選項。 多重要素驗證會與威脅分析和條件式存取原則整合，以隨機要求多重要素驗證挑戰回應。 深入了解[安全性指引](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)，以及[如何設定多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)。
-- **實作條件式存取。** 在大部分的小型和中型組織中，Azure 系統管理員和支援小組通常都會位於相同的地理位置中。 在此情況下，大部分的登入都會來自相同的區域。 如果這些位置的 IP 位址都相當固定，您應該不會看見系統管理員從這些區域以外的地方進行登入。 即使遠端不良動作專案會危害系統管理員的認證，您也可以執行與多重要素驗證結合的條件式存取等安全性功能，以防止從遠端位置或來自隨機 IP 的詐騙位置進行登入址. [深入了解](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)條件式存取，並檢閱在 Azure AD 中進行條件式存取的[最佳做法](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
-- **檢閱企業應用程式權限。** 隨著時間的經過，系統管理員可能會習慣直接選取來自 Microsoft 和協力廠商的連結，而未留意到該動作會對組織帶來什麼影響。 這些連結可能會顯示能將權限指派給 Azure 應用程式的同意畫面，且可能會允許讀取 Azure AD 資料的存取權，甚至是管理整個 Azure 訂用帳戶的完整存取權。 您應該定期檢閱由您的系統管理員和使用者允許存取 Azure 資源的應用程式。 確保這些應用程式只具有必要的權限。 此外，您可以在每季或每半年便傳送具有應用程式頁面連結的電子郵件給使用者，使他們能知道自己已允許哪些應用程式存取其組織資料。 [深入了解](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)應用程式類型，以及[如何控制](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal)Azure AD 中的應用程式指派。
+- **實作條件式存取。** 在大部分的小型和中型組織中，Azure 系統管理員和支援小組通常都會位於相同的地理位置中。 在此情況下，大部分的登入都會來自相同的區域。 如果這些位置的 IP 位址都相當固定，您應該不會看見系統管理員從這些區域以外的地方進行登入。 即使遠端不良動作專案會危害系統管理員的認證，您也可以執行與多重要素驗證結合的條件式存取等安全性功能，以防止從遠端位置或來自隨機 IP 位址的詐騙位置進行登入。 [深入了解](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)條件式存取，並檢閱在 Azure AD 中進行條件式存取的[最佳做法](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
+- **審查企業應用程式許可權。** 隨著時間的經過，系統管理員可能會習慣直接選取來自 Microsoft 和協力廠商的連結，而未留意到該動作會對組織帶來什麼影響。 這些連結可能會顯示能將權限指派給 Azure 應用程式的同意畫面，且可能會允許讀取 Azure AD 資料的存取權，甚至是管理整個 Azure 訂用帳戶的完整存取權。 您應該定期檢閱由您的系統管理員和使用者允許存取 Azure 資源的應用程式。 確保這些應用程式只具有必要的權限。 此外，您可以在每季或每半年便傳送具有應用程式頁面連結的電子郵件給使用者，使他們能知道自己已允許哪些應用程式存取其組織資料。 [深入了解](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)應用程式類型，以及[如何控制](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal)Azure AD 中的應用程式指派。
 
 ## <a name="managed-migrated-workloads"></a>管理已移轉的工作負載
 
@@ -215,9 +215,9 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 ![命名](./media/migrate-best-practices-security-management/naming.png)
 *資源群組命名*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)命名慣例。
+- 瞭解[建議的命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)。
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>最佳做法：執行資源群組的刪除鎖定
 
@@ -226,7 +226,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 ![刪除鎖定](./media/migrate-best-practices-security-management/locks.png)
 *刪除鎖定*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)鎖定資源以防止非預期的變更。
 
@@ -239,7 +239,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
   - 將具有類似生命週期的資源配對在一起。 在理想情況下，您應該不需要在刪除整個資源群組時移動某個資源。
   - 支援某個功能或工作負載的資源應該被放置在一起，以簡化管理工作。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise) \(英文\) 管理訂用帳戶和資源群組。
 
@@ -255,10 +255,10 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 ![標記](./media/migrate-best-practices-security-management/tagging.png)
 *標記*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)標記和標記的限制。
-- [檢閱](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) PowerShell 和 CLI 範例來設定標記，然後將標記從資源群組套用到其資源。
+- [了解](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)標記和標記的限制。
+- [檢閱](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#powershell) PowerShell 和 CLI 範例來設定標記，然後將標記從資源群組套用到其資源。
 - [閱讀](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) \(英文\) Azure 標記最佳做法。
 
 ## <a name="best-practice-implement-blueprints"></a>最佳做法：執行藍圖
@@ -268,7 +268,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 - 使用藍圖來協調資源群組、Azure Resource Manager 範本，以及原則和角色指派的部署。
 - 藍圖會儲存在全域散佈的 Azure Cosmos DB 中。 藍圖物件會複寫至多個 Azure 區域。 複寫可針對藍圖提供低延遲、高可用性且一致的存取，無論藍圖部署資源的區域為何。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [閱讀](https://docs.microsoft.com/azure/governance/blueprints/overview)藍圖的相關資訊。
 - [檢閱](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) \(英文\) 用來加速醫療保健中 AI 的藍圖範例。
@@ -280,7 +280,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 參考架構會依案例編排。 其中包含有關管理、可用性、擴充性和安全性的最佳做法和建議。
 Azure App Service 環境能提供完全隔離且專用的環境，可讓您在其中執行各種 App Service 應用程式，包括 Windows 和 Linux Web 應用程式、Docker 容器、行動應用程式及函式。 App Service 能將 Azure 的功能新增到您的應用程式，其中包括安全性、負載平衡、自動調整和自動化管理。 您也可以利用它的 DevOps 功能，例如來自 Azure DevOps 和 GitHub 的持續部署、套件管理、預備環境、自訂網域和 SSL 憑證。 App Service 很適合需要隔離且安全網路存取的應用程式，以及那些會使用大量記憶體和其他需調整之資源的應用程式。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/architecture/reference-architectures) Azure 參考架構。
 - [檢閱](https://docs.microsoft.com/azure/architecture/example-scenario) Azure 範例案例。
@@ -300,9 +300,9 @@ Azure App Service 環境能提供完全隔離且專用的環境，可讓您在�
 ![管理群組](./media/migrate-best-practices-security-management/management-groups.png)
 *管理群組*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/governance/management-groups/index)將資源組織為管理群組。
+- [了解](https://docs.microsoft.com/azure/governance/management-groups)將資源組織為管理群組。
 
 ## <a name="best-practice-deploy-azure-policy"></a>最佳做法：部署 Azure 原則
 
@@ -316,7 +316,7 @@ Azure 原則是 Azure 中的一個服務，您可以用來建立、指派和管�
 ![Azure 原則](./media/migrate-best-practices-security-management/policy.png)
 *Azure 原則*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [取得](https://docs.microsoft.com/azure/governance/policy/overview) Azure 原則概觀。
 - [了解](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)建立和管理原則來強制執行合規性。
@@ -353,15 +353,15 @@ Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備
 您可以使用 Azure 備份以數種方式備份 VM。
 
 - **從 VM 設定直接備份。** 您可以直接從 Azure 入口網站中的 VM 選項，直接搭配 Azure 備份來備份 VM。 您每天可以備份一次 VM，而且您可以視需要還原 VM 磁片。 Azure 備份會擷取能感知應用程式的資料快照集 (VSS)，系統不會在 VM 上安裝任何代理程式。
-- **在復原服務保存庫中直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這能提供單一位置以追蹤及管理備份，以及更細微的備份與還原選項。 備份一天最多三次，並於檔案/資料夾層級執行。 它無法感知應用程式，且不支援 Linux。 使用此方法，在每個想要備份的 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
-- **將 VM 保護至 Azure 備份伺服器。** Azure 備份伺服器是搭配 Azure 備份免費提供。 VM 會被備份到本機 Azure 備份伺服器儲存體。 您接著會將 Azure 備份伺服器備份到 Azure 的保存庫中。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用程式層級進行備份，例如透過備份 SQL Server 或 SharePoint。
+- **復原服務保存庫中的直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這能提供單一位置以追蹤及管理備份，以及更細微的備份與還原選項。 備份一天最多三次，並於檔案/資料夾層級執行。 它無法感知應用程式，且不支援 Linux。 使用此方法，在每個想要備份的 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
+- **保護 VM 以 Azure 備份伺服器。** Azure 備份伺服器是搭配 Azure 備份免費提供。 VM 會被備份到本機 Azure 備份伺服器儲存體。 您接著會將 Azure 備份伺服器備份到 Azure 的保存庫中。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用程式層級進行備份，例如透過備份 SQL Server 或 SharePoint。
 
-針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 Azure 中已備份的待用資料會使用[儲存體服務加密 (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) 進行加密，以及適用於傳輸與儲存的資料。
+針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 在 Azure 中備份的待用資料會使用[儲存體服務加密（SSE）](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json)進行加密，以及傳輸和儲存資料。
 
 ![Azure 備份](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure 備份*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)不同類型的備份。
 - 針對 Azure VM [規劃備份基礎結構](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)。
@@ -375,7 +375,7 @@ Azure VM 會以分頁 Blob 的形式儲存在 Azure 儲存體中。
 - 您可以複製整個 Blob，或使用增量快照複製以僅複製差異變更，並減少儲存空間。
 - 作為額外的預防措施，您可以啟用 Blob 儲存體帳戶的虛刪除。 啟用此功能時，系統會將已刪除的 Blob 標示為刪除，但不會立即清除它。 可以在過渡期間還原該 Blob。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) Azure Blob 儲存體。
 - [了解如何](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots)建立 Blob 快照集。
@@ -389,7 +389,7 @@ Azure VM 會以分頁 Blob 的形式儲存在 Azure 儲存體中。
 
 ### <a name="set-up-disaster-recovery-for-iaas-apps"></a>針對 IaaS 應用程式設定災害復原
 
-除了保護資料之外，BCDR 規劃也必須考慮在發生災害的情況下使應用程式和工作負載持續可用的方法。 針對在 Azure IaaS VM 和 Azure 儲存體上執行的工作負載，請考慮這些解決方案：
+除了保護資料以外，BCDR 規劃也必須考慮如何讓應用程式和工作負載在發生嚴重損壞時保持可用。 針對在 Azure IaaS VM 和 Azure 儲存體上執行的工作負載，請考慮這些解決方案：
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -400,7 +400,7 @@ Site Recovery 會將 VM 從主要 Azure 區域複寫到次要 Azure 區域。 �
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
 *Site Recovery*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [檢閱](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) Azure VM 的災害復原案例。
 - [了解如何](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration)在移轉之後設定 Azure VM 的災害復原。
@@ -418,7 +418,7 @@ Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來�
 ![受控磁碟](./media/migrate-best-practices-security-management/managed-disks.png)
 *受控磁碟*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [取得](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)受控磁碟的概觀。
 - [了解](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks)如何將磁碟轉換成受控。
@@ -439,9 +439,9 @@ Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來�
 ![Azure 監視器](./media/migrate-best-practices-security-management/monitor.png)
 *Azure 監視器*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/azure-monitor/overview) Azure 監視器。
+- [深入瞭解](https://docs.microsoft.com/azure/azure-monitor/overview)Azure 監視器。
 - 取得監視和診斷的[最佳做法](https://docs.microsoft.com/azure/architecture/best-practices/monitoring)。
 - [了解](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)自動調整。
 - [了解如何](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem)將 Azure 資料路由傳送至 SIEM 工具。
@@ -457,10 +457,10 @@ Azure 資源會產生相當多的記錄計量和遙測資料。
 ![診斷記錄](./media/migrate-best-practices-security-management/diagnostics.png)
 *診斷記錄*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) \(英文\) 收集和取用記錄資料。
-- [了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema)診斷記錄的支援項目。
+- [了解](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview) \(英文\) 收集和取用記錄資料。
+- [了解](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema)診斷記錄的支援項目。
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>最佳做法：設定警示和操作手冊
 
@@ -474,9 +474,9 @@ Azure 資源會產生相當多的記錄計量和遙測資料。
 ![警示](./media/migrate-best-practices-security-management/alerts.png)
 *警示*
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts)警示。
+- [了解](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)警示。
 - [了解](https://docs.microsoft.com/azure/security-center/security-center-playbooks)回應資訊安全中心警示的安全性劇本。
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>最佳做法：使用 Azure 儀表板
@@ -489,7 +489,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 ![Azure 儀表板](./media/migrate-best-practices-security-management/dashboard.png)
 *Azure 儀表板*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解如何](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards)建立儀表板。
 - [了解](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure)儀表板結構。
@@ -504,7 +504,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 ![支援方案](./media/migrate-best-practices-security-management/support.png)
 *支援方案*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [取得](https://azure.microsoft.com/support/options) Azure 支援方案的概觀。
 - [了解](https://azure.microsoft.com/support/legal/sla)服務等級協定 (SLA)。
@@ -521,7 +521,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 ![VM 更新](./media/migrate-best-practices-security-management/updates.png)
 *更新*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/automation/automation-update-management) Azure 中的更新管理。
 - [了解如何](https://docs.microsoft.com/azure/automation/oms-solution-updatemgmt-sccmintegration)整合 Configuration Manager 與更新管理。
@@ -545,7 +545,7 @@ Azure 在 Azure 自動化中具有變更追蹤解決方案：
 ![變更管理](./media/migrate-best-practices-security-management/change.png)
 *變更管理*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/automation/automation-change-tracking)變更追蹤。
 - [了解](https://docs.microsoft.com/azure/automation/automation-intro) Azure 自動化功能。

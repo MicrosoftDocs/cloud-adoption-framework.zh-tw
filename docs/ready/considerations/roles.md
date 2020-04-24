@@ -10,18 +10,18 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 03defd0e428bd0caf4e83d4999ba5b42cf63b43a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433862"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997933"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
 群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 將使用者指派至適當群組以及從中移除，有助於保持特定使用者的最新許可權。 Azure [角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) 提供更細緻的存取管理，以根據使用者角色組織資源。
 
-如需建議 RBAC 做法作為身分識別和安全性策略一部分的概觀，請參閱 [Azure 身分識別管理和存取控制安全性最佳做法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control)。
+如需建議 RBAC 做法作為身分識別和安全性策略一部分的概觀，請參閱 [Azure 身分識別管理和存取控制安全性最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control)。
 
 ## <a name="overview-of-role-based-access-control"></a>角色型存取控制概觀
 
@@ -38,7 +38,7 @@ ms.locfileid: "80433862"
 ![使用 RBAC 的建議模式](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](https://docs.microsoft.com/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
+> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](https://docs.microsoft.com/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
 
 ## <a name="use-built-in-rbac-roles"></a>使用內建的 RBAC 角色
 

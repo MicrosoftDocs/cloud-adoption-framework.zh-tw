@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b321c108fda144989fd2101c8fdfcd41eb4aaec
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428171"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396196"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
@@ -30,7 +30,7 @@ ms.locfileid: "80428171"
 
 雲端採用工作需要使用者執行這些工作，這一點相當直覺。 因此，很少人覺得雲端採用小組是一項需求。 不過，剛加入雲端的使用者可能不會完全感謝雲端治理小組的重要性。 這項挑戰通常會在採用週期初期發生。 雲端治理小組會提供必要的檢查和平衡，以確保雲端採用不會使企業面臨任何新風險。 當您必須採取風險時，這個小組可以確保適當的程式和控制措施得以減輕或管控這些風險。
 
-若要深入瞭解雲端採用、雲端治理和其他這類功能，請參閱[瞭解必要雲端功能](../organize/index.md?#understand-required-cloud-capabilities)的簡短章節。
+如需有關雲端採用、雲端治理和其他這類功能的詳細資訊，請參閱[瞭解必要雲端功能](../organize/index.md#understand-required-cloud-capabilities)的簡短章節。
 
 ## <a name="map-people-to-capabilities"></a>將人員對應至功能
 

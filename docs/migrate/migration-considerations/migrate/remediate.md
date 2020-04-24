@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429374"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 
-在移轉的評估程序進行期間，小組會設法找出任何會使資產與所選雲端提供者不相容的設定。 「修復」是移轉程序中的檢查點，可確保這些不相容的問題能夠獲得解決。 本文會討論一些常見的修復工作以供您參考。 文中也會建立可用來決定修復是否值得的基本架構程序。
+在移轉的評估程序進行期間，小組會設法找出任何會使資產與所選雲端提供者不相容的設定。 「修復」** 是移轉程序中的檢查點，可確保這些不相容的問題能夠獲得解決。 本文會討論一些常見的修復工作以供您參考。 文中也會建立可用來決定修復是否值得的基本架構程序。
 
 ## <a name="common-remediation-tasks"></a>常見的修復工作
 
@@ -53,8 +53,8 @@ ms.locfileid: "80429374"
 如果這些問題沒有得到有利的答案，或許還有幾種超越基本 IaaS 重新裝載策略的替代方法值得考慮：
 
 - **容器化。** 某些資產可以裝載於容器化環境中，而不需要修復。 這可能會產生較不理想的效能，且不會解決安全性或合規性問題。
-- **自動化。** 視工作負載和修復需求而定，使用 DevOps 方法編寫部署至新資產的指令碼可能會更有利。
-- **重建。** 當修復成本非常高且商業價值同樣很高時，工作負載可能就相當適合作為重建或重新架構的候選項目。
+- **Automation.** 視工作負載和修復需求而定，使用 DevOps 方法編寫部署至新資產的指令碼可能會更有利。
+- **重構.** 當修復成本非常高且商業價值同樣很高時，工作負載可能就相當適合作為重建或重新架構的候選項目。
 
 ## <a name="next-steps"></a>後續步驟
 

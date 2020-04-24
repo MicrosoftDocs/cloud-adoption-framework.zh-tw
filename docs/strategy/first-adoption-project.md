@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 430ed60231f83ad1ad632782ced1200caa158137
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431493"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396012"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "80431493"
 
 為了支援上述準則，此清單提供每個動機類別的第一個專案範例：
 
-- **重要的商務活動：** 當重要的商務事件是主要動機時， [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery)之類的工具可能是個不錯的第一個專案。 在遷移期間，您可以使用此工具來快速遷移資料中心資產。 但在第一個專案中，您可以單純地使用它做為嚴重損壞修復工具，以降低資料中心內嚴重損壞修復資產的相依性。
+- **重要的商務活動：** 當重要的商務事件是主要動機時， [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md#azure-site-recovery)之類的工具可能是個不錯的第一個專案。 在遷移期間，您可以使用此工具來快速遷移資料中心資產。 但在第一個專案中，您可以單純地使用它做為嚴重損壞修復工具，以降低資料中心內嚴重損壞修復資產的相依性。
 
 - **遷移動機：** 當遷移是主要動機時，最好是開始進行非關鍵工作負載的遷移。 《 [Azure 設定指南》](../ready/azure-setup-guide/index.md)和[azure 遷移指南](../migrate/azure-migration-guide/index.md)可提供您第一個工作負載的遷移指引。
 

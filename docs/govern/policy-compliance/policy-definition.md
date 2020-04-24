@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6c3ed91d77320f8c72b0a184dc2aa7054c0089d5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434971"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396077"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
@@ -55,7 +55,7 @@ ms.locfileid: "80434971"
 - **原則聲明：** 原則需求和目標的簡短說明。
 - **設計或技術指導：** 可操作的建議、規格或其他指引，以支援和強制執行此原則，讓 IT 小組和開發人員可以在設計和建立其雲端部署時使用。
 
-如果您需要協助開始定義原則，請參閱治理章節概觀中介紹的[治理專業領域](../governance-disciplines.md)。 這些專業領域的文章包含移至雲端時所遇到的常見商業風險範例，以及用來補救這些風險的範例原則（例如，請參閱成本管理專業領域的[範例原則定義](../cost-management/policy-statements.md)）。
+如果您需要協助開始定義原則，請參閱治理章節概觀中介紹的[治理專業領域](../governance-disciplines.md)。 這些專業領域的文章包含移至雲端時所遇到的常見商業風險範例，以及用來補救這些風險的範例原則。 例如，請參閱成本管理專業領域的原則[定義範例](../cost-management/policy-statements.md)。
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>增量治理並與現有原則整合
 

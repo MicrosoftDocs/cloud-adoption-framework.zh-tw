@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d50364a621e57b95e26f5686f4d470984530e161
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707674"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396162"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>雲端治理的五個專業領域
 
@@ -89,7 +89,7 @@ ms.locfileid: "77707674"
                     </div>
                     <div class="cardText">
                         <h3>安全性基準</h3>
-                        <p>安全性是一個複雜的主題，每一家公司都是獨一無二的。 一旦建立安全性需求之後，雲端治理原則和強制會將這些需求套用到網路、資料和資產設定。</p>
+                        <p>安全性是一個複雜的主旨，對於每一家公司都是獨一無二的。 一旦建立安全性需求之後，雲端治理原則和強制會將這些需求套用到網路、資料和資產設定。</p>
                     </div>
                 </div>
             </div>
