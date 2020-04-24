@@ -1,6 +1,6 @@
 ---
 title: 區域決策指南
-description: 了解雲端平台區域，以及可能影響 Azure 區域選取範圍的因素和特性。
+description: 瞭解雲端平臺區域，以及可能影響您的 Azure 區域選取專案的因素和特性。
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433027"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998061"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
 Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](https://azure.microsoft.com/global-infrastructure/regions)都有一組特定的特性，因此要選擇哪個區域來使用就變得格外重要。
 
 1. **可用的服務：** 部署到每個區域的服務會根據各種因素而有所不同。 選取含有您所需服務的區域，以將工作負載部署至其中。 如需每個區域中可用服務的詳細資訊，請參閱[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services)。
-1. **容量：** 每個區域都有最大容量。 一般來說，使用者雖不會對此有所概念，但這一點卻會影響哪些類型的訂用帳戶能夠在何種情況下部署哪些類型的服務。 這與訂用帳戶配額不同。 如果您打算大規模地將資料中心移轉至 Azure，您可以洽詢當地的 Azure 現場小組或客戶經理，來確認您是否能夠以所需規模進行部署。
+1. **容量：** 每個區域都有最大容量。 雖然這通常會與使用者抽象化，但它可能會影響哪些類型的訂用帳戶可以部署哪些類型的服務，以及在何種情況下。 這與訂用帳戶配額不同。 如果您打算將大規模的資料中心遷移至 Azure，您可能會想要洽詢您當地的 Azure 欄位小組或客戶經理，以確認您可以視需要進行部署。
 1. **條件約束：** 某些條件約束會放在特定區域的服務部署上。 例如，某些區域只能作為備份或容錯移轉目標。 其他值得注意的條件約束是[資料主權需求](https://azure.microsoft.com/global-infrastructure/geographies)。
 1. **主權：** 某些地區專屬於特定的主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其餘 Azure 區域徹底分開、不一定會由 Microsoft 管理，而且可能會受限於特定客戶類型。 這些主權區域包括：
-    1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
+    1. [Azure 中國](https://azure.microsoft.com/global-infrastructure/china)
     1. [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany) (即將淘汰，改為使用德國境內標準的非主權 Azure 區域)
-    1. [Azure US Gov](https://azure.microsoft.com/global-infrastructure/government)
+    1. [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
     1. 注意：[澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)中的兩個區域雖由 Microsoft 管理，卻提供給澳大利亞政府及其客戶和承包商使用，因此會有和其他主權雲端類似的用戶端條件約束。
 
 ## <a name="operate-in-multiple-geographic-regions"></a>在多個地理區域營運
@@ -47,17 +47,17 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
   - Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
   - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
-  - 如果您不打算使用 GRS 來支援區域復原需求，則建議您「不要」使用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
+  - 如果您不打算使用 GRS 來支援區域復原需求，則建議您「不要」__ 使用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
   > [!WARNING]
   > 請勿嘗試使用 Azure GRS 來備份或復原 VM。 相反地，請使用 [Azure 備份](https://azure.microsoft.com/services/backup)和 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) 以及 [Azure 受控磁碟](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)來支援 IaaS 工作負載的復原。
 
-- Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已進行最佳化，讓資料傳輸留在 Microsoft 骨幹上，並盡可能使用 [VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全球性部署的較大型組織可改為使用 [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)，以在各區域之間路由傳送流量，從而節省區域性輸出費用。
+- Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已進行最佳化，讓資料傳輸留在 Microsoft 骨幹上，並盡可能使用 [VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全域部署的較大型組織可以改為使用[ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) ，在可儲存區域輸出費用的區域之間路由傳送流量。
 
 - Azure 資源群組是區域專屬的建構。 不過，讓資源群組內的資源跨越多個區域是很常見的事。 當您這麼做時，請務必考慮到在發生區域性失敗時，針對資源群組的控制平面作業將會在受影響的區域中失敗，但其他區域中的資源 (屬於該資源群組) 則會繼續運作。 這可能會同時影響到網路設計和資源群組設計。
 
 - Azure 內的許多 PaaS 服務支援[服務端點](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)或[私人連結](https://docs.microsoft.com/azure/private-link/private-link-overview)。 在考慮區域復原、移轉和治理時，這兩種解決方案都會大幅影響您的網路考量。
 
-- 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 和 Cosmos DB 都可讓您輕鬆地複寫到 x 個額外區域。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中使用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
+- 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 和 Cosmos DB 都可讓您輕鬆地複寫到 x__ 個額外區域。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中使用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
 
 - 除了部署到多個區域以支援災害復原外，許多組織還會選擇以主動-主動模式進行部署，因此不需要容錯移轉功能。 這有額外的好處，那就是提供全球性負載平衡，並額外提升容錯和網路效能。 若要利用此模式，應用程式必須支援在多個區域中執行主動-主動模式。
 
@@ -82,9 +82,9 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 | 區域        | Country     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | USA         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | 加拿大      | 否              | Customers              | 是                         | 是                           |
-| 歐洲        | Germany     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
-| 亞太地區  | 韓國 | 是             | 合作夥伴               | 是                         | 否                            |
+| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
+| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
+| 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 
 <!-- markdownlint-disable MD026 -->
 

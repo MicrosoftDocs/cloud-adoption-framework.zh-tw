@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434230"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
@@ -51,7 +51,7 @@ ms.locfileid: "80434230"
 - CIO 正在審查個人資料和財務資料的原則，以允許未來的州目標。
 - 應用程式開發和 BI 團隊希望在未來的 24 個月內，根據客戶業務開發和新產品的願景，將雲端式解決方案發佈到生產環境中。
 - 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 預計這將在未來五年內節省約 2500 萬美元的成本。
-    ![的內部部署成本與 Azure 成本相比，示範未來五年的 $ 25M 美元報酬](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    ![內部部署成本與 Azure 成本，示範未來五年的美元傳回 $ 25M 美元](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - 公司打算改變 it 投資的方式，因為它會將已認可的資本支出重新置放為營運費用。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 
 ## <a name="next-steps"></a>後續步驟

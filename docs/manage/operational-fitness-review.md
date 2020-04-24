@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e36599414d45fc6cda0e714694c45a64d9d4857e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433560"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120122"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -36,7 +36,7 @@ ms.locfileid: "80433560"
 
 Microsoft 遵循的程式會形成本文所述程式的基礎。
 
-## <a name="understand-the-problem"></a>瞭解問題
+## <a name="understand-the-problem"></a>了解問題
 
 如同您在[快速](../getting-started/migrate.md)入門中所學到的，企業數位轉型的第一個步驟，是要藉由採用 Azure 來識別要解決的商務問題。 下一個步驟是判斷問題的高階解決方案，例如將工作負載遷移至雲端，或調整現有的內部部署服務以包含雲端功能。 最後，您可以設計和執行解決方案。
 
@@ -44,7 +44,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 相反地，無_功能性_需求與屬性相關，例如服務的[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[復原能力](https://docs.microsoft.com/azure/architecture/resiliency)和擴充[性](https://docs.microsoft.com/azure/architecture/checklist/scalability)。 這些屬性與功能需求不同，因為它們不會直接影響服務中任何特定功能的最終功能。 不過，無功能性需求與服務的效能和持續性有關。
 
-您可以在服務等級協定（SLA）方面指定某些非功能性需求。 例如，您可以將服務持續性表示為可用性百分比：「可用時間99.99%」。 其他非功能性需求可能較不容易定義，而且可能會隨著生產需求的變更而變更。 例如，消費者導向的服務可能會在受歡迎的衝擊後面臨意外的輸送量需求。
+您可以在服務等級協定（SLA）方面指定某些非功能性需求。 例如，您可以將服務持續性表示為可用性百分比：「可用的99.99 百分比」。 其他非功能性需求可能較不容易定義，而且可能會隨著生產需求的變更而變更。 例如，消費者導向的服務可能會在受歡迎的衝擊後面臨意外的輸送量需求。
 
 > [!NOTE]
 > 如需有關復原需求的詳細資訊，請參閱[設計可靠的 Azure 應用程式](https://docs.microsoft.com/azure/architecture/reliability#define-requirements)。 該文章包含復原點目標（RPO）、復原時間目標（RTO）和 SLA 等概念的說明。
@@ -79,9 +79,9 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 ### <a name="service-review-phase"></a>服務審查階段
 
-服務審核階段是操作健身審查的核心。 其牽涉到下列步驟：
+服務審核階段是操作健身審查的核心。 流程有三個步驟：
 
-1. **監視服務計量**。 使用計分卡計量來監視服務，以確保服務符合商務期望。 服務監視是不可或缺的。 如果您無法監視與無功能性需求相關的一組服務，請將對應的計分卡計量視為紅色。 在此案例中，補救措施的第一個步驟是實作適當的服務監視機制。 例如，如果企業預期服務會使用99.99% 的可用性來運作，但沒有實際執行的遙測來測量可用性，假設您不符合需求。
+1. **監視服務計量**。 使用計分卡計量來監視服務，以確保服務符合商務期望。 服務監視是不可或缺的。 如果您無法監視與無功能性需求相關的一組服務，請將對應的計分卡計量視為紅色。 在此案例中，補救措施的第一個步驟是實作適當的服務監視機制。 例如，如果企業預期服務以99.99% 的可用性運作，但沒有實際執行的遙測來測量可用性，假設您不符合需求。
 
 2. **規劃補救措施**。 針對計量低於可接受閾值的每個服務作業，判斷補救服務以將作業帶到可接受層級的成本。 如果補救服務的成本大於預期的服務收益，請繼續考慮無形成本，例如客戶經驗。 例如，如果客戶無法使用服務來進行成功的訂單，他們可能會改為選擇競爭者。
 
@@ -109,7 +109,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 1. 商務擁有者和業務提倡者會列舉並判斷每項商務作業的無功能性需求，以及工程和服務擁有者的輸入。 針對先前已識別的商務作業，請檢查並確認優先順序。 針對新的商務作業，請在現有的清單中指派優先順序。
 
-2. 工程和服務擁有者會將商務營運的目前狀態對應到相對應的內部部署和雲端服務。 對應是每個服務中的元件清單，以相依性樹狀結構作為導向。 然後，工程和服務擁有者會透過樹狀結構判斷重要的路徑。
+2. 工程團隊與服務擁有者會將商業作業的目前狀態對應到對應的內部部署與雲端服務。 對應是每個服務中的元件清單，以相依性樹狀結構作為導向。 然後，工程和服務擁有者會透過樹狀結構判斷重要的路徑。
 
 3. 工程團隊與服務擁有者會檢閱操作記錄的目前狀態，並監視上一個步驟中所列的服務。 健全的記錄和監視非常重要：它們會識別導致無法符合功能性需求的服務元件。 如果沒有足夠的記錄和監視功能，小組必須建立並執行計畫，將它們放在適當的位置。
 
@@ -121,9 +121,9 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 ## <a name="recommended-resources"></a>建議的資源
 
-- [軟體品質的要素](https://docs.microsoft.com/azure/architecture/guide/pillars)。
+- [軟體品質的](https://docs.microsoft.com/azure/architecture/guide/pillars)要素。
     Azure 應用程式架構指南的這一節說明軟體品質的五大要素：擴充性、可用性、復原、管理和安全性。
-- [Azure 應用程式的 10 個設計原則](https://docs.microsoft.com/azure/architecture/guide/design-principles)。
+- [Azure 應用程式的十個設計原則](https://docs.microsoft.com/azure/architecture/guide/design-principles)。
     Azure 應用程式架構指南的這一節將討論一組設計原則，讓您的應用程式更具擴充性、彈性和可管理性。
 - [為 Azure 設計具復原能力的應用程式](https://docs.microsoft.com/azure/architecture/resiliency)。
     本指南會從「_復原_」和「相關概念」一詞的定義開始。 然後，它會說明在應用程式的存留期（從設計和執行到部署和作業）上使用結構化方法來達到復原的流程。

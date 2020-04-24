@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 5a70b89191f53c3475dd0d14f67d2c4dc4d68115
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80526808"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120284"
 ---
 # <a name="central-it-capabilities"></a>中央 IT 功能
 
@@ -50,7 +50,7 @@ ms.locfileid: "80526808"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱：
+- 檢閱
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)
@@ -102,7 +102,7 @@ ms.locfileid: "80526808"
 
 這個範例敘述說明成熟的中央 IT 小組採用的方法。
 
-Contoso，LLC 已採用中央 IT 模型來支援企業的雲端資源。 為了提供此模型，它們已針對各種共用服務（例如輸入網路連線）實作為嚴格的控制。 這項明智的移動會降低其雲端環境的暴露程度，並提供單一「換行」裝置，以在發生缺口時封鎖所有流量。 其安全性基準原則會指出所有輸入流量都必須通過中央 IT 小組所管理的共用裝置。
+Contoso，LLC 已採用中央 IT 模型來支援企業的雲端資源。 為了提供此模型，它們已針對各種共用服務（例如輸入網路連線）實作為嚴格的控制。 這項明智的移動會降低其雲端環境的暴露程度，並提供單一「全形」裝置，以在發生缺口時封鎖所有流量。 其安全性基準原則會指出所有輸入流量都必須通過中央 IT 小組所管理的共用裝置。
 
 不過，其中一個雲端採用小組現在需要具有專用且特別設定之輸入網路連線的環境，以使用特定的雲端技術。 不成熟的中央 IT 小組只會拒絕要求，並根據採用需求設定其現有程式的優先順序。 Contoso 的中央 IT 小組不同。 他們快速識別出此難題的簡單四部分解決方案：分類、協調、隔離和自動化。
 

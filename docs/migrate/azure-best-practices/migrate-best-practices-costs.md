@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 43dfb9f6d5b5715b7f9aca08e19ed0f7c14dc6de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354168"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119992"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>針對移轉到 Azure 之工作負載評估成本及調整大小的最佳做法
 
@@ -38,7 +38,7 @@ ms.locfileid: "80354168"
 
 - **Azure 定價計算機：** 您可以選取想要預估的產品，例如 Vm 和儲存體。 您可以將成本輸入到定價計算機，以建議成本預估。
 
- ![Azure 定價計算機](./media/migrate-best-practices-costs/pricing.png) *azure 定價計算機*
+ ![Azure 定價計算機](./media/migrate-best-practices-costs/pricing.png) *Azure 定價計算機*
 
 - **Azure Migrate：** 若要預估成本，您必須審查並考慮在 Azure 中執行工作負載所需的所有資源。 若要取得此資料，您可以建立您的資產清查，包括伺服器、VM、資料庫與儲存體。 您可以使用 Azure Migrate 來收集此資訊。
 
@@ -51,7 +51,7 @@ ms.locfileid: "80354168"
     ![Azure Migrate](./media/migrate-best-practices-costs/assess.png)
     *Azure Migrate 評量*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [使用](https://azure.microsoft.com/pricing/calculator) Azure 定價計算機。
 - [取得 Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-overview)。
@@ -62,20 +62,20 @@ ms.locfileid: "80354168"
 
 當您部署 Azure VM 以支援工作負載時，您可以選擇數個選項。 每個 VM 類型都有特定的功能與不同的 CPU、記憶體與磁碟組合。 VM 會依下列方式分組：
 
-**型別** | **詳細資料** | **使用**
+**類型** | **詳細資料** | **用法**
 --- | --- | ---
 **一般用途** | 平衡的 CPU 對記憶體。 | 適用於測試和開發、小型至中型資料庫，低至中流量 Web 伺服器。
 **計算最佳化** | CPU 與記憶體的比例高。 | 適用於中流量 Web 伺服器、網路設備、批次處理、應用程式伺服器。
-**記憶體最佳化** | 高記憶體對 CPU。 | 適用於關聯式資料庫、中型到大型快取、記憶體內分析。
+**記憶體優化** | 高記憶體對 CPU。 | 適用於關聯式資料庫、中型到大型快取、記憶體內分析。
 **儲存體最佳化** | 高磁碟輸送量及 IO。 | 適用於巨量資料、SQL 與 NoSQL 資料庫。
 **GPU 最佳化** | 特製化 VM。 一或多個 GPU。 | 繁重圖形與視訊編輯。
 **高效能** | 最快、最強的 CPU。 具有選用高輸送量網路介面 (RDMA) 的 VM | 關鍵高效能應用程式。
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。
 - 每個類型中都有一些 VM 系列。
-- 此外，當您選取某個系列中的 VM 時，您只能在該系列中相應增加或相應減少 VM。 例如，DSv2\_2 可以擴大到 DSv2\_4，但它無法變更為不同的系列，例如 Fsv2\_2。
+- 此外，當您選取某個系列中的 VM 時，您只能在該系列中相應增加或相應減少 VM。 例如，DSv2\_2 可以相應增加到 DSv2\_4，但它無法變更為不同的系列，例如 Fsv2\_2。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [深入了解](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) VM 類型與大小調整，以及將大小對應到類型。
 - [規劃](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs) VM 大小調整。
@@ -95,9 +95,9 @@ Azure 提供數種儲存體資料類型。
 
 <!--markdownlint-disable MD033 -->
 
-**Data type** | **詳細資料** | **使用量**
+**資料類型** | **詳細資料** | **使用量**
 --- | --- |  ---
-**Blobs (英文)** | 經最佳化以儲存大量非結構化物件，例如文字或二進位資料<br/><br/> | 透過 HTTP/HTTPS 從任意位置存取資料。 | 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。
+**Blob** | 經最佳化以儲存大量非結構化物件，例如文字或二進位資料<br/><br/> | 透過 HTTP/HTTPS 從任意位置存取資料。 | 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。
 **檔案** | 透過 SMB 3.0 存取受控檔案共用 | 當移轉內部部署檔案共用時使用，並提供檔案資料的多個存取/連線。
 **磁碟** | 以分頁 Blob 為基礎。<br/><br/> 磁片類型（速度）：標準（HDD 或 SSD）或 Premium （SSD）。<br/><br/>磁片管理：非受控（您管理磁片設定和存放裝置）或受管理（您選取磁片類型，Azure 會為您管理磁片）。 | 為 VM 使用進階磁碟。 使用受控磁碟來獲得簡單的管理與規模調整。
 **佇列** | 存放及擷取大量訊息 (透過已驗 (HTTP 或 HTTPS) 存取) | 使用非同步訊息佇列連結應用程式元件。
@@ -111,7 +111,7 @@ Azure 儲存體提供不同的選項，以存取區塊 Blob 資料。 選取適�
 
 <!--markdownlint-disable MD033 -->
 
-**型別** | **詳細資料** | **使用量**
+**類型** | **詳細資料** | **使用量**
 --- | --- | ---
 **經常性** | 相較於非經常性存取層有較高的儲存體成本。 相較於非經常性存取層有較低的存取費用。<br/><br/>這是預設層。 | 針對經常存取之作用中用途使用。
 **非經常性** | 相較於經常性存取層有較低的儲存體成本。 相較於經常性存取層有較高的存取費用。<br/><br/> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。
@@ -138,22 +138,22 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 儲存體帳戶可以使用不同類型的備援選項來獲得備援能力與高可用性。
 
-**型別** | **詳細資料** | **使用量**
+**類型** | **詳細資料** | **使用量**
 --- | --- | ---
-**本地備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 在給定的一年內提供至少 99.999999999 % (11 個 9\') 的物件持久性。 | 當您的應用程式存放可輕鬆重建的資料可以考慮使用。
-**區域備援儲存體 (ZRS)** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集的實體位置都不同，而且都位於自己的可用性區域中。 在給定的一年內提供至少 99.9999999999 % (12 個 9\') 的物件持久性，方式是跨多個資料中心或區域保存您資料的多個複本。 | 當您需要一致性、持久性與高可用性時可以考 慮使用。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。
-**異地備援儲存體 (GRS)** | 透過將資料複寫到與主區域距離數百公里遠的次區域，來在提供整個區域的服務都無法使用時的可用性。 在給定的一年內提供至少 99.99999999999999 % (16 個 9\') 的物件持久性。 | 除非 Microsoft 起始容錯移轉到次區域的作業，否則複本資料無法使用。 若發生容錯移轉，讀取與寫入存取可用。
-**讀取權限異地備援儲存體 (RA-GRS)** | 類似於 GRS。 在給定的一年內提供至少 99.99999999999999 % (16 個 9\') 的物件持久性 | 透過允許來自用於 GRS 之次區域的讀取存取，來提供 99.99 % 的讀取可用性。
+**本機備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 在指定的一年內提供至少99.999999999% （11個9）的物件持久性。 | 當您的應用程式存放可輕鬆重建的資料可以考慮使用。
+**區域冗余儲存體（ZRS）** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集的實體位置都不同，而且都位於自己的可用性區域中。 藉由在多個資料中心或區域中保留多個資料複本，在指定的一年內提供至少99.9999999999 百分比（12個9）的持久性。 | 當您需要一致性、持久性與高可用性時可以考 慮使用。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。
+**異地備援儲存體 (GRS)** | 透過將資料複寫到與主區域距離數百公里遠的次區域，來在提供整個區域的服務都無法使用時的可用性。 在指定的一年內，至少提供物件的99.99999999999999 百分比（16個9）持久性。 | 除非 Microsoft 起始容錯移轉到次區域的作業，否則複本資料無法使用。 若發生容錯移轉，讀取與寫入存取可用。
+**讀取權限異地備援儲存體 (RA-GRS)** | 類似於 GRS。 在指定的一年內提供至少99.99999999999999 百分比（16個9）的物件持久性 | 允許從用於 GRS 的第二個區域讀取存取，以提供99.99% 的讀取可用性。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [檢閱](https://azure.microsoft.com/pricing/details/storage) Azure 儲存體定價。
 - [了解](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) 如何使用 Azure 匯入/匯出將大量資料移轉到 Azure Blob 與檔案。
-- [比較](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) Blob、檔案與磁碟儲存體資料類型。
+- [比較](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=/azure/storage/blobs/toc.json) Blob、檔案與磁碟儲存體資料類型。
 - [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)存取層。
-- [檢閱](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)不同類型的儲存體帳戶。
-- 了解[儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)、[LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json)、[GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), 與[讀取權限 GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region)。
-- [深入了解](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) Azure 檔案。
+- [檢閱](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json)不同類型的儲存體帳戶。
+- 瞭解[Azure 儲存體的冗余](https://docs.microsoft.com/azure/storage/common/storage-redundancy)，包括 LRS、ZRS、GRS 和讀取權限 GRS。
+- 深入瞭解[Azure 檔案儲存體](https://docs.microsoft.com/azure/storage/files/storage-files-introduction)。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>最佳做法：利用 Azure 混合式權益
 
@@ -161,7 +161,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 整合式 Microsoft 內部部署/Azure 產品組合可提供競爭與成本優勢。 若您目前有透過軟體保證 (SA) 取得的作業系統或其他軟體授權，您可以透過 Azure Hybrid Benefit 在雲端使用那些授權。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [查看](https://azure.microsoft.com/pricing/hybrid-benefit) Hybrid Benefit 節費計算機。
 - [深入了解](https://azure.microsoft.com/pricing/hybrid-benefit)適用於 Windows Server 的 Hybrid Benefit。
@@ -181,7 +181,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 ![保留執行個體](./media/migrate-best-practices-costs/reserve.png)
 *Azure 保留的 VM*
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure 保留。
 - [閱讀](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)保留執行個體常見問題集。
@@ -193,7 +193,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 若要這樣做，您可以使用 Azure 成本管理 API。 接著，將資料彙總到單一來源 (例如 Azure SQL) 之後，您可以使用諸如 Power BI 的工具來呈現彙總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要主動深入解析成本管理的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [取得 Azure 使用量 API 概觀](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
 - [了解](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)如何在 Power BI Desktop 中連線到 Azure 使用量見解。
@@ -238,13 +238,13 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
     *Azure 成本管理分析*
 - **取得建議：** 取得 Advisor 建議，告訴您如何優化和提升效率。
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [取得 Azure 成本管理 概觀](https://docs.microsoft.com/azure/cost-management/overview)。
-- [了解如何](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)使用 Azure 成本管理來最佳化您的雲端投資。
-- [了解如何](https://docs.microsoft.com/azure/cost-management/use-reports)使用 Azure 成本管理報告。
-- [取得](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)從建議最佳化成本的指南。
-- [檢閱](https://docs.microsoft.com/rest/api/consumption/budgets) Azure 使用量 API。
+- 取得[Azure 成本管理](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)的總覽。
+- 瞭解如何[使用 Azure 成本管理來優化您的雲端投資](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)。
+- 瞭解如何[使用 Azure 成本管理報表](https://docs.microsoft.com/azure/cost-management/use-reports)。
+- 取得[從建議中優化成本的教學](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)課程。
+- 請參閱[Azure 使用量 API](https://docs.microsoft.com/rest/api/consumption/budgets)。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>最佳做法：監視資源使用率
 
@@ -256,7 +256,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 - 除了 VM 監視之外，您也應該監視過度使用或低使用量的其他網路資源 (例如 ExpressRoute 與虛擬網路閘道)。
 - 您可以使用 Microsoft 工具 (例如 Azure 成本管理、Azure 監視器與 Azure Advisor) 來監視 VM 使用量。 也有第三方工具可用。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - 取得 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview) 與 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) 概觀。
 - [取得](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor 成本建議。
@@ -270,7 +270,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 - 資源群組預算可協助您追蹤與資源群組關聯的成本。
 - 當達到或超出預算時，您可以觸發警示並執行各種劇本。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解如何](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)使用 Azure Budgets 來管理成本。
 - [依照教學課程](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json)建立及管理 Azure 預算。
@@ -285,9 +285,9 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 - 在最佳化您的記錄儲存體成本與保存所需的記錄資料之間應該仔細評估。
 - 我們建議在完成移轉之後立即評估並設定，這樣您才不會花錢保存不重要的記錄。
 
-**深入了解：**
+**瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)如何監視使用量及估計成本。
+- [了解](https://docs.microsoft.com/azure/azure-monitor/platform/usage-estimated-costs)如何監視使用量及估計成本。
 
 ## <a name="best-practice-optimize-storage"></a>最佳做法：優化儲存體
 
@@ -298,7 +298,7 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 - 利用一般用途 v2 儲存體的存取層優點，將較少的重要資料從經常性存取層移至非經常性存取層與封存層。
 - 使用 StorSimple 來協助根據自訂原則移動過時資料。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)存取層。
 - [取得 StorSimple 概觀](https://docs.microsoft.com/azure/azure-monitor/overview) 與 [StorSimple 定價](https://azure.microsoft.com/pricing/details/storsimple)。
@@ -307,9 +307,9 @@ Microsoft 提供 Azure 成本管理來協助您追蹤費用：
 
 在雲端中執行 VM 的終極目標是最佳化它所使用的 CPU、記憶體與磁碟。 若您發現未最佳化的 VM，或經常有 VM 未使用的時間，可以將 VM 關機或使用虛擬機器擴展集將其降級。
 
-您可以使用 Azure 自動化、虛擬機器擴展集、自動關機與指令碼或第三方解決方案來最佳化 VM。
+您可以使用 Azure 自動化、虛擬機器擴展集、autoshutdown，以及腳本式或協力廠商解決方案來優化 VM。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [了解如何](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)使用垂直自動調整規模。
 - [排定](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) VM 自動啟動。
@@ -326,7 +326,7 @@ Azure 提供 REST API，它可以存取您的租用戶帳單資訊。
 - API 是實作為資源提供者並包括 Azure Resource Manager 所提供的 API。
 - 預算 API 可以與 Azure Logic Apps 與 Runbook 整合。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - [深入了解](https://docs.microsoft.com/rest/api/consumption/budgets)預算 API。
 - 使用帳單 API [取得](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) Azure 使用量見解。
@@ -337,7 +337,7 @@ VM 工作負載通常會依「現況」移轉以避免停機。 VM 通常可能�
 
 在移轉之後，徹底檢閱這些類型的工作之後，您可能可以考慮將其移轉到無伺服器技術，例如 Azure Functions 或 Azure Batch 作業。 使用此解決方案之後，您再也不需要管理及維護 VM，因此可節省額外的成本。
 
-**深入了解：**
+**瞭解更多資訊：**
 
 - 了解 [Azure Functions](https://azure.microsoft.com/services/functions)。
 - 了解 [Azure Batch](https://azure.microsoft.com/services/batch)。

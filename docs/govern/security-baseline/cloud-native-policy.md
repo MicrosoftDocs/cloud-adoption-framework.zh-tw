@@ -9,15 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80426006"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
-[安全性基準](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
+[安全性基準](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
 > Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審查。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 建議您不要使用此範例原則。

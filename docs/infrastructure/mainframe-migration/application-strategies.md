@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425819"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -66,7 +66,7 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 在 Azure 上，模擬環境可用來執行 TP 管理員和使用 JCL 的批次作業。 在資料層中，DB2 會取代為 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)，但也可以使用 Microsoft SQL Server、DB2 LUW 或 Oracle Database。 模擬器支援 IMS、VSAM 和 SEQ。 大型主機的系統管理工具會由 Azure 服務，以及其他廠商在 Vm 中執行的軟體所取代。
 
-畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如，
+畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如：
 
 - 以 Windows 為基礎的 Vm： Internet Information Server （IIS），以及用於螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
 
@@ -80,7 +80,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ### <a name="compute"></a>計算
 
-請使用：
+使用︰
 
 - 具有最高時脈速度的 VM。 大型電腦應用程式通常使用單一執行緒，且大型主機 CPU 具有相當高的時脈速度。
 
@@ -92,7 +92,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ### <a name="storage"></a>儲存體
 
-請使用：
+使用︰
 
 - [Azure PREMIUM ssd](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage)或[azure ultra ssd](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) ，以取得最大的可用 IOPS。
 
@@ -120,7 +120,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 | 組合器        | Raincode 和 TmaxSoft 所提供的 Azure 服務；或 COBOL、C 或 Java，或對應至作業系統功能               |
 | JCL              | JCL、PowerShell 或其他指令碼工具                                                                                                   |
 | COBOL            | COBOL、C 或 Java                                                                                                                            |
-| 自然          | Natural、COBOL、C 或 Java                                                                                                                  |
+| Natural          | Natural、COBOL、C 或 Java                                                                                                                  |
 | FORTRAN 和 PL/I | FORTRAN、PL/I、COBOL、C 或 Java                                                                                                           |
 | REXX 和 PL/I    | REXX、PowerShell 或其他指令碼工具                                                                                                  |
 
@@ -176,7 +176,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 Azure 提供經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。 某些工作負載比較容易移轉。 其他依賴舊式系統軟體 (例如 CICS 與 IMS) 的工作負載，可以使用合作夥伴解決方案重新裝載，再分階段移轉至 Azure。 無論您如何選擇，Microsoft 與合作夥伴都很樂意協助您達成 Azure 的最佳化，同時保有大型主機系統軟體功能。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 如需詳細資訊，請參閱下列資源：
 
@@ -184,4 +184,4 @@ Azure 提供經過實證、高度可用且可調整的基礎結構，適用於�
 
 - [在 Azure 上部署 IBM DB2 pureScale](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Host Integration Server 檔](https://docs.microsoft.com/host-integration-server)
+- [Host Integration Server 文件](https://docs.microsoft.com/host-integration-server)

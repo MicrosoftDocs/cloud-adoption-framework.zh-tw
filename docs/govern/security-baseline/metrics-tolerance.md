@@ -9,17 +9,17 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 770b266f243a016d0de65dfc235717a405025aa9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425961"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>安全性基準的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為這與安全性基準有關。 定義計量和指標可協助您建立商務案例，藉此讓安全性基準專業領域變得更完善。
 
-## <a name="metrics"></a>度量
+## <a name="metrics"></a>計量
 
 安全性基準通常會專注在識別雲端部署中的潛在弱點上。 作為風險分析的一部分，您應該收集與安全性環境相關的資料，以判斷需要面對多少風險，以及投資安全性基準治理對於您規劃雲端部署的重要性。
 
