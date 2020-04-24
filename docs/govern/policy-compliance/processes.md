@@ -9,17 +9,17 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430817"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>建立原則遵循流程
 
-建立您的雲端原則聲明並且草擬設計指南之後，您必須建立策略以確保您的雲端部署符合原則需求。 此策略必須包含您的雲端治理小組進行中的審查和通訊程式、建立原則違規何時需要採取行動的準則，以及定義自動化監視和合規性系統的需求，而這將會偵測違規並觸發補救動作。
+建立您的雲端原則聲明並且草擬設計指南之後，您必須建立策略以確保您的雲端部署符合原則需求。 此策略必須包含雲端治理小組進行中的審查和通訊程式、建立原則違規何時需要採取行動的準則，以及定義自動化監視和合規性系統的需求，以偵測違規和觸發補救動作。
 
 如需原則遵循流程如何融入雲端治理方案的範例，請參閱可採取動作的[治理指南](../guides/index.md)的公司原則章節。
 
@@ -47,7 +47,7 @@ ms.locfileid: "80430817"
 
 規劃評估新的潛在風險，並視需要更新原則聲明和設計指南。 與 IT 人員和工作負載小組合作，持續評估新的 Azure 功能和服務。 同時排程五個治理專業領域的定期審核週期，以確保原則是最新且符合規範。
 
-### <a name="education"></a>教育
+### <a name="education"></a>教育訓練
 
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 
@@ -93,4 +93,4 @@ ms.locfileid: "80430817"
 深入瞭解雲端中的法規合規性。
 
 > [!div class="nextstepaction"]
-> [法規合規性](./regulatory-compliance.md)
+> [法規遵循](./regulatory-compliance.md)

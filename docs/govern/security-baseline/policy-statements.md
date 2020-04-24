@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527515"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997239"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -31,7 +31,7 @@ ms.locfileid: "80527515"
 
 **原則聲明：** 所有已部署的資產都必須依據重要性和資料分類來分類。 部署至雲端之前，必須先由雲端治理小組和應用程式擁有者審查分類。
 
-**潛在的設計選項：** 建立[資源標記標準](../../decision-guides/resource-tagging/index.md)，並確保 IT 人員可以使用[Azure 資源標記](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)，一致地將其套用到任何已部署的資源。
+**潛在的設計選項：** 建立[資源標記標準](../../decision-guides/resource-tagging/index.md)，並確保 IT 人員可以使用[Azure 資源標記](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)，一致地將其套用到任何已部署的資源。
 
 ## <a name="data-encryption"></a>資料加密
 
@@ -39,7 +39,7 @@ ms.locfileid: "80527515"
 
 **原則聲明：** 所有受保護的資料都必須在待用時加密。
 
-**潛在的設計選項：** 如需有關如何在 Azure 平臺上執行靜態資料加密的討論，請參閱[azure 加密總覽](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)一文。 也應該考慮其他控制項，例如在帳戶資料加密中，以及如何變更儲存體帳戶設定的控制。
+**潛在的設計選項：** 如需有關如何在 Azure 平臺上執行靜態資料加密的討論，請參閱[azure 加密總覽](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)一文。 也應該考慮其他控制項，例如在帳戶資料加密中，以及如何變更儲存體帳戶設定的控制。
 
 ## <a name="network-isolation"></a>網路隔離
 

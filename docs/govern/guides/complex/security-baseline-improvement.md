@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 524e018a8471b7df51308e33ff687e1a934f7e5f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 16f73a03abf0469b37f907cdfbc62e2309d948af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434304"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120312"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -108,12 +108,12 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     1. [具有共用服務參考架構的中樞和輪輻拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)中的指引可用來為公司 IT 中樞所需的資產產生 Resource Manager 範本。
     2. 使用那些範本，此結構就能重複，以作為中央治理策略的一部分。
     3. 除了目前的參考架構之外，也應該建立網路安全性群組範本來捕捉任何埠封鎖或允許清單需求，以供 VNet 裝載防火牆。 此網路安全性群組與先前的群組不同，因為它會是允許公用流量進入 VNet 的第一個網路安全性群組。
-3. 建立 Azure 原則。 建立名為 `Hub NSG Enforcement` 的原則，以強制設定指派給在此訂用帳戶中建立之任何 VNet 的網路安全性群組。 針對來賓設定套用內建原則，如下所示：
+3. 建立 Azure 原則。 建立名`Hub NSG Enforcement`為的原則，以強制設定指派給在此訂用帳戶中建立之任何 VNet 的網路安全性群組。 針對來賓設定套用內建原則，如下所示：
     1. 稽核 Windows 網頁伺服器目前使用安全的通訊協定。
     2. 稽核 Linux 及 Windows 電腦內密碼安全性設定皆設定正確。
 4. 公司 IT 藍圖
     1. 建立名為 `corporate-it-subscription` 的 Azure 藍圖。
-    2. 新增中樞和輪輻範本，並 `Hub NSG Enforcement` 原則。
+    2. 新增中樞和輪輻範本和`Hub NSG Enforcement`原則。
 5. 展開初始管理群組階層。
     1. 針對每個已要求支援受保護資料的管理群組，`corporate-it-subscription-blueprint` 藍圖提供加速的中樞解決方案。
     2. 由於這個虛構範例中的管理群組除了營業單位階層，還包含區域階層，因此，會將此藍圖部署於每個區域。
@@ -123,9 +123,9 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 6. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
     1. 將 GPO 轉換成 DSC – GitHub 中的[Microsoft 基準管理專案](https://github.com/Microsoft/BaselineManagement)可以加速這項工作。 請務必將 DSC 與 Resource Manager 範本平行儲存在存放庫中。
     2. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何執行個體中。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
-    3. 目前的藍圖計畫要啟用自訂的來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
+    3. 目前的藍圖的目標是要啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
-將**其他治理套用到雲端採用訂用帳戶（輪輻）：** 以 `Corporate IT Subscription`為基礎，針對應用程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
+將**其他治理套用到雲端採用訂用帳戶（輪輻）：** 根據`Corporate IT Subscription`，針對應用程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
 
 在先前的最佳作法反復變更中，我們定義了網路安全性群組來封鎖公用流量，並將內部流量列入允許清單。 此外，Azure 藍圖已暫時建立 DMZ 和 Active Directory 功能。 在此反復專案中，我們將會建立 Azure 藍圖的新版本，以稍微調整這些資產。
 
@@ -150,7 +150,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     2. 僅稽核並強制使用已核准的 OS 映像。
     3. 根據每個節點的安全性需求稽核並強制執行來賓設定。
 5. 為包含受保護資料分類的所有訂用帳戶更新 Azure 原則。
-    1. 僅稽核和強制使用標準角色
+    1. 僅稽核和強制使用標準角色。
     2. 為個別節點上待用的所有儲存體帳戶和檔案，稽核並強制執行加密的應用程式。
     3. 請審核並強制執行新版本 DMZ 網路安全性群組的應用程式。
     4. 稽核並強制對每個網路介面使用已核准的網路子網路和 VNet。

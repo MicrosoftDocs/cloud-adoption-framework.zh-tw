@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527251"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
@@ -37,7 +37,7 @@ ms.locfileid: "80527251"
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **熟悉安全性基本知識白皮書。** 安全 Kubernetes 環境的主要目標，是要確保其執行的應用程式受到保護、可以快速識別及解決安全性問題，而且未來將會防止類似的問題。 | [保護 Kubernetes 的最終指南（白皮書）](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **檢查叢集節點的安全性強化設定。** 安全性強化主機 OS 可減少攻擊的介面區，並允許安全地部署容器。 | [AKS 虛擬機器主機中的安全性強化](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **設定叢集角色型存取控制（RBAC）。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 中的角色型存取控制（RBAC）（影片）](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [將 Azure AD 與 Azure Kubernetes Service 整合](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [限制對叢集設定檔的存取](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **設定叢集角色型存取控制（RBAC）。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 中的角色型存取控制（RBAC）（影片）](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [將 Azure AD 與 Azure Kubernetes Service 整合](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [叢集組態檔的限制存取](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>部署到生產環境並套用最佳作法
 

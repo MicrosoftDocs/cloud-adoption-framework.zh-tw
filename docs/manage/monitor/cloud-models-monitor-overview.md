@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
 ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527085"
 ---
 <!-- cSpell:ignore savision -->
@@ -105,9 +105,9 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 ### <a name="monitor-with-system-center-operations-manager"></a>使用 System Center Operations Manager 進行監視
 
-雖然 System Center Operations Manager 原本是設計為內部部署解決方案，可監視在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件，但其演變為包含雲端監視功能. 它會與 Azure、Office 365 和 Amazon Web Services （AWS）整合。 它可以使用設計和更新的管理元件來監視這些不同的環境，以支援它們。  
+雖然 System Center Operations Manager 原本是設計為內部部署解決方案，可監視在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件，但其演變為包含雲端監視功能。 它會與 Azure、Office 365 和 Amazon Web Services （AWS）整合。 它可以使用設計和更新的管理元件來監視這些不同的環境，以支援它們。  
 
-對於已大幅投資 Operations Manager 以達成與 IT 服務管理流程和工具緊密整合的客戶，或對 Azure 的客戶而言，可透過下列方式瞭解問題
+對於在 Operations Manager 進行大量投資以達成與 IT 服務管理程式和工具緊密整合的全面監視，或對 Azure 的客戶而言，您可以使用下列問題來瞭解：
 
 - Operations Manager 是否可以繼續傳遞價值，並有其商業意義嗎？
 - Operations Manager 的功能讓它適合我們的 IT 組織嗎？
@@ -125,11 +125,11 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 知識是在管理元件中定義的，它會說明如何監視個別的相依性和元件。 這兩個 Azure 管理元件都需要在 Azure 和 Operations Manager 中執行一組設定步驟，才能開始監視這些資源。
 
-在應用層，Operations Manager 提供一些舊版 .NET 和 JAVA 的基本應用程式效能監視功能。 如果混合式雲端環境內的特定應用程式以離線或網路隔離模式運作，使其無法與公用雲端服務通訊，Operations Manager 應用程式效能監視（APM）可能是的一個可行選項某些有限的案例。 針對不是在舊版平臺上執行，但裝載于內部部署和任何公用雲端（允許透過防火牆（直接或透過 proxy）通訊至 Azure）的應用程式，請使用 Azure 監視器 Application Insights。 此服務提供深度、程式碼層級的監視，並具有 ASP.NET、ASP.NET Core、JAVA、JavaScript 和 node.js 的一流支援。
+在應用層，Operations Manager 提供一些舊版 .NET 和 JAVA 的基本應用程式效能監視功能。 如果混合式雲端環境內的特定應用程式以離線或網路隔離模式運作，使其無法與公用雲端服務通訊，Operations Manager 應用程式效能監視（APM）可能是某些有限案例的可行選項。 針對不是在舊版平臺上執行，但裝載于內部部署和任何公用雲端（允許透過防火牆（直接或透過 proxy）通訊至 Azure）的應用程式，請使用 Azure 監視器 Application Insights。 此服務提供深度、程式碼層級的監視，並具有 ASP.NET、ASP.NET Core、JAVA、JavaScript 和 node.js 的一流支援。
 
 對於可從外部連線的任何 web 應用程式，您應該啟用一種稱為「[可用性監視]( https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability)」的綜合交易。 請務必瞭解您的應用程式或應用程式所依賴的重要 HTTP/HTTPS 端點是否可用且有回應。 使用 Application Insights 可用性監視時，您可以從多個 Azure 資料中心執行測試，並從全球的觀點提供應用程式健康情況的深入解析。
 
-雖然 Operations Manager 能夠監視裝載于 Azure 中的資源，但有幾個優點可以納入 Azure 監視器，因為它的優勢克服了 Operations Manager 的限制，而且可以建立強式基礎來支援最終從 it 進行遷移。 我們將在此探討每個優點和缺點，並建議您在混合式監視策略中包含 Azure 監視器。  
+雖然 Operations Manager 能夠監視裝載于 Azure 中的資源，但還是有幾個優點可以納入 Azure 監視器，因為它的優勢克服了 Operations Manager 的限制，而且可以建立強大的基礎來支援最終的從它進行的遷移。 我們將在此探討每個優點和缺點，並建議您在混合式監視策略中包含 Azure 監視器。  
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>使用 Operations Manager 本身的缺點
 
@@ -160,7 +160,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 ### <a name="monitor-with-azure-monitor"></a>使用 Azure 監視器進行監視
 
-雖然遷移至雲端會帶來許多挑戰，但也提供了機會。 它可讓您的組織從一或多個內部部署企業監視工具進行遷移，不僅可能降低資本支出和營運成本，還能受益于雲端監視平臺之類的優點（例如 Azure 監視器可以雲端規模提供。 檢查您的監視和警示需求、現有監視工具的設定，以及轉換至雲端的工作負載。 當您的方案完成後，請設定 Azure 監視器。
+雖然遷移至雲端會帶來許多挑戰，但也提供了機會。 它可讓您的組織從一或多個內部部署企業監視工具進行遷移，不僅可能降低資本支出和營運成本，還能受益于雲端監視平臺（例如 Azure 監視器）可在雲端規模提供的優勢。 檢查您的監視和警示需求、現有監視工具的設定，以及轉換至雲端的工作負載。 當您的方案完成後，請設定 Azure 監視器。
 
 - 監視混合式基礎結構和應用程式，從簡單或多層式架構，其中元件裝載于 Azure、其他雲端提供者，以及您的公司網路。 這些元件可能包括一或多個 Vm、放置在可用性設定組或虛擬機器擴展集內的多個 Vm，或部署到在 Windows Server 或 Linux 容器上執行之 Azure Kubernetes Service （AKS）的容器化應用程式。
 
@@ -182,7 +182,7 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 您也可以使用 Azure Stack 所包含的[基礎結構監視功能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)組合來達成整體監視。 這些功能可協助您在 Azure Stack 中查看 Azure Stack 區域和[Azure 監視器服務](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)的健康情況和警示，以提供大部分服務的基本層級基礎結構計量和記錄。
 
-如果您已投資 Operations Manager，請使用 Azure Stack 管理元件來監視 Azure Stack 部署的可用性和健全狀況狀態，包括區域、資源提供者、更新、更新執行、縮放單位、單位節點、基礎結構角色及其實例（由硬體資源組成的邏輯實體）。 此管理元件會使用健康情況和更新資源提供者 REST Api 與 Azure Stack 進行通訊。 若要監視實體伺服器和存放裝置，請使用 OEM 廠商的管理元件（例如，由聯想、Hewlett Packard 或 Dell 提供）。 Operations Manager 可以使用 SNMP 以原生方式監視網路交換器，以收集基本統計資料。 藉由下列兩個基本步驟，可以使用 Azure 管理元件來監視租使用者工作負載。 設定您想要監視的訂用帳戶，然後新增該訂用帳戶的監視。
+如果您已投資 Operations Manager，請使用 Azure Stack 管理元件來監視 Azure Stack 部署的可用性和健全狀況狀態，包括區域、資源提供者、更新、更新執行、縮放單位、單位節點、基礎結構角色和其實例（由硬體資源組成的邏輯實體）。 此管理元件會使用健康情況和更新資源提供者 REST Api 與 Azure Stack 進行通訊。 若要監視實體伺服器和存放裝置，請使用 OEM 廠商的管理元件（例如，由聯想、Hewlett Packard 或 Dell 提供）。 Operations Manager 可以使用 SNMP 以原生方式監視網路交換器，以收集基本統計資料。 藉由下列兩個基本步驟，可以使用 Azure 管理元件來監視租使用者工作負載。 設定您想要監視的訂用帳戶，然後新增該訂用帳戶的監視。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: a597a76e1d42d08c3800fd2f3831729bf53f10f1
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432888"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊

@@ -1,5 +1,5 @@
 ---
-title: 為什麼我們要轉向雲端？
+title: 為何要移至雲端？
 description: 使用適用于 Azure 的雲端採用架構來瞭解雲端遷移背後的動機，以協助產生更成功的商務成果。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: b504d5b7bb5c126a43464d0e776417b1ead0b8ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433722"
 ---
 <!-- markdownlint-disable MD026 -->
@@ -28,9 +28,9 @@ ms.locfileid: "80433722"
 
 <!-- markdownlint-disable MD033 -->
 
-| 重大商業事件 | 移轉 | 推出 |
+| 重大商業事件 | 移轉 | 創新 |
 |---|---|---|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>縮減資本費用<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性 | 節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提高企業的靈活性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求 | 準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改良的客戶體驗與合作<br/><br/>產品或服務的轉換<br/><br/>新產品或服務的市場中斷 |
+| 資料中心的退出<br/><br/>合併、收購或 divestiture<br/><br/>縮減資本費用<br/><br/>終止對任務關鍵性技術的支援<br/><br/>法規合規性變更的回應<br/><br/>新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性 | 節省成本<br/><br/>降低廠商或技術上的複雜性<br/><br/>追求內部營運的最佳化<br/><br/>提高企業的靈活性<br/><br/>為了準備新技術能力<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求 | 為了準備新技術能力<br/><br/>建立新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理需求<br/><br/>改良的客戶體驗與合作<br/><br/>產品或服務的轉型<br/><br/>新產品或服務的市場中斷 |
 
 ## <a name="classify-your-motivations"></a>將您的動機分類
 
@@ -62,7 +62,7 @@ ms.locfileid: "80433722"
 - 調整以符合市場需求。
 - 調整以符合地理需求。
 
-### <a name="innovation"></a>推出
+### <a name="innovation"></a>創新
 
 資料是新的商品。 新式應用程式是將資料帶入各種體驗的供應鏈。 在現今的商業市場中，很難找到不是以資料、深入解析和客戶經驗為基礎的轉型產品或服務。 在*創新*清單中較低的動機，會與此架構中稱為[創新](../getting-started/innovate.md)的技術策略一致。
 

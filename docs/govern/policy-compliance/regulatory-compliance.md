@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57e913a66606e33554fac122d703254a3bb9d0d2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434164"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809117"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 
-這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 如需[Azure 合規性供應](https://aka.ms/allcompliance)專案的更多詳細資訊，請至[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)。 此外，所有可下載的檔都可供[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的特定 Azure 客戶使用。
+這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 如需[Azure 合規性供應](https://aka.ms/allcompliance)專案的更多詳細資訊，請至[Microsoft 信任中心](https://www.microsoft.com/trust-center)。 此外，所有可下載的檔都可供[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的特定 Azure 客戶使用。
 
 法規合規性是指確保公司遵循其地理位置中的規定，或主動採用的產業標準所需之規則的專業和程式。 針對 IT 法規合規性，人員和程式會監視公司系統，以偵測並防止違反這些治理法規和標準所建立的原則和程式。 這也適用于廣泛的監視和強制執行程式。 根據產業和地理位置而定，這些程式可能會變得冗長且複雜。
 
@@ -41,15 +41,15 @@ ms.locfileid: "80434164"
 
 ## <a name="gdpr"></a>GDPR
 
-在此領域中最重要的其中一項發展是一般資料保護規定（GDPR），其設計目的是為了加強歐盟內個人的資料保護。 GDPR 要求有關個人的資料（例如，「姓名、家庭位址、相片、電子郵件地址、銀行細節、社交網路網站上的文章、醫療資訊或電腦的 IP 位址」）會保留在 EU 的伺服器上，而不會傳送出去其中的。 這也需要公司通知個人任何資料缺口，並規定公司擁有資料保護長（DPO）。 其他國家/地區具有 (或正在開發) 相似類型的法規。
+在此領域中最重要的其中一項發展是一般資料保護規定（GDPR），其設計目的是為了加強歐盟內個人的資料保護。 GDPR 需要將有關個人的資料（例如「姓名、家庭位址、相片、電子郵件地址、銀行細節、社交網路網站上的貼文、醫療資訊或電腦的 IP 位址）保留在 EU 的伺服器上，而不是從 it 傳出。 這也需要公司通知個人任何資料缺口，並規定公司擁有資料保護長（DPO）。 其他國家/地區具有 (或正在開發) 相似類型的法規。
 
 ## <a name="compliant-foundation-in-azure"></a>Azure 中的符合規範基礎
 
-為了協助客戶符合其在全球受管制產業和市場的合規性義務，Azure 在產業中保有最大的合規性組合&mdash;廣度（供應專案總數）和深度（評量範圍內的客戶面向服務數目）。 Azure 合規性供應項目分為四大塊 - 全球適用，US Government、業界專屬，以及區域/國家或地區專屬。
+為了協助客戶符合其在全球受管制產業和市場的合規性義務，Azure&mdash;在廣度（供應專案總數）和深度（評量範圍內的客戶面向服務數目）中維持最大的合規性組合。 Azure 合規性供應項目分為四大塊 - 全球適用，US Government、業界專屬，以及區域/國家或地區專屬。
 
 Azure 合規性供應項目會以各種類型的保證為基礎，包括由獨立第三方稽核公司所產生的正式認證、證明、驗證、授權及評量，以及由 Microsoft 產生的契約修訂、自我評量及客戶指引文件。 本文件中的每個供應項目描述都會提供最新的範圍聲明，指出評量範圍包含哪些 Azure 客戶面向服務，並提供可下載的資源連結，以協助客戶履行自己的合規性義務。
 
-從 [Microsoft 信任中心] 可取得有關 [Azure 合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings)的更詳細資訊。 此外，在下列各節中，您可以從[服務信任入口網站](https://servicetrust.microsoft.com)取得特定 Azure 客戶的所有可下載檔案：
+Microsoft 信任中心提供更多關於[Azure 合規性供應](https://www.microsoft.com/trust-center/compliance/compliance-overview)專案的詳細資訊。 此外，在下列各節中，您可以從[服務信任入口網站](https://servicetrust.microsoft.com)取得特定 Azure 客戶的所有可下載檔案：
 
 - **審查報告：** 包含 FedRAMP、GRC 評估、ISO、PCI DSS 和 SOC 報告的章節。
 - **資料保護資源：** 包含合規性指南、常見問題和白皮書，以及畫筆測試和安全性評估章節。
@@ -59,4 +59,4 @@ Azure 合規性供應項目會以各種類型的保證為基礎，包括由獨�
 深入瞭解雲端安全性的就緒程度。
 
 > [!div class="nextstepaction"]
-> [雲端安全性就緒](./cloud-security-readiness.md)
+> [雲端安全性整備程度](./cloud-security-readiness.md)

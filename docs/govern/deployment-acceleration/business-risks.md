@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: a4f022d995cf4dca25cfd5369ce92dd4496e8687
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434599"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>部署加速動機和業務風險
@@ -29,7 +29,7 @@ ms.locfileid: "80434599"
 
 <!-- "en-us" location is required for the URL above. -->
 
-強固的部署加速計劃可確保您的雲端資源正確且一致地部署、更新及設定，並且保持如此。 您的部署加速策略的成熟度，也會是您[成本管理策略](../cost-management/index.md)中的重要因素。 自動化佈建及設定您的雲端資源，可讓您在需求較低或有時間限制時縮小或解除配置資源，讓您僅需支付所需資源的費用。
+強固的部署加速計劃可確保您的雲端資源正確且一致地部署、更新及設定，並且保持如此。 您的部署加速策略的成熟度，也會是您[成本管理策略](../cost-management/index.md)中的重要因素。 自動化佈建及設定您的雲端資源，可讓您在需求較低或有時間限制時相應減少或解除配置資源，讓您僅需支付所需資源的費用。
 
 ## <a name="business-risk"></a>業務風險
 

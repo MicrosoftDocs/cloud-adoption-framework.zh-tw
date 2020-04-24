@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 02582dd6da694c64c8344e17fc301a26e5a82bc7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428505"
 ---
 # <a name="cloud-strategy-capabilities"></a>雲端策略功能
@@ -62,9 +62,9 @@ ms.locfileid: "80428505"
 
 前一節所列的工作在初期規劃階段可能非常耗時。 以下是雲端策略小組成員時間配置的一些建議：
 
-- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified （通常是在 4&ndash;6 周內）之後，就可以減少時間需求。
-- 在採用工作時，每個月配置 1&ndash;2 小時來審查進度，並驗證持續的優先順序。
-- 視需要執行主管小組的委派成員可能需要額外的時間。 雲端策略小組的每個成員都應該指派一個委派，每週可配置5個&ndash;10 小時，以支援持續的優先順序問題，並報告任何緊急需求。
+- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified （通常是在 4&ndash;周內）之後，就可以減少時間需求。
+- 在採用工作時，每個&ndash;月配置 1 2 小時來審查進度，並驗證持續的優先順序。
+- 視需要執行主管小組的委派成員可能需要額外的時間。 雲端策略小組的每個成員都應該指派一個委派，每週&ndash;可配置 5 10 小時，以支援持續的優先順序問題，並回報任何緊急需求。
 
 ## <a name="next-steps"></a>後續步驟
 

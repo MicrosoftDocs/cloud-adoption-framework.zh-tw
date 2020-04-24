@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 327cbac3de0641b0fc4e8baf1c621dce7d5bc356
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434439"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995417"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雜企業的治理指南：治理策略背後的初始公司原則
 
@@ -43,7 +43,7 @@ CIO 最近與 IT 治理小組見面，以瞭解個人資料和任務關鍵性原
 
 ## <a name="next-steps"></a>後續步驟
 
-此公司原則會準備雲端治理小組來實行治理 MVP，這將成為採用的基礎。 下一步是實作此 MVP。
+此公司原則準備雲端治理小組，將治理 MVP 實作為採用的基礎。 下一步是實作此 MVP。
 
 > [!div class="nextstepaction"]
 > [說明的最佳做法](./prescriptive-guidance.md)

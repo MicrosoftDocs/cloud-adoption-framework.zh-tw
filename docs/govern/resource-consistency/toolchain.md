@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5bfe095bdd7d269be71ee2d112a3d3d1a4bb5dd4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2f4d06c06ffcb89d30205b90ba37f70f76d50b1f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434935"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997298"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
@@ -21,7 +21,7 @@ ms.locfileid: "80434935"
 
 以下為 Azure 工具的清單，可協助使支援此治理專業領域的原則和流程臻至成熟。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 部署資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
 | 管理資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
@@ -45,7 +45,7 @@ ms.locfileid: "80434935"
 
 除了這些資源一致性工具和功能外，您還必須監視已部署的資源，以了解效能和健康情況問題。 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)是 Azure 中的預設監視和報告解決方案。 Azure 監視器提供監視雲端資源的功能。 此清單會顯示哪些功能可解決常見的監視需求。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 REST API](https://docs.microsoft.com/rest/api/monitor) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 Rest API](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | 記錄虛擬機器的遙測資料                 | 否           | 否                   | 是           | 否                     |
 | 記錄虛擬網路的遙測資料              | 否           | 否                   | 是           | 否                     |
@@ -63,4 +63,4 @@ ms.locfileid: "80434935"
 
 ## <a name="next-steps"></a>後續步驟
 
-了解如何在 Azure 中建立、指派和管理[原則定義](https://docs.microsoft.com/azure/governance/policy)。
+瞭解如何在 Azure 中建立、指派和管理[原則定義](https://docs.microsoft.com/azure/governance/policy)。

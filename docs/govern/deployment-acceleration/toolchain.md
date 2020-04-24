@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b6fac6af93c68f22561b578cfe598bc9d847c902
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 434f8118d075c907d543f344c26c99c10cbc9bb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434474"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995460"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -23,19 +23,19 @@ ms.locfileid: "80434474"
 
 以下為 Azure 工具的清單，可協助使支援此治理專業領域的原則和流程臻至成熟。
 
-|  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management) |
+|  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |執行公司原則     |是 |否  |否  |否 | 否 |否 |
-|跨訂用帳戶套用原則     |必要項 |是  |否  |否 | 否 |否 |
+|跨訂用帳戶套用原則     |必要 |是  |否  |否 | 否 |否 |
 |部署定義的資源     |否 |否  |是  |否 | 否 |否 |
-|建立完全相容的環境      |必要項 |必要項  |必要項  |是 | 否 |否 |
+|建立完全相容的環境      |必要 |必要  |必要  |是 | 否 |否 |
 |稽核原則      |是 |否  |否  |否 | 否 |否 |
 |查詢 Azure 資源      |否 |否  |否  |否 |是 |否 |
 |資源成本報告      |否 |否  |否  |否 |否 |是 |
 
 以下是達成特定部署加速目標所需的其他工具。 這些工具通常是在治理小組外部使用，但是仍然可視為部署加速專業領域的一個層面。
 
-|  | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 |手動部署 (單一資產)     | 是 | 是  | 否  | 無效率 | 否 | 是 |
 |手動部署 (完整環境)     | 無效率 | 是 | 否  | 無效率 | 否 | 是 |

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a611d6e8437bbb6a62d1050f6f916ee9ac429228
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 45eda399229361d9a2bd762ec6c8d8624e3a0742
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426278"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997135"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -47,7 +47,7 @@ ms.locfileid: "80426278"
 在任何雲端平臺上建立可見度需要幾個重要元件：
 
 - 責任與可見度
-- 詳細目錄
+- 清查
 - 集中式記錄
 - 變更追蹤
 - 效能遙測
@@ -56,7 +56,7 @@ ms.locfileid: "80426278"
 
 當您為每個工作負載建立承諾時，[管理責任](./commitment.md#management-responsibility)就是一項關鍵因素。 委派的責任會建立委派可見度的需求。 清查和可見度的第一個步驟是確保負責的合作物件可以存取正確的資料。 在您執行任何雲端原生工具以取得可見度之前，請確定每個作業小組都已設定每個監視工具的適當存取權和範圍。
 
-### <a name="inventory"></a>詳細目錄
+### <a name="inventory"></a>清查
 
 如果沒有人知道資產存在，就很難以管理資產。 您必須先清查並分類資產或工作負載，才可以管理該資產或工作負載。 針對穩定作業的第一個技術步驟是驗證清查和該清查的分類。
 

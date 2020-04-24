@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 09f85e383623f52212eb9621b34342d54ad747b7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428372"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995182"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "80428372"
 
 1. [僅限雲端採用小組](#cloud-adoption-team-only)
 2. [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
-3. [中央 IT](#central-it)
+3. [集中式 IT](#central-it)
 4. [策略性對齊](#strategic-alignment)
 5. [操作對齊](#operational-alignment)
 6. [卓越的雲端中心（CCoE）](#cloud-center-of-excellence)

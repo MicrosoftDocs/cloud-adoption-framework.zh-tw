@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 92fb627b2585d03828e53788e71d3b16d62f92c9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c7d375ed8d4d126cfb38b4cd2fde30b1d36526a6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432307"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995143"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -29,13 +29,13 @@ ms.locfileid: "80432307"
 資產應在何時進行最佳化&mdash;移轉期間還是之後？ 簡單的答案是*兩者皆可*。 不過，這並非全然正確。 如需說明，請參閱兩個最佳化資源大小的基本案例：
 
 - **已規劃的大小調整。** 資產常會出現明顯過大和使用量過低，而且應在部署期間調整大小的情形。 在此情況下，要判斷資產是否已成功調整大小，必須在移轉後進行使用者接受度測試。 如果進階使用者在測試期間未遇到效能或功能下降的情況，您即可認定資產已成功調整大小。
-- **最佳化。** 如果不清楚最佳化需求的情況下，IT 小組應使用資料導向的方法來管理資源大小。 IT 小組可以使用資產效能的基準測試，針對解決方案的最適當大小、服務、規模和架構做出明智的決策。 然後，他們可以在移轉後調整大小並測試效能理論。
+- **優化.** 如果不清楚最佳化需求的情況下，IT 小組應使用資料導向的方法來管理資源大小。 IT 小組可以使用資產效能的基準測試，針對解決方案的最適當大小、服務、規模和架構做出明智的決策。 然後，他們可以在移轉後調整大小並測試效能理論。
 
 在移轉期間，請使用有根據的猜測並進行調整大小的實驗。 不過，要進行真正的資源最佳化，必須要有以雲端環境中的實際效能為基礎的資料。 為了執行真正的最佳化，IT 小組必須先實作監視效能和資源使用率的方法。
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>使用 Azure 成本管理進行效能評定和最佳化
 
-[Azure 成本管理](https://docs.microsoft.com/azure/cost-management/overview)由 Microsoft 的子公司 Cloudyn 所授權，可透明且準確地管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
+[Azure 成本管理](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)以透明與準確度來管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
 
 歷史資料有助於管理成本，因為它可分析隨時間變化的使用量和成本以辨識趨勢，而這些趨勢隨後可用來預測未來的費用。 「成本管理」也包含有用的成本預測報告。 成本配置可根據標記原則來分析成本，藉以管理成本。 您可將成本配置用於回報/退款，以顯示資源使用量和相關成本，進而影響消費行為或對租用戶客戶收費。 存取控制可確保使用者和小組只能存取所需的成本管理資料，以協助管理成本。 警示可以在出現異常消費或超支時，透過自動通知協助您管理成本。 警示也可以在出現異常消費和超支風險時，自動通知利害關係人。 多種不同報告皆支援以預算和成本閾值為基礎的警示。
 

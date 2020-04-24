@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430480"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
@@ -28,9 +28,9 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
 
 - 建立在每個星期六上午8:00 執行的 Azure 自動化更新排程。
 - 針對符合下列準則的機器建立查詢：
-  - 部署于 `westus`、`eastus`或 `eastus2` Azure 位置
-  - 已將 `Owner` 標籤套用至其值設定為 `JaneSmith`
-  - 使用設定為的值，將 `Production` 標記套用至 `true`
+  - 部署在`westus`、 `eastus`或`eastus2` Azure 位置
+  - 將`Owner`標記套用至其值設定為的`JaneSmith`
+  - 將`Production`標記套用至其值設定為的`true`
 - 將更新排程套用至查詢的機器，並設定兩個小時的更新視窗。
 
 執行範例腳本之前，您必須使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您啟動腳本時，請提供下列資訊：
@@ -111,4 +111,4 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
 請參閱如何[在 Azure 中](./common-policies.md)執行可協助管理伺服器之通用原則的範例。
 
 > [!div class="nextstepaction"]
-> [Azure 中的一般原則](./common-policies.md)
+> [Azure 中常見的原則](./common-policies.md)

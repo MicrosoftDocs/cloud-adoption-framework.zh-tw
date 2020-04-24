@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85939b1932f7eaf5f40b43bb54e75aa30e53d941
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433401"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120513"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -35,7 +35,7 @@ ms.locfileid: "80433401"
 
 專業開發人員是創新的重要元件。 當假設有正確的大規模證明時，專業開發人員就必須穩定並準備解決方案以進行調整。 本文中所參考的大部分原則都需要專業開發人員的支援。 可惜的是，目前的趨勢建議專業開發人員的需求比開發人員還多。 此外，當您認為需要專業開發時，創新的成本和步調也比較不理想。 為了因應這些挑戰，公民開發人員提供一種方法來調整開發工作，並加速早期假設測試。
 
-當早期假設可以透過應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、工作流程[Microsoft Flow](https://docs.microsoft.com/flow) ，以及資料耗用量[Power BI](https://docs.microsoft.com/power-bi)進行驗證時，使用公民開發人員可能會是可行且有效的。
+當您使用適用于應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、適用于工作流程的[Microsoft 電源自動化](https://docs.microsoft.com/power-automate)，以及[Power BI](https://docs.microsoft.com/power-bi)的資料耗用量等工具來驗證早期假設時，就可以使用公民開發人員。
 
 > [!NOTE]
 > 當您依賴公民開發人員測試假設時，建議您最好讓一些專業開發人員提供支援、審查和指導方針。 假設經過大規模驗證之後，將應用程式轉換成更健全的程式設計模型的流程，會加速創新。 藉由在早期的流程定義中牽涉到專業開發人員，您可以在稍後實現更整潔的轉換。
@@ -103,7 +103,7 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 在解決方案內維護的越多，解決方案的反覆運算速度就越慢。 這表示您可以藉由減少作業對可用頻寬的影響來加速創新。
 
-若要準備交付創新解決方案所需的許多反復專案，請務必預先考慮。 例如，優先列出無伺服器選項，儘早在程式中將營運負擔降至最低。 在 Azure 中，無伺服器應用程式選項可以包含[Azure App Service](https://docs.microsoft.com/azure/app-service/overview)或[容器](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)。
+若要準備交付創新解決方案所需的許多反復專案，請務必預先考慮。 例如，優先列出無伺服器選項，儘早在程式中將營運負擔降至最低。 在 Azure 中，無伺服器應用程式選項可以包含[Azure App Service](https://docs.microsoft.com/azure/app-service/overview)或[容器](https://docs.microsoft.com/azure/containers)。
 
 Azure 會同時提供無伺服器交易資料選項，以減少額外負荷。 [Azure 產品目錄](https://docs.microsoft.com/azure)提供的資料庫選項可裝載資料，而不需要完整的資料平臺。
 

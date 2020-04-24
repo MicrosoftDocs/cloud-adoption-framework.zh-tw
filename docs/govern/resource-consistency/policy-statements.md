@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42f8e589d0d9231ff3ea9ab6b514cfc22f8b518c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433463"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997335"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 
@@ -32,13 +32,13 @@ ms.locfileid: "80433463"
 **原則聲明：** 將會執行下列原則：
 
 - 已部署的資產應該標記下列值：
-  - Cost
-  - 程度
+  - 成本
+  - 重要性
   - SLA
   - 環境
 - 治理工具必須確認與成本、重要性、SLA、應用程式及環境相關的標記。 所有值必須符合由治理小組管理的預先定義值。
 
-**潛在的設計選項：** 在 Azure 中，大部分的資源類型都支援[標準名稱-值元資料標記](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)用於在資源建立期間強制執行特定標記。
+**潛在的設計選項：** 在 Azure 中，大部分的資源類型都支援[標準名稱-值元資料標記](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)用於在資源建立期間強制執行特定標記。
 
 ## <a name="ungoverned-subscriptions"></a>未治理的訂用帳戶
 
@@ -84,7 +84,7 @@ ms.locfileid: "80433463"
 
 **原則聲明：** 所有任務關鍵性應用程式和受保護的資料都必須實行備份和復原解決方案，以將中斷或系統失敗的商務影響降到最低。
 
-**潛在的設計選項：** [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)服務提供備份、復原和複寫功能，可將商務持續性和嚴重損壞修復（BCDR）案例中的中斷期間降到最低。
+**潛在的設計選項：**[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)服務提供備份、復原和複寫功能，可將商務持續性和嚴重損壞修復（BCDR）案例中的中斷期間降到最低。
 
 ## <a name="next-steps"></a>後續步驟
 

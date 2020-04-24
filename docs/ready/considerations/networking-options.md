@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aca8a2843001490924fbe922c11a2550e3522b11
-ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
+ms.openlocfilehash: bc14bb03f048ab335cd836c6a4a520b8df0ccad8
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80606628"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997981"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -42,7 +42,7 @@ ms.locfileid: "80606628"
   - [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
   - [Azure 應用程式閘道](https://docs.microsoft.com/azure/application-gateway)
   - [Azure 流量管理員](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
-- **您是否需要支援自訂 DNS 管理？** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) 是一個適用於 DNS 網域的主機服務。 Azure DNS 使用 Azure 基礎結構來提供名稱解析。 如果您的工作負載需要的名稱解析超出 Azure DNS 所提供的功能，您可能需要部署其他解決方案。 如果您的工作負載也需要 Active Directory 服務，請考慮使用 [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) 來增強 Azure DNS 功能。 如需更多的功能，您也可以[部署自訂 IaaS 虛擬機器](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)以支援您的需求。
+- **您是否需要支援自訂 DNS 管理？** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) 是適用於 DNS 網域的主機服務。 Azure DNS 使用 Azure 基礎結構來提供名稱解析。 如果您的工作負載需要的名稱解析超出 Azure DNS 所提供的功能，您可能需要部署其他解決方案。 如果您的工作負載也需要 Active Directory 服務，請考慮使用 [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) 來增強 Azure DNS 功能。 如需更多的功能，您也可以[部署自訂 IaaS 虛擬機器](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)以支援您的需求。
 
 ## <a name="common-networking-scenarios"></a>常見的網路功能案例
 
@@ -53,7 +53,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | **案例** | **網路產品或服務** |
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network) |
-| 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure 負載平衡器](https://docs.microsoft.com/azure/load-balancer) |
+| 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer) |
 | 我想要將應用程式伺服器陣列的傳遞最佳化，同時以 Web 應用程式防火牆增加應用程式安全性。 | [Azure 應用程式閘道](https://docs.microsoft.com/azure/application-gateway) <br/>[Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 | 我需要透過高效能 VPN 閘道，安全地使用網際網路來存取 Azure 虛擬網路。 | [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway) |
 | 我想要確保所有網域需求的超快 DNS 回應和超高可用性。 | [Azure DNS](https://docs.microsoft.com/azure/dns) |
@@ -80,7 +80,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | Azure 裝載的工作負載將會部署 IaaS 型資源 (例如虛擬機器)，否則需要虛擬網路，但不需要連線到您的內部部署環境。                                                                                                                                          | [雲端-原生](../../decision-guides/software-defined-network/cloud-native.md)      |
 | 您的 Azure 裝載工作負載需要有限的內部部署資源存取權，但您必須將雲端連線視為不受信任。                                                                                                                                                                                           | [雲端 DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
 | 您的 Azure 裝載工作負載需要有限的內部部署資源存取權，而且您計劃在雲端與內部部署環境之間實作成熟的安全性原則和安全的連線。                                                                                                                         | [混合式](../../decision-guides/software-defined-network/hybrid.md)                  |
-| 您需要部署及管理大量的 VM 和工作負載，可能會超過 [Azure 訂用帳戶限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)，您需要跨訂用帳戶共用服務，或者您需要更多的角色、應用程式結構或許可權隔離。 | [中樞和輪輻](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| 您需要部署及管理大量的 VM 和工作負載，可能會超過 [Azure 訂用帳戶限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)，您需要跨訂用帳戶共用服務，或者您需要更多的角色、應用程式結構或許可權隔離。 | [中樞和輪輻](../../decision-guides/software-defined-network/hub-spoke.md)        |
 | 您有許多分公司需要彼此連線與連線至 Azure。                                                                                                                                                                                                                                                       | [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
@@ -98,5 +98,5 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 在您的網路設計過程中，請參閱下列文章：
 
 - [虛擬網路規劃](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何根據您的隔離、連線和位置需求規劃虛擬網路。
-- [適用於網路安全性的 Azure 最佳做法](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
+- [適用於網路安全性的 Azure 最佳做法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
 - [將工作負載遷移至 Azure 時的網路最佳做法](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 取得如何實作 Azure 網路以支援 IaaS 型和 PaaS 型工作負載的其他指引。

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434089"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
@@ -40,7 +40,7 @@ ms.locfileid: "80434089"
 下列 Azure 伺服器管理服務需要連結的 Log Analytics 工作區和自動化帳戶：
 
 - [Azure 更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)
-- [變更追蹤和清查](https://docs.microsoft.com/azure/automation/change-tracking)
+- [變更追蹤與詳細目錄](https://docs.microsoft.com/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
 

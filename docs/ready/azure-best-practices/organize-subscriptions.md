@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 31265fa67c3a72cbb743df3e4e1a8f7283fa0fcb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433280"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998010"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
@@ -22,7 +22,7 @@ ms.locfileid: "80433280"
 
 Azure 管理群組可以有效率地管理組織訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
 
-管理群組會以單一階層的方式排列。 您會在 Azure Active Directory （Azure AD）租使用者中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
+管理群組會以單一階層的方式排列。 您會在 Azure Active Directory （Azure AD）租使用者中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」**。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
 
 Azure 提供四個層級的管理範圍：
 
@@ -65,7 +65,7 @@ Azure 提供四個層級的管理範圍：
 
 - [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/governance/management-groups)
 - [提高存取權以管理所有 Azure 訂用帳戶和管理群組](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [將 Azure 資源移至另一個資源群組或訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
+- [將 Azure 資源移至另一個資源群組或訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>後續步驟
 

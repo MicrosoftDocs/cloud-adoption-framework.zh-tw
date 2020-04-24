@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434014"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
@@ -20,7 +20,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 在本文中，您將瞭解如何使用雲端採用方案範本，快速地將待處理專案部署至 Azure DevOps。 此範本會根據雲端採用架構中的指導方針，將雲端採用工作與標準化程式保持一致。
 
-## <a name="create-your-cloud-adoption-plan"></a>建立您的雲端採用方案
+## <a name="create-your-cloud-adoption-plan"></a>制定自己的雲端採用計劃
 
 若要部署雲端採用方案，請開啟[Azure DevOps 示範](https://aka.ms/adopt/plan/generator)產生器。 此工具會將範本部署至您的 Azure DevOps 租使用者。 使用此工具需要下列步驟：
 
@@ -44,7 +44,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 雲端採用方案會依活動類型來組織活動：
 
-- **Epics：** *長篇故事*代表雲端採用生命週期的整體階段。
+- **Epics：***長篇故事*代表雲端採用生命週期的整體階段。
 - **功能：** 功能是用來組織每個階段內的特定目標。 例如，特定工作負載的遷移是一項功能。
 - **使用者故事：** 使用者故事群組會根據特定目標，進入活動的邏輯集合。
 - 工作 **：** 工作是要執行的實際工作。

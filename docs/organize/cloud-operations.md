@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: fc5097eb5a6bb0c0400c0789ea197d0472f858ea
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428556"
 ---
 # <a name="cloud-operation-capabilities"></a>雲端操作功能

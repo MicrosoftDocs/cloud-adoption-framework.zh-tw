@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
 ms.openlocfilehash: 738524f01e61b4f8c98f6ac73ca439c54d20c3dc
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431630"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>建立雲端轉換的財務模型
@@ -29,7 +29,7 @@ ms.locfileid: "80431630"
 
 ## <a name="calculate-initial-investment"></a>計算初始投資
 
-初始投資是完成轉換所需的資本支出和營運費用。 成本的分類可能會隨著會計模型和 CFO 的偏好而不同。 但此類別包括要轉換的專業服務之類的專案、在轉換期間僅使用的軟體授權、雲端服務在轉換期間的成本，以及在轉換期間支薪員工的成本.
+初始投資是完成轉換所需的資本支出和營運費用。 成本的分類可能會隨著會計模型和 CFO 的偏好而不同。 但此類別包含的專案（例如專業服務轉型）、只在轉換期間使用的軟體授權、雲端服務在轉換期間的成本，以及可能在轉換期間支薪員工的成本。
 
 新增這些成本以建立初始投資的預估。
 

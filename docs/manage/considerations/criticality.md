@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80426467"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理中的業務重要性
@@ -29,7 +29,7 @@ ms.locfileid: "80426467"
 
 任何業務重要性對齊工作的第一步，就是建立重要程度的規模。 下表顯示用來作為參考或範本的範例尺規，以建立您自己的小數值。
 
-| 程度 | 商務觀點 |
+| 重要性 | 商務觀點 |
 | --------- | --------- |
 | 關鍵任務 |  會影響公司的任務，而且可能會明顯影響公司的收益與損失聲明。 |
 | 單位-重大 | 會影響特定業務單位的任務，以及其利潤與損失聲明。 |

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433976"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義和設定雲端採用方案的工作負載優先順序
@@ -65,7 +65,7 @@ ms.locfileid: "80433976"
 
 ### <a name="business-inputs"></a>商務輸入
 
-| 資料點 | 描述 | 輸入 |
+| 資料點 | 說明 | 輸入 |
 |---|---|---|
 | 工作負載名稱 | 此工作負載的名稱為何？ |         |
 | 工作負載描述 | 在一個句子中，此工作負載的用途為何？ |         |
@@ -76,7 +76,7 @@ ms.locfileid: "80433976"
 | 商務團隊 | 哪些商務小組會受到變更影響？ |         |
 | 商務專案關係人 | 是否有任何業務會受到變更影響的主管？ |         |
 | 業務成果 | 企業會如何衡量這項工作的成功？ |         |
-| 度量 | 會使用哪些計量來追蹤成功？ |         |
+| 計量 | 會使用哪些計量來追蹤成功？ |         |
 | 法規遵循 | 此工作負載是否有任何協力廠商合規性需求？ |         |
 | 應用程式擁有者 | 誰負責與此工作負載相關聯之任何應用程式的業務影響？ |         |
 | 商務凍結期間 | 在任何時候，企業都不會允許變更嗎？ |         |
@@ -84,12 +84,12 @@ ms.locfileid: "80433976"
 
 ### <a name="technical-inputs"></a>技術輸入
 
-| 資料點 | 描述 | 輸入 |
+| 資料點 | 說明 | 輸入 |
 |---|---|---|
 | 採用方法 | 這項採用適合用於遷移或創新嗎？ |         |
 | 應用程式 ops 組長 | 列出負責此工作負載的效能和可用性的合作物件。 |         |
 | SLA | 列出任何服務等級協定（RTO/RPO 需求）。 |         |
-| 程度 | 列出目前的應用程式重要性。 |         |
+| 重要性 | 列出目前的應用程式重要性。 |         |
 | 資料分類 | 列出資料敏感度的分類。 |         |
 | 營業地理位置 | 列出工作負載是或應該裝載的任何地理位置。 |         |
 | 應用程式 | 指定此工作負載中包含的任何應用程式的初始清單或計數。 |         |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a8874c17c2b9e02d5a66cba251df5d491424ee3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: da021a6e1a4467189d20d3cb05e7ccdbb0b5a3b6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434384"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995386"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -59,8 +59,8 @@ CIO 擁有可以幫助公司的創新想法，但她和她的團隊限於滅火�
 - CIO 想要使用雲端遷移作為強制函式，來改善業務單位和地理位置之間的一致性和穩定性。 不過，未來的狀態必須遵守任何外部合規性需求，這需要特定 IT 小組的標準方法偏差。
 - 如果 App Dev 和 BI 的早期試驗顯示主要的成功指標，他們每個人都會希望在未來 24 個月內，向雲端發佈小規模的生產解決方案。
 - CIO 和 CFO 已經指派一名結構設計師和基礎結構副總裁，來建立成本分析和可行性研究。 這些工作將決定公司是否能夠而且應該在未來 36 個月內，將 5,000 個資產移轉到雲端。 成功移轉將使 CIO 能夠消除兩個資料中心，進而在五年計劃期間降低超過 1 億美元的成本。 如果有三到四個資料中心可以獲得類似的結果，則預算將重新回歸平衡，從而提供 CIO 預算支持更多創新計劃。
-    ![的內部部署成本與 Azure 成本相比，示範未來五年的 $ 100M 美元報酬](../../../_images/govern/calculator-enterprise.png)
-- 隨著這項成本節約，公司計畫將已認可的資本支出重新置放為營運費用，以變更部分 IT 投資的管理。 這項改變將提供更好的成本控制，使 IT 能夠加速完成其他計劃的工作。
+    ![內部部署成本與 Azure 成本，示範未來五年的美元傳回 $ 100M 美元](../../../_images/govern/calculator-enterprise.png)
+- 隨著這項成本節約，公司計畫將已認可的資本支出重新置放為營運費用，以變更部分 IT 投資的管理。 這種變更會提供更好的成本控制，讓它可以用來加速其他計畫的工作。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 2a6eab51a6254a5f7a2a7cf811b0a3857fd4d852
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 361f27d1c4a15c4ac001dfbf8951b57580eda5a7
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357247"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995742"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>在雲端採用旅程期間實現成功
 
@@ -161,8 +161,8 @@ ms.locfileid: "80357247"
 有了瞭解雲端採用架構的最高層面，在[遷移](./migrate.md)或[創新](./innovate.md)的過程中，成功的可能性也會更高。
 
 > [!div class="nextstepaction"]
-> [移轉](./migrate.md)
+> [遷移](./migrate.md)
 >
-> [創新](./innovate.md)
+> [能力](./innovate.md)
 
 <!-- test:ignoreNextStep -->

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434136"
 ---
 <!-- cSpell:ignore HKEY kusto -->
@@ -20,7 +20,7 @@ ms.locfileid: "80434136"
 
 Azure 變更追蹤和清查提供混合式環境設定狀態的警示，以及該環境的變更。 它可以報告可能影響已部署伺服器的重要檔案、服務、軟體和登錄變更。
 
-Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議的登錄機碼清單，以供監視。 若要查看這份清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 **清查** > **編輯設定**。
+Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議的登錄機碼清單，以供監視。 若要查看這份清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 [**清查** > ] [**編輯設定**]。
 
 ![Azure 入口網站中 Azure 自動化清查視圖的螢幕擷取畫面](./media/change-tracking1.png)
 
@@ -82,7 +82,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>特定軟體版本是或未安裝在電腦上
 
-使用下列查詢來評估安全性。 此查詢會參考 `ConfigurationData`，其中包含清查的記錄，並提供上次回報的設定狀態，而不會變更。
+使用下列查詢來評估安全性。 此查詢參考`ConfigurationData`，其中包含清查的記錄，並提供上次回報的設定狀態，而不會變更。
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"

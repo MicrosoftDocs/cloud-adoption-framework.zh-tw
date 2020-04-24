@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433778"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
@@ -24,7 +24,7 @@ ms.locfileid: "80433778"
 
 ## <a name="why-is-agility-so-important"></a>為什麼靈活性很重要？
 
-市場變更的速度比以往更快。 2015年起，只有57家公司仍在財富 500 61 年內，&mdash;88.6 的周轉率百分比。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
+市場變更的速度比以往更快。 從2015年起，只有57家公司仍在「財富 500 61 年&mdash;」，再加上「88.6 百分比」的營業額率。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
 
 對於面臨新生威脅和創公司，商業彈性可能是商務計畫成功或失敗之間的差異。 快速調整市場變更可協助您的現有客戶，或從競爭對手領取市場。 下一節中的靈活性相關結果可協助在轉換期間傳達雲端的價值。
 
@@ -58,4 +58,4 @@ ms.locfileid: "80433778"
 深入瞭解如何[達到成果](./reach-outcomes.md)。
 
 > [!div class="nextstepaction"]
-> [觸及成果](./reach-outcomes.md)
+> [觸達成果](./reach-outcomes.md)

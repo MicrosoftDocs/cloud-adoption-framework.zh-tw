@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 148a89cd63bfa7c29caea9f5b8f74f64132aed08
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434333"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雜企業的治理指南：改善資源一致性專業領域
@@ -64,7 +64,7 @@ ms.locfileid: "80434333"
 5. 治理工具必須確認會針對所有任務關鍵性應用程式或受保護的資料，收集適當層級的記錄資料。
 6. 治理程序必須確認任務關鍵性應用程式和受保護資料的備份、復原和 SLA 遵循皆正確實作。
 7. 治理工具必須限制只對已核准的映像進行虛擬機器部署。
-8. 治理工具必須強制**避免**在支援任務關鍵性應用程式的所有已部署資產上進行自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新的資產必須包含在 IT 作業所擁有的進程中，才能快速且有效地更新這些伺服器。
+8. 治理工具必須強制在支援任務關鍵性應用程式的所有已部署資產上**防止**自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新的資產必須包含在 IT 作業所擁有的進程中，才能快速且有效地更新這些伺服器。
 9. 治理工具必須確認與成本、重要性、SLA、應用程式及資料類別相關的標記。 所有的值都必須符合雲端治理小組所管理的預先定義值。
 10. 治理流程必須包含部署期間和一般週期的稽核，以確保所有資產之間的一致性。
 11. 安全性小組應定期檢閱可能影響雲端部署的趨勢與攻擊，以更新雲端中使用的安全性基準工具。

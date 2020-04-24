@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428666"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
@@ -65,7 +65,7 @@ CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件�
 
 此轉換的範例：
 
-| 狀況 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
+| 案例 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
 |---------|---------|---------|
 | 布建生產 SQL Server | 網路、IT 和資料平臺小組會在數天或甚至數周內布建各種元件。 | 需要伺服器的小組會部署 Azure SQL Database 的 PaaS 實例。 或者，預先核准範本可用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
 | 布建開發環境 | 網路、IT、開發和 DevOps 小組同意規格和部署環境。 | 開發小組會定義自己的規格，並根據配置的預算來部署環境。 |

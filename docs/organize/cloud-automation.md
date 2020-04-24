@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 8e35ed2cdd90b51e13a29b0709f44ad395e9e0fb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428621"
 ---
 # <a name="cloud-automation-capabilities"></a>雲端自動化功能
@@ -55,7 +55,7 @@ ms.locfileid: "80428621"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱：
+- 檢閱
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)
@@ -84,4 +84,4 @@ ms.locfileid: "80428621"
 隨著基本雲端功能的一致，共同團隊可以協助[開發所需的技術技能](./suggested-skills.md)。
 
 > [!div class="nextstepaction"]
-> [培養技術技能](./suggested-skills.md)
+> [建置技術技能](./suggested-skills.md)

@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: af2ecfdfb10aa56993d893ef9bcc7152f4f3d702
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428298"
 ---
 <!-- cSpell:ignore ccoe -->
@@ -23,7 +23,7 @@ ms.locfileid: "80428298"
 
 - [僅限雲端採用小組](#cloud-adoption-team-only)
 - [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
-- [中央 IT](#central-it)
+- [集中式 IT](#central-it)
 - [策略性對齊](#strategic-alignment)
 - [操作對齊](#operational-alignment)
 - [卓越的雲端中心（CCoE）](#cloud-center-of-excellence-ccoe)
@@ -58,18 +58,18 @@ ms.locfileid: "80428298"
 
 | |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|雲端採用小組  |負|負|承擔    |承擔|獲得   |獲得   |獲得   |獲得   |
-|雲端治理小組|參考  |獲得   |獲得   |獲得   |負|參考  |承擔|獲得   |
-|集中式 IT           |參考  |獲得   |負   |負   |承擔  |負|負|負|
+|雲端採用小組  |負|負|負責    |負責|獲得   |獲得   |獲得   |獲得   |
+|雲端治理小組|參考  |獲得   |獲得   |獲得   |負|參考  |負責|獲得   |
+|集中式 IT           |參考  |獲得   |負   |負   |負責  |負|負|負|
 ||||||||||
-|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[雲端治理](./cloud-governance.md)|[中央 IT](./central-it.md)|[中央 IT](./central-it.md)|[中央 IT](./central-it.md)|
+|已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[雲端治理](./cloud-governance.md)|[集中式 IT](./central-it.md)|[集中式 IT](./central-it.md)|[集中式 IT](./central-it.md)|
 
 ## <a name="strategic-alignment"></a>策略性對齊
 
 |  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
-|雲端採用小組  |負|參考  |承擔|負|獲得   |獲得   |獲得   |獲得   |
+|雲端採用小組  |負|參考  |負責|負|獲得   |獲得   |獲得   |獲得   |
 |CCoE 模型 RACI      |參考  |獲得   |獲得   |獲得   |負|負|負|負|
 ||||||||||
 |已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
@@ -79,9 +79,9 @@ ms.locfileid: "80428298"
 |  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
-|雲端採用小組  |負|參考  |承擔|參考  |獲得   |獲得   |獲得   |獲得   |
-|雲端營運小組|參考  |參考  |承擔|負|參考  |獲得   |負|參考  |
-|CCoE 模型 RACI      |參考  |獲得   |獲得   |獲得   |負|負|承擔|負|
+|雲端採用小組  |負|參考  |負責|參考  |獲得   |獲得   |獲得   |獲得   |
+|雲端營運小組|參考  |參考  |負責|負|參考  |獲得   |負|參考  |
+|CCoE 模型 RACI      |參考  |獲得   |獲得   |獲得   |負|負|負責|負|
 ||||||||||
 |已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 
@@ -90,11 +90,11 @@ ms.locfileid: "80428298"
 |  |解決方案交付  |業務配合  |變更管理  |解決方案作業  |控管 |平臺成熟度  |平台作業  |平臺自動化  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |雲端策略小組  |參考  |負|負|參考  |參考  |獲得   |獲得   |獲得   |
-|雲端採用小組  |負|參考  |承擔|參考  |獲得   |獲得   |獲得   |獲得   |
-|雲端營運小組|參考  |參考  |承擔|負|參考  |獲得   |負|參考  |
-|雲端治理小組|參考  |獲得   |獲得   |參考  |負|參考  |承擔|獲得   |
-|雲端平臺小組  |參考  |獲得   |獲得   |參考  |參考  |負|承擔|承擔|
-|雲端自動化團隊|參考  |獲得   |獲得   |獲得   |參考  |承擔|承擔|負|
+|雲端採用小組  |負|參考  |負責|參考  |獲得   |獲得   |獲得   |獲得   |
+|雲端營運小組|參考  |參考  |負責|負|參考  |獲得   |負|參考  |
+|雲端治理小組|參考  |獲得   |獲得   |參考  |負|參考  |負責|獲得   |
+|雲端平臺小組  |參考  |獲得   |獲得   |參考  |參考  |負|負責|負責|
+|雲端自動化團隊|參考  |獲得   |獲得   |獲得   |參考  |負責|負責|負|
 ||||||||||
 |已調整的雲端功能|[雲端採用](./cloud-adoption.md)|[雲端策略](./cloud-strategy.md)|[雲端策略](./cloud-strategy.md)|[雲端作業](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端治理](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端平臺](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[雲端自動化](./cloud-automation.md)|
 

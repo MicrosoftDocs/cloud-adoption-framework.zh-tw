@@ -10,21 +10,21 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 1d3d3de47ac46b775e94c89fc390cce84cb647a2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433996"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995125"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
-「中樞和輪輻」是一種網路模型，可更有效地管理常見通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
+「中樞和輪輻」** 是一種網路模型，可更有效地管理常見通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
 
 - **節省成本和管理效率**。 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠將多餘的資源和管理投入量降至最低。
-- **克服訂用帳戶限制**。 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱訂用帳戶[限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)。
+- **克服訂用帳戶限制**。 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
 - **考量分隔**。 您可以在中央 IT 小組和工作負載小組之間部署個別工作負載。
 
 較小的雲端資產可能無法受益於此模型所提供的新增結構和功能。 但較大的雲端採用工作應該考慮採用中樞和輪輻網路架構，如果它們有前述的任何疑慮。
@@ -35,7 +35,7 @@ ms.locfileid: "80433996"
 > - [在 Azure 中執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [在 Azure 中使用共用服務來執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>總覽
 
 ![中樞和輪輻網路拓撲的範例][1]
 
@@ -62,7 +62,7 @@ ms.locfileid: "80433996"
 
 在 Azure 中，每個任何類型的元件都會部署在 Azure 訂用帳戶中。 不同 Azure 訂用帳戶中的 Azure 元件隔離可以滿足不同企業營運的需求，例如設定不同層級的存取和授權。
 
-單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 其中一個範例是虛擬網路對等互連的最大數目。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制、配額與條件約束](https://docs.microsoft.com/azure/azure-subscription-service-limits)。
+單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 其中一個範例是虛擬網路對等互連的最大數目。 如需詳細資訊，請參閱[Azure 訂用帳戶和服務限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
 如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、虛擬 WAN 或站對站 VPN，將一或多個 Azure 區域中的多個中樞互相連線。
 
@@ -85,5 +85,5 @@ ms.locfileid: "80433996"
 <!-- images -->
 
 [1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "高階中樞和輪輻範例"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "中樞和支點叢集"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "中樞和輪輻的叢集"
 [3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "支點對支點"

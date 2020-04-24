@@ -9,17 +9,17 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 14ae08de4bb0ce82e4ba0d5ce0225c0597ee67b4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434536"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>部署加速的計量、指標及風險承受度
 
 本文將協助您量化商務風險承受度，因為這與部署加速有關。 定義計量和指標可協助您建立商務案例，藉此讓部署加速專業領域變得更完善。
 
-## <a name="metrics"></a>度量
+## <a name="metrics"></a>計量
 
 部署加速專業領域著重于如何設定、部署、更新和維護雲端資源的相關風險。 在採用此雲端治理專業領域時，下列資訊會很有用：
 

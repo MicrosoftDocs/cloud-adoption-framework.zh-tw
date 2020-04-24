@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428165"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對應至優先順序的工作負載
@@ -50,4 +50,4 @@ Azure Migrate 檔提供[如何根據相依性將機器分組](https://docs.micro
 根據資產對齊和工作負載定義來[審查合理化決策](./review-rationalization.md)。
 
 > [!div class="nextstepaction"]
-> [審查合理化決策](./review-rationalization.md)
+> [檢閱合理化決策](./review-rationalization.md)

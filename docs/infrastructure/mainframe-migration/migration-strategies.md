@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425526"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -30,7 +30,7 @@ ms.locfileid: "80425526"
 
 小型組織可能需要低於 500 MIPS，而大型組織通常需要超過 5,000 MIPS。 假設每單一 MIPS 需要 $1000 美元的情況下，大型組織每年需花費大約 5 百萬美元來部署 5,000 MIPS 的基礎結構。 針對此規模的一般 Azure 部署，每年的成本評估大約是 MIPS 基礎結構的十分支一。 如需詳細資訊，請參閱 [Azure 移轉的大型主機釋疑](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) \(英文\) 白皮書中的表格 4。
 
-MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zREF 基準測試提供下列評估：
+MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zREF 基準測試 \(英文\) 可提供下列評估：
 
 - 針對線上 (CICS) 作業，每個在 HP Proliant 伺服器上執行的 Intel 型核心為 288 MIPS。
 
@@ -55,9 +55,9 @@ Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中
 
 大型主機通常會相應增加，而雲端環境則會向外延展。大型主機可以使用結合設備（CF）向外延展，但是硬體和儲存體的高成本會使大型主機的相應放大變得昂貴。
 
-CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來擴大或縮小以符合使用者的規格。
+CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
 
-## <a name="backup-and-recovery"></a>備份及復原
+## <a name="backup-and-recovery"></a>備份與復原
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 

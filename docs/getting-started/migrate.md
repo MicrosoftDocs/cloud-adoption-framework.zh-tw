@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3ec14b513bc8030d2b04144465ecc0cbb48b97fc
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 866c269257581ab99d70fc0eb6296963edd154f2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434782"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995708"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>開始在 Azure 中進行雲端遷移旅程
 
@@ -35,7 +35,7 @@ ms.locfileid: "80434782"
 
 |重要的商務活動 | 遷移動機 | 創新動機 |
 |---------|---------|---------|
-| 資料中心結束<br/><br/>合併、收購或 divestiture<br/><br/>資本支出的縮減<br/><br/>任務關鍵性技術的終止支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省成本<br/><br/>降低廠商或技術複雜度<br/><br/>內部作業的優化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理或市場需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>將安全性狀態和控制項現代化<br/><br/>調整以符合地理或市場需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
+| 資料中心的退出<br/><br/>企業併購或撤資<br/><br/>減少資本支出<br/><br/>終止對任務關鍵性技術的支援<br/><br/>法規合規性變更的回應<br/><br/>符合新的資料主權需求<br/><br/>降低中斷並改善 IT 穩定性|節省成本<br/><br/>降低廠商或技術上的複雜性<br/><br/>追求內部營運的最佳化<br/><br/>提升業務敏捷性<br/><br/>準備新的技術功能<br/><br/>調整以符合市場需求<br/><br/>調整以符合地理或市場需求|準備新的技術功能<br/><br/>建立新的技術功能<br/><br/>將安全性狀態和控制項現代化<br/><br/>調整以符合地理或市場需求<br/><br/>改善客戶體驗與合作<br/><br/>轉換產品或服務<br/><br/>使用新的產品或服務中斷市場|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -75,9 +75,9 @@ ms.locfileid: "80434782"
 
 ### <a name="methodology-explained"></a>方法說明
 
-雲端採用架構的雲端策略和規劃方法，是根據雲端執行的累加方法，與敏捷式技術策略、根據成長思維方法的文化成熟度，以及由商務成果。 此方法包含下列高階元件，可引導每個策略的執行。
+雲端採用架構的雲端策略和規劃方法，是根據雲端執行的累加方法，與敏捷式技術策略、根據成長思維方法的文化成熟度，以及商務成果驅動的策略而定。 此方法包含下列高階元件，可引導每個策略的執行。
 
-如上圖所示，此架構會將策略性決策與少量包含的處理常式對齊，而這些進程會在反復模型中運作。 線上性檔中所述，下列每個程式都應該與雲端執行的反復專案平行處理。 每個進程的連結都會協助定義結束狀態，以及成熟到所需結束狀態的方法：
+如上圖所示，此架構會將策略性決策與在反復模型中操作的少數內含進程對齊。 線上性檔中所述，下列每個程式都應該與雲端執行的反復專案平行處理。 每個進程的連結都會協助定義結束狀態，以及成熟到所需結束狀態的方法：
 
 - **[計畫](../strategy/index.md)：** 當技術實現與清楚的商業目標一致時，不論技術決策為何，都能更輕鬆地測量並讓多個雲端實行工作的成功率一致。
 - **[就緒](../ready/index.md)：** 針對即將進行的變更準備商務、文化、人員和環境，會導致每個工作成功，並加速執行和變更專案。
@@ -137,16 +137,16 @@ ms.locfileid: "80434782"
 >
 > [規劃](../plan/index.md)
 >
-> [就緒](../ready/index.md)
+> [準備好](../ready/index.md)
 >
-> [移轉](../migrate/index.md)
+> [遷移](../migrate/index.md)
 >
-> [創新](../innovate/index.md)
+> [能力](../innovate/index.md)
 >
 > [制約](../govern/index.md)
 >
 > [管理](../manage/index.md)
 >
-> [向上](../organize/index.md)
+> [組織](../organize/index.md)
 
 <!-- test:ignoreNextStep -->

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 482b517605b13e27fe2fc315d9d8f7495ed8618c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 50335d2c7e6a628c0fd8886f5d1fac2701d7f286
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434359"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995506"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
@@ -50,17 +50,17 @@ ms.locfileid: "80434359"
 
 ### <a name="subscription-design"></a>訂用帳戶設計
 
-決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇 **[混合的訂](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** 用帳戶原則。
+決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇**[混合的訂](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** 用帳戶原則。
 
 - 出現有關 Azure 資源的新要求時，應針對每個營運地理位置中的每個主要業務單位建立「部門」。 在每個部門內，應為每個應用程式原型建立「訂用帳戶」。
-- 應用程式原型是以類似需求將應用程式分組的方式。 常見的範例包括：具有受保護資料的應用程式、受管制的應用程式（例如 HIPAA 或 FedRAMP）、低風險應用程式、具有內部部署相依性的應用程式、SAP 或 Azure 中的其他大型主機應用程式，或擴充的應用程式內部部署 SAP 或大型主機應用程式。 每個組織在資料分類和支援業務的應用程式類型上都有獨特需求。 數位資產的相依性對應可協助定義組織中的應用程式原型。
+- 應用程式原型是以類似需求將應用程式分組的方式。 常見的範例包括：具有受保護資料的應用程式、受管制的應用程式（例如 HIPAA 或 FedRAMP）、低風險應用程式、具有內部部署相依性的應用程式、SAP 或 Azure 中的其他大型主機應用程式，或擴充內部部署 SAP 或大型主機應用程式的應用程式。 每個組織在資料分類和支援業務的應用程式類型上都有獨特需求。 數位資產的相依性對應可協助定義組織中的應用程式原型。
 - 根據上述兩點，應同意將常見的命名慣例列為訂用帳戶設計的一部分。
 
 ### <a name="resource-consistency"></a>資源一致性
 
-資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
+資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇**[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
 
-- 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
+- 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
 - 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
@@ -72,23 +72,23 @@ ms.locfileid: "80434359"
 
 ### <a name="resource-tagging"></a>資源標記
 
-資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇 **[會計](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
+資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇**[會計](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
 
 - 已部署的資產應標記為的值：
   - 部門/帳單單位
   - [地理位置]
   - 資料分類
-  - 程度
+  - 重要性
   - SLA
   - 環境
   - 應用程式原型
-  - 應用程式
+  - Application
   - 應用程式擁有者
 - 這些值搭配 Azure 管理群組及已部署資產的相關訂用帳戶，將可擬定治理、營運和安全性決策。
 
 ### <a name="logging-and-reporting"></a>記錄與報告
 
-記錄和報告決策會決定您的存放區記錄資料，以及讓 IT 人員知道如何在操作健全狀況上獲得通知的監視和報告工具是結構化的。 在此敘述中，建議使用 **[混合式監視](../../../decision-guides/logging-and-reporting/index.md)** 模式來進行記錄和報告，但目前不需要任何開發小組。
+記錄和報告決策會決定您的存放區記錄資料，以及讓 IT 人員知道如何在操作健全狀況上獲得通知的監視和報告工具是結構化的。 在此敘述中，建議使用**[混合式監視](../../../decision-guides/logging-and-reporting/index.md)** 模式來進行記錄和報告，但目前不需要任何開發小組。
 
 - 在為了進行記錄或報告而收集的特定資料點上，目前並未設定治理需求。 此功能是此虛構敘述特有的，而且應將其視為反模式。 應儘速決定和強制執行記錄標準。
 - 發行任何受保護的資料或任務關鍵性工作負載之前，需執行額外的分析。

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 613e1ebaa3341b9aa96af659d0eb03cbc21a1303
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425615"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
@@ -48,7 +48,7 @@ ms.locfileid: "80425615"
 - [適用於 MariaDB 的 Azure 資料庫](https://docs.microsoft.com/azure/mariadb)
 - [適用於 PostgreSQL 的 Azure 資料庫超大規模資料庫](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
 - [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
+- [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms)
 - [Azure SQL Database，包含或不含受控實例](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
 - [Azure 串流分析](https://docs.microsoft.com/azure/stream-analytics)

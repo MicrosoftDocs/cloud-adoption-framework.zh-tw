@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433403"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
@@ -31,7 +31,7 @@ ms.locfileid: "80433403"
 管理客戶合作關係並將其整合到您的創新成果的這個套裝程式含三個開發階段：
 
 - [以客戶理解的方式打造](./build.md)
-- [對客戶影響的測量](./measure.md)
+- [測量客戶影響](./measure.md)
 - [向客戶學習](./learn.md)
 
 此程式的每個階段都可協助您為客戶建立更好的解決方案。

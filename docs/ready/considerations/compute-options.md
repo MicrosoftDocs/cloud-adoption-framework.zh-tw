@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ded91b479fc18a832aa1f977284f979dcb9856bb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 6b868c97cf5334e515ee44b0415d212175d4c26f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432157"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997544"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -27,7 +27,7 @@ ms.locfileid: "80432157"
 ![Azure 計算服務的決策樹](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> 在 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)中，深入了解如何評估每個應用程式或服務的計算選項。
+> 在 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)中，深入了解如何評估每個應用程式或服務的計算選項。
 
 ### <a name="key-questions"></a>重要問題
 
@@ -64,7 +64,7 @@ ms.locfileid: "80432157"
 
 Azure 可讓您依照您所需要的規模，將服務提供給身居世界不同角落的客戶及合作夥伴。 __ 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
-某些計算選項 (例如 Azure App Service) 已在大部分的 Azure 區域中正式推出。 不過，某些計算服務僅在精選區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在您決定要將計算資源部署到哪個區域之前，我們建議您先參閱[區域頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) 來檢查區域可用性的最新狀態。
+某些計算選項 (例如 Azure App Service) 已在大部分的 Azure 區域中正式推出。 不過，某些計算服務僅在精選區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在決定要將計算資源部署到哪些區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) ，以檢查區域可用性的最新狀態。
 
 若要深入了解 Azure 全域基礎結構，請參閱  [Azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以查看 [依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)，了解每個 Azure 區域中整體可用服務的特定詳細資料。
 
@@ -72,7 +72,7 @@ Azure 可讓您依照您所需要的規模，將服務提供給身居世界不�
 
 您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、存放和處理檔案和資料的管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 許多計算解決方案取決於連結的儲存體資源。 這項需求也可能會影響您的計算決策。 如需了解這些需求的協助，請參閱 [利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
 
-合規性工作的一部分可能包括控計算資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。  [Azure 地理](https://azure.microsoft.com/global-infrastructure/geographies) 可確保符合地理及政治界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到合規 Azure 地理位置中的區域。
+合規性工作的一部分可能包括控計算資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。  [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies) 可確保資料存放區、主權、合規性及復原需求會在地理和政治界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到合規 Azure 地理位置中的區域。
 
 ## <a name="establish-controls-for-compute-services"></a>建立計算服務的控制項
 

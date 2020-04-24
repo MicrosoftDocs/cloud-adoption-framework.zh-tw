@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508418"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80889729"
 ---
-<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
+<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
 
 本文說明虛構公司 Contoso 如何評定要移轉至 Azure 的內部部署應用程式。 在範例案例中，Contoso 的內部部署 SmartHotel360 應用程式目前在 VMware 上執行。 Contoso 會使用 Azure Migrate 服務來評定應用程式的 VM，並使用 Database Migration Assistant 來評定應用程式的 SQL Server 資料庫。
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>總覽
 
 Contoso 在考慮遷移至 Azure 時，該公司需要進行技術和財務方面的評量，以判斷其內部部署工作負載是否適合雲端移轉。 尤其是，Contoso 小組想要評定機器和資料庫是否能與移轉作業相容。 該小組想要預估在 Azure 中執行 Contoso 的資源所需的容量和成本。
 
@@ -54,10 +54,10 @@ osTicket<br/><br/> (Contoso 服務台應用程式) | 在含有 MySQL PHP (LAMP) 
 
 Contoso 的 IT 領導小組已與該公司的企業合作夥伴密切合作，以了解這些企業想從此次移轉實現什麼目標：
 
-- **因應業務成長。** Contoso 正在成長。 因此，該公司的內部部署系統和基礎結構所承受的壓力變大了。
+- **解決業務成長。** Contoso 正在成長。 因此，該公司的內部部署系統和基礎結構所承受的壓力變大了。
 - **提高效率。** Contoso 必須移除不必要的程序，並簡化其開發人員和使用者的程序。 該公司需要快速且不浪費時間或金錢的 IT 服務，以便能夠更快滿足客戶需求。
-- **提高靈活性。** Contoso IT 必須能夠更快因應企業的需求。 其因應速度必須能夠比市場變化更快，才能讓該公司在全球經濟中獲致成功。 Contoso 的 IT 小組不得礙事，或成為企業的絆腳石。
-- **調整。** 隨著該公司的業務順利成長，Contoso IT 必須提供能夠同步成長的系統。
+- **增加靈活性。** Contoso IT 必須能夠更快因應企業的需求。 其因應速度必須能夠比市場變化更快，才能讓該公司在全球經濟中獲致成功。 Contoso 的 IT 小組不得礙事，或成為企業的絆腳石。
+- **尺度.** 隨著該公司的業務順利成長，Contoso IT 必須提供能夠同步成長的系統。
 
 ## <a name="assessment-goals"></a>評量目標
 
@@ -74,7 +74,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
 
 技術 | 描述 | 成本
 --- | --- | ---
-[資料移轉小幫手](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 Data Migration Assistant 來評定和偵測可能影響其在 Azure 中資料庫功能的相容性問題。 Data Migration Assistant 會評定 SQL 來源和目標之間的功能同位。 其會建議如何改善效能和可靠性。 | Data Migration Assistant 是免費、可下載的工具。
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 Data Migration Assistant 來評定和偵測可能影響其在 Azure 中資料庫功能的相容性問題。 Data Migration Assistant 會評定 SQL 來源和目標之間的功能同位。 其會建議如何改善效能和可靠性。 | Data Migration Assistant 是免費、可下載的工具。
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
 [服務對應](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate 會使用服務對應來顯示該公司想要遷移的機器彼此之間的相依性。 | 服務對應是 Azure 監視器記錄的一部分。 目前，Contoso 可免費使用服務對應 180 天。
 
@@ -89,17 +89,17 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
 - VMware VM 位於執行 6.5 版的 VMware ESXI 主機 (**contosohost1**、**contosohost2**) 上。
 - VMware 環境是由 VM 上執行的 vCenter Server 6.5 (**vcenter.contoso.com**) 進行管理。
 - SmartHotel360 旅遊應用程式具有下列特性：
-  - 這個應用程式橫跨兩層 VMware VM (**WEBVM** 和 **SQLVM**)。
+  - 應用程式會跨兩個 VMware Vm （**WEBVM**和**SQLVM**）進行分層。
   - VM 位於 VMware ESXi 主機 **contosohost1.contoso.com**。
   - VM 正在執行 Windows Server 2008 R2 Datacenter with SP1。
 - VMware 環境是由 VM 上所執行的 VCenter Server (**vcenter.contoso.com**) 進行管理。
 - osTicket 服務台應用程式：
-  - 這個應用程式橫跨兩層 VM (**OSTICKETWEB** 和 **OSTICKETMYSQL**)。
+  - 應用程式會跨兩個 Vm （**OSTICKETWEB**和**OSTICKETMYSQL**）進行分層。
   - VM 正在 Ubuntu Linux Server 16.04-LTS 上執行。
   - **OSTICKETWEB** 正在執行 Apache 2 和 PHP 7.0。
   - **OSTICKETMYSQL** 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 
@@ -138,43 +138,47 @@ Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
     - Data Migration Assistant 可以安裝於任何可以連線到 SQL Server 執行個體的機器上。 Contoso 不需要在 SQL Server 機器上執行此工具。
     - Data Migration Assistant 不得在 SQL Server 主機機器上執行。
 2. Contoso 會執行所下載的安裝檔案 (DownloadMigrationAssistant.msi)，開始進行安裝。
-3. 在 [完成] 頁面上，Contoso 會先選取 [啟動 Microsoft Data Migration Assistant]，再完成精靈。
+3. 在 [完成]**** 頁面上，Contoso 會先選取 [啟動 Microsoft Data Migration Assistant]****，再完成精靈。
 
 ## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>步驟 2：執行 SmartHotel360 的資料庫評估並加以分析
 
 Contoso 現在可以執行評估，以便針對 SmartHotel360 應用程式分析其內部部署 SQL Server 資料庫。
 
-1. 在 Data Migration Assistant 中，Contoso 會選取 [新增] > [評估]，然後為評估提供專案名稱。
-2. 針對 [來源伺服器類型]，Contoso 會選取 [SQL Server]，而針對 [目標伺服器類型]，Contoso 會選取 [Azure 虛擬機器上的 SQL Server]。
+1. 在 Data Migration Assistant 中，Contoso 會選取 [**新增** > **評估**]，然後為評量提供專案名稱。
+
+2. 針對 [來源伺服器類型]****，Contoso 會選取 [SQL Server]****，而針對 [目標伺服器類型]****，Contoso 會選取 [Azure 虛擬機器上的 SQL Server]****。
 
     ![Data Migration Assistant - 選取來源](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-1.png)
 
     > [!NOTE]
     > Data Migration Assistant 目前不支援就是否可遷移至 Azure SQL Database 受控執行個體進行評量。 為解決此問題，Contoso 會使用「Azure VM 上的 SQL Server」作為假定的評量目標。
 
-3. 在 [選取目標版本] 中，Contoso 會選取 SQL Server 2017 作為目標版本。 這是 SQL Database 受控執行個體所使用的版本，所以 Contoso 必須選取此版本。
+3. 在 [選取目標版本]**** 中，Contoso 會選取 SQL Server 2017 作為目標版本。 這是 SQL Database 受控執行個體所使用的版本，所以 Contoso 必須選取此版本。
+
 4. Contoso 選取報告以協助自身探索相容性和新功能的相關資訊：
-    - [相容性問題] 會指明可能會中斷移轉的變更，或指明必須略做調整再移轉。 此報告會讓 Contoso 得知任何目前使用、但已過時的功能。 所有問題會以相容性層級來加以組織。
-    - [新功能建議] 會指明資料庫可於移轉後所使用的目標 SQL Server 平台中，有什麼新功能。 新功能的建議會組織在 [效能]、[安全性] 和 [儲存體] 標題底下。
+
+    - **相容性問題**注意可能會中斷遷移或需要在遷移前進行次要調整的變更。 此報告會讓 Contoso 得知任何目前使用、但已過時的功能。 所有問題會以相容性層級來加以組織。
+    - [新功能建議]**** 會指明資料庫可於移轉後所使用的目標 SQL Server 平台中，有什麼新功能。 新功能的建議會組織在 [效能]****、[安全性]**** 和 [儲存體]**** 標題底下。
 
     ![Data Migration Assistant - 相容性問題和新功能](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-2.png)
 
-5. 在 [連線到伺服器] 中，Contoso 會輸入執行資料庫的 VM 名稱，以及用來存取它的認證。 Contoso 會啟用 [信任伺服器憑證] 以確保 VM 可以存取 SQL Server。 接著，Contoso 會選取 [連線]。
+5. 在 [連線到伺服器]**** 中，Contoso 會輸入執行資料庫的 VM 名稱，以及用來存取它的認證。 Contoso 會啟用 [信任伺服器憑證]**** 以確保 VM 可以存取 SQL Server。 接著，Contoso 會選取 [連線]****。
 
     ![Data Migration Assistant - 連線至伺服器](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-3.png)
 
-6. 在 [新增來源] 中，Contoso 會新增想要評定的資料庫，然後選取 [下一步] 開始進行評量。
+6. 在 [新增來源]**** 中，Contoso 會新增想要評定的資料庫，然後選取 [下一步]**** 開始進行評量。
+
 7. 評量隨即建立。
 
     ![Data Migration Assistant - 建立評量](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-4.png)
 
-8. 在 [檢閱結果] 中，Contoso 會檢視評量結果。
+8. 在 [檢閱結果]**** 中，Contoso 會檢視評量結果。
 
 ### <a name="analyze-the-database-assessment"></a>分析資料庫評估結果
 
-一有結果就會顯示出來。 如果 Contoso 將問題修復，則必須選取 [重新開始評量] 以重新執行評量。
+一有結果就會顯示出來。 如果 Contoso 將問題修復，則必須選取 [重新開始評量]**** 以重新執行評量。
 
-1. 在 [相容性問題] 報告中，Contoso 會檢查每個相容性層級的所有問題。 相容性層級與 SQL Server 版本的對應如下：
+1. 在 [相容性問題]**** 報告中，Contoso 會檢查每個相容性層級的所有問題。 相容性層級與 SQL Server 版本的對應如下：
 
     - 100：SQL Server 2008/Azure SQL Database
     - 110：SQL Server 2012/Azure SQL Database
@@ -184,7 +188,7 @@ Contoso 現在可以執行評估，以便針對 SmartHotel360 應用程式分析
 
     ![Data Migration Assistant - 相容性問題報告](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-5.png)
 
-2. 在 [功能建議] 報告中，Contoso 會檢視評量在移轉後建議的效能、安全性和儲存功能。 該報告會提出各種建議功能，包括記憶體內部 OLTP、資料行存放區索引、Stretch Database、Always Encrypted、動態資料遮罩和透明資料加密。
+2. 在 [功能建議]**** 報告中，Contoso 會檢視評量在移轉後建議的效能、安全性和儲存功能。 該報告會提出各種建議功能，包括記憶體內部 OLTP、資料行存放區索引、Stretch Database、Always Encrypted、動態資料遮罩和透明資料加密。
 
     ![Data Migration Assistant - 功能建議報告](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
@@ -196,8 +200,8 @@ Contoso 現在可以執行評估，以便針對 SmartHotel360 應用程式分析
 > [!NOTE]
 > 如需進行大規模的評量：
 >
-> - 同時執行多個評量，並在 [所有評量] 頁面檢視這些評量的狀態。
-> - 將評量合併至 [SQL Server 資料庫](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017)。
+> - 同時執行多個評量，並在 [所有評量]**** 頁面檢視這些評量的狀態。
+> - 將評量合併至[SQL Server 資料庫](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017)。
 > - 將評量合併至 [PowerBI 報告](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017)。
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>步驟 3：使用 Azure Migrate 準備 VM 評量
@@ -209,7 +213,7 @@ Contoso 必須建立 VMware 帳戶，以供 Azure Migrate 用來自動探索要�
 VM 探索需要在 vCenter Server 中擁有唯讀帳戶，且該帳戶要具有下列屬性：
 
 - **使用者類型：** 至少是唯讀使用者。
-- **許可權：** 針對資料中心物件，選取 [**傳播至子物件**] 核取方塊。 針對 [角色]，選取 [唯讀]。
+- **許可權：** 針對資料中心物件，選取 [**傳播至子物件**] 核取方塊。 針對 [角色]****，選取 [唯讀]****。
 - **詳細資料：** 使用者會在資料中心層級指派，並可存取資料中心內的所有物件。
 - 若要限制存取權，請將具備 [**傳播至子**物件] 許可權的 [**沒有存取權**] 角色指派給子物件（vSphere 主機、資料存放區、vm 及網路）。
 
@@ -229,40 +233,40 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 設定新的 Azure Migrate 專案，如下所示。
 
-1. 在 Azure 入口網站 > [所有服務] 中，搜尋 **Azure Migrate**。
+1. 在 Azure 入口網站 > [所有服務]  中，搜尋 **Azure Migrate**。
 
-1. 在 [服務] 下，選取 [Azure Migrate]。
+1. 在 [服務]  下，選取 [Azure Migrate]  。
 
-1. 在 [概觀] 的 [探索、評估和遷移伺服器] 底下，選取 [評估和遷移伺服器]。
+1. 在 [概觀]  的 [探索、評估和遷移伺服器]  底下，選取 [評估和遷移伺服器]  。
 
     ![Azure Migrate - 建立移轉專案](../migrate/azure-best-practices/media/contoso-migration-assessment/assess-migrate.png)
 
-1. 在 [開始使用] 中，選取 [新增工具]。
+1. 在 [開始使用]  中，選取 [新增工具]  。
 
-1. 在 [Migrate 專案] 中選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有的話)。
+1. 在 [Migrate 專案]  中選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有的話)。
 
-1. 在 *[專案詳細資料] 中，指定專案名稱以及要在其中建立專案的地理位置。 支援美國、亞洲、歐洲、澳大利亞、英國、加拿大、印度和日本。
+1. 在 [*專案詳細資料*] 中，指定專案名稱，以及您要在其中建立專案的地理位置。 支援美國、亞洲、歐洲、澳大利亞、英國、加拿大、印度和日本。
 
     - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
     - 當您執行移轉時，可以選取任何目的地區域。
 
-1. 選取 [下一步]。
+1. 選取 [下一步]  。
 
-1. 在 [選取評估工具] 中，選取 [Azure Migrate：伺服器評估] > [下一步]。
+1. 在 [選取評量工具]  中，選取 **[Azure Migrate：伺服器評量]**  > [下一步]  。
 
     ![Azure Migrate - 評量工具](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
 
-1. 在 [選取移轉工具] 中，選取 [暫時跳過新增移轉工具] > [下一步]。
+1. 在 [選取移轉工具]  中，選取 [暫時跳過新增移轉工具]   > [下一步]  。
 
 1. 在 [審核] 和 [**新增工具**] 中，檢查設定，然後選取 [**新增工具**]。
 
-1. 等候幾分鐘讓 Azure Migrate 專案完成部署。 您會進入專案頁面。 如果您沒有看到專案，則可以從 Azure Migrate 儀表板中的 [伺服器] 來存取。
+1. 等候幾分鐘讓 Azure Migrate 專案完成部署。 您會進入專案頁面。 如果您沒有看到專案，則可以從 Azure Migrate 儀表板中的 [伺服器]  來存取。
 
 ### <a name="download-the-collector-appliance"></a>下載收集器設備
 
-1. 在 [**遷移目標**] > **伺服器** > **Azure Migrate： [伺服器評定**] 中，選取 [**探索**]。
+1. 在 [移轉目標]   > [伺服器]   >  **[Azure Migrate：伺服器評估]** 中，選取 [探索]  。
 
-1. 在 [**探索電腦** > **是否虛擬機器？** ] 中，選取 **[是]，使用 VMware vSphere 的程式管理**程式。
+1. 在 [**探索機器** > **是否已虛擬化？**] 中，選取 **[是]，搭配 VMware vSphere 的虛擬**程式。
 
 1. 選取 [**下載**] 以下載。OVA 範本檔案。
 
@@ -274,60 +278,62 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 1. 在存放所下載檔案的機器上，Contoso 會開啟系統管理員命令提示字元視窗。
 
-1. Contoso 會執行下列命令以產生 OVA 檔案的雜湊：
+2. Contoso 會執行下列命令以產生 OVA 檔案的雜湊：
 
     `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
-    **範例︰**
+    **範例：**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
 
-1. 產生的雜湊應符合[評估 VMware vm 以進行遷移](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
+3. 產生的雜湊應符合[評估 VMware vm 以進行遷移](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
 
 ### <a name="create-the-collector-appliance"></a>建立收集器設備
 
 現在，Contoso 可以將下載的檔案匯入 vCenter Server 執行個體並佈建收集器設備 VM：
 
-1. 在 vSphere 用戶端主控台中，Contoso 會選取 [檔案] > [部署 OVF 範本]。
+1. 在 vSphere 用戶端主控台中，Contoso**會選取** > [檔案] [**部署 OVF 範本**]。
 
     ![vSphere Web 用戶端 - 部署 OVF 範本](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
 
-1. 在 [部署 OVF 範本精靈] 中，Contoso 會選取 [來源]，然後指定 OVA 檔案的位置。
+2. 在 [部署 OVF 範本精靈] 中，Contoso 會選取 [來源]****，然後指定 OVA 檔案的位置。
 
-1. 在 [名稱和位置] 中，Contoso 會指定收集器 VM 的顯示名稱。 然後，它會選取用來裝載 VM 的清查位置。 Contoso 也會指定用來執行收集器設備的主機或叢集。
+3. 在 [名稱和位置]**** 中，Contoso 會指定收集器 VM 的顯示名稱。 然後，它會選取用來裝載 VM 的清查位置。 Contoso 也會指定用來執行收集器設備的主機或叢集。
 
-1. 在 [儲存體] 中，Contoso 會指定儲存位置。 在 [磁碟格式] 中，Contoso 會選取儲存體的佈建方式。
+4. 在 [儲存體]**** 中，Contoso 會指定儲存位置。 在 [磁碟格式]**** 中，Contoso 會選取儲存體的佈建方式。
 
-1. 在 [網路對應] 中，Contoso 會指定要用來連接收集器 VM 的網路。 此網路必須能夠連線到網際網路，以將中繼資料傳送至 Azure。
+5. 在 [網路對應]**** 中，Contoso 會指定要用來連接收集器 VM 的網路。 此網路必須能夠連線到網際網路，以將中繼資料傳送至 Azure。
 
-1. Contoso 會檢閱設定，然後選取 [在部署後開啟電源] > [完成]。 當設備建立好，就會出現訊息確認作業已成功完成。
+6. Contoso 會檢查設定，然後選取 [**在部署** > **完成**後開啟電源]。 當設備建立好，就會出現訊息確認作業已成功完成。
 
 ### <a name="run-the-collector-to-discover-vms"></a>執行收集器來探索 VM
 
 現在，Contoso 會執行收集器以探索 VM。 收集器目前只支援以**英文 (美國)** 作為作業系統語言和收集器介面語言。
 
-1. 在 vSphere 用戶端主控台中，Contoso 會選取 [開啟主控台]。 Contoso 會指定接受收集器 VM 的授權條款和密碼喜好設定。
+1. 在 vSphere 用戶端主控台中，Contoso 會選取 [開啟主控台]****。 Contoso 會指定接受收集器 VM 的授權條款和密碼喜好設定。
 
-1. Contoso 會選取桌面上的 [Microsoft Azure 設備組態管理員] 捷徑。
+2. Contoso 會選取桌面上的 [Microsoft Azure 設備組態管理員]**** 捷徑。
 
     ![vSphere 用戶端主控台 - 收集器捷徑](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-1. 在 Azure Migrate 收集器中，Contoso 會選取 [設定必要條件]。 Contoso 會接受授權條款，並閱讀第三方資訊。
+3. 在 Azure Migrate 收集器中，Contoso 會選取 [設定必要條件]****。 Contoso 會接受授權條款，並閱讀第三方資訊。
 
-1. 收集器會確認 VM 是否可存取網際網路、時間是否同步，以及收集器服務是否正在執行。 （收集器服務預設會安裝在 VM 上）。Contoso 也會安裝 VMware vSphere 虛擬磁片開發工具組。
+4. 收集器會確認 VM 是否可存取網際網路、時間是否同步，以及收集器服務是否正在執行。 （收集器服務預設會安裝在 VM 上）。Contoso 也會安裝 VMware vSphere 虛擬磁片開發工具組。
 
     > [!NOTE]
     > 我們會假設 VM 可直接存取網際網路，而不會使用 Proxy。
 
     ![Azure Migrate 收集器 - 確認必要條件](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-1. 登入 **Azure** 帳戶，然後選取您稍早建立的訂用帳戶和 Azure Migrate 專案。 也請輸入**設備**的名稱，以便您可以在 Azure 入口網站中識別。
-1. 在 [指定 vCenter Server 詳細資料] 中，Contoso 會輸入 vCenter Server 執行個體的名稱 (FQDN) 或 IP 位址，以及用於探索的唯讀認證。
-1. Contoso 會選取 VM 探索的範圍。 收集器只能探索指定範圍內的虛擬機器。 範圍可以設定為特定資料夾、資料中心或叢集。
+5. 登入 **Azure** 帳戶，然後選取您稍早建立的訂用帳戶和 Azure Migrate 專案。 也請輸入**設備**的名稱，以便您可以在 Azure 入口網站中識別。
+
+6. 在 [指定 vCenter Server 詳細資料]**** 中，Contoso 會輸入 vCenter Server 執行個體的名稱 (FQDN) 或 IP 位址，以及用於探索的唯讀認證。
+
+7. Contoso 會選取 VM 探索的範圍。 收集器只能探索指定範圍內的虛擬機器。 範圍可以設定為特定資料夾、資料中心或叢集。
 
     ![指定 vCenter Server 詳細資料](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-1. 收集器現在會開始探索並收集與 Contoso 環境相關的資訊。
+8. 收集器現在會開始探索並收集與 Contoso 環境相關的資訊。
 
     ![檢視收集進度](../migrate/azure-best-practices/media/contoso-migration-assessment/migrate-discovery.png)
 
@@ -335,11 +341,11 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 收集完成時，Contoso 會確認 VM 出現在入口網站中：
 
-1. 在 Azure Migrate 專案中，Contoso 會選取 [伺服器] > [探索到的伺服器]。 Contoso 會檢查其想要探索的 VM 是否已顯示。
+1. 在 Azure Migrate 專案中，Contoso 會選取 [**伺服器** > **探索**到的伺服器]。 Contoso 會檢查其想要探索的 VM 是否已顯示。
 
     ![Azure Migrate - 探索到的機器](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
 
-1. 機器目前未安裝 Azure Migrate 代理程式。 Contoso 必須安裝代理程式才能檢視相依性。
+2. 機器目前未安裝 Azure Migrate 代理程式。 Contoso 必須安裝代理程式才能檢視相依性。
 
     ![Azure Migrate - 必須安裝代理程式](../migrate/azure-best-practices/media/contoso-migration-assessment/machines-no-agent.png)
 
@@ -355,13 +361,13 @@ Contoso 為了檢視其所要評定 VM 之間的相依性，會在應用程式 V
 
 ### <a name="download-and-install-the-vm-agents"></a>下載並安裝虛擬機器代理程式
 
-1. 在 [機器] 中，Contoso 會選取機器。 在 [相依性] 資料行中，Contoso 會選取 [需要安裝]。
+1. 在 [機器]**** 中，Contoso 會選取機器。 在 [相依性]**** 資料行中，Contoso 會選取 [需要安裝]****。
 
-1. 在 [探索機器] 窗格中，Contoso 會：
+2. 在 [探索機器]**** 窗格中，Contoso 會：
     - 下載每個 Windows VM 的 Microsoft Monitoring Agent （MMA）和 Microsoft Dependency Agent。
     - 下載每個 Linux VM 的 MMA 和 Dependency agent。
 
-1. Contoso 會複製工作區識別碼和金鑰。 Contoso 在安裝 MMA 時，需要工作區識別碼和金鑰。
+3. Contoso 會複製工作區識別碼和金鑰。 Contoso 在安裝 MMA 時，需要工作區識別碼和金鑰。
 
     ![代理程式下載](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -373,23 +379,23 @@ Contoso 會在每部 VM 上執行安裝。
 
 1. Contoso 會按兩下所下載的代理程式。
 
-1. 在 [目的資料夾] 中，Contoso 會保留預設的安裝資料夾，然後選取 [下一步]。
+2. 在 [目的資料夾]**** 中，Contoso 會保留預設的安裝資料夾，然後選取 [下一步]****。
 
-1. 在 [代理程式安裝選項] 中，Contoso 會選取 [將代理程式連線至 Azure Log Analytics] > [下一步]。
+3. 在 [代理程式安裝選項]**** 中，Contoso 會選取 [將代理程式連線至 Azure Log Analytics]**** > [下一步]****。
 
     ![Microsoft Monitoring Agent 安裝程式 - 代理程式安裝程式選項](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install.png)
 
-1. 在 [Azure Log Analytics] 中，Contoso 會貼上從入口網站複製的工作區識別碼和金鑰。
+4. 在 [Azure Log Analytics]**** 中，Contoso 會貼上從入口網站複製的工作區識別碼和金鑰。
 
     ![Microsoft Monitoring Agent 安裝程式 - Azure Log Analytics](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install2.png)
 
-1. 在 [準備安裝] 中，Contoso 會安裝 MMA。
+5. 在 [準備安裝]**** 中，Contoso 會安裝 MMA。
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>在 Windows VM 上安裝 Dependency Agent
 
 1. Contoso 會按兩下所下載的 Dependency agent。
 
-1. Contoso 會接受授權條款並等候安裝完成。
+2. Contoso 會接受授權條款並等候安裝完成。
 
     ![Dependency Agent 安裝程式-安裝](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
@@ -411,10 +417,10 @@ Contoso 會在每部 VM 上執行安裝。
 
     - Contoso 會在命令中輸入工作區識別碼和金鑰。
     - 命令是針對 64 位元。
-    - 工作區識別碼和金鑰位於 Azure 入口網站的 Log Analytics 工作區。 依序選取 [設定] 和 [連接的來源] 索引標籤。
+    - 工作區識別碼和金鑰位於 Azure 入口網站的 Log Analytics 工作區。 依序選取 [設定]**** 和 [連接的來源]**** 索引標籤。
     - 執行下列命令來下載 Log Analytics 代理程式、驗證總和檢查碼，然後安裝代理程式並使其可使用：
 
-    `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
+        `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>在 Linux VM 上安裝 Dependency Agent
 
@@ -422,7 +428,7 @@ Contoso 會在每部 VM 上執行安裝。
 
 1. 相依性代理程式會使用 Installdependencyagent-linux64.bin (（具有自我解壓縮二進位檔的 shell 腳本）安裝在 Linux 電腦上。 Contoso 會使用 sh 來執行檔案，或對檔案本身新增執行權限。
 
-1. Contoso 會以 root 身分安裝 Linux Dependency agent：
+2. Contoso 會以 root 身分安裝 Linux Dependency agent：
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -432,35 +438,35 @@ Contoso 現在可以確認機器相依性並建立群組。 接著，會執行�
 
 ### <a name="verify-dependencies-and-create-a-group"></a>確認相依性和建立群組
 
-1. 為了判斷所要分析的機器，Contoso 會選取 [檢視相依性]。
+1. 為了判斷所要分析的機器，Contoso 會選取 [檢視相依性]****。
 
     ![Azure Migrate - 檢視機器相依性](../migrate/azure-best-practices/media/contoso-migration-assessment/view-machine-dependencies.png)
 
-1. SQLVM 的相依性對應顯示下列詳細資料：
+2. SQLVM 的相依性對應顯示下列詳細資料：
 
     - 在指定的時間期間 (預設為一小時) 內，有作用中網路連線在 SQLVM 上執行的處理序群組或處理序。
     - 所有相依機器的輸入 (用戶端) 和輸出 (伺服器) TCP 連線。
     - 已安裝 Azure Migrate 代理程式的相依機器會顯示為不同的方塊。
     - 未安裝代理程式的機器則會顯示連接埠和 IP 位址資訊。
 
-1. 針對已安裝代理程式的機器 (WEBVM)，Contoso 會選取機器方塊以檢視詳細資訊。 這些資訊包括 FQDN、作業系統和 MAC 位址。
+3. 針對已安裝代理程式的機器 (WEBVM)，Contoso 會選取機器方塊以檢視詳細資訊。 這些資訊包括 FQDN、作業系統和 MAC 位址。
 
     ![Azure Migrate - 檢視群組相依性](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-1. Contoso 會選取要新增至群組的 VM (SQLVM 和 WEBVM)。 Contoso 在按一下以選取多個 Vm 時，會保留 `Ctrl` 金鑰。
+4. Contoso 會選取要新增至群組的 VM (SQLVM 和 WEBVM)。 Contoso 會按住 Ctrl 鍵，同時按一下以選取多個 VM。
 
-1. Contoso 會選取 [建立群組]，然後輸入名稱 (**smarthotelapp**)。
+5. Contoso 會選取 [建立群組]****，然後輸入名稱 (**smarthotelapp**)。
 
     > [!NOTE]
     > 若要檢視更細微的相依性，您可以展開時間範圍。 您可以選取特定持續期間，也可以選取開始和結束日期。
 
 ### <a name="run-an-assessment"></a>執行評估
 
-1. 在 [群組] 中，Contoso 會開啟群組 (**smarthotelapp**)，然後選取 [建立評量]。
+1. 在 [群組]**** 中，Contoso 會開啟群組 (**smarthotelapp**)，然後選取 [建立評量]****。
 
     ![Azure Migrate - 建立評估](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
-1. 為了檢視評量，Contoso 會選取 [管理] > [評量]。
+2. 為了查看評量，Contoso 會選取 [**管理** > **評**量]。
 
 Contoso 會使用預設評量設定，但您可以[自訂設定](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment)。
 
@@ -478,7 +484,7 @@ Azure Migrate 評量包括內部部署與 Azure 的相容性、建議的 Azure V
 
 - 根據計算評量所需的資料點可用性，每個評量都會指派信賴評等。
 - 此評等可協助您預估 Azure Migrate 所提供大小建議的可靠性。
-- 信賴評等在您進行「以效能為基礎的大小調整」時非常實用。 Azure Migrate 可能沒有足夠的資料點可供進行以使用率為基礎的大小調整。 對於「內部部署形式」的大小調整，信賴評等一律是 5 顆星，原因是 Azure Migrate 擁有調整 VM 大小所需的所有資料點。
+- 信賴評等在您進行「以效能為基礎的大小調整」** 時非常實用。 Azure Migrate 可能沒有足夠的資料點可供進行以使用率為基礎的大小調整。 對於「內部部署形式」** 的大小調整，信賴評等一律是 5 顆星，原因是 Azure Migrate 擁有調整 VM 大小所需的所有資料點。
 - 根據可用資料點的百分比提供評量的信賴評等：
 
    資料點的可用性 | 信賴評等
@@ -504,7 +510,7 @@ Azure Migrate 評量包括內部部署與 Azure 的相容性、建議的 Azure V
 設定 | 指示 | 詳細資料
 --- | --- | ---
 **Azure VM 整備程度** | 指出 VM 是否已可移轉。 | 可能的狀態：<br/><br/>- 可供 Azure 使用<br/><br/>- 有條件的備妥 <br/><br/>- 未備妥供 Azure 使用<br/><br/>- 整備程度未知<br/><br/> 如果 VM 未準備好，Azure Migrate 會示範一些補救步驟。
-**Azure VM 大小** | 對於準備好的 VM，Azure Migrate 會提供 Azure VM 大小建議。 | 大小調整建議取決於評估屬性：<br/><br/>- 如果您之前使用以效能為基礎的大小調整，大小調整會考慮 VM 的效能記錄。<br/><br/>- 如果您之前使用「內部部署形式」，則大小調整會以內部部署 VM 的大小為基礎，而不會使用使用量資料。
+**Azure VM 大小** | 對於準備好的 VM，Azure Migrate 會提供 Azure VM 大小建議。 | 大小調整建議取決於評估屬性：<br/><br/>- 如果您之前使用以效能為基礎的大小調整，大小調整會考慮 VM 的效能記錄。<br/><br/>- 如果您之前使用「內部部署形式」**，則大小調整會以內部部署 VM 的大小為基礎，而不會使用使用量資料。
 **建議的工具** | 因為 Azure 機器會執行代理程式，Azure Migrate 會查看在機器內部執行的程序。 它會識別機器是否為資料庫機器。
 **VM 資訊** | 此報告會顯示內部部署 VM 的設定，包括作業系統、開機類型、磁碟和儲存體資訊。
 

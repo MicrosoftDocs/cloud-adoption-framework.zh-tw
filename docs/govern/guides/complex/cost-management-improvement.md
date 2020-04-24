@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ef91284dda14c3784b8d3dafe4e5354735bf3f19
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434498"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808980"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 

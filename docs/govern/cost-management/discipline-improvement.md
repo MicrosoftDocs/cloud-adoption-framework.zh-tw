@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 47d6cd60e67b6f17a3a9a3abef6788847854f2f1
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434713"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120383"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 
 成本管理專業領域會嘗試解決與在裝載雲端式工作負載時所產生費用相關的核心業務風險。 在雲端治理的五個專業領域中，成本管理涉及控制雲端資源的成本和使用量，其目標在於建立和維護規劃的成本週期。
 
-本文將概述貴公司可執行來開發成本管理專業領域並使其臻至成熟的潛在工作。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
+本文將概述貴公司可執行來開發成本管理專業領域並使其臻至成熟的潛在工作。 這些工作可以細分為實施雲端解決方案的規劃、建立、採用及操作階段。 然後，這些工作會反復進行，以允許開發[雲端治理](../guides/index.md#an-incremental-approach-to-cloud-governance)的累加方法。
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
@@ -107,7 +107,7 @@ ms.locfileid: "80434713"
 
 ## <a name="next-steps"></a>後續步驟
 
-既然您已了解雲端身分識別治理的概念，請檢查[成本管理工具鏈](./toolchain.md)，來識別您在 Azure 平台上開發成本管理治理專業領域時所需的 Azure 工具和功能。
+既然您已瞭解雲端成本治理的概念，請參閱[成本管理最佳作法](./best-practices.md)，以尋找降低整體支出的方式。
 
 > [!div class="nextstepaction"]
-> [適用於 Azure 成本管理工具鏈](./toolchain.md)
+> [成本管理最佳做法](./best-practices.md)

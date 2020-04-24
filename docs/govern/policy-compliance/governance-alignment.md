@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.openlocfilehash: 107385f48f43b449fd835b5ac28aa0a9ebb5207f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433067"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>配合公司原則來調整您的雲端治理設計指南
 
-在根據您的[已識別風險](./policy-definition.md)來[定義雲端原則](./business-risk.md)之後，您必須產生可採取行動的指引，與 IT 人員和開發人員參考的這些原則保持一致。 起草雲端治理設計指南可讓您根據為[五個治理專業領域](../governance-disciplines.md)所產生的原則聲明，指定特定的結構化、技術和流程選擇。
+在根據您的[已識別風險](./business-risk.md)來[定義雲端原則](./policy-definition.md)之後，您必須產生可採取行動的指引，與 IT 人員和開發人員參考的這些原則保持一致。 起草雲端治理設計指南可讓您根據為[五個治理專業領域](../governance-disciplines.md)所產生的原則聲明，指定特定的結構化、技術和流程選擇。
 
 雲端治理設計指南應該為最符合您原則需求之雲端部署的每個核心基礎結構元件，建立架構選擇和設計模式。 除此之外，您應該提供將會支援每個設計決策之技術、工具和流程的高階說明。
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430358"
 ---
 <!-- cSpell:ignore jenhayes -->
@@ -31,7 +31,7 @@ ms.locfileid: "80430358"
 
 例如，假設您的組織有一個租使用者*a*。然後，組織會取得兩個額外的*租使用者 B*和租使用者*C*，而且您有商業理由要求您將其維護為個別的租使用者。
 
-貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有負責在租使用者 A 中執行這些工作的使用者（包括使用者群組和服務主體），所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的這些訂用帳戶可以執行這些作業任務. 然後，租使用者 A 會成為租使用者 B 和租使用者 C 的管理租使用者。
+貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有負責在租使用者 A 中執行這些工作的使用者（包括使用者群組和服務主體），所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的這些訂用帳戶可以執行這些作業。 然後，租使用者 A 會成為租使用者 B 和租使用者 C 的管理租使用者。
 
 ![租用戶 A 中的使用者管理租用戶 B 和租用戶 C 中的資源](../_images/manage/enterprise-azure-lighthouse.jpg)
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80427493"
 ---
 # <a name="develop-digital-inventions"></a>開發數位發明
@@ -26,7 +26,7 @@ ms.locfileid: "80427493"
 
 - **[將大眾化資料](./data.md)：** 藉由將資料交給客戶、合作夥伴和員工，您可以鼓勵創新的觀察。 內嵌、集中、管理及共用資料。
 - **[參與應用程式](./apps.md)：** 人們透過應用程式與經驗與知識連接。 讓專業和公民開發人員能夠快速建立應用程式。
-- 強化 **[採用](./ci-cd.md)：** 藉由減少採用與合作關係的摩擦，鼓勵創新。 可見度、共同作業、速度和意見反應迴圈的架構設計人員。
+- 強化**[採用](./ci-cd.md)：** 藉由減少採用與合作關係的摩擦，鼓勵創新。 可見度、共同作業、速度和意見反應迴圈的架構設計人員。
 - **[與裝置互動](./devices.md)：** 數位和實體線條在多個頻道之間會模糊。 提供跨裝置、IoT 和混合現實的體驗。
 - **[預測和影響](./predict.md)：** 尋找潛在客戶創新的未來。 查看過去的資料，透過預測性工具來通知體驗和互動。
 

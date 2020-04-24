@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 117f8bebd157069703add28348667abe88ddf96e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432423"
 ---
 # <a name="business-change-plan"></a>業務變更方案
@@ -26,7 +26,7 @@ ms.locfileid: "80432423"
 
 ![使用者採用顧慮的 Eason 矩陣](../../../_images/migrate/eason-matrix.jpg)
 
-使用者採用類型的 Eason 矩陣。
+使用者採用類型的 Eason 矩陣。**
 
 這些主題通常會以「引進新解決方案給使用者應主要著重於變更的風險控制和促進上」的假設作為基礎。 此外，IT 主要著重於技術變更的風險和該變更的促進上。
 

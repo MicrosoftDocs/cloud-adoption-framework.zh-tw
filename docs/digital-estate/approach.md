@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
 ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431027"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
@@ -36,7 +36,7 @@ ms.locfileid: "80431027"
 
 以資產為導向的方法會根據支援應用程式進行遷移的資產，提供一個方案。 在此方法中，您會從設定管理資料庫（CMDB）或其他基礎結構評估工具提取統計使用量資料。
 
-此方法通常會採用部署的 IaaS 模型作為基準。 在此程式中，分析會評估每個資產的屬性：記憶體、處理器數目（CPU 核心）、作業系統儲存空間、資料磁片磁碟機、網路介面卡（Nic）、IPv6、網路負載平衡、叢集、作業系統版本、資料庫版本（如有必要）、支援的網域，以及協力廠商元件或軟體套件，還有其他專案。 您以這種方式清查的資產，接著會與用於分組和相依性對應的工作負載或應用程式一致。
+此方法通常會採用部署的 IaaS 模型作為基準。 在此程式中，分析會評估每個資產的屬性：記憶體、處理器數目（CPU 核心）、作業系統儲存空間、資料磁片磁碟機、網路介面卡（Nic）、IPv6、網路負載平衡、叢集、作業系統版本、資料庫版本（如有必要）、支援的網域，以及協力廠商元件或軟體套件，還有其他。 您以這種方式清查的資產，接著會與用於分組和相依性對應的工作負載或應用程式一致。
 
 > [!TIP]
 > 使用此方法時，統計的使用情形資料來源必須要足夠。 掃描清查和收集資料所需的時間，是最大的時機風險。 低層級的資料來源可能會失去與資產或應用程式間的相依性。 請規劃至少一個月清查掃描時間。 部署之前請先驗證相依性。

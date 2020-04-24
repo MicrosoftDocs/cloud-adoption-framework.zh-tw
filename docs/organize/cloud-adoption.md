@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 3169fd430ad24526557bb80163c16eff814c618f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428643"
 ---
 # <a name="cloud-adoption-capabilities"></a>雲端採用功能
@@ -37,7 +37,7 @@ ms.locfileid: "80428643"
 
 ## <a name="key-responsibilities"></a>主要責任
 
-任何雲端採用功能的主要需求，都是採用計畫中所述之技術解決方案的及時、高品質的執行，並配合治理需求和商務成果，利用技術、工具和自動化解決方案可供小組使用。
+任何雲端採用功能的主要需求，都是採用計畫中所述之技術解決方案的及時、高品質的執行，以配合治理需求和商務成果，利用可供小組使用的技術、工具和自動化解決方案。
 
 **初期規劃工作：**
 

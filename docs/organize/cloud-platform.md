@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 2dc5503c7c24263bf74c4708ffe5e1dca0b8b97b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428524"
 ---
 # <a name="cloud-platform-capabilities"></a>雲端平臺功能
@@ -30,7 +30,7 @@ ms.locfileid: "80428524"
 - IT 治理
 - IT 基礎結構
 - 網路功能
-- 相同比較
+- 身分識別
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者
@@ -43,7 +43,7 @@ ms.locfileid: "80428524"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱：
+- 檢閱
   - [商務結果](../strategy/business-outcomes/index.md)
   - [財務模型](../strategy/financial-models.md)
   - [雲端採用的動機](../strategy/motivations.md)

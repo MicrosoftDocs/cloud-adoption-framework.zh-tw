@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2dd8bd0ff7c991fd2141a3bfa44581e5c3e4af42
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: bb95c03b392017fb866fdfe929fffc317e4e67b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434115"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809109"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
@@ -27,7 +27,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 > [!NOTE]
 > 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新支援的原則，並評估其是否有用。
 
-<!-- TODO: Update these links when available. 
+<!-- TODOBACKLOG: Update these links when available. 
 
 By default, we recommend that you enable the following policies:
 

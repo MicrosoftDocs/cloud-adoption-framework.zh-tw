@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 489f15b3ceda87c57f244c4ed597c4b5f05d11e9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426027"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120108"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
@@ -46,13 +46,13 @@ ms.locfileid: "80426027"
 - 定義資料分類結構描述。
 - 進行數位資產規劃程序以清查涉及您商務程序並支持營運的目前 IT 資產。
 - 進行[原則檢閱](../../govern/policy-compliance/cloud-policy-review.md)以開始將現有的公司 IT 安全性原則現代化並定義 MVP 原則以因應已知風險。
-- 檢閱您雲端平台的安全性指導方針。 針對 Azure，您可以在 [Microsoft 服務信任平台](https://www.microsoft.com/trustcenter/stp/default.aspx)中找到相關資訊。
-- 判斷您的安全性基準原則是否包括[安全性開發生命週期](https://www.microsoft.com/securityengineering/sdl)。
+- 檢閱您雲端平台的安全性指導方針。 針對 Azure，您可以在 [Microsoft 服務信任平台](https://servicetrust.microsoft.com)中找到相關資訊。
+- 判斷您的安全性基準原則是否包括[安全性開發生命週期](https://www.microsoft.com/en-us/securityengineering/sdl)。
 - 根據接下來的一到三個版本評估網路、資料與資產相關商務風險，並判定您組織對那些風險的容忍度。
 - 檢閱 Microsoft 的[熱門網路安全趨勢](https://www.microsoft.com/security/operations/security-intelligence-report) \(英文\) 報告以取得目前安全性趨勢概觀。
 - 考慮在您的組織中開發[安全性 DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) 角色。
 
-<!-- "en-us" location is required for the URL above. -->
+<!-- "en-us" location is required for the URLs above. -->
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
@@ -118,6 +118,6 @@ ms.locfileid: "80426027"
 現在您已了解雲端安全性治理的概念，請繼續深入了解 [Microsoft 為 Azure 提供哪些安全性與最佳做法](./azure-security-guidance.md)。
 
 > [!div class="nextstepaction"]
-> 瞭解 Azure
-> [簡介 azure 安全性](https://docs.microsoft.com/azure/security/azure-security)[的安全性指引](./azure-security-guidance.md)
-> [瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)
+> [瞭解 azure](./azure-security-guidance.md)
+> 的安全性指引 azure[安全性](https://docs.microsoft.com/azure/security/fundamentals/overview)
+> 簡介[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

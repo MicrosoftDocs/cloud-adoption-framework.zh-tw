@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: afaedb0607ecf4b1195578dc72e756616c6384d4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425503"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
@@ -35,7 +35,7 @@ ms.locfileid: "80425503"
 當您使用 Azure 資料庫移轉服務來進行資料的遷移和現代化時，請務必瞭解：
 
 - 目前用來裝載資料來源的平臺。
-- 目前的版本。
+- 目前版本。
 - 未來最能支援客戶假設或目標的平臺和版本。
 
 下表顯示與遷移小組一起審查的來源和目標配對。 每一組都包含工具選擇和相關指南的連結。

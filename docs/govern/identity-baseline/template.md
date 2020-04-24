@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: a5fb50a35c064ca72a04301122b0799a5d09999e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429873"
 ---
 # <a name="identity-baseline-template"></a>身分識別基準範本

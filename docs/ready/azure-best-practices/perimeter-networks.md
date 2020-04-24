@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: d5e906caf5f0b9c2c241520a96311c48df565234
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 802660021dd9ae3a861b51ae4dee6e14b9671ef2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433242"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120182"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -28,24 +28,24 @@ ms.locfileid: "80433242"
 周邊網路會利用下列 Azure 功能和服務：
 
 - [虛擬網路][virtual-networks]、[使用者定義的路由][user-defined-routes]和[網路安全性群組][network-security-groups]
-- [網路虛擬裝置（Nva）][NVA]
-- [Azure 負載平衡器][ALB]
-- [Azure 應用程式閘道][AppGW]和[web 應用程式防火牆（WAF）][AppGWWAF]
+- [網路虛擬裝置（Nva）][network-virtual-appliances]
+- [Azure Load Balancer][ALB]
+- [Azure 應用程式閘道][AppGW]和 [Web 應用程式防火牆 (WAF)][AppGWWAF]
 - [公用 IP][PIP]
-- 使用 [Web 應用程式防火牆][AFD]的 [Azure Front Door][AFDWAF]
-- [Azure 防火牆][AzFW]
+- 使用 [Web 應用程式防火牆][AFDWAF]的 [Azure Front Door][AFD]
+- [Azure 防火牆][azure-firewall]
 
 > [!NOTE]
 > Azure 參考架構提供範例範本，可讓您用來實作您自己的周邊網路：
 >
-> - [實作 Azure 與內部部署資料中心之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [在 Azure 與您的內部部署資料中心之間執行 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
 
 ![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來擴大，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
+上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以使用多個 WAF 的伺服器陣列和 Azure 防火牆執行個體來相應增加，以支援許多企業營運 (Lob)，協助保護支點虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
 
 ## <a name="virtual-networks"></a>虛擬網路
 
@@ -59,7 +59,7 @@ ms.locfileid: "80433242"
 
 ## <a name="azure-firewall"></a>Azure 防火牆
 
-[Azure 防火牆][AzFW]是受控雲端式服務，可協助保護您的 Azure 虛擬網路資源。 它是完全具狀態的受控防火牆，具備內建的高可用性和不受限制的雲端擴充性。 您可以橫跨訂用帳戶和虛擬網路集中建立、強制執行以及記錄應用程式和網路連線原則。
+[Azure 防火牆][azure-firewall]是受控雲端式服務，可協助保護您的 Azure 虛擬網路資源。 它是完全具狀態的受控防火牆，具備內建的高可用性和不受限制的雲端擴充性。 您可以橫跨訂用帳戶和虛擬網路集中建立、強制執行以及記錄應用程式和網路連線原則。
 
 Azure 防火牆會為您的虛擬網路資源提供靜態公用 IP 位址。 這可讓外部防火牆識別來自您虛擬網路的流量。 服務會與 Azure 監視器互通以進行記錄和分析。
 
@@ -69,13 +69,13 @@ Azure 防火牆會為您的虛擬網路資源提供靜態公用 IP 位址。 這
 
 不同的 LOB 通常會使用許多 Web 應用程式。 這些應用程式通常很容易受到各種弱點和潛在攻擊的影響。 Web 應用程式防火牆會偵測對 Web 應用程式 (HTTP/HTTPS) 的攻擊，比一般防火牆更深入。 與傳統防火牆技術相較之下，Web 應用程式防火牆具有一組特定功能，可協助保護內部網頁伺服器免於威脅。
 
-Azure 防火牆執行個體和[網路虛擬設備][NVA]防火牆使用一般的系統管理平面，其中包含一組安全性規則，可協助保護支點中所裝載的工作負載，並控制對內部部署網路的存取。 Azure 防火牆具有內建的擴充性，而 NVA 防火牆可以在負載平衡器後方手動調整。
+Azure 防火牆實例和 [網路虛擬裝置] [NVA] 防火牆使用一般的系統管理平面，其中包含一組安全性規則，可協助保護輪輻中所裝載的工作負載，以及控制對內部部署網路的存取。 Azure 防火牆具有內建的擴充性，而 NVA 防火牆可以在負載平衡器後方手動調整。
 
 相較於 WAF，防火牆伺服器陣列的特殊軟體通常比較少，但它有更廣泛的應用程式範圍，可篩選和檢查輸出和輸入中的任何類型流量。 如果您使用 NVA 方法，可以從 Azure Marketplace 尋找並部署軟體。
 
 針對源自網際網路的流量使用一組 Azure 防火牆執行個體 (或 NVA)，針對源自內部部署的流量使用另一組。 對兩者僅使用一組防火牆會造成安全性風險，因為這並未提供兩組網路流量之間的安全性周邊。 使用個別的防火牆層級可降低檢查安全性規則的複雜度，並明確指出哪些規則對應到哪個傳入網路要求。
 
-## <a name="azure-load-balancer"></a>Azure 負載平衡器
+## <a name="azure-load-balancer"></a>Azure Load Balancer
 
 [Azure Load Balancer][ALB] 提供高可用性層級 4 (TCP、UDP) 服務，可將連入流量分散到負載平衡組中所定義的服務執行個體。 從前端端點 (公用 IP 端點或私人 IP 端點) 傳送到負載平衡器的流量，不論是否有位址轉譯，都可以轉散發至後端 IP 位址集區 (例如 NVA 或 VM)。
 
@@ -85,11 +85,11 @@ Azure Load Balancer 也可以探查各種伺服器執行個體的健全狀況。
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-[Azure Front Door Service][AFD] 是 Microsoft 的高可用性和可擴充 Web 應用程式加速平台和全域 HTTPS 負載平衡器。 您可以使用 Azure Front Door Service 來建置、操作及擴增您的動態 Web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
+[Azure Front Door Service][AFD] 是 Microsoft 的高可用性和可擴充 Web 應用程式加速平台和全域 HTTPS 負載平衡器。 您可以使用 Azure Front Door Service 來建置、操作及相應放大您的動態 Web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
 
 Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護自動化、BCDR 自動化、統一的用戶端/使用者資訊、快取和服務見解。 平台提供效能、可靠性和支援 SLA。 它也提供合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
 
-## <a name="application-gateway"></a>應用程式閘道
+## <a name="application-gateway"></a>應用計畫閘道
 
 [Azure 應用程式閘道][AppGW]是專用的虛擬設備，可提供受控應用程式傳遞控制器 (ADC)。 它會為您的應用程式提供各種第 7 層負載平衡功能。
 
@@ -114,8 +114,8 @@ Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[network-virtual-appliances]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: https://docs.microsoft.com/azure/firewall/overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview

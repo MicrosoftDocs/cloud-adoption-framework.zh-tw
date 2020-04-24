@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434441"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
@@ -87,7 +87,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
     2. 將每個 Active Directory 範本和原則新增至藍圖。
     3. 將藍圖發行至任何適用的管理群組中。
     4. 將藍圖套用至任何需要舊版或協力廠商多重要素驗證的訂用帳戶。
-    5. 在 Azure 中執行的 Active Directory 實例現在可以做為內部部署 Active Directory 解決方案的延伸模組，讓它能夠與現有的多因素驗證工具整合，並提供宣告式驗證，兩者都是透過現有的 Active Directory 功能。
+    5. 在 Azure 中執行的 Active Directory 實例現在可以做為內部部署 Active Directory 解決方案的延伸模組，讓它能夠與現有的多因素驗證工具整合，並透過現有的 Active Directory 功能提供宣告式驗證。
 
 ## <a name="conclusion"></a>結論
 

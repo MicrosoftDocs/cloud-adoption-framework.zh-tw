@@ -8,18 +8,18 @@
 ### <a name="identity-baseline"></a>身分識別基準
 
 身分識別基準是所有治理工作的基本起始點。 嘗試施行治理之前，必須先建立身分識別。 已建立的身分識別策略隨後將會由治理解決方案強制執行。
-在此治理指南中，身分識別管理小組會實行 **[目錄同步](~/decision-guides/identity/index.md#directory-synchronization)** 處理模式：
+在此治理指南中，身分識別管理小組會實行**[目錄同步](~/decision-guides/identity/index.md#directory-synchronization)** 處理模式：
 
 - RBAC 將由 Azure Active Directory （Azure AD）提供，使用目錄同步作業或在公司遷移至 Office 365 期間所實行的「相同登入」。 如需實作指引，請參閱 [Azure AD 整合的參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。
 - Azure AD 租用戶也會對部署至 Azure 的資產進行驗證和存取的控管。
 
-在治理 MVP 中，治理小組會透過訂用帳戶治理工具強制執行已複寫租使用者的應用程式，本文稍後將討論此功能。 在未來的反復專案中，治理小組也可以在 Azure AD 中強制執行豐富的工具，以擴充這項功能。
+在治理 MVP 中，治理小組將透過訂用帳戶治理工具強制執行已複寫租用戶的應用程式，如本文稍後所說明。 在未來的反復專案中，治理小組也可以在 Azure AD 中強制執行豐富的工具，以擴充這項功能。
 
 ### <a name="security-baseline-networking"></a>安全性基準：網路功能
 
 軟體定義網路是安全性基準的重要初始層面。 要建立治理 MVP，有賴安全性管理小組擬定早期決策，以定義安全設定網路的方式。
 
-由於缺乏需求，IT 安全性會安全地扮演它，而且需要 **[雲端 DMZ](~/decision-guides/software-defined-network/cloud-dmz.md)** 模式。 這表示 Azure 部署本身的治理只會略為介入。
+由於缺乏需求，IT 安全性會安全地扮演它，而且需要**[雲端 DMZ](~/decision-guides/software-defined-network/cloud-dmz.md)** 模式。 這表示 Azure 部署本身的治理只會略為介入。
 
 - Azure 訂用帳戶可以透過 VPN 連線到現有的資料中心，但必須遵循所有現有的內部部署 IT 治理原則，與不受保護的資源連線相關。 如需關於 VPN 連線的實作指引，請參閱 [VPN 參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)。
 - 有關於子網路、防火牆和路由的決策，目前均留待每個應用程式/工作負載的潛在客戶決定。
@@ -32,14 +32,14 @@
 ### <a name="security-baseline-encryption"></a>安全性基準：加密
 
 加密是安全性基準專業領域中的另一項基本決策。 由於公司目前尚未儲存任何受保護的資料在雲端中，安全性小組已決定採用主動性較低的加密模式。
-此時，建議使用 **[雲端原生模式進行加密](~/decision-guides/encryption/index.md#key-management)** ，但不需要任何開發小組。
+此時，建議使用**[雲端原生模式進行加密](~/decision-guides/encryption/index.md#key-management)**，但不需要任何開發小組。
 
 - 目前並未設定關於使用加密的治理需求，因為現行的公司原則並不允許將任務關鍵性或受保護的資料放在雲端中。
 - 發行任何受保護的資料或任務關鍵性工作負載之前，需要進行額外的分析。
 
 ## <a name="policy-enforcement"></a>強制執行原則
 
-在「部署加速」方面的首要決策，是強制執行的模式。 在此敘述中，治理小組決定要執行 **[自動化強制](~/decision-guides/policy-enforcement/index.md#automated-enforcement)** 模式。
+在「部署加速」方面的首要決策，是強制執行的模式。 在此敘述中，治理小組決定要執行**[自動化強制](~/decision-guides/policy-enforcement/index.md#automated-enforcement)** 模式。
 
 - Azure 資訊安全中心將可供安全性和身分識別小組用來監視安全性風險。 這兩個小組也可能使用資訊安全中心來識別新的風險，並改善公司原則。
 - 所有訂用帳戶中都需要 RBAC，以控管驗證的強制執行。

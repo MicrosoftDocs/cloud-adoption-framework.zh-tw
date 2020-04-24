@@ -10,10 +10,10 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77706603"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>改善您的初始雲端治理基礎
@@ -33,8 +33,8 @@ ms.locfileid: "77706603"
 |雲端中的任務關鍵性應用程式|[專業領域改進](./guides/standard/resource-consistency-improvement.md)|[專業領域改進](./guides/complex/resource-consistency-improvement.md)|
 |雲端成本管理|[專業領域改進](./guides/standard/cost-management-improvement.md)|[專業領域改進](./guides/complex/cost-management-improvement.md)|
 |多重雲端|[專業領域改進](./guides/standard/multicloud-improvement.md)|[專業領域改進](./guides/complex/multicloud-improvement.md)|
-|複雜/舊版身分識別管理|N/A|[專業領域改進](./guides/complex/identity-baseline-improvement.md)|
-|多層控管|N/A|[專業領域改進](./guides/complex/multiple-layers-of-governance.md)|
+|複雜/舊版身分識別管理|不適用|[專業領域改進](./guides/complex/identity-baseline-improvement.md)|
+|多層控管|不適用|[專業領域改進](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3d879119e84bb2beebacce7a8086f2e356132bc2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 465f1771232f8df7226773fb8055052a846cacca
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433230"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997953"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶來調整您的 Azure 環境
 
@@ -26,7 +26,7 @@ ms.locfileid: "80433230"
 
 ## <a name="technical-considerations"></a>技術考量
 
-**訂用帳戶限制：** 訂閱已定義某些資源類型的限制。 例如，訂用帳戶中的虛擬網路數目會受限。 當訂用帳戶接近這些限制時，您將需要建立另一個訂用帳戶，並在該處放入其他資源。 如需詳細資訊，請參閱[Azure 訂用帳戶和服務限制](https://docs.microsoft.com/azure/azure-subscription-service-limits#general-limits)。
+**訂用帳戶限制：** 訂閱已定義某些資源類型的限制。 例如，訂用帳戶中的虛擬網路數目會受限。 當訂用帳戶接近這些限制時，您將需要建立另一個訂用帳戶，並在該處放入其他資源。 如需詳細資訊，請參閱[Azure 訂用帳戶和服務限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits)。
 
 **傳統模型資源：** 如果您已使用 Azure 一段很長的時間，您可能會有使用傳統部署模型建立的資源。 Azure 原則、角色型存取控制、資源群組和標記無法套用至傳統模型資源。 您應該將這些資源移入僅包含傳統模型資源的訂用帳戶。
 
@@ -36,9 +36,9 @@ ms.locfileid: "80433230"
 
 您的業務優先順序可能會導致您建立其他訂用帳戶。 這些優先順序包括：
 
-- 推出
+- 創新
 - 移轉
-- Cost
+- 成本
 - 作業
 - 安全性
 - 控管
@@ -47,7 +47,7 @@ ms.locfileid: "80433230"
 
 ## <a name="moving-resources-between-subscriptions"></a>在訂用帳戶之間移動資源
 
-當您的訂用帳戶模型成長時，您可能會決定某些資源屬於其他訂閱。 可以在訂用帳戶之間移動許多類型的資源。 您也可以使用自動化部署來重新建立另一個訂用帳戶中的資源。 如需詳細資訊，請參閱[將 Azure 資源移至另一個資源群組戶或訂用帳](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
+當您的訂用帳戶模型成長時，您可能會決定某些資源屬於其他訂閱。 可以在訂用帳戶之間移動許多類型的資源。 您也可以使用自動化部署來重新建立另一個訂用帳戶中的資源。 如需詳細資訊，請參閱[將 Azure 資源移至另一個資源群組戶或訂用帳](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)。
 
 ## <a name="tips-for-creating-new-subscriptions"></a>建立新訂用帳戶的秘訣
 

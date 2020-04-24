@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b30cac2fb4ba372c7fd11f8528ecac4c0f3e84c3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433046"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646812"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -30,7 +30,7 @@ Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導�
 
 在這種檢閱中，CISO 必須負責在現有原則/合規性的限制，以及雲端提供者較為優異的安全性狀態之間，取得安全的平衡性。 此程序的測量可以透過許多形式達成，並通常會以可安全地卸載到雲端提供者的安全性原則數目來測量。
 
-**傳輸安全性風險：** 當服務移至基礎結構即服務（IaaS）裝載模型時，企業會針對硬體布建承擔較不直接的風險。 但此風險並沒有就此消失，而是被轉換到雲端廠商身上。 若雲端廠商的硬體布建方法提供相同層級的風險降低，在安全的可重複程式中，硬體布建執行的風險就會從公司 IT 的責任領域移除並轉移至雲端那裡. 這可減少公司 IT 負責管理的整體安全性風險，雖然風險本身仍應定期追蹤和審核。
+**傳輸安全性風險：** 當服務移至基礎結構即服務（IaaS）裝載模型時，企業會針對硬體布建承擔較不直接的風險。 但此風險並沒有就此消失，而是被轉換到雲端廠商身上。 如果雲端廠商的硬體布建方法提供相同層級的風險降低，在安全的可重複程式中，硬體布建執行的風險就會從公司 IT 的責任領域移除，並轉移給雲端提供者。 這可減少公司 IT 負責管理的整體安全性風險，雖然風險本身仍應定期追蹤和審核。
 
 當解決方案進一步「向上堆疊」以併入平臺即服務（PaaS）或軟體即服務（SaaS）模型時，可以避免或轉移額外的風險。 當風險被安全地移到雲端提供者時，執行、監視及強制執行安全性原則或其他合規性原則的成本也都能安全地降低。
 
@@ -40,36 +40,35 @@ Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導�
 
 對於雲端的認識，是抱持成長心態進行[原則檢閱](./cloud-policy-review.md)最重要的關鍵。 下列資源可協助 CISO 更加了解 Microsoft Azure 平台的安全性狀態。
 
-安全性平台資源：
+**安全性平台資源：**
 
 - [安全性開發週期，內部審核](https://www.microsoft.com/sdl)
-- [必要的安全性訓練、背景檢查](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx) \(英文\)
-- [滲透測試、入侵偵測、DDoS、稽核和記錄](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging) \(英文\)
+- [必要的安全性訓練、背景檢查](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
+- [滲透測試、入侵偵測、DDoS、稽核和記錄](https://www.microsoft.com/security/business/operations) \(英文\)
 - [尖端的資料中心](https://www.microsoft.com/cloud-platform/global-datacenters)、實體安全性、[安全網路](https://docs.microsoft.com/azure/security/security-network-overview)
-- [雲端的 Microsoft Azure 安全性回應](https://aka.ms/SecurityResponsePaper) \(英文\)
+- [雲端的 Microsoft Azure 安全性回應](https://aka.ms/securityresponsepaper) \(英文\)
 
-隱私權與控制：
+**隱私權與控制：**
 
-- [隨時管理您的資料 (英文)](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
-- [資料位置控制 (英文)](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
-- [根據您的條款提供資料存取 (英文)](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [回應執法機關 (英文)](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
-- [嚴格的隱私權標準 (英文)](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
+- [隨時管理您的資料 (英文)](https://www.microsoft.com/trust-center/privacy/data-management)
+- [資料位置控制 (英文)](https://www.microsoft.com/trust-center/privacy/data-location)
+- [根據您的條款提供資料存取 (英文)](https://www.microsoft.com/trust-center/privacy/data-access)
+- [回應執法機關 (英文)](https://www.microsoft.com/trust-center/privacy)
+- [嚴格的隱私權標準 (英文)](https://www.microsoft.com/trust-center/privacy)
 
-規範：
+**實現**
 
-- [Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)
-- [通用控制項中樞](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
-- [雲端服務的因應的審慎檢查清單](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
-- [依服務、位置和產業的合規性](https://www.microsoft.com/trustcenter/Compliance/default.aspx) \(英文\)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center)
+- [通用控制項中樞](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [雲端服務的因應的審慎檢查清單](https://www.microsoft.com/trust-center/compliance/due-diligence-checklist)
+- [地區和國家/地區合規性](https://www.microsoft.com/trust-center/compliance/regional-country-compliance)
 
-透明度：
+**無關**
 
-- [Microsoft 如何保護 Azure 服務中的客戶資料 (英文)](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
+- [Microsoft 如何保護 Azure 服務中的客戶資料 (英文)](https://www.microsoft.com/trust-center)
 - [Microsoft 如何管理 Azure 服務中的資料位置](https://azuredatacentermap.azurewebsites.net) \(英文\)
-- [Microsoft 內部的哪些人員可根據哪些條款存取您的資料 (英文)](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Microsoft 如何保護 Azure 服務中的客戶資料 (英文)](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
-- [檢閱 Azure 服務的憑證、透明度中樞](https://www.microsoft.com/trustcenter/Compliance/default.aspx) \(英文\)
+- [Microsoft 內部的哪些人員可根據哪些條款存取您的資料 (英文)](https://www.microsoft.com/trust-center/privacy/data-access)
+- [審查 Azure 服務、透明度中樞的認證](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="next-steps"></a>後續步驟
 

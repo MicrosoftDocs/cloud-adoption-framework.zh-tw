@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48da6b708644030a2efc20dc0764bcb1b40ffe25
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527601"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995228"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,7 +72,7 @@ ms.locfileid: "80527601"
 - 請考量使用下列存取模型：
   - [最低許可權存取](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)模型。
   - 特殊[許可權身分識別基準](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)存取模型。
-- 完成所有 preintegration 的詳細資料，並查看身分[識別最佳作法](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)。
+- 完成所有 preintegration 的詳細資料，並查看身分[識別最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)。
   - 啟用單一身分識別、單一登入（SSO）或無縫 SSO。
   - 為系統管理員設定多重要素驗證。
   - 視需要合併或整合身分識別提供者。

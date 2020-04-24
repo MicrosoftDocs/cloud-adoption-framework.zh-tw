@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527669"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
@@ -40,7 +40,7 @@ ms.locfileid: "80527669"
 
 在廣泛採用雲端之前，依賴資訊技術的家發明週期是費力又費時的。 採購和布建週期常常會延遲重要的第一步，直到有新的解決方案。 DevOps 解決方案和意見反應的成本會迴圈延遲小組在初期階段概念發想到和家發明共同作業的能力。 與開發人員環境和資料平臺相關的成本可防止任何人（但高度訓練的專業開發人員）參與建立新的解決方案。
 
-雲端藉由提供自助式自動化布建、輕量開發和部署工具，以及讓專業開發人員和公民開發人員合作建立快速的機會，克服了許多家發明的挑戰適用. 使用雲端進行創新，可大幅降低客戶的挑戰，並阻礙創新方的家發明端。
+雲端藉由提供自助式自動化布建、輕量開發和部署工具，以及讓專業開發人員和公民開發人員合作建立快速解決方案的機會，克服了許多家發明挑戰。 使用雲端進行創新，可大幅降低客戶的挑戰，並阻礙創新方的家發明端。
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>家發明數位經濟的挑戰
 
@@ -61,4 +61,4 @@ ms.locfileid: "80527669"
 根據有關組建-測量-學習模型和成長思維的知識，您現在已經準備好在[創新方法](./index.md)內[開發數位開始創造發明](./invention.md)。
 
 > [!div class="nextstepaction"]
-> [開發數位開始創造發明](./invention.md)
+> [開發數位發明](./invention.md)

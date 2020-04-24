@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 63d882aefab6488b05e7f0aec506c2e371d9464e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431311"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996231"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 
@@ -39,8 +39,8 @@ DMZ 會部署網路虛擬裝置 (NVA) 以實作防火牆和封包檢查等安全
 - 將內部部署網路與雲端網路連線，會使安全性需求變得更複雜。 雖然雲端網路與內部部署環境之間的連線會受到保護，但您仍然需要確保雲端資源受到保護。 任何為了存取雲端式工作負載所建立的公用 Ip，都必須使用[公開的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)或[Azure 防火牆](https://docs.microsoft.com/azure/firewall)來妥善保護。
 - 雲端 DMZ 架構常作為跳板，當內部部署與雲端網路之間的連線進一步受到保護且安全性原則一致時，讓您能更廣泛採用完整的混合式網路功能架構。 不過，它也適用于隔離的部署，其具有雲端 DMZ 方法滿足的特定安全性、身分識別和連線需求。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 如需在 Azure 中執行雲端 DMZ 的詳細資訊，請參閱：
 
-- [實作 Azure 與內部部署資料中心之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)。 本文討論如何在 Azure 中實作安全的混合式網路架構。
+- [實作 Azure 與內部部署資料中心之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。 本文討論如何在 Azure 中實作安全的混合式網路架構。

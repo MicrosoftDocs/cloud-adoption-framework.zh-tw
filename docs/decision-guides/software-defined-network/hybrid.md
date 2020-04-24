@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
 ms.openlocfilehash: 6ccc459f1d708964afdc7c25cefdf314c44a6e02
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433131"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>軟體定義網路：混合式網路
@@ -33,7 +33,7 @@ ms.locfileid: "80433131"
 - 您的雲端型工作負載需要存取儲存體、應用程式和您的內部部署或第三方網路上裝載的服務，或您的使用者或您內部部署中的應用程式需要存取雲端裝載資源。
 - 您需要遷移現有的應用程式和服務 (相依於內部部署資源)，但不想要耗費資源重新開發來移除這些相依性。
 - 公司原則、資料主權需求或其他法規合規性問題不會防止您透過 VPN 或專用 WAN 將內部部署網路連接到雲端資源。
-- 您的工作負載不需要多個訂用帳戶就能略過訂用帳戶資源限制，或者您的工作負載牽涉到多個訂用帳戶，但不需要集中管理的連線能力，或散佈于的資源之間多個訂用帳戶。
+- 您的工作負載不需要多個訂用帳戶就能略過訂用帳戶資源限制，或者您的工作負載牽涉到多個訂用帳戶，但不需要集中管理連線能力，或散佈于多個訂用帳戶的資源
 
 當您想要執行混合式虛擬網路架構時，您的雲端採用小組應該考慮下列問題：
 
@@ -41,7 +41,7 @@ ms.locfileid: "80433131"
 - 調整混合式雲端環境內工作負載的數量和大小，可以對路由和流量管理增加大幅複雜性。
 - 您必須開發相容的管理和存取控制原則，以維護整個組織一致的治理。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 如需 Azure 中混合式網路功能的詳細資訊，請參閱：
 

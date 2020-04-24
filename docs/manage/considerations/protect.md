@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527576"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
@@ -75,5 +75,5 @@ IT 環境中的大部分工作負載都支援特定的商務或技術程式。 �
 符合此管理基準元件之後，小組可以仔細查看，以避免[平臺作業](./platform.md)和[工作負載作業](./workload.md)中斷。
 
 > [!div class="nextstepaction"]
-> 
-> [工作負載作業](./workload.md)的[平臺作業](./platform.md)
+> [平臺作業](./platform.md)
+> [工作負載作業](./workload.md)

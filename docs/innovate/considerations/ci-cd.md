@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c29eedc234d3795ce0bad76b324e7049dfe15633
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433346"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120564"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "80433346"
 - [解決方案部署](#solution-deployment)：部署解決方案，讓小組可以快速地與客戶共用變更。
 - [整合式測量](#integrated-measurements)：將學習計量新增至意見反應迴圈，以供完整小組進行清除分析。
 
-為了將技術尖峰降到最低，假設每個原則一開始都有較低的成熟度。 但最好的方式是配合可隨著假設調整的工具和程式，更精細地進行規劃。 在 Azure 中， [GitHub](https://guides.github.com)和[Azure DevOps](https://docs.microsoft.com/azure/devops)可讓小型團隊開始進行少許困惑。 這些小組可能會成長，包括數千名開發人員，共同處理規模解決方案並測試上百個客戶假設。 本文的其餘部分將說明如何針對每個原則採用「大規模」的方案。
+為了將技術尖峰降到最低，假設每個原則一開始都有較低的成熟度。 但最好的方式是配合可隨著假設調整的工具和程式，更精細地進行規劃。 在 Azure 中， [GitHub](https://guides.github.com)和[Azure DevOps](https://docs.microsoft.com/azure/devops)可讓小型團隊開始進行少許困惑。 這些小組可能會成長，包括數千名開發人員，共同處理規模解決方案並測試上百個客戶假設。 本文的其餘部分將說明「計畫大、開始小型」的方法，讓您能夠在每個準則中採用。
 
 ## <a name="shared-solution"></a>共用解決方案
 

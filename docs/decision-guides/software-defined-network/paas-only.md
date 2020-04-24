@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
 ms.openlocfilehash: 5180a6b3ee725e745395cb5013be9fe026dad72c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431190"
 ---
 # <a name="software-defined-networking-paas-only"></a>軟體定義網路：僅限 PaaS

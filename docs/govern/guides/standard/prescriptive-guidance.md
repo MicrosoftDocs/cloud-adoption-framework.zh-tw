@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4c39ddfed1a96cc6ee8433ceab1a00622a319986
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434237"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995234"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 
@@ -58,9 +58,9 @@ ms.locfileid: "80434237"
 
 ### <a name="resource-consistency"></a>資源一致性
 
-資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇 **[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
+資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇**[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
 
-- 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需資源群組的詳細資訊，請參閱[這裡](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
+- 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
 - 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
@@ -72,11 +72,11 @@ ms.locfileid: "80434237"
 
 ### <a name="resource-tagging"></a>資源標記
 
-資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇 **[分類](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
+資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇**[分類](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
 
 - 已部署的資產應標記為：
   - 資料分類
-  - 程度
+  - 重要性
   - SLA
   - 環境
 - 這四個值會促成治理、作業和安全性決策。

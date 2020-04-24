@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: d59f2d92f6777cd3210de715eb0de217fe9abce8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432925"
 ---
 <!-- cSpell:ignore architected ITIL -->
@@ -69,7 +69,7 @@ CAB 通常包含來自多個 IT 和業務小組的專家，可為所有 IT 相�
 
 ## <a name="next-steps"></a>後續步驟
 
-在這些最佳做法的協助下，您可更輕鬆地將適當的低風險核准整合到移轉工作中。 核准工作負載變更之後，雲端採用小組便準備好[遷移工作負載](../migrate/index.md)。
+在這些最佳做法的協助下，您可更輕鬆地將適當的低風險核准整合到移轉工作中。 核准工作負載變更之後，雲端採用小組就準備好[遷移工作負載](../migrate/index.md)。
 
 > [!div class="nextstepaction"]
 > [遷移工作負載](../migrate/index.md)

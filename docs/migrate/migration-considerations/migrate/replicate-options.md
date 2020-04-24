@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 584ac5e962c9432e6a1824b3cbb88ff7cb24a35f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432532"
 ---
 # <a name="replication-options"></a>複寫選項
@@ -25,7 +25,7 @@ ms.locfileid: "80432532"
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) 可協調和管理 Azure VM、內部部署 VM 和實體伺服器的災害復原。 您也可以使用 Site Recovery 來管理將電腦內部部署和其他雲端提供者遷移至 Azure 的作業。 您會將內部部署機器複寫至 Azure，或將 Azure VM 複寫至次要地區。 然後，將 VM 從主要站台容錯移轉至次要站台，並完成移轉流程。 透過 Azure Site Recovery，您即可達成各種移轉案例：
 
 - **從內部部署遷移至 Azure。** 將內部部署 VMware VM、Hyper-V VM 和實體伺服器遷移至 Azure。 若要這樣做，請完成與完整災害復原幾乎相同的步驟。 只是不要將機器從 Azure 容錯移轉回到內部部署站台。
-- **在不同的 Azure 地區之間遷移。** 將 Azure VM 從一個 Azure 區域遷移至另一個 Azure 區域。 完成移轉之後，在您遷移所在的次要區域中，設定 Azure VM 的災害復原。
+- **在 Azure 區域之間進行遷移。** 將 Azure VM 從一個 Azure 區域遷移至另一個 Azure 區域。 完成移轉之後，在您遷移所在的次要區域中，設定 Azure VM 的災害復原。
 - **從其他雲端遷移至 Azure。** 您可以將在其他雲端提供者上佈建的計算執行個體遷移至 Azure VM。 在進行移轉時，Site Recovery 會將這些執行個體視為實體伺服器。
 
 ![Azure Site Recovery](../../../_images/migrate/asr-replication-image.png)

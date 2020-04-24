@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: bbbed6fd267a6cac7b052c28a0b902c233d74374
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80427379"
 ---
 # <a name="predict-and-influence"></a>預測和影響
@@ -39,7 +39,7 @@ ms.locfileid: "80427379"
 > [!CAUTION]
 > 如果客戶假設在組建中[以客戶理解的方式](./build.md)開發，其中包含預測性功能，則可能適用于此處所述的原則。 不過，預測功能需要大量投資時間和能源。 當預測性功能為[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)，而不是實際客戶價值的來源時，建議您延遲預測，直到客戶假設經過大規模驗證為止。
 
-## <a name="data"></a>Data
+## <a name="data"></a>資料
 
 資料是先前所述特性的最 elemental。 開發數位開始創造發明的每個專業領域都會產生資料。 當然，這項資料會提供預測的開發。 如需如何將資料帶入預測性解決方案的更多指引，請參閱[Democratizing 資料](./data.md)和[與裝置互動](./devices.md)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "80427379"
 
 主題專家會使用客戶需求和行為的相關資料，從原始資料的研究中開發基本的商業見解。 這些深入解析可以找出所需客戶行為的出現次數（或者，或者不想要的結果）。 在預測的反復專案中，這些深入解析有助於識別可能會產生正面結果的可能相互關聯。 如需有關啟用主題專家來開發見解的指引，請參閱[Democratizing data](./data.md)。
 
-## <a name="patterns"></a>圖樣
+## <a name="patterns"></a>模式
 
 人們總是嘗試偵測大量資料中的模式。 電腦是針對該目的而設計的。 機器學習服務會藉由偵測精確的模式來加速該程式，這是由機器學習模型組成的技能。 這些模式接著會透過機器學習演算法來套用，以便在演算法中輸入新的資料集時預測結果。
 

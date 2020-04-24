@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: dcfa6596d61233efa83bc6a1c6977a2ebe4ad510
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433472"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
@@ -129,6 +129,6 @@ ms.locfileid: "80433472"
 既然您已了解雲端資源治理的概念，請繼續深入了解在 Azure 中[如何管理資源存取權](./resource-access-management.md)，以準備學習如何設計[簡單工作負載](./governance-simple-workload.md)和[多個小組](./governance-multiple-teams.md)的治理模型。
 
 > [!div class="nextstepaction"]
-> [瞭解 azure 中的資源存取管理](./resource-access-management.md)
-> [瞭解適用于 azure 的服務等級協定](https://azure.microsoft.com/support/legal/sla)
-> [瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)
+> [瞭解 azure](./resource-access-management.md)
+> 中的資源存取管理瞭解
+> [azure 的服務等級協定](https://azure.microsoft.com/support/legal/sla)[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

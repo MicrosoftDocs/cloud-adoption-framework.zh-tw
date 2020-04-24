@@ -9,17 +9,17 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
 ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527154"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>雲端監視指南：監視平臺總覽
 
-Microsoft 提供兩種產品的各種監視功能： System Center Operations Manager （專為內部部署設計，然後延伸至雲端）和 Azure 監視器（專為雲端設計，但也可以監視內部部署）系統工程. 這兩個供應專案提供核心監視服務，例如警示、服務執行時間追蹤、應用程式和基礎結構健全狀況監視、診斷和分析。
+Microsoft 提供兩種產品的各種監視功能： System Center Operations Manager （專為內部部署設計，然後延伸至雲端）和 Azure 監視器（專為雲端設計，但也可以監視內部部署系統）。 這兩個供應專案提供核心監視服務，例如警示、服務執行時間追蹤、應用程式和基礎結構健全狀況監視、診斷和分析。
 
 許多組織都採用最新的做法來 DevOps 彈性和雲端創新，以管理其異構環境。 但他們也擔心他們能夠做出適當且負責的決策，決定如何監視這些工作負載。
 
@@ -35,7 +35,7 @@ Microsoft 提供兩種產品的各種監視功能： System Center Operations Ma
 
 Application Insights 引進了隨著產業中的變更轉移，其中雲端、行動裝置和 IoT 裝置的激增日益成長，並引進 DevOps 實務。 它會從 Operations Manager 的應用程式效能監視成長到 Azure 中的服務，並在其中針對以各種語言撰寫的 web 應用程式提供豐富的監視功能。 在2015中，已宣佈 Visual Studio 的 Application Insights 預覽，並在稍後將其稱為 Application Insights。 它會收集有關應用程式效能、要求和例外狀況的詳細資料，以及追蹤。
 
-在2015中，Azure Operational Insights 已公開上市。 它提供了 Log Analytics 分析服務，可從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件可提供各種預先封裝的管理和監視設定，這些設定包含查詢和分析邏輯、視覺效果和資料收集規則的集合，這些設定會針對這類案例做為安全性審核、健全狀況評量和警示管理。 之後，Azure Operational Insights 就稱為 Log Analytics。  
+在2015中，Azure Operational Insights 已公開上市。 它提供了 Log Analytics 分析服務，可從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件可提供各種預先封裝的管理和監視設定，這些設定包含查詢和分析邏輯、視覺效果和資料收集規則的集合，例如安全性審核、健康情況評估和警示管理。 之後，Azure Operational Insights 就稱為 Log Analytics。  
 
 在2016中，已在 Microsoft Ignite 會議上宣佈 Azure 監視器的預覽。 它提供一個通用的架構，可從使用架構的任何 Azure 服務收集平臺計量、資源診斷記錄，以及訂用帳戶層級的活動記錄事件。 之前，每個 Azure 服務都有自己的監視方法。
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: e723e16c039bace12c0a4e5e97c8e6635875732d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80427992"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
@@ -43,4 +43,4 @@ ms.locfileid: "80427992"
 將[雲端採用方案範本部署](./template.md)至 Azure DevOps。
 
 > [!div class="nextstepaction"]
-> [將範本部署至 Azure DevOps](./template.md)
+> [將範本部署到 Azure DevOps](./template.md)

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 760eee5216ad774e7f55b13257c46aef97008792
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636394"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997611"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "80636394"
 
 **常見的治理方法：** 對於大部分的組織而言，[雲端採用架構治理模型](../../govern/guides/index.md)是一種充分的方法，其中包含最基本的可行產品（MVP）實行，並遵循治理成熟度的目標反復專案來解決採用計畫中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
 
-**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
+**ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
 **虛擬資料中心：** 可能需要更健全的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
 

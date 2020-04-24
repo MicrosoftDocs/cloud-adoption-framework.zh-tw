@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3053d26f5b2cf3c7d1589f165fb32702b007d49f
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527567"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997679"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "80527567"
 
 請考慮下列原則，判斷徵兆是否為警示的適當候選項：
 
-- **這有什麼影響嗎？** 問題的徵兆是真正問題還是影響應用程式整體健全狀況的問題？ 例如，您是否在意資源上的 CPU 使用率很高？ 或者，在該資源上的 SQL database 實例上執行的特定 SQL 查詢，在一段時間內耗用過高的 CPU 使用率？ 因為 CPU 使用率狀況是真正的問題，所以您應該對其發出警示。 但是，您不需要通知小組，因為它並不能説明您找出造成此狀況的原因。 針對 SQL 查詢程式使用率問題發出警示和通知，兩者都是相關且可採取動作的。
+- **是否有關係嗎？** 問題的徵兆是真正問題還是影響應用程式整體健全狀況的問題？ 例如，您是否在意資源上的 CPU 使用率很高？ 或者，在該資源上的 SQL database 實例上執行的特定 SQL 查詢，在一段時間內耗用過高的 CPU 使用率？ 因為 CPU 使用率狀況是真正的問題，所以您應該對其發出警示。 但是，您不需要通知小組，因為它並不能説明您找出造成此狀況的原因。 針對 SQL 查詢程式使用率問題發出警示和通知，兩者都是相關且可採取動作的。
 - **這是緊急的嗎？** 這是真正的問題，是否需要緊急注意？ 若是如此，應立即通知負責的小組。
 - **您的客戶會受到影響嗎？** 服務或應用程式的使用者是否因問題而受到影響？
 - **其他相依系統是否受到影響？** 是否有相關相依性的警示，而且可能相互關聯，以避免通知不同的小組處理相同的問題？
@@ -120,9 +120,9 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 搭配使用時，這些功能可以將警示通知和基礎警示的管理降到最低，藉此節省時間。
 
-### <a name="alerts-limitations"></a>警示限制
+### <a name="limits-on-alerts"></a>警示限制
 
-請務必記下您可以建立的警示數目[限制](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-monitor-limits)。 有些限制（但不是全部）可以藉由呼叫支援來增加。
+請務必記下[您可以建立的警示數目限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)。 有些限制（但不是全部）可以藉由呼叫支援來增加。
 
 ### <a name="best-query-experience"></a>最佳查詢體驗
 

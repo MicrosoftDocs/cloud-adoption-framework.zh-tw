@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433292"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
@@ -32,10 +32,10 @@ ms.locfileid: "80433292"
 
 環境體驗通常需要的 web 應用程式不超過一天。 透過[測量](./measure.md)並[向客戶學習](./learn.md)，可以觀察、追蹤和使用觸發客戶需求的行為，以建立更多的環境體驗。 下列清單摘要說明將環境解決方案整合到您的假設中的幾個方法，並提供下列段落中各項的詳細資訊。
 
-- 行動 **[體驗](#mobile-experience)：** 如同膝上型電腦，行動裝置應用程式在客戶環境中很普遍。 在某些情況下，這可能會提供足夠的互動層級，讓解決方案成為環境的功能。
-- **[Mixed reality](#mixed-reality)：** 有時，必須改變客戶的一般環境，才能進行互動環境。 此因素會造成客戶與解決方案互動，且必須符合需求的錯誤現實。 在此情況下，解決方案是在 false 現實中的環境。
+- 行動**[體驗](#mobile-experience)：** 如同膝上型電腦，行動裝置應用程式在客戶環境中很普遍。 在某些情況下，這可能會提供足夠的互動層級，讓解決方案成為環境的功能。
+- ** [Mixed reality](#mixed-reality)：** 有時，必須改變客戶的一般環境，才能進行互動環境。 此因素會造成客戶與解決方案互動，且必須符合需求的錯誤現實。 在此情況下，解決方案是在 false 現實中的環境。
 - **[整合式現實](#integrated-reality)：** 相較于真正的環境，整合式現實解決方案著重于在客戶現實中使用的裝置，以將解決方案整合到其自然行為中。 虛擬助理是將現實整合到周圍環境的絕佳範例。 較少的已知選項考慮物聯網（IoT）技術，其會整合已存在於客戶環境中的裝置。
-- 已 **[調整的事實](#adjusted-reality)：** 當這些環境解決方案中的任何一個使用雲端中的預測性分析，透過自然的內部環境來定義和提供與客戶的互動時，解決方案已調整現實。
+- 已**[調整的事實](#adjusted-reality)：** 當這些環境解決方案中的任何一個使用雲端中的預測性分析，透過自然的內部環境來定義和提供與客戶的互動時，解決方案已調整現實。
 
 瞭解客戶的需求並測量客戶的影響，可協助您判斷是否需要裝置互動或環境體驗來驗證您的假設。 使用每個資料點時，下列各節將協助您尋找最佳解決方案。
 

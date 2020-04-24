@@ -7,16 +7,16 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 015999a9852625abe4ad02a60ad37fc162dd4861
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425421"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997705"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 
-「工作負載」這個詞彙通常被定義為任意的功能單位，例如應用程式或服務。 這有助於以部署到伺服器的程式碼成品，以及應用程式特定的其他服務來思考工作負載。 針對內部部署應用程式或服務，這可能是實用的定義，但對於雲端應用程式而言則需要擴充。
+「工作負載」** 這個詞彙通常被定義為任意的功能單位，例如應用程式或服務。 這有助於以部署到伺服器的程式碼成品，以及應用程式特定的其他服務來思考工作負載。 針對內部部署應用程式或服務，這可能是實用的定義，但對於雲端應用程式而言則需要擴充。
 
 在雲端中，工作負載不僅是包括所有成品，同時也包含雲端資源。 定義當中包含雲端資源，是因為所謂「基礎結構即程式碼」的概念。 如同您在 [Azure 的運作方式？](../../getting-started/what-is-azure.md)說明中所了解的，Azure 中的資源是由協調器服務部署。 此協調器服務會透過 Web API 公開功能，您可以使用數種工具（例如 PowerShell、Azure CLI 和 Azure 入口網站）來呼叫 Web API。 這表示您可以在電腦可讀取的檔案中指定 Azure 資源，該檔案可以與應用程式相關聯的程式碼成品 一起儲存。
 
@@ -26,7 +26,7 @@ ms.locfileid: "80425421"
 
 ## <a name="basic-workload"></a>基本工作負載
 
-「基本工作負載」通常定義為單一 Web 應用程式，或包含虛擬機器 (VM) 的虛擬網路 (VNet)。
+*基本工作負載*通常會定義為單一 web 應用程式，或具有虛擬機器（VM）的虛擬網路（VNet）。
 
 > [!NOTE]
 > 本指南並未涵蓋應用程式開發。 如需有關在 Azure 上開發應用程式的詳細資訊，請參閱 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide)。
@@ -44,7 +44,7 @@ ms.locfileid: "80425421"
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>單一 Windows 或 Linux VM (IaaS)
 
-針對在 VM 上執行的簡單工作負載，第一個步驟是部署虛擬網路。 Azure 中的所有基礎結構即服務 (IaaS) 資源 (例如虛擬機器、負載平衡器和閘道) 都需要虛擬網路。 請了解 [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)，然後遵循步驟以[使用入口網站將虛擬網路部署至 Azure](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)。 當您在 Azure 入口網站中指定虛擬網路的設定時，請務必指定先前建立的資源群組名稱。
+針對在 VM 上執行的簡單工作負載，第一個步驟是部署虛擬網路。 Azure 中的所有基礎結構即服務 (IaaS) 資源 (例如虛擬機器、負載平衡器和閘道) 都需要虛擬網路。 瞭解[Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)，然後遵循步驟，[使用入口網站將虛擬網路部署至 Azure](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)。 當您在 Azure 入口網站中指定虛擬網路的設定時，請務必指定先前建立的資源群組名稱。
 
 下一個步驟是決定要部署單一 Windows 或 Linux VM。 針對 Windows VM，請遵循步驟以[使用入口網站將 Windows VM 部署至 Azure](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)。 同樣地，當您在 Azure 入口網站中指定虛擬機器的設定時，請為先前建立的資源群組指定名稱。
 

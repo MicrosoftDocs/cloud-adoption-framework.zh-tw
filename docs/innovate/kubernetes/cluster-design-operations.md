@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527172"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>叢集設計和作業
 
-識別叢集設定和網路設計。 透過自動化基礎結構布建，來提供更高的擴充性。 藉由規劃商務持續性和災害復原，來維持高可用性。
+識別叢集設定和網路設計。 透過自動化基礎結構布建，來提供更高的擴充性。 藉由規劃商務持續性和嚴重損壞修復，維持高可用性。
 
 ## <a name="plan-train-and-proof"></a>規劃、定型和證明
 
@@ -37,7 +37,7 @@ ms.locfileid: "80527172"
 >
 > | 檢查清單  | 資源 |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **識別網路設計考慮。** 瞭解叢集網路設計考慮、比較網路模型，以及選擇符合您需求的 Kubernetes 網路外掛程式。    | [Kubenet 和 Azure 容器網路介面（CNI）](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [在 Azure Kubernetes Service （AKS）中搭配使用 kubenet 網路與您自己的 IP 位址範圍](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [在 Azure Kubernetes Service （AKS）中設定 Azure CNI 網路](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [AKS 叢集的安全網路設計](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **識別網路設計考慮。** 瞭解叢集網路設計考慮、比較網路模型，以及選擇符合您需求的 Kubernetes 網路外掛程式。    | [Kubenet 和 Azure 容器網路介面（CNI）](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [在 Azure Kubernetes Service (AKS) 中使用 kubenet 網路與您自己的 IP 位址範圍](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 網路](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [AKS 叢集的安全網路設計](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **建立多個節點集區。** 若要支援具有不同計算或儲存體需求的應用程式，您可以選擇性地使用多個節點集區來設定您的叢集。 例如，使用額外的節點集區來為計算密集型應用程式提供 Gpu，或存取高效能 SSD 儲存體。   | [在 Azure Kubernetes Service 中建立和管理叢集的多個節點集區](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **決定可用性需求。** 若要為您的應用程式提供更高的可用性層級，可以在可用性區域間散發叢集。 這些區域是在指定區域中實體獨立的資料中心。 當叢集元件分散到多個區域時，您的叢集就能夠容忍其中一個區域的失敗。 即使整個資料中心發生問題，您的應用程式和管理作業仍可繼續使用。   | [建立使用可用性區域的 Azure Kubernetes Service （AKS）叢集](https://docs.microsoft.com/azure/aks/availability-zones) |
 
@@ -56,8 +56,8 @@ ms.locfileid: "80527172"
 >
 > | 檢查清單  | 資源                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **自動布建叢集。** 透過基礎結構即程式碼，您可以將基礎結構布建自動化，以在嚴重損壞時提供更多的復原能力，並可在需要時快速重新部署基礎結構     | [使用 Terraform 建立具有 Azure Kubernetes Service 的 Kubernetes 叢集](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks)|
-> | **使用 pod 中斷預算來規劃可用性。** 若要維護應用程式的可用性，請定義 pod 中斷預算（Pdb），以確保在硬體故障或叢集升級期間，叢集中可使用最少的 pod 數目。 | [使用 pod 中斷預算規劃可用性](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)  |
+> | **自動布建叢集。** 透過基礎結構即程式碼，您可以將基礎結構布建自動化，以在嚴重損壞時提供更多的復原能力，並可在需要時快速重新部署基礎結構     | [使用 Azure Kubernetes Service 和 Terraform 建立 Kubernetes 叢集](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks)|
+> | **使用 pod 中斷預算來規劃可用性。** 若要維護應用程式的可用性，請定義 pod 中斷預算（Pdb），以確保在硬體故障或叢集升級期間，叢集中可使用最少的 pod 數目。 | [使用 Pod 中斷預算規劃可用性](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)  |
 > | **在命名空間上強制執行資源配額。** 在命名空間層級規劃和套用資源配額。 您可以在計算資源、儲存體資源和物件計數上設定配額。| [強制執行資源配額](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas)  |
 
 ## <a name="optimize-and-scale"></a>優化和調整

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: ef890dce11530f30a0863ab9a51dcc3832125e24
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432319"
 ---
 # <a name="decommission-retired-assets"></a>解除委任已淘汰的資產
@@ -39,4 +39,4 @@ ms.locfileid: "80432319"
 已淘汰的資產解除委任後，移轉即完成。 您可以藉此機會改善移轉程序，而[回顧](./retrospective.md)可以讓雲端採用小組檢討發行過程，以期能學習並改善。
 
 > [!div class="nextstepaction"]
-> [回顧](./retrospective.md)
+> [追溯](./retrospective.md)

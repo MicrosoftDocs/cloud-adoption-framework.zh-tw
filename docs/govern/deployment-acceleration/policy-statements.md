@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c10353d4ed284309f782f9ebbc13085d1f6bd14f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434548"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995532"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 
@@ -31,7 +31,7 @@ ms.locfileid: "80434548"
 
 **原則聲明：** 所有部署至雲端的資產都應該盡可能使用範本或自動化腳本進行部署。
 
-**潛在的設計選項：** [Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)會提供基礎結構即程式碼方法，將您的資源部署至 Azure。 您也可以使用[Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview)作為一致的內部部署和雲端式部署工具。
+**潛在的設計選項：** [Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)可讓您使用基礎結構即程式碼，將您的資源部署至 Azure。 您也可以使用[Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview)作為一致的內部部署和雲端式部署工具。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>缺少系統問題的可見性
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: f76cde92d52cd9390974501326a198656cd11d71
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431707"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果的範例
@@ -24,7 +24,7 @@ ms.locfileid: "80431707"
 
 最大的雲端運算服務是在安全資料中心的全球網路上執行，並定期升級至最新一代的快速且有效率的運算硬體。 這對單一公司資料中心提供了數個優點，例如降低應用程式的網路延遲，以及更高的規模經濟。
 
-以地球上最大的網路之一連結的高效率基礎100結構，讓您的業務轉型並降低成本。 Azure 擁有比其他任何雲端提供者更多的全域區域。 這會轉譯成使應用程式更接近全球使用者所需的規模，保留資料的存放區，並為客戶提供完整的合規性與復原選項。
+以地球上最大的網路之一連結的高效率基礎100結構，讓您的業務轉型並降低成本。 Azure 擁有的全球區域多於其他任何雲端提供者。 這會轉譯成使應用程式更接近全球使用者所需的規模，保留資料的存放區，並為客戶提供完整的合規性與復原選項。
 
 - **範例1：** 服務公司正與託管多個營運基礎結構資產的主控提供者合作。 這些系統會遇到頻繁的中斷和效能不佳的問題。 公司將其資產遷移至 Azure，以利用雲端的 SLA 和效能控制。 停機時間的代價是，每分鐘中斷大約15000美元。 由於每個月有四到八個小時的中斷，因此可以輕鬆地論證此組織的轉換。
 

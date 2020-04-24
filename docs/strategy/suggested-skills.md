@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 81ac405667bb12f61ec324388e81e38543efb690
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433693"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997494"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -63,7 +63,7 @@ ms.locfileid: "80433693"
 - [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能。 瞭解 Azure 網路功能的基本概念，以及 Azure 網路功能如何協助您提升復原能力並降低延遲。
 - [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)。 瞭解 Azure 計算服務。
 - [使用 RBAC 保護資源](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)。 使用 RBAC 保護資源。
-- [資料儲存選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index)。 瞭解 Azure 資料儲存體的優點。
+- [資料儲存選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)。 瞭解 Azure 資料儲存體的優點。
 
 ## <a name="organizational-skills"></a>組織技能
 
@@ -82,16 +82,16 @@ Microsoft 和合作夥伴提供各種選項，以協助所有的使用者使用 
 
 - [MICROSOFT IT 專業人員中心](https://www.microsoft.com/itpro)。 提供為免費的線上資源，有助於規劃您的雲端事業路徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
 
-我們建議您透過[Microsoft Azure 認證訓練和測驗，](https://www.microsoft.com/learning/azure-certification.aspx)將 Azure 知識轉換成官方辨識。
+我們建議您透過[Microsoft Azure 認證訓練和測驗，](https://www.microsoft.com/learning/certification-overview.aspx)將 Azure 知識轉換成官方辨識。
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數、層級並達成更多目標！
 
-以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略 potion。
+以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略部分。
 
-[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 我們將討論 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強大的功能。 最後，我們將藉由說明如何讓您的組織真正實現此旅程。
+[瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 內容會涵蓋 Microsoft Azure 雲端服務如何在受信任雲端平台上推動組織發展。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。

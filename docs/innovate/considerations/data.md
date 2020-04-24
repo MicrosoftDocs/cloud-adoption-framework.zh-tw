@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2fac366e56e279204a791d5d8813500fe57de8d6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433317"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997204"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
@@ -43,7 +43,7 @@ ms.locfileid: "80433317"
 
 共用資料可以快速產生您可以在客戶交談中使用的 MVP。 不過，若要將共用資料轉換成有用且可操作的知識，通常需要更多的。 透過資料共用來驗證假設之後，下一個階段的開發通常是資料管理。
 
-資料控管是很廣泛的主題，可能需要它自己的專屬架構。 該程度的資料細微性超出[雲端採用架構](../../index.md)的範圍。 不過，有幾個層面的資料管理，您應該在客戶假設通過驗證後立即考慮。 例如，
+資料管理是很廣泛的主題，可能需要自己專屬的架構。 該程度的資料細微性超出[雲端採用架構](../../index.md)的範圍。 不過，有幾個層面的資料管理，您應該在客戶假設通過驗證後立即考慮。 例如：
 
 - **共用資料是否區分大小寫？** [資料應](../../govern/policy-compliance/data-classification.md)在公開共用之前進行分類，以保護客戶和公司的興趣。
 - **如果資料很敏感，是否受到保護？** 機密資料的保護應為任何大眾化資料的需求。 著重于[保護資料解決方案](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions)的範例工作負載會提供幾個用於保護資料的參考。
@@ -67,7 +67,7 @@ ms.locfileid: "80433317"
 
 ### <a name="collect-data"></a>收集資料
 
-當您需要集中資料以滿足客戶的需求時，您可能也必須從各種來源收集資料，並將其移至集中式資料存放區。 資料收集有兩種主要形式：*整合* *和內嵌*。
+當您需要集中資料以滿足客戶的需求時，您可能也必須從各種來源收集資料，並將其移至集中式資料存放區。 資料收集有兩種主要形式：*整合**和內嵌*。
 
 **整合：** 位於現有資料存放區中的資料可以使用傳統資料移動技術，整合到集中式資料存放區。 這在牽涉到多重雲端資料存放區的案例中特別常見。 這些技術牽涉到從現有的資料存放區解壓縮資料，然後將其載入中央資料存放區。 在此程式中的某個時間點，通常會將資料轉換成更容易使用且與中央存放區相關。
 
@@ -79,7 +79,7 @@ ms.locfileid: "80433317"
 
 **虛擬化：** 資料的整合和內嵌有時可能會使創新變慢。 當資料虛擬化的解決方案已可供使用時，它可能代表更合理的方法。 內嵌與整合可以重複儲存和開發需求、新增資料延遲、增加受攻擊面區域、觸發品質問題，以及增加治理工作。 資料虛擬化是比較現代的替代方案，可將原始資料保留在單一位置，並建立來源資料的傳遞或快取查詢。
 
-SQL Server 2017 和 Azure SQL 資料倉儲都支援[PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) ，這是 Azure 中最常使用的資料虛擬化方法。
+SQL Server 2017 和 Azure SQL 資料倉儲都支援[PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide)，這是 Azure 中最常使用的資料虛擬化方法。
 
 ## <a name="next-steps"></a>後續步驟
 

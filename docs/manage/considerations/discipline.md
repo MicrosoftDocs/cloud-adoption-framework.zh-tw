@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c57b2326475f9434aee0b98cf69bf85956ce076e
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 6033f12b1604818fef4c70f1863b7a99fb4c51e6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527116"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809077"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理調節
 
@@ -32,7 +32,7 @@ ms.locfileid: "80527116"
 - **工作負載特製化：** 對於真正要徑任務的工作負載，可能會有成本上的理由，以更深入的方式管理該工作負載。 工作負載特製化會套用工作負載遙測，以判斷更先進的日常管理方法。 相同的資料通常會識別自動化、部署和設計方面的改進，使其比單獨操作管理還能提供更高的穩定性、可靠性和復原能力。
 - **不支援：** 針對分類為不受支援或不重要的工作負載，溝通不會透過雲端管理專業領域傳遞的一般管理流程，同樣重要。
 
-組織也可以選擇將與[一或多個這些管理層級相關的功能外包給服務提供者](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)來提供更高的精確度和透明度。
+組織也可以選擇將與[一或多個這些管理層級相關的功能外包給服務提供者](https://aka.ms/adopt/partneroffers)。 這些服務提供者可以使用[Azure 燈塔](https://azure.com/lighthouse)來提供更高的精確度和透明度。
 
 本系列中的其餘文章將概述在這些專業領域中經常發現的處理常式。
 [Azure 管理指南](../azure-management-guide/index.md)會以平行方式示範可支援每個處理常式的工具。 如需建立管理基準的協助，請從 Azure 管理指南開始。 建立基準之後，本文系列和隨附的最佳作法可協助擴充該基準，以定義其他層級的管理支援。

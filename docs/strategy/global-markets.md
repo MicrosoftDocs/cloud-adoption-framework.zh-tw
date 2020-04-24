@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3ad745b1fcef78ebeaac7d5e3199e92e069113e7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431449"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997764"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80431449"
 
 ## <a name="data-sovereignty"></a>資料主權
 
-許多地緣政治區域都已建立資料主權法規。 這些規定會限制可以儲存資料的位置、哪些資料可以離開國家/地區，以及該區域公民的哪些資料可以收集。 在操作外部地理位置中的任何雲端式解決方案之前，您應該瞭解該雲端提供者如何處理資料主權。 如需每個地理位置的 Azure 方法詳細資訊，請參閱[這裡](https://azure.microsoft.com/global-infrastructure/geographies)。 如需 Azure 合規性的詳細資訊，請參閱 microsoft 信任中心的[Microsoft 隱私權](https://www.microsoft.com/trustcenter/privacy)。
+許多地緣政治區域都已建立資料主權法規。 這些規定會限制可以儲存資料的位置、哪些資料可以離開國家/地區，以及該區域公民的哪些資料可以收集。 在操作外部地理位置中的任何雲端式解決方案之前，您應該瞭解該雲端提供者如何處理資料主權。 如需有關 Azure 每個地理位置之方法的詳細資訊，請參閱[azure 地區](https://azure.microsoft.com/global-infrastructure/geographies)。 如需 Azure 合規性的詳細資訊，請參閱 microsoft 信任中心的[Microsoft 隱私權](https://www.microsoft.com/trust-center/privacy)。
 
 本文的其餘部分假設法律顧問已審查並核准國外國家/地區的作業。
 

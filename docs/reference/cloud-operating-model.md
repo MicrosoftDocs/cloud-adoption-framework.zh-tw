@@ -10,10 +10,10 @@ ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "79023859"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>雲端作業模式現在是 Azure Microsoft Cloud 採用架構的一部分
@@ -45,7 +45,7 @@ COM 已建立由下列元件組成的範圍：
 雲端作業模式和雲端採用架構的高階範圍很類似。 整個指引和雲端採用架構中的每個方法都會反映商務、文化和技術。
 
 > [!NOTE]
-> 雲端採用架構的範圍有兩個顯著的清楚點。 在雲端採用架構中，商務策略超越了雲端成本的檔&mdash;其概念是瞭解動機、所需的結果、退貨和雲端成本，以建立可採取行動的計畫並清除商業理由。 在雲端採用架構中，人員策略超越訓練，以包含建立顯而易見的文化成熟度的方法。 藍圖的幾個領域包括 Agile 管理、DevOps 整合、客戶理解和對，以及精簡產品開發方法的影響。
+> 雲端採用架構的範圍有兩個顯著的清楚點。 在雲端採用架構中，商務策略超越了雲端成本&mdash;的檔，其概念是瞭解動機、所需的結果、退貨和雲端成本，以建立可採取行動的計畫並清除商業理由。 在雲端採用架構中，人員策略超越訓練，以包含建立顯而易見的文化成熟度的方法。 藍圖的幾個領域包括 Agile 管理、DevOps 整合、客戶理解和對，以及精簡產品開發方法的影響。
 
 ## <a name="structure"></a>結構
 

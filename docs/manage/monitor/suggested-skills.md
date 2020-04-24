@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527030"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120537"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "80527030"
 
 - [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)的簡介討論管理和部署 Azure 資源的基本概念。 管理整個企業中監視體驗的 IT 人員，應該使用來瞭解管理範圍，也就是角色型存取控制（RBAC）。 Azure Resource Manager 範本，以及使用 Azure CLI 和 Azure PowerShell 來管理資源。
 
-- 瞭解如何使用原則、角色型存取控制和其他 Azure 服務來保護資源，方法是[在 Azure 中觀看執行資源管理安全性](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security)。
+- 瞭解如何使用原則、角色型存取控制和其他 Azure 服務來保護資源，方法是[在 Azure 中觀看執行資源管理安全性](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security)。
 
 - [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit 來賓設定等。
 
@@ -39,7 +39,7 @@ ms.locfileid: "80527030"
 
   - [Microsoft Azure Iaas 監視和管理](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started)可協助您瞭解如何使用 Azure 監視器對 IaaS 上執行的工作負載進行基本監視。
 
-  - [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)可協助您瞭解如何使用 Microsoft Azure 監視工具來監視 Azure 網路（以及內部內部部署）資源。
+  - [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)可協助您瞭解如何使用 Microsoft Azure 監視工具來監視 Azure 網路資源以及內部部署資源。
 
   - [Microsoft Azure DevOps 工程師：優化意見反應機制](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)可協助您準備使用 Azure 監視器，包括 Application Insights 和 Log Analytics 來監視和優化您的 web 應用程式。
 
@@ -57,7 +57,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 - [MICROSOFT IT 專業人員職業中心](https://www.microsoft.com/itpro)：作為免費的線上資源，協助您對應雲端事業的途徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
 
-參加 [Microsoft Azure 認證訓練課程與測驗]( https://www.microsoft.com/learning/azure-certification.aspx)，讓您的 Azure 知識獲得官方認證。
+參加 [Microsoft Azure 認證訓練課程與測驗]( https://www.microsoft.com/learning/certification-overview.aspx)，讓您的 Azure 知識獲得官方認證。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
@@ -77,10 +77,10 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 ## <a name="other-considerations"></a>其他考量
 
-客戶通常會難以管理、維護和提供預期的企業（和 IT 組織）結果，以符合傳遞的服務。 監視會被視為核心來管理基礎結構和企業，並著重于測量服務品質和客戶體驗。  若要達成這些目標，請使用 ITSM 搭配 DevOps 來奠定基礎，這可協助監視小組成熟其管理、交付及支援監視服務的方式。 採用 ITSM 架構可讓監視小組作為提供者，並藉由配合組織的策略性目標和需求，取得辨識作為信任的商務啟用者。
+客戶通常會難以管理、維護和提供預期的企業（和 IT 組織）結果，以符合傳遞的服務。 監視會被視為核心來管理基礎結構和企業，並著重于測量服務品質和客戶體驗。 若要達成這些目標，請使用 ITSM 搭配 DevOps 來奠定基礎，這可協助監視小組成熟其管理、交付及支援監視服務的方式。 採用 ITSM 架構可讓監視小組作為提供者，並藉由配合組織的策略性目標和需求，取得辨識作為信任的商務啟用者。
 
 請參閱下列內容，以瞭解對最受歡迎的 ITSM framework [ITIL v4 和雲端運算技術白皮書](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)的更新，其重點在於將現有的 ITIL 指導方針與 DevOps、Agile 和瘦的最佳做法聯結在一起。 也請考慮[IT4IT 參考架構](https://www.opengroup.org/it4it)，以提供如何使用不受處理的架構來轉換它的替代藍圖。
 
 ## <a name="learn-more"></a>深入了解
 
-若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。
+若要探索其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用角色篩選器，讓學習路徑與您的角色一致。

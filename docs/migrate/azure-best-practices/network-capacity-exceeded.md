@@ -1,18 +1,18 @@
 ---
 title: 超過網路容量
-description: 在遷移工作期間，資料需求超過網路容量。
+description: 移轉工作期間資料需求超過網路容量。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d836e6d5397a5b2ff36ab57ee23712cfe40561a
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: 4d32a1b521240806b78435141b9876967b4093d8
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636442"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646858"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "80636442"
 
 這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
-另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
+另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
 ![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migrate/databox.png)
 
@@ -61,13 +61,13 @@ ms.locfileid: "80636442"
 
 **複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
 
-另外也有[第三方合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
+另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
 **寄送裝置：** 複製資料之後，裝置就可以[寄送到 Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)。 收到資料並匯入之後，資料就可在 Azure 儲存體帳戶中使用。
 
 **還原資產：** 確認儲存體帳戶中有可用[的資料](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)。 確認之後，就可以透過 Blob 或在 Azure 檔案儲存體中使用資料。 如果資料是 VHD/VHDX 檔案，則檔案可以轉換為受控磁碟。 隨後，您就可以使用這些受控磁碟來具現化虛擬機器，以建立原始內部部署資產的複本。
 
-**同步處理：** 如果漂移的同步處理是已遷移資產的需求，則可以使用其中一個[協力廠商合作夥伴解決方案](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)來同步處理檔案，直到資產還原為止。
+**同步處理：** 如果漂移的同步處理是已遷移資產的需求，則可以使用其中一個協力廠商合作夥伴解決方案來同步處理檔案，直到資產還原為止。
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
 

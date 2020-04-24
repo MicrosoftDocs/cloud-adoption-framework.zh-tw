@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: cd6e80330f0de1108ded7a0e57e49c54380fb59b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428628"
 ---
 # <a name="cloud-governance-capabilities"></a>雲端治理功能
@@ -29,7 +29,7 @@ ms.locfileid: "80428628"
 - IT 營運
 - IT 基礎結構
 - 網路功能
-- 相同比較
+- 身分識別
 - 虛擬化
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者

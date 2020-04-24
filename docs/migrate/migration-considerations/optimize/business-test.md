@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 15ab13f8d5797921e125c3b397b44213afcde249
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432382"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>在移轉期間進行商務測試 (UAT) 的指引
@@ -54,4 +54,4 @@ IT 可作為商務測試輸出的其中一個收件者。 在商務測試期間�
 搭配商務測試，[已遷移資產的最佳化](./optimize.md)可提升成本和工作負載效能。
 
 > [!div class="nextstepaction"]
-> [進行雲端資產的基準測試和大小調整](./optimize.md)
+> [進行雲端資產的效能評定和大小調整](./optimize.md)

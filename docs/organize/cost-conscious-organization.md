@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428511"
 ---
 # <a name="build-a-cost-conscious-organization"></a>打造符合成本效益的組織
@@ -20,8 +20,8 @@ ms.locfileid: "80428511"
 
 確保成本新紀元意識觀念不是一次性活動。 就像其他雲端採用主題一樣，它是反復進行的。 下圖概述此程式，著重于三個相互相依的活動：*可見度*、*責任*和*優化*。 這些程式會在宏和微層級中播放，我們將在本文中詳細說明。
 
-![符合成本效益的程式](../_images/ready/cost-optimization-process.png)
-*圖 1-符合成本效益的組織大綱。*
+![成本關注](../_images/ready/cost-optimization-process.png)
+的程式*圖 1-符合成本效益的組織大綱。*
 
 ## <a name="general-cost-conscious-processes"></a>一般成本關注的程式
 

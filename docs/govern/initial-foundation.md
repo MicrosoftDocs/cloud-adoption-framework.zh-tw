@@ -10,10 +10,10 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80356979"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
@@ -71,4 +71,4 @@ ms.locfileid: "80356979"
 一旦有了治理基礎之後，請套用適當的建議來改善解決方案，並防範有形的風險。
 
 > [!div class="nextstepaction"]
-> [改善最初的治理基礎](./foundation-improvements.md)
+> [改善初始治理基礎](./foundation-improvements.md)
