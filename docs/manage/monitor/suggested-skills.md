@@ -3,16 +3,16 @@ title: 雲端監控的技能就緒
 description: 雲端監控的技能就緒
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 03/23/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
+ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120537"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82861430"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -37,13 +37,13 @@ ms.locfileid: "81120537"
 
 - 瞭解[Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)如何協助您從一個位置同時查看應用程式和服務的可用性和效能。 Pluralsight 提供下列課程來協助您：
 
-  - [Microsoft Azure Iaas 監視和管理](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started)可協助您瞭解如何使用 Azure 監視器對 IaaS 上執行的工作負載進行基本監視。
-
-  - [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)可協助您瞭解如何使用 Microsoft Azure 監視工具來監視 Azure 網路資源以及內部部署資源。
+  - [監視 Microsoft Azure 資源和工作負載](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)可協助您瞭解如何使用 Microsoft Azure 監視工具來監視 Azure 網路資源以及內部部署資源。
 
   - [Microsoft Azure DevOps 工程師：優化意見反應機制](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)可協助您準備使用 Azure 監視器，包括 Application Insights 和 Log Analytics 來監視和優化您的 web 應用程式。
 
   - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)腳本可協助您瞭解如何執行和使用 Azure SQL Database、Azure SQL 資料倉儲和 Azure Cosmos DB 的監視。
+
+  - 使用[Azure 監視器 Application Insights 檢測應用程式](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)是一種深入的課程，介紹如何使用 Application Insights SDK，從具有角度和 node.js 元件的應用程式收集遙測和事件。
 
 - 使用[適用于伺服器的 Azure Arc](https://docs.microsoft.com/azure/azure-arc/servers/overview)時，您可以瞭解如何管理裝載于 azure 外部的 Windows 和 Linux 機器，如同管理原生 azure 虛擬機器的方式。
 
@@ -69,7 +69,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 - [開始使用 Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops)。
 
-- [瞭解 DevOps dojo 的泛用皮帶基礎](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
+- [了解 DevOps Dojo 白帶基礎](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
 
 - [發展您的 DevOps 實務](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
 
