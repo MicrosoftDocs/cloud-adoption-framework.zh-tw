@@ -1,6 +1,6 @@
 ---
 title: 簡單工作負載的治理設計
-description: 瞭解在 Azure 中設計資源治理模型的程式，以支援單一小組和簡單的工作負載。 
+description: 瞭解在 Azure 中設計資源治理模型的程式，以支援單一小組和簡單的工作負載。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809042"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218215"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -33,8 +33,8 @@ ms.locfileid: "80809042"
 
 當 Azure 新增至貴組織的 Enterprise 合約時，系統會提示貴組織建立 **Azure 帳戶**。 在帳戶建立程序中，會建立 **Azure 帳戶擁有者**，以及具有**全域管理員**帳戶的 Azure Active Directory (Azure AD) 租用戶。 Azure AD 租用戶是一種邏輯建構，代表 Azure AD 專用的安全執行個體。
 
-![具有 azure 帳戶管理員和 Azure AD 全域管理員](../../_images/govern/design/governance-3-0.png)
-的 azure 帳戶*圖 1-具有帳戶管理員和 Azure AD 全域管理員的 azure 帳戶。*
+![具有 Azure 帳戶擁有者和 Azure AD 全域管理員的 azure 帳戶 ](../../_images/govern/design/governance-3-0.png)
+ _圖1：具有 azure 帳戶擁有者和 Azure AD 全域管理員的 azure 帳戶。_
 
 ## <a name="identity-management"></a>身分識別管理
 
@@ -44,8 +44,8 @@ Azure 只信任由 [Azure AD](https://docs.microsoft.com/azure/active-directory)
 
 我們的 Azure AD 全域管理員將為工作負載擁有者建立**工作負載擁有**者帳戶：
 
-![Azure AD 全域管理員建立工作負載擁有者帳戶](../../_images/govern/design/governance-1-2.png)
-*圖 2-Azure AD 全域管理員會建立工作負載擁有者使用者帳戶。*
+![Azure AD 全域管理員建立工作負載擁有者帳戶 ](../../_images/govern/design/governance-1-2.png)
+ _圖2： Azure AD 全域管理員建立工作負載擁有者使用者帳戶。_
 
 在將此使用者新增至**訂**用帳戶之前，您無法指派資源存取權限，因此您將在接下來的兩個區段中執行此動作。
 
@@ -55,27 +55,27 @@ Azure 只信任由 [Azure AD](https://docs.microsoft.com/azure/active-directory)
 
 最上層的資源管理範圍是**訂用帳戶**層級。 訂用帳戶是由 Azure **帳戶擁有者**建立，該擁有者會建立財務承諾，並且負責支付與訂用帳戶相關聯的所有 Azure 資源費用：
 
-![Azure 帳戶擁有者會建立訂](../../_images/govern/design/governance-1-3.png)
-用帳戶*圖 3-azure 帳戶擁有者會建立訂用帳戶。*
+![Azure 帳戶擁有者會建立訂用帳戶 ](../../_images/govern/design/governance-1-3.png)
+ _圖3： azure 帳戶擁有者會建立訂用帳戶。_
 
 訂用帳戶建立時，Azure **帳戶擁有者**會讓 Azure AD 租用戶與訂用帳戶產生關聯，並且使用這個 Azure AD 租用戶來驗證和授權使用者：
 
-![Azure 帳戶擁有者會將 Azure AD 的租使用者與](../../_images/govern/design/governance-1-4.png)
-訂用帳戶 [圖 4] 建立關聯，*azure 帳戶擁有者會將 Azure AD 租使用者與訂用帳戶產生關聯。*
+![Azure 帳戶擁有者會將 Azure AD 租使用者與訂用帳戶建立關聯 ](../../_images/govern/design/governance-1-4.png)
+ _圖4： azure 帳戶擁有者會將 Azure AD 租使用者與訂用帳戶建立關聯。_
 
 您可能已經注意到，目前沒有任何使用者與訂用帳戶相關聯，這表示沒有任何使用者具有管理資源的權限。 事實上，**帳戶擁有者**是訂用帳戶的擁有者，而且具有對訂用帳戶中資源採取任何動作的權限。 不過，實際上**帳戶擁有者**更像是貴組織中的財務人員，不負責建立、讀取、更新和刪除資源，這些工作會由**工作負載擁有者**執行。 因此，您必須將**工作負載擁有者**新增至訂用帳戶並指派權限。
 
 由於**帳戶擁有者**是目前唯一有權將**工作負載擁有者**新增至訂用帳戶的使用者，因此他們要將**工作負載擁有者**新增至訂用帳戶：
 
-![Azure 帳戶擁有者會將 * * 工作負載擁有者 * * 新增](../../_images/govern/design/governance-1-5.png)
-至訂用帳戶*圖 5-azure 帳戶擁有者會將工作負載擁有者新增至訂用帳戶。*
+![Azure 帳戶擁有者會將 * * 工作負載擁有者 * * 新增至訂用帳戶 ](../../_images/govern/design/governance-1-5.png)
+ _圖5： azure 帳戶擁有者會將工作負載擁有者新增至訂用帳戶。_
 
 Azure **帳戶擁有者**會藉由指派[角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) 角色，將權限授與**工作負載擁有者**。 RBAC 角色會指定一組權限，讓**工作負載擁有者**針對個別資源類型或一組資源類型使用。
 
 請注意，在此範例中，**帳戶擁有者**已獲得指派[內建**擁有者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)：
 
-![* * 工作負載擁有者 * * 已獲指派內建擁有者](../../_images/govern/design/governance-1-6.png)
-角色*圖 6-已為工作負載擁有者指派內建擁有者角色。*
+![* * 工作負載擁有者 * * 已獲指派內建擁有者角色 ](../../_images/govern/design/governance-1-6.png)
+ _圖6：已為工作負載擁有者指派內建擁有者角色。_
 
 內建**擁有者**角色會在訂用帳戶範圍內，將所有權限授與**工作負載擁有者**。
 
@@ -86,15 +86,15 @@ Azure **帳戶擁有者**會藉由指派[角色型存取控制 (RBAC)](https://d
 
 為了說明這點，讓我們看看當**工作負載擁有者**建立資源群組時會發生什麼事：
 
-![* * 工作負載擁有者 * * 建立資源群組](../../_images/govern/design/governance-1-7.png)
-*圖 7-工作負載擁有者會建立資源群組，並在資源群組範圍繼承內建擁有者角色。*
+![* * 工作負載擁有者 * * 建立資源群組 ](../../_images/govern/design/governance-1-7.png)
+ _圖7：工作負載擁有者會建立資源群組，並在資源群組範圍繼承內建擁有者角色。_
 
 同樣地，內建**擁有者**角色會在資源群組範圍內，將所有權限授與**工作負載擁有者**。 如同稍早所述，此角色是繼承自訂用帳戶層級。 如果有不同的角色在此範圍中指派給這位使用者，則它僅適用於此範圍。
 
 管理範圍的最低層級是**資源**層級。 在資源層級套用的作業僅會套用到資源本身。 同樣地，資源層級的許可權會繼承自資源群組範圍。 例如，讓我們看看如果**工作負載擁有者**將[虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)部署到資源群組，會發生什麼情況：
 
-![* * 工作負載擁有者 * * 會建立](../../_images/govern/design/governance-1-8.png)
-資源*圖 8-工作負載擁有者會建立資源，並在資源範圍繼承內建擁有者角色。*
+![* * 工作負載擁有者 * * 會建立資源 ](../../_images/govern/design/governance-1-8.png)
+ _圖8：工作負載擁有者會建立資源，並在資源範圍繼承內建擁有者角色。_
 
 **工作負載擁有者**會在資源範圍繼承擁有者角色，這表示工作負載擁有者具有虛擬網路的所有權限。
 

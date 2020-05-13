@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3418eeb2a2d141ac7c3b190b8706a404b1cfbc7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997335"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217977"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 
@@ -52,9 +52,9 @@ ms.locfileid: "80997335"
 
 **技術風險：** 最新的更新和軟體修補程式不是最新的虛擬機器（Vm）容易受到安全性或效能問題的影響，這可能會導致服務中斷。
 
-**原則聲明：** 治理工具必須強制在所有已部署的 Vm 上啟用自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新的資產必須包含於 IT 操作所負責的流程中。
+**原則聲明：** 治理工具必須強制在所有已部署的 Vm 上啟用自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新之資產必須包含在 IT 部門所負責的處理程序中。
 
-**潛在的設計選項：** 針對 Azure 託管的 Vm，您可以使用[Azure 自動化中的更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)，提供一致的更新管理。
+**潛在的設計選項：** 針對 Azure 託管的 Vm，您可以使用[Azure 自動化中的更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)來提供一致的更新管理。
 
 ## <a name="deployment-compliance"></a>部署合規性
 
@@ -90,7 +90,7 @@ ms.locfileid: "80997335"
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定業務風險。
 
-若要開始開發與資源一致性相關的自訂原則聲明，請下載[資源一致性範本](./template.md)。
+若要開始開發您自己的自訂資源一致性原則語句，請下載[資源一致性專業領域範本](./template.md)。
 
 若要加速採用這個專業領域，請選擇最符合您環境的可採取動作的[治理指南](../guides/index.md)。 然後修改設計，以納入您特定的公司原則決策。
 

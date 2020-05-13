@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 229f640fed7024b35f67ea3b39c2e4bb2a24a3c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55281d6fc06528c0c9da5c13190ba6b08d83116
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428966"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219201"
 ---
 # <a name="migration-backlog-review"></a>移轉待處理項目檢閱
 
-規劃階段的可採取動作輸出是一個移轉待處理項目，對於目前為止所討論的所有必要條件都會產生影響。 您應將移轉待處理項目的開發視為首先須完成的必要條件。 本文可作為完成必要條件活動的里程碑。 雲端策略小組會負責及維護數位資產。 不過，實現最後的待處理項目，是每個移轉工作成員的責任。 為達到最後的必要條件，雲端策略小組和雲端採用小組應檢閱並了解移轉待辦項目。 在此檢閱期間，兩個小組的成員都必須獲取充分的知識，以闡明移轉待處理項目中的下列要點。
+計畫階段的可採取動作輸出是一個遷移待處理專案，這會影響到目前為止所討論的所有必要條件。 您應將移轉待處理項目的開發視為首先須完成的必要條件。 本文可作為完成必要條件活動的里程碑。 雲端策略小組會負責及維護數位資產。 不過，實現最後的待處理項目，是每個移轉工作成員的責任。 為達到最後的必要條件，雲端策略小組和雲端採用小組應檢閱並了解移轉待辦項目。 在此檢閱期間，兩個小組的成員都必須獲取充分的知識，以闡明移轉待處理項目中的下列要點。
 
 ## <a name="business-outcomes-and-metrics"></a>業務成果和計量
 

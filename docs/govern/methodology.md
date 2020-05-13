@@ -1,5 +1,5 @@
 ---
-title: 雲端治理方法
+title: 管控雲端的方法
 description: 使用以最基本的可行產品（MVP）為基礎的增量治理方法，以支援公司原則並快速地移至雲端採用。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997424"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218385"
 ---
-# <a name="cloud-governance-methodology"></a>雲端治理方法
+# <a name="govern-methodology-for-the-cloud"></a>管控雲端的方法
 
 採用雲端是一個旅程，不是目的地。 過程中，會有清楚的里程碑和實質的商業利益。 不過，當公司開始這個旅程時，最終的雲端採用狀態是未知的。 雲端治理會建立護欄，在整個旅程中讓公司保持安全。
 
@@ -37,17 +37,17 @@ ms.locfileid: "80997424"
 
 **雲端治理的五個專業領域：** 這些專業領域支援公司原則。 每個專業領域都會保護公司避免潛在陷阱：
 
-- 成本管理
-- 安全性基準
-- 資源一致性
-- 身分識別基準
-- 部署加速
+- 成本管理專業領域
+- 安全性基準專業領域
+- 資源一致性專業領域
+- 身分識別基準專業領域
+- 部署加速專業領域
 
 基本上，公司原則的作用是用來偵測潛在問題的早期警告系統。 專業領域可協助公司管理風險並建立護欄。
 
 ## <a name="grow-to-the-end-state"></a>成長至最終狀態
 
-因為治理需求隨著雲端採用旅程而變更，因此需要不同的治理方式。 公司無法等待小組在每一條高速公路上建立護欄和藍圖之後*再踏出第一步*。 公司會期待更快且更順利獲得業務成果。 IT 治理也必須在快速行動，並跟上業務需求，以便隨時掌握雲端採用旅程並避免「影子 IT」。
+因為治理需求隨著雲端採用旅程而變更，因此需要不同的治理方式。 公司無法等待小組在每一條高速公路上建立護欄和藍圖之後_再踏出第一步_。 公司會期待更快且更順利獲得業務成果。 IT 治理也必須在快速行動，並跟上業務需求，以便隨時掌握雲端採用旅程並避免「影子 IT」。
 
 **漸進式治理**方法可提供這些特性。 漸進式治理仰賴較少的公司原則、流程和工具，以建立採用和治理的基礎。 該基礎稱為**最簡可行產品 (MVP)**。 MVP 可讓治理小組在整個採用生命週期中，快速地將治理納入實作。 在雲端採用流程期間，任何時間都可已建立 MVP。 不過，最好的作法是儘早採用 MVP。
 

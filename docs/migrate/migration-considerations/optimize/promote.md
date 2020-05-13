@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0ec1144e93c449f15579d5cf0246bb44785faed0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc67072e80cc752a1167ad453a56fd96f6890874
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429287"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219235"
 ---
-<!-- cSpell:ignore CISO prepromotion -->
+<!-- cSpell:ignore CISO -->
 
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80429287"
 
 升級至生產會將工作負載遷移至雲端的作業標示為完成。 資產及其所有相依性都升階之後，將會重新路由生產流量。 流量的重新路由會使內部部署資產過時，讓它們可以解除委任。
 
-升階程序會隨著工作負載的架構而有所不同。 不過，有幾個一致的必要條件和一些常見的工作。 本文將分別加以說明，並可作為升階前的檢查清單使用。
+升階程序會隨著工作負載的架構而有所不同。 不過，有幾個一致的必要條件和一些常見的工作。 本文會說明每個，並作為一種升級前檢查清單。
 
 ## <a name="prerequisite-processes"></a>必要條件程序
 

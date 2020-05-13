@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434230"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218776"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
@@ -30,14 +30,14 @@ ms.locfileid: "80434230"
 公司具備下列商務設定檔：
 
 - 所有的銷售與營運都位於單一國家/地區，且全球客戶的百分比低。
-- 企業當作單一業務單位營運，預算會隨著銷售、行銷、營運和 IT 等職責調整。
+- 企業會以單一業務單位的方式運作，並將預算對應至函式，包括銷售、行銷、作業和 IT。
 - 企業將大多數的 IT 視為資本流失或成本中心。
 
 ## <a name="current-state"></a>目前狀態
 
 以下是該公司的 IT 和雲端作業目前的狀態：
 
-- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 IT 將這兩個資料中心分別歸類為 Prod 和 DR。
+- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 它會分別將這兩個資料中心稱為「生產」和「DR」。
 - IT 將所有使用者電子郵件帳戶移轉至 Office 365，藉此進入雲端。 此移轉已在六個月前完成。 其他一些 IT 資產已部署至雲端。
 - 應用程式開發小組在開發/測試容量中工作，以瞭解雲端原生功能。
 - 商業智慧 (BI) 小組將試驗雲端中的巨量資料，以及新平台上的資料鑑藏。
@@ -50,8 +50,8 @@ ms.locfileid: "80434230"
 
 - CIO 正在審查個人資料和財務資料的原則，以允許未來的州目標。
 - 應用程式開發和 BI 團隊希望在未來的 24 個月內，根據客戶業務開發和新產品的願景，將雲端式解決方案發佈到生產環境中。
-- 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 預計這將在未來五年內節省約 2500 萬美元的成本。
-    ![內部部署成本與 Azure 成本，示範未來五年的美元傳回 $ 25M 美元](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 這預期會在接下來的五年中，產生預估的 $ 25m 美元成本節約。
+    ![內部部署成本與 Azure 成本，示範未來五年的美元傳回 $ 25m 美元](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - 公司打算改變 it 投資的方式，因為它會將已認可的資本支出重新置放為營運費用。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 
 ## <a name="next-steps"></a>後續步驟

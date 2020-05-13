@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 55dd535e42f6cbd74c8b7071d13a9c94a5228b0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433826"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218997"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>如何使用商務結果範本
 
@@ -26,13 +26,13 @@ ms.locfileid: "80433826"
 
 在此範本中，商務結果著重于三個主題：
 
-- 與專案關係人或商務決策者溝通
-- 瞭解商務驅動程式和目標
-- 將結果對應至特定解決方案和技術功能
+- 與專案關係人或商務決策者一致。
+- 瞭解商務驅動程式與目標。
+- 將結果對應至特定的解決方案和技術功能。
 
 ![商務成果以專案關係人的身分呈現，而不是透過商務成果，透過技術功能](../../_images/strategy/business-outcome-house.png)
 
-*圖 1-透過商務結果，以公司關係人的身分，將商務成果視覺化為一家內部的技術功能。*
+_圖1：商務成果以專案關係人的形式呈現，而不是透過商務結果，而是透過技術功能。_
 
 商務結果範本著重于簡化的交談，可以快速地與專案關係人互動，而不會深入探討技術解決方案。 藉由快速瞭解和協調專案關係人所需的關鍵效能指標（Kpi）和商務驅動程式，您的小組在深入探討「執行詳細資料」之前，可以先考慮高階方法和轉換。
 
@@ -40,7 +40,7 @@ ms.locfileid: "80433826"
 
 ![商務結果範本的範例](../../_images/strategy/business-outcome-template.png)
 
-*圖 2-商務結果範本的範例。*
+_圖2：商務結果範本的範例。_
 
 ## <a name="why-is-this-template-relevant"></a>為什麼此範本是相關的？
 
@@ -48,7 +48,7 @@ ms.locfileid: "80433826"
 
 ![探索的五個重點區域：專案關係人、結果、驅動程式、Kpi 和功能](../../_images/strategy/business-outcome-focus-areas.png)
 
-*圖 3-探索的五個重點區域：專案關係人、結果、驅動程式、Kpi 和功能。*
+_圖3：探索的五個重點區域：專案關係人、結果、驅動程式、Kpi 和功能。_
 
 專案**關係人：** 組織中的誰可能會在特定商務結果中看到最大的價值？ 誰最有可能支援此轉換，特別是當事情變得困難或費時時？ 誰在此轉換成功時有最大的影響？ 這位人員是潛在的專案關係人。
 

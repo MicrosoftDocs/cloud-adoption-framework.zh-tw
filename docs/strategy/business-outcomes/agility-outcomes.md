@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433778"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218929"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
@@ -24,7 +24,7 @@ ms.locfileid: "80433778"
 
 ## <a name="why-is-agility-so-important"></a>為什麼靈活性很重要？
 
-市場變更的速度比以往更快。 從2015年起，只有57家公司仍在「財富 500 61 年&mdash;」，再加上「88.6 百分比」的營業額率。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
+市場變更的速度比以往更快。 從2015年起，只有57家公司仍在「財富 500 61 年」，再加上「 &mdash; 88.6 百分比」的營業額率。 這代表以先前前所未聞的速率進行的市場變更。 IT 彈性或甚至是商務 agilities 不太可能會影響到在財富500上列出的組織，但這些資料可協助我們瞭解市場持續改變的步調。
 
 對於面臨新生威脅和創公司，商業彈性可能是商務計畫成功或失敗之間的差異。 快速調整市場變更可協助您的現有客戶，或從競爭對手領取市場。 下一節中的靈活性相關結果可協助在轉換期間傳達雲端的價值。
 
@@ -32,9 +32,11 @@ ms.locfileid: "80433778"
 
 在具備雲端功能的創新工作期間，上市時間是 IT 能夠解決市場變化的一項重要措施。 在許多情況下，業務領導者可能會有建立應用程式或啟動新產品的現有預算。 清楚溝通上市時間的優點，可以激勵該領導者將預算重新導向至其轉型旅程。
 
-- **範例1：** 美國公司的歐洲部門必須在支援 UK 作業的資料庫中保護客戶資料，以符合 GDPR 法規。 現有的 SQL 版本不支援必要的資料列層級安全性。 就地升級可能會造成干擾。 使用 Azure SQL 來複寫和升級資料庫，客戶會在幾周內新增必要的合規性措施。
+- **範例1：** 美國公司的歐洲部門必須在支援 UK 作業的資料庫中保護客戶資料，以符合 GDPR 法規。 其現有的 SQL Server 版本不支援必要的資料列層級安全性。 就地升級可能會造成干擾。 使用 Azure SQL Database 來複寫和升級資料庫，客戶會在幾周內新增必要的合規性措施。
 
 - **範例2：** 物流公司已探索到市場的未開發區段，但需要新版本的旗艦應用程式來捕捉此市場共用。 其較大的競爭者已進行相同的探索。 藉由執行具備雲端功能的應用程式創新工作，該公司會採用客戶對和 DevOps 導向的開發方法，使其更慢、舊版的競爭對手_x_個月。 這是市場上的快速入門保護客戶群。
+
+<!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora 醫療保健
 
@@ -42,9 +44,12 @@ ms.locfileid: "80433778"
 
 <!-- cSpell:ignore Jamey Shiels -->
 
-> 「身為小組，我們著重于高品質的解決方案和速度。 選擇 Azure 對我們來說是非常轉型的決策。」  
-> Jamey Shiels  
-> 數位體驗副總裁  
+> 「身為小組，我們著重于高品質的解決方案和速度。 選擇 Azure 對我們來說是非常轉型的決策。」
+>
+> Jamey Shiels
+>
+> 數位體驗副總裁
+>
 > Aurora 醫療保健
 
 ## <a name="provision-time"></a>布建時間

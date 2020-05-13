@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80356979"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218487"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 
@@ -24,9 +24,7 @@ ms.locfileid: "80356979"
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>已在使用雲端採用架構
 
-如果您已遵循雲端採用架構，可能已經部署了治理 MVP。 治理是任何操作模型的核心層面。 它存在於雲端採用週期的每個方法中。 因此，[雲端採用架構](../index.md)會提供指引，將治理插入與[雲端採用方案](../plan/index.md)的執行相關的活動。
-
-這項治理整合的其中一個範例是使用藍圖來部署一個或多個登陸區域，這些是[現成](../ready/index.md)的指導方針。 另一個範例是[組織和管理](../ready/azure-best-practices/organize-subscriptions.md)訂用帳戶的指導方針。 如果您已遵循上述任一建議，則下列 MVP 章節只會回顧現有的部署決策。 在快速審查之後，立即跳至[成熟的初始治理解決方案，並套用最佳作法的控制項](./foundation-improvements.md)。
+如果您已遵循雲端採用架構，可能已經部署了治理 MVP。 治理是任何操作模型的核心層面。 它存在於雲端採用週期的每個方法中。 因此，[雲端採用架構](../index.yml)會提供指引，將治理插入與[雲端採用方案](../plan/index.md)的執行相關的活動。 這項治理整合的其中一個範例是使用藍圖來部署一或多個登陸區域，這些是[現成的方法](../ready/index.md)指引。 另一個範例是向[外擴充訂閱](../ready/azure-best-practices/scale-subscriptions.md)的指引。 如果您已遵循上述任一建議，則下列 MVP 章節只會回顧現有的部署決策。 在快速審查之後，立即跳至[成熟的初始治理解決方案，並套用最佳作法的控制項](./foundation-improvements.md)。
 
 ## <a name="establish-an-initial-governance-foundation"></a>建立初始的治理基礎
 

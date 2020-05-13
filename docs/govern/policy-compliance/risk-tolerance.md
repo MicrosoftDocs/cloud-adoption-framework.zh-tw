@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6f49ee7c8aa63af1d7826a817cc2fae28357caba
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430750"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218283"
 ---
 # <a name="evaluate-risk-tolerance"></a>評估風險承受度
 
@@ -29,11 +29,11 @@ ms.locfileid: "80430750"
 > [!IMPORTANT]
 > 在閱讀下列各項之前，請注意每一個風險都可以受到管理。 本文的目標是要通知並準備讀者，以提高產能的風險管理討論。
 
-- **資料缺口：** 與任何轉換相關聯的最高風險就是資料缺口。 資料流程失可能會對您的公司造成重大損害，因而導致客戶遺失、業務降低，甚至是法律責任。 任何針對資料儲存、處理或使用方式上的變更，都會產生風險。 雲端轉換會針對資料管理建立高程度的變更，因此不應採取此風險。 [安全性基準](../security-baseline/index.md)、[資料分類](./data-classification.md)和[增量合理化](../../digital-estate/rationalize.md#incremental-rationalization)都可以協助管理這項風險。
+- **資料缺口：** 與任何轉換相關聯的最高風險就是資料缺口。 資料流程失可能會對您的公司造成重大損害，因而導致客戶遺失、業務降低，甚至是法律責任。 任何針對資料儲存、處理或使用方式上的變更，都會產生風險。 雲端轉換會針對資料管理建立高程度的變更，因此不應採取此風險。 [安全性基準專業領域](../security-baseline/index.md)、[資料分類](./data-classification.md)和[增量合理化](../../digital-estate/rationalize.md#incremental-rationalization)都可以協助您管理這項風險。
 
 - **服務中斷：** 商務營運和客戶經驗非常依賴技術營運。 雲端轉換會在 IT 作業中建立變更。 在某些組織中，這項變更很小，而且很容易調整。 在其他組織中，這些變更可能需要 techops、重新訓練或新的方法來支援雲端作業。 變更愈大，對商務營運和客戶體驗可能會有更大的影響。 若要管理此風險，必須參與轉換規劃中的業務。 發行計畫和第一次工作負載選取在累加[式合理化](../../digital-estate/rationalize.md#incremental-rationalization)的一文中，討論如何選擇轉換專案的工作負載。 該活動中的企業角色是傳達變更優先順序工作負載的商務作業風險。 協助 IT 選擇對作業造成影響較低的工作負載，將會降低整體風險。
 
-- **預算控制：** 成本模型會在雲端中變更。 這項變更可能會產生與成本超支或增加的商品成本（COGS）相關的風險，特別是直接的屬性化營運費用。 當商務與 IT 密切合作時，可以建立有關各種業務單位、程式或專案所使用之成本和服務的透明度。 [成本管理](../cost-management/index.md)供應商務和 IT 可在本主題上合作的方式範例。
+- **預算控制：** 成本模型會在雲端中變更。 這項變更可能會產生與成本超支或增加的商品成本（COGS）相關的風險，特別是直接的屬性化營運費用。 當商務與 IT 密切合作時，可以建立有關各種業務單位、程式或專案所使用之成本和服務的透明度。 [成本管理專業領域](../cost-management/index.md)供應商務和 IT 可在本主題上合作的方式範例。
 
 上述是幾個最常由客戶所反應的風險。 雲端治理小組和雲端採用小組可以開始開發風險設定檔，因為工作負載會遷移並準備好生產環境版本。 根據所需的商務結果和轉換工作，準備好進行交談以定義、精簡和管理風險。
 
