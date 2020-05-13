@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 98cd4a6a57be37e8ab0cfd23beedc558b26f485b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 61398802202a33f9c514cf5a5b6a2528e7b662e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996983"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215988"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -44,14 +44,14 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標，以便決定最
 
 在此情節中：
 
-- 目前，應用程式會跨兩個 Vm`OSTICKETWEB` （ `OSTICKETMYSQL`和）進行分層。
+- 目前，應用程式會跨兩個 Vm （ `OSTICKETWEB` 和）進行分層 `OSTICKETMYSQL` 。
 - VM 位於 VMware ESXi 主機 `contosohost1.contoso.com`(6.5 版)。
 - VMware 環境是由 VM 上所執行的 VCenter Server 6.5 (`vcenter.contoso.com`) 進行管理。
 - Contoso 有內部部署資料中心 (`contoso-datacenter`) 以及內部部署網域控制站 (`contosodc1`)。
 - `OSTICKETWEB` 上的 Web 層應用程式將會遷移至 Azure IaaS VM。
 - 應用程式資料庫將會遷移到適用於 MySQL 的 Azure 資料庫 PaaS 服務。
 - 因為 Contoso 是要移轉生產工作負載，所以資源會位於生產資源群組 `ContosoRG` 中。
-- `OSTICKETWEB`資源將會複寫到主要區域（美國東部2），並放在生產網路（`VNET-PROD-EUS2`）中：
+- `OSTICKETWEB`資源將會複寫到主要區域（美國東部2），並放在生產網路（ `VNET-PROD-EUS2` ）中：
   - Web VM 會位於前端子網路 (`PROD-FE-EUS2`) 中。
 - 應用程式資料庫將會使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)遷移至適用於 MySQL 的 Azure 資料庫。
 - 移轉完成之後，將會解除委任 Contoso 資料中心的內部部署 VM。
@@ -65,27 +65,27 @@ Contoso 會按照下列方式完成移轉程序：
 若要遷移 Web VM：
 
 - 在第一個步驟中，Contoso 會設定部署 Azure Migrate 所需的 Azure 和內部部署基礎結構。
-- 他們已經備妥[Azure 基礎結構](./contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate Server 遷移工具來新增和設定 vm 的複寫。
+- 他們已經備妥[Azure 基礎結構](./contoso-migration-infrastructure.md)，因此 Contoso 只需要透過 Azure Migrate： Server 遷移工具來新增和設定 vm 的複寫。
 - 完成所有準備工作之後，Contoso 就可以開始複寫 VM。
 - 當複寫已啟用且正常運作之後，Contoso 會使用 Azure Migrate 完成移動。
 
 若要遷移資料庫：
 
 1. Contoso 會在 Azure 中佈建 MySQL 執行個體。
-2. Contoso 會設定 Azure 資料庫移轉服務（DMS），以確保能夠存取內部部署資料庫伺服器
-3. Contoso 會將資料庫移轉至適用於 MySQL 的 Azure 資料庫
+2. Contoso 會設定 Azure 資料庫移轉服務（DMS），以確保能夠存取內部部署資料庫伺服器。
+3. Contoso 會將資料庫移轉至適用於 MySQL 的 Azure 資料庫。
 
     ![移轉程序](./media/contoso-migration-rehost-linux-vm-mysql/migration-process.png)
 
 ### <a name="azure-services"></a>Azure 服務
 
-**Service** | **描述** | **成本**
+**服務** | **說明** | **成本**
 --- | --- | ---
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate)可以免費使用，但可能會產生費用，取決於您決定用於評估和遷移的工具（第一方或 ISV）。
-[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
-[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它可為應用程式的開發與部署，提供完全受控、符合企業需求的社群 MySQL 資料庫即服務。 | 深入瞭解適用於 MySQL 的 Azure 資料庫[定價](https://azure.microsoft.com/pricing/details/mysql)和擴充性選項。
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate)可以免費使用，但可能會產生費用，取決於您決定用於評估和遷移的工具（第一方或 ISV）。
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
+[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫[定價](https://azure.microsoft.com/pricing/details/mysql)和擴充性選項。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -93,9 +93,9 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
+**Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
 **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定 Azure 基礎結構。
-**內部部署伺服器** | 內部部署 vCenter 伺服器應執行版本5.5、6.0、6.5 或6。7<br/><br/> 執行5.5、6.0、6.5 或6.7 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。
+**內部部署伺服器** | 內部部署 vCenter 伺服器應執行版本5.5、6.0、6.5 或6.7。 <br><br> 執行5.5、6.0、6.5 或6.7 版本的 ESXi 主機。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。
 **內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
 
 <!-- markdownlint-enable MD033 -->
@@ -106,24 +106,24 @@ Contoso 會按照下列方式完成移轉程序：
 
 > [!div class="checklist"]
 >
-> - **步驟1：準備 Azure 以進行 Azure Migrate Server 遷移。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。
-> - **步驟2：準備內部部署 VMware 以進行 Azure Migrate Server 遷移。** 他們會準備帳戶以進行 VM 探索，並準備在遷移後連線到 Azure VM。
+> - **步驟1：準備 Azure 以進行 Azure Migrate：伺服器遷移。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。
+> - **步驟2：準備內部部署 VMware 以進行 Azure Migrate：伺服器遷移。** 他們會準備帳戶以進行 VM 探索，並準備在遷移後連線到 Azure VM。
 > - **步驟3：複寫 Vm。** 他們要設定複寫，然後開始將 VM 複寫至 Azure 儲存體。
-> - **步驟4：使用 Azure Migrate Server 遷移來遷移應用程式 VM。** 他們會執行測試遷移，確定一切都能正常運作，然後執行完整的遷移，將 VM 移至 Azure。
+> - **步驟4：使用 Azure Migrate：伺服器遷移來遷移應用程式 VM。** 他們會執行測試遷移，確定一切都能正常運作，然後執行完整的遷移，將 VM 移至 Azure。
 > - **步驟5：遷移資料庫。** 他們會使用 Azure 資料庫移轉服務（DMS）來設定遷移。
 
-## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>步驟1：準備適用于 Azure Migrate 伺服器遷移工具的 Azure
+## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>步驟1：準備適用于 Azure Migrate 的 Azure：伺服器遷移工具
 
 以下是 Contoso 將 VM 移轉至 Azure 時，所需的 Azure 元件：
 
 - 在遷移期間建立 Azure Vm 時，將會在其中尋找其所在的 VNet。
-- 已布建並設定 Azure Migrate 伺服器遷移工具（OVA）。
+- Azure Migrate：已布建並設定伺服器遷移工具（OVA）。
 
 他們依照下列方式進行其設定：
 
-1. 設定網路 - Contoso 已設定好網路，當他們 [部署 Azure 基礎結構](./contoso-migration-infrastructure.md) 時，就可以用於 Azure Migrate 伺服器移轉。
+1. 設定網路-Contoso 已設定可用於 Azure Migrate 的網路：[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時的伺服器遷移
 
-2. 提供 Azure Migrate 伺服器遷移工具。
+2. 布建 Azure Migrate：伺服器遷移工具。
 
     - 從 Azure Migrate 下載 OVA 映射，並將其匯入 VMWare。
 
@@ -151,13 +151,13 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需要其他協助？**
 
-[深入了解](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate 伺服器移轉工具。
+[瞭解如何](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate：伺服器遷移工具。
 
-## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>步驟2：準備內部部署 VMware 以進行 Azure Migrate Server 遷移
+## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>步驟2：準備內部部署 VMware 以進行 Azure Migrate：伺服器遷移
 
 遷移至 Azure 之後，Contoso 想要能夠連線到 Azure 中複寫的 Vm。 若要這麼做，Contoso 管理員還需執行一些作業：
 
-- 若要存取 Azure VM，它們會先在內部部署 Linux VM 上啟用 SSH，再進行遷移。 若為 Ubuntu，可以使用下列命令來完成此動作：**Sudo apt-get ssh install -y**。
+- 若要存取 Azure VM，它們會先在內部部署 Linux VM 上啟用 SSH，再進行遷移。 對於 Ubuntu，可以使用下列命令來完成這項作業： `sudo apt-get ssh install -y` 。
 
 - 執行遷移之後，他們可以勾選 [**開機診斷**] 來查看 VM 的螢幕擷取畫面。
 
@@ -179,9 +179,9 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
     ![複寫 VM](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
-2. 在 [複寫]**** > [來源設定]**** > [您的電腦虛擬化了嗎]**** 中，選取 [是，使用 VMware vSphere]****。
+2. 在 [複寫]  > [來源設定]   > [您的電腦虛擬化了嗎]  中，選取 [是，使用 VMware vSphere]  。
 
-3. 在 [內部部署設備]**** 中，選取您設定的 Azure Migrate 設備名稱 > [確定]****。
+3. 在 [內部部署設備]  中，選取您設定的 Azure Migrate 設備名稱 > [確定]  。
 
     ![來源設定](./media/contoso-migration-rehost-linux-vm/source-settings.png)
 
@@ -215,7 +215,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 > [!NOTE]
 > 您可以在複寫開始之前隨時更新複寫設定 (經由 [管理]   > [複寫機器]  )。 在複寫啟動後，就無法變更設定。
 
-## <a name="step-4-migrate-the-vm-with-azure-migrate-server-migration"></a>步驟4：使用 Azure Migrate Server 遷移來遷移 VM
+## <a name="step-4-migrate-the-vm-with-azure-migrate-server-migration"></a>步驟4：使用 Azure Migrate 遷移 VM：伺服器遷移
 
 Contoso 管理員會執行快速測試遷移，然後進行完整遷移來移動 web VM。
 
@@ -272,7 +272,7 @@ Contoso 管理員會在主要美國東部 2 區域中，佈建 MySQL 資料庫�
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-3.png)
 
-6. 新增子網之後，他們會建立虛擬網路規則，允許從生產網路中的資料庫子網進行存取。
+6. 新增子網路之後，他們會建立虛擬網路規則，以允許從生產網路中的資料庫子網路進行存取。
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-4.png)
 
@@ -295,13 +295,13 @@ Contoso 管理員會使用 Azure 資料庫移轉服務，透過[逐步執行遷�
 - 確保符合所有的遷移必要條件：
 
   - MySQL 伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援-MySQL 社區 edition、InnoDB engine，以及使用相同版本跨來源和目標進行遷移。
-  - 在 .ini （Windows）或 my.cnf （Unix）中啟用二進位記錄。 如果無法這麼做，將會`Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more details see https://go.microsoft.com/fwlink/?linkid=873009`在遷移嚮導期間造成錯誤。
-  - 使用者必須擁有`ReplicationAdmin`角色。
+  - 在 .ini （Windows）或 my.cnf （Unix）中啟用二進位記錄。 如果無法這麼做，將會在 `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 遷移嚮導期間造成錯誤。
+  - 使用者必須擁有 `ReplicationAdmin` 角色。
   - 不搭配外鍵和觸發程式來遷移資料庫架構。
 
 - 建立透過 ExpressRoute 或 VPN 連接到內部部署網路的虛擬網路。
 
-- 使用連線到 VNet 的`Premium` SKU 來建立 Azure 資料庫移轉服務。
+- 使用 `Premium` 連線到 VNet 的 SKU 來建立 Azure 資料庫移轉服務。
 
 - 確定 Azure 資料庫移轉服務可以透過虛擬網路存取 MySQL 資料庫。 這會需要確保在虛擬網路層級、網路 VPN 和裝載 MySQL 的機器上，允許從 Azure 到 MySQL 的所有連入埠。
 
@@ -393,7 +393,7 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 
     ![更新 IP](./media/contoso-migration-rehost-linux-vm/update-ip2.png)
 
-3. 他們會使用`systemctl restart apache2`重新開機服務。
+3. 他們會使用重新開機服務 `systemctl restart apache2` 。
 
     ![重新啟動](./media/contoso-migration-rehost-linux-vm/restart.png)
 
@@ -438,7 +438,7 @@ Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安�
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料的安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
+- **保護資料的安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-overview)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
 
 - **讓應用程式保持正常運作。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 

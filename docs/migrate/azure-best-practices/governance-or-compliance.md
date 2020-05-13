@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997611"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216158"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -30,11 +30,14 @@ ms.locfileid: "80997611"
 
 **ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
-**虛擬資料中心：** 可能需要更健全的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
+**Azure 虛擬資料中心：** 可能需要更健全的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 當下列任一項都需要時，這也是複雜治理案例的預設選擇：廣泛的協力廠商合規性需求、深度網域專業知識，或與成熟的 IT 治理原則和合規性需求的同位檢查。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>可供完成必要條件的合作關係選項
 
-**Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項一致，以確保最適當的治理或合規性模型。 請使用[安全雲端深入解析 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) 解決方案供應項目以建立客戶在 Azure 中部署的資料驅動圖，並在識別現有部署架構的最佳化時驗證客戶的 Azure 實作成熟度，以移除治理的安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
+**Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項一致，以確保最適當的治理或合規性模型。 使用[Secure Cloud Insights （SCI）](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)解決方案供應專案，在 Azure 中建立客戶部署的資料驅動圖片，並在識別現有部署架構的優化時驗證客戶的 Azure 實現成熟度，移除治理安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
 
 - **雲端基礎：** 使用[混合式雲端基礎（HCF）](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)解決方案供應專案，建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實作包含共用服務和 IaaS 工作負載的最簡可行產品。
 - **雲端現代化：** 使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應專案做為將應用程式、資料和基礎結構移至企業級雲端的完整方法，以及在雲端部署之後優化和現代化。
@@ -48,19 +51,19 @@ ms.locfileid: "80997611"
 
 治理和合規性評估需求是極度專屬於客戶的，因此無法針對評估期間所採取的實際步驟提供一般性的指引。 不過，此程式應該包含「符合規範/治理需求的一致」的工作和時間配置。 若要進一步了解這些需求，請參閱下列連結：
 
-若要深入了解治理，請檢閱[雲端治理的五個專業領域](../../govern/governance-disciplines.md)。 雲端採用架構的這個區段也包含範本，範本內會記載這五個區段各自的原則、指引和需求：
+若要深入瞭解治理，請閱讀[雲端治理的五個專業領域](../../govern/governance-disciplines.md)的總覽。 雲端採用架構的這一節包含的範本，可記錄五個區段的原則、指引和需求：
 
-- [成本管理](../../govern/cost-management/template.md)
-- [安全性基準](../../govern/security-baseline/template.md)
-- [資源一致性](../../govern/resource-consistency/template.md)
-- [身分識別基準](../../govern/identity-baseline/template.md)
-- [部署加速](../../govern/deployment-acceleration/template.md)
+- [成本管理專業領域](../../govern/cost-management/template.md)
+- [安全性基準專業領域](../../govern/security-baseline/template.md)
+- [資源一致性專業領域](../../govern/resource-consistency/template.md)
+- [身分識別基準專業領域](../../govern/identity-baseline/template.md)
+- [部署加速專業領域](../../govern/deployment-acceleration/template.md)
 
-如需根據雲端採用架構治理模型來開發治理指引的相關指引，請參閱[實作雲端治理策略](../../govern/corporate-policy.md)。
+如需根據雲端採用架構治理模型來開發治理指引的詳細資訊，請參閱[實施雲端治理策略](../../govern/corporate-policy.md)。
 
 ## <a name="optimize-and-promote-process-changes"></a>將程序變更最佳化並升階
 
-在優化和升級過程中，雲端治理小組應該投入時間來測試及驗證遵循治理和合規性標準。 此外，您也可以在這個步驟插入程序來讓雲端治理小組擷取範本，以便為未來的專案提供額外的[部署加速](../../govern/deployment-acceleration/index.md)機制。
+在優化和升級過程中，雲端治理小組應該投入時間來測試及驗證遵循治理和合規性標準。 此外，此步驟是插入雲端治理小組的處理常式以策展範本的好時機，可以為未來的專案提供額外的[部署加速專業領域](../../govern/deployment-acceleration/index.md)。
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最佳化和升階程序期間的建議動作
 

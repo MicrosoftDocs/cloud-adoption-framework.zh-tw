@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f6d45943ac8545083ce8d31215488b433a3ad00b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 40a0899a10e242e98ed16aa2bcbfdbd55f65afc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432451"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216073"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>了解移轉期間的預備活動
 
-如升級模型文章所述，「預備」** 是資產遷移至雲端的時間點。 不過，這些資產尚未準備好升階至生產環境。 這通常是移轉的遷移程序最終步驟。 在預備過後，工作負載便會由 IT 營運或雲端營運小組管理，以便讓其準備好用於生產環境。
+如升級模型文章所述，「預備」__ 是資產遷移至雲端的時間點。 不過，這些資產尚未準備好升階至生產環境。 這通常是移轉的遷移程序最終步驟。 在預備過後，工作負載便會由 IT 營運或雲端營運小組管理，以便讓其準備好用於生產環境。
 
 ## <a name="deliverables"></a>交付項目
 

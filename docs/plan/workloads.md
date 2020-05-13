@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433976"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215512"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義和設定雲端採用方案的工作負載優先順序
 
@@ -28,24 +28,24 @@ ms.locfileid: "80433976"
 
 在雲端採用的環境中，工作負載是 IT 資產（伺服器、Vm、應用程式、資料或設備）的集合，共同支援已定義的進程。 工作負載可以支援一個以上的進程。 工作負載也可能相依于其他共用的資產或較大的平臺。 不過，工作負載應該已定義與相依資產相關的界限，以及依存于工作負載的處理常式。 通常，您可以藉由監視 IT 資產之間的網路流量來視覺化工作負載。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 必要條件清單中的策略性輸入可讓您更輕鬆地完成下列工作。 如需收集本文所討論資料的協助，請參閱[必要條件](./prerequisites.md)。
 
 ## <a name="initial-workload-prioritization"></a>初始工作負載優先順序
 
-在[漸進式合理化](../digital-estate/rationalize.md)的過程中，您的小組應該同意「10個」方法，其中包含10個優先權的工作負載。 這些工作負載可作為採用規劃的初始界限。
+在[漸進式合理化](../digital-estate/rationalize.md)的過程中，您的小組應該同意[10 種方法的強大功能](../digital-estate/rationalize.md#release-planning)，其中包含10個優先權的工作負載。 這些工作負載可作為採用規劃的初始界限。
 
 如果您決定不需要數位資產合理化，建議雲端採用小組和雲端策略小組同意10個應用程式清單，以作為遷移的初始焦點。 我們建議您進一步瞭解這10個工作負載包含簡單工作負載的混合（獨立部署中少於10個資產）和更複雜的工作負載。 這10個工作負載會啟動工作負載優先處理常式。
 
 > [!NOTE]
-> 10的力量是做為規劃的初始界限，著重在早期階段分析的能源和投資。 不過，分析和定義工作負載的動作可能會導致優先順序工作負載清單中的變更。
+> 10種方法的威力是做為規劃的初始界限，著重在早期階段分析的能源和投資。 不過，分析和定義工作負載的動作可能會導致優先順序工作負載清單中的變更。
 
 ## <a name="add-workloads-to-your-cloud-adoption-plan"></a>將工作負載新增至您的雲端採用方案
 
 在前一篇文章中，[雲端採用方案和 Azure DevOps](./template.md)中，您已在 Azure DevOps 中建立雲端採用方案。
 
-您現在可以在雲端採用方案中，以10個清單的功能來表示工作負載。 執行此動作的最簡單方式是在 Microsoft Excel 中進行大量編輯。 若要準備工作站進行大量編輯，請參閱[使用 Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
+您現在可以在雲端採用方案中，以10個清單的功能來表示工作負載。 執行此動作的最簡單方式是在 Microsoft Excel 中進行大量編輯。 若要準備工作站進行大量編輯，請參閱[使用 Microsoft Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
 
 該文章中的步驟5會告訴您選取 [**輸入清單**]。 請改為選取 [**查詢清單**]。 然後，從 [**選取查詢**] 下拉式清單中，選取 [**工作負載範本**] 查詢。 該查詢會將單一工作負載遷移的所有相關工作載入您的試算表。
 

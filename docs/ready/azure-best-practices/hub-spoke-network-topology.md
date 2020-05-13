@@ -8,24 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995125"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215563"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
-「中樞和輪輻」** 是一種網路模型，可更有效地管理常見通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
+「中樞和輪輻」__ 是一種網路模型，可更有效地管理常見通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
 
 - **節省成本和管理效率**。 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠將多餘的資源和管理投入量降至最低。
 - **克服訂用帳戶限制**。 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
-- **考量分隔**。 您可以在中央 IT 小組和工作負載小組之間部署個別工作負載。
+- **考量分隔**。 您可以在中央 IT 小組和工作負載小組之間部署個別的工作負載。
 
 較小的雲端資產可能無法受益於此模型所提供的新增結構和功能。 但較大的雲端採用工作應該考慮採用中樞和輪輻網路架構，如果它們有前述的任何疑慮。
 
@@ -35,11 +34,11 @@ ms.locfileid: "80995125"
 > - [在 Azure 中執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [在 Azure 中使用共用服務來執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 ![中樞和輪輻網路拓撲的範例][1]
 
-如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 其支援通訊、共用資源和集中式安全性原則 (圖表中的「VNet 中樞」)，或適用於大規模分支對分支及分支對 Azure 通訊的虛擬 WAN 類型 (圖表中的「虛擬 WAN」)。
+如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則（圖表中的「虛擬網路中樞」），或適用于大規模分支對分支和分支對 Azure 通訊的虛擬 WAN 類型（在圖表中為「虛擬 WAN」）。
 
 中樞是中央網路區域，可控制和檢查區域之間的輸入或輸出流量：網際網路、內部部署和輪輻。 中樞和輪輻拓撲可讓您的 IT 部門以有效的方式在中央位置強制執行安全性原則。 此外也可降低設定錯誤和暴露的可能性。
 
@@ -48,7 +47,7 @@ ms.locfileid: "80995125"
 - 當第三方從不受信任的網路取得存取權時，需要 Windows Server Active Directory 基礎結構來進行使用者驗證，如此他們才能夠存取輪輻中的工作負載。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
 - DNS 服務，用來對輪輻中的工作負載進行命名解析，以存取內部部署和網際網路上的資源 (如果未使用 [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview))。
 - 公開金鑰基礎結構 (PKI)，用以實作工作負載的單一登入。
-- 輪輻網路區域與網際網路之間的 TCP 和 UDP 流量的流量控制。
+- 輪輻網路區域與網際網路之間 tcp 和 UDP 流量的流量控制。
 - 輪輻與內部部署之間的流量控制。
 - 兩個輪輻之間的流量控制 (如有需要)。
 
@@ -84,6 +83,6 @@ ms.locfileid: "80995125"
 
 <!-- images -->
 
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "高階中樞和輪輻範例"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "中樞和輪輻的叢集"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "支點對支點"
+[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "中樞和輪輻的高層級範例"
+[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "中樞和輪輻的叢集"
+[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "輪輻到輪輻"

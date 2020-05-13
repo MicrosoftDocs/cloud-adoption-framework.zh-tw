@@ -1,27 +1,24 @@
 ---
-title: 雲端平臺功能
-description: 使用適用于 Azure 的雲端採用架構來瞭解雲端平臺功能的構成。
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: 瞭解雲端平臺功能
+description: 瞭解雲端平臺功能，包括來源、範圍和交付成果。
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 2dc5503c7c24263bf74c4708ffe5e1dca0b8b97b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 04/20/2020
+ms.openlocfilehash: 9c2dfc0172df51652bcf56bd7a30a021d4f66900
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428524"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215580"
 ---
-# <a name="cloud-platform-capabilities"></a>雲端平臺功能
+# <a name="cloud-platform-functions"></a>雲端平臺功能
 
 雲端引進許多技術變化，以及簡化技術解決方案的機會。 不過，一般 IT 原則和商務需求保持不變。 您仍然需要保護敏感的商務資料。 如果您的 IT 平臺相依于區域網路，則您很有可能需要在雲端中使用網路定義。 需要存取應用程式和資料的使用者會想要其目前的身分識別來存取相關的雲端資源。
 
-雖然雲端提供學習新技能的機會，但您目前的架構設計人員應該能夠直接應用他們的經驗和主題專長。 雲端平臺功能通常是由一組選取的架構設計人員所提供，著重于學習雲端平臺。 這些架構師接著會協助其他人進行決策，並適當地將控制項應用到雲端環境。
-
-## <a name="possible-sources-for-cloud-platform-expertise"></a>雲端平臺專業知識的可能來源
+雖然雲端提供學習新技能的機會，但您目前的架構設計人員應該能夠直接應用他們的經驗和主題專長。 雲端平臺函式通常是由一組選取的架構設計人員所提供，專門負責學習雲端平臺。 這些架構師接著會協助其他人進行決策，並適當地將控制項應用到雲端環境。
 
 提供完整平臺功能所需的技能可以透過下列方式提供：
 
@@ -35,43 +32,48 @@ ms.locfileid: "80428524"
 - 商務持續性和災害復原
 - IT 內的應用程式擁有者
 
-## <a name="key-responsibilities"></a>主要責任
+## <a name="preparation"></a>準備
+
+- [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一個 Pluralsight 課程，可協助架構設計正確的基礎解決方案。
+- [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎架構設計人員的 Pluralsight 課程。
+- [Azure 網路服務](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何改善復原並減少延遲。
+
+**請檢閱下列項目：**
+
+- [業務成果](../strategy/business-outcomes/index.md)
+- [財務模型](../strategy/financial-models.md)
+- [雲端採用的動機](../strategy/motivations.md)
+- [商務風險](../govern/policy-compliance/risk-tolerance.md)
+- [數位資產的合理化](../digital-estate/index.md)
+
+## <a name="minimum-scope"></a>最小範圍
 
 雲端平臺職責中心圍繞雲端平臺或登陸區域的建立與支援。
 
 通常會定期執行下列工作：
 
-### <a name="strategic-tasks"></a>策略性工作
-
-- 檢閱
-  - [商務結果](../strategy/business-outcomes/index.md)
-  - [財務模型](../strategy/financial-models.md)
-  - [雲端採用的動機](../strategy/motivations.md)
-  - [商務風險](../govern/policy-compliance/risk-tolerance.md)
-  - [數位資產的合理化](../digital-estate/index.md)
 - 根據[優先順序的遷移待辦](../migrate/migration-considerations/assess/release-iteration-backlog.md)專案，監視採用計畫和進度。
 - 找出支援遷移待處理專案所需的平臺變更並設定其優先順序。
 
-### <a name="technical-tasks"></a>技術任務
+**會議步調：**
+
+雲端平臺專業知識通常來自工作團隊。 預期參與者會將其每日排程的一大部分認可到雲端平臺工作。 貢獻不限於會議和意見反應週期。
+
+## <a name="deliverables"></a>交付項目
 
 - 建立和維護雲端平臺，以支援解決方案。
 - 定義和執行平臺架構。
 - 操作及管理雲端平臺。
 - 持續改進平臺。
 - 掌握雲端平臺的新創新。
-- 引進新的雲端功能，以支援商業價值的建立。
+- 引進新的雲端功能，以支援建立商業價值。
 - 建議自助服務解決方案。
-- 確保解決方案符合現有的治理/合規性需求。
+- 確保解決方案符合現有的治理和合規性需求。
 - 建立和驗證平臺架構的部署。
 - 審查新平臺需求來源的發行計畫。
 
-## <a name="meeting-cadence"></a>會議步調
-
-雲端平臺專業知識通常來自工作團隊。 預期參與者會將其每日排程的一大部分認可到雲端平臺工作。 貢獻不限於會議和意見反應週期。
-
 ## <a name="next-steps"></a>後續步驟
 
-隨著雲端平臺的定義更加完善，調整[雲端自動化功能](./cloud-automation.md)可以加速採用。 它也可以協助建立最佳作法，同時降低業務和技術風險。
+隨著雲端平臺的定義變得更好，調整[雲端自動化功能](./cloud-automation.md)可以加速採用。 它也可以協助建立最佳作法，同時降低業務和技術風險。
 
-> [!div class="nextstepaction"]
-> [配合雲端自動化功能](./cloud-automation.md)
+瞭解如何藉由開發跨小組的矩陣，識別負責、參與、諮詢和通知（RACI）的合作物件，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。

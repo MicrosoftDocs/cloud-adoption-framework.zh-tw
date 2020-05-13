@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429374"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216107"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 
-在移轉的評估程序進行期間，小組會設法找出任何會使資產與所選雲端提供者不相容的設定。 「修復」** 是移轉程序中的檢查點，可確保這些不相容的問題能夠獲得解決。 本文會討論一些常見的修復工作以供您參考。 文中也會建立可用來決定修復是否值得的基本架構程序。
+在移轉的評估程序進行期間，小組會設法找出任何會使資產與所選雲端提供者不相容的設定。 「修復」__ 是移轉程序中的檢查點，可確保這些不相容的問題能夠獲得解決。 本文會討論一些常見的修復工作以供您參考。 文中也會建立可用來決定修復是否值得的基本架構程序。
 
 ## <a name="common-remediation-tasks"></a>常見的修復工作
 

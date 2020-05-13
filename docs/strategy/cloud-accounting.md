@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5c01fc4a0a4f1e05b34d8b9c91d71761a6e86f73
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431684"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216226"
 ---
 <!-- cSpell:ignore CIOs -->
 
@@ -30,9 +30,9 @@ ms.locfileid: "80431684"
 
 ## <a name="central-it-accounting-profit-center-model"></a>中央 IT 會計（利潤中心模型）
 
-為了克服 IT 的成本中心觀點，有些 Cio 選擇進行會計的中央 IT 模型。 在這種類型的模型中，它的處理方式就像是競爭業務單位，而對等會產生業務單位。 在某些情況下，此模型可以是完全邏輯的。 例如，有些組織具有可產生收益串流的專業 IT 服務部門。 中央 IT 模型經常不會產生顯著的收益，因此難以證明模型。
+為了克服 IT 的成本中心觀點，有些 Cio 選擇進行會計的集中式 IT 模型。 在這種類型的模型中，它的處理方式就像是競爭業務單位，而對等會產生業務單位。 在某些情況下，此模型可以是完全邏輯的。 例如，有些組織具有可產生收益串流的專業 IT 服務部門。 集中式 IT 模型通常不會產生顯著的收益，因此難以證明模型。
 
-不論是哪一種收益模型，中央 IT 會計模型都是唯一的，因為 IT 單位會有成本的帳戶。 在傳統的 IT 模型中，IT 小組會記錄成本，並從諸如營運和維護（O&M）之類的共用資金，或專用的收益與損失（P&L）帳戶來支付這些成本。
+不論是哪一種收益模型，集中式 IT 會計模型都是唯一的，因為 IT 單位會計算成本。 在傳統的 IT 模型中，IT 小組會記錄成本，並從諸如營運和維護（O&M）之類的共用資金，或專用的收益與損失（P&L）帳戶來支付這些成本。
 
 在中央 IT 會計模型中，IT 小組會標示所提供的服務，以考慮額外負荷、管理和其他預估費用。 接著，它會針對已標示的服務，將競爭業務單位計費。 在此模型中，CIO 預期會管理與這些服務銷售相關聯的 P&L。 這可能會產生膨脹的 IT 成本，以及中央 IT 與業務單位之間的競爭，特別是當它需要降低成本或不符合同意 Sla 時。 在技術或市場改變的過程中，任何新的技術都會造成中央 IT 的 P&L，使轉換變得很棘手。
 

@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a597a76e1d42d08c3800fd2f3831729bf53f10f1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432888"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215478"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊
 
-*轉換*通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
+_轉換_通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
 
 工作負載的合理化或轉型所需的時間會有所不同，視涉及的技術複雜度而定。 不過，即便此程序可快速地套用至單一工作負載或應用程式群組，要在使用者群間產生實質性的改變，仍需要時間。 要將傳播到現有商務程序的各種層級，則需要更長的時間。 如果預期轉換會形塑消費者的行為模式，可能需要更長的時間才能產生顯著的結果。
 

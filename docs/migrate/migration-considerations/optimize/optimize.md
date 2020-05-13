@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c7d375ed8d4d126cfb38b4cd2fde30b1d36526a6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17edc2b008421648a195ab82878d82dcb791bfaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995143"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215941"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -26,7 +26,7 @@ ms.locfileid: "80995143"
 
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>資產應在移轉期間還是之後進行最佳化？
 
-資產應在何時進行最佳化&mdash;移轉期間還是之後？ 簡單的答案是*兩者皆可*。 不過，這並非全然正確。 如需說明，請參閱兩個最佳化資源大小的基本案例：
+資產應在何時進行最佳化&mdash;移轉期間還是之後？ 簡單的答案是_兩者皆可_。 不過，這並非全然正確。 如需說明，請參閱兩個最佳化資源大小的基本案例：
 
 - **已規劃的大小調整。** 資產常會出現明顯過大和使用量過低，而且應在部署期間調整大小的情形。 在此情況下，要判斷資產是否已成功調整大小，必須在移轉後進行使用者接受度測試。 如果進階使用者在測試期間未遇到效能或功能下降的情況，您即可認定資產已成功調整大小。
 - **優化.** 如果不清楚最佳化需求的情況下，IT 小組應使用資料導向的方法來管理資源大小。 IT 小組可以使用資產效能的基準測試，針對解決方案的最適當大小、服務、規模和架構做出明智的決策。 然後，他們可以在移轉後調整大小並測試效能理論。

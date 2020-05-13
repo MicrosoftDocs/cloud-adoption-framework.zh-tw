@@ -1,29 +1,29 @@
 ---
-title: 雲端卓越中心
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何建立卓越的雲端中心（CCoE）。
+title: 瞭解卓越的雲端中心（CCoE）功能
+description: 瞭解雲端中心卓越（CCoE）的功能，包括來源、範圍和交付成果。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428666"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215767"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
-# <a name="cloud-center-of-excellence"></a>雲端卓越中心
+# <a name="cloud-center-of-excellence-ccoe-functions"></a>卓越的雲端中心（CCoE）功能
 
 商務和技術靈活性是大多數 IT 組織的核心目標。 卓越的雲端中心（CCoE）是在速度和穩定性之間建立平衡的功能。
 
 ## <a name="function-structure"></a>函數結構
 
-CCoE 模型需要下列各項功能之間的共同作業：
+CCoE 模型需要下列各項之間的共同作業：
 
 - 雲端採用（特別是解決方案架構設計人員）
 - 雲端策略（特別是方案和專案經理）
@@ -65,7 +65,7 @@ CCoE 的每個成員都負責瞭解導致目前 IT 控制項集的必要條件�
 
 此轉換的範例：
 
-| 案例 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
+| 狀況 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
 |---------|---------|---------|
 | 布建生產 SQL Server | 網路、IT 和資料平臺小組會在數天或甚至數周內布建各種元件。 | 需要伺服器的小組會部署 Azure SQL Database 的 PaaS 實例。 或者，預先核准範本可用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
 | 布建開發環境 | 網路、IT、開發和 DevOps 小組同意規格和部署環境。 | 開發小組會定義自己的規格，並根據配置的預算來部署環境。 |
@@ -133,7 +133,9 @@ IT 領導地位是第一個和最明顯的專案關係人。 IT 管理員將扮�
 
 ## <a name="next-steps"></a>後續步驟
 
-CCoE 模型需要[雲端平臺功能](./cloud-platform.md)和[雲端自動化功能](./cloud-automation.md)。 下一步是要讓[雲端平臺功能](./cloud-platform.md)保持一致。
+CCoE 模型需要雲端平臺功能和雲端自動化功能。 下一步是要讓雲端平臺功能保持一致。
 
-> [!div class="nextstepaction"]
-> [配合雲端平臺功能](./cloud-platform.md)
+深入了解：
+
+- [雲端平臺功能](./cloud-platform.md)
+- [雲端自動化功能](./cloud-automation.md)

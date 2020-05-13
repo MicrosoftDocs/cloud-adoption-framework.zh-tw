@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4321cf289bcab6fbee061fbff27d45fd8d695eac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddeea58c9e50327f318640160317556191c26d7f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432802"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216141"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 
@@ -33,7 +33,7 @@ ms.locfileid: "80432802"
 
 ## <a name="common-database-evaluation-activities"></a>一般資料庫評估活動
 
-- 記錄目前資料庫部署的復原點目標和復原時間目標。 這些資料用於[架構活動](./architect.md)以協助進行決策。
+- 記錄目前資料庫部署的復原點目標（Rpo）和復原時間目標（Rto）。 這些是在[架構活動](./architect.md)期間用來協助進行決策。
 - 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱 [SQL Server 高可用性解決方案指南](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)。
 - 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應至相容的 azure PaaS 解決方案，例如[Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)或適用于[MySQL](https://docs.microsoft.com/azure/mysql)的[azure DB](https://docs.microsoft.com/azure/sql-database) 、[于 postgresql](https://docs.microsoft.com/azure/postgresql)或[適用于 mariadb](https://docs.microsoft.com/azure/mariadb)。
 - 當 PaaS 相容性是不需要任何補救的選項時，請洽詢負責[架構活動](./architect.md)的小組。 PaaS 移轉可以大幅節省時間，並降低大部分雲端解決方案的擁有權總成本 (TCO)。
@@ -42,7 +42,7 @@ ms.locfileid: "80432802"
 - 可能的話，記載對每個資料庫進行呼叫的任何應用程式或其他資產。
 
 > [!NOTE]
-> 任何資產的同步處理都會在複寫期間耗用頻寬。 有個非常常見的缺陷，那就是忽略在複寫點和發行之間保持資產同步所需的頻寬耗用量。 在發行週期內，資料庫是頻寬的常見取用者，而具有大型儲存體磁碟使用量或高變動率的資料庫則特別有關。 在使用者接受度測試 (UAT) 和發行之前，請考慮使用受控制的更新來複寫資料結構的方法。 在此種情況下，Azure Site Recovery 的替代項目可能更適合。 如需詳細資訊，請參閱 [Azure 資料移轉指南](https://datamigration.microsoft.com)中的指引。
+> 任何資產的同步處理都會在複寫期間耗用頻寬。 有個非常常見的缺陷，那就是忽略在複寫點和發行之間保持資產同步所需的頻寬耗用量。 在發行週期內，資料庫是頻寬的常見取用者，而具有大型儲存體磁碟使用量或高變動率的資料庫則特別有關。 在使用者接受度測試 (UAT) 和發行之前，請考慮使用受控制的更新來複寫資料結構的方法。 在此種情況下，Azure Site Recovery 的替代項目可能更適合。 如需詳細資訊，請參閱[Azure 資料庫移轉指南](https://datamigration.microsoft.com)中的指引。
 
 ## <a name="common-network-evaluation-activities"></a>一般網路評估活動
 

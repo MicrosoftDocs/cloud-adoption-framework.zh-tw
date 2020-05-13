@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997933"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216396"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -54,7 +53,7 @@ Azure 提供許多內建角色定義，其中包含三個核心角色來提供�
 - [虛擬機器參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor)角色可以管理虛擬機器，但無法存取它們所連線的虛擬網路或儲存體帳戶。
 - [虛擬機器使用者登入](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login)角色可以在入口網站中檢視虛擬機器，並以一般使用者身分登入。
 
-如需使用內建角色來管理特定功能存取權的另一個範例，請參閱[追蹤營業單位、環境或專案之間的成本](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)中有關控制成本追蹤功能存取的討論。
+如需使用內建角色來管理特定功能存取權的另一個範例，請參閱控制成本追蹤功能存取的討論，以[追蹤各業務單位、環境或專案的成本](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)。
 
 如需可用內建角色的完整清單，請參閱[適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)。
 
@@ -76,10 +75,10 @@ RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理
 
 | 群組 | 一般角色名稱 | 職責 |
 | --- | --- | --- |
-| 安全性作業 | SecOps | 提供一般的安全性監督。<br/><br/> 建立並強制執行安全性原則，例如靜態加密。<br/><br/> 管理加密金鑰。<br/><br/> 管理防火牆規則。 |
+| 安全性作業 | SecOps | 提供一般的安全性監督。  <br><br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
 | 網路作業 | NetOps | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |
 | 系統作業 | SysOps | 指定計算和儲存體基礎結構選項，並維護已部署的資源。 |
-| 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。<br/><br/> 會操作功能和應用程式，以符合服務等級協定 (SLA) 和其他品質標準。 |
+| 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。 <br><br> 會操作功能和應用程式，以符合服務等級協定 (SLA) 和其他品質標準。 |
 
 <!-- markdownlint-enable MD033 -->
 

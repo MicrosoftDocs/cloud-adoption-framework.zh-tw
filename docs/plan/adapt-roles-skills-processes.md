@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 32436e7227f82a3d959f917978368c298743f2d1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc53a552a082a2a355c07842b44f7964710d60d5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428190"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216345"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>調整雲端現有的角色、技能和流程
 

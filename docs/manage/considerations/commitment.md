@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997141"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216175"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -30,12 +30,12 @@ ms.locfileid: "80997141"
 
 當您建立企業承諾時，有幾個重要的層面要對齊：
 
-- IT 作業必要條件
-- 管理責任
-- 雲端租賃
-- 軟成本因素
-- 遺失避免 ROI
-- 管理層級的驗證
+- IT 作業的必要條件。
+- 管理責任。
+- 雲端租使用者。
+- 軟成本因素。
+- 遺失避免的 ROI。
+- 管理層級的驗證。
 
 為了協助您進行決策，本文的其餘部分將更詳細地說明每個層面。
 
@@ -49,7 +49,7 @@ ms.locfileid: "80997141"
 <!-- -->
 
 > [!TIP]
-> 如果您使用[Ops 管理活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則應該更新 ops 管理欄位以反映這些必要條件。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應該代表每月新增的作業管理工具成本。
+> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，應更新 [作業管理] 欄位以反映這些必要條件。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應該代表每月新增的作業管理工具成本。
 
 作業管理基準可作為在下列各節中驗證的初始起始點。
 
@@ -110,7 +110,7 @@ ms.locfileid: "80997141"
 下列計算將逐步解說公式，以協助您進一步瞭解損失和增加的管理投資之間的差異。 如需計算增加管理成本的指引，請參閱[工作負載自動化](./workload.md)和[平臺自動化](./platform.md)。
 
 > [!TIP]
-> 如果您使用[Ops 管理活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，請更新 ops 管理欄位以反映每個交談。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應代表新增的作業管理工具的每月成本。 更新之後，欄位會更新 ROI 公式和下列每個欄位。
+> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，請更新 [作業管理] 欄位以反映每個交談。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應代表新增的作業管理工具的每月成本。 更新之後，欄位會更新 ROI 公式和下列每個欄位。
 
 ### <a name="estimate-outage-hours-per-year"></a>估計中斷（每年小時）
 

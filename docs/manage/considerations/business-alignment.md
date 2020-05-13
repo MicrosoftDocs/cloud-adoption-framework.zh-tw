@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434060"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216583"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務對齊
 
@@ -26,14 +26,14 @@ ms.locfileid: "80434060"
 
 - **[重要性](./criticality.md)：** 將工作負載對應至商務程式。 排名重要性，以專注于投資。
 - **[影響](./impact.md)：** 瞭解潛在中斷的影響，以協助評估雲端管理的投資報酬率。
-- **[承諾](./commitment.md)用量：** 藉由建立及記載*與企業*簽訂的合約，來開發真正的合作關係。
+- **[承諾](./commitment.md)用量：** 藉由建立及記載_與企業_簽訂的合約，來開發真正的合作關係。
 
 > [!NOTE]
 > 這些詞彙的基礎是傳統的 IT 術語，例如 SLA、RTO 和 RPO。 在[承諾](./commitment.md)用量文章中，將會更詳細地說明對應特定商務和 IT 詞彙。
 
-## <a name="ops-management-planning-workbook"></a>Ops 管理規劃活頁簿
+## <a name="operations-management-workbook"></a>Operations management 活頁簿
 
-為了協助捕捉此交談針對詞彙對齊所產生的決策，我們的 GitHub 網站上提供[Ops 管理活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。 此活頁簿不會執行 SLA 或成本計算。 它只是用來協助捕捉這類量值，並預測遺失避免的成果。
+為了協助捕捉此交談針對詞彙對齊而產生的決策，我們的 GitHub 網站上提供了[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。 此活頁簿不會執行 SLA 或成本計算。 它只是用來協助捕捉這類量值，並預測遺失避免的成果。
 
 或者，如果解決方案已部署至雲端，則可以直接在 Azure 中標記這些相同的工作負載和相關聯的資產。
 

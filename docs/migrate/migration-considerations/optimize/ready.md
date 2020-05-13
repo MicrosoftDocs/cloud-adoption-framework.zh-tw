@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8c31b25b7c5ce75ab1b4c1ed3b76e9a1dfcb7422
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429222"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215903"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>讓遷移後的應用程式準備好進行生產環境升階
 
@@ -29,7 +29,7 @@ ms.locfileid: "80429222"
 
 ## <a name="final-technical-readiness-tests"></a>最終的技術整備測試
 
-「就緒」** 是生產發行前的最後一個步驟。 這表示此步驟也是測試工作負載的最後一次機會。 以下是此階段進行期間所建議的幾項測試：
+「就緒」__ 是生產發行前的最後一個步驟。 這表示此步驟也是測試工作負載的最後一次機會。 以下是此階段進行期間所建議的幾項測試：
 
 - **網路隔離測試。** 測試和監視網路流量以確保有適當隔離，而且沒有未預期的網路弱點。 也請驗證在移轉期間所提供的任何網路路由都不會遇到非預期的流量。
 - **相依性測試。** 請確定所有工作負載應用程式相依性都已遷移，而且可以從遷移後的資產存取。
