@@ -1,6 +1,6 @@
 ---
 title: 建立原則遵循流程
-description: 建立策略和流程，以確保您的雲端部署符合原則需求。 
+description: 建立策略和流程，以確保您的雲端部署符合原則需求。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430817"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224182"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +47,7 @@ ms.locfileid: "80430817"
 
 規劃評估新的潛在風險，並視需要更新原則聲明和設計指南。 與 IT 人員和工作負載小組合作，持續評估新的 Azure 功能和服務。 同時排程五個治理專業領域的定期審核週期，以確保原則是最新且符合規範。
 
-### <a name="education"></a>教育訓練
+### <a name="education"></a>Education
 
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 
@@ -75,6 +75,8 @@ ms.locfileid: "80430817"
 每個違規觸發程序都應該有一個對應的動作。 觸發的動作應該一律在違規發生時通知適當的 IT 人員或雲端治理小組成員。 此通知可能會根據偵測到的違規類型和嚴重性，自動審查合規性問題，或啟動預先定義的補救程式。
 
 違規觸發程序和動作的一些範例：
+
+<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 | 雲端治理專業領域 | 範例觸發程序 | 範例動作 |
 |-----------------------------|----------------|---------------|

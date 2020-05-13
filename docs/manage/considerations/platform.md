@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8c79c5fe2069d73a9f488f82700f7a96a7c24829
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527633"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223910"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 

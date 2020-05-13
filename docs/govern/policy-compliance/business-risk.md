@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606591"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224301"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "80606591"
 - 在測試早期，會部署幾乎沒有相關資料的少數資產。 風險很小。
 - 部署第一個工作負載之後，風險會上升一點。 藉由選擇具有小型使用者的原本就低風險應用程式，即可輕鬆補救此風險。
 - 隨著更多工作負載上線，風險會在每次發行時變更。 新的應用程式上線和風險改變。
-- 公司將前 10-20 個應用程式遷移到線上時的風險勢態，與第 1000 個應用程式在雲端進入生產環境時的截然不同。
+- 當公司將前10個或20個應用程式上線時，風險設定檔會與1000th 應用程式進入雲端的生產環境不同。
 
 在傳統的內部部署資產中累積的資產可能會隨時間累積。 企業和 IT 小組的成熟度也以類似的方式增長。 這樣平行成長可能傾向於建立一些不必要的原則負擔。
 

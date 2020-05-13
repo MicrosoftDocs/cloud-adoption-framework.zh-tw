@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7fedacff566fb25e7bb166b62ee711f461209f07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527085"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223808"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -45,14 +45,14 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 <!-- markdownlint-disable MD033 -->
 
-階層 | 資源 | 影響範圍 | 方法
----|---|---|----
-Application | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App 服務、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Azure 監視器（Application Insights）。
-Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。
-Azure 資源-基礎結構即服務（IaaS） | 1. Azure 儲存體<br/> 2. Azure 應用程式閘道<br/> 3. 網路安全性群組<br/> 4. Azure 流量管理員<br/> 5. Azure 虛擬機器<br/> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。<br/> 2. 效能和診斷記錄（活動、存取、效能和防火牆）。<br/> 3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。<br/> 4. 監視端點狀態可用性。<br/> 5. 監視來賓 VM 作業系統（OS）中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。<br/> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。<br/> 2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。<br/> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。<br/> 5. 啟用適用於 VM 的 Azure 監視器。<br/> 6. 啟用容器的 Azure 監視器。
-網路 | 您的虛擬機器與一或多個端點（另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址）之間的通訊。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。
-Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。<br/><li> 具有 Azure 服務的服務健全狀況處於降級或無法使用的狀態。<br/><li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。<br/><li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <br/><li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。<br/><li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。
-Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。
+| 階層 | 資源 | 影響範圍 | 方法 |
+|---|---|---|---|
+| 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 node.js 平臺上執行的 web 應用程式，可在 Azure VM、Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務上執行。 | 監視即時 web 應用程式，以自動偵測效能異常、找出程式碼例外狀況和問題，以及收集使用者行為分析。 |  Application Insights （Azure 監視器的功能）。 |
+| Azure 資源-平臺即服務（PaaS） | Azure 資料庫服務（例如 SQL 或 MySQL）。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。 |
+| Azure 資源-基礎結構即服務（IaaS） | 1. Azure 儲存體 <br> 2. Azure 應用程式閘道 <br>  3. 網路安全性群組 <br>  4. Azure 流量管理員 <br>  5. Azure 虛擬機器 <br>  6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br>  2. 效能和診斷記錄（活動、存取、效能和防火牆）。 <br>  3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。 <br>  4. 監視端點狀態可用性。 <br>  5. 監視來賓 VM 作業系統（OS）中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。 <br>  6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。 <br>  2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。 <br>  3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。 <br>  4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br>  5. 啟用適用於 VM 的 Azure 監視器。 <br>  6. 啟用容器的 Azure 監視器。 |
+| 網路 | 您的虛擬機器與一或多個端點（另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址）之間的通訊。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。 |
+| Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。 <li> 具有 Azure 服務的服務健全狀況處於降級或無法使用的狀態。 <li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。 <li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。 |
+| Azure 租用戶 | Azure Active Directory | 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -74,28 +74,28 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 
 <!-- markdownlint-disable MD033 -->
 
-|需求 | Azure 監視器 | Operations Manager |
-|:--|:---|:---|
-|基礎結構需求 | 否 | 是<br> 至少需要管理伺服器和 SQL server，才能裝載運算元據庫和報表資料倉儲資料庫。 當需要高可用性和嚴重損壞修復，而且有多個網站中的機器、不受信任的系統，以及其他複雜的設計考慮時，複雜度就會增加。|
-|有限的連線能力-無網際網路<br> 或隔離的網路 | 否 | 是 |
-|受限制的連線能力控制網際網路存取 | 是 | 是 |
-|有限的連線-經常中斷連線 | 是 | 是 |
-|可設定的健全狀況監視 | 否 | 是 |
-| Web 應用程式可用性測試（獨立網路） | 是，有限<br> Azure 監視器在此區域提供有限的支援，且需要自訂的防火牆例外。 | 是 |
+| 需求 | Azure 監視器 | Operations Manager |
+|---|---|---|
+| 基礎結構需求 | 否 | 是 <br>  至少需要管理伺服器和 SQL server，才能裝載運算元據庫和報表資料倉儲資料庫。 當需要高可用性和嚴重損壞修復，而且有多個網站中的機器、不受信任的系統，以及其他複雜的設計考慮時，複雜度就會增加。 |
+| 有限的連線能力-無網際網路 <br>  或隔離的網路 | 否 | 是 |
+| 受限制的連線能力控制網際網路存取 | 是 | 是 |
+| 有限的連線-經常中斷連線 | 是 | 是 |
+| 可設定的健全狀況監視 | 否 | 是 |
+| Web 應用程式可用性測試（獨立網路） | 是，有限 <br>  Azure 監視器在此區域提供有限的支援，且需要自訂的防火牆例外。 | 是 |
 | Web 應用程式可用性測試（全域散發） | 否 | 是 |
-|監視 VM 工作負載 | 是，有限<br> 可以收集 IIS 和 SQL Server 錯誤記錄檔、Windows 事件和效能計數器。 需要建立自訂查詢、警示和視覺效果。 | 是<br> 支援使用可用的管理元件監視大部分的伺服器工作負載。 需要 VM 上的 Log Analytics Windows 代理程式或 Operations Manager 代理程式，回報至公司網路上的管理群組。|
-|監視 Azure IaaS | 是 | 是<br> 支援從公司網路監視大部分的基礎結構。 透過 Azure 管理元件，追蹤 Azure Vm、SQL 和儲存體的可用性狀態、計量和警示。|
-|監視 Azure PaaS | 是 | 是，有限<br> 根據 Azure 管理元件中支援的功能。 |
-|Azure 服務監視 | 是<br> | 是<br> 雖然目前沒有透過管理元件提供的 Azure 服務健康狀態的原生監視，您可以建立自訂工作流程來查詢 Azure 服務健康狀態警示。 使用 Azure REST API 透過現有的通知來取得警示。|
-|新式 web 應用程式監視 | 是 | 否 |
-|舊版 web 應用程式監視 | 是，有限制，依 SDK 而有所不同<br> 支援監視較舊版本的 .NET 和 JAVA web 應用程式。 | 是，有限 |
-|監視 Azure Kubernetes Service 容器 | 是 | 否 |
-|監視 Docker 或 Windows 容器 | 是 | 否 |
-|網路效能監視 | 是 | 是，有限<br> 支援可用性檢查，並使用來自公司網路的簡易網路管理通訊協定（SNMP），從網路裝置收集基本統計資料。|
-|互動式資料分析 | 是 | 否<br> 依賴 SQL Server Reporting Services 預先定義的報表、協力廠商的視覺效果解決方案，或自訂的 Power BI 執行。 Operations Manager 資料倉儲的規模和效能限制。 與 Azure 監視器記錄整合，以作為資料匯總需求的替代方案。 您可以藉由設定 Log Analytics 連接器來達到整合。|
-|端對端診斷、根本原因分析，以及及時的疑難排解 | 是 | 是，有限<br> 僅支援內部部署基礎結構和應用程式的端對端診斷和疑難排解。 使用其他 System Center 元件或合作夥伴解決方案。|
-|互動式視覺效果（儀表板） | 是 | 是，有限<br> 透過其 HTML5 web 主控台或合作夥伴解決方案（例如，方形 Up 和 Savision）的先進體驗，提供基本的儀表板。 |
-|與 IT 或 DevOps 工具整合 | 是 | 是，有限 |
+| 監視 VM 工作負載 | 是，有限 <br>  可以收集 IIS 和 SQL Server 錯誤記錄檔、Windows 事件和效能計數器。 需要建立自訂查詢、警示和視覺效果。 | 是 <br>  支援使用可用的管理元件監視大部分的伺服器工作負載。 需要 VM 上的 Log Analytics Windows 代理程式或 Operations Manager 代理程式，回報至公司網路上的管理群組。 |
+| 監視 Azure IaaS | 是 | 是 <br>  支援從公司網路監視大部分的基礎結構。 透過 Azure 管理元件，追蹤 Azure Vm、SQL 和儲存體的可用性狀態、計量和警示。 |
+| 監視 Azure PaaS | 是 | 是，有限 <br><br> 根據 Azure 管理元件中支援的功能。 |
+| Azure 服務監視 | 是 | 是 <br><br> 雖然目前沒有透過管理元件提供的 Azure 服務健康狀態的原生監視，您可以建立自訂工作流程來查詢 Azure 服務健康狀態警示。 使用 Azure REST API 透過現有的通知來取得警示。 |
+| 新式 web 應用程式監視 | 是 | 否 |
+| 舊版 web 應用程式監視 | 是，有限制，依 SDK 而有所不同 <br><br> 支援監視較舊版本的 .NET 和 JAVA web 應用程式。 | 是，有限 |
+| 監視 Azure Kubernetes Service 容器 | 是 | 否 |
+| 監視 Docker 或 Windows 容器 | 是 | 否 |
+| 網路效能監視 | 是 | 是，有限 <br><br> 支援可用性檢查，並使用來自公司網路的簡易網路管理通訊協定（SNMP），從網路裝置收集基本統計資料。 |
+| 互動式資料分析 | 是 | 否 <br><br> 依賴 SQL Server Reporting Services 預先定義的報表、協力廠商的視覺效果解決方案，或自訂的 Power BI 執行。 Operations Manager 資料倉儲的規模和效能限制。 與 Azure 監視器記錄整合，以作為資料匯總需求的替代方案。 您可以藉由設定 Log Analytics 連接器來達到整合。 |
+| 端對端診斷、根本原因分析，以及及時的疑難排解 | 是 | 是，有限 <br><br> 僅支援內部部署基礎結構和應用程式的端對端診斷和疑難排解。 使用其他 System Center 元件或合作夥伴解決方案。 |
+| 互動式視覺效果（儀表板） | 是 | 是，有限 <br><br> 透過其 HTML5 web 主控台或合作夥伴解決方案（例如，方形 Up 和 Savision）的先進體驗，提供基本的儀表板。 |
+| 與 IT 或 DevOps 工具整合 | 是 | 是，有限 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -113,11 +113,11 @@ Azure 租用戶 | Azure Active Directory || 啟用診斷記錄，並設定串流
 - Operations Manager 的功能讓它適合我們的 IT 組織嗎？
 - 整合 Operations Manager 與 Azure 監視器提供我們需要的符合成本效益且全面的監視解決方案嗎？
 
-如果您已經投資 Operations Manager，就不需要專注于規劃遷移來立即取代。 如果 Azure 或其他雲端提供者是以您自己的內部部署網路的延伸模組存在，Operations Manager 可以監視來賓 Vm 和 Azure 資源，就像是在您的公司網路上一樣。 這種方法需要有足夠頻寬的網路與 Azure 虛擬網路之間的可靠網路連線。
+如果您已經投資 Operations Manager，就不需要專注于規劃遷移來立即取代。 如果 Azure 或其他雲端提供者是以您自己的內部部署網路的延伸模組存在，Operations Manager 可以監視來賓 Vm 和 Azure 資源，就像是在您的公司網路上一樣。 這種方法需要在您的網路與 Azure 中具有足夠頻寬的虛擬網路之間進行可靠的網路連線。
 
 若要監視在 Azure 中執行的工作負載，您需要：
 
-- [適用于 Azure 的管理元件](https://www.microsoft.com/download/details.aspx?id=50013)。 它會收集 Azure 服務所發出的效能計量，例如 web 和背景工作角色、Application Insights 可用性測試（web 測試）、Azure 服務匯流排等等。 管理元件會使用 Azure REST API 來監視這些資源的可用性和效能。 某些 Azure 服務類型在管理元件中沒有計量或預先定義的監視，但您仍然可以透過 Azure 管理元件中針對探索到的服務所定義的關聯性來監視它們。
+- [適用于 Azure 的 System Center Operations Manager 管理元件](https://www.microsoft.com/download/details.aspx?id=50013)。 它會收集 Azure 服務所發出的效能計量，例如 web 和背景工作角色、Application Insights 可用性測試（web 測試）、Azure 服務匯流排等等。 管理元件會使用 Azure REST API 來監視這些資源的可用性和效能。 某些 Azure 服務類型在管理元件中沒有計量或預先定義的監視，但您仍然可以透過 Azure 管理元件中針對探索到的服務所定義的關聯性來監視它們。
 
 - [Azure SQL Database 的管理元件](https://www.microsoft.com/download/details.aspx?id=38829)，可使用 azure REST API 和 t-SQL 查詢 SQL Server 系統檢視，來監視 azure sql 資料庫和 azure sql Database 伺服器的可用性和效能。
 

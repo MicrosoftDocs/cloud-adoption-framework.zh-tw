@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 39d8f559bfcd8e7df1a957d7af0488c85ea36876
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a8b8a6c043a5a9b5f666d4a9e1d31d4990ff6380
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429983"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223791"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -21,7 +21,7 @@ ms.locfileid: "80429983"
 
 若要觀察雲端解決方案的健全狀況和可用性，您必須設定監視工具來收集以可預測的失敗狀態為基礎的信號層級。 這些信號是失敗的徵兆，而不是原因。 監視工具會使用計量，並針對先進的診斷和根本原因分析記錄。
 
-仔細規劃監視和遷移。 一開始請先在規劃階段包含監視服務擁有者、作業管理員和其他相關人員，並繼續在整個開發和發行週期中參與。 其焦點將是根據下列準則開發監視設定：
+仔細規劃監視和遷移。 一開始請先在計畫階段中包含監視服務擁有者、作業管理員和其他相關人員，並繼續在整個開發和發行週期中參與。 其焦點將是根據下列準則開發監視設定：
 
 - 什麼是服務的組合？ 這些相依性今天是否受監視？ 若是如此，是否有多項工具？ 是否有機會進行合併，而不會產生風險？
 - 服務的 SLA 為何，以及我要如何測量和報告？

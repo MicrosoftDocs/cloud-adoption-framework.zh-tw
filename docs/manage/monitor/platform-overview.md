@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527154"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223740"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -45,7 +45,7 @@ Application Insights 引進了隨著產業中的變更轉移，其中雲端、�
 - **Application Insights**，用於應用程式監視。
 - **Log Analytics**，這是收集和分析記錄資料的主要位置。
 - 新的**整合警示服務**，可將先前所述的每個其他服務的警示機制結合在一起。  
-- **Azure 網路監看員**，用於監視、診斷和查看 azure 虛擬網路中資源的計量。
+- **Azure 網路監看員**，用於監視、診斷和查看虛擬網路中資源的計量。
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite （OMS）的故事
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 7456d74ac4702ee403583148aa8c3f5491ef5721
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120713"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223689"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -41,7 +41,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 **需求** | **詳細資料**
 --- | ---
-**應用程式** | Azure 中的應用程式應與現在一樣重要。<br/><br/> 其效能應與目前在 VMware 中的效能相同。<br/><br/> 該小組不想在這個應用程式上投注資源。 目前，管理員只會將應用程式安全地移至雲端。<br/><br/> 該小組想要停止支援目前執行應用程式的 Windows Server 2008 R2。<br/><br/> 該小組想要從 SQL Server 2008 R2 移至新型 PaaS 資料庫平台，這樣可減少管理需求。<br/><br/> Contoso 想要盡可能運用其在 SQL Server 授權及軟體保證中所做的投資。<br/><br/> 此外，Contoso 想要緩解 Web 層上單一失敗點的情形。
+**應用程式** | Azure 中的應用程式應與現在一樣重要。 <br><br> 其效能應與目前在 VMware 中的效能相同。 <br><br> 該小組不想在這個應用程式上投注資源。 目前，管理員只會將應用程式安全地移至雲端。 <br><br> 該小組想要停止支援目前執行應用程式的 Windows Server 2008 R2。 <br><br> 該小組想要從 SQL Server 2008 R2 移至新型 PaaS 資料庫平台，這樣可減少管理需求。 <br><br> Contoso 想要盡可能運用其在 SQL Server 授權及軟體保證中所做的投資。 <br><br> 此外，Contoso 想要緩解 Web 層上單一失敗點的情形。
 **限制** | 應用程式由相同 VM 上執行的 ASP.NET 應用程式和 WCF 服務所組成。 他們想要將其分成兩個使用 Azure App Service 的 Web 應用程式。
 **Azure** | Contoso 想要將應用程式移至 Azure，但不想在 VM 上加以執行。 Contoso 想要使用 Web 和資料層的 Azure PaaS 服務。
 **DevOps** | Contoso 想要移轉至 DevOps 模型，使用 Azure DevOps 來處理其建置和發行管線。
@@ -63,7 +63,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 ### <a name="proposed-solution"></a>建議的解決方案
 
 - 針對應用程式 Web 層，Contoso 決定使用 Azure App Service。 透過此 PaaS 服務，僅須變更一些組態即可部署應用程式。 Contoso 將使用 Visual Studio 來進行變更，並部署兩個 Web 應用程式。 一個用於網站，另一個用於 WCF 服務。
-- 為了滿足 DevOps 管線的需求，Contoso 已選擇使用 Azure DevOps 搭配 Git 存放庫來進行「原始程式碼管理」(SCM)。 他們將使用自動化組建和發行來建置程式碼，並將其部署至 Azure App Service。
+- 為了符合 DevOps 管線的需求，Contoso 已針對使用 Git 存放庫的原始碼管理選取了 Azure DevOps。 他們將使用自動化組建和發行來建置程式碼，並將其部署至 Azure App Service。
 
 ### <a name="database-considerations"></a>資料庫考量
 
@@ -85,8 +85,8 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 **考量** | **詳細資料**
 --- | ---
-**優點** | SmartHotel360 應用程式的程式碼無需變更即可移轉至 Azure。<br/><br/> Contoso 可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit 來妥善運用軟體保證中的投資。<br/><br/> 移轉之後，即無須支援 Windows Server 2008 R2。 如需詳細資訊，請參閱 [Microsoft 生命週期原則](https://aka.ms/lifecycle)。<br/><br/> Contoso 可以使用多個執行個體來設定應用程式的 Web 層，使它不再是單一失敗點。<br/><br/> 資料庫不會再依賴過時的 SQL Server 2008 R2。<br/><br/> SQL 受控執行個體可援 Contoso 的技術需求和目標。<br/><br/> 受控執行個體將提供與其目前部署的 100% 相容性，同時將其從 SQL Server 2008 R2 中移走。<br/><br/> 他們可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit，來妥善運用軟體保證中的投資。<br/><br/> 他們可以重複使用 Azure 資料庫移轉服務進行其他未來的移轉作業。<br/><br/> SQL 受控執行個體具有 Contoso 不需設定的內建容錯功能。 這可確保資料層不再是單一的容錯移轉點。
-**缺點** | Azure App Service 只支援對每個 Web 應用程式部署一個應用程式。 這表示必須佈建兩個 Web 應用程式 (一個用於網站，一個用於 WCF 服務)。<br/><br/>在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。
+**優點** | SmartHotel360 應用程式的程式碼無需變更即可移轉至 Azure。 <br><br> Contoso 可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit 來妥善運用軟體保證中的投資。 <br><br> 移轉之後，即無須支援 Windows Server 2008 R2。 如需詳細資訊，請參閱 [Microsoft 生命週期原則](https://aka.ms/lifecycle)。 <br><br> Contoso 可以使用多個執行個體來設定應用程式的 Web 層，使它不再是單一失敗點。 <br><br> 資料庫不會再依賴過時的 SQL Server 2008 R2。 <br><br> SQL 受控執行個體可援 Contoso 的技術需求和目標。 <br><br> 受控執行個體將提供與其目前部署的 100% 相容性，同時將其從 SQL Server 2008 R2 中移走。 <br><br> 他們可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit，來妥善運用軟體保證中的投資。 <br><br> 他們可以重複使用 Azure 資料庫移轉服務進行其他未來的移轉作業。 <br><br> SQL 受控執行個體具有 Contoso 不需設定的內建容錯功能。 這可確保資料層不再是單一的容錯移轉點。
+**缺點** | Azure App Service 只支援對每個 Web 應用程式部署一個應用程式。 這表示必須佈建兩個 Web 應用程式 (一個用於網站，一個用於 WCF 服務)。 <br><br> 在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -103,14 +103,14 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**Service** | **描述** | **成本**
+**服務** | **說明** | **成本**
 --- | --- | ---
-[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
 [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用受完整管理的平台建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -118,7 +118,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 已在前文說明的步驟中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
+**Azure 訂用帳戶** | Contoso 已在前文說明的步驟中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
 **Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。
 
 <!--markdownlint-enable MD033 -->
@@ -144,7 +144,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 - 建立受控執行個體後，Contoso 就不得在該子網路中新增資源。
 - 子網路不能有與其相關聯的網路安全性群組。
 - 子網路必須有使用者定義的路由表。 唯一指派的路由應該是 0.0.0.0/0 下一個躍點網際網路。
-- 選擇性自訂 DNS：如果在 Azure 虛擬網路上指定自訂 DNS，則必須將 Azure 的遞迴解析程式 IP 位址 (例如 168.63.129.16) 新增至清單。 了解如何[為受控執行個體設定自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增到清單中。 瞭解如何[設定 Azure SQL Database 受控執行個體的自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
 - 子網路不得有相關聯的服務端點 (儲存體或 SQL)。 虛擬網路上應該停用服務端點。
 - 子網路必須至少具有 16 個 IP 位址。 了解如何[調整受控執行個體子網路的大小](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
 - 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解[DNS 自訂](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
@@ -239,7 +239,7 @@ Contoso 管理員會使用 Azure 資料庫移轉服務（DMS），透過[逐步�
 
 總而言之，您必須執行下列動作：
 
-- 使用連線到 VNet 的`Premium` SKU 來建立 Azure 資料庫移轉服務（DMS）。
+- 使用 `Premium` 連線到 VNet 的 SKU 來建立 Azure 資料庫移轉服務（DMS）。
 - 確定 Azure 資料庫移轉服務（DMS）可以透過虛擬網路存取遠端 SQL Server。 這會需要確保所有連入埠都可從 Azure 允許在虛擬網路層級、網路 VPN 和裝載 SQL Server 的電腦上 SQL Server。
 - 設定 Azure 資料庫移轉服務：
   - 建立遷移專案。
@@ -298,11 +298,11 @@ Contoso 管理員必須確定 Web 應用程式和資料庫皆可進行通訊。 
 
     ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. 他們使用 Visual Studio，從解決方案檔案中開啟 **SmartHotel.Registration.wcf** 專案。 在 WCF 服務 SmartHotel.Registration.Wcf 的 web.config 檔案中，**connectionStrings** 區段應更新為此連接字串。
+3. 他們使用 Visual Studio，從解決方案檔案中開啟 **SmartHotel.Registration.wcf** 專案。 WCF 服務**SmartHotel**之 web.config 檔案的**connectionStrings**區段，應使用連接字串進行更新。
 
      ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. 在 SmartHotel.Registration.Web 的 web.config 檔案中，**client** 區段應變更為指向 WCF 服務的新位置。 這是裝載服務端點的 WCF Web 應用程式 URL。
+4. **SmartHotel**之 web.config 檔案的**用戶端**區段應變更為指向 WCF 服務的新位置中。 這是裝載服務端點的 WCF Web 應用程式 URL。
 
     ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 
@@ -312,7 +312,7 @@ Contoso 管理員必須確定 Web 應用程式和資料庫皆可進行通訊。 
 
 Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
-1. 在 Azure DevOps 中，他們會選取 [**建立和發行** > **新管線**]。
+1. 在 Azure DevOps 中，他們會選取 [**建立和發行**  >  **新管線**]。
 
     ![新增管線](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline1.png)
 
@@ -339,7 +339,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
      ![構件](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline6.png)
 
-7. 他們會選取 [**發行** > **+ 新增管線**]。
+7. 他們會選取 [**發行**  >  **+ 新增管線**]。
 
     ![新增管線](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline7.png)
 
@@ -379,7 +379,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
     ![儲存 WCF](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
-17. 他們會選取 [**管線** > **階段**] [**新增**]，以新增**shweb-eus2-EUS2**的環境。 他們會選取另一個 Azure App Service 部署。
+17. 他們會選取 [**管線**  >  **階段**]、[ **+ 新增**] 以新增**shweb-eus2 的環境-EUS2**。 他們會選取另一個 Azure App Service 部署。
 
     ![新增環境](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 

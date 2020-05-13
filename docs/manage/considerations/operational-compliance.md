@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527638"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223927"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的營運合規性
 
@@ -30,7 +30,7 @@ ms.locfileid: "80527638"
 
 ### <a name="resource-consistency"></a>資源一致性
 
-雲端管理小組可進行作業合規性的最有效步驟，就是在資源組織和標記中建立一致性。 當資源一致地組織並加上標籤時，其他所有作業工作會變得更容易。 如需更深入的資源一致性指引，請參閱雲端採用週期的[治理階段](../../govern/index.md)。 具體而言，[最初的治理基礎文章](../../govern/initial-foundation.md)會示範如何開始開發資源一致性。
+雲端管理小組可進行作業合規性的最有效步驟，就是在資源組織和標記中建立一致性。 當資源一致地組織並加上標籤時，其他所有作業工作會變得更容易。 如需更深入的資源一致性指引，請參閱[治理方法](../../govern/index.md)。 具體而言，請參閱[最初的治理基礎文章](../../govern/initial-foundation.md)，以瞭解如何開始開發資源一致性。
 
 ### <a name="environment-consistency"></a>環境一致性
 

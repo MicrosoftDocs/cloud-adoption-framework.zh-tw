@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 166c938b510959427a30cecea1c97de35032d20e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 97008960de4eecb7ff0dc4f756ad4ca11865c634
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427009"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224046"
 ---
 ::: zone target="docs"
 
@@ -32,11 +32,11 @@ ms.locfileid: "80427009"
 
 下表可協助您根據實作需求找到最佳的解決方案。
 
-|服務  |預先建置的模型  |建置和實驗  |使用 Python 來訓練和建置|所需技能|
-|---------|---------|---------|---------|---------|
-|Azure 認知服務|是|否|否|API 和開發人員技能|
-|Azure Machine Learning Studio|是|是|否|大致了解預測演算法|
-|Azure Machine Learning 服務|是|是|是|資料科學家|
+| 服務 | 預先建置的模型 | 建置和實驗 | 使用 Python 來訓練和建置 | 所需技能 |
+|---|---|---|---|---|
+| Azure 認知服務 | 是 | 否 | 否 | API 和開發人員技能 |
+| Azure Machine Learning Studio | 是 | 是 | 否 | 大致了解預測演算法 |
+| Azure Machine Learning 服務 | 是 | 是 | 是 | 資料科學家 |
 
 ## <a name="azure-cognitive-services"></a>[Azure 認知服務](#tab/CognitiveServices)
 
@@ -48,7 +48,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 若要使用認知服務 API：
 
-1. 在 [Azure 入口網站](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts)中，移至 [認知服務]  。
+1. 在 [Azure 入口網站](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts)中，移至 [認知服務]  。
 2. 選取 [新增]  以在 Azure Marketplace 中尋找認知服務 API。
 3. 執行下列任一步驟：
    - 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace]  方塊中輸入此名稱。
@@ -56,11 +56,7 @@ Azure 認知服務是讓您最輕鬆快速地預測客戶需求的途徑。 認�
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
-
-<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 

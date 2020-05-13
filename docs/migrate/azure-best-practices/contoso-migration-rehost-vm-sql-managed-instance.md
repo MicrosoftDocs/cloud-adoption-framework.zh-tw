@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 089a772bdc41bc96f327f9d9ce34d2107fd48934
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996787"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223621"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -88,10 +88,10 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 <!-- markdownlint-disable MD033 -->
 
-**考量** | **詳細資料**
---- | ---
-**優點** | WEBVM 會移至 Azure (不需變更)，讓移轉變得更簡單。<br/><br/> SQL 受控執行個體可援 Contoso 的技術需求和目標。<br/><br/> 受控執行個體將提供與其目前部署的 100% 相容性，同時將其從 SQL Server 2008 R2 中移走。<br/><br/> 他們可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit，來妥善運用軟體保證中的投資。<br/><br/> 他們可以重複使用 Azure 資料庫移轉服務進行其他未來的移轉作業。<br/><br/> SQL 受控執行個體具有 Contoso 不需設定的內建容錯功能。 這可確保資料層不再是單一的容錯移轉點。
-**缺點** | WEBVM 會執行 Windows Server 2008 R2。 雖然 Azure 支援此作業系統，但它不再是支援的平台。 [深入了解](https://support.microsoft.com/help/956893)。<br/><br/> Web 層會保留只有 WEBVM 提供服務的單一容錯移轉點。<br/><br/> Contoso 必須繼續支持此應用程式 Web 層作為 VM，而不是轉向 Azure App Service 等受控服務。<br/><br/> 在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。
+| **考量** | **詳細資料** |
+| --- | --- |
+| **優點** | WEBVM 會移至 Azure (不需變更)，讓移轉變得更簡單。 <br><br> SQL 受控執行個體可援 Contoso 的技術需求和目標。 <br><br> 受控執行個體將提供與其目前部署的 100% 相容性，同時將其從 SQL Server 2008 R2 中移走。 <br><br> 他們可以使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit，來妥善運用軟體保證中的投資。 <br><br> 他們可以重複使用 Azure 資料庫移轉服務進行其他未來的移轉作業。 <br><br> SQL 受控執行個體具有 Contoso 不需設定的內建容錯功能。 這可確保資料層不再是單一的容錯移轉點。 |
+| **缺點** | WEBVM 會執行 Windows Server 2008 R2。 雖然 Azure 支援此作業系統，但它不再是支援的平台。 [深入了解](https://support.microsoft.com/help/956893)。 <br><br> Web 層會保留只有 WEBVM 提供服務的單一容錯移轉點。 <br><br> Contoso 必須繼續支持此應用程式 Web 層作為 VM，而不是轉向 Azure App Service 等受控服務。 <br><br> 在資料層中，如果 Contoso 想要自訂作業系統或資料庫伺服器，或是想要執行第三方應用程式以及 SQL Server，受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -107,25 +107,25 @@ Contoso 會完成下列步驟，以將 SmartHotel360 應用程式的 Web 和資�
 
 ### <a name="azure-services"></a>Azure 服務
 
-服務 | 描述 | 成本
---- | --- | ---
-[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
-[Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
+| 服務 | 描述 | 成本 |
+| --- | --- | --- |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 瞭解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和 | [資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
+| [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來 | 評估其 VMware Vm。 Azure Migrate 評估遷移的適用性 | 的電腦。 它提供在中執行的大小調整和成本預估 | Azure。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 Contoso 和其他使用者都必須符合此案例的下列先決條件：
 
 <!-- markdownlint-disable MD033 -->
 
-需求 | 詳細資料
---- | ---
-**Azure 訂用帳戶** | 當您在這系列的第一篇文章中執行評量時，您應該已經建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有的訂用帳戶，而且您不是訂用帳戶的系統管理員，則必須與管理員合作，將所需資源群組和資源的擁有者或參與者許可權指派給您。
-**Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。
-**內部部署伺服器** | 內部部署 vCenter 伺服器應執行 5.5、6.0 或 6.5 版<br/><br/> 執行 5.5、6.0 或 6.5 版的 ESXi 主機<br/><br/> 一或多部在 ESXi 主機上執行的 VMware VM。
-**內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
-**資料庫移轉服務** | 要使用 Azure 資料庫移轉服務，您必須要有[相容的內部部署 VPN 裝置](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。<br/><br/> 您必須能夠設定內部部署 VPN 裝置。 它必須有對外開放的公用 IPv4 位址。 此位址不能位於 NAT 裝置後方。<br/><br/> 請確定您可以存取內部部署 SQL Server 資料庫。<br/><br/> Windows 防火牆應該要能存取來源資料庫引擎。 了解如何[設定用於 Database Engine 存取的 Windows 防火牆](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)。<br/><br/> 如果資料庫機器前面有防火牆，請新增規則以允許存取資料庫，以及允許透過 SMB 連接埠 445 存取檔案。<br/><br/> 用來連線至來源 SQL Server 執行個體和目標受控執行個體的認證，必須是 sysadmin 伺服器角色的成員。<br/><br/> 內部部署資料庫中必須有可供 Azure 資料庫移轉服務用來備份來源資料庫的網路共用。<br/><br/> 請確定執行來源 SQL Server 執行個體的服務帳戶擁有網路共用的寫入權限。<br/><br/> 請記下擁有網路共用完整控制權限的 Windows 使用者和密碼。 Azure 資料庫移轉服務會模擬這些使用者認證，以將備份檔案上傳至 Azure 儲存體容器。<br/><br/> SQL Server Express 安裝程序預設會將 TCP/IP 通訊協定設定為**停用**。 請務必將其啟用。
+| 需求 | 詳細資料 |
+| --- | --- |
+| **Azure 訂用帳戶** | 當您在這系列的第一篇文章中執行評量時，您應該已經建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是訂用帳戶的系統管理員，則必須與管理員合作，將所需資源群組和資源的擁有者或參與者許可權指派給您。 |
+| **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。 |
+| **內部部署伺服器** | 內部部署 vCenter 伺服器應執行版本5.5、6.0 或6.5。 <br><br> 執行5.5、6.0 或6.5 版的 ESXi 主機。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
+| **內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。 |
+| **資料庫移轉服務** | 要使用 Azure 資料庫移轉服務，您必須要有[相容的內部部署 VPN 裝置](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。 <br><br> 您必須能夠設定內部部署 VPN 裝置。 它必須有對外開放的公用 IPv4 位址。 此位址不能位於 NAT 裝置後方。 <br><br> 請確定您可以存取內部部署 SQL Server 資料庫。 <br><br> Windows 防火牆應該要能存取來源資料庫引擎。 了解如何[設定用於 Database Engine 存取的 Windows 防火牆](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)。 <br><br> 如果資料庫機器前面有防火牆，請新增規則以允許存取資料庫，以及允許透過 SMB 連接埠 445 存取檔案。 <br><br> 用來連線至來源 SQL Server 執行個體和目標受控執行個體的認證，必須是 sysadmin 伺服器角色的成員。 <br><br> 內部部署資料庫中必須有可供 Azure 資料庫移轉服務用來備份來源資料庫的網路共用。 <br><br> 請確定執行來源 SQL Server 執行個體的服務帳戶擁有網路共用的寫入權限。 <br><br> 請記下擁有網路共用完整控制權限的 Windows 使用者和密碼。 Azure 資料庫移轉服務會模擬這些使用者認證，以將備份檔案上傳至 Azure 儲存體容器。 <br><br> SQL Server Express 安裝程序預設會將 TCP/IP 通訊協定設定為**停用**。 請務必將其啟用。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -137,11 +137,11 @@ Contoso 和其他使用者都必須符合此案例的下列先決條件：
 >
 > - **步驟1：準備 SQL Database 受控執行個體。** Contoso 需要現有的受控執行個體，以作為內部部署 SQL Server 資料庫的移轉目的地。
 > - **步驟2：準備 Azure 資料庫移轉服務。** Contoso 必須註冊資料庫移轉提供者、建立執行個體，然後建立 Azure 資料庫移轉服務專案。 Contoso 也必須為 Azure 資料庫移轉服務設定共用存取簽章 (SAS) 統一資源識別項 (URI)。 SAS URI 可提供 Contoso 儲存體帳戶資源的委派存取權，以便 Contoso 對儲存體物件授與有限的權限。 Contoso 會設定 SAS URI，以便 Azure 資料庫移轉服務存取儲存體帳戶容器 (此為服務在上傳 SQL Server 備份檔案時的上傳目的地)。
-> - **步驟3：準備 Azure 以進行 Azure Migrate Server 遷移。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。
-> - **步驟4：準備內部部署 VMware 以進行 Azure Migrate Server 遷移。** 他們會準備帳戶以進行 VM 探索，並準備在遷移後連線到 Azure Vm。
+> - **步驟3：準備 Azure 以進行 Azure Migrate：伺服器遷移。** 他們將伺服器移轉工具新增至其 Azure Migrate 專案。
+> - **步驟4：準備內部部署 VMware 以進行 Azure Migrate：伺服器遷移。** 他們會準備帳戶以進行 VM 探索，並準備在遷移後連線到 Azure Vm。
 > - **步驟5：複寫 Vm。** 他們要設定複寫，然後開始將 VM 複寫至 Azure 儲存體。
 > - **步驟6：使用 Azure 資料庫移轉服務遷移資料庫。** Contoso 遷移資料庫。
-> - **步驟7：使用 Azure Migrate Server 遷移來遷移 VM。** 他們會執行測試遷移，確定一切都能正常運作，然後執行完整遷移來將 Vm 移至 Azure。
+> - **步驟7：使用 Azure Migrate：伺服器遷移來遷移 VM。** 他們會執行測試遷移，確定一切都能正常運作，然後執行完整遷移來將 Vm 移至 Azure。
 
 ## <a name="step-1-prepare-a-sql-database-managed-instance"></a>步驟 1：準備 SQL Database 受控執行個體
 
@@ -151,7 +151,7 @@ Contoso 和其他使用者都必須符合此案例的下列先決條件：
 - 建立受控執行個體後，Contoso 就不得在該子網路中新增資源。
 - 子網路不能有與其相關聯的網路安全性群組。
 - 子網路必須有使用者定義的路由表。 唯一指派的路由應該是 0.0.0.0/0 下一個躍點網際網路。
-- 選擇性自訂 DNS：如果在 Azure 虛擬網路上指定自訂 DNS，則必須將 Azure 的遞迴解析程式 IP 位址 (例如 168.63.129.16) 新增至清單。 了解如何[為受控執行個體設定自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增到清單中。 瞭解如何[設定 Azure SQL Database 受控執行個體的自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
 - 子網路不得有相關聯的服務端點 (儲存體或 SQL)。 虛擬網路上應該停用服務端點。
 - 子網路必須至少具有 16 個 IP 位址。 了解如何[調整受控執行個體子網路的大小](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration)。
 - 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解[DNS 自訂](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
@@ -272,39 +272,39 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 - 了解如何[設定 Azure 資料移轉服務](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)。
 - 了解如何[建立和使用 SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)。
 
-## <a name="step-3-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>步驟3：準備適用于 Azure Migrate Server 遷移工具的 Azure
+## <a name="step-3-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>步驟3：準備 Azure 以進行 Azure Migrate：伺服器遷移工具
 
 以下是 Contoso 將 VM 移轉至 Azure 時，所需的 Azure 元件：
 
 - 在遷移期間建立 Azure Vm 時，將會在其中尋找其所在的 VNet。
-- Azure Migrate 伺服器移轉工具佈建。
+- Azure Migrate：伺服器遷移工具已布建。
 
 他們依照下列方式進行其設定：
 
-1. **設定網路：** Contoso 已設定網路，可在[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時用於 Azure Migrate 伺服器遷移
+1. **設定網路：** Contoso 已設定可用於 Azure Migrate 的網路：[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時的伺服器遷移
 
     - SmartHotel360 應用程式為生產應用程式，而且 VM 會被移轉至美國東部 2 主要區域的 Azure 生產網路 (VNET-PROD-EUS2)。
     - 這兩個 VM 會置於可作為生產資源的 ContosoRG 資源群組中。
     - 應用程式前端 VM (WEBVM) 將移轉至生產網路中的前端子網路 (PROD-FE-EUS2)。
     - 應用程式前端 VM (SQLVM) 將移轉至生產網路中的資料庫子網路 (PROD-DB-EUS2)。
 
-## <a name="step-4-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>步驟4：準備內部部署 VMware 以進行 Azure Migrate Server 遷移
+## <a name="step-4-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>步驟4：準備內部部署 VMware 以進行 Azure Migrate：伺服器遷移
 
 以下是 Contoso 將 VM 移轉至 Azure 時，所需的 Azure 元件：
 
 - 在遷移期間建立 Azure Vm 時，將會在其中尋找其所在的 VNet。
-- 已布建並設定 Azure Migrate 伺服器遷移工具（OVA）。
+- Azure Migrate：已布建並設定伺服器遷移工具（OVA）。
 
 他們依照下列方式進行其設定：
 
-1. 設定網路 - Contoso 已設定好網路，當他們 [部署 Azure 基礎結構](./contoso-migration-infrastructure.md) 時，就可以用於 Azure Migrate 伺服器移轉。
+1. 設定網路-Contoso 已設定可用於 Azure Migrate 的網路：[部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時的伺服器遷移
 
     - SmartHotel360 應用程式為生產應用程式，而且 VM 會被移轉至美國東部 2 主要區域的 Azure 生產網路 (VNET-PROD-EUS2)。
     - 這兩個 VM 會置於可作為生產資源的 ContosoRG 資源群組中。
     - 應用程式前端 VM (WEBVM) 將移轉至生產網路中的前端子網路 (PROD-FE-EUS2)。
     - 應用程式前端 VM (SQLVM) 將移轉至生產網路中的資料庫子網路 (PROD-DB-EUS2)。
 
-2. 提供 Azure Migrate 伺服器遷移工具。
+2. 布建 Azure Migrate：伺服器遷移工具。
 
     - 從 Azure Migrate 下載 OVA 映射，並將其匯入 VMWare。
 
@@ -332,7 +332,7 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 
 **需要其他協助？**
 
-[深入了解](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate 伺服器移轉工具。
+[瞭解如何](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate：伺服器遷移工具。
 
 ### <a name="prepare-on-premises-vms"></a>準備內部部署 Vm
 
@@ -360,7 +360,7 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
    - 若是 windows，觸發遷移時，VM 上不應該有擱置中的 Windows 更新。 如果有，在更新完成之前，他們將無法登入 VM。
    - 在遷移之後，他們可以勾選 [**開機診斷**] 以查看 VM 的螢幕擷取畫面。 若未解決問題，他們應確認 VM 是否執行中，並檢閱這些[疑難排解祕訣](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)。
 
-5. 需要其他協助嗎？
+5. 需要其他協助？
 
    - [瞭解如何](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)準備 vm 以進行遷移。
 
@@ -374,9 +374,9 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
     ![複寫 VM](./media/contoso-migration-rehost-vm/select-replicate.png)
 
-2. 在 [複寫]**** > [來源設定]**** > [您的電腦虛擬化了嗎]**** 中，選取 [是，使用 VMware vSphere]****。
+2. 在 [複寫]  > [來源設定]   > [您的電腦虛擬化了嗎]  中，選取 [是，使用 VMware vSphere]  。
 
-3. 在 [內部部署設備]**** 中，選取您設定的 Azure Migrate 設備名稱 > [確定]****。
+3. 在 [內部部署設備]  中，選取您設定的 Azure Migrate 設備名稱 > [確定]  。
 
     ![來源設定](./media/contoso-migration-rehost-vm/source-settings.png)
 
@@ -437,7 +437,7 @@ Contoso 管理員必須建立 Azure 資料庫移轉服務專案，然後移轉�
 
     ![資料庫移轉服務 - 目標詳細資料](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-target-details.png)
 
-4. 在 [**新增活動** > ] [執行] [**遷移**] 中，他們會指定執行遷移的設定：
+4. 在 [**新增活動**] [執行] [  >  **遷移**] 中，他們會指定執行遷移的設定：
     - 來源和目標認證。
     - 要遷移的資料庫。
     - 在內部部署 VM 上建立的網路共用。 Azure 資料庫移轉服務會將來源備份擷取到此共用。
@@ -456,7 +456,7 @@ Contoso 管理員必須建立 Azure 資料庫移轉服務專案，然後移轉�
 
     ![資料庫移轉服務 - 驗證資料庫移轉](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-monitor2.png)
 
-## <a name="step-7-migrate-the-vms-with-azure-migrate-server-migration"></a>步驟7：使用 Azure Migrate 伺服器遷移來遷移 Vm
+## <a name="step-7-migrate-the-vms-with-azure-migrate-server-migration"></a>步驟7：使用 Azure Migrate 遷移 Vm：伺服器遷移
 
 Contoso 管理員會執行快速測試遷移，並確認 VM 正常運作，然後再遷移 VM。
 
@@ -497,7 +497,7 @@ Contoso 管理員現在會執行完整的遷移，以完成移動。
 
 在移轉程序的最後一個步驟中，Contoso 管理員會將應用程式的連接字串更新為指向在 Contoso 受控執行個體上執行的遷移後資料庫。
 
-1. 在 Azure 入口網站中，他們會藉由選取 [**設定** > ] [**連接**字串] 來尋找連接字串。
+1. 在 Azure 入口網站中，他們會藉由選取 [**設定**] [連接字串] 來尋找連接字串  >  ** **。
 
     ![連接字串](./media/contoso-migration-rehost-vm-sql-managed-instance/failover4.png)
 
@@ -546,7 +546,7 @@ Contoso 安全性小組會檢閱 Azure VM 和 SQL Database 受控執行個體，
 
 針對商務持續性和災害復原 (BCDR)，Contoso 採取下列動作：
 
-- 保護資料安全：Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=/azure/virtual-machines/linux/toc.json)。
+- 保護資料安全：Contoso 會使用 Azure 備份服務來備份 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-overview)。
 - 保持應用程式啟動及執行：Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 - Contoso 深入了解如何管理 SQL 受控執行個體，包括[資料庫備份](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
 

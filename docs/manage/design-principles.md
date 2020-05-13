@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6049c11e1c80ab13ea5429582dae662ef1937983
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430083"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223876"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和先進作業
 
@@ -99,7 +99,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>使用服務類別目錄來擴展解決方案
 
-妥善管理的服務類別目錄是平台特製化和平台作業的基石。 有此基石才能將系統設計的改善和補救方法擴展到整個環境。 雲端平台小組和雲端自動化小組會彼此配合，來為任何環境中最常見的平台建立可重複執行的解決方案。 但是，如果這些解決方案並未一致地套用，雲端管理可以提供比基準供應專案更少的專案。
+妥善管理的服務類別目錄是平台特製化和平台作業的基石。 有此基石才能將系統設計的改善和補救方法擴展到整個環境。 雲端平台小組和雲端自動化小組會彼此配合，來為任何環境中最常見的平台建立可重複執行的解決方案。 不過，如果這些解決方案並未一致地套用，雲端管理可以提供比基準供應專案更少的專案。
 
 若要最大化採用並將任何優化平臺的維護額外負荷降到最低，應將平臺新增至服務類別目錄。 類別目錄中的每個應用程式都可以透過服務類別目錄加以部署以供內部取用，或作為市集供應項目來供外部取用者取用。
 
@@ -107,7 +107,7 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 ### <a name="continuous-improvement"></a>持續改善
 
-平台特製化和平台作業都仰賴採用、平台、自動化和管理小組之間的強大意見反應迴圈。 以資料作為這些意見反應迴圈的基礎，可讓每個小組做出明智的決策。 若要讓平臺作業達到長期業務承諾，請務必利用集中式平臺特定的深入解析。 由於容器和 SQL Server 是兩個最常見的集中管理平臺，因此請考慮下列文章以開始進行持續改進資料收集：
+平台特製化和平台作業都仰賴採用、平台、自動化和管理小組之間的強大意見反應迴圈。 以資料作為這些意見反應迴圈的基礎，可讓每個小組做出明智的決策。 若要讓平臺作業達到長期業務承諾，請務必利用集中式平臺特定的深入解析。 由於容器和 SQL Server 是兩個最常見的集中管理平臺，請考慮下列文章，從持續改進資料收集開始：
 
 - [容器效能](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [PaaS 資料庫效能](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

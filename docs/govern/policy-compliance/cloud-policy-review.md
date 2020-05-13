@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 872a492be4ef27fbbbba758c9780a9af5d070940
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997400"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224267"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,13 @@ ms.locfileid: "80997400"
 
 ## <a name="the-cloud-policy-review-process"></a>雲端原則檢閱流程
 
-雲端原則審查將現有的 IT 治理和 IT 安全性原則與[五個雲端治理專業領域](../index.md)相配合：[成本管理](../cost-management/index.md)、[安全性基準](../security-baseline/index.md)、身分[識別基準](../identity-baseline/index.md)、[資源一致性](../resource-consistency/index.md)和[部署加速](../deployment-acceleration/index.md)。
+雲端原則審查將現有的 IT 治理和 IT 安全性原則與[五個雲端治理專業領域](../index.md)相配合：
+
+- [成本管理專業領域](../cost-management/index.md)
+- [安全性基準專業領域](../security-baseline/index.md)
+- [身分識別基準專業領域](../identity-baseline/index.md)
+- [資源一致性專業領域](../resource-consistency/index.md)
+- [部署加速專業領域](../deployment-acceleration/index.md)。
 
 針對上述每個專業領域，檢閱流程會遵循下列步驟：
 
@@ -50,7 +56,7 @@ ms.locfileid: "80997400"
 為了提供流程範例，我們會再次使用上一節的磁帶備份原則：
 
 - 公司原則規定所有的生產系統都要有異地磁帶備份。 在此原則中，您可以看到兩個有趣的資料點：
-  - 磁帶備份解決方案的舊版相依性
+  - 磁帶備份解決方案的舊版相依性。
   - 假設的業務風險，該風險與生產設備相同的實體位置中的備份儲存體相關聯。
 - 風險仍然存在嗎？ 是。 即使在雲端，對於單一設備的相依性仍會產生一些風險。 此風險影響業務的可能性比在內部部署解決方案中出現還要低，但仍有風險存在。
 - 重新撰寫原則。 在全資料中心發生災害的情況下，必須有辦法在中斷的 24 小時內，於不同的資料中心和不同的地理位置還原生產系統。

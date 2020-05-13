@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396077"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224199"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
@@ -26,9 +26,9 @@ ms.locfileid: "81396077"
 
 ![公司治理和治理專業領域](../../_images/operational-transformation-govern-highres.png)
 
-*圖1 - 公司治理和治理專業領域。*
+_[圖 1]：公司治理和治理專業領域。_
 
-上圖說明商務風險、原則與合規性，以及監視和強制執行機制之間的關聯性，這兩者必須在治理策略中互動。 雲端治理的五個專業領域可讓您管理這些互動，並實現您的策略。
+上圖說明商務風險、原則與合規性，以及監視和強制執行機制之間的關聯性，需要在治理策略中進行互動。 雲端治理的五個專業領域可讓您管理這些互動，並實現您的策略。
 
 雲端治理是在一段時間內持續進行採用工作的成果，因為轉換不會在一夕之間發生。 使用快速積極的方法，嘗試在解決關鍵公司原則變更之前提供完整雲端治理，這樣很少會產生想要的結果。 相反地，我們建議漸進的方法。
 
@@ -55,7 +55,7 @@ ms.locfileid: "81396077"
 - **原則聲明：** 原則需求和目標的簡短說明。
 - **設計或技術指導：** 可操作的建議、規格或其他指引，以支援和強制執行此原則，讓 IT 小組和開發人員可以在設計和建立其雲端部署時使用。
 
-如果您需要協助開始定義原則，請參閱治理章節概觀中介紹的[治理專業領域](../governance-disciplines.md)。 這些專業領域的文章包含移至雲端時所遇到的常見商業風險範例，以及用來補救這些風險的範例原則。 例如，請參閱成本管理專業領域的原則[定義範例](../cost-management/policy-statements.md)。
+如果您在定義原則時需要協助，請參閱治理一節中所介紹的[治理專業領域](../governance-disciplines.md)。 這些專業領域的文章包含移至雲端時所遇到的常見商業風險範例，以及用來補救這些風險的範例原則。 例如，請參閱成本管理專業領域的原則[定義範例](../cost-management/policy-statements.md)。
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>增量治理並與現有原則整合
 

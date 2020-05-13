@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45eda399229361d9a2bd762ec6c8d8624e3a0742
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b3c963341e7e13020cb4e67fca29db14569fa6b3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997135"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223944"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -76,7 +76,7 @@ ms.locfileid: "80997135"
 
 進行中的網路、DNS、作業系統和其他基本層面的健全狀況和操作，都是重要的資料點，會納入任何工作負載的整體健全狀況。
 
-## <a name="processes"></a>處理序
+## <a name="processes"></a>Processes
 
 可能比雲端管理平臺的功能更重要，雲端管理程式將會實現與企業的營運承諾。 任何雲端管理方法至少應該包含下列程式：
 
@@ -106,7 +106,7 @@ ms.locfileid: "80997135"
 
 沒有動作的資料會產生極小的傳回。 雲端管理可能會擴充至雲端原生工具和程式以外。 為了容納更廣泛的程式，可能需要增強雲端管理基準，以包含報告、IT 服務管理整合或資料集中化。 雲端管理可能需要在營運成熟度的各種階段中包含下列一或多個。
 
-### <a name="report"></a>Report
+### <a name="report"></a>報表
 
 與商務專案關係人之承諾的離線程式和通訊通常需要報告。 自助報告或定期報告可能是增強式管理基準的必要元件。
 

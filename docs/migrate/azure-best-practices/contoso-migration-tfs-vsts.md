@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2751965389406262a5d72c9ea9d1a506218826bb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997881"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223723"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -64,17 +64,17 @@ Contoso 會按照下列方式完成移轉程序：
 
 ![移轉程序](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 
 <!-- markdownlint-disable MD033 -->
 
-**需求** | **詳細資料**
---- | ---
-**Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。<br/><br/> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。
-**Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。
-**內部部署 TFS 伺服器** | 內部部署必須在此過程中執行或升級為 TFS 2018 Upgrade 2。
+| **需求** | **詳細資料** |
+| --- | --- |
+| **Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。 |
+| **內部部署 TFS 伺服器** | 內部部署必須在此過程中執行或升級為 TFS 2018 Upgrade 2。 |
 
 ## <a name="scenario-steps"></a>案例步驟
 
@@ -282,7 +282,7 @@ Contoso 管理員會產生 DACPAC，如下所示：
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
-3. 他們會確認 DACPAC 檔案的屬性
+3. 他們會驗證 DACPAC 檔案的屬性。
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
@@ -381,7 +381,7 @@ Contoso 管理員一開始先執行一項試執行的遷移，以確保一切都
 
     ![試執行](./media/contoso-migration-tfs-vsts/test9.png)
 
-13. 開發組長會開啟其中一個專案，並開啟 [**指派給我**] 的**工作專案** > 。 這表示工作項目資料已連同身分識別一起遷移。
+13. 開發組長會開啟其中一個專案，並開啟 [指派給我] 的**工作專案**  >  ** **。 這表示工作項目資料已連同身分識別一起遷移。
 
     ![試執行](./media/contoso-migration-tfs-vsts/test10.png)
 
@@ -396,40 +396,40 @@ Contoso 管理員一開始先執行一項試執行的遷移，以確保一切都
 1. 在 Azure DevOps Services 入口網站中，他們會刪除試執行組織。
 2. 他們更新 import.json 檔案，以將 **ImportType** 設定為 **ProductionRun**。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full1.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full1.png)
 
 3. 他們按照試執行的步驟開始移轉：`TfsMigrator import /importFile:C:\TFSMigrator\import.json`。
 4. 此時會出現確認移轉的訊息，並警告資料可保留在安全的暫存區域中，最多七天。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full2.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full2.png)
 
 5. 在 Azure AD 的 [登入] 中，他們指定 Contoso 管理員登入。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full3.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full3.png)
 
 6. 訊息顯示匯入的相關資訊。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full4.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full4.png)
 
 7. 約 15 分鐘後，他們瀏覽至 URL，並看到下列資訊：
 
-    ![Production](./media/contoso-migration-tfs-vsts/full5.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full5.png)
 
 8. 在遷移完成後，Contoso 開發組長會登入 Azure DevOps Services 以確認遷移是否正常運作。 登入之後，開發組長可以看到專案已遷移。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full6.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full6.png)
 
-9. 開發組長會開啟其中一個專案，並開啟 [**指派給我**] 的**工作專案** > 。 這表示工作項目資料已連同身分識別一起遷移。
+9. 開發組長會開啟其中一個專案，並開啟 [指派給我] 的**工作專案**  >  ** **。 這表示工作項目資料已連同身分識別一起遷移。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full7.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full7.png)
 
 10. 開發主管會檢查其他工作項目資料加以確認。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full8.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full8.png)
 
 11. 開發主管也會檢查其他專案和程式碼，以確認原始程式碼和歷程記錄皆已遷移。
 
-    ![Production](./media/contoso-migration-tfs-vsts/full9.png)
+    ![生產](./media/contoso-migration-tfs-vsts/full9.png)
 
 ### <a name="move-source-control-from-tfvc-to-git"></a>將原始檔控制從 TFVC 移轉至 GIT
 

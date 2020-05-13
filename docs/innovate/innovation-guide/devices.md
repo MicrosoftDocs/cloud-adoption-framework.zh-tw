@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b3bb752e823c9be61d61da8d2ea88a9cd5591709
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3cc247866d60b428a908180ba3eda74bb61f8cd3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427171"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224080"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 

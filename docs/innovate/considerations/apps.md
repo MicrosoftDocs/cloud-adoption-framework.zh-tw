@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120513"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224165"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
 如[將大眾化資料](./data.md)中所述，資料是新的石油。 它燃料了各種數位經濟的創新。 以這種比喻為基礎，應用程式是將該燃料放入正確手中所需的激發站和基礎結構。
 
-在某些情況下，單獨的資料就足以推動變更並符合客戶的需求。 不過，更常見的解決方案是客戶的需求需要應用程式來塑造資料並建立經驗。 應用程式是我們與使用者互動的方式。 這些是回應客戶觸發程式所需的進程的主資料夾。 它們是客戶提供資料和接收指引的方式。 本文摘要說明一些可協助您根據要驗證的假設，為您提供正確應用程式解決方案的原則。
+在某些情況下，單獨的資料就足以推動變更並符合客戶的需求。 更常見的情況是，客戶需求的解決方案需要應用程式來塑造資料並建立經驗。 應用程式是我們與使用者互動的方式。 這些是回應客戶觸發程式所需的進程的主資料夾。 它們是客戶提供資料和接收指引的方式。 本文摘要說明一些可協助您根據要驗證的假設，為您提供正確應用程式解決方案的原則。
 
 ![透過應用程式參與](../../_images/innovate/engage-via-apps.png)
 
@@ -28,8 +28,8 @@ ms.locfileid: "81120513"
 
 為了準備好進行創新，所有應用程式的開發都應該從共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您快速建立共用程式碼儲存機制。 或者， [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure Repos 提供兩種類型的版本控制：
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制
-- [Team Foundation 版本控制（TFVC）](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制。
+- [Team Foundation 版本控制（TFVC）](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制。
 
 ## <a name="citizen-developers"></a>公民開發人員
 
@@ -50,7 +50,7 @@ ms.locfileid: "81120513"
 
 ### <a name="infusing-intelligence"></a>加入智慧型功能情報
 
-機器學習服務和人工智慧已逐漸提供給開發人員。 具有預測性功能的通用 Api 可廣泛使用，讓開發人員能夠透過擴充的資料和預測存取，更符合客戶的需求。
+機器學習服務和 AI 已逐漸提供給開發人員。 具有預測性功能的通用 Api 可廣泛使用，讓開發人員能夠透過擴充的資料和預測存取，更符合客戶的需求。
 
 將智慧新增至解決方案，可以啟用語音轉換文字、文字翻譯、電腦視覺，甚至是視覺效果搜尋。 透過這些擴充的功能，開發人員可以更輕鬆地建立利用智慧的解決方案，以建立互動式和現代化的體驗。
 
@@ -82,18 +82,18 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 - 現有的商務邏輯應該符合現有客戶的需求（或接近會議）。
 - 改善的體驗會更符合特定客戶世代的需求。
-- 最基本的可行產品（MVP）解決方案所需的商務邏輯，通常是透過多[層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)式 web 服務、API 或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計來進行。 此方法包含將現有的解決方案包裝在雲端託管的新體驗中。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
+- 最基本的可行產品（MVP）解決方案所需的商務邏輯，通常是透過多[層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)式 web 服務、API 或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計來進行。 此方法包含將現有的解決方案包裝在雲端託管的新體驗中。 在 Azure 中，此解決方案可能會出現在 Azure App Service 中。
 
 ### <a name="rebuild-an-existing-solution"></a>重建現有的解決方案
 
-如果無法輕鬆擴充應用程式，可能需要重構解決方案。 在此方法中，工作負載會遷移至雲端。 遷移應用程式之後，會將其部分修改或複製為與現有解決方案平行部署的 web 服務或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)。 以平行服務為基礎的解決方案可視為擴充解決方案。 此解決方案只會將現有的解決方案包裝在雲端中託管的新體驗。 在 Azure 中，此解決方案可能會在 Azure App 服務中運作。
+如果無法輕鬆擴充應用程式，可能需要重構解決方案。 在此方法中，工作負載會遷移至雲端。 遷移應用程式之後，會將其部分修改或複製為與現有解決方案平行部署的 web 服務或[微服務](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)。 以平行服務為基礎的解決方案可視為擴充解決方案。 此解決方案只會將現有的解決方案包裝在雲端中託管的新體驗。 在 Azure 中，此解決方案可能會出現在 Azure App Service 中。
 
 > [!CAUTION]
 > 重構或重新架構解決方案或集中商務邏輯，可以快速觸發耗時的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)，而不是客戶價值的來源。 這是創新的風險，特別是在假設驗證的初期。 有了設計解決方案的創意，應該會有一個不需要重構現有解決方案的 MVP 路徑。 最好是延遲重構，直到可以大規模驗證初始假設為止。
 
 ## <a name="operating-model-innovations"></a>操作模型創新
 
-除了現代化的創新方法來建立應用程式之外，應用程式*作業*中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
+除了現代化的創新方法來建立應用程式之外，應用程式_作業_中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
 
 卓越雲端中心的自助作業管理模型類型，可讓您在解決方案環境內進行更緊密的控制和更快速的反復專案。 這些目標是藉由將營運控制和責任轉移給商務小組來完成。
 

@@ -7,12 +7,12 @@ ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba3ac825fb43a9c185d86ef9695afc52c9437c56
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a40fb364df481df9c75ade25f18b9a3a1a0468fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396230"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223706"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -84,14 +84,14 @@ Contoso 會按照下列方式完成移轉程序：
 
 ### <a name="azure-services"></a>Azure 服務
 
-**Service** | **描述** | **成本**
+**服務** | **說明** | **成本**
 --- | --- | ---
 [Azure App Service](https://azure.microsoft.com/services/app-service) | 服務會使用適用於網站的 Azure PaaS 服務，執行和調整應用程式。 | 定價是以執行個體的大小和所需的功能為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [流量管理員](https://azure.microsoft.com/services/traffic-manager) | 使用 DNS 將使用者導向 Azure 或外部網站和服務的負載平衡器。 | 定價是以收到的 DNS 查詢數目和已監視的端點數目為基礎。 | [深入了解](https://azure.microsoft.com/pricing/details/traffic-manager)。
-[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
-[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它可為應用程式的開發與部署，提供完全受控、符合企業需求的社群 MySQL 資料庫即服務。 | 定價是以計算、儲存和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
+[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它提供完全受控、符合企業需求的社區 MySQL 資料庫，供應用程式開發和部署之用。 | 定價是以計算、儲存和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 
@@ -99,7 +99,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需求** | **詳細資料**
 --- | ---
-**Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。<br/><br/> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。<br/><br/> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
+**Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
 **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。
 
 <!-- markdownlint-enable MD033 -->
@@ -205,11 +205,11 @@ Contoso 管理員會使用 Azure 資料庫移轉服務，透過[逐步執行遷�
 
 - 確保符合所有的遷移必要條件：
   - MySQL 伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援-MySQL 社區 edition、InnoDB engine，以及跨來源與目標的相同版本進行遷移。
-  - 在 .ini （Windows）或 my.cnf （Unix）中啟用二進位記錄。 如果無法這麼做，將會`Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more details see https://go.microsoft.com/fwlink/?linkid=873009`在遷移嚮導期間造成錯誤。
-  - 使用者必須擁有`ReplicationAdmin`角色。
+  - 在 .ini （Windows）或 my.cnf （Unix）中啟用二進位記錄。 執行此動作時，將會導致 `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 遷移嚮導。
+  - 使用者必須擁有 `ReplicationAdmin` 角色。
   - 不搭配外鍵和觸發程式來遷移資料庫架構。
 - 建立透過 ExpressRoute 或 VPN 連接到內部部署網路的虛擬網路。
-- 使用連線到 VNet 的`Premium` SKU 來建立 Azure 資料庫移轉服務。
+- 使用 `Premium` 連線到 VNet 的 SKU 來建立 Azure 資料庫移轉服務。
 - 確定 Azure 資料庫移轉服務可以透過虛擬網路存取 MySQL 資料庫。 這會需要確保在虛擬網路層級、網路 VPN 和裝載 MySQL 的機器上，允許從 Azure 到 MySQL 的所有連入埠。
 - 執行 Azure 資料庫移轉服務工具：
   - 建立以**PREMIUM SKU**為基礎的遷移專案。
@@ -351,7 +351,7 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
-7. Contoso 想要有好記的 DNS 名稱。 他們會在其網域控制站的 DNS 中建立指向流量管理員名稱的別名記錄（CNAME） **osticket.contoso.com** 。
+7. Contoso 想要有好記的 DNS 名稱。 他們會 `osticket.contoso.com` 在其網域控制站的 DNS 中建立指向流量管理員名稱的別名記錄（CNAME）。
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 

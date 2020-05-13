@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997370"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224233"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ ms.locfileid: "80997370"
 
 資源標記是用來儲存中繼資料的好方法，而且您可以使用這些標記將資料分類資訊套用至已部署的資源。 雖然以分類來標記雲端資產不是正式資料分類程式的替代方案，但它提供了管理資源和套用原則的重要工具。 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)是一個絕佳的解決方案，可協助您將_資料_本身分類，不論其位於何處（內部部署、Azure 或其他位置）。 請將它視為整體分類策略的一部分。
 
-如需 Azure 中資源標記的詳細資訊，請參閱[使用標記來組織您的 azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
+如需 Azure 中資源標記的詳細資訊，請參閱[使用標記來組織您的 azure 資源和管理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)階層。
 
 ## <a name="next-steps"></a>後續步驟
 

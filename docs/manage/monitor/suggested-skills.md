@@ -7,12 +7,12 @@ ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
-ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
+ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82861430"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223672"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -28,12 +28,12 @@ ms.locfileid: "82861430"
 
 - [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit 來賓設定等。
 
-- [Azure 命令列介面](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)（CLI）簡介，這是用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1)簡介。 LinkedIn 供應專案是初學者層級課程[學習 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)的一部分，涵蓋 Azure CLI 和 PowerShell 程式設計語言的研討會：
+- [Azure 命令列介面（CLI）](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)簡介，這是用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1)簡介。 LinkedIn 供應專案是初學者層級課程[學習 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)的一部分，涵蓋 Azure CLI 和 PowerShell 程式設計語言的研討會：
 
   - [使用 Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- 瞭解如何[在 Azure 監視器中撰寫記錄查詢](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)。  Kusto 查詢語言是用來撰寫 Azure 監視器記錄查詢的主要資源，用以探索和分析從 Azure 收集到的資料與混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
+- 瞭解如何[在 Azure 監視器中撰寫記錄查詢](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)。 Kusto 查詢語言是用來撰寫 Azure 監視器記錄查詢的主要資源，用以探索和分析從 Azure 收集到的資料與混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
 
 - 瞭解[Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)如何協助您從一個位置同時查看應用程式和服務的可用性和效能。 Pluralsight 提供下列課程來協助您：
 
@@ -63,7 +63,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 混合式雲端環境會以未定義的角色、責任和活動來中斷它。 組織必須移至現代化的服務管理實務（包括 Agile 和 DevOps 方法），以簡化且有效率的方式，更符合現今企業的轉換和優化需求。
 
-作為遷移至雲端監視平臺的一部分，負責管理企業中監視的 IT 小組需要包含 agile 訓練和參與 DevOps 活動。 這也包括遵循 DevOps 的*開發*，方法是採取需求並轉換成組織的 agile 需求，以提供最少可行的監視解決方案，並以反復且符合業務需求的方式進行調整。 若要讓原始檔控制管理反復監視解決方案封裝和任何其他相關的宣傳，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連線。 這會在 GitHub 認可與工作專案的提取要求之間提供連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
+作為遷移至雲端監視平臺的一部分，負責管理企業中監視的 IT 小組需要包含 agile 訓練和參與 DevOps 活動。 這也包括遵循 DevOps 的_開發_，方法是採取需求並轉換成組織的 agile 需求，以提供最少可行的監視解決方案，並以反復且符合業務需求的方式進行調整。 若要讓原始檔控制管理反復監視解決方案封裝和任何其他相關的宣傳，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連線。 這會在 GitHub 認可與工作專案的提取要求之間提供連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
 
 若要深入瞭解，請參閱下列各項：
 
