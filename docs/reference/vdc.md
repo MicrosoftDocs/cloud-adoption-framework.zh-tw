@@ -7,21 +7,21 @@ ms.date: 06/12/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79311552"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221649"
 ---
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
 > [!WARNING]
-> Azure 虛擬資料中心已整合到 Azure 的 Microsoft Cloud 採用架構中。 本指南可做為雲端採用架構中的就緒和治理方法之基礎的重要部分。 為了支援進行此轉換的客戶，下列資源已封存，並會在個別的 GitHub 存放庫中維護。
+> Azure 虛擬資料中心已整合到 Azure 的 Microsoft Cloud 採用架構中。 本指南可做為雲端採用架構內準備和管控方法的基礎的重要部分。 為了支援進行此轉換的客戶，下列資源已封存，並會在個別的 GitHub 存放庫中維護。
 
 ## <a name="archived-resources"></a>封存的資源
 
@@ -29,7 +29,7 @@ ms.locfileid: "79311552"
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Azure 虛擬資料中心：概念</a></h3>
         <p>這個電子書會說明如何將企業工作負載部署至 Azure 雲端平台，同時又能採用您現有的安全性和網路原則。</p>

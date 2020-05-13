@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 118b8af3ed191be6b203413fc2a5399f6aa6a04d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997738"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221666"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -20,7 +20,7 @@ ms.locfileid: "80997738"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
-根據雲端採用工作的相關動機和業務成果，領導人可能需要建立新的組織結構或虛擬小組 (V 小組) 來輔助各種功能。 下列文章可協助您開發必要技能，以根據所需的結果來結構化這些小組：
+根據與雲端採用工作相關聯的動機和業務成果，可能需要領導人，才能建立新的組織結構或虛擬小組（v 小組）來加速各種功能。 下列文章可協助您開發必要技能，以根據所需的結果來結構化這些小組：
 
 - [初始組織的對齊方式](./index.md)：概述組織對齊和各種小組結構，以加速特定目標。
 - [細分接收器和 fiefdoms](../organize/fiefdoms-silos.md)：瞭解兩個常見的組織反模式，以及引導小組進行生產力共同作業的方式。
@@ -62,7 +62,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和等級，並達成更多目標。
 
-下列範例是一些在 Microsoft Learn 上量身打造的學習路徑，可配合雲端採用架構的就緒部分：
+下列範例是在 Microsoft Learn 上量身打造的學習途徑，這些路徑符合雲端採用架構中的就緒方法：
 
 [Azure 基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer)：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 中雲端運算的優點，以及它可以如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的服務廣度，包括計算、網路、儲存體和安全性。
 
@@ -70,7 +70,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [管理 Azure 中的基礎結構資源](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure)：瞭解如何建立、管理、保護及調整虛擬機器資源。
 
-[將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 了解 Azure 儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您想要在雲端中儲存的資料選擇正確的模型。
+[將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 瞭解 Azure 中的儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您要儲存在雲端中的資料選擇正確的模型。
 
 [在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
 

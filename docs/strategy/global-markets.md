@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997764"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221445"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,4 +45,4 @@ ms.locfileid: "80997764"
 瞭解雲端採用旅程[策略階段期間所需的技能](./suggested-skills.md)。
 
 > [!div class="nextstepaction"]
-> [與策略相關的技能](./suggested-skills.md)
+> [策略階段所需的技能](./suggested-skills.md)

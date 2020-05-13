@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9db4b6a6f068e2939248804b693a9600bf7b9625
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708915"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220850"
 ---
 # <a name="evaluate-corporate-policy"></a>評估公司原則
 
@@ -26,7 +26,12 @@ ms.locfileid: "77708915"
         <div class="cardPadding" style="padding-bottom:10px;">
             <div class="card" style="padding-bottom:10px;">
                 <div class="cardText" style="padding-left:0px;">
-對業務程序或技術平台進行的任何變更都會對業務引進風險。 雲端治理小組 (其成員又稱雲端監管人) 負責降低這些風險，且對採用或創新工作造成最少的中斷。<br/><br/>不過，雲端治理需要的不僅是技術實作。 公司記述或公司原則中的細微變更可能對採用工作有重大影響。 在執行之前，請務必在定義公司原則時找出超出範圍。<br/><br/>
+對業務程序或技術平台進行的任何變更都會對業務引進風險。 雲端治理小組 (其成員又稱雲端監管人) 負責降低這些風險，且對採用或創新工作造成最少的中斷。
+<br>
+<br>
+不過，雲端治理需要的不僅是技術實作。 公司記述或公司原則中的細微變更可能對採用工作有重大影響。 在執行之前，請務必在定義公司原則時找出超出範圍。
+<br>
+<br>
                 </div>
             </div>
         </div>
@@ -39,8 +44,8 @@ ms.locfileid: "77708915"
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
 <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
-<br/>
-<i>圖 1-公司原則和雲端治理的五個專業領域的視覺效果。</i>
+<br>
+<i>圖1：公司原則和雲端治理的五個專業領域的視覺效果。</i>
                     </div>
                 </div>
             </div>
@@ -107,7 +112,7 @@ ms.locfileid: "77708915"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>處理序</h3>
+                        <h3>Processes</h3>
                         <p>採用與創新活動的步調自然會建立原則違規。 執行相關程序會輔助監視及強制執行遵守原則。</p>
                     </div>
                 </div>

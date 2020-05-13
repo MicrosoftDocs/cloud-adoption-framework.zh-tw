@@ -1,6 +1,6 @@
 ---
-title: 成本管理業務風險
-description: 瞭解並查看典型客戶在雲端治理策略中採用成本管理專業領域的範例。 
+title: 成本管理專業領域中的動機和業務風險
+description: 瞭解並查看典型客戶在雲端治理策略中採用成本管理專業領域的範例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0afb5c3a4c8c1f355083ae6d4734ca4fa45b34ca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434695"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220714"
 ---
 <!-- cSpell:ignore prepurchases -->
 
-# <a name="cost-management-motivations-and-business-risks"></a>成本管理動機和業務風險
+# <a name="motivations-and-business-risks-in-the-cost-management-discipline"></a>成本管理專業領域中的動機和業務風險
 
 本文將討論客戶通常會在雲端治理策略中採用成本管理專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
-<!-- markdownlint-disable MD026 -->
-
-## <a name="is-cost-management-relevant"></a>是否與成本管理相關？
+## <a name="relevance"></a>相關性
 
 在成本治理方面，採用雲端會建立範式轉移。 傳統內部部署世界中的成本管理會以下列各項為基礎：重新整理週期、資料中心收購、主機更新，以及週期性維護問題。 您可以預測、規劃和精簡這其中每一個成本，以便與每年的資本支出預算保持一致。
 
-對於雲端解決方案，許多企業都傾向於對成本管理採用更具反應性的方法。 在許多情況下，企業將會預購 (或承諾使用) 一定數量的雲端服務。 此模型假設要根據企業規劃來針對特定雲端廠商花費的費用來取得最大折扣，即會建立對已規劃之主動式成本週期的認知。 不過，該認知只有在企業也會實作成熟的成本管理專業領域時成真。
+針對雲端解決方案，許多企業通常會採取更被動的方式來進行成本管理。 在許多情況下，企業將會預購 (或承諾使用) 一定數量的雲端服務。 此模型假設要根據企業規劃來針對特定雲端廠商花費的費用來取得最大折扣，即會建立對已規劃之主動式成本週期的認知。 不過，只有在企業也實行成熟的成本管理專業領域時，才會有這種認知。
 
 雲端提供在傳統內部部署資料中心前所未聞的自助功能。 這些新功能讓企業能夠更靈活、更少限制且更開放地採用新技術。 不過，自助的缺點是終端使用者會在不知情的情況下超過已配置的預算。 相反地，相同的使用者可以體驗方案中的變化，並且意外地不使用所預測的雲端服務數量。 在治理小組內，任一個方向的轉移可能性，會證明成本管理專業領域中投資的正當性。
 
@@ -44,7 +42,7 @@ ms.locfileid: "80434695"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[雲端管理範本](./template.md)，記錄了目前的雲端採用方案可能引進的業務風險。
+使用[成本管理原則範本](./template.md)來記載可能由目前雲端採用方案引進的業務風險。
 
 在您瞭解實際的商務風險之後，下一步就是記載企業對於風險的承受度，以及用來監視該容錯的指標和關鍵計量。
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433727"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221411"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,17 +44,17 @@ ms.locfileid: "80433727"
 
 另一方面，某些正面指標通常與資料驅動式學習相關聯：集中化的資料集、資料輸入和資料 democratization。 當小組在學習明天的客戶時，可以立即產生真正的成果。 支援的學習計量可能包括：
 
-- 可用的模型數目
-- 耗用的合作夥伴資料來源數目
-- 產生輸入資料的裝置
-- 輸入資料的數量
-- 資料類型
+- 可用的模型數目。
+- 耗用的夥伴資料來源數目。
+- 產生輸入資料的裝置。
+- 輸入資料的數量。
+- 資料類型。
 
 更有價值的計量是從合併的資料來源建立的儀表板數目。 這個數位會反映受到新資料來源影響的目前狀態商務程式。 藉由公開共用新的資料來源，您的企業可以利用 Power BI 之類的報告工具來使用資料，以產生累加的深入解析並推動商務變更。
 
 ## <a name="next-steps"></a>後續步驟
 
-當學習度量已對齊之後，您就可以開始[建立商業案例](.\cloud-migration-business-case.md)，針對這些計量進行傳遞。
+當學習度量已對齊之後，您就可以開始[建立商業案例](./cloud-migration-business-case.md)，針對這些計量進行傳遞。
 
 > [!div class="nextstepaction"]
-> [建立雲端商務案例](.\cloud-migration-business-case.md)
+> [建立雲端商務案例](./cloud-migration-business-case.md)

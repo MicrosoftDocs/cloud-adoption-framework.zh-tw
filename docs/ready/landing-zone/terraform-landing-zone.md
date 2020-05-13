@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997815"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221751"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是 HashiCorp 的 Terraform。 本節說明如何使用範例登陸區域來部署 Azure 訂用帳戶的基本治理、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴常用來部署登陸區域的這類工具之一，是 HashiCorp Terraform。 本節說明如何使用範例登陸區域來部署 Azure 訂用帳戶的基本治理、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 
@@ -38,13 +38,17 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 已部署的元件及其用途包括下列各項：
 
-| 元件             | 責任                                                                                                                                                                                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 資源群組       | 基礎所需的核心資源群組                                                                                                                                                                                                            |
-| 活動記錄      | 審核所有訂用帳戶活動和封存： </br> -儲存體帳戶 </br> -Azure 事件中樞                                                                                                                                                      |
-| 診斷記錄   | 保留特定天數的所有作業記錄： </br> -儲存體帳戶 </br> -事件中樞                                                                                                                                                         |
-| Log Analytics         | 儲存所有作業記錄 </br> 針對深度應用程式的最佳做法審查部署常見的解決方案： </br> -NetworkMonitoring </br> - ADAssessment </br> -Get-adreplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics |
+<!-- markdownlint-disable MD033 -->
+
+| 元件 | 責任 |
+|---|---|
+| 資源群組 | 基礎所需的核心資源群組 |
+| 活動記錄      | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
+| 診斷記錄 | 保留特定天數的所有作業記錄： <li> 儲存體帳戶 <li> 事件中樞 |
+| Log Analytics | 儲存所有作業記錄。 針對深度應用程式的最佳做法審查部署常見的解決方案： <li> NetworkMonitoring <li> ADAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示                                                                                                                                                                                        |
+
+<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>使用此藍圖
 
@@ -84,10 +88,10 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 以下顯示的最小標記集必須存在於所有資源和資源群組上：
 
-| 標籤名稱          | 說明                                                                                        | Key             | 範例值                                    |
+| 標籤名稱          | 說明                                                                                        | 按鍵             | 範例值                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
 | 業務單位     | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | BusinessUnit    | 財務，行銷，{產品名稱}，CORP，共用 |
-| 成本中心       | 與此資源相關聯的會計成本中心。                                              | CostCenter      | Number                                           |
+| 成本中心       | 與此資源相關聯的會計成本中心。                                              | CostCenter      | 數字                                           |
 | 災害復原 | 應用程式、工作負載或服務的業務關鍵性。                                     | DR              | 啟用 DR、未啟用 DR                       |
 | 環境       | 應用程式、工作負載或服務的部署環境。                                   | Env             | 生產、開發、QA、階段、測試、訓練             |
 | 擁有者名稱        | 應用程式、工作負載或服務的擁有者。                                                    | 擁有者           | 電子郵件                                            |
@@ -95,13 +99,15 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 版本           | 已部署藍圖的版本。                                                                 | version         | v 0。1                                             |
 | 應用程式名稱  | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。             | ApplicationName | 「應用程式名稱」                                       |
 
+<!-- cSpell:ignore caf -->
+
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>自訂和部署您的第一個登陸區域
 
 您可以[複製 Terraform foundation 登陸區域](https://github.com/azure/caf-terraform-landingzones)。 藉由修改 Terraform 變數，輕鬆地開始使用登陸區域。 在我們的範例中，我們會使用**blueprint_foundations tfvars**，因此 Terraform 會自動為您設定此檔案中的值。
 
 讓我們看看不同的變數區段。
 
-在第一個物件中，我們會在名為`southeastasia` `-hub-core-sec`的區域中建立`-hub-operations`兩個資源群組，並在執行時間中新增一個前置詞。
+在第一個物件中，我們會在名為的區域中建立兩個資源群組， `southeastasia` `-hub-core-sec` 並在 `-hub-operations` 執行時間中新增一個前置詞。
 
 ```hcl
 resource_groups_hub = {
@@ -116,7 +122,7 @@ resource_groups_hub = {
 }
 ```
 
-接下來，我們會指定可設定基礎的區域。 在這裡`southeastasia` ，是用來部署所有資源。
+接下來，我們會指定可設定基礎的區域。 在這裡， `southeastasia` 是用來部署所有資源。
 
 ```hcl
 location_map = {
@@ -145,7 +151,7 @@ tags_hub = {
 }
 ```
 
-然後，我們會指定 log analytics 名稱和一組分析部署的解決方案。 在這裡，我們保留了網路監視、Active Directory （AD）評估和複寫、DNS 分析和金鑰保存庫分析。
+然後，我們會指定 log analytics 名稱和一組分析部署的解決方案。 在這裡，我們保留了網路監視、Active Directory 評定和複寫、DNS 分析和金鑰保存庫分析。
 
 ```hcl
 
