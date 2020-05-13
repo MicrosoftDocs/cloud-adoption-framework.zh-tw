@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e07879cfe8b40f9b0482d804aa6073c7ad79f3e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425650"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217603"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "80425650"
 
 ## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>迷思：大型主機永遠不會停機，而且至少有五個9的可用性
 
-大型主機硬體和作業系統被視為可靠又穩定。 但事實上為了維護及重新開機 (稱為初始程式載入或 IPL)，還是必須排程停機時間。 當考慮到這些工作時，大型主機解決方案的可用性通常更貼近兩個或三個 9，這等同於高階的 Intel 型伺服器。
+大型主機硬體和作業系統被視為可靠又穩定。 但事實上，必須排定停機時間進行維護和重新開機，稱為「初始程式載入」（Ipl）。 當考慮到這些工作時，大型主機解決方案的可用性通常更貼近兩個或三個 9，這等同於高階的 Intel 型伺服器。
 
 大型主機也與任何其他伺服器一樣易受災害損害，因此需要不斷電供應系統 (UPS) 來處理這些類故障。
 

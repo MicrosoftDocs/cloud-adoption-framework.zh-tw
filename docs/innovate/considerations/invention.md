@@ -7,22 +7,22 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bacb3b97934044bed3b1e7466b0a8ecb06efb33b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427493"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217484"
 ---
 # <a name="develop-digital-inventions"></a>開發數位發明
 
-如[數位經濟的創新](./index.md)中所述，創新需要*家發明*和*採用*的平衡。 需要客戶意見反應與合作關係，才能促進採用。 下一節所述的專業領域定義一系列開發數位開始創造發明的方法，同時保持採用和客戶的理解。 每個專業領域都會簡短描述，以及每個程式的更深入連結。
+如[數位經濟的創新](./index.md)中所述，創新需要_家發明_和_採用_的平衡。 需要客戶意見反應與合作關係，才能促進採用。 下一節所述的專業領域定義一系列開發數位開始創造發明的方法，同時保持採用和客戶的理解。 每個專業領域都會簡短描述，以及每個程式的更深入連結。
 
 ![雲端採用架構創新方法](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>數位家發明每個專業領域的摘要
 
-在任何指定的案例中 *，都不需要下列*專業領域來推動創新。 藉由遵循以[客戶理解的組建](./build.md)中的指導方針，目標是要在每個反復專案中測試假設。 藉由將每個反復專案的輸出定義為[最小的可行產品（MVP）](../../govern/policy-compliance/index.md)，這應該可讓您牽涉到盡可能少的專業領域。
+在任何指定的案例中 _，都不需要下列_專業領域來推動創新。 藉由遵循以[客戶理解的組建](./build.md)中的指導方針，目標是要在每個反復專案中測試假設。 藉由將每個反復專案的輸出定義為[最小的可行產品（MVP）](../../govern/policy-compliance/index.md)，這應該可讓您牽涉到盡可能少的專業領域。
 
 - **[將大眾化資料](./data.md)：** 藉由將資料交給客戶、合作夥伴和員工，您可以鼓勵創新的觀察。 內嵌、集中、管理及共用資料。
 - **[參與應用程式](./apps.md)：** 人們透過應用程式與經驗與知識連接。 讓專業和公民開發人員能夠快速建立應用程式。
@@ -35,4 +35,4 @@ ms.locfileid: "80427493"
 [資料 Democratization](./data.md)是要考慮和評估之第一個創新的專業領域。
 
 > [!div class="nextstepaction"]
-> [將大眾化資料](./data.md)
+> [將資料大眾化](./data.md)

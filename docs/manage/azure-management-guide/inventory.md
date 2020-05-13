@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9647ec56145d54537541ee70bbdb2280c9cae2ac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426823"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216719"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -26,16 +26,16 @@ ms.locfileid: "80426823"
 
 針對任何企業級環境，下表會概述管理基準的最低建議。
 
-|Process  |工具  |目的  |
-|---------|---------|---------|
-|監視 Azure 服務的健康情況|Azure 服務健康狀態|Azure 中所執行服務的健康情況、效能和診斷|
-|記錄集中化|Log Analytics|適用於所有可見性用途的集中式記錄|
-|監視集中化|Azure 監視器|操作資料和趨勢的集中監視|
-|虛擬機器清查和變更追蹤|Azure 變更追蹤和清查|清查 VM 和監視來賓作業系統層級的變更|
-|訂用帳戶監視|Azure 活動記錄檔|監視訂用帳戶層級的變更|
-|來賓作業系統監視|適用於 VM 的 Azure 監視器|監視 VM 的變更和效能|
-|網路監視|Azure 網路監看員|監視網路變更和效能|
-|DNS 監視|DNS 分析|DNS 的安全性、效能和作業|
+| Process | 工具 | 目的 |
+|---|---|---|
+| 監視 Azure 服務的健康情況 | Azure 服務健康狀態 | Azure 中所執行服務的健康情況、效能和診斷 |
+| 記錄集中化 | Log Analytics | 適用於所有可見性用途的集中式記錄 |
+| 監視集中化 | Azure 監視器 | 操作資料和趨勢的集中監視 |
+| 虛擬機器清查和變更追蹤 | Azure 變更追蹤和清查 | 清查 VM 和監視來賓作業系統層級的變更 |
+| 訂用帳戶監視 | Azure 活動記錄檔 | 監視訂用帳戶層級的變更 |
+| 來賓作業系統監視 | 適用於 VM 的 Azure 監視器 | 監視 VM 的變更和效能 |
+| 網路監視 | Azure 網路監看員 | 監視網路變更和效能 |
+| DNS 監視 | DNS 分析 | DNS 的安全性、效能和作業 |
 
 ::: zone target="docs"
 

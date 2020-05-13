@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d32a1b521240806b78435141b9876967b4093d8
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: a7caa77a9f11f464160548aded6b280bbc9b0b00
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646858"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217146"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "81646858"
 
 另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
-![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migrate/databox.png)
+![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migrate/data-box.png)
 
 ## <a name="assess-process-changes"></a>評定程序變更
 

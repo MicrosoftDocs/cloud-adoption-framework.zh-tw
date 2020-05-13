@@ -7,13 +7,15 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434014"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216889"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
 Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客戶。 其中也包含管理部署管線的工具，以及 DevOps 的其他重要層面。
@@ -32,19 +34,19 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 建立專案之後，請繼續進行此文章系列，以瞭解如何修改範本以配合您的雲端採用方案。
 
-如需此工具的其他支援和指引，請參閱[Azure DevOps Services 示範](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops)產生器。
+如需此工具的其他支援和指引，請參閱[Azure DevOps Services 示範](https://docs.microsoft.com/azure/devops/demo-gen)產生器。
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>大量編輯雲端採用方案
 
-部署計畫專案之後，您可以使用 Microsoft Excel 來進行修改。 使用 Excel 在方案中建立新的工作負載或資產，比使用 Azure DevOps 的瀏覽器體驗更容易。
+部署計畫專案之後，您可以使用 Microsoft Excel 來進行修改。 使用 Microsoft Excel，在方案中建立新的工作負載或資產，比使用 Azure DevOps 的瀏覽器體驗更容易。
 
-若要準備工作站進行大量編輯，請參閱[使用 Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
+若要準備工作站進行大量編輯，請參閱[使用 Microsoft Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
 
 ## <a name="use-the-cloud-adoption-plan"></a>使用雲端採用方案
 
 雲端採用方案會依活動類型來組織活動：
 
-- **Epics：***長篇故事*代表雲端採用生命週期的整體階段。
+- **Epics：**_長篇故事_代表雲端採用生命週期的整體階段。
 - **功能：** 功能是用來組織每個階段內的特定目標。 例如，特定工作負載的遷移是一項功能。
 - **使用者故事：** 使用者故事群組會根據特定目標，進入活動的邏輯集合。
 - 工作 **：** 工作是要執行的實際工作。
@@ -58,11 +60,11 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 ## <a name="align-the-cloud-adoption-plan"></a>配合雲端採用方案
 
-雲端採用週期的策略和規劃階段的總覽頁面分別參考[雲端採用架構策略和規劃範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本納入考慮。 如果您還沒有這麼做，您可能想要先完成與[策略](../strategy/index.md)和[規劃](../plan/index.md)相關的練習，再調整您的新專案。
+雲端採用週期的策略和規劃階段的總覽頁面分別參考[雲端採用架構策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本納入考慮。 如果您還沒有這麼做，您可能想要先完成與[策略](../strategy/index.md)和[規劃](../plan/index.md)相關的練習，再調整您的新專案。
 
 下列文章支援雲端採用方案的對齊：
 
-- [工作負載](./workloads.md)：對齊雲端移轉長篇中的功能，以捕捉要遷移或現代化的每個工作負載。 新增和修改這些功能，以獲取遷移前10個工作負載的工作。
+- [工作負載](./workloads.md)：調整雲端遷移長篇中的功能，以捕捉要遷移或現代化的每個工作負載。 新增和修改這些功能，以獲取遷移前10個工作負載的工作。
 - [資產](./assets.md)：每個資產（VM、應用程式或資料）都是由每個工作負載下的使用者故事表示。 新增和修改這些使用者故事，使其符合您的數位資產。
 - [合理化](./review-rationalization.md)：由於每個工作負載都已定義，因此關於該工作負載的初始假設可能會受到質疑。 這可能會導致每個資產下的工作變更。
 - 建立[發行計畫](./iteration-paths.md)：反復專案路徑會藉由使用各種版本和反復專案來協調工作，以建立發行計畫。

@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120108"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217737"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
-安全性基準專業領域著重于建立原則來保護網路、資產，以及最重要的是位於雲端提供者解決方案上的資料的方式。 在雲端治理的五個專業領域中，安全性基準包含數位資產和資料的分類。 此外也包含與資料、資產和網路的安全性相關聯的風險、商業容忍度和風險降低策略的文件說明。 從技術觀點來看，其中也牽涉到以下項目的相關決策：[加密](../../decision-guides/encryption/index.md)、[網路需求](../../decision-guides/software-defined-network/index.md)、[混合式身分識別策略](../../decision-guides/identity/index.md)，以及用於開發雲端安全性基準原則的[程序](./compliance-processes.md)。
+安全性基準專業領域著重于建立原則來保護網路、資產，以及最重要的是位於雲端提供者解決方案上的資料的方式。 在雲端治理的五個專業領域中，安全性基準專業領域包含數位資產和資料的分類。 此外也包含與資料、資產和網路的安全性相關聯的風險、商業容忍度和風險降低策略的文件說明。 從技術觀點來看，這也包含關於[加密](../../decision-guides/encryption/index.md)、[網路需求](../../decision-guides/software-defined-network/index.md)、混合式身分[識別策略](../../decision-guides/identity/index.md)，[以及用來](./compliance-processes.md)開發雲端安全性基準原則之程式的參與決策。
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發安全性基準專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
-*圖 1-雲端治理累加方法的採用階段。*
+_圖1：雲端治理累加方法的採用階段。_
 
-沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立[原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立累加式原則改善的架構。 您的雲端治理小組必須決定要在這些活動中投入多少時間，以改善您的安全性基準治理功能。
+沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立[原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立累加式原則改善的架構。 您的雲端治理小組必須決定要在這些活動中投入多少時間來改善您的安全性基準專業領域。
 
 > [!CAUTION]
 > 本文中所述的最小或潛在活動都不會與特定的公司原則或協力廠商合規性需求一致。 此指導方針旨在協助促成交談，從而使這兩個需求與雲端治理模型保持一致。
@@ -37,7 +37,7 @@ ms.locfileid: "81120108"
 **最小的建議活動：**
 
 - 評估您的[安全性基準工具鏈](./toolchain.md)選項。
-- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
+- 開發草稿架構方針檔，並散發給重要的專案關係人。
 - 教育並涵蓋受到開發架構指導方針影響的人員和小組。
 - 將已設定優先權的安全性工作新增至您的移轉待辦項目中。
 
@@ -46,13 +46,11 @@ ms.locfileid: "81120108"
 - 定義資料分類結構描述。
 - 進行數位資產規劃程序以清查涉及您商務程序並支持營運的目前 IT 資產。
 - 進行[原則檢閱](../../govern/policy-compliance/cloud-policy-review.md)以開始將現有的公司 IT 安全性原則現代化並定義 MVP 原則以因應已知風險。
-- 檢閱您雲端平台的安全性指導方針。 針對 Azure，您可以在 [Microsoft 服務信任平台](https://servicetrust.microsoft.com)中找到相關資訊。
-- 判斷您的安全性基準原則是否包括[安全性開發生命週期](https://www.microsoft.com/en-us/securityengineering/sdl)。
+- 檢閱您雲端平台的安全性指導方針。 針對 Azure，您可以在[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中找到這些。
+- 判斷您的安全性基準原則是否包含[安全性開發生命週期](https://www.microsoft.com/sdl)。
 - 根據接下來的一到三個版本評估網路、資料與資產相關商務風險，並判定您組織對那些風險的容忍度。
 - 檢閱 Microsoft 的[熱門網路安全趨勢](https://www.microsoft.com/security/operations/security-intelligence-report) \(英文\) 報告以取得目前安全性趨勢概觀。
-- 考慮在您的組織中開發[安全性 DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) 角色。
-
-<!-- "en-us" location is required for the URLs above. -->
+- 請考慮在您的組織中開發[DevSecOps](https://www.microsoft.com/devsecops)角色。
 
 ## <a name="build-and-predeployment"></a>組建和預先部署
 
@@ -61,7 +59,7 @@ ms.locfileid: "81120108"
 **最小的建議活動：**
 
 - 藉由在預先部署階段推出，來執行您的[安全性基準工具鏈](./toolchain.md)。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針檔，並散發給重要的專案關係人。
 - 在已設定優先權的移轉待辦項目上實作安全性工作。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
@@ -73,7 +71,7 @@ ms.locfileid: "81120108"
 - 評估貴組織的[最低許可權存取](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task)原則，並使用以工作為基礎的角色來提供特定資源的存取權。
 - 將安全性和監視機制套用至所有雲端服務和虛擬機器。
 - 在可能的情況下自動化[安全性原則](../../decision-guides/policy-enforcement/index.md)。
-- 檢閱您的安全性基準原則，並判斷是否需要根據最佳做法指導方針 (如[安全性基準生命週期](https://www.microsoft.com/securityengineering/sdl)) 修改您的方案。
+- 檢查您的安全性基準原則，並判斷是否需要根據最佳做法指導方針（如[安全性開發週期](https://www.microsoft.com/sdl)中所述）來修改您的方案。
 
 ## <a name="adopt-and-migrate"></a>採用和移轉
 
@@ -82,12 +80,12 @@ ms.locfileid: "81120108"
 **最小的建議活動：**
 
 - 將您的[安全性基準工具鏈](./toolchain.md)從預先部署遷移至生產環境。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 更新架構方針檔，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
 
 **潛在的活動：**
 
-- 檢閱最新的安全性基準與威脅資訊以找出任何新的商務風險。
+- 請參閱最新的安全性基準和威脅資訊，以找出任何新的業務風險。
 - 判斷您組織的容忍度以處理可能會發生的新安全性威脅。
 - 找出來自原則的偏差，並強制進行修正。
 - 調整安全性與存取控制自動化，以確保可以獲得最大的原則合規性。
@@ -103,7 +101,7 @@ ms.locfileid: "81120108"
 
 - 驗證並精簡您的[安全性基準工具鏈](./toolchain.md)。
 - 自訂通知與報告，以在發生潛在安全性問題時接收通知。
-- 精簡架構指導方針，以引導未來的採用程序。
+- 精簡架構指導方針，以引導未來的採用程式。
 - 定期與受影響的小組溝通並教育他們，以確保會持續遵循架構指導方針。
 
 **潛在的活動：**
@@ -118,6 +116,6 @@ ms.locfileid: "81120108"
 現在您已了解雲端安全性治理的概念，請繼續深入了解 [Microsoft 為 Azure 提供哪些安全性與最佳做法](./azure-security-guidance.md)。
 
 > [!div class="nextstepaction"]
-> [瞭解 azure](./azure-security-guidance.md)
-> 的安全性指引 azure[安全性](https://docs.microsoft.com/azure/security/fundamentals/overview)
-> 簡介[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)
+> [瞭解 Azure](./azure-security-guidance.md) 
+>  的安全性指引[Azure 安全性簡介](https://docs.microsoft.com/azure/security/fundamentals/overview) 
+> [瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

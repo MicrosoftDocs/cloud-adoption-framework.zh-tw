@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998061"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217178"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -24,7 +24,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 1. **條件約束：** 某些條件約束會放在特定區域的服務部署上。 例如，某些區域只能作為備份或容錯移轉目標。 其他值得注意的條件約束是[資料主權需求](https://azure.microsoft.com/global-infrastructure/geographies)。
 1. **主權：** 某些地區專屬於特定的主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其餘 Azure 區域徹底分開、不一定會由 Microsoft 管理，而且可能會受限於特定客戶類型。 這些主權區域包括：
     1. [Azure 中國](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany) (即將淘汰，改為使用德國境內標準的非主權 Azure 區域)
+    1. [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany)：已淘汰，取而代之于德國的標準 nonsovereign Azure 區域
     1. [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
     1. 注意：[澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)中的兩個區域雖由 Microsoft 管理，卻提供給澳大利亞政府及其客戶和承包商使用，因此會有和其他主權雲端類似的用戶端條件約束。
 
@@ -43,7 +43,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 想要有健全的雲端部署，就需要有經過深思熟慮、已將 Azure 區域納入考量的網路。 在考慮過上述要作為部署目的地區域的特性之後，就必須部署網路。 雖然關於網路的詳盡討論不在本文涵蓋範圍內，但您必須考慮一些事項：
 
-- Azure 區域會成對部署。 如果某個區域發生嚴重失敗，系統便會將同一地緣政治界限*內的另一個區域指定為其配對區域。 請考慮將部署到配對區域作為主要和次要復原策略。 *Azure 巴西明顯例外，其配對區域正好是美國中南部。 如需深入了解，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
+- Azure 區域會成對部署。 如果某個區域發生嚴重失敗，則會將相同地緣政治界限內的另一個區域指定為其配對的區域。 請考慮將部署到配對區域作為主要和次要復原策略。 Azure 巴西是一個值得注意的例外狀況，其配對的區域是美國中南部。 如需詳細資訊，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
 
   - Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
   - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
@@ -88,7 +88,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="data-sovereignty-relevancy"></a>資料主權相關性
+## <a name="relevance-of-data-sovereignty"></a>資料主權的相關性
 
 世界各地的政府組織都已開始建立資料主權需求，例如一般資料保護規定 (GDPR)。 此性質的合規性需求通常會要求在特定區域內或甚至在特定國家/地區內進行資料在地化，以保護其公民。 在某些情況下，與客戶、員工或合作夥伴相關的資料必須儲存在與終端使用者位於相同區域內的雲端平台上。
 

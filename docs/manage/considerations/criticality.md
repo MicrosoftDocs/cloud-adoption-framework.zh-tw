@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426467"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217399"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理中的業務重要性
 
@@ -54,14 +54,14 @@ ms.locfileid: "80426467"
 
 針對組合中的每個工作負載進行初步審查可能相當耗時。 若要確保這種工作不會封鎖您更廣泛的雲端策略，建議您的小組同意預設的重要性，以套用至所有工作負載。
 
-根據前述的「嚴重性級別」資料表，建議您採用「*中*重要性」做為預設值。 這麼做可讓您的雲端策略小組快速找出需要較高重要性層級的工作負載。
+根據前述的「嚴重性級別」資料表，建議您採用「_中_重要性」做為預設值。 這麼做可讓您的雲端策略小組快速找出需要較高重要性層級的工作負載。
 
 ## <a name="use-the-template"></a>使用範本
 
-如果您是使用[Ops 管理活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則適用下列步驟。
+如果您是使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則適用下列步驟。
 
 1. 記錄活頁簿 [**調整規模**] 索引標籤上的 [重要性] 級別。
-2. 更新*範例*或 [*清除] 範本*中的每個工作負載，以反映 [*重要性*] 資料行中的預設重要性。
+2. 更新_範例_或 [_清除] 範本_中的每個工作負載，以反映 [_重要性_] 資料行中的預設重要性。
 3. 企業應輸入正確的值，以反映與預設重要性的任何偏差。
 
 ## <a name="next-steps"></a>後續步驟

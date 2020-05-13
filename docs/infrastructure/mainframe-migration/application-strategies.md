@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425819"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217654"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
 
@@ -106,7 +106,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ### <a name="monitoring"></a>監視
 
-- 使用 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)、[Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) 甚至 Azure 記錄等監視工具，讓系統管理員能夠監視批次執行的過度效能，並協助消除瓶頸。
+- 使用監視工具、 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)、 [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)和 Azure 記錄，可讓系統管理員監視批次執行的任何效能，並協助消除瓶頸。
 
 ## <a name="migrate-development-environments"></a>移轉開發環境
 
@@ -164,7 +164,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>執行從大型主機至 Azure 的分段移轉
 
-要將解決方案從大型主機移至 Azure 可能需執行*分段*移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
+要將解決方案從大型主機移至 Azure 可能需執行_分段_移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
 
 常見的案例是，將應用程式移至 Azure，但將應用程式所使用的資料保留在大型主機上。 您可以使用特定軟體讓 Azure 上的應用程式可從大型主機存取資料。 幸運的是，有許多解決方案都提供 Azure 與現有大型主機環境的整合功能、混合式案例的支援，以及長時間的漸進移轉。 Microsoft 合作夥伴、獨立軟體廠商和系統整合商皆可協助您展開此程序。
 

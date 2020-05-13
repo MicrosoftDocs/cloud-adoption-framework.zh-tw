@@ -7,18 +7,18 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997705"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217467"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 
-「工作負載」** 這個詞彙通常被定義為任意的功能單位，例如應用程式或服務。 這有助於以部署到伺服器的程式碼成品，以及應用程式特定的其他服務來思考工作負載。 針對內部部署應用程式或服務，這可能是實用的定義，但對於雲端應用程式而言則需要擴充。
+「工作負載」__ 這個詞彙通常被定義為任意的功能單位，例如應用程式或服務。 這有助於以部署到伺服器的程式碼成品，以及應用程式特定的其他服務來思考工作負載。 針對內部部署應用程式或服務，這可能是實用的定義，但對於雲端應用程式而言則需要擴充。
 
-在雲端中，工作負載不僅是包括所有成品，同時也包含雲端資源。 定義當中包含雲端資源，是因為所謂「基礎結構即程式碼」的概念。 如同您在 [Azure 的運作方式？](../../getting-started/what-is-azure.md)說明中所了解的，Azure 中的資源是由協調器服務部署。 此協調器服務會透過 Web API 公開功能，您可以使用數種工具（例如 PowerShell、Azure CLI 和 Azure 入口網站）來呼叫 Web API。 這表示您可以在電腦可讀取的檔案中指定 Azure 資源，該檔案可以與應用程式相關聯的程式碼成品 一起儲存。
+在雲端中，工作負載不僅是包括所有成品，同時也包含雲端資源。 定義當中包含雲端資源，是因為所謂「基礎結構即程式碼」的概念。 如同您在 [Azure 的運作方式？](../../get-started/what-is-azure.md)說明中所了解的，Azure 中的資源是由協調器服務部署。 此協調器服務會透過 Web API 公開功能，您可以使用數種工具（例如 PowerShell、Azure CLI 和 Azure 入口網站）來呼叫 Web API。 這表示您可以在電腦可讀取的檔案中指定 Azure 資源，該檔案可以與應用程式相關聯的程式碼成品 一起儲存。
 
 這可讓您以程式碼成品和必要雲端資源的角度定義工作負載，進一步讓您隔離工作負載。 您可以依據資源的組織方式、網路拓撲或其他屬性來隔離工作負載。 工作負載隔離的目標是要將工作負載的特定資源關聯至小組，讓小組可以獨立管理這些資源的所有層面。 這可讓多個小組共用 Azure 中的資源管理服務，同時防止不小心刪除或修改彼此的資源。
 
@@ -26,12 +26,12 @@ ms.locfileid: "80997705"
 
 ## <a name="basic-workload"></a>基本工作負載
 
-*基本工作負載*通常會定義為單一 web 應用程式，或具有虛擬機器（VM）的虛擬網路（VNet）。
+_基本工作負載_通常會定義為單一 web 應用程式，或具有虛擬機器（VM）的虛擬網路（VNet）。
 
 > [!NOTE]
 > 本指南並未涵蓋應用程式開發。 如需有關在 Azure 上開發應用程式的詳細資訊，請參閱 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide)。
 
-不論工作負載是 Web 應用程式或 VM，每個部署都需要*資源群組*。 具有權限建立資源群組的使用者必須先建立資源群組，然後再遵循下列步驟。
+不論工作負載是 Web 應用程式或 VM，每個部署都需要_資源群組_。 具有權限建立資源群組的使用者必須先建立資源群組，然後再遵循下列步驟。
 
 ## <a name="basic-web-application-paas"></a>基本 Web 應用程式 (PaaS)
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426006"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217722"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
-[安全性基準](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
+[安全性基準專業領域](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
 > Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審查。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 建議您不要使用此範例原則。
@@ -45,7 +45,7 @@ ms.locfileid: "80426006"
 - 及時（JIT），以工作為基礎授與的足夠存取權，以限制暴露 overprivileged 的系統管理員認證。
 - 透過 Azure Active Directory 擴充使用者身分識別，以及跨多個環境存取原則。
 
-務必了解安全性基準內容中的[身分識別基準](../identity-baseline/index.md)，[五個雲端治理專業領域](../index.md)會呼叫[身分識別基準](../identity-baseline/index.md)作為自己的專業領域，與安全性基準區隔。
+雖然在安全性基準專業領域的內容中瞭解身分[識別基準專業領域](../identity-baseline/index.md)很重要，但[雲端治理的五個專業領域](../index.md)會將它視為個別的專業領域。
 
 ### <a name="network-access-policies"></a>網路存取原則
 
@@ -53,10 +53,10 @@ ms.locfileid: "80426006"
 
 網路控制的雲端原生原則可能包含如下需求：
 
-- 在雲端原生原則中，可能不允許混合式連線至內部部署資源。 混合式連線經過證明是必要的，更強固的企業安全性原則範例是更相關的參考。
+- 在雲端原生原則中，可能不允許混合式連線至內部部署資源。 如果混合式連線證明有必要，更健全的企業安全性原則範例會是更相關的參考。
 - 使用者可以使用虛擬網路和網路安全性群組，建立與 Azure 的連線。
-- 原生 Windows Azure 防火牆會藉由限制的連接埠存取，防止主機有惡意網路流量。 這項原則的一個好例子是，透過 SSH/RDP 直接對 VM 進行封鎖（或不啟用）流量的需求。
-- 如 Azure 應用程式閘道 web 應用程式防火牆（WAF）和 Azure DDoS 保護保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
+- 原生 Windows Azure 防火牆會藉由限制埠存取，來保護主機免于惡意的網路流量。 這項原則的一個好例子，就是封鎖或不要透過 SSH/RDP 直接對 VM 啟用流量的需求。
+- Azure 應用程式閘道上的 Azure Web 應用程式防火牆（WAF）和 Azure DDoS 保護等服務可保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
 
 ### <a name="data-protection"></a>資料保護
 
@@ -71,7 +71,7 @@ ms.locfileid: "80426006"
 
 ### <a name="security-monitoring"></a>安全性監控
 
-安全性監視是一個主動式策略，可稽核您的資源，以識別不符合組織標準或最佳做法的系統。 Azure 資訊安全中心為混合式雲端工作負載提供統一的安全性基準和進階威脅防護。 使用資訊安全中心，您可以在工作負載中套用安全性原則、限制暴露於威脅的可能性，以及偵測和回應攻擊，包括：
+安全性監視是一個主動式策略，可稽核您的資源，以識別不符合組織標準或最佳做法的系統。 Azure 資訊安全中心針對混合式雲端工作負載提供統一的安全性基準和先進的威脅防護。 使用資訊安全中心，您可以在工作負載中套用安全性原則、限制暴露於威脅的可能性，以及偵測和回應攻擊，包括：
 
 - 透過 Azure 資訊安全中心，統一查看所有內部部署和雲端工作負載之間的安全性。
 - 持續監視和安全性評量，以確保合規性並補救任何弱點。
@@ -79,7 +79,7 @@ ms.locfileid: "80426006"
 - 廣泛的記錄，並與現有的安全性資訊整合。
 - 減少昂貴、nonintegrated、一項安全性解決方案的需求。
 
-### <a name="extending-cloud-native-policies"></a>擴充雲端原生原則
+### <a name="extend-cloud-native-policies"></a>擴充雲端原生原則
 
 使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 假設 Microsoft 有數千名網路安全性專家每天都能處理安全性，則偵測、預防或緩和網路攻擊的資源相當可觀。 事實上，雖然組織會擔心雲端是否安全，但大部分的人都知道，Microsoft 所做的投資層級和專業的基礎結構，就是讓雲端比大部分的內部部署資料中心更安全。
 使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 假設 Microsoft 有數千名網路安全性專家每天都能處理安全性，則偵測、預防或緩和網路攻擊的資源相當可觀。 事實上，雖然組織會擔心雲端是否安全，但大部分的人都知道，Microsoft 所做的投資層級和專業的基礎結構，就是讓雲端比大部分的內部部署資料中心更安全。

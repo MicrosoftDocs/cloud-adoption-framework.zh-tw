@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3d50dc6ec4a2c20b7d73bd2f0cc0ed3414e24581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425526"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217637"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -23,6 +23,8 @@ ms.locfileid: "80425526"
 本節提供從大型主機平台切換至 Azure 的技術指導。
 
 ![大型主機和 Azure](../../_images/mainframe-migration/make-the-switch.png)
+
+<!-- docsTest:ignore "vs. vCPUs" -->
 
 ## <a name="mips-vs-vcpus"></a>MIPS 與 vCPU
 
@@ -61,7 +63,7 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
-自動異地複寫也可透過大型主機結合設備來取得。 這種方法很昂貴，而且通常會保留給關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
+自動異地複寫也可透過大型主機結合設備來取得。 這種方法很昂貴，而且通常會保留給關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-overview)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
 
 ## <a name="storage"></a>儲存體
 

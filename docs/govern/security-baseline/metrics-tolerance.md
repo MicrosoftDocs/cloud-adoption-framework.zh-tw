@@ -1,6 +1,6 @@
 ---
-title: 安全性基準風險承受度計量和指示器
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何量化與安全性基準相關的商務風險承受度。
+title: 安全性基準專業領域中的風險容忍計量和指示器。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何量化與安全性基準專業領域相關的商務風險承受度。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 770b266f243a016d0de65dfc235717a405025aa9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425961"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217688"
 ---
-# <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>安全性基準的計量、指標及風險承受度
+# <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>安全性基準專業領域中的風險承受度計量和指示器
 
-本文將協助您量化商務風險承受度，因為這與安全性基準有關。 定義計量和指標可協助您建立商務案例，藉此讓安全性基準專業領域變得更完善。
+瞭解如何量化與安全性基準專業領域相關聯的商務風險承受度。 定義計量和指標有助於建立商業案例，以投資此專業領域的成熟度。
 
 ## <a name="metrics"></a>計量
 
-安全性基準通常會專注在識別雲端部署中的潛在弱點上。 作為風險分析的一部分，您應該收集與安全性環境相關的資料，以判斷需要面對多少風險，以及投資安全性基準治理對於您規劃雲端部署的重要性。
+安全性基準專業領域通常著重于識別雲端部署中的潛在弱點。 在您的風險分析過程中，您會想要收集與您的安全性環境相關的資料，以判斷您面臨的風險，以及您的安全性基準專業領域投資對您規劃的雲端部署有多重要。
 
 每個組織都有不同的安全性環境與需求，以及不同的安全性資料潛在來源。 下列是您應收集以協助評估安全性基準專業領域之風險承受度的有用計量範例：
 
@@ -58,9 +58,9 @@ ms.locfileid: "80425961"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[雲端管理範本](./template.md)，記錄與目前的雲端採用方案一致的計量和承受度指標。
+使用[安全性基準專業領域範本](./template.md)，記錄與目前雲端採用方案一致的計量和承受度指標。
 
-請參閱範例安全性基準原則作為起點，以開發可解決符合您雲端採用方案之特定商務風險的原則。
+請參閱範例安全性基準原則作為起點，以開發您自己的原則，以解決與您的雲端採用方案一致的特定商務風險。
 
 > [!div class="nextstepaction"]
 > [審查範例原則](./policy-statements.md)

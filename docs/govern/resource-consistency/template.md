@@ -1,5 +1,5 @@
 ---
-title: 資源一致性範本
+title: 資源一致性專業領域範本
 description: 使用此範本做為記錄和通訊原則聲明的起點，以控制雲端中的 IT 作業和管理。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cb96fc97e8e0ac4695ca28dbcad964d246f95e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5a41d4c227c1f96fd4f7e81e893e607bfd51e92b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433642"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217960"
 ---
-# <a name="resource-consistency-template"></a>資源一致性範本
+# <a name="resource-consistency-discipline-template"></a>資源一致性專業領域範本
 
 執行變更的第一個步驟是傳達所需的內容。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以控制雲端中的 IT 作業和管理。
 
@@ -24,7 +24,7 @@ ms.locfileid: "80433642"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您的雲端控管策略中定義有效資源一致性專業領域的步驟。
 
-[下載治理專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
+[下載資源一致性專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

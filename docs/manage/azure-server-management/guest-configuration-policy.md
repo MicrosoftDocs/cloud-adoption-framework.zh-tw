@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bb95c03b392017fb866fdfe929fffc317e4e67b0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 18153a2525a3128702e3d35e2217539abc3f8bcf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809109"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217263"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
@@ -31,7 +31,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 
 By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
+- **Preview:** Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
@@ -48,9 +48,10 @@ By default, we recommend that you enable the following policies:
 ```powershell
 
     #Assign Guest Configuration policy.
+
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionName
+        [string] $SubscriptionName
     )
 
     $Subscription = Get-AzSubscription -SubscriptionName $SubscriptionName

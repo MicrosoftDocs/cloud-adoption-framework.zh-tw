@@ -1,6 +1,6 @@
 ---
 title: Azure 中的資源一致性工具
-description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以支援資源一致性治理專業領域。
+description: 瞭解 Azure 原生工具如何協助成熟的原則和流程，以支援資源一致性專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2f4d06c06ffcb89d30205b90ba37f70f76d50b1f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a64cbd53cdd4c524b370681ebedf1f8282ac2a93
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997298"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217943"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
-[資源一致性](./index.md)是[五個雲端治理專業領域](../governance-disciplines.md)的其中之一。 這個專業領域著重於訂定與環境、應用程式或工作負載之作業管理相關的原則。 在雲端治理的五個專業領域中，資源一致性專業領域牽涉到監視應用程式、工作負載和資產效能。 它也包含符合規模需求、補救效能 SLA 違規，以及主動避免透過自動補救進行效能 SLA 違規所需的工作。
+[資源一致性](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 這個專業領域著重於訂定與環境、應用程式或工作負載之作業管理相關的原則。 在雲端治理的五個專業領域中，資源一致性專業領域牽涉到監視應用程式、工作負載和資產效能。 它也包含符合規模需求、補救效能 SLA 違規，以及主動避免透過自動補救進行效能 SLA 違規所需的工作。
 
-以下為 Azure 工具的清單，可協助使支援此治理專業領域的原則和流程臻至成熟。
+以下是 Azure tools 的清單，可協助您成熟支援此專業領域的原則和流程。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 部署資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
 | 管理資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
@@ -40,12 +40,12 @@ ms.locfileid: "80997298"
 | 套用自動化的補救方法                  | 否  | 否  | 否  | 是 | 否  | 否 | 否 |
 | 管理計費                               | 是 | 否  | 否  | 否  | 否  | 否 | 否 |
 | 規劃災害復原的資源         | 是 | 是 | 是 | 否  | 否  | 是 | 是 |
-|在發生中斷或 SLA 違規期間復原資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
-|在發生中斷或 SLA 違規期間復原應用程式和資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
+| 在發生中斷或 SLA 違規期間復原資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
+| 在發生中斷或 SLA 違規期間復原應用程式和資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
 
 除了這些資源一致性工具和功能外，您還必須監視已部署的資源，以了解效能和健康情況問題。 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)是 Azure 中的預設監視和報告解決方案。 Azure 監視器提供監視雲端資源的功能。 此清單會顯示哪些功能可解決常見的監視需求。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 Rest API](https://docs.microsoft.com/rest/api/monitor) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 REST API](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | 記錄虛擬機器的遙測資料                 | 否           | 否                   | 是           | 否                     |
 | 記錄虛擬網路的遙測資料              | 否           | 否                   | 是           | 否                     |

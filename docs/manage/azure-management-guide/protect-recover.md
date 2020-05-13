@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426582"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217450"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -28,10 +28,10 @@ ms.locfileid: "80426582"
 
 針對任何企業級環境，下表會概述任何管理基準的最低建議：
 
-|Process  |工具  |目的  |
-|---------|---------|---------|
-|保護資料|Azure 備份|備份雲端中的資料和虛擬機器。|
-|保護環境|Azure 資訊安全中心|加強安全性，並在混合式工作負載中提供進階的威脅防護。|
+| Process                 | 工具                  | 目的                                                                                  |
+| ----------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
+| 保護資料            | Azure 備份          | 備份雲端中的資料和虛擬機器。                                          |
+| 保護環境 | Azure 資訊安全中心 | 加強安全性，並在混合式工作負載中提供進階的威脅防護。 |
 
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ ms.locfileid: "80426582"
 
 ::: zone target="docs"
 
-[概觀](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+[概觀](https://docs.microsoft.com/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
