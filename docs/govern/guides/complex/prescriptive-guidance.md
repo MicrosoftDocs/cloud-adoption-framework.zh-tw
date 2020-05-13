@@ -8,30 +8,32 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 50335d2c7e6a628c0fd8886f5d1fac2701d7f286
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0b807867164fb9ad2717499fc6772c7594140fc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995506"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220017"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
 治理指南從一組初始的[公司原則](./initial-corporate-policy.md)開始。 這些原則會用來建立治理的最小可行產品 (MVP)，以反映出[最佳做法](./index.md)。
 
-在本文中，我們會討論建立治理 MVP 所需的策略概要。 治理 MVP 的核心在於[部署加速](../../deployment-acceleration/index.md)專業領域。 在此階段套用的工具和模式，將可讓您在未來擴充治理所需的增量改善。
+在本文中，我們會討論建立治理 MVP 所需的策略概要。 治理 MVP 的核心是[部署加速專業領域](../../deployment-acceleration/index.md)。 在此階段套用的工具和模式，將可讓您在未來擴充治理所需的增量改善。
 
 ## <a name="governance-mvp-initial-governance-foundation"></a>治理 MVP （初始治理基礎）
 
 快速採用治理和公司原則是可行的，因為有一些簡單的原則和雲端控管工具。 在任何治理程序中都有要達成的三個治理專業領域，而這些是第一個。 這篇文章將進一步說明每個專業領域。
 
-為建立起點，本文將針對建立治理 MVP (所有採用的基礎) 所需的身分識別基準、安全性基準和部署加速，討論其背後的策略概要。
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+為了建立起點，本文將討論身分識別基準、安全性基準和部署加速專業領域的高階策略，這些是建立治理 MVP 所需的，這將做為所有採用的基礎。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>實作程序
 
-治理 MVP 的實作相依於身分識別、安全性和網路。 一旦解決了相依性，雲端治理小組就會決定治理的幾個層面。 雲端治理小組和支援小組的決策會透過單一強制資產封裝來執行。
+治理 MVP 的實行相依于身分識別、安全性和網路。 一旦解決了相依性，雲端治理小組就會決定治理的幾個層面。 雲端治理小組和支援小組的決策會透過單一強制資產封裝來執行。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp-implementation-flow.png)
 
@@ -39,7 +41,7 @@ ms.locfileid: "80995506"
 
 1. 關於核心相依性的請求決策：身分識別、網路和加密。
 1. 判斷在強制執行公司原則時要使用的模式。
-1. 針對資源一致性、資源標記和記錄和報告專業領域，判斷適當的治理模式。
+1. 判斷資源一致性、資源標記和記錄和報告的適當治理模式。
 1. 實作符合所選原則強制執行模式的治理工具，以套用相依性決策和治理決策。
 
 [!INCLUDE [implementation-process](../../../../includes/implementation-process.md)]
@@ -50,19 +52,25 @@ ms.locfileid: "80995506"
 
 ### <a name="subscription-design"></a>訂用帳戶設計
 
-決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇**[混合的訂](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** 用帳戶原則。
+決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已選擇[混合的訂](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies)用帳戶原則。
 
-- 出現有關 Azure 資源的新要求時，應針對每個營運地理位置中的每個主要業務單位建立「部門」。 在每個部門內，應為每個應用程式原型建立「訂用帳戶」。
-- 應用程式原型是以類似需求將應用程式分組的方式。 常見的範例包括：具有受保護資料的應用程式、受管制的應用程式（例如 HIPAA 或 FedRAMP）、低風險應用程式、具有內部部署相依性的應用程式、SAP 或 Azure 中的其他大型主機應用程式，或擴充內部部署 SAP 或大型主機應用程式的應用程式。 每個組織在資料分類和支援業務的應用程式類型上都有獨特需求。 數位資產的相依性對應可協助定義組織中的應用程式原型。
-- 根據上述兩點，應同意將常見的命名慣例列為訂用帳戶設計的一部分。
+- 當發生 Azure 資源的新要求時，應為每個營運地理區域中的每個主要業務單位建立_部門_。 在每個部門_內，都_應該為每個應用程式原型建立訂用帳戶。
+- 應用程式原型是以類似需求將應用程式分組的方式。 常見範例包括：
+  - 具有受保護資料的應用程式，受管理的應用程式（例如 HIPAA 或 FedRAMP）。
+  - 低風險應用程式。
+  - 具有內部部署相依性的應用程式。
+  - Azure 中的 SAP 或其他大型主機應用程式。
+  - 擴充內部部署 SAP 或大型主機應用程式的應用程式。
+  每個組織在資料分類和支援業務的應用程式類型上都有獨特需求。 數位資產的相依性對應可協助定義組織中的應用程式原型。
+- 根據上述的訂用帳戶設計，應採用一般命名慣例。
 
 ### <a name="resource-consistency"></a>資源一致性
 
-資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇**[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
+資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)做為主要資源一致性模式。
 
 - 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
-- 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
+- 作為部署程式的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
 - Azure 管理群組可在公司原則成熟時更新治理設計。
 - Azure 原則的廣泛執行可能會超過小組的時間承諾，而且目前可能不會提供很大的價值。 不過，應建立簡單的預設原則並套用至每個管理群組，以強制執行少量目前的雲端治理原則陳述。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
@@ -72,23 +80,23 @@ ms.locfileid: "80995506"
 
 ### <a name="resource-tagging"></a>資源標記
 
-資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇**[會計](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
+資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇[會計](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)模式做為資源標記的預設模型。
 
 - 已部署的資產應標記為的值：
-  - 部門/帳單單位
+  - 部門或帳單單位
   - [地理位置]
   - 資料分類
   - 重要性
   - SLA
   - 環境
   - 應用程式原型
-  - Application
+  - 應用程式
   - 應用程式擁有者
-- 這些值搭配 Azure 管理群組及已部署資產的相關訂用帳戶，將可擬定治理、營運和安全性決策。
+- 這些值連同與已部署的資產相關聯的 Azure 管理群組和訂用帳戶，將會推動治理、作業和安全性決策。
 
 ### <a name="logging-and-reporting"></a>記錄與報告
 
-記錄和報告決策會決定您的存放區記錄資料，以及讓 IT 人員知道如何在操作健全狀況上獲得通知的監視和報告工具是結構化的。 在此敘述中，建議使用**[混合式監視](../../../decision-guides/logging-and-reporting/index.md)** 模式來進行記錄和報告，但目前不需要任何開發小組。
+記錄和報告決策會決定您的存放區記錄資料，以及讓 IT 人員知道如何在操作健全狀況上獲得通知的監視和報告工具是結構化的。 在此敘述中，建議使用[混合式監視](../../../decision-guides/logging-and-reporting/index.md)模式來進行記錄和報告，但目前不需要任何開發小組。
 
 - 在為了進行記錄或報告而收集的特定資料點上，目前並未設定治理需求。 此功能是此虛構敘述特有的，而且應將其視為反模式。 應儘速決定和強制執行記錄標準。
 - 發行任何受保護的資料或任務關鍵性工作負載之前，需執行額外的分析。
@@ -96,7 +104,7 @@ ms.locfileid: "80995506"
 
 ## <a name="incremental-of-governance-processes"></a>治理程式的增量
 
-某些原則聲明無法或不應該由自動化工具來控制。 而其他原則需要 IT 安全性和內部部署身分識別基準小組的持續努力。 雲端治理小組必須監督下列處理常式，以執行最後八個原則聲明：
+某些原則聲明無法或不應該由自動化工具來控制。 其他原則需要 IT 安全性和內部部署身分識別基準小組進行週期性作業。 雲端治理小組必須監督下列處理常式，以執行最後八個原則聲明：
 
 **公司原則變更：** 雲端治理小組會對治理 MVP 設計進行變更，以採用新的原則。 治理 MVP 的值可用於自動強制執行新原則。
 
@@ -116,7 +124,7 @@ ms.locfileid: "80995506"
 
 - [加密模式](../../../decision-guides/encryption/index.md)
 - [身分識別模式](../../../decision-guides/identity/index.md)
-- [記錄與報告模式](../../../decision-guides/logging-and-reporting/index.md)
+- [記錄和報告模式](../../../decision-guides/logging-and-reporting/index.md)
 - [原則強制執行模式](../../../decision-guides/policy-enforcement/index.md)
 - [資源一致性模式](../../../decision-guides/resource-consistency/index.md)
 - [資源標記模式](../../../decision-guides/resource-tagging/index.md)

@@ -9,15 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396162"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220187"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>雲端治理的五個專業領域
 
+<!-- docsTest:disable TODO -->
 <!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsI">
@@ -26,7 +27,10 @@ ms.locfileid: "81396162"
             <div class="cardPadding" style="padding-bottom:10px;">
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
-對業務程序或技術平台進行的任何變更都會引進風險。 雲端治理小組（其成員有時也稱為雲端保管人）負責降低這些風險，並確保採用或創新工作的中斷程度降至最低。<br/><br/>雲端採用架構治理模型會著重于<a href="./corporate-policy.md">公司原則的開發</a>和<a href="#disciplines-of-cloud-governance">雲端治理的五個專業領域</a>，以引導這些決策（不論選擇的雲端平臺為何）。 <a href="./guides/index.md">可操作的設計指南</a>使用 Azure 服務示範此模型。 深入瞭解雲端採用架構治理模型的專業領域。
+對業務程序或技術平台進行的任何變更都會引進風險。 雲端治理小組（其成員有時也稱為雲端保管人）負責降低這些風險，並確保採用或創新工作的中斷程度降至最低。
+    <br>
+    <br>
+雲端採用架構治理模型會著重于<a href="./corporate-policy.md">公司原則的開發</a>和<a href="#disciplines-of-cloud-governance">雲端治理的五個專業領域</a>，以引導這些決策（不論選擇的雲端平臺為何）。 <a href="./guides/index.md">可操作的設計指南</a>使用 Azure 服務示範此模型。 深入瞭解雲端採用架構治理模型的專業領域。
                     </div>
                 </div>
             </div>
@@ -40,7 +44,7 @@ ms.locfileid: "81396162"
                         <div class="cardText" style="padding-left:0px;">
     <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
     <br>
-    <i>圖 1-公司原則和雲端治理的五個專業領域的圖表。</i>
+    <i>圖1：公司原則的圖表和雲端治理的五個專業領域。</i>
                         </div>
                     </div>
                 </div>

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430576"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219660"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -24,7 +24,7 @@ ms.locfileid: "80430576"
 
 - 建立[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。 （或者，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
-- 建立自動化帳戶。 （或者，如果符合需求，請使用現有的帳戶。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)）。
+- 建立自動化帳戶，或使用符合需求的現有帳戶。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
 - 連結自動化帳戶和 Log Analytics 工作區。 如果您是使用 Azure 入口網站進行上架，則不需要執行此步驟。
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219745"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -24,9 +24,9 @@ ms.locfileid: "81120564"
 
 有幾個重要的難題，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，將會很熟悉下列各項。 本文為雲端採用小組建立燃料創新和意見反應迴圈的起點。 在未來，此起點可能會促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
 
-如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
+如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期的結果。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
 
-## <a name="empowering-adoption-the-maturity-model"></a>促進採用：成熟度模型
+## <a name="empower-adoption-the-maturity-model"></a>加強採用：成熟度模型
 
 [創新方法](./index.md)的主要目標是建立客戶合作關係並加速意見反應迴圈，這會導致市場創新。 下列影像和章節說明支援此方法的初始執行。
 
@@ -43,7 +43,7 @@ ms.locfileid: "81120564"
 
 ## <a name="shared-solution"></a>共用解決方案
 
-如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。
+如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期的結果。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。
 
 當您調整創新時，沒有比解決方案的共用程式碼基底更有價值的工具。 可惜的是，沒有可靠的方法可預測哪一個反復專案，或哪些 MVP 會產生獲勝的組合。 這就是為什麼建立共用程式碼基底或儲存機制的原因不太早。 這是一項不應延遲的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)。 當小組逐一查看各種 MVP 解決方案時，共用存放庫可讓您輕鬆共同作業和加速開發。 當解決方案的變更向下拖曳學習計量時，版本控制可讓您回復為較早且更有效率的方案版本。
 
@@ -92,7 +92,7 @@ Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipeli
 
 ## <a name="integrated-measurements"></a>整合式測量
 
-當您[測量對客戶的影響](./measure.md)時，請務必瞭解客戶對解決方案中的變更有何反應。 這項資料（稱為*遙測*）可讓您深入瞭解使用解決方案時，使用者（或使用者）所採取的動作。 從這項資料中，您可以輕鬆地取得假設的量化驗證。 然後，這些計量可以用來調整解決方案，並產生更精細的假設。 在後續的反復專案中，這些細微變更有助於成熟初始解決方案，最後推動大規模重複採用。
+當您[測量對客戶的影響](./measure.md)時，請務必瞭解客戶對解決方案中的變更有何反應。 這項資料（稱為_遙測_）可讓您深入瞭解使用解決方案時，使用者（或使用者）所採取的動作。 從這項資料中，您可以輕鬆地取得假設的量化驗證。 然後，這些計量可以用來調整解決方案，並產生更精細的假設。 在後續的反復專案中，這些細微變更有助於成熟初始解決方案，最後推動大規模重複採用。
 
 在 Azure 中， [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)提供工具和介面，可收集和查看客戶經驗的資料。 您可以使用[Azure Boards](https://docs.microsoft.com/azure/devops/boards)來套用這些觀察和深入解析，以改善待處理專案。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7908dfe5a4ab63d37f97296cf8b830f358a2f4ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434655"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220493"
 ---
 # <a name="cost-management-sample-policy-statements"></a>成本管理範例原則聲明
 
@@ -29,7 +29,7 @@ ms.locfileid: "80434655"
 
 **業務風險：** 目前的準則，不保證會向治理小組投資成本管理的專業領域。 不過，您可以預期未來將有這類投資。
 
-**原則聲明：** 您應該將所有部署至雲端的資產與帳單單位和應用程式/工作負載產生關聯。 此原則將確保未來的成本管理成果將會生效。
+**原則聲明：** 您應該將所有部署至雲端的資產與帳單單位和應用程式或工作負載產生關聯。 此原則可確保您的成本管理專業領域有效。
 
 **設計選項：** 如需有關建立未來證明基礎的詳細資訊，請參閱與在雲端採用架構指引中包含的可[操作設計指南](../guides/index.md)中建立治理 MVP 相關的討論。
 
@@ -39,7 +39,7 @@ ms.locfileid: "80434655"
 
 **原則聲明：** 任何雲端部署都必須配置給具有已核准預算的計費單位和預算限制的機制。
 
-**設計選項：** 在 Azure 中，可以使用[Azure 成本管理](https://docs.microsoft.com/azure/cost-management/manage-budgets)來控制預算
+**設計選項：** 在 Azure 中，可以使用[Azure 成本管理](https://docs.microsoft.com/azure/cost-management/manage-budgets)來控制預算。
 
 ## <a name="underutilization"></a>使用量過低
 
@@ -49,7 +49,7 @@ ms.locfileid: "80434655"
 
 **設計選項：**
 
-- 在 Azure 中，已規劃與實際的支出均可透過 [Azure 成本管理](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)來管理。
+- 在 Azure 中，您可以透過[Azure 成本管理](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)來管理已規劃與實際的支出。
 - 有數個選項可讓計費單位用來群組資源。 在 Azure 中，應該與治理小組一同選擇[資源一致性模型](../../decision-guides/resource-consistency/index.md)並套用至所有資產。
 
 ## <a name="overprovisioned-assets"></a>過度佈建的資產
@@ -67,7 +67,7 @@ ms.locfileid: "80434655"
 
 **業務風險：** 有效的成本管理會產生新的風險。 將支出最佳化，正好與系統效能相反。 降低成本時，會造成過度削減支出，而產生不良使用者體驗的風險。
 
-**原則聲明：** 任何直接影響客戶體驗的資產都必須透過群組或標記來識別。 在將任何影響客戶體驗的資產優化之前，雲端治理小組必須根據至少90天的使用量趨勢來調整優化。 記載在將資產最佳化時所考慮的任何季節性或事件驅動的高載。
+**原則聲明：** 任何直接影響客戶體驗的資產都必須透過群組或標記來識別。 在將任何影響客戶體驗的資產優化之前，雲端治理小組必須根據至少90天的使用量趨勢來調整優化。 記錄優化資產時所考慮的任何季節性或事件驅動的高載。
 
 **設計選項：**
 
@@ -78,7 +78,7 @@ ms.locfileid: "80434655"
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定業務風險。
 
-若要開始自行開發與成本管理相關的自訂原則聲明，請下載[成本管理範本](./template.md)。
+若要開始開發您自己的自訂成本管理原則聲明，請下載[成本管理原則範本](./template.md)。
 
 若要加速採用這個專業領域，請選擇最符合您環境的可採取動作的[治理指南](../guides/index.md)。 然後修改設計，以納入您特定的公司原則決策。
 

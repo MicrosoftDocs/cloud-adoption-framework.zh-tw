@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7259fced72aa959509f55bbb81e9fc4b2f182e36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433902"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219269"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -26,8 +26,8 @@ ms.locfileid: "80433902"
 
 使用混合式雲端解決方案可讓組織調整運算資源。 它也消除為了處理短期需求高峰而支出大規模資本的需求。 對您的企業所做的變更，可以促使釋放本機資源以取得更敏感性資料或應用程式的需求。 取消布建雲端資源變得更簡單、更快速且成本更低。 您只需要為組織暫時使用的那些資源付費，而不需要購買及維護額外資源。 這種方法可減少長時間內可能維持閒置的設備數量。 混合式雲端運算提供雲端計算彈性、擴充性和成本效益的所有優點，而且可能會造成資料暴露的風險降到最低。
 
-![建立跨身分識別、管理、安全性、資料、開發和 DevOps](../../_images/hybrid-consistency.png)
-的混合式雲端一致性*圖 1-跨身分識別、管理、安全性、資料、開發和 DevOps 建立混合式雲端一致性。*
+![建立跨身分識別、管理、安全性、資料、開發和 DevOps 的混合式雲端一致性 ](../../_images/hybrid-consistency.png)
+ _圖1：跨身分識別、管理、安全性、資料、開發和 DevOps 建立混合式雲端一致性。_
 
 真正的混合式雲端解決方案必須提供四個元件，其中每個都有顯著的優點：
 

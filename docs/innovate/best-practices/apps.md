@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219813"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 

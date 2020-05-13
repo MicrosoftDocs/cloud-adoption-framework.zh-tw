@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997239"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219796"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -47,7 +47,7 @@ ms.locfileid: "80997239"
 
 **原則聲明：** 包含受保護資料的網路子網必須與其他任何子網隔離。 受保護資料子網路之間的網路流量必須定期稽核。
 
-**潛在的設計選項：** 在 Azure 中，網路和子網的隔離是透過[Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)來管理。
+**潛在的設計選項：** 在 Azure 中，網路和子網隔離是透過[azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)來管理。
 
 ## <a name="secure-external-access"></a>保護外部存取
 
@@ -55,15 +55,15 @@ ms.locfileid: "80997239"
 
 **原則聲明：** 沒有包含受保護資料的子網可以透過公用網際網路或跨資料中心直接存取。 這些子網路的存取必須透過中繼子網路進行路由。 這些子網路的所有存取都必須經過防火牆解決方案，該解決方案可以執行封包掃描和封鎖功能。
 
-**潛在的設計選項：** 在 Azure 中，藉由在[公用網際網路和雲端式網路之間部署 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)來保護公用端點。 請考慮[Azure 防火牆](https://docs.microsoft.com/azure/firewall)的部署、設定和自動化。
+**潛在的設計選項：** 在 Azure 中，藉由在[公用網際網路和雲端式網路之間部署 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來保護公用端點。 請考慮[Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)的部署、設定和自動化。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 
 **技術風險：** 分散式阻斷服務（DDoS）攻擊可能會導致業務中斷。
 
-**原則聲明：** 將自動化 DDoS 風險降低機制部署到所有可公開存取的網路端點。 沒有任何 DDoS，IaaS 支援的公眾面向網站不應公開至網際網路。
+**原則聲明：** 將自動化 DDoS 風險降低機制部署到所有可公開存取的網路端點。 IaaS 不支援公開的公眾網站，而不需要 DDoS。
 
-**潛在的設計選項：** 使用[Azure DDoS 保護](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)標準，將 DDoS 攻擊所造成的中斷降至最低。
+**潛在的設計選項：** 使用[Azure DDoS 保護標準](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)，將 DDoS 攻擊所造成的中斷降至最低。
 
 ## <a name="secure-on-premises-connectivity"></a>保護內部部署連線
 
@@ -93,7 +93,7 @@ ms.locfileid: "80997239"
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定的安全性風險。
 
-若要開始自行開發與安全性基準相關的自訂原則聲明，請下載[安全性基準範本](./template.md)。
+若要開始開發您自己的自訂安全性基準原則聲明，請下載[安全性基準專業領域範本](./template.md)。
 
 若要加速採用這個專業領域，請選擇最符合您環境的可採取動作的[治理指南](../guides/index.md)。 然後修改設計，以納入您特定的公司原則決策。
 

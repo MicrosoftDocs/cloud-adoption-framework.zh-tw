@@ -8,30 +8,32 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b7f8b26833a98ac02a867b466e58f5214334a0b5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995234"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219985"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：說明的最佳做法
 
 治理指南會從一組初始的[公司原則](./initial-corporate-policy.md)開始。 這些原則會用來建立治理 MVP，以反映出[最佳做法](./index.md)。
 
-在本文中，我們會討論建立治理 MVP 所需的策略概要。 治理 MVP 的核心在於[部署加速](../../deployment-acceleration/index.md)專業領域。 在此階段套用的工具和模式，將可讓您在未來擴充治理所需的增量改善。
+在本文中，我們會討論建立治理 MVP 所需的策略概要。 治理 MVP 的核心是[部署加速專業領域](../../deployment-acceleration/index.md)。 在此階段套用的工具和模式，將可讓您在未來擴充治理所需的增量改善。
 
 ## <a name="governance-mvp-initial-governance-foundation"></a>治理 MVP （初始治理基礎）
 
 快速採用治理和公司原則是可行的，因為有一些簡單的原則和雲端控管工具。 這些是在任何治理程式中要處理的前三個專業領域。 這篇文章將進一步說明每個專業領域。
 
-為建立起點，本文將針對建立治理 MVP (所有採用的基礎) 所需的身分識別基準、安全性基準和部署加速，討論其背後的策略概要。
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+為了建立起點，本文將討論身分識別基準、安全性基準和部署加速專業領域的高階策略，這些是建立治理 MVP 所需的，這將做為所有採用的基礎。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>實作程序
 
-治理 MVP 的實作相依於身分識別、安全性和網路。 一旦解決了相依性，雲端治理小組就會決定治理的幾個層面。 雲端治理小組和支援小組的決策會透過單一強制資產封裝來執行。
+治理 MVP 的實行相依于身分識別、安全性和網路。 一旦解決了相依性，雲端治理小組就會決定治理的幾個層面。 雲端治理小組和支援小組的決策會透過單一強制資產封裝來執行。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp-implementation-flow.png)
 
@@ -52,17 +54,17 @@ ms.locfileid: "80995234"
 
 決定要使用的訂用帳戶設計會決定 Azure 訂用帳戶的結構，以及如何使用 Azure 管理群組來有效率地管理這些訂用帳戶的存取、原則和合規性。 在此敘述中，治理小組已建立生產和非生產工作負載[生產和非生產](../../../ready/azure-best-practices/initial-subscriptions.md)訂用帳戶設計模式的訂閱。
 
-- 在目前的焦點下，不太可能需要部門。 部署應該會侷限在單一計費單位內。 在採用階段，甚至可能不會有集中管理計費的企業合約。 這個層級的採用可能會由單一的隨用隨付 Azure 訂用帳戶來管理。
-- 無論使用 EA 入口網站或企業合約是否存在，訂用帳戶模型仍應定義並同意，以將管理段無意的費用降至最低。
+- 在目前的焦點下，不太可能需要部門。 部署應該會侷限在單一計費單位內。 在採用的階段，可能甚至不會有 Enterprise 合約來集中計費。 這個層級的採用可能會由單一的隨用隨付 Azure 訂用帳戶來管理。
+- 不論是使用 EA 入口網站或 Enterprise 合約存在，訂用帳戶模型仍應定義並同意，以將管理段無意的費用降至最低。
 - 根據上述兩點，應同意將常見的命名慣例列為訂用帳戶設計的一部分。
 
 ### <a name="resource-consistency"></a>資源一致性
 
-資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇**[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** 做為主要資源一致性模式。
+資源一致性決策會決定在訂用帳戶內一致地部署、設定和管理 Azure 資源所需的工具、程式和工作。 在此敘述中，已選擇[部署一致性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)做為主要資源一致性模式。
 
 - 系統會為使用生命週期方法的應用程式建立資源群組。 所有建立、維護及淘汰的專案，都應該放在單一資源群組中。 如需詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md#basic-grouping)。
 - Azure 原則應該套用至相關管理群組中的所有訂用帳戶。
-- 作為部署程序的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
+- 作為部署程式的一部分，資源群組的 Azure 資源一致性範本應該儲存在原始檔控制中。
 - 每個資源群組都會根據上述的生命週期方法，與特定的工作負載或應用程式相關聯。
 - Azure 管理群組可在公司原則成熟時更新治理設計。
 - Azure 原則的廣泛執行可能會超過小組的時間承諾，而且目前可能不會提供很大的價值。 不過，應建立簡單的預設原則並套用至每個管理群組，以強制執行少量目前的雲端治理原則陳述。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
@@ -72,7 +74,7 @@ ms.locfileid: "80995234"
 
 ### <a name="resource-tagging"></a>資源標記
 
-資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇**[分類](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** 模式做為資源標記的預設模型。
+資源標記決策會決定如何將中繼資料套用至訂用帳戶內的 Azure 資源，以支援作業、管理和計量的用途。 在此敘述中，已選擇[分類](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)模式做為資源標記的預設模型。
 
 - 已部署的資產應標記為：
   - 資料分類
@@ -88,7 +90,7 @@ ms.locfileid: "80995234"
 
 ## <a name="incremental-improvement-of-governance-processes"></a>管理程式的累加式改進
 
-當治理變更時，某些原則聲明不能或不應該由自動化工具來控制。 其他原則會導致 IT 安全性小組和內部部署身分識別管理小組必須不時工作。 為了協助管理發生的新風險，雲端治理小組將會監督下列程式。
+當治理變更時，某些原則聲明不能或不應該由自動化工具來控制。 其他原則會導致 IT 安全性小組和內部部署身分識別管理小組在一段時間後的工作。 為了協助管理發生的新風險，雲端治理小組將會監督下列程式。
 
 **採用加速：** 雲端治理小組已跨多個小組檢查部署腳本。 他們維護了一組能作為部署範本的指令碼。 這些範本可供雲端採用小組和 DevOps 小組使用，進而更快速地定義部署。 其中每個腳本都包含強制執行一組治理原則的必要需求，而不需要雲端採用工程師進行額外的工作。 隨著這些腳本的 curators，雲端治理小組可以更快速地執行原則變更。 由於腳本鑒藏，雲端治理小組會被視為採用加速的來源。 這可以在沒有嚴格的強制遵循要求下，讓部署具有一致性。
 
@@ -106,7 +108,7 @@ ms.locfileid: "80995234"
 
 - [加密模式](../../../decision-guides/encryption/index.md)
 - [身分識別模式](../../../decision-guides/identity/index.md)
-- [記錄與報告模式](../../../decision-guides/logging-and-reporting/index.md)
+- [記錄和報告模式](../../../decision-guides/logging-and-reporting/index.md)
 - [原則強制執行模式](../../../decision-guides/policy-enforcement/index.md)
 - [資源一致性模式](../../../decision-guides/resource-consistency/index.md)
 - [資源標記模式](../../../decision-guides/resource-tagging/index.md)

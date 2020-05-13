@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433292"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219728"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 
-在[具有客戶理解的組建](./build.md)中，我們討論了這三項真正創新的測試：解決客戶的需求，讓客戶持續返回，並在客戶世代的基礎進行調整。 假設每個測試都需要在採用的方法上進行工作和反復專案。 本文提供一些先進的見解，讓您透過*環境體驗*來降低這項成果。 藉由與裝置互動，而不是應用程式，客戶可能會更有可能先轉變成您的解決方案。
+在[具有客戶理解的組建](./build.md)中，我們討論了這三項真正創新的測試：解決客戶的需求，讓客戶持續返回，並在客戶世代的基礎進行調整。 假設每個測試都需要在採用的方法上進行工作和反復專案。 本文提供一些先進的見解，讓您透過_環境體驗_來降低這項成果。 藉由與裝置互動，而不是應用程式，客戶可能會更有可能先轉變成您的解決方案。
 
 ## <a name="ambient-experiences"></a>環境體驗
 
@@ -24,7 +24,7 @@ ms.locfileid: "80433292"
 
 數位經濟中的生活已滿分散注意力。 我們全都頤指氣使社交、電子郵件、網頁、視覺和口頭訊息，其中每一個都是干擾的風險。 這項風險會隨著客戶的需求和遇到解決方案的時間，每秒就增加一次。 這段簡短的時間差距會遺失無數的客戶。 若要促進重複採用的增加，您必須縮短「解決方案的時間」（TTS）來減少分散注意力的數目。
 
-## <a name="interacting-with-devices"></a>與裝置互動
+## <a name="interact-with-devices"></a>與裝置互動
 
 標準的 web 體驗是最常見的應用程式開發技術，用來滿足客戶的需求。 此方法假設客戶在其電腦前面。 如果您的客戶在其膝上型電腦之前一致地滿足其需求，請建立 web 應用程式。 該 web 應用程式將會在該案例中為該客戶提供環境體驗。 不過，我們知道這種情況在我們目前的時代中比較不容易。
 
@@ -45,7 +45,7 @@ ms.locfileid: "80433292"
 
 當客戶經常行動和變更位置時，可能代表特定解決方案最相關的環境體驗。 過去十年來，創新經常是由現有解決方案與行動體驗的整合所觸發。
 
-Azure App 服務是這種方法的絕佳範例。 在早期反復專案期間， [Azure App 服務的 web 應用程式功能](https://docs.microsoft.com/azure/app-service/overview)可以用來測試假設。 隨著假設變得更複雜， [Azure App 服務的行動應用程式功能](https://docs.microsoft.com/azure/app-service-mobile)可以擴充 web 應用程式，以在各種行動平臺上執行。
+Azure App Service 是這種方法的絕佳範例。 在早期反復專案期間， [Azure App Service 的 web 應用程式功能](https://docs.microsoft.com/azure/app-service/overview)可以用來測試假設。 隨著假設變得更複雜，Azure App Service 的行動[應用程式功能](https://docs.microsoft.com/azure/app-service-mobile)可以擴充 web 應用程式，以便在各種行動平臺中執行。
 
 ## <a name="mixed-reality"></a>混合實境
 
@@ -74,7 +74,7 @@ Azure 中的整合現實範例包括：
 
 ## <a name="adjusted-reality"></a>已調整的實境
 
-環境經驗的最高形式是已調整的事實，通常稱為「*環境智慧*」。 已調整的事實是使用您的解決方案中的資訊來變更客戶的現實，而不需要他們直接與應用程式互動的方法。 在這種方法中，您最初建立以證明假設的應用程式可能不再相關。 相反地，環境中的裝置會協助 lambert 輸入和輸出，以符合客戶的需求。
+環境經驗的最高形式是已調整的事實，通常稱為「_環境智慧_」。 已調整的事實是使用您的解決方案中的資訊來變更客戶的現實，而不需要他們直接與應用程式互動的方法。 在這種方法中，您最初建立以證明假設的應用程式可能不再相關。 相反地，環境中的裝置會協助 lambert 輸入和輸出，以符合客戶的需求。
 
 虛擬助理和智慧型喇叭提供了調整現實的絕佳範例。 而智慧型說話者就是簡單整合現實的範例。 但是，將智慧型光線和動作感應器新增至智慧型說話者解決方案，並輕鬆地建立基本解決方案，以在輸入房間時開啟燈。
 

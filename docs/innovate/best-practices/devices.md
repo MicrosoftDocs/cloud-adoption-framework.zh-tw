@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425404"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219762"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>在 Azure 中與裝置互動的工具
 
@@ -33,10 +33,16 @@ ms.locfileid: "80425404"
 
 在 Azure 中，您通常會使用下列工具來加速每個先前環境解決方案層級的數位家發明。 這些工具會根據所需的經驗來分組，以降低將工具與這些經驗對齊的複雜性。
 
-- 行動體驗： Azure App Service、PowerApps、Microsoft Flow、Intune
-- 混合現實： Unity、Azure 空間錨點、HoloLens
-- 整合式現實： Azure IoT 中樞、Azure Sphere、Azure Kinect DK
-- 已調整現實： IoT 雲端到裝置、Azure 數位 Twins + HoloLens
+<!-- markdownlint-disable MD033 -->
+
+| 類別 | 工具 |
+|---|---|
+| 行動體驗 | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| 混合實境 | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
+| 整合式現實 | <li> Azure IoT 中樞 <li> Azure Sphere <li> Azure Kinect DK |
+| 已調整的實境 | <li> IoT 雲端到裝置 <li> Azure 數位 Twins + HoloLens |
+
+<!--markdownlint-enable MD033 -->
 
 ## <a name="get-started"></a>開始使用
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6671b194d5969be75283378d571b85bd679a7953
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434089"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219643"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 
@@ -40,7 +40,7 @@ ms.locfileid: "80434089"
 下列 Azure 伺服器管理服務需要連結的 Log Analytics 工作區和自動化帳戶：
 
 - [Azure 更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)
-- [變更追蹤與詳細目錄](https://docs.microsoft.com/azure/automation/change-tracking)
+- [變更追蹤和清查](https://docs.microsoft.com/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
 
@@ -52,10 +52,10 @@ ms.locfileid: "80434089"
 
 準備要上線管理服務所需的工作區和帳戶時，請考慮下列問題：
 
-- **Azure 地理位置與法規合規性：** Azure 區域會組織成*地理*位置。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保資料存放區、主權、合規性及復原需求會在地理界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，則工作區和自動化帳戶必須部署到與它們所支援的工作負載資源位於相同 Azure 地理位置內的區域。
+- **Azure 地理位置與法規合規性：** Azure 區域會組織成_地理_位置。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保資料存放區、主權、合規性及復原需求會在地理界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，則工作區和自動化帳戶必須部署到與它們所支援的工作負載資源位於相同 Azure 地理位置內的區域。
 - **工作區數目：** 做為指導原則，請建立每個 Azure 地理位置所需的最小工作區數目。 針對您的計算或儲存體資源所在的每個 Azure 地理位置，我們建議至少有一個工作區。 當您將資料移轉到不同的地理位置時，這種初始對齊方式有助於避免未來的法規問題。
 - **資料保留和上限：** 建立工作區或自動化帳戶時，您可能也需要考慮資料保留原則或資料上限需求。 如需這些原則的詳細資訊，以及規劃工作區時的其他考慮，請參閱[管理 Azure 監視器中的記錄資料和工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。
-- **區域對應：** 只有在某些 Azure 區域之間才支援連結 Log Analytics 工作區和 Azure 自動化帳戶。 例如，如果 Log Analytics 工作區裝載于*EastUS*區域中，則必須在*EastUS2*區域中建立連結的自動化帳戶，以便與管理服務搭配使用。 如果您有在另一個區域中建立的自動化帳戶，它無法連結到*EastUS*中的工作區。 部署區域的選擇可能會大幅影響 Azure 地理位置需求。 請參閱[區域對應表](https://docs.microsoft.com/azure/automation/how-to/region-mappings)，以決定哪個區域應裝載您的工作區和自動化帳戶。
+- **區域對應：** 只有在某些 Azure 區域之間才支援連結 Log Analytics 工作區和 Azure 自動化帳戶。 例如，如果 Log Analytics 工作區裝載于 `EastUS` 區域中，則必須在 `EastUS2` 要與管理服務搭配使用的區域中建立連結的自動化帳戶。 如果您的自動化帳戶是在另一個區域中建立，則無法連結至中的工作區 `EastUS` 。 部署區域的選擇可能會大幅影響 Azure 地理位置需求。 請參閱[區域對應表](https://docs.microsoft.com/azure/automation/how-to/region-mappings)，以決定哪個區域應裝載您的工作區和自動化帳戶。
 - **工作區**多路連接：在某些情況下，Azure Log Analytics 代理程式支援多路連接，但在此設定中執行時，代理程式會面臨許多限制和挑戰。 除非 Microsoft 針對您的特定案例建議使用，否則我們不建議您在 Log Analytics 代理程式上設定多路連接。
 
 ## <a name="resource-placement-examples"></a>資源位置範例

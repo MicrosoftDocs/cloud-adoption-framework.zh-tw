@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b92f9593c0d35f4c73dc17733d1ae57dbbe599b4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995532"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220255"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 
@@ -56,7 +56,7 @@ ms.locfileid: "80995532"
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定業務風險。
 
-若要開始自行開發與身分識別管理相關的自訂原則聲明，請下載[身分識別基準範本](../identity-baseline/template.md)。
+若要開始開發您自己的自訂身分識別基準原則聲明，請下載身分[識別基準專業領域範本](../identity-baseline/template.md)。
 
 若要加速採用這個專業領域，請選擇最符合您環境的可採取動作的[治理指南](../guides/index.md)。 然後修改設計，以納入您特定的公司原則決策。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36c2653876f0d254a282a7f7ed3abaee2ca82656
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7c38d394e5681de181186c3c8f04e6704b53e96e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434390"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220068"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>複雜企業的治理指南：多層治理
 
@@ -22,7 +22,7 @@ ms.locfileid: "80434390"
 此類複雜度的幾個常見範例包括：
 
 - 分散式治理功能。
-- 公司 IT 支援營業單位 IT 組織。
+- 公司 IT 支援業務單位 IT 組織。
 - 公司 IT 支援地理位置分散的 IT 組織。
 
 這篇文章將探討巡覽此類複雜度的一些方式。
@@ -51,8 +51,8 @@ ms.locfileid: "80434390"
 
 這些工具的重點是能夠套用至階層的多個藍圖。 這可讓治理成為多層式流程。 以下是此治理之階層式應用程式的其中一個範例：
 
-- **公司 IT：** 公司 IT 會建立一組適用于所有雲端採用的標準和原則。 這會在「基準」藍圖中具體化。 然後，公司 IT 會擁有管理群組階層，確保基準版本套用至階層中的所有訂用帳戶。
-- **地區或業務單位 IT：** 各種 IT 小組可以藉由建立自己的藍圖來套用一層額外的治理。 這些藍圖會建立附加的原則和標準。 開發完成後，公司 IT 可將這些藍圖套用至管理群組階層內適用的節點。
-- **雲端採用小組：** 有關應用程式或工作負載的詳細決策和執行，可以由每個雲端採用小組在治理需求的內容中進行。 有時，小組也可以要求其他的 Azure 資源一致性範本，以加速採用工作。
+- **公司 IT：** 公司 IT 會建立一組適用于所有雲端採用的標準和原則。 這會在_基準_藍圖中具體化。 然後，公司 IT 會擁有管理群組階層，確保基準版本套用至階層中的所有訂用帳戶。
+- **地區或業務單位 IT：** 各種 IT 小組可以藉由建立自己的藍圖來套用一層額外的治理。 這些藍圖會建立附加的原則和標準。 一旦開發之後，公司 IT 就可以將這些藍圖套用到管理群組階層內適用的節點。
+- **雲端採用小組：** 有關應用程式或工作負載的詳細決策和執行，可以由每個雲端採用小組在治理需求的內容中進行。 小組也可以要求額外的 Azure 資源一致性範本，以加速採用工作。
 
 每個層級的治理實作詳細資料將需要每個小組之間協調。 本指南中所述的治理 MVP 和治理改良有助於協調協調。

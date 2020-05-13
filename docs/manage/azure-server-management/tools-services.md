@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434066"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219558"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
@@ -57,8 +57,8 @@ ms.locfileid: "80434066"
 
 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)提供各種資源的觀點，例如應用程式、容器和虛擬機器。 它也會收集來自數個來源的資料：
 
-- 適用於 VM 的 Azure 監視器（[深入](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)解析）提供虛擬機器健全狀況、效能趨勢和相依性的深入觀點。 此服務會監視您的 Azure 虛擬機器、虛擬機器擴展集和內部部署環境中電腦的作業系統健全狀況。
-- Log Analytics （[記錄](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)）是 Azure 監視器的功能。 其角色是整體 Azure 管理案例的核心。 它可做為記錄分析和其他許多 Azure 服務的資料存放區。 它提供豐富的查詢語言和分析引擎，可讓您深入瞭解應用程式和資源的運作。
+- [適用於 VM 的 Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)提供 VM 健全狀況、效能趨勢和相依性的深入觀點。 此服務會監視您的 Azure 虛擬機器、虛擬機器擴展集和內部部署環境中電腦的作業系統健全狀況。
+- [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)是 Azure 監視器的功能。 其角色是整體 Azure 管理案例的核心。 它可做為記錄分析和其他許多 Azure 服務的資料存放區。 它提供豐富的查詢語言和分析引擎，可讓您深入瞭解應用程式和資源的運作。
 - [Azure 活動記錄](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)也是 Azure 監視器的功能。 它可讓您深入瞭解 Azure 中發生的訂用帳戶層級事件。
 
 ## <a name="configure"></a>設定

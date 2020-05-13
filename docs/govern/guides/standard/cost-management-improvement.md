@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434299"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219932"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準 enterprise guide：改善成本管理專業領域
+# <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準企業治理指南：改善成本管理專業領域
 
 本文藉由將成本控制新增至治理 MVP 來推進敘述。
 
 ## <a name="advancing-the-narrative"></a>推進敘述
+
+<!-- docsTest:ignore DR -->
 
 採用已成長超越治理 MVP 中定義的成本承受度指標。 這樣很好，因為它與 "DR" 資料中心的移轉相對應。 消費的增加現在證明了雲端治理小組的時間投資。
 
@@ -36,7 +38,7 @@ ms.locfileid: "80434299"
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 
-成本監視和報告要新增至雲端解決方案。 IT 仍然作為成本結算所。 這表示 IT 採購會持續有雲端服務的付款。 不過，報告應該將直接操作費用系結至耗用雲端成本的功能。 此模型稱為「顯示回」雲端帳戶處理模型。
+成本監視和報告要新增至雲端解決方案。 IT 仍然作為成本結算所。 這表示 IT 採購會持續有雲端服務的付款。 不過，報告應該將直接操作費用系結至耗用雲端成本的功能。 此模型稱為_回報_雲端帳戶處理模型。
 
 目前和未來狀態的變更會產生新風險，因此需要新的原則聲明。
 
@@ -69,7 +71,7 @@ ms.locfileid: "80434299"
     1. 建立存取的正確範圍，與訂用帳戶模式和資源一致性專業領域保持一致。 假設與先前文章中定義的治理 MVP 一致，這需要在高階報告上執行之雲端治理小組的**註冊帳戶範圍**存取權。 治理之外的其他小組可能需要**資源群組範圍**存取權。
     1. 在 Azure 成本管理中建立預算。
     1. 檢閱初始建議並採取動作。 進行週期性流程以支援報告。
-    1. 設定及執行初始和週期性 Azure 成本管理報告。
+    1. 設定和執行 Azure 成本管理報告（初始和週期性）。
 2. 更新 Azure 原則
     1. 稽核標記、管理群組、訂用帳戶及資源群組值，以識別任何偏差。
     1. 建立 SKU 大小選項，以限制對於部署規劃文件中列出之 SKU 的部署。

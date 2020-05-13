@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6d777a1c919e72c55d8c6202ef1c32f44d9444d9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430358"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219473"
 ---
 <!-- cSpell:ignore jenhayes -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "80430358"
 
 當需要多租使用者架構時， [Azure 燈塔](https://docs.microsoft.com/azure/lighthouse/overview)會提供一種方式來集中化和簡化管理作業。 可以上架多個租使用者的訂用帳戶，以進行[Azure 委派的資源管理](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management)。 此選項可讓管理租使用者中的指定使用者以集中且可擴充的方式執行[跨租使用者管理功能](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience)。
 
-例如，假設您的組織有一個租使用者*a*。然後，組織會取得兩個額外的*租使用者 B*和租使用者*C*，而且您有商業理由要求您將其維護為個別的租使用者。
+例如，假設您的組織有單一租使用者 `Tenant A` 。 接著，組織會取得兩個額外的租 `Tenant B` 使用者，而且 `Tenant C` 您有業務理由需要您將其維護為個別的租使用者。
 
 貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有負責在租使用者 A 中執行這些工作的使用者（包括使用者群組和服務主體），所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的這些訂用帳戶可以執行這些作業。 然後，租使用者 A 會成為租使用者 B 和租使用者 C 的管理租使用者。
 

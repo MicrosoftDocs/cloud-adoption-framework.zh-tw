@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434441"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220119"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -26,15 +26,15 @@ ms.locfileid: "80434441"
 CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技術可行性的期間，其找到幾個障礙：
 
 - 受保護的資料及任務關鍵性應用程式佔了兩個資料中心 25% 的工作負載。 在現代化機密個人資料和任務關鍵性應用程式的目前治理原則之前，都不能完全消除。
-- 在這兩個資料中心內，7% 的資產與雲端不相容。 其會先移至替代的資料中心，再終止資料中心的合約。
-- 資料中心內有 15% 的資產 (750 個虛擬機器) 相依於舊式的驗證或第三方多重要素驗證。
+- 這些資料中心的7% 資產不是雲端相容。 其會先移至替代的資料中心，再終止資料中心的合約。
+- 資料中心內的15% 資產（750虛擬機器）相依于舊版驗證或協力廠商多重要素驗證。
 - 連結現有資料中心與 Azure 的 VPN 連線未提供足夠的資料傳輸速度或延遲，因而無法在兩年內遷移大量資產，從而淘汰資料中心。
 
 前兩個障礙會以平行方式進行管理。 本文會講述第三個和第四個障礙的解決方案。
 
 ### <a name="expand-the-cloud-governance-team"></a>擴充雲端治理小組
 
-雲端治理小組正在擴充。 由於需要另外支援身分識別管理，來自身分識別基準小組的系統管理員現在會參與每週一次的會議，好讓現有的小組成員了解有何改變。
+雲端治理小組正在擴充。 由於需要額外的身分識別管理支援，來自身分識別基準小組的系統管理員現在會參與每週會議，讓現有的小組成員知道有哪些變更。
 
 ### <a name="changes-in-the-current-state"></a>目前狀態的變更
 
@@ -42,7 +42,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 
-新的未來狀態計劃需要準備更強固的身分識別基準解決方案，以便遷移需要使用舊式驗證的 750 個虛擬機器。 除了這兩個資料中心之外，這項挑戰預期會影響其他資料中心內類似的資產百分比。
+新的未來狀態計畫需要更健全的身分識別基準解決方案，才能遷移具有舊版驗證需求的750虛擬機器。 除了這兩個資料中心之外，這項挑戰預期會影響其他資料中心內類似的資產百分比。
 
 未來的狀態現在也需要從雲端提供者連接到公司的 MPLS/租用型解決方案。
 
@@ -77,7 +77,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 以下是新的最佳做法：
 
-- **保護混合式 VNet 藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這個最佳做法需要讓 DMZ 跨網路界限啟用 Active Directory Domain Services。
+- **保護混合式虛擬網路藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這個最佳做法需要讓 DMZ 跨網路界限啟用 Active Directory Domain Services。
 - **Azure Resource Manager 範本：**
     1. 定義 NSG 以封鎖外部流量，並允許內部流量。
     2. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。

@@ -8,26 +8,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995228"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219864"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
-身分識別基準專業領域著重在建立原則的方式，無論主控應用程式或工作負載的雲端提供者是誰，都確保使用者身分識別的一致性和持續性。 在五個雲端治理的專業領域中，身分識別基準包括關於[混合式身分識別策略](../../decision-guides/identity/index.md)的決策、身分識別存放庫的評估和延伸、實作單一登入 (相同登入)、稽核及監視未獲授權使用或惡意動作項目。 在某些情況下，也可能牽涉到現代化、合併或整合多個身分識別提供者的決策。
+身分識別基準專業領域著重在建立原則的方式，無論主控應用程式或工作負載的雲端提供者是誰，都確保使用者身分識別的一致性和持續性。 在雲端治理的五個專業領域中，身分識別基準專業領域包含關於混合式身分[識別策略](../../decision-guides/identity/index.md)的決策、身分識別存放庫的評估和延伸、單一登入（相同登入）的執行、針對未經授權的使用或惡意執行者進行的審核和監視。 在某些情況下，也可能牽涉到現代化、合併或整合多個身分識別提供者的決策。
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發身分識別基準專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
-*圖 1-雲端治理累加方法的採用階段。*
+_圖1：雲端治理累加方法的採用階段。_
 
-沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立[原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立累加式原則改善的架構。 您的雲端治理小組必須決定要在這些活動中投入多少時間，以改善您的身分識別基準治理功能。
+沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立[原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立累加式原則改善的架構。 您的雲端治理小組必須決定要在這些活動中投入多少時間來改善您的身分識別基準專業領域。
 
 > [!CAUTION]
 > 本文中所述的最小或潛在活動都不會與特定的公司原則或協力廠商合規性需求一致。 此指導方針旨在協助促成交談，從而使這兩個需求與雲端治理模型保持一致。
@@ -38,8 +38,8 @@ ms.locfileid: "80995228"
 
 **最小的建議活動：**
 
-- 評估您的[身分識別工具鏈](./toolchain.md)選項，並實作適用於貴組織的混合式策略。
-- 開發架構指導方針文件的草稿，並散發給重要的專案關係人。
+- 評估您的身分[識別基準工具鏈](./toolchain.md)選項，並實行適用于您組織的混合式策略。
+- 開發草稿架構方針檔，並散發給重要的專案關係人。
 - 教育並涵蓋受到開發架構指導方針影響的人員和小組。
 
 **潛在的活動：**
@@ -57,31 +57,33 @@ ms.locfileid: "80995228"
 
 **最小的建議活動：**
 
-- 在實作[身分識別工具鏈](./toolchain.md)之前請考量試驗測試，確定它可以盡可能簡化使用者體驗。
+- 在執行您的身分[識別基準工具鏈](./toolchain.md)之前，請先考慮試驗測試，並確定它能盡可能簡化使用者體驗。
 - 將試驗測試的意見反應套用至預先部署。 重複直到可接受結果。
-- 更新架構方針文件，以包含部署與使用者採用方案，並散發給重要的專案關係人。
+- 更新架構方針檔，以包含部署和使用者採用方案，並散發給重要的專案關係人。
 - 請考量建立早期採用者方案，並向限量的使用者推出。
 - 繼續教育受架構方針影響最大的人員與小組。
 
+<!-- docsTest:ignore "seamless SSO" -->
+
 **潛在的活動：**
 
-- 評估您的邏輯與實體架構，並決定[混合式身分識別策略](../../decision-guides/identity/index.md)。
+- 評估您的邏輯和實體架構，並判斷混合式身分[識別策略](../../decision-guides/identity/index.md)。
 - 對應身分識別存取管理原則，例如登入識別碼指派，並選擇適用於 Azure AD 的適當驗證方法。
   - 如果同盟，請啟用系統管理帳戶的租用戶限制。
 - 整合您的內部部署與雲端目錄。
 - 請考量使用下列存取模型：
-  - [最低許可權存取](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)模型。
-  - 特殊[許可權身分識別基準](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)存取模型。
-- 完成所有 preintegration 的詳細資料，並查看身分[識別最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)。
-  - 啟用單一身分識別、單一登入（SSO）或無縫 SSO。
+  - [最低許可權的系統管理](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)存取模型。
+  - 特殊[許可權身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)存取模型。
+- 完成所有 preintegration 的詳細資料，並審查身分[識別管理和存取控制安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)。
+  - 啟用單一身分識別、單一登入（SSO），又稱為無縫 SSO。
   - 為系統管理員設定多重要素驗證。
   - 視需要合併或整合身分識別提供者。
   - 執行集中管理身分識別所需的工具。
   - 啟用即時（JIT）存取和角色變更警示。
-  - 進行金鑰管理活動的風險分析，以指派給內建角色。
+  - 執行金鑰管理活動的風險分析，以指派給內建角色。
   - 針對所有使用者，請考慮更新的首度發行，以進行更強的驗證。
-  - 針對其他系統管理角色啟用 JIT 的特殊許可權身分識別基準（PIM）（使用限時啟動）。
-  - 將使用者帳戶與全域管理員帳戶分開（以確保系統管理員不會不慎開啟電子郵件或執行與其全域管理員帳戶相關聯的程式）。
+  - 啟用適用于 JIT 的特殊許可權身分識別管理（PIM）（使用時間限制啟動），以取得其他系統管理角色。
+  - 將使用者帳戶與全域管理員帳戶分開，以確保系統管理員不會不慎開啟電子郵件或執行與其全域管理員帳戶相關聯的程式）。
 
 ## <a name="adopt-and-migrate"></a>採用和移轉
 
@@ -89,9 +91,11 @@ ms.locfileid: "80995228"
 
 **最小的建議活動：**
 
-- 將您的[身分識別工具鏈](./toolchain.md)從開發環境移轉至生產環境。
-- 更新架構指導方針文件，並散發給重要的專案關係人。
+- 將您的身分[識別基準工具鏈](./toolchain.md)從開發遷移到生產環境。
+- 更新架構方針檔，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
+
+<!-- docsTest:ignore "Seamless SSO" -->
 
 **潛在的活動：**
 
@@ -101,7 +105,7 @@ ms.locfileid: "80995228"
 - 驗證單一登入 (SSO) 和無縫 SSO 對於您的應用程式如預期般運作。
 - 減少或排除替代身分識別存放區的數目。
 - 審查任何應用程式內或資料庫內身分識別存放區的需求。 落在適當身分識別提供者 (第一方或第三方) 範圍外的身分識別，可以代表應用程式和使用者的風險。
-- 啟用[內部部署同盟應用程式](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup)的條件式存取。
+- 啟用[內部部署同盟應用程式](https://docs.microsoft.com/azure/active-directory/devices/overview)的條件式存取。
 - 跨全域區域在多個中樞 (具有區域之間的同步處理) 中散佈身分識別。
 - 建立中央角色型存取控制 (RBAC) 同盟。
 
@@ -111,11 +115,11 @@ ms.locfileid: "80995228"
 
 **最小的建議活動：**
 
-- 根據組織變更的身分識別需求，自訂您的身分[識別基準工具鏈](./toolchain.md)。
+- 根據您組織的變更需求，自訂您的身分[識別基準工具鏈](./toolchain.md)。
 - 將通知和報告自動化，以警示您潛在的惡意威脅。
 - 監視和報告系統使用量和使用者採用進度。
 - 報告部署後計量，並散發給專案關係人。
-- 精簡架構指導方針，以引導未來的採用程序。
+- 精簡架構指導方針，以引導未來的採用程式。
 - 定期與受影響的小組通訊並且持續教育，以確保會持續遵循架構方針。
 
 **潛在的活動：**
@@ -131,12 +135,12 @@ ms.locfileid: "80995228"
 - 調查身分識別存取管理 (IAM) 模組之間的自動化和通訊增加層級。
 - 請考量實作開發安全性作業 (DevSecOps) 方法。
 - 進行影響分析來測量成本、安全性和使用者採用的結果。
-- 定期產生影響報告，顯示系統所建立計量的變更，並且評估[混合式身分識別策略](../../decision-guides/identity/index.md)的業務影響。
+- 會定期產生影響報告，顯示系統所建立之計量中的變更，並預估混合式身分[識別策略](../../decision-guides/identity/index.md)的業務影響。
 - 建立 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)所建議的整合監視。
 
 ## <a name="next-steps"></a>後續步驟
 
-既然您已了解雲端身分識別治理的概念，請檢查[身分識別基準工具鏈](./toolchain.md)，來識別您在 Azure 平台上開發身分識別基準治理專業領域時所需的 Azure 工具和功能。
+既然您已瞭解雲端身分識別治理的概念，請檢查身分識別[基準工具鏈](./toolchain.md)，以識別您在 azure 平臺上開發身分識別基準專業領域時所需的 azure 工具和功能。
 
 > [!div class="nextstepaction"]
 > [適用於 Azure 的身分識別基準工具鏈](./toolchain.md)

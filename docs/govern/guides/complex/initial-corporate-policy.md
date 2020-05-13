@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9dbbf67fcd303803a110b49b803698eea2c37687
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995417"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220136"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雜企業的治理指南：治理策略背後的初始公司原則
 
@@ -26,7 +26,7 @@ ms.locfileid: "80995417"
 
 CIO 最近與 IT 治理小組見面，以瞭解個人資料和任務關鍵性原則的歷程記錄，並檢查變更這些原則的影響。 CIO 也討論了雲端對 IT 和公司的整體潛能。
 
-會議之後，有兩個 IT 治理小組成員要求了研究並支援雲端規劃工作的權限。 IT 治理主管認可治理需求以及限制影子 IT 的機會，因此支援這個想法。 如此一來，雲端治理小組就已經出生了。 在接下來的幾個月，他們會從治理的觀點，接手清除在探索雲端期間所造成的許多錯誤。 這會獲得_雲端保管人_的標記。 在稍後的反復專案中，本指南將說明其角色在一段時間內的變更方式。
+會議之後，IT 治理小組的兩位成員要求了研究和支援雲端規劃工作的許可權。 認識治理的需求，以及限制影子 IT 的機會，IT 治理的主管支援此概念。 如此一來，雲端治理小組就已經出生了。 在接下來的幾個月，他們會從治理的觀點，接手清除在探索雲端期間所造成的許多錯誤。 這會獲得_雲端保管人_的標記。 在稍後的反復專案中，本指南將說明其角色在一段時間內的變更方式。
 
 [!INCLUDE [business-risk](../../../../includes/business-risks.md)]
 

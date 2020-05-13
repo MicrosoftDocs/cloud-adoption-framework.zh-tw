@@ -1,6 +1,6 @@
 ---
-title: 部署加速風險承受度計量和指示器
-description: 使用適用于 Azure 的雲端採用架構來量化與部署加速相關的商務風險承受度。
+title: 部署加速專業領域中的風險承受度計量和指示器
+description: 使用適用于 Azure 的雲端採用架構來量化與部署加速專業領域相關的商務風險承受度。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 14ae08de4bb0ce82e4ba0d5ce0225c0597ee67b4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434536"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220272"
 ---
-# <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>部署加速的計量、指標及風險承受度
+# <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>部署加速專業領域中的風險承受度計量和指示器
 
-本文將協助您量化商務風險承受度，因為這與部署加速有關。 定義計量和指標可協助您建立商務案例，藉此讓部署加速專業領域變得更完善。
+瞭解如何量化與部署加速專業領域相關聯的商務風險承受度。 定義計量和指標有助於建立商業案例，以投資此專業領域的成熟度。
 
 ## <a name="metrics"></a>計量
 
-部署加速專業領域著重于如何設定、部署、更新和維護雲端資源的相關風險。 在採用此雲端治理專業領域時，下列資訊會很有用：
+部署加速著重于如何設定、部署、更新和維護雲端資源的相關風險。 在採用此雲端治理專業領域時，下列資訊會很有用：
 
 - **部署失敗：** 失敗或導致資源設定錯誤的部署百分比。
 - **部署時間：** 將更新部署到現有系統所需的時間量。
@@ -29,11 +29,9 @@ ms.locfileid: "80434536"
 
 ## <a name="risk-tolerance-indicators"></a>風險承受度指標
 
-與部署加速相關的風險，大多與企業所部署雲端式系統的數量和複雜度相關。 隨著雲端資產的增加，所部署的系統數量和雲端資源的更新頻率也會增加。 由於資源彼此相依，確保資源設定正確以及為系統設計復原能力以在一或多個資源發生非預期停機時可以恢復運作，就變得更加重要。
+與部署加速相關的風險，主要與為企業部署之雲端式系統的數量和複雜性有關。 隨著雲端資產的增加，所部署的系統數量和雲端資源的更新頻率也會增加。 由於資源彼此相依，確保資源設定正確以及為系統設計復原能力以在一或多個資源發生非預期停機時可以恢復運作，就變得更加重要。
 
-<!-- "en-us" location is required for the URL below. -->
-
-傳統的公司 IT 組織通常會有孤立的作業、安全性和開發團隊，這些小組通常無法正常合作，或甚至彼此形成對立或惡意。 及早認清這些挑戰並整合來自各個小組的重要關係人，將有助於企業確保在採用雲端時的靈活度，而又保有安全且治理完善的環境。 因此，您應該考慮在雲端採用旅程的初期採用 DevOps 或[DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops)組織文化。
+傳統的公司 IT 組織通常會有孤立的作業、安全性和開發團隊，這些小組通常無法正常合作，或甚至彼此形成對立或惡意。 及早認清這些挑戰並整合來自各個小組的重要關係人，將有助於企業確保在採用雲端時的靈活度，而又保有安全且治理完善的環境。 因此，請考慮儘早在您的雲端採用旅程中採用 DevOps 或[DevSecOps](https://www.microsoft.com/devsecops)組織文化特性。
 
 請與 DevSecOps 小組和業務關係人一同找出與設定相關的[業務風險](./business-risks.md)，然後判斷在設定風險承受度時可接受的基準。 雲端採用架構指引的這一節提供範例，但您公司或部署的詳細風險和基準可能會有所不同。
 
@@ -45,9 +43,9 @@ ms.locfileid: "80434536"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[雲端管理範本](./template.md)，記錄與目前的雲端採用方案一致的計量和承受度指標。
+使用[部署加速專業領域範本](./template.md)，記錄與目前雲端採用方案一致的計量和承受度指標。
 
-請參閱範例部署加速原則作為起點，以開發可解決符合您雲端採用方案之特定商務風險的原則。
+檢查範例部署加速原則，作為起點以開發您自己的原則，以解決符合您雲端採用方案的特定商務風險。
 
 > [!div class="nextstepaction"]
 > [審查範例原則](./policy-statements.md)

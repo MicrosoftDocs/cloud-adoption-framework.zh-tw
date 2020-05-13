@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430480"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219541"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 
@@ -27,10 +27,10 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
 本節中的範例腳本說明如何使用標記和查詢來建立可將更新排程套用至的動態電腦群組。 它會執行下列動作。 當您建立自己的腳本時，可以參考特定動作的執行。
 
 - 建立在每個星期六上午8:00 執行的 Azure 自動化更新排程。
-- 針對符合下列準則的機器建立查詢：
-  - 部署在`westus`、 `eastus`或`eastus2` Azure 位置
-  - 將`Owner`標記套用至其值設定為的`JaneSmith`
-  - 將`Production`標記套用至其值設定為的`true`
+- 針對符合這些準則的任何電腦建立查詢：
+  - 部署在 `westus` 、 `eastus` 或 `eastus2` Azure 位置。
+  - 具有套用的 `Owner` 標記，其值設定為 `JaneSmith` 。
+  - 具有套用的 `Production` 標記，其值設定為 `true` 。
 - 將更新排程套用至查詢的機器，並設定兩個小時的更新視窗。
 
 執行範例腳本之前，您必須使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您啟動腳本時，請提供下列資訊：
@@ -54,19 +54,19 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
 
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionId,
+        [string] $SubscriptionId,
 
         [Parameter(Mandatory=$true)]
-        [string]$ResourceGroupName,
+        [string] $ResourceGroupName,
 
         [Parameter(Mandatory=$true)]
-        [string]$WorkspaceName,
+        [string] $WorkspaceName,
 
         [Parameter(Mandatory=$true)]
-        [string]$AutomationAccountName,
+        [string] $AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCriticalSecurity"
+        [string] $scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation
@@ -87,8 +87,8 @@ Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理�
 
     $query1Location =@("westus", "eastus", "eastus2")
     $query1FilterOperator = "Any"
-    $ownerTag = @{"Owner"= @("JaneSmith")}
-    $ownerTag.add("Production", "true")
+    $ownerTag = @{ "Owner"= @("JaneSmith") }
+    $ownerTag.Add("Production", "true")
 
     $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
         -AutomationAccountName $AutomationAccountName `

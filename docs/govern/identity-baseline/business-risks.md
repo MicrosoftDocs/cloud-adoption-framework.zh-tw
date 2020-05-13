@@ -1,6 +1,6 @@
 ---
-title: 身分識別基準商務風險
-description: 瞭解並查看典型客戶在雲端治理策略中採用身分識別基準專業領域的範例。 
+title: 身分識別基準專業領域中的動機和業務風險
+description: 瞭解並查看典型客戶在雲端治理策略中採用身分識別基準專業領域的範例。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429896"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219881"
 ---
-# <a name="identity-baseline-motivations-and-business-risks"></a>身分識別基準動機和業務風險
+# <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>身分識別基準專業領域中的動機和業務風險
 
 本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="identity-baseline-relevancy"></a>身分識別基準相關性
+## <a name="relevance"></a>相關性
 
 傳統內部部署目錄的設計目的是讓企業能夠嚴格控制其內部網路和資料中心內使用者、群組及角色的權限和原則。 這些目錄通常支援單一租使用者的執行，且服務僅適用于內部部署環境。
 
@@ -42,7 +42,7 @@ ms.locfileid: "80429896"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[雲端管理範本](./template.md)，記錄了目前的雲端採用方案可能引進的業務風險。
+使用身分[識別基準專業領域範本](./template.md)來記載可能由目前的雲端採用方案引進的業務風險。
 
 一旦建立對於實際商務風險的了解，下一步是記錄風險的業務承受度與用來監視承受度的指標和關鍵計量。
 
