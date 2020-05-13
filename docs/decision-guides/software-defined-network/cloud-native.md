@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9bc19716cc0122ea95672b4a48d6536a77fb5fe3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a69c196d76db7f633acdfcf0aff6ad72a11872e5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996187"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215019"
 ---
 # <a name="software-defined-networking-cloud-native"></a>軟體定義網路：雲端原生
 
@@ -40,5 +40,5 @@ ms.locfileid: "80996187"
 
 如需 Azure 中雲端原生虛擬網路的詳細資訊，請參閱：
 
-- [Azure 虛擬網路：操作指南](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)。 新建立的 Azure 虛擬網路預設為雲端原生網路。 您可以使用這些指南，協助規劃虛擬網路的設計與部署。
-- [訂用帳戶限制：網路](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits)功能。 每個虛擬網路和連線的資源都存在於單一訂用帳戶中。 這些資源會受到訂用帳戶限制所約束。
+- [Azure 虛擬網路指南](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)：新建立的虛擬網路預設為雲端原生。 您可以使用這些指南，協助規劃虛擬網路的設計與部署。
+- [Azure 網路限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)：每個虛擬網路和連線的資源都存在於單一訂用帳戶中。 這些資源會受到訂用帳戶限制所約束。

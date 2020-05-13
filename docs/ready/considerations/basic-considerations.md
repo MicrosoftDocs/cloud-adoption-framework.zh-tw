@@ -7,16 +7,16 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 18b5aefb0498c530313afa63d2f005fd874f8741
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f8d4dd2b2c2228bfdb4ebe13980e9f408083e2f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121814"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213982"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
-登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」** 一詞指的是已佈建並準備好在雲端環境 (例如 Azure) 中裝載工作負載的環境。 完全運作的登陸區域是最終交付項目，由雲端採用架構備妥方法的任何反覆項目組成。
+登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」__ 一詞指的是已佈建並準備好在雲端環境 (例如 Azure) 中裝載工作負載的環境。 完全運作的登陸區域是最終交付項目，由雲端採用架構備妥方法的任何反覆項目組成。
 
 ![登陸區域考量](../../_images/ready/landing-zone-considerations.png)
 
@@ -31,7 +31,7 @@ ms.locfileid: "81121814"
 - **[網路決策](./networking-options.md)**。 選擇網路服務、工具和架構，以支援您組織的工作負載、治理和連線能力需求。
 - **[資料庫決策](./data-options.md)**。 判定哪一種資料庫技術最適合您工作負載的需求。
 
-## <a name="azure-fundamentals"></a>Azure 基礎
+## <a name="azure-fundamentals"></a>Azure 基本概念
 
 每個登陸區域都是更廣泛解決方案的一部分，而此解決方案用於組織整個雲端環境中的資源。 Azure 基礎是組織的基本建置區塊。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996115"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215121"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 
@@ -27,7 +27,7 @@ ms.locfileid: "80996115"
 
 - **節省成本和管理效率。** 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠跨多個工作負載，將多餘的資源和管理投入量降至最低。
 - **克服訂用帳戶限制。** 大型雲端式工作負載可能需要使用超過單一 Azure 訂用帳戶內所允許的資源。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 網路限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)。
-- **關注點分離。** 能夠在中央 IT 小組和工作負載小組之間部署個別工作負載。
+- **關注點分離。** 能夠在中央 IT 小組和工作負載小組之間部署個別的工作負載。
 
 下圖顯示一個範例中樞與輪輻架構，其中包括集中管理的混合式連線。
 
@@ -46,11 +46,11 @@ ms.locfileid: "80996115"
 
 ## <a name="global-hub-and-spoke"></a>全域中樞與輪輻
 
-中樞與輪輻架構通常會使用部署至同一個 Azure 區域的虛擬網路來實作，以便將網路之間的延遲降至最低。 不過，觸角擴及全球的大型組織可能需要跨多個區域部署工作負載，以滿足可用性、災害復原或法規需求。 中樞和輪輻模型可以使用 Azure[全域虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)，跨區域擴充集中管理和共用服務，並支援分散在世界各地的工作負載。
+中樞和輪輻架構通常會使用部署到相同 Azure 區域的虛擬網路來執行，以將網路之間的延遲降至最低。 不過，觸角擴及全球的大型組織可能需要跨多個區域部署工作負載，以滿足可用性、災害復原或法規需求。 中樞和輪輻模型可以使用 Azure[全域虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)，跨區域擴充集中管理和共用服務，並支援分散在世界各地的工作負載。
 
 ## <a name="learn-more"></a>深入了解
 
-如需如何在 Azure 上實作中樞與輪輻網路的範例，請參閱 Azure 參考架構網站上的下列範例：
+如需顯示如何在 Azure 上執行中樞和輪輻網路的參考架構，請參閱：
 
 - [在 Azure 中執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 - [在 Azure 中使用共用服務來執行中樞和輪輻網路拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)

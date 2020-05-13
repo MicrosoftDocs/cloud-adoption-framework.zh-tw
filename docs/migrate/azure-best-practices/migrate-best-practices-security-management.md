@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 134026b963602448e145cf118378977a4b03de58
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c55bbd0e14ff9825a61e91745bba0044b6bf9fc1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396179"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214815"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -46,7 +46,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 
 除了評量和建議之外，Azure 資訊安全中心也能提供可針對特定資源啟用的其他安全性功能。
 
-- **Just-In-Time (JIT) 存取。** 使用 Just-In-Time 來控制針對 Azure VM 上管理連接埠的存取，以減少您網路的受攻擊面。
+- **及時（JIT）存取。** 使用 Just-In-Time 來控制針對 Azure VM 上管理連接埠的存取，以減少您網路的受攻擊面。
   - 在網際網路上開啟 VM RDP 連接埠 3389，將會使 VM 持續暴露在不良執行者活動之下。 由於 Azure IP 位址是眾所周知的，因此駭客會持續對它們進行探查，以對開啟的 3389 連接埠發動攻擊。
   - Just-In-Time 會使用能限制指定連接埠開啟時間的網路安全性群組 (NSG) 及傳入規則。
   - 在啟用 Just-In-Time 的情況下，資訊安全中心會檢查使用者是否具有 VM 的角色型存取控制 (RBAC) 寫入存取權限。 此外，還會指定使用者如何能連線到 VM 的規則。 如果權限沒問題，系統便會核准要求，且資訊安全中心會設定 NSG 以在您指定時間內允許針對選取連接埠的傳入流量。 時間到期時，NSG 便會返回其先前的狀態。
@@ -89,7 +89,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
   - 若要使用此功能，很可能會需要進行應用程式變更。
 - **透明資料加密（TDE）：** 使用資料庫、相關聯的備份和待用的交易記錄檔的即時加密和解密，保護 Azure SQL Database。
   - TDE 可在不對應用程式層級進行變更的前提下，允許執行加密活動。
-  - TDE 可以使用由 Microsoft 提供的加密金鑰，或者您也可以使用「攜帶您自己的金鑰」支援來自行提供金鑰。
+  - TDE 可以使用 Microsoft 所提供的加密金鑰，或者您可以攜帶自己的金鑰。
 
 **瞭解更多資訊：**
 
@@ -109,7 +109,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 - 在 Azure 資訊安全中心中，您可以輕鬆地識別出沒有執行端點保護的 VM，然後視需要安裝 Microsoft Antimalware。
 
 ![適用於 VM 的 Antimalware](./media/migrate-best-practices-security-management/antimalware.png)
-*適用於 VM 的 Antimalware*
+_適用於 VM 的 Antimalware_
 
 **瞭解更多資訊：**
 
@@ -137,11 +137,11 @@ Azure 能提供數個解決方案：
   - 您可以使用 Azure 監視器來監視 web 應用程式防火牆，並將其整合到 Azure 資訊安全中心。
 
 ![保護 Web 應用程式](./media/migrate-best-practices-security-management/web-apps.png)
-*Azure Key Vault*
+_Azure Key Vault_
 
 **瞭解更多資訊：**
 
-- [取得](https://docs.microsoft.com/azure/key-vault/key-vault-overview) Azure Key Vault 的概觀。
+- [取得](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview) Azure Key Vault 的概觀。
 - [深入瞭解](https://docs.microsoft.com/azure/application-gateway/waf-overview)web 應用程式防火牆。
 - [取得](https://docs.microsoft.com/azure/app-service/environment/intro) App Service 環境簡介。
 - [了解如何](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault)設定 Web 應用程式以從 Key Vault 讀取祕密。
@@ -157,7 +157,7 @@ Azure 能提供數個解決方案：
 - 請確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
 
 ![存取控制](./media/migrate-best-practices-security-management/subscription.png)
-*存取控制 - IAM*
+_存取控制 - IAM_
 
 **瞭解更多資訊：**
 
@@ -175,7 +175,7 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 - 請養成經常檢閱記錄的習慣，或與您的安全性資訊與事件管理 (SIEM) 工具整合以自動檢閱異常狀況。 如果您不是使用「Premium 1」或「Premium 2」，便必須自行進行許多分析，或是使用您的 SIEM 系統。 分析包含尋找具風險的登入和事件，以及其他使用者攻擊模式。
 
 ![使用者和群組](./media/migrate-best-practices-security-management/azure-ad.png)
-*Azure AD 使用者和群組*
+_Azure AD 使用者和群組_
 
 **瞭解更多資訊：**
 
@@ -213,7 +213,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 - 如果您會使用 Azure AD Connect 將內部部署 Active Directory 同步至 Azure AD，請考慮使內部部署安全性群組的名稱與 Azure 中資源群組的名稱相符。
 
 ![命名](./media/migrate-best-practices-security-management/naming.png)
-*資源群組命名*
+_資源群組命名_
 
 **瞭解更多資訊：**
 
@@ -224,7 +224,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 您最不想遇到的情況，便是資源群組被意外刪除而消失不見。 我們建議您實作刪除鎖定來避免發生此情況。
 
 ![刪除鎖定](./media/migrate-best-practices-security-management/locks.png)
-*刪除鎖定*
+_刪除鎖定_
 
 **瞭解更多資訊：**
 
@@ -253,7 +253,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 - 您可以使用 PowerShell 或 Azure 自動化來將標記自動化，您也可以標記個別的群組和資源。 -標記方法或自助服務的方式。 如果您具有要求或變更管理系統，則可以輕鬆地在要求中使用該資訊，以填入公司特定的資源標記。
 
 ![標記](./media/migrate-best-practices-security-management/tagging.png)
-*標記*
+_標記_
 
 **瞭解更多資訊：**
 
@@ -298,7 +298,7 @@ Azure App Service 環境能提供完全隔離且專用的環境，可讓您在�
 下圖顯示使用管理群組建立治理階層的範例。
 
 ![管理群組](./media/migrate-best-practices-security-management/management-groups.png)
-*管理群組*
+_管理群組_
 
 **瞭解更多資訊：**
 
@@ -314,7 +314,7 @@ Azure 原則是 Azure 中的一個服務，您可以用來建立、指派和管�
 - Azure 會提供一些可供您指派的內建原則，或者您也可以自行建立原則。
 
 ![Azure 原則](./media/migrate-best-practices-security-management/policy.png)
-*Azure 原則*
+_Azure 原則_
 
 **瞭解更多資訊：**
 
@@ -356,14 +356,14 @@ Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備
 - **復原服務保存庫中的直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這能提供單一位置以追蹤及管理備份，以及更細微的備份與還原選項。 備份一天最多三次，並於檔案/資料夾層級執行。 它無法感知應用程式，且不支援 Linux。 使用此方法，在每個想要備份的 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
 - **保護 VM 以 Azure 備份伺服器。** Azure 備份伺服器是搭配 Azure 備份免費提供。 VM 會被備份到本機 Azure 備份伺服器儲存體。 您接著會將 Azure 備份伺服器備份到 Azure 的保存庫中。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用程式層級進行備份，例如透過備份 SQL Server 或 SharePoint。
 
-針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 在 Azure 中備份的待用資料會使用[儲存體服務加密（SSE）](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json)進行加密，以及傳輸和儲存資料。
+針對安全性，Azure 備份會使用 AES 256 對執行中的資料進行加密，並將它透過 HTTPS 傳送至 Azure。 在 Azure 中備份的待用資料會使用[儲存體服務加密（SSE）](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)進行加密，以及傳輸和儲存資料。
 
 ![Azure 備份](./media/migrate-best-practices-security-management/iaas-backup.png)
-*Azure 備份*
+_Azure 備份_
 
 **瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)不同類型的備份。
+- [了解](https://docs.microsoft.com/azure/backup/backup-overview)不同類型的備份。
 - 針對 Azure VM [規劃備份基礎結構](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)。
 
 #### <a name="storage-snapshots"></a>儲存體快照集
@@ -381,7 +381,7 @@ Azure VM 會以分頁 Blob 的形式儲存在 Azure 儲存體中。
 - [了解如何](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots)建立 Blob 快照集。
 - 檢閱 Blob 儲存體備份的[範例案例](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) \(英文\)。
 - [閱讀](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete)虛刪除的相關資訊。
-- [Azure 儲存體中的災害復原和強制容錯移轉 (預覽)](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
+- [Azure 儲存體中的災害復原和強制容錯移轉 (預覽)](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance)
 
 #### <a name="third-party-backup"></a>協力廠商備份
 
@@ -398,7 +398,7 @@ Azure Site Recovery 是在發生中斷的情況下確保 Azure VM 可以上線�
 Site Recovery 會將 VM 從主要 Azure 區域複寫到次要 Azure 區域。 發生災害時，您會從主要區域將 VM 容錯移轉到次要區域，並如往常一般地繼續存取它們。 當作業返回正常時，您便可以將 VM 容錯回復到主要區域。
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-*Site Recovery*
+_Site Recovery_
 
 **瞭解更多資訊：**
 
@@ -416,7 +416,7 @@ Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來�
 - 您應該在可用性設定組中建立 VM，以取得高復原性和可用性。 當發生計畫或非計畫的中斷時，可用性設定組會確保集合中至少有一個 VM 可供使用。
 
 ![受控磁碟](./media/migrate-best-practices-security-management/managed-disks.png)
-*受控磁碟*
+_受控磁碟_
 
 **瞭解更多資訊：**
 
@@ -437,13 +437,13 @@ Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來�
 - 除了 Azure 監視之外，您可以整合自己的協力廠商 SIEM 應用程式來監視 Azure 記錄，以進行稽核和效能事件。
 
 ![Azure 監視器](./media/migrate-best-practices-security-management/monitor.png)
-*Azure 監視器*
+_Azure 監視器_
 
 **瞭解更多資訊：**
 
 - [深入瞭解](https://docs.microsoft.com/azure/azure-monitor/overview)Azure 監視器。
 - 取得監視和診斷的[最佳做法](https://docs.microsoft.com/azure/architecture/best-practices/monitoring)。
-- [了解](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)自動調整。
+- [了解](https://docs.microsoft.com/azure/architecture/best-practices/scaling)自動調整。
 - [了解如何](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem)將 Azure 資料路由傳送至 SIEM 工具。
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>最佳做法：啟用診斷記錄
@@ -455,7 +455,7 @@ Azure 資源會產生相當多的記錄計量和遙測資料。
 - 當您啟用診斷記錄時，每個資源都會有特定的類別集合。 您可以選取一或多個記錄類別，以及記錄資料的儲存位置。 記錄可以被傳送至儲存體帳戶、事件中樞或 Azure 監視器記錄。
 
 ![診斷記錄](./media/migrate-best-practices-security-management/diagnostics.png)
-*診斷記錄*
+_診斷記錄_
 
 **瞭解更多資訊：**
 
@@ -472,7 +472,7 @@ Azure 資源會產生相當多的記錄計量和遙測資料。
 - 另一個範例是發生記憶體流失的應用程式。 當記憶體使用量達到某個程度時，範本便可以回收處理程序。
 
 ![警示](./media/migrate-best-practices-security-management/alerts.png)
-*警示*
+_警示_
 
 **瞭解更多資訊：**
 
@@ -487,7 +487,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 - 透過此共用模型，您的團隊便能檢視 Azure 環境，讓他們可以主動管理雲端中的系統。
 
 ![Azure 儀表板](./media/migrate-best-practices-security-management/dashboard.png)
-*Azure 儀表板*
+_Azure 儀表板_
 
 **瞭解更多資訊：**
 
@@ -502,7 +502,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 - 請熟悉各種針對 Azure 所提供的支援方案。 它們的範圍從開發人員執行個體專有的回應時間，到回應時間少於 15 分鐘的頂級支援。
 
 ![支援方案](./media/migrate-best-practices-security-management/support.png)
-*支援方案*
+_支援方案_
 
 **瞭解更多資訊：**
 
@@ -519,7 +519,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 - 此外，Azure VM 可以向 System Center Configuration Manager 註冊。 接著，您可以將 Configuration Manager 工作負載移轉到 Azure，並從單一 Web 介面進行報告和軟體更新。
 
 ![VM 更新](./media/migrate-best-practices-security-management/updates.png)
-*更新*
+_更新_
 
 **瞭解更多資訊：**
 
@@ -543,7 +543,7 @@ Azure 在 Azure 自動化中具有變更追蹤解決方案：
 - 在 [變更追蹤] 儀表板上，您可以輕鬆地看到在您的伺服器基礎結構中所做的變更。
 
 ![變更管理](./media/migrate-best-practices-security-management/change.png)
-*變更管理*
+_變更管理_
 
 **瞭解更多資訊：**
 

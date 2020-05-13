@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428165"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214237"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對應至優先順序的工作負載
 
@@ -33,7 +33,7 @@ ms.locfileid: "80428165"
 
 **現代化：** 當工作負載的目標是將應用程式或其他資產現代化時，這些資料點仍然是複雜的複雜性測量。 不過，將現代化商機的輸入新增至工作負載檔可能是明智的做法。
 
-**創新：** 當資料或商務邏輯在雲端採用工作期間進行實質性變更時，會將其視為*創新*的轉換類型。 當您要建立新的資料或新的商務邏輯時，也是如此。 針對任何創新案例，資產的遷移可能代表所需的最小工作量。 在這些情況下，小組應該設計一組技術資料輸入來測量相對複雜度。
+**創新：** 當資料或商務邏輯在雲端採用工作期間進行實質性變更時，會將其視為_創新_的轉換類型。 當您要建立新的資料或新的商務邏輯時，也是如此。 針對任何創新案例，資產的遷移可能代表所需的最小工作量。 在這些情況下，小組應該設計一組技術資料輸入來測量相對複雜度。
 
 ## <a name="azure-migrate"></a>Azure Migrate
 

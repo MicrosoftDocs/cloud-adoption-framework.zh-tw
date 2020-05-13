@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5ce9b9144921ec3407fdd0b12b84183fd6e9ee52
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119861"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214254"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "81119861"
 
 如果組織自行規劃 Azure 移轉，Microsoft 隨時都能從旁協助其走完整個旅程。 為了協助組織快速移轉至 Azure，Microsoft 及其合作夥伴開發了一組廣泛的架構、指南、工具和服務，以降低風險並加快虛擬機器、應用程式和資料庫的移轉速度。 這些工具和服務支援廣泛的作業系統、程式設計語言、架構及資料庫等選擇。
 
-- **評估和移轉工具。** Azure 提供各種工具供您在雲端轉換的不同階段使用，包括評估現有的基礎結構。 如需詳細資訊，請參閱後續＜移轉＞章節中的＜評估＞一節。
+- **評估和移轉工具。** Azure 提供各種工具供您在雲端轉換的不同階段使用，包括評估現有的基礎結構。 如需詳細資訊，請參閱下列「遷移」一節中的「評定」一節。
 - **[Microsoft 雲端採用架構](../../index.md)。** 此架構為雲端採用和移轉提供了結構化的方法。 它是以 Microsoft 支援的許多客戶參與的最佳作法為基礎，並組織成一系列的步驟，從架構和設計到執行。 在每個步驟中，支援指引可協助您設計應用程式架構。
 - **[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。** Azure 提供了一些實用的雲端設計模式供您在雲端中建置可靠、可擴充且安全的工作負載。 每個模式都會說明模式處理的問題、套用模式的考量，以及以 Azure 為基礎的範例。 大部分的模式會包括程式碼範例或程式碼片段，示範如何在 Azure 上實作模式。 不過，這些模式與任何分散式系統都有關聯 (無論是裝載於 Azure 或其他雲端平台上)。
 - **[雲端基本](https://docs.microsoft.com/azure/architecture/guide)概念。** 基本概念有助於教導核心概念實作的基本方法。 此指南可協助技術人員思考超越單一 Azure 服務的解決方案。
@@ -61,9 +61,9 @@ ms.locfileid: "81119861"
 - 分散於全球的資料
 - IoT***
 
-*在美國、加拿大、英國與西歐提供有限預覽
+* 美國、加拿大、英國及西歐的有限預覽版本。
 
-**在英國與西歐提供有限預覽
+* * 英國和西歐的有限預覽版本。
 
 ***將於 2019 年 H2 提供
 
@@ -71,7 +71,7 @@ ms.locfileid: "81119861"
 
 FastTrack for Azure 的典型互動主要階段如下：
 
-- **探索。** 找出重要的專案關係人、針對所要解決的問題了解其目標或願景，然後評估架構需求。
+- **探索.** 找出重要的專案關係人、針對所要解決的問題了解其目標或願景，然後評估架構需求。
 - **實現解決方案。** 了解建置應用程式的設計原則、檢閱應用程式與解決方案的架構，並取得指導和工具，以推動概念證明 (PoC) 到生產階段的落實。
 - **持續的合作關係。** Azure 工程師和計劃經理會定期聯繫，以確保部署進展順利以及協助排除阻礙。
 
@@ -93,7 +93,7 @@ FastTrack for Azure 的典型互動主要階段如下：
 
 ## <a name="azure-solutions-partner"></a>Azure 解決方案合作夥伴
 
-Microsoft 認證解決方案提供者專門根據全球客戶的解決方案，提供最新 Microsoft 技術。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
+Microsoft 認證的解決方案提供者專門提供以全球 Microsoft 技術為基礎的新式客戶解決方案。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
 
 從可以提供現成或自訂 Azure 解決方案的合作夥伴，以及可以部署和管理這些解決方案的合作夥伴取得協助：
 

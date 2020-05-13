@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431027"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214747"
 ---
+<!-- docsTest:ignore windows -->
+
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 
 數位資產規劃可以根據所需的結果和現有資產的大小，來採用數種形式。 有各種方法可供您採用。 請務必在規劃階段初期設定關於採行方法的期望。 不清楚的期望通常會導致與其他清查收集練習相關聯的延遲。 本文章將概述三種分析方法。

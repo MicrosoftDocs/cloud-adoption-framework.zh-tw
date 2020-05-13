@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6ccc459f1d708964afdc7c25cefdf314c44a6e02
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4fc258b8213842e0cc3428146f83cb9e31bb39df
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433131"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214969"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>軟體定義網路：混合式網路
 
-混合式雲端網路架構可讓虛擬網路使用專用 WAN 連線 (例如 ExpressRoute 或其他直接連線網路的連線方法) 存取您的內部部署資源和服務，反之亦然。
+混合式雲端網路架構可讓虛擬網路存取您的內部部署資源和服務，反之亦然，使用專用的 WAN 連線（例如 ExpressRoute 或其他連線方法）來直接連接網路。
 
 ![混合式網路](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
 

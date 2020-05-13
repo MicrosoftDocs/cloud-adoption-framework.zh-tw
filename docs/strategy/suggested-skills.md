@@ -1,18 +1,18 @@
 ---
-title: 規劃期間的技能就緒性路徑
-description: 使用適用于 Azure 的雲端採用架構，在進行遷移的規劃階段瞭解技能就緒性路徑。
+title: 遷移旅程計畫階段期間的技能就緒性路徑
+description: 使用適用于 Azure 的雲端採用架構，瞭解遷移計畫階段期間的技能就緒性路徑。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997494"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214951"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>遷移旅程計畫階段期間的技能就緒性路徑
 
@@ -43,8 +43,8 @@ ms.locfileid: "80997494"
 
 您可以藉由將所需的商務案例與目前和未來的數位資產清查進行調整，來精簡您的商務案例。 這些文章可以引導數位資產合理化的開發：
 
-- [增量合理化](../digital-estate/rationalize.md)。 一種敏捷式方法，可適當地對齊晚期繫結的技術決策。
-- [合理化的 Rs](../digital-estate/5-rs-of-rationalization.md)。 瞭解各種合理化選項。
+- [增量合理化](../digital-estate/rationalize.md)：合理化的 agile 方法，適當地配合晚期繫結的技術決策。
+- [合理化的五個 Rs](../digital-estate/5-rs-of-rationalization.md)：瞭解各種合理化選項。
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>建立遷移待處理專案（技術計畫）
 
@@ -86,9 +86,9 @@ Microsoft 和合作夥伴提供各種選項，以協助所有的使用者使用 
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數、層級並達成更多目標！
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
 
-以下是量身打造的學習路徑範例，其適用于雲端採用架構的策略部分。
+以下是量身打造的學習路徑範例，其適用于雲端採用架構中的策略方法。
 
 [瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您進入旅程，其一開始會向您展示數位轉型和雲端的威力如何轉換您的業務。 內容會涵蓋 Microsoft Azure 雲端服務如何在受信任雲端平台上推動組織發展。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
 

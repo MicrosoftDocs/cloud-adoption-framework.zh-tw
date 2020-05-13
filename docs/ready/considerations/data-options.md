@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c9fa27ac671b17414a114a43f5224dd0e87de9d2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c125f60358a433e2d6f65b103fba8722b1491ad1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432112"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215325"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "80432112"
 
 回答下列有關工作負載的問題，以協助您根據 Azure 資料庫服務決策樹來做出決策：
 
-- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，由平台即服務 (PaaS) 管理的資料庫服務可能可降低您的管理和作業成本。
+- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，平臺即服務（PaaS）資料庫服務可能會降低您的管理和作業成本。
 - **您的工作負載會使用關聯式資料庫技術嗎？** 若是如此，您打算使用哪一種技術？ Azure 提供的受控 PaaS 資料庫功能適用於[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)、[MySQL](https://docs.microsoft.com/azure/mysql/overview)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) 和 [MariaDB](https://docs.microsoft.com/azure/mariadb/overview)。
 - **您的工作負載是否會使用 SQL Server？** 在 Azure 中，您可以在 [Azure 虛擬機器上的 IaaS 型 SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server) 中或 [PaaS 型的 Azure SQL Database 託管服務](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)上執行工作負載。 選擇要使用哪個選項的主要考量是，您是否想管理資料庫、套用修補程式及進行備份，或是您要將這些作業委派給 Azure。 在某些情況下，因為相容性問題，您可能需要使用 IaaS 主控的 SQL Server。 若要深入了解如何為您的工作負載選擇正確選項，請參閱[在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)。
 - **您的工作負載會使用索引鍵/值資料庫儲存體嗎？** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) 可提供快取效能高的索引鍵/值資料儲存體解決方案，讓您擁有快速且可擴充的應用程式。 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 也提供一般用途的索引鍵/值儲存體功能。
@@ -63,17 +63,17 @@ ms.locfileid: "80432112"
 
 ## <a name="regional-availability"></a>區域可用性
 
-Azure 可讓您以所需的規模提供服務， _隨時隨地_觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
+Azure 可讓您以所需的規模提供服務，_隨時隨地_觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
-大部分資料庫服務都已在大部分的 Azure 區域中正式使用。 不過，有幾個區域 (大部分都是以政府客戶為目標) 僅支援這些產品的一部分。 在決定您要將資料庫資源部署到哪個區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) ，以檢查區域可用性的最新狀態。
+大部分資料庫服務都已在大部分的 Azure 區域中正式使用。 不過，有幾個區域 (大部分都是以政府客戶為目標) 僅支援這些產品的一部分。 在決定您要將資料庫資源部署到哪個區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)，以檢查區域可用性的最新狀態。
 
-若要深入了解 Azure 全域基礎結構，請參閱 [Azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以查看 [依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)，了解每個 Azure 區域中整體可用服務的特定詳細資料。
+若要深入了解 Azure 全域基礎結構，請參閱 [Azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以查看[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)，以瞭解每個 Azure 區域中可用的整體服務的特定詳細資料。
 
 ## <a name="data-residency-and-compliance-requirements"></a>資料落地和合規性需求
 
-您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需了解這些需求的協助，請參閱 [利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
+您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、託管資料存放區的實體資產管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 如需了解這些需求的協助，請參閱[利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
 
-合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。  [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies) 可確保資料存放區、主權、合規性及復原需求會在地理和政治界限內接受。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到合規 Azure 地理位置中的區域。
+合規性工作的一部分可能包括控制資料庫資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理及政治界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到合規 Azure 地理位置中的區域。
 
 ## <a name="establish-controls-for-database-services"></a>建立資料庫服務的控制項
 

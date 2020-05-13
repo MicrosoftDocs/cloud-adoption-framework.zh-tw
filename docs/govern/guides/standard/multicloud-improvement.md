@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27ee8420a1d610705b76c80590229ee1a7c454da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 360c222130341e19d4fd185cc738fa47c26e01a6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434265"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214526"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -35,7 +35,7 @@ Microsoft 認為客戶可能會基於特定用途來採用多個雲端。 本指
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
 - IT 作業或雲端作業主要是由 Azure 監視器和相關的自動化程式來管理。
-- 嚴重損壞修復和商務持續性是由 Azure 保存庫實例所控制。
+- 損毀修復和商務持續性是由 Azure 復原服務保存庫所控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。
 - Azure 藍圖、Azure 原則和 Azure 管理群組可用來對原則進行合規性自動化。

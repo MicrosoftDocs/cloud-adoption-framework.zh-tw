@@ -1,6 +1,6 @@
 ---
 title: 身分識別基準原則合規性流程
-description: 使用適用于 Azure 的雲端採用架構，學習建立支援身分識別基準治理專業領域之程式的方法。
+description: 使用適用于 Azure 的雲端採用架構，學習建立支援身分識別基準專業領域之程式的方法。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75f85ef971bdf96fe14f1ddc72462edafbfd8473
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433095"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214458"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>身分識別基準原則合規性流程
 
-本文討論治理[身分識別基準](./index.md)之原則遵循流程的方法。 以重複執行的手動程序 (指引身分識別原則採用和修訂) 開始有效治理身分識別。 這需要定期參與雲端治理小組和感興趣的商務和 IT 專案關係人，以審查和更新原則並確保原則合規性。 此外，許多進行中的監視和強制執行流程可以透過工具來自動化或補強，減少治理的額外負荷並且得以更快速回應原則偏差。
+本文討論控制身分[識別基準專業領域](./index.md)之原則遵循流程的方法。 以重複執行的手動程序 (指引身分識別原則採用和修訂) 開始有效治理身分識別。 這需要定期參與雲端治理小組和感興趣的商務和 IT 專案關係人，以審查和更新原則並確保原則合規性。 此外，許多進行中的監視和強制執行流程可以透過工具來自動化或補強，減少治理的額外負荷並且得以更快速回應原則偏差。
 
 ## <a name="planning-review-and-reporting-processes"></a>規劃、檢閱及報告流程
 
@@ -41,7 +41,7 @@ ms.locfileid: "80433095"
 
 ## <a name="processes-for-ongoing-monitoring"></a>進行中監視的進程
 
-根據您的身分識別系統目前和過去狀態的可見度，判斷您的身分識別治理策略是否成功。 如果沒有分析您的雲端部署相關計量和相關資料的能力，您就無法識別風險的變更或者偵測是否違反風險承受度。 上面所討論的持續治理流程需要品質資料，以確保可以修改原則來支援您的業務變更需求。
+成功的身分識別基準策略取決於您的身分識別系統目前和過去狀態的可見度。 如果沒有分析您的雲端部署相關計量和相關資料的能力，您就無法識別風險的變更或者偵測是否違反風險承受度。 上面所討論的持續治理流程需要品質資料，以確保可以修改原則來支援您的業務變更需求。
 
 請確定您的 IT 小組已針對身分識別服務實作自動化監視系統，擷取您評估風險所需的記錄和稽核資訊。 主動監視這些系統以確保立即偵測及降低潛在原則違規，並且確保您的身分識別基礎結構的任何變更都會反映在監視策略中。
 
@@ -57,7 +57,7 @@ ms.locfileid: "80433095"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[雲端管理範本](./template.md)，記錄與目前雲端採用方案一致的流程和觸發程序。
+使用身分[識別基準專業領域範本](./template.md)，記錄與目前雲端採用方案一致的進程和觸發程式。
 
 如需執行與採用方案一致的雲端管理原則指引，請參閱有關專業領域改進的文章。
 
