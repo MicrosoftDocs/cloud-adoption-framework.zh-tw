@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75a89a0020b4c0ae7ab336ab0d3789bf5096dab7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120008"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222397"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -50,8 +50,8 @@ Azure 會提供虛擬網路 (VNet)：
 **瞭解更多資訊：**
 
 - 取得[Azure 虛擬網路的總覽](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。
-- 閱讀[Azure 虛擬網路常見問題（FAQ）](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)。
-- 瞭解[Azure 網路限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits)。
+- 閱讀[Azure 虛擬網路的常見問題](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)。
+- 瞭解[Azure 網路限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>最佳做法：執行中樞和輪輻網路拓撲
 
@@ -61,7 +61,7 @@ Azure 會提供虛擬網路 (VNet)：
 - 輪輻是會使用 VNet 對等互連來連線至中樞 VNet 的 VNet。
 - 共用的服務會部署在中樞中，而個別的工作負載會部署為輪輻。
 
-請考慮下列：
+請考慮下列事項：
 
 - 在 Azure 中實作中樞和輪輻拓撲可集中管理常見服務，例如，內部部署網路的連線、防火牆以及 VNet 之間的隔離。 中樞 VNet 可作為中心點來連線至內部部署網路，也可用來裝載工作負載 (裝載於輪輻 VNet 中) 所使用的服務。
 - 大型企業通常會使用中樞加上輪輻的組態。 若網路較小，則可能要考慮簡化設計，以節省成本和降低複雜度。
@@ -69,7 +69,7 @@ Azure 會提供虛擬網路 (VNet)：
 - 中樞和輪輻 VNet 不僅可以在不同資源群組中實作，即使在不同訂用帳戶也可以。 當您將不同訂用帳戶中的虛擬網路對等互連時，這些訂用帳戶可以與相同或不同的 Azure Active Directory (Azure AD) 租用戶相關聯。 如此可對每個工作負載進行非集中式管理，同時在中樞網路中維護共用服務。
 
 ![變更管理](./media/migrate-best-practices-networking/hub-spoke.png)
-*中樞和輪輻拓撲*
+_中樞和輪輻拓撲_
 
 **瞭解更多資訊：**
 
@@ -92,11 +92,11 @@ Azure 會提供虛擬網路 (VNet)：
 
 下表所舉的 VNet 範例會將位址空間 10.245.16.0/20 劃分成子網路，以便進行計劃性移轉。
 
-**子網路** | **CIDR** | **位址** | **用法**
---- | --- | --- | ---
-DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | 前端/網路層 VM
-DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | 應用程式層 VM
-DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
+| **子網路** | **CIDR** | **位址** | **使用** |
+| --- | --- | --- | --- |
+| DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | 前端/網路層 VM |
+| DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | 應用程式層 VM |
+| DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM |
 
 **瞭解更多資訊：**
 
@@ -107,8 +107,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 
 根據預設，Azure 會在您部署 VNet 時新增 DNS 伺服器。 這可讓您快速建置 VNet 和部署資源。 不過，此 DNS 伺服器只會對該 VNet 上的資源提供服務。 如果您想要將多個 VNet 彼此連線，或從 VNet 連線至內部部署伺服器，則還需要名稱解析功能。 例如，您可能需要 Active Directory 才能在虛擬網路之間解析 DNS 名稱。 若要這樣做，請在 Azure 中部署您自己的自訂 DNS 伺服器。
 
-- VNet 中的 DNS 伺服器可以將 DNS 查詢轉送給 Azure 中的遞迴解析程式。 這可讓您解析該 VNet 內的主機名稱。 例如，在 Azure 中執行的網域控制站可以回應其自有網域的 DNS 查詢，並將所有其他查詢轉送到 Azure。
-- DNS 轉送可讓 VM 查看您的內部部署資源 (透過網域控制站) 以及 Azure 提供的主機名稱 (使用轉送工具)。 為了在 Azure 中存取遞迴解析程式，所使用的虛擬 IP 位址是 168.63.129.16。
+- 虛擬網路中的 DNS 伺服器可以將 DNS 查詢轉送到 Azure 中的遞迴解析程式。 這可讓您解析該虛擬網路內的主機名稱。 例如，在 Azure 中執行的網域控制站可以回應其自有網域的 DNS 查詢，並將所有其他查詢轉送到 Azure。
+- DNS 轉送可讓 VM 查看您的內部部署資源 (透過網域控制站) 以及 Azure 提供的主機名稱 (使用轉送工具)。 您可以使用虛擬 IP 位址來存取 Azure 中的遞迴解析程式 `168.63.129.16` 。
 - DNS 轉送也會實現 VNet 之間的 DNS 解析，並使內部部署電腦能夠解析 Azure 提供的主機名稱。
   - 為了解析 VM 主機名稱，DNS 伺服器 VM 必須位於同一個 VNet 中，且設定為將主機名稱查詢轉送到 Azure。
   - 因為每個 VNet 的 DNS 尾碼都不同，所以您可以使用條件性轉送規則來將 DNS 要求傳送到正確的 VNet 進行解析。
@@ -116,7 +116,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 針對網路介面或雲端服務所指定的 DNS 伺服器，優先順序高於針對 VNet 所指定的 DNS 伺服器。
 - 在 Azure Resource Manager 部署模型中，您可以針 VNet 和網路介面指定 DNS 伺服器，但最佳做法是只在 VNet 上使用該設定。
 
-    ![DNS 伺服器 VNet 的 DNS 伺服器](./media/migrate-best-practices-networking/dns2.png) **
+    ![DNS 伺服器 VNet 的 DNS 伺服器](./media/migrate-best-practices-networking/dns2.png) __
 
 **瞭解更多資訊：**
 
@@ -133,14 +133,14 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 某個地區內可用性區域的實體區隔可保護應用程式和資料不受資料中心故障影響。
 - 區域備援服務會將應用程式和資料複寫至所有可用性區域，以防出現單一失敗點。 --使用可用性區域時，Azure 會提供 99.99% VM 運作時間的 SLA。
 
-    ![可用性區域 可用性區域](./media/migrate-best-practices-networking/availability-zone.png) **
+    ![可用性區域 可用性區域](./media/migrate-best-practices-networking/availability-zone.png) __
 
 - 藉由將運算、儲存體、網路及資料資源共置於某個區域內並複寫至其他區域，您即可在移轉架構內規劃和建置高可用性。 支援可用性區域的 Azure 服務分成兩個類別：
-  - 區域服務：您可將資源與特定區域產生關聯。 例如，VM、受控磁碟、IP 位址。
-  - 區域冗余服務：資源會自動跨區域複寫。 例如︰區域備援儲存體、Azure SQL Database。
+  - **區域性服務：** 您會將資源與特定區域（例如 Vm、受控磁片或 IP 位址）建立關聯。
+  - **區域冗余服務：** 資源會自動跨區域複寫，例如區域冗余儲存體或 Azure SQL Database。
 - 您可以部署具有網際網路對向工作負載或應用程式層的標準 Azure 負載平衡器，以提供區域容錯。
 
-    ![負載平衡器 負載平衡器](./media/migrate-best-practices-networking/load-balancer.png) **
+    ![負載平衡器 負載平衡器](./media/migrate-best-practices-networking/load-balancer.png) __
 
 **瞭解更多資訊：**
 
@@ -183,7 +183,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 邊界閘道協定 (BGP) 是選擇性功能，可與 Azure ExpressRoute 和路由式 VPN 閘道搭配使用，以將內部部署 BGP 路由傳播至 VNet。
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
-*站對站 VPN*
+_站對站 VPN_
 
 **瞭解更多資訊：**
 
@@ -216,8 +216,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | 資料庫 VM
 - 使用慣用的提供者裝置可讓您輕鬆地進行使用、連線和管理組態。
 - Azure WAN 的內建儀表板可提供即時的疑難排解深入解析讓您節省時間，並可讓您輕鬆地追蹤大規模的站對站連線。
 
-**深入瞭解：**
-[瞭解](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)Azure 虛擬 WAN。
+**深入瞭解：** 
+[深入瞭解](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)Azure 虛擬 WAN。
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>最佳做法：針對任務關鍵性連線執行 ExpressRoute
 
@@ -226,10 +226,10 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 - ExpressRoute 連線可透過任意對任意 (IP VPN) 網路、點對點乙太網路，也可以透過連線提供者來進行。 但不會經過公用網際網路。
 - ExpressRoute 連線可提供更高的安全性、可靠性、速度 (最高 10 Gbps)，以及一致的延遲。
 - ExpressRoute 很適合虛擬資料中心，因為客戶可以獲得與私人連線建立關聯之相容性規則的優點。
-- 利用 ExpressRoute Direct，您就可以用 100 Gbps 的傳輸速率直接連線到 Microsoft 路由器，以滿足較大的頻寬需求。
+- 透過 ExpressRoute Direct，您可以在100Gbps 上直接連線到 Microsoft 路由器，以滿足較大的頻寬需求。
 - ExpressRoute 會使用 BGP 在內部部署網路、Azure 執行個體與 Microsoft 公用位址之間交換路由。
 
-部署 ExpressRoute 連線通常包含加入 ExpressRoute 服務提供者。 若要快速啟動，一開始通常會使用站對站 VPN 建立 虛擬資料中心與內部部署資源之間的連線，然後在您與服務提供者的實體互相連線建立好時遷移至 ExpressRoute 連線。
+部署 ExpressRoute 連線通常包含加入 ExpressRoute 服務提供者。 為快速入門，一開始通常會使用站對站 VPN 來建立虛擬資料中心與內部部署資源之間的連線，然後在與您的服務提供者建立實體互連時，遷移至 ExpressRoute 連線。
 
 **瞭解更多資訊：**
 
@@ -260,7 +260,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
   - 您的 WAN 網路可以假設這兩個前置詞較接近美國東部，離美國西部較遠，因此，會將這兩個辦公室的使用者路由至美國東部的 ExpressRoute 線路，而讓洛杉磯辦公室的使用者未能獲得最佳體驗。
 
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
-*BGP 社群未最佳化的連線*
+_BGP 社群未最佳化的連線_
 
 **解決方法：**
 
@@ -273,7 +273,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 - 此組態可確保當Microsoft 的兩個路徑都可用時，洛杉磯的使用者會使用西部線路連線到 Azure 美國西部，而紐約的使用者會使用東部線路連線到 Azure 美國東部。 這兩端的路由均已最佳化。
 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
-*BGP 社群已最佳化的連線*
+_BGP 社群已最佳化的連線_
 
 **瞭解更多資訊：**
 
@@ -303,7 +303,7 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 下圖顯示公司網路中的單一子網路周邊網路範例，有兩個安全性界限。
 
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
-*周邊網路部署*
+_周邊網路部署_
 
 **瞭解更多資訊：**
 
@@ -341,7 +341,7 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 
 - 此 **Sql** 標籤代表 Azure SQL Database 和 Azure SQL 資料倉儲服務的位址前置詞。
 - 如果您指定 **Sql** 作為值，就會允許或拒絕 Sql 的流量。
-- 如果您只需要允許存取特定**區域**中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部地區的 Azure SQL Database，您可以指定 **Sql.EastUS** 作為服務標籤。
+- 如果您只需要允許存取特定**區域**中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部區域中的 Azure SQL Database，您可以指定服務標記的**EastUS** 。
 - 標籤代表服務，但不代表服務的特定執行個體。 例如，標籤可代表 Azure SQL Database 服務，但不可代表特定的 SQL 資料庫或伺服器。
 - 此標記所表示的所有位址前置詞，也都可用**網際網路**標記表示。
 
@@ -361,25 +361,25 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 **範例：**
 
 ![應用程式安全性群組](./media/migrate-best-practices-networking/asg.png)
-*應用程式安全性群組範例*
+_應用程式安全性群組範例_
 
-**網路介面** | **應用程式安全性群組**
---- | ---
-NIC1 | AsgWeb
-NIC2 | AsgWeb
-NIC3 | AsgLogic
-NIC4 | AsgDb
+| **網路介面** | **應用程式安全性群組** |
+| --- | --- |
+| NIC1 | AsgWeb |
+| NIC2 | AsgWeb |
+| NIC3 | AsgLogic |
+| NIC4 | AsgDb |
 
 - 在本例中，每個網路介面都只屬於一個應用程式安全性群組，但事實上介面可以屬於多個群組 (取決於 Azure 限制)。
 - 這些網路介面都沒有相關聯的 NSG。 NSG1 與這兩個子網路相關聯且包含下列規則。
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**規則名稱** | **進行** | **詳細資料**
---- | --- | ---
-Allow-HTTP-Inbound-Internet | 讓流量從網際網路流向 Web 伺服器。 來自網際網路的輸入流量會遭到 DenyAllInbound 預設安全性規則拒絕，因此 AsgLogic 或 AsgDb 應用程式安全性群組則不需要其他規則。 | 優先順序：100<br/><br/> 來源：網際網路<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgWeb<br/><br/> 目的地埠：80<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
-Deny-Database-All | AllowVNetInBound 預設安全性規則允許相同 VNet 中各資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序：120<br/><br/> 來源：*<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：全部<br/><br/> 存取：拒絕。
-Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組流向 AsgDb 應用程式安全性群組。 此規則的優先順序高於 [拒絕-資料庫-全部] 規則，因此會先處理此規則。 因此，允許來自 AsgLogic 應用程式安全性群組的流量，並封鎖所有其他流量。 | 優先順序：110<br/><br/> 來源： AsgLogic<br/><br/> 來源連接埠：*<br/><br/> 目的地： AsgDb<br/><br/> 目的地埠：1433<br/><br/> 通訊協定：TCP<br/><br/> 存取： [允許]。
+| **規則名稱** | **目的** | **詳細資料** |
+| --- | --- | --- |
+| Allow-HTTP-Inbound-Internet | 讓流量從網際網路流向 Web 伺服器。 來自網際網路的輸入流量會遭到 DenyAllInbound 預設安全性規則拒絕，因此 AsgLogic 或 AsgDb 應用程式安全性群組則不需要其他規則。 | 優先順序：100 <br><br> 來源：網際網路 <br><br> 來源埠：\* <br><br> 目的地： AsgWeb <br><br> 目的地埠：80 <br><br> 通訊協定：TCP <br><br> 存取： [允許]。 |
+| Deny-Database-All | AllowVNetInBound 預設安全性規則允許相同 VNet 中各資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序：120 <br><br> 來源： \* <br><br> 來源埠：\* <br><br> 目的地： AsgDb <br><br> 目的地埠：1433 <br><br> 通訊協定：全部 <br><br> 存取：拒絕。 |
+| Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組流向 AsgDb 應用程式安全性群組。 此規則的優先順序高於 [拒絕-資料庫-全部] 規則，因此會先處理此規則。 因此，允許來自 AsgLogic 應用程式安全性群組的流量，並封鎖所有其他流量。 | 優先順序：110 <br><br> 來源： AsgLogic <br><br> 來源埠：\* <br><br> 目的地： AsgDb <br><br> 目的地埠：1433 <br><br> 通訊協定：TCP <br><br> 存取： [允許]。 |
 
 <!--markdownlint-enable MD033 -->
 
@@ -398,7 +398,7 @@ VNet 服務端點可透過直接連線，將 VNet 私人位址空間和身分識
 - 在 VNet 中啟用服務端點後，即可將 VNet 規則新增至服務資源，以保護 Azure 服務資源。 這樣可以藉由完全移除這些資源的公用網際網路存取，而且只允許來自您 VNet 的流量，來改善安全性。
 
 ![服務端點](./media/migrate-best-practices-networking/endpoint.png)
-*服務端點*
+_服務端點_
 
 **瞭解更多資訊：**
 
@@ -430,7 +430,7 @@ Azure 有容易使用的平台安全性功能，並且會提供豐富的對策�
 Azure 防火牆是受控、雲端式網路安全性服務，可以保護您的 VNet 資源。 它是完全具狀態防火牆，具有內建高可用性和不受限的雲端延展性。
 
 ![服務端點](./media/migrate-best-practices-networking/firewall.png)
-*Azure 防火牆*
+_Azure 防火牆_
 
 - Azure 防火牆可讓您橫跨訂用帳戶和 VNet 集中建立、強制執行以及記錄應用程式和網路連線原則。
 - Azure 防火牆會針對您的 VNet 資源使用靜態公用 IP 位址，允許外部防火牆識別源自您 VNet 的流量。
@@ -442,8 +442,8 @@ Azure 防火牆是受控、雲端式網路安全性服務，可以保護您的 V
 
 **瞭解更多資訊：**
 
-- [取得 Azure 防火牆概觀](https://docs.microsoft.com/azure/firewall/overview)。
-- [了解](https://docs.microsoft.com/azure/firewall/fqdn-tags) FQDN 標籤。
+- 閱讀[Azure 防火牆的總覽](https://docs.microsoft.com/azure/firewall/overview)。
+- 瞭解[Azure 防火牆中的 FQDN 標記](https://docs.microsoft.com/azure/firewall/fqdn-tags)。
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>最佳做法：部署 web 應用程式防火牆（WAF）
 
@@ -468,7 +468,7 @@ Web 應用程式防火牆 (WAF) 是 Azure 應用程式閘道的一項功能。
 Azure 網路監看員會提供工具讓您監視 Azure VNet 中的資源與通訊。 例如，您可以監視 VM 與端點 (例如，另一個 VM 或 FQDN) 之間的通訊、檢視 VNet 中的資源與資源關聯性，或診斷網路流量問題。
 
 ![網路監看員](./media/migrate-best-practices-networking/network-watcher.png)
-*網路監看員*
+_網路監看員_
 
 - 使用網路監看員，您不必登入 VM 就能監視及診斷網路問題。
 - 您可以設定警示來觸發封包擷取，並能存取封包層級的即時效能資訊。 當您發現問題時，可以詳加調查。
@@ -488,19 +488,19 @@ Azure 網路監看員會提供工具讓您監視 Azure VNet 中的資源與通�
 
 - NVA 是執行網路功能的 VM，例如防火牆、WAN 最佳化或其他網路功能。
 - NVA 可加強 VNet 安全性和網路功能。 部署 NVA 可以實現高可用性的防火牆、入侵預防、入侵偵測、Web 應用程式防火牆 (WAF)、WAN 最佳化、路由、負載平衡、VPN、憑證管理、Active Directory 和多重要素驗證等功能。
--  [Azure Marketplace](https://azuremarketplace.microsoft.com) 中的許多廠商都有提供 NVA。
+- [Azure Marketplace](https://azuremarketplace.microsoft.com)中的許多廠商都提供 NVA。
 
 ## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>最佳做法：在中樞網路中執行防火牆和 Nva
 
 在中樞內，周邊網路 (具有網際網路存取權) 通常可透過 Azure 防火牆、防火牆伺服器陣列或 Web 應用程式防火牆 (WAF) 來進行管理。 請考量下列比較。
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**防火牆類型** | **詳細資料**
---- | ---
-WAF | Web 應用程式很常見，其容易受到弱點和潛在攻擊的影響。<br/><br/> WAF 的設計是為了偵測對 Web 應用程式的攻擊 (HTTP/HTTPS)，其用途比一般防火牆更為具體。<br/><br/> 相較於傳統防火牆技術，WAF 有一組特定功能可保護內部網頁伺服器不受威脅。
-Azure 防火牆 | Azure 防火牆和 NVA 防火牆伺服器陣列一樣，會使用常見的管理機制和一組安全性規則來保護輪輻網路中所裝載的工作負載，以及控制對內部部署網路的存取。<br/><br/> Azure 防火牆具有內建延展性。
-NVA 防火牆 | NVA 防火牆伺服器陣列和 Azure 防火牆一樣，擁有常見的管理機制和一組安全性規則，以便保護輪輻網路中所裝載的工作負載，以及控制對內部部署網路的存取。<br/><br/> NVA 防火牆可以在負載平衡器後方手動擴充。<br/><br/> 雖然 NVA 防火牆所擁有的特製化軟體比 WAF 還要少，但其具有較廣泛的應用程式範圍，可篩選和檢查任何類型的輸出和輸入流量。<br/><br/> 如果您想要使用 NVA，請至 Azure Marketplace 中尋找。
+| **防火牆類型** | **詳細資料** |
+| --- | --- |
+| WAF | Web 應用程式很常見，其容易受到弱點和潛在攻擊的影響。 <br><br> WAF 的設計是為了偵測對 Web 應用程式的攻擊 (HTTP/HTTPS)，其用途比一般防火牆更為具體。 <br><br> 相較於傳統防火牆技術，WAF 有一組特定功能可保護內部網頁伺服器不受威脅。 |
+| Azure 防火牆 | Azure 防火牆和 NVA 防火牆伺服器陣列一樣，會使用常見的管理機制和一組安全性規則來保護輪輻網路中所裝載的工作負載，以及控制對內部部署網路的存取。 <br><br> Azure 防火牆具有內建延展性。 |
+| NVA 防火牆 | NVA 防火牆伺服器陣列和 Azure 防火牆一樣，擁有常見的管理機制和一組安全性規則，以便保護輪輻網路中所裝載的工作負載，以及控制對內部部署網路的存取。 <br><br> NVA 防火牆可以在負載平衡器後方手動擴充。 <br><br> 雖然 NVA 防火牆所擁有的特製化軟體比 WAF 還要少，但其具有較廣泛的應用程式範圍，可篩選和檢查任何類型的輸出和輸入流量。 <br><br> 如果您想要使用 NVA，請至 Azure Marketplace 中尋找。 |
 
 <!--markdownlint-enable MD033 -->
 

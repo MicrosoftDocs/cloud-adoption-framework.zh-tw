@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a76a09e40fc11511213c0f496c9332ba9a05962f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997835"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222890"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
-「移轉登陸區域」** 一詞用來描述一個環境，該環境已佈建並準備好裝載從內部部署環境遷移至 Azure 的工作負載。
+「_遷移」登陸區域_是已布建並準備要裝載從內部部署環境遷移至 Azure 之工作負載的環境。
 
 ## <a name="deploy-the-first-landing-zone"></a>部署第一個登陸區域
 
@@ -48,7 +48,7 @@ ms.locfileid: "80997835"
 | 移轉工具              | 將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。                | [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | 記錄和監視       | 將會布建 Operational Insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
 | 網路                      | 將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
+| 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | 原則                       | 此藍圖目前會假設未套用任何 Azure 原則。                        |                                                                                                                                                                                                                                                                                       |
 | 訂用帳戶設計          | N/A - 專為單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | 資源群組              | N/A - 專為單一生產訂用帳戶所設計。                                              | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
@@ -61,7 +61,7 @@ ms.locfileid: "80997835"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>自訂或部署登陸區域
 
-深入瞭解並下載遷移登陸區域藍圖的參考範例，以便從[Azure 藍圖範例][deploy-sample]進行部署或自訂。
+深入瞭解並下載 CAF 遷移登陸區域藍圖的參考範例，以從[Azure 藍圖範例][deploy-sample]進行部署或自訂。
 
 > [!div class="nextstepaction"]
 > [部署藍圖範例][deploy-sample]

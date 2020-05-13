@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396111"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223298"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -28,7 +28,7 @@ ms.locfileid: "81396111"
 
 ### <a name="classification"></a>分類
 
-「標記」** 是將資產分類的簡單方式。 標記會使中繼資料與資產產生關聯。 該中繼資料可以用來根據各種資料點以分類資產。 當使用標記來分類資產作為成本管理工作的一部分時，公司通常需要下列標籤：營業單位、部門、收費代碼、地理位置、環境、專案、工作負載或「應用程式分類」。 Azure 成本管理可以使用這些標記來建立不同的成本資料檢視。
+「標記」__ 是將資產分類的簡單方式。 標記會使中繼資料與資產產生關聯。 該中繼資料可以用來根據各種資料點以分類資產。 當使用標記來分類資產作為成本管理工作的一部分時，公司通常需要下列標籤：營業單位、部門、收費代碼、地理位置、環境、專案、工作負載或「應用程式分類」。 Azure 成本管理可以使用這些標記來建立不同的成本資料檢視。
 
 標記是了解任何成本報告中資料的主要方式。 它是任何妥善管理環境的基本部分。 這也是建立任何環境適當治理的第一步。
 
@@ -72,6 +72,8 @@ ms.locfileid: "81396111"
 在一般的最佳做法中，我們會建議將人員指派給各種角色和範圍的最低許可權模型。
 
 ### <a name="roles"></a>角色
+
+<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure 成本管理支援每個範圍的下列內建角色：
 
@@ -117,7 +119,7 @@ Azure 成本管理是一種妥善記載的工具，可用於設定預算，並�
 
 ### <a name="get-started-with-azure-cost-management"></a>開始使用 Azure 成本管理
 
-如需開始使用 Azure 成本管理的詳細資訊，請參閱[如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (機器翻譯)。
+若要開始使用 Azure 成本管理，請參閱[如何使用 Azure 成本管理優化您的雲端投資](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="use-azure-cost-management"></a>使用 Azure 成本管理
 

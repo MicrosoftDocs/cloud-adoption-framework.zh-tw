@@ -7,30 +7,30 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396196"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223485"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
 任何雲端採用方案最重要的一點，就是要讓計畫成為現實的人員的一致。 在您瞭解其人員相關層面之前，不會完成任何計畫。
 
-真正的組織對齊需要時間。 建立長期的組織對齊會變得很重要，尤其是在企業和 IT 文化中，雲端採用規模調整。 相較之下，在雲端採用架構的「操作」區段中，[所有章節](../organize/index.md)都必須專門提供。
+真正的組織對齊需要時間。 建立長期的組織對齊會變得很重要，尤其是在企業和 IT 文化中，雲端採用規模調整。 相較之下，在雲端採用架構的組織方法中，[所有章節](../organize/index.md)都必須專門提供。
 
 完整的組織對齊不是雲端採用方案的必要元件。 不過，需要進行一些初始的組織對齊。 本文概述組織對齊的最佳做法起點。 這裡的指引可協助您完成計畫，並讓您的小組準備好進行雲端採用。 當您準備好時，可以使用 [[組織對齊](../organize/index.md)] 區段來自訂本指南以符合您的組織。
 
 ## <a name="initial-best-practice-structure"></a>初始最佳作法結構
 
-若要建立速度與控制之間的平衡，我們建議在雲端採用期間，您必須至少有人員負責*雲端採用*和*雲端治理*。 這可能是每個領域或*功能*共用責任的一小組人員。 它也可能是同時負責結果和工作的個人人員。 不論是哪一種情況，雲端採用和雲端治理都是兩項功能，在快速且降低風險的情況下，會牽涉到自然阻力。 以下是兩個小組共同合作的方式：
+若要建立速度與控制之間的平衡，我們建議在雲端採用期間，您必須至少有人員負責_雲端採用_和_雲端治理_。 這可能是每個領域或_功能_共用責任的一小組人員。 它也可能是同時負責結果和工作的個人人員。 不論是哪一種情況，雲端採用和雲端治理都是兩項功能，在快速且降低風險的情況下，會牽涉到自然阻力。 以下是兩個小組共同合作的方式：
 
 ![雲端採用卓越的雲端中心](../_images/ready/org-ready-best-practice.png)
 
 雲端採用工作需要使用者執行這些工作，這一點相當直覺。 因此，很少人覺得雲端採用小組是一項需求。 不過，剛加入雲端的使用者可能不會完全感謝雲端治理小組的重要性。 這項挑戰通常會在採用週期初期發生。 雲端治理小組會提供必要的檢查和平衡，以確保雲端採用不會使企業面臨任何新風險。 當您必須採取風險時，這個小組可以確保適當的程式和控制措施得以減輕或管控這些風險。
 
-如需有關雲端採用、雲端治理和其他這類功能的詳細資訊，請參閱[瞭解必要雲端功能](../organize/index.md#understand-required-cloud-capabilities)的簡短章節。
+如需有關雲端採用、雲端治理和其他這類功能的詳細資訊，請參閱[瞭解必要雲端功能](../organize/index.md#understand-required-cloud-functions)的簡短章節。
 
 ## <a name="map-people-to-capabilities"></a>將人員對應至功能
 

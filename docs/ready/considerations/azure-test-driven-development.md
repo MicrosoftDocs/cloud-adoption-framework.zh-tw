@@ -1,18 +1,18 @@
 ---
-title: Azure 中登陸區域的測試導向開發（TDD）
-description: Azure 中登陸區域的測試導向開發（TDD）
+title: Azure 中登陸區域的測試導向開發（TDD）。
+description: Azure 中登陸區域的測試導向開發（TDD）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de56ab7dca0a769272777118836bc9ee93058002
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121840"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221904"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Azure 中登陸區域的測試導向開發（TDD）
 
@@ -37,7 +37,7 @@ Azure 原生治理產品和服務的工具鏈，可以輕鬆地整合到以測�
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>可加速 TDD 週期的 Azure 治理工具
 
-[Azure 原則](https://docs.microsoft.com/azure/governance/policy)：當部署或嘗試部署偏離治理原則時，Azure 原則可以提供自動化偵測、保護 &/或解決方案。 但是，Azure 原則也會提供在「完成定義」中測試接受準則的主要機制。 在 TDD 迴圈中，可以建立原則定義來測試單一接受準則。 同樣地，所有驗收準則都可以新增至指派給整個訂用帳戶的原則計畫。 這種方法會在修改登陸區域之前，提供「紅色測試」的機制。 一旦登陸區域符合「完成」的定義，就可以使用它來強制測試準則，以避免在未來版本中導致測試失敗的程式碼變更。
+[Azure 原則](https://docs.microsoft.com/azure/governance/policy)：當部署或嘗試部署偏離治理原則時，Azure 原則可以提供自動化的偵測、保護和解決方式。 但是 Azure 原則也會提供在「完成定義」中測試接受準則的主要機制。 在 TDD 迴圈中，可以建立原則定義來測試單一接受準則。 同樣地，所有驗收準則都可以新增至指派給整個訂用帳戶的原則計畫。 這種方法會在修改登陸區域之前，提供「紅色測試」的機制。 一旦登陸區域符合「完成」的定義，就可以使用它來強制測試準則，以避免在未來版本中導致測試失敗的程式碼變更。
 
 [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)： Azure 藍圖會將原則和其他部署工具分組到可重複使用的套件中，而此封裝可以指派給多個登陸區域。 當多個採用工作共用完成的一般定義（您可能想要隨著時間更新）時，藍圖會非常有用。 它也可以在後續進行擴充和重構登陸區域的作業時協助進行部署。
 

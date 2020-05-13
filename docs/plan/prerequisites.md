@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e723e16c039bace12c0a4e5e97c8e6635875732d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 413953f6da2eece12a54aa708fb4daa466d9959d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427992"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223400"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
 
-計畫只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入：*策略性*和*戰術*。 下列各節概述每個類別目錄中所需的最小資料點。
+計畫只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入：_策略性_和_戰術_。 下列各節概述每個類別目錄中所需的最小資料點。
 
 ## <a name="strategic-inputs"></a>策略性輸入
 

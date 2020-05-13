@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1586b6322b34e10f989934c9580e81583061d83c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f68976fd07ea5a35078b70d3f18b656e6ba3f683
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428330"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223502"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：接收器和 fiefdoms
 
@@ -131,7 +131,7 @@ IT fiefdoms 可以遵循[解決 IT 接收器抵抗](#address-resistance-from-it-
 
 IT fiefdoms 可以是系統領導地位問題的正負號。 為了克服 IT fiefdom，IT 領導人必須能夠對營運、責任，甚至是提供特定小組的電話管理人員進行變更。 當需要這些變更時，最好是以清楚且可防禦的資料點來處理這些變更。
 
-可能需要與商務專案關係人、業務動機和商務成果一致，以驅動必要的變更。 與[雲端策略小組](./cloud-strategy.md)、[卓越的雲端中心](./cloud-center-of-excellence.md)和[雲端治理小組](./cloud-governance.md)合作，可以提供可防禦位置所需的資料點。 必要時，這些小組應參與群組擴大，以解決無法單獨解決的挑戰。
+可能需要與商務專案關係人、業務動機和商務成果一致，以驅動必要的變更。 與[雲端策略小組](./cloud-strategy.md)、[卓越雲端中心](./cloud-center-of-excellence.md)和[雲端治理小組](./cloud-governance.md)的合作關係，可以提供可防禦位置所需的資料點。 必要時，這些小組應參與群組擴大，以解決無法單獨解決的挑戰。
 
 ## <a name="next-steps"></a>後續步驟
 

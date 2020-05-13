@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e45d3fe552c13b502f61dfa91e0af85ad10e00b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1696f4ee2f10ba9b7a9fa01865dd041181f9034a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428101"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223451"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 
@@ -26,7 +26,7 @@ ms.locfileid: "80428101"
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>從順序轉換到反復規劃
 
-規劃雲端採用對於某些組織來說可能是一大改變。 IT 組織長時間著重于應用程式專案管理的線性或連續模型，例如[瀑布模型](https://wikipedia.org/wiki/Waterfall_model)。 在傳統的 IT 中，這種方法完全合乎邏輯。 大部分的大型 IT 專案都是以採購要求開始，以取得昂貴的硬體資源。 資本支出要求、預算配置和設備取得通常代表大量的專案執行。 而在取得此檔案之後，硬體本身就會成為可傳遞的條件約束。
+規劃雲端採用對於某些組織來說可能是一大改變。 IT 組織長時間著重于應用程式專案管理的線性或連續模型，例如[瀑布模型](https://wikipedia.org/wiki/waterfall_model)。 在傳統的 IT 中，這種方法完全合乎邏輯。 大部分的大型 IT 專案都是以採購要求開始，以取得昂貴的硬體資源。 資本支出要求、預算配置和設備取得通常代表大量的專案執行。 取得之後，硬體本身就會成為可傳遞的條件約束。
 
 雲端的取得模型會變更核心相依性，使其成為必要的順序模型。 以營運費用方法取代取得週期，可協助企業以較小的財務承諾更快速地移動。 這種方法可協助小組在所有需求都熟知之前參與專案。 它也會創造成長思維的空間，讓小組不需要人工限制即可進行實驗、學習和傳遞。 基於上述所有原因和詳細資訊，我們強烈建議小組使用 agile 或反復的方法來進行雲端採用規劃。
 
@@ -38,7 +38,7 @@ ms.locfileid: "80428101"
 2. **定義工作負載並設定其優先順序：** 設定前10個工作負載的優先順序，以建立初始採用待處理專案。
 3. **將資產與工作負載對齊：** 識別支援優先順序工作負載所需的資產（建議或現有）。
 4. **回顧合理化決策：** 請參閱合理化決策，以精簡採用路徑決策：遷移或創新。
-5. **建立反復專案和發行計畫：** 反復*專案是配置*來執行工作的時間區塊。 *版本*是在觸發變更至生產進程之前要完成的工作定義。
+5. **建立反復專案和發行計畫：** 反復_專案是配置_來執行工作的時間區塊。 _版本_是在觸發變更至生產進程之前要完成的工作定義。
 6. **估計時間軸：** 根據初始估計值，為發行規劃目的建立粗略的時程表。
 
 ## <a name="next-steps"></a>後續步驟

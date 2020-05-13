@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7c3e7bb61ba6fde3ad2c236706673fbc7d195ef6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 43325baa63035779a7a7482faaf828f2ecc5614c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121801"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223077"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 
@@ -27,14 +27,16 @@ ms.locfileid: "81121801"
 - [集中管理作業](../../manage/centralize-operations.md)：使用 Azure 燈塔來集中化跨多個 Azure 租使用者的作業管理。
 - [建立操作適用性審查](../../manage/operational-fitness-review.md)：審查環境的操作適用性。
 - 工作負載特有的作業最佳做法：
-  - [復原檢查清單](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [失敗模式分析](https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [從全區域的服務中斷復原](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [從資料損毀或意外刪除復原](https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [復原檢查清單](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [失敗模式分析](https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [從全區域的服務中斷復原](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [從資料損毀或意外刪除復原](https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>改善單一登陸區域以外作業的四個步驟
 
 [管理方法](../../manage/index.md)提供建立作業管理容量的整體指導方針，請參閱[管理方法](../../manage/index.md)。 我們將使用該方法的基本結構，以及該方法的下列步驟，來改善所有登陸區域的登陸區域作業和作業。
+
+<!-- cSpell:ignore caf -->
 
 ![管理方法](../../_images/manage/caf-manage.png)
 

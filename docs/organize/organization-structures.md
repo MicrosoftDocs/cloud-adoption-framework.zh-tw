@@ -1,5 +1,5 @@
 ---
-title: 建立小組結構
+title: 成熟的小組結構
 description: 使用這些常見小組結構的範例，尋找最符合您操作需求的組織結構。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c46f3d6372c532911bc794128a0ea47509ee1860
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995182"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222091"
 ---
 <!-- cSpell:ignore ccoe -->
 
-# <a name="establish-team-structures"></a>建立小組結構
+# <a name="mature-team-structures"></a>成熟的小組結構
 
-每個雲端功能都是由每個雲端採用的人員所提供。 這些指派和小組結構可以開發成長，也可以故意設計成符合定義的小組結構。
+每個雲端功能都是由每個雲端採用工作的人員所提供。 這些指派和小組結構可以開發成長，也可以故意設計成符合定義的小組結構。
 
 隨著採用需求的成長，需要平衡和結構。 本文提供一般小組結構在組織成熟度各個階段的範例。 下圖和清單概述以一般成熟階段為基礎的結構。 使用這些範例來尋找最符合您操作需求的組織結構。
 
@@ -34,7 +34,7 @@ ms.locfileid: "80995182"
 5. [操作對齊](#operational-alignment)
 6. [卓越的雲端中心（CCoE）](#cloud-center-of-excellence)
 
-大部分的公司從*雲端採用小組*開始。 不過，我們建議您建立更類似[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構的組織結構。
+大部分的公司從_雲端採用小組_開始。 不過，我們建議您建立更類似[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構的組織結構。
 
 ## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
 
@@ -45,7 +45,7 @@ ms.locfileid: "80995182"
 針對小規模或初期採用的工作，這個小組可能會很小，只是一個人。 在較大規模或延遲的工作中，通常會有數個雲端採用小組，每個團隊大約有六位工程師。 不論大小或工作為何，任何雲端採用小組的一致層面，都是提供將解決方案上架到雲端的方法。 對於某些組織來說，這可能是足夠的組織結構。 [雲端採用小組](./cloud-adoption.md)一文提供深入瞭解雲端採用小組的結構、組合和功能。
 
 > [!WARNING]
-> *僅*以雲端採用小組（或多個雲端採用小組）操作會被視為*反模式*，應予以避免。 至少，請考慮[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)。
+> _僅_以雲端採用小組（或多個雲端採用小組）操作會被視為_反模式_，應予以避免。 至少，請考慮[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)。
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法：最基本的可行產品（MVP）
 
@@ -66,7 +66,7 @@ ms.locfileid: "80995182"
 
 ![使用中央 IT 模型進行雲端採用](../_images/ready/org-ready-central-it.png)
 
-可惜的是，中央 IT 階段可以是組織成熟度的其中一個風險最高階段。 中央 IT 小組必須加入具有強大成長思維的資料表。 如果小組將雲端視為增加和調整其功能的機會，那麼它可以在整個過程中提供絕佳價值。 不過，如果中央 IT 小組將雲端採用主要視為其現有模型的威脅，則中央 IT 小組會成為雲端採用小組及其所支援之商務目標的障礙。 有些中央 IT 小組花了數個月或甚至幾年的時間，嘗試強制雲端與內部部署的方法保持一致，只有負面的結果。 雲端不需要在中央 IT 中變更所有專案，但需要變更。 如果 IT 小組在中央 IT 團隊內的防禦改變，此一階段的成熟度可能很快就會成為文化反模式。
+可惜的是，中央 IT 階段可以是組織成熟度的其中一個風險最高階段。 中央 IT 小組必須加入具有強大成長思維的資料表。 如果小組將雲端視為成長和調整的機會，則可以在整個過程中提供絕佳價值。 不過，如果中央 IT 小組將雲端採用主要視為其現有模型的威脅，則中央 IT 小組會成為雲端採用小組及其所支援之商務目標的障礙。 有些中央 IT 小組花了數個月或甚至幾年的時間，嘗試強制雲端與內部部署的方法保持一致，只有負面的結果。 雲端不需要在中央 IT 中變更所有專案，但需要進行重大變更。 如果 IT 小組在中央 IT 團隊內的防禦改變，此一階段的成熟度可能很快就會成為文化反模式。
 
 雲端採用方案的重點在於平臺即服務（PaaS）、DevOps 或其他需要較少作業支援的解決方案，較不可能在此成熟度階段看到價值。 相反地，這些類型的解決方案最可能是藉由嘗試集中進行妨礙運作或封鎖。 較高的成熟度層級（像是[雲端的卓越（CCoE））](#cloud-center-of-excellence)更可能會針對這些類型的轉型成果產生正面的結果。 若要瞭解雲端中中央 IT 與 CCoE 之間的差異，請參閱[卓越的雲端中心](./cloud-center-of-excellence.md)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "80995182"
 
 ## <a name="cloud-center-of-excellence"></a>雲端卓越中心
 
-在最高的成熟度狀態中，雲端優先的現代化營運模式是一項卓越的雲端中心。 這種方法提供中央 IT 功能，例如治理、安全性、平臺和自動化。
+在最高成熟度的狀態下，「雲端中心」將小組與現代化的雲端優先作業模型保持一致。 這種方法提供中央 IT 功能，例如治理、安全性、平臺和自動化。
 
 ![雲端卓越中心](../_images/ready/org-ready-ccoe.png)
 

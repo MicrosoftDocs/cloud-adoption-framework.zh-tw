@@ -7,22 +7,24 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997569"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222006"
 ---
+<!-- cSpell:ignore Getting Started -->
+
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
 在雲端遷移期間，員工和一些委任系統整合合作夥伴或受控服務合作夥伴可能需要開發新的技能，才能在遷移工作期間生效。
 
-在任何移轉旅程的「遷移」階段期間，有四個不同程序會反覆地完成。 下列各節會參考技能資源的兩個必要條件，以針對這每個程序調整必要技能。
+遷移方法會反復完成四個不同的進程。 下列各節會參考技能資源的兩個必要條件，以針對這每個程序調整必要技能。
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-「遷移」程序的實作將會以移轉旅程中，從[「計畫」](../strategy/suggested-skills.md)和[「就緒」](../organize/suggested-skills.md)階段所取得的技能為基礎。
+遷移程式的執行將以在遷移旅程的[計畫](../strategy/suggested-skills.md)和[準備](../organize/suggested-skills.md)階段期間取得的技能為依據。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 

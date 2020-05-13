@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5e36757cd187b42a9ff8b976db886feb55f1b2e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428987"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223519"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 
 在移轉程序的初始步驟中，您必須在雲端建立正確的環境，以接收、裝載及支援資產的移轉。 本文將列載在進行移轉前須在目前的環境中驗證的事項。
 
-下列檢查清單會與雲端採用架構的[準備](../../../ready/index.md)一節中說明的指引一致。 請參閱這一節，以取得執行下列任何作業的相關指引。
+下列檢查清單會與雲端採用架構的[就緒方法](../../../ready/index.md)中的指引一致。 請參閱這一節，以取得執行下列任何作業的相關指引。
 
 ## <a name="effort-type-assumption"></a>採用的工作類型
 

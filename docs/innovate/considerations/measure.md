@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427389"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222499"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 
@@ -22,7 +22,12 @@ ms.locfileid: "80427389"
 
 在雲端採用生命週期的[策略階段](../../strategy/index.md)中，我們會檢查[動機](../../strategy/motivations.md)和[商務成果](../../strategy/business-outcomes/index.md)。 這些實務會提供一組用來測試客戶影響的計量。 當創新成功時，您通常會看到與您的策略目標一致的結果。
 
-建立學習計量之前，請定義您想要讓此創新影響的少數策略性計量。 這些策略性計量通常符合下列一個或多個結果區域：[商業](../../strategy/business-outcomes/agility-outcomes.md)彈性、[客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)、[客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)、[財務衝擊](../../strategy/business-outcomes/fiscal-outcomes.md)，或在營運創新案例中：[解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)。
+建立學習計量之前，請定義您想要讓此創新影響的少數策略性計量。 這些策略性計量通常會與下列一個或多個結果區域一致：
+    - [商務靈活性](../../strategy/business-outcomes/agility-outcomes.md)
+    - [客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)
+    - [客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)
+    - [財務影響](../../strategy/business-outcomes/fiscal-outcomes.md)
+    - [解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)，以營運創新為例。
 
 記錄已同意的計量，並定期追蹤其影響。 但不會預期會導致這些計量中的任何一種反復專案出現。 如需有關設定和調整相關合作物件之預期的詳細資訊，請參閱反復專案的[承諾](./index.md#commitment-to-iteration)。
 
@@ -47,19 +52,19 @@ ms.locfileid: "80427389"
 3. **解決方案步驟：** 本詞彙指的是將客戶從初始觸發程式移至成功結果所需的步驟。 每個步驟都會根據客戶決策產生學習度量，以移至下一個步驟。
 4. 已**達到個別採用：** 下一次遇到觸發程式時，如果客戶回到解決方案以滿足他們的需求，就會達成個別採用。
 5. **商務結果指標：** 當客戶的行為會影響到已定義的商務結果時，就會觀察到商務結果指標。
-6. **真正的創新：** 當*商務結果指示器*和*個別採用*都發生在所需的規模時，您就已經實現真正的創新。
+6. **真正的創新：** 當_商務結果指示器_和_個別採用_都發生在所需的規模時，您就已經實現真正的創新。
 
 客戶流程的每個步驟都會產生學習計量。 在每個反復專案（或發行）之後，會測試新的假設版本。 同時，調整解決方案的工作會經過測試，以反映假設中的調整。 當客戶在任何指定的步驟中遵循指定的路徑時，就會記錄正面的計量。 當客戶偏離指定的路徑時，就會記錄負的度量。
 
 這些對齊和偏差計數器會建立學習計量。 當雲端採用小組進行商業成果和真正的創新時，應記錄並追蹤每個專案。 在[瞭解客戶](./learn.md)的情況下，我們將討論套用這些計量的方式，以瞭解並建立更好的解決方案。
 
-### <a name="grouping-and-observing-customer-partners"></a>分組和觀察客戶合作夥伴
+### <a name="group-and-observe-customer-partners"></a>群組和觀察客戶合作夥伴
 
 定義學習度量的第一項測量是客戶合作夥伴定義。 參與創新週期的任何客戶都有資格成為客戶合作夥伴。 若要準確地測量行為，您應該使用世代模型來定義客戶合作夥伴。 在此模型中，客戶會進行分組，以讓您瞭解其對 MVP 變更的回應。 這些群組通常如下所示：
 
 - **實驗或焦點群組：** 根據其參與的特定實驗來分組客戶，其設計目的是要測試一段時間的變更。
 - **區段：** 依公司的大小將客戶分組。
-- **垂直：** 依*產業的垂直方向*來分組客戶。
+- **垂直：** 依_產業的垂直方向_來分組客戶。
 - **個別人口統計：** 根據個人人口統計（例如年齡和實體位置）分組。
 
 這些類型的群組可協助您驗證這些客戶的各種交叉區段中的學習計量，這些是選擇在您的創新工作期間與您的合作夥伴。 所有後續的計量都應該衍生自可定義的客戶群組。

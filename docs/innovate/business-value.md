@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997210"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222584"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>培養創新商業價值的共識
 
@@ -47,7 +47,7 @@ ms.locfileid: "80997210"
 
 雲端採用架構遵循下列階段的指定路徑：策略、規劃、就緒和採用。 雲端創新適用于此流程的採用階段。 [限定問題](#qualifying-questions)的答案有三和四個顧慮的結果和動機。 當這些答案沒有對齊時，表示您的組織在雲端採用生命週期的策略階段中遺漏了某個專案。 下列幾個案例可能會在播放中。
 
-- **對齊機會：** 當商務專案關係人無法同意與雲端創新工作相關的動機和業務成果時，就會面臨較大挑戰的徵兆。 [雲端策略階段](../strategy/index.md)中的練習有助於開發商務專案關係人之間的對齊。 此外，強烈建議相同的專案關係人構成定期符合的[雲端策略小組](../organize/cloud-strategy.md)。
+- **對齊機會：** 當商務專案關係人無法同意與雲端創新工作相關的動機和業務成果時，就會面臨較大挑戰的徵兆。 [策略方法](../strategy/index.md)中的練習有助於開發商務專案關係人之間的對齊。 此外，強烈建議相同的專案關係人構成定期符合的[雲端策略小組](../organize/cloud-strategy.md)。
 
 - **通訊機會：** 當開發小組不同意動機和業務成果時，可能是策略性通訊差距的徵兆。 您可以透過雲端採用小組來檢查雲端策略，以快速解決此問題。 審查後的幾周，小組應該重複符合資格的問題練習。
 
@@ -66,8 +66,8 @@ ms.locfileid: "80997210"
 - **建立機會：** 小組可能不一致，因為他們不同意解決客戶需求的方式。 這類聲浪通常表示小組[延遲過早的技術尖峰](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)。 若要讓小組專注于客戶，請啟動第一個反復專案，並建立一個小型的最小可行產品（MVP）來解決假設的一部分。 如需協助團隊繼續進行的其他指引，請參閱[開發數位開始創造發明](./considerations/invention.md)。
 - **訓練機會：** 任一小組都可以不對齊，因為他們需要深入的技術需求和廣泛的功能性需求。 這項需求可能會導致在 agile 方法中進行定型的機會。 當小組文化特性尚未準備好進行 agile 程式時，您可能會發現創新，並維持市場的步調，使其成為一項挑戰。 如需有關 DevOps 和 agile 實務的訓練資源，請參閱：
   - [發展您的 DevOps 實務](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
-  - [使用 Azure DevOps 建立應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
-  - [透過 Azure DevOps 部署應用程式](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
+  - [使用 Azure DevOps 建置應用程式](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
+  - [使用 Azure DevOps 部署應用程式](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
 藉由遵循本文每一節中的方法和待處理專案管理工具，您可以協助建立解決方案的對齊方式。
 

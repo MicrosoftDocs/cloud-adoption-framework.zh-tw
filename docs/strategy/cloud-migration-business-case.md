@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431618"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222907"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>建置雲端移轉的商業論證
 
@@ -21,19 +21,29 @@ ms.locfileid: "80431618"
 
 ## <a name="dispelling-cloud-migration-myths"></a>解開雲端移轉的迷思
 
-**迷思：雲端一律較便宜。** 通常會認為，在雲端中操作資料中心的成本，一律比在內部部署環境中運作。 雖然此假設通常是 true，但不一定會發生這種情況。 有時候雲端作業成本會較高。 這些較高的成本通常是因成本管理不佳、系統架構不一致、程式重複、非典型的系統設定，或更大的人員配置成本所造成。 幸好，您可以緩和這些問題的許多，以創造初期的 ROI。 遵循[組建中的](#build-the-business-justification)指導方針，可協助您偵測及避免這些不一致。 解開這裡所述的其他誤解也可以提供協助。
+### <a name="myth-the-cloud-is-always-cheaper"></a>迷思：雲端一律較便宜
 
-**迷思：所有專案都應該進入雲端。** 事實上，有些商業驅動程式可能會導致您選擇混合式解決方案。 在您完成商務模型之前，請先完成第一次迴圈的量化分析，如[數位資產文章](../digital-estate/5-rs-of-rationalization.md)中所述。 如需有關合理化所牽涉之個別量化驅動程式的詳細資訊，請參閱[合理化的 5 Rs](../digital-estate/5-rs-of-rationalization.md)。 兩種方法都會使用可輕易取得的清查資料和簡單的量化分析，來識別可能導致雲端中的成本較高的工作負載或應用程式。 這些方法也可以識別哪些相依性或流量模式會使您必須使用混合式解決方案。
+通常會認為，在雲端中操作資料中心的成本，一律比在內部部署環境中運作。 雖然此假設通常是 true，但不一定會發生這種情況。 有時候雲端作業成本會較高。 這些較高的成本通常是因成本管理不佳、系統架構不一致、程式重複、非典型的系統設定，或更大的人員配置成本所造成。 幸好，您可以緩和這些問題的許多，以創造初期的 ROI。 遵循[組建中的](#build-the-business-justification)指導方針，可協助您偵測及避免這些不一致。 解開這裡所述的其他誤解也可以提供協助。
 
-**迷思：鏡像我的內部部署環境可協助我節省雲端費用。** 在數位資產規劃過程中，不會前所未聞企業偵測超過50% 已布建環境的未使用容量。 如果在雲端中布建資產以符合目前的布建，就難以實現成本節約。 請考慮減少已部署的資產大小，使其符合使用模式，而不是布建模式。
+### <a name="myth-everything-should-go-into-the-cloud"></a>迷思：所有專案都應該進入雲端
 
-**迷思：伺服器成本可推動雲端遷移的商務案例。** 有時候此假設為 true。 對於某些公司而言，降低與伺服器有關的持續性資本支出，是很重要的。 但這取決於數個因素。 有五年到八年硬體更新週期的公司，不太可能看到其雲端遷移的快速退貨。 公司若採用標準化或強制執行的更新週期，則可以快速達到損益平衡點。 不論是哪一種情況，其他費用可能是為了進行遷移而進行的財務觸發程式。 以下是一些成本範例，通常會在公司採用僅限伺服器或僅限 VM 的成本觀點時被忽略：
+事實上，有些商業驅動程式可能會導致您選擇混合式解決方案。 在您完成商務模型之前，請先完成第一次迴圈的量化分析，如[數位資產文章](../digital-estate/5-rs-of-rationalization.md)中所述。 如需有關合理化所牽涉之個別量化驅動程式的詳細資訊，請參閱[合理化的五大 Rs](../digital-estate/5-rs-of-rationalization.md)。 兩種方法都會使用可輕易取得的清查資料和簡單的量化分析，來識別可能導致雲端中的成本較高的工作負載或應用程式。 這些方法也可以識別哪些相依性或流量模式會使您必須使用混合式解決方案。
+
+### <a name="myth-mirroring-my-on-premises-environment-will-help-me-save-money-in-the-cloud"></a>迷思：鏡像我的內部部署環境可協助我節省雲端費用
+
+在數位資產規劃過程中，不會前所未聞企業偵測超過50% 已布建環境的未使用容量。 如果在雲端中布建資產以符合目前的布建，就難以實現成本節約。 請考慮減少已部署的資產大小，使其符合使用模式，而不是布建模式。
+
+### <a name="myth-server-costs-drive-business-cases-for-cloud-migration"></a>迷思：伺服器成本推動雲端遷移的商務案例
+
+有時候此假設為 true。 對於某些公司而言，降低與伺服器有關的持續性資本支出，是很重要的。 但這取決於數個因素。 有五年到八年硬體更新週期的公司，不太可能看到其雲端遷移的快速退貨。 公司若採用標準化或強制執行的更新週期，則可以快速達到損益平衡點。 不論是哪一種情況，其他費用可能是為了進行遷移而進行的財務觸發程式。 以下是一些成本範例，通常會在公司採用僅限伺服器或僅限 VM 的成本觀點時被忽略：
 
 - 虛擬化、伺服器和中介軟體的軟體成本可能會很龐大。 雲端提供者可消除其中某些成本。 雲端提供者的兩個範例降低虛擬化成本是[Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/#services)和[Azure 保留](https://azure.microsoft.com/reservations)方案。
 - 中斷所造成的業務損失，很快就會超過硬體或軟體成本。 如果您目前的資料中心不穩定，請與企業合作，根據商機成本或實際的商業成本來量化中斷的影響。
 - 環境成本也非常重要。 對於「美國平均」系列而言，「家庭」是最大的投資和預算的最高成本。 資料中心的情況也是如此。 不動產、設備和公共設施在其內部部署成本中佔了相當高的比例。 當資料中心淘汰時，可以重新調整這些設施的用途，或者您的業務可能會完全從這些成本中釋放。
 
-**迷思：營運費用模型優於資本支出模型。** 如[會計結果](./business-outcomes/fiscal-outcomes.md)一文所述，營運費用模型可能是件好事。 但是有些產業會對營運支出造成負面的影響。 以下幾個範例會觸發與營運費用交談相關的會計和業務單位的緊密整合：
+### <a name="myth-an-operating-expense-model-is-better-than-a-capital-expense-model"></a>迷思：營運費用模型優於資本支出模型
+
+如[會計結果](./business-outcomes/fiscal-outcomes.md)一文所述，營運費用模型可能是件好事。 但是有些產業會對營運支出造成負面的影響。 以下幾個範例會觸發與營運費用交談相關的會計和業務單位的緊密整合：
 
 - 當企業將資本資產視為商業估價的驅動程式時，資本支出縮減可能是負面的結果。 雖然這不是通用標準，但此情感最常出現在零售、製造和建築產業中。
 - 私人股東或尋求資本異常湧入的公司可能會考慮營運費用增加為負面結果。
@@ -43,7 +53,9 @@ ms.locfileid: "80431618"
 
 在您提供著重于從資本支出轉換到營運費用的商業理由之前，請先瞭解哪一個較適合您的企業。 會計和採購通常可以協助將訊息與財務目標保持一致。
 
-**迷思：移至雲端就像是翻轉交換器。** 移轉是需要大量手動操作的技術性轉換。 在擬定商業論證時 (特別是具時效性的論證)，請考量下列可能會拉長資產移轉所需時間的層面：
+### <a name="myth-moving-to-the-cloud-is-like-flipping-a-switch"></a>迷思：移至雲端就像是翻轉交換器
+
+移轉是需要大量手動操作的技術性轉換。 在擬定商業論證時 (特別是具時效性的論證)，請考量下列可能會拉長資產移轉所需時間的層面：
 
 - **頻寬限制：** 目前資料中心與雲端提供者之間的頻寬量會在遷移期間驅動時程表。
 - **測試時間軸：** 使用企業測試應用程式，以確保準備就緒和效能可能會很耗時。 調整進階使用者與測試程序是很重要的。
@@ -68,8 +80,8 @@ ms.locfileid: "80431618"
 
 ## <a name="migration-specific-initial-investment"></a>移轉特定的初始投資
 
-- 雲端提供者（例如 Azure）提供計算機來預估雲端投資。 [Azure 定價計算機](https://azure.microsoft.com/pricing/calculator)是其中一個範例。
-- 有些雲端提供者也會提供成本差異計算機。 [Azure 擁有權總成本（TCO）計算機](https://azure.com/tco)就是其中一個範例。
+- 雲端提供者提供計算機來預估雲端投資。 Microsoft 提供[Azure 定價計算機](https://azure.microsoft.com/pricing/calculator)。
+- 有些雲端提供者也會提供成本差異計算機。 Microsoft 提供[Azure 擁有權總成本（TCO）計算機](https://azure.microsoft.com/pricing/tco/calculator)。
 - 如需更精細的成本結構，請考慮[數位資產規劃](../digital-estate/index.md)練習。
 - 估計移轉的成本。
 - 估計任何預期訓練機會的成本。 [Microsoft Learn](https://docs.microsoft.com/learn)可能可以協助降低這些成本。
@@ -84,7 +96,7 @@ ms.locfileid: "80431618"
 
 ## <a name="migration-specific-cost-deltas"></a>移轉特定的成本差異
 
-計算任何因建議的移轉所將產生的成本變更。 如需成本差異類型的詳細資訊，請參閱[財務模型](./financial-models.md)一文。 雲端提供者通常會提供成本差異計算的工具。 [Azure 擁有權總成本（TCO）計算機](https://azure.com/tco)就是其中一個範例。
+計算任何因建議的移轉所將產生的成本變更。 如需成本差異類型的詳細資訊，請參閱[財務模型](./financial-models.md)一文。 雲端提供者通常會提供成本差異計算的工具。 [Azure 擁有權總成本（TCO）計算機](https://azure.microsoft.com/pricing/tco/calculator)就是其中一個範例。
 
 雲端遷移可能降低的其他成本範例：
 

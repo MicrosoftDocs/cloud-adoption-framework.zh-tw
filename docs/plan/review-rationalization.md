@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 90a6718c028023e1bae101b35fff873dd47e4ab2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 74d072210721212881ed7c9e8b17bcc2ce38573a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427947"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223383"
 ---
 # <a name="review-rationalization-decisions"></a>檢閱合理化決策
 
@@ -25,7 +25,7 @@ ms.locfileid: "80427947"
 
 ## <a name="innovation-indicators"></a>創新指標
 
-如果下列問題的共同審查導致「是」答案，則工作負載可能是較佳的創新候選項。 這類工作負載不會透過隨即轉移或現代化模型進行遷移。 相反地，商務邏輯或資料結構會重新建立為新的或重新架構的應用程式。 這種方法可能更耗費人力且耗時。 但對於代表重大企業報酬的工作負載，則會將投資論證。
+如果下列問題的共同審核會產生肯定的答案，則工作負載可能是創新的最佳候選項。 這類工作負載不會透過隨即轉移或現代化模型進行遷移。 相反地，商務邏輯或資料結構會重新建立為新的或重新架構的應用程式。 這種方法可能更耗費人力且耗時。 但對於代表重大企業報酬的工作負載，則會將投資論證。
 
 - 此工作負載中的應用程式會建立市場差異嗎？
 - 是否有針對改善與此工作負載中的應用程式相關的經驗而提供的建議或核准的投資？

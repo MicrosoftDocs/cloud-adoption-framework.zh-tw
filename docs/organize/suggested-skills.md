@@ -8,22 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995052"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223468"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>遷移準備階段期間的技能就緒性路徑
+# <a name="building-technical-skills"></a>建置技術技能
 
-在遷移的準備階段，目標是要準備*開始*進行旅程。 這個階段是在兩個主要區域中完成的：組織和環境（技術）準備。 這兩者可能需要技術和非技術性參與者的新技能。 下列資訊可協助您的組織建立必要的技能。
+組織和環境（技術）的就緒程度可能需要技術和非技術性參與者的新技能。 下列資訊可協助您的組織建立必要的技能。
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
 根據與雲端採用工作相關聯的動機和商務成果，領導者可能需要建立新的組織結構或虛擬小組（v 小組）來加速各種功能。 下列文章可協助您的組織開發必要的技能，以結構這些小組來符合所要的結果：
 
-- [初始組織的對齊方式](./index.md)：概述對齊與小組結構，以協助達到特定目標。
+- [讓您的組織保持一致](../get-started/org-alignment.md)：探索建立適當組織結構的方法。
+- [組織對齊練習](./index.md)：取得對齊和小組結構的總覽，以協助達到特定目標。
+- [建立小組](../get-started/help.md#establish-teams)：瞭解如何在組織內建立負責傳遞雲端功能的小組。
 - [細分接收器和 fiefdoms](./fiefdoms-silos.md)：瞭解兩個常見的組織*反模式*，以及引導小組進行生產力共同作業的方式。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
@@ -71,8 +73,8 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任
 
 - 系統[管理員](https://docs.microsoft.com/learn/browse/?roles=administrator)可以存取著重于 Azure 基礎的模組、設定容器，甚至是雲端中的先進管理。
 
-- [開發人員](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)可以使用瞭解資源，在架構、治理、現代化活動方面提供協助。
+- [開發人員](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)可以使用 Microsoft Learn 資源，在架構、治理、現代化活動方面提供協助。
 
 ## <a name="learn-more"></a>深入了解
 
-如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用角色篩選器，讓學習路徑與您的角色一致。
+如需其他學習路徑，請流覽[Microsoft Learn 目錄](https://docs.microsoft.com/learn/browse)。 使用 [角色] 篩選器可讓學習路徑與您的角色對齊。
