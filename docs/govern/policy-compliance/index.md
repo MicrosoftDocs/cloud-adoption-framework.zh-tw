@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7d22bb4b4bae04366c61686862d1ae437185886d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433506"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224216"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "80433506"
 
 ![公司治理和治理專業領域](../../_images/operational-transformation-govern-highres.png)
 
-*圖1 - 公司治理和治理專業領域。*
+_圖 1：公司治理和治理專業領域。_
 
 上圖示範業務風險、原則與合規性，以及監視與強制執行之間對於建立治理策略的互動。 其後是實現您策略的五個雲端治理專業領域。
 
@@ -53,6 +53,8 @@ ms.locfileid: "80433506"
 ## <a name="minimum-viable-product-mvp-for-policy"></a>原則的最簡可行產品 (MVP)
 
 您雲端治理小組和採用小組之間新合作關係的第一步是關於原則 MVP 的協議。 您的雲端治理 MVP 應認可一開始有較小的業務風險，但隨著組織採用更多雲端服務，業務風險可能會增長。
+
+<!-- cSpell:ignore HBI -->
 
 例如，某個企業部署的 5 部 VM 全不包含高業務影響性 (HBI) 資料，則其業務風險很小。 當雲端採用流程後續的 VM 數目達到 1,000 部，而該企業開始移動 HBI 資料時，業務風險會增長。
 

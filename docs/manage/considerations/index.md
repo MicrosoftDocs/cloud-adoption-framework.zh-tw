@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d34a97e24e681732de7d171e7add84a0d5e51281
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426321"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223961"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>雲端的 IT 管理和作業
 
@@ -27,6 +27,8 @@ ms.locfileid: "80426321"
 ## <a name="cloud-management"></a>雲端管理
 
 在過去 20 多年的時間，傳統的 IT 作業模型就足以應付企業需求。 到了現在，該模型已經過時，因此受歡迎程度已比不上雲端優先的替代模型。 在移至雲端時，IT 管理團隊有機會重新思考此模型，並為企業帶來更大的價值。 本文章系列會概述用於 IT 管理的現代化模型。
+
+<!-- cSpell:ignore caf -->
 
 ![管理雲端採用架構中的方法](../../_images/manage/caf-manage.png)
 
