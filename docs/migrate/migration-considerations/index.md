@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d238918580c2db808a82c52d67d837a055c033e9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db298f40598bc1060c56901d95f7b325ce548abe
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432587"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214356"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 
@@ -29,11 +29,11 @@ ms.locfileid: "80432587"
 
 ## <a name="envision-an-end-state"></a>構想最終狀態
 
-開始進行移轉工作之前，請務必建立最終狀態的粗略願景。 下圖顯示基礎結構、應用程式和資料的內部部署起點，此起點定義您的「數位資產」  。 在移轉程序期間，那些資產是使用[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)中所述五個移轉策略的其中一個來轉換。
+開始進行移轉工作之前，請務必建立最終狀態的粗略願景。 下圖顯示基礎結構、應用程式和資料的內部部署起點，此起點定義您的「數位資產」  。 在移轉程序期間，這些資產會使用[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)中所述五個移轉策略的其中一個來轉換。
 
 ![移轉選項的資訊圖](../../_images/migrate/migration-options.png)
 
-移轉和現代化工作的範圍涵蓋使用基礎結構即服務 (IaaS) 功能 (不需要程式碼和應用程式變更) 的簡單「重新裝載」  (也稱為「隨即移轉」  )、包含少量變更的「重構」  ，以及為了修改和擴充程式碼與應用程式功能進行「重新建構」  ，以利用雲端技術。
+移轉和現代化工作的範圍涵蓋使用基礎結構即服務 (IaaS) 功能 (不需要程式碼和應用程式變更) 的簡單重新裝載移轉  (也稱為「隨即移轉」  )、包含少量變更的「重構」  ，以及為了修改和擴充程式碼與應用程式功能進行「重新建構」  ，以利用雲端技術。
 
 雲端原生策略和平台即服務 (PaaS) 策略使用 Azure 平台供應項目和受控服務，來「重建」  內部部署工作負載。 在移轉程序中的一部分，有對等完全受控軟體即服務 (SaaS) 雲端式供應項目的工作負載，通常可由這些服務完全「取代」  。
 

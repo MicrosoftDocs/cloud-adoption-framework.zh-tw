@@ -3,109 +3,33 @@ title: 在適用於 Azure 的 Microsoft 雲端採用架構中治理
 description: 使用適用於 Azure 的雲端採用架構，來了解如何評估現有的原則、建立初始治理基礎，並以反覆方式新增治理工具。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/11/2019
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706926"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218657"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 
 雲端可為支援企業的技術建立新的架構。 這些新的架構也會變更這些技術的採用、管理和治理方式。 當整個資料中心以自動程序執行的一行程式碼進行實質上的終結並重建時，我們必須重新思考傳統的方法。 在治理方面更是如此。
 
-## <a name="get-started-with-cloud-governance"></a>雲端治理入門
-
 雲端治理是反覆的程序。 針對使用現有原則治理內部部署 IT 環境的組織而言，雲端治理應該可以補強這些原則。 不過，內部部署與雲端之間的公司原則整合層級會隨著雲端治理的成熟度和雲端中的數位資產而有所差異。 雲端資產隨時間不斷變化，雲端治理程序和原則也不斷改變。 下列練習可協助您開始建置初始治理基礎。
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable TODO -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./methodology.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>方法</h3>
-在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./benchmark.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>基準測試</h3>
-評估您的目前狀態和未來狀態，以建立套用此架構的願景。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-foundation.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>初始治理基礎</h3>
-利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./foundation-improvements.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>改善初始治理基礎</h3>
-在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。                                |
+| ![2](../_images/icons/2.png)     | <br>[基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。                                |
+| ![3](../_images/icons/3.png)     | <br>[初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。                                |
+| ![4](../_images/icons/4.png)      | <br>[改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。  |
 
 ## <a name="objective-of-this-content"></a>此內容的目標
 
@@ -126,13 +50,6 @@ ms.locfileid: "77706926"
 
 ## <a name="use-this-guide"></a>使用本指南
 
-如果您想要完全遵循本指南，此內容有助於訂定與雲端實作並行的強大雲端治理策略。 本指南會引導您了解此類策略的理論和實作。
+詳閱治理方法內容，有助於您擬定與雲端實作並行的健全雲端治理策略。 本指南會引導您了解此策略的理論和實作。
 
 如需快速了解 Azure 實作的理論和快速採用 Azure 實作，請先參閱[治理指南概觀](./guides/index.md)。 使用此指南，您可以在雲端採用過程的同時，開始小規模並累加式改進您的治理需求。
-
-## <a name="next-steps"></a>後續步驟
-
-對於在雲端採用架構中推動雲端治理的方法有基本了解。
-
-> [!div class="nextstepaction"]
-> [瞭解方法](./methodology.md)

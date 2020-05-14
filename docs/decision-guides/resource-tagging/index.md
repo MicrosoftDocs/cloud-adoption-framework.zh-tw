@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396094"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222754"
 ---
+<!--docsTest:disable - TODO -->
+
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
@@ -27,8 +29,8 @@ ms.locfileid: "81396094"
   - [雲端帳戶處理模型](../../strategy/cloud-accounting.md)
   - [ROI 計算](../../strategy/financial-models.md#return-on-investment)
   - [成本追蹤](../../ready/azure-best-practices/track-costs.md)
-  - [預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [警示](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [警示](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [週期性支出追蹤和報告](../../govern/cost-management/compliance-processes.md)
   - [實作後最佳化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -68,7 +70,7 @@ ms.locfileid: "81396094"
 - 您的命名和標記原則需要整合公司內現有的命名和組織原則嗎？
 - 您是否要實作計費或回報會計系統？ 相較於簡單訂用帳戶層級明細允許的詳細程度，您是否必須針對部門、事業群和小組，採用更詳細的方式建立資源與計量資訊之間的關聯？
 - 標記是否需要代表像是資源法規合規性要求這樣的詳細資料？ 或是是否需要代表像是運作時間要求、修補排程或安全性要求這樣的運作詳細資料？
-- 哪些標記是在依據中央 TI 原則的情況下，所有資源都需要的標記？ 哪些標記是選擇性的？ 是否允許個別團隊實作自己的自訂標記配置？
+- 哪些標記是在依據集中式 IT 原則的情況下，所有資源都需要的標記？ 哪些標記是選擇性的？ 是否允許個別團隊實作自己的自訂標記配置？
 
 下面列出的常見標記模式可提供如何使用標記組織雲端資產的範例。 這些模式並獨佔模式，而且可並行使用，能夠依據公司需求提供多種資產組織方式。
 
@@ -76,11 +78,11 @@ ms.locfileid: "81396094"
 
 | 標記類型 | 範例 | 描述 |
 |-----|-----|-----|
-| 函數            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。                                 |
-| 分類        | confidentiality=private<br/>sla = 24hours                                 | 可依據資源使用方式和對它套用的原則將資源分類                               |
-| 會計            | department = finance <br/>program = business-initiative <br/>region = northamerica | 可允許針對帳單用途將資源與組織內的特定群組建立關聯 |
-| 合作關係           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受它影響的相關資訊                      |
-| 目的               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援  |
+| 函數 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類 |
+| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 可依據資源使用方式和對它套用的原則將資源分類 |
+| 會計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 可允許針對帳單用途將資源與組織內的特定群組建立關聯 |
+| 合作關係 | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受它影響的相關資訊 |
+| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +91,7 @@ ms.locfileid: "81396094"
 如需有關 Azure 中命名和標記的詳細資訊，請參閱：
 
 - [Azure 資源的命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)。 請參閱本指南了解建議的 Azure 資源命名慣例。
-- [使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
+- [使用標記來組織 Azure 資源和管理階層](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
 
 ## <a name="next-steps"></a>後續步驟
 

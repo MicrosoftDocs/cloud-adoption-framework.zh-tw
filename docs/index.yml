@@ -1,0 +1,186 @@
+### YamlMime:Hub
+title: 適用於 Azure 的 Microsoft 雲端採用架構
+summary: 雲端採用架構是文件、實作指引、最佳做法和工具的集合，是 Microsoft 為了加速您的雲端採用旅程而設計、且經過驗證的指引。
+brand: azure
+metadata:
+  title: 適用於 Azure 的 Microsoft 雲端採用架構
+  description: 雲端採用架構是文件、實作指引、最佳做法和工具的集合，可加速型您的雲端採用旅程。
+  ms.service: cloud-adoption-framework
+  ms.topic: landing-page
+  services: cloud-adoption-framework
+  author: JanetCThomas
+  ms.author: janet
+  ms.date: 04/20/2020
+  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
+  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 05/12/2020
+  ms.locfileid: "83228298"
+highlightedContent:
+  items:
+  - title: 開始您的雲端旅程
+    itemType: get-started
+    url: ./get-started/index.md
+  - title: 尋找雲端採用工具和範本
+    itemType: download
+    url: ./reference/tools-templates.md
+  - title: 什麼是雲端採用架構
+    itemType: overview
+    url: ./overview.md
+  - title: 雲端採用架構中的新功能
+    itemType: whats-new
+    url: ./get-started/whats-new.md
+productDirectory:
+  title: 雲端採用架構指引
+  summary: 此指引符合雲端採用生命週期的階段，可確保您能在適當時間輕易取得正確的指引。
+  items:
+  - title: 開始使用
+    imageSrc: https://docs.microsoft.com/media/common/i_road-map.svg
+    links:
+    - url: ./get-started/cloud-concepts.md
+      text: 記錄基礎決策
+    - url: ./get-started/migrate.md
+      text: 加速移轉
+    - url: ./get-started/operational-excellence.md
+      text: 提供卓越的營運績效
+    - url: ./get-started/org-alignment.md
+      text: 調整您的組織
+  - title: 策略
+    imageSrc: ./_images/caf-strategy.png
+    links:
+    - url: ./strategy/motivations.md
+      text: 動機
+    - url: ./strategy/business-outcomes/index.md
+      text: 業務成果
+    - url: ./strategy/partner-alignment.md
+      text: 調整您的合作夥伴策略
+    - url: ./strategy/first-adoption-project.md
+      text: 正確選擇第一個專案
+  - title: 計畫
+    imageSrc: ./_images/caf-plan.png
+    links:
+    - url: ./digital-estate/rationalize.md
+      text: 合理化您的數位資產
+    - url: ./plan/initial-org-alignment.md
+      text: 組織一致性
+    - url: ./plan/suggested-skills.md
+      text: 技能整備程度方案
+    - url: ./plan/template.md
+      text: 雲端採用方案 DevOps
+  - title: 就緒
+    imageSrc: ./_images/caf-ready.png
+    links:
+    - url: ./ready/azure-setup-guide/index.md
+      text: Azure 設定指南
+    - url: ./ready/landing-zone/migrate-landing-zone.md
+      text: 第一個登陸區域
+    - url: ./ready/considerations/index.md
+      text: 展開登陸區域
+    - url: ./ready/azure-best-practices/index.md
+      text: Azure 移轉整備程度的最佳做法
+  - title: 遷移
+    imageSrc: ./_images/caf-migrate.png
+    links:
+    - url: ./migrate/azure-migration-guide/index.md
+      text: Azure 移轉指南
+    - url: ./migrate/azure-best-practices/contoso-migration-overview.md
+      text: 移轉案例
+    - url: ./migrate/azure-best-practices/index.md
+      text: 雲端移轉的最佳做法
+    - url: ./migrate/migration-considerations/index.md
+      text: 流程改善
+  - title: 創新
+    imageSrc: ./_images/caf-adopt.png
+    links:
+    - url: ./innovate/business-value.md
+      text: 商業價值共識
+    - url: ./innovate/innovation-guide/index.md
+      text: Azure 創新指南
+    - url: ./innovate/best-practices/index.md
+      text: 最佳作法
+    - url: ./innovate/considerations/adoption.md
+      text: 意見反應迴圈
+  - title: 治理
+    imageSrc: ./_images/caf-govern.png
+    links:
+    - url: ./govern/methodology.md
+      text: 方法
+    - url: ./govern/benchmark.md
+      text: 基準測試評估
+    - url: ./govern/initial-foundation.md
+      text: 治理基礎
+    - url: ./govern/foundation-improvements.md
+      text: 改善基礎
+  - title: 管理
+    imageSrc: ./_images/caf-manage.png
+    links:
+    - url: ./manage/azure-management-guide/index.md
+      text: 管理基準
+    - url: ./manage/considerations/business-alignment.md
+      text: 商務承諾
+    - url: ./manage/best-practices.md
+      text: 擴展基準
+    - url: ./manage/design-principles.md
+      text: 評估設計原則
+  - title: 組織
+    imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    links:
+    - url: ./organize/index.md
+      text: 組織一致性
+    - url: ./organize/organization-structures.md
+      text: 建立小組
+    - url: ./organize/raci-alignment.md
+      text: 調整職責
+tools:
+  title: 透過 Microsoft Learn 增進您的技巧
+  summary: 完成下列 Microsoft Learn 模組，以深入了解 Azure 和雲端採用架構。
+  items:
+  - title: 適用於 Azure 的 Microsoft 雲端採用架構
+    imageSrc: ./_images/learn-caf-logo.png
+    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+  - title: Azure 基礎
+    imageSrc: ./_images/learn-azure-fundamentals-logo.png
+    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+  - title: 了解 Azure 的商業價值
+    imageSrc: ./_images/learn-business-value-of-azure-logo.png
+    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+conceptualContent:
+  title: 評量
+  summary: 評量可協助您規劃雲端旅程。 您可以使用這些評量來識別目前與所需狀態之間的差異。 我們將提供個人化的策劃建議，以協助您達到所需的狀態。
+  items:
+  - title: 雲端旅程追蹤器
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+      itemType: get-started
+      text: 根據您的業務需求，識別您的雲端採用途徑。
+  - title: 策略移轉評量和整備工具 (智慧型)
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+      itemType: get-started
+      text: 去除移轉工作的障礙、改善程序，並促使商務成功。
+  - title: 治理基準測試
+    links:
+    - url: https://www.cafbaseline.com
+      itemType: quickstart
+      text: 識別您目前的狀態與業務優先順序之間的差異，並取得適當的資源以利消除這些差異。
+  - title: Azure 架構檢閱
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+      itemType: architecture
+      text: 查看如何在基本作業以外進一步處理優先順序工作負載。
+additionalContent:
+  sections:
+  - title: 尋找支援
+    summary: 如果您在雲端採用旅程中遭受阻礙，Microsoft 有專用資源可協助您去除這些障礙。
+    items:
+    - title: FastTrack for Azure
+      summary: 向 Microsoft 工程師求助
+      url: https://azure.microsoft.com/programs/azure-fasttrack
+    - title: Azure 移轉計劃
+      summary: 取得將工作負載遷移至雲端的協助
+      url: https://azure.microsoft.com/migration/migration-program
+    - title: 尋找合作夥伴
+      summary: 尋找可協助您開始使用的合作夥伴
+      url: https://aka.ms/adopt/findapartner
+  footer: 了解為何雲端採用架構適合您的企業。 [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

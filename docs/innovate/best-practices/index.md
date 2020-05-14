@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 746e4cf6dd9aac69ce6ed5bc6505e739b503d4df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ebdb349954a675b9a277f10f6b34984f12aef489
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434130"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222669"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>在 Azure 中開發數位發明
 
@@ -30,8 +30,8 @@ Azure 中的數位發明和創新有許多種雲端式工具組合。 下列文�
 
 此文章系列中的數位發明類型如下：
 
-- [將資料大眾化](./data.md)：用來解決資訊相關客戶需求的資料共用工具
-- [透過應用程式參與](./apps.md)：可供超越原始資料來與客戶互動的應用程式建立工具
-- [實現採用](./ci-cd.md)：可透過「建置-測量-學習」週期的數位支援來加快客戶採用腳步的工具
-- [與裝置互動](./devices.md)：可為客戶建立各層級環境體驗的工具
-- [預測和影響](./predict.md)：可供執行預測性分析並將其輸出整合至應用程式的工具
+- [將資料大眾化](./data.md)：用來解決資訊相關客戶需求的資料共用工具。
+- [透過應用程式參與](./apps.md)：可供超越原始資料來與客戶互動的應用程式建立工具。
+- [實現採用](./ci-cd.md)：可透過「建置-測量-學習」週期的數位支援來加快客戶採用腳步的工具。
+- [與裝置互動](./devices.md)：可為客戶建立各層級環境體驗的工具。
+- [預測和影響](./predict.md)：可供執行預測性分析並將其輸出整合至應用程式的工具。

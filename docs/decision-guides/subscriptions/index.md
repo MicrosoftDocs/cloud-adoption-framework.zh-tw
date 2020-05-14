@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 515ae94c2feedbc7b111ec786551a4680a69f561
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996031"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215040"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -27,7 +27,7 @@ ms.locfileid: "80996031"
 - [建立額外的訂用帳戶](../../ready/azure-best-practices/scale-subscriptions.md)以調整您的 Azure 環境。
 - 使用 Azure 管理群組來[組織及管理您的訂用帳戶](../../ready/azure-best-practices/organize-subscriptions.md)。
 
-## <a name="modeling-your-organization"></a>為您的組織建模
+## <a name="model-your-organization"></a>為您的組織建立模型
 
 由於每個組織都不同，所以 Azure 管理群組的設計非常具有彈性。 將雲端資產模型化以反映您的組織階層，可協助您在更高層級的階層中定義並套用原則，並依賴繼承關係，以確保這些原則會自動套用至較低階層的管理群組。 雖然訂用帳戶可在不同的管理群組之間移動，但是設計初始的管理群組階層，以反映您預期的組織需求，這樣做會很有幫助。
 
@@ -48,14 +48,14 @@ ms.locfileid: "80996031"
 
 ### <a name="application-category-strategy"></a>應用程式分類策略
 
-當組織的雲端使用量增長時，通常會建立額外的訂用帳戶，以支援在商務關鍵性、合規性需求、存取控制或資料保護需求中具有基本差異的應用程式。 從初始生產和非生產的訂用帳戶中建置時，支援這些應用程式類別目錄的訂用帳戶會組織在適用的生產或非生產管理群組下。 這些訂用帳戶通常是由中央 IT 操作人員擁有及管理。
+當組織的雲端使用量增長時，通常會建立額外的訂用帳戶，以支援在商務關鍵性、合規性需求、存取控制或資料保護需求中具有基本差異的應用程式。 從初始生產和非生產的訂用帳戶中建置時，支援這些應用程式類別目錄的訂用帳戶會組織在適用的生產或非生產管理群組下。 這些訂用帳戶通常是由集中式 IT 作業人員擁有及管理。
 
-![應用程式分類策略](../../_images/infra-subscriptions/application.png)
+![應用程式分類策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 每個組織將其應用程式分類的方式各有不同，通常會根據特定的應用程式或服務，或是應用程式原型之類的訂用帳戶來分隔訂用帳戶。 此類別通常會設計為支援可能耗用大部分訂用帳戶有限資源的工作負載，或個別的任務關鍵性工作負載，以確保它們不會在這些限制之下與其他工作負載競爭。 可能證明個別訂用帳戶的部分工作負載包括：
 
 - 任務關鍵性工作負載。
-- 屬於貴公司內「已售出貨物成本」(COGS) 一部分的應用程式。 範例：X 公司小工具的每個執行個體都包含會傳送遙測資料的 Azure IoT 模組。 在 COGS 中，這可能需要使用專用訂用帳戶來進行會計/治理工作。
+- 屬於公司內部_已售出貨物成本_ (COGS) 一部分的應用程式。 範例：x 公司小工具的每個執行個體都包含會傳送遙測資料的 Azure IoT 模組。 在 COGS 中，這可能需要使用專用訂用帳戶來進行會計/治理工作。
 - 受限於法規需求 (例如 HIPAA 或 FedRAMP) 的應用程式。
 
 ### <a name="functional-strategy"></a>功能策略
@@ -70,11 +70,11 @@ ms.locfileid: "80996031"
 
 對於全球營運的組織，地理策略會使用管理群組階層，根據地理區域將訂用帳戶和帳戶分組。
 
-## <a name="mixing-subscription-strategies"></a>混合訂用帳戶策略
+## <a name="mix-subscription-strategies"></a>混合訂用帳戶策略
 
 管理群組階層的深度最多可有六層。 這可讓您彈性建立階層，結合其中數種策略，以符合您的組織需求。 例如，下圖顯示的組織階層結合了營業單位策略與地理策略。
 
-![混合的訂用帳戶策略](../../_images/infra-subscriptions/mixed.png)
+![混合的訂用帳戶策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>相關資源
 

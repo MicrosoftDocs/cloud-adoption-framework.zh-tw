@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b900826ef28aada53a9a73cdae9679d5f35f3007
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606561"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223757"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -57,7 +57,7 @@ ms.locfileid: "80606561"
 有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 其中包括：
 
 - System Center Operations Manager
-- Azure 監視器現在包含 Log Analytics 和 Application Insights
+- Azure 監視器 (包含 Log Analytics 和 Application Insights)
 - Azure 原則和 Azure 藍圖
 - Azure 自動化
 - Azure Logic Apps

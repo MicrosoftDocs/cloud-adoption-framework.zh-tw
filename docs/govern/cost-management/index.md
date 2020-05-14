@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4b0d1c727a0b224071d008e82af16a142e98d60a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708864"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220731"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
-成本管理是 [Cloud Adoption Framework 治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 對於許多客戶而言，治理成本是採用雲端技術時的主要考量。 平衡效能需求、採用步調和雲端服務成本，頗具挑戰性。 這在實作雲端技術的主要業務轉換期間特別重要。 本節將概述開發成本管理專業領域作為雲端管理策略一部分的方法。
+成本管理專業領域是[雲端採用架構治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 對於許多客戶而言，治理成本是採用雲端技術時的主要考量。 平衡效能需求、採用步調和雲端服務成本，頗具挑戰性。 這在實作雲端技術的主要業務轉換期間特別重要。 本節將概述開發成本管理專業領域作為雲端管理策略一部分的方法。
 
 > [!NOTE]
-> 成本管理治理不會取代現有的業務小組、帳戶處理實務，以及牽涉到您組織中對 IT 相關成本進行財務管理的程序。 此專業領域的主要目的是找出與 IT 支出有關的潛在雲端相關風險，並提供降低風險指導方針給負責部署和管理雲端資源的業務和 IT 小組。
+> 成本管理專業領域不會取代現有的業務小組、帳戶處理實務，以及牽涉到您的組織中對 IT 相關成本進行財務管理的程序。 此專業領域的主要目的是找出與 IT 支出有關的潛在雲端相關風險，並提供降低風險指導方針給負責部署和管理雲端資源的業務和 IT 小組。
 
 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責擁有和管理雲端式工作負載並支付費用的領導人。
 
@@ -50,14 +50,15 @@ ms.locfileid: "77708864"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>成本管理範本</h3>
-                        <p class="x-hidden-focus">下載此範本以記載成本管理專業領域</p>
+                        <h3>成本管理專業領域範本</h3>
+                        <p class="x-hidden-focus">下載此範本以記錄成本管理專業領域。</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -68,7 +69,7 @@ ms.locfileid: "77708864"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>商務風險</h3>
+                        <h3>業務風險</h3>
                         <p class="x-hidden-focus">了解通常會與成本管理專業領域相關聯的動機與風險。</p>
                     </div>
                 </div>
@@ -126,7 +127,7 @@ ms.locfileid: "77708864"
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>成熟度</h3>
-                        <p class="x-hidden-focus">使雲端管理成熟度和雲端採用階段保持一致。</p>
+                        <p class="x-hidden-focus">使雲端管理成熟度與雲端採用階段保持一致。</p>
                     </div>
                 </div>
             </div>

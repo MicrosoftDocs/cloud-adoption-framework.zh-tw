@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7f0ebc370b18e5c010322a2dacac8750714810f8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427367"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222244"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -161,7 +161,7 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 
 #### <a name="action"></a>動作
 
-若要設定或監視 Azure Kubernetes Service：
+若要設定或監視 AKS 服務：
 
 1. 移至 **Azure Kubernetes Service**。
 2. 設定新的服務：選取 [新增]  並依照提示執行。
@@ -171,7 +171,7 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

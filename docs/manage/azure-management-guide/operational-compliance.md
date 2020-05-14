@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb09c780a38576b8f4c8154290b4ca4b6cae7309
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426786"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216702"
 ---
-<!-- cSpell:ignore WSUS -->
+<!-- cSpell:ignore WSUS getting started -->
 
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
@@ -28,12 +28,12 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 
 針對任何企業級環境，下表會概述管理基準的最低建議。
 
-|Process  |工具  |目的  |
-|---------|---------|---------|
-|修補程式管理|更新管理|更新的管理和排程|
-|強制執行原則|Azure 原則|強制執行原則以確保環境和來賓的合規性|
-|環境設定|Azure 藍圖|核心服務的自動化合規性|
-|資源組態|Desired State Configuration|在客體 OS 和環境的某些層面進行自動化設定|
+| Process | 工具 | 目的 |
+|---|---|---|
+| 修補程式管理 | 更新管理 | 更新的管理和排程 |
+| 強制執行原則 | Azure 原則 | 強制執行原則以確保環境和來賓的合規性 |
+| 環境設定 | Azure 藍圖 | 核心服務的自動化合規性 |
+| 資源組態 | Desired State Configuration | 在客體 OS 和環境的某些層面進行自動化設定 |
 
 ::: zone target="docs"
 
@@ -48,10 +48,10 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 
 「更新管理」所管理的電腦會使用下列設定來執行評估和更新部署：
 
-- 適用於 Windows 或 Linux 的 Microsoft Monitoring Agent (MMA)
-- 適用於 Linux 的 PowerShell 預期狀態組態 (DSC)
-- Azure 自動化 Hybrid Runbook Worker
-- 適用於 Windows 電腦的 Microsoft Update 或 Windows Server Update Services (WSUS)
+- 適用於 Windows 或 Linux 的 Microsoft Monitoring Agent (MMA)。
+- 適用於 Linux 的 PowerShell Desired State Configuration (DSC)。
+- Azure 自動化 Hybrid Runbook Worker。
+- 適用於 Windows 電腦的 Microsoft Update 或 Windows Server Update Services (WSUS)。
 
 如需詳細資訊，請參閱[更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)。
 

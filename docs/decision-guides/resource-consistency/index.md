@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996338"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224318"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -58,7 +58,7 @@ Azure 平台皆建置在基本的資源分組機制之上，提供的系統可�
 
 您可以透過結合資源群組和標準化 Resource Manager 範本，針對部署時需要哪些設定，以及要對每個資源群組或資源套用哪些 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)規則等需求，強制執行適用標準。
 
-例如，您可能需要讓訂用帳戶內部署的所有虛擬機器皆連線到由您的中央 IT 小組所管理的一般子網路。 您可以建立標準範本，以用於部署工作負載 VM，針對工作負載建立個別資源群組，並在其中部署必要 VM。 此資源群組會有一項原則規則，限制只允許將資源群組內的網路介面加入至共用子網路。
+例如，您可能需要讓訂用帳戶內部署的所有虛擬機器皆連線到由您的集中式 IT 小組所管理的一般子網路。 您可以建立標準範本，以用於部署工作負載 VM，針對工作負載建立個別資源群組，並在其中部署必要 VM。 此資源群組會有一項原則規則，限制只允許將資源群組內的網路介面加入至共用子網路。
 
 如需有關在雲端部署內強制執行原則決策的更深入討論，請參閱[原則強制執行](../policy-enforcement/index.md)。
 

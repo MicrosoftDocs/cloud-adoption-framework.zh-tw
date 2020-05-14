@@ -1,6 +1,6 @@
 ---
 title: 有效地組織 Azure 資源
-description: 了解有效組織 Azure 資源以便管理的最佳做法。
+description: 了解有效組織 Azure 資源以簡化資源管理工作的最佳做法。
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997561"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221938"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -146,9 +146,9 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 | 單位 | 影響範圍 | 長度 | 大小寫 | 有效字元 | 建議模式 | 範例 |
 | --- | --- | --- | --- | --- | --- | --- |
-|資源群組 |訂用帳戶 |1-90 |不區分大小寫 |英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|可用性設定組 |資源群組 |1-80 |不區分大小寫 |英數字元、底線和連字號 |`<service-short-name>-<context>-as` |`profx-sql-as` |
-|Tag |相關聯的實體 |512 (名稱)、256 (值) |不區分大小寫 |英數字元 |`"key" : "value"` |`"department" : "Central IT"` |
+| 資源群組 | 訂用帳戶 | 1-90 | 不區分大小寫 | 英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| 可用性設定組 | 資源群組 | 1-80 | 不區分大小寫 | 英數字元、底線和連字號 | `<service-short-name>-<context>-as` | `profx-sql-as` |
+| Tag | 相關聯的實體 | 512 (名稱)、256 (值) | 不區分大小寫 | 英數字元 | `"key" : "value"` | `"department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[資源標記](#tab/ResourceTags)
 
@@ -164,7 +164,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
-如需更多的標記建議和範例，請參閱雲端採用架構的[標記指引](../azure-best-practices/naming-and-tagging.md)。
+如需更多的標記建議和範例，請參閱雲端採用架構中的[建議的命名和標記慣例](../azure-best-practices/naming-and-tagging.md)。
 
 ::: zone target="docs"
 
@@ -172,7 +172,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至 [[資源群組](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [指派標記]  。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。

@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9d11c3954bb97d14c5ee4c59e27013cff7e8cf7a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425546"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216804"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "80425546"
 
 遷移至雲端可讓公司將其基礎結構現代化。 您可以使用雲端服務製作大型應用程式，而且它們能以工作負載的形式提供價值，當您的組織需要時隨時可取得。 許多工作負載只要稍微變更程式碼 (如更新資料庫的名稱) 就可以傳輸至 Azure。 您可以使用分段式方法來遷移更複雜的工作負載。
 
-大部分的財星 500 大公司都已經將 Azure 用於重要工作負載。 Azure 大幅提升盈餘的優點刺激了許多移轉專案。 公司通常會先將開發和測試工作負載移動至 Azure，然後是 DevOps、電子郵件和災害復原即服務。
+大部分的財星 500 大公司都已經將 Azure 用於重要工作負載。 Azure 大幅提升盈餘的優點刺激了許多移轉專案。 公司通常會先將開發和測試工作負載移至 Azure，然後再移動 DevOps、電子郵件和災害復原。
 
 ## <a name="intended-audience"></a>目標對象
 
@@ -48,7 +48,7 @@ ms.locfileid: "80425546"
 
 - **程式碼：** 大型主機使用的程式設計語言包括 COBOL、Fortran、PL/I 和 Natural。 工作控制語言 (JCL) 是用來搭配 z/OS 的。
 
-- **資料庫層：** 常見適用於 z/OS 的關聯式資料庫管理系統 (DBMS) 是 IBM DD2。 它會管理稱為 *dbspaces* 的資料結構，它包含一或多個資料表，並且會指派給稱為 *dbextents* 的實體資料集儲存體集區。 兩個重要資料庫元件為識別儲存體集區中資料位置的目錄，以及包含資料庫上執行之作業記錄的記錄檔。 支援各種不同的一般檔案資料格式。 適用於 z/OS 的 DB2 通常會使用虛擬儲存體存取方法 (VSAM) 資料集來儲存資料。
+- **資料庫層：** 常見適用於 z/OS 的關聯式資料庫管理系統 (DBMS) 是 IBM DD2。 它會管理稱為 _dbspaces_ 的資料結構，它包含一或多個資料表，並且會指派給稱為 _dbextents_ 的實體資料集儲存體集區。 兩個重要資料庫元件為識別儲存體集區中資料位置的目錄，以及包含資料庫上執行之作業記錄的記錄檔。 支援各種不同的一般檔案資料格式。 適用於 z/OS 的 DB2 通常會使用虛擬儲存體存取方法 (VSAM) 資料集來儲存資料。
 
 - **管理層：** IBM 大型主機包括排程軟體 (如 TWS OPC)、列印和輸出管理工具 (如 CA-SAR 和 SPOOL)，以及程式碼的原始檔控制系統。 z/OS 的安全存取控制是由資源存取控制設施 (RACF) 處理。 資料庫管理員提供資料庫中資料的存取權，並且在 z/OS 環境中其自己的分割區執行。
 

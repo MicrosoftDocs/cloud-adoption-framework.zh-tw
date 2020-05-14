@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396011"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214475"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
-在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到「完成狀態」，包括原生工具、第三方工具和專案管理工具。
+在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到完成狀態，包括原生工具、第三方工具和專案管理工具。
 
 <!-- markdownlint-disable MD025 -->
 
@@ -270,7 +270,7 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 
 當您移轉至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
-Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱 [Azure DevOps 的 CI 和 CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
+Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱 [Azure DevOps 的 CI/CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
 
 ## <a name="suggested-skills"></a>建議的技能
 
@@ -282,4 +282,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 # <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
-當您將資源移轉至雲端環境時，請務必定期執行成本分析。 這有助於避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載 (在 **[最佳化和轉換](./optimize-and-transform.md)** 一節中會更詳細地討論)。
+當您將資源移轉至雲端環境時，請務必定期執行成本分析。 這有助於避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載，這在[最佳化和轉換](./optimize-and-transform.md)**一節中會詳細討論。

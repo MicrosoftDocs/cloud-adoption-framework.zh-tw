@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9a2cfb6d4280ac5d5fd6e16e330121e568ba7a71
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434898"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214973"
 ---
 # <a name="architectural-decision-guides"></a>架構決策指南
 

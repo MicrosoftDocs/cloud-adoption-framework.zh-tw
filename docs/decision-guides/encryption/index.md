@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996458"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224386"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -36,7 +36,7 @@ ms.locfileid: "80996458"
 規劃雲端移轉作業時，以下表格可協助您決定儲存及管理加密金鑰、憑證和祕密的方式，這對於建立安全和可管理雲端部署而言非常重要：
 
 | 問題 | 雲端原生 | 攜帶您自己的金鑰 | 保存您自己的金鑰 |
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
+|--- |--------------|--------|-------------|
 | 您的組織是否缺乏集中管理金鑰和祕密的能力？                                                                    | 是          | 否     | 否          |
 | 您是否需要制訂規則，以限制建立可同時在內部部署硬體裝置和雲端使用的金鑰和秘密？ | 否           | 是    | 否          |
 | 您的組織是否已制訂規則或原則以防止在異地儲存金鑰？                | 否           | 否     | 是         |
@@ -45,7 +45,7 @@ ms.locfileid: "80996458"
 
 具備雲端原生金鑰管理能力之後，就能在雲端保存庫 (例如 Azure Key Vault) 中產生、管理及儲存所有金鑰和祕密。 此方法可簡化許多和金鑰管理有關的 IT 工作，例如金鑰備份、儲存與更新。
 
-使用雲端原生金鑰管理系統時會包括這些假設事項：
+**雲端原生假設事項：** 使用雲端原生金鑰管理系統時會包括這些假設事項：
 
 - 您信任並使用雲端金鑰管理解決方案建立、管理及裝載您組織的密與金鑰。
 - 您允許需要存取加密服務或秘密的所有內部部署應用程式和服務存取雲端金鑰管理系統。
@@ -121,10 +121,10 @@ PaaS 儲存體與資料庫資源通常會預設強制加密。 可以透過加�
 
 如需 Azure 中加密和金鑰管理的相關詳細資訊，請參閱：
 
-- [Azure 加密概觀](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)。 Azure 如何使用加密來保護待用和傳輸中資料的詳細描述。
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview)。 金鑰保存庫是 Azure 內儲存及管理密碼編譯金鑰、祕密和憑證的主要金鑰管理系統。
-- [Azure 資料安全性和加密最佳做法](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。 Azure 資料安全性和加密最佳做法的討論。
-- [Azure 中的機密運算](https://azure.microsoft.com/solutions/confidential-compute)。 Azure 的機密運算方案提供了工具和技術，用來建立受信任的執行環境或其他加密機制，以保護使用中的資料。
+- **[Azure 加密概觀](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)：** Azure 如何使用加密來保護待用和傳輸中資料的詳細描述。
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview)：** 金鑰保存庫是 Azure 內儲存及管理密碼編譯金鑰、祕密和憑證的主要金鑰管理系統。
+- **[Azure 資料安全性和加密最佳做法](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。** Azure 資料安全性和加密最佳做法的討論。
+- **[Azure 中的機密運算](https://azure.microsoft.com/solutions/confidential-compute)：** Azure 的機密運算方案提供了工具和技術，用來建立受信任的執行環境或其他加密機制，以保護使用中的資料。
 
 ## <a name="next-steps"></a>後續步驟
 

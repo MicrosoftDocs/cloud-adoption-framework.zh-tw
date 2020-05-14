@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a82bd7fea1e16819e2c69d6eafba0cbdf77e3559
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67412e36a4048d1441679458bbff5a90bbceaa84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396130"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214767"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 
@@ -24,7 +24,7 @@ ms.locfileid: "81396130"
 此概觀會根據最佳做法來定義治理的最簡可行產品 (MVP) 以作為快速起點。 它也提供一些治理改進方法的連結，這些改進會隨著新業務或技術風險的出現而進一步新增更多最佳做法。
 
 > [!WARNING]
-> 這個 MVP 是基於一組假設的基準起點。 即便是這一系列最佳做法，也是以獨特的業務風險和風險承受度推動的公司原則。 若要查看您是否適用這些假設，請閱讀本文後面[較長的敘述](./narrative.md)。
+> 這個 MVP 是基於一組假設的基準起點。 即便是這一系列最基本的最佳做法，也是以獨特的業務風險和風險承受度推動的公司原則為基礎。 若要查看您是否適用這些假設，請閱讀本文後面[較長的敘述](./narrative.md)。
 
 ### <a name="governance-best-practices"></a>治理最佳做法
 
@@ -65,7 +65,7 @@ ms.locfileid: "81396130"
 
 ## <a name="what-does-this-guidance-provide"></a>本指南提供哪些內容？
 
-在 MVP 中，從[部署加速](../../deployment-acceleration/index.md)專業領域建立做法和工具是為了快速套用公司原則。 特別是，MVP 會使用 Azure 藍圖、Azure 原則以及 Azure 管理群組套用幾個基本的公司原則，如這個虛構公司的敘述中所定義。 那些公司原則會使用 Resource Manager 範本與 Azure 原則來套用，以建立小型的身分識別和安全性基準。
+在 MVP 中，從[部署加速](../../deployment-acceleration/index.md)專業領域建立做法和工具，是為了快速套用公司原則。 特別是，MVP 會使用 Azure 藍圖、Azure 原則以及 Azure 管理群組套用幾個基本的公司原則，如這個虛構公司的敘述中所定義。 那些公司原則會使用 Resource Manager 範本與 Azure 原則來套用，以建立小型的身分識別和安全性基準。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "81396130"
 
 經過一段時間之後，這個治理 MVP 將用於改進治理做法。 隨著採用率提高，業務風險也會增加。 雲端採用架構治理模型內的各種專業領域，將會持續變更以管理這些風險。 本系列的後續文章將討論影響虛構公司的公司原則累加式改進。 這些改進會跨三個專業領域進行：
 
-- 成本管理 (採用擴大規模時)
+- 成本管理 (採用擴大規模時)。
 - 安全性基準 (部署受保護的資料時)。
 - 資源一致性 (IT 操作開始支援任務關鍵性工作負載時)。
 

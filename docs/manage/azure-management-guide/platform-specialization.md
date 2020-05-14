@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 421e079d1d219818670328db208a2269bf1dcfdb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426757"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216634"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -30,14 +30,14 @@ ms.locfileid: "80426757"
 
 此資料表概述客戶增強的管理基準中常見的一些流程、工具和潛在影響：
 
-|Process  |工具  |目的  |建議的管理層級  |
-|---------|---------|---------|---------|
-|改善系統設計|Azure Architecture Framework|改善平台的架構設計以改善作業|N/A|
-|自動化補救|Azure 自動化|使用平台專屬的自動化來回應進階平台的資料|平台作業|
-|服務類別目錄|受控應用程式中心|針對符合組織標準的已核准解決方案來提供自助式目錄|平台作業|
-|容器效能|適用於容器的 Azure 監視器|容器的監視和診斷|平台作業|
-|平台即服務 (PaaS) 資料效能|Azure SQL 分析|PaaS 資料庫的監視和診斷|平台作業|
-|基礎結構即服務 (IaaS) 資料效能|SQL Server 健康情況檢查|IaaS 資料庫的監視和診斷|平台作業|
+| Process | 工具 | 目的  | 建議的管理層級 |
+|---|---|---|---|
+| 改善系統設計 | Azure Architecture Framework | 改善平台的架構設計以改善作業 | N/A |
+| 自動化補救 | Azure 自動化 | 使用平台專屬的自動化來回應進階平台的資料 | 平台作業 |
+| 服務類別目錄 | 受控應用程式中心 | 針對符合組織標準的已核准解決方案來提供自助式目錄 | 平台作業 |
+| 容器效能 | 適用於容器的 Azure 監視器 | 容器的監視和診斷 | 平台作業 |
+| 平台即服務 (PaaS) 資料效能 | Azure SQL 分析 | PaaS 資料庫的監視和診斷 | 平台作業 |
+| 基礎結構即服務 (IaaS) 資料效能 | SQL Server 健康情況檢查 | IaaS 資料庫的監視和診斷 | 平台作業 |
 
 ## <a name="high-level-process"></a>高階流程
 
@@ -65,11 +65,11 @@ ms.locfileid: "80426757"
 
 Azure Architecture Framework 著重在改善系統設計的五大要素：
 
-- **延展性：** 擴展常見平台資產以應付增加的負載
-- **可用性：** 藉由改善執行時間的潛能來減少業務中斷
-- **復原能力：** 改善復原時間以減少中斷持續時間
-- **安全性：** 讓應用程式和資料免於遭受外部威脅
-- **管理：** 這些常見平台資產特有的作業流程
+- **延展性：** 擴展常見平台資產以應付增加的負載。
+- **可用性：** 藉由改善可能的執行時間來減少業務中斷。
+- **復原能力：** 改善復原時間以縮短中斷持續時間。
+- **安全性：** 讓應用程式和資料免於遭受外部威脅。
+- **管理：** 這些常見平台資產特有的作業流程。
 
 技術債務和架構瑕疵會是大部分業務中斷的原因。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新的部署，您可以將這些改善項目視為避免發生技術債務的方式。
 

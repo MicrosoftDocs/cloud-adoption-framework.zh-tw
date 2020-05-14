@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 16b82b3be2789a764dcccecc6ef91ef91f3098b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ea911e51b909a9787cb0d0d327cebd884c36a275
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429530"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214492"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -107,7 +107,7 @@ Microsoft 會對所有 Azure 客戶提供基本支援方案。 您可以全天�
 
 ## <a name="azure-solutions-partner"></a>Azure 解決方案合作夥伴
 
-Microsoft 認證解決方案提供者專門根據全球客戶的解決方案，提供最新 Microsoft 技術。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
+Microsoft 認證解決方案提供者專精於根據全球各地的 Microsoft 技術，提供新型客戶解決方案。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
 
 從可以提供現成或自訂 Azure 解決方案的合作夥伴，以及可以部署和管理這些解決方案的合作夥伴取得協助：
 

@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120733"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214560"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
 本指南中的資源可協助您評估每個工作負載，並針對每個工作負載的移轉適用性提出挑戰，以及完成移轉選項的相關架構決策。
@@ -102,7 +104,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 若要成功實現[合理化](../../digital-estate/rationalize.md#incremental-rationalization)，您需要兩個相同的加權步驟。 這兩個步驟都需要環境中的資料和深入解析。 不過，每一種方法都涉及成功完成移轉工作所需的時間和詳細資料細微性。
 
-- **[以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：** 第一次進行合理化和版本規劃期間，只有其中一個[合理化的 5R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[雲端採用策略文件](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
+- [以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：第一次進行合理化和版本規劃期間，只有其中一個[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[雲端採用策略文件](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
 
 - **每個工作負載的詳細評量：** 與「以十為單位」版本規劃相關的假設是可接受的，並且足以用來建立方案。 但是，如果在移轉之前未進行評估，則這些相同的假設可能會造成重大問題。
 
@@ -112,7 +114,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 在移轉之前，請使用該資料，並與產品擁有者、開發小組、系統管理員和其他人進行探索交談，以評估遷移此特定工作負載的可行性。 使用此探索來挑戰有關此工作負載的核心假設。 如果發現的結果會變更移轉或採用計畫，請據以更新方案。
 
-挑戰這些假設的第一個步驟是[檢閱所有 5 R](../../digital-estate/rationalize.md)。
+挑戰這些假設的第一個步驟是[檢閱合理化的所有五 R 策略](../../digital-estate/rationalize.md)。
 
     - 假設的合理化方法適用於此工作負載嗎？ 這是最好的方法嗎？
     - 有任何[複寫物理學](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)會影響此工作負載的移轉嗎？

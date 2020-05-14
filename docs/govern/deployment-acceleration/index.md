@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3c83e40ab6d08b461095385ac58cf64d74da86a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708966"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220425"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
-部署加速是[雲端採用架構治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 這個專業領域著重於建立原則來治理資產設定或部署的方式。 在這五個雲端治理專業領域中，部署加速包括部署、使設定保持一致，以及指令碼的重複使用性。 這可能會透過手動活動或完全自動化的 DevOps 活動。 在任一種情況下，原則基本上會保持不變。 隨著這個專業領域逐漸成熟，雲端治理小組可利用可重複使用的資產來加速部署及移除雲端採用的障礙，而成為 DevOps 和部署策略中的合作夥伴。
+部署加速是[雲端採用架構治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 這個專業領域著重於建立原則來治理資產設定或部署的方式。 在這五個雲端治理專業領域中，部署加速專業領域包括部署、使設定保持一致，以及指令碼的重複使用性。 這可能會透過手動活動或完全自動化的 DevOps 活動。 在任一種情況下，原則基本上會保持不變。 隨著這個專業領域逐漸成熟，雲端治理小組可利用可重複使用的資產來加速部署及移除雲端採用的障礙，而成為 DevOps 和部署策略中的合作夥伴。
 
 本文將概述公司在實作雲端解決方案的規劃、建置、採用及操作階段期間所體驗的部署加速流程。 沒有任何一份文件能夠滿足任一企業的所有需求。 因此，本文的每一節都將概述建議的最低和潛在活動。 這些活動的目的是要協助您建置[原則 MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy)，但也會建立[累加式原則](../policy-compliance/index.md#incremental-policy-growth)的改良架構。 雲端治理小組應決定要對這些活動進行多少投資，以改進部署加速效果。
 
@@ -52,14 +52,15 @@ ms.locfileid: "77708966"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>部署加速範本</h3>
-                        <p class="x-hidden-focus">下載用以記載部署加速專業領域的範本</p>
+                        <h3>部署加速專業領域範本</h3>
+                        <p class="x-hidden-focus">下載此範本以記錄部署加速專業領域。</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -70,7 +71,7 @@ ms.locfileid: "77708966"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>商務風險</h3>
+                        <h3>業務風險</h3>
                         <p class="x-hidden-focus">了解通常與部署加速專業領域相關聯的動機與風險。</p>
                     </div>
                 </div>
@@ -128,7 +129,7 @@ ms.locfileid: "77708966"
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>成熟度</h3>
-                        <p class="x-hidden-focus">使雲端管理成熟度和雲端採用階段保持一致。</p>
+                        <p class="x-hidden-focus">使雲端管理成熟度與雲端採用階段保持一致。</p>
                     </div>
                 </div>
             </div>

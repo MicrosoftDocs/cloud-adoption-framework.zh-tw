@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996321"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224369"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -101,7 +101,7 @@ ms.locfileid: "80996321"
 
 鏡像內部部署集中式方式 (在此案例中，雲端式工作負載會直接將遙測資料提交至 Azure 監視器)，與內部部署應用程式和服務會將遙測資料傳送至 Azure 監視器，或定期彙總該內部部署資料以擷取至 Azure 監視器中。 Azure 監視器就能作為您整個 IT 資產的主要監視與報告系統。
 
-雲端混合式監視假設事項：使用雲端式記錄和報告系統以進行混合式監視時會假設以下事項：
+**雲端混合式監視假設事項：** 使用雲端式記錄和報告系統以進行混合式監視時會假設以下事項：
 
 - 您不需依賴現有的內部部署監視系統。
 - 您的工作負載沒有需將記錄資料儲存在內部部署系統的法規或原則需求。

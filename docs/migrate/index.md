@@ -3,108 +3,35 @@ title: 雲端移轉
 description: 了解如何建立反覆流程，來評估、移轉、最佳化、保護及管理您想要遷移至雲端的工作負載。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-layout: LandingPage
-ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120772"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219524"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
 任何企業級規模的[雲端採用方案](../plan/index.md)，都會包含不保證在建立新商業邏輯方面進行大量投資的工作負載。 這些工作負載可以透過任意數目的方法移至雲端；原形移轉、原形最佳化或現代化。 這些方法各自都是一種移轉。 下列練習將協助建立反覆流程，來評估、移轉、最佳化、保護及管理這些工作負載。
 
-## <a name="getting-started"></a>開始使用
-
-為了讓您針對此階段的雲端採用生命週期做好準備，此架構建議您進行以下練習：
+為了對此階段的雲端採用生命週期做好準備，建議您執行下列作業：
 
 <!-- markdownlint-disable MD033 -->
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>移轉您的第一個工作負載</h3>
-使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>移轉案例</h3>
-使用額外的移轉工具和方法來處理其他的移轉案例。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>最佳作法</h3>
-透過應用程式一致的最佳作法，解決一般的移轉需求。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./migration-considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>流程改善</h3>
-移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。                                |
+| ![2](../_images/icons/2.png)     | <br>[移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。                                |
+| ![3](../_images/icons/3.png)     | <br>[最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
+| ![4](../_images/icons/4.png)      | <br>[流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
+
 <!-- markdownlint-enable MD033 -->
 
-此方法和上述步驟會根據下列假設而建立：
+遷移方法和上述步驟會根據下列假設而建置：
 
 - 控管移轉短期衝刺的方法會納入移轉波浪或發行中，這可以使用方案、就緒和採用方法來定義。 在每個移轉短期衝刺內，會將一批工作負載移轉至雲端。
 - 在移轉工作負載之前，至少已識別、設定及部署一個[登陸區域](../ready/index.md)，以符合近期雲端採用方案的需求。
@@ -127,7 +54,7 @@ ms.locfileid: "81120772"
 > [!NOTE]
 > 在移轉工作的一些早期反覆項目中，將範圍限制為單一工作負載是很常見的。 這種方法可盡可能保留技能，並且讓小組有更多時間進行實驗和學習。
 > [!NOTE]
-> 建置移轉處理站時，有些小組可能會選擇將上述各個階段分散到多個小組和/或多個短期衝刺。 這種方法可以改善可重複性，並加速移轉工作。
+> 建置移轉處理站時，有些小組可能會選擇將上述各個階段分散到多個小組和多個短期衝刺。 這種方法可以改善可重複性，並加速移轉工作。
 
 ## <a name="migration-waves"></a>移轉波浪
 
@@ -137,7 +64,7 @@ ms.locfileid: "81120772"
 
 ## <a name="next-steps"></a>後續步驟
 
-上述的「開始使用」步驟和後續位於「移轉」方法中的指引，將有助於開發技能以利執行每個移轉短期衝刺內的程序。 [Azure 移轉指南](./azure-migration-guide/index.md)是一系列簡短的文章，會概述第一次移轉波浪期間所需的常見工具和方法。
+上述步驟和後續位於「遷移」方法中的指引，將有助於開發技能以利執行每個移轉短期衝刺內的程序。 [Azure 移轉指南](./azure-migration-guide/index.md)是一系列簡短的文章，會概述第一次移轉波浪期間所需的常見工具和方法。
 
 > [!div class="nextstepaction"]
 > [Azure 移轉指南](./azure-migration-guide/index.md)

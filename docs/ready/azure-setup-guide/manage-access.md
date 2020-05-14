@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9cf54c8366f70d4b06debd6c09c54bd757759458
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: efefa348324ab0c9dff86b5d19f7c3f11d9d437d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433188"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223264"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
-# <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>透過角色型存取控制來管理對 Azure 環境的存取
+# <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>透過角色型存取控制來管理對 Azure 環境的存取
 
 管理哪些人員可以存取 Azure 資源和訂用帳戶是 Azure 治理策略中很重要的一環，而且指派群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 Azure 角色型存取控制 (RBAC) 是對 Azure 中的存取進行管理的主要方法。
 

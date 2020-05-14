@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feb59290437318cfe43bed824cfde5233e357e11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997591"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217025"
 ---
 ::: zone target="docs"
 
@@ -81,7 +81,7 @@ ms.locfileid: "80997591"
 >
 > - **識別專案關係人：** 識別在移轉的結果中扮演某個角色或有利害關係的重要人員。
 > - **識別重要里程碑：** 若要有效規劃移轉時程表，請識別須達成的重要里程碑。
-> - **識別移轉策略：** 判斷您將使用的「合理化的 5R 策略」。
+> - **識別移轉策略：** 判斷您將使用的「合理化的五 R 策略」。
 > - **評估技術適合度：** 驗證移轉的技術是否已準備就緒並適用，並確認可能需要何種程度的外部合作夥伴或 Azure 支援的協助。
 > - **移轉規劃：** 執行準備資產 (基礎結構、應用程式和資料) 所需的詳細評估和規劃，以及用於移轉的 Azure 基礎結構。
 > - **測試移轉：** 執行有限範圍的測試移轉，以驗證您的移轉計劃。
@@ -102,7 +102,7 @@ ms.locfileid: "80997591"
 
 ## <a name="learn-more"></a>深入了解
 
-- [合理化的 5R 策略](../../digital-estate/5-rs-of-rationalization.md)
+- [合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)
 - [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)
 - [雲端採用架構規劃檢查清單](../migration-considerations/prerequisites/planning-checklist.md)
 

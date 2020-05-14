@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 6575848df4a20fd828ed2c07703881a171cbfb69
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1489ad64c9900436ff5c5cc6b76d5660a85d8d71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80526831"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221972"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>建立雲端的作業模型
 
 雲端採用是一項需要反覆執行的工作，其焦點放在雲端中的活動。 雲端策略則會以各種團隊執行採用專案的形式，概述用以引導商務計畫的數位轉型。 規劃和整備有助於確保每個重要元素能夠成功。 雲端採用的所有步驟都等同於具有可管理目標、時程表和預算的實質專案。
 
-這些採用工作相對容易追蹤和測量，即使其涉及多個計畫中的反覆執行活動和版本也一樣。 採用生命週期的每個階段都很重要。 每個階段都很容易在商業、文化和技術限制上遇到潛在障礙。 但是，每個階段卻也都極大程度地仰賴基礎作業模型。
+這些採用工作相對容易追蹤和測量，即使其涉及多個計畫中的反覆執行活動和版本也一樣。 採用生命週期的每個階段都很重要。 每個階段都很容易在商業、文化和技術限制上遇到潛在障礙。 不過，每個階段卻也都極大程度地仰賴基礎作業模型。
 
 **如果採用是描述您所從事的活動，作業模型則是定義啟用採用的基礎人員和方式。**
 

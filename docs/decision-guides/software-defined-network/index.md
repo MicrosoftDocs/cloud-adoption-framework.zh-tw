@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995999"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215155"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -23,11 +23,11 @@ ms.locfileid: "80995999"
 
 ![繪製符合下列快速連結的網路選項 (從最簡單到最複雜)](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-跳至：[僅限 PaaS](./paas-only.md) | [雲端原生](./cloud-native.md) | [雲端 DMZ](./cloud-dmz.md) [混合式](./hybrid.md) | [中樞與輪幅模型](./hub-spoke.md) | [深入了解](#learn-more)
+跳至：[僅限 PaaS](./paas-only.md) | [雲端原生](./cloud-native.md) | [雲端 DMZ](./cloud-dmz.md) | [混合式](./hybrid.md) | [中樞與輪幅模型](./hub-spoke.md) | [深入了解](#learn-more)
 
 SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述探索指南提供可將這些選項快速個人化，以便最符合特定商務和技術策略的參考。
 
-本指南中的轉折點取決於您的雲端策略小組在進行關於網路架構的決策之前所做的數個關鍵決策。 其中最重要的是涉及您[數位資產定義](../../digital-estate/index.md)與[訂用帳戶設計](../subscriptions/index.md)的決策 (這也可能需要納入雲端計量和全球市場策略相關決策的內容)。
+本指南中的轉折點取決於您的雲端策略小組在進行關於網路架構的決策之前所做的數個關鍵決策。 其中最重要的是涉及您[數位資產定義](../../digital-estate/index.md)與[訂用帳戶設計](../subscriptions/index.md)的決策，這也可能需要納入雲端計量和全球市場策略相關決策的內容。
 
 少於 1,000 個 VM 的小型單一區域部署不太可能大幅受到此轉折點影響。 相反地，包含超過 1,000 個 VM、多個業務部門，或多個地理區域市場的大量採用工作可能會明顯受到您 SDN 決策和這個關鍵轉折點影響。
 

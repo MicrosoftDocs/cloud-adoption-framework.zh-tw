@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429035"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222074"
 ---
 # <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 
@@ -26,10 +26,10 @@ ms.locfileid: "80429035"
 
 在開始任何雲端移轉之前，請先檢閱＜雲端採用架構＞中的[規劃](../../../strategy/index.md)和[準備](../../../ready/index.md)指引，以確保您的組織已針對雲端採用及移轉程序進行準備。 請特別檢閱驅動移轉的業務需求及預期結果：
 
-- [使用者入門：移轉](../../../getting-started/migrate.md)
+- [開始使用：加速移轉](../../../get-started/migrate.md)
 - [為何要移至雲端？](../../../strategy/motivations.md)
 
-## <a name="definition-of-done"></a>對「完成」  的定義
+## <a name="definition-of-_done_"></a>對「完成」  的定義
 
 當下列項目皆已達成時，便能滿足必要條件：
 

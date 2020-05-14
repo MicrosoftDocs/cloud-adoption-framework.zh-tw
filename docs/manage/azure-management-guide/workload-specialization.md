@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426559"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217433"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 
@@ -41,7 +41,7 @@ ms.locfileid: "80426559"
 
 需要工作負載特製化時，作業管理通常會捨棄以 IT 為中心的觀點來發展。 雲端採用架構所建議的方法是分散雲端管理功能。
 
-在此模型中，監視、部署、DevOps 和其他聚焦在創新的功能等操作工作，會轉移給應用程式開發或業務單位組織。 雲端平台和核心的雲端監控小組仍然會在整個環境中提供管理基準。
+在此模型中，監視、部署、DevOps 和其他聚焦在創新的功能等操作工作，會轉移給應用程式開發或業務單位組織。 雲端平台小組和核心的雲端監控小組仍會在整個環境中提供管理基準。
 
 這些集中式小組也會引導和指示工作負載特製化小組來操作其工作負載。 但日常的營運責任則落在 IT 之外的雲端管理小組。 這類分散式控制是卓越雲端中心成熟與否的其中一個主要指標。
 
@@ -49,10 +49,10 @@ ms.locfileid: "80426559"
 
 您必須更詳細的特定工作負載資訊，才能提供明確的工作負載作業。 在持續改善階段期間，您必須將 Application Insights 新增至雲端管理工具鏈。
 
-|需求|工具|目的|
-|---|---|---|
-|應用程式監視|Application Insights|應用程式的監視和診斷|
-|效能、可用性和使用量|Application Insights|使用應用程式儀表板、複合地圖、使用量和追蹤進行進階的應用程式監視|
+| 需求                          | 工具                 | 目的                                                                                |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
+| 應用程式監視               | Application Insights | 應用程式的監視和診斷                                                    |
+| 效能、可用性和使用量 | Application Insights | 使用應用程式儀表板、複合地圖、使用量和追蹤進行進階的應用程式監視 |
 
 ### <a name="deploy-application-insights"></a>部署 Application Insights
 

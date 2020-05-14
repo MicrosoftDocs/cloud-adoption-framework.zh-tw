@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426865"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216787"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -28,6 +28,10 @@ ms.locfileid: "80426865"
 
 ![超越雲端管理基準](../../_images/manage/beyond-the-baseline.png)
 
+- **增強的管理基準：**
+  - 在組合中大部分的工作負載具有共同需求時，將增強功能新增至管理基準。
+  - 改善使用其他雲端原生作業工具和流程的商務承諾。
+  - 基準增強功能對特定工作負載的架構不應造成影響。
 - **工作負載作業：**
   - 最大一筆的每一工作負載作業投資。
   - 最高程度的復原能力。
@@ -38,9 +42,6 @@ ms.locfileid: "80426865"
   - 復原能力的改善會影響所有使用已定義平台的工作負載。
   - 建議以 20% 的最重要平台為目標。
   - 通常保留給中度重要性到高度重要性的工作負載。
-- **增強的管理基準：**
-  - 相對最低的作業投資。
-  - 可稍微改善使用其他雲端原生作業工具和流程的商務承諾。
 
 工作負載作業和平台作業都必須變更設計和架構方面的原則。 這些變更需要不少時間，而且可能會導致營運費用增加。 為了減少需要這類投資的工作負載數目，增強的管理基準可提供足夠的商務承諾改善。
 
@@ -48,12 +49,13 @@ ms.locfileid: "80426865"
 
 | 專業領域  | Process  | 工具 | 潛在影響 | 深入了解 |
 |---|---|---|---|---|
-|清查和可見性|服務變更追蹤|Azure Resource Graph|若能更加深入地了解 Azure 服務的變更，可能會有助於更快地偵測到負面影響或更快速地補救|[Azure Resource Graph 的概觀](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
-|清查和可見性|IT 服務管理 (ITSM) 整合|IT 服務管理連接器|自動化的 ITSM 連線能更快產生認知。|[IT 服務管理連接器 (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
-|作業合規性|作業自動化|Azure 自動化|將作業合規性自動化，以更快、更精確地回應變更。|請參閱下列各節|
-|作業合規性|多重雲端作業|Azure 自動化 Hybrid Runbook Worker|將跨越多個雲端的作業自動化。|[混合式 Runbook 背景工作概觀](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
-|作業合規性|來賓自動化| 期望狀態設定 (DSC)|透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。|[DSC 概觀](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)|
-|保護和復原|安全性缺口通知|Azure 資訊安全中心|擴大保護範圍，納入安全性缺口復原觸發程序。|請參閱下列各節|
+| 清查和可見性 | 服務變更追蹤 | Azure Resource Graph | 若能更加深入地了解 Azure 服務的變更，可能會有助於更快地偵測到負面影響或更快速地補救 | [Azure Resource Graph 的概觀](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
+| 清查和可見性 | IT 服務管理 (ITSM) 整合 | IT 服務管理連接器 | 自動化的 ITSM 連線能更快產生認知。 | [IT 服務管理連接器 (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| 作業合規性 | 作業自動化 | Azure 自動化 | 將作業合規性自動化，以更快、更精確地回應變更。 | 請參閱下列各節 |
+| 作業合規性 | 效能自動化 | Azure 自動化 | 透過效能預期自動執行作業合規性，以解決資源特有的調整或大小調整常見問題。 | 請參閱下列各節 |
+| 作業合規性 | 多重雲端作業 | Azure 自動化 Hybrid Runbook Worker | 將跨越多個雲端的作業自動化。 | [混合式 Runbook 背景工作概觀](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
+| 作業合規性 | 來賓自動化 |  期望狀態設定 (DSC) | 透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。 | [DSC 概觀](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| 保護和復原 | 安全性缺口通知 | Azure 資訊安全中心 | 擴大保護範圍，納入安全性缺口復原觸發程序。 | 請參閱下列各節 |
 
 ::: zone target="docs"
 
@@ -76,7 +78,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 若要建立或管理 Runbook：
 
-1. 移至 [Azure 自動化](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
+1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
 1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
 1. 移至 [程序自動化]  。
 1. 有了這個選項，您就可以建立或管理 Runbook、排程和其他自動化補救功能。

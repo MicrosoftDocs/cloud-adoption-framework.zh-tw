@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c8bc1a9dd0c475a72db73ad032dabd1ff83f476
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997265"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219847"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
-安全性基準是[雲端採用架構治理模型](../governance-disciplines.md)中的[五個雲端治理專業領域](../index.md)之一。 安全性是任何 IT 部署的元件，而雲端本身有獨特的安全性問題。 許多企業都必須遵循法規需求，這些需求使得考量雲端轉換時保護敏感性資料成為組織的當務之急。 識別雲端環境潛在安全威脅並建立解決這些威脅的流程和程序，應該是任何 IT 安全性或網路安全性小組的首要任務。 隨著這些需求逐漸具體明朗，安全性基準專業領域可確保技術需求和安全性限制一致套用至雲端環境。
+安全性基準是[雲端採用架構治理模型](../index.md)中的[五個雲端治理專業領域](../governance-disciplines.md)之一。 安全性是任何 IT 部署的元件，而雲端本身有獨特的安全性問題。 許多企業都必須遵循法規需求，這些需求使得考量雲端轉換時保護敏感性資料成為組織的當務之急。 識別雲端環境潛在安全威脅並建立解決這些威脅的流程和程序，應該是任何 IT 安全性或網路安全性小組的首要任務。 隨著這些需求逐漸具體明朗，安全性基準專業領域可確保技術需求和安全性限制一致套用至雲端環境。
 
 > [!NOTE]
-> 安全性基準治理不會取代可讓貴組織保護雲端部署的資源所用的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別與安全性相關的商務風險，且為負責安全性基礎結構的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
+> 安全性基準專業領域不會取代可讓組織保護雲端部署的資源所用的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別與安全性相關的商務風險，且為負責安全性基礎結構的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
 本文概述開發安全性基準專業領域作為雲端治理策略一部分的方法。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的 IT 和安全性小組相關成員進行互動與討論，特別是負責實作網路、加密和身分識別服務的技術主管。
 
@@ -36,7 +36,7 @@ ms.locfileid: "80997265"
 
 ## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
-下列六個步驟提供在開發安全性基準治理時所要考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論以及與組織內受影響的業務和 IT 和安全性小組討論，藉以建立管理安全性相關風險所需的原則和程序。
+下列六個步驟提供在開發安全性基準專業領域時所應考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論以及與組織內受影響的業務和 IT 和安全性小組討論，藉以建立管理安全性相關風險所需的原則和程序。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ ms.locfileid: "80997265"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>安全性基準範本</h3>
-                        <p class="x-hidden-focus">下載此範本以便記載安全性基準專業領域</p>
+                        <h3>安全性基準專業領域範本</h3>
+                        <p class="x-hidden-focus">下載此範本以記錄安全性基準專業領域。</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -70,7 +71,7 @@ ms.locfileid: "80997265"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>商務風險</h3>
+                        <h3>業務風險</h3>
                         <p class="x-hidden-focus">了解通常與安全性基準專業領域建立關聯的動機與風險。</p>
                     </div>
                 </div>
@@ -128,7 +129,7 @@ ms.locfileid: "80997265"
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>成熟度</h3>
-                        <p class="x-hidden-focus">使雲端管理成熟度和雲端採用階段保持一致。</p>
+                        <p class="x-hidden-focus">使雲端管理成熟度與雲端採用階段保持一致。</p>
                     </div>
                 </div>
             </div>

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4ca434bd7812c3752c7905286d70add6353b9d81
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 257b915e579136e64ae88262a3debdb0b2dbb527
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396213"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220170"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -24,7 +24,7 @@ ms.locfileid: "81396213"
 此概觀會根據最佳做法來定義治理的最簡可行產品 (MVP) 以作為快速起點。 它也提供一些治理改進方法的連結，這些改進會隨著新業務或技術風險的出現而進一步新增更多最佳做法。
 
 > [!WARNING]
-> 這個 MVP 是基於一組假設的基準起點。 即便是這一系列最佳做法，也是以獨特的業務風險和風險承受度推動的公司原則。 若要查看您是否適用這些假設，請閱讀本文後面[較長的敘述](./narrative.md)。
+> 這個 MVP 是基於一組假設的基準起點。 即便是這一系列最基本的最佳做法，也是以獨特的業務風險和風險承受度推動的公司原則為基礎。 若要查看您是否適用這些假設，請閱讀本文後面[較長的敘述](./narrative.md)。
 
 ### <a name="governance-best-practices"></a>治理最佳做法
 
@@ -44,7 +44,7 @@ ms.locfileid: "81396213"
 
 1. 在此群組階層的每個層級套用[一致的命名法](../../../ready/azure-best-practices/naming-and-tagging.md)。
 
-1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需有關資源群組最佳用法的詳細資訊，[請參閱這裡](../../../decision-guides/resource-consistency/index.md)。
+1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需資源群組最佳用法的詳細資訊，[請參閱這裡](../../../decision-guides/resource-consistency/index.md)。
 
 1. [區域選取](../../../migrate/azure-best-practices/multiple-regions.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "81396213"
 
 ## <a name="what-does-this-guidance-provide"></a>本指南提供哪些內容？
 
-在 MVP 中，從[部署加速](../../deployment-acceleration/index.md)專業領域建立做法和工具是為了快速套用公司原則。 特別是，MVP 會使用 Azure 藍圖、Azure 原則以及 Azure 管理群組套用幾個基本的公司原則，如這個虛構公司的敘述中所定義。 那些公司原則會使用 Azure Resource Manager 範本與 Azure 原則來套用，以建立小型的身分識別和安全性基準。
+在 MVP 中，從[部署加速](../../deployment-acceleration/index.md)專業領域建立做法和工具，是為了快速套用公司原則。 特別是，MVP 會使用 Azure 藍圖、Azure 原則以及 Azure 管理群組套用幾個基本的公司原則，如這個虛構公司的敘述中所定義。 那些公司原則會使用 Azure Resource Manager 範本與 Azure 原則來套用，以建立小型的身分識別和安全性基準。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
@@ -77,8 +77,8 @@ ms.locfileid: "81396213"
 
 經過一段時間之後，這個治理 MVP 將用於累加式改進治理做法。 隨著採用率提高，業務風險也會增加。 雲端採用架構治理模型內的各種專業領域，將會持續調整以管理這些風險。 本系列的後續文章將討論影響虛構公司的公司原則變更。 這些變更會跨四個專業領域進行：
 
-- 身分識別基準 (隨著移轉相依性在敘述中而改變)。
-- 成本管理 (採用擴大規模時)
+- 身分識別基準 (敘述中的移轉相依性變更時)。
+- 成本管理 (採用擴大規模時)。
 - 安全性基準 (部署受保護的資料時)。
 - 資源一致性 (IT 操作開始支援任務關鍵性工作負載時)。
 

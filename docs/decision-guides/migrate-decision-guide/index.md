@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 5ce05284a59062b017adae6112bebdd578e29e44
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc24e13e9ae4a54e16d65696fbd8205dc643348f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120377"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224352"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 
@@ -27,7 +27,7 @@ ms.locfileid: "81120377"
 回答下列問題可讓您根據上述樹狀結構制訂決策。
 
 - **移轉期間應用程式平台的現代化是否是時間、精力和預算的明智投資？** 諸如 Azure App Service 或 Azure Functions 之類的 PaaS 技術，可以提高部署彈性並降低管理虛擬機器以裝載應用程式的複雜度。 不過，應用程式可能需要重構才能利用這些雲端原生功能，這可能會為移轉工作增加大量時間和成本。 如果您的應用程式可以透過最少的修改移轉至 PaaS 技術，那麼它可能是現代化的良好候選項目。 如果需要進行大量重構，使用以 IaaS 為基礎的虛擬機器進行移轉可能是較好的選擇。
-- **移轉期間資料平台的現代化是否是時間、精力和預算的明智投資？** 與應用程式移轉一樣，Azure PaaS 受控儲存體選項 (例如 Azure SQL Database、Cosmos DB 和 Azure 儲存體) 提供了重要的管理和彈性優勢，但移轉到這些服務可能需要重構現有的資料和使用該資料的應用程式。 資料平台所需的重構通常比應用程式平台來得少。 因此，即使應用程式平台維持不變，對資料平台進行現代化也是很常見的。 如果您的資料可以透過最少的變更移轉至受控資料服務，那麼它就是現代化的理想選擇。 需要花費大量時間或成本來重構以利用這些 PaaS 服務的資料，可能更適合使用 IaaS 型虛擬機器進行移轉，以使其更符合現有的裝載功能。
+- **移轉期間資料平台的現代化是否是時間、精力和預算的明智投資？** 與應用程式移轉一樣，Azure PaaS 受控儲存體選項 (例如 Azure SQL Database、Azure Cosmos DB 和 Azure 儲存體) 提供了重要的管理和彈性優勢，但移轉到這些服務可能需要重構現有的資料和使用該資料的應用程式。 資料平台所需的重構通常比應用程式平台來得少。 因此，即使應用程式平台維持不變，對資料平台進行現代化也是很常見的。 如果您的資料可以透過最少的變更移轉至受控資料服務，那麼它就是現代化的理想選擇。 需要花費大量時間或成本來重構以利用這些 PaaS 服務的資料，可能更適合使用 IaaS 型虛擬機器進行移轉，以使其更符合現有的裝載功能。
 - **您的應用程式目前是在專用的虛擬機器上執行，還是與其他應用程式共用裝載？** 與在共用的伺服器上執行的應用程式相比，在專用的虛擬機器上執行的應用程式可能會更輕鬆地移轉到 PaaS 裝載選項。
 - **您的資料移轉是否會超過網路頻寬？** 內部部署資料來源與 Azure 之間的網路容量可能是資料移轉的瓶頸。 如果您需要傳送的資料面臨阻礙有效率或即時移轉的頻寬限制，您可能需要查看替代或離線的轉移機制。 Cloud Adoption Framework [有關移轉複寫的文章](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)討論了複寫限制如何影響移轉工作。 作為移轉評估的一部分，請諮詢您的 IT 小組，以確認您的本機和 WAN 頻寬是否能夠處理您的移轉需求。 另請參閱[移轉期間處理超過網路容量的儲存體需求時的移轉案例](../../migrate/azure-best-practices/network-capacity-exceeded.md#suggested-prerequisites)。
 - **您的應用程式是否使用現有的 DevOps 管線？** 在許多情況下，可以輕鬆地重構 Azure 管線，以將應用程式部署到雲端式裝載環境。

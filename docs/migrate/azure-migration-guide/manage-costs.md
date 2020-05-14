@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99f4b2ec0a9a92c9f919a005667558ebc2a036c6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0ce3b5ee28983851e97c10360cf6707b4e3c17d1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998021"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214509"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -44,7 +44,7 @@ ms.locfileid: "80998021"
 
 針對手動成本計算，可使用兩個便利的計算機，根據要移轉的工作負載架構來提供快速成本預估。
 
-- Azure [定價計算機](https://azure.microsoft.com/pricing/calculator)會根據手動輸入的 Azure 產品提供成本預估。
+- Azure [定價計算機](https://azure.microsoft.com/pricing/calculator)會針對您所選取的 Azure 產品提供成本預估。
 - 有時候，決策需要比較未來的雲端成本和目前的內部部署成本。 [擁有權總成本 (TCO) 計算機](https://azure.microsoft.com/pricing/tco/calculator)可提供此類比較。
 
 這些手動成本計算機可單獨使用，以預測可能的支出和節省數額。 其也可以與 Azure Migrate 的成本預測工具搭配使用，以根據替代架構或效能限制適當調整成本期望。
@@ -67,7 +67,8 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每�
 產生的預估值 (如下圖所示) 可識別計算和儲存體的每月成本，這通常是雲端成本中最大的部分。
 
 ![成本詳細資料檢視](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*圖 1 - 此影像顯示 Azure Migrate 中評估的成本詳細資料檢視。*
+
+_圖 1：此影像顯示 Azure Migrate 中評估的成本詳細資料檢視。_
 
 ## <a name="additional-resources"></a>其他資源
 
@@ -92,14 +93,14 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算**每�
 
 Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時間內的成本和支出趨勢的詳細檢視。 對於大型或複雜的移轉，此檢視可以提供所需的深入解析，以進行廣泛的成本管理決策。
 
-必要條件：此索引標籤的其餘部分會假設讀者已在完成 Azure 設定指南時完成了 Azure 成本管理的設定。 如需設定 Azure 成本管理的詳細資訊，請參閱 [Azure 設定指南中的這篇文章](../../ready/azure-setup-guide/manage-costs.md)。 填入資料之後，請依照接下來的幾個步驟，根據收集到的資料來預估每月成本。
+必要條件：此索引標籤的其餘部分會假設讀者已在完成 Azure 設定指南時完成了 Azure 成本管理的設定。 如需關於設定 Azure 成本管理的詳細資訊，請參閱 Azure 設定指南中的[管理 Azure 資源的成本和計費](../../ready/azure-setup-guide/manage-costs.md)。 填入資料之後，請依照接下來的幾個步驟，根據收集到的資料來預估每月成本。
 
 下列步驟將為您的訂用帳戶載入 Azure 成本管理的成本分析資料：
 
 1. 瀏覽至入口網站中的 [成本管理 + 帳單]  。 如果在左窗格中沒有看到 [成本管理 + 計費]，請選取 [所有服務]  。 在服務功能表窗格中，於 [監視與管理]  底下，選取 [成本管理 + 計費]  。
 2. 在 [成本管理 + 帳單] 中，選取左側瀏覽窗格中的 [成本管理]  ，以開始分析雲端成本並將成本最佳化。
 3. 在 [成本管理] 中，選取 [成本分析]  。
-    a. 使用 [範圍]  框，以切換至成本分析中的不同範圍。
+    1. 使用 [範圍]  框，以切換至成本分析中的不同範圍。
 
 此分析可讓您檢閱總成本、預算 (如果有的話)，以及累計成本。 每項計算都可依服務、資源和時段來查看。 最重要的是，您可以透過標記來分析成本。 適當地命名和標記資產 (基礎結構、應用程式和資料)，是所有健全的控管和成本管理程序的基本起點。 適當的標記可提升成本管理效能，並且更清楚地顯示效能和成本最佳化的影響。
 
@@ -131,7 +132,7 @@ Azure 成本管理可以提供更全面的消費習慣檢視，包括一段時�
 
 ## <a name="azure-reservations"></a>Azure 保留
 
-[Azure 保留](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations)可讓您預付一年或三年期的虛擬機器或 SQL Database 計算容量。 預付費用可讓您在所使用的資源上取得折扣。 Azure 保留可以大幅降低虛擬機器或 SQL Database 的計算成本，透過預付一年或三年期的承諾用量費用，即可節省高達隨用隨付價格的 72%。 保留會提供計費折扣，且不會影響虛擬機器或 SQL Database 的執行階段狀態。
+[Azure 保留](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations)可讓您預付一年或三年期的虛擬機器或 SQL Database 計算容量。 預付費用可讓您在所使用的資源上取得折扣。 保留可大幅降低虛擬機器或 SQL Database 的計算成本，透過預付一年或三年期的承諾用量費用，可節省高達隨用隨付價格的 72%。 保留會提供計費折扣，且不會影響虛擬機器或 SQL Database 的執行階段狀態。
 
 ## <a name="use-azure-hybrid-benefit"></a>使用 Azure Hybrid Benefit
 

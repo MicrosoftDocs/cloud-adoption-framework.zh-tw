@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809019"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222261"
 ---
 ::: zone target="docs"
 
@@ -77,6 +77,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone target="chromeless"
 
+<!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
 ### <a name="action"></a>動作
@@ -87,7 +88,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 2. 選取 [建立 DevOps 專案]  。
 3. 選取 [執行階段、架構和服務]  。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

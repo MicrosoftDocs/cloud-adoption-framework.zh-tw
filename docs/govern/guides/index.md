@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995272"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214730"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -67,8 +67,11 @@ ms.locfileid: "80995272"
 
 若要開始治理旅程，請選擇下列兩個選項其中之一。 這些選項是依據綜合的客戶體驗。 標題會依據企業複雜度制定，以便於瀏覽。 不過，讀者的決定可能更加複雜。 下表概述了這兩個選項之間的差異。
 
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
 > [!WARNING]
-> 您可能需要更強固的治理起點。 在這種情況下，請考慮[下面](#azure-virtual-datacenter)所簡短描述的 [Azure 虛擬資料中心](#azure-virtual-datacenter)方法。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例所存在的既定選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
+> 您可能需要更強固的治理起點。 在這種情況下，請考慮[下面](#azure-virtual-datacenter)所簡短描述的 [Azure 虛擬資料中心](#azure-virtual-datacenter)方法。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 此方法也是有下列任何需要的複雜治理案例的預設選擇：廣泛的第三方合規性需求、深度網域專業知識或與成熟 IT 治理原則和合規性保持對應的需求。
 
 <!-- markdownlint-disable MD028 -->
 
@@ -96,8 +99,8 @@ ms.locfileid: "80995272"
 
 | State | 標準組織 | 複雜企業 |
 |---|---|---|
-| 成本管理 – 雲端帳戶處理 | 回報模型。 透過 IT 集中計費。 | 退款模型。 可透過 IT 採購來散發計費。 |
-| 安全性基準 – 受保護的資料 | 公司財務資料和 IP。 有限的客戶資料。 沒有協力廠商合規性需求。 | 客戶的財務和個人資料有多個集合。 可能必須考慮協力廠商合規性。 |
+| 成本管理 &mdash; 雲端帳戶處理 | 回報模型。 透過 IT 集中計費。 | 退款模型。 可透過 IT 採購來散發計費。 |
+| 安全性基準 &mdash; 受保護的資料 | 公司財務資料和 IP。 有限的客戶資料。 沒有協力廠商合規性需求。 | 客戶的財務和個人資料有多個集合。 可能必須考慮協力廠商合規性。 |
 
 ## <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
@@ -114,8 +117,8 @@ Azure 虛擬資料中心方法的目標是要在採用生命週期中及早解�
 雖然小一點的團隊也能受益於 Azure 虛擬資料中心所提供的模型和建議，但這種方法的設計目的是要對管理大型雲端環境的企業 IT 群組提供指導。 對於符合下列準則的組織，建議您在設計 Azure 型雲端基礎結構時，可以考慮參閱 Azure 虛擬資料中心的指引：
 
 - 貴企業受到法規合規性需求規範，而需要集中的監視和稽核功能。
-- 您需要維護一般原則和治理合規性，以及對核心服務的集中 IT 控制。
-- 您的行業依賴復雜的平台，需要復雜的控制項和深入網域的專業知識來管理平台。 這在金融、石油和天然氣或製造業的大型企業中最為常見。
+- 您需要維護一般原則和治理合規性，以及對核心服務的集中式 IT 控制。
+- 您的行業依賴復雜的平台，需要復雜的控制項和深入網域的專業知識來管理平台。 這在金融、製造業、石油和天然氣的大型企業中最為常見。
 - 現有的 IT 治理原則需要與現有功能更加緊密地保持對應，即使在早期階段採用期間也是如此。
 
 如需詳細資訊，請造訪雲端採用架構的 [Azure 虛擬資料中心](../../reference/vdc.md)一節。
