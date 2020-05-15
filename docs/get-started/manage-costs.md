@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 22956507d801163b2ee75f074f48bbd955546c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d14e37cad9d6d1e63200a9401cfaac2ca2e07655
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229609"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400701"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
 雲端治理的其中一個核心專業領域是成本管理。 成本管理的專業領域著重于建立預算、監視成本配置模式，以及實施控制措施，以改善 IT 組合中的雲端支出行為。 不過，企業成本優化牽涉到許多其他角色和函式，以將成本降至最低，並平衡規模、效能、安全性和可靠性的需求。 本文將各種支援功能對應到入門指南，協助您在每個相關的小組之間建立對齊方式。
@@ -131,7 +129,7 @@ ms.locfileid: "83229609"
 
 - [追蹤成本](../ready/azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)。 建立妥善管理的環境階層、提供正確的成本存取層級，並在每個登陸區域中使用額外的成本管理資源。
 - [優化您的雲端投資](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解優化投資的最佳做法。
-- [建立和管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解建立和管理預算的最佳做法。
+- [建立及管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解建立和管理預算的最佳做法。
 - [從建議中將成本優化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解使用可將成本優化之建議的最佳作法。
 - [監視使用量和費用](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解在登陸區域中監視使用量和費用的最佳做法。
 

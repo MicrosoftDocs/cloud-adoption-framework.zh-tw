@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 17951fef2a93d4c592cc620e4f8aa14ba0c11c58
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc2c490850c47dfa92ec91d5133168b982b5c719
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217348"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398473"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理中的業務衝擊
 
@@ -52,7 +52,7 @@ ms.locfileid: "83217348"
 
 ## <a name="use-the-template"></a>使用範本
 
-如果您使用[Operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，請考慮執行下列動作：
+如果您使用[Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，請考慮執行下列動作：
 
 - 每個企業都應該更新_範例_中的每個工作負載，或使用每個工作負載的*時間/值影響*來_清除範本_。 根據預設，*時間/值影響*代表與工作負載中斷相關聯的每小時預估損失。
 

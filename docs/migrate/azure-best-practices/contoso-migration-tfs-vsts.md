@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ba845420954225e69fb2c4b8ffcffa8a42fec7f7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223723"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401151"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -226,7 +226,7 @@ Contoso 管理員會對 ContosoDev 集合資料庫執行 TFS 移轉工具而加�
 1. **中斷集合的連結。** 當集合已連結且連線時，集合的身分識別資料會位於 TFS 伺服器設定資料庫中。 當集合從 TFS 伺服器中斷連結時，它會取得該身分識別資料的複本，並將它封裝於集合以進行傳輸。 若沒有這項資料，則無法執行匯入的身分識別部分。 建議您在匯入完成之前，將集合保持中斷連結狀態，因為沒有任何方法可匯入匯入期間發生的變更。
 2. **產生備份。** 移轉程序的下一個步驟，是產生可匯入 Azure DevOps Services 中的備份。 資料層應用程式元件封裝 (DACPAC) 是一項 SQL Server 功能，可讓資料庫變更封裝成單一檔案，並部署至其他 SQL 執行個體。 它也可以直接還原至 Azure DevOps Services，並做為將集合資料放入雲端的封裝方法。 Contoso 會使用 SqlPackage.exe 工具來產生 DACPAC。 此工具隨附於 SQL Server Data Tools 中。
 3. **上傳至儲存體。** 建立 DACPAC 之後，他們將它上傳到 Azure 儲存體。 上傳之後，他們會取得共用存取簽章 (SAS)，以允許 TFS 移轉工具存取儲存體。
-4. **填寫匯入。** 接著，Contoso 可以在匯入檔案中填寫遺漏的欄位，包括 DACPAC 設定。 首先，他們會指定想要執行**試**執行匯入，以檢查所有專案在完整遷移之前是否正常運作。
+4. **填寫匯入。** 接著，Contoso 可以在匯入檔案中填寫遺漏的欄位，包括 DACPAC 設定。 首先，他們會指定想要執行_試_執行匯入，以檢查所有專案在完整遷移之前是否正常運作。
 5. **執行試執行匯入。** 試執行匯入協助測試集合遷移。 試執行的生命週期有限，因此它們會在生產環境遷移執行之前遭到刪除。 試執行會在一段時間後自動刪除。 在匯入完成後收到成功電子郵件中，會包含何時將刪除試執行的相關附註。 請記下該時間並據以進行規劃。
 6. **完成生產環境移轉。** 完成執行的遷移之後，Contoso 管理員會藉由更新匯**入 json**檔案進行最後的遷移，然後再次執行匯入。
 
@@ -276,15 +276,15 @@ Contoso 管理員會產生 DACPAC，如下所示：
 
     `SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory`
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. 此命令執行後，會出現下列訊息。
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. 他們會驗證 DACPAC 檔案的屬性。
 
-    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![備份](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>將檔案更新至儲存體
 
@@ -396,40 +396,40 @@ Contoso 管理員一開始先執行一項試執行的遷移，以確保一切都
 1. 在 Azure DevOps Services 入口網站中，他們會刪除試執行組織。
 2. 他們更新 import.json 檔案，以將 **ImportType** 設定為 **ProductionRun**。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full1.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full1.png)
 
 3. 他們按照試執行的步驟開始移轉：`TfsMigrator import /importFile:C:\TFSMigrator\import.json`。
 4. 此時會出現確認移轉的訊息，並警告資料可保留在安全的暫存區域中，最多七天。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full2.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full2.png)
 
 5. 在 Azure AD 的 [登入] 中，他們指定 Contoso 管理員登入。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full3.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full3.png)
 
 6. 訊息顯示匯入的相關資訊。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full4.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full4.png)
 
 7. 約 15 分鐘後，他們瀏覽至 URL，並看到下列資訊：
 
-    ![生產](./media/contoso-migration-tfs-vsts/full5.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full5.png)
 
 8. 在遷移完成後，Contoso 開發組長會登入 Azure DevOps Services 以確認遷移是否正常運作。 登入之後，開發組長可以看到專案已遷移。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full6.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full6.png)
 
 9. 開發組長會開啟其中一個專案，並開啟 [指派給我] 的**工作專案**  >  ** **。 這表示工作項目資料已連同身分識別一起遷移。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full7.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full7.png)
 
 10. 開發主管會檢查其他工作項目資料加以確認。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full8.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full8.png)
 
 11. 開發主管也會檢查其他專案和程式碼，以確認原始程式碼和歷程記錄皆已遷移。
 
-    ![生產](./media/contoso-migration-tfs-vsts/full9.png)
+    ![Production](./media/contoso-migration-tfs-vsts/full9.png)
 
 ### <a name="move-source-control-from-tfvc-to-git"></a>將原始檔控制從 TFVC 移轉至 GIT
 

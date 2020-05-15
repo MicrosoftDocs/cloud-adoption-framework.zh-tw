@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 87376016c2d775d9aa546036504dfdf8c3ec9ba2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219779"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398739"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
@@ -28,7 +28,7 @@ ms.locfileid: "83219779"
 
 當您遷移並現代化內部部署資料時，最常見的 Azure 工具選擇是[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 這項服務屬於更廣泛的[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)工具鏈。 針對現有的 SQL Server 資料來源， [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)可以協助您評估和遷移少量的資料結構。
 
-若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源對目標資料庫使用[資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 範例包括 Oracle to 于 postgresql 和 MongoDB to Cosmos DB。 採用小組更常使用合作夥伴工具或自訂腳本，根據基礎結構即服務（IaaS）遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
+若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源對目標資料庫使用[資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 範例包括 Oracle to 于 postgresql 和 MongoDB to Azure Cosmos DB。 採用小組更常使用合作夥伴工具或自訂腳本，根據基礎結構即服務（IaaS）遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
 
 ## <a name="considerations-and-guidance"></a>考慮和指引
 
@@ -46,7 +46,7 @@ ms.locfileid: "83219779"
 
 我們建議您決定可接受的商務停機時間，並測試離線遷移。 您會這麼做，以檢查還原時間是否符合可接受的停機時間。 如果無法接受還原時間，請執行線上遷移。
 
-| 來源  | 目標  | 工具  | 遷移類型 | 指導方針 |
+| 來源  | 目標  | 工具  | 遷移類型 | 指引 |
 |---|---|---|---|---|
 | SQL Server | Azure SQL Database | Database Migration Service | 離線 | [教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL Database | Database Migration Service | 線上 | [教學課程](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |

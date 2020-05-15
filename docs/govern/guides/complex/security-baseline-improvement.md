@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ece40e0ce2aeaa32eb51d8511d743f674200ea6e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219949"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400508"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -81,7 +81,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 6. 所有包含受保護資料的子網路都無法透過公用網際網路或跨資料中心直接存取。 這些子網的存取權必須透過中繼子網進行路由。 這些子網的所有存取都必須經過防火牆解決方案，才能執行封包掃描和封鎖功能。
 7. 治理工具必須稽核並強制執行安全性管理小組所定義的網路設定需求。
 8. 治理工具必須限制只對已核准的映像進行 VM 部署。
-9. 若有可能，節點組態管理應該將原則需求套用到任何客體作業系統的設定。 節點設定管理應遵守群組原則物件（gpo）的現有投資，以進行資源設定。
+9. 若有可能，節點組態管理應該將原則需求套用到任何客體作業系統的設定。 節點設定管理應遵循群組原則物件（GPO）的現有投資，以進行資源設定。
 10. 治理工具將稽核在所有已部署的資產上啟用自動更新。 如果可能，將會強制執行自動更新。 若未透過工具強制執行，則必須與作業管理小組一起檢閱節點層級的違規，並根據操作原則進行修復。 不會自動更新之資產必須包含在 IT 部門所負責的處理程序中。
 11. 為任何任務關鍵性應用程式或受保護的資料建立新的訂用帳戶或管理群組，需要從雲端治理小組審查，以確保適當的藍圖指派。
 12. 最低權限的存取模型將會套用到包含任務關鍵性應用程式或受保護資料的所有訂用帳戶。
@@ -120,9 +120,9 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     3. 針對管理群組階層中的每個區域，建立名為 `corporate IT subscription` 的訂用帳戶。
     4. 將 `corporate-it-subscription-blueprint` 藍圖套用至每個區域執行個體。
     5. 這將在每個區域中，為每個營業單位建立中樞。 注意：可進一步節省成本，但在每個區域的業務單位間共用中樞。
-6. 透過 desired state configuration （dsc）整合群組原則物件（gpo）：
-    1. 將 gpo 轉換成 dsc 在 &mdash; GitHub 中的[Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement)可以加速這項工作。 請務必將 dsc 與 Resource Manager 範本平行儲存在存放庫中。
-    2. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 dsc 套用至管理群組內支援的訂用帳戶中部署的 Vm。
+6. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
+    1. 將 GPO 轉換成 DSC 在 &mdash; GitHub 中的[Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement)可以加速這項工作。 請務必將 DSC 與 Resource Manager 範本平行儲存在存放庫中。
+    2. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
     3. 目前的藍圖的目標是要啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
 將**其他治理套用到雲端採用訂用帳戶（輪輻）：** 根據，針對應用 `corporate IT subscription` 程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
@@ -134,7 +134,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     2. 該範本可用來做為從先前的治理反復專案修改 DMZ 範本的指南。
     3. 我們現在會將虛擬網路對等互連新增至先前透過 VPN 連線到本機邊緣裝置的 DMZ 虛擬網路。
     4. 您也應該從這個範本移除 VPN，以確保不會透過公司的 IT 訂用帳戶和防火牆解決方案，直接將流量路由傳送至內部部署資料中心。 您也可以在 ExpressRoute 電路中斷的情況下，將此 VPN 設定為容錯移轉線路。
-    5. Azure 自動化將 dsc 套用至託管的 Vm，則需要額外的[網路](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)設定。
+    5. Azure 自動化需要額外的[網路](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)設定，才能將 DSC 套用至託管的 vm。
 2. 修改網路安全性群組。 封鎖網路安全性群組中的所有公用**和**直接內部部署流量。 唯一的輸入流量應通過公司 IT 訂用帳戶中的虛擬網路對等互連。
     1. 在先前的反復專案中，已建立網路安全性群組來封鎖所有公用流量，並允許清單所有的內部流量。 現在，我們想要將此網路安全性群組轉成一個位。
     2. 新的網路安全性群組設定應該會封鎖所有公用流量，以及來自本機資料中心的所有流量。

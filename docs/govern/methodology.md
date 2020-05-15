@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218385"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399601"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>管控雲端的方法
 
@@ -25,7 +25,7 @@ ms.locfileid: "83218385"
 
 沒有目標目的地的旅程只是閒晃。 請務必先建立最終狀態的粗略願景，再採取第一個步驟。 下列資訊圖提供最終狀態的參考架構。 這不是您的起點，但它會顯示您可能的目的地。
 
-![雲端採用架構治理模型資訊圖](../_images/operational-transformation-govern-highres.png)
+![雲端採用架構治理模型資訊圖](../_images/operational-transformation-govern-large.png)
 
 雲端採用架構治理模型會識別旅程期間的主要重點區域。 每個區域都關係到公司在採用更多雲端服務時必須面對的不同風險類型。 在此架構中，治理指南會識別雲端治理小組的必要動作。 過程中，會進一步說明雲端採用架構治理模型的每個準則。 廣義來說，其中包含：
 

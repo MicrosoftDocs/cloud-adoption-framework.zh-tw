@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216583"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400773"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務對齊
 
@@ -33,7 +33,7 @@ ms.locfileid: "83216583"
 
 ## <a name="operations-management-workbook"></a>Operations management 活頁簿
 
-為了協助捕捉此交談針對詞彙對齊而產生的決策，我們的 GitHub 網站上提供了[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。 此活頁簿不會執行 SLA 或成本計算。 它只是用來協助捕捉這類量值，並預測遺失避免的成果。
+為了協助捕捉此交談針對詞彙對齊而產生的決策，我們的 GitHub 網站上提供了[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。 此活頁簿不會執行 SLA 或成本計算。 它只是用來協助捕捉這類量值，並預測遺失避免的成果。
 
 或者，如果解決方案已部署至雲端，則可以直接在 Azure 中標記這些相同的工作負載和相關聯的資產。
 

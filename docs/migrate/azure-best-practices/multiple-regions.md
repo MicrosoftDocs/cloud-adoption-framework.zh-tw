@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217178"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400824"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -43,9 +43,9 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 想要有健全的雲端部署，就需要有經過深思熟慮、已將 Azure 區域納入考量的網路。 在考慮過上述要作為部署目的地區域的特性之後，就必須部署網路。 雖然關於網路的詳盡討論不在本文涵蓋範圍內，但您必須考慮一些事項：
 
-- Azure 區域會成對部署。 如果某個區域發生嚴重失敗，則會將相同地緣政治界限內的另一個區域指定為其配對的區域。 請考慮將部署到配對區域作為主要和次要復原策略。 Azure 巴西是一個值得注意的例外狀況，其配對的區域是美國中南部。 如需詳細資訊，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
+- Azure 區域會成對部署。 發生嚴重的區域失敗時，會將相同地緣政治界限內的另一個區域指定為其配對的區域。 請考慮將部署到配對的區域，做為主要和次要復原策略。 巴西南部是一個值得注意的例外狀況，其配對的區域為美國中南部。 如需詳細資訊，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
 
-  - Azure 儲存體支援[異地備援儲存體 (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)，這表示您的資料會有三個複本儲存在主要區域內，且會有另外三個複本儲存在配對區域內。 您無法變更 GRS 的儲存體配對。
+  - Azure 儲存體支援[異地冗余儲存體（GRS）](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) ，這表示您的資料有三個複本會儲存在您的主要區域中，而三個額外的複本則會儲存在配對的區域中。 您無法變更 GRS 的儲存體配對。
   - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
   - 如果您不打算使用 GRS 來支援區域復原需求，則建議您「不要」__ 使用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
   > [!WARNING]
@@ -57,7 +57,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 - Azure 內的許多 PaaS 服務支援[服務端點](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)或[私人連結](https://docs.microsoft.com/azure/private-link/private-link-overview)。 在考慮區域復原、移轉和治理時，這兩種解決方案都會大幅影響您的網路考量。
 
-- 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 和 Cosmos DB 都可讓您輕鬆地複寫到 x__ 個額外區域。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中使用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
+- 許多 PaaS 服務依賴自己的區域復原解決方案。 例如，Azure SQL Database 和 Azure Cosmos DB 都可讓您輕鬆地複寫至_x_個額外區域。 某些服務則不會有任何區域相依性，例如 Azure DNS。 在考慮要在採用程序中使用哪些服務時，請務必清楚了解每個 Azure 服務可能需要的容錯移轉功能和復原步驟。
 
 - 除了部署到多個區域以支援災害復原外，許多組織還會選擇以主動-主動模式進行部署，因此不需要容錯移轉功能。 這有額外的好處，那就是提供全球性負載平衡，並額外提升容錯和網路效能。 若要利用此模式，應用程式必須支援在多個區域中執行主動-主動模式。
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6052e119cc2bf2ce078bfdc3df6613ff665e503f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 845574b9b7e045869561f43745a23ec104893d1f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229362"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400191"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的一致效能
 
 我們要如何確保工作負載組合的效能良好？ 本指南可協助您建立進程，以維護整個企業的效能。 這裡所述的步驟可協助作業小組確保所有工作負載的一致效能預期。 效能也取決於其他角色和功能。 本文會對應這些支援函數，以協助您在每個相關的小組之間建立對齊方式。
@@ -32,7 +30,7 @@ ms.locfileid: "83229362"
 
 - 增強管理基準，以包含與效能預期偏差相關的自動化補救工作。
 - 當需要工作負載特定的資料模式或架構變更以符合效能需求時，工作負載特有的作業可以提供更高的效能控制。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中 IT 組合的作業決策，著重于在 [基準] 索引標籤的 [操作相容性] 區段中包含效能自動化決策。
+- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中 IT 組合的作業決策，著重于在 [基準] 索引標籤的 [操作相容性] 區段中包含效能自動化決策。
 
 **支援交付後完成的指引：**
 
@@ -147,7 +145,7 @@ ms.locfileid: "83229362"
 
 - 使用資源一致性原則來測試生產部署的作業準備就緒。
 - 驗證遵循資源一致性設計指引和作業需求。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
+- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
 
 **支援交付後完成的指引：**
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/20/2020
-ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e11e280e0faa12d7bbb6ee1a951e9eb1546cdab
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215614"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400975"
 ---
 # <a name="cloud-operations-functions"></a>雲端作業功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "83215614"
 - [業務成果](../strategy/business-outcomes/index.md)
 - [財務模型](../strategy/financial-models.md)
 - [雲端採用的動機](../strategy/motivations.md)
-- [商務風險](../govern/policy-compliance/risk-tolerance.md)
+- [業務風險](../govern/policy-compliance/risk-tolerance.md)
 - [數位資產的合理化](../digital-estate/index.md)
 
 ## <a name="minimum-scope"></a>最小範圍
@@ -74,7 +74,7 @@ ms.locfileid: "83215614"
 
 深入了解：
 
-- [卓越雲端中心](../organize/cloud-center-of-excellence.md)的功能
+- [卓越功能的雲端中心](../organize/cloud-center-of-excellence.md)。
 - [組織反模式：接收器和 fiefdoms](../organize/fiefdoms-silos.md)。
 
 瞭解如何藉由開發跨小組的矩陣，識別負責、參與、諮詢和通知（RACI）的合作物件，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。

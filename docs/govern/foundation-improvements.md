@@ -4,17 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解如何以累
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 41535db6452be0b8efea9a91329169326c444ab0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 456e9105cd4d8425681664bc9cbcb74d54f7f58f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220204"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400568"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>改善您的初始雲端治理基礎
 
@@ -33,8 +32,8 @@ ms.locfileid: "83220204"
 | 雲端中的任務關鍵性應用程式 | [專業領域改進](./guides/standard/resource-consistency-improvement.md) | [專業領域改進](./guides/complex/resource-consistency-improvement.md) |
 | 雲端成本管理 | [專業領域改進](./guides/standard/cost-management-improvement.md) | [專業領域改進](./guides/complex/cost-management-improvement.md) |
 | 多重雲端 | [專業領域改進](./guides/standard/multicloud-improvement.md) | [專業領域改進](./guides/complex/multicloud-improvement.md) |
-| 複雜/舊版身分識別管理 | 不適用 | [專業領域改進](./guides/complex/identity-baseline-improvement.md) |
-| 多層控管 | 不適用 | [專業領域改進](./guides/complex/multiple-layers-of-governance.md) |
+| 複雜/舊版身分識別管理 | N/A | [專業領域改進](./guides/complex/identity-baseline-improvement.md) |
+| 多層控管 | N/A | [專業領域改進](./guides/complex/multiple-layers-of-governance.md) |
 
 ## <a name="next-steps"></a>後續步驟
 

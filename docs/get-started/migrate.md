@@ -1,5 +1,5 @@
 ---
-title: 開始使用：加速遷移
+title: 開始使用：加速移轉
 description: 專案關係人對齊、遷移計畫、部署登陸區域，以及遷移前10個工作負載的建議步驟。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,14 +7,14 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: d45898c16e7894a62d65e991737419964a570e34
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 05d04914511eaf07d82745ba7430c23c035323bf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229570"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400278"
 ---
-# <a name="get-started-accelerate-migration"></a>開始使用：加速遷移
+# <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
 適當的商務和 IT 專案關係人可以協助您的組織克服遷移障礙，並加速遷移工作。 本文提供專案關係人對齊、遷移計畫、部署登陸區域，以及遷移前10個工作負載的建議步驟。 它也可以協助您進行適當治理和管理所提供的長期成功。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223604"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401012"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -101,7 +101,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **說明** | **成本**
+**服務** | **描述** | **成本**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。
@@ -203,7 +203,7 @@ Contoso 管理員會建立儲存體帳戶，如下所示：
 
 1. 他們為帳戶指定可辨識的名稱 (**contosocloudwitness**)。
 2. 他們部署具有 LRS 的一般通用帳戶。
-3. 他們將帳戶放置於第三個區域 - 美國中南部。 它們會將它放在主要和次要區域之外，讓它在區域失敗時仍可供使用。
+3. 他們會將帳戶放在第三個區域：美國中南部。 它們會將它放在主要和次要區域之外，讓它在區域失敗時仍可供使用。
 4. 他們將它置於用來保存基礎結構資源的資源群組 **ContosoInfraRG**。
 
     ![雲端見證](./media/contoso-migration-rehost-vm-sql-ag/witness-storage.png)

@@ -4,17 +4,16 @@ description: 使用適用于 Azure 的雲端採用架構，藉由建立初始雲
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c3dbc530ff2e1f28c0927cead3a761463295c4d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218487"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399612"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 
@@ -30,38 +29,9 @@ ms.locfileid: "83218487"
 
 以下是兩個不同的初始治理基礎（也稱為治理 Mvp）範例，以將用於治理的音效基礎套用至新的或現有的部署。 選擇最符合您商務需求的 MVP 以開始使用：
 
-<!-- markdownlint-disable MD033 -->
+- [標準治理指南](./guides/standard/index.md)：根據建議的初始兩個訂用帳戶模型，針對在多個區域中的部署而設計，但不橫跨公用和主權/政府雲端的最佳組織指南。
+- [複雜企業的治理指南](./guides/complex/index.md)：適用于由多個獨立 IT 業務單位或跨公用和主權/政府雲端管理的企業指南。
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>標準治理指南</h3>
-                        <p>根據建議的初始兩個訂用帳戶模型（專為在多個區域中部署，但不橫跨公用和主權/政府雲端）而設計的指南。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>適用於複雜企業的治理指南</h3>
-                        <p>適用於由多個獨立 IT 業務單位或跨公用和主權/政府雲端管理的企業指南。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>後續步驟

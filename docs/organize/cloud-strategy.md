@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 828ab41080e4742fb633bb30467dda4bd4e3c535
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 686bac552a1c91efd7bbfede22221a0e61b6bcfa
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221955"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401255"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-strategy-functions"></a>雲端策略功能
 
 雲端策略小組會定義動機和業務結果，並驗證和維護商務優先順序與雲端採用工作之間的一致。 如果沒有定義的雲端策略小組，則其他人仍然必須提供將技術活動與商務成果對齊的功能。 相同的人員或群組也應該管理整個專案的變更。

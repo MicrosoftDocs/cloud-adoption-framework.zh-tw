@@ -7,18 +7,16 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3de015250a7fd14e01eb14094e564f51e0425648
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 100d5c327fb6e87f0a355f5305ff83ebb972b020
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229323"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400766"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore CISO passwordless -->
 
-# <a name="get-started-implementing-security-across-the-enterprise-environment"></a>開始使用：在企業環境中執行安全性
+# <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：在企業環境中執行安全性
 
 安全性讓企業能夠透過建立機密性、完整性和可用性的保證，並著重于保護內部和外部惡意和非預期的行為所造成之作業的潛在影響。 此藍圖概述在雲端中快速建立基本的安全性作法，並將安全性整合到您的雲端採用程式，以減輕或避免商業風險網路安全性攻擊的主要步驟。
 

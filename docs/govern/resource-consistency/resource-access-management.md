@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 23212be551ace2808757836a0e7ac135363dd8e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218181"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399065"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -48,7 +48,7 @@ Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源�
 
 ## <a name="what-is-azure-resource-manager"></a>什麼是 Azure Resource Manager？
 
-在[azure 如何運作？](../../get-started/what-is-azure.md)中，您已瞭解 azure 包含一個前端，其中有許多服務可協調 Azure 的所有功能。 這些服務的其中之一就是 [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager)，這個服務會裝載用戶端用來管理資源的 RESTful API。
+在[Azure 如何運作？](../../get-started/what-is-azure.md)中，您已瞭解 azure 包含一個前端，其中有許多服務可協調 Azure 的所有功能。 這些服務的其中之一就是 [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager)，這個服務會裝載用戶端用來管理資源的 RESTful API。
 
 ![Azure Resource Manager ](../../_images/govern/design/governance-1-12.png)
  _圖4： Azure Resource Manager_的圖表。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218827"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401175"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -77,9 +77,7 @@ Coverdell 透過 Azure 將其基礎結構現代化，以節省記錄成本。 Co
 
 - **範例：** 公司的資料中心已在六個月內完成租用更新。 資料中心已有八年的服務。 四年前，所有伺服器都已重新整理並虛擬化，並以數百萬美元的成本來計算公司。 下一年，公司打算再次重新整理硬體和軟體。 將該資料中心的資產遷移為雲端遷移的一部分，可從下一年的預測預算中移除規劃的重新整理，以節省成本。 此外也可因降低或免除不動產租用成本，而產生成本降低的效果。
 
-<!-- docsTest:ignore "vs. Operating" -->
-
-### <a name="capital-expenses-vs-operating-expenses"></a>資本支出與營運費用
+### <a name="capital-expenses-and-operating-expenses"></a>資本支出和營運費用
 
 在您討論成本結果之前，請務必先瞭解兩個主要成本選項：資本支出和營運費用。
 

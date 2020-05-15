@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 81955582145c9ffa2b63364a1ed2948715cf37d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a885de58423bea1cef9e2e87ef4d09f4cb6e9363
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228972"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399867"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
 每個雲端採用旅程都需要某種程度的策略才能成功。 本入門指南可協助您建立專用的小組或虛擬小組（v 小組），以提供穩固的雲端策略。 第一個步驟是決定您是否需要策略小組，或現有小組成員是否能夠以分散式責任提供雲端策略。

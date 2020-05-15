@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219864"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400731"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -94,8 +94,6 @@ _圖1：雲端治理累加方法的採用階段。_
 - 將您的身分[識別基準工具鏈](./toolchain.md)從開發遷移到生產環境。
 - 更新架構方針檔，並散發給重要的專案關係人。
 - 開發教育性資料和文件、認知溝通、獎勵和其他計畫，以協助試用產品的使用者採用。
-
-<!-- docsTest:ignore "Seamless SSO" -->
 
 **潛在的活動：**
 

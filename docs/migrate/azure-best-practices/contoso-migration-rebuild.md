@@ -1,6 +1,6 @@
 ---
 title: 在 Azure 中重建內部部署應用程式
-description: 了解 Contoso 如何使用 Azure App Service、Azure Kubernetes Service、Cosmos DB、Azure Functions 和 Azure 認知服務在 Azure 中重建應用程式。
+description: 瞭解 Contoso 如何使用 Azure App Service、Azure Kubernetes Service、Azure Cosmos DB、Azure Functions 和 Azure 認知服務重建應用程式至 Azure。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 089533e9bff66fb355fb0ae720aa868bce67bd89
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 04e5d34da71fb67ce6608aea5f1db5dc6f90f705
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223842"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401109"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -63,7 +63,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項應用程式需求。 �
 
 - 應用程式的前端會部署為主要 Azure 區域中的 Azure App Service web 應用程式。
 - Azure 函式提供寵物相片上傳功能，而網站則與此功能互動。
-- 寵物相片功能會使用 Azure 認知服務的電腦視覺 API 以及 Cosmos DB。
+- 寵物相片功能會使用 Azure 認知服務的電腦視覺 API 以及 Azure Cosmos DB。
 - 網站的後端會使用微服務來建置。 這些會部署到在 AKS 中管理的容器。
 - 將使用 Azure DevOps 建立容器，並將其推送至 Azure Container Registry。
 - 目前，Contoso 會使用 Visual Studio 來手動部署 Web 應用程式和函式程式碼。
@@ -79,14 +79,14 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 **考量** | **詳細資料**
 --- | ---
-**優點** | 使用 PaaS 和無伺服器解決方案來進行端對端部署可大幅減少 Contoso 必須提供的管理時間。 <br><br> 移至以微服務為基礎的架構，可讓 Contoso 在一段時間內輕鬆擴充解決方案。 <br><br> 在將新功能上線時，不必中斷任何現有的解決方案程式碼基底。 <br><br> Web 應用程式會設定為配有多個執行個體，所以不會有單一失敗點。 <br><br> 會啟用自動調整功能，讓應用程式能夠處理不同的流量。 <br><br> 移往 PaaS 服務後，Contoso 可以淘汰在 Windows Server 2008 R2 作業系統上執行的過時解決方案。 <br><br> CosmosDB 有內建容錯能力，Contoso 不必進行設定。 這表示資料層不再是單一的容錯移轉點。
+**優點** | 使用 PaaS 和無伺服器解決方案來進行端對端部署可大幅減少 Contoso 必須提供的管理時間。 <br><br> 移至以微服務為基礎的架構，可讓 Contoso 在一段時間內輕鬆擴充解決方案。 <br><br> 在將新功能上線時，不必中斷任何現有的解決方案程式碼基底。 <br><br> Web 應用程式會設定為配有多個執行個體，所以不會有單一失敗點。 <br><br> 會啟用自動調整功能，讓應用程式能夠處理不同的流量。 <br><br> 移往 PaaS 服務後，Contoso 可以淘汰在 Windows Server 2008 R2 作業系統上執行的過時解決方案。 <br><br> Azure Cosmos DB 具有內建的容錯功能，Contoso 不需要進行任何設定。 這表示資料層不再是單一的容錯移轉點。
 **缺點** | 容器比其他移轉選項複雜得多。 其學習曲線可能會是 Contoso 的難題。 它們引進了新的複雜度層級，以在曲線上提供值。 <br><br> Contoso 的營運團隊必須提升能力，以針對應用程式來了解和支援 Azure、容器及微服務。 <br><br> Contoso 尚未針對整個解決方案完全實作 DevOps。 Contoso 必須在將服務部署至 AKS、Azure Functions 及 Azure App Service 時，考慮到這一點。
 
 <!-- markdownlint-enable MD033 -->
 
 ### <a name="migration-process"></a>移轉程序
 
-1. Contoso 會布建 Azure Container Registry、AKS 和 Cosmos DB。
+1. Contoso 會布建 Azure Container Registry、AKS 和 Azure Cosmos DB。
 2. Contoso 會布建部署的基礎結構，包括 Azure App Service web 應用程式、儲存體帳戶、功能和 API。
 3. 在基礎結構準備就緒之後，他們會使用 Azure DevOps 建立其微服務容器映射，並將其推送至容器登錄。
 4. Contoso 會使用 PowerShell 指令碼將這些微服務部署至 AKS。
@@ -96,7 +96,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **說明** | **成本**
+**服務** | **描述** | **成本**
 --- | --- | ---
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
 [Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
@@ -126,7 +126,7 @@ Azure 基礎結構 | <li> 瞭解[Contoso 如何設定 Azure 基礎結構](./cont
 > - **步驟1：布建 AKS 和 Azure Container Registry。** Contoso 會使用 PowerShell 布建受控 AKS 叢集和容器登錄。
 > - **步驟2：建立 Docker 容器。** 他們會使用 Azure DevOps 設定 Docker 容器的持續整合（CI），並將其推送至容器登錄。
 > - **步驟3：部署後端微服務。** 他們會部署基礎結構的其餘部分，以供後端微服務使用。
-> - **步驟4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 blob 儲存體、Cosmos DB 和電腦視覺 API。
+> - **步驟4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 blob 儲存體、Azure Cosmos DB 和電腦視覺 API。
 > - **步驟5：遷移後端。** 他們會部署微服務並在 AKS 上執行，以移轉後端。
 > - **步驟6：發佈前端。** 他們會將 SmartHotel360 應用程式發佈至 App Service，以及寵物服務將呼叫的函式應用程式。
 
@@ -184,9 +184,7 @@ Contoso 管理員會依下列方式進行佈建：
 
 9. 部署完成之後，他們會安裝 `kubectl` 命令列工具。 此工具已安裝在 Azure Cloud Shell 上。
 
-   ```azurecli
-   az aks install-cli
-   ```
+   `az aks install-cli`
 
 10. 它們會藉由執行命令來驗證與叢集的連線 `kubectl get nodes` 。 節點的名稱和所自動建立資源群組中的 VM 名稱相同。
 
@@ -194,9 +192,7 @@ Contoso 管理員會依下列方式進行佈建：
 
 11. 他們會執行下列命令來啟動 Kubernetes 儀表板：
 
-    ```azurecli
-    az aks browse --resource-group ContosoRG --name smarthotelakseus2
-    ```
+    `az aks browse --resource-group ContosoRG --name smarthotelakseus2`
 
 12. 隨即會有瀏覽器索引標籤開啟為儀表板。 這是使用 Azure CLI 來建立通道的連線。
 
@@ -303,7 +299,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 
 1. 他們會使用 Visual Studio，以稍早記下的資料庫連線資訊更新 **/deploy/k8s/config_local.yml** 檔案。
 
-    ![DB 連線](./media/contoso-migration-rebuild/back-pipe1.png)
+    ![資料庫連接](./media/contoso-migration-rebuild/back-pipe1.png)
 
 2. 他們會開啟 Azure DevOps，然後在 SmartHotel360 專案的 [發行]**** 中，選取 [+新增管線]****。
 
@@ -357,7 +353,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 Contoso 管理員需要部署將供前端應用程式使用的基礎結構。 他們會建立：
 
 - 用來儲存寵物影像的 blob 儲存體容器
-- 用來儲存包含寵物資訊之檔的 Cosmos DB 資料庫
+- 用來儲存包含寵物資訊之檔的 Azure Cosmos DB 資料庫
 - 網站的電腦視覺 API。
 
 本節的指示會使用[SmartHotel360 網站](https://github.com/microsoft/smartHotel360-website)存放庫。
@@ -377,25 +373,25 @@ Contoso 管理員需要部署將供前端應用程式使用的基礎結構。 �
 
     ![儲存體 Blob](./media/contoso-migration-rebuild/blob2.png)
 
-### <a name="provision-a-cosmos-db-atabase"></a>布建 Cosmos DB 資料庫取得
+### <a name="provision-an-azure-cosmos-db-database"></a>布建 Azure Cosmos DB 資料庫
 
-Contoso 管理員會布建要用於寵物資訊的 Cosmos DB 資料庫。
+Contoso 管理員會布建要用於寵物資訊的 Azure Cosmos DB 資料庫。
 
 1. 他們會在 Azure Marketplace 中建立 **Azure Cosmos DB**。
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
+    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
 2. 他們會指定名稱（**contososmarthotel**）、選取 SQL API，並將它放在美國東部2主要區域的生產資源群組**ContosoRG**中。
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
+    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
 3. 他們會在資料庫內新增集合，並為其設定預設容量與輸送量。
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos3.png)
+    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos3.png)
 
 4. 他們會記下資料庫的連線資訊，以供日後參考。
 
-    ![Cosmos DB](./media/contoso-migration-rebuild/cosmos4.png)
+    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos4.png)
 
 ### <a name="provision-computer-vision"></a>佈建電腦視覺
 
@@ -475,7 +471,7 @@ Contoso 管理員現在會設定 Web 應用程式以使用 Contoso 資源。
 4. 他們會更新 /config-sample.json/sample.json 檔案。
 
     - 這是 Web 在使用公用端點時的設定檔。
-    - 他們會使用 AKS API 端點、儲存體帳戶和 Cosmos DB 資料庫的值來編輯**url**和**pets_config**區段。
+    - 他們會使用 AKS API 端點、儲存體帳戶和 Azure Cosmos DB 資料庫的值來編輯**url**和**pets_config**區段。
     - URL 應符合 Contoso 所會建立的新 Web 應用程式 DNS 名稱。
     - 對於 Contoso 來說，這是 **smarthotelcontoso.eastus2.cloudapp.azure.com**。
 
@@ -571,7 +567,7 @@ Contoso 管理員會依下列方式部署應用程式。
 
 1. 他們會連線至 Azure DevOps 專案，以從本機將存放庫複製到開發機器。
 2. 在 Visual Studio 中，他們會開啟資料夾以顯示存放庫中的所有檔案。
-3. 他們會開啟**src/petcheckerfunction local.settings.json/local. json**檔案，並新增儲存體、Cosmos DB 資料庫和電腦視覺 API 的應用程式設定。
+3. 他們會開啟**src/petcheckerfunction local.settings.json/local. json**檔案，並新增儲存體、Azure Cosmos DB 資料庫和電腦視覺 API 的應用程式設定。
 
     ![部署函式](./media/contoso-migration-rebuild/function5.png)
 
@@ -624,7 +620,7 @@ Contoso 管理員會依下列方式部署應用程式。
 - Contoso 必須檢查[Azure SQL Database 的備份需求](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
 - Contoso 應考慮執行[SQL 容錯移轉群組，以提供資料庫的區域容錯移轉](https://docs.microsoft.com/azure/sql-database/sql-database-auto-failover-group)。
 - Contoso 可以使用[Azure Container Registry PREMIUM SKU 的異地](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)複寫。
-- Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
+- Azure Cosmos DB 會自動備份。 Contoso 可以[深入了解](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)這個程序。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

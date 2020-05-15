@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af6604db1e0bd50ea93373dfdffa67d74b413f68
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6154c040a87f0c1277b0094c4d7acd96793f7d9f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216311"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398449"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -49,6 +49,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 
 ### <a name="block-storage-scenarios"></a>封鎖儲存體案例
 
+<!-- docsTest:ignore M-series -->
 <!-- markdownlint-disable MD033 -->
 
 | **案例** | **建議的 Azure 服務** | **建議服務的考量** |
@@ -61,7 +62,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | 我有一個 NoSQL 叢集 (例如 Cassandra 或 MongoDB)。 | [Azure 磁碟儲存體 (進階 SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure 磁碟儲存體進階 SSD 供應項目提供一致的低延遲，加上高 IOPS 和輸送量。 |
 | 我正在執行具有持續性磁碟區的容器。 | [Azure 檔案儲存體 (標準或進階)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure 磁碟儲存體 (標準、進階或 Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | 檔案 (RWX) 和封鎖 (RWO) 磁碟區驅動程式選項可用於 Azure Kubernetes Service (AKS) 與自訂 Kubernetes 部署。 持續性磁碟區可以對應到 Azure 磁碟儲存體磁碟或受控 Azure 檔案儲存體共用。 根據持續性磁碟區的工作負載需求，選擇進階與標準選項。 |
 | 我有 Data Lake (例如 HDFS 資料的 Hadoop 叢集)。 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br><br> [Azure 磁碟儲存體 (標準或進階 SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Azure Blob 儲存體的 Data Lake Storage Gen 2 功能為平行分析提供了伺服器端 HDFS 相容性和 PB 規模。 它也提供 HA 和可靠性。 如有需要，Cloudera 之類的軟體可以在主要/背景工作節點上使用進階或標準 SSD。 |
-| 我有 SAP 或 SAP HANA 部署。 | [Azure 磁碟儲存體（Premium 或 Ultra SSD）](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD 已進行最佳化，以提供第 1 層 SAP 工作負載的快速延遲。 Ultra SSD 現為預覽階段。 與 M 系列結合的進階 SSD 可提供公開上市 (GA) 選項。 |
+| 我有 SAP 或 SAP HANA 部署。 | [Azure 磁碟儲存體（Premium 或 Ultra SSD）](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD 已進行最佳化，以提供第 1 層 SAP 工作負載的快速延遲。 Ultra SSD 現為預覽階段。 與 M 系列 Vm 結合進階 SSD 可提供公開上市（GA）選項。 |
 | 我有一個災害復原網站，其具有從主要伺服器同步處理的嚴格 RPO/RTO。 | [Azure 分頁 blob](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | 複寫軟體會使用 Azure 分頁 Blob 來啟用 Azure 的低成本複寫，而不需要計算 VM，直到容錯移轉發生為止。 如需詳細資訊，請參閱[Azure 磁碟儲存體檔](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。 **注意：** 分頁 blob 最多支援 8 TB。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>檔案和物件儲存體案例
@@ -100,7 +101,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 
 找出最符合您需求的 Azure 工具之後，請使用下表所連結的詳細文件，熟悉這些服務：
 
-| **服務** | **說明** |
+| **服務** | **描述** |
 |---|---|
 | [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體是 Microsoft 針對雲端推出的物件儲存體解決方案。 Blob 儲存體經過最佳化，已能妥善儲存大量的非結構化資料。 非結構化資料是指不符合特定資料模型或定義的資料，例如文字或二進位資料。 <br><br> Blob 儲存體設計用來： <li> 直接提供映像或文件給瀏覽器。 <li> 儲存檔案供分散式存取。 <li> 串流傳輸視訊和音訊。 <li> 寫入記錄檔。 <li> 儲存備份和還原、災害復原和封存資料。 <li> 儲存資料供內部部署或 Azure 託管服務進行分析。 |
 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) | Blob 儲存體支援 Azure Data Lake Storage Gen2，這是適用於雲端的 Microsoft 企業巨量資料分析解決方案。 Azure Data Lake Storage Gen2 提供階層式檔案系統和 Blob 儲存體的各項優點，包括低成本、分層式儲存體、高可用性、強式一致性，以及災害復原功能。 |

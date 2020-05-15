@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220357"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400615"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -88,6 +88,8 @@ _圖1：雲端治理累加方法的採用階段。_
 - 報告部署後計量，並散發給專案關係人。
 - 修改架構指導方針，以引導未來的採用程式。
 - 繼續與您溝通，並定期訓練受影響的人員和小組，以確保持續遵循架構指導方針。
+
+<!-- docsTest:ignore "desired state configuration" -->
 
 **潛在的活動：**
 

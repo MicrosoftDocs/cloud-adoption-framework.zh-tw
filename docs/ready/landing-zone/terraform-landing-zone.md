@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221751"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401293"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -43,10 +43,10 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 元件 | 責任 |
 |---|---|
 | 資源群組 | 基礎所需的核心資源群組 |
-| 活動記錄      | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
+| 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
 | 診斷記錄 | 保留特定天數的所有作業記錄： <li> 儲存體帳戶 <li> 事件中樞 |
 | Log Analytics | 儲存所有作業記錄。 針對深度應用程式的最佳做法審查部署常見的解決方案： <li> NetworkMonitoring <li> ADAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
-| Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示                                                                                                                                                                                        |
+| Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -78,11 +78,11 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 訂用帳戶設計    | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | 資源群組        | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | 管理群組      | N/A - 專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [組織訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| 資料                   | 不適用                                                                                                                                                                                                                                                                      | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
-| 儲存體                | 不適用                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| 資料                   | N/A                                                                                                                                                                                                                                                                      | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
+| 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
-| 成本管理        | 不適用                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| 計算                | 不適用                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| 成本管理        | N/A                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
+| 計算                | N/A                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>標記標準
 

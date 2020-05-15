@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: c27ab20e703ae8ef37fcfba1a2d3f4585d2832da
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219388"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400935"
 ---
-<!-- docsTest:disable -->
+<!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>虛擬資料中心：網路觀點
@@ -232,7 +232,7 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 - [網路安全性群組][NSG]。 網路安全性群組是安全性規則的清單，可作為 IP 來源、IP 目的地、通訊協定、IP 來源埠和 IP 目的地埠（也稱為層級 4 5-元組）的流量篩選。 網路安全性群組可以套用至子網、與 Azure VM 相關聯的虛擬 NIC，或兩者皆適用。 在中樞和輪輻中執行正確的流程式控制制時，網路安全性群組是不可或缺的。 網路安全性群組所提供的安全性層級，是您開啟的埠和用途的功能。 客戶應該使用 iptables 或 Windows 防火牆之類的主機型防火牆來套用額外的每個 VM 篩選器。
 - [DNS][DNS]。 DNS 會針對虛擬資料中心內的資源提供名稱解析。 Azure 可提供 DNS 服務，以進行[公用][DNS]和[私人][PrivateDNS]名稱解析。 私人區域可在虛擬網路內及虛擬網路之間提供名稱解析。 私人區域不僅可以橫跨相同區域內的虛擬網路，也可以橫跨區域和訂用帳戶。 至於公用解析，Azure DNS 可提供 DNS 網域的主機服務，使用 Microsoft Azure 基礎結構提供名稱解析。 只要將您的網域裝載於 Azure，就可以像管理其他 Azure 服務一樣，使用相同的認證、API、工具和計費方式來管理 DNS 記錄。
 - [管理群組][MgmtGrp]、[訂](../ready/azure-best-practices/scale-subscriptions.md)用帳戶和[資源群組][RGMgmt]管理。 訂用帳戶定義自然界限，以在 Azure 中建立多個資源群組。 這種區隔可用於函數、角色隔離或計費。 訂用帳戶中的資源會組合在稱為「資源群組」的邏輯容器中。 資源群組代表邏輯群組，用來組織虛擬資料中心內的資源。 如果貴組織有多個訂用帳戶，您可能需要一個方法來有效率地管理這些訂用帳戶的存取、原則和相容性。 Azure 管理群組可以在訂用帳戶之上提供範圍層級。 您會將訂用帳戶組織成稱為管理群組的容器，並將您的治理條件套用至管理群組。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。 若要在階層視圖中查看這三項功能，請參閱在雲端採用架構中[組織您的資源](../ready/azure-setup-guide/organize-resources.md)。
-- [角色型存取控制（RBAC）][RBAC]。 RBAC 可以對應組織角色和許可權來存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要將 Azure Active Directory 與內部部署 Active Directory 進行同步處理，您可以在 Azure 中使用內部部署所使用的相同 Active Directory 群組。 使用 RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，來授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 RBAC 允許繼承權限。 在父範圍指派的角色也會授與其內含子系的存取權。 RBAC 可讓您區隔職責，而僅授與使用者執行工作所需的存取權。 例如，一個員工可以管理訂用帳戶中的虛擬機器，而另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
+- [角色型存取控制 (RBAC)][RBAC]。 RBAC 可以對應組織角色和許可權來存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要將 Azure Active Directory 與內部部署 Active Directory 進行同步處理，您可以在 Azure 中使用內部部署所使用的相同 Active Directory 群組。 使用 RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，來授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 RBAC 允許繼承權限。 在父範圍指派的角色也會授與其內含子系的存取權。 RBAC 可讓您區隔職責，而僅授與使用者執行工作所需的存取權。 例如，一個員工可以管理訂用帳戶中的虛擬機器，而另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
 
 #### <a name="component-type-perimeter-networks"></a>元件類型：周邊網路
 
@@ -430,7 +430,7 @@ Azure 資料中心存在於全球許多地區。 選取多個 Azure 資料中心
 
 安全性 | 其他 Azure 服務 | |
 |-|-|-|
-| [Azure 防火牆][AzFW] <br> [防火牆管理員][AzFWMgr] <br> [應用程式閘道 WAF][AppGWWAF] <br> [Front 門板 WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure 儲存體][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [事件中樞][EventHubs] <br> [服務匯流排][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
+| [Azure 防火牆][AzFW] <br> [防火牆管理員][AzFWMgr] <br> [應用程式閘道 WAF][AppGWWAF] <br> [Front 門板 WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure 儲存體][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [事件中樞][EventHubs] <br> [服務匯流排][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 
 <!-- markdownlint-enable MD033 -->
 

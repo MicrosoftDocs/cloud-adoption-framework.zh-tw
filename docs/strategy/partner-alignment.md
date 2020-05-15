@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc7806035d66d44f29f9c4658c24efb950193378
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229895"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401327"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,13 +26,12 @@ ms.locfileid: "83229895"
 
 在採用的早期策略階段中，請務必開始協調您的合作關係策略。 下列步驟可協助移除採用生命週期後續階段中的障礙。
 
-1) 開始瞭解支援需求
-2) 考慮符合您文化和需求的合作選項
-3) 評估合作夥伴選項的篩選
-4) 使用所選合作夥伴開始進行合約和書面檢查
+1. 開始瞭解支援需求。
+1. 請考慮符合您文化和需求的合作關係選項。
+1. 評估合作夥伴選項的篩選。
+1. 使用所選合作夥伴開始進行合約和書面檢查。
 
-及早完成這些步驟，可確保小組在技術成果開始時成功。
-本文的下列各節提供每個步驟的指引。
+及早完成這些步驟，可確保小組在技術成果開始時成功。 本文的下列各節提供每個步驟的指引。
 
 ## <a name="understanding-support-needs"></a>瞭解支援需求
 
@@ -87,7 +86,7 @@ Azure 專家受控服務提供者（MSP）經過協力廠商審核，以驗證�
 在策略開發期間，它很難定義特定的合作關係需求。 在雲端採用方案和 skilling 方案的開發期間，這些需求將會變成焦點。
 但是，根據您小組的文化和成熟度，您可能會決定與您的預期需求更一致的合作關係選項。
 
-選擇上面的一或多個 partnerhips 選項，以縮小要先調查的選項範圍。
+選擇上面的一或多個合作關係選項，以縮小要優先調查的選項範圍。
 
 ## <a name="begin-contract-and-paperwork-reviews"></a>開始合約和書面文書審查
 

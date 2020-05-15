@@ -1,22 +1,22 @@
 ---
-title: 雲端安全性作業中心的功能
-description: 瞭解雲端安全性所需的功能
+title: 雲端 SOC 功能
+description: 瞭解雲端安全性作業中心（SOC）功能。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 7c3044e4d5e970b9f78bb46bda2aadf11273e556
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228634"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401134"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
-# <a name="functions-of-a-cloud-security-operations-center-soc"></a>雲端安全性作業中心（SOC）的功能
+# <a name="cloud-soc-functions"></a>雲端 SOC 功能
 
 雲端安全性作業中心（SOC）的主要目標是要偵測、回應及復原企業資產上的主動攻擊。
 

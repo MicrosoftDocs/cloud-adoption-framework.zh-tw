@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217399"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398463"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理中的業務重要性
 
@@ -34,7 +34,7 @@ ms.locfileid: "83217399"
 | 關鍵任務 |  會影響公司的任務，而且可能會明顯影響公司的收益與損失聲明。 |
 | 單位-重大 | 會影響特定業務單位的任務，以及其利潤與損失聲明。 |
 | 高 | 可能不會妨礙任務，但會影響高重要性的程式。 在中斷的情況下可以量化可測量的損失。 |
-| 中 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
+| 中型 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
 | 低 | 對商務程式的影響無法衡量。 品牌損毀或上游損失都不太可能。 對單一小組的當地語系化影響很可能。 |
 | 不支援 | 沒有與此工作負載相關聯的商務擁有者、小組或程式，可能會對工作負載的持續管理進行任何投資。 |
 
@@ -58,7 +58,7 @@ ms.locfileid: "83217399"
 
 ## <a name="use-the-template"></a>使用範本
 
-如果您是使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則適用下列步驟。
+如果您是使用[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則適用下列步驟。
 
 1. 記錄活頁簿 [**調整規模**] 索引標籤上的 [重要性] 級別。
 2. 更新_範例_或 [_清除] 範本_中的每個工作負載，以反映 [_重要性_] 資料行中的預設重要性。

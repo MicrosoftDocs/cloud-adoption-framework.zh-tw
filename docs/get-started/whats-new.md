@@ -7,14 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ebeb0d36b82a60ce0a0516b98909db5da8626dd2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e7fa0e1046ce6c898a2f5bc804afff8450cda103
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228933"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400149"
 ---
-<!-- cSpell:ignore CAF -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>適用于 Azure 的 Microsoft Cloud 採用架構的新功能
@@ -47,12 +46,12 @@ ms.locfileid: "83228933"
 | 文章                                                                                                                 | 說明                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [重構登陸區域](../ready/landing-zone/refactor.md)                       | **新文章：** 這篇文章從現成的方法研討會進行繪製，示範從初始範本開始的理論，使用決策樹和重構來擴充登陸區域，並移至未來的企業就緒狀態。 |
-| [展開登陸區域](../ready/considerations/index.md)                       | **新文章：** 以重構文章的 [平行反復專案] 區段為基礎，顯示各種類型的登陸區域擴充如何將共用原則內嵌到支援的平臺。 此總覽的原始內容已移至目錄中的[基本 [登陸考慮](../ready/considerations/basic-considerations.md)] 節點。 |
-| [登陸區域的測試導向開發（TDD）](../ready/considerations/test-driven-development.md)                       | **新文章：** 藉由採用測試導向的開發週期來引導您進行登陸區域的開發和重構，重構方法會大幅提升。 |
+| [擴充登陸區域](../ready/considerations/index.md)                       | **新文章：** 以重構文章的 [平行反復專案] 區段為基礎，顯示各種類型的登陸區域擴充如何將共用原則內嵌到支援的平臺。 此總覽的原始內容已移至目錄中的[基本 [登陸考慮](../ready/considerations/basic-considerations.md)] 節點。 |
+| [登陸區域的測試驅動開發 (TDD)](../ready/considerations/test-driven-development.md)                       | **新文章：** 藉由採用測試導向的開發週期來引導您進行登陸區域的開發和重構，重構方法會大幅提升。 |
 | [Azure 中的登陸區域 TDD](../ready/considerations/azure-test-driven-development.md)                       | **新文章：** Azure 治理工具為 TDD 迴圈或紅色/綠色測試提供了豐富的平臺。 |
 | [改善登陸區域安全性](../ready/considerations/landing-zone-security.md)                       | **新文章：** 本章節中的最佳作法總覽，與 TDD 週期相關。 |
 | [改善登陸區域作業](../ready/considerations/landing-zone-operations.md)                       | **新文章：** 管理方法中的最佳做法清單，並轉換成該模組化方法來改善作業、可靠性和效能。 |
-| [改善登陸區域治理](../ready/considerations/landing-zone-governance.md)                       | **新文章：** 與管理方法相關的最佳作法清單，並轉換成該模組化方法來改善控管、成本管理和規模。 |
+| [改善登陸區域控管](../ready/considerations/landing-zone-governance.md)                       | **新文章：** 與管理方法相關的最佳作法清單，並轉換成該模組化方法來改善控管、成本管理和規模。 |
 | [開始使用企業規模](../ready/considerations/enterprise-scale.md)                       | **新文章：** 示範當客戶從企業級登陸區域範本開始時，顯示程式中差異的方法。 本文可協助客戶瞭解支援這項決策的限定詞。 |
 | 目錄更新                       | 目錄已更新，以反映新的文章。  |
 
@@ -76,7 +75,7 @@ ms.locfileid: "83228933"
 
 | 文章                                                                                     | 說明                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [應用程式開發和部署](../innovate/kubernetes/application-development.md) | **新文章：** 提供規劃應用程式開發、設定 CI/CD 管線，以及執行 Kubernetes 的網站可靠性工程的檢查清單、資源和最佳作法。 |
+| [應用程式開發與部署](../innovate/kubernetes/application-development.md) | **新文章：** 提供規劃應用程式開發、設定 CI/CD 管線，以及執行 Kubernetes 的網站可靠性工程的檢查清單、資源和最佳作法。 |
 | [叢集設計和作業](../innovate/kubernetes/cluster-design-operations.md) | **新文章：** 針對 Kubernetes 的叢集設定、網路設計、未來的擴充性、商務持續性和嚴重損壞修復，提供檢查清單、資源和最佳作法。 |
 | [叢集和應用程式安全性](../innovate/kubernetes/cluster-application-security.md) | **新文章：** 提供檢查清單、資源和最佳作法，以 Kubernetes 安全性規劃、生產和調整。 |
 
@@ -115,7 +114,7 @@ ms.locfileid: "83228933"
 | [概觀](../migrate/azure-migration-guide/index.md)                                            | 以更清楚的指南描述和較少的步驟進行更新。                                                                                                        |
 | [評定](../migrate/azure-migration-guide/assess.md)                                             | 新增「具挑戰性的假設」一節，以示範此層級的評估如何與計畫方法中所述的累加評估方法搭配運作。 |
 | [評估程式期間的分類](../migrate/migration-considerations/assess/classify.md) | **新文章：** 概述在遷移之前分類每個資產和工作負載的重要性。                                                                    |
-| [遷移](../migrate/azure-migration-guide/migrate.md)                                           | 已在協力廠商工具選項中新增 UnifyCloud 的參考，以回應第1層會議的意見反應。                                                         |
+| [移轉](../migrate/azure-migration-guide/migrate.md)                                           | 已在協力廠商工具選項中新增 UnifyCloud 的參考，以回應第1層會議的意見反應。                                                         |
 | [測試、 &nbsp; 優化 &nbsp; 及 &nbsp; 升級](../migrate/azure-migration-guide/optimize-and-transform.md)        | 將本文的標題與其他進程改進建議一致。                                                                                           |
 | [評估總覽](../migrate/migration-considerations/assess/index.md)                           | 已更新，以說明此階段的評量著重于評估特定工作負載和相關資產的技術。                               |
 | [規劃檢查清單](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | 已更新，以在規劃遷移工作時清楚瞭解作業的重要性，以確保在遷移後進行妥善管理的工作負載。                  |

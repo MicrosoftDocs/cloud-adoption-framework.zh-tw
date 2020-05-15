@@ -1,5 +1,5 @@
 ---
-title: 瞭解雲端遷移功能。
+title: 瞭解雲端遷移功能
 description: 瞭解雲端遷移功能。
 author: JanetCThomas
 ms.author: janet
@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 1431f117bed4ce23ab69e26bc41f2a9ecdb67b29
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228530"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400995"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 

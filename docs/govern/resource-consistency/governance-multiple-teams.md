@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 30c25159dc677c5220c80697c282304f73a59a9b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: db90e2ca82164d645605e49dc288c21b610e12b9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218793"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399530"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -87,7 +87,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 ![具有擁有者角色的訂用帳戶服務管理員 ](../../_images/govern/design/governance-2-1.png)
  _圖3：具有已指派內建擁有者角色之服務管理員的訂_用帳戶。
 
-<!-- docsTest:ignore "resource group A" "resource group B" "resource groups A and B" "workload owner A" "workload owner B" -->
+<!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
 1. 在第一個範例中，有**工作負載**擁有者 A 沒有許可權在訂用帳戶範圍內， &mdash; 預設沒有資源存取管理許可權。 此使用者想要為其工作負載部署和管理資源。 他們必須連絡**服務管理員**以要求建立資源群組。
     ![工作負載擁有者要求建立資源群組 A](../../_images/govern/design/governance-2-2.png)
@@ -168,7 +168,8 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 
 讓我們從評估第一個選項開始。 您將會使用我們在上一節中討論的權限模型，以及單一訂用帳戶服務管理員，他會建立資源群組並且將使用者新增至其中，具有內建**參與者**或**讀者**角色。
 
-<!-- docsTest:ignore managedBy hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
+<!-- docsTest:ignore managedBy -->
+<!-- hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
 
 1. 所部署的第一個資源群組代表**共用基礎結構**環境。 **訂閱擁有**者帳戶會針對名為的共用基礎結構資源建立資源群組 `netops-shared-rg` 。
     ![建立資源群組](../../_images/govern/design/governance-3-0d.png)

@@ -7,15 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216889"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401075"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
 Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客戶。 其中也包含管理部署管線的工具，以及 DevOps 的其他重要層面。
@@ -60,7 +58,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 ## <a name="align-the-cloud-adoption-plan"></a>配合雲端採用方案
 
-雲端採用週期的策略和規劃階段的總覽頁面分別參考[雲端採用架構策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本納入考慮。 如果您還沒有這麼做，您可能想要先完成與[策略](../strategy/index.md)和[規劃](../plan/index.md)相關的練習，再調整您的新專案。
+雲端採用週期的策略和規劃階段的總覽頁面分別參考[雲端採用架構策略和規劃範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本納入考慮。 如果您還沒有這麼做，您可能想要先完成與[策略](../strategy/index.md)和[規劃](../plan/index.md)相關的練習，再調整您的新專案。
 
 下列文章支援雲端採用方案的對齊：
 

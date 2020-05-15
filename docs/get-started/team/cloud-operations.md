@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: c3bb04bd49a055e71a7572cd8c144a45f5da2efd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229011"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400155"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -55,7 +55,7 @@ ms.locfileid: "83229011"
 
 - 使用雲端策略小組的成員，檢查您公司的[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以瞭解動機、計量和策略。
 - 使用雲端採用小組的成員來檢查您公司的[雲端採用方案範本](../../plan/template.md)，以瞭解時程表和優先順序。
-- 開始開發[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)，以瞭解已與企業建立的營運需求和承諾。
+- 開始開發[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)，以瞭解已與企業建立的營運需求和承諾。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -128,7 +128,7 @@ ms.locfileid: "83229011"
 **支援交付後完成的指引：**
 
 - 在雲端中建立[商務調整](../../manage/considerations/business-alignment.md)。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)中的組合和操作預期。
+- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的組合和操作預期。
 
 **責任小組：**
 

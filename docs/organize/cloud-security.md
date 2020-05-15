@@ -7,14 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 344931adc74456f8253cc3e53dfe034f8c071f52
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230116"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401261"
 ---
-# <a name="functions-of-a-cloud-security-team"></a>雲端安全性小組的功能
+<!-- cSpell:ignore MarkSimos -->
+
+# <a name="cloud-security-functions"></a>雲端安全性功能
 
 本文提供在企業中管理資訊安全性風險所需的組織功能摘要。 這些組織功能共同構成整體網路安全性系統的人。 每個函式都可以由一或多個人員執行，而且每個人都可以根據各種因素（例如文化特性、預算和可用資源）來執行一或多個函式。
 
@@ -23,6 +25,8 @@ ms.locfileid: "83230116"
 ![企業安全性小組功能的觀點](../_images/security/enterprise-security-team.png)
 
 **安全性是小組的運動：** 關鍵是，安全性小組的個人會看到彼此屬於整個安全性團隊的一部分、整個組織的成員，以及更大的安全性社區的一部分，以防禦相同的敵人。 這個全面的觀點讓小組在一般情況下也能正常運作。 這點特別重要，因為小組會在角色和責任演進期間發現任何未計畫的差距和重迭。
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="security-functions"></a>安全性函數
 

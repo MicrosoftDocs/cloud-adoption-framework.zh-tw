@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8e17c53a2a54a212fa312b62b2ff527497583919
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229427"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400206"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：利用正確的控制項提升可靠性
 
 我們要如何套用正確的控制項來提升可靠性？ 本指南可協助您將與設定、資源組織、安全性基準或資源保護不一致相關的中斷情形降到最低。 本指南中的步驟將協助營運小組平衡 IT 組合的可靠性和成本，並協助治理小組確保一致地套用餘額。 可靠性也取決於其他角色和功能。 本文會對應各種支援函數，以協助您在每個相關的小組之間建立對齊方式。
@@ -34,7 +32,7 @@ ms.locfileid: "83229427"
 - 與雲端策略小組協商商務承諾，以開發先進作業和復原需求的計畫。
 - 如果大部分的工作負載都需要額外的作業，請展開您的管理基準。
 - 將先進的作業需求套用至登陸區域和資源，以支援更高的重要性工作負載。
-- 在[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的 IT 組合上記載作業決策。
+- 在[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的 IT 組合上記載作業決策。
 
 **支援交付後完成的指引：**
 
@@ -158,7 +156,7 @@ ms.locfileid: "83229427"
 
 - 使用資源一致性原則來測試生產部署的作業準備就緒。
 - 驗證遵循資源一致性設計指引和作業需求。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
+- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
 
 **支援交付後完成的指引：**
 

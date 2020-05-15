@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 46be63c2dfe2e4eb5e617c4d74edfc835bf1ddc0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d93d7cd43304451459c23154e61e88cc5298716f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228712"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400324"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ ms.locfileid: "83228712"
 
 <!-- markdownlint-disable MD033 -->
 
-|                                                    |                                                                                                                          |                                                |                                                                                                              |  |  |  |  |
-|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--|--|--|--|
-| ![策略圖示](./_images/icons/strategy.png) | [策略](./strategy/index.md)：定義商業理由和預期的結果採用。  | <br>![規劃圖示](./_images/icons/plan.png)  | [計畫](./plan/index.md)：將可採取動作的採用方案與商務結果保持一致。 |  |  |  |  |
-| ![就緒圖示](./_images/icons/ready.png)        | <br>[就緒](./ready/index.md)：準備雲端環境以進行規劃的變更。 | ![遷移圖示](./_images/icons/adopt.png)     | <br>[遷移](./migrate/index.md)：遷移和現代化現有的工作負載。             |  |  |  |  |
-| ![創新圖示](./_images/icons/innovate.png)        | <br>[創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | ![管理圖示](./_images/icons/govern.png)     | <br>[管理](./govern/index.md)：管理環境和工作負載。             |  |  |  |  |
-| ![管理圖示](./_images/icons/manage.png) | <br>[管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | ![組織圖示](./_images/icons/organize.png)     | <br>[組織](./organize/index.md)：管理環境和工作負載。             |  |  |  |  |
+| | | | | | | | |
+|--|--|--|--|--|--|--|--|
+| <br> ![策略圖示](./_images/icons/strategy.png) | [策略](./strategy/index.md)：定義商業理由和預期的結果採用。 | <br> ![規劃圖示](./_images/icons/plan.png) | [計畫](./plan/index.md)：將可採取動作的採用方案與商務結果保持一致。 |  |  |  |  |
+| <br> ![就緒圖示](./_images/icons/ready.png) | [就緒](./ready/index.md)：準備雲端環境以進行規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |  |  |  |  |
+| <br> ![創新圖示](./_images/icons/innovate.png) | [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | [管理](./govern/index.md)：管理環境和工作負載。 |  |  |  |  |
+| <br> ![管理圖示](./_images/icons/manage.png) | [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | [組織](./organize/index.md)：管理環境和工作負載。 |  |  |  |  |
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 

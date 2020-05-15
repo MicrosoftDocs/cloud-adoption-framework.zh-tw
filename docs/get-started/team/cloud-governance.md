@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 5b1d1cb9213b40242e95af60bead9ef3a919054a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229141"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400187"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：組建雲端治理小組
 
 雲端治理小組可確保已正確評估和管理風險和風險承受度。 這個小組可確保公司無法容忍的風險適當識別。 此小組的人員會將風險轉換成治理公司原則。
@@ -55,7 +53,7 @@ ms.locfileid: "83229141"
 
 - 使用雲端策略小組的成員，檢查您公司的[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以瞭解動機、計量和策略。
 - 使用雲端採用小組的成員來檢查您公司的[雲端採用方案範本](../../plan/template.md)，以瞭解時程表和優先順序。
-- 請參閱作業小組的[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)，以瞭解已與企業建立的營運需求和承諾。
+- 請參閱作業小組的[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)，以瞭解已與企業建立的營運需求和承諾。
 
 <!-- markdownlint-disable MD033 -->
 <br>

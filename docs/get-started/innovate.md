@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a49e52f94b2c9b84afd4e00402a4307fac21923b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cd222e7a4e7c9c03344542d0dc61a8080f611ff2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229635"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400528"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
 在雲端中建立新的產品和服務時，需要不同于遷移的方法。 雲端採用架構中的創新方法會建立一種方法，以引導新產品和服務的開發。
@@ -31,6 +29,8 @@ ms.locfileid: "83229635"
 **項**
 
 - 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄動機和所需的商務結果。
+
+<!-- docsTest:ignore "Get started: Accelerate migration" -->
 
 **支援交付後完成的指引：**
 
@@ -149,7 +149,7 @@ ms.locfileid: "83229635"
 **項**
 
 - 完成[Azure 架構審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review)，以評估各種架構和作業決策。
-- 調整[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)以反映任何必要的 advanced 作業。
+- 調整[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)以反映任何必要的 advanced 作業。
 
 **支援交付後完成的指引：**
 

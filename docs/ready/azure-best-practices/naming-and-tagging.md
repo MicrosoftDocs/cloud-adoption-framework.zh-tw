@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3ac1d332e0671a682eaa9b60a7e8a677fbf2fa37
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07c41a1de28f739054a35c36bb7e2e9c123f101d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223366"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400943"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -131,7 +131,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 |--------------------------------|-------------|
 | Azure SQL Database 伺服器      | server        |
 | Azure SQL 資料庫             | sqldb-      |
-| Cosmos DB 資料庫             | cosmos     |
+| Azure Cosmos DB 資料庫       | cosmos     |
 | Azure Cache for Redis 實例 | redis-      |
 | MySQL 資料庫                 | mysql-      |
 | PostgreSQL 資料庫            | psql       |
@@ -193,7 +193,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | Application Insights    | appi google-api       |
 | 復原服務保存庫 | rsv-        |
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -275,7 +275,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Azure SQL Database 伺服器      | 全域             | sql- \< 應用程式名稱 \> - \< 環境\>       | <li> sql-navigator-生產環境 <li> sql-排放-開發 |
 | Azure SQL 資料庫             | Azure SQL Database | sqldb- \< 資料庫名稱>- \< 環境\> | <li> sqldb-使用者-生產環境 <li> sqldb-使用者-開發人員 |
-| Cosmos DB 資料庫             | 全域             | cosmos- \< 應用程式名稱 \> - \< 環境\>    | <li> cosmos-navigator-生產環境 <li> cosmos-排放-開發 |
+| Azure Cosmos DB 資料庫       | 全域             | cosmos- \< 應用程式名稱 \> - \< 環境\>    | <li> cosmos-navigator-生產環境 <li> cosmos-排放-開發 |
 | Azure Cache for Redis 實例 | 全域             | redis-\<應用程式名稱\>-\<環境\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
 | MySQL 資料庫                 | 全域             | mysql-\<應用程式名稱\>-\<環境\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
 | PostgreSQL 資料庫            | 全域             | psql- \< 應用程式名稱 \> - \< 環境\>      | <li> psql-navigator-生產環境 <li> psql-排放-開發 |

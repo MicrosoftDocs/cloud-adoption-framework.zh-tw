@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216175"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398748"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -49,7 +49,7 @@ ms.locfileid: "83216175"
 <!-- -->
 
 > [!TIP]
-> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，應更新 [作業管理] 欄位以反映這些必要條件。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應該代表每月新增的作業管理工具成本。
+> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，應更新 [作業管理] 欄位以反映這些必要條件。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應該代表每月新增的作業管理工具成本。
 
 作業管理基準可作為在下列各節中驗證的初始起始點。
 
@@ -110,7 +110,7 @@ ms.locfileid: "83216175"
 下列計算將逐步解說公式，以協助您進一步瞭解損失和增加的管理投資之間的差異。 如需計算增加管理成本的指引，請參閱[工作負載自動化](./workload.md)和[平臺自動化](./platform.md)。
 
 > [!TIP]
-> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，請更新 [作業管理] 欄位以反映每個交談。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應代表新增的作業管理工具的每月成本。 更新之後，欄位會更新 ROI 公式和下列每個欄位。
+> 如果您使用[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)規劃雲端管理，請更新 [作業管理] 欄位以反映每個交談。 這些欄位包括_承諾用量層級_、_複合 SLA_和_每月成本_。 每月成本應代表新增的作業管理工具的每月成本。 更新之後，欄位會更新 ROI 公式和下列每個欄位。
 
 ### <a name="estimate-outage-hours-per-year"></a>估計中斷（每年小時）
 

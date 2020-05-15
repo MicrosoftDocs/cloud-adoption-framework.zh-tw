@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224199"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399418"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
@@ -24,9 +24,9 @@ ms.locfileid: "83224199"
 
 在傳統治理和雲端治理中，公司原則建立作用的治理定義。 大部分的「IT 治理」動作的目的是要實作技術，以監視、強制執行、操作那些公司原則並自動化。 雲端治理建立在類似的概念上。
 
-![公司治理和治理專業領域](../../_images/operational-transformation-govern-highres.png)
+![公司治理和治理專業領域](../../_images/operational-transformation-govern-large.png)
 
-_[圖 1]：公司治理和治理專業領域。_
+_圖 1：公司治理和治理專業領域。_
 
 上圖說明商務風險、原則與合規性，以及監視和強制執行機制之間的關聯性，需要在治理策略中進行互動。 雲端治理的五個專業領域可讓您管理這些互動，並實現您的策略。
 

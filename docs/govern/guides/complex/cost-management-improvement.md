@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220153"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400556"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
@@ -31,7 +31,7 @@ ms.locfileid: "83220153"
 
 從那時起，某些將會影響治理的事項已經改變：
 
-- 5000資產已從標示為停用的兩個資料中心移除。 採購和 IT 安全性會立即取消佈建剩餘的實體資產。
+- 已從這兩個標記為淘汰的資料中心移除了 5,000 個資產。 採購和 IT 安全性會立即取消佈建剩餘的實體資產。
 - 應用程式開發小組已實作為 CI/CD 管線，以部署一些雲端原生應用程式，大幅影響客戶體驗。
 - BI 小組已建立彙總、鑑藏、深入解析及預測流程，以便為企業營運帶來實質利益。 那些預測現在賦予了極富創意的新產品和服務。
 

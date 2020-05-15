@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223825"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400817"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -87,7 +87,7 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 適用於 VM 的 Azure 監視器 | 健康情況準則是指寫入計量存放區的計量。 | 當健全狀況狀態從狀況良好變更為狀況不良時，就會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
 | | 對應和客體作業系統效能記錄檔資料會寫入記錄存放區。 | 建立記錄查詢警示。 |
 
-<!-- docsTest:ignore "speed driven" -->
+<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>成本最快的速度
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39e5feba4e0d214a86767bf6a2152ae1887dc383
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 007a2219a65147e1682de5d1e0a4ae29251d2153
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229791"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400015"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-design-and-configuration"></a>開始使用：設計和設定
 
 環境設計和設定是最常見的遷移或創新的攔截器。 快速實行支援長期採用計畫的設計，可能會很棘手。 本文會建立方法和系列的步驟，以協助克服常見的封鎖程式並加速您的採用工作。
@@ -192,7 +190,7 @@ Operations management 是另一項需求，可達到遷移成功。 遷移至雲
 **支援交付後完成的指引：**
 
 - [重構登陸區域](../ready/landing-zone/refactor.md)
-- [登陸區域的測試導向開發](../ready/considerations/test-driven-development.md)
+- [登陸區域的測試驅動開發](../ready/considerations/test-driven-development.md)
 - [展開登陸區域治理](../ready/considerations/landing-zone-governance.md)
 - [展開登陸區域作業](../ready/considerations/landing-zone-operations.md)
 - [展開登陸區域安全性](../ready/considerations/landing-zone-security.md)
