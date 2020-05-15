@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216804"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398828"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -65,6 +65,9 @@ IBM 系統使用 CICS 等交易監視器來追蹤及管理商務交易的所有�
 下列是典型的大型主機作業：
 
 - **線上：** 工作負載包括交易處理、資料庫管理和連線。 它們通常使用 IBM DB2、CICS 和 z/OS 連接器來實作。
+
+<!-- docsTest:ignore "BMC Control-M" -->
+<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **批次：** 執行工作不需要使用者互動，且通常定期排程 (如在工作日的早上)。 批次工作可以使用 JCL 模擬器 (如 Micro Focus Enterprise Server 或 BMC Control-M 軟體)，在以 Windows 或 Linux 為基礎的系統上執行。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224216"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399513"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "83224216"
 
 在傳統治理和雲端治理中，公司原則建立作用的治理定義。 大部分的「IT 治理」動作的目的是要實作技術，以監視、強制執行、操作那些公司原則並自動化。 雲端治理建立在類似的概念上。
 
-![公司治理和治理專業領域](../../_images/operational-transformation-govern-highres.png)
+![公司治理和治理專業領域](../../_images/operational-transformation-govern-large.png)
 
 _圖 1：公司治理和治理專業領域。_
 

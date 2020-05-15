@@ -4,16 +4,15 @@ description: 使用「適用於 Azure 的雲端採用架構」，了解如何開
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-layout: LandingPage
-ms.openlocfilehash: 70813b7967b6e46f2c1355db98a2171f245224a6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ee28a021d3e58aae70efe0092bbef4698c897459
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223859"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400840"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -27,10 +26,10 @@ ms.locfileid: "83223859"
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[建立管理基準](./azure-management-guide/index.md)：定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。                                |
-| ![2](../_images/icons/2.png)     | <br>[定義商務承諾](./considerations/business-alignment.md)：記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。                                |
-| ![3](../_images/icons/3.png)     | <br>[擴展管理基準](./best-practices.md)：根據商務承諾和營運決策，利用內含的最佳做法來實作所需的雲端管理工具。                                |
-| ![4](../_images/icons/4.png)      | <br>[先進的作業和設計原則](./design-principles.md)：需要更高度商務承諾的平台或工作負載，可能需要更深入地檢閱架構，以提供復原能力和可靠性承諾。  |
+| <br> ![1](../_images/icons/1.png)     | [建立管理基準](./azure-management-guide/index.md)：定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。                                |
+| <br> ![2](../_images/icons/2.png)     | [定義商務承諾](./considerations/business-alignment.md)：記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。                                |
+| <br> ![3](../_images/icons/3.png)     | [擴展管理基準](./best-practices.md)：根據商務承諾和營運決策，利用內含的最佳做法來實作所需的雲端管理工具。                                |
+| <br> ![4](../_images/icons/4.png)      | [先進的作業和設計原則](./design-principles.md)：需要更高度商務承諾的平台或工作負載，可能需要更深入地檢閱架構，以提供復原能力和可靠性承諾。  |
 
 上述步驟會建立可操作的方法，以供提供雲端採用架構的管理方法。
 

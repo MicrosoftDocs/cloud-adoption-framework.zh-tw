@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3cdc9b294fddad6e7d77fb8a3229a372f24ca69c
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219524"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400298"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -24,10 +24,10 @@ ms.locfileid: "83219524"
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。                                |
-| ![2](../_images/icons/2.png)     | <br>[移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。                                |
-| ![3](../_images/icons/3.png)     | <br>[最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
-| ![4](../_images/icons/4.png)      | <br>[流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
+| <br> ![1](../_images/icons/1.png)     | [遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。                                |
+| <br> ![2](../_images/icons/2.png)     | [移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。                                |
+| <br> ![3](../_images/icons/3.png)     | [最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
+| <br> ![4](../_images/icons/4.png)      | [流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
 
 <!-- markdownlint-enable MD033 -->
 

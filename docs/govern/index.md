@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218657"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399702"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 
@@ -22,14 +22,13 @@ ms.locfileid: "83218657"
 雲端治理是反覆的程序。 針對使用現有原則治理內部部署 IT 環境的組織而言，雲端治理應該可以補強這些原則。 不過，內部部署與雲端之間的公司原則整合層級會隨著雲端治理的成熟度和雲端中的數位資產而有所差異。 雲端資產隨時間不斷變化，雲端治理程序和原則也不斷改變。 下列練習可協助您開始建置初始治理基礎。
 
 <!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable TODO -->
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。                                |
-| ![2](../_images/icons/2.png)     | <br>[基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。                                |
-| ![3](../_images/icons/3.png)     | <br>[初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。                                |
-| ![4](../_images/icons/4.png)      | <br>[改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。  |
+| <br> ![1](../_images/icons/1.png) | [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。 |
+| <br> ![2](../_images/icons/2.png) | <br> [基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。 |
+| <br> ![3](../_images/icons/3.png) | <br> [初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。 |
 
 ## <a name="objective-of-this-content"></a>此內容的目標
 
