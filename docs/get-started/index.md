@@ -8,16 +8,16 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: a1008059e5eb5bf614e02de233c233ca4c2758f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 94dc8b2761e537c7bef2e837db0d0d25bef8bef7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228366"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399843"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 
-這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。 其可協助您打造速度、創新和控制之間的平衡，方法是使用敏捷的方式，從您可以逐一查看並在一段時間內改善的最小且可行解決方案開始。
+這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。 其可協助您使用敏捷方法從最小可行性解決方案來開始著手，以在速度、創新和控制之間取得平衡。 您可以在一段時間後逐一查看並改善該解決方案。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -36,5 +36,5 @@ ms.locfileid: "83228366"
 | [我們想要讓組織保持一致](./org-alignment.md)                               | 本快速入門手冊可協助您建立適當的員工組織結構。                               |
 | [我們正考慮建立雲端策略小組](./team/cloud-strategy.md)     | 本指南可協助您決定是否需要策略小組，並概述該小組的工作。                                |
 | [我們正考慮建立雲端採用小組](./team/cloud-adoption.md)     | 本指南概述的步驟可協助您針對需求判斷正確類型的採用小組。              |
-| [我們&nbsp;考慮&nbsp;建立&nbsp;&nbsp;雲端&nbsp;治理&nbsp;小組](./team/cloud-governance.md) | 本指南可協助治理小組確保已正確評估和管理風險和風險承受度。                                         |
+| [我們&nbsp;考慮&nbsp;建立&nbsp;&nbsp;雲端&nbsp;治理&nbsp;小組](./team/cloud-governance.md) | 本指南可協助您建置治理小組，以評估和管理風險與風險承受度。                                         |
 | [我們正考慮建立雲端營運小組](./team/cloud-operations.md) | 本指南可協助您建立小組，以便著重在監視、修復及補救與傳統 IT 作業和資產相關的問題。 |

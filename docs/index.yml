@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
-  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.openlocfilehash: 79cb54103165ff42402513e66053456b124bd77d
+  ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83228298"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "83398989"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -67,7 +67,7 @@ productDirectory:
     - url: ./plan/suggested-skills.md
       text: 技能整備程度方案
     - url: ./plan/template.md
-      text: 雲端採用方案 DevOps
+      text: 適用於 DevOps 的雲端採用方案
   - title: 就緒
     imageSrc: ./_images/caf-ready.png
     links:
@@ -120,7 +120,7 @@ productDirectory:
     - url: ./manage/considerations/business-alignment.md
       text: 商務承諾
     - url: ./manage/best-practices.md
-      text: 擴展基準
+      text: 擴大基準
     - url: ./manage/design-principles.md
       text: 評估設計原則
   - title: 組織
@@ -147,14 +147,14 @@ tools:
     url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
 conceptualContent:
   title: 評量
-  summary: 評量可協助您規劃雲端旅程。 您可以使用這些評量來識別目前與所需狀態之間的差異。 我們將提供個人化的策劃建議，以協助您達到所需的狀態。
+  summary: 評量可協助您規劃雲端旅程。 請使用評量來識別目前狀態與所需狀態之間的差異。 我們將提供個人化的策劃建議，以協助您達到所需的狀態。
   items:
   - title: 雲端旅程追蹤器
     links:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
       itemType: get-started
       text: 根據您的業務需求，識別您的雲端採用途徑。
-  - title: 策略移轉評量和整備工具 (智慧型)
+  - title: 策略移轉評量和整備工具 (SMART)
     links:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
       itemType: get-started

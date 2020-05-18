@@ -41,6 +41,8 @@ items:
         href: get-started/reliability.md
       - name: 確保一致的效能
         href: get-started/performance.md
+      - name: 讓客戶能夠成功
+        href: get-started/enable.md
       - name: 調整您的組織
         href: get-started/org-alignment.md
       - name: 建置雲端策略小組
@@ -1265,24 +1267,50 @@ items:
         href: organize/index.md
       - name: 必要的雲端功能
         items:
-          - name: 雲端策略
+          - name: 雲端策略功能
             href: organize/cloud-strategy.md
-          - name: 雲端採用
+          - name: 雲端採用功能
             href: organize/cloud-adoption.md
-          - name: 雲端治理
+          - name: 雲端治理功能
             href: organize/cloud-governance.md
-          - name: 集中式 IT
+          - name: 中央 IT 功能
             href: organize/central-it.md
-          - name: 雲端作業
+          - name: 雲端作業功能
             href: organize/cloud-operations.md
-          - name: 雲端卓越中心
+          - name: 卓越雲端中心功能
             href: organize/cloud-center-of-excellence.md
-          - name: 雲端平台
+          - name: 雲端平台功能
             href: organize/cloud-platform.md
-          - name: 雲端自動化
+          - name: 雲端自動化功能
             href: organize/cloud-automation.md
-          - name: 雲端安全性
-            href: organize/cloud-security.md
+          - name: 雲端安全性功能
+            items:
+              - name: 雲端安全性小組功能
+                href: organize/cloud-security.md
+              - name: 原則和標準
+                href: organize/cloud-security-policy-standards.md
+              - name: 安全性作業中心 (SOC)
+                href: organize/cloud-security-operations-center.md
+              - name: 安全性架構
+                href: organize/cloud-security-architecture.md
+              - name: 安全性合規性管理
+                href: organize/cloud-security-compliance-management.md
+              - name: 人員安全性
+                href: organize/cloud-security-people.md
+              - name: 應用程式安全性和 DevSecOps
+                href: organize/cloud-security-apsec-devsecops.md
+              - name: 資料安全性
+                href: organize/cloud-security-data-security.md
+              - name: 基礎結構和端點安全性
+                href: organize/cloud-security-infrastructure-endpoint.md
+              - name: 身分識別和金鑰
+                href: organize/cloud-security-identity-keys.md
+              - name: 威脅情報
+                href: organize/cloud-security-threat-intelligence.md
+              - name: 狀態管理
+                href: organize/cloud-security-posture-management.md
+              - name: 事件準備
+                href: organize/cloud-security-incident-preparation.md
       - name: 成熟的小組結構
         href: organize/organization-structures.md
       - name: 對齊 RACI 矩陣

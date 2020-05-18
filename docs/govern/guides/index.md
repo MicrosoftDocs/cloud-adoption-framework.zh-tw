@@ -4,17 +4,16 @@ description: 檢閱雲端治理指南，這些指南說明了針對任何治理�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214730"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400733"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -26,36 +25,15 @@ ms.locfileid: "83214730"
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>標準治理指南</h3>
-                        <p>此指南適用於使用建議的兩個訂用帳戶模型的大部分組織，設計訴求為在多個區域中部署，但不橫跨公用和主權/政府雲端。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>適用於複雜企業的治理指南</h3>
-                        <p>適用於由多個獨立 IT 業務單位或跨公用和主權/政府雲端管理的企業指南。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+- [標準治理指南](./standard/index.md)：此指南適用於使用建議的兩個訂用帳戶模型的大部分組織，設計訴求為在多個區域中部署，但不橫跨公用和主權/政府雲端。
+
+> [!div class="nextstepaction"]
+> [標準治理指南](./standard/index.md)
+
+- [適用於複雜企業的治理指南](./complex/index.md)：適用於由多個獨立 IT 業務單位或跨公用和主權/政府雲端管理的企業指南。
+
+> [!div class="nextstepaction"]
+> [適用於複雜企業的治理指南](./complex/index.md)
 
 <!-- markdownlint-enable MD033 -->
 

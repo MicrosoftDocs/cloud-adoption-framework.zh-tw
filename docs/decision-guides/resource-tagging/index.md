@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222754"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399826"
 ---
-<!--docsTest:disable - TODO -->
-
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
@@ -75,15 +73,17 @@ ms.locfileid: "83222754"
 下面列出的常見標記模式可提供如何使用標記組織雲端資產的範例。 這些模式並獨佔模式，而且可並行使用，能夠依據公司需求提供多種資產組織方式。
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable -->
 
 | 標記類型 | 範例 | 描述 |
 |-----|-----|-----|
-| 函數 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類 |
-| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 可依據資源使用方式和對它套用的原則將資源分類 |
-| 會計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 可允許針對帳單用途將資源與組織內的特定群組建立關聯 |
-| 合作關係 | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受它影響的相關資訊 |
-| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援 |
+| 函數 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。 |
+| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 可依據資源使用方式和對其套用的原則將資源分類。 |
+| 會計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 可允許針對帳單用途將資源與組織內的特定群組建立關聯。 |
+| 合作關係 | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受其影響的相關資訊。 |
+| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援。 |
 
+<!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>深入了解

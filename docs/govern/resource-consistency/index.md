@@ -4,17 +4,16 @@ description: 了解開發資源一致性專業領域作為雲端管理策略一�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 3bfe85e2305f1c844ddf92a14cf298a0a1c30edb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8fe970e2d266efb3d85c2680fcd8f8524d6ddac1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218164"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399023"
 ---
 # <a name="resource-consistency-discipline-overview"></a>資源一致性專業領域的概觀
 
@@ -40,122 +39,14 @@ ms.locfileid: "83218164"
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-<li style="display: flex; flex-direction: column;">
-    <a href="./template.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>資源一致性專業領域範本</h3>
-                        <p class="x-hidden-focus">下載此範本以記錄資源一致性專業領域。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./business-risks.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>業務風險</h3>
-                        <p class="x-hidden-focus">了解通常與資源一致性專業領域建立關聯的動機與風險。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./metrics-tolerance.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>指標和計量</h3>
-                        <p class="x-hidden-focus">了解其是否為投資資源一致性專業領域之正確時機的指標。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./compliance-processes.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>原則遵循流程</h3>
-                        <p class="x-hidden-focus">用以在資源一致性專業領域中支援原則合規性的建議流程。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./discipline-improvement.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>成熟度</h3>
-                        <p class="x-hidden-focus">使雲端管理成熟度與雲端採用階段保持一致。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./toolchain.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>工具鏈</h3>
-                        <p class="x-hidden-focus">可實作來支援資源一致性專業領域的 Azure 服務。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+| | |
+|---|---|
+| <br> ![範本圖示](../../_images/govern/process-template.png) | [資源一致性專業領域範本](./template.md)：下載此範本以記錄資源一致性專業領域。 |
+| <br> ![風險圖示](../../_images/govern/process-risks.png) | [商務風險](./business-risks.md)：了解通常與資源一致性專業領域建立關聯的動機與風險。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | [指標和計量](./metrics-tolerance.md)：了解其是否為投資資源一致性專業領域之正確時機的指標。 |
+| <br> ![遵循圖示](../../_images/govern/process-enforce.png) | [原則遵循流程](./compliance-processes.md)：用以在資源一致性專業領域中支援原則合規性的建議流程。 |
+| <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。  |
+| <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | [工具鏈](./toolchain.md)：可實作來支援資源一致性專業領域的 Azure 服務。 |
 
 ## <a name="next-steps"></a>後續步驟
 
