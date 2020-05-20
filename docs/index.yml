@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 79cb54103165ff42402513e66053456b124bd77d
-  ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+  ms.openlocfilehash: 2c792541e959b365825acc4d5ced11f2542f4aa3
+  ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/14/2020
-  ms.locfileid: "83398989"
+  ms.lasthandoff: 05/19/2020
+  ms.locfileid: "83620610"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -154,7 +154,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
       itemType: get-started
       text: 根據您的業務需求，識別您的雲端採用途徑。
-  - title: 策略移轉評量和整備工具 (SMART)
+  - title: 策略移轉評量和整備工具 (智慧型)
     links:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
       itemType: get-started

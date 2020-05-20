@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a05a31d584eedce63285321a62c5926f1800198c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 05a2d46bff1bc68bfaad32427170c8e6e5035963
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401357"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621698"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,9 +27,9 @@ ms.locfileid: "83401357"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | [定義並記錄您的動機](./motivations.md)：與關鍵專案關係人和高階主管會面，以記載雲端採用背後的動機。                                |
-| <br> ![2](../_images/icons/2.png) | [記錄業務成果](./business-outcomes/index.md)：讓積極的專案關係人和高階主管參與，以記載特定的業務成果。                                |
-| <br> ![3](../_images/icons/3.png) | [開發商業案例](./cloud-migration-business-case.md)：開發商業案例來驗證支援動機和成果的財務模型。                                |
-| <br> ![4](../_images/icons/4.png) | [正確選擇第一個專案](./first-adoption-project.md)：您的第一個雲端採用專案將協助使動機與技術心血保持一致。 本文可協助您明智地選擇第一個專案。                        |
+| <br> ![1](../_images/icons/1.png) | <br> [定義並記錄您的動機](./motivations.md)：與關鍵專案關係人和高階主管會面，以記載雲端採用背後的動機。                                |
+| <br> ![2](../_images/icons/2.png) | <br> [記錄業務成果](./business-outcomes/index.md)：讓積極的專案關係人和高階主管參與，以記載特定的業務成果。                                |
+| <br> ![3](../_images/icons/3.png) | <br> [開發商業案例](./cloud-migration-business-case.md)：開發商業案例來驗證支援動機和成果的財務模型。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [正確選擇第一個專案](./first-adoption-project.md)：您的第一個雲端採用專案將協助使動機與技術心血保持一致。 本文可協助您明智地選擇第一個專案。 |
 
 使用[雲端採用方案範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)擬定您的雲端採用策略，並追蹤上述每個步驟的輸出。

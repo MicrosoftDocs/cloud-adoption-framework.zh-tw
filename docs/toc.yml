@@ -31,6 +31,8 @@ items:
         href: get-started/innovate.md
       - name: 去除環境設計和設定的障礙
         href: get-started/design-and-configuration.md
+      - name: 讓客戶能夠成功
+        href: get-started/enable.md
       - name: 提供卓越的營運績效
         href: get-started/operational-excellence.md
       - name: 管理雲端成本
@@ -41,8 +43,6 @@ items:
         href: get-started/reliability.md
       - name: 確保一致的效能
         href: get-started/performance.md
-      - name: 讓客戶能夠成功
-        href: get-started/enable.md
       - name: 調整您的組織
         href: get-started/org-alignment.md
       - name: 建置雲端策略小組
