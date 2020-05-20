@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400646"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620532"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -41,12 +41,12 @@ ms.locfileid: "83400646"
 
 | | |
 |---|---|
-| <br> ![範本圖示](../../_images/govern/process-template.png) | [部署加速專業領域範本](./template.md)：下載此範本以記錄部署加速專業領域。 |
-| <br> ![風險圖示](../../_images/govern/process-risks.png) | [商務風險](./business-risks.md)：了解通常與部署加速專業領域相關聯的動機與風險。|
-| <br> ![計量圖示](../../_images/govern/process-metrics.png) | [指標和計量](./metrics-tolerance.md)：了解其是否為投資部署加速專業領域之正確時機的指標。 |
-| <br> ![遵循圖示](../../_images/govern/process-enforce.png) | [原則遵循流程](./compliance-processes.md)：用以在部署加速專業領域中支援原則合規性的建議流程。 |
-| <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。|
-| <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | [工具鏈](./toolchain.md)：可實作來支援部署加速專業領域的 Azure 服務。 |
+| <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [部署加速專業領域範本](./template.md)：下載此範本以記錄部署加速專業領域。 |
+| <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與部署加速專業領域相關聯的動機與風險。|
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資部署加速專業領域之正確時機的指標。 |
+| <br> ![遵循圖示](../../_images/govern/process-enforce.png) | <br> [原則遵循流程](./compliance-processes.md)：用以在部署加速專業領域中支援原則合規性的建議流程。 |
+| <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。|
+| <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援部署加速專業領域的 Azure 服務。 |
 
 ## <a name="next-steps"></a>後續步驟
 

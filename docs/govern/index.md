@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 5c5ba323856ef3eb9612c7abdd733bfa32c6725f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399702"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620493"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 
@@ -25,7 +25,7 @@ ms.locfileid: "83399702"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。 |
+| <br> ![1](../_images/icons/1.png) | <br> [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。 |
 | <br> ![2](../_images/icons/2.png) | <br> [基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。 |
 | <br> ![3](../_images/icons/3.png) | <br> [初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。                                |
 | <br> ![4](../_images/icons/4.png) | <br> [改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。 |
@@ -45,7 +45,7 @@ ms.locfileid: "83399702"
 
 雲端架構設計師可引導並促使這些對象共同合作。 此系列指南的內容旨在協助雲端架構設計師促進與正確對象進行正確的對話，藉以推動必要的決策。 由雲端推動的業務轉型必須由雲端架構設計師居中協助指導整個業務和 IT 的決策。
 
-**本節中的雲端架構設計師專業化：** 雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 雲端採用架構的這個部分專為熱衷於減輕或降低技術風險的雲端架構設計師所設計。 有些雲端服務提供者將這些專家稱為「雲端監管人」  ，我們則偏向稱為「雲端守護者」  ，或統稱為「雲端治理小組」  。 在每個可操作的治理指南中，這些文章會說明雲端治理小組的組成和角色如何隨時間而改變。
+**本節中的雲端架構設計師專業化：** 雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 雲端採用架構的這個部分專為熱衷於減輕或降低技術風險的雲端架構設計師所設計。 有些雲端服務提供者將這些專家稱為「雲端監管人」，我們則偏向稱為「雲端守護者」，或統稱為「雲端治理小組」。 在每個可操作的治理指南中，這些文章會說明雲端治理小組的組成和角色如何隨時間而改變。
 
 ## <a name="use-this-guide"></a>使用本指南
 

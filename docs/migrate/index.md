@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3cdc9b294fddad6e7d77fb8a3229a372f24ca69c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: b5792eb9fbff305bde35a795d062e7c8586a5811
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400298"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621375"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -24,10 +24,10 @@ ms.locfileid: "83400298"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。                                |
-| <br> ![2](../_images/icons/2.png)     | [移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。                                |
-| <br> ![3](../_images/icons/3.png)     | [最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
-| <br> ![4](../_images/icons/4.png)      | [流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
+| <br> ![1](../_images/icons/1.png) | <br> [遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。                                |
+| <br> ![2](../_images/icons/2.png) | <br> [移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。                                |
+| <br> ![3](../_images/icons/3.png) | <br> [最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "83400298"
 
 - 控管移轉短期衝刺的方法會納入移轉波浪或發行中，這可以使用方案、就緒和採用方法來定義。 在每個移轉短期衝刺內，會將一批工作負載移轉至雲端。
 - 在移轉工作負載之前，至少已識別、設定及部署一個[登陸區域](../ready/index.md)，以符合近期雲端採用方案的需求。
-- 移轉通常會與「隨即轉移」  或「重新裝載」  的條款相關聯。 這種方法和上述步驟，是根據不應使用純粹的重新裝載方法來移轉資料中心 (和少數的工作負載) 所建立。 雖然許多工作負載都可以重新裝載，但客戶更常選擇將每個工作負載內的特定資產現代化。 在此反復執行流程中，速度和現代化之間的平衡為常見的討論點。
+- 移轉通常會與「隨即轉移」或「重新裝載」的條款相關聯。 這種方法和上述步驟，是根據不應使用純粹的重新裝載方法來移轉資料中心 (和少數的工作負載) 所建立。 雖然許多工作負載都可以重新裝載，但客戶更常選擇將每個工作負載內的特定資產現代化。 在此反復執行流程中，速度和現代化之間的平衡為常見的討論點。
 
 ## <a name="migration-effort"></a>移轉工作
 

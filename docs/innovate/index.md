@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e2bc8643ce1af2493d5a81477a81cf1c0ea9f4f8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0a55d829f5881fc8b39f550e2c0fdb5073373780
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398830"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621360"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 
@@ -26,10 +26,10 @@ ms.locfileid: "83398830"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [商業價值共識](./business-value.md)：在您決定技術解決方案之前，請先找出新的創新可帶動商業價值的方式。 將該價值對應至您的雲端策略。 在此累加方法中，商業價值會以假設的客戶需求來呈現。                                |
-| <br> ![2](../_images/icons/2.png)     | [Azure 創新指南](./innovation-guide/index.md)：Azure 包含可加快部署創新解決方案的雲端工具。 視您的假設而定，您可以考慮各種不同的工具組合。 建議您使用基本工具來建立最簡可行產品 (MVP)。                                |
-| <br>![3](../_images/icons/3.png)     | [最佳做法](./best-practices/index.md)：您的架構決策應遵循工具鏈中每個工具的最佳做法。 遵循這類指引，即可加快解決方案的開發腳步，並可作為穩定架構設計的參考。                                |
-| <br>![4](../_images/icons/4.png)      | [意見反應迴圈](./considerations/adoption.md)：在每次反覆執行期間，開發中的解決方案會讓團隊有辦法和客戶一起學習。 您的客戶快速又精確地提供意見反應，可協助您更妥善地進行測試、測量、學習，最終降低上市時間衝擊。 了解 Azure 和 GitHub 如何讓意見反應迴圈加速運行。                        |
+| <br> ![1](../_images/icons/1.png)     | <br> [商業價值共識](./business-value.md)：在您決定技術解決方案之前，請先找出新的創新可帶動商業價值的方式。 將該價值對應至您的雲端策略。 在此累加方法中，商業價值會以假設的客戶需求來呈現。                                |
+| <br> ![2](../_images/icons/2.png)     | <br> [Azure 創新指南](./innovation-guide/index.md)：Azure 包含可加快部署創新解決方案的雲端工具。 視您的假設而定，您可以考慮各種不同的工具組合。 建議您使用基本工具來建立最簡可行產品 (MVP)。                                |
+| <br> ![3](../_images/icons/3.png)     | <br> [最佳做法](./best-practices/index.md)：您的架構決策應遵循工具鏈中每個工具的最佳做法。 遵循這類指引，即可加快解決方案的開發腳步，並可作為穩定架構設計的參考。                                |
+| <br> ![4](../_images/icons/4.png)     | <br> [意見反應迴圈](./considerations/adoption.md)：在每次反覆執行期間，開發中的解決方案會讓團隊有辦法和客戶一起學習。 您的客戶快速又精確地提供意見反應，可協助您更妥善地進行測試、測量、學習，最終降低上市時間衝擊。 了解 Azure 和 GitHub 如何讓意見反應迴圈加速運行。                        |
 
 ## <a name="innovation-summary"></a>創新摘要
 
