@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: d93d7cd43304451459c23154e61e88cc5298716f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400324"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621449"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ ms.locfileid: "83400324"
 
 <!-- markdownlint-disable MD033 -->
 
-| | | | | | | | |
-|--|--|--|--|--|--|--|--|
-| <br> ![策略圖示](./_images/icons/strategy.png) | [策略](./strategy/index.md)：定義商業理由和預期的結果採用。 | <br> ![規劃圖示](./_images/icons/plan.png) | [計畫](./plan/index.md)：將可採取動作的採用方案與商務結果保持一致。 |  |  |  |  |
-| <br> ![就緒圖示](./_images/icons/ready.png) | [就緒](./ready/index.md)：準備雲端環境以進行規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |  |  |  |  |
-| <br> ![創新圖示](./_images/icons/innovate.png) | [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | [管理](./govern/index.md)：管理環境和工作負載。 |  |  |  |  |
-| <br> ![管理圖示](./_images/icons/manage.png) | [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | [組織](./organize/index.md)：管理環境和工作負載。 |  |  |  |  |
+| | | | | |
+|--|--|--|--|--|
+| <br> ![策略圖示](./_images/icons/strategy.png) | <br> [策略](./strategy/index.md)： &nbsp; 定義 &nbsp; 商業 &nbsp; 理由 &nbsp; 和預期的採用結果。 | <br> ![規劃圖示](./_images/icons/plan.png) | <br> [計畫](./plan/index.md)： &nbsp; &nbsp; 將可採取動作的 &nbsp; 採用 &nbsp; 方案與商務結果保持一致。 |
+| <br> ![就緒圖示](./_images/icons/ready.png)       | <br> [就緒](./ready/index.md)：準備雲端環境以進行規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | <br> [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |
+| <br> ![創新圖示](./_images/icons/innovate.png) | <br> [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | <br> [管理](./govern/index.md)：管理環境和工作負載。 |
+| <br> ![管理圖示](./_images/icons/manage.png)     | <br> [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | <br> [組織](./organize/index.md)：管理環境和工作負載。 |
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 
@@ -52,7 +52,7 @@ ms.locfileid: "83400324"
 
 雲端徹底改變企業採購、使用和保護技術資源的方式。 傳統上，企業要承擔從基礎結構到軟體等所有技術層面的擁有權和責任。 移至雲端可讓企業只在需要時才佈建及取用資源。 雖然雲端對於設計選擇提供大量彈性，但企業需要經過實證且一致的方法來採用雲端技術。 適用於 Azure 的 Microsoft 雲端採用架構符合該需求，它能協助指引進行雲端採用的決策。
 
-不過，雲端採用是達成目標的唯一方法。 成功的雲端採用開始於選定雲端平台廠商之前。 當業務和 IT 部門的決策者意識到雲端可以加速特定的業務轉型目標時，雲端採用就已開始。 雲端採用架構有助於協調業務、文化和技術變革的策略，藉以實現所希望的業務成果。
+但是雲端採用只是結束的一種方法。 成功的雲端採用開始於選定雲端平台廠商之前。 當業務和 IT 部門的決策者意識到雲端可以加速特定的業務轉型目標時，雲端採用就已開始。 雲端採用架構有助於協調業務、文化和技術變革的策略，藉以實現所希望的業務成果。
 
 雲端採用架構提供適用於 Microsoft Azure 的技術指導方針。 因為企業客戶可能仍在選擇雲端廠商，或可能有刻意的多重雲端策略，所以架構會盡可能針對策略性決策提供雲端無關的指引。
 

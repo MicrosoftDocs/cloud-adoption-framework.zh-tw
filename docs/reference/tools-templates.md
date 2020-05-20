@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 205540490fb8e25624d854abd666b736c701f7bb
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400908"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621573"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -55,7 +55,7 @@ ms.locfileid: "83400908"
 | [治理流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Governance%20Discipline%20Template.docx) | 定義用來強制執行每個治理專業領域的一組基本治理流程。 |
 | [成本管理流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx) | 定義原則聲明和設計指引，讓您在組織內成熟雲端治理，並著重于成本管理。 |
 | [部署加速流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx) | 定義原則聲明和設計指引，讓您在組織內成熟雲端治理，並將焦點放在部署加速。 |
-| [身分識別流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/identity%20baseline%20discipline%20template.docx) | 定義原則聲明和設計指引，讓您在組織內成熟雲端治理，並著重于身分識別需求。 |
+| [身分識別流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx) | 定義原則聲明和設計指引，讓您在組織內成熟雲端治理，並著重于身分識別需求。 |
 | [資源一致性流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx) | 定義原則聲明和設計指引，讓您在組織內成熟雲端治理，並專注于資源一致性。 |
 | [安全性基準流程範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx) | 定義原則聲明和設計指引，讓您在組織內的雲端治理成熟，並著重于安全性基準。 |
 

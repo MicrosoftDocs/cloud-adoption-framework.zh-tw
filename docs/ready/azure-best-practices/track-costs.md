@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223298"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621654"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -56,7 +56,7 @@ ms.locfileid: "83223298"
 - 當公司整合卓越雲端中心 (CCoE) 團隊時，每個地理節點中的共用服務訂用帳戶可以減少重複的資產。
 - 較小的採用工作可能會有更小的管理階層。 通常會看到公司 IT 的單一根節點，並在不同環境的階層中具有單一層級的從屬節點。 這不會違反妥善管理環境的最佳做法。 但是，它會讓您更難以提供成本控制和其他重要功能的最低許可權存取模型。
 
-本文的其餘部分假設您使用上圖中的最佳做法方法。 不過，下列文章可協助您將此方法套用至最適合貴公司的資源組織：
+本文的其餘部分假設您使用上圖中的最佳做法方法。 但下列文章可協助您將此方法套用至最適合貴公司的資源組織：
 
 - [使用多個訂用帳戶調整您的 Azure 環境](../azure-best-practices/scale-subscriptions.md)
 - [組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)
@@ -77,22 +77,22 @@ ms.locfileid: "83223298"
 
 Azure 成本管理支援每個範圍的下列內建角色：
 
-- [擁有](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)者-可以查看成本並管理所有專案，包括成本設定。
-- [參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)-可以查看成本並管理所有專案，包括成本設定，但不包括存取控制。
-- [讀者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader)-可以查看所有專案，包括成本資料和設定，但無法進行任何變更。
-- [成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)-可以查看成本和管理成本設定。
-- [成本管理讀取](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader)者-可以查看成本資料和設定。
+- [擁有](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)者：可以查看成本及管理所有專案，包括成本設定。
+- [參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)：可以查看成本及管理所有專案，包括成本設定，但不包括存取控制。
+- [讀者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader)：可以查看所有專案，包括成本資料和設定，但無法進行變更。
+- [成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)：可以查看成本和管理成本設定。
+- [成本管理讀取器](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader)：可以查看成本資料和設定。
 
-一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 不過，[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅限成本管理讀者。 這是因為他們不會牽涉到在 Azure 成本管理工具內設定預算。
+一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 但[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅成本管理的讀者。 這是因為他們不會牽涉到在 Azure 成本管理工具內設定預算。
 
-### <a name="scope"></a>影響範圍
+### <a name="scope"></a>領域
 
 下列範圍和角色設定會建立成本管理所需的可見度。 這種最佳做法可能需要較小的變更，以符合資產組織決策。
 
 - [雲端採用小組](../../organize/cloud-adoption.md)。 進行中最佳化變更的責任需要資源群組層級的成本管理參與者存取權。
 
-  - **工作環境** 雲端採用小組至少應該已有所有受影響資源群組的[參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)存取權，或至少與開發/測試或進行中部署活動相關群組的存取權。 不需要其他範圍設定。
-  - **生產環境** 建立適當的責任分隔時，雲端採用小組可能不會繼續具備其專案相關資源群組的存取權。 支援工作負載生產執行個體的資源群組需要額外的範圍，讓此小組能夠看到其決策的生產成本影響。 為此小組的生產資源群組設定[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)範圍，可讓小組監視成本，並根據所支援工作負載的使用量和持續投資來設定預算。
+  - **工作環境。** 雲端採用小組至少應該已有所有受影響資源群組的[參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)存取權，或至少與開發/測試或進行中部署活動相關群組的存取權。 不需要其他範圍設定。
+  - **生產環境。** 建立適當的責任分隔時，雲端採用小組可能不會繼續具備其專案相關資源群組的存取權。 支援工作負載生產執行個體的資源群組需要額外的範圍，讓此小組能夠看到其決策的生產成本影響。 為此小組的生產資源群組設定[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)範圍，可讓小組監視成本，並根據所支援工作負載的使用量和持續投資來設定預算。
 
 - [雲端策略小組](../../organize/cloud-strategy.md)。 若要追蹤多個專案和營業單位的成本，必須在管理群組階層的根層級取得成本管理讀者存取權。
 
@@ -106,10 +106,10 @@ Azure 成本管理支援每個範圍的下列內建角色：
 
 - [卓越的雲端中心](../../organize/cloud-center-of-excellence.md)。 負責管理與共用服務相關的成本，需要訂用帳戶層級的成本管理參與者存取權。 此外，此小組可能需要資源群組或訂用帳戶 (包含 CCoE 自動化所部署的資產) 的成本管理參與者存取權，以了解這些自動化如何影響成本。
 
-  - **共用服務**。 當卓越的雲端中心參與時，最佳做法會建議從中樞和輪輻模型內的集中式共用服務訂用帳戶支援 CCoE 所管理的資產。 在此案例中，CCoE 可能具有該訂用帳戶的參與者或擁有者存取權，因此不需要為[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)進行額外的範圍指派。
-  - **CCoE 自動化/控制項** CCoE 通常會為雲端採用小組提供控制項和自動化部署指令碼。 CCoE 有責任了解這些加速器如何影響成本。 若要取得該可見度，小組需要執行這些加速器的任何資源群組或訂用帳戶[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)存取權。
+  - **共用服務。** 當卓越的雲端中心參與時，最佳做法會建議從中樞和輪輻模型內的集中式共用服務訂用帳戶支援 CCoE 所管理的資產。 在此案例中，CCoE 可能具有該訂用帳戶的參與者或擁有者存取權，因此不需要為[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)進行額外的範圍指派。
+  - **CCoE 自動化/控制項。** CCoE 通常會為雲端採用小組提供控制項和自動化部署指令碼。 CCoE 有責任了解這些加速器如何影響成本。 若要取得該可見度，小組需要執行這些加速器的任何資源群組或訂用帳戶[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)存取權。
 
-- **雲端作業小組** 負責管理生產環境的持續成本，需要所有生產訂用帳戶的成本管理參與者存取權。
+- **雲端營運小組。** 負責管理生產環境的持續成本，需要所有生產訂用帳戶的成本管理參與者存取權。
 
   - 一般建議會將生產和非生產資產放在不同的訂用帳戶中，這些訂用帳戶是由與生產環境相關聯之管理群組階層的節點所控制。 在妥善管理的環境中，作業小組的成員可能已擁有生產訂用帳戶的擁有者或參與者存取權，因此不需要[成本管理參與者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)角色。
 
@@ -126,11 +126,13 @@ Azure 成本管理是一種妥善記載的工具，可用於設定預算，並�
 - [建立及管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
 - [匯出成本資料](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
 - [根據建議將成本優化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
+- [使用成本警示監視使用量和費用](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
+
+<--docsTest：「AWS 成本和使用量」-->
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>使用 Azure 成本管理來管理 AWS 成本
 
-- [AWS 成本和使用量報告整合](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
+- [設定 AWS 成本和使用量報告整合](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [管理 AWS 成本](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>建立存取權、角色和範圍

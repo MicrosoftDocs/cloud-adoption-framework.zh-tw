@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221904"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621545"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Azure 中登陸區域的測試導向開發（TDD）
 
@@ -26,7 +26,7 @@ Azure 原生治理產品和服務的工具鏈，可以輕鬆地整合到以測�
 
 ## <a name="microsoft-provided-test-and-deployment-templates-to-accelerate-tdd"></a>Microsoft 提供的測試和部署範本，以加速 TDD
 
-下列範例是由 Microsoft 提供，供治理之用。 不過，在登陸區域的測試導向開發週期中，每個都可以用來做為測試或一系列測試。 下一節中每個工具的詳細資訊。
+下列範例是由 Microsoft 提供，供治理之用。 但是，每個都可以在登陸區域的測試導向開發週期中，用來做為測試或一系列測試。 下一節中每個工具的詳細資訊。
 
 - Azure 藍圖提供各種[藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples)，其中包括用於測試的原則，以及用於部署的範本。 這些藍圖範例可以加速在 TDD 週期中進行開發、部署和測試工作。
 - Azure 原則也包含[內建的原則計畫](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives)，可用來測試並強制執行登陸區域的完整定義。 Azure 原則包含內[建的原則定義](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies)，可在完成的定義中符合個別接受準則。
@@ -52,4 +52,4 @@ Azure 原生治理產品和服務的工具鏈，可以輕鬆地整合到以測�
 若要開始重構您的第一個登陸區域，請評估[基本登陸區域考慮](./basic-considerations.md)。
 
 > [!div class="nextstepaction"]
-> [基本登陸區域考慮](./basic-considerations.md)
+> [基本登陸區域考量](./basic-considerations.md)

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215563"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621427"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -22,9 +22,9 @@ ms.locfileid: "83215563"
 
 「中樞和輪輻」__ 是一種網路模型，可更有效地管理常見通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
 
-- **節省成本和管理效率**。 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠將多餘的資源和管理投入量降至最低。
-- **克服訂用帳戶限制**。 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
-- **考量分隔**。 您可以在中央 IT 小組和工作負載小組之間部署個別的工作負載。
+- **節省成本和管理效率。** 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠將多餘的資源和管理投入量降至最低。
+- **克服訂閱限制。** 大型雲端式工作負載需要使用的資源，可能比單一 Azure 訂用帳戶內所允許的資源還要多。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
+- **關注點分離。** 您可以在中央 IT 小組和工作負載小組之間部署個別的工作負載。
 
 較小的雲端資產可能無法受益於此模型所提供的新增結構和功能。 但較大的雲端採用工作應該考慮採用中樞和輪輻網路架構，如果它們有前述的任何疑慮。
 

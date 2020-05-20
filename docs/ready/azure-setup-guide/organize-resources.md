@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221938"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621567"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -172,7 +172,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [指派標記]  。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。

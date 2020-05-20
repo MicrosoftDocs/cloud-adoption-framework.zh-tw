@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e7fa0e1046ce6c898a2f5bc804afff8450cda103
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400149"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620883"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,18 @@ ms.locfileid: "83400149"
 以下是最近對雲端採用架構所做的變更清單。
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同合作。 新的和更新的內容會在可用時發行。 這些版本可讓您測試、驗證及精簡指引和我們。 我們鼓勵您與我們合作，為 Azure 打造雲端採用架構。
+
+## <a name="may-15-2020"></a>2020 5 月15日
+
+根據意見反應，我們建立了新的內容，讓您開始使用雲端採用架構。 新的快速入門手冊可協助您根據想要完成的工作來流覽架構。
+
+| 文章 | 說明 |
+|---|---|
+| [開始使用雲端採用架構](./index.md) | 從這裡開始，選擇與您的雲端採用目標一致的快速入門手冊。 這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。|
+| [瞭解並記載基本的對齊決策](./cloud-concepts.md) | 深入瞭解雲端採用所牽涉到的每個小組都應該瞭解的初始決策。 |
+| [瞭解並對齊組合階層](../reference/fundamental-concepts/hosting-hierarchy.md) | 瞭解「公事包」階層如何顯示您的工作負載和支援服務如何彼此配合。 |
+| [Azure 產品如何支援組合階層？](../reference/fundamental-concepts/hierarchy-azure-tools.md) | 瞭解支援您的組合階層的 Azure 工具和解決方案。 |
+| [管理組織一致性](../organize/index.md) | 建立妥善的組織結構，使其成為雲端的有效操作模型。 |
 
 ## <a name="april-14-2020"></a>2020年4月14日
 

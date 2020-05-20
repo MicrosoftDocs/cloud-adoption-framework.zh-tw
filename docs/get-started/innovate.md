@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cd222e7a4e7c9c03344542d0dc61a8080f611ff2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 97da5f902fb195a4390b33ef5b8eed2f12ac4a94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400528"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621184"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -155,7 +155,7 @@ ms.locfileid: "83400528"
 
 - [擴充 [管理基準](../manage/best-practices.md)]：雲端採用架構的這一節會引導您完成各種轉換，進入雲端的營運管理。
 - [取得特定的先進作業](../manage/design-principles.md)：探索超越您的管理基準的方式。
-- 如果需要進行 advanced 作業以支援您的作業需求，請評估[商務承諾](https://docs.microsoft.com/manage/considerations/business-alignment)，以判斷兩個小組的營運責任。
+- 如果需要進行 advanced 作業以支援您的作業需求，請評估[商務承諾](../manage/considerations/business-alignment.md)，以判斷兩個小組的營運責任。
 
 <!-- markdownlint-disable MD033 -->
 <br>

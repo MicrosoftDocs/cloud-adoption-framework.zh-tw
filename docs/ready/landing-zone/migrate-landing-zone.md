@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222890"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621756"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "83222890"
 - **合規性：** 此登陸區域不需要協力廠商合規性需求。
 - **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
 - **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
-- **有限的生產範圍：** 此登陸區域可能會主控生產工作負載。 不過，它並不適合用於敏感性資料或任務關鍵性工作負載的環境。
+- **有限的生產範圍：** 此登陸區域可能會主控生產工作負載。 這不適合用于敏感性資料或任務關鍵性工作負載的環境。
 
 如果這些假設符合您目前的採用需求，則此藍圖可能是建立登陸區域的起點。
 
@@ -53,11 +53,11 @@ ms.locfileid: "83222890"
 | 訂用帳戶設計          | N/A - 專為單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | 資源群組              | N/A - 專為單一生產訂用帳戶所設計。                                              | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | 管理群組            | N/A - 專為單一生產訂用帳戶所設計。                                              | [組織和管理訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| 資料                         | 不適用                                                                                               | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
-| 儲存體                      | 不適用                                                                                               | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                                        |
-| 命名和標記標準 | 不適用                                                                                               | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
-| 成本管理              | 不適用                                                                                               | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
-| 計算                      | 不適用                                                                                               | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                                               |
+| 資料                         | N/A                                                                                               | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
+| 儲存體                      | N/A                                                                                               | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                                        |
+| 命名和標記標準 | N/A                                                                                               | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
+| 成本管理              | N/A                                                                                               | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
+| 計算                      | N/A                                                                                               | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                                               |
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>自訂或部署登陸區域
 
@@ -73,7 +73,7 @@ ms.locfileid: "83222890"
 部署您的第一個登陸區域之後，您就可以開始[擴充您的登陸區域](../considerations/index.md)
 
 > [!div class="nextstepaction"]
-> [展開登陸區域](../considerations/index.md)
+> [擴充登陸區域](../considerations/index.md)
 
 <!-- links -->
 

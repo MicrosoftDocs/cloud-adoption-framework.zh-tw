@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2df19abaa4878194697cd22fbf193c21580b22d2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: daad757372250014556de53ddd6cfdacf66b0b7f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400136"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620357"
 ---
 # <a name="assess-your-transformation-journey"></a>評估您的轉換旅程
 
@@ -24,7 +24,7 @@ ms.locfileid: "83400136"
 接收個人化報表，其中概述您目前狀態與業務優先順序之間的差異，以及可協助您開始使用的量身訂做資源。 評估您的目前狀態和未來狀態，以建立套用此架構的願景。
 
 > [!div class="nextstepaction"]
-> [使用治理基準工具](https::/cafbaseline.com)
+> [使用治理基準工具](https://cafbaseline.com)
 
 ## <a name="next-steps"></a>後續步驟
 

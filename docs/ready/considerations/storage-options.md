@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6154c040a87f0c1277b0094c4d7acd96793f7d9f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d44115174b519f14dcd4162d0411cacb565f083c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398449"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621823"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "83398449"
 
 ## <a name="common-storage-scenarios"></a>常見的儲存體案例
 
-Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文稍早所示的儲存體需求決策樹之外，下表描述一系列可能的儲存體案例，以及建議的 Azure 服務來解決案例的需求：
+Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早所示的儲存體需求決策樹，下表描述一系列可能的儲存體案例，以及建議的 Azure 服務，以解決案例的需求。
 
 ### <a name="block-storage-scenarios"></a>封鎖儲存體案例
 
@@ -75,7 +75,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | 我有適用於數 PB 資料的內部部署物件儲存體系統 (例如 Dell-EMC ECS)。 | [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) |  Azure Blob 儲存體提供進階、經常性存取、非經常性存取和封存層，以符合您的工作負載效能和成本需求。 |
 | 我有一個 DFSR 部署，或另一種方式來處理分公司。 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步提供多網站同步處理，讓檔案在雲端中的多部伺服器和原生 Azure 檔案共用之間保持同步。 使用雲端階層處理，移至內部部署的固定儲存體使用量。 雲端階層處理會將您的伺服器轉換成相關檔案的快取，同時在 Azure 檔案共用中調整幾乎不存取的資料。 |
 | 我有磁帶媒體櫃（內部部署或異地），用於備份和嚴重損壞修復或長期資料保留。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob 儲存體封存層的可能成本最低，但可能需要數小時才能將離線資料複製到非經常性存取層、經常性存取層或進階層儲存體，以允許存取。 非經常性存取層以低成本提供即時存取。 |
-| 我已設定檔案或物件儲存體來接收我的備份。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br/>[Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 若要使用最低成本儲存體來備份長期保留的資料，請將資料移至 Azure Blob 儲存體，並使用非經常性存取層和封存層。 若要針對伺服器（內部部署或 Azure VM）上的檔案資料啟用快速的嚴重損壞修復，請使用 Azure 檔案同步，將共用同步至個別的 Azure 檔案共用。使用 Azure 檔案共用快照集，您可以還原較舊的版本，並將其同步至已連線的伺服器，或在 Azure 檔案共用中以原生方式存取它們。 |
+| 我已設定檔案或物件儲存體來接收我的備份。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br> [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 若要使用最低成本儲存體來備份長期保留的資料，請將資料移至 Azure Blob 儲存體，並使用非經常性存取層和封存層。 若要針對伺服器（內部部署或 Azure VM）上的檔案資料啟用快速的嚴重損壞修復，請使用 Azure 檔案同步，將共用同步至個別的 Azure 檔案共用。使用 Azure 檔案共用快照集，您可以還原較舊的版本，並將其同步至已連線的伺服器，或在 Azure 檔案共用中以原生方式存取它們。 |
 | 我對災害復原網站執行資料複寫。 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步會移除災害復原伺服器的需求，並將檔案儲存在原生 Azure SMB 共用中。 快速的災害復原會快速重建故障內部部署伺服器上的任何資料。 您甚至可以讓多個伺服器位置保持同步，或使用雲端階層處理僅儲存相關的內部部署資料。 |
 | 我在中斷連線的情況下管理資料傳輸。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 使用 Data Box Edge 或資料箱閘道，您可以在中斷連線的情況下複製資料。 當閘道離線時，它會將您複製的所有檔案儲存在快取中，然後在您連線時上傳它們。 |
 | 我管理對雲端進行中的資料管線。 | [Azure Data Box Edge 或 Azure 資料箱閘道](https://docs.microsoft.com/azure/databox-online) | 將資料從經常產生資料的系統移至雲端，只要將資料直接複製到儲存體閘道即可。 如果他們需要稍後再存取該資料，則會直接放在該處。 |
@@ -109,7 +109,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 | [Azure 檔案](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | Azure 檔案儲存體提供完全受控的原生 SMB 檔案共用，而不需要執行 VM。 您可以將 Azure 檔案儲存體共用掛接為任何 Azure VM 或內部部署機器的網路磁碟機。 |
 | [Azure 檔案同步](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 您可使用 Azure 檔案同步將組織的檔案共用集中在 Azure 檔案服務中，同時保有內部部署檔案伺服器的靈活度、效能及相容性。 Azure 檔案同步會將 Windows Server 轉換成 Azure 檔案共用的快速快取。 |
 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files 服務是企業等級、高效能、計量檔案儲存體服務。 Azure NetApp Files 支援任何工作負載類型，預設為高度可用。 您可以選取服務和效能層級，並且透過服務設定快照集。 |
-| [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge 是內部部署網路裝置，可將資料移入和移出 Azure。 Data Box Edge 具有已啟用 AI 的邊緣計算，以便在上傳期間預先處理資料。 「資料箱閘道」是該裝置的虛擬版本，但是具備相同的資料傳輸功能。 |
+| [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge 是內部部署網路裝置，可將資料移入和移出 Azure。 Data Box Edge 已啟用 AI 的邊緣計算，以便在上傳期間預先處理資料。 「資料箱閘道」是該裝置的虛擬版本，但是具備相同的資料傳輸功能。 |
 | [Azure 資料箱閘道服務](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | Azure 資料箱閘道是可讓您順利將資料傳送到 Azure 的儲存體解決方案。 資料箱閘道是虛擬裝置，其基礎是佈建在虛化環境中或 Hypervisor 中的虛擬機器。 虛擬裝置位於內部部署環境，您可以使用 NFS 和 SMB 通訊協定將資料寫入其中。 裝置接著會將您的資料傳輸至 Azure 區塊 Blob 或 Azure 分頁 Blob，或 Azure 檔案儲存體。 |
 | [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure 是一個適用於資料密集高效能運算 (HPC) 工作的檔案系統快取解決方案。 利用雲端運算的擴充性，讓您的資料能夠隨時隨地存取， &mdash; 即使是儲存在您自己的內部部署硬體中的資料也一樣。 |
 
@@ -117,7 +117,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了本文�
 
 Azure 儲存體有各種不同的備援選項，可根據客戶需求來協助確保持久性和高可用性：本地備援儲存體 (LRS)、區域備援儲存體 (ZRS)、異地備援儲存體 (GRS)，以及讀取權限異地備援儲存體 (RA-GRS).
 
-若要深入了解這些功能，以及如何為您的使用案例決定最佳的備援選項，請參閱 [Azure 儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。 此外，儲存體服務的服務等級協定 (SLA) 會提供財務支援的保證。 如需詳細資訊，請參閱[受控磁碟 SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)、[虛擬機器 SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)和[儲存體帳戶 SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)。
+若要深入了解這些功能，以及如何為您的使用案例決定最佳的備援選項，請參閱 [Azure 儲存體備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。 此外，儲存體服務的服務等級協定（Sla）會提供財務支援的保證。 如需詳細資訊，請參閱[受控磁碟 SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)、[虛擬機器 SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)和[儲存體帳戶 SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)。
 
 如需針對 Azure 磁碟規劃正確解決方案的協助，請參閱 [Azure 磁碟儲存體的備份和災害復原](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。
 

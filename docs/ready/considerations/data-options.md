@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c125f60358a433e2d6f65b103fba8722b1491ad1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af1ba2cbf55d0c144241676f59e6ad154ea1b5f2
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215325"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620424"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -65,7 +65,7 @@ ms.locfileid: "83215325"
 
 Azure 可讓您以所需的規模提供服務，_隨時隨地_觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
-大部分資料庫服務都已在大部分的 Azure 區域中正式使用。 不過，有幾個區域 (大部分都是以政府客戶為目標) 僅支援這些產品的一部分。 在決定您要將資料庫資源部署到哪個區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)，以檢查區域可用性的最新狀態。
+大部分資料庫服務都已在大部分的 Azure 區域中正式使用。 但有幾個區域（主要是以政府客戶為目標）僅支援這些產品的一部分。 在決定您要將資料庫資源部署到哪個區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)，以檢查區域可用性的最新狀態。
 
 若要深入了解 Azure 全域基礎結構，請參閱 [Azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以查看[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)，以瞭解每個 Azure 區域中可用的整體服務的特定詳細資料。
 

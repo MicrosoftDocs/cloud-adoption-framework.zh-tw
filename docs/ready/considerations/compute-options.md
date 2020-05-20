@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221853"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621515"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -64,7 +64,7 @@ ms.locfileid: "83221853"
 
 Azure 可讓您以所需的規模傳遞服務，_隨時隨地_觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
-某些計算選項 (例如 Azure App Service) 已在大部分的 Azure 區域中正式推出。 不過，某些計算服務僅在精選區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在決定要將計算資源部署到哪些區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)，以檢查區域可用性的最新狀態。
+某些計算選項 (例如 Azure App Service) 已在大部分的 Azure 區域中正式推出。 但某些計算服務僅在特定區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在決定要將計算資源部署到哪些區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)，以檢查區域可用性的最新狀態。
 
 若要深入瞭解 Azure 全域基礎結構，請參閱[azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以查看[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)，以瞭解每個 Azure 區域中可用的整體服務的特定詳細資料。
 

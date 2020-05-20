@@ -7,14 +7,14 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222992"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621816"
 ---
-# <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試導向開發（TDD）
+# <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 
 以測試為導向的開發是常見的軟體發展和 DevOps 程式，可改善任何以程式碼為基礎的解決方案中的新功能和改進的品質。 雲端式基礎結構和基礎原始程式碼可以使用此程式來確保登陸區域符合核心需求，而且具有高品質。 當登陸區域正以平行開發工作的方式進行開發和重構時，此程式特別有用。
 
@@ -24,7 +24,7 @@ ms.locfileid: "83222992"
 
 這種方法可用來在早期開發期間符合簡單的功能要求。 稍後在雲端採用生命週期中，此程式可以用來滿足安全性、作業、治理或合規性需求。
 
-## <a name="definition-of-done"></a>完成的定義
+## <a name="definition-of-done"></a>對「完成」  的定義
 
 「設定成功」是主觀語句。 此聲明可讓雲端平臺小組在登陸區域開發或重構工作時，不需要採取任何動作的資訊。 這種不清楚的情況，可能會導致雲端環境中遺漏預期和弱點。 在重構或擴充任何登陸區域之前，雲端平臺小組應針對每個登陸區域的「完成定義」尋求清楚的瞭解。
 
@@ -59,11 +59,11 @@ ms.locfileid: "83222992"
 - 在採用過程中，雲端採用小組會想要暫時存取環境來變更服務設定。
 - 僅針對認知：在生產環境版本之前，這些工作負載需要與公司識別提供者整合，以控制作業管理用途的持續身分識別和存取。 在這段時間，應撤銷雲端採用小組的存取權。
 
-上述最後一個重點不是功能或驗收準則。 不過，這是一種指出需要額外擴充的指標，而且應該及早與其他小組進行探索。
+上述最後一個點不是功能或驗收準則。 但它會指出需要額外的擴充，而且應該及早與其他小組進行探索。
 
 ## <a name="additional-examples-of-a-definition-of-done"></a>完成的定義的其他範例
 
-雲端採用架構內的治理方法，提供了一段治理小組自然成熟度的敘述旅程。 內嵌在該旅程中的幾個範例是「完成定義」和「接受準則」，以原則聲明的形式呈現。
+雲端採用架構中的控管方法，提供了一段治理小組自然成熟度的敘述旅程。 內嵌在該旅程中的幾個範例是「完成定義」和「接受準則」，以原則聲明的形式呈現。
 
 - [初始原則聲明](../../govern/guides/complex/initial-corporate-policy.md#policy-statements)：根據初期階段採用需求，管理公司原則的範例，以及完成的初始定義。
 - 身分[識別擴充](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements)：公司原則（「完成定義」）的範例，以符合擴充登陸區域身分識別管理的需求。

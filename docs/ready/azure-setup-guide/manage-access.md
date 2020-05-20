@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: efefa348324ab0c9dff86b5d19f7c3f11d9d437d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223264"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621642"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -68,7 +68,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 若要對使用者授與資源群組的存取權：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)]。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [存取控制 (IAM)]  。
 1. 選取 [+新增]   > [新增角色指派]  。

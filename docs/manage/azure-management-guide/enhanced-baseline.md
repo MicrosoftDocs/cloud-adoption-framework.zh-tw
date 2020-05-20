@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4d17c8fe7251a4ce5281f94d8776ba5ceaddd181
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216787"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621238"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -78,7 +78,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 若要建立或管理 Runbook：
 
-1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
+1. 移至 **Azure 自動化**。
 1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
 1. 移至 [程序自動化]  。
 1. 有了這個選項，您就可以建立或管理 Runbook、排程和其他自動化補救功能。
@@ -87,7 +87,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Go to Azure Automation" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
