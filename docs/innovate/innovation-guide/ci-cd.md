@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8f69e5c6d988bbfc637c7ba40eb156dc45524bce
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222261"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621317"
 ---
 ::: zone target="docs"
 
@@ -28,7 +28,7 @@ ms.locfileid: "83222261"
 
 ::: zone-end
 
-您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 「開發人員」  是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
+您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 「開發人員」是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
 
 ## <a name="generate-value"></a>產生值
 
@@ -84,9 +84,9 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 若要建立 DevOps 專案：
 
-1. 移至 [Azure DevOps Projects]  。
-2. 選取 [建立 DevOps 專案]  。
-3. 選取 [執行階段、架構和服務]  。
+1. 移至 [Azure DevOps Projects]。
+2. 選取 [建立 DevOps 專案]。
+3. 選取 [執行階段、架構和服務]。
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
@@ -108,9 +108,11 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 為了創新，許多開發人員都會使用開放原始碼的程式碼。 80% 至 90% 的新應用程式開發是從開放原始碼著手。 開放原始碼不單純是程式碼， 同時也是讓全球各地的互連社群和開發人員一起打造應用程式。 透過使用 GitHub 的開放式開發模型，團隊得以創新和合作、及早識別安全性弱點，以及查覺專家人才。 企業的開發團隊可以整合 GitHub 存放庫與 Microsoft Teams 和 Azure。 只有 Teams 這個解決方案能夠將聊天、語音和合作，與 Microsoft Office 應用程式的能力、會議和商務工作流程全都整合到單一使用者體驗中。 這是團隊合作和創新的中樞。
 
-**移至 [Azure 上的開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)**
+### <a name="learn-more"></a>深入了解
 
-**移至 [Microsoft Teams 文件](https://docs.microsoft.com/MicrosoftTeams)**
+- [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
+
+- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
 # <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
 

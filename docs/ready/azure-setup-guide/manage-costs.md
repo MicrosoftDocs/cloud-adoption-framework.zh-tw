@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d1329175f341ca414cc79d2b2fa480ccdb294036
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f80d8de3133f6579673cd9cfc04a1ab2a8660539
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223196"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621604"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -38,13 +38,13 @@ Azure 成本管理提供數種方式來協助您預測和管理成本：
 ### <a name="predict-and-manage-costs"></a>預測和管理成本
 
 1. 移至 [[成本管理 + 帳單](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview)]。
-1. 選取 [成本管理]  。
+1. 選取 [成本管理]。
 1. 探索有助於分析和最佳化雲端成本的功能。
 
 ### <a name="manage-invoices-and-payment-methods"></a>管理發票和付款方式
 
 1. 移至 [[成本管理 + 帳單](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview)]。
-1. 從左窗格中的 [計費]  區段選取 [發票]  或 [付款方式]  。
+1. 從左窗格中的 [計費] 區段選取 [發票] 或 [付款方式]。
 
 ## <a name="billing-and-subscription-support"></a>計費和訂用帳戶支援
 
@@ -55,14 +55,14 @@ Azure 成本管理提供數種方式來協助您預測和管理成本：
 若要提交新的支援要求：
 
 1. 移至 [説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
-1. 選取 [新增支援要求]  。
+1. 選取 [新增支援要求]。
 
 ### <a name="view-a-support-request"></a>檢視支援要求
 
 若要檢視您的支援要求及其狀態：
 
 1. 移至 [説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
-1. 選取 [所有支援要求]  。
+1. 選取 [所有支援要求]。
 
 ## <a name="learn-more"></a>深入了解
 
@@ -81,12 +81,12 @@ Azure 成本管理提供數種方式來協助您預測和管理成本：
 **預測和管理成本：**
 
 1. 移至 [**成本管理 + 帳單**]。
-1. 選取 [成本管理]  。
+1. 選取 [成本管理]。
 
 **管理發票和付款方式：**
 
 1. 移至 [**成本管理 + 帳單**]。
-1. 從左窗格中的 [計費]  區段選取 [發票]  或 [付款方式]  。
+1. 從左窗格中的 [計費] 區段選取 [發票] 或 [付款方式]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview]" submitText="Go to Cost Management + Billing" ::: form-end
 
@@ -99,12 +99,12 @@ Azure 成本管理提供數種方式來協助您預測和管理成本：
 若要提交新的支援要求：
 
 1. 移至 **説明 + 支援**。
-2. 選取 [新增支援要求]  。
+2. 選取 [新增支援要求]。
 
 **檢視支援要求：** 若要檢視您的支援要求及其狀態：
 
 1. 移至 **説明 + 支援**。
-2. 選取 [所有支援要求]  。
+2. 選取 [所有支援要求]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview]" submitText="Go to Help + Support" ::: form-end
 

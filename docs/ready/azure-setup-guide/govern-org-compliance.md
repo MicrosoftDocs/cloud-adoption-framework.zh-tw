@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a44dcdf49d2dad17236f4f1dc009758acf4230fc
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223247"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621634"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -22,11 +22,11 @@ ms.locfileid: "83223247"
 
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
-在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](https://cafbaseline.com)來找出貴組織的雲端治理方法中可能出現的差距。 如需開發治理程序的詳細資訊，請參閱[適用於 Azure 的雲端採用架構治理指引](../../govern/index.md)。
+在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](https://cafbaseline.com)來找出貴組織的雲端治理方法中可能出現的差距。 如需有關開發治理流程的詳細資訊，請參閱[管理方法](../../govern/index.md)。
 
 # <a name="azure-blueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
 
-Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組可重複使用的 Azure 資源，其中實作並遵循組織的標準、模式和需求。 Azure 藍圖可讓開發小組在知道他們是以符合組織合規性進行建置的情況下，快速地建置及建立新環境，並使用內建元件 (例如網路) 加速開發和交貨。
+Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組可重複使用的 Azure 資源，其中實作並遵循組織的標準、模式和需求。 Azure 藍圖可讓開發小組在知道他們是以符合組織合規性進行建置的情況下，快速地建置及建立新環境，並使用內建元件 (像是網路) 加速開發和交貨。
 
 藍圖是以宣告方式來協調部署多種資源範本與其他成品，例如：
 
@@ -41,11 +41,11 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="chromeless"
 
-1. 前往**藍圖 - 使用者入門**。
-1. 在 [建立藍圖]  區段中，選取 [建立]  。
+1. 移至 **[藍圖：開始使用]** 。
+1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
-1. 輸入 [藍圖名稱]  ，然後選取適當的 [定義位置]  。
-1. 選取 [下一步：  成品 >>]，然後檢閱藍圖中包含的成品。
+1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
+1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
 1. 選取 **[儲存草稿]** 。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
@@ -55,11 +55,11 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 ::: zone target="docs"
 
 1. 移至 [[藍圖：開始使用]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
-1. 在 [建立藍圖]  區段中，選取 [建立]  。
+1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
-1. 輸入 [藍圖名稱]  ，然後選取適當的 [定義位置]  。
-1. 選取 [下一步：  成品 >>]，然後檢閱藍圖中包含的成品。
-1. 選取 [儲存草稿]  。
+1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
+1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
+1. 選取 **[儲存草稿]** 。
 
 ::: zone-end
 
@@ -69,10 +69,10 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="chromeless"
 
-1. 前往**藍圖 - 藍圖定義**。
+1. 移至 **藍圖：藍圖定義**。
 1. 選取您在先前步驟中建立的藍圖。
-1. 檢閱藍圖定義，然後選取 [發佈藍圖]  。
-1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]  。
+1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
+1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,10 +80,10 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-1. 移至[藍圖 - 藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
+1. 移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖定義。
-1. 檢閱藍圖定義，然後選取 [發佈藍圖]  。
-1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]  。
+1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
+1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]。
 
 ::: zone-end
 
@@ -127,7 +127,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 若要將原則套用至資源群組：
 
 1. 請移至 [Azure 原則](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/GettingStarted)。
-1. 選取 [指派原則]  。
+1. 選取 [指派原則]。
 
 ## <a name="learn-more"></a>深入了解
 

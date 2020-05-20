@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3cc247866d60b428a908180ba3eda74bb61f8cd3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b7967a97a48e987db623de9abff304a4e0b4458c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224080"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621297"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -61,9 +61,11 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 ::: zone target="docs"
 
-**移至 [IoT 中樞](https://docs.microsoft.com/azure/iot-hub)**
+### <a name="learn-more"></a>深入了解
 
-**移至[裝置佈建服務](https://docs.microsoft.com/azure/iot-dps)**
+- [IoT 中心](https://docs.microsoft.com/azure/iot-hub)
+
+- [Azure IoT 中樞裝置佈建服務 (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
 
@@ -73,8 +75,8 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 若要建立 IoT 中樞：
 
-1. 移至 [IoT 中樞]  。
-2. 選取 [建立 IoT 中樞]  。
+1. 移至 [IoT 中樞]。
+2. 選取 [建立 IoT 中樞]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -82,16 +84,16 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 <!-- markdownlint-enable DOCSMD001 -->
 
-IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實現完全自動的 Just-In-Time 佈建。
+Azure IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實現完全自動的 Just-In-Time 佈建。
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>動作
 
-若要建立 IoT 中樞裝置佈建服務：
+若要建立 Azure IoT 中樞裝置佈建服務：
 
-1. 移至 [IoT 中樞裝置佈建服務]  。
-2. 選取 [建立裝置佈建服務]  。
+1. 移至**裝置佈建服務**。
+2. 選取 [新增]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -113,7 +115,9 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 ::: zone target="docs"
 
-**移至 [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)**
+### <a name="learn-more"></a>深入了解
+
+- [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)
 
 ::: zone-end
 
@@ -123,9 +127,9 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 若要建立 Azure Digital Twins：
 
-1. 在左窗格中選取 [建立資源]  。
-2. 搜尋 **digital twins**，然後選取 [Digital Twins]  。
-3. 選取 [建立]  以啟動部署程序。
+1. 在左窗格中選取 [建立資源]。
+2. 搜尋 **digital twins**，然後選取 [Digital Twins]。
+3. 選取 [建立] 以啟動部署程序。
 4. 若要檢閱現有的 Digital Twins，請選取此按鈕：
 
 <!-- markdownlint-disable DOCSMD001 -->
@@ -150,7 +154,9 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 ::: zone target="docs"
 
-**移至 [Azure 地圖服務](https://docs.microsoft.com/azure/azure-maps)**
+### <a name="learn-more"></a>深入了解
+
+- [Azure 地圖服務](https://docs.microsoft.com/azure/azure-maps)
 
 ::: zone-end
 
@@ -160,8 +166,8 @@ IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實�
 
 若要使用位置智慧：
 
-1. 移至 [Azure 地圖服務帳戶]  。
-2. 選取 [建立 Azure 地圖服務帳戶]  。
+1. 移至 [Azure 地圖服務帳戶]。
+2. 選取 [建立 Azure 地圖服務帳戶]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -185,7 +191,7 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone target="docs"
 
-**移至 [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)**
+- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
 
 ::: zone-end
 
@@ -195,8 +201,8 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 若要使用空間體驗：
 
-1. 移至 [空間錨點帳戶]  。
-2. 選取 [建立空間錨點帳戶]  。
+1. 移至 [空間錨點帳戶]。
+2. 選取 [建立空間錨點帳戶]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -214,9 +220,11 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone target="docs"
 
-**移至 [Azure 遠端轉譯](https://azure.microsoft.com/services/remote-rendering)**
+### <a name="learn-more"></a>深入了解
 
-**移至[使用 Azure 進行轉譯](https://docs.microsoft.com/azure/batch/batch-rendering-service)**
+- [Azure 遠端轉譯](https://azure.microsoft.com/services/remote-rendering)
+
+- [使用 Azure 進行轉譯](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end
 
@@ -226,8 +234,8 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 若要使用遠端轉譯：
 
-1. 移至 [Batch 帳戶]  。
-2. 選取 [建立 Batch 帳戶]  。
+1. 移至 [Batch 帳戶]。
+2. 選取 [建立 Batch 帳戶]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 

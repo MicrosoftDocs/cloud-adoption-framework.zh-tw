@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c1a6ce684998ed3a9a67ad92face8adfdcbce104
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222244"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621346"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -50,8 +50,8 @@ Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP �
 
 若要設定或監視 Azure App Service 部署：
 
-1. 移至 [應用程式服務]  。
-2. 設定新的服務：選取 [新增]  並依照提示執行。
+1. 移至 [應用程式服務]。
+2. 設定新的服務：選取 [新增] 並依照提示執行。
 3. 管理現有服務：從裝載的應用程式清單中選取所需應用程式。
 
 ::: zone target="chromeless"
@@ -74,8 +74,8 @@ Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP �
 
 若要設定或監視 Azure 認知服務部署：
 
-1. 移至 [認知服務]  。
-2. 設定新的服務：選取 [新增]  並依照提示執行。
+1. 移至 [認知服務]。
+2. 設定新的服務：選取 [新增] 並依照提示執行。
 3. 管理現有服務：從裝載的服務清單中選取所需服務。
 
 ::: zone target="chromeless"
@@ -96,8 +96,8 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 若要設定或監視 Azure Bot Service 部署：
 
-1. 移至 [Bot Service]  。
-2. 設定新的服務：選取 [新增]  並依照提示執行。
+1. 移至 [Bot Service]。
+2. 設定新的服務：選取 [新增] 並依照提示執行。
 3. 管理現有服務：從裝載的服務清單中選取所需 Bot。
 
 ::: zone target="chromeless"
@@ -116,7 +116,7 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 ## <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不只提供一個位置，讓您在 iOS、Android、Windows 和 macOS 上測試應用程式。 它還提供一個監視平台，其可使用 Azure Application Insights 輕鬆快速地分析您的遙測。 如需詳細資訊，請參閱 [Visual Studio App Center 概觀](https://docs.microsoft.com/appcenter)。
+隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供了這樣的地方，讓您可以在 iOS、Android、Windows 和 macOS 上測試應用程式，還提供監視平台，讓您得以輕鬆快速地運用 Azure Application Insights 來分析遙測資料。 如需詳細資訊，請參閱 [Visual Studio App Center](https://docs.microsoft.com/appcenter)。
 
 Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能使用單一呼叫來對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)。
 
@@ -164,7 +164,7 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 若要設定或監視 AKS 服務：
 
 1. 移至 **Azure Kubernetes Service**。
-2. 設定新的服務：選取 [新增]  並依照提示執行。
+2. 設定新的服務：選取 [新增] 並依照提示執行。
 3. 管理現有服務：從清單中選取所需的 Kubernetes Service。
 
 ::: zone target="chromeless"
@@ -191,8 +191,8 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 
 若要設定或監視 Azure Functions 部署：
 
-1. 移至 [函式應用程式]  。
-2. 設定新的應用程式：選取 [新增]  並依照提示執行。
+1. 移至 [函式應用程式]。
+2. 設定新的應用程式：選取 [新增] 並依照提示執行。
 3. 管理現有的應用程式：從函式應用程式清單中選取所需的應用程式。
 
 ::: zone target="chromeless"
@@ -221,8 +221,8 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 
 若要設定或監視 Azure 邏輯應用程式：
 
-1. 移至 [Logic Apps]  。
-2. 設定新的應用程式：選取 [新增]  並依照提示執行。
+1. 移至 [Logic Apps]。
+2. 設定新的應用程式：選取 [新增] 並依照提示執行。
 3. 管理現有的應用程式：從清單中選取所需的邏輯應用程式。
 
 ::: zone target="chromeless"
@@ -243,8 +243,8 @@ Azure API 管理是完全受控的服務，其使用量模型的設計與實作�
 
 若要設定或監視 API 管理服務：
 
-1. 移至 [API 管理服務]  。
-2. 設定新的服務：選取 [新增]  並依照提示執行。
+1. 移至 [API 管理服務]。
+2. 設定新的服務：選取 [新增] 並依照提示執行。
 3. 管理現有服務：從清單中選取所需的服務。
 
 ::: zone target="chromeless"
@@ -269,8 +269,8 @@ Azure API 管理是完全受控的服務，其使用量模型的設計與實作�
 
 若要設定或監視容器執行個體：
 
-1. 移至 [容器執行個體]  。
-2. 設定新的容器執行個體：選取 [新增]  並依照提示執行。
+1. 移至 [容器執行個體]。
+2. 設定新的容器執行個體：選取 [新增] 並依照提示執行。
 3. 管理現有的容器執行個體：從清單中選取所需的容器執行個體。
 
 ::: zone target="chromeless"
@@ -287,7 +287,9 @@ Azure API 管理是完全受控的服務，其使用量模型的設計與實作�
 
 Azure Red Hat OpenShift 提供靈活、自助的完全受控 OpenShift 叢集部署。 保持遵循法規，並專注於您的應用程式開發，將主機、基礎結構和應用程式節點的修補、更新及監視作業交給 Microsoft 和 Red Hat。 您可選擇自己的登錄、網路、儲存體或 CI/CD 解決方案。 或者透過自動化原始程式碼管理、容器和應用程式建置、部署、調整、健康狀態管理等服務，使用內建解決方案來迅速開始使用。
 
-**移至 [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
+### <a name="learn-more"></a>深入了解
+
+- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
 
 # <a name="isolate-points-of-failure"></a>[隔離失敗點](#tab/IsolatePointsOfFailure)
 
@@ -301,8 +303,8 @@ Azure Front Door Service 提供了可擴充且安全的進入點，讓您可以�
 
 若要設定或監視 Front Door：
 
-1. 移至 [Front Door]  。
-2. 設定新的 Front Door：選取 [新增]  並依照提示執行。
+1. 移至 [Front Door]。
+2. 設定新的 Front Door：選取 [新增] 並依照提示執行。
 3. 管理現有 Front Door：從清單中選取所需的 Front Door。
 
 ::: zone target="chromeless"
@@ -323,8 +325,8 @@ Azure Front Door Service 提供了可擴充且安全的進入點，讓您可以�
 
 若要設定或監視流量管理員設定檔：
 
-1. 移至 [流量管理員設定檔]  。
-2. 設定新的設定檔：選取 [新增]  並依照提示執行。
+1. 移至 [流量管理員設定檔]。
+2. 設定新的設定檔：選取 [新增] 並依照提示執行。
 3. 管理現有設定檔：從清單中選取所需的設定檔。
 
 ::: zone target="chromeless"
@@ -345,8 +347,8 @@ Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接�
 
 若要設定或監視內容傳遞網路設定檔：
 
-1. 移至 [CDN 設定檔]  。
-2. 設定新的設定檔：選取 [新增]  並依照提示執行。
+1. 移至 [CDN 設定檔]。
+2. 設定新的設定檔：選取 [新增] 並依照提示執行。
 3. 管理現有設定檔：從清單中選取所需的設定檔。
 
 ::: zone target="chromeless"

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214475"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401171"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -43,11 +43,11 @@ Azure Migrate 提供下列功能：
 
 若要使用 Azure Migrate 執行移轉，請遵循下列步驟：
 
-1. 在 [所有服務]  下方搜尋 Azure Migrate。 選取 [Azure Migrate]  以繼續作業。
-1. 選取 [新增工具]  以啟動移轉專案。
+1. 在 [所有服務] 下方搜尋 Azure Migrate。 選取 [Azure Migrate] 以繼續作業。
+1. 選取 [新增工具] 以啟動移轉專案。
 1. 選取要裝載移轉的訂用帳戶、資源群組和地理位置。
-1. 選取 [選取評估工具]   >  **[Azure Migrate：伺服器評量]**  >  [下一步]  。
-1. 選取 [檢閱 + 新增工具]  ，並驗證設定。 選取 [新增工具]  以起始用來建立移轉專案的作業，並註冊選取的解決方案。
+1. 選取 [選取評估工具] >  **[Azure Migrate：伺服器評量]**  >  [下一步]。
+1. 選取 [檢閱 + 新增工具]，並驗證設定。 選取 [新增工具] 以起始用來建立移轉專案的作業，並註冊選取的解決方案。
 
 ### <a name="learn-more"></a>深入了解
 
@@ -64,19 +64,19 @@ Azure Site Recovery 服務可管理將內部部署資源移轉至 Azure 的工�
 
 ### <a name="prepare-azure-site-recovery-service"></a>準備 Azure Site Recovery 服務
 
-1. 在 Azure 入口網站中，選取 [+ 建立資源] > [管理工具] > [備份和 Site Recovery]  。
+1. 在 Azure 入口網站中，選取 [+ 建立資源] > [管理工具] > [備份和 Site Recovery]。
 1. 如果您尚未建立復原保存庫，請完成精靈以建立**復原服務保存庫**資源。
-1. 在 [資源]  功能表中，選取 [Site Recovery] > [準備基礎結構] > [保護目標]  。
-1. 在 [保護目標]  中，選取您需要移轉的項目。
-    1. **VMware：** 選取 [至 Azure] > [是，使用 VMware vSphere Hypervisor]  。
-    1. **實體機器：** 選取 [至 Azure] > [未虛擬化/其他]  。
-    1. **Hyper-V：** 選取 [至 Azure] > [是，使用 Hyper-V]  。 如果 Hyper-V VM 是由 VMM 管理，請選取 [是]  。
+1. 在 [資源] 功能表中，選取 [Site Recovery] > [準備基礎結構] > [保護目標]。
+1. 在 [保護目標] 中，選取您需要移轉的項目。
+    1. **VMware：** 選取 [至 Azure] > [是，使用 VMware vSphere Hypervisor]。
+    1. **實體機器：** 選取 [至 Azure] > [未虛擬化/其他]。
+    1. **Hyper-V：** 選取 [至 Azure] > [是，使用 Hyper-V]。 如果 Hyper-V VM 是由 VMM 管理，請選取 [是]。
 
 ### <a name="configure-migration-settings"></a>設定移轉設定
 
 1. 適當設定來源環境。
 1. 設定目標環境。
-    1. 選取 [準備基礎結構] > [目標]  ，然後選取您要使用的 Azure 訂用帳戶。
+    1. 選取 [準備基礎結構] > [目標]，然後選取您要使用的 Azure 訂用帳戶。
     1. 指定 Resource Manager 部署模型。
     1. Site Recovery 會檢查您是否有一或多個相容的 Azure 儲存體帳戶和網路。
 1. 設定複寫原則。
@@ -85,12 +85,12 @@ Azure Site Recovery 服務可管理將內部部署資源移轉至 Azure 的工�
 
 ### <a name="migrate-to-azure-using-failover"></a>使用容錯移轉移轉至 Azure
 
-1. 在 [設定] > [複寫的項目]  中，選取機器 > [容錯移轉]  。
-1. 在 [容錯移轉]  中，選取容錯移轉的目標**復原點**。 選取最新的復原點。
+1. 在 [設定] > [複寫的項目] 中，選取機器 > [容錯移轉]。
+1. 在 [容錯移轉] 中，選取容錯移轉的目標**復原點**。 選取最新的復原點。
 1. 視需要設定任何加密金鑰設定。
-1. 選取 [Shut down machine before beginning failover] \(先將機器關機再開始容錯移轉)  。 Site Recovery 在觸發容錯移轉之前，會嘗試將虛擬機器關機。 即使關機失敗，仍會繼續容錯移轉。 您可以 [作業] 頁面上追蹤容錯移轉進度。
+1. 選取 [Shut down machine before beginning failover] \(先將機器關機再開始容錯移轉)。 Site Recovery 在觸發容錯移轉之前，會嘗試將虛擬機器關機。 即使關機失敗，仍會繼續容錯移轉。 您可以 [作業] 頁面上追蹤容錯移轉進度。
 1. 確認 Azure VM 如預期般出現在 Azure 中。
-1. 在 [複寫的項目]  中，以滑鼠右鍵按一下 VM，然後選擇 [完成移轉]  。
+1. 在 [複寫的項目] 中，以滑鼠右鍵按一下 VM，然後選擇 [完成移轉]。
 1. 視需要執行任何後續移轉步驟 (請參閱本指南中的相關資訊)。
 
 ::: zone target="chromeless"
@@ -115,9 +115,9 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 
 如果這是您第一次使用 Azure 資料庫移轉服務，您必須為 Azure 訂用帳戶註冊資源提供者：
 
-1. 依序選取 [所有服務]  和 [訂用帳戶]  ，然後選擇目標訂用帳戶。
-1. 選取 [資源提供者]  。
-1. 搜尋 `migration`，然後在 [Microsoft.DataMigration]  右側選取 [註冊]  。
+1. 依序選取 [所有服務] 和 [訂用帳戶]，然後選擇目標訂用帳戶。
+1. 選取 [資源提供者]。
+1. 搜尋 `migration`，然後在 [Microsoft.DataMigration] 右側選取 [註冊]。
 
 ::: zone target="chromeless"
 
@@ -127,8 +127,8 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 
 註冊資源提供者之後，您可以建立 Azure 資料庫移轉服務的執行個體。
 
-1. 選取 [+建立資源]  ，然後在 Marketplace 中搜尋 **Azure 資料庫移轉服務**。
-1. 完成 [建立移轉服務]  精靈，然後選取[建立]  。
+1. 選取 [+建立資源]，然後在 Marketplace 中搜尋 **Azure 資料庫移轉服務**。
+1. 完成 [建立移轉服務] 精靈，然後選取[建立]。
 
 服務現已準備就緒，可移轉支援的源資料庫 (例如 SQL Server、MySQL、PostgreSQL 或 MongoDB)。
 
@@ -160,11 +160,11 @@ Data Migration Assistant (DMA) 可藉由偵測可能對您新版 SQL Server or A
 請使用下列步驟開始使用 Data Migration Assistant：
 
 1. 從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53595)下載並安裝 Data Migration Assistant。
-1. 選取 [新增 (+)]  圖示，然後選取 [評估]  專案類型。
-1. 設定來源和目標伺服器類型，然後選取 [建立]  。
+1. 選取 [新增 (+)] 圖示，然後選取 [評估] 專案類型。
+1. 設定來源和目標伺服器類型，然後選取 [建立]。
 1. 視需要設定評估選項 (建議使用所有預設值)。
 1. 新增要評估的資料庫。
-1. 選取 [下一步]  開始進行評估。
+1. 選取 [下一步] 開始進行評估。
 1. 在 Data Migration Assistant 工具集內檢視結果。
 
 對於企業，我們建議依照[使用 DMA 評估企業及整合評估報告](https://docs.microsoft.com/sql/dma/dma-consolidatereports)中所述的方法來評估多個伺服器、結合報告，然後使用提供的 Power BI 報告來分析結果。
@@ -197,13 +197,13 @@ Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動
 
 - [資料庫測試助理概觀](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
-## <a name="cosmos-db-data-migration-tool"></a>Cosmos DB 資料移轉工具
+## <a name="azure-cosmos-db-data-migration-tool"></a>Azure Cosmos DB 資料移轉工具
 
 Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cosmos DB 集合和資料表。 您可以從 JSON 檔案、CSV 檔案、SQL、MongoDB、Azure 資料表儲存體、Amazon DynamoDB 及 Azure Cosmos DB SQL API 集合匯入資料。 針對 SQL API 從單一分割區集合移轉到多重分割區集合時，也可以使用資料移轉工具。
 
 如需詳細資訊，請參閱
 
-- [Cosmos DB 資料移轉工具](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- [Azure Cosmos DB 資料移轉工具](https://docs.microsoft.com/azure/cosmos-db/import-data)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -241,7 +241,7 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 [深入了解](https://www.movere.io)
 
-## <a name="cosmos-db-partners"></a>Cosmos DB 合作夥伴
+## <a name="azure-cosmos-db-partners"></a>Azure Cosmos DB 合作夥伴
 
 您可從各式各樣資深的系統整合者合作夥伴和工具中選擇，以針對 NoSQL 資料庫需求支援 Azure Cosmos DB 移轉。
 
