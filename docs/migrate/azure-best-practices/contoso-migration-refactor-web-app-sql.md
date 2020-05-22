@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 24259e0d9f011241a503aca143f4d03c2dc1fe6a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223638"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756017"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -107,7 +107,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用受完整管理的平台建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -126,8 +126,8 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 > [!div class="checklist"]
 >
-> - **步驟1：在 Azure 中布建 SQL Database 實例。** Contoso 會在 Azure 中佈建 SQL 執行個體。 當應用程式網站遷移至 Azure 之後，WCF 服務的 Web 應用程式會指向這個執行個體。
-> - **步驟2：使用 Azure 資料庫移轉小幫手（DMA）評估資料庫，並遷移資料庫移轉服務（DMS）。** Contoso 會評估要進行遷移的資料庫，然後使用 Azure 資料移轉服務來遷移應用程式資料庫。
+> - **步驟1：在 Azure 中布建 SQL Database 實例。** Contoso 會在 Azure 中佈建 SQL 執行個體。 將應用程式網站遷移至 Azure 之後，WCF 服務 web 應用程式會指向這個實例。
+> - **步驟2：使用 Azure 資料庫移轉小幫手（DMA）來評估資料庫，並使用資料庫移轉服務（DMS）進行遷移。** Contoso 會評估要進行遷移的資料庫，然後使用 Azure 資料移轉服務來遷移應用程式資料庫。
 > - **步驟3：布建 web 應用程式。** Contoso 會佈建兩個 Web 應用程式。
 > - **步驟4：設定 Azure DevOps。** Contoso 會建立新的 Azure DevOps 專案，並匯入 Git 存放庫。
 > - **步驟5：設定連接字串。** Contoso 會設定連接字串，以便 Web 層的 Web 應用程式、WCF 服務的 Web 應用程式和 SQL 執行個體進行通訊。
@@ -165,7 +165,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 - [說明](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)如何佈建 SQL Database。
 - [深入瞭解](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)vCore 資源限制。
 
-## <a name="step-2-assess-the-database-with-database-migration-assistant-dma-and-migrate-with-azure-database-migration-service-dms"></a>步驟2：使用資料庫移轉小幫手（DMA）評估資料庫，並使用 Azure 資料庫移轉服務（DMS）進行遷移
+## <a name="step-2-assess-the-database-using-database-migration-assistant-dma-and-migrate-it-using-azure-database-migration-service-dms"></a>步驟2：使用資料庫移轉小幫手（DMA）來評估資料庫，並使用 Azure 資料庫移轉服務（DMS）進行遷移
 
 Contoso 管理員會使用資料庫移轉小幫手（DMA）來評估資料庫，然後使用 Azure 資料庫移轉服務（DMS），透過[逐步遷移教學課程來](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)進行遷移。 他們可以執行線上、離線和混合式（預覽）的遷移。
 
@@ -294,7 +294,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
 12. 在 [**管線 > 成品**] 上，選取 [ **+ 新增**成品]，然後選取 [使用**ContosoSmarthotel360Refactor**管線建立]。
 
-     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![組建](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. 他們會確認已核取成品上的閃電，以啟用持續部署觸發程式。
 

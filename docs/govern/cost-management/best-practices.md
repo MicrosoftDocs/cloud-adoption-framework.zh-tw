@@ -3,16 +3,16 @@ title: Azure 資源的成本和大小調整
 description: 使用適用于 Azure 的雲端採用架構，以瞭解在 Azure 中成本和調整資源大小的最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df2231a5e60bebf25124cfdc42110c13f80833e3
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ad35877a912fd9d52a74c7f44c91bd9fedb559a5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400656"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755119"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "83400656"
 
 ## <a name="best-practices-by-team-and-accountability"></a>小組和責任的最佳做法
 
-整個企業的成本管理是雲端治理和雲端作業功能。 不過，所有成本管理決策都會導致支援工作負載的資產變更。 當這些變更影響到工作負載的架構時，需要額外的考慮，以將對使用者和商務功能的影響降至最低。 設定或開發該工作負載的雲端採用小組可能會持有完成這些變更類型的責任。
+整個企業的成本管理是雲端治理和雲端作業功能。 所有成本管理決策都會導致支援工作負載的資產變更。 當這些變更影響到工作負載的架構時，需要額外的考慮，以將對使用者和商務功能的影響降至最低。 設定或開發該工作負載的雲端採用小組可能會持有完成這些變更類型的責任。
 
 - **標記對所有治理而言都很重要。** 請確定所有的工作負載和資源都遵循[適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md)，並[使用 Azure 原則強制執行標記慣例](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)。
 - **識別適當的大小商機。** 在整個環境中檢查您目前的資源使用率和效能需求。
@@ -48,10 +48,10 @@ ms.locfileid: "83400656"
 
 ## <a name="workload-cost-management-best-practices"></a>工作負載成本管理最佳做法
 
-在進行架構變更之前，請洽詢工作負載的技術潛在客戶。 使用[Azure 架構審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review)和[azure 架構](https://docs.microsoft.com/azure/architecture/framework)架構來引導工作負載的審查，以指導有關下列類型的架構變更的決策。
+在進行架構變更之前，請洽詢工作負載的技術潛在客戶。 使用[Microsoft Azure 良好架構的審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review)和[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)，來引導工作負載的審核，以指引有關下列架構變更類型的決策。
 
 - **Azure App Service。** 確認任何進階層 App Service 方案的生產需求。 若不了解工作負載和基礎資產設定的商務需求，就很容易判斷是否需要高階層方案。
-- **水準高於垂直尺規。** 使用多個小型實例可讓您更輕鬆地調整單一較大實例的路徑。 這可讓您進行調整自動化，以建立成本優化。 但是，在工作負載可以水準調整之前，技術小組必須確認應用程式具有等冪性。 若要達到水準調整，可能必須先變更應用程式之各層的程式碼和設定。
+- **水準高於垂直尺規。** 使用多個小型實例可讓您更輕鬆地調整單一較大實例的路徑。 這可讓您進行調整自動化，以建立成本優化。 技術小組必須先確認應用程式是否為等冪，才可水準調整工作負載。 若要達到水準調整，可能必須先變更應用程式之各層的程式碼和設定。
 - **自動調整.** 在所有應用程式服務上啟用自動調整，以允許高載的較小 Vm 數目。 啟用自動調整具有相同的等冪需求，這需要瞭解工作負載架構。 在任何操作變更之前，工作負載和支援的資產都必須經過核准，以供採用小組進行水準調整和自動縮放。
 - **執行無伺服器技術：** VM 工作負載通常會以「原樣」遷移，以避免停機。 VM 通常可能裝載間歇性工作，因此需要短時間執行，或者需要數小時執行。 例如，執行已排定工作 (例如 Windows 工作排程器或 PowerShell 指令碼) 的 VM。 當這些工作未執行時，您仍然必須吸收 VM 與磁碟儲存體成本。 在遷移之後，請考慮將工作負載的重新架構層轉換成無伺服器技術，例如 Azure Functions 或 Azure Batch 作業。
 
@@ -93,7 +93,7 @@ ms.locfileid: "83400656"
 
 當您部署 Azure VM 以支援工作負載時，您可以選擇數個選項。 每個 VM 類型都有特定的功能與不同的 CPU、記憶體與磁碟組合。 VM 會依下列方式分組：
 
-| **型別** | **詳細資料** | **使用** |
+| **類型** | **詳細資料** | **使用** |
 |---|---|---|
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中磁片區。 | 流量 web 伺服器。 |
 | **計算最佳化** | CPU 與記憶體的比例高。 | 適用於中流量 Web 伺服器、網路設備、批次處理、應用程式伺服器。 |
@@ -169,7 +169,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 儲存體帳戶可以使用不同類型的備援選項來獲得備援能力與高可用性。
 
-| **型別** | **詳細資料** | **使用量** |
+| **類型** | **詳細資料** | **使用量** |
 | --- | --- | --- |
 | **本機備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 在指定的一年內提供至少99.999999999% （11個9）的物件持久性。 | 當您的應用程式存放可輕鬆重建的資料可以考慮使用。 |
 | **區域冗余儲存體（ZRS）** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集的實體位置都不同，而且都位於自己的可用性區域中。 藉由在多個資料中心或區域中保留多個資料複本，在指定的一年內提供至少99.9999999999 百分比（12個9）的持久性。 | 當您需要一致性、持久性與高可用性時可以考 慮使用。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。 |
@@ -270,7 +270,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 **瞭解更多資訊：**
 
 - [使用標記](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)來識別用於調整大小或終止的開發、測試或 QA 目標。
-- [Autoshutdown vm](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms)會為 vm 設定夜間終止時間。 使用這項功能將會每晚停止非生產 Vm，要求開發人員在準備好繼續開發時，重新開機這些 Vm。
+- [Autoshutdown vm](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms)會為 vm 設定夜間終止時間。 使用這項功能將會每晚停止非生產 Vm，要求開發人員在準備好繼續開發時重新開機這些 Vm。
 - 鼓勵開發小組使用[Azure DevTest Labs](https://docs.microsoft.com/azure/lab-services/devtest-lab-overview)來建立自己的成本控制方法，並避免在先前步驟中進行標準自動關機時間的影響。
 
 ## <a name="best-practice-use-azure-cost-management"></a>最佳做法：使用 Azure 成本管理
@@ -348,7 +348,7 @@ Azure Advisor 成本建議會識別降低成本的機會。 當預算顯示 [高
 
 ## <a name="best-practice-optimize-storage"></a>最佳做法：優化儲存體
 
-如果您遵循在採用之前選取儲存體的最佳作法，您可能會享受某些優點。 不過，可能有您仍可以最佳化的其他儲存體成本。 Blob 與檔案會隨著時間而變成過時。 資料可能無法再使用，但法規需求可能表示您必須將它保存一段時間。 因此，您可能不需要將它儲存在用於原始採用的高效能儲存體上。
+如果您遵循在採用之前選取儲存體的最佳作法，您可能會享受某些優點。 您可能會將一些額外的儲存成本優化。 經過一段時間後，blob 和檔案會變得過時。 資料可能無法再使用，但法規需求可能表示您必須將它保存一段時間。 因此，您可能不需要將它儲存在用於原始採用的高效能儲存體上。
 
 找出過時資料並移動到較便宜的儲存體區域對您的每月儲存體預算與成本節省會有大幅影響。 Azure 提供許多方式來協助您找出並存放此類過時資料。
 

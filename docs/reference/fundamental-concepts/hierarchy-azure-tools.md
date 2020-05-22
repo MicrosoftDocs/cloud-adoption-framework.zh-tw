@@ -3,16 +3,16 @@ title: Azure 產品如何支援組合階層？
 description: Azure 產品如何支援組合階層？
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a4ff0091473a7ea2882625dcbffe2f00d91b4ff6
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 17d6368eb8e0d55e8ad8107601a690046af1c2e9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401217"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755626"
 ---
 <!-- markdownlint-disable MD026 -->
 

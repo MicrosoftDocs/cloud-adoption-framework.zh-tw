@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 107385f48f43b449fd835b5ac28aa0a9ebb5207f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cb974cd5ed319dfd72a1c9342b92e9eb60a35f77
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433067"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754371"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>配合公司原則來調整您的雲端治理設計指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "80433067"
 
 雖然您的風險分析和原則聲明可能會有某種程度的不受雲端平臺限制，但您的設計指南應該提供您的 IT 和開發小組在建立和部署雲端式工作負載時所能使用的平臺特定的執行詳細資料。 進行設計決策和提供指引時，專注於您所選擇平台的架構、工具和功能。
 
-雲端設計指南應該納入與每個基礎結構元件相關聯的一些技術詳細資料，它們不一定是廣泛的技術文件或規格。 請確定您的指南會處理您的原則聲明，並以方便員工瞭解和參考的格式，清楚陳述設計決策。
+雖然雲端設計指南應該將與每個基礎結構元件相關聯的一些技術細節納入考慮，但它們並不是很廣泛的技術檔或規格。 請確定您的指南會處理您的原則聲明，並以方便員工瞭解和參考的格式，清楚陳述設計決策。
 
 <!-- markdownlint-enable MD033 -->
 

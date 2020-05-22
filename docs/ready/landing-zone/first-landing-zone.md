@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: bab10ca8c3055cfa3b2ca94bec0eb8f052a096de
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621777"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755720"
 ---
 # <a name="first-landing-zone"></a>第一個登陸區域
 
@@ -48,7 +48,7 @@ D. 當合作夥伴提供持續進行的受控服務，或已合約為採用計�
 
 | 登陸區域                                 | 中樞                          | 分支    | 雲端模型 | 技術      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [CAF 移轉登陸區域](./migrate-landing-zone.md)     | 需要重構            | 內含 | 僅限 Azure  | Azure Blueprint |
+| [CAF 移轉登陸區域](./migrate-landing-zone.md)     | 需要重構            | 內含 | 僅限 Azure  | Azure 藍圖 |
 | [CAF Terraform 登陸區域](./terraform-landing-zone.md) | 包含在 VDC 模組中       | 內含 | 多重雲端  | Terraform       |
 
 ## <a name="next-steps"></a>後續步驟

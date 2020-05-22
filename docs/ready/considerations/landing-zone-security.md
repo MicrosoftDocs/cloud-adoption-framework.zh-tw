@@ -3,16 +3,16 @@ title: 改善登陸區域安全性
 description: 改善登陸區域安全性
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3debb2057b4f4a6c925b62b3d783c135c5d2b3bb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215172"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756493"
 ---
 <!-- cSpell:ignore SIEM -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "83215172"
 
 ## <a name="test-driven-development-cycle"></a>以測試為導向的開發週期
 
-開始任何安全性改進之前，請務必瞭解「完成定義」和所有「接受條件」。 如需詳細資訊，請參閱在 azure 中進行登陸區域和[測試導向開發](./azure-test-driven-development.md)的[測試導向開發](./test-driven-development.md)文章。
+開始任何安全性改進之前，請務必瞭解「完成定義」和所有「接受條件」。 如需詳細資訊，請參閱在 Azure 中進行登陸區域和[測試導向開發](./azure-test-driven-development.md)的[測試導向開發](./test-driven-development.md)文章。
 
 ![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
 

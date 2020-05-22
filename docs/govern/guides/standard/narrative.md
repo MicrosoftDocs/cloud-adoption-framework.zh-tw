@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218776"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754717"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
@@ -21,9 +21,9 @@ ms.locfileid: "83218776"
 
 ## <a name="back-story"></a>背景故事
 
-董事會今年開始計劃以多種方式為企業注入活力。 他們將推動改善客戶體驗以獲得市場佔有率的領導地位。 他們也將推動新產品和服務，將公司定位為業界的思想領導者。 他們同時還盡力減少浪費並縮減不必要的成本。 雖然令人生畏，但董事會和領導階層的行動展現出這項工作將盡可能地將資金集中投入未來發展。
+董事會今年開始計劃以多種方式為企業注入活力。 他們會領導領先地位來改善客戶體驗，以取得市場份額。 他們也會推播新產品和服務，將公司定位為業界的思維領導者。 他們同時還盡力減少浪費並縮減不必要的成本。 雖然令人生畏，但董事會和領導階層的行動展現出這項工作將盡可能地將資金集中投入未來發展。
 
-在過去，公司的 CIO 已從這些策略性交談中排除。 但是，未來的願景在本質上與技術發展息息相關，因此 IT 擁有一席之地，可以幫助指導這些重大計劃。 IT 現在應該以新的方式提供。 小組尚未針對這些變更進行準備，而且很可能會與學習曲線一起困難。
+在過去，公司的 CIO 已從這些策略性交談中排除。 因為未來的願景會在本質上連結到技術成長，所以在資料表上有基座可協助引導這些大型計畫。 IT 現在應該以新的方式提供。 小組尚未針對這些變更進行準備，而且很可能會與學習曲線一起困難。
 
 ## <a name="business-characteristics"></a>商務特性
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218300"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755966"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 
@@ -23,7 +23,7 @@ ms.locfileid: "83218300"
 
 對於跨國組織而言，相容性是一項挑戰，特別是在醫療保健和金融服務等嚴格管制的產業中。 標準和法規為數眾多，而在某些情況下，可能會經常變更，讓企業難以掌握不斷改變的國際電子資料處理法規。
 
-在安全性控制方面，組織應該了解有關雲端法規合規性的職責劃分。 雲端提供者致力於確保其平台和服務符合規範。 但組織也需要確認其應用程式、應用程式所依賴的基礎結構，以及協力廠商所提供的服務，也會通過合規性認證。
+在安全性控制方面，組織應該了解有關雲端法規合規性的職責劃分。 雲端提供者致力於確保其平台和服務符合規範。 組織也需要確認其應用程式、這些應用程式所依賴的基礎結構，以及協力廠商所提供的服務，也會通過合規性認證。
 
 以下是各種產業和地理區域的合規性法規說說明：
 
@@ -54,7 +54,7 @@ ms.locfileid: "83218300"
 
 - 全域
 - 美國政府
-- 業界
+- 產業
 - 地區
 
 Azure 合規性供應項目會以各種類型的保證為基礎，包括由獨立第三方稽核公司所產生的正式認證、證明、驗證、授權及評量，以及由 Microsoft 產生的契約修訂、自我評量及客戶指引文件。 本文件中的每個供應項目描述都會提供最新的範圍聲明，指出評量範圍包含哪些 Azure 客戶面向服務，並提供可下載的資源連結，以協助客戶履行自己的合規性義務。

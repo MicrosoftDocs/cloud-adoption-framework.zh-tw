@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bbe36f12e6331a85f024af1835b66c30e35bf430
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e11fb95356f4f7364b544e896a4566b1a3188e85
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218640"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754462"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>身分識別基準計量、指示器和風險承受度
 
@@ -40,7 +40,7 @@ ms.locfileid: "83218640"
 
 ## <a name="risk-tolerance-indicators"></a>風險承受度指標
 
-與身分識別基準相關的風險，主要與貴組織身分識別基礎結構的複雜性有關。 如果您使用單一目錄或雲端原生身分識別提供者來管理所有的使用者和群組，而不需要與其他服務進行最少的整合，您的風險層級可能會很小。 不過，當您的業務需求成長時，您的身分識別管理系統可能需要支援更複雜的案例，例如多個目錄，以支援您的內部組織或與外部身分識別提供者的同盟。 當這些系統越來越複雜時，風險就會增加。
+與身分識別基準相關的風險，主要與貴組織身分識別基礎結構的複雜性有關。 如果您使用單一目錄或雲端原生身分識別提供者來管理所有的使用者和群組，而不需要與其他服務進行最少的整合，您的風險層級可能會很小。 當您的業務需求成長時，您的身分識別管理系統可能需要支援更複雜的案例，例如多個目錄，以支援您的內部組織或與外部識別提供者的同盟。 當這些系統越來越複雜時，風險就會增加。
 
 在雲端採用的早期階段，您可以與 IT 安全性小組和業務專案關係人合作，以識別與身分識別相關的[業務風險](./business-risks.md)，然後決定可接受的身分識別風險承受度基準。 雲端採用架構的這一節會提供範例，但您公司或部署的詳細風險和基準可能會有所不同。
 

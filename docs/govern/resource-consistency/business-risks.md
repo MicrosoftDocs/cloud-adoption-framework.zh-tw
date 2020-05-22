@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218249"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755942"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>資源一致性專業領域中的動機和業務風險
 
@@ -23,7 +23,7 @@ ms.locfileid: "83218249"
 
 ## <a name="relevance"></a>相關性
 
-談到部署資源和工作負載，雲端提供比多數傳統內部部署資料中心更高的靈活度和彈性。 不過，這些潛在的雲端優勢也伴隨潛在管理缺點，可能嚴重危害您雲端採用的成功。 您已經部署哪些資產？ 哪些小組擁有何種資產？ 您有足夠支援工作負載的資源嗎？ 如何知道工作負載是否狀況良好？
+談到部署資源和工作負載，雲端提供比多數傳統內部部署資料中心更高的靈活度和彈性。 這些潛在的雲端優勢也會帶來潛在的管理缺點，而可能會嚴重危害雲端採用的成功與否。 您已經部署哪些資產？ 哪些小組擁有何種資產？ 您有足夠支援工作負載的資源嗎？ 如何知道工作負載是否狀況良好？
 
 資源一致性非常重要，可確保資源會以可重複的方式一致地部署、更新及設定，而且服務中斷會盡可能降到最低並在最短時間內補救。
 

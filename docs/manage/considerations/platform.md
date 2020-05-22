@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8c79c5fe2069d73a9f488f82700f7a96a7c24829
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9c493436196a8cf95453d1822dfa43df0fa6b5c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223910"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755983"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 
@@ -55,7 +55,7 @@ IT 組合中的資產快速研究著重于所支援工作負載的模式。 在�
 - **管理：** 讓系統在生產環境中執行的工作處理程式。
 - **安全性：** 保護應用程式和資料免于遭受威脅。
 
-[Azure 架構](https://docs.microsoft.com/azure/architecture/guide/pillars)架構提供評估特定工作負載以遵循這些要素的方法，以改善整體作業。 這些支柱可以同時套用至平臺作業和工作負載作業。
+[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/guide/pillars)提供評估特定工作負載以遵循這些要素的方法，以改善整體作業。 這些支柱可以同時套用至平臺作業和工作負載作業。
 
 ## <a name="get-started-with-specific-platforms"></a>開始使用特定平臺
 

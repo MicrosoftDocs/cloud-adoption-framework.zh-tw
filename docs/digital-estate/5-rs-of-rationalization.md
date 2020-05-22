@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214798"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753565"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -21,7 +21,7 @@ ms.locfileid: "83214798"
 
 ## <a name="rationalization-context"></a>合理化內容
 
-這篇文章中所列的「「合理化」的「五大」是一種很好的方式，為任何視為雲端候選人的工作負載標示可能的未來狀態。 不過，在您嘗試合理化環境之前，必須先將此標籤程式放入正確的內容中。 請參閱下列誤解以提供該內容：
+這篇文章中所列的_五大合理化_，是為任何被視為雲端候選人的工作負載，加上可能未來狀態的好方法。 在您嘗試合理化環境之前，必須先將此標籤程式放入正確的內容中。 請參閱下列誤解以提供該內容：
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>迷思：在程式初期做出合理化決策很容易
 

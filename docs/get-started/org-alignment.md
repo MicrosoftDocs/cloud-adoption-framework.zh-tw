@@ -3,16 +3,16 @@ title: 開始使用：調整您的組織
 description: 調整組織的建議步驟，讓您準備好成功採用雲端。
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f40e0ecf16ceb1d3af7c3b99eb111d09a975b6da
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b4914cfadb3b94d997861c233e524d966aabe107
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621173"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752596"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：調整您的組織
 
@@ -45,7 +45,7 @@ ms.locfileid: "83621173"
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>步驟3：判斷小組在您組織內的一致程度
 
-下列組織結構不一定要對應至組織架構（組織結構圖）。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。 
+下列組織結構不一定要對應至組織架構（組織結構圖）。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。
 
 在 agile 矩陣組織中，這些結構可能會以虛擬小組（v 團隊）的形式最佳呈現。 不建議將 v 小組表示在組織結構中，但不需要正式的組織結構來產生有效的作業模型。
 

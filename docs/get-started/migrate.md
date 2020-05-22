@@ -3,16 +3,16 @@ title: 開始使用：加速移轉
 description: 專案關係人對齊、遷移計畫、部署登陸區域，以及遷移前10個工作負載的建議步驟。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c61f18aaa2814d9ac92e176524ef9fb448f67a4
-ms.sourcegitcommit: 605752e331f6d8d8ab98d79f400f74f96d7c6a48
+ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83424110"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752843"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -33,7 +33,7 @@ ms.locfileid: "83424110"
 
 ## <a name="get-started"></a>開始使用
 
-遷移工作負載所需的技術工作和流程相當簡單。 請務必有效率地完成遷移程式。 但是策略遷移的就緒程度對時間軸的影響更大，而且整體遷移已成功完成。
+遷移工作負載所需的技術工作和流程相當簡單。 請務必有效率地完成遷移程式。 策略遷移的準備工作對時間軸有更大的影響，並已成功完成整體遷移。
 
 若要加速採用，您必須在遷移期間採取步驟來支援雲端採用小組。 本指南概述這些反復工作，以協助客戶在任何雲端遷移的正確路徑上開始作業。 為了顯示支援步驟的重要性，在本文中，會將遷移列為步驟10。 事實上，雲端採用小組很可能會與步驟4或5平行開始進行第一次試驗遷移。
 
@@ -181,7 +181,7 @@ ms.locfileid: "83424110"
 
 ![反復式遷移工作的階段：評估、部署、發行](../_images/migrate/methodology-effort-only.png)
 
-雲端遷移工具可讓您在單一階段或反復專案中遷移資料中心內的所有 Vm。 在每個反復專案中遷移較少的工作負載是較常見的。 將遷移分解成較小的波浪或版本，需要更多的規劃。 但較小的數位則會降低技術風險，以及組織變更管理的影響。
+雲端遷移工具可讓您在單一階段或反復專案中遷移資料中心內的所有 Vm。 在每個反復專案中遷移較少的工作負載是較常見的。 將遷移分解成較小的波浪或版本需要更多的規劃，但較小的數位可降低技術風險，以及組織變更管理的影響。
 
 在每次反覆運算中，雲端採用小組在遷移工作負載方面都更好。 這些步驟會在此成熟度曲線上啟動技術小組：
 
@@ -212,8 +212,7 @@ ms.locfileid: "83424110"
 
 - 部署初始的治理基礎。
 - 完成治理基準測試，以規劃未來的改進。
-- 時程表風險：
-    - 改進原則和治理實行可以為每個專業領域新增一到四周。
+- 時程表風險：改進原則和治理實行可以為每個專業領域新增一到四周。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -235,10 +234,10 @@ Operations management 是另一項需求，可達到遷移成功。 將個別工
 
 - 部署管理基準。
 - 完成 operations management 活頁簿。
-- 識別任何需要 Azure 架構審查評量的工作負載。
+- 找出需要 Microsoft Azure 架構良好審查評量的任何工作負載。
 - 時程表風險：
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
-  - 完成 Azure 架構審查評估：每個應用程式估計一小時。
+  - 完成 Microsoft Azure 架構良好的審查評估：每個應用程式估計一小時。
 
 <!-- markdownlint-disable MD033 -->
 <br>

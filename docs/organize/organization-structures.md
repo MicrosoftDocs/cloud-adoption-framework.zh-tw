@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 777f89ea13c33ad5318c221d07c7c8ea3958c06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9e4358b631008ef83a7b2635d5c2774a1e059815
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621435"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755262"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "83621435"
 5. [操作對齊](#operational-alignment)
 6. [卓越的雲端中心（CCoE）](#cloud-center-of-excellence)
 
-大部分的公司從_雲端採用小組_開始。 不過，我們建議您建立更類似[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構的組織結構。
+大部分的公司從_雲端採用小組_開始。 但我們建議您建立一個與[MVP 最佳作法](#best-practice-minimum-viable-product-mvp)結構更相似的組織結構。
 
 ## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
 
@@ -64,7 +64,7 @@ ms.locfileid: "83621435"
 
 隨著採用規模的調整，雲端治理小組可能會努力與來自多個雲端採用小組的創新流程保持一致。 這在具有大量合規性、作業或安全性需求的環境中更是如此。 在這個階段，公司通常會將雲端責任轉移給現有的中央 IT 小組。 如果該小組可以重新評估工具、處理常式和人員，以更大規模地支援雲端採用，則包含中央 IT 小組可以增加顯著的價值。 從營運、自動化、安全性及系統管理的主題專家，到現代化的中央 IT，都能推動有效的營運創新。
 
-可惜的是，中央 IT 階段可以是組織成熟度的其中一個風險最高階段。 中央 IT 小組必須加入具有強大成長思維的資料表。 如果小組將雲端視為成長和調整的機會，則可以在整個過程中提供絕佳價值。 不過，如果中央 IT 小組將雲端採用主要視為其現有模型的威脅，則中央 IT 小組會成為雲端採用小組及其所支援之商務目標的障礙。 有些中央 IT 小組花了數個月或甚至幾年的時間，嘗試強制雲端與內部部署的方法保持一致，只有負面的結果。 雲端不需要在中央 IT 中變更所有專案，但需要進行重大變更。 如果 IT 小組在中央 IT 團隊內的防禦改變，此一階段的成熟度可能很快就會成為文化反模式。
+可惜的是，中央 IT 階段可以是組織成熟度的其中一個風險最高階段。 中央 IT 小組必須加入具有強大成長思維的資料表。 如果小組將雲端視為成長和調整的機會，則可以在整個過程中提供絕佳價值。 但是，如果中央 IT 小組將雲端採用主要視為其現有模型的威脅，則中央 IT 小組會成為雲端採用小組及其所支援之商務目標的障礙。 有些中央 IT 小組花了數個月或甚至幾年的時間，嘗試強制雲端與內部部署的方法保持一致，只有負面的結果。 雲端不需要在中央 IT 中變更所有專案，但需要進行重大變更。 如果 IT 小組在中央 IT 團隊內的防禦改變，此一階段的成熟度可能很快就會成為文化反模式。
 
 雲端採用方案的重點在於平臺即服務（PaaS）、DevOps 或其他需要較少作業支援的解決方案，較不可能在此成熟度階段看到價值。 相反地，這些類型的解決方案最可能是藉由嘗試集中進行妨礙運作或封鎖。 較高的成熟度層級（像是[雲端的卓越（CCoE））](#cloud-center-of-excellence)更可能會針對這些類型的轉型成果產生正面的結果。 若要瞭解雲端中中央 IT 與 CCoE 之間的差異，請參閱[卓越的雲端中心](./cloud-center-of-excellence.md)。
 

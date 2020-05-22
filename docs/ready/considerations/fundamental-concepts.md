@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04cd90b03565eb2aa7895f52b7d2ece296904a1f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 02bd4f4c36df13b91c0338c32e40538d617ac229
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620393"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756544"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -60,11 +60,11 @@ Azure 會定義三種類型的角色來管理訂用帳戶、身分識別和資�
 - Azure 角色型存取控制（RBAC）角色。
 - Azure Active Directory （Azure AD）系統管理員角色。
 
-Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 帳戶管理員是訂用帳戶的帳單擁有者。 帳戶管理員可以在 [Azure 帳戶中心](https://account.azure.com/subscriptions)中管理訂用帳戶詳細資料。
+Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 帳戶管理員是訂用帳戶的帳單擁有者。 帳戶管理員可以在[Azure 帳戶中心](https://account.azure.com/subscriptions)管理訂用帳戶詳細資料。
 
 根據預設，訂用帳戶的服務管理員角色也會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 服務管理員具有的訂用帳戶權限等同 RBAC 的擁有者角色。 服務管理員也可完整存取 Azure 入口網站。 帳戶管理員可以將服務管理員變更為不同的電子郵件帳戶。
 
-當您建立 Azure 訂用帳戶時，您可以將訂用帳戶與現有的 Azure AD 租用戶建立關聯。 否則，會建立具有相關聯目錄的新 Azure AD 租用戶。 Azure AD 目錄中的全域管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。
+當您建立 Azure 訂用帳戶時，您可以將訂用帳戶與現有的 Azure AD 租用戶建立關聯。 否則，會建立具有相關聯目錄的新 Azure AD 租用戶。 Azure AD 目錄中全域管理員的角色會指派給用來建立 Azure AD 訂閱的電子郵件帳戶。
 
 電子郵件帳戶可以與多個 Azure 訂用帳戶相關聯。 帳戶管理員可以將訂用帳戶轉移到另一個帳戶。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 76da764cb9ab4841f4947b22ae61f1f0048b4dfa
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400817"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756187"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -66,9 +66,9 @@ Azure 監視器有四種類型的警示，每個都與儲存資料的儲存機�
 
 - [記錄查詢警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query)：可用於 Application Insights 或 Azure 記錄存放區中的內容警示。 它也可以根據跨工作區查詢來發出警示。
 
-- [活動記錄警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log)：活動記錄存放區中專案的警示，但服務健康狀態資料除外。
+- [活動記錄警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log)：活動記錄存放區中專案的警示，但 Azure 服務健康狀態資料除外。
 
-- [服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications)：特殊類型的警示，僅用於來自活動記錄存放區的服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
+- [Azure 服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications)：特殊類型的警示，僅用於來自活動記錄存放區的 Azure 服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
 
 ### <a name="enable-alerting-through-partner-tools"></a>透過合作夥伴工具啟用警示
 
@@ -128,4 +128,4 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 ### <a name="best-query-experience"></a>最佳查詢體驗
 
-如果您要尋找所有資料的趨勢，請將您的所有資料匯入到 Azure 記錄檔中，除非它已經在 Application Insights 中。 您可以跨這兩個工作區建立查詢，因此不需要在兩者之間移動資料。 您也可以將活動記錄檔和服務健康狀態資料匯入 Log Analytics 工作區。 您需要為這項內嵌和儲存體付費，但您可以在一處取得所有資料，以進行分析和查詢。 此方法也可讓您建立複雜的查詢準則並對其發出警示。
+如果您要尋找所有資料的趨勢，請將您的所有資料匯入到 Azure 記錄檔中，除非它已經在 Application Insights 中。 您可以跨這兩個工作區建立查詢，因此不需要在兩者之間移動資料。 您也可以將活動記錄檔和 Azure 服務健康狀態資料匯入 Log Analytics 工作區。 您需要為這項內嵌和儲存體付費，但您可以在一處取得所有資料，以進行分析和查詢。 此方法也可讓您建立複雜的查詢準則並對其發出警示。

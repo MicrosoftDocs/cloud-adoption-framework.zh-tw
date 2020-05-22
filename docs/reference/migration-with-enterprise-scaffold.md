@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219320"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756119"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -247,7 +247,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 
 - **Azure Advisor：** Azure Advisor 會持續監視您的訂用帳戶和環境中的遙測資料。 此外，也建議您對 Azure 資源進行成本優化的最佳作法，並改善應用程式資源的效能、安全性和可用性。
 
-- **服務健康狀態：** Azure 服務健康狀態識別可能影響您應用程式的 Azure 服務問題，以及協助您規劃排程的維護時段。
+- **Azure 服務健康狀態：** Azure 服務健康狀態識別可能影響您應用程式的 Azure 服務問題，以及協助您規劃排程的維護時段。
 
 - **活動記錄：** 活動記錄會描述訂用帳戶中資源的所有作業。 它會提供審核_記錄，以_判斷任何在資源上建立、更新、刪除作業的_內容_、物件_和時機_。 活動記錄事件會儲存在平臺中，而且可供查詢90天。 您可以將活動記錄內嵌至 Log Analytics，以取得較長的保留期限，以及跨多個資源進行更深入的查詢和分析。
 

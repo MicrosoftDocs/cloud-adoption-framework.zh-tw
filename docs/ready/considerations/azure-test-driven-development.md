@@ -3,16 +3,16 @@ title: Azure 中登陸區域的測試導向開發（TDD）。
 description: Azure 中登陸區域的測試導向開發（TDD）。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: f2d5e12dbeb9cf86fdc3b09768a513f084889531
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621545"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756289"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Azure 中登陸區域的測試導向開發（TDD）
 
@@ -41,7 +41,7 @@ Azure 原生治理產品和服務的工具鏈，可以輕鬆地整合到以測�
 
 [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)： Azure 藍圖會將原則和其他部署工具分組到可重複使用的套件中，而此封裝可以指派給多個登陸區域。 當多個採用工作共用完成的一般定義（您可能想要隨著時間更新）時，藍圖會非常有用。 它也可以在後續進行擴充和重構登陸區域的作業時協助進行部署。
 
-[Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph)： Resource Graph 提供查詢語言，以根據登陸區域內所部署資產的相關資訊來建立資料驅動型測試。 稍後在採用計畫中，此工具也可以根據工作負載資產與基礎雲端環境之間的互動，定義複雜的測試。
+[Azure resource graph](https://docs.microsoft.com/azure/governance/resource-graph)： resource graph 會提供查詢語言，以根據登陸區域內所部署資產的相關資訊來建立資料驅動型測試。 稍後在採用計畫中，此工具也可以根據工作負載資產與基礎雲端環境之間的互動，定義複雜的測試。
 
 [Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)：這些範本會為 Azure 中部署的任何環境提供主要原始程式碼。 使用協力廠商工具（例如 Terraform）來開發會部署登陸區域的原始程式碼時，工具會產生自己的範本。 然後，這些範本會提交至 Azure Resource Manager。
 

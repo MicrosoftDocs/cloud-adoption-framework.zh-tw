@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220391"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754994"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 
-本文討論控制[部署加速專業領域](./index.md)之原則遵循流程的方法。 雲端設定的有效治理從以週期性手動程式開始，其設計目的是要偵測問題並強制執行原則來補救這些風險。 不過，您也可以將這些流程改為自動進行，然後輔以工具來降低治理負擔，並對偏差行為做出更快速的回應。
+本文討論控制[部署加速專業領域](./index.md)之原則遵循流程的方法。 雲端設定的有效治理從以週期性手動程式開始，其設計目的是要偵測問題並強制執行原則來補救這些風險。 您可以將這些程式和補充作業自動化，以降低治理的額外負荷，並允許更快速地回應偏差。
 
 ## <a name="planning-review-and-reporting-processes"></a>規劃、檢閱及報告流程
 
@@ -35,7 +35,7 @@ ms.locfileid: "83220391"
 
 此規劃程式也是評估您雲端治理小組目前成員資格的好時機，以取得與 DevOps 和部署加速相關之新的或變更原則和風險的相關知識差距。 邀請相關 IT 人員來參與檢閱及規劃，無論是作為小組的暫時技術顧問或永久成員。
 
-**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確定 IT 人員和開發人員都是最新的部署加速策略和需求。 在此流程中檢閱及更新任何文件、指導方針或其他訓練資產，以確保這些項目與最新的公司原則聲明同步。
+**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確定 IT 人員和開發人員都是最新的部署加速策略和需求。 在此過程中，請檢查並更新任何檔、指導方針或其他訓練資產，以確保它們與最新的公司原則聲明同步。
 
 **每月審查和報告審查：** 對所有雲端部署執行每月審核，以確保其持續與設定原則一致。 與 IT 人員一起審查部署相關的活動，並識別任何尚未在進行中監視和強制執行程式中處理的合規性問題。 這項審查的結果是雲端策略小組和每個雲端採用小組的報告，以溝通整體遵循原則。 報告也會儲存以便用於稽核和法律用途。
 
@@ -61,7 +61,7 @@ ms.locfileid: "83220391"
 
 使用[部署加速專業領域範本](./template.md)，記錄與目前雲端採用方案一致的進程和觸發程式。
 
-如需執行與採用方案一致的雲端管理原則指引，請參閱有關專業領域改進的文章。
+如需有關執行雲端管理原則以配合採用方案的指導方針，請參閱[部署加速專業領域改進](./discipline-improvement.md)。
 
 > [!div class="nextstepaction"]
 > [部署加速專業領域改進](./discipline-improvement.md)

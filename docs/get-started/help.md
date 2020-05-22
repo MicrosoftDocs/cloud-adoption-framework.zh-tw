@@ -6,14 +6,14 @@ ms.service: cloud-adoption-framework
 ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.subservice: overview
-ms.openlocfilehash: 0481175abfc695d9a7eb17f537cdb3ff40fcd7a3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bdcf7b83191c2e4311759c56bd3928207dd00b8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229700"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752817"
 ---
 # <a name="help-finding-the-appropriate-getting-started-guide"></a>協助尋找適當的快速入門手冊
 
@@ -37,9 +37,9 @@ ms.locfileid: "83229700"
 - [開始對齊基礎決策](./cloud-concepts.md)
 - [Azure 的運作方式](./what-is-azure.md)
 - [基本概念](../ready/considerations/fundamental-concepts.md)
-- [公事包階層](../reference/fundamental-concepts/hosting-hierarchy.md)
+- [組合階層](../reference/fundamental-concepts/hosting-hierarchy.md)
 - [Azure 階層支援](../reference/fundamental-concepts/hierarchy-azure-tools.md)
-- [操作模型術語](../operating-model/terms.md)
+- [作業模型術語](../operating-model/terms.md)
 
 ## <a name="accelerate-adoption"></a>加速採用
 
@@ -58,10 +58,10 @@ ms.locfileid: "83229700"
 |                                                                                     |                                                                                                                                |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [我們如何在雲端轉型期間提供卓越的營運？](./operational-excellence.md)                   | 本指南中的步驟將協助策略小組領導組織變更管理的需求，以一致的方式確保操作卓越。 |
-| [我們要如何管理企業成本？](./manage-costs.md)                                          | 開始優化企業成本，並管理整個環境的成本。                                                                           |
-| [我們如何一致地保護企業雲端環境？](./security.md)             | 本入門指南可協助確保已在企業內套用適當的安全性需求，以將缺口的風險降到最低，並在發生缺口時加速復原。                                       |
+| [我們要如何管理企業成本？](./manage-costs.md)                                          | 開始最佳化企業成本，並管理整個環境的成本。                                                                           |
+| [我們如何一致地保護企業雲端環境？](./security.md)             | 本入門指南可協助確保已在企業內套用適當的安全性需求，以將缺口的風險降到最低，並在產生缺口時加速復原。                                       |
 | [我們要如何套用正確的控制項來提升可靠性？](./reliability.md)                   | 本入門指南可協助將設定、資源組織、安全性基準或資源保護原則中不一致的中斷情形降至最低。 |
-| [我們如何確保整個企業的效能？](./performance.md)                               | 本入門指南可協助您建立進程，以維護整個企業的效能。                               |
+| [我們如何確保整個企業的效能？](./performance.md)                               | 本入門指南可協助您建立流程，以維護整個企業的效能。                               |
 
 ## <a name="establish-teams"></a>建立小組
 

@@ -6,22 +6,22 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: e2a761a998a42ebb1f6e8042bd19fb4013c9b786
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 611565362d5828aab075acb23230acd65d269010
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229258"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752005"
 ---
 # <a name="get-started-central-it-team"></a>開始使用：中央 IT 小組
 
-當雲端採用相當快速地從一個小組擴充到多個小組時，需要現有 IT 人員的額外支援。 不過，這些員工成員可能缺少使用雲端原生 IT 工具來支援雲端所需的訓練和經驗。 這通常會推動負責管理雲端之中央 IT 小組的構成。
+當雲端採用相當快速地從一個小組擴充到多個小組時，需要現有 IT 人員的額外支援。 這些員工成員可能缺少使用雲端原生 IT 工具來支援雲端所需的訓練和經驗。 這通常會推動負責管理雲端之中央 IT 小組的構成。
 
 > [!WARNING]
 > 中央 IT 應該只在內部部署的現有傳遞是以中央 IT 模型為基礎時，才套用在雲端中。 如果目前的內部部署模型是以委派的控制項為基礎，請考慮雲端中心的卓越（CCoE）方法，以取得更相容的替代方案。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [細分接收器和 fiefdoms](../../organize/fiefdoms-silos.md)：瞭解兩個常見的組織_反模式_，以及引導小組進行生產力共同作業的方式。
 - [Microsoft Learn](https://docs.microsoft.com/learn)：從基本總覽到深度技術訓練，IT 人員學習如何將 Azure 套用到其業務。
@@ -32,7 +32,7 @@ ms.locfileid: "83229258"
 
 在 IT 的現代化觀點中，資產是全域散發的。 系統會委派責任。 Operations management 是由內部員工、受控服務提供者和雲端提供者的混合來提供。 在數位經濟中，IT 管理實務正以明確的護欄轉換成自助服務和委派控制項的模型，以強制治理。 中央 IT 可以成為雲端採用的重要參與者，方法是成為雲端代理人和合作夥伴，以進行創新和商務彈性。
 
-中央 IT 作為函式的位置，是為了從現有的內部部署模型中獲得寶貴的知識和實務，並將這些實務套用到雲端交付。 不過，此程式將需要變更。 需要新的程式、新技能和新工具，以支援大規模的雲端採用。 當中央 IT 適應時，它會成為雲端採用工作的重要合作夥伴。
+中央 IT 作為函式的位置，是為了從現有的內部部署模型中繪製有價值的知識和實務，並將這些實務套用到雲端交付。 此程式需要變更。 需要新的程式、新技能和新工具，以支援大規模的雲端採用。 當中央 IT 適應時，它會成為雲端採用工作的重要合作夥伴。
 
 ## <a name="deliverables"></a>交付項目
 

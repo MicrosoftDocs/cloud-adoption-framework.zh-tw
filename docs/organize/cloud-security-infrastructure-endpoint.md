@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 81dc8e9ab0aaad9981dd44fdbbd64d4b5d1caf87
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 427ab031953652c32c77a24e73fb0a0e4cfa10af
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228647"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755421"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>雲端基礎結構和端點安全性的功能
 
@@ -22,7 +22,7 @@ ms.locfileid: "83228647"
 
 軟體定義的資料中心和其他雲端技術，協助解決基礎結構和端點安全性的長期以來非常挑戰，包括：
 
-- 針對雲端裝載的資產 **，清查和設定錯誤探索**會更可靠，因為它們全都會立即可見（與實體資料中心）。
+- 針對雲端裝載的資產 **，清查和設定錯誤探索**會更可靠，因為它們全都是立即可見的（與實體資料中心）。
 - **弱點管理**演變成整體安全性狀況管理的重要部分。
 - 在組織中**新增容器技術**，以基礎結構和網路小組進行管理及保護，並廣泛採用這項技術。 如需範例，請參閱[資訊安全中心中的容器安全性](https://docs.microsoft.com/azure/security-center/container-security)。
 - **安全性代理程式匯總**和工具簡化，可減少安全性代理程式和工具的維護和效能額外負荷。
@@ -39,7 +39,7 @@ ms.locfileid: "83228647"
 
 - IT 架構和作業
 - 安全性架構
-- 安全性作業中心（SOC）
+- 安全性作業中心 (SOC)
 - 合規性小組
 - 審核小組
 

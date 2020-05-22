@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 50ebbe6f3c141671412d5338d89c1de623ab3b0c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: c7753434a9ce901693938651f303add90bb6002b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228998"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751959"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>開始使用：組建雲端平臺小組
 
@@ -20,7 +20,7 @@ ms.locfileid: "83228998"
 
 雲端平臺功能通常是由一組選取的架構設計人員所提供，著重于學習雲端平臺。 這些架構師接著會協助其他人進行決策，並適當地將控制項應用到雲端環境。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一個 Pluralsight 課程，可協助架構設計正確的基礎解決方案。
 - [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎架構設計人員的 Pluralsight 課程。
@@ -31,7 +31,7 @@ ms.locfileid: "83228998"
 - [業務成果](../../strategy/business-outcomes/index.md)
 - [財務模型](../../strategy/financial-models.md)
 - [雲端採用的動機](../../strategy/motivations.md)
-- [商務風險](../../govern/policy-compliance/risk-tolerance.md)
+- [業務風險](../../govern/policy-compliance/risk-tolerance.md)
 - [數位資產的合理化](../../digital-estate/index.md)
 
 ## <a name="minimum-scope"></a>最小範圍

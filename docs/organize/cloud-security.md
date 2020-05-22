@@ -6,13 +6,13 @@ ms.author: mas
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 68ce6816dbcbbc1770ac8a51a6d77329e65b4eca
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401261"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755317"
 ---
 <!-- cSpell:ignore MarkSimos -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "83401261"
 下列每篇文章都會提供每個函數的相關資訊。 每篇文章都會提供目標摘要、函式如何因威脅環境或雲端技術的改變，以及其成功的關鍵關係和相依性而演進。
 
 - [原則和標準](./cloud-security-policy-standards.md)
-- [安全性作業中心（SOC）](./cloud-security-operations-center.md)
+- [安全性作業中心 (SOC)](./cloud-security-operations-center.md)
 - [安全性架構](./cloud-security-architecture.md)
 - [安全性合規性管理](./cloud-security-compliance-management.md)
 - [人員安全性](./cloud-security-people.md)
@@ -42,5 +42,5 @@ ms.locfileid: "83401261"
 - [基礎結構和端點安全性](./cloud-security-infrastructure-endpoint.md)
 - [身分識別和金鑰](./cloud-security-identity-keys.md)
 - [威脅情報](./cloud-security-threat-intelligence.md)
-- [狀況管理](./cloud-security-posture-management.md)
+- [狀態管理](./cloud-security-posture-management.md)
 - [事件準備](./cloud-security-incident-preparation.md)

@@ -3,16 +3,16 @@ title: 改善登陸區域作業
 description: 改善登陸區域作業
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 43325baa63035779a7a7482faaf828f2ecc5614c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1e338974e3720609640b23e7123fc003801cb371
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223077"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756510"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 
@@ -47,7 +47,7 @@ ms.locfileid: "83223077"
 
 ## <a name="test-driven-development-cycle"></a>以測試為導向的開發週期
 
-開始任何安全性改進之前，請務必瞭解「完成定義」和所有「接受條件」。 如需詳細資訊，請參閱在 azure 中進行登陸區域和[測試導向開發](./azure-test-driven-development.md)的[測試導向開發](./test-driven-development.md)文章。
+開始任何安全性改進之前，請務必瞭解「完成定義」和所有「接受條件」。 如需詳細資訊，請參閱在 Azure 中進行登陸區域和[測試導向開發](./azure-test-driven-development.md)的[測試導向開發](./test-driven-development.md)文章。
 
 ![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
 
@@ -56,4 +56,4 @@ ms.locfileid: "83223077"
 瞭解如何[改善登陸區域治理](./landing-zone-governance.md)，以支援大規模採用。
 
 > [!div class="nextstepaction"]
-> [改善登陸區域治理](./landing-zone-governance.md)
+> [改善登陸區域控管](./landing-zone-governance.md)

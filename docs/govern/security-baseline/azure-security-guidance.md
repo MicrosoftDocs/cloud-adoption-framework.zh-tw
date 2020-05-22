@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5c295ef24571309e1d97a91ec0c65a0816082e7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6307cb792b6c2cbbda472d1620a91ebdffc18845
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217881"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755911"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "83217881"
 **Microsoft 服務信任入口網站**提供深入的資訊和工具，可協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Office 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一站。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 建立入口網站是為了協助追蹤 Azure 內的法規合規性活動，包括：
 
 - **合規性管理員：** 合規性管理員是以工作流程為基礎的風險評估工具，在 Microsoft 服務信任入口網站中，可讓您追蹤、指派及驗證貴組織與 Microsoft 雲端服務相關的法規合規性活動，例如 Office 365、Dynamics 365 和 Azure。 您可以在下一節找到更多詳細資料。
-- **信任檔：** 目前有三種類別的指南，可為您提供豐富的資源來評估 Microsoft 雲端;瞭解 Microsoft 在安全性、合規性和隱私權方面的作業;並協助您採取行動以改善資料保護功能。 其中包括：
+- **信任檔：** 目前有三種類別的指南，可為您提供豐富的資源來評估 Microsoft 雲端;瞭解 Microsoft 在安全性、合規性和隱私權方面的作業;並協助您採取行動以改善資料保護功能。 這些包括：
 - **審查報告：** 審查報告可讓您隨時掌握 Microsoft 雲端服務的最新隱私權、安全性及合規性相關資訊。 這包括 ISO、SOC、FedRAMP 和其他與 Microsoft 雲端服務（例如 Azure、Office 365、Dynamics 365 及其他）的獨立協力廠商審核相關的報告、橋接器字母和材質。
 - **資料保護指南：** 資料保護指南提供 Microsoft 雲端服務如何保護您的資料，以及如何為您的組織管理雲端資料安全性與合規性的相關資訊。 這包括深入的白皮書，提供有關 Microsoft 如何設計和操作雲端服務、常見問題檔、年度安全性評量的報告、滲透測試結果，以及協助您進行風險評估並改善資料保護功能的指引。
 - **Azure 安全性與合規性藍圖：** 藍圖提供的資源可協助您建立及啟動雲端提供的應用程式，以協助您遵守嚴格的法規和標準。 具有比其他任何雲端提供者更多的認證，您可以有信心地將關鍵工作負載部署至 Azure，使用包含下列項目的藍圖：
@@ -81,4 +81,4 @@ Azure 資訊安全中心深入分析豐富的資料，這些資料來自 Microso
 
 ## <a name="behavioral-analytics"></a>行為分析
 
-行為分析是一種可分析及比較資料與一組已知模式的技術。 不過，這些模式並非簡單的簽章。 它們會透過已套用至大型資料集的複雜機器學習演算法來決定。 它們也能透過專業分析師仔細分析惡意行為來判定。 Azure 資訊安全中心可以使用行為分析，根據虛擬機器記錄、虛擬網路裝置記錄、網狀架構記錄、毀損傾印和其他來源的分析，來識別遭到入侵的資源。
+行為分析是一種可分析及比較資料與一組已知模式的技術。 這些模式不是簡單的簽章。 它們是透過會套用至大型資料集的複雜機器學習演算法來決定。 它們也是由專家分析師仔細分析惡意行為所決定。 Azure 資訊安全中心可以使用行為分析，根據虛擬機器記錄、虛擬網路裝置記錄、網狀架構記錄、毀損傾印和其他來源的分析，來識別遭到入侵的資源。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399065"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756170"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -41,7 +41,7 @@ Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microso
 
 ## <a name="what-is-an-azure-subscription"></a>什麼是 Azure 訂用帳戶？
 
-Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源群組及其資源群組在一起。 不過，Azure 訂用帳戶也與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
+Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源群組及其資源群組在一起。 Azure 訂用帳戶也會與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
 
 ![Azure 訂用帳戶圖 ](../../_images/govern/design/governance-1-11.png)
  _3： azure 訂_用帳戶。

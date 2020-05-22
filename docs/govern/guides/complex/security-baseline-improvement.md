@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: af09377a8f3568d2f9604249160f69afb7308d7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400508"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754882"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -39,9 +39,9 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 
 - 已將數千個 IT 和商業資產部署至雲端。
 - 應用程式開發小組已實現持續整合和持續部署（CI/CD）管線，以部署具有改良的使用者體驗的雲端原生應用程式。 該應用程式尚不會與受保護的資料互動，因此不會備妥生產環境。
-- IT 內的商業智慧小組會主動從物流、庫存和協力廠商資料 curates 雲端中的資料。 此資料將用於衍生可能形成業務流程的新預測。 但是，在將客戶和財務資料整合到資料平台之前，那些預測和見解都是不可行的。
+- IT 內的商業智慧小組會主動從物流、庫存和協力廠商資料 curates 雲端中的資料。 此資料將用於衍生可能形成業務流程的新預測。 在將客戶和財務資料整合到資料平臺之前，這些預測和見解都不是可採取動作的。
 - IT 小組正在進行 CIO 和 CFO 計畫，以淘汰兩個資料中心。 這兩個資料中心內的 3,500 個資產幾乎都已淘汰或移轉。
-- 機密個人和財務資料的相關原則已現代化。 不過，新的公司原則取決於相關安全性和治理原則的實施。 小組仍然停滯不前。
+- 機密個人和財務資料的相關原則已現代化。 新的公司原則會因應相關安全性與治理原則的實施。 小組仍然停滯不前。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d87969a9c7b06512a74fac42dc1f57492d1ee3cb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217994"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756034"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -50,7 +50,7 @@ ms.locfileid: "83217994"
 
 雲端平台提供了一組基本功能，使部署小組無需大量額外規劃或程序，即可有效地管理小型部署。 因此，小型開發/測試或實驗性第一個工作負載（包括相對較少量的雲端式資產）代表低層級的風險，而且在正式資源一致性原則中可能不需要太多的方法。
 
-但是，隨著雲端資產規模的擴大，管理資產的複雜度就變得更加困難。 隨著雲端上的資產越來越多，識別資源擁有權和控制資源的能力，對於將風險降至最低來說非常重要。 隨著更多任務關鍵型工作負載部署至雲端，服務的執行時間變得十分重要，並且對服務中斷的容錯潛在成本超支會迅速減少。
+隨著您的雲端資產大小的增加，管理資產的複雜性也會變得很棘手。 隨著雲端上的資產越來越多，識別資源擁有權和控制資源的能力，對於將風險降至最低來說非常重要。 隨著更多任務關鍵型工作負載部署至雲端，服務的執行時間變得十分重要，並且對服務中斷的容錯潛在成本超支會迅速減少。
 
 在雲端採用的早期階段，請與您的 IT 營運小組和商務專案關係人合作，以識別與資源一致性相關的[業務風險](./business-risks.md)，然後決定可接受的風險承受度基準。 雲端採用架構的這一節會提供範例，但您公司或部署的詳細風險和基準可能會有所不同。
 

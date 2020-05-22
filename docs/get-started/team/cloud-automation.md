@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: bbb9f557f68fc50ef38c34371fe5b550375c335b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: eff835c50a121f7338439d3987e0e294af759956
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229219"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751970"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>開始使用：打造雲端自動化團隊
 
@@ -20,7 +20,7 @@ ms.locfileid: "83229219"
 
 在雲端採用的過程中，雲端自動化功能將可發揮 DevOps 和雲端原生方法的潛能。 每個領域的專業知識都可以加速採用和創新。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 在您將小組成員承認這個群組之前，他們應該示範三個主要特性：
 
