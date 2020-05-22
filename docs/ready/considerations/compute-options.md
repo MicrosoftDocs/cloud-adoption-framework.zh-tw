@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 2e4aad0e866ee7ffd3fb0eeb3e2688b24aa5dae1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621515"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756272"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -37,9 +37,9 @@ ms.locfileid: "83621515"
 - **如果您要遷移現有的工作負載，可以利用新式雲端技術嗎？** 遷移內部部署工作負載需要分析：您是否可以輕鬆地將現有的應用程式和服務優化，以利用新式雲端技術，或讓您的工作負載的隨即_轉移_方法更好用？
 - **您的應用程式或服務可以利用容器嗎？** 如果您的應用程式是容器化裝載的絕佳候選項目，您可以利用[Azure 中 container service](https://azure.microsoft.com/product-categories/containers)所提供的資源效率、擴充性和協調流程功能。 [Azure 受控磁片](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)和[Azure 檔案儲存體](https://docs.microsoft.com/azure/storage/files/storage-files-introduction)都可以用於容器化應用程式中的持續性儲存體。
 - **您的應用程式是以 Web 為基礎或以 API 為基礎？而且是否使用 PHP、ASP.NET、Node.js 或類似的技術？** Web 應用程式可以部署到受控的 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) 執行個體，因此您不需要維護裝載用的虛擬機器。
-- **您需要完整控制您工作負載的作業系統和裝載環境嗎？** 如果您需要控制裝載環境 (包括作業系統、磁碟、本機執行的軟體和其他設定)，您可以使用 [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines)來裝載您的應用程式和服務。 除了選擇您的虛擬機器大小和效能層級之外，您對於虛擬磁片儲存體的決策也會影響與您的基礎結構即服務（IaaS）工作負載相關的效能和 Sla。 如需詳細資訊，請參閱 [Azure 磁碟儲存體文件](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)。
-- **您的工作負載是否牽涉到高效能運算 (HPC) 功能？** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) 能以平台服務的形式為電腦資源提供工作排程及自動調整服務，讓您在雲端輕鬆執行大規模平行應用程式和 HPC 應用程式。
-- **您的應用程式會使用微服務架構嗎？** 使用微服務架構的應用程式可以利用數個最佳化的計算技術。 由事件驅動的獨立工作負載可以使用 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) 來建立可調整的無伺服器應用程式，其不需要基礎結構。 對於需要更充分掌控微服務執行所在環境的應用程式，您可以使用容器服務，例如 [Azure 容器](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes) 和 [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)。
+- **您需要完整控制您工作負載的作業系統和裝載環境嗎？** 如果您需要控制裝載環境 (包括作業系統、磁碟、本機執行的軟體和其他設定)，您可以使用 [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines)來裝載您的應用程式和服務。 除了選擇您的虛擬機器大小和效能層級之外，您對於虛擬磁片儲存體的決策也會影響與您的基礎結構即服務（IaaS）工作負載相關的效能和 Sla。 如需詳細資訊，請參閱[Azure 磁片儲存體](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)檔。
+- **您的工作負載是否牽涉到高效能運算（hpc）功能？** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview)以平臺服務的形式提供計算資源的工作排程和自動調整，因此在雲端中執行大規模的平行和 hpc 應用程式變得很容易。
+- **您的應用程式會使用微服務架構嗎？** 使用微服務架構的應用程式可以利用數個最佳化的計算技術。 由事件驅動的獨立工作負載可以使用 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) 來建立可調整的無伺服器應用程式，其不需要基礎結構。 對於需要更充分掌控微服務執行之環境的應用程式，您可以使用容器服務，例如[azure 容器實例](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、 [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes)和[azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)。
 
 > [!NOTE]
 > 大部分的 Azure 計算服務都會與 Azure 儲存體搭配使用。 如需了解相關的儲存體決策，請參閱[儲存體決策指引](./storage-options.md)。
@@ -56,7 +56,7 @@ ms.locfileid: "83621515"
 | 我需要使用事件驅動的無伺服器架構加速應用程式開發。 | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | 我需要在 Windows 或 Linux 上開發微服務及協調容器。 | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
 | 我想使用完全受控平台快速建立適用於 Web 和行動裝置的雲端應用程式。 | [Azure App Service](https://azure.microsoft.com/services/app-service) |
-| 我想使用單一命令將應用程式容器化並輕鬆執行容器。 | [Azure 容器執行個體](https://azure.microsoft.com/services/container-instances) |
+| 我想使用單一命令將應用程式容器化並輕鬆執行容器。 | [Azure 容器實例](https://azure.microsoft.com/services/container-instances) |
 | 我需要雲端規模的作業排程和計算管理可調整成數十、數百或數千部虛擬機器。 | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | 我需要建立高可用性與極具調整彈性的雲端應用程式和 API，以協助我全心開發應用程式而非硬體。 | [Azure 雲端服務](https://azure.microsoft.com/services/cloud-services) |
 
@@ -70,7 +70,7 @@ Azure 可讓您以所需的規模傳遞服務，_隨時隨地_觸及您的客戶
 
 ## <a name="data-residency-and-compliance-requirements"></a>資料落地和合規性需求
 
-您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、存放和處理檔案和資料的管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 許多計算解決方案取決於連結的儲存體資源。 這項需求也可能會影響您的計算決策。 如需了解這些需求的協助，請參閱[利用 Azure 達成符合規範的資料落地和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
+您的工作負載中通常會有與資料儲存體相關的法律和合約需求。 這些需求可能會因為您組織的位置、存放和處理檔案和資料的管轄權，以及您適用的商務部門而有所不同。 需要考量的資料責任包括資料分類、資料位置，以及共同責任模式下的個別資料保護責任。 許多計算解決方案取決於連結的儲存體資源。 這項需求也可能會影響您的計算決策。 如需瞭解這些需求的協助，請參閱[使用 Azure 達成符合規範的資料存放區和安全性](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)白皮書。
 
 合規性工作的一部分可能包括控計算資源實際所在的位置。 Azure 區域會在稱為 geographies 的群組中進行排列。 [Azure 地理](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理及政治界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，您必須將儲存體資源部署到合規 Azure 地理位置中的區域。
 
@@ -80,4 +80,4 @@ Azure 可讓您以所需的規模傳遞服務，_隨時隨地_觸及您的客戶
 
 識別並記下登陸區域的需求之後，您可以使用 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)來控制允許使用者建立的計算資源。 控制項可以採用[允許或拒絕建立計算資源類型](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)的形式。 例如，您可能會限制使用者只能建立 Azure App Service 或 Azure Functions 資源。 您也可以在建立資源時使用原則來控制允許的選項，例如[限制可以佈建的虛擬機器 SKU](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage)，或是[只允許特定 VM 映像](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images)。
 
-原則的範圍可以設定為資源、資源群組、訂用帳戶和管理群組。 您可以將您的原則納入 [Azure 藍圖定義](https://docs.microsoft.com/azure/governance/blueprints/overview)，並在整個雲端資產中重複套用。
+原則的範圍可以設定為資源、資源群組、訂用帳戶和管理群組。 您可以將您的原則納入[Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)定義中，並在整個雲端資產中重複套用。

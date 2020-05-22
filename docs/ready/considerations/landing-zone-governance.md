@@ -1,20 +1,20 @@
 ---
-title: 改善登陸區域治理
-description: 改善登陸區域治理
+title: 改善登陸區域控管
+description: 改善登陸區域控管
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd500f00ecd021a1d05904c675d63a64e8b6764b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213948"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756527"
 ---
-# <a name="improve-landing-zone-governance"></a>改善登陸區域治理
+# <a name="improve-landing-zone-governance"></a>改善登陸區域控管
 
 登陸區域治理是整體治理的最小單位。 在您的前幾個登陸區域內建立音效治理基礎，將可減少未來採用生命週期中所需的重構量。 改善登陸區域治理將會整合成本控制、建立基本工具以允許調整規模，並可讓雲端治理小組更輕鬆地傳遞五個雲端治理專業領域。
 

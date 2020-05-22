@@ -6,21 +6,21 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400995"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755575"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 
-雲端遷移小組是技術執行小組或專案小組的現代化日。 不過，雲端的本質可能需要更流暢的小組結構。 某些遷移小組僅著重于雲端遷移，而其他則著重于利用雲端技術的創新。 其中一些包括完成大型採用工作所需的廣泛技術專業知識，例如完整的資料中心遷移，其他人則有更緊密的技術焦點，而且可能會在專案之間移動以達成特定目標，例如，協助將 SQL Vm 轉換成 SQL PaaS 實例的資料平臺專家小組。
+雲端遷移小組是技術執行小組或專案小組的現代化日。 但是雲端的本質可能需要更流暢的小組結構。 某些遷移小組僅著重于雲端遷移，而其他則著重于利用雲端技術的創新。 其中一些包括完成大型採用工作所需的廣泛技術專業知識，例如完整的資料中心遷移，其他人則有更緊密的技術焦點，而且可能會在專案之間移動以達成特定目標，例如，協助將 SQL Vm 轉換成 SQL PaaS 實例的資料平臺專家小組。
 
 無論雲端遷移小組的類型或數目為何，這些小組通常會為 IT、商務分析或實施合作夥伴提供主題專長。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [建立 azure 帳戶](https://docs.microsoft.com/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。
 - [Azure 入口網站](https://docs.microsoft.com/learn/modules/tour-azure-portal)：流覽 Azure 入口網站功能和服務，並自訂入口網站。
@@ -55,7 +55,7 @@ ms.locfileid: "83400995"
 
 如果這些小組以自我組織方式來每日都符合，這就是最佳選擇。 每日會議的目標是要快速更新待處理專案（backlog），並傳達已完成的專案、今天要做什麼，以及封鎖哪些事項，需要額外的外部支援。
 
-發行排程和反復專案持續時間對每一家公司都是唯一的。 不過，每個反復專案1到4周的範圍似乎是平均持續時間。 無論反復專案或發行步調為何，我們建議小組在每次發行結束時都符合所有支援小組，以傳達發行的結果，並重新調整即將進行的工作。 在每個短期衝刺結束時，您也可以將其視為小組，讓卓越或[雲端治理小組](./cloud-governance.md)的[雲端中心](../organize/cloud-center-of-excellence.md)保持一致，以符合常見的工作和支援的任何需求。
+發行排程和反復專案持續時間對每一家公司都是唯一的。 但是，每個反復專案1到4周的範圍似乎是平均持續時間。 無論反復專案或發行步調為何，我們建議小組在每次發行結束時都符合所有支援小組，以傳達發行的結果，並重新調整即將進行的工作。 在每個短期衝刺結束時，您也可以將其視為小組，讓卓越或[雲端治理小組](./cloud-governance.md)的[雲端中心](../organize/cloud-center-of-excellence.md)保持一致，以符合常見的工作和支援的任何需求。
 
 某些與雲端採用相關聯的技術工作可能會重複。 小組成員應每 3 6 個月輪替一次， &ndash; 以避免員工滿意度問題並維持相關技能。 卓越或[雲端治理小組](./cloud-governance.md)[雲端中心](../organize/cloud-center-of-excellence.md)的輪替基座可提供絕佳的機會，讓員工保持最新的創新，並控管新的革新。
 

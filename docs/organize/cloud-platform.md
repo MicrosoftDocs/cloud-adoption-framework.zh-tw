@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 9c2dfc0172df51652bcf56bd7a30a021d4f66900
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215580"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755555"
 ---
-# <a name="cloud-platform-functions"></a>雲端平臺功能
+# <a name="cloud-platform-functions"></a>雲端平台功能
 
-雲端引進許多技術變化，以及簡化技術解決方案的機會。 不過，一般 IT 原則和商務需求保持不變。 您仍然需要保護敏感的商務資料。 如果您的 IT 平臺相依于區域網路，則您很有可能需要在雲端中使用網路定義。 需要存取應用程式和資料的使用者會想要其目前的身分識別來存取相關的雲端資源。
+雲端引進許多技術變化，以及簡化技術解決方案的機會。 但是一般 IT 原則和商務需求保持不變。 您仍然需要保護敏感的商務資料。 如果您的 IT 平臺相依于區域網路，則您很有可能需要在雲端中使用網路定義。 需要存取應用程式和資料的使用者會想要其目前的身分識別來存取相關的雲端資源。
 
 雖然雲端提供學習新技能的機會，但您目前的架構設計人員應該能夠直接應用他們的經驗和主題專長。 雲端平臺函式通常是由一組選取的架構設計人員所提供，專門負責學習雲端平臺。 這些架構師接著會協助其他人進行決策，並適當地將控制項應用到雲端環境。
 
@@ -43,7 +43,7 @@ ms.locfileid: "83215580"
 - [業務成果](../strategy/business-outcomes/index.md)
 - [財務模型](../strategy/financial-models.md)
 - [雲端採用的動機](../strategy/motivations.md)
-- [商務風險](../govern/policy-compliance/risk-tolerance.md)
+- [業務風險](../govern/policy-compliance/risk-tolerance.md)
 - [數位資產的合理化](../digital-estate/index.md)
 
 ## <a name="minimum-scope"></a>最小範圍

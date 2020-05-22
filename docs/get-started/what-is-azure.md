@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 7e6b1092f021357e040d811054dc4d40345a0e68
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 00d5709aeb0a922b8f8c5efd26abafe70d70a237
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228946"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755148"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -33,7 +33,7 @@ Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 �
 
 要了解這一點，就必須看看資料中心裡的硬體架構。 每個資料中心內都是位於伺服器機架中的伺服器集合。 每個伺服器機架都包含許多伺服器**刀鋒**，以及提供網路連線的網路交換器和提供電力的配電裝置 (PDU)。 機架有時會一起分組到較大的單位中，名為_叢集_。
 
-在每個機架或叢集內，大部分的伺服器都會被指定用來代替使用者執行這些虛擬化硬體執行個體。 不過，有些伺服器會執行雲端管理軟體，稱為網狀架構控制器。 _網狀架構控制器_是一種分散式應用程式，負責執行多項工作。 它會配置服務、監視伺服器及其執行之服務的健全狀況，並在伺服器故障時加以修復。
+在每個機架或叢集內，大部分的伺服器都會被指定用來代替使用者執行這些虛擬化硬體執行個體。 但是有些伺服器會執行雲端管理軟體，稱為網狀架構控制器。 _網狀架構控制器_是一種分散式應用程式，負責執行多項工作。 它會配置服務、監視伺服器及其執行之服務的健全狀況，並在伺服器故障時加以修復。
 
 每個網狀架構控制器執行個體都會連線至執行雲端協調流程軟體的另一組伺服器，一般稱之為_前端_。 前端會主控 Web 服務、RESTful API，以及雲端執行的所有功能所使用的內部 Azure 資料庫。
 

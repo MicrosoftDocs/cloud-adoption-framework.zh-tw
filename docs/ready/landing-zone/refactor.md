@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 重構登陸區域的進程
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b7be19e3d17f55a30d7c544c660b3a417247fd8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621597"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755690"
 ---
 # <a name="refactor-landing-zones"></a>重構登陸區域
 
@@ -35,7 +35,7 @@ Ready 方法會使用重整概念來加速遷移並移除常見的封鎖器。 [
 
 ![一般封鎖程式：太快的作用](../../_images/ready/blocker-act-too-soon.png)
 
-在上圖中，客戶有100個工作負載在雲端中的目標。 為了達到此，客戶可能會部署其第一個工作負載。 然後是其前10個或工作負載，再準備將其中一個工作負載發行至生產環境。 最後，他們將達到採用方案的目標，並在雲端中擁有強大的組合。 但是影像中的紅色 X 會顯示客戶經常停滯的位置。 等候100% 的對齊可能會延遲第一個工作負載，包括周、月或年。
+在上圖中，客戶有100個工作負載在雲端中的目標。 為了達到此，客戶可能會部署其第一個工作負載。 然後是其前10個或工作負載，再準備將其中一個工作負載發行至生產環境。 最後，他們將達到採用方案的目標，並在雲端中擁有強大的組合。 但是影像中的紅色 x 會顯示客戶經常停滯的位置。 等候100% 的對齊可能會延遲第一個工作負載，包括周、月或年。
 
 ### <a name="blocker-acting-too-late"></a>封鎖程式：作用太晚
 

@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 8c9a30baf5b985e81881f48c313805a68f6325ad
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 312b24a8b20eeda6fb28ca9f126067da1ace4786
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228777"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755439"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>雲端安全性事件準備的功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "83228777"
 - 調查及補救事件的**技術團隊成員**。
 - **商務持續性**與擁有危機管理、嚴重損壞修復和業務持續性計畫的組織功能整合。
 
-<!-- docsTest:ignore "Incident Response Reference Guide (IRRG)" -->
+<!-- docsTest:ignore "Incident Response Reference Guide (IRRG) " -->
 <!-- cSpell:ignore IRRG -->
 
 Microsoft 已在[事件回應參考指南（IRRG）](https://aka.ms/IRRG)中發佈學習的課程和建議。

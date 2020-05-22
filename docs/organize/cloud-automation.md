@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 08cdf19a7e9cff1ce6f8d86c4d5ca0ece2be892c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: b03798b4d014145e2fc1029bc3adb94d3dd3e02a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215818"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755792"
 ---
 # <a name="cloud-automation-functions"></a>雲端自動化功能
 

@@ -3,17 +3,17 @@ title: 適用于 Azure 檔的 Microsoft Cloud 採用架構
 description: 取得工具、指引和敘事作品，以協助塑造策略，並在雲端採用週期的所有階段推動所需的商務結果。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0e43a719894836ac3b4a97574c98deef90cb9e38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621449"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755368"
 ---
 <!-- markdownlint-disable MD026 -->
 

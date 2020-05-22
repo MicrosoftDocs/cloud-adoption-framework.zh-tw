@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 3e6895e1f2b13c4f2791b60baf7457223732fecf
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: d954d3869edc6f668d4375b87a91d519c50e17d1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401106"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755401"
 ---
 # <a name="people-security-functions-in-the-cloud"></a>雲端中的人員安全性功能
 

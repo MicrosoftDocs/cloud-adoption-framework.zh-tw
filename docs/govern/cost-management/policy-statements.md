@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220493"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755045"
 ---
 # <a name="cost-management-sample-policy-statements"></a>成本管理範例原則聲明
 
@@ -27,7 +27,7 @@ ms.locfileid: "83220493"
 
 ## <a name="future-proofing"></a>與未來技術的兼容性
 
-**業務風險：** 目前的準則，不保證會向治理小組投資成本管理的專業領域。 不過，您可以預期未來將有這類投資。
+**業務風險：** 目前的準則，不保證治理小組成本管理專業領域的投資，但您預計未來會進行這項投資。
 
 **原則聲明：** 您應該將所有部署至雲端的資產與帳單單位和應用程式或工作負載產生關聯。 此原則可確保您的成本管理專業領域有效。
 

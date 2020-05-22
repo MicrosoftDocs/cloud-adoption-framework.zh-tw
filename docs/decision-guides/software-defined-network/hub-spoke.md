@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 43fa948aeaa575b440f483fa349d7c965e97a3c3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215121"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753464"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 
@@ -46,7 +46,7 @@ ms.locfileid: "83215121"
 
 ## <a name="global-hub-and-spoke"></a>全域中樞與輪輻
 
-中樞和輪輻架構通常會使用部署到相同 Azure 區域的虛擬網路來執行，以將網路之間的延遲降至最低。 不過，觸角擴及全球的大型組織可能需要跨多個區域部署工作負載，以滿足可用性、災害復原或法規需求。 中樞和輪輻模型可以使用 Azure[全域虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)，跨區域擴充集中管理和共用服務，並支援分散在世界各地的工作負載。
+中樞和輪輻架構通常會使用部署到相同 Azure 區域的虛擬網路來執行，以將網路之間的延遲降至最低。 具有全球範圍的大型組織可能需要在多個區域中部署工作負載，以達到可用性、嚴重損壞修復或法規需求。 中樞和輪輻模型可以使用 Azure[全域虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)，跨區域擴充集中管理和共用服務，並支援分散在世界各地的工作負載。
 
 ## <a name="learn-more"></a>深入了解
 

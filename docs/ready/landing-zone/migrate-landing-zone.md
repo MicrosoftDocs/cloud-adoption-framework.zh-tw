@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621756"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755661"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -46,14 +46,14 @@ ms.locfileid: "83621756"
 | 元件                    | 決策                                                                                         | 替代方法                                                                                                                                                                                                                                                                |
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 移轉工具              | 將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。                | [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
-| 記錄和監視       | 將會布建 Operational Insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
+| 記錄和監視       | 將會布建 Operational insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
 | 網路                      | 將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | 原則                       | 此藍圖目前會假設未套用任何 Azure 原則。                        |                                                                                                                                                                                                                                                                                       |
-| 訂用帳戶設計          | N/A - 專為單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
-| 資源群組              | N/A - 專為單一生產訂用帳戶所設計。                                              | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
-| 管理群組            | N/A - 專為單一生產訂用帳戶所設計。                                              | [組織和管理訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| 資料                         | N/A                                                                                               | 在 Azure 和[Azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
+| 訂用帳戶設計          | N/A-針對單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
+| 資源群組              | N/A-針對單一生產訂用帳戶所設計。                                              | [調整訂閱](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
+| 管理群組            | N/A-針對單一生產訂用帳戶所設計。                                              | [組織和管理訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
+| 資料                         | N/A                                                                                               | 在 Azure 和[azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
 | 儲存體                      | N/A                                                                                               | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | 命名和標記標準 | N/A                                                                                               | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
 | 成本管理              | N/A                                                                                               | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
@@ -77,4 +77,4 @@ ms.locfileid: "83621756"
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217773"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755863"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>安全性基準專業領域中的動機和業務風險
 
@@ -23,7 +23,7 @@ ms.locfileid: "83217773"
 
 ## <a name="relevance"></a>相關性
 
-安全性是任何 IT 組織的一大考量。 雲端部署面臨許多與裝載於傳統內部部署資料中心的工作負載相同的安全性風險。 不過，公用雲端平台的性質，缺乏對儲存和執行工作負載之實體硬體的直接擁有權，意味著雲端安全性需要其本身的原則和程序。
+安全性是任何 IT 組織的一大考量。 雲端部署面臨許多與裝載於傳統內部部署資料中心的工作負載相同的安全性風險。 公用雲端平臺的本質，如果沒有實體硬體的直接擁有權來儲存和執行您的工作負載，則表示雲端安全性需要自己的原則和流程。
 
 除了傳統的安全性原則之外，設定雲端安全性治理的其中一個主要事項，就是可以輕鬆地建立資源，如果在部署之前未考慮到安全性，可能會增加弱點。 [軟體定義網路（SDN）](../../decision-guides/software-defined-network/index.md)這類技術所提供的彈性，也可以讓您以未預期的方式輕鬆修改整體網路攻擊面。 雲端平台也提供工具和功能，可以不一定可行的方式在內部部署環境中改善您的安全性功能。
 
@@ -38,7 +38,7 @@ ms.locfileid: "83217773"
 
 安全性基準專業領域會嘗試解決與核心安全性相關的商業風險。 在您規劃和實作雲端部署時，與您的企業一起識別這些風險，並監視它們的關聯性。
 
-組織之間的風險會有所不同，但以下是常見的安全性相關風險，您可以將其作為起點，以在雲端治理小組內進行討論：
+組織之間的風險不同。 使用這份常見的安全性相關風險清單，做為在雲端治理小組內討論的起點：
 
 - **資料缺口：** 無意暴露或遺失敏感性雲端裝載的資料，可能會導致客戶遺失、合約問題或法律後果。
 - **服務中斷：** 因為不安全的基礎結構中斷正常作業，而中斷和其他效能問題，可能會導致生產力遺失或失去業務。

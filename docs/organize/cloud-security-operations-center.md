@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 6bac764d067e755039ef2089aa64da05c63a1f86
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401134"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755415"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 

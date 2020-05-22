@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e7a2858773edecb3cfd7e0e8b24f69db44bc6af8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220680"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755081"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>成本管理原則合規性流程
 
@@ -35,7 +35,7 @@ ms.locfileid: "83220680"
 
 這個每季規劃程式也是評估您的雲端治理小組目前成員資格，以瞭解與目前或未來的商務計畫相關之知識差距的好時機。 邀請相關人員和工作負載擁有者來參與檢閱及規劃，無論是作為小組的暫時顧問或永久成員。
 
-**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確保商務和 IT 人員都能掌握最新的成本管理原則需求。 在此流程中檢閱及更新任何文件、指導方針或其他訓練資產，以確保這些項目與最新的公司原則聲明同步。
+**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確保商務和 IT 人員都能掌握最新的成本管理原則需求。 在此過程中，請檢查並更新任何檔、指導方針或其他訓練資產，以確保它們與最新的公司原則聲明同步。
 
 **每月報告：** 以每月為基礎，報告實際支出與預測。 將任何非預期的差異通知計費領導者。
 
@@ -60,7 +60,7 @@ ms.locfileid: "83220680"
 
 使用[成本管理專業領域範本](./template.md)，記錄與目前雲端採用方案一致的流程和觸發程式。
 
-如需有關執行成本管理原則以配合採用計畫的指引，請參閱有關成本管理專業領域改進的文章。
+如需有關執行成本管理原則以配合採用計畫的指引，請參閱[成本管理專業領域改進](./discipline-improvement.md)。
 
 > [!div class="nextstepaction"]
 > [成本管理專業領域改進](./discipline-improvement.md)

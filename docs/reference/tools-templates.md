@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621573"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756051"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "83621573"
 
 | 資源 | 描述 |
 |----------|-------------|
-| [Azure 架構檢閱](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | 這項線上評估會協助定義工作負載的特定架構和操作選項。 |
+| [Microsoft Azure 架構完善的審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | 這項線上評估會協助定義工作負載的特定架構和操作選項。 |
 | [最佳 &nbsp; 做法 &nbsp; 原始程式碼 &nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | 這個可部署的原始程式碼可補充並加速採用 Azure 伺服器管理服務的最佳作法。 使用此原始程式碼可快速啟用作業管理，並建立作業基準。 |
 | [Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | 在雲端進行作業管理的相關檔決策，並加速與企業的交談，以確保 Sla、復原的投資，以及與作業相關的預算配置。 |
 

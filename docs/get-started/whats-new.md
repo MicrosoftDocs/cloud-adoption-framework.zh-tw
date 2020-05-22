@@ -3,16 +3,16 @@ title: 新功能
 description: 深入瞭解適用于 Azure 的 Microsoft Cloud 採用架構的最新更新。
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/27/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 7ead653ddcce27ee0a144845ee3750373e1eb66d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620883"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755143"
 ---
 <!-- markdownlint-disable MD024 -->
 

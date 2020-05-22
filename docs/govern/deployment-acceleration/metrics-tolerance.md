@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab0d2c8657889a8f4ee16bd4dd9ca4f631b32c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220272"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754962"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>部署加速專業領域中的風險承受度計量和指示器
 
@@ -21,7 +21,7 @@ ms.locfileid: "83220272"
 
 ## <a name="metrics"></a>計量
 
-部署加速著重于如何設定、部署、更新和維護雲端資源的相關風險。 在採用此雲端治理專業領域時，下列資訊會很有用：
+部署加速著重于如何設定、部署、更新和維護雲端資源的相關風險。 採用部署加速專業領域時，下列資訊會很有用：
 
 - **部署失敗：** 失敗或導致資源設定錯誤的部署百分比。
 - **部署時間：** 將更新部署到現有系統所需的時間量。

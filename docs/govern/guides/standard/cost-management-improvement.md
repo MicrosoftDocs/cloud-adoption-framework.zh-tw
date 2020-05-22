@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 44e3cb4488833b2c47d101ed6b5600872d4ccf62
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219932"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754762"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準企業治理指南：改善成本管理專業領域
 
@@ -34,11 +34,11 @@ ms.locfileid: "83219932"
 - 移轉小組已開始將 VM 移轉出生產環境資料中心外。
 - 應用程式開發小組會積極地透過 CI/CD 管線將生產環境應用程式推送至雲端。 這些應用程式可以因應使用者需求被動地進行調整。
 - IT 內的商業智慧小組在雲端中提供了數個預測性分析工具。 雲端中匯總的資料量會持續成長。
-- 此成長支援認可業務成果。 不過，成本已開始迅速成長。 預計預算的成長速度比預期更快。 CFO 需要改進管理成本的方法。
+- 此成長支援認可業務成果。 成本已開始到球形。 預計預算的成長速度比預期更快。 CFO 需要改進管理成本的方法。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 
-成本監視和報告要新增至雲端解決方案。 IT 仍然作為成本結算所。 這表示 IT 採購會持續有雲端服務的付款。 不過，報告應該將直接操作費用系結至耗用雲端成本的功能。 此模型稱為_回報_雲端帳戶處理模型。
+成本監視和報告要新增至雲端解決方案。 IT 仍然作為成本結算所。 這表示 IT 採購會持續有雲端服務的付款。 報告應該將直接操作費用系結至耗用雲端成本的功能。 此模型稱為_回報_雲端帳戶處理模型。
 
 目前和未來狀態的變更會產生新風險，因此需要新的原則聲明。
 

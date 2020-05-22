@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f25a475bea681f34fc395fbcbd0684bb07ee6923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430122"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756204"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -92,7 +92,7 @@ ms.locfileid: "80430122"
 - **管理：** 讓系統在生產環境中執行的工作處理程式。
 - **安全性：** 保護應用程式和資料免于遭受威脅。
 
-為了協助改善整體作業， [Azure 架構架構](https://docs.microsoft.com/azure/architecture/guide/pillars)提供評估特定工作負載以遵循這些要素的方法。 您可以套用這些要素，以套用至平臺作業和工作負載作業。
+為了協助改善整體作業， [Microsoft Azure 妥善架構的架構](https://docs.microsoft.com/azure/architecture/guide/pillars)提供評估特定工作負載以遵循這些要素的方法。 您可以套用這些要素，以套用至平臺作業和工作負載作業。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -3,16 +3,16 @@ title: 適用于雲端採用小組的快速入門手冊
 description: 使用這些快速入門手冊，瞭解負責雲端採用工作之小組的目標和責任。 這些指南提供雲端採用架構的藍圖。
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 891300cd245b96598e1bce375aef064dc3544d7a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72d6f233f1dbdda60a0f48dbc89449915c013cf8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229297"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751991"
 ---
 # <a name="getting-started-guides-for-cloud-adoption-teams"></a>適用于雲端採用小組的快速入門手冊
 

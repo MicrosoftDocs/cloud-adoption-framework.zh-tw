@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400556"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754949"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
@@ -23,7 +23,7 @@ ms.locfileid: "83400556"
 
 採用規模已超越治理 MVP 中所定義的承受度指標。 消費的增加現在證明了雲端治理小組的時間，以監視和控制消費模式。
 
-做為全新創新技術的先驅，不再只是將 IT 視為成本中心。 當 IT 組織提供更多價值時，CIO 和 CFO 同意該時間是將它在公司中所扮演的角色轉移給他的權利。 除了其他變更之外，CFO 也想要針對其中一個業務單位的加拿大分公司，測試對雲端帳戶處理的直接付費方法。 這兩個已淘汰的資料中心之一，專門裝載該營業單位的加拿大營運資產。 在此模型中，營業單位的加拿大分公司會直接針對與託管資產相關的營運費用收費。 這種模型可讓 IT 更專注于管理其他人的支出，以及建立價值的詳細資訊。 不過，在此轉換開始之前，必須先準備好成本管理工具。
+做為全新創新技術的先驅，不再只是將 IT 視為成本中心。 當 IT 組織提供更多價值時，CIO 和 CFO 同意該時間是將它在公司中所扮演的角色轉移給他的權利。 除了其他變更之外，CFO 也想要針對其中一個業務單位的加拿大分公司，測試對雲端帳戶處理的直接付費方法。 這兩個已淘汰的資料中心之一，專門裝載該營業單位的加拿大營運資產。 在此模型中，營業單位的加拿大分公司會直接針對與託管資產相關的營運費用收費。 這種模型可讓 IT 更專注于管理其他人的支出，以及建立價值的詳細資訊。 開始進行此轉換之前，必須先備妥成本管理工具。
 
 ### <a name="changes-in-the-current-state"></a>目前狀態的變更
 
@@ -31,7 +31,7 @@ ms.locfileid: "83400556"
 
 從那時起，某些將會影響治理的事項已經改變：
 
-- 已從這兩個標記為淘汰的資料中心移除了 5,000 個資產。 採購和 IT 安全性會立即取消佈建剩餘的實體資產。
+- 5000資產已從標示為停用的兩個資料中心移除。 採購和 IT 安全性會立即取消佈建剩餘的實體資產。
 - 應用程式開發小組已實作為 CI/CD 管線，以部署一些雲端原生應用程式，大幅影響客戶體驗。
 - BI 小組已建立彙總、鑑藏、深入解析及預測流程，以便為企業營運帶來實質利益。 那些預測現在賦予了極富創意的新產品和服務。
 

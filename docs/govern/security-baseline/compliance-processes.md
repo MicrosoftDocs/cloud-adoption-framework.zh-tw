@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ab2033046f0f03ca897cf87d71267a069865a8dc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f30e906d7dee61ca98e88398ed16f1dc1828adb3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219830"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755860"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>安全性基準原則合規性流程
 
@@ -35,7 +35,7 @@ ms.locfileid: "83219830"
 
 此規劃程式也是評估您的雲端治理小組目前成員資格的好時機，以取得與安全性相關的新原則和風險的相關知識差距。 邀請相關 IT 人員來參與檢閱及規劃，無論是作為小組的暫時技術顧問或永久成員。
 
-**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確定 IT 人員和開發人員都是最新的安全性原則需求。 在此流程中檢閱及更新任何文件、指導方針或其他訓練資產，以確保這些項目與最新的公司原則聲明同步。
+**教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確定 IT 人員和開發人員都是最新的安全性原則需求。 在此過程中，請檢查並更新任何檔、指導方針或其他訓練資產，以確保它們與最新的公司原則聲明同步。
 
 **每月審查和報告審查：** 每月對所有雲端部署執行審核，以確保其持續與安全性原則一致。 檢閱 IT 人員的安全性相關活動，並識別任何未在現行監視和強制程序中處理的合規性問題。 這項審查的結果是雲端策略小組和每個雲端採用小組的報告，以溝通整體遵循原則。 報告也會儲存以便用於稽核和法律用途。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 974a500a846cfe1a907d91b1b055d6b75b94a3d9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217688"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755207"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>安全性基準專業領域中的風險承受度計量和指示器
 
@@ -39,7 +39,7 @@ ms.locfileid: "83217688"
 
 ## <a name="risk-tolerance-indicators"></a>風險承受度指標
 
-雲端平台能提供基本的功能組，讓小型的部署小組能在無須進行縝密額外規劃的情況下設定基本的安全性設定。 因此，小型開發/測試或實驗性第一個不包含機密資料的工作負載代表相對較低的風險層級，而且很可能不需要在正式的安全性基準原則中使用太多的方法。 不過，當重要資料或任務關鍵性功能被移到雲端之後，安全性風險便會立即提升，而對於那些風險的承受度也會迅速降低。 隨著有更多的資料和功能被部署到雲端，您越有可能需要對安全性基準專業領域投入更多資源。
+雲端平台能提供基本的功能組，讓小型的部署小組能在無須進行縝密額外規劃的情況下設定基本的安全性設定。 因此，小型開發/測試或實驗性第一個不包含機密資料的工作負載代表相對較低的風險層級，而且很可能不需要在正式的安全性基準原則中使用太多的方法。 一旦重要資料或要徑任務的功能移到雲端，安全性風險就會增加，而這些風險的承受度也會降低。 隨著有更多的資料和功能被部署到雲端，您越有可能需要對安全性基準專業領域投入更多資源。
 
 在雲端採用的早期階段，您可以與 IT 安全性小組和業務專案關係人合作，以識別與安全性相關的[業務風險](./business-risks.md)，然後決定可接受的安全性風險承受度基準。 雲端採用架構的這一節會提供範例，但您公司或部署的詳細風險和基準可能會有所不同。
 
