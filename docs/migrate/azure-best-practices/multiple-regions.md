@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400824"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815305"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -47,7 +47,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
   - Azure 儲存體支援[異地冗余儲存體（GRS）](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) ，這表示您的資料有三個複本會儲存在您的主要區域中，而三個額外的複本則會儲存在配對的區域中。 您無法變更 GRS 的儲存體配對。
   - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
-  - 如果您不打算使用 GRS 來支援區域復原需求，則建議您「不要」__ 使用配對區域作為次要區域。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
+  - 如果您不打算使用 GRS 來支援您的區域復原需求，則不應使用配對的區域作為次要。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
   > [!WARNING]
   > 請勿嘗試使用 Azure GRS 來備份或復原 VM。 相反地，請使用 [Azure 備份](https://azure.microsoft.com/services/backup)和 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) 以及 [Azure 受控磁碟](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)來支援 IaaS 工作負載的復原。
 
@@ -82,7 +82,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 | 區域        | Country     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | USA         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
+| 北美洲 | 加拿大      | 否              | 客戶              | 是                         | 是                           |
 | 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
 | 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 

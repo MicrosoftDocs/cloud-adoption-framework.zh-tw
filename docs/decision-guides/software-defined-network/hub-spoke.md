@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 43fa948aeaa575b440f483fa349d7c965e97a3c3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9f77d4a13b83c6d22592f36c924c2dd11164e27b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753464"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814353"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 
@@ -23,7 +23,7 @@ ms.locfileid: "83753464"
 
 傳入或傳出工作負載輪輻網路的所有流量，都會透過中樞網路進行路由傳送，可透過集中管理的 IT 規則或流程，對其進行路由傳送、檢查，或以其他方式來管理。
 
-此模型旨在解決下列每個問題：
+此模型的目的是要解決下列問題：
 
 - **節省成本和管理效率。** 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠跨多個工作負載，將多餘的資源和管理投入量降至最低。
 - **克服訂用帳戶限制。** 大型雲端式工作負載可能需要使用超過單一 Azure 訂用帳戶內所允許的資源。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱[Azure 網路限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)。

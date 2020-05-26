@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d1a268ca7900d26dc6b47e9bb14bdf813e0023ba
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620532"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754998"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -24,11 +24,11 @@ ms.locfileid: "83620532"
 > [!NOTE]
 > 部署加速專業領域不會取代可讓貴組織有效部署和設定雲端式資源的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別潛在商務風險，且為負責管理雲端資源的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
-本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責部署和設定雲端式工作負載的領導人。
+本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責部署和設定雲端式工作負載的領導人。
 
 ## <a name="policy-statements"></a>Policy statements
 
-可操作的原則聲明和所產生的架構需求，均可作為部署加速專業領域的基礎。 若要查看原則聲明範例，請參閱關於[部署加速原則聲明](./policy-statements.md)的文章。 這些範例可作為貴組織治理原則的起點。
+可操作的原則聲明和所產生的架構需求，均可作為部署加速專業領域的基礎。 使用[範例原則聲明](./policy-statements.md)作為定義部署加速原則的起點。
 
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。

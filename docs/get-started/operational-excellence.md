@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8859d2fa1228bb97ed9c0f6f0d2f05853c163969
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9a207590049021a6bb373ab13ff30c5c26431238
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752571"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814404"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>開始使用：在數位轉型期間提供卓越的營運
 
@@ -117,7 +117,7 @@ ms.locfileid: "83752571"
 
 ## <a name="next-steps-to-delivering-operational-excellence-across-the-portfolio"></a>跨組合提供營運卓越的後續步驟
 
-營運卓越需要具有可靠性、效能、安全性和成本優化的嚴格方法。 使用此系列中的其餘指導方針，以協助確保每個原則都透過一致的自動化方法來實現。
+營運卓越需要具有可靠性、效能、安全性和成本優化的嚴格方法。 使用此系列中的其餘指引，透過一致的自動化方法來實行這些原則。
 
 - **成本優化：** 使用快速入門手冊來[管理企業成本](./manage-costs.md)，以持續優化營運成本
 - **安全性：** 藉由使用快速入門手冊來[跨組合執行安全性](./security.md)，以降低風險。

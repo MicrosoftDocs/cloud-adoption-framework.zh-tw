@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401175"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815356"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -96,7 +96,7 @@ Coverdell 透過 Azure 將其基礎結構現代化，以節省記錄成本。 Co
 
 如果需要營運費用模型，下列範例可能是可行的商務結果：
 
-- **範例：** 公司的資料中心目前 depreciating 于未來三年的每年_x 美元_。 預期會需要額外的_y 美元_來重新整理下一年的硬體。 我們可以將資本費用轉換成營運費用模型，以每個月_z 美元_的費率為准，讓您能夠更有效地管理和責任，以提供技術的營運成本。
+- **範例：** 公司的資料中心目前 depreciating 在接下來三年的每年 _$X 美元_。 預期會需要額外的 _$Y 美元_來重新整理下一年的硬體。 我們可以根據每月 _$Z 美元_的費率將資本支出轉換成營運費用模型，以提供更佳的技術管理和責任。
 
 ## <a name="next-steps"></a>後續步驟
 

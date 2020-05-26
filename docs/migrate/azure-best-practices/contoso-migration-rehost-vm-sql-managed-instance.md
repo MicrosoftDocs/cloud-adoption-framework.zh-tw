@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a77190bd55e9c5dd0656bc62b8ac10c34b1d13ce
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223621"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815186"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -72,7 +72,7 @@ Contoso 雲端小組已確定此次移轉的目標。 該公司會使用移轉�
 
 ### <a name="database-considerations"></a>資料庫考量
 
-在解決方案設計過程中，Contoso 會進行 Azure SQL Database 與 SQL Server 受控執行個體的功能比較。 下列考量協助他們決定使用受控執行個體。
+在解決方案設計過程中，Contoso 會進行 Azure SQL Database 與 SQL Server 受控執行個體的功能比較。 下列考慮可協助他們決定使用受控執行個體。
 
 - 受控執行個體的目標是為最新版內部部署 SQL Server 提供幾乎 100% 的相容性。 對於在內部部署或 IaaS Vm 上執行 SQL Server 的客戶，Microsoft 建議受控執行個體，而且想要將其應用程式遷移至完全受控的服務，並使用最少的設計變更。
 - Contoso 計劃將大量應用程式從內部部署環境遷移到 IaaS。 有許多都是由 ISV 提供。 Contoso 會發現使用受控執行個體有助於確保這些應用程式的資料庫相容性，而不是使用可能不支援的 SQL Database。
@@ -113,13 +113,13 @@ Contoso 會完成下列步驟，以將 SmartHotel360 應用程式的 Web 和資�
 | [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
 | [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來 | 評估其 VMware Vm。 Azure Migrate 評估遷移的適用性 | 的電腦。 它提供在中執行的大小調整和成本預估 | Azure。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 Contoso 和其他使用者都必須符合此案例的下列先決條件：
 
 <!-- markdownlint-disable MD033 -->
 
-| 需求 | 詳細資料 |
+| 規格需求 | 詳細資料 |
 | --- | --- |
 | **Azure 訂用帳戶** | 當您在這系列的第一篇文章中執行評量時，您應該已經建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是訂用帳戶的系統管理員，則必須與管理員合作，將所需資源群組和資源的擁有者或參與者許可權指派給您。 |
 | **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。 |
@@ -198,7 +198,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
 Contoso 會考量下列因素：
 
 - 路由表包含一組規則 (路由)，可指定從受控執行個體傳送的封包應如何在虛擬網路中路由傳送。
-- 路由表會與受控執行個體部署所在的子網路相關聯。 每個離開子網路的封包都會依據相關聯的路由表進行處理。
+- 路由表與受控實例部署所在的子網相關聯。 每個離開子網路的封包都會依據相關聯的路由表進行處理。
 - 一個子網路只能與一個路由表相關聯。
 - 在 Microsoft Azure 中建立路由表，沒有任何額外的費用。
 

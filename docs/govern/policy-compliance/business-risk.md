@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ffa6c7e64f92f920c0caf1a2c6ab81ade4bc7e81
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5aa8386ae6808b87fa8e8febfbc8b51810e551dc
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754346"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815033"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "83754346"
 
 ## <a name="what-is-a-business-risk-mvp"></a>什麼是業務風險 MVP？
 
-**最基本的可行產品**通常用來定義可以產生具體值的最小單位。 在商務風險 MVP 中，雲端治理小組一開始會假設某些資產會在某個時間點部署至雲端環境。 這是這些資產當時的不明之處，而小組可能不確定哪些類型的資料會儲存在這些資產上。
+**最基本的可行產品（MVP）** 通常用來定義可以產生具體價值的最小單位。 在商務風險 MVP 中，雲端治理小組一開始會假設某些資產會在某個時間點部署至雲端環境。 這是這些資產當時的不明之處，而小組可能不確定哪些類型的資料會儲存在這些資產上。
 
 在規劃商業風險時，雲端治理小組可以建立最糟的案例，並將每個可能的原則對應到雲端。 找出所有雲端使用案例的所有潛在業務風險，可能需要花費相當長的時間和工作量，而可能會延遲對雲端工作負載進行治理的實施。 不建議這樣做，但這是一個選項。
 

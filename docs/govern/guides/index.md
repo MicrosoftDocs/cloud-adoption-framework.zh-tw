@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 69c46eb18c3181ed1f4301847786ebb538ee46fe
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400733"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754871"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -43,7 +43,7 @@ ms.locfileid: "83400733"
 
 此指南示範如何實作治理 MVP。 從該處開始，每個指南都顯示了雲端治理小組如何與雲端採用小組合作，為其完成前置作業，以加速進行採用工作。 從基礎到後續改良和演進，雲端採用架構治理模型都會引導治理的應用。
 
-若要開始治理旅程，請選擇下列兩個選項其中之一。 這些選項是依據綜合的客戶體驗。 標題會依據企業複雜度制定，以便於瀏覽。 不過，讀者的決定可能更加複雜。 下表概述了這兩個選項之間的差異。
+若要開始治理旅程，請選擇下列兩個選項其中之一。 這些選項是依據綜合的客戶體驗。 標題會依據企業複雜度制定，以便於瀏覽。 您的決策可能更為複雜。 下表概述了這兩個選項之間的差異。
 
 <!-- TODO: Refactor VDC content below. -->
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
@@ -84,7 +84,7 @@ ms.locfileid: "83400733"
 
 Azure 虛擬資料中心能充分發揮 Azure 雲端平台的功能，同時還能遵循企業的安全性與治理需求。
 
-相較於傳統內部部署環境，Azure 可讓工作負載開發團隊和其業務贊助者善用雲端平台所提供的更佳部署靈活度。 不過，當雲端採用工作擴大而要納入關鍵任務資料和工作負載時，此靈活度可能會與 IT 團隊所建立的公司安全性和原則合規性需求衝突。 已有複雜治理和法規需求的大型企業尤其會如此。
+相較於傳統內部部署環境，Azure 可讓工作負載開發團隊和其業務贊助者善用雲端平台所提供的更佳部署靈活度。 當雲端採用工作擴大而要納入關鍵任務資料和工作負載時，此靈活度可能會與 IT 小組所建立的公司安全性和原則合規性需求衝突。 已有複雜治理和法規需求的大型企業尤其會如此。
 
 Azure 虛擬資料中心方法的目標是要在採用生命週期中及早解決這些顧慮，其方法是提供模型、參考架構、自動化成品範例和指引，來協助讓開發人員和 IT 治理需求在進行企業雲端採用工作期間能夠取得平衡。 這種方法的核心是虛擬資料中心本身的概念：透過運用存取和安全性控制、網路原則和合規性監視，在雲端基礎結構周圍實作隔離邊界。
 

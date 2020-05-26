@@ -7,18 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f25a475bea681f34fc395fbcbd0684bb07ee6923
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756204"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815220"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
 某些工作負載是企業成功的關鍵。 針對這些工作負載，管理基準不足以符合雲端管理所需的業務承諾。 平臺作業甚至可能不足以符合業務承諾。 這項非常重要的工作負載子集需要特別著重于工作負載功能和其支援方式。
 
 傳回時，工作負載作業的投資可能會導致效能提升、降低業務中斷的風險，並在發生系統失敗時更快速地復原。 本文討論投資這些高優先順序工作負載持續作業的方法，以促進商業承諾的提升。
+
+<!-- docsTest:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>投資工作負載作業的時機
 

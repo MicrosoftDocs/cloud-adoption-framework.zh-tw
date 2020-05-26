@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd8c7e81d457ee3a63186217fda72223272ad3b7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223689"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815254"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -110,7 +110,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用受完整管理的平台建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -159,7 +159,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
     - **互連 vnet-sqlmi-eus2-DS-EUS2** （10.235.0.0.25）。
     - **互連 vnet-sqlmi-eus2-EUS2** （10.235.0.128/29）。 此子網路用來將目錄連結到受控執行個體。
 
-      ![受控執行個體 - 建立虛擬網路](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
+      ![受控執行個體：建立虛擬網路](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
 
 4. 部署虛擬網路和子網路之後，他們會將網路對等互連，如下所示：
 
@@ -186,12 +186,12 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 ### <a name="set-up-routing"></a>設定路由
 
-受控執行個體會置於私人虛擬網路中。 Contoso 需要路由表，以供虛擬網路與 Azure 管理服務通訊。 如果虛擬網路無法與管理它的服務通訊，則會變成無法存取。
+受控實例會放置在私人虛擬網路中。 Contoso 需要路由表，以供虛擬網路與 Azure 管理服務通訊。 如果虛擬網路無法與管理它的服務通訊，則會變成無法存取。
 
 Contoso 會考量下列因素：
 
 - 路由表包含一組規則 (路由)，可指定從受控執行個體傳送的封包應如何在虛擬網路中路由傳送。
-- 路由表會與受控執行個體部署所在的子網路相關聯。 每個離開子網路的封包都會依據相關聯的路由表進行處理。
+- 路由表與受控實例部署所在的子網相關聯。 每個離開子網路的封包都會依據相關聯的路由表進行處理。
 - 一個子網路只能與一個路由表相關聯。
 - 在 Microsoft Azure 中建立路由表，沒有任何額外的費用。
 
@@ -415,7 +415,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
 - 從 vCenter 清查中移除內部部署 VM。
 - 從本機備份作業中移除 VM。
-- 更新內部文件以顯示 SmartHotel360 應用程式的新位置。 將資料庫顯示為在 Azure SQL 受控執行個體資料庫中執行，並在前端做為在兩個 web 應用程式中執行。
+- 更新內部文件以顯示 SmartHotel360 應用程式的新位置。 顯示在 Azure SQL 受控執行個體中執行的資料庫，以及在兩個 web 應用程式中執行的前端。
 - 檢閱與已解除委任 VM 互動的任何資源，並更新任何相關的設定或文件，以反映新的組態。
 
 ## <a name="review-the-deployment"></a>檢閱部署

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399513"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755232"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ _圖 1：公司治理和治理專業領域。_
 
 雲端治理的漸進方法假設不可超過[業務風險容忍](./risk-tolerance.md)。 相反地，它假設治理的角色是要加速業務變更、協助工程師了解架構指導方針，並確保定期交流及補救[業務風險](./business-risk.md)。 另一方面，治理的傳統角色可能會變成工程師或業務整體在採用上的障礙。
 
-若使用雲端治理的漸進方法，建置新解決方案的小組和為企業防範業務風險的小組之間可能會有一些自然的摩擦。 不過，這兩個小組在此模型中可能變成以漸進或短期衝刺方式合作的同事。 作為同事，雲端治理小組和雲端採用小組開始合作，以公開、評估及補救業務風險。 此工作可以建立減少摩擦並在小組織之間建立合作關係的自然方法。
+若使用雲端治理的漸進方法，建置新解決方案的小組和為企業防範業務風險的小組之間可能會有一些自然的摩擦。 這兩個小組在此模型中可能變成以漸進或短期衝刺方式合作的同事。 作為同事，雲端治理小組和雲端採用小組開始合作，以公開、評估及補救業務風險。 此工作可以建立減少摩擦並在小組織之間建立合作關係的自然方法。
 
 ## <a name="minimum-viable-product-mvp-for-policy"></a>原則的最簡可行產品 (MVP)
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9c44c03c0a467e897ba648d1f4ae81fc7bae1c71
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ebccc9b47cc12b0b54b9a7aec1c88d2a7e733816
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751848"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814303"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -109,7 +109,7 @@ CCoE 是由高需求小組所共同工作的函式。 請務必允許進行有�
 
 ## <a name="baseline-capability"></a>基準功能
 
-CCoE 模型需要下列各項功能之間的共同作業：
+CCoE 模型需要下列功能之間的共同作業：
 
 - 雲端採用（特別是解決方案架構設計人員）。
 - 雲端策略（特別是方案和專案經理）。

@@ -7,18 +7,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eff835c50a121f7338439d3987e0e294af759956
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751970"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814217"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>開始使用：打造雲端自動化團隊
 
 本指南可協助您瞭解自動化小組在雲端採用上的目標和目標。
 
-在雲端採用的過程中，雲端自動化功能將可發揮 DevOps 和雲端原生方法的潛能。 每個領域的專業知識都可以加速採用和創新。
+在雲端採用的過程中，雲端自動化功能將可發揮 DevOps 和雲端原生方法的潛能。 這些領域的專業知識可加速採用和創新。
 
 ## <a name="prerequisites"></a>Prerequisites
 

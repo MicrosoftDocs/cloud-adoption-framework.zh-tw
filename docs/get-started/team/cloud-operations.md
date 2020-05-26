@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: cc26fd22e386769312288f3e6b8dc5cb11585ab1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f7670efdfb22a6542efe93f309e8bbaf83a2027e
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751866"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815118"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -29,7 +29,7 @@ ms.locfileid: "83751866"
 **項**
 
 - 判斷您是否需要雲端作業小組。
-- 藉由選取 [**組織對齊**] 索引標籤，記錄[RACI （負責、參與、諮詢和通知）範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的決策和責任人員。
+- 記錄工作表中[RACI （負責、參與、諮詢和通知）範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的決策和責任人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
@@ -71,7 +71,7 @@ ms.locfileid: "83751866"
 
 **項**
 
-- 建立每個支援小組的步調。 可能的話，請將該步調與發行和規劃週期保持一致。
+- 建立支援小組的步調。 可能的話，請將該步調與發行和規劃週期保持一致。
 - 直接與雲端策略小組或其各種小組成員建立不同的步調，以檢查與下一波採用相關的任何操作需求。
 
 **支援交付後完成的指引：**

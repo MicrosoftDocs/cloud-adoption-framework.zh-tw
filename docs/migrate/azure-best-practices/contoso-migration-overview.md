@@ -7,12 +7,12 @@ ms.date: 04/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a95247fb479b1c9413c5c61fb499d1f9c4e70c4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2688faf21c6a42846db246172fba6aabc8eca56f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223570"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815169"
 ---
 <!-- cSpell:ignore givenscj -->
 
@@ -78,14 +78,14 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure Vm 上重新裝載 Linux 應用程式和適用於 MySQL 的 Azure 資料庫](./contoso-migration-rehost-linux-vm-mysql.md) | 本文提供的範例會示範如何使用 Azure Migrate 將 Linux 裝載的應用程式遷移至 Azure Vm。 它會使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將應用程式資料庫移轉至適用於 MySQL 的 Azure 資料庫。
-[在 Azure Vm 上重新裝載 Linux 應用程式](./contoso-migration-rehost-linux-vm.md) | 此範例示範如何使用 Azure Migrate 服務，完成將 Linux 型應用程式隨即轉移至 Azure Vm 的操作。
+[在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式](./contoso-migration-rehost-linux-vm-mysql.md) | 本文提供的範例會示範如何使用 Azure Migrate 將 Linux 裝載的應用程式遷移至 Azure Vm。 它會使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將應用程式資料庫移轉至適用於 MySQL 的 Azure 資料庫。
+[將 Linux 應用程式重新裝載至 Azure VM](./contoso-migration-rehost-linux-vm.md) | 此範例示範如何使用 Azure Migrate 服務，完成將 Linux 型應用程式隨即轉移至 Azure Vm 的操作。
 
 ### <a name="sql-server-workloads"></a>SQL Server 工作負載
 
 **文章** | **詳細資料**
 --- | ---
-[在 Azure VM 和 Azure SQL Database 受控實例上重新裝載應用程式](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供適用于內部部署應用程式的隨即轉移至 Azure 的範例。 這包括使用 Azure Migrate 將應用程式前端 VM，以及使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將應用程式資料庫移轉至 Azure SQL Database 受控實例。
+[在 Azure VM 上重新裝載應用程式，並 Azure SQL Database 受控實例](./contoso-migration-rehost-vm-sql-managed-instance.md) | 本文提供適用于內部部署應用程式的隨即轉移至 Azure 的範例。 這牽涉到使用 Azure Migrate 來遷移應用程式前端 VM，以及使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)來 Azure SQL Database 受控實例的應用程式資料庫。
 [使用 SQL Server Always On 可用性群組在 Azure Vm 上重新裝載應用程式](./contoso-migration-rehost-vm-sql-ag.md) | 此範例示範如何使用 Azure 託管的 SQL Server Vm 來遷移應用程式和資料。 它會使用 Azure Migrate 來遷移應用程式 Vm，並使用 Azure 資料庫移轉服務，將應用程式資料庫移轉至 Always On 可用性群組所保護的 SQL Server 叢集。
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP 和 JAVA 應用程式
@@ -93,7 +93,7 @@ Azure 提供全方位雲端服務組合的存取權。 讓開發人員與 IT 專
 **文章** | **詳細資料**
 --- | ---
 [使用 Azure App Service 和 Azure SQL Database 重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql.md) | 此範例示範如何將內部部署 Windows 應用程式遷移至 Azure web 應用程式，並使用[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)將應用程式資料庫移轉至 azure SQL Server 實例。
-[使用 Azure App Service 和 SQL 受控執行個體重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql-managed-instance.md) | 此範例示範如何將內部部署 Windows 應用程式遷移至 Azure web 應用程式，並使用搭配[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將應用程式資料庫移轉至 Azure SQL 受控實例。
+[使用 Azure App Service 和 SQL 受控執行個體重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql-managed-instance.md) | 此範例示範如何將內部部署 Windows 應用程式遷移至 Azure web 應用程式，並使用與[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)將應用程式資料庫移轉至 azure SQL 受控執行個體。
 [使用 Azure App Service、Azure 流量管理員及適用於 MySQL 的 Azure 資料庫，將 Linux 應用程式重構至多個區域](./contoso-migration-refactor-linux-app-service-mysql.md) | 此範例說明如何使用 Azure 流量管理員，將內部部署 Linux 型應用程式移轉至多個 Azure 區域的 Azure Web 應用程式，與 GitHub 整合以進行持續傳遞。 應用程式資料庫會移轉至適用於 MySQL 的 Azure 資料庫執行個體。
 [在 Azure 中重建應用程式](./contoso-migration-rebuild.md) | 本文提供的範例說明如何使用各種 Azure 功能和受控服務來重建內部部署應用程式，包括 Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure 認知服務及 Azure Cosmos DB。
 [重構 Azure DevOps Services 上的 Team Foundation Server](./contoso-migration-tfs-vsts.md) | 本文中的範例說明將內部部署 Team Foundation Server 部署移轉至 Azure 中的 Azure DevOps Services。

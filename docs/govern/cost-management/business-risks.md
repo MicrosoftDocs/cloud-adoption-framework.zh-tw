@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e52e38803f37d8dec279eb9af5b422500b338b21
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 048c41f56247ff7f8878d3fdd05506ed46224768
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755098"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815084"
 ---
 <!-- cSpell:ignore prepurchases -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "83755098"
 
 ## <a name="relevance"></a>相關性
 
-在成本治理方面，採用雲端會建立範式轉移。 傳統內部部署世界中的成本管理會以下列各項為基礎：重新整理週期、資料中心收購、主機更新，以及週期性維護問題。 您可以預測、規劃和精簡這其中每一個成本，以便與每年的資本支出預算保持一致。
+在成本治理方面，採用雲端會建立範式轉移。 在傳統內部部署環境中管理成本是以重新整理週期、資料中心收購、主機更新和週期性維護問題為基礎。 您可以預測、規劃和調整這些成本，以配合年度資本支出預算。
 
 針對雲端解決方案，許多企業通常會採取更被動的方式來進行成本管理。 在許多情況下，企業將會預購 (或承諾使用) 一定數量的雲端服務。 此模型假設要根據企業規劃來針對特定雲端廠商花費的費用來取得最大折扣，即會建立對已規劃之主動式成本週期的認知。 只有當企業也實行成熟的成本管理專業領域時，該認知才會變成現實。
 

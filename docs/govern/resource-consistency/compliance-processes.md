@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 25092e44b14b2f813b4db2fe44497bf8ce4e1375
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f08e1c0bdb516edea017da27baa531e0d422bd42
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755921"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815016"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>資源一致性原則的合規性程序
 
@@ -21,7 +21,7 @@ ms.locfileid: "83755921"
 
 ## <a name="planning-review-and-reporting-processes"></a>規劃、檢閱及報告流程
 
-雲端平台提供一系列的管理工具和功能，您可以用來組織、佈建、調整及縮短停機時間。 使用這些工具，以補救潛在風險的方式來有效地結構和操作雲端部署，除了與 IT 營運小組和商務專案關係人密切合作之外，還需要妥善思考程式和原則。
+雲端平台提供一系列的管理工具和功能，您可以用來組織、佈建、調整及縮短停機時間。 使用這些工具，以補救潛在風險的方式來有效地結構和操作雲端部署，除了與 IT 營運團隊和商務專案關係人密切合作以外，還需要妥善考慮的流程和原則。
 
 以下是一組資源一致性專業領域經常會牽涉到的範例流程。 當您規劃可讓您根據業務變更和開發及 IT 小組 (賦有將指引付諸行動的工作) 意見反應來繼續更資源一致性原則的流程時，使用這些範例作為起點。
 

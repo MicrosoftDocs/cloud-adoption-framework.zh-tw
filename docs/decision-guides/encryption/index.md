@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621198"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754007"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -21,11 +21,11 @@ ms.locfileid: "83621198"
 
 跳至：[金鑰管理](#key-management) | [資料加密](#data-encryption) | [進一步瞭解](#learn-more)
 
-雲端加密策略的重點在於公司政策和合規性要求。 需要加密資源，並且許多 Azure 服務 (例如 Azure 儲存體和 Azure SQL Database) 預設會啟用加密。 不過，加密有可能會增加延遲和整體資源使用量的成本。
+雲端加密策略的重點在於公司政策和合規性要求。 需要加密資源，並且許多 Azure 服務 (例如 Azure 儲存體和 Azure SQL Database) 預設會啟用加密。 但是加密有可能會增加延遲和整體資源使用量的成本。
 
 對於需要大量資源的工作負載，在加密與效能之間取得適當的平衡點，並判斷加密資料與流量的方式是必要的。 加密機制的成本與複雜度各不相同，技術和原則需求都會影響您對套用加密的方式，以及儲存和管理關鍵密碼和金鑰之方式的決策。
 
-公司政策和第三方合規性是規劃加密策略時最重要的考量事項。 Azure 提供了多種標準機制，可以滿足加密資料的常見需求，無論是待用還是傳輸中。 但是對於要求更嚴格控制的政策與合規性需求 (例如標準化的祕密和金鑰管理、使用中的加密，或資料特定加密)，您將需要開發更複雜的加密策略來支援這些需求。
+公司政策和第三方合規性是規劃加密策略時最重要的考量事項。 Azure 提供了多種標準機制，可以滿足加密資料的常見需求，無論是待用還是傳輸中。 對於要求更嚴格控制的政策與合規性需求 (例如標準化的祕密和金鑰管理、使用中的加密，或資料特定加密)，您將需要開發更複雜的加密策略來支援這些需求。
 
 ## <a name="key-management"></a>金鑰管理
 

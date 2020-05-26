@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: e5e6e495aed54648ec480c8def0ae9c784b6b800
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216906"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815441"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
-瞭解如何藉由開發跨小組的矩陣，識別負責、參與、*諮詢和通知*（RACI）的合作物件，來協調各小組的責任。 本文提供[建立小組結構](./organization-structures.md)中所述之組織結構的範例 RACI 矩陣：
+瞭解如何藉由開發跨小組的矩陣，識別負責、參與、_諮詢和通知_（RACI）的合作物件，來協調各小組的責任。 本文提供[建立小組結構](./organization-structures.md)中所述之組織結構的範例 RACI 矩陣：
 
 - [僅限雲端採用小組](#cloud-adoption-team-only)
 - [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)

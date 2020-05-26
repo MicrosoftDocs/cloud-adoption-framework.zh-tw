@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 17d1e25c7e87252b51b83d283da5c328a622293f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620453"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755076"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
@@ -22,11 +22,11 @@ ms.locfileid: "83620453"
 > [!NOTE]
 > 成本管理專業領域不會取代現有的業務小組、帳戶處理實務，以及牽涉到您的組織中對 IT 相關成本進行財務管理的程序。 此專業領域的主要目的是找出與 IT 支出有關的潛在雲端相關風險，並提供降低風險指導方針給負責部署和管理雲端資源的業務和 IT 小組。
 
-本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責擁有和管理雲端式工作負載並支付費用的領導人。
+本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 從此專業領域衍生的決策、原則和流程，應會涉及與您的業務和 IT 小組相關成員進行互動與討論，特別是那些負責擁有和管理雲端式工作負載並支付費用的領導人。
 
 ## <a name="policy-statements"></a>Policy statements
 
-可操作的原則聲明和所產生的架構需求，均可做為成本管理專業領域的基礎。 若要查看原則聲明範例，請參閱關於[成本管理原則聲明](./policy-statements.md)的文章。 這些範例可作為貴組織治理原則的起點。
+可操作的原則聲明和所產生的架構需求，均可做為成本管理專業領域的基礎。 使用[範例原則聲明](./policy-statements.md)作為定義成本管理原則的起點。
 
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。

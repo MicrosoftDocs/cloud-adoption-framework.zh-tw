@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8624b11e0f99404c4f718c8a1c07de803d7fb876
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214577"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815373"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "83214577"
 
 本文說明虛構公司 Contoso 如何評定要移轉至 Azure 的內部部署應用程式。 在範例案例中，Contoso 的內部部署 SmartHotel360 應用程式目前在 VMware 上執行。 Contoso 會使用 Azure Migrate 服務來評定應用程式的 VM，並使用 Database Migration Assistant 來評定應用程式的 SQL Server 資料庫。
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>總覽
 
 Contoso 在考慮遷移至 Azure 時，該公司需要進行技術和財務方面的評量，以判斷其內部部署工作負載是否適合雲端移轉。 尤其是，Contoso 小組想要評定機器和資料庫是否能與移轉作業相容。 該小組想要預估在 Azure 中執行 Contoso 的資源所需的容量和成本。
 
@@ -101,7 +101,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
   - **OSTICKETWEB** 正在執行 Apache 2 和 PHP 7.0。
   - **OSTICKETMYSQL** 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 
@@ -118,7 +118,7 @@ Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 - 執行 SQL Server 實例之 VM 的完整功能變數名稱（FQDN），以進行資料庫評估。
 - SQL Server VM 上所執行的 Windows 防火牆應該在 TCP 通訊埠 1433 (預設值) 允許外部連線。 此設定可讓 Data Migration Assistant 能夠連線。
 
-## <a name="assessment-overview"></a>評量概觀
+## <a name="assessment-overview"></a>評定概觀
 
 以下是 Contoso 執行評量的方式：
 
@@ -131,8 +131,10 @@ Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 > - **步驟5：使用 Azure Migrate 準備相依性分析。** Contoso 會在 VM 上安裝 Azure Migrate 代理程式，以便能夠了解 VM 之間的相依性對應。
 > - **步驟6：使用 Azure Migrate 來評估 Vm。** Contoso 會檢查相依性、將 VM 分組，並執行評量。 當評量就緒時，Contoso 會分析評量以準備進行移轉。
 
-    > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
+<!-- -->
+
+> [!NOTE]
+> 評量不應僅限於使用工具來探索您環境的相關資訊。 您也應該安排時間來與企業擁有者、使用者和 IT 部門的其他成員交談，以充分瞭解環境中發生的狀況，並瞭解工具無法告訴您的因素。
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>步驟 1：下載並安裝 Data Migration Assistant
 
@@ -260,7 +262,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 1. 在 [選取移轉工具]  中，選取 [暫時跳過新增移轉工具]   > [下一步]  。
 
-1. 在 [審核] 和 [**新增工具**] 中，檢查設定，然後選取 [**新增工具**]。
+1. 在 [檢閱 + 新增工具]  中檢閱設定，然後選取 [新增工具]  。
 
 1. 等候幾分鐘讓 Azure Migrate 專案完成部署。 您會進入專案頁面。 如果您沒有看到專案，則可以從 Azure Migrate 儀表板中的 [伺服器]  來存取。
 

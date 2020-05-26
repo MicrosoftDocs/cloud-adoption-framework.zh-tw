@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6abe7a2f76b75aea70cff5d9ce0d5e870ec96cf6
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752082"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814457"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：打造雲端採用小組
 
@@ -77,7 +77,7 @@ ms.locfileid: "83752082"
 - 開始使用：將工作負載遷移至雲端
 - 開始使用：建立新的產品或服務
 
-在這些入門指南中，您會發現各種小組的指導方針，以及其責任和責任程度也各不相同。 使用指南來瞭解您的小組如何融入旅程的其餘部分。 也請使用這些服務來瞭解您可以預期從公司取得的支援層級。
+這些快速入門手冊提供各種小組的指引，以及其責任和責任程度的差異。 使用指南來瞭解您的小組如何融入旅程的其餘部分。 也請使用這些服務來瞭解您可以預期從公司取得的支援層級。
 
 最後，雲端採用小組會負責在其指派的遷移工作或新產品開發方面進行傳遞。 雖然支援小組負責確保每個步驟都已完成，但每個雲端採用小組都必須負責確保支援小組獲得成功的支援。 如果責任小組尚不存在，或需要更多支援以提供其負責的步驟，則建議採用小組與其他小組合作，以完成其交付專案。
 

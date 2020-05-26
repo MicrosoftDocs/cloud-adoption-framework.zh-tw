@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 0e43a719894836ac3b4a97574c98deef90cb9e38
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b6c88d978b6b7750bd687e411663d5828f6f4257
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755368"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815475"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,9 +42,7 @@ ms.locfileid: "83755368"
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 
-上述每一種方法都屬於廣泛的雲端採用生命週期。 下圖結合了每個方法來示範整體生命週期。 雲端採用架構是一種完整的生命週期架構，可在每個採用階段支援客戶，方法是提供方法來克服常見的封鎖程式。
-
-<!-- cSpell:ignore caf -->
+上述每個方法都屬於廣泛的雲端採用生命週期。 雲端採用架構是一種完整的生命週期架構，可在每個採用階段支援客戶，方法是提供方法來克服常見的封鎖程式，如下所示。
 
 ::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
 

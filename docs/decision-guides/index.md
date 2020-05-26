@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214973"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753787"
 ---
 # <a name="architectural-decision-guides"></a>架構決策指南
 
 雲端採用架構中的架構決策指南說明在建立雲端治理設計指引時有幫助的模式和模型。 每個決策指南著重於雲端部署的一個核心基礎結構元件，並列出可以支援特定雲端部署案例的模式和模型。
 
-當您開始為組織建立雲端治理時，可據以採取動作的治理旅程會提供基準藍圖。 不過，這些旅程假設不一定能反映貴組織的需求和優先順序。
+當您開始為組織建立雲端治理時，可據以採取動作的治理旅程會提供基準藍圖。 這些旅程假設不一定能反映貴組織的需求和優先順序。
 
 這些決策指南藉由提供替代模式和模型來補充範例治理旅程，這些模式和模型可以協助您讓在範例設計指引中所做的架構設計選擇與您自己的需求保持一致。
 

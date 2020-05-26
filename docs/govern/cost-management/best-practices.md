@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ad35877a912fd9d52a74c7f44c91bd9fedb559a5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 0632b80f168ba51f5709322cc229e4b7a21094c4
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755119"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815101"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "83755119"
 
 ## <a name="operational-cost-management-best-practices"></a>營運成本管理最佳做法
 
-下列最佳作法通常是由雲端治理或雲端營運小組的成員完成，這是根據修補和其他已排程的維護程式。 這些最佳作法都對應到本文稍後的可採取動作的指導方針。
+下列最佳作法通常是由雲端治理或雲端營運小組的成員完成，這是根據修補和其他已排程的維護程式。 這些最佳做法會對應到本文稍後的可採取動作的指導方針。
 
 - **標記對所有治理而言都很重要：** 請確定所有的工作負載和資源都遵循[適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md)，並[使用 Azure 原則強制執行標記慣例](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)。
 - **識別適當的大小機會：** 檢查環境中目前的資源使用率和效能需求，以找出長時間未充分使用的資源（通常超過90天）。

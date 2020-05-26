@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea26a5dcefa2f7bcde2c33ad4482ac8aadf06156
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755052"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815050"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>成本管理專業領域中的風險承受度計量和指示器
 
@@ -41,7 +41,7 @@ ms.locfileid: "83755052"
 當您發現[業務風險](./business-risks.md)後，您將與您的企業一起識別可用來識別觸發條件的基準，而這些觸發條件可能會提高這些風險。 以下是幾個範例，說明如何根據您的風險基準容錯來比較度量（例如上述的計量），以指出您的業務需要進一步投資成本管理。
 
 - **承諾用量導向（最常見）：** 在雲端廠商上，致力於消費 _$x （000000）_ 的公司。 他們需要成本管理的專業領域，以確保企業不會超過其支出目標超過20%，而且他們至少會使用90% 的承諾用量。
-- **百分比觸發程式：** 具有雲端費用的公司，對其生產系統而言是穩定的。 如果這項變更超過_x%_，則成本管理的專業領域就是明智的投資。
+- **百分比觸發程式：** 具有雲端費用的公司，對其生產系統而言是穩定的。 如果這項變更超過_x%_，則成本管理的專業領域就是一項明智的投資。
 - **過度布建觸發程式：** 相信其已部署解決方案的公司過度布建。 成本管理是一項優先的投資，直到展示適當的布建和資產使用率。
 - **每月費用觸發程式：** 超過 $x 的公司（每月_000）_ 被視為可調整成本。 如果在指定的月份中，支出超過該數量，就必須投資成本管理。
 - **年度消費觸發程式：** 具有 IT R&D 預算的公司，允許在雲端實驗上每年花費 _$x （000）_ 。 他們可能會在雲端中執行生產工作負載，但如果預算未超過該數量，它們仍會被視為實驗性解決方案。 如果超過預算，他們必須將預算視為生產投資，並密切地管理費用。

@@ -3,16 +3,16 @@ title: 擴充登陸區域
 description: 使用適用於 Azure 的雲端採用架構來了解如何擴充登陸區域。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3adb6067ec003b668316b5296f3105d1a09e01a4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0964da23da680755ea9d6c35fef0996e986780b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215206"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756561"
 ---
 # <a name="expand-your-landing-zone"></a>擴充登陸區域
 
@@ -24,7 +24,7 @@ ms.locfileid: "83215206"
 
 ![共用架構原則](../../_images/ready/shared-principles.png)
 
-[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) 和 [Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案均共用這些相同的架構原則。
+[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 和 [Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案均共用這些相同的架構原則。
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>將這些原則套用至您的登陸區域改進功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "83215206"
 - 基本考量：重構登陸區域，以精簡裝載、基本概念和其他基礎元素。
 - 作業擴充：新增作業管理設定，以改善**效能、可靠性和卓越營運**。
 - 控管擴充：新增控管設定，以改善**成本、可靠性、安全性**和一致性。
-- 安全性擴充：新增**安全性** 設定，以改善敏感性資料和重要系統的保護。
+- 安全性擴充：新增**安全性**設定，以改善敏感性資料和重要系統的保護。
 
 > [!WARNING]
 > 採用小組若具有**在雲端中裝載超過 1,000 項資產 (應用程式、基礎結構或資料資產)** 的中期目標 (在 24 個月內)，應考慮及早在其雲端採用旅程中進行每一項擴充。 若為其他各種採用模式，登陸區域擴充可以是平行的反覆項目，以利及早獲致商務成就。

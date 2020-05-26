@@ -1225,9 +1225,9 @@ items:
             href: manage/centralize-operations.md
           - name: 建立操作適用性檢閱
             href: manage/operational-fitness-review.md
-          - name: 改善平台或工作負載的復原能力
+          - name: 改善平台或工作負載可靠性
             items:
-              - name: Azure 服務的復原檢查清單
+              - name: Azure 服務的可靠性檢查清單
                 href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 失敗模式分析
                 href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
@@ -1363,7 +1363,7 @@ items:
         items:
           - name: 解決方案架構的 Azure 架構中心
             href: 'https://docs.microsoft.com/azure/architecture'
-          - name: 工作負載架構的 Azure Architecture Framework
+          - name: 適用於工作負載架構的 Microsoft Azure Well-Architected Framework
             href: 'https://docs.microsoft.com/azure/architecture/framework'
           - name: 產品實作文件
             href: 'https://docs.microsoft.com'

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 68bfe3b1acfb6a48fdda7e4d9583adcadac29893
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398463"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815203"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理中的業務重要性
 
@@ -20,8 +20,7 @@ ms.locfileid: "83398463"
 
 在範圍的另一端，某些工作負載可能會在不使用的情況下，一次執行數個月。 這些工作負載的效能或中斷不佳，但影響已隔離並受到限制。
 
-瞭解 IT 組合中每個工作負載的重要性，是建立雲端管理的相互承諾的第一個步驟。
-下圖說明要遵循的重要性調整與企業所做出的標準承諾之間的一般對齊方式。
+瞭解 IT 組合中每個工作負載的重要性，是建立雲端管理的相互承諾的第一個步驟。 下圖說明要遵循的重要性調整與企業所做出的標準承諾之間的一般對齊方式。
 
 ![重要性和管理層級的對齊](../../_images/manage/cloud-criticality-alignment.png)
 
@@ -34,7 +33,7 @@ ms.locfileid: "83398463"
 | 關鍵任務 |  會影響公司的任務，而且可能會明顯影響公司的收益與損失聲明。 |
 | 單位-重大 | 會影響特定業務單位的任務，以及其利潤與損失聲明。 |
 | 高 | 可能不會妨礙任務，但會影響高重要性的程式。 在中斷的情況下可以量化可測量的損失。 |
-| 中型 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
+| 中 | 對進程的影響很可能。 損失較低或無數，但品牌損毀或上游損失很可能。 |
 | 低 | 對商務程式的影響無法衡量。 品牌損毀或上游損失都不太可能。 對單一小組的當地語系化影響很可能。 |
 | 不支援 | 沒有與此工作負載相關聯的商務擁有者、小組或程式，可能會對工作負載的持續管理進行任何投資。 |
 
@@ -46,7 +45,7 @@ ms.locfileid: "83398463"
 
 ## <a name="importance-of-accurate-criticality"></a>準確重要性
 
-稍後在雲端採用程式中，雲端管理小組會使用此分類來判斷符合一致的重要性層級所需的工作量。 在內部部署環境中，作業管理通常會集中購買並視為必要的商務負擔，幾乎不需要額外的營運成本。 在雲端中，營運管理（例如所有雲端）是以每個資產為基礎，以每月作業成本來購買。
+稍後在雲端採用程式中，雲端管理小組會使用此分類來判斷符合一致的重要性層級所需的工作量。 在內部部署環境中，作業管理通常會集中購買並視為必要的商務負擔，幾乎不需要額外的營運成本。 就像所有雲端服務一樣，營運管理是以每個資產為基礎，以每月的作業成本來購買。
 
 由於雲端中的作業管理有清楚且直接的成本，因此請務必適當地調整成本和所需的重要性調整。
 
@@ -60,8 +59,8 @@ ms.locfileid: "83398463"
 
 如果您是使用[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)來規劃雲端管理，則適用下列步驟。
 
-1. 記錄活頁簿 [**調整規模**] 索引標籤上的 [重要性] 級別。
-2. 更新_範例_或 [_清除] 範本_中的每個工作負載，以反映 [_重要性_] 資料行中的預設重要性。
+1. 記錄工作表中的重要性範圍 `Scale` 。
+2. 請更新 `Example` 工作表或工作表中的每個工作負載 `Clean Template` ，以反映資料行中的預設重要性 `Criticality` 。
 3. 企業應輸入正確的值，以反映與預設重要性的任何偏差。
 
 ## <a name="next-steps"></a>後續步驟

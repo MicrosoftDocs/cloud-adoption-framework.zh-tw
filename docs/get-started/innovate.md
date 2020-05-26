@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 052c96277b25a01da22bc9ddb1aae9e7c75dd8db
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 68aff93493200e4878e31b961b3c97608c76c7c3
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752728"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814387"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -36,7 +36,7 @@ ms.locfileid: "83752728"
 
 - [動機](../strategy/motivations.md)：策略對齊的第一個步驟是取得推動創新工作之動機的合約。 一開始先瞭解並分類來自企業和 IT 的各種專案關係人的動機和一般主題。
 - [商務結果](../strategy/business-outcomes/index.md)：當動機對齊之後，就可以捕捉所需的商務結果。 這種資訊提供清楚的計量，讓您用來測量整體轉換。
-- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與*需要*改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率（ROI）。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務[：加速遷移](./migrate.md)。
+- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與_需要_改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率（ROI）。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務[：加速遷移](./migrate.md)。
 
 <!-- markdownlint-disable MD033 -->
 <br>

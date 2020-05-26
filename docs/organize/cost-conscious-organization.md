@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0304d2a8f8794f7cc191f494179c3bbb9080d00d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216413"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815458"
 ---
 # <a name="build-a-cost-conscious-organization"></a>打造符合成本效益的組織
 
@@ -35,7 +35,7 @@ ms.locfileid: "83216413"
 
 - **優化：** 優化是建立成本降低的動作。 在優化期間，系統會修改資源配置，以降低支援各種工作負載的成本。 此程式需要反復專案和實驗。 降低成本會降低效能。 在成本控制和使用者效能期望之間尋找適當的平衡，會要求多個合作物件的輸入。
 
-下列各節將說明_雲端策略小組_、_雲端採用小組_、_雲端治理小組_和_卓越雲端中心（CCoE）_ 在開發符合成本效益的組織中所扮演的角色。
+下列各節說明各種小組在開發符合成本的組織時所扮演的角色。
 
 ## <a name="cloud-strategy-team"></a>雲端策略小組
 

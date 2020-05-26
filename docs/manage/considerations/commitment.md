@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a03035c749b57d60bf02db6ed0f019a873aecfc5
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398748"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815271"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -114,7 +114,7 @@ ms.locfileid: "83398748"
 
 ### <a name="estimate-outage-hours-per-year"></a>估計中斷（每年小時）
 
-複合 SLA 是以工作負載中每個資產的部署為基礎的服務等級協定。 該欄位會驅動_預估中斷_（在活頁簿中標示為_Est_ ）。 若要計算每年不使用活頁簿而以小時為單位的預估中斷，請套用下列公式：
+複合 SLA 是以工作負載中每個資產的部署為基礎的服務等級協定。 該欄位會驅動_預估中斷_（ `Est. Outage` 在活頁簿中標示）。 若要計算每年不使用活頁簿而以小時為單位的預估中斷，請套用下列公式：
 
 > _預估中斷 = （1-複合 SLA 百分比） &#215; 一年中的時數_
 
@@ -122,17 +122,17 @@ ms.locfileid: "83398748"
 
 ### <a name="standard-loss-impact"></a>標準遺失影響
 
-_標準遺失影響_（在活頁簿中標示_標準影響_）會預測任何中斷的財務影響，假設_估計的中斷_預測證明正確。 若要計算此預測，而不使用活頁簿，請套用下列公式：
+_標準遺失影響_（在活頁 `Standard Impact` 簿中加上標籤）會預測任何中斷的財務影響，假設_估計的中斷_預測證明正確。 若要計算此預測，而不使用活頁簿，請套用下列公式：
 
 > _標準影響 = 預估停機時間 @ 3 個9的執行時間 &#215; 時間值影響_
 
 當商務專案關係人選擇投資較高層級的管理時，這會做為成本的基準。
 
-### <a name="composite-sla-impact"></a>複合 SLA 影響
+### <a name="composite-sla-impact"></a>複合-SLA 影響
 
-_複合 SLA 影響_（在活頁簿中標示的_承諾用量層級影響_）會根據執行時間 SLA 的變更，提供更新的會計影響。 這項計算可讓您比較這兩個選項的預估財務影響。 若要計算不含試算表的預測影響，請套用下列公式：
+_複合-SLA 影響_（在活頁 `Commitment level impact` 簿中加上標籤）會根據執行時間 SLA 的變更，提供更新的會計影響。 這項計算可讓您比較這兩個選項的預估財務影響。 若要計算不含試算表的預測影響，請套用下列公式：
 
-> _複合 SLA 影響 = 預估中斷 &#215; 時間值影響_
+> _複合-SLA 影響 = 預估中斷 &#215; 時間值影響_
 
 值代表已變更的承諾用量層級和新的複合 SLA 應避免的可能損失。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b4914cfadb3b94d997861c233e524d966aabe107
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752596"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814285"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：調整您的組織
 
@@ -74,7 +74,7 @@ ms.locfileid: "83752596"
 
 ## <a name="step-5-align-raci-charts"></a>步驟5：對齊 RACI 圖表
 
-在每個成熟度層級，各種雲端功能的責任會轉移給新的小組。 透過將障礙移除和自動化變革，這種責任制的轉移加快了移轉作業和創新週期。 若要適當地對齊指派， [RACI 對齊方式](../organize/raci-alignment.md)文章會針對每個參考的組織結構顯示 RACI 圖表。
+在每個成熟度層級，各種雲端功能的責任會轉移給新的小組。 透過將障礙移除和自動化變革，這種責任制的轉移加快了移轉作業和創新週期。 若要適當地對齊指派， [RACI 對齊方式](../organize/raci-alignment.md)文章會顯示每個組織結構的 RACI 圖表。
 
 ## <a name="additional-information"></a>其他資訊
 

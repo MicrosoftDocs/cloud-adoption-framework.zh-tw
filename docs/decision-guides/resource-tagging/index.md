@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2865f9a7ceb6d20828e76ad4da3a7ae5ebd81ba3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399826"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753483"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "83399826"
 
 經 IT 人員調整的標記重點 (例如，依據工作負載、應用程式、功能或環境進行標記) 可降低監視資產時的複雜度，並能更輕鬆地依據營運需求做出管理決策。
 
-包含業務協調焦點 (例如計量、業務所有權，或業務關鍵性) 的標記配置，可能需要投入更多時間來創建能夠反映商業利益的標記標準，並長期維持這些標準。 不過，此程序的結果會是能夠提供增強能力，可將 整體企業的 IT 資產成本與價值納入考量的標記系統。 資產的商業價值和其營運成本之間的關聯，是在更大型的組織內改變成本中心對 IT 部門看法的其中一個優先步驟。
+包含業務協調焦點 (例如計量、業務所有權，或業務關鍵性) 的標記配置，可能需要投入更多時間來創建能夠反映商業利益的標記標準，並長期維持這些標準。 這項投資會產生一個標記系統，為整體業務的 IT 資產成本和價值提供改良的會計。 資產的商業價值和其營運成本之間的關聯，是在更大型的組織內改變成本中心對 IT 部門看法的其中一個優先步驟。
 
 ## <a name="baseline-naming-conventions"></a>基準命名慣例
 

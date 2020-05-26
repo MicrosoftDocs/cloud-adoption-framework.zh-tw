@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f88d7a6e7856e1a909547d721be2e4b4a132692e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224369"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753545"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 

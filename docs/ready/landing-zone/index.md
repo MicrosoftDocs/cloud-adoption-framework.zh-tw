@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de1fef059841fe013163f822c9188b7ed5b64a29
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621754"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755708"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "83621754"
 **共同責任：** _平台基礎_提供對雲端平台進行控管的集中式控制。 小組的所有成員之間仍然有共同責任，須考量身分識別、安全性、作業、合規性和治理需求。 在登陸區域中採用任何技術之前，請先了解_平台基礎_提供哪些公用程式，以及如何在登陸區域內實作以履行您的共同責任時所需的項目。
 
 > [!IMPORTANT]
-> 在登陸區域內部署解決方案的開發人員和架構設計人員可參考 [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/)，以在設計、建立或支援執行於登陸區域內的工作負載時納入這些共用架構，並據以進行建置。
+> 在登陸區域內部署解決方案的開發人員和架構設計人員可參考 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/)，以在設計、建立或支援執行於登陸區域內的工作負載時納入這些共用架構，並據以進行建置。
 
 ## <a name="landing-zone-definition"></a>登陸區域定義
 
@@ -60,7 +60,7 @@ _登陸區域_是雲端環境的一個區段，使用程式碼進行佈建，並
 
 ## <a name="decentralized-operations"></a>分散式作業
 
-在某些分散的組織中，採用設計會要求工作負載小組**單獨負責**其各自所屬工作負載的實作和作業，包括安全性、治理、作業管理和其他功能。 對於這些小組而言，工作負載可能會有其本身的隔離環境，而不相依於平台基礎。 這些工作負載特定環境在安全性、可靠性、效能、成本和雲端作業方面會有不一致的實作方式。 因此，不應將其視為登陸區域。 這些小組應從 [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/) 中尋找單獨設計、建置和最佳化每項工作負載的指引。
+在某些分散的組織中，採用設計會要求工作負載小組**單獨負責**其各自所屬工作負載的實作和作業，包括安全性、治理、作業管理和其他功能。 對於這些小組而言，工作負載可能會有其本身的隔離環境，而不相依於平台基礎。 這些工作負載特定環境在安全性、可靠性、效能、成本和雲端作業方面會有不一致的實作方式。 因此，不應將其視為登陸區域。 這些小組應從 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) 中尋找單獨設計、建置和最佳化每項工作負載的指引。
 
 > [!IMPORTANT]
 > 類似但相異：在雲端採用生命週期的初期，較小的小組可能會因需要而執行類分散式的組織。 如果這些小組是依情況而分散的 (相對於刻意設計的分散式)，則仍應遵循登陸區域的最佳做法。

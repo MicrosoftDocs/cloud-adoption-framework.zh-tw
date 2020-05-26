@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6bac764d067e755039ef2089aa64da05c63a1f86
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 45fe536ab6ae8efd9a11adb6e7f8776a05f76566
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755415"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815509"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
@@ -31,8 +31,8 @@ ms.locfileid: "83755415"
 
 - 提高**業務風險管理的許可權：** SOC 正成長為管理組織業務風險的重要元件
 - **計量和目標：** 追蹤 SOC 的有效性會從「偵測時間」演變為下列關鍵指標：
-  - 透過平均認可時間進行*回應*（MTTA）
-  - 透過平均補救時間進行*補救的速度*（MTTR）
+  - 透過平均認可時間進行_回應_（MTTA）
+  - 透過平均補救時間進行_補救的速度_（MTTR）
 - **技術演進：** SOC 技術從獨佔使用 SIEM 中的記錄檔，到新增使用特殊工具和複雜的分析技術。 這可提供更深入的資產深入解析，提供高品質的警示和調查體驗，以補充 SIEM 的廣度。 這兩種工具都使用 AI/Machine Learning （AI/機器學習）、行為分析和整合式威脅情報（ti）來逐漸增加，以協助找出可能是惡意攻擊者的異常動作並設定其優先順序。
 - **威脅搜尋：** Soc 正新增假設導向的威脅搜尋，以主動識別先進的攻擊者，並將雜訊警示從第一線分析師佇列移出。
 - **事件管理：** 專業領域已正規化，可協調事件的非技術性元素與法律、通訊和其他小組。

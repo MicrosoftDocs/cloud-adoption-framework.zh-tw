@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 56cfb87e16b54e3b8b7dd72f482a085a2eee34ff
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 70108bcd65a19f60861b89aa364044598ea1aad6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621262"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756085"
 ---
 # <a name="resource-consistency-discipline-overview"></a>資源一致性專業領域的概觀
 
@@ -22,13 +22,13 @@ ms.locfileid: "83621262"
 > [!NOTE]
 > 資源一致性專業領域不會取代可讓組織有效管理雲端式資源所用的現有 IT 小組、流程和程序。 此專業領域的主要目的是識別潛在商務風險，且為負責管理雲端資源的 IT 人員提供降低風險指引。 當您開發治理原則和流程時，請務必在規劃與檢閱流程中包含相關的 IT 小組。
 
-雲端採用架構的這個部分概述如何在雲端治理策略中開展資源一致性專業領域。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 不過，從此專業領域衍生的決策、原則和流程，應包含與負責實作和管理組織資源一致性解決方案的 IT 小組相關成員進行互動與討論。
+雲端採用架構的這個部分概述如何在雲端治理策略中開展資源一致性專業領域。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 從此專業領域衍生的決策、原則和流程，應包含與負責實作和管理組織資源一致性解決方案的 IT 小組相關成員進行互動與討論。
 
 如果您的組織沒有資源一致性策略的內部專業知識，應考慮聘請外部顧問投入此專業領域。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用專家來討論如何最充分組織、追蹤和最佳化雲端式資產。
 
 ## <a name="policy-statements"></a>Policy statements
 
-可採取動作的原則聲明和所產生架構需求，均可作為資源一致性專業領域的基礎。 若要查看原則聲明範例，請參閱關於[資源一致性原則聲明](./policy-statements.md)的文章。 這些範例可作為貴組織治理原則的起點。
+可採取動作的原則聲明和所產生架構需求，均可作為資源一致性專業領域的基礎。 使用[範例原則聲明](./policy-statements.md)。 這些範例可作為定義資源一致性原則的起點。
 
 > [!CAUTION]
 > 範例原則來自於常見的客戶體驗。 若要進一步使這些原則與特定雲端治理需求保持一致，請執行下列步驟，以建立符合您獨特商務需求的原則聲明。

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214220"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815339"
 ---
 # <a name="deploy-workloads"></a>部署工作負載
 
@@ -22,11 +22,11 @@ ms.locfileid: "83214220"
 
 移轉的目標是將單一工作負載移轉至雲端。
 
-## <a name="definition-of-_done_"></a>對「完成」  的定義
+## <a name="definition-of-_done_"></a>對「完成」的定義
 
 當工作負載已在雲端中預備完畢且準備好進行測試 (包括工作負載所需的所有相依資產皆已可運作) 時，移轉階段便已完成。 在最佳化程序期間，工作負載會針對生產環境用途進行準備。
 
-視您的測試和發行程序而定，針對「完成」  的定義可能會有所不同。 此系列文章的下一篇文章會涵蓋[升級模型上的決定](./promotion-models.md)，並能協助您了解將已移轉的工作負載升級至生產環境的最佳時機。
+視您的測試和發行程序而定，針對「完成的定義」可能會有所不同。 此系列文章的下一篇文章會涵蓋[升級模型上的決定](./promotion-models.md)，並能協助您了解將已移轉的工作負載升級至生產環境的最佳時機。
 
 ## <a name="accountability-during-migration"></a>移轉期間的責任
 

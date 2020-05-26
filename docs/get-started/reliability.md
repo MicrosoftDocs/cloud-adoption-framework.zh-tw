@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cc920077b2fd0a014c24b767bea275f337c47e2f
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 0f7ae79bbcc9fb4c02a0c9e731d2e826f4682138
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752377"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814812"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：利用正確的控制項提升可靠性
 
@@ -23,7 +23,7 @@ ms.locfileid: "83752377"
 - 安全性基準。
 - 資源保護。
 
-這篇文章中的步驟可協助營運小組平衡 IT 組合的可靠性和成本。 本文也會協助治理小組確保一致地套用餘額。 可靠性也取決於其他角色和功能。 本文會對應支援的函式，以協助您在每個相關的小組之間建立對齊方式。
+這篇文章中的步驟可協助營運小組平衡 IT 組合的可靠性和成本。 本文也會協助治理小組確保一致地套用餘額。 可靠性也取決於其他角色和功能。 本文會對應支援的函式，以協助您在相關小組之間建立對齊方式。
 
 營運管理與治理是企業可靠性中的夥伴。 您對操作實務做出的決策會設定可靠性的基準。 用來管理整體環境的方法，可確保所有資源之間的一致性。
 

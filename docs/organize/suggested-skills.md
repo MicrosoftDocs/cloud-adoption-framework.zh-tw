@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9b33b242611a576558c858080581650e67cd8382
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223468"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815424"
 ---
 # <a name="building-technical-skills"></a>建置技術技能
 
@@ -26,7 +26,7 @@ ms.locfileid: "83223468"
 - [讓您的組織保持一致](../get-started/org-alignment.md)：探索建立適當組織結構的方法。
 - [組織對齊練習](./index.md)：取得對齊和小組結構的總覽，以協助達到特定目標。
 - [建立小組](../get-started/help.md#establish-teams)：瞭解如何在組織內建立負責傳遞雲端功能的小組。
-- [細分接收器和 fiefdoms](./fiefdoms-silos.md)：瞭解兩個常見的組織*反模式*，以及引導小組進行生產力共同作業的方式。
+- [細分接收器和 fiefdoms](./fiefdoms-silos.md)：瞭解兩個常見的組織_反模式_，以及引導小組進行生產力共同作業的方式。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
 
@@ -63,7 +63,7 @@ Microsoft 及其合作夥伴提供的選項可協助所有的使用者開發其�
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任做好準備並不容易。 Microsoft Learn 提供可協助您更快達成目標之學習的獎勵方法。 獲得點數、觸及新的層級，以及達成更多目標。
+Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新責任做好準備並不容易。 Microsoft Learn 提供了有價值的學習方法，可協助您更快達成目標。 獲得點數、觸及新的層級，以及達成更多目標。
 
 以下是 Microsoft Learn 上角色特定學習路徑的一些範例：
 

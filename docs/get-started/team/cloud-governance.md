@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3b50d45457eb65b0a97a435dcd2d8e70fadc246d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f27ca49738a987780729b9354e9a4653d5ecafcd
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752043"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814234"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：組建雲端治理小組
 
@@ -22,12 +22,12 @@ ms.locfileid: "83752043"
 
 ## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>步驟1：判斷是否需要雲端治理小組
 
-Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 一開始，小組可能非常小。 無論其大小為何，其角色都非常重要。 如果不需要小組，現有採用小組的群組或個人應同意履行與[雲端治理功能](../../organize/cloud-governance.md)相關聯的責任。
+Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 一開始，小組可能非常小。 無論其大小為何，其角色都非常重要。 如果不需要小組，現有採用小組的群組或個人應同意符合[雲端治理功能](../../organize/cloud-governance.md)的相關責任。
 
 **項**
 
 - 判斷您是否需要雲端治理小組。
-- 選取 [**組織對齊**] 索引標籤，記錄[RACI （負責、參與、諮詢和通知）範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的決策和負責的人員。
+- 記錄工作表中[RACI （負責、參與、諮詢和通知）範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的決策和負責的人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
@@ -70,12 +70,12 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **項**
 
-- 建立每個支援小組的步調。 可能的話，請將該步調與發行和規劃週期保持一致。
+- 建立支援小組的步調。 可能的話，請將該步調與發行和規劃週期保持一致。
 - 直接與雲端策略小組（或各種小組成員）建立個別的步調，以檢查與下一波採用的相關風險，並測量小組對於這些風險的承受度。
 
 **支援交付後完成的指引：**
 
-- 如需步調會議的其他指引，請參閱[雲端治理功能](../../organize/cloud-governance.md#deliverable)的「交付」一節。
+- 如需步調會議的詳細指引，請參閱[雲端治理功能](../../organize/cloud-governance.md#deliverable)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -106,7 +106,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **項**
 
-- 完成治理基準評估，其以與各種專案關係人的交談為基礎。 或要求其他小組自行完成評估。
+- 根據與各種專案關係人的交談，完成治理基準評估。 或要求其他小組自行完成評估。
 
 **支援交付後完成的指引：**
 

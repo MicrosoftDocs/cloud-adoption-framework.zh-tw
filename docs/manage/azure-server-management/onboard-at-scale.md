@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 243bafcfc7033ff932fc8112255a8f6a4a1d2904
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219711"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815322"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -134,7 +134,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
     > [!NOTE]
     > 伺服器名稱必須完全符合運算式中的值，而且不應該包含功能變數名稱尾碼。
 
-1. 選取 [儲存]  。 根據預設，範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋。 它會自動更新。
+1. 選取 [儲存]。 根據預設，範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋。 它會自動更新。
 
 ### <a name="azure-activity-log"></a>Azure 活動記錄檔
 
@@ -145,7 +145,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
 3. 搜尋**活動記錄分析**並加以選取。
-4. 選取 [建立]  。
+4. 選取 [建立]。
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
 
@@ -158,7 +158,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
 3. 搜尋**Azure Log Analytics 代理程式健全狀況**並加以選取。
-4. 選取 [建立]  。
+4. 選取 [建立]。
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
 
@@ -173,7 +173,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 1. 在 [Azure 入口網站] 中，開啟 [**所有服務**]，選取 [選取**管理 + 治理**  >  **解決方案**]。
 2. 在**解決方案**視圖中，選取 [**新增**]。
 3. 搜尋，然後選取 [**反惡意程式碼軟體評定**]。
-4. 選取 [建立]  。
+4. 選取 [建立]。
 
 您必須指定您在上一節中已啟用解決方案之工作區的**工作區名稱**。
 
@@ -185,9 +185,9 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 
 ### <a name="azure-security-center"></a>Azure 資訊安全中心
 
-我們建議您至少將所有伺服器上架到 Azure 資訊安全中心*免費*層。 此選項為您的環境提供基本層級的安全性評量和可操作的安全性建議。 如果您升級到*標準*層，您會獲得額外的權益，詳細說明請見[資訊安全中心定價頁面](https://docs.microsoft.com/azure/security-center/security-center-pricing)。
+我們建議您至少將所有伺服器上架到 Azure 資訊安全中心的免費層。 此選項為您的環境提供基本的安全性評量和可操作的安全性建議。 標準層提供額外的好處。 如需詳細資訊，請參閱[Azure 資訊安全中心定價](https://docs.microsoft.com/azure/security-center/security-center-pricing)。
 
-若要啟用 Azure 資訊安全中心免費層，請遵循下列步驟：
+若要啟用 Azure 資訊安全中心的免費層，請遵循下列步驟：
 
 1. 移至**資訊安全中心**入口網站頁面。
 2. 在 [**原則 & 相容性**] 底下，選取 [**安全性原則**]。

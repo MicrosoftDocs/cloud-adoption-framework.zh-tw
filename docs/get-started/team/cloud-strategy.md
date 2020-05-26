@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c39b7d42562b54b1bcd58aa192f9563f798ca88f
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6d6832f5dee0cd8e450bccfbd5c01d133ff9700c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755197"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815135"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
@@ -25,7 +25,7 @@ ms.locfileid: "83755197"
 ![開始建立雲端策略小組](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> 本文討論*策略主持*者，這是雲端採用程式中的關鍵玩家。 角色通常由程式經理、架構設計師或顧問負責。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立調整，並讓小組與商務目標保持一致。 策略主持者經常負責雲端採用旅程的成功。
+> 本文討論_策略主持_者，這是雲端採用程式中的關鍵玩家。 角色通常由程式經理、架構設計師或顧問負責。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立調整，並讓小組與商務目標保持一致。 策略主持者經常負責雲端採用旅程的成功。
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>步驟1：判斷是否需要雲端策略小組
 
@@ -73,7 +73,7 @@ ms.locfileid: "83755197"
 - 如需有關誰可能適合的想法，請參閱[雲端策略功能](../../organize/cloud-strategy.md)。
 - 若要驗證每個潛在參與者的對齊和頻寬，請參閱此功能的[最小範圍](../../organize/cloud-strategy.md#minimum-scope)和[交付成果](../../organize/cloud-strategy.md#deliverable)。
 - 若要根據您目前的小組結構來建立正確的 RACI 圖，請參閱各種[RACI 設定範例](../../organize/raci-alignment.md#strategic-alignment)，或選取 RACI 範本底部的其中一個範例索引標籤。
-- 藉由選取 [**組織對齊**] 索引標籤，記錄[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的結果。
+- 將結果記錄在工作表的[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中 `Org Alignment` 。
 
 **有責任的人員或小組：**
 
@@ -83,7 +83,7 @@ ms.locfileid: "83755197"
 
 在雲端採用旅程初，您的小組將需要經常的互動和反復的策略審查。 當採用開始時，該頻率將會減少，而轉換成專注于狀態和驗證，或調整待處理專案優先順序。
 
-步驟4、5和6應該在四到六周內完成。 其餘的步驟將在後續會議中完成。 在小組開始執行步驟7之前，應該維持更高頻率的會議。
+步驟4、5和6應該在四到六周內完成。 其餘的步驟將在後續會議中完成。 在小組開始步驟7之前，應該維持更頻繁的會議。
 
 **項**
 

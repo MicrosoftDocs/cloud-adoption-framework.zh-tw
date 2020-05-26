@@ -6,17 +6,17 @@ metadata:
   title: 適用於 Azure 的 Microsoft 雲端採用架構
   description: 雲端採用架構是文件、實作指引、最佳做法和工具的集合，可加速型您的雲端採用旅程。
   ms.service: cloud-adoption-framework
-  ms.topic: landing-page
+  ms.topic: hub-page
   services: cloud-adoption-framework
   author: JanetCThomas
   ms.author: janet
-  ms.date: 04/20/2020
-  ms.openlocfilehash: 2c792541e959b365825acc4d5ced11f2542f4aa3
-  ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+  ms.date: 05/15/2020
+  ms.openlocfilehash: b272e1a6fa6ab47cb85ea88cfff1f8d56c87646c
+  ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/19/2020
-  ms.locfileid: "83620610"
+  ms.lasthandoff: 05/21/2020
+  ms.locfileid: "83755287"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -164,7 +164,7 @@ conceptualContent:
     - url: https://www.cafbaseline.com
       itemType: quickstart
       text: 識別您目前的狀態與業務優先順序之間的差異，並取得適當的資源以利消除這些差異。
-  - title: Azure 架構檢閱
+  - title: Microsoft Azure Well-Architected Review
     links:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
       itemType: architecture

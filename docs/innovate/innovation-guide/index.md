@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af2b3865a78a72231efed3b3faea21f764d45ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224063"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756238"
 ---
 ::: zone target="docs"
 
@@ -47,9 +47,11 @@ ms.locfileid: "83224063"
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 創新指南]  ，然後遵循逐步指示進行。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 創新指南]，然後遵循逐步指示進行。
 
-後續步驟：[使用共用存放庫和概念發想管理工具來做好創新準備](./adoption.md)
+**後續步驟：**
+
+- [使用共用存放庫和概念發想管理工具來做好創新準備](./adoption.md)
 
 ::: zone-end
 

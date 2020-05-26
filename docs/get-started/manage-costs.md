@@ -7,16 +7,16 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dc9680d4224150cb754a55aebeda2c19eb9068d6
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 456d5ecbe31d23731515821943da02861144bffe
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752748"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814538"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
-雲端治理的成本管理專業領域著重于建立預算、監視成本配置模式，以及實施控制措施，以改善 IT 組合中的雲端支出行為。 企業成本優化牽涉到許多其他角色和函式，以將成本降至最低，並平衡規模、效能、安全性和可靠性的需求。 本文將各種支援功能對應到入門指南，協助您在每個相關的小組之間建立對齊方式。
+雲端治理的成本管理專業領域著重于建立預算、監視成本配置模式，以及實施控制措施，以改善 IT 組合中的雲端支出行為。 企業成本優化牽涉到許多其他角色和函式，以將成本降至最低，並平衡規模、效能、安全性和可靠性的需求。 本文將各種支援功能對應到入門指南，協助建立相關小組之間的對齊。
 
 不過，企業成本優化牽涉到許多其他角色和函式，以將成本降至最低，並平衡規模、效能、安全性和可靠性的需求。 本文會對應這些支援函式，以協助建立相關小組之間的對齊。
 
@@ -76,7 +76,7 @@ ms.locfileid: "83752748"
 
 **項**
 
-- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的動機、結果和業務理由。 
+- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的動機、結果和業務理由。
 - 使用 Azure 成本管理建立您的第一個預算。
 
 **支援交付後完成的指引：**

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80636498"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815288"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前
 
@@ -25,7 +25,7 @@ ms.locfileid: "80636498"
 ::: zone target="docs"
 
 > [!TIP]
-> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [將環境遷移到 Azure]  ，然後遵循逐步指示進行。
+> 如需互動式體驗，請在 Azure 入口網站中檢視本指南。 請移至 Azure 入口網站中的 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)並選取 [Azure 移轉指南]，然後遵循逐步指示進行。
 
 ::: zone-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "80636498"
 
 ## <a name="when-to-use-this-guide"></a>[本指南使用時機](#tab/WhenToUseThisGuide)
 
-雖然本指南中討論的工具支援各種不同的移轉案例，但本指南將重點放在「複雜性最小」  的有限範圍。 若要判斷本移轉指南是否適用於您的專案，請考慮您是否符合下列情況：
+雖然本指南中討論的工具支援各種不同的移轉案例，但本指南將重點放在「複雜性最小」的有限範圍。 若要判斷本移轉指南是否適用於您的專案，請考慮您是否符合下列情況：
 
 - 初次進行遷移的工作負載不是任務關鍵性，也不包含敏感性資料。
 - 您要移轉的是同質環境。

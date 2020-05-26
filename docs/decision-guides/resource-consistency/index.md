@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224318"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753521"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -37,7 +37,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 1. 資源群組的內容是否由相同的人員或小組一起管理、更新和監視？
 1. 資源群組的內容是否一起淘汰？
 
-如果您對上述任一點回答了「否」  ，則應該將有問題的資源放在另一個資源群組中的其他位置。
+如果您對上述任一點回答了「否」，則應該將有問題的資源放在另一個資源群組中的其他位置。
 
 > [!IMPORTANT]
 > 資源群組也是區域專屬的項目；不過，資源常常會在相同資源群組內的不同區域中，因為其會以如上所述方式一起接受管理。 如需如何選擇區域的詳細資訊，請參閱[多個區域](../../migrate/azure-best-practices/multiple-regions.md)。
@@ -64,7 +64,7 @@ Azure 平台皆建置在基本的資源分組機制之上，提供的系統可�
 
 ## <a name="hierarchical-consistency"></a>階層式一致性
 
-資源群組可讓您在訂用帳戶內，透過在資源群組層級套用 Azure 原則規則和存取控制，以在組織內支援額外的階層層級。 不過，當雲端資產的大小成長時，您可能需要支援比使用 Azure Enterprise 合約的企業/部門/帳戶/訂用帳戶階層時更複雜的跨訂用帳戶治理要求。
+資源群組可讓您在訂用帳戶內，透過在資源群組層級套用 Azure 原則規則和存取控制，以在組織內支援額外的階層層級。 當雲端資產的大小成長時，您可能需要支援比使用 Azure Enterprise 合約的企業/部門/帳戶/訂用帳戶階層時更複雜的跨訂用帳戶治理要求。
 
 [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups)可讓您使用和 Enterprise 合約階層不同的階層來將訂用帳戶分組，將訂用帳戶組織成更複雜的組織結構。 這個替代階層可讓您跨多個訂用帳戶與當中包含的資源，套用存取控制和原則強制執行機制。 使用管理群組階層，可讓您的雲端資產訂用帳戶滿足作業或商務治理需求。 如需詳細資訊，請參閱[訂用帳戶決策指南](../subscriptions/index.md)。
 

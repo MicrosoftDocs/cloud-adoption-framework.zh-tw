@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 147bce258b57c7f0b7af343cc387bf9da008da4a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b200fb8dee07c016338beed9b9356d00e26a8abd
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752408"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814336"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的一致效能
 
 您要如何確保工作負載組合之間有足夠的效能？ 本指南中的步驟可協助您建立處理常式，以維護該效能層級。
 
-效能也取決於其他角色和功能。 本文會對應這些支援函數，以協助您在每個相關的小組之間建立對齊方式。
+效能也取決於其他角色和功能。 本文會對應這些支援函式，以協助您在相關小組之間建立對齊方式。
 
 集中式作業管理是最常見的方法，可在整個組合中保持一致的效能。 操作實務的決策會定義作業基準和任何整體增強功能。
 
