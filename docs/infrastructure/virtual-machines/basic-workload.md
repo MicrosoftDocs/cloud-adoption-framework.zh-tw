@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217467"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862206"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 
@@ -26,7 +26,7 @@ ms.locfileid: "83217467"
 
 ## <a name="basic-workload"></a>基本工作負載
 
-_基本工作負載_通常會定義為單一 web 應用程式，或具有虛擬機器（VM）的虛擬網路（VNet）。
+_基本工作負載_通常會定義為單一 web 應用程式或具有虛擬機器（VM）的虛擬網路。
 
 > [!NOTE]
 > 本指南並未涵蓋應用程式開發。 如需有關在 Azure 上開發應用程式的詳細資訊，請參閱 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide)。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 8624b11e0f99404c4f718c8a1c07de803d7fb876
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815373"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862597"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "83815373"
 
 本文說明虛構公司 Contoso 如何評定要移轉至 Azure 的內部部署應用程式。 在範例案例中，Contoso 的內部部署 SmartHotel360 應用程式目前在 VMware 上執行。 Contoso 會使用 Azure Migrate 服務來評定應用程式的 VM，並使用 Database Migration Assistant 來評定應用程式的 SQL Server 資料庫。
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 Contoso 在考慮遷移至 Azure 時，該公司需要進行技術和財務方面的評量，以判斷其內部部署工作負載是否適合雲端移轉。 尤其是，Contoso 小組想要評定機器和資料庫是否能與移轉作業相容。 該小組想要預估在 Azure 中執行 Contoso 的資源所需的容量和成本。
 
@@ -101,7 +101,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
   - **OSTICKETWEB** 正在執行 Apache 2 和 PHP 7.0。
   - **OSTICKETMYSQL** 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 
@@ -288,7 +288,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
     **範例：**
 
-    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
+    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. 產生的雜湊應符合[評估 VMware vm 以進行遷移](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
 
@@ -491,13 +491,13 @@ Azure Migrate 評量包括內部部署與 Azure 的相容性、建議的 Azure V
 - 信賴評等在您進行「以效能為基礎的大小調整」__ 時非常實用。 Azure Migrate 可能沒有足夠的資料點可供進行以使用率為基礎的大小調整。 對於「內部部署形式」__ 的大小調整，信賴評等一律是 5 顆星，原因是 Azure Migrate 擁有調整 VM 大小所需的所有資料點。
 - 根據可用資料點的百分比提供評量的信賴評等：
 
-   | 資料點的可用性 | 信賴評等 |
-   | --- | --- |
-   | 0%-20% | 1 顆星 |
-   | 21%-40% | 2 顆星 |
-   | 41%-60% | 3 顆星 |
-   | 61%-80% | 4 顆星 |
-   | 81%-100% | 5 顆星 |
+    | 資料點的可用性 | 信賴評等 |
+    | --- | --- |
+    | 0%-20% | 1 顆星 |
+    | 21%-40% | 2 顆星 |
+    | 41%-60% | 3 顆星 |
+    | 61%-80% | 4 顆星 |
+    | 81%-100% | 5 顆星 |
 
 #### <a name="verify-azure-readiness"></a>確認 Azure 移轉整備程度
 

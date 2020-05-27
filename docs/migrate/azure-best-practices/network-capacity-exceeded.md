@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7caa77a9f11f464160548aded6b280bbc9b0b00
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a075b99945a50850561ceab4a9f1b16bfe180936
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217146"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862478"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "83217146"
 
 **獨立資料存放區的離線傳輸：** 下圖所示的範例是使用 Azure 資料箱進行線上和離線資料傳輸。 這些方法可用來在移轉工作負載之前，先將大量資料運送至雲端。 在離線資料傳輸中，來源資料會複製到 Azure 資料箱，然後實體運送至 Microsoft，再以檔案或 Blob 的形式傳輸至 Azure 儲存體帳戶。 此程序可用來在進行其他移轉工作之前，先運送未直接繫結至特定工作負載的資料。 這麼做可減少需要透過網路運送的資料量，以便在網路限制內完成移轉工作。
 
-這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
 
 另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
@@ -59,7 +59,7 @@ ms.locfileid: "83217146"
 
 ### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
 
-**複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針會說明如何使用此方法，從 [HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)、或是從會使用 [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) 或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)的磁碟將資料傳輸至資料箱。
+**複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
 
 另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 

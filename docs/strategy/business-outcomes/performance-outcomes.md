@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216277"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862631"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果的範例
 
@@ -26,7 +26,7 @@ ms.locfileid: "83216277"
 
 以地球上最大的網路之一連結的高效率基礎100結構，讓您的業務轉型並降低成本。 Azure 擁有的全球區域多於其他任何雲端提供者。 這會轉譯成使應用程式更接近全球使用者所需的規模，保留資料的存放區，並為客戶提供完整的合規性與復原選項。
 
-- **範例1：** 服務公司正與託管多個營運基礎結構資產的主控提供者合作。 這些系統會遇到頻繁的中斷和效能不佳的問題。 公司將其資產遷移至 Azure，以利用雲端的 SLA 和效能控制。 停機時間的代價是，每分鐘中斷大約 $15000 美元。 每個月在四到八個小時的中斷期間，可以輕鬆地論證此組織的轉換。
+- **範例1：** 服務公司會處理裝載多個營運基礎結構資產的主控提供者。 這些系統會遇到頻繁的中斷和效能不佳的問題。 公司將其資產遷移至 Azure，以利用雲端的 SLA 和效能控制。 任何停機時間都會成本大約每分鐘 $15000 美元的中斷。 每個月在四到八個小時的中斷期間，可以輕鬆地論證此組織的轉換。
 
 - **範例2：** 取用者投資公司是在雲端應用程式創新投入的初期階段。 敏捷式流程和 DevOps 已成熟良好，但應用程式效能已尖峰。 作為更成熟的轉換，公司根據使用需求來啟動程式，以監視和自動調整大小。 該公司使用 Azure 效能管理工具消除了調整大小的問題，導致交易的5% 增長驚人。
 
@@ -44,7 +44,7 @@ Azure Site Recovery 可讓您輕鬆地在 Azure 區域之間複寫應用程式�
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何[使用商務結果範本](./business-outcome-template.md)。
+瞭解如何使用[商務結果範本](./business-outcome-template.md)。
 
 > [!div class="nextstepaction"]
 > [使用商務結果範本](./business-outcome-template.md)

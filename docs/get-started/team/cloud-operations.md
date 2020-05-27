@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f7670efdfb22a6542efe93f309e8bbaf83a2027e
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 02317405adc974e9836bb3e64b881da3296e3d8e
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815118"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862427"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -202,4 +202,4 @@ ms.locfileid: "83815118"
 - [卓越雲端中心功能](../../organize/cloud-center-of-excellence.md)
 - [組織反模式：接收器和 fiefdoms](../../organize/fiefdoms-silos.md)
 
-瞭解如何藉由開發可識別 RACI 合作物件的跨小組矩陣，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+藉由開發可識別 RACI 合作物件的跨小組矩陣，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。

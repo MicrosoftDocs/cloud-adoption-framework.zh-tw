@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217280"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861560"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
@@ -32,20 +32,21 @@ ms.locfileid: "83217280"
 若要在入口網站中尋找此原則，請在 [原則定義] 頁面上搜尋「位置」。 或執行此 Cmdlet 來尋找原則：
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') `
+  -and ($_.Properties.displayName -like '*location*') }
 ```
 
 下列腳本顯示如何指派原則。 變更 `$SubscriptionID` 值，以指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。
 
 ```powershell
-#Specify the value for $SubscriptionID.
+# Specify the value for $SubscriptionID.
 $SubscriptionID = <subscription ID>
 $scope = "/subscriptions/$SubscriptionID"
 
-#Replace the -Name GUID with the policy GUID you want to assign.
+# Replace the -Name GUID with the policy GUID you want to assign.
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
-#Replace the locations with the ones you want to specify.
+# Replace the locations with the ones you want to specify.
 $policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
@@ -77,14 +78,14 @@ Azure 提供各式各樣的 VM 大小來支援各種工作負載。 若要控制
 下列腳本顯示如何指派原則。 若要使用腳本，請將 `$SubscriptionID` 值變更為指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。
 
 ```powershell
-#Specify the value for $SubscriptionID.
-$SubscriptionID = <subscription ID>
-$scope = "/subscriptions/$SubscriptionID"
+# Specify the value for $SubscriptionID.
+$subscriptionID = <subscription ID>
+$scope = "/subscriptions/$subscriptionID"
 
-$AntimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
+$antimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
-#Replace location "eastus" with the value that you want to use.
-New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $AntimalwarePolicy -Location eastus –AssignIdentity
+# Replace location "eastus" with the value that you want to use.
+New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus –AssignIdentity
 
 ```
 

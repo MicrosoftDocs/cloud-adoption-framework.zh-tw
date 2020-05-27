@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 68aff93493200e4878e31b961b3c97608c76c7c3
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 79c428da9d0be27c209fcc30686225217832dbe1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814387"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862495"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -206,7 +206,7 @@ ms.locfileid: "83814387"
 
 - [商業價值共識](../innovate/business-value.md)：如果自從上一個商業價值共識後已超過三個月，或從未完成過，請從這裡開始。
 - [Azure 創新指南](../innovate/innovation-guide/index.md)：使用 azure 創新指南來加速部署創新的解決方案，方法是瞭解可協助您建立最基本的可行產品（MVP）的工具和流程。
-- [創新最佳做法](../innovate/best-practices/index.md)：瞭解如何結合 Azure 服務來建立數位家發明的工具鏈。
+- [創新最佳做法](../innovate/best-practices/index.md)：結合 Azure 服務來建立數位家發明的工具鏈。
 - [意見反應迴圈](../innovate/considerations/adoption.md)：開發改良的意見反應迴圈，以快速提供影響力創新給您的客戶。
 
 <!-- markdownlint-disable MD033 -->

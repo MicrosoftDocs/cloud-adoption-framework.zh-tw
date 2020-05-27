@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 243bafcfc7033ff932fc8112255a8f6a4a1d2904
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815322"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861526"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -125,14 +125,14 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 
 1. 輸入電腦名稱稱或 VMUUID，以包含您想要加入變更追蹤的電腦。
 
-    ```kusto
-    Heartbeat
-    | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
-    | distinct Computer
-    ```
+  ```kusto
+  Heartbeat
+  | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
+  | distinct Computer
+  ```
 
-    > [!NOTE]
-    > 伺服器名稱必須完全符合運算式中的值，而且不應該包含功能變數名稱尾碼。
+  > [!NOTE]
+  > 伺服器名稱必須完全符合運算式中的值，而且不應該包含功能變數名稱尾碼。
 
 1. 選取 [儲存]。 根據預設，範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋。 它會自動更新。
 
@@ -195,7 +195,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告 Windows 和 Li
 4. 選取該工作區的 [**編輯設定**]。
 5. 選取 [定價層]  。
 6. 選擇 [**免費**] 選項。
-7. 選取 [儲存]  。
+7. 選取 [儲存]。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ead653ddcce27ee0a144845ee3750373e1eb66d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755143"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862376"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -24,10 +24,11 @@ ms.locfileid: "83755143"
 
 ## <a name="may-15-2020"></a>2020 5 月15日
 
-根據意見反應，我們建立了新的內容，讓您開始使用雲端採用架構。 新的快速入門手冊可協助您根據想要完成的工作來流覽架構。
+根據意見反應，我們建立了新的內容，讓您開始使用雲端採用架構。 新的快速入門手冊可協助您根據想要完成的工作來流覽架構。 我們也建立了新的登陸頁面，讓您更輕鬆地找到可支援雲端採用成功旅程的指引、工具、學習模組和程式。
 
 | 文章 | 說明 |
 |---|---|
+| [適用於 Azure 的雲端採用架構](../index.yml) | 雲端採用架構登陸頁面已經過重新設計，可讓您更輕鬆地找到可支援雲端採用成功旅程的指引、工具、學習模組和程式。 |
 | [開始使用雲端採用架構](./index.md) | 從這裡開始，選擇與您的雲端採用目標一致的快速入門手冊。 這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。|
 | [瞭解並記載基本的對齊決策](./cloud-concepts.md) | 深入瞭解雲端採用所牽涉到的每個小組都應該瞭解的初始決策。 |
 | [瞭解並對齊組合階層](../reference/fundamental-concepts/hosting-hierarchy.md) | 瞭解「公事包」階層如何顯示您的工作負載和支援服務如何彼此配合。 |

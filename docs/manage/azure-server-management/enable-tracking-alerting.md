@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1fa20d37c5cc7813220ff5862743f3179f4aefcd
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434136"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861509"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80434136"
 
 Azure 變更追蹤和清查提供混合式環境設定狀態的警示，以及該環境的變更。 它可以報告可能影響已部署伺服器的重要檔案、服務、軟體和登錄變更。
 
-Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議的登錄機碼清單，以供監視。 若要查看這份清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 [**清查** > ] [**編輯設定**]。
+Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議的登錄機碼清單，以供監視。 若要查看這份清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 [**清查**] [  >  **編輯設定**]。
 
 ![Azure 入口網站中 Azure 自動化清查視圖的螢幕擷取畫面](./media/change-tracking1.png)
 
@@ -32,9 +32,9 @@ Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方�
 
 您也可以針對要追蹤之檔案的變更新增警示。 例如，假設您想要設定主機檔案變更的警示。 選取命令列上的**Log analytics**或已連結之 log Analytics 工作區的記錄搜尋。 在 Log Analytics 中，使用下列查詢來搜尋主機檔案的變更：
 
-```kusto
-ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
-```
+  ```kusto
+  ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
+  ```
 
 ![Azure 入口網站中 Log Analytics 查詢編輯器的螢幕擷取畫面](./media/change-tracking2.png)
 
@@ -82,7 +82,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>特定軟體版本是或未安裝在電腦上
 
-使用下列查詢來評估安全性。 此查詢參考`ConfigurationData`，其中包含清查的記錄，並提供上次回報的設定狀態，而不會變更。
+使用下列查詢來評估安全性。 此查詢參考 `ConfigurationData` ，其中包含清查的記錄，並提供上次回報的設定狀態，而不會變更。
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
@@ -98,7 +98,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何使用 Azure 自動化來[建立更新](./update-schedules.md)排程，以管理伺服器的更新。
+瞭解 Azure 自動化如何[建立更新](./update-schedules.md)排程來管理伺服器的更新。
 
 > [!div class="nextstepaction"]
 > [建立更新排程](./update-schedules.md)

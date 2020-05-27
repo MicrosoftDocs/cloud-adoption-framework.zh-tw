@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 7fc85776fee5078b17fc9e7d91b184d2ba550a66
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400935"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862682"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -175,7 +175,7 @@ _Azure 虛擬 WAN_拓撲可支援大規模的分公司案例和全球 WAN 服務
 
 雖然 Azure 允許複雜拓撲，但是 VDC 概念的其中一個核心準則是重複性和簡單性。 若要將管理投入時間降到最低，我們建議採用 VDC 參考架構這種簡單的中樞輪輻設計。
 
-### <a name="components"></a>元件
+### <a name="components"></a>單元
 
 虛擬資料中心是由四種基本元件類型所組成：**基礎結構**、**周邊網路**、**工作負載**和**監視**。
 
@@ -410,11 +410,11 @@ Azure 資料中心存在於全球許多地區。 選取多個 Azure 資料中心
 
 [Azure 流量管理員][azure-traffic-manager]和[azure 前端][azure-front-door]都會定期檢查不同 VDC 實作為接聽端點的服務健康狀態，如果這些端點失敗，則會自動路由至下一個最接近的 vdc。 流量管理員會使用即時使用者度量和 DNS，將使用者路由至最接近的（或在失敗時的下一個最接近）。 Azure Front 大門是位於 100 Microsoft 骨幹邊緣網站的反向 proxy，使用任意傳播將使用者路由傳送到最接近的接聽端點。
 
-### <a name="summary"></a>摘要
+### <a name="summary"></a>總結
 
 資料中心遷移的虛擬資料中心方法會建立可調整的架構，以優化 Azure 資源使用、降低成本，並簡化系統管理。 虛擬資料中心通常是根據中樞和輪輻網路拓撲（使用虛擬網路對等互連或虛擬 WAN 中樞）。 中樞提供的一般共用服務，以及特定的應用程式和工作負載會部署在輪輻中。 虛擬資料中心也符合公司角色的結構，其中，中央 IT、DevOps 和營運和維護等不同部門都在執行其特定角色時一起運作。 虛擬資料中心支援將現有的內部部署工作負載遷移至 Azure，但也提供雲端原生部署的許多優點。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 深入瞭解本檔中討論的 Azure 功能。
 
@@ -422,13 +422,13 @@ Azure 資料中心存在於全球許多地區。 選取多個 Azure 資料中心
 
 | 網路功能 | 負載平衡 | 連線能力 |
 | --- | --- | --- |
-| [Azure 虛擬網路][virtual-network] <br> [網路安全性群組][NSG] <br> [服務端點][ServiceEndpoints] <br> [私人連結][PrivateLink] <br> [使用者定義的路由][UDR] <br> [網路虛擬裝置][NVA] <br> [公用 IP 位址][PIP] <br> [Azure DNS][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer （L4）][ALB] <br> [應用程式閘道（L7）][AppGW] <br> [Azure 流量管理員][azure-traffic-manager] <br><br><br><br><br> | [虛擬網路對等互連][virtual-network-peering] <br> [虛擬私人網路][VPN] <br> [虛擬 WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [ExpressRoute Direct][ExRD] <br><br><br><br><br> |
+| [Azure 虛擬網路][virtual-network] <br> [網路安全性群組][NSG] <br> [服務端點][ServiceEndpoints] <br> [Private Link][PrivateLink] <br> [使用者定義的路由][UDR] <br> [網路虛擬裝置][NVA] <br> [公用 IP 位址][PIP] <br> [Azure DNS][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer （L4）][ALB] <br> [應用程式閘道（L7）][AppGW] <br> [Azure 流量管理員][azure-traffic-manager] <br><br><br><br><br> | [虛擬網路對等互連][virtual-network-peering] <br> [虛擬私人網路][VPN] <br> [Virtual WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [ExpressRoute Direct][ExRD] <br><br><br><br><br> |
 
 | 身分識別 | 監視 | 最佳做法 |
 | --- | --- | --- |
 | [Azure Active Directory][azure-ad] <br>[Multi-Factor Authentication][multi-factor-authentication] <br> [以角色為基礎的存取控制][RBAC] <br> [預設 Azure AD 角色][Roles] <br><br><br> | [網路監看員][NetWatch] <br> [Azure 監視器][MonitorOverview] <br> [Log Analytics][LogAnalytics] <br> | [管理群組][MgmtGrp] <br> [訂用帳戶管理](../ready/azure-best-practices/scale-subscriptions.md) <br> [資源群組管理][RGMgmt] <br> [Azure 訂用帳戶限制][limits] <br><br><br> |
 
-安全性 | 其他 Azure 服務 | |
+| 安全性 | 其他 Azure 服務 | |
 |-|-|-|
 | [Azure 防火牆][AzFW] <br> [防火牆管理員][AzFWMgr] <br> [應用程式閘道 WAF][AppGWWAF] <br> [Front 門板 WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure 儲存體][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [事件中樞][EventHubs] <br> [服務匯流排][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 04e5d34da71fb67ce6608aea5f1db5dc6f90f705
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e09df6f954a410dedde7ecd77fd7b8bd5d429241
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401109"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862223"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -96,24 +96,24 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **描述** | **成本**
+**服務** | **說明** | **成本**
 --- | --- | ---
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
 [Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 針對此案例所需的項目：
 
 <!-- markdownlint-disable MD033 -->
 
-**需求** | **詳細資料**
---- | ---
-Azure 訂用帳戶 | <li> Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <li> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <li> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。
-Azure 基礎結構 | <li> 瞭解[Contoso 如何設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。
-開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li>  [Visual Studio 2017 Community 版本：15.5 版](https://visualstudio.microsoft.com) <li> 已啟用 .NET 工作負載。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> 已設定為使用 Windows 容器的 [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
+| **需求** | **詳細資料** |
+| --- | --- |
+| Azure 訂用帳戶 | <li> Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/pricing/free-trial)。 <li> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <li> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 |
+| Azure 基礎結構 | <li> 瞭解[Contoso 如何設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 |
+| 開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li>  [Visual Studio 2017 Community 版本：15.5 版](https://visualstudio.microsoft.com) <li> 已啟用 .NET 工作負載。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> 已設定為使用 Windows 容器的 [Docker CE (Windows 10) 或 Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,39 +152,37 @@ Contoso 管理員會依下列方式進行佈建：
 
 2. 他們會執行腳本，使用 AKS 和 Azure Container Registry 來建立受控 Kubernetes 叢集。
 
-   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+    ![AKS](./media/contoso-migration-rebuild/aks1.png)
 
 3. 在檔案開啟時，他們會將 $location 參數更新為 **eastus2**，並儲存檔案。
 
-   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+    ![AKS](./media/contoso-migration-rebuild/aks2.png)
 
 4. 他們會選取 [ **View**  >  **整合式終端**機]，以在 Visual Studio Code 中開啟整合式終端機。
 
-   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+    ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
 5. 在 PowerShell 整合式終端機中，他們會使用 AzureRmAccount 命令登入 Azure。 [深入瞭解](https://docs.microsoft.com/powershell/azure/get-started-azureps)如何開始使用 PowerShell。
 
-   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
 6. 他們會執行命令來驗證 Azure CLI `az login` ，並遵循指示使用其網頁瀏覽器進行驗證。 [深入了解](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)如何使用 Azure CLI 來登入。
 
-   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
 7. 他們會執行下列命令，傳遞**ContosoRG**的資源組名、AKS 叢集的名稱**smarthotel-AKS-eus2**和新的登錄名稱。
 
-   ```PowerShell
-   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-   ```
+    `.\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2`
 
-   ![AKS](./media/contoso-migration-rebuild/aks6.png)
+    ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure 會建立另一個資源群組，其中包含 AKS 叢集的資源。
 
-   ![AKS](./media/contoso-migration-rebuild/aks7.png)
+    ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. 部署完成之後，他們會安裝 `kubectl` 命令列工具。 此工具已安裝在 Azure Cloud Shell 上。
 
-   `az aks install-cli`
+    `az aks install-cli`
 
 10. 它們會藉由執行命令來驗證與叢集的連線 `kubectl get nodes` 。 節點的名稱和所自動建立資源群組中的 VM 名稱相同。
 
@@ -275,9 +273,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 
 2. 他們會使用 deploy .cmd 檔案，在**ContosoRG**資源群組和**EUS2**區域中部署 Azure 資源，方法是輸入下列命令：
 
-    ```azurecli
-    .\deploy.cmd azuredeploy ContosoRG -c eastus2
-    ```
+    `.\deploy.cmd azuredeploy ContosoRG -c eastus2`
 
     ![部署後端](./media/contoso-migration-rebuild/backend1.png)
 
@@ -433,11 +429,11 @@ Contoso 管理員會在 Azure 入口網站中佈建函數應用程式。
 
 1. 他們會選取 [函數應用程式]****。
 
-   ![建立函數應用程式](./media/contoso-migration-rebuild/function-app1.png)
+    ![建立函數應用程式](./media/contoso-migration-rebuild/function-app1.png)
 
 2. 他們會提供應用程式名稱 (**smarthotelpetchecker**)。 他們會將應用程式放在生產資源群組**ContosoRG**中。 他們會將裝載位置設定為取用**方案**，並將應用程式放在美國東部2區域。 系統會建立一個新儲存體帳戶，以及用於進行監視的 Application Insights 執行個體。
 
-   ![函數應用程式設定](./media/contoso-migration-rebuild/function-app2.png)
+    ![函數應用程式設定](./media/contoso-migration-rebuild/function-app2.png)
 
 3. 部署應用程式之後，他們會瀏覽至應用程式位址，以檢查是否已成功建立該應用程式。
 
@@ -447,7 +443,7 @@ Contoso 管理員會為前端網站建立兩個不同的專案。
 
 1. 他們會在 Azure DevOps 中建立 **SmartHotelFrontend** 專案。
 
-   ![前端專案](./media/contoso-migration-rebuild/function-app1.png)
+    ![前端專案](./media/contoso-migration-rebuild/function-app1.png)
 
 2. 他們會將 [SmartHotel360 front-end](https://github.com/Microsoft/SmartHotel360-Website) Git 存放庫匯入至新專案。
 

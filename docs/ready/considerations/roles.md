@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 06def57a93d5577d39bb7c638fb8a4d854258723
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756459"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862614"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -37,7 +37,7 @@ ms.locfileid: "83756459"
 ![使用 RBAC 的建議模式](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請針對企業級存取控制[使用管理群組](https://docs.microsoft.com/azure/governance/management-groups)，針對訂用帳戶內的存取控制使用[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
+> 您定義的是更具體或更詳細的許可權，您的存取控制會變得很複雜且難以管理。 當您的雲端資產大小成長時，更是如此。 避免資源特定的許可權。 相反地，請將[管理群組](https://docs.microsoft.com/azure/governance/management-groups)用於企業級的存取控制和[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)，以在訂用帳戶內進行存取控制。 也請避免使用者特定的許可權。 相反地，請將存取權指派給 [Azure AD 中的群組](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)。
 
 ## <a name="use-built-in-rbac-roles"></a>使用內建的 RBAC 角色
 
@@ -75,7 +75,7 @@ RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理
 
 | 群組 | 一般角色名稱 | 職責 |
 | --- | --- | --- |
-| 安全性作業 | Secops | 提供一般的安全性監督。  <br><br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
+| 安全性作業 | Secops | 提供一般的安全性監督。 <br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
 | 網路作業 | Netops | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |
 | 系統作業 | Sysops | 指定計算和儲存體基礎結構選項，並維護已部署的資源。 |
 | 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。 <br><br> 會操作功能和應用程式，以符合服務等級協定 (SLA) 和其他品質標準。 |

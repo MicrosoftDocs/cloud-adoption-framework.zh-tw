@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223485"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862546"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
 任何雲端採用方案最重要的一點，就是要讓計畫成為現實的人員的一致。 在您瞭解其人員相關層面之前，不會完成任何計畫。
 
-真正的組織對齊需要時間。 建立長期的組織對齊會變得很重要，尤其是在企業和 IT 文化中，雲端採用規模調整。 相較之下，在雲端採用架構的組織方法中，[所有章節](../organize/index.md)都必須專門提供。
+真正的組織對齊需要時間。 建立長期的組織對齊會變得很重要，尤其是在企業和 IT 文化中，雲端採用規模調整。 相較之下，在雲端採用架構的[組織方法](../organize/index.md)中，所有章節都必須專門提供。
 
 完整的組織對齊不是雲端採用方案的必要元件。 不過，需要進行一些初始的組織對齊。 本文概述組織對齊的最佳做法起點。 這裡的指引可協助您完成計畫，並讓您的小組準備好進行雲端採用。 當您準備好時，可以使用 [[組織對齊](../organize/index.md)] 區段來自訂本指南以符合您的組織。
 

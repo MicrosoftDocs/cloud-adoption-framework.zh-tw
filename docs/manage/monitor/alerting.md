@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76da764cb9ab4841f4947b22ae61f1f0048b4dfa
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756187"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861390"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -84,7 +84,7 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 |---| ---| --- |
 | 適用於容器的 Azure 監視器 | 從節點和 pod 計算的平均效能資料會寫入計量存放區。 | 如果您想要根據測量的使用量效能變化來警示，請建立計量警示，並在一段時間內匯總。 |
 | | 使用從節點、控制器、容器和 pod 百分位數的計算效能資料，會寫入至記錄存放區。 容器記錄和清查資訊也會寫入至記錄存放區。 | 如果您想要根據叢集和容器的測量使用率變化來警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。 |
-適用於 VM 的 Azure 監視器 | 健康情況準則是指寫入計量存放區的計量。 | 當健全狀況狀態從狀況良好變更為狀況不良時，就會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
+| 適用於 VM 的 Azure 監視器 | 健康情況準則是指寫入計量存放區的計量。 | 當健全狀況狀態從狀況良好變更為狀況不良時，就會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
 | | 對應和客體作業系統效能記錄檔資料會寫入記錄存放區。 | 建立記錄查詢警示。 |
 
 <!-- docsTest:ignore "speed driven by cost" -->

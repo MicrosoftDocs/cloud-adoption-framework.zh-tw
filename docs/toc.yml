@@ -387,7 +387,7 @@ items:
                 items:
                   - name: 在 Azure App Service 及 Azure SQL Database 上重構應用程式
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: 在 Azure App Service 及 Azure SQL Database 受控執行個體上重構應用程式
+                  - name: 在 Azure App Service 及 Azure SQL 受控執行個體上重構應用程式
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
                   - name: 在 Azure App Service 中重建應用程式
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
@@ -415,7 +415,7 @@ items:
                     href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: 將應用程式重新裝載在 Azure VM 和 Azure SQL Database 受控執行個體上
+                  - name: 在 Azure VM 和 Azure SQL 受控執行個體上重新裝載應用程式
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: 在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載應用程式
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -427,7 +427,7 @@ items:
                     items:
                       - name: 將 SQL Server 重構至 Azure SQL Database
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
-                      - name: 將 SQL Server 重構至 Azure SQL Database 受控執行個體
+                      - name: 將 SQL Server 重構至 Azure SQL 受控執行個體
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: 將 SQL Server 重構至 Azure VM 上的 SQL Server
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
@@ -483,11 +483,11 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 將 SQL Server 線上移轉至 Azure SQL Database
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 離線移轉至 Azure SQL Database 受控執行個體
+                      - name: 將 SQL Server 離線遷移到 Azure SQL 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 SQL Server 線上移轉至 Azure SQL Database 受控執行個體
+                      - name: 將 SQL Server 線上遷移到 Azure SQL 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 將 Amazon RDS SQL Server 線上移轉至 Azure SQL Database 或 Azure SQL Database 受控執行個體
+                      - name: 將 Amazon RDS SQL Server 線上遷移到 Azure SQL Database 或 Azure SQL 受控執行個體
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 將 MySQL 線上移轉至適用於 MySQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'

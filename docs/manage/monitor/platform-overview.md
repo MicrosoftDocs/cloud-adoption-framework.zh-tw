@@ -1,6 +1,6 @@
 ---
 title: 雲端監視平臺總覽
-description: 取得兩個監視平臺的高階總覽，協助您瞭解每個平臺如何提供核心監視功能。
+description: 請參閱兩個監視平臺的高階總覽，協助您瞭解每個平臺如何提供核心監視功能。
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223740"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861475"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 

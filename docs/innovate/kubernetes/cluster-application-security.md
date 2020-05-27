@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6a5ae0083e619dc2db975682b5f50c0e8e2f1936
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224012"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861985"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -37,7 +37,7 @@ ms.locfileid: "83224012"
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **熟悉安全性基本知識白皮書。** 安全 Kubernetes 環境的主要目標，是要確保其執行的應用程式受到保護、可以快速識別及解決安全性問題，而且未來將會防止類似的問題。 | [保護 Kubernetes 的最終指南（白皮書）](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **檢查叢集節點的安全性強化設定。** 安全性強化主機 OS 可減少攻擊的介面區，並允許安全地部署容器。 | [AKS 虛擬機器主機中的安全性強化](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **設定叢集角色型存取控制（RBAC）。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 中的角色型存取控制（RBAC）（影片）](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [將 Azure AD 與 Azure Kubernetes Service 整合](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [叢集組態檔的限制存取](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **設定叢集角色型存取控制（RBAC）。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 中的角色型存取控制（RBAC）（影片）](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [將 Azure AD 與 Azure Kubernetes Service 整合](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [叢集組態檔的限制存取](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>部署到生產環境並套用最佳作法
 
@@ -62,7 +62,7 @@ ms.locfileid: "83224012"
 > | **限制叢集輸出流量。** 如果您限制叢集的輸出流量，請瞭解要允許哪些埠和位址。 您可以使用 Azure 防火牆或協力廠商防火牆設備來保護您的輸出流量，並定義這些必要的埠和位址。 | [在 AKS 中控制叢集節點的輸出流量](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
 > | **使用 web 應用程式防火牆（WAF）保護流量。** 使用 Azure 應用程式閘道作為 Kubernetes 叢集的輸入控制器。  | [將 Azure 應用程式閘道設定為輸入控制器](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **將安全性和核心更新套用至背景工作節點。** 瞭解 AKS 節點更新體驗。 為了保護您的叢集，安全性更新會自動套用至 AKS 中的 Linux 節點。 這些更新包括 OS 安全性修正或核心更新。 這其中有一些更新需要重新啟動節點，才能完成此程序。 | [使用 kured 自動重新開機節點以套用更新](https://docs.microsoft.com/azure/aks/node-updates-kured) |
-> | **設定容器和叢集掃描解決方案。** 掃描已推送至 Azure Container Registry 的容器，並深入瞭解您的叢集節點、雲端流量和安全性控制。 | [Azure Container Registry 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Azure Kubernetes Service 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
+> | **設定容器和叢集掃描解決方案。** 掃描已推送至 Azure Container Registry 的容器，並深入瞭解您的叢集節點、雲端流量和安全性控制。 | [Azure Container Registry 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Azure Kubernetes Service 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
 ## <a name="optimize-and-scale"></a>優化和調整
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9fe2d91971e13ded533747e079fc52063feaf70d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217737"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862240"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
@@ -49,7 +49,7 @@ _圖1：雲端治理累加方法的採用階段。_
 - 檢閱您雲端平台的安全性指導方針。 針對 Azure，您可以在[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中找到這些。
 - 判斷您的安全性基準原則是否包含[安全性開發生命週期](https://www.microsoft.com/sdl)。
 - 根據接下來的一到三個版本評估網路、資料與資產相關商務風險，並判定您組織對那些風險的容忍度。
-- 檢閱 Microsoft 的[熱門網路安全趨勢](https://www.microsoft.com/security/operations/security-intelligence-report) \(英文\) 報告以取得目前安全性趨勢概觀。
+- 請參閱 Microsoft[在網路安全性報表中的最高趨勢](https://www.microsoft.com/security/operations/security-intelligence-report)，以瞭解目前的安全性環境。
 - 請考慮在您的組織中開發[DevSecOps](https://www.microsoft.com/devsecops)角色。
 
 ## <a name="build-and-predeployment"></a>組建和預先部署

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a77190bd55e9c5dd0656bc62b8ac10c34b1d13ce
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: fd859de8d7388a0cbd7c55255e005d98e6e87418
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815186"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861577"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -113,7 +113,7 @@ Contoso 會完成下列步驟，以將 SmartHotel360 應用程式的 Web 和資�
 | [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
 | [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來 | 評估其 VMware Vm。 Azure Migrate 評估遷移的適用性 | 的電腦。 它提供在中執行的大小調整和成本預估 | Azure。 | 截至 2018 年 5 月，Azure Migrate 是一項免費服務。 |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者都必須符合此案例的下列先決條件：
 
@@ -186,7 +186,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 **需要其他協助？**
 
-- 取得 [SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)的概觀。
+- 閱讀[SQL Database 受控執行個體的總覽](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
 - 了解如何[建立 SQL Database 受控執行個體的虛擬網路](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration)。
 - 了解如何[設定對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)。
 - 了解如何[更新 Azure Active Directory DNS 設定](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)。
@@ -332,7 +332,7 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 
 **需要其他協助？**
 
-[瞭解如何](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate：伺服器遷移工具。
+瞭解如何設定[Azure Migrate：伺服器遷移工具](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)。
 
 ### <a name="prepare-on-premises-vms"></a>準備內部部署 Vm
 
@@ -362,7 +362,7 @@ Contoso 管理員現在可以佈建 SQL Database 受控執行個體：
 
 5. 需要其他協助？
 
-   - [瞭解如何](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)準備 vm 以進行遷移。
+   - 瞭解如何[準備 vm 以進行遷移](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
 
 ## <a name="step-5-replicate-the-on-premises-vms"></a>步驟5：複寫內部部署 Vm
 

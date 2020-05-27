@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c0b0bde877de2ae03decebe1b0237e1ba406e453
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222295"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861067"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -192,7 +192,7 @@ Contoso 可以考慮四個廣泛的移轉策略。
 
 <!-- markdownlint-disable MD033 -->
 
-| **策略** | **詳細資料** | **使用量** |
+| **策略** | **詳細資料** | **使用方式** |
 | --- | --- | --- |
 | 重新裝載 | <li> 這通常稱為「隨即_轉移_」，這是將現有應用程式快速遷移至 Azure 的免費程式碼選項。 <li> 應用程式皆依原狀移轉，可直接享有雲端優勢，而無須承擔變更程式碼的相關風險或成本。 | <li> Contoso 可以重新裝載較不具策略性的應用程式，而不必變更程式碼。 |
 | 重構 | <li> 此策略也稱為「重新封裝」，只需要稍微變更應用程式程式碼或組態，就能將應用程式連線至 Azure PaaS，並利用雲端功能。 | <li> Contoso 可以重構策略性應用程式，以便既保留相同的基本功能，又將其移到 Azure 平台上執行，例如 Azure App Service。 <li> 此策略所需變更的程式碼最少。 <li> 但另一方面，Contoso 必須維護 VM 平台，因為 Microsoft 不會幫它管理。 |
@@ -352,7 +352,7 @@ Contoso 會仰賴 Azure 資訊安全中心為混合式雲端工作負載提供�
 
 - Contoso 可以使用這些工具，輕鬆地從來源收集資料，並取得豐富的見解。 例如，Contoso 可以測量 VM 的 CPU 磁碟和記憶體使用量、檢視多部 VM 之間的應用程式和網路相依性，並追蹤應用程式效能。
 - Contoso 會使用這些雲端監視工具來採取行動，並與服務解決方案整合。
-- [深入了解](https://docs.microsoft.com/azure/azure-monitor/overview) Azure 監視。
+- 深入瞭解[Azure 監視](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
 ### <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
 

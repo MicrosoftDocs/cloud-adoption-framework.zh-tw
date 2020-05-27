@@ -1,18 +1,18 @@
 ---
 title: CISO 雲端安全性就緒指南
-description: 瞭解如何準備資訊安全機構（CISO），以進行雲端轉換和增量治理。
+description: 準備資訊安全機構（CISO）以進行雲端轉換和增量治理。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: fcf85d3da5821a87b7dd18cc421ecdbda4c3c39d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 53549ed01b9656ba4ce365e4707b411bdae2db1f
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224250"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862274"
 ---
 <!-- cSpell:ignore CISO -->
 
