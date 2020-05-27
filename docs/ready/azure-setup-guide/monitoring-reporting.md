@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0be49567a459915dbe4b8e8db90feae9b47a1e5c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223179"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756340"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -63,9 +63,9 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 # <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
 
-Azure 服務健康狀態會提供您所用 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「服務健康狀態」，協助您了解對您資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
+Azure 服務健康狀態會提供您所用 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「Azure 服務健康狀態」，協助您了解對資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
 
-我們也會將計劃性維護事件發佈至「服務健康狀態」，讓您能夠知道可能影響資源可用性的變更。 設定「服務健康狀態」警示，以便獲知可能影響您所用 Azure 服務和區域的服務問題、計劃性維護或其他變更。
+我們也會將計劃性維護事件發佈至「Azure 服務健康狀態」，讓您能夠知道可能影響資源可用性的變更。 設定「服務健康狀態」警示，以便獲知可能影響您所用 Azure 服務和區域的服務問題、計劃性維護或其他變更。
 
 Azure 服務健康狀態包含：
 
@@ -81,8 +81,8 @@ Azure 服務健康狀態包含：
 
 若要設定服務健康狀態警示：
 
-1. 請移至 [服務健康狀態]  。
-2. 選取 [健康狀態警示]  。
+1. 請移至 [服務健康狀態]。
+2. 選取 [健康狀態警示]。
 3. 建立服務健康狀態警示。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts]" submitText="Go to Service Health" :::
@@ -91,11 +91,11 @@ Azure 服務健康狀態包含：
 
 ::: zone target="docs"
 
-若要設定服務健康狀態警示，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts)。
+若要設定 Azure 服務健康狀態警示，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts)。
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
@@ -107,7 +107,7 @@ Azure Advisor 是免費的個人化雲端顧問，可協助您遵循及實作 Az
 - **安全性：** 可偵測可能導致安全性漏洞的威脅和弱點。 建議做法可能包括套用磁碟加密，或啟用網路安全性群組。
 - **效能：** 可提升應用程式的速度。 建議做法可能包括藉由建立索引或重新設定流量管理員設定來提升 SQL 查詢效能。
 - **成本：** 可最佳化並降低整體 Azure 費用。 建議做法可能包括將未充分使用的虛擬機器調整大小或關閉，或改用 Azure 保留項目以降低擁有權總成本。
-- **卓越的營運績效：** 改善流程和工作流程效率以及管理能力。 建議可能包括設定和強制執行 Azure 原則規則、修復不正確的記錄警示規則，以及設定 Azure 服務健康狀態警示。
+- **卓越的營運績效：** 改善流程和工作流程效率以及管理能力。 建議可能包括設定和強制執行 Azure 原則規則、修復不正確的記錄警示規則，以及設定服務健康狀態警示。
 
 Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來提供建議。 您可以定期查看 Advisor 以獲得最新建議。
 
@@ -143,7 +143,7 @@ Azure 資訊安全中心提供兩個層級：免費層和標準層。 安全性�
 
 **前 30 天可免費使用標準服務層級。**
 
-為訂用帳戶資源開啟及設定安全性原則後，便可在 [防護]  區段中檢視資源的安全性狀態及任何問題。 您也可以在 [建議]  圖格上檢視這些問題的清單。
+為訂用帳戶資源開啟及設定安全性原則後，便可在 [防護] 區段中檢視資源的安全性狀態及任何問題。 您也可以在 [建議] 圖格上檢視這些問題的清單。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c807929b68c38e36c5921934220e3212fdf3d59e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 84e31db3819235b7a17d6a5f4727e09854bc1b35
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216566"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755886"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -28,8 +28,8 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ## <a name="use-and-configure-azure-monitor"></a>使用和設定 Azure 監視器
 
-1. 在 Azure 入口網站中，移至 [監視器]  。
-2. 選取 [計量]  、[記錄]  或 [服務健康狀態]  以取得概觀。
+1. 在 Azure 入口網站中，移至 [監視器]。
+2. 選取 [計量]、[記錄] 或 [服務健康狀態] 以取得概觀。
 3. 選取任何相關的見解。
 
 ::: zone target="chromeless"
@@ -60,8 +60,8 @@ Azure 服務健康狀態包含：
 
 ## <a name="access-service-health"></a>存取服務健康狀態
 
-1. 在 Azure 入口網站中，移至 [監視器]  。
-2. 選取 [服務健康狀態]  。
+1. 在 Azure 入口網站中，移至 [監視器]。
+2. 選取 [服務健康狀態]。
 
 ::: zone target="chromeless"
 
@@ -73,7 +73,7 @@ Azure 服務健康狀態包含：
 
 ## <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
@@ -83,8 +83,8 @@ Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來�
 
 ## <a name="access-azure-advisor"></a>存取 Azure Advisor
 
-1. 移至 Azure 入口網站中的 [Advisor]  ，或搜尋資源。
-2. 選取 [高可用性]  、[安全性]  、[效能]  、[成本]  。
+1. 移至 Azure 入口網站中的 [Advisor]，或搜尋資源。
+2. 選取 [高可用性]、[安全性]、[效能]、[成本]。
 
 ::: zone target="chromeless"
 
@@ -106,8 +106,8 @@ Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化�
 
 ## <a name="access-azure-security-center"></a>存取 Azure 資訊安全中心
 
-1. 移至 Azure 入口網站中的 [資訊安全中心]  ，或搜尋資源。
-2. 選取 [建議]  。
+1. 移至 Azure 入口網站中的 [資訊安全中心]，或搜尋資源。
+2. 選取 [建議]。
 
 ::: zone target="chromeless"
 
@@ -129,13 +129,13 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ## <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
 
-1. 在 Azure 入口網站中，選取 [虛擬機器]  ，然後選取您想要複寫的 VM。
-1. 在 [作業]  中，選取 [備份]  。
+1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
+1. 在 [作業]中，選取 [備份]。
 1. 建立或選取現有的復原服務保存庫。
-1. 選取 [建立 (或編輯) 新的原則]  。
+1. 選取 [建立 (或編輯) 新的原則]。
 1. 設定排程和保留期間。
-1. 選取 [確定]  。
-1. 選取 [啟用備份]  。
+1. 選取 [確定]。
+1. 選取 [啟用備份]。
 
 ::: zone target="chromeless"
 
@@ -166,11 +166,11 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 
 ## <a name="enable-replication-for-the-azure-vm"></a>啟用 Azure VM 的複寫
 
-1. 在 Azure 入口網站中，選取 [虛擬機器]  ，然後選取您想要複寫的 VM。
-1. 在 [作業]  中，選取 [災害復原]  。
-1. 在 [設定災害復原]   >  [目標區域]  中，選取您要複寫至的目標區域。
+1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
+1. 在 [作業] 中，選取 [災害復原]。
+1. 在 [設定災害復原] >  [目標區域] 中，選取您要複寫至的目標區域。
 1. 在本快速入門中，接受其他預設設定。
-1. 選取 [啟用複寫]  。 這會開始一項作業來啟用 VM 的複寫。
+1. 選取 [啟用複寫]。 這會開始一項作業來啟用 VM 的複寫。
 
 ::: zone target="chromeless"
 
@@ -182,7 +182,7 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 
 在複寫作業完成之後，您可以檢查複寫狀態、確認複寫健康情況，以及測試部署。
 
-1. 在 VM 功能表中，選取 [災害復原]  。
+1. 在 VM 功能表中，選取 [災害復原]。
 2. 確認複寫健康情況、已建立的復原點，以及地圖上的來源和目標區域。
 
 ::: zone target="chromeless"

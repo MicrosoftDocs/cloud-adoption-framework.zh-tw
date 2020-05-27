@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621567"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756323"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -56,24 +56,24 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 建立管理群組，以協助您針對多個訂用帳戶管理存取、原則及合規性。
 
 1. 請移至[管理群組](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)。
-2. 選取 [新增管理群組]  。
+2. 選取 [新增管理群組]。
 
 ### <a name="create-a-subscription"></a>建立訂用帳戶
 
 使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
 
-1. 請移至 [[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)]。
-1. 選取 [新增]  。
+1. 請移至[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
+1. 選取 [新增]。
 
 ### <a name="create-a-resource-group"></a>建立資源群組
 
 建立資源群組，以容納共用相同生命週期、權限及原則的 Web 應用程式、資料庫和儲存體帳戶等資源。
 
-1. 移至 [[資源群組](https://portal.azure.com/#create/Microsoft.ResourceGroup)]。
-1. 選取 [新增]  。
-1. 選取要用來建立資源群組的 [訂用帳戶]  。
-1. 輸入 [資源群組]  的名稱。
-1. 選取資源群組位置的 [區域]  。
+1. 移至[資源群組](https://portal.azure.com/#create/Microsoft.ResourceGroup)。
+1. 選取 [新增]。
+1. 選取要用來建立資源群組的 [訂用帳戶]。
+1. 輸入 [資源群組] 的名稱。
+1. 選取資源群組位置的 [區域]。
 
 ## <a name="learn-more"></a>深入了解
 
@@ -98,7 +98,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 建立管理群組，以協助您針對多個訂用帳戶管理存取、原則及合規性。
 
 1. 請移至**管理群組**。
-1. 選取 [新增管理群組]  。
+1. 選取 [新增管理群組]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade]" submitText="Go to Management groups" :::
 
@@ -107,7 +107,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
 
 1. 請移至 [**訂用帳戶**]。
-1. 選取 [新增]  。
+1. 選取 [新增]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/SubscriptionsBlade]" submitText="Go to Subscriptions" :::
 
@@ -116,10 +116,10 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 建立資源群組，以容納共用相同生命週期、權限及原則的 Web 應用程式、資料庫和儲存體帳戶等資源。
 
 1. 移至 [**資源群組**]。
-1. 選取 [新增]  。
-1. 選取要用來建立資源群組的 [訂用帳戶]  。
-1. 輸入 [資源群組]  的名稱。
-1. 選取資源群組位置的 [區域]  。
+1. 選取 [新增]。
+1. 選取要用來建立資源群組的 [訂用帳戶]。
+1. 輸入 [資源群組] 的名稱。
+1. 選取資源群組位置的 [區域]。
 
 ::: form action="Create[#create/Microsoft.ResourceGroup]" submitText="Create a resource group" :::
 
@@ -146,9 +146,9 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 | 單位 | 影響範圍 | 長度 | 大小寫 | 有效字元 | 建議模式 | 範例 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 資源群組 | 訂用帳戶 | 1-90 | 不區分大小寫 | 英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
-| 可用性設定組 | 資源群組 | 1-80 | 不區分大小寫 | 英數字元、底線和連字號 | `<service-short-name>-<context>-as` | `profx-sql-as` |
-| Tag | 相關聯的實體 | 512 (名稱)、256 (值) | 不區分大小寫 | 英數字元 | `"key" : "value"` | `"department" : "Central IT"` |
+| 資源群組 | 訂用帳戶 | 1-90 | 不區分大小寫 | 英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
+| 可用性設定組 | 資源群組 | 1-80 | 不區分大小寫 | 英數字元、底線和連字號 | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Tag | 相關聯的實體 | 512 (名稱)、256 (值) | 不區分大小寫 | 英數字元 | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[資源標記](#tab/ResourceTags)
 
@@ -158,8 +158,8 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 您也可以將標記用於其他許多項目。 常見使用案例包括：
 
-- **中繼資料和文件：** 系統管理員套用「ProjectOwner」之類的標記，即可輕易查看其所處理資源的相關詳細資料。
-- **自動化：** 您可能有定期執行的指令碼，其會根據「ShutdownTime」或「DeprovisionDate」等標記值來採取動作。
+- **中繼資料和文件：** 系統管理員套用 `projectowner` 之類的標記，即可輕易查看其所處理資源的相關詳細資料。
+- **自動化：** 您可能有定期執行的指令碼，其會根據 `shutdowntime` 或 `deprovisiondate` 等標記值來採取動作。
 - **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
@@ -172,9 +172,9 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
+1. 移至[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)。
 1. 選取資源群組。
-1. 選取 [指派標記]  。
+1. 選取 [指派標記]。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。
 
 ## <a name="learn-more"></a>深入了解
@@ -193,7 +193,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 1. 移至 [**資源群組**]。
 1. 選取資源群組。
-1. 選取 [標記]  。
+1. 選取 [標記]。
 1. 輸入新的名稱和值，或選取現有的名稱和值。
 
 ::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::

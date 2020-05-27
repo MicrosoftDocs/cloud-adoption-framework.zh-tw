@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f88d7a6e7856e1a909547d721be2e4b4a132692e
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753545"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862461"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -36,7 +36,7 @@ ms.locfileid: "83753545"
 | 您已經擁有內部部署監視基礎結構嗎？ | 否 | 是 | 是 |  否 |
 | 您有避免將記錄資料儲存在外部儲存位置的需求嗎？ | 否 | 是 | 否 | 否 |
 | 您需要整合雲端監視與內部部署系統嗎？ | 否 | 否 | 是 | 否 |
-您需要先處理或篩選遙測資料再將它們提交至監視系統嗎？ | 否 | 否 | 否 | 是 |
+| 您需要先處理或篩選遙測資料再將它們提交至監視系統嗎？ | 否 | 否 | 否 | 是 |
 
 ### <a name="cloud-native"></a>雲端原生
 

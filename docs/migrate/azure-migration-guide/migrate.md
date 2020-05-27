@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dd3d1b0bcbef071c1b5d819071a0f539948ec273
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401171"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861050"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -255,7 +255,7 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 不受追蹤和管理的專案較可能會發生問題。 為確保能有成功的結果，我們認為您必須使用專案管理工具。 目前有許多不同的工具可供使用，而您組織中的專案管理人員可能已有偏好的工具。
 
-Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用[這些指示](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template)部署範本。 您可以修改範本以反映要遷移的[工作負載](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads)和[資產](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets)。
+Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用 [雲端採用方案和 Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template)中的指示來部署範本。 您可以修改範本以反映要遷移的[工作負載](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads)和[資產](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets)。
 
 Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更廣泛的功能：
 

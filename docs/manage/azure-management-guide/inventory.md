@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e6cae79ab54c4b1389f9f74ab291575e16831b38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216719"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756425"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
-「清查和可見性」  是三個雲端管理基準專業領域中的第一個。
+「清查和可見性」是三個雲端管理基準專業領域中的第一個。
 
 ![雲端管理基準](../../_images/manage/management-baseline.png)
 
@@ -48,9 +48,9 @@ ms.locfileid: "83216719"
 
 ::: zone-end
 
-Azure 服務健康狀態會提供您 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「服務健康狀態」，協助您了解資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
+Azure 服務健康狀態會提供您 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「Azure 服務健康狀態」，協助您了解資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
 
-我們也會將計劃性維護事件發佈至「服務健康狀態」，讓您能夠知道可能影響資源可用性的變更。 設定「服務健康狀態」警示，以便獲知可能影響您 Azure 服務和區域的服務問題、計劃性維護或其他變更。
+我們也會將計劃性維護事件發佈至「Azure 服務健康狀態」，讓您能夠知道可能影響資源可用性的變更。 設定「服務健康狀態」警示，以便獲知可能影響您 Azure 服務和區域的服務問題、計劃性維護或其他變更。
 
 Azure 服務健康狀態包含：
 
@@ -66,8 +66,8 @@ Azure 服務健康狀態包含：
 
 若要設定服務健康狀態警示：
 
-1. 請移至 [服務健康狀態]  。
-2. 選取 [健康狀態警示]  。
+1. 請移至 [服務健康狀態]。
+2. 選取 [健康狀態警示]。
 3. 建立服務健康狀態警示。
 
 <!-- markdownlint-disable DOCSMD001 -->
@@ -84,7 +84,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 服務健康狀態文件](https://docs.microsoft.com/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
 
 ## <a name="log-analytics"></a>Log Analytics
 

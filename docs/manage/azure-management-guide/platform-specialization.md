@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216634"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756408"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -32,7 +32,7 @@ ms.locfileid: "83216634"
 
 | Process | 工具 | 目的  | 建議的管理層級 |
 |---|---|---|---|
-| 改善系統設計 | Azure Architecture Framework | 改善平台的架構設計以改善作業 | N/A |
+| 改善系統設計 | Microsoft Azure Well-Architected Framework | 改善平台的架構設計以改善作業 | N/A |
 | 自動化補救 | Azure 自動化 | 使用平台專屬的自動化來回應進階平台的資料 | 平台作業 |
 | 服務類別目錄 | 受控應用程式中心 | 針對符合組織標準的已核准解決方案來提供自助式目錄 | 平台作業 |
 | 容器效能 | 適用於容器的 Azure 監視器 | 容器的監視和診斷 | 平台作業 |
@@ -61,9 +61,9 @@ ms.locfileid: "83216634"
 
 改善系統設計最能有效改善任何常見平台的作業。 透過改善系統設計，不僅穩定性會增加，業務中斷的情形也會減少。 個別系統的設計不在整個 Azure 雲端採用架構中所採用環境檢視的範圍內。
 
-作為雲端採用架構的補充，Azure Architecture Framework 可提供最佳做法來讓您改善特定系統的復原能力和設計。 這些設計的改善可套用至平台或特定工作負載的系統設計。
+作為雲端採用架構的補充，Microsoft Azure Well-Architected Framework 可提供最佳做法來讓您改善特定系統的復原能力和設計。 這些設計的改善可套用至平台或特定工作負載的系統設計。
 
-Azure Architecture Framework 著重在改善系統設計的五大要素：
+Microsoft Azure Well-Architected Framework 的架構著重在改善系統設計的五大要素：
 
 - **延展性：** 擴展常見平台資產以應付增加的負載。
 - **可用性：** 藉由改善可能的執行時間來減少業務中斷。
@@ -73,9 +73,9 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 技術債務和架構瑕疵會是大部分業務中斷的原因。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新的部署，您可以將這些改善項目視為避免發生技術債務的方式。
 
-下一個 [自動補救]  索引標籤會示範如何解決無法或不應解決的技術債務。
+下一個 [自動補救] 索引標籤會示範如何解決無法或不應解決的技術債務。
 
-深入了解 [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) 以改善系統設計。
+深入了解 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) 以改善系統設計。
 
 系統設計改善後，請回到本文來尋找新的改善機會，並將這些改善擴展到整個環境。
 
@@ -117,9 +117,9 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>從服務類別目錄部署應用程式
 
-1. 在 Azure 入口網站中，移至 [受控應用程式中心 (預覽)]  。
-2. 在 [瀏覽]  窗格上，選取 [服務目錄應用程式]  。
-3. 選取 [+ 新增]  ，從公司的服務類別目錄中選擇應用程式定義。
+1. 在 Azure 入口網站中，移至 [受控應用程式中心 (預覽)]。
+2. 在 [瀏覽] 窗格上，選取 [服務目錄應用程式]。
+3. 選取 [+ 新增]，從公司的服務類別目錄中選擇應用程式定義。
 
 系統會顯示您目前正在維護的任何受控應用程式。
 
@@ -135,8 +135,8 @@ Azure Architecture Framework 著重在改善系統設計的五大要素：
 
 ### <a name="manage-service-catalog-applications"></a>管理服務類別目錄應用程式
 
-1. 在 Azure 入口網站中，移至 [受控應用程式中心 (預覽)]  。
-1. 在 [服務]  窗格上，選取 [服務目錄應用程式]  。
+1. 在 Azure 入口網站中，移至 [受控應用程式中心 (預覽)]。
+1. 在 [服務] 窗格上，選取 [服務目錄應用程式]。
 
 系統會顯示您目前正在維護的任何受控應用程式。
 

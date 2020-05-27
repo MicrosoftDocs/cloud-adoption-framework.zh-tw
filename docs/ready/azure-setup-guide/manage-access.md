@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: e8f20079df4a0e3e55a93e1a35734673d53a0634
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621642"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862512"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -30,7 +30,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 在規劃存取控制方法時，建議您與組織中擔任下列角色的人員合作：安全性和合規性、IT 管理和企業架構設計人員。
 
-雲端採用架構會提供其他指引來說明如何[使用角色型存取控制](../considerations/roles.md)來作為雲端採用工作的一部分。
+雲端採用架構會提供其他指引來使用[角色型存取控制](../considerations/roles.md)來作為雲端採用工作。
 
 ::: zone target="chromeless"
 
@@ -42,8 +42,8 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 1. 移至 [**資源群組**]。
 1. 選取資源群組。
-1. 選取 [存取控制 (IAM)]  。
-1. 選取 [+新增]   > [新增角色指派]  。
+1. 選取 [存取控制 (IAM)]。
+1. 選取 [+新增] > [新增角色指派]。
 1. 選取角色，然後將存取權指派給使用者、群組或服務主體。
 
 ::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" ::: form-end
@@ -54,8 +54,8 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 1. 請移至 [**訂用帳戶**]。
 1. 選取一個訂用帳戶。
-1. 選取 [存取控制 (IAM)]  。
-1. 選取 [+新增]   > [新增角色指派]  。
+1. 選取 [存取控制 (IAM)]。
+1. 選取 [+新增] > [新增角色指派]。
 1. 選取角色，然後將存取權指派給使用者、群組或服務主體。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/SubscriptionsBlade]" submitText="Go to subscriptions" ::: form-end
@@ -68,20 +68,20 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 若要對使用者授與資源群組的存取權：
 
-1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
+1. 移至[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)。
 1. 選取資源群組。
-1. 選取 [存取控制 (IAM)]  。
-1. 選取 [+新增]   > [新增角色指派]  。
+1. 選取 [存取控制 (IAM)]。
+1. 選取 [+新增] > [新增角色指派]。
 1. 選取角色，然後將存取權指派給使用者、群組或服務主體。
 
 ## <a name="grant-subscription-access"></a>授與訂用帳戶存取權
 
 若要對使用者授與訂用帳戶的存取權：
 
-1. 請移至 [[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)]。
+1. 請移至[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)。
 1. 選取一個訂用帳戶。
-1. 選取 [存取控制 (IAM)]  。
-1. 選取 [+新增]   > [新增角色指派]  。
+1. 選取 [存取控制 (IAM)]。
+1. 選取 [+新增] > [新增角色指派]。
 1. 選取角色，然後將存取權指派給使用者、群組或服務主體。
 
 ## <a name="learn-more"></a>深入了解
