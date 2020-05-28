@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e0c340e8d0dffb36c692ee3f3b8d4b0ece978a0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861084"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023452"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -376,9 +376,9 @@ _應用程式安全性群組範例_
 
 | **規則名稱** | **目的** | **詳細資料** |
 | --- | --- | --- |
-| Allow-HTTP-Inbound-Internet | 讓流量從網際網路流向 Web 伺服器。 來自網際網路的輸入流量會遭到 DenyAllInbound 預設安全性規則拒絕，因此 AsgLogic 或 AsgDb 應用程式安全性群組則不需要其他規則。 | 優先順序：100 <br><br> 來源：網際網路 <br><br> 來源埠：\* <br><br> 目的地： AsgWeb <br><br> 目的地埠：80 <br><br> 通訊協定：TCP <br><br> 存取： [允許]。 |
-| Deny-Database-All | AllowVNetInBound 預設安全性規則允許相同 VNet 中各資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序：120 <br><br> 來源： \* <br><br> 來源埠：\* <br><br> 目的地： AsgDb <br><br> 目的地埠：1433 <br><br> 通訊協定：全部 <br><br> 存取：拒絕。 |
-| Allow-Database-BusinessLogic | 讓流量從 AsgLogic應用程式安全性群組流向 AsgDb 應用程式安全性群組。 此規則的優先順序高於 [拒絕-資料庫-全部] 規則，因此會先處理此規則。 因此，允許來自 AsgLogic 應用程式安全性群組的流量，並封鎖所有其他流量。 | 優先順序：110 <br><br> 來源： AsgLogic <br><br> 來源埠：\* <br><br> 目的地： AsgDb <br><br> 目的地埠：1433 <br><br> 通訊協定：TCP <br><br> 存取： [允許]。 |
+| `Allow-HTTP-Inbound-Internet` | 讓流量從網際網路流向 Web 伺服器。 預設安全性規則會拒絕來自網際網路的輸入流量 `DenyAllInbound` ，因此 `AsgLogic` 或 `AsgDb` 應用程式安全性群組不需要額外的規則。 | 優先順序`100`<br><br> 來源： `internet`<br/><br/> 來源埠：`*`<br/><br/> 位置`AsgWeb`<br/><br/> 目的地埠：`80`<br/><br/> Protocol`TCP`<br/><br/> 權`Allow` |
+| `Deny-Database-All` | `AllowVNetInBound`預設安全性規則允許相同 VNet 中資源之間的所有通訊，因此需要此規則才能拒絕來自所有資源的流量。 | 優先順序`120`<br/><br/> 來源： `*`<br/><br/> 來源埠：`*`<br/><br/> 位置`AsgDb`<br/><br/> 目的地埠：`1433`<br/><br/> Protocol`All`<br/><br/> 存取： `Deny` 。 |
+| `Allow-Database-BusinessLogic` | 允許從 `AsgLogic` 應用程式安全性群組到 `AsgDb` 應用程式安全性群組的流量。 此規則的優先順序高於 `Deny-Database-All` 規則，因此會先處理此規則。 因此， `AsgLogic` 允許來自應用程式安全性群組的流量，並封鎖所有其他流量。 | 優先順序`110`<br/><br/> 來源： `AsgLogic`<br/><br/> 來源埠：`*`<br/><br/> 位置`AsgDb`<br/><br/> 目的地埠：`1433`<br/><br/> Protocol`TCP`<br/><br/> 權`Allow` |
 
 <!--markdownlint-enable MD033 -->
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 24259e0d9f011241a503aca143f4d03c2dc1fe6a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3372db305c2353b10fb33deb43585ee182836efd
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756017"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023503"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -99,7 +99,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **說明** | **成本**
+**服務** | **描述** | **成本**
 --- | --- | ---
 [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 DMA，評估和偵測可能對其 Azure 中的資料庫功能造成影響的相容性問題。 DMA 會評定 SQL 來源與目標之間的功能同位，並提出效能和可靠性改善建議。 | 此工具可免費下載。
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
@@ -163,7 +163,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 **需要其他協助？**
 
 - [說明](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)如何佈建 SQL Database。
-- [深入瞭解](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)vCore 資源限制。
+- 深入瞭解[vCore 資源限制](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)。
 
 ## <a name="step-2-assess-the-database-using-database-migration-assistant-dma-and-migrate-it-using-azure-database-migration-service-dms"></a>步驟2：使用資料庫移轉小幫手（DMA）來評估資料庫，並使用 Azure 資料庫移轉服務（DMS）進行遷移
 
@@ -294,7 +294,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
 12. 在 [**管線 > 成品**] 上，選取 [ **+ 新增**成品]，然後選取 [使用**ContosoSmarthotel360Refactor**管線建立]。
 
-     ![組建](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. 他們會確認已核取成品上的閃電，以啟用持續部署觸發程式。
 

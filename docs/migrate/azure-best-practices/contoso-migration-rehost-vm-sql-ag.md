@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401012"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023469"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -121,7 +121,7 @@ Contoso 管理員會將應用程式 VM 移轉至 Azure。
 
     ![移轉程序](./media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -183,7 +183,7 @@ Contoso 管理員會依照下列方式設定叢集：
 **需要其他協助？**
 
 - [取得說明](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)以了解如何佈建 SQL Server VM。
-- [了解](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)如何為不同的 SQL Server SKU 設定 VM。
+- 瞭解如何[為不同的 SQL Server sku 設定 vm](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)。
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>步驟 2︰部署並設定叢集
 
@@ -312,8 +312,8 @@ Contoso 管理員建立了健康情況探查，讓負載平衡器能夠監視應
 
 **需要其他協助？**
 
-- 對 Azure Load Balancer [取得概觀](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)。
-- [了解](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)如何建立負載平衡器。
+- 閱讀[Azure Load Balancer 的總覽](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)。
+- 瞭解如何[建立負載平衡器](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)。
 
 ## <a name="step-4-prepare-azure-for-azure-migrate"></a>步驟4：準備適用于 Azure Migrate 的 Azure
 
@@ -381,7 +381,7 @@ Contoso 管理員會依照下列方式設定帳戶：
 
 5. 需要其他協助？
 
-   - [瞭解如何](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)準備 vm 以進行遷移。
+   - 瞭解如何[準備 vm 以進行遷移](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure"></a>步驟6：將內部部署 Vm 複寫至 Azure
 
@@ -493,7 +493,7 @@ Contoso 管理員會使用 Azure 資料庫移轉服務（DMS），透過[逐步�
 
 - 了解如何建立[可用性群組](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)和[接聽程式](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)。
 - 手動[設定叢集以使用負載平衡器 IP 位址](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)。
-- [深入了解](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)如何建立和使用 SAS。
+- 深入瞭解如何[建立和使用 SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)。
 
 ## <a name="step-9-migrate-the-vm-with-azure-migrate"></a>步驟9：使用 Azure Migrate 遷移 VM
 
@@ -545,9 +545,9 @@ Contoso 管理員會執行快速測試容錯移轉，然後移轉 VM。
 
 **需要其他協助？**
 
-- [了解](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)如何執行測試容錯移轉。
+- 瞭解如何[執行測試容錯移轉](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)。
 - [了解](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)如何建立復原計畫。
-- [了解](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)如何容錯移轉至 Azure。
+- 瞭解如何[容錯移轉至 Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)。
 
 ### <a name="clean-up-after-migration"></a>移轉之後進行清除
 

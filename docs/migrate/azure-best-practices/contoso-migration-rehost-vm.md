@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61edff97499b0d9bf5b9d5e4349c548431bdf395
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 146760046dc82b80e347ca2b71ca2ac5f8c090e0
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223553"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023418"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -94,11 +94,11 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具無代理程式方法，�
 
 ### <a name="azure-services"></a>Azure 服務
 
-| **服務** | **說明** | **成本** |
+| **服務** | **描述** | **成本** |
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | 該服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 執行個體的移轉。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 當遷移發生且 Vm 在 Azure 中執行時，會建立 Azure Vm 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 要執行此案例所需的項目。
 
@@ -167,8 +167,7 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具無代理程式方法，�
 
 **需要其他協助？**
 
-[瞭解如何](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate：伺服器遷移工具。
-
+瞭解如何設定[Azure Migrate：伺服器遷移工具](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)。
 ### <a name="prepare-on-premises-vms"></a>準備內部部署 Vm
 
 遷移之後，Contoso 會想要連線到 Azure Vm，並允許 Azure 管理 Vm。 為此，Contoso 管理員在移轉之前執行了下列作業：
@@ -196,7 +195,7 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具無代理程式方法，�
 
 5. 需要其他協助？
 
-   - [瞭解如何](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)準備 vm 以進行遷移。
+   - 瞭解如何[準備 vm 以進行遷移](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
 
 ## <a name="step-2-replicate-the-on-premises-vms"></a>步驟2：複寫內部部署 Vm
 
@@ -227,8 +226,8 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 7. 在 [ **Azure Hybrid Benefit**中，選取下列各項：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]  。 然後選取 [下一步]  。
-    - 如果您有 Windows Server 機器涵蓋於有效的軟體保證或 Windows Server 訂用帳戶下，且您想要將權益套用至要移轉的機器，請選取 [是]  。 然後選取 [下一步]  。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]  。 然後選取 [下一步]。
+    - 如果您有 Windows Server 機器涵蓋於有效的軟體保證或 Windows Server 訂用帳戶下，且您想要將權益套用至要移轉的機器，請選取 [是]  。 然後選取 [下一步]。
 
 8. 在 [計算]  中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -236,7 +235,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     - **OS 磁片：** 指定 VM 的 OS （開機）磁片。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此設定組必須位於您為移轉指定的目標資源群組中。
 
-9. 在 [磁碟]  中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]  。
+9. 在 [磁碟]  中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]。
     - 您可以從複寫排除磁碟。
     - 如果您排除磁碟，則在移轉後磁碟將不會出現在 Azure VM 上。
 
@@ -283,8 +282,8 @@ Contoso 管理員現在會執行完整的遷移。
 
 **需要其他協助？**
 
-- [瞭解如何](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)執行測試遷移。
-- [深入了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。
+- 瞭解如何[執行測試遷移](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
+- 瞭解如何[將 vm 遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 

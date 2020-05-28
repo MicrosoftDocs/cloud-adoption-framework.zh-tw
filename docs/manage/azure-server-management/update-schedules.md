@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 359282dc962c72334bd390324fab0ca66f62a65c
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219541"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023401"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 
@@ -20,7 +20,7 @@ ms.locfileid: "83219541"
 
 若要透過 Azure 入口網站建立更新排程，請參閱[排程更新部署](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment)。
 
-Az. Automation 模組現在支援使用 Azure PowerShell 來設定更新管理。 模組的[版本 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0)新增[AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) Cmdlet 的支援。 此 Cmdlet 可讓您使用標籤、位置和已儲存的搜尋，為彈性的機器群組設定更新排程。
+`Az.Automation`模組現在支援使用 Azure PowerShell 來設定更新管理。 模組的[版本 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0)新增[AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) Cmdlet 的支援。 此 Cmdlet 可讓您使用標籤、位置和已儲存的搜尋，為彈性的機器群組設定更新排程。
 
 ## <a name="example-script"></a>範例指令碼
 

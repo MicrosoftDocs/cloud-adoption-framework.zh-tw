@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61398802202a33f9c514cf5a5b6a2528e7b662e4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ca635542f68a69d4e823b2917f69646074438550
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215988"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023520"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -79,13 +79,13 @@ Contoso 會按照下列方式完成移轉程序：
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **說明** | **成本**
+**服務** | **描述** | **成本**
 --- | --- | ---
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 服務來評定其 VMware VM。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate)可以免費使用，但可能會產生費用，取決於您決定用於評估和遷移的工具（第一方或 ISV）。
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
 [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 此資料庫是以開放原始碼 MySQL 伺服器引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫[定價](https://azure.microsoft.com/pricing/details/mysql)和擴充性選項。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -151,7 +151,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需要其他協助？**
 
-[瞭解如何](https://docs.microsoft.com/azure/migrate)設定 Azure Migrate：伺服器遷移工具。
+瞭解如何設定[Azure Migrate：伺服器遷移工具](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)。
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>步驟2：準備內部部署 VMware 以進行 Azure Migrate：伺服器遷移
 
@@ -167,7 +167,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 **需要其他協助？**
 
-- [瞭解如何](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration)準備 vm 以進行遷移。
+- 瞭解如何[準備 vm 以進行遷移](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration)。
 
 ## <a name="step-3-replicate-vm"></a>步驟3：複寫 VM
 
@@ -405,8 +405,8 @@ Contoso 管理員會利用 MySQL 工具，使用備份與還原來遷移資料�
 
 **需要其他協助？**
 
-- [瞭解如何](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)執行測試遷移。
-- [深入了解](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)將 VM 移轉至 Azure。
+- 瞭解如何[執行測試遷移](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
+- 瞭解如何[將 vm 遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)。
 
 ## <a name="review-the-deployment"></a>檢閱部署
 
@@ -438,9 +438,9 @@ Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安�
 
 針對商務持續性和災害復原，Contoso 會採取下列動作：
 
-- **保護資料的安全。** Contoso 會使用 Azure 備份服務來備份應用程式 VM 上的資料。 [深入了解](https://docs.microsoft.com/azure/backup/backup-overview)。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
+- **保護資料的安全。** Contoso 會使用[Azure 備份](https://docs.microsoft.com/azure/backup/backup-overview)服務來備份應用程式 VM 上的資料。 他們不需要設定資料庫的備份。 適用於 MySQL 的 Azure 資料庫會自動建立及儲存伺服器備份。 他們選擇對資料庫使用異地備援，所以資料庫可復原並已準備好用於生產。
 
-- **讓應用程式保持正常運作。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 [深入了解](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- **讓應用程式保持正常運作。** Contoso 會使用 Site Recovery，在 Azure 中將應用程式 VM 複寫至次要區域。 如需詳細資訊，請參閱[快速入門：設定 AZURE VM 的損毀修復至次要 azure 區域](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
