@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
+ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814285"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84149367"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：調整您的組織
 
@@ -70,7 +70,9 @@ ms.locfileid: "83814285"
 
 隨著採用需求的成長，創造平衡和結構的需求也在增長。 為了符合這些需求，公司通常會遵循成熟其組織結構的程式。
 
-![組織成熟度週期的圖表](../_images/ready/org-ready-maturity.png)
+觀看這段影片，以瞭解組織成熟度各個階段的一般小組結構。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
 
 ## <a name="step-5-align-raci-charts"></a>步驟5：對齊 RACI 圖表
 
