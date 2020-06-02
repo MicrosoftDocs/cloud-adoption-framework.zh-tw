@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 8c4387575f9cb9190327f2d644a60695809e185a
+ms.sourcegitcommit: 09a2cb66863f7f7fe69568c5ed007ab9f360b85e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815050"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84300989"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>成本管理專業領域中的風險承受度計量和指示器
 
@@ -49,7 +49,7 @@ ms.locfileid: "83815050"
 
 ## <a name="next-steps"></a>後續步驟
 
-使用[成本管理原則範本](./template.md)，記錄與目前雲端採用方案一致的計量和承受度指標。
+使用[成本管理專業領域範本](./template.md)，記錄與目前雲端採用方案一致的計量和承受度指標。
 
 請參閱範例成本管理原則作為起點，以開發您自己的原則，以解決符合您雲端採用方案的特定商務風險。
 
