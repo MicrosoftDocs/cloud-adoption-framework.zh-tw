@@ -7,15 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3711ea0ec99260456f15e0997fabe3a8381e15a1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 721f87e52d78cd05056d5abe402c4bba5607b10e
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222618"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786121"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-is-a-digital-estate"></a>什麼是數位資產？
 
 每家現代化公司都有某種形式的數位資產。 數位資產十分類似於實體資產，是對有形資產集合的抽象性參考。 在數位資產中，這些資產包括虛擬機器 (VM)、伺服器、應用程式、資料等等。 基本上，數位資產是指商業程序及營運所需的 IT 資產集合。

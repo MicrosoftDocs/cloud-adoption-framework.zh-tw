@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->當商務需求改變時，Azure 管理群組可讓您輕鬆重新組織管理階層與訂用帳戶群組指派。 不過，請記住階層中該群組下的所有訂用帳戶，都會繼承原則與套用至管理群組的角色指派。 如果您打算重新指派訂用帳戶之間的管理群組，請確定您已了解可能會造成任何原則和角色指派變更項目。 如需詳細資訊，請參閱 [Azure 管理群組文件](https://docs.microsoft.com/azure/governance/management-groups)。
+> 當商務需求改變時，Azure 管理群組可讓您輕鬆重新組織管理階層與訂用帳戶群組指派。 不過，請記住階層中該群組下的所有訂用帳戶，都會繼承原則與套用至管理群組的角色指派。 如果您打算重新指派訂用帳戶之間的管理群組，請確定您已了解可能會造成任何原則和角色指派變更項目。 如需詳細資訊，請參閱 [Azure 管理群組文件](https://docs.microsoft.com/azure/governance/management-groups)。
 
 ### <a name="governance-of-resources"></a>資源治理
 

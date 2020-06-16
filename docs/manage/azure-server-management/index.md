@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ae03aa1186aab3503f8d5397e5d397f0fa086b26
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426551"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785441"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure 伺服器管理服務的概觀
 
@@ -25,8 +25,6 @@ Microsoft 雲端採用架構這一節的內容提供可行和規定方案，用�
 為了簡單起見，我們已將本指引分類為三個階段：
 
 ![將 Azure 伺服器管理套件上線的三個階段](./media/operations-stages.png)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-use-azure-server-management-services"></a>為何要使用 Azure 伺服器管理服務？
 

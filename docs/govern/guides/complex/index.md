@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 257b915e579136e64ae88262a3debdb0b2dbb527
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bc5437d22db979ccb8881c4ac8a2b60f104536f3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220170"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786532"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -64,8 +64,6 @@ ms.locfileid: "83220170"
 - [任務關鍵性應用程式的資源設定](./resource-consistency-improvement.md)
 - [成本管理控制](./cost-management-improvement.md)
 - [累加式多重雲端改進的控制項](./multicloud-improvement.md)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-does-this-guidance-provide"></a>本指南提供哪些內容？
 

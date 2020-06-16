@@ -7,15 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5284af93b76ae2396e753914264861492b65356f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d298be02fcb27b0f7165d36c045455decc3a8908
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218759"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788127"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
 最成功的轉換過程始於業務成果。 採用雲端可能是一個昂貴又耗時的工作。 促進 IT 和其他業務領域適當等級的支援，是成功的重要關鍵。 此文章系列旨在協助客戶識別簡明、已定義，並推動可觀察的結果或業務績效變化的業務成果，並由特定量值支援。

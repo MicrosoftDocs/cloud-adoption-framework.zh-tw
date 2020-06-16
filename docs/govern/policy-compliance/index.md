@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 239e006b7d4c8165e55bc3ba9bd921bc3f4e0842
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755232"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786631"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>準備公司的雲端 IT 原則
 
 雲端治理是在一段時間內持續進行採用工作的成果，因為轉換不會在一夕之間發生。 使用快速積極的方法，嘗試在解決關鍵公司原則變更之前提供完整雲端治理，這樣很少會產生想要的結果。 相反地，我們建議漸進的方法。
