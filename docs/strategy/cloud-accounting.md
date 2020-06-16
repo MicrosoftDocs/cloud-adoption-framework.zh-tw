@@ -7,16 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e011a0a9e2b921f1e7c3ac86a96917a2953ddcbb
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216226"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786172"
 ---
 <!-- cSpell:ignore CIOs -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>什麼是雲端帳戶處理？
 

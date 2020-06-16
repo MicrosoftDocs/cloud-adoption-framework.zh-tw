@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d7aa0f388f68e876569ef2e8c3638b77af8ed033
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f5aa878292acc04d70acb88a7c885ece34fe32a3
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755739"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800107"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 
@@ -20,11 +20,11 @@ ms.locfileid: "83755739"
 
 ![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
 
-在雲端中，基礎結構是程式碼的輸出。 結構良好、已測試和已驗證的程式碼會產生一個可行的登陸區域。 根據[登陸區域的定義](../landing-zone/index.md)，「登陸區域」是用來裝載工作負載的環境，透過程式碼布建前。 其中包括使用已定義的一組雲端服務的基本功能，以及最佳作法，讓您**設定成功**。」 本文概述使用測試導向開發來滿足該定義最後一部分的一種方法，同時滿足品質、安全性、作業和治理需求。
+在雲端中，基礎結構是程式碼執行的輸出。 結構良好、已測試和已驗證的程式碼會產生一個可行的登陸區域。 [登陸區域](../landing-zone/index.md)是用來裝載工作負載的環境，透過程式碼布建前。 其中包括使用一組已定義的雲端服務的基本功能，以及為您成功設定的最佳作法。 本指南說明使用測試導向開發來完成該定義最後部分的方法，同時滿足品質、安全性、作業和治理需求。
 
 這種方法可用來在早期開發期間符合簡單的功能要求。 稍後在雲端採用生命週期中，此程式可以用來滿足安全性、作業、治理或合規性需求。
 
-## <a name="definition-of-done"></a>對「完成」  的定義
+## <a name="definition-of-done"></a>對「完成」的定義
 
 「設定成功」是主觀語句。 此聲明可讓雲端平臺小組在登陸區域開發或重構工作時，不需要採取任何動作的資訊。 這種不清楚的情況，可能會導致雲端環境中遺漏預期和弱點。 在重構或擴充任何登陸區域之前，雲端平臺小組應針對每個登陸區域的「完成定義」尋求清楚的瞭解。
 

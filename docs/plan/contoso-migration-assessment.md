@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: edb3ba0fe7a32b23c34c60c0673eff87d5664d81
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862597"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787668"
 ---
 <!-- docsTest:disable TODO -->
 
-<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
+<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
 
@@ -33,8 +33,8 @@ Contoso 在考慮遷移至 Azure 時，該公司需要進行技術和財務方�
 
 | 應用程式名稱 | 平台 | 應用程式層 | 詳細資料 |
 | --- | --- | --- | --- |
-| SmartHotel360 <br><br> (管理 Contoso 旅遊需求) | 在含有 SQL Server 資料庫的 Windows 上執行 | 兩層式應用程式。 前端 ASP.NET 網站在一個 VM (**WEBVM**) 上執行，SQL Server 在另一個 VM (**SQLVM**) 上執行。 | VM 為 VMware，其在 vCenter Server 所管理的 ESXi 主機上執行。 <br><br> 您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360) 下載應用程式範例。 |
-| osTicket <br><br> (Contoso 服務台應用程式) | 在含有 MySQL PHP (LAMP) 的 Linux/Apache 上執行 | 兩層式應用程式。 前端 PHP 網站在一個 VM (**OSTICKETWEB**) 上執行，MySQL 資料庫在另一個 VM (**OSTICKETMYSQL**) 上執行。 | 客戶服務應用程式會使用該應用程式來追蹤內部員工和外部客戶的問題。 <br><br> 您可以從 [GitHub](https://github.com/osTicket/osTicket) 下載範例。 |
+| SmartHotel360 <br><br> (管理 Contoso 旅遊需求) | 在含有 SQL Server 資料庫的 Windows 上執行 | 兩層式應用程式。 前端 ASP.NET 網站會在一個 VM （）上執行 `WEBVM` ，而 SQL Server 會在另一個 vm 上執行（ `SQLVM` ）。 | Vm 會在由 vCenter Server 管理的 VMware ESXi 主機上執行。 <br><br> 您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360) 下載應用程式範例。 |
+| osTicket <br><br> (Contoso 服務台應用程式) | 在含有 MySQL PHP (LAMP) 的 Linux/Apache 上執行 | 兩層式應用程式。 前端 PHP 網站會在一個 VM （）上執行 `OSTICKETWEB` ，而 MySQL 資料庫會在另一個 vm 上執行（ `OSTICKETMYSQL` ）。 | 客戶服務應用程式會使用該應用程式來追蹤內部員工和外部客戶的問題。 <br><br> 您可以從 [GitHub](https://github.com/osTicket/osTicket) 下載範例。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -197,7 +197,7 @@ Contoso 現在可以執行評估，以便針對 SmartHotel360 應用程式分析
     ![Data Migration Assistant - 功能建議報告](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso 應針對所有 SQL Server 資料庫[啟用透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。 相較於裝載在內部部署環境時，當資料庫位於雲端時，這一點會更加重要。 請只在移轉後才啟用透明資料加密。 如果透明資料加密已啟用，Contoso 就必須將憑證或非對稱金鑰移至目標伺服器的 master 資料庫。 了解如何[將受到透明資料加密保護的資料庫移到其他 SQL Server 執行個體](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
+    > Contoso 應針對所有 SQL Server 資料庫[啟用透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。 相較於裝載在內部部署環境時，當資料庫位於雲端時，這一點會更加重要。 請只在移轉後才啟用透明資料加密。 如果已啟用透明資料加密，則 Contoso 必須將憑證或非對稱金鑰移至 `master` 目標伺服器的資料庫。 了解如何[將受到透明資料加密保護的資料庫移到其他 SQL Server 執行個體](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
 
 3. Contoso 可以匯出 JSON 或 CSV 格式的評量。
 
@@ -281,14 +281,13 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 在部署 VM 之前，Contoso 會確認 OVA 檔案是安全的：
 
 1. 在存放所下載檔案的機器上，Contoso 會開啟系統管理員命令提示字元視窗。
-
 2. Contoso 會執行下列命令以產生 OVA 檔案的雜湊：
 
-    `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
+    `C:\> CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
-    **範例：**
+    **範例︰**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. 產生的雜湊應符合[評估 VMware vm 以進行遷移](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)教學課程的[驗證安全性](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)一節中所列的雜湊值。
 
@@ -315,7 +314,6 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 現在，Contoso 會執行收集器以探索 VM。 收集器目前只支援以**英文 (美國)** 作為作業系統語言和收集器介面語言。
 
 1. 在 vSphere 用戶端主控台中，Contoso 會選取 [開啟主控台]****。 Contoso 會指定接受收集器 VM 的授權條款和密碼喜好設定。
-
 2. Contoso 會選取桌面上的 [Microsoft Azure 設備組態管理員]**** 捷徑。
 
     ![vSphere 用戶端主控台 - 收集器捷徑](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
@@ -329,7 +327,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
     ![Azure Migrate 收集器 - 確認必要條件](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-5. 登入 **Azure** 帳戶，然後選取您稍早建立的訂用帳戶和 Azure Migrate 專案。 也請輸入**設備**的名稱，以便您可以在 Azure 入口網站中識別。
+5. 登入您的 Azure 帳戶，然後選取您稍早建立的訂用帳戶和遷移專案。 也請輸入**設備**的名稱，以便您可以在 Azure 入口網站中識別。
 
 6. 在 [指定 vCenter Server 詳細資料]**** 中，Contoso 會輸入 vCenter Server 執行個體的名稱 (FQDN) 或 IP 位址，以及用於探索的唯讀認證。
 
@@ -368,10 +366,10 @@ Contoso 為了檢視其所要評定 VM 之間的相依性，會在應用程式 V
 1. 在 [機器]**** 中，Contoso 會選取機器。 在 [相依性]**** 資料行中，Contoso 會選取 [需要安裝]****。
 
 2. 在 [探索機器]**** 窗格中，Contoso 會：
-    - 下載每個 Windows VM 的 Microsoft Monitoring Agent （MMA）和 Microsoft Dependency Agent。
-    - 下載每個 Linux VM 的 MMA 和 Dependency agent。
+    - 下載每個 Windows VM 的 Microsoft Monitoring Agent 和 Microsoft Dependency Agent。
+    - 下載每個 Linux VM 的 Microsoft Monitoring Agent 和 Microsoft Dependency Agent。
 
-3. Contoso 會複製工作區識別碼和金鑰。 Contoso 在安裝 MMA 時，需要工作區識別碼和金鑰。
+3. Contoso 會複製工作區識別碼和金鑰。 Contoso 在安裝 Microsoft Monitoring Agent 時需要工作區識別碼和金鑰。
 
     ![代理程式下載](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -395,13 +393,13 @@ Contoso 會在每部 VM 上執行安裝。
 
 5. 在 [準備安裝]**** 中，Contoso 會安裝 MMA。
 
-#### <a name="install-the-dependency-agent-on-windows-vms"></a>在 Windows VM 上安裝 Dependency Agent
+#### <a name="install-the-microsoft-dependency-agent-on-windows-vms"></a>在 Windows Vm 上安裝 Microsoft Dependency Agent
 
-1. Contoso 會按兩下所下載的 Dependency agent。
+1. Contoso 會按兩下所下載的代理程式。
 
 2. Contoso 會接受授權條款並等候安裝完成。
 
-    ![Dependency Agent 安裝程式-安裝](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
+    ![安裝 Microsoft Dependency Agent](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>在 Linux VM 上安裝代理程式
 
@@ -413,11 +411,11 @@ Contoso 會在每部 VM 上執行安裝。
 
     `sudo apt-get install python-ctypeslib`
 
-1. Contoso 必須執行此命令，以 root 身分安裝 MMA 代理程式。 為了變成 root 身分，Contoso 會執行下列命令，然後輸入 root 密碼：
+2. Contoso 必須執行此命令，以 root 身分安裝 MMA 代理程式。 為了變成 root 身分，Contoso 會執行下列命令，然後輸入 root 密碼：
 
     `sudo -i`
 
-1. Contoso 會安裝 MMA：
+3. Contoso 會安裝 MMA：
 
     - Contoso 會在命令中輸入工作區識別碼和金鑰。
     - 命令是針對 64 位元。
@@ -426,13 +424,13 @@ Contoso 會在每部 VM 上執行安裝。
 
         `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
-#### <a name="install-the-dependency-agent-on-linux-vms"></a>在 Linux VM 上安裝 Dependency Agent
+#### <a name="install-the-microsoft-dependency-agent-on-linux-vms"></a>在 Linux Vm 上安裝 Microsoft Dependency Agent
 
-安裝 MMA 之後，Contoso 會在 Linux Vm 上安裝 Dependency agent：
+安裝 Microsoft Monitoring Agent 之後，Contoso 會在 Linux Vm 上安裝 Microsoft Dependency Agent：
 
-1. 相依性代理程式會使用 Installdependencyagent-linux64.bin (（具有自我解壓縮二進位檔的 shell 腳本）安裝在 Linux 電腦上。 Contoso 會使用 sh 來執行檔案，或對檔案本身新增執行權限。
+1. Microsoft Dependency Agent 安裝在 Linux 電腦上，方法是使用 `InstallDependencyAgent-Linux64.bin` 具有自我解壓縮二進位檔的 shell 腳本。 Contoso 會使用執行檔案 `sh` ，或將執行許可權新增至檔案本身。
 
-2. Contoso 會以 root 身分安裝 Linux Dependency agent：
+2. Contoso 會以 root 身分安裝 Linux dependency agent：
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -457,8 +455,7 @@ Contoso 現在可以確認機器相依性並建立群組。 接著，會執行�
 
     ![Azure Migrate - 檢視群組相依性](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-4. Contoso 會選取要新增至群組的 VM (SQLVM 和 WEBVM)。 Contoso 會按住 Ctrl 鍵，同時按一下以選取多個 VM。
-
+4. Contoso 會選取要新增至群組的 VM (SQLVM 和 WEBVM)。 Contoso 會保留 `Ctrl` 金鑰，同時選取多個 vm。
 5. Contoso 會選取 [建立群組]****，然後輸入名稱 (**smarthotelapp**)。
 
     > [!NOTE]
@@ -468,7 +465,7 @@ Contoso 現在可以確認機器相依性並建立群組。 接著，會執行�
 
 1. 在 [群組]**** 中，Contoso 會開啟群組 (**smarthotelapp**)，然後選取 [建立評量]****。
 
-    ![Azure Migrate - 建立評估](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
+    ![Azure Migrate：建立評量](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
 2. 為了查看評量，Contoso 會選取 [**管理**  >  **評**量]。
 

@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4635d92760d2a1ae8ceff2caee683528c82b06b3
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756493"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799988"
 ---
 <!-- cSpell:ignore SIEM -->
 
 # <a name="improve-landing-zone-security"></a>改善登陸區域安全性
 
-當工作負載或其主控的登陸區域需要存取任何敏感性資料或重要的系統時，請務必保護資料和資產。 藉由展開或重整登陸區域來考慮提升的安全性需求，改善登陸區域安全性是[以測試導向的開發方法為基礎來進行登陸](./test-driven-development.md)區域。
+當裝載它的工作負載或登陸區域需要存取任何敏感性資料或重要的系統時，請務必保護資料和資產。 藉由展開或重整登陸區域來考慮提升的安全性需求，改善登陸區域安全性是[以測試導向的開發方法為基礎來進行登陸](./test-driven-development.md)區域。
 
 ## <a name="landing-zone-security-best-practices"></a>登陸區域安全性最佳作法
 

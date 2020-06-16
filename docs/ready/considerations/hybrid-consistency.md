@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e70a448cb96f7e6a790731cd558627e03a543b49
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9c833689b183f1817c8cb403dc1098330b899df7
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756578"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800022"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -64,9 +64,10 @@ Azure Stack 透過兩種部署選項來提供現代化：
 
 您可以使用完整的 Azure 生態系統來加速 Azure Stack 的計畫：
 
-<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
+<!-- docsTest:ignore "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
+<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
 
 - Azure 可確保 Azure 認證的大部分應用程式和服務都能在 Azure Stack 上執行。 有數個 Isv 將其解決方案延伸到 Azure Stack。 這些 Isv 包含 Bitnami、Docker、kemp 技術、pivotal cloud foundry、Red Hat enterprise Linux 和 suse Linux。
 - 您可以選擇讓 Azure Stack 提供這些解決方案，並以完全受控服務的方式運作。 有數個合作夥伴會在 Azure 中提供受控服務供應專案，而且很快就會 Azure Stack。 這些合作夥伴包括 tieto、Yourhosting、Revera、Pulsant 和 ntt。 這些合作夥伴透過雲端解決方案提供者（CSP）計畫，為 Azure 提供受控服務。 他們正在擴充其供應專案，以包含混合式解決方案。
 - 作為完整且完全受控的混合式雲端解決方案範例，Avanade 提供了一套全功能的供應專案。 其中包含雲端轉換服務、軟體、基礎結構、安裝和設定，以及進行中的受控服務。 如此一來，客戶就可以像使用 Azure 一樣地取用 Azure Stack。
-- 提供者可為客戶建立端對端的 Azure 解決方案，以協助加速應用程式現代化計畫。 他們提供深度的 Azure 技能集、領域和產業知識，以及流程專業知識，例如 DevOps。 每個 Azure Stack 雲端都是提供者設計解決方案和潛在客戶和影響系統部署的機會。 他們也可以自訂包含的功能並提供操作活動。 提供者的範例包括 Avanade、dxc、Dell emc 服務、infront 諮詢小組、hpe Pointnext 和 pwc （先前稱為 PricewaterhouseCoopers）。
+- 提供者可為客戶建立端對端的 Azure 解決方案，以協助加速應用程式現代化計畫。 他們提供深度的 Azure 技能集、領域和產業知識，以及流程專業知識，例如 DevOps。 每個 Azure Stack 雲端都是提供者設計解決方案和潛在客戶和影響系統部署的機會。 他們也可以自訂包含的功能並提供操作活動。 提供者的範例包括 Avanade、DXC、Dell EMC 服務、Infront 諮詢小組、HPE Pointnext 和 PWC （先前稱為 PricewaterhouseCoopers）。

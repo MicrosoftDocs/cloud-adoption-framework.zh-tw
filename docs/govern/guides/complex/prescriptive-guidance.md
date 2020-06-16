@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dcd7c58a1e89539dcec62cf63615c4fb88d9fe08
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 75b912d908789349fa6479f21cda6ebeed3f02ca
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754894"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786393"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雜企業的治理指南：說明的最佳做法
 
@@ -76,7 +76,7 @@ ms.locfileid: "83754894"
 - Azure 原則的廣泛執行可能會超過小組的時間承諾，而且目前可能不會提供很大的價值。 應建立簡單的預設原則並套用至每個管理群組，以強制執行少量的目前雲端治理原則聲明。 此原則會定義特定治理需求的實作。 然後，這些實作可以套用到所有已部署的資產上。
 
 >[!IMPORTANT]
->每當資源群組中的資源不再共用相同的生命週期時，就應該將它移到另一個資源群組。 範例包括一般資料庫和網路元件。 雖然它們可以服務開發中的應用程式，但它們也可以提供其他用途，因此應該存在於其他資源群組中。
+> 每當資源群組中的資源不再共用相同的生命週期時，就應該將它移到另一個資源群組。 範例包括一般資料庫和網路元件。 雖然它們可以服務開發中的應用程式，但它們也可以提供其他用途，因此應該存在於其他資源群組中。
 
 ### <a name="resource-tagging"></a>資源標記
 
@@ -90,7 +90,7 @@ ms.locfileid: "83754894"
   - SLA
   - 環境
   - 應用程式原型
-  - 應用程式
+  - Application
   - 應用程式擁有者
 - 這些值連同與已部署的資產相關聯的 Azure 管理群組和訂用帳戶，將會推動治理、作業和安全性決策。
 

@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d469df5110822024f93c261e9ec63dbe0f143ca2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 077f6f36fba1b8267fecf6ce3926aa2dd9ae8e1b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862291"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786866"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="conduct-a-cloud-policy-review"></a>進行雲端原則審查
 
 雲端原則檢閱是在雲端邁向[治理成熟度](../index.md)的第一步。 此流程的目標是要將現有的公司 IT 原則現代化。 完成後，更新的原則會針對雲端式資源提供對等層級的風險管理。 本文說明雲端原則檢閱的流程及其重要性。

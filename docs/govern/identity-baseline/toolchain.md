@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a5dc85aba4b5bd37bc65682bd039ecf57658624
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 71d813526d739984390fc671c44245b21ce078f1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862325"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786240"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure 中的身分識別基準工具
 
@@ -55,15 +55,13 @@ ms.locfileid: "83862325"
 <!-- markdownlint-disable MD033 -->
 <!-- docsTest:ignore UserPrincipalName SamAccountName -->
 
-<!-- TODO: Fix link for Azure Active Directory admin center -->
-
 | 考量 | 密碼雜湊同步處理 + 無縫 SSO | 傳遞驗證 + 無縫 SSO | 與 AD FS 同盟 |
 | --- | --- | --- | --- |
 | 驗證的發生位置？ | 在雲端 | 在雲端中，安全密碼驗證與內部部署驗證代理程式交換之後 | 內部部署 |
 | 高於佈建系統的內部部署伺服器需求是什麼：Azure AD Connect？ | None | 每個額外的驗證代理程式需要 1 部伺服器 | 2 部以上的 AD FS 伺服器 <br><br> 周邊/DMZ 網路中需要 2 部以上的 WAP 伺服器 |
 | 在布建系統以外的內部部署網際網路和網路需求有哪些？ | None | 執行驗證代理程式之伺服器的[輸出網際網路存取](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) | 周邊網路中 WAP 伺服器的[輸入網際網路存取](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) <br><br> 來自周邊 WAP 伺服器對 AD FS 伺服器的輸入網際網路存取 <br><br> 網路負載平衡 |
-| 是否有 SSL 憑證需求？ | No | 否 | 是 |
-| 是否有健康情況監視解決方案？ | 不需要 | [Azure Active Directory 系統管理中心](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)提供的代理程式狀態 | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
+| 是否有 SSL 憑證需求？ | 否 | 否 | 是 |
+| 是否有健康情況監視解決方案？ | 不需要 | [Azure Active Directory 系統管理中心](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication#general-issues)提供的代理程式狀態 | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
 | 使用者是否可以從公司網路中已加入網域的裝置中取得雲端資源的單一登入？ | 是，使用[無縫 SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | 是，使用[無縫 SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | 是 |
 | 支援何種登入類型？ | UserPrincipalName + 密碼 <br><br>  使用[無縫 SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)的整合式 Windows 驗證 <br><br> [替代登入識別碼](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom) | UserPrincipalName + 密碼 <br><br> 使用[無縫 SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)的整合式 Windows 驗證 <br><br> [替代登入識別碼](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq) | UserPrincipalName + 密碼 <br><br> SamAccountName + 密碼 <br><br> 整合式 Windows 驗證 <br><br> [憑證和智慧卡驗證](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication) <br><br> [替代登入識別碼](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) |
 | 是否支援 Windows Hello 企業版？ | [金鑰信任模型](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [使用 Intune 的憑證信任模型](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [金鑰信任模型](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [使用 Intune 的憑證信任模型](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [金鑰信任模型](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [憑證信任模型](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |

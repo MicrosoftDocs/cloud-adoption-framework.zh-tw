@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54ea9341cfcd5064a6cae737f302ef03736f21af
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752854"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786087"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model"></a>透過音效作業模型讓客戶成功
 
@@ -45,7 +45,7 @@ ms.locfileid: "83752854"
 
 ![共用架構原則](../_images/shared-principles.png)
 
-上述原則會在[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)之間共用， [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)，以及[Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案。
+這些原則會在[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、Microsoft Azure 架構[完善的架構](https://docs.microsoft.com/azure/architecture/framework)，以及[Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案之間共用。
 
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)會評估跨解決方案、工作負載和完整組合之個別資產的原則。
 - [Azure 架構中心](https://docs.microsoft.com/azure/architecture)會套用這些原則來開發和管理特定的技術解決方案。

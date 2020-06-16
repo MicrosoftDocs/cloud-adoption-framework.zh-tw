@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 49ec30f5a623e3be0c06f4c019669bfd9d3e6006
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219881"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786257"
 ---
 # <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>身分識別基準專業領域中的動機和業務風險
 
 本文討論客戶通常會在雲端治理策略中採用身分識別基準專業領域的原因。 它也提供數個衍生原則聲明的業務風險範例。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>相關性
 

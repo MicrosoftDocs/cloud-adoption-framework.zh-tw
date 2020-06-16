@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 712cbc1338f1dce6fce2d724383233f84477baf8
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621427"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799971"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -36,9 +36,9 @@ ms.locfileid: "83621427"
 
 ## <a name="overview"></a>概觀
 
-![中樞和輪輻網路拓撲的範例][1]
+![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
 
-如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則（圖表中的「虛擬網路中樞」），或適用于大規模分支對分支和分支對 Azure 通訊的虛擬 WAN 類型（在圖表中為「虛擬 WAN」）。
+如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則（ `VNet hub` 在圖中標示為），或是以 Azure 虛擬 WAN （ `Virtual WAN` 在圖表中標示為）的設計，適用于大規模分支對分支和分支對 Azure 的通訊。
 
 中樞是中央網路區域，可控制和檢查區域之間的輸入或輸出流量：網際網路、內部部署和輪輻。 中樞和輪輻拓撲可讓您的 IT 部門以有效的方式在中央位置強制執行安全性原則。 此外也可降低設定錯誤和暴露的可能性。
 
@@ -63,9 +63,9 @@ ms.locfileid: "83621427"
 
 單一中樞和輪輻實現可以相應增加至大量輪輻。 但如同每個 IT 系統的共同問題，平台有其限制。 中樞部署會繫結至具有限制的特定 Azure 訂用帳戶。 其中一個範例是虛擬網路對等互連的最大數目。 如需詳細資訊，請參閱[Azure 訂用帳戶和服務限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
-如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、虛擬 WAN 或站對站 VPN，將一或多個 Azure 區域中的多個中樞互相連線。
+如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、Azure 虛擬 WAN 或站對站 VPN，將一個或多個 Azure 區域中的多個中樞相互連接。
 
-![中樞和輪輻叢集][2]
+![中樞和輪輻叢集](../../_images/azure-best-practices/network-hub-spokes-cluster.png)
 
 導入多個中樞會增加系統的成本和管理額外負荷。 此狀況只能從使用者效能或災害復原的延展性、系統限制或備援和區域複寫來調整。 在需要多個中樞的案例中，所有中樞都應該致力於提供一組相同的易操作服務。
 
@@ -77,12 +77,6 @@ ms.locfileid: "83621427"
 
 此案例的常見範例是，應用程式處理伺服器位於一個輪輻 (或虛擬網路) 中。 資料庫則部署在多個輪輻 (或虛擬網路) 中。 在此情況下，可以輕易地透過虛擬網路對等互連將輪輻互相連線，而避免透過中樞傳輸。 解決方法是執行仔細的架構和安全性審查，以確保略過中樞不會略過可能只存在於中樞的重要安全性或審核點。
 
-![連線到中樞及彼此連線的輪輻][3]
+![連線到中樞及彼此連線的輪輻](../../_images/azure-best-practices/network-spoke-to-spoke.png)
 
 支點也可以與作為中樞的支點互相連接。 這種方法會建立雙層階層：較高層級的輪輻 (層級 0) 會變成階層中較低輪輻 (層級 1) 的中樞。 中樞和輪輻執行的輪輻需要將流量轉送到中央中樞，讓流量可以傳輸至其在內部部署網路或公用網際網路中的目的地。 具有兩種中樞層級的架構會引進複雜的路由，以移除簡單中樞和輪輻關聯性的優點。
-
-<!-- images -->
-
-[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "中樞和輪輻的高層級範例"
-[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "中樞和輪輻的叢集"
-[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "輪輻到輪輻"

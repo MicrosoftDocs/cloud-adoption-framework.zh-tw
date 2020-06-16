@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3ce9fd30d23bfc72121f1dffc9dbf8edd6b228b6
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755942"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786502"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>資源一致性專業領域中的動機和業務風險
 
 本文討論客戶通常會在雲端治理策略中採用資源一致性專業領域的原因。 它也提供幾個能驅使原則聲明之潛在商務風險的範例。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>相關性
 

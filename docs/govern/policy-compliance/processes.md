@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fac64038c805eed0566554dd42551b32f4294900
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224182"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786223"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="establish-policy-adherence-processes"></a>建立原則遵循流程
 
 建立您的雲端原則聲明並且草擬設計指南之後，您必須建立策略以確保您的雲端部署符合原則需求。 此策略必須包含雲端治理小組進行中的審查和通訊程式、建立原則違規何時需要採取行動的準則，以及定義自動化監視和合規性系統的需求，以偵測違規和觸發補救動作。
@@ -47,7 +45,7 @@ ms.locfileid: "83224182"
 
 規劃評估新的潛在風險，並視需要更新原則聲明和設計指南。 與 IT 人員和工作負載小組合作，持續評估新的 Azure 功能和服務。 同時排程五個治理專業領域的定期審核週期，以確保原則是最新且符合規範。
 
-### <a name="education"></a>Education
+### <a name="education"></a>教育訓練
 
 原則合規性需要 IT 人員和開發人員了解影響他們責任領域的原則需求。 規劃投入資源以記錄決策和需求，並且對所有相關小組教育支援您的原則需求的設計指南。
 

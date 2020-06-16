@@ -7,15 +7,13 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221479"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84784982"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="first-cloud-adoption-project"></a>第一個雲端採用專案
 
 有一個學習曲線和一個與雲端採用規劃相關的時間承諾。 即使是經驗豐富的小組，適當的規劃也會花時間：協調專案關係人的時間、收集和分析資料的時間、驗證長期決策的時間，以及調整人員、程式和技術的時間。 在最具生產力的採用成果中，規劃會與採用平行成長，並隨著每個版本和每個工作負載遷移至雲端而改善。 請務必瞭解雲端採用方案與雲端採用策略之間的差異。 您需要妥善定義的策略，以促進並引導雲端採用方案的執行。

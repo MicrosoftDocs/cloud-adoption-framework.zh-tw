@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 101c4a962583f522bedc8e6fa5d99587141871c1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216158"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84784999"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -30,14 +30,11 @@ ms.locfileid: "83216158"
 
 **ISO 27001 合規性藍圖：** 對於必須遵守 ISO 合規性標準的客戶， [iso 27001 共用服務藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)可做為更有效的 MVP，以在稍早的反復程式中產生更豐富的治理條件約束。 [ISO 27001 App Service 環境/SQL Database 範例](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會詳述可對應控制項並為應用程式環境部署通用架構的藍圖。 當其他合規性藍圖發行時，我們也會在這裡提供相關參考。
 
-<!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
-
-**Azure 虛擬資料中心：** 可能需要更健全的治理起點。 在這類情況下，請考慮 [Azure 虛擬資料中心 (VDC)](../../reference/vdc.md)。 在進行企業規模的採用工作期間，特別是超過 10,000 個資產的工作，我們通常會建議您使用此方法。 當下列任一項都需要時，這也是複雜治理案例的預設選擇：廣泛的協力廠商合規性需求、深度網域專業知識，或與成熟的 IT 治理原則和合規性需求的同位檢查。
+**CAF 企業規模登陸區域：** 可能需要更健全的治理起點。 在這種情況下，請考慮[CAF 的企業規模登陸區域](../../ready/enterprise-scale/index.md)。 CAF 企業級的登陸區域方法著重于擁有長期目標的採用小組（在24個月內），以在雲端裝載1000以上的資產（應用程式、基礎或資料資產）。 CAF 企業級登陸區域是針對這些較大型雲端採用工作的複雜治理案例所做的選擇。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>可供完成必要條件的合作關係選項
 
-**Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或虛擬資料中心選項一致，以確保最適當的治理或合規性模型。 使用[Secure Cloud Insights （SCI）](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)解決方案供應專案，在 Azure 中建立客戶部署的資料驅動圖片，並在識別現有部署架構的優化時驗證客戶的 Azure 實現成熟度，移除治理安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
+**Microsoft 服務：** Microsoft 服務提供的解決方案供應專案可與雲端採用架構治理模型、合規性藍圖或 CAF 企業級登陸區域選項保持一致，以確保最適當的治理或合規性模型。 請使用[安全雲端深入解析 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) 解決方案供應項目以建立客戶在 Azure 中部署的資料驅動圖，並在識別現有部署架構的最佳化時驗證客戶的 Azure 實作成熟度，以移除治理的安全性和可用性風險。 根據客戶深入解析，您應該從下列方法開始：
 
 - **雲端基礎：** 使用[混合式雲端基礎（HCF）](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)解決方案供應專案，建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實作包含共用服務和 IaaS 工作負載的最簡可行產品。
 - **雲端現代化：** 使用[雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)解決方案供應專案做為將應用程式、資料和基礎結構移至企業級雲端的完整方法，以及在雲端部署之後優化和現代化。

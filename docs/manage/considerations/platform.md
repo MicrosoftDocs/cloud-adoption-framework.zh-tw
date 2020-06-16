@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d9c493436196a8cf95453d1822dfa43df0fa6b5c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2896706d9035cece14b464c95296a651b223d34a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755983"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785271"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 
@@ -47,15 +47,15 @@ IT 組合中的資產快速研究著重于所支援工作負載的模式。 在�
 
 ## <a name="define-your-own-platform-operations"></a>定義您自己的平臺作業
 
-雖然管理工具和程式有助於改善平臺作業，但這通常不足以達到穩定性和可靠性所需的狀態。 真正的平臺作業需要專注于架構品質的支柱。 當平臺在營運方面有更深入的投資時，應該考慮下列五個支柱，然後平臺才會成為任何服務類別目錄的一部分：
+雖然管理工具和程式有助於改善平臺作業，但這通常不足以達到穩定性和可靠性所需的狀態。 真正的平臺營運需要專注于卓越的架構要素。 當平臺在營運方面有更深入的投資時，請考慮下列五個支柱，平臺才會成為任何服務類別目錄的一部分：
 
-- 擴充**性：** 系統處理負載增加的能力。
-- **可用性：** 系統運作和運作的時間百分比。
-- **復原：** 系統從失敗中復原並繼續運作的能力。
-- **管理：** 讓系統在生產環境中執行的工作處理程式。
+- **成本優化：** 管理成本，將傳遞的價值最大化。
+- **卓越的營運：** 依照操作程式，讓系統在生產環境中執行。
+- **效能效率：** 調整系統以適應負載中的變更。
+- **可靠性：** 從失敗中復原並繼續運作的設計系統。
 - **安全性：** 保護應用程式和資料免于遭受威脅。
 
-[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/guide/pillars)提供評估特定工作負載以遵循這些要素的方法，以改善整體作業。 這些支柱可以同時套用至平臺作業和工作負載作業。
+[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)提供評估特定工作負載以遵循這些要素的方法，以改善整體作業。 這些支柱可以同時套用至平臺作業和工作負載作業。
 
 ## <a name="get-started-with-specific-platforms"></a>開始使用特定平臺
 

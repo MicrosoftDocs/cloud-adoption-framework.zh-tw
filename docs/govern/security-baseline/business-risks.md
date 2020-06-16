@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5f4feaf4bbc9ffb78d58a86c42dcd28b4eb785c7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755863"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785616"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>安全性基準專業領域中的動機和業務風險
 
 本文討論客戶通常會在雲端治理策略中採用安全性基準專業領域的原因。 它也提供幾個能驅使原則聲明之潛在商務風險的範例。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>相關性
 
@@ -32,7 +30,7 @@ ms.locfileid: "83755863"
 安全性基準專業領域涵蓋了您可以採取的公司原則和手動程序，以保護您的雲端部署免受安全性風險的影響。
 
 > [!NOTE]
->雖然瞭解安全性基準專業領域內容中的身分[識別基準專業領域](../identity-baseline/index.md)，以及其與存取控制之間的關係，但[雲端治理的五個專業領域](../index.md)會將它視為個別的專業領域。
+> 雖然瞭解安全性基準專業領域內容中的身分[識別基準專業領域](../identity-baseline/index.md)，以及其與存取控制之間的關係，但[雲端治理的五個專業領域](../index.md)會將它視為個別的專業領域。
 
 ## <a name="business-risk"></a>業務風險
 

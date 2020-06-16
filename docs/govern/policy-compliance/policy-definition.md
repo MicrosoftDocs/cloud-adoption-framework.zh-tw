@@ -7,18 +7,16 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 377ee74df593438b9bfda6ad5a2e780051d6f9b7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399418"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786614"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
 一旦您為組織的雲端轉型旅程分析已知風險和相關風險承受度，下一步就是建立可明確解決這些風險的原則，並定義在可能的情況下補救它們所需的步驟。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-corporate-it-policy-become-cloud-ready"></a>公司 IT 原則如何成為雲端就緒？
 
@@ -35,8 +33,6 @@ _圖 1：公司治理和治理專業領域。_
 雲端採用架構的不同之處在于購買週期，而且可以啟用真實的轉換。 因為不會有大量的資本支出取得需求，工程師可以更快開始進行實驗和採用。 在大部分公司文化中，消除採用的資本支出障礙可能導致回饋循環、有機成長及漸進執行變得緊迫。
 
 雲端採用的移轉，需要是受治理的移轉。 在許多組織中，公司原則轉換透過漸進原則變更和自動化那些變更強制執行 (與雲端服務提供者一同定義的新能力)，而達到改善的治理和更高的遵守率。
-
-<!-- markdownlint-enable MD026 -->
 
 ## <a name="review-existing-policies"></a>檢閱現有原則
 

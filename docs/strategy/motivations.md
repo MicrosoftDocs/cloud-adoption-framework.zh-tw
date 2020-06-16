@@ -7,15 +7,13 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6875bfdf770719226de75d7570c1db773b1ee33d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 85d18f8f0ce2002cc8186c550f5124ee97cb2aa8
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222873"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785033"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機：為什麼我們要轉向雲端？
 
 <!-- docsTest:ignore "is a common question" "Our board" -->

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 740cd161f78fd8e4254786af65212c730af237b1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215512"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787634"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義和設定雲端採用方案的工作負載優先順序
 
@@ -22,13 +22,11 @@ ms.locfileid: "83215512"
 
 將方案限制為10個工作負載，可在商務準則變更時，鼓勵優先順序的彈性和對齊。 此方法也可讓雲端採用小組學習和精簡估計。 最重要的是，它會移除廣泛的規劃，做為有效商務變更的屏障。
 
-<!-- markdownlint-disable MD026 -->
-
 ## <a name="what-is-a-workload"></a>什麼是工作負載？
 
 在雲端採用的環境中，工作負載是 IT 資產（伺服器、Vm、應用程式、資料或設備）的集合，共同支援已定義的進程。 工作負載可以支援一個以上的進程。 工作負載也可能相依于其他共用的資產或較大的平臺。 不過，工作負載應該已定義與相依資產相關的界限，以及依存于工作負載的處理常式。 通常，您可以藉由監視 IT 資產之間的網路流量來視覺化工作負載。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 必要條件清單中的策略性輸入可讓您更輕鬆地完成下列工作。 如需收集本文所討論資料的協助，請參閱[必要條件](./prerequisites.md)。
 
@@ -65,7 +63,7 @@ ms.locfileid: "83215512"
 
 ### <a name="business-inputs"></a>商務輸入
 
-| 資料點 | 說明 | 輸入 |
+| 資料點 | Description | 輸入 |
 |---|---|---|
 | 工作負載名稱 | 此工作負載的名稱為何？ |         |
 | 工作負載描述 | 在一個句子中，此工作負載的用途為何？ |         |
@@ -84,7 +82,7 @@ ms.locfileid: "83215512"
 
 ### <a name="technical-inputs"></a>技術輸入
 
-| 資料點 | 說明 | 輸入 |
+| 資料點 | Description | 輸入 |
 |---|---|---|
 | 採用方法 | 這項採用適合用於遷移或創新嗎？ |         |
 | 應用程式 ops 組長 | 列出負責此工作負載的效能和可用性的合作物件。 |         |

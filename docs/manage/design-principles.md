@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e9f0315c8902ef6304160faa734c08f9eb273798
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756442"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785322"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和先進作業
 
@@ -75,19 +75,19 @@ CCoE 中的角色自然對齊如下所述：
 
 ### <a name="improve-system-design"></a>改善系統設計
 
-改善系統設計最能有效改善任何常見平台的作業。 系統設計改良功能有助於提升穩定性並降低業務中斷。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。 做為此架構的補充，Microsoft Azure 架構完善的架構提供了改善特定系統之復原和設計的最佳作法。 您可以將這些設計改良功能套用至平臺或特定工作負載的系統設計。
+改善系統設計最能有效改善任何常見平台的作業。 系統設計改良功能有助於提升穩定性並降低業務中斷。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-Microsoft Azure 架構完善的架構，著重在系統設計的五個要素之間的改進：
+做為此架構的補充， [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)提供引導原則，以改善平臺或特定工作負載的品質。此架構的重點在於改善整個架構的五個要素：
 
-- **延展性：** 擴展常見平台資產以應付增加的負載。
-- **可用性：** 藉由改善執行時間的潛能來減少業務中斷。
-- **復原：** 改善復原時間以減少中斷的持續時間。
-- **安全性：** 讓應用程式和資料免於遭受外部威脅。
-- **管理：** 這些一般平臺資產的特定工作處理程式。
+- **成本優化：** 管理成本，將傳遞的價值最大化。
+- **卓越的營運：** 依照操作程式，讓系統在生產環境中執行。
+- **效能效率：** 調整系統以適應負載中的變更。
+- **可靠性：** 從失敗中復原並繼續運作的設計系統。
+- **安全性：** 保護應用程式和資料免于遭受威脅。
 
 大部分的業務中斷等同於某種形式的技術債務，或架構缺失。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新部署，則可以將系統設計改善視為技術債務的迴避。 下一節「自動化補救」探討瞭解決無法或不應解決的技術債務的方式。
 
-若要協助改善系統設計，請深入瞭解[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/guide/pillars)。 當您的系統設計改善時，請回到本文以尋找新的機會來改善並調整您環境中的改善。
+若要改善系統設計，請深入瞭解[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)。 當您的系統設計改善時，請回到本文以尋找新的機會來改善並調整您環境中的改善。
 
 ### <a name="automated-remediation"></a>自動補救
 

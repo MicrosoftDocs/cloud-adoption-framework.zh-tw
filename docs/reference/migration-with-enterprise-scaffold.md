@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e101c48e4d772e7669b3b4ea021f3065ea7297eb
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756119"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787396"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -101,7 +101,7 @@ Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群�
 
 ### <a name="resource-groups"></a>資源群組
 
-Azure Resource Manager 可讓您將資源放入有意義的群組，以便管理、計費或達到自然親和性。 資源群組是資源的容器，其中的資源具有共同的生命週期或共用「所有 SQL 伺服器」或「應用程式 A」等屬性。
+Azure Resource Manager 可讓您將資源組織成有意義的群組，以便管理、計費或自然親和性。 資源群組是資源的容器，其中的資源具有共同的生命週期或共用「所有 SQL 伺服器」或「應用程式 A」等屬性。
 
 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 某些動作可套用於資源群組中的所有資源。 例如，刪除資源群組即可移除資源群組內的所有資源。 如同訂用帳戶，建立資源群組時有很多常見模式可選，而且在「傳統 IT」工作負載和「敏捷式 IT」工作負載上會有所不同：
 
@@ -127,7 +127,7 @@ Scaffold 的第一要件是一致的命名標準。 設計良好的命名標準�
 
 ### <a name="resource-tags"></a>資源標記
 
-資源標記會密切地配合命名標準。 當有資源新增至訂用帳戶時，資源標記的重要性就會提高，因為它要以邏輯方式將這些資源分類為計費、管理和操作用途。 如需詳細資訊，請參閱[使用標記來組織您的 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
+資源標記會密切地配合命名標準。 當有資源新增至訂用帳戶時，資源標記的重要性就會提高，因為它要以邏輯方式將這些資源分類為計費、管理和操作用途。 如需詳細資訊，請參閱 [使用標記組織您的 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
 
 > [!IMPORTANT]
 > 標記可包含個人資訊，因此可能會落在 GDPR 的規範下。 請仔細規劃您的標記管理。 如果您要尋找有關 GDPR 的一般資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)的 GDPR 一節。
@@ -183,7 +183,7 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 - 依照授與執行預期工作所需**最低權限**的原則。
 
 > [!IMPORTANT]
->請考慮使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)功能，為您 Azure 訂用帳戶上的系統管理動作提供更佳的安全性和更高的可見性。 這些功能來自有效的 Azure AD Premium 授權 (視功能而訂)，可進一步保護及管理您的身分識別。 Azure AD PIM 可啟用 "Just-in-Time" 管理存取及核准工作流程，以及完整的系統管理員啟用和活動稽核。 Azure 多重要素驗證是另一項重要的功能，可啟用雙步驟驗證以登入 Azure 入口網站。 如果結合條件式存取控制，您可以有效地管理損害風險。
+> 請考慮使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)功能，為您 Azure 訂用帳戶上的系統管理動作提供更佳的安全性和更高的可見性。 這些功能來自有效的 Azure AD Premium 授權 (視功能而訂)，可進一步保護及管理您的身分識別。 Azure AD PIM 可啟用 "Just-in-Time" 管理存取及核准工作流程，以及完整的系統管理員啟用和活動稽核。 Azure 多重要素驗證是另一項重要的功能，可啟用雙步驟驗證以登入 Azure 入口網站。 如果結合條件式存取控制，您可以有效地管理損害風險。
 
 針對您的身分識別和存取控制進行規劃和準備，並遵循[Azure 身分識別管理最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)，是您可以運用的最佳風險降低策略之一，而且應該將其視為每個部署的必要項。
 
@@ -196,7 +196,7 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)可讓您統一檢視環境中所有資源的安全性狀態，並提供進階的威脅防護。 Azure 資訊安全中心是一個開放平台，可讓 Microsoft 合作夥伴建立可插入其中的軟體並增強其功能。 Azure 資訊安全中心（免費層）的基準功能會提供評估和建議，以增強您的安全性狀態。 其付費層提供了額外且有價值的功能，例如及時的系統管理存取和彈性應用程式控制（允許清單）。
 
 > [!TIP]
->Azure 資訊安全中心是一種功能強大的工具，可讓您用來偵測威脅及保護企業的新功能，進行定期改良。 強烈建議一律啟用 Azure 資訊安全中心。
+> Azure 資訊安全中心是一種功能強大的工具，可讓您用來偵測威脅及保護企業的新功能，進行定期改良。 強烈建議一律啟用 Azure 資訊安全中心。
 
 ### <a name="locks-for-azure-resources"></a>Azure 資源的鎖定
 
@@ -253,7 +253,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 
 ### <a name="deep-application-monitoring"></a>深層應用程式監視
 
-- **Application Insights：** Application Insights 可讓您收集應用程式專屬的遙測資料，以及監視雲端或內部部署中應用程式的效能、可用性和使用情形。 藉由使用多種語言（包括 .NET、JavaScript、JAVA、node.js、Ruby 和 Python）的支援 Sdk 來檢測您的應用程式。 Application Insights 事件會內嵌至支援基礎結構和安全性監視的相同 Log Analytics 資料存放區，讓您可以透過豐富的查詢語言，讓一段時間中的事件相互關聯並加以彙總。
+- **Application Insights：** Application Insights 可讓您收集應用程式專屬的遙測資料，以及監視雲端或內部部署中應用程式的效能、可用性和使用情形。 藉由使用多種語言（包括 .NET、JavaScript、JAVA、Node.js、Ruby 和 Python）的支援 Sdk 來檢測您的應用程式。 Application Insights 事件會內嵌至支援基礎結構和安全性監視的相同 Log Analytics 資料存放區，讓您可以透過豐富的查詢語言，讓一段時間中的事件相互關聯並加以彙總。
 
 ### <a name="deep-infrastructure-monitoring"></a>深層基礎結構監視
 

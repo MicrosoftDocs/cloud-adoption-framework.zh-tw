@@ -7,16 +7,13 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f241899ff97b3ded1e5c2c82c4b0c6724843a411
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 32ea202317ecddab49bed0944212f3f7be7e724c
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218963"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788178"
 ---
-<!-- docsTest:ignore "Team 1" "Team 2" -->
-<!-- cSpell:ignore CSAT -->
-
 # <a name="balance-the-portfolio"></a>平衡組合
 
 雲端採用是一種組合管理的工作，應變偽裝成技術執行。 就像任何組合管理練習一樣，平衡組合也非常重要。 在策略性層級，這表示您必須平衡移轉、創新和實驗以充分運用雲端。 當雲端採用投入時間仰賴太多時，複雜度就會發現採用的工作。 本文將引導讀者完整了解實現組合平衡的方法。
@@ -25,13 +22,14 @@ ms.locfileid: "83218963"
 
 平衡組合在本質上是策略性的。 因此，本文所採用的方法也同樣具有策略性。 為了讓資料驅動決策的策略更上一層，本文假設讀者已評估現有的[數位資產](../digital-estate/index.md)，或已開始該流程。 此方法的目標是要協助評估工作負載，以透過定性問題和組合改善來確保組合之間有適當的平衡。
 
-<!-- docsTest:ignore 2M months years datacenters improvement TODO -->
+<!-- docsTest TODO: Handle capitalization following numbers and back-ticks -->
+<!-- cSpell:ignore 2M months years datacenters improvement CSAT -->
 
 ### <a name="document-business-outcomes"></a>記錄業務成果
 
 在平衡組合之前，請務必記載並分享商業成果，以促進雲端遷移工作。 下表可協助記載及分享所需的業務成果。 請務必注意，大部分企業都會一次追求數個成果。 此練習的重要性是要釐清與雲端移轉工作最直接相關的成果：
 
-| 結果  | 測量依據  | 目標  | 時間範圍  | 此工作的優先順序  |
+| 成果  | 測量依據  | 目標  | 時間範圍  | 此工作的優先順序  |
 |---------|---------|---------|---------|---------|
 | 降低 IT 成本     | 資料中心預算         | 減少 $ 2M 美元     | 12 個月         | #1         |
 | 資料中心的退出     | 從資料中心結束         | 2個資料中心         | 6 個月         | #2         |

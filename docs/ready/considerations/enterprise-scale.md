@@ -7,20 +7,18 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb1e11a50236d078c5dd9b1cc6f317bdfc96823
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 071a8edd7faebcc5df0e91154c02857287e3638d
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755749"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787466"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>開始使用企業級登陸區域
 
 有時候，雲端平臺小組會造成，以小規模開始進行調整。 小組在公司現有內部部署環境的限制範圍內工作，以達到安全性、營運及治理方面的成熟度目前狀態。 根據任何雲端環境的新條件約束，複寫所需的處理常式、工具和架構會需要一些時間。 若要加速該學習程式，需要稍微不同的起點。 將下圖與[此方法中的早期重構指引](../landing-zone/refactor.md)進行比較之後，基本的變更是起點，現在更複雜，本文稍後會更詳細地說明。
 
 ![登陸區域重構圖例-本文稍後的章節中所述](../../_images/ready/refactor-enterprise-scale.png)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定詞：我應該從企業規模開始嗎？
 

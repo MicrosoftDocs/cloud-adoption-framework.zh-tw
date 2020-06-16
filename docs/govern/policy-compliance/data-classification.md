@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebd9d6435e3dce2e084a25f4a7a38c3694598d7c
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224233"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786717"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 
 資料分類可讓您判斷並指派組織資料的價值，並提供共同管理的起點。 資料分類程式會依敏感度和業務影響來分類資料，以找出風險。 當資料經過分類時，您可以用保護敏感或重要資料的方式來管理它，以免遭竊或遺失。

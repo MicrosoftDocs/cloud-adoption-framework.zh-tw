@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9e4358b631008ef83a7b2635d5c2774a1e059815
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7c157af494de7ac735f38387aa5aa5a48d3ddba8
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755262"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787702"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "83755262"
 
 隨著採用需求的成長，需要平衡和結構。 觀看這段影片，以瞭解組織成熟度各個階段的一般小組結構。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS>]
 
 下圖和清單概述以一般成熟階段為基礎的結構。 使用這些範例來尋找最符合您操作需求的組織結構。
 

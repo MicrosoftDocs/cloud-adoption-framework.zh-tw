@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2e4aad0e866ee7ffd3fb0eeb3e2688b24aa5dae1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1ea8a14ccd68fbdb73576ca27c98e50e9196bba5
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756272"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787515"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -38,7 +38,7 @@ ms.locfileid: "83756272"
 - **您的應用程式或服務可以利用容器嗎？** 如果您的應用程式是容器化裝載的絕佳候選項目，您可以利用[Azure 中 container service](https://azure.microsoft.com/product-categories/containers)所提供的資源效率、擴充性和協調流程功能。 [Azure 受控磁片](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)和[Azure 檔案儲存體](https://docs.microsoft.com/azure/storage/files/storage-files-introduction)都可以用於容器化應用程式中的持續性儲存體。
 - **您的應用程式是以 Web 為基礎或以 API 為基礎？而且是否使用 PHP、ASP.NET、Node.js 或類似的技術？** Web 應用程式可以部署到受控的 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) 執行個體，因此您不需要維護裝載用的虛擬機器。
 - **您需要完整控制您工作負載的作業系統和裝載環境嗎？** 如果您需要控制裝載環境 (包括作業系統、磁碟、本機執行的軟體和其他設定)，您可以使用 [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines)來裝載您的應用程式和服務。 除了選擇您的虛擬機器大小和效能層級之外，您對於虛擬磁片儲存體的決策也會影響與您的基礎結構即服務（IaaS）工作負載相關的效能和 Sla。 如需詳細資訊，請參閱[Azure 磁片儲存體](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)檔。
-- **您的工作負載是否牽涉到高效能運算（hpc）功能？** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview)以平臺服務的形式提供計算資源的工作排程和自動調整，因此在雲端中執行大規模的平行和 hpc 應用程式變得很容易。
+- **您的工作負載是否牽涉到高效能運算 (HPC) 功能？** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) 能以平台服務的形式為電腦資源提供工作排程及自動調整服務，讓您在雲端輕鬆執行大規模平行應用程式和 HPC 應用程式。
 - **您的應用程式會使用微服務架構嗎？** 使用微服務架構的應用程式可以利用數個最佳化的計算技術。 由事件驅動的獨立工作負載可以使用 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) 來建立可調整的無伺服器應用程式，其不需要基礎結構。 對於需要更充分掌控微服務執行之環境的應用程式，您可以使用容器服務，例如[azure 容器實例](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、 [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes)和[azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview)。
 
 > [!NOTE]

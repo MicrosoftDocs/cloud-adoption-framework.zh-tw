@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9bd12087b21f8ace7ffc8501073b84650ada458
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218929"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788161"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
 如[商業成果總覽](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于 timeliest 商務量值：商業彈性。 瞭解貴公司的市場位置和競爭範圍，可以協助您清楚表達企業轉型旅程目標的商業成果。
 
 傳統上，投資主管和 IT 小組在核心要徑任務程式中被視為穩定性的來源。 這仍然是 true。 少數企業在 IT 平臺不穩定時，可以發揮良好的效果。 不過，在現今的業務世界中，預期會有更多的功能。 藉由與企業合作來提供市場優勢，它可以擴充到超過一個簡單的成本中心。 許多投資人員和主管都認為穩定性只是 IT 的基準。 對於這些領導者而言，商業彈性是 IT 對企業貢獻的測量。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-is-agility-so-important"></a>為什麼靈活性很重要？
 

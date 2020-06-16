@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1de34dc3a37414a87bdc89b233af2e2564d44b10
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: b00fd6d677b493ed70b2432e2b013e4e93851aa4
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023486"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785220"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -103,14 +103,14 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **描述** | **成本**
+**服務** | **說明** | **成本**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務能夠從多個資料庫來源無縫移轉到 Azure 資料平台，將停機時間降到最低。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。
 [Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | 受控執行個體是一種受控資料庫服務，可代表 Azure 雲端中的完全受控 SQL Server 執行個體。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL Database 受控執行個體會根據所用容量產生費用。 深入了解[受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用受完整管理的平台建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 為應用程式開發提供持續整合和持續部署 (CI/CD) 管線。 管線一開始會有一個用於管理應用程式程式碼的 Git 存放庫、一個用於產生套件及其他建置成品的建置系統，以及一個用來在開發、測試及生產環境中部署變更的「發行管理」系統。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -156,7 +156,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
 1. 他們會在主要美國東部 2 區域中建立新的虛擬網路 (**VNET-SQLMI-EU2**)。 它會將此虛擬網路新增至 **ContosoNetworkingRG** 資源群組。
 2. 他們會指派 10.235.0.0/24 位址空間。 他們會確保範圍不會與其企業中的任何其他網路重疊。
 3. 他們會將兩個子網路新增到網路：
-    - **互連 vnet-sqlmi-eus2-DS-EUS2** （10.235.0.0.25）。
+    - **互連 vnet-sqlmi-eus2-DS-EUS2** （10.235.0.0/25）。
     - **互連 vnet-sqlmi-eus2-EUS2** （10.235.0.128/29）。 此子網路用來將目錄連結到受控執行個體。
 
       ![受控執行個體：建立虛擬網路](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
@@ -298,11 +298,11 @@ Contoso 管理員必須確定 Web 應用程式和資料庫皆可進行通訊。 
 
     ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. 他們使用 Visual Studio，從解決方案檔案中開啟 **SmartHotel.Registration.wcf** 專案。 WCF 服務**SmartHotel**之 web.config 檔案的**connectionStrings**區段，應使用連接字串進行更新。
+3. 他們使用 Visual Studio，從解決方案檔案中開啟 **SmartHotel.Registration.wcf** 專案。 WCF 服務**SmartHotel**之 web.config 檔的**connectionStrings**區段，應使用連接字串進行更新。
 
      ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. **SmartHotel**之 web.config 檔案的**用戶端**區段應變更為指向 WCF 服務的新位置中。 這是裝載服務端點的 WCF Web 應用程式 URL。
+4. **SmartHotel**之 web.config 檔案的**用戶端**區段應變更為指向 WCF 服務的新位置。 這是裝載服務端點的 WCF Web 應用程式 URL。
 
     ![連接字串](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 

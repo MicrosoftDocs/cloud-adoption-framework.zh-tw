@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17edc2b008421648a195ab82878d82dcb791bfaa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 20d11e577b4158f1ec31f1c73325ff4f67b2b0db
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215941"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787804"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -21,8 +21,6 @@ ms.locfileid: "83215941"
 在傳統的內部部署 IT 模型中，取得 IT 系統是既昂貴又耗時的工作。 其程序常需要長時間的資本支出審核週期，甚至可能需進行年度規劃程序。 因此，購買超過所需的數量，在實務上是常見的情形。 而 IT 系統管理員在為預期的需求做準備時過度佈建資產，也同樣很常見。
 
 在雲端中，會計和佈建模型消除了導致過度購買的時間延遲。 當資產需要額外的資源時，將可在極短的時間內相應增加或放大。 這表示資產的大小可以安全地縮減，以將資源和耗用成本降到最低。 在效能評定和最佳化期間，雲端採用小組會尋求效能與成本之間的平衡，佈建不會高於或低於所需的資產，比符合生產需求。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>資產應在移轉期間還是之後進行最佳化？
 

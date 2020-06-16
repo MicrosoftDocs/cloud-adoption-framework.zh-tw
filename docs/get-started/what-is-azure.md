@@ -8,16 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 00d5709aeb0a922b8f8c5efd26abafe70d70a237
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1992dedc1f20ad19bbc13a81f6277c5ad2bcd27f
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755148"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786461"
 ---
 <!-- cSpell:ignore PDU -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="how-does-azure-work"></a>Azure 如何運作？
 
@@ -31,7 +29,7 @@ Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 �
 
 基本上，雲端是一或多個資料中心內部代替客戶執行虛擬化硬體的一組實體伺服器。 那麼，雲端要如何同時為數百萬個客戶建立、啟動、停止及刪除數百萬個虛擬化硬體執行個體呢？
 
-要了解這一點，就必須看看資料中心裡的硬體架構。 每個資料中心內都是位於伺服器機架中的伺服器集合。 每個伺服器機架都包含許多伺服器**刀鋒**，以及提供網路連線的網路交換器和提供電力的配電裝置 (PDU)。 機架有時會一起分組到較大的單位中，名為_叢集_。
+要了解這一點，就必須看看資料中心裡的硬體架構。 每個資料中心內都是位於伺服器機架中的伺服器集合。 每個伺服器機架都包含許多伺服器_刀鋒_，以及提供網路連線的網路交換器和提供電力的配電裝置 (PDU)。 機架有時會一起分組到較大的單位中，名為_叢集_。
 
 在每個機架或叢集內，大部分的伺服器都會被指定用來代替使用者執行這些虛擬化硬體執行個體。 但是有些伺服器會執行雲端管理軟體，稱為網狀架構控制器。 _網狀架構控制器_是一種分散式應用程式，負責執行多項工作。 它會配置服務、監視伺服器及其執行之服務的健全狀況，並在伺服器故障時加以修復。
 

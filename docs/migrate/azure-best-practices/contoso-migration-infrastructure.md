@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cf026f32e52f5742525e655cd904e152e849bcd6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: cbe349d5ad7fa7ddf5ad4f58c8c29e63bc26cda7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861968"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785390"
 ---
 <!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -170,8 +170,6 @@ Contoso 管理員設定了 Azure 資源群組，如下表所示。
 | `ContosoFailoverRG` | 此群組會供容錯移轉後的資源作為登陸區域。 |
 | `ContosoNetworkingRG` | 此群組包含所有網路資源。 |
 | `ContosoRG` | 此群組包含生產應用程式和資料庫的相關資源。 |
-
-<!-- markdownlint-disable MD026 -->
 
 他們依照下列方式建立資源群組：
 
@@ -368,7 +366,7 @@ Azure 中的[虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-
 
 #### <a name="hub-to-hub-across-regions"></a>跨區域的中樞對中樞
 
-Contoso 會在每個區域中部署中樞。 「中樞」是 Azure 中的虛擬網路，可做為內部部署網路的連線中心點。 中樞 VNet 會使用全域 VNet 對等互連彼此連接。 全域 VNet 對等互連會連接各 Azure 區域內的 VNet。
+Contoso 會在每個區域中部署中樞。 「中樞」是 Azure 中的虛擬網路，可做為內部部署網路的連線中心點。 中樞 Vnet 會透過全域 VNet 對等互連彼此連線，這會跨 Azure 區域連接 Vnet。
 
 - 每個區域中的中樞會分別與其他區域中的夥伴中樞配對。
 - 中樞會與其區域中的每個網路配對，而且可以連線至所有網路資源。
@@ -421,7 +419,7 @@ Contoso 會在每個區域中部署中樞。 「中樞」是 Azure 中的虛擬�
 
 下表摘要說明中的 Vnet `East US 2` 。
 
-| **VNet** | **格或** | **對等** |
+| **VNet** | **Range** | **對等** |
 | --- | --- | --- |
 | `VNET-HUB-EUS2` | `10.240.0.0/20` | `VNET-HUB-CUS2`, `VNET-DEV-EUS2`, `VNET-PROD-EUS2` |
 | `VNET-DEV-EUS2` | `10.245.16.0/20` | `VNET-HUB-EUS2` |
@@ -568,7 +566,7 @@ Contoso 管理員認為 Azure DNS 服務在混合式環境中並非理想的選�
 
 除了內部部署網域控制站以外，Contoso 還會再執行四個網域控制站來支援 Azure 網路，每個區域各兩個。 Contoso 會在 Azure 中進行下列部署。
 
-| **區域** | **DC** | **VNet** | **子網路** | **IP 位址** |
+| 區域 | DC | VNet | 子網路 | IP 位址 |
 | --- | --- | --- | --- | --- |
 | EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4 |
 | EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5 |
@@ -686,7 +684,7 @@ Contoso 會使用內建的原則定義 `Allow virtual machine SKUs` 來限制可
 1. 在 Azure 入口網站中，選取 [合規性]**** 連結。
 2. 合規性儀表板隨即出現。 您可以向下切入以取得詳細資料。
 
-    ![原則合規性](./media/contoso-migration-infrastructure/policy-compliance.png)
+    ![原則相容性](./media/contoso-migration-infrastructure/policy-compliance.png)
 
 ### <a name="set-up-locks"></a>設定鎖定
 
@@ -777,7 +775,7 @@ Contoso 建置了此機制尋找其應用程式的模型。
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-| 動作 | 名稱 | 來源 | 目標 | 連接埠 |
+| 動作 | Name | 來源 | 目標 | 連接埠 |
 | --- | --- | --- | --- | --- |
 | `Allow` | `AllowInternetToFE` | `VNET-HUB-EUS1`/`IB-TrustZone` | `APP1-FE` | 80、443 |
 | `Allow` | `AllowWebToApp` | `APP1-FE` | `APP1-APP` | 80、443 |

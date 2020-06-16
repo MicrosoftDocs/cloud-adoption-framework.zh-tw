@@ -7,20 +7,16 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 07c7534397f2664113cae33b66ca635766f6eb11
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 72dc18bc354e1a3f4a95a2a0c55373ee90f978f4
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862308"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786852"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="understand-business-risk-during-cloud-migration"></a>瞭解雲端遷移期間的業務風險
 
 了解業務風險是任何雲端轉換最重要的元素之一。 風險驅動原則，並會影響監視和強制執行需求。 風險深刻影響我們如何管理在內部部署或在雲端中的數位資產。
-
-<!-- markdownlint-enable MD026 -->
 
 ## <a name="relativity-of-risk"></a>風險的相對性
 
@@ -41,11 +37,9 @@ ms.locfileid: "83862308"
 
 在雲端轉換期間，企業和 IT 小組都有機會重設那些原則，並以成熟心態建立新原則。
 
-<!-- markdownlint-disable MD026 -->
-
 ## <a name="what-is-a-business-risk-mvp"></a>什麼是業務風險 MVP？
 
-**最基本的可行產品（MVP）** 通常用來定義可以產生具體價值的最小單位。 在商務風險 MVP 中，雲端治理小組一開始會假設某些資產會在某個時間點部署至雲端環境。 這是這些資產當時的不明之處，而小組可能不確定哪些類型的資料會儲存在這些資產上。
+_最基本的可行產品（MVP）_ 通常用來定義可以產生具體價值的最小單位。 在商務風險 MVP 中，雲端治理小組一開始會假設某些資產會在某個時間點部署至雲端環境。 這是這些資產當時的不明之處，而小組可能不確定哪些類型的資料會儲存在這些資產上。
 
 在規劃商業風險時，雲端治理小組可以建立最糟的案例，並將每個可能的原則對應到雲端。 找出所有雲端使用案例的所有潛在業務風險，可能需要花費相當長的時間和工作量，而可能會延遲對雲端工作負載進行治理的實施。 不建議這樣做，但這是一個選項。
 
@@ -60,8 +54,6 @@ ms.locfileid: "83862308"
 
 上述範例旨在將 MVP 業務風險建立為理論。 每個環境的實際清單會是唯一的。
 一旦建立商務風險 MVP 之後，他們就可以轉換成[原則](./index.md)來補救每個風險。
-
-<!-- markdownlint-enable MD026 -->
 
 ## <a name="incremental-risk-mitigation"></a>漸進風險降低
 

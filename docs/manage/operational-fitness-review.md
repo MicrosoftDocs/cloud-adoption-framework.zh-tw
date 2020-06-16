@@ -7,26 +7,26 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223655"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785186"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
 當您的企業開始在 Azure 中操作工作負載時，下一步就是建立_操作健身審查_的程式。 此程式會列舉、執行及反復檢查這些工作負載的非_功能性需求_。 非功能性需求與服務的預期操作行為有關。
 
-有五個基本的非功能性需求類別，稱為[軟體品質](https://docs.microsoft.com/azure/architecture/guide/pillars)的要素：
+有五個基本的非功能性需求類別，也就是[架構卓越](https://docs.microsoft.com/azure/architecture/framework)的要素：
 
-- 延展性
-- 可用性
-- 復原（包括商務持續性和嚴重損壞修復）
-- 管理性
+- 成本最佳化
+- 卓越操作
+- 效能效率
+- 可靠性
 - 安全性
 
-作業健身審查的程式可確保您的任務關鍵性工作負載符合您企業對於品質要素的期望。
+作業健身審查的程式可確保您的任務關鍵性工作負載符合您的企業對支柱的期望。
 
 建立作業健身審查的程式，以充分瞭解在生產環境中執行工作負載所產生的問題，以及如何修復和解決這些問題。 本文概述您的企業可以用來達成此目標的營運健身審查高階程式。
 
@@ -121,13 +121,17 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 ## <a name="recommended-resources"></a>建議的資源
 
-- [軟體品質的](https://docs.microsoft.com/azure/architecture/guide/pillars)要素。
-    Azure 應用程式架構指南的這一節說明軟體品質的五大要素：擴充性、可用性、復原、管理和安全性。
+- [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)：瞭解改善工作負載品質的指導原則。 該架構包含五個卓越的架構要素：
+  - 成本最佳化
+  - 卓越操作
+  - 效能效率
+  - 可靠性
+  - 安全性
 - [Azure 應用程式的十個設計原則](https://docs.microsoft.com/azure/architecture/guide/design-principles)。
-    Azure 應用程式架構指南的這一節將討論一組設計原則，讓您的應用程式更具擴充性、彈性和可管理性。
+    請遵循這些設計原則，讓您的應用程式更有擴充空間、可容易復原且更方便管理。
 - [為 Azure 設計具復原能力的應用程式](https://docs.microsoft.com/azure/architecture/resiliency)。
-    本指南會從「_復原_」和「相關概念」一詞的定義開始。 然後，它會說明在應用程式的存留期（從設計和執行到部署和作業）上使用結構化方法來達到復原的流程。
+    使用結構化的方法，在應用程式的存留期間（從設計和執行到部署和作業），建立及維護可靠的系統。
 - [雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
-    當工程團隊根據軟體品質的要素建置應用程式時，這些設計原則非常實用。
+    使用設計模式來建立應用程式，以打造出卓越的架構要素。
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor)。
-    Advisor 會根據您的使用方式和設定提供個人化的建議，協助您將資源優化，以達到高可用性、安全性、效能和成本。
+    Azure Advisor 根據您的使用方式和設定提供個人化的建議，以協助優化您的資源以獲得高可用性、安全性、效能和成本。

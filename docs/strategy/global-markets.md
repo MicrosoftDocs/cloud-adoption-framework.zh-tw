@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8546e1a86c39f286e30a2a476242a626b85c69a0
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221445"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787260"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>全球市場決策會如何影響轉型旅程？
 
 雲端可開啟新的機會，以全球規模執行。 全球營運的阻礙會大幅降低，方法是讓公司能夠在市場部署資產，而不需要大量投資新的資料中心。 可惜的是，這也會增加技術和法律觀點的複雜複雜度。

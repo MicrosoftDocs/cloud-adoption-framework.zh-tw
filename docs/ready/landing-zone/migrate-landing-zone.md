@@ -7,25 +7,75 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c6c79d38db4325594331b2e4f00995eb1e5d44a6
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755661"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799716"
 ---
-<!-- cSpell:ignore vCPUs jumpbox -->
-
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
 「_遷移」登陸區域_是已布建並準備要裝載從內部部署環境遷移至 Azure 之工作負載的環境。
 
-## <a name="deploy-the-first-landing-zone"></a>部署第一個登陸區域
+## <a name="deploy-the-blueprint"></a>部署藍圖
 
-在您使用雲端採用架構中的「遷移」登陸區域藍圖之前，請先參閱下列假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
+在您使用雲端採用架構中的「遷移」登陸區域藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
 
 > [!div class="nextstepaction"]
 > [部署藍圖範例][deploy-sample]
+
+## <a name="design-principles"></a>設計原則
+
+此實作為選項提供固定方法，可供所有 Azure 登陸區域共用的通用設計區域使用。 如需額外的技術詳細資料，請參閱下列假設和決策。
+
+### <a name="deployment-options"></a>部署選項
+
+此實行選項會部署_最基本的可行產品（MVP）_ 來開始進行遷移。 當遷移進行時，客戶會遵循以模組化重構為基礎的方法，以平行指引來成熟作業模型，使用控管[方法](../../govern/index.md)和[管理方法](../../manage/index.md)來平行處理這些複雜主題，以進行初始遷移工作。
+
+[下列的決策一節](#decisions)會概述此 MVP 方法所部署的特定資源。
+
+### <a name="enterprise-enrollment"></a>企業註冊
+
+此執行選項不會在企業註冊上採用固有的位置。 這種方法是設計成適用于客戶，而不論 Microsoft 或 Microsoft 合作夥伴的合約協定為何。 在部署此實作為選項之前，會假設客戶已建立目標訂用帳戶。
+
+### <a name="identity"></a>身分識別
+
+此實作為選項假設目標訂閱已根據身分[識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，與 Azure Active Directory 實例相關聯
+
+### <a name="network-topology-and-connectivity"></a>網路拓撲和連線能力
+
+此 [執行] 選項會建立一個虛擬網路，其中包含閘道、防火牆、跳躍箱和登陸區域的子網。 在下一個步驟中，小組會遵循[網路決策指南](../considerations/networking-options.md)，在閘道子網與其他網路之間執行適當的連線形式，以配合[網路安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+
+### <a name="resource-organization"></a>資源組織
+
+此 [執行] 選項會建立單一登陸區域，其中的資源會組織成特定資源群組所定義的工作負載。 為資源組織選擇此極簡方法，將會延遲資源組織的技術決策，直到小組的雲端操作模型更清楚地定義為止。
+
+此方法是根據雲端採用工作不會超過訂用帳戶[限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)的假設。 此選項也會假設此登陸區域內的架構複雜性和安全性需求受到限制。
+
+如果這項變更是透過雲端採用計畫的過程進行，則資源組織可能需要使用控管[方法](../../govern/index.md)中的指引來重構。
+
+### <a name="governance-disciplines"></a>治理專業領域
+
+此執行選項不會執行任何治理工具。 如果沒有定義的原則自動化，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
+
+若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及遷移登陸區域。
+
+> [!WARNING]
+> 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+
+### <a name="operations-baseline"></a>作業基準
+
+此執行選項不會執行任何作業。 如果沒有定義的作業基準，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
+
+若要加速並行開發作業基準，請參閱[管理方法](../../manage/index.md)，並考慮部署[Azure 伺服器管理指南](../../manage/azure-server-management/index.md)。
+
+> [!WARNING]
+> 當作業基準開發時，可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+
+### <a name="business-continuity-and-disaster-recovery-bcdr"></a>業務持續性和災害復原 (BCDR)
+
+此執行選項不會執行任何 BCDR 解決方案。 這會假設用於保護和復原的解決方案將會由作業基準的開發來解決。
 
 ## <a name="assumptions"></a>假設
 
@@ -47,7 +97,7 @@ ms.locfileid: "83755661"
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 移轉工具              | 將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。                | [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | 記錄和監視       | 將會布建 Operational insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
-| 網路                      | 將會建立包含子網路的虛擬網路，以用於閘道、防火牆、jumpbox 和登陸區域。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
+| 網路                      | 系統會使用閘道、防火牆、跳躍箱和登陸區域的子網來建立虛擬網路。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | 原則                       | 此藍圖目前會假設未套用任何 Azure 原則。                        |                                                                                                                                                                                                                                                                                       |
 | 訂用帳戶設計          | N/A-針對單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |

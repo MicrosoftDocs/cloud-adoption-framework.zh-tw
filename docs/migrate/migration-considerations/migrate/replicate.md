@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f09b7894782a038c7e39e85f0a93c2a49b20b07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 05600c8e5169f13110e45e680f3849174225b11f
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223536"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787787"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>複寫在移轉程序中扮演什麼角色？
 
 內部部署資料中心會填入實體資產，例如伺服器、設備和網路裝置。 不過，每個伺服器都只是一個實體殼層。 實際值來自於伺服器上執行的二進位檔。 應用程式和資料才是資料中心處理的標的。 這些項目是要移轉的主要二進位檔。 為這些應用程式和資料存放區提供支援的是其他數位資產和二進位來源，例如作業系統、網路路由、檔案和安全性通訊協定。

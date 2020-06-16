@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 83739453ac8d9466c01656788a22baaec4e78e5a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861526"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785424"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "83861526"
 
 [Azure 管理工具和服務](./tools-services.md)中所討論的所有管理解決方案，都需要在 azure 虛擬機器和內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則，大規模上架您的 Azure Vm。 指派原則以確保代理程式已安裝在您的 Azure Vm 上，並聯機至正確的 Log Analytics 工作區。
 
-Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)，其中包含 Log Analytics 代理程式和[Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent)，這是適用於 VM 的 Azure 監視器所需的。
+Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)，其中包含 Log Analytics 代理程式和[Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent)（適用於 VM 的 Azure 監視器所需）。
 
 <!-- TODOBACKLOG: Add these when available.
 **Preview:** Enable Azure Monitor for virtual machine scale sets.
@@ -66,7 +66,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 
     ![入口網站的原則介面螢幕擷取畫面](./media/onboarding-at-scale3.png)
 
-6. 選取 [**受控識別位置**] 核取方塊。 如果此原則的類型為[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)，則必須要有受控識別才能部署原則。 在入口網站中，會依照核取方塊選取專案的指示來建立帳戶。
+6. 選取 [**受控識別位置**] 核取方塊。 如果此原則的類型為 `[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)` ，則需要受控識別才能部署原則。 在入口網站中，會依照核取方塊選取專案的指示來建立帳戶。
 
 7. 選取 [**指派**]。
 
@@ -77,7 +77,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 > [!NOTE]
 > 將 Azure 伺服器管理服務上架到伺服器之前，請先建立必要的[Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account)。
 
-針對內部部署伺服器，您必須手動下載並安裝[Log Analytics 代理程式和 Microsoft Dependency agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並設定它們以連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**] [  >  **高級設定**]。
+針對內部部署伺服器，您必須手動下載並安裝[Log Analytics 代理程式和 Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並將其設定為連接到正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**] [  >  **高級設定**]。
 
 ![Azure 入口網站中 Log Analytics 工作區的 [高級設定] 螢幕擷取畫面](./media/onboarding-on-premises.png)
 

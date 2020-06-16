@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 53549ed01b9656ba4ce365e4707b411bdae2db1f
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: aa579f628ccb6f0dfb28bfe23e782580330dd3c1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862274"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786835"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -21,8 +21,6 @@ ms.locfileid: "83862274"
 Microsoft 對於雲端採用架構的指導方針並不是為了判斷或引導這份檔所支援的數以千計企業特有的安全性限制。 移往雲端時，資訊安全人員或資訊安全辦公室（CISO）的角色並不是由雲端技術所會。 相反地，CISO 和 CISO 的辦公室都將擔任起更加根深蒂固且整合的角色。 本指南假設讀者熟悉 CISO 流程，並想要將這些程式現代化以實現雲端轉換。
 
 雲端採用能提供通常不會在傳統 IT 環境中考慮使用的服務。 自助或自動化部署通常是由應用程式開發或其他 IT 小組執行，傳統上並不會與生產環境部署一致。 在某些組織中，其商務組成也同樣具有類似的自助功能。 這可能會產生先前不存在於內部部署環境中的新安全性需求。 集中式安全性更具挑戰性，安全性通常會成為企業和 IT 文化的共同責任。 本文可以協助 CISO 針對該作法進行準備，並開始著手於漸進式的治理。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-a-ciso-prepare-for-the-cloud"></a>CISO 如何為雲端做準備？
 

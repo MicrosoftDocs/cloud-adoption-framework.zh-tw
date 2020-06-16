@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a5a9fee1d8625cb2732e725aee924f1fd3984d3
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 91214b5efb138c0b5432bc7b8c338b434cd7be4a
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815492"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800090"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "83815492"
 - **您的工作負載是否可透過網際網路存取？** Azure 提供的服務是設計用來協助您管理及保護應用程式和服務的外部存取：
   - [Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)
   - [網路設備](https://azure.microsoft.com/solutions/network-appliances)
-  - [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
+  - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
   - [Azure 應用程式閘道](https://docs.microsoft.com/azure/application-gateway)
   - [Azure 流量管理員](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
 - **您是否需要支援自訂 DNS 管理？** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) 是適用於 DNS 網域的主機服務。 Azure DNS 使用 Azure 基礎結構來提供名稱解析。 如果您的工作負載需要的名稱解析超出 Azure DNS 所提供的功能，您可能需要部署其他解決方案。 如果您的工作負載也需要 Active Directory 服務，請考慮使用 [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) 來增強 Azure DNS 功能。 如需更多的功能，您也可以[部署自訂 IaaS 虛擬機器](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)以支援您的需求。
@@ -54,17 +54,17 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network) |
 | 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure 負載平衡器](https://docs.microsoft.com/azure/load-balancer) |
-| 我想要將應用程式伺服器陣列的傳遞優化，同時以 Web 應用程式防火牆增加應用程式安全性。 | [Azure 應用程式閘道](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| 我想要將應用程式伺服器陣列的傳遞優化，同時以 Web 應用程式防火牆增加應用程式安全性。 | [Azure 應用程式閘道](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | 我需要透過高效能 VPN 閘道，安全地使用網際網路來存取 Azure 虛擬網路。 | [Azure VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway) |
 | 我想要確保所有網域需求的超快 DNS 回應和超高可用性。 | [Azure DNS](https://docs.microsoft.com/azure/dns) |
-| 我需要加速傳遞高頻寬內容給全球客戶，從應用程式和儲存內容到串流影片。 | [Azure 內容傳遞網路](https://docs.microsoft.com/azure/cdn) |
+| 我需要加速傳遞高頻寬內容給全球客戶，從應用程式和儲存內容到串流影片。 | [Azure 內容傳遞網路 (CDN)](https://docs.microsoft.com/azure/cdn) |
 | 我需要保護我的 Azure 應用程式免於遭受 DDoS 攻擊。 | [Azure DDoS 保護](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| 我需要以最佳方式將流量分散到全球 Azure 區域的服務，同時提供高可用性和回應性。 | [Azure 流量管理員](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| 我需要以最佳方式將流量分散到全球 Azure 區域的服務，同時提供高可用性和回應性。 | [Azure 流量管理員](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | 我需要新增私人網路連線，以從我的公司網路存取 Microsoft 雲端服務，如同存取我自己資料中心內的內部部署。 | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | 我需要在網路案例層級進行監視與診斷。 | [Azure 網路監看員](https://docs.microsoft.com/azure/network-watcher) |
 | 我需要原生防火牆功能，具有內建的高可用性、不受限制的雲端擴充性，以及零的維護。 | [Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview) |
 | 我需要安全地連接商業辦公室、零售地點和網站。 | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
-| 我需要可調整並已加強安全性的傳遞點，適用於微服務型全域 Web 應用程式。 | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| 我需要可調整並已加強安全性的傳遞點，適用於微服務型全域 Web 應用程式。 | [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -88,12 +88,13 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
-除了使用其中一種架構模式，如果您的企業 IT 小組管理大型雲端環境，請考慮在設計 Azure 型雲端基礎結構時，諮詢 [Azure 虛擬資料中心指引](../../reference/vdc.md)。 如果貴組織符合下列準則，Azure 虛擬資料中心可提供網路、安全性、管理和基礎結構的結合方法：
+除了使用其中一種架構模式，如果您的企業 IT 小組管理大型雲端環境，請考慮諮詢[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 當您設計以 Azure 為基礎的雲端基礎結構時，如果您在**雲端中裝載超過1000個資產（應用程式、基礎結構或資料資產）**，則 CAF 企業級登陸區域會提供網路、安全性、管理和基礎結構的結合方法。
 
-- 貴企業受到法規合規性規範，而需要集中的監視和稽核功能。
-- 雲端資產會包含超過 10,000 個 IaaS VM 或同等的 PaaS 服務規模。
-- 您必須為工作負載啟用 agile 部署功能，以支援開發人員和營運小組，同時維護通用原則和治理合規性，以及對核心服務的中央 IT 控制。
-- 您所在的產業仰賴需要深度網域專業知識的複雜平台 (例如金融業、石油和天然氣業或製造業)。
+對於符合下列準則的組織，您可能也會想要從[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)開始：
+
+- 貴企業受到法規合規性需求規範，而需要集中的監視和稽核功能。
+- 您需要維護一般原則和治理合規性，以及對核心服務的集中式 IT 控制。
+- 您的行業依賴復雜的平台，需要復雜的控制項和深入網域的專業知識來管理平台。 這在金融、石油和天然氣或製造業的大型企業中最為常見。
 - 現有的 IT 治理原則需要與現有功能更加緊密地保持對應，即使在早期階段採用期間也是如此。
 
 ## <a name="follow-azure-networking-best-practices"></a>遵循 Azure 網路最佳做法

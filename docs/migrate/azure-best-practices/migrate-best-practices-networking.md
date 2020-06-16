@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: c7970faf570e32103fed648f7be9a451a4c7e896
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023452"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800124"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -33,7 +33,7 @@ Azure 提供具有下列功能的虛擬網路：
 - 您可以實作每個 Azure 訂用帳戶和 Azure 區域內的多個 VNet。
 - 每個 VNet 會與其他 VNet 隔離。
 - VNet 可以包含 [RFC 1918](https://tools.ietf.org/html/rfc1918) 中所定義的私人和公用 IP 位址 (以 CIDR 標記法表示)。 您無法直接從網際網路存取 VNet 位址空間中指定的公用 IP 位址。
-- VNet 可使用 VNet 對等互連彼此連線。 所連線的 VNet 可位於相同或不同區域。 因此，某一個 VNet 中的資源可以連線至其他 VNet 中的資源。
+- Vnet 可以使用虛擬網路對等互連彼此連接。 所連線的 VNet 可位於相同或不同區域。 因此，某一個 VNet 中的資源可以連線至其他 VNet 中的資源。
 - Azure 依預設會在 VNet 中的子網路、所連線的 VNet、內部部署網路和網際網路之間路由流量。
 
 在規劃 VNet 拓撲時，您應考慮幾如何安排 IP 位址空間、如何實作中樞和輪輻網路、如何將 VNet 劃分成子網路、設定 DNS，以及實作 Azure 可用性區域。
@@ -42,9 +42,9 @@ Azure 提供具有下列功能的虛擬網路：
 
 在移轉過程中建立 VNet 時，請務必要規劃 VNet IP 位址空間。
 
-- 對每個 VNet 所指派的位址空間不應大於 /16 的 CIDR 範圍。 Vnet 允許使用 65536 IP 位址，並指派較小的前置詞（例如具有131072位址的/15），會導致多餘的 IP 位址無法在別處變成無法使用。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
+- 您應該 `/16` 為每個 VNet 指派一個不大於 CIDR 範圍的位址空間。 Vnet 允許使用 65536 IP 位址，並指派較小的前置詞（ `/16` 例如 `/15` 具有131072位址的），會導致多餘的 IP 位址無法在別處變成無法使用。 務必不要浪費 IP 位址，即使其位於 RFC 1918 所定義的私人範圍內也是如此。
 - VNet 位址空間不得與內部部署網路範圍重疊。
-- 請勿使用網路位址轉譯 (NAT)。
+- 請勿使用網路位址轉譯（NAT）。
 - 位址重疊可能會導致網路無法連線且路由無法正常運作。 如果網路重疊，您必須重新設計網路，或使用網路位址轉譯 (NAT)。
 
 **瞭解更多資訊：**
@@ -58,7 +58,7 @@ Azure 提供具有下列功能的虛擬網路：
 中樞和輪輻網路拓撲會在共用服務 (例如身分識別和安全性) 時隔離工作負載。
 
 - 中樞是作為連線中心點的 Azure VNet。
-- 輪輻是會使用 VNet 對等互連來連線至中樞 VNet 的 VNet。
+- 輪輻是使用虛擬網路對等互連連線到中樞 VNet 的 Vnet。
 - 共用的服務會部署在中樞中，而個別的工作負載會部署為輪輻。
 
 請考慮下列事項：
@@ -73,9 +73,9 @@ _中樞和輪輻拓撲_
 
 **瞭解更多資訊：**
 
-- [了解](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)中樞和輪輻拓撲。
-- 取得用來執行 Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) 和 [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) VM 的網路建議。
-- 深入瞭解[VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
+- 閱讀[中樞和輪輻拓撲](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)的相關資訊。
+- 取得在 Azure 中執行[Windows vm](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm)和[Linux vm](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm)的網路建議。
+- 深入瞭解[虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
 
 ## <a name="best-practice-design-subnets"></a>最佳做法：設計子網
 
@@ -88,7 +88,7 @@ _中樞和輪輻拓撲_
 - 在決定子網路的網路範圍時，務必請注意 Azure 會在每個子網路保留五個不得使用的 IP 位址。 例如，如果您建立最小的可用子網路 /29 (具有八個 IP 位址)，Azure 將會保留五個位址，因此您可以指派給子網路上主機的可用位址只剩三個。
 - 在大部分的情況下，請使用/28 做為最小的子網。
 
-**範例：**
+**範例︰**
 
 下表所舉的 VNet 範例會將位址空間 10.245.16.0/20 劃分成子網路，以便進行計劃性移轉。
 
@@ -212,7 +212,7 @@ _站對站 VPN_
 
 對於多個 VPN 連線，Azure 虛擬 WAN 可作為網路服務，透過 Azure 提供最佳且自動化的分支對分支連線。
 
-- 虛擬 WAN 可讓您連線，並設定與 Azure 通訊的分支裝置。 做法是以手動方式，或透過虛擬 WAN 合作夥伴使用慣用的提供者裝置。
+- 虛擬 WAN 可讓您連線，並設定與 Azure 通訊的分支裝置。 這可以手動完成，或透過 Azure 虛擬 WAN 合作夥伴使用慣用的提供者裝置。
 - 使用慣用的提供者裝置可讓您輕鬆地進行使用、連線和管理組態。
 - Azure WAN 的內建儀表板可提供即時的疑難排解深入解析讓您節省時間，並可讓您輕鬆地追蹤大規模的站對站連線。
 
@@ -239,7 +239,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 
 當您有多個 ExpressRoute 線路時，會有一個以上的路徑來連線到 Microsoft。 因此，可能會產生次佳的路由，而且您的流量可能會經由較長的路徑連到 Microsoft，而 Microsoft 也可能會經由較長的路徑連到您的網路。 網路路徑愈常，延遲愈久。 延遲對於應用程式效能和使用者體驗有直接的影響。
 
-**範例：**
+**範例︰**
 
 讓我們檢閱一個範例：
 
@@ -261,7 +261,7 @@ Azure ExpressRoute 服務可將內部部署基礎結構延伸至 Microsoft 雲�
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
 _BGP 社群未最佳化的連線_
 
-**解決方法：**
+**解決方案：**
 
 若要為這兩個辦公室的使用者最佳化路由，您需要知道哪個前置詞來自 Azure 美國西部以及哪個前置詞來自 Azure 美國東部。 您可以使用 BGP 社群值來編碼這項資訊。
 
@@ -357,7 +357,7 @@ _周邊網路部署_
 - 應用程式安全性群組可讓您大規模重複使用您的安全性原則，而不需進行明確 IP 位址的手動維護。
 - 應用程式安全性群組可處理明確 IP 位址和多個規則集的複雜性，讓您專注於商務邏輯。
 
-**範例：**
+**範例︰**
 
 ![應用程式安全性群組](./media/migrate-best-practices-networking/asg.png)
 _應用程式安全性群組範例_

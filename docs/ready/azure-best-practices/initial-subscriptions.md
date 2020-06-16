@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 975248025ff170ff872fdd5970f548a8fc83c953
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8a1b1838617c9d82c4e8cca239aa4abc9d853f3c
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215393"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799954"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>建立您的初始 Azure 訂用帳戶
 
@@ -46,7 +46,7 @@ ms.locfileid: "83215393"
 
 ## <a name="shared-services-subscription"></a>共用服務訂用帳戶
 
-如果您打算在**24 個月內裝載超過1000個 vm 或計算實例在雲端中**，請建立另一個 Azure 訂用帳戶來裝載共用服務。 這會讓您事先準備好支援您的最終狀態企業架構。
+如果您打算在**24 個月內裝載超過1000個 vm 或計算實例在雲端中**，請建立另一個 Azure 訂用帳戶來裝載共用服務。 這會讓您能夠支援您的最終狀態企業架構。
 
 ![初始訂用帳戶模型，會在標示為「生產」和「共用服務」的方塊旁顯示金鑰](../../_images/ready/initial-subscription-model-with-shared-services.png)
 

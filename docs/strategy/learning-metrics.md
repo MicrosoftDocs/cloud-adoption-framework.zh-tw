@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d403a16abd441c7698fb4f6ec66328d37641d806
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221411"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786189"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-can-we-align-efforts-to-meaningful-learning-metrics"></a>我們要如何將努力調整為有意義的學習計量？
 
 「[商務結果」總覽](./business-outcomes/index.md)討論了測量和傳達轉換對企業之影響的方式。 可惜的是，某些結果可能需要數年的時間，才會產生可測量的結果。 面板和 C-套件不符合長時間顯示 0% delta 的報表。

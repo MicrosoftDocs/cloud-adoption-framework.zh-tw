@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c73d4baaa71b87c749483a8fb5ba9f53bb72d70
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b3f72f4fb73550c3e2a421cb9965b8ac0c75b80e
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752704"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786070"
 ---
 # <a name="improve-operations"></a>改善作業
 
@@ -33,6 +33,6 @@ ms.locfileid: "83752704"
 
 ![共用架構原則](../_images/shared-principles.png)
 
-上述原則會在[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)之間共用， [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)，以及[Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案。 Azure Advisor 會評估個別資源的原則。 Azure 架構中心會套用這些原則，以提供架構良好的解決方案。 在制定架構決策時，Microsoft Azure 架構完善的架構可協助平衡工作負載之間的這些原則。
+上述原則會在[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、 [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)，以及[Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案之間共用。 Azure Advisor 會評估個別資源的原則。 Azure 架構中心會套用這些原則，以提供架構良好的解決方案。 在進行架構決策時，Microsoft Azure 架構良好架構可協助平衡工作負載之間的這些原則。
 
 雲端採用架構藉由將這些原則套用至工作負載的組合和支援的環境，來確保妥善管理的環境。

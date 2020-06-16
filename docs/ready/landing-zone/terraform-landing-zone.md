@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a249003f6251c62fd57059d1b2dca5c00476c7fc
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755649"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799801"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
@@ -45,7 +45,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 資源群組 | 基礎所需的核心資源群組 |
 | 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
 | 診斷記錄 | 保留特定天數的所有作業記錄： <li> 儲存體帳戶 <li> 事件中樞 |
-| Log Analytics | 儲存所有作業記錄。 針對深度應用程式的最佳做法審查部署常見的解決方案： <li> Networkmonitoring <li> Adassessment <li> Get-adreplication <li> Agenthealthassessment <li> Dnsanalytics <li> Keyvaultanalytics |
+| Log Analytics | 儲存作業記錄。 針對深度應用程式的最佳做法審查部署常見的解決方案： <li> NetworkMonitoring <li> AdAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示 |
 
 <!-- markdownlint-enable MD033 -->
@@ -88,18 +88,19 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 以下顯示的最小標記集必須存在於所有資源和資源群組上：
 
-| 標籤名稱          | Description                                                                                        | 答案             | 範例值                                    |
-|-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| 業務單位     | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | Businessunit    | 財務，行銷，{產品名稱}，corp，共用 |
-| 成本中心       | 與此資源相關聯的會計成本中心。                                              | Costcenter      | 數字                                           |
-| 災害復原 | 應用程式、工作負載或服務的業務關鍵性。                                     | 災難              | 啟用 dr、未啟用 dr                       |
-| 環境       | 應用程式、工作負載或服務的部署環境。                                   | Env             | 生產、開發、QA、階段、測試、訓練             |
-| 擁有人名稱        | 應用程式、工作負載或服務的擁有者。                                                    | 擁有者           | 電子郵件                                            |
-| 部署類型   | 定義維護資源的方式。                                                    | Deploymenttype  | Manual、Terraform                                |
-| 版本           | 已部署藍圖的版本。                                                                 | 版本         | V 0。1                                             |
-| 應用程式名稱  | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。             | Applicationname | 「應用程式名稱」                                       |
+<!-- TODO: Review capitalization and hyphenation -->
+<!-- TODO: Eliminate either "Tag name" or "Key" column -->
 
-<!-- cSpell:ignore caf -->
+| 標籤名稱          | 描述                                                                                        | Key             | 範例值                                    |
+|-------------------|----------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
+| 業務單位     | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | `BusinessUnit`    | `finance`, `marketing`, `<product-name>`, `corp`, `shared` |
+| 成本中心       | 與此資源相關聯的會計成本中心。                                              | `CostCenter`      | `<cost-center-number>`                                     |
+| 災害復原 | 應用程式、工作負載或服務的業務關鍵性。                                     | `DR`              | `dr-enabled`, `non-dr-enabled`                   |
+| 環境       | 應用程式、工作負載或服務的部署環境。                                   | `Env`             | `prod`, `dev`, `qa`, `staging`, `test`, `training` |
+| 擁有人名稱        | 應用程式、工作負載或服務的擁有者。                                                    | `Owner`           | `email`                                            |
+| 部署類型   | 定義維護資源的方式。                                                    | `DeploymentType`  | `manual`, `terraform`                                |
+| 版本           | 已部署藍圖的版本。                                                                 | `Version`         | `v0.1`                                             |
+| 應用程式名稱  | 與資源相關聯的相關聯應用程式、服務或工作負載的名稱。             | `ApplicationName` | `<app-name>`                                       |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>自訂和部署您的第一個登陸區域
 
@@ -207,7 +208,7 @@ security_center = {
 - 將其他模組新增至藍圖。
 - 將其他登陸區域分層在其上。
 
-分層登陸區域是一個很好的作法，用來分離系統、為您所使用的每個元件設定版本，以及為您的基礎結構做為程式碼部署提供快速的創新和穩定性。
+將登陸區域分層是一個很好的作法，用來分離系統、為您所使用的每個元件設定版本，以及為您的基礎結構做為程式碼部署提供快速的創新和穩定性。
 
 未來的參考架構將會針對中樞與輪輻拓撲示範此概念。
 

@@ -7,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 492a1f58848c0889bc80d6e5b535019e785f5c34
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861560"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785458"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)可以協助您將治理套用至您的雲端資源。 此服務可協助您建立護欄，以確保公司範圍符合治理原則需求。 若要建立原則，請使用 Azure 入口網站或 PowerShell Cmdlet。 本文提供 PowerShell Cmdlet 範例。
 
 > [!NOTE]
-> 使用 Azure 原則，強制原則（**deployIfNotExists**）不會自動部署至現有的 vm。 必須進行補救以保持 Vm 合規性。 如需詳細資訊，請參閱[使用 Azure 原則補救不相容的資源](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources)。
+> 使用 Azure 原則，強制原則（ `DeployIfNotExists` ）不會自動部署至現有的 vm。 必須進行補救以保持 Vm 合規性。 如需詳細資訊，請參閱[使用 Azure 原則補救不相容的資源](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources)。
 
 ## <a name="common-policy-examples"></a>一般原則範例
 

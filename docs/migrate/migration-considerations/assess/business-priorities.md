@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6f2bac40952af40376e57243c75c4dd6910d2bc1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215478"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787838"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊
 
@@ -23,8 +23,6 @@ _轉換_通常定義為大幅或自發性的變更。 對董事會階層而言�
 可惜的是，市場並不會靜待企業轉型。 消費者行為模式本身就常會出乎意料地發生變化。 市場對公司及其產品的認知，可能會因為社交媒體或競爭同業的定位而搖擺不定。 面對快速而難測的市場，公司必須能靈活因應。
 
 要能夠執行程序和技術轉型，須仰賴一致且穩定的工作。 必須要有迅速的決策和靈活的措施，才能因應市場狀況。 這兩者是互相矛盾的，因此優先順序很難保有一致性。 本文說明在移轉工作執行期間有哪些方法可維持過渡的一致性。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-business-and-technical-priorities-stay-aligned-during-a-migration"></a>在移轉期間，業務和技術的優先順序如何保持一致？
 

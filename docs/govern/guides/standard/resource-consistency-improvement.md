@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ee0387a0de73af6b26a4a2396582bf790f2ec65
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219915"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786971"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>標準企業治理指南：改善資源一致性專業領域
 
@@ -91,7 +91,7 @@ ms.locfileid: "83219915"
     1. 在所有訂用帳戶上稽核並強制執行重要性和資料分類，以識別任何具有任務關鍵性資產的訂用帳戶。
     2. 僅稽核並強制使用已核准的映像。
 5. Azure 監視器實作：
-    1. 一旦識別出要徑任務的工作負載，請建立 Azure 監視器工作區。
+    1. 一旦識別出要徑任務的工作負載，請建立 Azure 監視器 Log Analytics 工作區。
     2. 在部署測試期間，雲端作業小組會部署必要的代理程式和測試探索。
 6. 針對包含任務關鍵性應用程式的所有訂用帳戶更新 Azure 原則。
     1. 稽核並強制執行使用 NSG 連到所有 NIC 和子網路的應用程式。 網路和 IT 安全性會定義 NSG。

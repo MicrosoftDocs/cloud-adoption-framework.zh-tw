@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7a09f6fe1dd337d1c42eb193cc23c9aa9519e6b9
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: ee5ef7d171002d21b104b8fad7a33a77a57cfaa9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815407"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788195"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 
@@ -88,7 +88,7 @@ ms.locfileid: "83815407"
 
 **最小範圍：** 在初期規劃期間，請使用重新裝載選項進行規劃，並清楚瞭解此選項是初步的商業假設，而不是技術決策。 在遷移方法中，雲端採用小組接著會針對每個遷移的工作負載挑戰這項假設。 此方法會針對每個工作負載或群組或工作負載建立遷移 factory，遵循評估/遷移/升級方法。 在評估階段，採用小組會評估每個工作負載的技術配合和架構。 該評估工作不常產生單純的隨即轉移方法，因為架構中的許多元件通常會針對重構和現代化進行選取。
 
-**擴充的範圍範例：** 針對任務關鍵性或高敏感度的工作負載（例如大型主機或多層式微服務應用程式），在評估階段中可能需要更深入的工作負載評估。 在這些改造情況下，客戶應該使用 Microsoft Azure 良好架構的審查，並 Microsoft Azure 架構良好的架構，以在評估期間調整工作負載需求。
+**擴充的範圍範例：** 針對任務關鍵性或高敏感度的工作負載（例如大型主機或多層式微服務應用程式），在評估階段中可能需要更深入的工作負載評估。 在這些改造情況下，客戶應該使用 Microsoft Azure 良好架構的審查，並[Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)，以在評估期間調整工作負載需求。
 
 ## <a name="balance-during-the-innovate-phase"></a>創新階段期間的餘額
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 4c97e3fea6d6191e628eda6c0f9b61c2e6063d50
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815305"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787906"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -23,9 +23,9 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 1. **容量：** 每個區域都有最大容量。 雖然這通常會與使用者抽象化，但它可能會影響哪些類型的訂用帳戶可以部署哪些類型的服務，以及在何種情況下。 這與訂用帳戶配額不同。 如果您打算將大規模的資料中心遷移至 Azure，您可能會想要洽詢您當地的 Azure 欄位小組或客戶經理，以確認您可以視需要進行部署。
 1. **條件約束：** 某些條件約束會放在特定區域的服務部署上。 例如，某些區域只能作為備份或容錯移轉目標。 其他值得注意的條件約束是[資料主權需求](https://azure.microsoft.com/global-infrastructure/geographies)。
 1. **主權：** 某些地區專屬於特定的主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其餘 Azure 區域徹底分開、不一定會由 Microsoft 管理，而且可能會受限於特定客戶類型。 這些主權區域包括：
-    1. [Azure 中國](https://azure.microsoft.com/global-infrastructure/china)
+    1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
     1. [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany)：已淘汰，取而代之于德國的標準 nonsovereign Azure 區域
-    1. [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
+    1. [Azure US Gov](https://azure.microsoft.com/global-infrastructure/government)
     1. 注意：[澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)中的兩個區域雖由 Microsoft 管理，卻提供給澳大利亞政府及其客戶和承包商使用，因此會有和其他主權雲端類似的用戶端條件約束。
 
 ## <a name="operate-in-multiple-geographic-regions"></a>在多個地理區域營運
@@ -51,7 +51,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
   > [!WARNING]
   > 請勿嘗試使用 Azure GRS 來備份或復原 VM。 相反地，請使用 [Azure 備份](https://azure.microsoft.com/services/backup)和 [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) 以及 [Azure 受控磁碟](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)來支援 IaaS 工作負載的復原。
 
-- Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已進行最佳化，讓資料傳輸留在 Microsoft 骨幹上，並盡可能使用 [VNet 對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全域部署的較大型組織可以改為使用[ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) ，在可儲存區域輸出費用的區域之間路由傳送流量。
+- Azure 備份和 Azure Site Recovery 會與您的網路設計一同合作，以利您獲得 IaaS 和資料備份所需的區域復原能力。 請確定網路已優化，因此資料傳輸會保留在 Microsoft 骨幹上，並盡可能使用[虛擬網路對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。 某些具有全域部署的較大型組織可以改為使用[ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) ，在可儲存區域輸出費用的區域之間路由傳送流量。
 
 - Azure 資源群組是區域專屬的建構。 不過，讓資源群組內的資源跨越多個區域是很常見的事。 當您這麼做時，請務必考慮到在發生區域性失敗時，針對資源群組的控制平面作業將會在受影響的區域中失敗，但其他區域中的資源 (屬於該資源群組) 則會繼續運作。 這可能會同時影響到網路設計和資源群組設計。
 
@@ -85,8 +85,6 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 | 北美洲 | 加拿大      | 否              | 客戶              | 是                         | 是                           |
 | 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
 | 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance-of-data-sovereignty"></a>資料主權的相關性
 

@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218997"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788144"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>如何使用商務結果範本
 
 如[商業成果總覽](./index.md)中所述，在商務和技術交談之間，可能會難以填補橋樑。 這個簡單的範本是設計用來協助小組一致地捕捉商業成果，以供日後開發客戶轉換旅程策略時使用。
 
 下載[商務結果範本試算表](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)以開始集體討論和追蹤商務結果。 繼續閱讀以瞭解如何使用範本。 請參閱「[商務結果」一節](./index.md)，以瞭解有關可能會在主管交談中出現的潛在業務結果的想法。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="use-the-business-outcome-template"></a>使用商務結果範本
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: db53dbb9e024cdde817b80a79dae3e3e789d9c16
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: 0dc11884a761b41a2c4da02d60b55b01eab3e59a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023537"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785526"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -96,14 +96,14 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 ### <a name="azure-services"></a>Azure 服務
 
-**服務** | **描述** | **成本**
---- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。
-[Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。
+| 服務 | 描述 | 成本 |
+|---|---|---|
+| [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只需就取用的虛擬機器以及相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。 |
+| [Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。 |
+| [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 方案以每秒計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -202,7 +202,7 @@ Contoso 管理員會依下列方式進行佈建：
 
 Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器，然後將它推送至容器登錄。 本節中的指示會使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。
 
-1. 他們會從 visualstudio.com 建立新的組織 (**contosodevops360.visualstudio.com**)，並將它設定為使用 Git。
+1. 從開始 `visualstudio.com` ，他們會建立新的組織（**contosodevops360.visualstudio.com**），並將它設定為使用 Git。
 
 2. 他們會建立新的專案 (**SmartHotelBackend**)，此專案使用 Git 來進行版本控制，並使用 Agile 來進行工作流程。
 
@@ -423,9 +423,9 @@ Contoso 管理員會使用 Azure 入口網站來佈建 Web 應用程式。
 
     ![Web 應用程式預備位置](./media/contoso-migration-rebuild/web-app3.png)
 
-### <a name="provision-the-azure-function-app"></a>佈建 Azure 函數應用程式
+### <a name="provision-the-function-app"></a>布建函數應用程式
 
-Contoso 管理員會在 Azure 入口網站中佈建函數應用程式。
+在 Azure 入口網站中，Contoso 管理員會布建函數應用程式。
 
 1. 他們會選取 [函數應用程式]****。
 
@@ -563,7 +563,7 @@ Contoso 管理員會依下列方式部署應用程式。
 
 1. 他們會連線至 Azure DevOps 專案，以從本機將存放庫複製到開發機器。
 2. 在 Visual Studio 中，他們會開啟資料夾以顯示存放庫中的所有檔案。
-3. 他們會開啟**src/petcheckerfunction local.settings.json/local. json**檔案，並新增儲存體、Azure Cosmos DB 資料庫和電腦視覺 API 的應用程式設定。
+3. 他們會**在檔案上開啟 src/petcheckerfunction local.settings.json/local.settings.js** ，並新增儲存體、Azure Cosmos DB 資料庫和電腦視覺 API 的應用程式設定。
 
     ![部署函式](./media/contoso-migration-rebuild/function5.png)
 

@@ -7,16 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc67072e80cc752a1167ad453a56fd96f6890874
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9e69c9728d5ba8664a4a3bec2fc4e742662a2c5a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219235"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787770"
 ---
 <!-- cSpell:ignore CISO -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>要將移轉後的資源升階至生產環境需要什麼？
 

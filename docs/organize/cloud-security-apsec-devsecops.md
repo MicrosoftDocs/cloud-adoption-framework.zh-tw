@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3211c0a923d292b15b67ffd6734b97261307a199
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ecbe91a3c5a1ed8f06f49bd82214c5b734e7b807
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755534"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787736"
 ---
 # <a name="application-security-and-devsecops-functions"></a>應用程式安全性和 DevSecOps 函式
 
@@ -27,13 +27,13 @@ ms.locfileid: "83755534"
 <!-- TODO: Link needed below? -->
 - **安全性已整合，而不是在核准外部：** 應用程式開發的快速變更速度使傳統臂長度的「掃描和報告」方法過時。 這些舊版方法無法趕上發行，而不需要再進行終止開發，也不會建立上市時間、開發人員使用量過低，以及問題待處理專案的成長。
   - 在稍早的應用程式開發過程中，向**左移動**安全性，因為修正問題較便宜、更快速且更有效率。 如果您等到蛋糕內建之後，就難以變更圖形。
-  - **原生整合：** 安全性作法必須緊密整合，以避免在開發工作流程和持續整合/持續部署（CI/CD）流程中發生狀況不佳的摩擦。 若要瞭解 GitHub 如何達到此，請參閱[保護軟體的安全](https://github.blog/2019-09-18-securing-software-together/)。
+  - **原生整合：** 安全性作法必須緊密整合，以避免在開發工作流程和持續整合/持續部署（CI/CD）流程中發生狀況不佳的摩擦。 若要瞭解 GitHub 如何達到此，請參閱[保護軟體的安全](https://github.blog/2019-09-18-securing-software-together)。
   - **高品質的安全性：** 安全性必須提供高品質的發現和指導方針，讓開發人員能夠快速修正問題，而不會浪費開發人員時間的誤報。
   - 交集**文化特性：** 安全性、開發和作業角色應該將重要元素提供給共用的文化、共用值，以及共用的目標和標準責任。
-- **Agile 安全性：** 將安全性從「必須完美地出貨」轉換成一種敏捷式方法，其開頭為應用程式的最小可行安全性（以及開發它們的進程），並以累加方式持續改善。
+- **Agile 安全性：** 將安全性從「必須是完美的出貨」方法轉移到靈活的方法，其開頭為應用程式的最小可行安全性（以及開發它們的進程），並以累加方式持續改善。
 - 採用**雲端原生**基礎結構和安全性功能，以簡化開發流程，同時整合安全性。
-- **供應鏈風險管理：** 採取「零信任」方法來開啟來源軟體（OSS）和協力廠商元件，以驗證其完整性並確保將錯誤修正和更新套用到這些元件。
-- **持續學習：** 開發人員服務的快速發行步調（有時稱為平臺即服務（PaaS）服務）和變更應用程式組合，意味著 dev、ops 和 security 小組成員將持續學習新技術。
+- **供應鏈風險管理：** 採用零信任的方法來開啟來源軟體（OSS）和協力廠商元件，以驗證其完整性並確保將錯誤修正和更新套用到這些元件。
+- **持續學習：** 開發人員服務的快速發行步調，有時稱為平臺即服務（PaaS）服務，而變更應用程式的組合，表示 dev、ops 和安全性小組成員將持續學習新技術。
 - 應用程式安全性的程式**設計方式**，以確保能持續改進 agile 方法。
 
 如需其他內容，請參閱[Microsoft 安全開發生命週期](https://www.microsoft.com/sdl)。

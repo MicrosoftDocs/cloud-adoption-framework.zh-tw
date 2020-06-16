@@ -7,15 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 17d6368eb8e0d55e8ad8107601a690046af1c2e9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ae57f79aeb4976a2c6306728f354ab972f3b33e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755626"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788110"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-do-azure-products-support-the-portfolio-hierarchy"></a>Azure 產品如何支援組合階層？
 
 在[瞭解和對齊組合](./hosting-hierarchy.md)階層時，組合階層和角色對應的一組定義會針對大部分的組合方法建立範圍的階層。 如該文章所述，您可能不需要每個大綱層級或_範圍_。 將層級的數目降到最低會降低複雜度，因此這些層不應全部視為需求。

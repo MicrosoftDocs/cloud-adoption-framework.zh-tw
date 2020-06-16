@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 905ceb5acbfaef1e07297cdd1a70c21770aea2b9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862376"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786444"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "83862376"
 | [Azure 產品如何支援組合階層？](../reference/fundamental-concepts/hierarchy-azure-tools.md) | 瞭解支援您的組合階層的 Azure 工具和解決方案。 |
 | [管理組織一致性](../organize/index.md) | 建立妥善的組織結構，使其成為雲端的有效操作模型。 |
 
-## <a name="april-14-2020"></a>2020年4月14日
+## <a name="april-14-2020"></a>2020 年 4 月 14 日
 
 我們已將所有雲端採用工具和樣板集中在一個位置，讓它們更容易尋找。
 
@@ -65,7 +65,7 @@ ms.locfileid: "83862376"
 | [改善登陸區域安全性](../ready/considerations/landing-zone-security.md)                       | **新文章：** 本章節中的最佳作法總覽，與 TDD 週期相關。 |
 | [改善登陸區域作業](../ready/considerations/landing-zone-operations.md)                       | **新文章：** 管理方法中的最佳做法清單，並轉換成該模組化方法來改善作業、可靠性和效能。 |
 | [改善登陸區域控管](../ready/considerations/landing-zone-governance.md)                       | **新文章：** 與管理方法相關的最佳作法清單，並轉換成該模組化方法來改善控管、成本管理和規模。 |
-| [開始使用企業規模](../ready/considerations/enterprise-scale.md)                       | **新文章：** 示範當客戶從企業級登陸區域範本開始時，顯示程式中差異的方法。 本文可協助客戶瞭解支援這項決策的限定詞。 |
+| [開始使用企業規模](../ready/enterprise-scale/index.md)                       | **新文章：** 示範當客戶從企業級登陸區域範本開始時，顯示程式中差異的方法。 本文可協助客戶瞭解支援這項決策的限定詞。 |
 | 目錄更新                       | 目錄已更新，以反映新的文章。  |
 
 ## <a name="march-27-2020"></a>2020年3月27日
@@ -125,7 +125,7 @@ ms.locfileid: "83862376"
 | 文章                                                                                          | 說明                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [概觀](../migrate/azure-migration-guide/index.md)                                            | 以更清楚的指南描述和較少的步驟進行更新。                                                                                                        |
-| [評定](../migrate/azure-migration-guide/assess.md)                                             | 新增「具挑戰性的假設」一節，以示範此層級的評估如何與計畫方法中所述的累加評估方法搭配運作。 |
+| [評估](../migrate/azure-migration-guide/assess.md)                                             | 新增「具挑戰性的假設」一節，以示範此層級的評估如何與計畫方法中所述的累加評估方法搭配運作。 |
 | [評估程式期間的分類](../migrate/migration-considerations/assess/classify.md) | **新文章：** 概述在遷移之前分類每個資產和工作負載的重要性。                                                                    |
 | [移轉](../migrate/azure-migration-guide/migrate.md)                                           | 已在協力廠商工具選項中新增 UnifyCloud 的參考，以回應第1層會議的意見反應。                                                         |
 | [測試、 &nbsp; 優化 &nbsp; 及 &nbsp; 升級](../migrate/azure-migration-guide/optimize-and-transform.md)        | 將本文的標題與其他進程改進建議一致。                                                                                           |

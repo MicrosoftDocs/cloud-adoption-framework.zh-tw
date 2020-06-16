@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 889a524c26b06a3252dc84d9fa36426cdc07b88c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a2ba721783451128f4d2f117305309b40a8b862
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223349"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799750"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -30,8 +30,8 @@ ms.locfileid: "83223349"
 - [網路虛擬裝置（Nva）][network-virtual-appliances]
 - [Azure 負載平衡器][alb]
 - [Azure 應用程式閘道][appgw]和[Web 應用程式防火牆（WAF）][appgwwaf]
-- [公用 Ip][PIP]
-- 具有[Web 應用程式防火牆][afdwaf]的[Azure Front 門板服務][afd]
+- [公用 IP][PIP]
+- 使用[Web 應用程式防火牆][afdwaf]的[Azure Front][afd]
 - [Azure 防火牆][Azure-firewall]
 
 > [!NOTE]
@@ -82,15 +82,17 @@ Azure Load Balancer 也可以探查各種伺服器執行個體的健全狀況。
 
 如需使用中樞和輪輻網路拓撲的範例，您可以將外部負載平衡器部署至中樞和輪輻。 在中樞中，負載平衡器會有效率地將流量路由傳送到支點中的服務。 在支點中，負載平衡器會管理應用程式流量。
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-[Azure Front Door Service][afd] 是 Microsoft 的高可用性和可擴充 Web 應用程式加速平台和全域 HTTPS 負載平衡器。 您可以使用 Azure Front Door Service 來建置、操作及相應放大您的動態 Web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
+[Azure Front 大門][afd]是 Microsoft 的高可用性和可擴充的 web 應用程式加速平臺和全域 HTTPS 負載平衡器。 您可以使用 Azure Front 門板來建立、操作及相應放大您的動態 web 應用程式和靜態內容。 它會在 Microsoft 全球網路邊緣的 100 多個位置中執行。
 
-Azure Front Door Service 為您的應用程式提供統一的區域/戳記維護自動化、BCDR 自動化、統一的用戶端/使用者資訊、快取和服務見解。 平台提供效能、可靠性和支援 SLA。 它也提供合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
+Azure Front 大門為您的應用程式提供統一的區域/戳記維護自動化、BCDR 自動化、統一的用戶端/使用者資訊、快取和服務見解。 平台提供效能、可靠性和支援 SLA。 它也提供合規性認證，以及由 Azure 原生開發、操作及支援的可稽核安全性做法。
 
 ## <a name="azure-application-gateway"></a>Azure 應用程式閘道
 
 [Azure 應用程式閘道][appgw]是專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。
+
+<!-- docsTest:ignore "application gateway" TODO -->
 
 Azure 應用程式閘道可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的生產力。 它也提供其他第7層路由功能，包括迴圈配置連入流量、以 cookie 為基礎的會話親和性、以 URL 路徑為基礎的路由，以及在單一應用程式閘道上裝載多個網站的能力。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
-ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
+ms.openlocfilehash: 300a2c7758d78842e917f4cd0881406835e0aad9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84149367"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786019"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：調整您的組織
 
@@ -72,7 +72,7 @@ ms.locfileid: "84149367"
 
 觀看這段影片，以瞭解組織成熟度各個階段的一般小組結構。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS>]
 
 ## <a name="step-5-align-raci-charts"></a>步驟5：對齊 RACI 圖表
 

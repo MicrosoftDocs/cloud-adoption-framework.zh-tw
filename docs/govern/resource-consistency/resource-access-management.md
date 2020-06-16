@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7ba81874caf48d7220d206feede39aee2e0c77a2
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756170"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785951"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
 [管理方法](../index.md)概述雲端治理的五個專業領域，其中包括資源管理。 [什麼是資源存取治理](./index.md)進一步說明了資源存取管理如何融入資源管理專業領域。 在您繼續了解如何設計治理模型之前，務必了解 Azure 中的資源存取權管理控制項。 這些資源存取權管理控制項的組態會形成治理模型的基礎。
 
 一開始請先仔細看看資源在 Azure 中的部署方式。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-an-azure-resource"></a>什麼是 Azure 資源？
 
@@ -32,16 +30,16 @@ ms.locfileid: "83756170"
 
 ## <a name="what-is-an-azure-resource-group"></a>什麼是 Azure 資源群組？
 
-Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是將多個資源分組在一起的邏輯結構，因此可以根據_生命週期和安全性_，以單一實體的形式進行管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 還有另一種方式：在一起合作的所有專案，一起一起管理，並淘汰在一起，一起放在資源群組中。
+Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是將多個資源分組在一起的邏輯結構，因此可以根據_生命週期和安全性_，以單一實體的形式進行管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 換句話說，在一起的所有專案會一起進行管理，並淘汰在一起，一起放在資源群組中。
 
 ![包含資源的資源群組圖 ](../../_images/govern/design/governance-1-10.png)
  _2：資源群組包含資源。_
 
-資源群組及其所包含的資源會與 Azure **訂用帳戶**相關聯。
+資源群組及其所包含的資源會與 Azure 訂用帳戶相關聯。
 
 ## <a name="what-is-an-azure-subscription"></a>什麼是 Azure 訂用帳戶？
 
-Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源群組及其資源群組在一起。 Azure 訂用帳戶也會與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
+Azure_訂_用帳戶類似于資源群組，因為它是將資源群組及其資源分組在一起的邏輯結構。 Azure 訂用帳戶也會與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
 
 ![Azure 訂用帳戶圖 ](../../_images/govern/design/governance-1-11.png)
  _3： azure 訂_用帳戶。
@@ -63,10 +61,10 @@ Azure 訂用帳戶類似於資源群組，它是一個邏輯建構，將資源�
 ![Azure 資源提供者 ](../../_images/govern/design/governance-1-14.png)
  _圖6： azure 資源提供者。_
 
-當用戶端要求管理特定資源時，Azure Resource Manager 會連線到該資源類型的資源提供者，來完成要求。 例如，如果用戶端要求管理虛擬機器資源，Azure Resource Manager 會連線到 **Microsoft.compute** 資源提供者。
+當用戶端要求管理特定資源時，Azure Resource Manager 會連線到該資源類型的資源提供者，來完成要求。 例如，如果用戶端要求管理虛擬機器資源，Azure Resource Manager 會連接到 `Microsoft.Compute` 資源提供者。
 
 ![Azure Resource Manager 連接到 Microsoft。計算資源提供者 ](../../_images/govern/design/governance-1-15.png)
- _圖7： Azure Resource Manager 會連線到**microsoft. 計算**資源提供者，以管理用戶端要求中指定的資源。_
+ _圖7： Azure Resource Manager 會連線到 `Microsoft.Compute` 資源提供者，以管理用戶端要求中指定的資源。_
 
 Azure Resource Manager 需要用戶端同時指定訂用帳戶和資源群組的識別碼，才能管理虛擬機器資源。
 
@@ -77,7 +75,7 @@ Azure Resource Manager 需要用戶端同時指定訂用帳戶和資源群組的
 ![Azure Active Directory ](../../_images/govern/design/governance-1-16.png)
  _圖8： Azure Active Directory。_
 
-在 Azure AD 中，使用者會劃分到不同**租用戶**中。 租用戶是一種邏輯建構，代表通常與組織相關聯的 Azure AD 專用的安全執行個體。 每個訂用帳戶都會與 Azure AD 租用戶相關聯。
+在 Azure AD 中，使用者會劃分到不同租用戶中。 _租_使用者是一種邏輯結構，代表通常與組織相關聯 Azure AD 的安全、專用的實例。 每個訂用帳戶都會與 Azure AD 租用戶相關聯。
 
 ![與訂用帳戶相關聯的 Azure AD 租使用者 ](../../_images/govern/design/governance-1-17.png)
  _圖9：與訂用帳戶相關聯的 Azure AD 租使用者。_
@@ -89,7 +87,7 @@ Azure Resource Manager 需要用戶端同時指定訂用帳戶和資源群組的
 ![指派給 RBAC 角色 ](../../_images/govern/design/governance-1-18.png)
  _的使用者圖10：租使用者中的每個使用者都會獲指派一或多個 RBAC 角色。_
 
-RBAC 角色指定了一組權限，使用者可能會在特定資源上採用那些權限。 當角色指派給使用者時，會套用這些權限。 例如，[內建**擁有者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)可讓使用者對資源執行任何動作。
+RBAC 角色指定了一組權限，使用者可能會在特定資源上採用那些權限。 當角色指派給使用者時，會套用這些權限。 例如，[內建 `owner` 角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)可讓使用者對資源執行任何動作。
 
 下一個控制項會檢查在針對 [Azure 資源原則](https://docs.microsoft.com/azure/governance/policy)指定的設定下，是否允許要求。 Azure 資源原則會指定對特定資源允許的作業。 例如，Azure 資源原則可以指定只允許使用者部署特定類型的虛擬機器。
 
