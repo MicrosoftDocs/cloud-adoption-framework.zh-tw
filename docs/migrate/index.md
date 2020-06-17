@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b5792eb9fbff305bde35a795d062e7c8586a5811
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621375"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787889"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -60,7 +60,7 @@ ms.locfileid: "83621375"
 
 移轉反覆項目可藉由移轉資產和工作負載來提供技術價值。 移轉波浪是最小的工作負載集合，可提供有形且可觀的商業價值。 每個反覆項目結束後均應產生報表，以概述完成的技術成果。 不過，商務變更和策略性規劃通常會在較高一點的層級發生。 當雲端採用小組進行移轉工作時，雲端策略小組會著重於規劃後續的 1-2 個移轉波浪。 雲端策略小組也會以學習計量的形式追蹤技術進展，以進一步了解實現商業價值的時程表。 就這一點而言，移轉波可說是追蹤商務結果、人員和時程表的反覆變更管理方法。
 
-如上一節的圖形中所說明，雲端採用架構的[方案](../plan/index.md)方法[、就緒](../ready/index.md)方法，以及[策略](../strategy/index.md)方法 (就某種程度而言) 中的程序，均提供規劃和管理移轉波浪的指引。 這些波浪的管理將對技術小組所要提供的移轉工作排定優先順序，並加以定義。
+如上一節的圖形中所說明，雲端採用架構的[方案方法](../plan/index.md)、[就緒方法](../ready/index.md)，以及[策略方法](../strategy/index.md) (就某種程度而言) 中的程序，均提供規劃和管理移轉波浪的指引。 這些波浪的管理將對技術小組所要提供的移轉工作排定優先順序，並加以定義。
 
 ## <a name="next-steps"></a>後續步驟
 

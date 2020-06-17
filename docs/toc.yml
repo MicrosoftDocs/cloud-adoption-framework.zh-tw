@@ -125,7 +125,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: Prerequisites
+          - name: 必要條件
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -169,28 +169,54 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: 隨時得知 Azure 的最新動態
             href: ready/azure-setup-guide/staying-current.md
-      - name: 第一個登陸區域
+      - name: Azure 登陸區域
         items:
           - name: 什麼是登陸區域？
             href: ready/landing-zone/index.md
-          - name: 重構登陸區域
-            href: ready/landing-zone/refactor.md
-          - name: 選擇第一個登陸區域
-            href: ready/landing-zone/first-landing-zone.md
-          - name: 移轉登陸區域藍圖
-            href: ready/landing-zone/migrate-landing-zone.md
-          - name: Terraform 登陸區域
-            href: ready/landing-zone/terraform-landing-zone.md
-      - name: 展開登陸區域
-        items:
-          - name: 概觀
-            href: ready/considerations/index.md
-          - name: 登陸區域的測試驅動開發 (TDD)
-            href: ready/considerations/test-driven-development.md
-          - name: Azure 中的登陸區域 TDD
-            href: ready/considerations/azure-test-driven-development.md
+          - name: 設計區域
+            href: ready/landing-zone/design-areas.md
+          - name: 實作選項
+            href: ready/landing-zone/implementation-options.md
+          - name: 開始使用企業規模
+            items:
+              - name: 概觀
+                href: ready/enterprise-scale/index.md
+              - name: 實作企業級登陸區域
+                href: ready/enterprise-scale/implementation.md
+              - name: 架構
+                href: ready/enterprise-scale/architecture.md
+              - name: 設計原則
+                href: ready/enterprise-scale/design-principles.md
+              - name: 設計指導方針
+                href: ready/enterprise-scale/design-guidelines.md
+              - name: 重要設計區域
+                items:
+                  - name: 企業註冊和 Azure AD 租用戶
+                    href: ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants.md
+                  - name: 身分識別和存取管理
+                    href: ready/enterprise-scale/identity-and-access-management.md
+                  - name: 管理群組和訂用帳戶組織
+                    href: ready/enterprise-scale/management-group-and-subscription-organization.md
+                  - name: 網路拓樸和連線能力
+                    href: ready/enterprise-scale/network-topology-and-connectivity.md
+                  - name: 管理與監視
+                    href: ready/enterprise-scale/management-and-monitoring.md
+                  - name: 商務持續性和災害復原
+                    href: ready/enterprise-scale/business-continuity-and-disaster-recovery.md
+                  - name: 安全性、治理和合規性
+                    href: ready/enterprise-scale/security-governance-and-compliance.md
+                  - name: 平台自動化和 DevOps
+                    href: ready/enterprise-scale/platform-automation-and-devops.md
+              - name: 實作指導方針
+                href: ready/enterprise-scale/implementation-guidelines.md
           - name: 從小規模著手並擴充
             items:
+              - name: CAF 遷移藍圖
+                href: ready/landing-zone/migrate-landing-zone.md
+              - name: CAF 基礎藍圖
+                href: ready/landing-zone/foundation-blueprint.md
+              - name: Terraform 登陸區域
+                href: ready/landing-zone/terraform-landing-zone.md
               - name: 基本登陸區域考量
                 items:
                   - name: 概觀
@@ -227,10 +253,14 @@ items:
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Azure 作業安全性最佳做法
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: 開始使用企業規模
+          - name: 基礎結構即程式碼理論
             items:
-              - name: 概觀
-                href: ready/considerations/enterprise-scale.md
+              - name: 重構登陸區域
+                href: ready/landing-zone/refactor.md
+              - name: 登陸區域的測試驅動開發 (TDD)
+                href: ready/considerations/test-driven-development.md
+              - name: Azure 中的登陸區域 TDD
+                href: ready/considerations/azure-test-driven-development.md
       - name: 最佳作法
         items:
           - name: 概觀
@@ -245,6 +275,8 @@ items:
                 href: ready/azure-best-practices/organize-subscriptions.md
               - name: 命名和標記
                 href: ready/azure-best-practices/naming-and-tagging.md
+              - name: 移動資源
+                href: 'https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
           - name: 網路功能
             items:
               - name: 網路邊界安全性
@@ -331,7 +363,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Prerequisites
+                  - name: 必要條件
                     items:
                       - name: 保護您的環境
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
@@ -561,7 +593,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: Prerequisites
+              - name: 必要條件
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 2a081290dc26e9ec57817cd51a2058be4725c7f4
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a9d3cb085de5e35d8e4db85f67390d670d816410
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753505"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786155"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 
@@ -42,4 +42,4 @@ ms.locfileid: "83753505"
 - **[雲端基本概念：Azure 計算選項的概觀](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)：** 提供 Azure IaaS 和 PaaS 計算選項功能的相關資訊。
 - **[雲端基本概念：選擇正確的資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)：** 討論 Azure 平台上可用的 PaaS 儲存體選項。
 - **[移轉的最佳做法：移轉工作期間資料需求超過網路容量](../../migrate/azure-best-practices/network-capacity-exceeded.md)：** 討論可用的網路頻寬阻礙資料移轉之案例的替代資料移轉機制。
-- **[SQL Database：在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)：** 討論選擇在裝載的基礎結構 (IaaS) 或裝載的服務 (PaaS) 環境中，裝載 SQL Server 工作負載的選項和業務理由。
+- **[SQL Database：在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)：** 討論選擇在受控基礎結構 (IaaS) 或受控服務 (PaaS) 環境中，裝載 SQL Server 工作負載的選項和業務理由。
