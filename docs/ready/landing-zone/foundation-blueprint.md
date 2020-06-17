@@ -7,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fe8f5d584da2c90e76226fb0d1d6a54d278f2159
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: b39c4fd19fecef4bb3f764d716efeb3832a0fa4e
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799580"
+ms.locfileid: "84813391"
 ---
-<!-- docsTest:ignore "CAF Foundation blueprint -->
+<!-- docsTest:ignore "CAF Foundation blueprint" -->
 
 # <a name="deploy-a-caf-foundation-blueprint"></a>部署 CAF Foundation 藍圖
 
@@ -22,7 +22,7 @@ CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立�
 
 ## <a name="deploy-the-blueprint"></a>部署藍圖
 
-在您使用雲端採用架構中的 CAF Foundation 藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[CAF Foundation 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
+在您使用雲端採用架構中的 CAF Foundation 藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[CAF Foundation 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation)。
 
 > [!div class="nextstepaction"]
 > [部署藍圖範例][deploy-sample]
@@ -43,7 +43,7 @@ CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立�
 
 此實作為選項假設目標訂閱已經與身分[識別管理最佳作法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)相關聯 Azure Active Directory 實例。
 
-### <a name="network-topology-and-connectivity"></a>網路拓撲和連線能力
+### <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
 此實作為選項假設登陸區域已根據[網路安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，已有定義的網路拓撲。
 

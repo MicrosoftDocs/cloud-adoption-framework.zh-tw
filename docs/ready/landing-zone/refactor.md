@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 29e0a802e01859cc466fe80549c4b24d4f4bc058
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 2c0cd1d7c44b6e950720af709216e6d3aa132b77
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799852"
+ms.locfileid: "84813305"
 ---
 # <a name="refactor-landing-zones"></a>重構登陸區域
 
@@ -85,7 +85,7 @@ Ready 方法會使用重整概念來加速遷移並移除常見的封鎖器。 [
 
 建立重構護欄的範例，可讓您比較先前範例和 CAF 遷移登陸區域藍圖中的開發方法。
 
-- 根據[CAF 遷移登陸區域藍圖的假設詳細](./migrate-landing-zone.md#assumptions)資料，這個初始登陸區域並不是針對敏感性資料或任務關鍵性工作負載而設計的。 這些功能必須透過重構來新增。
+- 根據[CAF 遷移登陸區域藍圖的假設](./migrate-landing-zone.md#assumptions)，此初始登陸區域並非針對敏感性資料或任務關鍵性工作負載而設計。 這些功能必須透過重構來新增。
 - 在此範例中，假設100工作負載的組合將同時需要任務關鍵性和敏感性資料裝載功能。
 
 為了平衡這兩個競爭的需求，採用小組和平臺小組會在下列同意的條件下運作：
@@ -107,7 +107,7 @@ Ready 方法會使用重整概念來加速遷移並移除常見的封鎖器。 [
 
 ## <a name="next-steps"></a>後續步驟
 
-若要開始進行重構程式，請[選擇您的第一個登陸區域](./first-landing-zone.md)。
+若要開始進行重構程式，請開始使用[Azure 登陸區域](./index.md)。
 
 > [!div class="nextstepaction"]
-> [選擇第一個登陸區域](./first-landing-zone.md)
+> [Azure 登陸區域](./index.md)

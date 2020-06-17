@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: bfda763d196250a70ab4785425c25193a3ea90ca
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752843"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812989"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -157,7 +157,7 @@ ms.locfileid: "83752843"
 
 所有遷移的資產都會部署在登陸區域中。 一開始，登陸區域很容易支援較小的工作負載。 經過一段時間，它會進行調整以解決更複雜的工作負載。
 
-- [選擇登陸區域](../ready/landing-zone/first-landing-zone.md)：使用本文來尋找適當的方法，以根據您的採用模式部署登陸區域。 然後部署該標準化的程式碼基底。
+- [選擇登陸區域](../ready/landing-zone/index.md)：使用本節來尋找根據您採用模式部署登陸區域的正確方法。 然後部署該標準化的程式碼基底。
 - [擴充您的登陸區域](../ready/considerations/index.md)：不論起點為何，在已部署的登陸區域中找出間距，以新增資源組織、安全性、治理、合規性和作業所需的元件。
 
 **項**

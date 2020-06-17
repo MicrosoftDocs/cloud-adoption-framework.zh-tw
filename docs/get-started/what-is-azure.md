@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 1992dedc1f20ad19bbc13a81f6277c5ad2bcd27f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7008ba1cb2efbf154324598dc73f32fdbefff5bf
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786461"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812926"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -24,6 +24,8 @@ Azure 是 Microsoft 的公用雲端平台。 Azure 提供一組大型的服務�
 <!-- markdownlint-disable MD034 -->
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ixGo]
+
+<!-- markdownlint-enable MD034 -->
 
 Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 大部分的電腦硬體都可用軟體來模擬，因為大部分的電腦硬體都只是一組永久或半永久編碼在矽晶片材料中的指令。 使用將軟體指令對應至硬體指令的模擬層，虛擬化的硬體即可用軟體執行，如同在實際的硬體中執行一般。
 

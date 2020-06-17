@@ -7,12 +7,12 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2b1cfc3ed38889a8767a979e1abf6e4712d463b8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c09124d6a09ee3350fb6a1b605c493a51d15bb4a
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221632"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813248"
 ---
 <!-- cSpell:ignore rodend -->
 
@@ -23,7 +23,7 @@ Azure 企業版 scaffold 已整合到 Azure 的 Microsoft Cloud 採用架構中�
 若要開始使用雲端採用架構，請參閱：
 
 - [準備好總覽](../ready/index.md)
-- [建立您的第一個登陸區域](../ready/landing-zone/migrate-landing-zone.md)
+- [Azure 登陸區域](../ready/landing-zone/index.md)
 - [登陸區域考慮](../ready/considerations/index.md)。
 
 如果您需要查看已淘汰的內容，請參閱[Azure 企業 scaffold](./migration-with-enterprise-scaffold.md)。

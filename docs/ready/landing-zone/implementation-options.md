@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8231cf943b69b73bc32cb4d7d030a67df099935d
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 1d66c00a7224cb2e7faa3fa82285f12c6388f32e
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799547"
+ms.locfileid: "84813388"
 ---
 # <a name="landing-zone-implementation-options"></a>登陸區域的執行選項
 
@@ -32,9 +32,9 @@ ms.locfileid: "84799547"
 
 下列方格會捕捉一些登陸區域的執行選項和變數，這些是可推動決策的因素。
 
-<!-- docsTest:ignore "CAF Migrate" "CAF Foundation" "CAF Enterprise-scale" "CAF Terraform" -->
+<!-- docsTest:ignore "CAF Migration" "CAF Foundation" "CAF Enterprise-scale" "CAF Terraform" -->
 
-| [執行] 選項 | Description | 部署速度 | 更深入的設計原則 | 部署指示 |
+| [執行] 選項 | 描述 | 部署速度 | 更深入的設計原則 | 部署指示 |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | [CAF 遷移](./migrate-landing-zone.md) | 部署用於遷移低風險資產的基本基礎 | 從小開始 | [設計原則](./migrate-landing-zone.md#design-principles) | [部署](./migrate-landing-zone.md) |
 | [CAF 基礎](./foundation-blueprint.md) | 新增開始開發治理策略所需的最少工具 | 從小開始 | [設計原則](./foundation-blueprint.md#design-principles) | [部署](./foundation-blueprint.md) |
@@ -45,8 +45,8 @@ ms.locfileid: "84799547"
 
 | [執行] 選項 | 中樞 | 分支 | 部署技術 | 部署指示 |
 |---|---|---|---|---|
-| [CAF 企業規模](./enterprise-scale.md) | 已包括                              | 已包括 | Azure Resource Manager 範本、Azure 入口網站、Azure 原則和 GitHub | [部署](../enterprise-scale/implementation-guidelines.md) |
-| [CAF 遷移](./migrate-landing-zone.md)      | 需要重構                     | 已包括 | Azure Resource Manager 範本、Azure 入口網站和 Azure 藍圖 | [部署](./migrate-landing-zone.md) |
+| [CAF 企業規模](./enterprise-scale.md) | 已包括  | 已包括 | Azure Resource Manager 範本、Azure 入口網站、Azure 原則和 GitHub | [部署](../enterprise-scale/implementation-guidelines.md) |
+| [CAF 遷移](./migrate-landing-zone.md) | 需要重構 | 已包括 | Azure Resource Manager 範本、Azure 入口網站和 Azure 藍圖 | [部署](./migrate-landing-zone.md) |
 | [CAF Terraform](./terraform-landing-zone.md)  | 包含在虛擬資料中心模組中 | 已包括 | Terraform | [部署](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
 ## <a name="next-steps"></a>後續步驟

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 905ceb5acbfaef1e07297cdd1a70c21770aea2b9
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: dfe9fcd9e0d714185d59518638b6c7e659089af6
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786444"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813233"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -116,8 +116,8 @@ ms.locfileid: "84786444"
 | 文章                                                                   | 說明                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [什麼 &nbsp; 是 &nbsp; &nbsp; 登陸 &nbsp; 區域？](../ready/landing-zone/index.md)                 | **新文章：** 定義「登陸區域」一詞。                                                      |
-| [第一個登陸區域](../ready/landing-zone/first-landing-zone.md)         | **新文章：** 擴充各種登陸區域的比較。                                                     |
-| [CAF 移轉登陸區域](../ready/landing-zone/migrate-landing-zone.md) | 將雲端採用架構藍圖的定義與第一個登陸區域的選擇隔開。         |
+| 第一個登陸區域         | **新文章：** 擴充各種登陸區域的比較。                                                     |
+| [CAF 遷移登陸區域](../ready/landing-zone/migrate-landing-zone.md) | 將雲端採用架構藍圖的定義與第一個登陸區域的選擇隔開。         |
 | [Terraform 登陸區域](../ready/landing-zone/terraform-landing-zone.md) | 已移至準備方法的新「登陸區域」一節，以提升登陸區域交談中的 Terraform。 |
 
 ### <a name="migration-updates"></a>遷移更新

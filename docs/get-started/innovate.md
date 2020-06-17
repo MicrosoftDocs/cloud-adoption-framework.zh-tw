@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 79c428da9d0be27c209fcc30686225217832dbe1
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: b15349a976c9891536292eba25295cf4412472ba
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862495"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812959"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -177,7 +177,7 @@ ms.locfileid: "83862495"
 
 **支援交付後完成的指引：**
 
-- [選擇登陸區域](../ready/landing-zone/first-landing-zone.md)：使用本文來尋找適當的方法，以根據您的採用模式部署登陸區域。 然後部署該標準化的程式碼基底。
+- [選擇登陸區域](../ready/landing-zone/index.md)：使用本節來尋找根據您採用模式部署登陸區域的正確方法。 然後部署該標準化的程式碼基底。
 - [擴充您的登陸區域](../ready/considerations/index.md)：不論起點為何，在已部署的登陸區域中找出間距，以新增資源組織、安全性、治理、合規性和作業所需的元件。
 
 <!-- markdownlint-disable MD033 -->

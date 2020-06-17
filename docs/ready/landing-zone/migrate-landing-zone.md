@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c6c79d38db4325594331b2e4f00995eb1e5d44a6
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: c32f2dafe1e7cd8f718c35abd7bf1bacd4b392c5
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799716"
+ms.locfileid: "84813277"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -20,7 +20,7 @@ ms.locfileid: "84799716"
 
 ## <a name="deploy-the-blueprint"></a>部署藍圖
 
-在您使用雲端採用架構中的「遷移」登陸區域藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
+在您使用雲端採用架構中的 CAF 遷移登陸區域藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[CAF 遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
 
 > [!div class="nextstepaction"]
 > [部署藍圖範例][deploy-sample]
@@ -43,7 +43,7 @@ ms.locfileid: "84799716"
 
 此實作為選項假設目標訂閱已根據身分[識別管理最佳做法](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，與 Azure Active Directory 實例相關聯
 
-### <a name="network-topology-and-connectivity"></a>網路拓撲和連線能力
+### <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
 此 [執行] 選項會建立一個虛擬網路，其中包含閘道、防火牆、跳躍箱和登陸區域的子網。 在下一個步驟中，小組會遵循[網路決策指南](../considerations/networking-options.md)，在閘道子網與其他網路之間執行適當的連線形式，以配合[網路安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "84799716"
 
 此執行選項不會執行任何治理工具。 如果沒有定義的原則自動化，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
 
-若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及遷移登陸區域。
+若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域。
 
 > [!WARNING]
 > 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
@@ -111,7 +111,7 @@ ms.locfileid: "84799716"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>自訂或部署登陸區域
 
-深入瞭解並下載 CAF 遷移登陸區域藍圖的參考範例，以從[Azure 藍圖範例][deploy-sample]進行部署或自訂。
+深入瞭解並下載 CAF 遷移登陸區域藍圖的參考範例，以便從[Azure 藍圖範例][deploy-sample]進行部署或自訂。
 
 > [!div class="nextstepaction"]
 > [部署藍圖範例][deploy-sample]
@@ -127,4 +127,4 @@ ms.locfileid: "84799716"
 
 <!-- links -->
 
-[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

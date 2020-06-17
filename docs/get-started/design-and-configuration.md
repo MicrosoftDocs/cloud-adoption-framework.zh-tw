@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 761c6c7a8bed468a7d2c9005365a815fbe48e8ae
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9e0376779050003f9a19442d49858009fc6d963f
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752875"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812937"
 ---
 # <a name="get-started-design-and-configuration"></a>開始使用：設計和設定
 
@@ -112,7 +112,7 @@ ms.locfileid: "83752875"
 
 **支援交付後完成的指引：**
 
-- [選擇登陸區域](../ready/landing-zone/first-landing-zone.md)：使用本文以根據您的短期採用方案，尋找部署登陸區域的正確方法。 然後部署該標準化的程式碼基底。
+- [選擇登陸區域](../ready/landing-zone/index.md)：使用本節以根據您的短期採用方案，尋找部署登陸區域的正確方法。 然後部署該標準化的程式碼基底。
 - [擴充您的登陸區域](../ready/considerations/index.md)：請不要嘗試符合長期治理、安全性或作業條件約束，除非他們必須支援短期採用計畫。
 
 <!-- markdownlint-disable MD033 -->
