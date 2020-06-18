@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2fdad87bbdde14aa94d5eeb5a4926726816b6172
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e5e9f2f6aec9285408c10927aa9e7aedc8ad178a
+ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792567"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84942976"
 ---
 # <a name="design-principles"></a>設計原則
 
@@ -38,7 +38,7 @@ Microsoft Azure 原則應該用來提供防護滑軌，並確保客戶平臺的�
 
 ## <a name="aligning-azure-native-design-and-road-maps"></a>調整 Azure 原生設計和道路地圖
 
-企業級架構方法提倡者在可能的情況下使用 Azure 原生平臺服務和功能，這應該與 Azure 平臺藍圖對應，以確保客戶環境內有提供新功能。 Azure 平臺藍圖應該有助於通知遷移策略和企業級的道路。
+企業級架構方法提倡者在可能的情況下使用 Azure 原生平臺服務和功能，這應該與 Azure 平臺藍圖對應，以確保客戶環境內有新功能可用。 Azure 平臺藍圖應該有助於通知遷移策略和企業級的道路。
 
 ## <a name="recommendations"></a>建議
 

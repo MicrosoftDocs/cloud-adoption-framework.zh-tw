@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f915bac494d12164bb7c0771638efee10ce1815f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 87b318a5bf1ece6479a7ae437083c549bf020eb5
+ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787944"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84942959"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -49,7 +49,7 @@ ms.locfileid: "84787944"
 
 ![具有多個公用和私用雲端平臺的 IT 組合影像](../../_images/ready/buildout-cloud-platforms.png)
 
-- **登陸區域：** 登陸區域提供工作負載，可存取支援一或多個工作負載所_需的所有__基礎公用程式_（或共用配量）。 登陸區域是雲端中的重要元件，它們是雲端採用架構中的完整現成方法，專門用於登陸區域。 如需更深入的定義，請參閱「[什麼是登陸區域](../../ready/landing-zone/index.md)」。
+- **登陸區域：** 登陸區域提供工作負載，可存取支援一或多個工作負載所_需的所有__基礎公用程式_（或共用配量）。 登陸區域是雲端中的重要元件，這是雲端採用架構中的完整現成方法，專門用於登陸區域。 如需更深入的定義，請參閱「[什麼是登陸區域](../../ready/landing-zone/index.md)」。
 - **基本公用程式：** 這些共用的 IT 服務是工作負載在技術和業務組合內運作的必要專案。
 - **Platform foundation：** 此組織結構會集中基本解決方案，並協助確保所有登陸區域都會強制執行這些控制項。
 - **雲端平臺：** 視支援完整_組合_的整體策略而定，客戶可能需要多個雲端平臺，其中包含不同的平臺基礎部署，以管理多個區域、混合式解決方案，或甚至是多重雲端解決方案。

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d5020297b78cf955896b446de9487354bc726b98
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 62013cf591025bba13c55429bbd855fb20cb4b00
+ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787124"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84942993"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
