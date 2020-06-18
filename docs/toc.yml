@@ -211,12 +211,14 @@ items:
                 href: ready/enterprise-scale/implementation-guidelines.md
           - name: 從小規模著手並擴充
             items:
-              - name: CAF 遷移藍圖
+              - name: CAF 移轉登陸區域藍圖
                 href: ready/landing-zone/migrate-landing-zone.md
               - name: CAF 基礎藍圖
                 href: ready/landing-zone/foundation-blueprint.md
               - name: Terraform 登陸區域
                 href: ready/landing-zone/terraform-landing-zone.md
+              - name: 擴充登陸區域
+                href: ready/considerations/index.md
               - name: 基本登陸區域考量
                 items:
                   - name: 概觀
@@ -1330,7 +1332,7 @@ items:
               - name: 人員安全性
                 href: organize/cloud-security-people.md
               - name: 應用程式安全性和 DevSecOps
-                href: organize/cloud-security-apsec-devsecops.md
+                href: organize/cloud-security-application-security-devsecops.md
               - name: 資料安全性
                 href: organize/cloud-security-data-security.md
               - name: 基礎結構和端點安全性
