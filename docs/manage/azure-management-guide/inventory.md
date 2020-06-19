@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e6cae79ab54c4b1389f9f74ab291575e16831b38
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e3d8f8cf6a4406eae9bedc1ebc461613bb0fef84
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756425"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785543"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 

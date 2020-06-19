@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 35c2870d09ca01a7354c3c5fc98b67fa04a985ef
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 329f421d5c4755e69a856511718f18c53e8db24b
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813330"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994022"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -169,7 +169,7 @@ Scaffold 的第二個要件包含使用[Azure 原則和計畫](https://docs.micr
 
 開始使用公用雲端時，您會問自己的首要問題之一 (也是最重要的) 就是「誰應該有資源的存取權？」 以及「如何控制此存取權？」 在入口網站中控制對 Azure 入口網站和資源的存取，對於您在雲端中資產的長期安全而言，是不可或缺的。
 
-若要保護對資源的存取，您必須先設定您的身分識別提供者，然後設定角色和存取權。 連線至您內部部署 Active Directory 的 Azure Active Directory (Azure AD) 是 Azure 身分識別的基礎。 話雖如此，Azure AD_與內部_部署 Active Directory 不同，但請務必瞭解 Azure AD 租使用者是什麼，以及它與您的 Azure 註冊有何關聯。 請參閱可用的[資訊](../govern/resource-consistency/resource-access-management.md)，以取得 Azure AD 和內部部署 Active Directory 的穩固基礎。 若要將您的 Active Directory 連線並同步處理至 Azure AD，請在內部部署環境中安裝和設定[Azure AD Connect 工具](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
+若要保護對資源的存取，您必須先設定您的身分識別提供者，然後設定角色和存取權。 連線至您內部部署 Active Directory 的 Azure Active Directory (Azure AD) 是 Azure 身分識別的基礎。 不過， **Azure AD 與內部**部署 Active Directory 不同，請務必瞭解 Azure AD 租使用者是什麼，以及它與您的 Azure 註冊有何關聯。 請參閱[Azure 中的資源存取管理](../govern/resource-consistency/resource-access-management.md)，以充分瞭解 Azure AD 和內部部署 Active Directory。 若要將內部部署目錄連線並同步處理至 Azure AD，請在內部部署環境中安裝和設定[Azure AD Connect 工具](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
 ![AD 架構的圖表](../_images/reference/ad-architecture.png)
 

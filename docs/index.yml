@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: 5d70dea25547b4e7e6e3e639bd17cdb78dcf05bb
-  ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+  ms.openlocfilehash: 486d798eabc3106cfab9154e3c53cd577e2d6d1b
+  ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/16/2020
-  ms.locfileid: "84799614"
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84943010"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -73,8 +73,8 @@ productDirectory:
     links:
     - url: ./ready/azure-setup-guide/index.md
       text: Azure 設定指南
-    - url: ./ready/landing-zone/migrate-landing-zone.md
-      text: 第一個登陸區域
+    - url: ./ready/landing-zone/index.md
+      text: Azure 登陸區域
     - url: ./ready/considerations/index.md
       text: 展開登陸區域
     - url: ./ready/azure-best-practices/index.md

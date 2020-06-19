@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3dc7eeb2a8727fd1787265b408d1f930f3d76c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d6534d15e1b552d0f8bcf8849e972da480dfb1a1
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222480"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993988"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
 
@@ -24,7 +24,7 @@ ms.locfileid: "83222480"
 
 ## <a name="the-build-measure-learn-feedback-loop"></a>組建-測量-學習意見反應迴圈
 
-如[數位經濟的創新](./index.md)中所述，創新需要_家發明_和_採用_的平衡。 客戶意見反應和合作關係推動採用。 藉由在創新週期期間將您的客戶轉換為強大的忠誠合作夥伴，您可以在市場中實現更佳的產品並獲得更快速的吸引力。
+如[數位經濟的創新](./index.md)中所述，創新需要在家發明與採用之間取得平衡。 客戶意見反應和合作關係推動採用。 藉由在創新週期期間將您的客戶轉換為強大的忠誠合作夥伴，您可以在市場中實現更佳的產品並獲得更快速的吸引力。
 
 ![組建-測量-學習意見反應迴圈的圖表](../../_images/innovate/bml-feedback-loop.png)
 

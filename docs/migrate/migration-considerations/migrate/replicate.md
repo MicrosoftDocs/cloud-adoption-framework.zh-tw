@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05600c8e5169f13110e45e680f3849174225b11f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 32dbff24bf4a6ec49c4136bdef6d5e10c3bf83d0
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787787"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993524"
 ---
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>複寫在移轉程序中扮演什麼角色？
 
@@ -22,7 +22,7 @@ ms.locfileid: "84787787"
 
 ## <a name="required-prerequisites-to-replication"></a>複寫的必要條件
 
-在複寫之前，必須備妥_新平台_和硬體以接收二進位複本。 關於[必要條件](../prerequisites/index.md)的文章概述最小的環境需求，以協助建立安全、健全且高效能的平臺來接收二進位複本。
+在複寫之前，必須備妥新平台和硬體以接收二進位複本。 關於[必要條件](../prerequisites/index.md)的文章概述最小的環境需求，以協助建立安全、健全且高效能的平臺來接收二進位複本。
 
 此外也必須準備好_來源二進位檔_，以進行複寫和同步處理。 有關評估、架構和修復的文章，分別說明需執行哪些動作來確保來源二進位檔已準備好進行複寫和同步處理。
 

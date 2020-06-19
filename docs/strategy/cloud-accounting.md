@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e011a0a9e2b921f1e7c3ac86a96917a2953ddcbb
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 5b1788558ecda13c2e95292fa503092a68fdd2ad
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786172"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074645"
 ---
 <!-- cSpell:ignore CIOs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "84786172"
 
 通常會將它視為成本中心。 在傳統的 IT 會計模型中，它會合並所有 IT 資產的購買能力。 如同我們在[財務模型](./financial-models.md)一文中提到的，購買電源匯總可能包括軟體授權、CRM 授權的週期性費用、購買員工桌面，以及其他大量成本。
 
-當它作為成本中心時，它的認知價值主要是透過採購管理鏡頭來觀看。 這種認知讓面板或其他主管難以瞭解它所提供的真正價值。 採購成本傾向于 outweighing 組織新增的任何其他值，以扭曲其觀點。 此觀點說明為何經常歸併財務長或首席營運主管的責任。 這對它的認知很有限，而且可能很短的目擊北極熊。
+當它作為成本中心時，它的認知價值主要是透過採購管理鏡頭來觀看。 這種認知讓面板或其他主管難以瞭解它所提供的真正價值。 採購成本傾向于 outweighing 組織新增的任何其他值，以扭曲其觀點。 此觀點說明為何經常歸併財務長或首席營運主管的責任。 這對它的認知很有限，而且可能會 shortsighted。
 
 ## <a name="central-it-accounting-profit-center-model"></a>中央 IT 會計（利潤中心模型）
 

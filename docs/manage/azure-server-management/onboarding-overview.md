@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0396ccaf952bc9d7812304af5d1d9c9952b751cc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de26df188d2e6e240b07abde8c284bf57cb232db
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219626"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992850"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>第2階段：上架 Azure 伺服器管理服務
 
@@ -38,7 +38,7 @@ ms.locfileid: "83219626"
 
 ![建議部署模型的圖表](./media/recommended-deployment.png)
 
-如上圖所示，Log Analytics 代理程式同時具有內部部署伺服器的_自動註冊_和_加入宣告_設定：
+如上圖所示，Log Analytics 代理程式有兩個內部部署伺服器設定：
 
 - **自動註冊：** 當 Log Analytics 代理程式安裝在伺服器上並設定為連接到工作區時，在該工作區上啟用的解決方案會自動套用至伺服器。
 - **加入宣告：** 即使代理程式已安裝且已連線至工作區，也不會套用解決方案，除非它已新增至工作區中的伺服器範圍設定。

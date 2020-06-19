@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9b33b242611a576558c858080581650e67cd8382
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: b396bef511aad0e715f8d4391f26882357da5378
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815424"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993375"
 ---
 # <a name="building-technical-skills"></a>建置技術技能
 
@@ -26,7 +26,7 @@ ms.locfileid: "83815424"
 - [讓您的組織保持一致](../get-started/org-alignment.md)：探索建立適當組織結構的方法。
 - [組織對齊練習](./index.md)：取得對齊和小組結構的總覽，以協助達到特定目標。
 - [建立小組](../get-started/help.md#establish-teams)：瞭解如何在組織內建立負責傳遞雲端功能的小組。
-- [細分接收器和 fiefdoms](./fiefdoms-silos.md)：瞭解兩個常見的組織_反模式_，以及引導小組進行生產力共同作業的方式。
+- [細分接收器和 fiefdoms](./fiefdoms-silos.md)：瞭解兩個常見的組織反模式，以及引導小組進行生產力共同作業的方式。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
 

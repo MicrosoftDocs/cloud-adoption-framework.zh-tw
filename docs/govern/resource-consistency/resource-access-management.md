@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ba81874caf48d7220d206feede39aee2e0c77a2
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 339de4106b9e31576b4f6986ac1f766972b8f0de
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785951"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993125"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "84785951"
 
 ## <a name="what-is-an-azure-resource-group"></a>什麼是 Azure 資源群組？
 
-Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是將多個資源分組在一起的邏輯結構，因此可以根據_生命週期和安全性_，以單一實體的形式進行管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 換句話說，在一起的所有專案會一起進行管理，並淘汰在一起，一起放在資源群組中。
+Azure 中的每個資源都必須屬於一個[資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是將多個資源分組在一起的邏輯結構，因此可以根據**生命週期和安全性**，以單一實體的形式進行管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 換句話說，在一起的所有專案會一起進行管理，並淘汰在一起，一起放在資源群組中。
 
 ![包含資源的資源群組圖 ](../../_images/govern/design/governance-1-10.png)
  _2：資源群組包含資源。_

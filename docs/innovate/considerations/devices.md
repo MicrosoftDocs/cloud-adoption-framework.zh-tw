@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b786293386ae85bca7d29865639f839dd79ead4
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219728"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993927"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 
@@ -52,7 +52,7 @@ Azure App Service 是這種方法的絕佳範例。 在早期反復專案期間�
 Mixed reality 解決方案代表環境經驗的下一個成熟層級。 這種方法會擴大或複寫客戶的環境，它會建立現實的延伸，讓客戶在內操作。
 
 > [!IMPORTANT]
-> 如果虛擬實境（VR）裝置是必要的，而且還*不是客戶立即面臨或自然行為的一部分*，則增強或虛擬實境更是替代體驗，而不是環境經驗。
+> 如果需要虛擬實境（VR）裝置，而且它還不是客戶立即面臨的內部環境或自然行為的一部分，增強或虛擬實境就更是替代體驗，而不是環境經驗。
 
 遠端工作力之間的混合現實體驗日益普遍。 在需要共同作業或專長技能的產業中，其使用方式在當地市場中的成長速度更快。 針對遠端人力小組需要複雜產品的集中式實作為支援的情況，特別是針對增強式現實的溫床基礎。 在這些案例中，中央支援小組和遠端員工可能會使用增強的事實來處理、疑難排解和安裝產品。
 

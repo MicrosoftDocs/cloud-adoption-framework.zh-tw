@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3a7fe76da6fd98f5e37d96cdcbc5426c7f5dea2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: bfb401486443aae9a086d98b9d93c80dea710074
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862580"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994051"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -139,7 +139,7 @@ Azure 磁片加密可讓您使用儲存在[Azure Key Vault](https://azure.micros
 
 ## <a name="regional-availability"></a>區域可用性
 
-您可以使用 Azure 依照您所需要的規模，將服務提供給身居_世界不同角落_的客戶及合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
+您可以使用 Azure 依照您所需要的規模，將服務提供給身居**世界不同角落**的客戶及合作夥伴。 [受控磁碟](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)和 [Azure 儲存體](https://azure.microsoft.com/global-infrastructure/services/?products=storage)區域可用性頁面會顯示提供這些服務的區域。 事先檢查服務的區域可用性，可協助您針對您的工作負載和客戶需求做出正確的決策。
 
 受控磁片可在具有 premium SSD 和標準 SSD 供應專案的所有 Azure 區域中使用。 雖然 ultra SSD 目前處於公開預覽狀態，但只能在一個可用性區域（美國東部2區域）中提供。 當您規劃需要 ultra SSD 的關鍵性、最上層工作負載時，請確認區域可用性。
 

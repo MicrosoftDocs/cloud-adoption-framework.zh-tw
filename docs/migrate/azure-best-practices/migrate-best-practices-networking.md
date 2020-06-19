@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c7970faf570e32103fed648f7be9a451a4c7e896
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: b2b8dcce16fd0e6d277160f1177347f887488712
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800124"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993852"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -292,7 +292,7 @@ Microsoft 與您須共同負責保護 VNet。 Microsoft 提供了許多網路功
 雖然 Microsoft 會大量投資在保護雲端基礎結構，但您也必須保護您的雲端服務和資源群組。 安全性的多層式方法提供最佳的防護。 備有周邊網路是該防禦策略中很重要的一部分。
 
 - 周邊網路可防止不受信任的網路存取內部網路資源。
-- 它是對網際網路公開的最外層。 它通常位於網際網路和企業基礎結構之間，且兩邊通常都會有某種形式的保護。
+- 它是對網際網路公開的最外層。 它通常位於網際網路與企業基礎結構之間，通常會有某種形式的保護。
 - 在典型的企業網路拓撲中，核心基礎結構的周邊有多層的安全性裝置，嚴加防禦。 每一層的界限都由裝置和原則強制執行點組成。
 - 每一層均可結合各種網路安全性解決方案，包括防火牆、拒絕服務 (DoS) 預防、入侵偵測/保護系統 (IDS/IPS) 和 VPN 裝置。
 - 若要在周邊網路強制執行原則，您可以使用防火牆原則、存取控制清單 (ACL) 或特定的路由。

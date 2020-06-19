@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222431"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993765"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -32,7 +32,15 @@ ms.locfileid: "83222431"
 
 ## <a name="develop-predictive-capabilities"></a>開發預測性功能
 
-一致提供精確預測功能的解決方案通常包含五個核心特性：_資料_、_深入_解析、_模式_、_預測_和_互動_。 開發預測功能需要每個層面。 就像所有絕佳的創新一樣，預測性功能的開發也需要反復專案的[承諾](./index.md#commitment-to-iteration)。 在每個反復專案中，一或多個下列特性已成熟，以驗證日益複雜的客戶假設。
+一致提供精確預測功能的解決方案通常包含五個核心特性：
+
+    - 資料
+    - 深入解析
+    - 模式
+    - 預測
+    - 互動
+
+開發預測功能需要每個層面。 就像所有絕佳的創新一樣，預測性功能的開發也需要反復專案的[承諾](./index.md#commitment-to-iteration)。 在每個反復專案中，一或多個下列特性已成熟，以驗證日益複雜的客戶假設。
 
 ![預測性功能的步驟](../../_images/innovate/predict-and-influence.png)
 

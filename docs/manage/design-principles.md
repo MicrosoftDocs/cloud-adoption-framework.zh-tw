@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9f0315c8902ef6304160faa734c08f9eb273798
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: c7751291689fb269eb68514173d143eac85fa87d
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785322"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074875"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和先進作業
 
@@ -47,11 +47,11 @@ ms.locfileid: "84785322"
 - **平臺特製化：** 投資共用平臺的持續作業，將投資分散到多個工作負載。
 - **工作負載特製化：** 投資特定工作負載的持續進行作業，通常是針對任務關鍵性工作負載而保留的。
 
-### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>卓越的中央 IT 或雲端中心（CCoE）
+### <a name="central-it-team-or-cloud-center-of-excellence-ccoe"></a>卓越的中央 IT 小組或雲端中心（CCoE）
 
-平臺特製化和工作負載特製化之間的決定是根據每個工作負載的重要性和影響而定。 不過，這些決策也會指示中央 IT 與 CCoE 組織模型之間較大規模的文化決策。
+平臺特製化和工作負載特製化之間的決定是根據每個工作負載的重要性和影響而定。 不過，這些決策也是在中央 IT 小組和 CCoE 組織模型之間進行較大規模的文化決策。
 
-工作負載特製化通常會觸發文化變革。 傳統 IT 和中央 IT 都是可提供大規模支援的建立流程。 針對在管理基準中找到的可重複服務、增強的基準，甚至是平臺作業，都能達到調整支援。 工作負載特製化通常不會進行調整。 這樣的擴展不會讓集中式 IT 組織難以提供必要的支援，而不會達到組織規模限制。
+工作負載特製化通常會觸發文化變革。 傳統 IT 和集中化 IT 都是可提供大規模支援的建立流程。 針對在管理基準中找到的可重複服務、增強的基準，甚至是平臺作業，都能達到調整支援。 工作負載特製化通常不會進行調整。 這樣的擴展不會讓集中式 IT 組織難以提供必要的支援，而不會達到組織規模限制。
 
 或者，雲端中心卓越的方法會透過有目的責任委派和選擇性集中化來進行調整。 工作負載特製化傾向于與 CCoE 的委派責任方法更一致。
 
@@ -62,7 +62,7 @@ CCoE 中的角色自然對齊如下所述：
 - 雲端管理會集中提供管理基準，並協助支援使用服務類別目錄。
 - 但是業務單位（商業 DevOps 小組或雲端採用小組的形式）保有工作負載、管線或效能的日常作業責任。
 
-就管理領域的一致性而言，中央 IT 和 CCoE 模型通常可以在平臺特製化上提供，並以最小的文化變更來實現。 針對中央 IT 小組，傳遞工作負載特製化可能會比較複雜一點。
+如同協調管理的領域，中央 IT 小組和 CCoE 模型通常可以在平臺特製化上提供，並以最小文化的改變。 對中央 IT 小組而言，對工作負載特製化的貢獻可能更為複雜。
 
 ## <a name="management-specialization-processes"></a>管理特製化程式
 

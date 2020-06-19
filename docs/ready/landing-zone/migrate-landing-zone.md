@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c32f2dafe1e7cd8f718c35abd7bf1bacd4b392c5
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 9cca384f3c4e38e6a8a023210aca18c2e92c60dc
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813277"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074681"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
 
@@ -59,7 +59,7 @@ ms.locfileid: "84813277"
 
 此執行選項不會執行任何治理工具。 如果沒有定義的原則自動化，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
 
-若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域。
+若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域藍圖。
 
 > [!WARNING]
 > 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
@@ -127,4 +127,4 @@ ms.locfileid: "84813277"
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

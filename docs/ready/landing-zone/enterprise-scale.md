@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d720641cb6a993a3f791c5e659dfa625b4f9bc7f
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 0bd70384bbf5bd5c547d8fb364e70e275900b8bf
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799920"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074977"
 ---
 # <a name="deploy-an-enterprise-scale-landing-zone"></a>部署企業規模的登陸區域
 
@@ -52,9 +52,9 @@ _企業級登陸區域_是已布建的環境，其中包含裝載更複雜工作
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>自訂或部署登陸區域
 
-如需部署企業級執行的範例，請參閱[Contoso 企業規模的執行指南](https://github.com/Azure/Enterprise-Scale/blob/master/docs/reference/contoso/Readme.md)。
+如需部署企業級執行的範例，請參閱[Contoso 企業規模的執行指南](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md)。
 
-若要自訂企業規模的架構，請參閱[設計方針](../enterprise-scale/design-guidelines.md)
+若要自訂企業規模的架構，請參閱[設計方針](../enterprise-scale/design-guidelines.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

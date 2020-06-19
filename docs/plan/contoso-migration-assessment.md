@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: edb3ba0fe7a32b23c34c60c0673eff87d5664d81
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: ef1c9ea599a61561a6cff9d78c8d167129f13a26
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787668"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993813"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -101,7 +101,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
   - **OSTICKETWEB** 正在執行 Apache 2 和 PHP 7.0。
   - **OSTICKETMYSQL** 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 
@@ -237,38 +237,38 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
 設定新的 Azure Migrate 專案，如下所示。
 
-1. 在 Azure 入口網站 > [所有服務]  中，搜尋 **Azure Migrate**。
+1. 在 Azure 入口網站 > [所有服務] 中，搜尋 **Azure Migrate**。
 
-1. 在 [服務]  下，選取 [Azure Migrate]  。
+1. 在 [服務] 下，選取 [Azure Migrate]。
 
-1. 在 [概觀]  的 [探索、評估和遷移伺服器]  底下，選取 [評估和遷移伺服器]  。
+1. 在 [概觀] 的 [探索、評估和遷移伺服器] 底下，選取 [評估和遷移伺服器]。
 
     ![Azure Migrate - 建立移轉專案](../migrate/azure-best-practices/media/contoso-migration-assessment/assess-migrate.png)
 
-1. 在 [開始使用]  中，選取 [新增工具]  。
+1. 在 [開始使用] 中，選取 [新增工具]。
 
-1. 在 [Migrate 專案]  中選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有的話)。
+1. 在 [Migrate 專案] 中選取您的 Azure 訂用帳戶，並建立資源群組 (如果您還沒有的話)。
 
 1. 在 [*專案詳細資料*] 中，指定專案名稱，以及您要在其中建立專案的地理位置。 支援美國、亞洲、歐洲、澳大利亞、英國、加拿大、印度和日本。
 
     - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
     - 當您執行移轉時，可以選取任何目的地區域。
 
-1. 選取 [下一步]  。
+1. 選取 [下一步] 。
 
-1. 在 [選取評量工具]  中，選取 **[Azure Migrate：伺服器評量]**  > [下一步]  。
+1. 在 [選取評量工具] 中，選取 **[Azure Migrate：伺服器評量]**  > [下一步]。
 
     ![Azure Migrate - 評量工具](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
 
-1. 在 [選取移轉工具]  中，選取 [暫時跳過新增移轉工具]   > [下一步]  。
+1. 在 [選取移轉工具] 中，選取 [暫時跳過新增移轉工具] > [下一步]。
 
 1. 在 [檢閱 + 新增工具]  中檢閱設定，然後選取 [新增工具]  。
 
-1. 等候幾分鐘讓 Azure Migrate 專案完成部署。 您會進入專案頁面。 如果您沒有看到專案，則可以從 Azure Migrate 儀表板中的 [伺服器]  來存取。
+1. 等候幾分鐘讓 Azure Migrate 專案完成部署。 您會進入專案頁面。 如果您沒有看到專案，則可以從 Azure Migrate 儀表板中的 [伺服器] 來存取。
 
 ### <a name="download-the-collector-appliance"></a>下載收集器設備
 
-1. 在 [移轉目標]   > [伺服器]   >  **[Azure Migrate：伺服器評估]** 中，選取 [探索]  。
+1. 在 [移轉目標] > [伺服器] >  **[Azure Migrate：伺服器評估]** 中，選取 [探索]。
 
 1. 在 [**探索機器**  >  **是否已虛擬化？**] 中，選取 **[是]，搭配 VMware vSphere 的虛擬**程式。
 
@@ -511,7 +511,7 @@ Azure Migrate 評量包括內部部署與 Azure 的相容性、建議的 Azure V
 | 設定 | 指示 | 詳細資料 |
 | --- | --- | --- |
 | **Azure VM 整備程度** | 指出 VM 是否已可移轉。 | 可能的狀態： <li> 可供 Azure 使用 <li> 已備妥條件 <li> 未備妥供 Azure 使用 <li> 移轉整備程度未知 <br><br> 如果 VM 未準備好，Azure Migrate 會示範一些補救步驟。 |
-| **Azure VM 大小** | 對於準備好的 VM，Azure Migrate 會提供 Azure VM 大小建議。 | 大小調整建議取決於評估屬性： <li> 如果您使用以效能為基礎的調整大小，則大小會考慮 Vm 的效能歷程記錄。 <li> 如果您使用_做為內部部署_，則大小調整會以內部部署 VM 大小和使用量為基礎。 <li> 不使用資料。 |
+| **Azure VM 大小** | 對於準備好的 VM，Azure Migrate 會提供 Azure VM 大小建議。 | 大小調整建議取決於評估屬性： <li> 如果您使用以效能為基礎的調整大小，則調整大小會考慮 Vm 的效能歷程記錄。 <li> 如果您使用_做為內部部署_調整大小，則調整大小取決於內部部署 VM 大小和使用率。 <li> 不使用資料。 |
 | **建議的工具** | 因為 Azure 機器會執行代理程式，Azure Migrate 會查看在機器內部執行的程序。 它會識別機器是否為資料庫機器。 | |
 | **VM 資訊** | 此報告會顯示內部部署 VM 的設定，包括作業系統、開機類型、磁碟和儲存體資訊。 | |
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224165"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993966"
 ---
 # <a name="engage-through-applications"></a>參與應用程式
 
@@ -93,7 +93,7 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 ## <a name="operating-model-innovations"></a>操作模型創新
 
-除了現代化的創新方法來建立應用程式之外，應用程式_作業_中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
+除了應用程式建立的現代化創新方法，應用程式作業中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
 
 卓越雲端中心的自助作業管理模型類型，可讓您在解決方案環境內進行更緊密的控制和更快速的反復專案。 這些目標是藉由將營運控制和責任轉移給商務小組來完成。
 

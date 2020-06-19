@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1ea8a14ccd68fbdb73576ca27c98e50e9196bba5
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: a995ac179320d8d1a2c81e3d64b3af3c048b5898
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787515"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994128"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -62,7 +62,7 @@ ms.locfileid: "84787515"
 
 ## <a name="regional-availability"></a>區域可用性
 
-Azure 可讓您以所需的規模傳遞服務，_隨時隨地_觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
+Azure 可讓您以所需的規模傳遞服務，**隨時隨地**觸及您的客戶和合作夥伴。 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
 某些計算選項 (例如 Azure App Service) 已在大部分的 Azure 區域中正式推出。 但某些計算服務僅在特定區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在決定要將計算資源部署到哪些區域之前，建議您參閱 [[區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)，以檢查區域可用性的最新狀態。
 

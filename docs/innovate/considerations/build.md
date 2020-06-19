@@ -7,20 +7,20 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 15bc194c124a8f278028f9cbcd508a18641d9a43
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: e895c3ed8f11f618ca19ae45d9c7cb26acc76925
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815152"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993955"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
 # <a name="build-with-customer-empathy"></a>以客戶理解的方式打造
 
-「必要是家發明的母親。」 這個諺語會捕捉 indelibility 的人精神，以及我們的天然磁片磁碟機。 如 Oxford 英文字典中所述，當需要某些專案時，您會被迫尋找取得或達成此目標的方法。」 少數會拒絕這些關於家發明的通用真相。 不過，如[數位經濟的創新](./index.md)中所述，創新需要_家發明_和_採用_的平衡。
+「必要是家發明的母親。」 這個諺語會捕捉 indelibility 的人精神，以及我們的天然磁片磁碟機。 如 Oxford 英文字典中所述，當需要某些專案時，您會被迫尋找取得或達成此目標的方法。」 少數會拒絕這些關於家發明的通用真相。 不過，如[數位經濟的創新](./index.md)中所述，創新需要在家發明與採用之間取得平衡。
 
-再加上比喻，創新就來自更多的系列。 _客戶的理解是創新的一項自豪。_ 建立驅動創新的解決方案需要合法的客戶需要一個 &mdash; ，讓客戶能夠解決重大挑戰。 這些解決方案是以客戶的需求為基礎，而不是在其想要或 whims。 為了找出客戶真正的需求，我們一開始會先 &mdash; 深入瞭解客戶的經驗。 理解是許多工程師、產品經理，甚至商務領導人的 underdeveloped 技能。 幸運的是，雲端架構設計人員角色的各種互動和快速步調已經開始促進這項技能。
+再加上比喻，創新就來自更多的系列。 _客戶的理解是創新的一項自豪。_ 建立驅動創新的解決方案需要合法的客戶需求，讓客戶能夠解決重大挑戰。 這些解決方案是以客戶的需求為基礎，而不是在其想要或 whims。 為了找出其真正的需求，我們一開始會先 &mdash; 深入瞭解客戶的經驗。 理解是許多工程師、產品經理，甚至商務領導人的 underdeveloped 技能。 幸運的是，雲端架構設計人員角色的各種互動和快速步調已經開始促進這項技能。
 
 為什麼要理解這一點呢？ 從最基本的可行產品（MVP），到市場級解決方案正式運作的第一版，客戶理解可協助我們瞭解並分享客戶的體驗。 理解可協助我們打造更好的解決方案。 更重要的是，它的重點放在鼓勵採用的解決方案。 在數位經濟中，可以隨時體諒前客戶需求的人員，可以建立更明亮的未來，以重新定義和領導市場。
 

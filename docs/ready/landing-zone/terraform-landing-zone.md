@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a249003f6251c62fd57059d1b2dca5c00476c7fc
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: b7c73bda075ce0e9826fdf4738c203ff68709be8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799801"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075002"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -67,7 +67,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 ## <a name="design-decisions"></a>設計決策
 
-下列決策會在 Terraform 登陸區域中呈現：
+下列決策會在 CAF Terraform 模組中呈現：
 
 | 元件              | 決策                                                                                                                                                                                                                                                                | 替代方法                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -213,4 +213,4 @@ security_center = {
 未來的參考架構將會針對中樞與輪輻拓撲示範此概念。
 
 > [!div class="nextstepaction"]
-> [查看基礎 Terraform 登陸區域範例](https://github.com/azure/caf-terraform-landingzones)
+> [查看範例 foundation Terraform 登陸區域](https://github.com/azure/caf-terraform-landingzones)

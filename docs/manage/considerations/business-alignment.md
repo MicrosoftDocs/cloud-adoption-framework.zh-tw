@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 1c1a2bbdb6665246563f9514b55784f48114dee9
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400773"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992832"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務對齊
 
@@ -26,7 +26,7 @@ ms.locfileid: "83400773"
 
 - **[重要性](./criticality.md)：** 將工作負載對應至商務程式。 排名重要性，以專注于投資。
 - **[影響](./impact.md)：** 瞭解潛在中斷的影響，以協助評估雲端管理的投資報酬率。
-- **[承諾](./commitment.md)用量：** 藉由建立及記載_與企業_簽訂的合約，來開發真正的合作關係。
+- **[承諾](./commitment.md)用量：** 藉由建立及記載與企業簽訂的合約，來開發真正的合作關係。
 
 > [!NOTE]
 > 這些詞彙的基礎是傳統的 IT 術語，例如 SLA、RTO 和 RPO。 在[承諾](./commitment.md)用量文章中，將會更詳細地說明對應特定商務和 IT 詞彙。

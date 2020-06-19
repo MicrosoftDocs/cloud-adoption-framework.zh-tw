@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a0ed25b365a684821c6fa3950a8b239510f0a1a3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 3f5273750025f3dea6f10ccc070896f95f42db6a
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786920"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993265"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>管控雲端的方法
 
@@ -47,7 +47,7 @@ ms.locfileid: "84786920"
 
 ## <a name="grow-to-the-end-state"></a>成長至最終狀態
 
-因為治理需求隨著雲端採用旅程而變更，因此需要不同的治理方式。 公司無法等待小組在每一條高速公路上建立護欄和藍圖之後_再踏出第一步_。 公司會期待更快且更順利獲得業務成果。 IT 治理也必須在快速行動，並跟上業務需求，以便隨時掌握雲端採用旅程並避免「影子 IT」。
+因為治理需求隨著雲端採用旅程而變更，因此需要不同的治理方式。 公司無法等待小組在每一條高速公路上建立護欄和藍圖之後**再踏出第一步**。 公司會期待更快且更順利獲得業務成果。 IT 治理也必須在快速行動，並跟上業務需求，以便隨時掌握雲端採用旅程並避免「影子 IT」。
 
 _漸進式治理_方法可提供這些特性。 漸進式治理仰賴較少的公司原則、流程和工具，以建立採用和治理的基礎。 該基礎稱為_最簡可行產品 (MVP)_。 MVP 可讓治理小組在整個採用生命週期中，快速地將治理納入實作。 在雲端採用流程期間，任何時間都可已建立 MVP。 最佳做法是盡可能儘早採用 MVP。
 
