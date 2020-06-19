@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9c4a98c05f1a3cda8265b928c1a71556f1288e30
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 41393cab0775dedd634be966a5677d6839cb1c14
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216243"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994218"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 
@@ -26,7 +26,7 @@ ms.locfileid: "83216243"
 
 擴大到新市場可能是轉換期間最有價值的商務成果之一。 能夠快速地在市場部署資源，而不需要長期承諾，可讓銷售和營運領導人探索過去未考慮的選項。
 
-- **範例：**「修飾廠商」已識別出趨勢。 有些產品會運送到亞太地區區域，即使沒有任何銷售小組在該區域中運作。 遠端銷售人員所需的最小系統很小，但是延遲會阻止遠端存取解決方案。 若要利用這種趨勢，銷售副總裁會想要試驗日本和韓國的銷售團隊。 由於公司已經歷雲端遷移，因此能夠在數天內將必要的系統部署在日本和南非。 如此一來，銷售副總裁就能在三個月內增加_x%_ 的收益。 這兩個市場會繼續優於世界的其他部分，而導致整個區域的銷售作業。
+- **範例：**「修飾廠商」已識別出趨勢。 有些產品會運送到亞太地區區域，即使沒有任何銷售小組在該區域中運作。 遠端銷售人員所需的最小系統很小，但是延遲會阻止遠端存取解決方案。 若要利用這種趨勢，銷售副總裁會想要試驗日本和韓國的銷售團隊。 由於公司已經歷雲端遷移，因此能夠在數天內將必要的系統部署在日本和南非。 如此一來，銷售副總裁就能在三個月內，依_x%_ 來增加收益。 這兩個市場會繼續優於世界的其他部分，而導致整個區域的銷售作業。
 
 ## <a name="data-sovereignty"></a>資料主權
 

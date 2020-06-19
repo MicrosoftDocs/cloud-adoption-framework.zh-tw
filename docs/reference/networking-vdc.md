@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 586eae9805b8cef98b67b1302700d6a118469ac9
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: db7f16e8a283e5b5c7b786ef7097584b85109330
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788229"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077237"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -123,7 +123,7 @@ Azure 網狀架構會將基礎結構資源分配給租用戶工作負載，並�
 
 對_等互連中樞與輪輻拓撲_非常適合具有委派責任的分散式應用程式和小組。
 
-![十三][13]
+![13][13]
 
 _Azure 虛擬 WAN 拓撲_可支援大規模的分公司案例和全球 WAN 服務。
 
@@ -189,11 +189,11 @@ VDC 的上述高階概念架構顯示不同中樞輪輻拓撲區域中所使用�
 
 許多組織都會使用下列群組的一種變化，以提供角色的主要分析：
 
-- 中央 IT 群組 **Corp** 具有控制基礎結構元件的擁有權。 例如網路和安全性。 群組必須具有訂用帳戶的參與者角色、中樞的控制權，以及輪輻中的網路參與者權限。 大型組織常會將這些管理職責劃分到多個小組間。 例如，網路作業 **CorpNetOps** 群組 (具有網路的獨佔焦點)，和安全性作業 **CorpSecOps** 群組 (負責防火牆和安全性原則)。 在這種特定情況下，需要建立兩個不同的群組，才能指派這些自訂角色。
+- 中央 IT 小組**Corp**擁有控制基礎結構元件的擁有權。 例如網路和安全性。 群組必須具有訂用帳戶的參與者角色、中樞的控制權，以及輪輻中的網路參與者權限。 大型組織常會將這些管理職責劃分到多個小組間。 例如，網路作業 **CorpNetOps** 群組 (具有網路的獨佔焦點)，和安全性作業 **CorpSecOps** 群組 (負責防火牆和安全性原則)。 在這種特定情況下，需要建立兩個不同的群組，才能指派這些自訂角色。
 - 開發測試群組 **AppDevOps** 負責部署應用程式或服務工作負載。 此群組會取得 IaaS 部署的虛擬機器參與者角色，或一或多個 PaaS 參與者的角色。 請參閱[適用於 Azure 資源的內建角色][Roles]。 （選擇性）開發/測試小組可能需要可見於中樞內或特定輪輻中的安全性原則（網路安全性群組）和路由原則（使用者定義的路由）。 除了工作負載參與者角色之外，此群組也需要網路讀取者角色。
 - 作業和維護群組 (**CorpInfraOps** 或 **AppInfraOps**) 負責管理生產環境中的工作負載。 此群組必須是任何生產訂用帳戶中工作負載的訂用帳戶參與者。 某些組織可能也會評估他們是否需要在生產環境和中央中樞訂用帳戶中具有訂用帳戶參與者角色的額外擴大支援小組群組。 額外的群組可修正生產環境中潛在的設定問題。
 
-VDC 的設計是為了讓中央 IT 群組（管理中樞）所建立的群組具有工作負載層級的對應群組。 除了管理中樞資源之外，中央 IT 群組還可以控制外部存取，以及訂用帳戶的最上層許可權。 工作負載群組也可以從中央 IT 獨立控制其虛擬網路的資源和許可權。
+VDC 的設計是為了讓中央 IT 小組（管理中樞）所建立的群組具有工作負載層級的對應群組。 除了管理中樞資源之外，中央 IT 小組可以控制外部存取，以及訂用帳戶的最上層許可權。 工作負載群組也可以獨立控制其虛擬網路的資源和許可權，而不受中央 IT 小組的影響。
 
 虛擬資料中心已分割，可安全地跨不同的企業營運裝載多個專案。 所有專案都需要不同的隔離環境（Dev、UAT 和生產）。 這些環境的個別 Azure 訂用帳戶可以提供自然隔離。
 
@@ -205,7 +205,7 @@ VDC 的設計是為了讓中央 IT 群組（管理中樞）所建立的群組具
 
 這類多層式環境的通用架構包含用於開發和測試的 DevOps、用於暫存的 UAT，以及生產環境。 組織可以使用單一或多個 Azure AD 租使用者來定義這些環境的存取權和許可權。 上圖顯示使用兩個不同 Azure AD 租用戶的情況：一個適用於 DevOps 和 UAT，另一個則專用於生產環境。
 
-具有不同的 Azure AD 租用戶會強制執行環境之間的區隔。 相同的使用者群組（例如中央 IT）需要使用不同的 URI 進行驗證，以存取不同的 Azure AD 租使用者，以修改專案之 DevOps 或生產環境的角色或許可權。 具有存取不同環境的不同使用者驗證可降低可能的中斷以及人為錯誤所導致的其他問題。
+具有不同的 Azure AD 租用戶會強制執行環境之間的區隔。 相同的使用者群組（例如中央 IT 小組）需要使用不同的 URI 進行驗證，以存取不同的 Azure AD 租使用者，以修改專案的 DevOps 或生產環境的角色或許可權。 具有存取不同環境的不同使用者驗證可降低可能的中斷以及人為錯誤所導致的其他問題。
 
 #### <a name="component-type-infrastructure"></a>元件類型：基礎結構
 
@@ -213,7 +213,7 @@ VDC 的設計是為了讓中央 IT 群組（管理中樞）所建立的群組具
 
 ![6][6]
 
-基礎結構元件提供不同 VDC 實作元件的互相連線，並且存在於中樞和輪輻中。 管理和維護基礎結構元件的責任通常會指派給中央 IT 或 安全性小組。
+基礎結構元件提供不同 VDC 實作元件的互相連線，並且存在於中樞和輪輻中。 管理和維護基礎結構元件的責任通常會指派給中央 IT 小組或安全性小組。
 
 IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位址結構描述一致性。 指派給 VDC 實作的私人 IP 位址空間需要一致，而且不會與內部部署網路上指派的私人 IP 位址重疊。
 
@@ -249,7 +249,7 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 - [Azure 防火牆][AzFW]和[azure 防火牆管理員][AzFWMgr]
 - [標準 DDoS 保護][DDoS]
 
-通常，中央 IT 和安全性小組會負責周邊網路的需求定義和作業。
+通常，中央 IT 小組和安全性小組會負責周邊網路的需求定義和操作。
 
 ![7][7]
 
@@ -420,7 +420,7 @@ Azure 資料中心存在於全球許多地區。 選取多個 Azure 資料中心
 
 | 網路功能 | 負載平衡 | 連線能力 |
 | --- | --- | --- |
-| [Azure 虛擬網路][virtual-network] <br> [網路安全性群組][NSG] <br> [服務端點][ServiceEndpoints] <br> [Private Link][PrivateLink] <br> [使用者定義的路由][UDR] <br> [網路虛擬設備][NVA] <br> [公用 IP 位址][PIP] <br> [Azure DNS][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer （L4）][ALB] <br> [應用程式閘道（L7）][AppGW] <br> [Azure 流量管理員][azure-traffic-manager] <br><br><br><br><br> | [虛擬網路對等互連][virtual-network-peering] <br> [虛擬私人網路][VPN] <br> [Virtual WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [ExpressRoute Direct][ExRD] <br><br><br><br><br> |
+| [Azure 虛擬網路][virtual-network] <br> [網路安全性群組][NSG] <br> [服務端點][ServiceEndpoints] <br> [私人連結][PrivateLink] <br> [使用者定義的路由][UDR] <br> [網路虛擬設備][NVA] <br> [公用 IP 位址][PIP] <br> [Azure DNS][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer （L4）][ALB] <br> [應用程式閘道（L7）][AppGW] <br> [Azure 流量管理員][azure-traffic-manager] <br><br><br><br><br> | [虛擬網路對等互連][virtual-network-peering] <br> [虛擬私人網路][VPN] <br> [Virtual WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [ExpressRoute Direct][ExRD] <br><br><br><br><br> |
 
 | 身分識別 | 監視 | 最佳做法 |
 | --- | --- | --- |

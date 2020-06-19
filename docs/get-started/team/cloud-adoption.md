@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 9a35e4d9f693362597d301f1ec8d01efdb7887f4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814457"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076229"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：打造雲端採用小組
 
@@ -68,7 +68,7 @@ ms.locfileid: "83814457"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組負責維護整個雲端採用生命週期中的清楚 RACI 結構。 | 請參閱以下的指導方針和需求： <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 <li> RACI 中所列的其他雲端採用小組或個人 |
+| <li> 雲端策略小組負責維護整個雲端採用生命週期中的清楚 RACI 結構。 | 請參閱以下的指導方針和需求： <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 <li> RACI 中所列的其他雲端採用小組或個人 |
 
 ## <a name="step-3-begin-your-adoption-journey"></a>步驟3：開始採用旅程圖
 
@@ -98,7 +98,7 @@ ms.locfileid: "83814457"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 <li> 雲端策略小組 |
+| <li> 雲端採用小組 | <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 <li> 雲端策略小組 |
 
 ## <a name="step-4-expand-your-skills-with-scenarios-and-best-practices"></a>步驟4：利用案例和最佳作法來擴展您的技能
 

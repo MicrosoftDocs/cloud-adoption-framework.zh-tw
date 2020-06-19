@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: bfda763d196250a70ab4785425c25193a3ea90ca
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 65a201886f9cbc67a58aa5bd14f53e928d4495b8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812989"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076508"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -53,7 +53,7 @@ ms.locfileid: "84812989"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-2-align-partner-support"></a>步驟2：協調合作夥伴支援
 
@@ -71,7 +71,7 @@ ms.locfileid: "84812989"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>步驟3：收集資料並分析資產和工作負載
 
@@ -163,7 +163,7 @@ ms.locfileid: "84812989"
 **項**
 
 - 部署第一個登陸區域，以進行初始、低風險的遷移。
-- 開發計畫來與卓越或中央 IT 的雲端中心重構。
+- 開發計畫，與卓越或中央 IT 小組的雲端中心重構。
 - 時程表風險：
   - 前10個工作負載的治理、作業和安全性需求可能會使此程式變慢。
   - 第一個登陸區域和後續登陸區域的實際重構需要較長的時間，但這應該與遷移工作平行進行。
@@ -173,7 +173,7 @@ ms.locfileid: "84812989"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-8-migrate-your-first-10-workloads"></a>步驟8：遷移您的前10個工作負載
 
@@ -199,7 +199,7 @@ ms.locfileid: "84812989"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-9-hand-off-production-workloads-to-cloud-governance"></a>步驟9：將生產工作負載交給雲端治理
 
@@ -219,7 +219,7 @@ ms.locfileid: "84812989"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-10-hand-off-production-workloads-to-cloud-operations"></a>步驟10：將生產工作負載交給雲端作業
 
@@ -244,7 +244,7 @@ Operations management 是另一項需求，可達到遷移成功。 將個別工
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="value-statement"></a>Value 語句
 

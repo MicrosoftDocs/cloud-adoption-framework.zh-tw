@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4c97e3fea6d6191e628eda6c0f9b61c2e6063d50
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 636b0e2554fb9ab25134a226ef3bdd7aae067bb3
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787906"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076788"
 ---
 # <a name="azure-regions"></a>Azure 區域
 
@@ -82,7 +82,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 | 區域        | Country     | 當地員工 | 當地外部使用者   | 當地資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | USA         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | 加拿大      | 否              | 客戶              | 是                         | 是                           |
+| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
 | 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 否 - 只有網路           | 是                           |
 | 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 
@@ -112,7 +112,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 當移轉範圍包含多個區域時，雲端採用小組應評估下列整備考量：
 
-- 資料主權可能需要將某些資產在地化，但有許多資產可能不受這些合規性限制所控管。 記錄、報告、網路路由、身分識別和其他核心 IT 服務等項目可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 雲端採用小組應評估這些服務的共用服務模型用法，如[具有共用服務的中樞和輪輻拓撲參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)所述
+- 資料主權可能需要將某些資產在地化，但有許多資產可能不受這些合規性限制所控管。 記錄、報告、網路路由、身分識別和其他集中式 IT 服務等專案，都有資格裝載為多個訂用帳戶或甚至多個區域上的共用服務。 雲端採用小組應評估這些服務的共用服務模型用法，如[具有共用服務的中樞和輪輻拓撲參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)所述
 - 在為類似環境部署多個執行個體時，環境處理站可能會建立一致性、改善治理並加快部署速度。 [複雜企業治理指南](../../govern/guides/complex/index.md)建立了一套方法，會產生規模橫跨多個區域的環境。
 
 該小組一旦熟悉基準方法且整備也可配合之後，就必須考慮幾個資料驅動必要條件：

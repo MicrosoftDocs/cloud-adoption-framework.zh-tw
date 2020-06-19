@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 62013cf591025bba13c55429bbd855fb20cb4b00
-ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
+ms.openlocfilehash: 45131ce44d9fb65b677b1b85a5dcf2894be0b446
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942993"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994221"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -47,7 +47,7 @@ ms.locfileid: "84942993"
 
 安全性自然建立了減緩進程的摩擦，識別哪些元素在您的 DevOps 和 IT 程式中是狀況良好的，而哪些不是：
 
-- **狀況良好的摩擦：** 就像是在練習中的抵抗，讓肌肉更強，整合適當的安全性摩擦，藉由在適當的時間強制執行重要的思考，來增強系統或應用程式。 這種方式通常會考慮到攻擊者在設計期間如何嘗試危害應用程式或系統，以及如何在軟體程式碼、設定或操作實務中，檢查、識別和理想地修正攻擊者可以利用的潛在弱點。
+- **狀況良好的摩擦：** 就像是在練習中的抵抗，讓肌肉更強，整合適當的安全性摩擦，藉由在適當的時間強制執行重要的思考，來增強系統或應用程式。 這種方式通常會考慮攻擊者在設計期間可能會如何嘗試危害應用程式或系統，以及檢查、識別和理想地修正攻擊者可以在軟體代碼、設定或操作實務中入侵的潛在弱點。
 - **狀況不良的摩擦：** 會妨礙超出其保護的價值。 這種情況通常發生在工具產生的安全性錯誤（例如錯誤警示）時，或當探索或修正安全性問題的麻煩超過攻擊的潛在影響時。
 
 ### <a name="standalone-and-integrated-responsibilities"></a>獨立和整合責任
@@ -152,7 +152,7 @@ ms.locfileid: "84942993"
 
     取得這個許可權非常重要，因為這些應用程式通常會啟用重要的商務程式並儲存重要的商務資料。
 
-  - **現代化周邊：** 組織應具備完整的方法來保護所有工作負載的資料，組織應建立一致、集中管理的身分識別控制項的現代化周邊，以保護其資料、裝置和帳戶。 這會受到在 CISO 研討會的模組3中詳細討論的零信任策略，以及更多資源的影響。
+  - **現代化周邊：** 組織應具備完整的方法來保護所有工作負載的資料，組織應建立一致、集中管理的身分識別控制項的現代化周邊，以保護其資料、裝置和帳戶。 這會受到[CISO 研討會的模組 3](https://docs.microsoft.com/en-us/security/ciso-workshop/ciso-workshop-module-3)中詳細討論的零信任策略影響。
 
 ### <a name="security-and-trust"></a>安全性與信任
 

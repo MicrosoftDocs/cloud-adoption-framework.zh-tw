@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: eedd956934022db81fbc8380db27a3831ab1b197
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755575"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077202"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 
@@ -75,7 +75,7 @@ ms.locfileid: "83755575"
 
 可能需要來自現有 IT 人員的其他支援。 這對於雲端採用有價值的貢獻，是雲端代理人和合作夥伴的創新和企業靈活性。
 
-- [中央 IT 責任](../organize/central-it.md)
+- [中央 IT 小組責任](../organize/central-it.md)
 
 ## <a name="whats-next"></a>後續步驟
 

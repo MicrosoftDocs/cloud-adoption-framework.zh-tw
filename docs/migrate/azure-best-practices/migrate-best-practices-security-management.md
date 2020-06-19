@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 56abab2dbbc1acaa397fd04564bec45a8ebc5f8e
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 8233d262a8f6ea7f2ecd573cf33aff8d46f74f4b
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862563"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077249"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -262,7 +262,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 
 ## <a name="best-practice-implement-blueprints"></a>最佳做法：執行藍圖
 
-正如藍圖可讓工程師或架構設計人員勾勒出專案的設計參數一樣，Azure 藍圖可讓雲端架構人員和中央 IT 人員定義一組可重複使用的 Azure 資源，其中實作並遵循組織的標準、模式和需求。 透過 Azure 藍圖，開發小組可快速地建置及建立符合組織合規性要求，且包含一組內建元件 (例如網路) 的新環境，以加速開發和交貨。
+就像藍圖可讓工程師和架構師草擬專案的設計參數，Azure 藍圖讓雲端架構設計人員和中央 IT 小組定義一組可重複使用的 Azure 資源，以符合組織的標準、模式和需求。 透過 Azure 藍圖，開發小組可快速地建置及建立符合組織合規性要求，且包含一組內建元件 (例如網路) 的新環境，以加速開發和交貨。
 
 - 使用藍圖來協調資源群組、Azure Resource Manager 範本，以及原則和角色指派的部署。
 - 藍圖會儲存在全域散佈的 Azure Cosmos DB 中。 藍圖物件會複寫至多個 Azure 區域。 複寫可針對藍圖提供低延遲、高可用性且一致的存取，無論藍圖部署資源的區域為何。

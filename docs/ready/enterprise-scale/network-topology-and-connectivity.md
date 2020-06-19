@@ -1,22 +1,22 @@
 ---
-title: 網路拓撲和連線能力
-description: 網路拓撲和連線能力
+title: 網路拓樸和連線能力
+description: 網路拓撲和連線能力。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f790c820c093d4006a517ee16973f16720e4f49a
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: bff08721f87b8ecb14b2e63107108e3d0bc8911c
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799937"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075192"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
-# <a name="network-topology-and-connectivity"></a>網路拓撲和連線能力
+# <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
 本章節將探討主要的設計考慮，以及在 Microsoft Azure 中的網路和連線能力的相關建議。
 
@@ -156,7 +156,7 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 - 請勿在 Azure 虛擬 WAN 上建立傳輸網路，因為虛擬 WAN 符合所有可轉移的網路拓撲需求，包括使用協力廠商 Nva 的能力。
 
-- 建議您不要使用現有的內部部署網路（例如多重通訊協定標籤切換（MPLS）），在 Azure 區域之間連線 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域進行 Azure 資源的相互連接。
+- 請不要使用現有的內部部署網路（例如多重通訊協定標籤切換（MPLS）），在 Azure 區域之間連線 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。
 
 - 針對您從不是以虛擬 WAN 為基礎的中樞和輪輻網路拓撲進行遷移的 brownfield 案例，請參閱[遷移至 Azure 虛擬 wan](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology)。
 
@@ -191,7 +191,7 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
   - VNet 對 VNet 流量可能會遇到額外的延遲，因為流量必須 hairpin 在 Microsoft enterprise edge （MSEE）路由器上。
 
-  - 頻寬會受限於 ExpressRoute 閘道的庫存單位（SKU）。
+  - 頻寬會受限於 ExpressRoute 閘道 SKU。
 
   - 客戶仍必須部署和管理 Udr，而他們需要跨 VNet 流量的檢查/記錄。
 
@@ -225,7 +225,7 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 - 針對區域部署，主要使用中樞與輪輻拓撲，並將 Vnet 與虛擬網路對等互連連線至中央中樞 VNet，以透過 ExpressRoute 進行跨單位連線、用於分支連線的 VPN、透過 Nva 和 Udr 的輪輻到輪輻連線，以及透過 NVA 的網際網路輸出保護，如下圖所示。
 
-![網路拓撲和連線能力](./media/hub-and-spoke-topology.png)
+![網路拓樸和連線能力](./media/hub-and-spoke-topology.png)
 
 _圖5：中樞和輪輻網路拓撲。_
 
@@ -464,8 +464,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - Azure 目前不提供透過全域 VNet 對等互連的原生加密。 如果目前需要 Azure 區域之間的加密，則可以使用 VPN 閘道（而非全域 VNet 對等互連）來連接 Vnet。
 
-**設計建議：** 
- ![加密流程 ](./media/enc-flows.png)
+**設計建議：** ![加密流程 ](./media/enc-flows.png)
  _圖8：加密流程。_
 
 - 使用 VPN 閘道建立從內部部署至 Azure 的 VPN 連線時，流量會在通訊協定層級使用 IPsec 通道進行加密，如上 `Flow A` 圖所示。

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f2d9250dec7a157fdee2dc908c34625e970aeef1
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216107"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076167"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 
@@ -42,7 +42,7 @@ ms.locfileid: "83216107"
 
 ## <a name="decision-framework"></a>決策架構
 
-較小型工作負載的修復很簡單，而這也是我們會建議您選擇較小型工作負載來進行初始移轉的其中一個原因。 不過，隨著移轉工作的熟練，當您開始處理較大型的工作負載時，修復程序將會相當耗時且成本高昂。 例如，在涉及資產有 5000 個以上 VM 的集區中，其 Windows Server 2003 移轉的修復工作可能會導致移轉延遲數個月。 如果需要這類大規模修復，下列問題可協助您引導決策的進行：
+因為較小工作負載的補救可能很簡單，所以您應該選擇較小的工作負載來進行初始遷移。 不過，隨著移轉工作的熟練，當您開始處理較大型的工作負載時，修復程序將會相當耗時且成本高昂。 例如，在涉及資產有 5000 個以上 VM 的集區中，其 Windows Server 2003 移轉的修復工作可能會導致移轉延遲數個月。 如果需要這類大規模修復，下列問題可協助您引導決策的進行：
 
 - 是否已在移轉待辦項目中識別出並註明修復所影響到的所有工作負載？
 - 對於未受影響的工作負載，移轉是否會產生類似的投資報酬率 (ROI)？

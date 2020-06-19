@@ -1,18 +1,18 @@
 ---
 title: 開始使用：組建雲端平臺小組
-description: 本指南可協助雲端平臺小組瞭解範圍、交付專案，以及他們所負責的功能。
+description: 本指南可協助雲端平臺小組瞭解其提供的範圍、交付專案和功能。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c7753434a9ce901693938651f303add90bb6002b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 28abe413c521bdb4915548fbdbafc8a0be4fc532
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751959"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075648"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>開始使用：組建雲端平臺小組
 

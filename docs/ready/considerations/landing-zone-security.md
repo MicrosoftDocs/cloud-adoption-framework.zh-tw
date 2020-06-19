@@ -1,18 +1,18 @@
 ---
 title: 改善登陸區域安全性
-description: 改善登陸區域安全性
+description: 改善登陸區域安全性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4635d92760d2a1ae8ceff2caee683528c82b06b3
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: c015b54a10b7b1ef76969148dbea263d37353562
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799988"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076157"
 ---
 <!-- cSpell:ignore SIEM -->
 

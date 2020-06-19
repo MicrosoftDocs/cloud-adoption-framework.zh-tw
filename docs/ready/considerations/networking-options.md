@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 91214b5efb138c0b5432bc7b8c338b434cd7be4a
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: cf33fabd3b3b7cfb6b1deadd127a8b8fb13b559d
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800090"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076081"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -63,7 +63,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 我需要新增私人網路連線，以從我的公司網路存取 Microsoft 雲端服務，如同存取我自己資料中心內的內部部署。 | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | 我需要在網路案例層級進行監視與診斷。 | [Azure 網路監看員](https://docs.microsoft.com/azure/network-watcher) |
 | 我需要原生防火牆功能，具有內建的高可用性、不受限制的雲端擴充性，以及零的維護。 | [Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview) |
-| 我需要安全地連接商業辦公室、零售地點和網站。 | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
+| 我需要安全地連接商業辦公室、零售地點和網站。 | [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan) |
 | 我需要可調整並已加強安全性的傳遞點，適用於微服務型全域 Web 應用程式。 | [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 
 <!-- markdownlint-enable MD033 -->
@@ -81,7 +81,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 您的 Azure 裝載工作負載需要有限的內部部署資源存取權，但您必須將雲端連線視為不受信任。                                                                                                                                                                                                                             | [雲端 DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
 | 您的 Azure 裝載工作負載需要有限的內部部署資源存取權，而且您計劃在雲端與內部部署環境之間實作成熟的安全性原則和安全的連線。                                                                                                                                                           | [混合式](../../decision-guides/software-defined-network/hybrid.md)                  |
 | 您需要部署及管理大量的 VM 和工作負載，可能會超過 [Azure 訂用帳戶限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)，您需要跨訂用帳戶共用服務，或者您需要更多的角色、應用程式結構或許可權隔離。 | [中樞與輪幅](../../decision-guides/software-defined-network/hub-spoke.md)        |
-| 您有許多分公司需要彼此連線與連線至 Azure。                                                                                                                                                                                                                                                                                         | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| 您有許多分公司需要彼此連線與連線至 Azure。                                                                                                                                                                                                                                                                                         | [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 <!-- TODO: Refactor VDC content below. -->
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
@@ -90,10 +90,10 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 除了使用其中一種架構模式，如果您的企業 IT 小組管理大型雲端環境，請考慮諮詢[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 當您設計以 Azure 為基礎的雲端基礎結構時，如果您在**雲端中裝載超過1000個資產（應用程式、基礎結構或資料資產）**，則 CAF 企業級登陸區域會提供網路、安全性、管理和基礎結構的結合方法。
 
-對於符合下列準則的組織，您可能也會想要從[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)開始：
+對於符合下列準則的組織，您也可以開始使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)：
 
 - 貴企業受到法規合規性需求規範，而需要集中的監視和稽核功能。
-- 您需要維護一般原則和治理合規性，以及對核心服務的集中式 IT 控制。
+- 您需要維護通用原則和治理合規性，並集中控制核心服務。
 - 您的行業依賴復雜的平台，需要復雜的控制項和深入網域的專業知識來管理平台。 這在金融、石油和天然氣或製造業的大型企業中最為常見。
 - 現有的 IT 治理原則需要與現有功能更加緊密地保持對應，即使在早期階段採用期間也是如此。
 

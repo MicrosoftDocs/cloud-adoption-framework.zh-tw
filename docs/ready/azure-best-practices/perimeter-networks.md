@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 1a2ba721783451128f4d2f117305309b40a8b862
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799750"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076714"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "84799750"
 > - [在 Azure 與您的內部部署資料中心之間執行 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-通常，您的中央 IT 和安全性小組會負責定義操作周邊網路的需求。
+通常，您的中央 IT 小組和安全性小組會負責定義操作周邊網路的需求。
 
 ![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 

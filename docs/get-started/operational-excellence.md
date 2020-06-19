@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9a207590049021a6bb373ab13ff30c5c26431238
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 948a4b9dc03fd7353112f52e605d515819bc6ceb
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814404"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076493"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>開始使用：在數位轉型期間提供卓越的營運
 
@@ -53,7 +53,7 @@ ms.locfileid: "83814404"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-2-develop-an-organizational-change-management-plan-to-span-cloud-adoption"></a>步驟2：開發組織變更管理計畫，以跨越雲端採用
 
@@ -81,7 +81,7 @@ ms.locfileid: "83814404"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-manage-change-across-cloud-adoption-efforts"></a>步驟3：跨雲端採用工作管理變更
 

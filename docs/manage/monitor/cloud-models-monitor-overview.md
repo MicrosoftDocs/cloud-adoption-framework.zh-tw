@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 94a299a0ece2edfe1e459b2e0eca4b717c196d2d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 4eb15ffbbe11f79bcb9ebe198369cc109a10780e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785152"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075303"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -172,7 +172,7 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 
 - 定義標準和方法，以啟用跨混合式和雲端資源的監視、每個資源的監視基準、警示閾值等等。  
 
-- 設定角色型存取控制（RBAC），讓您只授與使用者和群組所需的存取權，以從他們負責管理的資源監視資料。
+- 設定角色型存取控制（RBAC），讓您只授與使用者和群組從其管理的資源監視資料所需的存取權。
 
 - 包含自動化和自助式服務，可讓每個小組視需要建立、啟用和調整其監視和警示設定。
 

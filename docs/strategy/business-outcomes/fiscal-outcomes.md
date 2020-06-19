@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: c85709e9fd9388e8241374723250d4eb0c62346c
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815356"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994247"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -54,7 +54,7 @@ ms.locfileid: "83815356"
 
 - **範例 #1：** 公司的資料中心會耗用大量百分比的年度 IT 預算。 它選擇進行雲端遷移，並將該資料中心的資產轉換為基礎結構即服務（IaaS）解決方案，創造為期三年的成本降低。
 - **範例 #2：** 一家控股公司最近取得了新公司。 在收購中，條款規定應該在六個月內從目前的資料中心移除新的實體。 若未這麼做，將會導致保留公司每月 $1000000 美元。 在雲端遷移中將數位資產移到雲端，可讓您快速解除委任舊資產。
-- **範例 #3：** 已經考慮給取用者的收入稅務公司在一年的前三個月期間，會經歷70% 的年度收益。 今年的剩餘時間，其大型 IT 投資就相當休眠。 雲端遷移可以讓 IT 部署這三個月所需的計算/裝載容量。 在其餘的九個月，IaaS 成本將可藉由縮減計算使用量大幅降低。
+- **範例 #3：** 已經考慮給取用者的收入稅務公司在一年的前三個月期間，會經歷70% 的年度收益。 今年的剩餘時間，其大型 IT 投資相對於睡眠狀態。 雲端遷移可以讓 IT 部署這三個月所需的計算/裝載容量。 在其餘的九個月，IaaS 成本將可藉由縮減計算使用量大幅降低。
 
 <!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->

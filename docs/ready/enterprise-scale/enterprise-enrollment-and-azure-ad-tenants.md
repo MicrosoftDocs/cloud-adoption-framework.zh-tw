@@ -1,18 +1,18 @@
 ---
 title: 企業註冊和 Azure Active Directory 租使用者
-description: 企業註冊和 Azure Active Directory 租使用者
+description: Enterprise 註冊和 Azure Active Directory 租使用者。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e04b0fca9ff1a8b3ae022ca7dfd38e90512989d1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: a5c9f562e521ec1e04b598b9c2c55deceb72e45e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792528"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076969"
 ---
 # <a name="enterprise-enrollment-and-azure-active-directory-tenants"></a>企業註冊和 Azure Active Directory 租使用者
 

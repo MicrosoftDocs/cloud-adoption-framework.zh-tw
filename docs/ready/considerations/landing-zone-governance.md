@@ -1,18 +1,18 @@
 ---
 title: 改善登陸區域控管
-description: 改善登陸區域控管
+description: 改善登陸區域治理。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd500f00ecd021a1d05904c675d63a64e8b6764b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 24c76a6c6217fb83741b369dafd9f0f824fcf460
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756527"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077087"
 ---
 # <a name="improve-landing-zone-governance"></a>改善登陸區域控管
 

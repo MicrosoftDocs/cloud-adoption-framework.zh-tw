@@ -1,18 +1,18 @@
 ---
 title: 身分識別和存取管理
-description: 身分識別和存取管理
+description: 身分識別與存取管理。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7bac08f2e7d7482be5d8425fe634e54e28043fc0
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: c3b364a42e69a1064122091780bbf66fe3424f6c
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792489"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077160"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -73,7 +73,7 @@ _圖1：身分識別和存取管理。_
 
 - 考慮下列重要角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用方式 | 動作 | 沒有動作 |
+| 角色 | 使用量 | 動作 | 沒有動作 |
 |---|---|---|---|
 | Azure 平臺擁有者               | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理（NetOps）        | 整個平臺的全球連線管理： Vnet、Udr、Nsg、Nva、VPN、ExpressRoute 等等            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |

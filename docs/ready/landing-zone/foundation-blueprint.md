@@ -1,5 +1,5 @@
 ---
-title: 在 Azure 中部署 CAF foundation 藍圖
+title: 在 Azure 中部署 CAF Foundation 藍圖
 description: 瞭解如何在 Azure 中部署 CAF foundation 藍圖。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,18 +7,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b39c4fd19fecef4bb3f764d716efeb3832a0fa4e
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 672feabf0bb15d47ffdedbe85279bb7ff9228172
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813391"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075900"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
 # <a name="deploy-a-caf-foundation-blueprint"></a>部署 CAF Foundation 藍圖
 
-CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立治理 MVP （最基本的可行產品）所需的工具，以開始開發您的治理專業領域。 此藍圖的設計目的是要加到現有登陸區域，並可透過單一動作套用至 CAF 遷移登陸區域。
+CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立治理 MVP （最基本的可行產品）所需的工具，以開始開發您的治理專業領域。 此藍圖的設計目的是要加到現有登陸區域，並可透過單一動作套用至 CAF 遷移登陸區域藍圖。
 
 ## <a name="deploy-the-blueprint"></a>部署藍圖
 

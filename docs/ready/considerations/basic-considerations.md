@@ -7,12 +7,12 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 98160a01647907609bfbc1b16d9a4ffe8e23e06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de6299dd2dc7c8623137d77576ae681306abe375
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621532"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077055"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
@@ -26,7 +26,7 @@ ms.locfileid: "83621532"
 
 所有登陸區域都會提供裝載選項的結構。 此結構是透過治理控制項明確建立的，或是透過採用登陸區域內的服務有組織地建立的。 下列文章可協助您做出決策，它們將反映在藍圖或其他建立登陸區域的自動化指令碼中：
 
-- [計算決策](./compute-options.md)：若要將操作複雜度降到最低，請將計算選項與登陸區域的用途保持一致。 您可以使用自動化工具鏈 (例如 Azure 原則計劃和登陸區域藍圖) 來強制執行這項決策。
+- [計算決策](./compute-options.md)：若要將操作複雜度降到最低，請將計算選項與登陸區域的用途保持一致。 您可以使用自動化工具鏈（例如 Azure 原則計畫和登陸區域）來強制執行這項決定。
 - [儲存體決策](./storage-options.md)：選擇正確的 Azure 儲存體解決方案，以支援您的工作負載需求。
 - [網路決策](./networking-options.md)：選擇 [網路服務]、[工具] 和 [架構]，以支援貴組織的工作負載、治理和連線能力需求。
 - [資料庫決策](./data-options.md)：判斷哪一種資料庫技術最適合您的工作負載需求。

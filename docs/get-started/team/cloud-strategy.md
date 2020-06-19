@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 058d3a98dbf638c83e337a991641cf948e01086b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 5e9ac42087394f532e508e5d1be6a1119c3f8b9e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786478"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075635"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
@@ -118,7 +118,7 @@ ms.locfileid: "84786478"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-5-establish-business-outcomes"></a>步驟5：建立商務結果
 
@@ -163,7 +163,7 @@ ms.locfileid: "84786478"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-7-support-adoption-through-a-regular-cadence"></a>步驟7：透過一般步調支援採用
 
@@ -187,7 +187,7 @@ ms.locfileid: "84786478"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="whats-next"></a>後續步驟
 

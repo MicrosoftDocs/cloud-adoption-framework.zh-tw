@@ -1,18 +1,18 @@
 ---
 title: 管理與監視
-description: 管理與監視
+description: 管理和監視。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b83e0c6139b2d2fd3b89c5345063a7ffad7f7876
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 46f98753dda7590daa725c5bd4c0c43a53190871
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792463"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077120"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -82,8 +82,7 @@ _圖1：平臺管理和監視。_
 
 - 使用 Azure 原則監視來賓內虛擬機器（VM）設定漂移。 透過原則啟用[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定審核功能可協助應用程式小組工作負載輕鬆地立即使用功能功能。
 
-- [在 Azure 自動化中使用更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)，做為 Windows 和 Linux vm 的長期修補機制。
- 透過原則強制執行更新管理設定可確保所有 Vm 都包含在 patch management 擬訂規則中，讓應用程式小組能夠管理其 Vm 的修補程式部署，並為中央 IT 提供所有 Vm 之間的可見度和強制功能。
+- [在 Azure 自動化中使用更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)，做為 Windows 和 Linux vm 的長期修補機制。 透過原則強制執行更新管理設定可確保所有 Vm 都包含在修補程式管理擬訂規則中，讓應用程式小組能夠管理其 Vm 的修補程式部署，並提供可見度和強制功能給所有 Vm 的中央 IT 小組。
 
 - 使用 Azure 網路監看員透過[網路監看員 NSG 流量記錄 v2](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview)主動監視流量。 使用[分析](https://docs.microsoft.com/azure/network-watcher/traffic-analytics)會分析 NSG 流量記錄，以收集有關虛擬網路內 IP 流量的深入解析，並提供重要的資訊來進行有效的管理和監視。 流量分析提供的資訊包括大部分的通訊主機和應用程式通訊協定、最常交談的主機組、允許或封鎖的流量、輸入和輸出流量、開啟網際網路埠、大部分封鎖規則、每個 Azure 資料中心的流量分配、虛擬網路、子網或 rogue 網路。
 

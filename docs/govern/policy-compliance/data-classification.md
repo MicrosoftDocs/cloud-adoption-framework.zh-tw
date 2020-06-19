@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebd9d6435e3dce2e084a25f4a7a38c3694598d7c
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0696eb9b3720519fe26641322fa8b50caf020620
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786717"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994192"
 ---
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 
@@ -37,7 +37,7 @@ ms.locfileid: "84786717"
 
 ## <a name="tagging-data-classification-in-azure"></a>在 Azure 中標記資料分類
 
-資源標記是用來儲存中繼資料的好方法，而且您可以使用這些標記將資料分類資訊套用至已部署的資源。 雖然以分類來標記雲端資產不是正式資料分類程式的替代方案，但它提供了管理資源和套用原則的重要工具。 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)是一個絕佳的解決方案，可協助您將_資料_本身分類，不論其位於何處（內部部署、Azure 或其他位置）。 請將它視為整體分類策略的一部分。
+資源標記是用來儲存中繼資料的好方法，而且您可以使用這些標記將資料分類資訊套用至已部署的資源。 雖然以分類來標記雲端資產不是正式資料分類程式的替代方案，但它提供了管理資源和套用原則的重要工具。 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)是一個絕佳的解決方案，可協助您將資料本身分類，不論其位於何處（內部部署、Azure 或其他位置）。 請將它視為整體分類策略的一部分。
 
 如需 Azure 中資源標記的詳細資訊，請參閱[使用標記來組織您的 azure 資源和管理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)階層。
 

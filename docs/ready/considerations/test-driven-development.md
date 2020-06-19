@@ -1,18 +1,18 @@
 ---
 title: 登陸區域的測試導向開發
-description: 登陸區域的測試導向開發
+description: 登陸區域的測試導向開發。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f5aa878292acc04d70acb88a7c885ece34fe32a3
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 81a6ca5f7b642cb2e8723e6861bf61afe8242003
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800107"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077022"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 

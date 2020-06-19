@@ -1,18 +1,18 @@
 ---
 title: 設計指導方針
-description: 設計指導方針
+description: 設計方針。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a1f3a23a57071dee637ecd0b7721ce8db4f86194
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: c1f23841cbde493b2c8279a1870ebbe7b061c721
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792645"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076934"
 ---
 # <a name="design-guidelines"></a>設計指導方針
 
@@ -31,8 +31,8 @@ ms.locfileid: "84792645"
 1. [企業註冊和 Azure Active Directory 租使用者](./enterprise-enrollment-and-azure-ad-tenants.md)
 2. [身分識別和存取管理](./identity-and-access-management.md)
 3. [管理群組和訂用帳戶組織](./management-group-and-subscription-organization.md)
-4. [網路拓撲和連線能力](./network-topology-and-connectivity.md)
+4. [網路拓樸和連線能力](./network-topology-and-connectivity.md)
 5. [管理與監視](./management-and-monitoring.md)
 6. [商務持續性和災害復原](./business-continuity-and-disaster-recovery.md)
 7. [安全性、治理和合規性](./security-governance-and-compliance.md)
-8. [平臺自動化和 DevOps](./platform-automation-and-devops.md)
+8. [平台自動化和 DevOps](./platform-automation-and-devops.md)

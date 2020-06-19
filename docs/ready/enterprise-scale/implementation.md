@@ -1,18 +1,18 @@
 ---
 title: 在 Azure 中執行企業級登陸區域
-description: 審查用來執行企業級架構的選項
+description: 請參閱執行企業級架構的選項。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 83c95275b124e6a2fe5787ae3f33d6566c0303e9
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: b804810e23213dc6ebedbe94aa9ea7c1af91cc8e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800056"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076882"
 ---
 # <a name="implement-enterprise-scale-landing-zones-in-azure"></a>在 Azure 中執行企業級登陸區域
 
@@ -22,7 +22,7 @@ ms.locfileid: "84800056"
 
 下表列出範例模組化的執行。
 
-| 部署範例  | Description  | GitHub 存放庫 | 部署至 Azure |
+| 部署範例  | 描述  | GitHub 存放庫 | 部署至 Azure |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 企業規模基礎 | 這是適用于企業規模採用的建議基礎。 | [GitHub 中的範例](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) | [將範例部署至 Azure](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzOps%2Fmain%2Ftemplate%2Fux-foundation.json) |
 | 企業規模的虛擬 WAN | 將虛擬 WAN 網路模組新增至企業規模的基礎。 | [GitHub 中的範例](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) | [將範例部署至 Azure](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzOps%2Fmain%2Ftemplate%2Fux-vwan.json) |

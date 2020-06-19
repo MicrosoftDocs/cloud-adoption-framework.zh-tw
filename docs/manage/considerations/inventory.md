@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3c963341e7e13020cb4e67fca29db14569fa6b3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b3998f05afa4bd0b8e0fe972674d84318ff63ac4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223944"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075379"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -47,16 +47,16 @@ ms.locfileid: "83223944"
 在任何雲端平臺上建立可見度需要幾個重要元件：
 
 - 責任與可見度
-- 清查
+- 庫存
 - 集中式記錄
-- 變更追蹤
+- Change tracking
 - 效能遙測
 
 ### <a name="responsibility-and-visibility"></a>責任與可見度
 
 當您為每個工作負載建立承諾時，[管理責任](./commitment.md#management-responsibility)就是一項關鍵因素。 委派的責任會建立委派可見度的需求。 清查和可見度的第一個步驟是確保負責的合作物件可以存取正確的資料。 在您執行任何雲端原生工具以取得可見度之前，請確定每個作業小組都已設定每個監視工具的適當存取權和範圍。
 
-### <a name="inventory"></a>清查
+### <a name="inventory"></a>庫存
 
 如果沒有人知道資產存在，就很難以管理資產。 您必須先清查並分類資產或工作負載，才可以管理該資產或工作負載。 針對穩定作業的第一個技術步驟是驗證清查和該清查的分類。
 
@@ -66,7 +66,7 @@ ms.locfileid: "83223944"
 
 強制一致使用集中式記錄是建立可重複作業的第一個步驟。 您可以透過公司原則來完成強制執行。 不過，可能的話，必須自動化強制執行，以確保一致性。
 
-### <a name="change-tracking"></a>變更追蹤
+### <a name="change-tracking"></a>Change tracking
 
 變更是技術環境中的一個常數。 對於可靠的作業而言，對多個工作負載的變更的認知和瞭解是不可或缺的。 任何雲端管理解決方案都應該包含瞭解技術變更時機、方法和原因的方法。 如果沒有這些資料點，補救工作會大幅妨礙運作。
 
@@ -76,7 +76,7 @@ ms.locfileid: "83223944"
 
 進行中的網路、DNS、作業系統和其他基本層面的健全狀況和操作，都是重要的資料點，會納入任何工作負載的整體健全狀況。
 
-## <a name="processes"></a>Processes
+## <a name="processes"></a>處理序
 
 可能比雲端管理平臺的功能更重要，雲端管理程式將會實現與企業的營運承諾。 任何雲端管理方法至少應該包含下列程式：
 
@@ -92,7 +92,7 @@ ms.locfileid: "83223944"
 
 當您正在開發作業監視的程式時，請務必判斷每日作業的責任，以及每個處理常式的一般支援。
 
-在中央 IT 組織中，它會提供營運專長。 當問題需要補救時，企業就會有諮詢的本質。
+在集中式 IT 組織中，它會提供營運專長。 當問題需要補救時，企業就會有諮詢的本質。
 
 在卓越組織的雲端中心，商務營運會提供專業知識，並保有管理這些程式的責任。 它會將焦點放在小組的自動化和支援，因為它們會操作環境。
 

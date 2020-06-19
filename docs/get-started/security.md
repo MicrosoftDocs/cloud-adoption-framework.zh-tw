@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 48d4642c7374af5da2684c9fc4f3bd5edfbbc6ab
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 92f42ff82b6ff944de13a360bd5135b31f7de372
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786002"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076349"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
@@ -69,7 +69,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端安全性小組 <br><br><br> | <li> 雲端策略小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端安全性小組 <br><br><br> | <li> 雲端策略小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 在此初始步驟中，治理小組也應開始協調可跨環境監視、管理及強制執行的安全性基準建立。 如需建立此功能的其他指引，請見稍後的步驟4。
 
@@ -125,7 +125,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 安全性領導小組（資訊安全長（CISO）或對等專案） | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 安全性領導小組（資訊安全長（CISO）或對等專案） | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 **策略核准：**
 
@@ -187,7 +187,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端安全性小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 組織中的任何風險小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端安全性小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 組織中的任何風險小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 **安全性計畫核准：**
 
@@ -215,7 +215,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
   Microsoft 在 Azure 中提供了數個原生功能來啟用：
   - [安全分數](https://docs.microsoft.com/azure/security-center/secure-score-security-controls)：使用 Azure 安全性狀態的評分評量，來追蹤組織中的安全性工作和專案。
-  - [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)：雲端架構設計人員和中央 IT 小組可以定義一組可重複使用的 Azure 資源，以執行並遵循組織的標準、模式和需求。
+  - [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)：雲端架構設計人員和集中式 IT 群組可以定義一組可重複使用的 Azure 資源，以執行並遵循組織的標準、模式和需求。
   - [Azure 原則](https://docs.microsoft.com/azure/governance/policy)：這是其他服務所使用之可見度和控制功能的基礎。 Azure 原則已整合到[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager)中，因此您可以在 Azure 中的任何資源之前、期間或建立之後，對其進行各種變更並強制執行原則。
 - [改善登陸區域作業](../ready/considerations/landing-zone-security.md)：使用最佳作法來改善登陸區域內的安全性。
 
@@ -224,7 +224,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端安全性小組 | <li> 雲端採用小組 <li> 雲端平臺小組 <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端安全性小組 | <li> 雲端採用小組 <li> 雲端平臺小組 <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-5-secure-existing-cloud-workloads"></a>步驟5：保護現有的雲端工作負載
 
@@ -251,7 +251,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端採用小組 <li> 雲端策略小組 <li> 雲端安全性小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端採用小組 <li> 雲端策略小組 <li> 雲端安全性小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-6-govern-to-manage-and-improve-security-posture"></a>步驟6：管理和改善安全性狀態
 
@@ -275,7 +275,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="next-steps"></a>後續步驟
 

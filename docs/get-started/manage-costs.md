@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 456d5ecbe31d23731515821943da02861144bffe
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: caa4349293df5387c4ba62aa265499d4140d3f9f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814538"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076459"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -64,7 +64,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 治理小組可以在大部分的企業中偵測並推動重大的成本優化。 「基本」、「資料驅動」的資源調整大小，對於成本有立即且可測量的影響。
 
@@ -90,7 +90,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-develop-a-cloud-adoption-plan"></a>步驟3：開發雲端採用方案
 
@@ -114,7 +114,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-4-implement-best-practices-for-landing-zones"></a>步驟4：執行登陸區域的最佳做法
 
@@ -138,7 +138,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-5-complete-waves-of-migration-effort"></a>步驟5：完成遷移作業的波浪
 
@@ -165,7 +165,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-6-drive-customer-focused-innovation"></a>步驟6：推動客戶導向的創新
 
@@ -185,7 +185,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-7-implement-sound-operations"></a>步驟7：執行音效作業
 
@@ -204,7 +204,7 @@ ms.locfileid: "83814538"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="value-statement"></a>Value 語句
 

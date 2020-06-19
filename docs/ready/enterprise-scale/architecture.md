@@ -1,6 +1,6 @@
 ---
 title: CAF 企業級登陸區域架構
-description: CAF 企業級登陸區域架構
+description: CAF 企業級登陸區域架構。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 8cab48b6480033cda04c9ff31b8748eb052e3ea2
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: f67482821816fb48a2e44ab66715bd1804f9863a
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800073"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077050"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -33,7 +33,7 @@ CAF 企業級登陸區域架構代表客戶 Azure 環境的策略性設計路徑
 
 - **範圍：** 在 CAF enterprise scale 登陸區域內，登陸區域的範圍會大幅增加，以支援在 Azure 中的企業規模進行應用程式遷移和環保現場開發。 這項擴充功能可讓您在客戶的完整 IT 組合中進行調整，而這項功能的外觀遠高於短期雲端採用方案。
 
-- **重構：** 支援完整企業規模 IT 組合所需的訂用帳戶數目可能會很大。 一開始，雲端採用架構鼓勵高頻率的重構，但這應該在第十個生產工作負載部署到雲端之前穩定。 跨企業組合工作時，可以快速部署十個應用程式，並使重構變得不切實際。 相反地，建議您針對中央 IT 或雲端中心，在第一版期間提供更完整的登陸區域。
+- **重構：** 支援完整企業規模 IT 組合所需的訂用帳戶數目可能會很大。 一開始，雲端採用架構鼓勵高頻率的重構，但這應該在第十個生產工作負載部署到雲端之前穩定。 跨企業組合工作時，可以快速部署十個應用程式，並使重構變得不切實際。 相反地，中央 IT 小組或卓越的雲端中心應該在第一版期間提供更完整的登陸區域。
 
 - **目標：** 提供以應用程式原型訂用帳戶原則為基礎的一致登陸區域，將訂用帳戶的蔓延降到最低 擴充必要元件的定義，使其更符合雲端成熟企業的治理和合規性需求。 請參閱下圖。
 

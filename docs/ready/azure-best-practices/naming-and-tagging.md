@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3bba789e43f26f32ca584dad6b836464ce71ebe2
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: a0060f6d92b7479158fd46f951e994cc0dcb9d60
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787566"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076741"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -62,19 +62,19 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 請盡量縮短命名元件的長度，避免超過資源名稱的長度限制。
 
-| 命名元件            | Description                                                                                                                                                                                                      | 範例                                         |
+| 命名元件            | 描述                                                                                                                                                                                                      | 範例                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| 業務單位               | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 | _fin_, _mktg_, _product_, _it_, _corp_           |
-| 訂用帳戶類型           | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。                                                       | _生產_、_共用_、_用戶端_                       |
-| 應用程式或服務名稱 | 資源所屬應用程式、工作負載或服務的名稱。                                                                                                                                    | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
-| 部署環境      | 資源所支援工作負載的開發週期階段。                                                                                                                              | _生產_、_開發_、 _qa_、_階段_、_測試_             |
-| 區域                      | 部署資源所在的 Azure 區域。                                                                                                                                                                 | _westus_、 _eastus2_、 _westeurope_、 _usgovia_     |
+| 業務單位               | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 | `fin`, `mktg`, `product`, `it`, `corp`           |
+| 訂用帳戶類型           | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。                                                       | `prod`, `shared`, `client`                       |
+| 應用程式或服務名稱 | 資源所屬應用程式、工作負載或服務的名稱。                                                                                                                                    | `navigator`, `emissions`, `sharepoint`, `hadoop` |
+| 部署環境      | 資源所支援工作負載的開發週期階段。                                                                                                                              | `prod`, `dev`, `qa`, `stage`, `test`             |
+| 區域                      | 部署資源所在的 Azure 區域。                                                                                                                                                                 | `westus`, `eastus2`, `westeurope`, `usgovia`     |
 
 ### <a name="recommended-resource-type-prefixes"></a>建議的資源類型首碼
 
 每個工作負載都可以包含許多個別資源和服務。 將資源類型首碼併入您的資源名稱，可讓您更輕鬆地以視覺化方式識別應用程式或服務元件。
 
-下列清單提供當您定義命名慣例時，可使用的建議 Azure 資源類型首碼。
+當您定義命名慣例時，這份清單會建議使用 Azure 資源類型首碼。
 
 <!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
@@ -86,7 +86,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 原則定義               | 策略     |
 | API 管理服務實例 | apim       |
 
-### <a name="networking"></a>網路
+### <a name="networking"></a>網路功能
 
 | 資產類型                       | 名稱前置詞 |
 |----------------------------------|-------------|
@@ -188,12 +188,13 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 資產類型              | 名稱前置詞 |
 |-------------------------|-------------|
 | 藍圖               | 最佳         |
+| 藍圖指派    | bpa        |
 | 金鑰保存庫               | kv         |
 | Log Analytics 工作區 | 日誌        |
 | Application Insights    | appi google-api       |
 | 復原服務保存庫 | rsv-        |
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -220,7 +221,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 專案的結束日期   | 排定淘汰應用程式、工作負載或服務的日期。                                                                                                                                         | _終止_         | _日期_                                                   |
 | 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_、_開發_、 _QA_、_階段_、_測試_                       |
 | 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                      | _擁有者_           | _發送_                                                  |
-| 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                                 | _Requestor_       | _發送_                                                  |
+| 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                                 | _要求者_       | _發送_                                                  |
 | 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                          |
 | 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                                  | _開始_       | _日期_                                                   |
 
@@ -236,7 +237,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-general"></a>範例名稱：一般
 
-| 資產類型                      | 影響範圍                              | 格式                                                      | 範例                                                                                                                |
+| 資產類型                      | 影響範圍                              | [格式]                                                      | 範例                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | 訂用帳戶                    | 帳戶 <br> Enterprise 合約 | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
 | 資源群組                  | 訂用帳戶                       | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
@@ -244,7 +245,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-networking"></a>範例名稱：網路
 
-| 資產類型                   | 影響範圍           | 格式                                                               | 範例                                                                                                                      |
+| 資產類型                   | 影響範圍           | [格式]                                                               | 範例                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 虛擬網路              | 資源群組  | vnet\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-shared-eastus2-001  <li> vnet-prod-westus-001  <li> vnet-client-eastus2-001 |
 | 子網路                       | 虛擬網路 | 早\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-shared-eastus2-001  <li> snet-prod-westus-001  <li> snet-client-eastus2-001 |
@@ -261,7 +262,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-compute-and-web"></a>範例名稱： Compute 和 Web
 
-| 資產類型                  | 影響範圍          | 格式                                                              | 範例                                                                                                                          |
+| 資產類型                  | 影響範圍          | [格式]                                                              | 範例                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | 虛擬機器             | 資源群組 | 機內\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
 | VM 儲存體帳戶          | 全球         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
@@ -273,7 +274,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-databases"></a>範例名稱：資料庫
 
-| 資產類型                     | 影響範圍              | 格式                                 | 範例                                                                  |
+| 資產類型                     | 影響範圍              | [格式]                                 | 範例                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Azure SQL Database 伺服器      | 全球             | server\<App Name\>-\<Environment\>       | <li> sql-navigator-生產環境 <li> sql-排放-開發 |
 | Azure SQL 資料庫             | Azure SQL Database | sqldb\<Database Name>-\<Environment\> | <li> sqldb-使用者-生產環境 <li> sqldb-使用者-開發人員 |
@@ -286,7 +287,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-storage"></a>範例名稱：儲存體
 
-| 資產類型                        | 影響範圍  | 格式                                                                        | 範例                                                              |
+| 資產類型                        | 影響範圍  | [格式]                                                                        | 範例                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | 儲存體帳戶（一般用途）     | 全球 | 聖\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
 | 儲存體帳戶（診斷記錄） | 全球 | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
@@ -294,7 +295,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-ai-and-machine-learning"></a>範例名稱： AI 和 Machine Learning
 
-| 資產類型                       | 影響範圍          | 格式                            | 範例                                                          |
+| 資產類型                       | 影響範圍          | [格式]                            | 範例                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
 | Azue 認知搜尋           | 全球         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissions-dev |
 | Azure 認知服務         | 資源群組 | 齒輪\<App Name\>-\<Environment\>  | <li> 齒輪-navigator-生產環境 <li> 齒輪-排放-開發 |
@@ -302,7 +303,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-analytics-and-iot"></a>範例名稱：分析和 IoT
 
-| 資產類型                  | 影響範圍          | 格式                              | 範例                                                              |
+| 資產類型                  | 影響範圍          | [格式]                              | 範例                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
 | Azure Data Factory          | 全球         | adf\<App Name\>\<Environment\>     | <li> adf-navigator-生產環境 <li> adf-排放-開發 |
 | Azure 串流分析      | 資源群組 | asa\<App Name\>-\<Environment\>    | <li> asa-navigator-prod <li> asa-emissions-dev |
@@ -317,7 +318,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ### <a name="example-names-integration"></a>範例名稱：整合
 
-| 資產類型        | 影響範圍       | 格式                                                     | 範例                                                      |
+| 資產類型        | 影響範圍       | [格式]                                                     | 範例                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
 | 服務匯流排       | 全球      | sb- \<App Name\> - \<Environment\> . [{servicebus.windows.net}] | <li> sb-navigator-prod <li> sb-emissions-dev |
 | 服務匯流排佇列 | 服務匯流排 | sbq-\<query descriptor\>                                   | <li> sbq-messagequery |

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b15349a976c9891536292eba25295cf4412472ba
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 31cace97b3c34b5b32ad2e92fbb9f783cd19d89f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812959"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076554"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -36,14 +36,14 @@ ms.locfileid: "84812959"
 
 - [動機](../strategy/motivations.md)：策略對齊的第一個步驟是取得推動創新工作之動機的合約。 一開始先瞭解並分類來自企業和 IT 的各種專案關係人的動機和一般主題。
 - [商務結果](../strategy/business-outcomes/index.md)：當動機對齊之後，就可以捕捉所需的商務結果。 這種資訊提供清楚的計量，讓您用來測量整體轉換。
-- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與_需要_改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率（ROI）。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務[：加速遷移](./migrate.md)。
+- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與**需要**改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率（ROI）。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務[：加速遷移](./migrate.md)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-2-evaluate-the-business-justification"></a>步驟2：評估商業理由
 
@@ -140,7 +140,7 @@ ms.locfileid: "84812959"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端治理小組 <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端治理小組 <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-6-define-operational-needs-and-business-commitments"></a>步驟6：定義營運需求和商務承諾
 
@@ -162,7 +162,7 @@ ms.locfileid: "84812959"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端營運小組 <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端營運小組 <li> 雲端採用小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>步驟7：部署對齊的登陸區域
 
@@ -171,7 +171,7 @@ ms.locfileid: "84812959"
 **項**
 
 - 在早期創新期間，部署第一個登陸區域進行初始、低風險的實驗。
-- 開發計畫來與雲端中心的卓越或中央 IT 人員進行重構，以確保治理、安全性和營運的一致。
+- 開發計畫來與卓越或中央 IT 小組的雲端中心重構，以確保治理、安全性和營運的一致。
 - 時程表風險：
   - 前10個工作負載的治理、作業和安全性需求可能會使此程式變慢。 第一個登陸區域和後續登陸區域的實際重構需要較長的時間，但這應該與遷移工作平行進行。
 
@@ -185,7 +185,7 @@ ms.locfileid: "84812959"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端平臺小組 <li> 雲端採用小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端平臺小組 <li> 雲端採用小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-8-innovate-in-the-cloud"></a>步驟8：在雲端中創新
 
@@ -214,7 +214,7 @@ ms.locfileid: "84812959"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端卓越中心 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端卓越中心 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="value-statement"></a>Value 語句
 

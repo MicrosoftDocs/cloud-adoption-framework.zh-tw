@@ -1,26 +1,26 @@
 ---
 title: 開始使用企業級登陸區域
-description: 開始使用企業級登陸區域
+description: 從企業級登陸區域開始。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 071a8edd7faebcc5df0e91154c02857287e3638d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 5df1812f069e56c2622c6a9620b4470424657214
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787466"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076679"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>開始使用企業級登陸區域
 
-有時候，雲端平臺小組會造成，以小規模開始進行調整。 小組在公司現有內部部署環境的限制範圍內工作，以達到安全性、營運及治理方面的成熟度目前狀態。 根據任何雲端環境的新條件約束，複寫所需的處理常式、工具和架構會需要一些時間。 若要加速該學習程式，需要稍微不同的起點。 將下圖與[此方法中的早期重構指引](../landing-zone/refactor.md)進行比較之後，基本的變更是起點，現在更複雜，本文稍後會更詳細地說明。
+有時候，雲端平臺小組的造成是從小規模開始，並展開。 小組在公司現有內部部署環境的限制範圍內工作，以達到安全性、營運及治理方面的成熟度目前狀態。 根據任何雲端環境的新條件約束，複寫所需的處理常式、工具和架構會需要一些時間。 若要加速該學習程式，需要稍微不同的起點。 將下圖與[此方法中的早期重構指引](../landing-zone/refactor.md)進行比較之後，基本的變更是起點，現在更複雜，本文稍後會更詳細地說明。
 
 ![登陸區域重構圖例-本文稍後的章節中所述](../../_images/ready/refactor-enterprise-scale.png)
 
-## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定詞：我應該從企業規模開始嗎？
+## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定條件：我應該從企業級架構著手嗎？
 
 對於大部分的採用模式而言，最好使用「開始小型和擴充」方法，因為它可讓小組從真實的經驗中學習。 對於符合本文參考的公司而言，需要更穩固的方法。
 
@@ -30,7 +30,7 @@ ms.locfileid: "84787466"
 
 ### <a name="security-compliance-and-culture"></a>安全性、合規性和文化特性
 
-有多個業務動機可能需要企業級登陸區域和共用服務架構，才能開始使用。 企業級登陸區域解決方案的需求，對於其企業是以機密資料和複雜相互依存架構為基礎的公司來說，可能很明顯。 當公司需要符合嚴格協力廠商需求的雲端環境，再使用雲端時，可能也會很明顯。 具有深層根之中央 IT 控制模型的文化特性可能也需要一個以集中式控制開始的架構，以通過變更控制需求。
+有多個業務動機可能需要企業級登陸區域和共用服務架構，才能開始使用。 企業級登陸區域解決方案的需求，對於其企業是以機密資料和複雜相互依存架構為基礎的公司來說，可能很明顯。 當公司需要符合嚴格協力廠商需求的雲端環境，再使用雲端時，可能也會很明顯。 具有深層的集中式 IT 控制模型的文化可能也需要一個架構，以集中式控制開始傳遞變更控制需求。
 
 ### <a name="all-in-on-the-cloud"></a>所有-在雲端上
 
@@ -49,7 +49,7 @@ ms.locfileid: "84787466"
 
 如果這些技能在雲端平臺小組中無法使用（透過員工、合作夥伴或其他支援機制），則「開始小型和擴充」方法可能會以更高品質的輸出來達到企業就緒的速度。 這種方法可讓您在現有團隊內取得成本較低的技能。
 
-## <a name="start-with-an-enterprise-scale-landing-zones"></a>從企業級登陸區域開始
+## <a name="start-with-an-enterprise-scale-landing-zone"></a>開始使用企業級登陸區域
 
 Microsoft 有大量投資工具和方法的歷程記錄，可讓客戶更輕鬆地開發及管理企業規模的登陸區域。 過去幾年來，這項投資已導致 Azure 上的指引和工具。 這項投資方法會繼續進行，而且可能會導致此特定文章的這一節定期更新。
 
@@ -65,8 +65,7 @@ Microsoft 有大量投資工具和方法的歷程記錄，可讓客戶更輕鬆�
 
 ## <a name="next-steps"></a>後續步驟
 
-選擇其中一個企業級登陸區域藍圖。
-從這裡開始，您可以使用從[小規模和擴展](./index.md)中的相同指引來擴充您的企業規模登陸區域，以符合您的獨特需求。
+選擇其中一個企業規模登陸區域。 從這裡開始，您可以使用從[小規模和擴展](./index.md)中的相同指引來擴充您的企業規模登陸區域，以符合您的獨特需求。
 
 > [!div class="nextstepaction"]
 > [使用您的企業級別登陸區域做為初始來源，繼續「開始小型和擴充」指引](./index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754949"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075574"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
@@ -68,7 +68,7 @@ ms.locfileid: "83754949"
 2. 實作 Azure 成本管理。
     1. 建立正確層級的存取範圍，以便與訂用帳戶模式和資源群組模式保持一致。 假設與先前文章中定義的治理 MVP 一致，這將需要在高階報告上執行的雲端治理小組進行**註冊帳戶範圍**存取。 治理以外的其他小組 (例如加拿大採購小組) 將需要存取**資源群組範圍**。
     2. 在 Azure 成本管理中建立預算。
-    3. 檢閱初始建議並採取動作。 建議使用週期性流程來支援報告流程。
+    3. 檢閱初始建議並採取動作。 建立週期性的程式以支援報告程式。
     4. 設定和執行 Azure 成本管理報告（初始和週期性）。
 3. 更新 Azure 原則。
     1. 稽核標記、管理群組、訂用帳戶及資源群組值，以識別任何偏差。

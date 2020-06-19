@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 02317405adc974e9836bb3e64b881da3296e3d8e
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 08090044ab0d97f8bdcf5258b0df0cbcb4c54bcd
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862427"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075767"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -63,7 +63,7 @@ ms.locfileid: "83862427"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li>  雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li>  雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>步驟3：建立與其他小組的步調
 

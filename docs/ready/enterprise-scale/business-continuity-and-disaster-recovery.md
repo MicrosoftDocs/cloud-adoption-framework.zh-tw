@@ -1,18 +1,18 @@
 ---
 title: 商務持續性和災害復原
-description: 商務持續性和災害復原
+description: 商務持續性和嚴重損壞修復。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 01c7e1872c644a4b112e7c90df39a83f19c8563d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e20448cac2f08f895cc3fb1ff430156cb7a20f46
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792671"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076994"
 ---
 # <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
 

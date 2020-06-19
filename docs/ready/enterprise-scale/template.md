@@ -1,6 +1,6 @@
 ---
 title: '[範本]'
-description: '[範本]'
+description: Template.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/30/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: d6e0e8678185c3f57a7132fc4296519c796060ab
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: fa6ed86c0d7e9a3de8fa9486c5b0c2d8814fb9cc
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792866"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077081"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-template"></a>雲端採用架構的企業規模登陸區域範本
 

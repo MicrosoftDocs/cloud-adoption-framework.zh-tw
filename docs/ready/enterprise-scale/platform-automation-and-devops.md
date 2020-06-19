@@ -1,20 +1,20 @@
 ---
-title: 平臺自動化和 DevOps
-description: 平臺自動化和 DevOps
+title: 平台自動化和 DevOps
+description: 平臺自動化和 DevOps。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b753d1bdcfcaa8b089a5f15412f60f1fe86e1b69
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 743665aa8872fd16f55339041fa14d3e4dc01645
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792853"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075986"
 ---
-# <a name="platform-automation-and-devops"></a>平臺自動化和 DevOps
+# <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
 ![平臺自動化和 DevOps ](./media/DevOps.png)
  _圖1：平臺自動化和 DevOps。_
@@ -39,7 +39,7 @@ ms.locfileid: "84792853"
 
 **設計建議：**
 
-建立跨功能的 DevOps 平臺小組，以建立、管理及維護您的企業規模架構。 這個小組應該包含您中央 IT、安全性、合規性和業務單位小組的成員，以確保您的企業有各式各樣的表現。 下列清單顯示一組適用于中央平臺小組的建議 DevOps 角色：
+建立跨功能的 DevOps 平臺小組，以建立、管理及維護您的企業規模架構。 此小組應包含來自您中央 IT 小組、安全性、合規性和業務單位的成員，以確保您的企業有廣泛的表現。 下列清單顯示一組適用于中央平臺小組的建議 DevOps 角色：
 
 - 適用于的**PlatformOps** （平臺操作）：
 
@@ -89,8 +89,7 @@ ms.locfileid: "84792853"
 
 - 使用具有明確 RBAC 界限的原則導向方法，跨應用程式小組集中強制執行一致性和安全性。 這可確保使用 RBAC 指派和 Azure 原則的組合來採取最低許可權方法，而且工作負載會隨時符合 Azure 原則指派。
 
-- 為了加速 Azure 採用，中央平臺小組應該建立一組常用的範本和程式庫，讓應用程式小組進行繪製。
-例如，水準（跨函式）指引可以協助透過主題專業知識支援遷移，以及確保與整體目標企業規模架構一致。
+- 為了加速 Azure 採用，中央平臺小組應該建立一組常用的範本和程式庫，讓應用程式小組進行繪製。 例如，水準（跨函式）指引可以協助透過主題專業知識支援遷移，以及確保與整體目標企業規模架構一致。
 
 - 請勿限制應用程式小組使用中央成品或方法，因為它妨礙了靈活性。 透過原則導向的基礎結構方法和 RBAC 指派，可以強制執行一致的基準設定。 這可確保應用程式（業務單位）小組有足夠的彈性來進行創新，同時仍然可以從預先定義的一組範本進行繪製。
 
@@ -106,7 +105,7 @@ ms.locfileid: "84792853"
 
 **設計建議：**
 
-下列清單提供了建議的中央 IT 與應用程式小組之間的責任散發，並以最小的中央相依性來協助進行遷移/轉換活動，同時仍然支援跨整個資產進行安全性和操作的集中式管理。
+下列清單提供在中央 IT 小組與應用程式團隊致力於使用最低中央相依性來提升遷移/轉換活動的建議，同時仍然支援跨整個資產的安全性和互通的集中式管理。
 
 - **應用程式函式**
 

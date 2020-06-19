@@ -7,15 +7,15 @@ ms.date: 06/16/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2107ff7158757b516235ac99c210eafd42d96907
-ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
+ms.openlocfilehash: 42fa4a2b00144996492d75583f83845cb8e501de
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942840"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077126"
 ---
-<!-- docsTest:ignore "Azure Virtual Datacenter" "Azure Virtual Datacenter: Concepts" "Lift and Shift Guide" -->
-<!-- cSpell:ignore tracsman jonor CAF -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 

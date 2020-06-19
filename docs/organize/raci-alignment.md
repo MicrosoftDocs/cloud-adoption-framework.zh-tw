@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: fed517b2241ebbffccbefd71ab5741dac52b5bae
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815441"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075214"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
-瞭解如何藉由開發跨小組的矩陣，識別負責、參與、_諮詢和通知_（RACI）的合作物件，來協調各小組的責任。 本文提供[建立小組結構](./organization-structures.md)中所述之組織結構的範例 RACI 矩陣：
+瞭解如何藉由開發跨小組的矩陣，識別負責、參與、_諮詢和通知（RACI）_ 的合作物件，來協調各小組的責任。 本文提供[建立小組結構](./organization-structures.md)中所述之組織結構的範例 RACI 矩陣：
 
 - [僅限雲端採用小組](#cloud-adoption-team-only)
 - [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
-- [集中式 IT](#central-it)
+- [中央 IT 小組](#central-it-team)
 - [策略性對齊](#strategic-alignment)
 - [操作對齊](#operational-alignment)
 - [卓越的雲端中心（CCoE）](#cloud-center-of-excellence-ccoe)
@@ -54,15 +54,15 @@ ms.locfileid: "83815441"
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
 | 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md)和[雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md)  - [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md)和[雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md)和[雲端自動化](./cloud-automation.md) |
 
-## <a name="central-it"></a>集中式 IT
+## <a name="central-it-team"></a>中央 IT 小組
 
 |                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                | 平臺成熟度             | 平台作業           | 平臺自動化           |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | ----------------------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
 | 雲端採用小組      | 負                           | 負                           | 負責                           | 負責                               | 獲得                                  | 獲得                      | 獲得                      | 獲得                      |
 | 雲端治理小組    | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 負                               | 參考                     | 負責                   | 獲得                      |
-| 集中式 IT               | 參考                             | 獲得                              | 負                           | 負                               | 負責                               | 負                   | 負                   | 負                   |
+| 中央 IT 小組               | 參考                             | 獲得                              | 負                           | 負                               | 負責                               | 負                   | 負                   | 負                   |
 |                          |                                       |                                       |                                       |                                           |                                           |                               |                               |                               |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [雲端治理](./cloud-governance.md) | [集中式 IT](./central-it.md) | [集中式 IT](./central-it.md) | [集中式 IT](./central-it.md) |
+| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [雲端治理](./cloud-governance.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) |
 
 ## <a name="strategic-alignment"></a>策略性對齊
 

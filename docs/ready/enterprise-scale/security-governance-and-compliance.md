@@ -1,18 +1,18 @@
 ---
 title: 安全性治理與合規性
-description: 安全性治理與合規性
+description: 安全性治理和合規性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d361d048492f94ca9c0895de414de80f41450e3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 96f685cc3f38022696d7eb9e12aca8e651ff80a4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792879"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076815"
 ---
 # <a name="security-governance-and-compliance"></a>安全性、治理和合規性
 

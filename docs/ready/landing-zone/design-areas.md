@@ -1,18 +1,18 @@
 ---
 title: 設計完善之登陸區域的設計區域
-description: 設計完善之登陸區域的設計區域
+description: 設計完善之登陸區域的設計區域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a2e9d5c1dc5e743add6483150fa42f8c8996d08f
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: ff839cb704ce79910fc29d6954712a0337a53e1e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799903"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077009"
 ---
 # <a name="modular-design-areas-considered-by-all-azure-landing-zones"></a>所有 Azure 登陸區域所考慮的模組化設計區域
 
@@ -27,7 +27,7 @@ ms.locfileid: "84799903"
 |---|---|---|
 | 企業註冊 | 針對具有 Azure 承諾用量的企業客戶，適當的租使用者建立和註冊是很重要的初期步驟。 | 就緒 |
 | 身分識別 | 身分識別與存取管理（IAM）是公用雲端中的主要安全性界限。 它是任何安全且完全相容之架構的基礎。 | 就緒 |
-| 網路拓撲和連線能力 | 網路和連線能力決策是任何雲端架構中同樣重要的基本層面。 | 就緒 |
+| 網路拓樸和連線能力 | 網路和連線能力決策是任何雲端架構中同樣重要的基本層面。 | 就緒 |
 | 資源組織 | 隨著雲端採用規模調整，訂用帳戶設計和管理群組階層的考慮將會影響治理、作業管理和採用模式。 | 治理 |
 | 治理專業領域 | 自動化安全性、治理和合規性原則的審核和強制執行。 | 治理 |
 | 作業基準 | 針對雲端中的穩定、進行中的作業，需要有作業基準，才能提供可見度、作業合規性及保護和復原功能。 | 管理 |

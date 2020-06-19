@@ -1,18 +1,18 @@
 ---
 title: 貢獻指南
-description: 貢獻指南
+description: 貢獻指南。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fa5c5f2890c354f079b694265367e86791e2c20d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 843604f4c7aa9f8e032ffe879cdb8fc0d9b0ff48
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792684"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076963"
 ---
 # <a name="contribution-guide"></a>貢獻指南
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dfe9fcd9e0d714185d59518638b6c7e659089af6
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 56319956688e0fcee5b2987c0b789e2af340d5e3
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813233"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075591"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,29 @@ ms.locfileid: "84813233"
 以下是最近對雲端採用架構所做的變更清單。
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同合作。 新的和更新的內容會在可用時發行。 這些版本可讓您測試、驗證及精簡指引和我們。 我們鼓勵您與我們合作，為 Azure 打造雲端採用架構。
+
+## <a name="june-15-2020"></a>2020年6月15日
+
+雲端環境的適當設定通常是雲端採用期間的第一個和最常見的技術封鎖程式。 此版本主要著重于加速部署雲端環境的指導方針。 為了克服這種常見的封鎖程式，Azure 的雲端採用架構引進了**azure 登陸區域**。
+
+| 文章 | 說明 |
+|---|---|
+| [Azure 登陸區域](../ready/landing-zone/index.md) | Azure 登陸區域會建立一組通用的設計區域和執行選項，以加速與雲端採用方案和雲端作業模式的環境建立。 這篇新文章會更清楚地定義 Azure 登陸區域。 |
+| [Azure 登陸區域-設計區域](../ready/landing-zone/design-areas.md) | 所有 Azure 登陸區域共用一組通用的8個設計區域。 在部署任何 Azure 登陸區域之前，客戶應該考慮每一種設計，以做出重要的決策。 |
+| [Azure 登陸區域-執行選項](../ready/landing-zone/implementation-options.md) | 根據您的雲端採用方案和雲端作業模式，選擇最佳的 Azure 登陸區域執行選項。 |
+
+現有的 CAF 藍圖定義和 CAF Terraform 模組會提供 Azure 登陸區域執行的起點。 不過，有數個客戶要求了更豐富的執行選項，可滿足企業級雲端採用方案的需求。 此版本將**CAF 企業規模**新增至 Azure 登陸區域的執行選項，以填滿該需求。 以下列出幾篇文章，讓您開始使用 CAF 企業級架構和參考的實體系。
+
+| 文章 | 說明 |
+|---|---|
+| [企業規模總覽](../ready/enterprise-scale/index.md) | 企業規模總覽 |
+| [實作企業級登陸區域](../ready/enterprise-scale/implementation.md) | 快速的執行選項和 github 範例 |
+| [企業規模架構](../ready/enterprise-scale/architecture.md) | 瞭解企業規模背後的架構 |
+| [企業規模的設計原則](../ready/enterprise-scale/design-principles.md) | 瞭解架構設計原則，這會在執行期間引導決策，以評估此方法是否符合您的雲端操作模型 |
+| [企業規模的設計指導方針](../ready/enterprise-scale/design-guidelines.md) | 評估企業級的指導方針，以滿足 Azure 登陸區域的常見設計區域 |
+| [實作指導方針](../ready/enterprise-scale/implementation-guidelines.md) | 在部署之前，檢查企業規模執行所需的活動 |
+
+合作夥伴是成功採用雲端的重要層面。 在整個雲端採用架構的指引中，我們新增了參考，以顯示重要角色合作夥伴的扮演 & 如何讓客戶更能與合作夥伴溝通。 如需已驗證的 CAF 合作夥伴清單，請參閱[CAF 對齊的合作夥伴優惠](https://aka.ms/adopt/partneroffers)、 [Azure 專家 MSP 合作夥伴](https://www.microsoft.com/en-us/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)或[Advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
 
 ## <a name="may-15-2020"></a>2020 5 月15日
 
@@ -117,8 +140,8 @@ ms.locfileid: "84813233"
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [什麼 &nbsp; 是 &nbsp; &nbsp; 登陸 &nbsp; 區域？](../ready/landing-zone/index.md)                 | **新文章：** 定義「登陸區域」一詞。                                                      |
 | 第一個登陸區域         | **新文章：** 擴充各種登陸區域的比較。                                                     |
-| [CAF 遷移登陸區域](../ready/landing-zone/migrate-landing-zone.md) | 將雲端採用架構藍圖的定義與第一個登陸區域的選擇隔開。         |
-| [Terraform 登陸區域](../ready/landing-zone/terraform-landing-zone.md) | 已移至準備方法的新「登陸區域」一節，以提升登陸區域交談中的 Terraform。 |
+| [CAF 遷移登陸區域](../ready/landing-zone/migrate-landing-zone.md) | 將藍圖定義與第一個登陸區域的選取範圍隔開。         |
+| [CAF Terraform 模組](../ready/landing-zone/terraform-landing-zone.md) | 已移至準備方法的新「登陸區域」一節，以提升登陸區域交談中的 Terraform。 |
 
 ### <a name="migration-updates"></a>遷移更新
 

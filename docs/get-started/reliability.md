@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0f7ae79bbcc9fb4c02a0c9e731d2e826f4682138
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 964c1b4e97f994602baea8b54066bcbc78cf5e13
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814812"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076320"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：利用正確的控制項提升可靠性
 
@@ -58,7 +58,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-2-consistently-apply-the-management-baseline"></a>步驟2：一致地套用管理基準
 
@@ -83,7 +83,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-define-your-strategy"></a>步驟3：定義您的策略
 
@@ -105,7 +105,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-4-develop-a-cloud-adoption-plan"></a>步驟4：開發雲端採用方案
 
@@ -136,7 +136,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 雲端治理小組 <li> 雲端營運小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-5-implement-landing-zone-best-practices"></a>步驟5：執行登陸區域的最佳作法
 
@@ -156,7 +156,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端營運小組 <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端營運小組 <li> 雲端策略小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-6-complete-waves-of-adoption-effort-and-change"></a>步驟6：採用成果和變更的完整波浪
 
@@ -179,7 +179,7 @@ ms.locfileid: "83814812"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端營運小組 <li> 雲端治理小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端採用小組 | <li> 雲端策略小組 <li> 雲端營運小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="value-statement"></a>Value 語句
 

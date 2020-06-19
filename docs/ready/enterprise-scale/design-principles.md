@@ -1,18 +1,18 @@
 ---
 title: 設計原則
-description: 設計原則
+description: 設計原則。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e5e9f2f6aec9285408c10927aa9e7aedc8ad178a
-ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
+ms.openlocfilehash: a0763c9ea511ff311e672bb469e0b5a0e3443e3c
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942976"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076931"
 ---
 # <a name="design-principles"></a>設計原則
 
@@ -36,9 +36,9 @@ Microsoft Azure 原則應該用來提供防護滑軌，並確保客戶平臺的�
 
 企業級架構應著重于以應用程式為中心的遷移和開發，而不是單純的基礎結構隨即轉移（例如移動虛擬機器），而且不應該區分舊的應用程式或基礎結構即服務或平臺即服務應用程式。 最後，它應該為所有要部署到客戶 Azure 平臺的應用程式類型，提供安全且安全的基礎。
 
-## <a name="aligning-azure-native-design-and-road-maps"></a>調整 Azure 原生設計和道路地圖
+## <a name="aligning-azure-native-design-and-roadmaps"></a>Azure 原生設計與藍圖的對齊
 
-企業級架構方法提倡者在可能的情況下使用 Azure 原生平臺服務和功能，這應該與 Azure 平臺藍圖對應，以確保客戶環境內有新功能可用。 Azure 平臺藍圖應該有助於通知遷移策略和企業級的道路。
+企業級架構方法提倡者在可能的情況下使用 Azure 原生平臺服務和功能，這應該與 Azure 平臺藍圖一致，以確保客戶環境內有提供新功能。 Azure 平臺藍圖應該有助於通知遷移策略和企業級的軌跡。
 
 ## <a name="recommendations"></a>建議
 

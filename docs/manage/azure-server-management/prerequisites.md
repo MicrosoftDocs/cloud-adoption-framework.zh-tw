@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6671b194d5969be75283378d571b85bd679a7953
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a85c1abd6cadb53df8862ea5eb3558811c7cd87
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219643"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075617"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的必要條件規劃
 
@@ -56,7 +56,7 @@ ms.locfileid: "83219643"
 - **工作區數目：** 做為指導原則，請建立每個 Azure 地理位置所需的最小工作區數目。 針對您的計算或儲存體資源所在的每個 Azure 地理位置，我們建議至少有一個工作區。 當您將資料移轉到不同的地理位置時，這種初始對齊方式有助於避免未來的法規問題。
 - **資料保留和上限：** 建立工作區或自動化帳戶時，您可能也需要考慮資料保留原則或資料上限需求。 如需這些原則的詳細資訊，以及規劃工作區時的其他考慮，請參閱[管理 Azure 監視器中的記錄資料和工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。
 - **區域對應：** 只有在某些 Azure 區域之間才支援連結 Log Analytics 工作區和 Azure 自動化帳戶。 例如，如果 Log Analytics 工作區裝載于 `EastUS` 區域中，則必須在 `EastUS2` 要與管理服務搭配使用的區域中建立連結的自動化帳戶。 如果您的自動化帳戶是在另一個區域中建立，則無法連結至中的工作區 `EastUS` 。 部署區域的選擇可能會大幅影響 Azure 地理位置需求。 請參閱[區域對應表](https://docs.microsoft.com/azure/automation/how-to/region-mappings)，以決定哪個區域應裝載您的工作區和自動化帳戶。
-- **工作區**多路連接：在某些情況下，Azure Log Analytics 代理程式支援多路連接，但在此設定中執行時，代理程式會面臨許多限制和挑戰。 除非 Microsoft 針對您的特定案例建議使用，否則我們不建議您在 Log Analytics 代理程式上設定多路連接。
+- **工作區**多路連接：在某些情況下，Azure Log Analytics 代理程式支援多路連接，但在此設定中執行時，代理程式會面臨許多限制和挑戰。 除非 Microsoft 針對您的特定案例建議使用，否則請不要在 Log Analytics 代理程式上設定多路連接。
 
 ## <a name="resource-placement-examples"></a>資源位置範例
 
@@ -78,7 +78,7 @@ ms.locfileid: "83219643"
 
 ### <a name="placement-in-a-management-subscription"></a>在管理訂用帳戶中放置
 
-較大型的環境會跨越多個訂用帳戶，並具有擁有監視和合規性的中央 IT 部門。 針對這些環境，請在 IT 管理訂用帳戶中建立工作區和自動化帳戶的配對。 在此模型中，地理位置中的虛擬機器資源會將其資料儲存在 IT 管理訂用帳戶的對應地理工作區中。 如果應用程式小組需要執行自動化工作，但不需要連結的工作區和自動化帳戶，他們可以在自己的應用程式訂閱中建立個別的自動化帳戶。
+較大型的環境會跨越多個訂用帳戶，並具有擁有監視和合規性的中央 IT 小組。 針對這些環境，請在 IT 管理訂用帳戶中建立工作區和自動化帳戶的配對。 在此模型中，地理位置中的虛擬機器資源會將其資料儲存在 IT 管理訂用帳戶的對應地理工作區中。 如果應用程式小組需要執行自動化工作，但不需要連結的工作區和自動化帳戶，他們可以在自己的應用程式訂閱中建立個別的自動化帳戶。
 
 ![適用于大型環境的工作區模型](./media/workspace-model-large.png)
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9e0376779050003f9a19442d49858009fc6d963f
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: a4777d30c6719842d6d866879ac7d87bc67050df
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812937"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076565"
 ---
 # <a name="get-started-design-and-configuration"></a>開始使用：設計和設定
 
@@ -43,7 +43,7 @@ ms.locfileid: "84812937"
 
 | 責任小組 | 負責與支援小組 | 通知的團隊 |
 | --- | --- | --- |
-| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 | <li> 雲端平臺小組 |
+| <li> 雲端策略小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 | <li> 雲端平臺小組 |
 
 ## <a name="step-2-assess-the-digital-estate"></a>步驟2：評估數位資產
 
@@ -106,7 +106,7 @@ ms.locfileid: "84812937"
 **項**
 
 - 部署第一個用於初始低風險遷移的登陸區域。
-- 開發計畫來與卓越團隊或中央 IT 的雲端中心重構。
+- 開發計畫，與卓越或中央 IT 小組的雲端中心重構。
 - 時程表風險：
   - 前10個工作負載的治理、作業和安全性需求可能會使此程式變慢。 第一個登陸區域和後續登陸區域的實際重構需要較長的時間，但這應該與遷移工作平行進行。
 
@@ -120,7 +120,7 @@ ms.locfileid: "84812937"
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-5-deploy-an-initial-governance-foundation"></a>步驟5：部署初始的治理基礎
 
@@ -146,7 +146,7 @@ ms.locfileid: "84812937"
 
 | 責任小組 | 負責與支援小組 | 諮詢小組 |
 | --- | --- | --- |
-| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 | <li> 雲端平臺小組 |
+| <li> 雲端治理小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 | <li> 雲端平臺小組 |
 
 ## <a name="step-6-implement-an-operations-baseline"></a>步驟6：執行作業基準
 
@@ -175,7 +175,7 @@ Operations management 是另一項需求，可達到遷移成功。 遷移至雲
 
 | 責任小組 | 負責與支援小組 | 諮詢小組 |
 | --- | --- | --- |
-| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 的雲端中心 | <li> 雲端平臺小組 |
+| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 卓越或中央 IT 小組的雲端中心 | <li> 雲端平臺小組 |
 
 ## <a name="step-7-expand-the-landing-zone"></a>步驟7：展開登陸區域
 
@@ -201,7 +201,7 @@ Operations management 是另一項需求，可達到遷移成功。 遷移至雲
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 的雲端中心 |
+| <li> 雲端平臺小組 | <li> 雲端採用小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="value-statement"></a>Value 語句
 

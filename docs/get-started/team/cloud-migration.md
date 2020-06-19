@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d6d1d60ce89aa6ab809bb413a0d56ecea5ceb352
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6405317ef9172ac8f0b50b2afadd8d3850fc0ad6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751845"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075787"
 ---
 # <a name="get-started-build-a-cloud-migration-team"></a>開始使用：建立雲端遷移小組
 
@@ -75,7 +75,7 @@ ms.locfileid: "83751845"
 
 可能需要來自現有 IT 人員的其他支援。 這對於雲端採用有價值的貢獻，是雲端代理人和合作夥伴的創新和企業靈活性。
 
-- [中央 IT 責任](../../organize/central-it.md)
+- [中央 IT 小組責任](../../organize/central-it.md)
 
 ## <a name="whats-next"></a>後續步驟
 

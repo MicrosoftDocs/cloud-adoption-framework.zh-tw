@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c098fbf86771b9520d7530354ab993f956683050
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756051"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077180"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "83756051"
 | [雲端旅程追蹤器](https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 與 &nbsp; 計畫 &nbsp; 範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) | 當您執行雲端採用策略和計畫時的檔決策。 |
 
-## <a name="plan"></a>計畫
+## <a name="plan"></a>規劃
 
 | 資源 | 描述 |
 |----------|-------------|
@@ -43,8 +43,8 @@ ms.locfileid: "83756051"
 | [命名和標記追蹤範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) | 有關命名和標記標準的檔決策，以確保一致性並減少上線時間。 |
 | [CAF &nbsp; foundation &nbsp; 藍圖](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 使用初始治理基礎的輕量執行，在 Azure 中提供治理工具的實際操作體驗。 |
 | [CAF 遷移登陸區域藍圖](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | 布建和準備裝載從內部部署環境遷移至 Azure 的工作負載。 如需此藍圖的詳細資訊，請參閱[部署遷移登陸區域](../ready/landing-zone/migrate-landing-zone.md)。 |
-| [Terraform 登陸區域藍圖](../ready/landing-zone/terraform-landing-zone.md) | CAF 登陸區域藍圖的 Terraform 版本的開放原始碼程式碼基底。 |
-| [Terraform 登錄](https://registry.terraform.io/search?q=aztfmod) | Terraform 登錄網站已篩選，可列出建立 Terraform 登陸區域所需的所有雲端採用架構模組。 |
+| [Terraform 模組](../ready/landing-zone/terraform-landing-zone.md) | CAF 登陸區域的 Terraform 版本的開放原始碼程式碼基底。 |
+| [Terraform 登錄](https://registry.terraform.io/search?q=aztfmod) | Terraform 登錄網站已篩選，以列出透過 Terraform 建立登陸區域所需的所有雲端採用架構模組。 |
 
 ## <a name="govern"></a>治理
 
@@ -63,7 +63,7 @@ ms.locfileid: "83756051"
 
 | 資源 | 描述 |
 |----------|-------------|
-| [Microsoft Azure 架構完善的審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | 這項線上評估會協助定義工作負載的特定架構和操作選項。 |
+| [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | 這項線上評估會協助定義工作負載的特定架構和操作選項。 |
 | [最佳 &nbsp; 做法 &nbsp; 原始程式碼 &nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | 這個可部署的原始程式碼可補充並加速採用 Azure 伺服器管理服務的最佳作法。 使用此原始程式碼可快速啟用作業管理，並建立作業基準。 |
 | [Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | 在雲端進行作業管理的相關檔決策，並加速與企業的交談，以確保 Sla、復原的投資，以及與作業相關的預算配置。 |
 
