@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85144ae698427ad81cad9516f28a5102b8bdedba
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f8f45a16e3699977dce152a06c563844d83b4b1b
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786274"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075518"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -86,7 +86,7 @@ ms.locfileid: "84786274"
 
 相較於傳統內部部署環境，Azure 可讓工作負載開發團隊和其業務贊助者善用雲端平台所提供的更佳部署靈活度。 當雲端採用工作擴大而要納入關鍵任務資料和工作負載時，此靈活度可能會與 IT 小組所建立的公司安全性和原則合規性需求衝突。 已有複雜治理和法規需求的大型企業尤其會如此。
 
-CAF 企業級登陸區域架構的目的在於經由架構、實作和指引來處理採用生命週期早期的這些疑慮，協助在企業雲端採用期間達到雲端採用小組與中央 IT 需求之間的平衡。 這種方法的核心是共用服務架構和妥善管理登陸區域的概念。
+CAF 企業級登陸區域架構的目的在於經由架構、實作和指引來處理採用生命週期早期的這些疑慮，協助在企業雲端採用期間達到雲端採用小組與中央 IT 小組需求之間的平衡。 這種方法的核心是共用服務架構和妥善管理登陸區域的概念。
 
 CAF 企業級登陸區域會在 Azure 平台內部署您自己的「孤立雲端」，整合管理程序、法規需求和治理原則所需的安全性程序。 在此虛擬邊界內，CAF 企業級登陸區域會在確保一致合規性的同時，提供用於部署工作負載的模型範例，並提供基本指引來讓您了解如何在雲端中為組織實作角色和職責的隔離。
 

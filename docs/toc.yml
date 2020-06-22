@@ -99,6 +99,8 @@ items:
             href: strategy/global-markets.md
           - name: 定義安全性策略
             href: strategy/define-security-strategy.md
+          - name: 定義監視策略
+            href: strategy/monitoring-strategy.md
       - name: 與策略相關的技能
         href: strategy/suggested-skills.md
   - name: 計畫

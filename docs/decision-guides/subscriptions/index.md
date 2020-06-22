@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f7196c8348c7559cec2c5544cb7a4bb0223778f6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215040"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076671"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
 有效的訂用帳戶設計可協助組織建立一種結構，以在雲端採用期間在 Azure 中組織及管理資產。 本指南將協助您決定何時要建立其他訂用帳戶並擴充管理群組階層，以支援您的商務優先順序。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 採用 Azure 時，首先請建立 Azure 訂用帳戶、將其與帳戶建立關聯，然後將虛擬機器和資料庫等資源部署至訂用帳戶。 如需這些概念的概觀，請參閱 [Azure 基本概念](../../ready/considerations/fundamental-concepts.md)。
 
@@ -48,14 +48,14 @@ ms.locfileid: "83215040"
 
 ### <a name="application-category-strategy"></a>應用程式分類策略
 
-當組織的雲端使用量增長時，通常會建立額外的訂用帳戶，以支援在商務關鍵性、合規性需求、存取控制或資料保護需求中具有基本差異的應用程式。 從初始生產和非生產的訂用帳戶中建置時，支援這些應用程式類別目錄的訂用帳戶會組織在適用的生產或非生產管理群組下。 這些訂用帳戶通常是由集中式 IT 作業人員擁有及管理。
+當組織的雲端使用量增長時，通常會建立額外的訂用帳戶，以支援在商務關鍵性、合規性需求、存取控制或資料保護需求中具有基本差異的應用程式。 從初始生產和非生產的訂用帳戶中建置時，支援這些應用程式類別目錄的訂用帳戶會組織在適用的生產或非生產管理群組下。 這些訂用帳戶通常是由中央 IT 小組的作業人員擁有及管理。
 
 ![應用程式分類策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
-每個組織將其應用程式分類的方式各有不同，通常會根據特定的應用程式或服務，或是應用程式原型之類的訂用帳戶來分隔訂用帳戶。 此類別通常會設計為支援可能耗用大部分訂用帳戶有限資源的工作負載，或個別的任務關鍵性工作負載，以確保它們不會在這些限制之下與其他工作負載競爭。 可能證明個別訂用帳戶的部分工作負載包括：
+每個組織將其應用程式分類的方式各有不同，通常會根據特定的應用程式或服務，或是應用程式原型之類的訂用帳戶來分隔訂用帳戶。 此類別通常會設計為支援可能耗用大部分訂用帳戶有限資源的工作負載，或個別的任務關鍵性工作負載，以確保其不會在這些限制之下與其他工作負載競爭。 可能證明個別訂用帳戶的部分工作負載包括：
 
 - 任務關鍵性工作負載。
-- 屬於公司內部_已售出貨物成本_ (COGS) 一部分的應用程式。 範例：x 公司小工具的每個執行個體都包含會傳送遙測資料的 Azure IoT 模組。 在 COGS 中，這可能需要使用專用訂用帳戶來進行會計/治理工作。
+- 屬於公司內部已售出貨物成本 (COGS) 一部分的應用程式。 例如，公司製造的每個小工具都包含會傳送遙測資料的 Azure IoT 模組。 作為 COGS 的一部分，這可能需要使用專用訂用帳戶來進行會計/治理工作。
 - 受限於法規需求 (例如 HIPAA 或 FedRAMP) 的應用程式。
 
 ### <a name="functional-strategy"></a>功能策略

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 490aec877e4a841cc746da8e2fa712da8d7e10b1
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621490"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076857"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -47,7 +47,7 @@ ms.locfileid: "83621490"
 - [雲端策略](./cloud-strategy.md)：針對業務需求來調整技術變更。
 - [雲端採用](./cloud-adoption.md)：提供技術解決方案。
 - [雲端治理](./cloud-governance.md)：管理風險。
-- [集中式 IT](./central-it.md)：現有 IT 人員的支援。
+- [集中式 IT 小組](./central-it.md)：現有 IT 人員的支援。
 - [雲端作業](./cloud-operations.md)：支援和操作採用的解決方案。
 - [雲端卓越中心](./cloud-center-of-excellence.md)：提高採用的品質、速度和彈性。
 - [雲端平台](./cloud-platform.md)：操作平台並讓平台更完善。

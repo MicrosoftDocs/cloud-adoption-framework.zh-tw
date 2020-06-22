@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1e101a75d3b13cc8cbcb6512d6a0a8b29674d5aa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4ca17f40d32bd09e3fb4833b53a2bacfbfe3b484
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214203"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993515"
 ---
 # <a name="release-workloads"></a>發行工作負載
 
@@ -20,7 +20,7 @@ ms.locfileid: "83214203"
 
 「發行工作負載」的目的是準備好已移轉的工作負載，以升級至生產環境用途。
 
-## <a name="definition-of-_done_"></a>對「完成」  的定義
+## <a name="definition-of-done"></a>對完成的定義
 
 當工作負載已正確設定、指定大小，並且部署至生產環境之中時，表示最佳化程序已完成。
 

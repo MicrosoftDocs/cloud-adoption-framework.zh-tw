@@ -1,18 +1,18 @@
 ---
 title: 開始使用企業級登陸區域
-description: 開始使用企業級登陸區域
+description: 開始使用企業級登陸區域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d2218a84cda97c42a98327a9902009a47f8839b5
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: a2d4b3898688823e3e249cd3930272d1433453d8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84792195"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076845"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>開始使用企業級登陸區域
 

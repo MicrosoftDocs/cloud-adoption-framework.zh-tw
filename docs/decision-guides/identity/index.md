@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c9a4a7759388dcbd812e26a482c18a1e48de67eb
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753799"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075921"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -79,7 +79,7 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 
 此模式涉及在雲端式虛擬網路中部署執行 Active Directory 的虛擬機器，以提供 Active Directory 網域服務 (AD DS) 給雲端中的資源。 任何移轉至雲端網路的現有應用程式和服務應在稍加修改後可使用這些雲端裝載目錄伺服器。
 
-您現有的目錄和網域服務很可能會在內部部署環境中繼續使用。 在此案例中，建議您也使用目錄同步作業，在雲端和內部部署環境中提供一組通用的使用者和角色。
+您現有的目錄和網域服務很可能會在內部部署環境中繼續使用。 在此案例中，您必須也使用目錄同步作業，在雲端和內部部署環境中提供一組通用的使用者和角色。
 
 **雲端裝載網域服務假設事項：** 執行目錄移轉的假設如下：
 
