@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: c25279222a0a1dbd9531ffe6e941e1ffc1046051
+ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401075"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85195091"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
@@ -39,6 +39,8 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 部署計畫專案之後，您可以使用 Microsoft Excel 來進行修改。 使用 Microsoft Excel，在方案中建立新的工作負載或資產，比使用 Azure DevOps 的瀏覽器體驗更容易。
 
 若要準備工作站進行大量編輯，請參閱[使用 Microsoft Excel 大量加入或修改工作專案](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
+
+某些使用者可能會想要使用 Project 來追蹤其工作、建立待處理專案和指派資源。 以下是將[專案連接到 Azure DevOps](https://docs.microsoft.com/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)的步驟。
 
 ## <a name="use-the-cloud-adoption-plan"></a>使用雲端採用方案
 
@@ -70,7 +72,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 這五篇文章可協助您開始管理您的採用成果所需的每個對齊工作。 下一個步驟可讓您開始進行對齊練習。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 藉由[定義工作負載並排定其優先順序，](./workloads.md)開始調整您的計畫專案。
 
