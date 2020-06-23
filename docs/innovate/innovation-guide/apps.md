@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b3535e9dc05b495c7f8ca166c388027e600af065
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: e1441a6bd9606d82b81e35e97d8edf50f2f7c29b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862140"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785611"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -134,8 +134,6 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 - [DevOps 解決方案](https://azure.microsoft.com/solutions/devops)
 
 # <a name="create-cloud-native-apps"></a>[建立雲端原生的應用程式](#tab/CloudNative)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-are-cloud-native-applications"></a>什麼是雲端原生應用程式？
 
@@ -295,9 +293,9 @@ Azure Red Hat OpenShift 提供靈活、自助的完全受控 OpenShift 叢集部
 
 當您開始從初始測試階段進行轉換時，請評估用來隔離和移除失敗點的方法。 由於 Azure 雲端平台具有分散本質，您可以將應用程式設計為既能讓失敗降到最低，又能改善效能。
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-Azure Front Door Service 提供了可擴充且安全的進入點，讓您可以在全球各地遞送應用程式。 Azure Front Door Service 結合了流量最佳化功能，以便提供最佳效能和立即的全域容錯移轉。 如果您需要傳輸層安全性 (TLS) 通訊協定終止 (SSL 卸載) 或每一 HTTP/HTTPS 要求的應用程式層處理，您應該使用 Azure Front Door Service，而非 Azure 流量管理員。
+Azure Front Door 提供了可擴充且安全的進入點，讓您可以在全球各地遞送應用程式。 Azure Front Door 結合了流量最佳化功能，以便提供最佳效能和立即的全域容錯移轉。 如果您需要傳輸層安全性 (TLS) 通訊協定終止 (SSL 卸載) 或每一 HTTP/HTTPS 要求的應用程式層處理，您應該使用 Azure Front Door，而非 Azure 流量管理員。
 
 ### <a name="action"></a>動作
 
@@ -341,11 +339,11 @@ Azure Front Door Service 提供了可擴充且安全的進入點，讓您可以�
 
 ## <a name="azure-content-delivery-network"></a>Azure 內容傳遞網路
 
-Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接近使用者的位置，以確保能及時傳遞資產。 此快取有助於改善客戶的體驗。 在內容下載期間，也可預防在 CDN 端點與裝載應用程式的資料中心之間發生的網路問題所造成的問題。 內容傳遞網路也可供未裝載於 Azure 中的應用程式使用。
+Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接近使用者的位置，以確保能及時傳遞資產。 此快取有助於改善客戶的體驗。 在內容下載期間，也可預防在 CDN 端點與裝載應用程式的資料中心之間發生的網路問題所造成的問題。 Azure CDN 也可供未裝載於 Azure 中的應用程式使用。
 
 ### <a name="action"></a>動作
 
-若要設定或監視內容傳遞網路設定檔：
+若要設定或監視 Azure CDN 設定檔：
 
 1. 移至 [CDN 設定檔]。
 2. 設定新的設定檔：選取 [新增] 並依照提示執行。

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9e0ed1d2e8c7358c0dcb5c90bb2ed33670fbc63f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: b80acbe78ad8d4ad1cc50346db5a16ba20dbb38a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401040"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787872"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
@@ -42,16 +42,16 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 透過下列步驟，使用 Azure Migrate 開始進行伺服器移轉評量：
 
-1. 選取 [Azure Migrate]  。
-1. 在 [概觀]  中，選取 [評估和遷移伺服器]  。
-1. 選取 [新增工具]  。
-1. 在 [探索、評估和遷移伺服器]  中，選取 [新增工具]  。
-1. 在 [Migrate 專案]  中選取您的 Azure 訂用帳戶，然後建立資源群組 (如果您還沒有的話)。
-1. 在 [專案詳細資料]  中指定專案名稱，以及您要在其中建立專案的地理位置，然後選取 [下一步]  。
-1. 在 [選取評量工具]  中，選取 [暫時跳過新增評量工具] > [下一步]  。
-1. 在 [選取移轉工具]  中，選取 **[Azure Migrate：伺服器移轉] > [下一步]** 。
-1. 在 [檢閱 + 新增工具]  中檢閱設定，然後選取 [新增工具]  。
-1. 新增工具之後，工具會出現在 [Azure Migrate 專案] > [伺服器] > [移轉工具]  中。
+1. 選取 [Azure Migrate]。
+1. 在 [概觀] 中，選取 [評估和遷移伺服器]。
+1. 選取 [新增工具]。
+1. 在 [探索、評估和遷移伺服器] 中，選取 [新增工具]。
+1. 在 [Migrate 專案] 中選取您的 Azure 訂用帳戶，然後建立資源群組 (如果您還沒有的話)。
+1. 在 [專案詳細資料] 中指定專案名稱，以及您要在其中建立專案的地理位置，然後選取 [下一步]。
+1. 在 [選取評量工具] 中，選取 [暫時跳過新增評量工具] > [下一步]。
+1. 在 [選取移轉工具] 中，選取 **[Azure Migrate：伺服器移轉] > [下一步]** 。
+1. 在 [檢閱 + 新增工具] 中檢閱設定，然後選取 [新增工具]。
+1. 新增工具之後，工具會出現在 [Azure Migrate 專案] > [伺服器] > [移轉工具] 中。
 
 ::: zone target="chromeless"
 
@@ -79,8 +79,8 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 若要使用相依性視覺效果，請在待分析的每個內部部署機器上，下載及安裝代理程式。
 
-- 必須在每個機器上安裝 [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)。
-- 必須在每部機器上安裝 [Microsoft 相依性代理程式](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
+- 必須在每個機器上安裝 [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)。
+- 必須在每部機器上安裝 [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
 - 此外，如果您有無法連線至網際網路的機器，請在這些機器上下載並安裝 Log Analytics 閘道。
 
 <!-- markdownlint-disable MD024 -->

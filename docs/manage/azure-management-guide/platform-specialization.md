@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756408"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785475"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -61,21 +61,19 @@ ms.locfileid: "83756408"
 
 改善系統設計最能有效改善任何常見平台的作業。 透過改善系統設計，不僅穩定性會增加，業務中斷的情形也會減少。 個別系統的設計不在整個 Azure 雲端採用架構中所採用環境檢視的範圍內。
 
-作為雲端採用架構的補充，Microsoft Azure Well-Architected Framework 可提供最佳做法來讓您改善特定系統的復原能力和設計。 這些設計的改善可套用至平台或特定工作負載的系統設計。
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。此架構的重點在於改善整個結構的五個要素：
 
-Microsoft Azure Well-Architected Framework 的架構著重在改善系統設計的五大要素：
-
-- **延展性：** 擴展常見平台資產以應付增加的負載。
-- **可用性：** 藉由改善可能的執行時間來減少業務中斷。
-- **復原能力：** 改善復原時間以縮短中斷持續時間。
-- **安全性：** 讓應用程式和資料免於遭受外部威脅。
-- **管理：** 這些常見平台資產特有的作業流程。
+- **成本最佳化：** 管理成本以將傳遞的價值最大化。
+- **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
+- **效能效率：** 調整系統以適應負載中的變更。
+- **可靠性：** 設計系統以從失敗中復原並繼續運作的能力。
+- **安全性：** 保護應用程式和資料，使其免於威脅。
 
 技術債務和架構瑕疵會是大部分業務中斷的原因。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新的部署，您可以將這些改善項目視為避免發生技術債務的方式。
 
 下一個 [自動補救] 索引標籤會示範如何解決無法或不應解決的技術債務。
 
-深入了解 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) 以改善系統設計。
+深入了解 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 以改善系統設計。
 
 系統設計改善後，請回到本文來尋找新的改善機會，並將這些改善擴展到整個環境。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f45418b85c0f7afbae2ea23586693c7de5054b79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217433"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075490"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 
@@ -56,8 +56,8 @@ ms.locfileid: "83217433"
 
 ### <a name="deploy-application-insights"></a>部署 Application Insights
 
-1. 在 Azure 入口網站中，移至 [Application Insights]  。
-1. 選取 [+ 新增]  來建立 Application Insights 資源，以監視即時 Web 應用程式。
+1. 在 Azure 入口網站中，移至 [Application Insights]。
+1. 選取 [+ 新增] 來建立 Application Insights 資源，以監視即時 Web 應用程式。
 1. 遵循螢幕上的提示進行。
 
 如需如何設定應用程式以進行監視的指引，請參閱 [Azure 監視器 Application Insights 中樞](https://docs.microsoft.com/azure/azure-monitor/azure-monitor-app-hub)。

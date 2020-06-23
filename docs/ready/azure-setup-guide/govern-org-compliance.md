@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a44dcdf49d2dad17236f4f1dc009758acf4230fc
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9465a5889f70fa95f8570cd7ffd746b40462fa6e
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621634"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800005"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -54,7 +54,9 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-1. 移至 [[藍圖：開始使用]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
+<!-- docsTest:ignore "Next : Artifacts" "Blueprints: Get started" "Blueprints: Blueprint definitions" -->
+
+1. 移至 [藍圖：開始使用](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
 1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
 1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
