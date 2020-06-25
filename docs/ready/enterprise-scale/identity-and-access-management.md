@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3b364a42e69a1064122091780bbf66fe3424f6c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077160"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335967"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -91,7 +91,7 @@ _圖1：身分識別和存取管理。_
 
 ### <a name="planning-for-authentication-inside-a-landing-zone"></a>規劃登陸區域內的驗證
 
-採用 Azure 時，企業組織必須進行的一項重要設計決策是要將內部部署身分識別網域延伸到 Azure，還是要建立全新的身分。 應徹底評估登陸區域內的驗證需求，並將其納入計畫中，以在 Windows Server、Azure AD Domain Services 或兩者中部署 Active Directory Domain Services （AD DS）。 大部分的 Azure 環境至少會使用 Azure 網狀架構驗證的 Azure AD，以及 AD DS 本機主機驗證和群組原則管理。
+採用 Azure 時，企業組織必須進行的重要設計決策是要將現有的內部部署身分識別網域擴充至 Azure 或建立全新的身分。 應徹底評估登陸區域內的驗證需求，並將其納入計畫中，以在 Windows Server、Azure AD Domain Services 或兩者中部署 Active Directory Domain Services （AD DS）。 大部分的 Azure 環境至少會使用 Azure 網狀架構驗證的 Azure AD，以及 AD DS 本機主機驗證和群組原則管理。
 
 **設計考慮：**
 

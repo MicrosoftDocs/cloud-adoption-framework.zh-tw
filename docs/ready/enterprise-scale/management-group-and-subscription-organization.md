@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e120a450bdc2d129e092c1e2de4a118a9437a29
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: d74b03459c306143a02936e22ef47dea4ab9d9a9
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075058"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335950"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -66,7 +66,8 @@ Azure Active Directory （Azure AD）租使用者內的管理群組結構支援�
 - 訂用帳戶會提供管理界限來進行控管和隔離，並建立清楚的關注點分離。
 
 - 有一個手動程式（規劃的未來自動化），可以將 Azure AD 的租使用者限制為僅使用企業註冊訂閱。 這可防止在根管理群組範圍建立 MSDN 訂閱。
-  **設計建議：**
+
+**設計建議：**
 
 - 將訂用帳戶視為符合業務需求和優先順序的大眾化管理單位。
 

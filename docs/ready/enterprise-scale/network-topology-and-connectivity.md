@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bff08721f87b8ecb14b2e63107108e3d0bc8911c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4363ead6a4319629df964f3efa4ace802ac81ee4
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075192"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335984"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,7 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 網路拓撲是企業級架構的重要基礎元素，因為它最終會定義應用程式彼此通訊的方式。 本節探討企業 Azure 部署的相關技術和拓撲方法，著重于兩種核心方法：以 Azure 虛擬 WAN 為基礎的拓撲，以及傳統的拓撲。
 
-以 Azure 虛擬 WAN 為基礎的網路拓撲是適用于大規模多區域部署的最佳企業級方法，其中客戶需要將其全球位置連線至 Azure 和內部部署。 每當客戶打算使用與 Azure 完全整合的 SD WAN 部署時，也應該使用虛擬 WAN 網路拓朴。 虛擬 WAN 是用來滿足大規模的互連能力需求。 因為它是由 Microsoft 管理的服務，所以也會降低整體網路的複雜性，並協助將客戶的網路現代化。
+以 Azure 虛擬 WAN 為基礎的網路拓撲是適用于大規模多區域部署的最佳企業級方法，其中客戶需要將其全球位置連線至 Azure 和內部部署。 每當客戶打算使用與 Azure 完全整合的軟體定義 WAN （SD WAN）部署時，也應該使用虛擬 WAN 網路拓撲。 虛擬 WAN 是用來滿足大規模的互連能力需求。 因為它是由 Microsoft 管理的服務，所以也會降低整體網路的複雜性，並協助將客戶的網路現代化。
 
 傳統的 Azure 網路拓朴應用於僅想要在幾個 Azure 區域中部署資源的客戶、不需要全域互連的網路、每個區域的遠端或分支位置數（少於30個），或需要完全控制和資料細微性以手動設定其 Azure 網路。 此傳統拓撲可協助這些客戶在 Azure 中建立安全的網路基礎。
 
