@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d15a5f70430a86da18195c58326dd9b573198c6
-ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
+ms.openlocfilehash: 392e1e9625f631a76cd7584d4cc31485bcea8f0a
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85195108"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766790"
 ---
 <!-- cSpell:ignore interdomain VMSS -->
 
@@ -90,6 +90,7 @@ ms.locfileid: "85195108"
 9. 選擇性當有多個內部部署位置透過 ExpressRoute 連接到 Azure 時，請設定 ExpressRoute 全球連線以連接內部部署 HQs/Dc。 請依照[設定 ExpressRoute 全球範圍](https://docs.microsoft.com/azure/expressroute/expressroute-howto-set-global-reach)中的指示進行。
 
 下列清單顯示針對企業規模部署執行網路資源時所使用的 Azure 原則指派：
+
 | 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [部署-FirewallPolicy](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json)  | 建立防火牆原則。 |

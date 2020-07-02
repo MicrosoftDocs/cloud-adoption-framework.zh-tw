@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: f67482821816fb48a2e44ab66715bd1804f9863a
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: fad625eb7b2cd1ebcfefe3a5ac27be6682ad00d2
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077050"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766838"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -39,7 +39,7 @@ CAF 企業級登陸區域架構代表客戶 Azure 環境的策略性設計路徑
 
 - **主要用途：** 有限的重構機會和已定義的訂用帳戶原則，可讓客戶更快速地將其登陸區域成熟。 CAF 企業級登陸區域會拓寬登陸區域的原則目的，以專注于治理、合規性、安全性和營運管理方面。 每一個都是在登陸區域的第一版和支援共用服務中解決。
 
-這類似于在建造新的房屋之前，可以存取城市公用程式，例如水、天然氣和電力。 在此情況下，網路、身分識別和存取管理、原則、管理和監視都是共用的「公用程式」服務，必須隨時可供使用，以協助簡化應用程式在開始之前的處理。
+這類似于在建造新的房屋之前，可以存取城市公用程式，例如水、天然氣和電力。 在此內容中，網路、身分識別和存取管理、原則、管理和監視都是共用的公用程式服務，必須隨時可供使用，以在應用程式開始之前，協助您將其簡化。
 
 ![登陸區域 ](./media/lz-design.png)
  _圖1：登陸區域設計。_
@@ -70,6 +70,8 @@ CAF 企業級登陸區域架構代表客戶 Azure 環境的策略性設計路徑
 
 ![CAF 企業級登陸區域架構 ](./media/ns-arch.png)
  _圖2： CAF 企業規模的登陸區域架構。_
+
+下載包含此架構圖表的 [Visio 檔案](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx)__。
 
 ## <a name="next-steps"></a>後續步驟
 

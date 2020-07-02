@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 686bac552a1c91efd7bbfede22221a0e61b6bcfa
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 5b97c1efba9a0efc976404bea9680cf2baaa0d94
+ms.sourcegitcommit: 7ff5c7a12412b1af0090b8eebd25b024f7830a57
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401255"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814348"
 ---
 # <a name="cloud-strategy-functions"></a>雲端策略功能
 
@@ -20,7 +20,7 @@ ms.locfileid: "83401255"
 
 雲端策略功能通常由下列角色類型提供。 定義雲端策略小組時，應該包含下列許多角色：
 
-- 財務
+- Finance
 - 商務營運
 - 人力資源
 - 作業
@@ -85,9 +85,9 @@ ms.locfileid: "83401255"
 
 雲端策略小組成員必須能夠配置規劃和開發雲端策略的時間：
 
-- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified （通常是在46周內）之後，就可以減少時間需求。
-- 在採用過程中，每個月配置12小時來審查進度，並驗證持續的優先順序。
-- 視需要執行主管小組的委派成員可能需要額外的時間。 雲端策略小組的每個成員都應該指派一個委派，每週可以配置510小時來支援持續的優先順序問題，並報告任何緊急需求。
+- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified （通常是在4-6 周內）之後，就可以減少時間需求。
+- 在採用過程中，每個月配置1-2 小時來審查進度，並驗證持續的優先順序。
+- 視需要執行主管小組的委派成員可能需要額外的時間。 雲端策略小組的每個成員都應該指派一個委派，每週可以配置5-10 小時來支援持續的優先順序問題，並報告任何緊急需求。
 
 ## <a name="next-steps"></a>後續步驟
 
