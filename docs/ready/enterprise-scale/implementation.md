@@ -1,22 +1,22 @@
 ---
-title: 在 Azure 中執行企業級登陸區域
-description: 請參閱執行企業級架構的選項。
+title: 在 Azure 中執行 CAF 企業級登陸區域
+description: 請參閱可執行 CAF 企業級架構的選項。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b804810e23213dc6ebedbe94aa9ea7c1af91cc8e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2b17a23a67ae4dde719710fdf2f7d70c42126f99
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076882"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128324"
 ---
-# <a name="implement-enterprise-scale-landing-zones-in-azure"></a>在 Azure 中執行企業級登陸區域
+# <a name="implement-caf-enterprise-scale-landing-zones-in-azure"></a>在 Azure 中執行 CAF 企業級登陸區域
 
-當商務需求需要從一開始就具備完全整合的管理、安全性和作業來進行登陸區域的豐富初始執行時，Microsoft 建議使用此頁面上的企業規模範例選項。 這種方法可以使用 Microsoft Azure 入口網站或基礎結構即程式碼，來設定您的環境。 當您的組織準備就緒時，您也可以在入口網站和基礎結構即程式碼之間轉換（建議使用）。 如同任何其他 Microsoft Azure 基礎結構即程式碼的方法，您將需要 Azure Resource Manager 範本和 GitHub 技能。
+當商務需求需要從一開始就具備完全整合的管理、安全性和作業來進行登陸區域的豐富初始執行時，請使用此處所列的企業規模範例選項。 使用此方法，您可以使用 Microsoft Azure 入口網站或基礎結構即程式碼來設定您的環境。 當您的組織準備就緒時，您也可以在入口網站和基礎結構即程式碼之間轉換（建議使用）。 如同任何其他 Microsoft Azure 基礎結構即程式碼的方法，您將需要 Azure Resource Manager 範本和 GitHub 技能。
 
 ## <a name="example-implementation"></a>範例執行
 
@@ -30,4 +30,4 @@ ms.locfileid: "85076882"
 
 ## <a name="next-steps"></a>後續步驟
 
-上述範例提供簡單的部署選項，以支援持續學習企業規模的方法。 在企業規模的生產版本中使用這些範例之前，您應該先複習[企業規模的架構](./architecture.md)。
+這些範例提供簡單的部署選項，以支援持續學習企業規模的方法。 在企業規模的生產版本中使用這些範例之前，您應該先複習[企業規模的架構](./architecture.md)。

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83739453ac8d9466c01656788a22baaec4e78e5a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 418da8d010ab0abd1a6221da77e9feeae5007f1d
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785424"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128520"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -66,7 +66,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 
     ![入口網站的原則介面螢幕擷取畫面](./media/onboarding-at-scale3.png)
 
-6. 選取 [**受控識別位置**] 核取方塊。 如果此原則的類型為 `[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)` ，則需要受控識別才能部署原則。 在入口網站中，會依照核取方塊選取專案的指示來建立帳戶。
+6. 選取 [**受控識別位置**] 核取方塊。 如果此原則的類型為 [`DeployIfNotExists`](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) ，則需要受控識別才能部署原則。 在入口網站中，會依照核取方塊選取專案的指示來建立帳戶。
 
 7. 選取 [**指派**]。
 

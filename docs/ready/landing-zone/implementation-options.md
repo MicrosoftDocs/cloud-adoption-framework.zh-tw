@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93b5f540e8b7a501a7491f406d15296f2245e6ee
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 02f7a5c991a09557f2608bb70cbb3972ee667ad8
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076803"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128021"
 ---
 # <a name="landing-zone-implementation-options"></a>登陸區域的執行選項
 
@@ -32,20 +32,20 @@ ms.locfileid: "85076803"
 
 登陸區域的一些執行選項以及可能驅動決策的變數如下所示。
 
-<!-- docsTest:ignore "CAF Enterprise-scale" "CAF Terraform" -->
+<!-- docsTest:ignore "CAF Terraform" -->
 
 | [執行] 選項 | 描述 | 部署速度 | 更深入的設計原則 | 部署指示 |
 |---|---|---|---|---|---|---|---|
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 部署用於遷移低風險資產的基本基礎。 | 從小開始 | [設計原則](./migrate-landing-zone.md#design-principles) | [部署](./migrate-landing-zone.md) |
 | [CAF 基礎藍圖](./foundation-blueprint.md) | 新增開始開發治理策略所需的最小工具。 | 從小開始 | [設計原則](./foundation-blueprint.md#design-principles) | [部署](./foundation-blueprint.md) |
-| [CAF 企業規模登陸區域](./enterprise-scale.md) | 使用所有必要的共用服務來部署企業就緒的平臺基礎，以支援完整的 IT 組合。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF 企業級登陸區域](./enterprise-scale.md) | 使用所有必要的共用服務來部署企業就緒的平臺基礎，以支援完整的 IT 組合。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
 | [CAF Terraform 模組](./terraform-landing-zone.md) | 多重雲端作業模型的協力廠商路徑。 此路徑可以限制 Azure 優先的作業模型。 | 從小開始 | [設計原則](./terraform-landing-zone.md#design-decisions) | [部署](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
 下表從稍微不同的觀點來探討相同的執行選項，以引導更多技術決策流程。
 
 | [執行] 選項 | 中樞 | 分支 | 部署技術 | 部署指示 |
 |---|---|---|---|---|
-| [CAF 企業規模登陸區域](./enterprise-scale.md) | 已包括  | 已包括 | Azure Resource Manager 範本、Azure 入口網站、Azure 原則和 GitHub | [部署](../enterprise-scale/implementation-guidelines.md) |
+| [CAF 企業級登陸區域](./enterprise-scale.md) | 已包括  | 已包括 | Azure Resource Manager 範本、Azure 入口網站、Azure 原則和 GitHub | [部署](../enterprise-scale/implementation-guidelines.md) |
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 需要重構 | 已包括 | Azure Resource Manager 範本、Azure 入口網站和 Azure 藍圖 | [部署](./migrate-landing-zone.md) |
 | [CAF Terraform 模組](./terraform-landing-zone.md)  | 包含在虛擬資料中心模組中 | 已包括 | Terraform | [部署](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 

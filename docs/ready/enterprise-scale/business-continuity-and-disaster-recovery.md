@@ -1,24 +1,24 @@
 ---
-title: 商務持續性和災害復原
-description: 商務持續性和嚴重損壞修復。
+title: CAF 企業級的商務持續性和嚴重損壞修復
+description: 瞭解適用于 Azure 的 Microsoft Cloud 採用架構中的企業級商務持續性和嚴重損壞修復。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e20448cac2f08f895cc3fb1ff430156cb7a20f46
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 10b1604dad1c441d02364f8b6cfc2a0221290820
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076994"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128499"
 ---
-# <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
+# <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF 企業級的商務持續性和嚴重損壞修復
 
 ## <a name="planning-for-business-continuity-and-disaster-recovery"></a>規劃商務持續性和嚴重損壞修復
 
-本節將協助讀者捕捉客戶嚴重損壞修復（DR）需求，以設計適當的平台層級功能，讓應用程式工作負載能夠取用以滿足其特定的復原時間目標（RTO）和復原點目標（RPO）需求。
+捕捉嚴重損壞修復（DR）需求來設計適當的平台層級功能，讓應用程式工作負載能夠取用以符合其特定的復原時間目標（RTO）和復原點目標（RPO）需求。
 
 **設計考慮：**
 
@@ -34,7 +34,7 @@ ms.locfileid: "85076994"
 
   - 區域之間的資料共用和相依性。
 
-  - 相較于可用性設定組，更新網域上可用性區域的影響，以及可以同時進行維護的工作負載百分比。
+  - 相較于可用性設定組，以及可以同時進行維護的工作負載百分比，對更新網域可用性區域的影響。
 
   - 支援特定虛擬機器（VM）的庫存單位與可用性區域。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 56319956688e0fcee5b2987c0b789e2af340d5e3
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3e42f51f8a58b2cd4e1d2df7fac2137d443c702b
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075591"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128143"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -29,21 +29,21 @@ ms.locfileid: "85075591"
 | 文章 | 說明 |
 |---|---|
 | [Azure 登陸區域](../ready/landing-zone/index.md) | Azure 登陸區域會建立一組通用的設計區域和執行選項，以加速與雲端採用方案和雲端作業模式的環境建立。 這篇新文章會更清楚地定義 Azure 登陸區域。 |
-| [Azure 登陸區域-設計區域](../ready/landing-zone/design-areas.md) | 所有 Azure 登陸區域共用一組通用的8個設計區域。 在部署任何 Azure 登陸區域之前，客戶應該考慮每一種設計，以做出重要的決策。 |
-| [Azure 登陸區域-執行選項](../ready/landing-zone/implementation-options.md) | 根據您的雲端採用方案和雲端作業模式，選擇最佳的 Azure 登陸區域執行選項。 |
+| [Azure 登陸區域：設計區域](../ready/landing-zone/design-areas.md) | 所有 Azure 登陸區域共用一組通用的8個設計區域。 在部署任何 Azure 登陸區域之前，客戶應該考慮每一種設計，以做出重要的決策。 |
+| [Azure 登陸區域：執行選項](../ready/landing-zone/implementation-options.md) | 根據您的雲端採用方案和雲端作業模式，選擇最佳的 Azure 登陸區域執行選項。 |
 
-現有的 CAF 藍圖定義和 CAF Terraform 模組會提供 Azure 登陸區域執行的起點。 不過，有數個客戶要求了更豐富的執行選項，可滿足企業級雲端採用方案的需求。 此版本將**CAF 企業規模**新增至 Azure 登陸區域的執行選項，以填滿該需求。 以下列出幾篇文章，讓您開始使用 CAF 企業級架構和參考的實體系。
+現有的 CAF 藍圖定義和 CAF Terraform 模組會提供 Azure 登陸區域執行的起點。 不過，有些客戶需要更豐富的執行選項，才能符合企業級雲端採用方案的需求。 此版本將**CAF 企業規模**新增至 Azure 登陸區域的執行選項，以填滿該需求。 以下列出幾篇文章，讓您開始使用 CAF 企業級架構和參考的實體系。
 
 | 文章 | 說明 |
 |---|---|
 | [企業規模總覽](../ready/enterprise-scale/index.md) | 企業規模總覽 |
-| [實作企業級登陸區域](../ready/enterprise-scale/implementation.md) | 快速的執行選項和 github 範例 |
+| [實作企業級登陸區域](../ready/enterprise-scale/implementation.md) | 快速的執行選項和 GitHub 範例 |
 | [企業規模架構](../ready/enterprise-scale/architecture.md) | 瞭解企業規模背後的架構 |
 | [企業規模的設計原則](../ready/enterprise-scale/design-principles.md) | 瞭解架構設計原則，這會在執行期間引導決策，以評估此方法是否符合您的雲端操作模型 |
 | [企業規模的設計指導方針](../ready/enterprise-scale/design-guidelines.md) | 評估企業級的指導方針，以滿足 Azure 登陸區域的常見設計區域 |
 | [實作指導方針](../ready/enterprise-scale/implementation-guidelines.md) | 在部署之前，檢查企業規模執行所需的活動 |
 
-合作夥伴是成功採用雲端的重要層面。 在整個雲端採用架構的指引中，我們新增了參考，以顯示重要角色合作夥伴的扮演 & 如何讓客戶更能與合作夥伴溝通。 如需已驗證的 CAF 合作夥伴清單，請參閱[CAF 對齊的合作夥伴優惠](https://aka.ms/adopt/partneroffers)、 [Azure 專家 MSP 合作夥伴](https://www.microsoft.com/en-us/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)或[Advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
+合作夥伴是成功採用雲端的重要層面。 在整個雲端採用架構的指引中，我們新增了參考，以顯示重要角色合作夥伴的扮演 & 如何讓客戶更能與合作夥伴溝通。 如需已驗證的 CAF 合作夥伴清單，請參閱[CAF 對齊的合作夥伴優惠](https://aka.ms/adopt/partneroffers)、 [Azure 專家 MSP 合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)或[Advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
 
 ## <a name="may-15-2020"></a>2020 5 月15日
 
@@ -51,7 +51,7 @@ ms.locfileid: "85075591"
 
 | 文章 | 說明 |
 |---|---|
-| [適用於 Azure 的雲端採用架構](../index.yml) | 雲端採用架構登陸頁面已經過重新設計，可讓您更輕鬆地找到可支援雲端採用成功旅程的指引、工具、學習模組和程式。 |
+| [Cloud Adoption Framework for Azure](../index.yml) | 雲端採用架構登陸頁面已經過重新設計，可讓您更輕鬆地找到可支援雲端採用成功旅程的指引、工具、學習模組和程式。 |
 | [開始使用雲端採用架構](./index.md) | 從這裡開始，選擇與您的雲端採用目標一致的快速入門手冊。 這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。|
 | [瞭解並記載基本的對齊決策](./cloud-concepts.md) | 深入瞭解雲端採用所牽涉到的每個小組都應該瞭解的初始決策。 |
 | [瞭解並對齊組合階層](../reference/fundamental-concepts/hosting-hierarchy.md) | 瞭解「公事包」階層如何顯示您的工作負載和支援服務如何彼此配合。 |

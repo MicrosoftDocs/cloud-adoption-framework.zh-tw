@@ -1,24 +1,24 @@
 ---
-title: 安全性治理與合規性
-description: 安全性治理和合規性。
+title: CAF 企業級的安全性治理與合規性
+description: 瞭解適用于 Azure 的 Microsoft Cloud 採用架構中企業級的安全性治理和合規性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 96f685cc3f38022696d7eb9e12aca8e651ff80a4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 01ddb7eafb6182c8cd4dd6eb875d7f203c55b792
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076815"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128384"
 ---
-# <a name="security-governance-and-compliance"></a>安全性、治理和合規性
+# <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF 企業級的安全性治理與合規性
 
 ## <a name="define-encryption-and-key-management"></a>定義加密和金鑰管理
 
-加密是確保資料在 Microsoft Azure 中的隱私權、合規性和資料存放區的重要步驟。 這也是許多企業客戶最重要的安全性問題之一。 本節將探討與加密和金鑰管理相關的設計考慮和建議。
+加密是確保資料在 Microsoft Azure 中的隱私權、合規性和資料存放區的重要步驟。 這也是許多企業最重要的安全性問題之一。 本節涵蓋與加密和金鑰管理相關的設計考慮和建議。
 
 **設計考慮：**
 
@@ -34,7 +34,8 @@ ms.locfileid: "85076815"
 
 - 金鑰輪替和密碼到期。
 
-  使用 Key Vault 的憑證採購和簽署：（[關於](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates)憑證）警示/通知和自動化憑證更新。
+  - 使用 Key Vault 的憑證採購和簽署（[關於憑證](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates)）
+  - 警示/通知和自動化憑證更新
 
 - 金鑰、憑證和秘密的嚴重損壞修復需求。
 
@@ -46,7 +47,7 @@ ms.locfileid: "85076815"
 
 - 委派 Key Vault 具現化和特殊許可權存取：（[安全存取](https://docs.microsoft.com/azure/key-vault/general/secure-your-key-vault)）
 
-- 針對原生加密機制（例如儲存體服務加密（SSE））使用客戶管理金鑰的需求：[客戶管理的金鑰](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal)）
+- 針對原生加密機制（例如 Azure 儲存體加密（SSE））使用客戶管理金鑰的需求：[客戶管理的金鑰](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal)）
 
 - 虛擬機器（Vm）的整磁片加密。
 
@@ -116,7 +117,7 @@ ms.locfileid: "85076815"
 
 ## <a name="define-security-monitoring-and-an-audit-policy"></a>定義安全性監視和稽核原則
 
-企業客戶必須能夠看到其技術雲端資產中發生的狀況，這是很重要的。 Azure 平臺服務的安全性監視和審核記錄是可擴充架構的重要元件。
+企業必須能夠看到其技術雲端資產中發生的狀況，這是很重要的。 Azure 平臺服務的安全性監視和審核記錄是可擴充架構的重要元件。
 
 **設計考慮：**
 
@@ -156,7 +157,7 @@ ms.locfileid: "85076815"
 
 ## <a name="plan-for-platform-security"></a>為平臺安全性做規劃
 
-當企業客戶採用 Azure 時，必須維持狀況良好的安全性狀態。 除了可見度以外，您還必須能夠在 Azure 服務演進時控制初始設定和變更。 因此，規劃平臺安全性是關鍵。
+當您採用 Azure 時，必須維持狀況良好的安全性狀態。 除了可見度以外，您還必須能夠在 Azure 服務演進時控制初始設定和變更。 因此，規劃平臺安全性是關鍵。
 
 **設計考慮：**
 
@@ -170,7 +171,7 @@ ms.locfileid: "85076815"
 
 **設計建議：**
 
-- 每個必要服務的聯合檢查都應該在基礎客戶需求的內容中進行。 如果客戶想要攜帶自己的金鑰，則可能不會在所有被視為的服務中受到支援。 必須實行相關的緩和措施，這樣不一致就不會妨礙所需的結果。 選擇適當的區域配對和損毀修復區域，以將延遲降至最低。
+- 每個必要服務的共同檢查應該在您的基礎需求內容中進行。 如果您想要攜帶自己的金鑰，則可能不會在所有被視為的服務中受到支援。 必須實行相關的緩和措施，這樣不一致就不會妨礙所需的結果。 選擇適當的區域配對和損毀修復區域，以將延遲降至最低。
 
 - 開發安全性允許清單計畫，以評估服務的安全性設定、監視、警示，以及如何將其與現有的系統整合。
 
@@ -178,7 +179,7 @@ ms.locfileid: "85076815"
 
 - 使用 Azure AD 報告功能來產生存取控制審查報告。
 
-- 將客戶的安全性需求與 Azure 平臺藍圖對應，以掌握最新發行的安全性控制。
+- 配合您的安全性需求與 Azure 平臺藍圖，隨時掌握最新發行的安全性控制。
 
 - 在適當的情況下，為 Azure 平臺的存取權執行零信任的方法。
 
@@ -215,7 +216,7 @@ ms.locfileid: "85076815"
 |                              |                                                                       | 資料平面是否與 Azure AD 整合？                                                                                                      |
 |                              |                                                                       | Azure 至 Azure （服務對服務）驗證是否使用 MSI/服務主體？                                                         |
 |                              |                                                                       | Azure 對 IaaS （服務對虛擬網路）的驗證是否透過 Azure AD？                                                                                   |
-|                              |                                                                       | 如何管理任何適用的金鑰/sas？                                                                                                     |
+|                              |                                                                       | 如何管理任何適用的金鑰/SAS？                                                                                                     |
 |                              |                                                                       | 如何撤銷存取權？                                                                                                                   |
 |                              | 責任隔離                                                 | 服務是否會在 Azure AD 內區分控制平面和資料平面作業？                                                                |
 |                              | 多重要素驗證和條件式存取                                            | 是否強制執行多重要素驗證以進行使用者對服務的互動？                                                                                            |

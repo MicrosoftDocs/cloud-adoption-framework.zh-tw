@@ -7,18 +7,18 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5c9f562e521ec1e04b598b9c2c55deceb72e45e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3c894f04c071c9d6bec981b54671e72be1f053d9
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076969"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128448"
 ---
 # <a name="enterprise-enrollment-and-azure-active-directory-tenants"></a>企業註冊和 Azure Active Directory 租使用者
 
 ## <a name="planning-for-enterprise-enrollment"></a>規劃企業註冊
 
-企業註冊（通常稱為「Enterprise 合約」）代表 Microsoft 與客戶使用 Azure 的方式之間的商業關係。 它提供所有客戶訂用帳戶的計費基礎，並影響客戶資產的管理。 Enterprise 註冊（也稱為 EA）是透過 Azure 企業版入口網站來管理。 Azure 企業版註冊通常代表組織的階層，包括部門、帳戶和訂用帳戶。 此階層代表組織內的成本註冊群組。
+企業註冊（通常稱為 Enterprise 合約（EA））代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的資產管理。 Enterprise 註冊（也稱為 EA）是透過 Azure 企業版入口網站來管理。 Azure 企業版註冊通常代表組織的階層，包括部門、帳戶和訂用帳戶。 此階層代表組織內的成本註冊群組。
 
 ![Azure EA 階層 ](./media/ea.png)
  _圖1： azure 企業版註冊階層。_
@@ -27,7 +27,7 @@ ms.locfileid: "85076969"
 
 - 帳戶是 Azure 企業版入口網站中的組織單位;可以用來管理訂閱和存取報表。
 
-- 訂用帳戶是 Azure 企業版入口網站中的最小單位。 這些訂用帳戶是由服務管理員所管理的 Azure 服務容器。 它們是組織部署 Azure 服務的地方。
+- 訂用帳戶是 Azure 企業版入口網站中的最小單位。 這些訂用帳戶是由服務管理員所管理的 Azure 服務容器。 這些是您的組織部署 Azure 服務的地方。
 
 - 企業註冊角色會連結具有其功能角色的使用者。 這些角色包括：
   - 企業系統管理員
@@ -38,9 +38,9 @@ ms.locfileid: "85076969"
 
 **設計考慮：**
 
-- 註冊提供階層式組織結構來管理客戶訂用帳戶的管理。
+- 註冊提供階層式組織結構來管理訂用帳戶的管理。
 
-- 您可以在 EA 帳戶層級區隔多個客戶環境，以支援全面隔離。
+- 可以在 EA 帳戶層級分隔多個環境，以支援整體隔離。
 
 - 可以有多個系統管理員被視為單一註冊。
 
@@ -80,7 +80,7 @@ ms.locfileid: "85076969"
 
 Azure AD 租使用者會提供身分識別和存取管理，這是安全性狀態的重要部分，以確保已驗證和授權的使用者只能存取他們具有存取權限的資源。 Azure AD 不僅會將這些服務提供給部署在 Azure 中的應用程式和服務，也會提供給 Azure 外部部署的服務和應用程式（例如內部部署或協力廠商雲端提供者）。 軟體即服務（SaaS）應用程式也會使用 Azure AD，例如 Microsoft 365 和 Azure Marketplace。 已經使用內部部署 Active Directory 的組織可以使用現有的基礎結構，並藉由與 Azure AD 整合，將驗證延伸到雲端。 每個 Azure AD 目錄都有一或多個網域。 一個目錄可以有多個與其相關聯的訂用帳戶，但只能有一個 Azure AD 的租使用者。
 
-請務必在 Azure AD 設計階段詢問基本的安全性問題，例如組織如何管理認證，以及它如何控制人為、應用程式，以及以程式設計方式存取。
+請務必在 Azure AD 設計階段詢問基本的安全性問題，例如您的組織如何管理認證，以及它如何控制人為、應用程式，以及以程式設計方式存取。
 
 **設計考慮：**
 
@@ -90,7 +90,7 @@ Azure AD 租使用者會提供身分識別和存取管理，這是安全性狀�
 
 - 根據選取的[規劃拓撲](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)，使用 Azure AD 無縫單一登入。
 
-- 如果您的組織沒有身分識別基礎結構，請從執行僅限 Azure ad 的身分識別部署開始。 具有[Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services)和[Microsoft enterprise 行動力 + 安全性](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)的這類部署，為 SaaS 和企業應用程式以及裝置提供端對端的保護。
+- 如果您的組織沒有身分識別基礎結構，請從執行僅限 Azure AD 的身分識別部署開始。 [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services)和[Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)的這類部署提供 SaaS 應用程式、企業應用程式和裝置的端對端保護。
 
 - 多重要素驗證提供另一層的安全性和第二個驗證屏障。 針對所有特殊許可權帳戶強制執行[多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)和[條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，以獲得更高的安全性。
 

@@ -1,18 +1,18 @@
 ---
 title: 管理與監視
-description: 管理和監視。
+description: 探索如何使用平台層級的集中式管理和監視，操作維護 Microsoft Azure 的企業資產。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46f98753dda7590daa725c5bd4c0c43a53190871
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 98f0cfccdaec32d00f3097f2f6b79f124c913aa6
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077120"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128219"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -38,7 +38,7 @@ _圖1：平臺管理和監視。_
 
   - 資源健康狀態事件
 
-- 安全性審核記錄，並在客戶的整個 Azure 資產中達到水準安全性鏡頭：
+- 安全性審核記錄，並在組織的整個 Azure 資產中達到水準安全性鏡頭：
 
   - 與內部部署安全性資訊和事件管理（SIEM）系統（例如 ServiceNow 或 ArcSight）的潛在整合
 
@@ -96,7 +96,7 @@ _圖1：平臺管理和監視。_
 
 ## <a name="planning-for-app-management-and-monitoring"></a>規劃應用程式管理和監視
 
-若要在上一節中展開，本節將考慮客戶應用程式工作負載的同盟管理和監視，並說明應用程式小組可以如何操作維護這些工作負載。
+為了在上一節中擴展，本節將考慮應用程式工作負載的同盟管理和監視，並說明應用程式小組可以如何繼續維護這些工作負載。
 
 **設計考慮：**
 

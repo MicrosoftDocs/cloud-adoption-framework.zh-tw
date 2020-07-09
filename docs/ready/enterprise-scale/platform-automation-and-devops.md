@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 743665aa8872fd16f55339041fa14d3e4dc01645
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: c8031c619eb419f72852fd8cd70e5540a80930d2
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075986"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128087"
 ---
 # <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
@@ -21,7 +21,7 @@ ms.locfileid: "85075986"
 
 ## <a name="planning-for-a-devops-approach"></a>規劃 DevOps 方法
 
-許多傳統的 IT 作業模型與雲端不相容，而且客戶必須進行營運和組織轉型，才能針對企業遷移目標提供。 強烈建議您針對應用程式和中央小組使用 DevOps 方法。
+許多傳統的 IT 作業模型與雲端不相容，而且組織必須進行作業和組織轉換，才能針對企業遷移目標進行傳遞。 強烈建議您針對應用程式和中央小組使用 DevOps 方法。
 
 **設計考慮：**
 
@@ -31,7 +31,7 @@ ms.locfileid: "85075986"
 
 - 投資工程功能和資源相當重要。
 
-- 客戶可以從符合其組織策略的各種來源來安排內部和外部 DevOps 角色和功能。
+- 您可以從符合組織策略的各種來源來安排內部和外部 DevOps 角色和功能。
 
 - 針對某些繼承應用程式，相關聯的應用程式團隊可能不需要與 DevOps 策略配合的工程資源。
 
@@ -83,7 +83,7 @@ ms.locfileid: "85075986"
 
   - 網路管理（應用程式資源）
 
-  - 在某些情況下，客戶可能會想要將 AppDevOps 細分為更細微的角色，例如 AppDataOps，以進行資料庫管理（如傳統資料庫管理員角色或 AppSecOps），其中會涉及更多安全性敏感應用程式。
+  - 在某些情況下，您可能會想要將 AppDevOps 細分為更細微的角色，例如 AppDataOps，以進行資料庫管理（如傳統資料庫管理員角色或 AppSecOps），其中會涉及更多安全性敏感應用程式。
 
 - 提供中央應用程式 DevOps 函式，以支援不具有現有 DevOps 功能的應用程式，或建立一個商務案例（例如，具有最少開發功能的繼承應用程式）
 
@@ -97,7 +97,7 @@ ms.locfileid: "85075986"
 
 ## <a name="define-central-and-federated-responsibilities"></a>定義中央和同盟責任
 
-「中央 IT 小組」和「應用程式」小組之間的角色、責任和信任的散發，對於在大規模採用雲端時必須進行的營運轉型客戶而言非常重要。
+「中央 IT 小組」和「應用程式」小組之間的角色、責任和信任的散發，對於您的組織在大規模採用雲端時所必須採取的營運轉型非常重要。
 
 **設計考慮：**
 

@@ -1,32 +1,32 @@
 ---
-title: 設計指導方針
-description: 設計方針。
+title: CAF 企業規模的設計指導方針
+description: 瞭解適用于 Azure 的 Microsoft Cloud 採用架構中的企業規模設計指導方針。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c1f23841cbde493b2c8279a1870ebbe7b061c721
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: f94807057be3beb1985979fe75f4ec0032952c05
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076934"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128474"
 ---
-# <a name="design-guidelines"></a>設計指導方針
+# <a name="caf-enterprise-scale-design-guidelines"></a>CAF 企業規模的設計指導方針
 
-本文和文章系列將概述企業規模架構如何在每個 Microsoft [Azure 登陸區域設計區域](../landing-zone/design-areas.md)上提供固定的位置。 這篇文章系列會建立一組逐步執行的設計方針，讓您可以遵循這些原則來實行企業規模解決方案中所述的設計原則。
+本文和文章系列將概述企業規模架構如何在每個 Microsoft [Azure 登陸區域設計區域](../landing-zone/design-areas.md)上提供固定的位置。 這會提供一組逐步執行的設計方針，讓您可以遵循這些原則來實行企業級解決方案中所述的設計原則。
 
-企業規模架構的核心包含重要的設計路徑，其中包括了與高度相關且相依之設計決策的基本設計主題。 此存放庫提供這些架構重要技術領域的設計指導方針，以支援定義企業規模架構時必須進行的重要設計決策。 針對每個被視為的網域，讀者應該檢查提供的考慮和建議，並在每個區域內使用它們來結構和驅動設計。
+企業規模架構的核心包含重要的設計路徑，其中包括了與高度相關且相依之設計決策的基本設計主題。 此存放庫提供這些架構重要技術領域的設計指導方針，以支援定義企業規模架構時必須進行的重要設計決策。 針對每個被視為的網域，您應該檢查提供的考慮和建議，並在每個區域內使用它們來結構和驅動設計。
 
-例如，客戶可能會詢問他們的資產需要多少訂用帳戶。 在此情況下，讀者應審查[訂用帳戶組織和治理](./management-group-and-subscription-organization.md#subscription-organization-and-governance)，並使用概述的建議來驅動訂閱決策。
+例如，您可能會詢問您的資產需要多少訂用帳戶。 在此情況下，您應該審查訂用帳戶[組織和治理](./management-group-and-subscription-organization.md#subscription-organization-and-governance)，並使用概述的建議來驅動訂閱決策。
 
 ## <a name="critical-design-areas"></a>重要設計區域
 
-下列八個重要設計區域有助於將客戶需求轉譯為 Microsoft Azure 的結構和功能，並解決內部部署和雲端設計基礎結構之間的不相符問題，這通常會在企業級定義與 Azure 採用之間建立 dissonance 和摩擦。
+下列八個重要的設計區域可協助您將需求轉譯成 Microsoft Azure 的結構和功能。 它可協助您解決內部部署和雲端設計基礎結構之間的不相符，這通常會在企業級定義與 Azure 採用之間建立 dissonance 和摩擦。
 
-在這些重要領域中做出決策的影響將會跨企業規模的架構 reverberate，並影響其他決策。 讀者應熟悉下列八個區域，以進一步瞭解內含決策的後果，這可能會在稍後於相關領域中產生取捨。
+在這些重要領域中做出決策的影響將會跨企業規模的架構 reverberate，並影響其他決策。 您應該熟悉下列八個區域，以進一步瞭解內含決策的後果，這可能會在稍後於相關領域中產生取捨。
 
 1. [企業註冊和 Azure Active Directory 租使用者](./enterprise-enrollment-and-azure-ad-tenants.md)
 2. [身分識別和存取管理](./identity-and-access-management.md)

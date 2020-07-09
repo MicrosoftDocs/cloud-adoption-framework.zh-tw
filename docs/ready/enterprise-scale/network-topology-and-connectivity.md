@@ -1,18 +1,18 @@
 ---
 title: 網路拓樸和連線能力
-description: 網路拓撲和連線能力。
+description: 檢查有關網路和連線的主要設計考慮和建議，以及與 Microsoft Azure 之間的連線和連線能力。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4363ead6a4319629df964f3efa4ace802ac81ee4
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: c21c65a83786a4cc376a790acb83eba8a87bed86
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335984"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128471"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "85335984"
 
 ## <a name="planning-for-ip-addressing"></a>規劃 IP 位址
 
-企業客戶要規劃 Azure 中的 IP 位址，以確保在內部部署位置和 Azure 區域之間沒有重迭的 IP 位址空間，這是很重要的。
+您的組織務必規劃 Azure 中的 IP 位址，以確保在內部部署位置和 Azure 區域之間不會有重迭的 IP 位址空間。
 
 **設計考慮：**
 
@@ -48,17 +48,17 @@ ms.locfileid: "85335984"
 
 - 請不要事先規劃所需的位址空間來建立 Vnet，因為在 VNet 透過虛擬網路對等互連連線之後，新增位址空間將會導致中斷。
 
-- 請勿將公用 IP 位址用於 Vnet，特別是當公用 IP 位址不屬於客戶時。
+- 請勿將公用 IP 位址用於 Vnet，特別是當公用 IP 位址不屬於您的組織時。
 
 ## <a name="configure-the-domain-name-system-dns-and-name-resolution-for-on-premises-and-azure-resources"></a>設定內部部署和 Azure 資源的網域名稱系統（DNS）和名稱解析
 
-DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會想要使用其在 DNS 中的現有投資，其他人可能會發現雲端採用是將其內部 DNS 基礎結構現代化並使用原生 Azure 功能的機會。
+DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能會想要使用其在 DNS 中的現有投資，但其他公司可能會發現雲端採用是將其內部 DNS 基礎結構現代化並使用原生 Azure 功能的機會。
 
 **設計考慮：**
 
 - DNS 解析程式可與 Azure 私人 DNS 搭配使用，以進行跨單位的名稱解析。
 
-- 客戶可能需要在內部部署和 Azure 之間使用現有的 DNS 解決方案。
+- 您可能需要在內部部署和 Azure 之間使用現有的 DNS 解決方案。
 
 - VNet 可以與自動註冊連結的私人 DNS 區域數目上限是一個。
 
@@ -84,9 +84,9 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 網路拓撲是企業級架構的重要基礎元素，因為它最終會定義應用程式彼此通訊的方式。 本節探討企業 Azure 部署的相關技術和拓撲方法，著重于兩種核心方法：以 Azure 虛擬 WAN 為基礎的拓撲，以及傳統的拓撲。
 
-以 Azure 虛擬 WAN 為基礎的網路拓撲是適用于大規模多區域部署的最佳企業級方法，其中客戶需要將其全球位置連線至 Azure 和內部部署。 每當客戶打算使用與 Azure 完全整合的軟體定義 WAN （SD WAN）部署時，也應該使用虛擬 WAN 網路拓撲。 虛擬 WAN 是用來滿足大規模的互連能力需求。 因為它是由 Microsoft 管理的服務，所以也會降低整體網路的複雜性，並協助將客戶的網路現代化。
+以 Azure 虛擬 WAN 為基礎的網路拓撲是適用于大規模多區域部署的最佳企業級方法，您的組織需要將全球位置連線至 Azure 和內部部署。 當您的組織打算使用與 Azure 完全整合的軟體定義 WAN （SD WAN）部署時，也應該使用虛擬 WAN 網路拓撲。 虛擬 WAN 是用來滿足大規模的互連能力需求。 由於這是由 Microsoft 管理的服務，因此它也可以降低整體網路的複雜性，並協助將組織的網路現代化。
 
-傳統的 Azure 網路拓朴應用於僅想要在幾個 Azure 區域中部署資源的客戶、不需要全域互連的網路、每個區域的遠端或分支位置數（少於30個），或需要完全控制和資料細微性以手動設定其 Azure 網路。 此傳統拓撲可協助這些客戶在 Azure 中建立安全的網路基礎。
+如果您的組織想要在只有幾個 Azure 區域中部署資源、您不需要全域互連的網路、每個區域的遠端或分支位置（所需的不超過30個），或需要完全控制和資料細微性以手動設定 Azure 網路，則應該使用傳統的 Azure 網路拓朴。 此傳統拓撲可協助您在 Azure 中建立安全的網路基礎。
 
 ## <a name="virtual-wan-network-topology-microsoft-managed"></a>虛擬 WAN 網路拓撲（由 Microsoft 管理）
 
@@ -95,7 +95,7 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 **設計考慮：**
 
-- [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)是一種由 Microsoft 管理的解決方案，預設會提供端對端全域傳輸連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的需求。 例如，客戶不需要設定使用者定義的路由（UDR）或網路虛擬裝置（Nva），即可啟用全域傳輸連線能力。
+- [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)是一種由 Microsoft 管理的解決方案，預設會提供端對端全域傳輸連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的需求。 例如，您不需要設定使用者定義的路由（UDR）或網路虛擬裝置（Nva），即可啟用全域傳輸連線能力。
 
 - 虛擬 WAN 藉由建立橫跨多個 Azure 區域和內部部署位置（任意對任意連線能力）的[中樞和輪輻網路架構](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，來大幅簡化 Azure 和跨單位的端對端網路連線，如下圖所示：
 
@@ -109,13 +109,15 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
   - 分支到虛擬網路
   - 分支至分支
 
-- 虛擬 WAN 中樞已鎖定，而且客戶可以在其中部署的唯一資源是虛擬網路閘道（點對站 VPN、站對站 VPN 和 ExpressRoute）、透過防火牆管理員的 Azure 防火牆，以及路由表。
+- 虛擬 WAN 中樞已鎖定，且您可以在其中部署的唯一資源為虛擬網路閘道（點對站 VPN、站對站 VPN 和 ExpressRoute）、透過防火牆管理員的 Azure 防火牆，以及路由表。
 
 - 虛擬 WAN 會透過 ExpressRoute 私用對等互連，將最多200個首碼從 Azure 公佈到內部部署，每個虛擬 WAN 中樞增加到10000個首碼。 10000首碼的限制也包括站對站 VPN 和點對站 VPN。
 
-- VNet 對 VNet 轉移連線能力（區域內和跨區域）處於公開預覽狀態。
+- VNet 對 VNet 轉移連線能力（區域內和跨區域）現已正式運作（GA）。
 
-- 虛擬 WAN 中樞對中樞連線能力目前為公開預覽版。
+- 虛擬 WAN 中樞對中樞連線能力現已正式運作（GA）。
+
+- 標準虛擬 WAN 中的 Vnet 之間的傳輸連線已啟用，因為每個虛擬中樞都有路由器。 每個虛擬中樞路由器最多支援 50 Gbps 的匯總輸送量。
 
 - 虛擬 WAN 整合了各種[SD wan 提供者](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-locations-partners)。
 
@@ -125,20 +127,20 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 - 具有 premium 附加元件的 ExpressRoute 線路是必要的，而且它們應該來自 ExpressRoute 全球範圍的位置。
 
-- Azure 防火牆管理員（目前處於公開預覽狀態）允許在虛擬 WAN 中樞中部署 Azure 防火牆。
+- Azure 防火牆管理員（現已正式運作（GA））允許在虛擬 WAN 中樞中部署 Azure 防火牆。
 
 - 目前不支援透過 Azure 防火牆的虛擬 WAN 中樞對中樞流量。 或者，在虛擬 WAN 中使用原生中樞來中樞傳輸路由功能，並使用 Nsg 來允許/封鎖跨中樞的 VNet 流量。
 
 **設計建議：**
 
-- 針對 Azure 中的新大型/全球網路部署，強烈建議使用虛擬 WAN，其中客戶需要跨 Azure 區域和內部部署位置的全球傳輸連線，而不必手動設定 Azure 網路可轉移路由。
+- 針對 Azure 中新的大型/全球網路部署，強烈建議使用虛擬 WAN，您需要跨 Azure 區域和內部部署位置的全球傳輸連線，而不必手動設定 Azure 網路可轉移路由。
 
-  下圖說明全球客戶部署的範例，其中的資料中心散佈在歐洲和美國，以及兩個區域內的大量分公司。 環境是透過虛擬 WAN 和 ExpressRoute 全球連線來全球化。
+  下圖說明一個範例全球企業部署，其中的資料中心散佈在歐洲和美國，以及兩個區域內的大量分公司。 環境是透過虛擬 WAN 和 ExpressRoute 全球連線來全球化。
 
 ![範例網路拓撲 ](./media/global-reach-topology.png)
  _圖3：範例網路拓撲。_
 
-- 使用虛擬 WAN 做為全域連線資源，並以每個 Azure 區域的虛擬 WAN 中樞，透過其本機虛擬 WAN 中樞，將多個登陸區域一起連線到跨 Azure 區域。
+- 使用虛擬 WAN 做為全域連線資源，並在每個 Azure 區域具有虛擬 WAN 中樞，透過本機虛擬 WAN 中樞，將多個登陸區域一起連線到跨 Azure 區域。
 
 - 使用 ExpressRoute 將虛擬 WAN 中樞連線至內部部署資料中心。
 
@@ -164,18 +166,18 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
 - 請勿為每個虛擬 WAN 虛擬中樞建立超過500個 VNet 連線。
 
-## <a name="traditional-azure-networking-customer-managed-topology"></a>傳統的 Azure 網路（客戶管理）拓撲
+## <a name="traditional-azure-networking-topology"></a>傳統的 Azure 網路拓朴
 
-雖然虛擬 WAN 提供各種強大的功能，但在某些情況下，傳統的 Azure 網路方法可能會是最佳的：
+雖然虛擬 WAN 提供各種強大的功能，但在某些情況下，傳統的 Azure 網路方法可能會是最佳的。
 
 - 如果跨多個 Azure 區域或跨單位的全球可轉移網路不是必要的，例如在美國的分支需要連線到歐洲的虛擬網路。
 
 - 如果不需要透過 VPN 連接到大量的遠端位置，或與 SD WAN 解決方案整合。
 
-- 如果客戶的喜好設定是在 Azure 中設定網路拓撲時，有細微的控制和設定。
+- 如果您的組織偏好在 Azure 中設定網路拓撲時，有細微的控制和設定。
 
 ![網路拓撲和連線能力 ](./media/customer-managed-topology.png)
- _圖4：客戶管理的 Azure 網路拓朴。_
+ _圖4：傳統的 Azure 網路拓朴。_
 
 **設計考慮：**
 
@@ -193,19 +195,19 @@ DNS 是整體企業級架構中的重要設計主題，而某些客戶可能會�
 
   - 頻寬會受限於 ExpressRoute 閘道 SKU。
 
-  - 客戶仍必須部署和管理 Udr，而他們需要跨 VNet 流量的檢查/記錄。
+  - 您仍然必須部署和管理 Udr，如果它們需要跨 VNet 流量的檢查/記錄功能。
 
 - 具有邊界閘道協定（BGP）的 VPN 閘道可在 Azure 和內部部署中轉移，但不會傳輸到 ExpressRoute 閘道。
 
 - 當多個 ExpressRoute 線路連線到相同的 VNet 時，必須使用連接權數和 BGP 技術來確保內部部署與 Azure 之間流量的最佳路徑。 如需詳細資訊，請參閱[優化 ExpressRoute 路由](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing)。
 
-- 使用 BGP 技術來影響 ExpressRoute 路由是 Azure 雲端外部的設定。 因此，客戶或其連線提供者必須據以設定其內部部署路由器。
+- 使用 BGP 技術來影響 ExpressRoute 路由是 Azure 雲端外部的設定。 因此，您的組織或連線提供者必須據以設定內部部署路由器。
 
 - 具有 premium 附加元件的 ExpressRoute 線路提供了全域連線能力;不過，每個 ExpressRoute 閘道的 ExpressRoute 連線數目上限為四個。
 
 - 雖然每個 VNet 的虛擬網路對等互連連線數目上限為500，但可透過 ExpressRoute 私用對等互連從 Azure 通告至內部部署的最大路由數目為200。
 
-- VPN 閘道的最大匯總輸送量為 10 Gbps，最多可支援30個站對站/VNet 對 VNet 通道。
+- VPN 閘道的最大匯總輸送量為 10 Gbps，最多可支援30個站對站或 VNet 對 VNet 通道。
 
 **設計建議：**
 
@@ -242,18 +244,18 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - L7 輸入 Nva （例如 Azure 應用程式閘道）不應部署為中央中樞 VNet 中的共用服務。 相反地，它們應該與應用程式一起部署在其各自的登陸區域中。
 
-- 使用現有的客戶網路（MPLS 和 SD WAN）來連接分公司位置與公司總部。 不支援 ExpressRoute 與 VPN 閘道之間的 Azure 傳輸。
+- 使用您現有的網路（MPLS 和 SD WAN）來連接分公司位置與公司總部。 不支援 ExpressRoute 與 VPN 閘道之間的 Azure 傳輸。
 
 - 對於跨 Azure 區域具有多個中樞和輪輻拓撲的網路架構，當少數登陸區域需要跨區域通訊時，請使用全域 VNet 對等互連來連接登陸區域 Vnet。 這種方法提供的優點，像是具有全域 VNet 對等互連的高網路頻寬（如 VM SKU 所允許），但它會略過中央 NVA （萬一需要進行流量檢查或篩選）。 這也會受限於[全域 VNet 對等互連限制](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview#constraints-for-peered-virtual-networks)。
 
-- 當客戶在兩個 Azure 區域中部署中樞和輪輻網路架構，並在各區域之間的所有登陸區域之間傳輸連線時，請使用 ExpressRoute 搭配雙重線路來提供傳輸連線能力，以 Vnet 跨 Azure 區域的登陸區域。 在此案例中，登陸區域可以透過本機中樞 VNet 中的 NVA 和跨區域透過 ExpressRoute 線路在區域內傳輸，而流量必須 hairpin 在 Microsoft enterprise edge （MSEE）路由器。 這項設計如下圖所示：
+- 當您在兩個 Azure 區域中部署中樞和輪輻網路架構，並在各區域之間的所有登陸區域之間傳輸連線時，請使用 ExpressRoute 搭配雙重線路，以提供傳輸連線能力，以 Vnet 跨 Azure 區域的登陸區域。 在此案例中，登陸區域可以透過本機中樞 VNet 中的 NVA 和跨區域透過 ExpressRoute 線路在區域內傳輸，而流量必須 hairpin 在 Microsoft enterprise edge （MSEE）路由器。 這項設計如下圖所示：
 
 ![網路拓撲和連線能力 ](./media/vnet-dual-circuits.png)
  _圖7：登陸區域連線設計。_
 
-- 當客戶需要跨兩個 Azure 區域的中樞和輪輻網路架構，而且需要跨 Azure 區域 Vnet 的登陸區域之間進行全域傳輸連線時，雖然此架構可透過將中央中樞 Vnet 與全域 VNet 對等互連進行分支處理，以及使用 Udr 和 Nva 來啟用全域傳輸路由，因此，複雜度和管理的額外負荷很高。 相反地，我們建議您使用虛擬 WAN 來部署全域傳輸網路架構。
+- 當您的組織需要跨兩個以上的 Azure 區域進行中樞和輪輻網路架構，且必須在跨 Azure 區域 Vnet 的登陸區域之間進行全域傳輸連線時。 雖然此架構可以藉由將中央中樞 Vnet 與全域 VNet 對等互連進行互連，以及使用 Udr 和 Nva 來啟用全域傳輸路由，因此複雜度和管理的額外負荷很高。 相反地，我們建議您使用虛擬 WAN 來部署全域傳輸網路架構。
 
-- 使用[Azure 監視器 network insights](https://docs.microsoft.com/azure/azure-monitor/insights/network-insights-overview) （目前處於預覽狀態）來監視 Azure 上客戶網路的端對端狀態。
+- 使用[Azure 監視器 network insights](https://docs.microsoft.com/azure/azure-monitor/insights/network-insights-overview) （目前處於預覽狀態）來監視 Azure 上網路的端對端狀態。
 
 - 請勿為每個中央中樞 VNet 建立超過200個對等互連連線。 雖然 Vnet 支援最多500對等互連連線，但具有私用對等互連的 ExpressRoute 僅支援從 Azure 到內部部署的最多有200個首碼的公告。
 
@@ -269,7 +271,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 當多個 Vnet 連線到相同的 ExpressRoute 線路時，它們會成為相同路由網域的一部分，而且所有 Vnet 都會共用頻寬。
 
-- ExpressRoute 全球範圍（若有提供）可讓客戶使用 ExpressRoute 線路將內部部署位置連接在一起，以透過 Microsoft 骨幹網路傳輸流量。
+- ExpressRoute 全球範圍（若有提供）可讓您使用 ExpressRoute 線路將內部部署位置連接在一起，以透過 Microsoft 骨幹網路傳輸流量。
 
 - ExpressRoute 全球範圍可在許多[expressroute 對等互連位置](https://docs.microsoft.com/azure/expressroute/expressroute-global-reach#availability)中取得。
 
@@ -302,7 +304,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 使用網路效能監控主動監視 ExpressRoute 線路。
 
-- 請勿從單一對等互連位置明確使用 ExpressRoute 線路，因為這會建立單一失敗點，並讓客戶容易遭受對等互連位置中斷的影響。
+- 請勿從單一對等互連位置明確使用 ExpressRoute 線路，因為這會產生單一失敗點，並讓您的組織容易遭受對等互連位置中斷的影響。
 
 - 請勿使用相同的 ExpressRoute 線路來連接多個需要隔離或專用頻寬的環境，以避免發生雜訊干擾的風險。
 
@@ -320,21 +322,21 @@ _圖5：中樞和輪輻網路拓撲。_
 
   - VNet 服務端點可讓您從選取的子網到所選 PaaS 服務的服務層級存取。
 
-- 企業客戶通常有關于 PaaS 服務的公用端點必須適當地緩和的問題。
+- 企業通常會對必須適當緩和的 PaaS 服務的公用端點有疑慮。
 
 - 針對[支援的服務](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)，私用連結會解決與服務端點相關聯的資料外泄疑慮。 或者，透過 Nva 的輸出篩選可以用來提供減輕資料外泄的步驟。
 
 **設計建議：**
 
-- 針對支援的 Azure 服務使用 VNet 插入，使其可從客戶 VNet 內取得。
+- 針對支援的 Azure 服務使用 VNet 插入功能，使其可從您的 VNet 內取得。
 
 - 已插入 VNet 的 Azure PaaS 服務仍會使用公用 IP 位址執行管理平面作業。 請確定使用 Udr 和 Nsg 在 VNet 內鎖定此通訊。
 
-- 針對共用的 Azure PaaS 服務，使用私用連結（如果有的話）。 私用連結已正式適用于數個服務，且適用于許多服務。 [這裡](https://docs.microsoft.com/azure/private-link/private-endpoint-overview#private-link-resource)詳述私人連結的可用性。
+- 針對共用的 Azure PaaS 服務，使用私用連結（如果有的話）。 私用連結已正式適用于數個服務，且適用于許多服務。 [這裡](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)詳述私人連結的可用性。
 
 - 透過 ExpressRoute 私用對等互連從內部部署存取 Azure PaaS 服務，使用適用于專用 Azure 服務的 VNet 插入或 Azure 私人連結，用於可用的共用 Azure 服務。 若要在 VNet 插入或私用連結無法使用時從內部部署存取 Azure PaaS 服務，請搭配 Microsoft 對等互連使用 ExpressRoute。 這可避免透過公用網際網路進行傳輸。
 
-- 使用 VNet 服務端點來保護從客戶 VNet 內部存取 Azure PaaS 服務的安全，但只有在私人連結無法使用，且沒有資料外泄考慮時。 若要解決服務端點的資料外泄問題，請使用 NVA 篩選或使用 VNet 服務端點原則進行 Azure 儲存體。
+- 使用 VNet 服務端點來保護從 VNet 記憶體取 Azure PaaS 服務的安全，但只有在私人連結無法使用，且沒有資料外泄考慮時。 若要解決服務端點的資料外泄問題，請使用 NVA 篩選或使用 VNet 服務端點原則進行 Azure 儲存體。
 
 - 根據預設，請勿在所有子網上啟用 VNet 服務端點。
 
@@ -348,9 +350,9 @@ _圖5：中樞和輪輻網路拓撲。_
 
 **設計考慮：**
 
-- Azure-原生網路安全性服務（例如 Azure 防火牆、Azure 應用程式閘道上的 Azure Web 應用程式防火牆（WAF）和 Azure Front）是完全受控的服務，因此客戶不會產生與基礎結構部署相關聯的營運和管理成本，而這可能會變得很複雜。
+- Azure-原生網路安全性服務（例如 Azure 防火牆、Azure 應用程式閘道上的 Azure Web 應用程式防火牆（WAF）和 Azure Front）是完全受控的服務，因此您不會產生與基礎結構部署相關聯的營運和管理成本，而這可能會變得很複雜。
 
-- 企業規模的架構與協力廠商 Nva 完全相容，客戶應使用 Nva，或在原生服務無法滿足特定客戶需求的情況下。
+- 如果您的組織想要使用 Nva，或在原生服務無法滿足貴組織的特定需求的情況下，企業規模架構與協力廠商 Nva 完全相容。
 
 **設計建議：**
 
@@ -360,13 +362,13 @@ _圖5：中樞和輪輻網路拓撲。_
 
   - 非 HTTP/S 傳入連接
 
-  - 東部-西部流量篩選（如果客戶需要）
+  - 東部-西部流量篩選（如果您的組織需要）
 
-- 使用具有虛擬 WAN 的防火牆管理員，跨虛擬 WAN 集線器或中樞 Vnet 部署和管理 Azure 防火牆。 針對虛擬 WAN 和一般 Vnet，防火牆管理員目前為預覽狀態。
+- 使用具有虛擬 WAN 的防火牆管理員，跨虛擬 WAN 集線器或中樞 Vnet 部署和管理 Azure 防火牆。 防火牆管理員現已正式運作（GA），適用于虛擬 WAN 和一般 Vnet。
 
 - 建立全域 Azure 防火牆原則來管理全域網路環境中的安全性狀態，並將其指派給所有 Azure 防火牆實例。 透過 RBAC 將增量防火牆原則委派給本機安全性小組，以允許細微的原則符合特定區域的需求。
 
-- 如果客戶希望使用這類解決方案來保護輸出連線，請在防火牆管理員中設定支援的協力廠商 SaaS 安全性提供者。
+- 如果您的組織想要使用這類解決方案來保護輸出連線，請在防火牆管理員中設定支援的協力廠商 SaaS 安全性提供者。
 
 - 使用登陸區域 VNet 內的 WAF 來保護來自網際網路的輸入 HTTP/S 流量。
 
@@ -380,9 +382,9 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 如果輸入 HTTP/S 連線需要協力廠商 Nva，則應該將它們部署在登陸區域 VNet 中，以及它們所保護和公開到網際網路的應用程式。
 
-- 使用[Azure DDoS 保護標準保護方案](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)來保護在客戶 vnet 中裝載的所有公用端點。
+- 使用[Azure DDoS 保護標準保護方案](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)來保護 vnet 中裝載的所有公用端點。
 
-- 請勿將內部部署 DMZ 概念和架構複寫到 Azure 中，因為客戶可以在 Azure 中取得與內部部署類似的安全性功能，但必須將實施和架構調整為雲端。
+- 請勿將內部部署 DMZ 概念和架構複寫到 Azure 中，因為您可以在 Azure 中取得與內部部署類似的安全性功能，但必須將實施和架構調整為雲端。
 
 ## <a name="planning-for-app-delivery"></a>規劃應用程式傳遞
 
@@ -438,15 +440,15 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - Nsg 必須用來保護跨子網的流量，以及跨平臺的美國東部流量（登陸區域流量）。
 
-- 應用程式小組應該使用子網層級 Nsg 的應用程式安全性群組，來保護其登陸區域內的多層式 Vm。
+- 應用程式小組應該使用子網層級 Nsg 的應用程式安全性群組，來保護登陸區域內的多層式 Vm。
 
 - 使用 Nsg 和應用程式安全性群組來微分割登陸區域內的流量，並避免使用中央 NVA 來篩選流量。
 
 - 啟用 NSG 流量記錄，並將其饋送至流量分析，以深入瞭解內部和外部流量流程。
 
-- 使用 Nsg 選擇性地將登陸區域連線的白名單。
+- 使用 Nsg 選擇性地允許登陸區域間的連線能力。
 
-- 針對虛擬 WAN 拓撲，如果客戶需要在登陸區域流動流量的篩選和記錄功能，請透過 Azure 防火牆將流量路由傳送到登陸區域。
+- 針對虛擬 WAN 拓撲，如果您的組織需要在登陸區域流動流量的篩選和記錄功能，請透過 Azure 防火牆將流量路由傳送到登陸區域。
 
 ## <a name="define-network-encryption-requirements"></a>定義網路加密需求
 
@@ -469,7 +471,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 使用 VPN 閘道建立從內部部署至 Azure 的 VPN 連線時，流量會在通訊協定層級使用 IPsec 通道進行加密，如上 `Flow A` 圖所示。
 
-- 使用 ExpressRoute Direct 時，請設定[媒體存取控制安全性（MACsec）](https://docs.microsoft.com/azure/expressroute/expressroute-howto-MACsec) ，以加密客戶路由器與 MSEE 之間第二層的流量，如上圖所示 `Flow B` 。
+- 使用 ExpressRoute Direct 時，請設定[媒體存取控制安全性（MACsec）](https://docs.microsoft.com/azure/expressroute/expressroute-howto-MACsec) ，以將層級的流量加密（您組織的路由器和 MSEE 之間的兩個等級），如上 `Flow B` 圖所示。
 
 - 對於 MACsec 不是選項的虛擬 WAN 案例（例如，不使用 ExpressRoute Direct），請使用虛擬 WAN VPN 閘道，透過 ExpressRoute 私人對等互連來建立 IPsec 通道。 這是 `Flow C` 在上圖中所描述。
 
@@ -477,11 +479,11 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 如果必須加密 Azure 區域之間的流量，請使用 VPN 閘道來連接跨區域的 Vnet。
 
-- 在 Azure 中使用協力廠商 Nva，以透過 ExpressRoute 私用對等互連來加密流量，以防 Azure 中提供的原生解決方案（如上述的流程 B 和 C 所述）不符合客戶需求。
+- 在 Azure 中使用協力廠商 Nva，以透過 ExpressRoute 私用對等互連來加密流量，以防 Azure 中提供的原生解決方案（如上述的流程 B 和 C 所述）不符合您的需求。
 
 ## <a name="planning-for-traffic-inspection"></a>規劃流量檢查
 
-在許多產業中，客戶要求 Azure 中的流量（尤其是輸入和輸出網際網路流量）會鏡像到網路封包收集器，以進行深度檢查和分析。 本節將探討在 Azure 虛擬網路中鏡像或點擊流量的主要考慮和建議方法。
+在許多產業中，組織會要求 Azure 中的流量（尤其是輸入和輸出網際網路流量）會鏡像到網路封包收集器，以進行深度檢查和分析。 本節將探討在 Azure 虛擬網路中鏡像或點擊流量的主要考慮和建議方法。
 
 **設計考慮：**
 

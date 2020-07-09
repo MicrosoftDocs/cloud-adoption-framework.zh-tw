@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d74b03459c306143a02936e22ef47dea4ab9d9a9
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: 8b9f1ec6ae4ae635e9e99eefc6a9ad85988d2dcc
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335950"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128266"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -55,7 +55,7 @@ Azure Active Directory （Azure AD）租使用者內的管理群組結構支援�
 
 ## <a name="subscription-organization-and-governance"></a>訂用帳戶組織和治理
 
-訂用帳戶是 Azure 內管理、計費和規模的單位，在設計大規模的 Azure 採用時，這些訂用帳戶扮演重要的角色。 本節將協助您根據重要因素（例如環境類型、擁有權和治理模型、組織結構和應用程式組合）來取得客戶訂用帳戶需求和設計目標訂閱。
+訂用帳戶是 Azure 內管理、計費和規模的單位，在設計大規模的 Azure 採用時，這些訂用帳戶扮演重要的角色。 本節將協助您根據重要因素（例如環境類型、擁有權和治理模型、組織結構和應用程式組合）來捕捉訂閱需求和設計目標訂閱。
 
 **設計考慮：**
 
@@ -117,7 +117,7 @@ Azure Active Directory （Azure AD）租使用者內的管理群組結構支援�
 
 - 使用保留的實例來排定所需區域中保留容量的優先順序。 這可確保您的工作負載會擁有所需的容量，即使在特定區域中，該資源的需求很高。
 
-- 使用自訂視圖建立儀表板，以監視使用的容量層級。 如果容量使用率達到關鍵性層級（例如 90% CPU 使用率），請設定警示。
+- 使用自訂視圖建立儀表板，以監視已使用的容量層級。 如果容量使用率達到關鍵性層級（例如 90% CPU 使用率），請設定警示。
 
 - 在訂用帳戶布建的過程中，引發配額增加的支援要求（例如，訂用帳戶內可用的 VM 核心總數）。 這可確保您的配額限制會在工作負載需要超過預設限制之前設定。
 
@@ -137,6 +137,6 @@ Azure Active Directory （Azure AD）租使用者內的管理群組結構支援�
 
 **設計建議：**
 
-- 使用 Azure 成本管理進行成本匯總，並將其提供給應用程式擁有者。
+- 使用 Azure 成本管理和計費來進行成本匯總，並將其提供給應用程式擁有者。
 
 - 使用 Azure 資源標記進行成本分類和資源群組。 這可讓您針對共用訂用帳戶的工作負載，或跨多個訂用帳戶的指定工作負載，提供計費機制。

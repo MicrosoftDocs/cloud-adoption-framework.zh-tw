@@ -1,24 +1,24 @@
 ---
 title: 身分識別和存取管理
-description: 身分識別與存取管理。
+description: 檢查與企業環境中的身分識別和存取管理相關的設計考慮和建議。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: 16e5be68c1a2089715a1896d325f1c3c2aa7f24a
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335967"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128422"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
 身分識別提供大量安全性保證的基礎。 身分識別會根據雲端服務中的身分識別驗證和授權控制來啟用存取，以保護資料和資源，並決定應允許的要求。
 
-身分識別與存取管理（IAM）是公用雲端中的界限安全性，必須被視為任何安全且完全相容公用雲端架構的基礎。 Microsoft Azure 提供一組完整的服務、工具和參考架構，讓組織能夠建立高度安全且操作有效率的環境，並將如下所述。
+身分識別與存取管理（IAM）是公用雲端中的界限安全性，必須被視為任何安全且完全相容公用雲端架構的基礎。 Microsoft Azure 提供一組完整的服務、工具和參考架構，讓組織能夠建立高度安全且操作有效率的環境，如這裡所述。
 
 本節將探討與企業環境中的身分識別和存取管理相關的設計考慮和建議。
 
@@ -28,7 +28,7 @@ ms.locfileid: "85335967"
 
 ### <a name="planning-for-identity-and-access-management"></a>規劃身分識別和存取管理
 
-企業組織通常會遵循最低許可權的操作存取方法，而此模型應該透過 Azure AD 角色型存取控制（RBAC）和自訂角色定義來擴充，以考慮 Azure。 規劃如何管理控制和資料平面存取 Azure 中的資源是非常重要的。 IAM 和 RBAC 的任何設計都必須符合法規、安全性和營運需求，才能接受。
+企業組織通常會遵循最低許可權的操作存取方法。 此模型應該透過 Azure AD 角色型存取控制（RBAC）和自訂角色定義來進行擴充，以考慮 Azure。 規劃如何管理控制和資料平面存取 Azure 中的資源是非常重要的。 IAM 和 RBAC 的任何設計都必須符合法規、安全性和營運需求，才能接受。
 
 身分識別與存取管理是一個多步驟的程式，其中包含仔細規劃身分識別整合和其他安全性考慮，例如封鎖舊版驗證和規劃新式密碼。 預備規劃也牽涉到選取企業對企業（B2B）或企業對消費者（B2C）身分識別和存取管理。 雖然這些需求有所不同，但還是需要考慮企業登陸區域的常見設計考慮和建議。
 
@@ -59,7 +59,7 @@ _圖1：身分識別和存取管理。_
 
 - 對具有 Azure 環境許可權的任何使用者強制執行多重要素驗證。 這是許多合規性架構的需求，可大幅降低認證竊取和未經授權存取的風險。
 
-- 使用[Azure AD Privileged Identity Management （PIM）](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)來建立零的持續存取權和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和進程的延伸模組，利用上述的 Azure 原生工具，或視需要使用。
+- 使用[Azure AD Privileged Identity Management （PIM）](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)來建立零的持續存取權和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和進程的延伸模組，如上面所述使用 Azure 原生工具，或視需要使用。
 
 - 授與資源的存取權時，請在 Azure AD PIM 中，針對 Azure 控制平面資源使用 Azure-僅限 AD 群組。
 
@@ -73,7 +73,7 @@ _圖1：身分識別和存取管理。_
 
 - 考慮下列重要角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用量 | 動作 | 沒有動作 |
+| 角色 | 使用方式 | 動作 | 沒有動作 |
 |---|---|---|---|
 | Azure 平臺擁有者               | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理（NetOps）        | 整個平臺的全球連線管理： Vnet、Udr、Nsg、Nva、VPN、ExpressRoute 等等            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
