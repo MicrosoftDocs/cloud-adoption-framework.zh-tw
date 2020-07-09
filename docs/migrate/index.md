@@ -1,18 +1,20 @@
 ---
 title: 雲端移轉
-description: 了解如何建立反覆流程，來評估、移轉、最佳化、保護及管理您想要遷移至雲端的工作負載。
+description: 遷移至 Azure。 了解移轉的階段。 使用反覆的程式準備成功遷移至 Azure，以評估、遷移、最佳化、保護和管理工作負載。
+keywords: azure 雲端遷移, 雲端採用, 遷移至 azure, 增益與轉移, 移轉波, 遷移規劃, 移轉方法, 雲端移轉架構
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.custom: azure-migrate-seo
+ms.openlocfilehash: 25bf28c450f5b12e01f825d1aa76681986d97cba
+ms.sourcegitcommit: bdf40eca6647ecab5cbed05f527a3f6542d37899
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787889"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86058978"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -56,7 +58,7 @@ ms.locfileid: "84787889"
 > [!NOTE]
 > 建置移轉處理站時，有些小組可能會選擇將上述各個階段分散到多個小組和多個短期衝刺。 這種方法可以改善可重複性，並加速移轉工作。
 
-## <a name="migration-waves"></a>移轉波浪
+## <a name="migration-waves-and-iterative-change-management"></a>遷移波和反覆變更管理
 
 移轉反覆項目可藉由移轉資產和工作負載來提供技術價值。 移轉波浪是最小的工作負載集合，可提供有形且可觀的商業價值。 每個反覆項目結束後均應產生報表，以概述完成的技術成果。 不過，商務變更和策略性規劃通常會在較高一點的層級發生。 當雲端採用小組進行移轉工作時，雲端策略小組會著重於規劃後續的 1-2 個移轉波浪。 雲端策略小組也會以學習計量的形式追蹤技術進展，以進一步了解實現商業價值的時程表。 就這一點而言，移轉波可說是追蹤商務結果、人員和時程表的反覆變更管理方法。
 
@@ -64,7 +66,7 @@ ms.locfileid: "84787889"
 
 ## <a name="next-steps"></a>後續步驟
 
-上述步驟和後續位於「遷移」方法中的指引，將有助於開發技能以利執行每個移轉短期衝刺內的程序。 [Azure 移轉指南](./azure-migration-guide/index.md)是一系列簡短的文章，會概述第一次移轉波浪期間所需的常見工具和方法。
+上述步驟和後續位於「遷移」方法中的指引，將有助於開發技能以利每個移轉短期衝刺內的流程。 [Azure 移轉指南](./azure-migration-guide/index.md)是一系列簡短的文章，會概述第一次移轉波浪期間所需的常見工具和方法。
 
 > [!div class="nextstepaction"]
 > [Azure 移轉指南](./azure-migration-guide/index.md)
