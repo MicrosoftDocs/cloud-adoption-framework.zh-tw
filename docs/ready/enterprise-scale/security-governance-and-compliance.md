@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 01ddb7eafb6182c8cd4dd6eb875d7f203c55b792
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 21062ce8842f74e067e19518abfba4e1c6300813
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128384"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195219"
 ---
 # <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF 企業級的安全性治理與合規性
 
@@ -22,44 +22,42 @@ ms.locfileid: "86128384"
 
 **設計考慮：**
 
-- 適用于 Azure Key Vault 的訂用帳戶和規模限制： Key Vault 具有金鑰和密碼的交易限制。 若要在特定期間節流每個保存庫的交易，請參閱（[Azure 限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)）。
+- 適用于 Azure Key Vault 的訂用帳戶和規模限制： Key Vault 具有金鑰和密碼的交易限制。 若要在某一段時間內針對每個保存庫進行交易節流，請參閱 ([Azure 限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)) 。
 
-- Key Vault 會提供安全性界限，因為金鑰、秘密和憑證的存取權限是在保存庫層級。 Key Vault 存取原則指派會分別授與金鑰、秘密或憑證的許可權，但不支援細微、物件層級的許可權，例如特定金鑰、秘密或憑證（[金鑰管理](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)）。
+- Key Vault 會提供安全性界限，因為金鑰、秘密和憑證的存取權限是在保存庫層級。 Key Vault 存取原則指派會分別授與金鑰、秘密或憑證的許可權，但不支援細微、物件層級的許可權，例如特定金鑰、秘密或憑證 ([金鑰管理](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)) 。
 
-- 您可以適當地隔離應用程式特定和工作負載特定的秘密和共用密碼（[控制存取權](https://docs.microsoft.com/azure/key-vault/general/best-practices)）。
+- 您可以適當地隔離應用程式特定和工作負載特定的秘密和共用密碼， ([控制存取](https://docs.microsoft.com/azure/key-vault/general/best-practices)) 。
 
 <!-- cSpell:ignore FIPS -->
 
-- 高階 Sku 可以優化，其中需要硬體安全性模組保護的金鑰。 基礎硬體安全模組（Hsm）符合 FIPS 140-2 level 2 規範。 適用于 FIPS 140-2 level 3 合規性的受控 Azure 專用 HSM，考慮支援的案例。
+- 高階 Sku 可以優化，其中需要硬體安全性模組保護的金鑰。 基礎硬體安全模組 (Hsm) 與 FIPS 140-2 level 2 相容。 適用于 FIPS 140-2 level 3 合規性的受控 Azure 專用 HSM，考慮支援的案例。
 
 - 金鑰輪替和密碼到期。
 
-  - 使用 Key Vault 的憑證採購和簽署（[關於憑證](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates)）
+  - 憑證採購和簽署使用 Key Vault ([關於憑證](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates)) 
   - 警示/通知和自動化憑證更新
 
 - 金鑰、憑證和秘密的嚴重損壞修復需求。
 
-  Key Vault 服務複寫和容錯移轉功能：（[可用性和冗余](https://docs.microsoft.com/azure/key-vault/general/disaster-recovery-guidance)）。
+  Key Vault 服務複寫和容錯移轉功能： ([可用性和冗余](https://docs.microsoft.com/azure/key-vault/general/disaster-recovery-guidance)) 。
 
 - 監視金鑰、憑證和秘密使用方式。
 
-  使用金鑰保存庫或 Azure 監視器 Log Analytics 工作區來偵測未經授權的存取：（[監視和警示](https://docs.microsoft.com/azure/key-vault/general/alert)）
+  使用金鑰保存庫或 Azure 監視器 Log Analytics 工作區來偵測未經授權的存取： ([監視和警示](https://docs.microsoft.com/azure/key-vault/general/alert)) 
 
-- 委派 Key Vault 具現化和特殊許可權存取：（[安全存取](https://docs.microsoft.com/azure/key-vault/general/secure-your-key-vault)）
+- 委派 Key Vault 具現化和特殊許可權存取： ([安全存取](https://docs.microsoft.com/azure/key-vault/general/secure-your-key-vault)) 
 
-- 針對原生加密機制（例如 Azure 儲存體加密（SSE））使用客戶管理金鑰的需求：[客戶管理的金鑰](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal)）
-
-- 虛擬機器（Vm）的整磁片加密。
-
-- 資料傳輸中加密。
-
-- 待用資料加密。
+- 使用客戶管理的金鑰來進行原生加密機制的需求，例如 Azure 儲存體加密 (SSE) ：
+  - [客戶管理的金鑰](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal)。
+  - 虛擬機器 (Vm) 的整磁片加密。
+  - 資料傳輸中加密。
+  - 待用資料加密。
 
 **設計建議：**
 
-- 使用同盟 Key Vault 模型來避免交易規模限制。
+- 使用同盟 Azure Key Vault 模型來避免交易規模限制。
 
-- 布建 Key Vault 已啟用虛刪除和清除原則，以允許已刪除物件的保留保護。
+- 布建 Azure Key Vault 已啟用虛刪除和清除原則，以允許已刪除物件的保留保護。
 
 - 藉由限制授權將金鑰、秘密和憑證永久刪除至特定的自訂 Azure Active Directory 角色，以遵循最低許可權模型。
 
@@ -93,9 +91,9 @@ ms.locfileid: "86128384"
 
 - 合規性報告和審核以確保持續相容性
 
-- Azure 原則有限制，例如任何指定範圍的定義限制：（[原則限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)）
+- Azure 原則有限制，例如任何指定範圍的定義限制： ([原則限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)) 
 
-- 法規合規性政策，例如醫療保險流通與責任法案、支付卡產業（PCI）、資料安全性標準、服務組織控制（SOC）信任服務主體，以及準則。
+- 法規合規性政策（例如醫療保險流通與責任法案、支付卡產業 (PCI) 、資料安全性標準、服務組織控制 (SOC) 信任服務主體，以及準則。
 
 **設計建議：**
 
@@ -121,9 +119,9 @@ ms.locfileid: "86128384"
 
 **設計考慮：**
 
-- 審核資料的資料保留期間;Azure AD 報表（premium）有30天的保留期
+- 審核資料的資料保留期間; (premium) 的 Azure AD 報表有30天的保留期
 
-- 記錄的長期封存，例如 Azure 活動記錄、VM 記錄檔和平臺即服務（PaaS）記錄
+- 長期封存記錄（例如 Azure 活動記錄、VM 記錄和平臺即服務） (PaaS) 記錄檔
 
 - 透過 Azure 來賓內部 VM 原則進行基準安全性設定
 
@@ -143,7 +141,7 @@ ms.locfileid: "86128384"
 
 - 將 Azure 活動記錄匯出至 Azure 監視器記錄以進行長期資料保留，並匯出至超過兩年的長期儲存 Azure 儲存體（如有需要）
 
-- 使用 Azure 原則確保合規性，為所有訂用帳戶啟用資訊安全中心（標準 SKU）
+- 為所有訂用帳戶啟用資訊安全中心 (標準 SKU) ，並使用 Azure 原則確保合規性
 
 - 透過 Azure 監視器記錄和 Azure 資訊安全中心監視基底 OS 修補漂移
 
@@ -173,9 +171,9 @@ ms.locfileid: "86128384"
 
 - 每個必要服務的共同檢查應該在您的基礎需求內容中進行。 如果您想要攜帶自己的金鑰，則可能不會在所有被視為的服務中受到支援。 必須實行相關的緩和措施，這樣不一致就不會妨礙所需的結果。 選擇適當的區域配對和損毀修復區域，以將延遲降至最低。
 
-- 開發安全性允許清單計畫，以評估服務的安全性設定、監視、警示，以及如何將其與現有的系統整合。
+- 開發安全性允許清單的計畫，以評估服務的安全性設定、監視、警示，以及如何將其與現有的系統整合。
 
-- 在允許清單之前，請先判斷 Azure 服務的事件回應計畫。
+- 在允許之前，請先判斷 Azure 服務的事件回應計畫。
 
 - 使用 Azure AD 報告功能來產生存取控制審查報告。
 
@@ -194,7 +192,7 @@ ms.locfileid: "86128384"
 |                              |                                                                       | Azure 服務可以直接與服務端點互動嗎？                                                                              |
 |                              |                                                                       | 它是否支援私人連結端點？                                                                                                           |
 |                              |                                                                       | 它可以部署在虛擬網路內嗎？                                                                                                            |
-|                              | 預防資料外洩                                          | PaaS 服務在 ExpressRoute Microsoft 對等互連中有個別的邊界閘道通訊協定群體嗎？ （換句話說，er 是否會公開服務的路由篩選？） |
+|                              | 預防資料外洩                                          | PaaS 服務在 ExpressRoute Microsoft 對等互連中有個別的邊界閘道通訊協定群體嗎？  (換句話說，er 是否會公開服務的路由篩選？ )  |
 |                              |                                                                       | 服務是否支援私人連結端點？                                                                                                       |
 |                              | 針對管理和資料平面作業強制執行網路流量流程 | 是否可以檢查輸入/離開服務的流量？ 是否可以使用使用者定義的路由來強制 tunnelled 流量？                                    |
 |                              |                                                                       | 管理作業會使用 Azure 共用公用 IP 範圍嗎？                                                                                 |
@@ -202,20 +200,20 @@ ms.locfileid: "86128384"
 |                              | 待用資料加密                                               | 預設會套用加密嗎？                                                                                                            |
 |                              |                                                                       | 可以停用加密嗎？                                                                                                                  |
 |                              |                                                                       | 是否使用 Microsoft 管理的金鑰或客戶管理的金鑰來執行加密？                                                   |
-|                              | 傳輸中的資料加密                                            | 服務的流量是以通訊協定層級加密（安全通訊端層/傳輸層安全性）嗎？                                                                           |
+|                              | 傳輸中的資料加密                                            | 服務的流量是以通訊協定層級加密， (安全通訊端層/傳輸層安全性) 嗎？                                                                           |
 |                              |                                                                       | 是否有任何 HTTP 端點，而且是否可以停用？                                                                                        |
 |                              |                                                                       | 基礎服務通訊是否也會加密？                                                                                          |
-|                              |                                                                       | 是使用 Microsoft 管理的金鑰或客戶管理的金鑰來執行加密嗎？ （是否支援自備加密？）                                                                               |
+|                              |                                                                       | 是使用 Microsoft 管理的金鑰或客戶管理的金鑰來執行加密嗎？  (支援自備加密嗎？ )                                                                                |
 |                              | 軟體部署                                                   | 可以將應用程式軟體或協力廠商產品部署至服務嗎？                                                                 |
 |                              |                                                                       | 如何執行及管理軟體部署？                                                                                            |
 |                              |                                                                       | 是否可以強制執行原則來控制來源或程式碼完整性？                                                                                   |
 |                              |                                                                       | 如果軟體可部署，是否可以使用反惡意程式碼、弱點管理和安全性監視工具？                                  |
-|                              |                                                                       | 服務原本就提供這類功能嗎？ （例如，AKS）                                                                              |
-| 身分識別和存取管理 | 驗證和存取控制                                       | 所有控制平面作業都受 Azure AD 控管嗎？ （換句話說，是否有像是 Kubernetes 的嵌套控制平面？）                             |
+|                              |                                                                       | 服務原本就提供這類功能嗎？  (例如 AKS)                                                                               |
+| 身分識別和存取管理 | 驗證和存取控制                                       | 所有控制平面作業都受 Azure AD 控管嗎？  (換言之，是否有像是 Kubernetes 的嵌套控制平面？ )                              |
 |                              |                                                                       | 有哪些方法可提供資料平面的存取權？                                                                                      |
 |                              |                                                                       | 資料平面是否與 Azure AD 整合？                                                                                                      |
-|                              |                                                                       | Azure 至 Azure （服務對服務）驗證是否使用 MSI/服務主體？                                                         |
-|                              |                                                                       | Azure 對 IaaS （服務對虛擬網路）的驗證是否透過 Azure AD？                                                                                   |
+|                              |                                                                       | Azure 對 Azure (服務) 驗證是否使用 MSI/服務主體？                                                         |
+|                              |                                                                       | Azure 對 IaaS (服務對虛擬網路) 透過 Azure AD 進行驗證嗎？                                                                                   |
 |                              |                                                                       | 如何管理任何適用的金鑰/SAS？                                                                                                     |
 |                              |                                                                       | 如何撤銷存取權？                                                                                                                   |
 |                              | 責任隔離                                                 | 服務是否會在 Azure AD 內區分控制平面和資料平面作業？                                                                |
@@ -239,12 +237,12 @@ ms.locfileid: "86128384"
 |                              |                                                                       | 水準調整的單位是什麼？                                                                                                        |
 |                              | 修補和更新管理                                             | 服務是否需要修補，或服務是否已將它抽象化？                                                                        |
 |                              |                                                                       | 套用修補程式的頻率為何，而且可以自動化？                                                                                |
-|                              | 稽核                                                                 | 是否已捕捉到嵌套的控制平面作業（例如，AKS 或 Azure Databricks）？                                                                      |
+|                              | 稽核                                                                 |  (（例如 AKS 或 Azure Databricks) ）所捕捉的嵌套控制平面作業為何？                                                                      |
 |                              |                                                                       | 是否已記錄重要資料平面活動？                                                                                                      |
 |                              | 設定管理                                              | 它是否支援標記並提供 `put` 所有資源的架構？                                                                             |
 | Azure 服務合規性     | 服務證明、認證和外部審核                | 服務 PCI/ISO/SOC 相容嗎？                                                                                                        |
 |                              | 服務可用性                                                  | 服務私人預覽/公開預覽/ga？                                                                                            |
 |                              |                                                                       | 在哪些區域中，服務可供使用？                                                                                                    |
-|                              |                                                                       | 服務的部署範圍為何？ （換句話說，它是區域或全域服務嗎？）                                                      |
-|                              | 服務等級協定（Sla）                                              | 服務可用性的 SLA 為何？                                                                                                    |
+|                              |                                                                       | 服務的部署範圍為何？ 換句話說， (是地區或全域服務嗎？ )                                                       |
+|                              | 服務等級協定 (Sla)                                               | 服務可用性的 SLA 為何？                                                                                                    |
 |                              |                                                                       | 如果適用的話，效能的 SLA 為何？                                                                                              |

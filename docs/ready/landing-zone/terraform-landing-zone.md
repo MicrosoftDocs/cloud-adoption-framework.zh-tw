@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b7c73bda075ce0e9826fdf4738c203ff68709be8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 36a73de789219591719df284ffaed5ba2c73ae1e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075002"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195185"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
@@ -43,7 +43,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 元件 | 責任 |
 |---|---|
 | 資源群組 | 基礎所需的核心資源群組 |
-| 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
+| 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中樞 |
 | 診斷記錄 | 保留特定天數的所有作業記錄： <li> 儲存體帳戶 <li> 事件中樞 |
 | Log Analytics | 儲存作業記錄。 針對深度應用程式的最佳做法審查部署常見的解決方案： <li> NetworkMonitoring <li> AdAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示 |
@@ -80,7 +80,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 管理群組      | N/A-針對單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [組織訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
 | 資料                   | N/A                                                                                                                                                                                                                                                                      | 在 Azure 和[azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 | 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
-| 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
+| 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱 (例如儲存體帳戶) 使用此首碼的資源。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | 成本管理        | N/A                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
 | 計算                | N/A                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
 

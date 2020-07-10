@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c387b6e190e08259d8270f39a0f5626838394dfa
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6a0090cee1237753748d1351109a0826168ed5e3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755487"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194862"
 ---
 # <a name="function-of-cloud-data-security"></a>雲端資料安全性的功能
 
@@ -23,8 +23,8 @@ ms.locfileid: "83755487"
 資料安全性策略主要是由下列各項所塑造：
 
 - **資料蔓延：** 系統會產生敏感性資料，並將其儲存在幾乎無限制的各種裝置和雲端服務上，讓人們創造性地共同作業。
-- **新模型：** 雲端啟用「金鑰的電話」的新模型，以補充並取代「在外攔截」的傳統資料遺失保護（DLP）模型。
-- 一般資料保護規定（GDPR）之類的**法規**需要組織密切追蹤私用資料，以及應用程式使用它的方式。
+- **新模型：** 雲端可讓「金鑰的電話」的新模型補充並取代傳統資料遺失保護 (DLP) 模型，這是「在外攔截」
+- 一般資料保護法規之類的**法規** (GDPR) 要求組織密切追蹤私用資料，以及應用程式使用它的方式。
 
 ## <a name="team-composition-and-key-relationships"></a>小組撰寫和按鍵關聯性
 
@@ -42,4 +42,4 @@ ms.locfileid: "83755487"
 
 ## <a name="next-steps"></a>後續步驟
 
-檢查[基礎結構和端點安全性](./cloud-security-infrastructure-endpoint.md)的功能（coe）。
+檢查[雲端基礎結構和端點安全性](./cloud-security-infrastructure-endpoint.md)的功能。

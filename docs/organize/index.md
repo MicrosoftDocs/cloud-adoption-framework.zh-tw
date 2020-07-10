@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ce029948d6d44ce8193b0d4dfb81fa61e40b7c9e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076857"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194216"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
 若沒有妥善組織的人員，就不會有雲端採用。 成功的雲端採用是透過技能熟練的人員執行適當類型的工作、與明確定義的商務目標進行整合，以及在良好管理的環境中交互運作的結果。 若要提供有效的雲端作業模式，建立適當的員工組織結構非常重要。 本文概述了建立和維護適當組織結構的方法，其有四個步驟。
 
 下列練習將協助引導建立登陸區域以支援雲端採用的程序。
-
-<!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|

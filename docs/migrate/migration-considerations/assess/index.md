@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 027dd52f4a7cbb4535eca5a9b338296864f2bc25
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217008"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194896"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>在移轉之前評估工作負載並驗證假設
 
@@ -20,13 +20,13 @@ ms.locfileid: "83217008"
 
 因此，在將工作負載移轉至雲端之前，必須先評量與該工作負載相關的個別資產，以確認其是否適合進行移轉。 在此評量期間，您的雲端採用小組應該評估技術上的相容性、所需的架構、預期的效能/大小及相依性，以確保能有效地將已移轉的工作負載部署至雲端。
 
-在反覆項目內所會發生的四個漸進式活動中，「評量」  程序是第一個程序。 如在必要條件文章中針對[技術複雜度和變更管理](../prerequisites/technical-complexity.md)所討論的內容所述，應該預先對此活動的執行方式做出決定。 特別是，雲端採用小組是否會在和實際移轉作業相同的短期衝刺期間完成這些評量？ 或者，是否會在個別的反覆項目期間使用波或原廠模型來完成評量？ 如果小組的所有成員皆無法解答此基本程序問題，則應重新造訪[必要條件](../prerequisites/index.md)一節。
+在反覆項目內所會發生的四個漸進式活動中，「評量」程序是第一個程序。 如在必要條件文章中針對[技術複雜度和變更管理](../prerequisites/technical-complexity.md)所討論的內容所述，應該預先對此活動的執行方式做出決定。 特別是，雲端採用小組是否會在和實際移轉作業相同的短期衝刺期間完成這些評量？ 或者，是否會在個別的反覆項目期間使用波或原廠模型來完成評量？ 如果小組的所有成員皆無法解答此基本程序問題，則應重新造訪[必要條件](../prerequisites/index.md)一節。
 
 ## <a name="objective"></a>目標
 
 在移轉之前評量移轉候選項目，並評估工作負載、相關資產及相依性。
 
-## <a name="definition-of-_done_"></a>對「完成」  的定義
+## <a name="definition-of-done"></a>對完成的定義
 
 當單一移轉候選項目的下列工作皆已完成時，此程序便能完成：
 

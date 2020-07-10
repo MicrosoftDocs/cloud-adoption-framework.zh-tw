@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: c118a09f2d233ebc2123c3b66128291bf06e14a3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815339"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194437"
 ---
 # <a name="deploy-workloads"></a>部署工作負載
 
@@ -22,7 +22,7 @@ ms.locfileid: "83815339"
 
 移轉的目標是將單一工作負載移轉至雲端。
 
-## <a name="definition-of-_done_"></a>對「完成」的定義
+## <a name="definition-of-done"></a>對完成的定義
 
 當工作負載已在雲端中預備完畢且準備好進行測試 (包括工作負載所需的所有相依資產皆已可運作) 時，移轉階段便已完成。 在最佳化程序期間，工作負載會針對生產環境用途進行準備。
 

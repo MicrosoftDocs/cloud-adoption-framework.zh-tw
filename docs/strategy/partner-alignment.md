@@ -7,14 +7,14 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: da60b9a2844c612f5c712f23cacabd30fbc06655
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401327"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194947"
 ---
-<!-- cSpell:ignore CSPs MSPs -->
+<!-- cSpell:ignore MSPs -->
 
 # <a name="strategy-for-partner-alignment"></a>合作夥伴對齊策略
 
@@ -52,16 +52,16 @@ ms.locfileid: "83401327"
 
 您不只是在雲端旅程。 有數個選項可支援您的小組在整個雲端採用旅程。
 
-- **Azure 解決方案提供者（合作夥伴）：** 與 Azure 專家受控服務提供者（MSP）和其他 Microsoft 合作夥伴（其服務供應專案符合雲端採用架構方法）連線。
+- ** (合作夥伴) 的 Azure 解決方案提供者：** 與 Azure 專家受控服務提供者 (MSP) 和其他 Microsoft 合作夥伴（其服務供應專案符合雲端採用架構方法）連線。
 - **FastTrack for Azure：** 使用 Microsoft FastTrack for Azure 程式來加速遷移。
-- **Azure 遷移計畫（AMP）：** AMP 程式會對應合作夥伴和 Microsoft 員工的組合，以加速和支援您的遷移。
+- **Azure 遷移計畫 (AMP) ：** AMP 程式會對應合作夥伴和 Microsoft 員工的組合，以加速和支援您的遷移。
 
 ### <a name="azure-solution-providers"></a>Azure 解決方案提供者
 
 Microsoft 認證的解決方案提供者專門提供現代化的客戶解決方案，以全球各地的 Microsoft 技術為基礎。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
-**[尋找雲端解決方案合作夥伴](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
+**[尋找 (CSP) 的雲端解決方案提供者](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
 
-Azure 專家受控服務提供者（MSP）經過協力廠商審核，以驗證較高層級的功能，透過認證的人員 headcounts、客戶參考、大規模的 Azure 年度耗用量和其他條件來示範。
+Azure 專家受控服務提供者 (MSP) 已經通過協力廠商 audit 來驗證更高層級的功能，透過認證的人員 headcounts、客戶參考、大規模的 Azure 年度耗用量和其他準則來示範。
 **[尋找受控服務合作夥伴](https://www.microsoft.com/solution-providers/search?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure 受控服務合作夥伴 (MSP) 可藉由引導雲端旅程的所有層面來協助企業轉移至 Azure。 從諮詢、移轉和營運管理，雲端 MSP 會向客戶展示採用雲端所能帶來的所有好處。 它們也可做為一站的共同支援、布建和計費體驗，全都具有彈性的隨用隨付商務模型。
 
 在開發雲端採用策略的同時，雲端策略小組應開始識別可與商務目標傳遞合作的解決方案提供者。
@@ -72,9 +72,9 @@ Azure 專家受控服務提供者（MSP）經過協力廠商審核，以驗證�
 
 在 FastTrack for Azure 的典型互動期間，Microsoft 會協助您確定企業願景，以成功規劃及開發 Azure 解決方案。 該小組會評估架構需求，並提供指導方針、設計準則、工具與資源，以協助您建置、部署及管理 Azure 解決方案。 該小組可依要求匹配經驗豐富而可提供部署服務的合作夥伴，並定期聯繫以確保部署進展順利，並協助排除阻礙。
 
-### <a name="azure-migration-program-amp"></a>Azure 遷移計畫（AMP）
+### <a name="azure-migration-program-amp"></a>Azure 遷移計畫 (AMP) 
 
-[Azure 遷移計畫（AMP）](https://azure.microsoft.com/migration/migration-program)提供了技術技能建立、逐步指引、免費遷移工具，以及可降低遷移成本的潛在優惠。
+[Azure 遷移計畫 (AMP) ](https://azure.microsoft.com/migration/migration-program)提供各種技術技能建立、逐步指引、免費遷移工具，以及可能的供應專案，以降低遷移成本。
 此程式會利用 FastTrack for Azure 和 Azure 解決方案提供者來改善遷移期間的客戶成功。
 
 ### <a name="azure-support"></a>Azure 支援

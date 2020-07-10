@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d298be02fcb27b0f7165d36c045455decc3a8908
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 48cbb33ed40286f1201f85b67d75809e487b83d4
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788127"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194998"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
@@ -48,6 +48,8 @@ ms.locfileid: "84788127"
 如今，快速變化的商業環境將時間視為重要的環節。 回應和促進市場快速變更的能力，是業務靈活度的基本衡量標準。
 
 檢視[靈活度成果](./agility-outcomes.md)範例。
+
+<!-- docsTest:ignore "global reach" -->
 
 ### <a name="reach-outcomes"></a>觸達成果
 

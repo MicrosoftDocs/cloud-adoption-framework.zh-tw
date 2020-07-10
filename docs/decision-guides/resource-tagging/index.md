@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: dac89280547cf219ad604d7c6dce609979100520
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9d888a8323506d0c7150f2d948f0d5b4c6de340f
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075865"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190625"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -77,11 +77,11 @@ ms.locfileid: "85075865"
 
 | 標記類型 | 範例 | 描述 |
 |-----|-----|-----|
-| 函數 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。 |
-| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 可依據資源使用方式和對其套用的原則將資源分類。 |
-| 會計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 可允許針對帳單用途將資源與組織內的特定群組建立關聯。 |
-| 合作關係 | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受其影響的相關資訊。 |
-| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援。 |
+| 函數 | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。 |
+| 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 可依據資源使用方式和對其套用的原則將資源分類。 |
+| 會計 | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | 可允許針對帳單用途將資源與組織內的特定群組建立關聯。 |
+| 合作關係 | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受其影響的相關資訊。 |
+| 目的 | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援。 |
 
 <!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->

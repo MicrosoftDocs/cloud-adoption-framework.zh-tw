@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 712cbc1338f1dce6fce2d724383233f84477baf8
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 68f97138d3b2d6416b5718cbc611135bf9870335
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799971"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195168"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -38,16 +38,16 @@ ms.locfileid: "84799971"
 
 ![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
 
-如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則（ `VNet hub` 在圖中標示為），或是以 Azure 虛擬 WAN （ `Virtual WAN` 在圖表中標示為）的設計，適用于大規模分支對分支和分支對 Azure 的通訊。
+如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源，以及集中式安全性原則 (在 `VNet hub` 圖表) 中標示為，或以 Azure 虛擬 WAN 為基礎的設計 (在圖表中標示為， `Virtual WAN`) 適用于大規模分支對分支和分支對 Azure 的通訊。
 
 中樞是中央網路區域，可控制和檢查區域之間的輸入或輸出流量：網際網路、內部部署和輪輻。 中樞和輪輻拓撲可讓您的 IT 部門以有效的方式在中央位置強制執行安全性原則。 此外也可降低設定錯誤和暴露的可能性。
 
 中樞通常包含輪輻所使用的一般服務元件。 以下是常用中央服務的範例：
 
-- 當第三方從不受信任的網路取得存取權時，需要 Windows Server Active Directory 基礎結構來進行使用者驗證，如此他們才能夠存取輪輻中的工作負載。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
+- Windows server Active Directory 基礎結構，這是協力廠商在存取輪輻中的工作負載之前，從不受信任的網路取得存取權所需的使用者驗證。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
 - DNS 服務，用來對輪輻中的工作負載進行命名解析，以存取內部部署和網際網路上的資源 (如果未使用 [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview))。
 - 公開金鑰基礎結構 (PKI)，用以實作工作負載的單一登入。
-- 輪輻網路區域與網際網路之間 tcp 和 UDP 流量的流量控制。
+- 輪輻網路區域與網際網路之間的 TCP 和 UDP 流量的流量控制。
 - 輪輻與內部部署之間的流量控制。
 - 兩個輪輻之間的流量控制 (如有需要)。
 

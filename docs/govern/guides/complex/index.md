@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bc5437d22db979ccb8881c4ac8a2b60f104536f3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: c3c22c3ad69b7c08a2b2c3da2fbec22957e44915
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786532"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191394"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -54,7 +54,7 @@ ms.locfileid: "84786532"
 
 [!INCLUDE [governance-of-resources](../../../../includes/governance-of-resources.md)]
 
-<!-- See comments for suggestion to possibly add here -->
+<!-- TODO: See comments for suggestion to possibly add here -->
 
 ## <a name="incremental-governance-improvements"></a>累加式治理改進
 

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 41393cab0775dedd634be966a5677d6839cb1c14
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 774d910786a5458244298228669126410a78afd8
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994218"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194964"
 ---
+<!-- docsTest:ignore "global reach" -->
+
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
 
 如[商務結果](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于常見的商務措施：觸及。 瞭解公司的全球化策略將有助於更清楚地表達商業轉型的目標商業成果。

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 36f473f768d499619f2749491bbc7753696cba79
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: f1dfc50e5512edc0e219dcdb86bae52d0626a038
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994115"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195066"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -32,12 +32,12 @@ ms.locfileid: "84994115"
 
 回答下列有關工作負載的問題，以協助您根據 Azure 資料庫服務決策樹來做出決策：
 
-- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，平臺即服務（PaaS）資料庫服務可能會降低您的管理和作業成本。
+- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，則平臺即服務 (PaaS) 資料庫服務可能會降低您的管理和作業成本。
 - **您的工作負載會使用關聯式資料庫技術嗎？** 若是如此，您打算使用哪一種技術？ Azure 提供的受控 PaaS 資料庫功能適用於[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)、[MySQL](https://docs.microsoft.com/azure/mysql/overview)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) 和 [MariaDB](https://docs.microsoft.com/azure/mariadb/overview)。
-- **您的工作負載是否會使用 SQL Server？** 在 Azure 中，您可以在 [Azure 虛擬機器上的 IaaS 型 SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server) 中或 [PaaS 型的 Azure SQL Database 託管服務](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)上執行工作負載。 選擇要使用哪個選項的主要考量是，您是否想管理資料庫、套用修補程式及進行備份，或是您要將這些作業委派給 Azure。 在某些情況下，因為相容性問題，您可能需要使用 IaaS 主控的 SQL Server。 若要深入了解如何為您的工作負載選擇正確選項，請參閱[在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)。
+- **您的工作負載是否會使用 SQL Server？** 在 Azure 中，您可以在 [Azure 虛擬機器上的 IaaS 型 SQL Server](https://docs.microsoft.com/azure/azure-sql/virtual-machines) 中或 [PaaS 型的 Azure SQL Database 託管服務](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)上執行工作負載。 選擇要使用哪個選項的主要考量是，您是否想管理資料庫、套用修補程式及進行備份，或是您要將這些作業委派給 Azure。 在某些情況下，因為相容性問題，您可能需要使用 IaaS 主控的 SQL Server。 若要深入了解如何為您的工作負載選擇正確選項，請參閱[在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)。
 - **您的工作負載會使用索引鍵/值資料庫儲存體嗎？** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) 可提供快取效能高的索引鍵/值資料儲存體解決方案，讓您擁有快速且可擴充的應用程式。 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 也提供一般用途的索引鍵/值儲存體功能。
 - **您的工作負載會使用文件或圖形資料嗎？** [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是多模型資料庫服務，可支援各種不同的資料類型和 API。 Azure Cosmos DB 也提供文件和圖形資料庫功能。
-- **您的工作負載是否會使用資料行系列資料？** [Azure HDInsight 中的 Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview)是建置於 apache Hadoop 上。 它支援無架構資料庫中的大量非結構化和半結構化資料，並由資料行系列組織。
+- **您的工作負載是否會使用資料行系列資料？** [Azure HDInsight 中的 Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) 是以 Apache Hadoop 為建置基礎。 它支援無架構資料庫中的大量非結構化和半結構化資料，並由資料行系列組織。
 - **您的工作負載需要高容量的資料分析功能嗎？** 您可以使用 [Azure SQL 資料倉儲](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)來有效儲存及查詢結構化的 PB 規模資料。 針對非結構化的大型資料工作負載，您可以使用[Azure data lake](https://azure.microsoft.com/solutions/data-lake)來儲存及分析 pb 大小的檔案和物件的數兆個。
 - **您的工作負載需要搜尋引擎功能嗎？** 您可以使用[Azure 搜尋](https://docs.microsoft.com/azure/search/search-what-is-azure-search)服務來建立 AI 增強的雲端式搜尋索引，以整合到您的應用程式中。
 - **您的工作負載會使用時間序列資料嗎？** [Azure 時間序列深入](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview)解析是針對儲存、視覺化及查詢大量時間序列資料所建立，例如 IoT 裝置所產生的資料。
@@ -49,17 +49,17 @@ ms.locfileid: "84994115"
 
 下表說明一些常見的使用案例需求，以及用來處理這些需求的建議資料庫服務：
 
-| **案例**                                                                                                                            | **資料服務**                                                                                                                                  |
-|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。                                                     | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)                                                                        |
-| 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)                                               |
-| 我需要完全受控、可調整規模的 MySQL 關聯式資料庫，其內建高可用性和安全性，無需額外費用。           | [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)                                                                       |
-| 我需要完全受控、可調整規模的 PostgreSQL 關聯式資料庫，其內建高可用性和安全性，無需額外費用。      | [適用於 PostgreSQL 的 Azure 資料庫](https://docs.microsoft.com/azure/postgresql/overview)                                                             |
-| 我打算在雲端中託管企業 SQL Server 應用程式，並對伺服器作業系統擁有完整控制權。                                        | [虛擬機器上的 SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
-| 我需要完全受控的彈性資料倉儲，而且每個規模層級都要提供安全性，無需額外費用。                               | [Azure SQL 資料倉儲](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)                               |
-| 我需要能夠支援 Hadoop 叢集或 HDFS 資料的 Data Lake Storage 資源。                                         | [Azure data lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
-| 我的資料需要高輸送量且一致的低延遲存取，以支援快速且可調整的應用程式。                           | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)                                                    |
-| 我需要完全受控、可調整規模的 MariaDB 關聯式資料庫，其內建高可用性和安全性，無需額外費用。         | [適用於 MariaDB 的 Azure 資料庫](https://docs.microsoft.com/azure/mariadb/overview)                                                                   |
+| 案例  | 資料服務 |
+|---|---|
+| 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。 | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
+| 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
+| 我需要完全受控、可調整規模的 MySQL 關聯式資料庫，其內建高可用性和安全性，無需額外費用。 | [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview) |
+| 我需要完全受控、可調整規模的 PostgreSQL 關聯式資料庫，其內建高可用性和安全性，無需額外費用。 | [適用於 PostgreSQL 的 Azure 資料庫](https://docs.microsoft.com/azure/postgresql/overview) |
+| 我打算在雲端中託管企業 SQL Server 應用程式，並對伺服器作業系統擁有完整控制權。 | [虛擬機器上的 SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| 我需要完全受控的彈性資料倉儲，而且每個規模層級都要提供安全性，無需額外費用。 | [Azure SQL 資料倉儲](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
+| 我需要能夠支援 Hadoop 叢集或 HDFS 資料的 Data Lake Storage 資源。 | [Azure data lake](https://azure.microsoft.com/solutions/data-lake) |
+| 我的資料需要高輸送量且一致的低延遲存取，以支援快速且可調整的應用程式。 | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
+| 我需要完全受控、可調整規模的 MariaDB 關聯式資料庫，其內建高可用性和安全性，無需額外費用。 | [適用於 MariaDB 的 Azure 資料庫](https://docs.microsoft.com/azure/mariadb/overview) |
 
 ## <a name="regional-availability"></a>區域可用性
 

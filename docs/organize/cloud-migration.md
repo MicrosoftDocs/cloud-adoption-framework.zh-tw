@@ -7,20 +7,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eedd956934022db81fbc8380db27a3831ab1b197
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2dcb88103fcbfe28516802570aba8197f4b510c6
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077202"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194845"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 
 雲端遷移小組是技術執行小組或專案小組的現代化日。 但是雲端的本質可能需要更流暢的小組結構。 某些遷移小組僅著重于雲端遷移，而其他則著重于利用雲端技術的創新。 其中一些包括完成大型採用工作所需的廣泛技術專業知識，例如完整的資料中心遷移，其他人則有更緊密的技術焦點，而且可能會在專案之間移動以達成特定目標，例如，協助將 SQL Vm 轉換成 SQL PaaS 實例的資料平臺專家小組。
 
-無論雲端遷移小組的類型或數目為何，這些小組通常會為 IT、商務分析或實施合作夥伴提供主題專長。
+無論雲端遷移小組的類型或數目為何，這些小組通常會為 IT、商務分析或實施合作夥伴提供主題相關的專業知識。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 - [建立 azure 帳戶](https://docs.microsoft.com/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。
 - [Azure 入口網站](https://docs.microsoft.com/learn/modules/tour-azure-portal)：流覽 Azure 入口網站功能和服務，並自訂入口網站。
@@ -81,6 +81,6 @@ ms.locfileid: "85077202"
 
 採用很棒，但 ungoverned 採用可能會產生非預期的結果。 與[雲端治理小組](./cloud-governance.md)保持一致，以加速採用和最佳作法，同時降低業務和技術風險。
 
-這兩個小組會在雲端採用的工作之間建立平衡，但會被視為 MVP，因為它可能不是可持續的。 每個小組都會戴上許多的帽子，如責任、參與、 [*諮詢、通知*（RACI）圖表](../organize/raci-alignment.md)中所述。
+這兩個小組會在雲端採用的工作之間建立平衡，但會被視為 MVP，因為它可能不是可持續的。 每個小組都會戴上許多的帽子，如負責、參與、 [*諮詢、* (RACI) 的圖表](../organize/raci-alignment.md)中所述。
 
 深入瞭解[組織反模式：定址接收器和 fiefdoms](../organize/fiefdoms-silos.md)。
