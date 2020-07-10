@@ -1,42 +1,42 @@
 ---
-title: 開始使用企業級登陸區域
-description: 開始使用企業級登陸區域。
+title: 開始使用 CAF 企業級登陸區域
+description: 開始使用適用於 Azure 的 Microsoft 雲端採用架構的企業級登陸區域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a2d4b3898688823e3e249cd3930272d1433453d8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cdd5e1bcee951d2437183a8514a944c92c075c93
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076845"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128317"
 ---
-# <a name="start-with-enterprise-scale-landing-zones"></a>開始使用企業級登陸區域
+# <a name="start-with-caf-enterprise-scale-landing-zones"></a>開始使用 CAF 企業級登陸區域
 
-企業級架構代表客戶 Azure 環境的策略性設計路徑和目標技術狀態。 其會隨著 Azure 平台持續發展，最終由組織為了定義其 Azure 旅程所必須做出的各種設計決策來定義。
+企業級架構代表您 Azure 環境的策略性設計路徑和目標技術狀態。 其會隨著 Azure 平台持續發展，最終由組織為了定義其 Azure 旅程所必須做出的各種設計決策來定義。
 
-並非所有企業都會以相同的方式採用 Azure，所以企業級架構可能會因客戶而異。 最終，企業級架構的技術考量和設計建議，可能會根據客戶的案例而導致不同的取捨。 預計會有一些變化，但如果遵循核心建議，則所產生的目標架構會將客戶放在可持續調整的路徑上。
+並非所有企業都會以相同的方式採用 Azure，所以企業級架構可能會因組織而異。 最終，企業級架構的技術考量和設計建議，可能會根據您組織的案例而導致不同的取捨。 預計會有一些變化，但如果遵循核心建議，則所產生的目標架構會將您組織放在可持續調整的路徑上。
 
 ## <a name="prescriptive-guidance"></a>規範性指引
 
-企業級架構會提供與 Azure 最佳做法搭配的規範性指引，並且對客戶的 Azure 環境遵循重要設計區域的設計原則。
+企業級架構會提供與 Azure 最佳做法搭配的規範性指引，並且對組織的 Azure 環境遵循重要設計區域的設計原則。
 
 ## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定條件：我應該從企業級架構著手嗎？
 
-企業級架構特意設計成模組化，可讓客戶從支援其應用程式組合的基礎登陸區域著手，而不管應用程式是否正在遷移或是新開發並部署至 Azure。 不論調整點為何，此架構都可以隨著客戶的商務需求調整。
+企業級架構特意設計成模組化，可讓您從支援應用程式組合的基礎登陸區域著手，而不管應用程式是否正在遷移或是新開發並部署至 Azure。 不論調整點為何，此架構都可以隨著您的商務需求調整。
 
-## <a name="start-with-an-enterprise-scale-landing-zone"></a>開始使用企業級登陸區域
+## <a name="start-with-a-caf-enterprise-scale-landing-zone"></a>開始使用 CAF 企業級登陸區域
 
-用於建構登陸區域的企業級方法包含四組可支援雲端小組的資產：
+用於建構登陸區域的企業級方法包含三組可支援雲端小組的資產：
 
 - [設計指導方針](./design-guidelines.md)：驅動 CAF 企業級登陸區域設計的重要決策指南。
 - [架構](./architecture.md)：概念性參考架構，可示範設計區域和最佳做法。
 - [實作](./implementation.md)：此架構的 Azure Resource Manager 範本，用於加速採用。
 
-<!-- TODO: Reinstate once template.md is ready. 
+<!-- TODO: Reinstate once template.md is ready.
 - [Template](./template.md): A documentation template to quickly capture decisions and any deviation from the suggested architecture or implementation.
 -->
 
@@ -51,6 +51,3 @@ ms.locfileid: "85076845"
 ## <a name="next-steps"></a>後續步驟
 
 [實作 CAF 企業級登陸區域](./implementation.md)
-
-> [!div class="nextstepaction"]
-> [實作 CAF 企業級登陸區域](./implementation.md)
