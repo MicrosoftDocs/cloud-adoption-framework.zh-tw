@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cee35d0166c8ffa4cd1401c1ccff2ff4bef13ba0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219558"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193247"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如本指引的[總覽](./index.md)中所討論，Azure 伺服器管理服務的套件涵蓋下列領域：
 
-- 遷移
+- 移轉
 - 安全
 - 保護
 - 監視
@@ -27,7 +27,7 @@ ms.locfileid: "83219558"
 
 下列各節將簡短說明這些管理區域，並提供有關支援它們的主要 Azure 服務之詳細內容的連結。
 
-## <a name="migrate"></a>遷移
+## <a name="migrate"></a>移轉
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估是否適合進行遷移。 Azure Migrate 完成評估之後，您可以使用[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將您的內部部署機器遷移至 azure。
 
@@ -37,11 +37,11 @@ ms.locfileid: "83219558"
 
 ## <a name="protect"></a>保護
 
-若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性和嚴重損壞修復（BCDR）計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
+若要保護您的資料，您必須規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題會在線上涵蓋，因此我們將著重于建立商務持續性和嚴重損壞修復 (BCDR) 計畫。 我們將包含說明文件的參考，其中會詳細說明如何執行和部署這種類型的計畫。
 
 當您建立資料保護策略時，請考慮將您的工作負載應用程式細分成不同的層級。 這種方法會有説明，因為每一層通常都需要自己獨特的保護計劃。 若要深入瞭解如何設計應用程式以進行復原，請參閱[為 Azure 設計復原應用程式](https://docs.microsoft.com/azure/architecture/resiliency)。
 
-最基本的資料保護是備份。 若要在伺服器遺失時加速復原程式，請不要只備份資料，也不是伺服器設定。 「備份」是一種有效的機制，可處理意外的資料刪除和勒索軟體攻擊。 [Azure 備份](https://docs.microsoft.com/azure/backup)可以協助您保護在 Azure 和執行 Windows 或 Linux 的內部部署伺服器上的資料。 如需有關備份可執行之動作和操作指南的詳細資訊，請參閱[Azure 備份檔](https://docs.microsoft.com/azure/backup/backup-overview)。
+最基本的資料保護是備份。 若要在伺服器遺失時加速復原程式，請不要只備份資料，也不是伺服器設定。 「備份」是一種有效的機制，可處理意外的資料刪除和勒索軟體攻擊。 [Azure 備份](https://docs.microsoft.com/azure/backup)可以協助您保護在 Azure 和執行 Windows 或 Linux 的內部部署伺服器上的資料。 如需有關備份可執行之動作和操作指南的詳細資訊，請參閱[Azure 備份服務總覽](https://docs.microsoft.com/azure/backup/backup-overview)。
 
 透過備份修復可能需要很長的時間。 業界標準通常是一天。 如果工作負載需要硬體故障或資料中心中斷的商務持續性，請考慮使用資料複寫。 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)提供 vm 的連續複寫，這是一種可提供最少資料遺失的解決方案。 Site Recovery 也支援數種複寫案例，例如複寫：
 
@@ -76,7 +76,7 @@ ms.locfileid: "83219558"
 - [更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)會在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它支援 Windows 和 Linux 作業系統，並追蹤因遺失修補程式而造成的主要 OS 弱點和不符合的問題。
 - [變更追蹤和清查](https://docs.microsoft.com/azure/automation/change-tracking)可讓您深入瞭解在您的環境中執行的軟體，並反白顯示任何已發生的變更。
 - [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)可讓您執行 Python 和 PowerShell 腳本或 runbook，將整個環境中的工作自動化。 當您使用自動化搭配[混合式 Runbook 背景工作角色](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)時，您也可以將 runbook 延伸至您的內部部署資源。
-- [Azure 自動化狀態設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview)可讓您直接從 Azure 推送 PowerShell DESIRED STATE CONFIGURATION （DSC）設定。 DSC 也可讓您監視和保留客體作業系統和工作負載的設定。
+- [Azure 自動化狀態設定](https://docs.microsoft.com/azure/automation/automation-dsc-overview)可讓您直接從 Azure 推送 PowerShell DESIRED STATE CONFIGURATION (DSC) 設定。 DSC 也可讓您監視和保留客體作業系統和工作負載的設定。
 
 ## <a name="govern"></a>治理
 
@@ -106,4 +106,4 @@ ms.locfileid: "83219558"
 - [Azure 檔案同步服務](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Azure 更新管理解決方案是免費的，但與資料內嵌相關的成本很小。 根據經驗法則，每個月的資料內嵌前 5 gb 是免費的。 我們通常會發現每部機器每月大約使用 25 MB。 因此，每個月大約有200部的機器會免費涵蓋。 如需更多伺服器，請將額外的伺服器數目乘以每月 25 MB。 然後，將結果乘以您所需之額外儲存體的儲存體價格。 如需成本的詳細資訊，請參閱[Azure 儲存體總覽定價](https://azure.microsoft.com/pricing/details/storage)。 每一部額外的伺服器通常會對成本產生一些影響。
+> Azure 更新管理解決方案是免費的，但與資料內嵌相關的成本很小。 根據經驗法則，每月資料內嵌的前 5 gb (GB) 是免費的。 我們通常會發現每部機器每月大約使用 25 MB。 因此，每個月大約有200部的機器會免費涵蓋。 如需更多伺服器，請將額外的伺服器數目乘以每月 25 MB。 然後，將結果乘以您所需之額外儲存體的儲存體價格。 如需成本的詳細資訊，請參閱[Azure 儲存體總覽定價](https://azure.microsoft.com/pricing/details/storage)。 每一部額外的伺服器通常會對成本產生一些影響。

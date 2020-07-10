@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6ee0387a0de73af6b26a4a2396582bf790f2ec65
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: b8875b8393499a55004eb37cec78fc3db0370237
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786971"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193825"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>標準企業治理指南：改善資源一致性專業領域
 
@@ -72,7 +72,7 @@ ms.locfileid: "84786971"
 9. 治理工具必須確認與成本、重要性、SLA、應用程式及資料類別相關的標記。 所有值必須符合由治理小組管理的預先定義值。
 10. 治理流程必須包含部署期間和一般週期的稽核，以確保所有資產之間的一致性。
 11. 安全性小組應定期檢閱可能影響雲端部署的趨勢與攻擊，以更新雲端中使用的安全性管理工具。
-12. 在發行到生產環境之前，必須將所有任務關鍵性應用程式和受保護的資料新增至指定的作業監視解決方案。 如果所選取的 IT 作業工具找不到某些資產，則這些資產就無法發行為生產用的資產。 為了讓資產變為可搜尋所做的變更，也必須對相關部署程序執行，如此才能確保在未來的部署中能探索到該資產。
+12. 在發行至生產環境之前，必須將所有任務關鍵性應用程式和受保護的資料新增至指定的作業監視解決方案。 如果所選取的 IT 作業工具找不到某些資產，則這些資產就無法發行為生產用的資產。 為了讓資產變為可搜尋所做的變更，也必須對相關部署程序執行，如此才能確保在未來的部署中能探索到該資產。
 13. 探索到時，營運管理小組會調整資產大小，以確保資產符合效能需求。
 14. 部署工具必須由雲端治理小組核准，以確保能持續治理已部署的資產。
 15. 部署腳本必須在雲端治理小組可存取的中央存放庫中進行維護，以進行定期審查和審核。

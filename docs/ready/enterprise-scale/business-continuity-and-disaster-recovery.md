@@ -7,24 +7,24 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 10b1604dad1c441d02364f8b6cfc2a0221290820
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 5e397ed17e9596933629c3d6375546df1e0d9a31
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128499"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194777"
 ---
 # <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF 企業級的商務持續性和嚴重損壞修復
 
 ## <a name="planning-for-business-continuity-and-disaster-recovery"></a>規劃商務持續性和嚴重損壞修復
 
-捕捉嚴重損壞修復（DR）需求來設計適當的平台層級功能，讓應用程式工作負載能夠取用以符合其特定的復原時間目標（RTO）和復原點目標（RPO）需求。
+ (DR) 需求來捕捉嚴重損壞修復，以設計適當的平台層級功能，讓應用程式工作負載能夠取用以滿足其特定的復原時間目標 (RTO) 和復原點目標 (RPO) 需求。
 
 **設計考慮：**
 
-- 應用程式和資料可用性需求，以及使用主動-主動和主動-被動可用性模式（例如工作負載 RTO 和 RPO 需求）。
+- 應用程式和資料可用性需求，以及使用主動-主動和主動-被動可用性模式 (例如工作負載 RTO 和 RPO 需求) 。
 
-- 平臺即服務（PaaS）服務的商務持續性和 DR，以及原生 DR 和高可用性功能的可用性。
+- 平臺即服務的商務持續性和 DR (PaaS) 服務，以及原生 DR 和高可用性功能的可用性。
 
 - 基於效能考慮，支援多區域部署以進行容錯移轉，並以元件鄰近性進行。
 
@@ -36,13 +36,13 @@ ms.locfileid: "86128499"
 
   - 相較于可用性設定組，以及可以同時進行維護的工作負載百分比，對更新網域可用性區域的影響。
 
-  - 支援特定虛擬機器（VM）的庫存單位與可用性區域。
+  - 支援特定虛擬機器 (VM) 使用可用性區域的庫存單位。
 
   - 如果使用 Microsoft Azure ultra 磁片儲存體，則需要使用可用性區域。
 
 - 應用程式和資料的一致備份。
 
-  - VM 快照集，並使用 Microsoft Azure 備份和復原服務保存庫。
+  - VM 快照集，並使用 Azure 備份和復原服務保存庫。
 
   - 訂用帳戶限制限制復原服務保存庫的數目和每個保存庫的大小。
 

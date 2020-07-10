@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6534d15e1b552d0f8bcf8849e972da480dfb1a1
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 96aa859856ff173c4b613496ac5017114177a902
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993988"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193672"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
 
 真正的創新來自于打造解決方案的困難工作，從衡量客戶所做的影響，到測量客戶的變動，以及向客戶學習。 最重要的是，它來自多個反復專案的意見反應。
 
-如果過去十年來告訴我們有關創新的東西，就是舊的商務規則已經改變了。 大型的富有面臨新生威脅已不再有 unbreakable 的市場。 第一或最佳的市場玩家一律是優勝者。 擁有最佳的想法並不會導致市場支配。 在快速變更的商業氣候中，市場領導者是最敏捷的。 可以適應不斷變化之條件的人員。
+如果過去十年來告訴我們有關創新的東西，就是舊的商務規則已經改變了。 大型的富有面臨新生威脅已不再有 unbreakable 的市場。 第一或最佳市場玩家不一定是優勝者。 擁有最佳的想法並不會導致市場支配。 在快速變更的商業氣候中，市場領導者是最敏捷的。 可以適應不斷變化之條件的人員。
 
 大型或小型，在數位經濟上做為創新領導者的公司，是具有最大能力可以收聽其客戶群的公司。 可以 cultivated 和管理該技能。 所有良好合作關係的核心都是清楚的意見反應迴圈。 在雲端採用架構中建立客戶合作關係的程式，是「組建-測量-學習意見反應」迴圈。
 

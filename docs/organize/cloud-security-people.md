@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ac85b955ccc69f981038d38b97873c2db82021da
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 275be63f3b39d1236132b945fd9698482e33b18f
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813266"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194267"
 ---
 # <a name="people-security-functions-in-the-cloud"></a>雲端中的人員安全性功能
 
@@ -24,10 +24,10 @@ ms.locfileid: "84813266"
 
 - 使用遊戲化和正面的增強式/教育，而不只依賴負面的增強式方法（例如傳統的「網路釣魚和 punish」解決方案），來提高對使用者的**正面參與**。
 - **高品質的人類 engagement：** 安全性認知通訊和訓練應該是高品質的生產，以促進和情緒的互動，以與員工和組織的工作人員交流。
-- **實際的預期：** 請接受使用者有時會按一下網路釣魚電子郵件，並將成功的計量專注于減少速度，而不是在按一下時停止100%。
+- **實際的預期：** 請接受使用者有時會開啟網路釣魚電子郵件，而改為將成功的計量專注于降低速度，而不是要停止開啟100%。
 - **組織文化特性變更：** 組織領導能力必須推動刻意的文化變更，讓每個組織成員的安全性成為優先考慮。
-- **提高內部風險的焦點**，以協助組織以高度獲利的非法使用案例（例如客戶位置或通訊記錄）來保護寶貴的商業機密和其他資料。
-- 已**改善 insider 風險偵測**，其利用雲端功能來進行活動記錄、行為分析和機器學習（機器學習服務）。
+- **提高內部風險的焦點**，以協助組織以高度獲利的非法使用案例來保護寶貴的商業機密和其他資料， (例如客戶位置或通訊記錄) 。
+- 已**改善內部風險偵測**，其利用雲端功能來進行活動記錄、行為分析，以及機器學習服務 (機器學習服務) 。
 
 ## <a name="team-composition-and-key-relationships"></a>小組撰寫和按鍵關聯性
 

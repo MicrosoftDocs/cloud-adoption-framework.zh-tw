@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d7cd6222ec973177b1b7f2edeb2df451b17348a7
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219660"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193587"
 ---
 # <a name="automate-onboarding"></a>自動上架
 
@@ -22,7 +22,7 @@ ms.locfileid: "83219660"
 
 範例檔案說明如何使用 Azure PowerShell Cmdlet 來自動化下列工作：
 
-- 建立[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。 （或者，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
+- 建立[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)。  (或，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
 - 建立自動化帳戶，或使用符合需求的現有帳戶。 如需詳細資訊，請參閱[工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
@@ -38,14 +38,14 @@ ms.locfileid: "83219660"
 
 | 檔案名稱 | 描述 |
 |-----------|-------------|
-| New-AMSDeployment. ps1 | 主要的協調腳本會自動上線。 它會建立資源群組，以及位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
-| 工作區-AutomationAccount. json | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
-| WorkspaceSolutions json | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
-| ScopeConfig json | Resource Manager 範本，其使用具有變更追蹤解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
-| Enable-VMInsightsPerfCounters. ps1 | 為伺服器啟用 VM 深入解析並設定效能計數器的 PowerShell 腳本。 |
-| 變更追蹤-FileList. json | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
+| `New-AMSDeployment.ps1` | 主要的協調腳本會自動上線。 它會建立資源群組，以及位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
+| `Workspace-AutomationAccount.json` | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
+| `WorkspaceSolutions.json` | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
+| `ScopeConfig.json` | Resource Manager 範本，其使用具有變更追蹤解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
+| `Enable-VMInsightsPerfCounters.ps1` | 為伺服器啟用 VM 深入解析並設定效能計數器的 PowerShell 腳本。 |
+| `ChangeTracking-FileList.json` | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
 
-使用下列命令來執行 New-AMSDeployment：
+使用下列命令來執行 `New-AMSDeployment.ps1` ：
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

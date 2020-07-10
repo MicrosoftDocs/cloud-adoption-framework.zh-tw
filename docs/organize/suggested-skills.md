@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b396bef511aad0e715f8d4391f26882357da5378
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: d3f772ec4bec79b3f9473d2a0ee6b2a2035f145b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993375"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194165"
 ---
-# <a name="building-technical-skills"></a>建置技術技能
+# <a name="build-technical-skills"></a>建置技術技能
 
-組織和環境（技術）的就緒程度可能需要技術和非技術性參與者的新技能。 下列資訊可協助您的組織建立必要的技能。
+組織和環境 (技術) 的就緒程度，可能需要技術和非技術性參與者的新技能。 下列資訊可協助您的組織建立必要的技能。
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
-根據與雲端採用工作相關聯的動機和商務成果，領導者可能需要建立新的組織結構或虛擬小組（v 小組）來加速各種功能。 下列文章可協助您的組織開發必要的技能，以結構這些小組來符合所要的結果：
+根據與雲端採用工作相關聯的動機和商務成果，領導者可能需要建立新的組織結構或虛擬小組 (的) ，以加速各種功能。 下列文章可協助您的組織開發必要的技能，以結構這些小組來符合所要的結果：
 
 - [讓您的組織保持一致](../get-started/org-alignment.md)：探索建立適當組織結構的方法。
 - [組織對齊練習](./index.md)：取得對齊和小組結構的總覽，以協助達到特定目標。
@@ -40,7 +40,7 @@ ms.locfileid: "84993375"
 - [建立 VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)：使用 Azure 入口網站來建立虛擬機器。
 - [Azure 網路服務](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何改善復原並減少延遲。
 - [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
-- 使用[RBAC 保護資源](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用角色型存取控制（RBAC）來保護資源。
+- 使用[Rbac 保護資源](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用角色型存取控制 (rbac) 來保護資源。
 - [Azure 儲存體選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)：瞭解 Azure 資料儲存體的優點。
 
 在準備階段中，架構設計人員必須設計跨越所有 Azure 環境的解決方案。 下列資源可以為這些工作準備：
@@ -55,7 +55,7 @@ ms.locfileid: "84993375"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 
-Microsoft 及其合作夥伴提供的選項可協助所有的使用者開發其使用 Microsoft Azure 服務的技能。
+Microsoft 及其合作夥伴提供的選項可協助所有的物件開發其使用 Azure 服務的技能。
 
 - [MICROSOFT IT 專業人員事業中心](https://www.microsoft.com/itpro)：免費的線上資源，可協助您對應雲端事業的途徑。 向業界專家學習您的雲端角色和所需的技能。 依照您自己的步調遵循學習課程，建立您需要的技能以保持相關。
 

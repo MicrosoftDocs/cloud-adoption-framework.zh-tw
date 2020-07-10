@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3e42f51f8a58b2cd4e1d2df7fac2137d443c702b
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 72ba0190010412dd00fa4bdfd2013e99382cd9c5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128143"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193859"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "86128143"
 | [企業規模的設計指導方針](../ready/enterprise-scale/design-guidelines.md) | 評估企業級的指導方針，以滿足 Azure 登陸區域的常見設計區域 |
 | [實作指導方針](../ready/enterprise-scale/implementation-guidelines.md) | 在部署之前，檢查企業規模執行所需的活動 |
 
-合作夥伴是成功採用雲端的重要層面。 在整個雲端採用架構的指引中，我們新增了參考，以顯示重要角色合作夥伴的扮演 & 如何讓客戶更能與合作夥伴溝通。 如需已驗證的 CAF 合作夥伴清單，請參閱[CAF 對齊的合作夥伴優惠](https://aka.ms/adopt/partneroffers)、 [Azure 專家 MSP 合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)或[Advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
+合作夥伴是成功採用雲端的重要層面。 在整個雲端採用架構指引中，我們新增了參考，以顯示重要角色合作夥伴的扮演，以及客戶如何更能吸引合作夥伴。 如需已驗證的 CAF 合作夥伴清單，請參閱[CAF 對齊的合作夥伴優惠](https://aka.ms/adopt/partneroffers)、 [Azure 專家 MSP 合作夥伴](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)或[Advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
 
 ## <a name="may-15-2020"></a>2020 5 月15日
 
@@ -74,8 +74,8 @@ ms.locfileid: "86128143"
 
 | 文章                                                                                                                 | 說明                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [遷移方法](../migrate/index.md)                       | 這些變更會簡化遷移工作的階段（評估工作負載、部署工作負載和發行工作負載）。 這些變更也會移除有關遷移待處理專案的詳細資料。 移除這些詳細資料並參考計畫、就緒和採用方法，會為各種不同的雲端採用方案建立彈性，以更符合方法。  |
-| 目錄更新                       | Azure 遷移指南和程式改良功能的目錄已更新，以反映方法的變更。  |
+| [遷移方法](../migrate/index.md)                       | 這些變更會簡化遷移工作的階段 (評估工作負載、部署工作負載，以及) 發行工作負載。 這些變更也會移除有關遷移待處理專案的詳細資料。 移除這些詳細資料並參考計畫、就緒和採用方法，會為各種不同的雲端採用方案建立彈性，以更符合方法。 |
+| 已更新目錄 | Azure 遷移指南和程式改良功能的目錄已更新，以反映方法的變更。 |
 
 ### <a name="ready-updates"></a>準備更新
 
@@ -89,7 +89,7 @@ ms.locfileid: "86128143"
 | [改善登陸區域作業](../ready/considerations/landing-zone-operations.md)                       | **新文章：** 管理方法中的最佳做法清單，並轉換成該模組化方法來改善作業、可靠性和效能。 |
 | [改善登陸區域控管](../ready/considerations/landing-zone-governance.md)                       | **新文章：** 與管理方法相關的最佳作法清單，並轉換成該模組化方法來改善控管、成本管理和規模。 |
 | [開始使用企業規模](../ready/enterprise-scale/index.md)                       | **新文章：** 示範當客戶從企業級登陸區域範本開始時，顯示程式中差異的方法。 本文可協助客戶瞭解支援這項決策的限定詞。 |
-| 目錄更新                       | 目錄已更新，以反映新的文章。  |
+| 目錄更新                       | 目錄已更新，以反映新的文章。 |
 
 ## <a name="march-27-2020"></a>2020年3月27日
 

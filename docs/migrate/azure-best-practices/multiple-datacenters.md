@@ -3,16 +3,16 @@ title: 多個資料中心
 description: 多個資料中心
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a84856d4b734ba29333a03d476eafa05420eceb5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80636424"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194556"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 
@@ -36,7 +36,7 @@ ms.locfileid: "80636424"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評定程序進行期間的建議動作
 
-**評估跨資料中心**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在移轉之前使用此工具集是不錯的一般最佳做法。 不過，在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
+**評估跨資料中心**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在遷移之前使用此工具組，通常是最佳作法。 但在處理全域複雜性時，它會成為評估程式中的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
 > 兩個重要事項：首先，必須瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。

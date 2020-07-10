@@ -1,18 +1,18 @@
 ---
 title: 遷移前的工作負載分類
-description: 在進行預遷移評估期間分類您的工作負載。
+description: 在預先遷移評估期間分類您的工作負載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6a446bc43ca458f65b7b293468e60b7a8dc11097
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527706"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194199"
 ---
 # <a name="workload-classification-before-migration"></a>遷移前的工作負載分類
 

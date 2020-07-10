@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 418da8d010ab0abd1a6221da77e9feeae5007f1d
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 7315046a8ddb1d314c11a7a2ef17ea636270e73d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128520"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193638"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -50,13 +50,13 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 
 若要指派上一節中所述的原則：
 
-1. 在 Azure 入口網站中，移至 [ **Azure 原則**指派] [  >  **Assignments**  >  **指派方案**]。
+1. 在 Azure 入口網站中，移至 [**原則**  >  **指派**] [  >  **指派方案**]。
 
     ![入口網站的原則介面螢幕擷取畫面](./media/onboarding-at-scale1.png)
 
-2. 在 [**指派原則**] 頁面上，選取省略號（...），然後選取 [管理群組] 或 [訂用帳戶]，以設定**範圍**。 選擇性地選取資源群組。 然後選擇 [**範圍**] 頁面底部的 [**選取**]。 範圍會決定指派原則的資源或資源群組。
+2. 在 [**指派原則**] 頁面上，選取省略號 ( ... ) 然後選取 [管理群組] 或 [訂用帳戶] 來設定**範圍**。 選擇性地選取資源群組。 然後選擇 [**範圍**] 頁面底部的 [**選取**]。 範圍會決定指派原則的資源或資源群組。
 
-3. 選取 [**原則定義**] 旁的省略號（**...**），以開啟可用定義的清單。 若要篩選計畫定義，請在 [**搜尋**] 方塊中輸入**Azure 監視器**：
+3. 選取 [**原則定義**] 旁的省略號 (**...**) ，開啟可用定義的清單。 若要篩選計畫定義，請在 [**搜尋**] 方塊中輸入**Azure 監視器**：
 
     ![入口網站的原則介面螢幕擷取畫面](./media/onboarding-at-scale2.png)
 
@@ -68,7 +68,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
 
 6. 選取 [**受控識別位置**] 核取方塊。 如果此原則的類型為 [`DeployIfNotExists`](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) ，則需要受控識別才能部署原則。 在入口網站中，會依照核取方塊選取專案的指示來建立帳戶。
 
-7. 選取 [**指派**]。
+7. 選取 [指派]。
 
 完成嚮導之後，原則指派就會部署到環境。 最多可能需要30分鐘的時間，原則才會生效。 若要進行測試，請在30分鐘後建立新的 Vm，並檢查預設是否已在 VM 上啟用 Microsoft Monitoring Agent。
 
@@ -134,7 +134,7 @@ Azure 原則具有[內建的原則方案](https://docs.microsoft.com/azure/gover
   > [!NOTE]
   > 伺服器名稱必須完全符合運算式中的值，而且不應該包含功能變數名稱尾碼。
 
-1. 選取 [儲存]。 根據預設，範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋。 它會自動更新。
+1. 選取 [Save] \(儲存\)。 根據預設，範圍設定會連結至**MicrosoftDefaultComputerGroup**儲存的搜尋。 它會自動更新。
 
 ### <a name="azure-activity-log"></a>Azure 活動記錄檔
 

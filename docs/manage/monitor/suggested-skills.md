@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6672d86f215360f1024b233f62a48eb390b52a52
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 65f28f92e731eac11a337ab9b191b7d0bc09101b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785169"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193060"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -24,18 +24,18 @@ ms.locfileid: "84785169"
 
 ## <a name="fundamentals"></a>基礎
 
-- [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)的簡介討論管理和部署 Azure 資源的基本概念。 管理整個企業中監視體驗的 IT 人員，應該使用來瞭解管理範圍，也就是角色型存取控制（RBAC）。 Azure Resource Manager 範本，以及使用 Azure CLI 和 Azure PowerShell 來管理資源。
+- [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)的簡介討論管理和部署 Azure 資源的基本概念。 管理企業中監視體驗的 IT 人員應該使用，瞭解管理範圍、角色型存取控制 (RBAC) 。 Azure Resource Manager 範本，以及使用 Azure CLI 和 Azure PowerShell 來管理資源。
 
 - [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit 來賓設定等。
 
-- [Azure 命令列介面（CLI）](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)簡介，這是用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1)簡介。 LinkedIn 供應專案是初學者層級課程[學習 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)的一部分，涵蓋 Azure CLI 和 PowerShell 程式設計語言的研討會：
+- [Azure 命令列介面 (CLI) ](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)簡介，這是用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1)簡介。 LinkedIn 供應專案是初學者層級課程[學習 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)的一部分，涵蓋 Azure CLI 和 PowerShell 程式設計語言的研討會：
 
   - [使用 Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
 - 瞭解如何使用原則、角色型存取控制和其他 Azure 服務來保護資源，方法是[在 Azure 中觀看執行資源管理安全性](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security)。
 
-- [監視 Microsoft Azure 資源和工作負載](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)的簡介可協助您瞭解如何使用 Microsoft Azure 監視工具來監視 Azure 網路資源以及內部部署資源。
+- [監視 Microsoft Azure 資源和工作負載](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)可協助您瞭解如何使用 azure 監視工具來監視 azure 網路資源以及位於內部部署的資源。
 
 ## <a name="infrastructure-monitoring"></a>基礎結構監視
 
@@ -69,7 +69,7 @@ ms.locfileid: "84785169"
 
 - 瞭解如何[在 Azure 監視器中撰寫記錄查詢](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)。 Kusto 查詢語言是用來撰寫 Azure 監視器記錄查詢的主要資源，用以探索和分析從 Azure 收集到的資料與混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
 
-- [從頭開始 Kusto 查詢語言（KQL）](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)是一項完整的課程，其中包含詳細的範例，其中涵蓋了在 Azure 監視器記錄中記錄分析的各種使用案例和技術。
+- [Kusto 查詢語言 (KQL) 從頭開始](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)，是一項完整的課程，其中包含涵蓋各種使用案例的詳細範例，以及在 Azure 監視器記錄中記錄分析的技術。
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
@@ -81,7 +81,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 - [MICROSOFT IT 專業人員職業中心](https://www.microsoft.com/itpro)：作為免費的線上資源，協助您對應雲端事業的途徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
 
-參加 [Microsoft Azure 認證訓練課程與測驗]( https://www.microsoft.com/learning/certification-overview.aspx)，讓您的 Azure 知識獲得官方認證。
+透過[azure 認證訓練和測驗，](https://www.microsoft.com/learning/certification-overview.aspx)將您的 azure 知識轉變成官方辨識。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
@@ -101,7 +101,7 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 ## <a name="other-considerations"></a>其他考量
 
-客戶通常會難以管理、維護和提供預期的企業（和 IT 組織）結果，以符合傳遞的服務。 監視會被視為核心來管理基礎結構和企業，並著重于測量服務品質和客戶體驗。 若要達成這些目標，請使用 ITSM 搭配 DevOps 來奠定基礎，這可協助監視小組成熟其管理、交付及支援監視服務的方式。 採用 ITSM 架構可讓監視小組作為提供者，並藉由配合組織的策略性目標和需求，取得辨識作為信任的商務啟用者。
+客戶通常會難以管理、維護及傳遞預期的商務 (和 IT 組織，) 所需的服務成果來計費。 監視會被視為核心來管理基礎結構和企業，並著重于測量服務品質和客戶體驗。 若要達成這些目標，請使用 ITSM 搭配 DevOps 來奠定基礎，這可協助監視小組成熟其管理、交付及支援監視服務的方式。 採用 ITSM 架構可讓監視小組作為提供者，並藉由配合組織的策略性目標和需求，取得辨識作為信任的商務啟用者。
 
 請參閱下列內容，以瞭解對最受歡迎的 ITSM framework [ITIL v4 和雲端運算技術白皮書](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)的更新，其重點在於將現有的 ITIL 指導方針與 DevOps、Agile 和瘦的最佳做法聯結在一起。 也請考慮[IT4IT 參考架構](https://www.opengroup.org/it4it)，以提供如何使用不受處理的架構來轉換它的替代藍圖。
 

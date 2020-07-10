@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb599b892e5cb3e898faf84fb1bd8b65b8d9d03b
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 11f13f38508d480a86eab45ba9bcfe805c27a180
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815067"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193774"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -40,9 +40,9 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 ### <a name="oltp-systems"></a>OLTP 系統
 
-許多大型主機都有 OLTP 系統，為廣大的使用者處理數千、甚或數以百萬計的更新。 這些應用程式通常會使用交易處理和螢幕表單處理軟體，例如客戶資訊控制系統（CICS）、資訊管理系統（IMS）和終端機介面處理器（TIP）。
+許多大型主機都有 OLTP 系統，為廣大的使用者處理數千、甚或數以百萬計的更新。 這些應用程式通常會使用交易處理和螢幕表單處理軟體，例如客戶資訊控制系統 (CICS) 、資訊管理系統 (IMS) 和終端機介面處理器 (TIP) 。
 
-將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api 結合，例如 ActiveX data objects （ADO）、開放式資料庫連接（ODBC），以及用於資料存取和交易的 JAVA 資料庫連接（JDBC）。
+將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api 結合，例如 (ADO) 的 ActiveX 資料物件、開放式資料庫連接 (ODBC) ，以及 JAVA 資料庫連接 (JDBC) 進行資料存取和交易。
 
 ### <a name="time-constrained-batch-updates"></a>有時間限制的批次更新
 
@@ -68,7 +68,7 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如：
 
-- 以 Windows 為基礎的 Vm： Internet Information Server （IIS），以及用於螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
+- 以 Windows 為基礎的 Vm： Internet Information Server (IIS) 以及適用于螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
 
 - 以 Linux 為基礎的 Vm：可用的 JAVA 應用程式伺服器，例如用於螢幕處理的 Apache Tomcat 和以 JAVA 為基礎的商務功能。 針對資料存取和交易，請使用 JDBC。
 
@@ -126,7 +126,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ## <a name="migrate-databases-and-data"></a>移轉資料庫和資料
 
-應用程式移轉通常牽涉到重新裝載資料層。 您可以將 SQL Server、開放原始碼和其他關係資料庫移轉至 Azure 上完全受控的解決方案，例如[Azure SQL Database 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[適用于于 postgresql 的 Azure 資料庫服務](https://docs.microsoft.com/azure/postgresql/overview)，以及[azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)的[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)。
+應用程式移轉通常牽涉到重新裝載資料層。 您可以使用 azure[資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)，將 SQL Server、開放原始碼和其他關係資料庫移轉至 azure 上完全受控的解決方案，例如[azure SQL 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[適用於 PostgreSQL 的 Azure 資料庫](https://docs.microsoft.com/azure/postgresql/overview)和[適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql/overview)。
 
 例如，如果大型主機資料層使用下列項目，則可以進行移轉：
 
@@ -144,7 +144,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 - **應用程式**要求者：接受來自應用程式的要求，然後再將它們傳遞給應用程式伺服器。
 - **線上資源介面卡：** 包含用於 CICS 交易的應用程式要求者元件。
 - **Batch 資源介面卡：** 執行 z/OS 批次應用程式的應用程式要求者元件。
-- **互動式 SQL （ISQL）：** 以 CICS 應用程式和介面的形式執行，讓使用者可以輸入 SQL 語句或運算子命令。
+- **互動式 SQL (ISQL) ：** 以 CICS 應用程式和介面的形式執行，讓使用者可以輸入 SQL 語句或運算子命令。
 - **CICS 應用程式：** 使用 CICS 的可用資源和資料來源，在 CICS 的控制下執行。
 - **Batch 應用程式：** 執行進程邏輯，而不需要與使用者進行互動式通訊，例如，產生大量資料更新或從資料庫產生報表。
 
@@ -168,7 +168,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 常見的案例是，將應用程式移至 Azure，但將應用程式所使用的資料保留在大型主機上。 您可以使用特定軟體讓 Azure 上的應用程式可從大型主機存取資料。 幸運的是，有許多解決方案都提供 Azure 與現有大型主機環境的整合功能、混合式案例的支援，以及長時間的漸進移轉。 Microsoft 合作夥伴、獨立軟體廠商和系統整合商皆可協助您展開此程序。
 
-其中一個選項是[Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server)，這是一種解決方案，可提供 Azure 中的應用程式所需的分散式關係資料庫架構（DRDA），以存取保留在大型主機上的 DB2 資料。 將大型主機整合至 Azure 的其他選項包括 IBM、Attunity、Codit、其他廠商所提供的解決方案，和開放原始碼選項。
+其中一個選項是[Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server)，此解決方案提供分散式關係資料庫架構 (DRDA) ，讓 Azure 中的應用程式存取保留在大型主機上的 DB2 資料。 將大型主機整合至 Azure 的其他選項包括 IBM、Attunity、Codit、其他廠商所提供的解決方案，和開放原始碼選項。
 
 ## <a name="partner-solutions"></a>合作夥伴解決方案
 

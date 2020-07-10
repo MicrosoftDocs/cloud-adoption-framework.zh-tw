@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 35df4edd8437cea20f0bc397be901443c21015a5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84784982"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194641"
 ---
 # <a name="first-cloud-adoption-project"></a>第一個雲端採用專案
 
@@ -52,15 +52,17 @@ ms.locfileid: "84784982"
 
 - **創新動機：** 當創新是主要動機時，建立目標開發/測試環境可能是絕佳的第一個專案。
 
+<!-- docsTest:ignore "data migration services" -->
+
 第一個採用專案的其他範例包括：
 
-- **商務持續性和嚴重損壞修復（BCDR）：** 除了 Azure Site Recovery 以外，您還可以將多個 BCDR 策略實作為第一個專案。
+- **商務持續性和嚴重損壞修復 (BCDR) ：** 除了 Azure Site Recovery 以外，您還可以將多個 BCDR 策略實作為第一個專案。
 - **非生產：** 部署工作負載的非生產實例。
 - 封存 **：** 冷儲存體可能會對資料中心資源造成負擔。 將該資料移至雲端是一種穩固的快速勝利。
-- **終止支援（EOS）：** 遷移已達到支援終止的資產，是建立技術技能的另一個快速勝利。 它也可以從昂貴的支援合約或授權成本提供一些成本規避。
-- **虛擬桌面介面（VDI）：** 為遠端員工建立虛擬桌面可以提供快速勝利。 在某些情況下，第一次採用專案也可以減少昂貴私人網路的相依性，以利商用公用網際網路連線。
+- ** (EOS) 結束支援：** 遷移已達到支援終止的資產，是建立技術技能的另一個快速勝利。 它也可以從昂貴的支援合約或授權成本提供一些成本規避。
+- **虛擬桌面介面 (VDI) ：** 為遠端員工建立虛擬桌面可以提供快速勝利。 在某些情況下，第一次採用專案也可以減少昂貴私人網路的相依性，以利商用公用網際網路連線。
 - **開發/測試：** 從內部部署環境移除開發/測試，為開發人員提供控制、彈性和自助功能。
-- **簡單應用程式（少於五個）：** 現代化和遷移簡單的應用程式，以快速取得開發人員和操作體驗。
+- **簡單的應用程式 (不到五個) ：** 現代化和遷移簡單的應用程式，以快速取得開發人員和操作體驗。
 - **效能實驗室：** 當您需要在實驗室設定中進行大規模的效能時，請在短時間內使用雲端快速且符合成本效益地布建這些實驗室。
 - **資料平臺：** 使用傾印/還原方法或資料移轉服務，建立具有可擴充計算的 data lake 來分析、報告或機器學習工作負載，以及遷移至受控資料庫。
 

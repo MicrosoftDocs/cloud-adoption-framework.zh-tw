@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 843604f4c7aa9f8e032ffe879cdb8fc0d9b0ff48
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9c5dc6a16fb6e24b498921f0e21c29d45545f8d6
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076963"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194760"
 ---
 # <a name="contribution-guide"></a>貢獻指南
 
@@ -38,7 +38,7 @@ ms.locfileid: "85076963"
 
 ## <a name="committee-member-responsibilities"></a>委員會成員責任
 
-委員會成員負責審查和核准要求建議（Rfc）提出新功能或設計變更。
+委員會成員負責審查和核准 (Rfc 的意見要求，) 提議新功能或設計變更。
 
 最初的企業規模委員會是由 Microsoft 員工所組成。 此社區預期會成長，而新的社區成員會在一段時間後加入委員會成員。 成員資格取決於貢獻程度和專業知識。 以有意義的方式參與專案的人員將會據此辨識。
 
@@ -46,7 +46,7 @@ ms.locfileid: "85076963"
 
 ## <a name="contribution-scope-for-enterprise-scale-architecture-guidelines"></a>企業規模架構指導方針的貢獻範圍
 
-此存放庫的貢獻範圍是隨著平臺發展，而新的服務和功能會在生產環境中與客戶進行驗證，設計指導方針則受限於架構整體內容中的更新。 使用預留位置範本提交提取要求（Pr）以取得檔更新。
+此存放庫的貢獻範圍是隨著平臺發展，而新的服務和功能會在生產環境中與客戶進行驗證，設計指導方針則受限於架構整體內容中的更新。 使用預留位置範本提交提取要求 (Pr) 以取得檔更新。
 
 ## <a name="contribution-scope-for-contoso-reference-implementation"></a>Contoso 參考實行的貢獻範圍
 
@@ -79,7 +79,7 @@ ms.locfileid: "85076963"
 
 ## <a name="writing-azure-resource-manager-templates-for-contoso-implementation"></a>為 Contoso 的執行撰寫 Azure Resource Manager 範本
 
-沒有適當或錯誤的方式可撰寫 Resource Manager 範本和參數檔案。 Resource Manager 是一種語言，而且每個人都有不同的書寫樣式。 少數的範本和參數檔案在一組開發人員之間會以類似的方式撰寫。 沒有清楚的樣式定義可管理設定中的程式碼，以及叢集要轉譯的範本與參數檔。 當使用參數和物件做為參數（不含任何架構）時的指引也會受到轉譯，而且不會有任何一種適合的撰寫樣式。
+沒有適當或錯誤的方式可撰寫 Resource Manager 範本和參數檔案。 Resource Manager 是一種語言，而且每個人都有不同的書寫樣式。 少數的範本和參數檔案在一組開發人員之間會以類似的方式撰寫。 沒有清楚的樣式定義可管理設定中的程式碼，以及叢集要轉譯的範本與參數檔。 使用參數和物件做為參數的指引 (不含任何架構) 也會受到轉譯，而且沒有任何一種適用的撰寫樣式。
 
 為了讓多個開發人員能夠大規模地簡化開發和單元測試，我們採用了一種特定的撰寫範本樣式，方法是將範本從其參數檔案完全分離。 這種極簡的單一範本-all 方法會將所有資源屬性顯現出為參數檔案中的複雜物件，而且我們可以根據平臺已發行的資源架構，在檔案中強制執行嚴格的架構驗證。 這個方法會清楚地分隔範本和參數。 在呼叫或時，參數檔案基本上是資源的 RESTful 表示 `Get-AzResource` 法 `az resource show` 。
 
@@ -96,7 +96,7 @@ ms.locfileid: "85076963"
     }],
 ```
 
-您可以使用[一般多資源範本](https://raw.githubusercontent.com/uday31in/AzOps/master/src/template.json)，以確保錯誤修正會併入最新的 API 版本。
+您可以使用[一般多資源範本](https://github.com/uday31in/AzOps/blob/main/template/template.json)，以確保錯誤修正會併入最新的 API 版本。
 
 - Template.parameters.js于
 
@@ -131,7 +131,7 @@ Get-AzResource -ResourceId '/providers/Microsoft.Management/managementGroups/con
   - 不會再撰寫 Resource Manager 範本。 已寫入最後一個 Resource Manager 範本。
   - 無論是透過 Azure 入口網站、Azure CLI、PowerShell 或協力廠商工具來建立和更新資源，都能以一致的方式在其生命週期中進行匯出。
   - 在 Git 中儲存的設定與目前的設定相比，可以更輕鬆地偵測到漂移。基本上，我們要比較兩個 JSON 檔。
-  - 您可以管理用戶端與伺服器端上的簡單資源之間的隱含相依性。 Azure 在資源之間不會有許多迴圈相依性，而且可以根據已發行的資源架構來處理隱含相依性。 例如，虛擬機器可能相依于核心層級的虛擬交換器，但反之亦然（例如，原則定義-> 原則指派-> 角色指派-> 補救或虛擬網路-> ExpressRoute 或 Key Vault > Azure SQL）。
+  - 您可以管理用戶端與伺服器端上的簡單資源之間的隱含相依性。 Azure 在資源之間不會有許多迴圈相依性，而且可以根據已發行的資源架構來處理隱含相依性。 例如，虛擬機器可能相依于核心層級虛擬交換器，但不會反過來 (例如，原則定義-> 原則指派-> 角色指派-> 補救或虛擬網路 > ExpressRoute 或 Key Vault > Azure SQL) 。
 
 - 缺點：
 
@@ -143,14 +143,14 @@ Get-AzResource -ResourceId '/providers/Microsoft.Management/managementGroups/con
 
 ## <a name="contributing-to-policy-definitions-policy-assignments-and-role-definitions-and-assignments-for-contoso-implementation"></a>為 Contoso 執行提供原則定義、原則指派和角色定義和指派的貢獻
 
-一旦您的參數符合上一節所述的標準，且已準備好您的資源，請考慮是否應在管理群組範圍或訂用帳戶範圍（連線能力或管理訂用帳戶）部署資源。 雖然管線可以在四個範圍的任何一個部署範本，但它不會部署在資源群組層級做為登陸區域範本的一部分。 最小的長條是包裝在原則定義內的訂用帳戶層級部署範本。
+一旦您的參數符合上一節所述的標準，且已準備好您的資源，請考慮是否應將資源部署在管理群組範圍或訂用帳戶範圍 (連線或管理訂用帳戶) 。 雖然管線可以在四個範圍的任何一個部署範本，但它不會部署在資源群組層級做為登陸區域範本的一部分。 最小的長條是包裝在原則定義內的訂用帳戶層級部署範本。
 
 - 可行事項：
   - 如果您有可在登陸區域內部署的資源，請將其包裝在 `DeployIfNotExists` 原則中; 此作業的指派應位於管理群組範圍內。
-  - 如果登陸區域內的資源部署計數剛好是一個（例如，登陸區域內的虛擬網路或新 Azure 區域的虛擬中樞），則此原則應該會有目標為訂用帳戶範圍的存在範圍。
+  - 如果登陸區域內的資源部署計數只是一個 (例如，登陸區域內的虛擬網路，或是新 Azure 區域) 的虛擬中樞，則此原則應該會有目標為訂用帳戶範圍的存在範圍。
   - 在理想的情況下，所有原則定義都應該建立在端對端範本中定義的根目錄。
 
-- 請勿提交具有範本和參數檔案的 PR 來部署資源（例如金鑰保存庫），或在端對端登陸區域中所述的外部建立您自己的管理群組階層。
+- 請勿提交具有範本和參數檔案的 PR 來部署資源 (例如 key vault) ，或在端對端登陸區域中所述的外部建立您自己的管理群組階層。
 
 範例：
 
@@ -216,7 +216,7 @@ Get-AzPolicyAlias -ListAvailable
 
 對於 Azure CLI：
 
-```cli
+```bash
 # List all available providers
 
 az provider list --query [*].namespace
@@ -230,7 +230,7 @@ az provider show --namespace Microsoft.Network --expand "resourceTypes/aliases" 
 
 指派所有原則時，必須考慮下列事項：
 
-- 請特別瞭解指派的意圖。 它是否屬於這兩個訂用帳戶（連線和管理）或管理群組？
+- 請特別瞭解指派的意圖。 它屬於兩個訂用帳戶 (連線和管理) 還是管理群組？
 - 訂用帳戶內的資源散發為何？
 - 使用的區域為何，以及每個訂用帳戶是否允許/使用多個區域？
 - 允許哪些資源類型不會影響指派原則的位置？

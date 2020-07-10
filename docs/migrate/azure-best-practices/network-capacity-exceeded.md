@@ -1,22 +1,22 @@
 ---
-title: 超過網路容量
-description: 移轉工作期間資料需求超過網路容量。
+title: 在遷移工作期間，資料需求超過網路容量的最佳做法
+description: 在遷移工作期間，資料需求超過網路容量的最佳做法
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a075b99945a50850561ceab4a9f1b16bfe180936
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: d2246b71dea7397b724b69b429827ffd9b0801e5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862478"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194505"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
-# <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>資料需求在遷移工作期間超過網路容量
+# <a name="best-practices-when-data-requirements-exceed-network-capacity-during-a-migration-effort"></a>在遷移工作期間，資料需求超過網路容量的最佳做法
 
 在雲端移轉中，資產會在現有資料中心與雲端之間透過網路進行複寫和同步處理。 不同工作負載的現有資料大小需求超過網路容量的情況並不少見。 在這種情況下，移轉程序的速度會變得很慢，在某些情況下甚至會完全停止。 下列指引將擴充 [Azure 移轉指南](../azure-migration-guide/index.md)的範圍，以提供可解決網路限制的解決方案。
 
@@ -26,13 +26,13 @@ ms.locfileid: "83862478"
 
 ## <a name="suggested-prerequisites"></a>建議的必要條件
 
-**驗證網路容量風險：** 強烈建議使用[數位資產合理化](../../digital-estate/rationalize.md)，特別是在有造成可用網路容量的顧慮時。 在數位資產合理化期間，系統會收集[數位資產的詳細目錄](../../digital-estate/inventory.md)。 該詳細目錄應包含所有數位資產的現有儲存需求。 如[複寫風險：複寫物理學](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)中所述，該詳細目錄可用來預估**移轉資料大小總計**，從而與**可用移轉頻寬總計**進行比較。 如果該比較不符合所需的**業務變更時間**，則本文可協助加快移轉速度，以減少遷移資料中心所需的時間。
+**驗證網路容量風險：** 強烈建議使用[數位資產合理化](../../digital-estate/rationalize.md)，特別是在有造成可用網路容量的顧慮時。 在數位資產合理化期間，系統會收集[數位資產的詳細目錄](../../digital-estate/inventory.md)。 該詳細目錄應包含所有數位資產的現有儲存需求。 如複寫風險中所述：複寫的[物理](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)，該清查可以用來預估**總遷移資料大小**，這可以與總可用的**遷移頻寬**進行比較。 如果該比較不符合所需的**業務變更時間**，則本文可協助加快移轉速度，以減少遷移資料中心所需的時間。
 
-**獨立資料存放區的離線傳輸：** 下圖所示的範例是使用 Azure 資料箱進行線上和離線資料傳輸。 這些方法可用來在移轉工作負載之前，先將大量資料運送至雲端。 在離線資料傳輸中，來源資料會複製到 Azure 資料箱，然後實體運送至 Microsoft，再以檔案或 Blob 的形式傳輸至 Azure 儲存體帳戶。 此程序可用來在進行其他移轉工作之前，先運送未直接繫結至特定工作負載的資料。 這麼做可減少需要透過網路運送的資料量，以便在網路限制內完成移轉工作。
+**獨立資料存放區的離線傳輸：** 下圖所示的範例是使用 Azure 資料箱進行線上和離線資料傳輸。 這些方法可用來在移轉工作負載之前，先將大量資料運送至雲端。 在離線資料傳輸中，來源資料會複製到 Azure 資料箱，然後實際寄送至 Microsoft，以作為檔案或 blob 傳輸至 Azure 儲存體帳戶。 此程序可用來在進行其他移轉工作之前，先運送未直接繫結至特定工作負載的資料。 這麼做可減少需要透過網路運送的資料量，以便在網路限制內完成移轉工作。
 
-這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
+這種方法可用來從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [rest](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
 
-另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和饋送 (Seed and Feed)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
+另外還有協力廠商的合作夥伴解決方案，會使用 Azure 資料箱進行「種子和摘要」遷移，其中大量的資料會透過離線傳輸移動，但稍後會透過網路以較低的規模進行同步處理。
 
 ![使用 Azure 資料箱進行離線和線上資料傳輸](../../_images/migrate/data-box.png)
 
@@ -55,15 +55,15 @@ ms.locfileid: "83862478"
 
 ## <a name="migrate-process-changes"></a>遷移程序變更
 
-在使用離線傳輸機制時，不太可能需要[複寫程序](../migration-considerations/migrate/replicate.md)。 不過，可能仍需要[同步處理程序](../migration-considerations/migrate/replicate.md)。 了解評估程序進行期間所完成漂移分析的結果，您將會知道移轉期間所需的工作 (如果資產正在進行離線傳輸的話)。
+在使用離線傳輸機制時，不太可能需要[複寫程序](../migration-considerations/migrate/replicate.md)。 但[同步處理](../migration-considerations/migrate/replicate.md)程式可能仍然是需求。 瞭解在評估過程中完成之漂移分析的結果，將會在資源于離線時傳輸時，通知遷移期間所需的工作。
 
 ### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
 
-**複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
+**複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [rest](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
 
 另外也有第三方合作夥伴解決方案會使用 Azure 資料箱進行「植入和同步 (Seed and Sync)」移轉，以透過離線傳輸移動大量資料，再於稍後透過網路以較低的規模進行同步處理。
 
-**寄送裝置：** 複製資料之後，裝置就可以[寄送到 Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)。 收到資料並匯入之後，資料就可在 Azure 儲存體帳戶中使用。
+**寄送裝置：** 複製資料之後，裝置就可以[寄送到 Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)。 一旦收到並匯入之後，就會在 Azure 儲存體帳戶中提供資料。
 
 **還原資產：** 確認儲存體帳戶中有可用[的資料](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)。 確認之後，就可以透過 Blob 或在 Azure 檔案儲存體中使用資料。 如果資料是 VHD/VHDX 檔案，則檔案可以轉換為受控磁碟。 隨後，您就可以使用這些受控磁碟來具現化虛擬機器，以建立原始內部部署資產的複本。
 

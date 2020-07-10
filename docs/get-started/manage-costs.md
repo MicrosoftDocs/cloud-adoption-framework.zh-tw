@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: caa4349293df5387c4ba62aa265499d4140d3f9f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076459"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191802"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -35,7 +35,7 @@ ms.locfileid: "85076459"
 
 這些交付專案是幾個週期性工作的結果：
 
-- 確保與雲端策略小組的策略性一致（包括在組合中的工作負載專案關係人）。
+- 確保與雲端策略小組 (的策略性一致，包括組合) 的工作負載專案關係人。
 - 將整個環境的成本優化：
   - 手動或自動關閉未使用的 Vm。
   - 刪除或解除配置已停止的 Vm。
@@ -50,7 +50,7 @@ ms.locfileid: "85076459"
 
   - 根據[一般成本最佳做法](../govern/cost-management/best-practices.md)採取行動，以降低大小和成本，並停止未使用的機器。
   - 套用[混合式使用優勢](../govern/cost-management/best-practices.md#best-practice-take-advantage-of-azure-hybrid-benefit)，以降低授權成本。
-  - 對齊[保留實例](../govern/cost-management/best-practices.md#best-practice-use-reserved-vm-instances)，以降低資源成本。
+  - 對齊[保留實例](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances)，以降低資源成本。
   - [監視資源使用率](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization)，以將對資源效能的影響降至最低。
   - 透過原則來管理非生產環境，以[降低非生產成本](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)。
   - 針對[成本優化建議](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)採取行動。
@@ -107,7 +107,7 @@ ms.locfileid: "85076459"
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)。 使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)。 在增量合理化和量化分析期間，識別用於預算的雲端候選項目。
 - [對齊成本模型和預測模型](../digital-estate/calculate.md)。 藉由[建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，使用 Azure 成本管理來對齊成本和預測模型。
-- [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 建立具有可採取動作之工作負載、資產和時間軸詳細資料的方案。 此計畫提供一段時間的支出基礎（或成本預測）。 _經過一段時間的花費_是成本管理治理專業領域中所有可採取動作的優化分析的初始基準。
+- [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 建立具有可採取動作之工作負載、資產和時間軸詳細資料的方案。 此計畫可讓您在一段時間內花費 (或成本預測) 的基礎。 _經過一段時間的花費_是成本管理治理專業領域中所有可採取動作的優化分析的初始基準。
 
 <!-- markdownlint-disable MD033 -->
 <br>

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 974792c45110d56842b9cf7b9806d5bb06322def
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214254"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194471"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "83214254"
 
 - **引導式自助式服務。** 現有的技術小組會執行移轉，並由 Microsoft 提供協助。
 - **FastTrack for Azure。** 使用 Microsoft FastTrack for Azure 計劃來加速移轉。
-- **解決方案合作夥伴。** 與 Azure 解決方案合作夥伴或雲端解決方案合作夥伴 (CSP) 取得聯繫來加速移轉。
+- **解決方案合作夥伴。** 與 Azure 合作夥伴或雲端解決方案提供者連線 (Csp) 以加速遷移。
 - **支援的自助服務。** 由獲得 Microsoft 支援的現有技術人員來完成執行。
 
 ## <a name="guided-self-service"></a>引導式自助服務
@@ -58,7 +58,7 @@ ms.locfileid: "83214254"
 - 智慧代理程式**
 - 移往 Azure 的資料現代化
 - 安全性與管理
-- 分散於全球的資料
+- 全域散發的資料
 - IoT***
 
 * 美國、加拿大、英國及西歐的有限預覽版本。
@@ -79,13 +79,13 @@ FastTrack for Azure 的典型互動主要階段如下：
 
 ![Microsoft 服務的雲端採用架構方法](../../../_images/migrate/mcs-program-approach.jpg)
 
-**評估：** Microsoft 服務使用以[統一、資料和工具為導向的方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)，其中包含架構研討會、Azure 即時資訊、安全性和身分識別威脅模型，以及各種工具，可讓您深入瞭解具有重要結果（例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)）的現有 Azure 環境的挑戰、風險、建議和問題。
+**評估：** Microsoft 服務使用[統一的資料和工具驅動方法](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)，包括架構研討會、Azure 即時資訊、安全性和身分識別威脅模型，以及各種工具，以提供重要結果（例如[高階現代化藍圖](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)）對現有 Azure 環境的挑戰、風險、建議和問題的深入解析。
 
 **採用：** 透過 Microsoft 服務的[Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)，藉由將您的需求對應至最適當的參考架構並規劃、設計和部署工作負載所需的基礎結構、管理、安全性和身分識別，來建立您的核心 Azure 設計、模式和治理架構。
 
 **遷移/優化：** Microsoft 服務的[雲端現代化解決方案](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)提供完整的方法，讓您將應用程式和基礎結構移至 Azure，以及在雲端部署後優化並現代化，並以簡化的方式進行備份。
 
-**創新：** Microsoft 服務的[卓越雲端中心（CCoE）解決方案](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)提供 DevOps 的訓練，並使用 DevOps 準則結合規範性雲端原生服務管理和安全性控制，以協助推動商業創新、增加靈活性，並在安全、可預測且彈性的服務交付和操作管理功能中降低價值。
+**創新：** Microsoft 服務[的卓越 (CCoE) 解決方案](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)提供 DevOps 的訓練中心，並使用 DevOps 準則結合規範性雲端原生服務管理和安全性控制，以協助推動商業創新、增加靈活性，並在安全、可預測且彈性的服務交付和營運管理功能中降低價值。
 
 ## <a name="azure-support"></a>Azure 支援
 
@@ -93,7 +93,7 @@ FastTrack for Azure 的典型互動主要階段如下：
 
 ## <a name="azure-solutions-partner"></a>Azure 解決方案合作夥伴
 
-Microsoft 認證的解決方案提供者專門提供以全球 Microsoft 技術為基礎的新式客戶解決方案。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
+Microsoft 認證解決方案提供者專精於根據全球各地的 Microsoft 技術，提供新型客戶解決方案。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
 
 從可以提供現成或自訂 Azure 解決方案的合作夥伴，以及可以部署和管理這些解決方案的合作夥伴取得協助：
 

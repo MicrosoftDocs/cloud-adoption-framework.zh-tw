@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 11de19074526634af368916d5e58511c6f51ca90
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217722"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193791"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
@@ -36,13 +36,13 @@ ms.locfileid: "83217722"
 
 ### <a name="cloud-native-identity-policies"></a>雲端原生身分識別原則
 
-身分識別變成安全性的新界限控制平面，並從傳統以網路為中心的觀點來接收該角色。 網路周邊變得越來越漏洞日益增加，而周邊防禦則無法像在攜帶您自己的裝置（BYOD）和雲端應用程式的問世之前一樣有效。 Azure 身分識別管理和存取控制可以無縫且安全地存取您的所有應用程式。
+身分識別變成安全性的新界限控制平面，並從傳統以網路為中心的觀點來接收該角色。 網路周邊變得越來越漏洞日益增加，而且周邊防禦無法像在攜帶您自己的裝置 (BYOD) 和雲端應用程式的問世之前一樣有效。 Azure 身分識別管理和存取控制可讓您無縫安全地存取您的所有應用程式。
 
 適用于跨雲端和內部部署目錄的身分識別範例雲端原生原則，可能包含如下所示的需求：
 
-- 具有角色型存取控制（RBAC）、多重要素驗證和單一登入（SSO）的資源授權存取權。
+- 使用角色型存取控制授權資源的存取權 (RBAC) 、多重要素驗證，以及 (SSO) 的單一登入。
 - 使用者身分識別的快速緩和會受到危害。
-- 及時（JIT），以工作為基礎授與的足夠存取權，以限制暴露 overprivileged 的系統管理員認證。
+- 及時 (JIT) ，只要以工作為基礎授與足夠的存取權，以限制暴露 overprivileged 的系統管理員認證。
 - 透過 Azure Active Directory 擴充使用者身分識別，以及跨多個環境存取原則。
 
 雖然在安全性基準專業領域的內容中瞭解身分[識別基準專業領域](../identity-baseline/index.md)很重要，但[雲端治理的五個專業領域](../index.md)會將它視為個別的專業領域。
@@ -56,7 +56,7 @@ ms.locfileid: "83217722"
 - 在雲端原生原則中，可能不允許混合式連線至內部部署資源。 如果混合式連線證明有必要，更健全的企業安全性原則範例會是更相關的參考。
 - 使用者可以使用虛擬網路和網路安全性群組，建立與 Azure 的連線。
 - 原生 Windows Azure 防火牆會藉由限制埠存取，來保護主機免于惡意的網路流量。 這項原則的一個好例子，就是封鎖或不要透過 SSH/RDP 直接對 VM 啟用流量的需求。
-- Azure 應用程式閘道上的 Azure Web 應用程式防火牆（WAF）和 Azure DDoS 保護等服務可保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
+- Azure Web 應用程式防火牆之類的服務 (WAF) Azure 應用程式閘道和 Azure DDoS 保護應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
 
 ### <a name="data-protection"></a>資料保護
 

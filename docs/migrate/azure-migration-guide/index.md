@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: b05470f702c302ade30ab3d9f4a6a47268ed682b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815288"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194454"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前
 
@@ -56,8 +56,6 @@ ms.locfileid: "83815288"
 - 您的產業和此移轉相關的法規需求最少。
 
 如果上述有任一條件不適用於您的情況，就應該考慮改用其他[雲端移轉的最佳作法](../azure-best-practices/index.md)。 我們也建議您向其中一個 Microsoft 小組或合作夥伴要求協助，以執行更複雜的移轉。 有 Microsoft 或經認證的合作夥伴參與其中的客戶，較能成功移轉。 要求協助的詳細資訊可在本指南取得。
-
-<!-- markdownlint-enable MD033 -->
 
 ::: zone target="docs"
 

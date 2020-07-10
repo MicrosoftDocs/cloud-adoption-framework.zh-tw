@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: dcbc8d7906bd18a225b9fb2b116b4acc3bd0f395
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861475"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193128"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -27,7 +27,7 @@ Microsoft 提供兩種產品的各種監視功能： System Center Operations Ma
 
 ## <a name="the-story-of-system-center-operations-manager"></a>System Center Operations Manager 的故事
 
-在2000中，我們輸入了具有 Microsoft Operations Manager （MOM）2000的 [operations management] 欄位。 在2007中，我們引進了產品的重新設計後版本，名為 System Center Operations Manager。 它除了簡單監視 Windows 伺服器之外，還會集中在強大的端對端服務和應用程式監視，包括不同的平臺、網路裝置，以及其他應用程式或服務相依性。 它是一種專為內部部署環境所建立的企業級監視平臺，與業界 IBM Tivoli 或 HP Operations Manager 的類別相同。 它已成長為支援監視在 Azure 中執行的計算和平臺資源、Amazon Web Services （AWS）和其他雲端提供者。
+在2000中，我們輸入了具有 Microsoft Operations Manager 2000 的 [operations management] 欄位。 在2007中，我們引進了重新設計後版本的產品 System Center Operations Manager。 它除了簡單監視 Windows 伺服器之外，還會集中在強大的端對端服務和應用程式監視，包括不同的平臺、網路裝置，以及其他應用程式或服務相依性。 它是一種專為內部部署環境所建立的企業級監視平臺，與業界 IBM Tivoli 或 HP Operations Manager 的類別相同。 它已成長為支援監視在 Azure 中執行的計算和平臺資源、Amazon Web Services (AWS) ，以及其他雲端提供者。
 
 ## <a name="the-story-of-azure-monitor"></a>Azure 監視器的故事
 
@@ -47,14 +47,14 @@ Application Insights 引進了隨著產業中的變更轉移，其中雲端、�
 - 新的**整合警示服務**，可將先前所述的每個其他服務的警示機制結合在一起。  
 - **Azure 網路監看員**，用於監視、診斷和查看虛擬網路中資源的計量。
 
-## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite （OMS）的故事
+## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite (OMS) 的案例
 
-從2015到4月2018日為止，Operations Management Suite （OMS）是下列 Azure 管理服務的配套，以供授權之用：
+從2015到2018年4月，Operations Management Suite (OMS) 是下列 Azure 管理服務的配套，以供授權之用：
 
 - Application Insights
 - Azure 自動化
 - Azure 備份
-- Operational Insights （稍後更名為 Log Analytics）
+- Operational Insights (之後的更名做為 Log Analytics) 
 - Site Recovery
 
 Oms 停止時，屬於 OMS 的服務功能不會變更。 它們是在 Azure 監視器下救星。
@@ -69,11 +69,11 @@ Operations Manager 需要大量的基礎結構和維護來支援管理群組，�
 
 ### <a name="azure-monitor"></a>Azure 監視器
 
-Azure 監視器是軟體即服務（SaaS）供應專案，因此其支援的基礎結構會在 Azure 中執行，並由 Microsoft 管理。 它會大規模執行監視、分析及診斷。 其適用于所有國家/地區雲端。 支援 Azure 監視器的基礎結構核心部分（收集器、計量和記錄存放區，以及分析）由 Microsoft 維護。  
+Azure 監視器是一項軟體即服務， (SaaS) 供應專案，因此其支援的基礎結構會在 Azure 中執行，並由 Microsoft 管理。 它會大規模執行監視、分析及診斷。 其適用于所有國家/地區雲端。 基礎結構的核心部分 (收集器、計量和記錄存放區，以及支援 Azure 監視器的分析) 會由 Microsoft 維護。  
 
 ![Azure 監視器的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
-## <a name="data-collection"></a>資料收集
+## <a name="data-collection"></a>資料集合
 
 <!-- markdownlint-disable MD024 -->
 
@@ -89,7 +89,7 @@ Operations Manager 代理程式可以從本機電腦上的多個資料來源收�
 
 #### <a name="management-packs"></a>管理組件
 
-Operations Manager 會執行工作流程的所有監視（規則、監視和物件探索）。 這些工作流程會在[管理元件](https://docs.microsoft.com/system-center/scom/manage-overview-management-pack?view=sc-om-2019)中封裝在一起，並部署至代理程式。 管理元件適用于各種產品和服務，其中包括預先定義的規則和監視。 您也可以為自己的應用程式和自訂案例撰寫自己的管理元件。
+Operations Manager 會使用工作流程 (規則、監視和物件探索) 來執行所有監視。 這些工作流程會在[管理元件](https://docs.microsoft.com/system-center/scom/manage-overview-management-pack?view=sc-om-2019)中封裝在一起，並部署至代理程式。 管理元件適用于各種產品和服務，其中包括預先定義的規則和監視。 您也可以為自己的應用程式和自訂案例撰寫自己的管理元件。
 
 #### <a name="monitoring-configuration"></a>監視設定
 
@@ -121,7 +121,7 @@ Azure 監視器所收集的資料會儲存為記錄或計量，而 Azure 監視�
 
 由於 Azure 監視器會將資料收集與對該資料的動作分隔開來，因此在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，請依警示中定義的週期性排程執行查詢。 此行為可讓 Azure 監視器輕鬆地將來自所有受監視來源的資料相互關聯，而且您可以用各種方式以互動方式分析資料。 這對於進行根本原因分析和識別可能發生問題的位置特別有説明。
 
-## <a name="health-monitoring"></a>健康狀況監視
+## <a name="health-monitoring"></a>健康狀態監視
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -135,7 +135,7 @@ Azure 監視器不會提供使用者可定義的方法來執行服務模型或�
 
 - **適用於 VM 的 Azure 監視器：** 在監視 Windows 和 Linux 虛擬機器時，會提供來賓 Azure Vm 的健康狀態監視體驗，類似于 Operations Manager。 它會從可用性和效能的角度評估主要作業系統元件的健全狀況，以判斷目前的健全狀況狀態。 當它判斷來賓 VM 遇到持續的資源使用率、磁碟空間容量或與核心作業系統功能相關的問題時，它會產生警示，讓這種狀態成為您的注意。
 
-- **適用于容器的 Azure 監視器：** 監視 Azure Kubernetes Service 或 Azure 容器實例的效能和健康情況。 它可透過計量 API 從 Kubernetes 中提供的控制器、節點與容器收集記憶體與處理器計量。 它也會收集容器記錄和容器和其映射的清查資料。 根據收集到的效能資料，預先定義的健全準則可協助您識別資源瓶頸或容量問題是否存在。 您也可以瞭解整體效能，或來自特定 Kubernetes 物件類型（pod、節點、控制器或容器）的效能。
+- **適用于容器的 Azure 監視器：** 監視 Azure Kubernetes Service 或 Azure 容器實例的效能和健康情況。 它可透過計量 API 從 Kubernetes 中提供的控制器、節點與容器收集記憶體與處理器計量。 它也會收集容器記錄和容器和其映射的清查資料。 根據收集到的效能資料，預先定義的健全準則可協助您識別資源瓶頸或容量問題是否存在。 您也可以瞭解整體效能，或從特定 Kubernetes 物件類型 (pod、節點、控制器或容器) 的效能。
 
 ## <a name="analyze-data"></a>分析資料
 
@@ -187,7 +187,7 @@ Azure 監視器會將資料收集與取自該資料的動作和分析分隔開�
 
 Operations Manager 會在管理元件中執行所有監視邏輯，您可以自行建立或從美國或合作夥伴取得。 當您安裝管理元件時，它會自動探索不同代理程式上的應用程式或服務元件，並部署適當的規則和監視。 此管理元件包含健全狀況定義、警示規則、效能和事件集合規則和 views，以提供支援基礎結構服務或應用程式的完整監視。
 
-Operations Manager SDK 可讓 Operations Manager 與協力廠商監視平臺或 IT 服務管理（ITSM）軟體整合。 某些合作夥伴管理元件也會使用 SDK 來支援監視網路裝置，並提供自訂的呈現體驗，例如方形 Up HTML5 儀表板或與 Microsoft Office Visio 的整合。
+Operations Manager SDK 可讓 Operations Manager 與協力廠商監視平臺或 IT 服務管理 (ITSM) 軟體整合。 某些合作夥伴管理元件也會使用 SDK 來支援監視網路裝置，並提供自訂的呈現體驗，例如方形 Up HTML5 儀表板或與 Microsoft Office Visio 的整合。
 
 ### <a name="azure-monitor"></a>Azure 監視器
 

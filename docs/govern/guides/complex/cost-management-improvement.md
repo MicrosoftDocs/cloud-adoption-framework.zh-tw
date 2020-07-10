@@ -1,6 +1,6 @@
 ---
 title: 複雜的企業治理：改善成本管理專業領域
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將成本控制新增至治理最低可行產品（MVP）。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將成本控制新增至治理最低可行產品 (MVP) 。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5a193c9b54bac12023130b6e365f866dc8f3ca36
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075574"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191649"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雜企業的治理指南：改善成本管理專業領域
 
-本文藉由將成本控制新增至最基本的可行產品（MVP）治理來推進敘述。
+本文藉由將成本控制新增至最小可行產品 (MVP) 治理來推進敘述。
 
 ## <a name="advancing-the-narrative"></a>推進敘述
 
@@ -57,7 +57,7 @@ ms.locfileid: "85075574"
 - 所有成本必須針對權責目的配置給業務功能。
 - 應該針對最佳化商機持續監視雲端資產。
 - 雲端治理工具必須將資產調整大小選項限制為已核准的設定清單。 此工具必須確保所有資產都可探索且可透過成本監視解決方案來追蹤。
-- 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 本檔將協助您精簡預算並準備額外的自動化工具，以避免使用較昂貴的選項。 在此流程期間，應該考量雲端提供者提供的不同折扣工具，例如保留執行個體或授權成本降低。
+- 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 本檔將協助您精簡預算並準備額外的自動化工具，以避免使用較昂貴的選項。 在此過程中，應提供給雲端提供者所提供的不同折扣工具，例如 Azure 保留的虛擬機器執行個體或授權成本降低。
 - 所有應用程式擁有者都必須參加將工作負載最佳化的實務訓練，以更好的方式來控制雲端成本。
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>改善最佳做法的增量

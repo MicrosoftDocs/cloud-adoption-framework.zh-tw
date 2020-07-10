@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fdc852b97916d0055c1193be384b3c6e44599182
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222006"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194318"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "83222006"
 在評估過程中，架構設計人員將會針對每個工作負載設計解決方案。 下列 skilling 資源有助於準備架構設計人員以進行這些工作：
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一個 Pluralsight 課程，可協助架構設計正確的基礎解決方案。
-- [Microsoft Azure 架構消費者入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 課程，讓架構設計人員在 Azure 架構中具備基本知識。
+- [Microsoft Azure 架構：消費者入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 課程，讓架構設計人員在 Azure 架構中具備基本知識。
 - [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing)：一種 Pluralsight 課程，可協助架構設計師設計遷移解決方案。
 
 ## <a name="migrate-skilling-resources"></a>遷移技能資源

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 65a201886f9cbc67a58aa5bd14f53e928d4495b8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: d328511742fe63d540e51025f636d56070857abd
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076508"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193893"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -29,7 +29,7 @@ ms.locfileid: "85076508"
 
 ![開始在 Azure 中進行遷移](../_images/get-started/migration-map.png)
 
-如果您的遷移案例不尋常，您可以使用[策略性的遷移和準備工具（智慧型）評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 使用它來識別最符合您目前需求的指導方針。
+如果您的遷移案例不是典型的，您可以使用[策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 使用它來識別最符合您目前需求的指導方針。
 
 ## <a name="get-started"></a>開始使用
 
@@ -118,7 +118,7 @@ ms.locfileid: "85076508"
 - [雲端採用方案範本](../plan/template.md)：部署基本範本。
 - [工作負載對齊](../plan/workloads.md)：定義待處理專案中的工作負載。
 - [工作量調整](../plan/assets.md)：對齊待處理專案中的資產和工作負載，以清楚地定義優先順序工作負載的工作量。
-- [人員和時間對齊](../plan/iteration-paths.md)：針對遷移的工作負載建立反復專案、速度（人員的時間）和版本。
+- [人員和時間對齊](../plan/iteration-paths.md)：針對遷移的工作負載，建立反復專案、速度 (人員的時間) 和發行。
 
 **項**
 
@@ -177,7 +177,7 @@ ms.locfileid: "85076508"
 
 ## <a name="step-8-migrate-your-first-10-workloads"></a>步驟8：遷移您的前10個工作負載
 
-遷移前10個工作負載所需的技術工作相當簡單。 這也是您在遷移更多資產時重複的反復程式。 在此程式中，您會評估您的工作負載（請參閱步驟4），部署您的工作負載，然後將其發行至您的生產環境。
+遷移前10個工作負載所需的技術工作相當簡單。 這也是您在遷移更多資產時重複的反復程式。 在此程式中，您會評估工作負載 (查看步驟 4) 、部署您的工作負載，然後將其發行至您的生產環境。
 
 ![反復式遷移工作的階段：評估、部署、發行](../_images/migrate/methodology-effort-only.png)
 
@@ -185,7 +185,7 @@ ms.locfileid: "85076508"
 
 在每次反覆運算中，雲端採用小組在遷移工作負載方面都更好。 這些步驟會在此成熟度曲線上啟動技術小組：
 
-1. 使用[Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，以純粹的資訊即服務（IaaS）方法遷移您的第一個工作負載。
+1. 使用[Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，在純粹的資訊即服務中遷移您的第一個工作負載 (IaaS) 方法。
 2. 使用[遷移案例](../migrate/azure-best-practices/contoso-migration-overview.md)，展開 [工具] 選項以使用遷移和現代化。
 3. 使用[遷移最佳做法](../migrate/azure-best-practices/index.md)中所述的更廣泛方法來開發您的技術策略。
 4. 透過有效率的遷移 factory 方法來改善一致性、可靠性和效能，如遷移程式[改善](../migrate/migration-considerations/index.md)中所述。
@@ -206,7 +206,7 @@ ms.locfileid: "85076508"
 治理是長期成功進行任何遷移工作的關鍵因素。 加速遷移和業務影響很重要。 但是，沒有治理的速度可能會造成危險。 您的組織需要做出關於治理的決策，以符合您的採用模式和您的治理和合規性需求。
 
 - [治理方法](../govern/index.md)：此方法概述考慮公司原則和流程的程式。 然後，您就可以建立在雲端企業採用工作的治理上所需的專業領域。
-- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及部署加速專業領域，這是建立治理最低可行產品（MVP）以作為所有採用基礎的必要條件。
+- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及部署加速專業領域，這是建立治理最小可行產品 (MVP) 以作為所有採用的基礎。
 
 **項**
 
@@ -254,7 +254,7 @@ Operations management 是另一項需求，可達到遷移成功。 將個別工
 
 雲端採用架構是生命週期解決方案。 它可協助您開始進行遷移旅程。 它也可以協助您提升支援遷移工作的小組成熟度。 下列小組可以使用這些後續步驟來繼續提升其工作的成熟度。 這些平行處理常式不是線性的，而且不應該被視為封鎖器。 相反地，每個都是平行值串流，以協助您的公司整體雲端就緒程度成熟。
 
-| 小組  | 下一次反復專案 |
+| 小組 | 下一次反復專案 |
 |---|---|
 | 雲端 &nbsp; 採用 &nbsp; 小組 | 程式[改善](../migrate/migration-considerations/index.md)可讓您深入瞭解如何透過有效率的持續遷移功能，移往遷移工廠。 |
 | 雲端 &nbsp; 策略 &nbsp; 小組 | [策略方法](../strategy/index.md)和[計畫方法](../plan/index.md)是以採用計畫發展的反復流程。 返回這些總覽頁面，並繼續逐一查看您的商務和技術策略。 |
@@ -262,4 +262,4 @@ Operations management 是另一項需求，可達到遷移成功。 將個別工
 | 雲端 &nbsp; 治理 &nbsp; 小組 | 使用[管控方法](../govern/index.md)來繼續改善治理流程、原則和專業領域。 |
 | 雲端 &nbsp; 營運 &nbsp; 小組 | 建基於[管理方法](../manage/index.md)，以在 Azure 中提供更豐富的作業。 |
 
-如果您的遷移案例不尋常，您可以使用[策略性的遷移和準備工具（智慧型）評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 根據您在進行評估時提供的答案，我們可以協助您找出最符合您目前需求的指導方針。
+如果您的遷移案例不是典型的，您可以使用[策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 根據您在進行評估時提供的答案，我們可以協助您找出最符合您目前需求的指導方針。

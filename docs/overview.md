@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: d65bffde98974ce9326a33884257ecc9e681fe50
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 576c6d1fecc908011edeb447595e025819439cc7
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787685"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193998"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -42,9 +42,9 @@ ms.locfileid: "84787685"
 
 上述每個方法都屬於廣泛的雲端採用生命週期。 雲端採用架構是一種完整的生命週期架構，可在每個採用階段支援客戶，方法是提供方法來克服常見的封鎖程式，如下所示。
 
-::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
+![雲端採用架構的總覽](./_images/caf-overview-new.png)
 
-## <a name="intent"></a>Intent
+## <a name="intent"></a>意圖
 
 雲端徹底改變企業採購、使用和保護技術資源的方式。 傳統上，企業要承擔從基礎結構到軟體等所有技術層面的擁有權和責任。 移至雲端可讓企業只在需要時才佈建及取用資源。 雖然雲端對於設計選擇提供大量彈性，但企業需要經過實證且一致的方法來採用雲端技術。 適用於 Azure 的 Microsoft 雲端採用架構符合該需求，它能協助指引進行雲端採用的決策。
 

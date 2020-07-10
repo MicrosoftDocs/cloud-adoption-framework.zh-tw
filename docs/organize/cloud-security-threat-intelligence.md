@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b73dd0cc766e9e4a8fedb93a3d59b154da4dd504
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b23385287ac592f019e917ca67f685d4a824100b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755318"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194250"
 ---
 # <a name="function-of-cloud-threat-intelligence"></a>雲端威脅情報的功能
 
@@ -20,12 +20,12 @@ ms.locfileid: "83755318"
 
 ## <a name="modernization"></a>現代化
 
-威脅情報團隊既新興又進化，以符合安全性作業中心（SOC）和其他管理組織安全性風險的需求。
+威脅情報團隊既有新興又進化，以符合安全性作業中心 (SOC) 和其他管理組織安全性風險的需求。
 
 這些小組應該著重于包含下列各項的策略：
 
 - 專為主管物件量身打造的**策略性威脅情報**，可增加對網路安全性風險、資金資助需求的認知，並支援組織領導能力所做出的合理風險決策。
-- **增量程式成長**以提供快速的事件支援，併發展成威脅情報平臺（秘訣）來追蹤和通知專案關係人。
+- **增量程式成長**可提供快速的事件支援，併發展成威脅情報平臺來追蹤和通知專案關係人。
 - **策略性和營運威脅情報**，以引導在事件調查和威脅偵測期間進行決策。
 
 ## <a name="team-composition-and-key-relationships"></a>小組撰寫和按鍵關聯性

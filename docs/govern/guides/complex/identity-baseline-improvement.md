@@ -1,6 +1,6 @@
 ---
 title: 複雜的企業治理：改善身分識別基準專業領域
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將身分識別基準控制新增至治理最低可行產品（MVP）。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將身分識別基準控制新增至治理最低可行產品 (MVP) 。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 52131e3d5fd93eb48ee0cbc941f5cffe48375daf
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754939"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191547"
 ---
-<!-- cSpell:ignore CFO's MPLS -->
+<!-- cSpell:ignore MPLS -->
 
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -27,7 +27,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 - 受保護的資料及任務關鍵性應用程式佔了兩個資料中心 25% 的工作負載。 在現代化機密個人資料和任務關鍵性應用程式的目前治理原則之前，都不能完全消除。
 - 這些資料中心的7% 資產不是雲端相容。 其會先移至替代的資料中心，再終止資料中心的合約。
-- 資料中心內的15% 資產（750虛擬機器）相依于舊版驗證或協力廠商多重要素驗證。
+- 資料中心內的15% 資產 (750 虛擬機器) 相依于舊版驗證或協力廠商多重要素驗證。
 - 連結現有資料中心與 Azure 的 VPN 連線未提供足夠的資料傳輸速度或延遲，因而無法在兩年內遷移大量資產，從而淘汰資料中心。
 
 前兩個障礙會以平行方式進行管理。 本文會講述第三個和第四個障礙的解決方案。
@@ -38,7 +38,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 ### <a name="changes-in-the-current-state"></a>目前狀態的變更
 
-公司已核准 IT 小組進行 CIO 和 CFO 想要將兩個資料中心淘汰的計劃。 小組擔心750（15%）這些資料中心的資產必須移動到雲端以外的地方。
+IT 小組已核准要繼續進行 CIO 和 CFO 的計畫，以淘汰兩個資料中心。 小組擔心，這些資料中心的資產 750 (15% ) 必須移動到雲端以外的地方。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 
