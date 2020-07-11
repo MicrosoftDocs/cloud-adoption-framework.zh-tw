@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fcb032fdc6e4473e6a9c4a1c24f882d870d51bd3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 280c2712528f0dd5b46bc17af6fde416ba499661
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192635"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235087"
 ---
 <!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
@@ -99,7 +99,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 | [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 根據功能、儲存體和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
 | [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建置、部署和調整在任何平台上執行的企業級 Web、行動裝置和 API 應用程式。 | App Service 計畫會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -116,7 +116,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 > [!div class="checklist"]
 >
 > - **步驟1：布建 AKS 和 Azure Container Registry。** Contoso 會使用 PowerShell 布建受控 AKS 叢集和容器登錄。
-> - **步驟2：建立 docker 容器。** 他們會使用 Azure DevOps 設定 docker 容器的持續整合 (CI) ，並將其推送至容器登錄。
+> - **步驟2：建立 Docker 容器。** 他們會使用 Azure DevOps 設定 Docker 容器的持續整合 (CI) ，並將其推送至容器登錄。
 > - **步驟3：部署後端微服務。** 他們會部署基礎結構的其餘部分，以供後端微服務使用。
 > - **步驟4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 Blob 儲存體、Azure Cosmos DB 和電腦視覺 API。
 > - **步驟5：遷移後端。** 他們會部署微服務並在 AKS 上執行，以遷移後端。
@@ -231,10 +231,10 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
     ![Azure DevOps ](./media/contoso-migration-rebuild/vsts9.png)
      _圖20：工作的細節。_
 
-11. 現在，他們會設定第二個 docker 工作 (以推送) 。 他們會選取訂用帳戶和容器登錄 (`smarthotelacreus2`) 。
+11. 現在，他們會設定第二個 Docker 工作 (用來推送)。 他們會選取訂用帳戶和容器登錄 (`smarthotelacreus2`) 。
 
     ![Azure DevOps ](./media/contoso-migration-rebuild/vsts10.png)
-     _圖21：設定第二個 docker 工作。_
+     _圖21：設定第二個 Docker 工作。_
 
 12. 他們會將檔案輸入至檔案， `docker-compose.yaml` 然後選取 [**推送服務映射**]，包括最新的標記。 當動作變更為 [推送服務映像]**** 時，Azure DevOps 工作的名稱會變更為 [自動推送服務]****。
 
@@ -258,7 +258,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 
 ### <a name="deploy-the-back-end-infrastructure"></a>部署後端基礎結構
 
-建立 AKS 叢集並建立 docker 映射後，Contoso 管理員現在會部署後端微服務所使用的基礎結構的其餘部分。 一節中的指示使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。 在 `/deploy/k8s/arm` 資料夾中，有一個腳本可建立所有專案。
+建立 AKS 叢集並建置 Docker 映像之後，Contoso 管理員現在會部署將供後端微服務使用的基礎結構其餘部分。 一節中的指示使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。 在 `/deploy/k8s/arm` 資料夾中，有一個腳本可建立所有專案。
 
 他們會如下所示地進行部署：
 
@@ -290,7 +290,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 
     ![資料庫連接 ](./media/contoso-migration-rebuild/back-pipe1.png) _圖28：資料庫連接。_
 
-2. 他們會開啟 Azure DevOps 並在 SmartHotel360 專案中，選取 [**發行**] 中的 [ **+ 新增管線**]。
+2. 他們會開啟 Azure DevOps，而在 SmartHotel360 專案中，他們會選取 [**發行**] 中的 [ **+ 新增管線**]。
 
     ![新管線 ](./media/contoso-migration-rebuild/back-pipe2.png) _Figure 29：新的管線。
 
@@ -512,7 +512,7 @@ Contoso 管理員現在已可發佈網站。
      _圖65：啟用持續部署。_
 
 11. 在 [環境]**** 中，他們會選取 [Staging]**** 底下的 [1 個作業, 1 個工作]****。
-12. 選取訂用帳戶和應用程式名稱之後，他們會開啟 [**部署 Azure App Service** ] 工作。 此部署已設定成使用 [預備環境]**** 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
+12. 選取訂用帳戶和 web 應用程式名稱之後，他們會開啟 [**部署 Azure App Service** ] 工作。 此部署已設定成使用 [預備環境]**** 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
 
      ![插槽 ](./media/contoso-migration-rebuild/vsts-publish-front7.png)
      _圖66：使用插槽。_
@@ -523,7 +523,7 @@ Contoso 管理員現在已可發佈網站。
      _圖67：加入新的階段。_
 
 14. 他們會選取 [使用位置的 Azure App Service 部署]**** 然後將環境命名為 **Prod**。
-15. 他們會選取 [ **1 個作業]、[2 個工作**]，然後選取 [訂用帳戶]、[app service 名稱] 和**預備**位置。
+15. 他們會選取 [ **1 個作業]、[2 個工作**]，然後選取訂用帳戶、應用程式服務名稱和**預備**位置。
 
     ![環境名稱 ](./media/contoso-migration-rebuild/vsts-publish-front10.png)
      _圖68：環境名稱。_

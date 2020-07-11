@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 749061a5789883f866c28f81aa8a8ed1fc9841b7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 0ba6ea1cf22b2a13ba17f43e356d657e574396e9
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194046"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234322"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -94,7 +94,7 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具無代理程式方法，�
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | 此服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 實例的遷移。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 當遷移發生且 Vm 在 Azure 中執行時，會建立 Azure Vm 並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 

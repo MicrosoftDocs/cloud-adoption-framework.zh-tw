@@ -1,5 +1,5 @@
 ---
-title: 反覆項目和發行待處理項目
+title: 反復專案和發行待處理專案
 description: 使用適用于 Azure 的雲端採用架構，以瞭解如何建立反復專案和發行待處理專案來組織您的工作。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 90b6ecf9f7f4914855bbeeaa0afc5d920a85eeb4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d8b54ef557be065088ea853009b12ac436bb4f99
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214186"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234951"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>管理累加移轉工作中的變更
 
@@ -20,7 +20,7 @@ ms.locfileid: "83214186"
 
 ## <a name="release-backlog"></a>發行待處理項目
 
-_發行待處理項目_由一系列的資產 (VM、資料庫、檔案和應用程式等) 所組成，必須先移轉這些資產後，才能發行工作負載以供雲端中的生產環境使用。 在每個反覆項目的執行期間，雲端採用小組都會記錄並預估將每個資產移至雲端所需的工作。 請參閱下面的「反覆項目待處理項目」一節。
+_發行待處理項目_由一系列的資產 (VM、資料庫、檔案和應用程式等) 所組成，必須先移轉這些資產後，才能發行工作負載以供雲端中的生產環境使用。 在每個反覆項目的執行期間，雲端採用小組都會記錄並預估將每個資產移至雲端所需的工作。 請參閱下面的「反復專案待處理專案」一節。
 
 ## <a name="iteration-backlog"></a>反覆項目待處理項目
 

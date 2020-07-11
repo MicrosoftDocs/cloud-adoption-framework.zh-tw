@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1ad15b56f268791b86886d0e2667475231ea8eb6
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 07d57372adc8aadcac25f3eb7bd406dabff2a80f
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193094"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233880"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -49,7 +49,7 @@ Azure 監視器是 Azure 原生平臺服務，可提供用來監視 Azure 資源
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能計量的 Azure 資料庫。 | 啟用診斷記錄以將 SQL 資料串流至 Azure 監視器記錄。 |
 | Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure 應用程式閘道 <br>  3. 網路安全性群組 <br>  4. Azure 流量管理員 <br>  5. Azure 虛擬機器 <br>  6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br>  2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br>  3. 在套用規則時監視事件，以及規則套用到拒絕或允許的次數的規則計數器。 <br>  4. 監視端點狀態可用性。 <br>  5. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線的可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構的埠。 <br>  6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。 <br>  2. 啟用診斷記錄，並設定串流以 Azure 監視器記錄。 <br>  3. 啟用網路安全性群組的診斷記錄，並設定串流以 Azure 監視器記錄。 <br>  4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br>  5. 啟用適用於 VM 的 Azure 監視器。 <br>  6. 啟用容器的 Azure 監視器。 |
 | 網路 | 您的虛擬機器與一或多個端點之間的通訊 (另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址) 。 | 監視在 VM 與端點之間發生的可連線性、延遲和網路拓撲變更。 | Azure 網路監看員。 |
-| Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。 <li> 具有 Azure 服務的服務健全狀況處於降級或無法使用的狀態。 <li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。 <li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。 |
+| Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 在服務或資源上執行的系統管理動作。 <li> Azure 服務的服務健全狀況處於降級或無法使用的狀態。 <li> 從 Azure 服務的觀點來看，偵測到 Azure 資源的健康情況問題。 <li> 使用 Azure 自動調整執行的作業會指出失敗或例外狀況。 <li> 以 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 在活動記錄中傳遞，以使用 Azure Resource Manager 進行監視和警示。 |
 | Azure 租用戶 | Azure Active Directory | 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 |
 
 ## <a name="hybrid-cloud-monitoring"></a>混合式雲端監視

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0f5735a9b61f2ab59ff129ef37b3ee1e90a4c40d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a23b0355fab1f921935f109ce77c0fd79d49cda5
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86197895"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233608"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -107,7 +107,7 @@ Contoso 必須設定從其內部部署環境到其 MySQL 資料庫所在之虛�
 ![遷移程式 ](./media/contoso-migration-mysql-to-azure/migration-process.png)
  _圖2：遷移程式。_
 
-#### <a name="migration"></a>遷移
+#### <a name="migration"></a>移轉
 
 Contoso 管理員會使用 Azure 資料庫移轉服務，透過[逐步執行遷移教學](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)課程來遷移資料庫。 他們可以使用 MySQL 5.6 或5.7，執行線上、離線和混合式 (預覽) 遷移。
 
@@ -119,7 +119,7 @@ Contoso 管理員會使用 Azure 資料庫移轉服務，透過[逐步執行遷�
 - 確保符合所有的遷移必要條件：
 
   - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版本、InnoDB 儲存引擎，以及跨來源與目標的相同版本進行遷移。
-  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會導致遷移嚮導發生下列錯誤： `error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 。
+  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會導致遷移嚮導發生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 。
   - 使用者必須擁有 `ReplicationAdmin` 角色。
   - 不搭配外鍵和觸發程式來遷移資料庫架構。
 

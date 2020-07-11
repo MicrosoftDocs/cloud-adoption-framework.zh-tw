@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4986b8890df72abc12c2f377881995dcf070c575
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 89f1f986bbe38162745e592e450ed13591936ad7
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193978"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234183"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -61,7 +61,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 既然 Contoso 已將商務驅動程式和遷移目標保持在最下層，它可以符合[遷移方法](../index.md)，並建立遷移波浪和遷移短期衝刺的應用，以反復規劃和執行遷移工作。
 
-## <a name="plan"></a>方案
+## <a name="plan"></a>計畫
 
 Contoso 會探索並評估內部部署應用程式、資料和基礎結構，以開始進行規劃流程。 以下是 Contoso 將採取的做法：
 
@@ -315,7 +315,7 @@ Contoso 也會使用指令碼來找出未使用的資源。
 
 ### <a name="partner-optimization-tools"></a>合作夥伴最佳化工具
 
-您可以使用 [Hanu](https://hanu.com/insight) 和 [Scalr]( https://www.scalr.com/cost-optimization) 等合作夥伴工具。
+您可以使用 [Hanu](https://hanu.com/insight) 和 [Scalr](https://www.scalr.com/cost-optimization) 等合作夥伴工具。
 
 ## <a name="phase-4-secure-and-manage"></a>第4階段：保護和管理
 

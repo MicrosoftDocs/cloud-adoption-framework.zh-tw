@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 85d8a6f4b7dab234e2a47d1cc3f7eef45f0baa61
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 4beabe757ae299dac06cbcdc1764ffa786ca5c74
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194369"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235308"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>針對文化複雜度做準備：調整角色和責任
 

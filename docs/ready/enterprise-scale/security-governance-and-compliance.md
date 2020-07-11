@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 21062ce8842f74e067e19518abfba4e1c6300813
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 4cb0baf0a5f64b2720ef9cf8c3a4b6dae6299688
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195219"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235274"
 ---
 # <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF 企業級的安全性治理與合規性
 
@@ -220,7 +220,7 @@ ms.locfileid: "86195219"
 |                              | 多重要素驗證和條件式存取                                            | 是否強制執行多重要素驗證以進行使用者對服務的互動？                                                                                            |
 | 控管                   | 資料匯出和匯入                                                  | 服務是否可讓您安全地匯入和匯出資料？                                                                     |
 |                              | 資料隱私權和使用方式                                                  | Microsoft 工程師可以存取資料嗎？                                                                                                     |
-|                              |                                                                       | 是否有任何 Microsoft 支援與服務互動？                                                                               |
+|                              |                                                                       | 是否有任何 Microsoft 支援服務與服務互動的情況？                                                                               |
 |                              | 資料存留處                                                        | 是否包含服務部署區域的資料？                                                                                          |
 | 作業                   | 監視                                                            | 服務是否與 Azure 監視器整合？                                                                                               |
 |                              | 備份管理                                                     | 需要備份哪些工作負載資料？                                                                                                       |

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: b6844f1f3dbb6dd2288ececd4ff3f95c77093bc0
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 88c6225915e023bfd148cc0663c7781a11af730d
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195083"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235410"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -195,7 +195,7 @@ VDC 的上述高階概念架構顯示不同中樞輪輻拓撲區域中所使用�
 
 VDC 的設計是為了讓中央 IT 小組（管理中樞）所建立的群組具有工作負載層級的對應群組。 除了管理中樞資源之外，中央 IT 小組可以控制外部存取，以及訂用帳戶的最上層許可權。 工作負載群組也可以獨立控制其虛擬網路的資源和許可權，而不受中央 IT 小組的影響。
 
-虛擬資料中心已分割，可安全地跨不同的企業營運裝載多個專案。 所有專案都需要不同的隔離環境 (Dev、UAT 和生產) 。 這些環境的個別 Azure 訂用帳戶可以提供自然隔離。
+虛擬資料中心已分割，可安全地跨不同的企業營運裝載多個專案。 所有專案都需要不同的隔離環境 (dev、UAT 和生產) 。 這些環境的個別 Azure 訂用帳戶可以提供自然隔離。
 
 ![5][5]
 
@@ -418,7 +418,7 @@ Azure 資料中心存在於全球許多地區。 選取多個 Azure 資料中心
 
 <!-- markdownlint-disable MD033 -->
 
-| 網路功能 | 負載平衡 | 連線能力 |
+| 網路功能 | 負載平衡 | 連接性 |
 | --- | --- | --- |
 | [Azure 虛擬網路][virtual-network] <br> [網路安全性群組][NSG] <br> [服務端點][ServiceEndpoints] <br> [私人連結][PrivateLink] <br> [使用者定義的路由][UDR] <br> [網路虛擬設備][NVA] <br> [公用 IP 位址][PIP] <br> [Azure DNS][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer (L4) ][ALB] <br> [應用程式閘道 (L7) ][AppGW] <br> [Azure 流量管理員][azure-traffic-manager] <br><br><br><br><br> | [虛擬網路對等互連][virtual-network-peering] <br> [虛擬私人網路][VPN] <br> [虛擬 WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [ExpressRoute Direct][ExRD] <br><br><br><br><br> |
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 2184c91ee8f8f3c418b240e74fa7210a4b8472f3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 64bda0e0b1cd39bdbc859b55ea52e0d0273bad5b
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192981"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234288"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -591,7 +591,7 @@ Contoso 管理員認為 Azure DNS 服務在混合式環境中並非理想的選�
 
 6. 然後，在 [檔案**和存放服務**] 中，他們會執行 [新增磁片區嚮導]，以確保本機 VM 上的磁片磁碟機已指派字母 F：或以上。
 
-     ![新的 volume wizard ](./media/contoso-migration-infrastructure/volume-wizard.png) _圖31：新的 volume wizard。_
+     ![新增磁片區嚮導 ](./media/contoso-migration-infrastructure/volume-wizard.png) _圖31：新增磁片區嚮導。_
 
 7. 在伺服器管理員中，他們新增 [Active Directory Domain Services]**** 角色。 接著，他們將 VM 設定為網域控制站。
 

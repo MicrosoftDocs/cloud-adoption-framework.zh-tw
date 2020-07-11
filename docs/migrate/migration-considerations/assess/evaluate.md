@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7666a937e59d9e528cb7337e83ab3ec4a20b448b
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6cfa7478224185ca5be1535a50f7cdfe785617a7
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401330"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235002"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 
@@ -33,8 +33,8 @@ ms.locfileid: "83401330"
 
 ## <a name="common-database-evaluation-activities"></a>一般資料庫評估活動
 
-- 記錄目前資料庫部署的復原點目標（Rpo）和復原時間目標（Rto）。 這些是在[架構活動](./architect.md)期間用來協助進行決策。
-- 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱 [SQL Server 高可用性解決方案指南](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)。
+- 記錄復原點目標 (Rpo) 和復原時間目標 (目前資料庫部署的 Rto) 。 這些是在[架構活動](./architect.md)期間用來協助進行決策。
+- 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱[SQL Server 高可用性解決方案指南](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)。
 - 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應至相容的 Azure PaaS 解決方案，[例如 Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)、 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database) [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql)、[適用於 PostgreSQL 的 Azure 資料庫](https://docs.microsoft.com/azure/postgresql)或[適用於 MariaDB 的 Azure 資料庫](https://docs.microsoft.com/azure/mariadb)。
 - 當 PaaS 相容性是不需要任何補救的選項時，請洽詢負責[架構活動](./architect.md)的小組。 PaaS 移轉可以大幅節省時間，並降低大部分雲端解決方案的擁有權總成本 (TCO)。
 - 當 PaaS 相容性是需要補救的選項時，請洽詢負責[架構活動](./architect.md)和[補救活動](../migrate/remediate.md)的小組。 在許多情況下，資料庫解決方案的 PaaS 移轉優點可能會超越補救時間的增加。

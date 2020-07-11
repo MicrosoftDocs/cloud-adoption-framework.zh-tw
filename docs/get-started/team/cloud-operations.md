@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 08090044ab0d97f8bdcf5258b0df0cbcb4c54bcd
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 27d633b20419b49e32ba1296318e67098d9a7ba9
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075767"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233347"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -29,7 +29,7 @@ ms.locfileid: "85075767"
 **項**
 
 - 判斷您是否需要雲端作業小組。
-- 記錄工作表中[RACI （負責、參與、諮詢和通知）範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中的決策和責任人員 `Org Alignment` 。
+- 藉由開發跨團隊的矩陣，識別負責、參與、_諮詢和通知的 (RACI) _方，來協調小組間的責任。 記錄工作表中[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)的決策和責任人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
@@ -195,7 +195,7 @@ ms.locfileid: "85075767"
 
 ## <a name="whats-next"></a>後續步驟
 
-隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成雲端的卓越中心（CCoE）小組是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
+隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成卓越 (CCoE) 團隊的雲端中心，是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
 
 深入了解：
 

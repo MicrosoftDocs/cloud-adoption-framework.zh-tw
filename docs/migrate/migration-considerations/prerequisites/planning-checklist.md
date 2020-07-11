@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5e36757cd187b42a9ff8b976db886feb55f1b2e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fe42f3cc8e2003dd73dc191225173d2270d53190
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223519"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235325"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
 
@@ -55,7 +55,7 @@ ms.locfileid: "83223519"
 
 ### <a name="resource-governance"></a>資源管理
 
-在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 雲端治理小組應該在進行遷移之前，定義和要求治理工具的最低可行產品（MVP）實行。
+在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 雲端治理小組應該在進行遷移之前，定義和要求在治理工具上執行最基本的可行產品 (MVP) 。
 
 ## <a name="network"></a>網路
 

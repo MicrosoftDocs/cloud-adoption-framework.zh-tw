@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d5c511d1e32ae57679157a2baf28efc75a7cb4c3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: cbd6be4f5c0724a4477c43ad1a772c141c08c500
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192232"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234747"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -85,7 +85,7 @@ Contoso 會按照下列方式完成移轉程序：
 | [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務可在停機時間最短的情況之下，從多個資料庫來源順暢地遷移至 Azure 資料平臺。 | 瞭解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[Azure 資料庫移轉服務的定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫[定價](https://azure.microsoft.com/pricing/details/mysql)和擴充性選項。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -291,7 +291,7 @@ Contoso 管理員會遵循[逐步遷移教學](https://docs.microsoft.com/azure/
 - 確保符合所有的遷移必要條件：
 
   - MySQL 伺服器資料庫來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版本、InnoDB 儲存引擎，以及跨來源與目標的相同版本進行遷移。
-  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會導致下列錯誤：在 `error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 遷移嚮導期間發生錯誤。
+  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會導致遷移嚮導發生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 。
   - 使用者必須擁有 `ReplicationAdmin` 角色。
   - 不搭配外鍵和觸發程式來遷移資料庫架構。
 
@@ -427,6 +427,8 @@ Contoso 安全性小組會檢閱 VM 和資料庫，判斷是否有任何的安�
 - VM 與資料庫執行個體之間的通訊並未針對 SSL 進行設定。 他們必須這麼做，才能確保資料庫流量不會遭到駭客入侵。
 
 如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
+
+<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="bcdr"></a>BCDR
 

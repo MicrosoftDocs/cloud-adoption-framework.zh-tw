@@ -1,18 +1,18 @@
 ---
 title: 改善作業
 description: 使用雲端採用架構來改善作業。 這些案例可協助您進行成本管理、安全性、可靠性、效能等。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b3f72f4fb73550c3e2a421cb9965b8ac0c75b80e
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 367c4061e8f69c7335fb1816b804daf993e3abe2
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786070"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233489"
 ---
 # <a name="improve-operations"></a>改善作業
 

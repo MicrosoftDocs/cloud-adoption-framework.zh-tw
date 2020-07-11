@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cf542a7d40e58f7da8ec94303dc4c815d71ad4
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: ca1de29006790b2a80d889057e67147b40ba96f8
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194131"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234135"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -83,7 +83,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 
 與您管理自己的 Vm 和基礎結構的 IaaS 不同，PaaS 模型平臺和基礎結構是由提供者所管理，讓您專注于核心應用程式邏輯和功能。 由於 PaaS 服務類型眾多，因此基於安全性目的，我們會對每個服務進行個別評估。 例如，讓我們看看要如何針對 Azure SQL 資料庫啟用加密。
 
-- **Always Encrypted：** 使用 SQL Server Management Studio 中的 Always Encrypted wizard 來保護待用資料。
+- **Always Encrypted：** 使用 SQL Server Management Studio 中的 Always Encrypted Wizard 來保護待用資料。
   - 您會建立 Always Encrypted 金鑰來加密個別的資料行資料。
   - Always Encrypted 金鑰能以加密的形式儲存在資料庫中繼資料中，或是儲存在受信任的金鑰存放區中，例如 Azure Key Vault。
   - 使用此功能時，可能需要進行應用程式變更。
@@ -129,7 +129,7 @@ Azure 能提供數個解決方案：
   - 應用程式可以使用 Uri 安全地存取保存庫中的資訊，而不需要自訂程式碼。
   - Azure Key Vault 可讓您透過 Azure 安全性控制項來鎖定存取，以及順暢地實作「輪替金鑰」。 Microsoft 並無法查看或擷取您的資料。
 - **Azure App Service 環境：** 如果您遷移的應用程式需要額外的保護，請考慮新增 App Service 環境和 Web 應用程式防火牆來保護應用程式資源。
-  - Azure App Service 環境提供完全隔離且專用的環境，以執行 Windows 和 Linux web 應用程式、docker 容器、行動應用程式及函式應用程式等應用程式。
+  - Azure App Service 環境提供完全隔離且專用的環境，以執行 Windows 和 Linux web 應用程式、Docker 容器、行動應用程式及函式應用程式等應用程式。
   - 這適用于非常大規模的應用程式，需要隔離和安全的網路存取，或具有高記憶體使用率。
 - **Web 應用程式防火牆：** Azure 應用程式閘道的功能，可提供 web 應用程式的集中式保護。
   - 它能在無需後端程式碼修改的情況下保護 Web 應用程式。
@@ -276,7 +276,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 
 在 Azure 中建置安全、可擴充且可管理的工作負載，可能會是一件令人望之卻步的工作。 由於變更會持續發生，因此在顧及各種不同功能之下維持最佳化的環境，可能會相當困難。 在設計及移轉工作負載時，擁有可從中學習的參考可能會很有幫助。 Azure 和 Azure 合作夥伴已針對各種環境類型建置數個範例參考架構。 這些範例是設計來提供各種想法，以供您從中學習並將它作為建置範本。
 
-參考架構會依案例編排。 其中包含有關管理、可用性、擴充性和安全性的最佳做法和建議。 Azure App Service 環境提供完全隔離且專用的環境，以執行 Windows 和 Linux web 應用程式、docker 容器、行動應用程式和功能等應用程式。 App Service 能將 Azure 的功能新增到您的應用程式，其中包括安全性、負載平衡、自動調整和自動化管理。 您也可以利用它的 DevOps 功能，例如來自 Azure DevOps 和 GitHub 的持續部署、套件管理、預備環境、自訂網域和 SSL 憑證。 App Service 適用于需要隔離和安全網路存取的應用程式，以及使用大量記憶體和其他需要調整之資源的應用程式。
+參考架構會依案例編排。 其中包含有關管理、可用性、擴充性和安全性的最佳做法和建議。 Azure App Service 環境提供完全隔離且專用的環境，以執行 Windows 和 Linux web 應用程式、Docker 容器、行動應用程式和功能等應用程式。 App Service 能將 Azure 的功能新增到您的應用程式，其中包括安全性、負載平衡、自動調整和自動化管理。 您也可以利用它的 DevOps 功能，例如來自 Azure DevOps 和 GitHub 的持續部署、套件管理、預備環境、自訂網域和 SSL 憑證。 App Service 適用于需要隔離和安全網路存取的應用程式，以及使用大量記憶體和其他需要調整之資源的應用程式。
 
 **瞭解更多資訊：**
 
@@ -424,7 +424,7 @@ Azure 受控磁片會藉由管理與 VM 磁片相關聯的儲存體帳戶，來�
 
 您將工作負載移轉到 Azure 的原因，可能是為了它強大的擴充能力。 但移動您的工作負載並不表示 Azure 會自動執行調整，而不需要您輸入。 例如：
 
-- 如果您的行銷組織推播新的電視廣告，以提高300% 的流量，這可能會導致網站可用性問題。 您剛移轉完畢的工作負載可能會達到指派的限制並當機。
+- 如果您的行銷組織推播新的電視公告，以提高300% 的流量，這可能會導致網站可用性問題。 您剛移轉完畢的工作負載可能會達到指派的限制並當機。
 - 另一個範例則是對您已移轉的工作負載發動的分散式阻斷服務 (DDoS) 攻擊。 在此情況下，您可能不會想要進行調整，而是防止攻擊的來源處達您的資源。
 
 這兩個案例有著不同的解決方式，但都需要您透過使用量和效能監控，對正在發生的情況取得見解。

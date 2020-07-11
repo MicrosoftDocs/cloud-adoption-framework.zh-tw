@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a3b3acd34131a9974703619fdea7bb55c3d9be6e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d56c39085124c821f7989389cda9aea7e4673141
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192329"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234764"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -62,7 +62,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
   - Azure SQL Database 是受控關聯式資料庫服務。 其在多個服務層級上提供可預測的效能，而且幾乎免管理。 優點包括無須停機的動態延展性、內建智慧最佳化及全球延展性和可用性。
   - Contoso 可以使用輕量 Data Migration Assistant (DMA) 來評估 Azure SQL 的內部部署資料庫。
   - Contoso 可以使用 Azure 資料庫移轉服務，將內部部署資料庫移轉至 Azure SQL。
-  - 透過軟體保證，Contoso 可以使用適用於 SQL Server 的 Azure Hybrid Benefit，以折扣優惠在 SQL Database 上交換其現有授權。 這可以提供最多 30% 的折扣。
+  - 透過軟體保證，Contoso 可以使用適用於 SQL Server 的 Azure Hybrid Benefit，以折扣優惠在 SQL Database 上交換其現有授權。 這可節省高達30% 的費用。
   - SQL Database 提供安全性功能，例如 Always Encrypted、動態資料遮罩、資料列層級安全性，以及 SQL 威脅偵測。
 - 針對應用程式 web 層，Contoso 已決定使用 Azure App Service。 此 PaaS 服務可讓您部署應用程式，只需進行一些設定變更。 Contoso 將使用 Visual Studio 來進行變更，並部署兩個 Web 應用程式。 一個用於網站，另一個用於 WCF 服務。
 - 為了符合 DevOps 管線的需求，Contoso 已選擇使用 Azure DevOps 進行原始程式碼管理 (SCM) 與 Git 存放庫。 他們將使用自動化組建和發行來建置程式碼，並將其部署至 Azure App Service。
@@ -97,7 +97,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 | [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用完全受控的平臺建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 提供持續整合和持續部署， (CI/CD) 管線進行應用程式開發。 管線會從 Git 存放庫開始，以用於管理應用程式程式碼、用於產生封裝和其他組建成品的組建系統，以及在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -280,7 +280,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
 12. 在 [**管線 > 成品**] 上，選取 [ **+ 新增**成品]，然後選取 [使用 `ContosoSmarthotel360Refactor` 管線建立]。
 
-     ![建置](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![組建](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. 他們會確認已核取成品上的閃電，以啟用持續部署觸發程式。
 

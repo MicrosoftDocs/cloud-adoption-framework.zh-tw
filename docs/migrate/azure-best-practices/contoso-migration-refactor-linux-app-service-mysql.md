@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e92222389dea22f22283c2014d89b6ea33008e4
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 18512a360213ab979ace853492d553149432c464
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192229"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234900"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -56,7 +56,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標，以便決定最
 
 以下是建議的架構：
 
-- 上的 web 層應用程式 `OSTICKETWEB` 將透過在兩個 Azure 區域中建立 Azure App Service 來進行遷移。 適用于 Linux 的 Azure App Service 將使用 PHP 7.0 docker 容器來執行。
+- 上的 web 層應用程式 `OSTICKETWEB` 將透過在兩個 Azure 區域中建立 Azure App Service 來進行遷移。 將會使用 PHP 7.0 Docker 容器來實作適用於 Linux 的 Azure App Service。
 - 應用程式代碼將會移至 GitHub，而 Azure App Service web 應用程式將會設定為使用 GitHub 進行持續傳遞。
 - Azure App Service 將會部署在主要區域 (`East US 2`) 和次要區域 () 中 `Central US` 。
 - 在這兩個區域中，流量管理員將會設定於兩個 Web 應用程式前面。
@@ -77,7 +77,7 @@ Contoso 會按照下列方式完成移轉程序：
 1. 在第一個步驟中，Contoso 管理員會設定 Azure 基礎結構，包括布建 Azure App Service、設定流量管理員，以及布建適用於 MySQL 的 Azure 資料庫實例。
 2. 準備好 Azure 基礎結構之後，他們會使用 Azure 資料庫移轉服務來遷移資料庫。
 3. 在 Azure 中執行資料庫之後，他們會針對具有持續傳遞的 Azure App Service 提供 GitHub 私人存放庫，並使用 osTicket 應用程式將它載入。
-4. 在 Azure 入口網站中，他們會將應用程式從 GitHub 載入至執行 Azure App Service 的 docker 容器。
+4. 在 Azure 入口網站中，他們會將應用程式從 GitHub 載入至執行 Azure App Service 的 Docker 容器。
 5. 他們會調整 DNS 設定，並設定應用程式的自動調整。
 
 ![移轉程序](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
@@ -91,7 +91,7 @@ Contoso 會按照下列方式完成移轉程序：
 | [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務可在停機時間最短的情況之下，從多個資料庫來源順暢地遷移至 Azure 資料平臺。 | 深入了解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它提供完全受控、符合企業需求的社區 MySQL 資料庫，供應用程式開發和部署之用。 | 定價是以計算、儲存和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 
@@ -120,15 +120,15 @@ Contoso 管理員會使用 Azure App Service 佈建兩個 Web 應用程式 (每�
 1. 他們會在主要區域中建立 web 應用程式資源 (`osticket-eus2`) ， (透過 `East US 2` Azure Marketplace) 。
 2. 它們會將資源放在生產資源群組中 `ContosoRG` 。
 
-    ![Azure Web 應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app1.png)
+    ![建立 Web 應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app1.png)
 
-3. 他們會 `APP-SVP-EUS2` 使用標準大小，在主要區域中建立新的 App Service 方案 () 。
+3. 他們會 `APP-SVP-EUS2` 使用標準大小，在主要區域中建立 App Service 方案 () 。
 
-     ![Azure 應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
+     ![建立應用程式服務方案](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
 
-4. 他們會選取具有 PHP 7.0 執行時間堆疊的 Linux OS，這是一個 docker 容器。
+4. 他們會選取具有 PHP 7.0 執行階段堆疊的 Linux OS，這是一個 Docker 容器。
 
-    ![Azure 應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
+    ![建立 Web 應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
 
 5. 他們會建立第二個 web 應用程式 (`osticket-cus`) 和 Azure App Service 方案 `Central US` 。
 
@@ -201,7 +201,7 @@ Contoso 管理員會遵循[逐步遷移教學](https://docs.microsoft.com/azure/
 
 - 確保符合所有的遷移必要條件：
   - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版本、InnoDB 儲存引擎，以及跨來源與目標的相同版本進行遷移。
-  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 執行此動作時，將會導致 `error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 遷移嚮導。
+  - 在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會導致遷移嚮導發生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` 。
   - 使用者必須擁有 `ReplicationAdmin` 角色。
   - 不搭配外鍵和觸發程式來遷移資料庫架構。
 - 建立透過 ExpressRoute 或 VPN 連接到內部部署網路的虛擬網路。
@@ -338,7 +338,7 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app3.png)
 
-4. 更新設定並將 osTicket web 應用程式從 GitHub 載入至執行 Azure App Service 的 docker 容器之後，網站就會顯示為 [使用中]。
+4. 更新設定並將 osTicket web 應用程式從 GitHub 載入至執行 Azure App Service 的 Docker 容器之後，網站就會顯示為 [使用中]。
 
     ![設定應用程式](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
@@ -359,12 +359,12 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
 最後，他們會為應用程式設定自動調整。 這可確保當代理程式使用應用程式時，應用程式實例會根據商務需求而增加和減少。
 
-1. 在 app service 中 `APP-SRV-EUS2` ，他們會開啟 [**縮放單位**]。
-2. 他們以單一規則設定新的自動調整設定，以便在目前執行個體的 CPU 百分比超過 70% 達到 10 分鐘時，將執行個體計數遞增一。
+1. 在 App Service 中 `APP-SVP-EUS2` ，他們會開啟 [**縮放單位**]。
+2. 他們會以單一規則設定新的自動調整設定，以在目前實例的 CPU 百分比超過10分鐘的70% 時，將實例計數增加一個。
 
     ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
-3. 他們會在上進行相同的設定， `APP-SRV-CUS` 以確保當應用程式故障切換到次要區域時，會套用相同的行為。 唯一的差異在於他們將預設執行個體設定為 1，因為這僅適用於容錯移轉。
+3. 他們會在上進行相同的設定， `APP-SVP-CUS` 以確保當應用程式故障切換到次要區域時，會套用相同的行為。 唯一的差異在於他們將預設執行個體設定為 1，因為這僅適用於容錯移轉。
 
    ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 5bb7edc6b44f12e4fd463f20ec70b735f4035249
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 340490947ff45d0d7f22e508d7618df7b5219cb4
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192074"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234611"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -117,7 +117,7 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
     ![移轉程序](./media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 

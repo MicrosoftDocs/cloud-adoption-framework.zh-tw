@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9a35e4d9f693362597d301f1ec8d01efdb7887f4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 6c138afdd5a60dafe21a523e608c714ba2b49070
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076229"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233676"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：打造雲端採用小組
 
@@ -20,7 +20,7 @@ ms.locfileid: "85076229"
 
 有些雲端採用小組僅著重于雲端遷移，其他則著重于利用雲端技術的創新。 有些小組包括完成大型採用工作所需的廣泛技術專業知識，例如完整的資料中心遷移，而其他團隊則有更緊密的技術焦點。
 
-較小的小組可能會在專案之間移動，以達成特定目標。 例如，資料平臺專家的小組可能會專注于協助將 SQL Database 虛擬機器（Vm）轉換成 SQL PaaS 實例。
+較小的小組可能會在專案之間移動，以達成特定目標。 例如，資料平臺專家的小組可能會專注于協助將 SQL Database 虛擬機器 (Vm) 轉換為 SQL PaaS 實例。
 
 ![開始建立雲端採用小組](../../_images/get-started/adoption-team-map.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "85076229"
 
 - 判斷小組最符合的方法：遷移方法或創新方法。
 - 每一種方法都有四個步驟的上線體驗，可協助小組瞭解在這項工作上真正發揮效益所需的工具和流程。 在小組進行前幾個步驟，以瞭解您在早期反復專案中最可能需要的工具和案例，投入時間。
-- 更新貴公司的[RACI （負責、有責任、諮詢和通知）範本](../../organize/raci-alignment.md)，以協助其他人瞭解小組的成員，以及小組將著重于傳遞哪一種方法。
+- 藉由開發跨團隊的矩陣，識別負責、參與、_諮詢和通知的 (RACI) _方，來協調小組間的責任。 更新您公司的[RACI 範本](../../organize/raci-alignment.md)，以協助其他人瞭解小組的成員，以及小組將著重于傳遞哪一種方法。
 
 **支援交付後完成的指引：**
 
@@ -142,6 +142,6 @@ ms.locfileid: "85076229"
 
 雲端採用是很好的目標，但 ungoverned 採用可能會產生非預期的結果。 為了加速採用和最佳作法，當您降低業務和技術風險時，請將雲端採用與[雲端治理功能](../../organize/cloud-governance.md)相配合。
 
-與雲端治理小組一致可在雲端採用的工作之間建立平衡，但這會被視為最基本的可行產品（MVP），因為它可能不是持續性的。 每個小組都會戴上許多的帽子，如[RACI 圖](../../organize/raci-alignment.md)中所述。
+與雲端治理小組一致可在雲端採用工作之間建立平衡，但這會被視為最小的可行產品 (MVP) ，因為它可能不是持續性的。 每個小組都會戴上許多的帽子，如[RACI 圖](../../organize/raci-alignment.md)中所述。
 
 深入瞭解如何克服[組織反模式：接收器和 fiefdoms](../../organize/fiefdoms-silos.md)。

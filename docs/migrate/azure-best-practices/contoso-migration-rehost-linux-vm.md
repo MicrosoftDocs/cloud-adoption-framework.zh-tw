@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 58e8cfd905461f239f1a0aacc53723389290823d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 583cc72e4066d2cb41162bd04f641356518b2386
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192091"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234441"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
@@ -88,7 +88,7 @@ Contoso 會按照下列方式進行遷移：
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | 此服務會協調和管理您的內部部署應用程式和工作負載，以及 AWS/GCP VM 實例的遷移。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 Azure Vm 會在發生遷移時建立並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -289,6 +289,8 @@ Contoso 安全性小組會檢查 OSTICKETWEB 和 OSTICKETMYSQL Vm，以判斷是
 - 小組也會考慮使用 Azure 磁碟加密和 Azure Key Vault 來保護 VM 磁片上的資料。
 
 如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
+
+<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="bcdr"></a>BCDR
 

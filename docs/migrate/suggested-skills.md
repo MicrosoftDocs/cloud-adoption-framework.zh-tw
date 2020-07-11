@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fdc852b97916d0055c1193be384b3c6e44599182
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fc04c5fa27425ebdbaa82f5b98f8e526e4695f9a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194318"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233268"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "86194318"
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-遷移程式的執行將以在遷移旅程的[計畫](../strategy/suggested-skills.md)和[準備](../organize/suggested-skills.md)階段期間取得的技能為依據。
+遷移方法流程的執行是以[計畫階段](../strategy/suggested-skills.md)所取得的技能為依據，並在遷移旅程的[準備階段](../organize/suggested-skills.md)。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 
@@ -39,7 +39,7 @@ ms.locfileid: "86194318"
 在評估過程中，架構設計人員將會針對每個工作負載設計解決方案。 下列 skilling 資源有助於準備架構設計人員以進行這些工作：
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)：一個 Pluralsight 課程，可協助架構設計正確的基礎解決方案。
-- [Microsoft Azure 架構：消費者入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 課程，讓架構設計人員在 Azure 架構中具備基本知識。
+- [Microsoft Azure 架構：快速入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 課程，讓架構設計人員在 Azure 架構中具備基本知識。
 - [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing)：一種 Pluralsight 課程，可協助架構設計師設計遷移解決方案。
 
 ## <a name="migrate-skilling-resources"></a>遷移技能資源

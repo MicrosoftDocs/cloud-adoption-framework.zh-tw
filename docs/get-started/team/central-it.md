@@ -1,27 +1,27 @@
 ---
 title: 開始使用：配合中央 IT 小組
 description: 本指南可協助中央 IT 小組瞭解成功的雲端採用旅程所需的範圍、交付專案和功能。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eee0bd9cb59b3deaf7aa87c0758dcd70c1cb51c8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 54cc5a5d2438ddd0350cf3873c391d489f8df2e2
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076205"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233897"
 ---
 # <a name="get-started-align-a-central-it-team"></a>開始使用：配合中央 IT 小組
 
 當雲端採用相當快速地從一個小組擴充到多個小組時，需要現有 IT 人員的額外支援。 這些員工成員可能缺少使用雲端原生 IT 工具來支援雲端所需的訓練和經驗。 這通常會推動負責管理雲端之中央 IT 小組的構成。
 
 > [!WARNING]
-> 集中式 IT 應該只在內部部署的現有傳遞是以集中式 IT 模型為基礎時，才套用在雲端中。 如果目前的內部部署模型是以委派的控制項為基礎，請考慮雲端的卓越（CCoE）方法，以提供更多雲端相容的替代方案。
+> 集中式 IT 應該只在內部部署的現有傳遞是以集中式 IT 模型為基礎時，才套用在雲端中。 如果目前的內部部署模型是以委派的控制項為基礎，請考慮雲端中心的卓越 (CCoE) 方法，以取得更多雲端相容的替代方案。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 - [細分接收器和 fiefdoms](../../organize/fiefdoms-silos.md)：瞭解兩個常見的組織反模式，以及引導小組進行生產力共同作業的方式。
 - [Microsoft Learn](https://docs.microsoft.com/learn)：從基本總覽到深度技術訓練，IT 人員學習如何將 Azure 套用到其業務。
@@ -40,7 +40,7 @@ ms.locfileid: "85076205"
 
 ### <a name="strategic-tasks"></a>策略性工作
 
-- 檢閱
+- 檢閱：
   - 業務成果。
   - 財務模型。
   - 雲端採用的動機。
@@ -85,4 +85,4 @@ ms.locfileid: "85076205"
 
 ## <a name="whats-next"></a>後續步驟
 
-當中央 IT 小組成熟其雲端功能時，下一個成熟度步驟通常是較鬆散與雲端作業的結合。 適用于 PaaS 優先解決方案的雲端原生作業管理工具和較低作業成本的可用性，通常會導致商務團隊（或更具體來說，DevOps 企業內的小組）假設有雲端營運責任。
+當中央 IT 小組成熟其雲端功能時，下一個成熟度步驟通常是較鬆散與雲端作業的結合。 適用于 PaaS 優先解決方案的雲端原生作業管理工具和較低營運成本的可用性，通常會導致商務團隊 (或更具體的 DevOps 小組，在企業) 中，假設有雲端營運責任。

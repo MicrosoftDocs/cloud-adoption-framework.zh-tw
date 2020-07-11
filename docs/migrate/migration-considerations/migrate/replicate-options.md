@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5f345b709c2349fb290ee43963590d9cafe54d8e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 3be996a02a42505e6bd8168c8d05649387bb3da1
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194420"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234883"
 ---
 # <a name="replication-options"></a>複寫選項
 
@@ -45,7 +45,7 @@ ms.locfileid: "86194420"
 
 此服務捨棄多項工具，只使用單一全方位功能的服務，降低雲端移轉的複雜度。 [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms/dms-overview)設計成可將內部部署 SQL Server 資料庫順暢地移至雲端的端對端解決方案。 這是一個完全受控的服務，能夠從多個資料庫來源無縫移轉至 Azure 資料平台，將停機時間降到最低。 它整合了現有工具和服務的某些功能，為客戶提供全方位、高可用性的解決方案。
 
-服務會使用 Data Migration Assistant 來產生評量報告，以提供建議，引導您完成執行遷移之前所需的變更。 由您自行決定是否要執行任何必要補救。 當您準備好開始進行遷移程式時，Azure 資料庫移轉服務會執行所有相關聯的步驟。 移轉程序會善用 Microsoft 決定的最佳做法，因此您可以放心地移轉專案。
+服務會使用 Data Migration Assistant 來產生評量報告，以提供建議，引導您完成執行遷移之前所需的變更。 由您自行決定是否要執行任何必要補救。 當您準備好開始進行遷移程式時，Azure 資料庫移轉服務就會執行所有相關聯的步驟。 移轉程序會善用 Microsoft 決定的最佳做法，因此您可以放心地移轉專案。
 
 ## <a name="next-steps"></a>後續步驟
 

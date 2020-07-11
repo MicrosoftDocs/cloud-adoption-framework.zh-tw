@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ec83bb83eb1b5d0643a5df1f006b7be32de7236b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2c46ade2fe117898cd1afa9b976c87ae9baf5e6c
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86192363"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234849"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -102,7 +102,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 | [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 使用完全受控的平臺建立強大的雲端應用程式 | 根據大小、位置和使用期間計算費用。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署， (CI/CD) 管線進行應用程式開發。 管線會從 Git 存放庫開始，以用於管理應用程式程式碼、用於產生封裝和其他組建成品的組建系統，以及在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此情況下所須執行的動作：
 
@@ -349,7 +349,7 @@ Contoso 管理員現在會設定 Azure DevOps 以執行建置和發行程序。
 
 12. 在**管線 > 成品**上，他們會選取 [ **+ 新增**成品]，然後選取 [使用 `ContosoSmarthotel360Refactor` 管線建立]。
 
-     ![建置](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
+     ![組建](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
 13. 他們在已核取的成品上選取閃電圖示，以啟用持續部署觸發程序。
 

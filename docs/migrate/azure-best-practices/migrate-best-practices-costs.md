@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce6748b15dabe1b1173c897376c27e702f706d55
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 1335b01581dc62e115072a20ff46f5c9ffdf1609
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194182"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233387"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -112,7 +112,7 @@ Azure 儲存體提供不同的選項來存取區塊 blob 資料。 選取適當�
 | 存取層 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **經常性** | 儲存成本高於非經常性存取。 較酷的存取費用低。 <br><br> 這是預設層。 | 針對經常存取之作用中用途使用。 |
-| **非經常性** | 儲存成本較熱。 較熱的存取費用更高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
+| **超酷** | 儲存成本較熱。 較熱的存取費用更高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
 | **封存** | 用於個別區塊 Blob。 <br><br> 最具成本效益的儲存體選項。 相較於經常性與非經常性存取層，資料存取成本比較高。 | 適用于可容忍數小時之抓取延遲的資料，而且將會保留在層中至少180天。 |
 
 ### <a name="storage-account-types"></a>儲存體帳戶類型
@@ -188,7 +188,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 **瞭解更多資訊：**
 
 - 閱讀[Azure 使用量 api 總覽](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
-- 深入瞭解如何[連接到 Power BI Desktop 中的 Azure 使用量見解](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)。
+- 瞭解如何[連接到 Power BI Desktop 中的 Azure 使用量見解](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)。
 - 瞭解如何[使用角色型存取控制 (RBAC) 來管理 Azure 帳單資訊的存取權](https://docs.microsoft.com/azure/billing/billing-manage-access)。
 
 ## <a name="after-migration"></a>移轉之後
@@ -210,7 +210,7 @@ Microsoft 提供 Azure 成本管理和計費，協助您追蹤費用：
 - 使用單一的整合式檢視來追蹤資源使用量並管理雲端成本。
 - 提供豐富的營運與財務見解以協助您做出明智的決策。
 
-在成本管理中，您可以：
+透過成本管理和計費，您可以：
 
 - **建立預算：** 建立財務責任的預算。
   - 您可以納入您使用或訂閱的服務一段時間 (每月、每季、每年) 與範圍 (訂用帳戶/資源群組)。 例如，您可以針對每月、每季或每年期間建立 Azure 訂用帳戶預算。
@@ -218,16 +218,17 @@ Microsoft 提供 Azure 成本管理和計費，協助您追蹤費用：
   - 達到預算閾值時，可以傳送電子郵件通知。
   - 您可以將成本管理資料匯出至 Azure 儲存體，以供分析。
 
-    ![成本管理預算 ](./media/migrate-best-practices-costs/budget.png)
-     _Azure 成本管理和計費預算。_
+  ![成本管理預算 ](./media/migrate-best-practices-costs/budget.png)
+   _Azure 成本管理和計費預算。_
 
 - **進行成本分析：** 取得成本分析來探索及分析組織成本，以協助您瞭解成本的累算方式，並找出支出趨勢。
   - EA 使用者可以使用成本分析功能。
   - 您可以檢視各種範圍的成本分析資料，包括依部門、帳戶、訂用帳戶或資源群組來檢視。
   - 您可以取得顯示當月份總成本的成本分析，以及累計每日成本。
 
-    ![Azure 成本管理分析 ](./media/migrate-best-practices-costs/analysis.png)
-     _圖： Azure 成本管理和計費分析。_
+  ![Azure 成本管理分析 ](./media/migrate-best-practices-costs/analysis.png)
+   _圖： Azure 成本管理和計費分析。_
+
 - **取得建議：** 取得 Advisor 建議，告訴您如何優化和提升效率。
 
 **瞭解更多資訊：**

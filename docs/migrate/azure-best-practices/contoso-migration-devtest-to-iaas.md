@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: acf322306bdbe3706bd67b55c6c1055e0ee21ce1
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d0b92f1c27fdb2ac4e2867ad21b382ee89915a4a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86197943"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234169"
 ---
 <!-- docsTest:ignore SmartHotel360 -->
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless osTicket WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
@@ -112,13 +112,13 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具無代理程式方法，�
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](https://docs.microsoft.com/azure/migrate) | 服務會協調和管理遷移內部部署應用程式和工作負載，以及 AWS 或 GCP VM 實例。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 Azure Vm 會在發生遷移且 Vm 在 Azure 中執行時，建立並產生費用。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 這是 Contoso 執行此案例所需的內容：
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 開發/測試訂用帳戶** | Contoso 會建立[測試訂](https://azure.microsoft.com/offers/ms-azr-0023p)用帳戶，以利用降低成本，最高可達80%。 <br><br> 若您沒有 Azure 訂用帳戶，請建立一個[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，但您不是系統管理員，則必須與系統管理員合作，為您指派擁有者或參與者許可權。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 開發/測試訂用帳戶** | Contoso 會建立[Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p)用帳戶，以利用降低成本達80%。 <br><br> 若您沒有 Azure 訂用帳戶，請建立一個[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，但您不是系統管理員，則必須與系統管理員合作，為您指派擁有者或參與者許可權。 <br><br> 如果您需要更細微的許可權，請參閱[使用以角色為基礎的存取控制來管理 Site Recovery 存取 (RBAC) ](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
 | **Azure 基礎結構** | 瞭解 Contoso 如何[設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 <br><br> 深入瞭解 Azure Migrate 的特定[必要條件](#prerequisites)：伺服器遷移。 |
 | **內部部署伺服器** | 內部部署 vCenter 伺服器應執行版本5.5、6.0、6.5 或6.7。 <br><br> ESXi 主機應該執行5.5、6.0、6.5 或6.7 版。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
 

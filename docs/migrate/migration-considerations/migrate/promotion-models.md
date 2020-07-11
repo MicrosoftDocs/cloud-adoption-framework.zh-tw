@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 227165dcfa7f86003807d1d2063a0a3d26f5fe5d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: d0c27b7c4d739f812a94124e6960181426b9a1dd
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787821"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234866"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>升級模型：單一步驟、分段或航班
 
