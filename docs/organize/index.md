@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ce029948d6d44ce8193b0d4dfb81fa61e40b7c9e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2c64ddc4f362de35c6f191454d358471e529c631
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194216"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234798"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -23,10 +23,10 @@ ms.locfileid: "86194216"
 
 | | |
 |---|---|
-| <br> ![1](../_Images/icons/1.png) | <br> [結構類型](#structure-type)：定義最適合您作業模型的組織結構類型。                                |
-| <br> ![2](../_Images/icons/2.png) | <br> [雲端功能](#understand-required-cloud-functions)：了解採用和操作雲端所需的雲端功能。                                |
-| <br> ![3](../_Images/icons/3.png) | <br> [成熟的小組結構](./organization-structures.md)：定義可以提供各種雲端功能的小組。                                |
-| <br> ![4](../_Images/icons/4.png) | <br> [RACI 矩陣](./raci-alignment.md)：明確定義的角色是任何作業模型的重要層面。 使用提供的 RACI 矩陣，將職責、責任、諮詢和知情角色對應到每個小組，以實現雲端作業模型的各種功能。                        |
+| <br> ![1](../_images/icons/1.png) | <br> [結構類型](#structure-type)：定義最適合您作業模型的組織結構類型。                                |
+| <br> ![2](../_images/icons/2.png) | <br> [雲端功能](#understand-required-cloud-functions)：了解採用和操作雲端所需的雲端功能。                                |
+| <br> ![3](../_images/icons/3.png) | <br> [成熟的小組結構](./organization-structures.md)：定義可以提供各種雲端功能的小組。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [RACI 矩陣](./raci-alignment.md)：明確定義的角色是任何作業模型的重要層面。 使用提供的 RACI 矩陣，將職責、責任、諮詢和知情角色對應到每個小組，以實現雲端作業模型的各種功能。                        |
 
 ## <a name="structure-type"></a>結構類型
 
