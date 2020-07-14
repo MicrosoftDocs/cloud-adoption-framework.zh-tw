@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 010af9c5f3988c3a4cef05a1d9e3284e1d550675
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 321ce198cf4e2ad4486719e1702266540313277a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194352"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235376"
 ---
 # <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 
@@ -24,7 +24,7 @@ ms.locfileid: "86194352"
 
 ## <a name="review-business-drivers"></a>檢閱業務驅策因素
 
-在開始任何雲端移轉之前，請先檢閱＜雲端採用架構＞中的[規劃](../../../strategy/index.md)和[準備](../../../ready/index.md)指引，以確保您的組織已針對雲端採用及移轉程序進行準備。 請特別檢閱驅動移轉的業務需求及預期結果：
+在開始任何雲端移轉之前，請先檢閱＜雲端採用架構＞中的[規劃方法](../../../plan/index.md)和[準備方法](../../../ready/index.md)指引，以確保您的組織已針對雲端採用及移轉程序進行準備。 請特別檢閱驅動移轉的業務需求及預期結果：
 
 - [開始使用：加速移轉](../../../get-started/migrate.md)
 - [為何要移至雲端？](../../../strategy/motivations.md)

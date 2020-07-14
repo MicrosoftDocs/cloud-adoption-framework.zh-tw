@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ca17f40d32bd09e3fb4833b53a2bacfbfe3b484
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dfe4b4ddfe263baefb07d9ee24b70687278df1ce
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993515"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233931"
 ---
 # <a name="release-workloads"></a>發行工作負載
 
-在收集工作負載並將及其支援資產部署至雲端後，必須先進行準備工作，才能發行工作負載。 在這個階段的移轉工作中，會對企業進行工作負載集合的負載測試。 然後，會將其最佳化並記載。 當企業和 IT 小組檢閱並簽核工作負載部署後，這些工作負載就可發行，或遞交給控管、安全性和作業小組進行後續的作業。
+在收集工作負載並將及其支援資產部署至雲端後，必須先進行準備工作，才能發行工作負載。 在這個階段的移轉工作中，會對企業進行工作負載集合的負載測試和驗證。 然後，會將其最佳化並記載。 當企業和 IT 小組檢閱並簽核工作負載部署後，這些工作負載就可發行，或遞交給控管、安全性和作業小組進行後續的作業。
 
 「發行工作負載」的目的是準備好已移轉的工作負載，以升級至生產環境用途。
 

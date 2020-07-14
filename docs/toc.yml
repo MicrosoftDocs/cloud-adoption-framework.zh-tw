@@ -1,4 +1,4 @@
-# docsTest:ignore "NET Core" "Cloud Operating Model" "Virtual Datacenter" Framework
+# docsTest:ignore "NET Core" "Cloud Operating Model" "Virtual Datacenter" Framework app
 items:
   - name: 適用於 Azure 的雲端採用架構
     href: index.yml
@@ -355,14 +355,86 @@ items:
                 items:
                   - name: 將 Windows 應用程式重新裝載至 Azure VM
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-              - name: Linux 工作負載
+              - name: SQL Server 工作負載
                 items:
+                  - name: 移轉 SQL Server 資料庫到 Azure
+                    href: migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure.md
+                  - name: 在 Azure VM 和 Azure SQL 受控執行個體上重新裝載應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: 在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: Linux 和開放原始碼資料庫
+                items:
+                  - name: 將開放原始碼資料庫遷移到 Azure
+                    href: migrate/azure-best-practices/contoso-migration-oss-db-to-azure.md
+                  - name: 將 MySQL 遷移到 Azure
+                    href: migrate/azure-best-practices/contoso-migration-mysql-to-azure.md
+                  - name: 將 PostgreSQL 遷移到 Azure
+                    href: migrate/azure-best-practices/contoso-migration-postgresql-to-azure.md
+                  - name: 將 MariaDB 遷移到 Azure
+                    href: migrate/azure-best-practices/contoso-migration-mariadb-to-azure.md
                   - name: 將 Linux 應用程式重新裝載至 Azure VM
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
                   - name: 在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                  - name: 在 Azure App Service 及適用於 MySQL 的 Azure 資料庫上重構 Linux 應用程式
+              - name: 開發/測試工作負載
+                items:
+                  - name: 將開發/測試環境遷移至 Azure IaaS
+                    href: migrate/azure-best-practices/contoso-migration-devtest-to-iaas.md
+                  - name: 遷移到 Azure DevTest Labs
+                    href: migrate/azure-best-practices/contoso-migration-devtest-to-labs.md
+              - name: ASP.NET 和 PHP web 應用程式
+                items:
+                  - name: 在 App Service 及 Azure SQL Database 上重構 Windows  應用程式
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: 在 App Service 及 SQL 受控執行個體上重構  Windows 應用程式
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
+                  - name: 將 Linux 應用程式重構到 App Service 和 MySQL
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+                  - name: 在 Azure 中重建應用程式
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: 將 TFS 重構至 Azure DevOps Services
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Java 應用程式
+                items:
+                  - name: 移轉概觀
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Spring 至 Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat 至 Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat 至 AKS 上的容器
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic 至 Azure 虛擬機器
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 WildFly 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-wildfly-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 WebLogic 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 WebSphere 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-websphere-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: AKS 上的 JBoss EAP 至 WildFly
+                    href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SAP
+                items:
+                  - name: SAP 移轉指南
+                    href: 'https://azure.microsoft.com/resources/sap-on-azure-implementation-guide'
+                  - name: 將 SAP 應用程式遷移至 Azure
+                    href: 'https://azure.microsoft.com/resources/migrating-sap-applications-to-azure'
+                  - name: Azure 上的 SAP 移轉方法
+                    href: 'https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure'
+              - name: 特製化工作負載
+                items:
+                  - name: 將內部部署 VMware 基礎結構移至 Azure
+                    href: migrate/azure-best-practices/contoso-migration-vmware-to-azure.md
+                  - name: Azure NetApp Files
+                    href: 'https://azure.microsoft.com/services/netapp'
+                  - name: Azure 中的 Oracle
+                    href: 'https://azure.microsoft.com/solutions/oracle'
+                  - name: Azure 中的 Cray
+                    href: 'https://azure.microsoft.com/solutions/high-performance-computing/cray'
+                  - name: VDI
+                    href: migrate/azure-best-practices/contoso-migration-rds-to-wvd.md
               - name: VMWare 主機
                 items:
                   - name: 重新裝載 VMWare 時的考量
@@ -419,42 +491,6 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 VMWare SRM 將 CloudSimple 私人雲端設定為災害復原網站
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: ASP.NET 應用程式
-                items:
-                  - name: 在 Azure App Service 及 Azure SQL Database 上重構應用程式
-                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: 在 Azure App Service 及 Azure SQL 受控執行個體上重構應用程式
-                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
-                  - name: 在 Azure App Service 中重建應用程式
-                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                  - name: 將 TFS 重構至 Azure DevOps Services
-                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-              - name: Java 應用程式
-                items:
-                  - name: 移轉概觀
-                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Spring 至 Azure App Service
-                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Tomcat 至 Azure App Service
-                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Tomcat 至 AKS 上的容器
-                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: WebLogic 至 Azure 虛擬機器
-                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: AKS 上的 WildFly 至 WildFly
-                    href: 'https://docs.microsoft.com/azure/java/migrate-wildfly-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: AKS 上的 WebLogic 至 WildFly
-                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: AKS 上的 WebSphere 至 WildFly
-                    href: 'https://docs.microsoft.com/azure/java/migrate-websphere-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: AKS 上的 JBoss EAP 至 WildFly
-                    href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: SQL Server
-                items:
-                  - name: 在 Azure VM 和 Azure SQL 受控執行個體上重新裝載應用程式
-                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                  - name: 在 Azure VM 和 SQL Server Always On 可用性群組上重新裝載應用程式
-                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
               - name: 資料平台
                 items:
                   - name: 概觀

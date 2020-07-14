@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f7196c8348c7559cec2c5544cb7a4bb0223778f6
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: a726d8eeeb572ce64cf905c3b40932c58ffd1b92
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076671"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191921"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 

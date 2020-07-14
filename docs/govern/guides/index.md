@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8f45a16e3699977dce152a06c563844d83b4b1b
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 03b7e13a14c2b3d9a6fe6e2b2757f065e041b3f9
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075518"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191224"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -49,7 +49,7 @@ ms.locfileid: "85075518"
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 > [!WARNING]
-> 您可能需要更強固的治理起點。 在這類情況下，請考慮使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 CAF 企業級登陸區域方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端裝載 1000 個以上的資產 (應用程式、基礎結構或資料資產)。 對於這類較大型的雲端採用工作而言，CAF 企業級登陸區域是複雜治理案例的實質選擇。
+> 您可能需要更強固的治理起點。 在這類情況下，請考慮使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 CAF 企業級登陸區域方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端裝載 1000 個以上的資產 (基礎結構、應用程式或資料資產)。 對於這類較大型的雲端採用工作而言，CAF 企業級登陸區域是複雜治理案例的實質選擇。
 
 <!-- markdownlint-disable MD028 -->
 
@@ -61,8 +61,8 @@ ms.locfileid: "85075518"
 | 特性 | 標準組織 | 複雜企業 |
 |---|---|---|
 | 地理位置 (國家或地緣政治區域) | 客戶或員工主要位於一個地理位置 | 客戶或員工位於多個地理位置或需要主權雲端。 |
-| 受影響的營業單位 | 共用一般 IT 基礎結構的業務單位 | 未共用一般 IT 基礎結構的業務單位 |
-| IT 預算 | 單一 IT 預算 | 以不同的貨幣在多個營業單位間分配預算 |
+| 受影響的營業單位 | 共用一般 IT 基礎結構的業務單位 | 未共用一般 IT 基礎結構的業務單位。 |
+| IT 預算 | 單一 IT 預算 | 以不同的貨幣在多個營業單位間分配預算。 |
 | IT 投資 | 資本支出導向的投資是每年計劃一次，而且通常僅涵蓋基本維護。 | 資本支出導向的投資是每年計劃一次，而且通常包含三到五年的維護和更新週期。 |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>採用雲端治理之前的目前狀態

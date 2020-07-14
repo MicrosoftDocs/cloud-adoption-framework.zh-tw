@@ -1,28 +1,28 @@
 ---
-title: Azure 移轉最佳做法檢查清單
+title: Azure 雲端移轉最佳做法檢查清單
 description: 探索 Azure 雲端移轉檢查清單，了解如何實作雲端移轉最佳做法搭配使用的 Azure 工具。
 keywords: azure 雲端移轉最佳做法, azure 移轉檢查清單, 雲端移轉檢查清單, 雲端移轉最佳做法
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: azure-migrate-seo
-ms.openlocfilehash: 6de5526b73a489835848eb1d201e40b11db40f08
-ms.sourcegitcommit: 56704de9da2529e5951042dd3dfc93ceffc5fcd9
+ms.openlocfilehash: 824d0bc9d55cc2ed6a0330975029929eeb831a07
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85372514"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193961"
 ---
-# <a name="cloud-migration-best-practices-checklist"></a>雲端移轉最佳做法檢查清單
+# <a name="azure-cloud-migration-migration-best-practices-checklist"></a>Azure 雲端移轉最佳做法檢查清單
 
-如果您想遷移至 Azure，建議先從雲端採用架構的 [Azure 移轉指南](../azure-migration-guide/index.md)開始。 該指南能引導您使用一組工具和基本方法，將虛擬機器遷移至雲端。 
+如果您想遷移至 Azure，建議先從雲端採用架構的 [Azure 移轉指南](../azure-migration-guide/index.md)開始。 該指南能引導您使用一組工具和基本方法，將虛擬機器遷移至雲端。
 
 下列檢查清單提供了 Azure 雲端移轉最佳做法，不僅僅是基本的雲端原生工具。 下文會概述常見的複雜領域區域，移轉範圍可能會超出 [Azure 移轉指南](../azure-migration-guide/index.md)涵蓋範圍。
 
-## <a name="migration-best-practices-for-business-driven-scope-expansion"></a>擴大業務導向範圍的移轉最佳做法 
+## <a name="migration-best-practices-for-business-driven-scope-expansion"></a>擴大業務導向範圍的移轉最佳做法
 
 - **[支援全球市場](./multiple-regions.md)：** 業務是在多個地理區域中營運，其皆具有不同的資料主權需求。 為了符合那些需求，應該將額外考量納入必要條件檢閱及移轉期間的資產發佈。
 
@@ -38,8 +38,8 @@ ms.locfileid: "85372514"
 
 - [針對遷移至 Azure 的工作負載來設定網路](./migrate-best-practices-networking.md)
 - [部署移轉基礎結構](./contoso-migration-infrastructure.md)
-- [針對遷移到 Azure 的工作負載評估成本及調整大小](./migrate-best-practices-costs.md) 
-- [對 Azure 進行大規模移轉](./contoso-migration-scale.md) 
+- [針對遷移到 Azure 的工作負載評估成本及調整大小](./migrate-best-practices-costs.md)
+- [對 Azure 進行大規模移轉](./contoso-migration-scale.md)
 
 ## <a name="next-steps"></a>後續步驟
 

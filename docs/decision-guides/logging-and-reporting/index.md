@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862461"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193927"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -55,7 +55,7 @@ ms.locfileid: "83862461"
 
 對於移轉至雲端的應用程式和服務，可能需要大量的重新開發工作才能使用雲端式記錄和報告解決方案，例如 Azure 監視器。 在這些情況下，請考慮允許這些工作負載繼續向現有的內部部署系統傳送遙測資料。
 
-為了支援這種方法，您的雲端資源必須能夠透過結合[混合式網路功能](../software-defined-network/hybrid.md)和[雲端裝載網域服務](../identity/index.md#cloud-hosted-domain-services)，直接與您的內部部署系統通訊。 然後雲端虛擬網路才能以內部部署環境網路擴充功能的形式運作。 如此一來，雲端裝載工作負載才能直接與您的內部部署記錄和報告系統通訊。
+為了支援這種方法，您的雲端資源必須透過結合[混合式網路功能](../software-defined-network/hybrid.md)和[雲端裝載網域服務](../identity/index.md#cloud-hosted-domain-services)，直接與您的內部部署系統通訊。 然後雲端虛擬網路才能以內部部署環境網路擴充功能的形式運作。 如此一來，雲端裝載工作負載才能直接與您的內部部署記錄和報告系統通訊。
 
 這個方法會運用您在監控工具上的現有投資，對任何雲端部署的應用程序或服務進行有限的修改。 這通常是進行隨即移轉時支援監視的最快方法。 但是這不會擷取雲端 PaaS 和 SaaS 資源製造的記錄資料，而且將會省略雲端平台產生的任何 VM 相關記錄，例如 VM 狀態。 因此應將此模式視為實作更完善混合式監視解決方案之前的暫時性解決方案。
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb20c99e9c30c63818af4a733dea08ed7130e3f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 828d83af5dcf615453dfe295b4c809901bc230ec
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215291"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194828"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 
@@ -61,8 +61,8 @@ ms.locfileid: "83215291"
 ## <a name="cost-management"></a>成本管理
 
 - [跨營業單位、環境和專案追蹤成本](./track-costs.md)。 了解建立適當成本追蹤機制的最佳做法。
-- [如何透過 Azure 成本管理將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 實作成本管理的策略，並了解可用於處理成本挑戰的工具。
-- [建立及管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理來建立和管理預算。
-- [匯出成本資料](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理來匯出成本資料。
-- [根據建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理和 Azure Adviso 來識別未充分利用的資源，並降低成本。
-- [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用 Azure 成本管理警示來監視您的 Azure 使用量和支出。
+- [如何透過 Azure 成本管理和計費將雲端投資最佳化](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 實作成本管理的策略，並了解可用於處理成本挑戰的工具。
+- [建立及管理預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理和計費來建立和管理預算。
+- [匯出成本資料](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理和計費來匯出成本資料。
+- [根據建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何使用 Azure 成本管理和計費和 Azure Advisor 來識別未充分利用的資源，並降低成本。
+- [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用 Azure 成本管理和計費警示來監視您的 Azure 使用量和支出。

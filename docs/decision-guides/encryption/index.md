@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ca1a65d0c385a7fc57e66b4c3f41157363a8a392
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754007"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191904"
 ---
+<!-- cSpell:ignore BYOK -->
+
 # <a name="encryption-decision-guide"></a>加密決策指南
 
 將資料加密可防止資料遭到未經授權存取。 正確實作的加密原則能夠為雲端式工作負載提供額外的安全性，並抵禦來自組織和網路內外的攻擊者與其他未經授權的使用者。
@@ -50,9 +52,9 @@ ms.locfileid: "83754007"
 - 您信任並使用雲端金鑰管理解決方案建立、管理及裝載您組織的密與金鑰。
 - 您允許需要存取加密服務或秘密的所有內部部署應用程式和服務存取雲端金鑰管理系統。
 
-### <a name="bring-your-own-key"></a>攜帶您自己的金鑰
+### <a name="bring-your-own-key-byok"></a>自備金鑰 (BYOK)
 
-採用「攜帶您自己的金鑰」方法，您可以在內部部署環境內的專用 HSM 硬體上產生金鑰，然後將這些金鑰安全地傳輸到雲端式管理系統 (例如 Azure Key Vault)，以便與裝載在雲端的資源搭配使用。
+採用 BYOK 方法，您可以在內部部署環境內的專用 HSM 硬體上產生金鑰，然後將這些金鑰安全地傳輸到雲端式管理系統 (例如 Azure Key Vault)，以便與裝載在雲端的資源搭配使用。
 
 **攜帶您自己的金鑰假設：** 在內部部署產生金鑰並將其與雲端式金鑰管理系統一起使用，包含以下假設事項：
 

@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ef9ac0935b21a1294dc77e631223fc0e24dcef0d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398828"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193757"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 

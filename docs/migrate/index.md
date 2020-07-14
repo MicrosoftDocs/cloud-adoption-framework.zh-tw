@@ -9,20 +9,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: azure-migrate-seo
-ms.openlocfilehash: 25bf28c450f5b12e01f825d1aa76681986d97cba
-ms.sourcegitcommit: bdf40eca6647ecab5cbed05f527a3f6542d37899
+ms.openlocfilehash: fe1b1a484e7f1766e76929204f7c63089aea4913
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058978"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235240"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
 任何企業級規模的[雲端採用方案](../plan/index.md)，都會包含不保證在建立新商業邏輯方面進行大量投資的工作負載。 這些工作負載可以透過任意數目的方法移至雲端；原形移轉、原形最佳化或現代化。 這些方法各自都是一種移轉。 下列練習將協助建立反覆流程，來評估、移轉、最佳化、保護及管理這些工作負載。
 
 為了對此階段的雲端採用生命週期做好準備，建議您執行下列作業：
-
-<!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|
@@ -31,9 +29,9 @@ ms.locfileid: "86058978"
 | <br> ![3](../_images/icons/3.png) | <br> [最佳做法](./azure-best-practices/index.md)：透過應用程式一致的最佳作法，解決一般的移轉需求。                                |
 | <br> ![4](../_images/icons/4.png) | <br> [流程改善](./migration-considerations/index.md)：移轉是大量使用流程的活動。 當移轉工作擴展時，請使用這些流程改善，來評估和完善移轉的各個層面。                        |
 
-<!-- markdownlint-enable MD033 -->
-
 遷移方法和上述步驟會根據下列假設而建置：
+
+<!-- docsTest:ignore "plan, ready, and Adopt methodologies" -->
 
 - 控管移轉短期衝刺的方法會納入移轉波浪或發行中，這可以使用方案、就緒和採用方法來定義。 在每個移轉短期衝刺內，會將一批工作負載移轉至雲端。
 - 在移轉工作負載之前，至少已識別、設定及部署一個[登陸區域](../ready/index.md)，以符合近期雲端採用方案的需求。
@@ -41,7 +39,7 @@ ms.locfileid: "86058978"
 
 ## <a name="migration-effort"></a>移轉工作
 
-移轉每個工作負載所需的工作通常分成三種類型的工作 (或階段)：評估工作負載、部署工作負載和發行工作負載。 這一節的「雲端採用架構」內容會教導讀者如何讓將工作負載移轉至生產環境所需的每個階段發揮最大效用。
+移轉每個工作負載所需的工作通常分成三種類型的工作 (或階段)：評估工作負載、部署工作負載和發行版本工作負載。 這一節的「雲端採用架構」內容會教導讀者如何讓將工作負載移轉至生產環境所需的每個階段發揮最大效用。
 
 在兩個星期的標準反覆項目中，經驗豐富的移轉小組可對 2-5 中/低複雜度的工作負載完成此程序。 更複雜的工作負載 (例如 SAP) 可能需要數個兩周的反覆項目，才能對單一工作負載全數完成三個移轉工作階段。 體驗和複雜度對時間軸和移轉速度會有很大的影響。
 

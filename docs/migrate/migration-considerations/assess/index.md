@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 027dd52f4a7cbb4535eca5a9b338296864f2bc25
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c480df86ba088679405faa893d5c18d4dd7a2ec8
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194896"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234968"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>在移轉之前評估工作負載並驗證假設
 
