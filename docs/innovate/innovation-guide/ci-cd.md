@@ -9,24 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f69e5c6d988bbfc637c7ba40eb156dc45524bce
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 08ce97b44442e172a7111c190279ae6e331556d6
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621317"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373283"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-empower-adoption"></a>Azure 創新指南：實現採用
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="empower-adoption"></a>實現採用
-
-::: zone-end
 
 您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 「開發人員」是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
 
@@ -44,13 +34,13 @@ ms.locfileid: "83621317"
 
 當組織能夠讓員工獲得支援而產生所要的價值時，便會實現創新。 能夠引發創新的其中一組人就是開發人員。 無論是哪個產業，開發人員都在價值產生和成長方面扮演越來越吃重的角色。 他們是我們這個時代的建築者，他們編寫這個世界的程式碼，矗立在創新的核心位置。 創新的組織會打造一種文化，讓開發人員有能力實現更多成果。
 
-# <a name="developer-productivity"></a>[開發人員生產力](#tab/DeveloperProductivity)
+## <a name="developer-productivity"></a>[開發人員生產力](#tab/DeveloperProductivity)
 
-## <a name="developer-velocity"></a>開發人員的速度
+### <a name="developer-velocity"></a>開發人員的速度
 
 讓開發人員有能力發明，意味著要提升開發人員的速度，從而讓他們能夠產生更多價值、做出更多創新，以及解決更多問題。 開發人員的速度是每個組織技術強度的基礎。 開發人員速度不僅是要快速， 還要釋放開發人員的創意，也就是將他們的想法快速靈活地轉換成軟體，以便打造創新的解決方案。 具差異化的 Azure 解決方案，專門定位在釋放組織內部的創新能力。
 
-## <a name="build-productively"></a>有效率地打造
+### <a name="build-productively"></a>有效率地打造
 
 Azure 可在以下幾個方面創造機會來協助您有效率地開發：
   
@@ -80,7 +70,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 <!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
-### <a name="action"></a>動作
+#### <a name="action"></a>動作
 
 若要建立 DevOps 專案：
 
@@ -94,9 +84,9 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone-end
 
-# <a name="innovate-collaboratively"></a>[共同創新](#tab/Collaboration)
+## <a name="innovate-collaboratively"></a>[共同創新](#tab/Collaboration)
 
-## <a name="innovate-through-collaboration"></a>透過合作來創新
+### <a name="innovate-through-collaboration"></a>透過合作來創新
 
 軟體開發是一種團隊運動。 基本原則就是與同事合作，並與團隊共享知識。 開發與營運之間的障礙必須加以破除。 您也可以使用 GitHub 之類的平台，利用您的核心產品小組之外的許多組織知識。
 
@@ -104,47 +94,46 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 **移至 [GitHub 上的 Microsoft Azure 存放庫](https://github.com/azure)**
 
-## <a name="open-source-innovation"></a>開放原始碼創新
+### <a name="open-source-innovation"></a>開放原始碼創新
 
 為了創新，許多開發人員都會使用開放原始碼的程式碼。 80% 至 90% 的新應用程式開發是從開放原始碼著手。 開放原始碼不單純是程式碼， 同時也是讓全球各地的互連社群和開發人員一起打造應用程式。 透過使用 GitHub 的開放式開發模型，團隊得以創新和合作、及早識別安全性弱點，以及查覺專家人才。 企業的開發團隊可以整合 GitHub 存放庫與 Microsoft Teams 和 Azure。 只有 Teams 這個解決方案能夠將聊天、語音和合作，與 Microsoft Office 應用程式的能力、會議和商務工作流程全都整合到單一使用者體驗中。 這是團隊合作和創新的中樞。
 
 ### <a name="learn-more"></a>深入了解
 
 - [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
-
 - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
-# <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
+## <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
 
-## <a name="innovate-by-using-azure-devops"></a>使用 Azure DevOps 來創新
+### <a name="innovate-by-using-azure-devops"></a>使用 Azure DevOps 來創新
 
 企業使用 GitHub 來裝載原始程式碼，並使用 Azure Pipelines 來提供持續整合和持續傳遞，以快速地將變更部署至 Azure。 連接 Azure Boards 與 GitHub 存放庫，便可利用 Azure Boards (功能涵蓋工作流程看板、待辦項目、小組儀表板和自訂報告) 所提供的豐富專案管理功能。
 
-## <a name="characteristics-of-innovative-applications"></a>創新應用程式的特性
+### <a name="characteristics-of-innovative-applications"></a>創新應用程式的特性
 
 開發人員可透過 Azure，使用標準的現代化應用程式模式來建置雲端原生應用程式。 Azure 會支援並提供開發人員團隊所需的所有建置組塊，讓其得以使用容器、受控資料庫、人工智慧和無伺服器功能來建置應用程式。
 
-## <a name="scale-innovation"></a>大規模創新
+### <a name="scale-innovation"></a>大規模創新
 
 對於每位企業領導人來說，其優先要務就是激發客戶體驗和企業營運應用程式的創新。 無論您是要建置 Web、行動、IoT 還是混合實境體驗，創新都是組織未來能否成功的關鍵。 為了大規模創新，組織必須專注於以可組合的服務形式，來包裝並傳遞其獨特的商業價值，讓合作夥伴和員工可以輕鬆且有效率地參與共享價值的產生過程。
 
 Azure 有獨特的供應項目，可協助您在組織中引發大規模創新。 為了推動更多創新，現今的專業開發人員可以建立應用程式和建置組塊，讓組織中的其他專家能夠在可靠的基礎上建置應用程式。 透過 Azure，他們可以取得專家團隊支援的全面安全性，以及獲得深受企業、政府和新創公司信任的主動合規性。
 
-# <a name="liveops-innovation"></a>[LiveOps 創新](#tab/LiveOps)
+## <a name="liveops-innovation"></a>[LiveOps 創新](#tab/LiveOps)
 
-## <a name="future-ready-liveops"></a>做好準備，迎向未來：LiveOps
+### <a name="future-ready-liveops"></a>做好準備，迎向未來：LiveOps
 
 創新的組織會擁抱即時作業 (LiveOps) 的思維。 LiveOps 是持續與客戶合作的設計流程。 端對端客戶旅程是焦點所在。 這是設計和指導的方法，其著重於為客戶帶來價值，並強調客戶滿意度和成果。
 
 LiveOps 也有助於讓資料變得人性化。 LiveOps 方法會讓資料變得更具可行性，讓組織得以即時採取行動，而影響您的應用程式、客戶和業務。 此流程著重於實驗、強調反覆執行和進化，促成一致且頻繁的變更。 LiveOps 是結合 DevOps 與 CRM 的方法。
 
-## <a name="liveops-transition"></a>LiveOps 轉換
+### <a name="liveops-transition"></a>LiveOps 轉換
 
 舉例來說，今日擁抱 LiveOps 的產業就是遊戲開發業。 現今的遊戲都是具代表性的 LiveOps 應用程式。 遊戲產業已經歷過一場寧靜革命，從生命週期以小時計的包裝商品，轉換成生命週期以年計的活躍社群。 由於玩家人數超過 20 億人，每年有數萬款新遊戲問世，因此遊戲開發人員轉為擁抱 LiveOps，以便能與其遊戲客群有更好的互動，並一直留住這些玩家。 透過持續與玩家互動才能創新，包括內容更新、特殊活動、促銷和優惠。
 
-## <a name="azure-playfab"></a>Azure PlayFab
+### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://azure.microsoft.com/services/playfab) 是適用於即時遊戲的完整後端平台，也是領先的 LiveOps 應用程式平台範例。 Azure PlayFab 可讓您持續監視程式碼、取得即時分析，以及發行即時更新來將應用程式最佳化並增加營收。 PlayFab 的目標是要為遊戲提供智慧型雲端，讓開發人員有更好的能力來與玩家互動、留住玩家，並從他們身上創造營收。
+[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) 是適用於即時遊戲的完整後端平台，也是領先的 LiveOps 應用程式平台範例。 Azure PlayFab 可讓您持續監視程式碼、取得即時分析，以及發行即時更新來將應用程式最佳化並增加營收。 PlayFab 的目標是要為遊戲提供智慧型雲端，讓開發人員有更好的能力來與玩家互動、留住玩家，並從他們身上創造營收。
 
 PlayFab 提供差異化、利潤更高的 LiveOps 工具和服務，以提高獲利並延長遊戲壽命。 PlayFab 完全不受裝置和平台限制，而且可以輕易地與社交識別提供者 (例如 Facebook) 或居中進行商務協調的商店平台 (Steam) 整合，並與 iOS、Android、Xbox 和 PlayStation 等裝置平台整合。 Azure 資料資產可讓 PlayFab 提供智慧型服務，以協助我們的客戶做出更好的遊戲和更聰明的決策、吸引並留住玩家，以及更快速地執行更多實驗和反覆執行來加快學習速度。
 

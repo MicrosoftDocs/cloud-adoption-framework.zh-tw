@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785475"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190748"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -30,7 +30,7 @@ ms.locfileid: "84785475"
 
 此資料表概述客戶增強的管理基準中常見的一些流程、工具和潛在影響：
 
-| Process | 工具 | 目的  | 建議的管理層級 |
+| Process | 工具 | 目的 | 建議的管理層級 |
 |---|---|---|---|
 | 改善系統設計 | Microsoft Azure Well-Architected Framework | 改善平台的架構設計以改善作業 | N/A |
 | 自動化補救 | Azure 自動化 | 使用平台專屬的自動化來回應進階平台的資料 | 平台作業 |

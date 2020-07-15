@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e8f20079df4a0e3e55a93e1a35734673d53a0634
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 9d1684b7d8dbde2fc507fa41f99c22ebe42ea587
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862512"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194607"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 

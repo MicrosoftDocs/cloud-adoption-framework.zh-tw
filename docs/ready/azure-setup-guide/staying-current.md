@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 25972ae001dd9cb153a2f6ae5e75f627ce86b7d6
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2761ce6e156a89c0f0bb5f4edb433cbeb1f7fda9
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756306"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373028"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "83756306"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resources"></a>[重要資源](#tab/TopResources)
+## <a name="top-resources"></a>[重要資源](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -47,7 +47,7 @@ ms.locfileid: "83756306"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resources"></a>[其他資源](#tab/AdditionalResources)
+## <a name="additional-resources"></a>[其他資源](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
