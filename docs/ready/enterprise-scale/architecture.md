@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: ce253be58fbd4e5a9ce7a394eb69c131a1948d75
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2fc7c6a183da9fe87fdb6825f79720f1a804608b
+ms.sourcegitcommit: a6c9643986acf33524f17bbd01c71e3fccc03805
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194794"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403458"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -48,11 +48,11 @@ CAF 企業級登陸區域架構代表組織 Azure 環境的策略性設計路徑
 
 下列清單在登陸區域圖例中展開，概述必須在客戶需求內容中設計和開發的核心技術結構，以建立符合規範的技術登陸區域環境，以及成功採用 Azure 的條件。
 
-- 身分**識別與存取管理：** 您必須建立 Azure Active Directory 設計和整合，以確保伺服器和使用者驗證。 以資源為基礎的存取控制 (RBAC) 必須進行模型化和部署，以強制區分責任和平臺操作和管理所需的權利。 金鑰管理必須經過設計和部署，以確保能夠安全地存取資源和支援作業，例如輪替和復原。 最後，存取角色會指派給控制項和資料平面上的應用程式擁有者，以自主建立和管理資源。
+- 身分**識別與存取管理：** 您必須建立 Azure Active Directory 設計和整合，以確保伺服器和使用者驗證。 資源型存取控制（RBAC）必須經過模型化和部署，以強制區分責任和平臺操作和管理所需的權利。 金鑰管理必須經過設計和部署，以確保能夠安全地存取資源和支援作業，例如輪替和復原。 最後，存取角色會指派給控制項和資料平面上的應用程式擁有者，以自主建立和管理資源。
 
 - **原則管理：** 您必須在目標 Azure 平臺上識別、描述、建立並部署整體和登陸區域特定的原則，以確保公司、法規和企業營運控制措施都已就緒。 最後，應該使用原則來保證應用程式和基礎資源的相容性，而不需要任何抽象的布建或管理功能。
 
-- **管理和監視：** 平台層級的整體 (水準) 資源監視和警示必須經過設計、部署和整合。 您也必須定義和簡化作業工作（例如修補和備份）。 安全性作業、監視和記錄必須與 Azure 上的這兩個資源以及現有的內部部署系統進行設計和整合。 所有跨資源執行控制平面作業的訂用帳戶活動記錄，都應串流至 Log Analytics，以供查詢和分析使用，受限於角色型存取控制 (RBAC) 許可權。
+- **管理和監視：** 平台層級的整體（水準）資源監視和警示必須經過設計、部署和整合。 您也必須定義和簡化作業工作（例如修補和備份）。 安全性作業、監視和記錄必須與 Azure 上的這兩個資源以及現有的內部部署系統進行設計和整合。 所有跨資源執行控制平面作業的訂用帳戶活動記錄，都應串流至 Log Analytics，以供查詢和分析使用，但受限於角色型存取控制（RBAC）許可權。
 
 - **網路拓撲和連線能力：** 必須跨 Azure 區域和內部部署環境建立並部署端對端網路拓朴，以確保平臺部署之間的北南部和東部西部連線能力。 在整個網路安全性設計中，必須識別、部署和設定必要的服務和資源（例如防火牆和網路虛擬裝置），以確保完全符合安全性需求。
 
@@ -64,11 +64,11 @@ CAF 企業級登陸區域架構代表組織 Azure 環境的策略性設計路徑
 
 - 平臺和應用層級的商務持續性和嚴重損壞修復
 - 服務管理，例如事件回應和支援
-- 服務類別目錄 (例如，設定管理資料庫) 
+- 服務類別目錄（例如，設定管理資料庫）
 
 ## <a name="high-level-architecture"></a>高階架構
 
-[ ![ CAF 企業級登陸區域架構](./media/ns-arch.png)](./media/ns-arch.png#lightbox) 
+[ ![ CAF 企業級登陸區域架構](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox) 
  _圖2： CAF 企業規模的登陸區域架構。_
 
 下載包含此架構圖表的 [Visio 檔案](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx)__。
