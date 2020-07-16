@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9465a5889f70fa95f8570cd7ffd746b40462fa6e
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 3725963273a870cb753f3c939fbf69f5f8dc36b6
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800005"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373079"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -24,7 +24,7 @@ ms.locfileid: "84800005"
 
 在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](https://cafbaseline.com)來找出貴組織的雲端治理方法中可能出現的差距。 如需有關開發治理流程的詳細資訊，請參閱[管理方法](../../govern/index.md)。
 
-# <a name="azure-blueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure 藍圖](#tab/AzureBlueprints)
 
 Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組可重複使用的 Azure 資源，其中實作並遵循組織的標準、模式和需求。 Azure 藍圖可讓開發小組在知道他們是以符合組織合規性進行建置的情況下，快速地建置及建立新環境，並使用內建元件 (像是網路) 加速開發和交貨。
 
@@ -35,7 +35,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 - Azure Resource Manager 範本。
 - 資源群組。
 
-## <a name="create-a-blueprint"></a>建立藍圖
+### <a name="create-a-blueprint"></a>建立藍圖
 
 若要建立藍圖：
 
@@ -45,7 +45,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
 1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
-1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
+1. 選取 下一步：**成品 >>** ，然後檢閱藍圖中包含的成品。
 1. 選取 **[儲存草稿]** 。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
@@ -60,12 +60,12 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
 1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
-1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
+1. 選取 下一步：**成品 >>** ，然後檢閱藍圖中包含的成品。
 1. 選取 **[儲存草稿]** 。
 
 ::: zone-end
 
-## <a name="publish-a-blueprint"></a>發佈藍圖
+### <a name="publish-a-blueprint"></a>發佈藍圖
 
 若要將藍圖成品發佈至您的訂用帳戶：
 
@@ -91,7 +91,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱：
 
@@ -101,7 +101,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone-end
 
-# <a name="azure-policy"></a>[Azure 原則](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure 原則](#tab/AzurePolicy)
 
 Azure 原則是一項服務，您可用來建立、指派和管理原則。 這些原則會對您的資源強制執行規則，讓這些資源能符合公司標準和服務等級協定的規範。 Azure 原則會掃描您的資源，以識別不符合所實作原則的資源。 例如，您可以讓原則只允許環境中執行特定虛擬機器 (VM) 大小。 當您實作此原則時，其會評估環境中現有的 VM 和任何新部署的 VM。 原則評估作業會產生合規性事件供您用於監視和報告。
 
@@ -114,7 +114,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 將內建原則指派給管理群組、訂用帳戶或資源群組。
 
@@ -124,14 +124,14 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 ::: zone target="docs"
 
-## <a name="apply-a-policy"></a>套用原則
+### <a name="apply-a-policy"></a>套用原則
 
 若要將原則套用至資源群組：
 
 1. 請移至 [Azure 原則](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/GettingStarted)。
 1. 選取 [指派原則]。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱：
 
@@ -140,7 +140,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
 
 Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您掌控安全性，因為它會：
 
@@ -158,7 +158,7 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 
 若要探索 Azure 資訊安全中心，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0)。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱：
 
@@ -171,7 +171,7 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

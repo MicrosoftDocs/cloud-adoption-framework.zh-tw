@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84e31db3819235b7a17d6a5f4727e09854bc1b35
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7e8542a45cd9fa9517d4ddf9ed5789f8173a9897
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755886"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373198"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -22,11 +22,11 @@ ms.locfileid: "83755886"
 
 將您的環境遷移至 Azure 之後，請務必考慮用來管理環境的安全性和方法。 Azure 提供許多特性和功能來滿足您解決方案中的這些需求。
 
-# <a name="azure-monitor"></a>[Azure 監視器](#tab/monitor)
+## <a name="azure-monitor"></a>[Azure 監視器](#tab/monitor)
 
 Azure 監視器可藉由提供全方位的解決方案，以便收集、分析及處理來自雲端和內部部署環境的遙測資料，進而將應用程式的可用性和效能最大化。 它可協助您了解您的應用程式表現如何，並主動識別影響它們的問題以及它們所依賴的資源。
 
-## <a name="use-and-configure-azure-monitor"></a>使用和設定 Azure 監視器
+### <a name="use-and-configure-azure-monitor"></a>使用和設定 Azure 監視器
 
 1. 在 Azure 入口網站中，移至 [監視器]。
 2. 選取 [計量]、[記錄] 或 [服務健康狀態] 以取得概觀。
@@ -40,13 +40,13 @@ Azure 監視器可藉由提供全方位的解決方案，以便收集、分析�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 - [Azure 監視器概觀](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/serviceHealth)
+## <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/serviceHealth)
 
 當 Azure 服務中發生的問題影響您時，Azure 服務健康狀態會提供個人化指導及支援。 它會通知您並協助您了解問題所帶來的影響，並在問題解決時通知您； 也會協助您針對可能影響資源可用性之預定進行的維修作業和變更做好準備。
 
@@ -58,7 +58,7 @@ Azure 服務健康狀態包含：
 
 這些體驗結合在一起，可讓您在與您相關的詳細資料層級，全面瞭解 Azure 健康情況。
 
-## <a name="access-service-health"></a>存取服務健康狀態
+### <a name="access-service-health"></a>存取服務健康狀態
 
 1. 在 Azure 入口網站中，移至 [監視器]。
 2. 選取 [服務健康狀態]。
@@ -71,17 +71,17 @@ Azure 服務健康狀態包含：
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
-# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
+## <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來最佳化您的 Azure 部署。 它會分析您的資源及用量遙測， 並建議解決方案，協助改善效能、安全性及資料的高可用性，同時尋找降低整體 Azure 費用的機會。
 
-## <a name="access-azure-advisor"></a>存取 Azure Advisor
+### <a name="access-azure-advisor"></a>存取 Azure Advisor
 
 1. 移至 Azure 入口網站中的 [Advisor]，或搜尋資源。
 2. 選取 [高可用性]、[安全性]、[效能]、[成本]。
@@ -94,17 +94,17 @@ Azure 建議程式是個人化的雲端顧問，可協助您依最佳做法來�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 [概觀](https://docs.microsoft.com/azure/advisor/advisor-overview)。
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/security)
+## <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/security)
 
-Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化資料中心的安全性狀態，並在雲端 (無論在 Azure 中與否) 及內部部署的混合式工作負載全面提供進階威脅防護。
+Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化資料中心的安全性狀態，並在雲端 (&mdash;無論在 Azure 中與否&mdash;) 及內部部署的混合式工作負載全面提供 Azure 進階威脅防護。
 
-## <a name="access-azure-security-center"></a>存取 Azure 資訊安全中心
+### <a name="access-azure-security-center"></a>存取 Azure 資訊安全中心
 
 1. 移至 Azure 入口網站中的 [資訊安全中心]，或搜尋資源。
 2. 選取 [建議]。
@@ -117,17 +117,17 @@ Azure 資訊安全中心是統一基礎結構安全性管理系統，可強化�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 [概觀](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
-# <a name="azure-backup"></a>[Azure 備份](#tab/backup)
+## <a name="azure-backup"></a>[Azure 備份](#tab/backup)
 
 Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還原 Microsoft Cloud 中的資料。 Azure 備份將以一個可靠、安全及具成本競爭力的雲端架構解決方案，取代您現有的內部部署或異地備份解決方案。
 
-## <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
+### <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
 
 1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
 1. 在 [作業]中，選取 [備份]。
@@ -149,13 +149,13 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 稍早在本指南中，我們討論了如何在執行移轉的過程中使用 Azure Site Recovery。 但是在移轉完成後，它也會形成您的災害復原策略中的重要元件。
 
 Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機器和工作負載複寫至裝載於次要區域的複本。 當主要區域發生中斷時，您可以容錯移轉至在次要區域中執行的複本，並從該處繼續存取您的應用程式和服務。 當虛擬機器主要複本的中斷再次執行之後，您就可以容錯回復到它。
 
-## <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>使用 Site Recovery 服務將 Azure VM 複寫至另一個區域
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>使用 Site Recovery 服務將 Azure VM 複寫至另一個區域
 
 下列步驟概述使用 Site Recovery 服務將 Azure VM 複寫至另一個區域 (Azure 至 Azure) 的程序：
 
@@ -164,11 +164,11 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 > 視您的案例而定，確切的步驟可能稍有不同。
 >
 
-## <a name="enable-replication-for-the-azure-vm"></a>啟用 Azure VM 的複寫
+### <a name="enable-replication-for-the-azure-vm"></a>啟用 Azure VM 的複寫
 
 1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
 1. 在 [作業] 中，選取 [災害復原]。
-1. 在 [設定災害復原] >  [目標區域] 中，選取您要複寫至的目標區域。
+1. 在 [設定災害復原] > [目標區域] 中，選取要作為複寫目的地的目標區域。
 1. 在本快速入門中，接受其他預設設定。
 1. 選取 [啟用複寫]。 這會開始一項作業來啟用 VM 的複寫。
 
@@ -178,7 +178,7 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 
 ::: zone-end
 
-## <a name="verify-settings"></a>確認設定
+### <a name="verify-settings"></a>確認設定
 
 在複寫作業完成之後，您可以檢查複寫狀態、確認複寫健康情況，以及測試部署。
 
@@ -193,7 +193,7 @@ Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 - [Azure Site Recovery 概觀](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 - [將 Azure VM 複寫到另一個區域](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)

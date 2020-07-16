@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 965e2021a03429782352889a15a8632ec1a84641
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1894872688948e3f4b80d8e52095cf15b40f8f50
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787532"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372858"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "84787532"
 
 Azure 提供許多服務，這些服務可共同提供一個全方位的解決方案，讓您從應用程式和支援這些服務的 Azure 資源收集遙測、加以分析並採取行動。 此外，這些服務可延伸至監視重要的內部部署資源，以提供混合式監視環境。
 
-# <a name="azure-monitor"></a>[Azure 監視器](#tab/AzureMonitor)
+## <a name="azure-monitor"></a>[Azure 監視器](#tab/AzureMonitor)
 
 Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的整合中樞。 您可以使用它來取得資源的可見度。 透過 Azure 監視器，您將可找出並修正問題，進而將效能最佳化。 您也可以了解客戶的行為。
 
@@ -45,7 +45,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 若要探索 Azure 監視器，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview)。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱 [Azure 監視器文件](https://docs.microsoft.com/azure/monitoring-and-diagnostics)。
 
@@ -55,13 +55,13 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure 服務健康狀態](#tab/AzureServiceHealth)
 
 Azure 服務健康狀態會提供您所用 Azure 服務和區域的健康情況個人化檢視。 作用中問題的相關資訊會發佈到「Azure 服務健康狀態」，協助您了解對資源的影響。 定期更新可讓您立即掌握問題已解決的資訊。
 
@@ -77,7 +77,7 @@ Azure 服務健康狀態包含：
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 若要設定服務健康狀態警示：
 
@@ -93,18 +93,18 @@ Azure 服務健康狀態包含：
 
 若要設定 Azure 服務健康狀態警示，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts)。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
 
 ::: zone-end
 
-# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+## <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor 是免費的個人化雲端顧問，可協助您遵循及實作 Azure 部署的最佳做法。 它會分析資源組態和使用量遙測，然後建議有助於將環境最佳化的解決方案。 建議分為以下幾個類別：
 
 - **高可用性：** 可改善商務關鍵應用程式的持續性。 建議做法可能包括將虛擬機器新增至可用性設定組，或新增異地備援的端點。
-- **安全性：** 可偵測可能導致安全性漏洞的威脅和弱點。 建議做法可能包括套用磁碟加密，或啟用網路安全性群組。
+- **安全性：** 可偵測可能導致安全性漏洞的威脅和弱點。 建議做法可能包括套用 Azure 磁碟加密，或啟用網路安全性群組。
 - **效能：** 可提升應用程式的速度。 建議做法可能包括藉由建立索引或重新設定流量管理員設定來提升 SQL 查詢效能。
 - **成本：** 可最佳化並降低整體 Azure 費用。 建議做法可能包括將未充分使用的虛擬機器調整大小或關閉，或改用 Azure 保留項目以降低擁有權總成本。
 - **卓越的營運績效：** 改善流程和工作流程效率以及管理能力。 建議可能包括設定和強制執行 Azure 原則規則、修復不正確的記錄警示規則，以及設定服務健康狀態警示。
@@ -113,7 +113,7 @@ Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Expert/AdvisorBlade]" submitText="Explore Azure Advisor" :::
 
@@ -123,13 +123,13 @@ Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來�
 
 若要探索 Azure Advisor，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorBlade)。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱 [Azure Advisor 文件](https://docs.microsoft.com/azure/advisor)。
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure 資訊安全中心](#tab/AzureSecurityCenter)
 
 Azure 資訊安全中心也會在監視策略中扮演重要角色。 它可協助您監視機器、網路、儲存體、資料服務和應用程式的安全性。 資訊安全中心可藉由使用機器學習和行為分析來協助您識別目標是 Azure 資源的作用中威脅，從而提供先進的威脅偵測。 其也提供威脅防護，可封鎖惡意程式碼或其他不必要的程式碼，並可減少暴露在暴力密碼破解攻擊和其他網路攻擊之下的介面區。
 
@@ -139,7 +139,7 @@ Azure 資訊安全中心提供兩個層級：免費層和標準層。 安全性�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>動作
+### <a name="action"></a>動作
 
 **前 30 天可免費使用標準服務層級。**
 
@@ -153,7 +153,7 @@ Azure 資訊安全中心提供兩個層級：免費層和標準層。 安全性�
 
 若要探索 Azure 資訊安全中心，請移至 [Azure 入口網站](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0)。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱 [Azure 資訊安全中心文件](https://docs.microsoft.com/azure/security-center)。
 

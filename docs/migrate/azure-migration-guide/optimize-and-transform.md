@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 86be2dfc12efe36afbc88fed74c0e8a60395f91f
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: f011bae35204c2acff3f8b9b48df61f9528499a3
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993553"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372943"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "84993553"
 
 本文的其餘部分著重於可最佳化已遷移工作負載的工具。 達到效能和成本適當的平衡後，工作負載便已準備好升階至生產環境。 如需有關升階選項的指引，請參閱[最佳化及升階](../migration-considerations/optimize/index.md)中的程序改善文章。
 
-# <a name="right-size-assets"></a>[適當大小的資產](#tab/optimize)
+## <a name="right-size-assets"></a>[適當大小的資產](#tab/optimize)
 
 所有提供以耗用量為基礎之成本模型的 Azure 服務，都可以透過 Azure 入口網站、CLI 或 PowerShell 來調整大小。 正確設定服務大小的第一個步驟是審查其使用計量。 Azure 監視器服務可供存取這些計量。 您可能需要設定所分析服務的計量集合，並容許適當的時間來根據您的工作負載模式收集有意義的資料。
 
@@ -41,7 +41,7 @@ ms.locfileid: "84993553"
 
 以下是一些您可調整大小的常用服務。
 
-## <a name="resize-a-virtual-machine"></a>調整虛擬機器大小
+### <a name="resize-a-virtual-machine"></a>調整虛擬機器大小
 
 Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而使用此工具遷移的虛擬機器可能已根據您的預先移轉需求進行大小調整。
 
@@ -68,11 +68,11 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 合作夥伴可以使用合作夥伴中心來審查使用方式。
 
-- [針對最大保留使用量進行 Microsoft Azure VM 大小調整](https://docs.microsoft.com/partner-center/azure-usage)
+- [調整 Azure VM 大小以提供最大保留區使用率](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
-## <a name="resize-a-storage-account"></a>調整儲存體帳戶大小
+### <a name="resize-a-storage-account"></a>調整儲存體帳戶大小
 
 1. 移至 [儲存體帳戶]。
 1. 選取所需的儲存體帳戶。
@@ -85,9 +85,9 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone-end
 
-## <a name="resize-a-sql-database"></a>調整 SQL 資料庫大小
+### <a name="resize-a-sql-database"></a>調整 SQL 資料庫大小
 
-1. 移至 [SQL 資料庫] 或 [SQL 資料庫]然後選取伺服器。
+1. 移至 [SQL 資料庫] 或 [SQL 資料庫]接著選取伺服器。
 1. 選取所需的資料庫。
 1. 選取 [設定] 和所需的新服務層大小。
 1. 選取 [套用]。
@@ -98,11 +98,11 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone-end
 
-# <a name="cost-management"></a>[成本管理](#tab/ManageCost)
+## <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
 請務必執行持續成本分析和審查。 此工作讓您有機會視需要調整資源大小，以平衡成本和工作負載。
 
-Azure 成本管理可搭配 Azure Advisor，提供成本最佳化建議。 Azure Advisor 可協助您透過識別閒置及使用量過低的資源來最佳化及改善效率。
+Azure 成本管理和計費可搭配 Azure Advisor，提供成本最佳化建議。 Azure Advisor 可協助您透過識別閒置及使用量過低的資源來最佳化及改善效率。
 
 1. 選取 [成本管理 + 計費]。
 1. 選取 [Advisor 建議] 和 [成本] 索引標籤。

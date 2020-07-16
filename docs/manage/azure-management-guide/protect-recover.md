@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c25329eae0a7b416b9bcd11eab6599e2e28781fc
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217450"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190697"
 ---
 <!-- cSpell:ignore siterecovery -->
 
 # <a name="protect-and-recover-in-azure"></a>Azure 中的保護和復原
 
-「保護和復原」  是任何雲端管理基準中的第三個和最後一個專業領域。
+「保護和復原」是任何雲端管理基準中的第三個和最後一個專業領域。
 
 ![雲端管理基準](../../_images/manage/management-baseline.png)
 
@@ -48,13 +48,13 @@ ms.locfileid: "83217450"
 
 ### <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
 
-1. 在 Azure 入口網站中，選取 [虛擬機器]  ，然後選取您想要複寫的 VM。
-1. 在 [作業]  窗格中，選取 [備份]  。
+1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
+1. 在 [作業] 窗格中，選取 [備份]。
 1. 建立或選取現有的 Azure 復原服務保存庫。
-1. 選取 [建立 (或編輯) 新的原則]  。
+1. 選取 [建立 (或編輯) 新的原則]。
 1. 設定排程和保留期間。
-1. 選取 [確定]  。
-1. 選取 [啟用備份]  。
+1. 選取 [確定]。
+1. 選取 [啟用備份]。
 
 ::: zone target="chromeless"
 
@@ -89,11 +89,11 @@ Site Recovery 會複寫裝載在主要 Azure 區域中的 VM 和工作負載。 
 
 ### <a name="enable-replication-for-the-azure-vm"></a>啟用 Azure VM 的複寫
 
-1. 在 Azure 入口網站中，選取 [虛擬機器]  ，然後選取您想要複寫的 VM。
-1. 在 [作業]  窗格中，選取 [災害復原]  。
-1. 選取 [設定災害復原]   > [目標區域]  ，然後選擇要作為複寫目的地的目標區域。
+1. 在 Azure 入口網站中，選取 [虛擬機器]，然後選取您想要複寫的 VM。
+1. 在 [作業] 窗格中，選取 [災害復原]。
+1. 選取 [設定災害復原] > [目標區域]，然後選擇要作為複寫目的地的目標區域。
 1. 在本快速入門中，請接受所有其他選項的預設值。
-1. 選取 [啟用複寫]  ，這會啟動作業來啟用 VM 的複寫。
+1. 選取 [啟用複寫]，這會啟動作業來啟用 VM 的複寫。
 
 ::: zone target="chromeless"
 
@@ -105,7 +105,7 @@ Site Recovery 會複寫裝載在主要 Azure 區域中的 VM 和工作負載。 
 
 在複寫作業完成之後，您可以檢查複寫狀態、確認複寫健康情況，以及測試部署。
 
-1. 在 VM 功能表中，選取 [災害復原]  。
+1. 在 VM 功能表中，選取 [災害復原]。
 1. 確認複寫健康情況、已建立的復原點，以及地圖上的來源和目標區域。
 
 ::: zone target="chromeless"

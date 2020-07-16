@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b80acbe78ad8d4ad1cc50346db5a16ba20dbb38a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787872"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373045"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
@@ -22,11 +22,11 @@ ms.locfileid: "84787872"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="tools"></a>[工具](#tab/Tools)
+## <a name="tools"></a>[工具](#tab/Tools)
 
 如果您未遵循上述連結中的指導方針，您可能會需要資料和評量工具來做出明智的移轉決策。 Azure Migrate 是用來評估**和**遷移至 Azure 的原生工具。 如果您還沒有這些項目，請使用下列步驟來建立新的伺服器移轉專案，並收集必要的資料。
 
-## <a name="azure-migrate"></a>Azure Migrate
+### <a name="azure-migrate"></a>Azure Migrate
 
 Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用程式和資料。 此服務能夠：
 
@@ -38,7 +38,7 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 ![Azure Migrate 概觀](./media/assess/azure-migrate-overview-1.png)
 
-### <a name="create-a-new-server-migration-project"></a>建立新的伺服器移轉專案
+#### <a name="create-a-new-server-migration-project"></a>建立新的伺服器移轉專案
 
 透過下列步驟，使用 Azure Migrate 開始進行伺服器移轉評量：
 
@@ -49,9 +49,9 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 1. 在 [Migrate 專案] 中選取您的 Azure 訂用帳戶，然後建立資源群組 (如果您還沒有的話)。
 1. 在 [專案詳細資料] 中指定專案名稱，以及您要在其中建立專案的地理位置，然後選取 [下一步]。
 1. 在 [選取評量工具] 中，選取 [暫時跳過新增評量工具] > [下一步]。
-1. 在 [選取移轉工具] 中，選取 **[Azure Migrate：伺服器移轉] > [下一步]** 。
+1. 在 [選取移轉工具] 中，選取 **[Azure Migrate：伺服器移轉]**  > [下一步]。
 1. 在 [檢閱 + 新增工具] 中檢閱設定，然後選取 [新增工具]。
-1. 新增工具之後，工具會出現在 [Azure Migrate 專案] > [伺服器] > [移轉工具] 中。
+1. 新增工具之後，工具會出現在 [Azure Migrate 專案] > [伺服器] > [移轉工具]中。
 
 ::: zone target="chromeless"
 
@@ -61,7 +61,7 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 ::: zone target="docs"
 
-### <a name="learn-more"></a>深入了解
+#### <a name="learn-more"></a>深入了解
 
 - [Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [將實體或虛擬伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -69,13 +69,13 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 ::: zone-end
 
-## <a name="service-map"></a>服務對應
+### <a name="service-map"></a>服務對應
 
 服務對應會自動在 Windows 及 Linux 系統上探索應用程式元件，並對應服務之間的通訊。 您可以藉由服務對應，將伺服器視為提供重要服務的互連系統，藉此來檢視伺服器。 不需要進行任何設定，只要安裝了代理程式，服務對應就會顯示橫跨任何 TCP 連線架構的伺服器、處理序、輸入和輸出連線的延遲，和連接埠之間的連線。
 
-Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 如需這項整合的完整詳細資料，請參閱[相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)。 如果您使用 Azure 移轉服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
+Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 如需這項整合的完整詳細資料，請參閱[相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)。 如果您使用 Azure Migrate 服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
 
-### <a name="enable-dependency-visualization-using-service-map"></a>使用服務對應來啟用相依性視覺效果
+#### <a name="enable-dependency-visualization-using-service-map"></a>使用服務對應來啟用相依性視覺效果
 
 若要使用相依性視覺效果，請在待分析的每個內部部署機器上，下載及安裝代理程式。
 
@@ -85,12 +85,12 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="learn-more"></a>深入了解
+#### <a name="learn-more"></a>深入了解
 
 - [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="challenge-assumptions"></a>[挑戰假設](#tab/Challenge-Assumptions)
+## <a name="challenge-assumptions"></a>[挑戰假設](#tab/Challenge-Assumptions)
 
 在理想的移轉中，每個資產 (基礎結構、應用程式或資料) 都會與雲端平台相容，並準備好進行移轉或現代化。 但事實上，並非所有工作負載都應該遷移至雲端。 並非每個資產都會與雲端平台相容。 在將工作負載遷移至雲端之前，請先評估每個工作負載和所有相依的資產 (基礎結構、應用程式和資料)。
 
@@ -98,15 +98,15 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 上述連結會建議在移轉的規劃階段中，假設是可接受的，而且通常是建議的做法。 但是現在是時候採取行動了。 在遷移至雲端之前，您應該針對每個工作負載，對這些假設提出挑戰。
 
-## <a name="two-steps-of-incremental-rationalization"></a>漸進式合理化的兩個步驟
+### <a name="two-steps-of-incremental-rationalization"></a>漸進式合理化的兩個步驟
 
 若要成功實現[合理化](../../digital-estate/rationalize.md#incremental-rationalization)，您需要兩個相同的加權步驟。 這兩個步驟都需要環境中的資料和深入解析。 不過，每一種方法都涉及成功完成移轉工作所需的時間和詳細資料細微性。
 
-- [以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：第一次進行合理化和版本規劃期間，只有其中一個[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[雲端採用策略文件](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
+- [以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：第一次進行合理化和版本規劃期間，只有其中一個[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
 
 - **每個工作負載的詳細評量：** 與「以十為單位」版本規劃相關的假設是可接受的，並且足以用來建立方案。 但是，如果在移轉之前未進行評估，則這些相同的假設可能會造成重大問題。
 
-## <a name="challenge-assumptions-and-update-the-plan"></a>挑戰假設並更新方案
+### <a name="challenge-assumptions-and-update-the-plan"></a>挑戰假設並更新方案
 
 在 Azure Migrate 或您選擇的評估工具中仔細檢閱評量資料。 此資料會提供相容性問題、補救需求、大小調整建議和其他考量的見解。
 
@@ -114,17 +114,17 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 挑戰這些假設的第一個步驟是[檢閱合理化的所有五 R 策略](../../digital-estate/rationalize.md)。
 
-    - 假設的合理化方法適用於此工作負載嗎？ 這是最好的方法嗎？
-    - 有任何[複寫物理學](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)會影響此工作負載的移轉嗎？
-    - 移轉之前，此工作負載是否需要任何[補救活動](../migration-considerations/assess/evaluate.md)？
+- 假設的合理化方法適用於此工作負載嗎？ 這是最好的方法嗎？
+- 有任何[複寫物理學](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)會影響此工作負載的移轉嗎？
+- 移轉之前，此工作負載是否需要任何[補救活動](../migration-considerations/assess/evaluate.md)？
 
 這些類型的問題有助於挑戰假設，並引導出每個工作負載的最佳路徑。
 
 如需用於驗證假設的問題和已定義程序的擴充清單，請參閱[評量程序改善的概觀](../migration-considerations/assess/index.md)。
 
-# <a name="scenarios-and-stakeholders"></a>[案例和專案關係人](#tab/Scenarios)
+## <a name="scenarios-and-stakeholders"></a>[案例和專案關係人](#tab/Scenarios)
 
-## <a name="scenarios"></a>案例
+### <a name="scenarios"></a>案例
 
 本指南涵蓋下列案例：
 
@@ -141,7 +141,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 如需讓組織準備好進行雲端移轉工作的詳細資訊，請參閱雲端採用架構關於[初始組織配合](../../plan/initial-org-alignment.md)的指引。
 
-# <a name="timelines"></a>[時間表](#tab/Timelines)
+## <a name="timelines"></a>[時間表](#tab/Timelines)
 
 客戶通常會發現本指南所說明的移轉案例可以在 1 到 6 個月內完成。
 
@@ -153,7 +153,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 - **變更管理：** 貴公司是否有關於變更實作和核准的特定需求？
 - **部門法規：** 您是否必須遵守部門或企業法規？
 
-# <a name="cost-management"></a>[成本管理](#tab/ManageCost)
+## <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
 評估環境可提供絕佳的機會來包含成本分析步驟。 使用評估活動所收集的資料，您應該就能夠分析和預測成本。 除了任何一次性成本 (例如，增加的資料輸入) 外，此成本預測也應同時納入取用服務成本。
 

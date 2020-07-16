@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 794f500b50a4376cc52861a61dbc70a8a9197114
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 22da52f3cdec09d3337c320875076c579bb5bb61
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233710"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373147"
 ---
-# <a name="azure-migration-guide-before-you-start"></a>Azure 移轉指南：開始之前
+# <a name="azure-migration-guide-overview"></a>Azure 移轉指南概觀
 
 [雲端採用架構的遷移方法](../index.md)會引導讀者完成遷移一個工作負載或每一版小型工作負載集合的反覆程序。 執行每個反覆作業時，我們會遵循評估、移轉、最佳化和升階的程序，以確保工作負載能夠符合生產需求。 該程序沒有雲端限定，可引導您遷移至任何雲端提供者。
 

@@ -9,24 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: db526c15a4e33f9531a404c8c257d9c6b5b90261
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222312"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373317"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-prepare-for-customer-feedback"></a>Azure 創新指南：針對客戶意見反應做好準備
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
-
-::: zone-end
 
 創新能否成功，關鍵在於使用者的採用、參與和保留。 原因為何？
 
@@ -48,9 +38,9 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 若要檢視關於應用程式的定量資料：
 
 1. 前往 **Application Insights**。
-   - 如果應用程式未出現在清單中，請選取 [新增]  ，並遵循提示來開始設定 Application Insights。
+   - 如果應用程式未出現在清單中，請選取 [新增]，並遵循提示來開始設定 Application Insights。
    - 如果所需的應用程式已在清單中，請選取該應用程式。
-1. [概觀]  窗格中會有一些關於應用程式的統計資料。 選取 [應用程式儀表板]  ，以針對與假設比較有關的資料建置自訂儀表板。
+1. [概觀] 窗格中會有一些關於應用程式的統計資料。 選取 [應用程式儀表板]，以針對與假設比較有關的資料建置自訂儀表板。
 
 ::: zone target="chromeless"
 
@@ -76,7 +66,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ## <a name="quantitative-feedback-for-apis"></a>[適用於 API 的定量意見反應](#tab/Quantitative-APIs)
 
-連線經濟改變了企業的創新方式。 市場和產業遭遇動盪的速度比以往還快。 動盪的形式很多，企業必須奮力對抗「創新者困境」  ：如何設定變更步調，又不至於在持續的商業活動上摔一跤。
+連線經濟改變了企業的創新方式。 市場和產業遭遇動盪的速度比以往還快。 動盪的形式很多，企業必須奮力對抗「創新者困境」：如何設定變更步調，又不至於在持續的商業活動上摔一跤。
 
 對外，企業會使用 API 來變更其與客戶和合作夥伴的互動方式。 對內，企業會使用 API 來順暢地連接企業的各個組成部分。 API 經濟的四個營運用建置組塊為：社交、行動、分析和雲端。 應用程式和服務可以透過符合成本效益的方式快速地連結起來，以產生更廣大的價值主張。
 
@@ -86,15 +76,15 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 若要記錄關於 API 的定量資料：
 
-1. 移至 [API 管理服務]  。
+1. 移至 [API 管理服務]。
 2. 從清單中選取所需的 API。
-3. 在 [監視]  區段中選取 [診斷設定]  。
+3. 在 [監視] 區段中選取 [診斷設定]。
 
 若要檢視關於 API 的定量資料：
 
-1. 移至 [API 管理服務]  。
+1. 移至 [API 管理服務]。
 2. 從清單中選取所需的 API。
-3. 在 [監視]  區段中選取 [應用程式]  。
+3. 在 [監視] 區段中選取 [應用程式]。
 
 ::: zone target="chromeless"
 
@@ -124,7 +114,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="action"></a>動作
 
-Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](https://azure.microsoft.com/services/devops)。
+Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)。
 
 ::: zone-end
 
@@ -136,9 +126,9 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 若要建立 DevOps 專案：
 
-1. 移至 [Azure DevOps Projects]  。
-2. 選取 [建立 DevOps 專案]  。
-3. 選取 [執行階段、架構和服務]  。
+1. 移至 [Azure DevOps Projects]。
+2. 選取 [建立 DevOps 專案]。
+3. 選取 [執行階段、架構和服務]。
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
@@ -161,9 +151,9 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 若要在管線中檢視目前的部署：
 
-1. 移至 [應用程式服務]  。
+1. 移至 [應用程式服務]。
 2. 從清單中選取所需的應用程式。
-3. 在 [應用程式服務] 窗格的 [部署]  區段中選取 [部署中心]  。
+3. 在 [應用程式服務] 窗格的 [部署] 區段中選取 [部署中心]。
 
 ::: zone target="chromeless"
 

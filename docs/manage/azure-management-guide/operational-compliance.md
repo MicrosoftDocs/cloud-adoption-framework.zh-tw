@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: cc3d8ddfc599a33e28874774e92915b964aa4e3c
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621212"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190867"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -164,7 +164,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 1. 在 [藍圖名稱] 方塊中，輸入藍圖名稱。
 1. 選取 [定義位置]，然後選擇適當的位置。
 1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
-1. 選取 **[儲存草稿]** 。
+1. 選取 [儲存草稿]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -178,7 +178,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 1. 在 [藍圖名稱] 方塊中，輸入藍圖名稱。
 1. 選取 [定義位置]，然後選擇適當的位置。
 1. 選取 [下一步：成品 >>]，然後檢閱藍圖中包含的成品。
-1. 選取 **[儲存草稿]** 。
+1. 選取 [儲存草稿]。
 
 ::: zone-end
 

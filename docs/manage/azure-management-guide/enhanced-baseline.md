@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0086b76c93a6a1491b7715ca568a43bdc40c1ab0
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 3cf2d02139061841d188271c61011b2439ae14db
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992861"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234016"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "84992861"
 
 前三個雲端管理專業領域描述的是管理基準。 本指南中的前述文章概述了雲端管理服務的最簡可行產品 (MVP)，亦稱為管理基準。 本文會概述管理基準的一些常見改善。
 
-管理基準的目的是要建立一致的供應項目，以便為「所有」  受支援的工作負載提供最低程度的商務承諾。 透過這個常見的可重複管理供應項目基準，小組可以最小的偏差來提供高度最佳化的作業管理機制。
+管理基準的目的是要建立一致的供應項目，以便為「所有」受支援的工作負載提供最低程度的商務承諾。 透過這個常見的可重複管理供應項目基準，小組可以最小的偏差來提供高度最佳化的作業管理機制。
 
 不過，您可能需要比標準供應項目還要好的商務承諾。 下圖和下列清單會顯示讓您得以超越管理基準的三種方式。
 
@@ -80,7 +80,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 
 1. 移至 **Azure 自動化**。
 1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
-1. 移至 [程序自動化]  。
+1. 移至 [程序自動化]。
 1. 有了這個選項，您就可以建立或管理 Runbook、排程和其他自動化補救功能。
 
 ::: zone target="chromeless"
@@ -117,7 +117,7 @@ Azure 資訊安全中心提供兩個層級：免費和標準。 安全性建議�
 
 #### <a name="try-standard-tier-for-free-for-your-first-30-days"></a>前 30 天可免費使用標準服務層級
 
-為訂用帳戶資源啟用及設定安全性原則後，便可在 [防護]  窗格中檢視資源的安全性狀態及任何問題。 您也可以在 [建議]  圖格上檢視這些問題的清單。
+為訂用帳戶資源啟用及設定安全性原則後，便可在 [防護] 窗格中檢視資源的安全性狀態及任何問題。 您也可以在 [建議] 圖格上檢視這些問題的清單。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

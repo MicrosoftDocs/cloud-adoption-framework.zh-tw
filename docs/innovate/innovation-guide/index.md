@@ -9,25 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 59111ad2bac9cf3b4fca2053a7d4b56d88c0cb89
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7ae8fa0dd1de1544eb50b55995e1bf9368369319
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190986"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373213"
 ---
-::: zone target="docs"
+# <a name="azure-innovation-guide-overview"></a>Azure 創新指南概觀
 
-# <a name="azure-innovation-guide-before-you-start"></a>Azure 創新指南：開始之前
+::: zone target="docs"
 
 > [!NOTE]
 > 本指南可作為雲端採用架構的創新指引起點。 您也可以在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)內取得本指南。
-
-::: zone-end
-
-::: zone target="chromeless"
-
-# <a name="before-you-start"></a>開始之前
 
 ::: zone-end
 

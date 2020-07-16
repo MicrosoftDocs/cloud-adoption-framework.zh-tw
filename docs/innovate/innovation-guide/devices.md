@@ -9,26 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0b876c402f18492b956b5ae561107ec6b57e63ee
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ded639348eaee2053d6f02e4179694df7e193b0b
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862104"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373249"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-interact-through-devices"></a>Azure 創新指南：透過裝置來互動
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="interact-through-devices"></a>透過裝置來互動
-
-::: zone-end
 
 透過間歇性連線和感知的邊緣裝置進行創新。 協調數百萬個這類裝置、取得及處理無限資料，並利用日益增加的多重感應、多重裝置體驗。 對於網路邊緣的裝置，Azure 提供了一個架構供您建置沉浸式且有效的商務解決方案。 您可以透過 Azure 和人工智慧 (AI) 技術相結合而實現的通用運算，建置所能想到的各種智慧型應用程式和系統。
 
@@ -64,7 +54,6 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 ### <a name="learn-more"></a>深入了解
 
 - [IoT 中心](https://docs.microsoft.com/azure/iot-hub)
-
 - [Azure IoT 中樞裝置佈建服務 (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
@@ -128,7 +117,7 @@ Azure IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，�
 若要建立 Azure Digital Twins：
 
 1. 在左窗格中選取 [建立資源]。
-2. 搜尋 **digital twins**，然後選取 [Digital Twins]。
+2. 搜尋 **digital twins**，接著選取 [Digital Twins]。
 3. 選取 [建立] 以啟動部署程序。
 4. 若要檢閱現有的 Digital Twins，請選取此按鈕：
 
@@ -144,7 +133,7 @@ Azure IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，�
 
 ## <a name="location-intelligence"></a>[位置智慧](#tab/AzureMaps)
 
-除了鄰近地點、交通和路線等傳統位置功能以外，Azure 地圖服務還可讓企業建立使用即時位置智慧的解決方案，此即時位置智慧由世界級的行動技術合作夥伴 **TomTom** 和 **Moovit** 所提供。 利用地理空間服務，輕鬆將進階定位及執行功能整合到您的應用程式中。
+除了鄰近地點、交通和路線等傳統位置功能以外，Azure 地圖服務還可讓企業建立使用即時位置智慧的解決方案，此即時位置智慧由世界級的行動技術合作夥伴 TomTom 和 Moovit 所提供。 利用地理空間服務，輕鬆將進階定位及執行功能整合到您的應用程式中。
 
 **資料服務預覽：** 上傳並儲存用於空間作業或影像編譯的地理空間資料，以在應用程式中縮短延遲、提升生產力，及實踐新的案例。
 
@@ -191,7 +180,9 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ::: zone target="docs"
 
-- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
+### <a name="learn-more"></a>深入了解
+
+- [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)
 
 ::: zone-end
 
@@ -222,8 +213,7 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure 遠端轉譯](https://azure.microsoft.com/services/remote-rendering)
-
+- [Azure 遠端轉譯](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 - [使用 Azure 進行轉譯](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end

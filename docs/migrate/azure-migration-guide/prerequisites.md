@@ -9,40 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e8dbbb951f58f96333f5e806574608a3bfcd9bf6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ebffe5ecf08005c167f9e4a3a76087e785c3688e
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862665"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372926"
 ---
-::: zone target="docs"
-
 # <a name="prerequisites-for-migrating-to-azure"></a>移轉至 Azure 的必要條件
-
-::: zone-end
-
-::: zone target="chromeless"
-
-# <a name="prerequisites"></a>Prerequisites
-
-::: zone-end
 
 本節中的資源可協助您準備好目前的環境，以移轉至 Azure。
 
-# <a name="overview"></a>[概觀](#tab/Overview)
+## <a name="overview"></a>[概觀](#tab/Overview)
 
 移轉至 Azure 的原因，包括要移除與舊版硬體相關聯的風險、降低資本支出、釋出資料中心空間，以及快速實現投資報酬率 (ROI)。
 
 - **排除舊版硬體。** 無論是在內部部署還是在主機服務提供者上，您都可能在生命週期或支援即將終止的基礎結構上裝載應用程式。 針對此挑戰，移轉至雲端提供了一個相當不錯的解決方案，讓小組能夠以「原狀」的方式進行移轉，進而能快速解決目前的基礎結構生命週期挑戰，並將其注意力投注於雲端中的應用程式生命週期和最佳化的長期規劃。
-- **解決軟體支援終止的問題。** 您可能有某些應用程式相依於支援即將終止的其他軟體或作業系統。 移至 Azure 可為這些相依性提供延長支援選項，或可將重構需求降至最低以繼續支援應用程式的其他移轉選項。 例如, 請參閱 [Windows Server 2008 和 SQL Server 2008 的延長支援選項](https://azure.microsoft.com/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support)。
+- **解決軟體支援終止的問題。** 您可能有某些應用程式相依於支援即將終止的其他軟體或作業系統。 移至 Azure 可為這些相依性提供延長支援選項，或可將重構需求降至最低以繼續支援應用程式的其他移轉選項。 例如，請參閱 [Windows Server 2008 和 SQL Server 2008 的延長支援選項](https://azure.microsoft.com/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support)。
 - **降低資本支出。** 要裝載您自己的伺服器基礎結構，需要投資大量的硬體、軟體、電力和人員。 移轉至雲端的解決方案可大幅降低資本支出。 為了達到最理想的資本支出縮減效果，可能需要重新設計解決方案。 不過，「依原狀」移轉是很適當的起始步驟。
 - **釋放資料中心空間。** 您可以選擇 Azure 以擴充資料中心容量。 為此，使用雲端作為內部部署功能的延伸模組，是其中一種方法。
 - **快速實現投資報酬率。** 使用雲端解決方案，實現投資報酬率 (ROI) 會容易得多，因為雲端支付模型提供絕佳的使用率深入解析，並提升了實現 ROI 的文化特性。
 
 上述每個案例都可能是使用另一種方法 (重新裝載、重構、重新架構、重建或取代) 來擴充雲端使用量的進入點。
 
-## <a name="migration-characteristics"></a>移轉特性
+### <a name="migration-characteristics"></a>移轉特性
 
 本指南假設在進行此移轉之前，您的數位資產大部分都是由內部部署裝載的基礎結構所組成，而且可能包含裝載的業務關鍵應用程式。 在成功移轉後，資料資產的行為可能會與內部部署環境非常相似，但其基礎結構裝載在雲端資源中。 或者，理想的資料資產是您目前資料資產的一種變體，因為其具有內部部署基礎結構的各個層面，且其元件已經過重構，以便最佳化並充分運用雲端平台。
 
@@ -58,7 +48,7 @@ ms.locfileid: "83862665"
 > - [Windows Server 2008 和 Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008)。
 > - [SQL Server 2008 和 SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008)。
 
-# <a name="understand-migration-approaches"></a>[了解移轉方法](#tab/Approach)
+## <a name="understand-migration-approaches"></a>[了解移轉方法](#tab/Approach)
 
 用於將應用程式移轉至 Azure 的策略和工具，在很大程度上取決於您的商業動機、技術需求和時間表，以及對正在移轉的實際工作負載和資產 (基礎結構、應用程式和資料) 的深入理解。
 
@@ -68,12 +58,12 @@ ms.locfileid: "83862665"
 
 評估移轉的工作負載時，請識別不需要進行大量修改即可使用 PaaS 技術 (例如 Azure App Service) 或協調器 (如 Azure Kubernetes Service) 執行的應用程式。 這些應用程式應是現代化和雲端最佳化的首選。
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 - [雲端採用架構移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)
 - [合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklist"></a>[規劃檢查清單](#tab/Checklist)
+## <a name="planning-checklist"></a>[規劃檢查清單](#tab/Checklist)
 
 開始進行移轉之前，您必須符合某些必要條件。 這些活動確切的詳細資料會隨著要移轉的環境而有所不同。 一般情況下，可套用下列檢查清單：
 
@@ -100,7 +90,7 @@ ms.locfileid: "83862665"
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="learn-more"></a>深入了解
+### <a name="learn-more"></a>深入了解
 
 - [合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)
 - [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)

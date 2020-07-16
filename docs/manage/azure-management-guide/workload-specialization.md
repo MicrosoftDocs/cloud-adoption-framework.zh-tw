@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f45418b85c0f7afbae2ea23586693c7de5054b79
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 74c304969760e5bc52e318aa33401af12704d55d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075490"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190731"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>用於雲端管理的工作負載特製化
 

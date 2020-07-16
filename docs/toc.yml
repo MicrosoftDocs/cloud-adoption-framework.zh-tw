@@ -157,7 +157,7 @@ items:
         href: ready/index.md
       - name: Azure 設定指南
         items:
-          - name: 開始之前
+          - name: 設定指南概觀
             href: ready/azure-setup-guide/index.md
           - name: 組織資源
             href: ready/azure-setup-guide/organize-resources.md
@@ -335,7 +335,7 @@ items:
             href: migrate/index.md
           - name: Azure 移轉指南
             items:
-              - name: 開始之前
+              - name: 移轉指南概觀
                 href: migrate/azure-migration-guide/index.md
               - name: 評估工作負載
                 href: migrate/azure-migration-guide/assess.md
@@ -707,17 +707,17 @@ items:
             href: innovate/index.md
           - name: Azure 創新指南
             items:
-              - name: 開始之前
+              - name: 創新指南概觀
                 href: innovate/innovation-guide/index.md
               - name: 針對客戶意見反應做好準備
                 href: innovate/innovation-guide/adoption.md
               - name: 將資料大眾化
                 href: innovate/innovation-guide/data.md
-              - name: 透過應用程式參與
+              - name: 透過應用程式與客戶互動
                 href: innovate/innovation-guide/apps.md
               - name: 實現採用
                 href: innovate/innovation-guide/ci-cd.md
-              - name: 與裝置互動
+              - name: 透過裝置來互動
                 href: innovate/innovation-guide/devices.md
               - name: 預測和影響
                 href: innovate/innovation-guide/predict.md
