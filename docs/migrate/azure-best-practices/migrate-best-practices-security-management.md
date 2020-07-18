@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca1de29006790b2a80d889057e67147b40ba96f8
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: d3a4599371d70b92f1fe65999af86b83d9e068a3
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234135"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86451031"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -46,7 +46,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 
 除了評量和建議之外，Azure 資訊安全中心也能提供可針對特定資源啟用的其他安全性功能。
 
-- **即時 (JIT) 存取。** 使用 Just-In-Time 來控制針對 Azure VM 上管理連接埠的存取，以減少您網路的受攻擊面。
+- **及時（JIT）存取。** 使用 Just-In-Time 來控制針對 Azure VM 上管理連接埠的存取，以減少您網路的受攻擊面。
   - 在網際網路上開啟 VM RDP 連接埠 3389，將會使 VM 持續暴露在不良執行者活動之下。 由於 Azure IP 位址是眾所周知的，因此駭客會持續對它們進行探查，以對開啟的 3389 連接埠發動攻擊。
   - Just-In-Time 會使用能限制指定連接埠開啟時間的網路安全性群組 (NSG) 及傳入規則。
   - 在啟用 Just-In-Time 的情況下，資訊安全中心會檢查使用者是否具有 VM 的角色型存取控制 (RBAC) 寫入存取權限。 此外，還會指定使用者如何能連線到 VM 的規則。 如果權限沒問題，系統便會核准要求，且資訊安全中心會設定 NSG 以在您指定時間內允許針對選取連接埠的傳入流量。 時間到期時，NSG 便會返回其先前的狀態。
@@ -73,7 +73,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
 - **虛擬機器：** 針對 Vm，您可以使用 Azure 磁碟加密來加密您的 Windows 和 Linux IaaS VM 磁片。
   - Azure 磁碟加密使用適用于 Windows 的 BitLocker，以及適用于 Linux 的 dm crypt 來提供 OS 和資料磁片的磁片區加密。
   - 您可以使用由 Azure 所建立的加密金鑰，或是自行提供保護於 Azure Key Vault 中的加密金鑰。
-  - 使用 Azure 磁碟加密，IaaS VM 資料會在磁片) 和 VM 開機期間的待用 (受到保護。
+  - 使用 Azure 磁碟加密，IaaS VM 資料會在待用（在磁片上）和在 VM 開機期間受到保護。
     - Azure 資訊安全中心會在您有未加密的 VM 時向您傳送警示。
 - **儲存體：** 保護儲存在 Azure 儲存體中的待用資料。
   - Azure 儲存體帳戶中儲存的資料可以使用符合 FIPS 140-2 規範的 Microsoft 產生的 AES 金鑰進行加密，或者您也可以使用自己的金鑰。
@@ -87,7 +87,7 @@ Microsoft 努力確保 Azure 租用戶系統管理員能擁有必要的資訊，
   - 您會建立 Always Encrypted 金鑰來加密個別的資料行資料。
   - Always Encrypted 金鑰能以加密的形式儲存在資料庫中繼資料中，或是儲存在受信任的金鑰存放區中，例如 Azure Key Vault。
   - 使用此功能時，可能需要進行應用程式變更。
-- **透明資料加密 (TDE) ：** 使用資料庫、相關聯的備份和待用的交易記錄檔的即時加密和解密，保護 Azure SQL Database。
+- **透明資料加密（TDE）：** 使用資料庫、相關聯的備份和待用的交易記錄檔的即時加密和解密，保護 Azure SQL Database。
   - TDE 允許在不變更應用層的情況下進行加密活動。
   - TDE 可以使用 Microsoft 所提供的加密金鑰，或者您可以攜帶自己的金鑰。
 
@@ -151,7 +151,7 @@ Azure 能提供數個解決方案：
 
 在您移轉工作負載並在 Azure 中執行它們的同時，具有工作負載存取權的人員也會四處移動。 您的安全性小組應該定期檢閱針對您 Azure 租用戶和資源群組的存取權。 Azure 有一些供應項目可供進行身分識別管理和存取控制安全性，其中包括角色型存取控制 (RBAC) 以針對存取 Azure 資源的權限進行授權。
 
-- RBAC 會針對安全性主體指派存取權限。 安全性主體代表使用者、群組 (一組使用者) 、應用程式和服務所使用的服務主體 (身分識別) 以及受控識別 (Azure Azure Active Directory 自動管理的) 身分識別。
+- RBAC 會針對安全性主體指派存取權限。 安全性主體代表使用者、群組（一組使用者）、服務主體（應用程式和服務所使用的身分識別），以及受控識別（由 Azure 自動管理的 Azure Active Directory 身分識別）。
 - RBAC 可以將角色指派給安全性主體 (例如擁有者、參與者及讀者)，以及能定義角色可執行之作業的角色定義 (權限的集合)。
 - RBAC 也可以設定範圍以設定角色的界線。 範圍可以設定於數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
 - 請確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
@@ -186,7 +186,7 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 
 Azure 提供能提供進階安全性選項的其他安全性功能。 這些最佳做法有一部分需要附加元件授權和進階選項。
 
-- ** (AU) 執行 Azure AD 管理單位。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [深入了解](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
+- **執行 Azure AD 管理單位（AU）。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有進階 Azure AD 授權。 [深入了解](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
 - **使用多重要素驗證。** 如果您有進階 Azure AD 授權，您可以在系統管理員帳戶上啟用並強制執行多重要素驗證。 網路釣魚是用來入侵帳戶認證的最常見方式。 當不良執行者擁有系統管理員帳戶認證之後，便沒有任何方法可以阻止他們進行會造成嚴重影響的動作 (例如刪除您所有的資源群組)。 您可以用數種方式建立多重要素驗證，包括電子郵件、驗證器應用程式和電話簡訊。 身為系統管理員，您可以選取最不具侵入性的選項。 多重要素驗證會與威脅分析和條件式存取原則整合，以隨機要求多重要素驗證挑戰回應。 深入了解[安全性指引](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)，以及[如何設定多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)。
 - **實作條件式存取。** 在大部分中小型組織中，Azure 系統管理員和支援小組可能位於單一地理位置。 在此情況下，大部分的登入都會來自相同的區域。 如果這些位置的 IP 位址都相當固定，您應該不會看見系統管理員從這些區域以外的地方進行登入。 即使遠端不良動作專案會危害系統管理員的認證，您也可以執行與多重要素驗證結合的條件式存取等安全性功能，以防止從遠端位置或來自隨機 IP 位址的詐騙位置進行登入。 若要深入瞭解[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，請參閱 Azure AD 中的條件式存取的[最佳做法](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)。
 - **審查企業應用程式許可權。** 隨著時間的經過，系統管理員可能會習慣直接選取來自 Microsoft 和協力廠商的連結，而未留意到該動作會對組織帶來什麼影響。 這些連結可能會顯示能將權限指派給 Azure 應用程式的同意畫面，且可能會允許讀取 Azure AD 資料的存取權，甚至是管理整個 Azure 訂用帳戶的完整存取權。 您應該定期檢查您的系統管理員和使用者允許存取 Azure 資源的應用程式。 請確定這些應用程式只有必要的許可權。 此外，每季或半年您可以透過電子郵件將使用者連結至應用程式頁面，讓他們知道他們允許存取其組織資料的應用程式。 [深入瞭解](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)應用程式類型，以及[如何控制](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal)Azure AD 中的應用程式指派。
@@ -200,7 +200,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 - [審核架構](#best-practice-review-azure-reference-architectures)：當您建立遷移後部署時，請查看要從中學習的範例 Azure 架構。
 - [設定管理群組](#best-practice-manage-resources-with-azure-management-groups)：如果您有多個訂用帳戶，您可以將其收集到管理群組，並將治理設定套用到這些群組。
 - [設定存取原則](#best-practice-deploy-azure-policy)：將合規性原則套用至您的 Azure 資源。
-- [實行 BCDR 策略](#best-practice-implement-a-bcdr-strategy)：結合商務持續性和嚴重損壞修復 (BCDR) 策略，讓資料保持安全、您的環境彈性，以及在發生中斷時啟動和執行資源。
+- [實行 BCDR 策略](#best-practice-implement-a-bcdr-strategy)：結合商務持續性和嚴重損壞修復（BCDR）策略，讓資料保持安全、您的環境恢復運作，以及在發生中斷時啟動和執行資源。
 - [管理 vm](#best-practice-use-managed-disks-and-availability-sets)：將 vm 分組到可用性群組，以提供恢復功能和高可用性。 使用受控磁碟來輕鬆進行 VM 磁碟和儲存體管理。
 - [監視資源使用](#best-practice-monitor-resource-usage-and-performance)方式：啟用適用于 Azure 資源的診斷記錄、建立警示和操作手冊以進行主動式疑難排解，以及使用 Azure 儀表板來一致地查看您的部署健康情況和狀態。
 - [管理支援和更新](#best-practice-manage-updates)：瞭解您的 Azure 支援方案和如何實行，取得讓 vm 保持在最新狀態的最佳做法，並將處理常式放在進行變更管理。
@@ -285,7 +285,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 這些最�
 
 ## <a name="best-practice-manage-resources-with-azure-management-groups"></a>最佳做法：使用 Azure 管理群組來管理資源
 
-如果您的組織具有多個訂用帳戶，您便需要為它們管理存取、原則及合規性。 Azure 管理群組提供了訂用帳戶之上的範圍層級。
+如果您的組織具有多個訂用帳戶，您便需要為它們管理存取、原則及合規性。 Azure 管理群組可以在訂用帳戶之上提供範圍層級。
 
 - 您會將訂用帳戶整理到稱為管理群組的容器中，並將治理條件套用至它們。
 - 管理群組中的所有訂用帳戶都會自動繼承管理群組條件。
@@ -349,11 +349,11 @@ Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備
 
 您可以使用 Azure 備份以數種方式備份 VM。
 
-- **從 VM 設定直接備份。** 您可以直接從 Azure 入口網站中的 VM 選項，直接搭配 Azure 備份來備份 VM。 您每天可以備份一次 VM，而且您可以視需要還原 VM 磁片。 Azure 備份會 (vss) 取得應用程式感知的資料快照集，且 VM 上不會安裝任何代理程式。
+- **從 VM 設定直接備份。** 您可以直接從 Azure 入口網站中的 VM 選項，直接搭配 Azure 備份來備份 VM。 您每天可以備份一次 VM，而且您可以視需要還原 VM 磁片。 Azure 備份會採用應用程式感知的資料快照集（vss），而且 VM 上不會安裝任何代理程式。
 - **復原服務保存庫中的直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這能提供單一位置以追蹤及管理備份，以及更細微的備份與還原選項。 備份一天最多三次，並於檔案/資料夾層級執行。 它無法感知應用程式，且不支援 Linux。 使用此方法，在每個想要備份的 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
 - **保護 VM 以 Azure 備份伺服器。** Azure 備份 server 是免費提供的 Azure 備份。 VM 會備份至本機 Azure 備份伺服器儲存體。 然後將 Azure 備份伺服器備份到保存庫中的 Azure。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用層級備份，例如備份 SQL Server 或 SharePoint。
 
-基於安全性，Azure 備份會使用 AES-256 來加密進行中的資料，並透過 HTTPS 將它傳送至 Azure。 在 Azure 中備份的待用資料會使用[Azure 儲存體加密](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)進行加密。
+基於安全性，Azure 備份會使用 AES-256 來加密進行中的資料，並透過 HTTPS 將它傳送至 Azure。 Azure 中的待用備份資料會使用[Azure 儲存體加密](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)進行加密。
 
 ![Azure 備份 ](./media/migrate-best-practices-security-management/iaas-backup.png)
  _Azure 備份。_
@@ -503,7 +503,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 **瞭解更多資訊：**
 
 - 閱讀[Azure 支援方案的總覽](https://azure.microsoft.com/support/options)。
-- 瞭解[ (sla) 的服務層級協定](https://azure.microsoft.com/support/legal/sla)。
+- 瞭解[服務等級協定（sla）](https://azure.microsoft.com/support/legal/sla)。
 
 ## <a name="best-practice-manage-updates"></a>最佳做法：管理更新
 

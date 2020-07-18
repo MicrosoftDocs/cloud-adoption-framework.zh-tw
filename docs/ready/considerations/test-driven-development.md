@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 81a6ca5f7b642cb2e8723e6861bf61afe8242003
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5c0fae34ec4f65c3d91ff4da23d8c4aeb2dc6c87
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077022"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450844"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 
@@ -24,11 +24,11 @@ ms.locfileid: "85077022"
 
 這種方法可用來在早期開發期間符合簡單的功能要求。 稍後在雲端採用生命週期中，此程式可以用來滿足安全性、作業、治理或合規性需求。
 
-## <a name="definition-of-done"></a>對「完成」的定義
+## <a name="definition-of-done"></a>對完成的定義
 
 「設定成功」是主觀語句。 此聲明可讓雲端平臺小組在登陸區域開發或重構工作時，不需要採取任何動作的資訊。 這種不清楚的情況，可能會導致雲端環境中遺漏預期和弱點。 在重構或擴充任何登陸區域之前，雲端平臺小組應針對每個登陸區域的「完成定義」尋求清楚的瞭解。
 
-「完成」的定義是雲端平臺小組與其他受影響小組之間的簡單合約。 本合約概述預期的值新增功能，其中應包含在任何登陸區域的開發工作中。 完成定義的頻率通常是檢查清單，與短期雲端採用方案一致。 在成熟的程式中，檢查清單中這些預期的功能都有自己的接受準則，讓您更清楚地建立。 當每個值新增的功能都符合驗收準則時，登陸區域已充分設定，以實現目前的浪潮或即將發行的成功。
+「完成」的定義是雲端平臺小組與其他受影響小組之間的簡單合約。 本合約概述預期的值新增功能，其中應包含在任何登陸區域的開發工作中。 完成的定義通常是與短期雲端採用方案一致的檢查清單。 在成熟的程式中，檢查清單中這些預期的功能都有自己的接受準則，讓您更清楚地建立。 當每個值新增的功能都符合驗收準則時，登陸區域已充分設定，以實現目前的浪潮或即將發行的成功。
 
 當小組採用額外的工作負載和雲端功能時，完成和驗收準則的定義會變得越來越複雜。
 
