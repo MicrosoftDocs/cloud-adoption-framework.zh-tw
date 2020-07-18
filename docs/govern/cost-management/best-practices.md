@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6aa2780ba7b788701a71f366b03df4a1ccec32fc
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 19947168ae6f0e3e550056eace483e5d72cef14a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193842"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450419"
 ---
 <!-- docsTest:ignore ARO -->
 
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Azure 中裝載的資源成本和大小調整最佳作法
 
-在提供治理的專業領域時，成本管理是企業層級的週期性主題。 藉由優化和管理成本，您可以確保 Azure 環境的長期成功。 所有小組 (例如財務、管理和應用程式開發小組) 瞭解相關聯的成本，並定期進行審核，是非常重要的。
+在提供治理的專業領域時，成本管理是企業層級的週期性主題。 藉由優化和管理成本，您可以確保 Azure 環境的長期成功。 所有小組（例如財務、管理和應用程式開發小組）都務必瞭解相關聯的成本，並定期進行審核。
 
 > [!IMPORTANT]
 > 本文中所述的最佳做法和意見是以 Azure 中的平臺和服務功能為基礎，這是在撰寫時提供的。 特色與功能會隨著時間改變。 並非所有建議都適用于您的部署，因此請選擇最適合您情況的方式。
@@ -37,7 +37,7 @@ ms.locfileid: "86193842"
 下列最佳作法通常是由雲端治理或雲端營運小組的成員完成，這是根據修補和其他已排程的維護程式。 這些最佳做法會對應到本文稍後的可採取動作的指導方針。
 
 - **標記對所有治理而言都很重要：** 請確定所有的工作負載和資源都遵循[適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md)，並[使用 Azure 原則強制執行標記慣例](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)。
-- **識別適當的大小機會：** 檢查環境中目前的資源使用率和效能需求，以找出長時間未充分使用的資源， (通常超過90天的) 。
+- **識別適當的大小機會：** 檢查環境中目前的資源使用率和效能需求，以找出長時間未充分使用的資源（通常超過90天）。
 - **適當調整布建的 sku：** 修改使用量過低的資源，以使用可支援每個資源效能需求的最小實例或 SKU。
 - **自動關閉 vm：** 當 VM 不是持續使用時，請考慮自動關機。 VM 將不會被刪除或解除委任，但它將會停止耗用計算和記憶體成本，直到它重新開啟為止。
 - **自動關閉所有非生產資產：** 如果 VM 屬於非生產環境（特別是開發環境）的一部分，請建立自動關機原則來減少未使用的成本。 可能的話，請使用 Azure DevTest Labs 做為自助服務選項，協助開發人員自行負責成本。
@@ -94,14 +94,14 @@ ms.locfileid: "86193842"
 
 當您部署 Azure VM 以支援工作負載時，您可以選擇數個選項。 每個 VM 類型都有特定的功能與不同的 CPU、記憶體與磁碟組合。 VM 會依下列方式分組：
 
-| 類型 | 詳細資料 | 使用方式 |
+| 類型 | 詳細資料 | 使用量 |
 |---|---|---|
-| **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中磁片區。 | 流量 web 伺服器。 |
+| **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中量的流量網頁伺服器。 |
 | **計算最佳化** | CPU 對記憶體的比例高。 | 適用於中流量 Web 伺服器、網路設備、批次處理、應用程式伺服器。 |
 | **記憶體優化** | 高記憶體對 CPU。 | 適用於關聯式資料庫、中型到大型快取、記憶體內分析。 |
 | **儲存體最佳化** | 高磁片輸送量和 i/o。 | 適用于大型資料、SQL 和 NoSQL 資料庫。 |
 | **GPU 最佳化** | 特製化 VM。 一或多個 GPU。 | 繁重圖形與視訊編輯。 |
-| **高效能** | 最快、最強的 CPU。 具有選用高輸送量網路介面 (RDMA) 的 Vm。 | 關鍵高效能應用程式。 |
+| **高效能** | 最快、最強的 CPU。 具有選用高輸送量網路介面（RDMA）的 Vm。 | 關鍵高效能應用程式。 |
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。
 - 每個類型中都有一些 VM 系列。
@@ -127,12 +127,12 @@ Azure 提供數種儲存體資料類型。
 
 <!-- markdownlint-disable MD033 -->
 
-| 資料類型 | 詳細資料 | 使用方式 |
+| 資料類型 | 詳細資料 | 使用量 |
 | ---|---|---|
 | **Blob** | 已針對儲存大量非結構化物件（例如文字或二進位資料）進行優化。 | 透過 HTTP/HTTPS 從任意位置存取資料。 <br><br> 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。 |
 | **檔案** | 透過 SMB 3.0 存取的受控檔案共用。 | 在遷移內部部署檔案共用時使用，並提供檔案資料的多個存取和連接。 |
-| **磁碟** | 以分頁 Blob 為基礎。 <br><br> 磁片類型 (速度) ：標準 HDD、標準 SSD、premium SSD 或 ultra 磁片。 <br><br> 磁片管理：非受控 (您管理磁片設定和存放裝置) 或受控 (您選取磁片類型，而 Azure 會為您管理磁片) 。 | 使用適用于 Vm 的 premium 磁片。 使用受控磁碟來獲得簡單的管理與規模調整。 |
-| **佇列** | 透過 HTTP 或 HTTPS)  (，儲存和抓取透過驗證的呼叫存取的大量訊息。 | 使用非同步訊息佇列連結應用程式元件。 |
+| **磁碟** | 以分頁 Blob 為基礎。 <br><br> 磁片類型（速度）：標準 HDD、標準 SSD、premium SSD 或 ultra 磁片。 <br><br> 磁片管理：非受控（您管理磁片設定和存放裝置）或受管理（您選取磁片類型，Azure 會為您管理磁片）。 | 使用適用于 Vm 的 premium 磁片。 使用受控磁碟來獲得簡單的管理與規模調整。 |
+| **佇列** | 儲存並抓取透過已驗證的呼叫（HTTP 或 HTTPS）存取的大量訊息。 | 使用非同步訊息佇列連結應用程式元件。 |
 | **資料表** | 存放資料表。 | 現在是 Azure Cosmos DB 資料表 API 的一部分。 |
 
 <!--markdownlint-enable MD033 -->
@@ -143,10 +143,10 @@ Azure 儲存體提供不同的選項來存取區塊 blob 資料。 選取適當�
 
 <!-- markdownlint-disable MD033 -->
 
-| 存取層 | 詳細資料 | 使用方式 |
+| 存取層 | 詳細資料 | 使用量 |
 | --- | --- | --- |
 | **經常性** | 儲存成本較高，存取和交易成本較低 <br><br> 這是預設的存取層。 | 針對經常存取之作用中用途使用。 |
-| **非經常性** | 儲存成本較低，存取和交易成本較高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
+| **超酷** | 儲存成本較低，存取和交易成本較高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
 | **封存** | 用於個別區塊 Blob。 <br><br> 最具成本效益的儲存體選項。 儲存成本最低，存取和交易成本最高。 | 適用于可容忍數小時的抓取延遲的資料，而且將位於封存層中至少180天。 |
 
 <!--markdownlint-enable MD033 -->
@@ -157,12 +157,12 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 <!-- markdownlint-disable MD033 -->
 
-| 帳戶類型 | 詳細資料 | 使用方式 |
+| 帳戶類型 | 詳細資料 | 使用量 |
 | --- | --- | --- |
-| **一般用途 v2 標準層** | 支援 Blob (區塊、分頁、附加)、檔案、磁碟、佇列與資料表。 <br><br> 支援經常性、非經常性和封存存取層。 支援區域冗余儲存體 (ZRS) 。 | 用於大部分案例與大部分類型的資料。 標準儲存體帳戶可以是 HDD 或 SSD 型。 |
+| **一般用途 v2 標準層** | 支援 Blob (區塊、分頁、附加)、檔案、磁碟、佇列與資料表。 <br><br> 支援經常性、非經常性和封存存取層。 支援區域冗余儲存體（ZRS）。 | 用於大部分案例與大部分類型的資料。 標準儲存體帳戶可以是 HDD 或 SSD 型。 |
 | **一般用途 v2 Premium 層** | 支援 Blob 儲存體資料 (分頁 Blob)。 支援經常性、非經常性和封存存取層。 支援 ZRS。 <br><br> 存放在 SSD 上。 | Microsoft 建議為所有 VM 使用。 |
 | **一般用途 v1** | 不支援存取分層。 不支援 ZRS | 如果應用程式需要 Azure 傳統部署模型，請使用。 |
-| **Blob** | 用於存取非結構化物件的特殊化儲存體帳戶。 僅提供區塊 blob 和附加 blob， (沒有檔案、佇列、資料表或磁片儲存體服務) 。 提供與一般用途 v2 相同的持久性、可用性、擴充性和效能。 | 您無法將分頁 blob 儲存在這些帳戶中，因此無法儲存 VHD 檔案。 您可以將存取層設定為經常性或非經常性。 |
+| **Blob** | 用於存取非結構化物件的特殊化儲存體帳戶。 僅提供區塊 blob 和附加 blob （不含檔案、佇列、資料表或磁片儲存體服務）。 提供與一般用途 v2 相同的持久性、可用性、擴充性和效能。 | 您無法將分頁 blob 儲存在這些帳戶中，因此無法儲存 VHD 檔案。 您可以將存取層設定為經常性或非經常性。 |
 
 <!--markdownlint-enable MD033 -->
 
@@ -170,12 +170,12 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 儲存體帳戶可以使用不同類型的備援選項來獲得備援能力與高可用性。
 
-| 類型 | 詳細資料 | 使用方式 |
+| 類型 | 詳細資料 | 使用量 |
 | --- | --- | --- |
-| **本地備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 在指定的一年中，至少提供 99.999999999% (第11個物件的) 持久性。 | 當您的應用程式存放可輕鬆重建的資料可以考慮使用。 |
-| **區域備援儲存體 (ZRS)** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集的實體位置都不同，而且都位於自己的可用性區域中。 藉由在多個資料中心或區域中保留多個資料複本，在指定的一年內提供至少 99.9999999999% (12 9 的) 持久性。 | 當您需要一致性、持久性與高可用性時可以考 慮使用。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。 |
-| **異地備援儲存體 (GRS)** | 將資料複寫到與主要區域相距數百英里的次要地區，以保護整個區域中斷的情況。 在指定的一年內，至少提供 99.99999999999999% (十六9的物件) 持久性。 | 除非 Microsoft 起始容錯移轉到次區域的作業，否則複本資料無法使用。 若發生容錯移轉，讀取與寫入存取可用。 |
-| **讀取權限異地冗余儲存體 (RA-GRS) ** | 類似於 GRS。 在指定的一年內，至少提供 99.99999999999999% (十六9的物件) 持久性。 | 允許從用於 GRS 的第二個區域讀取存取，以提供99.99% 的讀取可用性。 |
+| **本地備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 在指定的一年內提供至少99.999999999% （11個9）的物件持久性。 | 當您的應用程式存放可輕鬆重建的資料可以考慮使用。 |
+| **區域備援儲存體 (ZRS)** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集的實體位置都不同，而且都位於自己的可用性區域中。 藉由在多個資料中心或區域中保留多個資料複本，在指定的一年內提供至少99.9999999999 百分比（12個9）的持久性。 | 當您需要一致性、持久性與高可用性時可以考 慮使用。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。 |
+| **異地備援儲存體 (GRS)** | 將資料複寫到與主要區域相距數百英里的次要地區，以保護整個區域中斷的情況。 在指定的一年內，至少提供物件的99.99999999999999 百分比（16個9）持久性。 | 除非 Microsoft 起始容錯移轉到次區域的作業，否則複本資料無法使用。 若發生容錯移轉，讀取與寫入存取可用。 |
+| **讀取權限異地備援儲存體 (RA-GRS)** | 類似於 GRS。 在指定的一年內，至少提供物件的99.99999999999999 百分比（16個9）持久性。 | 允許從用於 GRS 的第二個區域讀取存取，以提供99.99% 的讀取可用性。 |
 
 **瞭解更多資訊：**
 
@@ -202,7 +202,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 由於長期以來在 Windows Server 與 SQL Server 等系統的軟體投資，Microsoft 身處獨特位置，可為透過其他雲端提供者不見得提供的實質折扣，為客戶提供雲端中的價值。
 
-整合式 Microsoft 內部部署/Azure 產品組合可提供競爭與成本優勢。 如果您目前有透過軟體保證 (sa) 的作業系統或其他軟體授權，您可以將這些授權提供給使用 Azure Hybrid Benefit 的雲端。
+整合式 Microsoft 內部部署/Azure 產品組合可提供競爭與成本優勢。 如果您目前有透過軟體保證（sa）的作業系統或其他軟體授權，您可以將這些授權帶到雲端，使用 Azure Hybrid Benefit。
 
 **瞭解更多資訊：**
 
@@ -240,7 +240,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 - 閱讀[Azure 使用量 api 總覽](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
 - 深入瞭解如何[連接到 Power BI Desktop 中的 Azure 使用量見解](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)。
-- 瞭解如何[使用角色型存取控制 (RBAC) 來管理對 Azure 帳單資訊的存取](https://docs.microsoft.com/azure/billing/billing-manage-access)。
+- 瞭解如何[使用角色型存取控制（RBAC）來管理 Azure 帳單資訊的存取權](https://docs.microsoft.com/azure/billing/billing-manage-access)。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>最佳做法：監視資源使用率
 
@@ -257,11 +257,11 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - 閱讀[Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)和[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)的總覽。
 - 取得[Azure Advisor 的成本建議](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
 - 瞭解如何[從建議中將成本優化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)，並[避免非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)。
-- 瞭解[Azure 資源優化 (ARO) 工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
+- 瞭解[Azure 資源優化（ARO）工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
 
 ## <a name="best-practice-reduce-nonproduction-costs"></a>最佳做法：降低非生產成本
 
-開發週期期間需要 (QA) 環境的開發、測試和品質保證。 可惜的是，這些環境在停止變得很好用之後，經常會保持布建的時間。 定期審查未使用的非生產環境，可能會對成本產生立即的影響。
+開發週期期間需要開發、測試和品質保證（QA）環境。 可惜的是，這些環境在停止變得很好用之後，經常會保持布建的時間。 定期審查未使用的非生產環境，可能會對成本產生立即的影響。
 
 此外，請考慮針對任何非生產環境進行一般成本縮減：
 
@@ -373,7 +373,7 @@ Azure Advisor 成本建議會識別降低成本的機會。 當預算顯示 [高
 - 瞭解[垂直](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)自動調整。
 - 請參閱[Azure DevTest Labs：排程 VM 自動啟動](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start)。
 - 瞭解如何[在 Azure 自動化中啟動或停止 vm 數小時](https://docs.microsoft.com/azure/automation/automation-solution-vm-management)。
-- 取得[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)的詳細資訊，以及[Azure 資源優化 (ARO) 工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
+- 取得[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)的詳細資訊，以及[Azure 資源優化（ARO）工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
 
 ## <a name="best-practice-use-logic-apps-and-runbooks-with-budgets-api"></a>最佳做法：使用 Logic Apps 和 runbook 搭配預算 API
 

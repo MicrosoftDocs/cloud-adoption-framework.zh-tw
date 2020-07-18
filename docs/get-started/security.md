@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 92f42ff82b6ff944de13a360bd5135b31f7de372
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 19cb24e043b0afa434032728a8379d7e69fe0a64
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076349"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450453"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
@@ -47,18 +47,25 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 **交付專案和支援指引：**
 
 - **技術：** 藉由啟用系統管理員的無密碼或多重要素驗證，以及啟用雲端資源的威脅防護，來降低主要風險並提高資產的可見度和控制權。
+
   - [適用于系統管理員的無密碼或多重要素驗證](https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
   - [Azure 資訊安全中心中的](https://docs.microsoft.com/azure/security-center/threat-protection)[安全性作業](https://docs.microsoft.com/azure/architecture/framework/security/security-operations)和威脅防護
+
 - **進程：** 藉由指派安全性角色和責任，以及建立事件回應程式，來啟用快速的安全性決策和持續改進。
+
   - [清除的責任](https://docs.microsoft.com/azure/architecture/framework/security/governance#clear-lines-of-responsibility)、[指派管理環境的許可權](https://docs.microsoft.com/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment)，以及讓安全分數 <!-- TODO: Improve this and add link to AAF article -->
   - 安全性角色和責任 <!-- TODO: add link to bookmark -->
   - [事件回應參考指南](https://aka.ms/irrg)
+
 - **人員：** 為安全性小組提供在轉換至雲端環境時成功部署和操作所需的教育、工具和存取權。
+
   - **教育所有人**瞭解雲端和雲端安全性如何演變的概念：
     - [威脅環境、角色和數位策略的演進](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
     - [安全性、策略、工具和威脅的轉換](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
   - 針對他們所使用的平臺，**訓練技術人員**雲端安全性功能的技術詳細資料。 Microsoft 提供廣泛的[Azure 安全性檔案](https://docs.microsoft.com/azure/security)。
+
 - **長期架構決策：** 以適當的決策建立長期基礎。 這在稍後變更時很難且昂貴。
+
   - [建立企業分割策略，並將技術架構與 it 協調（網路分割、身分識別分割等等）](https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
   - [單一企業目錄](https://docs.microsoft.com/azure/architecture/framework/security/identity#single-enterprise-directory)
   - [服務的驗證策略](https://docs.microsoft.com/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
@@ -89,8 +96,10 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 我們建議您在簡報中捕捉策略，以方便進行討論和更新。 視文化特性和喜好設定而定，檔可支援此簡報。
 
 - **策略簡報：** 您可能會有單一策略簡報，或者您也可以選擇為領導物件建立摘要版本。
+
   - **完整簡報：** 這應該包含主要簡報或選擇性參考投影片中安全性原則的一組完整元素。
   - **執行摘要：** 與資深主管和麵板成員搭配使用的版本，可能只包含與其角色相關的重要元素，例如風險胃口、最高優先順序或已接受的風險。
+
 - 您也可以在[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中記錄動機、結果和業務理由。
 
 **建立安全性策略的最佳作法：**
@@ -98,6 +107,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 成功的程式會將這些元素併入其安全性策略流程中：
 
 - **密切配合商務策略：** 安全性的職責是保護商業價值。 請務必讓所有安全性工作符合該目的，並將內部衝突降到最低。
+
   - **建立對**企業、IT 和安全性需求的共同瞭解。
   - **及早將安全性整合到雲端採用**，以避免最後一分鐘的危機肇因風險。
   - **使用靈活的方法**立即建立最低安全性需求，並持續改善一段時間的安全性保證。
@@ -106,6 +116,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
   如需詳細資訊，請參閱[轉換、心態和預期](../strategy/define-security-strategy.md#transformations-mindsets-and-expectations)。
 
 - **現代化安全性策略：** 安全性策略應包括現代化技術環境、目前威脅範圍和安全性團體資源的所有層面考慮。
+
   - **適應雲端的共同責任模型**。
   - **包含所有雲端類型和多重雲端部署**。
   - **偏好原生雲端控制項**，以避免不必要和有害的摩擦。
@@ -114,8 +125,11 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 **其他內容的相關資源：**
 
 - [威脅環境、角色和數位策略的演進](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
+
 - [安全性、策略、工具和威脅的轉換](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+
 - 雲端採用架構的策略考慮：
+
   - [現代化您的安全性策略](../strategy/define-security-strategy.md#modernize-your-security-strategy)
   - [網路安全性復原](../strategy/define-security-strategy.md#cybersecurity-resilience)
   - [雲端如何改變安全性關係和責任](../strategy/define-security-strategy.md#how-the-cloud-is-changing-security)
@@ -144,34 +158,49 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
   安全性計畫應包含所有這些元素：
 
   - **組織**函式方案，讓小組知道目前的安全性角色和責任如何隨著移至雲端而改變。
+
   - **安全性技能計畫**，在流覽技術、角色和責任方面的重大變更時，支援小組成員。
+
   - **技術安全性架構和功能藍圖**，以引導技術團隊。
-  Microsoft 提供參考架構和技術功能，可在您建立架構和藍圖時協助您，包括：
+  
+    Microsoft 提供參考架構和技術功能，可在您建立架構和藍圖時協助您，包括：
+
     - [Azure 元件和參考模型](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)，可加速規劃和設計 azure 安全性角色。
 
       ![Azure 系統管理模型](../_images/security/azure-administration-model.png)
 
       ![Azure RBAC 模型](../_images/security/azure-rbac-model.png)
+
     - [Microsoft 網路安全性參考架構](https://aka.ms/mcra)，為橫跨內部部署和雲端資源的混合式企業建立網路安全性架構。
     - [安全性作業中心（SOC）參考架構](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430)，以現代化安全性偵測、回應和復原。
     - [零信任的使用者存取參考架構](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842)，以現代化雲端產生的存取控制架構。
     - [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center)和[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)協助保護雲端資產。
+
   - **安全性意識與教育計畫**，讓所有小組都有基本的重要安全性知識。
+
   - 區分**資產的區分**，使用與業務影響一致的分類法來指定敏感性資產。 此分類是由商務專案關係人、安全性小組和其他感興趣的合作物件共同建立的。
 
-- **雲端方案的安全性變更：** 更新雲端採用方案的其他區段，以反映安全性計畫所觸發的變更。
+  - **雲端方案的安全性變更：** 更新雲端採用方案的其他區段，以反映安全性計畫所觸發的變更。
 
-**安全性規劃的最佳作法：** 如果您的規劃採用下列方法，您的安全性計畫可能會更成功：
+**安全性規劃的最佳作法：**
+
+如果您的規劃採用下列方法，您的安全性計畫可能會更成功：
 
 - **假設混合式環境：** 其中包括軟體即服務（SaaS）應用程式和內部部署環境。 它也包含多個雲端基礎結構即服務（IaaS）和平臺即服務（PaaS）提供者（如果適用的話）。
-- **採用 agile 安全性：** 先建立最低安全性需求，並將所有非關鍵專案移至後續步驟的優先順序清單。
-這不應該是傳統的詳細規劃3-5 年。 雲端和威脅環境的變更速度太快，使該類型的計畫很有用。 您的計畫應著重于開發開始步驟和結束狀態：
+
+- **採用 agile 安全性：** 先建立最低安全性需求，並將所有非關鍵專案移至後續步驟的優先順序清單。 這不應該是傳統的詳細規劃3-5 年。 雲端和威脅環境的變更速度太快，使該類型的計畫很有用。 您的計畫應著重于開發開始步驟和結束狀態：
+
   - **很快**就會開始進行，在長期的計畫開始之前，會先提供高影響力。 時間範圍可以是3-12 個月，視組織文化特性、標準實務和其他因素而定。
   - **清除**所需結束狀態的願景，以引導每個小組的規劃程式（這可能需要數年才能達成）。
+
 - **廣泛共用方案：** 提升專案關係人的認知、意見反應，以及進行購買。
+
 - **符合策略性成果：** 請確定您的計畫符合並完成安全性策略中所述的策略結果。
+
 - **設定擁有權、責任和期限：** 請確定已識別每個工作的擁有者，並已認可在特定時間範圍內完成該工作。
+
 - **連接安全性的人：** 在這段轉換和新的預期期間，與人員接洽：
+
   - **主動支援小組成員轉換**與清楚溝通和指導：
     - 他們需要學習哪些技能。
     - 為何需要學習技能（以及這麼做的優點）。
@@ -179,6 +208,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
   
     您可以使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄計畫。 而且您可以使用[線上 Microsoft 安全性訓練](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction)來協助您的小組成員教育。
   - **讓安全性意識成為**協助人員真的與組織保持安全的一員互動。
+
 - **查看 Microsoft 學習和指引：** Microsoft 已發佈見解和觀點，協助您的組織規劃其對雲端的轉換，以及現代化的安全性策略。 內容包含記錄的訓練、檔和安全性最佳做法，以及建議的標準。
   如需協助建立方案和架構的技術指導方針，請參閱[Microsoft 安全性檔案](https://docs.microsoft.com/security)。
 
@@ -211,6 +241,7 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
   - [適用于策略和架構的 Azure 安全性標準](https://docs.microsoft.com/security/compass/compass)：用來塑造環境安全性狀態的策略和架構建議。
   - [Azure 安全性基準](https://docs.microsoft.com/azure/security/benchmarks/introduction)檢驗：保護 Azure 環境的特定設定建議。
   - [Azure 安全性基準訓練](https://docs.microsoft.com/learn/modules/create-security-baselines)。
+
 - **提供護欄：** 保護應包括自動化原則的審核和強制執行。 針對這些新環境，小組應該致力於審查和強制執行組織的安全性基準。 這些工作可協助將工作負載的開發期間的安全性意外降到最低，以及持續整合和持續部署（CI/CD）工作負載。
 
   Microsoft 在 Azure 中提供了數個原生功能來啟用：
@@ -286,4 +317,4 @@ Microsoft 已建立功能和資源，可協助您在 Microsoft Azure 上加速�
 - 請參閱[Azure 服務的內建安全性控制](https://docs.microsoft.com/azure/security/fundamentals/security-controls)中的安全性資訊。
 - 查看 azure[上可用的安全性服務和技術](https://docs.microsoft.com/azure/security/azure-security-services-technologies)中的 azure 安全性工具和服務。
 - 請參閱[Microsoft 信任中心](https://www.microsoft.com/trustcenter/guidance/risk-assessment)。 其中包含廣泛的指引、報告和相關檔，可協助您在法規遵循流程中執行風險評估。
-- 回顧可用的協力廠商工具，以協助滿足您的安全性需求。 請參閱[整合 Azure 資訊安全中心中的安全性解決方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration)。
+- 回顧可用的協力廠商工具，以協助滿足您的安全性需求。 如需詳細資訊，請參閱[整合 Azure 資訊安全中心中的安全性解決方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration)。

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 01d12f284d90c1d483c5b5044aafd683f2a674b6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993765"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449127"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -28,17 +28,17 @@ ms.locfileid: "84993765"
 
 - **電子商務：** 根據其他類似的消費者所購買的，電子商務網站會建議可能值得加入購物車的產品。
 - 已**調整的事實：** IoT 提供更先進的預測功能實例。 例如，元件線上的裝置會偵測電腦溫度的增加。 以雲端為基礎的預測模型決定如何回應。 根據該預測，另一個裝置會減緩元件行，直到電腦可以很酷。
-- **消費產品：** 行動電話、智慧型家庭（甚至是您的汽車）都會使用預測性功能，根據位置或當天的時間等因素來建議使用者行為。 當預測和初始假設對齊時，預測會導致採取動作。 在非常成熟的階段，這種對齊方式可以讓像是自我駕駛汽車的產品成為現實。
+- **消費產品：** 行動電話、智慧型家庭（甚至是您的汽車）都會使用預測功能，它們會根據位置或當天的時間等因素來進行分析，以建議使用者行為。 當預測和初始假設對齊時，預測會導致採取動作。 在非常成熟的階段，這種對齊方式可以讓像是自我駕駛汽車的產品成為現實。
 
 ## <a name="develop-predictive-capabilities"></a>開發預測性功能
 
 一致提供精確預測功能的解決方案通常包含五個核心特性：
 
-    - 資料
-    - 深入解析
-    - 模式
-    - 預測
-    - 互動
+- 資料
+- 深入解析
+- 模式
+- 預測
+- 互動
 
 開發預測功能需要每個層面。 就像所有絕佳的創新一樣，預測性功能的開發也需要反復專案的[承諾](./index.md#commitment-to-iteration)。 在每個反復專案中，一或多個下列特性已成熟，以驗證日益複雜的客戶假設。
 
@@ -85,7 +85,7 @@ ms.locfileid: "84993765"
 
 ## <a name="next-steps"></a>後續步驟
 
-熟悉家發明和[創新方法](./index.md)的[專業領域](./invention.md)之後，您就可以開始學習如何以客戶的理解來[打造](./build.md)。
+您已經熟悉家發明和[創新方法](./index.md)的[專業領域](./invention.md)，現在可以開始學習如何以客戶的方式來[打造](./build.md)。
 
 > [!div class="nextstepaction"]
 > [以理解的組建](./build.md)

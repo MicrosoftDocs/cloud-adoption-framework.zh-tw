@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 356373e71bc12c7927debdb64f036f8774809860
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ec8464187a493badf6eff07b26d7ba0c2c24b10d
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220221"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450232"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "83220221"
 
 以下是 Azure tools 的清單，可協助您成熟支援此專業領域的原則和流程。
 
-|  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure resource graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management) |
+|  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理群組](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure resource graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management) \(部分機器翻譯\) |
 |---------|---------|---------|---------|---------|---------|---------|
 | 執行公司原則     | 是 | 否  | 否  | 否 | 否 | 否 |
 | 跨訂用帳戶套用原則     | 必要 | 是  | 否  | 否 | 否 | 否 |
@@ -40,9 +40,9 @@ ms.locfileid: "83220221"
 | 手動部署 (單一資產)     | 是 | 是  | 否  | 無效率 | 否 | 是 |
 | 手動部署 (完整環境)     | 無效率 | 是 | 否  | 無效率 | 否 | 是 |
 | 自動化部署 (完整環境)     | 否  | 是  | 否  | 是  | 否 | 是 |
-| 更新單一資產的設定     | 是 | 是 | 無效率 | 無效率 | 否 | 是 - 在複寫期間 |
-| 完整環境的更新設定     | 無效率 | 是 | 是 | 是  | 否 | 是 - 在複寫期間 |
-| 管理設定飄移     | 無效率 | 無效率 | 是  | 是  | 否 | 是 - 在複寫期間 |
+| 更新單一資產的設定     | 是 | 是 | 無效率 | 無效率 | 否 | 是，在複寫期間 |
+| 完整環境的更新設定     | 無效率 | 是 | 是 | 是  | 否 | 是，在複寫期間 |
+| 管理設定飄移     | 無效率 | 無效率 | 是  | 是  | 否 | 是，在複寫期間 |
 | 建立自動化管線來部署程式碼和設定資產 (DevOps)     | 否 | 否 | 否 | 是 | 否 | 否 |
 
 除了前述的 Azure 原生工具之外，客戶通常會使用協力廠商工具來加速部署加速和 DevOps 部署。

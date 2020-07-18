@@ -7,16 +7,16 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9cca384f3c4e38e6a8a023210aca18c2e92c60dc
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cb2df816dd033aabe6467722238d2e8690637e24
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85074681"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448447"
 ---
-# <a name="deploy-a-migration-landing-zone"></a>部署移轉登陸區域
+# <a name="deploy-a-migration-landing-zone-in-azure"></a>在 Azure 中部署移轉登陸區域
 
-「_遷移」登陸區域_是已布建並準備要裝載從內部部署環境遷移至 Azure 之工作負載的環境。
+「遷移」登陸區域是已布建並準備要裝載從內部部署環境遷移至 Azure 之工作負載的環境。
 
 ## <a name="deploy-the-blueprint"></a>部署藍圖
 
@@ -31,9 +31,9 @@ ms.locfileid: "85074681"
 
 ### <a name="deployment-options"></a>部署選項
 
-此實行選項會部署_最基本的可行產品（MVP）_ 來開始進行遷移。 當遷移進行時，客戶會遵循以模組化重構為基礎的方法，以平行指引來成熟作業模型，使用控管[方法](../../govern/index.md)和[管理方法](../../manage/index.md)來平行處理這些複雜主題，以進行初始遷移工作。
+此實行選項會部署最基本的可行產品（MVP）來開始進行遷移。 當遷移進行時，客戶會遵循以模組化重構為基礎的方法，以平行指引來成熟作業模型，使用控管[方法](../../govern/index.md)和[管理方法](../../manage/index.md)來平行處理這些複雜主題，以進行初始遷移工作。
 
-[下列的決策一節](#decisions)會概述此 MVP 方法所部署的特定資源。
+下列的[決策](#decisions)一節會概述此 MVP 方法所部署的特定資源。
 
 ### <a name="enterprise-enrollment"></a>企業註冊
 
@@ -59,7 +59,7 @@ ms.locfileid: "85074681"
 
 此執行選項不會執行任何治理工具。 如果沒有定義的原則自動化，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
 
-若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域藍圖。
+若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF Foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域藍圖。
 
 > [!WARNING]
 > 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。

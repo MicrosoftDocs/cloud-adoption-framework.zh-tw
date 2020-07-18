@@ -7,13 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 774d910786a5458244298228669126410a78afd8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 10c58651c21f4b220242fdf540202a87f6d151d4
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194964"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450946"
 ---
+<!-- cSpell:ignore Personalizer -->
 <!-- docsTest:ignore "global reach" -->
 
 # <a name="examples-of-global-reach-outcomes"></a>全球範圍的結果範例
@@ -29,6 +30,8 @@ ms.locfileid: "86194964"
 擴大到新市場可能是轉換期間最有價值的商務成果之一。 能夠快速地在市場部署資源，而不需要長期承諾，可讓銷售和營運領導人探索過去未考慮的選項。
 
 - **範例：**「修飾廠商」已識別出趨勢。 有些產品會運送到亞太地區區域，即使沒有任何銷售小組在該區域中運作。 遠端銷售人員所需的最小系統很小，但是延遲會阻止遠端存取解決方案。 若要利用這種趨勢，銷售副總裁會想要試驗日本和韓國的銷售團隊。 由於公司已經歷雲端遷移，因此能夠在數天內將必要的系統部署在日本和南非。 如此一來，銷售副總裁就能在三個月內，依_x%_ 來增加收益。 這兩個市場會繼續優於世界的其他部分，而導致整個區域的銷售作業。
+
+- **範例：** 全球發行產品的線上零售商，可以使用 Azure Bot 服務解決方案搭配認知服務（例如 Translator、Language Understanding （LUIS）、QnA Maker 和文字分析），跨時區和多種語言與客戶互動。 這可確保客戶能夠在需要時取得所需的資訊，並以其語言提供給他們。 零售商會使用[個人化工具](https://azure.microsoft.com/services/cognitive-services/personalizer/)服務，為客戶進一步自訂體驗和類別目錄供應專案，確保會反映地理 tastes、喜好設定和可用性。
 
 ## <a name="data-sovereignty"></a>資料主權
 

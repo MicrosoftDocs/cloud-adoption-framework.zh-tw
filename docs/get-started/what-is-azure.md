@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 7008ba1cb2efbf154324598dc73f32fdbefff5bf
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 5cbb5e5cb68a8dd55beb13800a3d03a7d722b2fc
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812926"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450368"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -39,7 +39,7 @@ Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 �
 
 例如，前端會裝載處理客戶要求的服務，以配置 Azure 資源（例如[虛擬機器](https://docs.microsoft.com/azure/virtual-machines)）和服務（如[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)）。 首先，前端會驗證使用者，並確認使用者是否有權配置要求的資源。 若是如此，前端會檢查資料庫，找出具有足夠容量的伺服器機架，然後指示該機架上的網狀架構控制器配置資源。
 
-基本上，Azure 是一個龐大的伺服器和網路硬體集合，執行一組複雜的分散式應用程式，以協調這些伺服器上的虛擬化硬體和軟體的設定和操作。 這是讓 Azure 更強大的使用者不再 &mdash; 負責維護和升級硬體的這種協調流程，因為 Azure 會在幕後完成這一切。
+基本上，Azure 是一個龐大的伺服器和網路硬體集合，執行一組複雜的分散式應用程式，以協調這些伺服器上的虛擬化硬體和軟體的設定和操作。 這是讓 Azure 變得強大的協調流程，因為使用者不再負責維護和升級硬體，因為 Azure 會在幕後完成這一切。
 
 ## <a name="next-steps"></a>後續步驟
 

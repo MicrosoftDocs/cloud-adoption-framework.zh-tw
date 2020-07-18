@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2433e5bc74b059911575165df39f6ce3a1d1f8d8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 6355c5f5a80e915a3b2b82b99c06c388e9e0f8d2
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193876"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450300"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure 中的成本管理工具
 
@@ -29,7 +29,7 @@ ms.locfileid: "86193876"
 | 預算控制     | 否         | 是         | 否         | 是         |
 | 監視對於單一資源的支出    | 是         | 是         | 是         | 否         |
 | 監視對於多個資源的支出    | 否         | 是        | 是         | 否         |
-| 控制對於單一資源的支出     | 是：手動調整大小         | 是         | 否         | 是         |
+| 控制對於單一資源的支出     | 是，手動調整大小         | 是         | 否         | 是         |
 | 強制執行對於多個資源的支出    | 否         | 是         | 否         | 是         |
 | 在資源上強制執行帳戶處理中繼資料    | 否         | 否         | 否         | 是         |
 | 監視和偵測趨勢     | 是          | 是        | 是         | 否         |

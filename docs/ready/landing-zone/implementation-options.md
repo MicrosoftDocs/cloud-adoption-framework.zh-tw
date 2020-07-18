@@ -1,18 +1,18 @@
 ---
-title: 登陸區域部署選項
-description: 判斷哪一個登陸區域部署選項最適合您的需求。
+title: 登陸區域的執行選項
+description: 判斷哪個登陸區域的執行選項最適合您的需求。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ea137df62336139abf7a6a90b47f33ee710854be
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: ebe55917c3a7575752a416a3bc90d073f762255d
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235223"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448175"
 ---
 # <a name="landing-zone-implementation-options"></a>登陸區域的執行選項
 
@@ -22,9 +22,9 @@ ms.locfileid: "86235223"
 
 ## <a name="platform-development-velocity"></a>平臺開發速度
 
-除了建議的設計區域之外，您的平臺開發速度 (您的平臺小組開發所需技能的速度) 是選擇最佳部署選項時的關鍵因素。 請考慮兩個主要模式：
+除了建議的設計區域之外，選擇最佳部署選項時，您的平臺開發速度（平臺小組開發所需技能的速度有多快）是一項關鍵因素。 請考慮兩個主要模式：
 
-**開始使用企業規模：** 當商務需求需要豐富的登陸區域初始執行功能時，從一開始就具備完全整合的管理、安全性和作業，Microsoft 建議採用企業級的方法。 使用此方法，您可以使用 Azure 入口網站或基礎結構即程式碼來設定您的環境。 當您的組織準備就緒時，您也可以在入口網站和基礎結構之間轉換為程式碼 (建議) 。 基礎結構即程式碼的方法需要 Azure Resource Manager 範本和 GitHub 中的技能。
+**開始使用企業規模：** 當商務需求需要豐富的登陸區域初始執行功能時，從一開始就具備完全整合的管理、安全性和作業，Microsoft 建議採用企業級的方法。 使用此方法，您可以使用 Azure 入口網站或基礎結構即程式碼來設定您的環境。 當您的組織準備就緒時，您也可以在入口網站和基礎結構即程式碼之間轉換（建議選項）。 基礎結構即程式碼的方法需要 Azure Resource Manager 範本和 GitHub 中的技能。
 
 **從小規模開始，並展開：** 如果在您深入瞭解雲端時開發這些技能並認可您的決策更為重要，請考慮使用更模組化的方法。 在此方法中，登陸區域只會著重于執行啟動雲端採用所需的基本登陸區域考慮。 隨著採用的擴大，管理和管理方法中的模組將會建置於初始登陸區域的最上層。 任何 Azure 登陸區域的設計原則，會概述將需要在一段時間內重構的特定設計區域。
 
@@ -41,7 +41,7 @@ ms.locfileid: "86235223"
 
 下表從稍微不同的觀點來探討相同的執行選項，以引導更多技術決策流程。
 
-| [執行] 選項 | 中樞 | 分支 | 部署技術 | 部署指示 |
+| [執行] 選項 | 集線器 | 分支 | 部署技術 | 部署指示 |
 |---|---|---|---|---|
 | [CAF 企業級登陸區域](./enterprise-scale.md) | 已包括  | 已包括 | Azure Resource Manager 範本、Azure 入口網站、Azure 原則和 GitHub | [部署](../enterprise-scale/implementation-guidelines.md) |
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 需要重構 | 已包括 | Azure Resource Manager 範本、Azure 入口網站和 Azure 藍圖 | [部署](./migrate-landing-zone.md) |

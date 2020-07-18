@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2246b71dea7397b724b69b429827ffd9b0801e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: af71b68e61eff8c8c6ce508f2d91a19fece06583
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194505"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450895"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "86194505"
 
 ## <a name="general-scope-expansion"></a>一般範圍擴充
 
-此範圍擴充所需的大部分工作都會發生於移轉的必要條件、評估和遷移程序期間。
+這項範圍擴充所需的大部分工作，都是在遷移的必要條件、評估和遷移階段期間發生。
 
 ## <a name="suggested-prerequisites"></a>建議的必要條件
 
@@ -53,11 +53,11 @@ ms.locfileid: "86194505"
 
 **漂移分析：** 要進行離線傳輸的每個資產都應該分析儲存和設定漂移。 儲存漂移是一段時間內基礎儲存體的變更量。 設定漂移則是一段時間內資產設定的變更。 從儲存體複製時到資產升階到生產環境時，都有可能遺失漂移。 如果該漂移需要反映在遷移後的資產中，則需要在本機資產與遷移後的資產之間進行某種形式的同步處理。 請將這一點標記為需要在移轉執行期間考慮的事項。
 
-## <a name="migrate-process-changes"></a>遷移程序變更
+## <a name="migration-process-changes"></a>遷移程式變更
 
 在使用離線傳輸機制時，不太可能需要[複寫程序](../migration-considerations/migrate/replicate.md)。 但[同步處理](../migration-considerations/migrate/replicate.md)程式可能仍然是需求。 瞭解在評估過程中完成之漂移分析的結果，將會在資源于離線時傳輸時，通知遷移期間所需的工作。
 
-### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
+### <a name="suggested-action-during-the-migration-process"></a>在遷移過程中的建議動作
 
 **複製儲存體：** 這種方法可用來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指導方針說明如何使用此方法，從[HDFS 存放區](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)，或使用[SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、 [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、 [rest](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)或[資料複製服務](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)，將資料傳輸至資料箱。
 

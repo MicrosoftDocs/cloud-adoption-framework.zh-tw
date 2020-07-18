@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ad936390af2d1c869c424381b2f235ffb611a1c
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dc11bbcedbfa346c0bc08d46d88da101a6a34e67
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993889"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449382"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>創新的常見封鎖器和挑戰
 
@@ -58,7 +58,7 @@ ms.locfileid: "84993889"
 
 ## <a name="next-steps"></a>後續步驟
 
-根據有關組建-測量-學習模型和成長思維的知識，您現在已經準備好在[創新方法](./index.md)內[開發數位開始創造發明](./invention.md)。
+隨著您對組建-測量-學習模型和成長思維的瞭解，您已經準備好在[創新方法](./index.md)內[開發數位開始創造發明](./invention.md)。
 
 > [!div class="nextstepaction"]
 > [開發數位發明](./invention.md)

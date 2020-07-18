@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd52ec715e2b51a2507b156be8e7775f9a6b161d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: adbfaceb51618d50e64e81e571038671533135c7
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756000"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450130"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -63,7 +63,7 @@ Azure 只信任由 [Azure AD](https://docs.microsoft.com/azure/active-directory)
 ![Azure 帳戶擁有者會將 Azure AD 租使用者與訂用帳戶建立關聯 ](../../_images/govern/design/governance-1-4.png)
  _圖4： azure 帳戶擁有者會將 Azure AD 租使用者與訂用帳戶建立關聯。_
 
-您可能已經注意到，目前沒有任何使用者與訂用帳戶相關聯，這表示沒有任何使用者具有管理資源的權限。 事實上，**帳戶擁有者**是訂用帳戶的擁有者，而且具有對訂用帳戶中資源採取任何動作的權限。 實際上，**帳戶擁有**者不是組織中的財務人員，也不負責建立、讀取、更新和刪除資源-**工作負載擁有**者會執行這些作業。 因此，您必須將**工作負載擁有者**新增至訂用帳戶並指派權限。
+您可能已經注意到，目前沒有任何使用者與訂用帳戶相關聯，這表示沒有任何使用者具有管理資源的權限。 事實上，**帳戶擁有者**是訂用帳戶的擁有者，而且具有對訂用帳戶中資源採取任何動作的權限。 實際上，**帳戶擁有**者很可能是您組織中的財務人員，而不負責建立、讀取、更新和刪除資源。 **工作負載擁有**者會執行這些工作，因此您必須將**工作負載擁有**者新增至訂用帳戶並指派許可權。
 
 由於**帳戶擁有者**是目前唯一有權將**工作負載擁有者**新增至訂用帳戶的使用者，因此他們要將**工作負載擁有者**新增至訂用帳戶：
 

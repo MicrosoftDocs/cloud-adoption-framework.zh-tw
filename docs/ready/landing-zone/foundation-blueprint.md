@@ -1,22 +1,22 @@
 ---
 title: 在 Azure 中部署 CAF Foundation 藍圖
-description: 瞭解如何在 Azure 中部署 CAF foundation 藍圖。
+description: 瞭解如何在 Azure 中部署 CAF Foundation 藍圖。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 672feabf0bb15d47ffdedbe85279bb7ff9228172
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ea53df3a8d349299e08ecc0681b4dd24dc71336a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075900"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448209"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
-# <a name="deploy-a-caf-foundation-blueprint"></a>部署 CAF Foundation 藍圖
+# <a name="deploy-a-caf-foundation-blueprint-in-azure"></a>在 Azure 中部署 CAF Foundation 藍圖
 
 CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立治理 MVP （最基本的可行產品）所需的工具，以開始開發您的治理專業領域。 此藍圖的設計目的是要加到現有登陸區域，並可透過單一動作套用至 CAF 遷移登陸區域藍圖。
 
@@ -33,7 +33,7 @@ CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立�
 
 ### <a name="deployment-options"></a>部署選項
 
-此實行選項會部署_最基本的可行產品（MVP）_ ，以作為您治理專業領域的基礎。 小組會遵循以模組化重構為基礎的方法，使用[管理方法](../../govern/index.md)來成熟治理專業領域。
+此實行選項會部署 MVP，做為您治理專業領域的基礎。 小組會遵循以模組化重構為基礎的方法，使用[管理方法](../../govern/index.md)來成熟治理專業領域。
 
 ### <a name="enterprise-enrollment"></a>企業註冊
 
@@ -55,7 +55,7 @@ CAF Foundation 藍圖不會部署登陸區域。 相反地，它會部署建立�
 
 為了在早期採用週期中協助進行這項比較，應考慮下列文章：
 
-- [初始 Azure](../azure-best-practices/initial-subscriptions.md)訂用帳戶：在此採用規模的階段中，您的作業模型需要2、3或4個訂用帳戶嗎？
+- [初始 Azure](../azure-best-practices/initial-subscriptions.md)訂用帳戶：在此採用規模的階段中，您的作業模型需要兩個、三個或四個訂用帳戶嗎？
 - [調整](../azure-best-practices/scale-subscriptions.md)訂用帳戶：作為採用規模，將使用何種準則來驅動訂閱調整？
 - [組織](../azure-best-practices/organize-subscriptions.md)訂用帳戶：您將如何在調整規模時組織訂閱？
 - [標記標準](../azure-best-practices/naming-and-tagging.md#metadata-tags)：需要在標籤中一致地捕捉哪些其他準則，以加強您的訂用帳戶設計？

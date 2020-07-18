@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 280c2712528f0dd5b46bc17af6fde416ba499661
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a0592177a3a7bd08b8f29ad632a0bf61b6294e6a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235087"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449535"
 ---
 <!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
@@ -43,7 +43,7 @@ Contoso 雲端小組已將此遷移的應用程式需求釘選在一起。 這�
 - 應用程式組建應在雲端服務中執行，且容器應該位於雲端中的私人企業級登錄中。
 - 用於寵物相片的 API 服務在現實世界中應該是精確且可靠的，因為應用程式所做的決策必須在其飯店中接受。 任何獲准進入的寵物都可以留在旅館內。
 - 為了符合 DevOps 管線的需求，Contoso 會使用 Azure Repos 中的 Git 存放庫來管理原始程式碼。 他們將使用自動化建置和發行來建置程式碼，並將其部署至 Azure App Service、Azure Functions 及 AKS。
-- 微服務在後端和前端網站上需要有不同的持續整合/持續開發 (CI/CD) 管線。
+- 微服務需要不同的持續整合/持續開發（CI/CD）管線，才能在後端和前端網站上進行。
 - 後端服務的發行週期與前端 Web 應用程式不同。 為了符合此需求，他們會部署兩個不同的管線。
 - Contoso 需要管理部門核准才能進行所有前端網站部署，因此 CI/CD 管線必須提供此功能。
 
@@ -53,7 +53,7 @@ Contoso 雲端小組已將此遷移的應用程式需求釘選在一起。 這�
 
 ### <a name="current-application"></a>目前的應用程式
 
-- SmartHotel360 內部部署應用程式會跨兩個 Vm 分層 (`WEBVM` 和 `SQLVM`) 。
+- SmartHotel360 內部部署應用程式會跨兩個 Vm （ `WEBVM` 和）進行分層 `SQLVM` 。
 - VM 位於 VMware ESXi 主機 `contosohost1.contoso.com`(6.5 版)。
 - VMware 環境是由 VM 上所執行的 VCenter Server 6.5 (`vcenter.contoso.com`) 進行管理。
 - Contoso 有內部部署資料中心 (`contoso-datacenter`) 以及內部部署網域控制站 (`contosodc1`)。
@@ -105,9 +105,9 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| Azure 訂用帳戶 | <li> Contoso 在先前文章期間已建立訂用帳戶。 若您沒有 Azure 訂用帳戶，請建立一個[免費帳戶](https://azure.microsoft.com/free)。 <li> 如果您建立免費帳戶，您就是訂閱的系統管理員，而且可以執行所有動作。 <li> 如果您使用現有的訂用帳戶，但您不是系統管理員，則必須與系統管理員合作，為您指派擁有者或參與者許可權給您。 |
+| Azure 訂用帳戶 | <li> Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <li> 如果您建立免費帳戶，您就是訂閱的系統管理員，而且可以執行所有動作。 <li> 如果您使用現有的訂用帳戶，但您不是系統管理員，則必須與系統管理員合作，為您指派擁有者或參與者許可權給您。 |
 | Azure 基礎結構 | <li> 瞭解[Contoso 如何設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 |
-| 開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li>  [Visual Studio Community 2017：版本15。5](https://visualstudio.microsoft.com) <li> 啟用 .NET 工作負載。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker 社區版 (windows 10) 或 Docker Enterprise edition (Windows Server) ](https://docs.docker.com/docker-for-windows/install)設定為使用 windows 容器。 |
+| 開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li>  [Visual Studio Community 2017：版本15。5](https://visualstudio.microsoft.com) <li> 啟用 .NET 工作負載。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker 社區版本（windows 10）或 Docker Enterprise edition （Windows Server）](https://docs.docker.com/docker-for-windows/install)設定為使用 Windows 容器。 |
 
 ## <a name="scenario-steps"></a>案例步驟
 
@@ -116,7 +116,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 > [!div class="checklist"]
 >
 > - **步驟1：布建 AKS 和 Azure Container Registry。** Contoso 會使用 PowerShell 布建受控 AKS 叢集和容器登錄。
-> - **步驟2：建立 Docker 容器。** 他們會使用 Azure DevOps 設定 Docker 容器的持續整合 (CI) ，並將其推送至容器登錄。
+> - **步驟2：建立 Docker 容器。** 他們會使用 Azure DevOps 設定 Docker 容器的持續整合（CI），並將其推送至容器登錄。
 > - **步驟3：部署後端微服務。** 他們會部署基礎結構的其餘部分，以供後端微服務使用。
 > - **步驟4：部署前端基礎結構。** 他們會部署前端基礎結構，包括寵物電話的 Blob 儲存體、Azure Cosmos DB 和電腦視覺 API。
 > - **步驟5：遷移後端。** 他們會部署微服務並在 AKS 上執行，以遷移後端。
@@ -192,9 +192,9 @@ Contoso 管理員會依下列方式進行佈建：
 
 Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器，然後將它推送至容器登錄。 本節中的指示會使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。
 
-1. `visualstudio.com`他們會從建立新的組織 (`contosodevops360.visualstudio.com`) ，並將它設定為使用 Git。
+1. 從開始 `visualstudio.com` ，他們會建立新的組織（ `contosodevops360.visualstudio.com` ），並將它設定為使用 Git。
 
-2. 他們會建立新的專案 (`SmartHotelBackend`) ，選取**Git**進行版本控制，並為工作流程選擇**Agile** 。
+2. 他們會建立新的專案（ `SmartHotelBackend` ），選取**Git**進行版本控制，並針對工作流程選擇**Agile** 。
 
     ![Azure DevOps ](./media/contoso-migration-rebuild/vsts1.png) _圖12：建立新的專案。_
 
@@ -231,7 +231,7 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
     ![Azure DevOps ](./media/contoso-migration-rebuild/vsts9.png)
      _圖20：工作的細節。_
 
-11. 現在，他們會設定第二個 Docker 工作 (用來推送)。 他們會選取訂用帳戶和容器登錄 (`smarthotelacreus2`) 。
+11. 現在，他們會設定第二個 Docker 工作 (用來推送)。 他們會選取訂用帳戶和容器登錄（ `smarthotelacreus2` ）。
 
     ![Azure DevOps ](./media/contoso-migration-rebuild/vsts10.png)
      _圖21：設定第二個 Docker 工作。_
@@ -258,7 +258,10 @@ Contoso 會建立一個 Azure DevOps 專案，並設定 CI 組建來建立容器
 
 ### <a name="deploy-the-back-end-infrastructure"></a>部署後端基礎結構
 
-建立 AKS 叢集並建置 Docker 映像之後，Contoso 管理員現在會部署將供後端微服務使用的基礎結構其餘部分。 一節中的指示使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。 在 `/deploy/k8s/arm` 資料夾中，有一個腳本可建立所有專案。
+建立 AKS 叢集並建置 Docker 映像之後，Contoso 管理員現在會部署將供後端微服務使用的基礎結構其餘部分。
+
+- 本節中的指示會使用[SmartHotel360 後端](https://github.com/Microsoft/SmartHotel360-Backend)存放庫。
+- 在 `/deploy/k8s/arm` 資料夾中，有一個腳本可建立所有專案。
 
 他們會如下所示地進行部署：
 
@@ -373,7 +376,7 @@ Contoso 管理員會布建要用於寵物資訊的 Azure Cosmos DB 資料庫。
 
     ![Azure Cosmos DB ](./media/contoso-migration-rebuild/cosmos1.png) _圖43：建立 Azure Cosmos DB 資料庫。_
 
-2. 他們會 () 指定名稱 `contososmarthotel` 、選取 SQL API，並將它放在 `ContosoRG` 主要區域 () 的生產資源群組中 `East US 2` 。
+2. 他們會指定名稱（ `contososmarthotel` ）、選取 SQL API，並將它放在主要區域的生產資源群組中 `ContosoRG` （ `East US 2` ）。
 
     ![Azure Cosmos DB ](./media/contoso-migration-rebuild/cosmos2.png) _圖44：命名 Azure Cosmos DB 資料庫。_
 
@@ -393,7 +396,7 @@ Contoso 管理員會佈建「電腦視覺 API」。 函式會呼叫此 API 來�
 
      ![電腦視覺 ](./media/contoso-migration-rebuild/vision1.png) _圖47： Azure Marketplace 中的新實例。_
 
-2. 他們會在 `smarthotelpets` `ContosoRG` 主要區域 () 的生產資源群組中，布建 API () `East US 2` 。
+2. 他們會在 `smarthotelpets` `ContosoRG` 主要區域（）的生產資源群組中布建 API （） `East US 2` 。
 
     ![電腦視覺 ](./media/contoso-migration-rebuild/vision2.png) _圖48：在生產資源群組中布建 API。_
 
@@ -409,7 +412,7 @@ Contoso 管理員會使用 Azure 入口網站來佈建 Web 應用程式。
 
     ![Web 應用程式 ](./media/contoso-migration-rebuild/web-app1.png) _圖50：選取 web 應用程式。_
 
-2. 它們會提供 web 應用程式名稱 (`smarthotelcontoso`) 、在 Windows 上執行，並將它放在生產資源群組中 `ContosoRG` 。 他們會建立新的 Application Insights 實例，以進行應用程式監視。
+2. 它們會提供 web 應用程式名稱（ `smarthotelcontoso` ），在 Windows 上執行，並將它放在生產資源群組中 `ContosoRG` 。 他們會建立新的 Application Insights 實例，以進行應用程式監視。
 
     ![Web 應用程式名稱 ](./media/contoso-migration-rebuild/web-app2.png) _圖51： web 應用程式名稱。_
 
@@ -427,7 +430,7 @@ Contoso 管理員會使用 Azure 入口網站來佈建 Web 應用程式。
 
     ![建立函數應用程式 ](./media/contoso-migration-rebuild/function-app1.png) _圖53：選取函數應用程式。_
 
-2. 它們會提供函式應用程式 () 的名稱 `smarthotelpetchecker` 。 它們會將函式應用程式放在生產資源群組 (`ContosoRG`) 中。 他們會將裝載位置設定為取用**方案**，並將函式應用程式放在 `East US 2` 區域中。 系統會建立新的儲存體帳戶，以及用於監視的 Application Insights 實例。
+2. 它們會提供函數應用程式的名稱（ `smarthotelpetchecker` ）。 它們會將函式應用程式放在生產資源群組中（ `ContosoRG` ）。 他們會將裝載位置設定為取用**方案**，並將函式應用程式放在 `East US 2` 區域中。 系統會建立新的儲存體帳戶，以及用於監視的 Application Insights 實例。
 
     ![函數應用程式設定 ](./media/contoso-migration-rebuild/function-app2.png) _圖54：函數應用程式設定。_
 
@@ -443,7 +446,7 @@ Contoso 管理員會為前端網站建立兩個不同的專案。
 
 2. 他們會將 [SmartHotel360 front-end](https://github.com/Microsoft/SmartHotel360-Website) Git 存放庫匯入至新專案。
 
-3. 針對函式應用程式，他們會建立另一個 Azure DevOps 專案 (`SmartHotelPetChecker`) 並將[PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) Git 存放庫匯入此專案。
+3. 針對函式應用程式，他們會建立另一個 Azure DevOps 專案（ `SmartHotelPetChecker` ），並將[PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) Git 存放庫匯入此專案。
 
 ### <a name="configure-the-web-app"></a>設定 Web 應用程式
 

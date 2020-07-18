@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 92c0d9deb038e1c89d3db5ca5bfc72cace2d2ff9
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: da5a2de366d2bd2121a3ea12b480323cc1c84e74
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193723"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450011"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>在 Azure 中部署基本工作負載
 
@@ -26,7 +26,7 @@ ms.locfileid: "86193723"
 
 ## <a name="basic-workload"></a>基本工作負載
 
-_基本工作負載_通常會定義為單一 web 應用程式或虛擬網路，且虛擬機器 (VM) 。
+_基本工作負載_通常會定義為單一 web 應用程式或具有虛擬機器（VM）的虛擬網路。
 
 > [!NOTE]
 > 本指南並未涵蓋應用程式開發。 如需有關在 Azure 上開發應用程式的詳細資訊，請參閱 [Azure 應用程式架構指南](https://docs.microsoft.com/azure/architecture/guide)。
@@ -38,7 +38,7 @@ _基本工作負載_通常會定義為單一 web 應用程式或虛擬網路，�
 針對基本 web 應用程式，請從[Azure App Service 檔](https://docs.microsoft.com/azure/app-service)中選取其中一個5分鐘快速入門，並遵循步驟進行。
 
 > [!NOTE]
-> 部分快速入門指南預設會部署資源群組。 在此情況下，不需要明確建立的資源群組。 否則，請將 Web 應用程式部署到先前建立的資源群組。
+> 一些快速入門手冊預設會部署資源群組。 在此情況下，不需要明確建立的資源群組。 否則，請將 Web 應用程式部署到先前建立的資源群組。
 
 部署簡單的工作負載之後，您可以深入瞭解將[基本 web 應用程式](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)部署至 Azure 的最佳作法。
 

@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c13936beacf44700078fad59bd93f7754d8ddd99
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 6745e271700280b87800fbb76d603242bf561b19
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861764"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448753"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "83861764"
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **識別網路設計考慮。** 瞭解叢集網路設計考慮、比較網路模型，以及選擇符合您需求的 Kubernetes 網路外掛程式。    | [Kubenet 和 Azure 容器網路介面（CNI）](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [在 Azure Kubernetes Service (AKS) 中使用 kubenet 網路與您自己的 IP 位址範圍](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 網路](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [AKS 叢集的安全網路設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **建立多個節點集區。** 若要支援具有不同計算或儲存體需求的應用程式，您可以選擇性地使用多個節點集區來設定您的叢集。 例如，使用額外的節點集區來為計算密集型應用程式提供 Gpu，或存取高效能 SSD 儲存體。   | [在 Azure Kubernetes Service 中建立和管理叢集的多個節點集區](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
-> | **決定可用性需求。** 若要為您的應用程式提供更高的可用性層級，可以在可用性區域間散發叢集。 這些區域是在指定區域中實體獨立的資料中心。 當叢集元件分散到多個區域時，您的叢集 cano 會容忍其中一個區域發生失敗。 即使整個資料中心發生問題，您的應用程式和管理作業仍可繼續使用。   | [建立使用可用性區域的 Azure Kubernetes Service （AKS）叢集](https://docs.microsoft.com/azure/aks/availability-zones) |
+> | **決定可用性需求。** 若要為您的應用程式提供更高的可用性層級，可以將叢集分散在可用性區域。 這些區域是在指定區域中實體獨立的資料中心。 當叢集元件分散到多個區域時，您的叢集 cano 會容忍其中一個區域發生失敗。 即使整個資料中心發生問題，您的應用程式和管理作業仍可繼續使用。   | [建立使用可用性區域的 Azure Kubernetes Service （AKS）叢集](https://docs.microsoft.com/azure/aks/availability-zones) |
 
 ## <a name="go-to-production-and-apply-best-practices"></a>移至生產環境並套用最佳作法
 

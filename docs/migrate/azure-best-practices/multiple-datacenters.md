@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a84856d4b734ba29333a03d476eafa05420eceb5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7a2a2684eb0b23c4a2f0c9b93665de1c52442050
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194556"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450929"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 
@@ -39,13 +39,16 @@ ms.locfileid: "86194556"
 **評估跨資料中心**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在遷移之前使用此工具組，通常是最佳作法。 但在處理全域複雜性時，它會成為評估程式中的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
-> 兩個重要事項：首先，必須瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。
+>
+> - 需要瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。
+> - 評估視覺效果中的下游相依性和用戶端，以瞭解雙向相依性。
 
-## <a name="migrate-process-changes"></a>遷移程序變更
+
+## <a name="migration-process-changes"></a>遷移程式變更
 
 遷移多個資料中心與合併資料中心類似。 移轉之後，雲端會成為多項資產的單一資料中心解決方案。 在移轉過程中，最可能的範圍擴充是 IP 位址的驗證和比對。
 
-### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
+### <a name="suggested-action-during-the-migration-process"></a>在遷移過程中的建議動作
 
 以下是嚴重影響雲端移轉成功與否的活動：
 

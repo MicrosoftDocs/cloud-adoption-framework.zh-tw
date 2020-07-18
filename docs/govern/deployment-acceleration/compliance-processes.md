@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3975afb6f81dda9c1b68070de8d251da741d55e9
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754994"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450266"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>部署加速原則合規性流程
 
@@ -55,7 +55,7 @@ ms.locfileid: "83754994"
 
 - **偵測到設定中有未預期的變更。** 如果資源的設定發生了非預期的變更，請與 IT 人員及工作負載擁有者一同找出根本原因，並開發修復計劃。
 - **新資源的設定未遵守原則。** 請與 DevOps 小組及工作負載擁有者一同在專案啟動期間檢閱部署加速原則，讓所有相關人員都了解相關的原則需求。
-- **部署失敗或設定問題造成專案時程延誤。** 請與開發小組及工作負載擁有者一同確定，小組已了解如何自動部署雲端式資源，以獲得一致性和可重複性。 在開發週期中，若要在開發週期中儘早完成這項操作，通常需要進行完全自動化的部署 &mdash; ，而不會導致非預期的問題和延遲。
+- **部署失敗或設定問題造成專案時程延誤。** 請與開發小組及工作負載擁有者一同確定，小組已了解如何自動部署雲端式資源，以獲得一致性和可重複性。 在開發週期初期，應該會需要進行完全自動化的部署。 稍後嘗試完成此動作通常會導致非預期的問題和延遲。
 
 ## <a name="next-steps"></a>後續步驟
 

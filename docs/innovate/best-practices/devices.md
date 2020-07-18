@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7ac8fe1ffb7318b3e705b4586de300cd1ee6a58f
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219762"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449705"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>在 Azure 中與裝置互動的工具
 
@@ -37,7 +37,7 @@ ms.locfileid: "83219762"
 
 | 類別 | 工具 |
 |---|---|
-| 行動體驗 | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| 行動體驗 | <li> Azure App Service <li> Power Apps <li> Power Automate <li> Intune |
 | 混合實境 | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
 | 整合式現實 | <li> Azure IoT 中樞 <li> Azure Sphere <li> Azure Kinect DK |
 | 已調整的實境 | <li> IoT 雲端到裝置 <li> Azure 數位 Twins + HoloLens |

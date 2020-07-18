@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 65b53af30b1e6496714e54e7f114e2f34ebf6641
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222499"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449161"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 
@@ -45,7 +45,7 @@ ms.locfileid: "83222499"
 
 ![用來判斷學習計量的客戶流程](../../_images/innovate/customer-flow-learning-metrics.png)
 
-在大部分情況下，客戶流程會有一個容易定義的起點，而且不會有兩個以上的結束點。 在起點和終點之間，會使用各種學習計量來作為意見反應迴圈中的量值：
+在大部分情況下，客戶流程會有一個容易定義的起點，而且不會有兩個以上的端點。 在起點和終點之間，您可以使用各種學習計量來作為意見反應迴圈中的量值：
 
 1. **起始點-初始觸發程式：** 起始點是觸發此解決方案需求的案例。 當解決方案是以客戶的理解方式建立時，該初始觸發程式應該會激發客戶嘗試 MVP 解決方案。
 2. **符合客戶需求：** 當使用解決方案滿足客戶的需求時，就會驗證假設。
@@ -76,6 +76,6 @@ ms.locfileid: "83222499"
 > [!div class="nextstepaction"]
 > [向客戶學習](./learn.md)
 
-<!-- cSpell:ignore Ries -->
+<!-- cSpell:ignore Eric Ries -->
 
 這篇文章中的一些概念，是根據 Eric Ries 所撰寫[的精簡啟動](http://theleanstartup.com/book)中所述的主題來建立。

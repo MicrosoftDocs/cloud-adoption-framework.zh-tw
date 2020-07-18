@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b778ec6d71797d272155b1c72f82a0d50fd5a928
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218895"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450640"
 ---
 <!-- cSpell:ignore ExakTime -->
 
@@ -45,6 +45,12 @@ ms.locfileid: "83218895"
 > 軟體發展副總裁
 >
 > ExakTime
+
+## <a name="intelligent-contact-center"></a>智慧型連絡人中心
+
+客戶滿意度與經驗是成功組織的核心。 讓您的員工專注于卓越的客戶服務，可以長期向客戶忠誠度和保留。 現在提供了 AI 技術，客戶呼叫期間的許多步驟都可以自動化，讓「連絡人中心」代理程式更多時間專注于提供卓越的客戶服務。
+
+- **範例：** 保險公司已實行數位代理程式，藉由建立 Azure Bot 服務解決方案，透過其網站和行動裝置應用程式，快速回應客戶要求。 將增強的客戶服務體驗延伸到其連絡人中心，保險公司也實行了即時通話轉譯、情感分析和關鍵字組偵測，以協助「連絡人中心」代理程式提供建議的後續步驟和表單處理。 這會導致客戶呼叫「連絡人中心」時的重複性降低，並讓「連絡人中心」代理程式更專注于提供絕佳的客戶體驗，而不是完成 administrational 和營運工作。
 
 ## <a name="next-steps"></a>後續步驟
 

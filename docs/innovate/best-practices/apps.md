@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b92edee6919eebc9371e2f018e0bd2422634ca74
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219813"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449841"
 ---
-# <a name="tools-to-engage-via-apps-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
+# <a name="tools-to-engage-via-applications-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 
-如透過應用程式進行[互動](../considerations/apps.md)中所述，應用程式可能是 MVP 解決方案的重要層面。 測試假設通常需要應用程式。 本文可協助您瞭解 Azure 提供的工具，以加速開發這些應用程式。
+如透過[應用程式進行互動](../considerations/apps.md)中所述，應用程式可能是 MVP 解決方案的重要層面。 測試假設通常需要應用程式。 本文可協助您瞭解 Azure 提供的工具，以加速開發這些應用程式。
 
-![透過應用程式參與雲端採用架構的方法](../../_images/innovate/engage-via-apps.png)
+![透過應用程式互動的雲端採用架構方法](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="alignment-to-the-methodology"></a>與方法配合
 
@@ -42,8 +42,8 @@ ms.locfileid: "83219813"
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
-- PowerApps
-- Microsoft Flow
+- Power Apps
+- Power Automate
 - Power BI
 
 ## <a name="get-started"></a>開始使用

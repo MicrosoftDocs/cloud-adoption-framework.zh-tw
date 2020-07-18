@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74dc8af9d2cb23e2c0c2b096d03f89f5ed2c8049
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 96f93ad2d7a73984a69ca36235a58557eac0d1a9
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191377"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450487"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -38,8 +38,8 @@ ms.locfileid: "86191377"
   - 訂用帳戶範圍中的單一受信任使用者，其處理方式就像服務帳戶，並已授與指派資源存取權限的許可權。
   - 每個工作負載擁有者預設會遭到拒絕存取資源。 資源存取權限是由資源群組範圍中的單一受信任使用者明確授與。
   - 共用基礎結構資源的管理存取權，僅限於共用的基礎結構擁有者。
-  - 對於生產環境中的工作負載擁有者，每個工作負載的管理存取權，以及隨著開發作業而增加控制層級，以進行各種部署環境 (開發、測試、預備和生產) 。
-  - 企業不想要在三個主要環境中各自獨立管理角色，因此需要使用 Azure 的角色型存取控制中所提供的[內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)， (RBAC) 。 如果企業確實需要自訂的 RBAC 角色，則需要額外的程式，才能在三個環境之間同步處理自訂角色。
+  - 針對生產環境中的工作負載擁有者，每個工作負載的管理存取權，以及在開發過程中增加控制層級，以進行各種部署環境（開發、測試、預備和生產）。
+  - 企業不想要在三個主要環境中各自獨立管理角色，因此需要使用 Azure 的角色型存取控制（RBAC）中可用的[內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)。 如果企業確實需要自訂的 RBAC 角色，則需要額外的程式，才能在三個環境之間同步處理自訂角色。
 - 依工作負載擁有者名稱、環境或兩者所追蹤的成本。
 
 ## <a name="identity-management"></a>身分識別管理
@@ -91,7 +91,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 
 <!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
-1. 在第一個範例中，有**工作負載**擁有者 A 沒有許可權在訂用帳戶範圍內， &mdash; 預設沒有資源存取管理許可權。 此使用者想要為其工作負載部署和管理資源。 他們必須連絡**服務管理員**以要求建立資源群組。
+1. 在第一個範例中，**工作負載擁有者 A**在訂用帳戶範圍沒有許可權，且預設沒有資源存取管理許可權。 此使用者想要為其工作負載部署和管理資源。 他們必須連絡**服務管理員**以要求建立資源群組。
     ![工作負載擁有者要求建立資源群組 A](../../_images/govern/design/governance-2-2.png)
 2. **服務管理員**會檢查其要求，並建立**資源群組 A**。此時，**工作負載擁有者 A**仍然沒有執行任何動作的許可權。
     ![服務管理員建立資源群組 A](../../_images/govern/design/governance-2-3.png)
@@ -112,7 +112,7 @@ Azure AD **全域管理員**有權可以建立使用者帳戶：
 ![具有資源群組 A 和 B 的訂用帳戶 [ ](../../_images/govern/design/governance-2-10.png)
  _圖 4]：有兩個工作負載擁有者與自己的資源群組隔離的訂_用帳戶。
 
-此模型是最低許可權模型， &mdash; 每個使用者在正確的資源管理範圍獲指派正確的許可權。
+此模型是最低許可權模型。 在正確的資源管理範圍中，會為每位使用者指派正確的許可權。
 
 請考慮此範例中的每個工作都是由**服務管理員**執行。 雖然這是簡單的範例而且可能不會造成問題，但是因為只有兩個工作負載擁有者，所以不難想像對於大型組織會造成的問題類型。 例如，**服務管理員**成為瓶頸，具有導致延遲的大量要求待處理項目。
 
@@ -201,7 +201,7 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 
 接下來，讓我們看看不同環境和工作負載中，具有多個資源群組的單一訂用帳戶。 請注意，在上一個範例中，因為每個環境的資源是在相同的資源群組中，所以它們很容易識別。 既然您不再有該群組，您必須依賴資源群組命名慣例來提供該功能。
 
-1. **共用基礎結構**資源在此模型中仍然具有個別資源群組，所以維持不變。 每個工作負載需要兩個資源群組，分別適用於**開發**和**生產**環境。 針對第一個工作負載，**訂**用帳戶擁有者帳戶會建立兩個資源群組。 第一個名為 `app1-prod-rg` ，第二個名為 `app1-dev-rg` 。 如前所述，此命名慣例會識別與第一個工作負載相關聯的資源，**app1**，以及**開發**或**生產**環境。 同樣地，**訂**用帳戶擁有者帳戶會將**app1 工作負載擁有**者新增至具有**參與者**角色的資源群組。
+1. **共用基礎結構**資源在此模型中仍然具有個別資源群組，所以維持不變。 每個工作負載都需要兩個資源群組，分別用於每個**開發**和**生產**環境。 針對第一個工作負載，**訂**用帳戶擁有者帳戶會建立兩個資源群組。 第一個名為 `app1-prod-rg` ，第二個名為 `app1-dev-rg` 。 如先前所述，此命名慣例會將資源識別為與第一個工作負載相關聯，以及 `app1` **開發**或**生產**環境。 同樣地，**訂**用帳戶擁有者帳戶會將**app1 工作負載擁有**者新增至具有**參與者**角色的資源群組。
     ![加入參與者](../../_images/govern/design/governance-3-12.png)
 2. 類似于第一個範例， **app1 工作負載擁有**者會將名為的虛擬網路部署 `app1-prod-vnet` 到**生產**環境，並將另一個名為 `app1-dev-vnet` **開發**環境。 同樣地，**app1 工作負載擁有者**會將要求傳送給**網路作業**使用者，以建立對等互連連線。 請注意，**app1 工作負載擁有者**會新增與第一個範例相同的標記，限制計數器遞減為在訂用帳戶中剩餘 997 個虛擬網路。
     ![建立對等互連連線](../../_images/govern/design/governance-3-13.png)
@@ -242,11 +242,11 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 > [!NOTE]
 > 若要深入瞭解 Azure 帳戶與訂用帳戶之間的關聯性，請參閱[瞭解 azure 中的資源存取](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
-請遵循這些步驟：
+請遵循下列步驟：
 
 1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
     - 正在建立訂閱。
-    - 建立和管理[Azure Active Directory () Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)儲存這些訂用帳戶使用者身分識別的租使用者。
+    - 建立和管理[Azure Active Directory （Azure AD）](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)租使用者，以儲存這些訂用帳戶的使用者身分識別。
 2. 貴組織的領導小組決定誰負責：
     - 使用者身分識別的管理;建立組織的 Azure 帳戶時，預設會建立[Azure AD 租](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)使用者，且帳戶管理員預設會新增為[Azure AD 全域管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 貴組織可以選擇另一個使用者來管理使用者身分識別，方法是[將 Azure AD 全域管理員角色指派給該使用者](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
     - 訂用帳戶，這表示這些使用者：
@@ -268,7 +268,7 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 5. Azure 帳戶管理員會[將訂用帳戶服務擁有者新增至每個訂用帳戶](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)。
 6. 建立**工作負載擁有者**的核准程序，以要求建立資源群組。 核准程式可透過許多方式來執行，例如透過電子郵件，或者您可以使用程式管理工具（例如[SharePoint 工作流程](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)）。 核准程序可以依照下列步驟：
     - **工作負載擁有者**為**開發**環境、**生產**環境或兩者中的必要 Azure 資源準備用料表，並且將它提交給**訂用帳戶擁有者**。
-    - **訂用帳戶擁有者**檢閱用料表並驗證要求的資源，以確保要求的資源適合其規劃使用，例如，檢查要求的[虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)正確無誤。
+    - 訂用帳戶**擁有**者會審查資料的物料單，並驗證要求的資源，以確保所要求的資源適用于其規劃用途，例如檢查要求的[虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)是否正確。
     - 如果要求未獲得核准，**工作負載擁有者**會收到通知。 如果要求通過核准，**訂用帳戶擁有者會遵循貴組織的[命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)來** [建立要求的資源群組](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)，[新增**工作負載擁有者**](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有[**參與者**角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的**工作負載擁有者**。
 7. 為工作負載擁有者建立核准程序，以要求來自共用基礎結構擁有者的虛擬網路對等互連連線。 如同上一個步驟，這個核准程序可以使用電子郵件或處理程序管理工具來實作。
 
@@ -276,7 +276,7 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 
 ## <a name="related-resources"></a>相關資源
 
-[適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (機器翻譯)
+[適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
 ## <a name="next-steps"></a>後續步驟
 

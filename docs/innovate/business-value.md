@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f93b0a643a5751f4090a82a0688b1ed1073533e1
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222584"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449467"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>培養創新商業價值的共識
 
@@ -43,9 +43,11 @@ ms.locfileid: "83222584"
 
 如果任一小組在30分鐘內無法回答這四個問題，則在下列各節中的對齊和考慮可能會對這項工作和其他專案造成重大影響。 請特別注意下列各節。
 
+<!-- docsTest:ignore "Strategy, Plan, Ready, and Adopt" -->
+
 ## <a name="address-the-big-picture-first"></a>先解決最大的圖片
 
-雲端採用架構遵循下列階段的指定路徑：策略、規劃、就緒和採用。 雲端創新適用于此流程的採用階段。 [限定問題](#qualifying-questions)的答案有三和四個顧慮的結果和動機。 當這些答案沒有對齊時，表示您的組織在雲端採用生命週期的策略階段中遺漏了某個專案。 下列幾個案例可能會在播放中。
+雲端採用架構遵循四個階段的指定路徑：策略、規劃、就緒和採用。 雲端創新適用于此流程的採用階段。 [限定問題](#qualifying-questions)的答案有三和四個顧慮的結果和動機。 當這些答案沒有對齊時，表示您的組織在雲端採用生命週期的策略階段中遺漏了某個專案。 下列幾個案例可能會在播放中。
 
 - **對齊機會：** 當商務專案關係人無法同意與雲端創新工作相關的動機和業務成果時，就會面臨較大挑戰的徵兆。 [策略方法](../strategy/index.md)中的練習有助於開發商務專案關係人之間的對齊。 此外，強烈建議相同的專案關係人構成定期符合的[雲端策略小組](../organize/cloud-strategy.md)。
 

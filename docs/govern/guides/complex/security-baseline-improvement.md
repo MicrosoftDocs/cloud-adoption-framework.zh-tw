@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 215653ba60e548061abe68c42fb8c88541414ecf
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8eab8688ee5afdc37ed4f740f4ebdc2215d4abb6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191309"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450215"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雜企業的治理指南：改善安全性基準專業領域
 
@@ -38,7 +38,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 從那時起，某些將會影響治理的事項已經改變：
 
 - 已將數千個 IT 和商業資產部署至雲端。
-- 應用程式開發小組已實現持續整合和持續部署 (CI/CD) 管線，以部署具有改良的使用者體驗的雲端原生應用程式。 該應用程式尚不會與受保護的資料互動，因此不會備妥生產環境。
+- 應用程式開發小組已實現持續整合和持續部署（CI/CD）管線，以部署具有改良的使用者體驗的雲端原生應用程式。 該應用程式尚不會與受保護的資料互動，因此不會備妥生產環境。
 - IT 內的商業智慧小組會主動從物流、庫存和協力廠商資料 curates 雲端中的資料。 此資料將用於衍生可能形成業務流程的新預測。 在將客戶和財務資料整合到資料平臺之前，這些預測和見解都不是可採取動作的。
 - IT 小組正在進行 CIO 和 CFO 計畫，以淘汰兩個資料中心。 這兩個資料中心內的 3,500 個資產幾乎都已淘汰或移轉。
 - 機密個人和財務資料的相關原則已現代化。 新的公司原則會因應相關安全性與治理原則的實施。 小組仍然停滯不前。
@@ -81,7 +81,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 6. 所有包含受保護資料的子網路都無法透過公用網際網路或跨資料中心直接存取。 這些子網的存取權必須透過中繼子網進行路由。 這些子網的所有存取都必須經過防火牆解決方案，才能執行封包掃描和封鎖功能。
 7. 治理工具必須稽核並強制執行安全性管理小組所定義的網路設定需求。
 8. 治理工具必須限制只對已核准的映像進行 VM 部署。
-9. 若有可能，節點組態管理應該將原則需求套用到任何客體作業系統的設定。 節點設定管理應遵守群組原則物件的現有投資 (GPO) 以進行資源設定。
+9. 若有可能，節點組態管理應該將原則需求套用到任何客體作業系統的設定。 節點設定管理應遵循群組原則物件（GPO）的現有投資，以進行資源設定。
 10. 治理工具將稽核在所有已部署的資產上啟用自動更新。 如果可能，將會強制執行自動更新。 若未透過工具強制執行，則必須與作業管理小組一起檢閱節點層級的違規，並根據操作原則進行修復。 不會自動更新之資產必須包含在 IT 部門所負責的處理程序中。
 11. 為任何任務關鍵性應用程式或受保護的資料建立新的訂用帳戶或管理群組，需要從雲端治理小組審查，以確保適當的藍圖指派。
 12. 最低權限的存取模型將會套用到包含任務關鍵性應用程式或受保護資料的所有訂用帳戶。
@@ -99,7 +99,7 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
 
 本章節會修改治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的執行。 這兩個設計變更將共同實現新的公司原則聲明。
 
-新的最佳作法分為兩類：公司 IT (中樞) 和雲端採用 (輪輻) 。
+新的最佳作法分為兩類：「企業 IT （中樞）」和「雲端採用」（輪輻）。
 
 **建立企業 IT 中樞和輪輻訂用帳戶來集中化安全性基準：** 在這種最佳作法中，現有的治理容量會由[中樞和輪輻拓撲與共享服務](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)包裝在一起，並提供一些來自雲端治理小組的重要新增專案。
 
@@ -121,11 +121,11 @@ CIO 已花了數個月的時間，與同事和公司的法務人員共同合作�
     4. 將 `corporate-it-subscription-blueprint` 藍圖套用至每個區域執行個體。
     5. 這將在每個區域中，為每個營業單位建立中樞。 注意：可進一步節省成本，但在每個區域的業務單位間共用中樞。
 6. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
-    1. 將 GPO 轉換成 DSC 在 &mdash; GitHub 中的[Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement)可以加速這項工作。 請務必將 DSC 與 Resource Manager 範本平行儲存在存放庫中。
+    1. 將 GPO 轉換成 DSC。 GitHub 中的[Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement)可以加速這項工作。 請務必將 DSC 與 Resource Manager 範本平行儲存在存放庫中。
     2. 將 Azure 自動化狀態設定部署到公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
     3. 目前的藍圖的目標是要啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
-將**其他治理套用到雲端採用訂用帳戶 (輪輻) ：** 根據，針對應用 `corporate IT subscription` 程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
+將**其他治理套用到雲端採用訂用帳戶（輪輻）：** 根據，針對應用 `corporate IT subscription` 程式 archetype 支援的每個訂用帳戶所套用的治理 MVP 進行次要變更，可以產生快速的改善。
 
 在先前的最佳作法反復變更中，我們定義了網路安全性群組來封鎖公用流量，並允許內部流量。 此外，Azure 藍圖已暫時建立 DMZ 和 Active Directory 功能。 在此反復專案中，我們將會建立 Azure 藍圖的新版本，以稍微調整這些資產。
 

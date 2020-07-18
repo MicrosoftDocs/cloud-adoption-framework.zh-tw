@@ -1,24 +1,24 @@
 ---
 title: 使用 Terraform 來建立您的登陸區域
-description: 瞭解如何使用 Terraform 來建立您的登陸區域。
+description: 瞭解如何使用 Terraform by HashiCorp 來建立您的登陸區域。
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 36a73de789219591719df284ffaed5ba2c73ae1e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b93a17abd45885a3e444cf5731be8aabdc6652f4
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195185"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448464"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立您的登陸區域
 
-Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴常用來部署登陸區域的這類工具之一，是 HashiCorp Terraform。 本節說明如何使用範例登陸區域來部署 Azure 訂用帳戶的基本治理、計量和安全性功能。
+Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具也可以協助您進行這種作業。 客戶和合作夥伴通常用來部署登陸區域的一種工具，是由 HashiCorp Terraform。 本節說明如何使用範例登陸區域來部署 Azure 訂用帳戶的基本治理、計量和安全性功能。
 
 ## <a name="purpose-of-the-landing-zone"></a>登陸區域的用途
 
@@ -32,7 +32,8 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 
 第一個登陸區域會在您的訂用帳戶中部署下列元件：
 
-![使用 Terraform 的基礎登陸區域](../../_images/ready/foundations-terraform-landing-zone.png)
+![基本登陸區域使用 Terraform ](../../_images/ready/foundations-terraform-landing-zone.png)
+ _圖1：使用 Terraform 的基礎登陸區域。_
 
 ## <a name="capabilities"></a>功能
 
@@ -80,7 +81,7 @@ Azure 提供原生服務來部署您的登陸區域。 其他協力廠商工具�
 | 管理群組      | N/A-針對單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [組織訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
 | 資料                   | N/A                                                                                                                                                                                                                                                                      | 在 Azure 和[azure 資料存放區](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
 | 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
-| 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱 (例如儲存體帳戶) 使用此首碼的資源。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
+| 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源（例如儲存體帳戶）會使用此前置詞。 自訂名稱會附加一個隨機尾碼。 依照下表所述，會強制執行標記使用方式。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | 成本管理        | N/A                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
 | 計算                | N/A                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
@@ -203,10 +204,7 @@ security_center = {
 
 ## <a name="next-steps"></a>後續步驟
 
-基礎登陸區域會以分解的方式，為複雜的環境奠定基礎。 這個版本提供一組簡單的功能，可透過下列方式擴充：
-
-- 將其他模組新增至藍圖。
-- 將其他登陸區域分層在其上。
+基礎登陸區域會以分解的方式，為複雜的環境奠定基礎。 此版本提供一組簡單的功能，可透過將其他模組新增至藍圖，或在其上將其他登陸區域分層來擴充。
 
 將登陸區域分層是一個很好的作法，用來分離系統、為您所使用的每個元件設定版本，以及為您的基礎結構做為程式碼部署提供快速的創新和穩定性。
 

@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 4af9516fe50068a76c4b85ae64bbb907410ee7ab
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861985"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448804"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -55,12 +55,12 @@ ms.locfileid: "83861985"
 >
 > | 檢查清單  | 資源 |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **使用群組成員資格來控制叢集的存取權。** 設定 Kubernetes 角色型存取控制（RBAC），以限制存取以叢集資源為基礎的使用者身分識別或群組成員資格。 | [使用 RBAC 和 Azure AD 群組來控制對叢集的存取](https://docs.microsoft.com/azure/aks/azure-ad-rbac)    |
+> | **使用群組成員資格來控制叢集的存取權。** 設定 Kubernetes 角色型存取控制（RBAC），以根據使用者身分識別或群組成員資格來限制叢集資源的存取權。 | [使用 RBAC 和 Azure AD 群組來控制對叢集的存取](https://docs.microsoft.com/azure/aks/azure-ad-rbac)    |
 > | **建立秘密管理原則。** 使用 Kubernetes 中的秘密管理，安全地部署和管理機密資訊，例如密碼和憑證。 | [瞭解 Kubernetes 中的秘密管理（影片）](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) |
 > | **使用網路原則保護 pod 內部網路流量。** 套用最低許可權原則，以控制叢集中 pod 之間的網路流量。 | [使用網路原則保護內部 pod 流量](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **使用授權的 Ip 來限制對 API 伺服器的存取。** 藉由將 API 伺服器的存取限制為一組有限的 IP 位址範圍，來改善叢集安全性並將受攻擊面降至最低。 | [保護對 API 伺服器的存取](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **限制叢集輸出流量。** 如果您限制叢集的輸出流量，請瞭解要允許哪些埠和位址。 您可以使用 Azure 防火牆或協力廠商防火牆設備來保護您的輸出流量，並定義這些必要的埠和位址。 | [在 AKS 中控制叢集節點的輸出流量](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **使用 web 應用程式防火牆（WAF）保護流量。** 使用 Azure 應用程式閘道作為 Kubernetes 叢集的輸入控制器。  | [將 Azure 應用程式閘道設定為輸入控制器](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **使用 Web 應用程式防火牆（WAF）保護流量。** 使用 Azure 應用程式閘道作為 Kubernetes 叢集的輸入控制器。  | [將 Azure 應用程式閘道設定為輸入控制器](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **將安全性和核心更新套用至背景工作節點。** 瞭解 AKS 節點更新體驗。 為了保護您的叢集，安全性更新會自動套用至 AKS 中的 Linux 節點。 這些更新包括 OS 安全性修正或核心更新。 這其中有一些更新需要重新啟動節點，才能完成此程序。 | [使用 kured 自動重新開機節點以套用更新](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **設定容器和叢集掃描解決方案。** 掃描已推送至 Azure Container Registry 的容器，並深入瞭解您的叢集節點、雲端流量和安全性控制。 | [Azure Container Registry 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Azure Kubernetes Service 與資訊安全中心整合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96aa859856ff173c4b613496ac5017114177a902
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7223289dcb5ad5af5d66b9352d4b4df40064cb48
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193672"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449552"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>透過 [組建-測量-學習意見反應] 迴圈建立客戶合作關係
 

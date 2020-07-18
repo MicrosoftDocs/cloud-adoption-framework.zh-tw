@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85b24ecd5045554181cd88aa9671ab8f85fcad25
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c29e32370fdb46fabb3157f33eff1dec0e0a0006
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193740"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449722"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 
@@ -47,8 +47,8 @@ ms.locfileid: "86193740"
 - [適用於 MySQL 的 Azure 資料庫](https://docs.microsoft.com/azure/mysql)
 - [適用於 MariaDB 的 Azure 資料庫](https://docs.microsoft.com/azure/mariadb)
 - [適用於 PostgreSQL 的 Azure 資料庫超大規模資料庫](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
-- [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
-- [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms)
+- [Azure Data Lake 儲存體](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
 - [Azure SQL Database，不論是否使用 Azure SQL 受控執行個體](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
 - [Azure 串流分析](https://docs.microsoft.com/azure/stream-analytics)

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 27d633b20419b49e32ba1296318e67098d9a7ba9
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: ed6a3c8e0356b904a3114382b674aafbcc2f7dac
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233347"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450402"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -22,14 +22,14 @@ ms.locfileid: "86233347"
 
 ## <a name="step-1-determine-whether-a-cloud-operations-team-is-needed"></a>步驟1：判斷是否需要雲端作業小組
 
-在您可以將任何工作負載發行到生產環境之前，必須先達成合約，以提供[雲端作業功能](../../organize/cloud-operations.md)的責任。 針對某些組合，營運責任可能會與 DevOps 和雲端採用小組一起使用。 在其他情況下，具有雲端作業經驗的受控服務提供者可能會採用持續的營運責任。
+在您可以將任何工作負載發行到生產環境之前，必須先達成合約，以提供[雲端作業功能](../../organize/cloud-operations.md)的責任。 針對某些組合，營運責任可能屬於 DevOps 和雲端採用小組。 在其他情況下，具有雲端作業經驗的受控服務提供者可能會採用持續的營運責任。
 
 如果沒有任何 DevOps 或服務提供者作業合約，則可以安全地假設 IT 內的某位人員必須認可與生產工作負載管理有關的持續營運責任。
 
 **項**
 
 - 判斷您是否需要雲端作業小組。
-- 藉由開發跨團隊的矩陣，識別負責、參與、_諮詢和通知的 (RACI) _方，來協調小組間的責任。 記錄工作表中[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)的決策和責任人員 `Org Alignment` 。
+- 藉由開發跨小組的矩陣，識別負責、參與 _、諮詢和通知（RACI）_ 的合作物件，來協調各小組的責任。 記錄工作表中[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)的決策和責任人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
@@ -195,7 +195,7 @@ ms.locfileid: "86233347"
 
 ## <a name="whats-next"></a>後續步驟
 
-隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成卓越 (CCoE) 團隊的雲端中心，是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
+隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成雲端的卓越中心（CCoE）小組是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
 
 深入了解：
 

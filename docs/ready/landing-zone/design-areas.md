@@ -7,14 +7,14 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ff839cb704ce79910fc29d6954712a0337a53e1e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 89e90b875ae3d5d8d0433045bf5fb799aea535db
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077009"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448260"
 ---
-# <a name="modular-design-areas-considered-by-all-azure-landing-zones"></a>所有 Azure 登陸區域所考慮的模組化設計區域
+# <a name="design-areas-of-a-well-architected-landing-zone"></a>設計完善之登陸區域的設計區域
 
 每個 Azure 登陸區域的 [執行] 選項都會提供部署方法和定義的設計原則，以協助您執行下列設計區域。 選擇 [執行] 選項之前，請使用本文來瞭解這些設計區域。
 

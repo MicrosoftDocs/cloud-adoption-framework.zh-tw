@@ -1,5 +1,5 @@
 ---
-title: 透過音效作業模型讓客戶成功
+title: 透過音效作業模型和組織對齊，讓客戶達到成功
 description: 使用免費的自助雲端採用架構和其他工具，協助您制定雲端採用決策，讓客戶達到成功。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,16 +7,23 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: ac6df9dafb43af14f41d94c8dde4416aceccf231
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786087"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450538"
 ---
-# <a name="enable-customer-success-with-a-sound-operating-model"></a>透過音效作業模型讓客戶成功
+# <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>透過音效作業模型和組織對齊，讓客戶達到成功
 
-通常，客戶在雲端採用方面的成功成果，與技術技能或採用相關的專案很少。 您的作業模型會建立機會來啟用採用，或可能會使雲端採用速度變慢的障礙。
+客戶在雲端採用工作方面的成功，通常與技術技能或採用相關的專案很少。 您的作業模型會建立機會來啟用採用，或可能會使雲端採用速度變慢的障礙。
+
+## <a name="alignment"></a>對齊
+
+特別是當您推動創新時，商務與技術小組之間的一致是您解決方案成功的關鍵。
+
+- 針對商務專案關係人，我們建立了[MICROSOFT AI Business School](https://www.microsoft.com/ai/ai-business-school)來支援商務策略開發，並提供範例最佳作法。
+- 針對技術專案關係人， [MICROSOFT ai 學習路徑](https://docs.microsoft.com/learn/)可協助您打造新的 AI 技能。
 
 ## <a name="blockers"></a>阻止
 

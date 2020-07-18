@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8728d9c2dac9e5bea9a59cab01e3399c1ccd780c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: bcc79f58eef7b455e6cbfee9c6e897af9c5d3b27
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194539"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450878"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure 區域決策指南
 
@@ -45,7 +45,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 - Azure 區域會成對部署。 發生嚴重的區域失敗時，會將相同地緣政治界限內的另一個區域指定為其配對的區域。 請考慮將部署到配對的區域，做為主要和次要復原策略。 `Brazil South`是配對的區域是值得注意的例外狀況 `South Central US` 。 如需詳細資訊，請參閱 [Azure 配對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)。
 
-  - Azure 儲存體支援[異地冗余儲存體 (GRS) ](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs)這表示您的資料有三個複本會儲存在您的主要區域中，而三個額外的複本則會儲存在配對的區域中。 您無法變更 GRS 的儲存體配對。
+  - Azure 儲存體支援[異地冗余儲存體（GRS）](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) ，這表示您的資料有三個複本會儲存在您的主要區域中，而三個額外的複本則會儲存在配對的區域中。 您無法變更 GRS 的儲存體配對。
   - 依賴 Azure 儲存體 GRS 的服務可以利用此配對區域功能。 若要這樣做，您必須將應用程式和網路導向支援該功能。
   - 如果您不打算使用 GRS 來支援您的區域復原需求，則不應使用配對的區域作為次要。 如果發生區域失敗，配對區域中的資源將會因為資源遷移而承受極大壓力。 避免這種壓力，您便可在復原期間復原至替代網站，而提升復原速度。
   > [!WARNING]
@@ -88,7 +88,7 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 
 ## <a name="relevance-of-data-sovereignty"></a>資料主權的相關性
 
-在世界各地，政府組織已開始建立資料主權需求，例如一般資料保護規定 (GDPR) 。 此性質的合規性需求通常會要求在特定區域內或甚至在特定國家/地區內進行資料在地化，以保護其公民。 在某些情況下，與客戶、員工或合作夥伴相關的資料必須儲存在與終端使用者位於相同區域內的雲端平台上。
+在世界各地，政府組織已開始建立資料主權需求，例如一般資料保護規定（GDPR）。 此性質的合規性需求通常會要求在特定區域內或甚至在特定國家/地區內進行資料在地化，以保護其公民。 在某些情況下，與客戶、員工或合作夥伴相關的資料必須儲存在與終端使用者位於相同區域內的雲端平台上。
 
 對於全球性公司而言，解決這項挑戰已成為進行雲端移轉的重要動機。 為了保持合規性需求，某些公司選擇將重複的 IT 資產部署到該區域內的雲端提供者。 在上述資料表中，德國正是此案例的最佳範例。 此範例包含德國境內的客戶、合作夥伴和員工，但沒有既存的 IT 資產。 此公司可能會選擇將一些資產部署至 GDPR 區域內的資料中心，甚至可能使用德文的 Azure 資料中心。 若能了解受 GDPR 影響的資料，將有助於雲端採用小組了解此情況下的最佳移轉方法。
 
@@ -135,7 +135,9 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 **評估跨資料中心**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在移轉之前使用這些工具是最佳做法。 在處理全球複雜性時，這會成為評定程序的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
-> 兩個重要事項：首先，必須瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。 其次，請務必評估視覺效果中的下游相依性和用戶端，以了解雙向相依性。
+>
+> - 需要瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。
+> - 評估視覺效果中的下游相依性和用戶端，以瞭解雙向相依性。
 
 **識別全域使用者的影響：** 必要條件使用者設定檔分析的輸出應該識別受全域使用者設定檔影響的任何工作負載。 當移轉候選方案位於受影響的工作負載清單中時，在為移轉做準備的架構設計人員應該要諮詢網路和作業主題專家，以驗證網路路由和效能預期。 架構內至少應包含最接近的網路作業中心 (NOC) 與 Azure 之間的 ExpressRoute 連線。 [ExpressRoute 連線的參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)有助於設定所需的連線。
 
@@ -144,11 +146,11 @@ Azure 是由世界各地的許多區域所組成的。 每個 [Azure 區域](htt
 > [!WARNING]
 > 在使用上述任一參考架構時，可能必須從複寫程序中排除特定資料元素以符合資料主權需求。 這會在升階程序中添加額外的步驟。
 
-## <a name="migrate-process-changes"></a>遷移程序變更
+## <a name="migration-process-changes"></a>遷移程式變更
 
 在遷移必須部署到多個區域的應用程式時，雲端採用小組必須考慮一些事項。 這些考慮包括 Azure Site Recovery 保存庫設計、設定/處理序伺服器設計、網路頻寬設計和資料同步處理。
 
-### <a name="suggested-action-during-the-migrate-process"></a>遷移程序進行期間的建議動作
+### <a name="suggested-action-during-the-migration-process"></a>在遷移過程中的建議動作
 
 **Azure Site Recovery 保存庫設計：** Azure Site Recovery 是雲端原生複寫和數位資產同步處理至 Azure 的建議工具。 Site Recovery 會將資產相關資料複寫到 Site Recovery 保存庫，而該保存庫繫結至特定區域和 Azure 資料中心內的特定訂用帳戶。 將資產複寫到第二個區域時，可能需要有第二個 Site Recovery 保存庫。
 

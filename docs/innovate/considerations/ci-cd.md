@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 832c37753393d9c8230ae42f8dbb3cabe7d8e46d
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219745"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449331"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "83219745"
 
 有幾個重要的難題，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，將會很熟悉下列各項。 本文為雲端採用小組建立燃料創新和意見反應迴圈的起點。 在未來，此起點可能會促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
 
-如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期的結果。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
+如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
 
 ## <a name="empower-adoption-the-maturity-model"></a>加強採用：成熟度模型
 
@@ -43,11 +43,11 @@ ms.locfileid: "83219745"
 
 ## <a name="shared-solution"></a>共用解決方案
 
-如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期的結果。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。
+如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。
 
 當您調整創新時，沒有比解決方案的共用程式碼基底更有價值的工具。 可惜的是，沒有可靠的方法可預測哪一個反復專案，或哪些 MVP 會產生獲勝的組合。 這就是為什麼建立共用程式碼基底或儲存機制的原因不太早。 這是一項不應延遲的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)。 當小組逐一查看各種 MVP 解決方案時，共用存放庫可讓您輕鬆共同作業和加速開發。 當解決方案的變更向下拖曳學習計量時，版本控制可讓您回復為較早且更有效率的方案版本。
 
-管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您只需幾個步驟就能建立共用程式碼儲存機制。 此外，Azure DevOps 的[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)功能可以用來建立[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)或[Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)存放庫。
+管理程式碼存放庫最廣泛採用的工具是[GitHub](https://guides.github.com)，可讓您只需幾個步驟就能建立共用程式碼儲存機制。 此外，Azure DevOps 的[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops)功能可以用來建立[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)或[TFVC](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)存放庫。
 
 ## <a name="feedback-loops"></a>意見反應迴圈
 
@@ -63,8 +63,7 @@ ms.locfileid: "83219745"
 
 在持續整合中，程式碼變更經常會合並到主要分支中。 自動化的組建和測試程式可確保主要分支中的程式碼一律具有生產品質。 這可確保開發人員共同作業，以開發提供精確且可靠的意見反應迴圈的共用解決方案。
 
-Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)只要 GitHub 或各種其他存放庫中的幾個步驟，就能提供持續整合功能。
-深入瞭解[持續整合](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)，或如需詳細資訊，請參閱[實際操作實驗室](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)。 另外還有解決方案架構，可透過 Azure DevOps 加速建立[CI/CD 管線](https://azure.microsoft.com/solutions/devops)。
+Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)只要 GitHub 或各種其他存放庫中的幾個步驟，就能提供持續整合功能。 深入瞭解[持續整合](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)或查看[實際操作實驗室](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)。 另外還有解決方案架構，可透過 Azure DevOps 加速建立[CI/CD 管線](https://azure.microsoft.com/solutions/devops)。
 
 ## <a name="reliable-testing"></a>可靠的測試
 

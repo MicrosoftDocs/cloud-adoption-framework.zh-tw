@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d838b2bf1e05152fc9273746b264d8f2da3b77e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7338b9e3f6d0ea4e2532e74ed650804406b2d7e5
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194624"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450861"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -85,7 +85,7 @@ Azure 成本管理和計費支援每個範圍的下列內建角色：
 
 一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 但[雲端策略小組](../../organize/cloud-strategy.md)的成員應設定為僅成本管理的讀者。 這是因為它們不會涉及在 Azure 成本管理和計費工具中設定預算。
 
-### <a name="scope"></a>範圍
+### <a name="scope"></a>影響範圍
 
 下列範圍和角色設定會建立成本管理所需的可見度。 這種最佳做法可能需要較小的變更，以符合資產組織決策。
 
@@ -128,7 +128,7 @@ Azure 成本管理和計費是一種妥善記載的工具，可用於設定預�
 - [根據建議將成本優化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [使用成本警示監視使用量和支出](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<--docsTest：「AWS 成本和使用量」-->
+<!-- docsTest: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>使用 Azure 成本管理和計費來管理 AWS 成本
 

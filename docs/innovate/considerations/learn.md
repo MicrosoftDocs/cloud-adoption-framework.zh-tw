@@ -7,14 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d92edf91a04fc99b65c5b9dc4e667664dde4a224
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224114"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449178"
 ---
-<!-- cSpell:ignore Satya Nadella Ries -->
+<!-- cSpell:ignore Satya Nadella Eric Ries -->
 
 # <a name="learn-with-customers"></a>向客戶學習
 
@@ -52,7 +52,7 @@ ms.locfileid: "83224114"
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解這種方法的下一個步驟是，創新的常見封鎖程式[和挑戰](./challenges.md)，可以讓您預先準備好進行變更。
+瞭解這種方法的下一個步驟，請參閱常見的封鎖程式[和創新挑戰](./challenges.md)，以預先準備變更。
 
 > [!div class="nextstepaction"]
 > [瞭解常見的封鎖器和挑戰](./challenges.md)

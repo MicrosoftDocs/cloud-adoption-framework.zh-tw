@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fc04c5fa27425ebdbaa82f5b98f8e526e4695f9a
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 5da9fffe5d3367e32e5acc2d47accf2c6903c263
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233268"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450963"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "86233268"
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-遷移方法流程的執行是以[計畫階段](../strategy/suggested-skills.md)所取得的技能為依據，並在遷移旅程的[準備階段](../organize/suggested-skills.md)。
+遷移方法的執行是以[計畫階段](../strategy/suggested-skills.md)期間所取得的技能為基礎，並在遷移旅程的[準備階段](../organize/suggested-skills.md)。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 

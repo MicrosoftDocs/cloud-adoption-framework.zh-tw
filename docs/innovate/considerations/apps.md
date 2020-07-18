@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 72f5a35bbf4fa248b82dce36fb345ee22a6b96f0
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993966"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449569"
 ---
-# <a name="engage-through-applications"></a>參與應用程式
+# <a name="engage-via-applications"></a>透過應用程式參與
 
 如[將大眾化資料](./data.md)中所述，資料是新的石油。 它燃料了各種數位經濟的創新。 以這種比喻為基礎，應用程式是將該燃料放入正確手中所需的激發站和基礎結構。
 
-在某些情況下，單獨的資料就足以推動變更並符合客戶的需求。 更常見的情況是，客戶需求的解決方案需要應用程式來塑造資料並建立經驗。 應用程式是我們與使用者互動的方式。 這些是回應客戶觸發程式所需的進程的主資料夾。 它們是客戶提供資料和接收指引的方式。 本文摘要說明一些可協助您根據要驗證的假設，為您提供正確應用程式解決方案的原則。
+在某些情況下，單獨的資料就足以推動變更並符合客戶的需求。 更常見的情況是，客戶需求的解決方案需要應用程式來塑造資料並建立經驗。 應用程式是我們與使用者互動的方式，以及回應客戶觸發程式所需之處理的首頁。 應用程式是客戶提供資料和接收指引的方式。 本文摘要說明一些可協助您根據要驗證的假設，為您提供正確應用程式解決方案的原則。
 
 ![透過應用程式參與](../../_images/innovate/engage-via-apps.png)
 
@@ -35,14 +35,14 @@ ms.locfileid: "84993966"
 
 專業開發人員是創新的重要元件。 當假設有正確的大規模證明時，專業開發人員就必須穩定並準備解決方案以進行調整。 本文中所參考的大部分原則都需要專業開發人員的支援。 可惜的是，目前的趨勢建議專業開發人員的需求比開發人員還多。 此外，當您認為需要專業開發時，創新的成本和步調也比較不理想。 為了因應這些挑戰，公民開發人員提供一種方法來調整開發工作，並加速早期假設測試。
 
-當您使用適用于應用程式介面的[PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、適用于工作流程的[Microsoft 電源自動化](https://docs.microsoft.com/power-automate)，以及[Power BI](https://docs.microsoft.com/power-bi)的資料耗用量等工具來驗證早期假設時，就可以使用公民開發人員。
+當早期假設可以透過應用程式介面的[Power Apps](https://docs.microsoft.com/powerapps/powerapps-overview) 、流程和預測的[AI](https://docs.microsoft.com/powerapps/use-ai-builder)產生器、適用于工作流程的[Microsoft 電源自動化](https://docs.microsoft.com/power-automate)， [Power BI](https://docs.microsoft.com/power-bi)以及用於資料耗用量的工具進行驗證時，使用公民開發人員可以是可行且有效的。
 
 > [!NOTE]
 > 當您依賴公民開發人員測試假設時，建議您最好讓一些專業開發人員提供支援、審查和指導方針。 假設經過大規模驗證之後，將應用程式轉換成更健全的程式設計模型的流程，會加速創新。 藉由在早期的流程定義中牽涉到專業開發人員，您可以在稍後實現更整潔的轉換。
 
 ## <a name="intelligent-experiences"></a>智慧型體驗
 
-智慧型體驗結合現代化 web 應用程式的速度和規模，以及認知服務和 bot 的智慧。 這兩種技術都可以單獨滿足您的客戶需求。 當聰明地結合時，它們會擴大可透過數位體驗達成的需求範圍，同時協助包含開發成本。
+智慧型體驗結合了現代化 web 應用程式的速度和規模，以及認知服務和 bot 的智慧。 這兩種技術都可以單獨滿足您的客戶需求。 當聰明地結合時，它們會擴大可透過數位體驗達成的需求範圍，同時協助包含開發成本。
 
 ### <a name="modern-web-apps"></a>現代化 Web 應用程式
 
@@ -93,7 +93,7 @@ Bot 可以執行與其他軟體類型相同的工作：讀取和寫入檔案、�
 
 ## <a name="operating-model-innovations"></a>操作模型創新
 
-除了應用程式建立的現代化創新方法，應用程式作業中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
+除了應用程式建立的現代化創新方法外，應用程式作業中也有一些值得注意的創新。 這些方法衍生了許多組織的移動。 最顯著的一項是卓越作業模型的[雲端中心](../../organize/cloud-center-of-excellence.md)。 當完整的個人擁有和成熟時，商務團隊可以選擇為解決方案提供自己的營運支援。
 
 卓越雲端中心的自助作業管理模型類型，可讓您在解決方案環境內進行更緊密的控制和更快速的反復專案。 這些目標是藉由將營運控制和責任轉移給商務小組來完成。
 
@@ -112,4 +112,4 @@ Azure 會同時提供無伺服器交易資料選項，以減少額外負荷。 [
 視假設和解決方案而定，本文中的原則可以協助設計符合 MVP 定義和參與使用者的應用程式。 接下來是讓[採用](./ci-cd.md)的原則，可讓您更快速且更有效率地將應用程式和資料提供給客戶。
 
 > [!div class="nextstepaction"]
-> [加強採用](./ci-cd.md)
+> [實現採用](./ci-cd.md)

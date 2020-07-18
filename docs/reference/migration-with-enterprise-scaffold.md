@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 604017caee1225766c2e7bc84b19c09f2a6d4235
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: ad28bd8bc6a8586daa3f272aa5fa4e7be1d22cac
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194403"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450742"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -37,11 +37,11 @@ ms.locfileid: "86194403"
 
 ## <a name="need-for-governance"></a>治理需求
 
-移至 Azure 時，您必須處理早期治理主題，以確保在企業內成功使用雲端。 不幸的是，建立全方位治理系統的時間和體系表示某些事業群會直接接洽提供者，而不需企業 IT 部門參與。 如果沒有妥善管理資源，這種方法可能會讓企業遭受攻擊。 公用雲端 &mdash; 靈活性、彈性和以耗用量為基礎的價格， &mdash; 對於需要快速滿足客戶 (內部和外部) 需求的商務小組而言，是很重要的。 但企業 IT 需要確保資料和系統的有效保護。
+移至 Azure 時，您必須處理早期治理主題，以確保在企業內成功使用雲端。 不幸的是，建立全方位治理系統的時間和體系表示某些事業群會直接接洽提供者，而不需企業 IT 部門參與。 如果沒有妥善管理資源，這種方法可能會讓企業遭受攻擊。 公用雲端 &mdash; 靈活性、彈性和以耗用量為基礎的價格， &mdash; 對於需要快速滿足客戶（內部和外部）需求的商務小組而言，非常重要。 但企業 IT 需要確保資料和系統的有效保護。
 
 建立建築物時，我們使用 Scaffold (鷹架) 來建立結構的基礎。 Scaffold 可引導出大致輪廓，並可為即將裝載的永久系統提供更多錨點。 企業 Scaffold 也是如此︰一組有彈性的控制項和可提供環境結構的 Azure 功能，以及公用雲端上所建置服務的錨點。 這為有交期壓力的建置者 (IT 和事業群) 提供建立和附加新服務的基礎。
 
-Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實務作法為基礎。 這些用戶端的範圍是從雲端中的小型組織開發解決方案，到大型的跨國企業和獨立軟體廠商，他們正在遷移工作負載和開發雲端原生解決方案。 企業 scaffold 是「特殊用途」的彈性，可同時支援傳統的 IT 工作負載和敏捷式工作負載，例如建立軟體即服務的開發人員 (SaaS) 以 Azure 平臺功能為基礎的應用程式。
+Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實務作法為基礎。 這些用戶端的範圍是從雲端中的小型組織開發解決方案，到大型的跨國企業和獨立軟體廠商，他們正在遷移工作負載和開發雲端原生解決方案。 企業 scaffold 是「特殊用途」的彈性，可同時支援傳統的 IT 工作負載和敏捷式工作負載，例如根據 Azure 平臺功能建立軟體即服務（SaaS）應用程式的開發人員。
 
 企業 scaffold 可以做為 Azure 中每個新訂用帳戶的基礎。 它可讓系統管理員確保工作負載符合組織的最低治理需求，而不會阻礙事業群和開發人員快速達成他們自己的目標。 我們的經驗顯示，這會大幅加速，而不會影響公用雲端的成長。
 
@@ -54,7 +54,7 @@ Scaffold 是以我們經由與各種規模的用戶端合作而蒐集到的實�
 
 ## <a name="define-your-hierarchy"></a>定義您的階層
 
-Scaffold 的基礎是 (EA) 註冊到訂用帳戶和資源群組的 Enterprise 合約的階層和關聯性。 註冊會從合約的觀點來定義公司內部的 Azure 服務的形狀和用途。 在 Enterprise 合約中，您可以進一步將環境細分成部門、帳戶、訂用帳戶和資源群組，以符合您組織的結構。
+Scaffold 的基礎是從到訂用帳戶和資源群組的 Enterprise 合約（EA）註冊的階層和關聯性。 註冊會從合約的觀點來定義公司內部的 Azure 服務的形狀和用途。 在 Enterprise 合約中，您可以進一步將環境細分成部門、帳戶、訂用帳戶和資源群組，以符合您組織的結構。
 
 ![階層](../_images/reference/agreement.png)
 
@@ -82,7 +82,7 @@ EA 註冊的三種常見模式如下：
 
 ### <a name="azure-management-groups"></a>Azure 管理群組
 
-Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群組](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)。 管理群組比部門和帳戶更有彈性，而且可以嵌套最多六個層級。 管理群組可讓您建立與帳單階層分開的階層，只是為了有效率地管理資源。 管理群組可以反映您的計費階層，而且企業通常會以此方式作為起點。 不過，管理群組的威力在於，當您使用它們來建立組織的模型時，將相關的訂用帳戶群組在一起 (不論其在計費階層中的位置為何) 並指派通用角色、原則和計畫。 部分範例包括：
+Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群組](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)。 管理群組比部門和帳戶更有彈性，而且可以嵌套最多六個層級。 管理群組可讓您建立與帳單階層分開的階層，只是為了有效率地管理資源。 管理群組可以反映您的計費階層，而且企業通常會以此方式作為起點。 不過，管理群組的威力在於，當您使用它們來建立組織模型、將相關的訂用帳戶（不論其在計費階層中的位置）分組，以及指派通用角色、原則和計畫時。 部分範例包括：
 
 - **生產與非生產。** 有些企業會建立管理群組來識別其生產和非生產訂閱。 管理群組可讓這些客戶更容易管理角色和原則。 例如，非生產訂用帳戶可能會允許開發人員「參與者」存取權，但在生產環境中，他們只有「讀者」存取權。
 - **內部服務與外部服務的比較。** 企業通常會有不同的需求、原則和角色來進行內部服務與客戶面向的服務。
@@ -93,7 +93,7 @@ Microsoft 現在提供另一種方式來建立階層模型： [Azure 管理群�
 
 在決定您的部門及帳戶 (或管理群組) 時，您會優先探討如何分配 Azure 環境以符合您的組織。 不過，訂用帳戶是實際工作的發生位置，而您在這裡的決策會影響安全性、擴充性和計費。 許多組織會查看下列模式來作為他們的指引：
 
-- **應用程式/服務：** 訂用帳戶代表應用程式或服務 (應用程式組合) 
+- **應用程式/服務：** 訂用帳戶代表應用程式或服務（應用程式的組合）
 - **生命週期：** 訂閱代表服務的生命週期，例如生產或開發。
 - **部門：** 訂用帳戶代表組織中的部門。
 
@@ -132,11 +132,11 @@ Scaffold 的第一要件是一致的命名標準。 設計良好的命名標準�
 > [!IMPORTANT]
 > 標記可包含個人資訊，因此可能會落在 GDPR 的規範下。 請仔細規劃您的標記管理。 如果您要尋找有關 GDPR 的一般資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)的 GDPR 一節。
 
-除了計費和管理外，標記還會用在許多方面。 它們通常用來作為自動化的一部分 (請參閱後面章節)。 如果沒有事先考量，這可能會導致衝突。 最佳做法是在企業層級 (（例如 ApplicationOwner 和 CostCenter) ）識別所有常見的標籤，並在使用自動化部署資源時一致地套用這些標記。
+除了計費和管理外，標記還會用在許多方面。 它們通常用來作為自動化的一部分 (請參閱後面章節)。 如果沒有事先考量，這可能會導致衝突。 最佳做法是在企業層級（例如 ApplicationOwner 和 CostCenter）識別所有常見的標籤，並在使用自動化部署資源時一致地套用這些標記。
 
 ## <a name="azure-policy-and-initiatives"></a>Azure 原則與計劃
 
-Scaffold 的第二個要件牽涉到使用[Azure 原則和計畫](https://docs.microsoft.com/azure/azure-policy/azure-policy-introduction)來管理風險，方法是強制執行規則 (，其效果) 在訂用帳戶中的資源和服務。 Azure 計畫是用來達成單一目標的原則集合。 接著，原則和計畫會指派給資源範圍，以開始強制執行這些原則。
+Scaffold 的第二個要件包含使用[Azure 原則和計畫](https://docs.microsoft.com/azure/azure-policy/azure-policy-introduction)來管理風險，方法是透過訂用帳戶中的資源和服務強制執行規則（包含效果）。 Azure 計畫是用來達成單一目標的原則集合。 接著，原則和計畫會指派給資源範圍，以開始強制執行這些原則。
 
 與先前所述的管理群組搭配使用時，原則和計畫更為強大。 管理群組讓計劃或原則可指派到一整組訂用帳戶。
 
@@ -152,7 +152,7 @@ Scaffold 的第二個要件牽涉到使用[Azure 原則和計畫](https://docs.m
 
 方案讓企業能夠將邏輯原則分組，並將其追蹤為單一實體。 方案可協助企業滿足 agile 和傳統工作負載的需求。 方案的常見用法包括：
 
-- **在 Azure 資訊安全中心中啟用監視。** 這是 Azure 原則的預設計畫，也是其中一個計畫的絕佳範例。 它可讓識別未加密的 SQL 資料庫、虛擬機器 (VM) 弱點，以及更常見的安全性相關需求的原則。
+- **在 Azure 資訊安全中心中啟用監視。** 這是 Azure 原則的預設計畫，也是其中一個計畫的絕佳範例。 它可讓您識別未加密的 SQL 資料庫、虛擬機器（VM）弱點，以及更多常見的安全性相關需求的原則。
 - **法規特定的計畫。** 企業通常會將常用於法規需求 (例如 HIPAA) 的原則群組在一起，以便更有效率地追蹤控制項和這些控制項的合規性。
 - **資源類型和 Sku。** 建立一個限制可以部署的資源類型，以及可部署之 Sku 的計畫，有助於控制成本，並確保您的組織只會部署您的小組具有技能集和程式可支援的資源。
 
@@ -173,7 +173,7 @@ Scaffold 的第二個要件牽涉到使用[Azure 原則和計畫](https://docs.m
 
 ![AD 架構的圖表](../_images/reference/ad-architecture.png)
 
-Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理員或共同管理員。 存取傳統模型中的訂用帳戶，意味著存取入口網站中的所有資源。 這種缺乏細微的控制會導致訂閱激增，以提供適當的註冊存取控制層級。 不再需要此種訂用帳戶激增情況。 使用角色型存取控制 (RBAC) ，您可以將使用者指派給提供一般存取權的標準角色，例如「擁有者」、「參與者」或「讀者」，甚至建立您自己的角色。
+Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理員或共同管理員。 存取傳統模型中的訂用帳戶，意味著存取入口網站中的所有資源。 這種缺乏細微的控制會導致訂閱激增，以提供適當的註冊存取控制層級。 不再需要此種訂用帳戶激增情況。 透過角色型存取控制（RBAC），您可以將使用者指派給標準角色，以提供一般存取權，例如「擁有者」、「參與者」或「讀者」，甚至建立您自己的角色。
 
 實作以角色為基礎的存取權時，強烈建議您遵循以下事項：
 
@@ -193,7 +193,7 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 
 ### <a name="azure-security-center"></a>Azure 資訊安全中心
 
-[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)可讓您統一檢視環境中所有資源的安全性狀態，並提供進階的威脅防護。 Azure 資訊安全中心是一個開放平台，可讓 Microsoft 合作夥伴建立可插入其中的軟體並增強其功能。 Azure 資訊安全中心 (免費層) 的基準功能會提供評估和建議，以增強您的安全性狀態。 其付費層提供了額外且有價值的功能，例如及時的系統管理存取和彈性應用程式控制 (允許清單) 。
+[Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)可讓您統一檢視環境中所有資源的安全性狀態，並提供進階的威脅防護。 Azure 資訊安全中心是一個開放平台，可讓 Microsoft 合作夥伴建立可插入其中的軟體並增強其功能。 Azure 資訊安全中心（免費層）的基準功能會提供評估和建議，以增強您的安全性狀態。 其付費層提供了額外且有價值的功能，例如及時的系統管理存取和彈性應用程式控制（允許清單）。
 > [!TIP]
 > Azure 資訊安全中心是一種功能強大的工具，可讓您用來偵測威脅及保護企業的新功能，進行定期改良。 強烈建議一律啟用 Azure 資訊安全中心。
 
@@ -203,7 +203,7 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 
 ### <a name="secure-devops-kit-for-azure"></a>適用于 Azure 的安全 DevOps 套件
 
-適用于 Azure (AzSK) 的安全 DevOps 套件，是一組由 Microsoft 自己的 IT 小組原先建立的腳本、工具、延伸模組和自動化功能，並透過[GitHub 以開放原始碼的形式發行](https://github.com/azsk/devopskit-docs)。 AzSK 已經考慮到端對端的 Azure 訂用帳戶和資源安全性需求，適用于使用廣泛自動化的小組，並將安全性順暢地整合到原生 DevOps 工作流程中，協助完成這六個焦點領域的安全 DevOps：
+適用于 Azure 的 Secure DevOps 套件（AzSK）是一組由 Microsoft 自己的 IT 小組原先建立的腳本、工具、延伸模組和自動化功能，並透過[GitHub 以開放原始碼的形式發行](https://github.com/azsk/devopskit-docs)。 AzSK 已經考慮到端對端的 Azure 訂用帳戶和資源安全性需求，適用于使用廣泛自動化的小組，並將安全性順暢地整合到原生 DevOps 工作流程中，協助完成這六個焦點領域的安全 DevOps：
 
 - 保護訂用帳戶
 - 啟用安全開發
@@ -238,7 +238,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 
 - **儀表板：** 儀表板可讓您匯總監視視圖，並結合資源與訂用帳戶的資料，為您提供整個企業的 Azure 資源遙測觀點。 您可以建立並設定您自己的檢視，然後與他人共用。 例如，您可以建立包含各種磚的儀表板，讓資料庫管理員能夠在所有 Azure 資料庫服務中提供資訊，包括 Azure SQL Database、適用于于 postgresql 的 Azure DB 和適用于 MySQL 的 Azure DB。
 
-- **計量瀏覽器：** 計量是 Azure 資源所產生的數值， (例如% CPU 或磁片 i/o) ，可讓您深入瞭解資源的作業和效能。 使用計量瀏覽器，您可以定義和傳送與 Log Analytics 相關的計量，以進行匯總和分析。
+- **計量瀏覽器：** 計量是 Azure 資源（例如，% CPU 或磁片 i/o）所產生的數值，可讓您深入瞭解資源的作業和效能。 使用計量瀏覽器，您可以定義和傳送與 Log Analytics 相關的計量，以進行匯總和分析。
 
 ### <a name="core-monitoring"></a>核心監視
 
@@ -265,7 +265,7 @@ AzSK 是一組豐富的工具、腳本和資訊，屬於完整 Azure 治理計�
 - **服務對應：** 服務對應提供您基礎結構元件的圖形化視圖、其程式，以及其他電腦和外部進程的相互相關性。 它會整合 Log Analytics 中的事件、效能資料和管理解決方案。
 
 > [!TIP]
-> 建立個別警示之前，請先建立並維護一組可在 Azure 警示之間共用的動作群組。 這可讓您集中維護收件者清單的生命週期、通知傳遞方法 (電子郵件、SMS 電話號碼) 及 webhook 至外部動作 (Azure 自動化 runbook、Azure Functions 和 Logic Apps、ITSM) 。
+> 建立個別警示之前，請先建立並維護一組可在 Azure 警示之間共用的動作群組。 這可讓您集中維護收件者清單的生命週期、通知傳遞方法（電子郵件、SMS 電話號碼），以及 webhook 至外部動作（Azure 自動化 runbook、Azure Functions 和 Logic Apps、ITSM）。
 
 ## <a name="cost-management"></a>成本管理
 
@@ -301,24 +301,24 @@ Microsoft 提供數種工具，可協助您視覺化、追蹤和管理您的成�
 
 ## <a name="automate"></a>自動化
 
-造成組織 (使用雲端提供者) 成熟度差異的功能有很多，其中一個是已併入的自動化程度。 自動化是永無止盡的程序，而且隨著您的組織移到雲端，任何區域的建置都需要您投入資源和時間。 自動化有許多用途，包括一致的資源推出 (其直接與另一個核心 scaffold 概念、範本和 DevOps) ，以補救問題。 自動化是 Azure Scaffold 的「連結組織」，用來將每個區域連結在一起。
+造成組織 (使用雲端提供者) 成熟度差異的功能有很多，其中一個是已併入的自動化程度。 自動化是永無止盡的程序，而且隨著您的組織移到雲端，任何區域的建置都需要您投入資源和時間。 自動化有許多用途，包括一致的資源推出（其直接與另一個核心 scaffold 概念、範本和 DevOps），以補救問題。 自動化是 Azure Scaffold 的「連結組織」，用來將每個區域連結在一起。
 
 有數個工具可協助您從第一方工具（例如 Azure 自動化、事件方格和 Azure CLI），到大量的協力廠商工具（例如 Terraform、Jenkins、Chef 和 Puppet）建立這項功能。 核心自動化工具組括 Azure 自動化、事件方格和 Azure Cloud Shell。
 
-- **Azure 自動化**是以雲端為基礎的功能，可讓您在 PowerShell 或 Python) 中撰寫 runbook (，並可讓您自動化程式、設定資源，甚至套用修補程式。 [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)具有一組廣泛的跨平台功能，並且可整合至您的部署，但因為範圍太廣泛，無法在此深入說明。
+- **Azure 自動化**是一種雲端式功能，可讓您撰寫 runbook （PowerShell 或 Python），並可讓您自動化進程、設定資源，甚至套用修補程式。 [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro)具有一組廣泛的跨平台功能，並且可整合至您的部署，但因為範圍太廣泛，無法在此深入說明。
 - **事件方格**是完全受控的事件路由系統，可讓您對 Azure 環境中的事件做出回應。 就像 Azure 自動化是成熟雲端組織的連線組織，[事件方格](https://docs.microsoft.com/azure/event-grid)是良好自動化的連線組織。 您可以使用事件方格來建立簡單的無伺服器動作，以在每次建立新的資源時傳送電子郵件給系統管理員，並將該資源記錄到資料庫。 同樣的事件方格可以在刪除資源和從資料庫中移除項目時，發出通知。
-- **Azure Cloud Shell**是以瀏覽器為基礎的互動式[Shell](https://docs.microsoft.com/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 此 Azure Cloud Shell 可讓您存取已安裝的其他重要工具--以自動化您的環境，包括[Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)、 [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure)和持續增加的其他[工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)清單，以管理容器、資料庫 (sqlcmd) 等等。
+- **Azure Cloud Shell**是以瀏覽器為基礎的互動式[Shell](https://docs.microsoft.com/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 此 Azure Cloud Shell 可讓您存取已安裝的其他重要工具--以自動化您的環境，包括[Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)、 [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) ，以及可管理容器、資料庫（sqlcmd）和其他[工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)的成長清單。
 
 自動化是一項全職工作，而且很快就會成為雲端團隊內最重要的作業工作之一。 採用「自動化優先」方法的組織在使用 Azure 上有更高的成就：
 
 - **管理成本：** 積極地尋求機會並建立自動化，以調整資源大小、相應增加或相應減少，以及關閉未使用的資源。
-- **營運彈性：** 透過自動化 (以及範本和 DevOps) ，您可以取得可提高可用性、增加安全性的可重複性層級，並讓您的小組專注于解決商務問題。
+- **營運彈性：** 透過自動化（以及範本和 DevOps），您可以取得可提高可用性、增加安全性的可重複性層級，並讓您的小組專注于解決商務問題。
 
 ## <a name="templates-and-devops"></a>範本和 DevOps
 
-如同自動化區段中所強調的，您的目標應該是讓組織透過由原始程式碼控制的範本和指令碼來佈建資源，並將環境的互動式設定降到最低。 使用此「基礎結構即程式碼」方法及用於持續部署的嚴謹 DevOps 程序，即可確保環境中的一致性並減少漂移。 幾乎每個 Azure 資源都可透過[AZURE RESOURCE MANAGER JSON 範本](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)搭配 PowerShell 或 Azure 跨平臺 CLI 和工具（例如 Terraform by HashiCorp）部署，其具有與 Azure Cloud Shell) 的一流支援和整合。
+如同自動化區段中所強調的，您的目標應該是讓組織透過由原始程式碼控制的範本和指令碼來佈建資源，並將環境的互動式設定降到最低。 使用此「基礎結構即程式碼」方法及用於持續部署的嚴謹 DevOps 程序，即可確保環境中的一致性並減少漂移。 幾乎每個 Azure 資源都可透過[AZURE RESOURCE MANAGER JSON 範本](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)搭配 PowerShell 或 Azure 跨平臺 CLI 和工具（例如 Terraform by HashiCorp）來部署，其具有與 Azure Cloud Shell 的一流支援和整合）。
 
-文章（例如[使用 Azure Resource Manager 範本的最佳做法](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)）提供最佳做法的絕佳討論，並瞭解如何將 DevOps 方法套用至[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)工具鏈 Azure Resource Manager 範本。 花時間和人力開發一組核心的特定範本，並使用 DevOps 工具鏈 (（例如 Azure DevOps、Jenkins、Bamboo、TeamCity 和 Concourse) ）開發持續傳遞管線，特別是針對您的生產和 QA 環境。 GitHub 上有一個大型的[Azure 快速入門範本](https://github.com/azure/azure-quickstart-templates)程式庫，您可以用來作為範本的起點，而且您可以使用 Azure DevOps 快速建立雲端式傳遞管線。
+文章（例如[使用 Azure Resource Manager 範本的最佳做法](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)）提供最佳做法的絕佳討論，並瞭解如何將 DevOps 方法套用至[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)工具鏈 Azure Resource Manager 範本。 花時間和工作來開發一組核心的特定範本，並使用 DevOps 工具鏈（例如 Azure DevOps、Jenkins、Bamboo、TeamCity 和 Concourse）開發持續傳遞管線，特別是針對您的生產和 QA 環境。 GitHub 上有一個大型的[Azure 快速入門範本](https://github.com/azure/azure-quickstart-templates)程式庫，您可以用來作為範本的起點，而且您可以使用 Azure DevOps 快速建立雲端式傳遞管線。
 
 作為生產訂用帳戶或資源群組的最佳作法，您的目標應該是使用 RBAC 安全性，根據預設不允許互動式使用者，並使用以服務主體為基礎的自動化持續傳遞管線來布建所有資源，並提供所有應用程式程式碼。 系統管理員或開發人員都不應該觸及 Azure 入口網站來以互動方式設定資源。 此 DevOps 層級會進行一致的工作，並使用 Azure scaffold 的所有概念，並提供一致且更安全的環境，以符合您組織的需求調整。
 
@@ -335,7 +335,7 @@ Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以�
 - **使用者定義的路由**可讓您操作子網內的路由表，讓您透過網路虛擬裝置或對等互連虛擬網路上的遠端閘道傳送流量。
 - **虛擬網路對等互連**可讓您順暢地連接 Azure 中的兩個或多個虛擬網路，建立更複雜的中樞和輪輻設計或共用服務網路。
 - **服務端點。** 在過去，PaaS 服務會仰賴不同方法來保護您虛擬網路中這些資源的存取。 服務端點可讓您從**只有**連線的端點，安全地存取已啟用的 PaaS 服務，進而提高整體安全性。
-- **安全性群組**是一組廣泛的規則，可讓您允許或拒絕進出 Azure 資源的輸入和輸出流量。 [安全性群組](https://docs.microsoft.com/azure/virtual-network/security-overview)包含可以使用**服務**標籤增強的安全性規則， (會定義一般的 Azure 服務，例如 Azure Key Vault 或 Azure SQL Database) 和**應用程式安全性群組**， (定義和應用程式結構，例如 web 伺服器或應用程式伺服器) 。
+- **安全性群組**是一組廣泛的規則，可讓您允許或拒絕進出 Azure 資源的輸入和輸出流量。 [安全性群組](https://docs.microsoft.com/azure/virtual-network/security-overview)包含安全性規則，可使用**服務**標籤來增強（定義一般的 Azure 服務，例如 Azure Key Vault 或 Azure SQL Database）和**應用程式安全性群組**（定義和應用程式結構，例如 web 伺服器或應用程式伺服器）。
 
 > [!TIP]
 > 在您的網路安全性群組中使用服務標籤和應用程式安全性群組，以執行下列動作：
@@ -348,7 +348,7 @@ Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
-Azure 提供廣泛合作夥伴網路的內部和協力廠商功能，讓您有有效的安全性策略。 更重要的是，Microsoft 以[Azure 虛擬資料中心 (VDC) ](./networking-vdc.md)的形式提供最佳做法和指導方針。 當您從單一工作負載移到使用混合式功能的多個工作負載時，VDC 指引會提供您「配方」，讓您有彈性的網路，隨著您在 Azure 中的工作負載成長而成長。
+Azure 提供廣泛合作夥伴網路的內部和協力廠商功能，讓您有有效的安全性策略。 更重要的是，Microsoft 以[Azure 虛擬資料中心（VDC）](./networking-vdc.md)的形式提供最佳做法和指導方針。 當您從單一工作負載移到使用混合式功能的多個工作負載時，VDC 指引會提供您「配方」，讓您有彈性的網路，隨著您在 Azure 中的工作負載成長而成長。
 
 ## <a name="next-steps"></a>後續步驟
 

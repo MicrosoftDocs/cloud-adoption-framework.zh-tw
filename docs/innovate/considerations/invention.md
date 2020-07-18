@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4775659b1d9cf6dfbd133734c5a46f8339c2cc63
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 52518647e6d1a32c9c41a6a9dfe72a15d276624c
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993803"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449212"
 ---
 # <a name="develop-digital-inventions"></a>開發數位發明
 
@@ -25,7 +25,7 @@ ms.locfileid: "84993803"
 並非每個專業領域都需要針對每個特定案例驅動創新。 藉由遵循以[客戶理解的組建](./build.md)中的指導方針，目標是要在每個反復專案中測試假設。 藉由將每個反復專案的輸出定義為[最小的可行產品（MVP）](../../govern/policy-compliance/index.md)，這應該可讓您牽涉到盡可能少的專業領域。
 
 - **[將大眾化資料](./data.md)：** 藉由將資料交給客戶、合作夥伴和員工，您可以鼓勵創新的觀察。 內嵌、集中、管理及共用資料。
-- **[參與應用程式](./apps.md)：** 人們透過應用程式與經驗與知識連接。 讓專業和公民開發人員能夠快速建立應用程式。
+- 透過**[應用程式參與](./apps.md)：** 人們透過應用程式與經驗與知識連接。 讓專業和公民開發人員能夠快速建立應用程式。
 - 強化**[採用](./ci-cd.md)：** 藉由減少採用與合作關係的摩擦，鼓勵創新。 可見度、共同作業、速度和意見反應迴圈的架構設計人員。
 - **[與裝置互動](./devices.md)：** 數位和實體線條在多個頻道之間會模糊。 提供跨裝置、IoT 和混合現實的體驗。
 - **[預測和影響](./predict.md)：** 尋找潛在客戶創新的未來。 查看過去的資料，透過預測性工具來通知體驗和互動。

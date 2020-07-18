@@ -7,16 +7,16 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0bd70384bbf5bd5c547d8fb364e70e275900b8bf
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9c2fb6fe013446373e198b9caff033c8d9c8cd6b
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85074977"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448243"
 ---
-# <a name="deploy-an-enterprise-scale-landing-zone"></a>部署企業規模的登陸區域
+# <a name="deploy-a-caf-enterprise-scale-landing-zone-in-azure"></a>在 Azure 中部署 CAF enterprise scale 登陸區域
 
-_企業級登陸區域_是已布建的環境，其中包含裝載更複雜工作負載所需的所有支援資源。 從企業級登陸區域開始，可讓您裝載任務關鍵性且安全的工作負載，以配合第一個部署的安全性、治理、合規性和操作需求。
+企業級登陸區域是已布建的環境，其中包含裝載更複雜工作負載所需的所有支援資源。 從企業級登陸區域開始，可讓您裝載任務關鍵性且安全的工作負載，以配合第一個部署的安全性、治理、合規性和操作需求。
 
 ## <a name="approach"></a>方法
 

@@ -3,16 +3,16 @@ title: 開始使用：在雲端中建立新的產品和服務
 description: 瞭解創新方法，做為引導新雲端產品和服務開發的方法。
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/15/2020
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 31cace97b3c34b5b32ad2e92fbb9f783cd19d89f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9530b4edb5eee0838a9bdbffe0b5ed39675bdc10
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076554"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450521"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -21,6 +21,12 @@ ms.locfileid: "85076554"
 本指南使用下圖中反白顯示的雲端採用架構區段。 雖然創新比標準遷移更不容易預測，但仍適用于更廣泛的雲端採用方案內容中。 本指南可協助您的企業提供創新所需的支援，並提供在整個雲端採用期間建立平衡組合所需的結構。
 
 ![開始在雲端中加速創新](../_images/get-started/innovation-map.png)
+
+## <a name="preparation"></a>準備
+
+為了支援創新策略的開發，AI 成熟度模型是免費的工具，可協助組織評估其建立和擁有以 AI 為基礎之系統的能力。 成熟度有四個層級：基本、接近、渴望和成熟。 這些成熟度層級中的每一個都包含一組特定的特性，以協助判斷您的組織能夠採用特定類型的 AI 解決方案、降低相關風險，以及實施策略。 評量需要5-10 分鐘的時間，並測量貴組織在四個類別之間的功能：策略、文化、組織特性和功能。 藉由測量您的功能，我們可以計算您組織的分數，並以曲線為您的 AI 創新成熟度提供預估。
+
+使用[Ai 成熟度模型](https://aiready.microsoft.com)來評估貴組織的 ai 成熟度，以建立以 ai 為基礎的系統。 完成後，評量會以估計您的 AI 創新成熟度狀態來提供分數。
 
 ## <a name="step-1-document-the-business-strategy"></a>步驟1：記錄商務策略
 
@@ -208,6 +214,18 @@ ms.locfileid: "85076554"
 - [Azure 創新指南](../innovate/innovation-guide/index.md)：使用 azure 創新指南來加速部署創新的解決方案，方法是瞭解可協助您建立最基本的可行產品（MVP）的工具和流程。
 - [創新最佳做法](../innovate/best-practices/index.md)：結合 Azure 服務來建立數位家發明的工具鏈。
 - [意見反應迴圈](../innovate/considerations/adoption.md)：開發改良的意見反應迴圈，以快速提供影響力創新給您的客戶。
+
+## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>步驟9：評估您組織的創新成熟度
+
+為了支援創新策略的開發，AI 成熟度模型是免費的工具，可協助組織評估他們建立和擁有以 AI 為基礎之系統的能力。 有四個成熟度層級，包括基礎、接近、渴望和成熟。 這些成熟度層級中的每一個都包含一組特定的特性，協助識別您的組織能夠採用特定類型的 AI 解決方案、相關的風險和策略。 評量需要5-10 分鐘的時間，並測量貴組織在四個類別之間的功能：策略、文化、組織特性和功能。  藉由測量這些資訊，我們可以計算您組織的分數，並在曲線上提供 AI 創新成熟度的預估。
+
+**項**
+
+- 使用[Ai 成熟度模型工具](https://aiready.microsoft.com)來評估貴組織的 ai 成熟度，以建立以 ai 為基礎的系統。
+
+**支援交付後完成的指引：**
+
+- 完成評量之後，此工具的輸出將會提供評估 AI 創新成熟度狀態的分數。
 
 <!-- markdownlint-disable MD033 -->
 <br>
