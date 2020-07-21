@@ -1057,14 +1057,14 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 Azure Machine Learning 分析資料
                         href: 'https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: 部署預測
+                        href: 'https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: AI 應用程式和代理程式
                     items:
                       - name: 什麼是 AI 應用程式
                         href: innovate\best-practices\ai-applications.md
                       - name: 什麼是 AI 代理程式
                         href: innovate\best-practices\conversational-ai.md
-                      - name: 部署預測
-                        href: 'https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: 知識採礦
                     items:
                       - name: 什麼是 Azure 認知搜尋
