@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 465f1771232f8df7226773fb8055052a846cacca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec2cac2978047a95ef2199933286ec98e2e6d63f
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997953"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479835"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶來調整您的 Azure 環境
 
@@ -39,7 +39,7 @@ ms.locfileid: "80997953"
 - 創新
 - 移轉
 - 成本
-- 作業
+- Operations
 - 安全性
 - 控管
 

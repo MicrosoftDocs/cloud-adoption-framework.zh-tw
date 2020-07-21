@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1dfc50e5512edc0e219dcdb86bae52d0626a038
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c0b07017a5392b910011c4dc0217b8359e367ba8
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195066"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479716"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -26,13 +26,14 @@ ms.locfileid: "86195066"
 
 針對您要部署到登陸區域環境的每個應用程式或服務，請使用下列決策樹作為起點，以協助您判斷要使用的適當資料存放區服務：
 
-![Azure 資料庫服務決策樹](../../_images/ready/data-decision-tree.png)
+![Azure 資料庫服務決策樹 ](../../_images/ready/data-decision-tree.png)
+ _圖1： azure 資料庫服務決策樹。_
 
 ### <a name="key-questions"></a>重要問題
 
 回答下列有關工作負載的問題，以協助您根據 Azure 資料庫服務決策樹來做出決策：
 
-- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，則平臺即服務 (PaaS) 資料庫服務可能會降低您的管理和作業成本。
+- **您需要資料庫軟體或主機 OS 的完整控制權或擁有權嗎？** 有些案例會要求您具備軟體設定和主機伺服器的高度控制權或擁有權，才能進行資料庫工作負載。 在這些案例中，您可以部署自訂的基礎結構即服務 (IaaS) 虛擬機器，以完全控制資料服務的部署和設定。 如果您沒有這些需求，平臺即服務（PaaS）資料庫服務可能會降低您的管理和作業成本。
 - **您的工作負載會使用關聯式資料庫技術嗎？** 若是如此，您打算使用哪一種技術？ Azure 提供的受控 PaaS 資料庫功能適用於[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)、[MySQL](https://docs.microsoft.com/azure/mysql/overview)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) 和 [MariaDB](https://docs.microsoft.com/azure/mariadb/overview)。
 - **您的工作負載是否會使用 SQL Server？** 在 Azure 中，您可以在 [Azure 虛擬機器上的 IaaS 型 SQL Server](https://docs.microsoft.com/azure/azure-sql/virtual-machines) 中或 [PaaS 型的 Azure SQL Database 託管服務](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)上執行工作負載。 選擇要使用哪個選項的主要考量是，您是否想管理資料庫、套用修補程式及進行備份，或是您要將這些作業委派給 Azure。 在某些情況下，因為相容性問題，您可能需要使用 IaaS 主控的 SQL Server。 若要深入了解如何為您的工作負載選擇正確選項，請參閱[在 Azure 中選擇適當的 SQL Server 選項](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)。
 - **您的工作負載會使用索引鍵/值資料庫儲存體嗎？** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) 可提供快取效能高的索引鍵/值資料儲存體解決方案，讓您擁有快速且可擴充的應用程式。 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 也提供一般用途的索引鍵/值儲存體功能。
@@ -49,7 +50,7 @@ ms.locfileid: "86195066"
 
 下表說明一些常見的使用案例需求，以及用來處理這些需求的建議資料庫服務：
 
-| 案例  | 資料服務 |
+| 情節  | 資料服務 |
 |---|---|
 | 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。 | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
 | 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
@@ -77,7 +78,7 @@ Azure 可讓您以所需的規模提供服務，**隨時隨地**觸及您的客�
 
 ## <a name="establish-controls-for-database-services"></a>建立資料庫服務的控制項
 
-當您準備登陸區域環境時，您可以建立控制項來限制使用者可以部署的資料存放區。 控制項可協助您管理成本並限制安全性風險，同時還能讓開發人員和 IT 小組部署及設定支援您工作負載所需的資源。
+當您準備登陸區域環境時，您可以建立控制項來限制使用者可以部署的資料存放區。 控制項可協助您管理成本並限制安全性風險，同時仍能讓開發人員和 IT 小組部署和設定支援您的工作負載所需的資源。
 
 識別並記下登陸區域的需求之後，您可以使用 [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)來控制允許使用者建立的資料庫資源。 控制項可以採用[允許或拒絕建立資料庫資源類型](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)的形式。 例如，您可能會限制使用者只能建立 Azure SQL Database 資源。 您也可以在建立資源時使用原則來控制允許的選項，例如[限制可以布建的 SQL Database sku](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus) ，或只允許在 IaaS VM 上安裝[特定版本的 SQL Server](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12) 。
 

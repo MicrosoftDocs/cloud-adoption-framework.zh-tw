@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0c43634c4d0fbea6570780cd3247677a4a952a72
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 1f404b33b526130a3b5205d1835d5981b7d04cea
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449348"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478815"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
@@ -67,7 +67,7 @@ ms.locfileid: "86449348"
 
 ### <a name="collect-data"></a>收集資料
 
-當您需要集中資料以滿足客戶的需求時，您可能也必須從各種來源收集資料，並將其移至集中式資料存放區。 資料收集有兩種主要形式：_整合__和內嵌_。
+當您需要集中資料以滿足客戶的需求時，您可能也必須從各種來源收集資料，並將其移至集中式資料存放區。 這兩種主要的資料收集形式_integration_是整合_和內嵌_。
 
 **整合：** 位於現有資料存放區中的資料可以使用傳統資料移動技術，整合到集中式資料存放區。 這在牽涉到多重雲端資料存放區的案例中特別常見。 這些技術牽涉到從現有的資料存放區解壓縮資料，然後將其載入中央資料存放區。 在此程式中的某個時間點，通常會將資料轉換成更容易使用且與中央存放區相關。
 

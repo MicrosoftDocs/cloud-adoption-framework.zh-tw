@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 405bbe81d2243b01aca45700e68007f8e6c18243
-ms.sourcegitcommit: a6c9643986acf33524f17bbd01c71e3fccc03805
+ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403522"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479478"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -97,7 +97,7 @@ DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能�
 
 - [Azure 虛擬 WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)是一種由 Microsoft 管理的解決方案，預設會提供端對端全域傳輸連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的需求。 例如，您不需要設定使用者定義的路由（UDR）或網路虛擬裝置（Nva），即可啟用全域傳輸連線能力。
 
-- 虛擬 WAN 藉由建立橫跨多個 Azure 區域和內部部署位置（任意對任意連線能力）的[中樞和輪輻網路架構](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，來大幅簡化 Azure 和跨單位的端對端網路連線，如下圖所示：
+- 虛擬 WAN 藉由建立橫跨多個 Azure 區域和內部部署位置（任意對任意連線能力）的[中樞和輪輻網路架構](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，來大幅簡化 Azure 和跨單位的端對端網路連線能力，如下圖所示：
 
 ![網路拓撲和連線能力 ](./media/global-transit.png)
  _圖2：具有虛擬 WAN 的全球傳輸網路。_
@@ -160,7 +160,7 @@ DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能�
 
 - 請不要使用現有的內部部署網路（例如多重通訊協定標籤切換（MPLS）），在 Azure 區域之間連線 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。
 
-- 針對您從不是以虛擬 WAN 為基礎的中樞和輪輻網路拓撲進行遷移的 brownfield 案例，請參閱[遷移至 Azure 虛擬 wan](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology)。
+- 針對您從中樞和輪輻網路拓撲（不是以虛擬 WAN 為基礎）進行遷移的 brownfield 案例，請參閱[遷移至 Azure 虛擬 wan](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology)。
 
 - 應該在連線訂用帳戶內建立 azure 虛擬 WAN 和 Azure 防火牆資源。
 
@@ -181,7 +181,7 @@ DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能�
 
 **設計考慮：**
 
-- 有多個網路拓朴可連接多個登陸區域 Vnet：一個大型的一般 VNet、多個 Vnet 連接多個 ExpressRoute 電路或連線、中樞輪輻、完整網狀架構，以及混合式。
+- 各種網路拓撲可以連接多個登陸區域 Vnet：一個大型的一般 VNet、多個 Vnet 連接多個 ExpressRoute 線路或連線、中樞和輪輻、全網格和混合式。
 
 - Vnet 不會跨越訂用帳戶界限，但可以使用虛擬網路對等互連、ExpressRoute 線路或使用 VPN 閘道，來達到不同訂用帳戶中的 Vnet 之間的連線能力。
 
@@ -211,7 +211,7 @@ DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能�
 
 **設計建議：**
 
-- 在下列案例中，您應該考慮以具有非虛擬 WAN 技術的中樞和輪輻網路拓撲為基礎的網路設計：
+- 在下列案例中，應考慮使用非虛擬 WAN 技術的中樞和輪輻網路拓撲中的網路設計：
 
   - 流量界限在 Azure 區域內的 azure 部署。
 
@@ -225,9 +225,9 @@ DNS 是整體企業級架構中的重要設計主題，雖然某些組織可能�
 
   - 集中式 Nva 和複雜/細微的路由會有相當大的相依性。
 
-- 針對區域部署，主要使用中樞與輪輻拓撲，並將 Vnet 與虛擬網路對等互連連線至中央中樞 VNet，以透過 ExpressRoute 進行跨單位連線、用於分支連線的 VPN、透過 Nva 和 Udr 的輪輻到輪輻連線，以及透過 NVA 的網際網路輸出保護，如下圖所示。
+- 針對區域部署，主要使用中樞和輪輻拓撲，並將 Vnet 與虛擬網路對等互連連線至中央中樞 VNet，以透過 ExpressRoute 進行跨單位連線、用於分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護，如下圖所示。
 
-![網路拓樸和連線能力](./media/hub-and-spoke-topology.png)
+![網路拓樸和連線能力](./media/hub and spoke-topology.png)
 
 _圖5：中樞和輪輻網路拓撲。_
 
@@ -248,12 +248,12 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 對於跨 Azure 區域具有多個中樞和輪輻拓撲的網路架構，當少數登陸區域需要跨區域通訊時，請使用全域 VNet 對等互連來連接登陸區域 Vnet。 這種方法提供的優點，像是具有全域 VNet 對等互連的高網路頻寬（如 VM SKU 所允許），但它會略過中央 NVA （萬一需要進行流量檢查或篩選）。 這也會受限於[全域 VNet 對等互連限制](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview#constraints-for-peered-virtual-networks)。
 
-- 當您在兩個 Azure 區域中部署中樞和輪輻網路架構，並在各區域之間的所有登陸區域之間傳輸連線時，請使用 ExpressRoute 搭配雙重線路，以提供傳輸連線能力，以 Vnet 跨 Azure 區域的登陸區域。 在此案例中，登陸區域可以透過本機中樞 VNet 中的 NVA 和跨區域透過 ExpressRoute 線路在區域內傳輸，而流量必須 hairpin 在 Microsoft enterprise edge （MSEE）路由器。 這項設計如下圖所示：
+- 當您在兩個 Azure 區域中部署中樞和輪輻網路架構，並且需要跨區域的所有登陸區域之間的傳輸連線時，請使用 ExpressRoute 搭配雙重線路來提供傳輸連線能力，以 Vnet 跨 Azure 區域的登陸區域。 在此案例中，登陸區域可以透過本機中樞 VNet 中的 NVA 和跨區域透過 ExpressRoute 線路在區域內傳輸，而流量必須 hairpin 在 Microsoft enterprise edge （MSEE）路由器。 這項設計如下圖所示：
 
 ![網路拓撲和連線能力 ](./media/vnet-dual-circuits.png)
  _圖7：登陸區域連線設計。_
 
-- 當您的組織需要跨兩個以上的 Azure 區域進行中樞和輪輻網路架構，且必須在跨 Azure 區域 Vnet 的登陸區域之間進行全域傳輸連線時。 雖然此架構可以藉由將中央中樞 Vnet 與全域 VNet 對等互連進行互連，以及使用 Udr 和 Nva 來啟用全域傳輸路由，因此複雜度和管理的額外負荷很高。 相反地，我們建議您使用虛擬 WAN 來部署全域傳輸網路架構。
+- 當您的組織需要跨兩個 Azure 區域的中樞和輪輻網路架構，以及登陸區域之間的全球傳輸連線時，需要跨 Azure 區域的 Vnet。 雖然此架構可以藉由將中央中樞 Vnet 與全域 VNet 對等互連進行互連，以及使用 Udr 和 Nva 來啟用全域傳輸路由，因此複雜度和管理的額外負荷很高。 相反地，我們建議您使用虛擬 WAN 來部署全域傳輸網路架構。
 
 - 使用[Azure 監視器 network insights](https://docs.microsoft.com/azure/azure-monitor/insights/network-insights-overview) （目前處於預覽狀態）來監視 Azure 上網路的端對端狀態。
 
@@ -385,7 +385,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 使用[Azure DDoS 保護標準保護方案](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)來保護 vnet 中裝載的所有公用端點。
 
-- 請勿將內部部署 DMZ 概念和架構複寫到 Azure 中，因為您可以在 Azure 中取得與內部部署類似的安全性功能，但必須調整雲端的執行和架構。
+- 請勿將內部部署周邊網路概念和架構複寫到 Azure。 Azure 中有類似的安全性功能可供使用，但執行和架構必須適應雲端。
 
 ## <a name="planning-for-app-delivery"></a>規劃應用程式傳遞
 

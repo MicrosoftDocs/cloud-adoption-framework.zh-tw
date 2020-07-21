@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 48d6d53baf058bed28b81b88dcd75b1e6dd40ab6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 66011cd03775007ce48811eaf4df5d9f3e121790
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451779"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478934"
 ---
 # <a name="knowledge-mining"></a>知識採礦
 
@@ -49,5 +49,7 @@ Azure 認知搜尋是一個受控雲端解決方案，可為開發人員提供 A
 
 ## <a name="next-steps"></a>後續步驟
 
-最佳做法：使用 AI 進行創新
-<!-- TODO: Need more information here. -->
+探索其他 AI 解決方案類別：
+
+- [AI 應用程式和代理程式](./ai-applications.md)
+- [機器學習](./machine-learning.md)

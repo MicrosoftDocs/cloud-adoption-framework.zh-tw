@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 553827517b7ef96c648e56e11287a688cd695af9
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753587"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477999"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 
@@ -21,7 +21,7 @@ ms.locfileid: "83753587"
 
 ![安全混合式網路架構](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
 
-此架構支援的案例為，您的組織想開始整合雲端式工作負載與內部部署工作負載，但雲端安全性原則可能尚未完全成熟，或尚未取得兩個環境之間安全的專用 WAN 連線。 因此，雲端網路應被視為周邊網路，以確保內部部署服務的安全。
+此架構支援的案例為，您的組織想開始整合雲端式工作負載與內部部署工作負載，但雲端安全性原則可能尚未完全成熟，或尚未取得兩個環境之間安全的專用 WAN 連線。 因此，應將雲端網路視為 DMZ，以確保內部部署服務的安全。
 
 DMZ 會部署網路虛擬裝置 (NVA) 以實作防火牆和封包檢查等安全性功能。 在內部部署與雲端式應用程式或服務之間傳遞的流量必須通過 DMZ 進行稽核。 VPN 連線以及判斷哪些流量可通過 DMZ 網路的規則由 IT 安全性小組嚴格控管。
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cb2df816dd033aabe6467722238d2e8690637e24
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 1b1821a40df2f221855642c168e3a7bf13c56492
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448447"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479206"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>在 Azure 中部署移轉登陸區域
 
@@ -84,7 +84,7 @@ ms.locfileid: "86448447"
 - **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
 - **合規性：** 此登陸區域不需要協力廠商合規性需求。
 - **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
-- **共用服務：** 在 Azure 中，沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
+- **共用服務：** Azure 中沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
 - **有限的生產範圍：** 此登陸區域可能會主控生產工作負載。 這不適合用于敏感性資料或任務關鍵性工作負載的環境。
 
 如果這些假設符合您目前的採用需求，則此藍圖可能是建立登陸區域的起點。

@@ -21,11 +21,11 @@
 
 由於缺乏需求，IT 安全性會安全地扮演它，而且需要[雲端 DMZ](~/decision-guides/software-defined-network/cloud-dmz.md)模式。 這表示 Azure 部署本身的治理只會略為介入。
 
-- Azure 訂用帳戶可以透過 VPN 連線到現有的資料中心，但必須遵循所有現有的內部部署 IT 治理原則，與不受保護的資源連線相關。 如需關於 VPN 連線的實作指引，請參閱 [VPN 參考架構](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)。
+- Azure 訂用帳戶可以透過 VPN 連線到現有的資料中心，但必須遵循所有現有的內部部署 IT 治理原則，與周邊網路與受保護資源的連線有關。 如需有關 VPN 連線的執行指引，請參閱[使用 vpn 閘道連接到 Azure 的內部部署網路](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)。
 - 有關於子網路、防火牆和路由的決策，目前均留待每個應用程式/工作負載的潛在客戶決定。
 - 發行任何受保護的資料或任務關鍵性工作負載之前，需執行額外的分析。
 
-在此模式中，雲端網路只能透過與 Azure 相容的現有 VPN 連接到內部部署資源。 透過該連線傳送的流量，將視同任何來自非管制區域的流量。 對於內部部署 Edge 裝置可能需要額外的考量，以便能安全地處理來自 Azure 的流量。
+在此模式中，雲端網路只能透過與 Azure 相容的現有 VPN 連接到內部部署資源。 透過該連線的流量，將會視為來自周邊網路的任何流量。 對於內部部署 Edge 裝置可能需要額外的考量，以便能安全地處理來自 Azure 的流量。
 
 雲端治理小組已主動邀請網路和 IT 安全性小組的成員進行定期會議，以持續滿足網路需求和風險。
 

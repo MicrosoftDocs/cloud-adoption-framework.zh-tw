@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c015b54a10b7b1ef76969148dbea263d37353562
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: f2c90b709495196a1d81459c6a09dc887efc7d62
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076157"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479580"
 ---
 <!-- cSpell:ignore SIEM -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "85076157"
 - [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-get-started?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：將訂用帳戶上架至資訊安全中心。
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：上架 Azure Sentinel 以提供**安全性資訊事件管理（SIEM）** 和**安全性協調流程自動化回應（攀升情況）** 解決方案。
 - [網路界限安全性](../../reference/networking-vdc.md)：用於開發網路的數個參考模式，類似于資料中心內的網路界限如何保護。
-- [安全網路架構](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：用來執行非軍事區域和安全網路架構的參考架構。
+- [安全網路架構](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：用來執行周邊網路和安全網路架構的參考架構。
 - 身分[識別管理和存取控制](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：一系列用來執行身分識別和存取權的最佳作法，以保護 Azure 中的登陸區域。
 - [網路安全性做法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：提供保護網路的其他最佳作法。
 - 作業[安全性](https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)提供在 Azure 中增加營運安全性的最佳作法。

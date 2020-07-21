@@ -7,13 +7,15 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 89e90b875ae3d5d8d0433045bf5fb799aea535db
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 3ec600379b185ae5ab084d80f3d2a6374ba0703e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448260"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479427"
 ---
+<!-- TODO: Refactor terms: "design area", "well-architected" -->
+
 # <a name="design-areas-of-a-well-architected-landing-zone"></a>設計完善之登陸區域的設計區域
 
 每個 Azure 登陸區域的 [執行] 選項都會提供部署方法和定義的設計原則，以協助您執行下列設計區域。 選擇 [執行] 選項之前，請使用本文來瞭解這些設計區域。
@@ -23,7 +25,7 @@ ms.locfileid: "86448260"
 
 不論部署選項為何，都應該考慮下列各項，並針對每個設計區域進行決策。 這些決策會影響每個登陸區域所依賴的平臺基礎。
 
-| 設計區域  | 目標  | 相關的方法 |
+| 設計區域 | 目標  | 相關的方法 |
 |---|---|---|
 | 企業註冊 | 針對具有 Azure 承諾用量的企業客戶，適當的租使用者建立和註冊是很重要的初期步驟。 | 就緒 |
 | 身分識別 | 身分識別與存取管理（IAM）是公用雲端中的主要安全性界限。 它是任何安全且完全相容之架構的基礎。 | 就緒 |

@@ -1,5 +1,5 @@
 ---
-title: 追蹤跨業務單位和環境的成本
+title: 追蹤營業單位、環境或專案之間的成本
 description: 使用適用于 Azure 的雲端採用架構，瞭解建立追蹤機制的決策和執行方法。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,18 +7,19 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7338b9e3f6d0ea4e2532e74ed650804406b2d7e5
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 91bc0fce8f22f897b0957eeca9bbbb8fdb714ee6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450861"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479818"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
 [建立符合成本效益的組織](../../organize/cost-conscious-organization.md)需要可見度和適當定義的存取權 (或範圍)，以符合成本相關的資料。 這篇最佳做法文章概述建立追蹤機制的決策和實作方法。
 
-![符合成本效益的程序大綱](../../_images/ready/cost-optimization-process.png)
+![符合成本效益的程式概述 ](../../_images/ready/cost-optimization-process.png)
+ _圖1：符合成本效益的程式概述。_
 
 ## <a name="establish-a-well-managed-environment-hierarchy"></a>建立妥善管理的環境階層
 
@@ -32,10 +33,7 @@ ms.locfileid: "86450861"
 
 標記是了解任何成本報告中資料的主要方式。 它是任何妥善管理環境的基本部分。 這也是建立任何環境適當治理的第一步。
 
-在營業單位、環境和專案之間準確追蹤成本資訊的第一個步驟，是定義標記標準。 第二個步驟是確定已一致地套用標記標準。 下列文章可協助您完成每個步驟：
-
-- [開發命名和標記標準](../azure-best-practices/naming-and-tagging.md)
-- [建立治理 MVP 來強制執行標記標準](../../govern/guides/complex/index.md)
+在營業單位、環境和專案之間準確追蹤成本資訊的第一個步驟，是定義標記標準。 第二個步驟是確定已一致地套用標記標準。 下列文章可協助您完成：[開發命名和標記標準](../azure-best-practices/naming-and-tagging.md)，以及[建立治理 MVP 來強制執行標記標準](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>資源組織
 
@@ -43,7 +41,8 @@ ms.locfileid: "86450861"
 
 針對大型企業，下列管理群組、訂用帳戶和資源群組的模型會建立一個階層，讓每個小組都能擁有正確的可見度層級來執行其職責。 當企業需要成本控制來避免預算溢出時，它可以將 Azure 藍圖或 Azure 原則這類治理工具套用到此結構內的訂用帳戶，以快速封鎖未來的成本錯誤。
 
-![大型企業的資源組織圖](../../_images/govern/large-enterprise-resource-organization.png)
+![大型企業的資源組織圖 ](../../_images/govern/large-enterprise-resource-organization.png)
+ _2：大型企業的資源組織。_
 
 在上圖中，管理群組階層的根會包含每個營業單位的節點。 在此範例中，跨國公司需要了解區域營業單位，因此它會針對階層中每個營業單位下的地理位置建立一個節點。
 
@@ -66,8 +65,7 @@ ms.locfileid: "86450861"
 
 管理成本是小組活動。 雲端採用架構的 [組織整備程度] 區段會定義少數核心小組，並概述這些小組如何支援雲端採用工作。 本文會展開小組定義，以定義要指派給每個小組成員的範圍和角色，以取得成本管理資料的適當可見度層級。
 
-- 「角色」**** 會定義使用者可對各種資產執行哪些動作。
-- 「範圍」**** 會定義使用者可對哪些資產 (使用者、群組、服務主體或受控識別) 執行這些動作。
+「角色」**** 會定義使用者可對各種資產執行哪些動作。 **範圍**會定義使用者可執行這些動作的資產（使用者、群組、服務主體或受控識別）。
 
 在一般的最佳做法中，我們會建議將人員指派給各種角色和範圍的最低許可權模型。
 

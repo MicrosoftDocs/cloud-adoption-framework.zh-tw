@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03b7e13a14c2b3d9a6fe6e2b2757f065e041b3f9
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fc3e2aa9ea201e203c961275f26305cbfd5d45ed
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191224"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450164"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -77,8 +77,8 @@ ms.locfileid: "86191224"
 
 | State | 標準組織 | 複雜企業 |
 |---|---|---|
-| 成本管理 &mdash; 雲端帳戶處理 | 回報模型。 透過 IT 集中計費。 | 退款模型。 可透過 IT 採購來散發計費。 |
-| 安全性基準 &mdash; 受保護的資料 | 公司財務資料和 IP。 有限的客戶資料。 沒有協力廠商合規性需求。 | 客戶的財務和個人資料有多個集合。 可能必須考慮協力廠商合規性。 |
+| 成本管理：雲端帳戶處理 | 回報模型。 透過 IT 集中計費。 | 退款模型。 可透過 IT 採購來散發計費。 |
+| 安全性基準：受保護的資料 | 公司財務資料和 IP。 有限的客戶資料。 沒有協力廠商合規性需求。 | 客戶的財務和個人資料有多個集合。 可能必須考慮協力廠商合規性。 |
 
 ## <a name="caf-enterprise-scale-landing-zone"></a>CAF 企業級登陸區域
 

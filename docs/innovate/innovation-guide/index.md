@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ae8fa0dd1de1544eb50b55995e1bf9368369319
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 521b3fd8f991ba1d5ff3900637dd10d865984735
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373213"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448940"
 ---
 # <a name="azure-innovation-guide-overview"></a>Azure 創新指南概觀
 

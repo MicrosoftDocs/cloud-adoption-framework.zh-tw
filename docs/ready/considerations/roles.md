@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 5527ca51f08b3eaf6a5bb6d022ad5a8696f502b6
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e88785c98dcf9d5b20ce7d28682541d6c4f9b61e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076112"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479546"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -78,7 +78,7 @@ RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理
 | 安全性作業 | SecOps | 提供一般的安全性監督。 <br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
 | 網路作業 | Netops | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |
 | 系統作業 | Sysops | 指定計算和儲存體基礎結構選項，並維護已部署的資源。 |
-| 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。 <br><br> 會操作功能和應用程式，以符合服務等級協定 (SLA) 和其他品質標準。 |
+| 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。 <br><br> 會操作功能和應用程式，以符合服務等級協定和其他品質標準。 |
 
 <!-- markdownlint-enable MD033 -->
 

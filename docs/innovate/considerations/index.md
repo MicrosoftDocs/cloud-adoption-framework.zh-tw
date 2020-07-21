@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d46518dca8738efd1b1e22f8d276102e198fc6be
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bc06bdb894fc4ac3f92eab87de86abad3dc2d026
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219677"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449229"
 ---
 # <a name="innovation-in-the-digital-economy"></a>數位經濟的創新
 
@@ -61,7 +61,7 @@ ms.locfileid: "83219677"
 
 ## <a name="commitment-to-iteration"></a>承諾會反覆執行
 
-只有一項保證能適用於所有創新週期，那就是您不會一次就成功。 測量數據可協助您了解應該進行哪些調整才能達到所需的結果。 可導致有利結果的變更來自於反覆執行「建置-測量-學習」流程。 雲端採用團隊和雲端策略團隊必須先承諾會建立反覆執行的心態，然後才採用成長心態或「建置-測量-學習」方法。
+只有一項保證能適用於所有創新週期：那就是您不會一次就成功。 測量數據可協助您了解應該進行哪些調整才能達到所需的結果。 可導致有利結果的變更來自於反覆執行「建置-測量-學習」流程。 雲端採用團隊和雲端策略團隊必須先承諾會建立反覆執行的心態，然後才採用成長心態或「建置-測量-學習」方法。
 
 ## <a name="next-steps"></a>後續步驟
 

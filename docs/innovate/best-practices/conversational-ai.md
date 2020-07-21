@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0c79ab45483b38268564f111f30147e68825582
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 1d0b3632332242f775630de26a6d71ebc766e913
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451772"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478917"
 ---
 <!-- cSpell:ignore Twilio -->
 
@@ -68,7 +68,7 @@ Bot 是一項 Web 服務，可實作對話式介面並透過 Bot Framework Servi
 | 新增卡片和按鈕 | 利用文字以外的媒體 (例如圖形、功能表和卡片) 來強化使用者體驗 | 如何[新增卡片](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0) |
 
 > [!NOTE]
-> 上表並非完整清單。 請參閱[Azure.com](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)上的完整檔
+> 上表並非完整清單。 如需詳細資訊，請參閱[Azure Bot 服務檔](https://docs.microsoft.com/azure/bot-service/)。
 
 ### <a name="test"></a>測試
 

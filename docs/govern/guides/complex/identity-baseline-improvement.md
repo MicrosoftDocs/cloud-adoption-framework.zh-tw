@@ -1,6 +1,6 @@
 ---
 title: 複雜的企業治理：改善身分識別基準專業領域
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將身分識別基準控制新增至治理最低可行產品 (MVP) 。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解如何將身分識別基準控制新增至治理最低可行產品（MVP）。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 52131e3d5fd93eb48ee0cbc941f5cffe48375daf
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 659dad6ad975fc19272348c6b5c3f148ea9f527b
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191547"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478012"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -27,7 +27,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 - 受保護的資料及任務關鍵性應用程式佔了兩個資料中心 25% 的工作負載。 在現代化機密個人資料和任務關鍵性應用程式的目前治理原則之前，都不能完全消除。
 - 這些資料中心的7% 資產不是雲端相容。 其會先移至替代的資料中心，再終止資料中心的合約。
-- 資料中心內的15% 資產 (750 虛擬機器) 相依于舊版驗證或協力廠商多重要素驗證。
+- 資料中心內的15% 資產（750虛擬機器）相依于舊版驗證或協力廠商多重要素驗證。
 - 連結現有資料中心與 Azure 的 VPN 連線未提供足夠的資料傳輸速度或延遲，因而無法在兩年內遷移大量資產，從而淘汰資料中心。
 
 前兩個障礙會以平行方式進行管理。 本文會講述第三個和第四個障礙的解決方案。
@@ -38,7 +38,7 @@ CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技
 
 ### <a name="changes-in-the-current-state"></a>目前狀態的變更
 
-IT 小組已核准要繼續進行 CIO 和 CFO 的計畫，以淘汰兩個資料中心。 小組擔心，這些資料中心的資產 750 (15% ) 必須移動到雲端以外的地方。
+IT 小組已核准要繼續進行 CIO 和 CFO 的計畫，以淘汰兩個資料中心。 小組擔心750（15%）這些資料中心的資產必須移動到雲端以外的地方。
 
 ### <a name="incrementally-improve-the-future-state"></a>以累加方式改善未來的狀態
 
@@ -77,7 +77,7 @@ IT 小組已核准要繼續進行 CIO 和 CFO 的計畫，以淘汰兩個資料�
 
 以下是新的最佳做法：
 
-- **保護混合式虛擬網路藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這個最佳做法需要讓 DMZ 跨網路界限啟用 Active Directory Domain Services。
+- **保護混合式虛擬網路藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這種最佳作法需要周邊網路，才能啟用跨網路界限的 Active Directory Domain Services。
 - **Azure Resource Manager 範本：**
     1. 定義 NSG 以封鎖外部流量，並允許內部流量。
     2. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。

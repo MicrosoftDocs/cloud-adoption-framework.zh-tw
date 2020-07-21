@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4e97a1140d80a201489e86b5652a15b11b508e60
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076714"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479869"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
 # <a name="perimeter-networks"></a>周邊網路
 
-[周邊網路][perimeter-network]可在雲端網路與內部部署或實體資料中心網路之間啟用安全連線，以及啟用任何進出網際網路的連線。 它們也稱為非管制區域 (DMZ)。
+[周邊網路][perimeter-network]可在雲端網路與內部部署或實體資料中心網路之間啟用安全連線，以及啟用任何進出網際網路的連線。 周邊網路有時稱為非軍事區域或 DMZ。
 
 若要讓周邊網路有效，連入封包必須流經安全子網中裝載的安全性應用裝置，然後才能到達後端伺服器。 範例包括防火牆、入侵偵測系統，以及入侵預防系統。 來自工作負載的網際網路繫結封包應該也會先流經周邊網路中的安全性設備，然後才會離開網路。 此流程的目的是為了強制執行原則，以及進行檢查和稽核。
 
@@ -28,7 +28,7 @@ ms.locfileid: "85076714"
 
 - [虛擬網路][virtual-networks]、[使用者定義的路由][user-defined-routes]和[網路安全性群組][network-security-groups]
 - [網路虛擬裝置（Nva）][network-virtual-appliances]
-- [Azure 負載平衡器][alb]
+- [Azure Load Balancer][alb]
 - [Azure 應用程式閘道][appgw]和[Web 應用程式防火牆（WAF）][appgwwaf]
 - [公用 IP][PIP]
 - 使用[Web 應用程式防火牆][afdwaf]的[Azure Front][afd]
@@ -37,12 +37,13 @@ ms.locfileid: "85076714"
 > [!NOTE]
 > Azure 參考架構提供範例範本，可讓您用來實作您自己的周邊網路：
 >
-> - [在 Azure 與您的內部部署資料中心之間執行 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [實作 Azure 與網際網路之間的 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+> - [在 Azure 與您的內部部署資料中心之間執行周邊網路](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [在 Azure 與網際網路之間執行周邊網路](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常，您的中央 IT 小組和安全性小組會負責定義操作周邊網路的需求。
 
-![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
+![中樞和輪輻網路拓撲的範例 ](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
+ _圖1：中樞和輪輻網路拓撲的範例。_
 
 上圖顯示的範例[中樞和輪輻網路拓撲](./hub-spoke-network-topology.md)，會執行可存取網際網路和內部部署網路的兩個周邊。 這兩個周邊都位於 DMZ 中樞內。 在 DMZ 中樞中，網際網路的周邊網路可以透過 Waf 的多個伺服器陣列和 Azure 防火牆實例來相應增加，以支援許多企業營運，以協助保護輪輻虛擬網路。 中樞也可以視需要透過 VPN 或 Azure ExpressRoute 進行連線。
 
@@ -106,7 +107,7 @@ Azure 應用程式閘道 WAF SKU 包含 Web 應用程式防火牆。 此 SKU 會
 
 [Azure DDoS 保護 Standard][DDoS]會針對專為 Azure 虛擬網路資源調整的[基本服務][DDoS]層級提供額外的緩和功能。 「DDoS 保護標準」很容易啟用，而且不需要變更應用程式。
 
-您可以透過專用的流量監視和機器學習演算法來調整保護原則。 原則會套用至與虛擬網路中部署的資源相關聯的公用 IP 位址。 例如 Azure Load Balancer、Azure 應用程式閘道和 Azure Service Fabric 執行個體。
+您可以透過專用的流量監視和機器學習演算法來調整保護原則。 原則會套用至與虛擬網路中部署的資源相關聯的公用 IP 位址。 範例包括 Azure Load Balancer、應用程式閘道和 Service Fabric 實例。
 
 在攻擊期間和針對歷史記錄目的，可透過 Azure 監視器檢視取得即時遙測。 您可以使用 Azure 應用程式閘道中的 Web 應用程式防火牆來新增應用層保護。 針對 IPv4 Azure 公用 IP 位址提供保護。
 

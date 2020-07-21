@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b491f7c2bb7d7f79151a766375ea6b8e01e4f4c5
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 64332dc7479c9c587fd9aaa4af7a58bb50060af6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449416"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478849"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -101,13 +101,11 @@ MVP 解決方案通常是由簡單的應用程式或資料解決方案所組成�
 
 ## <a name="when-not-to-apply-this-approach"></a>不套用此方法的時機
 
-有許多法規、合規性和產業需求，可能需要替代方法。 如果開發解決方案的公開版本建立了專利時間、智慧財產權保護、客戶資料流程失或違反既定需求的風險，則此方法可能不適用。 如果發現這類風險，請先洽詢法律顧問，再採用發行管理的任何引導式方法。
+許多可能會需要替代方法的法律、合規性和產業需求。 如果開發解決方案的公開版本建立了專利時間、智慧財產權保護、客戶資料流程失或違反既定需求的風險，則此方法可能不適用。 如果發現這類風險，請先洽詢法律顧問，再採用發行管理的任何引導式方法。
 
 ## <a name="references"></a>參考資料
 
-<!-- cSpell:ignore Eric Ries -->
-
-本文中的一些概念是以 Eric Ries[_的精簡啟動中所討論的_](http://theleanstartup.com/book)主題為基礎。
+本文中的一些概念是以 Eric Ries[的精簡啟動中所討論的](http://theleanstartup.com/book)主題為基礎。
 
 ## <a name="next-steps"></a>後續步驟
 

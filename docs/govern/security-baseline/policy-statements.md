@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4521a164a0fa549f6789a93baf469d40a693b1d4
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219796"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479070"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -55,7 +55,7 @@ ms.locfileid: "83219796"
 
 **原則聲明：** 沒有包含受保護資料的子網可以透過公用網際網路或跨資料中心直接存取。 這些子網路的存取必須透過中繼子網路進行路由。 這些子網路的所有存取都必須經過防火牆解決方案，該解決方案可以執行封包掃描和封鎖功能。
 
-**潛在的設計選項：** 在 Azure 中，藉由在[公用網際網路和雲端式網路之間部署 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來保護公用端點。 請考慮[Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)的部署、設定和自動化。
+**潛在的設計選項：** 在 Azure 中，藉由在[公用網際網路和雲端式網路之間部署周邊網路](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來保護公用端點。 請考慮[Azure 防火牆](https://docs.microsoft.com/azure/firewall/overview)的部署、設定和自動化。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 

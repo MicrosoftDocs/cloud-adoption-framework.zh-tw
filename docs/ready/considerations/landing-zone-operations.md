@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f7e60e97a38b38351e8f90ac90caf3925225ac68
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ffdfd350247d2cb1c6ff3cd367fbaf12ab6585e3
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075064"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479617"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 
@@ -38,7 +38,8 @@ ms.locfileid: "85075064"
 
 <!-- cSpell:ignore caf -->
 
-![管理方法](../../_images/manage/caf-manage.png)
+![管理方法 ](../../_images/manage/caf-manage.png)
+ _圖1： CAF 管理方法。_
 
 1. [建立管理基準](../../manage/azure-server-management/index.md)：管理基準會建立作業管理的基礎。 第一個步驟底下的指引可套用至任何登陸區域，以改善初始作業。
 2. [定義商務承諾](../../manage/considerations/business-alignment.md)：瞭解登陸區域內每個工作負載的重要性和影響，將會建立「完成定義」，以供任何登陸區域進行任何持續的管理改進。 此程式也會識別每個工作負載的可靠性、效能和作業需求。
@@ -49,7 +50,8 @@ ms.locfileid: "85075064"
 
 開始任何安全性改進之前，請務必瞭解「完成定義」和所有「接受條件」。 如需詳細資訊，請參閱在 Azure 中進行登陸區域和[測試導向開發](./azure-test-driven-development.md)的[測試導向開發](./test-driven-development.md)文章。
 
-![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
+![雲端登陸區域的測試導向開發程式 ](../../_images/ready/test-driven-development-process.png)
+ _圖2：雲端登陸區域的測試導向開發流程。_
 
 ## <a name="next-steps"></a>後續步驟
 

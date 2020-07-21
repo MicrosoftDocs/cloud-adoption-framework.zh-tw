@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 339de4106b9e31576b4f6986ac1f766972b8f0de
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: c4a3c3b7f093f226895bccede7efcfdba94cd002
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993125"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479342"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -53,10 +53,10 @@ Azure_訂_用帳戶類似于資源群組，因為它是將資源群組及其資�
 
 下圖顯示三個用戶端： [PowerShell](https://docs.microsoft.com/powershell/azure/overview)、 [Azure 入口網站](https://portal.azure.com)和[Azure CLI](https://docs.microsoft.com/cli/azure)：
 
-![連接到 Azure Resource Manager API 的 Azure 用戶端圖 ](../../_images/govern/design/governance-1-13.png)
- _5： azure 用戶端會連線至 AZURE RESOURCE MANAGER RESTful api。_
+![連線到 Resource Manager 的 Azure 用戶端圖表 REST API ](../../_images/govern/design/governance-1-13.png)
+ _圖5： azure 用戶端會連接到 Resource Manager REST API。_
 
-雖然這些用戶端會使用 RESTful API 連線到 Azure Resource Manager，但 Azure Resource Manager 不包含直接管理資源的功能。 相反地，Azure 中的大多數資源類型都有自己的[資源提供者](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology)。
+雖然這些用戶端會使用 REST API 連接到 Resource Manager，但 Resource Manager 不包含直接管理資源的功能。 相反地，Azure 中的大多數資源類型都有自己的[資源提供者](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology)。
 
 ![Azure 資源提供者 ](../../_images/govern/design/governance-1-14.png)
  _圖6： azure 資源提供者。_

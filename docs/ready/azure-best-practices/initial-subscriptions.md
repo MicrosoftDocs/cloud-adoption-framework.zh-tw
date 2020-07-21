@@ -1,18 +1,18 @@
 ---
 title: 建立您的初始 Azure 訂用帳戶
-description: 藉由建立您的初始訂用帳戶，開始使用 Azure。
+description: 建立您的初始訂用帳戶，開始使用 Azure。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a1b1838617c9d82c4e8cca239aa4abc9d853f3c
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 1e5105a9296ec3059c979bb0a7adc3b46aa99998
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799954"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479920"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>建立您的初始 Azure 訂用帳戶
 
@@ -25,7 +25,8 @@ ms.locfileid: "84799954"
 - 建立一個包含生產工作負載的 Azure 訂用帳戶。
 - 使用[Azure 開發/測試供應](https://azure.microsoft.com/pricing/dev-test)專案來建立第二個訂用帳戶做為非生產（開發/測試）環境，以獲得較低的價格。
 
-![初始訂用帳戶模型，會在標示為「生產」和「非生產」的方塊旁顯示金鑰](../../_images/ready/initial-subscription-model.png)
+![初始訂用帳戶模型，顯示標示為「生產」和「非生產」的方塊旁的索引鍵 [ ](../../_images/ready/initial-subscription-model.png)
+ _圖 1]：在標示為「生產」和「非生產」的方塊旁邊具有索引鍵的初始訂用帳戶模型。_
 
 <!-- docsTest:ignore Dev/Test -->
 
@@ -42,13 +43,15 @@ ms.locfileid: "84799954"
 
 如果創新目標是雲端採用策略的一部分，請考慮建立一或多個沙箱訂閱。 您可以套用安全性原則，讓這些測試訂閱與您的生產和非生產環境隔離。 使用者可以在這些隔離的環境中，輕鬆地試驗 Azure 功能。 使用 Azure 開發/測試供應專案來建立這些訂用帳戶。
 
-![初始訂用帳戶模型，顯示標示為「生產」、「非生產」和「沙箱」之方塊旁的索引鍵](../../_images/ready/initial-subscription-model-with-sandboxes.png)
+![初始訂用帳戶模型會在標示為「生產」、「非生產」和「沙箱」的方塊旁顯示索引鍵 ](../../_images/ready/initial-subscription-model-with-sandboxes.png)
+ _。圖2：具有沙箱訂閱的訂用帳戶模型。_
 
 ## <a name="shared-services-subscription"></a>共用服務訂用帳戶
 
 如果您打算在**24 個月內裝載超過1000個 vm 或計算實例在雲端中**，請建立另一個 Azure 訂用帳戶來裝載共用服務。 這會讓您能夠支援您的最終狀態企業架構。
 
-![初始訂用帳戶模型，會在標示為「生產」和「共用服務」的方塊旁顯示金鑰](../../_images/ready/initial-subscription-model-with-shared-services.png)
+![初始訂用帳戶模型，會在標示為「生產」和「共用服務」的方塊旁顯示金鑰 [ ](../../_images/ready/initial-subscription-model-with-shared-services.png)
+ _圖 3]：具有共用服務的訂用帳戶模型。_
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,5 +1,5 @@
 ---
-title: 技能整備程度路徑
+title: 移轉旅程準備階段期間的技能整備程度路徑
 description: 使用適用于 Azure 的雲端採用架構，學習如何打造完成遷移旅程所需的技能。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0e89b1f19770e9a0f4225704287593447dc63305
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: dc08d48310b2b574f66c82d6cf14a19de34ce3a6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195151"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478131"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -20,10 +20,10 @@ ms.locfileid: "86195151"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
-根據與雲端採用工作相關聯的動機和商務成果而定，可能需要領導人，才能建立新的組織結構或虛擬小組 (v 小組) 以加速各種功能。 下列文章可協助您開發必要技能，以根據所需的結果來結構化這些小組：
+根據與雲端採用工作相關聯的動機和業務成果，可能需要領導人，才能建立新的組織結構或虛擬小組來加速各種功能。 下列文章可協助您開發必要技能，以根據所需的結果來結構化這些小組：
 
 - [初始組織的對齊方式](./index.md)：概述組織對齊和各種小組結構，以加速特定目標。
-- [細分接收器和 fiefdoms](../organize/fiefdoms-silos.md)：瞭解兩個常見的組織反模式，以及引導小組進行生產力共同作業的方式。
+- [細分接收器和 fiefdoms](../organize/fiefdoms-silos.md)：瞭解兩個常見的組織反向模式和方法，以引導小組進行具生產力的共同作業。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
 
@@ -37,7 +37,7 @@ ms.locfileid: "86195151"
 - [建立 VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)：使用 Azure 入口網站建立虛擬機器。
 - [Azure 網路](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)功能：瞭解 azure 網路功能的一些基本概念，以及 azure 網路功能如何協助提升復原能力並降低延遲。
 - [Azure 計算選項](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
-- [使用角色型存取控制 (rbac) 保護資源](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用 rbac 來保護資源。
+- 使用[角色型存取控制（RBAC）保護資源安全](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)：使用 RBAC 來保護資源。
 - [資料儲存體選項](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)： Azure 資料儲存體的優點。
 
 在準備階段期間，我們會需要架構設計人員來建構跨越所有 Azure 環境的解決方案。 下列技能建立資源可協助您準備這些工作的架構：
@@ -72,7 +72,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [將資料儲存在 azure 中](https://docs.microsoft.com/learn/paths/store-data-in-azure)： azure 提供各種儲存資料的方式：非結構化、封存、關聯式等等。 瞭解 Azure 中的儲存體管理的基本概念、如何建立儲存體帳戶，以及如何為您要儲存在雲端中的資料選擇正確的模型。
 
-[在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查每個良好架構中的核心原則，在 azure 中設計及建立安全、可擴充且高效能的解決方案。
+[在 azure 中架構絕佳解決方案](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure)：瞭解如何藉由檢查音效架構中的核心原則，在 azure 中設計及建立安全、可調整且高效能的解決方案。
 
 ## <a name="learn-more"></a>深入了解
 

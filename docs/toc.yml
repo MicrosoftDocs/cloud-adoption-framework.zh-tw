@@ -63,6 +63,10 @@ items:
         items:
           - name: 概觀
             href: strategy/business-outcomes/index.md
+          - name: 資料創新
+            href: strategy/business-outcomes/data-innovations.md
+          - name: 資料民主化
+            href: strategy/business-outcomes/data-democratization.md
           - name: 會計成果
             href: strategy/business-outcomes/fiscal-outcomes.md
           - name: 靈活度成果
@@ -101,6 +105,8 @@ items:
             href: strategy/define-security-strategy.md
           - name: 定義監視策略
             href: strategy/monitoring-strategy.md
+          - name: 負責任的 AI
+            href: strategy/responsible-ai.md
       - name: 與策略相關的技能
         href: strategy/suggested-skills.md
   - name: 計畫
@@ -151,6 +157,8 @@ items:
         items:
           - name: Azure 中的數位資產評量
             href: plan/contoso-migration-assessment.md
+          - name: 規劃資料倉儲移轉
+            href: plan/data-warehouse-migration.md
   - name: 就緒
     items:
       - name: 概觀
@@ -350,6 +358,8 @@ items:
           - name: 移轉案例
             items:
               - name: 概觀
+                href: scenarios/index.md
+              - name: Contoso 概觀
                 href: migrate/azure-best-practices/contoso-migration-overview.md
               - name: Windows Server 工作負載
                 items:
@@ -491,6 +501,22 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 VMWare SRM 將 CloudSimple 私人雲端設定為災害復原網站
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Windows 虛擬桌面
+                items:
+                  - name: 概觀
+                    href: scenarios/wvd/index.md
+                  - name: 規劃
+                    href: scenarios/wvd/plan.md
+                  - name: Azure 登陸區域檢閱
+                    href: scenarios/wvd/ready.md
+                  - name: 概念證明
+                    href: scenarios/wvd/proof-of-concept.md
+                  - name: 評定
+                    href: scenarios/wvd/migrate-assess.md
+                  - name: 遷移 (或部署)
+                    href: scenarios/wvd/migrate-deploy.md
+                  - name: 版本
+                    href: scenarios/wvd/migrate-release.md
               - name: 資料平台
                 items:
                   - name: 概觀
@@ -575,6 +601,30 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 在線上將 Oracle 遷移至適用於 PostgreSQL 的 Azure 資料庫
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure Stack
+                items:
+                  - name: 概觀
+                    href: scenarios/azure-stack/index.md
+                  - name: 規劃
+                    href: scenarios/azure-stack/plan.md
+                  - name: Azure 登陸區域檢閱
+                    href: scenarios/azure-stack/ready.md
+                  - name: 評定
+                    href: scenarios/azure-stack/migrate-assess.md
+                  - name: 遷移 (或部署)
+                    href: scenarios/azure-stack/migrate-deploy.md
+                  - name: 治理
+                    href: scenarios/azure-stack/govern.md
+              - name: Analytics 解決方案
+                items:
+                  - name: 概觀
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-overview.md
+                  - name: Teradata
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-teradata.md
+                  - name: Netezza
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-netezza.md
+                  - name: Exadata
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-exadata.md
               - name: 大型主機
                 items:
                   - name: 概觀
@@ -627,6 +677,10 @@ items:
                 href: migrate/azure-best-practices/migrate-best-practices-costs.md
               - name: 調整移轉規模
                 href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: 結構描述移轉資料定義語言
+                href: migrate/azure-best-practices/analytics/schema-migration-ddl.md
+              - name: Azure Synapse 的高可用性
+                href: migrate/azure-best-practices/analytics/azure-synapse.md
               - name: 治理或合規性
                 href: migrate/azure-best-practices/governance-or-compliance.md
           - name: 流程改善
@@ -719,13 +773,13 @@ items:
                 href: innovate/innovation-guide/ci-cd.md
               - name: 透過裝置來互動
                 href: innovate/innovation-guide/devices.md
-              - name: 預測和影響
+              - name: 使用 AI 來創新
                 href: innovate/innovation-guide/predict.md
           - name: 創新案例
             items:
               - name: Kubernetes
                 items:
-                  - name: 創新案例概觀
+                  - name: 使用 Kubernetes 來創新
                     href: innovate/kubernetes/index.md
                   - name: 應用程式開發與部署
                     href: innovate/kubernetes/application-development.md
@@ -733,6 +787,16 @@ items:
                     href: innovate/kubernetes/cluster-design-operations.md
                   - name: 叢集和應用程式安全性
                     href: innovate/kubernetes/cluster-application-security.md
+              - name: 人工智慧 (AI)
+                items:
+                  - name: 使用 AI 來創新
+                    href: innovate/ai/index.md
+                  - name: 機器學習服務
+                    href: innovate/ai/machine-learning.md
+                  - name: AI 應用程式和代理程式
+                    href: innovate/ai/ai-applications.md
+                  - name: 知識採礦
+                    href: innovate/ai/knowledge-mining.md
           - name: 最佳作法
             items:
               - name: 概觀和 Azure 工具鏈
@@ -901,6 +965,8 @@ items:
                     items:
                       - name: 使用 Azure Pipelines 和 GitHub 的持續整合
                         href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration'
+                      - name: 使用 Azure Machine Learning 的 MLOps
+                        href: manage/mlops-machine-learning.md
                   - name: 可靠的測試
                     items:
                       - name: 管理和追蹤測試計劃
@@ -979,30 +1045,30 @@ items:
                         href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 適用於雲端到裝置通訊的 Azure IoT 設定
                         href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: 預測和影響
+              - name: 使用 AI 來創新
                 items:
                   - name: 概觀
                     href: innovate/best-practices/predict.md
-                  - name: 模式
+                  - name: 機器學習服務
                     items:
+                      - name: 什麼是 Machine Learning
+                        href: innovate\best-practices\machine-learning.md
                       - name: Azure Machine Learning 工作流程
                         href: 'https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: HDInsight 解決方案中的 ScaleR
-                        href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 使用 Azure Machine Learning 分析資料
                         href: 'https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 預測
+                  - name: AI 應用程式和代理程式
                     items:
+                      - name: 什麼是 AI 應用程式
+                        href: innovate\best-practices\ai-applications.md
+                      - name: 什麼是 AI 代理程式
+                        href: innovate\best-practices\conversational-ai.md
                       - name: 部署預測
                         href: 'https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 設定 HDInsight 叢集
-                        href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 互動
+                  - name: 知識採礦
                     items:
-                      - name: 從實驗到操作服務的 Azure Machine Learning
-                        href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: 在 Azure HDInsight 上運作 ML 服務
-                        href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: 什麼是 Azure 認知搜尋
+                        href: innovate\best-practices\cognitive-search.md
           - name: 流程改善
             items:
               - name: 概觀
@@ -1355,6 +1421,8 @@ items:
             href: organize/cloud-platform.md
           - name: 雲端自動化功能
             href: organize/cloud-automation.md
+          - name: 雲端資料功能
+            href: organize/cloud-data.md
           - name: 雲端安全性功能
             items:
               - name: 雲端安全性小組功能

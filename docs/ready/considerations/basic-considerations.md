@@ -7,18 +7,19 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de6299dd2dc7c8623137d77576ae681306abe375
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 335c323ce5669d82c5751a0ee58867b3c792b3fd
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077055"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479752"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
 登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」__ 一詞指的是已佈建並準備好在雲端環境 (例如 Azure) 中裝載工作負載的環境。 完全運作的登陸區域是最終交付項目，由雲端採用架構備妥方法的任何反覆項目組成。
 
-![登陸區域考量](../../_images/ready/landing-zone-considerations.png)
+![登陸區域考慮 ](../../_images/ready/landing-zone-considerations.png)
+ _圖1：登陸區域考慮。_
 
 此圖顯示用於實作任何登陸區域部署的主要考量。 這些考量可分成三種類別或類型的考量：裝載、Azure 基礎和治理。
 
@@ -35,12 +36,12 @@ ms.locfileid: "85077055"
 
 每個登陸區域都是更廣泛解決方案的一部分，而此解決方案用於組織整個雲端環境中的資源。 Azure 基礎是組織的基本建置區塊。
 
-- [Azure 基本概念](./fundamental-concepts.md)：瞭解在 azure 中用來組織資源的基本概念和詞彙，以及這些概念彼此之間的關聯性。
+- [Azure 基本概念](./fundamental-concepts.md)：瞭解用來在 Azure 中組織資源的基本概念和詞彙，以及這些概念彼此之間的關聯性。
 - [資源一致性決策指南](../../decision-guides/resource-consistency/index.md)：當您瞭解每個基本概念時，資源組織決策指南可協助您做出決定，以塑造登陸區域。
 
 ## <a name="governance-considerations"></a>治理考量
 
-雲端採用架構的治理方法會建立一個治理整個環境的程序。 但有許多使用案例可能會要求您在每個登陸區域進行治理決策。 在許多情況下，系統會根據每個登陸區域強制執行治理基準，即使基準已建立全面性地也是一樣。 這適用於組織部署的前幾個登陸區域。
+雲端採用架構的治理方法會建立一個治理整個環境的程序。 許多使用案例可能會要求您針對每個登陸區域做出治理決策。 在許多情況下，系統會根據每個登陸區域來強制執行治理基準，即使基準已建立全面性地也是一樣。 這適用於組織部署的前幾個登陸區域。
 
 下列文章可協助您對登陸區域做出治理相關決策。 您可以將每個決策納入治理基準。
 

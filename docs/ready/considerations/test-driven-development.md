@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5c0fae34ec4f65c3d91ff4da23d8c4aeb2dc6c87
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 5dca866a7d948caa59bba7981fc3569f7a10f47d
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450844"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479515"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 
@@ -55,7 +55,7 @@ ms.locfileid: "86450844"
 - 網路分割以配合建議的網路設計。
 - 存取計算、儲存體和網路資源，以裝載與數位資產探索一致的工作負載。
 - 命名和標記架構以方便使用。
-- 此環境應該被視為可存取公用網際網路的非_軍事區域（DMZ）_ 。
+- 此環境應視為可存取公用網際網路的周邊網路。
 - 在採用過程中，雲端採用小組會想要暫時存取環境來變更服務設定。
 - 僅針對認知：在生產環境版本之前，這些工作負載需要與公司識別提供者整合，以控制作業管理用途的持續身分識別和存取。 在這段時間，應撤銷雲端採用小組的存取權。
 

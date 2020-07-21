@@ -7,20 +7,20 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0e9115387360b46015114d6069fcedb9afb43d58
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: cf0c2477375d6d59f6a0eefc7711f51c2512f99e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799648"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479886"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
-如果您只有幾個訂用帳戶，獨立管理這些訂用帳戶相當簡單。 但如果您有許多訂用帳戶，請建立管理群組階層，以協助管理您的訂用帳戶和資源。
+如果您只有幾個訂用帳戶，則獨立管理這些訂閱相當簡單。 不過，如果您有許多訂用帳戶，請建立管理群組階層，以協助管理您的訂用帳戶和資源。
 
 ## <a name="azure-management-groups"></a>Azure 管理群組
 
-Azure 管理群組可以有效率地管理組織訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
+Azure 管理群組可協助您有效率地管理訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
 
 管理群組會以單一階層的方式排列。 您會在 Azure Active Directory （Azure AD）租使用者中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」__。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
 
@@ -38,7 +38,8 @@ Azure 提供四個層級的管理範圍：
 
 此繼承模型可讓您在階層中排列訂閱，讓每個訂用帳戶都遵循適當的原則和安全性控制項。
 
-![用來組織 Azure 資源的四個範圍層級](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
+![組織您的 Azure 資源的四個範圍層級 ](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
+ _圖1：用來組織 Azure 資源的四個範圍層級。_
 
 根管理群組上的任何存取權或原則指派，都會套用至目錄中的所有資源。 請仔細考慮要在此範圍上定義的項目。 這應該僅包含您必須擁有的指派。
 
@@ -50,14 +51,16 @@ Azure 提供四個層級的管理範圍：
 
 如果您想要讓 Azure 環境成長，您應該立即建立生產和非生產的管理群組，並在管理群組層級套用適當的原則和存取控制。 新的訂閱將會在新增至每個管理群組時，繼承適當的控制項。
 
-![管理群組階層的範例](../../_images/ready/management-group-hierarchy-v2.png)
+![管理群組階層的範例 ](../../_images/ready/management-group-hierarchy-v2.png)
+ _圖2：管理群組階層的範例。_
 
 ## <a name="example-use-cases"></a>使用案例範例
 
 使用管理群組來區隔不同工作負載的一些基本範例包括：
 
-- **生產與非生產工作負載：** 使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，非生產訂用帳戶可能會授與開發人員參與者存取權，而在生產開發人員中只有讀者存取權。
-- **內部服務與外部服務：** 企業通常會有不同的需求、原則和角色來提供內部服務與外部客戶面向的服務。
+**生產與非生產工作負載：** 使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，開發人員在非生產訂用帳戶中可能有參與者存取權，但只有非生產訂用帳戶中的讀者存取權。
+
+**內部服務與外部服務：** 企業通常會有不同的需求、原則和角色來提供內部服務與外部客戶面向的服務。
 
 ## <a name="related-resources"></a>相關資源
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 832c37753393d9c8230ae42f8dbb3cabe7d8e46d
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6b0aebc9c565cb60a83d5b4b0cfc3054d79b7ed1
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449331"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478832"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "86449331"
 
 ## <a name="reduce-friction-that-affects-adoption"></a>減少影響採用的摩擦
 
-有幾個重要的難題，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，將會很熟悉下列各項。 本文為雲端採用小組建立燃料創新和意見反應迴圈的起點。 在未來，此起點可能會促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
+幾個重要的難題是採用，可以透過技術和程式的組合來最小化。 對於具有持續整合（CI）和持續部署（CD）或 DevOps 流程知識的讀者，將會很熟悉下列各項。 本文為雲端採用小組建立燃料創新和意見反應迴圈的起點。 在未來，此起點可能會促進更強大的 CI/CD 或 DevOps 方法，因為產品和團隊成熟。
 
 如[對客戶影響的測量](./measure.md)中所述，任何假設的正面驗證都需要反復專案和判斷。 在任何創新週期中，您會遇到比 wins 更多的失敗。 這是預期行為。 不過，當客戶需要、假設及解決方案的規模調整時，世界會快速變更。 這篇文章的目標是要將速度變慢的[技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes)降到最低，但仍可確保您保留一些穩固的最佳作法。 這麼做可協助團隊設計未來的成功，同時提供目前的客戶需求。
 
@@ -63,7 +63,7 @@ ms.locfileid: "86449331"
 
 在持續整合中，程式碼變更經常會合並到主要分支中。 自動化的組建和測試程式可確保主要分支中的程式碼一律具有生產品質。 這可確保開發人員共同作業，以開發提供精確且可靠的意見反應迴圈的共用解決方案。
 
-Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)只要 GitHub 或各種其他存放庫中的幾個步驟，就能提供持續整合功能。 深入瞭解[持續整合](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)或查看[實際操作實驗室](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)。 另外還有解決方案架構，可透過 Azure DevOps 加速建立[CI/CD 管線](https://azure.microsoft.com/solutions/devops)。
+Azure DevOps 和[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines)只要 GitHub 或各種其他存放庫中的幾個步驟，就能提供持續整合功能。 深入瞭解[持續整合](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)，或如需詳細資訊，請參閱[實際操作實驗室](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)。 解決方案架構可讓您透過 Azure DevOps 加速建立[CI/CD 管線](https://azure.microsoft.com/solutions/devops)。
 
 ## <a name="reliable-testing"></a>可靠的測試
 

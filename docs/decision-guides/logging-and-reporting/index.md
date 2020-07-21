@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 05498e7e1163f627b33f1a555aa3870e4bebd868
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193927"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450708"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -59,7 +59,7 @@ ms.locfileid: "86193927"
 
 這個方法會運用您在監控工具上的現有投資，對任何雲端部署的應用程序或服務進行有限的修改。 這通常是進行隨即移轉時支援監視的最快方法。 但是這不會擷取雲端 PaaS 和 SaaS 資源製造的記錄資料，而且將會省略雲端平台產生的任何 VM 相關記錄，例如 VM 狀態。 因此應將此模式視為實作更完善混合式監視解決方案之前的暫時性解決方案。
 
-僅限內部部署假設事項：
+僅限內部部署的假設：
 
 - 您只需要在內部部署環境中維護記錄資料 (基於支援技術需求或法規或原則需求)。
 - 您的內務部署系統不支援混合式記錄和報告或閘道彙總解決方案。

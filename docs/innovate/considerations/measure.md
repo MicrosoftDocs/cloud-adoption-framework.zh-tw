@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 65b53af30b1e6496714e54e7f114e2f34ebf6641
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b3191d766be3996192bf1f970a11ca8d71d2a633
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449161"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478679"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 
@@ -75,7 +75,5 @@ ms.locfileid: "86449161"
 
 > [!div class="nextstepaction"]
 > [向客戶學習](./learn.md)
-
-<!-- cSpell:ignore Eric Ries -->
 
 這篇文章中的一些概念，是根據 Eric Ries 所撰寫[的精簡啟動](http://theleanstartup.com/book)中所述的主題來建立。
