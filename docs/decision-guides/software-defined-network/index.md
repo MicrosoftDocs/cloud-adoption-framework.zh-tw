@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7ca89c067d821013be07ebb6814c49e330505946
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215155"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478050"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -54,7 +54,7 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 - **[僅限 PaaS](./paas-only.md)：** 大部分的平台即服務 (PaaS) 產品支援有所限制的內建網路功能組合，而且可能不需要明確定義的軟體定義網路來支援工作負載需求。
 - **[雲端原生](./cloud-native.md)：** 雲端原生架構使用建置於雲端平台預設軟體定義網路功能，且不需要依賴內部部署或其他外部資源的虛擬網路，來支援雲端式工作負載。
-- **[雲端 DMZ](./cloud-dmz.md)：** 支援您的內部部署與雲端網路之間有限制的連線，並透過實作非軍事區域以緊密控制兩個環境之間的流量來保護連線安全。
+- **[雲端 DMZ](./cloud-dmz.md)：** 支援您的內部部署與雲端網路之間有限制的連線，並透過實作周邊網路以緊密控制兩個環境之間的流量來保護連線安全。
 - **[混合式](./hybrid.md)：** 混合式雲端網路架構可允許信任的雲端環境中的虛擬網路存取您的內部部署資源，反之亦然。
 - **[中樞與輪幅](./hub-spoke.md)：** 中樞與輪輻架構可讓您集中管理外部連線能力與共用服務、隔離個別工作負載，以及克服潛在的訂用帳戶限制。
 

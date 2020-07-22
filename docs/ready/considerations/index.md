@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbda37f60f3766062733e8dedfb0d8bd7969066f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 6287cb0f1ea73032728c9394f2d1f74fcc81409a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787447"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479650"
 ---
 # <a name="expand-your-landing-zone"></a>擴充登陸區域
 
@@ -22,7 +22,8 @@ ms.locfileid: "84787447"
 
 擴充登陸區域可提供程式碼優先方法，將下列原則內嵌到登陸區域中，以及更廣泛地內嵌到整體雲端環境中。
 
-![共用架構原則](../../_images/ready/shared-principles.png)
+![共用架構準則](../../_images/ready/shared-principles.png)
+_圖1：共用架構準則。_
 
 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 和 [Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案均共用這些相同的架構原則。
 

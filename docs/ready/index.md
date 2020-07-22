@@ -7,16 +7,16 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e273edfe148953f6d8be4f8a2f9706d58294903
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 078f1c97b3ecf9e0ca3901f811a74cde9806bc50
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813358"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479461"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>確定已對雲端採用方案準備好環境
 
-在採用可以開始之前，您必須建立一個登陸區域，以裝載您計劃在雲端中建置或移轉至雲端的工作負載。 本架構一節引導您建立登陸區域。
+在採用可以開始之前，您必須建立一個登陸區域，以裝載您計劃建置或移轉至雲端的工作負載。 本架構一節引導您建立登陸區域的方式。
 
 下列練習將協助引導您完成建立登陸區域以支援雲端採用的程序。
 
