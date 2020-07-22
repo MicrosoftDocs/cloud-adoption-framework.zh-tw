@@ -1,5 +1,5 @@
 ---
-title: Azure 治理、安全性及合規性
+title: Azure 中的控管、安全性和合規性
 description: 使用適用於 Azure 的雲端採用架構，了解如何設定 Azure 環境的控管、安全性和合規性。
 author: tvuylsteke
 ms.author: kfollis
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3725963273a870cb753f3c939fbf69f5f8dc36b6
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 0aaa503df3394faa51ec24eeec054ae7ffaac4a8
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373079"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450759"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
