@@ -9,22 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1ea314a40af6ce271a3563773acce783ac956201
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: c54ae037cef0486f27a4a7fc441e643a1678dd03
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373300"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478560"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
-# <a name="engage-customers-through-apps"></a>透過應用程式與客戶互動
+# <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
 
 透過應用程式來創新包含兩個步驟，分別是將裝載於內部部署環境的現有應用程式現代化，以及使用容器或無伺服器技術建置雲端原生應用程式。 Azure 提供了 PaaS 服務 (例如，Azure App Service)，協助您輕鬆地將以 .NET、.NET Core、Java、Node.js、Ruby、Python 或 PHP 撰寫的現有 Web 和 API 應用程式現代化，以便部署到 Azure 中。
 
 透過擁有開放標準的容器模型，只要使用 Azure Kubernetes Service、Azure 容器執行個體和用於容器的 Web App 等受控服務，就能很容易地建置微服務或將現有應用程式容器化，並將這些項目部署到 Azure 上。 無伺服器技術 (例如 Azure Functions 和 Azure Logic Apps) 會利用使用量模型 (用多少付多少) 協助您專注於建置應用程式，而不必部署和管理基礎結構。
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="deliver-value-faster"></a>[更快地帶來價值](#tab/DeliverValueFaster)
 
@@ -41,8 +39,8 @@ Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP �
 若要設定或監視 Azure App Service 部署：
 
 1. 移至 [應用程式服務]。
-2. 設定新的服務：選取 [新增] 並依照提示執行。
-3. 管理現有服務：從裝載的應用程式清單中選取所需應用程式。
+2. 設定新服務：選取 [新增]，然後遵循提示進行。
+3. 管理現有的服務：從裝載應用程式清單中選取所需的應用程式。
 
 ::: zone target="chromeless"
 
@@ -65,8 +63,8 @@ Azure App Service 可為 ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP �
 若要設定或監視 Azure 認知服務部署：
 
 1. 移至 [認知服務]。
-2. 設定新的服務：選取 [新增] 並依照提示執行。
-3. 管理現有服務：從裝載的服務清單中選取所需服務。
+2. 設定新服務：選取 [新增]，然後遵循提示進行。
+3. 管理現有的服務：從裝載的服務清單中選取所需服務。
 
 ::: zone target="chromeless"
 
@@ -87,8 +85,8 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 若要設定或監視 Azure Bot Service 部署：
 
 1. 移至 [Bot Service]。
-2. 設定新的服務：選取 [新增] 並依照提示執行。
-3. 管理現有服務：從裝載的服務清單中選取所需 Bot。
+2. 設定新服務：選取 [新增]，然後遵循提示進行。
+3. 管理現有的服務：從裝載的服務清單中選取所需 Bot。
 
 ::: zone target="chromeless"
 
@@ -108,7 +106,7 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供了這樣的地方，讓您可以在 iOS、Android、Windows 和 macOS 上測試應用程式，還提供監視平台，讓您得以輕鬆快速地運用 Azure Application Insights 來分析遙測資料。 如需詳細資訊，請參閱 [Visual Studio App Center](https://docs.microsoft.com/appcenter)。
 
-Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能使用單一呼叫來對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)。
+Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)。
 
 ### <a name="learn-more"></a>深入了解
 
@@ -123,7 +121,7 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 - [Azure SDK for Go 文件](https://docs.microsoft.com/azure/go)
 - [DevOps 解決方案](https://azure.microsoft.com/solutions/devops)
 
-## <a name="create-cloud-native-apps"></a>[建立雲端原生的應用程式](#tab/CloudNative)
+## <a name="create-cloud-native-applications"></a>[建立雲端原生應用程式](#tab/CloudNative)
 
 ### <a name="what-are-cloud-native-applications"></a>什麼是雲端原生應用程式？
 
@@ -152,8 +150,8 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 若要設定或監視 AKS 服務：
 
 1. 移至 **Azure Kubernetes Service**。
-2. 設定新的服務：選取 [新增] 並依照提示執行。
-3. 管理現有服務：從清單中選取所需的 Kubernetes Service。
+2. 設定新服務：選取 [新增]，然後遵循提示進行。
+3. 管理現有的服務：從清單中選取所需的 Kubernetes 服務。
 
 ::: zone target="chromeless"
 
@@ -179,7 +177,7 @@ Azure Functions 會提供平台供您在雲端中執行小段程式碼或函式�
 
 Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript 和 Python。 如需完整清單，請參閱 [Azure Functions 中支援的語言](https://docs.microsoft.com/azure/azure-functions/supported-languages)。
 
-函式的另一個優點是能由不同的動作和事件加以觸發，例如 HTTPTriggers、TimerTriggers，以及來自其他 Azure 服務 (像是 Blob 儲存體、EventGrid 和 ServiceBus) 的觸發程序。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)。
+函式的另一個優點是能由不同的動作和事件加以觸發，例如 HTTP 觸發程序、計時器觸發程序，以及來自其他 Azure 服務 (像是 Blob 儲存體、EventGrid 和 ServiceBus) 的觸發程序。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)。
 
 #### <a name="action"></a>動作
 
@@ -187,7 +185,7 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 
 1. 移至 [函式應用程式]。
 2. 設定新的函數應用程式：選取 [新增] 並依照提示執行。
-3. 管理現有的函數應用程式：從函式應用程式清單中選取所需的應用程式。
+3. 管理現有的函數應用程式：從清單中選取所需的函數應用程式。
 
 ::: zone target="chromeless"
 
@@ -205,7 +203,7 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 
 #### <a name="action"></a>動作
 
-若要設定或監視 Azure 邏輯應用程式：
+若要設定或監視 Azure Logic Apps：
 
 1. 移至 [Logic Apps]。
 2. 設定新的邏輯應用程式：選取 [新增] 並依照提示執行。
@@ -230,8 +228,8 @@ Azure API 管理是完全受控的服務，其使用量模型的設計與實作�
 若要設定或監視 API 管理服務：
 
 1. 移至 [API 管理服務]。
-2. 設定新的服務：選取 [新增] 並依照提示執行。
-3. 管理現有服務：從清單中選取所需的服務。
+2. 設定新服務：選取 [新增]，然後遵循提示進行。
+3. 管理現有的服務：從清單中選取所需的服務。
 
 ::: zone target="chromeless"
 
@@ -249,14 +247,14 @@ Azure API 管理是完全受控的服務，其使用量模型的設計與實作�
 
 ### <a name="containers-azure-container-instances"></a>容器：Azure Container Instances
 
-在受控、無伺服器的 Azure 環境中，視需要執行 Docker 容器。 Azure 容器執行個體是適用於任何可在隔離容器中運作的案例解決方案，而不需要協調流程。 在 Container Instances 中執行您的工作負載時，您可以專注於應用程式的設計與建置，而不必費心管理執行應用程式的基礎結構。
+在受控、無伺服器的 Azure 環境中，視需要執行 Docker 容器。 Azure 容器執行個體是適用於任何可在隔離容器中運作的案例解決方案，而不需要協調流程。 在容器執行個體中執行您的工作負載時，您可以專注於應用程式的設計與建置，而不必費心管理執行應用程式的基礎結構。
 
 #### <a name="action"></a>動作
 
 若要設定或監視容器執行個體：
 
 1. 移至 [容器執行個體]。
-2. 設定新的容器執行個體：選取 [新增] 並依照提示執行。
+2. 設定新的容器執行個體：選取 [新增]，然後遵循提示進行。
 3. 管理現有的容器執行個體：從清單中選取所需的容器執行個體。
 
 ::: zone target="chromeless"
@@ -287,11 +285,11 @@ Azure Front Door 提供了可擴充且安全的進入點，讓您可以在全球
 
 #### <a name="action"></a>動作
 
-若要設定或監視 Front Door：
+若要設定或監視 Front Door 執行個體：
 
 1. 移至 [Front Door]。
-2. 設定新的 Front Door：選取 [新增] 並依照提示執行。
-3. 管理現有 Front Door：從清單中選取所需的 Front Door。
+2. 設定新的 Front Door 執行個體：選取 [新增]，然後遵循提示進行。
+3. 管理現有的 Front Door 執行個體：從清單中選取所需的 Front Door 執行個體。
 
 ::: zone target="chromeless"
 
@@ -312,8 +310,8 @@ Azure Front Door 提供了可擴充且安全的進入點，讓您可以在全球
 若要設定或監視流量管理員設定檔：
 
 1. 移至 [流量管理員設定檔]。
-2. 設定新的設定檔：選取 [新增] 並依照提示執行。
-3. 管理現有設定檔：從清單中選取所需的設定檔。
+2. 設定新的設定檔：選取 [新增]，然後遵循提示進行。
+3. 管理現有的設定檔：從清單中選取所需的設定檔。
 
 ::: zone target="chromeless"
 
@@ -334,8 +332,8 @@ Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接�
 若要設定或監視 Azure CDN 設定檔：
 
 1. 移至 [CDN 設定檔]。
-2. 設定新的設定檔：選取 [新增] 並依照提示執行。
-3. 管理現有設定檔：從清單中選取所需的設定檔。
+2. 設定新的設定檔：選取 [新增]，然後遵循提示進行。
+3. 管理現有的設定檔：從清單中選取所需的設定檔。
 
 ::: zone target="chromeless"
 
@@ -351,4 +349,4 @@ Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接�
 
 - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 - [流量管理員](https://docs.microsoft.com/azure/traffic-manager)
-- [內容傳遞網路](https://docs.microsoft.com/azure/cdn)
+- [Azure 內容傳遞網路](https://docs.microsoft.com/azure/cdn)

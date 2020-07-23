@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6dc3ea82120c89181b6d4d2ecffaccb6d77e99f5
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: e398c486192f2f0606765fadf1079f7b62afe923
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372889"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450793"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -130,7 +130,7 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 1. 選取 [+ 建立資源]，然後在 Marketplace 中搜尋 [Azure 資料庫移轉服務]。
 1. 完成 [建立移轉服務] 精靈，然後選取 [建立]。
 
-服務現已準備就緒，可移轉支援的源資料庫 (例如 SQL Server、MySQL、PostgreSQL 或 MongoDB)。
+服務現已準備就緒，可以將支援的來源資料庫遷移至目標平台，例如 SQL Server、MySQL、PostgreSQL 或 MongoDB。
 
 ::: zone target="chromeless"
 
@@ -270,7 +270,7 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 
 當您移轉至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
-Azure DevOps 提供所有必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)。 如需引導式訓練，請參閱 [Azure DevOps 的 CI/CD - 快速入門](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
+Azure DevOps 提供必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱[快速入門：使用 Azure DevOps 的 CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
 
 ### <a name="suggested-skills"></a>建議的技能
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 4830928bb0b7765ca05a11ceee7c859b2dc2608a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373317"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478628"
 ---
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "86373317"
 - **量化 (測試意見反應)：** 此意見反應會測量我們希望看見的動作。
 - **定性 (客戶意見反應)：** 此意見反應讓我們知道這些計量在客戶心目中所代表的意義。
 
-在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)的文章可協助您開始使用您的存放庫。
+在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式，所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)的文章可協助您開始使用您的存放庫。
 
 下列每個 Azure 工具都會與 GitHub 中裝載的專案整合 (或相容)：
 
@@ -90,7 +90,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -114,7 +114,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="action"></a>動作
 
-Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)。
+Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops)。
 
 ::: zone-end
 
@@ -176,4 +176,4 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 開始建置您的部署管線：
 
 - [建立您的第一個管線](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
-- [GitHub 發行工作](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [`GitHub Release` 工作](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

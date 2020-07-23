@@ -9,20 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ded639348eaee2053d6f02e4179694df7e193b0b
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: c739459e26f83bf5e41f89bb22750632bc7e4afe
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373249"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448991"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
 # <a name="interact-through-devices"></a>透過裝置來互動
 
-透過間歇性連線和感知的邊緣裝置進行創新。 協調數百萬個這類裝置、取得及處理無限資料，並利用日益增加的多重感應、多重裝置體驗。 對於網路邊緣的裝置，Azure 提供了一個架構供您建置沉浸式且有效的商務解決方案。 您可以透過 Azure 和人工智慧 (AI) 技術相結合而實現的通用運算，建置所能想到的各種智慧型應用程式和系統。
+透過間歇性連線和感知的邊緣裝置進行創新。 協調數百萬個這類裝置、取得及處理無限資料，並利用日益增加的多重感應、多重裝置體驗。 對於網路邊緣的裝置，Azure 提供了一個架構供您建置沉浸式且有效的商務解決方案。 您可以透過 Azure 和 AI 技術相結合而實現的通用運算，建置所能想到的各種智慧型應用程式和系統。
 
-Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集和分析資料 (接近其使用者、資料或兩者)。 使用者可以透過高回應性的內容感知應用程式取得即時見解和體驗。 將部分工作負載移至邊緣，這些裝置就能以較少的時間將訊息傳送至雲端，並更快速地回應空間事件。
+Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集和分析資料 (接近其使用者、資料或兩者)。 使用者可以透過高回應性的內容感知應用程式取得即時深入解析和體驗。 將部分工作負載移至邊緣，這些裝置就能以較少的時間將訊息傳送至雲端，並更快速地回應空間事件。
 
 > [!div class="checklist"]
 >
@@ -53,7 +53,7 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 ### <a name="learn-more"></a>深入了解
 
-- [IoT 中心](https://docs.microsoft.com/azure/iot-hub)
+- [Azure IoT 中心](https://docs.microsoft.com/azure/iot-hub)
 - [Azure IoT 中樞裝置佈建服務 (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
@@ -73,7 +73,7 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 <!-- markdownlint-enable DOCSMD001 -->
 
-Azure IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，可實現完全自動的 Just-In-Time 佈建。
+Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服務，可實現完全自動的 Just-In-Time 佈建。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -135,7 +135,7 @@ Azure IoT 中樞裝置佈建服務是 IoT 中樞適用的協助程式服務，�
 
 除了鄰近地點、交通和路線等傳統位置功能以外，Azure 地圖服務還可讓企業建立使用即時位置智慧的解決方案，此即時位置智慧由世界級的行動技術合作夥伴 TomTom 和 Moovit 所提供。 利用地理空間服務，輕鬆將進階定位及執行功能整合到您的應用程式中。
 
-**資料服務預覽：** 上傳並儲存用於空間作業或影像編譯的地理空間資料，以在應用程式中縮短延遲、提升生產力，及實踐新的案例。
+**Azure 地圖服務資料服務 (預覽)：** 上傳並儲存用於空間作業或影像編譯的地理空間資料，以在應用程式中縮短延遲、提升生產力，及實踐新的案例。
 
 **空間作業：** 透過內含常見地理空間數學計算 (例如地理柵欄、最接近點、大圓距離及環域) 的程式庫增強您的定位智慧。
 
@@ -190,10 +190,10 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ### <a name="action"></a>動作
 
-若要使用空間體驗：
+若要使用 Azure Spatial Anchors：
 
-1. 移至 [空間錨點帳戶]。
-2. 選取 [建立空間錨點帳戶]。
+1. 移至 [Spatial Anchors 帳戶]。
+2. 選取 [建立 Spatial Anchors 帳戶]。
 
 <!-- markdownlint-disable DOCSMD001 -->
 

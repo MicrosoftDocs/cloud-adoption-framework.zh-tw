@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 08ce97b44442e172a7111c190279ae6e331556d6
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 7a0ce99165ab62fbf40e36feaf9343f39f984485
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373283"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449028"
 ---
 # <a name="empower-adoption"></a>實現採用
 
-您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 「開發人員」是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
+您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 開發人員是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
 
 ## <a name="generate-value"></a>產生值
 
@@ -43,7 +43,7 @@ ms.locfileid: "86373283"
 ### <a name="build-productively"></a>有效率地打造
 
 Azure 可在以下幾個方面創造機會來協助您有效率地開發：
-  
+
 > [!div class="checklist"]
 >
 > - 藉由協助開發人員提升知識，確保他們能熟習各自的領域並保持下去。
@@ -61,7 +61,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone target="docs"
 
-**請移至[開始使用 Azure DevOps 的文件](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
+**移至 [Azure DevOps 文件](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
 
 ::: zone-end
 
@@ -111,11 +111,13 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 ### <a name="characteristics-of-innovative-applications"></a>創新應用程式的特性
 
-開發人員可透過 Azure，使用標準的現代化應用程式模式來建置雲端原生應用程式。 Azure 會支援並提供開發人員團隊所需的所有建置組塊，讓其得以使用容器、受控資料庫、人工智慧和無伺服器功能來建置應用程式。
+開發人員可透過 Azure，使用標準的現代化應用程式模式來建置雲端原生應用程式。 Azure 會支援並提供開發人員團隊所需的所有建置組塊，讓其得以使用容器、受控資料庫、AI 和無伺服器功能來建置應用程式。
 
 ### <a name="scale-innovation"></a>大規模創新
 
 對於每位企業領導人來說，其優先要務就是激發客戶體驗和企業營運應用程式的創新。 無論您是要建置 Web、行動、IoT 還是混合實境體驗，創新都是組織未來能否成功的關鍵。 為了大規模創新，組織必須專注於以可組合的服務形式，來包裝並傳遞其獨特的商業價值，讓合作夥伴和員工可以輕鬆且有效率地參與共享價值的產生過程。
+
+<!-- docsTest:ignore "spark and scale" -->
 
 Azure 有獨特的供應項目，可協助您在組織中引發大規模創新。 為了推動更多創新，現今的專業開發人員可以建立應用程式和建置組塊，讓組織中的其他專家能夠在可靠的基礎上建置應用程式。 透過 Azure，他們可以取得專家團隊支援的全面安全性，以及獲得深受企業、政府和新創公司信任的主動合規性。
 

@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 19392b3fc1027cec77b0111bcd46d86cd58d33a2
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373112"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450691"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
-# <a name="organize-your-azure-resources"></a>組織 Azure 資源
+# <a name="organize-your-azure-resources-effectively"></a>有效地組織 Azure 資源
 
 組織雲端式資源對於保護、管理和追蹤工作負載相關的成本而言至關重要。 若要組織您的資源，請定義管理群組階層、遵循妥善考慮的命名慣例，並套用資源標記。
 
@@ -28,7 +28,7 @@ ms.locfileid: "86373112"
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 下圖顯示這些層級的關聯性。
 
-   ![管理階層關聯性的圖示](./media/organize-resources/scope-levels.png)
+   ![管理階層關聯性的圖示](./media/organize-resources/scope-levels.png) _圖 1：四個管理範圍層級之間的關聯性。_
 
 - **管理群組：** 這些群組是可協助您針對多個訂用帳戶管理存取、原則及合規性的容器。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。
 - **訂用帳戶：** 訂用帳戶會以邏輯方式關聯使用者帳戶以及這些使用者帳戶所建立的資源。 每個訂用帳戶均有可供建立和使用的資源數量限制或配額。 組織可以使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
@@ -63,7 +63,10 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
 
 1. 請移至[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
-1. 選取 [新增]。
+2. 選取 [新增]。
+
+> [!NOTE]
+> 亦可透過程式設計方式建立訂閱。 如需詳細資訊，請參閱[以程式設計方式建立 Azure 訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)。
 
 #### <a name="create-a-resource-group"></a>建立資源群組
 
@@ -129,9 +132,9 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 良好的命名標準可協助您識別 Azure 入口網站中、帳單陳述式上和自動化指令碼中的資源。 命名策略應該包含業務和營運詳細資料來作為資源名稱的元件：
 
-- 在業務方面，此策略應該確保資源名稱包含識別小組所需的組織資訊。 您可以與負責資源成本的業務擁有者一起使用資源。
+在業務方面，此策略應該確保資源名稱包含識別小組所需的組織資訊。 您可以與負責資源成本的業務擁有者一起使用資源。
 
-- 在營運方面，則應確保名稱包含 IT 小組所需的資訊。 請使用可識別工作負載、應用程式、環境和重要性的詳細資料，以及可用來管理資源的其他實用資訊。
+在營運方面，則應確保名稱包含 IT 小組所需的資訊。 請使用可識別工作負載、應用程式、環境和重要性的詳細資料，以及可用來管理資源的其他實用資訊。
 
 不同的資源類型具有不同的[命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
 

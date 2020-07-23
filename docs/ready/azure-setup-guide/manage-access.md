@@ -1,6 +1,6 @@
 ---
-title: 管理對 Azure 環境的存取
-description: 了解如何透過角色型存取控制 (RBAC) 為 Azure 環境設定存取控制。
+title: 透過角色型存取控制來管理對 Azure 環境的存取
+description: 了解如何透過角色型存取控制為 Azure 環境設定存取控制。
 author: LijuKodicheraJayadevan
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9d1684b7d8dbde2fc507fa41f99c22ebe42ea587
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7b05c894d326a49703b92d71590f0217349bc7fe
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194607"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450912"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -26,7 +26,8 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 在規劃存取控制策略時，授與使用者完成其工作所需的最低權限。 下圖顯示指派 RBAC 的建議模式。
 
-![RBAC 角色的圖示](./media/manage-access/role-examples.png)
+![顯示 RBAC 角色的圖示](./media/manage-access/role-examples.png)
+_圖 1：RBAC 角色。_
 
 在規劃存取控制方法時，建議您與組織中擔任下列角色的人員合作：安全性和合規性、IT 管理和企業架構設計人員。
 
@@ -88,7 +89,7 @@ RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助�
 
 若要深入了解，請參閱：
 
-- [什麼是角色型存取控制 (RBAC)？](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [什麼是角色型存取控制 (Azure RBAC)？](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [雲端採用架構：使用角色型存取控制](../considerations/roles.md)
 
 ::: zone-end

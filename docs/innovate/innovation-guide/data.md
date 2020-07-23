@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98a772a2c20aba6689ec66593bd15571c74cec33
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373266"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449008"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
@@ -44,9 +44,9 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 #### <a name="action"></a>動作
 
-您只能針對每個組織使用一個 Azure 資料目錄。 如果您已為組織建立資料目錄，就無法新增更多目錄。
+您只能針對每個組織使用一個 Azure 資料目錄。 如果您已為組織建立目錄，就無法新增更多目錄。
 
-若要為組織建立 Azure 資料目錄：
+若要為組織建立目錄：
 
 1. 移至 [Azure 資料目錄]。
 2. 選取 [建立]。
@@ -67,12 +67,13 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 > [!div class="checklist"]
 >
-> - 建立 Data Share。
-> - 將資料集新增至 Data Share。
-> - 為 Data Share 啟用同步處理排程。
-> - 將收件者新增至 Data Share。
+> - 建立資料共用。
+> - 將資料集新增至資料共用。
+> - 為資料共用啟用同步處理排程。
+> - 將收件者新增至資料共用。
 
 ::: zone target="docs"
+
 **移至 [Azure Data Share 文件](https://docs.microsoft.com/azure/data-share)**
 
 ::: zone-end
