@@ -8,13 +8,13 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: azure-migrate-seo
-ms.openlocfilehash: fe1b1a484e7f1766e76929204f7c63089aea4913
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.custom: seo-azure-migrate
+ms.openlocfilehash: 4eac016a83a0986d927645ef6330c13e67be03b6
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235240"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115102"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
