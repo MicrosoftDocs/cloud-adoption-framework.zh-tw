@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cdd5e1bcee951d2437183a8514a944c92c075c93
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 4646161d1302a34c623953be5adcc6ad358c400d
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128317"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115043"
 ---
 # <a name="start-with-caf-enterprise-scale-landing-zones"></a>開始使用 CAF 企業級登陸區域
 
