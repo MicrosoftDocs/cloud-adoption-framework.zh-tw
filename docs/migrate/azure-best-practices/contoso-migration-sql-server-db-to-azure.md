@@ -1,5 +1,5 @@
 ---
-title: 將 SQL Server 資料庫移轉至 Azure
+title: 移轉 SQL Server 資料庫到 Azure
 description: 瞭解 Contoso 如何將其內部部署 SQL 資料庫遷移至 Azure。
 author: deltadan
 ms.author: abuck
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44269a67e406abe6f67c2b5e233d4ea676f45163
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: e341378d4d363344a36cfabb3f9b5374262d9e6f
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86198067"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254937"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
-# <a name="migrate-sql-server-databases-to-azure"></a>將 SQL Server 資料庫移轉至 Azure
+# <a name="migrate-sql-server-databases-to-azure"></a>移轉 SQL Server 資料庫到 Azure
 
 本文示範虛構的公司 Contoso 如何評估、規劃並將其各種內部部署 SQL Server 資料庫移轉至 Azure。
 
@@ -57,9 +57,9 @@ Contoso 雲端小組已針對各種不同的遷移，將目標固定在一起。
 
 ## <a name="solution-design"></a>解決方案設計
 
-Contoso 已使用[服務對應](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)功能的[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) ，來執行其數位資產的[遷移評估](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)。
+Contoso 已使用[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)來執行其數位資產的[遷移評估](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)。
 
-評量會導致多個工作負載分散于多個部門。 遷移專案的整體大小將需要完整的專案管理 office (PMO) ，以管理通訊、資源和排程規劃的細節。
+評量會導致多個工作負載分散于多個部門。 遷移專案的整體大小需要完整的專案管理辦公室（PMO），以管理通訊、資源和排程規劃的細節。
 
 ![移轉程序](./media/contoso-migration-sql-server-db-to-azure/migration-process.png)
 
@@ -90,7 +90,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
   - **轉換：** 將來源架構轉換為在目標中工作。
 - 移轉：
   - **遷移：** 將來源架構、來源資料和物件遷移至目標。
-  - **同步處理資料：** 同步處理資料 (以最短的停機時間) 。
+  - **同步處理資料：** 同步資料（最短的停機時間）。
   - 轉換 **：** 將來源剪下至目標。
 - 遷移後：
   - **補救應用程式：** 對您的應用程式進行反復的進行和必要變更。
@@ -100,7 +100,7 @@ Contoso 會透過比較一份優缺點清單，來評估其建議設計。
 
 #### <a name="step-1-discovery"></a>步驟1：探索
 
-Contoso 使用 Azure Migrate 與服務對應來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 使用 Azure Migrate 的服務對應功能，會顯示 Contoso 伺服器、進程、輸入和輸出連線延遲之間的連線，以及其 TCP 連線架構間的埠之間的連接。 只有在安裝[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)和[Microsoft dependency](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) agent 時，才需要 Contoso。
+Contoso 使用 Azure Migrate 來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 也會顯示 Contoso 伺服器、進程、輸入和輸出連線延遲之間的連線，以及其 TCP 連線架構間的埠之間的連接。
 
 Contoso 也會將 Data Migration Assistant 新增至其 Azure Migrate 專案。 藉由選取此工具，他們就能夠評估要遷移至 Azure 的資料庫。
 
@@ -119,7 +119,7 @@ Contoso 也會將 Data Migration Assistant 新增至其 Azure Migrate 專案。 
 
 #### <a name="step-3-database-assessment"></a>步驟3：資料庫評估
 
-探索到每個資料庫工作負載時，會執行 Data Migration Assistant (DMA) 工具來判斷所使用的功能。 DMA 藉由偵測可能影響新版本 SQL Server 或 Azure SQL Database 中資料庫功能的相容性問題，協助 Contoso 評估其資料庫移轉至 Azure。
+當探索到每個資料庫工作負載時，會執行 Data Migration Assistant （DMA）工具來判斷所使用的功能。 DMA 藉由偵測可能影響新版本 SQL Server 或 Azure SQL Database 中資料庫功能的相容性問題，協助 Contoso 評估其資料庫移轉至 Azure。
 
 Contoso 會遵循這些步驟來評估其資料庫，然後將結果資料上傳至 Azure Migrate：
 
@@ -152,11 +152,11 @@ Contoso 使用 DMA 來執行評估，然後直接將資料上傳至 Azure Migrat
 
 | 目標 | 資料庫使用量 | 詳細資料 | 線上移轉 | 離線移轉 | 大小上限 | 移轉指南 |
 | --- | --- | --- | --- | ---| --- | --- |
-| Azure SQL Database (PaaS) | 僅 SQL Server (資料)  | 這些資料庫只是使用基本資料表、資料行、預存程式和函數 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)，[異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、 [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [連結](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
-| Azure SQL 受控執行個體 | SQL Server (先進的功能)  | 這些資料庫會使用觸發程式和其他[先進的概念](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker)，例如自訂 .net 類型、服務代理程式等等。 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)，[異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、 [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)、[原生備份/還原](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB-8 TiB | [連結](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
-| Azure 虛擬機器 (IaaS) 上的 SQL Server | SQL Server (協力廠商整合)  | SQL Server 必須具有[不支援的 SQL 受控執行個體功能](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (跨實例服務代理程式、密碼編譯提供者、緩衝集區、100以下的相容性層級、資料庫鏡像、FILESTREAM、PolyBase、需要存取檔案共用的任何專案、外部腳本、擴充預存程式，以及其他) 或安裝的協力廠商軟體，以支援資料庫的活動。 | [異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)， [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)，[快照](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication)式複寫，[原生備份/還原](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore)，將實體機器轉換成 VM | 4 GiB-64 TiB | [連結](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
+| Azure SQL Database (PaaS) | SQL Server （僅限資料） | 這些資料庫只是使用基本資料表、資料行、預存程式和函數 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)，[異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、 [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [連結](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
+| Azure SQL 受控執行個體 | SQL Server （advanced 功能） | 這些資料庫會使用觸發程式和其他[先進的概念](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker)，例如自訂 .net 類型、服務代理程式等等。 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)，[異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、 [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)、[原生備份/還原](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB-8 TiB | [連結](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
+| Azure 虛擬機器（IaaS）上的 SQL Server | SQL Server （協力廠商整合） | SQL Server 必須有[不支援的 SQL 受控執行個體功能](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker)（跨實例服務代理人、密碼編譯提供者、緩衝集區、100以下的相容性層級、資料庫鏡像、FILESTREAM、PolyBase、需要存取檔案共用、外部腳本、擴充預存程式及其他專案的任何專案）或安裝的協力廠商軟體，以支援資料庫的活動。 | [異動複寫](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)， [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)，[快照](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication)式複寫，[原生備份/還原](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore)，將實體機器轉換成 VM | 4 GiB-64 TiB | [連結](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
 
-由於資料庫數量龐大，Contoso 建立了專案管理 office (PMO) 來追蹤每個資料庫移轉實例。 [責任與責任](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/)已指派給每個商務和應用程式小組。
+由於資料庫數量龐大，Contoso 建立了 project management office （PMO）來追蹤每個資料庫移轉實例。 [責任與責任](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/)已指派給每個商務和應用程式小組。
 
 Contoso 也已執行[工作負載準備檢查](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/evaluate)。 本審查已檢查基礎結構、資料庫和網路元件。
 
@@ -172,7 +172,7 @@ Contoso 也已執行[工作負載準備檢查](https://docs.microsoft.com/azure/
 
 #### <a name="step-6-migration"></a>步驟6：遷移
 
-針對生產環境的遷移，Contoso 識別出所有資料庫移轉的時間範圍，以及在週末期間，可充分執行的工作 (在星期五到午夜的午夜，) 最短的停機時間。
+針對生產環境遷移，Contoso 已識別出所有資料庫移轉的時間範圍，以及在週末（星期五到午夜星期日）最短的時間內可以充分執行的工作。
 
 根據其記載的測試程式，他們會盡可能地透過腳本執行每次遷移，以限制任何手動工作來將錯誤降至最低。
 
@@ -182,7 +182,7 @@ Contoso 也已執行[工作負載準備檢查](https://docs.microsoft.com/azure/
 
 Contoso 已識別出所有資料庫工作負載的保存時間範圍。 當視窗過期時，將會從內部部署基礎結構淘汰資源。
 
-其中包括：
+這包括：
 
 - 從內部部署伺服器移除生產資料。
 - 當最後一個工作負載時間範圍到期時，淘汰主控伺服器。

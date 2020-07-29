@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b035b70e73fe976dff2944ec2988c351b67be83a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478322"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254988"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 
@@ -50,7 +50,7 @@ Contoso 雲端小組已針對各種不同的遷移，將目標固定在一起。
 
 ## <a name="solution-design"></a>解決方案設計
 
-Contoso 已經使用[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)搭配[服務對應](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)功能來執行其數位資產的[遷移評估](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)。
+Contoso 已使用[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)來執行其數位資產的[遷移評估](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)。
 
 ![圖表顯示遷移程式。 ](./media/contoso-migration-oss-db-to-azure/migration-process.png)
 _圖1：遷移程式。_
@@ -92,9 +92,9 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 #### <a name="step-1-discovery"></a>步驟1：探索
 
-Contoso 使用 Azure Migrate 與服務對應來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 公司使用 Azure Migrate 的服務對應功能，呈現 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連線。 只有在安裝[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)和[Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)時，才需要 Contoso。
+Contoso 使用 Azure Migrate 來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 公司呈現 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連接。 只有在安裝[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)和[Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)時，才需要 Contoso。
 
-透過 Azure 遷移，Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些情況下，大約40% 可移至 PaaS 型服務。 在剩餘的60% 中，必須將它們移至以 IaaS 為基礎的方法，其中 VM 執行各自的資料庫軟體。
+Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些情況下，大約40% 可移至 PaaS 型服務。 在剩餘的60% 中，必須將它們移至以 IaaS 為基礎的方法，其中 VM 執行各自的資料庫軟體。
 
 #### <a name="step-2-application-assessment"></a>步驟2：應用程式評估
 
