@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450691"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115087"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -149,8 +149,8 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 | 單位 | 影響範圍 | 長度 | 大小寫 | 有效字元 | 建議模式 | 範例 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 資源群組 | 訂用帳戶 | 1-90 | 不區分大小寫 | 英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
-| 可用性設定組 | 資源群組 | 1-80 | 不區分大小寫 | 英數字元、底線和連字號 | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| 資源群組 | 訂用帳戶 | 1-90 | 不區分大小寫 | 英數字元、底線、括號、連字號、句號 (結尾除外) 及 Unicode 字元 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| 可用性設定組 | 資源群組 | 1-80 | 不區分大小寫 | 英數字元、底線和連字號 | `<service-short-name>-<context>-as` | `profx-SQL-as` |
 | Tag | 相關聯的實體 | 512 (名稱)、256 (值) | 不區分大小寫 | 英數字元 | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 ## <a name="resource-tags"></a>[資源標記](#tab/ResourceTags)
