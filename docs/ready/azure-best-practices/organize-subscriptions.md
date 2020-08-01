@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf0c2477375d6d59f6a0eefc7711f51c2512f99e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479886"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87473160"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
@@ -58,7 +58,7 @@ Azure 提供四個層級的管理範圍：
 
 使用管理群組來區隔不同工作負載的一些基本範例包括：
 
-**生產與非生產工作負載：** 使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，開發人員在非生產訂用帳戶中可能有參與者存取權，但只有非生產訂用帳戶中的讀者存取權。
+**生產與非生產工作負載：** 使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，開發人員可能會在生產訂用帳戶中擁有參與者存取權，但只有非生產訂用帳戶中的讀者存取權
 
 **內部服務與外部服務：** 企業通常會有不同的需求、原則和角色來提供內部服務與外部客戶面向的服務。
 
