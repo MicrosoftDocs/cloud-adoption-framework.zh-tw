@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: d285b19349477dfe99780a4584956d13a5a4b361
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479478"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524012"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -332,7 +332,7 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 已插入 VNet 的 Azure PaaS 服務仍會使用公用 IP 位址執行管理平面作業。 請確定使用 Udr 和 Nsg 在 VNet 內鎖定此通訊。
 
-- 針對共用的 Azure PaaS 服務，使用私用連結（如果有的話）。 私用連結已正式適用于數個服務，且適用于許多服務。 [這裡](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)詳述私人連結的可用性。
+- 針對共用的 Azure PaaS 服務，使用私用連結（如果有的話）。 私用連結已正式適用于數個服務，且適用于許多服務。 如需詳細資訊，請參閱[Azure 私人連結可用性](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)。
 
 - 透過 ExpressRoute 私用對等互連從內部部署存取 Azure PaaS 服務，使用適用于專用 Azure 服務的 VNet 插入或 Azure 私人連結，用於可用的共用 Azure 服務。 若要在 VNet 插入或私用連結無法使用時從內部部署存取 Azure PaaS 服務，請搭配 Microsoft 對等互連使用 ExpressRoute。 這可避免透過公用網際網路進行傳輸。
 
@@ -378,8 +378,8 @@ _圖5：中樞和輪輻網路拓撲。_
 
 - 如果 [美國西部] 和/或 [南北部流量保護/篩選] 需要協力廠商 Nva：
 
-   - 針對虛擬 WAN 網路拓撲，請將 Nva 部署至個別的 VNet （例如 NVA VNet），並將它連線至區域虛擬 WAN 中樞和需要存取 Nva 的登陸區域，[如本文中所述。](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)
-   - 針對非虛擬 WAN 網路拓撲，請在中央中樞 VNet 中部署協力廠商 Nva。
+  - 針對虛擬 WAN 網路拓撲，請將 Nva 部署至個別的 VNet （例如 NVA VNet），並將它連線至區域虛擬 WAN 中樞和需要存取 Nva 的登陸區域，[如本文中所述。](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)
+  - 針對非虛擬 WAN 網路拓撲，請在中央中樞 VNet 中部署協力廠商 Nva。
 
 - 如果輸入 HTTP/S 連線需要協力廠商 Nva，則應該將它們部署在登陸區域 VNet 中，以及它們所保護和公開到網際網路的應用程式。
 

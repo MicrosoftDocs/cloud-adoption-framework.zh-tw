@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d09f6d6899501e18b22d5fe4c6b1b49411112ff2
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 9222f0cf5c61e0249e72675d3fe9eb46a0fe8f41
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451792"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523944"
 ---
 # <a name="ai-applications-and-agents"></a>AI 應用程式和代理程式
 
@@ -102,7 +102,7 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 瞭解如何新增認知服務，讓您的 bot 更聰明。
 
 - [建立 AI 應用程式的開發人員指南](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/)（電子書）
-- [深入瞭解認知服務](https://docs.microsoft.com/azure/cognitive-services/)
+- 深入瞭解[認知服務](https://docs.microsoft.com/azure/cognitive-services/)
 
 瞭解如何使用 Bot Framework 解決方案加速器建立自己的虛擬小幫手，並選取一組常用的技能，例如行事曆、電子郵件、關注點和待辦事項。
 
@@ -112,5 +112,5 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 
 探索其他 AI 解決方案類別：
 
-- [機器學習](./machine-learning.md)
+- [機器學習服務](./machine-learning.md)
 - [知識採礦](./knowledge-mining.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adbfaceb51618d50e64e81e571038671533135c7
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: fef5e1ccd6ac928ccf870ffff2029d43aba78143
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450130"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524029"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -111,11 +111,6 @@ Azure **帳戶擁有者**會藉由指派[角色型存取控制 (RBAC)](https://d
 最後，既然已建立訂用帳戶，且您的 Azure AD 租用戶已與其相關聯，就可以將**工作負載擁有者**[，新增至具備內建**擁有者**角色](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)的訂用帳戶。
 
 ## <a name="next-steps"></a>後續步驟
-
-> [!div class="nextstepaction"]
-> [將基本工作負載部署至 Azure](../../infrastructure/virtual-machines/basic-workload.md)
-
-<!-- --->
 
 > [!div class="nextstepaction"]
 > [深入了解多個小組的資源存取](./governance-multiple-teams.md)

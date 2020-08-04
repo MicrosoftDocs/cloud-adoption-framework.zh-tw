@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96f93ad2d7a73984a69ca36235a58557eac0d1a9
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: cb8942b451c750190975108d2b880a3f4e251908
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450487"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524046"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -242,7 +242,7 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 > [!NOTE]
 > 若要深入瞭解 Azure 帳戶與訂用帳戶之間的關聯性，請參閱[瞭解 azure 中的資源存取](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
-請遵循下列步驟：
+請遵循這些步驟：
 
 1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
     - 正在建立訂閱。
@@ -261,7 +261,7 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
     - 每個與每個環境相關聯的訂用帳戶將成為訂用帳戶擁有者的人員。 請注意，只有當訂用帳戶**服務管理員**不負責管理每個訂用帳戶/環境的資源存取權時，才需要這麼做。
     - 將成為**網路作業使用者**的人員。
     - 身為**工作負載擁有**者的人員。
-4. Azure 帳戶管理員會使用 [Azure 帳戶入口網站](https://account.azure.com/subscriptions)，建立下列三個訂用帳戶：
+4. Azure 帳戶管理員會[建立三個 azure](https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription)訂用帳戶：
     - **共用基礎結構**環境的訂用帳戶。
     - **生產**環境的訂用帳戶。
     - 適用於**開發**環境的訂用帳戶。
@@ -277,8 +277,3 @@ _圖7： Azure 帳戶擁有者將**訂**用帳戶擁有者使用者帳戶新增�
 ## <a name="related-resources"></a>相關資源
 
 [適用於 Azure 資源的內建角色](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
-
-## <a name="next-steps"></a>後續步驟
-
-> [!div class="nextstepaction"]
-> [了解如何部署基本基礎結構](../../infrastructure/virtual-machines/basic-workload.md)

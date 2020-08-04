@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8243189c2db4c49d8d1f69e09c459e716130e46e
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191802"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523995"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -28,6 +28,8 @@ ms.locfileid: "86191802"
 
 雲端治理小組已準備好透過監視效能、減少資源大小，以及安全地終止未使用的資源，來評估和採取超支或未計畫的費用。 企業成本優化的一開始，是由共同團隊瞭解在環境層級上明智地處理成本考慮所需的工具、程式和相依性。
 
+<!-- docsTest:ignore "your cost management policies" -->
+
 **項**
 
 - 在整個企業中執行明智的成本管理變更。
@@ -35,7 +37,7 @@ ms.locfileid: "86191802"
 
 這些交付專案是幾個週期性工作的結果：
 
-- 確保與雲端策略小組 (的策略性一致，包括組合) 的工作負載專案關係人。
+- 確保與雲端策略小組的策略性一致（包括在組合中的工作負載專案關係人）。
 - 將整個環境的成本優化：
   - 手動或自動關閉未使用的 Vm。
   - 刪除或解除配置已停止的 Vm。
@@ -57,7 +59,7 @@ ms.locfileid: "86191802"
 
 - 可能需要在工作負載層級進行取捨，才能執行有效的成本優化變更。 [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs)和[Microsoft Azure 架構良好的審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review)，可以協助引導這些與特定工作負載的技術擁有者交談。
 - 如果您不熟悉雲端治理，請使用管控方法來建立[治理原則、流程和專業領域](../govern/index.md)。
-- 如果您不熟悉成本管理專業領域，請考慮遵循[成本管理改良文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [[執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)] 區段。
+- 如果您不熟悉成本管理專業領域，請考慮遵循[成本管理專業領域改進文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [[執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)] 區段。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -107,7 +109,7 @@ ms.locfileid: "86191802"
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)。 使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)。 在增量合理化和量化分析期間，識別用於預算的雲端候選項目。
 - [對齊成本模型和預測模型](../digital-estate/calculate.md)。 藉由[建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，使用 Azure 成本管理來對齊成本和預測模型。
-- [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 建立具有可採取動作之工作負載、資產和時間軸詳細資料的方案。 此計畫可讓您在一段時間內花費 (或成本預測) 的基礎。 _經過一段時間的花費_是成本管理治理專業領域中所有可採取動作的優化分析的初始基準。
+- [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 建立具有可採取動作之工作負載、資產和時間軸詳細資料的方案。 此計畫提供一段時間的支出基礎（或成本預測）。 _經過一段時間的花費_是成本管理治理專業領域中所有可採取動作的優化分析的初始基準。
 
 <!-- markdownlint-disable MD033 -->
 <br>
