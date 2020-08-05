@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 98f0cfccdaec32d00f3097f2f6b79f124c913aa6
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 76ec9e472eb91768acd293f0053d09ca59a91f5d
+ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128219"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87560452"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -32,21 +32,21 @@ _圖1：平臺管理和監視。_
 
 - 以應用程式為中心的平臺監視，分別包含計量和記錄檔的經常性存取和冷遙測路徑：
 
-  - 作業系統計量（效能計數器和自訂計量）
+  - 作業系統計量 (效能計數器和自訂計量) 
 
-  - 作業系統記錄（Internet Information Services （IIS）、Windows 事件追蹤和 syslog）
+  - 作業系統記錄 (Internet Information Services (IIS) 、Windows 事件追蹤和 syslog) 
 
   - 資源健康狀態事件
 
 - 安全性審核記錄，並在組織的整個 Azure 資產中達到水準安全性鏡頭：
 
-  - 與內部部署安全性資訊和事件管理（SIEM）系統（例如 ServiceNow 或 ArcSight）的潛在整合
+  - 內部部署安全性資訊與事件管理的潛在整合 (SIEM) 系統，例如 ServiceNow 或 ArcSight
 
   - Azure 活動記錄
 
   - Azure AD audit 報告
 
-  - Azure 診斷服務、記錄和計量;Azure Key Vault audit 事件;網路安全性群組（NSG）流量記錄;和事件記錄檔
+  - Azure 診斷服務、記錄和計量;Azure Key Vault audit 事件;網路安全性群組 (NSG) 流量記錄;和事件記錄檔
 
   - Azure 監視器、網路監看員、資訊安全中心和 Azure Sentinel
 
@@ -54,7 +54,7 @@ _圖1：平臺管理和監視。_
 
   - Azure 監視器記錄檔的預設保留期限為30天，最多兩年
 
-  - Azure Active Directory 報表（premium）的預設保留期限為30天
+  - Azure Active Directory 報表 (premium) 的預設保留期限為30天
 
   - Azure 診斷服務的預設保留期限為90天
 
@@ -70,17 +70,17 @@ _圖1：平臺管理和監視。_
 
 **設計建議：**
 
-- 使用單一 [[監視記錄] 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment)來集中管理平臺，但角色型存取控制（RBAC）和資料主權需求會強制不同的工作區。 集中式記錄對於營運管理小組所需的可見度而言非常重要。 記錄集中的磁片磁碟機會報告有關變更管理、服務健康情況、設定和 IT 作業的大部分其他層面。 在集中式工作區模型上進行整合，可減少系統管理工作，以及可檢視性中的間隙機會。
+- 使用單一 [[監視記錄] 工作區](https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment)來集中管理平臺，但角色型存取控制 (RBAC) 和資料主權需求會規定個別的工作區。 集中式記錄對於營運管理小組所需的可見度而言非常重要。 記錄集中的磁片磁碟機會報告有關變更管理、服務健康情況、設定和 IT 作業的大部分其他層面。 在集中式工作區模型上進行整合，可減少系統管理工作，以及可檢視性中的間隙機會。
 
-在企業級架構的環境中，集中式記錄主要關心平臺作業。 這不會妨礙使用相同的工作區來進行 VM 型應用程式記錄。 在以資源為中心的存取控制模式中設定工作區時，會強制執行細微的 RBAC，以確保應用程式小組只能存取其資源的記錄。 在此模型中，應用程式團隊藉由減少其管理額外負荷，受益于現有平臺基礎結構的使用。 針對任何非計算資源（例如 web 應用程式或 Azure Cosmos DB 資料庫），應用程式小組可以使用自己的 Log Analytics 工作區，並將診斷和計量設定為在此路由傳送。
+在企業級架構的環境中，集中式記錄主要關心平臺作業。 這不會妨礙使用相同的工作區來進行 VM 型應用程式記錄。 在以資源為中心的存取控制模式中設定工作區時，會強制執行細微的 RBAC，以確保應用程式小組只能存取其資源的記錄。 在此模型中，應用程式團隊藉由減少其管理額外負荷，受益于現有平臺基礎結構的使用。 針對任何非計算資源 (例如 web 應用程式或 Azure Cosmos DB 資料庫) ，應用程式小組可以使用自己的 Log Analytics 工作區，並將診斷和計量設定為在此路由傳送。
 
 <!-- docsTest:ignore WORM -->
 
-- 如果記錄保留需求超過兩年，則將記錄匯出至 Azure 儲存體。 使用不可變的儲存體搭配 WORM （一次寫入，多次讀取）原則，讓資料在使用者指定的間隔內無法擦寫且不可修改。
+- 如果記錄保留需求超過兩年，則將記錄匯出至 Azure 儲存體。 使用不可變的儲存體搭配 WORM (寫入一次，請閱讀許多) 原則，讓資料無法擦寫，而且在使用者指定的間隔內不可修改。
 
 - 使用 Azure 原則進行存取控制和合規性報告。 這可讓您強制執行整個組織的設定，以確保一致的原則遵循和快速違規偵測。 如需詳細資訊，請參閱[瞭解 Azure 原則效果](https://docs.microsoft.com/azure/governance/policy/concepts/effects)。
 
-- 使用 Azure 原則監視來賓內虛擬機器（VM）設定漂移。 透過原則啟用[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定審核功能可協助應用程式小組工作負載輕鬆地立即使用功能功能。
+- 使用 Azure 原則監視來賓內虛擬機器 (VM) 設定漂移。 透過原則啟用[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定審核功能可協助應用程式小組工作負載輕鬆地立即使用功能功能。
 
 - [在 Azure 自動化中使用更新管理](https://docs.microsoft.com/azure/automation/automation-update-management)，做為 Windows 和 Linux vm 的長期修補機制。 透過原則強制執行更新管理設定可確保所有 Vm 都包含在修補程式管理擬訂規則中，讓應用程式小組能夠管理其 Vm 的修補程式部署，並提供可見度和強制功能給所有 Vm 的中央 IT 小組。
 
@@ -96,7 +96,7 @@ _圖1：平臺管理和監視。_
 
 ## <a name="planning-for-app-management-and-monitoring"></a>規劃應用程式管理和監視
 
-為了在上一節中擴展，本節將考慮應用程式工作負載的同盟管理和監視，並說明應用程式小組可以如何繼續維護這些工作負載。
+若要在上一節中展開，本節將考慮使用同盟模型，並說明應用程式小組可以如何繼續維護這些工作負載。
 
 **設計考慮：**
 
@@ -104,7 +104,7 @@ _圖1：平臺管理和監視。_
 
 - 對於部署到虛擬機器的應用程式，記錄應該從平臺的觀點集中儲存到專用的 Log Analytics 工作區，而應用程式小組可以存取以其應用程式/虛擬機器上的 RBAC 為依據的記錄。
 
-- 基礎結構即服務（IaaS）和平臺即服務（PaaS）資源的應用程式效能與健康情況監視
+- 適用于基礎結構即服務的應用程式效能和健全狀況監視 (IaaS) 和平臺即服務 (PaaS) 資源
 
 - 跨所有應用程式元件的資料匯總
 

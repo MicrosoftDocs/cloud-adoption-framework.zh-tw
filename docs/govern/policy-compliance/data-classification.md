@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0696eb9b3720519fe26641322fa8b50caf020620
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 781b45eac5f03333add896545e9a32f867473934
+ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994192"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87560418"
 ---
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 
@@ -37,13 +37,19 @@ ms.locfileid: "84994192"
 
 ## <a name="tagging-data-classification-in-azure"></a>在 Azure 中標記資料分類
 
-資源標記是用來儲存中繼資料的好方法，而且您可以使用這些標記將資料分類資訊套用至已部署的資源。 雖然以分類來標記雲端資產不是正式資料分類程式的替代方案，但它提供了管理資源和套用原則的重要工具。 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)是一個絕佳的解決方案，可協助您將資料本身分類，不論其位於何處（內部部署、Azure 或其他位置）。 請將它視為整體分類策略的一部分。
+資源標記是用來儲存中繼資料的好方法，而且您可以使用這些標記將資料分類資訊套用至已部署的資源。 雖然以分類來標記雲端資產不是正式資料分類程式的替代方案，但它提供了管理資源和套用原則的重要工具。 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)是一個絕佳的解決方案，可協助您將資料本身分類，不論其所在位置 (內部部署、Azure 或其他) 。 請將它視為整體分類策略的一部分。
 
-如需 Azure 中資源標記的詳細資訊，請參閱[使用標記來組織您的 azure 資源和管理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)階層。
+## <a name="take-action"></a>採取動作
+
+藉由定義及標記已定義資料分類的資產來採取動作。 
+
+- [請選擇其中一個可採取動作的治理指南](../guides/index.md)，以取得在您的組合中套用標記的範例。
+- 請參閱[命名和標記標準](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)一文，以定義更完整的標記標準。
+- 如需 Azure 中資源標記的詳細資訊，請參閱[使用標記來組織您的 azure 資源和管理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)階層。
 
 ## <a name="next-steps"></a>後續步驟
 
-在其中一個可採取動作的治理指南中套用資料分類。
+請參閱保護敏感性資料的文章，繼續從這篇文章系列學習。 下一篇文章包含適用的深入解析，如果您正在處理分類為機密或高度機密的資料。
 
 > [!div class="nextstepaction"]
-> [選擇可採取動作的治理指南](../guides/index.md)
+> [保護機密資料](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
