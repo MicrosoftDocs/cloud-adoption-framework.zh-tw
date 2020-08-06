@@ -3,17 +3,17 @@ title: 雲端監視指南：警示
 description: 使用適用于 Azure 的雲端採用架構，瞭解如何在 Microsoft Azure 中判斷何時使用 Azure 監視器或 System Center Operations Manager。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 06/26/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 9eab764cf3c5ce1aa36a26a8b3608959cfa5ef04
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861390"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805472"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -25,11 +25,11 @@ ms.locfileid: "83861390"
 
 *您無法修正不知道的問題。*
 
-對重要事項發出警示。 它的助力之下方式是收集並測量正確的計量和記錄。 您也需要能夠在符合條件時儲存、匯總、視覺化、分析及起始自動化回應的監視工具。 只有當您完全瞭解服務和應用程式的組合時，才可以改善其可檢視性。 您可以將該組合對應至監視平臺所要套用的詳細監視設定。 這項設定包括可預測的失敗狀態（徵兆，而不是失敗的原因），對發出警示是合理的。
+對重要事項發出警示。 它的助力之下方式是收集並測量正確的計量和記錄。 您也需要能夠在符合條件時儲存、匯總、視覺化、分析及起始自動化回應的監視工具。 只有當您完全瞭解服務和應用程式的組合時，才可以改善其可檢視性。 您可以將該組合對應至監視平臺所要套用的詳細監視設定。 這項設定包含 (徵兆的可預測失敗狀態，而不是造成警示的失敗) 原因。
 
 請考慮下列原則，判斷徵兆是否為警示的適當候選項：
 
-- **是否有關係嗎？** 問題的徵兆是真正問題還是影響應用程式整體健全狀況的問題？ 例如，您是否在意資源上的 CPU 使用率很高？ 或者，在該資源上的 SQL database 實例上執行的特定 SQL 查詢，在一段時間內耗用過高的 CPU 使用率？ 因為 CPU 使用率狀況是真正的問題，所以您應該對其發出警示。 但是，您不需要通知小組，因為它並不能説明您找出造成此狀況的原因。 針對 SQL 查詢程式使用率問題發出警示和通知，兩者都是相關且可採取動作的。
+- **這會有什麼影響？** 問題的徵兆是真正問題還是影響應用程式整體健全狀況的問題？ 例如，您是否在意資源上的 CPU 使用率很高？ 或者，在該資源上的 SQL database 實例上執行的特定 SQL 查詢，在一段時間內耗用過高的 CPU 使用率？ 因為 CPU 使用率狀況是真正的問題，所以您應該對其發出警示。 但是，您不需要通知小組，因為它並不能説明您找出造成此狀況的原因。 針對 SQL 查詢程式使用率問題發出警示和通知，兩者都是相關且可採取動作的。
 - **這是緊急的嗎？** 這是真正的問題，是否需要緊急注意？ 若是如此，應立即通知負責的小組。
 - **您的客戶會受到影響嗎？** 服務或應用程式的使用者是否因問題而受到影響？
 - **其他相依系統是否受到影響？** 是否有相關相依性的警示，而且可能相互關聯，以避免通知不同的小組處理相同的問題？
@@ -38,7 +38,7 @@ ms.locfileid: "83861390"
 
 在您的監視設定發行之後，您可以深入瞭解什麼是運作中和什麼不是。 請考慮高警示量、監視未察覺的問題，但使用者會注意到，以及在本評估過程中採取的最佳動作。 識別要執行的變更，以改善服務傳遞，做為持續的持續監視改進程式的一部分。 它不只是用來評估警示雜訊或錯過警示，也是您監視工作負載的效率。 這就是您的警示原則、程式和整體文化特性的有效性，以判斷您是否正在改善。
 
-System Center Operations Manager 和 Azure 監視器都支援以靜態或甚至是動態閾值以及在其上設定的動作為基礎的警示。 範例包括電子郵件、SMS 及簡單通知的語音通話警示。 這兩項服務也支援 IT 服務管理（ITSM）整合、自動建立事件記錄，以及呈報給正確的支援小組，或任何其他使用 webhook 的警示管理系統。
+System Center Operations Manager 和 Azure 監視器都支援以靜態或甚至是動態閾值以及在其上設定的動作為基礎的警示。 範例包括電子郵件、SMS 及簡單通知的語音通話警示。 這兩項服務也支援 IT 服務管理 (ITSM) 整合，以自動化事件記錄的建立，並呈報給正確的支援小組，或任何其他使用 webhook 的警示管理系統。
 
 可能的話，您可以使用任何一項服務來自動化復原動作。 這些包括 System Center Orchestrator、Azure 自動化、Azure Logic Apps，或在彈性工作負載的情況下自動調整。 當通知責任小組是最常見的警示動作時，自動校正動作也可能適用。 這種自動化可協助簡化整個事件管理流程。 自動化這些復原工作也可以降低人為錯誤的風險。
 
@@ -50,11 +50,11 @@ System Center Operations Manager 和 Azure 監視器都支援以靜態或甚至�
 
 - **Azure 監視器計量資料庫：** 主要用於 Azure 監視器平臺計量的時間序列資料庫，但也具有鏡像至其中的 Application Insights 計量資料。 輸入此資料庫的資訊具有最快速的警示時間。
 
-- **Application Insights 記錄檔存放區：** 以記錄格式儲存大部分 Application Insights 遙測資料的資料庫。
+- **Application Insights 資源：** 以記錄格式儲存大部分 Application Insights 遙測資料的資料庫。
 
-- **Azure 監視器記錄檔存放區：** Azure 記錄資料的主要存放區。 其他工具可以將資料路由傳送給它，並可在 Azure 監視器記錄中進行分析。 由於內嵌和編制索引，記錄警示查詢的延遲較高。 此延遲通常是5-10 分鐘，但在某些情況下可能會更高。
+- **Azure 監視器 Log Analytics 工作區：** Azure 記錄資料的主要存放區。 其他工具可以將資料路由傳送給它，並可在 Azure 監視器記錄中進行分析。 由於內嵌和編制索引，記錄警示查詢的延遲較高。 此延遲通常是5-10 分鐘，但在某些情況下可能會更高。
 
-- **活動記錄存放區：** 用於所有活動記錄和服務健康情況事件。 可以進行專用警示。 保留在您的訂用帳戶中的物件上發生的訂閱層級事件，如同從這些物件外部所見。 其中一個範例可能是設定原則或存取或刪除資源時。
+- **活動記錄：** 用於所有活動記錄和服務健康情況事件。 可以進行專用警示。 保留在您的訂用帳戶中的物件上發生的訂閱層級事件，如同從這些物件外部所見。 其中一個範例可能是設定原則或存取或刪除資源時。
 
 - **Azure 儲存體：** Azure 診斷和其他監視工具支援的一般用途儲存體。 對於長期保留的監視遙測而言，這是一個低成本選項。 此服務中儲存的資料不支援警示。
 
@@ -62,13 +62,13 @@ System Center Operations Manager 和 Azure 監視器都支援以靜態或甚至�
 
 Azure 監視器有四種類型的警示，每個都與儲存資料的儲存機制稍有關聯：
 
-- [度量警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric)： Azure 監視器計量資料庫中的資料警示。 當受監視的值超過使用者定義的閾值，然後當它恢復為「正常」狀態時，就會發生警示。
+- 計量[警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric)： Azure 監視器中的計量資料警示。 當受監視的值超過使用者定義的閾值，然後當它恢復為「正常」狀態時，就會發生警示。
 
-- [記錄查詢警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query)：可用於 Application Insights 或 Azure 記錄存放區中的內容警示。 它也可以根據跨工作區查詢來發出警示。
+- [記錄查詢警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query)：可用來警示來自 Application Insights 或 Azure 監視器記錄檔的記錄資料。 它也可以根據跨工作區查詢來發出警示。
 
-- [活動記錄警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log)：活動記錄存放區中專案的警示，但 Azure 服務健康狀態資料除外。
+- [活動記錄警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log)：活動記錄中專案的警示，但 Azure 服務健康狀態資料除外。
 
-- [Azure 服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications)：特殊類型的警示，僅用於來自活動記錄存放區的 Azure 服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
+- [Azure 服務健康狀態警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications)：特殊類型的警示，僅用於來自活動記錄的 Azure 服務健康狀態問題，例如中斷和近期規劃的維護。 請注意，這種類型的警示是透過[Azure 服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)（隨附于 Azure 監視器的服務）所設定。
 
 ### <a name="enable-alerting-through-partner-tools"></a>透過合作夥伴工具啟用警示
 
@@ -78,14 +78,14 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 ### <a name="specialized-azure-monitoring-offerings"></a>特製化的 Azure 監視供應專案
 
-[管理解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)通常會將其資料儲存在 Azure 記錄存放區中。 這兩個例外狀況為容器適用於 VM 的 Azure 監視器和 Azure 監視器。 下表描述以特定資料類型和儲存位置為基礎的警示體驗。
+[管理解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)通常會將其資料儲存 Azure 監視器記錄。 容器適用於 VM 的 Azure 監視器和 Azure 監視器兩個例外狀況。 下表描述以特定資料類型和儲存位置為基礎的警示體驗。
 
 | 解決方法 | 資料類型 | 警示行為 |
 |---| ---| --- |
-| 適用於容器的 Azure 監視器 | 從節點和 pod 計算的平均效能資料會寫入計量存放區。 | 如果您想要根據測量的使用量效能變化來警示，請建立計量警示，並在一段時間內匯總。 |
-| | 使用從節點、控制器、容器和 pod 百分位數的計算效能資料，會寫入至記錄存放區。 容器記錄和清查資訊也會寫入至記錄存放區。 | 如果您想要根據叢集和容器的測量使用率變化來警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。 |
-| 適用於 VM 的 Azure 監視器 | 健康情況準則是指寫入計量存放區的計量。 | 當健全狀況狀態從狀況良好變更為狀況不良時，就會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
-| | 對應和客體作業系統效能記錄檔資料會寫入記錄存放區。 | 建立記錄查詢警示。 |
+| 適用於容器的 Azure 監視器 | 從節點和 pod 計算的平均效能資料會寫入計量資料庫中。 | 如果您想要根據測量的使用量效能變化來警示，請建立計量警示，並在一段時間內匯總。 |
+| | 使用從節點、控制器、容器和 pod 百分位數的計算效能資料會寫入至工作區。 容器記錄和清查資訊也會寫入至工作區。 | 如果您想要根據叢集和容器的測量使用率變化來警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。 |
+| 適用於 VM 的 Azure 監視器 | 健康情況準則是儲存在計量資料庫中的計量。 | 當健全狀況狀態從狀況良好變更為狀況不良時，就會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
+| | 對應和客體作業系統效能記錄資料會寫入 Log Analytics 工作區。 | 建立記錄查詢警示。 |
 
 <!-- docsTest:ignore "speed driven by cost" -->
 
@@ -99,11 +99,11 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 - 若要對此資料發出警示，最快的方式是將它匯入為自訂計量。 若要這麼做，請使用 Azure 診斷延伸模組，然後使用計量警示。 不過，自訂計量目前為預覽狀態，而且[比其他選項更昂貴](https://azure.microsoft.com/pricing/details/monitor)。
 
-- 成本最低但最慢的方法是將它傳送至 Azure logs Kusto 存放區。 在 VM 上執行 Log Analytics 代理程式是取得所有客體作業系統計量和記錄資料到此存放區的最佳方式。
+- 成本最低（但有一些內嵌延遲）是將它傳送至 Log Analytics 工作區。 在 VM 上執行 Log Analytics 代理程式是取得所有客體作業系統計量和記錄資料到工作區的最佳方式。
 
-- 您可以同時在相同的 VM 上執行延伸模組和代理程式，將它傳送到這兩個存放區。 接著，您可以快速發出警示，但當您結合其他遙測時，也會使用客體作業系統資料做為更複雜搜尋的一部分。
+- 您可以在相同的 VM 上執行診斷擴充功能和 Log Analytics 代理程式，以將儲存體當做計量和登入 Azure 監視器來傳送。 然後您可以更快速地發出警示，但當您結合其他遙測時，也會使用客體作業系統資料做為更複雜查詢的一部分。
 
-**從內部部署匯入資料：** 如果您嘗試在 Azure 和內部部署環境中執行的機器之間進行查詢和監視，您可以使用 Log Analytics 代理程式來收集客體作業系統資料。 然後，您可以使用稱為「[記錄](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)」的功能來將計量簡化到計量存放區。 這個方法會略過在 Azure 記錄存放區中內嵌程式的一部分，因此資料會在計量資料庫中更快提供。
+**從內部部署匯入資料：** 如果您嘗試在 Azure 和內部部署環境中執行的機器之間進行查詢和監視，您可以使用 Log Analytics 代理程式來收集客體作業系統資料。 接著，您可以使用稱為「[記錄](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)」的功能，在 Azure 監視器中收集並儲存為計量。 這個方法會略過內嵌程式的一部分 Azure 監視器記錄，因此資料會更快推出。
 
 ### <a name="minimize-alerts"></a>最小化警示
 
@@ -116,7 +116,7 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 - [動態閾值](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds)：動態閾值會在一段時間內查看資源的活動，並建立上限和較低的「正常行為」閾值。 當受監視的計量超出這些臨界值時，您會收到警示。
 
-- [Multisignal 警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)：您可以建立度量警示，以使用來自兩個不同資源類型的兩個不同輸入組合。 例如，如果您想要在 VM 的 CPU 使用率超過90% 時引發警示，而特定 Azure 服務匯流排佇列中的訊息數目超過特定數量，則您可以不建立記錄查詢來執行此動作。 這項功能只適用于兩個信號。 如果您有更複雜的查詢，請將計量資料摘要到 Azure 監視器記錄存放區，並使用記錄查詢。
+- [Multisignal 警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)：您可以建立度量警示，以使用來自兩個不同資源類型的兩個不同輸入組合。 例如，如果您想要在 VM 的 CPU 使用率超過90% 時引發警示，而特定 Azure 服務匯流排佇列中的訊息數目超過特定數量，則您可以不建立記錄查詢來執行此動作。 這項功能只適用于兩個信號。 如果您有更複雜的查詢，請將計量資料摘要到 Log Analytics 工作區，並使用記錄查詢。
 
 - [多資源警示](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)： Azure 監視器允許套用至所有 VM 資源的單一計量警示規則。 這項功能可以節省您的時間，因為您不需要為每個 VM 建立個別警示。 這種警示類型的定價相同。 無論您是建立50警示來監視 50 Vm 的 CPU 使用率，或是針對所有50的 Vm，監視 cpu 使用率的一個警示，成本都相同。 您也可以搭配使用這些類型的警示與動態臨界值。
 
@@ -124,7 +124,7 @@ Azure 監視器包括與其他監視平臺整合的支援，以及 ServiceNow �
 
 ### <a name="limits-on-alerts"></a>警示限制
 
-請務必記下[您可以建立的警示數目限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)。 有些限制（但不是全部）可以藉由呼叫支援來增加。
+請務必記下[您可以建立的警示數目限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)。 有些限制 (但並非所有) 都可以藉由呼叫支援來增加。
 
 ### <a name="best-query-experience"></a>最佳查詢體驗
 

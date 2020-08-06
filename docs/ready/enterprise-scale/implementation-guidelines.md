@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e9b67fe130038fbf43a9e1543fbb93699b136658
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 10d5d7b477f3be60d81a58320387bdd9af5835cc
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87472820"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805421"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -26,17 +26,17 @@ ms.locfileid: "87472820"
 
 1. **針對企業級架構，必須符合下列條件：** 包含必須由 Azure 和 Azure AD 系統管理員執行以建立初始設定的活動。 這些活動是依本質順序排列，主要是一次性活動。
 
-2. **啟用新的區域（檔案 > 的新 > 區域）：** 當需要將企業級平臺擴充到新的 Azure 區域時，所需的一組活動。
+2. **啟用新區域 (檔案 > 新 > 區域) ：** 當需要將企業級平臺擴充到新的 Azure 區域時，所需的一組活動。
 
-3. **部署新的登陸區域（檔案 > 新 > 登陸區域）：** 這些是具現化新登陸區域所需的重複活動。
+3. **部署新的登陸區域 (檔案 > 新 > 登陸區域) ：** 這些是具現化新登陸區域所需的重複活動。
 
 <!-- docsTest:enable -->
 
-若要大規模進行讓，這些活動必須遵循基礎結構即程式碼（IaC）原則，而且必須使用部署管線來自動化。
+若要大規模進行讓，這些活動必須遵循基礎結構即程式碼 (IaC) 原則，而且必須使用部署管線自動化。
 
 ## <a name="what-must-be-true-for-a-caf-enterprise-scale-landing-zone"></a>CAF 企業級登陸區域必須符合的條件
 
-### <a name="enterprise-agreement-ea-enrollment-and-azure-ad-tenants"></a>Enterprise 合約（EA）註冊和 Azure AD 租使用者
+### <a name="enterprise-agreement-ea-enrollment-and-azure-ad-tenants"></a>Enterprise 合約 (EA) 註冊和 Azure AD 租使用者
 
 1. 設定 EA 系統管理員和通知帳戶。
 
@@ -62,7 +62,7 @@ ms.locfileid: "87472820"
 
 6. 針對登陸區域，在下表中建立 Azure 原則指派。
 
-| 名稱                  | 說明                                                                                   |
+| 名稱                  | 描述                                                                                   |
 |-----------------------|-----------------------------------------------------------------------------------------------|
 | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | 拒絕在所有登陸區域上建立具有公用端點的服務。 |
 | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/Landing%20Zones%20(landingzones)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | 確保已設定備份，並將其部署至登陸區域中的所有 Vm。 |
@@ -74,7 +74,7 @@ ms.locfileid: "87472820"
 
 2. 如果您決定透過 Azure 原則建立網路資源，請將下表所列的原則指派給連線能力訂閱。 如此一來，Azure 原則可確保根據所提供的參數，建立下列清單中的資源。
    - 建立 Azure 虛擬 WAN 標準實例。
-   - 為每個區域建立 Azure 虛擬 WAN 虛擬中樞。 請確定每個虛擬中樞至少已部署一個閘道（ExpressRoute 或 VPN）。
+   - 為每個區域建立 Azure 虛擬 WAN 虛擬中樞。 請確定每個虛擬中樞至少已部署一個閘道 (ExpressRoute 或 VPN) 。
    - 藉由在每個虛擬中樞內部署 Azure 防火牆來保護虛擬中樞。
    - 建立必要的 Azure 防火牆原則，並將其指派給安全的虛擬中樞。
    - 請確定連線到安全虛擬中樞的所有 Vnet 都受到 Azure 防火牆的保護。
@@ -87,15 +87,15 @@ ms.locfileid: "87472820"
 
 6. 使用 Nsg 保護跨虛擬中樞的 VNet 流量。
 
-7. 選擇性透過 ExpressRoute 私用對等互連設定加密。 遵循[expressroute 加密：透過 expressroute 進行虛擬 WAN 的 IPsec](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute)中的指示。
+7.  (選擇性： ) 透過 ExpressRoute 私用對等互連設定加密。 遵循[expressroute 加密：透過 expressroute 進行虛擬 WAN 的 IPsec](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute)中的指示。
 
-8. 選擇性透過 VPN 將分支連線至虛擬中樞。 請遵循[使用 Azure 虛擬 WAN 建立站對站](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-site-to-site-portal)連線中的指示。
+8.  (選擇性： ) 透過 VPN 將分支連線至虛擬中樞。 請遵循[使用 Azure 虛擬 WAN 建立站對站](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-site-to-site-portal)連線中的指示。
 
-9. 選擇性當有多個內部部署位置透過 ExpressRoute 連接到 Azure 時，請設定 ExpressRoute 全球連線以連接內部部署 HQs/Dc。 請依照[設定 ExpressRoute 全球範圍](https://docs.microsoft.com/azure/expressroute/expressroute-howto-set-global-reach)中的指示進行。
+9.  (選擇性：當有多個內部部署位置透過 ExpressRoute 連線到 Azure 時，) 設定 ExpressRoute Global 觸及以連接內部部署 HQs/Dc。 請依照[設定 ExpressRoute 全球範圍](https://docs.microsoft.com/azure/expressroute/expressroute-howto-set-global-reach)中的指示進行。
 
 下列清單顯示針對企業規模部署執行網路資源時所使用的 Azure 原則指派：
 
-| 名稱                     | 說明                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | 建立防火牆原則。 |
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會部署虛擬中樞、Azure 防火牆和 VPN/ExpressRoute 閘道，並在已連線的 Vnet 上設定 Azure 防火牆的預設路由。 |
@@ -115,11 +115,11 @@ ms.locfileid: "87472820"
 
 6. 定義命名慣例，並透過 Azure 原則加以強制執行。
 
-7. 在所有範圍建立原則矩陣（例如，透過 Azure 原則啟用所有 Azure 服務的監視）。
+7. 在所有範圍建立原則矩陣 (例如，透過 Azure 原則) 來啟用所有 Azure 服務的監視。
 
 下列原則應用來強制執行全公司的合規性狀態。
 
-| 名稱                       | 說明                                                        |
+| 名稱                       | 描述                                                        |
 |----------------------------|--------------------------------------------------------------------|
 | [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | 指定可部署資源的允許區域。 |
 | [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | 指定可在其中部署資源群組的允許區域。 |
@@ -132,7 +132,7 @@ ms.locfileid: "87472820"
 | [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | 在 Azure 資訊安全中心中啟用監視。 |
 | [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | 確保訂閱已啟用資訊安全中心標準。 |
 | [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | 啟用診斷活動記錄，並轉送至 Log Analytics。 |
-| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
+| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
 | [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | 確保已啟用 VM 監視。 |
 
 ### <a name="platform-identity"></a>平臺身分識別
@@ -143,16 +143,16 @@ ms.locfileid: "87472820"
 
 下列清單顯示在執行企業規模部署的身分識別資源時，可以使用的原則。
 
-| 名稱                         | 說明                                                               |
+| 名稱                         | 描述                                                               |
 |------------------------------|---------------------------------------------------------------------------|
 | [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/) | Azure 資訊安全中心自動建立的資料保護。 |
-| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | 將 VNet 部署到主機的身分識別訂用帳戶（例如 DC）。 |
+| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | 將 VNet 部署到主機 (的身分識別訂用帳戶，例如 DC. )  |
 
 ### <a name="platform-management-and-monitoring"></a>平臺管理和監視
 
 1. 為組織和以資源為中心的視圖建立原則合規性與安全性儀表板。
 
-2. 建立平臺密碼（服務主體和自動化帳戶）和金鑰變換的工作流程。
+2. 建立平臺密碼的工作流程 (服務主體和自動化帳戶) 和金鑰變換。
 
 3. 針對 Log Analytics 中的記錄設定長期封存和保留。
 
@@ -160,7 +160,7 @@ ms.locfileid: "87472820"
 
 5. 如果您決定透過 Azure 原則建立平臺管理資源，請將下表所列的原則指派給管理訂用帳戶。 如此一來，Azure 原則確保下列清單中的資源會根據提供的參數來建立。
 
-| 名稱                   | 說明                                                                            |
+| 名稱                   | 描述                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Log Analytics 工作區的設定。 |
 | [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | 部署 Log Analytics 工作區。 |
@@ -177,11 +177,11 @@ ms.locfileid: "87472820"
 
 3. 透過 Nsg 保護跨虛擬中樞的 VNet 流量。
 
-4. 選擇性透過 ExpressRoute 私用對等互連設定加密。
+4.  (選擇性： ) 透過 ExpressRoute 私用對等互連設定加密。
 
-| 名稱                     | 說明                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會部署虛擬中樞、Azure 防火牆、閘道（VPN/ExpressRoute），並在已連線的 Vnet 上設定 Azure 防火牆的預設路由。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會部署虛擬中樞、Azure 防火牆、閘道 (VPN/ExpressRoute) ，並在已連線的 Vnet 上設定 Azure 防火牆的預設路由。 |
 
 <!-- docsTest:disable -->
 

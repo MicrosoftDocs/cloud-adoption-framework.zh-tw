@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e02602545a229664f22b546a2ee39066c5fdc338
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785186"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805489"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
@@ -21,7 +21,7 @@ ms.locfileid: "84785186"
 有五個基本的非功能性需求類別，也就是[架構卓越](https://docs.microsoft.com/azure/architecture/framework)的要素：
 
 - 成本最佳化
-- 卓越操作
+- 卓越營運
 - 效能效率
 - 可靠性
 - 安全性
@@ -42,12 +42,12 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 在此過程中，焦點通常是在服務的功能上：您想要讓服務執行的_功能_需求集。 例如，產品傳遞服務需要功能來判斷產品的來源和目的地位置、在傳遞期間追蹤產品，以及傳送通知給客戶。
 
-相反地，無_功能性_需求與屬性相關，例如服務的[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[復原能力](https://docs.microsoft.com/azure/architecture/resiliency)和擴充[性](https://docs.microsoft.com/azure/architecture/checklist/scalability)。 這些屬性與功能需求不同，因為它們不會直接影響服務中任何特定功能的最終功能。 不過，無功能性需求與服務的效能和持續性有關。
+相反地，無_功能性_需求與屬性相關，例如服務的[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[復原能力](https://docs.microsoft.com/azure/architecture/resiliency)和擴充[性](/azure/architecture/framework/scalability/performance-efficiency)。 這些屬性與功能需求不同，因為它們不會直接影響服務中任何特定功能的最終功能。 不過，無功能性需求與服務的效能和持續性有關。
 
-您可以在服務等級協定（SLA）方面指定某些非功能性需求。 例如，您可以將服務持續性表示為可用性百分比：「可用的99.99 百分比」。 其他非功能性需求可能較不容易定義，而且可能會隨著生產需求的變更而變更。 例如，消費者導向的服務可能會在受歡迎的衝擊後面臨意外的輸送量需求。
+您可以根據服務等級協定 (SLA) 來指定某些非功能性需求。 例如，您可以將服務持續性表示為可用性百分比：「可用的99.99 百分比」。 其他非功能性需求可能較不容易定義，而且可能會隨著生產需求的變更而變更。 例如，消費者導向的服務可能會在受歡迎的衝擊後面臨意外的輸送量需求。
 
 > [!NOTE]
-> 如需有關復原需求的詳細資訊，請參閱[設計可靠的 Azure 應用程式](https://docs.microsoft.com/azure/architecture/reliability#define-requirements)。 該文章包含復原點目標（RPO）、復原時間目標（RTO）和 SLA 等概念的說明。
+> 如需有關復原需求的詳細資訊，請參閱[設計可靠的 Azure 應用程式](https://docs.microsoft.com/azure/architecture/reliability#define-requirements)。 該文章包含復原點目標 (RPO) 、復原時間目標 (RTO) 和 SLA 等概念的說明。
 
 ## <a name="process-for-operational-fitness-review"></a>操作適用性審查的程式
 
@@ -63,7 +63,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 1. **找出關鍵商業作業**。 找出企業的任務關鍵性商業作業。 商業作業與任何支援的服務功能不同。 換句話說，商務營運代表企業必須執行且由一組 IT 服務支援的實際活動。
 
-    如果作業阻礙，_任務關鍵性_（或_業務關鍵_）一詞會反映對業務的嚴重影響。 例如，線上零售商可能會有商務營運，例如「讓客戶將專案新增至購物車」或「處理信用卡付款」。 如果其中一項作業失敗，客戶就無法完成交易，企業也無法實現銷售。
+    「_任務關鍵性_ (或「_業務關鍵_) 」一詞會反映阻礙作業時對業務的嚴重影響。 例如，線上零售商可能會有商務營運，例如「讓客戶將專案新增至購物車」或「處理信用卡付款」。 如果其中一項作業失敗，客戶就無法完成交易，企業也無法實現銷售。
 
 1. **將作業對應到服務**。 將重要商務作業對應至支援它們的服務。 在購物車範例中，可能牽涉到數個服務，包括庫存庫存管理服務和購物車服務。 若要處理信用卡付款，內部部署付款服務可能會與協力廠商的付款處理服務互動。
 
@@ -123,7 +123,7 @@ Microsoft 遵循的程式會形成本文所述程式的基礎。
 
 - [Microsoft Azure 架構完善的架構](https://docs.microsoft.com/azure/architecture/framework)：瞭解改善工作負載品質的指導原則。 該架構包含五個卓越的架構要素：
   - 成本最佳化
-  - 卓越操作
+  - 卓越營運
   - 效能效率
   - 可靠性
   - 安全性
