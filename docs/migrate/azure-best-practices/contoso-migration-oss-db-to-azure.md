@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
-ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
+ms.openlocfilehash: 9169417f75434a176767fb20182a1bdd99a70bbf
+ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254988"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866191"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 
@@ -42,7 +42,7 @@ Contoso 雲端小組已針對各種不同的遷移，將目標固定在一起。
 | --- | --- |
 | **效能** | 遷移之後，Azure 中的應用程式應該在 Contoso 的內部部署環境中具有與應用程式相同的效能功能。 移至雲端並不表示應用程式效能較不重要。 |
 | **相容性** | Contoso 必須瞭解其應用程式和資料庫與 Azure 的相容性。 Contoso 也必須瞭解其 Azure 裝載選項。 |
-| **資料來源** | 所有資料庫都會移至 Azure，但不會有任何例外狀況。 根據所使用之 SQL 功能的資料庫和應用程式分析，它們會移至平臺即服務（PaaS）或基礎結構即服務（IaaS）。 所有資料庫都必須移動。 |
+| **資料來源** | 所有資料庫都會移至 Azure，但不會有任何例外狀況。 根據所使用之 SQL 功能的資料庫和應用程式分析，它們會移至平臺即服務 (PaaS) 或基礎結構即服務 (IaaS) 。 所有資料庫都必須移動。 |
 | **應用程式** | 您必須盡可能將應用程式移至雲端。 如果無法移動，他們只會透過私人連線，透過 Azure 網路連接到已遷移的資料庫。 |
 | **成本** | Contoso 不僅想要瞭解它的遷移選項，也要瞭解與基礎結構移至雲端後的相關成本。 |
 | **管理** | 您必須針對各種部門建立資源管理群組，以及使用資源群組來管理所有遷移的資料庫。 所有資源都必須針對計費需求，以部門資訊來標記。 |
@@ -82,7 +82,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
   - **轉換：** 將來源架構轉換為在目標中工作。
 - 移轉：
   - **遷移：** 將來源架構、來源資料和物件遷移至目標。
-  - **同步處理資料：** 同步資料（最短的停機時間）。
+  - **同步處理資料：** 同步處理資料 (以最短的停機時間) 。
   - 轉換 **：** 將來源剪下至目標。
 - 遷移後：
   - **補救應用程式：** 反復對應用程式進行任何必要的變更。
@@ -92,7 +92,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 #### <a name="step-1-discovery"></a>步驟1：探索
 
-Contoso 使用 Azure Migrate 來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 公司呈現 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連接。 只有在安裝[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)和[Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)時，才需要 Contoso。
+Contoso 使用 Azure Migrate 來呈現所有 Contoso 環境的相依性。 Azure Migrate 自動探索到 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 也會顯示 Contoso 伺服器、進程、輸入和輸出連線延遲，以及跨 TCP 連線架構的埠之間的連接。 只有在安裝[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)和[Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)時，才需要 Contoso。
 
 Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些情況下，大約40% 可移至 PaaS 型服務。 在剩餘的60% 中，必須將它們移至以 IaaS 為基礎的方法，其中 VM 執行各自的資料庫軟體。
 
@@ -110,9 +110,9 @@ Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些情�
 
 | 資料庫類型 | 詳細資料 | 目標 | 移轉指南 |
 | --- | --- | --- | --- |
-| **MySQL** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 MySQL 的 Azure 資料庫（PaaS） | [輥](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)
-| **PostgreSQL** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 PostgreSQL 的 Azure 資料庫（PaaS） | [輥](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| **MariaDB** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 MariaDB 的 Azure 資料庫（PaaS） | [輥](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
+| **MySQL** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 MySQL 的 Azure 資料庫 (PaaS)  | [輥](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)
+| **PostgreSQL** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 PostgreSQL 的 Azure 資料庫 (PaaS)  | [輥](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| **MariaDB** | 在遷移之前，所有支援的版本都升級為支援的版本 | 適用於 MariaDB 的 Azure 資料庫 (PaaS)  | [輥](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
 
 #### <a name="step-4-migration-planning"></a>步驟4：遷移規劃
 
@@ -132,7 +132,7 @@ Contoso 也已執行[工作負載準備檢查](https://docs.microsoft.com/azure/
 
 #### <a name="step-6-migration"></a>步驟6：遷移
 
-針對生產環境遷移，Contoso 已識別出所有資料庫移轉的時間範圍，以及在週末（星期五到午夜星期日）最短的時間內可以充分執行的工作。
+針對生產環境的遷移，Contoso 識別出所有資料庫移轉的時間範圍，以及在週末期間，可充分執行的工作 (在星期五到午夜的午夜，) 最短的停機時間。
 
 ### <a name="clean-up-after-migration"></a>移轉之後進行清除
 
