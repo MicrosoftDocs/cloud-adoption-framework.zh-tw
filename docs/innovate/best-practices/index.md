@@ -7,22 +7,22 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e43e0010398fcb9d297d7246cb95a1d1c1a2246a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 758180e4f8771dab5502636eab3da8d9f9e0847a
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449671"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040660"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>在 Azure 中開發數位發明
 
-Azure 可協助加快每個數位發明領域的開發腳步。 「雲端採用架構」這一節是以[創新方法](../considerations/index.md)為基礎。 本節說明如何結合 Azure 服務來建立數位家發明的工具鏈。
+Azure 可協助加快每個數位發明領域的開發腳步。 「Azure 雲端採用架構」這一節是以[創新方法](../considerations/index.md)為基礎。 本節說明如何結合 Azure 服務來建立數位家發明的工具鏈。
 
 ## <a name="alignment-to-the-methodology"></a>與方法配合
 
 Azure 中的數位發明和創新有許多種雲端式工具組合。 下列文章系列會示範可與創新方法密切配合的一些工具。 下圖概述各種工具如何與每一種創新類型互相配合。
 
-![雲端採用架構的創新工具鏈](../../_images/innovate/innovate-toolchain.png)
+![此圖表顯示雲端採用架構的創新工具鏈。](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>工具鏈
 
