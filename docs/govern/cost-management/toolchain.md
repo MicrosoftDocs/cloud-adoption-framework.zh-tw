@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6355c5f5a80e915a3b2b82b99c06c388e9e0f8d2
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: e30cabbc88f257ec2fa516bd500b292852ee1b8c
+ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450300"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88075789"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure 中的成本管理工具
 
@@ -23,9 +23,8 @@ ms.locfileid: "86450300"
 
 <!-- TODO: Content packs are deprecated. -->
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) \(部分機器翻譯\)  | [Azure EA 內容套件](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure 成本管理](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) \(部分機器翻譯\)  | [Power BI 桌面連接器](https://docs.microsoft.com/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
-| Enterprise 合約需要嗎？     | 否         | 否         | 是         | 否         |
 | 預算控制     | 否         | 是         | 否         | 是         |
 | 監視對於單一資源的支出    | 是         | 是         | 是         | 否         |
 | 監視對於多個資源的支出    | 否         | 是        | 是         | 否         |

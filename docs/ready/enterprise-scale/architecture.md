@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 9fed0d44ac9ddd55b4fab3168317f39e6fa89cfd
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 88f1272526ba16b345349a2447d5d17c9c253229
+ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040978"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88075840"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -23,9 +23,9 @@ ms.locfileid: "88040978"
 
 ## <a name="architecture-overview"></a>架構概觀
 
-雲端採用架構的「企業級別」登陸區域架構代表組織 Azure 環境的策略性設計路徑和目標技術狀態。 它會繼續隨著 Azure 平臺發展，並由您的組織為了對應您的 Azure 旅程所必須進行的各種設計決策所定義。
+雲端採用架構的「企業級別」登陸區域架構代表組織 Azure 環境的策略性設計路徑和目標技術狀態。 其會隨著 Azure 平台持續發展，且由組織為了因應其 Azure 旅程所必須做出的各種設計決策來定義。
 
-並非所有企業都採用相同的方式，因此雲端採用架構的企業級別登陸區域架構會因客戶而異。 本指南中的技術考慮和設計建議可能會根據貴組織的案例而產生不同的取捨。 預期會有一些變化，但如果您遵循核心建議，則產生的目標架構會將您的組織設定為可持續調整的路徑。
+並非所有企業都採用相同的方式，因此雲端採用架構的企業級別登陸區域架構會因客戶而異。 本指南中的技術考慮和設計建議可能會根據貴組織的案例而產生不同的取捨。 預計會有一些變化，但您如果遵循核心建議，則所產生的目標架構會將您組織放在可持續調整的路徑上。
 
 ## <a name="landing-zone-expanded-definition"></a>登陸區域：展開的定義
 
@@ -73,7 +73,7 @@ _圖1：登陸區域設計。_
 
 _圖2：雲端採用架構的企業規模登陸區域架構。_
 
-下載包含此架構圖表的 [Visio 檔案](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx)。
+下載包含此架構圖表的[PDF](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.pdf)檔案。
 
 ## <a name="next-steps"></a>後續步驟
 
