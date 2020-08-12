@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: da60b9a2844c612f5c712f23cacabd30fbc06655
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8471236b0d6989f7a0f78e69ef0472b35b5c923f
+ms.sourcegitcommit: bd815dee6d60812979d3700ee676411eb0281071
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194947"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88142986"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -76,6 +76,10 @@ Azure 專家受控服務提供者 (MSP) 已經通過協力廠商 audit 來驗證
 
 [Azure 遷移計畫 (AMP) ](https://azure.microsoft.com/migration/migration-program)提供各種技術技能建立、逐步指引、免費遷移工具，以及可能的供應專案，以降低遷移成本。
 此程式會利用 FastTrack for Azure 和 Azure 解決方案提供者來改善遷移期間的客戶成功。
+
+觀看這段短片，以瞭解 Azure 遷移計畫如何協助您。 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4D1vH]
 
 ### <a name="azure-support"></a>Azure 支援
 
