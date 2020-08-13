@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a8ff734e8f29d3cfcc848fc99270aae16b73c8c5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1f7348738ab6d995db4e961edf3eb478f8d044cb
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755567"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196569"
 ---
 # <a name="cloud-operations-functions"></a>雲端作業功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "83755567"
 - [管理 Azure 中的資源](https://docs.microsoft.com/learn/paths/manage-resources-in-azure)：瞭解如何逐步執行 Azure CLI 和 web 入口網站，以建立、管理及控制雲端式資源。
 - [Azure 網路服務](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何改善復原並減少延遲。
 
-請檢閱下列項目：
+請檢閱下列各項：
 
 - [業務成果](../strategy/business-outcomes/index.md)
 - [財務模型](../strategy/financial-models.md)
@@ -74,7 +74,7 @@ ms.locfileid: "83755567"
 
 深入了解：
 
-- [卓越功能的雲端中心](../organize/cloud-center-of-excellence.md)。
+- [卓越功能的雲端中心](../organize/cloud-center-of-excellence.md) 。
 - [組織反模式：接收器和 fiefdoms](../organize/fiefdoms-silos.md)。
 
-瞭解如何藉由開發跨小組的矩陣，識別負責、參與、諮詢和通知（RACI）的合作物件，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+藉由開發跨小組的矩陣來識別小組間的責任，以找出 RACI) 方的負責、參與、諮詢和通知 (。 下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。

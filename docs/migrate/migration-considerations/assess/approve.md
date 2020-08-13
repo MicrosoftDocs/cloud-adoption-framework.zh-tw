@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 27f8773e5baee86c6837ea6922411e0a92b045a1
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 218b7ce544d74f46aa178d2e1315d7b5cb63d5a1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450776"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196701"
 ---
 <!-- cSpell:ignore ITIL -->
 
@@ -37,7 +37,7 @@ ms.locfileid: "86450776"
 
 ## <a name="existing-culture"></a>現有文化特性
 
-您的 IT 小組可能有現有的機制可供管理與您的內部部署資產相關的變更。 這些機制通常是由傳統資訊技術基礎結構程式庫（以 ITIL 為基礎）的變更管理流程所控管。 在許多企業遷移中，這些程式牽涉到變更諮詢委員會（CAB），負責審查、記載和核准所有與 IT 相關的變更要求（RFC）。
+您的 IT 小組可能有現有的機制可供管理與您的內部部署資產相關的變更。 這些機制通常是由傳統資訊技術基礎結構程式庫以 (ITIL 為基礎的) 變更管理程式來控管。 在許多企業遷移中，這些程式都包含變更諮詢委員會 (CAB) ，負責審查、記載和核准 (RFC) 變更的所有 IT 相關要求。
 
 CAB 通常包含來自多個 IT 和業務小組的專家，可為所有 IT 相關變更提供各種不同的觀點和詳細審查。 CAB 核准程序是一種經證實的方法，可降低風險並將涉及 IT 作業所管理之穩定工作負載的變更影響降至最低。
 
@@ -69,7 +69,7 @@ CAB 通常包含來自多個 IT 和業務小組的專家，可為所有 IT 相�
 
 ## <a name="next-steps"></a>後續步驟
 
-在這些最佳做法的協助下，您可更輕鬆地將適當的低風險核准整合到移轉工作中。 核准工作負載變更之後，雲端採用小組就準備好[遷移工作負載](../migrate/index.md)。
+在這些最佳做法的協助下，您可更輕鬆地將適當的低風險核准整合到移轉工作中。 核准工作負載變更之後，雲端採用小組就準備好遷移工作負載。
 
 > [!div class="nextstepaction"]
 > [移轉工作負載](../migrate/index.md)

@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 07/14/2020
-ms.openlocfilehash: d91104b083f6d43712a975c14c01da3cd89ed957
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: db4010d4840f5eeb8cdfe9d1e5568472694bae77
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451799"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196586"
 ---
-# <a name="cloud-data-functions"></a>雲端資料函數
+# <a name="cloud-data-functions"></a>雲端資料功能
 
 有多個物件牽涉到分析交談，包括一般賣方、資料庫架構設計師和基礎結構團隊。 此外，分析解決方案包含企業架構、資料科學、商務分析師和主管領導角色等影響因素、recommender 和決策者。 Azure Synapse 分析可讓整個企業（從 IT 專案關係人到商務分析師）達到更多目標。
 
@@ -22,7 +22,7 @@ ms.locfileid: "86451799"
 
 使用 Azure Synapse 時，資料庫管理員可以符合其資料倉儲和資料 lake 的擴大責任。 他們可以使用熟悉的語言和工具（例如 T-sql），輕鬆地執行所需的工作負載數目。 他們可以根據智慧型工作負載重要性、工作負載隔離和增強的並行功能，指派資源來擴大關鍵工作負載。
 
-**基礎結構小組**：這些小組會處理大型分析系統所需之基礎計算資源的布建和架構。 在許多情況下，它們會管理以 datacenter 和雲端為基礎的系統之間的轉換，以及兩者之間互通性的目前需求。  一般的 DR 以及商務持續性和高可用性都是常見的考慮。
+**基礎結構小組**：這些小組會處理大型分析系統所需之基礎計算資源的布建和架構。 在許多情況下，它們會管理以 datacenter 和雲端為基礎的系統之間的轉換，以及兩者之間互通性的目前需求。 一般的 DR 以及商務持續性和高可用性都是常見的考慮。
 
 透過 Azure Synapse，IT 專業人員可以更有效率地保護和管理其組織的資料。 他們可以利用隨選和布建的計算來啟用大量資料處理，並透過與 Azure Active Directory 緊密整合來安全存取雲端和混合式設定。 最後，他們可以強制執行隱私權需求，以及資料列層級和資料行層級的安全性。
 

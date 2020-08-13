@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 5b97c1efba9a0efc976404bea9680cf2baaa0d94
-ms.sourcegitcommit: 7ff5c7a12412b1af0090b8eebd25b024f7830a57
+ms.openlocfilehash: ee210d3c29ae085ee516a9798946f956dadf01da
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814348"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196729"
 ---
 # <a name="cloud-strategy-functions"></a>雲端策略功能
 
@@ -23,23 +23,23 @@ ms.locfileid: "85814348"
 - Finance
 - 商務營運
 - 人力資源
-- 作業
+- Operations
 - 企業架構
 - IT 基礎結構
 - 應用程式群組
-- 專案經理（通常使用 agile 專案管理經驗）
+- 專案經理 (經常使用 agile 專案管理體驗) 
 
 這有助於引導雲端採用期間的重要優先順序和探索工作。 它也可能會觸發商務程式中的變更、作業的執行、客戶互動，甚至是產品開發。 如果這些函式僅限於該函式，將會限制雲端採用的成功成果。 若要推動真正的商務變更，業務領導人應該是這項功能的主要來源。 定義的雲端策略小組提供以結構化方式參與重要參與者的方式。
 
 > [!NOTE]
-> 組織的 CEO 和 CIO 通常會指派小組。 指派通常是根據讓此小組能夠在企業內的各種不同組織之間進行變更。 雲端策略小組成員應根據[雲端採用的動機](../strategy/motivations.md)、[商業成果](../strategy/business-outcomes/index.md)和相關的[財務模型](../strategy/financial-models.md)來指派。
+> 組織的 CEO 和 CIO 通常會指派小組。 指派通常是根據讓此小組能夠在企業內的各種不同組織之間進行變更。 雲端策略小組成員應根據 [雲端採用的動機](../strategy/motivations.md)、 [商業成果](../strategy/business-outcomes/index.md)和相關的 [財務模型](../strategy/financial-models.md)來指派。
 
 ## <a name="preparation"></a>準備
 
 - [瞭解 Microsoft Azure 的商業價值](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)。
-- [瞭解雲端採用架構如何](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure)協助您調整商務、人員和技術的策略。
-- 回顧[雲端採用策略](../strategy/index.md)程式。
-- 下載[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。
+- [瞭解雲端採用架構如何](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure) 協助您調整商務、人員和技術的策略。
+- 回顧 [雲端採用策略](../strategy/index.md) 程式。
+- 下載 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。
 
 ## <a name="minimum-scope"></a>最小範圍
 
@@ -85,12 +85,12 @@ ms.locfileid: "85814348"
 
 雲端策略小組成員必須能夠配置規劃和開發雲端策略的時間：
 
-- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified （通常是在4-6 周內）之後，就可以減少時間需求。
+- 在初期規劃工作期間，每週配置一個小時以符合小組的需求。 在採用計畫 solidified (通常在4-6 周內) ，可以降低時間需求。
 - 在採用過程中，每個月配置1-2 小時來審查進度，並驗證持續的優先順序。
 - 視需要執行主管小組的委派成員可能需要額外的時間。 雲端策略小組的每個成員都應該指派一個委派，每週可以配置5-10 小時來支援持續的優先順序問題，並報告任何緊急需求。
 
 ## <a name="next-steps"></a>後續步驟
 
-- 啟動[雲端策略小組](../get-started/team/cloud-strategy.md)
+- 啟動 [雲端策略小組](../get-started/team/cloud-strategy.md)
 - 藉由建立要使用的[雲端採用小組](../get-started/team/cloud-adoption.md)，讓您的策略與[雲端採用功能](./cloud-adoption.md)保持一致。
-- 使用[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)來協調小組間的責任。
+- 使用 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) 來協調小組間的責任。

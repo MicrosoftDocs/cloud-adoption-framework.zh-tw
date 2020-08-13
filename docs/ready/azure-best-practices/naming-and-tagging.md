@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ec657fce5047dda0e068692aac895eae5554940
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 22467beab2757917b6904eddf129a33f9d5f0fdf
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479852"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196502"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -22,7 +22,7 @@ ms.locfileid: "86479852"
 
 組織您的雲端資產，以支援作業管理和帳戶處理需求。 妥善定義的命名和元資料標記慣例有助於快速找出及管理資源。 這些慣例也有助於透過計費和回報帳戶處理機制，將雲端使用量成本與商務團隊產生關聯。
 
-Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。 本指南提供詳細的建議，以支援企業雲端採用工作。
+Azure 會定義 [azure 資源的命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。 本指南提供詳細的建議，以支援企業雲端採用工作。
 
 變更資源名稱可能很棘手。 開始進行任何大型雲端部署之前，請先建立完整的命名慣例。
 
@@ -31,7 +31,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 >
 > 當這些討論繼續進行時，請使用下列範本來捕捉您在將這些建議與特定業務需求對齊時所進行的命名和標記決策。
 >
-> 下載[命名和標記慣例追蹤範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx)。
+> 下載 [命名和標記慣例追蹤範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx)。
 
 ## <a name="naming-and-tagging-resources"></a>命名與標記資源
 
@@ -43,7 +43,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 ## <a name="resource-naming"></a>資源命名
 
-有效的命名慣例會使用重要資源資訊作為資源名稱的一部分，來組合資源名稱。 例如，使用這些[建議的命名慣例](#example-names)，實際執行 SharePoint 工作負載的公用 IP 資源會命名如下： `pip-sharepoint-prod-westus-001` 。
+有效的命名慣例會使用重要資源資訊作為資源名稱的一部分，來組合資源名稱。 例如，使用這些 [建議的命名慣例](#example-names)，實際執行 SharePoint 工作負載的公用 IP 資源會命名如下： `pip-sharepoint-prod-westus-001` 。
 
 從名稱中，您可以快速地識別出資源類型、其相關聯的工作負載、其部署環境，以及裝載該資源的 Azure 區域。
 
@@ -55,7 +55,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 某些資源名稱 (例如具有公用端點或虛擬機器 DNS 標籤的 PaaS 服務) 具有全域範圍，這表示這些名稱在整個 Azure 平台中必須是唯一的。
 
-資源名稱有長度限制。 當您開發命名慣例時，透過其範圍和長度來平衡名稱中的內嵌內容是很重要的。 如需詳細資訊，請參閱[Azure 資源的命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。
+資源名稱有長度限制。 當您開發命名慣例時，透過其範圍和長度來平衡名稱中的內嵌內容是很重要的。 如需詳細資訊，請參閱 [Azure 資源的命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。
 
 ### <a name="recommended-naming-components"></a>建議的命名元件
 
@@ -87,7 +87,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 原則定義               | 策略     |
 | API 管理服務實例 | apim       |
 
-### <a name="networking"></a>網路
+### <a name="networking"></a>網路功能
 
 | 資產類型                       | 名稱前置詞 |
 |----------------------------------|-------------|
@@ -95,10 +95,10 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 子網路                           | snet-       |
 | 網路介面 (NIC)          | nic-        |
 | 公用 IP 位址                | pip-        |
-| 負載平衡器（內部）         | lbi-        |
-| 負載平衡器（外部）         | lbe-        |
+| 內部) 的負載平衡器 (         | lbi-        |
+|  (外部) 的負載平衡器         | lbe-        |
 | 網路安全性群組 (NSG)     | nsg-        |
-| 應用程式安全性群組（ASG） | asg        |
+|  (ASG) 的應用程式安全性群組 | asg        |
 | 區域網路閘道            | lgw-        |
 | 虛擬網路閘道          | vgw-        |
 | VPN 連線                   | cn-         |
@@ -151,7 +151,7 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 | 資產類型                       | 名稱前置詞 |
 |----------------------------------|-------------|
-| Azure 認知搜尋           | srch-       |
+| Azue 認知搜尋           | srch-       |
 | Azure 認知服務         | 齒輪        |
 | Azure Machine Learning 工作區 | mlw-        |
 
@@ -216,11 +216,11 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 | 應用程式名稱          | 與資源相關聯的應用程式、服務或工作負載名稱。                                                                                                                                       | _ApplicationName_ | _{應用程式名稱}_                                               |
 | 核准者名稱             | 負責核准此資源相關成本的人員。                                                                                                                                                     | _人員_        | _發送_                                                  |
 | 需要的/核准的預算  | 配置給此應用程式、服務或工作負載的金額。                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | _BusinessUnit_    | _財務_，_行銷_， _{產品名稱}_， _CORP_，_共用_ |
+| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | _BusinessUnit_    | _財務_， _行銷_， _{產品名稱}_， _CORP_， _共用_ |
 | 成本中心               | 與此資源相關聯的會計成本中心。                                                                                                                                                                | _CostCenter_      | _項數_                                                 |
-| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                       | _DR_              | _任務關鍵性_、_關鍵_、_重要_                |
+| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                       | _DR_              | _任務關鍵性_、 _關鍵_、 _重要_                |
 | 專案的結束日期   | 排定淘汰應用程式、工作負載或服務的日期。                                                                                                                                         | _終止_         | _日期_                                                   |
-| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_、_開發_、 _QA_、_階段_、_測試_                       |
+| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_、 _開發_、 _QA_、 _階段_、 _測試_                       |
 | 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                      | _擁有者_           | _發送_                                                  |
 | 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                                 | _要求者_       | _發送_                                                  |
 | 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _開發_、_銅_、_銀_級、_金_級                          |
@@ -240,21 +240,21 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 | 資產類型                      | 影響範圍                              | [格式]                                                      | 範例                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| 訂用帳戶                    | 帳戶 <br> Enterprise 合約 | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
-| 資源群組                  | 訂用帳戶                       | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
+| 訂用帳戶                    | 帳戶 <br> Enterprise 合約 | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001 |
+| 資源群組                  | 訂用帳戶                       | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
 | API 管理服務實例 | 全球                             | apim\<App or service name\>                                | apim-navigator-生產環境                                                                                                     |
 
 ### <a name="example-names-networking"></a>範例名稱：網路
 
 | 資產類型                   | 影響範圍           | [格式]                                                               | 範例                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| 虛擬網路              | 資源群組  | vnet\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-shared-eastus2-001  <li> vnet-prod-westus-001  <li> vnet-client-eastus2-001 |
-| 子網路                       | 虛擬網路 | 早\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-shared-eastus2-001  <li> snet-prod-westus-001  <li> snet-client-eastus2-001 |
-| 網路介面 (NIC)      | 資源群組  | 網卡\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-shared-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
-| 公用 IP 位址            | 資源群組  | pip\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-shared-eastus2-001  <li> pip-hadoop-prod-westus-001 |
-| 負載平衡器                | 資源群組  | 磅\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001  <li> lb-sharepoint-dev-001 |
-| 網路安全性群組 (NSG) | 子網或 NIC   | nsg\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weballow-001  <li> nsg-rdpallow-001  <li> nsg-sqlallow-001  <li> nsg-dnsblocked-001 |
-| 區域網路閘道        | 虛擬閘道 | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-共用-eastus2-001  <li> lgw-生產-westus-001  <li> lgw-用戶端-eastus2-001 |
+| 虛擬網路              | 資源群組  | vnet\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-shared-eastus2-001 <li> vnet-prod-westus-001 <li> vnet-client-eastus2-001 |
+| 子網路                       | 虛擬網路 | 早\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-shared-eastus2-001 <li> snet-prod-westus-001 <li> snet-client-eastus2-001 |
+| 網路介面 (NIC)      | 資源群組  | 網卡\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-shared-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
+| 公用 IP 位址            | 資源群組  | pip\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-shared-eastus2-001 <li> pip-hadoop-prod-westus-001 |
+| 負載平衡器                | 資源群組  | 磅\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001 <li> lb-sharepoint-dev-001 |
+| 網路安全性群組 (NSG) | 子網或 NIC   | nsg\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weballow-001 <li> nsg-rdpallow-001 <li> nsg-sqlallow-001 <li> nsg-dnsblocked-001 |
+| 區域網路閘道        | 虛擬閘道 | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-共用-eastus2-001 <li> lgw-生產-westus-001 <li> lgw-用戶端-eastus2-001 |
 | 虛擬網路閘道      | 虛擬網路 | vgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> vgw-共用-eastus2-001 <li> vgw-生產-westus-001 <li> vgw-用戶端-eastus2-001 |
 | 站對站連線      | 資源群組  | cn- \<local gateway name\> -到-\<virtual gateway name\>                | <li> cn-lgw-shared-eastus2-001 到 vgw-shared-eastus2-001 <li> cn-lgw-shared-eastus2-001 到 shared-westus-001 |
 | VPN 連線               | 資源群組  | cn- \<subscription1\> \<region1\> -到-\<subscription2\>\<region2\>-     | <li> cn-shared-eastus2-to-shared-westus <li> cn-prod-eastus2-to-prod-westus |
@@ -290,15 +290,15 @@ Azure 會定義[azure 資源的命名規則和限制](https://docs.microsoft.com
 
 | 資產類型                        | 影響範圍  | [格式]                                                                        | 範例                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| 儲存體帳戶（一般用途）     | 全球 | 聖\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
-| 儲存體帳戶（診斷記錄） | 全球 | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
+| 儲存體帳戶 (一般用途)      | 全球 | 聖\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
+| 儲存體帳戶 (診斷記錄)  | 全球 | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
 | Azure StorSimple                  | 全球 | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
 
 ### <a name="example-names-ai-and-machine-learning"></a>範例名稱： AI 和機器學習服務
 
 | 資產類型                       | 影響範圍          | [格式]                            | 範例                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
-| Azure 認知搜尋           | 全球         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissions-dev |
+| Azue 認知搜尋           | 全球         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissions-dev |
 | Azure 認知服務         | 資源群組 | 齒輪\<App Name\>-\<Environment\>  | <li> 齒輪-navigator-生產環境 <li> 齒輪-排放-開發 |
 | Azure Machine Learning 工作區 | 資源群組 | mlw-\<App Name\>-\<Environment\>  | <li> mlw-navigator-生產環境 <li> mlw-排放-開發 |
 

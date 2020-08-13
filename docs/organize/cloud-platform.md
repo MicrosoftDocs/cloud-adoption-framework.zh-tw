@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 0fdba195a8ea782909fa7d72da0084ed03a258a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755555"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196557"
 ---
 # <a name="cloud-platform-functions"></a>雲端平台功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "83755555"
 - [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎架構設計人員的 Pluralsight 課程。
 - [Azure 網路服務](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何改善復原並減少延遲。
 
-**請檢閱下列項目：**
+**請檢閱下列各項：**
 
 - [業務成果](../strategy/business-outcomes/index.md)
 - [財務模型](../strategy/financial-models.md)
@@ -52,7 +52,7 @@ ms.locfileid: "83755555"
 
 通常會定期執行下列工作：
 
-- 根據[優先順序的遷移待辦](../migrate/migration-considerations/assess/release-iteration-backlog.md)專案，監視採用計畫和進度。
+- 根據 [優先順序的遷移待辦](../migrate/migration-considerations/assess/release-iteration-backlog.md)專案，監視採用計畫和進度。
 - 找出支援遷移待處理專案所需的平臺變更並設定其優先順序。
 
 **會議步調：**
@@ -74,6 +74,6 @@ ms.locfileid: "83755555"
 
 ## <a name="next-steps"></a>後續步驟
 
-隨著雲端平臺的定義變得更好，調整[雲端自動化功能](./cloud-automation.md)可以加速採用。 它也可以協助建立最佳作法，同時降低業務和技術風險。
+隨著雲端平臺的定義變得更好，調整 [雲端自動化功能](./cloud-automation.md) 可以加速採用。 它也可以協助建立最佳作法，同時降低業務和技術風險。
 
-瞭解如何藉由開發跨小組的矩陣，識別負責、參與、諮詢和通知（RACI）的合作物件，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+藉由開發跨小組的矩陣來識別小組間的責任，以找出 RACI) 方的負責、參與、諮詢和通知 (。 下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。

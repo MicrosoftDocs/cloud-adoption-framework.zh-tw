@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8c598af7e0f0cb1c5e008cceaea508cc157b1657
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: dde224a78527c99e583c873ebfdc4c10f6fcf667
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473211"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196689"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 
-移轉範圍通常涉及多個資料中心的轉換。 下列指引會擴充[Azure 遷移指南](../azure-migration-guide/index.md)的範圍來處理多個資料中心。
+移轉範圍通常涉及多個資料中心的轉換。 下列指引會擴充 [Azure 遷移指南](../azure-migration-guide/index.md) 的範圍來處理多個資料中心。
 
 ## <a name="general-scope-expansion"></a>一般範圍擴充
 
@@ -24,7 +24,7 @@ ms.locfileid: "87473211"
 
 ## <a name="suggested-prerequisites"></a>建議的必要條件
 
-開始進行遷移之前，您應該針對要遷移的每個資料中心，在專案管理工具中建立 epics。 每個長篇故事都代表一個資料中心。 請務必瞭解此遷移的商業結果和動機。 使用這些動機來設定 epics （或資料中心）清單的優先順序。 比方說，如果移轉的驅動力是想要在必須更新租用之前結束資料中心，則每個 Epic 都會根據租用更新日期來設定優先順序。
+開始進行遷移之前，您應該針對要遷移的每個資料中心，在專案管理工具中建立 epics。 每個長篇故事都代表一個資料中心。 請務必瞭解此遷移的商業結果和動機。 使用這些動機來設定 epics (或資料中心) 清單的優先順序。 比方說，如果移轉的驅動力是想要在必須更新租用之前結束資料中心，則每個 Epic 都會根據租用更新日期來設定優先順序。
 
 在每個長篇故事中，要評估和遷移的工作負載會作為功能進行管理。 該工作負載中的每個資產都會以使用者案例的形式進行管理。 評估、遷移、優化、升級、保護和管理每個資產所需的工作，都是以每個資產的工作來表示。
 
@@ -36,13 +36,12 @@ ms.locfileid: "87473211"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評定程序進行期間的建議動作
 
-**評估跨資料中心的**相依性：Azure Migrate 中的相依性[視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)可以協助找出相依性。 在遷移之前使用此工具組，通常是最佳作法。 但在處理全域複雜性時，它會成為評估程式中的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
+**評估跨資料中心的** 相依性：Azure Migrate 中的相依性 [視覺效果工具](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) 可以協助找出相依性。 在遷移之前使用此工具組，通常是最佳作法。 但在處理全域複雜性時，它會成為評估程式中的必要步驟。 透過[相依性群組](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)，視覺效果可協助您識別為了支援工作負載所需的資產會有什麼 IP 位址和連接埠。
 
 > [!IMPORTANT]
 >
 > - 需要瞭解資產位置和 IP 位址架構的主題專家，才能識別位於次要資料中心的資產。
 > - 評估視覺效果中的下游相依性和用戶端，以瞭解雙向相依性。
-
 
 ## <a name="migration-process-changes"></a>遷移程式變更
 

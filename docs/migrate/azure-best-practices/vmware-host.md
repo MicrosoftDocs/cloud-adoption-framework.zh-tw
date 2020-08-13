@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9c92394b05b65534613f6e584e0d14f3c4d99903
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 0b1226113a98db84796b44515822d77a76fe7f97
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473177"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196641"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>適用于 Azure 的 VMware 主機遷移最佳做法
 
