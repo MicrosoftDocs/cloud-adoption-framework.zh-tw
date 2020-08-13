@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 11de19074526634af368916d5e58511c6f51ca90
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 5b8459378a4e435bc88b5f7623d08f3f61f52f5c
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193791"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195297"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
-[安全性基準專業領域](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則[審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
+[安全性基準專業領域](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括網路、數位資產和資料的保護。 如原則 [審查指南](../policy-compliance/cloud-policy-review.md)中所述，雲端採用架構包含三個層級的範例原則：每個專業領域的雲端原生、企業和雲端設計原則相容。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
 > Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審查。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 建議您不要使用此範例原則。
@@ -45,7 +45,7 @@ ms.locfileid: "86193791"
 - 及時 (JIT) ，只要以工作為基礎授與足夠的存取權，以限制暴露 overprivileged 的系統管理員認證。
 - 透過 Azure Active Directory 擴充使用者身分識別，以及跨多個環境存取原則。
 
-雖然在安全性基準專業領域的內容中瞭解身分[識別基準專業領域](../identity-baseline/index.md)很重要，但[雲端治理的五個專業領域](../index.md)會將它視為個別的專業領域。
+雖然在安全性基準專業領域的內容中瞭解身分 [識別基準專業領域](../identity-baseline/index.md) 很重要，但 [雲端治理的五個專業領域](../index.md) 會將它視為個別的專業領域。
 
 ### <a name="network-access-policies"></a>網路存取原則
 
@@ -67,7 +67,7 @@ ms.locfileid: "86193791"
 - Azure Key Vault 可讓使用者保護及控制雲端應用程式和服務所使用的密碼編譯金鑰、密碼、連接字串和憑證。
 - Azure 資訊保護將有助於分類、標記和保護應用程式內的機密資料。
 
-雖然這些功能內建於 Azure 中，上述各項需要設定，且可能會增加成本。 強烈建議每個雲端原生功能與[資料分類策略](../policy-compliance/data-classification.md)的對齊方式。
+雖然這些功能內建於 Azure 中，上述各項需要設定，且可能會增加成本。 強烈建議每個雲端原生功能與 [資料分類策略](../policy-compliance/data-classification.md) 的對齊方式。
 
 ### <a name="security-monitoring"></a>安全性監控
 
@@ -94,7 +94,7 @@ ms.locfileid: "86193791"
 
 ## <a name="next-steps"></a>後續步驟
 
-既然您已複習過雲端原生解決方案的安全性基準原則範例，請回到[原則審查指南](../policy-compliance/cloud-policy-review.md)以開始建立此範例，以建立您自己的雲端採用原則。
+既然您已複習過雲端原生解決方案的安全性基準原則範例，請回到原則審查指南以開始建立此範例，以建立您自己的雲端採用原則。
 
 > [!div class="nextstepaction"]
 > [使用原則審查指南建立您自己的原則](../policy-compliance/cloud-policy-review.md)

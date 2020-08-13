@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5fc14f4ae460e3f2543754c2f99b5e278ea87815
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: a288d08a359f92feada98e76990f37a2e870c2e2
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450470"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195904"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的一致效能
 
@@ -34,13 +34,13 @@ ms.locfileid: "86450470"
 
 - 增強管理基準，以包含與效能預期偏差相關的自動化補救工作。
 - 當需要工作負載特定的資料模式或架構變更以符合效能需求時，請使用工作負載特有的作業來提供更佳的效能控制。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中 IT 組合的營運決策。 在 [**基準**] 索引標籤的 [作業**合規性**] 區段中，將焦點放在包含效能自動化決策。
+- 記錄 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中 IT 組合的營運決策。 在 [**基準**] 索引標籤的 [作業**合規性**] 區段中，將焦點放在包含效能自動化決策。
 
 **支援交付後完成的指引：**
 
 - [增強的管理基準](../manage/azure-management-guide/enhanced-baseline.md)一文概述使用工具（例如 Azure 自動化）新增與效能相關的增強功能的範例。 這種方法可以透過對支援資產大小和規模的基本修改，協助維持一致的效能。
-- [工作負載特有的作業](../manage/azure-management-guide/platform-specialization.md)會使用 Microsoft Azure 妥善架構的審查，針對特定的工作負載提供自動化的指引。 當工作負載特定的資料應該會驅動操作動作時，此效能管理的方法特別有用。
-- 上述指導方針假設現有的[管理基準](../manage/considerations/discipline.md)執行支援完整的工作負載組合。
+- [工作負載特有的作業](../manage/azure-management-guide/platform-specialization.md) 會使用 Microsoft Azure 妥善架構的審查，針對特定的工作負載提供自動化的指引。 當工作負載特定的資料應該會驅動操作動作時，此效能管理的方法特別有用。
+- 上述指導方針假設現有的 [管理基準](../manage/considerations/discipline.md) 執行支援完整的工作負載組合。
 
 > [!NOTE]
 > 整個雲端採用週期的各種決策，可能會對效能產生直接的影響。 下列步驟有助於概述在 IT 組合間提供效能所需的合作關係和支援工作。
@@ -59,13 +59,13 @@ ms.locfileid: "86450470"
 **項**
 
 - 針對所有受影響的系統，確保適當地應用其增強的管理基準。
-- 記錄[資源一致性專業領域範本](../govern/resource-consistency/template.md)中資源一致性的原則、程式和設計指導方針。
+- 記錄 [資源一致性專業領域範本](../govern/resource-consistency/template.md)中資源一致性的原則、程式和設計指導方針。
 
 **支援交付後完成的指引：**
 
-- 確保所有的工作負載和資源都遵循[適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)，特別強調「重要性」標記。
-- 如果您不熟悉雲端治理，請使用管控方法來建立[治理原則、處理常式和專業領域](../govern/index.md)。
-- 如果您不熟悉成本管理治理專業領域，請考慮遵循[成本管理改良文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [[執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)] 區段。
+- 確保所有的工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)，特別強調「重要性」標記。
+- 如果您不熟悉雲端治理，請使用管控方法來建立 [治理原則、處理常式和專業領域](../govern/index.md) 。
+- 如果您不熟悉成本管理治理專業領域，請考慮遵循 [成本管理改良文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -80,7 +80,7 @@ ms.locfileid: "86450470"
 
 **項**
 
-- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的動機、結果和業務理由。
+- 記錄 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的動機、結果和業務理由。
 - 請確定管理基準提供符合雲端採用策略方向的營運支援。
 
 **支援交付後完成的指引：**
@@ -98,13 +98,13 @@ ms.locfileid: "86450470"
 
 ## <a name="step-4-assess-and-plan-for-workload-adoption"></a>步驟4：評估和規劃工作負載採用
 
-數位資產（或現有 IT 組合的分析）可以協助驗證商業理由，並提供 IT 組合的精簡觀點。 採用方案可讓您清楚理解採用期間的啟用時間軸。 配合該計畫和數位資產分析，提供了一種方式來規劃作業管理的未來相依性。
+數位資產 (或) 現有 IT 組合的分析，可以協助驗證商業理由並提供 IT 組合的精簡觀點。 採用方案可讓您清楚理解採用期間的啟用時間軸。 配合該計畫和數位資產分析，提供了一種方式來規劃作業管理的未來相依性。
 
 瞭解此方案也會邀請雲端營運小組進入開發週期。 然後，小組可以評估並規劃提供工作負載作業所需之管理基準的任何變更。
 
 **項**
 
-- 更新[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以反映數位資產分析所觸發的變更。
+- 更新 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) ，以反映數位資產分析所觸發的變更。
 - 與雲端營運小組合作，在近乎長期的採用計畫中，清楚地定義每個工作負載的重要性和業務影響。
 - 與雲端營運小組合作，以建立作業就緒時間的時程表。
 
@@ -113,7 +113,7 @@ ms.locfileid: "86450470"
 - [收集清查](../digital-estate/inventory.md)：建立資料來源，以在採用之前分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在累加式合理化期間，使用量化分析來識別用於預算的雲端候選項目。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理，藉由[建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來對齊成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理，藉由 [建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來對齊成本和預測模型。
 - [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：使用可操作的工作負載、資產和時間軸詳細資料來建立方案。
 
 <!-- markdownlint-disable MD033 -->
@@ -153,7 +153,7 @@ ms.locfileid: "86450470"
 
 - 使用資源一致性原則來測試生產部署的作業準備就緒。
 - 驗證是否遵循資源一致性和作業需求的設計指引。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
+- 記錄 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的任何先進作業需求。
 
 **支援交付後完成的指引：**
 

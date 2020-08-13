@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a21b41583789d25f00d8dfb81ac1e9b8943af004
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0b2ed7378b755fd35583401f8b8478ba6cbf800a
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449773"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195078"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化的現有資料來源來收集資料
 
-公司通常會有不同種類的現有資料可以[將大眾化](../considerations/data.md)。 當客戶假設需要使用現有的資料來建立新式解決方案時，第一個步驟可能是資料移轉和現代化，以準備進行開始創造發明和創新。 為了配合雲端採用方案內的現有遷移工作，您可以更輕鬆地在[遷移方法](../../migrate/index.md)中進行遷移和現代化。
+公司通常會有不同種類的現有資料可以 [將大眾化](../considerations/data.md)。 當客戶假設需要使用現有的資料來建立新式解決方案時，第一個步驟可能是資料移轉和現代化，以準備進行開始創造發明和創新。 為了配合雲端採用方案內的現有遷移工作，您可以更輕鬆地在 [遷移方法](../../migrate/index.md)中進行遷移和現代化。
 
 ## <a name="use-of-this-article"></a>本文的使用
 
@@ -26,9 +26,9 @@ ms.locfileid: "86449773"
 
 ## <a name="primary-toolset"></a>主要工具組
 
-當您遷移並現代化內部部署資料時，最常見的 Azure 工具選擇是[Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 這項服務屬於更廣泛的[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)工具鏈。 針對現有的 SQL Server 資料來源， [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)可以協助您評估和遷移少量的資料結構。
+當您遷移並現代化內部部署資料時，最常見的 Azure 工具選擇是 [Azure 資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 這項服務屬於更廣泛的 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) 工具鏈。 針對現有的 SQL Server 資料來源， [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) 可以協助您評估和遷移少量的資料結構。
 
-若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源對目標資料庫使用[資料庫移轉服務](https://docs.microsoft.com/azure/dms)。 範例包括將 Oracle 資料庫移轉至於 postgresql 或 MongoDB 資料庫，以 Azure Cosmos DB。 採用小組更常使用合作夥伴工具或自訂腳本，根據基礎結構即服務（IaaS）遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
+若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源對目標資料庫使用 [資料庫移轉服務](https://docs.microsoft.com/azure/dms) 。 範例包括將 Oracle 資料庫移轉至於 postgresql 或 MongoDB 資料庫，以 Azure Cosmos DB。 採用小組更常使用合作夥伴工具或自訂腳本，根據基礎結構即服務 (IaaS) ，遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
 
 ## <a name="considerations-and-guidance"></a>考慮和指引
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 94c66af70be7c3683e459719eb6e2a73e74e66d9
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: 4e2dbcc350e3ec0bf7ff700d4ef44601e60a2ead
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805441"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195980"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中新的產品和服務創新
 
@@ -28,7 +28,7 @@ ms.locfileid: "87805441"
 
 **項**
 
-- 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄動機和所需的商務結果。
+- 使用 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄動機和所需的商務結果。
 
 <!-- docsTest:ignore "Get started: Accelerate migration" -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "87805441"
 
 - [動機](../strategy/motivations.md)：策略對齊的第一個步驟是取得推動創新工作之動機的合約。 一開始先瞭解並分類來自企業和 IT 的專案關係人的動機和一般主題。
 - [商務結果](../strategy/business-outcomes/index.md)：當動機對齊之後，就可以捕捉所需的商務結果。 這種資訊提供清楚的計量，可讓您用來測量整體轉換。
-- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與*需要*改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務[：加速遷移](./migrate.md)。
+- [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用路徑。 這種採用方式與 *需要* 改造或完整重建的新自訂建立應用程式或工作負載有關。 當動機非常適合所有工作負載的創新時，請務必評估該組合，以確保這些投資可以產生所需的投資報酬率。 特定資源的現代化和小規模的重建工作都可以創新，但在開始使用之後，可能會更好服務 [：加速遷移](./migrate.md)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -51,7 +51,7 @@ ms.locfileid: "87805441"
 
 **項**
 
-- 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄商業理由。
+- 使用 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄商業理由。
 
 **支援交付後完成的指引：**
 
@@ -76,11 +76,11 @@ ms.locfileid: "87805441"
   - 支援規劃的創新所需之任何支援清查的量化分析。
   - 以定性分析提供創新所需的任何支援工作負載。
 - 計算支援創新工作所需的新清查成本。
-- 使用精簡計算來更新[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的商業理由。
+- 使用精簡計算來更新 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 中的商業理由。
 
 **支援交付後完成的指引：**
 
-探索和評量提供更深入的技術調整層級。 接著，您可以建立動作計畫，以遷移規劃的創新所需的任何相依工作負載。 當公司擁有現有的資料來源、集中式應用程式或服務層級，而這些都是在企業其他部分的內容中提供創新時，這種情況很常見。 
+探索和評量提供更深入的技術調整層級。 接著，您可以建立動作計畫，以遷移規劃的創新所需的任何相依工作負載。 當公司擁有現有的資料來源、集中式應用程式或服務層級，而這些都是在企業其他部分的內容中提供創新時，這種情況很常見。
 
 當有相依的系統時，下列文章可以引導您探索和評估：
 
@@ -96,7 +96,7 @@ ms.locfileid: "87805441"
 
 ## <a name="step-4-plan-for-migration-of-dependent-assets"></a>步驟4：規劃相依資產的遷移
 
-當新的創新取決於現有的工作負載或資產時，雲端採用方案範本會提供開發專案待處理專案的加速方法。 然後可以修改待處理專案，以反映探索結果、合理化、所需的技能，以及合作夥伴的合約。
+當新的創新取決於現有的工作負載或資產時，雲端採用方案會提供開發專案待處理專案的加速方法。 然後可以修改待處理專案，以反映探索結果、合理化、所需的技能，以及合作夥伴的合約。
 
 **項**
 
@@ -109,7 +109,7 @@ ms.locfileid: "87805441"
 
 **支援交付後完成的指引：**
 
-- [雲端採用方案範本](../plan/template.md)：部署基本範本。
+- [雲端採用方案](../plan/template.md)：使用「基本」範本定義您的方案。
 - [工作負載對齊](../plan/workloads.md)：定義待處理專案中的工作負載。
 - [工作量調整](../plan/assets.md)：對齊待處理專案中的資產和工作負載，以清楚地定義優先順序工作負載的工作量。
 - [人員和時間對齊](../plan/iteration-paths.md)：建立工作負載的反復專案、速度和發行。
@@ -150,14 +150,14 @@ ms.locfileid: "87805441"
 
 **項**
 
-- 完成[Microsoft Azure 架構審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review)，以評估各種架構和作業決策。
-- 調整[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)以反映任何必要的 advanced 作業。
+- 完成 [Microsoft Azure 架構審查](https://docs.microsoft.com/assessments/?id=azure-architecture-review) ，以評估各種架構和作業決策。
+- 調整 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) 以反映任何必要的 advanced 作業。
 
 **支援交付後完成的指引：**
 
 - [擴充 [管理基準](../manage/best-practices.md)]：雲端採用架構的這一節會引導您完成各種轉換，進入雲端的營運管理。
 - [取得特定的先進作業](../manage/design-principles.md)：探索超越您的管理基準的方式。
-- 如果需要進行 advanced 作業以支援您的作業需求，請評估[商務承諾](../manage/considerations/business-alignment.md)，以判斷兩個小組的營運責任。
+- 如果需要進行 advanced 作業以支援您的作業需求，請評估 [商務承諾](../manage/considerations/business-alignment.md) ，以判斷兩個小組的營運責任。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -168,7 +168,7 @@ ms.locfileid: "87805441"
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>步驟7：部署對齊的登陸區域
 
-裝載于雲端的所有資產都在登陸區域內。 該登陸區域可能會有明確的治理、安全性和操作需求。 或者，這可能是不支援其他小組的新訂用帳戶。 在任一案例中，請務必從一開始就遵循治理和營運需求的登陸區域開始。 
+裝載于雲端的所有資產都在登陸區域內。 該登陸區域可能會有明確的治理、安全性和操作需求。 或者，這可能是不支援其他小組的新訂用帳戶。 在任一案例中，請務必從一開始就遵循治理和營運需求的登陸區域開始。
 
 從核准的登陸區域開始，可協助您的小組在開發期間及早探索原則違規，而不是將解決方案發行到生產環境。 早期探索可協助您的小組移除封鎖程式，並讓採用和治理小組有足夠的時間進行變更。
 
@@ -215,13 +215,13 @@ ms.locfileid: "87805441"
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>步驟9：評估您組織的創新成熟度
 
-為了支援創新策略的開發，AI 成熟度模型是免費的工具，可協助組織評估其建立和擁有以 AI 為基礎之系統的能力。 成熟度有四個層級：基本、接近、渴望和成熟。 每個層級都包含一組特定的特性，以協助判斷您的組織能夠採用特定類型的 AI 解決方案、降低相關風險，以及實施策略。 
+為了支援創新策略的開發，AI 成熟度模型是免費的工具，可協助組織評估其建立和擁有以 AI 為基礎之系統的能力。 成熟度有四個層級：基本、接近、渴望和成熟。 每個層級都包含一組特定的特性，以協助判斷您的組織能夠採用特定類型的 AI 解決方案、降低相關風險，以及實施策略。
 
 評量需要5到10分鐘的時間，並測量貴組織在四個類別之間的功能：策略、文化、組織特性和功能。 測量這些類別可讓 AI 成熟度模型計算您組織的分數，並在曲線上提供 AI 創新成熟度的預估。
 
 **項**
 
-- 使用[Ai 成熟度模型工具](https://aiready.microsoft.com)來評估貴組織的 ai 成熟度，以建立以 ai 為基礎的系統。
+- 使用 [Ai 成熟度模型工具](https://aiready.microsoft.com) 來評估貴組織的 ai 成熟度，以建立以 ai 為基礎的系統。
 
 **支援交付後完成的指引：**
 
@@ -240,7 +240,7 @@ ms.locfileid: "87805441"
 
 ## <a name="next-steps"></a>後續步驟
 
-雲端採用架構是生命週期解決方案。 它可協助您開始創新的旅程。 它可協助您的組織開始創新的旅程，並提升支援創新工作的團隊成熟度。 
+雲端採用架構是生命週期解決方案。 它可協助您開始創新的旅程。 它可協助您的組織開始創新的旅程，並提升支援創新工作的團隊成熟度。
 
 下列小組可以使用這些後續步驟來繼續提升其工作的成熟度。 這些平行處理常式不是線性的，而且不應該被視為封鎖器。 相反地，每個都是平行值串流，以協助您的公司整體雲端就緒程度成熟。
 
@@ -248,6 +248,6 @@ ms.locfileid: "87805441"
 |---|---|
 | 雲端 &nbsp; 採用 &nbsp; 小組 | 程式[改善](../innovate/considerations/index.md)可讓您深入瞭解會影響客戶並推動週期性採用的創新方法。 |
 | 雲端 &nbsp; 策略 &nbsp; 小組 | [策略方法](../strategy/index.md)和[計畫方法](../plan/index.md)是以採用計畫發展的反復流程。 返回這些總覽頁面，並繼續逐一查看您的商務和技術策略。 |
-| 雲端 &nbsp; 平臺 &nbsp; 小組 | 請造訪[準備好的方法](../ready/index.md)，繼續推進支援遷移或其他採用成果的整體雲端平臺。 |
-| 雲端 &nbsp; 治理 &nbsp; 小組 | 使用[管控方法](../govern/index.md)來繼續改善治理流程、原則和專業領域。 |
-| 雲端 &nbsp; 營運 &nbsp; 小組 | 建基於[管理方法](../manage/index.md)，以在 Azure 中提供更豐富的作業。 |
+| 雲端 &nbsp; 平臺 &nbsp; 小組 | 請造訪 [準備好的方法](../ready/index.md) ，繼續推進支援遷移或其他採用成果的整體雲端平臺。 |
+| 雲端 &nbsp; 治理 &nbsp; 小組 | 使用 [管控方法](../govern/index.md) 來繼續改善治理流程、原則和專業領域。 |
+| 雲端 &nbsp; 營運 &nbsp; 小組 | 建基於 [管理方法](../manage/index.md) ，以在 Azure 中提供更豐富的作業。 |

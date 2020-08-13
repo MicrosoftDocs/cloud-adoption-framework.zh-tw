@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5a41d4c227c1f96fd4f7e81e893e607bfd51e92b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4e7d0642f2b3ae669e5a8a63893249308a3d67db
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217960"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195326"
 ---
 # <a name="resource-consistency-discipline-template"></a>資源一致性專業領域範本
 
@@ -24,7 +24,7 @@ ms.locfileid: "83217960"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您的雲端控管策略中定義有效資源一致性專業領域的步驟。
 
-[下載資源一致性專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
+[下載資源一致性專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,23 +7,23 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 16d808b09b0631f95445288dcf856c8aca0a0965
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: bc7ddc729f6a53a8764c304f48238755392fd1b1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753017"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195989"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解並記載基本的對齊決策
 
-雲端採用旅程可以將許多商業、技術和組織的優勢發揮到最大。 無論您想要完成什麼動作，如果您的旅程牽涉到雲端，則每個小組都應該瞭解幾個初步的決策。 當您逐步執行本指南時，請使用[初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄這些決策。 此範本可協助您快速上線參與雲端採用生命週期的小組成員。
+雲端採用旅程可以將許多商業、技術和組織的優勢發揮到最大。 無論您想要完成什麼動作，如果您的旅程牽涉到雲端，則每個小組都應該瞭解幾個初步的決策。 當您逐步執行本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄這些決策。 此範本可協助您快速上線參與雲端採用生命週期的小組成員。
 
 > [!NOTE]
 > 選取下列任何連結，可能會導致您在 Azure 的 Microsoft Cloud 採用架構的目錄中彈跳，並尋找您稍後將用來協助小組執行相關指引的基本概念。 將此頁面加入書簽，通常會返回此檢查清單。
 
 ## <a name="step-1-understand-how-azure-works"></a>步驟1：瞭解 Azure 的運作方式
 
-如果您已選擇 Azure 做為雲端提供者以支援您的雲端採用旅程，請務必瞭解[azure 的運作方式](./what-is-azure.md)。
+如果您已選擇 Azure 做為雲端提供者以支援您的雲端採用旅程，請務必瞭解 [azure 的運作方式](./what-is-azure.md)。
 
 **相關小組、交付專案和支援指引：**
 
@@ -31,7 +31,7 @@ ms.locfileid: "83753017"
 
 ## <a name="step-2-understand-initial-azure-concepts"></a>步驟2：瞭解初始 Azure 概念
 
-Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-concepts.md)，這是關於 Azure 實現技術策略的深度交談所需的。
+Azure 是以一組 [基本概念為基礎](../ready/considerations/fundamental-concepts.md) ，這是關於 Azure 實現技術策略的深度交談所需的。
 
 **相關小組、交付專案和支援指引：**
 
@@ -43,14 +43,14 @@ Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-co
 
 **項**
 
-- 針對[初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中的組合檔，記錄位置、狀態及負責的人員。
+- 針對 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中的組合檔，記錄位置、狀態及負責的人員。
 
 **支援交付後完成的指引：**
 
-- [基本概念](../ready/considerations/fundamental-concepts.md)可協助您在開始雲端採用之前，先瞭解重要的 Azure 主題。
+- [基本概念](../ready/considerations/fundamental-concepts.md) 可協助您在開始雲端採用之前，先瞭解重要的 Azure 主題。
 - [Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)和商務調整方法可協助您瞭解已轉換至雲端作業小組的工作負載和資產。
 - [雲端採用方案](../plan/plan-intro.md)提供工作負載和資產的待處理專案（backlog），並預定在雲端採用。
-- [數位資產分析](../digital-estate/approach.md)是一種方法，用來記載預定在雲端採用的現有工作負載和資產。 在 Azure 中，數位資產最適合以稱為[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-support-matrix)的工具表示。
+- [數位資產分析](../digital-estate/approach.md) 是一種方法，用來記載預定在雲端採用的現有工作負載和資產。 在 Azure 中，數位資產最適合以稱為 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-support-matrix)的工具表示。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -65,11 +65,11 @@ Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-co
 
 **項**
 
-- 記錄[初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中的相關階層需求。
+- 記錄 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中的相關階層需求。
 
 **支援交付後完成的指引：**
 
-- 瞭解[組合](../reference/fundamental-concepts/hosting-hierarchy.md)階層的層級，以對齊基本詞彙。
+- 瞭解 [組合](../reference/fundamental-concepts/hosting-hierarchy.md) 階層的層級，以對齊基本詞彙。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -84,12 +84,12 @@ Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-co
 
 **項**
 
-- 在[初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中，記錄 [命名] 和 [標記慣例] 活頁簿的位置、狀態和負責的合作物件。
+- 在 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中，記錄 [命名] 和 [標記慣例] 活頁簿的位置、狀態和負責的合作物件。
 
 **支援交付後完成的指引：**
 
-- 建立[命名和標記標準](../ready/azure-best-practices/naming-and-tagging.md)。
-- 填入 [[命名和標記慣例](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx)] 活頁簿來追蹤決策。
+- 建立 [命名和標記標準](../ready/azure-best-practices/naming-and-tagging.md)。
+- 填入 [命名和標記慣例追蹤範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) 來追蹤決策。
 - [在 Azure 中檢查並更新現有的標記](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
 - [在 Azure 中強制執行標記原則](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies)。
 
@@ -106,19 +106,19 @@ Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-co
 
 **項**
 
-- 在[初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中，將 Azure 產品對應至組合階層的對齊層級。
+- 在 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)中，將 Azure 產品對應至組合階層的對齊層級。
 
 **支援交付後完成的指引：**
 
-- 瞭解[Azure 產品如何支援組合](../reference/fundamental-concepts/hierarchy-azure-tools.md)階層。
+- 瞭解 [Azure 產品如何支援組合](../reference/fundamental-concepts/hierarchy-azure-tools.md)階層。
 - 檢查現有的訂用帳戶，以對齊所選的組合階層。
 
 建立訂用帳戶原則：
 
-- 從設計開始使用[兩個訂閱](../ready/azure-best-practices/initial-subscriptions.md)。 新增基本訂用帳戶設計，以考慮常見的企業需求，例如共用服務或沙箱訂閱。
-- [管理多個](../ready/azure-best-practices/organize-subscriptions.md)訂用帳戶，因為需要額外的訂用帳戶，才能支援雲端採用方案。
+- 從設計開始使用 [兩個訂閱](../ready/azure-best-practices/initial-subscriptions.md)。 新增基本訂用帳戶設計，以考慮常見的企業需求，例如共用服務或沙箱訂閱。
+- [管理多個](../ready/azure-best-practices/organize-subscriptions.md) 訂用帳戶，因為需要額外的訂用帳戶，才能支援雲端採用方案。
 - [根據組合階層建立清楚的界限](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure)。
-- 必要時，請在訂用帳戶[之間移動資源群組和資產](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)，以符合組織策略。
+- 必要時，請在訂用帳戶 [之間移動資源群組和資產](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) ，以符合組織策略。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -139,8 +139,8 @@ Azure 是以一組[基本概念為基礎](../ready/considerations/fundamental-co
 
 **支援交付後完成的指引：**
 
-- 使用先前的步驟作為指南，以評估[組合階層責任指引](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance)。 判斷哪些功能可能需要由專用的組織或虛擬小組傳遞。
-- 使用[入門：讓您的組織](./org-alignment.md)能夠將組合階層責任指引套用至 RACI （負責、有責任、已諮詢和已通知）的圖表。
+- 使用先前的步驟作為指南，以評估 [組合階層責任指引](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance)。 判斷哪些功能可能需要由專用的組織或虛擬小組傳遞。
+- 使用 [入門：讓您的組織](./org-alignment.md) 與 RACI (負責、負責、諮詢和通知的) 圖表，將組合階層責任指引套用至該。
 
 <!-- markdownlint-disable MD033 -->
 <br>

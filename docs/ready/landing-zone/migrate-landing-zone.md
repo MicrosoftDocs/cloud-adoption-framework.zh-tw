@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1b1821a40df2f221855642c168e3a7bf13c56492
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 828b61ae6064e4c3b00fb0248900fe8f8cbab59f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479206"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88192899"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>在 Azure 中部署移轉登陸區域
 
@@ -20,10 +20,10 @@ ms.locfileid: "86479206"
 
 ## <a name="deploy-the-blueprint"></a>部署藍圖
 
-在您使用雲端採用架構中的 CAF 遷移登陸區域藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用[部署步驟][deploy-sample]來部署[CAF 遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)。
+在您使用雲端採用架構中的 CAF 遷移登陸區域藍圖之前，請先參閱下列設計原則、假設、決策和實施指引。 如果本指南與所需的雲端採用方案一致，則可以使用部署步驟來部署 [CAF 遷移登陸區域藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) 。
 
 > [!div class="nextstepaction"]
-> [部署藍圖範例][deploy-sample]
+> [部署藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
 ## <a name="design-principles"></a>設計原則
 
@@ -31,9 +31,9 @@ ms.locfileid: "86479206"
 
 ### <a name="deployment-options"></a>部署選項
 
-此實行選項會部署最基本的可行產品（MVP）來開始進行遷移。 當遷移進行時，客戶會遵循以模組化重構為基礎的方法，以平行指引來成熟作業模型，使用控管[方法](../../govern/index.md)和[管理方法](../../manage/index.md)來平行處理這些複雜主題，以進行初始遷移工作。
+此實施選項會部署 (MVP) 的最小可行產品，以開始進行遷移。 當遷移進行時，客戶會遵循以模組化重構為基礎的方法，以平行指引來成熟作業模型，使用控管 [方法](../../govern/index.md) 和 [管理方法](../../manage/index.md) 來平行處理這些複雜主題，以進行初始遷移工作。
 
-下列的[決策](#decisions)一節會概述此 MVP 方法所部署的特定資源。
+下列的 [決策](#decisions) 一節會概述此 MVP 方法所部署的特定資源。
 
 ### <a name="enterprise-enrollment"></a>企業註冊
 
@@ -45,33 +45,33 @@ ms.locfileid: "86479206"
 
 ### <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
-此 [執行] 選項會建立一個虛擬網路，其中包含閘道、防火牆、跳躍箱和登陸區域的子網。 在下一個步驟中，小組會遵循[網路決策指南](../considerations/networking-options.md)，在閘道子網與其他網路之間執行適當的連線形式，以配合[網路安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+此 [執行] 選項會建立一個虛擬網路，其中包含閘道、防火牆、跳躍箱和登陸區域的子網。 在下一個步驟中，小組會遵循 [網路決策指南](../considerations/networking-options.md) ，在閘道子網與其他網路之間執行適當的連線形式，以配合 [網路安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="resource-organization"></a>資源組織
 
 此 [執行] 選項會建立單一登陸區域，其中的資源會組織成特定資源群組所定義的工作負載。 為資源組織選擇此極簡方法，將會延遲資源組織的技術決策，直到小組的雲端操作模型更清楚地定義為止。
 
-此方法是根據雲端採用工作不會超過訂用帳戶[限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)的假設。 此選項也會假設此登陸區域內的架構複雜性和安全性需求受到限制。
+此方法是根據雲端採用工作不會超過訂用帳戶 [限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)的假設。 此選項也會假設此登陸區域內的架構複雜性和安全性需求受到限制。
 
-如果這項變更是透過雲端採用計畫的過程進行，則資源組織可能需要使用控管[方法](../../govern/index.md)中的指引來重構。
+如果這項變更是透過雲端採用計畫的過程進行，則資源組織可能需要使用控管 [方法](../../govern/index.md)中的指引來重構。
 
 ### <a name="governance-disciplines"></a>治理專業領域
 
 此執行選項不會執行任何治理工具。 如果沒有定義的原則自動化，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
 
-若要加速治理專業領域的平行開發，請參閱[管理方法](../../govern/index.md)，並考慮部署[CAF Foundation 藍圖](./foundation-blueprint.md)，以及 CAF 遷移登陸區域藍圖。
+若要加速治理專業領域的平行開發，請參閱 [管理方法](../../govern/index.md) ，並考慮部署 [CAF Foundation 藍圖](./foundation-blueprint.md) ，以及 CAF 遷移登陸區域藍圖。
 
 > [!WARNING]
-> 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+> 隨著治理專業領域的成熟，可能需要重構。 可能需要重構。 具體而言，資源稍後可能需要 [移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="operations-baseline"></a>作業基準
 
 此執行選項不會執行任何作業。 如果沒有定義的作業基準，此登陸區域不應用於任何任務關鍵性工作負載或敏感性資料。 這會假設此登陸區域用於有限的生產環境部署，以平行方式起始學習、反復執行及開發整體作業模型，以進行這些早期階段的遷移工作。
 
-若要加速並行開發作業基準，請參閱[管理方法](../../manage/index.md)，並考慮部署[Azure 伺服器管理指南](../../manage/azure-server-management/index.md)。
+若要加速並行開發作業基準，請參閱 [管理方法](../../manage/index.md) ，並考慮部署 [Azure 伺服器管理指南](../../manage/azure-server-management/index.md)。
 
 > [!WARNING]
-> 當作業基準開發時，可能需要重構。 具體而言，資源稍後可能需要[移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+> 當作業基準開發時，可能需要重構。 具體而言，資源稍後可能需要 [移至新的訂用帳戶或資源群組](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>業務持續性和災害復原 (BCDR)
 
@@ -81,7 +81,7 @@ ms.locfileid: "86479206"
 
 這個初始登陸區域包含下列假設或條件約束。 如果這些假設符合您的條件約束，您可以使用藍圖來建立您的第一個登陸區域。 藍圖也可以加以擴充，以建立符合您特有條件限制的登陸區域藍圖。
 
-- **訂用帳戶限制：** 這種採用成果不應超過[訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
+- **訂用帳戶限制：** 這種採用成果不應超過 [訂](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
 - **合規性：** 此登陸區域不需要協力廠商合規性需求。
 - **架構複雜度：** 架構複雜度不需要額外的生產訂用帳戶。
 - **共用服務：** Azure 中沒有任何現有的共用服務需要將此訂用帳戶視為中樞和輪輻架構中的輪輻。
@@ -111,20 +111,16 @@ ms.locfileid: "86479206"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>自訂或部署登陸區域
 
-深入瞭解並下載 CAF 遷移登陸區域藍圖的參考範例，以便從[Azure 藍圖範例][deploy-sample]進行部署或自訂。
+深入瞭解並下載 CAF 遷移登陸區域藍圖的參考範例，以便從 Azure 藍圖範例進行部署或自訂。
 
 > [!div class="nextstepaction"]
-> [部署藍圖範例][deploy-sample]
+> [部署藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
-如需應對此藍圖或產生的登陸區域進行自訂的指引，請參閱[登陸區域考慮](../considerations/index.md)。
+如需應對此藍圖或產生的登陸區域進行自訂的指引，請參閱 [登陸區域考慮](../considerations/index.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-部署您的第一個登陸區域之後，您就可以開始[擴充您的登陸區域](../considerations/index.md)
+部署您的第一個登陸區域之後，您就可以開始擴充您的登陸區域。
 
 > [!div class="nextstepaction"]
 > [擴充登陸區域](../considerations/index.md)
-
-<!-- links -->
-
-[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

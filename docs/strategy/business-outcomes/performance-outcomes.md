@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 52bec9b36c1e0aba845647f4617fb0aca97695d0
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862631"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196191"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果的範例
 
-如[商務結果](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于常見的商務量值：效能。
+如 [商務結果](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于常見的商務量值：效能。
 
 在現今的技術社會中，客戶會假設應用程式正常運作，而且一律可供使用。 當不符合此預期時，會導致信譽損毀，且成本高昂且長期持續。
 
@@ -40,11 +40,11 @@ Azure 備份是可降低基礎結構成本的簡單解決方案，同時提供�
 
 Azure Site Recovery 可讓您輕鬆地在 Azure 區域之間複寫應用程式來測試嚴重損壞修復。 您也可以將內部部署 VMware 和 Hyper-v 虛擬機器和實體伺服器複寫至 Azure，以在主要網站中斷時維持可用狀態。 而且，您可以在主要網站再次啟動並執行時，將工作負載復原到其中。
 
-- **範例：** 石油和天然氣公司使用 Azure 技術來執行完整的 site recovery。 該公司選擇不完全採用雲端來進行日常作業，但雲端的商務持續性和嚴重損壞修復（BCDR）功能仍會保護其資料中心。 身為數十萬英里的颶風，其執行夥伴已開始將網站復原至 Azure。 在颶風觸及之前，所有任務關鍵性資產都在 Azure 中執行，以防止任何停機時間。
+- **範例：** 石油和天然氣公司使用 Azure 技術來執行完整的 site recovery。 該公司選擇不完全採用雲端來進行日常作業，但是雲端的商務持續性和嚴重損壞修復 (BCDR) 功能仍保護其資料中心。 身為數十萬英里的颶風，其執行夥伴已開始將網站復原至 Azure。 在颶風觸及之前，所有任務關鍵性資產都在 Azure 中執行，以防止任何停機時間。
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何使用[商務結果範本](./business-outcome-template.md)。
+瞭解如何使用商務結果範本。
 
 > [!div class="nextstepaction"]
 > [使用商務結果範本](./business-outcome-template.md)

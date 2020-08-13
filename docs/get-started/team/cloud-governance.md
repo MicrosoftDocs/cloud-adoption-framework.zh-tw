@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ff5b2dba1cdb95cdcc007ba5cea52b86a902584d
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: d2b8ba3cb20d93ad0ed4d5eb9ec6bf8fe6dbe0fb
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233319"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195817"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：組建雲端治理小組
 
@@ -22,16 +22,16 @@ ms.locfileid: "86233319"
 
 ## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>步驟1：判斷是否需要雲端治理小組
 
-Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 一開始，小組可能非常小。 無論其大小為何，其角色都非常重要。 如果不需要小組，現有採用小組的群組或個人應同意符合[雲端治理功能](../../organize/cloud-governance.md)的相關責任。
+Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 一開始，小組可能非常小。 無論其大小為何，其角色都非常重要。 如果不需要小組，現有採用小組的群組或個人應同意符合 [雲端治理功能](../../organize/cloud-governance.md)的相關責任。
 
 **項**
 
 - 判斷您是否需要雲端治理小組。
-- 藉由開發跨團隊的矩陣，識別負責、參與、_諮詢和通知的 (RACI) _方，來協調小組間的責任。 使用工作表中的[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)，記錄決策和負責的人員 `Org Alignment` 。
+- 藉由開發跨團隊的矩陣，識別負責、參與、 _諮詢和通知的 (RACI) _ 方，來協調小組間的責任。 使用工作表中的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) ，記錄決策和負責的人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
-- [雲端治理功能](../../organize/cloud-governance.md)可能已散佈到多個個人或小組。 擁有「雲端治理小組」標題的小組並不重要，但所需的功能應該與負責的合作物件或小組一起運作。
+- [雲端治理功能](../../organize/cloud-governance.md) 可能已散佈到多個個人或小組。 擁有「雲端治理小組」標題的小組並不重要，但所需的功能應該與負責的合作物件或小組一起運作。
 - 如果公司的長期雲端採用策略可以從一個雲端環境中的一個登陸區域傳遞，則治理和營運作業的量可能會夠小，可供一個人或一個小組傳遞。 該小組不太可能被稱為雲端治理，因為它在雲端治理之外提供了許多功能。 即使是針對該小組，此入門指南可協助確保 it 能夠在治理方面提供這項重要的功能。
 
 <!-- markdownlint-disable MD033 -->
@@ -53,9 +53,9 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 使用雲端策略小組的成員，檢查您公司的[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以瞭解動機、計量和策略。
-- 使用雲端採用小組的成員來檢查您公司的[雲端採用方案範本](../../plan/template.md)，以瞭解時程表和優先順序。
-- 請參閱作業小組的[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)，以瞭解已與企業建立的營運需求和承諾。
+- 使用雲端策略小組的成員，檢查您公司的 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) ，以瞭解動機、計量和策略。
+- 使用雲端採用小組的成員來檢查您公司的 [雲端採用方案](../../plan/template.md) ，以瞭解時程表和優先順序。
+- 請參閱作業小組的 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) ，以瞭解已與企業建立的營運需求和承諾。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -75,7 +75,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 如需步調會議的詳細指引，請參閱[雲端治理功能](../../organize/cloud-governance.md#deliverable)。
+- 如需步調會議的詳細指引，請參閱 [雲端治理功能](../../organize/cloud-governance.md#deliverable)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -94,7 +94,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 請參閱[管理方法](../../govern/methodology.md)。
+- 請參閱 [管理方法](../../govern/methodology.md)。
 
 **責任小組：**
 
@@ -110,7 +110,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 使用[治理基準](../../govern/benchmark.md)來評估您的治理需求和優先順序。
+- 使用 [治理基準](../../govern/benchmark.md) 來評估您的治理需求和優先順序。
 
 **責任小組：**
 
@@ -126,7 +126,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 如需設定和執行的指引，請參閱[建立初始雲端治理基礎](../../govern/initial-foundation.md)。
+- 如需設定和執行的指引，請參閱 [建立初始雲端治理基礎](../../govern/initial-foundation.md)。
 
 **責任小組：**
 
@@ -142,7 +142,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 為了協助改善最初的治理基礎，請執行[擴充的治理案例](../../govern/foundation-improvements.md)。
+- 為了協助改善最初的治理基礎，請執行 [擴充的治理案例](../../govern/foundation-improvements.md)。
 
 **責任小組：**
 
@@ -158,7 +158,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 改善[登陸區域治理](../../ready/considerations/landing-zone-governance.md)。
+- 改善 [登陸區域治理](../../ready/considerations/landing-zone-governance.md)。
 
 **責任小組：**
 
@@ -174,7 +174,7 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 **支援交付後完成的指引：**
 
-- 建立將新的[工作負載和資源](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的程式。
+- 建立將新的 [工作負載和資源](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的程式。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -187,4 +187,4 @@ Azure 雲端採用架構中的官方指引是一律建立雲端治理小組。 �
 
 所有公司都是獨一無二的，因此是他們的治理需求。 選擇適合您組織的成熟度層級，並使用雲端採用架構來引導可協助您取得的做法、程式和工具。
 
-隨著雲端治理的成熟，小組能夠以更快的步調採用雲端。 持續的雲端採用工作往往會觸發 IT 營運的成熟度。 若要確保治理是作業開發的一部分，請開發[雲端作業小組](./cloud-operations.md)，或與您現有的雲端營運小組同步。
+隨著雲端治理的成熟，小組能夠以更快的步調採用雲端。 持續的雲端採用工作往往會觸發 IT 營運的成熟度。 若要確保治理是作業開發的一部分，請開發 [雲端作業小組](./cloud-operations.md) ，或與您現有的雲端營運小組同步。

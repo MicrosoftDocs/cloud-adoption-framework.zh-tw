@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 413953f6da2eece12a54aa708fb4daa466d9959d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cfcc44f169beb177d9a2554ee28109d5235d9edc
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223400"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194742"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
 
-計畫只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入：_策略性_和_戰術_。 下列各節概述每個類別目錄中所需的最小資料點。
+計畫只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入： _策略性_ 和 _戰術_。 下列各節概述每個類別目錄中所需的最小資料點。
 
 ## <a name="strategic-inputs"></a>策略性輸入
 
@@ -40,7 +40,7 @@ ms.locfileid: "83223400"
 
 ## <a name="next-steps"></a>後續步驟
 
-將[雲端採用方案範本部署](./template.md)至 Azure DevOps。
+將範本部署到 Azure DevOps Services，以定義您的雲端採用方案。
 
 > [!div class="nextstepaction"]
-> [將範本部署到 Azure DevOps](./template.md)
+> [使用範本定義您的雲端採用方案](./template.md)

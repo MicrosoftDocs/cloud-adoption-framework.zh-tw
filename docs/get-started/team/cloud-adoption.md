@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6c138afdd5a60dafe21a523e608c714ba2b49070
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a7b8e45f68f7fd98f65a48b9ecc3f4bfc4507cd8
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233676"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195829"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：打造雲端採用小組
 
@@ -41,17 +41,17 @@ ms.locfileid: "86233676"
 
 - 判斷小組最符合的方法：遷移方法或創新方法。
 - 每一種方法都有四個步驟的上線體驗，可協助小組瞭解在這項工作上真正發揮效益所需的工具和流程。 在小組進行前幾個步驟，以瞭解您在早期反復專案中最可能需要的工具和案例，投入時間。
-- 藉由開發跨團隊的矩陣，識別負責、參與、_諮詢和通知的 (RACI) _方，來協調小組間的責任。 更新您公司的[RACI 範本](../../organize/raci-alignment.md)，以協助其他人瞭解小組的成員，以及小組將著重于傳遞哪一種方法。
+- 藉由開發跨團隊的矩陣，識別負責、參與、 _諮詢和通知的 (RACI) _ 方，來協調小組間的責任。 更新您公司的 [RACI 範本](../../organize/raci-alignment.md) ，以協助其他人瞭解小組的成員，以及小組將著重于傳遞哪一種方法。
 
 **支援交付後完成的指引：**
 
-- [遷移方法總覽](../../migrate/index.md)說明遷移和現代化工作負載組合的程式、工具和方法。
-- [創新方法總覽](../../innovate/index.md)說明將雲端原生工作負載新增至組合的程式、工具和方法。
-- [瞭解](../../strategy/motivations.md)此工作背後的動機，以瞭解它們是否更符合遷移或創新成果。
+- [遷移方法總覽](../../migrate/index.md) 說明遷移和現代化工作負載組合的程式、工具和方法。
+- [創新方法總覽](../../innovate/index.md) 說明將雲端原生工作負載新增至組合的程式、工具和方法。
+- [瞭解](../../strategy/motivations.md) 此工作背後的動機，以瞭解它們是否更符合遷移或創新成果。
 
 ## <a name="step-2-align-your-team-with-other-supporting-teams"></a>步驟2：讓您的小組與其他支援的團隊保持聯繫
 
-如果貴公司的雲端採用工作已經成熟，足以擁有支援小組，您可以在公司的[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)版本中找到小組和主題專家的清單，包括雲端治理、雲端作業、卓越的雲端中心，或其他類似的小組。
+如果貴公司的雲端採用工作已經成熟，足以擁有支援小組，您可以在公司的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)版本中找到小組和主題專家的清單，包括雲端治理、雲端作業、卓越的雲端中心，或其他類似的小組。
 
 **項**
 
@@ -60,8 +60,8 @@ ms.locfileid: "86233676"
 
 **支援交付後完成的指引：**
 
-- [評估公司原則](../../govern/corporate-policy.md)概述定義公司原則的步驟，這可能會限制小組可以在公司的雲端環境中安全地做出的決策。
-- [治理專業領域](../../govern/corporate-policy.md)會概述治理小組可能實行以安全且符合規範的雲端採用的控制項類型或規範流程。
+- [評估公司原則](../../govern/corporate-policy.md) 概述定義公司原則的步驟，這可能會限制小組可以在公司的雲端環境中安全地做出的決策。
+- [治理專業領域](../../govern/corporate-policy.md) 會概述治理小組可能實行以安全且符合規範的雲端採用的控制項類型或規範流程。
 - [管理方法](../../manage/index.md)概述在雲端作業基準中，提供基本作業管理的考慮。
 
 <!-- markdownlint-disable MD033 -->
@@ -88,8 +88,8 @@ ms.locfileid: "86233676"
 
 **支援交付後完成的指引：**
 
-- 在進行遷移的入門指南中，採用小組會負責[執行步驟10：遷移您的第一個工作負載](../migrate.md#step-8-migrate-your-first-10-workloads)。
-- 在新產品的入門指南中，採用小組會負責[在雲端中進行步驟8：創新](../innovate.md#step-8-innovate-in-the-cloud)的傳遞。
+- 在進行遷移的入門指南中，採用小組會負責 [執行步驟10：遷移您的第一個工作負載](../migrate.md#step-8-migrate-your-first-10-workloads)。
+- 在新產品的入門指南中，採用小組會負責 [在雲端中進行步驟8：創新](../innovate.md#step-8-innovate-in-the-cloud)的傳遞。
 
 這些檢查清單上所有其他步驟的設計都是為了讓工作更容易管理。
 
@@ -112,8 +112,8 @@ ms.locfileid: "86233676"
 
 小組可以藉由查看下列指引來審查和擴展其技能：
 
-- 透過[案例](../../migrate/azure-best-practices/contoso-migration-overview.md)和[最佳作法](../../migrate/azure-best-practices/index.md)，遷移新類型的工作負載或解決更複雜的遷移挑戰。
-- 使用新的雲端原生解決方案進行創新，或透過[案例](../../innovate/kubernetes/index.md)和[最佳作法](../../innovate/best-practices/index.md)解決更複雜的創新挑戰。
+- 透過 [案例](../../migrate/azure-best-practices/contoso-migration-overview.md) 和 [最佳作法](../../migrate/azure-best-practices/index.md)，遷移新類型的工作負載或解決更複雜的遷移挑戰。
+- 使用新的雲端原生解決方案進行創新，或透過 [案例](../../innovate/kubernetes/index.md) 和 [最佳作法](../../innovate/best-practices/index.md)解決更複雜的創新挑戰。
 
 **責任小組：**
 
@@ -131,8 +131,8 @@ ms.locfileid: "86233676"
 
 **支援交付後完成的指引：**
 
-- 您可以在遷移方法的程式改進一節中找到支援[遷移工作](../../migrate/migration-considerations/index.md)的流程指引。
-- 在創新方法中，本指南的重點在於[創新](../../innovate/considerations/index.md)的程式，可產生較少的技術和更有效率的產品開發。
+- 您可以在遷移方法的程式改進一節中找到支援 [遷移工作](../../migrate/migration-considerations/index.md) 的流程指引。
+- 在創新方法中，本指南的重點在於 [創新](../../innovate/considerations/index.md) 的程式，可產生較少的技術和更有效率的產品開發。
 
 **責任小組：**
 
@@ -140,8 +140,8 @@ ms.locfileid: "86233676"
 
 ## <a name="whats-next"></a>後續步驟
 
-雲端採用是很好的目標，但 ungoverned 採用可能會產生非預期的結果。 為了加速採用和最佳作法，當您降低業務和技術風險時，請將雲端採用與[雲端治理功能](../../organize/cloud-governance.md)相配合。
+雲端採用是很好的目標，但 ungoverned 採用可能會產生非預期的結果。 為了加速採用和最佳作法，當您降低業務和技術風險時，請將雲端採用與 [雲端治理功能](../../organize/cloud-governance.md)相配合。
 
-與雲端治理小組一致可在雲端採用工作之間建立平衡，但這會被視為最小的可行產品 (MVP) ，因為它可能不是持續性的。 每個小組都會戴上許多的帽子，如[RACI 圖](../../organize/raci-alignment.md)中所述。
+與雲端治理小組一致可在雲端採用工作之間建立平衡，但這會被視為最小的可行產品 (MVP) ，因為它可能不是持續性的。 每個小組都會戴上許多的帽子，如 [RACI 圖](../../organize/raci-alignment.md)中所述。
 
-深入瞭解如何克服[組織反模式：接收器和 fiefdoms](../../organize/fiefdoms-silos.md)。
+深入瞭解如何克服 [組織反模式：接收器和 fiefdoms](../../organize/fiefdoms-silos.md)。

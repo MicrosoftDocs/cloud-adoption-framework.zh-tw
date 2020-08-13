@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2e20b63bed8ef337f89546049632dd2c8babf539
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a36649404b3dccba71c834b6268f1de5574b71d5
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233540"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195940"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -29,7 +29,7 @@ ms.locfileid: "86233540"
 
 ![開始在 Azure 中進行遷移](../_images/get-started/migration-map.png)
 
-如果您的遷移案例不是典型的，您可以使用[策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 使用它來識別最符合您目前需求的指導方針。
+如果您的遷移案例不是典型的，您可以使用 [策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 使用它來識別最符合您目前需求的指導方針。
 
 ## <a name="get-started"></a>開始使用
 
@@ -46,7 +46,7 @@ ms.locfileid: "86233540"
 
 **項**
 
-- 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄動機和所需的商務結果。
+- 使用 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄動機和所需的商務結果。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -59,12 +59,12 @@ ms.locfileid: "86233540"
 
 合作夥伴、Microsoft 服務或各種 Microsoft 程式都可在整個遷移過程中支援您。
 
-- [瞭解合作關係選項](../migrate/migration-considerations/assess/partnership-options.md)，以找出正確的合作關係和支援層級。
+- [瞭解合作關係選項](../migrate/migration-considerations/assess/partnership-options.md) ，以找出正確的合作關係和支援層級。
 
 **項**
 
 - 在您與支援合作夥伴接洽之前，請先建立條款及條件或其他合約協定。
-- 識別[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的核准合作夥伴。
+- 識別 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的核准合作夥伴。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -85,7 +85,7 @@ ms.locfileid: "86233540"
 - 現有清查上的原始資料。
 - 對現有清查的量化分析，以精簡商業理由。
 - 前10個工作負載的定性分析。
-- 更新[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的商業理由。
+- 更新 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的商業理由。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -98,11 +98,11 @@ ms.locfileid: "86233540"
 
 進行遷移的商務案例可能會是專案關係人之間的反復交談。 在第一次建立商業案例時，評估潛在雲端遷移的初始高階退貨。 此步驟的目標是要確保所有專案關係人都符合一個簡單的問題：根據可用的資料，雲端的整體採用是明智的商業決策嗎？
 
-- [建立雲端遷移商務案例](../strategy/cloud-migration-business-case.md)是開發遷移商務案例的好起點。 對公式和工具的清楚明瞭有助於商業論證。
+- [建立雲端遷移商務案例](../strategy/cloud-migration-business-case.md) 是開發遷移商務案例的好起點。 對公式和工具的清楚明瞭有助於商業論證。
 
 **項**
 
-- 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄商業理由。
+- 使用 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄商業理由。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -113,9 +113,9 @@ ms.locfileid: "86233540"
 
 ## <a name="step-5-create-a-migration-plan"></a>步驟5：建立遷移計畫
 
-「雲端採用方案」範本提供加速開發專案待處理專案的方法。 然後可以修改待處理專案，以反映探索結果、合理化、所需的技能，以及合作夥伴的合約。
+雲端採用方案提供開發專案待處理專案的加速方法。 然後可以修改待處理專案，以反映探索結果、合理化、所需的技能，以及合作夥伴的合約。
 
-- [雲端採用方案範本](../plan/template.md)：部署基本範本。
+- [雲端採用方案](../plan/template.md)：使用「基本」範本定義您的雲端採用方案。
 - [工作負載對齊](../plan/workloads.md)：定義待處理專案中的工作負載。
 - [工作量調整](../plan/assets.md)：對齊待處理專案中的資產和工作負載，以清楚地定義優先順序工作負載的工作量。
 - [人員和時間對齊](../plan/iteration-paths.md)：針對遷移的工作負載，建立反復專案、速度 (人員的時間) 和發行。
@@ -144,7 +144,7 @@ ms.locfileid: "86233540"
 
 **項**
 
-- 將技能就緒方案新增至[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。
+- 將技能就緒方案新增至 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -185,10 +185,10 @@ ms.locfileid: "86233540"
 
 在每次反覆運算中，雲端採用小組在遷移工作負載方面都更好。 這些步驟會在此成熟度曲線上啟動技術小組：
 
-1. 使用[Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，在純粹的資訊即服務中遷移您的第一個工作負載 (IaaS) 方法。
-2. 使用[遷移案例](../migrate/azure-best-practices/contoso-migration-overview.md)，展開 [工具] 選項以使用遷移和現代化。
-3. 使用[遷移最佳做法](../migrate/azure-best-practices/index.md)中所述的更廣泛方法來開發您的技術策略。
-4. 透過有效率的遷移 factory 方法來改善一致性、可靠性和效能，如遷移程式[改善](../migrate/migration-considerations/index.md)中所述。
+1. 使用 [Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，在純粹的資訊即服務中遷移您的第一個工作負載 (IaaS) 方法。
+2. 使用 [遷移案例](../migrate/azure-best-practices/contoso-migration-overview.md)，展開 [工具] 選項以使用遷移和現代化。
+3. 使用 [遷移最佳做法](../migrate/azure-best-practices/index.md)中所述的更廣泛方法來開發您的技術策略。
+4. 透過有效率的遷移 factory 方法來改善一致性、可靠性和效能，如遷移程式 [改善](../migrate/migration-considerations/index.md)中所述。
 
 **項**
 
@@ -258,8 +258,8 @@ Operations management 是另一項需求，可達到遷移成功。 將個別工
 |---|---|
 | 雲端 &nbsp; 採用 &nbsp; 小組 | 程式[改善](../migrate/migration-considerations/index.md)可讓您深入瞭解如何透過有效率的持續遷移功能，移往遷移工廠。 |
 | 雲端 &nbsp; 策略 &nbsp; 小組 | [策略方法](../strategy/index.md)和[計畫方法](../plan/index.md)是以採用計畫發展的反復流程。 返回這些總覽頁面，並繼續逐一查看您的商務和技術策略。 |
-| 雲端 &nbsp; 平臺 &nbsp; 小組 | 請造訪[準備好的方法](../ready/index.md)，繼續推進支援遷移或其他採用成果的整體雲端平臺。 |
-| 雲端 &nbsp; 治理 &nbsp; 小組 | 使用[管控方法](../govern/index.md)來繼續改善治理流程、原則和專業領域。 |
-| 雲端 &nbsp; 營運 &nbsp; 小組 | 建基於[管理方法](../manage/index.md)，以在 Azure 中提供更豐富的作業。 |
+| 雲端 &nbsp; 平臺 &nbsp; 小組 | 請造訪 [準備好的方法](../ready/index.md) ，繼續推進支援遷移或其他採用成果的整體雲端平臺。 |
+| 雲端 &nbsp; 治理 &nbsp; 小組 | 使用 [管控方法](../govern/index.md) 來繼續改善治理流程、原則和專業領域。 |
+| 雲端 &nbsp; 營運 &nbsp; 小組 | 建基於 [管理方法](../manage/index.md) ，以在 Azure 中提供更豐富的作業。 |
 
-如果您的遷移案例不是典型的，您可以使用[策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 根據您在進行評估時提供的答案，我們可以協助您找出最符合您目前需求的指導方針。
+如果您的遷移案例不是典型的，您可以使用 [策略遷移和準備就緒工具 (智慧型) 評估](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)，針對組織的遷移準備工作進行個人化評估。 根據您在進行評估時提供的答案，我們可以協助您找出最符合您目前需求的指導方針。

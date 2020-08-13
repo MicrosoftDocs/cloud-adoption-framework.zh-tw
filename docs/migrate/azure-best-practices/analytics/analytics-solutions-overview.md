@@ -7,24 +7,24 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bf67daa8466618aa79669811e62881a5c8b5a3c
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: d907e2234338fa2f00776c2d9df7a58e78986393
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075806"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193992"
 ---
 <!-- cSpell:ignore Netezza Teradata Exadata Giga GigaOM MPP -->
 
 # <a name="azure-synapse-analytics-solutions"></a>Azure Synapse 分析解決方案
 
-目前的市場供應專案在符合組織日益成長的需求方面變得很短。 舊版內部部署環境（包括 Teradata、Netezza 和 Oracle Exadata）既昂貴、創新緩慢，又 inelastic。 使用內部部署系統的組織現在考慮利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。 
+目前的市場供應專案在符合組織日益成長的需求方面變得很短。 舊版內部部署環境（包括 Teradata、Netezza 和 Oracle Exadata）既昂貴、創新緩慢，又 inelastic。 使用內部部署系統的組織現在考慮利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。
 
 許多組織都已準備好將昂貴的工作（例如基礎結構維護和平臺開發）轉移到雲端提供者的步驟。 在 Microsoft Azure 中，組織可以存取全球可用、高度安全、可調整的雲端環境，其中包含支援工具和功能生態系統中的 Azure Synapse 分析。
 
 ![Teradata 遷移的設計和效能](../../../_images/analytics/analytics-solutions-overview.png)
 
-Azure Synapse 分析透過大量平行處理和自動記憶體內部快取等技術，提供最高等級的關係資料庫效能。 這種方法的結果可以在獨立的基準測試中看到，例如最近由[GigaOM](https://gigaom.com)執行，這會比較 Azure Synapse 與其他熱門的雲端資料倉儲供應專案。
+Azure Synapse 分析透過大量平行處理和自動記憶體內部快取等技術，提供最高等級的關係資料庫效能。 這種方法的結果可以在獨立的基準測試中看到，例如最近由 [GigaOM](https://gigaom.com)執行，這會比較 Azure Synapse 與其他熱門的雲端資料倉儲供應專案。
 
 已經遷移至 Synapse 分析的組織看過許多好處，包括：
 

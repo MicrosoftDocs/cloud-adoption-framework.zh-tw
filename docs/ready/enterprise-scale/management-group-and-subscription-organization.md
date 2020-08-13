@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6e317dc33372e32ed175c646426a52e2a93c939f
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8fb3a630792c204ee9d1de5649f2d3b08e59ee16
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194913"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196208"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -27,7 +27,7 @@ Azure Active Directory (中的管理群組結構 Azure AD) 租使用者支援組
 **設計考慮：**
 
 - 管理群組可用來透過 Azure 原則匯總原則和方案指派。
-- 管理群組樹狀目錄最多可支援[六個層級的深度](https://docs.microsoft.com/azure/governance/management-groups/overview#hierarchy-of-management-groups-and-subscriptions)。 此限制不包含根或訂用帳戶層級。
+- 管理群組樹狀目錄最多可支援 [六個層級的深度](https://docs.microsoft.com/azure/governance/management-groups/overview#hierarchy-of-management-groups-and-subscriptions)。 此限制不包含租使用者根層級或訂用帳戶層級。
 
 **設計建議：**
 
@@ -61,7 +61,7 @@ Azure Active Directory (中的管理群組結構 Azure AD) 租使用者支援組
 
 - 訂用帳戶會作為指派 Azure 原則的界限。 例如， (PCI) 工作負載的安全工作負載（例如付款卡產業）通常需要額外的原則才能達成合規性。 不使用管理群組來將需要 PCI 合規性的工作負載分組，而是可以與訂用帳戶達成相同的隔離。 這可確保您沒有太多的管理群組具有少數訂閱。
 
-- 訂用帳戶會做為縮放單位，讓元件工作負載可在平臺訂用帳戶[限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)內進行調整。 請務必考慮您的工作負載設計會話期間的訂用帳戶資源限制。
+- 訂用帳戶會做為縮放單位，讓元件工作負載可在平臺訂用帳戶 [限制](https://docs.microsoft.com/azure/azure-subscription-service-limits)內進行調整。 請務必考慮您的工作負載設計會話期間的訂用帳戶資源限制。
 
 - 訂用帳戶會提供管理界限來進行控管和隔離，並建立清楚的關注點分離。
 

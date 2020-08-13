@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d1f6c4b5f0f672b9dd6b7fb9adc5b0fce4a54a6
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 72f793383bd525b48f3f8ae30cd6e0d470ddba64
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234815"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193294"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>了解移轉期間的預備活動
 
@@ -29,7 +29,7 @@ ms.locfileid: "86234815"
 
 ## <a name="next-steps"></a>後續步驟
 
-在測試並記載預備資產後，您便可以繼續進行[最佳化活動](../optimize/index.md)。
+在測試並記載預備資產後，您便可以繼續進行最佳化活動。
 
 > [!div class="nextstepaction"]
 > [將已移轉的工作負載最佳化](../optimize/index.md)

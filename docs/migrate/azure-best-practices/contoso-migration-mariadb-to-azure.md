@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a3ac7a38018f7ca44115fb1d46396e16961dfe3e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 70046c9838e4deadb6e1c82663f012b4765e0bf1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478424"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193490"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -23,7 +23,8 @@ ms.locfileid: "86478424"
 本文示範虛構公司 Contoso 如何規劃並將其內部部署適用于 mariadb 開放原始碼資料庫平臺遷移至 Azure。
 
 Contoso 會使用適用于 mariadb，而不是 MySQL，因為它的原因如下：
-- 無數的儲存引擎。 
+
+- 無數的儲存引擎。
 - 快取和索引效能。
 - 具有功能和延伸模組的開放原始碼支援。
 - 分析資料行存放區支援。
@@ -47,11 +48,11 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 | --- | --- |
 | **可用性** | 目前內部員工在適用于 mariadb 實例的主控環境中有困難的時間。 Contoso 想要有接近99.99% 的資料庫層可用性。 |
 | **延展性** | 內部部署資料庫主機的容量很快就會耗盡。 Contoso 需要一種方法來調整其過去目前限制的實例，或在商務環境變更以節省成本時，向下延展。 |
-| **效能** | Contoso 人力資源（HR）部門有數個報表，每日、每週和每月執行一次。 當它執行這些報表時，它會注意到員工面向的應用程式有相當的效能問題。 它需要執行報表，而不會影響應用程式效能。 |
+| **效能** | Contoso 人力資源 (HR) 部門有數個報表，每日、每週和每月執行一次。 當它執行這些報表時，它會注意到員工面向的應用程式有相當的效能問題。 它需要執行報表，而不會影響應用程式效能。 |
 | **安全性** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且不會顯示或無法透過網際網路存取。 |
 | **監視** | Contoso 目前使用工具來監視適用于 mariadb 資料庫的計量，並在 CPU、記憶體或儲存體發生問題時提供通知。 公司想要在 Azure 中擁有這項相同的功能。 |
 | **業務持續性** | HR 資料存放區是 Contoso 日常作業的重要部分。 如果損毀或需要還原，公司想要將停機時間降到最低。 |
-| **Azure** | Contoso 想要將應用程式移至 Azure，而不在 Vm 上執行。 針對資料層使用 Azure 平臺即服務（PaaS）服務的 Contoso 需求狀態。 |
+| **Azure** | Contoso 想要將應用程式移至 Azure，而不在 Vm 上執行。 使用 Azure 平臺即服務 (PaaS) 服務作為資料層的 Contoso 需求狀態。 |
 
 ## <a name="solution-design"></a>解決方案設計
 
@@ -59,7 +60,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 ### <a name="current-application"></a>目前的應用程式
 
-適用于 mariadb 資料庫裝載了用於公司人力資源部門所有層面的員工資料。 以[燈泡為基礎](https://wikipedia.org/wiki/LAMP_(software_bundle))的應用程式是用來做為處理員工 HR 要求的前端。 Contoso 在全球有100000名員工，因此執行時間對其資料庫而言很重要。
+適用于 mariadb 資料庫裝載了用於公司人力資源部門所有層面的員工資料。 以 [燈泡為基礎](https://wikipedia.org/wiki/LAMP_(software_bundle)) 的應用程式是用來做為處理員工 HR 要求的前端。 Contoso 在全球有100000名員工，因此執行時間對其資料庫而言很重要。
 
 ### <a name="proposed-solution"></a>建議的解決方案
 
@@ -71,13 +72,13 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 在解決方案設計過程中，Contoso 已在 Azure 中審查功能來裝載其適用于 mariadb 資料庫。 下列考慮可協助公司決定使用 Azure：
 
-- 類似于 Azure SQL Database，適用於 MariaDB 的 Azure 資料庫允許[防火牆規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)。
-- 適用於 MariaDB 的 Azure 資料庫可以與[Azure 虛擬網路](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet)搭配使用，以防止實例可公開存取。
+- 類似于 Azure SQL Database，適用於 MariaDB 的 Azure 資料庫允許 [防火牆規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)。
+- 適用於 MariaDB 的 Azure 資料庫可以與 [Azure 虛擬網路](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet) 搭配使用，以防止實例可公開存取。
 - 適用於 MariaDB 的 Azure 資料庫具有 Contoso 必須符合其審計員的必要合規性和隱私權認證。
 - 系統會使用讀取複本來增強報表和應用程式處理效能。
-- 能夠使用[Azure 私用連結](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link)將服務公開給內部網路流量（不公開存取）。
+- 只能使用 [Azure 私用連結](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link)將服務公開給內部網路流量 (不受公開存取) 。
 - Contoso 選擇不移到適用於 MySQL 的 Azure 資料庫，因為未來可能會使用適用于 mariadb 資料行存放區和 GraphDBMS 資料庫模型。
-- 從應用程式到資料庫的[頻寬和延遲](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)，會足以根據所選的閘道（Azure ExpressRoute 或站對站 VPN）。
+- 從應用程式到資料庫的 [頻寬和延遲](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) 就足以根據所選的閘道， (Azure ExpressRoute 或站對站 VPN) 。
 
 ### <a name="solution-review"></a>解決方案檢閱
 
@@ -85,8 +86,8 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | 適用於 MariaDB 的 Azure 資料庫提供99.99% 的財務支援服務等級協定（SLA），以獲得[高可用性](https://docs.microsoft.com/azure/mariadb/concepts-high-availability)。 <br><br> Azure 提供在每季的尖峰負載時間進行相應增加或減少的功能。 Contoso 可以透過購買[保留容量](https://docs.microsoft.com/azure/mariadb/concept-reserved-pricing)來節省更多好處。 <br><br> Azure 提供適用於 MariaDB 的 Azure 資料庫的時間點還原和異地還原功能。 <br><br> |
-| **缺點** | Contoso 僅限於 Azure 中支援的適用于 mariadb 發行版本，其目前為10.2 和10.3。 <br><br> 適用於 MariaDB 的 Azure 資料庫有一些[限制](https://docs.microsoft.com/azure/mariadb/concepts-limits)，例如相應減少儲存體。 |
+| **優點** | 適用於 MariaDB 的 Azure 資料庫提供99.99% 的財務支援服務等級協定， (SLA) 以取得 [高可用性](https://docs.microsoft.com/azure/mariadb/concepts-high-availability)。 <br><br> Azure 提供在每季的尖峰負載時間進行相應增加或減少的功能。 Contoso 可以透過購買 [保留容量](https://docs.microsoft.com/azure/mariadb/concept-reserved-pricing)來節省更多好處。 <br><br> Azure 提供適用於 MariaDB 的 Azure 資料庫的時間點還原和異地還原功能。 <br><br> |
+| **缺點** | Contoso 僅限於 Azure 中支援的適用于 mariadb 發行版本，其目前為10.2 和10.3。 <br><br> 適用於 MariaDB 的 Azure 資料庫有一些 [限制](https://docs.microsoft.com/azure/mariadb/concepts-limits)，例如相應減少儲存體。 |
 
 ## <a name="proposed-architecture"></a>建議的架構
 
@@ -130,7 +131,7 @@ Contoso 使用下列步驟來遷移其資料庫。
 - 在 Azure 中建立新的適用于 mariadb 實例：
 
   - 開啟 [Azure 入口網站](https://portal.azure.com)。
-  - 選取 [**新增資源**]。
+  - 選取 [ **新增資源**]。
   - 搜尋 `MariaDB`。
 
     ![螢幕擷取畫面顯示 Azure 中的新適用于 mariadb 實例。 ](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
@@ -149,8 +150,8 @@ Contoso 使用下列步驟來遷移其資料庫。
 
   - 選取 [建立]。
   - 記錄伺服器主機名稱、使用者名稱和密碼。
-  - 選取 [連線**安全性**]。
-  - 選取 [**新增用戶端 IP** ] （您將從中還原資料庫的 ip）。
+  - 選取 [連線 **安全性**]。
+  - 選取 [ **新增用戶端 IP** ] (您將從) 還原資料庫的 ip。
   - 選取 [儲存]。
 
 - 執行下列命令，以匯出名為的資料庫 `Employees` 。 針對每個資料庫重複此動作：
@@ -184,12 +185,12 @@ Contoso 使用下列步驟來遷移其資料庫。
 
 Contoso 必須：
 
-- 確定其新的適用於 MariaDB 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱[適用於 MariaDB 的 Azure 資料庫中的安全性](https://docs.microsoft.com/azure/mariadb/concepts-security)。
-- 檢查[防火牆規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)和虛擬網路設定，以確認連線僅限於需要它的應用程式。
-- 設定任何輸出 IP 需求，以允許連線至適用于 mariadb[閘道 IP 位址](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture)。
-- 更新所有應用程式，以要求連接到資料庫的[SSL](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security) 。
-- 設定[私用連結](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link)，讓所有資料庫流量保留在 Azure 和內部部署網路中。
-- 啟用[Azure 進階威脅防護（ATP）](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection)。
+- 確定其新的適用於 MariaDB 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用於 MariaDB 的 Azure 資料庫中的安全性](https://docs.microsoft.com/azure/mariadb/concepts-security)。
+- 檢查 [防火牆規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules) 和虛擬網路設定，以確認連線僅限於需要它的應用程式。
+- 設定任何輸出 IP 需求，以允許連線至適用于 mariadb [閘道 IP 位址](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture)。
+- 更新所有應用程式，以要求連接到資料庫的 [SSL](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security) 。
+- 設定 [私用連結](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) ，讓所有資料庫流量保留在 Azure 和內部部署網路中。
+- 啟用 [Azure 進階威脅防護 (ATP) ](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection)。
 - 設定 Log Analytics 以監視及傳送有關安全性和記錄相關專案的警示。
 
 ### <a name="backups"></a>備份
@@ -197,7 +198,7 @@ Contoso 必須：
 請確定使用異地還原來備份適用于適用于 mariadb 資料庫的 Azure 資料庫。 如此一來，如果發生區域中斷，備份就可以在配對的區域中使用。
 
 > [!IMPORTANT]
-> 請確定適用於 MariaDB 的 Azure 資料庫資源有[資源鎖定](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)，以防止它被刪除。 無法還原已刪除的伺服器。
+> 請確定適用於 MariaDB 的 Azure 資料庫資源有 [資源鎖定](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources) ，以防止它被刪除。 無法還原已刪除的伺服器。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

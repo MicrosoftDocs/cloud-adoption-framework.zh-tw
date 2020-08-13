@@ -7,16 +7,16 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d24987d13467742ab004f386a5acf4e173566ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2d3939eb72b66ab930afbcf44efea73262a66cb1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221343"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196026"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>收集數位資產的清查資料
 
-開發清查是[數位資產規劃](./index.md)的第一步。 在此流程中，會收集支援特定商務功能的 IT 資產清單，以供日後分析和合理化。 本文假設分析的最後方法最適合用於規劃。 如需詳細資訊，請參閱[數位資產規劃方法](./approach.md)。
+開發清查是 [數位資產規劃](./index.md)的第一步。 在此流程中，會收集支援特定商務功能的 IT 資產清單，以供日後分析和合理化。 本文假設分析的最後方法最適合用於規劃。 如需詳細資訊，請參閱[數位資產規劃方法](./approach.md)。
 
 ## <a name="take-inventory-of-a-digital-estate"></a>清查數位資產
 

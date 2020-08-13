@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5c77156723fe1b5b54a775250bf368f886c4d101
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: 630e295459f38d09629b99a41baf9f13f51c2402
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523978"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196242"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -23,10 +23,10 @@ ms.locfileid: "87523978"
 當您開始進行 Azure 雲端採用工作時，了解下列定義會很有幫助：
 
 - **資源：** 由 Azure 管理的實體。 範例包括 Azure 虛擬機器、虛擬網路和儲存體帳戶。
-- **訂**用帳戶：資源的邏輯容器。 每個 Azure 資源都只會與一個訂用帳戶相關聯。 建立訂用帳戶是採用 Azure 的第一步。
+- **訂** 用帳戶：資源的邏輯容器。 每個 Azure 資源都只會與一個訂用帳戶相關聯。 建立訂用帳戶是採用 Azure 的第一步。
 - **Azure 帳戶：** 當您建立 Azure 訂用帳戶時所提供的電子郵件地址是訂用帳戶的 Azure 帳戶。 與電子郵件帳戶相關聯的對象需負責處理每月訂用帳戶資源所產生的成本。 當您建立 Azure 帳戶時，您會提供連絡人資訊和計費詳細資料，例如信用卡。 您可以針對多個訂用帳戶使用相同的 Azure 帳戶 (電子郵件地址)。 每個訂用帳戶只能與一個 Azure AD 帳戶相關聯。
 - **帳戶管理員：** 與用來建立 Azure 訂用帳戶的電子郵件地址相關聯的合作物件。 帳戶管理員須負責支付訂用帳戶資源所產生的所有成本。
-- **Azure Active Directory （Azure AD）：** Microsoft 雲端式身分識別和存取管理服務。 Azure AD 可允許您的員工登入和存取資源。
+- **Azure Active Directory (Azure AD) ：** Microsoft 雲端式身分識別和存取管理服務。 Azure AD 可允許您的員工登入和存取資源。
 - **Azure AD 租使用者：** Azure AD 的專用且受信任的實例。 當您的組織第一次註冊 Microsoft 雲端服務訂用帳戶（例如 Microsoft Azure、Intune 或 Office 365）時，就會自動建立 Azure AD 租使用者。 一個 Azure 租用戶代表一個組織。
 - **Azure AD 目錄：** 每個 Azure AD 租使用者都有單一、專用且受信任的目錄。 此目錄包含租用戶的使用者、群組和應用程式。 此目錄可用來執行身分識別和存取租用戶資源的管理功能。 目錄可以與多個訂用帳戶相關聯，但每個訂用帳戶僅能與一個目錄相關聯。
 - **資源群組：** 您用來將訂用帳戶中的相關資源分組的邏輯容器。 每個資源只能存在於一個資源群組中。 資源群組允許在訂用帳戶內進行更細微的分組，通常用來代表在訂用帳戶內支援工作負載、應用程式或特定功能所需的資產集合。
@@ -37,7 +37,7 @@ ms.locfileid: "87523978"
 
 Azure 訂用帳戶有數個用途。 Azure 訂用帳戶可以是：
 
-- **法律合約。** 每個訂用帳戶都與[Azure 供應](https://azure.microsoft.com/support/legal/offer-details)專案相關聯，例如免費試用或隨用隨付。 每個供應項目都有特定的費率方案、優點和相關聯的條款及條件。 您可以在建立訂用帳戶時，選擇 Azure 供應項目。
+- **法律合約。** 每個訂用帳戶都與 [Azure 供應](https://azure.microsoft.com/support/legal/offer-details)專案相關聯，例如免費試用或隨用隨付。 每個供應項目都有特定的費率方案、優點和相關聯的條款及條件。 您可以在建立訂用帳戶時，選擇 Azure 供應項目。
 - **付款合約。** 當您建立訂用帳戶時，您會為該訂用帳戶提供付款資訊，例如信用卡號碼。 資源部署到該訂用帳戶上時產生的每月成本，會透過該付款方式計算並計費。
 - **尺規的界限。** 您可以對訂用帳戶定義規模限制。 訂用帳戶的資源不能超過設定的規模限制。 例如，限制單一訂用帳戶中可建立的虛擬機器數目。
 - **系統管理界限。** 訂用帳戶可以作為系統管理、安全性和原則的界限。 Azure 也會提供其他機制來滿足這些需求，例如管理群組、資源群組和角色型存取控制。
@@ -60,7 +60,7 @@ Azure 會定義三種類型的角色來管理訂用帳戶、身分識別和資�
 - Azure 角色型存取控制 (RBAC) 角色
 - Azure Active Directory (Azure AD) 管理員角色
 
-Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 帳戶管理員是訂用帳戶的帳單擁有者。 帳戶管理員可以透過 Azure 入口網站來[管理訂閱系統管理員](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)。
+Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 帳戶管理員是訂用帳戶的帳單擁有者。 帳戶管理員可以透過 Azure 入口網站來 [管理訂閱系統管理員](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator) 。
 
 根據預設，訂用帳戶的服務管理員角色也會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 服務管理員具有的訂用帳戶權限等同 RBAC 的擁有者角色。 服務管理員也可完整存取 Azure 入口網站。 帳戶管理員可以將服務管理員變更為不同的電子郵件帳戶。
 
@@ -94,7 +94,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 
 ## <a name="next-steps"></a>後續步驟
 
-現在您已了解基本的 Azure 概念，您可以接著了解[如何使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)。
+現在您已了解基本的 Azure 概念，您可以接著了解如何使用多個 Azure 訂用帳戶進行調整。
 
 > [!div class="nextstepaction"]
 > [使用多個 Azure 訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)

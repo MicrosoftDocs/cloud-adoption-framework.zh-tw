@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: d26c60bc2f2dad96710b834f58976dd17fda4a5d
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: a2d0f8fbe4bbdca6226b555c0b8f96d9309addb6
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812965"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195880"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：調整您的組織
 
@@ -22,14 +22,14 @@ ms.locfileid: "84812965"
 
 下列清單概述您的組織在雲端採用和長期作業成功時所需的最小功能。 在您熟悉雲端小組及其功能之後，您可以將其與最適合您的人員和雲端成熟度層級的組織結構配合。
 
-- [雲端採用功能](../organize/cloud-adoption.md)提供技術解決方案。
-- [雲端策略功能](../organize/cloud-strategy.md)讓技術變更符合商務需求。
-- [雲端作業功能](../organize/cloud-operations.md)支援和操作採用的解決方案。
-- [卓越的雲端中心（CCoE）功能](../organize/cloud-center-of-excellence.md)會改善採用的品質、速度和復原能力。
-- [雲端治理功能](../organize/cloud-governance.md)會管理風險。
-- [雲端平臺功能](../organize/cloud-platform.md)運作並成熟平臺。
-- [雲端自動化功能](../organize/cloud-automation.md)會加速採用和創新。
-- [雲端安全性功能](../organize/cloud-security.md)會管理安全性風險。
+- [雲端採用功能](../organize/cloud-adoption.md) 提供技術解決方案。
+- [雲端策略功能](../organize/cloud-strategy.md) 讓技術變更符合商務需求。
+- [雲端作業功能](../organize/cloud-operations.md) 支援和操作採用的解決方案。
+- [卓越 (CCoE) 功能的雲端中心](../organize/cloud-center-of-excellence.md) ，改善採用的品質、速度和復原能力。
+- [雲端治理功能](../organize/cloud-governance.md) 會管理風險。
+- [雲端平臺功能](../organize/cloud-platform.md) 運作並成熟平臺。
+- [雲端自動化功能](../organize/cloud-automation.md) 會加速採用和創新。
+- [雲端安全性功能](../organize/cloud-security.md) 會管理安全性風險。
 
 ## <a name="step-2-map-people-to-the-required-functions"></a>步驟2：將人員對應到所需的函式
 
@@ -41,13 +41,13 @@ ms.locfileid: "84812965"
 - 哪些人會負責定義這些治理控制項？
 - 是否有其他在雲端採用方案內具有責任或責任的功能或人員？
 
-記錄這些問題的答案之後，請參閱[技能準備的計畫](../plan/adapt-roles-skills-processes.md)，以協助定義您的計畫，以準備這些人員以進行即將到來的工作。
+記錄這些問題的答案之後，請參閱 [技能準備的計畫](../plan/adapt-roles-skills-processes.md) ，以協助定義您的計畫，以準備這些人員以進行即將到來的工作。
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>步驟3：判斷小組在您組織內的一致程度
 
-下列組織結構不一定要對應至組織架構（組織結構圖）。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。
+下列組織結構不一定要對應至組織圖表 (組織結構圖) 。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。
 
-在 agile 矩陣組織中，這些結構可能會以虛擬小組（v 團隊）的形式最佳呈現。 不建議將 v 小組表示在組織結構中，但不需要正式的組織結構來產生有效的作業模型。
+在 agile 矩陣組織中，這些結構可能會以) 的虛擬小組 (的方式呈現。 不建議將 v 小組表示在組織結構中，但不需要正式的組織結構來產生有效的作業模型。
 
 判斷下列模型如何符合您的組織結構：
 
@@ -66,7 +66,7 @@ ms.locfileid: "84812965"
 
 ![雲端治理平衡的雲端採用圖表](../_images/ready/org-ready-best-practice.png)
 
-這個經過證實的方法被視為最基本的可行產品（MVP），因為它可能不是持續性的。 每個小組都有許多帽子，如[RACI （負責、參與、諮詢和通知）圖表](../organize/raci-alignment.md)中所述。
+這個經過證實的方法會被視為最基本的可行產品 (MVP) ，因為它可能不是持續性的。 每個小組都有許多帽子，如 [RACI (負責、參與、諮詢和通知) 的圖表](../organize/raci-alignment.md)中所述。
 
 隨著採用需求的成長，創造平衡和結構的需求也在增長。 為了符合這些需求，公司通常會遵循成熟其組織結構的程式。
 
@@ -80,10 +80,10 @@ ms.locfileid: "84812965"
 
 ## <a name="step-5-align-raci-charts"></a>步驟5：對齊 RACI 圖表
 
-在每個成熟度層級，各種雲端功能的責任會轉移給新的小組。 透過將障礙移除和自動化變革，這種責任制的轉移加快了移轉作業和創新週期。 若要適當地對齊指派， [RACI 對齊方式](../organize/raci-alignment.md)文章會顯示每個組織結構的 RACI 圖表。
+在每個成熟度層級，各種雲端功能的責任會轉移給新的小組。 透過將障礙移除和自動化變革，這種責任制的轉移加快了移轉作業和創新週期。 若要適當地對齊指派， [RACI 對齊方式](../organize/raci-alignment.md) 文章會顯示每個組織結構的 RACI 圖表。
 
 ## <a name="additional-information"></a>其他資訊
 
 - [調整雲端現有的角色、技能和流程](../plan/adapt-roles-skills-processes.md)
 - [組織反模式：接收器和 fiefdoms](../organize/fiefdoms-silos.md)
-- [下載 RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)
+- [下載 RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)

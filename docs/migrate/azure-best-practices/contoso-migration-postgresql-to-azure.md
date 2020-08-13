@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b279577e4be2e841e0e2ae5700ec2833882cb56d
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: 077571eb6926d8ce09d6e94f6b946cfba1f12851
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400491"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193574"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental -->
 
@@ -49,7 +49,7 @@ Contoso 雲端小組已將此遷移的目標固定在一起，並會使用它們
 
 ### <a name="current-environment"></a>目前的環境
 
-于 postgresql 9.6.7 是在 Contoso 資料中心的實體 Linux 機器（）上執行 `sql-pg-01.contoso.com` 。 Contoso 已有 Azure 訂用帳戶，且具有站對站虛擬網路閘道可供內部部署資料中心網路使用。
+于 postgresql 9.6.7 正在實體 Linux 機器上執行， (`sql-pg-01.contoso.com` 在 Contoso 資料中心內) 。 Contoso 已有 Azure 訂用帳戶，且具有站對站虛擬網路閘道可供內部部署資料中心網路使用。
 
 ### <a name="proposed-solution"></a>建議的解決方案
 
@@ -66,9 +66,9 @@ Contoso 雲端小組已將此遷移的目標固定在一起，並會使用它們
 - 適用於 PostgreSQL 的 Azure 資料庫具有 Contoso 必須符合的必要合規性認證。
 - 與 DevOps 和 Azure Data Factory 整合可讓您建立自動化資料處理管線。
 - 您可以使用讀取複本來增強處理效能。
-- 支援「攜帶您自己的金鑰」（BYOK）以進行資料加密。
-- 能夠使用 Azure 私用連結將服務公開給內部網路流量（不公開存取）。
-- 從應用程式到資料庫的[頻寬和延遲](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)，會足以根據所選的閘道（Azure ExpressRoute 或站對站 VPN）。
+- 支援攜帶您自己的金鑰 (BYOK) 進行資料加密。
+- 只能使用 Azure 私用連結將服務公開給內部網路流量 (不受公開存取) 。
+- 從應用程式到資料庫的 [頻寬和延遲](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) 就足以根據所選的閘道， (Azure ExpressRoute 或站對站 VPN) 。
 
 ### <a name="solution-review"></a>解決方案檢閱
 
@@ -95,9 +95,9 @@ _圖1：案例架構。_
 
 僅支援遷移到相同或更高版本。 支援將于 postgresql 9.5 遷移至適用於 PostgreSQL 的 Azure 資料庫9.6 或10，但不支援從于 postgresql 11 遷移至於 postgresql 9.6。
 
-Microsoft 的目標是在適用於 PostgreSQL 的 Azure 資料庫單一伺服器中支援_n-2_版的于 postgresql 引擎。 版本會是 Azure 上目前的主要版本（_n_）和兩個先前的主要版本（_-2_）。
+Microsoft 的目標是在適用於 PostgreSQL 的 Azure 資料庫單一伺服器中支援 _n-2_ 版的于 postgresql 引擎。 版本會是 Azure 上目前的主要版本 (_n_) 以及兩個先前的主要版本 (_-2_) 。
 
-如需支援版本的最新更新，請參閱[支援的于 postgresql 主要版本](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions)。
+如需支援版本的最新更新，請參閱 [支援的于 postgresql 主要版本](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions)。
 
 > [!NOTE]
 > 不支援自動主要版本升級。 例如，不會從于 postgresql 9.5 自動升級為于 postgresql 9.6。 若要升級至下一個主要版本，請傾印資料庫，並將它還原至以目標引擎版本建立的伺服器。
@@ -112,13 +112,13 @@ Contoso 將需要針對複寫問題評估目前的資料庫。 這些問題包�
 
 - 源資料庫版本與遷移至目標資料庫版本相容。
 - 主要金鑰必須存在於要複寫的所有資料表上。
-- 資料庫名稱不能包含分號（ `;` ）。
+- 資料庫名稱不能包含分號 (`;`) 。
 - 使用相同名稱來遷移多個資料表，但不同的案例可能會導致無法預期的行為。
 
   ![遷移程式的圖表。 ](./media/contoso-migration-postgresql-to-azure/migration-process.png)
   _圖2：遷移程式。_
 
-#### <a name="migration"></a>遷移
+#### <a name="migration"></a>移轉
 
 Contoso 可以透過數種方式來執行遷移：
 
@@ -128,14 +128,14 @@ Contoso 可以透過數種方式來執行遷移：
 
 Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主要升級時，重複使用遷移專案。 因為單一資料庫移轉服務活動只會容納最多四個資料庫，所以 Contoso 會使用下列步驟來設定數個工作。
 
-若要準備，請設定用來存取資料庫的虛擬網路。 使用[VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)，以各種方式建立虛擬網路連線。
+若要準備，請設定用來存取資料庫的虛擬網路。 使用 [VPN 閘道](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) ，以各種方式建立虛擬網路連線。
 
 <!-- docsTest:ignore "Azure Database Migration Services" -->
 
 ### <a name="create-an-azure-database-migration-service-instance"></a>建立 Azure 資料庫移轉服務執行個體
 
-1. 在 [ [Azure 入口網站](https://portal.azure.com)中，選取 [**新增資源**]。
-1. 搜尋**Azure 資料庫移轉服務**，並加以選取。
+1. 在 [ [Azure 入口網站](https://portal.azure.com)中，選取 [ **新增資源**]。
+1. 搜尋 **Azure 資料庫移轉服務**，並加以選取。
 1. 選取 [+ 新增]。
 1. 選取服務的 [訂用帳戶] 和 [資源群組]。
 1. 輸入實例的名稱。
@@ -162,9 +162,9 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
     - 加入資料庫移轉服務實例特定的專案。
 1. 您必須針對每部伺服器修改檔案中的值，以在來源伺服器上啟用邏輯複寫 `postgresql.conf` 。
     1. `wal_level` = `logical`
-    1. `max_replication_slots`= [至少要遷移的資料庫數目上限]
+    1. `max_replication_slots` = [至少要遷移的資料庫數目上限]
         - 例如，如果 Contoso 想要遷移四個資料庫，則會將值設定為4。
-    1. `max_wal_senders`= [同時執行的資料庫數目]
+    1. `max_wal_senders` = [同時執行的資料庫數目]
         - 建議的值是10。
 
 1. 遷移 `User` 必須擁有 `REPLICATION` 源資料庫的角色。
@@ -180,17 +180,17 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 1. 複製檔案、將複本命名為 `dvdrental_schema_foreign.sql` ，然後移除所有非外鍵和觸發程式相關的專案。
 1. 從檔案中移除所有外鍵和觸發程式相關的專案 `dvdrental_schema.sql` 。
 
-1. 匯入資料庫架構（步驟1）：
+1. 匯入資料庫架構 (步驟 1) ：
 
       ```cmd
         psql -h {host}.postgres.database.azure.com -d dvdrental -U username -f dvdrental_schema.sql
       ```
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 1. 在 Azure 入口網站中，Contoso 會前往其資料庫移轉服務資源。
-1. 如果服務未啟動，請選取 [**啟動服務**]。
-1. 選取 [新增] [**遷移專案**]。
+1. 如果服務未啟動，請選取 [ **啟動服務**]。
+1. 選取 [新增] [ **遷移專案**]。
 
     ![顯示反白顯示 [新增遷移專案] 選項的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project.png)
 
@@ -198,19 +198,19 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 1. 選取 [**新增活動**] [  >  **線上資料移轉**]。
 1. 輸入名稱。
-1. 選取 [**于 postgresql** ] 作為來源。
-1. 針對 [目標] 選取**適用於 PostgreSQL 的 Azure 資料庫**，然後選取 [**儲存**]。
+1. 選取 [ **于 postgresql** ] 作為來源。
+1. 針對 [目標] 選取 **適用於 PostgreSQL 的 Azure 資料庫** ，然後選取 [ **儲存**]。
 
     ![顯示 [新增遷移專案] 窗格的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project02.png)
 
     _圖5：新的遷移專案會反白顯示。_
 
-1. 輸入來源資訊，然後選取 [**儲存**]。
+1. 輸入來源資訊，然後選取 [ **儲存**]。
 
     ![顯示輸入來源資訊的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_source.png)
     _圖6：輸入來源資訊。_
 
-1. 輸入目標資訊，然後選取 [**儲存**]。
+1. 輸入目標資訊，然後選取 [ **儲存**]。
 
     ![顯示選取目標資訊的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_target.png)
     _圖7：選取目標資訊。_
@@ -220,12 +220,12 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
     ![顯示選取資料庫的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_db.png)
     _圖8：選取 [資料庫]。_
 
-1. 設定 [advanced] 設定，然後選取 [**儲存**]。
+1. 設定 [advanced] 設定，然後選取 [ **儲存**]。
 
     ![顯示設定 advanced settings 的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_advanced.png)
     _圖9：設定 advanced settings。_
 
-1. 提供活動的名稱，然後選取 [**執行**]。
+1. 提供活動的名稱，然後選取 [ **執行**]。
 
     ![顯示命名和執行活動的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_summary.png)
     _圖10：命名和執行活動。_
@@ -248,9 +248,9 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
     _圖13：正在完成轉換。_
 
       > [!NOTE]
-      > 先前的資料庫移轉服務步驟也可以透過[Azure CLI](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)來執行。
-    
-1. 匯入資料庫架構（步驟2）：
+      > 先前的資料庫移轉服務步驟也可以透過 [Azure CLI](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)來執行。
+
+1. 匯入資料庫架構 (步驟 2) ：
 
       ```cmd
         psql -h {host}.postgres.database.azure.com -d dvdrental -U username -f dvdrental_schema_foreign.sql
@@ -272,12 +272,12 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 Contoso 必須：
 
-- 確保其適用于于 postgresql 實例和資料庫的新 Azure 資料庫是安全的。 如需詳細資訊，請參閱[適用於 PostgreSQL 的 Azure 資料庫-單一伺服器中的安全性](https://docs.microsoft.com/azure/postgresql/concepts-security)。
-- 檢查[防火牆規則](https://docs.microsoft.com/azure/postgresql/concepts-firewall-rules)和虛擬網路設定，以確認連線僅限於需要它的應用程式。
-- 針對資料加密執行[BYOK](https://docs.microsoft.com/azure/postgresql/concepts-data-encryption-postgresql) 。
-- 更新所有應用程式，以要求連接到資料庫的[SSL](https://docs.microsoft.com/azure/postgresql/concepts-ssl-connection-security) 。
-- 設定[私用連結](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-private-link)，讓所有資料庫流量保留在 Azure 和內部部署網路中。
-- 啟用[Azure 進階威脅防護（ATP）](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-threat-protection)。
+- 確保其適用于于 postgresql 實例和資料庫的新 Azure 資料庫是安全的。 如需詳細資訊，請參閱 [適用於 PostgreSQL 的 Azure 資料庫-單一伺服器中的安全性](https://docs.microsoft.com/azure/postgresql/concepts-security)。
+- 檢查 [防火牆規則](https://docs.microsoft.com/azure/postgresql/concepts-firewall-rules) 和虛擬網路設定，以確認連線僅限於需要它的應用程式。
+- 針對資料加密執行 [BYOK](https://docs.microsoft.com/azure/postgresql/concepts-data-encryption-postgresql) 。
+- 更新所有應用程式，以要求連接到資料庫的 [SSL](https://docs.microsoft.com/azure/postgresql/concepts-ssl-connection-security) 。
+- 設定 [私用連結](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-private-link) ，讓所有資料庫流量保留在 Azure 和內部部署網路中。
+- 啟用 [Azure 進階威脅防護 (ATP) ](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-threat-protection)。
 - 設定 Log Analytics 以監視及警示安全性，並記錄相關的專案。
 
 ### <a name="backups"></a>備份

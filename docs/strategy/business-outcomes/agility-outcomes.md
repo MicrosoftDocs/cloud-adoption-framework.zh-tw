@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d9bd12087b21f8ace7ffc8501073b84650ada458
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1df64e7777e045f0e52871ac04b243e4c3b3902d
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788161"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194532"
 ---
 # <a name="examples-of-agility-outcomes"></a>靈活性結果的範例
 
-如[商業成果總覽](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于 timeliest 商務量值：商業彈性。 瞭解貴公司的市場位置和競爭範圍，可以協助您清楚表達企業轉型旅程目標的商業成果。
+如 [商業成果總覽](./index.md)中所述，有數個潛在的商業成果可以做為與企業進行之任何轉換旅程的基礎。 本文著重于 timeliest 商務量值：商業彈性。 瞭解貴公司的市場位置和競爭範圍，可以協助您清楚表達企業轉型旅程目標的商業成果。
 
 傳統上，投資主管和 IT 小組在核心要徑任務程式中被視為穩定性的來源。 這仍然是 true。 少數企業在 IT 平臺不穩定時，可以發揮良好的效果。 不過，在現今的業務世界中，預期會有更多的功能。 藉由與企業合作來提供市場優勢，它可以擴充到超過一個簡單的成本中心。 許多投資人員和主管都認為穩定性只是 IT 的基準。 對於這些領導者而言，商業彈性是 IT 對企業貢獻的測量。
 
@@ -32,7 +32,7 @@ ms.locfileid: "84788161"
 
 - **範例1：** 美國公司的歐洲部門必須在支援 UK 作業的資料庫中保護客戶資料，以符合 GDPR 法規。 其現有的 SQL Server 版本不支援必要的資料列層級安全性。 就地升級可能會造成干擾。 使用 Azure SQL Database 來複寫和升級資料庫，客戶會在幾周內新增必要的合規性措施。
 
-- **範例2：** 物流公司已探索到市場的未開發區段，但需要新版本的旗艦應用程式來捕捉此市場共用。 其較大的競爭者已進行相同的探索。 藉由執行具備雲端功能的應用程式創新工作，該公司會採用客戶對和 DevOps 導向的開發方法，使其更慢、舊版的競爭對手_x_個月。 這是市場上的快速入門保護客戶群。
+- **範例2：** 物流公司已探索到市場的未開發區段，但需要新版本的旗艦應用程式來捕捉此市場共用。 其較大的競爭者已進行相同的探索。 藉由執行具備雲端功能的應用程式創新工作，該公司會採用客戶對和 DevOps 導向的開發方法，使其更慢、舊版的競爭對手 *x* 個月。 這是市場上的快速入門保護客戶群。
 
 <!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
@@ -58,7 +58,7 @@ ms.locfileid: "84788161"
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解如何[達到成果](./reach-outcomes.md)。
+深入瞭解如何 [達到成果](./reach-outcomes.md)。
 
 > [!div class="nextstepaction"]
 > [觸達成果](./reach-outcomes.md)

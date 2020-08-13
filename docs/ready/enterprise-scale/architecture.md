@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 88f1272526ba16b345349a2447d5d17c9c253229
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: 697d1e8c57e2e4b7354b8730bbcf5e7653657000
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075840"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193194"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "88075840"
 
 ## <a name="landing-zone-expanded-definition"></a>登陸區域：展開的定義
 
-[登陸區域考慮](../../ready/considerations/index.md)提供「_登陸區域_」一詞的詳細定義。 雲端採用架構的「企業級登陸區域」的物件需要更具體的定義。
+[登陸區域考慮](../../ready/considerations/index.md) 提供「 _登陸區域_」一詞的詳細定義。 雲端採用架構的「企業級登陸區域」的物件需要更具體的定義。
 
 - **範圍：** 在雲端採用架構的「企業級」登陸區域內，登陸區域的範圍會大幅增加，以支援在 Azure 中的企業規模進行應用程式遷移和環保欄位的開發。 這項擴充功能可讓您在客戶的完整 IT 組合中進行調整，而這項功能的外觀遠高於短期雲端採用方案。
 
@@ -73,7 +73,7 @@ _圖1：登陸區域設計。_
 
 _圖2：雲端採用架構的企業規模登陸區域架構。_
 
-下載包含此架構圖表的[PDF](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.pdf)檔案。
+下載包含此架構圖表的 [PDF](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 檔案。
 
 ## <a name="next-steps"></a>後續步驟
 

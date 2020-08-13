@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 5cbb5e5cb68a8dd55beb13800a3d03a7d722b2fc
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: a7eacac8932d3a88f6ba793a30de22c4bec315d7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450368"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195767"
 ---
 <!-- cSpell:ignore PDU -->
 
 # <a name="how-does-azure-work"></a>Azure 如何運作？
 
-Azure 是 Microsoft 的公用雲端平台。 Azure 提供一組大型的服務，包括平臺即服務（PaaS）、基礎結構即服務（IaaS）和受控資料庫服務功能。 但 Azure 到底是什麼？它如何運作？
+Azure 是 Microsoft 的公用雲端平台。 Azure 提供大量的服務集合，包括平臺即服務 (PaaS) 、基礎結構即服務 (IaaS) 和受控資料庫服務功能。 但 Azure 到底是什麼？它如何運作？
 
 <!-- markdownlint-disable MD034 -->
 
@@ -37,13 +37,13 @@ Azure 就像其他雲端平台一樣，需仰賴名為_虛擬化_的技術。 �
 
 每個網狀架構控制器執行個體都會連線至執行雲端協調流程軟體的另一組伺服器，一般稱之為_前端_。 前端會主控 Web 服務、RESTful API，以及雲端執行的所有功能所使用的內部 Azure 資料庫。
 
-例如，前端會裝載處理客戶要求的服務，以配置 Azure 資源（例如[虛擬機器](https://docs.microsoft.com/azure/virtual-machines)）和服務（如[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)）。 首先，前端會驗證使用者，並確認使用者是否有權配置要求的資源。 若是如此，前端會檢查資料庫，找出具有足夠容量的伺服器機架，然後指示該機架上的網狀架構控制器配置資源。
+例如，前端會裝載處理客戶要求的服務，以配置 Azure 資源（例如 [虛擬機器](https://docs.microsoft.com/azure/virtual-machines)）和服務（如 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)）。 首先，前端會驗證使用者，並確認使用者是否有權配置要求的資源。 若是如此，前端會檢查資料庫，找出具有足夠容量的伺服器機架，然後指示該機架上的網狀架構控制器配置資源。
 
 基本上，Azure 是一個龐大的伺服器和網路硬體集合，執行一組複雜的分散式應用程式，以協調這些伺服器上的虛擬化硬體和軟體的設定和操作。 這是讓 Azure 變得強大的協調流程，因為使用者不再負責維護和升級硬體，因為 Azure 會在幕後完成這一切。
 
 ## <a name="next-steps"></a>後續步驟
 
-深入瞭解使用適用于 Azure 的[Microsoft Cloud 採用架構來](../index.yml)進行雲端採用。
+深入瞭解使用適用于 Azure 的 Microsoft Cloud 採用架構來進行雲端採用。
 
 > [!div class="nextstepaction"]
 > [瞭解適用于 Azure 的 Microsoft Cloud 採用架構](../index.yml)

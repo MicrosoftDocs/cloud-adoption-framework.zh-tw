@@ -1,5 +1,5 @@
 ---
-title: 具有 Azure Machine Learning 的 MLOps
+title: 使用 Azure Machine Learning 的 MLOps
 description: 使用適用于 Azure 的雲端採用架構來瞭解必須進行的各種轉換，以在雲端中啟用營運管理。
 author: v-hanki
 ms.author: janet
@@ -7,16 +7,16 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e5320b72d89e89c4034480614272c526e61e97b1
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 571f718825f94c4bfaaa3bac97b24a9486a480c1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451739"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194258"
 ---
-# <a name="mlops-with-azure-machine-learning"></a>具有 Azure Machine Learning 的 MLOps
+# <a name="mlops-with-azure-machine-learning"></a>使用 Azure Machine Learning 的 MLOps
 
-Machine Learning 作業（MLOps）是以 DevOps 原則和實務為基礎，可提高工作流程的效率。 例如，持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，其目標為：
+Machine Learning 作業 (MLOps) 是以提升工作流程效率的 DevOps 原則和實務為基礎。 例如，持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，其目標為：
 
 - 更快速地測試和開發模型
 - 更快速地將模型部署至生產環境
@@ -25,7 +25,7 @@ Machine Learning 作業（MLOps）是以 DevOps 原則和實務為基礎，可�
 Azure Machine Learning 提供下列 MLOps 功能：
 
 - **建立可重現的 ML 管線**。 Machine Learning 管線可讓您針對資料準備、定型和評分程式，定義可重複且可重複使用的步驟。
-- **建立可重複使用的軟體環境**  用於定型和部署模型。
+- **建立可重複使用的軟體環境** ，以定型和部署模型。
 - **從任何地方註冊、封裝和部署模型**。 您也可以追蹤使用模型所需的相關中繼資料。
 - **捕捉端對端 ML 生命週期的治理資料**。 記錄的資訊可能包括正在發行模型的物件、進行變更的原因，以及模型部署或用於生產環境中的時間。
 - **通知並警示 ML 生命週期中的事件**。 例如，實驗完成、模型註冊、模型部署和資料漂移偵測。
@@ -44,17 +44,17 @@ Azure Machine Learning 提供下列 MLOps 功能：
 - 簡化適用于品質控制、A/B 測試等的模型封裝、驗證和部署。
 - 說明和觀察模型行為，並將重新定型程式自動化。
 
-MLOps 可改善機器學習解決方案的品質與一致性。 若要深入瞭解如何使用 Azure Machine Learning 來管理模型的生命週期，請參閱[MLOps：使用 Azure Machine Learning 的模型管理、部署和監視](https://docs.microsoft.com/azure/machine-learning/concept-model-management-and-deployment)。
+MLOps 可改善機器學習解決方案的品質與一致性。 若要深入瞭解如何使用 Azure Machine Learning 來管理模型的生命週期，請參閱 [MLOps：使用 Azure Machine Learning 的模型管理、部署和監視](https://docs.microsoft.com/azure/machine-learning/concept-model-management-and-deployment)。
 
 ## <a name="next-steps"></a>後續步驟
 
 若要深入瞭解，請閱讀並探索下列資源：
 
 - [MLOps：使用 Azure Machine Learning 進行模型管理、部署和監視](https://docs.microsoft.com/azure/machine-learning/concept-model-management-and-deployment)
-- 如何以及在何處[使用 Azure Machine Learning 部署模型](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where)
-- 教學課程：[在 ACI 中部署影像分類模型](https://docs.microsoft.com/azure/machine-learning/tutorial-deploy-models-with-aml)
+- 如何以及在何處 [使用 Azure Machine Learning 部署模型](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where)
+- 教學課程： [在 ACI 中部署影像分類模型](https://docs.microsoft.com/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [端對端 MLOps 範例存放庫](https://github.com/microsoft/MLOps)
 - [具有 Azure Pipelines 的 ML 模型 CI/CD](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-machine-learning?view=azure-devops&tabs=yaml)
-- 建立使用已 [部署模型](https://docs.microsoft.com/azure/machine-learning/how-to-consume-web-service)的用戶端
+- 建立使用已[部署模型](https://docs.microsoft.com/azure/machine-learning/how-to-consume-web-service)的用戶端
 - [大規模機器學習](https://docs.microsoft.com/azure/architecture/data-guide/big-data/machine-learning-at-scale)
 - [Azure AI 參考架構和最佳做法存放庫](https://github.com/microsoft/AI)

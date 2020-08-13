@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 89f7d7986281a5e5a6409623905ebaaa6fe00fe1
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: 6ff17c33b79f58c1eab73407bd054fd06471b468
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400525"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193600"
 ---
 <!-- cSpell:ignore benstegink msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
 
 # <a name="move-on-premises-remote-desktop-services-to-azure-windows-virtual-desktop-scenario"></a>將內部部署遠端桌面服務移至 Azure Windows 虛擬桌面案例
 
-Windows 虛擬桌面是在雲端中執行的完整桌面和應用程式虛擬化服務。 這是唯一的虛擬桌面基礎結構（VDI），可為企業 Microsoft 365 應用程式提供簡化的管理、Windows 10 企業版的多重會話優化，以及遠端桌面服務（RDS）環境的支援。 幾分鐘內就能在 Azure 上部署及調整 Windows 桌面和應用程式，並取得內建的安全性與合規性功能。
+Windows 虛擬桌面是在雲端中執行的完整桌面和應用程式虛擬化服務。 這是唯一 (VDI) 的虛擬桌面基礎結構，可為企業適用的 Microsoft 365 應用程式提供簡化的管理、Windows 10 企業版的多重會話優化，以及遠端桌面服務 (RDS) 環境的支援。 幾分鐘內就能在 Azure 上部署及調整 Windows 桌面和應用程式，並取得內建的安全性與合規性功能。
 
-| 移轉選項 | 成果 |
+| 移轉選項 | 結果 |
 |--- | --- |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | 評估和遷移內部部署 RDS 環境。 <br><br> 使用 Azure Windows 虛擬桌面執行工作負載。 <br><br> 使用[Windows 虛擬桌面管理 UX](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux)管理 Windows 虛擬桌面。 |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | 評估和遷移內部部署 RDS 環境。 <br><br> 使用 Azure Windows 虛擬桌面執行工作負載。 <br><br> 使用 [Windows 虛擬桌面管理 UX](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux)管理 Windows 虛擬桌面。 |
 
 > [!NOTE]
 > 本文著重于在 Azure 中使用 Windows 虛擬桌面將內部部署 RDS 環境移至 Azure。
@@ -74,7 +74,7 @@ RDS 會部署到內部部署資料中心。 Microsoft 365 由組織授權及使�
 - 同步 Active Directory 或 Azure Active Directory Domain Services。
 - 將 Windows 虛擬桌面部署至 Azure。
 - 將內部部署 RDS 伺服器遷移至 Azure。
-- 將使用者設定檔磁片（Upd）轉換為 FSLogix 設定檔容器。
+- 將使用者設定檔磁片 (Upd) 轉換為 FSLogix 設定檔容器。
 
   ![圖表顯示提議的架構。 ](./media/contoso-migration-rds-to-wvd/proposed-architecture.png)
   _圖1：提議的架構。_
@@ -112,17 +112,17 @@ Contoso 會使用 Lakeside 評估工具和 Azure Migrate，將 Vm 移至 Azure �
 Contoso 會在 Azure 區域中布建 Windows 虛擬桌面服務 `East US 2` 。 透過 Windows 虛擬桌面，Contoso 可以布建虛擬機器、主機集區，以及建立應用程式群組。 Windows 虛擬桌面也會為 Windows 虛擬桌面解決方案中的所有伺服器設定可用性設定組。 Windows 虛擬桌面可讓 Contoso 建立高可用性的 VDI 環境，並視需要快速相應增加和減少。
 
 > [!NOTE]
-> Contoso 在評估期間審查了兩個案例： RDS 的多會話（共用）實例和持續性（或使用者專用）虛擬機器。
+> Contoso 在評估期間審查了兩個案例：多會話 () RDS 和持續性 (的實例共用，或使用者專用的) 虛擬機器。
 
-1. 請確定網域服務（Active Directory 或 Azure Active Directory Domain Services）已與 Azure Active Directory （Azure AD）同步處理。 請確定可從 Azure 訂用帳戶和虛擬網路存取網域服務，以便在其中部署 Windows 虛擬桌面。
+1. 請確定網域服務（Active Directory 或 Azure Active Directory Domain Services）已與 Azure Active Directory (Azure AD) 同步處理。 請確定可從 Azure 訂用帳戶和虛擬網路存取網域服務，以便在其中部署 Windows 虛擬桌面。
 
     > [!NOTE]
-    > 深入瞭解使用 Azure AD 同步處理 Active Directory 內部部署的[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) 。
+    > 深入瞭解使用 Azure AD 同步處理 Active Directory 內部部署的 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) 。
 
     <!-- -->
 
     > [!NOTE]
-    > 瞭解布建[Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)並同步處理 Azure AD。
+    > 瞭解布建 [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance) 並同步處理 Azure AD。
 
 1. 建立新的 Azure Migrate 專案。
 
@@ -145,14 +145,14 @@ Contoso 會在 Azure 區域中布建 Windows 虛擬桌面服務 `East US 2` 。 
 
 1. 選取 [ **Lakeside： SysTrack** ] 作為 [評估] 工具。
 
-1. 選取 [ **Azure Migrate：伺服器遷移**] 作為 [遷移] 工具。
+1. 選取 [ **Azure Migrate：伺服器遷移** ] 作為 [遷移] 工具。
 
 1. 將工具加入至 [遷移] 專案。
 
    ![顯示將工具加入至專案的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/add-tools.png)
    _圖6：將工具加入至遷移。_
 
-1. 在 Lakeside 工具中選取 [**向 Azure Migrate 註冊**]，開始評估目前的環境。
+1. 在 Lakeside 工具中選取 [ **向 Azure Migrate 註冊** ]，開始評估目前的環境。
 
    ![顯示 Lakeside 註冊與 Azure Migrate 的螢幕擷取畫面。](./media/contoso-migration-rds-to-wvd/lakeside-register-with-azure-migrate.png)
 
@@ -194,15 +194,15 @@ Contoso 會使用 Azure 入口網站來建立用於集區資源的 Windows 虛�
    ![顯示布建 Windows 虛擬桌面主機集區的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool.png)
   _圖11：新的 Windows 虛擬桌面主機集區。_
 
-1. 指定訂用帳戶、資源群組和區域。 然後選取 [主機集區] 的名稱、[桌上型電腦類型] 和 [預設桌面使用者]。 桌面類型設定為 [集區] **，因為 Contoso 是以新**的共用環境為其部分使用者啟動。 預設的桌面使用者可以保留空白。 繼續設定虛擬機器。
+1. 指定訂用帳戶、資源群組和區域。 然後選取 [主機集區] 的名稱、[桌上型電腦類型] 和 [預設桌面使用者]。 桌面類型設定為 [集區] **，因為 Contoso 是以新** 的共用環境為其部分使用者啟動。 預設的桌面使用者可以保留空白。 繼續設定虛擬機器。
 
    ![螢幕擷取畫面：顯示設定虛擬機器的必要條件。 ](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool-basics-alt.png)
    _圖12：設定虛擬機器的必要條件。_
 
-   - Contoso 會設定 VM，並藉由選取 [**變更大小**] 或 [使用預設值] 來選擇自訂大小。
+   - Contoso 會設定 VM，並藉由選取 [ **變更大小** ] 或 [使用預設值] 來選擇自訂大小。
    - 已選擇 Windows 虛擬桌面做為這些集區桌面的 VM 名稱前置詞。
-   - 因為 Contoso 正在建立集區伺服器以針對虛擬機器設定使用新的 Windows 10 多重會話功能，所以請將映射來源設定為**圖庫**。 此選項可讓 Contoso 選取適用于 Vm 的 Windows 10 企業版多會話映射。
-   - Contoso 會根據 Lakeside 評估中的使用者角色，將使用者總數設定為**150**。
+   - 因為 Contoso 正在建立集區伺服器以針對虛擬機器設定使用新的 Windows 10 多重會話功能，所以請將映射來源設定為 **圖庫**。 此選項可讓 Contoso 選取適用于 Vm 的 Windows 10 企業版多會話映射。
+   - Contoso 會根據 Lakeside 評估中的使用者角色，將使用者總數設定為 **150**。
    - 其他設定包括 [磁片類型]、[AD 網域加入 UPN] 欄位、[系統管理員密碼]、新增機器的選用 OU 路徑、虛擬網路，以及用於新增伺服器的子網。
 
    ![顯示設定虛擬機器的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool-configure-virtual-machines-alt.png)
@@ -210,7 +210,7 @@ Contoso 會使用 Azure 入口網站來建立用於集區資源的 Windows 虛�
 
     > [!NOTE]
     > 在此步驟中，Contoso 無法建立新的虛擬網路。 在達到此步驟之前，Contoso 應已建立可存取 Active Directory 的虛擬網路。
-    
+
    <!-- -->
 
     > [!NOTE]
@@ -223,7 +223,7 @@ Contoso 會使用 Azure 入口網站來建立用於集區資源的 Windows 虛�
 
 ## <a name="step-3-convert-the-upds-to-fslogix-profile-containers"></a>步驟3：將 Upd 轉換為 FSLogix 設定檔容器
 
-因為 Windows 虛擬桌面不支援使用者設定檔磁片（Upd），所以 Contoso 必須透過[FSLogixMigration PowerShell 模組](https://aka.ms/FSLogixMigrationPreviewModule)將所有 upd 轉換為 FSLogix。
+因為 Windows 虛擬桌面不支援 (Upd) 的使用者設定檔磁片，所以 Contoso 必須透過 [FSLogixMigration PowerShell 模組](https://aka.ms/FSLogixMigrationPreviewModule)將所有 upd 轉換為 FSLogix。
 
 <!-- docsTest:ignore FSLogixMigration -->
 
@@ -252,7 +252,7 @@ Convert-RoamingProfile -ProfilePath "C:\Users\User1" -Target "\\Server\FSLogixPr
 
 Contoso 遷移程式的下一個步驟是將其持續性虛擬機器遷移至 Windows 虛擬桌面。 若要這樣做，Contoso 會回到程式開始時所建立的 Azure Migrate：伺服器遷移作業。
 
-1. Contoso 一開始先選取 [Azure Migrate：伺服器遷移工具] 中的 [**探索**]。
+1. Contoso 一開始先選取 [Azure Migrate：伺服器遷移工具] 中的 [ **探索** ]。
 
    ![顯示 [Azure Migrate：伺服器遷移探索] 選項的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/wvd-persistent-discover.png)
    _圖15：探索伺服器遷移。_
@@ -268,7 +268,7 @@ Contoso 遷移程式的下一個步驟是將其持續性虛擬機器遷移至 Wi
    _圖17：複寫至 Azure 的必要條件。_
 
 1. 現在已啟動將主機複寫到 Azure Blob 儲存體的工作。 Contoso 可以繼續進行複寫，直到它準備好要測試 Vm，然後再將它們遷移到生產環境。
-   - 當機器開始在 Azure 中執行時，Contoso 會確保在每部機器上安裝[WINDOWS 虛擬桌面 VM 代理程式](https://aka.ms/WVDVMAgent)。
+   - 當機器開始在 Azure 中執行時，Contoso 會確保在每部機器上安裝 [WINDOWS 虛擬桌面 VM 代理程式](https://aka.ms/WVDVMAgent) 。
    - 在安裝過程中，輸入 Windows 虛擬桌面環境的註冊權杖，讓伺服器與正確的環境產生關聯。
 
 1. 您可以使用下列命令來取得註冊權杖：
@@ -280,7 +280,7 @@ Contoso 遷移程式的下一個步驟是將其持續性虛擬機器遷移至 Wi
     > [!NOTE]
     > Contoso 也可以使用命令來自動化此程式 `msiexec` ，並傳入註冊權杖做為變數。
 
-1. 在最後一次遷移前的最後一個步驟中，Contoso 會選取 [Azure Windows 虛擬桌面] 設定中的 [**使用者**] 專案，將伺服器對應到其各自的使用者和群組。
+1. 在最後一次遷移前的最後一個步驟中，Contoso 會選取 [Azure Windows 虛擬桌面] 設定中的 [ **使用者** ] 專案，將伺服器對應到其各自的使用者和群組。
 
    ![顯示將 Windows 虛擬桌面資源指派給使用者和群組的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/wvd-persistent-user-mapping.png)
    _圖18：最終遷移前的最後一個步驟。_
@@ -295,16 +295,16 @@ Contoso 遷移程式的下一個步驟是將其持續性虛擬機器遷移至 Wi
 
 Contoso 安全性小組會檢查 Azure Vm，以判斷是否有任何安全性問題。 若要控制存取權，小組會檢閱 VM 的網路安全性群組 (NSG)。 Nsg 是用來確保只有應用程式允許的流量可以到達它。 小組也會考慮使用 Azure 磁碟加密和 Azure Key Vault 來保護磁片上的資料。
 
-如需詳細資訊，請參閱[Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
+如需詳細資訊，請參閱 [Azure 中 IaaS 工作負載的安全性最佳作法](https://docs.microsoft.com/azure/security/fundamentals/iaas)。
 
 ## <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
 
-針對商務持續性和嚴重損壞修復（BCDR），Contoso 會使用 Azure 備份來備份 Vm 上的資料，以確保資料安全。 如需詳細資訊，請參閱[AZURE VM 備份的總覽](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)。
+針對商務持續性和嚴重損壞修復 (BCDR) ，Contoso 會使用 Azure 備份保護資料安全，以備份 Vm 上的資料。 如需詳細資訊，請參閱 [AZURE VM 備份的總覽](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- [Microsoft 365 的授權](https://azure.microsoft.com/pricing/details/virtual-desktop/)用於桌面部署。
-- Contoso 會啟用[Azure 成本管理和計費](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)，以協助監視和管理 Azure 資源。
+- [Microsoft 365 的授權](https://azure.microsoft.com/pricing/details/virtual-desktop/) 用於桌面部署。
+- Contoso 會啟用 [Azure 成本管理和計費](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
 - Contoso 擁有其 Vm 的現有授權，並會利用應用程式伺服器的 Azure Hybrid Benefit。 Contoso 會轉換現有的 Azure VM，以便充分利用這個定價。
 
 ## <a name="conclusion"></a>結論

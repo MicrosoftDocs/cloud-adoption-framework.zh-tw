@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: bc53a552a082a2a355c07842b44f7964710d60d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f6a9fbb151b6ed850e5e309c902b4f1b88784a70
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216345"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194900"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>調整雲端現有的角色、技能和流程
 
@@ -22,7 +22,7 @@ ms.locfileid: "83216345"
 
 IT 人員的成員可能會覺得有點焦慮其角色和職位，因為他們發現需要一組不同的技能來支援雲端解決方案。 但是，探索並學習新雲端技術的 agile 員工不應該擔心。 他們可以領導採用雲端服務，並協助組織學習和接受相關的變更。
 
-如需建立新技能集的指引，請參閱[技能就緒性路徑](./suggested-skills.md)。
+如需建立新技能集的指引，請參閱 [技能就緒性路徑](./suggested-skills.md)。
 
 ## <a name="capture-concerns"></a>捕捉考慮
 
@@ -36,7 +36,7 @@ IT 人員的成員通常會擔心如何取得支援擴充功能和新職責所�
 
 ## <a name="identify-gaps"></a>找出間距
 
-識別差距是組織準備的另一個重要層面。 「_差距_」（gap）是您的數位轉型所需的角色、技能或程式，但目前不存在於您的企業中。
+識別差距是組織準備的另一個重要層面。 「 _差距_ 」（gap）是您的數位轉型所需的角色、技能或程式，但目前不存在於您的企業中。
 
 1. 列舉數位轉型所隨附的責任。 強調新的責任和即將淘汰的現有責任。
 1. 識別與每個責任一致的區域。 針對每個新的責任，檢查它與區域的緊密關係。 某些責任可能會跨越數個區域。 這種交叉會代表您應該記錄為考慮的更佳對齊方式的機會。 如果未將任何區域識別為負責，請記錄此間隙。
@@ -53,7 +53,7 @@ IT 人員的成員通常會擔心如何取得支援擴充功能和新職責所�
 
 ## <a name="next-steps"></a>後續步驟
 
-確保正確支援已翻譯的角色是小組的工作。 若要對此指引採取行動，請參閱[組織準備就緒簡介](../organize/index.md)，以識別正確的小組結構和參與者。
+確保正確支援已翻譯的角色是小組的工作。 若要對此指引採取行動，請參閱組織準備就緒總覽，以識別正確的小組結構和參與者。
 
 > [!div class="nextstepaction"]
 > [識別正確的小組結構](../organize/index.md)

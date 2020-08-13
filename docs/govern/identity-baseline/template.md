@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a3aa20bb2935d99623aab767a9b9194c4bd8def
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 589ba9877b8cbc29b81a529120911557d3a222f4
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218555"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195574"
 ---
 # <a name="identity-baseline-discipline-template"></a>身分識別基準專業領域範本
 
@@ -24,7 +24,7 @@ ms.locfileid: "83218555"
 > [!IMPORTANT]
 > 這個範本是受限的範例。 在更新此範本以反映您的需求之前，您應該檢閱後續用來在您的雲端治理策略中定義有效身分識別基準專業領域的步驟。
 
-[下載身分識別基準專業領域範本](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
+[下載身分識別基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx)
 
 ## <a name="next-steps"></a>後續步驟
 

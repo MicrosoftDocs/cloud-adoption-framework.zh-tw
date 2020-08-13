@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 856627779dcb5de0417e5a0d229b069c2937a6cc
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: bf0d36934e32c0ad502a178cbedbcff25cd45bf8
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235359"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194952"
 ---
 # <a name="migration-backlog-review"></a>移轉待處理項目檢閱
 
@@ -34,7 +34,7 @@ ms.locfileid: "86235359"
 
 ## <a name="next-steps"></a>後續步驟
 
-獲得對數位資產和移轉待處理項目的基本了解後，小組即可結束必要條件的部分，並開始[評估工作負載](../assess/index.md)。
+透過對數位資產和遷移待處理專案的一般瞭解，小組已準備好移至必要條件之外，並開始評估工作負載。
 
 > [!div class="nextstepaction"]
 > [評估工作負載](../assess/index.md)

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5da9fffe5d3367e32e5acc2d47accf2c6903c263
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b1013126c58baaf54c81e2b8566e754bcb1df75c
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450963"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194772"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "86450963"
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-遷移方法的執行是以[計畫階段](../strategy/suggested-skills.md)期間所取得的技能為基礎，並在遷移旅程的[準備階段](../organize/suggested-skills.md)。
+遷移方法的執行是以 [計畫階段](../strategy/suggested-skills.md) 期間所取得的技能為基礎，並在遷移旅程的 [準備階段](../organize/suggested-skills.md) 。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 
@@ -46,7 +46,7 @@ ms.locfileid: "86450963"
 
 下列教學課程可以協助小組準備移轉活動：
 
-- [遷移至 azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Site Recovery 將 vm 遷移至 azure。
+- [遷移至 azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Migrate 將 vm 遷移至 azure。
 - [將工作負載重新裝載至 azure](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting)： Pluralsight 課程，教觀看者如何重新裝載工作負載至 azure。
 - [將實體和虛擬伺服器遷移至 azure](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers)： Pluralsight 課程，可將伺服器遷移至 azure。
 - 將[資料匯入和匯出至 azure](https://www.pluralsight.com/courses/microsoft-azure-import-export-data)： Pluralsight 在 azure 上移動資料的課程。
@@ -66,7 +66,7 @@ ms.locfileid: "86450963"
 
 ## <a name="next-steps"></a>後續步驟
 
-返回[遷移最佳做法檢查清單](./azure-best-practices/index.md)，以確保您的遷移方法完全一致。
+返回 [遷移最佳做法檢查清單](./azure-best-practices/index.md) ，以確保您的遷移方法完全一致。
 
 > [!div class="nextstepaction"]
 > [遷移最佳做法檢查清單](./index.md)

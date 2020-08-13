@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7e8ba47fdd221ea11cca385730e25b961c0bd10f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788144"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194664"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>如何使用商務結果範本
 
-如[商業成果總覽](./index.md)中所述，在商務和技術交談之間，可能會難以填補橋樑。 這個簡單的範本是設計用來協助小組一致地捕捉商業成果，以供日後開發客戶轉換旅程策略時使用。
+如 [商業成果總覽](./index.md)中所述，在商務和技術交談之間，可能會難以填補橋樑。 這個簡單的範本是設計用來協助小組一致地捕捉商業成果，以供日後開發客戶轉換旅程策略時使用。
 
-下載[商務結果範本試算表](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)以開始集體討論和追蹤商務結果。 繼續閱讀以瞭解如何使用範本。 請參閱「[商務結果」一節](./index.md)，以瞭解有關可能會在主管交談中出現的潛在業務結果的想法。
+下載 [商務結果範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx) 以開始集體討論和追蹤商務結果。 繼續閱讀以瞭解如何使用範本。 請參閱「 [商務結果」一節](./index.md) ，以瞭解有關可能會在主管交談中出現的潛在業務結果的想法。
 
 ## <a name="use-the-business-outcome-template"></a>使用商務結果範本
 
@@ -32,7 +32,7 @@ ms.locfileid: "84788144"
 
 _圖1：商務成果以專案關係人的形式呈現，而不是透過商務結果，而是透過技術功能。_
 
-商務結果範本著重于簡化的交談，可以快速地與專案關係人互動，而不會深入探討技術解決方案。 藉由快速瞭解和協調專案關係人所需的關鍵效能指標（Kpi）和商務驅動程式，您的小組在深入探討「執行詳細資料」之前，可以先考慮高階方法和轉換。
+商務結果範本著重于簡化的交談，可以快速地與專案關係人互動，而不會深入探討技術解決方案。 藉由快速瞭解並對齊關鍵效能指標 (Kpi) 和商務驅動程式對專案關係人而言非常重要，您的小組可以在深入探討「執行詳細資料」之前，先考慮高階方法和轉換。
 
 您可以在試算表的 [範例結果] 索引標籤上找到範例，如下所示。 若要追蹤多個結果，請將其新增至 [集體結果] 索引標籤。
 
@@ -56,11 +56,11 @@ _圖3：探索的五個重點區域：專案關係人、結果、驅動程式、
 
 **Kpi：** 這種變更的測量方式為何？ 商務如何得知他們是否成功？ 觀察此 KPI 的頻率為何？ 瞭解每個 KPI 有助於啟用累加式變更和實驗。
 
-**功能：** 當您定義任何轉換旅程時，技術功能會如何加速實現商務結果？ 轉換中必須包含哪些應用程式才能達成商務目標？ 各種應用程式或工作負載的優先順序如何提供功能？ 如何擴充或重新架構解決方案的各個部分，以符合每個結果？ 可以重新排列執行方法（或時程表），以優先處理高影響力的商務結果嗎？
+**功能：** 當您定義任何轉換旅程時，技術功能會如何加速實現商務結果？ 轉換中必須包含哪些應用程式才能達成商務目標？ 各種應用程式或工作負載的優先順序如何提供功能？ 如何擴充或重新架構解決方案的各個部分，以符合每個結果？  (或時程表) 重新排列的執行方法可以優先處理高影響力的商務結果嗎？
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何將[您的技術成果](../learning-metrics.md)與有意義的學習計量進行比對。
+瞭解如何將您的技術成果與有意義的學習計量保持一致。
 
 > [!div class="nextstepaction"]
 > [配合您的技術成果](../learning-metrics.md)

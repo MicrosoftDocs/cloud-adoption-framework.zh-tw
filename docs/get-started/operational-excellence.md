@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6372e7cb8d90cb7a13c55f04dd2ac0714d06c681
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 4c7cfc0afc88ea665dac3037f0c6f27889329c23
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450504"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195930"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>開始使用：在數位轉型期間提供卓越的營運
 
@@ -38,7 +38,7 @@ ms.locfileid: "86450504"
 
 **項**
 
-- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的動機、結果和業務理由。
+- 記錄 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的動機、結果和業務理由。
 - 確保學習計量清楚易懂，並包含在 [商務結果] 區段中。 這些計量會引導營運卓越活動和 IT 內的報告。
 
 **支援交付後完成的指引：**
@@ -61,7 +61,7 @@ ms.locfileid: "86450504"
 
 **項**
 
-- 更新[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以反映達成所需策略所需的變更。 記錄的變更可能包括：
+- 更新 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) ，以反映達成所需策略所需的變更。 記錄的變更可能包括：
 
   - 評估現有的數位資產。
   - 雲端採用方案，會反映所需的變更和涉及的工作。
@@ -73,7 +73,7 @@ ms.locfileid: "86450504"
 - [收集清查](../digital-estate/inventory.md)：建立資料來源，以在採用之前分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在累加式合理化期間，量化分析會針對預算目的識別雲端候選項目。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理，藉由[建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來對齊成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理，藉由 [建立預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來對齊成本和預測模型。
 - [建立您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：使用可操作的工作負載、資產和時間軸詳細資料來建立方案。
 
 <!-- markdownlint-disable MD033 -->
@@ -87,7 +87,7 @@ ms.locfileid: "86450504"
 
 實現商業成果是持續傳遞採用波的結果。 這些波浪可能包括遷移和創新週期。 不論是哪一種情況，都能從週期性變更管理週期開始傳遞操作卓越。
 
-每一波（或以 agile 術語發行）都會將一組工作負載傳遞至雲端。 隨著每一波採用完成，雲端策略小組會回報學習計量、商業成果和整體策略的進度。 同樣地，當每一波採用完成時，採用小組需要待處理專案更新，以反映計畫中的優先順序工作負載。 這些更新是以商務計畫和客戶需求的任何變更為基礎。
+每次 (或發行的 wave，在 agile 方面) 將一組工作負載傳遞至雲端。 隨著每一波採用完成，雲端策略小組會回報學習計量、商業成果和整體策略的進度。 同樣地，當每一波採用完成時，採用小組需要待處理專案更新，以反映計畫中的優先順序工作負載。 這些更新是以商務計畫和客戶需求的任何變更為基礎。
 
 **項**
 
@@ -120,6 +120,6 @@ ms.locfileid: "86450504"
 營運卓越需要具有可靠性、效能、安全性和成本優化的嚴格方法。 使用此系列中的其餘指引，透過一致的自動化方法來實行這些原則。
 
 - **成本優化：** 使用快速入門手冊來[管理企業成本](./manage-costs.md)，以持續優化營運成本
-- **安全性：** 藉由使用快速入門手冊來[跨組合執行安全性](./security.md)，以降低風險。
-- **效能管理：** 使用快速入門手冊來瞭解[企業的效能管理](./performance.md)，以確保 IT 資產效能支援商務程式。
-- **可靠性：** 使用快速入門手冊[來建立可靠性](./reliability.md)，藉此提升可靠性並降低業務中斷。
+- **安全性：** 藉由使用快速入門手冊來 [跨組合執行安全性](./security.md)，以降低風險。
+- **效能管理：** 使用快速入門手冊來瞭解 [企業的效能管理](./performance.md)，以確保 IT 資產效能支援商務程式。
+- **可靠性：** 使用快速入門手冊 [來建立可靠性](./reliability.md)，藉此提升可靠性並降低業務中斷。

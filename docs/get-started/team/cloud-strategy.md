@@ -7,16 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 5e9ac42087394f532e508e5d1be6a1119c3f8b9e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 08c810810645e1985a8a0d9bdafeea890c28d446
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075635"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195783"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
-若要成功，每個雲端採用旅程必須牽涉到某種程度的策略性規劃。 本入門指南的設計目的是協助您建立專用的小組或虛擬小組（v 小組），以在穩固的雲端策略中進行建立和傳遞。
+若要成功，每個雲端採用旅程必須牽涉到某種程度的策略性規劃。 本入門指南旨在協助您建立專用的小組或虛擬小組， (v 小組) ，可以在穩固的雲端策略中建立和提供。
 
 旅程的第一個步驟是決定您是否需要策略小組，或您現有的小組成員是否能夠以分散式責任提供雲端策略。
 
@@ -25,7 +25,7 @@ ms.locfileid: "85075635"
 ![開始建立雲端策略小組](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> 本文討論_策略主持_者，這是雲端採用程式中的關鍵玩家。 角色通常由程式經理、架構設計師或顧問負責。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立調整，並讓小組與商務目標保持一致。 策略主持者經常負責雲端採用旅程的成功。
+> 本文討論 _策略主持_者，這是雲端採用程式中的關鍵玩家。 角色通常由程式經理、架構設計師或顧問負責。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立調整，並讓小組與商務目標保持一致。 策略主持者經常負責雲端採用旅程的成功。
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>步驟1：判斷是否需要雲端策略小組
 
@@ -55,7 +55,7 @@ ms.locfileid: "85075635"
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>如果我不需要雲端策略小組，該怎麼做？
 
-回顧雲端策略[功能](../../organize/cloud-strategy.md)，這是提供雲端策略需求所需的。 並非每個組織都需要專屬的小組或虛擬小組（v 小組），以協助滿足其策略需求。 在您的[RACI （負責、參與、諮詢和通知）的範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中，列出策略的核心標準責任，並識別小組中負責每個人的人員。 如果其中一個人要使用所有這些標準責任，請在 RACI 範本中，將「雲端策略」取代為該人員的名稱。
+回顧雲端策略 [功能](../../organize/cloud-strategy.md) ，這是提供雲端策略需求所需的。 並非每個組織都需要專屬的小組或虛擬小組 (v 小組) ，以協助滿足其策略需求。 在您的 [RACI (負責、參與、諮詢和通知的) 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)，列出策略的核心標準責任，並識別小組中負責每個人的人員。 如果其中一個人要使用所有這些標準責任，請在 RACI 範本中，將「雲端策略」取代為該人員的名稱。
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>步驟2：建立雲端策略小組
 
@@ -68,10 +68,10 @@ ms.locfileid: "85075635"
 **支援交付後完成的指引：**
 
 - 記載並分享您在步驟1的理由，以識別將受益于定期參與的專案關係人，並且能夠協助推動策略。
-- 如需有關誰可能適合的想法，請參閱[雲端策略功能](../../organize/cloud-strategy.md)。
-- 若要驗證每個潛在參與者的對齊和頻寬，請參閱此功能的[最小範圍](../../organize/cloud-strategy.md#minimum-scope)和[交付成果](../../organize/cloud-strategy.md#deliverable)。
-- 若要根據您目前的小組結構來建立正確的 RACI 圖，請參閱各種[RACI 設定範例](../../organize/raci-alignment.md#strategic-alignment)，或選取 RACI 範本底部的其中一個範例索引標籤。
-- 將結果記錄在工作表的[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)中 `Org Alignment` 。
+- 如需有關誰可能適合的想法，請參閱 [雲端策略功能](../../organize/cloud-strategy.md)。
+- 若要驗證每個潛在參與者的對齊和頻寬，請參閱此功能的 [最小範圍](../../organize/cloud-strategy.md#minimum-scope) 和 [交付成果](../../organize/cloud-strategy.md#deliverable) 。
+- 若要根據您目前的小組結構來建立正確的 RACI 圖，請參閱各種 [RACI 設定範例](../../organize/raci-alignment.md#strategic-alignment)，或選取 RACI 範本底部的其中一個範例索引標籤。
+- 將結果記錄在工作表的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) 中 `Org Alignment` 。
 
 **有責任的人員或小組：**
 
@@ -89,7 +89,7 @@ ms.locfileid: "85075635"
 
 **支援交付後完成的指引：**
 
-- 回顧建議的短期和長期[會議步調](../../organize/cloud-strategy.md#deliverable)，讓每個記載的參與者一致。
+- 回顧建議的短期和長期 [會議步調](../../organize/cloud-strategy.md#deliverable) ，讓每個記載的參與者一致。
 
 **有責任的人員或小組：**
 
@@ -101,13 +101,13 @@ ms.locfileid: "85075635"
 
 雲端策略小組的第一個目標是要定義以業務動機為基礎的高階策略。 這通常會在一小時的研討會中完成，其中包含所有雲端策略小組成員。 它還需要至少一小時的時間，才能使用各種技術團隊和受影響的專案關係人來審查商務動機。
 
-在第一場研討會期間，小組的每個成員都應該優先考慮其在[瞭解動機](../../strategy/motivations.md)文章中的動機，並分享其最高優先順序。 策略主持者會協助引導一或多個交談，直到主題在遷移或創新的方向上浮現為止。 這兩個類別的前3個清單中可能會有一個動機，這可能需要小組在明確模式仰賴一或另一種方式之前，更深入瞭解其清單。
+在第一場研討會期間，小組的每個成員都應該優先考慮其在 [瞭解動機](../../strategy/motivations.md) 文章中的動機，並分享其最高優先順序。 策略主持者會協助引導一或多個交談，直到主題在遷移或創新的方向上浮現為止。 這兩個類別的前3個清單中可能會有一個動機，這可能需要小組在明確模式仰賴一或另一種方式之前，更深入瞭解其清單。
 
 此練習將會呈現可協助在小組成員之間建立對齊的交談。 此交付項將有助於引導其餘的策略和所產生的計畫。
 
 **項**
 
-- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的動機。
+- 記錄 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的動機。
 
 **支援交付後完成的指引：**
 
@@ -136,9 +136,9 @@ ms.locfileid: "85075635"
 
 **支援交付後完成的指引：**
 
-- 記錄[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的商務結果。
+- 記錄 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的商務結果。
 - [商務結果](../../strategy/business-outcomes/index.md)：某些會計結果通常會非常耗費成本。 當想要的結果對應至會計計量時，最好是在成本管理治理專業領域中投入較早的時間。
-- [學習計量](../../strategy/learning-metrics.md)有助於填補商業成果與技術採用工作之間的橋樑。
+- [學習計量](../../strategy/learning-metrics.md) 有助於填補商業成果與技術採用工作之間的橋樑。
 
 **責任小組：**
 
@@ -146,14 +146,14 @@ ms.locfileid: "85075635"
 
 ## <a name="step-6-decide-whether-to-proceed-or-cancel-based-on-the-business-justification"></a>步驟6：根據商業理由決定是否要繼續或取消
 
-您的商業理由可以協助規劃、長期報酬的期望，以及擁有權總成本（TCO）的期望。 在此步驟中，雲端策略小組應同意所需的最少量分析，以協助策略小組符合向前決策。 策略性的對齊可能需要深度規劃和 TCO 分析。 大部分的雲端策略小組都會發現一個簡單的成本分析，足以配合方向。
+您的商業理由可以協助規劃、長期報酬的期望，以及整體擁有成本 (TCO) 的期望。 在此步驟中，雲端策略小組應同意所需的最少量分析，以協助策略小組符合向前決策。 策略性的對齊可能需要深度規劃和 TCO 分析。 大部分的雲端策略小組都會發現一個簡單的成本分析，足以配合方向。
 
 策略小組的每個成員都應該回顧一般的誤解和商業理由的方法。 這可協助小組傳達預期來自支援小組的特定分析。 小組在傳達其期望後，可以減少其時間投資和會議頻率。 小組必須負責完成策略，直到商業理由和數位資產分析經過同意為止。
 
 **項**
 
 - 利用支援小組開始進行商業理由的工作。
-- 每月符合支援小組的需求（或視需要），直到策略小組可以遵循 go/no go 決策，以繼續進行雲端採用。
+- 與支援小組每月 (或視需要) ，直到策略小組可以符合「go/不移」決策，以繼續進行雲端採用。
 
 **支援交付後完成的指引：**
 
@@ -167,7 +167,7 @@ ms.locfileid: "85075635"
 
 ## <a name="step-7-support-adoption-through-a-regular-cadence"></a>步驟7：透過一般步調支援採用
 
-在向雲端策略小組同意向前決策之後，小組可以轉換成較不嚴格且較不頻繁的會議步調。 小組的期望也會在此階段轉移。 在旅程從策略性定義轉移到採用工作（計畫、準備、採納）之後，策略小組預期會著重于優先順序和策略性支援。
+在向雲端策略小組同意向前決策之後，小組可以轉換成較不嚴格且較不頻繁的會議步調。 小組的期望也會在此階段轉移。 當旅程從策略性定義轉移到採用成果之後 (計畫、準備、採用) ，策略小組預期會著重于優先順序和策略性支援。
 
 **項**
 
@@ -193,6 +193,6 @@ ms.locfileid: "85075635"
 
 策略和規劃很重要。 在您識別小組所需的雲端採用功能之前，不會有任何作用。 開始您的採用工作之前，請務必先瞭解這些主要功能。
 
-藉由使用採用小組或負責這些功能的個人，將您的策略與[雲端採用功能](../../organize/cloud-adoption.md)相配合。
+藉由使用採用小組或負責這些功能的個人，將您的策略與 [雲端採用功能](../../organize/cloud-adoption.md) 相配合。
 
-藉由開發可識別 RACI 合作物件的跨小組矩陣，學習如何協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+藉由開發可識別 RACI 合作物件的跨小組矩陣，學習如何協調各小組的責任。 下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。

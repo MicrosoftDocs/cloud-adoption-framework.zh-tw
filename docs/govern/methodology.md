@@ -1,6 +1,6 @@
 ---
 title: 管控雲端的方法
-description: 使用以最基本的可行產品（MVP）為基礎的增量治理方法，以支援公司原則並快速地移至雲端採用。
+description: 根據最小可行產品 (MVP) 來使用增量治理方法，以支援公司原則並快速地移至雲端採用。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3f5273750025f3dea6f10ccc070896f95f42db6a
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 8fee6b827beec0311054f1cdf5514f8c4910f3a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993265"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195511"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>管控雲端的方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "84993265"
 
 因為治理需求隨著雲端採用旅程而變更，因此需要不同的治理方式。 公司無法等待小組在每一條高速公路上建立護欄和藍圖之後**再踏出第一步**。 公司會期待更快且更順利獲得業務成果。 IT 治理也必須在快速行動，並跟上業務需求，以便隨時掌握雲端採用旅程並避免「影子 IT」。
 
-_漸進式治理_方法可提供這些特性。 漸進式治理仰賴較少的公司原則、流程和工具，以建立採用和治理的基礎。 該基礎稱為_最簡可行產品 (MVP)_。 MVP 可讓治理小組在整個採用生命週期中，快速地將治理納入實作。 在雲端採用流程期間，任何時間都可已建立 MVP。 最佳做法是盡可能儘早採用 MVP。
+_漸進式治理_方法可提供這些特性。 累加式治理仰賴較少的公司原則、流程和工具，以建立採用和治理的基礎。 這個基礎叫做「最少可行性產品」(MVP)。 MVP 可讓治理小組在整個採用生命週期中，快速地將治理納入實作。 在雲端採用流程期間，任何時間都可已建立 MVP。 最佳做法是盡可能儘早採用 MVP。
 
 迅速因應變動風險的能力，可讓雲端治理小組以新方式參與業務。 雲端治理小組可以加入雲端策略小組當作偵查員，為雲端採用小組完成前置作業並研擬途徑，而快速建立防護以管理與採用方案相關聯的風險。 這些即時的治理層級稱為_治理反覆項目_。 透過這個方法，治理策略的成長會比雲端採用小組領先一步。
 
@@ -62,7 +62,7 @@ _漸進式治理_方法可提供這些特性。 漸進式治理仰賴較少的�
 
 ## <a name="next-steps"></a>後續步驟
 
-使用雲端採用架構[治理基準測試工具](https://cafbaseline.com)來評估您的轉換旅程，並協助您識別組織中所定義的六個主要網域之間的差距。
+瞭解如何使用雲端採用架構治理基準測試工具來評估您的轉換旅程，並協助您識別組織中所定義的六個主要網域之間的差距。
 
 > [!div class="nextstepaction"]
 > [評估您的轉換旅程](./benchmark.md)

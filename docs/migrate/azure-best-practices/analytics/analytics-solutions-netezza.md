@@ -7,18 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cf5e9609b7c9bab7cacc0fa62930d4fe195681e
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: 2a39c1a91b9bf0dc45b613cfe58548dc3d072239
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075823"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194141"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-netezza"></a>適用于 Netezza 的 Azure Synapse 分析解決方案和遷移
 
-由於 IBM 對 Netezza 的支援結束，目前使用 Netezza 資料倉儲系統的許多組織都想要利用創新的雲端、基礎結構即服務，以及 Azure 等較新環境中的平臺即服務供應專案。 許多組織都已準備好將昂貴的工作（例如基礎結構維護和平臺開發）轉移到雲端提供者的步驟。 
+由於 IBM 對 Netezza 的支援結束，目前使用 Netezza 資料倉儲系統的許多組織都想要利用創新的雲端、基礎結構即服務，以及 Azure 等較新環境中的平臺即服務供應專案。 許多組織都已準備好將昂貴的工作（例如基礎結構維護和平臺開發）轉移到雲端提供者的步驟。
 
 Azure Synapse 分析是一種無限制的分析服務，可將企業資料倉儲和海量資料分析整合在一起。 它可讓您自由地使用無伺服器隨選或布建的資源，以大規模查詢您的詞彙資料。 瞭解當您將舊版 Netezza 系統移轉至 Azure Synapse 時要規劃的事項。
 
@@ -34,11 +34,11 @@ Netezza 和 Azure Synapse 的相似之處在于，每個都是一個 SQL 資料�
 
 <!-- markdownlint-disable MD033 -->
 
-| 準備        | 遷移                             | 移轉後 |
+| 準備        | 移轉                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
 | <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移之資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>識別要使用的最佳 Azure 和協力廠商工具和功能。</li><li>在新平臺上及早訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li> 從小型和簡單著手。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和視圖的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商業流程。</li><li>遷移或重構 ETL 或 ELT 累加式載入進程。</li></ul> | <ul><li> 監視並記載遷移程式的所有階段。</li><li>使用已取得的經驗來建立範本，以供未來遷移。</li><li>如有需要，請使用新平臺的效能和擴充性來 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
 
-當您從舊版 Netezza 環境遷移至 Azure Synapse 時，除了 Netezza 檔中所述的一般主題以外，您還必須考慮一些特定的因素。 
+當您從舊版 Netezza 環境遷移至 Azure Synapse 時，除了 Netezza 檔中所述的一般主題以外，您還必須考慮一些特定的因素。
 
 ## <a name="initial-migration-workload"></a>初始遷移工作負載
 
@@ -78,9 +78,9 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>多個資料庫與單一資料庫和架構的比較
 
-在 Netezza 環境中，您可能會有多個個別的資料庫，供整體環境的不同部分使用。 例如，您可能會有資料內嵌和臨時資料表的個別資料庫、用於核心倉儲資料表的資料庫，以及另一個用於資料超市的資料庫，有時稱為「*語義層*」。 在 Azure Synapse 中處理不同的資料庫做為 ETL/ELT 管線，可能需要執行跨資料庫聯結，並在不同的資料庫之間移動資料。
+在 Netezza 環境中，您可能會有多個個別的資料庫，供整體環境的不同部分使用。 例如，您可能會有資料內嵌和臨時資料表的個別資料庫、用於核心倉儲資料表的資料庫，以及另一個用於資料超市的資料庫，有時稱為「 *語義層*」。 在 Azure Synapse 中處理不同的資料庫做為 ETL/ELT 管線，可能需要執行跨資料庫聯結，並在不同的資料庫之間移動資料。
 
-Azure Synapse 環境有單一資料庫。 架構會用來將資料表分隔成邏輯上分隔的群組。 我們建議您在目標 Azure Synapse 中使用一系列的架構，以模擬您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和 views 移到新的環境。 例如，您可以將現有的 Netezza 架構和資料表名稱串連到新的 Azure Synapse 資料表名稱中，然後在新的環境中使用架構名稱來維護原始的個別資料庫名稱。 
+Azure Synapse 環境有單一資料庫。 架構會用來將資料表分隔成邏輯上分隔的群組。 我們建議您在目標 Azure Synapse 中使用一系列的架構，以模擬您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和 views 移到新的環境。 例如，您可以將現有的 Netezza 架構和資料表名稱串連到新的 Azure Synapse 資料表名稱中，然後在新的環境中使用架構名稱來維護原始的個別資料庫名稱。
 
 另一個選項是使用基礎資料表上的 SQL views 來維護邏輯結構。 使用 SQL views 有一些可能的缺點：
 
@@ -101,9 +101,9 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
 - **區域對應**：在 Netezza 中，會針對某些資料行類型自動建立和維護區域對應。 區域對應會在查詢時間用於下列資料行類型，以限制要掃描的資料量：
 
-  - `INTEGER`長度為8個位元組或更少的資料行
-  - 時態性資料行，包括 `DATE` 、 `TIME` 和`TIMESTAMP`
-  - `CHAR`資料行，如果它們是具體化視圖的一部分並包含在 `ORDER BY` 子句中
+  - `INTEGER` 長度為8個位元組或更少的資料行
+  - 時態性資料行，包括 `DATE` 、 `TIME` 和 `TIMESTAMP`
+  - `CHAR` 資料行，如果它們是具體化視圖的一部分並包含在 `ORDER BY` 子句中
   
   您可以使用 nz_zonemap 公用程式，找出哪些資料行具有區域對應。 公用程式是 NZ 工具組的一部分。
 
@@ -113,7 +113,7 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
   在 Azure Synapse 中，您可以透過資料分割或使用其他索引類型來達到類似的結果。
 
-- **具體化視圖**： Netezza 建議使用者在具有許多資料行的大型資料表上建立一或多個具體化視圖，而在這種情況下，查詢中只會定期使用少數資料行。 當基表中的資料更新時，系統會自動維護具體化的視圖。 
+- **具體化視圖**： Netezza 建議使用者在具有許多資料行的大型資料表上建立一或多個具體化視圖，而在這種情況下，查詢中只會定期使用少數資料行。 當基表中的資料更新時，系統會自動維護具體化的視圖。
 
   目前，Microsoft 在 Azure Synapse 中提供了具體化視圖的預覽支援，其功能與 Netezza 相同。
 
@@ -121,11 +121,11 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
   有些協力廠商廠商提供的工具和服務可以自動化遷移工作，包括資料型別對應。 如果 Informatica 或 Talend 等協力廠商 ETL 工具已在 Netezza 環境中使用，您可以使用此工具來執行所需的任何資料轉換。
 
-- **SQL Sql 資料操作語言 (DML) 語法**：您應該留意 Netezza Sql 與 Azure SYNAPSE 之間 sql DML 語法的一些差異。 
+- **SQL Sql 資料操作語言 (DML) 語法**：您應該留意 Netezza Sql 與 Azure SYNAPSE 之間 sql DML 語法的一些差異。
 
   以下是一些重要的功能，以及它們有何不同：
 
-  - `STRPOS`：在 Netezza 中，函式會傳回 `STRPOS` 字串內子字串的位置。 Azure Synapse 中的對等函式是函式 `CHARINDEX` ，而引數的順序則是相反的。 
+  - `STRPOS`：在 Netezza 中，函式會傳回 `STRPOS` 字串內子字串的位置。 Azure Synapse 中的對等函式是函式 `CHARINDEX` ，而引數的順序則是相反的。
 
     在 Netezza 中：
 
@@ -135,7 +135,7 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
     `SELECT CHARINDEX('def', 'abcdef') ...`
 
-  - `AGE`： Netezza 支援 `AGE` 運算子來提供兩個時態值之間的間隔 (例如，時間戳記和日期) 。 
+  - `AGE`： Netezza 支援 `AGE` 運算子來提供兩個時態值之間的間隔 (例如，時間戳記和日期) 。
   
      以下是 Netezza 中的範例：
 
@@ -175,13 +175,13 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
 - **資料定義語言 (DDL) 產生**： `CREATE TABLE` `CREATE VIEW` 如先前所述，您可以編輯現有的 Netezza 和腳本來建立對等的定義，並在必要時使用修改過的資料類型。 這項工作通常牽涉到移除或修改任何 Netezza 特定的子句，例如 `ORGANIZE ON` 。
 
-  在 Netezza 中，指定目前資料表和 view 定義的資訊會保留在系統目錄資料表中。 系統目錄資料表是資訊的最佳來源，因為資料表可能是最新的，而且已完成。 使用者維護的檔可能不會與目前的資料表定義同步。 
+  在 Netezza 中，指定目前資料表和 view 定義的資訊會保留在系統目錄資料表中。 系統目錄資料表是資訊的最佳來源，因為資料表可能是最新的，而且已完成。 使用者維護的檔可能不會與目前的資料表定義同步。
   
   您可以使用 nz_ddl_table 之類的公用程式，在 Netezza 中存取系統目錄資料表。 您可以使用資料表來產生 `CREATE TABLE` DDL 語句，然後在 Azure Synapse 中編輯對等資料表。 協力廠商遷移和 ETL 工具也會使用目錄資訊來達到相同的結果。
 
 - **資料解壓縮**：您可以使用標準 Netezza 公用程式（例如 nzsql 和 nzunload），以及使用外部資料表，將原始資料從現有的 Netezza 資料表解壓縮至以一般方式分隔的檔案。 使用 gzip 壓縮檔案，然後使用 AzCopy 或 Azure 資料傳輸服務（例如 Azure 資料箱）將檔案上傳至 Azure Blob 儲存體。
 
-  在遷移練習期間，請務必盡可能有效率地解壓縮資料。 建議的 Netezza 方法是使用外部資料表，這也是最快速的方法。 您可以平行完成多個解壓縮，以最大化資料解壓縮的輸送量。 
+  在遷移練習期間，請務必盡可能有效率地解壓縮資料。 建議的 Netezza 方法是使用外部資料表，這也是最快速的方法。 您可以平行完成多個解壓縮，以最大化資料解壓縮的輸送量。
   
   以下是外部資料表解壓縮的簡單範例：
 
@@ -189,7 +189,7 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
    如果您有足夠的網路頻寬，您可以使用 Data Factory 處理常式或協力廠商資料移轉或 ETL 產品，直接從內部部署 Netezza 系統將資料提取到 Azure Synapse 資料表或 Azure 資料儲存體。
 
-   已解壓縮資料的建議資料格式為分隔的文字檔 (也稱為*逗點分隔值*) 、優化資料列單欄式檔案或 Parquet 檔。
+   已解壓縮資料的建議資料格式為分隔的文字檔 (也稱為 *逗點分隔值*) 、優化資料列單欄式檔案或 Parquet 檔。
 
 如需從 Netezza 環境遷移資料和 ETL 程式的詳細資訊，請參閱有關資料移轉 ETL 和載入的 Netezza 檔。
 
@@ -208,15 +208,15 @@ Netezza 會在 Azure Synapse 中，執行一些不直接支援的資料庫物件
 
 - **資料散發選項**：在 Netezza 和 Azure Synapse 中，您可以使用 `CREATE TABLE` 語句來指定散發定義。 `DISTRIBUTE ON`針對 Netezza 和 `DISTRIBUTION =` Azure Synapse 使用。
 
-   Azure Synapse 提供另一種方式來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的*維度資料表/事實資料表聯結*。 方法是跨所有節點複寫較小的維度資料表，藉此確保較大資料表之聯結索引鍵的任何值都有一個可在本機使用的相符維度資料列。 如果資料表不大，複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
+   Azure Synapse 提供另一種方式來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的 *維度資料表/事實資料表聯結* 。 方法是跨所有節點複寫較小的維度資料表，藉此確保較大資料表之聯結索引鍵的任何值都有一個可在本機使用的相符維度資料列。 如果資料表不大，複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
-- **資料索引**： Azure Synapse 提供各種使用者可定義的索引選項，但作業和使用方式與 Netezza 中系統管理的區域對應不同。 若要深入瞭解 Azure Synapse 中的索引選項，請參閱[Azure SYNAPSE SQL 集區中的索引資料表](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index)。
+- **資料索引**： Azure Synapse 提供各種使用者可定義的索引選項，但作業和使用方式與 Netezza 中系統管理的區域對應不同。 若要深入瞭解 Azure Synapse 中的索引選項，請參閱 [Azure SYNAPSE SQL 集區中的索引資料表](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index)。
 
    來源 Netezza 環境中現有的系統管理區域對應可以提供有用的指示，說明如何使用資料，以及如何在 Azure Synapse 環境中提供索引的候選資料行指示。
 
 - **資料分割**：在企業資料倉儲中，事實資料表可能包含許多數十億的資料列。 資料分割是在這些資料表中優化維護和查詢的一種方式。 將資料表分割成不同的部分，可減少一次處理的資料量。 資料表的資料分割是在語句中定義 `CREATE TABLE` 。
 
-  每個資料表只能有一個欄位可用於資料分割。 經常用於資料分割的欄位是日期欄位，因為許多查詢會依日期或日期範圍進行篩選。 您可以在初始載入之後變更資料表的資料分割。 若要變更資料表的資料分割，請以使用語句的新散發來重新建立資料表 `CREATE TABLE AS SELECT` 。 如需 Azure Synapse 中資料分割的詳細說明，請參閱[Azure SYNAPSE SQL 集區中的分割區資料表](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition)。
+  每個資料表只能有一個欄位可用於資料分割。 經常用於資料分割的欄位是日期欄位，因為許多查詢會依日期或日期範圍進行篩選。 您可以在初始載入之後變更資料表的資料分割。 若要變更資料表的資料分割，請以使用語句的新散發來重新建立資料表 `CREATE TABLE AS SELECT` 。 如需 Azure Synapse 中資料分割的詳細說明，請參閱 [Azure SYNAPSE SQL 集區中的分割區資料表](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition)。
 
 - **用於資料載入的 polybase**： polybase 是最有效率的方法，可用來將大量資料載入倉儲中。 您可以使用 PolyBase 來載入平行資料流程中的資料。
 

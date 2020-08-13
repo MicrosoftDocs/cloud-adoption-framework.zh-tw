@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ed6a3c8e0356b904a3114382b674aafbcc2f7dac
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 295266e74332649b992ad715c382122538cad5c5
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450402"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195805"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：組建雲端作業小組
 
@@ -22,18 +22,18 @@ ms.locfileid: "86450402"
 
 ## <a name="step-1-determine-whether-a-cloud-operations-team-is-needed"></a>步驟1：判斷是否需要雲端作業小組
 
-在您可以將任何工作負載發行到生產環境之前，必須先達成合約，以提供[雲端作業功能](../../organize/cloud-operations.md)的責任。 針對某些組合，營運責任可能屬於 DevOps 和雲端採用小組。 在其他情況下，具有雲端作業經驗的受控服務提供者可能會採用持續的營運責任。
+在您可以將任何工作負載發行到生產環境之前，必須先達成合約，以提供 [雲端作業功能](../../organize/cloud-operations.md)的責任。 針對某些組合，營運責任可能屬於 DevOps 和雲端採用小組。 在其他情況下，具有雲端作業經驗的受控服務提供者可能會採用持續的營運責任。
 
 如果沒有任何 DevOps 或服務提供者作業合約，則可以安全地假設 IT 內的某位人員必須認可與生產工作負載管理有關的持續營運責任。
 
 **項**
 
 - 判斷您是否需要雲端作業小組。
-- 藉由開發跨小組的矩陣，識別負責、參與 _、諮詢和通知（RACI）_ 的合作物件，來協調各小組的責任。 記錄工作表中[RACI 範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)的決策和責任人員 `Org Alignment` 。
+- 藉由開發跨團隊的矩陣，識別負責、參與、 _諮詢和通知的 (RACI) _ 方，來協調小組間的責任。 記錄工作表中 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) 的決策和責任人員 `Org Alignment` 。
 
 **支援交付後完成的指引：**
 
-- [雲端作業功能](../../organize/cloud-operations.md)可能會散佈到多個個人或小組。 決定是否需要雲端作業小組。 生產工作負載一定需要某種層級的作業。
+- [雲端作業功能](../../organize/cloud-operations.md) 可能會散佈到多個個人或小組。 決定是否需要雲端作業小組。 生產工作負載一定需要某種層級的作業。
 - 如果公司的長期雲端採用策略可以從一個雲端環境中的一個登陸區域傳遞，則治理和營運作業可能夠小，而無法由一個人或一個小組傳遞。 該小組不太可能被稱為雲端作業，因為它會提供許多功能。 針對該個人或小組，下列指導方針可協助確保它可以在這項重要的作業功能上提供。
 
 <!-- markdownlint-disable MD033 -->
@@ -54,16 +54,16 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 若要瞭解小組動機、計量和策略，請使用雲端策略小組的成員來檢查貴公司的[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)。
-- 若要瞭解時程表和優先順序，請使用雲端採用小組的成員來檢查貴公司的[雲端採用方案範本](../../plan/template.md)。
-- 若要瞭解小組與企業建立的營運需求和承諾，請開始開發[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。
+- 若要瞭解小組動機、計量和策略，請使用雲端策略小組的成員來檢查貴公司的 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 。
+- 若要瞭解時程表和優先順序，請使用雲端採用小組的成員來檢查貴公司的 [雲端採用方案](../../plan/template.md) 。
+- 若要瞭解小組與企業建立的營運需求和承諾，請開始開發 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責與支援小組 |
 | --- | --- |
-| <li>  雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
+| <li> 雲端營運小組 | <li> 雲端策略小組 <li> 雲端採用小組 <li> 雲端治理小組 <li> 卓越或中央 IT 小組的雲端中心 |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>步驟3：建立與其他小組的步調
 
@@ -76,7 +76,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 如需步調會議的其他指引，請參閱[雲端操作功能](../../organize/cloud-operations.md#deliverables)的「交付專案」一節。
+- 如需步調會議的其他指引，請參閱 [雲端操作功能](../../organize/cloud-operations.md#deliverables)的「交付專案」一節。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -95,7 +95,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 請參閱[雲端採用架構中的管理方法](../../manage/index.md)。
+- 請參閱 [雲端採用架構中的管理方法](../../manage/index.md)。
 
 **責任小組：**
 
@@ -111,7 +111,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 執行[作業基準](../../manage/azure-server-management/index.md)設定。
+- 執行 [作業基準](../../manage/azure-server-management/index.md) 設定。
 
 **責任小組：**
 
@@ -128,8 +128,8 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 在雲端中建立[商務調整](../../manage/considerations/business-alignment.md)。
-- 記錄[operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的組合和操作預期。
+- 在雲端中建立 [商務調整](../../manage/considerations/business-alignment.md) 。
+- 記錄 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中的組合和操作預期。
 
 **責任小組：**
 
@@ -151,7 +151,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 評估[先進作業管理](../../manage/design-principles.md)的最佳選項。
+- 評估 [先進作業管理](../../manage/design-principles.md)的最佳選項。
 
 **責任小組：**
 
@@ -167,7 +167,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 請參閱[治理指南以改善資源一致性](../../govern/guides/complex/resource-consistency-improvement.md)。
+- 請參閱 [治理指南以改善資源一致性](../../govern/guides/complex/resource-consistency-improvement.md)。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -185,7 +185,7 @@ ms.locfileid: "86450402"
 
 **支援交付後完成的指引：**
 
-- 建立將新的[工作負載和資源](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的程式。
+- 建立將新的 [工作負載和資源](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的程式。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -195,11 +195,11 @@ ms.locfileid: "86450402"
 
 ## <a name="whats-next"></a>後續步驟
 
-隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成雲端的卓越中心（CCoE）小組是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
+隨著採用和營運規模的增加，請務必定義和自動化治理最佳作法，以擴充現有的 IT 需求。 形成卓越 (CCoE) 團隊的雲端中心，是調整雲端採用、雲端作業和雲端治理工作的重要步驟。
 
 深入了解：
 
 - [卓越雲端中心功能](../../organize/cloud-center-of-excellence.md)
 - [組織反模式：接收器和 fiefdoms](../../organize/fiefdoms-silos.md)
 
-藉由開發可識別 RACI 合作物件的跨小組矩陣，來協調各小組的責任。 下載並修改[RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+藉由開發可識別 RACI 合作物件的跨小組矩陣，來協調各小組的責任。 下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。

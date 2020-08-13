@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a4777d30c6719842d6d866879ac7d87bc67050df
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cddaf19da87112c43ae9834aa21736488c51abb4
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076565"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196007"
 ---
 # <a name="get-started-design-and-configuration"></a>開始使用：設計和設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "85076565"
 
 **項**
 
-- 使用[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)來記錄動機、所需的商業結果，以及高階的商業理由。
+- 使用 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄動機、所需的商業結果，以及高階的商業理由。
 
 **支援交付後完成的指引：**
 
@@ -56,7 +56,7 @@ ms.locfileid: "85076565"
 - 現有清查上的原始資料。
 - 現有清查的量化分析，以精簡商業理由。
 - 前10個工作負載的定性分析。
-- 已更新[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中的商業理由。
+- 已更新 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的商業理由。
 
 **支援交付後完成的指引：**
 
@@ -72,7 +72,7 @@ ms.locfileid: "85076565"
 
 ## <a name="step-3-create-a-cloud-adoption-plan"></a>步驟3：建立雲端採用方案
 
-「雲端採用方案」範本提供加速開發專案待處理專案的方法。 然後可以修改待處理專案，以反映評估結果、合理化、所需的技能，以及合作夥伴的合約。
+您的雲端採用方案會提供開發專案待處理專案的加速方法。 然後可以修改待處理專案，以反映評估結果、合理化、所需的技能，以及合作夥伴的合約。
 
 回顧短期雲端採用方案和待處理專案，可協助雲端平臺小組在接下來幾個月內瞭解環境的需求。 此背景可協助他們將前幾個登陸區域的「完成定義」加強。
 
@@ -80,14 +80,14 @@ ms.locfileid: "85076565"
 
 - 部署待處理專案（backlog）範本。
 - 更新範本，以反映前10個要遷移的工作負載。
-- 更新人員和速度（人員的時間）以預估發行時間。
+- 更新人員和速度 (人員的時間) 估計發行時間。
 - 時程表風險：
   - 缺乏熟悉 Azure DevOps 可能會使部署程式變慢。
   - 每個工作負載可用的複雜度和資料也會影響時間軸。
 
 **支援交付後完成的指引：**
 
-- [雲端採用方案範本](../plan/template.md)：部署基本範本。
+- [雲端採用方案](../plan/template.md)：使用「基本」範本定義您的方案。
 - [工作負載對齊](../plan/workloads.md)：定義待處理專案中的工作負載。
 - [投入時間對齊](../plan/assets.md)：對齊待處理專案中的資產和工作負載，以清楚地定義優先順序工作負載的工作。
 - [人員和時間對齊](../plan/iteration-paths.md)：針對遷移的工作負載建立反復專案、速度和發行。
@@ -139,7 +139,7 @@ ms.locfileid: "85076565"
 
 - [治理方法](../govern/index.md)：此方法概述考慮公司原則和流程的程式。 然後建立必要的專業領域，以在您的雲端企業採用工作方面提供治理。
 - [治理基準測試工具](../govern/benchmark.md)：尋找您目前狀態的間隙，讓您可以為未來進行規劃。
-- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及部署加速專業領域，這是建立治理最低可行產品（MVP）以作為所有採用基礎的必要條件。
+- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及部署加速專業領域，這是建立治理最小可行產品 (MVP) 以作為所有採用的基礎。
 
 <!-- markdownlint-disable MD033 -->
 <br>

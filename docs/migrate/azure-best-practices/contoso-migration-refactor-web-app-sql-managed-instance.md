@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16b0e1835f358eb4df98e06bb241f2ec0f7c5e8d
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 7c77404c009f10d3198ab41d30ee3350c385d4f1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473109"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193832"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
 # <a name="refactor-an-on-premises-application-to-an-azure-app-service-web-app-and-a-sql-managed-instance"></a>將內部部署應用程式重構至 Azure App Service web 應用程式和 SQL 受控實例
 
-本文示範虛構公司 Contoso 如何重構在 VMware 虛擬機器（Vm）上執行的兩層式 Windows .NET 應用程式，作為遷移至 Azure 的一部分。 Contoso 小組會將應用程式前端 VM 遷移至 Azure App Service web 應用程式。 本文也會說明 Contoso 如何將應用程式資料庫移轉至 Azure SQL 受控實例。
+本文示範虛構公司 Contoso 如何重構在 VMware 虛擬機器上執行的兩層式 Windows .NET 應用程式 (Vm) 作為遷移至 Azure 的一部分。 Contoso 小組會將應用程式前端 VM 遷移至 Azure App Service web 應用程式。 本文也會說明 Contoso 如何將應用程式資料庫移轉至 Azure SQL 受控實例。
 
-我們在此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果您想要將它用於自己的測試用途，您可以從[GitHub](https://github.com/Microsoft/SmartHotel360)下載。
+我們在此範例中使用的 SmartHotel360 應用程式是以開放原始碼的形式提供。 如果您想要將它用於自己的測試用途，您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360)下載。
 
 ## <a name="business-drivers"></a>商業動機
 
@@ -29,7 +29,7 @@ Contoso IT 領導小組與商務合作夥伴密切合作，以了解此次移轉
 
 - **解決業務成長**。 Contoso 正在成長，而且其內部部署系統和基礎結構會有壓力。
 - **提高效率**。 Contoso 必須移除不必要的程式，並簡化開發人員和使用者的流程。 企業亟需快速且不浪費時間或金錢的 IT 服務，進而更快滿足客戶的需求。
-- **增加靈活性**。  Contoso IT 必須能夠更快因應企業的需求。 它必須能夠以比 marketplace 中的變更更快的速度，以實現全球經濟的成功。 反應時間不得以該方式取得，或成為商務封鎖程式。
+- **增加靈活性**。 Contoso IT 必須能夠更快因應企業的需求。 它必須能夠以比 marketplace 中的變更更快的速度，以實現全球經濟的成功。 反應時間不得以該方式取得，或成為商務封鎖程式。
 - **擴充**。 隨著企業順利成長，Contoso IT 必須提供能夠同步成長的系統。
 - **降低成本**。 Contoso 想要將授權費用降至最低。
 
@@ -39,8 +39,8 @@ Contoso IT 領導小組與商務合作夥伴密切合作，以了解此次移轉
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **應用程式** | Azure 中的應用程式將維持在目前的內部部署環境中的重要性。 <br><br> 其效能應與目前在 VMware 中的效能相同。 <br><br> 小組不想要投資應用程式。 目前，系統管理員只要將應用程式安全地移到雲端即可。 <br><br> 小組想要停止支援目前執行應用程式的 Windows Server 2008 R2。 <br><br> 小組也想要將 SQL Server 2008 R2 移到現代化的平臺即服務（PaaS）資料庫，這樣會將管理的需求降到最低。 <br><br> Contoso 想要盡可能運用其在 SQL Server 授權及軟體保證中所做的投資。 <br><br> 此外，Contoso 想要緩解 Web 層上單一失敗點的情形。 |
-| **限制** | 應用程式是由在相同 VM 上執行的 ASP.NET 應用程式和 Windows Communication Foundation （WCF）服務所組成。 他們想要使用 Azure App Service，將這些元件分散到兩個 web 應用程式。 |
+| **應用程式** | Azure 中的應用程式將維持在目前的內部部署環境中的重要性。 <br><br> 其效能應與目前在 VMware 中的效能相同。 <br><br> 小組不想要投資應用程式。 目前，系統管理員只要將應用程式安全地移到雲端即可。 <br><br> 小組想要停止支援目前執行應用程式的 Windows Server 2008 R2。 <br><br> 小組也想要從 SQL Server 2008 R2 移到現代化的平臺即服務 (PaaS) 資料庫，這樣會將管理的需求降到最低。 <br><br> Contoso 想要盡可能運用其在 SQL Server 授權及軟體保證中所做的投資。 <br><br> 此外，Contoso 想要緩解 Web 層上單一失敗點的情形。 |
+| **限制** | 應用程式是由 ASP.NET 應用程式和在相同 VM 上執行的 Windows Communication Foundation (WCF) 服務所組成。 他們想要使用 Azure App Service，將這些元件分散到兩個 web 應用程式。 |
 | **Azure** | Contoso 想要將應用程式移至 Azure，但不想在 Vm 上執行。 Contoso 想要使用 Web 和資料層的 Azure PaaS 服務。 |
 | **DevOps** | Contoso 想要移至 DevOps 模型，以使用其組建和發行管線的 Azure DevOps。 |
 
@@ -52,7 +52,7 @@ Contoso IT 領導小組與商務合作夥伴密切合作，以了解此次移轉
 
 - SmartHotel360 內部部署應用程式會分層至兩個 Vm （ `WEBVM` 和） `SQLVM` 。
 - Vm 位於 VMware ESXi 主機 contosohost1.contoso.com 版本6.5。
-- VMware 環境是由在 VM 上執行的 vCenter Server 6.5 （vcenter.contoso.com）所管理。
+- VMware 環境是由在 VM 上執行的 vCenter Server 6.5 (vcenter.contoso.com) 來管理。
 - Contoso 有內部部署資料中心 (contoso-datacenter) 以及內部部署網域控制站 (contosodc1)。
 - 移轉完成之後，將會解除委任 Contoso 資料中心的內部部署 VM。
 
@@ -65,7 +65,7 @@ Contoso IT 領導小組與商務合作夥伴密切合作，以了解此次移轉
 
 在解決方案設計過程中，Contoso 會進行 Azure SQL Database 與 SQL 受控執行個體之間的功能比較。 他們決定使用 SQL 受控執行個體，根據下列考慮：
 
-- SQL 受控執行個體的目標是要提供與最新內部部署 SQL Server 版本幾乎100% 的相容性。 Microsoft 對於執行 SQL Server 內部部署或基礎結構即服務（IaaS） Vm 的客戶，建議使用 SQL 受控執行個體，而他們想要將其應用程式遷移至完全受控的服務，並將其設計變更降至最低。
+- SQL 受控執行個體的目標是要提供與最新內部部署 SQL Server 版本幾乎100% 的相容性。 Microsoft 對於執行 SQL Server 內部部署或基礎結構即服務的客戶，建議使用 SQL 受控執行個體， (IaaS) Vm 想要將應用程式遷移至完全受控的服務，且最少的設計變更。
 - Contoso 打算將大量的應用程式從內部部署遷移至 IaaS Vm。 這些 Vm 中的許多都是由獨立軟體廠商所提供。 Contoso 發現使用 SQL 受控執行個體將有助於確保這些應用程式的資料庫相容性。 他們將使用 SQL 受控執行個體，而不是 SQL Database，這可能不受支援。
 - Contoso 可以使用完全自動化的 Azure 資料庫移轉服務，輕鬆地將轉移遷移至 SQL 受控執行個體。 備妥此服務，Contoso 可以將它重複使用於未來的資料庫移轉。
 - SQL 受控執行個體支援 SQL Server Agent，這是 SmartHotel360 應用程式的重要元件。 Contoso 需要這種相容性;否則，他們必須重新設計應用程式所需的維護計畫。
@@ -97,12 +97,12 @@ Contoso 會藉由將 [優缺點] 清單放在一起，來評估其提議的設�
 
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務可在停機時間最短的情況之下，從多個資料庫來源順暢地遷移至 Azure 資料平臺。 | 瞭解[支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)和[Azure 資料庫移轉服務的定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
-| [Azure SQL 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | SQL 受控執行個體是受控資料庫服務，代表 Azure 中完全受控的 SQL Server 實例。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會根據容量產生費用。 深入瞭解[SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure 資料庫移轉服務可在停機時間最短的情況之下，從多個資料庫來源順暢地遷移至 Azure 資料平臺。 | 瞭解 [支援的區域](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) 和 [Azure 資料庫移轉服務的定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
+| [Azure SQL 受控執行個體](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | SQL 受控執行個體是受控資料庫服務，代表 Azure 中完全受控的 SQL Server 實例。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會根據容量產生費用。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
 | [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | 協助建立使用完全受控平臺的強大雲端應用程式。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
-| [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署（CI/CD）管線以進行應用程式開發。 管線會從 Git 存放庫開始，以用於管理應用程式程式碼、用於產生封裝和其他組建成品的組建系統，以及在開發、測試和生產環境中部署變更的發行管理系統。 |
+| [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署， (CI/CD) 管線進行應用程式開發。 管線會從 Git 存放庫開始，以用於管理應用程式程式碼、用於產生封裝和其他組建成品的組建系統，以及在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -132,17 +132,17 @@ Contoso 會藉由將 [優缺點] 清單放在一起，來評估其提議的設�
 - 建立受控實例之後，Contoso 不應將資源新增至子網。
 - 子網路不能有與其相關聯的網路安全性群組。
 - 子網路必須有使用者定義的路由表。 唯一指派的路由應該是 `0.0.0.0/0` 下一個躍點網際網路。
-- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增到清單中。 瞭解如何[設定 AZURE SQL 受控實例的自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增到清單中。 瞭解如何 [設定 AZURE SQL 受控實例的自訂 DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
 - 子網路不得有相關聯的服務端點 (儲存體或 SQL)。 虛擬網路上應該停用服務端點。
-- 子網路必須至少具有 16 個 IP 位址。 瞭解如何[調整受控實例子網的大小](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
-- 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解[DNS 自訂](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 子網路必須至少具有 16 個 IP 位址。 瞭解如何 [調整受控實例子網的大小](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
+- 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解 [DNS 自訂](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>設定受控執行個體的虛擬網路
 
 Contoso 管理員會設定虛擬網路，如下所示：
 
-1. 他們會在主要區域（美國東部2）中建立新的虛擬網路（VNET-互連 VNET-SQLMI-EUS2-VNET-SQLMI-EU2）。 它會將此虛擬網路新增至 ContosoNetworkingRG 資源群組。
-1. 他們會指派**10.235.0.0/24**的位址空間。 他們會確保範圍不會與其企業中的任何其他網路重疊。
+1. 他們會在主要區域 (美國東部 2) 建立新的虛擬網路 (互連 VNET-SQLMI-EUS2-VNET-SQLMI-EU2) 。 它會將此虛擬網路新增至 ContosoNetworkingRG 資源群組。
+1. 他們會指派 **10.235.0.0/24**的位址空間。 他們會確保範圍不會與其企業中的任何其他網路重疊。
 1. 他們會將兩個子網路新增到網路：
     - `SQLMI-DS-EUS2` (`10.235.0.0/25`).
     - `SQLMI-SAW-EUS2` (`10.235.0.128/29`). 此子網用來將目錄附加至受控實例。
@@ -151,24 +151,24 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 1. 部署虛擬網路和子網路之後，他們會將網路對等互連，如下所示：
 
-    - `VNET-SQLMI-EUS2`具有 `VNET-HUB-EUS2` （的中樞虛擬網路）的對等 `East US 2` 。  
-    - `VNET-SQLMI-EUS2`具有 `VNET-PROD-EUS2` （生產網路）的對等。
+    - `VNET-SQLMI-EUS2`具有 `VNET-HUB-EUS2` (中樞虛擬網路以進行 `East US 2`) 的對等。  
+    - `VNET-SQLMI-EUS2`具有 `VNET-PROD-EUS2` (生產網路) 的對等。
 
       ![對等互連網路的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-peering.png)
 
 1. 他們可設定自訂 DNS 設定。 DNS 設定會先指向 Contoso 的 Azure 網域控制站。 而後指向 Azure DNS。 Contoso Azure 網域控制站的位置如下所示：
 
-    - 位於美國東部2區域中生產網路（VNET-生產 EUS2）的 EUS2 子網中。  
-    - `CONTOSODC3`應對`10.245.42.4`  
-    - `CONTOSODC4`應對`10.245.42.5`  
-    - Azure DNS 解析程式：`168.63.129.16`
+    - 位於生產網路的 EUS2 子網中， ([美國東部 2] 區域中的 [VNET-生產 EUS2]) 。  
+    - `CONTOSODC3` 應對 `10.245.42.4`  
+    - `CONTOSODC4` 應對 `10.245.42.5`  
+    - Azure DNS 解析程式： `168.63.129.16`
 
     ![網路 DNS 伺服器清單的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
-**需要其他協助？**
+**需要其他協助嗎？**
 
-- 閱讀[SQL 受控執行個體總覽](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
-- 瞭解如何為[SQL 受控實例建立虛擬網路](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
+- 閱讀 [SQL 受控執行個體總覽](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
+- 瞭解如何為 [SQL 受控實例建立虛擬網路](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
 - 了解如何[設定對等互連](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)。
 - 了解如何[更新 Azure Active Directory DNS 設定](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)。
 
@@ -178,7 +178,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 Contoso 會考量下列因素：
 
-- 路由表包含一組規則（路由），指定從受控實例傳送的封包應如何在虛擬網路中路由。
+- 路由表包含一組規則 (路由) ，指定從受控實例傳送的封包應如何在虛擬網路中路由。
 - 路由表與受控實例部署所在的子網相關聯。 每個離開子網路的封包都會依據相關聯的路由表進行處理。
 - 一個子網路只能與一個路由表相關聯。
 - 在 Microsoft Azure 中建立路由表，沒有任何額外的費用。
@@ -189,7 +189,7 @@ Contoso 會考量下列因素：
 
     ![[建立路由表] 窗格的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table.png)
 
-1. 為了符合 SQL 受控執行個體需求，在部署路由表（MIRouteTable）之後，系統管理員會新增位址前置詞為**0.0.0.0/0**的路由。 [下一個躍點類型]**** 選項會設定為 [網際網路]****。
+1. 為了符合 SQL 受控執行個體需求，在部署路由表 (MIRouteTable) 之後，系統管理員會新增位址前置詞為 **0.0.0.0/0**的路由。 [下一個躍點類型]**** 選項會設定為 [網際網路]****。
 
     ![[新增路由] 窗格的螢幕擷取畫面，用於新增位址前置詞。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-prefix.png)
 
@@ -197,16 +197,16 @@ Contoso 會考量下列因素：
 
     ![[關聯子網] 窗格的螢幕擷取畫面，用來路由傳送資料表子網。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
-**需要其他協助？**
+**需要其他協助嗎？**
 
-瞭解如何[設定受控實例的路由](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
+瞭解如何 [設定受控實例的路由](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
 
 ### <a name="create-a-managed-instance"></a>建立受控執行個體
 
 現在，Contoso 管理員會藉由執行下列動作來布建 SQL 受控實例：
 
-1. 因為受控實例會供應商務應用程式，所以系統管理員會在公司的主要區域（美國東部2）中部署受控實例。 他們會將受控實例新增至 ContosoRG 資源群組。
-1. 他們會選取執行個體的定價層、大小計算和儲存體。 深入瞭解[SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
+1. 因為受控實例會供應商務應用程式，所以系統管理員會在公司的主要區域中部署受控實例， (美國東部 2) 。 他們會將受控實例新增至 ContosoRG 資源群組。
+1. 他們會選取執行個體的定價層、大小計算和儲存體。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 
     ![[SQL 受控執行個體] 窗格的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
@@ -216,13 +216,13 @@ Contoso 會考量下列因素：
 
       ![ContosoRG 資源群組中新資源的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
-**需要其他協助？**
+**需要其他協助嗎？**
 
-瞭解如何布建[受控實例](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
+瞭解如何布建 [受控實例](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
 
 ## <a name="step-2-migrate-via-azure-database-migration-service"></a>步驟2：透過 Azure 資料庫移轉服務遷移
 
-Contoso 管理員會遵循[逐步遷移教學](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)課程中的指示，透過 Azure 資料庫移轉服務來遷移受控實例。 他們可以執行線上、離線和混合式（預覽）的遷移。
+Contoso 管理員會遵循 [逐步遷移教學](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)課程中的指示，透過 Azure 資料庫移轉服務來遷移受控實例。 他們可以執行線上、離線和混合式 (預覽) 遷移。
 
 簡單地說，Contoso 管理員會執行下列動作：
 
@@ -230,7 +230,7 @@ Contoso 管理員會遵循[逐步遷移教學](https://docs.microsoft.com/azure/
 - 它們會確保資料庫移轉服務可以透過虛擬網路存取遠端 SQL Server。 這會需要確保所有連入埠都可從 Azure 允許在虛擬網路層級、網路 VPN 和裝載 SQL Server 的電腦上 SQL Server。
 - 他們會設定 Azure 資料庫移轉服務：
   - 建立遷移專案。
-  - 新增來源（內部部署資料庫）。
+  - 在內部部署資料庫) 中新增來源 (。
   - 選取目標。
   - 選取要遷移的資料庫。
   - 設定 [高級設定]。
@@ -246,11 +246,11 @@ Contoso 管理員會遵循[逐步遷移教學](https://docs.microsoft.com/azure/
 
     ![[Web 應用程式] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app1.png)
 
-1. 它們會提供 web 應用程式的名稱**shweb-eus2-EUS2**，在 Windows 上執行，並將它放在**ContosoRG**生產資源群組中。 他們會建立新的 Web 應用程式與 Azure App Service 方案。
+1. 它們會提供 web 應用程式的名稱 **shweb-eus2-EUS2**，在 Windows 上執行，並將它放在 **ContosoRG** 生產資源群組中。 他們會建立新的 Web 應用程式與 Azure App Service 方案。
 
     ![用來建立第一個 web 應用程式之 [Web 應用程式] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app2.png)
 
-1. 布建 web 應用程式之後，系統管理員會重複此程式，以建立 WCF 服務的 web 應用程式（ `SHWCF-EUS2` ）。
+1. 布建 web 應用程式之後，系統管理員會重複此程式，以建立 WCF 服務 () 的 web 應用程式 `SHWCF-EUS2` 。
 
     ![用來建立第二個 web 應用程式之 [Web 應用程式] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app3.png)
 
@@ -264,7 +264,7 @@ Contoso 需要為應用程式建置 DevOps 基礎結構和管線。 為此，Con
 
     ![[新增專案] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts1.png)
 
-1. 他們會匯入目前保存其應用程式程式碼的 Git 存放庫。 他們會從[公用 GitHub 存放庫](https://github.com/Microsoft/SmartHotel360-Registration)下載它。
+1. 他們會匯入目前保存其應用程式程式碼的 Git 存放庫。 他們會從 [公用 GitHub 存放庫](https://github.com/Microsoft/SmartHotel360-Registration)下載它。
 
     ![[匯入 Git 存放庫] 窗格的螢幕擷取畫面，用來指定來源類型和複製 URL。](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts2.png)
 
@@ -285,7 +285,7 @@ Contoso 管理員可確保 web 應用程式和資料庫可以彼此通訊。 若
 
     ![[連接字串設定] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-1. 在 Visual Studio 中，系統管理員會 `SmartHotel.Registration.wcf` 從方案檔開啟專案。 在專案中，他們會 `connectionStrings` 使用連接字串來更新*web.config*檔案的區段。
+1. 在 Visual Studio 中，系統管理員會 `SmartHotel.Registration.wcf` 從方案檔開啟專案。 在專案中，他們會 `connectionStrings` 使用連接字串來更新 *web.config* 檔案的區段。
 
      ![SmartHotel 中 connectionStrings 區段的螢幕擷取畫面。 wcf 專案中的 web.config 檔案。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
@@ -311,15 +311,15 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![[選取範本] 窗格的螢幕擷取畫面，用來選取 ASP.NET 範本。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline3.png)
 
-1. 它們會針對組建使用名稱**ContosoSmartHotelRefactor-ASP.NET-CI** ，然後選取 [**儲存 & 佇列**]，這會啟動第一個組建。
+1. 它們會針對組建使用名稱 **ContosoSmartHotelRefactor-ASP.NET-CI** ，然後選取 [ **儲存 & 佇列**]，這會啟動第一個組建。
 
      ![組建的 [儲存與佇列] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline4.png)
 
-1. 他們選取組建編號以查看程序。 完成之後，系統管理員可以查看處理常式的意見反應，並選取**構件**來審查組建結果。
+1. 他們選取組建編號以查看程序。 完成之後，系統管理員可以查看處理常式的意見反應，並選取 **構件** 來審查組建結果。
 
     ![[組建] 頁面和 [成品] 連結的螢幕擷取畫面，用來檢查組建結果。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline5.png)
 
-    [成品**瀏覽器**] 窗格隨即開啟，而 [**放置**] 資料夾則會顯示組建結果。
+    [成品 **瀏覽器** ] 窗格隨即開啟，而 [ **放置** ] 資料夾則會顯示組建結果。
 
     - 這兩個 .zip 檔案是包含應用程式的封裝。
     - 這些 .zip 檔案會在發行管線中用來部署至 Azure App Service。
@@ -334,7 +334,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
     ![Azure App Service 部署範本的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline8.png)
 
-1. 它們會將發行管線命名為**ContosoSmartHotel360Refactor** ，並在 [**階段名稱**] 方塊中，指定**SHWCF-EUS2-EUS2**做為 WCF web 應用程式的名稱。
+1. 它們會將發行管線命名為 **ContosoSmartHotel360Refactor** ，並在 [ **階段名稱** ] 方塊中，指定 **SHWCF-EUS2-EUS2** 做為 WCF web 應用程式的名稱。
 
     ![WCF web 應用程式階段名稱的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline9.png)
 
@@ -346,7 +346,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![選取應用程式服務名稱的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline11.png)
 
-1. 在管線**上，他們選取 [** 成品]，選取 [ **+ 新增**成品]，選取 [**組建**] 做為 [來源類型]，然後使用 `ContosoSmarthotel360Refactor` 管線建立。
+1. 在管線 **上，他們選取 [** 成品]，選取 [ **+ 新增**成品]，選取 [ **組建** ] 做為 [來源類型]，然後使用 `ContosoSmarthotel360Refactor` 管線建立。
 
      ![[新增成品] 窗格上 [組建] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
@@ -354,15 +354,15 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![成品上閃電圖示的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline13.png)
 
-1. 他們會將 [持續部署] 觸發程式設定為 [**已啟用**]。
+1. 他們會將 [持續部署] 觸發程式設定為 [ **已啟用**]。
 
     ![螢幕擷取畫面：顯示 [持續部署] 觸發程式已設定為 [啟用]。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline14.png)
 
-1. 系統管理員回到**第1階段作業（1個工作），** 然後選取 [**部署 Azure App Service**]。
+1. 系統管理員回到 **第1階段作業（1個工作），** 然後選取 [ **部署 Azure App Service**]。
 
     ![選取 [部署 Azure App Service] 選項的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
 
-1. 在 [**選取檔案或資料夾**] 中，他們會展開 [ **drop** ] 資料夾，選取組建期間所建立的檔案 `SmartHotel.Registration.Wcf.zip` ，然後選取 [**儲存**]。
+1. 在 [ **選取檔案或資料夾**] 中，他們會展開 [ **drop** ] 資料夾，選取組建期間所建立的檔案 `SmartHotel.Registration.Wcf.zip` ，然後選取 [ **儲存**]。
 
     ![[選取檔案或資料夾] 窗格的螢幕擷取畫面，用來選取 WCF 檔案。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
@@ -370,7 +370,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
     ![用於加入環境之「1個作業，1個工作」連結的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
-1. 他們會重複將 web 應用程式*SmartHotel.Registration.Web.zip*檔案發佈至正確 web 應用程式的流程，然後選取 [**儲存**]。
+1. 他們會重複將 web 應用程式 *SmartHotel.Registration.Web.zip* 檔案發佈至正確 web 應用程式的流程，然後選取 [ **儲存**]。
 
     ![[選取檔案或資料夾] 窗格的螢幕擷取畫面，用來選取 WEB 檔案。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
 
@@ -378,7 +378,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![發行管線摘要的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline19.png)
 
-1. 他們會返回 [**組建**]，選取 [**觸發**程式]，然後選取 [**啟用持續整合**] 核取方塊。 此動作會啟用管線，以便在將變更認可至程式碼時，完整的組建和發行會發生。
+1. 他們會返回 [ **組建**]，選取 [ **觸發**程式]，然後選取 [ **啟用持續整合** ] 核取方塊。 此動作會啟用管線，以便在將變更認可至程式碼時，完整的組建和發行會發生。
 
     ![反白顯示 [啟用連續整合] 核取方塊的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
@@ -419,13 +419,13 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 - Contoso 小組會在 Azure SQL 受控執行個體中，審查資料庫的備份需求。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
 - 他們也會瞭解如何管理 SQL Database 備份和還原。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)自動備份。
 - 他們考慮執行容錯移轉群組，為資料庫提供區域性容錯移轉。 [深入了解](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
-- 他們考慮在主要區域（ `East US 2` ）和次要區域（）中部署 web 應用程式 `Central US` 以提供恢復功能。 小組可以設定流量管理員，以確保區域中斷期間的容錯移轉。
+- 他們考慮在主要區域中部署 web 應用程式 (`East US 2`) 和次要區域 (`Central US`) 以提供恢復功能。 小組可以設定流量管理員，以確保區域中斷期間的容錯移轉。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 部署所有資源之後，Contoso 會根據其[基礎結構規劃](./contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
+- 部署所有資源之後，Contoso 會根據其 [基礎結構規劃](./contoso-migration-infrastructure.md#set-up-tagging)來指派 Azure 標記。
 - 所有授權費用都會併入 Contoso 使用的 PaaS 服務中。 這種成本會從 Enterprise 合約中扣除。
-- Contoso 會使用[Azure 成本管理和計費](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)，以確保他們在 IT 領導地位所建立的預算內保持不變。
+- Contoso 會使用 [Azure 成本管理和計費](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) ，以確保他們在 IT 領導地位所建立的預算內保持不變。
 
 ## <a name="conclusion"></a>結論
 
