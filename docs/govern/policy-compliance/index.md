@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b4618809e5b6723f82accdb05fd44f6c100937f
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 016bca5abeaed55dadfec0bdadfd0ad4a4d4f251
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191258"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195418"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>準備公司的雲端 IT 原則
 
@@ -55,7 +55,7 @@ _圖 1：公司治理和治理專業領域。_
 
 例如，某個企業部署的 5 部 VM 全不包含高業務影響性 (HBI) 資料，則其業務風險很小。 當雲端採用流程後續的 VM 數目達到 1,000 部，而該企業開始移動 HBI 資料時，業務風險會增長。
 
-原則 MVP 會嘗試定義所需原則的基礎，以部署前 _x_ 部 VM 或前 _x_ 個應用程式，其中的 _x_ 代表數字不大卻有意義的裝置採用數量。 此原則集需要少數限制，但會包含快速增長到下一個漸進雲端採用工作所需的基礎層面。 透過漸進原則發展，此治理策略會隨時間增長。 透過緩慢細微的移轉，原則 MVP 可能會增長為原則檢閱活動結果的功能同位。
+原則 MVP 會嘗試定義所需原則的基礎，以部署前 *x* 部 VM 或前 *x* 個應用程式，其中的 *x* 代表數字不大卻有意義的裝置採用數量。 此原則集需要少數限制，但會包含快速增長到下一個漸進雲端採用工作所需的基礎層面。 透過漸進原則發展，此治理策略會隨時間增長。 透過緩慢細微的移轉，原則 MVP 可能會增長為原則檢閱活動結果的功能同位。
 
 ## <a name="incremental-policy-growth"></a>漸進原則成長
 

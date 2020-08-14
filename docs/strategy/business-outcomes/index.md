@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 48cbb33ed40286f1201f85b67d75809e487b83d4
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 85fe35eb9cc70af231989aa6d05b7a70df3c594b
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194998"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196262"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
@@ -20,7 +20,7 @@ ms.locfileid: "86194998"
 
 在任何雲端轉換期間，在業務成果方面發言的能力支援透明度和跨功能的合作關係。 業務成果架構從一個簡單的範本開始，以幫助技術人員記錄並取得共識。 此範本可以與數個業務專案關係人一起使用，以收集各種業務成果，每個業務成果都可能受到公司轉換過程的影響。 您能以電子方式使用此範本，更棒的則是將它繪製在白板上，讓業務負責人和專案關係人參與以結果為中心的討論。
 
-若要深入了解業務成果和業務成果範本的相關資訊，請查參閱[記錄業務成果](./business-outcome-template.md)，或下載[業務成果範本](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)。
+若要深入了解業務成果和業務成果範本的相關資訊，請查參閱[記錄業務成果](./business-outcome-template.md)，或下載[業務成果範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx)。
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>準備與不同角色的交談
 
