@@ -1,30 +1,30 @@
 ---
 title: 評估 Azure Stack Hub 遷移的工作負載
-description: 評估 Azure Stack Hub 遷移的工作負載
+description: 評估 Azure Stack 中樞遷移的工作負載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ae051824eccf256734d539d854de55239ac7b4cd
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0278ef7006deec80580a6f457863049452c5069d
+ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451839"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88236993"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>評估 Azure Stack Hub 遷移的工作負載
 
-本文假設您已決定將[Azure Stack 整合到您的雲端策略](./index.md)、開發[Azure Stack 中樞遷移的計畫](./plan.md)，以及[您的環境已準備好進行遷移](./ready.md)。
+本文假設您已決定將 [Azure Stack 整合到您的雲端策略](./index.md)、開發 [Azure Stack 中樞遷移的計畫](./plan.md)，以及 [您的環境已準備好進行遷移](./ready.md)。
 
-在計畫方法的數位資產合理化期間，會探索每個工作負載、清查，並根據量化資料進行初始決策。 在部署每個工作負載之前，請務必使用定性資料來驗證資料和決策。
+在計畫方法的組織數位資產合理化期間，系統會探索並清查每個工作負載，並根據量化資料進行初始決策。 在部署每個工作負載之前，請務必以定性資料驗證資料和決策。
 
 ## <a name="placement"></a>放置
 
-第一個要考慮的資料點是位置。 此工作負載會遷移至您的公用雲端、私人雲端或其他雲端平臺，例如主權雲端或服務提供者的 Azure 環境。
+第一個要考慮的資料點是位置。 也就是說，此工作負載會遷移至您的公用雲端、私人雲端或其他雲端平臺，例如主權雲端或服務提供者的 Azure 環境？
 
-下列各節將有助於驗證位置。 它們也會提供在部署此工作負載期間將會很有用的資料。
+下列各節中的資訊可協助您驗證有關放置的決策。 這項資訊也會協助在部署您的工作負載期間，將會有説明的介面資料。
 
 ## <a name="stakeholder-value"></a>專案關係人值
 
@@ -49,7 +49,7 @@ ms.locfileid: "86451839"
 
 - 效能
 - 可用性
-- 復原
+- 災害復原
 - 部署或遷移方法
 
 ## <a name="licensing"></a>授權
@@ -62,23 +62,23 @@ ms.locfileid: "86451839"
 
 ## <a name="operations-requirements"></a>作業需求
 
-- 藉由檢查 IT 管理的雲端服務和應用程式特定服務之間的相互關聯，避免重複工作並優化服務等級協定（Sla）。
-- 請考慮在部署和遷移應用程式期間，協調服務布建所需的自動化。
-- 擴充[性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)服務，例如依使用量付費、VM 可用性設定組、虛擬機器擴展集、網路介面卡，以及新增 vm 和磁片大小的功能，可協助您符合作業需求。
+- 藉由檢查 IT 管理的雲端服務和應用程式特定服務之間的相互關聯，避免重複工作並將服務等級協定 (Sla) 。
+- 請考慮在部署和遷移應用程式期間協調服務布建所需的自動化。
+- 為協助滿足您的作業需求，請考慮擴充 [性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/) 服務，例如依使用量付費、虛擬機器 (VM) 可用性設定組、vm 擴展集、網路介面卡，以及新增和調整 vm 和磁片大小的功能。
 
 ## <a name="monitoring"></a>監視
 
-- 使用妥善定義的計量來監視系統健康情況和操作狀態和效能，這些度量會形成保證給使用者的 Sla 基礎。
-- 檢查安全性與合規性，評估雲端環境符合應用程式所施加之法規和合規性需求的程度。
+- 使用妥善定義的計量，以構成您提供給使用者的 Sla 基礎，來監視系統健康情況和操作狀態和效能。
+- 檢查安全性與合規性，評估雲端環境符合應用程式所強加之法規和合規性需求的程度。
 - 備份/還原和複寫/容錯移轉的處理常式為何？
-- 尋找適用于 IaaS、PaaS 和 SaaS 資源的資料保護服務。
+- 尋找適用于基礎結構即服務、平臺即服務和軟體即服務資源的資料保護服務。
 - 結合多項廠商、技術和功能，以達成全方位的保護原則。
 
-## <a name="next-step-assess-workloads-before-migration"></a>下一個步驟：在遷移前評估工作負載
+## <a name="next-steps"></a>後續步驟
 
-下列文章提供在雲端採用旅程圖的特定時間點中找到的指引。 評估工作負載的第一篇文章，會比在規劃過程中的評估更深入，以確保您已準備好遷移每個工作負載。
+如需雲端採用旅程的特定元素指引，請參閱：
 
-- [評估 Azure Stack 中樞的工作負載](./migrate-assess.md)
-- [將工作負載部署到 Azure Stack 中樞](./migrate-deploy.md)
-- [管理 Azure Stack 中樞](./govern.md)
+- [評估 Azure Stack Hub 的工作負載](./migrate-assess.md)
+- [將工作負載部署到 Azure Stack Hub](./migrate-deploy.md)
+- [治理 Azure Stack Hub](./govern.md)
 - [管理 Azure Stack Hub](./manage.md)
