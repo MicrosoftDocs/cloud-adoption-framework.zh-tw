@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c9a4a7759388dcbd812e26a482c18a1e48de67eb
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: aa4f565bafeafa0eea09ca940a4ca90a9ff46eed
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075921"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196173"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -109,7 +109,7 @@ Azure AD 支援使用 [Active Directory 同盟服務](https://docs.microsoft.com
 
 ## <a name="next-steps"></a>後續步驟
 
-身分識別只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 若要了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型，請參閱[決策指南概觀](../index.md)。
+身分識別只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 若要了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型，請參閱架構決策指南概觀。
 
 > [!div class="nextstepaction"]
-> [架構相關決策指南](../index.md)
+> [架構相關決策指南概觀](../index.md)

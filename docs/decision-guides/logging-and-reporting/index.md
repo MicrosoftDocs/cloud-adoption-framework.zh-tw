@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 05498e7e1163f627b33f1a555aa3870e4bebd868
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: ccd87b73976cb87069bf05463f05a1e22e2caf75
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450708"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196134"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -123,7 +123,7 @@ ms.locfileid: "86450708"
 
 ## <a name="next-steps"></a>後續步驟
 
-記錄和報告只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
+記錄和報告只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 請瀏覽架構決策指南概觀，以了解在為其他類型的基礎結構制定設計決策時，使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7ca89c067d821013be07ebb6814c49e330505946
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: a98a60937bf01eaa3fc4a9a7f7ba594e281a008e
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478050"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196051"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -67,7 +67,7 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 ## <a name="next-steps"></a>後續步驟
 
-軟體定義網路只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
+軟體定義網路只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽架構決策指南概觀，以了解在為其他類型的基礎結構制定設計決策時，使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2c64ddc4f362de35c6f191454d358471e529c631
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 6abe854a7e0bdae89824032a95a981b76fb48de5
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234798"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196302"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -60,4 +60,4 @@ ms.locfileid: "86234798"
 
 [決定組織結構成熟度](./organization-structures.md)一文提供了關於每個成熟度等級的更多細節。
 
-若要隨著時間進行追蹤組織結構決策，請下載並修改 [RACI 試算表範本](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)。
+若要隨著時間進行追蹤組織結構決策，請下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。

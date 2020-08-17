@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1947ed8ccadae4f2f2d289bc3c58e9206fbe533d
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 4b890af71bdf73ecafc28db152c719d9913dbd1f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993680"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196099"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -78,7 +78,7 @@ Azure 平台皆建置在基本的資源分組機制之上，提供的系統可�
 
 ## <a name="next-steps"></a>後續步驟
 
-資源一致性只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型。
+資源一致性只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽架構決策指南概觀，以了解在為其他類型的基礎結構制定設計決策時，使用的替代模式或模型。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)

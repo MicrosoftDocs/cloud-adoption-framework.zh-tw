@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca1a65d0c385a7fc57e66b4c3f41157363a8a392
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b43c20579bceb855c77adb3b4e7919254fa50d5a
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191904"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196148"
 ---
 <!-- cSpell:ignore BYOK -->
 
@@ -130,7 +130,7 @@ PaaS 儲存體與資料庫資源通常會預設強制加密。 可以透過加�
 
 ## <a name="next-steps"></a>後續步驟
 
-加密只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 若要了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型，請參閱[決策指南概觀](../index.md)。
+加密只是在雲端採用程序期間需要架構決策的其中一個核心基礎結構元件。 若要了解在為其他類型的基礎結構制定設計決策時使用的替代模式或模型，請參閱架構決策指南概觀。
 
 > [!div class="nextstepaction"]
-> [架構相關決策指南](../index.md)
+> [架構相關決策指南概觀](../index.md)

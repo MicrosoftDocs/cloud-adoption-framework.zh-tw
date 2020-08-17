@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9b363ea7fc2febaccfd2df14596b025d52a943a2
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0fab533dee7f5a256bb2a640611b647988f056ac
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787651"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194792"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>開發雲端採用方案
 
@@ -29,4 +29,4 @@ ms.locfileid: "84787651"
 | <br> ![3](../_images/icons/3.png) | <br> [技能整備程度方案](./adapt-roles-skills-processes.md)：建立處理技能整備程度差距的方案。                                |
 | <br> ![4](../_images/icons/4.png) | <br> [雲端採用方案](./plan-intro.md)：開發雲端採用方案，以跨數位資產、技術和組織管理變更。                        |
 
-下載[雲端採用架構策略和方案範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)，以在建置您的雲端採用策略時，追蹤每個練習的成果。 此外，請了解[雲端合理化的五 R 策略](../digital-estate/5-rs-of-rationalization.md)，以利建置您的雲端採用方案。
+下載[策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)，以在建置您的雲端採用策略時，追蹤每個練習的成果。 此外，請了解[雲端合理化的五 R 策略](../digital-estate/5-rs-of-rationalization.md)，以利建置您的雲端採用方案。

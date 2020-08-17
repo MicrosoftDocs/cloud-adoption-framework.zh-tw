@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a726d8eeeb572ce64cf905c3b40932c58ffd1b92
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 48956811e324e5a0fc3a8e1b10194399c1483faf
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191921"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196073"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -84,7 +84,7 @@ ms.locfileid: "86191921"
 
 ## <a name="next-steps"></a>後續步驟
 
-訂用帳戶設計只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽[決策指南概觀](../index.md)，以了解在為其他基礎結構類型制定設計決策時使用的其他策略。
+訂用帳戶設計只是雲端採用程序期間，其中一個需針對架構做出決策的核心基礎結構元件。 請瀏覽架構決策指南概觀，以了解在為其他基礎結構類型制定設計決策時，使用的其他策略。
 
 > [!div class="nextstepaction"]
 > [架構相關決策指南](../index.md)
