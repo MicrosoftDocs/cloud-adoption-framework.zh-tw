@@ -1,28 +1,28 @@
 ---
 title: 組織和管理多個 Azure 訂用帳戶
-description: 使用適用于 Azure 的雲端採用架構來瞭解如何建立管理群組階層，以簡化您的訂用帳戶和資源管理。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何建立管理群組階層，以簡化您的訂用帳戶和資源管理。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 48406df39114381ed31308af4a25d1bdb754f1f8
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473160"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88277596"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
-如果您只有幾個訂用帳戶，則獨立管理這些訂閱相當簡單。 不過，如果您有許多訂用帳戶，請建立管理群組階層，以協助管理您的訂用帳戶和資源。
+如果您只有幾個訂用帳戶，則個別管理它們相當簡單。 不過，如果您有許多訂用帳戶，請建立管理群組階層，以協助管理您的訂用帳戶和資源。
 
 ## <a name="azure-management-groups"></a>Azure 管理群組
 
 Azure 管理群組可協助您有效率地管理訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
 
-管理群組會以單一階層的方式排列。 您會在 Azure Active Directory （Azure AD）租使用者中定義此階層，以符合您組織的結構和需求。 最上層稱為「根管理群組」__。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
+管理群組會以單一階層的方式排列。 您可以在 Azure Active Directory (Azure AD) 租使用者中定義此階層，以符合組織的結構和需求。 最上層稱為「根管理群組」__。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
 
 Azure 提供四個層級的管理範圍：
 
@@ -36,20 +36,20 @@ Azure 提供四個層級的管理範圍：
 > [!NOTE]
 > 尚不支援標記繼承，但很快就會提供。
 
-此繼承模型可讓您在階層中排列訂閱，讓每個訂用帳戶都遵循適當的原則和安全性控制項。
+此繼承模型可讓您在階層中排列訂用帳戶，讓每個訂用帳戶遵循適當的原則和安全性控制。
 
-![組織您的 Azure 資源的四個範圍層級 ](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
- _圖1：用來組織 Azure 資源的四個範圍層級。_
+![組織 Azure 資源的四個範圍層級 ](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
+ _圖1：組織 Azure 資源的四個範圍層級。_
 
 根管理群組上的任何存取權或原則指派，都會套用至目錄中的所有資源。 請仔細考慮要在此範圍上定義的項目。 這應該僅包含您必須擁有的指派。
 
 ## <a name="create-your-management-group-hierarchy"></a>建立您的管理群組階層
 
-當您定義管理群組階層時，請先建立根管理群組。 然後將目錄中所有現有的訂用帳戶移到根管理群組。 新的訂用帳戶一律會建立在根管理群組中。 之後，您可以將它們移至另一個管理群組。
+當您定義管理群組階層時，請先建立根管理群組。 然後將目錄中的所有現有訂用帳戶移至根管理群組。 新的訂用帳戶一律會建立在根管理群組中。 稍後，您可以將它們移至另一個管理群組。
 
-當您將訂用帳戶移至現有的管理群組時，它會從其上的管理群組階層繼承原則和角色指派。 建立 Azure 工作負載的多個訂用帳戶之後，您可以建立額外的訂用帳戶，以包含其他訂用帳戶共用的 Azure 服務。
+當您將訂用帳戶移至現有的管理群組時，它會從其上方的管理群組階層繼承原則和角色指派。 為您的 Azure 工作負載建立多個訂用帳戶之後，您可以建立額外的訂用帳戶來包含其他訂用帳戶共用的 Azure 服務。
 
-如果您想要讓 Azure 環境成長，您應該立即建立生產和非生產的管理群組，並在管理群組層級套用適當的原則和存取控制。 新的訂閱將會在新增至每個管理群組時，繼承適當的控制項。
+如果您希望 Azure 環境成長，您應該立即建立生產和非生產的管理群組，並在管理群組層級套用適當的原則和存取控制。 當新的訂用帳戶新增至每個管理群組時，會繼承適當的控制項。
 
 ![管理群組階層的範例 ](../../_images/ready/management-group-hierarchy-v2.png)
  _圖2：管理群組階層的範例。_
@@ -58,17 +58,17 @@ Azure 提供四個層級的管理範圍：
 
 使用管理群組來區隔不同工作負載的一些基本範例包括：
 
-**生產與非生產工作負載：** 使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，開發人員可能會在生產訂用帳戶中擁有參與者存取權，但只有非生產訂用帳戶中的讀者存取權
+**生產與非生產工作負載** 的比較：使用管理群組，更輕鬆地管理生產與非生產訂用帳戶之間的不同角色和原則。 例如，開發人員可能在生產訂用帳戶中具有參與者存取權，但只有非生產訂用帳戶的讀取者存取權。
 
-**內部服務與外部服務：** 企業通常會有不同的需求、原則和角色來提供內部服務與外部客戶面向的服務。
+**內部服務與外部服務：** 企業通常會有不同的需求、原則，以及內部服務與外部客戶面向服務的角色。
 
 ## <a name="related-resources"></a>相關資源
 
-請參閱下列資源，以深入瞭解如何組織和管理您的 Azure 資源。
+請參閱下列資源，以深入瞭解如何組織及管理您的 Azure 資源。
 
-- [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/governance/management-groups)
-- [提高存取權以管理所有 Azure 訂用帳戶和管理群組](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [將 Azure 資源移至另一個資源群組或訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
+- [使用 Azure 管理群組來組織資源](/azure/governance/management-groups)
+- [提升存取權以管理所有 Azure 訂用帳戶和管理群組](/azure/role-based-access-control/elevate-access-global-admin)
+- [將 Azure 資源移至另一個資源群組或訂用帳戶](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>後續步驟
 

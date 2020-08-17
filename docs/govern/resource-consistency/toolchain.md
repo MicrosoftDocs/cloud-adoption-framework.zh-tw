@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed5590abddae52edcb2801a55e58ef82abcd785f
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 95f0654550c6f361b7e7ad78ecb6b28900e1ef99
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479090"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279959"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
-[資源一致性](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 這個專業領域著重於訂定與環境、應用程式或工作負載之作業管理相關的原則。 在雲端治理的五個專業領域中，資源一致性專業領域牽涉到監視應用程式、工作負載和資產效能。 它也包含符合規模需求、補救效能 SLA 違規，以及主動避免透過自動補救進行效能 SLA 違規所需的工作。
+[資源一致性](./index.md) 是 [雲端治理的五個專業領域](../governance-disciplines.md)之一。 這個專業領域著重於訂定與環境、應用程式或工作負載之作業管理相關的原則。 在雲端治理的五個專業領域中，資源一致性專業領域牽涉到監視應用程式、工作負載和資產效能。 它也包含符合調整需求、補救效能 SLA 違規，以及透過自動補救主動避免效能 SLA 違規所需的工作。
 
 <!-- docsTest:ignore "conditional access to resources" -->
 
-以下是 Azure tools 的清單，可協助您成熟支援此專業領域的原則和流程。
+以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure 自動化](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure 自動化](/azure/automation/automation-intro) | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 部署資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
 | 管理資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
@@ -45,9 +45,9 @@ ms.locfileid: "86479090"
 | 在發生中斷或 SLA 違規期間復原資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
 | 在發生中斷或 SLA 違規期間復原應用程式和資料     | 否 | 否  | 否  | 否  | 否  | 是 | 是 |
 
-除了這些資源一致性工具和功能外，您還必須監視已部署的資源，以了解效能和健康情況問題。 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)是 Azure 中的預設監視和報告解決方案。 Azure 監視器提供監視雲端資源的功能。 此清單會顯示哪些功能可解決常見的監視需求。
+除了這些資源一致性工具和功能外，您還必須監視已部署的資源，以了解效能和健康情況問題。 [Azure 監視器](/azure/azure-monitor/overview)是 Azure 中的預設監視和報告解決方案。 Azure 監視器提供監視雲端資源的功能。 這份清單會顯示哪些功能可解決常見的監視需求。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 REST API](https://docs.microsoft.com/rest/api/monitor) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](/azure/application-insights/app-insights-overview) | [Log Analytics](/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 REST API](/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | 記錄虛擬機器的遙測資料                 | 否           | 否                   | 是           | 否                     |
 | 記錄虛擬網路的遙測資料              | 否           | 否                   | 是           | 否                     |
@@ -61,8 +61,8 @@ ms.locfileid: "86479090"
 規劃部署時，您將需要考量記錄資料儲存位置，以及如何將雲端式[報告和監視服務](../../decision-guides/logging-and-reporting/index.md)與現有的處理程序和工具整合。
 
 > [!NOTE]
-> 組織也會使用第三方 DevOps 工具來監視工作負載和資源。 如需詳細資訊，請參閱[DevOps 工具整合](https://azure.microsoft.com/products/devops-tool-integrations)。
+> 組織也會使用第三方 DevOps 工具來監視工作負載和資源。 如需詳細資訊，請參閱 [DevOps 工具](https://azure.microsoft.com/products/devops-tool-integrations)整合。
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何在 Azure 中建立、指派和管理[原則定義](https://docs.microsoft.com/azure/governance/policy)。
+瞭解如何在 Azure 中建立、指派和管理 [原則定義](/azure/governance/policy) 。

@@ -1,18 +1,18 @@
 ---
 title: 將應用程式從大型主機遷移至 Azure
-description: 取得在高可用性環境中，將從大型主機平臺切換至 Azure 超大規模資料庫計算和儲存體的技術指導方針。
+description: 取得在高可用性環境中，從大型主機平臺切換至 Azure 超大規模計算和儲存體的技術指引。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a693decfa8e2178069b005c129fa30188c577f2c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: c0d78e54049cd0bc745f6c972f3cab1205ba25b6
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398806"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279687"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "83398806"
 
 ## <a name="mips-and-vcpus"></a>MIPS 和個 vcpu
 
-沒有通用對應公式存在，無法判斷執行大型主機工作負載所需的虛擬中央處理器（個 vcpu）數目。 不過，每秒百萬指令數 (MIPS) 計量通常會對應至 Azure 上的 vCPU。 MIPS 透過針對指定電腦提供常數值的每秒循環次數，來測量大型主機的整體計算能力。
+在執行大型主機工作負載時，找不到用來判斷 (個 vcpu) 虛擬中央處理單位數目的通用對應公式。 不過，每秒百萬指令數 (MIPS) 計量通常會對應至 Azure 上的 vCPU。 MIPS 透過針對指定電腦提供常數值的每秒循環次數，來測量大型主機的整體計算能力。
 
 小型組織可能需要低於 500 MIPS，而大型組織通常需要超過 5,000 MIPS。 假設每單一 MIPS 需要 $1000 美元的情況下，大型組織每年需花費大約 5 百萬美元來部署 5,000 MIPS 的基礎結構。 針對此規模的一般 Azure 部署，每年的成本評估大約是 MIPS 基礎結構的十分支一。 如需詳細資訊，請參閱 [Azure 移轉的大型主機釋疑](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) \(英文\) 白皮書中的表格 4。
 
@@ -45,38 +45,38 @@ MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實�
 
 ## <a name="high-availability-and-failover"></a>高可用性和容錯移轉
 
-當使用大型主機耦合與 Parallel Sysplex 時，大型主機系統通常會提供五個 9 的可用性 (99.999%)。 但是系統操作員仍需要為了維護和初始程式載入來排程停機時間。 實際的可用性會接近兩個或三個9，相當於高階的 Intel 伺服器。
+當使用大型主機耦合與 Parallel Sysplex 時，大型主機系統通常會提供五個 9 的可用性 (99.999%)。 但是系統操作員仍需要為了維護和初始程式載入來排程停機時間。 實際的可用性方法有二或三個9，相當於高端的 Intel 型伺服器。
 
 相較之下，Azure 提供以服務等級協定 (SLA) 為基礎的承諾，預設便提供多個 9 的可用性，且透過服務的本機或異地複寫最佳化。
 
 Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中) 複寫資料，提供額外的可用性。 萬一發生 Azure 失敗，計算資源可以存取本機或區域層級的複寫資料。
 
-當您使用 Azure 平台作為服務 (PaaS) 資源時 (例如 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction))，Azure 可以自動處理容錯移轉。 當您使用 Azure 基礎結構即服務（IaaS）時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
+當您使用 Azure 平台作為服務 (PaaS) 資源時 (例如 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos Database](/azure/cosmos-db/introduction))，Azure 可以自動處理容錯移轉。 當您使用 Azure 基礎結構即服務 (IaaS) 時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
 
 ## <a name="scalability"></a>延展性
 
-大型主機通常會相應增加，而雲端環境則會向外延展。大型主機可以使用結合設備（CF）向外延展，但是硬體和儲存體的高成本會使大型主機的相應放大變得昂貴。
+大型主機通常會擴大，而雲端環境則會相應放大。大型主機可以使用結合設備 (CF) 來向外延展，但硬體和儲存體的高成本使得大型主機的擴充成本高昂。
 
-CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散結合。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
+CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散耦合的。 雲端可以透過以使用量為基礎的計費模型，根據需求調整計算能力、儲存體和服務，來相應增加或減少以符合使用者的規格。
 
 ## <a name="backup-and-recovery"></a>備份與復原
 
 大型主機客戶通常會保留災害復原網站，或使用獨立的大型主機提供者作為災害應變措施。 與災害復原網站的同步處理，通常是透過離線資料複本來完成。 這兩個選項都會產生高度成本。
 
-自動異地複寫也可透過大型主機結合設備來取得。 這種方法很昂貴，而且通常會保留給關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](https://docs.microsoft.com/azure/backup/backup-overview)、[復原](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)和[備援](https://docs.microsoft.com/azure/storage/common/storage-redundancy)。
+自動地理冗余也可透過大型主機結合設備取得。 這種方法很昂貴，通常會保留給任務關鍵性系統。 相反地，Azure 擁有容易實作且符合成本效益的選項，在本機或區域層級 (或透過異地備援) 提供[備份](/azure/backup/backup-overview)、[復原](/azure/site-recovery/site-recovery-overview)和[備援](/azure/storage/common/storage-redundancy)。
 
 ## <a name="storage"></a>儲存體
 
 了解大型主機的運作如何牽涉解碼各種重疊的詞彙。 例如，中央儲存體、實際記憶體，實際儲存體和主要儲存體，通常都是指直接連接到大型主機處理器的儲存體。
 
-大型主機硬體包含處理器和其他許多裝置，例如直接存取存放裝置（Dasd）、磁片磁碟機，以及數種類型的使用者主控台。 磁帶和 DASD 用於系統功能和使用者程式。
+大型主機硬體包括處理器及許多其他裝置，例如直接存取存放裝置 (Dasd) 、磁帶機，以及數種類型的使用者主控台。 磁帶和 DASD 用於系統功能和使用者程式。
 
 大型主機的實體儲存體類型包括：
 
-- **中央儲存體：** 直接位於大型主機處理器上，這也稱為「處理器」或「實際存放裝置」。
-- **輔助儲存體：** 與大型主機分開，此型別包含 Dasd 上的儲存體，也稱為分頁儲存體。
+- **中央儲存體：** 直接位於大型主機處理器上，這也稱為處理器或真正的儲存體。
+- **輔助儲存體：** 此類型與大型主機分開，也包含 Dasd 上的儲存空間，也稱為分頁儲存體。
 
-雲端提供一組有彈性、可擴充的選項，且您只要為所需的那些選項付費。 [Azure 儲存體](https://docs.microsoft.com/azure/storage/common/storage-introduction)提供可大幅調整的資料物件存放區、雲端檔案系統服務、可靠的訊息存放區，以及 NoSQL 存放區。 針對 VM，受控和非受控磁碟可提供安全的永續性磁碟儲存體。
+雲端提供一組有彈性、可擴充的選項，且您只要為所需的那些選項付費。 [Azure 儲存體](/azure/storage/common/storage-introduction)提供可大幅調整的資料物件存放區、雲端檔案系統服務、可靠的訊息存放區，以及 NoSQL 存放區。 針對 VM，受控和非受控磁碟可提供安全的永續性磁碟儲存體。
 
 ## <a name="mainframe-development-and-testing"></a>大型主機的開發與測試
 
