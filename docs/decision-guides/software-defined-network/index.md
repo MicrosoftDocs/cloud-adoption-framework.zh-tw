@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a98a60937bf01eaa3fc4a9a7f7ba594e281a008e
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 6cc107d743516160917d863fa69d2aa5a5aaa4a7
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196051"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278599"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 
@@ -62,8 +62,8 @@ SDN 提供數個選項，搭配各種不同程度的價格和複雜度。 上述
 
 如需 Azure 中軟體定義網路的詳細資訊，請參閱：
 
-- [Azure 虛擬網路](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。 在 Azure 上，核心 SDN 功能會由 Azure 虛擬網路所提供，以做為實體內部部署網路的雲端類比。 虛擬網路也可做為平台上資源之間的預設隔離界限。
-- [適用於網路安全性的 Azure 最佳做法](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)。 由 Azure 安全性小組所提供，對於如何設定您的虛擬網路以將安全性弱點最小化的建議。
+- [Azure 虛擬網路](/azure/virtual-network/virtual-networks-overview)。 在 Azure 上，核心 SDN 功能會由 Azure 虛擬網路所提供，以做為實體內部部署網路的雲端類比。 虛擬網路也可做為平台上資源之間的預設隔離界限。
+- [適用於網路安全性的 Azure 最佳做法](/azure/security/fundamentals/network-best-practices)。 由 Azure 安全性小組所提供，對於如何設定您的虛擬網路以將安全性弱點最小化的建議。
 
 ## <a name="next-steps"></a>後續步驟
 

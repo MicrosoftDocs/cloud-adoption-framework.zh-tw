@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: aa4f565bafeafa0eea09ca940a4ca90a9ff46eed
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 69a27bd28fb22f7c7a15490ac65d8dc7053b5f63
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196173"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278939"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -63,7 +63,7 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 對於具有現有內部部署 Active Directory 基礎結構的組織，目錄同步作業通常是保留現有使用者和存取管理的最佳解決方案，同時可提供所需的 IAM 功能來管理雲端資源。 此程序會持續複寫 Azure AD 和內部部署目錄服務之間的目錄資訊，允許使用者使用常見的認證，並在整個組織內使用一致的身分識別、角色和權限系統。
 
 > [!NOTE]
-> 採用 Office 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
+> 採用 Office 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](/office365/enterprise/set-up-directory-synchronization)。
 
 **目錄同步作業假設事項：** 使用同步處理身分識別解決方案的假設如下：
 
@@ -93,19 +93,19 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 
 身分識別同盟會在多個身分識別管理系統中建立信任關係，以允許通用的驗證和授權功能。 之後，您就能在自己的組織內，或者由您的客戶與商務夥伴所管理的身分識別系統中，跨網域地支援單一登入功能。
 
-Azure AD 支援使用 [Active Directory 同盟服務](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS) 的內部部署 Active Directory 網域同盟。 如需如何在 Azure 中執行這項操作的詳細資訊，請參閱[將 AD FS 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs)。
+Azure AD 支援使用 [Active Directory 同盟服務](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS) 的內部部署 Active Directory 網域同盟。 如需如何在 Azure 中執行這項操作的詳細資訊，請參閱[將 AD FS 擴充至 Azure](/azure/architecture/reference-architectures/identity/adfs)。
 
 ## <a name="learn-more"></a>深入了解
 
 如需 Azure 中身分識別服務的相關詳細資訊，請參閱：
 
-- **[Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD 提供雲端式身分識別服務。 讓您管理對於 Azure 資源的存取並控制身分識別管理、裝置註冊、使用者佈建、應用程式存取控制和資料保護。
-- **[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect 工具可讓您將 Azure AD 執行個體與現有身分識別管理解決方案連線，以允許雲端中現有目錄的同步作業。
-- **[角色型存取控制 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)。** Azure AD 提供 RBAC，可有效率且安全地管理在管理平面中的資源存取權。 工作和責任會組織成角色，然後使用者會被指派到這些角色。 RBAC 可讓您控制誰對於資源擁有存取權，以及使用者可以在該資源上執行哪些動作。
-- **[Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)。** PIM 會降低資源存取權限的曝光時間，並透過報告和警示提升他們使用的可見度。 也會限制使用者在 Just-In-Time (JIT) 狀態下行使其權限，或指派持續時間較短的權限，並在時間到達之後自動撤銷該權限。
-- **[整合內部部署 Active Directory 網域與 Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。** 此參考架構提供內部部署 Active Directory 網域和 Azure AD 之間的目錄同步作業範例。
-- **[將 Active Directory Domain Services (AD DS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。** 此參考架構提供部署 AD DS 伺服器以擴充網域服務至雲端式資源的範例。
-- **[將 Active Directory 同盟服務 (AD FS) 擴充至 Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs)。** 此參考架構設定 Active Directory 同盟服務 (AD FS) 以執行同盟驗證和 Azure AD 目錄授權。
+- **[Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD 提供雲端式身分識別服務。 讓您管理對於 Azure 資源的存取並控制身分識別管理、裝置註冊、使用者佈建、應用程式存取控制和資料保護。
+- **[Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect 工具可讓您將 Azure AD 執行個體與現有身分識別管理解決方案連線，以允許雲端中現有目錄的同步作業。
+- **[角色型存取控制 (RBAC)](/azure/role-based-access-control/overview)。** Azure AD 提供 RBAC，可有效率且安全地管理在管理平面中的資源存取權。 工作和責任會組織成角色，然後使用者會被指派到這些角色。 RBAC 可讓您控制誰對於資源擁有存取權，以及使用者可以在該資源上執行哪些動作。
+- **[Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure)。** PIM 會降低資源存取權限的曝光時間，並透過報告和警示提升他們使用的可見度。 也會限制使用者在 Just-In-Time (JIT) 狀態下行使其權限，或指派持續時間較短的權限，並在時間到達之後自動撤銷該權限。
+- **[整合內部部署 Active Directory 網域與 Azure Active Directory](/azure/architecture/reference-architectures/identity/azure-ad)。** 此參考架構提供內部部署 Active Directory 網域和 Azure AD 之間的目錄同步作業範例。
+- **[將 Active Directory Domain Services (AD DS) 擴充至 Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)。** 此參考架構提供部署 AD DS 伺服器以擴充網域服務至雲端式資源的範例。
+- **[將 Active Directory 同盟服務 (AD FS) 擴充至 Azure](/azure/architecture/reference-architectures/identity/adfs)。** 此參考架構設定 Active Directory 同盟服務 (AD FS) 以執行同盟驗證和 Azure AD 目錄授權。
 
 ## <a name="next-steps"></a>後續步驟
 

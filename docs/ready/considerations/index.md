@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6287cb0f1ea73032728c9394f2d1f74fcc81409a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 6f61bdbd1843dea82ab645768465e1e1b3541f20
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479650"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278233"
 ---
 # <a name="expand-your-landing-zone"></a>擴充登陸區域
 
@@ -25,7 +25,7 @@ ms.locfileid: "86479650"
 ![共用架構準則](../../_images/ready/shared-principles.png)
 _圖1：共用架構準則。_
 
-[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 和 [Azure 架構中心](https://docs.microsoft.com/azure/architecture)中的解決方案均共用這些相同的架構原則。
+[Azure Advisor](/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 和 [Azure 架構中心](/azure/architecture)中的解決方案均共用這些相同的架構原則。
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>將這些原則套用至您的登陸區域改進功能
 

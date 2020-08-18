@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b5f613fb79fc30fe9ea2a5c3e817ff54174f4ded
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 817cc502f00cf6b8afece839719626653618c451
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196033"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278837"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -27,8 +27,8 @@ ms.locfileid: "88196033"
   - [雲端帳戶處理模型](../../strategy/cloud-accounting.md)
   - [ROI 計算](../../strategy/financial-models.md#return-on-investment)
   - [成本追蹤](../../ready/azure-best-practices/track-costs.md)
-  - [預算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [警示](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [警示](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
   - [週期性支出追蹤和報告](../../govern/cost-management/compliance-processes.md)
   - [實作後最佳化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -55,7 +55,7 @@ ms.locfileid: "88196033"
 標準化命名慣例是組織雲端裝載資源的起點。 正確結構化的命名系統可讓您基於管理和會計計量目的快速識別資源。 如果您組織的其他部門具已有現有的 IT 命名慣例，請考慮您是否應採用一致的雲端命名慣例，或是否應建立個別的雲端標準。
 
 > [!NOTE]
-> 每個 Azure 資源的[命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)各有不同。 您的命名慣例必須符合這些規則。
+> 每個 Azure 資源的[命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)各有不同。 您的命名慣例必須符合這些規則。
 
 ## <a name="resource-tagging-patterns"></a>資源標記模式
 
@@ -91,7 +91,7 @@ ms.locfileid: "88196033"
 如需有關 Azure 中命名和標記的詳細資訊，請參閱：
 
 - [Azure 資源的命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)。 請參閱本指南了解建議的 Azure 資源命名慣例。
-- [使用標記來組織 Azure 資源和管理階層](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
+- [使用標記來組織 Azure 資源和管理階層](/azure/azure-resource-manager/management/tag-resources)。 您可以在 Azure 中將標記套用在資源群組和個別資源層級，讓自己能夠根據套用的標記彈性調整會計報表的資料詳細程度。
 
 ## <a name="next-steps"></a>後續步驟
 

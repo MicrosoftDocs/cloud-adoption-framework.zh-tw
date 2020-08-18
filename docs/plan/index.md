@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0fab533dee7f5a256bb2a640611b647988f056ac
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: eca81105ca5f05367e692a7941b64970911b11a8
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194792"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88281455"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>開發雲端採用方案
 
@@ -22,11 +22,9 @@ ms.locfileid: "88194792"
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [數位資產](../digital-estate/rationalize.md)：根據符合動機和業務成果的假設清查和合理化數位資產。                                |
-| <br> ![2](../_images/icons/2.png) | <br> [初始組織一致性](./initial-org-alignment.md)：建立初始組織對齊的方案，以支援採用方案。                                |
-| <br> ![3](../_images/icons/3.png) | <br> [技能整備程度方案](./adapt-roles-skills-processes.md)：建立處理技能整備程度差距的方案。                                |
-| <br> ![4](../_images/icons/4.png) | <br> [雲端採用方案](./plan-intro.md)：開發雲端採用方案，以跨數位資產、技術和組織管理變更。                        |
+1. [數位資產](../digital-estate/rationalize.md)：根據符合動機和業務成果的假設清查和合理化數位資產。
+2. [初始組織一致性](./initial-org-alignment.md)：建立初始組織對齊的方案，以支援採用方案。
+3. [技能整備程度方案](./adapt-roles-skills-processes.md)：建立處理技能整備程度差距的方案。
+4. [雲端採用方案](./plan-intro.md)：開發雲端採用方案，以跨數位資產、技術和組織管理變更。
 
 下載[策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)，以在建置您的雲端採用策略時，追蹤每個練習的成果。 此外，請了解[雲端合理化的五 R 策略](../digital-estate/5-rs-of-rationalization.md)，以利建置您的雲端採用方案。

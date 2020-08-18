@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b62a27c0eda1940e32e06717c2c195e6565f9e30
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: dd3d7ccb2dab6baf0093e9ada857b4ccb74dd19a
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234934"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88285127"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 
@@ -46,7 +46,7 @@ ms.locfileid: "86234934"
 
 雲端採用架構移轉模型是以累加雲端轉換程序為基礎。 它假設您的組織會從範圍有限的初始雲端移轉工作 (通常稱為第一個工作負載) 開始。 此工作會隨著您的營運小組精簡並改善移轉程序，而反覆擴充以包含更多工作負載。
 
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) 等雲端移轉工具可遷移由數以萬計 VM 組成的整個資料中心。 不過，企業和現有 IT 作業很少能處理這種步調快速的變更。 因此，許多組織將移轉工作分解成多個反覆項目，每個反覆項目都移動一個工作負載 (或工作負載集合)。
+[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 等雲端移轉工具可遷移由數以萬計 VM 組成的整個資料中心。 不過，企業和現有 IT 作業很少能處理這種步調快速的變更。 因此，許多組織將移轉工作分解成多個反覆項目，每個反覆項目都移動一個工作負載 (或工作負載集合)。
 
 此累加模型背後的原理是根據執行程序和下列資訊圖中的必要條件參考。
 

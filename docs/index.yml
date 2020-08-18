@@ -12,12 +12,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: b6774a9cee6c154a73dd8a33a33c1da338b21f68
-  ms.sourcegitcommit: e21c0f8a5179eaa3358f041f01a80e220feffdd6
-  ms.translationtype: 
+  ms.openlocfilehash: d65281dd02e597745a3864d04d9ec106e8692012
+  ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/06/2020
-  ms.locfileid: "86014287"
+  ms.lasthandoff: 08/17/2020
+  ms.locfileid: "88279993"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -139,25 +139,25 @@ tools:
   items:
   - title: 適用於 Azure 的 Microsoft 雲端採用架構
     imageSrc: ./_images/learn-caf-logo.png
-    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+    url: /learn/modules/microsoft-cloud-adoption-framework-for-azure/index
   - title: Azure 基礎
     imageSrc: ./_images/learn-azure-fundamentals-logo.png
-    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+    url: /learn/paths/azure-fundamentals
   - title: 了解 Azure 的商業價值
     imageSrc: ./_images/learn-business-value-of-azure-logo.png
-    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+    url: /learn/paths/learn-business-value-of-azure
 conceptualContent:
   title: 評量
   summary: 評量可協助您規劃雲端旅程。 請使用評量來識別目前狀態與所需狀態之間的差異。 我們將提供個人化的策劃建議，以協助您達到所需的狀態。
   items:
   - title: 雲端旅程追蹤器
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+    - url: /assessments/?id=cloud-journey-tracker&mode=pre-assessment
       itemType: get-started
       text: 根據您的業務需求，識別您的雲端採用途徑。
   - title: 策略移轉評量和整備工具 (智慧型)
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+    - url: /assessments/?id=Strategic-Migration-Assessment&mode=pre-assessment
       itemType: get-started
       text: 去除移轉工作的障礙、改善程序，並促使商務成功。
   - title: 治理基準測試
@@ -167,7 +167,7 @@ conceptualContent:
       text: 識別您目前的狀態與業務優先順序之間的差異，並取得適當的資源以利消除這些差異。
   - title: Microsoft Azure Well-Architected Review
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+    - url: /assessments/?id=azure-architecture-review&mode=pre-assessment
       itemType: architecture
       text: 查看如何在基本作業以外進一步處理優先順序工作負載。
 additionalContent:
@@ -184,4 +184,4 @@ additionalContent:
     - title: 尋找合作夥伴
       summary: 尋找可協助您開始使用的合作夥伴
       url: https://aka.ms/adopt/findapartner
-  footer: 了解為何雲端採用架構適合您的企業。 [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)
+  footer: See why the Cloud Adoption Framework is right for your business. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

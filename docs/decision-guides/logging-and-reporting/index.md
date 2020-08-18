@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ccd87b73976cb87069bf05463f05a1e22e2caf75
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196134"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278922"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "88196134"
 
 ### <a name="cloud-native"></a>雲端原生
 
-如果您的組織目前尚未建置記錄和報告系統，或您規劃的部署不需要與現有內部部署或其他外部監視系統整合，雲端原生 SaaS 解決方案 (例如 [Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)) 就是您最簡單的選擇。
+如果您的組織目前尚未建置記錄和報告系統，或您規劃的部署不需要與現有內部部署或其他外部監視系統整合，雲端原生 SaaS 解決方案 (例如 [Azure 監視器](/azure/azure-monitor/overview)) 就是您最簡單的選擇。
 
 在此案例中，所有日誌資料都記錄並儲存在雲端中，而處理資訊並向 IT 人員呈現資訊的日誌記錄和報告工具是由 Azure 平台和 Azure 監視器提供。
 
@@ -68,7 +68,7 @@ ms.locfileid: "88196134"
 
 ### <a name="gateway-aggregation"></a>閘道彙總
 
-對於雲端遙測資料量很大，或現有內部部署監視系統需要先修改記錄資料才能加以處理的案例，可能就需要記錄資料[閘道彙總](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation)服務。
+對於雲端遙測資料量很大，或現有內部部署監視系統需要先修改記錄資料才能加以處理的案例，可能就需要記錄資料[閘道彙總](/azure/architecture/patterns/gateway-aggregation)服務。
 
 閘道服務會部署至您的雲端提供者。 然後將相關應用程式和服務設定為提交遙測資料給閘道，而不是提交給預設的記錄系統。 接著閘道可以處理資料 (彙總、結合或設定資料格式)，然後再將資料提交給您的監視服務以進行擷取及分析。
 
@@ -114,12 +114,12 @@ ms.locfileid: "88196134"
 
 ## <a name="learn-more"></a>深入了解
 
-[Azure 監視器](https://docs.microsoft.com/azure/azure-monitor/overview)是 Azure 預設的報告和監視服務。 它提供：
+[Azure 監視器](/azure/azure-monitor/overview)是 Azure 預設的報告和監視服務。 它提供：
 
 - 一個統一平台，用來收集應用程式遙測資料、主機遙測資料 (例如 VM)、容器計量、Azure 平台計量，以及事件記錄檔。
 - 視覺效果、查詢、警示和分析工具。 它可提供虛擬機器、客體作業系統、虛擬網路，以及工作負載應用程式事件的深入解析。
-- [REST API](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough)，用來與外部服務整合，以及將監視與警示服務自動化。
-- 與許多熱門的第三方廠商[整合](https://docs.microsoft.com/azure/azure-monitor/platform/partners)。
+- [REST API](/azure/azure-monitor/platform/rest-api-walkthrough)，用來與外部服務整合，以及將監視與警示服務自動化。
+- 與許多熱門的第三方廠商[整合](/azure/azure-monitor/platform/partners)。
 
 ## <a name="next-steps"></a>後續步驟
 

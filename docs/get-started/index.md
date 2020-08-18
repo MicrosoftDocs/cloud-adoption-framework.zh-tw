@@ -8,12 +8,12 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: 94dc8b2761e537c7bef2e837db0d0d25bef8bef7
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a461a79657e52680b137ba6cc78541092faf73b6
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399843"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279092"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 
@@ -22,8 +22,8 @@ ms.locfileid: "83399843"
 <!-- markdownlint-disable MD033 -->
 <br>
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 案例 | 描述 |
+|----------|-------------|
 | [我們需要瞭解雲端採用方面的基本概念](./cloud-concepts.md) | 如果您的旅程牽涉到雲端，有幾個要瞭解的初步概念，以及要做的決策。 |
 | [我們想要將現有的工作負載遷移至雲端](./migrate.md)                   | 如果您的主要焦點是將內部部署工作負載遷移至雲端，這份指南是很好的起點。 |
 | [我們想要在雲端中建立新的產品和服務](./innovate.md)             | 本指南可協助您準備將創新解決方案部署至雲端。                                       |

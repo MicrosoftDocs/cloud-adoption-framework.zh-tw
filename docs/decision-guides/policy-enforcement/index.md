@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 75d89b4b626a8e31bdaf6c0022f4bc98dd4161d6
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 7d6acf087cc378edceedc9c6ce3d7992c327c2e1
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196110"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88277647"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -44,13 +44,13 @@ ms.locfileid: "88196110"
 
 除了仰賴 Azure 平台提供的原則強制執行機制，還要確保能夠確認雲端式應用程式和服務皆符合組織原則。 這包括實作在資源變得不相容時，向負責的合作對象發出警示的通知功能。 有效地[記錄和報告](../logging-and-reporting/index.md)您雲端工作負載的合規性狀態，是公司原則強制執行策略中的關鍵部分。
 
-隨著您的雲端資產成長，額外工具 (例如 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center)) 可以提供整合的安全性和威脅偵測，協助套用集中式原則管理和警示您的內部部署和雲端資產。
+隨著您的雲端資產成長，額外工具 (例如 [Azure 資訊安全中心](/azure/security-center)) 可以提供整合的安全性和威脅偵測，協助套用集中式原則管理和警示您的內部部署和雲端資產。
 
 ## <a name="policy-enforcement"></a>強制執行原則
 
 在 Azure 中，您可以在管理群組、訂用帳戶或資源群組層級套用組態設定和資源建立規則，協助確保原則對齊。
 
-[Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)是 Azure 服務，用於建立、指派和管理原則。 這些原則會對您的資源強制執行不同的規則和效果，讓這些資源能符合公司標準和服務等級協定的規範。 Azure 原則會評估您的資源是否符合指派的原則。 例如，您可能要限制環境中虛擬機器的 SKU 大小。 實作對應原則之後，新資源和現有資源都會針對合規性進行評估。 使用正確的原則，現有的資源就可以合規。
+[Azure 原則](/azure/governance/policy/overview)是 Azure 服務，用於建立、指派和管理原則。 這些原則會對您的資源強制執行不同的規則和效果，讓這些資源能符合公司標準和服務等級協定的規範。 Azure 原則會評估您的資源是否符合指派的原則。 例如，您可能要限制環境中虛擬機器的 SKU 大小。 實作對應原則之後，新資源和現有資源都會針對合規性進行評估。 使用正確的原則，現有的資源就可以合規。
 
 ## <a name="cross-organization-policy"></a>跨組織原則
 
@@ -60,7 +60,7 @@ ms.locfileid: "88196110"
 
 ## <a name="automated-enforcement"></a>自動化強制執行
 
-雖然標準化部署範本在較小規模中有效率，而 [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)可進行 Azure 解決方案的大規模標準化佈建和部署協調流程。 跨多個訂用帳戶的工作負載可以針對任何已建立的資源，以一致的原則設定進行部署。
+雖然標準化部署範本在較小規模中有效率，而 [Azure 藍圖](/azure/governance/blueprints/overview)可進行 Azure 解決方案的大規模標準化佈建和部署協調流程。 跨多個訂用帳戶的工作負載可以針對任何已建立的資源，以一致的原則設定進行部署。
 
 針對整合雲端與內部部署資源的 IT 環境，您需要使用記錄和報告系統來提供混合式監視功能。 您的第三方或自訂作業監視系統可能會提供額外的原則強制執行功能。 針對更大或更成熟的雲端資產，請考量如何最佳地整合這些系統與雲端資產。
 
