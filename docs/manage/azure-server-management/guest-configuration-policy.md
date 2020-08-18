@@ -1,22 +1,22 @@
 ---
 title: 來賓設定原則
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何使用 Azure 原則來賓設定延伸模組來審查 Azure VM 中的設定。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何使用 Azure 原則的來賓設定延伸模組來審核 Azure VM 中的設定。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 938934e1a45d8f8abebede6cca8dcd9987cfb7e0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: cadcb876243565240a60b229c4a1397f32f88b7c
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861458"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284090"
 ---
 # <a name="guest-configuration-policy"></a>來賓設定原則
 
-您可以使用 [Azure 原則[來賓](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)設定] 延伸模組來審查虛擬機器中的設定。 目前只有在 Azure Vm 上才支援來賓設定。
+您可以使用 Azure 原則的 [來賓](/azure/governance/policy/concepts/guest-configuration) 設定延伸模組來審核虛擬機器中的設定。 目前只有 Azure Vm 支援來賓設定。
 
 若要尋找來賓設定原則的清單，請在 Azure 原則入口網站頁面上搜尋「來賓設定」。 或在 PowerShell 視窗中執行此 Cmdlet 來尋找清單：
 
@@ -25,7 +25,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 ```
 
 > [!NOTE]
-> 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新支援的原則，並評估其是否有用。
+> 來賓設定功能會定期更新，以支援其他原則集。 定期檢查是否有新的支援原則，並評估是否有用。
 
 <!-- TODOBACKLOG: Update these links when available. 
 
@@ -38,12 +38,12 @@ By default, we recommend that you enable the following policies:
 
 ## <a name="deployment"></a>部署
 
-使用下列範例 PowerShell 腳本，將這些原則部署到：
+使用下列範例 PowerShell 腳本，將這些原則部署至：
 
-- 確認 Windows 和 Linux 電腦中的密碼安全性設定已正確設定。
-- 確認 Windows Vm 上的憑證不會接近到期日。
+- 確認已正確設定 Windows 和 Linux 電腦中的密碼安全性設定。
+- 確認憑證在 Windows Vm 上未接近到期。
 
- 執行此腳本之前，請使用[disconnect-azaccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，必須提供您想要套用原則的訂用帳戶名稱。
+ 執行此腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，您必須提供要套用原則的訂用帳戶名稱。
 
 ```powershell
 
@@ -68,7 +68,7 @@ By default, we recommend that you enable the following policies:
 
 ## <a name="next-steps"></a>後續步驟
 
-瞭解如何針對重要的檔案、服務、軟體和登錄變更[啟用變更追蹤和警示](./enable-tracking-alerting.md)。
+瞭解如何針對重要的檔案、服務、軟體和登錄變更 [啟用變更追蹤和警示](./enable-tracking-alerting.md) 。
 
 > [!div class="nextstepaction"]
 > [啟用重大變更的追蹤和警示](./enable-tracking-alerting.md)

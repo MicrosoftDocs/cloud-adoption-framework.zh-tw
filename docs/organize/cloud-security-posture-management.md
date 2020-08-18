@@ -7,48 +7,48 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 666e74e440909901b51c9cfc580c879f3a85db75
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7ded7459ecf76836b379b3482ddaba9befb5faa5
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755347"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284872"
 ---
 <!--docsTest:ignore TVM -->
 
 # <a name="function-of-cloud-security-posture-management"></a>雲端安全性狀態管理的功能
 
-針對「狀態管理」工作的雲端安全性小組，主要目標是要藉由專注于中斷潛在攻擊者的投資報酬率（ROI），持續報告並改善組織的安全性狀態。
+進行狀態管理之雲端安全性小組的主要目標是要持續回報並改善組織的安全性狀態，方法是將焦點放在中斷潛在的攻擊者投資報酬率)  (ROI。
 
 ## <a name="modernization"></a>現代化
 
-「狀態管理」是一組新功能，可實現先前在雲端出現之前，很難、不可能或非常手動的一些想法或嘗試。 某些狀態管理元素可以追蹤為零信任、deperimeterization、連續監視，以及依專家顧問公司的手動風險評分。
+狀態管理是一組新的功能，可在雲端出現之前，發現許多先前被想像或嘗試過的概念。 某些狀態管理元素可追蹤為零的信任、deperimeterization、連續監視，以及由專家顧問公司的手動風險評分。
 
-「狀態管理」引進了結構化的方法，使用下列方式：
+狀態管理會使用下列方式，為您介紹結構化方法：
 
-- **零信任型存取控制：** 這會在存取控制決策期間考慮作用中的威脅等級。
+- 以**零信任為基礎的存取控制：** 這會在存取控制決策期間考慮使用中的威脅層級。
 - **即時風險評分：** 以提供最高風險的可見度。
-- **威脅與弱點管理（TVM）** ，以全面瞭解組織的受攻擊面和風險，並將其整合到作業和工程決策制定。
-- **探索共用風險：** 瞭解獲批准和待批准雲端服務上企業智慧財產的資料暴露。
-- **雲端安全性狀態管理**，以利用雲端檢測來監視和設定安全性改善的優先順序。
-- **技術原則：** 套用護欄以審查並強制執行組織標準和原則至技術系統。 請參閱 Azure 原則和[Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)。
-- **威脅**模型化系統和架構，以及特定的應用程式。
+- **威脅和弱點管理 (TVM) ** 來建立組織攻擊面和風險的整體觀點，並將其整合至營運和工程決策制定。
+- **探索共用風險：** 瞭解獲批准和待批准雲端服務上企業智慧財產的資料暴露情形。
+- **雲端安全性狀態管理** 可利用雲端檢測來監視和優先處理安全性改進。
+- **技術原則：** 將護欄套用至對技術系統進行審核並強制執行組織的標準和原則。 請參閱 Azure 原則和 [Azure 藍圖](/azure/governance/blueprints/overview)。
+- **威脅** 模型化系統和架構，以及特定的應用程式。
 
-**新興專業領域：** 安全性狀態管理會干擾安全性組織的許多標準，並使用這些新功能，而且可能會在角色之間轉移責任或建立新的角色。
+**新興專業領域：** 安全性狀態管理會利用這些新功能，以狀況良好的方式中斷安全性組織的許多規範，且可能會在角色之間轉移責任或建立新的角色。
 
-## <a name="team-composition-and-key-relationships"></a>小組撰寫和按鍵關聯性
+## <a name="team-composition-and-key-relationships"></a>小組撰寫和索引鍵關聯性
 
-安全性狀態管理是不斷演進的功能，因此它可能是專用的小組，或由其他小組提供。
+安全性狀態管理是一項不斷演進的功能，因此它可能是專屬的團隊，也可能由其他小組提供。
 
-安全性狀態管理應該與下列小組密切合作：
+安全性狀態管理應與下列團隊密切合作：
 
 - 威脅情報小組
 - 資訊科技
-- 合規性與風險管理小組
-- 商務領導人和 Sme
+- 合規性和風險管理小組
+- 企業領導人和 Sme
 - 安全性架構和作業
-- 審核小組
+- Audit 小組
 
 ## <a name="next-steps"></a>後續步驟
 
-回顧雲端安全性[事件準備](./cloud-security-incident-preparation.md)的功能。
+複習雲端安全性 [事件準備](./cloud-security-incident-preparation.md)的功能。

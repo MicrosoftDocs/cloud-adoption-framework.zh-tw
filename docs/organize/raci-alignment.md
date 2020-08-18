@@ -1,6 +1,6 @@
 ---
-title: 協調小組間的責任
-description: 藉由開發跨小組的矩陣來識別小組間的責任，以找出 RACI) 方的負責、參與、諮詢和通知 (。
+title: 協調小組間的職責
+description: 瞭解如何藉由開發跨小組的矩陣，識別負責任、負責任、諮詢及告知 (RACI) 合作物件，以協調各小組的責任。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,99 +8,99 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 81da3a5deba22b37ad5eb078fff50d84399e1f92
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 8f62f44bf872d35c08e7cabeee823d46a6bc34fe
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194918"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88285246"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
-藉由開發跨小組的矩陣來識別小組間的責任，以找出 RACI) 方的負責、參與、 _諮詢和通知 (_ 。 本文提供 [建立小組結構](./organization-structures.md)中所述之組織結構的範例 RACI 矩陣：
+瞭解如何藉由開發跨小組的矩陣，識別 _負責任、負責任、諮詢及告知 (RACI) _ 合作物件，以協調各小組的責任。 本文提供「 [建立小組結構](./organization-structures.md)」中所述之組織結構的範例 RACI 矩陣：
 
 - [僅限雲端採用小組](#cloud-adoption-team-only)
-- [MVP 最佳做法](#best-practice-minimum-viable-product-mvp)
+- [MVP 最佳作法](#best-practice-minimum-viable-product-mvp)
 - [中央 IT 小組](#central-it-team)
-- [策略性對齊](#strategic-alignment)
-- [操作對齊](#operational-alignment)
-- [卓越 (CCoE) 的雲端中心 ](#cloud-center-of-excellence-ccoe)
+- [策略性調整](#strategic-alignment)
+- [營運一致性](#operational-alignment)
+- [卓越的雲端中心 (CCoE) ](#cloud-center-of-excellence-ccoe)
 
-若要追蹤經過一段時間的組織結構決策，請下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。
+若要追蹤一段時間的組織結構決策，請下載並修改 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)。
 
-本文中的範例會指定這些 RACI 結構：
+本文中的範例會指定下列 RACI 結構：
 
-- _負責_函式的一個小組。
-- _負責_結果的小組。
-- 在規劃期間應 _諮詢_ 的小組。
-- 工作完成時應 _通知_ 的小組。
+- _負責_某項功能的團隊。
+- _負責_結果的團隊。
+- 規劃期間應 _諮詢_ 的團隊。
+- 當工作完成時應 _通知_ 的團隊。
 
-除了第一個) 外，每個資料表的最後一個資料列 (包含最符合之雲端功能的連結，以取得其他資訊。
+除了第一個) 之外，每個資料表 (的最後一個資料列會包含最適合的雲端功能連結，以取得其他資訊。
 
 ## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
 
-|                     | 解決方案交付 | 業務配合 | 變更管理 | 解決方案作業 | 控管  | 平臺成熟度 | 平台作業 | 平臺自動化 |
+| 小組 | 解決方案傳遞 | 業務配合 | 變更管理 | 解決方案作業 | 控管  | 平臺成熟度 | 平台作業 | 平臺自動化 |
 | ------------------- | ----------------- | ------------------ | ----------------- | ------------------- | ----------- | ----------------- | ------------------- | ------------------- |
-| 雲端採用小組 | 負       | 負        | 負       | 負         | 負 | 負       | 負         | 負         |
+| 雲端採用小組 | 負責       | 負責        | 負責       | 負責         | 負責 | 負責       | 負責         | 負責         |
 
-## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法：最基本的可行產品 (MVP) 
+## <a name="best-practice-minimum-viable-product-mvp"></a>最佳做法： MVP) 的最小可行產品 (
 
-|                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
+| 小組 | 解決方案傳遞                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 雲端採用小組      | 負                           | 負                           | 負                           | 負                               | 參考                                                                         | 參考                                                                     | 參考                                                                     | 獲得                                                                          |
-| 雲端治理小組    | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 負                                                                       | 負                                                                   | 負                                                                   | 負                                                                       |
+| 雲端採用小組      | 負責                           | 負責                           | 負責                           | 負責                               | 諮詢                                                                         | 諮詢                                                                     | 諮詢                                                                     | 通知                                                                          |
+| 雲端治理小組    | 諮詢                             | 通知                              | 通知                              | 通知                                  | 負責                                                                       | 負責                                                                   | 負責                                                                   | 負責                                                                       |
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md)  - [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
+| 調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md)  - [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
 
 ## <a name="central-it-team"></a>中央 IT 小組
 
-|                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                | 平臺成熟度             | 平台作業           | 平臺自動化           |
+| 小組 | 解決方案傳遞                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                | 平臺成熟度             | 平台作業           | 平臺自動化           |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | ----------------------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
-| 雲端採用小組      | 負                           | 負                           | 負責                           | 負責                               | 獲得                                  | 獲得                      | 獲得                      | 獲得                      |
-| 雲端治理小組    | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 負                               | 參考                     | 負責                   | 獲得                      |
-| 中央 IT 小組               | 參考                             | 獲得                              | 負                           | 負                               | 負責                               | 負                   | 負                   | 負                   |
+| 雲端採用小組      | 負責                           | 負責                           | 負責                           | 負責                               | 通知                                  | 通知                      | 通知                      | 通知                      |
+| 雲端治理小組    | 諮詢                             | 通知                              | 通知                              | 通知                                  | 負責                               | 諮詢                     | 負責                   | 通知                      |
+| 中央 IT 小組               | 諮詢                             | 通知                              | 負責                           | 負責                               | 負責                               | 負責                   | 負責                   | 負責                   |
 |                          |                                       |                                       |                                       |                                           |                                           |                               |                               |                               |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [雲端治理](./cloud-governance.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) |
+| 調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [雲端治理](./cloud-governance.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) | [中央 IT 小組](./central-it.md) |
 
-## <a name="strategic-alignment"></a>策略性對齊
+## <a name="strategic-alignment"></a>策略性調整
 
-|                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
+| 小組 | 解決方案傳遞                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 雲端策略小組      | 參考                             | 負                           | 負                           | 參考                                 | 參考                                                                         | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| 雲端採用小組      | 負                           | 參考                             | 負責                           | 負                               | 獲得                                                                          | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| CCoE 模型 RACI          | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 負                                                                       | 負                                                                   | 負                                                                   | 負                                                                       |
+| 雲端策略小組      | 諮詢                             | 負責                           | 負責                           | 諮詢                                 | 諮詢                                                                         | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| 雲端採用小組      | 負責                           | 諮詢                             | 負責                           | 負責                               | 通知                                                                          | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| CCoE 模型 RACI          | 諮詢                             | 通知                              | 通知                              | 通知                                  | 負責                                                                       | 負責                                                                   | 負責                                                                   | 負責                                                                       |
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
+| 調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
 
-## <a name="operational-alignment"></a>操作對齊
+## <a name="operational-alignment"></a>營運一致性
 
-|                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
+| 小組 | 解決方案傳遞                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 雲端策略小組      | 參考                             | 負                           | 負                           | 參考                                 | 參考                                                                         | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| 雲端採用小組      | 負                           | 參考                             | 負責                           | 參考                                 | 獲得                                                                          | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| 雲端營運小組    | 參考                             | 參考                             | 負責                           | 負                               | 參考                                                                         | 獲得                                                                      | 負                                                                   | 參考                                                                         |
-| CCoE 模型 RACI          | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 負                                                                       | 負                                                                   | 負責                                                                   | 負                                                                       |
+| 雲端策略小組      | 諮詢                             | 負責                           | 負責                           | 諮詢                                 | 諮詢                                                                         | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| 雲端採用小組      | 負責                           | 諮詢                             | 負責                           | 諮詢                                 | 通知                                                                          | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| 雲端營運小組    | 諮詢                             | 諮詢                             | 負責                           | 負責                               | 諮詢                                                                         | 通知                                                                      | 負責                                                                   | 諮詢                                                                         |
+| CCoE 模型 RACI          | 諮詢                             | 通知                              | 通知                              | 通知                                  | 負責                                                                       | 負責                                                                   | 負責                                                                   | 負責                                                                       |
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
+| 調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
 
-## <a name="cloud-center-of-excellence-ccoe"></a>卓越 (CCoE) 的雲端中心
+## <a name="cloud-center-of-excellence-ccoe"></a>卓越的雲端中心 (CCoE) 
 
-|                          | 解決方案交付                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
+| 小組 | 解決方案傳遞                     | 業務配合                    | 變更管理                     | 解決方案作業                       | 控管                                                                        | 平臺成熟度                                                             | 平台作業                                                           | 平臺自動化                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 雲端策略小組      | 參考                             | 負                           | 負                           | 參考                                 | 參考                                                                         | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| 雲端採用小組      | 負                           | 參考                             | 負責                           | 參考                                 | 獲得                                                                          | 獲得                                                                      | 獲得                                                                      | 獲得                                                                          |
-| 雲端營運小組    | 參考                             | 參考                             | 負責                           | 負                               | 參考                                                                         | 獲得                                                                      | 負                                                                   | 參考                                                                         |
-| 雲端治理小組    | 參考                             | 獲得                              | 獲得                              | 參考                                 | 負                                                                       | 參考                                                                     | 負責                                                                   | 獲得                                                                          |
-| 雲端平臺小組      | 參考                             | 獲得                              | 獲得                              | 參考                                 | 參考                                                                         | 負                                                                   | 負責                                                                   | 負責                                                                       |
-| 雲端自動化團隊    | 參考                             | 獲得                              | 獲得                              | 獲得                                  | 參考                                                                         | 負責                                                                   | 負責                                                                   | 負                                                                       |
+| 雲端策略小組      | 諮詢                             | 負責                           | 負責                           | 諮詢                                 | 諮詢                                                                         | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| 雲端採用小組      | 負責                           | 諮詢                             | 負責                           | 諮詢                                 | 通知                                                                          | 通知                                                                      | 通知                                                                      | 通知                                                                          |
+| 雲端營運小組    | 諮詢                             | 諮詢                             | 負責                           | 負責                               | 諮詢                                                                         | 通知                                                                      | 負責                                                                   | 諮詢                                                                         |
+| 雲端治理小組    | 諮詢                             | 通知                              | 通知                              | 諮詢                                 | 負責                                                                       | 諮詢                                                                     | 負責                                                                   | 通知                                                                          |
+| 雲端平臺小組      | 諮詢                             | 通知                              | 通知                              | 諮詢                                 | 諮詢                                                                         | 負責                                                                   | 負責                                                                   | 負責                                                                       |
+| 雲端自動化小組    | 諮詢                             | 通知                              | 通知                              | 通知                                  | 諮詢                                                                         | 負責                                                                   | 負責                                                                   | 負責                                                                       |
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
-| 已調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
+| 調整的雲端功能 | [雲端採用](./cloud-adoption.md) | [雲端策略](./cloud-strategy.md) | [雲端策略](./cloud-strategy.md) | [雲端作業](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端治理](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端平臺](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) 和 [雲端自動化](./cloud-automation.md) |
 
 ## <a name="next-steps"></a>後續步驟
 
-若要追蹤一段時間內有關組織結構的決策，請下載並修改 RACI 範本。 從本文的 RACI 矩陣複製並修改最緊密對齊的範例。
+若要追蹤一段時間的組織結構決策，請下載並修改 RACI 範本。 從本文的 RACI 矩陣複製並修改最接近對齊的範例。
 
 > [!div class="nextstepaction"]
 > [下載 RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)

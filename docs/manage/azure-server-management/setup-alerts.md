@@ -1,51 +1,51 @@
 ---
 title: 設定基本警示
-description: 瞭解如何使用 Azure 伺服器管理服務來設定警示和通知，以協助您的 IT 小組留意任何問題。
+description: 瞭解如何使用 Azure 伺服器管理服務來設定警示和通知，以協助讓您的 IT 小組知道任何問題。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ecc0dd8b3a91461d5c5d1dd1ce4c062646d974fb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1a4724de736fef0e0f71b326898a0c8170359ebb
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430507"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284005"
 ---
 # <a name="set-up-basic-alerts"></a>設定基本警示
 
-管理資源的重要部分是在發生問題時收到通知。 警示會根據計量、記錄或服務健康狀態問題的觸發程式，主動通知您重大狀況。 在將 Azure 伺服器管理服務上線時，您可以設定警示和通知，以協助您的 IT 小組留意任何問題。
+管理資源的重要部分是在發生問題時收到通知。 警示會根據計量、記錄或服務健康情況問題的觸發程式，主動通知您重大情況。 在上架 Azure 伺服器管理服務時，您可以設定警示和通知，讓您的 IT 小組知道任何問題。
 
 ## <a name="azure-monitor-alerts"></a>Azure 監視器警示
 
-Azure 監視器提供[警示](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)功能，在發生問題時透過電子郵件或訊息通知您。 這些功能是以常見的資料監視平臺為基礎，其中包含您的伺服器和其他資源所產生的記錄和計量。 藉由在 Azure 監視器中使用一組常用的工具，您可以分析結合多個資源的資料，並使用它來觸發警示。 這些觸發程式可以包括：
+Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) 功能，可在發生錯誤時透過電子郵件或訊息通知您。 這些功能是以常見的資料監視平臺為基礎，其中包含伺服器和其他資源所產生的記錄和計量。 藉由使用 Azure 監視器中的一組通用工具，您可以分析結合多個資源的資料，並使用它來觸發警示。 這些觸發程式可以包括：
 
 - 度量值。
 - 記錄搜尋查詢。
 - 活動記錄事件。
-- 基礎 Azure 平臺的健全狀況。
-- 測試網站可用性。
+- 基礎 Azure 平臺的健康情況。
+- 測試網站的可用性。
 
-如需此服務所收集監視資料來源的詳細描述，請參閱[Azure 監視器的資料來源清單](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources)。
+如需此服務所收集的監視資料來源的詳細描述，請參閱 [Azure 監視器資料來源清單](/azure/azure-monitor/platform/data-sources) 。
 
-如需使用 Azure 入口網站手動建立和管理警示的詳細資訊，請參閱[Azure 監視器檔](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric)。
+如需使用 Azure 入口網站手動建立及管理警示的詳細資訊，請參閱 [Azure 監視器檔](/azure/azure-monitor/platform/alerts-metric)。
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>自動部署建議的警示
 
-在本指南中，我們建議您建立一組15個警示以進行基本的基礎結構監視。 在[Azure 警示工具組 GitHub 存放庫](https://github.com/Microsoft/manageability-toolkits)中尋找部署腳本。
+在本指南中，我們建議您建立一組15個警示來監視基本的基礎結構。 在 [Azure 警示工具組 GitHub 存放庫](https://github.com/Microsoft/manageability-toolkits)中尋找部署腳本。
 
-此套件會建立下列警示：
+此封裝會建立下列警示：
 
 - 磁碟空間不足
 - 可用記憶體不足
 - 高 CPU 使用率
-- 非預期的關機
-- 損毀的檔案系統
+- 未預期的關機
+- 檔案系統損毀
 - 常見的硬體故障
 
-此套件使用 HP 伺服器硬體做為範例。 變更相關聯設定檔中的設定，以反映您的 OEM 硬體。 您也可以將更多效能計數器新增至設定檔。 若要部署封裝，請執行 New-CoreAlerts 檔案。
+套件會使用 HP server 硬體作為範例。 變更相關聯設定檔中的設定，以反映您的 OEM 硬體。 您也可以在設定檔中新增更多效能計數器。 若要部署封裝，請執行 New-CoreAlerts.ps1 檔。
 
 ## <a name="next-steps"></a>後續步驟
 

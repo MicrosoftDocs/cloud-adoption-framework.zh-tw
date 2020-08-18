@@ -1,36 +1,36 @@
 ---
-title: 在 VM 上啟用伺服器管理服務
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在單一 VM 上啟用 Azure 伺服器管理服務。
+title: 啟用 VM 上的伺服器管理服務
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何在單一 VM 上啟用 Azure 伺服器管理服務。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38285bfe7ebc713d186e6e952b119637161d12ce
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4881db11ddb31d5feab2fc31227b44fce44f8ad3
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426529"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284107"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>在單一 VM 上啟用伺服器管理服務以進行評估
 
 瞭解如何在單一 VM 上啟用伺服器管理服務以進行評估。
 
 > [!NOTE]
-> 在 VM 上執行 Azure 管理服務之前，請先建立必要的[Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account)。
+> 在 VM 上執行 Azure 管理服務之前，請先建立必要的 [Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account) 。
 
-將 Azure 伺服器管理服務上架到 Azure 入口網站中的個別虛擬機器是很簡單的。 您可以先熟悉這些服務，再將它們上架。 當您選取 VM 實例時，[管理工具和服務](./tools-services.md)清單上的所有解決方案都會出現在 [**作業**] 或 [**監視**] 功能表上。 您選取解決方案，然後依照嚮導的指示來上架。
+您可以輕鬆地將 Azure 伺服器管理服務上架到 Azure 入口網站中的個別虛擬機器。 您可以先熟悉這些服務，再將它們上架。 當您選取 VM 實例時， [管理工具和服務](./tools-services.md) 清單上的所有解決方案都會出現在 [ **操作** ] 或 [ **監視** ] 功能表上。 您可以選取方案，並依照嚮導將其上架。
 
 ![Azure 入口網站中虛擬機器設定的螢幕擷取畫面](./media/onboarding-single-vm.png)
 
 ## <a name="related-resources"></a>相關資源
 
-如需如何將這些解決方案上架到個別 Vm 的詳細資訊，請參閱：
+如需有關如何將這些解決方案上架到個別 Vm 的詳細資訊，請參閱：
 
-- [從 Azure 虛擬機器上架更新管理、變更追蹤和清查解決方案](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-vm)
-- [將適用于 Vm 的 Azure 監視器上線](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-single-vm)
+- [從 Azure 虛擬機器上架更新管理、變更追蹤和清查解決方案](/azure/automation/automation-onboard-solutions-from-vm)
+- [將適用于 Vm 的 Azure 監視器上線](/azure/azure-monitor/insights/vminsights-enable-single-vm)
 
 ## <a name="next-steps"></a>後續步驟
 
