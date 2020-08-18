@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 65a3686a402681d76b5d91665eb00cb8bdd6e5c3
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 803cff3d9d269df81ae4c996f21bc2ef7430581e
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233693"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88280350"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 
@@ -23,12 +23,10 @@ ms.locfileid: "86233693"
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。 |
-| <br> ![2](../_images/icons/2.png) | <br> [基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。 |
-| <br> ![3](../_images/icons/3.png) | <br> [初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。                                |
-| <br> ![4](../_images/icons/4.png) | <br> [改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。 |
+1. [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。
+2. [基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。
+3. [初始治理基礎](./initial-foundation.md)：利用小型且易於實作的一組治理工具來開始您的治理之旅。 這個初始治理基礎稱為最簡可行產品 (MVP)。
+4. [改善初始治理基礎](./foundation-improvements.md)：在雲端採用方案的整個實作過程中，會反覆地新增治理控制項以解決有形的風險，以便您在最終狀態時解決有形的風險。
 
 ## <a name="objective-of-this-content"></a>此內容的目標
 

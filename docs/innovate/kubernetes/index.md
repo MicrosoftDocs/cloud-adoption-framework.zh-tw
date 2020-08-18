@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fc1a3ce4d0c6146d3b06d3fcb5acf34dbe387b0
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 377226674d3a07d479d7b8f3e9f8c72e0dfd763e
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448787"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284260"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -28,10 +28,8 @@ ms.locfileid: "86448787"
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| ![項目 1 圖示](../../_images/icons/1.png) | <br> [應用程式開發與部署](./application-development.md)：檢查應用程式開發的模式和實務、設定 CI/CD 管線，並實行網站可靠性工程 (SRE) 最佳作法。 |
-| ![項目 2 圖示](../../_images/icons/2.png) | <br> [叢集設計和作業](./cluster-design-operations.md)：識別叢集設定和網路設計。 將基礎結構佈建自動化，以確保未來的可擴縮性。 藉由規劃商務持續性和災害復原，來維持高可用性。 |
-| ![項目 3 圖示](../../_images/icons/3.png) | <br> [叢集和應用程式安全性](./cluster-application-security.md)：熟悉 Kubernetes 安全性基本功能。 請參閱叢集和應用程式安全性指引的安全設定。 |
+- [應用程式開發與部署](./application-development.md)：檢查應用程式開發的模式和實務、設定 CI/CD 管線，並實行網站可靠性工程 (SRE) 最佳作法。
+- [叢集設計和作業](./cluster-design-operations.md)：識別叢集設定和網路設計。 將基礎結構佈建自動化，以確保未來的可擴縮性。 藉由規劃商務持續性和災害復原，來維持高可用性。
+- [叢集和應用程式安全性](./cluster-application-security.md)：熟悉 Kubernetes 安全性基本功能。 請參閱叢集和應用程式安全性指引的安全設定。
 
 <!-- markdownlint-enable MD033 -->
