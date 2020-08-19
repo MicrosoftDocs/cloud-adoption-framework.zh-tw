@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3cf2d02139061841d188271c61011b2439ae14db
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: b30aa8ab692f9cb88302075d42d70af405c4dd94
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234016"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572267"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -49,12 +49,12 @@ ms.locfileid: "86234016"
 
 | 專業領域  | Process  | 工具 | 潛在影響 | 深入了解 |
 |---|---|---|---|---|
-| 清查和可見性 | 服務變更追蹤 | Azure Resource Graph | 若能更加深入地了解 Azure 服務的變更，可能會有助於更快地偵測到負面影響或更快速地補救 | [Azure Resource Graph 的概觀](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
-| 清查和可見性 | IT 服務管理 (ITSM) 整合 | IT 服務管理連接器 | 自動化的 ITSM 連線能更快產生認知。 | [IT 服務管理連接器 (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| 清查和可見性 | 服務變更追蹤 | Azure Resource Graph | 若能更加深入地了解 Azure 服務的變更，可能會有助於更快地偵測到負面影響或更快速地補救 | [Azure Resource Graph 的概觀](/azure/governance/resource-graph/overview) |
+| 清查和可見性 | IT 服務管理 (ITSM) 整合 | IT 服務管理連接器 | 自動化的 ITSM 連線能更快產生認知。 | [IT 服務管理連接器 (ITSMC)](/azure/azure-monitor/platform/itsmc-overview) |
 | 作業合規性 | 作業自動化 | Azure 自動化 | 將作業合規性自動化，以更快、更精確地回應變更。 | 請參閱下列各節 |
 | 作業合規性 | 效能自動化 | Azure 自動化 | 透過效能預期自動執行作業合規性，以解決資源特有的調整或大小調整常見問題。 | 請參閱下列各節 |
-| 作業合規性 | 多重雲端作業 | Azure 自動化 Hybrid Runbook Worker | 將跨越多個雲端的作業自動化。 | [混合式 Runbook 背景工作概觀](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
-| 作業合規性 | 來賓自動化 |  期望狀態設定 (DSC) | 透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。 | [DSC 概觀](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| 作業合規性 | 多重雲端作業 | Azure 自動化 Hybrid Runbook Worker | 將跨越多個雲端的作業自動化。 | [混合式 Runbook 背景工作概觀](/azure/automation/automation-hybrid-runbook-worker) |
+| 作業合規性 | 來賓自動化 |  期望狀態設定 (DSC) | 透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。 | [DSC 概觀](/powershell/scripting/dsc/overview/overview) |
 | 保護和復原 | 安全性缺口通知 | Azure 資訊安全中心 | 擴大保護範圍，納入安全性缺口復原觸發程序。 | 請參閱下列各節 |
 
 ::: zone target="docs"
@@ -129,6 +129,6 @@ Azure 資訊安全中心提供兩個層級：免費和標準。 安全性建議�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 資訊安全中心文件](https://docs.microsoft.com/azure/security-center)。
+若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center)。
 
 ::: zone-end

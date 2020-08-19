@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: be3f5c774d91bf0e6e45a068311b35d35f328ba5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449008"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567881"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
@@ -36,7 +36,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 ::: zone target="docs"
 
-**移至 [Azure 資料目錄文件](https://docs.microsoft.com/azure/data-catalog)**
+**移至 [Azure 資料目錄文件](/azure/data-catalog)**
 
 ::: zone-end
 
@@ -74,7 +74,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 ::: zone target="docs"
 
-**移至 [Azure Data Share 文件](https://docs.microsoft.com/azure/data-share)**
+**移至 [Azure Data Share 文件](/azure/data-share)**
 
 ::: zone-end
 
@@ -112,7 +112,7 @@ Azure 時間序列深入解析的資料創新功能無限。 它可針對 IoT �
 
 ::: zone target="docs"
 
-**移至 [Azure 時間序列深入解析概觀](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-overview)**
+**移至 [Azure 時間序列深入解析概觀](/azure/time-series-insights/time-series-insights-update-overview)**
 
 ::: zone-end
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c54ae037cef0486f27a4a7fc441e643a1678dd03
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 0f4e8cc17d094efc490a16ea3f740435b97a20fe
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478560"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568085"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -100,25 +100,25 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 ### <a name="azure-devops"></a>Azure DevOps
 
-在您的創新旅途中，您最後會找到自己通往 DevOps 的道路。 Microsoft 早已擁有稱為 Team Foundation Server (TFS) 的內部部署產品。 在我們自己的創新旅途中，Microsoft 開發了 Azure DevOps，這是一項雲端式服務，可提供建置和發行工具來為您的發行支援許多語言和目的地。 如需詳細資訊，請參閱 [Azure DevOps](https://docs.microsoft.com/azure/devops)。
+在您的創新旅途中，您最後會找到自己通往 DevOps 的道路。 Microsoft 早已擁有稱為 Team Foundation Server (TFS) 的內部部署產品。 在我們自己的創新旅途中，Microsoft 開發了 Azure DevOps，這是一項雲端式服務，可提供建置和發行工具來為您的發行支援許多語言和目的地。 如需詳細資訊，請參閱 [Azure DevOps](/azure/devops)。
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供了這樣的地方，讓您可以在 iOS、Android、Windows 和 macOS 上測試應用程式，還提供監視平台，讓您得以輕鬆快速地運用 Azure Application Insights 來分析遙測資料。 如需詳細資訊，請參閱 [Visual Studio App Center](https://docs.microsoft.com/appcenter)。
+隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供了這樣的地方，讓您可以在 iOS、Android、Windows 和 macOS 上測試應用程式，還提供監視平台，讓您得以輕鬆快速地運用 Azure Application Insights 來分析遙測資料。 如需詳細資訊，請參閱 [Visual Studio App Center](/appcenter)。
 
-Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)。
+Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](/appcenter/push)。
 
 ### <a name="learn-more"></a>深入了解
 
-- [App Service 概觀](https://docs.microsoft.com/azure/app-service/overview)
-- [用於容器的 Web App：執行自訂容器](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
-- [Azure Functions 簡介](https://docs.microsoft.com/azure/azure-functions/functions-overview)
-- [適用於 .NET 和 .NET Core 開發人員的 Azure](https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet)
-- [Azure SDK for Python 文件](https://docs.microsoft.com/azure/python)
-- [適用於 Java 雲端開發人員的 Azure](https://docs.microsoft.com/azure/java/?view=azure-java-stable)
-- [在 Azure 中建立 PHP Web 應用程式](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-php)
-- [Azure SDK for JavaScript 文件](https://docs.microsoft.com/azure/javascript)
-- [Azure SDK for Go 文件](https://docs.microsoft.com/azure/go)
+- [App Service 概觀](/azure/app-service/overview)
+- [用於容器的 Web App：執行自訂容器](/azure/app-service/containers/quickstart-docker)
+- [Azure Functions 簡介](/azure/azure-functions/functions-overview)
+- [適用於 .NET 和 .NET Core 開發人員的 Azure](/dotnet/azure/?view=azure-dotnet)
+- [Azure SDK for Python 文件](/azure/python)
+- [適用於 Java 雲端開發人員的 Azure](/azure/java/?view=azure-java-stable)
+- [在 Azure 中建立 PHP Web 應用程式](/azure/app-service/app-service-web-get-started-php)
+- [Azure SDK for JavaScript 文件](/azure/javascript)
+- [Azure SDK for Go 文件](/azure/go)
 - [DevOps 解決方案](https://azure.microsoft.com/solutions/devops)
 
 ## <a name="create-cloud-native-applications"></a>[建立雲端原生應用程式](#tab/CloudNative)
@@ -175,9 +175,9 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 
 Azure Functions 會提供平台供您在雲端中執行小段程式碼或函式。 函式可讓您開始將程式碼重構成微服務架構。
 
-Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript 和 Python。 如需完整清單，請參閱 [Azure Functions 中支援的語言](https://docs.microsoft.com/azure/azure-functions/supported-languages)。
+Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript 和 Python。 如需完整清單，請參閱 [Azure Functions 中支援的語言](/azure/azure-functions/supported-languages)。
 
-函式的另一個優點是能由不同的動作和事件加以觸發，例如 HTTP 觸發程序、計時器觸發程序，以及來自其他 Azure 服務 (像是 Blob 儲存體、EventGrid 和 ServiceBus) 的觸發程序。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)。
+函式的另一個優點是能由不同的動作和事件加以觸發，例如 HTTP 觸發程序、計時器觸發程序，以及來自其他 Azure 服務 (像是 Blob 儲存體、EventGrid 和 ServiceBus) 的觸發程序。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
 
 #### <a name="action"></a>動作
 
@@ -273,7 +273,7 @@ Azure Red Hat OpenShift 提供靈活、自助的完全受控 OpenShift 叢集部
 
 #### <a name="learn-more"></a>深入了解
 
-- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
+- [Azure Red Hat OpenShift](/azure/openshift/intro-openshift)
 
 ## <a name="isolate-points-of-failure"></a>[隔離失敗點](#tab/IsolatePointsOfFailure)
 
@@ -347,6 +347,6 @@ Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接�
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
-- [流量管理員](https://docs.microsoft.com/azure/traffic-manager)
-- [Azure 內容傳遞網路](https://docs.microsoft.com/azure/cdn)
+- [Azure Front Door](/azure/frontdoor/front-door-overview)
+- [流量管理員](/azure/traffic-manager)
+- [Azure 內容傳遞網路](/azure/cdn)

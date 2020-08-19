@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 33dc9a27eb04462f7195f537d8e2d4edacc36ca9
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373096"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570448"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -72,7 +72,7 @@ _圖 1：此圖表顯示 Azure Migrate 中評估的成本詳細資料檢視。_
 
 ### <a name="additional-resources"></a>其他資源
 
-- [使用 Azure Migrate 設定和檢閱評估](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- [使用 Azure Migrate 設定和檢閱評估](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，請參閱[成本管理專業指導](../../govern/cost-management/index.md)和[成本管理專業領域改善](../../govern/guides/complex/cost-management-improvement.md)。
 
 ## <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[在移轉期間和之後估計和最佳化 VM 成本](#tab/EstimateOptimize)
@@ -107,8 +107,8 @@ Azure 成本管理和計費可以提供更全面的消費習慣檢視，包括�
 ### <a name="additional-resources"></a>其他資源
 
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，請參閱[成本管理專業領域](../../govern/cost-management/index.md)，和[成本管理專業領域改善](../../govern/guides/complex/cost-management-improvement.md)。
-- 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
-- 如需 Azure 成本管理和計費的詳細資訊，請參閱[了解和使用範圍](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)。
+- 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](/azure/advisor/advisor-cost-recommendations)。
+- 如需 Azure 成本管理和計費的詳細資訊，請參閱[了解和使用範圍](/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[將成本最佳化的提示和秘訣](#tab/TipsTricks)
 
@@ -132,7 +132,7 @@ Azure 成本管理和計費可以提供更全面的消費習慣檢視，包括�
 
 ### <a name="azure-reservations"></a>Azure 保留
 
-[Azure 保留](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations)可讓您預付一年或三年期的虛擬機器或 SQL Database 計算容量。 預付費用可讓您在所使用的資源上取得折扣。 保留可大幅降低虛擬機器或 SQL Database 的計算成本，透過預付一年或三年期的承諾用量費用，可節省高達隨用隨付價格的 72%。 保留會提供計費折扣，且不會影響虛擬機器或 SQL Database 的執行階段狀態。
+[Azure 保留](/azure/cost-management-billing/reservations/save-compute-costs-reservations)可讓您預付一年或三年期的虛擬機器或 SQL Database 計算容量。 預付費用可讓您在所使用的資源上取得折扣。 保留可大幅降低虛擬機器或 SQL Database 的計算成本，透過預付一年或三年期的承諾用量費用，可節省高達隨用隨付價格的 72%。 保留會提供計費折扣，且不會影響虛擬機器或 SQL Database 的執行階段狀態。
 
 ### <a name="use-azure-hybrid-benefit"></a>使用 Azure Hybrid Benefit
 
@@ -140,7 +140,7 @@ Azure 成本管理和計費可以提供更全面的消費習慣檢視，包括�
 
 ### <a name="low-priority-vms-with-batch"></a>以低優先順序的 VM 搭配 Batch
 
-針對較低優先順序的背景程序，Batch 提供了用來管理背景服務 VM 和降低成本的方式。 不過，在選擇此折扣選項之前，請務必先了解[以低優先順序的 VM 搭配 Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) 的效能影響。
+針對較低優先順序的背景程序，Batch 提供了用來管理背景服務 VM 和降低成本的方式。 不過，在選擇此折扣選項之前，請務必先了解[以低優先順序的 VM 搭配 Batch](/azure/batch/batch-low-pri-vms) 的效能影響。
 
 ### <a name="additional-resources"></a>其他資源
 

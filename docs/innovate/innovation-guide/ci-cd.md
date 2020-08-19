@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a0ce99165ab62fbf40e36feaf9343f39f984485
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6341f2e227b24416000479066e63a5ebf136927c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449028"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568068"
 ---
 # <a name="empower-adoption"></a>實現採用
 
@@ -61,7 +61,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone target="docs"
 
-**移至 [Azure DevOps 文件](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
+**移至 [Azure DevOps 文件](/azure/devops/user-guide/?view=azure-devops)**
 
 ::: zone-end
 
@@ -101,7 +101,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 ### <a name="learn-more"></a>深入了解
 
 - [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
-- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
+- [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
 
@@ -135,8 +135,8 @@ LiveOps 也有助於讓資料變得人性化。 LiveOps 方法會讓資料變得
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) 是適用於即時遊戲的完整後端平台，也是領先的 LiveOps 應用程式平台範例。 Azure PlayFab 可讓您持續監視程式碼、取得即時分析，以及發行即時更新來將應用程式最佳化並增加營收。 PlayFab 的目標是要為遊戲提供智慧型雲端，讓開發人員有更好的能力來與玩家互動、留住玩家，並從他們身上創造營收。
+[Azure PlayFab](/gaming/playfab/what-is-playfab) 是適用於即時遊戲的完整後端平台，也是領先的 LiveOps 應用程式平台範例。 Azure PlayFab 可讓您持續監視程式碼、取得即時分析，以及發行即時更新來將應用程式最佳化並增加營收。 PlayFab 的目標是要為遊戲提供智慧型雲端，讓開發人員有更好的能力來與玩家互動、留住玩家，並從他們身上創造營收。
 
 PlayFab 提供差異化、利潤更高的 LiveOps 工具和服務，以提高獲利並延長遊戲壽命。 PlayFab 完全不受裝置和平台限制，而且可以輕易地與社交識別提供者 (例如 Facebook) 或居中進行商務協調的商店平台 (Steam) 整合，並與 iOS、Android、Xbox 和 PlayStation 等裝置平台整合。 Azure 資料資產可讓 PlayFab 提供智慧型服務，以協助我們的客戶做出更好的遊戲和更聰明的決策、吸引並留住玩家，以及更快速地執行更多實驗和反覆執行來加快學習速度。
 
-**移至 [Azure PlayFab 文件](https://docs.microsoft.com/gaming/playfab)**
+**移至 [Azure PlayFab 文件](/gaming/playfab)**

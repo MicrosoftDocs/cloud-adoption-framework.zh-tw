@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 15c0b4f654607e2e150d547c52edd56e95c5fe89
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373045"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570499"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
@@ -63,8 +63,8 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 #### <a name="learn-more"></a>深入了解
 
-- [Azure Migrate 概觀](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
-- [將實體或虛擬伺服器遷移至 Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate 概觀](/azure/migrate/migrate-services-overview)
+- [將實體或虛擬伺服器遷移至 Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure 入口網站中的 Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -73,22 +73,22 @@ Azure Migrate 會評估要移轉至 Azure 的內部部署基礎結構、應用�
 
 服務對應會自動在 Windows 及 Linux 系統上探索應用程式元件，並對應服務之間的通訊。 您可以藉由服務對應，將伺服器視為提供重要服務的互連系統，藉此來檢視伺服器。 不需要進行任何設定，只要安裝了代理程式，服務對應就會顯示橫跨任何 TCP 連線架構的伺服器、處理序、輸入和輸出連線的延遲，和連接埠之間的連線。
 
-Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 如需這項整合的完整詳細資料，請參閱[相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)。 如果您使用 Azure Migrate 服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
+Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性。 如需這項整合的完整詳細資料，請參閱[相依性視覺效果](/azure/migrate/concepts-dependency-visualization)。 如果您使用 Azure Migrate 服務，則不需要進行額外步驟就能設定並取得服務對應的好處。 如果您想要針對其他用途或專案使用服務對應，我們提供了下列指示供您參考。
 
 #### <a name="enable-dependency-visualization-using-service-map"></a>使用服務對應來啟用相依性視覺效果
 
 若要使用相依性視覺效果，請在待分析的每個內部部署機器上，下載及安裝代理程式。
 
-- 必須在每個機器上安裝 [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows)。
-- 必須在每部機器上安裝 [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
+- 必須在每個機器上安裝 [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows)。
+- 必須在每部機器上安裝 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
 - 此外，如果您有無法連線至網際網路的機器，請在這些機器上下載並安裝 Log Analytics 閘道。
 
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="learn-more"></a>深入了解
 
-- [在 Azure 中使用服務對應解決方案](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
-- [Azure Migrate 和服務對應：相依性視覺效果](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
+- [在 Azure 中使用服務對應解決方案](/azure/azure-monitor/insights/service-map)
+- [Azure Migrate 和服務對應：相依性視覺效果](/azure/migrate/concepts-dependency-visualization)
 
 ## <a name="challenge-assumptions"></a>[挑戰假設](#tab/Challenge-Assumptions)
 
@@ -102,7 +102,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 若要成功實現[合理化](../../digital-estate/rationalize.md#incremental-rationalization)，您需要兩個相同的加權步驟。 這兩個步驟都需要環境中的資料和深入解析。 不過，每一種方法都涉及成功完成移轉工作所需的時間和詳細資料細微性。
 
-- [以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：第一次進行合理化和版本規劃期間，只有其中一個[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[策略和計畫範本](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
+- [以十為單位的版本規劃](../../digital-estate/rationalize.md#release-planning)：第一次進行合理化和版本規劃期間，只有其中一個[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)可用於評量。 根據與[策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中定義的整體動機最相符的合理化選項來預估和規劃。
 
 - **每個工作負載的詳細評量：** 與「以十為單位」版本規劃相關的假設是可接受的，並且足以用來建立方案。 但是，如果在移轉之前未進行評估，則這些相同的假設可能會造成重大問題。
 

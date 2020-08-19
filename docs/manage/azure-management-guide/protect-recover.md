@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c25329eae0a7b416b9bcd11eab6599e2e28781fc
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fdedf440bc947a2877cca6854b4745dd8482e493
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190697"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567745"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -64,7 +64,7 @@ ms.locfileid: "86190697"
 
 ::: zone target="docs"
 
-[概觀](https://docs.microsoft.com/azure/backup/backup-overview)
+[概觀](/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -116,5 +116,5 @@ Site Recovery 會複寫裝載在主要 Azure 區域中的 VM 和工作負載。 
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure Site Recovery 概觀](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
-- [將 Azure VM 複寫到另一個區域](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- [Azure Site Recovery 概觀](/azure/site-recovery/site-recovery-overview)
+- [將 Azure VM 複寫到另一個區域](/azure/site-recovery/azure-to-azure-quickstart)

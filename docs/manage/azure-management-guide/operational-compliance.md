@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cc3d8ddfc599a33e28874774e92915b964aa4e3c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190867"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572029"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -53,7 +53,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 - Azure 自動化 Hybrid Runbook Worker。
 - 適用於 Windows 電腦的 Microsoft Update 或 Windows Server Update Services (WSUS)。
 
-如需詳細資訊，請參閱[更新管理解決方案](https://docs.microsoft.com/azure/automation/automation-update-management)。
+如需詳細資訊，請參閱[更新管理解決方案](/azure/automation/automation-update-management)。
 
 > [!WARNING]
 > 在使用更新管理之前，您必須先將虛擬機器或整個訂用帳戶上線到 Log Analytics 和 Azure 自動化。
@@ -126,8 +126,8 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 若要深入了解，請參閱：
 
-- [Azure 原則](https://docs.microsoft.com/azure/azure-policy)
-- [Azure 原則：來賓組態](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure 原則](/azure/azure-policy)
+- [Azure 原則：來賓組態](/azure/governance/policy/concepts/guest-configuration)
 - [雲端採用架構：原則強制執行決策指南](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure 藍圖
@@ -214,8 +214,8 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 若要深入了解，請參閱：
 
-- [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure 藍圖](/azure/governance/blueprints)
 - [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準型藍圖範例](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end

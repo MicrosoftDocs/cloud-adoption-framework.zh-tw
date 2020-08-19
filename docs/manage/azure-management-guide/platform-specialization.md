@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d8674f04199a108dce424b81329697c3a25bfc03
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190748"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567779"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
@@ -61,7 +61,7 @@ ms.locfileid: "86190748"
 
 改善系統設計最能有效改善任何常見平台的作業。 透過改善系統設計，不僅穩定性會增加，業務中斷的情形也會減少。 個別系統的設計不在整個 Azure 雲端採用架構中所採用環境檢視的範圍內。
 
-做為此架構的補充，[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。此架構的重點在於改善整個結構的五個要素：
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。此架構的重點在於改善整個結構的五個要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
@@ -73,7 +73,7 @@ ms.locfileid: "86190748"
 
 下一個 [自動補救] 索引標籤會示範如何解決無法或不應解決的技術債務。
 
-深入了解 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) 以改善系統設計。
+深入了解 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 以改善系統設計。
 
 系統設計改善後，請回到本文來尋找新的改善機會，並將這些改善擴展到整個環境。
 
@@ -92,7 +92,7 @@ ms.locfileid: "86190748"
 
 當技術債務的解決方案不是企業想要的方式時，接下來他們通常會採用自動補救。 使用 Azure 自動化和 Azure 監視器來偵測趨勢並提供自動化補救功能，是最常見的自動化補救方法。
 
-如需自動補救的指引，請參閱 [Azure 自動化和警示](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook)。
+如需自動補救的指引，請參閱 [Azure 自動化和警示](/azure/automation/automation-create-alert-triggered-runbook)。
 
 ::: zone target="docs"
 
@@ -111,7 +111,7 @@ ms.locfileid: "86190748"
 
 若要讓最佳化平台的採用最大化，並讓維護成本降到最低，就應該將平台新增至 Azure 服務目錄。 您可以透過服務目錄來部署目錄中的每個應用程式，以供內部取用，或作為市集供應項目來供外部取用者取用。
 
-如需如何發佈至服務類別目錄的指示，請參閱關於[發佈至服務類別目錄](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app)的文章系列。
+如需如何發佈至服務類別目錄的指示，請參閱關於[發佈至服務類別目錄](/azure/managed-applications/publish-service-catalog-app)的文章系列。
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>從服務類別目錄部署應用程式
 
@@ -159,6 +159,6 @@ ms.locfileid: "86190748"
 
 容器和 SQL Server 是兩個最常見的集中管理平台。 下列文章可協助您開始在這些平台上收集用於持續改善的資料：
 
-- [容器效能](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS 資料庫效能](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS 資料庫效能](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [容器效能](/azure/azure-monitor/insights/container-insights-overview)
+- [PaaS 資料庫效能](/azure/azure-monitor/insights/azure-sql)
+- [IaaS 資料庫效能](/azure/azure-monitor/insights/sql-assessment)

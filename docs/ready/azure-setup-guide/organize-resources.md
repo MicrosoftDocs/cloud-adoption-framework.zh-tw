@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115087"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572896"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -66,7 +66,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 2. 選取 [新增]。
 
 > [!NOTE]
-> 亦可透過程式設計方式建立訂閱。 如需詳細資訊，請參閱[以程式設計方式建立 Azure 訂用帳戶](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)。
+> 亦可透過程式設計方式建立訂閱。 如需詳細資訊，請參閱[以程式設計方式建立 Azure 訂用帳戶](/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)。
 
 #### <a name="create-a-resource-group"></a>建立資源群組
 
@@ -86,9 +86,9 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 - [建立您的初始訂用帳戶](../azure-best-practices/initial-subscriptions.md)
 - [建立額外的 Azure 訂用帳戶以調整您的 Azure 環境](../azure-best-practices/scale-subscriptions.md)
 - [組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)
-- [使用 Azure 管理群組來組織資源](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [使用 Azure 管理群組來組織資源](/azure/azure-resource-manager/management-groups-overview)
 - [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
-- [訂用帳戶服務的限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [訂用帳戶服務的限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -136,7 +136,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 在營運方面，則應確保名稱包含 IT 小組所需的資訊。 請使用可識別工作負載、應用程式、環境和重要性的詳細資料，以及可用來管理資源的其他實用資訊。
 
-不同的資源類型具有不同的[命名規則和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
+不同的資源類型具有不同的[命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)。 如需詳細資訊和為了支援企業雲端採用工作所特別提出的建議，請參閱雲端採用架構的[命名和標記指引](../azure-best-practices/naming-and-tagging.md)。
 
 下表包含一些 Azure 資源範例類型的命名模式。
 
@@ -182,7 +182,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱[使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
+若要深入了解，請參閱[使用標記來組織 Azure 資源](/azure/azure-resource-manager/management/tag-resources)。
 
 ::: zone-end
 

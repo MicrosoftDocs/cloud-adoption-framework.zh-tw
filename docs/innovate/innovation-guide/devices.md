@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c739459e26f83bf5e41f89bb22750632bc7e4afe
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: aba505bea5b8bafc8a8d49a04c2a0086363d9cc4
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448991"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567864"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -27,12 +27,12 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 > [!div class="checklist"]
 >
 > - 業界資產
-> - [Microsoft HoloLens 2](https://docs.microsoft.com/hololens)
-> - [Azure Sphere](https://docs.microsoft.com/azure-sphere/product-overview/what-is-azure-sphere)
-> - [Azure Kinect DK](https://docs.microsoft.com/azure/kinect-dk/about-azure-kinect-dk)
+> - [Microsoft HoloLens 2](/hololens)
+> - [Azure Sphere](/azure-sphere/product-overview/what-is-azure-sphere)
+> - [Azure Kinect DK](/azure/kinect-dk/about-azure-kinect-dk)
 > - 無人機
-> - [Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/overview)
-> - [IoT 隨插即用](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play)
+> - [Azure SQL Edge](/azure/azure-sql-edge/overview)
+> - [IoT 隨插即用](/azure/iot-pnp/overview-iot-plug-and-play)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -53,8 +53,8 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure IoT 中心](https://docs.microsoft.com/azure/iot-hub)
-- [Azure IoT 中樞裝置佈建服務 (DPS)](https://docs.microsoft.com/azure/iot-dps)
+- [Azure IoT 中心](/azure/iot-hub)
+- [Azure IoT 中樞裝置佈建服務 (DPS)](/azure/iot-dps)
 
 ::: zone-end
 
@@ -106,7 +106,7 @@ Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服�
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)
+- [Azure Digital Twins](/azure/digital-twins/about-digital-twins)
 
 ::: zone-end
 
@@ -145,7 +145,7 @@ Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服�
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure 地圖服務](https://docs.microsoft.com/azure/azure-maps)
+- [Azure 地圖服務](/azure/azure-maps)
 
 ::: zone-end
 
@@ -182,7 +182,7 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)
+- [Azure Spatial Anchors](/azure/spatial-anchors/overview)
 
 ::: zone-end
 
@@ -213,8 +213,8 @@ Azure Spatial Anchors 由支援的裝置平台適用的受控服務和用戶端 
 
 ### <a name="learn-more"></a>深入了解
 
-- [Azure 遠端轉譯](https://docs.microsoft.com/azure/remote-rendering/overview/about)
-- [使用 Azure 進行轉譯](https://docs.microsoft.com/azure/batch/batch-rendering-service)
+- [Azure 遠端轉譯](/azure/remote-rendering/overview/about)
+- [使用 Azure 進行轉譯](/azure/batch/batch-rendering-service)
 
 ::: zone-end
 

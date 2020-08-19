@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f011bae35204c2acff3f8b9b48df61f9528499a3
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 29bb9f2e21049c00ae125a92d84f168f4261e88a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372943"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570295"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -62,13 +62,13 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone target="docs"
 
-- [管理 Azure 資源的保留](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
-- [調整 Windows VM 大小](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
-- [使用 Azure CLI 調整 Linux 虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
+- [管理 Azure 資源的保留](/azure/billing/billing-manage-reserved-vm-instance)
+- [調整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)
+- [使用 Azure CLI 調整 Linux 虛擬機器大小](/azure/virtual-machines/linux/change-vm-size)
 
 合作夥伴可以使用合作夥伴中心來審查使用方式。
 
-- [調整 Azure VM 大小以提供最大保留區使用率](https://docs.microsoft.com/partner-center/azure-usage)
+- [調整 Azure VM 大小以提供最大保留區使用率](/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -128,8 +128,8 @@ Azure 成本管理和計費可搭配 Azure Advisor，提供成本最佳化建議
 
 ::: zone target="docs"
 
-- [教學課程：透過建議最佳化成本](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [使用 Azure 計費與成本管理避免非預期的費用](https://docs.microsoft.com/azure/billing/billing-getting-started)
-- [使用成本分析探索及分析成本](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- [教學課程：透過建議最佳化成本](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [使用 Azure 計費與成本管理避免非預期的費用](/azure/billing/billing-getting-started)
+- [使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

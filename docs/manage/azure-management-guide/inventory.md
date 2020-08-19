@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e3d8f8cf6a4406eae9bedc1ebc461613bb0fef84
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e82727e6d8f90ecf3681ff8a85096088b4a6de70
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785543"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572182"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -84,7 +84,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-如需詳細資訊，請參閱 [Azure 服務健康情況](https://docs.microsoft.com/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](/azure/service-health)。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,7 +95,7 @@ Azure 服務健康狀態包含：
 
 ::: zone-end
 
-[Log Analytics 工作區](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案會設定為將其資料儲存在特定工作區中。 Azure 監視解決方案會要求所有伺服器都必須連線到工作區，以便能夠儲存和存取其記錄資料。
+[Log Analytics 工作區](/azure/azure-monitor/learn/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案會設定為將其資料儲存在特定工作區中。 Azure 監視解決方案會要求所有伺服器都必須連線到工作區，以便能夠儲存和存取其記錄資料。
 
 ::: zone target="chromeless"
 
@@ -113,7 +113,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Log Analytics 工作區建立文件](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)。
+若要深入了解，請參閱 [Log Analytics 工作區建立文件](/azure/azure-monitor/learn/quick-create-workspace)。
 
 ## <a name="azure-monitor"></a>Azure 監視器
 
@@ -148,10 +148,10 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
  開始監視：
 
-- [應用程式](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
-- [容器](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
-- [虛擬機器](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
-- [網路](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
+- [應用程式](/azure/application-insights/app-insights-overview)
+- [容器](/azure/monitoring/monitoring-container-overview)
+- [虛擬機器](/azure/monitoring/monitoring-service-map)
+- [網路](/azure/networking/network-monitoring-overview)
 
 若要監視其他資源，請尋找 Azure Marketplace 中的其他解決方案。
 
@@ -159,7 +159,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 監視器文件](https://docs.microsoft.com/azure/monitoring-and-diagnostics)。
+若要深入了解，請參閱 [Azure 監視器文件](/azure/monitoring-and-diagnostics)。
 
 ## <a name="onboard-solutions"></a>讓解決方案上線
 
