@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a97faee54c05f22c35dd674f74aa38d02456f526
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450674"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574460"
 ---
 <!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
@@ -31,7 +31,7 @@ ms.locfileid: "86450674"
 
 下列資源可協助您掌握 Azure 的最新資訊：
 
-- **Azure 服務健康情況：** [服務健康狀態](https://docs.microsoft.com/azure/service-health/service-health-overview)警示可提供有關進行中服務問題、計劃性維護和健康狀態諮詢的通知。 這些警示也包含排程淘汰的 Azure 功能相關資訊。
+- **Azure 服務健康情況：** [服務健康狀態](/azure/service-health/service-health-overview)警示可提供有關進行中服務問題、計劃性維護和健康狀態諮詢的通知。 這些警示也包含排程淘汰的 Azure 功能相關資訊。
 - **Azure 更新：** 檢閱 [Azure 更新](https://azure.microsoft.com/updates)，以取得產品更新相關公告。 簡短摘要會連結到其他詳細資料，以便輕鬆追隨更新。 透過 [Azure 更新 RSS 摘要](https://azurecomcdn.azureedge.net/updates/feed)來訂閱。
 - **Azure 部落格：** [Azure 部落格](https://azure.microsoft.com/blog)會傳達最重要的 Azure 平台公告。 遵循此部落格來掌握重要資訊的最新狀態。 透過 [Azure 部落格 RSS 摘要](https://azurecomcdn.azureedge.net/blog/feed)來訂閱。
 - **服務專屬部落格：** 許多個別 Azure 服務也會發佈部落格，方便您追蹤您所依賴的服務。 透過 Web 搜尋來尋找您感興趣的部落格。

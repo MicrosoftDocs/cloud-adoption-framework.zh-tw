@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0aaa503df3394faa51ec24eeec054ae7ffaac4a8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450759"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575225"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -95,9 +95,9 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 若要深入了解，請參閱：
 
-- [Azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure 藍圖](/azure/governance/blueprints)
 - [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準型藍圖範例](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -135,7 +135,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 若要深入了解，請參閱：
 
-- [Azure 原則](https://docs.microsoft.com/azure/governance/policy)
+- [Azure 原則](/azure/governance/policy)
 - [雲端採用架構：原則強制執行決策指南](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -162,8 +162,8 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 
 若要深入了解，請參閱：
 
-- [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center)
-- [Just-In-Time 虛擬機器存取](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure 資訊安全中心](/azure/security-center)
+- [Just-In-Time 虛擬機器存取](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [資訊安全中心定價層](https://azure.microsoft.com/pricing/details/security-center)
 - [雲端採用架構：安全性基準專業領域](../../govern/security-baseline/index.md)
 

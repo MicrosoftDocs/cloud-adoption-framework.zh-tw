@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b041a7cc996ac3606228f1231d2f4ecd9af51655
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 41abba9cadeca1951f6316e49a0d2d58c6ef6569
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450725"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574511"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -68,7 +68,7 @@ Azure 成本管理和計費提供數種方式來協助您預測和管理成本�
 
 若要深入了解，請參閱：
 
-- [Azure 計費與成本管理文件](https://docs.microsoft.com/azure/billing)
+- [Azure 計費與成本管理文件](/azure/billing)
 - [雲端採用架構：跨業務單位、環境或專案追蹤成本](../azure-best-practices/track-costs.md)
 - [雲端採用架構：成本管理專業領域](../../govern/cost-management/index.md)
 
