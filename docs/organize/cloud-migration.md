@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: e7da2a130e0176b599354ea2cbe0e10d0133e73b
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 710c9d844ab9e3e3bfd7287dc26d61160be3e161
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285501"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570108"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 
@@ -20,7 +20,7 @@ ms.locfileid: "88285501"
 
 無論雲端遷移團隊的類型或數目為何，這些團隊通常會為 IT、商務分析或實施合作夥伴提供主題專業知識。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - [建立 azure 帳戶](/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。
 - [Azure 入口網站](/learn/modules/tour-azure-portal)：導覽 Azure 入口網站功能和服務，以及自訂入口網站。

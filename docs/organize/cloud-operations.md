@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 48ab5e4393fb641dd425c92defadeffba4411cf8
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5762688ddd367e6f01e7276d9d9079aaf27f56da
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285484"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569972"
 ---
 # <a name="cloud-operations-functions"></a>雲端作業功能
 
@@ -28,10 +28,13 @@ ms.locfileid: "88285484"
 - 商務應用程式營運小組
 - DevOps 團隊
 
+> [!IMPORTANT]
+> 負責雲端營運的個人或團隊通常負責在修復期間對設定進行被動變更。 它們也可能會負責主動式設定變更，以將操作中斷降至最低。 根據組織的雲端作業模式，這些變更可透過基礎結構即程式碼、Azure Pipelines 或入口網站中的直接設定來傳遞。 因為作業小組可能會有較高的許可權，所以填妥此角色的人員必須遵循身分 [識別和存取控制最佳做法](/azure/security/benchmarks/security-control-identity-access-control) ，以將非預期的存取或生產變更降至最低。
+
 ## <a name="preparation"></a>準備
 
-- [管理 Azure 中的資源](/learn/paths/manage-resources-in-azure)：瞭解如何透過 Azure CLI 和入口網站來建立、管理及控制雲端式資源。
-- [Azure 網路服務](/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
+- [管理 Azure 中的資源](/learn/paths/manage-resources-in-azure/)：瞭解如何透過 Azure CLI 和入口網站來建立、管理及控制雲端式資源。
+- [Azure 網路服務](/learn/modules/intro-to-azure-networking/)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
 
 請檢閱下列各項：
 

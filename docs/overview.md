@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 1ed30a633106b6243e0d0e931d93df05ab1c8252
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9af04bd1c67c7db877552572d3fd2e7954ac5046
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285212"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570091"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -29,18 +29,12 @@ ms.locfileid: "88285212"
 
 雲端採用架構彙集了 Microsoft 員工、合作夥伴和客戶的雲端採用最佳作法。 它提供一組工具、指引和敘述，協助塑造技術、業務和人員策略，以在採用工作期間推動所需的業務成果。 本指南適用于雲端採用生命週期的下列階段，可讓您在適當的時間輕鬆存取正確的指引。
 
-<!-- markdownlint-disable MD033 -->
-
-| 階段 | 描述 |
-|----------|-------------|
-| [策略](./strategy/index.md) | 定義業務理由和預期的採用結果。 |
-| [就緒](./ready/index.md) | 準備雲端環境進行規劃的變更。 |
-| [創新](./innovate/index.md) | 開發新的雲端原生解決方案或混合式解決方案。 |
-| [管理](./manage/index.md) | 適用於雲端和混合式解決方案的作業管理。 |
-| [方案](./plan/index.md) | 使可行的採用方案與業務成果保持一致。 |
-| [移轉](./migrate/index.md) | 移轉和現代化現有的工作負載。 |
-| [治理](./govern/index.md) | 治理環境和工作負載。 |
-| [組織](./organize/index.md) | 建立和維護組織結構。 |
+|  |  |  |  |  |
+|--|--|--|--|--|
+| <br> ![策略圖示](./_images/icons/strategy.png) | <br> [策略](./strategy/index.md)： &nbsp; 定義 &nbsp; 商業 &nbsp; 理由 &nbsp; 和預期的採用結果。 | <br> ![規劃圖示](./_images/icons/plan.png) | <br> [方案](./plan/index.md)： &nbsp; &nbsp; 將可採取動作的 &nbsp; 採用 &nbsp; 方案與業務成果保持一致。 |
+| <br> ![就緒圖示](./_images/icons/ready.png)       | <br> [就緒](./ready/index.md)：準備雲端環境以進行已規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | <br> [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |
+| <br> ![創新圖示](./_images/icons/innovate.png) | <br> [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | <br> 治理[：管理](./govern/index.md)環境和工作負載。 |
+| <br> ![管理圖示](./_images/icons/manage.png)     | <br> [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | <br> [組織](./organize/index.md)：管理環境和工作負載。 |
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 

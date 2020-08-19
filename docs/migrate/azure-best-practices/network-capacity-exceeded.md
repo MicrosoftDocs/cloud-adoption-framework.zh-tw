@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 85ac7ab8dccaf41e2abcdd66337252cb8f70b811
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: d742d6528f4128ef8609a97620b6bcb9703aa60c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284736"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570550"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 

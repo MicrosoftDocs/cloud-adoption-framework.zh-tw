@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e44ddf355a0d0609428ae2357797b501903acd01
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: a55838413812f29069b39cee7f49391eb4ac2ec3
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283155"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570805"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -34,7 +34,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 <!-- markdownlint-disable MD033 -->
 
-| 準備        | 遷移                             | 移轉後 |
+| 準備        | 移轉                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
 | <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移的資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>找出最適合使用的 Azure 和協力廠商工具和功能。</li><li>及早在新平臺上訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li> 從小型和簡單開始。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和 views 的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商務程式。</li><li>遷移或重構 ETL 或 ELT 增量載入進程。</li></ul> | <ul><li> 監視和記錄遷移程式的所有階段。</li><li>使用獲得的體驗來建立範本，以供未來的遷移之用。</li><li>使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
 
@@ -222,6 +222,6 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **適用于工作負載管理的資源類別**： Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需有關執行 Netezza 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

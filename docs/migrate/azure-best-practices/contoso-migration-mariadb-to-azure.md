@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1575847070b3e250ff925f24c3da12e03dffdbf5
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4cc1aeed8df6c546722ac70977e08f6619f41f21
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283002"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570737"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -113,7 +113,7 @@ Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其適
   ![圖表顯示遷移程式。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
   _圖2：遷移程式。_
 
-#### <a name="migration"></a>遷移
+#### <a name="migration"></a>移轉
 
 由於適用于 mariadb 類似于 MySQL，因此 Contoso 可以使用相同的常用公用程式和工具（例如 MySQL 工作臺、mysqldump、Toad 或 Navicat）來連線到適用於 MariaDB 的 Azure 資料庫，並將資料移轉至。
 

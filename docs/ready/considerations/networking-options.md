@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a106fb64990d886424e46c67e2ef711c65cea6f7
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 0c3df76de11883153d128fe419825a8800bc8d57
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285467"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566742"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -51,7 +51,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 <!-- markdownlint-disable MD033 -->
 
-| 案例 | 網路產品或服務 |
+| 狀況 | 網路產品或服務 |
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](/azure/virtual-network) |
 | 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure Load Balancer](/azure/load-balancer) |
@@ -75,7 +75,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 下表摘要說明這些模式支援的主要案例：
 
-| 案例  | 建議的網路架構                                                  |
+| 狀況  | 建議的網路架構                                                  |
 | --- | --- |
 | 所有部署至登陸區域的 Azure 裝載工作負載都將完全以 PaaS 為基礎，不需要虛擬網路，且不屬於更廣泛的雲端採用工作，包括 IaaS 資源。                                                                                                                                                          | [僅限 PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure 裝載的工作負載將會部署 IaaS 型資源 (例如虛擬機器)，否則需要虛擬網路，但不需要連線到您的內部部署環境。                                                                                                                                                                            | [雲端原生](../../decision-guides/software-defined-network/cloud-native.md)      |

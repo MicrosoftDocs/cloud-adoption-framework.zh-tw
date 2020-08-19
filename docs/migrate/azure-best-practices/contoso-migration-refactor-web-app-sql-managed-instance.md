@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f252c2d50d93e0a19094c17b4fce548c545b0395
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9bdf860480e75348d0d234f7b068d8762ccf0174
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88282475"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567609"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -102,7 +102,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 

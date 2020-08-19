@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 545706c73183211da608bbdd1b67c51f799337a0
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 47d69db490f22f5c6513f5b6e26b559026b33728
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279670"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568680"
 ---
 # <a name="conversational-ai"></a>對話式 AI
 

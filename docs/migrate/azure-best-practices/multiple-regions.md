@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7aa6fcf6e8e38d6c036775b6e5b598ab95b8800d
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9638e1a16c7e2acfecf2cdeebf5671c38af3c527
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284753"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570533"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure 區域決策指南
 
@@ -82,7 +82,7 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 | 區域        | Country     | 當地員工 | 本機外部使用者   | 本機資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | 美國         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | 加拿大      | 否              | 客戶              | 是                         | 是                           |
+| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
 | 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 無網路           | 是                           |
 | 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 

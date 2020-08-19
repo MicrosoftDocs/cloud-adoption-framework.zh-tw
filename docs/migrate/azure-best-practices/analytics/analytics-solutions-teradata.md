@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a9a0b75ba102e4544b60bbc190fdc1a61f1f661
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 58cc1aba7775bd32ce23327e6da7ff17cd9f519c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283121"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570754"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Attunity Teradata Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" "Attunity Replicate" -->
 
@@ -34,11 +34,11 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 <!-- markdownlint-disable MD033 -->
 
-| 準備        | 遷移                             | 移轉後 |
+| 準備        | 移轉                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
 | <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移的資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>找出最適合使用的 Azure 和協力廠商工具和功能。</li><li>及早在新平臺上訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li>從小型和簡單開始。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和 views 的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商務程式。</li><li>遷移或重構 ETL/ELT 增量載入進程。</li></ul> | <ul><li> 監視和記錄遷移程式的所有階段。</li><li>使用獲得的體驗來建立範本，以供未來的遷移之用。</li><li>使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
 
-當您從舊版 Teradata 環境遷移至 Azure Synapse 時，除了 Teradata 檔中所述的一般主題之外，您還必須考慮一些特定因素。 
+當您從舊版 Teradata 環境遷移至 Azure Synapse 時，除了 Teradata 檔中所述的一般主題之外，您還必須考慮一些特定因素。
 
 ## <a name="initial-migration-workload"></a>初始遷移工作負載
 
@@ -52,7 +52,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 針對大小，您在初始練習中遷移的資料量很重要，足以示範 Azure Synapse 環境的功能和優點，並提供簡短的時間來示範價值。 通常符合需求的大小是在 1 tb (TB) 至 10 tb 之間。
 
-初始遷移專案的方法可將風險和實行時間降至最低，以限制遷移至資料超市的範圍。 在 Teradata 中，有一個很好的例子，就是 Teradata 資料倉儲的 OLAP 資料庫部分。 這種方法是很好的起點，因為它會限制遷移的範圍，而且通常可以在短時間點上達到。 
+初始遷移專案的方法可將風險和實行時間降至最低，以限制遷移至資料超市的範圍。 在 Teradata 中，有一個很好的例子，就是 Teradata 資料倉儲的 OLAP 資料庫部分。 這種方法是很好的起點，因為它會限制遷移的範圍，而且通常可以在短時間點上達到。
 
 資料超市的初始遷移範圍只會解決更廣泛的考慮，例如如何遷移 ETL 和歷程記錄資料。 您必須在後續階段中處理這些區域，並使用建立它們所需的資料和程式來回填已遷移的資料超市層。
 
@@ -70,7 +70,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 ## <a name="virtual-machine-colocation-to-support-migration"></a>支援遷移的虛擬機器共置
 
-從內部部署 Teradata 環境遷移的選擇性方法，可在 Azure 中利用經濟實惠的雲端儲存體和彈性的擴充性。 首先，在 Azure 虛擬機器上建立與目標 Azure Synapse 環境共存的 Teradata 實例。 然後，您會使用標準的 Teradata 公用程式，例如 Teradata Parallel Transporter 或協力廠商資料複寫工具（例如 Qlik sense 複寫）（例如 (複寫）（先前為 Attunity) ），以有效率地將您要遷移的 Teradata 資料表子集移至 VM 實例。 所有的遷移工作都是在 Azure 環境中進行。 
+從內部部署 Teradata 環境遷移的選擇性方法，可在 Azure 中利用經濟實惠的雲端儲存體和彈性的擴充性。 首先，在 Azure 虛擬機器上建立與目標 Azure Synapse 環境共存的 Teradata 實例。 然後，您會使用標準的 Teradata 公用程式，例如 Teradata Parallel Transporter 或協力廠商資料複寫工具（例如 Qlik sense 複寫）（例如 (複寫）（先前為 Attunity) ），以有效率地將您要遷移的 Teradata 資料表子集移至 VM 實例。 所有的遷移工作都是在 Azure 環境中進行。
 
 這種方法有幾項優點：
 
@@ -84,7 +84,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 使用 Azure 環境的功能自動化和協調遷移程式是合理的。 這種方法會將對現有 Teradata 環境的影響降到最低，但可能已接近完整容量。
 
-Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用 Data Factory 在雲端建立資料驅動的工作流程，以協調和自動化資料移動和資料轉換。 Data Factory 管線可以從不同的資料存放區內嵌資料。 然後，他們會使用計算服務來處理和轉換資料，例如 Azure HDInsight 的 Apache Hadoop 和 Apache Spark、Azure Data Lake Analytics 和 Azure Machine Learning。 
+Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用 Data Factory 在雲端建立資料驅動的工作流程，以協調和自動化資料移動和資料轉換。 Data Factory 管線可以從不同的資料存放區內嵌資料。 然後，他們會使用計算服務來處理和轉換資料，例如 Azure HDInsight 的 Apache Hadoop 和 Apache Spark、Azure Data Lake Analytics 和 Azure Machine Learning。
 
 首先建立中繼資料，以列出您想要遷移的資料表及其位置。 然後，使用 Data Factory 功能來管理遷移程式。
 
@@ -96,9 +96,9 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 在 Teradata 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及資料超市的另一個資料庫 (有時稱為 *語義層*) 。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
-Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在 Azure Synapse 中使用一系列的架構，以模仿您從 Teradata 遷移的任何個別資料庫。 
+Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在 Azure Synapse 中使用一系列的架構，以模仿您從 Teradata 遷移的任何個別資料庫。
 
-如果您使用 Teradata 環境中的架構，您可能需要使用新的命名慣例，將現有的 Teradata 資料表和觀點移至新的環境。 例如，您可能會將現有的 Teradata 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。 
+如果您使用 Teradata 環境中的架構，您可能需要使用新的命名慣例，將現有的 Teradata 資料表和觀點移至新的環境。 例如，您可能會將現有的 Teradata 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
 
 另一個選項是在基礎資料表上使用 SQL 視圖，以維護其邏輯結構。 使用 SQL 視圖有一些可能的缺點：
 
@@ -141,7 +141,7 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 您應留意 SQL 資料操作語言的一些差異， (DML) Teradata SQL 與 Azure Synapse 之間的語法：
 
-- `QUALIFY`： Teradata 支援 `QUALIFY` 運算子。 
+- `QUALIFY`： Teradata 支援 `QUALIFY` 運算子。
 
    例如：
 
@@ -155,11 +155,11 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
   `SELECT * FROM (SELECT col1, ROW_NUMBER() OVER (PARTITION by col1 ORDER BY col1) rn FROM tab1 WHERE c1='XYZ' ) WHERE rn = 1;`
 
-- **日期算術**： Azure Synapse 具有和之類 `DATEADD` `DATEDIFF` 的運算子，可供您在 `DATE` 或上使用 `DATETIME` 。 
+- **日期算術**： Azure Synapse 具有和之類 `DATEADD` `DATEDIFF` 的運算子，可供您在 `DATE` 或上使用 `DATETIME` 。
 
    Teradata 支援日期的直接減法：
-   
-   - `SELECT DATE1 - DATE2 FROM ...`
+
+  - `SELECT DATE1 - DATE2 FROM ...`
 
   - `LIKE ANY` 語法
 
@@ -225,7 +225,7 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結 (通常稱為星狀架構模型) 中的 *維度資料表/事實資料表聯結* 。 您會將較小的資料表複寫到所有節點，藉此確保較大資料表的聯結索引鍵值具有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
-- **資料索引編制**： Azure Synapse 提供各種索引編制選項，但在 Teradata 中，索引選項的作業和使用方式各不相同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱在 [Azure Synapse 集區中設計資料表](/azure/synapse-analytics/sql-data-warehouse/ql-data-warehouse-tables-overview)。
+- **資料索引編制**： Azure Synapse 提供各種索引編制選項，但在 Teradata 中，索引選項的作業和使用方式各不相同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱在 [Azure Synapse 集區中設計資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview)。
 
   來源 Teradata 環境中的現有索引可以提供資料使用方式的實用指示，並提供在 Azure Synapse 環境中編制索引所需的候選資料行的指示。
 
@@ -239,6 +239,6 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 - **適用于工作負載管理的資源類別**： Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需有關執行 Teradata 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8dfced93b6f4482c82ecb377a4a31c9bb3c19835
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5f8b0d2a1f834b82adf47ef7f965315caf8ae1b8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88282611"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567762"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -91,7 +91,7 @@ Contoso 會完成遷移程式，如下所示：
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [適用於 MySQL 的 Azure 資料庫](/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署，提供完全受控、符合企業需求的社區 MySQL 資料庫。 | 定價是以計算、儲存體和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 

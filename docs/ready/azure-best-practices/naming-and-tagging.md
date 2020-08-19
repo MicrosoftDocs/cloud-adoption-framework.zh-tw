@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 4f040d9efec48840770e2e490bfd6ab5e1939785
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 57d0ea8b033a3a043d9243f1b9ecbcae5e9b9391
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284855"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569870"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -195,7 +195,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | Application Insights    | appi-       |
 | 復原服務保存庫 | rsv-        |
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|

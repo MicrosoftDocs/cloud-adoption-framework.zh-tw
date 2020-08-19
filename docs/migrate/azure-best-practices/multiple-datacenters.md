@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c67663248f7f074736fba5f02f826a4de8e7b6be
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cafc53ed064db421c213534ce58f6c9581085dde
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284770"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570567"
 ---
 # <a name="multiple-datacenters"></a>多個資料中心
 

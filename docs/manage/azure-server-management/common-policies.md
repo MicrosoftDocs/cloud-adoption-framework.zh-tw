@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9433874b74789b83f5a7b025aee259937303050a
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9e4829581a642a3fab13d461c98e423a5f777f2b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284124"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567439"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
@@ -89,7 +89,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 瞭解其他可用的伺服器管理工具和服務。
 

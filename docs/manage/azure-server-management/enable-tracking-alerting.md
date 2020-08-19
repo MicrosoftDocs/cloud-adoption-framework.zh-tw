@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2c1a28802364df93a726df5dda65e77d72259d0c
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: a8826b82e9ec3aa503e79e0aa5345a3a494a2bef
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284141"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567541"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -96,7 +96,7 @@ Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方�
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
   ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 瞭解 Azure 自動化如何 [建立更新](./update-schedules.md) 排程，以管理伺服器的更新。
 

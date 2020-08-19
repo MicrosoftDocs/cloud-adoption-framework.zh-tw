@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a3ea1f13db726fdc122e8a8acd07c8a15f8debca
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 2dc370df56042894903da00b14c9a37f06d17e1c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283342"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571009"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 

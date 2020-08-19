@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 734e94f212d66a7e0e4397d2f4084c3d2ff0d5bc
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5d8ecccaee60a159a9e2bf5b3a57e0194c87a9ea
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285297"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570958"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 

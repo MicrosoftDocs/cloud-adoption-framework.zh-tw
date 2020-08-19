@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1a02fecbd670556bb5da0104163febf0c8b4b2e8
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88282492"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567286"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental -->
 
@@ -118,7 +118,7 @@ Contoso 將需要評估目前的資料庫是否有複寫問題。 這些問題�
   ![遷移程式的圖表。 ](./media/contoso-migration-postgresql-to-azure/migration-process.png)
   _圖2：遷移程式。_
 
-#### <a name="migration"></a>遷移
+#### <a name="migration"></a>移轉
 
 Contoso 可以透過數種方式來執行遷移：
 
@@ -186,7 +186,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
         psql -h {host}.postgres.database.azure.com -d dvdrental -U username -f dvdrental_schema.sql
       ```
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 1. 在 Azure 入口網站中，Contoso 會移至其資料庫移轉服務資源。
 1. 如果服務未啟動，請選取 [ **啟動服務**]。

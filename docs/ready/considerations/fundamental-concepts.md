@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c515d7ad93b511abf5f1be90e7ddeb921736296a
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: e0d0019bd11bde0178f4cbcb0a99f2638edf43b2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278157"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566844"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
