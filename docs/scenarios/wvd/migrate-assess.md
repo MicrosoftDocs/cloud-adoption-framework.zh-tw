@@ -7,16 +7,16 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: aa66bc155a1bfde0df559babfd1b926dfdd60820
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 50bb778d07a3f963272ca1f716a9f76ace5bbc60
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285654"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569615"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
-Windows 虛擬桌面 [概念證明](./proof-of-concept.md) 可提供初始範圍作為 Contoso 雲端採用小組的基準實行。 但是該概念證明的輸出不太可能符合其生產需求。 
+Windows 虛擬桌面 [概念證明](./proof-of-concept.md) 可提供初始範圍作為 Contoso 雲端採用小組的基準實行。 但是該概念證明的輸出不太可能符合其生產需求。
 
 Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設的焦點方法。 評量資料可協助小組回答一系列的重要問題、驗證或使其假設無效，並視需要調整範圍，以支援小組的 Windows 虛擬桌面案例。 藉由使用這個假設驗證方法，小組可以加速將其使用者桌面遷移或部署至 Windows 虛擬桌面。
 

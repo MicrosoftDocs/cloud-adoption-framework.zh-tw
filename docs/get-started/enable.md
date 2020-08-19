@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 48b86613dc8fc6ca463e6effb765b1a6b8259c70
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 61f1f1959e9a3e0d934e56498dd13462391d0a49
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279177"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569581"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>利用音效作業模型與組織對齊，讓客戶成功
 
@@ -55,6 +55,6 @@ ms.locfileid: "88279177"
 這些原則會在 Azure Advisor、Microsoft Azure 架構架構良好的架構，以及 Azure 架構中心中的解決方案之間共用：
 
 - [Azure Advisor](/azure/advisor/advisor-overview) 會評估跨解決方案、工作負載和完整組合的個別資產原則。
-- [Azure 架構中心](/azure/architecture) 套用這些原則來開發和管理特定的技術解決方案。
-- [Microsoft Azure 架構良好的架構](/azure/architecture/framework) 有助於在工作負載之間平衡這些原則，以引導架構決策。
+- [Azure 架構中心](/azure/architecture/) 套用這些原則來開發和管理特定的技術解決方案。
+- [Microsoft Azure 架構良好的架構](/azure/architecture/framework/) 有助於在工作負載之間平衡這些原則，以引導架構決策。
 - [雲端採用架構](../index.yml) 可確保這些原則會跨組合進行調整，以透過妥善管理的環境來實現採用小組。

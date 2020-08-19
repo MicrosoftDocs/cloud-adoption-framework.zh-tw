@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 738d655f69e8988a1132ed90cfd50d2a3ef7f47a
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: d7351fc55f91645c79dd50e803ef8ca940beaa7c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284277"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572233"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 

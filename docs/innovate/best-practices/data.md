@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e58605e2b1e9ca98a7e48a43c7a77e353a7f27a5
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 2404a99fcc1dc46700b92026bc4eef8bc146a2a8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279330"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572437"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 

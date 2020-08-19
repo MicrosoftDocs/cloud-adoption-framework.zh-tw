@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ee191f74531879d4d771f15a5ea7b1fd608cc0f9
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283733"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571570"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -112,7 +112,7 @@ ms.locfileid: "88283733"
 
 ### <a name="it-service-management-itsm-integration"></a>IT 服務管理 (ITSM) 整合
 
-ITSM 整合通常是處理清查和可見度的第一個範例。 當預期的效能模式發生偏差時，ITSM 整合會使用來自雲端平臺的警示來觸發個別服務管理工具中的票證，以觸發補救活動。 某些作業模型可能需要將 ITSM 整合為增強管理基準的層面。
+ITSM 整合通常是處理清查和可見度的第一個範例。 當預期的效能模式發生偏差時，ITSM 整合會使用來自雲端平臺的警示來觸發個別 IT 服務管理工具中的票證，以觸發補救活動。 某些作業模型可能需要將 ITSM 整合為增強管理基準的層面。
 
 ### <a name="data-centralization"></a>資料集中化
 

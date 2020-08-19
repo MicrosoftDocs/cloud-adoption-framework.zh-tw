@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 7efc2d473a7aa50d9cad04d4bcac8bb8364271c5
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8f1676c51e502b3995efc7694fe7bb7ef6932b26
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279262"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569734"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 

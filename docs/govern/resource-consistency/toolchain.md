@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 95f0654550c6f361b7e7ad78ecb6b28900e1ef99
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 55ffac53041f961757909ec80b7118d2e2118f2a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279959"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568986"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 

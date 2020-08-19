@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4825b01d5621c02db5bdc419031a3a446700a29e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cb1ec2e0a90fb1f41a85de7c5588ad32b5e4f7b3
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280197"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569377"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 

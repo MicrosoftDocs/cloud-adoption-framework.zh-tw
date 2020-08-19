@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 894f13ebf53ff3d0254f70f685d55d67b4d503e1
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 54096b19fe5e72083818cb69a74c1d30694803ae
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283852"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571638"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 

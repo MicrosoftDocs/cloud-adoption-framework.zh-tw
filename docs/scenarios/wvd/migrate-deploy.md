@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ed20bf56b2869b31935d5f07e4074e9f1f17dd5a
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 50fea7acb50b2f14cabea51bdc9a53fecdaf1595
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285637"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572572"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -46,7 +46,7 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 ### <a name="application-and-desktop-considerations"></a>應用程式與桌面的考慮
 
-某些角色可能相依于舊版解決方案，與 Windows &nbsp; 10 多會話不相容。 在這些情況下，某些角色可能需要專用的桌面。 在部署和測試之前，可能不會探索到此相依性。 
+某些角色可能相依于舊版解決方案，與 Windows &nbsp; 10 多會話不相容。 在這些情況下，某些角色可能需要專用的桌面。 在部署和測試之前，可能不會探索到此相依性。
 
 如果在程式中延遲發現，未來的反復專案應配置給繼承應用程式的現代化或遷移。 這會降低桌面體驗的長期成本。 這些未來的反復專案應該根據現代化的整體定價影響以及與專用桌面相關聯的額外成本，來優先處理和完成。 為了避免管線中斷和企業成果的實現，這種優先順序應該不會影響目前的反覆運算。
 

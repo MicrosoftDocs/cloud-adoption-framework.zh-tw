@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f1b20a70aa7588fae14a04fdb651ed13a6097d3
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: f405adb00918c4402e713f6b331a4c084c868ee0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280112"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569173"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 

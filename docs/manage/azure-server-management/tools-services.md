@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0e3437774a83c4f1a0a4d1377d9ebd626fcd3a9
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 37fbe933ce03a4d0ad600033aaff522a279cd005
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283988"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571808"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如同本指南的 [概述](./index.md) 中所述，Azure 伺服器管理服務套件涵蓋下列各方面：
 
-- 遷移
+- 移轉
 - 安全
 - 保護
 - 監視
@@ -27,7 +27,7 @@ ms.locfileid: "88283988"
 
 下列各節將簡短說明這些管理區域，並提供支援這些管理區域之主要 Azure 服務的詳細內容連結。
 
-## <a name="migrate"></a>遷移
+## <a name="migrate"></a>移轉
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估遷移的適用性。 Azure Migrate 完成評量之後，您可以使用 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 和 [Azure 資料庫移轉服務](/azure/dms/dms-overview) ，將您的內部部署機器遷移至 azure。
 

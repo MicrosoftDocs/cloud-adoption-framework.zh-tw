@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e7c832ddfa310d176d16bdc21e28e61e99c96c63
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281268"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569309"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的效能一致
 

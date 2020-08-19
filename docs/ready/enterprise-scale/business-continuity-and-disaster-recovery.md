@@ -1,5 +1,5 @@
 ---
-title: CAF 企業規模的商務持續性和嚴重損壞修復
+title: 企業規模的商務持續性和嚴重損壞修復
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構中企業規模的商務持續性和嚴重損壞修復。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,20 +7,20 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dc998bcc4178815561a44b938dd79f56039d3a01
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 93975a3064f6d7056bcbe09aad17c60d9fa2cc06
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284617"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572777"
 ---
-# <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF 企業規模的商務持續性和嚴重損壞修復
+# <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業規模的商務持續性和嚴重損壞修復
 
-## <a name="planning-for-business-continuity-and-disaster-recovery"></a>規劃商務持續性和嚴重損壞修復
+您的組織或企業需要設計適合的平台層級功能，讓應用程式工作負載可以取用這些功能來滿足其特定需求。 具體來說，這些應用程式工作負載的需求，與復原時間目標 (RTO) 和復原點目標 (RPO) 有關。 請確定您已 (DR) 需求來取得嚴重損壞修復，以便為這些工作負載設計適當的功能。
 
-捕捉嚴重損壞修復 (DR) 需求，以設計適合應用程式工作負載使用的平台層級功能，以符合其特定的復原時間目標 (RTO) 和復原點目標 (RPO) 需求。
+## <a name="design-considerations"></a>設計考量
 
-**設計考慮：**
+請考慮下列因素：
 
 - 應用程式和資料可用性需求，以及使用主動-主動和主動/被動可用性模式 (例如工作負載 RTO 和 RPO 需求) 。
 
@@ -34,7 +34,7 @@ ms.locfileid: "88284617"
 
   - 資料共用和區域之間的相依性。
 
-  - 相較于可用性設定組，以及可同時進行維護的工作負載百分比，可用性區域對更新網域的影響。
+  - 相較于可用性設定組，可用性區域對更新網域的影響，以及可以同時進行維護的工作負載百分比。
 
   - 支援特定虛擬機器 (VM) 庫存單位可用性區域。
 
@@ -64,9 +64,11 @@ ms.locfileid: "88284617"
 
 - 應用程式金鑰、憑證和秘密的 Azure Key Vault DR。
 
-**設計建議：**
+## <a name="design-recommendations"></a>設計建議
 
-- 將 Azure 的 Azure Site Recovery 運用於 Azure 虛擬機器的嚴重損壞修復案例，以跨區域複寫工作負載。
+以下是您設計的最佳作法：
+
+- 採用適用于 Azure 至 Azure 虛擬機器嚴重損壞修復案例的 Azure Site Recovery。 這可讓您跨區域複寫工作負載。
 
   Site Recovery 為 VM 工作負載提供內建的平臺功能，以符合低 RPO/RTO 需求（透過即時複寫和復原自動化）。 此外，此服務也可讓您執行復原演練，而不會影響生產環境中的工作負載。
 
@@ -76,20 +78,21 @@ ms.locfileid: "88284617"
 
 - 使用 Azure 原生備份功能。
 
-  Azure 備份和 PaaS 原生備份功能不需要管理協力廠商備份軟體和基礎結構。 如同其他原生功能一樣，可以使用 Azure 原則來設定、審核備份設定，並加以強制執行，以確保服務符合組織的需求。
+  Azure 備份和 PaaS 原生備份功能不需要管理協力廠商備份軟體和基礎結構。 如同其他原生功能，您可以使用 Azure 原則來設定、審核和強制執行備份設定。 這可確保服務仍符合組織的需求。
 
 - 使用多個區域和對等互連位置進行 ExpressRoute 連線。
 
   重複的混合式網路架構可在發生影響 Azure 區域或對等提供者位置的中斷時，協助確保不中斷的跨單位連線。
 
-- 為貴組織的嚴重損壞修復配置選取位置時，請參閱 [Azure 區域配對](/azure/best-practices-availability-paired-regions) 檔。
+- 當您針對組織的嚴重損壞修復配置選取位置時，請參閱 [Azure 區域配對](/azure/best-practices-availability-paired-regions) 。
 
-- 規劃商務持續性和 DR 時，請使用 Azure 配對的區域。
+- 當您在規劃商務持續性和 DR 時，請使用 Azure 配對的區域。
 
-- 計畫的 Azure 系統更新會依序推出至配對的區域，但不能同時將停機時間、錯誤的影響，以及在不正常更新的罕見事件中的邏輯故障降至最低。
+- Azure 會依序將計畫的系統更新彙總套件到配對的區域，而不是同時推出。 這有助於將停機時間、錯誤影響以及邏輯失敗的影響降至最低，而不會發生錯誤的更新。
 
-- 如果發生廣泛的中斷情況，復原一個區域的優先順序會在每個配對內。 跨配對區域部署的應用程式保證會有其中一個區域以優先權復原。 如果在未配對的區域中部署應用程式，最糟的情況是復原可能會延遲，而慣用的區域可能是最後一個要復原的區域。
+- 發生廣泛的中斷情況時，復原一個區域會在每一組內設定優先順序。 跨配對區域部署的應用程式保證會有其中一個區域以優先權復原。 如果在未配對的區域中部署應用程式，最糟的情況是修復可能會延遲。 偏好的區域可能是最後一個要復原的區域。
 
 - 避免針對生產和 DR 網站使用重迭的 IP 位址範圍。
 
-  可能的話，請規劃可提供所有網站之並行連線的商務持續性和 DR 網路架構設計人員。 使用相同無類別網域間路由區塊的 DR 網路（例如生產網路）將需要網路容錯移轉程式，在發生中斷時，可能會使應用程式容錯移轉變得複雜且延遲。
+  可能的話，請規劃可提供所有網站之並行連線的商務持續性和 DR 網路架構。 使用相同無類別網域間路由區塊的 DR 網路（例如生產網路）需要網路容錯移轉程式，在發生中斷時，可能會使應用程式容錯移轉變得複雜且延遲。
+

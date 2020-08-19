@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: deb3c39774c6281206543996b26acb87ec68edb0
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 2b6bcc51e0cdbb7d7b326b385dfbe41e8b3ed856
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279228"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568255"
 ---
 # <a name="engage-via-applications"></a>透過應用程式參與
 

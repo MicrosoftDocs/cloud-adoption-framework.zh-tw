@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 00c0f347a9c4daa73d0f7f317a49b342db6b9fb7
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283682"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571536"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和 advanced 作業
 

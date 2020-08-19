@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7363ae87a43eac60e1ee71f1e632c431994683f1
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 385bfcaefd7fcb5dab78e9dd80478a0fe2c7d644
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281234"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569258"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：使用正確的控制項提升可靠性
 

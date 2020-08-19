@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5263e0f868d3dc94939a3df770678fe5a2e02664
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8dbfd5324957b7175afc81801873eef8bf5242cf
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283971"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571825"
 ---
 <!-- cSpell:ignore jenhayes -->
 

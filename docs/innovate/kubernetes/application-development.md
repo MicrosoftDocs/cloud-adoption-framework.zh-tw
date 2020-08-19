@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9b4774ed2d9cd2946f07929d1167cd7a4bfaf30d
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8da625c6805c31dc2c07c2d31815851ca7e8b3a7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284328"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572284"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
 
@@ -30,9 +30,7 @@ ms.locfileid: "88284328"
 > - 您要如何將專案資料夾結構為支援 Kubernetes 應用程式開發？
 > - 您是否已識別出應用程式的狀態、設定和儲存需求？
 
-<!-- markdownlint-disable MD033 -->
-
-<! docsTest:ignore "AAD Pod Identity -->
+<!-- docsTest:ignore "AAD Pod Identity -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -61,11 +59,11 @@ ms.locfileid: "88284328"
 >
 > | 檢查清單  | 資源                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **設定準備就緒和活動的健康情況檢查。** Kubernetes 會使用就緒狀態和活動檢查來瞭解應用程式何時準備好接收流量，以及何時需要重新開機。 若未定義這類檢查，Kubernetes 將無法判斷您的應用程式是否已啟動且正在執行。   | [活動和準備就緒檢查](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes) |
-> | **設定記錄、應用程式監視和警示。** 監視容器很重要，尤其在您使用多個應用程式大規模執行生產環境叢集時。 容器化應用程式的建議記錄方法是寫入標準輸出 (stdout) 和標準錯誤 (stderr) 資料流程。   | [Kubernetes 中的記錄](https://kubernetes.io/docs/concepts/cluster-administration/logging) <br> [開始使用 Kubernetes (影片的監視和警示) ](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br> [適用於容器的 Azure 監視器](/azure/azure-monitor/insights/container-insights-overview) <br> [在 Azure Kubernetes Service (AKS) 中啟用並檢閱 Kubernetes 主要節點記錄](/azure/aks/view-master-logs) <br> [即時查看 Kubernetes 記錄、事件和 pod 計量](/azure/azure-monitor/insights/container-insights-livedata-overview) |
-> | **定義應用程式的資源需求。** 管理 Kubernetes 叢集中計算資源的主要方式是使用 pod 要求和限制。 這些要求和限制會告知 Kubernetes 排程器應指派 pod 的計算資源。     | [定義 &nbsp; pod &nbsp; 資源 &nbsp; 要求 &nbsp; 和 &nbsp; 限制](/azure/aks/developer-best-practices-resource-management) |
-> | **設定應用程式調整需求。** Kubernetes 支援水平 Pod 自動調整，可根據 CPU 使用率或其他選取的計量來調整部署中的 Pod 數目。 若要使用自動調整程式，您 pod 中的所有容器都必須定義 CPU 要求和限制。    | [設定水準 pod 自動調整](/azure/aks/tutorial-kubernetes-scale#autoscale-pods) |
-> | **使用自動化管線和 DevOps 部署應用程式。** 在將程式碼認可到生產環境部署之間，所有步驟的完整自動化都可讓小組專注于建立程式碼，並移除手動操作步驟中的額外負荷和潛在的人為錯誤。 部署新程式碼的速度更快且較不具風險，可協助小組變得更靈活、更具生產力，以及更自信地執行程式碼。    | [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices) <br> [設定 Kubernetes 組建管線 (影片) ](https://www.youtube.com/watch?v=5irsAdKoEBU&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=6) <br> [Azure Kubernetes Service 的部署中心](/azure/aks/deployment-center-launcher) <br> [部署至 Azure Kubernetes Service 的 GitHub Actions](/azure/aks/kubernetes-action) <br> [使用 Jenkins 的 CI/CD 來 Azure Kubernetes Service](/azure/aks/jenkins-continuous-deployment) |
+> | **設定準備就緒和活動的健康情況檢查。** Kubernetes 會使用就緒狀態和活動檢查來瞭解應用程式何時準備好接收流量，以及何時需要重新開機。 若未定義這類檢查，Kubernetes 將無法判斷您的應用程式是否已啟動且正在執行。 | [活動和準備就緒檢查](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes) |
+> | **設定記錄、應用程式監視和警示。** 監視容器很重要，尤其在您使用多個應用程式大規模執行生產環境叢集時。 容器化應用程式的建議記錄方法是寫入標準輸出 (stdout) 和標準錯誤 (stderr) 資料流程。 | [Kubernetes 中的記錄](https://kubernetes.io/docs/concepts/cluster-administration/logging) <br> [開始使用 Kubernetes (影片的監視和警示) ](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br> [適用於容器的 Azure 監視器](/azure/azure-monitor/insights/container-insights-overview) <br> [在 Azure Kubernetes Service (AKS) 中啟用並檢閱 Kubernetes 主要節點記錄](/azure/aks/view-master-logs) <br> [即時查看 Kubernetes 記錄、事件和 pod 計量](/azure/azure-monitor/insights/container-insights-livedata-overview) |
+> | **定義應用程式的資源需求。** 管理 Kubernetes 叢集中計算資源的主要方式是使用 pod 要求和限制。 這些要求和限制會告知 Kubernetes 排程器應指派 pod 的計算資源。 | [定義 &nbsp; pod &nbsp; 資源 &nbsp; 要求 &nbsp; 和 &nbsp; 限制](/azure/aks/developer-best-practices-resource-management) |
+> | **設定應用程式調整需求。** Kubernetes 支援水平 Pod 自動調整，可根據 CPU 使用率或其他選取的計量來調整部署中的 Pod 數目。 若要使用自動調整程式，您 pod 中的所有容器都必須定義 CPU 要求和限制。 | [設定水準 pod 自動調整](/azure/aks/tutorial-kubernetes-scale#autoscale-pods) |
+> | **使用自動化管線和 DevOps 部署應用程式。** 在將程式碼認可到生產環境部署之間，所有步驟的完整自動化都可讓小組專注于建立程式碼，並移除手動操作步驟中的額外負荷和潛在的人為錯誤。 部署新程式碼的速度更快且較不具風險，可協助小組變得更靈活、更具生產力，以及更自信地執行程式碼。 | [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices) <br> [設定 Kubernetes 組建管線 (影片) ](https://www.youtube.com/watch?v=5irsAdKoEBU&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=6) <br> [Azure Kubernetes Service 的部署中心](/azure/aks/deployment-center-launcher) <br> [部署至 Azure Kubernetes Service 的 GitHub Actions](/azure/aks/kubernetes-action) <br> [使用 Jenkins 的 CI/CD 來 Azure Kubernetes Service](/azure/aks/jenkins-continuous-deployment) |
 
 ## <a name="optimize-and-scale"></a>優化和調整
 

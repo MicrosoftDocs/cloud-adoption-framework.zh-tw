@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b7ce4166f1d32703688ecca03ffa9c929c28bc7e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4cbc51385cec6ccde4eaa500a7c62425d5e060a4
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283461"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571298"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning Machine Learning 作業
 

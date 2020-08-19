@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 281ca5333def961bf19df6c3703a381bb021ddc4
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: adeda043b1631caf19975163c3433f7aa9bef12a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284039"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571876"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>第3階段：持續的管理和安全性
 

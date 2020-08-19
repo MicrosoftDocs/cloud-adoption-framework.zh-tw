@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9e74fefafdf737138f631c8881edd4b5050b2693
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: e5fd5e1a0ef81e9d6c32fdc13959ced387ee3166
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283359"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571281"
 ---
 <!-- cSpell:ignore vcenter -->
 
@@ -110,7 +110,7 @@ Contoso 會使用 DevTest Labs 將其開發應用程式和資料庫 Vm 遷移至
 
 _圖2：遷移程式。_
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 要執行此案例所需的項目。
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a626cedd92b58af1cdad6f7e19da608fe6066be
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284158"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572063"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 

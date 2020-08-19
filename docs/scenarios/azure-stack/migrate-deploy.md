@@ -7,19 +7,20 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e17736d462653e16cc66daef268ff78ffd20f12e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 86c1d4b7eaea3c7de15dfd4417a6bcc21d956ea8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285858"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569632"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>將工作負載部署到 Azure Stack Hub
 
 藉由使用 Azure Stack，您的組織可以在其資料中心內執行自己的 Azure 實例。 組織會在其雲端策略中包含 Azure Stack，因為它可協助他們處理公用雲端無法運作的情況。 使用 Azure Stack 的三個最常見原因包括：
-* 對公用雲端的網路連線能力不佳。
-* 法規或契約需求。
-* 無法公開到網際網路的後端系統。
+
+- 對公用雲端的網路連線能力不佳。
+- 法規或契約需求。
+- 無法公開到網際網路的後端系統。
 
 ## <a name="infrastructure-as-a-service-deployment"></a>基礎結構即服務部署
 
@@ -36,6 +37,8 @@ ms.locfileid: "88285858"
 ## <a name="deploy-workloads"></a>部署工作負載
 
 在 Azure Stack Hub 系統管理員已正確設定您的堆疊實例之後，就可以繼續進行遷移，如同其他大部分的 Azure 遷移工作一樣。 藉由使用 Azure Stack，您的小組可以執行下列任何一種類型的遷移：
+
+<!-- cSpell:ignore howto -->
 
 - [乙太坊區塊鏈網路](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
 - [AKS 引擎](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)

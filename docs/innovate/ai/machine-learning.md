@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7dd7ce8c0618ce2965aee47b43858ceb122faefd
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 3fb28e0f68a5eddaff094a3f16640689cad48769
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279517"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568544"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 

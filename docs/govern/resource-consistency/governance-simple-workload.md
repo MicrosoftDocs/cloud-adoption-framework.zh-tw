@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 188bad7957c10699591c05a4a0bfdbc7611f512f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 030d06cf5b34a30ed2b65ed72fcafd10db9ef224
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280299"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572675"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
