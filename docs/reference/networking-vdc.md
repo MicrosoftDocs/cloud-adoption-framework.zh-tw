@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 12556ddab35df0ed98cc96594bcc3d94e59ad3d1
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 7cf77a1d6b8335d11a7e4c116ecb5463d5aee312
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278378"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575123"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -173,7 +173,7 @@ _Azure 虛擬 WAN 拓撲_可支援大規模的分公司案例和全球 WAN 服�
 
 雖然 Azure 允許複雜拓撲，但是 VDC 概念的其中一個核心準則是重複性和簡單性。 若要將管理投入時間降到最低，我們建議採用 VDC 參考架構這種簡單的中樞輪輻設計。
 
-### <a name="components"></a>單元
+### <a name="components"></a>元件
 
 虛擬資料中心是由四種基本元件類型所組成： **基礎結構**、 **周邊網路**、 **工作負載**和 **監視**。
 
@@ -412,7 +412,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 資料中心遷移的虛擬資料中心方法會建立可調整的架構，以優化 Azure 資源的使用、降低成本，並簡化系統管理。 虛擬資料中心通常是以使用虛擬網路對等互連或虛擬 WAN 中樞)  (的中樞和輪輻網路拓撲為基礎。 中樞內提供的一般共用服務，以及特定的應用程式和工作負載會部署在輪輻中。 虛擬資料中心也會符合公司角色的結構，其中的不同部門（例如中央 IT、DevOps、作業和維護）會一起運作，同時執行其特定角色。 虛擬資料中心支援將現有的內部部署工作負載遷移至 Azure，但也提供雲端原生部署的許多優點。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 深入瞭解本檔中討論的 Azure 功能。
 

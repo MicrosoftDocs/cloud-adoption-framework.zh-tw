@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b55bf2c0bb0a037ce6cedb2e6f87d81cb6f294f8
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 021f3c9913a09bf0b32dd5913b54cbd839ff380e
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284940"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574205"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -257,7 +257,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | Agile 詞彙 | 要包含的內容 | 範例 |
 |----------|---------------|--------|
 | Epic | 廣泛監視 <br> 監視策略的計畫 | 合併 Azure 雲端監視 <br> 混合式雲端監視 <br> 私用雲端監視 <br> 建立核心監視服務 |
-| 特性 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
+| 功能 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
 | 使用者案例和工作 | 最終結果是監視設定或解決方案 | 網路監視 (例如 ExpressRoute)  <br> 標準化的 IaaS VM 監視 (例如適用於 VM 的 Azure 監視器、application insights、Azure 原則、設定、原則、報告、工作區 )  |
 
 ## <a name="establish-minimum-governance"></a>建立最小治理

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fa6167d84183eb8e5c4da78520d9f27fc8ee8c41
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 294a165ac2aa7f70c5d47accf83abeb38713b28a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285093"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574647"
 ---
 # <a name="replication-options"></a>複寫選項
 

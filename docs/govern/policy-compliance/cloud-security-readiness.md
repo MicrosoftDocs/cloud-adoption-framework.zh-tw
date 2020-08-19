@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: df34addeab64e8e3c7bb0a16143c0c272b9263fa
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280248"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573253"
 ---
 <!-- cSpell:ignore CISO -->
 

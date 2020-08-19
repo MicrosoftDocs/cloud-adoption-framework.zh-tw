@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3df37e5fbdd9a6c29de1a26fd8b817d62b9de2d4
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 7942cc63341b3f15f770d6f23dca3e56bc606b65
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278174"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574732"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>雲端中的身分識別和金鑰管理功能
 

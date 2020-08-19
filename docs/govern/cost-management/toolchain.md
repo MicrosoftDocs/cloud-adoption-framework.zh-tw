@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f233a8f73979a9beb4cdc1734f05c2c9d8a3017
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 1de9c21e4d3201ddadae50c85557b4317190b693
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280775"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573695"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure 中的成本管理工具
 

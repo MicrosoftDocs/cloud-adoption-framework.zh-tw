@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: afd3b0ae34827a2b4d191a402a2a8a95d8ce4c10
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278922"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574154"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
@@ -110,6 +110,7 @@ ms.locfileid: "88278922"
 ### <a name="multicloud"></a>多重雲端
 
 跨多個雲端平台整合記錄和報告功能可能會是非常複雜的工作。 平台之間提供的服務通常無法直接比較，而且這些服務提供的記錄與遙測功能也不盡相同。
+
 多重雲端記錄支援通常需要先使用閘道服務將記錄資料處理成通用格式，然後再將資料提交給混合式記錄解決方案。
 
 ## <a name="learn-more"></a>深入了解

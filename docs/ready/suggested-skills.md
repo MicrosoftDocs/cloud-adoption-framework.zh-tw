@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: df76238defb37f5289f25e93507ba4d262228cca
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: c4f8e3cb34f901699ebfa5506fe9e657a71dde6c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285399"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575089"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 

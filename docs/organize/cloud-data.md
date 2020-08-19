@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 07/14/2020
-ms.openlocfilehash: fcb502c5f4a9d4457939eb425077e6dc70c7edac
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5f1dd3f63adabd18185e9e07fd0046019f220bb7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285518"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574766"
 ---
 # <a name="cloud-data-functions"></a>雲端資料功能
 
@@ -44,7 +44,7 @@ Azure Synapse Analytics 讓整個企業（從 IT 專案關係人到商務分析�
 - 資料超市
 - 異地冗余和資料一致性
 - 儀表板和報告
- 
+
  企業架構設計人員和資料工程師通常會關心如何建立能以整合方式運作的有效架構。 這類架構會保留效能、可用性、輕鬆管理、彈性/擴充性及可動作性。
 
 資料工程師可以使用 Azure Synapse Analytics，簡化從多個來源（包括串流、交易式和商務資料）整頓多個資料類型的步驟。 他們可以使用無程式碼的視覺化環境來連接至資料來源，並在 data lake 中內嵌、轉換和放置資料。
@@ -64,4 +64,3 @@ Azure Synapse Analytics 讓整個企業（從 IT 專案關係人到商務分析�
 ## <a name="executives"></a>主管
 
 主管負責制作圖表策略，並確保在 IT 和企業營運部門之間有效率地實行策略性計畫。 解決方案必須符合成本效益、避免業務中斷、可在需求變更和成長時輕鬆擴充，並將結果傳遞給企業。
-

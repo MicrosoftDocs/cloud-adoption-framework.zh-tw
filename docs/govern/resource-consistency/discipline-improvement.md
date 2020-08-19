@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3e42461514211085a4e22870ffd0a22069ae5291
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280265"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573236"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 

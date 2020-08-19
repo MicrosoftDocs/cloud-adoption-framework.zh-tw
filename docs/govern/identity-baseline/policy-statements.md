@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 156022087cb190817571e5fa602bb73dbabd2364
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 598f2a6e8c79020d0e62825066cc8305461de87a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280452"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573321"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 

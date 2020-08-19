@@ -1,18 +1,18 @@
 ---
 title: 開始使用：建立雲端作業小組
-description: 本指南可協助雲端營運團隊瞭解範圍、交付專案，以及他們負責的功能。
+description: 本指南可協助雲端營運團隊瞭解範圍、交付專案，以及小組負責的功能。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: e640b09ae9e799accc9091056e4deead73336a7e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281149"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573848"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：建立雲端作業小組
 
@@ -29,7 +29,7 @@ ms.locfileid: "88281149"
 **交付：**
 
 - 判斷您是否需要雲端營運團隊。
-- 開發跨小組的矩陣，以識別 _負責、負責任、諮詢及告知 (RACI) _ 合作物件的跨小組，以協調各小組的責任。 記錄工作表的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) 中的決策與負責任人員 `Org Alignment` 。
+- 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI) * 合作物件的跨小組，以協調各小組的責任。 記錄工作表的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) 中的決策與負責任人員 `Org Alignment` 。
 
 **支援交付完成的指導方針：**
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0e4cd938d4872b02ed90d650351a4112db26366e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 1cf17ea35f313c400b5a08cd91dd0b968da9ece1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281642"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574868"
 ---
 <!-- docsTest:ignore "Bulk Migration" "Cold Migration" -->
 

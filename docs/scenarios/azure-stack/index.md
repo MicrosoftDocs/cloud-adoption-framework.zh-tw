@@ -7,16 +7,16 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb2bae4d7568fbeeae1c17b919e1a155ea0b4185
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 9684ad72587b1132632a53d15385e2f396311536
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237129"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575021"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack：在您的資料中心內執行 Azure 的策略選項
 
-Microsoft 會針對應用程式和資料儲存採用雲端優先的方法。 其首要目標是將應用程式和資料移到一或多個超大規模資料庫雲端上，包括全域 Azure 選項或是地區專屬的主權雲端，例如 Azure 德國或 Azure Government。 
+Microsoft 會針對應用程式和資料儲存採用雲端優先的方法。 其首要目標是將應用程式和資料移到一或多個超大規模資料庫雲端上，包括全域 Azure 選項或是地區專屬的主權雲端，例如 Azure 德國或 Azure Government。
 
 Azure Stack Hub 會作為主權雲端的另一個執行個體，由客戶在其資料中心內運作，或透過雲端服務提供者來取用。 不過，Azure Stack Hub 不是超大規模資料庫雲端，而且 Microsoft 不會發佈或支援適用於 Azure Stack Hub 的任何服務等級協定。
 

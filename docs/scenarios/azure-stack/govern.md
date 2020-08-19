@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 400b71007dae1b39ae3c96d4a3394c1fd94f4267
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9672d7ba47c18202e685c18372ed1773674be069
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285773"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575055"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>在您的資料中心管理 Azure 實例
 

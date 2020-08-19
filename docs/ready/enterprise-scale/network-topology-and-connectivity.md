@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a718dec7e9c620671f6e262d7f51250b0d90da90
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 5e5988e2a75c5cc83f7145abb91feb3492bbe4dd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285909"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575174"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -243,7 +243,7 @@ _圖4：傳統的 Azure 網路拓撲。_
   _圖5：中樞和輪輻網路拓撲。_
 
 - 當下列其中一個條件成立時，請使用與多個 ExpressRoute 線路連線之多個虛擬網路的拓撲：
- 
+
   - 您需要高層級的隔離。
   - 您需要特定業務單位的專用 ExpressRoute 頻寬。
   - 您已達到每個 ExpressRoute 閘道的最大連線數目 (四個) 。

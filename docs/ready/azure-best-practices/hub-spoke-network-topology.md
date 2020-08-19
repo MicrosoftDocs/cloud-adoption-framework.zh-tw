@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: d31e17e0ebe3932b6708c3f0067833a925271018
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 81d00bb2076c936b06b6ac7a00ef19d0b0d43565
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285705"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574749"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 

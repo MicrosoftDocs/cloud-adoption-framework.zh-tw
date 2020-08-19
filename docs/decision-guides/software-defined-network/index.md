@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6cc107d743516160917d863fa69d2aa5a5aaa4a7
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 6ebc35f265af6a1808eb82870ea1e40f69d70888
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278599"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574035"
 ---
 # <a name="software-defined-networking-decision-guide"></a>軟體定義網路決策指南
 

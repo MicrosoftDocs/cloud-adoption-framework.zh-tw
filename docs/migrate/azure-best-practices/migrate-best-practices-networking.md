@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c085eebedfb1a5676888e14d12b23c099c7d0a84
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 0831b76e4712ea616171d62703f36c026bca8246
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285892"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574851"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -92,7 +92,7 @@ Azure 為虛擬網路提供下列功能：
 
 下表顯示虛擬網路的範例，其中的位址空間會 `10.245.16.0/20` 分割成子網，以進行計畫的遷移。
 
-| 子網路 | CIDR | 位址 | 使用量 |
+| 子網路 | CIDR | 位址 | 使用方式 |
 | --- | --- | --- | --- |
 | `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | 前端或 web 層 Vm |
 | `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | 應用程式層 VM |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b06907694bf8bb42ded96bd815a5fad5645ba919
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 6cdcc1b37b875f08d9221fe4ca855fc8b0bf7fa7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278752"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574018"
 ---
 # <a name="software-defined-networking-cloud-native"></a>軟體定義網路：雲端原生
 

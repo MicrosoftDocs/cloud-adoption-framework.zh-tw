@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05f7ada8474425db992d7c5a259662ee2e4f73cc
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 33817a6f0afc10e0415ed666855ff5818efdddf1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280810"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573627"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "88280810"
   - 貴組織中負責管理**工作負載**的兩個個人。
 - 支援多個**環境**。 環境是資源 (例如虛擬機器、虛擬網路和網路流量路由服務) 的邏輯群組。 這些資源的群組有類似的管理和安全性需求，且通常用於特定的目的，例如測試或生產環境。 在此範例中，需求適用于四種環境：
   - **共用基礎結構環境**，其中包含其他環境中工作負載共用的資源。 例如虛擬網路，具有提供與內部部署連線的閘道子網路。
-  - **生產環境**，具有最嚴格的安全性原則。 可能包含內部或外部對向工作負載。
+  - **生產環境**，具有最嚴格的安全性原則。 可能包含內部或外部面向的工作負載。
   - 適用于開發和測試工作的 **非生產環境** 。 此環境具有與生產環境不同的安全性、合規性和成本原則。 在 Azure 中，這會採用 Enterprise 開發/測試訂用帳戶的形式。
   - 適用于概念證明和教育用途的 **沙箱環境** 。 此環境通常會針對參與開發活動的每個員工指派，並具有嚴格的程式性和營運安全性控制項，以防止公司資料在此登陸。 在 Azure 中，這些都採用 Visual Studio 訂用帳戶的形式。 這些訂用帳戶也 _不_ 應該系結至企業 Azure Active Directory。
 - **最低權限的權限模型**，使用者在其中預設沒有任何權限。 模型必須支援下列項目：

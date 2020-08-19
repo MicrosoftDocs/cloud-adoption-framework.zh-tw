@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 30a22ea0de5dbc2e68b62a587c18d877dc221b3b
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 24557e154d5c30dd3755a4c8b7c0b8d82040883c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285382"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574477"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -97,7 +97,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
   - `OSTICKETWEB` 正在執行 Apache 2 和 PHP 7.0。
   - `OSTICKETMYSQL` 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 
@@ -250,7 +250,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
     - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
     - 當您執行移轉時，可以選取任何目的地區域。
 
-1. 選取 [下一步] 。
+1. 選取 [下一步]  。
 
 1. 在 [選取評量工具] 中，選取 **[Azure Migrate：伺服器評量]**  > [下一步]。
 

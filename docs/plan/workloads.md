@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ba34620ca9c179724acf0d0a45660d97da29bfc2
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8a163d17a0c50d8482f3e311a4ae240f071b36c9
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285620"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574307"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>定義雲端採用方案的工作負載並設定其優先順序
 
@@ -26,7 +26,7 @@ ms.locfileid: "88285620"
 
 在雲端採用的環境中，工作負載是 IT 資產的集合， (伺服器、Vm、應用程式、資料或設備) ，共同支援定義的進程。 工作負載可支援一個以上的進程。 工作負載也可相依于其他共用資產或較大的平臺。 但是，工作負載應該已定義相依資產的界限，以及相依于工作負載的進程。 通常，您可以藉由監視 IT 資產之間的網路流量來視覺化工作負載。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 必要條件清單中的策略性輸入可讓您更輕鬆地完成下列工作。 如需收集本文所討論之資料的協助，請參閱 [必要條件](./prerequisites.md)。
 

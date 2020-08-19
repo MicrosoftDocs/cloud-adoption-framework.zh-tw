@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 301270537a5ce557ba33126d058e5d7c042ce42d
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285178"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572964"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>開始使用技能就緒路徑
 

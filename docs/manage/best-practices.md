@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b75cfa7233d85cff6cb3992909eccb684ea079f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 54c6e5d3dc292e3380fe0b51b265165b8fed3f28
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284022"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574885"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 

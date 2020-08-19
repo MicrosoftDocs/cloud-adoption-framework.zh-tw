@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6f61bdbd1843dea82ab645768465e1e1b3541f20
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: a5bda49e04da5febf7bc2564f250ca4686c172cc
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278233"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575191"
 ---
 # <a name="expand-your-landing-zone"></a>擴充登陸區域
 

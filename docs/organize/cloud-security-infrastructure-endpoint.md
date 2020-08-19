@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f5a4b4948e75dd05608f0a4a0458f7eb7f0554fe
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 501fda7420de811a6e92de388fa6eb5b981ae324
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278191"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574715"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>雲端基礎結構和端點安全性的功能
 

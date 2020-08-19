@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5b0bd2b49bf0e8e6582458edaaf4a64e13456d2b
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 1f50e011e0d7a4884f7cb6202895acd4acdeb5f8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280707"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573644"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 

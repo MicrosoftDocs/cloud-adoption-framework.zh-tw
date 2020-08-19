@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b786bb53e954a274ecb3fd7d3f5f1bb90152be28
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: f3903361b9ce2f4fa353d5d1dc2194c0d987babd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284634"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574324"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 

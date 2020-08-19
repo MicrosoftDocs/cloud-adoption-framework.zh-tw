@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e87c6fb5d6d5ad28514ddfc3a5316b84d4c607a8
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 0f24b44be27111461e2374d12b8bdc75ca0aabb2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280690"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573610"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 

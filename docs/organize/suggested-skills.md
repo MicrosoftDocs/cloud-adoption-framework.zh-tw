@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7826fd97d59db21d3cdbffbf588da7e8a2d13428
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 45ebaec6b6d0abe665fc4a038892b7f1c3a053ff
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285229"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574596"
 ---
 # <a name="build-technical-skills"></a>建置技術技能
 

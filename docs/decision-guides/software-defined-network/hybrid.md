@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ba89c2e70b8ea603102bd5d68067001bcb99192d
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 38f0a66e9a5aa1b9adf0a232e3cb37f27ae96459
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278616"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574001"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>軟體定義網路：混合式網路
 

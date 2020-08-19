@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 616686abdeffb08dbb25db0544042e66c1cf7e9e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: c418233559d93b59a468caa24fe43984184898ec
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283954"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574936"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 

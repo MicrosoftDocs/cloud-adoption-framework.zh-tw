@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 7ded7459ecf76836b379b3482ddaba9befb5faa5
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 9e7980b54d46f96399904152884d6ed5fe4ac4bc
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284872"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574273"
 ---
 <!--docsTest:ignore TVM -->
 

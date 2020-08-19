@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 69a27bd28fb22f7c7a15490ac65d8dc7053b5f63
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cef47631cc3fba0b6645476f5b91b330ea8c89ef
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278939"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574171"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 

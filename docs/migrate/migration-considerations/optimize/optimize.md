@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 81ea827a483f64f4482bc84c2e165db8e6dc853f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4668d9a35d51f40322946f239e5d66373d83d144
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285552"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572998"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 

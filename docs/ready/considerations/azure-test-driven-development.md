@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f7a62d2fea4c94495045423bc575323763b7a47e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 2bae2a2d9d5392296e8ad522ecf686e3d58b23da
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284991"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574256"
 ---
 # <a name="test-driven-development-for-landing-zones-in-azure"></a>Azure 中登陸區域的測試導向開發
 

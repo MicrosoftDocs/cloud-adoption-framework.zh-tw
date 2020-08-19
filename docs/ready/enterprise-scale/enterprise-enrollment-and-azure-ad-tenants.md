@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5dc97518826961e4cf3296e7cb7ce0ea8a2ff1e2
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 8deee8d727fea6fd1f8f1ee43027cf72919871d2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278216"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574681"
 ---
 # <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise 合約註冊和 Azure Active Directory 租使用者
 

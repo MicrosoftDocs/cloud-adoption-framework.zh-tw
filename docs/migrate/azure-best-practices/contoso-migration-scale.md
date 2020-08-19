@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 38a2c43d5240dead7d545a406c3b8f9430736ca0
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 0123c55b2866701482a85427c1f9cadb56ef4fa5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281659"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574834"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -186,7 +186,7 @@ Data Migration Assistant 可協助 Contoso 找出內部部署資料庫是否與�
 
 Contoso 可以考慮採用四種廣泛的遷移策略。
 
-| 策略 | 詳細資料 | 使用量 |
+| 策略 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | 重新裝載 | <li> 這通常稱為「隨即 _轉移_ 」，這是可讓您快速將現有應用程式遷移至 Azure 的無程式碼選項。 <li> 應用程式會以雲端的優點進行遷移，而不會有與程式碼變更相關聯的風險或成本。 | <li> Contoso 可以重新裝載不需要變更程式碼的較不具策略性的應用程式。 |
 | 重構 | <li> 也稱為重新封裝，此策略需要最基本的應用程式程式碼或設定 *變更，以*將應用程式連線至 Azure PaaS，並利用雲端功能。 | <li> Contoso 可以重構策略性應用程式來保留相同的基本功能，但請將其移到 Azure 平臺上執行（例如 Azure App Service）。 <li> 此策略所需變更的程式碼最少。 <li> 另一方面，Contoso 必須維持 VM 平臺，因為 Microsoft 不會管理這一點。 |

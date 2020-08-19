@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 8ca0d2f5c46fe0d068342f59d32bfaed2942fc58
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 1f759debd007ffdf03cee1802a564a8b11927964
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285790"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575072"
 ---
 <!-- cSpell:ignore Terraform's -->
 

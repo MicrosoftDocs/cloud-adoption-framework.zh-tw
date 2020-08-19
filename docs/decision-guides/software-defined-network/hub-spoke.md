@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2f522113a487e718ef673ac4904abc27a4f4b151
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cd1ecfe758fcab297440bc65dcda7da310c25ec5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278718"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573984"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 

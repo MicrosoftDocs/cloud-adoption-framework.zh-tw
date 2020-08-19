@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d312c2747a6c7f308d47e0b825ce06aaa62c6830
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 301afe5e901685b5069ec73937c86674a1eb17d1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285739"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574987"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Windows 虛擬桌面部署後
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3b078ebf8ffee9ce8b3be1bdc7b2db1bfde1823f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4c1b598eb8e027947a218ef558c1827878fa5f68
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278038"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574239"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -49,7 +49,7 @@ ms.locfileid: "88278038"
 
 下表說明一些常見的使用案例，以及用來處理這些需求的建議計算服務：
 
-| 案例  | 計算服務 |
+| 狀況  | 計算服務 |
 | --- | --- |
 | 我需要透過選擇的設定，在幾秒內佈建 Linux 和 Windows 虛擬機器。 | [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines) |
 | 我需要透過自動調整達到高可用性，以用幾分鐘的時間建立數千部 VM。 | [虛擬機器擴展集](https://azure.microsoft.com/services/virtual-machine-scale-sets) |

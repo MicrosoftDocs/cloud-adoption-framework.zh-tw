@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ead2b0dd3909c5451bf261d612aa1318aa5ac66f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284889"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572913"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 

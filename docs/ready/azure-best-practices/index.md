@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 174bdbcaf6daec265543a7ebe7980cd90de4966d
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: c3c9ab2d1177a023e3a7bed569cad317d5dc117a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285603"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574545"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 
