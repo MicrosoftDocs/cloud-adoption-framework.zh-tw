@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 088ee6b4582ef83255bcda6a5006dac3571e830a
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 1fcc9914a2ba517598972c52dc9e286933d122d2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284583"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572624"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->

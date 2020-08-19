@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 377226674d3a07d479d7b8f3e9f8c72e0dfd763e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 001689cb017e6e4c86d2e79ae880aef74f78cff5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284260"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572216"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -26,10 +26,6 @@ ms.locfileid: "88284260"
 
 為了針對此階段的雲端採用生命週期做好準備，建議您進行以下練習：
 
-<!-- markdownlint-disable MD033 -->
-
 - [應用程式開發與部署](./application-development.md)：檢查應用程式開發的模式和實務、設定 CI/CD 管線，並實行網站可靠性工程 (SRE) 最佳作法。
 - [叢集設計和作業](./cluster-design-operations.md)：識別叢集設定和網路設計。 將基礎結構佈建自動化，以確保未來的可擴縮性。 藉由規劃商務持續性和災害復原，來維持高可用性。
 - [叢集和應用程式安全性](./cluster-application-security.md)：熟悉 Kubernetes 安全性基本功能。 請參閱叢集和應用程式安全性指引的安全設定。
-
-<!-- markdownlint-enable MD033 -->

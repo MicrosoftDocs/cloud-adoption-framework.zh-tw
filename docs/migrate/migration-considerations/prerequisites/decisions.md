@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 509752771c50dce66a5826ee4e93a11f01550e60
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 46cc58d9f347987624d0cf3ebb1f9cf02740e87c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285263"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575242"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -77,7 +77,7 @@ ms.locfileid: "88285263"
 在繼續之前，請先記下以下假設，並與雲端策略小組和雲端採用小組分享：
 
 - 業務成果。
-- 針對 _評估_、 _遷移_、 _優化_和 _保護和管理_ 遷移程式所記載及調整的角色。
+- 針對 *評估*、 *遷移*、 *優化*和 *保護和管理* 遷移程式所記載及調整的角色。
 - 針對這些遷移程式個別定義了完成、記載及調整的定義。
 - 工作類型。
 - 工作規模。

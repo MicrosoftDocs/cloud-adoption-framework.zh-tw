@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c749237029542e8757af75b9a83aaba8cd917055
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 6887955f64b7e878f578219f584a028df6bea8c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279619"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568646"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -25,8 +25,6 @@ ms.locfileid: "88279619"
 ## <a name="get-started"></a>開始使用
 
 為了針對此階段的雲端採用生命週期做好準備，建議您進行以下練習：
-
-<!-- markdownlint-disable MD033 -->
 
 - [Machine Learning 模型的開發、部署和管理](https://azure.microsoft.com/overview/ai-platform/dev-resources/)：檢查用來建置自有機器學習模型的模式和做法，包括 MLOps、自動化機器學習 (AutoML) 及負責任的 ML 學習工具，例如 InterpretML 和 FairLearn。
 - [將特定領域的 AI 模型新增至您的應用程式](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/)：了解使用認知服務將 AI 功能新增至應用程式的最佳做法。 同時了解這些服務可協助您解決的重要案例。

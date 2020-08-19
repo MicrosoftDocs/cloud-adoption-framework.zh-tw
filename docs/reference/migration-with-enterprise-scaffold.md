@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 7fcd806093e8ecaaae959350648e45c913cc1400
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: b3843cf0f0de675eacea05fb261167bc37dc90d1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285433"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574443"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
