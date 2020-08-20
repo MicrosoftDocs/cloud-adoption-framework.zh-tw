@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46cc58d9f347987624d0cf3ebb1f9cf02740e87c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b615d84cf1f48ebb2876497912dd18950cdfe1fb
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575242"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661906"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "88575242"
 
 任何採用工作的目的或目標，都可能對建議的執行方法產生顯著的影響。
 
-- **移轉。** 迫切的商業誘因、採用速度或成本節約，都是營運成果的範例。 這些成果對於推動 IT 或營運模型過渡變更的商業價值的工作而言非常重要。 雲端採用架構中的遷移方法著重于專注于遷移的業務成果。
+- **移轉。** 迫切的商業誘因、採用速度或成本節約，都是營運成果的範例。 這些成果對於推動 IT 或營運模型過渡變更的商業價值的工作而言非常重要。 雲端採用架構的遷移方法著重于專注于遷移的業務成果。
 - **應用程式創新**。 改善客戶體驗和提高市佔率，是累加成果的範例。 這些成果來自於一系列以目前客戶的需求和期望為主的累加變更。
 - **資料驅動創新**。 新的產品或服務（特別是來自資料的強大功能）是干擾性結果的範例。 這些成果來自於使用資料來打破市場現況的測試和預測。
 

@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9567b09ef527e59be2c1206cc6933c2f88bc9834
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 83086286d620f33aa2f92b2f13aa9a0e4c7b1dd2
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569479"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662161"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
-在雲端中建立新的產品和服務，需要的方法與遷移所需的方法不同。 適用于 Azure 的雲端採用架構中的創新方法會建立一種方法，以引導您開發新的產品和服務。
+在雲端中建立新的產品和服務，需要的方法與遷移所需的方法不同。 適用于 Azure 的雲端採用架構的創新方法會建立一個方法，以引導您開發新的產品和服務。
 
 本指南使用下圖中反白顯示的雲端採用架構區段。 創新比標準遷移更不容易預測，但仍適用于更廣泛的雲端採用方案內容中。 本指南可協助您的企業提供創新所需的支援，並提供結構來建立整個雲端採用的平衡組合。
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573848"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661940"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：建立雲端作業小組
 
@@ -87,7 +87,7 @@ ms.locfileid: "88573848"
 
 ## <a name="step-4-review-the-methodology"></a>步驟4：檢查方法
 
-若要協助建立作業管理的未來願景，以及達成該願景的可行方法，請參閱雲端採用架構中的管理方法。
+若要協助建立作業管理的未來願景，以及達成該願景的可行方法，請參閱雲端採用架構的管理方法。
 
 **交付：**
 
@@ -95,7 +95,7 @@ ms.locfileid: "88573848"
 
 **支援交付完成的指導方針：**
 
-- 請參閱 [雲端採用架構中的管理方法](../../manage/index.md)。
+- 複習 [雲端採用架構的管理方法](../../manage/index.md)。
 
 **責任小組：**
 

@@ -1,18 +1,18 @@
 ---
 title: Azure 的應用程式移轉範例概觀
-description: 概要說明雲端採用架構中遷移方法的一部分所包含的應用程式遷移範例。
+description: 概述雲端採用架構遷移方法中包含的應用程式遷移範例。
 author: deltadan
 ms.author: abuck
 ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: afae06e0a9bd432a2901e245b28917c37efe6e9a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c9dcdb9c3ce42a0221adeb6d418f4329f471eb5d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567082"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661923"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure 的應用程式移轉範例概觀
 

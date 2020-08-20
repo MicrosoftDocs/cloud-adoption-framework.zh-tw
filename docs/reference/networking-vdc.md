@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7cf77a1d6b8335d11a7e4c116ecb5463d5aee312
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575123"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662467"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -315,7 +315,7 @@ Azure 監視器有兩種基本類型的記錄：
 「Azure 監視器」可以從各種來源收集資料。 您可以將應用程式的監視資料（範圍從您的應用程式、任何作業系統，以及它所依賴的服務）細分為 Azure 平臺本身。 Azure 監視器會從下列各階層收集資料：
 
 - **應用程式監視資料：** 您所撰寫之程式碼的效能和功能相關資料（不論其平臺為何）。
-- 客體 OS 監視資料：有關應用程式執行所在作業系統的資料。 此 OS 可能正在 Azure、另一個雲端或內部部署中執行。
+- **來賓 OS 監視資料：** 您的應用程式執行所在作業系統的相關資料。 此 OS 可能正在 Azure、另一個雲端或內部部署中執行。
 - **Azure 資源監視資料：** 有關 Azure 資源操作的資料。
 - **Azure 訂用帳戶監視資料：** 有關 Azure 訂用帳戶作業和管理的資料，以及有關 Azure 本身健康情況和作業的資料。
 - **Azure 租使用者監視資料：** 租使用者層級 Azure 服務的作業相關資料，例如 Azure Active Directory。
@@ -412,7 +412,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 資料中心遷移的虛擬資料中心方法會建立可調整的架構，以優化 Azure 資源的使用、降低成本，並簡化系統管理。 虛擬資料中心通常是以使用虛擬網路對等互連或虛擬 WAN 中樞)  (的中樞和輪輻網路拓撲為基礎。 中樞內提供的一般共用服務，以及特定的應用程式和工作負載會部署在輪輻中。 虛擬資料中心也會符合公司角色的結構，其中的不同部門（例如中央 IT、DevOps、作業和維護）會一起運作，同時執行其特定角色。 虛擬資料中心支援將現有的內部部署工作負載遷移至 Azure，但也提供雲端原生部署的許多優點。
 
-## <a name="references"></a>參考資料
+## <a name="references"></a>參考
 
 深入瞭解本檔中討論的 Azure 功能。
 
@@ -472,7 +472,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 :::row:::
     :::column:::
-        **安全性** <br>
+        **Security** <br>
         [Azure 防火牆][AzFW] <br>
         [防火牆管理員][AzFWMgr] <br>
         [應用程式閘道 WAF][AppGWWAF] <br>

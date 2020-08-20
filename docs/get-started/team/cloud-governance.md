@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9c611e196b9bf5777181b99ef184759eb4d56bb6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 346b4feabfbb7fefd8632ac4b3f5f81473815843
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573865"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661991"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：建立雲端治理小組
 
@@ -86,7 +86,7 @@ ms.locfileid: "88573865"
 
 ## <a name="step-4-review-the-methodology"></a>步驟4：檢查方法
 
-若要協助建立未來對於治理的願景，以及該願景的運作方式，請參閱雲端採用架構中的控管方法。
+若要協助建立未來對於治理的願景，以及該願景的運作方式，請參閱雲端採用架構的控管方法。
 
 **交付：**
 
