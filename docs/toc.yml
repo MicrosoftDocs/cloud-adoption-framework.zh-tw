@@ -23,8 +23,6 @@ items:
             href: reference/fundamental-concepts/hosting-hierarchy.md
           - name: Azure 階層支援
             href: reference/fundamental-concepts/hierarchy-azure-tools.md
-          - name: 作業模型術語
-            href: operating-model/terms.md
       - name: 加速移轉
         href: get-started/migrate.md
       - name: 建置新的產品與服務
@@ -55,7 +53,7 @@ items:
         href: get-started/team/cloud-operations.md
   - name: 策略
     items:
-      - name: 總覽
+      - name: 概觀
         href: strategy/index.md
       - name: 動機
         href: strategy/motivations.md
@@ -133,7 +131,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: Prerequisites
+          - name: 必要條件
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -179,6 +177,16 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: 隨時得知 Azure 的最新動態
             href: ready/azure-setup-guide/staying-current.md
+      - name: 作業模型
+        items:
+          - name: 概觀
+            href: operating-model/index.md
+          - name: 定義您的作業模型
+            href: operating-model/define.md
+          - name: 比較常見的雲端作業模型
+            href: operating-model/compare.md
+          - name: 常見的作業模型術語
+            href: operating-model/terms.md
       - name: Azure 登陸區域
         items:
           - name: 什麼是登陸區域？
@@ -231,7 +239,7 @@ items:
                 href: ready/considerations/index.md
               - name: 基本登陸區域考量
                 items:
-                  - name: 總覽
+                  - name: 概觀
                     href: ready/considerations/basic-considerations.md
                   - name: 檢閱計算選項
                     href: ready/considerations/compute-options.md
@@ -449,7 +457,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Prerequisites
+                  - name: 必要條件
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -687,7 +695,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: Prerequisites
+              - name: 必要條件
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
@@ -803,7 +811,7 @@ items:
                 href: innovate/best-practices/index.md
               - name: 將資料大眾化
                 items:
-                  - name: 總覽
+                  - name: 概觀
                     href: innovate/best-practices/data.md
                   - name: 與專家共用資料
                     items:
@@ -880,7 +888,7 @@ items:
                           - name: Web 應用程式參考解決方案
                             href: /azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: 使用 Azure SQL Database 建立 .NET Core 應用程式
-                            href: /azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
                           - name: 使用 Azure SQL Database 建立 .NET 應用程式
                             href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: 使用 MySQL 建立 PHP 應用程式

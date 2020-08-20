@@ -12,12 +12,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: d65281dd02e597745a3864d04d9ec106e8692012
-  ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+  ms.openlocfilehash: 72fd313f921069eeaeee6cbaa36f6446d33f84e4
+  ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "88279993"
+  ms.lasthandoff: 08/18/2020
+  ms.locfileid: "88569073"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -37,7 +37,7 @@ productDirectory:
   summary: 此指引符合雲端採用生命週期的階段，可確保您能在適當時間輕易取得正確的指引。
   items:
   - title: 開始使用
-    imageSrc: https://docs.microsoft.com/media/common/i_road-map.svg
+    imageSrc: ./_images/caf-get-started.png
     links:
     - url: ./get-started/cloud-concepts.md
       text: 記錄基礎決策
@@ -74,10 +74,10 @@ productDirectory:
     links:
     - url: ./ready/azure-setup-guide/index.md
       text: Azure 設定指南
+    - url: ./operating-model/index.md
+      text: 作業模型對齊
     - url: ./ready/landing-zone/index.md
       text: Azure 登陸區域
-    - url: ./ready/considerations/index.md
-      text: 展開登陸區域
     - url: ./ready/azure-best-practices/index.md
       text: Azure 移轉整備程度的最佳做法
   - title: 遷移
@@ -125,7 +125,7 @@ productDirectory:
     - url: ./manage/design-principles.md
       text: 評估設計原則
   - title: 組織
-    imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    imageSrc: ./_images/caf-organize.png
     links:
     - url: ./organize/index.md
       text: 組織一致性
@@ -184,4 +184,4 @@ additionalContent:
     - title: 尋找合作夥伴
       summary: 尋找可協助您開始使用的合作夥伴
       url: https://aka.ms/adopt/findapartner
-  footer: See why the Cloud Adoption Framework is right for your business. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)
+  footer: 了解為何雲端採用架構適合您的企業。 [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

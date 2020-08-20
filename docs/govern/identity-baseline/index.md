@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f970429916347bf03d4357d85c164880e3bf749f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: c5cc6e24c6e32f1bcc8289f8c5a23d542f7fff94
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280486"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573508"
 ---
 # <a name="identity-baseline-discipline-overview"></a>身分識別基準專業領域概觀
 
@@ -35,18 +35,16 @@ ms.locfileid: "88280486"
 
 ## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
-下列六個步驟提供在開發身分識別基準專業領域時所應考量的範例和可能選項。 使用每個資源作為起點，在雲端治理小組中討論，並與組織內受影響的業務和 IT 小組討論，藉以建立管理身分識別相關風險所需的原則和程序。
+下列步驟提供在開發身分識別基準專業領域時所應考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論，並與組織內受影響的業務和 IT 小組討論，藉以建立管理身分識別相關風險所需的原則和程序。
 
-<!-- markdownlint-disable MD033 -->
-
-- [身分識別基準專業領域範本](./template.md)：下載此範本以便記錄身分識別基準專業領域。
-- [商務風險](./business-risks.md)：了解通常與身分識別基準專業領域相關聯的動機與風險。
-- [指標和計量](./metrics-tolerance.md)：了解其是否為投資身分識別基準專業領域之正確時機的指標。
-- [原則遵循流程](./compliance-processes.md)：用以在身分識別基準專業領域中支援原則合規性的建議流程。
-- [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。
-- [工具鏈](./toolchain.md)：可實作來支援身分識別基準專業領域的 Azure 服務。
-
-<!-- markdownlint-enable MD033 -->
+|  |  |
+|--|--|
+| <br> ![範本圖示](../../_images/govern/process-template.png)   | <br> [身分識別基準專業領域範本](./template.md)：下載此範本以便記錄身分識別基準專業領域。 |
+| <br> ![風險圖示](../../_images/govern/process-risks.png)         | <br> [商務風險](./business-risks.md)：了解通常與身分識別基準專業領域相關聯的動機與風險。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png)     | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資身分識別基準專業領域之正確時機的指標。 |
+| <br> ![遵循圖示](../../_images/govern/process-enforce.png)   | <br> [原則遵循流程](./compliance-processes.md)：用以在身分識別基準專業領域中支援原則合規性的建議流程。 |
+| <br> ![成熟度圖示](../../_images/govern/process-maturity.png)   | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。 |
+| <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援身分識別基準專業領域的 Azure 服務。 |
 
 ## <a name="next-steps"></a>後續步驟
 

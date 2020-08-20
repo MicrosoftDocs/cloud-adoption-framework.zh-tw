@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 89e57eba7e5f48c396dd537299529b010e612506
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 229ce28994c241d2631d5271577a566ceb0b7ed6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280962"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573746"
 ---
 # <a name="cost-management-discipline-overview"></a>成本管理專業領域概觀
 
@@ -33,16 +33,16 @@ ms.locfileid: "88280962"
 
 ## <a name="develop-governance-policy-statements"></a>開發治理原則聲明
 
-下列資訊將協助您定義治理原則來控制環境中的成本。
+下列步驟可協助您定義治理原則來控制環境中的成本。
 
-<!-- markdownlint-disable MD033 -->
-
-- [成本管理專業領域範本](./template.md)：下載此範本以記錄成本管理專業領域。
-- [商務風險](./business-risks.md)：了解通常會與成本管理專業領域相關聯的動機與風險。
-- [指標和計量](./metrics-tolerance.md)：了解其是否為投資成本管理專業領域之正確時機的指標。
-- [原則遵循流程](./compliance-processes.md)：用以在成本管理專業領域中支援原則合規性的建議流程。
-- [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。
-- [工具鏈](./toolchain.md)：可實作來支援成本管理專業領域的 Azure 服務。
+|  |  |
+|--|--|
+| <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [成本管理專業領域範本](./template.md)：下載此範本以記錄成本管理專業領域。 |
+| <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常會與成本管理專業領域相關聯的動機與風險。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資成本管理專業領域之正確時機的指標。 |
+| <br> ![遵循圖示](../../_images/govern/process-enforce.png) | <br> [原則遵循流程](./compliance-processes.md)：用以在成本管理專業領域中支援原則合規性的建議流程。 |
+| <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。 |
+| <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援成本管理專業領域的 Azure 服務。 |
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -50,5 +50,3 @@ ms.locfileid: "88280962"
 
 > [!div class="nextstepaction"]
 > [了解業務風險](./business-risks.md)
-
-<!-- markdownlint-enable MD033 -->
