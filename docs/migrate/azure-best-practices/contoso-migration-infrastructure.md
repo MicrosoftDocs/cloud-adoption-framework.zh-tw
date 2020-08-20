@@ -25,7 +25,7 @@ ms.locfileid: "88571366"
 
 您是否需要本文所說明的所有元素，取決於您的移轉策略。 例如，如果您只在 Azure 中建立雲端原生應用程式，則可能需要較不復雜的網路結構。
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>總覽
 
 Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 通常，Contoso 需要考慮六個區域：
 
@@ -38,7 +38,7 @@ Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 �
 > - **步驟5：安全性。** 它會如何保護混合式部署的安全？
 > - **步驟6：管理。** 它會如何讓部署符合安全性和治理需求？
 
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
+## <a name="before-you-start"></a>開始之前
 
 開始查看基礎結構之前，請考慮閱讀相關 Azure 功能的一些背景資訊：
 
@@ -768,7 +768,7 @@ Contoso 必須以對企業有意義的方式將其 Azure 資產視覺化，例�
 | `COBPriority` | BCDR 的企業所設定的優先順序。 1-5 的值。 |
 | `ENV` | `DEV`、 `STG` 和 `PROD` 是允許的值，代表開發、預備和生產環境。 |
 
-例如：
+例如︰
 
 ![顯示 Azure 標記的螢幕擷取畫面。](./media/contoso-migration-infrastructure/azure-tag.png)
 
