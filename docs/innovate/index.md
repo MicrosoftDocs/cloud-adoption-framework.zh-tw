@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: dcabcd7621e8f877b1f92ef97453a44d6d431b54
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 4c037670f19a8a448f3a8632929bca5f81e92d2b
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568289"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662365"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 

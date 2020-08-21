@@ -8,12 +8,12 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: a461a79657e52680b137ba6cc78541092faf73b6
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 63eb1694e24f1ef8041d2e08e2328314b273915c
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279092"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662112"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 

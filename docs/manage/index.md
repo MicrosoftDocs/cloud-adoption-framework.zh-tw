@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cf4cc33734b33e0b0c71ca33973bb81397f1f8f2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 08b75f151806d3d03441845a4acb53e17d3a748d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571417"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662093"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "88571417"
 
 <!-- cSpell:ignore CAF -->
 
-![管理雲端採用架構中的方法](../_images/manage/caf-manage.png)
+![管理雲端採用架構的方法](../_images/manage/caf-manage.png)
 
 如[業務配合](./considerations/business-alignment.md)一文所述，並非所有工作負載都具有任務關鍵性。 雲端組合內會有各種程度的營運管理需求。 業務配合工作可協助您掌握業務影響，並與業務協調管理成本，以確保您會有最適當的作業管理流程和工具。
 

@@ -131,7 +131,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: 必要條件
+          - name: Prerequisites
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -272,7 +272,9 @@ items:
                   - name: Azure 網路安全性最佳做法
                     href: /azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                   - name: Azure 作業安全性最佳做法
-                    href: /azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: 夥伴登陸區域
+            href: ready/landing-zone/partner-landing-zone.md
           - name: 基礎結構即程式碼理論
             items:
               - name: 重構登陸區域
@@ -457,7 +459,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: 必要條件
+                  - name: Prerequisites
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -695,7 +697,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: 必要條件
+              - name: Prerequisites
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md

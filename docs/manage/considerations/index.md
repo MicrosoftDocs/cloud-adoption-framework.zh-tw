@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 73eb996730322522309e3410ca1f1a807cd7722f
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223961"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662246"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>雲端的 IT 管理和作業
 
@@ -30,7 +30,7 @@ ms.locfileid: "83223961"
 
 <!-- cSpell:ignore caf -->
 
-![管理雲端採用架構中的方法](../../_images/manage/caf-manage.png)
+![管理雲端採用架構的方法](../../_images/manage/caf-manage.png)
 
 ## <a name="next-steps"></a>後續步驟
 
