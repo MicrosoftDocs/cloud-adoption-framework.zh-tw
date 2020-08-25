@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 5db2ac236aee2a710f01d2d45a1d6477f554796c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571366"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848341"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "88571366"
 
 您是否需要本文所說明的所有元素，取決於您的移轉策略。 例如，如果您只在 Azure 中建立雲端原生應用程式，則可能需要較不復雜的網路結構。
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 通常，Contoso 需要考慮六個區域：
 
@@ -123,7 +123,7 @@ _圖3： Azure 保留的虛擬機器執行個體。_
 
 使用身分識別和存取管理來提供和控制使用者對 Azure 資源的存取，是將 Azure 基礎結構提取在一起的重要步驟。
 
-Contoso 公司決定將其內部部署 Active Directory 擴充至雲端，而不是在 Azure 中建置新的個別系統。 因為 Contoso 尚未使用 Office 365，所以需要布建 Azure AD 實例。 如果 Contoso 使用 Office 365，則它已經有現有的 Azure AD 租使用者和目錄，可以用來做為主要 Azure AD 實例。
+Contoso 公司決定將其內部部署 Active Directory 擴充至雲端，而不是在 Azure 中建置新的個別系統。 因為 Contoso 尚未使用 Microsoft 365，所以需要布建 Azure AD 實例。 如果 Contoso 使用 Microsoft 365，則它已經有現有的 Azure AD 租使用者和目錄，可以用來做為主要的 Azure AD 實例。
 
 深入瞭解 [Microsoft 365 身分識別模型和 Azure Active Directory](/office365/enterprise/about-office-365-identity)。 您也可以瞭解如何 [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租使用者](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。
 
@@ -207,7 +207,7 @@ _圖7：內部部署 Active Directory 安全性群組。_
 
 ### <a name="synchronize-active-directory"></a>同步處理 Active Directory
 
-Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的資源。 若要這樣做，它會將內部部署 Active Directory 實例與 Azure AD 整合。 使用此模型，使用者和組織可以利用單一身分識別來存取內部部署應用程式和雲端服務，例如 Office 365 或網際網路上上千個其他網站。 系統管理員可以使用 Active Directory 中的群組，在 Azure 中執行以 [角色為基礎的存取控制 (RBAC) ](/azure/role-based-access-control/role-assignments-portal) 。
+Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的資源。 若要這樣做，它會將內部部署 Active Directory 實例與 Azure AD 整合。 使用此模型，使用者和組織可以利用單一身分識別來存取內部部署應用程式和雲端服務，例如 Microsoft 365 或網際網路上上千個其他網站。 系統管理員可以使用 Active Directory 中的群組，在 Azure 中執行以 [角色為基礎的存取控制 (RBAC) ](/azure/role-based-access-control/role-assignments-portal) 。
 
 為了加速整合，Contoso 使用 [Azure AD Connect 工具](/azure/active-directory/connect/active-directory-aadconnect)。 當您在網域控制站上安裝並設定此工具時，它會同步處理內部部署 Active Directory 身分識別，以 Azure AD。
 
@@ -768,7 +768,7 @@ Contoso 必須以對企業有意義的方式將其 Azure 資產視覺化，例�
 | `COBPriority` | BCDR 的企業所設定的優先順序。 1-5 的值。 |
 | `ENV` | `DEV`、 `STG` 和 `PROD` 是允許的值，代表開發、預備和生產環境。 |
 
-例如︰
+例如：
 
 ![顯示 Azure 標記的螢幕擷取畫面。](./media/contoso-migration-infrastructure/azure-tag.png)
 

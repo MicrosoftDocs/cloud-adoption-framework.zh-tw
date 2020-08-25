@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c178c8814238829ef3904917e47c7990170f0bb1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572063"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848205"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -37,11 +37,6 @@ ms.locfileid: "88572063"
 [Azure 管理工具和服務](./tools-services.md)中討論的所有管理解決方案都需要在 azure 虛擬機器和內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則來大規模上架 Azure Vm。 指派原則，以確保代理程式已安裝在您的 Azure Vm 上，並已連線到正確的 Log Analytics 工作區。
 
 Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/definition-structure#initiatives) ，其中包含適用於 VM 的 Azure 監視器所需的 Log Analytics 代理程式和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent)。
-
-<!-- TODOBACKLOG: Add these when available.
-**Preview:** Enable Azure Monitor for virtual machine scale sets.
-**Preview:** Enable Azure Monitor for VMs.
- -->
 
 > [!NOTE]
 > 如需有關各種 Azure 監視代理程式的詳細資訊，請參閱 [azure 監視代理](/azure/azure-monitor/platform/agents-overview)程式的總覽。
@@ -145,7 +140,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋 **活動記錄分析** ，然後選取它。
-4. 選取 [建立]。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
@@ -158,7 +153,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋 **Azure Log Analytics 代理程式健康** 情況，然後選取它。
-4. 選取 [建立]。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
@@ -173,7 +168,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 1. 在 Azure 入口網站中，開啟 [**所有服務**]，選取 [選取**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋，然後選取 [ **反惡意程式碼軟體評定**]。
-4. 選取 [建立]。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 

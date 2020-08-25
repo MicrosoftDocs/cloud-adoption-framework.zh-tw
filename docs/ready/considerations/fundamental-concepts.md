@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e0d0019bd11bde0178f4cbcb0a99f2638edf43b2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f14f2cc1460fb5c19abd2ed1755966406fada1af
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566844"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848154"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -27,7 +27,7 @@ ms.locfileid: "88566844"
 - **Azure 帳戶：** 當您建立 Azure 訂用帳戶時所提供的電子郵件地址就是訂用帳戶的 Azure 帳戶。 與電子郵件帳戶相關聯的對象需負責處理每月訂用帳戶資源所產生的成本。 當您建立 Azure 帳戶時，您會提供連絡人資訊和計費詳細資料，例如信用卡。 您可以針對多個訂用帳戶使用相同的 Azure 帳戶 (電子郵件地址)。 每個訂用帳戶只能與一個 Azure AD 帳戶相關聯。
 - **帳戶管理員：** 與用來建立 Azure 訂用帳戶的電子郵件地址相關聯的合作物件。 帳戶管理員須負責支付訂用帳戶資源所產生的所有成本。
 - **Azure Active Directory (Azure AD) ：** Microsoft 雲端式身分識別與存取管理服務。 Azure AD 可允許您的員工登入和存取資源。
-- **Azure AD 租使用者：** Azure AD 的專用且受信任的實例。 當您的組織第一次註冊 Microsoft 雲端服務訂用帳戶（例如 Microsoft Azure、Intune 或 Office 365）時，就會自動建立 Azure AD 租使用者。 一個 Azure 租用戶代表一個組織。
+- **Azure AD 租使用者：** Azure AD 的專用且受信任的實例。 當您的組織第一次註冊 Microsoft 雲端服務訂用帳戶（例如 Microsoft Azure、Intune 或 Microsoft 365）時，就會自動建立 Azure AD 租使用者。 一個 Azure 租用戶代表一個組織。
 - **Azure AD 目錄：** 每個 Azure AD 租使用者都有單一、專用且受信任的目錄。 此目錄包含租用戶的使用者、群組和應用程式。 此目錄可用來執行身分識別和存取租用戶資源的管理功能。 目錄可以與多個訂用帳戶相關聯，但每個訂用帳戶僅能與一個目錄相關聯。
 - **資源群組：** 您用來將訂用帳戶中的相關資源分組的邏輯容器。 每個資源只能存在於一個資源群組中。 資源群組允許在訂用帳戶內進行更細微的分組，通常用來代表在訂用帳戶內支援工作負載、應用程式或特定功能所需的資產集合。
 - **管理群組：** 您用於一或多個訂閱的邏輯容器。 您可以定義管理群組、訂用帳戶、資源群組和資源的階層，透過繼承來有效率地管理存取、原則和合規性。

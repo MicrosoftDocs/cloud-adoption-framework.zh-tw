@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b615d84cf1f48ebb2876497912dd18950cdfe1fb
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 42f72ce30d4995f7e8dd79202c01f8fecea1986a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661906"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848358"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ ms.locfileid: "88661906"
 
 在大規模 (超過250部 Vm) 的情況下，會使用各種不同的轉換選項（在合理化的五個重新架構中討論）來遷移資產： _重新裝載_、 _重構_、 _ _、 _重建_和 _取代_。
 
-有些工作負載會透過_重建_或_重新架構_程序進行現代化，而建立含有新功能和技術功能的新式應用程式。 其他資產則會經歷 _重構_ 程式，例如移至容器或其他更新式的裝載和操作方法，而不一定會影響解決方案的程式碼基底。 通常，更妥善建立的虛擬機器和其他資產會經歷 _重新裝載_ 流程，將這些資產從資料中心轉換到雲端。 某些工作負載可能會遷移至雲端，但應改為使用以服務為基礎的 (SaaS 型) 雲端服務來 _取代_ ，以符合相同的商務需求 &mdash; ，例如使用 Office 365 作為遷移 Exchange Server 實例的替代方案。
+有些工作負載會透過_重建_或_重新架構_程序進行現代化，而建立含有新功能和技術功能的新式應用程式。 其他資產則會經歷 _重構_ 程式，例如移至容器或其他更新式的裝載和操作方法，而不一定會影響解決方案的程式碼基底。 通常，更妥善建立的虛擬機器和其他資產會經歷 _重新裝載_ 流程，將這些資產從資料中心轉換到雲端。 某些工作負載可能會遷移至雲端，但應改為使用以服務為基礎的 (SaaS 型) 雲端服務來 _取代_ ，以符合相同的商務需求 &mdash; ，例如使用 Microsoft 365 作為遷移 Exchange Server 實例的替代方案。
 
 在大部分的案例中，某些商務事件會建立強制函式，以使用 _重新裝載_ 程式暫時遷移高百分比的資產，然後在雲端中使用另一個遷移策略來進行更重要的次要轉換。 此程式通常稱為_雲端轉換_。
 

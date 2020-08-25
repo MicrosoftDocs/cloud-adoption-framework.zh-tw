@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 50bb778d07a3f963272ca1f716a9f76ace5bbc60
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d313641025bd5cc768c3e4f99feedb768880f396
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569615"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848273"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
@@ -68,7 +68,7 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 目前內部部署環境的 Movere 和 Lakeside 掃描都可以提供在使用者桌上型電腦上執行之應用程式的相關資料。 藉由使用該資料，您可以建立每個角色所需的所有應用程式清單。 針對每個必要的應用程式，下列問題的答案將會塑造部署反覆運算：
 
 - 是否需要安裝任何應用程式，角色才能使用此桌面？ 除非角色使用100% 的 web 型軟體即服務應用程式，否則您可能需要為每個角色 [設定自訂的主要 VHD 映射](/azure/virtual-desktop/set-up-customize-master-image) ，並在主要映射上安裝必要的應用程式。
-- 此角色是否需要 Office 365 應用程式？ 如果是，您必須 [將 Office 365 新增至自訂的主要 VHD 映射](/azure/virtual-desktop/install-office-on-wvd-master-image)。
+- 此角色是否需要 Microsoft 365 應用程式？ 如果是，您必須 [將 Microsoft 365 新增至自訂的主要 VHD 映射](/azure/virtual-desktop/install-office-on-wvd-master-image)。
 - 此應用程式是否與 Windows &nbsp; 10 多重會話相容？ 如果應用程式不相容，可能需要 [個人集](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) 區才能執行自訂 VHD 映射。 如需有關應用程式和 Windows 虛擬桌面相容性問題的協助，請參閱 [桌面應用程式確保](/fasttrack/win-10-app-assure-assistance-offered) 服務。
 - 要徑任務應用程式是否可能會受到 Windows 虛擬桌面實例與任何後端系統之間的延遲？ 若是如此，您可能會想要考慮將支援應用程式的後端系統移轉至 Azure。
 

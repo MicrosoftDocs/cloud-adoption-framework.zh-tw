@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7c7f8438c8dc4a68d7e8e46678477119975d449
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea6d0f9a3f3864315f3daed8011aa5e73901dea1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571128"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848086"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -43,7 +43,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 下表摘要說明監視堆疊各層的建議方法：
 
-| 層 | 資源 | 影響範圍 | 方法 |
+| 層 | 資源 | 範圍 | 方法 |
 |---|---|---|---|
 | Application | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能度量的 Azure 資料庫。 | 啟用診斷記錄，以將 SQL 資料串流至 Azure 監視器記錄。 |
@@ -97,7 +97,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 ### <a name="monitor-with-system-center-operations-manager"></a>使用 System Center Operations Manager 監視
 
-雖然 System Center Operations Manager 原本是設計成內部部署解決方案，以便在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件之間進行監視，但仍會演變為包含雲端監視功能。 它整合了 Azure、Office 365 和 Amazon Web Services (AWS) 。 它可以透過設計和更新的管理元件來監視這些不同的環境，以支援這些環境。  
+雖然 System Center Operations Manager 原本是設計成內部部署解決方案，以便在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件之間進行監視，但仍會演變為包含雲端監視功能。 它會與 Azure、Microsoft 365 和 Amazon Web Services (AWS) 整合。 它可以透過設計和更新的管理元件來監視這些不同的環境，以支援這些環境。  
 
 如果客戶對 Operations Manager 進行了大幅的投資，以達成與 IT 服務管理程式和工具緊密整合的全面監視，或針對 Azure 的新客戶，則可瞭解如何提出下列問題：
 

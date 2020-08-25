@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 301afe5e901685b5069ec73937c86674a1eb17d1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2fedb2769fec0179f24c2e4e8528d20c22efb4a5
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574987"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848256"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Windows 虛擬桌面部署後
 
@@ -30,7 +30,7 @@ Windows 虛擬桌面實例的遷移或部署發行程式相當簡單。 此程�
 
 發行完成之後，通常會新增 [記錄和診斷，以更妥善操作 Windows 虛擬桌面](/azure/virtual-desktop/diagnostics-log-analytics#push-diagnostics-data-to-your-workspace)。 作業小組將集區主機和桌面虛擬機器上線至 [Azure 伺服器管理最佳作法](../../manage/azure-server-management/index.md) ，以管理報告、修補以及商務持續性和嚴重損壞修復設定，也是很常見的情況。
 
-雖然發行程式不在此遷移案例的範圍內，但此程式可能會在遷移的後續反復專案期間，公開將其他工作負載遷移至 Azure 的需求。 如果您尚未設定 Office 365 或 Azure Active Directory，則您的雲端採用小組可能會選擇在桌上型電腦案例的版本中上架這些服務。 對於混合式作業模型，操作小組也可以選擇整合 Intune、System Center 或其他設定管理工具，以改善作業、合規性和安全性。
+雖然發行程式不在此遷移案例的範圍內，但此程式可能會在遷移的後續反復專案期間，公開將其他工作負載遷移至 Azure 的需求。 如果您尚未設定 Microsoft 365 或 Azure Active Directory，您的雲端採用小組可能會選擇在桌上型電腦案例的版本中上架這些服務。 對於混合式作業模型，操作小組也可以選擇整合 Intune、System Center 或其他設定管理工具，以改善作業、合規性和安全性。
 
 ## <a name="next-steps"></a>後續步驟
 

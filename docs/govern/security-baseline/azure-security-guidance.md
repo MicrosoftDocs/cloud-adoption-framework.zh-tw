@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aae1094414c775bfbd652d681df60c0f3abab675
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 04652c401adc8b0742ee3366cbdb30f7abb9d057
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568952"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847763"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -29,11 +29,11 @@ ms.locfileid: "88568952"
 
 這些工具的設計目的是協助組織符合複雜的合規性義務，並在選擇和使用 Microsoft 雲端服務時改善資料保護功能。
 
-**Microsoft 服務信任入口網站**提供深入的資訊和工具，以協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Office 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一次站。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 入口網站的建立可協助追蹤 Azure 中的法規合規性活動，包括：
+**Microsoft 服務信任入口網站**提供深入的資訊和工具，以協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Microsoft 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一次站。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 入口網站的建立可協助追蹤 Azure 中的法規合規性活動，包括：
 
-- **合規性管理員：** 合規性管理員是 Microsoft 服務信任入口網站中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及確認組織與 Microsoft 雲端服務（例如 Office 365、Dynamics 365 和 Azure）相關的法規合規性活動。 您可以在下一節找到更多詳細資料。
+- **合規性管理員：** 合規性管理員是 Microsoft 服務信任入口網站中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及確認組織與 Microsoft 雲端服務相關的法規合規性活動，例如 Microsoft 365、Dynamics 365 和 Azure。 您可以在下一節找到更多詳細資料。
 - **信任檔：** 有三種類別的指南可提供豐富的資源來評估 Microsoft 雲端、瞭解 Microsoft 在安全性、合規性和隱私權方面的營運，以及協助您改善資料保護功能。 這些指南包括：
-- **Audit reports：** Audit reports 可讓您隨時掌握最新的隱私權、安全性和 Microsoft 雲端服務的合規性相關資訊。 這項資訊包括 ISO、SOC、FedRAMP，以及其他與 Microsoft 雲端服務（例如 Azure、Office 365、Dynamics 365 及其他）的獨立協力廠商審核相關的資料。
+- **Audit reports：** Audit reports 可讓您隨時掌握最新的隱私權、安全性和 Microsoft 雲端服務的合規性相關資訊。 這項資訊包括 ISO、SOC、FedRAMP 和其他的審核報表、bridge 信件，以及與 Microsoft 雲端服務（例如 Azure、Microsoft 365、Dynamics 365 和其他）的獨立協力廠商審核相關的資料。
 - **資料保護指南：** 資料保護指南提供有關 Microsoft 雲端服務如何保護您資料的資訊，以及您可以如何管理組織的雲端資料安全性和合規性。 這些指南包含有關 Microsoft 雲端服務的設計和操作的詳細白皮書、常見問題檔、年度安全性評定報告、滲透測試結果，以及協助您進行風險評估及改善資料保護功能的指引。
 - **Azure 安全性與合規性藍圖：** 藍圖提供的資源可協助您建立及啟動雲端提供的應用程式，協助您遵守嚴格的法規和標準。 具有比其他任何雲端提供者更多的認證，您可以有信心地將關鍵工作負載部署至 Azure，使用包含下列項目的藍圖：
   - 業界專屬的總覽和指引。
