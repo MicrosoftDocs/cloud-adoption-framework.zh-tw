@@ -10,7 +10,7 @@
 身分識別基準是所有治理工作的基本起始點。 嘗試施行治理之前，必須先建立身分識別。 已建立的身分識別策略隨後將會由治理解決方案強制執行。
 在本治理指南中，身分識別管理小組會執行 [目錄同步](~/decision-guides/identity/index.md#directory-synchronization) 處理模式：
 
-- RBAC 將由 Azure Active Directory (Azure AD) ，使用在公司遷移至 Office 365 期間所執行的目錄同步作業或「相同登入」來提供。 如需實作指引，請參閱 [Azure AD 整合的參考架構](/azure/architecture/reference-architectures/identity/azure-ad)。
+- RBAC 將由 Azure Active Directory (Azure AD) ，使用在公司遷移至 Microsoft 365 期間所執行的目錄同步作業或「相同登入」來提供。 如需實作指引，請參閱 [Azure AD 整合的參考架構](/azure/architecture/reference-architectures/identity/azure-ad)。
 - Azure AD 租用戶也會對部署至 Azure 的資產進行驗證和存取的控管。
 
 在治理 MVP 中，治理小組將透過訂用帳戶治理工具強制執行已複寫租用戶的應用程式，如本文稍後所說明。 在未來的反復專案中，治理小組也可以在 Azure AD 中強制執行豐富的工具，以擴充這項功能。
