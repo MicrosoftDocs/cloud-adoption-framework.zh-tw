@@ -3,16 +3,16 @@ title: Azure 採用的一種移轉方法
 description: 請遵循 Azure Migrate 的一種移轉方法，來遷移和現代化整個 IT 組合。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1fcc9914a2ba517598972c52dc9e286933d122d2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ad7a3f6af9d57c4d2ebd557c23ec5c08fa222b0a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572624"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847814"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -30,8 +30,8 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 | | | | |
 |---------|---------|---------|---------|
 | **虛擬機器** | [虛擬機器](../migrate/azure-best-practices/contoso-migration-rehost-vm.md) | [Linux 伺服器](../migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md) | [虛擬桌面](./wvd/index.md) |
-| **應用程式** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
-| **Data** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [開放原始碼資料庫](../migrate/azure-best-practices/sql-migration.md) | 分析 |
+| **應用程式** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
+| **Data** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [開放原始碼資料庫](../migrate/azure-best-practices/sql-migration.md) | [分析](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) |
 | **混合式** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [大型主機](../infrastructure/mainframe-migration/index.md) | NetApp 和 SAP HANA |
 
