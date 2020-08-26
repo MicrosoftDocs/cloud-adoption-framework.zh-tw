@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 082f8cfcd3cb8d0e01a49bf5a1da32b77c4050fd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 10ff8691285bdb6db157fd1d55428167f81c1be2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568170"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883258"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
-數位經濟中有兩種類別的應用程式：歷程 _記錄_ 和 _預測_性。 您可以使用歷程記錄資料（包括近乎即時的資料），來單獨滿足許多客戶需求。 大部分的解決方案主要著重于匯總資料。 然後，他們會以數位或環境體驗的形式處理資料，並將其與客戶共用。
+數位經濟中有兩種類別的應用程式：歷程 *記錄* 和 *預測*性。 您可以使用歷程記錄資料（包括近乎即時的資料），來單獨滿足許多客戶需求。 大部分的解決方案主要著重于匯總資料。 然後，他們會以數位或環境體驗的形式處理資料，並將其與客戶共用。
 
 當預測性模型變得更符合成本效益且可供使用時，客戶會要求向前思考體驗，以提供更好的決策和動作。 不過，該需求不一定會建議預測性解決方案。 在大部分的情況下，歷程記錄視圖可以提供足夠的資料，讓客戶自行決定。
 

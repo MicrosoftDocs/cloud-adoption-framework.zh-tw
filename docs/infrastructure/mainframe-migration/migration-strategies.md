@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc968a5434518ada3d809fb8e22bec4c4e0e0dc2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 276555cd06e751e82744a6b5d172e2cf9ce0acfe
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568765"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882816"
 ---
-<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
 
@@ -24,9 +24,9 @@ ms.locfileid: "88568765"
 
 ![大型主機和 Azure](../../_images/mainframe-migration/make-the-switch.png)
 
-<!-- docsTest:ignore "vs. vCPUs" -->
+<!-- docsTest:casing vCPUs -->
 
-## <a name="mips-and-vcpus"></a>MIPS 和個 vcpu
+## <a name="mips-vs-vcpus"></a>MIPS 與 vCPU
 
 在執行大型主機工作負載時，找不到用來判斷 (個 vcpu) 虛擬中央處理單位數目的通用對應公式。 不過，每秒百萬指令數 (MIPS) 計量通常會對應至 Azure 上的 vCPU。 MIPS 透過針對指定電腦提供常數值的每秒循環次數，來測量大型主機的整體計算能力。
 

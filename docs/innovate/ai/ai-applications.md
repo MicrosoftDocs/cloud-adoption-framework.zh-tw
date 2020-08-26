@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf54d25069aa96d6b9b92c50a9beeccefbb1de3c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e331bc698467926e496b6a1e8c29e7fb0caf097
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568697"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882629"
 ---
 # <a name="ai-applications-and-agents"></a>AI 應用程式和代理程式
 
@@ -47,7 +47,7 @@ AI 應用程式的常見案例包括：
 
 選取您要在視覺、語言、語音、決策或 web 搜尋中使用的服務。 頁面上的每個類別都會提供一組快速入門、教學課程、操作指南，無論您是要使用 REST API 或 Sdk。
 
-<!-- docsTest:ignore "Intelligent Kiosk" -->
+<!-- docsTest:casing "Intelligent Kiosk" -->
 
 您也可以下載智慧型 Kiosk 來體驗和示範這些服務。
 

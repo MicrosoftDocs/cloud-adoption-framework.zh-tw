@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 39b9d4781b5caabed5524577be9819e4544ec665
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a7fb9e0887cb5cd60ba48783b152d20f0213ba71
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567150"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882034"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -59,7 +59,7 @@ MySQL 資料庫會儲存公司人力資源部門的所有層面所使用的員�
 ### <a name="database-considerations"></a>資料庫考量
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:ignore ColumnStore GraphDBMS -->
+<!-- docsTest:casing ColumnStore "Graph DBMS" -->
 
 在解決方案設計過程中，Contoso 會檢查 Azure 中的功能，以裝載其 MySQL 資料。 下列考慮有助於公司決定使用 Azure：
 
@@ -68,7 +68,7 @@ MySQL 資料庫會儲存公司人力資源部門的所有層面所使用的員�
 - 適用於 MySQL 的 Azure 資料庫具有 Contoso 針對其審計員必須符合的必要合規性和隱私權認證。
 - 報表和應用程式處理效能將會使用讀取複本來增強。
 - 只能將服務公開給內部網路流量的能力， (使用 [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link)沒有公用存取) 。
-- Contoso 選擇不移至適用於 MySQL 的 Azure 資料庫，因為未來可能會使用適用于 mariadb 資料行存放區和 GraphDBMS 資料庫模型。
+- Contoso 選擇不移至適用於 MySQL 的 Azure 資料庫，因為它正在查看未來可能會使用適用于 mariadb 資料行存放區和圖形 DBMS 資料庫模型。
 - 除了 MySQL 功能以外，Contoso 還 proponent 了真正的開放原始碼專案，並選擇不使用 MySQL。
 - 從應用程式到資料庫的 [頻寬和延遲](/azure/vpn-gateway/vpn-gateway-about-vpngateways) ，會根據所選的閘道而足夠， (Azure ExpressRoute 或站對站 VPN) 。
 
@@ -100,14 +100,14 @@ Azure 目前支援10.2.25 和10.3.16。
 
 Azure 會自動管理修補程式更新的升級。 範例10.2.21 至10.2.23。 不支援次要和主要版本升級。 例如，不支援從 MySQL 10.2 升級至 MySQL 10.3。 如果您想要從10.2 升級為10.3，請取得傾印，並將其還原至使用新引擎版本建立的伺服器。
 
-#### <a name="network"></a>Network (網路)
+#### <a name="network"></a>網路
 
 Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其 MySQL 資料庫所在的虛擬網路。 此連接可讓內部部署應用程式在連接字串更新時，透過閘道存取資料庫。
 
 ![圖表顯示遷移程式。 ](./media/contoso-migration-mysql-to-azure/migration-process.png)
 _圖2：遷移程式。_
 
-#### <a name="migration"></a>移轉
+#### <a name="migration"></a>遷移
 
 Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並遵循 [逐步遷移教學](/azure/dms/tutorial-mysql-azure-mysql-online)課程。 他們可以使用 MySQL 5.6 或5.7 來執行線上、離線和混合式 (預覽版) 的遷移。
 

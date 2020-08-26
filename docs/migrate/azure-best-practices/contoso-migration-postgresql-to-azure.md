@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 35fdbcf69fc4e86f4f785bd871082b974b1f6203
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567286"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882136"
 ---
-<!-- cSpell:ignore BYOK postgres psql dvdrental -->
+<!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
 # <a name="migrate-postgresql-databases-to-microsoft-azure"></a>將于 postgresql 資料庫移轉至 Microsoft Azure
 
@@ -102,7 +102,7 @@ Microsoft 的目標是支援適用於 PostgreSQL 的 Azure 資料庫單一伺服
 > [!NOTE]
 > 不支援自動主要版本升級。 例如，不會自動從于 postgresql 9.5 升級至於 postgresql 9.6。 若要升級至下一個主要版本，請傾印資料庫並將它還原到使用目標引擎版本建立的伺服器。
 
-#### <a name="network"></a>Network (網路)
+#### <a name="network"></a>網路
 
 Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其適用於 PostgreSQL 的 Azure 資料庫資料庫所在的虛擬網路。 此連接可讓內部部署應用程式存取資料庫，但不能遷移至雲端。
 
@@ -118,7 +118,7 @@ Contoso 將需要評估目前的資料庫是否有複寫問題。 這些問題�
   ![遷移程式的圖表。 ](./media/contoso-migration-postgresql-to-azure/migration-process.png)
   _圖2：遷移程式。_
 
-#### <a name="migration"></a>移轉
+#### <a name="migration"></a>遷移
 
 Contoso 可以透過數種方式來執行遷移：
 
@@ -129,8 +129,6 @@ Contoso 可以透過數種方式來執行遷移：
 Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主要到主要升級時，重複使用遷移專案。 由於單一資料庫移轉服務活動最多隻容納四個資料庫，Contoso 會使用下列步驟來設定數個工作。
 
 若要準備，請設定虛擬網路來存取資料庫。 使用 [VPN 閘道](/azure/vpn-gateway/vpn-gateway-about-vpngateways) 以各種方式建立虛擬網路連線。
-
-<!-- docsTest:ignore "Azure Database Migration Services" -->
 
 ### <a name="create-an-azure-database-migration-service-instance"></a>建立 Azure 資料庫移轉服務執行個體
 
@@ -147,7 +145,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
     ![[建立遷移服務] 畫面的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
     _圖3：複習和建立。_
 
-1. 選取 [建立]。
+1. 選取 [建立]  。
 
 ### <a name="create-an-azure-database-for-postgresql-instance"></a>建立「適用於 PostgreSQL 的 Azure 資料庫」執行個體
 
@@ -186,7 +184,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
         psql -h {host}.postgres.database.azure.com -d dvdrental -U username -f dvdrental_schema.sql
       ```
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 1. 在 Azure 入口網站中，Contoso 會移至其資料庫移轉服務資源。
 1. 如果服務未啟動，請選取 [ **啟動服務**]。

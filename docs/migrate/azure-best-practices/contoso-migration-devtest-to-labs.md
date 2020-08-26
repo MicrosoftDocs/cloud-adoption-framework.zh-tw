@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e5fd5e1a0ef81e9d6c32fdc13959ced387ee3166
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5a9d266e6836540fdfc7e971fd1fde19c6219230
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571281"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882442"
 ---
-<!-- cSpell:ignore vcenter -->
-
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>將開發/測試環境遷移至 Azure DevTest Labs
 
 本文示範虛構公司 Contoso 如何將其開發/測試環境遷移至 Azure DevTest Labs。
@@ -110,7 +108,7 @@ Contoso 會使用 DevTest Labs 將其開發應用程式和資料庫 Vm 遷移至
 
 _圖2：遷移程式。_
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 要執行此案例所需的項目。
 

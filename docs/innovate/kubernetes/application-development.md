@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8da625c6805c31dc2c07c2d31815851ca7e8b3a7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea215de1bb9c41536c5bf666d20b6f1b41bb5871
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572284"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882850"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+<!-- cSpell:ignore autoscaler Istio Linkerd -->
 
 # <a name="application-development-and-deployment"></a>應用程式開發與部署
 
@@ -30,7 +30,7 @@ ms.locfileid: "88572284"
 > - 您要如何將專案資料夾結構為支援 Kubernetes 應用程式開發？
 > - 您是否已識別出應用程式的狀態、設定和儲存需求？
 
-<!-- docsTest:ignore "AAD Pod Identity -->
+<!-- docsTest:casing "AAD Pod Identity -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -74,12 +74,12 @@ ms.locfileid: "88572284"
 > - 跨領域應用程式考慮從您的應用程式抽象化嗎？
 > - 您是否能夠維持系統和應用程式的可靠性，同時仍會逐一查看新的功能和版本？
 
-<!-- docsTest:ignore Consul -->
+<!-- docsTest:casing Consul -->
 
 > [!div class="tdCol2BreakAll"]
 >
 > | 檢查清單  | 資源                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **部署 API 閘道。** API 閘道可做為微服務的進入點、將用戶端與您的微服務分離、增加額外的安全性層級，並藉由消除處理跨領域考慮的負擔，來降低微服務的複雜度。     | [搭配 Azure Kubernetes Service 中部署的微服務使用 Azure API 管理](/azure/api-management/api-management-kubernetes) |
-> | **部署服務網格。** 服務網狀提供的功能如流量管理、復原、原則、安全性、強式身分識別，以及可檢視性至您的工作負載。 您的應用程式會與這些操作功能分開，而服務網格會將它們移出應用層，並向下移至基礎結構層。     | [&nbsp;服務 &nbsp; 網格 &nbsp; &nbsp; 在 &nbsp; Kubernetes &nbsp; (影片) 的運作方式](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s) <br> [深入瞭解服務網格](/azure/aks/servicemesh-about) <br> [使用 Istio 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-istio-about) <br> [使用 Linkerd 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-linkerd-about) <br> [使用 Consul 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-consul-about) |
+> | **部署服務網格。** 服務網狀提供的功能如流量管理、復原、原則、安全性、強式身分識別，以及可檢視性至您的工作負載。 您的應用程式會與這些操作功能分開，而服務網格會將它們移出應用層，並向下移至基礎結構層。 | [&nbsp;服務 &nbsp; 網格 &nbsp; &nbsp; 在 &nbsp; Kubernetes &nbsp; (影片) 的運作方式](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s) <br> [深入瞭解服務網格](/azure/aks/servicemesh-about) <br> [使用 Istio 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-istio-about) <br> [使用 Linkerd 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-linkerd-about) <br> [使用 Consul 搭配 Azure Kubernetes Service](/azure/aks/servicemesh-consul-about) |
 > | ** (SRE) 實務來實行網站可靠性工程。** 網站可靠性工程 (SRE) 是一種經過證實的方法，可維護重要的系統和應用程式可靠性，同時以 marketplace 所要求的速度進行反覆運算。   | [ (SRE) 的網站可靠性工程簡介 ](/learn/modules/intro-to-site-reliability-engineering) <br> [Microsoft 的 DevOps：遊戲串流 SRE](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre) |

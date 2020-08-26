@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3269f6a94f0aa151f2fbfb3a78e540fef710767c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f0031c5e239dc7d11760eee3a36597fa86c0db66
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573712"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883683"
 ---
 # <a name="cost-management-sample-policy-statements"></a>成本管理範例原則聲明
 
@@ -39,7 +39,7 @@ ms.locfileid: "88573712"
 
 **原則聲明：** 任何雲端部署都必須配置給具有核准預算的計費單位以及預算限制的機制。
 
-**設計選項：** 在 Azure 中，您可以使用 [Azure 成本管理](/azure/cost-management/manage-budgets)來控制預算。
+**設計選項：** 在 Azure 中，您可以使用 [Azure 成本管理和帳單](/azure/cost-management/manage-budgets)來控制預算。
 
 ## <a name="underutilization"></a>使用量過低
 
@@ -49,7 +49,7 @@ ms.locfileid: "88573712"
 
 **設計選項：**
 
-- 在 Azure 中，您可以透過 [Azure 成本管理](/azure/cost-management/quick-acm-cost-analysis)來管理計畫與實際費用。
+- 在 Azure 中，您可以透過 [Azure 成本管理和計費](/azure/cost-management/quick-acm-cost-analysis)來管理計畫與實際費用。
 - 有數個選項可讓計費單位用來群組資源。 在 Azure 中，應該與治理小組一同選擇[資源一致性模型](../../decision-guides/resource-consistency/index.md)並套用至所有資產。
 
 ## <a name="overprovisioned-assets"></a>過度佈建的資產

@@ -1,21 +1,20 @@
 ---
-title: 協助尋找適當的使用者入門指南
+title: 取得尋找適當使用者入門指南的協助
 description: 針對您的需求尋找最相關的「快速入門手冊」。
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3075f2cc62be70bc8fe5977ca9ca6a78e7214b7b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea4063383f4c266acdfbe24a84a1640ca53c90e1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573899"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881099"
 ---
-# <a name="help-finding-the-appropriate-getting-started-guide"></a>協助尋找適當的使用者入門指南
+# <a name="get-help-finding-the-appropriate-getting-started-guide"></a>取得尋找適當使用者入門指南的協助
 
 雲端採用架構可協助您以多種方式開始使用，因此會提供數個快速入門手冊。 本文將這些指南分組，以協助您找出最符合您目前挑戰的指南。
 
@@ -30,7 +29,7 @@ ms.locfileid: "88573899"
 
 ## <a name="align-foundation"></a>對齊基礎
 
-您公司的雲端建基於一組基礎決策，可能會影響所有雲端式結果。 這份快速入門手冊和概念資訊可協助您做出核心決策並記載。
+您公司的雲端建基於一組基礎決策，可能會影響所有雲端式結果。 本指南和概念資訊可協助您進行核心決策並記載。
 
 - [開始對齊基礎決策](./cloud-concepts.md)
 - [Azure 的運作方式](./what-is-azure.md)
@@ -57,9 +56,9 @@ ms.locfileid: "88573899"
 |--|--|
 | [如何在雲端轉型期間提供卓越的營運？](./operational-excellence.md)                   | 本指南中的步驟可協助策略小組領導組織變更管理，以確保正常運作。 |
 | [如何管理企業成本？](./manage-costs.md)                                          | 開始最佳化企業成本，並管理整個環境的成本。                                                                           |
-| [我們如何以一致的方式保護企業雲端環境？](./security.md)             | 本入門指南可協助確保已在企業內套用適當的安全性需求，以將缺口的風險降到最低，並在產生缺口時加速復原。                                       |
-| [如何套用正確的控制項來改善可靠性？](./reliability.md)                   | 本入門指南可協助將設定、資源組織、安全性基準或資源保護原則中不一致的中斷情形降至最低。 |
-| [如何確保整個企業的效能？](./performance.md)                               | 本入門指南可協助您建立流程，以維護整個企業的效能。                               |
+| [我們如何以一致的方式保護企業雲端環境？](./security.md)             | 本指南可協助確保已在企業中套用適當的安全性需求，以將缺口的風險降至最低，並在發生缺口時加速復原。                                       |
+| [如何套用正確的控制項來改善可靠性？](./reliability.md)                   | 本指南可將與設定、資源組織、安全性基準或資源保護原則不一致的中斷降到最低。 |
+| [如何確保整個企業的效能？](./performance.md)                               | 本指南可協助您建立進程，以維護整個企業的效能。                               |
 
 ## <a name="establish-teams"></a>建立小組
 
@@ -67,7 +66,7 @@ ms.locfileid: "88573899"
 
 |  |  |
 |--|--|
-| [我們要如何讓組織保持一致？](./org-alignment.md)                               | 本快速入門手冊可協助您建立適當的員工組織結構。                               |
+| [我們要如何讓組織保持一致？](./org-alignment.md)                               | 本指南可協助您建立適當的員工組織結構。                               |
 | [我需要雲端策略小組嗎？](./team/cloud-strategy.md)     | 此小組可確保雲端採用工作進度與業務成果一致。                                |
 | [雲端採用小組有何用途？](./team/cloud-adoption.md)     | 這個小組會根據治理需求來實行計畫中所述的技術解決方案。             |
 | [如何? 建立雲端治理小組嗎？](./team/cloud-governance.md) | 此小組確保會正確地評估和管理風險和風險承受度。                                         |

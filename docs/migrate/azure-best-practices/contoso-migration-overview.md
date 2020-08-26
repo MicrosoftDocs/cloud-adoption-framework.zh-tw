@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c9dcdb9c3ce42a0221adeb6d418f4329f471eb5d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 0df83ebf912a171a95572df3b6be554c9db544b0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661923"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881983"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure 的應用程式移轉範例概觀
 
@@ -140,7 +140,7 @@ _圖1：常見的遷移和現代化專案類別。_
 
 ### <a name="demo-applications"></a>示範應用程式
 
-<!-- docsTest:ignore SmartHotel360 osTicket -->
+<!-- docsTest:casing SmartHotel360 osTicket -->
 
 本節提供的範例文章會使用兩個示範應用程式： SmartHotel360 和 osTicket。
 

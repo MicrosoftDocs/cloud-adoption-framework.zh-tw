@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3582e2c940f37e5137b66bb430d09a3f1a200004
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 333130bd1af49833dd396351bc7feb0e7f12e48b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573593"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880912"
 ---
-<!-- cSpell:ignore MPLS -->
-
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>適用于複雜企業的治理指南：改善身分識別基準專業領域
 
 本文藉由將身分識別主控項新增至治理 MVP，來提升敘述的進展。

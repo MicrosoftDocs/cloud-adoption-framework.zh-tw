@@ -8,15 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4cc1aeed8df6c546722ac70977e08f6619f41f21
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c3d172c2b86ea37cc9c4f9f431c833afa60cf82
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570737"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882119"
 ---
-<!-- TODO: Verify GraphDBMS term -->
-<!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
+<!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
 
 # <a name="migrate-mariadb-databases-to-azure"></a>將適用于 mariadb 資料庫移轉至 Azure
 
@@ -113,7 +112,7 @@ Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其適
   ![圖表顯示遷移程式。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
   _圖2：遷移程式。_
 
-#### <a name="migration"></a>移轉
+#### <a name="migration"></a>遷移
 
 由於適用于 mariadb 類似于 MySQL，因此 Contoso 可以使用相同的常用公用程式和工具（例如 MySQL 工作臺、mysqldump、Toad 或 Navicat）來連線到適用於 MariaDB 的 Azure 資料庫，並將資料移轉至。
 
@@ -137,7 +136,7 @@ Contoso 會使用下列步驟來遷移其資料庫。
     ![螢幕擷取畫面顯示 Azure 中的新適用于 mariadb 實例。 ](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
     _圖4： Azure 中的新適用于 mariadb 實例。_
 
-  - 選取 [建立]。
+  - 選取 [建立]  。
   - 選取您的訂用帳戶和資源群組。
   - 選取伺服器名稱和位置。
   - 選取您的目標版本，也就是10.2 或10.3。
@@ -148,11 +147,11 @@ Contoso 會使用下列步驟來遷移其資料庫。
     ![螢幕擷取畫面顯示 [建立適用于 mariadb 伺服器] 畫面。 ](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
     _圖5：檢查和建立。_
 
-  - 選取 [建立]。
+  - 選取 [建立]  。
   - 記錄伺服器主機名稱、使用者名稱和密碼。
   - 選取 [ **連接安全性**]。
   - 選取 [ **新增用戶端 ip** ] (您將從) 還原資料庫的 ip。
-  - 選取 [儲存]。
+  - 選取 \[儲存\]。
 
 - 執行下列命令，以匯出名為的資料庫 `Employees` 。 針對每個資料庫重複執行：
 

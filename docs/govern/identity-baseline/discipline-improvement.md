@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 433c806c241b95600fcb840353c9c14e4d1aa8e1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a2c9f0fe0376358aa8b56bccac1f5f671ded858d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573440"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880215"
 ---
-<!-- cSpell:ignore offboarding preintegration -->
-
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
 身分識別基準專業領域著重在建立原則的方式，無論主控應用程式或工作負載的雲端提供者是誰，都確保使用者身分識別的一致性和持續性。 在雲端治理的五個專業領域中，身分識別基準專業領域包含有關混合式身分 [識別策略](../../decision-guides/identity/index.md)的決策、身分識別存放庫的評估和延伸、 (相同登入) 的單一登入執行、對未經授權的使用或惡意動作專案的審核與監視。 在某些情況下，也可能牽涉到現代化、合併或整合多個身分識別提供者的決策。
@@ -25,7 +23,7 @@ ms.locfileid: "88573440"
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
-_圖1：雲端治理增量方法的採用階段。_
+*圖1：雲端治理增量方法的採用階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的身分識別基準專業領域。
 
@@ -63,7 +61,7 @@ _圖1：雲端治理增量方法的採用階段。_
 - 請考量建立早期採用者方案，並向限量的使用者推出。
 - 繼續教育受架構方針影響最大的人員與小組。
 
-<!-- docsTest:ignore "seamless SSO" -->
+<!-- docutune:casing "seamless SSO" -->
 
 **潛在的活動：**
 
@@ -73,16 +71,16 @@ _圖1：雲端治理增量方法的採用階段。_
 - 整合您的內部部署與雲端目錄。
 - 請考量使用下列存取模型：
   - [最小許可權的系統管理](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) 存取模型。
-  - 特殊[許可權身分識別管理](/azure/active-directory/privileged-identity-management/pim-configure)存取模型。
+  - [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) 存取模型。
 - 完成所有 preintegration 的詳細資料，並查看身分 [識別管理和存取控制安全性最佳作法](/azure/security/fundamentals/identity-management-best-practices)。
-  - 啟用單一身分識別、單一登入 (SSO) ，也稱為無縫 SSO。
+  - 啟用單一身分識別單一登入 (SSO) ，也稱為無縫 SSO。
   - 為系統管理員設定多重要素驗證。
   - 視需要合併或整合身分識別提供者。
   - 實行集中管理身分識別所需的工具。
   - 啟用即時 (JIT) 存取和角色變更警示。
   - 針對指派給內建角色的關鍵系統管理員活動進行風險分析。
   - 請考慮為所有使用者更新推出的增強式驗證。
-  - 啟用特殊許可權身分識別管理 (PIM) 適用于 JIT (針對額外的系統管理角色使用限時啟用) 。
+  - 啟用 Privileged Identity Management (PIM) for JIT (使用額外系統管理角色的限時啟用) 。
   - 將使用者帳戶與全域管理員帳戶分開，以確保系統管理員不會不慎開啟電子郵件，或執行與其全域管理員帳戶) 相關聯的程式。
 
 ## <a name="adopt-and-migrate"></a>採用和移轉

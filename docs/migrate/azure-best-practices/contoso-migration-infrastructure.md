@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b4189711fcc062e54afb673b8a4b6973687935f2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848341"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882731"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -38,7 +38,7 @@ Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 �
 > - **步驟5：安全性。** 它會如何保護混合式部署的安全？
 > - **步驟6：管理。** 它會如何讓部署符合安全性和治理需求？
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 開始查看基礎結構之前，請考慮閱讀相關 Azure 功能的一些背景資訊：
 
@@ -424,7 +424,7 @@ _圖18：全域對等互連。_
 
 使用網路和路由拓撲時，Contoso 就可以開始設定 Azure 網路和子網：
 
-<!-- docsTest:ignore "class B" -->
+<!-- docsTest:casing "class-A" "class-B" -->
 
 - Contoso 會在 Azure () 中執行類別為專用的網路 `10.0.0.0/8` 。 這適用于內部部署;它目前有 () 的類別 B 私人位址空間 `172.160.0.0/16` 。 Contoso 可以確定位址範圍之間不會有任何重迭。
 - Contoso 會在主要和次要區域中部署虛擬網路。
@@ -591,8 +591,6 @@ _圖26：建立直接對等互連連接。_
 當您在虛擬網路中部署資源時，您會有數種網域名稱解析可供選擇。 您可以使用 Azure 所提供的名稱解析，或提供 DNS 伺服器以進行解析。 您使用的名稱解析類型取決於資源需要如何彼此通訊。 取得關於 Azure DNS 服務的[詳細資訊](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)。
 
 Contoso 管理員認為 Azure DNS 服務在混合式環境中並非理想的選擇。 相反地，他們會使用內部部署 DNS 伺服器。 詳細資料如下：
-
-<!-- docsTest:ignore "on premises" -->
 
 - 因為這是混合式網路，所以內部部署和 Azure 中的所有 Vm 都必須能夠解析名稱，才能正常運作。 這表示自訂 DNS 設定必須套用至所有虛擬網路。
 - Contoso 目前已在 Contoso 資料中心和分公司部署網域控制站 (Dc) 。 主要 DNS 伺服器 `contosodc1` (`172.16.0.10`) 和 `contosodc2` (`172.16.0.1`) 。
@@ -838,7 +836,7 @@ _圖45：安全性模型。_
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-| 動作 | 名稱 | 來源 | 目標 | 連接埠 |
+| 動作 | 名稱 | 來源 | 目標 | Port |
 | --- | --- | --- | --- | --- |
 | `Allow` | `AllowInternetToFE` | `VNET-HUB-EUS1`/`IB-TrustZone` | `APP1-FE` | 80、443 |
 | `Allow` | `AllowWebToApp` | `APP1-FE` | `APP1-APP` | 80、443 |

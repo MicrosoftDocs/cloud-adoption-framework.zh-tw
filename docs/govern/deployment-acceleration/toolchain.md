@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0f24b44be27111461e2374d12b8bdc75ca0aabb2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 11ec84ecf3cebed0f70cc23898984d7e362e1dc9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573610"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881082"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "88573610"
 
 以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 
-|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure resource graph](/azure/governance/resource-graph/overview) | [Azure 成本管理](/azure/cost-management) \(部分機器翻譯\) |
+|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure 成本管理和計費](/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **實行公司原則**     | 是 | 否  | 否  | 否 | 否 | 否 |
 | **跨訂用帳戶套用原則**     | 必要 | 是  | 否  | 否 | 否 | 否 |

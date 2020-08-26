@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d89f3a9330ed81ba6644be4d5ce3101775fbe91
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 41c81cd14235933e09462470cc2c93f83f79b9fb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573576"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880640"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -97,7 +97,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>最佳做法的累加式改進
 
-本節將修改治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理的實施。 這兩個設計變更將共同實現新的公司原則聲明。
+本節將修改治理 MVP 設計，以包含新的 Azure 原則，以及 Azure 成本管理和帳單的實施。 這兩個設計變更將共同實現新的公司原則聲明。
 
 新的最佳作法分為兩類：公司 IT (中樞) 和雲端採用 (輪輻) 。
 

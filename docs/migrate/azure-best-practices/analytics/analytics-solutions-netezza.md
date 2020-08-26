@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a55838413812f29069b39cee7f49391eb4ac2ec3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 4d47a5681a2c36bdaabe508e8d62c7437ebe1c87
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570805"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882527"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -32,9 +32,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 概括而言，遷移套裝程式含下表所列的步驟：
 
-<!-- markdownlint-disable MD033 -->
-
-| 準備        | 移轉                             | 移轉後 |
+| 準備        | 遷移                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
 | <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移的資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>找出最適合使用的 Azure 和協力廠商工具和功能。</li><li>及早在新平臺上訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li> 從小型和簡單開始。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和 views 的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商務程式。</li><li>遷移或重構 ETL 或 ELT 增量載入進程。</li></ul> | <ul><li> 監視和記錄遷移程式的所有階段。</li><li>使用獲得的體驗來建立範本，以供未來的遷移之用。</li><li>使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
 
@@ -93,7 +91,7 @@ Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成�
 
 不過，若要瞭解效能優化（例如索引在來源環境中的使用方式），您可以在新環境中將效能優化的地方提供很有用的指示。 例如，如果來源 Netezza 環境中的查詢經常使用區域對應，您可能會在已遷移的 Azure Synapse 環境中建立非叢集索引，或使用其他原生效能優化技術（例如資料表複寫）來建立類似贊的索引，這是很有利的做法。
 
-<!-- docsTest:ignore "NZ Toolkit" -->
+<!-- docsTest:casing "NZ Toolkit" -->
 
 ### <a name="unsupported-netezza-database-object-types"></a>不支援的 Netezza 資料庫物件類型
 
@@ -222,6 +220,6 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **適用于工作負載管理的資源類別**： Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需有關執行 Netezza 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

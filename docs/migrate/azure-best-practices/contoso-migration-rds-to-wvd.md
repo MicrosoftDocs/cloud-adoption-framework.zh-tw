@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: be46b1d4d0848782ae2906498f38ba9bc45e180b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: da555c34bec26cbfb6e3edf5ac078568a8ba0ccd
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567320"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882153"
 ---
-<!-- cSpell:ignore benstegink msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
+<!-- cSpell:ignore msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
 
 # <a name="move-on-premises-remote-desktop-services-to-azure-windows-virtual-desktop-scenario"></a>將內部部署遠端桌面服務移至 Azure Windows 虛擬桌面案例
 
@@ -225,7 +225,7 @@ Contoso 會分析資料，以判斷共用的 Windows 虛擬桌面資源和個人
 
 因為 Windows 虛擬桌面不支援 (Upd) 的使用者設定檔磁片，所以 Contoso 需要透過 [FSLogixMigration PowerShell 模組](https://aka.ms/FSLogixMigrationPreviewModule)將所有 upd 轉換成 FSLogix。
 
-<!-- docsTest:ignore FSLogixMigration -->
+<!-- docsTest:casing FSLogixMigration -->
 
 在 Contoso 匯入 FSLogixMigration 模組之後，它會執行下列 PowerShell Cmdlet，以從 Upd 遷移至 FSLogix。
 

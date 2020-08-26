@@ -7,22 +7,20 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2e5b2c96104fe9abe2ee0d644188680f97a3d5c1
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 71fa4ce0af8b1a33b223001e4244fe35a086358a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88664142"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881609"
 ---
-<!-- cSpell:ignore ISVs MSPs -->
-
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 
 雲端採用架構將雲端採用作為自助活動。 目標是要讓每個小組都能透過標準化的方法來支援採用。 事實上，您無法假設自助方法對所有採用活動都已足夠。
 
 成功的雲端採用方案通常牽涉到至少一個層級的協力廠商支援。 許多雲端採用工作都需要系統整合者的支援 (SI) 或諮詢合作夥伴，以提供加速雲端採用的服務。 受控服務提供者 (Msp) 透過支援登陸區域和雲端採用來提供議論值，但它們也提供後續採用作業管理支援。 此外，成功的雲端採用工作通常會將一或多個獨立軟體廠商 (ISV) ，其提供可加速雲端採用的軟體型服務。 適用于 SIs、Isv、Msp 及其他 Microsoft 合作夥伴形式的豐富合作夥伴生態系統，已將他們的供應專案對應到雲端採用架構中的特定方法。 當合作夥伴符合此架構的就緒方法時，他們可能會提供自己的 Azure 登陸區域實行選項。
 
-本文提供一組問題，可協助您瞭解合作夥伴 Azure 登陸區域供應專案的範圍。
+本文提供一組問題，可協助您瞭解合作夥伴的 Azure 登陸區域實行選項的範圍。
 
 > [!IMPORTANT]
 > 合作夥伴供應專案和 Azure 登陸區域的執行選項是由合作夥伴所定義，它會根據其廣泛體驗來協助客戶採用雲端。

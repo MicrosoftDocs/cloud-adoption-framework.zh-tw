@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 619dd5197bcea95d83b27c166e0f4238abd1a988
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 52024c5befeab2e2c10debdbcb766354ca3a1308
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573933"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881218"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解及記錄基礎對齊決策
 
@@ -52,7 +52,6 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 - [雲端採用方案](../plan/plan-intro.md)提供預定在雲端採用的工作負載和資產待處理專案（backlog）。
 - [數位資產分析](../digital-estate/approach.md) 是一種方法，可記錄現有的工作負載，以及預定在雲端採用的資產。 在 Azure 中，數位資產最適合用稱為 [Azure Migrate](/azure/migrate/migrate-support-matrix)的工具表示。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -71,7 +70,6 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 
 - 瞭解 [組合](../reference/fundamental-concepts/hosting-hierarchy.md) 階層的層級，以配合基本字詞。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -93,7 +91,6 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 - [檢查和更新 Azure 中的現有標記](/azure/azure-resource-manager/management/tag-resources)。
 - [在 Azure 中強制執行標記原則](/azure/azure-resource-manager/management/tag-policies)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -120,7 +117,6 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 - [根據組合階層建立明確的界限](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure)。
 - 必要時，請在訂用帳戶 [之間移動資源群組和資產](/azure/azure-resource-manager/management/move-resource-group-and-subscription) ，以遵守組織策略。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -135,14 +131,11 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 
 - 根據這些概念，完成組織對齊的快速入門手冊。
 
-<!-- docsTest:ignore "Get started: Align your organization" -->
-
 **支援交付完成的指導方針：**
 
 - 使用先前的步驟作為指南，以評估 [組合階層責任指引](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance)。 判斷哪些功能可能需要由專用組織或虛擬團隊提供。
 - 使用 [快速入門：讓您的組織符合](./org-alignment.md) RACI (負責、負責任、諮詢及通知的) 圖表。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

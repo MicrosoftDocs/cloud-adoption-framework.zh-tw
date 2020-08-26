@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ce44848473da0a2eb5ec98406427e1ea8e46208d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 05cb93bcb4620029bc84916e585f2e3576b6d448
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573678"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883496"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -23,7 +23,7 @@ ms.locfileid: "88573678"
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
-_圖1：雲端治理增量方法的採用階段。_
+*圖1：雲端治理增量方法的採用階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的身分識別基準專業領域。
 
@@ -89,7 +89,7 @@ _圖1：雲端治理增量方法的採用階段。_
 - 修改架構指導方針，以引導未來的採用流程。
 - 繼續與受影響的人員和小組進行通訊，並定期訓練受影響的人員和小組，以確保持續遵循架構方針。
 
-<!-- docsTest:ignore "desired state configuration" -->
+<!-- docutune:ignore "desired state configuration" -->
 
 **潛在的活動：**
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d5b4f0638c5d21dc6bd973c650699130ba30d241
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fba3a8a7bcc9de98f9ea41e3468e5acf9ca4dc3c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568357"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883105"
 ---
-<!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
+<!-- docsTest:casing "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
-<!-- cSpell:ignore givenscj SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
+<!-- cSpell:ignore SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
 
 # <a name="rebuild-an-on-premises-application-in-azure"></a>在 Azure 中重建內部部署應用程式
 
@@ -101,7 +101,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 | [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 成本是以功能、儲存體和使用持續時間為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
 | [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建立、部署及調整企業級 web、行動和 API 應用程式，以在任何平臺上執行。 | App Service 方案會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -704,8 +704,8 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下兩個範例是在 Microsoft Learn 上量身打造的學習路徑，以配合 Azure 中的 Contoso SmartHotel360 應用程式。
 
-<!--docsTest:ignore "Azure Cognitive Vision Services" -->
+<!--docsTest:casing "with the Azure Cognitive Vision Services" -->
 
 - **[使用 Azure App Service 將網站部署至 azure](/learn/paths/deploy-a-website-with-azure-app-service)**：透過在 azure 中建立 web 應用程式，您可以輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注于網站功能，並依賴健全的 Azure 平臺來協助提供網站的安全存取。
 
-- **[使用 azure 認知視覺服務來處理和分類影像](/learn/paths/classify-images-with-vision-services)**： Azure 認知服務提供預建功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用認知視覺服務來偵測臉部、標記和分類影像，以及識別物件。
+- **[使用 Azure 認知視覺服務來處理和分類影像](/learn/paths/classify-images-with-vision-services)**： Azure 認知服務提供預建功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用認知視覺服務來偵測臉部、標記和分類影像，以及識別物件。

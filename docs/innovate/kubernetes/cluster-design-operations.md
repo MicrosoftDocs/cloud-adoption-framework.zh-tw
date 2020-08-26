@@ -7,14 +7,14 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d7351fc55f91645c79dd50e803ef8ca940beaa7c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b11a4f0cdc50fe97a44b2dce707f055293332db
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572233"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882595"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+<!-- cSpell:ignore autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>叢集設計和作業
 
@@ -23,8 +23,6 @@ ms.locfileid: "88572233"
 ## <a name="plan-train-and-proof"></a>規劃、定型和證明
 
 當您開始使用時，下列檢查清單和資源將協助您規劃叢集設計。 您應該可以回答下列問題：
-
-<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >
@@ -39,7 +37,7 @@ ms.locfileid: "88572233"
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **找出網路設計考慮。** 瞭解叢集網路設計考慮、比較網路模型，並選擇符合您需求的 Kubernetes 網路外掛程式。    | [Kubenet 和 Azure 容器網路介面 (CNI) ](/azure/aks/concepts-network#azure-virtual-networks) <br> [在 Azure Kubernetes Service (AKS) 中使用 kubenet 網路與您自己的 IP 位址範圍](/azure/aks/configure-kubenet) <br> [在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 網路](/azure/aks/configure-azure-cni) <br> [AKS 叢集的安全網路設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **建立多個節點集區。** 若要支援具有不同計算或儲存體需求的應用程式，您可以選擇性地使用多個節點集區設定您的叢集。 例如，使用額外的節點集區來提供 Gpu 給計算密集型應用程式，或存取高效能 SSD 儲存體。   | [在 Azure Kubernetes Service 中建立和管理叢集的多個節點集區](/azure/aks/use-multiple-node-pools) |
-> | **決定可用性需求。** 若要為您的應用程式提供更高的可用性層級，您可以將叢集分散到可用性區域。 這些區域在特定區域內是以實體分隔的資料中心。 當叢集元件分散到多個區域時，您的叢集 cano 可容忍這些區域中的其中一個失敗。 即使整個資料中心發生問題，您的應用程式和管理作業仍可繼續使用。   | [建立 Azure Kubernetes Service (AKS) 使用可用性區域的叢集](/azure/aks/availability-zones) |
+> | **決定可用性需求。** 若要為您的應用程式提供更高的可用性層級，您可以將叢集分散到可用性區域。 這些區域在特定區域內是以實體分隔的資料中心。 當叢集元件分散到多個區域時，您的叢集可容忍這些區域中的其中一個失敗。 即使整個資料中心發生問題，您的應用程式和管理作業仍可繼續使用。   | [建立 Azure Kubernetes Service (AKS) 使用可用性區域的叢集](/azure/aks/availability-zones) |
 
 ## <a name="go-to-production-and-apply-best-practices"></a>移至生產環境並套用最佳作法
 

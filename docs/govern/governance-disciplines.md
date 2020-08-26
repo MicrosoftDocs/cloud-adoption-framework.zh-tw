@@ -1,6 +1,6 @@
 ---
 title: 雲端治理的五個專業領域
-description: 使用適用于 Azure 的雲端採用架構，瞭解成本管理、部署加速、身分識別基準、資源一致性和安全性基準。
+description: 使用適用于 Azure 的雲端採用架構，瞭解成本管理、部署加速、身分識別基準、資源一致性和安全性基準專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,21 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed31972eef3f0f4311ac8c4c112f4d287ae060c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15da317061924f0c631877a7a7a0430d8e336038
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573661"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881121"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>雲端治理的五個專業領域
 
-<!-- docsTest:ignore "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
-<!-- markdownlint-disable MD033 -->
+<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 |  |  |
 |--|--|
-| 對業務程序或技術平台進行的任何變更都會引進風險。 雲端治理小組（其成員有時也稱為雲端監管人）負責降低這些風險，並確保採用或創新的工作不會中斷。 <br><br> 雲端採用架構治理模型會根據 [公司原則的開發](./corporate-policy.md) 和 [雲端治理的五個專業領域](#disciplines-of-cloud-governance)，來引導這些決策（不論選擇的雲端平臺）。 [可操作的設計指南](./guides/index.md)使用 Azure 服務示範此模型。 瞭解以下雲端採用架構治理模型的專業領域。 | <br><br> [![雲端採用架構治理模型的圖表：公司原則和治理專業領域](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _圖1：公司原則的視覺效果，以及雲端治理的五個專業領域。_ |
+| 對業務程序或技術平台進行的任何變更都會引進風險。 雲端治理小組（其成員有時也稱為雲端監管人）負責降低這些風險，並確保採用或創新的工作不會中斷。 <br><br> 雲端採用架構治理模型會根據 [公司原則的開發](./corporate-policy.md) 和 [雲端治理的五個專業領域](#disciplines-of-cloud-governance)，來引導這些決策（不論選擇的雲端平臺）。 [可操作的設計指南](./guides/index.md)使用 Azure 服務示範此模型。 瞭解以下雲端採用架構治理模型的專業領域。 | <br><br> [![雲端採用架構治理模型的圖表：公司原則和治理專業領域](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> *圖1：公司原則的視覺效果，以及雲端治理的五個專業領域。* |
 
 ## <a name="disciplines-of-cloud-governance"></a>雲端治理的專業領域
 
