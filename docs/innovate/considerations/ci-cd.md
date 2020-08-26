@@ -7,15 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1572d7da20a1b5e1dfe642ebce3404c3482f412
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1599c6b2e4df791e1fafd5d2c7a7b4849c11bc98
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573151"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878294"
 ---
-<!-- cSpell:ignore deprioritize -->
-
 # <a name="empower-adoption-with-digital-invention"></a>以數位發明實現採用
 
 最終的創新測試是客戶對您發明的反應。 假設是否證明真？ 客戶使用解決方案嗎？ 它是否可調整以符合所需的使用者百分比需求？ 最重要的是，他們是否持續回來？ 在部署最小可行產品 (MVP) 解決方案之前，都不會詢問這些問題。 在本文中，我們將著重于授權採用的專業領域。
@@ -91,7 +89,7 @@ Azure DevOps 和 [Azure Pipelines](/azure/devops/pipelines) 只需在 GitHub 或
 
 ## <a name="integrated-measurements"></a>整合式度量
 
-當您 [測量對客戶的影響](./measure.md)時，請務必瞭解客戶對解決方案中的變更有何反應。 這項資料（稱為 _遙測_資料）提供 (使用者在使用解決方案時) 所採取之動作的深入解析。 從這項資料，很容易就能取得假設的量化驗證。 然後可以使用這些計量來調整解決方案，並產生更精細的假設。 這些細微變更有助於在後續的反復專案中成熟初始解決方案，最終促使大規模重複採用。
+當您 [測量對客戶的影響](./measure.md)時，請務必瞭解客戶對解決方案中的變更有何反應。 這項資料（稱為 *遙測*資料）提供 (使用者在使用解決方案時) 所採取之動作的深入解析。 從這項資料，很容易就能取得假設的量化驗證。 然後可以使用這些計量來調整解決方案，並產生更精細的假設。 這些細微變更有助於在後續的反復專案中成熟初始解決方案，最終促使大規模重複採用。
 
 在 Azure 中， [Azure 監視器](/azure/azure-monitor/overview) 提供工具和介面，可從客戶體驗收集和查看資料。 您可以使用 [Azure Boards](/azure/devops/boards)來套用這些觀察和見解，以精簡待處理專案。
 

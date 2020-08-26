@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 719bd1ada85fb67b29ba0dc3f93b4dbf7a243a8c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0593b15558665d7b500d6505fd3d5e5ff4bbea42
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573219"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879824"
 ---
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 
@@ -52,4 +52,4 @@ ms.locfileid: "88573219"
 藉由查看保護敏感性資料的相關文章，繼續從本文系列學習。 如果您正在使用分類為機密或高度機密的資料，下一篇文章會包含適用的見解。
 
 > [!div class="nextstepaction"]
-> [保護機密資料](/azure/architecture/data-guide/scenarios/securing-data-solutions?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> [保護機密資料](/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)

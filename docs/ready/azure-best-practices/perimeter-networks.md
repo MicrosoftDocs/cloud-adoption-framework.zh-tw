@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 1e0e907236df6cd994994cfe38fdfb07641c0a24
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 986d4d98bf663c171279f6b5bb83db1b91daf7be
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569853"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877257"
 ---
-<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
-
 # <a name="perimeter-networks"></a>周邊網路
 
 [周邊網路][perimeter-network]可在雲端網路與內部部署或實體資料中心網路之間啟用安全連線，以及啟用任何進出網際網路的連線。 周邊網路有時稱為非軍事區域或 DMZ。
@@ -93,7 +91,7 @@ Azure Front Door 為您的應用程式提供統一的區域/戳記維護自動�
 
 [Azure 應用程式閘道][appgw] 是專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。
 
-<!-- docsTest:ignore "application gateway" TODO -->
+<!-- docsTest:casing "the application gateway" "single application gateway" -->
 
 Azure 應用程式閘道可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的生產力。 它也提供其他第7層路由功能，包括迴圈配置傳入流量、以 cookie 為基礎的會話親和性、URL 路徑型路由，以及在單一應用程式閘道後方裝載多個網站的能力。
 

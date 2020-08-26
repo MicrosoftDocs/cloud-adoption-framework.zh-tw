@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 47d69db490f22f5c6513f5b6e26b559026b33728
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 835092c436f442dd9126009aee64ab54424f3e79
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568680"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878702"
 ---
 # <a name="conversational-ai"></a>對話式 AI
 
@@ -53,7 +53,7 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 瞭解如何新增認知服務，讓您的 bot 更具智慧。
 
 - [建立 AI 應用程式的開發人員指南](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (電子書) 
-- [深入瞭解認知服務](/azure/cognitive-services/)
+- 深入瞭解 [認知服務](/azure/cognitive-services/)
 
 瞭解如何使用 Bot Framework 的解決方案加速器來建立您自己的虛擬助理，並選取一組常用的技能，例如行事曆、電子郵件、感興趣的點和待辦事項。
 

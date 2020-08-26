@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f4d8e485ad75cf3d5401025031fce21865bbb722
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ba0d366ddd36fa8f57c0d57ca8343590fe39e124
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574817"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877444"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -108,7 +108,7 @@ Contoso 也將 Data Migration Assistant 新增至其 Azure Migrate 專案。 您
 
 #### <a name="step-2-application-assessment"></a>步驟2：應用程式評定
 
-<!-- docsTest:ignore "mainly .NET-based" "non-.NET-based" -->
+<!-- docsTest:casing "mainly .NET-based" "non-.NET-based" -->
 
 評量的結果提供了 Contoso 所使用的可見度。不過，以 .NET 為基礎的應用程式，多年來，許多專案都使用了 PHP 和 Node.js 等其他技術。 廠商購買的系統也引進了非以 .NET 為基礎的應用程式。 它們已識別下列各項：
 
@@ -144,7 +144,7 @@ Contoso 使用 DMA 來執行評量，然後將資料直接上傳至 Azure Migrat
 > [!NOTE]
 > 在評估階段中，Contoso 探索了各種開放原始碼資料庫。 它們分別遵循 [本指南](./contoso-migration-oss-db-to-azure.md) 來瞭解其遷移計畫。
 
-<!-- docsTest:ignore "custom .NET" -->
+<!-- docsTest:casing "custom .NET" -->
 
 #### <a name="step-4-migration-planning"></a>步驟4：遷移規劃
 

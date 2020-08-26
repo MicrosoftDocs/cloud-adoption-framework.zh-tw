@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 54c6e5d3dc292e3380fe0b51b265165b8fed3f28
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0a5face64211b93761e567f2149ec44fd624a472
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574885"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877988"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 
@@ -28,8 +28,6 @@ ms.locfileid: "88574885"
 ## <a name="cloud-operations"></a>雲端作業
 
 這兩個最佳做法都是針對作業管理的未來狀態方法所建立，如下圖所示：
-
-<!-- cSpell:ignore caf -->
 
 ![管理雲端採用架構的方法](../_images/manage/caf-manage.png)
 

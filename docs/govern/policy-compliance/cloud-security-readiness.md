@@ -7,15 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fe5bcc293d5d3e555c03e954487e3cc7e4c395de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573253"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879909"
 ---
-<!-- cSpell:ignore CISO -->
-
 # <a name="ciso-cloud-readiness-guide"></a>CISO 雲端整備指南
 
 「雲端採用架構」這類 Microsoft 指引並不是為了決定或引導這份檔所支援的數千個企業的獨特安全性限制。 移至雲端時，資訊安全資訊安全人員或資訊安全辦公室 (CISO) 的角色並不會受到雲端技術的會。 相反地，CISO 和 CISO 的辦公室都將擔任起更加根深蒂固且整合的角色。 本指南假設讀者已熟悉 CISO 流程，並正在尋求將這些程式現代化以啟用雲端轉換。
@@ -38,7 +36,7 @@ ms.locfileid: "88573253"
 
 對於雲端的認識，是抱持成長心態進行[原則檢閱](./cloud-policy-review.md)最重要的關鍵。 下列資源可協助 CISO 更加了解 Microsoft Azure 平台的安全性狀態。
 
-<!-- docsTest:ignore "Security Response in the Cloud" -->
+<!-- docutune:casing "Security Response in the Cloud" -->
 
 **安全性平台資源：**
 
@@ -56,7 +54,7 @@ ms.locfileid: "88573253"
 - [回應執法機關 (英文)](https://www.microsoft.com/trust-center/privacy)
 - [嚴格的隱私權標準 (英文)](https://www.microsoft.com/trust-center/privacy)
 
-<!-- docsTest:ignore "Cloud Services Due Diligence Checklist" -->
+<!-- docutune:casing "Cloud Services Due Diligence Checklist" -->
 
 **合 規：**
 

@@ -3,16 +3,16 @@ title: 雲端監視的技能就緒
 description: 雲端監視的技能就緒
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 05/19/2020
+ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2dc370df56042894903da00b14c9a37f06d17e1c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 85f3104f20f969e83f960e8ba3125b0ee56ed41e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571009"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877546"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -35,7 +35,9 @@ ms.locfileid: "88571009"
 
 - 瞭解如何使用原則、角色型存取控制和其他 Azure 服務來保護資源安全，方法是 [在 Azure 中觀看執行資源管理安全性](/learn/paths/implement-resource-mgmt-security)。
 
-- [監視 Microsoft Azure 資源和工作負載](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) 可協助您瞭解如何使用 azure 監視工具來監視 azure 網路資源，以及內部部署資源。
+- [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update) 可協助您瞭解如何使用 azure 監視工具來監視 azure 網路資源，以及內部部署資源。
+
+- 藉由觀看 [Azure 監視器的最佳作法和建議](https://www.youtube.com/watch?v=IWkqqahX_Ck&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6)，瞭解如何大規模規劃和設計監視部署，以及自動化動作。
 
 ## <a name="infrastructure-monitoring"></a>基礎結構監視
 
@@ -51,13 +53,15 @@ ms.locfileid: "88571009"
 
 - 透過 [適用於伺服器的 Azure Arc](/azure/azure-arc/servers/overview)，瞭解如何管理裝載于 Azure 外部的 Windows 和 Linux 機器，類似于管理原生 azure 虛擬機器的方式。
 
+- [如何監視您的 vm](https://www.youtube.com/watch?v=O7scXPrsM_0&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6&t=0s) 提供中繼層級深入探討，以協助您瞭解如何使用適用於 VM 的 Azure 監視器來監視混合式電腦或伺服器，以及 Azure VM 或虛擬機器擴展集。
+
 ## <a name="application-monitoring"></a>應用程式監視
 
 - 瞭解 [Azure 監視器](/azure/azure-monitor/overview) 如何協助您將應用程式和服務的可用性和效能集中在一處。 Pluralsight 提供下列課程來協助您：
 
   - [Microsoft Azure DevOps 工程師：優化意見反應機制](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) 可協助您使用 Azure 監視器（包括 Application Insights）來監視和優化您的 web 應用程式。
 
-  - [Microsoft Azure 開發人員：監視效能](https://app.pluralsight.com/library/courses/microsoft-azure-performance-monitoring)。 開始使用 Azure 監視器 Application Insights，以在 Azure 中執行應用程式元件的端對端監視。
+  - [在您的 Azure web 應用程式中，捕獲並查看頁面載入時間](https://docs.microsoft.com/learn/modules/capture-page-load-times-application-insights/)。 開始使用 Azure 監視器 Application Insights，以在 Azure 中執行應用程式元件的端對端監視。
   
   - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) 腳本可協助您瞭解如何執行 Azure SQL Database、Azure SQL 資料倉儲和 Azure Cosmos DB 的監視。
 
@@ -67,7 +71,7 @@ ms.locfileid: "88571009"
 
 ## <a name="data-analysis"></a>資料分析
 
-- 瞭解如何 [在 Azure 監視器中撰寫記錄查詢](/azure/azure-monitor/log-query/get-started-queries)。 Kusto 查詢語言是撰寫 Azure 監視器記錄查詢的主要資源，用來探索和分析從 Azure 收集的資料和混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
+- 瞭解如何 [在 Azure 監視器中撰寫記錄查詢](https://docs.microsoft.com/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)。 Kusto 查詢語言是撰寫 Azure 監視器記錄查詢的主要資源，用來探索和分析從 Azure 收集的資料和混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
 
 - [Kusto Query Language (KQL) 從頭](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) 開始是一個完整的課程，其中包含涵蓋各種使用案例的詳細範例，以及記錄分析在 Azure 監視器記錄檔中的各種技術。
 

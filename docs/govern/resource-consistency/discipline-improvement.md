@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 21f760fb9550f540b4b88f2f7ec098be7cf4307e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573236"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879388"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -23,7 +23,7 @@ ms.locfileid: "88573236"
 
 ![四個採用階段](../../_images/govern/adoption-phases.png)
 
-_圖1：雲端治理增量方法的採用階段。_
+*圖1：雲端治理增量方法的採用階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定要在這些活動中投入多少錢，以改善資源一致性專業領域。
 
@@ -89,7 +89,7 @@ _圖1：雲端治理增量方法的採用階段。_
 **潛在的活動：**
 
 - 使用您選擇的內部部署、雲端閘道或混合式解決方案，完成及測試監視和報告資料。
-- 判斷是否需要對 SLA 或資源管理原則進行變更。
+- 判斷是否需要對 SLA 或資源的管理原則進行變更。
 - 透過實作查詢功能來有效率地尋找跨雲端資產中的資源，從而改善作業工作。
 - 使資源與不斷變化的業務需求和治理需求保持一致。
 - 請確定您的虛擬機器、虛擬網路和儲存體帳戶，在每個版本中反映實際資源的存取需求，並視需要調整。
@@ -117,10 +117,10 @@ _圖1：雲端治理增量方法的採用階段。_
 
 - 每季調整方案，以反映實際資源的變更。
 - 在未來的部署期間自動套用和強制執行治理需求。
-- 評估未充分使用的資源，並判斷其是否值得繼續。
+- 評估未充分運用的資源，並判斷是否值得繼續。
 - 偵測計劃與實際資源使用量之間的不一致與異常狀況。
 - 協助雲端採用小組和雲端策略小組瞭解並解決這些異常狀況。
-- 判斷是否需要對您的資源一致性專業領域進行計費和 Sla 的變更。
+- 判斷是否需要對資源一致性專業領域進行計費和 Sla 的變更。
 - 評估記錄和監視工具，以判斷您的內部部署、雲端閘道或混合式解決方案是否需要調整。
 - 針對業務單位和地理位置分散的群組，請判斷您的組織是否應考慮使用其他雲端管理功能（例如 [Azure 管理群組](/azure/governance/management-groups) ）來更妥善地套用集中式原則，並符合 SLA 需求。
 

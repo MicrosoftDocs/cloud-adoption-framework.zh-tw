@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f2dc11ac5145dea0fbf65aea65e74e5f2b8fe69c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 04921b668f77e00b5e8172527ca57864b2fe9a51
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572250"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877155"
 ---
-<!-- cSpell:ignore asabbour sabbour kured -->
+<!-- cSpell:ignore kured -->
 
 # <a name="cluster-and-application-security"></a>叢集和應用程式安全性
 
@@ -28,14 +28,11 @@ ms.locfileid: "88572250"
 >
 > - 您是否已複習 Kubernetes 叢集的安全性與威脅模型？
 > - 您的叢集是否已啟用角色型存取控制？
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | 檢查清單  | 資源 |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **熟悉安全性基本技術白皮書。** 安全 Kubernetes 環境的主要目標是確保它所執行的應用程式受到保護、可以快速識別並解決安全性問題，而且將會防止未來發生類似的問題。 | [保護 Kubernetes (白皮書的最終指南) ](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
+> | **熟悉安全性基本知識白皮書。** 安全 Kubernetes 環境的主要目標是確保它所執行的應用程式受到保護、可以快速識別並解決安全性問題，而且將會防止未來發生類似的問題。 | [保障 Kubernetes 安全的最終指南 (白皮書) ](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **檢查叢集節點的安全性強化設定。** 安全性強化的主機 OS 可減少攻擊的介面區，並允許安全地部署容器。 | [AKS 虛擬機器主機中的安全性強化](/azure/aks/security-hardened-vm-host-image)     |
 > | **設定叢集角色型存取控制 (RBAC) 。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes (影片中的角色型存取控制 (RBAC) ) ](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [整合 Azure AD 與 Azure Kubernetes Service](/azure/aks/azure-ad-integration) <br> [叢集組態檔的限制存取](/azure/aks/control-kubeconfig-access)   |
 
@@ -48,9 +45,6 @@ ms.locfileid: "88572250"
 > - 您是否已針對輸入、輸出和 pod 內通訊設定網路安全性規則？
 > - 您的叢集是否已設定為自動套用節點安全性更新？
 > - 您是否正在為您的叢集和容器工作負載執行安全性掃描解決方案？
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | 檢查清單  | 資源 |
@@ -71,9 +65,6 @@ ms.locfileid: "88572250"
 > [!div class="checklist"]
 >
 > - 您可以大規模強制執行治理和叢集原則嗎？
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | 檢查清單  | 資源 |

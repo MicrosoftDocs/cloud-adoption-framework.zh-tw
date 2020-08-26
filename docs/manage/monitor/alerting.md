@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b0f631a91523117e8acfa4a95ba446a5f87d493a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 48a9d309e644f7232e014201781f52edbb359c1f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571145"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877682"
 ---
-<!-- cSpell:ignore kusto multiresource multisignal -->
+<!-- cSpell:ignore multisignal -->
 
 # <a name="cloud-monitoring-guide-alerting"></a>雲端監視指南：警示
 
@@ -86,8 +86,6 @@ Azure 監視器包含與其他監視平臺整合的支援，以及 ITSM 軟體�
 | | 使用從節點、控制器、容器和 pod 百分位數的計算效能資料會寫入工作區。 容器記錄和清查資訊也會寫入工作區。 | 如果您想要根據叢集和容器的測量使用率變化來收到警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。 |
 | 適用於 VM 的 Azure 監視器 | 健康情況準則是儲存在計量資料庫中的計量。 | 健全狀況狀態從狀況良好變更為狀況不良時，會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
 | | 系統會將對應和客體作業系統效能記錄資料寫入 Log Analytics 工作區。 | 建立記錄查詢警示。 |
-
-<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>以成本最快的速度推動
 

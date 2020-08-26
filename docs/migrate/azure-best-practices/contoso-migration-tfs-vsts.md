@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6b3540a46e4f031056bffddb029d6723f14d0e93
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: de13c3f9ba198b7a54737bf9bd37d2affef4261b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575208"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878192"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -64,7 +64,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 ![Contoso 遷移程式的圖表。](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -97,7 +97,7 @@ Contoso 會按照下列方式完成移轉程序：
 - [Azure 儲存體簡介](/azure/storage/common/storage-introduction)。
 - [建立儲存體帳戶](/azure/storage/common/storage-create-storage-account)。
 
-<!-- docsTest:ignore "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
+<!-- docsTest:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
 ## <a name="step-2-upgrade-team-foundation-server"></a>步驟2：升級 Team Foundation Server
 
@@ -241,7 +241,7 @@ Contoso 管理員會對集合資料庫執行 Team Foundation Server 遷移工具
 1. **執行試執行匯入**。 試執行匯入有助於測試集合遷移。 試執行的存留期有限，因此在執行生產環境遷移之前會先將其刪除。 試執行會在一段時間後自動刪除。 通知 Contoso 將刪除即將刪除的成功電子郵件中的通知，會包含在匯入完成之後傳送的成功電子郵件中。 小組會據以記下和計畫。
 1. **完成生產環境的遷移**。 完成執行的遷移作業之後，Contoso 管理員會更新檔案，然後再次執行匯入，以進行最後的遷移 `import.json` 。
 
-<!-- docsTest:ignore "Team Foundation Server Administration Console" -->
+<!-- docsTest:casing "Team Foundation Server Administration Console" -->
 
 ### <a name="detach-the-collection"></a>中斷集合的連結
 

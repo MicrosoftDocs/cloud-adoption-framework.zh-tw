@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04652c401adc8b0742ee3366cbdb30f7abb9d057
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: fedfdf9df8e1a1da03b3e689976ac996d1e20e44
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847763"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879110"
 ---
-<!-- cSpell:ignore DPIAs -->
+<!-- cSpell:ignore DPIAs inexhaustive -->
 
 # <a name="microsoft-security-guidance"></a>Microsoft 安全性指引
 
@@ -45,7 +45,7 @@ ms.locfileid: "88847763"
 - **GDPR 入門：** Microsoft 產品和服務可協助組織在收集或處理個人資料時滿足 GDPR 需求。 Microsoft 服務信任入口網站的設計目的，是提供您 Microsoft 服務中可用來解決特定需求的相關資訊。 文件可協助您的 GDPR 權責和了解技術和組織措施。 系統會提供資料保護影響評量、資料主體要求和資料缺口通知的檔，以納入您自己的責任計畫以支援 GDPR。
   - **資料主體要求：** GDPR 會授與個人 (或資料主體) 與處理其個人資料相關的特定許可權。 這些權利包括修正不正確的資料、清除資料或限制其處理的許可權，以及取得資料的許可權，以及完成將資料傳輸到另一個控制器的要求。
   - **資料缺口：** GDPR 會在發生個人資料違規時，要求資料控制器和處理器的通知需求。 Microsoft 服務信任入口網站提供 Microsoft 如何運作的相關資訊，以防止缺口、Microsoft 如何偵測缺口，以及 Microsoft 將如何回應，並在發生缺口時通知您成為資料控制站。
-  - **資料保護影響評量：** Microsoft 可協助控制器完成 GDPR 資料保護影響評量 (Dpia) 。 GDPR 會提供一份詳盡的清單，列出必須執行 Dpia 的案例，例如針對分析和類似活動的目的進行自動化處理;處理大量特殊的個人資料，以及大規模的可公開存取區域的系統監視。
+  - **資料保護影響評量：** Microsoft 可協助控制器完成 GDPR 資料保護影響評量 (Dpia) 。 GDPR 會提供必須執行 Dpia 之案例的 inexhaustive 清單，例如程式碼剖析和類似活動的自動化處理;處理大量特殊的個人資料，以及大規模的可公開存取區域的系統監視。
   - **其他資源：** 除了上述各節所討論的工具指引以外，Microsoft 服務信任入口網站也提供其他資源，包括區域合規性、安全性與合規性中心的額外資源，以及有關 Microsoft 服務信任入口網站、合規性管理員、隱私權和 GDPR 的常見問題。
 - **區域合規性：** Microsoft 服務信任入口網站提供許多合規性檔和指引，讓 Microsoft 線上服務符合不同區域的合規性需求，包括捷克共和國、波蘭及羅馬尼亞。
 

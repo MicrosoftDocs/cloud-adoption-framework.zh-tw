@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 268ea3480b55d44f9512c54e55671976e2572a83
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 024078aa9257c450e377ba7b0a766c381800fc58
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568867"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878801"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure 中的安全性基準工具
 

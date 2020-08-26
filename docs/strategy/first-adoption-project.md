@@ -7,18 +7,18 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 39d83a2caa61178404a87fa33abe6bef66f502ff
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 507fdcba779f70b418e5d01a7058345967750af5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848324"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877019"
 ---
 # <a name="first-cloud-adoption-project"></a>第一個雲端採用專案
 
 其中有學習曲線和與雲端採用規劃相關聯的時間承諾。 即使是有經驗的團隊，適當的規劃也需要時間：讓專案關係人、收集和分析資料的時間、驗證長期決策的時間，以及調整人員、程式和技術的時間。 在最高生產力的採用工作中，計畫會隨著採用而並行成長、每個版本的改進，以及將每個工作負載遷移至雲端。 請務必瞭解雲端採用方案與雲端採用策略之間的差異。 您需要妥善定義的策略，以促進及引導採用雲端採用計畫。
 
-<!-- docsTest:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+<!-- docutune:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
 
 適用于 Azure 的雲端採用架構概述雲端採用的流程，以及裝載于雲端的工作負載作業。 跨策略、計畫、就緒、採用和操作階段的每個程式都需要稍微擴充技術、業務和營運技巧。 其中有些技能可能來自于導向學習。 但其中有許多都是透過實際操作經驗獲得最有效率的。
 
@@ -46,13 +46,13 @@ ms.locfileid: "88848324"
 
 為了支援上述準則，此清單提供每個動機類別的第一個專案範例：
 
-- **重大商務活動：** 當重要的商務事件是主要動機時，如 [Azure Site Recovery](../migrate/azure-migration-guide/secure-and-manage.md#replicate-an-azure-vm-to-another-region-with-site-recovery-service) 這類工具的執行可能會是理想的第一個專案。 在遷移期間，您會利用 [Azure Migrate](../migrate/azure-migration-guide/migrate.md#azure-migrate) 之類的工具，快速地遷移資料中心資產。 但是在第一個專案中，您可以先使用 Azure Site Recovery 作為嚴重損壞修復工具。 在 pragmatically 規劃遷移之前，降低資料中心內嚴重損壞修復資產的相依性。
+- **重大商務活動：** 當重要的商務事件是主要動機時，如 [Azure Site Recovery](../migrate/azure-migration-guide/secure-and-manage.md#replicate-an-azure-vm-to-another-region-with-site-recovery-service) 這類工具的執行可能會是理想的第一個專案。 在遷移期間，您會使用類似 [Azure Migrate](../migrate/azure-migration-guide/migrate.md#azure-migrate) 的工具，快速地遷移資料中心資產。 但是在第一個專案中，您可以先使用 Azure Site Recovery 作為嚴重損壞修復工具。 在 pragmatically 規劃遷移之前，降低資料中心內嚴重損壞修復資產的相依性。
 
 - **遷移動機：** 當遷移是主要動機時，開始遷移非關鍵性工作負載是明智的做法。 [Azure 設定指南](../ready/azure-setup-guide/index.md)和[azure 遷移指南](../migrate/azure-migration-guide/index.md)可以提供遷移第一個工作負載的指引。
 
 - **創新動機：** 當創新是主要動機時，建立目標開發/測試環境可能是絕佳的第一個專案。
 
-<!-- docsTest:ignore "data migration services" -->
+<!-- docutune:ignore "data migration services" -->
 
 第一個採用專案的其他範例包括：
 

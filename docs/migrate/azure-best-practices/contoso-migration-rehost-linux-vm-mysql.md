@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 86feba84b8bec522d887c788f4942492ffa8dce8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 45c728b60d5aac4caf47927e0c6fa99c242a979d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567337"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878056"
 ---
-<!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms-and-azure-database-for-mysql"></a>將內部部署 Linux 應用程式重新裝載至 Azure Vm 和適用於 MySQL 的 Azure 資料庫
 
@@ -85,7 +85,7 @@ Contoso 會按照下列方式完成移轉程序：
 | [Azure Database Migration Service](/azure/dms/dms-overview) | 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [適用於 MySQL 的 Azure 資料庫](/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫 [定價](https://azure.microsoft.com/pricing/details/mysql) 和擴充性選項。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -191,7 +191,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 1. 在 [Azure Hybrid Benefit] 中：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後選取 [下一步]  。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 接著，選取 [下一步]  。
 
 1. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -238,7 +238,7 @@ Contoso 管理員現在會執行完整遷移來完成移動。
     ![顯示 [複寫伺服器] 選項的螢幕擷取畫面。](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
 1. 在 [複寫 **機器**] 中，選取並按住 (或以滑鼠右鍵按一下) VM，然後選取 [ **遷移**]。
-1. 在 [遷移]**** > [將虛擬機器關機，在沒有資料遺失的情況下執行計劃性移轉]**** 中，選取 [是]**** > [確定]****。
+1. 在 [遷移] > [將虛擬機器關機，在沒有資料遺失的情況下執行計劃性移轉] 中，選取 [是] > [確定]。
     - 根據預設，Azure Migrate 會關閉內部部署 VM，並執行隨選複寫來同步處理自從上次複寫之後發生的任何 VM 變更。 此動作可確保不會遺失任何資料。
     - 如果您不想關閉 VM，請選取 [否]。
 1. VM 會啟動移轉作業。 請在 Azure 通知中追蹤該作業。
@@ -417,8 +417,6 @@ Contoso 安全性小組會檢查 VM 和資料庫以判斷任何安全性問題�
 - VM 與資料庫執行個體之間的通訊並未針對 SSL 進行設定。 他們必須設定 SSL，以確保資料庫流量不會遭到駭客入侵。
 
 如需詳細資訊，請參閱 [Azure 中 IaaS 工作負載的安全性最佳作法](/azure/security/fundamentals/iaas)。
-
-<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="business-continuity-and-disaster-recovery"></a>商務持續性和災害復原
 

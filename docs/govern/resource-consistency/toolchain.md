@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 55ffac53041f961757909ec80b7118d2e2118f2a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 55238bee14d03883e94c87612f8819f92d981d01
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568986"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879127"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
 [資源一致性](./index.md) 是 [雲端治理的五個專業領域](../governance-disciplines.md)之一。 這個專業領域著重於訂定與環境、應用程式或工作負載之作業管理相關的原則。 在雲端治理的五個專業領域中，資源一致性專業領域牽涉到監視應用程式、工作負載和資產效能。 它也包含符合調整需求、補救效能 SLA 違規，以及透過自動補救主動避免效能 SLA 違規所需的工作。
 
-<!-- docsTest:ignore "conditional access to resources" -->
+<!-- docutune:casing "conditional access to resources" -->
 
 以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 

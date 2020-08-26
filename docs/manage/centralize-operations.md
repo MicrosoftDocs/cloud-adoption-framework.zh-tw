@@ -7,15 +7,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8dbfd5324957b7175afc81801873eef8bf5242cf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fce6da886e8b4336a1c9d61a8ed2e4455ac6200b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571825"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877801"
 ---
-<!-- cSpell:ignore jenhayes -->
-
 # <a name="centralize-management-operations"></a>集中化管理作業
 
 對於大部分的組織而言，使用單一 Azure Active Directory (Azure AD) 租使用者的所有使用者都能簡化管理作業，並降低維護成本。 這是因為所有管理工作都可以透過指定的使用者、使用者群組或該租使用者內的服務主體來進行。

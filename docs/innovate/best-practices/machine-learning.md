@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f6ba299ad4eddd9a299aac151ad85ed31ac7a0f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 904fd950a7d19f33d7589cc0ccff69e56026660b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568374"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878515"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -35,7 +35,7 @@ Azure Machine Learning 為開發人員和資料科學家提供其機器學習工
 - 開放原始碼架構，例如 PyTorch、TensorFlow 及 scikit-learn 等等。
 - 使用光線 RLlib 的[增強式學習](/azure/machine-learning/how-to-use-reinforcement-learning)。
 
-您甚至可以使用 [MLflow 來追蹤計量，以及部署模型](/azure/machine-learning/how-to-use-mlflow) 或 [Kubeflow](https://www.kubeflow.org/docs/azure/) ，以建立端對端工作流程管線。
+您甚至可以使用 [MLflow 來追蹤計量，以及部署模型](/azure/machine-learning/how-to-use-mlflow) 或 [kubeflow](https://www.kubeflow.org/docs/azure/) ，以建立端對端工作流程管線。
 
 ## <a name="build-machine-learning-models-in-python-or-r"></a>以 Python 或 R 建立機器學習模型
 
@@ -99,7 +99,7 @@ Machine Learning 作業 (MLOps) 是以提高工作流程效率的 [DevOps](https
 
 ## <a name="integration-with-other-services"></a>與其他服務整合
 
-Azure Machine Learning 可與 Azure 平台上的其他服務搭配運作，也可以與 Git 和 MLFlow 等開放原始碼工具整合。
+Azure Machine Learning 適用于 Azure 平臺上的其他服務，也會與 Git 和 MLflow 等開放原始碼工具整合。
 
 - 計算目標，例如 Azure Kubernetes Service、Azure 容器執行個體、Azure Databricks、Azure Data Lake Analytics 和 Azure HDInsight。 如需計算目標的詳細資訊，請參閱[什麼是計算目標？](/azure/machine-learning/concept-compute-target)。
 - Azure 事件格線。 如需詳細資訊，請參閱[取用 Azure Machine Learning 事件](/azure/machine-learning/how-to-use-event-grid)。
@@ -108,11 +108,11 @@ Azure Machine Learning 可與 Azure 平台上的其他服務搭配運作，也�
 - Azure 虛擬網路。 如需詳細資訊，請參閱[虛擬網路中的安全實驗和推斷](/azure/machine-learning/how-to-enable-virtual-network)。
 - Azure Pipelines。 如需詳細資訊，請參閱[定型和部署機器學習服務模型](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)。
 - Git 存放庫記錄。 如需詳細資訊，請參閱 [Git 整合](/azure/machine-learning/concept-train-model-git-integration)。
-- MLflow。 如需詳細資訊，請參閱 [MLflow 來追蹤計量和部署模型](/azure/machine-learning/how-to-use-mlflow)。
+- MLflow. 如需詳細資訊，請參閱 [MLflow 來追蹤計量和部署模型](/azure/machine-learning/how-to-use-mlflow)。
 - Kubeflow。 如需詳細資訊，請參閱 [組建端對端工作流程管線](https://www.kubeflow.org/docs/azure/)。
 - 安全通訊。 您的 Azure 儲存體帳戶、計算目標和其他資源可以在虛擬網路內安全地使用，以定型模型及執行推斷。 如需詳細資訊，請參閱[虛擬網路中的安全實驗和推斷](/azure/machine-learning/how-to-enable-virtual-network)。
 
 ## <a name="next-steps"></a>後續步驟
 
-- 複習 [Machine Learning studio](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-studio) 和 [Machine Learning 服務](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-service)的機器學習白皮書和電子書。
+- 請參閱 [Machine Learning studio](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-studio) 和 [Machine Learning 服務](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-service)的機器學習技術白皮書和電子書。
 - 複習 [AI + Machine Learning 架構](/azure/architecture/browse/)。
