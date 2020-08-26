@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cef47631cc3fba0b6645476f5b91b330ea8c89ef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: cbf0a58c8d7cd89937d7a49c692ab5bd633c1fc8
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574171"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847780"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -63,7 +63,7 @@ Azure AD 是原生的身分識別和存取管理 (IAM) 系統，用於授與使�
 對於具有現有內部部署 Active Directory 基礎結構的組織，目錄同步作業通常是保留現有使用者和存取管理的最佳解決方案，同時可提供所需的 IAM 功能來管理雲端資源。 此程序會持續複寫 Azure AD 和內部部署目錄服務之間的目錄資訊，允許使用者使用常見的認證，並在整個組織內使用一致的身分識別、角色和權限系統。
 
 > [!NOTE]
-> 採用 Office 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](/office365/enterprise/set-up-directory-synchronization)。
+> 採用 Microsoft 365 的組織可能已經在內部部署 Active Directory 基礎結構和 Azure Active Directory 之間實作[目錄同步作業](/office365/enterprise/set-up-directory-synchronization)。
 
 **目錄同步作業假設事項：** 使用同步處理身分識別解決方案的假設如下：
 
