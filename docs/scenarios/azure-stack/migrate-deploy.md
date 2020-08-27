@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86c1d4b7eaea3c7de15dfd4417a6bcc21d956ea8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9b1cf8600bd0160f02de9bfd4532c189008b5322
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569632"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885434"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>將工作負載部署到 Azure Stack Hub
 
@@ -37,8 +37,6 @@ ms.locfileid: "88569632"
 ## <a name="deploy-workloads"></a>部署工作負載
 
 在 Azure Stack Hub 系統管理員已正確設定您的堆疊實例之後，就可以繼續進行遷移，如同其他大部分的 Azure 遷移工作一樣。 藉由使用 Azure Stack，您的小組可以執行下列任何一種類型的遷移：
-
-<!-- cSpell:ignore howto -->
 
 - [乙太坊區塊鏈網路](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
 - [AKS 引擎](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)

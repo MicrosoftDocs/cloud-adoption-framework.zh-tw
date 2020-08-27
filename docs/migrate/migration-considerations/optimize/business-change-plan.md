@@ -1,22 +1,22 @@
 ---
 title: 開發商務變更計畫
-description: 使用適用于 Azure 的雲端採用架構，瞭解商務變更計畫如何協助您執行更廣泛的使用者採用方案。
+description: 使用適用于 Azure 的雲端採用架構，瞭解業務變更計畫如何協助您實現更廣泛的使用者採用計畫。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a689de5ddf48ff095a59d362571c75791cf10eff
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 58b10b2f800e7292f3f107a3fc307cb971c5809b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235291"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884618"
 ---
 <!-- cSpell:ignore Eason -->
 
-<!-- docsTest:ignore "Eason Matrix" -->
+<!-- docsTest:casing "Eason Matrix" -->
 
 # <a name="business-change-plan"></a>業務變更方案
 
@@ -54,7 +54,7 @@ ms.locfileid: "86235291"
 - 既然已採用技術變更，效能是否符合預期？
 - 業務程序或客戶體驗是否以預期的方式變更？
 - 是否需要其他變更才能實現學習計量？
-- 變更是否符合目標業務成果？ 如果不符合，原因為何？
+- 變更是否符合目標業務成果？ 如果不是，原因為何？
 - 是否需要其他變更才能參與業務成果？
 - 是否有觀察到這項變更造成了任何負面效果？
 
@@ -67,10 +67,10 @@ ms.locfileid: "86235291"
 > [!div class="nextstepaction"]
 > [在移轉期間進行商務測試 (UAT) 的指引](./business-test.md)
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 <!-- docsTest:disable -->
 
-- Eason，K. (1988) _資訊技術和組織變革_，紐約： Taylor 和 Francis。
+- Eason，K. (1988) _資訊技術和組織變更_，紐約： Taylor 和 Francis。
 
 <!-- docsTest:enable -->

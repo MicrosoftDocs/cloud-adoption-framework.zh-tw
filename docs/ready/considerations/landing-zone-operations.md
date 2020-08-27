@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3cfd48a0a8dabb9b37004c2f15c23a8ae79aa6e9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575157"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884822"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 
@@ -35,8 +35,6 @@ ms.locfileid: "88575157"
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>改善單一登陸區域以外作業的四個步驟
 
 [管理方法](../../manage/index.md)提供建立作業管理容量的整體指引，請參閱[管理方法](../../manage/index.md)。 我們將使用該方法的基本結構以及該方法的下列步驟，來改善所有登陸區域的登陸區域作業和作業。
-
-<!-- cSpell:ignore caf -->
 
 ![管理方法 ](../../_images/manage/caf-manage.png)
  _圖1： CAF 管理方法。_

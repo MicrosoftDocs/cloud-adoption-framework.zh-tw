@@ -7,18 +7,18 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9672d7ba47c18202e685c18372ed1773674be069
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2cb7faca74334538f48b1a57e3bd6b70f3983e43
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575055"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885519"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>在您的資料中心管理 Azure 實例
 
-跨公用和私用雲端平臺管理混合式解決方案，會增加複雜性。 因為您的 Azure Stack hub 是您自己的資料中心內執行的 Azure 私人實例，所以此複雜性原本就會降低。
+跨公用和私用雲端平臺管理混合式解決方案，會增加複雜性。 因為您的 Azure Stack Hub 是您自己的資料中心內執行的 Azure 私人實例，所以此複雜性原本就會降低。
 
-在雲端採用架構的控管 [方法](../../govern/index.md) 中所述的商務程式、專業領域和許多最佳作法，仍然可以套用至 Azure Stack Hub 的混合式治理。 適用于 Azure 公用雲端版本的許多雲端原生工具也可以在您的 Azure Stack hub 中使用。
+在雲端採用架構的控管 [方法](../../govern/index.md) 中所述的商務程式、專業領域和許多最佳作法，仍然可以套用至 Azure Stack Hub 的混合式治理。 適用于 Azure 公用雲端版本的許多雲端原生工具也可以在您的 Azure Stack Hub 中使用。
 
 ## <a name="azure-stack-hub-governance-considerations"></a>Azure Stack Hub 治理考慮
 

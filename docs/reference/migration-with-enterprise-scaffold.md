@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: b3843cf0f0de675eacea05fb261167bc37dc90d1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f70624744e881778d9a51977a5b33931374623b9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574443"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885638"
 ---
 <!-- docsTest:disable -->
-<!-- cSpell:ignore rodend subscope ITSM Hashi -->
+<!-- cSpell:ignore subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
 

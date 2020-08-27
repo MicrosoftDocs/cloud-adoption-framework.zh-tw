@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7957cfedee535739b8d785a374e5133827b08968
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c6351e1e6de0db3247b584d914ea3b5c5e842e68
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569462"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884329"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -22,17 +22,15 @@ ms.locfileid: "88569462"
 
 治理是在任何大型企業內進行成本優化的基石。 下一節將概述治理內容中的成本優化指導方針。 後續步驟可協助每個小組在成本優化中採取以其角色為目標的動作。 這些步驟可讓您的組織開始進行成本優化的旅程。
 
-![企業成本管理入門](../_images/get-started/cost-map.png)
+![開始使用成本優化](../_images/get-started/cost-map.png)
 
 ## <a name="step-1-optimize-enterprise-costs"></a>步驟1：將企業成本優化
 
 雲端治理小組已準備好透過監視效能、減少資源大小調整，以及安全地終止未使用的資源，來評估及處理超支或非計畫的消費。 企業成本優化一開始會先瞭解所需的工具、程式和相依性，以明智的方式在環境層級上採取成本考慮。
 
-<!-- docsTest:ignore "your cost management policies" -->
-
 **交付：**
 
-- 跨企業執行成本管理變更。
+- 跨企業執行成本管理原則的明智變更。
 - 記錄 [成本管理專業領域範本](../govern/cost-management/template.md)中的成本管理原則、程式和設計指引。
 
 這些交付專案是幾個週期性工作的結果：
@@ -48,20 +46,19 @@ ms.locfileid: "88569462"
 **支援交付完成的指導方針：**
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 使用 Azure 原則，並特別強調「成本中心」和「技術擁有者」的標記，[來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。
-- 定期檢查並套用 [成本管理最佳作法](../govern/cost-management/best-practices.md) ，以引導整個企業的分析和改進。 以下是一些最具影響力的治理作法：
+- 定期檢查並套用 [成本管理專業領域的最佳做法](../govern/cost-management/best-practices.md) ，以引導整個企業的分析和改進。 重要治理作法包括：
 
-  - 針對 [一般成本最佳作法](../govern/cost-management/best-practices.md) 採取行動，以降低調整大小和成本，並停止未使用的電腦。
+  - 以 [一般成本最佳作法](../govern/cost-management/best-practices.md) 為依據，以降低調整大小和成本，並停止未使用的電腦。
   - 運用 [混合式使用權益](../govern/cost-management/best-practices.md#best-practice-take-advantage-of-azure-hybrid-benefit) 來降低授權成本。
-  - 調整 [保留實例](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances) 以降低資源成本。
-  - [監視資源使用率](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization) ，將對資源效能的影響降至最低。
+  - 將 [保留實例](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances) 對齊，以降低資源成本。
+  - [監視資源使用率](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization) ，以將資源效能的影響降到最低。
   - 透過原則來[降低非生產成本](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)，以管理非生產環境。
-  - 針對 [成本優化建議](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)採取行動。
+  - 針對 [成本優化建議](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)採取行動。
 
 - 您可能需要在工作負載層級進行取捨，以實行有效的成本優化變更。 [Microsoft Azure 架構良好的架構](/azure/architecture/framework/cost/tradeoffs)，並[Microsoft Azure 架構良好的審查](/assessments/?id=azure-architecture-review)，可協助引導這些交談與特定工作負載的技術擁有者。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
 - 如果您不熟悉成本管理專業領域，請考慮遵循 [成本管理專業領域的改進文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -79,15 +76,14 @@ ms.locfileid: "88569462"
 **交付：**
 
 - 記錄 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的動機、結果和業務理由。
-- 使用 Azure 成本管理建立您的第一個預算。
+- 使用 Azure 成本管理和帳單來建立您的第一個預算。
 
 **支援交付完成的指導方針：**
 
-- [瞭解動機](../strategy/motivations.md)。 重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制在所有後續工作的重要性。 其他與創新或成長有關的向前搜尋動機，可能會著重于頂尖的收入。 瞭解動機有助於您瞭解優先順序成本管理的高度。
+- [瞭解動機](../strategy/motivations.md)。 重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制在所有後續工作的重要性。 其他與創新或成長有關的向前搜尋動機，可能會著重于頂尖的收入。 瞭解動機可協助您決定成本管理的優先順序高。
 - [商務成果](../strategy/business-outcomes/index.md)。 某些會計結果通常會非常符合成本效益。 當想要的結果對應至會計計量時，您應該提早投資成本管理治理專業領域。
 - [業務理由](../strategy/cloud-migration-business-case.md)。 商業理由可作為雲端採用的財務計畫的高階觀點。 這是初始預算工作的絕佳來源。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -108,10 +104,9 @@ ms.locfileid: "88569462"
 - [收集清查](../digital-estate/inventory.md)。 建立資料來源，以在採用之前分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)。 使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)。 在增量合理化和量化分析期間，請找出用於預算的雲端候選項目。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)。 使用 Azure 成本管理藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)來調整成本和預測模型。
-- [打造您的雲端採用計畫](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 使用可採取動作的工作負載、資產和時間軸詳細資料來建立方案。 此計畫可提供花費在時間 (或成本預測) 的基礎。 _花費一段時間_ ，是成本管理治理專業領域內所有可操作優化分析的初始基準。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)。 使用 Azure 成本管理和帳單，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
+- [打造您的雲端採用計畫](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 使用可採取動作的工作負載、資產和時間軸詳細資料來建立方案。 此計畫可提供花費在時間 (或成本預測) 的基礎。 *花費一段時間* ，是成本管理治理專業領域內所有可操作優化分析的初始基準。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -130,12 +125,11 @@ ms.locfileid: "88569462"
 **支援交付完成的指導方針：**
 
 - [追蹤成本](../ready/azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)。 建立妥善管理的環境階層、提供正確的成本存取層級，並在每個登陸區域中使用額外的成本管理資源。
-- [優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 瞭解將投資優化的最佳做法。
-- [建立及管理預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 瞭解建立及管理預算的最佳作法。
-- [從建議中將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 瞭解使用可將成本優化的建議最佳作法。
-- [監視使用量和支出](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 瞭解在登陸區域內監視使用量和支出的最佳作法。
+- [優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解將投資優化的最佳做法。
+- [建立及管理預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解建立及管理預算的最佳作法。
+- [從建議中將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解使用可將成本優化的建議最佳作法。
+- [監視使用量和支出](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 瞭解在登陸區域內監視使用量和支出的最佳作法。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -162,7 +156,6 @@ ms.locfileid: "88569462"
 - [遷移](../migrate/migration-considerations/migrate/index.md) 包含補救資產的一個處理建議。 這項建議讓您有機會將已設定的狀態優化，以利優化的解決方案。
 - 將[焦點放](../migrate/migration-considerations/optimize/index.md)在測試、調整、驗證和釋出已遷移的資產，以及解除委任淘汰的資產。 這是預測和預算可針對實際效能和設定進行測試的第一個明確點。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -182,7 +175,6 @@ ms.locfileid: "88569462"
 - 使用 [Microsoft Azure 架構良好的評論](/assessments/?id=azure-architecture-review) ，以瞭解架構決策的平衡。
 - 複習 [Microsoft Azure 架構良好的架構](/azure/architecture/framework) ，以取得創新期間成本優化的更深入指引。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -201,7 +193,6 @@ ms.locfileid: "88569462"
 
 - [建立商務調整](../manage/considerations/business-alignment.md) ，以取得有關復原投資的重要性和胃口的清楚資訊。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

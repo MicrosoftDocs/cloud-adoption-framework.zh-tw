@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 38b0595d08e66ee5f78447e742d3ea8d2b08b83f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 4d554fa61572e26e880b437154d504a17b727772
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574953"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885264"
 ---
 # <a name="windows-virtual-desktop-azure-landing-zone-review"></a>Windows 虛擬桌面 Azure 登陸區域審核
 
@@ -20,13 +20,13 @@ ms.locfileid: "88574953"
 
 ## <a name="evaluate-compatibility"></a>評估相容性
 
-- **資源組織方案**：登陸區域應包含要使用之訂用帳戶或訂用帳戶的參考、資源群組使用方式的指引，以及小組部署資源時要使用的標記和命名標準。
-- **Azure AD**：應提供 Azure Active Directory (Azure AD) 實例或 Azure AD 租使用者以進行使用者驗證。
-- **網路**：在遷移之前，應該在登陸區域中建立任何必要的網路設定。
-- **VPN 或 ExpressRoute**：此外，任何支援虛擬桌面的登陸區域都需要網路連線，讓終端使用者可以連線到登陸區域和託管資產。 如果已針對虛擬桌面設定一組現有的端點，則終端使用者仍可透過 VPN 或 Azure ExpressRoute 連線，透過這些內部部署裝置來路由傳送。 如果連接還不存在，您可能會想要在 [準備好方法](../../ready/index.md)中，查看設定網路連線選項的指導方針。
-- **治理、使用者和身分識別**：為了一致地強制執行，任何從虛擬桌面管理存取權，以及管理使用者和其身分識別的需求，都應該設定為 Azure 原則並套用至登陸區域。
-- **安全性**：安全性小組已審核登陸區域設定，並核准每個登陸區域以供其預定使用，包括外部連線的登陸區域，以及任何任務關鍵性應用程式或機密資料的登陸區域。
-- **Windows 虛擬桌面**：已啟用 Windows 虛擬桌面平臺即服務。 <!-- TODO: Add link to enable the service. -->
+- **資源組織方案：** 登陸區域應包含要使用的訂用帳戶或訂用帳戶的參考、資源群組使用方式的指引，以及小組部署資源時要使用的標記和命名標準。
+- **Azure AD：** 應提供 Azure Active Directory (Azure AD) 實例或 Azure AD 租使用者，以進行使用者驗證。
+- **網路：** 在遷移之前，您應該在登陸區域中建立任何必要的網路設定。
+- **VPN 或 ExpressRoute：** 此外，任何支援虛擬桌面的登陸區域都需要網路連線，讓終端使用者可以連線到登陸區域和託管資產。 如果已針對虛擬桌面設定一組現有的端點，則終端使用者仍可透過 VPN 或 Azure ExpressRoute 連線，透過這些內部部署裝置來路由傳送。 如果連接還不存在，您可能會想要在 [準備好方法](../../ready/index.md)中，查看設定網路連線選項的指導方針。
+- **治理、使用者和身分識別：** 為了一致地強制執行，任何從虛擬桌面管理存取以及管理使用者與其身分識別的需求，都應該設定為 Azure 原則並套用至登陸區域。
+- **安全性：** 安全性小組已審核登陸區域設定，並核准每個登陸區域以供其預定使用，包括外部連線的登陸區域，以及任何任務關鍵性應用程式或機密資料的登陸區域。
+- **Windows 虛擬桌面：** 已啟用 Windows 虛擬桌面平臺即服務。 <!-- TODO: Add link to enable the service. -->
 
 小組使用 [就緒方法](../../ready/index.md) 中的最佳做法，並符合先前提及之特殊需求的任何登陸區域，都可以作為此遷移的登陸區域。
 

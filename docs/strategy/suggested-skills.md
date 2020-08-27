@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 910ccff4708ef57fe6e652bb59fa34e0d0ea74e3
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 375dcdbb63241d3bc3b1c29f9308bccbe698844c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662314"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885757"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>在遷移旅程的規劃階段期間的技能就緒途徑
 
@@ -67,7 +67,7 @@ ms.locfileid: "88662314"
 
 ## <a name="organizational-skills"></a>組織技能
 
-根據雲端採用工作的動機和想要的業務成果，領導人可能需要建立新的組織結構或虛擬團隊 (的) ，以促進各種功能。 這些文章可協助您開發所需的技能，以結構這些團隊來滿足所需的結果：
+根據雲端採用工作的動機和所需的業務成果，領導人可能需要建立新的組織結構或虛擬小組，以促進各種功能。 這些文章可協助您開發所需的技能，以結構這些團隊來滿足所需的結果：
 
 - [初始組織對齊](../organize/index.md)。 概述用於輔助特定目標的組織定位和各種小組結構。
 - [細分定址接收器和領域](../organize/fiefdoms-silos.md)。 瞭解兩個常見的組織反模式，以及引導小組進行生產力共同作業的方式。

@@ -3,16 +3,16 @@ title: 開始使用：建立雲端治理小組
 description: 建立治理小組的範圍、交付專案及功能，以準備成功的雲端治理。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 346b4feabfbb7fefd8632ac4b3f5f81473815843
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661991"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884176"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：建立雲端治理小組
 
@@ -32,9 +32,8 @@ ms.locfileid: "88661991"
 **支援交付完成的指導方針：**
 
 - [雲端治理功能](../../organize/cloud-governance.md) 可能已分散到多個個人或團隊。 擁有「雲端治理小組」標題的小組並不重要，但所需的功能應該與負責任的合作物件或小組並存。
-- 如果公司的長期雲端採用策略可從一個雲端環境中的一個登陸區域來交付，則治理和作業工作的數量可能夠小，可供一個人或一個小組傳遞。 該小組不太可能被稱為「雲端治理」，因為它能提供雲端治理以外的許多功能。 即使是該團隊，此入門指南也有助於確保 it 能夠在治理的這項重要功能上提供。
+- 如果公司的長期雲端採用策略可從一個雲端環境中的一個登陸區域來交付，則治理和作業工作的數量可能夠小，可供一個人或一個小組傳遞。 該小組不太可能被稱為「雲端治理」，因為它能提供雲端治理以外的許多功能。 即使是該團隊，本入門指南也可協助確保 it 能夠在治理的這項重要功能上提供。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -57,7 +56,6 @@ ms.locfileid: "88661991"
 - 利用雲端採用小組的成員，複習您公司的 [雲端採用方案](../../plan/template.md) ，以瞭解時程表和優先順序。
 - 請參閱作業小組的 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) ，以瞭解與企業建立的營運需求和承諾。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -77,7 +75,6 @@ ms.locfileid: "88661991"
 
 - 如需步調 for meeting 的詳細指引，請參閱 [雲端治理功能](../../organize/cloud-governance.md#deliverable)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -176,7 +173,6 @@ ms.locfileid: "88661991"
 
 - 建立將新的 [工作負載和資源](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的流程。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

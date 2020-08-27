@@ -9,15 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: fed40e3b4d6c5c2aeeb63f70dcd41733e48b519e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662467"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885672"
 ---
 <!-- docsTest:disable TODO -->
-<!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
+<!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>虛擬資料中心：網路觀點
 
@@ -412,11 +412,9 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 資料中心遷移的虛擬資料中心方法會建立可調整的架構，以優化 Azure 資源的使用、降低成本，並簡化系統管理。 虛擬資料中心通常是以使用虛擬網路對等互連或虛擬 WAN 中樞)  (的中樞和輪輻網路拓撲為基礎。 中樞內提供的一般共用服務，以及特定的應用程式和工作負載會部署在輪輻中。 虛擬資料中心也會符合公司角色的結構，其中的不同部門（例如中央 IT、DevOps、作業和維護）會一起運作，同時執行其特定角色。 虛擬資料中心支援將現有的內部部署工作負載遷移至 Azure，但也提供雲端原生部署的許多優點。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 深入瞭解本檔中討論的 Azure 功能。
-
-<!-- markdownlint-disable MD033 -->
 
 :::row:::
     :::column:::
@@ -472,7 +470,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 :::row:::
     :::column:::
-        **Security** <br>
+        **安全性** <br>
         [Azure 防火牆][AzFW] <br>
         [防火牆管理員][AzFWMgr] <br>
         [應用程式閘道 WAF][AppGWWAF] <br>
@@ -492,8 +490,6 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         [Azure Machine Learning][machine-learning]
     :::column-end:::
 :::row-end:::
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>後續步驟
 

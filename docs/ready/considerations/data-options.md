@@ -7,15 +7,13 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 911a0b020ad00b042cfe2caea4d96c74451be032
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9ad7787dd44314e0c83b55d5d799a111de021f6c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566827"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885060"
 ---
-<!-- cSpell:ignore HDFS -->
-
 # <a name="review-your-data-options"></a>檢查您的資料選項
 
 當您準備登陸區域環境以進行雲端採用時，您需要判斷裝載工作負載的資料需求。 Azure 資料庫產品和服務支援各種不同的資料儲存體案例和功能。 要如何設定登陸區域環境來支援資料需求，取決於您的工作負載管理、技術和商務需求。
@@ -50,7 +48,7 @@ ms.locfileid: "88566827"
 
 下表說明一些常見的使用案例需求，以及用來處理這些需求的建議資料庫服務：
 
-| 狀況  | 資料服務 |
+| 案例  | 資料服務 |
 |---|---|
 | 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。 | [Azure Cosmos DB](/azure/cosmos-db/introduction) |
 | 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |

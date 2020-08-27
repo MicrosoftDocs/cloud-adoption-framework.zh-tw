@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 79d4813051191c257d08ce2699630f907acf3dd3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d5ff1d8e1df03a2a022e614132ef53498a9198d7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573797"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884091"
 ---
 # <a name="evaluate-corporate-policy"></a>評估公司原則
 
 |  |  |
 |--|--|
-| 對業務程序或技術平台進行的任何變更都會對業務引進風險。 雲端治理小組 (其成員又稱雲端監管人) 負責降低這些風險，且對採用或創新工作造成最少的中斷。 <br><br> 但雲端治理需要的不只是技術執行。 公司記述或公司原則中的細微變更可能對採用工作有重大影響。 在執行之前，請務必在定義公司原則時查看它。 | [![雲端採用架構治理模型的圖表：公司原則和治理專業領域](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _圖1：公司原則的視覺效果，以及雲端治理的五個專業領域。_ |
+| 對業務程序或技術平台進行的任何變更都會對業務引進風險。 雲端治理小組 (其成員又稱雲端監管人) 負責降低這些風險，且對採用或創新工作造成最少的中斷。 <br><br> 但雲端治理需要的不只是技術執行。 公司記述或公司原則中的細微變更可能對採用工作有重大影響。 在執行之前，請務必在定義公司原則時查看它。 | [![雲端採用架構治理模型的圖表：公司原則和治理專業領域](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> *圖1：公司原則的視覺效果，以及雲端治理的五個專業領域。* |
 
 ## <a name="define-corporate-policy"></a>定義公司原則
 

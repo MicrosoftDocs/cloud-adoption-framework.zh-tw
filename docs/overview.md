@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 9af04bd1c67c7db877552572d3fd2e7954ac5046
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 59c4e0b28d36167f34e538d28f5944cb4002b342
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570091"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885723"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -54,9 +54,9 @@ ms.locfileid: "88570091"
 
 此指導方針會影響企業的業務、技術和文化。 受影響的角色包括企業營運主管、業務決策者、IT 決策者、財務、企業管理員、IT 作業、IT 安全性和合規性、IT 治理、工作負載開發擁有者和工作負載作業擁有者。 每個角色都會使用自己的專業詞彙，且擁有不同的目標及關鍵效能指標。 單一一組內容無法有效地適用於所有對象。
 
-進入 _雲端架構師_。 雲端架構設計師可引導並促使這些對象共同合作。 我們設計了本指南集合，協助雲端架構設計師促進與正確物件進行正確的交談，並推動決策制定。 雲端所提供的業務轉型取決於雲端架構設計人員角色，以協助引導整個業務和 IT 的決策。
+進入 *雲端架構師*。 雲端架構設計師可引導並促使這些對象共同合作。 我們設計了本指南集合，協助雲端架構設計師促進與正確物件進行正確的交談，並推動決策制定。 雲端所提供的業務轉型取決於雲端架構設計人員角色，以協助引導整個業務和 IT 的決策。
 
-雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 這些小節也製造在雲端架構設計師小組中分擔雲端架構責任的機會。 例如，治理區段是針對具有緩和技術風險的雲端架構設計人員所設計。 有些雲端提供者將這些專家稱為雲端監管者;我們偏好雲端守護 _者_ ，或統稱為 _雲端治理小組_。
+雲端採用架構的每個小節代表雲端架構設計師角色的不同專業化或樣貌。 這些小節也製造在雲端架構設計師小組中分擔雲端架構責任的機會。 例如，治理區段是針對具有緩和技術風險的雲端架構設計人員所設計。 有些雲端提供者將這些專家稱為雲端監管者;我們偏好雲端守護 *者* ，或統稱為 *雲端治理小組*。
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>如何使用適用於 Azure 的 Microsoft 雲端採用架構
 

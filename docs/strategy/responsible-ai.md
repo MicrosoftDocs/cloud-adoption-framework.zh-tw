@@ -7,14 +7,14 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d64873d414656da8caadc6a60a2ddd08f850cf38
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: dba0ab6db022d4d2a18dc0734e37d59501eb6738
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662297"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885774"
 ---
-<!-- docsTest:ignore InterpretML FairLearn -->
+<!-- docutune:ignore InterpretML FairLearn -->
 
 # <a name="responsible-ai"></a>負責任的 AI
 
@@ -52,9 +52,9 @@ Microsoft 致力於將 AI 交付給第一位人的道德準則，以促進 AI。
 
 有一些工具可協助開發人員和資料科學家瞭解、保護和控制 AI 系統。 這些工具可以來自各種來源，包括 Azure Machine Learning、開放原始碼專案及研究。
 
-- **瞭解**： AI 系統可能會因各種原因而非預期地運作。 軟體工具可協助您瞭解 AI 系統的行為，讓您能夠更妥善地針對您的需求量身打造。 這種工具類型的範例包括 InterpretML 和 Fairlearn。
-- **保護**： AI 系統依賴資料。 軟體工具可協助您保護這些資料，方法是保留隱私權並確保機密性。 這類工具的範例包括適用于機器學習的機密運算、WhiteNoise 差異隱私權、密封同態加密和 Presidio。
-- **控制**：負責任的 AI 需要治理和控制整個開發週期。 Azure Machine Learning 可進行審核記錄，以獲得更佳的可追蹤性、歷程和控制，以符合法規需求。 範例包括審核記錄和追蹤性。
+- **瞭解：** 基於各種原因，AI 系統可能會發生非預期的行為。 軟體工具可協助您瞭解 AI 系統的行為，讓您能夠更妥善地針對您的需求量身打造。 這種工具類型的範例包括 InterpretML 和 Fairlearn。
+- **保護：** AI 系統依賴資料。 軟體工具可協助您保護這些資料，方法是保留隱私權並確保機密性。 這類工具的範例包括適用于機器學習的機密運算、whitenoise 差異隱私權、密封同態加密和 presidio。
+- **控制項：** 負責任的 AI 需要治理和控制整個開發週期。 Azure Machine Learning 可進行審核記錄，以獲得更佳的可追蹤性、歷程和控制，以符合法規需求。 範例包括審核記錄和追蹤性。
 
 ## <a name="next-steps"></a>後續步驟
 

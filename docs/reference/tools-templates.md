@@ -7,15 +7,13 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 1f759debd007ffdf03cee1802a564a8b11927964
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575072"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885553"
 ---
-<!-- cSpell:ignore Terraform's -->
-
 # <a name="tools-and-templates"></a>工具和範本
 
 雲端採用架構包含可協助您快速執行技術變更的工具。 使用這些工具、範本和評量來加速雲端採用。 下列資源可協助您在採用的每個階段。 某些工具和範本可用於多個階段。

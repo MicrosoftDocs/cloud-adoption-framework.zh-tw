@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a27d3c6a889da10a4f5e1045a15921741c712c7e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569309"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884261"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的效能一致
 
@@ -34,7 +34,7 @@ ms.locfileid: "88569309"
 
 - 增強管理基準，以包含與效能預期偏差相關的自動化補救工作。
 - 需要工作負載特定的資料模式或架構變更以符合效能需求時，請使用工作負載專屬的作業來提供更佳的效能控制項。
-- 在 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中記錄 IT 組合的操作決策。 在 [**基準**] 索引標籤的 [作業**合規性**] 區段中，將焦點放在包含效能自動化決策。
+- 在 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)中記錄 IT 組合的操作決策。 將焦點放在索引標籤的區段中，包括效能自動化決策 `Operational Compliance` `Baseline` 。
 
 **支援交付完成的指導方針：**
 
@@ -45,7 +45,6 @@ ms.locfileid: "88569309"
 > [!NOTE]
 > 整個雲端採用生命週期的各種決策可能會對效能產生直接的影響。 下列步驟可協助您概述合作關係和支援在 IT 組合間提供效能所需的工作。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -65,9 +64,8 @@ ms.locfileid: "88569309"
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，特別強調「重要性」的標記。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理治理專業領域，請考慮遵循 [有關成本管理改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理治理專業領域，請考慮遵循 [有關成本管理專業領域改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -85,11 +83,10 @@ ms.locfileid: "88569309"
 
 **支援交付完成的指導方針：**
 
-- [瞭解動機](../strategy/motivations.md)：重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制對所有後續工作的重要性。 其他與創新或成長有關的向前搜尋動機，可能會著重于最頂尖的收入。 瞭解動機可協助您瞭解優先順序成本管理的高度。
+- [瞭解動機](../strategy/motivations.md)：重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制對所有後續工作的重要性。 其他與創新或成長有關的向前搜尋動機，可能會著重于最頂尖的收入。 瞭解動機可協助您決定成本管理的優先順序高。
 - [商務成果](../strategy/business-outcomes/index.md)：某些會計結果通常會非常符合成本效益。 當想要的結果對應至會計計量時，您應該提早投資成本管理治理專業領域。
 - [商業理由](../strategy/cloud-migration-business-case.md)：商業理由可作為雲端採用的財務計畫的高階觀點。 這可以是初步預算工作的絕佳來源。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -113,10 +110,9 @@ ms.locfileid: "88569309"
 - [收集清查](../digital-estate/inventory.md)：建立資料來源，以在採用之前分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在增量合理化期間，使用量化分析來識別適用于預算的雲端候選。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)來調整成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理和帳單，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：建立具有可採取動作的工作負載、資產和時間軸詳細資料的方案。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -138,7 +134,6 @@ ms.locfileid: "88569309"
 
 - [改進登陸區域作業](../ready/considerations/landing-zone-operations.md)：改善登陸區域內作業的最佳做法。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -161,7 +156,6 @@ ms.locfileid: "88569309"
 - [升級前檢查清單](../migrate/migration-considerations/optimize/ready.md)
 - [生產版本檢查清單](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 6d9c8d509abbc5516a3070fe03116a588ddeacbf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a370a4aa58c176ccb1dc58a777a10f2f91ca7370
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573066"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884924"
 ---
-<!-- cSpell:ignore ccoe -->
-
 # <a name="mature-team-structures"></a>成熟的團隊結構
 
 每個雲端功能都是由某人在每個雲端採用工作期間提供。 這些指派和小組結構可以開發茁壯，也可以刻意設計來符合已定義的小組結構。

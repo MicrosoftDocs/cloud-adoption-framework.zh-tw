@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 095ba4d6648c2be572f0d2d4cc8e21c5a03fa5eb
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 32c479c8e512512f7e2b1817838ab65d9be95b53
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575140"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885570"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -45,7 +45,7 @@ _圖1：身分識別和存取管理。_
   - 共用資源或環境中執行或強制執行安全性界限（例如網路）的任何層面都必須集中管理。 這項需求是許多法規架構的一部分。 對於授與或拒絕存取機密或重要商務資源的任何組織而言，都是標準做法。
   - 管理不違反安全性界限的應用程式資源，或是維護安全性和合規性所需的其他層面，都可以委派給應用程式小組。 允許使用者在安全管理的環境內布建資源，可讓組織充分利用雲端的敏捷本質，同時防止違反任何重要的安全性或治理界限。
 
-<!-- docsTest:ignore Azure-AD-only Azure-AD-managed NetOps SecOps AppOps -->
+<!-- docsTest:ignore Azure-AD-only Azure-AD-managed -->
 
 **設計建議：**
 
@@ -60,7 +60,7 @@ _圖1：身分識別和存取管理。_
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
 - 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用方式 | 動作 | 沒有任何動作 |
+| [角色] | 使用方式 | 動作 | 沒有任何動作 |
 |---|---|---|---|
 | Azure 平臺擁有者               | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |

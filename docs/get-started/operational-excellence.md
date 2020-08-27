@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39c19414011a55a5583a215332c699ee4d3f3b16
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2c18dbcc59d8be0f1002000e6286b2617ed81be8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569326"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884295"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>開始使用：在數位轉型期間提供卓越的營運
 
@@ -48,7 +48,6 @@ ms.locfileid: "88569326"
 - [商業理由](../strategy/cloud-migration-business-case.md)：商業理由可作為雲端採用整體財務計畫的高階觀點。 這可能是初始預算工作的良好來源。
 - [學習計量](../strategy/learning-metrics.md)：為了維持整體商務策略與策略性變更管理計畫之間的一致性，請建立學習計量。 這些計量的設計目的是要顯示計畫的反復和累加進度。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -73,10 +72,9 @@ ms.locfileid: "88569326"
 - [收集清查](../digital-estate/inventory.md)：在採用之前，建立資料來源以分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在增量合理化期間，量化分析會識別適用于預算的雲端候選。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)來調整成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理和帳單，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：建立具有可採取動作的工作負載、資產和時間軸詳細資料的方案。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -102,7 +100,6 @@ ms.locfileid: "88569326"
 - [評定工作負載](../migrate/azure-migration-guide/assess.md?tabs=challenge-assumptions)：雲端採用小組在評估及處理最新的一組遷移優先順序時所扮演的成果。
 - [商業價值共識](../innovate/business-value.md)：雲端採用小組致力於確保每一版新創新的商業價值。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -120,6 +117,6 @@ ms.locfileid: "88569326"
 卓越的營運需要有嚴格的可靠性、效能、安全性和成本優化方法。 使用本系列中的其餘指引，透過一致的自動化方法來實行這些原則。
 
 - **成本優化：** 使用快速入門手冊來[管理企業成本](./manage-costs.md)，以持續優化營運成本
-- **安全性：** 藉由使用 [跨組合實行安全性](./security.md)的入門指南，來降低風險，方法是將企業安全性整合在組合中。
-- **效能管理：** 使用 [跨企業效能管理](./performance.md)的入門指南，確保 IT 資產效能支援商務程式。
-- **可靠性：** 使用建立控制項的入門指南 [來建立可靠性，以](./reliability.md)提升可靠性並減少業務中斷。
+- **安全性：** 使用 [跨組合實行安全性](./security.md)的使用者入門指南，將企業安全性整合在各組合中，以降低風險。
+- **效能管理：** 使用 [跨企業效能管理](./performance.md)的使用者入門指南，確保 IT 資產效能支援商務程式。
+- **可靠性：** 藉由使用執行控制項的使用者入門指南 [來建立可靠性，以](./reliability.md)提升可靠性並減少業務中斷。

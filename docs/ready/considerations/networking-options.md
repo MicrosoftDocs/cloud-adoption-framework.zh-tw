@@ -7,14 +7,14 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0c3df76de11883153d128fe419825a8800bc8d57
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a42f2b52d53ece4677efc240baaa9185a76614c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566742"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884686"
 ---
-<!-- cSpell:ignore paas NVAs VPNs -->
+<!-- cSpell:ignore NVAs VPNs -->
 
 # <a name="review-your-network-options"></a>檢查您的網路選項
 
@@ -49,9 +49,7 @@ ms.locfileid: "88566742"
 
 Azure 網路是由提供不同網路功能的多項產品和服務所組成。 作為網路設計程序的一部分，您可以將工作負載需求與下表中的網路案例進行比較，以識別您可以用來提供這些網路功能的 Azure 工具或服務：
 
-<!-- markdownlint-disable MD033 -->
-
-| 狀況 | 網路產品或服務 |
+| 案例 | 網路產品或服務 |
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](/azure/virtual-network) |
 | 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure Load Balancer](/azure/load-balancer) |
@@ -67,15 +65,13 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 我需要安全地連接商業辦公室、零售地點和網站。 | [Azure 虛擬 WAN](/azure/virtual-wan) |
 | 我需要可調整並已加強安全性的傳遞點，適用於微服務型全域 Web 應用程式。 | [Azure Front Door](/azure/frontdoor) |
 
-<!-- markdownlint-enable MD033 -->
-
 ## <a name="choose-a-networking-architecture"></a>選擇網路架構
 
 在您識別支援工作負載所需的 Azure 網路服務之後，您也需要設計結合這些服務的架構，以提供登陸區域的雲端網路基礎結構。 《雲端採用架構[軟體定義網路決策指南](../../decision-guides/software-defined-network/index.md)》提供一些在 Azure 上使用的最常見網路架構模式詳細資料。
 
 下表摘要說明這些模式支援的主要案例：
 
-| 狀況  | 建議的網路架構                                                  |
+| 案例  | 建議的網路架構                                                  |
 | --- | --- |
 | 所有部署至登陸區域的 Azure 裝載工作負載都將完全以 PaaS 為基礎，不需要虛擬網路，且不屬於更廣泛的雲端採用工作，包括 IaaS 資源。                                                                                                                                                          | [僅限 PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure 裝載的工作負載將會部署 IaaS 型資源 (例如虛擬機器)，否則需要虛擬網路，但不需要連線到您的內部部署環境。                                                                                                                                                                            | [雲端原生](../../decision-guides/software-defined-network/cloud-native.md)      |
@@ -85,7 +81,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 您有許多分公司需要彼此連線與連線至 Azure。                                                                                                                                                                                                                                                                                         | [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) |
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docsTest:casing "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e607d9374e2b8bffb209cbb3bddecca337ad8af
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574630"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885927"
 ---
-<!-- cSpell:ignore ITSM TOGAF -->
-
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>為技術複雜度做準備：敏捷式變更管理
 
 如果可使用一行程式碼來取消布建及重新建立整個資料中心，傳統程序便難以趕上。 整個雲端採用架構的指導方針都是以 IT 服務管理 (ITSM) 、開放式群組架構架構 (TOGAF) 和其他作法為基礎。 不過，為了確保業務變更的靈活性和回應性，此架構會塑造這些實務以配合敏捷方法和 DevOps 方法。

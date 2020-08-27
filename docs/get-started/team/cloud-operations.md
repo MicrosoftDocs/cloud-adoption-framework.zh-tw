@@ -3,16 +3,16 @@ title: 開始使用：建立雲端作業小組
 description: 本指南可協助雲端營運團隊瞭解範圍、交付專案，以及小組負責的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 4d1ecbe31f7469cb992ab7e983a9ff4a34ef437f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661940"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884057"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>開始使用：建立雲端作業小組
 
@@ -36,7 +36,7 @@ ms.locfileid: "88661940"
 - [雲端作業功能](../../organize/cloud-operations.md) 可能會散佈到多個個人或團隊。 決定是否需要雲端營運團隊。 生產工作負載一律需要某些層級的作業。
 - 如果公司的長期雲端採用策略可從一個雲端環境中的一個登陸區域來傳遞，則治理和作業工作可能夠小，而無法由一個人或一個小組提供。 該小組不太可能被稱為雲端作業，因為它會提供許多功能。 針對該個人或團隊，下列指導方針可協助確保它可以提供這項重要的作業功能。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 責任小組 | 負責和支援的團隊 |
 | --- | --- |
@@ -58,7 +58,6 @@ ms.locfileid: "88661940"
 - 若要瞭解時程表和優先順序，請使用雲端採用小組的成員來檢查貴公司的 [雲端採用方案](../../plan/template.md) 。
 - 若要瞭解小組與企業建立的營運需求和承諾，請開始開發 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -78,7 +77,6 @@ ms.locfileid: "88661940"
 
 - 如需步調 for meeting 的其他指引，請參閱 [雲端作業功能](../../organize/cloud-operations.md#deliverables)的「交付專案」一節。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -169,7 +167,7 @@ ms.locfileid: "88661940"
 
 - 請參閱 [治理指南，以改善資源一致性](../../govern/guides/complex/resource-consistency-improvement.md)。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 責任小組 | 負責和支援的團隊 |
 | --- | --- |
@@ -187,7 +185,7 @@ ms.locfileid: "88661940"
 
 - 建立將新的 [工作負載和資源](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)上線的流程。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 責任小組 | 負責和支援的團隊 |
 | --- | --- |

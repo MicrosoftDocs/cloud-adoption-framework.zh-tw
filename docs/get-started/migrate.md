@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 95c6932660e578273bab70e70ffac00bfb8cfc61
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c6bffafb21375c145e41a63107621db62b5e067
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569360"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884312"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -48,7 +48,6 @@ ms.locfileid: "88569360"
 
 - 使用 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄動機和所需的業務成果。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -66,7 +65,6 @@ ms.locfileid: "88569360"
 - 在您與支援合作夥伴交流之前，請先建立條款及條件或其他合約協定。
 - 在 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中識別核准的合作夥伴。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -87,7 +85,6 @@ ms.locfileid: "88569360"
 - 前10個工作負載的定性分析。
 - 更新 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的業務理由。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -104,7 +101,6 @@ ms.locfileid: "88569360"
 
 - 使用 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄商務理由。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -129,7 +125,6 @@ ms.locfileid: "88569360"
   - 缺乏熟悉 Azure DevOps 可能會使部署程式變慢。
   - 每個工作負載的可用複雜性和資料也可能影響時間軸。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -146,7 +141,6 @@ ms.locfileid: "88569360"
 
 - 將技能就緒計畫新增至 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -168,7 +162,6 @@ ms.locfileid: "88569360"
   - 前10個工作負載的治理、操作和安全性需求可能會使此程式變慢。
   - 第一個登陸區域和後續登陸區域的實際重構需要較長的時間，但它應該與遷移工作平行發生。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -194,7 +187,6 @@ ms.locfileid: "88569360"
 
 持續改進採用小組遷移工作負載的能力。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -214,7 +206,6 @@ ms.locfileid: "88569360"
 - 完成治理基準，以規劃未來的改進。
 - 時間軸風險：改進原則和治理實行可為每個專業領域增加一到四周。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -239,7 +230,6 @@ ms.locfileid: "88569360"
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
   - 完成 Microsoft Azure 架構良好的審核評定：每個應用程式預估一小時。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

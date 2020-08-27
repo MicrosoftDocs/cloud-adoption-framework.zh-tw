@@ -7,13 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 277d208ccdb2dda3e25994893f07c542cb3e87bf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1cdf730339c30f681fc1dc39cad85fcd9c8a909f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573168"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884516"
 ---
+<!-- docsTest:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
 
 # <a name="what-are-ai-agents"></a>什麼是 AI 代理程式？
@@ -32,8 +33,6 @@ ms.locfileid: "88573168"
 Azure Bot Service 和 Bot Framework 提供一組整合的工具和服務，以協助進行此程式。 選擇您最愛的開發環境或命令列工具來建立您的 bot。 C #、JavaScript、TypeScript 和 Python 都有 Sdk。 適用于 JAVA 的 SDK 正在開發中。 我們在 Bot 各種開發階段皆提供各項工具，協助您設計及建置 Bot。
 
 ![此圖顯示 bot 開發各階段的工具。](../../_images/ai-bot-dev-tools.png)
-
-<!-- docsTest:ignore "natural language understanding" -->
 
 ### <a name="plan"></a>計畫
 
@@ -78,25 +77,23 @@ Bot 是一種複雜的應用程式，其中有許多不同的元件可一起運�
 - 在 [Web](/azure/bot-service/bot-service-manage-test-webchat?view=azure-bot-service-4.0) 上測試您的 Bot。 透過 Azure 入口網站設定您的 bot 之後，也可以透過網路聊天介面來觸達。 網路聊天介面是將 bot 存取權授與給測試人員的絕佳方法，以及其他無法直接存取執行中程式碼的人員。
 - 使用 Bot Framework SDK 的七月更新對[bot 進行單元測試](/azure/bot-service/unit-test-bots)。
 
-### <a name="publish"></a>發佈
+### <a name="publish"></a>發行
 
 當您準備好讓 bot 可在 web 上使用時，請將 [其發佈至 Azure](/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0) 或您自己的 web 服務或資料中心。 在公用網際網路上使用位址，是在您的網站上或在聊天頻道中讓 bot 上線的第一個步驟。
 
 ### <a name="connect"></a>連線
 
-將您的 bot 連接到 Facebook、Messenger、Kik、Skype、時差、Microsoft 小組、Telegram、text/SMS、twilio、Cortana 及 Skype 等通道。 Bot Framework 會執行從所有這些不同平臺傳送和接收訊息所需的大部分工作。 您的 bot 應用程式會收到統一的正規化訊息串流，無論其所連接的通道數目和類型為何。 如需如何新增通道的詳細資訊，請參閱 [通道](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0)。
+將您的 bot 連接到 Facebook、Messenger、Kik、Skype、時差、Microsoft 小組、Telegram、text/SMS、Twilio、Cortana 及 Skype 等通道。 Bot Framework 會執行從所有這些不同平臺傳送和接收訊息所需的大部分工作。 您的 bot 應用程式會收到統一的正規化訊息串流，無論其所連接的通道數目和類型為何。 如需如何新增通道的詳細資訊，請參閱 [通道](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0)。
 
 ### <a name="evaluate"></a>評估
 
 使用 Azure 入口網站中收集的資料，找出提高 bot 功能和效能的機會。 您可以取得服務層級和流量、延遲與整合等檢測資料。 分析也提供使用者、訊息和通道資料的交談層級報告。 如需詳細資訊，請參閱 [如何收集分析](/azure/bot-service/bot-service-manage-analytics?view=azure-bot-service-4.0)。
 
-<!-- docsTest:ignore "John Doe" "Jane Doe" -->
-
 ### <a name="patterns-for-common-use-cases"></a>常見使用案例的模式
 
 有一些常見的模式可用於執行對話式 AI 應用程式：
 
-- **知識庫：** 知識 bot 可以設計為提供幾乎任何主旨的相關資訊。 例如，一個知識 bot 可以回答有關事件的問題，例如「此會議有哪些 bot 事件？」。 或 "next reggae show When？" 另一個 bot 可能會回答與 IT 相關的問題，例如「如何? 更新我的作業系統」。 但另一個 bot 可能會回答「誰是 John Doe？」之類的連絡人問題。 「John Doe 的電子郵件地址是什麼？」等有關連絡資訊的問題。
+- **知識庫：** 知識 bot 可以設計為提供幾乎任何主旨的相關資訊。 例如，一個知識 bot 可以回答有關事件的問題，例如「此會議有哪些 bot 事件？」。 或 "next reggae show when？" 另一個 bot 可能會回答與 IT 相關的問題，例如「我要如何更新我的作業系統？」 但另一個 bot 可能會回答「誰是 john doe？」之類的連絡人問題。 或「什麼是 jane doe 的電子郵件地址？」
 
    如需知識 bot 設計項目的詳細資訊，請參閱 [設計知識 bot](/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0)。
 

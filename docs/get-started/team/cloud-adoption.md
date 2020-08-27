@@ -3,16 +3,16 @@ title: 開始使用：建立雲端採用小組
 description: 建立雲端採用小組的範圍、交付專案，以及準備成功採用雲端的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 48d6bb16956f31d5581ab3f6f11d51fd55e0ba49
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 337e02f787c8ebcc18f206b4dfa87a894059262a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573882"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884193"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：建立雲端採用小組
 
@@ -64,7 +64,7 @@ ms.locfileid: "88573882"
 - [治理專業領域](../../govern/corporate-policy.md) 會概述治理小組可能為了安全且符合規範的雲端採用所實行的控制項類型或嚴格流程。
 - [管理方法](../../manage/index.md)會概述進入雲端營運基準的考慮，以提供基本的作業管理。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 責任小組 | 負責和支援的團隊 |
 | --- | --- |
@@ -72,12 +72,12 @@ ms.locfileid: "88573882"
 
 ## <a name="step-3-begin-your-adoption-journey"></a>步驟3：開始採用旅程
 
-根據您所屬的採用小組類型而定，您將會開始使用下列其中一個旅程：
+根據您所屬的採用小組類型而定，您將會開始使用下列其中一個指南：
 
 - 開始使用：將工作負載遷移至雲端
 - 開始使用：建立新的產品或服務
 
-這些「快速入門手冊」提供各小組的指導方針，以及其責任和責任的不同程度。 使用這些指南來瞭解您的小組如何融入其餘的旅程。 也可以使用它們來瞭解您可預期從公司內部取得的支援層級。
+這些指南會針對不同的責任和責任程度，提供各種不同小組的指導方針。 使用這些指南來瞭解您的小組如何融入其餘的旅程。 也可以使用它們來瞭解您可預期從公司內部取得的支援層級。
 
 最後，雲端採用小組會負責在其指派的遷移工作或新的產品開發方面傳遞。 雖然支援小組負責確保每個步驟都已完成，但每個雲端採用小組都必須負責確保支援的小組能獲得成功所需的支援。 如果有責任的小組不存在，或需要更多的支援來提供其負責任的步驟，則建議採用小組與其他小組合作來完成其交付專案。
 
@@ -88,12 +88,11 @@ ms.locfileid: "88573882"
 
 **支援交付完成的指導方針：**
 
-- 在「開始使用入門指南」中，採用小組會負責傳遞 [步驟10：遷移您的第一個工作負載](../migrate.md#step-8-migrate-your-first-10-workloads)。
-- 在新產品的《入門指南》中，採用小組負責交付 [步驟8：在雲端中進行創新](../innovate.md#step-8-innovate-in-the-cloud)。
+- 在遷移的「使用者入門指南」中，採用小組負責傳遞 [步驟10：遷移您的第一個工作負載](../migrate.md#step-8-migrate-your-first-10-workloads)。
+- 在新產品的「使用者入門指南」中，採用小組負責交付 [步驟8：在雲端中進行創新](../innovate.md#step-8-innovate-in-the-cloud)。
 
 這些檢查清單上的所有其他步驟都是設計來使工作更容易管理。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

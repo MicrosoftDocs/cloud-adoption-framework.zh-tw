@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8f62f44bf872d35c08e7cabeee823d46a6bc34fe
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 263ce9684164c97f903825080946be90999e0a4c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285246"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884873"
 ---
-<!-- cSpell:ignore ccoe -->
-
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
 瞭解如何藉由開發跨小組的矩陣，識別 _負責任、負責任、諮詢及告知 (RACI) _ 合作物件，以協調各小組的責任。 本文提供「 [建立小組結構](./organization-structures.md)」中所述之組織結構的範例 RACI 矩陣：

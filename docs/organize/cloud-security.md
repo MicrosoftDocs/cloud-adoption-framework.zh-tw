@@ -1,34 +1,32 @@
 ---
 title: 雲端安全性功能
-description: 管理企業中的資訊安全性風險所需的組織功能總覽
+description: 在企業中管理資訊安全性風險所需的組織功能總覽
 author: MarkSimos
 ms.author: mas
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 58fa0ac8b3c522318472f4adbe4ae8d28d2f8636
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 1b33489f16990d7b2677e1cb128c9c2dcce0c6aa
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813288"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885706"
 ---
-<!-- cSpell:ignore MarkSimos -->
-
 # <a name="cloud-security-functions"></a>雲端安全性功能
 
-本文提供在企業中管理資訊安全性風險所需的組織功能摘要。 這些組織功能共同構成整體網路安全性系統的人。 每個函式都可以由一或多個人員執行，而且每個人都可以根據各種因素（例如文化特性、預算和可用資源）來執行一或多個函式。
+本文提供在企業中管理資訊安全性風險所需的組織功能摘要。 這些組織函數統稱為整體網路安全性系統的人類部分。 每個函式可能會由一或多個人員執行，而且每個人都可以根據各種因素（例如文化特性、預算和可用資源）執行一或多個函式。
 
-下圖和檔是企業安全性小組功能的理想觀點。 此圖表代表小型組織或較小的安全性小組的渴望視圖，這些團隊可能不會有重要的資源，也不會針對所有這些功能定義正式的責任。
+下圖和檔表示企業安全性小組功能的理想觀點。 此圖表代表較小型組織或較小安全性小組的理想觀點，這些功能可能不會在所有這些函式中定義重要的資源和正式責任。
 
-![企業安全性小組功能的觀點](../_images/security/enterprise-security-team.png)
+![企業安全性小組的功能觀點](../_images/security/enterprise-security-team.png)
 
-**安全性是小組的運動：** 關鍵是，安全性小組的個人會看到彼此屬於整個安全性團隊的一部分、整個組織的成員，以及更大的安全性社區的一部分，以防禦相同的敵人。 這個全面的觀點讓小組在一般情況下也能正常運作。 這點特別重要，因為小組會在角色和責任演進期間發現任何未計畫的差距和重迭。
+**安全性是小組運動：** 安全性小組的個人會將彼此視為整個安全性團隊的一部分、整個組織的一部分，以及針對相同敵人所防禦的較大型安全性社區的一部分。 這項全面的觀點讓小組在一般情況下都能順利運作。 這點特別重要，因為小組會在角色和責任演進期間發現任何未計畫的差距和重迭。
 
 ## <a name="security-functions"></a>安全性函數
 
-下列每篇文章都會提供每個函數的相關資訊。 每篇文章都會提供目標摘要、函式如何因威脅環境或雲端技術的改變，以及其成功的關鍵關係和相依性而演進。
+下列每一篇文章提供各項功能的相關資訊。 每篇文章都提供目標摘要、函式如何因威脅環境或雲端技術變更而演進，以及對其成功至關重要的關聯性和相依性。
 
 - [原則和標準](./cloud-security-policy-standards.md)
 - [安全性作業中心 (SOC)](./cloud-security-operations-center.md)

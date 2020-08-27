@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf320d60ca9b53d72a063e17b24c498272aa19d8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f3d2663bdb3c057f5031eeacc79e2068c729cb89
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568442"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884482"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化現有的資料來源來收集資料
 
@@ -46,8 +46,8 @@ ms.locfileid: "88568442"
 
 建議您決定可接受的商務停機時間，並測試離線遷移。 您可以這麼做，檢查還原時間是否符合可接受的停機時間。 如果還原時間無法接受，請進行線上遷移。
 
-| 來源  | 目標  | 工具  | 遷移類型 | 指引 |
-|---|---|---|---|---|
+| 來源 | 目標 | 工具 | 遷移類型 | 指引 |
+|--|--|--|--|--|
 | SQL Server | Azure SQL Database | Database Migration Service | 離線 | [教學課程](/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL Database | Database Migration Service | 線上 | [教學課程](/azure/dms/tutorial-sql-server-azure-sql-online) |
 | SQL Server | Azure SQL 受控執行個體 | Database Migration Service | 離線 | [教學課程](/azure/dms/tutorial-sql-server-to-managed-instance) |

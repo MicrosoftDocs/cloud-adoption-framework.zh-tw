@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 385bfcaefd7fcb5dab78e9dd80478a0fe2c7d644
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569258"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884227"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：使用正確的控制項提升可靠性
 
@@ -53,7 +53,6 @@ ms.locfileid: "88569258"
 - [Advanced 作業](../manage/design-principles.md)：使用管理基準做為您的 [業務協調](../manage/considerations/business-alignment.md) 對話的基礎。 它可協助您清楚地討論 [重要性](../manage/considerations/criticality.md)、 [業務衝擊](../manage/considerations/impact.md)和 [營運承諾](../manage/considerations/commitment.md)。 企業調整有助於量化和驗證要求的 [增強基準](../manage/azure-management-guide/enhanced-baseline.md)、特定 [技術平臺](../manage/azure-management-guide/workload-specialization.md)的管理，或 [工作負載特定的作業](../manage/azure-management-guide/platform-specialization.md)。
 - **引導架構審核：** 工作負載層級的架構變更可能需要符合作業需求。 [Microsoft Azure 架構良好的架構](/azure/architecture/framework/cost/tradeoffs)，並[Microsoft Azure 架構良好的審查](/assessments?id=azure-architecture-review)，可協助引導這些交談與特定工作負載的技術擁有者。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -73,12 +72,11 @@ ms.locfileid: "88569258"
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，並針對重要性的標記特別強調。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理專業領域，請遵循 [成本管理改進](../govern/guides/complex/cost-management-improvement.md) 文章中的指導方針。 將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理專業領域，請遵循「 [成本管理專業領域改進](../govern/guides/complex/cost-management-improvement.md) 」一文中的指導方針。 將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
 
 > [!NOTE]
 > **與其他小組開始可靠性合作的步驟：** 整個雲端採用生命週期的各種決策可能會對可靠性有直接的影響。 下列步驟概述在 IT 組合之間提供一致的可靠性所需的合作關係和支援工作。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -100,7 +98,6 @@ ms.locfileid: "88569258"
 - [商務成果](../strategy/business-outcomes/index.md)：某些會計結果通常會非常符合成本效益。 當想要的結果對應至會計計量時，您應該提早投資成本管理治理專業領域。
 - [商業理由](../strategy/cloud-migration-business-case.md)：商業理由可作為雲端採用整體財務計畫的高階觀點。 這可能是初始預算工作的良好來源。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -128,10 +125,9 @@ ms.locfileid: "88569258"
 - [收集清查](../digital-estate/inventory.md)：在採用之前，建立資料來源以分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在增量合理化期間，量化分析可針對預算用途找出雲端候選項目。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)來調整成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理和帳單，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：建立具有可採取動作的工作負載、資產和時間軸詳細資料的方案。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -151,7 +147,6 @@ ms.locfileid: "88569258"
 
 - [改進登陸區域作業](../ready/considerations/landing-zone-operations.md)：改善指定登陸區域內作業的最佳做法。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -174,7 +169,6 @@ ms.locfileid: "88569258"
 - [升級前檢查清單](../migrate/migration-considerations/optimize/ready.md)
 - [生產版本檢查清單](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 8f1676c51e502b3995efc7694fe7bb7ef6932b26
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: aeb2cfd8ed273349b5ee7e1868ddd69791abedc9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569734"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884652"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -71,19 +71,13 @@ RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理
 
 下表說明將 IT 職責劃分成不同自訂角色的常見模式：
 
-<!-- markdownlint-disable MD033 -->
-
-| 群組 | 一般角色名稱 | 職責 |
+| 分組 | 一般角色名稱 | 職責 |
 | --- | --- | --- |
 | 安全性作業 | SecOps | 提供一般的安全性監督。 <br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
-| 網路作業 | Netops | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |
-| 系統作業 | Sysops | 指定計算和儲存體基礎結構選項，並維護已部署的資源。 |
+| 網路作業 | NetOps | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |
+| 系統作業 | SysOps | 指定計算和儲存體基礎結構選項，並維護已部署的資源。 |
 | 開發、測試和作業 | DevOps | 建立及部署工作負載功能和應用程式。 <br><br> 操作功能和應用程式，以符合服務等級協定和其他品質標準。 |
 
-<!-- markdownlint-enable MD033 -->
-
 即使這些角色是由不同層級的不同人員執行，這些標準角色中的動作和許可權分解通常都是相同的。 因此，您可以建立一組常用的 RBAC 角色定義，以便在您的環境內跨不同範圍套用。 接著，可以將一般角色指派給使用者和群組，但只適用於其負責管理的資源、資源群組、訂用帳戶或管理群組。
-
-<!-- cSpell:ignore NetOps SecOps " -->
 
 例如，在具有多個訂用帳戶的 [中樞和輪輻網路拓撲](../azure-best-practices/hub-spoke-network-topology.md) 中，您可能會有一組共同的中樞和所有工作負載輪輻的角色定義。 中樞訂用帳戶的 NetOps 角色可以指派給組織中央 IT 小組的成員，負責維護所有工作負載所使用之共用服務的網路。 然後，可以將工作負載支點訂用帳戶的 NetOps 角色指派給該特定工作負載小組的成員，讓他們能夠在該訂用帳戶內設定網路功能，以充分支援其工作負載需求。 這兩者都使用相同的角色定義，但是範圍型指派可確保使用者只擁有執行其工作所需的存取權。

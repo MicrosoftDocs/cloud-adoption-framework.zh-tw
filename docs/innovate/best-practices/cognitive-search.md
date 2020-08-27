@@ -7,16 +7,17 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a7aff09f017bea41591028eee06f8936359388a4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a5221713e9e6125aa134e958b2baca2e99dcadec
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568493"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884533"
 ---
 <!-- cSpell:ignore Lucene -->
 
-<!-- docsTest:ignore "Azure Search" "JFK Files" -->
+<!-- docsTest:casing "JFK Files" -->
+<!-- docsTest:ignore "Azure Search" -->
 
 # <a name="what-is-azure-cognitive-search"></a>什麼是 Azue 認知搜尋？
 
@@ -65,7 +66,7 @@ Azure 認知搜尋適用於下列應用程式案例：
 
 ### <a name="step-4-search"></a>步驟 4：搜尋
 
-填入索引之後，您可以使用簡單的 HTTP 要求搭配[REST api](/rest/api/searchservice/Search-Documents)或[.net SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet)，將[搜尋查詢發出](/azure/search/search-query-overview)至服務端點。 逐步建立 [您的第一個搜尋應用程式](/azure/search/tutorial-csharp-create-first-app) ，以建立並擴充可收集使用者輸入和處理結果的網頁。 您也可以使用 [Postman 進行互動式 REST](/azure/search/search-get-started-postman) 呼叫，或使用內建的 [搜尋瀏覽器](/azure/search/search-explorer) ，在 Azure 入口網站中查詢現有的索引。
+填入索引之後，您可以使用簡單的 HTTP 要求搭配[REST api](/rest/api/searchservice/search-documents)或[.net SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet)，將[搜尋查詢發出](/azure/search/search-query-overview)至服務端點。 逐步建立 [您的第一個搜尋應用程式](/azure/search/tutorial-csharp-create-first-app) ，以建立並擴充可收集使用者輸入和處理結果的網頁。 您也可以使用 [Postman 進行互動式 REST](/azure/search/search-get-started-postman) 呼叫，或使用內建的 [搜尋瀏覽器](/azure/search/search-explorer) ，在 Azure 入口網站中查詢現有的索引。
 
 ## <a name="next-steps"></a>後續步驟
 

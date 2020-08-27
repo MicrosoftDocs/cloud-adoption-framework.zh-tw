@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d313641025bd5cc768c3e4f99feedb768880f396
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 3d388b1196bf103812f723ef060cc890e632760f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848273"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885366"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
@@ -28,20 +28,20 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 
 如果您使用 [Movere](/azure/migrate/migrate-services-overview#movere) 做為資料收集工具，您可能會擁有開發角色所需的資料，並使用 [Azure Migrate](/azure/migrate)中的資料來回答這些問題，就像任何其他遷移案例一樣。
 
-如果您沒有回答本節中所有問題所需的資料，另一個協力廠商軟體廠商可以提供個別的探索程式，以增強您所擁有的資料。 廠商（ [Lakeside](/azure/migrate/migrate-services-overview#isv-integration)）也與虛擬桌面基礎結構遷移目標區段內的 Azure Migrate 整合。 廠商可協助您對應 Windows 虛擬桌面部署的計畫，包括角色、主機集區、應用程式和使用者設定檔。
+如果您沒有回答本節中所有問題所需的資料，另一個協力廠商軟體廠商可以提供個別的探索程式，以增強您所擁有的資料。 廠商（ [lakeside](/azure/migrate/migrate-services-overview#isv-integration)）也與虛擬桌面基礎結構遷移目標區段內的 Azure Migrate 整合。 廠商可協助您對應 Windows 虛擬桌面部署的計畫，包括角色、主機集區、應用程式和使用者設定檔。
 
 ### <a name="user-personas"></a>使用者角色
 
 需要多少相異的角色才能支援此遷移案例中包含的所有使用者？ 根據下列準則，定義角色會成為值區使用者的結果：
 
-- **個人**集區：特定的使用者群組是否需要專用的桌面，而不是集區？ 例如，安全性、合規性、高效能或雜訊非鄰近性需求可能會導致某些在不屬於共用策略的專用桌上型電腦上執行的使用者。 您將在 [Windows 虛擬桌面主機集區部署期間指定個人的主機集區類型](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)來輸入這項資訊。
-- **密度**：特定使用者群組是否需要較低密度的桌面體驗？ 例如，每個虛擬中央處理單位可能需要兩位使用者 (vCPU) ，而不是每個 vCPU 的使用者假設有六位使用者。 您將在 [Windows 虛擬桌面主機集區部署的集區設定](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)中輸入密度資訊。
-- **效能**：特定使用者群組是否需要較高的效能桌面體驗？ 例如，有些使用者的每個 vCPU 需要的記憶體比每個 vCPU 所假設的 4 gb &nbsp; (GB) 。 您將在 [Windows 虛擬桌面主機集區部署的虛擬機器詳細資料](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details)中，輸入 VM 大小調整。
-- **圖形處理 (GPU) **：特定使用者群組是否有更大的圖形需求？ 例如，有些使用者需要在 Azure 中以 GPU 為基礎的 Vm，如本 [指南的設定 Gpu vm](/azure/virtual-desktop/configure-vm-gpu)所示。
-- **Azure 區域**：特定群組的 OS 使用者是否可以從不同的地理區域運作？ 例如，在設定主機集區之前，每個區域的使用者都應該使用「 [估計」工具](https://azure.microsoft.com/services/virtual-desktop/assessment/#estimation-tool)來測試 Azure 的延遲。 測試使用者應該共用最低延遲的 Azure 區域和前三個 Azure 區域的延遲（以毫秒為單位）。
-- **商務功能**：特定群組的使用者是否可以依業務單位、收費代碼或其商務功能來貯存？ 這種類型的群組有助於在後續的作業階段中調整公司成本。
-- **使用者計數**：每個不同的角色中有多少使用者？
-- **最大會話計數**：根據作業的地理位置和小時數，每個角色在載入負載上限時預期會有多少並行使用者？
+- **個人** 集區：特定的使用者群組是否需要專用的桌面，而不是集區？ 例如，安全性、合規性、高效能或雜訊非鄰近性需求可能會導致某些在不屬於共用策略的專用桌上型電腦上執行的使用者。 您將在 [Windows 虛擬桌面主機集區部署期間指定個人的主機集區類型](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)來輸入這項資訊。
+- **密度：** 特定的使用者群組是否需要較低密度的桌面體驗？ 例如，每個虛擬中央處理單位可能需要兩位使用者 (vCPU) ，而不是每個 vCPU 的使用者假設有六位使用者。 您將在 [Windows 虛擬桌面主機集區部署的集區設定](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)中輸入密度資訊。
+- **效能：** 特定的使用者群組需要較高的效能桌面體驗嗎？ 例如，有些使用者的每個 vCPU 需要的記憶體比每個 vCPU 所假設的 4 gb &nbsp; (GB) 。 您將在 [Windows 虛擬桌面主機集區部署的虛擬機器詳細資料](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details)中，輸入 VM 大小調整。
+- **圖形處理 (GPU) ：** 特定的使用者群組是否有更大的圖形需求？ 例如，有些使用者需要在 Azure 中以 GPU 為基礎的 Vm，如本 [指南的設定 Gpu vm](/azure/virtual-desktop/configure-vm-gpu)所示。
+- **Azure 區域：** 特定群組的 OS 使用者是否可以從不同的地理區域運作？ 例如，在設定主機集區之前，每個區域的使用者都應該使用「 [估計」工具](https://azure.microsoft.com/services/virtual-desktop/assessment/#estimation-tool)來測試 Azure 的延遲。 測試使用者應該共用最低延遲的 Azure 區域和前三個 Azure 區域的延遲（以毫秒為單位）。
+- **商務功能：** 特定群組的使用者是否可由商務單位、收費程式碼或其商務功能貯存？ 這種類型的群組有助於在後續的作業階段中調整公司成本。
+- **使用者計數：** 每個不同的角色會有多少使用者？
+- **最大會話計數：** 根據作業的地理位置和小時數，每個角色在最大負載期間預期會有多少並行使用者？
 
 上述每個問題的差異將開始以商務功能、成本中心、地理區域和技術需求來說明使用者角色。 下表可協助記錄回應，以填入已完成的評估或設計檔：
 
@@ -65,7 +65,7 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 
 ### <a name="application-groups"></a>應用程式群組
 
-目前內部部署環境的 Movere 和 Lakeside 掃描都可以提供在使用者桌上型電腦上執行之應用程式的相關資料。 藉由使用該資料，您可以建立每個角色所需的所有應用程式清單。 針對每個必要的應用程式，下列問題的答案將會塑造部署反覆運算：
+目前內部部署環境的 Movere 和 lakeside 掃描都可以提供在使用者桌上型電腦上執行之應用程式的相關資料。 藉由使用該資料，您可以建立每個角色所需的所有應用程式清單。 針對每個必要的應用程式，下列問題的答案將會塑造部署反覆運算：
 
 - 是否需要安裝任何應用程式，角色才能使用此桌面？ 除非角色使用100% 的 web 型軟體即服務應用程式，否則您可能需要為每個角色 [設定自訂的主要 VHD 映射](/azure/virtual-desktop/set-up-customize-master-image) ，並在主要映射上安裝必要的應用程式。
 - 此角色是否需要 Microsoft 365 應用程式？ 如果是，您必須 [將 Microsoft 365 新增至自訂的主要 VHD 映射](/azure/virtual-desktop/install-office-on-wvd-master-image)。

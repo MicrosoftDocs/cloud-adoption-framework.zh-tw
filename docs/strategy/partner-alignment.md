@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 42e57362a0b4f6dff45995b81352baab5ef358a0
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 50434a66069543a02151ada0d7646c1e57c52e6f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662348"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885791"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -46,6 +46,7 @@ ms.locfileid: "88662348"
 - **管理：** 支援或進行中的受控服務，以操作雲端平臺和雲端中裝載的工作負載。
 
 少數公司具有支援策略、規劃、就緒、採用、治理和管理所需的技能多樣性。 合作夥伴和其他支援模型通常需要填寫小組技能和責任的差距。
+
 不同的合作選項可以協助開發所需的技巧、增強人員配置需求，或完全卸載特定的流程。
 
 ## <a name="partnership-options"></a>合作關係選項
@@ -60,7 +61,7 @@ ms.locfileid: "88662348"
 
 Microsoft 認證解決方案提供者專門提供以全球 Microsoft 技術為基礎的新式客戶解決方案。 透過具經驗之合作夥伴的協助，在雲端上最佳化您的業務。
 
-**[尋找 (CSP) 的雲端解決方案提供者 ](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
+**[尋找雲端解決方案提供者 (CSP) ](https://www.microsoft.com/solution-providers/home)。** 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
 
 Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證更高層級的功能，並透過認證的員工 headcounts、客戶參考、大規模的 Azure 年度耗用量和其他準則來示範。
 
@@ -77,7 +78,8 @@ Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證�
 ### <a name="azure-migration-program-amp"></a>Azure 移轉計劃 (AMP) 
 
 [Azure 移轉計劃 (AMP) ](https://azure.microsoft.com/migration/migration-program)提供混合的技術技能、逐步指南、免費的遷移工具，以及可降低遷移成本的潛在優惠。
-此程式會利用 FastTrack for Azure 和 Azure 解決方案提供者，在遷移期間改善客戶的成功。
+
+此程式會使用 FastTrack for Azure 和 Azure 解決方案提供者，在遷移期間改善客戶的成功。
 
 觀看這段短片，瞭解 Azure 移轉計劃如何協助您。
 
@@ -94,6 +96,7 @@ Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證�
 ## <a name="shortlist-of-partner-options"></a>合作夥伴選項名單
 
 在策略開發期間，它很難定義特定的合作關係需求。 在雲端採用方案和技能方案的開發期間，這些需求將會成為焦點。
+
 但是，根據您的小組文化和成熟度，您可能會決定更符合您預期需求的合作關係選項。
 
 選擇上面的一或多個合作關係選項，以縮小要先調查的選項。
@@ -101,7 +104,9 @@ Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證�
 ## <a name="begin-contract-and-paperwork-reviews"></a>開始合約和書面評論
 
 當您名單選項時，可能會有一或多個夥伴存在。如果夥伴之間有清楚的領導者，請使用合作夥伴來開始審核合約和書面工作的流程。
+
 簽約程式可能需要一些時間。 事先審核法律條款，可在您的小組需要協助時，移除一個障礙。
+
 如果您的公司需要將廠商新增至核准的廠商清單，尤其如此。
 
 ## <a name="next-steps"></a>後續步驟

@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 47a6503b369bc5d575f68358101c2bd04c7fa9c8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575106"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884788"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
+<!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>使用 Terraform 來建立登陸區域
 
@@ -39,8 +39,6 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 
 部署的元件及其用途包括下列各項：
 
-<!-- markdownlint-disable MD033 -->
-
 | 元件 | 責任 |
 |---|---|
 | 資源群組 | 基礎所需的核心資源群組 |
@@ -48,8 +46,6 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 | 診斷記錄 | 所有作業記錄都會保留一天的特定天數： <li> 儲存體帳戶 <li> 事件中樞 |
 | Log Analytics | 儲存作業記錄。 部署適用于深入應用程式最佳作法審核的常見解決方案： <li> NetworkMonitoring <li> AdAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示 |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>使用此藍圖
 
@@ -73,7 +69,7 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 | 元件              | 決策                                                                                                                                                                                                                                                                | 替代方法                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 記錄和監視 | 使用 Azure 監視器 Log Analytics 工作區。 已布建診斷儲存體帳戶和事件中樞。                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
-| Network (網路)                | N/A-網路是在另一個登陸區域中執行。                                                                                                                                                                                                                    | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                 |
+| 網路                | N/A-網路是在另一個登陸區域中執行。                                                                                                                                                                                                                    | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                 |
 | 身分識別               | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。                                                                                                                                                                        | [身分識別管理最佳做法](/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | 原則                 | 此登陸區域目前假設未套用任何 Azure 原則。                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | 訂用帳戶設計    | N/A-專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |

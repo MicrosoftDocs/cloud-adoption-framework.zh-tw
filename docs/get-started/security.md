@@ -7,20 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef6830c5e7d0c23460390ee2ed1a3db0f7bc6c73
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 96b962019314b54a60841d20e0a0b147424244ee
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573916"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884244"
 ---
-<!-- cSpell:ignore CISO passwordless -->
-
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：跨企業環境執行安全性
 
 安全性可協助建立商務的機密性、完整性和可用性保證。 安全性工作的重點在於保護內部和外部惡意和無意的行為所造成的作業可能會造成的影響。
 
-本入門指南會概述可減輕或避免網路安全性攻擊的業務風險的主要步驟。 它可協助您在雲端中快速建立基本的安全性作法，並將安全性整合到您的雲端採用流程。
+本快速入門手冊會概述可減輕或避免網路安全性攻擊的業務風險的主要步驟。 它可協助您在雲端中快速建立基本的安全性作法，並將安全性整合到您的雲端採用流程。
 
 本指南中的步驟適用于所有支援雲端環境和登陸區域安全性保證的角色。 工作包括立即風險降低優先順序、建立新式安全性策略的指引、運用方法，以及在該策略執行。
 
@@ -71,7 +69,6 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
   - [服務的驗證策略](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
   - [許可權指派策略](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -117,10 +114,10 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 - **現代化安全性策略：** 安全性策略應該包含新式技術環境、目前威脅範圍和安全性社區資源的所有層面考慮。
 
-  - **適應雲端的共同責任模型** 。
-  - **包含所有雲端類型和多重雲端部署**。
-  - **偏好原生雲端控制項** ，以避免不必要和有害的衝突。
-  - **整合安全性群組** ，跟上攻擊者演進的步調。
+  - 適應雲端的共同責任模型。
+  - 包含所有雲端類型和多重雲端部署。
+  - 偏好原生雲端控制項，以避免不必要和有害的衝突。
+  - 整合安全性群組，跟上攻擊者演進的步調。
 
 **其他內容的相關資源：**
 
@@ -134,7 +131,6 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
   - [網路安全性復原](../strategy/define-security-strategy.md#cybersecurity-resilience)
   - [雲端如何改變安全性關聯性和責任](../strategy/define-security-strategy.md#how-the-cloud-is-changing-security)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -162,7 +158,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
   - **安全性技能計畫** 在流覽技術、角色和責任的重大變更時，支援小組成員。
 
   - 引導技術團隊的**技術安全性架構和功能藍圖**。
-  
+
     Microsoft 提供參考架構和技術功能，可在您建立架構和藍圖時協助您，包括：
 
     - [Azure 元件和參考模型](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) ，可加速規劃和設計 azure 安全性角色。
@@ -172,9 +168,12 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
       ![Azure RBAC 模型](../_images/security/azure-rbac-model.png)
 
     - [Microsoft 網路安全性參考架構](https://aka.ms/mcra) ，可針對橫跨內部部署和雲端資源的混合式企業建立網路安全性架構。
+
     - [安全性作業中心 (SOC) 參考架構](/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430) ，以現代化安全性偵測、回應和復原。
+
     - [零信任的使用者存取參考架構](/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842) ，以現代化雲端產生的存取控制架構。
-    - [Azure 資訊安全中心](/azure/security-center) 和 [Microsoft Cloud App Security](/cloud-app-security) 協助保護雲端資產的安全。
+
+    - [Azure 資訊安全中心](/azure/security-center) 與 [Microsoft cloud 應用程式安全性](/cloud-app-security) ，協助保護雲端資產的安全。
 
   - **安全性意識和教育計畫**，讓所有小組都有基本的重要安全性知識。
 
@@ -205,14 +204,15 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
     - 他們需要學習哪些技能。
     - 為什麼他們需要學習技能 (以及這樣做) 的優點。
     - 如何 (取得此知識，並提供資源以協助他們瞭解) 。
-  
+
     您可以使用 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)來記錄計畫。 您也可以使用 [線上 Microsoft 安全性訓練](/security/compass/microsoft-security-compass-introduction) ，協助您的團隊成員教育。
+
   - 保障**安全性認知**，以協助人員真的與保護組織安全的部分。
 
 - **複習 Microsoft 學習和指導方針：** Microsoft 已發佈見解和觀點，可協助您的組織規劃雲端的轉型和新式的安全性策略。 本檔包含記錄的訓練、檔和安全性最佳作法，以及建議的標準。
+
   如需協助建立方案和架構的技術指引，請參閱 [Microsoft 安全性檔案](/security)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -227,7 +227,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 從安全的狀態開始，比稍後在環境中改建安全性更容易。 我們強烈建議從安全的設定開始，以確保工作負載會在安全的環境中遷移至及開發和測試。
 
-[登陸區域](..//ready/landing-zone/index.md)執行期間，許多決策可能會影響安全性和風險設定檔。 雲端安全性小組應查看登陸區域設定，以確保其符合您組織安全性基準中的安全性標準和需求。
+[登陸區域](../ready/landing-zone/index.md)執行期間，許多決策可能會影響安全性和風險設定檔。 雲端安全性小組應查看登陸區域設定，以確保其符合您組織安全性基準中的安全性標準和需求。
 
 **交付：**
 
@@ -248,9 +248,8 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
   - [安全分數](/azure/security-center/secure-score-security-controls)：使用 Azure 安全性狀態的評分評量來追蹤組織中的安全性工作和專案。
   - [Azure 藍圖](/azure/governance/blueprints/overview)：雲端架構設計人員和集中式 IT 群組可以定義一組可重複使用的 Azure 資源，以符合組織的標準、模式和需求。
   - [Azure 原則](/azure/governance/policy)：這是其他服務所使用之可見度和控制項功能的基礎。 Azure 原則已整合到 [Azure Resource Manager](/azure/azure-resource-manager)中，因此您可以在建立之前、期間或之後，在 Azure 中的任何資源上審核變更和強制執行原則。
-- [改進登陸區域作業](../ready/considerations/landing-zone-security.md)：使用最佳做法來提升登陸區域內的安全性。
+  - [改進登陸區域作業](../ready/considerations/landing-zone-security.md)：使用最佳做法來提升登陸區域內的安全性。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -275,9 +274,8 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 - 平衡營運和安全性風險。 因為這些環境可能會裝載啟用重要商務程式的生產系統，所以您可能需要以累加方式執行安全性改進，以避免風險的作業停機時間。
 - 依商務重要性排列安全性風險探索和補救的優先順序。 如果遭入侵的工作負載和有高風險風險的工作負載，請從具有高業務影響的工作負載開始著手。
 
-如需詳細資訊，請參閱 [識別和分類商務關鍵應用程式](/azure/architecture/framework/security/applications-services?bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json#identify-and-classify-business-critical-applications)。
+如需詳細資訊，請參閱 [識別和分類商務關鍵應用程式](/azure/architecture/framework/security/applications-services#identify-and-classify-business-critical-applications)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -293,7 +291,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 **交付：**
 
 - 確定組織的安全性基準已套用至所有相關系統。 使用 [安全分數](/azure/security-center/secure-score-security-controls) 或類似的機制來審核異常。
-- [安全性基準專業範本](../govern/security-baseline/template.md)中的檔安全性基準原則、程式和設計指引。
+- 記錄 [安全性基準專業範本](../govern/security-baseline/template.md)中的安全性基準原則、程式和設計指引。
 
 **支援交付完成的指導方針：**
 
@@ -301,7 +299,6 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 - 確定所有工作負載和資源都遵循適當的 [命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，特別強調「資料敏感度」標記。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -311,6 +308,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 ## <a name="next-steps"></a>後續步驟
 
 本指南中的步驟可協助您實行一致管理整個企業安全性風險所需的策略、控制項、流程、技能和文化特性。
+
 當您繼續進入雲端安全性的作業模式時，請考慮下列後續步驟：
 
 - 請參閱 [Microsoft 安全性檔案](/security)。 它提供技術指引，協助安全性專業人員建立及改進網路安全性策略、架構和優先順序的藍圖。

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93975a3064f6d7056bcbe09aad17c60d9fa2cc06
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ab1ab07b056599ba920afc4491adc0e6e030676c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572777"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885094"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業規模的商務持續性和嚴重損壞修復
 
@@ -95,4 +95,3 @@ ms.locfileid: "88572777"
 - 避免針對生產和 DR 網站使用重迭的 IP 位址範圍。
 
   可能的話，請規劃可提供所有網站之並行連線的商務持續性和 DR 網路架構。 使用相同無類別網域間路由區塊的 DR 網路（例如生產網路）需要網路容錯移轉程式，在發生中斷時，可能會使應用程式容錯移轉變得複雜且延遲。
-

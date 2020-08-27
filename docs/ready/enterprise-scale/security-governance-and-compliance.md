@@ -7,16 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6ff92199521fdc93ae7e57c7208a990b1476a97
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d81b17fb8429fe058856f049c7ab491e7cab504f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572726"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884754"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性治理和合規性
 
-本文涵蓋定義加密與金鑰管理、規劃治理、定義安全性監視和稽核原則，以及規劃平臺安全性。 在本文結尾，您可以參考描述架構的表格，以評估 Azure 服務的企業安全性就緒程度。 
+本文涵蓋定義加密與金鑰管理、規劃治理、定義安全性監視和稽核原則，以及規劃平臺安全性。 在本文結尾，您可以參考描述架構的表格，以評估 Azure 服務的企業安全性就緒程度。
 
 ## <a name="define-encryption-and-key-management"></a>定義加密與金鑰管理
 

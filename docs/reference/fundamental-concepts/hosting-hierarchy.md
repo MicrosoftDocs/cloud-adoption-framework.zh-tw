@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d694ede067b5881bf4a35742c2a3b0e0756a89ad
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 876465ac626d99e8a975f284f0db02ac131ea2be
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661753"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885604"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "88661753"
 負責任的小組負責管理組合階層的每一層。 下圖顯示負責任小組與指導方針之間的對應，以支援其商務決策、技術決策和技術實行。
 
 > [!NOTE]
-> 下列清單中所述的小組可能是虛擬團隊 (的) 或個人的團隊。 針對此階層的某些變體，部分負責任的小組可以折迭，如稍後的責任變化所述。
+> 下列清單中所述的小組可能是虛擬小組或個人。 針對此階層的某些變體，部分負責任的小組可以折迭，如稍後的責任變化所述。
 
 ![與階層一致的責任](../../_images/ready/hierarchy-with-roles.png)
 

@@ -1,19 +1,19 @@
 ---
 title: 雲端監視策略
 description: 深入瞭解如何定義有效的雲端監視策略。
+services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: 021f3c9913a09bf0b32dd5913b54cbd839ff380e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574205"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885842"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -191,9 +191,9 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 
 ![監視和控制策略](./media/monitoring-strategy/monitoring-and-control-strategy.png)
 
-<!-- docsTest:ignore "Data to Information, Knowledge, and Wisdom" -->
+<!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
-<Sup>1</Sup> DIKW 模型是一種常用的方法，其中包含知識管理中的根，以說明我們使用動作和決策的元件，將資料移至資訊、知識和智慧的方式。
+<Sup>1</Sup> dikw 模型是一種常用的方法，其中包含知識管理中的根，以說明我們使用動作和決策的元件，將資料移至資訊、知識和智慧的方式。
 
 監視是您在 Azure 中建立的服務基礎。 您的策略可以解決這四個新式監視的專業領域，以協助您定義最基本的可行監視，並在步驟中得到自信。 將您的功能從被動移至主動式，並將其觸及範圍調整為終端使用者，但有一個目標。
 
@@ -215,7 +215,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 |-----|---------------------|------------------|
 | 1 | 僅限內部部署 | System Center Operations Manager。 繼續監視服務、基礎結構、在擁有的資料中心內將應用層網路化，而不需任何雲端考慮。 |
 | 2 | 內部部署至雲端 | 繼續使用 System Center Operations Manager，並套用 Microsoft 365 和 Azure 管理套件。 |
-| 3 | 在雲端和內部部署中執行服務的內部部署與雲端 (合作)  | 使用 Azure 監視器建立初始監視。 將 Azure 監視器連接到 System Center Operations Manager 和警示來源，例如 Zabbix 或 Nagios。 部署 Azure 監視器監視代理程式，並與 System Center Operations Manager 以合作方式監視的多宿主。 |
+| 3 | 在雲端和內部部署中執行服務的內部部署與雲端 (合作)  | 使用 Azure 監視器建立初始監視。 將 Azure 監視器連接到 System Center Operations Manager 和警示來源，例如 zabbix 或 nagios。 部署 Azure 監視器監視代理程式，並與 System Center Operations Manager 以合作方式監視的多宿主。 |
 | 4 | 混合式遷移 | 監視遷移，例如，Microsoft Exchange Server 來 Microsoft 365 Exchange Online。 Exchange Online 服務健康狀態與服務使用量、安全性與合規性，全都來自 Microsoft 365。 在遷移完成之前，使用 System Center Operations Manager 逐漸解除委任監視 exchange 內部部署。 |
 | 5 | 永遠混合 | System Center Operations Manager、Azure AD、Azure 監視器、Azure 資訊安全中心、Intune 和其他專案;適用于混合數位資產的各種工具。 |
 | 6 | 雲端原生 | Azure 監視器、Azure 原則、Azure 資訊安全中心、Microsoft 365、Azure 服務健康狀態、Azure 資源健康狀態及其他。 |
@@ -234,7 +234,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | 健全狀況和狀態監視 | 全面性地型會觀察、測量、學習及改善服務或元件的長期擔保，包括服務層級，其中包括服務層級：可用性、容量、效能、安全性和合規性。 狀況良好的系統、服務或元件在線上、執行良好、安全且符合規範。 健康情況監視包含記錄，且具有即時健康狀態和計量的具狀態。 它也包含著重于服務使用方式的趨勢報告、見解和趨勢。 |
 | 公用程式監視 | 觀察、測量、學習和改善系統如何提供價值的品質或定性方面。 使用者體驗是一種監視使用案例。 |
 | 安全性監控 | 觀察、測量、學習和改進保護，以支援網路安全性策略和功能，例如安全性作業、身分識別和存取、資訊保護、隱私權、威脅管理和合規性。 使用 Azure 資訊安全中心和 Azure Sentinel 來監視，以及 Microsoft 365。 |
-| 成本監視 | 使用 Azure 監視器和 Azure 成本管理，並以新的主要目標計費，來監視使用量和預估成本。 成本管理 Api 可讓您使用多維度分析來探索成本和使用量資料。 |
+| 成本監視 | 使用 Azure 監視器和 Azure 成本管理，並以新的主要目標計費，來監視使用量和預估成本。 Azure 成本管理 Api 可讓您使用多維度分析來探索成本和使用方式資料。 |
 
 | 第三個目標 | 目標和結果 |
 |---------------------|------------------|
@@ -257,8 +257,8 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | Agile 詞彙 | 要包含的內容 | 範例 |
 |----------|---------------|--------|
 | Epic | 廣泛監視 <br> 監視策略的計畫 | 合併 Azure 雲端監視 <br> 混合式雲端監視 <br> 私用雲端監視 <br> 建立核心監視服務 |
-| 功能 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
-| 使用者案例和工作 | 最終結果是監視設定或解決方案 | 網路監視 (例如 ExpressRoute)  <br> 標準化的 IaaS VM 監視 (例如適用於 VM 的 Azure 監視器、application insights、Azure 原則、設定、原則、報告、工作區 )  |
+| 特性 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
+| 使用者案例和工作 | 最終結果是監視設定或解決方案 | 網路監視 (例如 ExpressRoute)  <br> 標準化的 IaaS VM 監視 (例如適用於 VM 的 Azure 監視器、Application Insights、Azure 原則、設定、原則、報告、工作區。 )  |
 
 ## <a name="establish-minimum-governance"></a>建立最小治理
 

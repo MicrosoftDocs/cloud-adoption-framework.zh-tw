@@ -3,20 +3,20 @@ title: 開始使用：建立雲端策略小組
 description: 建立雲端策略小組，以確保雲端採用工作的進度與業務成果一致，且您已準備好成功的雲端採用旅程。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 9c103dc269de19880d179c07ecc6ca633388d3c8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5b23a9b0e62b59cda914a6733d15f76157c5f0eb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573814"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883989"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
-若要成功，每個雲端採用旅程都必須牽涉到某種程度的策略性規劃。 本入門指南的設計目的是協助您建立專屬的小組或虛擬團隊 (的) ，並以穩固的雲端策略進行建立和提供。
+若要成功，每個雲端採用旅程都必須牽涉到某種程度的策略性規劃。 本入門指南的設計目的是協助您建立專屬的小組或虛擬小組，以建立並交付穩固的雲端策略。
 
 旅程圖中的第一個步驟是決定您是否需要策略小組，或您現有的團隊成員是否能以分散式責任的方式提供雲端策略。
 
@@ -39,8 +39,6 @@ ms.locfileid: "88573814"
 
 建立雲端策略小組通常是必要的，原因如下：
 
-<!-- markdownlint-disable MD033 -->
-
 | 原因 | 考量 |
 |---|---|
 | **雲端採用對企業而言很重要。** | <li> 雲端採用工作具有面板層級的可見度。 <li> 成功的雲端採用工作將會改善市場定位、客戶保留或收入。 <li> 採用組合中的程式會直接對應到策略性的業務成果。 <li> 這項採用工作的工作負載組合是策略性且任務關鍵性，而且可能會影響多個營業單位。 |
@@ -55,7 +53,7 @@ ms.locfileid: "88573814"
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>如果我不需要雲端策略小組，該怎麼辦？
 
-複習提供雲端策略需求所需的 [雲端策略功能](../../organize/cloud-strategy.md) 。 並非每個組織都需要專屬小組或虛擬團隊 (的) ，以協助滿足其策略需求。 在您的 [RACI (負責、負責任、諮詢及通知的) 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)中，請列出策略的核心責任，並找出您的小組負責各項工作的人員。 如果有一位人會參與這些責任，請在 RACI 範本中簡單取代「雲端策略」與該人員的名稱。
+複習提供雲端策略需求所需的 [雲端策略功能](../../organize/cloud-strategy.md) 。 並非每個組織都需要專屬的小組或虛擬小組，以協助滿足其策略需求。 在您的 [RACI (負責、負責任、諮詢及通知的) 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)中，請列出策略的核心責任，並找出您的小組負責各項工作的人員。 如果有一位人會參與這些責任，請在 RACI 範本中簡單取代「雲端策略」與該人員的名稱。
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>步驟2：建立雲端策略小組
 
@@ -111,9 +109,8 @@ ms.locfileid: "88573814"
 
 **支援交付完成的指導方針：**
 
-- [瞭解動機](../../strategy/motivations.md)：重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制對於所有後續工作的重要性。 其他與創新或透過遷移成長相關的向前搜尋動機，可能會著重于頂尖的收入。 瞭解動機可協助小組成員瞭解成本管理優先權的高度。
+- [瞭解動機](../../strategy/motivations.md)：重要的商務事件和某些遷移動機通常會受到成本影響，進而提升成本控制對於所有後續工作的重要性。 其他與創新或透過遷移成長相關的向前搜尋動機，可能會著重于頂尖的收入。 瞭解動機可協助小組成員決定成本管理的優先順序高。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -159,7 +156,7 @@ ms.locfileid: "88573814"
 
 - [商業理由](../../strategy/cloud-migration-business-case.md)可作為雲端採用整體財務計畫的高階觀點。 這可以是初步預算工作的絕佳來源。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 責任小組 | 負責和支援的團隊 |
 | --- | --- |
@@ -182,7 +179,6 @@ ms.locfileid: "88573814"
 - [增量合理化](../../digital-estate/rationalize.md)：考慮採用敏捷式方法來合理化，以適當地配合晚期繫結的技術決策。
 - [合理化的五個 Rs](../../digital-estate/5-rs-of-rationalization.md)：瞭解各種合理化選項。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

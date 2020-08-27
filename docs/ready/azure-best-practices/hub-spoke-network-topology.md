@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 81d00bb2076c936b06b6ac7a00ef19d0b0d43565
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2fa4f8651be0d4ee29c8bac4fcfb95326e4201c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574749"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884720"
 ---
-<!-- cSpell:ignore tracsman jonor rossort NVAs -->
-
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
 _中樞和輪輻_ 是一種網路模型，可有效率地管理常見的通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：

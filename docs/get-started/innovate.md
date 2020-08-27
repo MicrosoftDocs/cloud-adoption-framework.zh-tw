@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83086286d620f33aa2f92b2f13aa9a0e4c7b1dd2
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 2a3aaf0b2d6e77ecc652315526e6aeb56969289e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662161"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884363"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
@@ -30,15 +30,12 @@ ms.locfileid: "88662161"
 
 - 使用 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) 來記錄動機和所需的業務成果。
 
-<!-- docsTest:ignore "Get started: Accelerate migration" -->
-
 **支援交付完成的指導方針：**
 
 - [動機](../strategy/motivations.md)：策略性調整的第一個步驟是獲得推動創新工作的動機合約。 從商務和 IT 的專案關係人瞭解及分類動機和一般主題開始。
 - [業務成果](../strategy/business-outcomes/index.md)：當動機對齊之後，您就可以捕獲所需的業務成果。 這種資訊提供明確的計量，讓您用來測量整體轉換。
 - [平衡組合](../strategy/balance-the-portfolio.md)：創新不是每個工作負載的正確採用途徑。 這種採用方式與新的自訂建立應用程式或 *需要* 重新架構或完整重建的工作負載有關。 當動機大幅優先于所有工作負載的創新時，請務必評估組合，以確保這些投資能產生所需的投資報酬率。 您可以創新特定資源和小規模重建工作的現代化，但可能會因為下列快速入門而提供更好的服務 [：加速遷移](./migrate.md)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -58,7 +55,6 @@ ms.locfileid: "88662161"
 - [業務理由](../strategy/cloud-migration-business-case.md)：在您評估每個機會以在雲端中進行創新之前，請先完成高階商業理由，以建立整體採用計畫的專案關係人對齊。
 - [商業價值共識](../innovate/business-value.md)：量化創新的價值可能會在程式初期變得很困難。 本文中的練習可以協助評估與特定創新工作的商業價值的一致。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -87,7 +83,6 @@ ms.locfileid: "88662161"
 - [清查現有的系統](../digital-estate/inventory.md)：瞭解程式設計的目前狀態，資料驅動的方法是第一個步驟。 探索並收集資料，以啟用所有評量活動。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：簡化評定工作，將焦點放在所有資產的定性分析，甚至可能支援商務案例。 然後為前10個工作負載新增深入的定性分析。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -114,7 +109,6 @@ ms.locfileid: "88662161"
 - [投入時間調整](../plan/assets.md)：調整待處理專案中的資產和工作負載，以清楚地定義優先順序工作負載的工作量。
 - [人員和時間的對齊方式](../plan/iteration-paths.md)：建立工作負載的反復專案、速度和發行。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -137,7 +131,6 @@ ms.locfileid: "88662161"
 - [治理方法](../govern/index.md)：此方法會概述考慮公司原則和流程的程式。 然後，您可以建立在雲端企業工作的治理上提供所需的專業領域。
 - [公司原則的定義](../govern/corporate-policy.md)：識別及降低業務風險。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -159,7 +152,6 @@ ms.locfileid: "88662161"
 - [取得特定的 advanced 作業](../manage/design-principles.md)：探索超越您管理基準的方式。
 - 如果需要進行 advanced 作業以支援您的作業需求，請評估 [商務承諾](../manage/considerations/business-alignment.md) ，以判斷這兩個小組的營運責任。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -184,7 +176,6 @@ ms.locfileid: "88662161"
 - [選擇登陸區域](../ready/landing-zone/index.md)：使用此區段來尋找根據採用模式部署登陸區域的正確方法。 然後部署該標準化的程式碼基底。
 - [展開登陸區域](../ready/considerations/index.md)：無論起點為何，請找出部署的登陸區域中的間距，以新增資源組織、安全性、治理、合規性和作業所需的元件。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |
@@ -227,7 +218,6 @@ ms.locfileid: "88662161"
 
 - 當評量完成時，工具的輸出會提供一個分數，以評估 AI 創新成熟度的狀態。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 責任小組 | 負責和支援的團隊 |

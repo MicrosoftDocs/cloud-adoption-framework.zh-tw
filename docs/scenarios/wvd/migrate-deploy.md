@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 50fea7acb50b2f14cabea51bdc9a53fecdaf1595
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b84533bb565e43a0ddb52930f33eba21f35c8ed9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572572"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885349"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -58,15 +58,15 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 您可以使用 [Azure NetApp Files 來裝載使用者配置](/azure/virtual-desktop/create-fslogix-profile-container)檔。 這麼做將需要範圍中的幾個額外步驟，包括：
 
-- **每一 netapp 實例**：設定 netapp files、磁片區和 Active Directory 連接。
-- **每一主機/角色**：設定工作階段主機虛擬機器上的 FSLogix。
-- **每位使用者**：將使用者指派給主機會話。
+- **每一 NetApp 實例：** 設定 NetApp files、磁片區和 Active Directory 連接。
+- **每一主機/角色：** 設定工作階段主機虛擬機器上的 FSLogix。
+- **每位使用者：** 將使用者指派給主機會話。
 
 您也可以使用 [Azure 檔案儲存體來裝載使用者設定檔](/azure/virtual-desktop/create-file-share)。 這麼做將需要範圍中的幾個額外步驟，包括：
 
-- **每 Azure 檔案儲存體實例**：設定儲存體帳戶、磁片類型，以及 Active Directory 連接 ([Active Directory Domain Services (](/azure/virtual-desktop/create-profile-container-adds)AD DS) ，指派 Active Directory 使用者群組的角色型存取控制存取權、套用新的技術檔案系統許可權，以及取得儲存體帳戶存取金鑰。
-- **每一主機/角色**：設定工作階段主機虛擬機器上的 FSLogix。
-- **每位使用者**：將使用者指派給主機會話。
+- **每 Azure 檔案儲存體實例：** 您也可以設定儲存體帳戶、磁片類型，以及 Active Directory 連線 ([Active Directory Domain Services (AD DS](/azure/virtual-desktop/create-profile-container-adds)) 、指派 Active Directory 使用者群組的角色型存取控制存取、套用新的技術檔案系統許可權，以及取得儲存體帳戶存取金鑰。
+- **每一主機/角色：** 設定工作階段主機虛擬機器上的 FSLogix。
+- **每位使用者：** 將使用者指派給主機會話。
 
 某些角色或使用者的使用者設定檔可能也需要資料移轉工作，這可能會延遲遷移特定的角色，直到可以在本機 Active Directory 或個別使用者桌上型電腦內補救使用者設定檔為止。 這項延遲可能會大幅影響 Windows 虛擬桌面案例以外的範圍。 補救之後，就可以繼續初始範圍和先前的方法。
 

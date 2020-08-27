@@ -7,15 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 076248ef6fbbf119d29e159aac54aadc56d6bbc0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 71022fd795e2cecff34c238a2e0978d3242cb037
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568527"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884550"
 ---
-<!-- cSpell:ignore Personalizer -->
-
 # <a name="what-are-ai-applications"></a>什麼是 AI 應用程式？
 
 在 Azure 中，您可以使用所選和內建 AI 的工具和技術，更快地建立智慧型應用程式。
@@ -48,12 +46,12 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 | [語音](/azure/cognitive-services/speech-service/) | 語音服務會將語音啟用功能加入應用程式。 |
 | [說話者](/azure/cognitive-services/speaker-recognition/home "說話者辨識 API") 辨識 (預覽)  | 說話者辨識 API 提供了用於說話者識別和驗證的演算法。 |
 | [Bing 語音](/azure/cognitive-services/speech/home) (淘汰)  | Bing 語音 API 可讓您輕鬆在應用程式中建立語音開啟功能。 |
-| [翻譯工具語音](/azure/cognitive-services/translator-speech/) (淘汰)  | 翻譯工具語音是機器翻譯服務。 |
+| [Translator speech](/azure/cognitive-services/translator-speech/) (淘汰)  | 翻譯工具語音是一種機器翻譯服務。 |
 
 ### <a name="language-apis"></a>語言 API
 
 | 服務名稱 | 服務說明 |
-| --- | -- |
+|--|--|
 | [語言理解 (LUIS)](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
 | [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker 可讓您從半結構化內容中建立問答服務。 |
 | [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析針對情感分析、關鍵字組解壓縮和語言偵測的原始文字提供自然語言處理。 |
@@ -79,7 +77,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 認知服務提供可在雲端或內部部署環境中部署的容器。 深入瞭解 [認知服務容器](/azure/cognitive-services/cognitive-services-container-support)。
 
-<!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
+<!-- docsTest:casing "HIPAA BAA" "CSA STAR" -->
 
 ### <a name="certifications-and-compliance"></a>認證和合規性
 

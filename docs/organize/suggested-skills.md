@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 45ebaec6b6d0abe665fc4a038892b7f1c3a053ff
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: de3a0ef01cf3e0144a348318cbf562c60149cebb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574596"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884839"
 ---
 # <a name="build-technical-skills"></a>建置技術技能
 
@@ -21,7 +21,7 @@ ms.locfileid: "88574596"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
-根據與雲端採用工作相關聯的動機和業務成果，領導人可能需要建立新的組織結構或虛擬團隊 (的) ，以促進各種功能。 下列文章可協助您的組織開發必要的技能，以結構這些團隊來滿足所需的結果：
+根據與雲端採用工作相關聯的動機和業務成果，領導人可能需要建立新的組織結構或虛擬小組，以促進各種功能。 下列文章可協助您的組織開發必要的技能，以結構這些團隊來滿足所需的結果：
 
 - [調整您的組織](../get-started/org-alignment.md)：探索建立適當組織結構的方法。
 - [組織調整練習](./index.md)：取得對齊和小組結構的總覽，以協助滿足特定目標。
