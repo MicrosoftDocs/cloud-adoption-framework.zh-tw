@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9684ad72587b1132632a53d15385e2f396311536
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0e6732c79fc08b22765f67907f8ee8fec9659616
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575021"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885502"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack：在您的資料中心內執行 Azure 的策略選項
 
@@ -38,7 +38,7 @@ Azure 與 Azure Stack Hub 之間有一些差異。 有些很明顯，其他則�
 
 - Azure 提供近乎無限的容量。 Azure Stack Hub 則建置在您資料中心內的實體硬體之上，因此會導致容量有限。
 - Azure 與 Azure Stack Hub 之間的 API 版本和驗證機制可能會稍有不同。
-- Azure Stack Hub 在雲端的_操作者_這一點有所不同，因此會影響工作負載作業的層級。
+- Azure Stack Hub 在雲端的*操作者*這一點有所不同，因此會影響工作負載作業的層級。
 - 必須考慮 Azure Stack Hub 操作員執行的是 Azure Stack Hub 服務的哪個部分，因為這會決定客戶要呼叫服務 PaaS 還是軟體即服務 (SaaS)。
 
 其他差異將會在雲端採用生命週期的不同時間點，於其他 Azure Stack Hub 文章中加以說明。

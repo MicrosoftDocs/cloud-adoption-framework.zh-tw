@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd5e3d69709dc2fbbf9b79fcca3bf0efc63b021b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f5b066eed95a2fbe3ac17cb0b2e00cbdf5263a04
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787022"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880606"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準企業治理指南
 

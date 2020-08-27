@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4954c2f28f8e3334d50ba84f31935c40f1df90
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 17b40a610bae3cd8af6b35dd8f95797c720b473f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569054"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879093"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
@@ -41,7 +41,7 @@ ms.locfileid: "88569054"
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [安全性基準專業領域範本](./template.md)：下載此範本以記錄安全性基準專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與安全性基準專業領域建立關聯的動機與風險。 |
-| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：用於了解其是否為投資安全性基準專業領域之正確時機的指標。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：用於了解其是否為投資安全性基準專業領域正確時機的指標。 |
 | <br> ![遵循圖示](../../_images/govern/process-enforce.png) | <br> [原則遵循流程](./compliance-processes.md)：用以在安全性基準專業領域中支援原則合規性的建議流程。 |
 | <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。 |
 | <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作用來支援安全性基準專業領域的 Azure 服務。 |

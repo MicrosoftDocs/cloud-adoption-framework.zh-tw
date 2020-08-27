@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 92bcd305d963659ff53feca0f233c4a0c1fca312
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6b942705282204adaa9cdb7949091341392a121a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573100"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884907"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -30,13 +30,13 @@ ms.locfileid: "88573100"
 
 ## <a name="structure-type"></a>結構類型
 
-以下組織結構不一定必須對應到組織圖 (組織圖)。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。 在敏捷的矩陣組織中，這些結構可能是虛擬團隊 (或 v-teams) 最好的代表。 對於要在組織圖中顯示這些組織結構並沒有任何限制，但沒有必要生成有效的作業模式。
+以下組織結構不一定必須對應到組織圖 (組織圖)。 組織圖通常反應命令和控制管理結構。 相反地，以下組織結構旨在用來擷取角色和責任的一致性。 在敏捷的矩陣組織中，這些結構可能是虛擬團隊最好的代表。 對於要在組織圖中顯示這些組織結構並沒有任何限制，但沒有必要生成有效的作業模式。
 
 管理組織調整的第一步，是確定如何實現以下組織結構：
 
 - **組織圖調整：** 管理階層、管理員責任和員工調整會與組織結構保持一致。
-- **虛擬團隊 (v-teams)：** 管理結構和組織圖會保持不變。 相反地，虛擬團隊將會透過必要的功能建立並指派工作。
-- **混合模型：** 更常見的是，組織圖和 v-team 調整的混合模型需要實現轉型目標。
+- **虛擬團隊：** 管理結構和組織圖會保持不變。 相反地，虛擬團隊將會透過必要的功能建立並指派工作。
+- **混合模型：** 更常見的是，組織圖和虛擬團隊調整的混合模型需要實現轉型目標。
 
 ## <a name="understand-required-cloud-functions"></a>了解必要的雲端功能
 

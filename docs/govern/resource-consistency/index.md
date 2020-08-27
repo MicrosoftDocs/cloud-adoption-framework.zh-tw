@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd6490f3f0898b404201dfabef06a74d77e86d38
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ba59b5e67a9cd7a64b116852190a1428503174ee
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569275"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879467"
 ---
 # <a name="resource-consistency-discipline-overview"></a>資源一致性專業領域的概觀
 
@@ -41,7 +41,7 @@ ms.locfileid: "88569275"
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [資源一致性專業領域範本](./template.md)：下載此範本以記錄資源一致性專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與資源一致性專業領域建立關聯的動機與風險。 |
-| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資資源一致性專業領域之正確時機的指標。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資資源一致性專業領域正確時機的指標。 |
 | <br> ![遵循圖示](../../_images/govern/process-enforce.png) | <br> [原則遵循流程](./compliance-processes.md)：用以在資源一致性專業領域中支援原則合規性的建議流程。 |
 | <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。  |
 | <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援資源一致性專業領域的 Azure 服務。 |

@@ -7,14 +7,14 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ad7a3f6af9d57c4d2ebd557c23ec5c08fa222b0a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: caa399f50742978f20cca49fc8a8fc9f3f10b425
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847814"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885451"
 ---
-<!-- docsTest:ignore "One Migration" -->
+<!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
 
 # <a name="the-one-migration-approach-to-migrating-the-it-portfolio"></a>遷移 IT 組合的一種移轉方法

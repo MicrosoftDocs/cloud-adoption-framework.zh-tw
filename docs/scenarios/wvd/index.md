@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6463ed2d24446ae588676f45d0a4c349ad0330c0
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 9e07aa60e6201735905160f533115552f61c4d1a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196460"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885417"
 ---
 # <a name="migrate-or-deploy-windows-virtual-desktop-instances-to-azure"></a>將 Windows 虛擬桌面執行個體遷移或部署至 Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "88196460"
 
 ## <a name="approach-windows-virtual-desktop-refactor-and-modernization"></a>方法：Windows 虛擬桌面重構和現代化
 
-在本文章系列所述的方法中，現有的 Citrix、VMware 或遠端桌面服務伺服器陣列會現代化為使用稱為 Windows 虛擬桌面的平台即服務解決方案。
+在本文章系列所述的方法中，現有的 Citrix、VMware 或遠端桌面服務伺服器陣列會現代化為使用稱為 Windows 虛擬桌面的平台即服務 (PaaS) 解決方案。
 
 在此案例中，不是將桌面映像遷移至 Azure，就是會產生新的映像。 同樣地，使用者設定檔也會遷移至 Azure，或建立新的設定檔。 基本上，這項移轉工作能啟用用戶端解決方案，但大多不會有所變更。
 

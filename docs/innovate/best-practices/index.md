@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 758180e4f8771dab5502636eab3da8d9f9e0847a
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 01410f4ae4728681bb8d349e5f87ec8d1442e3ba
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040660"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878549"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>在 Azure 中開發數位發明
 

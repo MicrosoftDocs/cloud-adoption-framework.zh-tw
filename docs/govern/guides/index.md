@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 672e1f31e8200fc6db3772d7de4903e922017038
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9f06cc7fed7db0cf4fafb792accc1077ea84e7a7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573457"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880589"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -22,8 +22,6 @@ ms.locfileid: "88573457"
 ## <a name="review-and-adopt-cloud-governance-best-practices"></a>檢閱並採用雲端治理最佳作法
 
 若要開始進行雲端採用旅程，請選擇下列其中一個治理指南。 每個指南分別根據一組的虛構客戶體驗，概述了一系列最佳做法。 讀者若不熟悉雲端採用架構治理模型的漸進式方法，請先檢閱以下高階治理理論簡介，然後再採用其中一組最佳做法。
-
-<!-- markdownlint-disable MD033 -->
 
 - [標準治理指南](./standard/index.md)：此指南適用於使用建議的兩個訂用帳戶模型的大部分組織，設計訴求為在多個區域中部署，但不橫跨公用和主權/政府雲端。
 
@@ -35,8 +33,6 @@ ms.locfileid: "88573457"
 > [!div class="nextstepaction"]
 > [適用於複雜企業的治理指南](./complex/index.md)
 
-<!-- markdownlint-enable MD033 -->
-
 ## <a name="an-incremental-approach-to-cloud-governance"></a>雲端治理的漸進式方法
 
 ## <a name="choose-a-governance-guide"></a>選擇治理指南
@@ -46,7 +42,7 @@ ms.locfileid: "88573457"
 若要開始治理旅程，請選擇下列兩個選項其中之一。 這些選項是依據綜合的客戶體驗。 標題會依據企業複雜度制定，以便於瀏覽。 您的決策可能更為複雜。 下表概述了這兩個選項之間的差異。
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docutune:casing "Azure Virtual Datacenter" -->
 
 > [!WARNING]
 > 您可能需要更強固的治理起點。 在這類情況下，請考慮使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 CAF 企業級登陸區域方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端裝載 1000 個以上的資產 (基礎結構、應用程式或資料資產)。 對於這類較大型的雲端採用工作而言，CAF 企業級登陸區域是複雜治理案例的實質選擇。
@@ -86,7 +82,7 @@ ms.locfileid: "88573457"
 
 相較於傳統內部部署環境，Azure 可讓工作負載開發團隊和其業務贊助者善用雲端平台所提供的更佳部署靈活度。 當雲端採用工作擴大而要納入關鍵任務資料和工作負載時，此靈活度可能會與 IT 小組所建立的公司安全性和原則合規性需求衝突。 已有複雜治理和法規需求的大型企業尤其會如此。
 
-CAF 企業級登陸區域架構的目的在於經由架構、實作和指引來處理採用生命週期早期的這些疑慮，協助在企業雲端採用期間達到雲端採用小組與中央 IT 小組需求之間的平衡。 這種方法的核心是共用服務架構和妥善管理登陸區域的概念。
+CAF 企業級登陸區域架構的目的在於經由架構、實作和指引來處理採用生命週期早期的這些疑慮，協助在企業雲端採用期間達到雲端採用小組需求與中央 IT 小組需求之間的平衡。 這種方法的核心是共用服務架構和妥善管理登陸區域的概念。
 
 CAF 企業級登陸區域會在 Azure 平台內部署您自己的「孤立雲端」，整合管理程序、法規需求和治理原則所需的安全性程序。 在此虛擬邊界內，CAF 企業級登陸區域會在確保一致合規性的同時，提供用於部署工作負載的模型範例，並提供基本指引來讓您了解如何在雲端中為組織實作角色和職責的隔離。
 
@@ -94,7 +90,7 @@ CAF 企業級登陸區域會在 Azure 平台內部署您自己的「孤立雲端
 
 雖然較小型的小組可受益於 CAF 企業級登陸區域所提供的架構和建議。 但我們的目標是要持續簡化 CAF 企業級登陸區域實作，使其更方便較小型的小組進行實作。 此方法目前的設計訴求是要引導中央 IT 小組管理大型雲端環境。
 
-[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)方法著重於具有以下中期目標 (24 個月內) 的採用小組：**在雲端裝載 1000 個以上的資產 (應用程式、基礎結構或資料資產)** 。
+[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端**裝載 1000 個以上的資產 (應用程式、基礎結構或資料資產)** 。
 
 對於符合下列準則的組織，您也可以開始使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)：
 

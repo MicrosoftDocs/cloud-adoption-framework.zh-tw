@@ -1,25 +1,23 @@
 ---
 title: 開始使用雲端採用架構
 description: 探索常見的案例和旅程，以及透過雲端採用架構，將其緊密對應到這些案例。
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 63eb1694e24f1ef8041d2e08e2328314b273915c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 457f0e57813cbc68a755d35b4eb3fdf639a419de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662112"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884346"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 
 這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。 其可協助您使用敏捷方法從最小可行性解決方案來開始著手，以在速度、創新和控制之間取得平衡。 您可以在一段時間後逐一查看並改善該解決方案。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 案例 | 描述 |

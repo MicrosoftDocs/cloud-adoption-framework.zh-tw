@@ -1,6 +1,6 @@
 ---
 title: 部署加速專業領域概觀
-description: 使用適用於 Azure 的雲端採用架構，了解與雲端治理相關的部署加速。
+description: 使用適用於 Azure 的雲端採用架構，了解與雲端治理相關的部署加速專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7fa7682a5671e4d7ebd865fc36b45a17cfe05f7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d255fd0b4b7727ea72ee7219673fb91632f03568
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573729"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883530"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -52,5 +52,3 @@ ms.locfileid: "88573729"
 
 > [!div class="nextstepaction"]
 > [了解業務風險](./business-risks.md)
-
-<!-- markdownlint-enable MD033 -->
