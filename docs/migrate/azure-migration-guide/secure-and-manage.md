@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2dbe690b10e21c06d348bf3196077fa812a043c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: afde995e27d37114727fafa540f0f1232c49e8b3
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570261"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848120"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -151,7 +151,7 @@ Azure 備份是以 Azure 為基礎的服務，可用來備份 (或保護) 和還
 
 ## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
-稍早在本指南中，我們討論了如何在執行移轉的過程中使用 Azure Site Recovery。 但是在移轉完成後，它也會形成您的災害復原策略中的重要元件。
+但是在移轉完成後，Azure Site Recovery 也會形成您的災害復原策略中的重要元件。
 
 Azure Site Recovery 服務可讓您將裝載於主要 Azure 區域的虛擬機器和工作負載複寫至裝載於次要區域的複本。 當主要區域發生中斷時，您可以容錯移轉至在次要區域中執行的複本，並從該處繼續存取您的應用程式和服務。 當虛擬機器主要複本的中斷再次執行之後，您就可以容錯回復到它。
 

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d8283cc541a98ee3b6d840e405162cff012b01e6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570278"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848188"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
-在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到完成狀態，包括原生工具、第三方工具和專案管理工具。
+在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到已完成狀態。 您將探索原生工具、協力廠商工具和專案管理工具。
 
 <!-- markdownlint-disable MD025 -->
 
@@ -32,14 +32,17 @@ ms.locfileid: "88570278"
 
 Azure Migrate 提供統一且可擴充的移轉體驗。 Azure Migrate 提供一站式的專屬體驗，可讓您在評估和移轉至 Azure 的各個階段追蹤您的移轉旅程。 它可讓您選擇使用自己所選的工具，並在這些工具間追蹤移轉的進度。
 
-Azure Migrate 提供下列功能：
+Azure Migrate 是集中式的中樞，可評估內部部署伺服器、基礎結構、應用程式與資料，並將其遷移至 Azure。 這個攔截器提供的功能包括：
 
-1. 增強的評估及移轉功能：
-    - Hyper-V 評估。
-    - 改良的 VMware 評估。
+- 統合平台的評估、移轉和進度追蹤。
+- 增強的評估及移轉功能：
+    - 包含 Hyper-v & VMware 的內部部署伺服器。
     - VMware 虛擬機器對 Azure 的無代理程式移轉。
-1. 統合的評估、移轉和進度追蹤。
-1. ISV 整合的可擴充方法 (例如 Cloudamize)。
+    - 資料庫移轉至 Azure SQL Database 或 SQL 受控執行個體
+    - Web 應用程式
+    - 虛擬桌面基礎結構 (VDI) 遷移至 Azure 中的 Windows 虛擬桌面
+    - 使用 Azure 資料箱產品的大型資料集合
+- ISV 整合的可擴充方法 (例如 Cloudamize)。
 
 若要使用 Azure Migrate 執行移轉，請遵循下列步驟：
 
@@ -49,63 +52,14 @@ Azure Migrate 提供下列功能：
 1. 選取 選取評估工具 > **Azure Migrate：伺服器評量 > 下一步** 。
 1. 選取 [檢閱 + 新增工具]，並驗證設定。 選取 [新增工具] 以起始用來建立移轉專案的作業，並註冊選取的解決方案。
 
+> [!NOTE]
+> 如需您案例的特定指引，請參閱教學課程和 Azure Migrate [文件](/azure/migrate/migrate-services-overview)。
+>
+
 #### <a name="learn-more"></a>深入了解
 
+- [關於 Azure Migrate](/azure/migrate/migrate-services-overview)
 - [Azure Migrate 教學課程 - 將實體或虛擬化伺服器遷移至 Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
-
-### <a name="azure-site-recovery"></a>Azure Site Recovery
-
-Azure Site Recovery 服務可管理將內部部署資源移轉至 Azure 的工作。 它也可管理及協調內部部署機器和 Azure VM 的災害復原，以實現商務持續性和災害復原 (BCDR) 的目標。
-
-下列步驟概述使用 Site Recovery 進行移轉的程序：
-
-> [!TIP]
-> 視案例之不同，下列步驟可能略有差異。 如需詳細資訊，請參閱[將內部部署機器移轉至 Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure) 一文。
-
-#### <a name="prepare-azure-site-recovery-service"></a>準備 Azure Site Recovery 服務
-
-1. 在 Azure 入口網站中，選取 [+ 建立群組] > [管理工具] > [備份和 Site Recovery]。
-1. 如果您尚未建立復原保存庫，請完成精靈以建立**復原服務保存庫**資源。
-1. 在 [資源功能表]功能表中，選取 [Site Recovery] > [準備基礎結構] > [保護目標]。
-1. 在 [保護目標] 中，選取您需要移轉的項目。
-    1. **VMware：** 選取 [至 Azure] > [是，使用 VMware vSphere Hypervisor]。
-    1. **實體機器：** 選取 [至 Azure] > [未虛擬化/其他]。
-    1. **Hyper-V：** 選取 [至 Azure] > [是，使用 Hyper-V]。 如果 Hyper-V VM 是由 VMM 管理，請選取 [是]。
-
-#### <a name="configure-migration-settings"></a>設定移轉設定
-
-1. 適當設定來源環境。
-1. 設定目標環境。
-    1. 選取 [準備基礎結構] > [目標]，然後選取您要使用的 Azure 訂用帳戶。
-    1. 指定 Resource Manager 部署模型。
-    1. Site Recovery 會檢查您是否有一或多個相容的 Azure 儲存體帳戶和網路。
-1. 設定複寫原則。
-1. 啟用複寫。
-1. 執行測試移轉 (測試容錯移轉)。
-
-#### <a name="migrate-to-azure-using-failover"></a>使用容錯移轉移轉至 Azure
-
-1. 在 [設定] > [複寫的項目]中，選取機器 > [容錯移轉]。
-1. 在 [容錯移轉] 中，選取要容錯移轉的目標**復原點**。 選取最新的復原點。
-1. 視需要設定任何加密金鑰設定。
-1. 選取 [Shut down machine before beginning failover] \(先將機器關機再開始容錯移轉)。 Site Recovery 在觸發容錯移轉之前，會嘗試將虛擬機器關機。 即使關機失敗，仍會繼續容錯移轉。 您可以 [作業] 頁面上追蹤容錯移轉進度。
-1. 確認 Azure VM 如預期般出現在 Azure 中。
-1. 在 [複寫的項目] 中，以選取並按住 (或滑鼠右鍵按一下) VM，然後選擇 [完成移轉]。
-1. 視需要執行任何後續移轉步驟 (請參閱本指南中的相關資訊)。
-
-::: zone target="chromeless"
-
-::: form action="Create[#create/Microsoft.RecoveryServices]" submitText="Create a Recovery Services vault" :::
-
-::: zone-end
-
-::: zone target="docs"
-
-如需詳細資訊，請參閱
-
-- [將內部部署機器遷移至 Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
-
-::: zone-end
 
 ### <a name="azure-database-migration-service"></a>Azure 資料庫移轉服務
 
@@ -151,7 +105,9 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
-Data Migration Assistant 可藉由偵測可能對您新版 SQL Server or Azure SQL Database 中的資料庫功能造成影響的相容性問題，來協助您升級至新式資料平台。 DMA 可為您的目標環境提供效能和可靠性改善的建議，並可讓您將結構描述、資料和非內含的物件從來源伺服器移至目標伺服器。
+Data Migration Assistant (DMA) 可藉由偵測可能對您新版 SQL Server or Azure SQL Database 中的資料庫功能造成影響的相容性問題，來協助您升級至新式資料平台。 DMA 可為您的目標環境提供效能和可靠性改善的建議，並可讓您將結構描述、資料和非內含的物件從來源伺服器移至目標伺服器。
+
+Data Migration Assistant 已與 Azure Migrate 整合，可讓您在 Azure Migrate 儀表板中追蹤所有評估進度。 藉由新增 Azure Migrate，從 Azure Migrate 啟動 DMA：資料庫評估工具，並選取 DMA 中的 [上傳至 Azure Migrate] 按鈕，將您的資料庫評量新增至 Azure Migrate。
 
 > [!NOTE]
 > 針對大型移轉 (就資料庫的數量和大小而言)，我們建議使用 Azure 資料庫移轉服務，此服務可大規模移轉資料庫。
@@ -264,11 +220,11 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 - [Microsoft Teams](https://products.office.com/microsoft-teams)：小組共同作業與通訊工具。 Teams 也整合了 Planner 和其他工具來改善共同作業。
 - [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
 
-這些工具並非唯一可用的工具。 另有許多第三方工具也廣泛用於專案管理社群中。
+這些專案管理工具並不是唯一可用的工具。 另有許多第三方工具也廣泛用於專案管理社群中。
 
 ### <a name="set-up-for-devops"></a>設定 DevOps
 
-當您移轉至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
+當您遷移至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
 Azure DevOps 提供必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱[快速入門：使用 Azure DevOps 的 CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
 
@@ -282,4 +238,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 ## <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
-當您將資源移轉至雲端環境時，請務必定期執行成本分析。 這有助於避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載，這在[最佳化和轉換](./optimize-and-transform.md)一節中會詳細討論。
+當您將資源移轉至雲端環境時，請務必定期執行成本分析。 定期成本分析有助於您避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載，這在[最佳化和轉換](./optimize-and-transform.md)一節中會詳細討論。

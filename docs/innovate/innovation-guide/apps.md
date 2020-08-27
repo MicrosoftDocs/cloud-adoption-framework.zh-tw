@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0f4e8cc17d094efc490a16ea3f740435b97a20fe
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5a874c26835b17e2aa30a2230af3afe79dfd6628
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568085"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848137"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -199,7 +199,7 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 
 ### <a name="serverless-solutions-azure-logic-apps"></a>無伺服器解決方案：Azure Logic Apps
 
-整合資料和應用程式，而不是在不同的系統之間編寫複雜的整合程式碼。 使用 Azure Logic Apps 以視覺化方式建立無伺服器工作流程，並使用您自己的 API、無伺服器功能或現成可用的軟體即服務 (SaaS) 連接器，包括 Salesforce、Microsoft Office 365 和 Dropbox。
+整合資料和應用程式，而不是在不同的系統之間編寫複雜的整合程式碼。 使用 Azure Logic Apps 以視覺化方式建立無伺服器工作流程，並使用您自己的 API、無伺服器功能或現成可用的軟體即服務 (SaaS) 連接器，包括 Salesforce、Microsoft 365 和 Dropbox。
 
 #### <a name="action"></a>動作
 
