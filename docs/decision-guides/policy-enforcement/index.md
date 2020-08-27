@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7acf5b78f687515329763ddb4175a183bff3ef6b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e90acc824745f947972593ea97c59cf8c8c77a86
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574103"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881643"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 

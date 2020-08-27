@@ -7,15 +7,13 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 001689cb017e6e4c86d2e79ae880aef74f78cff5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 658966ece13b5d26e5b016fa189eacf2ce1d6f6f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572216"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878022"
 ---
-<!-- cSpell:ignore asabbour sabbour -->
-
 # <a name="kubernetes-in-the-cloud-adoption-framework"></a>在雲端採用架構中的 Kubernetes
 
 請參閱包含工具、程式和內容 (最佳作法、設定範本和架構指引) 的規範性架構，以簡化大規模採用 Kubernetes 和雲端原生的做法。

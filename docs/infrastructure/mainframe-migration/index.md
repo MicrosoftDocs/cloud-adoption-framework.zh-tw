@@ -7,14 +7,16 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 888f31f26afcbe920fe088fb513ab2f0428d7d09
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 393d91ee283646537a1a2aea59dbe0455a3ac6c6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195225"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884567"
 ---
-<!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+<!-- docsTest:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC -->
+<!-- docsTest:ignore JOB -->
+<!-- cSpell:ignore dbspaces dbextents ASSGN DLBL EXTENT LIBDEF EXEC IPLs VSAM RACF LPARs -->
 
 # <a name="mainframe-migration-overview"></a>大型主機移轉概觀
 
@@ -65,9 +67,6 @@ IBM 系統使用 CICS 等交易監視器來追蹤及管理商務交易的所有�
 下列是典型的大型主機作業：
 
 - **線上：** 工作負載包括交易處理、資料庫管理和連線。 它們通常使用 IBM DB2、CICS 和 z/OS 連接器來實作。
-
-<!-- docsTest:ignore "BMC Control-M" -->
-<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **批次：** 執行工作不需要使用者互動，且通常定期排程 (如在工作日的早上)。 批次工作可以使用 JCL 模擬器 (如 Micro Focus Enterprise Server 或 BMC Control-M 軟體)，在以 Windows 或 Linux 為基礎的系統上執行。
 

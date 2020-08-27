@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cbf0a58c8d7cd89937d7a49c692ab5bd633c1fc8
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: c6f8bd83e9d58e2ed8df3339329c7d41c1ca35b8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847780"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881864"
 ---
-<!-- cSpell:ignore Kerberos NTLM SAML -->
-
 # <a name="identity-decision-guide"></a>身分識別決策指南
 
 在任何環境中，不論是內部部署、混合式，或僅限雲端，IT 都必須控制哪些系統管理員、使用者和群組擁有資源存取權。 身分識別和存取管理 (IAM) 服務可讓您管理雲端中的存取控制。

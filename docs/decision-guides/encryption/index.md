@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cc7810de1100d9ab4f33973d8993824cc95beb43
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a6e8a7c5b4929c590a4e33784b9ff1f297ec31d0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574137"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881847"
 ---
-<!-- cSpell:ignore BYOK -->
-
 # <a name="encryption-decision-guide"></a>加密決策指南
 
 將資料加密可防止資料遭到未經授權存取。 正確實作的加密原則能夠為雲端式工作負載提供額外的安全性，並抵禦來自組織和網路內外的攻擊者與其他未經授權的使用者。

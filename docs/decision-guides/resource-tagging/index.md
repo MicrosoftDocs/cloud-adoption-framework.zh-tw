@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0dfc5ce90a6955e36477a51a286bc3c37b01687a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574069"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884584"
 ---
-<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
-
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
 組織雲端資源是 IT 的重要工作之一，除非您只需要簡單的部署。 基於下列原因，請使用命名和標記標準來組織您的資源：
@@ -27,8 +25,8 @@ ms.locfileid: "88574069"
   - [雲端帳戶處理模型](../../strategy/cloud-accounting.md)
   - [ROI 計算](../../strategy/financial-models.md#return-on-investment)
   - [成本追蹤](../../ready/azure-best-practices/track-costs.md)
-  - [預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [警示](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [警示](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [週期性支出追蹤和報告](../../govern/cost-management/compliance-processes.md)
   - [實作後最佳化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -72,19 +70,15 @@ ms.locfileid: "88574069"
 
 下面列出的常見標記模式可提供如何使用標記組織雲端資產的範例。 這些模式並獨佔模式，而且可並行使用，能夠依據公司需求提供多種資產組織方式。
 
-<!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable -->
+<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 | 標記類型 | 範例 | 描述 |
-|-----|-----|-----|
+|--|--|--|
 | 函數 | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。 |
 | 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 可依據資源使用方式和對其套用的原則將資源分類。 |
 | 會計 | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | 可允許針對帳單用途將資源與組織內的特定群組建立關聯。 |
 | 合作關係 | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受其影響的相關資訊。 |
 | 目的 | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援。 |
-
-<!-- docsTest:enable -->
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>深入了解
 

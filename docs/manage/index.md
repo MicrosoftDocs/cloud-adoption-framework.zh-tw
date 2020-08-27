@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 08b75f151806d3d03441845a4acb53e17d3a748d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 8867c16325b936b847355aba1ace2a99306bf173
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662093"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877733"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -30,8 +30,6 @@ ms.locfileid: "88662093"
 | <br> ![4](../_images/icons/4.png) | <br> [先進的作業和設計原則](./design-principles.md)：需要更高度商務承諾的平台或工作負載，可能需要更深入地檢閱架構，以提供復原能力和可靠性承諾。 |
 
 上述步驟會建立可操作的方法，以供提供雲端採用架構的管理方法。
-
-<!-- cSpell:ignore CAF -->
 
 ![管理雲端採用架構的方法](../_images/manage/caf-manage.png)
 

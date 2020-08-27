@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 803cff3d9d269df81ae4c996f21bc2ef7430581e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 973fd0cdcbb879e8b0e9c6a4604123609a3df183
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280350"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880011"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 
 雲端可為支援企業的技術建立新的架構。 這些新的架構也會變更這些技術的採用、管理和治理方式。 當整個資料中心以自動程序執行的一行程式碼進行實質上的終結並重建時，我們必須重新思考傳統的方法。 在治理方面更是如此。
 
 雲端治理是反覆的程序。 針對使用現有原則治理內部部署 IT 環境的組織而言，雲端治理應該可以補強這些原則。 內部部署與雲端之間的公司原則整合層級會隨著雲端治理的成熟度和雲端中的數位資產而有所差異。 雲端資產隨時間不斷變化，雲端治理程序和原則也不斷改變。 下列練習可協助您開始建置初始治理基礎。
-
-<!-- markdownlint-disable MD033 -->
 
 1. [方法](./methodology.md)：在雲端採用架構中建立對推動雲端治理方法的基本了解，以開始思考最終狀態解決方案。
 2. [基準測試](./benchmark.md)：評估您的目前狀態和未來狀態，以建立套用此架構的願景。
