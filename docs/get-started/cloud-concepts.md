@@ -7,19 +7,25 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 52024c5befeab2e2c10debdbcb766354ca3a1308
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e9106a89d19d06bc8c1c14290c65d9ed2387e097
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881218"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176492"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解及記錄基礎對齊決策
 
-雲端採用旅程可將許多商業、技術和組織的優點發揮到最大。 無論您想要完成什麼工作，如果您的旅程牽涉到雲端，則每個小組都應該瞭解一些初步決策。 當您完成本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)記錄這些決策。 範本可協助您快速將參與雲端採用生命週期的團隊成員上線。
+雲端採用旅程可將許多商業、技術和組織的優點發揮到最大。 無論您想要完成什麼工作，如果您的旅程牽涉到雲端，則每個小組都應該瞭解一些初步決策。 
 
 > [!NOTE]
 > 選取下列任何連結，可能會讓您在 Azure 適用的 Microsoft 雲端採用架構的目錄中彈跳，尋找您稍後將用來協助小組執行相關指引的基本概念。 將此頁面加入書簽，以便經常返回此檢查清單。
+
+## <a name="before-your-begin"></a>開始之前
+
+當您完成本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄我們的基本決策。 範本可協助您快速將參與雲端採用生命週期的團隊成員上線，方法是澄清雲端環境的設定和原因。
+
+如果您已有在 Azure 中執行的環境， [CAF 治理 Vizualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) 可以協助您加快檔的速度。 深入瞭解原則、RBAC、藍圖、訂用帳戶等等。 從收集的資料中，工具會在階層架構上提供可見度、建立租使用者摘要，以及在管理群組和訂用帳戶上建立細微的範圍深入解析。 您可以在雲端採用架構隨附的原始程式碼存放庫中找到此工具： https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer 。 
 
 ## <a name="step-1-understand-how-azure-works"></a>步驟1：瞭解 Azure 的運作方式
 

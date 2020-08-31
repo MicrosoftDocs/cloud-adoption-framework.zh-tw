@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 37fbe933ce03a4d0ad600033aaff522a279cd005
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c3d79966bf3d3477ff7b9a62f23e9bab9d7f5a8
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571808"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176441"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如同本指南的 [概述](./index.md) 中所述，Azure 伺服器管理服務套件涵蓋下列各方面：
 
-- 移轉
+- 遷移
 - 安全
 - 保護
 - 監視
@@ -27,7 +27,7 @@ ms.locfileid: "88571808"
 
 下列各節將簡短說明這些管理區域，並提供支援這些管理區域之主要 Azure 服務的詳細內容連結。
 
-## <a name="migrate"></a>移轉
+## <a name="migrate"></a>遷移
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估遷移的適用性。 Azure Migrate 完成評量之後，您可以使用 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 和 [Azure 資料庫移轉服務](/azure/dms/dms-overview) ，將您的內部部署機器遷移至 azure。
 
@@ -43,7 +43,7 @@ ms.locfileid: "88571808"
 
 最基本的資料保護是備份。 若要在伺服器遺失時加速復原程式，請不要只備份資料，也備份伺服器設定。 備份是一種有效的機制，可處理意外的資料刪除和勒索軟體攻擊。 [Azure 備份](/azure/backup) 可協助您在 Azure 和執行 Windows 或 Linux 的內部部署伺服器上保護您的資料。 如需備份可以做什麼和操作指南的詳細資訊，請參閱 [Azure 備份 service 總覽](/azure/backup/backup-overview)。
 
-透過備份復原可能需要很長的時間。 業界標準通常是一天。 如果工作負載需要硬體故障或資料中心中斷的商務持續性，請考慮使用資料複寫。 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 提供 vm 的連續複寫，此解決方案可提供最少的資料遺失。 Site Recovery 也支援數種複寫案例，例如複寫：
+如果工作負載需要即時商務持續性以進行硬體故障或資料中心中斷，請考慮使用資料複寫。 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 提供 vm 的連續複寫，此解決方案可提供最少的資料遺失。 Site Recovery 也支援數種複寫案例，例如複寫：
 
 - 在兩個 Azure 區域之間的 Azure Vm。
 - 在內部部署伺服器之間。
