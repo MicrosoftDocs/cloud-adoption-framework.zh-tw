@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2406e3671e6b4945a8fb87eb7ed29dbbbc0584ba
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566572"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275360"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "88566572"
 | 資源組織 | 隨著雲端採用規模的考慮，訂用帳戶設計和管理群組階層的考慮會影響治理、作業管理和採用模式。 | 治理 |
 | 治理專業領域 | 自動化安全性、治理和合規性政策的審核和強制執行。 | 治理 |
 | 作業基準 | 若要在雲端中進行穩定的進行中作業，需要有作業基準才能提供可見度、作業合規性，以及保護和復原功能。 | 管理 |
-| 業務持續性和災害復原 (BCDR) | BCDR 為可靠性和快速復原提供基礎。 | 管理 |
+| 業務持續性和災害復原 (BCDR) | 復原是讓應用程式順利運作的關鍵。 BCDR 是復原的重要元件。 BCDR 牽涉到透過備份來保護資料，以及保護應用程式免于透過災難復原中斷。 | 管理 |
 | 部署選項 | 調整最適合的工具和範本，以部署登陸區域和支援資源。 | 就緒 |
 
 ## <a name="next-steps"></a>後續步驟

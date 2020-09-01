@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f49bd903263cba2b659f121dddc2dcc70ff5ed16
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1c9c1447b30589a5bf1d4aaaa51b2b858b9c594f
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877104"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275404"
 ---
 <!-- cSpell:ignore NIST CISO COVID -->
 
@@ -159,7 +159,7 @@ ms.locfileid: "88877104"
 請注意，在安全性中使用 *信任* 字組可能會造成混淆。 本檔以兩種方式來參考它，以說明此概念的實用應用：
 
 - 「[零信任](https://www.microsoft.com/security/business/zero-trust)」是一種常見的安全性策略方法，其假設公司或內部網路有惡意的 (值得「零信任」 ) 並據以設計安全性。
-- [信任但驗證](https://wikipedia.org/wiki/trusts_but_verify) 是一種運算式，它會將兩個不同組織的本質共同合作，以達成共同的目標，儘管有其他潛在的分歧利益。 這可讓您在與企業的商業雲端提供者合作的早期階段中，精確地捕捉許多細節。
+- [信任但驗證](https://www.emazzanti.net/wp-content/uploads/2017/11/Trust-but-verify-Article-PDF.pdf) 是一種運算式，它會將兩個不同組織的本質共同合作，以達成共同的目標，儘管有其他潛在的分歧利益。 這可讓您在與企業的商業雲端提供者合作的早期階段中，精確地捕捉許多細節。
 
 雲端提供者及其實務和流程可能會負責符合合約和法規需求，而且可能會獲得或失去信任。 網路是一種 nonliving 連線，如果攻擊者使用它，就不會面對後果 (很像您無法保有道路或車輛) 的罪犯。
 

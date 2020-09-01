@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ab1ab07b056599ba920afc4491adc0e6e030676c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: bfbc6924d36a4e4b77a7a23902db18826b2a811b
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885094"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275343"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業規模的商務持續性和嚴重損壞修復
 
@@ -52,8 +52,6 @@ ms.locfileid: "88885094"
 
   - Azure ExpressRoute 的頻寬容量規劃。
 
-  - 配對的容錯移轉區域。
-
   - 發生區域、區域性或網路中斷時的流量路由。
 
 - 規劃和未計畫的容錯移轉。
@@ -70,7 +68,7 @@ ms.locfileid: "88885094"
 
 - 採用適用于 Azure 至 Azure 虛擬機器嚴重損壞修復案例的 Azure Site Recovery。 這可讓您跨區域複寫工作負載。
 
-  Site Recovery 為 VM 工作負載提供內建的平臺功能，以符合低 RPO/RTO 需求（透過即時複寫和復原自動化）。 此外，此服務也可讓您執行復原演練，而不會影響生產環境中的工作負載。
+  Site Recovery 為 VM 工作負載提供內建的平臺功能，以符合低 RPO/RTO 需求（透過即時複寫和復原自動化）。 此外，此服務也可讓您執行復原演練，而不會影響生產環境中的工作負載。 您可以使用 Azure 原則來啟用複寫，也可以審核 Vm 的保護。
 
 - 使用原生 PaaS 服務的嚴重損壞修復功能。
 
@@ -83,14 +81,6 @@ ms.locfileid: "88885094"
 - 使用多個區域和對等互連位置進行 ExpressRoute 連線。
 
   重複的混合式網路架構可在發生影響 Azure 區域或對等提供者位置的中斷時，協助確保不中斷的跨單位連線。
-
-- 當您針對組織的嚴重損壞修復配置選取位置時，請參閱 [Azure 區域配對](/azure/best-practices-availability-paired-regions) 。
-
-- 當您在規劃商務持續性和 DR 時，請使用 Azure 配對的區域。
-
-- Azure 會依序將計畫的系統更新彙總套件到配對的區域，而不是同時推出。 這有助於將停機時間、錯誤影響以及邏輯失敗的影響降至最低，而不會發生錯誤的更新。
-
-- 發生廣泛的中斷情況時，復原一個區域會在每一組內設定優先順序。 跨配對區域部署的應用程式保證會有其中一個區域以優先權復原。 如果在未配對的區域中部署應用程式，最糟的情況是修復可能會延遲。 偏好的區域可能是最後一個要復原的區域。
 
 - 避免針對生產和 DR 網站使用重迭的 IP 位址範圍。
 

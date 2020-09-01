@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8c6bffafb21375c145e41a63107621db62b5e067
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7fe5177de0ea21132e9c05846544e355047b7c72
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884312"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275387"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -199,6 +199,7 @@ ms.locfileid: "88884312"
 
 - [治理方法](../govern/index.md)：此方法會概述考慮公司原則和流程的程式。 然後，您可以建立在雲端企業採用工作間治理所需的專業領域。
 - [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及建立治理最小可行產品所需的部署加速專業領域， (MVP) 作為所有採用的基礎。
+- [治理基準測試](https://aka.ms/adopt/assess/govern)：找出組織目前治理狀態的差距。 取得個人化的基準報告，以及如何開始使用的策劃指引。
 
 **交付：**
 
