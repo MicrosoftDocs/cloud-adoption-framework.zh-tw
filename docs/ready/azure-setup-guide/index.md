@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 78e6d199c241e9f3623cdfd3240c9fe5d8f88953
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4ebb8dc70a373d2dd458c074689bf201d4a05f60
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884448"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275584"
 ---
 # <a name="azure-setup-guide-overview"></a>Azure 設定指南概觀
 
@@ -31,12 +31,12 @@ ms.locfileid: "88884448"
 
 > [!div class="checklist"]
 >
-> - **組織資源：** 設定管理階層以便對資源群組一致地套用存取控制、原則和合規性，並使用標記功能來追蹤相關資源。
-> - **管理存取：** 使用角色型存取控制來確定使用者只擁有其真正需要的權限。
-> - **管理成本和計費：** 識別訂用帳戶類型、了解計費方式，以及如何控制成本。
-> - **規劃治理、安全性和合規性：** 強制套用並自動執行原則和安全性設定，以協助您遵循適用的法律需求。
-> - **使用監視和報告：** 能夠查看各項資源，以尋找和修正問題、將效能最佳化，以及取得客戶行為的見解。
-> - **隨時得知 Azure 的最新動態：** 追蹤產品更新，以便主動進行變更管理。
+> - **[組織資源](./organize-resources.md)：** 設定管理階層以便對資源群組一致地套用存取控制、原則和合規性，並使用標記功能來追蹤相關資源。
+> - **[管理存取](./manage-access.md)：** 使用角色型存取控制來確定使用者只擁有其真正需要的權限。
+> - **[管理成本和計費](./manage-costs.md)：** 識別訂用帳戶類型、了解計費方式，以及如何控制成本。
+> - **[規劃治理、安全性和合規性](./govern-org-compliance.md)：** 強制套用並自動執行原則和安全性設定，以協助您遵循適用的法律需求。
+> - **[使用監視和報告](./monitoring-reporting.md)：** 能夠查看各項資源，以尋找和修正問題、將效能最佳化，以及取得客戶行為的見解。
+> - **[隨時得知 Azure 的最新動態](./staying-current.md)：** 追蹤產品更新，以便主動進行變更管理。
 
 ::: zone target="docs"
 

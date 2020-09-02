@@ -9,20 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d5c1bd2c96b7154956f37960c345d2a2009fa4bc
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572896"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885944"
 ---
-<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+<!-- cSpell:ignore profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources-effectively"></a>有效地組織 Azure 資源
 
 組織雲端式資源對於保護、管理和追蹤工作負載相關的成本而言至關重要。 若要組織您的資源，請定義管理群組階層、遵循妥善考慮的命名慣例，並套用資源標記。
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="azure-management-groups-and-hierarchy"></a>[Azure 管理群組和階層](#tab/AzureManagementGroupsAndHierarchy)
 
@@ -161,8 +161,8 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 您也可以將標記用於其他許多項目。 常見使用案例包括：
 
-- **中繼資料和文件：** 系統管理員套用 `projectowner` 之類的標記，即可輕易查看其所處理資源的相關詳細資料。
-- **自動化：** 您可能有定期執行的指令碼，其會根據 `shutdowntime` 或 `deprovisiondate` 等標記值來採取動作。
+- **中繼資料和文件：** 系統管理員套用 `ProjectOwner` 之類的標記，即可輕易查看其所處理資源的相關詳細資料。
+- **自動化：** 您可能有定期執行的指令碼，其會根據 `ShutdownTime` 或 `DeprovisionDate` 等標記值來採取動作。
 - **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理和計費中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。

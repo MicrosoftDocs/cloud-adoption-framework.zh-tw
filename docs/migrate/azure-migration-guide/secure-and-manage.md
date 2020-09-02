@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: afde995e27d37114727fafa540f0f1232c49e8b3
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 92d625da9da3e6953cf5502f4d7e5e7adb055d41
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848120"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884771"
 ---
-<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+<!-- markdownlint-disable MD024 DOCSMD001 -->
 
 # <a name="secure-and-manage"></a>保護及管理
 

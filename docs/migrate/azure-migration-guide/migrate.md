@@ -9,20 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848188"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885026"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
 在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到已完成狀態。 您將探索原生工具、協力廠商工具和專案管理工具。
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="native-migration-tools"></a>[原生移轉工具](#tab/Tools)
 
@@ -160,8 +158,6 @@ Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cos
 如需詳細資訊，請參閱
 
 - [Azure Cosmos DB 資料移轉工具](/azure/cosmos-db/import-data)
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="third-party-migration-tools"></a>[第三方移轉工具](#tab/third-party-tools)
 

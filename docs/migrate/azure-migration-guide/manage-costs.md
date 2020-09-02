@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570448"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885009"
 ---
-<!-- cSpell:ignore bandersmsft -->
-
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
 無論我們在技術小組中的角色為何，雲端都會對我們的工作方式帶來一些改變。 成本就是這種改變的絕佳範例。 在過去，只有財務和 IT 領導階層才會關心 IT 資產的成本 (基礎結構、應用程式和資料)。 雲端可讓每一位 IT 成員進行決策，並做出為使用者提供更佳支援的決策。 不過，伴隨著這種能力的責任是，在做出這些決策時必須要有成本意識。
@@ -34,7 +32,7 @@ ms.locfileid: "88570448"
 
 要完成本文所述的程序，可能還需要與 IT 經理、財務部門或企業營運應用程式擁有者合作。
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="estimate-vm-costs-prior-to-migration"></a>[在移轉前預估 VM 成本](#tab/EstimateVMCosts)
 

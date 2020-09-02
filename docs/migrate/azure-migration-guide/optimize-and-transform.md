@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 29bb9f2e21049c00ae125a92d84f168f4261e88a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: bf5a02b6996c5ff71d4c12041142655223c5cce8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570295"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884958"
 ---
-<!-- markdownlint-disable MD025 DOCSMD001 -->
+<!-- markdownlint-disable DOCSMD001 -->
 
 # <a name="release-workloads-test-optimize-and-handoff"></a>發行工作負載 (測試、最佳化和遞交)
 

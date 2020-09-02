@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6341f2e227b24416000479066e63a5ebf136927c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: bd0ab336f865828a5bca971a76c3c49a8c45243a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568068"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883020"
 ---
 # <a name="empower-adoption"></a>實現採用
 
@@ -67,9 +67,6 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone target="chromeless"
 
-<!-- docsTest:ignore "Azure DevOps Projects" -->
-<!-- markdownlint-disable DOCSMD001 -->
-
 #### <a name="action"></a>動作
 
 若要建立 DevOps 專案：
@@ -79,8 +76,6 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 3. 選取 [執行階段、架構和服務]。
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
-
-<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 
@@ -117,7 +112,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 對於每位企業領導人來說，其優先要務就是激發客戶體驗和企業營運應用程式的創新。 無論您是要建置 Web、行動、IoT 還是混合實境體驗，創新都是組織未來能否成功的關鍵。 為了大規模創新，組織必須專注於以可組合的服務形式，來包裝並傳遞其獨特的商業價值，讓合作夥伴和員工可以輕鬆且有效率地參與共享價值的產生過程。
 
-<!-- docsTest:ignore "spark and scale" -->
+<!-- docsTest:casing "spark and scale innovation" -->
 
 Azure 有獨特的供應項目，可協助您在組織中引發大規模創新。 為了推動更多創新，現今的專業開發人員可以建立應用程式和建置組塊，讓組織中的其他專家能夠在可靠的基礎上建置應用程式。 透過 Azure，他們可以取得專家團隊支援的全面安全性，以及獲得深受企業、政府和新創公司信任的主動合規性。
 
@@ -132,6 +127,8 @@ LiveOps 也有助於讓資料變得人性化。 LiveOps 方法會讓資料變得
 ### <a name="liveops-transition"></a>LiveOps 轉換
 
 舉例來說，今日擁抱 LiveOps 的產業就是遊戲開發業。 現今的遊戲都是具代表性的 LiveOps 應用程式。 遊戲產業已經歷過一場寧靜革命，從生命週期以小時計的包裝商品，轉換成生命週期以年計的活躍社群。 由於玩家人數超過 20 億人，每年有數萬款新遊戲問世，因此遊戲開發人員轉為擁抱 LiveOps，以便能與其遊戲客群有更好的互動，並一直留住這些玩家。 透過持續與玩家互動才能創新，包括內容更新、特殊活動、促銷和優惠。
+
+<!-- cSpell:ignore playfab -->
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 
