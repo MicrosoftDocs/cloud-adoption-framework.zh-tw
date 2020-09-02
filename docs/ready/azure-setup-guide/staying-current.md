@@ -9,25 +9,21 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8af5a34e368d6ffe0774e7437e2fc62e21fa3453
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574460"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885893"
 ---
-<!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
-<!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
+<!-- docsTest:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
+<!-- cSpell:ignore endjin AzAdvertizer -->
 
 # <a name="stay-current-with-azure"></a>隨時得知 Azure 的最新動態
 
 如 Azure 這類的雲端平台，其變化速度比許多組織慣常的速度更快。 此種變更步調表示組織必須讓成員和程序適應新節奏。 如果您負責協助貴組織隨時掌握變更，您有時可能會覺得不堪負荷。 本節中所列的資源可協助您保持最新狀態。
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="top-resources"></a>[重要資源](#tab/TopResources)
-
-<!-- markdownlint-enable MD025 -->
 
 下列資源可協助您掌握 Azure 的最新資訊：
 
@@ -37,11 +33,7 @@ ms.locfileid: "88574460"
 - **服務專屬部落格：** 許多個別 Azure 服務也會發佈部落格，方便您追蹤您所依賴的服務。 透過 Web 搜尋來尋找您感興趣的部落格。
 - **Azure Info Hub：** 非官方的 [Azure Info Hub](https://azureinfohub.azurewebsites.net) 匯集了這裡所列的大部分資源。 請遵循個別服務的連結，以取得詳細資訊並尋找服務專屬部落格。 透過 [Azure Info Hub RSS 摘要](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure)來訂閱。 \*
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="additional-resources"></a>[其他資源](#tab/AdditionalResources)
-
-<!-- markdownlint-enable MD025 -->
 
 如需可協助您隨時得知 Azure 主題的更深入內容，請檢閱以下資源：
 

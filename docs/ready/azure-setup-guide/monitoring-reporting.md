@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 434f4df0d49ab6ca5085518242da684a1bcb3060
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 192120d7c909c9907a649a66c93c660693d41de8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574494"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877240"
 ---
-<!-- cSpell:ignore timleyden tileyden -->
-
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 
 Azure 提供許多服務，這些服務可共同提供一個全方位的解決方案，讓您從應用程式和支援這些服務的 Azure 資源收集遙測、加以分析並採取行動。 此外，這些服務可延伸至監視重要的內部部署資源，以提供混合式監視環境。
