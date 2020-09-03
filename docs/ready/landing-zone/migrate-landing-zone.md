@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c85aec77b5d2e264ba6bc06fcce135125f82573e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3777dd0cfebba040dd42db3229a925856971947e
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574358"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427819"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>在 Azure 中部署移轉登陸區域
 
@@ -62,7 +62,7 @@ ms.locfileid: "88574358"
 若要加快治理專業領域的平行開發，請參閱 [管理方法](../../govern/index.md) ，並考慮部署 [CAF 基礎藍圖](./foundation-blueprint.md) ，以及 CAF 遷移登陸區域藍圖。
 
 > [!WARNING]
-> 當治理專業領域成熟時，可能需要重構。 可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。
+> 當治理專業領域成熟時，可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。
 
 ### <a name="operations-baseline"></a>作業基準
 
@@ -97,7 +97,7 @@ ms.locfileid: "88574358"
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 移轉工具              | 將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。                | [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | 記錄和監視       | 將會布建 Operational insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
-| Network (網路)                      | 將會使用閘道、防火牆、跳躍箱和登陸區域的子網來建立虛擬網路。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
+| 網路                      | 將會使用閘道、防火牆、跳躍箱和登陸區域的子網來建立虛擬網路。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) |
 | 原則                       | 此藍圖目前會假設未套用任何 Azure 原則。                        |                                                                                                                                                                                                                                                                                       |
 | 訂用帳戶設計          | N/A-專為單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |

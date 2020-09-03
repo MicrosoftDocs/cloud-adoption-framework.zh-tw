@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 01e95d7d2b8126903b4fe0bd8bbdbaa34f6fd5c6
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885553"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427802"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -20,14 +20,14 @@ ms.locfileid: "88885553"
 
 ## <a name="strategy"></a>策略
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
 
 ## <a name="plan"></a>計畫
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
@@ -35,7 +35,7 @@ ms.locfileid: "88885553"
 
 ## <a name="ready"></a>就緒
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [就緒檢查清單](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | 使用此檢查清單來準備您的環境以供採用，包括準備您的第一個遷移登陸區域、將藍圖個人化，以及將其擴充。 |
 | [命名和標記慣例追蹤範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) | 記錄有關命名和標記標準的決策，以確保一致性並減少上線時間。 |
@@ -46,7 +46,7 @@ ms.locfileid: "88885553"
 
 ## <a name="govern"></a>治理
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [治理基準評估](https://cafbaseline.com) | 識別您目前的狀態與業務優先順序之間的差異，並取得適當的資源以利消除這些差異。 |
 | [CAF &nbsp; 基礎 &nbsp; 藍圖](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 輕量的初始治理基礎，以提供有關 Azure 治理工具的實際操作經驗。 |
@@ -56,10 +56,12 @@ ms.locfileid: "88885553"
 | [身分識別基準專業範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于身分識別需求。 |
 | [資源一致性專業人員範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于資源一致性。 |
 | [安全性基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于安全性基準。 |
+| [Azure 治理 Vizualizer-AzGovViz](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz 是一個 PowerShell 腳本，可逐一查看 Azure 租使用者管理群組階層至訂用帳戶層級。 它會捕捉大部分相關的 Azure 治理功能，例如 Azure 原則、RBAC 和藍圖。 從收集的資料 AzGovViz 會在您的階層架構上提供可見度、建立租使用者摘要，以及針對管理群組和訂用帳戶建立細微的範圍深入解析。 |
+
 
 ## <a name="manage"></a>管理
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [Microsoft Azure 架構完善的檢閱](/assessments/?id=azure-architecture-review) | 這項線上評量將有助於定義工作負載的特定架構和作業選項。 |
 | [最佳 &nbsp; 做法 &nbsp; 來源程式 &nbsp; 碼](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | 此可部署的原始程式碼可補充並加速採用 Azure 伺服器管理服務的最佳做法。 使用此原始程式碼可快速啟用作業管理，並建立作業基準。 |
@@ -67,6 +69,6 @@ ms.locfileid: "88885553"
 
 ## <a name="organize"></a>組織
 
-| 資源 | 描述 |
+| 資源 | 說明 |
 |----------|-------------|
 | [跨小組 RACI 圖](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) | 下載並修改 RACI 試算表範本，以追蹤一段時間的組織結構決策。 |
