@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d8e25dfaa7f39eb2c647fbe3a8a7c0f1d3d1fcd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568119"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883173"
 ---
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
 
@@ -114,7 +114,7 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="action"></a>動作
 
-Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops)。
+Azure Board 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站。 開始使用 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops)。
 
 ::: zone-end
 
@@ -126,7 +126,7 @@ Azure Boards 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網�
 
 若要建立 DevOps 專案：
 
-1. 移至 [Azure DevOps Projects]。
+1. 移至 [Azure DevOps 專案]。
 2. 選取 [建立 DevOps 專案]。
 3. 選取 [執行階段、架構和服務]。
 

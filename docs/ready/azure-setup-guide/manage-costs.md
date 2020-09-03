@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 41abba9cadeca1951f6316e49a0d2d58c6ef6569
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 230d5d4927033fe93650b19c152b8db3ab4b70f8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574511"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884397"
 ---
-<!-- cSpell:ignore dchimes -->
-
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>管理 Azure 資源的成本和計費
 
 成本管理是有效規劃和控制商務相關成本的流程。 成本管理工作通常是由財務、管理和應用程式小組執行。 Azure 成本管理和計費可協助您在規劃時考量成本。 它也可協助您有效地分析成本，並採取動作來將雲端費用最佳化。
@@ -68,7 +66,7 @@ Azure 成本管理和計費提供數種方式來協助您預測和管理成本�
 
 若要深入了解，請參閱：
 
-- [Azure 計費與成本管理文件](/azure/billing)
+- [Azure 成本管理和計費文件](/azure/billing)
 - [雲端採用架構：跨業務單位、環境或專案追蹤成本](../azure-best-practices/track-costs.md)
 - [雲端採用架構：成本管理專業領域](../../govern/cost-management/index.md)
 

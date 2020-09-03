@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: aba505bea5b8bafc8a8d49a04c2a0086363d9cc4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b0536b627d9039f348f1c069bb1ae5ed4e4e74a6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567864"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882986"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -34,11 +34,7 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 > - [Azure SQL Edge](/azure/azure-sql-edge/overview)
 > - [IoT 隨插即用](/azure/iot-pnp/overview-iot-plug-and-play)
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="global-scale-iot-service"></a>[全球規模的 IoT 服務](#tab/IoTHub)
-
-<!-- markdownlint-enable MD025 -->
 
 架構出解決方案來以數十億規模的 IoT 裝置執行雙向通訊。 使用現成可用的裝置到雲端遙測資料來了解裝置的狀態，並且只要透過設定就能定義傳給其他 Azure 服務的訊息路由。 您可利用雲端到裝置的訊息，可靠地將命令及通知傳送至連接的裝置，並透過通知回條來追蹤訊息傳遞。 而您將視需要自動重新傳送裝置訊息，以便配合間歇性連線。
 
@@ -92,8 +88,6 @@ Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服�
 
 ::: zone-end
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 建置可重複使用、具有高度擴充性、可感知空間的體驗，讓實體和數位世界之間的串流資料彼此連結。 使用實體環境的全方位模型來增強客戶參與。 產生空間智慧圖形，用模型來呈現人員、空間和裝置之間的關聯性與互動情形。 從實體空間查詢資料，而不是從各不相同的感應器查詢。
@@ -128,8 +122,6 @@ Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服�
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="location-intelligence"></a>[位置智慧](#tab/AzureMaps)
 

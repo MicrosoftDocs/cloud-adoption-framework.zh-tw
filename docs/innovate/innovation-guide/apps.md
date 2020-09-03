@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5a874c26835b17e2aa30a2230af3afe79dfd6628
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848137"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883122"
 ---
-<!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
-
 # <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
 
 透過應用程式來創新包含兩個步驟，分別是將裝載於內部部署環境的現有應用程式現代化，以及使用容器或無伺服器技術建置雲端原生應用程式。 Azure 提供了 PaaS 服務 (例如，Azure App Service)，協助您輕鬆地將以 .NET、.NET Core、Java、Node.js、Ruby、Python 或 PHP 撰寫的現有 Web 和 API 應用程式現代化，以便部署到 Azure 中。
@@ -184,7 +182,7 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 若要設定或監視 Azure Functions 部署：
 
 1. 移至 [函式應用程式]。
-2. 設定新的函數應用程式：選取 [新增] 並依照提示執行。
+2. 設定新的函數應用程式：選取 [新增]，然後遵循提示進行。
 3. 管理現有的函數應用程式：從清單中選取所需的函數應用程式。
 
 ::: zone target="chromeless"
@@ -206,7 +204,7 @@ Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript �
 若要設定或監視 Azure Logic Apps：
 
 1. 移至 [Logic Apps]。
-2. 設定新的邏輯應用程式：選取 [新增] 並依照提示執行。
+2. 設定新的邏輯應用程式：選取 [新增]，然後遵循提示進行。
 3. 管理現有的邏輯應用程式：從清單中選取所需的邏輯應用程式。
 
 ::: zone target="chromeless"

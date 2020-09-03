@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: be3f5c774d91bf0e6e45a068311b35d35f328ba5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e0be72ecfc2946aa39be439074733d604674134e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567881"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883003"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 

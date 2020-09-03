@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572029"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882612"
 ---
-<!-- cSpell:ignore WSUS getting started -->
+<!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
@@ -201,7 +201,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 ::: zone target="docs"
 
-1. 移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
+1. 在 Azure 入口網站中，移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
 1. 在 [版本] 方塊中輸入版本，例如 "1.0"。

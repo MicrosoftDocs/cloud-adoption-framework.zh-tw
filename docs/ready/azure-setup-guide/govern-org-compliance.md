@@ -9,17 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6b4e20d484bb055beaf6998e9aca6f97437217c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575225"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884465"
 ---
-<!-- cSpell:ignore tvuylsteke >
-
-<!-- markdownlint-disable MD024 MD025 -->
-
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
 在建立公司原則並規劃治理策略時，您可以使用工具和服務 (例如 Azure 原則、Azure 藍圖和 Azure 資訊安全中心) 來強制執行組織的治理決策並使其自動化。 開始治理規劃之前，請使用[治理基準測試工具](https://cafbaseline.com)來找出貴組織的雲端治理方法中可能出現的差距。 如需有關開發治理流程的詳細資訊，請參閱[管理方法](../../govern/index.md)。
@@ -54,9 +50,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-<!-- docsTest:ignore "Next : Artifacts" "Blueprints: Get started" "Blueprints: Blueprint definitions" -->
-
-1. 移至 [藍圖：開始使用](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
+1. 在 Azure 入口網站中，移至 [藍圖：開始使用](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted)。
 1. 在 [建立藍圖] 區段中，選取 [建立]。
 1. 篩選藍圖清單以選取適當的藍圖。
 1. 輸入 [藍圖名稱]，然後選取適當的 [定義位置]。
@@ -82,7 +76,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 ::: zone target="docs"
 
-1. 移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
+1. 在 Azure 入口網站中，移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖定義。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
 1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]。
