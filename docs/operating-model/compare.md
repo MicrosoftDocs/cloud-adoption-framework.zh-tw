@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 137a19423a5dd780abc552feb2a68ef11d8a11d5
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662263"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510578"
 ---
 # <a name="compare-common-cloud-operating-models"></a>比較常見的雲端作業模型
 
@@ -54,11 +54,11 @@ ms.locfileid: "88662263"
 
 ||分散式 ops |集中式 ops  |企業營運          |分散式 ops|
 |---------              |---------      |---------    |---------          |---------|
-|業務配合|[工作負載小組](../organize/cloud-adoption.md)|[集中式雲端策略](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|變數 [形成廣泛的雲端策略小組？](../get-started/team/cloud-strategy.md)|
-|[雲端作業](../organize/cloud-operations.md)|[工作負載小組](../organize/cloud-adoption.md)|[集中式 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|根據公事包分析-請參閱 [商務一致性](../manage/considerations/business-alignment.md) 和 [業務承諾](../manage/considerations/commitment.md)|
-|[雲端治理](../organize/cloud-governance.md)|[工作負載小組](../organize/cloud-adoption.md)|[集中式 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[多層控管](../govern/guides/complex/multiple-layers-of-governance.md)|
-|[雲端安全性](../organize/cloud-security.md)|[工作負載小組](../organize/cloud-adoption.md)|[安全性作業中心 (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md)  + [SOC](../organize/cloud-security-operations-center.md)|混合-請參閱 [定義安全性策略](../strategy/define-security-strategy.md)|
-|[雲端自動化和 DevOps](../organize/cloud-automation.md)|[工作負載小組](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md) 或 N/A|[CCoE](../organize/cloud-center-of-excellence.md)|根據公事包分析-請參閱 [商務一致性](../manage/considerations/business-alignment.md) 和 [業務承諾](../manage/considerations/commitment.md)|
+|**業務配合**|[工作負載小組](../organize/cloud-adoption.md)|[集中式雲端策略](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|變數 [形成廣泛的雲端策略小組？](../get-started/team/cloud-strategy.md)|
+|**[雲端作業](../organize/cloud-operations.md)**|[工作負載小組](../organize/cloud-adoption.md)|[集中式 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|根據公事包分析-請參閱 [商務一致性](../manage/considerations/business-alignment.md) 和 [業務承諾](../manage/considerations/commitment.md)|
+|**[雲端治理](../organize/cloud-governance.md)**|[工作負載小組](../organize/cloud-adoption.md)|[集中式 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[多層控管](../govern/guides/complex/multiple-layers-of-governance.md)|
+|**[雲端安全性](../organize/cloud-security.md)**|[工作負載小組](../organize/cloud-adoption.md)|[安全性作業中心 (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md)  + [SOC](../organize/cloud-security-operations-center.md)|混合-請參閱 [定義安全性策略](../strategy/define-security-strategy.md)|
+|**[雲端自動化和 DevOps](../organize/cloud-automation.md)**|[工作負載小組](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md) 或 N/A|[CCoE](../organize/cloud-center-of-excellence.md)|根據公事包分析-請參閱 [商務一致性](../manage/considerations/business-alignment.md) 和 [業務承諾](../manage/considerations/commitment.md)|
 
 ### <a name="accelerate-operating-model-implementation-in-azure"></a>加速 Azure 中的作業模型執行
 

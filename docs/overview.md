@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 59c4e0b28d36167f34e538d28f5944cb4002b342
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ffa91cb9b608db3cf92d72d2bc3b857344197f9d
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885723"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510476"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -29,8 +29,8 @@ ms.locfileid: "88885723"
 
 雲端採用架構彙集了 Microsoft 員工、合作夥伴和客戶的雲端採用最佳作法。 它提供一組工具、指引和敘述，協助塑造技術、業務和人員策略，以在採用工作期間推動所需的業務成果。 本指南適用于雲端採用生命週期的下列階段，可讓您在適當的時間輕鬆存取正確的指引。
 
-|  |  |  |  |  |
-|--|--|--|--|--|
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> | <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
+|--|--|--|--|
 | <br> ![策略圖示](./_images/icons/strategy.png) | <br> [策略](./strategy/index.md)： &nbsp; 定義 &nbsp; 商業 &nbsp; 理由 &nbsp; 和預期的採用結果。 | <br> ![規劃圖示](./_images/icons/plan.png) | <br> [方案](./plan/index.md)： &nbsp; &nbsp; 將可採取動作的 &nbsp; 採用 &nbsp; 方案與業務成果保持一致。 |
 | <br> ![就緒圖示](./_images/icons/ready.png)       | <br> [就緒](./ready/index.md)：準備雲端環境以進行已規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | <br> [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |
 | <br> ![創新圖示](./_images/icons/innovate.png) | <br> [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | <br> 治理[：管理](./govern/index.md)環境和工作負載。 |
