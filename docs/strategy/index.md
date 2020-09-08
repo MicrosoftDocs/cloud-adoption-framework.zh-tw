@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 84ec7f75ca3d6a1ab38fd82db6725a7d9aae4e97
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4a0e0a00a644d1034593752bafe453ecbba07815
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885876"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510561"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>開發雲端採用策略
 
@@ -20,7 +20,7 @@ ms.locfileid: "88885876"
 
 下列步驟可協助您有效率地記載業務策略。 此方法可協助您在跨功能模型中擷取目標業務價值，以推動採用工作。 然後，您可以將雲端採用策略對應至特定的雲端功能和業務策略，以達到所需的轉換狀態。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [定義並記錄您的動機](./motivations.md)：與關鍵專案關係人和高階主管會面，以記載雲端採用背後的動機。 |
 | <br> ![2](../_images/icons/2.png) | <br> [記錄業務成果](./business-outcomes/index.md)：讓積極的專案關係人和高階主管參與，以記載特定的業務成果。 |
