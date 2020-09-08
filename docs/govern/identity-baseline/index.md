@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3e6c28313353b38a160fc2881b11b07bd567376
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: fcd73b815150e32b2d7077ad12b1c45807d26491
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880249"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510306"
 ---
 # <a name="identity-baseline-discipline-overview"></a>身分識別基準專業領域概觀
 
@@ -37,7 +37,7 @@ ms.locfileid: "88880249"
 
 下列步驟提供在開發身分識別基準專業領域時所應考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論，並與組織內受影響的業務和 IT 小組討論，藉以建立管理身分識別相關風險所需的原則和程序。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png)   | <br> [身分識別基準專業領域範本](./template.md)：下載此範本以便記錄身分識別基準專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png)         | <br> [商務風險](./business-risks.md)：了解通常與身分識別基準專業領域相關聯的動機與風險。 |

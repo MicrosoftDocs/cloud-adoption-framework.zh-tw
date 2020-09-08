@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8867c16325b936b847355aba1ace2a99306bf173
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: be3c9b3781ac252e965a394e9fb35b2e91fca592
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877733"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510493"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -22,7 +22,7 @@ ms.locfileid: "88877733"
 
 為了讓您針對此階段的雲端採用生命週期做好準備，此架構建議您進行以下練習：
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [建立管理基準](./azure-management-guide/index.md)：定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。 |
 | <br> ![2](../_images/icons/2.png) | <br> [定義商務承諾](./considerations/business-alignment.md)：記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。 |

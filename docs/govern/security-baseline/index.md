@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b40a610bae3cd8af6b35dd8f95797c720b473f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d9267c51eb0237e92ed838979090926c82e69971
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879093"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510374"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
@@ -37,7 +37,7 @@ ms.locfileid: "88879093"
 
 下列步驟提供在開發安全性基準專業領域時所應考量的範例和可能選項。 使用每個步驟作為起點，在雲端治理小組中討論以及與組織內受影響的業務和 IT 和安全性小組討論，藉以建立管理安全性相關風險所需的原則和程序。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [安全性基準專業領域範本](./template.md)：下載此範本以記錄安全性基準專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與安全性基準專業領域建立關聯的動機與風險。 |

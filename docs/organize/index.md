@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 6b942705282204adaa9cdb7949091341392a121a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6f0c69b37f2f1409d0812701cb089092ae8af2d
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884907"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510527"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -21,7 +21,7 @@ ms.locfileid: "88884907"
 
 下列練習將協助引導建立登陸區域以支援雲端採用的程序。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [結構類型](#structure-type)：定義最適合您作業模型的組織結構類型。 |
 | <br> ![2](../_images/icons/2.png) | <br> [雲端功能](#understand-required-cloud-functions)：了解採用和操作雲端所需的雲端功能。 |

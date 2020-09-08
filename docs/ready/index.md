@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3dac2b3f604877651b9f70decf9c7712c201bfc8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 08386cc2dfbfffb73e93a97ceec8f0a075d00066
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574222"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510544"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>確定已對雲端採用方案準備好環境
 
@@ -20,7 +20,7 @@ ms.locfileid: "88574222"
 
 下列練習將協助引導您完成建立登陸區域以支援雲端採用的程序。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Azure 設定指南](./azure-setup-guide/index.md)：檢閱 Azure 設定指南，熟悉您需要用來建立登陸區域的工具和方法。 |
 | <br> ![2](../_images/icons/2.png) | <br> [Azure 登陸區域](./landing-zone/index.md)：選擇最適當的登陸區域選項，為您的環境建立以程式碼為主的起點。 |

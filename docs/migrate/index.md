@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: e84bba82e088c1326ecabf420866fe3ed3240660
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 56052fb7f9e4837d821637e5b7525521a7737bdb
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885961"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510340"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -22,7 +22,7 @@ ms.locfileid: "88885961"
 
 為了對此階段的雲端採用生命週期做好準備，建議您執行下列作業：
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [遷移您的第一個工作負載](./azure-migration-guide/index.md)：使用 Azure 移轉指南，熟悉 Azure 原生工具和移轉方法。 |
 | <br> ![2](../_images/icons/2.png) | <br> [移轉案例](./azure-best-practices/index.md)：使用額外的移轉工具和方法來處理其他的移轉案例。 |

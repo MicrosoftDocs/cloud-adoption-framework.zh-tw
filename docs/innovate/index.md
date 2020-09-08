@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4c037670f19a8a448f3a8632929bca5f81e92d2b
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: ecb15716089ac4e94bc671e99442170f4f8b184f
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662365"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510510"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 
@@ -22,7 +22,7 @@ ms.locfileid: "88662365"
 
 為了讓您針對此階段的雲端採用生命週期做好準備，此架構建議您進行以下練習：
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [商業價值共識](./business-value.md)：在您決定技術解決方案之前，請先找出新的創新可帶動商業價值的方式。 將該價值對應至您的雲端策略。 在此累加方法中，商業價值會以假設的客戶需求來呈現。 |
 | <br> ![2](../_images/icons/2.png) | <br> [Azure 創新指南](./innovation-guide/index.md)：Azure 包含可加快部署創新解決方案的雲端工具。 視您的假設而定，您可以考慮各種不同的工具組合。 建議您使用基本工具來建立最簡可行產品 (MVP)。 |

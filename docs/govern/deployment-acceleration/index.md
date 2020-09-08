@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d255fd0b4b7727ea72ee7219673fb91632f03568
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1bc95e74444485a86989c38133943c7cbd7201cc
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883530"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510391"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -37,7 +37,7 @@ ms.locfileid: "88883530"
 
 下列步驟可協助您定義治理原則，以便在雲端環境中控制資源的部署與設定。
 
-|  |  |
+| <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [部署加速專業領域範本](./template.md)：下載此範本以記錄部署加速專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與部署加速專業領域相關聯的動機與風險。|
