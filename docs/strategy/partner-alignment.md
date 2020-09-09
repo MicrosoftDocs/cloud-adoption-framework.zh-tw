@@ -7,24 +7,24 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 50434a66069543a02151ada0d7646c1e57c52e6f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 21124dcb5d51d47c6698f83c47ea7124db6cd2a5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885791"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605281"
 ---
 <!-- cSpell:ignore MSPs -->
 
 # <a name="strategy-for-partner-alignment"></a>合作夥伴調整策略
 
-雲端採用架構將雲端採用作為自助活動。 目標是要讓每個小組都能透過標準化的方法來支援採用。 實際上，我們不安全地假設自助方法對所有採用活動都已足夠。
+雲端採用架構將雲端採用作為自助活動。 目標是要讓每個小組都能透過標準化的方法來支援採用。 在實務上，您無法假設自助方法對所有採用活動都已足夠。
 
 成功的雲端採用方案通常至少需要一個層級的支援。 某些雲端採用工作可能需要多個合作夥伴的支援以共同合作，以達成共同目標。
 
 ## <a name="steps-to-align-the-partnership-strategy"></a>協調合作策略的步驟
 
-在採用初期的策略階段，開始調整您的合作關係策略相當重要。 下列步驟可協助您在採用生命週期的後續階段中移除障礙。
+在採用的策略階段，開始調整您的合作關係策略相當重要。 下列步驟可協助您在採用生命週期的後續階段中移除障礙。
 
 1. 開始瞭解支援需求。
 1. 請考慮符合您文化和需求的合作關係選項。

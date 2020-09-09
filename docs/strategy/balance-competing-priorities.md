@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a2ef9ca5762622a4c1b1edca07306e5cdb2ed0e0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: fb7cebc5a5382c33d42413a84bb8fdbd7fb8bded
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885281"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605248"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 
@@ -71,7 +71,7 @@ ms.locfileid: "88885281"
 
 **最小範圍：** 現成的方法會概述從快速採用長期作業的直接途徑。 這種方法是從啟用環境重構的工具基本簡介開始。 根據這些工具和環境需求，系統會引導客戶選擇預先定義的登陸區域 (每個都使用基礎結構即程式碼模型) 來傳遞。 然後，您可以在雲端採用過程中重構該程式碼，以改善作業、安全性和管理做法。
 
-<!-- docutune:ignore "Govern and Manage methodologies" -->
+<!-- docutune:casing "Govern and Manage methodologies" -->
 
 **擴充的範圍範例：** 對於採用計畫在24個月內進行長期目標 (的團隊而言) 若要裝載 **1000 以上的資產 (應用程式、基礎結構或資料資產) 在雲端中**，建議使用更健全的登陸區域觀點。 在這些情況下，在初始登陸區域交談期間應考慮治理和管理方法。 不過，這種更深入的考慮通常會在雲端採用方案中增加數周或數個月。 為了將對業務成果的影響降到最低，採用小組應該平行地試驗雲端中的實際工作負載，以建立更成熟的登陸區域和中央架構解決方案。
 

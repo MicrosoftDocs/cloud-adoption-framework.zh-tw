@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e75d807f36d6ce7fb30de4f7104d096f243f87c4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 56ee70ac6d695159f2baeee50b49decd1cb08543
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885247"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605110"
 ---
 # <a name="balance-the-portfolio"></a>平衡組合
 
@@ -22,18 +22,18 @@ ms.locfileid: "88885247"
 
 平衡組合的本質具有策略性。 因此，本文所採用的方法也同樣具有策略性。 本文假設讀者已評估現有的 [數位資產](../digital-estate/index.md) ，或已開始該程式，以促進資料驅動決策的策略。 此方法的目標是要協助評估工作負載，以透過定性問題和組合改善來確保組合之間有適當的平衡。
 
-<!-- cSpell:ignore 2M CSAT -->
+<!-- docutune:casing 2M -->
 
 ### <a name="document-business-outcomes"></a>記錄業務成果
 
 在平衡組合之前，請務必記錄並分享推動雲端遷移工作的業務成果。 下表可協助記載及分享所需的業務成果。 請務必注意，大部分企業都會一次追求數個成果。 此練習的重要性是要釐清與雲端移轉工作最直接相關的成果：
 
 | 結果 | 測量依據 | 目標 | 時間範圍 | 此工作的優先順序 |
-|---------|---------|---------|---------|---------|
-| 降低 IT 成本     | 資料中心預算         | 減少 $ 2m 美元     | 12 個月         | #1         |
-| 資料中心的退出     | 離開資料中心         | 2個資料中心         | 6 個月         | #2         |
-| 提升業務敏捷性     | 改善上市時間  | 將部署時間減少 6 個月         | 2 年         | #3        |
-| 改善客戶體驗     | 客戶滿意度 (csat)          | 改善10%         | 12 個月         | #4         |
+|--|--|--|--|--|
+| 降低 IT 成本 | 資料中心預算 | 減少 $ 2M 美元 | 12 個月 | #1 |
+| 資料中心的退出 | 離開資料中心 | 2個資料中心 | 6 個月 | #2 |
+| 提升業務敏捷性 | 改善上市時間 | 將部署時間減少 6 個月 | 2 年 | #3 |
+| 改善客戶體驗 | 客戶滿意度 (CSAT)  | 改善 10% | 12 個月 | #4 |
 
 > [!IMPORTANT]
 > 上表是虛構的範例，請勿將其用來設定優先順序。 在許多情況下，您可以藉由將成本節省成本放在客戶體驗上，來將此資料表視為反模式。
