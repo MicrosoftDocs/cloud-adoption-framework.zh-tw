@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8a76d0bec6958bbed8abac2f0defe50a8233a480
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 37f7186e1d74dc9e3995bffbe775bb2111156f2a
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570227"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603626"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 
@@ -36,7 +36,7 @@ ms.locfileid: "88570227"
 
 ## <a name="next-steps"></a>後續步驟
 
-估計成本之後，即可開始進行移轉。 不過，在開始進行任何移轉之前，最好先檢閱[合作關係和支援選項](./partnership-options.md)。
+估計成本之後，即可開始進行移轉。 不過，在開始進行任何移轉之前，最好先檢閱合作關係和支援選項。
 
 > [!div class="nextstepaction"]
-> [了解合作關係選項](./partnership-options.md)
+> [了解合作關係和支援選項](./partnership-options.md)

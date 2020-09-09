@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44aa46e91059f461a761f56ea3f69dbfcf3383bd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 986c2398b1bf0b00b88d853d8cec072287bd4010
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882833"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604789"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：最佳作法說明
 
@@ -25,9 +25,7 @@ ms.locfileid: "88882833"
 
 快速採用治理和公司原則是可行的，因為有一些簡單的原則和雲端控管工具。 這些是在任何治理程式中的前三個專業領域。 本文將進一步說明每個專業領域。
 
-<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
-
-為了建立起點，本文將討論身分識別基準、安全性基準，以及建立治理 MVP 所需的部署加速專業領域（將作為所有採用的基礎）所需的高階策略。
+為了建立起點，本文將討論安全性基準、身分識別基準，以及建立治理 MVP 所需的部署加速專業領域（將作為所有採用的基礎）所需的高層級策略。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 

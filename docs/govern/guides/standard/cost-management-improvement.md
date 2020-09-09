@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 496065642e8bbd212cc9cf5a24597e489b24a6ca
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880504"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604806"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準企業治理指南：改善成本管理專業領域
 
@@ -21,7 +21,7 @@ ms.locfileid: "88880504"
 
 ## <a name="advancing-the-narrative"></a>前進敘述
 
-採用已成長超越治理 MVP 中定義的成本承受度指標。 這樣很好，因為它與 "DR" 資料中心的移轉相對應。 花費的增加現在可將雲端治理小組的時間投入時間。
+採用已成長超越治理 MVP 中定義的成本承受度指標。 這是很好的做法，因為它與 DR 資料中心的遷移相對應。 花費的增加現在可將雲端治理小組的時間投入時間。
 
 ### <a name="changes-in-the-current-state"></a>處於目前狀態的變更
 

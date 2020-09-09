@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 712da48bc19fa7db436b3e6fbd29fc549633ec69
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 72435c49c195c7972da348080136ab02ed2e5375
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878532"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604449"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>打造創新商業價值的共識
 
@@ -43,7 +43,7 @@ ms.locfileid: "88878532"
 
 如果有兩個小組在30分鐘內無法回答這四個問題，則對齊和下列各節中的考慮可能會對這項工作和其他專案造成顯著的影響。 請特別注意下列各節。
 
-<!-- docsTest:casing "Strategy, Plan, Ready, and Adopt" -->
+<!-- docutune:casing "Strategy, Plan, Ready, and Adopt" -->
 
 ## <a name="address-the-big-picture-first"></a>先處理最大的圖片
 

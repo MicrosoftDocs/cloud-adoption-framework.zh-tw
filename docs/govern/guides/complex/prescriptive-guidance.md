@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 64c3b510f07f7bee7648a00615f0dc45947cb9df
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8d3562e210461882e363707ec708275e85926a4b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880793"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604873"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>適用于複雜企業的治理指南：說明的最佳作法
 
@@ -25,9 +25,7 @@ ms.locfileid: "88880793"
 
 快速採用治理和公司原則是可行的，因為有一些簡單的原則和雲端控管工具。 在任何治理程序中都有要達成的三個治理專業領域，而這些是第一個。 本文將進一步說明每個專業領域。
 
-<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
-
-為了建立起點，本文將討論身分識別基準、安全性基準，以及建立治理 MVP 所需的部署加速專業領域（將作為所有採用的基礎）所需的高階策略。
+為了建立起點，本文將討論在安全性基準、身分識別基準，以及建立治理 MVP 所需的部署加速專業領域背後的高層級策略。 MVP 作為所有雲端採用的基礎。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
 
@@ -91,7 +89,7 @@ ms.locfileid: "88880793"
   - SLA
   - 環境
   - 應用程式原型
-  - Application
+  - 應用程式
   - 應用程式擁有者
 - 這些值以及與已部署資產相關聯的 Azure 管理群組和訂用帳戶，將會推動治理、營運和安全性決策。
 

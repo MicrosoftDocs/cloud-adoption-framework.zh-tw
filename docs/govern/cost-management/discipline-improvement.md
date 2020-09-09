@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 86dd5776e72d4fa0d4e6ea9c3fbf510f8d0db4ad
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dac79c954a72aeb72002a5583dce64c85a065fb1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883785"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604983"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 
@@ -21,9 +21,9 @@ ms.locfileid: "88883785"
 
 本文將概述貴公司可執行來開發成本管理專業領域並使其臻至成熟的潛在工作。 這些工作可細分為執行雲端解決方案的規劃、建立、採用和操作階段。 然後會反復查看這些工作，以允許開發 [增量方法來進行雲端治理](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![四個採用階段](../../_images/govern/adoption-phases.png)
+![雲端治理增量方法的階段。](../../_images/govern/adoption-phases.png)
 
-*圖1：雲端治理增量方法的採用階段。*
+_圖1：漸進式雲端治理方法的階段。_
 
 沒有任何單一文件可以滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定要投入這些活動多少錢，以改善成本管理專業領域的功能。
 
@@ -107,7 +107,7 @@ ms.locfileid: "88883785"
 
 ## <a name="next-steps"></a>後續步驟
 
-既然您已瞭解雲端成本治理的概念，請參閱 [成本管理專業領域的最佳做法](./best-practices.md) ，以找出降低整體支出的方法。
+既然您已瞭解雲端成本治理的概念，請參閱成本管理專業領域的最佳做法，以找出降低整體支出的方法。
 
 > [!div class="nextstepaction"]
-> [成本管理最佳做法](./best-practices.md)
+> [成本管理專業領域的最佳作法](./best-practices.md)

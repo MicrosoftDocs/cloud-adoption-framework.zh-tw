@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dd16185c53aaa678f885508e47ef897118a5d7f3
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884788"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605178"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -194,7 +194,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>開始使用
+## <a name="take-action"></a>採取動作
 
 檢查設定之後，您可以部署設定，就像部署 Terraform 環境一樣。 建議您使用 rover，這是可讓您從 Windows、Linux 或 macOS 進行部署的 Docker 容器。 您可以開始使用 [登陸區域](https://github.com/azure/caf-terraform-landingzones)。
 

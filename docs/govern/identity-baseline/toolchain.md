@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1caae91280f2782a4bd4e5a3c4a8ad331dd9a03
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 835cb15479de8cc0303a7dd4c1298ab5f8e606a2
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880045"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604709"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure 中的身分識別基準工具
 

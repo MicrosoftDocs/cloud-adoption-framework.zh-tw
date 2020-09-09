@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 71022fd795e2cecff34c238a2e0978d3242cb037
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3d799dd4d5d1821a8d914ad5ad4daae631d65df6
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884550"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604611"
 ---
 # <a name="what-are-ai-applications"></a>什麼是 AI 應用程式？
 
@@ -52,7 +52,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 | 服務名稱 | 服務說明 |
 |--|--|
-| [語言理解 (LUIS)](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
+| [Language Understanding (LUIS) ](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
 | [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker 可讓您從半結構化內容中建立問答服務。 |
 | [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析針對情感分析、關鍵字組解壓縮和語言偵測的原始文字提供自然語言處理。 |
 | [翻譯工具](/azure/cognitive-services/translator/) | Translator 以近乎即時的方式提供以電腦為基礎的文字轉譯。 |
@@ -77,7 +77,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 認知服務提供可在雲端或內部部署環境中部署的容器。 深入瞭解 [認知服務容器](/azure/cognitive-services/cognitive-services-container-support)。
 
-<!-- docsTest:casing "HIPAA BAA" "CSA STAR" -->
+<!-- docutune:casing "HIPAA BAA" "CSA STAR" -->
 
 ### <a name="certifications-and-compliance"></a>認證和合規性
 

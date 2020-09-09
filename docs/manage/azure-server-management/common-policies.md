@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e4829581a642a3fab13d461c98e423a5f777f2b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0b82f70aa7d7e2e0e9553f586b66a6dd8673b1c5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567439"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604072"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
@@ -71,7 +71,7 @@ Azure 提供各種不同的 VM 大小來支援各種工作負載。 若要控制
 
 ### <a name="deploy-antimalware"></a>部署反惡意程式碼
 
-您可以使用此原則，將具有預設設定的 Microsoft _IaaSAntimalware_ 擴充功能，部署到未受反惡意程式碼保護的 vm。
+您可以使用此原則，將具有預設設定的 Microsoft Antimalware 擴充功能部署到未受反惡意程式碼保護的 Vm。
 
 原則 GUID 為 `2835b622-407b-4114-9198-6f7064cbe0dc` 。
 
@@ -89,7 +89,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 瞭解其他可用的伺服器管理工具和服務。
 

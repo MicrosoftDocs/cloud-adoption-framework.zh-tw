@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 46c56b2518578261396588e8f142521fe8159a53
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884822"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603972"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 
@@ -37,7 +37,7 @@ ms.locfileid: "88884822"
 [管理方法](../../manage/index.md)提供建立作業管理容量的整體指引，請參閱[管理方法](../../manage/index.md)。 我們將使用該方法的基本結構以及該方法的下列步驟，來改善所有登陸區域的登陸區域作業和作業。
 
 ![管理方法 ](../../_images/manage/caf-manage.png)
- _圖1： CAF 管理方法。_
+ _圖1：雲端採用架構的管理方法。_
 
 1. [建立管理基準](../../manage/azure-server-management/index.md)：管理基準可建立作業管理的基礎。 第一個步驟下的指導方針可套用至任何登陸區域，以改善初始作業。
 2. [定義商務承諾](../../manage/considerations/business-alignment.md)：瞭解登陸區域內每個工作負載的重要性和影響，將會針對任何登陸區域的任何進行中管理改進，建立「完成定義」。 此程式也會識別每個工作負載的可靠性、效能和作業需求。

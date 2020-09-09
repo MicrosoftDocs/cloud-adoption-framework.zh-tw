@@ -7,13 +7,12 @@ ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: 48a9d309e644f7232e014201781f52edbb359c1f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b49425113e135549413c86ba9f12ee380b8cef27
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877682"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604013"
 ---
 <!-- cSpell:ignore multisignal -->
 

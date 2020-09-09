@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 868318e1c1e63b6459e13d9ca4d621a7e0145fbf
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d9cddbe2c43339428235d580004ba5ffd232074e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885808"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602128"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機：為何要移至雲端？
 
@@ -24,7 +24,7 @@ ms.locfileid: "88885808"
 
 雲端採用所支援的商業轉換可由各種動機來推動。 可能會同時套用數個動機。 下表中的清單目標是要協助您產生相關的動機相關概念。 從該處，您可以設定優先順序並評估動機的潛在影響。 在本文中，您的雲端採用小組應該使用下列清單來與各種主管和業務領導人會面，以瞭解這些動機會受到雲端採用工作的影響。
 
-| 重大商業事件 | 遷移 | 創新 |
+| 重大商業事件 | 移轉 | 創新 |
 |---|---|---|
 | 資料中心的退出 <br><br> 合併、收購或撤資 <br><br> 減少資本支出 <br><br> 終止對任務關鍵性技術的支援 <br><br> 對法規合規性變更的回應 <br><br> 新的資料主權需求 <br><br> 減少中斷和 it 穩定性的改進 <br><br> <br><br> | 節省成本 <br><br> 降低廠商或技術上的複雜性 <br><br> 追求內部營運的最佳化 <br><br> 提升業務靈活性 <br><br> 為了準備新技術能力 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 複雜 it 組合的整合 <br><br> | 為了準備新技術能力 <br><br> 打造新的技術功能 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 改善客戶體驗和參與 <br><br> 產品或服務的轉型 <br><br> 新產品或服務的市場中斷 <br><br> Democratization 和/或自助環境 |
 
@@ -44,7 +44,7 @@ ms.locfileid: "88885808"
 
 本節著重于 *遷移* 和 *創新* 動機，以及其對應的策略。
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 列在動機資料表頂端附近的 *遷移* 動機是最常見的，但不一定是採用雲端的最重要原因。 這些結果很重要，但最有效的用途是轉換為其他更實用的 worldviews。 雲端採用這項重要的第一個步驟，通常稱為「 *雲端遷移*」。 架構是指使用「 [遷移](../get-started/migrate.md)」一詞來執行雲端遷移的策略。
 

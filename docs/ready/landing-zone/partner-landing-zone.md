@@ -7,16 +7,16 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 71fa4ce0af8b1a33b223001e4244fe35a086358a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6ff7dad3524f00119b161dfc87aaa1a70a2b4e19
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881609"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602189"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 
-雲端採用架構將雲端採用作為自助活動。 目標是要讓每個小組都能透過標準化的方法來支援採用。 事實上，您無法假設自助方法對所有採用活動都已足夠。
+雲端採用架構將雲端採用作為自助活動。 目標是要讓每個小組都能透過標準化的方法來支援採用。 在實務上，您無法假設自助方法對所有採用活動都已足夠。
 
 成功的雲端採用方案通常牽涉到至少一個層級的協力廠商支援。 許多雲端採用工作都需要系統整合者的支援 (SI) 或諮詢合作夥伴，以提供加速雲端採用的服務。 受控服務提供者 (Msp) 透過支援登陸區域和雲端採用來提供議論值，但它們也提供後續採用作業管理支援。 此外，成功的雲端採用工作通常會將一或多個獨立軟體廠商 (ISV) ，其提供可加速雲端採用的軟體型服務。 適用于 SIs、Isv、Msp 及其他 Microsoft 合作夥伴形式的豐富合作夥伴生態系統，已將他們的供應專案對應到雲端採用架構中的特定方法。 當合作夥伴符合此架構的就緒方法時，他們可能會提供自己的 Azure 登陸區域實行選項。
 

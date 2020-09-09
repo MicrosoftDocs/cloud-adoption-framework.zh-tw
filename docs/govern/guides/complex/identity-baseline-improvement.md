@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 333130bd1af49833dd396351bc7feb0e7f12e48b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880912"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604920"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>適用于複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -24,8 +24,8 @@ ms.locfileid: "88880912"
 CFO 已核准將兩個資料中心移轉至雲端的商業論證。 在研究技術可行性的期間，其找到幾個障礙：
 
 - 受保護的資料及任務關鍵性應用程式佔了兩個資料中心 25% 的工作負載。 在目前已現代化有關機密個人資料和任務關鍵性應用程式的治理原則之前，都無法消除。
-- 這些資料中心內的7% 資產與雲端不相容。 其會先移至替代的資料中心，再終止資料中心的合約。
-- 資料中心內的15% 資產 (750 虛擬機器) 相依于舊版驗證或協力廠商多重要素驗證。
+- 在這兩個資料中心內，7% 的資產與雲端不相容。 其會先移至替代的資料中心，再終止資料中心的合約。
+- 資料中心內有 15% 的資產 (750 個虛擬機器) 相依於舊式的驗證或第三方多重要素驗證。
 - 連結現有資料中心與 Azure 的 VPN 連線未提供足夠的資料傳輸速度或延遲，因而無法在兩年內遷移大量資產，從而淘汰資料中心。
 
 前兩個障礙會以平行方式進行管理。 本文會講述第三個和第四個障礙的解決方案。

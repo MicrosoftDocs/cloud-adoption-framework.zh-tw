@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 02448762796ad54ae49e8e411a5a21edf002aeb3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 52a00570873d4cccba052fee33845b8ad8653bbf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878175"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604411"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>環境體驗：與裝置互動
 
@@ -64,13 +64,13 @@ Azure App Service 是此方法的絕佳範例。 在早期反覆運算期間， 
 
 當某個裝置形式一致地在客戶需要發生的相同環境中時，此體驗就很理想。 常見案例包括工廠樓層、電梯，甚至是您的汽車。 這些大型裝置類型已包含計算能力。 您也可以使用裝置本身的資料來偵測客戶行為，並將這些行為傳送至雲端。 自動捕捉客戶行為資料，可大幅降低客戶輸入資料的需求。 此外，web、mobile 或 VR 體驗也可以做為意見反應迴圈，以分享從整合式現實解決方案中學到的內容。
 
-<!-- docsTest:casing "advanced computer vision" -->
+<!-- docutune:casing "advanced computer vision" -->
 
 Azure 中的整合式現實範例包括：
 
 - [Azure 物聯網 (IoT) 解決方案](/azure/iot-fundamentals)： azure 中的一組服務，每個服務都有助於管理裝置，以及將這些裝置的資料流程到雲端，並將其傳送給終端使用者。
 - [Azure Sphere](/azure-sphere)：硬體和軟體的組合，可提供本質上安全的方式，讓現有的裝置在裝置與 Azure IoT 解決方案之間安全地傳輸資料。
-- [Azure Kinect DK](/azure/Kinect-dk)，具有 advanced 電腦視覺和語音模型的 AI 感應器。 這些感應器可以從立即環境中收集視覺和音訊資料，並將這些輸入送入您的解決方案。
+- [Azure Kinect DK](/azure/kinect-dk)的 AI 感應器，具有先進的電腦視覺和語音模型。 這些感應器可以從立即環境中收集視覺和音訊資料，並將這些輸入送入您的解決方案。
 
 您可以使用這三種工具，從自然周圍和客戶需要的角度收集資料。 從該處，您的解決方案可以回應這些資料輸入以解決需求，有時候客戶也知道該需要的觸發程式已發生。
 

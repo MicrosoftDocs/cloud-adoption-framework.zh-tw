@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c6351e1e6de0db3247b584d914ea3b5c5e842e68
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884329"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603325"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -201,4 +201,4 @@ ms.locfileid: "88884329"
 
 ## <a name="value-statement"></a>Value 語句
 
-遵循這些步驟可協助您 [打造成本重視的組織](../organize/cost-conscious-organization.md)。 當組織使用共用擁有權，以及在適當的時間與適當的小組共同合作時，成本優化會更容易實行。
+遵循這些步驟可協助您 [建立符合成本的組織](../organize/cost-conscious-organization.md)。 使用共用擁有權，並在適當的時間與適當的小組合作，以簡化成本優化。

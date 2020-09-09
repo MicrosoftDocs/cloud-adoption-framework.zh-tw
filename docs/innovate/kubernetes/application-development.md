@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea215de1bb9c41536c5bf666d20b6f1b41bb5871
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5ebf8106cee793e674070e88c8c4f36e77858079
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882850"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604244"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "88882850"
 > - 您要如何將專案資料夾結構為支援 Kubernetes 應用程式開發？
 > - 您是否已識別出應用程式的狀態、設定和儲存需求？
 
-<!-- docsTest:casing "AAD Pod Identity -->
+<!-- docutune:casing "AAD Pod Identity" -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -74,7 +74,7 @@ ms.locfileid: "88882850"
 > - 跨領域應用程式考慮從您的應用程式抽象化嗎？
 > - 您是否能夠維持系統和應用程式的可靠性，同時仍會逐一查看新的功能和版本？
 
-<!-- docsTest:casing Consul -->
+<!-- docutune:casing Consul -->
 
 > [!div class="tdCol2BreakAll"]
 >

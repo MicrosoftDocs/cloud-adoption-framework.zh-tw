@@ -1,22 +1,22 @@
 ---
-title: 開始使用：解除封鎖環境設計和設定
-description: 開始設計及設定您的雲端環境。
+title: 開始使用：環境設計和設定
+description: 開始解除封鎖雲端環境的設計和設定。
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 526fe646f41f76985c7a4d3ba47cd2df474949c1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 82d216ea194e7d94091877dc1e80c2dde0d3f6d1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881252"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603725"
 ---
-# <a name="get-started-design-and-configuration"></a>開始使用：設計和設定
+# <a name="get-started-environment-design-and-configuration"></a>開始使用：環境設計和設定
 
-環境設計和設定是採用專注于遷移或創新之採用工作的最常見阻礙。 快速執行支援您長期採用計畫的設計可能會很困難。 本文會建立方法和一連串的步驟，協助克服常見的封鎖程式並加速採用工作。
+環境設計和設定是採用專注于遷移或創新之採用工作的最常見阻礙。 快速執行支援您長期採用計畫的設計可能會很困難。 本文將建立一個方法和一連串的步驟，協助克服常見的封鎖程式並加速採用工作。
 
 ![設計與設定入門](../_images/get-started/environment-map.png)
 
@@ -34,9 +34,9 @@ ms.locfileid: "88881252"
 
 **支援交付完成的指導方針：**
 
-- [動機](../strategy/motivations.md)：策略性調整的第一步，是同意推動遷移工作的動機。 一開始先從不同的專案關係人瞭解及分類動機和一般主題。
-- [業務成果](../strategy/business-outcomes/index.md)：當動機對齊之後，您就可以捕獲所需的業務成果。 此資訊提供您可用來測量整體轉換的清楚計量。
-- [建立雲端遷移商務案例](../strategy/cloud-migration-business-case.md)：現在您可以開始開發遷移的商務案例，並清楚知道可協助商務理由的公式和工具指引。
+- [瞭解業務動機](../strategy/motivations.md)：策略性調整的第一步，是同意推動遷移工作的動機。 一開始先從不同的專案關係人瞭解及分類動機和一般主題。
+- 記載[業務成果](../strategy/business-outcomes/index.md)：當動機對齊之後，您可以抓住所需的業務成果。 此資訊提供您可用來測量整體轉換的清楚計量。
+- [打造雲端遷移商務案例](../strategy/cloud-migration-business-case.md)：開始開發商務案例以進行遷移，包括可協助您的業務理由的公式和工具的清楚指引。
 
 <br>
 
@@ -129,13 +129,13 @@ ms.locfileid: "88881252"
 - 部署初始治理基礎。
 - 完成治理基準，以規劃未來的改進。
 - 時間軸風險：
-  - 改進原則和治理實行可為每個專業領域增加一到四周。
+  - 原則和治理實施的改進可能會在每個專業領域增加一到四周。
 
 **支援交付完成的指導方針：**
 
 - [治理方法](../govern/index.md)：此方法會概述考慮公司原則和流程的程式。 然後建立在雲端企業採用工作間治理所需的專業領域。
 - [治理](../govern/benchmark.md)效能評定工具：找出您目前狀態的間隙，讓您可以規劃未來。
-- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解身分識別基準專業領域、安全性基準專業領域，以及建立治理最小可行產品所需的部署加速專業領域， (MVP) 作為所有採用的基礎。
+- [初始治理基礎](../govern/guides/complex/prescriptive-guidance.md)：瞭解建立治理最小可行產品所需的治理專業領域 (MVP) 作為所有採用的基礎。
 
 <br>
 
@@ -145,9 +145,7 @@ ms.locfileid: "88881252"
 
 ## <a name="step-6-implement-an-operations-baseline"></a>步驟6：執行作業基準
 
-作業管理是達到成功遷移的另一項需求。 不需要瞭解進行中的作業就能遷移至雲端是有風險的決策。 與遷移平行，您應該開始規劃長期作業。
-
-當這些計畫完成時，他們就會回送到雲端平臺小組的平行工作。
+遷移至雲端，而不需要瞭解進行中的作業是有風險的。 與遷移平行，開始規劃長期的作業管理。 將這些計畫送入雲端平臺小組的平行工作。
 
 **交付：**
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 96b962019314b54a60841d20e0a0b147424244ee
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b46c3e7247cbfcae5de8b60ad77f0e727250ac52
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884244"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603129"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：跨企業環境執行安全性
 

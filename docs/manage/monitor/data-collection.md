@@ -7,13 +7,12 @@ ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: 0ee10a89165130dbe29101bef3e31faf76fe7a7d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a1f95222aac6d2b69cc7a2835d7eeaf12df575f4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571083"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602768"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 

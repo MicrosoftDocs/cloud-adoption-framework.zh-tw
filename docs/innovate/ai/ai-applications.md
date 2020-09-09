@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9e331bc698467926e496b6a1e8c29e7fb0caf097
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6c6f2ebfca8337ba4f6aaa0218b763bf8b11398
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882629"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604646"
 ---
 # <a name="ai-applications-and-agents"></a>AI 應用程式和代理程式
 
@@ -47,7 +47,7 @@ AI 應用程式的常見案例包括：
 
 選取您要在視覺、語言、語音、決策或 web 搜尋中使用的服務。 頁面上的每個類別都會提供一組快速入門、教學課程、操作指南，無論您是要使用 REST API 或 Sdk。
 
-<!-- docsTest:casing "Intelligent Kiosk" -->
+<!-- docutune:casing "Intelligent Kiosk" -->
 
 您也可以下載智慧型 Kiosk 來體驗和示範這些服務。
 
@@ -112,5 +112,5 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 
 探索其他 AI 解決方案類別：
 
-- [機器學習服務](./machine-learning.md)
+- [機器學習](./machine-learning.md)
 - [知識採礦](./knowledge-mining.md)

@@ -7,15 +7,15 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: da555c34bec26cbfb6e3edf5ac078568a8ba0ccd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6c4259f112c74d6f5fb7c24a0ca409e25ff68268
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882153"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602672"
 ---
-<!-- cSpell:ignore msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
+<!-- docutune:casing Lakeside SysTrack -->
+<!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
 
 # <a name="move-on-premises-remote-desktop-services-to-azure-windows-virtual-desktop-scenario"></a>將內部部署遠端桌面服務移至 Azure Windows 虛擬桌面案例
 
@@ -210,9 +210,7 @@ Contoso 會分析資料，以判斷共用的 Windows 虛擬桌面資源和個人
 
     > [!NOTE]
     > Contoso 無法在此步驟建立新的虛擬網路。 在達到此步驟之前，Contoso 應該已建立可存取 Active Directory 的虛擬網路。
-
-   <!-- -->
-
+    <!-- -->
     > [!NOTE]
     > Contoso 無法在此步驟中使用需要多重要素驗證的使用者帳戶。 如果 Contoso 打算針對其使用者使用多重要素驗證，則必須為此用途建立服務主體。
 

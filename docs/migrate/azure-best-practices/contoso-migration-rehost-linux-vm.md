@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 862786173dead6832c44b5b8ecb8ba4a2b4ff4da
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e18fabf06701de03b2ec012cbe85e658071fda5e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877750"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602462"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
@@ -176,8 +175,8 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 7. 在 [Azure Hybrid Benefit] 中：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 接著，選取 [下一步]  。
-    - 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 接著，選取 [下一步]  。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後，選取 [下一步]。
+    - 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後，選取 [下一步]。
 
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -185,7 +184,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     - **作業系統磁片：** 為 VM 指定作業系統 (開機) 磁片。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此設定組必須位於您為移轉指定的目標資源群組中。
 
-9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 Azure。 在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 接著，選取 [下一步]  。
+9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 Azure。 在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 然後，選取 [下一步]。
     - 您可以從複寫排除磁碟。
     - 如果您排除磁片，則在遷移後將不會出現在 Azure VM 上。
 

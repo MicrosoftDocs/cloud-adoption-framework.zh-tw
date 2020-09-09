@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a99f8ec96609c02e1bb46bd26d57aaf0ed594736
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 01e9be8d8dde337dd732933b42b61f881bc2c474
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881422"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603774"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -25,7 +25,7 @@ ms.locfileid: "88881422"
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>迷思：在流程早期進行合理化決策很容易
 
- 精確的合理化需要深入瞭解工作負載和相關聯的資產， (應用程式、Vm 和資料) 。 最重要、準確的合理化決策需要一些時間。 我們建議使用 [增量合理化流程](./rationalize.md#incremental-rationalization)。
+ 精確的合理化需要深入瞭解工作負載和相關聯的資產， (應用程式、基礎結構和資料) 。 最重要、準確的合理化決策需要一些時間。 我們建議使用 [增量合理化流程](./rationalize.md#incremental-rationalization)。
 
 ### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>迷思：雲端採用必須等待所有工作負載合理化
 
@@ -33,7 +33,7 @@ ms.locfileid: "88881422"
 
 ### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>迷思：業務理由必須等待所有工作負載合理化
 
-若要開發雲端採用工作的商業理由，請在組合層級進行一些基本假設。 當動機與創新一致時，請採用重新架構。 當動機符合遷移的考慮時，請採用重新裝載。 這些假設可以加速商務理由流程。 然後，在每個工作負載的採用週期的評量階段期間，會對其進行挑戰和預算調整。
+若要開發雲端採用工作的商業理由，請在組合層級進行一些基本假設。 當動機與創新一致時，請採用重新架構。 當動機符合遷移的考慮時，請採用重新裝載。 這些假設可以加速商務理由流程。 然後，在每個工作負載的採用週期的評估階段期間，會對其進行挑戰和預算調整。
 
 現在，請參閱下列五個合理化 Rs，讓自己熟悉長期的流程。 開發雲端採用方案時，請選擇最符合您動機、業務成果和目前狀態環境的選項。 數位資產合理化的目標是設定基準，而不是將每個工作負載合理化。
 

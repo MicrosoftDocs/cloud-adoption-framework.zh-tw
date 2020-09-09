@@ -7,13 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 3dcb63b9b5f80fd36450630629023ad0972a76df
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 12ca20e3800dec81b5a2279a23fe848edeaafd57
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882289"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605103"
 ---
 <!-- docsTest:casing SmartHotel360 -->
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless osTicket WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
@@ -242,7 +241,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 6. 在 [ **目標設定**] 中，選取您要遷移的訂用帳戶和目的地區域。 然後，指定 Azure Vm 在遷移後將位於其中的資源群組。 在 [ **虛擬網路**] 中，選取 azure vm 在遷移後將加入的 azure 虛擬網路或子網。
 
-7. 在 **Azure Hybrid Benefit**中，如果您不想要套用 Azure Hybrid Benefit，請選取 [ **否** ]。 接著，選取 [下一步]  。 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 接著，選取 [下一步]  。
+7. 在 **Azure Hybrid Benefit**中，如果您不想要套用 Azure Hybrid Benefit，請選取 [ **否** ]。 然後，選取 [下一步]。 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後，選取 [下一步]。
 
       > [!NOTE]
       > 在 Contoso 的案例中，系統管理員會選取 [ **否** ] Azure Hybrid Benefit，因為這是 Azure 開發/測試訂用帳戶。 這表示他們只需支付計算費用。 [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit) 只能用於具有軟體保證優點的生產系統。
@@ -253,7 +252,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     - **作業系統磁片：** 為 VM 指定作業系統 (開機) 磁片。 作業系統磁片具有作業系統開機載入器和安裝程式。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此集合必須位於您為遷移指定的目標資源群組中。
 
-9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 azure，並在 azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 接著，選取 [下一步]  。 您可以從複寫排除磁碟。 如果您這麼做，則在遷移後將不會出現在 Azure VM 上。
+9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 azure，並在 azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 然後，選取 [下一步]。 您可以從複寫排除磁碟。 如果您這麼做，則在遷移後將不會出現在 Azure VM 上。
 
 10. 在 [ **檢查並開始**複寫] 中，檢查設定 **並選取 [複寫]，以** 啟動伺服器的初始複寫。
 

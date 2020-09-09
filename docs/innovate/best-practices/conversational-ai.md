@@ -7,14 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1cdf730339c30f681fc1dc39cad85fcd9c8a909f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f268e1a91f70b3cfb114e8769ef6cea66077eee3
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884516"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604568"
 ---
-<!-- docsTest:casing "natural language understanding" -->
+<!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
 
 # <a name="what-are-ai-agents"></a>什麼是 AI 代理程式？

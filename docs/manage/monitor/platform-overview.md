@@ -7,13 +7,12 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: d8ab1c31744d3e714d62018bccabd747136f454c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7fd16db11e5fb36179961a9febb719e162aa094d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571196"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602614"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 

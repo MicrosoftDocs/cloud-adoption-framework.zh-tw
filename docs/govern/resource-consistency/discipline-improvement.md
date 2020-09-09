@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 21f760fb9550f540b4b88f2f7ec098be7cf4307e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7ed4d7cf129cf3e8938288edc558f82bcc2bdf61
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879388"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604695"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -21,9 +21,9 @@ ms.locfileid: "88879388"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發部署加速專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![四個採用階段](../../_images/govern/adoption-phases.png)
+![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
 
-*圖1：雲端治理增量方法的採用階段。*
+*圖1：漸進式雲端治理方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定要在這些活動中投入多少錢，以改善資源一致性專業領域。
 

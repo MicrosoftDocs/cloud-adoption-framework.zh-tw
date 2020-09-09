@@ -1,19 +1,18 @@
 ---
 title: 雲端監視策略
 description: 深入瞭解如何定義有效的雲端監視策略。
-services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885842"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603670"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -193,7 +192,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 
 <!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
-<Sup>1</Sup> dikw 模型是一種常用的方法，其中包含知識管理中的根，以說明我們使用動作和決策的元件，將資料移至資訊、知識和智慧的方式。
+<Sup>1 </sup> dikw 模型是一種常用的方法，其中包含知識管理中的根，以說明我們使用動作和決策的元件，將資料移至資訊、知識和智慧的方式。
 
 監視是您在 Azure 中建立的服務基礎。 您的策略可以解決這四個新式監視的專業領域，以協助您定義最基本的可行監視，並在步驟中得到自信。 將您的功能從被動移至主動式，並將其觸及範圍調整為終端使用者，但有一個目標。
 
@@ -257,7 +256,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | Agile 詞彙 | 要包含的內容 | 範例 |
 |----------|---------------|--------|
 | Epic | 廣泛監視 <br> 監視策略的計畫 | 合併 Azure 雲端監視 <br> 混合式雲端監視 <br> 私用雲端監視 <br> 建立核心監視服務 |
-| 特性 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
+| 功能 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
 | 使用者案例和工作 | 最終結果是監視設定或解決方案 | 網路監視 (例如 ExpressRoute)  <br> 標準化的 IaaS VM 監視 (例如適用於 VM 的 Azure 監視器、Application Insights、Azure 原則、設定、原則、報告、工作區。 )  |
 
 ## <a name="establish-minimum-governance"></a>建立最小治理

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e276ce6c1fd03afadb757f68471684df48f6d310
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884227"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603174"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：使用正確的控制項提升可靠性
 
@@ -136,7 +136,7 @@ ms.locfileid: "88884227"
 
 ## <a name="step-5-implement-landing-zone-best-practices"></a>步驟5：實施登陸區域最佳作法
 
-適用于 Azure 的雲端採用架構的準備方法，主要著重于登陸區域的開發，以裝載雲端中的工作負載。 登陸區域執行期間，多個決策可能會影響作業。 請參閱雲端營運小組，以協助複習登陸區域以進行操作改進。 另請參閱雲端治理小組，以瞭解可能會影響登陸區域設計的資源一致性原則和設計指引。
+雲端採用架構的準備方法，主要著重于登陸區域的開發，以裝載雲端中的工作負載。 登陸區域執行期間，多個決策可能會影響作業。 請參閱雲端營運小組，以協助複習登陸區域以進行操作改進。 另請參閱雲端治理小組，以瞭解可能會影響登陸區域設計的資源一致性原則和設計指引。
 
 **交付：**
 

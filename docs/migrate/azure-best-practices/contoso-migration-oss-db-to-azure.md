@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: a897563fae2d50bfdc6b6aa00414b5c7d01660a5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6579a5f4f699b3a5880076cb125b3faaea5b0c4b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570703"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603690"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 
@@ -110,9 +109,9 @@ Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些實�
 
 | 資料庫類型 | 詳細資料 | 目標 | 移轉指南 |
 | --- | --- | --- | --- |
-| **MySQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MySQL 的 Azure 資料庫 (PaaS)  | [指導](/azure/dms/tutorial-mysql-azure-mysql-online)
-| **PostgreSQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 PostgreSQL 的 Azure 資料庫 (PaaS)  | [指導](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| **MariaDB** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MariaDB 的 Azure 資料庫 (PaaS)  | [指導](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
+| **MySQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MySQL 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-mysql-azure-mysql-online)
+| **PostgreSQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 PostgreSQL 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| **MariaDB** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MariaDB 的 Azure 資料庫 (PaaS)  | [指南](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
 
 #### <a name="step-4-migration-planning"></a>步驟4：遷移規劃
 

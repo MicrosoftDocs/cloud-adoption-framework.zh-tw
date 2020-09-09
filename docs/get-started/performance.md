@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a27d3c6a889da10a4f5e1045a15921741c712c7e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b4fa68b4c796ecb0e0773e01a549df848ceaf350
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884261"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603183"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的效能一致
 
@@ -64,7 +64,7 @@ ms.locfileid: "88884261"
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，特別強調「重要性」的標記。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理治理專業領域，請考慮遵循 [有關成本管理專業領域改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理專業領域，請考慮遵循 [有關成本管理專業領域改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
 
 <br>
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4c1cf121f21cc87a8eb3c7d89c58608b8abda730
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 997597ab99dffa1882ff6d26610efdec8d8e9b7a
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879059"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604662"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
@@ -21,9 +21,9 @@ ms.locfileid: "88879059"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發安全性基準專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![四個採用階段](../../_images/govern/adoption-phases.png)
+![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
 
-*圖1：雲端治理增量方法的採用階段。*
+*圖1：漸進式雲端治理方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的安全性基準專業領域。
 

@@ -7,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 50c1963289ca28618501407d583e47ee40604f4a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 71bb643a71f984fc9eb6b6b872f7ad6cd8890a54
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878311"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604361"
 ---
-<!--docsTest:casing "Oxford English Dictionary" -->
+<!-- docutune:casing "Oxford English Dictionary" -->
 
 # <a name="build-with-customer-empathy"></a>以客戶理解的方式打造
 
@@ -26,7 +26,7 @@ ms.locfileid: "88878311"
 
 ## <a name="how-to-build-with-empathy"></a>如何以理解方式打造
 
-規劃本質上是定義假設的練習。 我們所計畫的計畫愈多，我們看到的假設也會蔓延到絕佳概念的基礎。 假設通常是自我理解的產品。 換句話說：「如果我在此位置，該怎麼辦？」 從組建階段開始，可將假設 invade 方案的期間降至最低。 這種方法也可加速與真實客戶的意見反應迴圈，並觸發先前的機會來學習及銳化理解。
+定義假設是規劃的基本部分。 我們所計畫的計畫愈多，我們看到的假設也會蔓延到絕佳概念的基礎。 假設通常是自我理解的產品。 換句話說， _如果我在此位置，該怎麼辦？_ 從組建階段開始，可將假設 invade 方案的期間降至最低。 這種方法也可加速與真實客戶的意見反應迴圈，並觸發先前的機會來學習及銳化理解。
 
 > [!CAUTION]
 > 正確定義組建的內容可能很棘手，需要一些作法。 如果您太快建立了某個東西，可能無法反映客戶的需求。 如果您花太多時間來瞭解初始客戶需求和解決方案需求，市場可能會在您有機會建立任何專案之前，先符合這些需求。 在任一案例中，學習的機會會大幅延遲或降低。 有時候，資料甚至可能已損毀。
@@ -103,7 +103,7 @@ MVP 解決方案通常是由簡單的應用程式或資料解決方案所組成�
 
 許多需要採用替代方法的法律、合規性和產業需求。 如果開發解決方案的公開版本建立了專利時間、智慧財產權保護、客戶資料流程失或違反既定合規性需求的風險，則這種方法可能不適用。 如果發現這類的風險存在，請先洽詢法律顧問，再採用任何發行管理的引導式方式。
 
-## <a name="references"></a>參考資料
+## <a name="references"></a>參考
 
 本文中的一些概念是以 Eric Ries [的「精簡啟動」所](http://theleanstartup.com/book) 討論的主題為基礎。
 

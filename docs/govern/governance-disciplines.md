@@ -1,6 +1,6 @@
 ---
 title: 雲端治理的五個專業領域
-description: 使用適用于 Azure 的雲端採用架構，瞭解成本管理、部署加速、身分識別基準、資源一致性和安全性基準專業領域。
+description: 使用適用于 Azure 的雲端採用架構，瞭解成本管理、安全性基準、身分識別基準、資源一致性，以及部署加速專業領域。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 176d9bfac74890d80dd5a36d4a3b6fc51863e027
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: daf25b3027d0eb5becff23c96fa9bd2f6f30476d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510425"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605016"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>雲端治理的五個專業領域
 
-<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
+<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Security Baseline" "Identity Baseline" "Resource Consistency" "Deployment Acceleration" -->
 
 :::row:::
     :::column:::

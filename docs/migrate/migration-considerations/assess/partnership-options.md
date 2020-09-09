@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1b436a38dddff3aa4451854f8d3d2c58de31fd77
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 711ad79f89cda5364daae00a7721d492dbe52a66
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662229"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605080"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
-# <a name="understand-partnership-options"></a>了解合作關係選項
+# <a name="understand-partnership-and-support-options"></a>了解合作關係和支援選項
 
 在移轉期間，雲端採用小組會實際地將工作負載移轉至雲端。 不同於在定義[數位資產](../../../digital-estate/index.md)或建置核心雲端基礎結構時的協作工作和問題解決工作，移轉更像是一系列重複執行的工作。 除了重複層面外，也可能有需要深入了解所選雲端提供者的測試和調整工作。 此程序的重複性質有時可由合作夥伴完美處理，從而降低對全職員工的負擔。 此外，當重複性程序遇到執行異常時，合作夥伴或許可以更好地配合深度的技術專業知識。
 

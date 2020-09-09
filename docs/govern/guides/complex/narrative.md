@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5f0d5f337fb4d961b1b584d5ab6e9985ce9dd293
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ac276f9cd8a7f0246a03b587fcd7b96230dc9e5e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880725"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604890"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>適用于複雜企業的治理指南：支援的敘述
 

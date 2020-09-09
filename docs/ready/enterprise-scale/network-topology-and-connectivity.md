@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5e5988e2a75c5cc83f7145abb91feb3492bbe4dd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575174"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602231"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,13 @@ ms.locfileid: "88575174"
 
 網路拓撲是企業規模架構的重要元素，因為它會定義應用程式彼此通訊的方式。 本節探討適用于企業 Azure 部署的技術與拓撲方法。 它著重于兩個核心方法：以 Azure 虛擬 WAN 和傳統拓撲為基礎的拓撲。
 
-以 Azure 虛擬 WAN 為基礎的網路拓撲是適用于大規模多區域部署的慣用企業規模方法，您的組織需要將您的全球位置連線到 Azure 和內部部署。 當您的組織想要使用軟體定義的 WAN (SD-WAN) 部署與 Azure 完全整合時，您也應該使用虛擬 WAN 網路拓撲。 虛擬 WAN 可用來滿足大規模的互連能力需求。 因為這是 Microsoft 管理的服務，所以它也會降低整體網路複雜度，並有助於將組織的網路現代化。
+如果下列任何一項成立，請使用以 Azure 虛擬 WAN 為基礎的網路拓撲：
+
+- 您的組織想要跨數個 Azure 區域部署資源，並需要將您的全球位置連線到 Azure 和內部部署。
+- 您的組織想要使用軟體定義的 WAN (SD-WAN) 部署與 Azure 完全整合。
+- 您想要在所有連線到單一 Azure 虛擬 WAN 中樞的 Vnet 上部署最多2000的虛擬機器工作負載。
+
+虛擬 WAN 可用來滿足大規模的互連能力需求。 因為這是 Microsoft 管理的服務，所以它也會降低整體網路複雜度，並有助於將組織的網路現代化。
 
 如果下列任何一項成立，請使用傳統的 Azure 網路拓撲：
 
@@ -128,6 +134,8 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 由於每個虛擬中樞都有路由器，因此會啟用標準虛擬 WAN 中虛擬網路之間的傳輸連線。 每個虛擬中樞路由器最多支援 50 Gbps 的彙總輸送量。
 
+- 在所有 Vnet 上最多可以有2000的 VM 工作負載連線到單一虛擬 WAN 中樞。
+
 - 虛擬 WAN 與各種 [SD wan 提供者](/azure/virtual-wan/virtual-wan-locations-partners)整合。
 
 - 許多受控服務提供者為虛擬 WAN 提供 [受控服務](/azure/networking/networking-partners-msp) 。
@@ -142,7 +150,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 **設計建議：**
 
-- 針對 Azure 中的新大型或全球網路部署，我們強烈建議虛擬 WAN，您需要跨 Azure 區域與內部部署位置的全球傳輸連線能力。 如此一來，您就不需要手動設定 Azure 網路的可轉移路由。
+- 針對 Azure 中的新大型或全球網路部署，我們建議虛擬 WAN，您需要跨 Azure 區域和內部部署位置的全球傳輸連線能力。 如此一來，您就不需要手動設定 Azure 網路的可轉移路由。
 
   下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有大量的分公司。 環境透過虛擬 WAN 和 ExpressRoute 全球接觸來全球連線。
 
@@ -175,6 +183,8 @@ _圖1：虛擬 WAN 網路拓撲。_
 - 在連接訂用帳戶內建立 Azure 虛擬 WAN 和 Azure 防火牆資源。
 
 - 請勿為每個虛擬 WAN 虛擬中樞建立500個以上的虛擬網路連線。
+
+- 請仔細規劃您的部署，並確定您的網路架構是在 [Azure 虛擬 WAN 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits)內。
 
 ## <a name="traditional-azure-networking-topology"></a>傳統的 Azure 網路拓撲
 
@@ -288,7 +298,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計考慮：**
 
-- Azure ExpressRoute 提供專用的私人連線能力，可 Microsoft Azure 基礎結構即服務 (IaaS) 和平臺即服務， (PaaS) 內部部署位置的功能。
+- Azure ExpressRoute 提供 Azure 基礎結構即服務的專用私人連線， (IaaS) 和平臺即服務， (PaaS) 內部部署位置的功能。
 
 - 您可以使用 Private Link，透過具有私人對等互連的 ExpressRoute 來建立 PaaS 服務的連線能力。
 
@@ -301,11 +311,11 @@ _圖4：傳統的 Azure 網路拓撲。_
 - ExpressRoute Direct 可讓您不需額外成本，即可建立多個 ExpressRoute 線路，最多可達 ExpressRoute Direct 埠容量 (10 Gbps 或 100 Gbps) 。 它也可讓您直接連接到 Microsoft 的 ExpressRoute 路由器。 針對 100-Gbps SKU，最小電路頻寬為 5 Gbps。 若為 10 Gbps SKU，最小電路頻寬為 1 Gbps。
 
 <!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending -->
+<!-- docsTest:ignore "AS PATH prepending" -->
 
 **設計建議：**
 
-- 使用 ExpressRoute 作為主要連線通道，將內部部署網路連接到 Microsoft Azure。 您可以使用 Vpn 作為備份連線的來源，以增強連線恢復功能。
+- 使用 ExpressRoute 作為將內部部署網路連線到 Azure 的主要連接通道。 您可以使用 Vpn 作為備份連線的來源，以增強連線恢復功能。
 
 - 當您將內部部署位置連線到 Azure 中的虛擬網路時，請使用來自不同對等互連位置的雙重 ExpressRoute 線路。 這項設定可移除內部部署與 Azure 之間的單一失敗點，以確保 Azure 有重複的路徑。
 

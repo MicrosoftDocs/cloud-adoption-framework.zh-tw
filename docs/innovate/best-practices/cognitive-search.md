@@ -7,17 +7,17 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a5221713e9e6125aa134e958b2baca2e99dcadec
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5af45a28a2047d05fa48ca76bbc7468816cfd610
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884533"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604607"
 ---
 <!-- cSpell:ignore Lucene -->
 
-<!-- docsTest:casing "JFK Files" -->
-<!-- docsTest:ignore "Azure Search" -->
+<!-- docutune:casing "JFK Files" -->
+<!-- docutune:ignore "Azure Search" -->
 
 # <a name="what-is-azure-cognitive-search"></a>什麼是 Azue 認知搜尋？
 

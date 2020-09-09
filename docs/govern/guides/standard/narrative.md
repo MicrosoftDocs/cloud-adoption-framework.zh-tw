@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9fadb677bdf1cee392ae7f7ad8dbf4c1605ca551
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880385"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604771"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
-下列敘述描述 [標準企業的雲端採用旅程](./index.md)期間的治理使用案例。 在實施旅程之前，請務必瞭解此敘述中反映的假設和原理。 然後您可以讓治理策略與貴組織的旅程更一致。
+下列敘述描述 [標準企業的雲端採用旅程](./index.md)期間的治理使用案例。 在實施旅程之前，請務必瞭解此敘述中反映的假設和原理。 然後，您可以將治理策略更妥善地對應到您組織的旅程。
 
 ## <a name="back-story"></a>背景故事
 
@@ -39,7 +39,7 @@ ms.locfileid: "88880385"
 
 以下是該公司的 IT 和雲端作業目前的狀態：
 
-- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 它會將這兩個資料中心分別稱為生產和 DR。
+- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 它會將這兩個資料中心分別稱為 _生產_ 和 _DR_ 。
 
 - 它會將所有使用者的電子郵件帳戶遷移至 Microsoft 365，以進入雲端。 此移轉已在六個月前完成。 其他一些 IT 資產已部署至雲端。
 

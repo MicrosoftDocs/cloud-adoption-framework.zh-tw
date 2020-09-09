@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e3683c652ef69b9cd327164a992966cff1ce4868
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884176"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603033"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：建立雲端治理小組
 
@@ -22,7 +22,7 @@ ms.locfileid: "88884176"
 
 ## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>步驟1：判斷是否需要雲端治理小組
 
-適用于 Azure 的雲端採用架構中的官方指引是一律建立雲端治理小組。 一開始，小組可能會很小。 無論其大小為何，其角色都將證明很重要。 如果不需要小組，現有採用小組的群組或個人應同意履行與 [雲端治理功能](../../organize/cloud-governance.md)相關的責任。
+雲端採用架構的官方指引是一律建立雲端治理小組。 一開始，小組可能很小。 無論其大小為何，其角色都很重要。 如果不需要小組，現有採用小組的群組或個人應同意履行與 [雲端治理功能](../../organize/cloud-governance.md)相關的責任。
 
 **交付：**
 

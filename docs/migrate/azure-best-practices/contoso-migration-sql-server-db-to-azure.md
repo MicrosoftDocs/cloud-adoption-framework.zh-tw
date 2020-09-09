@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: ba0d366ddd36fa8f57c0d57ca8343590fe39e124
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a9cc63ee3c47ddb347948aa55b49212ff0775344
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877444"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602230"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -142,7 +141,7 @@ Contoso 使用 DMA 來執行評量，然後將資料直接上傳至 Azure Migrat
 當 DMA 無法在資料來源上執行時，會遵循下列指導方針來進行資料庫移轉。
 
 > [!NOTE]
-> 在評估階段中，Contoso 探索了各種開放原始碼資料庫。 它們分別遵循 [本指南](./contoso-migration-oss-db-to-azure.md) 來瞭解其遷移計畫。
+> 在評估階段，Contoso 探索了各種開放原始碼資料庫。 它們分別遵循 [本指南](./contoso-migration-oss-db-to-azure.md) 來瞭解其遷移計畫。
 
 <!-- docsTest:casing "custom .NET" -->
 
@@ -182,7 +181,7 @@ Contoso 也會執行 [工作負載準備](../..//migrate/migration-consideration
 
 Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期時，資源將會從內部部署基礎結構淘汰。
 
-這包括：
+其中包括：
 
 - 從內部部署伺服器移除生產資料。
 - 當最後一個工作負載時間範圍過期時，淘汰主控伺服器。

@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 31e8c22d12d851c0b72e9821defdf1268d3c8110
-ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
+ms.openlocfilehash: 399f6e4d6506539c59d17670ba6f55f2df82a0c5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427836"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602866"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -94,11 +93,11 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | 無需變更程式碼即可從內部部署順暢地將 .NET web 應用程式遷移至雲端的免費和簡單路徑。 | 這是可下載的免費工具。 |
 | [資料移轉小幫手](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso 會使用 Data Migration Assistant 來評定和偵測可能影響 Azure 中資料庫功能的相容性問題。 Data Migration Assistant 會評估 SQL 來源與目標之間的功能同位，並建議效能和可靠性的改進。 | 這是可下載的免費工具。 |
 | [Azure 資料庫移轉服務](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
-| [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) | 完全受控的智慧型關聯式雲端資料庫服務。 | 成本是以功能、輸送量和大小為基礎。 [進一步瞭解](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
-| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [進一步瞭解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) | 完全受控的智慧型關聯式雲端資料庫服務。 | 成本是以功能、輸送量和大小為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
+| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -336,14 +335,14 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
 ### <a name="security"></a>安全性
 
-- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [進一步瞭解](/azure/sql-database/sql-database-security-overview)。
+- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [深入了解](/azure/sql-database/sql-database-security-overview)。
 - 尤其是，Contoso 會將 web 應用程式更新為搭配使用 SSL 與憑證。
 
 ### <a name="backups"></a>備份
 
-- Contoso 團隊會審核 Azure SQL Database 的備份需求。 [進一步瞭解](/azure/sql-database/sql-database-automated-backups)。
+- Contoso 團隊會審核 Azure SQL Database 的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
 - 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 [深入了解](/azure/sql-database/sql-database-automated-backups)自動備份。
-- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [進一步瞭解](/azure/sql-database/sql-database-geo-replication-overview)。
+- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
 - 針對恢復功能，他們會考慮將 web 應用程式部署在主要區域 (`East US 2`) 和次要區域 (`Central US`) 。 小組可以設定流量管理員，以確保在發生區域性中斷時進行容錯移轉。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 3472f1695f8f5405842e2d35ff86265bfbfefec1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7921c16e54e3684e5f2ba43555b54b68cd12c37f
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877308"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605151"
 ---
 <!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -96,7 +95,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 
 ## <a name="migration-process"></a>移轉程序
 
-Contoso 會使用 VMware HCX 工具將其 Vm 移至 Azure VMware 解決方案。 Vm 將在 Azure VMware 解決方案私人雲端中執行。 [VMWARE HCX 遷移方法](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html) 包括執行大量或冷遷移。 vMotion 或複寫輔助的 vMotion (RAV) 是一種方法，保留給透過即時移轉執行的工作負載。
+Contoso 會使用 VMware HCX 工具將其 Vm 移至 Azure VMware 解決方案。 Vm 將在 Azure VMware 解決方案私人雲端中執行。 [VMWARE HCX 遷移方法](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html) 包括執行大量或冷遷移。 VMware vMotion 或複寫輔助的 vMotion (RAV) 是一種方法，可針對透過即時移轉執行的工作負載進行保留。
 
 若要完成此程式，Contoso 小組：
 

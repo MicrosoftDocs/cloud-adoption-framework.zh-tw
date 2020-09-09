@@ -7,13 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 5a9d266e6836540fdfc7e971fd1fde19c6219230
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d608aa4bd7128f469c8eb6f8a1d100e001d2287b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882442"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605155"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>將開發/測試環境遷移至 Azure DevTest Labs
 

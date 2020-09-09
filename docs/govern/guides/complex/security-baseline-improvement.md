@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41c81cd14235933e09462470cc2c93f83f79b9fb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f872d4cf6389efe6f956c3a8990aea818fc2c32b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880640"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604849"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -33,7 +33,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 ### <a name="changes-in-the-current-state"></a>處於目前狀態的變更
 
-在此敘述的上一個階段，該公司已開始進行淘汰兩個資料中心的流程。 這項持續進行的工作包括將某些具有舊版驗證需求的應用程式遷移，而這需要對身分識別基準進行累加的改進，如 [前一篇文章](./identity-baseline-improvement.md)所述。
+在此敘述的上一個階段，該公司已開始進行淘汰兩個資料中心的流程。 這項持續進行的工作包括將某些具有舊版驗證需求的應用程式遷移，而這需要對身分識別基準專業領域進行累加式改進，如 [先前的文章](./identity-baseline-improvement.md)所述。
 
 從那時起，某些將會影響治理的事項已經改變：
 

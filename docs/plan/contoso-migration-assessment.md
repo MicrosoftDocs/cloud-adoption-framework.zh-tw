@@ -7,16 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: site-recovery
-ms.openlocfilehash: 4459455e4ccf255325176df57784dd29d90ab031
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9e52a468b2a032c70bace6a89e8aa963e6a629de
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884941"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605312"
 ---
-<!-- docsTest:disable TODO -->
-
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>評估要移轉至 Azure 的內部部署工作負載
@@ -250,7 +247,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
     - 專案地理區域只會用來儲存從內部部署 VM 收集到的中繼資料。
     - 當您執行移轉時，可以選取任何目的地區域。
 
-1. 選取 [下一步]  。
+1. 選取 [下一步] 。
 
 1. 在 [選取評量工具] 中，選取 **[Azure Migrate：伺服器評量]**  > [下一步]。
 
@@ -281,7 +278,7 @@ Contoso 評量會使用相依性對應。 若要進行相依性對應，所要�
 
     `C:\> CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
-    **範例︰**
+    **範例：**
 
     `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 

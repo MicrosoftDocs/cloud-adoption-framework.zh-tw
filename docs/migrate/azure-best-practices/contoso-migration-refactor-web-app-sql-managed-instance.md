@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 3d95604d9b12a5452853550a655a6c42034d8f23
-ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
+ms.openlocfilehash: 4cdf0d8e5d5a43786d8ee5d1b28ac0199383e0fd
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427853"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602849"
 ---
 <!-- cSpell:ignore contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -100,10 +99,10 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | 無需變更程式碼即可從內部部署順暢地將 .NET web 應用程式遷移至雲端的免費和簡單路徑。 | 這是可下載的免費工具。 |
 | [Azure 資料庫移轉服務](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入瞭解 [支援的區域](/azure/dms/dms-overview#regional-availability) 和 [Azure 資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [Azure SQL 受控執行個體](/azure/sql-database/sql-database-managed-instance) | SQL 受控執行個體是受控資料庫服務，代表 Azure 中完全受控的 SQL Server 實例。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會產生以容量為基礎的費用。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
-| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [進一步瞭解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -404,14 +403,14 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
 ### <a name="security"></a>安全性
 
-- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [進一步瞭解](/azure/sql-database/sql-database-security-overview)。
+- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [深入了解](/azure/sql-database/sql-database-security-overview)。
 - 尤其是，Contoso 會將 web 應用程式更新為搭配使用 SSL 與憑證。
 
 ### <a name="backups"></a>備份
 
-- Contoso 團隊會在 Azure SQL 受控執行個體中審核資料庫的備份需求。 [進一步瞭解](/azure/sql-database/sql-database-automated-backups)。
+- Contoso 團隊會在 Azure SQL 受控執行個體中審核資料庫的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
 - 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 [深入了解](/azure/sql-database/sql-database-automated-backups)自動備份。
-- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [進一步瞭解](/azure/sql-database/sql-database-geo-replication-overview)。
+- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
 - 他們考慮在主要區域中部署 web 應用程式 (`East US 2`) 和次要區域 (`Central US`) 以進行復原。 小組可以設定流量管理員，以確保在發生區域性中斷時進行容錯移轉。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

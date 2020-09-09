@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eee0e1b6b7e2ceb64f180fe97984e4c39a8ea7a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 35e6806fe93607e4797bdcd20302fec09032778e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884856"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605200"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>建立您的初始 Azure 訂用帳戶
 
@@ -23,12 +23,10 @@ ms.locfileid: "88884856"
 首先，建立兩個訂閱：
 
 - 建立一個 Azure 訂用帳戶，以包含您的生產工作負載。
-- 建立第二個訂用帳戶，以作為非生產 (開發/測試) 環境，並使用 [Azure 開發/測試供應](https://azure.microsoft.com/pricing/dev-test) 專案來取得較低的定價。
+- 使用 [Azure 開發/測試供應](https://azure.microsoft.com/pricing/dev-test) 專案以獲得較低的定價，建立第二個訂用帳戶作為您的非生產環境。
 
 ![一種初始訂用帳戶模型，顯示標示為「生產」和「非生產」的方塊旁邊的索引鍵 ](../../_images/ready/initial-subscription-model.png)
  _：「生產」和「非生產」方塊旁邊有索引鍵的初始訂用帳戶模型。_
-
-<!-- docsTest:casing Dev/Test -->
 
 這種方法有許多優點：
 

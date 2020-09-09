@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c3df113abbd758b65bbdd81d94d90be1dccb2925
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cb5ab9afdb8164aff0fb36c3494a40a2cc6529e0
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885196"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605121"
 ---
 # <a name="data-democratization"></a>資料民主化
 
@@ -26,7 +26,7 @@ Azure Synapse Analytics 是單一服務，可進行順暢的共同作業和加�
 
 **資料整合**： *資料工程師* 會使用無程式碼的環境，輕鬆地連接多個來源和類型的資料。
 
-**Big data 和 machine learning**： *資料科學家* 會快速建立概念證明，並視需要布建資源，同時使用其選擇的語言 (例如 t-sql、Python、scala、.net 或 sparksql) 。
+**Big data 和 machine learning**： *資料科學家* 會快速建立概念證明，並視需要布建資源，同時使用其選擇的語言 (例如 T-sql、Python、Scala、.net 或 Spark SQL) 。
 
 **管理和安全性**： *IT 專業人員* 可以更有效率地保護和管理資料、強制執行隱私權需求，以及安全地存取雲端和混合式設定。
 

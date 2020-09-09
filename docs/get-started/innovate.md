@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2a3aaf0b2d6e77ecc652315526e6aeb56969289e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 560bbf233bd8648e50192037b1712382dfeeac6f
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884363"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603430"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
-在雲端中建立新的產品和服務，需要的方法與遷移所需的方法不同。 適用于 Azure 的雲端採用架構的創新方法會建立一個方法，以引導您開發新的產品和服務。
+在雲端中建立新的產品和服務，需要的方法與遷移所需的方法不同。 雲端採用架構的創新方法會建立一種方法，以引導您開發新的產品和服務。
 
 本指南使用下圖中反白顯示的雲端採用架構區段。 創新比標準遷移更不容易預測，但仍適用于更廣泛的雲端採用方案內容中。 本指南可協助您的企業提供創新所需的支援，並提供結構來建立整個雲端採用的平衡組合。
 
@@ -169,7 +169,7 @@ ms.locfileid: "88884363"
 - 在早期創新期間，為初始、低風險的實驗部署第一個登陸區域。
 - 開發計畫來重構卓越的雲端中心或中央 IT 小組，以確保治理、安全性及營運一致。
 - 時間軸風險：
-  - 前10個工作負載的治理、操作和安全性需求可能會使此程式變慢。 第一個登陸區域和之後的登陸區域重構需要較長的時間，但它應該與遷移工作平行發生。
+  - 前10個工作負載的治理、操作和安全性需求可能會使此程式變慢。 重構第一個登陸區域和稍後的登陸區域需要較長的時間，但它應該與遷移工作平行發生。
 
 **支援交付完成的指導方針：**
 

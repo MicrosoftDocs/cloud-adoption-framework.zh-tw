@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 97f36a7d97eb27e831591703a5cb07b6240d30ce
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a98e8a11e45aff862a59f04bedbb204042035f56
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877478"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602323"
 ---
 <!-- docsTest:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -51,7 +50,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 它會使用�
 
 Contoso 已規劃並設定 [Azure 基礎結構](./contoso-migration-infrastructure.md) ，並嘗試進行不同的概念證明 (POC) 遷移組合（如上表所述）。 現在已準備好步屬於大規模的完整遷移至 Azure。 Contoso 想要移轉的內容如下。
 
-| 項目 | 磁碟區 | 詳細資料 |
+| Item | 磁碟區 | 詳細資料 |
 | --- | --- | --- |
 | 工作負載 | > 3000 應用程式 | <li> 應用程式會在 Vm 上執行。 <li> 應用程式平臺包括 Windows、SQL Server 和 [燈泡](https://wikipedia.org/wiki/LAMP_(software_bundle))。 |
 | 資料庫 | 大約8500資料庫 | 資料庫包含 SQL Server、MySQL 和于 postgresql。 |

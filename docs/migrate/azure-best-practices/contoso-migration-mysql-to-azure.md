@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: a7fb9e0887cb5cd60ba48783b152d20f0213ba71
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 79bc8027a035d38b9a9048a0aaba15f9cb66d3e0
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882034"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603743"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -107,7 +106,7 @@ Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其 My
 ![圖表顯示遷移程式。 ](./media/contoso-migration-mysql-to-azure/migration-process.png)
 _圖2：遷移程式。_
 
-#### <a name="migration"></a>遷移
+#### <a name="migration"></a>移轉
 
 Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並遵循 [逐步遷移教學](/azure/dms/tutorial-mysql-azure-mysql-online)課程。 他們可以使用 MySQL 5.6 或5.7 來執行線上、離線和混合式 (預覽版) 的遷移。
 
