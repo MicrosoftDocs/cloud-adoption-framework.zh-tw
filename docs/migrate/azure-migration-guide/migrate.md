@@ -3,18 +3,18 @@ title: 遷移資產
 description: 藉由識別要使用的適當工具，包括原生工具、第三方工具和專案管理工具，來起始移轉到 Azure。
 author: matticusau
 ms.author: mlavery
-ms.date: 08/08/2019
+ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
+ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885026"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89557038"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -100,6 +100,36 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 - [Azure 入口網站：建立移轉專案](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
+
+### <a name="azure-app-service-migration-assistant"></a>Azure App Service Migration Assistant
+
+Azure App Service Migration Assistant 是 [大型應用程式套件的一部分](https://azure.microsoft.com/services/azure-migrate/)，可協助組織將其轉換至雲端。 Migration Assistant 提供引導式、類似精靈的使用者體驗，其會執行兩個工作：
+
+1. 其會在 Web 應用程式上執行預先移轉相容性檢查，以評估安裝在 Windows Server 上的特定 Web 應用程式，來判斷是否可以在不修改 Web 應用程式的情況下，進行 Azure App Service 移轉。
+1. 如果評定後確定可移轉 Web 應用程式，Migration Assistant 就會執行移轉。 您必須向 Migration Assistant 提供 Azure 帳戶存取權、選取要使用的資源群組、選取 Web 應用程式的名稱，以及其他詳細資料。
+或者，Migration Assistant 會產生一個 Azure Resource Manager 範本，您可以用其來以更自動化且可重複的方式來遷移 Web 應用程式。
+
+#### <a name="migrate-a-web-app-to-azure-app-service"></a>將 Web 應用程式遷移至 Azure App Service
+
+Migration Assistant 會從收集 Azure 帳戶的重要詳細資料來展開移轉程序，然後執行移轉。
+
+首先，您要登入 Azure 帳戶，並使用唯一的程式碼來建立 Migration Assistant 工作階段與帳戶的關聯。 接下來，您要選擇訂用帳戶、資源群組和網站的網域名稱。 您可以選擇建立新的 Azure App Service 方案來裝載應用程式，或選取現有的方案。 這項選擇將影響裝載應用程式的地理區域。 您也會有機會建立此移轉工作與現有 Azure Migrate 專案的關聯。 最後，您可以選擇略過資料庫設定，或選擇設定混合式連接來啟用資料庫連接。
+
+在 Migration Assistant 收集並驗證您的選取專案之後，其會在選取的區域和資源群組中建立所需的 Azure App Service 資源。 其會壓縮 Web 應用程式的來源檔案，並使用 Azure App Service 部署 API 來部署。 最後，其會執行選用的移轉步驟，例如協助設定混合式連線。
+
+成功移轉之後，您即必須執行所有移轉後工作。 這些情況可能包括：
+
+- 手動將 web.config 檔案中的應用程式設定和連接字串移至 Azure App Service。
+- 將資料從內部部署 SQL Server 執行個體移轉至 Azure SQL Database。
+- 設定 SSL 憑證。
+- 設定自訂網域名稱。
+- 設定 Azure Active Directory 中的權限。
+
+您也可以決定變更 Azure App Service 主控方案和其他設定，例如自動調整和部署位置。
+
+如需詳細資訊，請參閱： 
+
+[將 ASP.NET 應用程式移轉至 Azure](/learn/paths/migrate-dotnet-apps-azure)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
