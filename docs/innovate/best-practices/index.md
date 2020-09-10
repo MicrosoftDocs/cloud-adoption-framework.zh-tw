@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01410f4ae4728681bb8d349e5f87ec8d1442e3ba
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 655b7f3445af7a4d65aa759648c5acae854cd4cf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878549"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604557"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>在 Azure 中開發數位發明
 
-Azure 可協助加快每個數位發明領域的開發腳步。 「Azure 雲端採用架構」這一節是以[創新方法](../considerations/index.md)為基礎。 本節說明如何結合 Azure 服務來建立數位家發明的工具鏈。
+Azure 可協助加快每個數位發明領域的開發腳步。 「雲端採用架構」這一節是以[創新方法](../considerations/index.md)為基礎。 本節說明如何結合 Azure 服務來建立數位家發明的工具鏈。
 
 ## <a name="alignment-to-the-methodology"></a>與方法配合
 

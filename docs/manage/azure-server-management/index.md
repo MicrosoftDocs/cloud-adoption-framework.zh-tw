@@ -1,18 +1,18 @@
 ---
 title: Azure 伺服器管理服務概觀
-description: 了解「適用於 Azure 的雲端採用架構」這一節的規範性方案，可提供在您的環境中部署伺服器管理服務。
+description: 了解雲端採用架構中的規範性方案，可提供在您的環境中部署伺服器管理服務。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: d39d31dd5c8a8a280deb23be9962835bdaa318b6
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785441"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604118"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure 伺服器管理服務的概觀
 

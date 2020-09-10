@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 963e38ac80d67c1319486bc9cc7e15d9417806a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0bf289a8c5c4bfc91fe8858c7da8045fd28ce3be
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880980"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604937"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -75,10 +75,10 @@ ms.locfileid: "88880980"
 
 經過一段時間之後，這個治理 MVP 將用於累加式改進治理做法。 隨著採用率提高，業務風險也會增加。 雲端採用架構治理模型內的各種專業領域，將會持續調整以管理這些風險。 本系列的後續文章將討論影響虛構公司的公司原則變更。 這些變更會跨四個專業領域進行：
 
-- 身分識別基準 (敘述中的移轉相依性變更時)。
-- 成本管理 (採用擴大規模時)。
-- 安全性基準 (部署受保護的資料時)。
-- 資源一致性 (IT 操作開始支援任務關鍵性工作負載時)。
+- 身分識別基準專業領域 (敘述中的移轉相依性變更時)。
+- 成本管理專業領域 (採用擴大規模時)。
+- 安全性基準專業領域 (部署受保護的資料時)。
+- 資源一致性專業領域 (IT 操作開始支援任務關鍵性工作負載時)。
 
 ![累加式治理 MVP 的範例](../../../_images/govern/governance-improvement-large.png)
 

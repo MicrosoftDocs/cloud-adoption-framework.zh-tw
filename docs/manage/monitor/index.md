@@ -7,13 +7,12 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: b900826ef28aada53a9a73cdae9679d5f35f3007
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 48d813c75b695462f2af8434d7b41079b7c03905
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223757"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602721"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 

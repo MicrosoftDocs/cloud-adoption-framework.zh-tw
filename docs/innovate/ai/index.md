@@ -7,14 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 958307bacf6da16c8b8213e4ade533dc0a301248
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b138145f7cc513d3d039438a5a4318c19c30d7b4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878634"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604641"
 ---
-<!-- docsTest:casing InterpretML FairLearn -->
+<!-- docutune:casing InterpretML FairLearn -->
 
 # <a name="ai-in-the-cloud-adoption-framework"></a>雲端採用架構中的 AI
 

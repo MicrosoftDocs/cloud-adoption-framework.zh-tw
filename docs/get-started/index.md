@@ -1,19 +1,18 @@
 ---
 title: 開始使用雲端採用架構
 description: 尋找最相關的使用者入門指南，以了解您的雲端採用需求
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 08/27/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8f9e67b5980c5da316285e296b8dd96d61b6d396
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 5fd1702a7fc2dfbd99681c15c76906908ab54501
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176424"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603444"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 

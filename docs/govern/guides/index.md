@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f06cc7fed7db0cf4fafb792accc1077ea84e7a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a39440dff04e267a80fa085dfdf6c565d33762cb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880589"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604839"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -41,14 +41,9 @@ ms.locfileid: "88880589"
 
 若要開始治理旅程，請選擇下列兩個選項其中之一。 這些選項是依據綜合的客戶體驗。 標題會依據企業複雜度制定，以便於瀏覽。 您的決策可能更為複雜。 下表概述了這兩個選項之間的差異。
 
-<!-- TODO: Refactor VDC content below. -->
-<!-- docutune:casing "Azure Virtual Datacenter" -->
-
 > [!WARNING]
-> 您可能需要更強固的治理起點。 在這類情況下，請考慮使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 CAF 企業級登陸區域方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端裝載 1000 個以上的資產 (基礎結構、應用程式或資料資產)。 對於這類較大型的雲端採用工作而言，CAF 企業級登陸區域是複雜治理案例的實質選擇。
-
-<!-- markdownlint-disable MD028 -->
-
+> 您可能需要更強固的治理起點。 在這類情況下，請考慮使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)。 此方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端裝載 1000 個以上的資產 (基礎結構、應用程式或資料)。 對於較大型的雲端採用工作而言，CAF 企業級登陸區域是複雜治理案例的典型選擇。
+<!-- -->
 > [!NOTE]
 > 每個指南都不太可能完全符合您的狀況。 請選擇最接近您的狀況的指南，並用它當作起點。 在整個指南中，會提供額外資訊來協助您自訂決策，以符合特定準則。
 
@@ -68,6 +63,8 @@ ms.locfileid: "88880589"
 | 資料中心或協力廠商主機服務提供者 | 少於五個資料中心 | 超過五個資料中心 |
 | 網路功能 | 無 WAN，或是 1 &ndash; 2 個 WAN 提供者 | 複雜網路或全域 WAN |
 | 身分識別 | 單一樹系、單一網域。 | 複雜、多個樹系、多個網域。 |
+
+<!-- docutune:casing "Cost Management" "Security Baseline" -->
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>雲端治理累加式改進後所需的未來狀態
 

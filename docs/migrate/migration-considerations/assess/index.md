@@ -1,5 +1,5 @@
 ---
-title: 在移轉前驗證評估假設
+title: 在移轉之前評估工作負載並驗證評量假設
 description: 使用適用於 Azure 的雲端採用架構，了解如何在開始遷移至雲端之前驗證評估假設。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c480df86ba088679405faa893d5c18d4dd7a2ec8
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: d49071d126403ea870931837b9eb515877c54ce1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234968"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603709"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>在移轉之前評估工作負載並驗證假設
 
