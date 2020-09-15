@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d81b17fb8429fe058856f049c7ab491e7cab504f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4aedbeddc5b8376871f73862ef4121302e2696a1
+ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884754"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90534182"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性治理和合規性
 
@@ -184,6 +184,15 @@ ms.locfileid: "88884754"
 - 在適當的情況下，實以零信任方式存取 Azure 平臺。
 
 <!-- docsTest:ignore "and conditional access" -->
+
+## <a name="azure-security-benchmarks"></a>Azure 安全性效能評定
+
+Azure 安全性基準測試包含一組高度影響的安全性建議，可用來協助保護您在 Azure 中使用的大部分服務。 您可以將這些建議視為「一般」或「組織」，因為它們適用于大部分的 Azure 服務。 接著會針對每個 Azure 服務自訂 Azure 安全性效能評定建議，而此自訂指導方針包含在服務建議文章中。
+
+Azure 安全性基準測試檔會指定安全性控制和服務建議。
+
+- [安全性控制](https://docs.microsoft.com/azure/security/benchmarks/overview)： Azure 安全性效能評定建議會依安全性控制進行分類。 安全性控制代表高階廠商中立的安全性需求，例如網路安全性和資料保護。 每個安全性控制都有一組安全性建議和指示，可協助您執行這些建議。
+- [服務建議](https://docs.microsoft.com/azure/security/benchmarks/security-baselines-overview)：如果有的話，適用于 azure 服務的基準測試建議將包含專為該服務量身打造的 Azure 安全性基準測試建議。
 
 ## <a name="service-enablement-framework"></a>服務啟用架構
 
