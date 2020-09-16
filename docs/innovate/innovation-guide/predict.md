@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 200fb15bf84ce24a88a25e0c39c35859bd8363b7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5fe9338002a8a1223ad64b81f884d70de9191161
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882867"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604303"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -147,7 +147,7 @@ Azure 提供一組稱為認知服務的預先建置 AI 服務，來建置 AI 應
 
 使用 Azure 認知搜尋從您的內容中發現潛在的深入解析，包括文件、影像和媒體。 您可以探索內容中的模式和關聯性、了解情感，以及擷取關鍵片語。
 
-<!-- docsTest:ignore "Azure Search" -->
+<!-- docutune:ignore "Azure Search" -->
 
 Azure 認知搜尋會使用 Bing 和 Microsoft Office 使用的相同自然語言堆疊。 花更多時間在創新上面，而減少維護複雜雲端搜尋解決方案的時間。
 
