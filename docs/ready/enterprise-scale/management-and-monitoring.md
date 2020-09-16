@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fc2f30287ada5572cb90aaec1e814201f751e155
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9fb3c8acedd8673afad6036ed9a2c12860768777
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574664"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681293"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -34,7 +34,7 @@ _圖1：平臺管理與監視。_
   - 作業系統記錄檔;例如，Internet Information Services、Windows 事件追蹤和 syslog
   - 資源健康狀態事件
 - 安全性審核記錄，並在整個組織的整個 Azure 資產中達成水準安全性鏡頭：
-  - 內部部署安全性資訊和事件管理的潛在整合 (SIEM) 系統，例如 ServiceNow 或 ArcSight
+  - 內部部署安全性資訊和事件管理的潛在整合 (SIEM) 系統，例如 qRadar 或 ArcSight
   - Azure 活動記錄
   - Azure Active Directory (Azure AD) 審核報表
   - Azure 診斷服務、記錄和計量;Azure Key Vault audit 事件;網路安全性群組 (NSG) 流量記錄;和事件記錄檔
@@ -52,7 +52,7 @@ _圖1：平臺管理與監視。_
 
 **設計建議：**
 
-- 您可以使用單一 [ [監視器記錄] 工作區](/azure/azure-monitor/platform/design-logs-deployment) 來集中管理平臺，但角色型存取控制 (RBAC) 和資料主權需求會強制執行個別的工作區。 集中式記錄對於營運管理小組所需的可見度而言是不可或缺的。 記錄集中的驅動有關變更管理、服務健康狀態、設定，以及 IT 營運的大部分其他層面的報告。 在集中式工作區模型上進行融合可減少系統管理工作，以及可檢視性中的間隙機會。
+- 使用單一 [監視器記錄工作區](/azure/azure-monitor/platform/design-logs-deployment) 來集中管理平臺，但角色型存取控制 (RBAC) 、資料主權需求和資料保留原則會強制執行不同的工作區。 集中式記錄對於營運管理小組所需的可見度而言是不可或缺的。 記錄集中的驅動有關變更管理、服務健康狀態、設定，以及 IT 營運的大部分其他層面的報告。 在集中式工作區模型上進行融合可減少系統管理工作，以及可檢視性中的間隙機會。
 
     在企業規模架構的環境中，集中式記錄主要是與平臺作業相關。 這項強調不會防止針對以 VM 為基礎的應用程式記錄使用相同的工作區。 使用以資源為中心的存取控制模式設定的工作區時，會強制執行細微的 RBAC，以確保應用程式小組只能存取其資源的記錄。 在此模型中，應用程式小組藉由減少其管理額外負荷，受益于使用現有的平臺基礎結構。 對於任何非計算資源（例如 web 應用程式或 Azure Cosmos DB 資料庫），應用程式小組可以使用自己的 Log Analytics 工作區，並設定診斷和計量以在此路由傳送。
 

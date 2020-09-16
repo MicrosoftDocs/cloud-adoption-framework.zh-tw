@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c2c9437efc465f500d7e9eb8a7f435309be5628b
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602231"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681373"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -174,9 +174,9 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 當您部署合作夥伴網路技術和 Nva 時，請遵循合作夥伴廠商的指導方針，以確保 Azure 網路功能沒有任何衝突的設定。
 
-- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足所有的可轉移網路拓撲需求，包括使用 partner Nva 的能力。
+- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足所有的可轉移網路拓撲需求，包括使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。 
 
-- 請勿使用現有的內部部署網路，例如多重通訊協定標籤切換 (MPLS) ，以在 Azure 區域之間連接 Azure 資源。 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。
+- 請勿使用現有的內部部署網路（例如多重通訊協定標籤）切換 (MPLS) 來跨 Azure 區域連接 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。 這是因為 Microsoft 骨幹的效能與執行時間特性，以及路由簡單的功能。 這項建議會解決 Microsoft 骨幹的效能與執行時間特性。 它也鼓勵路由簡化。
 
 - 針對您從不是以虛擬 WAN 為基礎的中樞和輪輻網路拓撲進行遷移的棕色地帶案例，請參閱 [遷移至 Azure 虛擬 wan](/azure/virtual-wan/migrate-from-hub-spoke-topology)。
 
@@ -246,7 +246,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 集中式 Nva 和複雜/細微路由的相依性很高。
 
-- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。
+- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。  這可讓適當的流量控制符合大部分的分割和檢查需求。
 
   ![說明中樞和輪輻網路拓撲的圖表。](./media/hub-and-spoke-topology.png)
 
@@ -288,7 +288,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 當您的組織需要跨兩個 Azure 區域的中樞和輪輻網路架構，以及登陸區域之間的全球傳輸連線能力時，需要跨 Azure 區域的虛擬網路。 您可以藉由將中央中樞虛擬網路與全域虛擬網路對等互連進行虛擬化，並使用 Udr 和 Nva 來啟用全域傳輸路由，來執行此架構。 因為複雜性和管理的額外負荷很高，建議您部署具有虛擬 WAN 的全域傳輸網路架構。
 
-- 使用 [Azure 監視器的網路深入](/azure/azure-monitor/insights/network-insights-overview) 解析 (目前為預覽狀態) 來監視 Azure 上網路的端對端狀態。
+- 使用 [網路 (預覽) 的 Azure 監視器 ](/azure/azure-monitor/insights/network-insights-overview) ，來監視 Azure 上網路的端對端狀態。
 
 - 請勿為每個中央中樞虛擬網路建立超過200個對等互連連線。 雖然虛擬網路支援最多500對等互連連線，但具有私人對等互連的 ExpressRoute 僅支援從 Azure 到內部部署的最多200首碼。
 
@@ -309,9 +309,6 @@ _圖4：傳統的 Azure 網路拓撲。_
 - ExpressRoute Global 觸及可在許多 [expressroute 對等互連位置](/azure/expressroute/expressroute-global-reach#availability)中使用。
 
 - ExpressRoute Direct 可讓您不需額外成本，即可建立多個 ExpressRoute 線路，最多可達 ExpressRoute Direct 埠容量 (10 Gbps 或 100 Gbps) 。 它也可讓您直接連接到 Microsoft 的 ExpressRoute 路由器。 針對 100-Gbps SKU，最小電路頻寬為 5 Gbps。 若為 10 Gbps SKU，最小電路頻寬為 1 Gbps。
-
-<!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending" -->
 
 **設計建議：**
 

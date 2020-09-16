@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c806816f8d85e71f1b310dab0e89013e9946bc03
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: bac5bf2884cac8d884a019894a414ff8f863ede6
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603312"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680983"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -239,7 +239,7 @@ ms.locfileid: "89603312"
 
 ## <a name="value-statement"></a>Value 語句
 
-這些步驟可協助小組透過更佳的變更管理和專案關係人的調整來加速其遷移工作。 這些步驟可能會使進程變慢。 這些步驟也會移除常見的封鎖，並更快速地實現商業價值。
+這些步驟可協助小組透過更佳的變更管理和專案關係人的調整來加速其遷移工作。 這些步驟也會移除常見的封鎖，並更快速地實現商業價值。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 1b33489f16990d7b2677e1cb128c9c2dcce0c6aa
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7c24e03b2727e31a673675ba62fc76a90c117e03
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885706"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681265"
 ---
 # <a name="cloud-security-functions"></a>雲端安全性功能
 
@@ -29,14 +29,14 @@ ms.locfileid: "88885706"
 下列每一篇文章提供各項功能的相關資訊。 每篇文章都提供目標摘要、函式如何因威脅環境或雲端技術變更而演進，以及對其成功至關重要的關聯性和相依性。
 
 - [原則和標準](./cloud-security-policy-standards.md)
-- [安全性作業中心 (SOC)](./cloud-security-operations-center.md)
+- [安全性作業](./cloud-security-operations-center.md)
 - [安全性架構](./cloud-security-architecture.md)
 - [安全性合規性管理](./cloud-security-compliance-management.md)
 - [人員安全性](./cloud-security-people.md)
 - [應用程式安全性和 DevSecOps](./cloud-security-application-security-devsecops.md)
 - [資料安全性](./cloud-security-data-security.md)
 - [基礎結構和端點安全性](./cloud-security-infrastructure-endpoint.md)
-- [身分識別和金鑰](./cloud-security-identity-keys.md)
+- [身分識別與金鑰管理](./cloud-security-identity-keys.md)
 - [威脅情報](./cloud-security-threat-intelligence.md)
 - [狀態管理](./cloud-security-posture-management.md)
 - [事件準備](./cloud-security-incident-preparation.md)

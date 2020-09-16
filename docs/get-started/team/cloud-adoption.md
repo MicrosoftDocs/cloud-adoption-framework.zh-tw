@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 337e02f787c8ebcc18f206b4dfa87a894059262a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c02d81c09b331e8702057f5199d70369bc1a834b
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884193"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680955"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：建立雲端採用小組
 
@@ -21,6 +21,8 @@ ms.locfileid: "88884193"
 某些雲端採用小組專門專注于雲端遷移，而其他則著重于利用雲端技術的創新。 有些小組包含完成大量採用工作所需的廣泛技術專長，例如完整的資料中心遷移，而其他小組則具有更緊密的技術焦點。
 
 較小的小組可能會在專案之間移動，以達成特定目標。 例如，資料平臺專家的團隊可能會專注于協助將 SQL Database 虛擬機器 (Vm) 轉換為 SQL PaaS 實例。
+
+隨著雲端採用的擴充，客戶將受益于 [雲端平臺功能](../../organize/cloud-platform.md)專屬的團隊。 小組會利用自動化的部署和程式碼重複使用，以加速成功的採用。 專注于雲端平臺功能的人員可以執行基礎結構、應用程式模式、治理和其他支援的資產，以促進更高的效率與一致性，並在組織中投注信任感雲端原則。 小型組織和小型採用小組並沒有專屬的雲端平臺小組。 我們建議您在您的採用小組中建立自動化功能，以開始建立這個重要的雲端肌肉。
 
 ![開始打造雲端採用小組](../../_images/get-started/adoption-team-map.png)
 

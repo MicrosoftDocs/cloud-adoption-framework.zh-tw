@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 01920086c75c235662b098a76afa2e8a4afc5a02
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 82e435fc0c486136b399959d6f205b76590d6c00
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877189"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681356"
 ---
 <!-- docsTest:disable -->
-<!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
+<!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
@@ -83,6 +83,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 
 | 資產類型                      | 名稱前置詞 |
 |---------------------------------|-------------|
+| 管理群組                | mg         |
 | 資源群組                  | rg-         |
 | 原則定義               | 策略     |
 | API 管理服務實例 | apim       |
@@ -93,6 +94,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 |----------------------------------|-------------|
 | 虛擬網路                  | vnet-       |
 | 子網路                           | snet-       |
+| 虛擬網路對等互連          | 等       |
 | 網路介面 (NIC)          | nic-        |
 | 公用 IP 位址                | pip-        |
 | 負載平衡器 (內部)          | lbi-        |
@@ -104,7 +106,11 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | VPN 連線                   | cn-         |
 | 應用程式閘道              | agw-        |
 | 路由表                      | 往      |
+| 使用者定義的路由 (UDR)          | udr        |
 | 流量管理員設定檔          | traf-       |
+| Front Door                       | fd         |
+| CDN 設定檔                      | cdnp-       |
+| CDN 端點                     | cdne-       |
 
 ### <a name="compute-and-web"></a>計算和網路
 
@@ -115,7 +121,8 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 可用性設定組            | 可用性/mb      |
 | VM 儲存體帳戶          | stvm        |
 | Azure Arc 連線的電腦 | arcm-       |
-| 容器實例          | aci        |
+| 容器登錄          | cr         |
+| 容器實例          | ci         |
 | AKS 叢集                 | aks        |
 | Service Fabric 叢集      | sf         |
 | App Service 環境     | ase        |
@@ -159,7 +166,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 
 | 資產類型                      | 名稱前置詞 |
 |---------------------------------|-------------|
-| Azure Analysis Services server  | 按照         |
+| Azure Analysis Services server  | as          |
 | Azure Databricks 工作區      | dbw-        |
 | Azure 串流分析          | asa-        |
 | Azure Data Factory              | 放下        |
@@ -195,7 +202,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | Application Insights    | appi-       |
 | 復原服務保存庫 | rsv-        |
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -238,11 +245,12 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 
 ### <a name="example-names-general"></a>範例名稱：一般
 
-| 資產類型                      | 影響範圍                              | [格式]                                                      | 範例                                                                                                                |
-|---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| 訂用帳戶                    | 帳號 <br> Enterprise 合約 | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001 |
-| 資源群組                  | 訂用帳戶                       | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
-| API 管理服務實例 | 全球                             | apim\<App or service name\>                                | apim-navigator-生產                                                                                                     |
+| 資產類型                      | 影響範圍                                 | [格式]                                                      | 範例                                                                                           |
+|---------------------------------|---------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 管理群組                | 業務單位及/或環境類型 | mg\<Business Unit\>\[-\<Environment type\>\]               | <li> mg-mktg <li> mg-小時 <li> mg-corp-生產 <li> mg-fin-用戶端                                       |
+| 訂用帳戶                    | 帳號 <br> Enterprise 合約    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
+| 資源群組                  | 訂用帳戶                          | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
+| API 管理服務實例 | 全球                                | apim\<App or service name\>                                | apim-navigator-生產                                                                                |
 
 > [!NOTE]
 > 本檔中上述和其他位置的範例名稱會參考三位數填補 (\<\#\#\#\>) 。 即。  mktg-生產-*001*

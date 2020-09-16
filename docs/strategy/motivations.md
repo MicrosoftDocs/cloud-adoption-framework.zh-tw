@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d9cddbe2c43339428235d580004ba5ffd232074e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: f76231e6ecbe657d07eedaa7eb6a8b803af8fbc5
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602128"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681316"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機：為何要移至雲端？
 
@@ -26,7 +26,7 @@ ms.locfileid: "89602128"
 
 | 重大商業事件 | 移轉 | 創新 |
 |---|---|---|
-| 資料中心的退出 <br><br> 合併、收購或撤資 <br><br> 減少資本支出 <br><br> 終止對任務關鍵性技術的支援 <br><br> 對法規合規性變更的回應 <br><br> 新的資料主權需求 <br><br> 減少中斷和 it 穩定性的改進 <br><br> <br><br> | 節省成本 <br><br> 降低廠商或技術上的複雜性 <br><br> 追求內部營運的最佳化 <br><br> 提升業務靈活性 <br><br> 為了準備新技術能力 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 複雜 it 組合的整合 <br><br> | 為了準備新技術能力 <br><br> 打造新的技術功能 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 改善客戶體驗和參與 <br><br> 產品或服務的轉型 <br><br> 新產品或服務的市場中斷 <br><br> Democratization 和/或自助環境 |
+| 資料中心的退出 <br><br> 合併、收購或撤資 <br><br> 減少資本支出 <br><br> 終止對任務關鍵性技術的支援 <br><br> 對法規合規性變更的回應 <br><br> 新的資料主權需求 <br><br> 減少中斷和 IT 穩定性的改進 <br><br> <br><br> | 節省成本 <br><br> 降低廠商或技術上的複雜性 <br><br> 追求內部營運的最佳化 <br><br> 提升業務靈活性 <br><br> 為了準備新技術能力 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 複雜 it 組合的整合 <br><br> | 為了準備新技術能力 <br><br> 打造新的技術功能 <br><br> 調整以符合市場需求 <br><br> 調整以符合地理需求 <br><br> 改善客戶體驗和參與 <br><br> 產品或服務的轉型 <br><br> 新產品或服務的市場中斷 <br><br> Democratization 和/或自助環境 |
 
 ## <a name="classify-your-motivations"></a>將您的動機分類
 

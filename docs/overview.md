@@ -1,6 +1,6 @@
 ---
 title: 適用于 Azure 的 Microsoft 雲端採用架構檔
-description: 取得工具、指引和敘述，協助塑造策略，並在雲端採用生命週期的所有階段推動所需的業務成果。
+description: 取得工具、指引和敘述，協助塑造策略，並在您的雲端採用旅程期間推動所需的業務成果。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 1e2c1cb95e80ba5aa4926807ef505d748013e060
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c9e6966eff17c475ff64b4272dd9baf9f08bc0fe
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604218"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681418"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -27,7 +27,7 @@ ms.locfileid: "89604218"
 
 <!-- markdownlint-enable MD034 -->
 
-雲端採用架構彙集了 Microsoft 員工、合作夥伴和客戶的雲端採用最佳作法。 它提供一組工具、指引和敘述，協助塑造技術、業務和人員策略，以在採用工作期間推動所需的業務成果。 本指南適用于雲端採用生命週期的下列階段，可讓您在適當的時間輕鬆存取正確的指引。
+雲端採用架構彙集了 Microsoft 員工、合作夥伴和客戶的雲端採用最佳作法。 它提供一組工具、指引和敘述，協助塑造技術、業務和人員策略，以在您的雲端採用工作期間推動所需的業務成果。 請參閱以下每個方法的指導方針，讓您可以在正確的時間輕鬆存取正確的指引。
 
 | <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> | <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|--|--|

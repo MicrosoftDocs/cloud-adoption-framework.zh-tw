@@ -7,20 +7,20 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 507fdcba779f70b418e5d01a7058345967750af5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 084b78927dfacff6260fa53aab2ca8535d417acf
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877019"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681385"
 ---
 # <a name="first-cloud-adoption-project"></a>第一個雲端採用專案
 
 其中有學習曲線和與雲端採用規劃相關聯的時間承諾。 即使是有經驗的團隊，適當的規劃也需要時間：讓專案關係人、收集和分析資料的時間、驗證長期決策的時間，以及調整人員、程式和技術的時間。 在最高生產力的採用工作中，計畫會隨著採用而並行成長、每個版本的改進，以及將每個工作負載遷移至雲端。 請務必瞭解雲端採用方案與雲端採用策略之間的差異。 您需要妥善定義的策略，以促進及引導採用雲端採用計畫。
 
-<!-- docutune:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+<!-- docutune:ignore "Strategy, Plan, Ready, Adopt, and Manage" -->
 
-適用于 Azure 的雲端採用架構概述雲端採用的流程，以及裝載于雲端的工作負載作業。 跨策略、計畫、就緒、採用和操作階段的每個程式都需要稍微擴充技術、業務和營運技巧。 其中有些技能可能來自于導向學習。 但其中有許多都是透過實際操作經驗獲得最有效率的。
+適用于 Azure 的雲端採用架構概述雲端採用的流程，以及裝載于雲端的工作負載作業。 跨策略、計畫、就緒、採用和管理方法的每個程式，都需要稍微擴充技術、商務和營運技能。 其中有些技能可能來自于導向學習。 但其中有許多都是透過實際操作經驗獲得最有效率的。
 
 以平行方式啟動第一個採用程式與計畫的開發，可提供一些優點：
 

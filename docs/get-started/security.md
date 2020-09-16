@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b46c3e7247cbfcae5de8b60ad77f0e727250ac52
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1c9a2faf35a2137e5dd04c23a8cb49c6dd02f5b5
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603129"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681005"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：跨企業環境執行安全性
 
@@ -65,7 +65,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 - **長期架構決策：** 使用正確的決策建立長期基礎。 這些都是很困難且較昂貴的變更。
 
   - [打造企業分割策略，並將技術架構與 it (網路分割、身分識別分割等 ) ](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [單一企業目錄](/azure/architecture/framework/security/identity#single-enterprise-directory)
+  - [單一企業目錄](/azure/architecture/framework/security/design-identity#use-a-single-enterprise-directory)
   - [服務的驗證策略](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
   - [許可權指派策略](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
 

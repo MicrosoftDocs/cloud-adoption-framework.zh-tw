@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c5dd7d7e1b40172c6dc996bc865d72ac532f50c
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572913"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681413"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
@@ -60,12 +60,12 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 ## <a name="align-the-cloud-adoption-plan"></a>調整雲端採用方案
 
-雲端採用生命週期的策略和規劃階段的總覽頁面，每個都參考 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本結合在一起。 如果您尚未這麼做，您可能會想要先完成與 [策略](../strategy/index.md) 和 [規劃](../plan/index.md) 相關的練習，再對齊新專案。
+策略方法和計畫方法的總覽頁面都參考 [策略和計畫範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。 該範本會組織決策和資料點，以配合採用的特定計劃，將雲端採用方案的範本結合在一起。 在調整新專案之前，考慮完成 [策略方法](../strategy/index.md) 和 [計畫方法](../plan/index.md) 中的練習。
 
 下列文章支援雲端採用方案的對齊：
 
 - [工作負載](./workloads.md)：在雲端遷移長篇中對齊功能，以捕獲要遷移或現代化的每個工作負載。 新增和修改這些功能以開始遷移您的前10個工作負載。
-- [資產](./assets.md)：每個資產 (VM、應用程式或資料) 都會以每個工作負載下的使用者案例表示。 新增和修改這些使用者案例，以配合您的數位資產。
+- [資產](./assets.md)：每個資產 (虛擬機器、應用程式或資料) 都會以每個工作負載下的使用者案例表示。 新增和修改這些使用者案例，以配合您的數位資產。
 - [合理化](./review-rationalization.md)：當每個工作負載都已定義時，該工作負載的初始假設可能會受到挑戰。 這可能會導致每個資產下的工作變更。
 - 建立[發行計畫](./iteration-paths.md)：反復專案路徑會將工作與各種版本和反復專案相配合，以建立發行計畫。
 - [建立時間](./timelines.md)軸：定義每個反復專案的開始和結束日期會建立時間軸，以管理整個專案。
