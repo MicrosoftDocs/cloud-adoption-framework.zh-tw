@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bf5a02b6996c5ff71d4c12041142655223c5cce8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884958"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605054"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "88884958"
 
 ### <a name="resize-a-virtual-machine"></a>調整虛擬機器大小
 
-Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而使用此工具遷移的虛擬機器可能已根據您的預先移轉需求進行大小調整。
+Azure Migrate 會在其預先移轉評估階段中執行適當大小分析，而使用此工具遷移的虛擬機器可能已根據您的預先移轉需求進行大小調整。
 
 不過，對於使用其他方法建立或遷移的虛擬機器，或者在移轉後虛擬機器需求需要調整的情況下，您可能會想要進一步調整虛擬機器的大小。
 
@@ -129,7 +129,7 @@ Azure 成本管理和計費可搭配 Azure Advisor，提供成本最佳化建議
 ::: zone target="docs"
 
 - [教學課程：透過建議最佳化成本](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [使用 Azure 計費與成本管理避免非預期的費用](/azure/billing/billing-getting-started)
+- [使用 Azure 成本管理 + 計費避免非預期的費用](/azure/billing/billing-getting-started)
 - [使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

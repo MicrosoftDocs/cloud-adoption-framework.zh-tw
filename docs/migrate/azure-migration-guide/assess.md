@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c37a7b51de815169e450f72e0bbf99cf8fee49cf
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f8805746d1ae06978c179db076d0312fac89311c
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884635"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605299"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
@@ -90,7 +90,7 @@ Azure Migrate 會使用服務對應來增強環境中的報告功能和相依性
 
 ## <a name="challenge-assumptions"></a>[挑戰假設](#tab/Challenge-Assumptions)
 
-在理想的移轉中，每個資產 (基礎結構、應用程式或資料) 都會與雲端平台相容，並準備好進行移轉或現代化。 但事實上，並非所有工作負載都應該遷移至雲端。 並非每個資產都會與雲端平台相容。 在將工作負載遷移至雲端之前，請先評估每個工作負載和所有相依的資產 (基礎結構、應用程式和資料)。
+在理想的移轉中，每個資產 (基礎結構、應用程式或資料) 都會與雲端平台相容，並準備好進行移轉或現代化。 事實上，並非所有工作負載都應該遷移至雲端。 並非每個資產都會與雲端平台相容。 在將工作負載遷移至雲端之前，請先評估每個工作負載和所有相依的資產 (基礎結構、應用程式和資料)。
 
 [雲端採用架構的方案方法](../../plan/index.md)會建議讀者使用[漸進式合理化](../../digital-estate/rationalize.md#incremental-rationalization)及[以十為單位](../../digital-estate/rationalize.md#release-planning)方法來評估和規劃移轉。 本指南也包含[使用 Azure Migrate 評估數位資產](../../plan/contoso-migration-assessment.md)的詳細最佳做法。
 
