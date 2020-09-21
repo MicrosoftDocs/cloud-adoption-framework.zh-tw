@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c633fe36e4817ad92501085b8309acf945397bc3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 952462547953c1ade7e426d6369f941484185162
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776137"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -109,7 +109,7 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
     ![顯示遷移程式圖表的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -196,7 +196,7 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
     ![顯示存取金鑰的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/access-key.png)
 
-<!-- docsTest:casing "Failover Cluster feature" -->
+<!-- docutune:casing "Failover Cluster feature" -->
 
 ### <a name="add-sql-server-vms-to-contoso-domain"></a>將 SQL Server VM 新增至 Contoso 網域
 

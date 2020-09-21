@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dba0ab6db022d4d2a18dc0734e37d59501eb6738
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ec22d8e94f9ccd82e4b68e7d56dcb5bc032bf4f8
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776239"
 ---
 <!-- docutune:ignore InterpretML FairLearn -->
 
@@ -50,10 +50,10 @@ Microsoft 致力於將 AI 交付給第一位人的道德準則，以促進 AI。
 
 ## <a name="tools-for-responsible-ai"></a>負責任 AI 的工具
 
-有一些工具可協助開發人員和資料科學家瞭解、保護和控制 AI 系統。 這些工具可以來自各種來源，包括 Azure Machine Learning、開放原始碼專案及研究。
+工具可協助開發人員和資料科學家瞭解、保護和控制 AI 系統。 這些工具可以來自各種來源，包括 Azure Machine Learning、開放原始碼專案及研究。
 
 - **瞭解：** 基於各種原因，AI 系統可能會發生非預期的行為。 軟體工具可協助您瞭解 AI 系統的行為，讓您能夠更妥善地針對您的需求量身打造。 這種工具類型的範例包括 InterpretML 和 Fairlearn。
-- **保護：** AI 系統依賴資料。 軟體工具可協助您保護這些資料，方法是保留隱私權並確保機密性。 這類工具的範例包括適用于機器學習的機密運算、whitenoise 差異隱私權、密封同態加密和 presidio。
+- **保護：** AI 系統依賴資料。 軟體工具可協助您保護這些資料，方法是保留隱私權並確保機密性。 這類工具的範例包括適用于機器學習服務的機密運算、白色雜訊差異隱私權、密封同態加密和 Presidio。
 - **控制項：** 負責任的 AI 需要治理和控制整個開發週期。 Azure Machine Learning 可進行審核記錄，以獲得更佳的可追蹤性、歷程和控制，以符合法規需求。 範例包括審核記錄和追蹤性。
 
 ## <a name="next-steps"></a>後續步驟

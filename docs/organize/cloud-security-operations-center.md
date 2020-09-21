@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b6968857836c48fd34ebafa5434b529f07f553e6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 373e9b9d6a64e43beb44860507db4b877e165651
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776358"
 ---
-<!-- docsTest:casing "Cyber Defense Operations Center" -->
+<!-- docutune:casing "Cyber Defense Operations Center" -->
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
 # <a name="cloud-soc-functions"></a>雲端 SOC 函數

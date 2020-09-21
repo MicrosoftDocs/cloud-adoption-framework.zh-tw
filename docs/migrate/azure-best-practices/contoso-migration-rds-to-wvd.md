@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6c4259f112c74d6f5fb7c24a0ca409e25ff68268
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 30340f9dfcacfb3aafe2dfeee5cbad21b6f75110
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602672"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775831"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -223,7 +223,7 @@ Contoso 會分析資料，以判斷共用的 Windows 虛擬桌面資源和個人
 
 因為 Windows 虛擬桌面不支援 (Upd) 的使用者設定檔磁片，所以 Contoso 需要透過 [FSLogixMigration PowerShell 模組](https://aka.ms/FSLogixMigrationPreviewModule)將所有 upd 轉換成 FSLogix。
 
-<!-- docsTest:casing FSLogixMigration -->
+<!-- docutune:casing FSLogixMigration -->
 
 在 Contoso 匯入 FSLogixMigration 模組之後，它會執行下列 PowerShell Cmdlet，以從 Upd 遷移至 FSLogix。
 

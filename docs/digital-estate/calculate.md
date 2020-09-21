@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 355b6fbb79f4e00333f5b09cae4f8d66cc57e532
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2f0aa5860ab3ca61a068ad160f7045c5318d084e
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774182"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>根據數位資產調整成本模型以預測雲端成本
 
@@ -27,4 +27,4 @@ Azure 定價工具可協助您以透明和精確度管理雲端費用，讓您�
 
 - [Azure 定價計算機](https://azure.microsoft.com/pricing/calculator)：使用我們的定價計算機來預估預期的每月帳單。 使用計費入口網站隨時追蹤實際的帳戶使用量及帳單。 設定自動電子郵件計費警示，以在您的支出超過您設定的金額時通知您。
 
-- [Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview)： Azure 成本管理和計費是一個成本管理解決方案，可協助您有效地使用及管理 Azure 和其他雲端資源。 請透過 Azure、Amazon Web Services 和 Google Cloud Platform 的應用程式開發介面 (API)，收集雲端使用量和帳單資料。 這些資料可讓您獲得所有雲端平台之資源取用量及成本的完整可見度，並以整合的單一檢視呈現。 持續監控雲端取用量和成本趨勢。 針對您的預算追蹤實際的雲端費用，以避免超支。 偵測異常開銷和使用效益不彰的情況。 使用歷程記錄資料，提升您預測雲端使用量和開支的精準度。
+- [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview)： Azure 成本管理 + 計費是一個成本管理解決方案，可協助您有效地使用及管理 Azure 和其他雲端資源。 請透過 Azure、Amazon Web Services 和 Google Cloud Platform 的應用程式開發介面 (API)，收集雲端使用量和帳單資料。 這些資料可讓您獲得所有雲端平台之資源取用量及成本的完整可見度，並以整合的單一檢視呈現。 持續監控雲端取用量和成本趨勢。 針對您的預算追蹤實際的雲端費用，以避免超支。 偵測異常開銷和使用效益不彰的情況。 使用歷程記錄資料，提升您預測雲端使用量和開支的精準度。

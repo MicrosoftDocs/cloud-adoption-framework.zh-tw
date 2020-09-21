@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 404742da586fbd80c8963e71200cab8501feaff2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ef99de4a051c07fe88ca93286c86208867cde88c
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776273"
 ---
-<!-- docsTest:casing GRC -->
+<!-- docutune:casing GRC -->
 <!-- cspell:ignore reimagine -->
 
 # <a name="understand-cloud-operating-models"></a>了解雲端作業模型

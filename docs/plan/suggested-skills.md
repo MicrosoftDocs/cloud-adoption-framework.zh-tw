@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776103"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>開始使用技能就緒路徑
 
@@ -43,7 +43,7 @@ IT 人員成員可能會覺得其角色和職位的有點焦慮，因為他們�
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
 以下是在 Microsoft Learn 上量身打造的學習路徑範例，其符合雲端採用架構的計畫方法：
 
-<!-- docsTest:ignore "on premises" -->
+<!-- docutune:ignore "on premises" -->
 
 [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices)： DevOps 是人員、程式和產品的聯集，可讓您將價值持續傳遞給您的終端使用者。 Azure DevOps 服務中所提供的工具，能協助您辦到。 使用 Azure DevOps，您可以在雲端或內部部署中建立、測試及部署任何應用程式。
 

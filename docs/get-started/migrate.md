@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: bac5bf2884cac8d884a019894a414ff8f863ede6
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90680983"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775661"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -178,7 +178,7 @@ ms.locfileid: "90680983"
 
 在每個反復專案中，雲端採用小組會在遷移工作負載時獲得更好的效能。 這些步驟可協助技術小組成熟其功能：
 
-1. 使用 [Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，在純資訊即服務 (IaaS) 方法中遷移您的第一個工作負載。
+1. 使用 [Azure 遷移指南](../migrate/azure-migration-guide/index.md)中所述的工具，在單純的基礎結構即服務中遷移您的第一個工作負載 (IaaS) 方法。
 2. 使用 [遷移範例](../migrate/azure-best-practices/contoso-migration-overview.md)展開工具選項，以使用遷移和現代化。
 3. 使用 [Azure 雲端遷移最佳做法](../migrate/azure-best-practices/index.md)中所述的廣泛方法來開發技術策略。
 4. 透過有效的遷移處理站方法來改善一致性、可靠性和效能，如 [遷移程式改進](../migrate/migration-considerations/index.md)所述。

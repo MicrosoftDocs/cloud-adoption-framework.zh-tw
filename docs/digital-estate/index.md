@@ -7,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8215c2384831903f90f7ccf7fec3071f1c641b2d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 83ff6d27a400ac3feb94ddc28aa43793b3d28793
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881286"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680968"
 ---
 # <a name="what-is-a-digital-estate"></a>什麼是數位資產？
 
@@ -30,10 +30,11 @@ ms.locfileid: "88881286"
 
 - **資料驅動創新：** 在現今的數位導向的市場中，若沒有堅實的資料基礎，就很難推出新的產品或服務。 在使用雲端的資料創新工作中，重點主要會放在整個組織的資料接收器上。
 
+- **操作穩定性：** 企業依賴穩定的技術來有效率地運作。 在競爭激烈的市場中，幾乎沒有停機時間和服務可靠性非常重要。 當操作穩定性是優先考量時，數位資產應該以對穩定作業的正面/負面影響來評估。 操作穩地性為優先考量時，商務持續性、災害復原和工作負載的可靠性以及每個資產，都是必要的量值。
+
 在組織了解最重要的轉型型態後，數位資產規劃就會變得更容易掌握。
 
-> [!TIP]
-> 每種類型的轉型分別可從三個角度來測量。 公司通常會以平行方式完成這三項轉換。 強烈建議公司領導階層和雲端策略小組均需同意，轉型對於企業成功是不可或缺的。 有此認知作為基礎，多個方案間就能有通用的語言和計量。
+>  每種類型的轉型分別可從上述角度來測量。 公司通常會以平行方式完成這些轉換。 強烈建議公司領導階層和雲端策略小組均需同意，轉型對於企業成功是不可或缺的。 有此認知作為基礎，多個方案間就能有通用的語言和計量。
 
 ## <a name="how-can-a-financial-model-be-updated-to-reflect-the-digital-estate"></a>如何更新財務模型以反映數位資產？
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dbce6299f2a676f0ef5d529c66f95d49dcb33b05
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a53c0ae2673abb7aee07a4ff15b7d60adbb479a9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775559"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -97,10 +97,10 @@ ms.locfileid: "88883972"
 | 類型 | 詳細資料 | 使用方式 |
 |---|---|---|
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫、低至中度的流量 web 伺服器。 |
-| **計算最佳化** | CPU 與記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理、應用程式伺服器。 |
+| **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理、應用程式伺服器。 |
 | **記憶體優化** | 高記憶體對 CPU。 | 適用於關聯式資料庫、中型到大型快取、記憶體內分析。 |
 | **儲存體最佳化** | 高磁片輸送量和 i/o。 | 適用于大型資料、SQL 和 NoSQL 資料庫。 |
-| **GPU 最佳化** | 特製化 VM。 一或多個 GPU。 | 繁重圖形與視訊編輯。 |
+| **GPU 最佳化** | 特製化 VM。 單一或多個 GPU。 | 繁重圖形與視訊編輯。 |
 | **高效能** | 最快、最強的 CPU。 具有選用的高輸送量網路介面 (RDMA) 的 Vm。 | 關鍵高效能應用程式。 |
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。
@@ -184,7 +184,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - 分析資料以產生 Azure 資源群組和資源的預算基準。
 - 識別可讓您減少大小、停止或暫停資源的使用模式，以進一步降低成本。
 
-本節中的最佳作法包括使用 Azure Hybrid Benefit 和 Azure 保留的虛擬機器執行個體、降低訂用帳戶的雲端費用、使用 Azure 成本管理和計費來進行成本預算和分析、監視資源和執行資源群組預算，以及優化監視、儲存體和 Vm。
+本節中的最佳作法包括使用 Azure Hybrid Benefit 和 Azure 保留的虛擬機器執行個體、降低訂用帳戶的雲端費用、使用 Azure 成本管理 + 計費來進行成本預算和分析、監視資源和執行資源群組預算，以及優化監視、儲存體和 Vm。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>最佳做法：利用 Azure Hybrid Benefit
 
@@ -222,7 +222,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 您終究會有多個 Azure 訂用帳戶。 例如，您可能需要額外的訂用帳戶來將開發與生產界限分開，或者您的平台可能需要為每個用戶端使用不同的訂用帳戶。 因此，跨所有訂用帳戶將資料報告彙總到單一平台的功能非常有價值。
 
-若要這樣做，您可以使用 Azure 成本管理和計費 API。 然後，將資料匯總成單一來源（例如 Azure SQL Database）後，您可以使用 Power BI 之類的工具來呈現匯總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要對成本管理進行主動式見解的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
+若要這樣做，您可以使用 Azure 成本管理 + 計費 API。 然後，將資料匯總成單一來源（例如 Azure SQL Database）後，您可以使用 Power BI 之類的工具來呈現匯總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要對成本管理進行主動式見解的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
 
 **瞭解更多資訊：**
 
@@ -238,7 +238,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - 例如，若您的工作負載在週一到週五上午 8 點到下午 6 點的使用量非常高，但在那些時間以外的時間幾乎沒有使用量，您可以在尖峰時間以外將 VM 降級。 這可能表示變更 VM 大小，或使用虛擬機器擴展集來自動相應增加或相應減少 VM。
 - 某些公司依行事曆設定何時需要 VM、何時不需要。
 - 除了 VM 監視之外，您也應該監視過度使用或低使用量的其他網路資源 (例如 ExpressRoute 與虛擬網路閘道)。
-- 您可以使用 Microsoft 工具（例如 Azure 成本管理與計費、Azure 監視器和 Azure Advisor）來監視 VM 使用量。 也有第三方工具可用。
+- 您可以使用 Microsoft 工具（例如 Azure 成本管理 + 計費、Azure 監視器和 Azure Advisor）來監視 VM 使用量。 也有第三方工具可用。
 
 **瞭解更多資訊：**
 
@@ -262,9 +262,9 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - [自動關機 vm](/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms) 會設定 vm 的夜間終止時間。 使用這項功能將會每晚停止非生產的 Vm，要求開發人員在準備好繼續開發時重新開機這些 Vm。
 - 鼓勵開發小組使用 [Azure DevTest Labs](/azure/lab-services/devtest-lab-overview) 來建立自己的成本控制方法，並避免在先前步驟中使用標準自動關機計時的影響。
 
-## <a name="best-practice-use-azure-cost-management-and-billing"></a>最佳做法：使用 Azure 成本管理和帳單
+## <a name="best-practice-use-azure-cost-management--billing"></a>最佳做法：使用 Azure 成本管理 + 計費
 
-Microsoft 提供 Azure 成本管理和帳單來協助您追蹤費用：
+Microsoft 提供 Azure 成本管理 + 計費來協助您追蹤費用：
 
 - 協助您監視及控制 Azure 費用，並將資源的使用最佳化。
 - 檢閱您的整個訂用帳戶與其所有資源，並產生建議。
@@ -272,7 +272,7 @@ Microsoft 提供 Azure 成本管理和帳單來協助您追蹤費用：
 - 使用單一的整合式檢視來追蹤資源使用量並管理雲端成本。
 - 提供豐富的營運與財務見解以協助您做出明智的決策。
 
-在 Azure 成本管理和帳單中，您可以：
+在 [Azure 成本管理 + 計費] 中，您可以：
 
 - **建立預算：** 建立財務責任的預算。
   - 您可以納入您使用或訂閱的服務一段時間 (每月、每季、每年) 與範圍 (訂用帳戶/資源群組)。 例如，您可以針對每月、每季或每年期間建立 Azure 訂用帳戶預算。
@@ -281,23 +281,23 @@ Microsoft 提供 Azure 成本管理和帳單來協助您追蹤費用：
   - 您可以將成本管理資料匯出至 Azure 儲存體，以進行分析。
 
     ![](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    *以 Azure 成本管理和帳單*的 Azure 成本管理和帳單預算來查看預算。
+    *以 Azure 成本管理 + 計費*的 Azure 成本管理 + 計費預算來查看預算。
 
 - **進行成本分析：** 取得成本分析來探索及分析組織成本，以協助您瞭解成本如何累積，並找出花費趨勢。
   - EA 使用者可以使用成本分析功能。
   - 您可以查看各種範圍的成本分析資料，包括依部門、帳戶、訂用帳戶或資源群組。
   - 您可以取得顯示當月份總成本的成本分析，以及累計每日成本。
 
-    ![Azure 成本管理和帳單分析 ](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-     *圖： Azure 成本管理和帳單分析。*
+    ![Azure 成本管理 + 計費分析 ](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
+     *圖： Azure 成本管理 + 帳單分析。*
 
 - **取得建議：** 取得建議程式的建議，告訴您如何優化及改善效率。
 
 **瞭解更多資訊：**
 
-- 閱讀 [Azure 成本管理和帳單總覽](/azure/cost-management/overview)。
-- 瞭解如何 [使用 Azure 成本管理和帳單來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices)。
-- 瞭解如何使用 [Azure 成本管理和計費報表](/azure/cost-management/use-reports)。
+- 閱讀 [Azure 成本管理 + 計費總覽](/azure/cost-management/overview)。
+- 瞭解如何 [使用 Azure 成本管理 + 計費來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices)。
+- 瞭解如何使用 [Azure 成本管理 + 計費報表](/azure/cost-management/use-reports)。
 - 請參閱 [從建議中將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)的教學課程。
 - 查看 [Azure 使用量 api](/rest/api/consumption/budgets)。
 

@@ -7,12 +7,12 @@ ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 86bc5245ba358d8f13e232f8342937b47588c7f7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776256"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "89603670"
 
 ## <a name="high-level-modeling"></a>高層級模型
 
-當企業判斷要移動哪些服務時，您必須謹慎投資您的資源。 在內部部署環境中，您擁有監視和大量投資的所有責任。 例如，對 SaaS 服務所做的移動，不會消除您的監視責任。 您將會決定誰需要存取權、誰會取得警示，以及至少需要存取分析的人員。 [Azure 監視器](/azure/azure-monitor/) 和 [Azure Arc](https://azure.microsoft.com/services/azure-arc/) 是 azure 服務，可彈性地處理所有四個雲端模型中的監視案例，而不只是 azure 內的資源。 此外，您還必須看看常見的雲端模型，如下所示。 如果您是使用組織中 [Microsoft 365](/microsoft-365/?view=o365-worldwide) 服務所提供的 Microsoft Office 應用程式，除了 [Azure 資訊安全中心](/azure/security-center/)之外，還必須包含 Microsoft 365 的安全性和合規性監視。 這包括身分識別、端點管理，以及您公司網路以外的裝置監視。
+當企業判斷要移動哪些服務時，您必須謹慎投資您的資源。 在內部部署環境中，您擁有監視和大量投資的所有責任。 例如，對 SaaS 服務所做的移動，不會消除您的監視責任。 您將決定誰需要存取權、誰取得警示，以及至少需要存取分析的人員。 [Azure 監視器](/azure/azure-monitor/) 和 [Azure Arc](https://azure.microsoft.com/services/azure-arc/) 是 azure 服務，可彈性地處理所有四個雲端模型中的監視案例，而不只是 azure 內的資源。 您需要查看一般的雲端模型，如下所示。 如果您是使用組織中 [Microsoft 365](/microsoft-365/?view=o365-worldwide) 服務所提供的 Microsoft Office 應用程式，除了 [Azure 資訊安全中心](/azure/security-center/)之外，還必須包含 Microsoft 365 的安全性和合規性監視。 這包括身分識別、端點管理，以及您公司網路以外的裝置監視。
 
 ![雲端模型圖表](./media/monitoring-strategy/cloud-models.png)
 
@@ -233,7 +233,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | 健全狀況和狀態監視 | 全面性地型會觀察、測量、學習及改善服務或元件的長期擔保，包括服務層級，其中包括服務層級：可用性、容量、效能、安全性和合規性。 狀況良好的系統、服務或元件在線上、執行良好、安全且符合規範。 健康情況監視包含記錄，且具有即時健康狀態和計量的具狀態。 它也包含著重于服務使用方式的趨勢報告、見解和趨勢。 |
 | 公用程式監視 | 觀察、測量、學習和改善系統如何提供價值的品質或定性方面。 使用者體驗是一種監視使用案例。 |
 | 安全性監控 | 觀察、測量、學習和改進保護，以支援網路安全性策略和功能，例如安全性作業、身分識別和存取、資訊保護、隱私權、威脅管理和合規性。 使用 Azure 資訊安全中心和 Azure Sentinel 來監視，以及 Microsoft 365。 |
-| 成本監視 | 使用 Azure 監視器和 Azure 成本管理，並以新的主要目標計費，來監視使用量和預估成本。 Azure 成本管理 Api 可讓您使用多維度分析來探索成本和使用方式資料。 |
+| 成本監視 | 使用 Azure 監視器和 Azure 成本管理 + 計費作為新的主要目標，來監視使用量和預估成本。 Azure 成本管理 + 計費 API 可讓您使用多維度分析來探索成本和使用方式資料。 |
 
 | 第三個目標 | 目標和結果 |
 |---------------------|------------------|
@@ -256,7 +256,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 | Agile 詞彙 | 要包含的內容 | 範例 |
 |----------|---------------|--------|
 | Epic | 廣泛監視 <br> 監視策略的計畫 | 合併 Azure 雲端監視 <br> 混合式雲端監視 <br> 私用雲端監視 <br> 建立核心監視服務 |
-| 功能 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
+| 特性 | 個別監視 <br> 方案和專案 | 監視需求 <br> 監視取用者和提供者 <br> 目標 <br> 工具 <br> 排程 |
 | 使用者案例和工作 | 最終結果是監視設定或解決方案 | 網路監視 (例如 ExpressRoute)  <br> 標準化的 IaaS VM 監視 (例如適用於 VM 的 Azure 監視器、Application Insights、Azure 原則、設定、原則、報告、工作區。 )  |
 
 ## <a name="establish-minimum-governance"></a>建立最小治理

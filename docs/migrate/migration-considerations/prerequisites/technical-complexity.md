@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f3f8971cded5008c75a3a619c330a6e35840623
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885927"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776222"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>為技術複雜度做準備：敏捷式變更管理
 
@@ -20,7 +20,7 @@ ms.locfileid: "88885927"
 
 當您移至強調彈性和反復專案的敏捷式模型時，技術複雜度和變更管理的處理方式不同于傳統瀑布模型，著重在一連串的遷移步驟。 本文概述在敏捷式移轉工作中變更管理的高階方法。 在本文結束時，您應該大致瞭解漸進式移轉方法所涉及的變更管理和記載層級。 需要有額外的訓練和決策，才能根據該瞭解來選取和實作敏捷式做法。 本文的用意是要讓雲端架構設計師做好準備，以便與專案管理人員進行對話，以此方法來說明變更管理的一般概念。
 
-<!-- docsTest:ignore INVEST -->
+<!-- docutune:ignore INVEST -->
 
 ## <a name="address-technical-complexity"></a>解決技術複雜度
 

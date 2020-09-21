@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5bfabc441eb3669ed2f2681c66f48db77c1c0077
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f8f7cc11e89be655f736bbc50865c8e46caab48b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776511"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -71,7 +71,7 @@ ms.locfileid: "88884499"
 
 ### <a name="roles"></a>角色
 
-<!-- docsTest:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docutune:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure 成本管理和帳單支援每個範圍的下列內建角色：
 
@@ -126,7 +126,7 @@ Azure 成本管理和計費是記錄完善的工具，可用於設定預算，�
 - [根據建議將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [使用成本警示監視使用量和支出](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<!-- docsTest: "AWS Cost and Usage" -->
+<!-- docutune: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>使用 Azure 成本管理和帳單來管理 AWS 成本
 

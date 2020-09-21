@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cd92a5a089507fde1d770308f93d9547452389e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c91b6a66d176f19a24779561026fd6bd075b5dea
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775542"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -63,7 +63,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 ![Contoso 遷移程式的圖表。](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -96,7 +96,7 @@ Contoso 會按照下列方式完成移轉程序：
 - [Azure 儲存體簡介](/azure/storage/common/storage-introduction)。
 - [建立儲存體帳戶](/azure/storage/common/storage-create-storage-account)。
 
-<!-- docsTest:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
+<!-- docutune:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
 ## <a name="step-2-upgrade-team-foundation-server"></a>步驟2：升級 Team Foundation Server
 
@@ -240,7 +240,7 @@ Contoso 管理員會對集合資料庫執行 Team Foundation Server 遷移工具
 1. **執行試執行匯入**。 試執行匯入有助於測試集合遷移。 試執行的存留期有限，因此在執行生產環境遷移之前會先將其刪除。 試執行會在一段時間後自動刪除。 通知 Contoso 將刪除即將刪除的成功電子郵件中的通知，會包含在匯入完成之後傳送的成功電子郵件中。 小組會據以記下和計畫。
 1. **完成生產環境的遷移**。 完成執行的遷移作業之後，Contoso 管理員會更新檔案，然後再次執行匯入，以進行最後的遷移 `import.json` 。
 
-<!-- docsTest:casing "Team Foundation Server Administration Console" -->
+<!-- docutune:casing "Team Foundation Server Administration Console" -->
 
 ### <a name="detach-the-collection"></a>中斷集合的連結
 

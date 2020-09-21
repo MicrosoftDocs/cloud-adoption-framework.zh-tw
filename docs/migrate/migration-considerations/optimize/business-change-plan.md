@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 58b10b2f800e7292f3f107a3fc307cb971c5809b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 76edfc3f78c5f1a42306d761a82ea82f30dcf015
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884618"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774369"
 ---
 <!-- cSpell:ignore Eason -->
 
-<!-- docsTest:casing "Eason Matrix" -->
+<!-- docutune:casing "Eason Matrix" -->
 
 # <a name="business-change-plan"></a>業務變更方案
 
@@ -69,8 +69,8 @@ ms.locfileid: "88884618"
 
 ## <a name="references"></a>參考資料
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 - Eason，K. (1988) _資訊技術和組織變更_，紐約： Taylor 和 Francis。
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->

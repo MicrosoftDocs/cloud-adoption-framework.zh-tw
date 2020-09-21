@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 399f6e4d6506539c59d17670ba6f55f2df82a0c5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 013c21eaf964d09f07122c9b6deb1b1539558541
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775746"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -97,7 +97,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -121,7 +121,8 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>步驟1：評定及遷移 web 應用程式
 
-Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來評定及遷移其 web 應用程式。 它們使用 [Microsoft Learning 路徑](/learn/paths/migrate-dotnet-apps-azure/) 作為程式期間的指南。 簡單來說，系統管理員會執行下列動作：
+Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來評定及遷移其 web 應用程式。 他們使用將 [ASP.NET 應用程式遷移至 Azure 學習路徑](/learn/paths/migrate-dotnet-apps-azure/) ，作為程式期間的指南。
+系統管理員會執行下列動作：
 
 - 他們使用 Azure [App Service 遷移評估](https://appmigration.microsoft.com/assessment/) 工具來評估其 web 應用程式之間的任何相依性，並判斷其內部部署 web 應用程式與 Azure App Service 支援的專案之間是否有任何不相容性。
 

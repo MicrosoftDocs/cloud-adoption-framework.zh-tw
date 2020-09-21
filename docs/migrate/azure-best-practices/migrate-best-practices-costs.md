@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b581b9f041c82ce7cfdda28ed7351c903fd548df
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 754653d7e15eec16aa59db834851767e8d763008
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776562"
 ---
-<!-- docsTest:casing ARO -->
+<!-- docutune:casing ARO -->
 
 # <a name="best-practices-to-cost-and-size-workloads-migrated-to-azure"></a>將工作負載遷移至 Azure 的最佳做法
 
@@ -76,10 +76,10 @@ ms.locfileid: "88885162"
 | 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中流量的 web 伺服器。 |
-| **計算最佳化** | CPU 與記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
+| **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
 | **記憶體優化** | 高記憶體對 CPU。 | 適用于關係資料庫、中型至大型快取，以及記憶體內部分析。 |
 | **儲存體最佳化** | 高磁片輸送量和 i/o。 | 適用于大型資料，以及 SQL 和 NoSQL 資料庫。 |
-| **GPU 最佳化** | 特製化 VM。 一或多個 GPU。 | 繁重圖形與視訊編輯。 |
+| **GPU 最佳化** | 特製化 VM。 單一或多個 GPU。 | 繁重圖形與視訊編輯。 |
 | **高效能** | 最快、最強的 CPU。 具有選用的高輸送量網路介面 (RDMA) 的 Vm。 | 關鍵高效能應用程式。 |
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。

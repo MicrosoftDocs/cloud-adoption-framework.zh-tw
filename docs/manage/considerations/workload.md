@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 94a4fd17a9c9307afb40b35f033c44ff6102b091
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 683f551ca61da0acbd80dd8e670fd4bb0a620ee6
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775950"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -20,7 +20,7 @@ ms.locfileid: "88571519"
 
 傳回時，工作負載作業的投資可能會提升效能、降低商務中斷的風險，以及在發生系統失敗時更快復原。 本文將討論如何投資這些高優先順序工作負載的持續運作方式，以提升商務承諾量。
 
-<!-- docsTest:disable Pareto -->
+<!-- docutune:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>投入工作負載作業的時機
 
@@ -73,14 +73,14 @@ _排列準則_ (也稱為_80/20 規則_) 指出80% 的效果來自20% 的原因�
 工作負載中的資料和通訊投資將會針對下列三個領域之一的進行中的作業，提供改進的建議：
 
 - 技術債務解決方案
-- 建議的補救方式
+- 自動補救
 - 改進的系統設計
 
 ### <a name="technical-debt-resolution"></a>技術債務解決方案
 
 最佳的工作負載作業方案仍需要補救。 當您的雲端管理小組試圖保持聯繫以瞭解採用的工作和版本時，小組同樣應該定期分享補救需求，以確保技術債務和 bug 是您開發小組的持續優先。
 
-### <a name="automated-remediation"></a>建議的補救方式
+### <a name="automated-remediation"></a>自動補救
 
 藉由套用排列準則，我們可以說，80% 的負面商務衝擊可能是來自服務事件的20%。 當這些事件無法在正常的開發週期中解決時，對補救自動化的投資可大幅降低業務中斷。
 

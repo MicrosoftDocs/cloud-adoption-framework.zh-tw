@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5132e89cf9d20fb6cdbff1533737073ab190c3d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dee8a0552db02a070d4832a0da885469a02ecf11
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776188"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -64,7 +64,7 @@ Azure Stack 透過兩種部署選項來提供現代化：
 
 您可以使用完整的 Azure 生態系統來加速 Azure Stack 方案：
 
-<!-- docsTest:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
+<!-- docutune:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
 <!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
 
 - Azure 可確保大部分已通過 Azure 認證的應用程式和服務都可在 Azure Stack 上運作。 有數個 Isv 將其解決方案擴充至 Azure Stack。 這些 Isv 包括 Bitnami、Docker、kemp 技術、pivotal cloud foundry、Red Hat enterprise Linux 和 suse Linux。

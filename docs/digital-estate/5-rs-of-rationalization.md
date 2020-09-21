@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 01e9be8d8dde337dd732933b42b61f881bc2c474
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: e35ec6e6db843e352f05dc6904cd1245ea5bd822
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774217"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -25,7 +25,7 @@ ms.locfileid: "89603774"
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>迷思：在流程早期進行合理化決策很容易
 
- 精確的合理化需要深入瞭解工作負載和相關聯的資產， (應用程式、基礎結構和資料) 。 最重要、準確的合理化決策需要一些時間。 我們建議使用 [增量合理化流程](./rationalize.md#incremental-rationalization)。
+ 精確的合理化需要對工作負載和相關聯的資產有深入的瞭解， (應用程式、基礎結構和資料) 。 最重要、準確的合理化決策需要一些時間。 我們建議使用 [增量合理化流程](./rationalize.md#incremental-rationalization)。
 
 ### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>迷思：雲端採用必須等待所有工作負載合理化
 

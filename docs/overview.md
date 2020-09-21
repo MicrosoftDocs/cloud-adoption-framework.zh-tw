@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: c9e6966eff17c475ff64b4272dd9baf9f08bc0fe
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: d0f6c6348a7204d7991fb2be1a739addf4afe137
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776120"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -62,7 +62,7 @@ ms.locfileid: "90681418"
 
 如果您的企業是 Azure 的新手，請先 [瞭解並記載基本的調整決策](./get-started/cloud-concepts.md)。 當您企業的數位轉型牽涉到雲端時，瞭解這些基本概念將可在程式的每個步驟中協助您。
 
-<!-- docsTest:ignoreNextStep -->
+<!-- docutune:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [開始使用](./get-started/index.md)

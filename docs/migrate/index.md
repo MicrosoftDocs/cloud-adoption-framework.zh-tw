@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 56052fb7f9e4837d821637e5b7525521a7737bdb
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 5c4762e71a88f06520081ba9bcb4b382e7e1bd74
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776052"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -31,7 +31,7 @@ ms.locfileid: "89510340"
 
 遷移方法和上述步驟會根據下列假設而建置：
 
-<!-- docsTest:casing "Plan, Ready, and Adopt methodologies" -->
+<!-- docutune:casing "Plan, Ready, and Adopt methodologies" -->
 
 - 控管移轉短期衝刺的方法會納入移轉波浪或發行中，這可以使用方案、就緒和採用方法來定義。 在每個移轉短期衝刺內，會將一批工作負載移轉至雲端。
 - 在移轉工作負載之前，至少已識別、設定及部署一個[登陸區域](../ready/index.md)，以符合近期雲端採用方案的需求。

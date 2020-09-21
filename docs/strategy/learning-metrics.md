@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7dca2e21c1cff0361451e25dbc56ba9a02bdf59
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3f3b67433f2b41337d66ab05265e45489c49e050
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776324"
 ---
 # <a name="how-can-we-align-efforts-to-meaningful-learning-metrics"></a>我們要如何將精力調整到有意義的學習計量？
 
@@ -34,7 +34,7 @@ ms.locfileid: "88885825"
 
 具備雲端功能的應用程式創新主要著重于客戶體驗，以及客戶取用公司所提供的產品和服務的意願。 變更增量需要一些時間，以影響取用者或客戶購買行為。 但應用程式創新週期的速度通常比其他形式的轉換更短。 傳統的建議是，您應該先瞭解您想要影響的特定行為，並使用這些行為作為學習計量。 例如，在電子商務應用程式中，購買總計或附加購買專案可能是目標行為。 對於影片公司來說，觀看影片串流的時間可能是目標。
 
-客戶行為度量的挑戰是，它們可以輕鬆地受到外部變數的影響。 因此，將相關統計資料納入學習計量通常很重要。 這些相關的統計資料可能包括發行頻率、每個版本所解決的 bug、單元測試的程式碼涵蓋範圍、頁面流覽數、頁面輸送量、頁面載入時間，以及其他應用程式效能度量。 每個都可以顯示不同的活動和程式碼基底的變更，以及與更高層級客戶行為模式相互關聯的客戶體驗。
+客戶行為度量很容易受到外部變數的影響，因此在學習計量中包含相關統計資料通常很重要。 這些相關的統計資料可能包括發行頻率、每個版本所解決的 bug、單元測試的程式碼涵蓋範圍、頁面流覽數、頁面輸送量、頁面載入時間，以及其他應用程式效能度量。 每個都可以顯示不同的活動和程式碼基底的變更，以及與更高層級客戶行為模式相互關聯的客戶體驗。
 
 ## <a name="data-innovation"></a>資料創新
 

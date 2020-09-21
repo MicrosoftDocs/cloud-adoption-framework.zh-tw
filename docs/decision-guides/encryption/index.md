@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6e8a7c5b4929c590a4e33784b9ff1f297ec31d0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7a36de5c776aecf947dbca6954a1d79c838c2b18
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774097"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -124,7 +124,7 @@ PaaS 儲存體與資料庫資源通常會預設強制加密。 可以透過加�
 - **[Azure 加密概觀](/azure/security/fundamentals/encryption-overview)：** Azure 如何使用加密來保護待用和傳輸中資料的詳細描述。
 - **[Azure Key Vault](/azure/key-vault/general/overview)：** 金鑰保存庫是 Azure 內儲存及管理密碼編譯金鑰、祕密和憑證的主要金鑰管理系統。
 - **[Azure 資料安全性和加密最佳做法](/azure/security/fundamentals/data-encryption-best-practices)。** Azure 資料安全性和加密最佳做法的討論。
-- **[Azure 中的機密運算](https://azure.microsoft.com/solutions/confidential-compute)：** Azure 的機密運算方案提供了工具和技術，用來建立受信任的執行環境或其他加密機制，以保護使用中的資料。
+- **[Azure 中的機密運算](https://azure.microsoft.com/solutions/confidential-compute/)：** Azure 的機密運算方案提供了工具和技術，用來建立受信任的執行環境或其他加密機制，以保護使用中的資料。
 
 ## <a name="next-steps"></a>後續步驟
 

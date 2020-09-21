@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b044c86618ccafbfe69106a5f3c7e7d53db68fce
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 289324ee06571715b02aeea68c93a405123bac4f
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605237"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775899"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -238,7 +238,7 @@ Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的
 
 5. 在 [準備好設定]**** 頁面中，他們會選取 [在設定完成時開始同步處理程序]**** 以立即啟動同步。 然後，他們進行安裝。
 
-    注意下列事項：
+    請注意：
 
     - Contoso 直接連線至 Azure。 如果您的內部部署 Active Directory 實例位於 proxy 後方，請參閱 [Azure AD 連線能力的疑難排解](/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity)。
 
@@ -423,7 +423,7 @@ _圖18：全域對等互連。_
 
 使用網路和路由拓撲時，Contoso 就可以開始設定 Azure 網路和子網：
 
-<!-- docsTest:casing "class-A" "class-B" -->
+<!-- docutune:casing "class-A" "class-B" -->
 
 - Contoso 會在 Azure () 中執行類別為專用的網路 `10.0.0.0/8` 。 這適用于內部部署;它目前有 () 的類別 B 私人位址空間 `172.160.0.0/16` 。 Contoso 可以確定位址範圍之間不會有任何重迭。
 - Contoso 會在主要和次要區域中部署虛擬網路。
@@ -602,7 +602,7 @@ Contoso 管理員認為 Azure DNS 服務在混合式環境中並非理想的選�
 
 除了內部部署網域控制站以外，Contoso 還會執行四個網域控制站，以支援每個區域的 Azure 網路 (兩個) ：
 
-| Region | DC | 虛擬網路 | 子網路 | IP 位址 |
+| 區域 | DC | 虛擬網路 | 子網路 | IP 位址 |
 | --- | --- | --- | --- | --- |
 | `East US 2` | `contosodc3` | `VNET-PROD-EUS2` | `PROD-DC-EUS2` | `10.245.42.4` |
 | `East US 2` | `contosodc4` | `VNET-PROD-EUS2` | `PROD-DC-EUS2` | `10.245.42.5` |

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c2c9437efc465f500d7e9eb8a7f435309be5628b
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 9592e0007e2d9d6be5ad675573184b193bd1b9f9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776375"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -524,7 +524,7 @@ _圖8：加密流程。_
 
 **設計考慮：**
 
-<!-- docsTest:ignore TAP -->
+<!-- docutune:ignore TAP -->
 
 - [Azure 虛擬網路終端機存取點 (點) ](/azure/virtual-network/virtual-network-tap-overview) 目前為預覽狀態。 連絡人 `azurevnettap@microsoft.com` 以取得可用性詳細資料。
 

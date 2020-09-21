@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 00755767c560285d48626b829023b44001b21c63
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1f7c4c88aa2daf333bbed336e00b428375553129
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774148"
 ---
 # <a name="data-innovations"></a>資料創新
 
@@ -28,7 +28,7 @@ ms.locfileid: "88885145"
 
 將資料倉儲遷移至 Azure Synapse Analytics 之後，您就可以利用 Microsoft 分析生態系統中的其他技術。 這樣做不僅可讓您將資料倉儲現代化，還能將在 Azure 上的其他分析資料存放區中所產生的見解結合在一起。
 
-您可以放寬 ETL 處理，將任何類型的資料內嵌至 Azure Data Lake Storage。 您可以使用 Azure Data Factory，以大規模進行準備和整合。 這會產生可供您的資料倉儲取用，而且也可供資料科學家和其他應用程式存取的受信任、經常瞭解的資料資產。 您可以建立即時、批次導向的分析管線。 您也可以建立機器學習模型，以便在串流資料和隨選即服務的情況下，以批次方式執行。
+您可以放寬 ETL 處理，將任何類型的資料內嵌至 Azure Data Lake Storage。 您可以使用 Azure Data Factory，以大規模進行準備和整合。 這會產生可供您的資料倉儲取用，而且也可供資料科學家和其他應用程式存取的受信任、經常瞭解的資料資產。 您可以建立即時、批次導向的分析管線。 您也可以建立機器學習模型，以便在串流資料和視需要時即時部署到批次中執行。
 
 此外，您還可以使用 PolyBase 超越您的資料倉儲。 這可簡化在 Azure 上的多個基礎分析平臺中產生之見解的存取權。 您可以在邏輯資料倉儲中建立全面的整合式視圖，以從 BI 工具和應用程式存取串流、big data 和傳統資料倉儲見解。
 

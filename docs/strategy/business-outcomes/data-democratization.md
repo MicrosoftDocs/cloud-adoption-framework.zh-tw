@@ -7,16 +7,16 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cb5ab9afdb8164aff0fb36c3494a40a2cc6529e0
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 81beb5d31a39b6c61c4d9c26649cd55a9c86b16b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774250"
 ---
 # <a name="data-democratization"></a>資料民主化
 
-許多公司都已將資料倉儲保留在資料中心，以協助其企業的不同部分來分析資料並做出決策。 銷售、行銷和財務部門必須依賴這些系統，才能產生標準的報表和儀表板。 公司也會採用商務分析師，對資料超市中的資料執行臨機操作查詢和分析。 這些資料超市使用自助商業智慧工具來執行多維度分析。
+許多公司都會將資料倉儲保留在資料中心，以協助其商務的不同部分分析資料並做出決策。 銷售、行銷和財務部門高度依賴這些系統，以產生標準報告和儀表板。 公司也會採用商務分析師，在資料超市中執行特定查詢和資料分析。 這些資料超市使用自助商業智慧工具來執行多維度分析。
 
 資料創新和新式資料資產所支援的企業，可讓廣大的投稿人（從 IT 專案關係人到資料專業人員，以及更高的範圍）。 他們可以對此集中式資料的存放庫採取動作，這通常稱為「單一事實來源」。
 

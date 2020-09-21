@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9fb3c8acedd8673afad6036ed9a2c12860768777
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 475db193a4d712720dd5c2402eb3be43a80ac0db
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681293"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776392"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -56,7 +56,7 @@ _圖1：平臺管理與監視。_
 
     在企業規模架構的環境中，集中式記錄主要是與平臺作業相關。 這項強調不會防止針對以 VM 為基礎的應用程式記錄使用相同的工作區。 使用以資源為中心的存取控制模式設定的工作區時，會強制執行細微的 RBAC，以確保應用程式小組只能存取其資源的記錄。 在此模型中，應用程式小組藉由減少其管理額外負荷，受益于使用現有的平臺基礎結構。 對於任何非計算資源（例如 web 應用程式或 Azure Cosmos DB 資料庫），應用程式小組可以使用自己的 Log Analytics 工作區，並設定診斷和計量以在此路由傳送。
 
-<!-- docsTest:ignore WORM -->
+<!-- docutune:ignore WORM -->
 
 - 如果記錄保留需求超過兩年，請將記錄匯出至 Azure 儲存體。 使用不可變的儲存體搭配寫入一次、讀取多個原則，讓資料在使用者指定的間隔內不可清除且不可修改。
 - 使用 Azure 原則進行存取控制和合規性報告。 Azure 原則能讓您強制執行全組織的設定，以確保一致的原則遵循和快速違規偵測。 如需詳細資訊，請參閱 [瞭解 Azure 原則效果](/azure/governance/policy/concepts/effects)。

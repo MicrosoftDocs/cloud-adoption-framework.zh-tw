@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: f622b69ecbba6d85775dd707fa3d837d63661a45
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 5fadef56e97fa51450e6f6b80aca0ab84038b020
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776018"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -53,10 +53,10 @@ ms.locfileid: "90681264"
 | [治理 &nbsp; 專業領域 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/governance-discipline-template.docx) | 定義用來強制執行每個治理專業領域的一組基本治理流程。 |
 | [成本管理專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/cost-management-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于成本管理。 |
 | [部署加速專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/deployment-acceleration-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在部署加速時成熟組織內的雲端治理。 |
-| [身分識別基準專業範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于身分識別需求。 |
-| [資源一致性專業人員範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于資源一致性。 |
+| [身分識別基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于身分識別需求。 |
+| [資源一致性專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于資源一致性。 |
 | [安全性基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于安全性基準。 |
-| [Azure 治理 (AzGovViz 的視覺化) ](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz 是一個 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能中捕捉資料，例如 Azure 原則、角色型存取控制 (RBAC) 和 Azure 藍圖。 從收集到的資料，AzGovViz 可讓您查看階層圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
+| [Azure 治理視覺化](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理的視覺化程式是 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能中捕捉資料，例如 Azure 原則、角色型存取控制 (RBAC) 和 Azure 藍圖。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
 
 ## <a name="migrate"></a>遷移
 
@@ -68,7 +68,7 @@ ms.locfileid: "90681264"
 
 | 資源 | 描述 |
 |----------|-------------|
-| [Microsoft Azure 架構完善的檢閱](/assessments/?id=azure-architecture-review) | 這項線上評量將有助於定義工作負載的特定架構和作業選項。 |
+| [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) | 這項線上評量將有助於定義工作負載的特定架構和作業選項。 |
 | [最佳 &nbsp; 做法 &nbsp; 來源程式 &nbsp; 碼](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | 此可部署的原始程式碼可補充並加速採用 Azure 伺服器管理服務的最佳做法。 使用此原始程式碼可快速啟用作業管理，並建立作業基準。 |
 | [Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | 記錄有關雲端中作業管理的決策，並促進與企業的交談，以確保符合 Sla、投資復原能力以及與作業相關的預算配置。 |
 

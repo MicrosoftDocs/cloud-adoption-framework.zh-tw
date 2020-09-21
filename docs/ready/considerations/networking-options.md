@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a42f2b52d53ece4677efc240baaa9185a76614c2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0ebab543a39440190d530b6e7e68b441e49ff017
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776171"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -81,7 +81,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 | 您有許多分公司需要彼此連線與連線至 Azure。                                                                                                                                                                                                                                                                                         | [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) |
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:casing "Azure Virtual Datacenter" -->
+<!-- docutune:casing "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 

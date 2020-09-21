@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: bb1c7ff3de8fae692decd61c0f939ddd21239163
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603325"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775678"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -76,7 +76,7 @@ ms.locfileid: "89603325"
 **交付：**
 
 - 記錄 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)中的動機、結果和業務理由。
-- 使用 Azure 成本管理和帳單來建立您的第一個預算。
+- 使用 Azure 成本管理 + 計費來建立您的第一個預算。
 
 **支援交付完成的指導方針：**
 
@@ -104,7 +104,7 @@ ms.locfileid: "89603325"
 - [收集清查](../digital-estate/inventory.md)。 建立資料來源，以在採用之前分析數位資產。
 - [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)。 使用 Azure Migrate 來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)。 在增量合理化和量化分析期間，請找出用於預算的雲端候選項目。
-- [調整成本模型和預測模型](../digital-estate/calculate.md)。 使用 Azure 成本管理和帳單，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
+- [調整成本模型和預測模型](../digital-estate/calculate.md)。 使用 Azure 成本管理 + 計費，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用計畫](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 使用可採取動作的工作負載、資產和時間軸詳細資料來建立方案。 此計畫可提供花費在時間 (或成本預測) 的基礎。 *花費一段時間* ，是成本管理治理專業領域內所有可操作優化分析的初始基準。
 
 <br>

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a078a89a512a790d2325f32a4e00d0e2fc8587f9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cbf362a0a4230a3a882b60883bbf9e457bcdfef9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776154"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>雲端安全性事件準備的功能
 
@@ -29,7 +29,7 @@ ms.locfileid: "88885740"
 - 調查和修復事件的**技術團隊成員**。
 - **商務持續性** 與擁有危機管理、嚴重損壞修復和商務持續性計畫的組織功能整合。
 
-<!-- docsTest:casing "Incident Response Reference Guide (IRRG)" -->
+<!-- docutune:casing "Incident Response Reference Guide (IRRG)" -->
 <!-- cSpell:ignore IRRG -->
 
 Microsoft 已在《 [事件回應參考指南》 (IRRG) ](https://aka.ms/IRRG)中發表學習和建議。

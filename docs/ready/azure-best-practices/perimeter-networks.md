@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 986d4d98bf663c171279f6b5bb83db1b91daf7be
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776528"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -91,7 +91,7 @@ Azure Front Door 為您的應用程式提供統一的區域/戳記維護自動�
 
 [Azure 應用程式閘道][appgw] 是專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。
 
-<!-- docsTest:casing "the application gateway" "single application gateway" -->
+<!-- docutune:casing "the application gateway" "single application gateway" -->
 
 Azure 應用程式閘道可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的生產力。 它也提供其他第7層路由功能，包括迴圈配置傳入流量、以 cookie 為基礎的會話親和性、URL 路徑型路由，以及在單一應用程式閘道後方裝載多個網站的能力。
 

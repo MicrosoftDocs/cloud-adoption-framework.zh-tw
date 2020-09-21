@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: f70624744e881778d9a51977a5b33931374623b9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ff6f659e66d843b2c0abed5c04e07f8db6e32cdd
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776341"
 ---
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure 企業 Scaffold：規定的訂用帳戶治理
@@ -47,7 +47,7 @@ Enterprise scaffold 可以作為 Azure 中每個新訂用帳戶的基礎。 它�
 
 > [!NOTE]
 > Microsoft 已發行稱為[Azure 藍圖](/azure/governance/blueprints/overview)的新功能預覽，此功能可讓您封裝、管理及部署訂用帳戶和管理群組上常用的映像、範本、原則和指令碼。 這項功能像是座橋梁，以 Scaffold 的目的作為參考模型，然後將該模型部署到您的組織。
->
+
 下圖顯示 Scaffold 的元件。 其基礎依賴於管理階層和訂用帳戶的可靠計畫。 其要件是由 Resource Manager 原則和強大的命名標準所組成。 Scaffold 的其餘部分是 Azure 核心功能，而這些功能可打造出安全且易於管理的環境，並與之連線。
 
 ![企業 scaffold](../_images/reference/scaffold-v2.png)
@@ -344,7 +344,7 @@ Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以�
 > - 在較大的子網中啟用有效的微分割，減少蔓延和增加彈性。
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docutune:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 

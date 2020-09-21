@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 82e435fc0c486136b399959d6f205b76590d6c00
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776545"
 ---
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 <!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
@@ -202,7 +202,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | Application Insights    | appi-       |
 | 復原服務保存庫 | rsv-        |
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -248,7 +248,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 資產類型                      | 影響範圍                                 | [格式]                                                      | 範例                                                                                           |
 |---------------------------------|---------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | 管理群組                | 業務單位及/或環境類型 | mg\<Business Unit\>\[-\<Environment type\>\]               | <li> mg-mktg <li> mg-小時 <li> mg-corp-生產 <li> mg-fin-用戶端                                       |
-| 訂用帳戶                    | 帳號 <br> Enterprise 合約    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
+| 訂閱                    | 帳號 <br> Enterprise 合約    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
 | 資源群組                  | 訂用帳戶                          | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
 | API 管理服務實例 | 全球                                | apim\<App or service name\>                                | apim-navigator-生產                                                                                |
 

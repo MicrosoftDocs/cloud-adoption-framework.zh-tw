@@ -7,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4e8202eb06ff3e15990a71563747036430ad459
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 46ed8211a9206c7eed07760a0452ed97df2e5901
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776307"
 ---
-<!-- docsTest:ignore "CAF Foundation blueprint" -->
+<!-- docutune:ignore "CAF Foundation blueprint" -->
 
 # <a name="deploy-a-caf-foundation-blueprint-in-azure"></a>在 Azure 中部署 CAF Foundation 藍圖
 

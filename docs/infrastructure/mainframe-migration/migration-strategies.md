@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 276555cd06e751e82744a6b5d172e2cf9ce0acfe
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 29e2e0c50fd201dd1bc0bd4498fd8351257dae02
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775763"
 ---
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "88882816"
 
 ![大型主機和 Azure](../../_images/mainframe-migration/make-the-switch.png)
 
-<!-- docsTest:casing vCPUs -->
+<!-- docutune:casing vCPUs -->
 
 ## <a name="mips-vs-vcpus"></a>MIPS 與 vCPU
 

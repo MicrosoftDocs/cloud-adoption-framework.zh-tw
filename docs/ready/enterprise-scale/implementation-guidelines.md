@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 87edd4c65ff3dd79dd6e0fc778b9c6b9419b5ba9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25467593af277cf5955fc9656e23f9d01fa8926b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572743"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776426"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "88572743"
 
 若要執行企業規模的架構，您必須考慮下列活動類別：
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 1. **企業規模架構必須符合下列條件：** 包含必須由 Azure 和 Azure Active Directory (Azure AD) 系統管理員所執行的活動，才能建立初始設定。 這些活動是依本質順序排列，而且主要是一次性活動。
 
@@ -30,7 +30,7 @@ ms.locfileid: "88572743"
 
 3. **將新的登陸區域 (檔案部署 > 新的 > 登陸區域) ：** 這些是具現化新登陸區域所需的週期性活動。
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 為了大規模讓，這些活動必須遵循基礎結構即程式碼 (IaC) 準則，而且必須使用部署管線自動化。
 
@@ -185,11 +185,11 @@ ms.locfileid: "88572743"
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會將虛擬中樞、Azure 防火牆和閘道部署 (VPN/ExpressRoute) 。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 ## <a name="file--new--landing-zone-for-applications-and-workloads"></a>適用于應用程式和工作負載的檔案 > 新的 > 登陸區域
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 1. 建立訂用帳戶，並將它移至 `Landing Zones` 管理群組範圍下。
 

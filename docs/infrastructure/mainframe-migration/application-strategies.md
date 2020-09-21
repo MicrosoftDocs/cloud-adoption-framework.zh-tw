@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1312ad4cac826084613ae41a8e2e61471efb876f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2a9f188a49becd5c9f0d8156488a3456aa93fee8
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775797"
 ---
 <!-- docutune:casing GDGs -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -177,7 +177,7 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 Azure 提供經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。 某些工作負載比較容易移轉。 其他依賴舊式系統軟體 (例如 CICS 與 IMS) 的工作負載，可以使用合作夥伴解決方案重新裝載，再分階段移轉至 Azure。 無論您如何選擇，Microsoft 與合作夥伴都很樂意協助您達成 Azure 的最佳化，同時保有大型主機系統軟體功能。
 
-<!-- docsTest:casing "IBM DB2 pureScale" -->
+<!-- docutune:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>深入了解
 

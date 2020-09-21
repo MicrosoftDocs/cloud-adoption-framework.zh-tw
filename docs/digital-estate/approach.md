@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38ce12c8fa09800a3cede67b9725ce4fe899bd00
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 88f0f56507290666aead6e81e10d0a50f7dcae61
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774063"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 
@@ -25,7 +25,7 @@ ms.locfileid: "88881405"
 
 由上而下的方法也會測量應用程式的操作需求，例如服務層級、整合、維護期間、監視和深入解析。 當這些層面經過分析和考慮時，產生的分數會反映將此應用程式遷移至每個雲端平臺的相對難度： IaaS、PaaS 和 SaaS。
 
-此外，由上而下的評量會評估應用程式的財務優勢，例如營運效率、TCO、投資報酬率，以及其他適當的財務度量。 評量也會檢查應用程式的季節性 (例如，是否有一年的時間達到需求尖峰？ ) 和整體計算負載。
+此外，由上而下的評量會評估應用程式的財務優勢，例如營運效率、TCO、投資報酬率，以及其他適當的財務度量。 此評量也會檢查應用程式的季節性 (例如，是否在需求尖峰) 和整體計算負載的特定時間。
 
 此外，它也會查看支援的使用者類型 (的休閒/專家、永遠/偶爾登入) ，以及所需的擴充性和彈性。 最後，評量最後會檢查商務持續性和復原需求，以及在服務中斷時執行應用程式的相依性。
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1062228afd3eb4bc4892d9a2fb2e100f2af2a9af
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1771e61b884cd53480fdb2d47c2805b502735d86
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776069"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -292,7 +292,7 @@ Microsoft 與您之間可以共用保護虛擬網路的責任。 Microsoft 提�
 - 閱讀 [網路安全性最佳作法的總覽](/azure/security/fundamentals/network-best-practices)。
 - 瞭解如何為 [安全網路設計](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)。
 
-<!-- docsTest:casing "IDS/IPS" -->
+<!-- docutune:casing "IDS/IPS" -->
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>最佳做法：執行 Azure 周邊網路
 
@@ -329,7 +329,7 @@ _圖8：周邊網路部署。_
 
 ### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>最佳做法：保護北/南部和東部/西部流量
 
-若要保護虛擬網路，請考慮攻擊媒介。 請注意下列事項：
+若要保護虛擬網路，請考慮攻擊媒介。 請注意下列幾點：
 
 - 只使用子網路 NSG 可簡化環境，但卻只能保護進入子網路的流量。 這種流量稱為南/北流量。
 - 位於相同子網路上 VM 之間的流量則稱為東/西流量。
@@ -378,7 +378,7 @@ _圖8：周邊網路部署。_
 
 在本例中，每個網路介面都只屬於一個應用程式安全性群組，但事實上介面可以屬於多個群組 (取決於 Azure 限制)。 這些網路介面都沒有相關聯的 NSG。 `NSG1` 與這兩個子網相關聯，且包含下列規則：
 
-| 規則名稱 | 目的 | 詳細資料 |
+| 規則名稱 | 用途 | 詳細資料 |
 | --- | --- | --- |
 | `Allow-HTTP-Inbound-Internet` | 讓流量從網際網路流向 Web 伺服器。 預設安全性規則會拒絕來自網際網路的輸入流量 `DenyAllInbound` ，因此 `AsgLogic` 或 `AsgDb` 應用程式安全性群組不需要額外的規則。 | 優先順序：`100`<br><br> 來源：`internet` <br><br> 來源埠： `*` <br><br> 目的地： `AsgWeb` <br><br> 目的地埠： `80` <br><br> 協定： `TCP` <br><br> 訪問： `Allow` |
 | `Deny-Database-All` | `AllowVNetInBound` 預設安全性規則允許相同虛擬網路中的資源之間的所有通訊。 需要此規則才能拒絕來自所有資源的流量。 | 優先順序：`120` <br><br> 來源：`*` <br><br> 來源埠： `*` <br><br> 目的地： `AsgDb` <br><br> 目的地埠： `1433` <br><br> 協定： `All` <br><br> 訪問： `Deny` |

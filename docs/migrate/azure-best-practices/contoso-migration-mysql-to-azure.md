@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 79bc8027a035d38b9a9048a0aaba15f9cb66d3e0
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1a331e02dcf51123fbf0c0977cf75e9dfd4bae81
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603743"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775865"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -58,7 +58,7 @@ MySQL 資料庫會儲存公司人力資源部門的所有層面所使用的員�
 ### <a name="database-considerations"></a>資料庫考量
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:casing ColumnStore "Graph DBMS" -->
+<!-- docutune:casing ColumnStore "Graph DBMS" -->
 
 在解決方案設計過程中，Contoso 會檢查 Azure 中的功能，以裝載其 MySQL 資料。 下列考慮有助於公司決定使用 Azure：
 
@@ -106,7 +106,7 @@ Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其 My
 ![圖表顯示遷移程式。 ](./media/contoso-migration-mysql-to-azure/migration-process.png)
 _圖2：遷移程式。_
 
-#### <a name="migration"></a>移轉
+#### <a name="migration"></a>遷移
 
 Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並遵循 [逐步遷移教學](/azure/dms/tutorial-mysql-azure-mysql-online)課程。 他們可以使用 MySQL 5.6 或5.7 來執行線上、離線和混合式 (預覽版) 的遷移。
 

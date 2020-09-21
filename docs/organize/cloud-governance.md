@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 022fee42f79a1a6329b340147e6a2663b43edc63
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 719e3e6dc9c1b8bffad940ff781a49c357246691
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776494"
 ---
-<!-- docsTest:ignore IS -->
+<!-- docutune:ignore IS -->
 
 # <a name="cloud-governance-functions"></a>雲端治理功能
 

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d47a5681a2c36bdaabe508e8d62c7437ebe1c87
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f69eac9136a43dbc5790c969fc10e3b0d8057d5a
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775933"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -91,7 +91,7 @@ Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成�
 
 不過，若要瞭解效能優化（例如索引在來源環境中的使用方式），您可以在新環境中將效能優化的地方提供很有用的指示。 例如，如果來源 Netezza 環境中的查詢經常使用區域對應，您可能會在已遷移的 Azure Synapse 環境中建立非叢集索引，或使用其他原生效能優化技術（例如資料表複寫）來建立類似贊的索引，這是很有利的做法。
 
-<!-- docsTest:casing "NZ Toolkit" -->
+<!-- docutune:casing "NZ Toolkit" -->
 
 ### <a name="unsupported-netezza-database-object-types"></a>不支援的 Netezza 資料庫物件類型
 

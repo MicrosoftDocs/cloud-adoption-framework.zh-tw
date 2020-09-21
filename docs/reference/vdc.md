@@ -7,14 +7,14 @@ ms.date: 06/16/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2d44f61951f2eab93329419074f1434063cba2cd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6aba3c4ef764f6dc9fa7a324323815d957ed1d43
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776001"
 ---
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docutune:ignore "Azure Virtual Datacenter" -->
 
 # <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
