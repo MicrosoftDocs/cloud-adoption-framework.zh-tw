@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 11ec84ecf3cebed0f70cc23898984d7e362e1dc9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f274de1e47699319ca366b13ab3f812a47fe96c
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775321"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "88881082"
 
 以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 
-|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure 成本管理和計費](/azure/cost-management) |
+|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure 成本管理 + 計費](/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **實行公司原則**     | 是 | 否  | 否  | 否 | 否 | 否 |
 | **跨訂用帳戶套用原則**     | 必要 | 是  | 否  | 否 | 否 | 否 |
@@ -40,7 +40,7 @@ ms.locfileid: "88881082"
 | **手動部署 (單一資產)**     | 是 | 是  | 否  | 無效率 | 否 | 是 |
 | **手動部署 (完整環境)**     | 無效率 | 是 | 否  | 無效率 | 否 | 是 |
 | **自動化部署 (完整環境)**     | 否  | 是  | 否  | 是  | 否 | 是 |
-| **更新單一資產的設定**     | 是 | 是 | 無效率 | 無效率 | 否 | 是，在複寫期間 |
+| **更新單一資產的設定**     | 是 | 是 | 無效率 | 無效率 | No | 是，在複寫期間 |
 | **完整環境的更新設定**     | 無效率 | 是 | 是 | 是  | 否 | 是，在複寫期間 |
 | **管理設定飄移**     | 無效率 | 無效率 | 是  | 是  | 否 | 是，在複寫期間 |
 | **建立自動化管線來部署程式碼和設定資產 (DevOps)**     | 否 | 否 | 否 | 是 | 否 | 否 |

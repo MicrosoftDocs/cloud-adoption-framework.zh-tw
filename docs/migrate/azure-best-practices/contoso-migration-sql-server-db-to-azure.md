@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a9cc63ee3c47ddb347948aa55b49212ff0775344
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 071e6d8f33ea299dac78136f71f5bbce7badb95d
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775219"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -107,7 +107,7 @@ Contoso 也將 Data Migration Assistant 新增至其 Azure Migrate 專案。 您
 
 #### <a name="step-2-application-assessment"></a>步驟2：應用程式評定
 
-<!-- docsTest:casing "mainly .NET-based" "non-.NET-based" -->
+<!-- docutune:casing "mainly .NET-based" "non-.NET-based" -->
 
 評量的結果提供了 Contoso 所使用的可見度。不過，以 .NET 為基礎的應用程式，多年來，許多專案都使用了 PHP 和 Node.js 等其他技術。 廠商購買的系統也引進了非以 .NET 為基礎的應用程式。 它們已識別下列各項：
 
@@ -143,7 +143,7 @@ Contoso 使用 DMA 來執行評量，然後將資料直接上傳至 Azure Migrat
 > [!NOTE]
 > 在評估階段，Contoso 探索了各種開放原始碼資料庫。 它們分別遵循 [本指南](./contoso-migration-oss-db-to-azure.md) 來瞭解其遷移計畫。
 
-<!-- docsTest:casing "custom .NET" -->
+<!-- docutune:casing "custom .NET" -->
 
 #### <a name="step-4-migration-planning"></a>步驟4：遷移規劃
 
@@ -181,7 +181,7 @@ Contoso 也會執行 [工作負載準備](../..//migrate/migration-consideration
 
 Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期時，資源將會從內部部署基礎結構淘汰。
 
-其中包括：
+這包括：
 
 - 從內部部署伺服器移除生產資料。
 - 當最後一個工作負載時間範圍過期時，淘汰主控伺服器。

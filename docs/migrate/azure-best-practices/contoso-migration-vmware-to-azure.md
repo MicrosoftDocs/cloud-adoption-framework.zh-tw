@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7921c16e54e3684e5f2ba43555b54b68cd12c37f
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4fb22a8ac71dd7decb6111a3ad196d1e97957abe
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775338"
 ---
-<!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
+<!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
 # <a name="move-on-premises-vmware-infrastructure-to-azure"></a>將內部部署 VMware 基礎結構移至 Azure
 
@@ -193,7 +193,7 @@ Azure VMware 解決方案私用雲端需要虛擬網路。 因為 Azure VMware �
 
 如需詳細資訊，請參閱 [安裝 HCX For Azure VMware Solution](/azure/azure-vmware/hybrid-cloud-extension-installation)。
 
-<!-- docsTest:casing L2 -->
+<!-- docutune:casing L2 -->
 
 #### <a name="install-and-configure-vmware-hcx-for-the-public-cloud"></a>安裝和設定適用于公用雲端的 VMware HCX
 

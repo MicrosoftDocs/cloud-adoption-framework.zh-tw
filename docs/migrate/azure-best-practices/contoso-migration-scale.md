@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a98e8a11e45aff862a59f04bedbb204042035f56
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2bb9a42a911e1a635c3b0c1e6d1b1585feb8cc5b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775236"
 ---
-<!-- docsTest:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
+<!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
 <!-- cSpell:ignore VHDs autosnooze unsnooze Hanu Scalr -->
 
