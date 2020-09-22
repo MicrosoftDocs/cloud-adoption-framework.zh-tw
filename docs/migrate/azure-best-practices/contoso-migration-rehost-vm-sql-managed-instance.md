@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: da6c543bf16434bf0228df3a1bcac163ef1fe4ab
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 546c5103489ce15f066d9856078abadc6440cef2
+ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602599"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90988901"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -87,7 +87,7 @@ Contoso 藉由結合一份優缺點來評估提議的設計。
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | `WEBVM` 將會移至 Azure 而不需要變更，以簡化遷移工作。 <br><br> SQL 受控執行個體可援 Contoso 的技術需求和目標。 <br><br> SQL 受控執行個體可提供與 Contoso 目前部署的100% 相容性，同時將公司移離 SQL Server 2008 R2。 <br><br> Contoso 可以充分利用軟體保證的投資，並使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit。 <br><br> Contoso 可以重複使用 Azure 資料庫移轉服務來進行其他未來的遷移。 <br><br> SQL 受控執行個體有 Contoso 不需要設定的內建容錯功能。 這項功能可確保資料層不再是單一容錯移轉點。 |
+| **優點** | `WEBVM` 將會移至 Azure 而不需要變更，以簡化遷移工作。 <br><br> SQL 受控執行個體可援 Contoso 的技術需求和目標。 <br><br> SQL 受控執行個體可提供與 Contoso 目前部署的100% 相容性，同時將公司移離 SQL Server 2008 R2。 <br><br> Contoso 可以充分利用軟體保證的投資，並使用 SQL Server 和 Windows Server 的 Azure Hybrid Benefit。 <br><br> Contoso 可以重複使用 Azure 資料庫移轉服務來進行其他未來的遷移。 <br><br> SQL 受控執行個體有 Contoso 不需要設定的內建容錯功能。 這項功能可確保資料層不再是單一失敗點。 |
 | **缺點** | `WEBVM` 正在執行 Windows Server 2008 R2。 雖然 Azure 支援此作業系統，但不再是支援的平臺。 若要深入瞭解，請參閱 [Microsoft SQL Server 產品的支援原則](https://support.microsoft.com/help/956893)。 <br><br> Web 層會維持單一容錯移轉點，只 `WEBVM` 提供服務。 <br><br> Contoso 必須繼續支援應用程式 web 層作為 VM，而不是移至受控服務（例如 Azure App Service）。 <br><br> 若為資料層，如果 Contoso 想要自訂作業系統或資料庫伺服器，或如果公司想要執行協力廠商應用程式以及 SQL Server，SQL 受控執行個體可能不是最佳解決方案。 在 IaaS VM 上執行 SQL Server 可提供此種彈性。 |
 
 ### <a name="migration-process"></a>移轉程序
@@ -108,7 +108,7 @@ Contoso 會完成下列步驟，將其 SmartHotel360 應用程式的 web 和資�
 | [Azure SQL 受控執行個體](/azure/sql-database/sql-database-managed-instance) | SQL 受控執行個體是受控資料庫服務，代表 Azure 雲端中完全受控的 SQL Server 實例。 它會使用與最新版本 SQL Server 資料庫引擎相同的程式碼，而且具有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會根據容量產生費用。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 來評定其 VMware Vm。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | 不須額外費用即可使用 Azure Migrate。 它們可能會產生費用，視 (第一方或獨立軟體廠商的工具而定，) 他們決定用來進行評量和遷移。 深入瞭解 [Azure Migrate 定價](https://azure.microsoft.com/pricing/details/azure-migrate)。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者必須符合此案例的下列必要條件。
 
