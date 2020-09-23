@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3df2987e8580b283766b672f2377c3388923fe21
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775661"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108255"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -205,7 +205,8 @@ ms.locfileid: "90775661"
 
 - 部署初始治理基礎。
 - 完成治理基準，以規劃未來的改進。
-- 時間軸風險：改進原則和治理實行可為每個專業領域增加一到四周。
+- 時間軸風險：
+  - 原則和治理實施的改進可能會在每個專業領域增加一到四周。
 
 <br>
 

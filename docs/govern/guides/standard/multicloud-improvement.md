@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 125a356f619c447366a32b8ba7d680ed5513b4ca
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5582c0a6fefc23e2dfe60973ea001ba90c2d1681
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880368"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107877"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -61,7 +61,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 
 ## <a name="incremental-improvement-of-governance-practices"></a>治理做法的累加式改進
 
-本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則，以及 Azure 成本管理和帳單的實施。 這些設計變更會一起完成，以達成新的公司原則聲明。
+本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這些設計變更會一起完成，以達成新的公司原則聲明。
 
 1. 網路連線。 此步驟由網路和 IT 安全性小組執行，並由雲端治理小組所支援。 新增從 MPLS/租用線路提供者到新雲端的連線，將會整合網路。 新增路由表和防火牆設定，將控制環境之間的存取與流量。
 2. 合併識別提供者。 根據次要雲端中所裝載的工作負載而定，有各種不同選項可用於合併識別提供者。 以下是一些範例：
@@ -70,9 +70,9 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 3. 將資產新增至 Azure Site Recovery。
     1. Azure Site Recovery 是以混合式或多重雲端工具的形式從頭開始設計。
     2. 次要雲端中的 VM 可能會受到用來保護內部部署資產的相同 Azure Site Recovery 流程所保護。
-4. 將資產新增至 Azure 成本管理和帳單。
-    1. Azure 成本管理和帳單是以多重雲端工具的形式從頭開始設計。
-    2. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理和帳單相容。 可能需要額外成本。
+4. 將資產新增至 Azure 成本管理 + 計費。
+    1. Azure 成本管理 + 計費是以多重雲端工具的形式從頭開始設計。
+    2. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理 + 計費相容。 可能需要額外成本。
 5. 將資產新增至 Azure 監視器。
     1. Azure 監視器是以混合式雲端工具的形式從頭開始設計。
     2. 次要雲端中的虛擬機器可能會與 Azure 監視器代理程式相容，好讓虛擬機器包含於 Azure 監視器以進行作業監視。

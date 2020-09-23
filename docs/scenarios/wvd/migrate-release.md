@@ -1,18 +1,18 @@
 ---
 title: Windows 虛擬桌面部署後和發行工作
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解 Windows 虛擬桌面遷移最佳做法，以降低複雜度並將遷移程式標準化。
+description: 使用雲端採用架構的最佳做法，以瞭解遷移或部署 Windows 虛擬桌面實例的發行流程。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9389d3ec80422a5e17cfb6dd5a7692e2fd932fda
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3a1602e308b8ca2ec10a23efb054e2c84088c803
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885332"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108371"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Windows 虛擬桌面部署後
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 046507bea45c8a53d97d05ff9b566a3d1fb7c888
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604806"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107943"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準企業治理指南：改善成本管理專業領域
 
@@ -61,15 +61,15 @@ ms.locfileid: "89604806"
 - 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 本文件可協助精簡預算及準備其他自動化，以避免使用較昂貴的選項。 在此流程期間，應該考量雲端提供者提供的不同折扣工具，例如保留執行個體或授權成本降低。
 - 所有應用程式擁有者都必須參加將工作負載最佳化的實務訓練，以更好的方式來控制雲端成本。
 
-## <a name="incremental-improvement-of-the-best-practices"></a>最佳做法的累加式改進
+## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
-本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則，以及 Azure 成本管理和帳單的實施。 這兩個設計變更將共同實現新的公司原則聲明。
+本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
 
-1. 執行 Azure 成本管理和帳單。
+1. 實行 Azure 成本管理 + 計費。
     1. 建立存取的正確範圍，與訂用帳戶模式和資源一致性專業領域保持一致。 假設您與先前文章中定義的治理 MVP 保持一致，這需要在高階報告上執行的雲端治理小組的 **註冊帳戶範圍** 存取權。 治理以外的其他小組可能需要 **資源群組範圍** 的存取權。
-    1. 在 Azure 成本管理和帳單中建立預算。
+    1. Azure 成本管理 + 計費來建立預算。
     1. 檢閱初始建議並採取動作。 進行週期性流程以支援報告。
-    1. 設定和執行 Azure 成本管理和帳單報告（初始和週期性）。
+    1. 設定和執行 Azure 成本管理 + 計費報告（初始和週期性）。
 2. 更新 Azure 原則
     1. 稽核標記、管理群組、訂用帳戶及資源群組值，以識別任何偏差。
     1. 建立 SKU 大小選項，以限制對於部署規劃文件中列出之 SKU 的部署。

@@ -1,18 +1,18 @@
 ---
 title: Windows 虛擬桌面規劃
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解 Windows 虛擬桌面遷移最佳做法，以降低複雜度並將遷移程式標準化。
+description: 使用適用于 Azure 的雲端採用架構，利用可降低複雜性並將遷移程式標準化的最佳作法，來規劃您的 Windows 虛擬桌面遷移。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7579d85d81989162d396120291831f12023dc4de
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9a5611ede4a0fea9ef1623a2c2e3d456afa2b963
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885315"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108349"
 ---
 # <a name="windows-virtual-desktop-planning"></a>Windows 虛擬桌面規劃
 

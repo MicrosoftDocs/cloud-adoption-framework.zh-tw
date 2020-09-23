@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 84df4aac039fdd0cde7c7c06fb72bd7cd918b39b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604771"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108047"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
@@ -59,7 +59,9 @@ ms.locfileid: "89604771"
 
 - 應用程式開發和 BI 團隊希望在未來的 24 個月內，根據客戶業務開發和新產品的願景，將雲端式解決方案發佈到生產環境中。
 
-- 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 這預期會在未來五年產生預估的 $ 25m 美元成本節約。 ![內部部署成本與 Azure 成本的比較，在未來五年來示範 $ 25m 美元的報酬](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- 今年，IT 團隊會將 2,000 個 VM 移轉至雲端，來完成淘汰 DR 資料中心的災難復原工作負載。 這預期會在未來五年產生預估的 $ 25m 美元成本節約。
+
+  ![內部部署成本與 Azure 成本的比較，在未來五年來示範 $ 25m 美元的報酬](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 
 - 公司計畫變更已認可的資本支出，使其成為其投資成本，藉此改變 it 投資的方式。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 

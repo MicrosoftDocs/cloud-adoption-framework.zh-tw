@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0d04ff202450bdc47eb80006ba58395a78dd329f
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7a3e3eb6feec8fde3749e3204519f1859f19b280
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775610"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108209"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：建立雲端採用小組
 
@@ -41,7 +41,7 @@ ms.locfileid: "90775610"
 
 **交付：**
 
-- 判斷小組最適合的方法：遷移方法或創新方法。
+- 判斷小組是否更適合遷移方法或創新方法。
 - 每個方法都有四個步驟的上線體驗，可協助小組瞭解取得該工作所需的工具和流程。 以小組的方式投入時間，以瞭解您在早期反覆運算中最可能需要的工具和案例。
 - 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI) * 合作物件的跨小組，以協調各小組的責任。 更新貴公司的 [RACI 範本](../../organize/raci-alignment.md) ，協助其他人瞭解團隊的身分，以及小組將著重在提供的方法。
 
@@ -76,8 +76,8 @@ ms.locfileid: "90775610"
 
 根據您所屬的採用小組類型而定，您將會開始使用下列其中一個指南：
 
-- 開始使用：將工作負載遷移至雲端
-- 開始使用：建立新的產品或服務
+- [開始使用：將工作負載遷移至雲端](../migrate.md)
+- [開始使用：建立新的產品或服務](../innovate.md)
 
 這些指南會針對不同的責任和責任程度，提供各種不同小組的指導方針。 使用這些指南來瞭解您的小組如何融入其餘的旅程。 也可以使用它們來瞭解您可預期從公司內部取得的支援層級。
 

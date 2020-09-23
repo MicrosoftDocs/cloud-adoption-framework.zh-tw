@@ -1,18 +1,18 @@
 ---
 title: 適用于 Windows 虛擬桌面實例的 Azure 登陸區域
-description: 使用適用于 Azure 的雲端採用架構來學習虛擬桌面遷移最佳做法，以降低複雜性並將遷移程式標準化。
+description: 使用「適用于 Azure 的雲端採用架構」來準備您的環境，以使用可降低複雜性並將遷移程式標準化的最佳作法來進行虛擬桌面遷移。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d554fa61572e26e880b437154d504a17b727772
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f7aeba65ddd357ea7a65c6e902d7403f0c403a20
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885264"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108304"
 ---
 # <a name="windows-virtual-desktop-azure-landing-zone-review"></a>Windows 虛擬桌面 Azure 登陸區域審核
 

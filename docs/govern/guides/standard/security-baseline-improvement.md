@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c43b0b563292a0bafb3e4ac63ad6f757c519bf76
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 4809b00f7cd195646619d5ace8d7924a78e0b625
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775814"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107852"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
-本文藉由新增可支援將受保護資料移至雲端的安全性控制，來推進 [治理策略的敘述](narrative.md) 。
+本文藉由新增可支援將受保護資料移至雲端的安全性控制，來推進 [治理策略的敘述](./narrative.md) 。
 
 ## <a name="advancing-the-narrative"></a>前進敘述
 
@@ -31,7 +31,7 @@ IT 和業務領導力很滿意 IT、應用程式開發和 BI 團隊的早期實�
 
 ### <a name="changes-in-the-current-state"></a>處於目前狀態的變更
 
-在此敘述開始時，應用程式開發小組仍然致力於開發/測試能力，而 BI 小組仍處於實驗階段。 它會操作兩個託管的基礎結構環境，稱為生產和 DR。
+在此敘述開始時，應用程式開發小組仍然致力於開發/測試能力，而 BI 小組仍處於實驗階段。 它會操作兩個託管的基礎結構環境，稱為 `Prod` 和 `DR` 。
 
 從那時起，某些將會影響治理的事項已經改變：
 
@@ -128,8 +128,8 @@ IT 和業務領導力很滿意 IT、應用程式開發和 BI 團隊的早期實�
   - 識別符合所需安全性需求的 Azure 防火牆設定。 或者，識別與 Azure 相容的相容協力廠商應用裝置。
   - 建立 Resource Manager 範本來部署具有必要設定的防火牆。
 - Azure 藍圖：
-  - 建立名為 protected data 的新藍圖。
-  - 將防火牆、Azure 資訊安全中心範本和 Azure 復原服務保存庫範本新增至藍圖。
+  - 建立名為 `protected-data` 的新藍圖。
+  - 將 Azure 防火牆範本、Azure 資訊安全中心範本和 Azure 復原服務保存庫範本新增至藍圖。
   - 為受保護資料的訂用帳戶新增原則。
   - 將藍圖發佈到目前計畫裝載受保護資料的任何管理群組。
   - 將新的藍圖套用至每個受影響的訂用帳戶和現有的藍圖。

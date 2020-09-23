@@ -1,18 +1,18 @@
 ---
 title: 將 Windows 虛擬桌面部署至 Azure
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解 Windows 虛擬桌面遷移最佳做法，以降低複雜度並將遷移程式標準化。
+description: 使用適用于 Azure 的雲端採用架構，利用最佳作法來部署 Windows 虛擬桌面，以降低複雜度並將遷移程式標準化。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b84533bb565e43a0ddb52930f33eba21f35c8ed9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 99f7bc2f33e3aa5eec08ca0d5b9cca5f85e55063
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885349"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108386"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1df1e0ae58572beac799f43304018672c9231c47
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604920"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108139"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>適用于複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -69,7 +69,7 @@ IT 小組已核准將 CIO 和 CFO 的計畫推進，以淘汰兩個資料中心�
 - 在雲端提供者與公司的電信提供者之間建立高速私人連線，將雲端提供者連接到資料中心的全球網路。
 - 在建立好足夠的安全性需求之前，不得讓輸入的公用流量存取裝載在雲端的公司資產。 所有連接埠都要封鎖位於全域 WAN 之外的來源。
 
-## <a name="incremental-improvement-of-the-best-practices"></a>最佳做法的累加式改進
+## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
 治理 MVP 設計變更為包含新的 Azure 原則，以及虛擬機器上的 Active Directory 執行。 這兩個設計變更會共同實現新的公司原則聲明。
 

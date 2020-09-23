@@ -1,18 +1,18 @@
 ---
 title: Windows 虛擬桌面概念證明
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解 Windows 虛擬桌面遷移最佳做法，以降低複雜度並將遷移程式標準化。
+description: 使用「雲端採用架構」來瞭解完成和測試 Windows 虛擬桌面概念證明的最佳作法。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b17c1703bd50f49e747a690ff9379a687a5543cf
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605042"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108278"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 

@@ -1,18 +1,18 @@
 ---
 title: 評定適用于 Azure 的 Windows 虛擬桌面
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解 Windows 虛擬桌面遷移最佳做法，以協助降低複雜性並將遷移程式標準化。
+description: 使用適用于 Azure 的雲端採用架構，利用可加速遷移或部署程式的最佳作法，來評估您的 Windows 虛擬桌面遷移案例。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d388b1196bf103812f723ef060cc890e632760f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b85900e887122b20c7dc776ac74deb12dad93220
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885366"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108430"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
@@ -49,7 +49,7 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 |---------|---------|---------|---------|
 | 集區  | 集區 | 集區 | 專用 (安全性考慮)  |
 | 密度 | Light (6 &nbsp; 使用者/vCPU)  | 大量 (2 &nbsp; 使用者/vCPU)  | 專用 (1 &nbsp; 使用者/vCPU)  |
-| 效能 | 低 | 高記憶體 | 低 |
+| 效能 | 低度 | 高記憶體 | 低度 |
 | GPU | N/A | 必要 | 不適用 |
 | Azure 區域 | 北美洲 | 西歐 | 北美洲 |
 | 使用者計數 | 1000 | 50 | 20 |
