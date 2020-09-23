@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8af5a34e368d6ffe0774e7437e2fc62e21fa3453
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0a09216a3194e9b9d3719da8699c22dd0898a070
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776205"
 ---
-<!-- docsTest:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
+<!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->
 
 # <a name="stay-current-with-azure"></a>隨時得知 Azure 的最新動態
