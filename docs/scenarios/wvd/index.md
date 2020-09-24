@@ -1,18 +1,18 @@
 ---
 title: 將 Windows 虛擬桌面執行個體遷移或部署至 Azure
-description: 將 Windows 虛擬桌面執行個體遷移或部署至 Azure。
+description: 使用雲端採用架構的最佳作法，將 Windows 虛擬桌面執行個體遷移或部署至 Azure。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9e07aa60e6201735905160f533115552f61c4d1a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: abd2bc9e7c201938f13cc7bdc1210ced4eb4637c
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885417"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108435"
 ---
 # <a name="migrate-or-deploy-windows-virtual-desktop-instances-to-azure"></a>將 Windows 虛擬桌面執行個體遷移或部署至 Azure
 
