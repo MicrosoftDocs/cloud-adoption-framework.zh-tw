@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1c9a2faf35a2137e5dd04c23a8cb49c6dd02f5b5
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 4e5521c2f3b699584d7785a80e3c92b3db24e347
+ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681005"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206206"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：跨企業環境執行安全性
 
@@ -38,44 +38,33 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 ## <a name="step-1-establish-essential-security-practices"></a>步驟1：建立基本的安全性作法
 
-雲端中的安全性從音效實務著手。 無論您是在雲端中運作，或是正在規劃未來的採用，都必須快速建立基本的安全性做法。
+雲端中的安全性一開始會將最重要的安全性作法套用至系統的人員、程式和技術元素。 此外，某些架構決策是基本的，而且稍後很難變更，因此應謹慎套用。 
 
-除了符合任何明確的法規合規性需求以外，我們也建議您採取下列步驟來解決大部分組織移至雲端時面臨的最高安全性挑戰。
+無論您是在雲端中運作，或是正在規劃未來的採用，我們都建議您遵循這11個基本的安全性作法 (，並符合) 的任何明確法規合規性需求。
 
-**交付專案和支援指引：**
+**人：**
 
-- **技術：** 藉由為系統管理員啟用無密碼或多重要素驗證，以及啟用雲端資源的威脅防護，來降低最高風險並提高資產的可見度和控制權。
+1. [教育團隊瞭解雲端安全性旅程](../security/security-top-10.md#1-people-educate-teams-about-the-cloud-security-journey)
+2. [教育小組雲端安全性技術](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology) 
 
-  - [適用于系統管理員的無密碼或多重要素驗證](/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
-  - [Azure 資訊安全中心中的](/azure/security-center/threat-protection)[安全性作業](/azure/architecture/framework/security/security-operations)和威脅防護
+**過程：**
 
-- **進程：** 藉由指派安全性角色和責任，以及建立事件回應程式，來啟用快速安全性決策和持續改進。
+3. [指派雲端安全性決策的責任](../security/security-top-10.md#3-process-assign-accountability-for-cloud-security-decisions)
+4. [更新雲端的事件回應 (IR) 進程](../security/security-top-10.md#4-process-update-incident-response-ir-processes-for-cloud)
+5. [建立安全性狀態管理](../security/security-top-10.md#5-process-establish-security-posture-management)
 
-  - [清除各項責任](/azure/architecture/framework/security/governance#clear-lines-of-responsibility)、 [指派管理環境的許可權](/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment)，以及讓安全分數 <!-- TODO: Improve this and add link to AAF article -->
-  - 安全性角色和責任 <!-- TODO: add link to bookmark -->
-  - [事件回應參考指南](https://aka.ms/irrg)
+**技術：**
 
-- **人員：** 提供安全性小組在轉換至雲端環境期間成功部署和運作所需的教育、工具和存取權。
+6. [需要無密碼或 Multi-Factor Authentication (MFA) ](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
+7. [整合原生防火牆和網路安全性](../security/security-top-10.md#7-technology-integrate-native-firewall-and-network-security)
+8. [整合原生威脅偵測](../security/security-top-10.md#8-technology-integrate-native-threat-detection)
 
-  - 讓**每個人**都瞭解雲端和雲端安全性如何演進的概念：
-    - [威脅環境、角色和數位策略的演進](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
-    - [安全性、策略、工具和威脅的轉換](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-  - 針對他們所使用的平臺，以雲端安全性功能的技術詳細資料來**訓練技術人員**。 Microsoft 提供廣泛的 [Azure 安全性檔案](/azure/security)。
+**基礎架構決策：**
 
-- **長期架構決策：** 使用正確的決策建立長期基礎。 這些都是很困難且較昂貴的變更。
+9. [標準化單一目錄和身分識別](../security/security-top-10.md#9-architecture-standardize-on-a-single-directory-and-identity)
+10. [使用以身分識別為基礎的存取控制 (而非金鑰) ](../security/security-top-10.md#10-architecture-use-identity-based-access-control-instead-of-keys)
+11. [建立單一整合的安全性策略](../security/security-top-10.md#11-architecture-establish-a-single-unified-security-strategy)
 
-  - [打造企業分割策略，並將技術架構與 it (網路分割、身分識別分割等 ) ](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [單一企業目錄](/azure/architecture/framework/security/design-identity#use-a-single-enterprise-directory)
-  - [服務的驗證策略](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
-  - [許可權指派策略](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
-
-<br>
-
-| 責任小組 | 負責和支援的團隊 |
-| --- | --- |
-| <li> 雲端安全性小組 <br><br><br> | <li> 雲端策略小組 <li> 雲端採用小組 <li> 卓越或中央 IT 團隊的雲端中心 |
-
-在這個初始步驟中，治理小組也應開始協調安全性基準的建立，以便跨環境進行監視、管理和強制執行。 步驟4稍後會討論有關建立此項的其他指引。
 
 > [!NOTE]
 > 每個組織都應該定義它自己的最低標準。 風險狀態和後續的風險容錯可能會根據產業、文化特性和其他因素而有很大的差異。 例如，銀行可能無法容忍對測試系統進行輕微攻擊的任何可能損害。 某些組織會在將數位轉型加速三到六個月時，接受這項相同的風險。

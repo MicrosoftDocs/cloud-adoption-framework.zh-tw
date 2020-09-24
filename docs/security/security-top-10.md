@@ -1,5 +1,5 @@
 ---
-title: Azure 安全性最佳作法
+title: Azure 安全性最佳做法
 description: 瞭解 Microsoft 為最重要的 Azure 安全性最佳作法所建議的內容。
 author: JanetCThomas
 ms.author: mas
@@ -7,16 +7,18 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2b3b29551d734c8c3e4d2cacc6fec0929a022258
-ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
+ms.openlocfilehash: 46fe6f695b4b3e38c28e0860a15153a02a24a16a
+ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91002907"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206223"
 ---
-# <a name="azure-security-best-practices"></a>Azure 安全性最佳作法
+# <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
 這些是 Microsoft 建議的最重要 Azure 安全性最佳作法，根據在客戶和我們自己的環境中所學到的經驗。
+
+您可以在 [Microsoft 技術小組](https://techcommunity.microsoft.com/t5/video-hub/top-10-best-practices-for-azure-security/m-p/1698837)中觀看這些最佳作法的影片展示。
 
 ## <a name="1-people-educate-teams-about-the-cloud-security-journey"></a>1. 人員：教育團隊關於雲端安全性旅程
 

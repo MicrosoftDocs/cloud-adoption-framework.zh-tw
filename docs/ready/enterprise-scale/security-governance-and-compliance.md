@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b7bd069dbb75b1cdaabd2aacdace68010610c12a
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: bb74f78aca03cc2bb19c7a06faf73929c8d19d1b
+ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776579"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206189"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性治理和合規性
 
@@ -175,7 +175,7 @@ ms.locfileid: "90776579"
 
 - 開發安全性允許清單計畫來評估服務安全性設定、監視、警示，以及如何將這些服務與現有的系統整合。
 
-- 在允許之前，請先判斷 Azure 服務的事件回應計畫。
+- 在允許 Azure 服務進入生產環境之前，請先判斷其事件回應計畫。
 
 - 使用 Azure AD 報告功能來產生存取控制審核報告。
 
