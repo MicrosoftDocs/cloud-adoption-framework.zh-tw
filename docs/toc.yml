@@ -137,7 +137,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: 必要條件
+          - name: Prerequisites
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -265,7 +265,7 @@ items:
                 href: ready/considerations/landing-zone-governance.md
               - name: 改善登陸區域安全性
                 items:
-                  - name: 概觀
+                  - name: 總覽
                     href: ready/considerations/landing-zone-security.md
                   - name: 將訂用帳戶上線至 Azure 資訊安全中心
                     href: /azure/security-center/security-center-get-started?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -465,7 +465,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: 必要條件
+                  - name: Prerequisites
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -703,7 +703,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: 必要條件
+              - name: Prerequisites
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
@@ -908,7 +908,7 @@ items:
                           - name: Visual Studio 中的電腦視覺
                             href: /azure/cognitive-services/computer-vision/home?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: 即時翻譯文字
-                            href: /azure/cognitive-services/translator/quickstart-translate?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/cognitive-services/translator/quickstart-translator?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: 使用 LUIS 了解情感
                             href: /azure/cognitive-services/luis/tutorial-publish-settings?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: 從麥克風辨識語音
