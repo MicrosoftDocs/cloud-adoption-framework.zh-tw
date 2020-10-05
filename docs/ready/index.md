@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 08386cc2dfbfffb73e93a97ceec8f0a075d00066
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 66f0ac172208453cd9c668ab36aa8c828b48269b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510544"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621360"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>確定已對雲端採用方案準備好環境
 
@@ -22,9 +22,9 @@ ms.locfileid: "89510544"
 
 | <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [Azure 設定指南](./azure-setup-guide/index.md)：檢閱 Azure 設定指南，熟悉您需要用來建立登陸區域的工具和方法。 |
-| <br> ![2](../_images/icons/2.png) | <br> [Azure 登陸區域](./landing-zone/index.md)：選擇最適當的登陸區域選項，為您的環境建立以程式碼為主的起點。 |
-| <br> ![3](../_images/icons/3.png) | <br> [擴展登陸區域](./considerations/index.md)：擴充第一個登陸區域，以符合雲端採用方案的平台需求。 |
-| <br> ![4](../_images/icons/4.png) | <br> [最佳做法](./azure-best-practices/index.md)：根據對最佳做法驗證登陸區域的修改，以確保適當地設定您的目前和未來登陸區域。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [Azure 設定指南](./azure-setup-guide/index.md)：檢閱 Azure 設定指南，熟悉您需要用來建立登陸區域的工具和方法。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [Azure 登陸區域](./landing-zone/index.md)：選擇最適當的登陸區域選項，為您的環境建立以程式碼為主的起點。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [擴展登陸區域](./considerations/index.md)：擴充第一個登陸區域，以符合雲端採用方案的平台需求。 |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [最佳做法](./azure-best-practices/index.md)：根據對最佳做法驗證登陸區域的修改，以確保適當地設定您的目前和未來登陸區域。 |
 
 若要做好採用雲端的準備，請務必檢閱 [Azure 設定指南](./azure-setup-guide/index.md)。

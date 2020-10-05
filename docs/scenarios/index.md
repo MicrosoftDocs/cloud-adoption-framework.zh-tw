@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: caa399f50742978f20cca49fc8a8fc9f3f10b425
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cb923e88d1bcbea21c3e38ecba7d9eda7999eff6
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885451"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621479"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -25,7 +25,7 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 
 以下圖表和表格概述數個案例，這些案例遵循相同的反覆遷移方法來進行移轉和現代化。
 
-![雲端採用架構移轉模型的圖表。](../_images/migrate/one-migrate.png)
+![雲端採用架構移轉模型的圖表，會顯示您將需要的 V M、應用程式、資料和混合式資源。](../_images/migrate/one-migrate.png)
 
 | | | | |
 |---------|---------|---------|---------|
@@ -39,7 +39,7 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 
 在上述每個移轉案例中，當您將現有的工作負載遷移至雲端時，相同的基本流程將會引導您，如下所示：
 
-![雲端採用架構移轉模型的圖表。](../_images/migrate/methodology.png)
+![雲端採用架構移轉模型的圖表，會顯示移轉波浪和移轉工作。](../_images/migrate/methodology.png)
 
 在每個案例中，建構移轉波浪以引導多個工作負載的版本。 透過規劃和整備方法來建立雲端採用方案和 Azure 登陸區域，有助於新增移轉波浪結構。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f9ca594839cbd1e5d5ff641c81b083d30cd4481b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884584"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620833"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -29,7 +29,7 @@ ms.locfileid: "88884584"
   - [警示](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [週期性支出追蹤和報告](../../govern/cost-management/compliance-processes.md)
   - [實作後最佳化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
-  - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
+  - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)
 - **作業管理：** 作業管理小組在商務承諾和 SLA 方面的可見度，是進行中作業的重要層面。 為了妥善管理，必須標記[任務重要性](../../manage/considerations/criticality.md)。
 - **安全性：** 當漏洞或其他安全性問題發生時，資料和安全性影響的分類是小組的重要資料點。 若要安全地作業，必須標記[資料分類](../../govern/policy-compliance/data-classification.md)。
 - **控管與法規合規性：** 維護資源間的一致性，有助於在已同意原則間找出歧異。 [此控管基礎文章](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)示範下列其中一種模式對於部署控管實務有何幫助。 另有類似的模式可讓您使用標籤來評估法規合規性。
