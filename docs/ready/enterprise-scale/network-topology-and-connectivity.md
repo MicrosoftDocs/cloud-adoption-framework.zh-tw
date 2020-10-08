@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9592e0007e2d9d6be5ad675573184b193bd1b9f9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 444fe8d597c895aa969a966cb4d659673451198c
+ms.sourcegitcommit: 9d8165354a38f84d0b271b2ce4928f7042e24163
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776375"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91851693"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -94,22 +94,22 @@ ms.locfileid: "90776375"
 
 如果下列任何一項成立，請使用傳統的 Azure 網路拓撲：
 
-- 您的組織打算只在幾個 Azure 區域中部署資源。
-- 您不需要有全球互連的網路。
+- 您的組織想要跨數個 Azure 區域部署資源。
+- 您可以使用全域 VNet 對等互連來連線到 Azure 區域之間的虛擬網路。
 - 您每個區域的遠端或分支位置都有很多。 也就是說，您需要少於30個 IP 安全性 (IPsec) 通道。
 - 您需要完整的控制和細微性，才能手動設定 Azure 網路。
 
-此傳統拓撲可協助您在 Azure 中建立安全的網路基礎。
+傳統的網路拓撲可協助您在 Azure 中建立安全的大規模網路。
 
 ## <a name="virtual-wan-network-topology-microsoft-managed"></a>虛擬 WAN 網路拓撲 (Microsoft 管理的) 
 
-![說明虛擬 WAN 網路拓撲的圖表。](./media/virtual-wan-topology.png)
+![說明虛擬 WAN 網路拓撲的圖。](./media/virtual-wan-topology.png)
 
 _圖1：虛擬 WAN 網路拓撲。_
 
 **設計考慮：**
 
-- [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) 是由 Microsoft 管理的解決方案，預設會提供端對端的全球傳輸連線能力。 虛擬 WAN 中樞無須手動設定網路連線能力。 例如，您不需要設定使用者定義的路由 (UDR) 或網路虛擬裝置 (Nva) 以啟用全域傳輸連線。
+- [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) 是由 Microsoft 管理的解決方案，預設會提供端對端的全球傳輸連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的必要。 例如，您不需要設定使用者定義的路由 (UDR) 或網路虛擬裝置 (Nva) 以啟用全域傳輸連線。
 
 - 虛擬 WAN 藉由建立 [中樞和輪輻網路架構](/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，大幅簡化了 Azure 和跨單位的端對端網路連線能力。 此架構會跨多個 Azure 區域和內部部署位置 (任何現成的連線) ，如下圖所示：
 
@@ -150,7 +150,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 **設計建議：**
 
-- 針對 Azure 中的新大型或全球網路部署，我們建議虛擬 WAN，您需要跨 Azure 區域和內部部署位置的全球傳輸連線能力。 如此一來，您就不需要手動設定 Azure 網路的可轉移路由。
+- 針對 Azure 中的新大型或全球網路部署，我們建議虛擬 WAN，您需要跨 Azure 區域和內部部署位置的全球傳輸連線能力。 如此一來，您就不需要手動設定 Azure 網路的過渡路由。
 
   下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有大量的分公司。 環境透過虛擬 WAN 和 ExpressRoute 全球接觸來全球連線。
 
@@ -161,6 +161,8 @@ _圖1：虛擬 WAN 網路拓撲。_
 - 使用虛擬 WAN 作為全球連線資源。 您可以使用每個 Azure 區域的虛擬 WAN 中樞，透過本機虛擬 WAN 中樞，將多個登陸區域連接在一起的 Azure 區域。
 
 - 使用 ExpressRoute 將虛擬 WAN 中樞連線至內部部署資料中心。
+
+- 在專用登陸區域中部署必要的共用服務，例如 DNS 伺服器。 需要的共用資源無法部署到虛擬 WAN 中樞。
 
 - 透過站對站 VPN 將分支和遠端位置連接到最接近的虛擬 WAN 中樞，或透過 SD WAN 合作夥伴解決方案來啟用虛擬 WAN 的分支連線能力。
 
@@ -174,7 +176,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 當您部署合作夥伴網路技術和 Nva 時，請遵循合作夥伴廠商的指導方針，以確保 Azure 網路功能沒有任何衝突的設定。
 
-- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足所有的可轉移網路拓撲需求，包括使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。 
+- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足可轉移的網路拓撲需求，例如使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。 
 
 - 請勿使用現有的內部部署網路（例如多重通訊協定標籤）切換 (MPLS) 來跨 Azure 區域連接 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。 這是因為 Microsoft 骨幹的效能與執行時間特性，以及路由簡單的功能。 這項建議會解決 Microsoft 骨幹的效能與執行時間特性。 它也鼓勵路由簡化。
 
@@ -191,6 +193,8 @@ _圖1：虛擬 WAN 網路拓撲。_
 雖然虛擬 WAN 提供各式各樣的強大功能，但在某些情況下，傳統的 Azure 網路方法可能會是最佳的：
 
 - 如果不需要跨多個 Azure 區域或跨單位的全球可轉移網路。 例如，在美國的分支，需要連接到歐洲的虛擬網路。
+
+- 如果您需要跨多個 Azure 區域部署全球網路，您可以使用全域 VNet 對等互連來跨區域連接虛擬網路。
 
 - 如果不需要透過 VPN 連線到大量的遠端位置，或與 SD WAN 解決方案整合。
 
@@ -236,26 +240,28 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - Azure 部署中的流量界限位於 Azure 區域內。
 
-  - 網路架構最多可有兩個 Azure 區域，而且跨區域的登陸區域的虛擬網路之間有傳輸連線的需求。
-
   - 網路架構跨越多個 Azure 區域，而且跨區域的登陸區域的虛擬網路之間不需要可轉移的連線能力。
+
+  - 網路架構跨越多個 Azure 區域，而全域 VNet 對等互連可用來跨 Azure 區域連接虛擬網路。
 
   - VPN 和 ExpressRoute 連線之間不需要可轉移的連線能力。
 
   - 主要的跨單位連線通道是 ExpressRoute，而且每個 VPN 閘道的 VPN 連線數目小於30。
 
-  - 集中式 Nva 和複雜/細微路由的相依性很高。
+  - 集中式 Nva 和細微路由的相依性。
 
 - 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。  這可讓適當的流量控制符合大部分的分割和檢查需求。
 
-  ![說明中樞和輪輻網路拓撲的圖表。](./media/hub-and-spoke-topology.png)
+  ![說明中樞和輪輻網路拓撲的圖。](./media/hub-and-spoke-topology.png)
 
   _圖5：中樞和輪輻網路拓撲。_
 
 - 當下列其中一個條件成立時，請使用與多個 ExpressRoute 線路連線之多個虛擬網路的拓撲：
 
   - 您需要高層級的隔離。
+
   - 您需要特定業務單位的專用 ExpressRoute 頻寬。
+
   - 您已達到每個 ExpressRoute 閘道的最大連線數目 (四個) 。
   
   下圖顯示此拓撲。
@@ -271,7 +277,9 @@ _圖4：傳統的 Azure 網路拓撲。_
 - 當您部署合作夥伴網路技術或 Nva 時，請遵循合作夥伴廠商的指導方針，以確保：
 
   - 廠商支援部署。
+
   - 本指南是針對高可用性和最大效能所設計。
+
   - Azure 網路功能沒有任何衝突的設定。
 
 - 請勿將 L7 輸入 Nva （例如 Azure 應用程式閘道）部署為中央中樞虛擬網路中的共用服務。 相反地，請將其與應用程式一起部署在各自的登陸區域中。
@@ -286,13 +294,13 @@ _圖4：傳統的 Azure 網路拓撲。_
   
   _圖7：登陸區域連接設計。_
 
-- 當您的組織需要跨兩個 Azure 區域的中樞和輪輻網路架構，以及登陸區域之間的全球傳輸連線能力時，需要跨 Azure 區域的虛擬網路。 您可以藉由將中央中樞虛擬網路與全域虛擬網路對等互連進行虛擬化，並使用 Udr 和 Nva 來啟用全域傳輸路由，來執行此架構。 因為複雜性和管理的額外負荷很高，建議您部署具有虛擬 WAN 的全域傳輸網路架構。
+- 當您的組織需要跨兩個 Azure 區域的中樞和輪輻網路架構，以及登陸區域之間的全球傳輸連線能力時，需要跨 Azure 區域的虛擬網路。 您可以藉由將中央中樞虛擬網路與全域虛擬網路對等互連進行虛擬化，並使用 Udr 和 Nva 來啟用全域傳輸路由，來執行此架構。 因為複雜性和管理的額外負荷很高，所以我們建議使用虛擬 WAN 來評估全域傳輸網路架構。
 
 - 使用 [網路 (預覽) 的 Azure 監視器 ](/azure/azure-monitor/insights/network-insights-overview) ，來監視 Azure 上網路的端對端狀態。
 
 - 請勿為每個中央中樞虛擬網路建立超過200個對等互連連線。 雖然虛擬網路支援最多500對等互連連線，但具有私人對等互連的 ExpressRoute 僅支援從 Azure 到內部部署的最多200首碼。
 
-## <a name="connectivity-to-azure"></a>連接至 Azure
+## <a name="connectivity-to-azure"></a>Azure 的連線能力
 
 本節將擴充網路拓撲，以考慮將內部部署位置連線到 Azure 的建議模型。
 
@@ -346,7 +354,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 通常會透過公用端點來存取 Azure PaaS 服務。 不過，Azure 平臺會提供保護這類端點的功能，甚至讓它們完全私密：
 
-  - 虛擬網路插入為支援的服務提供專用的私人部署。 但管理平面流量會流經公用 IP 位址。
+  - 虛擬網路插入可為支援的服務提供專用的私人部署。 但管理平面流量會流經公用 IP 位址。
 
   - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) 使用私人 IP 位址來提供專用存取，方法是使用私人 IP 位址來存取 Azure PaaS 實例或 Azure Load Balancer Standard 後方的自訂服務
 
@@ -415,7 +423,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 使用 [Azure DDoS 保護標準保護方案](/azure/virtual-network/ddos-protection-overview) 來協助保護虛擬網路內裝載的所有公用端點。
 
-- 請勿將內部部署周邊網路概念和架構複寫到 Azure。 您可以在 Azure 中使用類似的安全性功能，但必須將實體系和架構調整到雲端。
+- 請勿將內部部署周邊網路概念和架構複寫到 Azure。 Azure 中有類似的安全性功能，但實作和架構必須適應雲端。
 
 ## <a name="plan-for-app-delivery"></a>規劃應用程式傳遞
 
@@ -467,7 +475,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計建議：**
 
-- 將子網建立委派給登陸區域擁有者。 這可讓它們定義如何跨子網分割工作負載 (例如單一大型子網、多層式應用程式或網路插入的應用程式) 。 平臺小組可以使用 Azure 原則來確保具有特定規則的 NSG (例如拒絕來自網際網路的連入 SSH 或 RDP，或允許/封鎖跨登陸區域的流量) 一律與具有拒絕原則的子網相關聯。
+- 將子網路建立委派給登陸區域擁有者。 這可讓它們定義如何跨子網分割工作負載 (例如單一大型子網、多層式應用程式或網路插入的應用程式) 。 平臺小組可以使用 Azure 原則來確保具有特定規則的 NSG (例如拒絕來自網際網路的連入 SSH 或 RDP，或允許/封鎖跨登陸區域的流量) 一律與具有拒絕原則的子網相關聯。
 
 - 使用 Nsg 協助保護跨子網的流量，以及跨平臺的東部/西部流量 (登陸區域間的流量) 。
 
@@ -499,7 +507,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計建議：**
 
-![說明加密流程的圖表。](./media/enc-flows.png)
+![說明加密流程的圖。](./media/enc-flows.png)
 
 _圖8：加密流程。_
 
