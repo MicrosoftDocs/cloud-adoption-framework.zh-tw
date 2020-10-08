@@ -133,11 +133,17 @@ items:
             href: digital-estate/calculate.md
       - name: 初始組織對齊
         href: plan/initial-org-alignment.md
+      - name: 技能整備程度方案
+        items:
+          - name: 建立整備程度方案
+            href: plan/adapt-roles-skills-processes.md
+          - name: 對應角色與技能
+            href: plan/suggested-skills.md
       - name: 雲端採用方案
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: Prerequisites
+          - name: 必要條件
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -151,12 +157,6 @@ items:
             href: plan/iteration-paths.md
           - name: 預估時間表
             href: plan/timelines.md
-      - name: 技能整備程度方案
-        items:
-          - name: 建立整備程度方案
-            href: plan/adapt-roles-skills-processes.md
-          - name: 對應角色與技能
-            href: plan/suggested-skills.md
       - name: 最佳作法
         items:
           - name: Azure 中的數位資產評量
@@ -265,7 +265,7 @@ items:
                 href: ready/considerations/landing-zone-governance.md
               - name: 改善登陸區域安全性
                 items:
-                  - name: 總覽
+                  - name: 概觀
                     href: ready/considerations/landing-zone-security.md
                   - name: 將訂用帳戶上線至 Azure 資訊安全中心
                     href: /azure/security-center/security-center-get-started?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -465,7 +465,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Prerequisites
+                  - name: 必要條件
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -703,7 +703,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: Prerequisites
+              - name: 必要條件
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
@@ -1481,6 +1481,8 @@ items:
     items:
       - name: 工具和範本
         href: reference/tools-templates.md
+      - name: Azure 安全性最佳做法
+        href: ./security/security-top-10.md
       - name: 決策指南
         items:
           - name: 概觀
@@ -1531,8 +1533,6 @@ items:
         items:
           - name: 雲端作業模型
             href: reference/cloud-operating-model.md
-          - name: Azure 安全性最佳做法
-            href: ./security/security-top-10.md
           - name: Azure 企業 Scaffold
             href: reference/azure-scaffold.md
           - name: 虛擬資料中心 (VDC)
