@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3c32b6d6afa9b640dd379230865728fbd53c925
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 7f479d4262e276162d2e55fdb8405f77cfc40bf1
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176475"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898199"
 ---
 # <a name="automate-onboarding"></a>自動上線
 
@@ -32,7 +32,7 @@ ms.locfileid: "89176475"
 
 - 使用 Azure 原則將 Azure Vm 上架。 原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Microsoft Dependency Agent。
 
-- 使用[Azure 原則](https://docs.microsoft.com/azure/backup/backup-azure-auto-enable-backup)自動啟用適用于 Vm 的 Azure 備份
+- 使用[Azure 原則](/azure/backup/backup-azure-auto-enable-backup)自動啟用適用于 Vm 的 Azure 備份
 
 - 在內部部署伺服器上安裝 Log Analytics 代理程式，以將其上架。
 

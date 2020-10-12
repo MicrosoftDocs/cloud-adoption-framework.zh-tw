@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 85f3104f20f969e83f960e8ba3125b0ee56ed41e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2dda4bc3feaf207e2aca63b008f40beabc223bec
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877546"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898109"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -61,7 +61,7 @@ ms.locfileid: "88877546"
 
   - [Microsoft Azure DevOps 工程師：優化意見反應機制](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) 可協助您使用 Azure 監視器（包括 Application Insights）來監視和優化您的 web 應用程式。
 
-  - [在您的 Azure web 應用程式中，捕獲並查看頁面載入時間](https://docs.microsoft.com/learn/modules/capture-page-load-times-application-insights/)。 開始使用 Azure 監視器 Application Insights，以在 Azure 中執行應用程式元件的端對端監視。
+  - [在您的 Azure web 應用程式中，捕獲並查看頁面載入時間](/learn/modules/capture-page-load-times-application-insights/)。 開始使用 Azure 監視器 Application Insights，以在 Azure 中執行應用程式元件的端對端監視。
   
   - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) 腳本可協助您瞭解如何執行 Azure SQL Database、Azure SQL 資料倉儲和 Azure Cosmos DB 的監視。
 
@@ -71,7 +71,7 @@ ms.locfileid: "88877546"
 
 ## <a name="data-analysis"></a>資料分析
 
-- 瞭解如何 [在 Azure 監視器中撰寫記錄查詢](https://docs.microsoft.com/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)。 Kusto 查詢語言是撰寫 Azure 監視器記錄查詢的主要資源，用來探索和分析從 Azure 收集的資料和混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
+- 瞭解如何 [在 Azure 監視器中撰寫記錄查詢](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)。 Kusto 查詢語言是撰寫 Azure 監視器記錄查詢的主要資源，用來探索和分析從 Azure 收集的資料和混合式資源應用程式相依性（包括即時應用程式）之間的記錄資料。
 
 - [Kusto Query Language (KQL) 從頭](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) 開始是一個完整的課程，其中包含涵蓋各種使用案例的詳細範例，以及記錄分析在 Azure 監視器記錄檔中的各種技術。
 

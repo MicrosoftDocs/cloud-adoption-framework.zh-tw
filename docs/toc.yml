@@ -278,7 +278,7 @@ items:
                   - name: Azure 網路安全性最佳做法
                     href: /azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                   - name: Azure 作業安全性最佳做法
-                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                    href: /azure/security/fundamentals/operational-best-practices?bc=%252fazure%252fcloud-adoption-framework%252f_bread%252ftoc.json&toc=%252fazure%252fcloud-adoption-framework%252ftoc.json
           - name: 夥伴登陸區域
             href: ready/landing-zone/partner-landing-zone.md
           - name: 基礎結構即程式碼理論

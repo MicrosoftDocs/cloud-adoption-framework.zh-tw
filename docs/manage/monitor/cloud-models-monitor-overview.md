@@ -3,16 +3,16 @@ title: 雲端部署模型的監視策略
 description: 使用「適用于 Azure 的雲端採用架構」來瞭解要採用的雲端管理監視策略。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 10/04/2019
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 84f285a04c599254358bd15288f29b96bfb9de05
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1497ab2a8a9cd88ec0555790eccff7626c29ecc9
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603998"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898182"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -42,14 +42,14 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 下表摘要說明監視堆疊各層的建議方法：
 
-| 層 | 資源 | 範圍 | 方法 |
+| 層 | 資源 | 影響範圍 | 方法 |
 |---|---|---|---|
 | 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能度量的 Azure 資料庫。 | 啟用診斷記錄，以將 SQL 資料串流至 Azure 監視器記錄。 |
-| Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure 應用程式閘道 <br> 3. 網路安全性群組 <br> 4. Azure 流量管理員 <br> 5. Azure 虛擬機器 <br> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視端點狀態的可用性。 <br> 5. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. Blob 儲存體的儲存體計量。 <br> 2. 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 3. 啟用網路安全性群組的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 5. 啟用適用於 VM 的 Azure 監視器。 <br> 6. 啟用容器的 Azure 監視器。 |
+| Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure 應用程式閘道 <br> 3. 網路安全性群組 <br> 4. Azure 流量管理員 <br> 5. Azure 虛擬機器 <br> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視端點狀態的可用性。 <br> 5. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. 對於儲存體計量，請使用 Azure 監視器儲存。 儲存體 [資源記錄](/storage/common/monitor-storage?tabs=azure-powershell#logs-in-azure-monitor-preview) 可以轉送至 Azure 監視器記錄。 <br> 2. 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 3. 啟用網路安全性群組的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 5. 啟用 [適用於 VM 的 Azure 監視器](/azure-monitor/insights/vminsights-overview)。 <br> 6. 啟用 [容器的 Azure 監視器](/azure-monitor/insights/container-insights-overview)。 |
 | 網路 | 虛擬機器與一或多個端點之間的通訊 (另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址) 。 | 監視 VM 與端點之間發生的連線能力、延遲和網路拓撲變更。 | Azure 網路監看員。 |
-| Azure 訂用帳戶 | Azure 服務健康狀態和基本資源健康狀態。 | <li> 對服務或資源執行的系統管理動作。 <li> Azure 服務的服務健康狀態為「已降級」或「無法使用」狀態。 <li> 從 Azure 服務的觀點來看，Azure 資源偵測到健康情況問題。 <li> 使用 Azure 自動調整來執行的作業，指出失敗或例外狀況。 <li> 使用 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 使用 Azure Resource Manager 在活動記錄中傳遞，以進行監視和警示。 |
-| Azure 租用戶 | Azure Active Directory | 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 |
+| Azure 訂用帳戶 | 從 Azure 服務的觀點來 Azure 服務健康狀態和基本資源健康狀態。 | <li> 對服務或資源執行的系統管理動作。 <li> Azure 服務的服務健康狀態為「已降級」或「無法使用」狀態。 <li> 從 Azure 服務的觀點來看，Azure 資源偵測到健康情況問題。 <li> 使用 Azure 自動調整來執行的作業，指出失敗或例外狀況。 <li> 使用 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 使用 Azure 監視器在活動記錄中傳遞，以進行監視和警示。 |
+| Azure 租用戶 | Azure Active Directory | Azure AD audit 記錄和登入記錄檔。 | 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 |
 
 ## <a name="hybrid-cloud-monitoring"></a>混合式雲端監視
 
@@ -132,13 +132,13 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 - Azure 監視器是解決 Operations Manager 限制的方法。 它會收集重要的效能和記錄資料，以補充 Operations Manager 的資料倉儲資料庫。 Azure 監視器可提供更佳的分析、在查詢大型資料磁片區) 時的效能 (，以及比 Operations Manager 資料倉儲的保留。
 
-  使用 Azure 監視器查詢語言，您可以建立更複雜且更複雜的查詢。 您可以在數秒內跨數 tb 的資料執行查詢。 您可以快速地將資料轉換成圓形圖、時間圖表以及許多其他視覺效果。 若要分析此資料，您不再受限於使用以 SQL Server Reporting Services、自訂 SQL 查詢或其他因應措施為基礎的 Operations Manager 報表。
+  使用 Azure 監視器記錄查詢語言，您可以建立更複雜且更複雜的查詢。 您可以在數秒內跨數 tb 的資料執行查詢。 您可以快速地將資料轉換成圓形圖、時間圖表以及許多其他視覺效果。 若要分析此資料，您不再受限於使用以 SQL Server Reporting Services、自訂 SQL 查詢或其他因應措施為基礎的 Operations Manager 報表。
 
-- 您可以藉由實施 Azure 監視器警示管理解決方案，來提供改良的警示體驗。 Operations Manager 管理群組中產生的警示可轉送至 Azure 監視器 logs Analytics 工作區。 您可以設定負責將警示從 Operations Manager 轉送到 Azure 監視器記錄的訂用帳戶，以轉寄特定的警示。 例如，您可以只轉寄符合您的準則的警示，以支援問題管理的趨勢，以及透過單一窗格來調查失敗或問題的根本原因。 此外，您可以將其他記錄資料與 Application Insights 或其他來源相互關聯，以深入瞭解可協助改善使用者體驗、增加執行時間，並縮短解決事件的時間。
+- 您可以藉由實施 Azure 監視器警示管理解決方案，來提供改良的警示體驗。 Operations Manager 管理群組中產生的警示可轉送至 Azure 監視器 Logs Analytics 工作區。 您可以設定負責將警示從 Operations Manager 轉送到 Azure 監視器記錄的訂用帳戶，以轉寄特定的警示。 例如，您可以只轉寄符合您的準則的警示，以支援問題管理的趨勢，以及透過單一窗格來調查失敗或問題的根本原因。 此外，您可以將其他記錄資料與 Application Insights 或其他來源相互關聯，以深入瞭解可協助改善使用者體驗、增加執行時間，並縮短解決事件的時間。
 
-- 您可以從 Azure 中的簡單或多層式架構監視雲端原生基礎結構和應用程式，也可以使用 Operations Manager 來監視內部部署基礎結構。 此監視包括一或多個 Vm、放置於可用性設定組或虛擬機器擴展集中的多個 Vm，或部署到在 Windows Server 或 Linux 容器上執行的 Azure Kubernetes Service (AKS) 的容器化應用程式。
+- 您可以使用 Azure 監視器，從 Azure 中的簡單或多層式架構監視雲端原生基礎結構和應用程式，也可以使用 Operations Manager 來監視內部部署基礎結構。 此監視包括一或多個 Vm、放置於可用性設定組或虛擬機器擴展集中的多個 Vm，或部署到在 Windows Server 或 Linux 容器上執行的 Azure Kubernetes Service (AKS) 的容器化應用程式。
 
-- 您可以使用 System Center Operations Manager 健全狀況檢查解決方案，以週期性間隔主動評估 System Center Operations Manager 管理群組的風險和健康情況。 此解決方案可以取代或補充您已新增至管理群組的任何自訂功能。
+    如果您需要全面監視在 Azure Vm 上執行的 Microsoft 或協力廠商工作負載，而且您有無法單獨根據記錄檔或效能資料來評估的 advanced 案例，請使用 System Center Operations Manager。 其管理元件可提供先進的邏輯，包括服務和健康狀態模型，以判斷工作負載的操作健全狀況。
 
 - 藉由使用適用於 VM 的 Azure 監視器的對應功能，您可以監視 Azure Vm 和內部部署 Vm 之間的網路連線計量標準連線計量。 這些計量包括回應時間、每分鐘的要求數、流量輸送量和連結。 您可以識別失敗的連接、進行疑難排解、執行遷移驗證、執行安全性分析，以及驗證服務的整體架構。 Map 可以自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 這項自動化可協助您找出您不知道的連線和相依性、規劃並驗證 Azure 的遷移，並將事件解決期間的推測降至最低。
 
@@ -147,7 +147,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
   - 任務關鍵性多層式應用程式和微服務。
   -  (HTTP/HTTPS) 的使用者位置和 web 架構應用程式。
 
-此策略會提供網路層的可見度，而不需要 SNMP。 它也可以出現在互動式拓撲圖中，也就是來源和目的地端點之間路由的逐一躍點拓撲。 比起嘗試使用 Operations Manager 中的網路監視，或在您的環境中目前使用的其他網路監視工具來達成相同結果，這是較好的選擇。
+    此策略會提供網路層的可見度，而不需要 SNMP。 它也可以出現在互動式拓撲圖中，也就是來源和目的地端點之間路由的逐一躍點拓撲。 比起嘗試使用 Operations Manager 中的網路監視，或在您的環境中目前使用的其他網路監視工具來達成相同結果，這是較好的選擇。
 
 ### <a name="monitor-with-azure-monitor"></a>使用 Azure 監視器進行監視
 
