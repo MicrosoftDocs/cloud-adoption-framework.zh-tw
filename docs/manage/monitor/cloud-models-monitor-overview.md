@@ -3,16 +3,16 @@ title: 雲端部署模型的監視策略
 description: 使用「適用于 Azure 的雲端採用架構」來瞭解要採用的雲端管理監視策略。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 10/02/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1497ab2a8a9cd88ec0555790eccff7626c29ecc9
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: aa790dbb08bcb3b05880d57951753ae81a0defbe
+ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898182"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92003926"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -46,7 +46,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 |---|---|---|---|
 | 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能度量的 Azure 資料庫。 | 啟用診斷記錄，以將 SQL 資料串流至 Azure 監視器記錄。 |
-| Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure 應用程式閘道 <br> 3. 網路安全性群組 <br> 4. Azure 流量管理員 <br> 5. Azure 虛擬機器 <br> 6. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視端點狀態的可用性。 <br> 5. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 6. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 1. 對於儲存體計量，請使用 Azure 監視器儲存。 儲存體 [資源記錄](/storage/common/monitor-storage?tabs=azure-powershell#logs-in-azure-monitor-preview) 可以轉送至 Azure 監視器記錄。 <br> 2. 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 3. 啟用網路安全性群組的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 4. 啟用流量管理員端點的診斷記錄，並設定串流處理以 Azure 監視器記錄。 <br> 5. 啟用 [適用於 VM 的 Azure 監視器](/azure-monitor/insights/vminsights-overview)。 <br> 6. 啟用 [容器的 Azure 監視器](/azure-monitor/insights/container-insights-overview)。 |
+| Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure [負載平衡服務](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3. 網路安全性群組 <br> 4. Azure 虛擬機器 <br> 5. Azure Kubernetes Service/Azure 容器實例 | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 5. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 針對第一個資料行中的專案1到5，系統會自動收集平臺計量和活動記錄，並可在 Azure 監視器中使用以進行分析和警示。 <br> 設定診斷設定，以將資源記錄轉送至 Azure 監視器記錄。 <br> 啟用 [適用於 VM 的 Azure 監視器](/azure-monitor/insights/vminsights-overview)。 <br> 啟用 [容器的 Azure 監視器](/azure-monitor/insights/container-insights-overview)。 |
 | 網路 | 虛擬機器與一或多個端點之間的通訊 (另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址) 。 | 監視 VM 與端點之間發生的連線能力、延遲和網路拓撲變更。 | Azure 網路監看員。 |
 | Azure 訂用帳戶 | 從 Azure 服務的觀點來 Azure 服務健康狀態和基本資源健康狀態。 | <li> 對服務或資源執行的系統管理動作。 <li> Azure 服務的服務健康狀態為「已降級」或「無法使用」狀態。 <li> 從 Azure 服務的觀點來看，Azure 資源偵測到健康情況問題。 <li> 使用 Azure 自動調整來執行的作業，指出失敗或例外狀況。 <li> 使用 Azure 原則執行的作業，表示發生允許或拒絕的動作。 <li> Azure 資訊安全中心所產生的警示記錄。 | 使用 Azure 監視器在活動記錄中傳遞，以進行監視和警示。 |
 | Azure 租用戶 | Azure Active Directory | Azure AD audit 記錄和登入記錄檔。 | 啟用診斷記錄，並設定串流處理以 Azure 監視器記錄。 |

@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a45b0db36d2c587dbe126f47859e67418c3fe707
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 6e16c72b6703c3ddaa3db1a7f5d712571a62063f
+ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92003909"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -62,11 +62,11 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和等級，並達成更多目標。
 
-下列範例是 Microsoft Learn 上的一些量身打造學習路徑，其符合雲端採用架構的就緒方法：
+下列範例是 Microsoft Learn 上的一些量身訂做的學習路徑，與雲端採用架構的就緒方法一致：
 
-[Azure 基本](/learn/paths/azure-for-the-data-engineer)概念：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 雲端運算的優點，以及它如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的廣泛服務，包括計算、網路、儲存體和安全性。
+[Azure 基本](/learn/paths/azure-fundamentals)概念：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 雲端運算的優點，以及它如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的廣泛服務，包括計算、網路、儲存體和安全性。
 
-[管理 azure 中的資源](/learn/paths/azure-for-the-data-engineer)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
+[管理 azure 中的資源](/learn/paths/control-and-organize-with-azure-resource-manager)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
 
 [管理 Azure 中的基礎結構資源](/learn/paths/administer-infrastructure-resources-in-azure)：瞭解如何建立、管理、保護及調整虛擬機器資源。
 
