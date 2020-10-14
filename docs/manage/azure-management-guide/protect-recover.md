@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ad8077c96d8083d77acbaa72749077cae8c2a8b
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: e1a97180e2a2a56d5ebd10b118a05a630b64b204
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176509"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898143"
 ---
 # <a name="protect-and-recover-in-azure"></a>Azure 中的保護和復原
 
@@ -44,7 +44,7 @@ ms.locfileid: "89176509"
 
 透過 Azure 備份，您可以在 Microsoft 雲端中備份、保護及還原資料。 Azure 備份會以雲端式解決方案取代您現有的內部部署或異地備份解決方案。 這是一個可靠、安全及具成本競爭力的新解決方案。 Azure 備份也可透過一個一致的解決方案，協助您保護和復原內部部署資產。
 
-對於存在於 Azure 中的資料，Azure 備份提供各種不同的保護層級。 例如：針對備份 Azure 虛擬機器和 Azure 檔案儲存體等重要雲端基礎結構元件，其提供 [ Azure 虛擬機器備份](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) 和 [Azure 檔案備份](https://docs.microsoft.com/azure/backup/azure-file-share-backup-overview)。 針對在 Azure 虛擬機器中執行的資料庫之類的重要元件，其會針對 [MS SQL](https://docs.microsoft.com/azure/backup/backup-azure-sql-database) 和 [SAP Hana](https://docs.microsoft.com/azure/backup/sap-hana-db-about)以較低的 RPO 提供專用的資料庫備份解決方案。
+對於存在於 Azure 中的資料，Azure 備份提供各種不同的保護層級。 例如：針對備份 Azure 虛擬機器和 Azure 檔案儲存體等重要雲端基礎結構元件，其提供 [ Azure 虛擬機器備份](/azure/backup/backup-azure-vms-introduction) 和 [Azure 檔案備份](/azure/backup/azure-file-share-backup-overview)。 針對在 Azure 虛擬機器中執行的資料庫之類的重要元件，其會針對 [MS SQL](/azure/backup/backup-azure-sql-database) 和 [SAP Hana](/azure/backup/sap-hana-db-about)以較低的 RPO 提供專用的資料庫備份解決方案。
 
 若要瞭解使用 Azure 備份來啟用備份有多麼容易，請查看以下一節以啟用 Azure 虛擬機器的備份
 
