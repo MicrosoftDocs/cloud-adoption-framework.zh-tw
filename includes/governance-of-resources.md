@@ -7,7 +7,7 @@
 
 一組全域原則和 RBAC 角色將提供基準層級的加強治理。 為了符合雲端治理小組的原則需求，實作治理 MVP 需要完成下列工作：
 
-1. 識別所需的 Azure 原則定義，以強制執行商務需求。 這可能包含使用內建的定義，以及建立新的自訂定義。
+1. 識別所需的 Azure 原則定義，以強制執行商務需求。 這可能包含使用內建的定義，以及建立新的自訂定義。 為了跟上新發行內建定義的步調，您可以使用內建原則的所有認可 [Atom 摘要](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom)，以便用於 RSS 摘要。 或者，您也可以檢查 [AzAdvertizer](https://www.azadvertizer.net/)。 
 2. 使用這些內建和自訂原則，以及治理 MVP 所需的角色指派，來建立藍圖定義。
 3. 透過將藍圖定義指派給所有訂用帳戶，即可全域套用原則和設定。
 
@@ -20,7 +20,7 @@ Azure 提供數個內建原則與角色定義，您可以指派給管理群組�
 由於支援治理 MVP 所需的原則，需要套用至所有目前的訂用帳戶，因此將使用根管理群組中建立的內建定義和自訂定義組合，來實作下列商務需求：
 
 1. 可用的角色指派清單以雲端治理小組授權的一組內建 Azure 角色為限。 這需要[自訂原則定義](https://github.com/azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)。
-2. 所有資源上都需要下列標記：部門/計費單位  、地理位置  、資料分類  、重要性  、SLA  、環境  、應用程式原型  、應用程式  及應用程式擁有者  。 這可使用 `Require specified tag` 內建定義來處理。
+2. 所有資源上都需要下列標記：部門/計費單位、地理位置、資料分類、重要性、SLA、環境、應用程式原型、應用程式及應用程式擁有者。 這可使用 `Require specified tag` 內建定義來處理。
 3. 要求資源的 `Application`標記應符合相關資源群組的名稱。 這可以使用「需要標籤及其值」內建定義來處理。
 
 如需定義自訂原則的詳細資訊，請參閱 [Azure 原則文件](/azure/governance/policy/tutorials/create-custom-policy-definition)。 如需自訂原則的指導方針與範例，請參閱 [Azure 原則範例網站](/azure/governance/policy/samples)和相關聯的 [GitHub 存放庫](https://github.com/azure/azure-policy)。
