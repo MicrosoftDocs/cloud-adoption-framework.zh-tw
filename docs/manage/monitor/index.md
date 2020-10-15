@@ -7,12 +7,12 @@ ms.date: 10/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a1f474f1146afe21508571c402a0da91ac256062
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 1c59389754f8c109158ca8ac6aca54fe8cd92a1a
+ms.sourcegitcommit: d81a822575820115d9814b0fc6c05ae33e535825
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898160"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92058762"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
@@ -56,12 +56,12 @@ ms.locfileid: "91898160"
 有一些軟體和服務可協助您監視和管理各種裝載於 Azure、您的公司網路或其他雲端提供者的資源。 其中包括：
 
 - [System Center Operations Manager](/system-center/scom/welcome)
-- [Azure 監視器](/azure-monitor/overview) (包含 Log Analytics 和 Application Insights)
-- [Azure 原則](/governance/policy/overview)和 [Azure 藍圖](/governance/blueprints/overview)
-- [Azure Arc](/azure-arc/overview)
-- [Azure 自動化](/automation/automation-intro)
-- [Azure Logic Apps](/logic-apps/logic-apps-overview)
-- [Azure 事件中樞](/event-hubs/event-hubs-about)
+- [Azure 監視器](/azure/azure-monitor/overview) (包含 Log Analytics 和 Application Insights)
+- [Azure 原則](/azure/governance/policy/overview)和 [Azure 藍圖](/azure/governance/blueprints/overview)
+- [Azure Arc](/azure/azure-arc/)
+- [Azure 自動化](/azure/automation/automation-intro)
+- [Azure Logic Apps](/azure/logic-apps/logic-apps-overview)
+- [Azure 事件中樞](/azure/event-hubs/event-hubs-about)
 
 本指南的第一個版本涵蓋我們目前的監視平台：Azure 監視器和 System Center Operations Manager。 其中也會概述用於監視每個雲端部署模型的建議策略。 其中也包含第一組監視建議，從資料收集和警示開始。
 
