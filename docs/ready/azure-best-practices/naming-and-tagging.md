@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3885de0ac0ce8340162173806a1686a4bc409ecb
+ms.sourcegitcommit: 65b2476d07d4c224d279ac59f7e7f2868bba219c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776545"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136346"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
@@ -21,6 +21,8 @@ ms.locfileid: "90776545"
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
 組織您的雲端資產，以支援營運管理和會計需求。 定義完善的命名和元資料標記慣例有助於快速找出及管理資源。 這些慣例也有助於透過計費和回報會計機制，將雲端使用量成本與商務小組產生關聯。
+
+確切的資源表示和命名是安全性目的不可或缺的。 發生安全性事件時，迅速找出受影響的系統、其潛在的業務衝擊，以及它們所使用的內容，對於做出良好的風險決策而言很重要。 安全性服務（例如 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-introduction) 和 [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) 參考資源）及其相關聯的記錄/警示資訊（依資源名稱）。
 
 Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)。 本指引提供詳細的建議，以支援企業雲端採用工作。
 
@@ -87,6 +89,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 資源群組                  | rg-         |
 | 原則定義               | 策略     |
 | API 管理服務實例 | apim       |
+| 受控識別                | 識別碼         |
 
 ### <a name="networking"></a>網路功能
 
@@ -128,7 +131,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | App Service 環境     | ase        |
 | App Service 方案            | 餐       |
 | Web 應用程式                     | 應用        |
-| 函數應用程式                | func       |
+| 函式應用程式                | func       |
 | 雲端服務               | 無法        |
 | 通知中樞           | contoso.ntf        |
 | 通知中樞命名空間 | ntfns-      |
@@ -149,16 +152,17 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 
 ### <a name="storage"></a>儲存體
 
-| 資產類型       | 名稱前置詞 |
-|------------------|-------------|
-| 儲存體帳戶  | st          |
-| Azure StorSimple | ssimp       |
+| 資產類型               | 名稱前置詞 |
+|--------------------------|-------------|
+| 儲存體帳戶          | st          |
+| Azure StorSimple         | ssimp       |
+| Azure Container Registry | acr         |
 
 ### <a name="ai-and-machine-learning"></a>AI 與機器學習
 
 | 資產類型                       | 名稱前置詞 |
 |----------------------------------|-------------|
-| Azue 認知搜尋           | srch-       |
+| Azure 認知搜尋           | srch-       |
 | Azure 認知服務         | 齒輪        |
 | Azure Machine Learning 工作區 | mlw-        |
 
@@ -248,9 +252,10 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 資產類型                      | 影響範圍                                 | [格式]                                                      | 範例                                                                                           |
 |---------------------------------|---------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | 管理群組                | 業務單位及/或環境類型 | mg\<Business Unit\>\[-\<Environment type\>\]               | <li> mg-mktg <li> mg-小時 <li> mg-corp-生產 <li> mg-fin-用戶端                                       |
-| 訂閱                    | 帳號 <br> Enterprise 合約    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
+| 訂用帳戶                    | 帳號 <br> Enterprise 合約    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
 | 資源群組                  | 訂用帳戶                          | rg\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
 | API 管理服務實例 | 全球                                | apim\<App or service name\>                                | apim-navigator-生產                                                                                |
+| 受控識別                | 資源群組                        | 識別碼\<App or service name\>                                  | 識別碼-appcn-keda-生產-eus-001                                                                         |
 
 > [!NOTE]
 > 本檔中上述和其他位置的範例名稱會參考三位數填補 (\<\#\#\#\>) 。 即。  mktg-生產-*001*
@@ -285,7 +290,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 虛擬機器             | 資源群組 | Vm\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
 | VM 儲存體帳戶          | 全球         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
 | Web 應用程式                     | 全球         | 應用程式- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
-| 函數應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
+| 函式應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
 | 雲端服務               | 全球         | 可能- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{cloudapp.net}]        | <li> could-navigator-prod-001.azurewebsites.net <li> could-accountlookup-dev-001.azurewebsites.net |
 | 通知中樞            | 資源群組 | contoso.ntf\<App Name\>-\<Environment\>                                    | <li> contoso.ntf-navigator-生產 <li> contoso.ntf-排放-開發 |
 | 通知中樞命名空間 | 全球         | ntfns-\<App Name\>-\<Environment\>                                  | <li> ntfns-navigator-生產 <li> ntfns-排放-開發 |
@@ -310,12 +315,13 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 儲存體帳戶 (一般用途)      | 全球 | 聖\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
 | 儲存體帳戶 (診斷記錄)  | 全球 | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
 | Azure StorSimple                  | 全球 | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
+| Azure Container Registry          | 全球 | Acr\<App Name\>\<Environment\>\<\#\#\#\>                                      | <li> acrnavigatorprod001 |
 
 ### <a name="example-names-ai-and-machine-learning"></a>範例名稱： AI 和機器學習
 
 | 資產類型                       | 影響範圍          | [格式]                            | 範例                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
-| Azue 認知搜尋           | 全球         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissions-dev |
+| Azure 認知搜尋           | 全球         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissions-dev |
 | Azure 認知服務         | 資源群組 | 齒輪\<App Name\>-\<Environment\>  | <li> 齒輪-navigator-生產 <li> 齒輪-排放-開發 |
 | Azure Machine Learning 工作區 | 資源群組 | mlw-\<App Name\>-\<Environment\>  | <li> mlw-navigator-生產 <li> mlw-排放-開發 |
 
