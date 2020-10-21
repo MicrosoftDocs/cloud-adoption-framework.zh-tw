@@ -7,20 +7,20 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b790b9c8f99fb3f2a7bf55757792d019b3dfdb3
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5490fe413db98fcccab94905e70d0ac601da9f5e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775355"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334624"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure 的應用程式移轉範例概觀
 
-適用于 Azure 的雲端採用架構的這一節會提供數個常見遷移案例的範例，並示範如何將內部部署基礎結構遷移至 [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure)。
+適用于 Azure 的雲端採用架構的這一節會提供數個常見遷移案例的範例，並示範如何將內部部署基礎結構遷移至 [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/)。
 
 ## <a name="introduction"></a>簡介
 
-Azure 提供全方位雲端服務組合的存取權。 作為開發人員和 IT 專業人員，您可以使用這些服務，透過全球資料中心網路在各種工具和架構上建立、部署和管理應用程式。 當您的業務面臨與數位轉班相關的挑戰時，Azure plaftorm 可協助您找出如何：
+Azure 提供全方位雲端服務組合的存取權。 作為開發人員和 IT 專業人員，您可以使用這些服務，透過全球資料中心網路在各種工具和架構上建立、部署和管理應用程式。 當您的業務面臨與數位轉班相關的挑戰時，Azure 平臺可協助您找出如何：
 
 - 優化資源和作業。
 - 與您的客戶和員工互動。
@@ -36,10 +36,10 @@ Azure 是混合式雲端策略的一部分，可提供將內部部署應用程�
 
 | 模式 | 定義 | 使用時機 |
 | --- | --- | --- |
-| **重新裝載** | 通常稱為「隨即轉移」，此選項不需要變更程式碼。 您可以使用它來快速將現有的應用程式遷移至 Azure。 每個應用程式都會依原樣遷移，以充分利用雲端的優點，而不會有與程式碼變更相關聯的風險和成本。 | 當您需要快速將應用程式移至雲端時。 <br><br> 當您想要移動應用程式而不加以修改。 <br><br> 當您的應用程式已設計為可利用 [Azure 基礎結構即服務， (IaaS ](https://azure.microsoft.com/overview/what-is-iaas) 在遷移後) 擴充性。 <br><br> 當應用程式對您的業務很重要時，但您不需要立即變更應用程式功能。 |
-| **重構** | 重構通常稱為「重新封裝」，需要對應用程式進行極少量的變更，讓他們可以連線到 [Azure 平臺即服務 (PaaS) ](https://azure.microsoft.com/overview/what-is-paas) 並使用雲端供應專案。 <br><br> 例如，您可以將現有的應用程式遷移至 Azure App Service 或 Azure Kubernetes Service (AKS) 。 <br><br> 或者，您可以將關聯式和非關聯式資料庫重構為 Azure SQL 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB 等選項。 | 如果您的應用程式可以輕鬆地重新封裝以在 Azure 中運作。 <br><br> 如果您想要套用 Azure 所提供的創新 DevOps 實務，或想要使用適用于工作負載的容器策略來考慮 DevOps。 <br><br> 針對重構，您需要考慮現有程式碼基底的可攜性和可用的開發技能。 |
+| **重新裝載** | 通常稱為「隨即轉移」，此選項不需要變更程式碼。 您可以使用它來快速將現有的應用程式遷移至 Azure。 每個應用程式都會依原樣遷移，以充分利用雲端的優點，而不會有與程式碼變更相關聯的風險和成本。 | 當您需要快速將應用程式移至雲端時。 <br><br> 當您想要移動應用程式而不加以修改。 <br><br> 當您的應用程式已設計為可利用 [Azure 基礎結構即服務， (IaaS ](https://azure.microsoft.com/overview/what-is-iaas/) 在遷移後) 擴充性。 <br><br> 當應用程式對您的業務很重要時，但您不需要立即變更應用程式功能。 |
+| **重構** | 重構通常稱為「重新封裝」，需要對應用程式進行極少量的變更，讓他們可以連線到 [Azure 平臺即服務 (PaaS) ](https://azure.microsoft.com/overview/what-is-paas/) 並使用雲端供應專案。 <br><br> 例如，您可以將現有的應用程式遷移至 Azure App Service 或 Azure Kubernetes Service (AKS) 。 <br><br> 或者，您可以將關聯式和非關聯式資料庫重構為 Azure SQL 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB 等選項。 | 如果您的應用程式可以輕鬆地重新封裝以在 Azure 中運作。 <br><br> 如果您想要套用 Azure 所提供的創新 DevOps 實務，或想要使用適用于工作負載的容器策略來考慮 DevOps。 <br><br> 針對重構，您需要考慮現有程式碼基底的可攜性和可用的開發技能。 |
 | **重新架構** | 重新架構 for 遷移著重于修改和擴充應用程式功能和程式碼基底，以優化雲端擴充性的應用程式架構。 <br><br> 例如，您可將單一應用程式劃分為數個微服務群組，如此即能輕鬆搭配運作和擴充。 <br><br> 您也可以將關聯式和非關聯式資料庫重新架構到完全受控的資料庫解決方案，例如 SQL 受控執行個體、適用於 MySQL 的 Azure 資料庫、適用於 PostgreSQL 的 Azure 資料庫和 Azure Cosmos DB。 | 當您的應用程式需要主要修訂，以納入新功能或在雲端平臺上有效運作時。 <br><br> 當您想要使用現有的應用程式投資時，請滿足擴充性需求、套用創新的 DevOps 實務，以及將虛擬機器的使用降至最低。 |
-| **重建** | 重建會使用 Azure 雲端技術從頭重建應用程式，以進行進一步的步驟。 <br><br> 例如，您可以使用 Azure Functions、AI、SQL 受控執行個體和 Azure Cosmos DB 等 [雲端原生](https://azure.microsoft.com/overview/cloudnative) 技術來建立 greenfield 應用程式。 | 當您想要快速開發，且現有應用程式的功能和生命週期有限時。 <br><br> 準備加速商務創新 (包括 Azure 提供的 DevOps 做法)、使用雲端原生技術建置全新應用程式，以及利用 AI、區塊鏈和 IoT 領域的先進技術時。 |
+| **重建** | 重建會使用 Azure 雲端技術從頭重建應用程式，以進行進一步的步驟。 <br><br> 例如，您可以使用 Azure Functions、AI、SQL 受控執行個體和 Azure Cosmos DB 等 [雲端原生](https://azure.microsoft.com/overview/cloudnative/) 技術來建立 greenfield 應用程式。 | 當您想要快速開發，且現有應用程式的功能和生命週期有限時。 <br><br> 準備加速商務創新 (包括 Azure 提供的 DevOps 做法)、使用雲端原生技術建置全新應用程式，以及利用 AI、區塊鏈和 IoT 領域的先進技術時。 |
 
 ## <a name="migration-example-articles"></a>移轉範例文章
 
@@ -103,28 +103,28 @@ _圖1：常見的遷移和現代化專案類別。_
 
 | 發行項 | 詳細資料 |
 | --- | --- |
-| [使用 App Service 和 SQL Database 重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql.md) | 此範例說明如何使用 [資料庫移轉服務](/azure/dms/dms-overview)，將內部部署 Windows 應用程式遷移至 azure web 應用程式，並將應用程式資料庫移轉至 azure SQL Server 實例。 |
+| [使用 App Service 和 SQL Database 重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql.md) | 此範例示範如何將內部部署 Windows 應用程式遷移至 Azure web 應用程式，並使用 [資料庫移轉服務](/azure/dms/dms-overview)，將應用程式資料庫移轉至 Azure SQL Database server 實例。 |
 | [使用 App Service 和 SQL 受控執行個體重構 Windows 應用程式](./contoso-migration-refactor-web-app-sql-managed-instance.md) | 此範例說明如何使用 [資料庫移轉服務](/azure/dms/dms-overview)，將內部部署 Windows 應用程式遷移至 Azure web 應用程式，並將應用程式資料庫移轉至 SQL 受控執行個體。 |
 | [使用 App Service、Azure 流量管理員和適用於 MySQL 的 Azure 資料庫，將 Linux 應用程式重構至多個區域](./contoso-migration-refactor-linux-app-service-mysql.md) | 此範例示範如何使用流量管理員與 GitHub 整合，以在多個 Azure 區域上將內部部署 Linux 應用程式遷移至 Azure web 應用程式，以進行持續傳遞。 應用程式資料庫會遷移至適用於 MySQL 的 Azure 資料庫實例。 |
-| [在 Azure 中重建應用程式](./contoso-migration-rebuild.md) | 本文提供使用 Azure 功能和受控服務的範圍來重建內部部署應用程式的範例。 這些功能和服務包括 App Service、AKS、函數、Azure 認知服務和 Azure Cosmos DB。 |
+| [在 Azure 中重建應用程式](./contoso-migration-rebuild.md) | 本文提供使用 Azure 功能和受控服務的範圍來重建內部部署應用程式的範例。 這些功能和服務包括 App Service、AKS、Azure Functions、Azure 認知服務和 Azure Cosmos DB。 |
 | [重構 Team Foundation Server 至 Azure DevOps Services](./contoso-migration-tfs-vsts.md) | 本文中的範例說明將內部部署 Team Foundation Server 部署移轉至 Azure 中的 Azure DevOps Services。 |
 
 ### <a name="sap"></a>SAP
 
 | 發行項 | 詳細資料 |
 | --- | --- |
-| [SAP 移轉指南](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide) | 取得將內部部署 SAP 工作負載移至雲端的實用指導方針。 |
-| [將 SAP 應用程式遷移至 Azure](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure) | 適用于 SAP 旅程至雲端的白皮書和藍圖。 |
-| [Azure 上的 SAP 移轉方法](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure) | 概述將 SAP 應用程式移至 Azure 的各種遷移選項。 |
+| [SAP 移轉指南](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide/) | 取得將內部部署 SAP 工作負載移至雲端的實用指導方針。 |
+| [將 SAP 應用程式遷移至 Azure](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure/) | 適用于 SAP 旅程至雲端的白皮書和藍圖。 |
+| [Azure 上的 SAP 移轉方法](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure/) | 概述將 SAP 應用程式移至 Azure 的各種遷移選項。 |
 
 ### <a name="specialized-workloads"></a>特製化工作負載
 
 | 發行項 | 詳細資料 |
 | --- | --- |
 | [將內部部署 VMware 基礎結構移至 Azure](./contoso-migration-vmware-to-azure.md) | 本文提供使用 Azure VMware 解決方案將內部部署 VMware Vm 移至 Azure 的範例。 |
-| [Azure NetApp Files](https://azure.microsoft.com/services/netapp) | 由 NetApp 提供技術支援的企業檔案儲存體。 在 Azure 中執行 Linux 和 Windows 檔案工作負載。 |
-| [Oracle on Azure](https://azure.microsoft.com/solutions/oracle) | 在 Azure 和 Oracle 雲端中執行您的 Oracle 資料庫和企業應用程式。 |
-| [Azure 中的 Cray](https://azure.microsoft.com/solutions/high-performance-computing/cray) | 在 Azure 中使用 Cray 進行高效能運算。 您虛擬網路上的專用超級電腦。 |
+| [Azure NetApp Files](https://azure.microsoft.com/services/netapp/) | 由 NetApp 提供技術支援的企業檔案儲存體。 在 Azure 中執行 Linux 和 Windows 檔案工作負載。 |
+| [Oracle on Azure](https://azure.microsoft.com/solutions/oracle/) | 在 Azure 和 Oracle 雲端基礎結構中執行您的 Oracle 資料庫和企業應用程式。 |
+| [Azure 中的 Cray](https://azure.microsoft.com/solutions/high-performance-computing/cray/) | 在 Azure 中使用 Cray 進行高效能運算。 您虛擬網路上的專用超級電腦。 |
 
 ### <a name="vdi"></a>VDI
 
@@ -140,10 +140,8 @@ _圖1：常見的遷移和現代化專案類別。_
 
 ### <a name="demo-applications"></a>示範應用程式
 
-<!-- docutune:casing SmartHotel360 osTicket -->
-
 本節提供的範例文章會使用兩個示範應用程式： SmartHotel360 和 osTicket。
 
-**SmartHotel360**：此測試應用程式是由 Microsoft 開發，以在您使用 Azure 時使用。 它是以開放原始碼的形式提供，您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360)下載。 它是連接到 SQL Server 資料庫的 ASP.NET 應用程式。 在這些文章所討論的案例中，此應用程式的目前版本會部署至執行 Windows Server 2008 R2 和 SQL Server 2008 R2 的兩個 VMware Vm。 這些應用程式 Vm 裝載于內部部署環境，並受 vCenter Server 管理。
+**SmartHotel360**：此測試應用程式是由 Microsoft 開發，以在您使用 Azure 時使用。 它是以開放原始碼授權提供，您可以從 [GitHub](https://github.com/Microsoft/SmartHotel360)下載。 它是連接到 SQL Server 資料庫的 ASP.NET 應用程式。 在這些文章所討論的案例中，此應用程式的目前版本會部署至執行 Windows Server 2008 R2 和 SQL Server 2008 R2 的兩個 VMware Vm。 這些應用程式 Vm 裝載于內部部署環境，並受 vCenter Server 管理。
 
 **osTicket**：此開放原始碼服務台票證應用程式會在 Linux 上執行。 您可以從 [GitHub](https://github.com/osTicket/osTicket) 下載。 在這些文章所討論的案例中，此應用程式的目前版本會使用 Apache 2、PHP 7.0 和 MySQL 5.7，在內部部署環境部署至執行 Ubuntu 16.04 LTS 的兩部 VMware Vm。

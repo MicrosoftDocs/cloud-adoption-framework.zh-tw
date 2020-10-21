@@ -7,12 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d608aa4bd7128f469c8eb6f8a1d100e001d2287b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: ba0d19a7c6dd050e5580c1ef701cc63ed0debda4
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605155"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334760"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>將開發/測試環境遷移至 Azure DevTest Labs
 
@@ -24,7 +24,7 @@ Contoso 在將其開發/測試環境移至 Azure 時，有數個可用的選項�
 
 | 移轉選項 | 結果 |
 | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | [評定](/azure/migrate/tutorial-assess-vmware) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <br><br> 使用 Azure 基礎結構即服務 (IaaS) 來執行開發/測試伺服器。 <br><br> 使用 [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)管理 vm。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | [評定](/azure/migrate/tutorial-assess-vmware-azure-vm) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <br><br> 使用 Azure 基礎結構即服務 (IaaS) 來執行開發/測試伺服器。 <br><br> 使用 [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)管理 vm。 |
 | [DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | 快速布建開發與測試環境。 <br><br> 使用配額和原則將浪費降至最低。 <br><br> 設定自動關機將成本降至最低。 <br><br> 建立 Windows 和 Linux 環境。 |
 
 > [!NOTE]
@@ -40,12 +40,12 @@ Contoso 在將其開發/測試環境移至 Azure 時，有數個可用的選項�
 - 將所有開發/測試環境移出資料中心，而不再購買硬體來開發軟體，以節省成本。
 
 > [!NOTE]
-> Contoso 會在其環境中使用 [隨用隨付開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶供應專案。 小組中的每個 active Visual Studio 訂閱者都可以在 Azure 虛擬機器上使用訂用帳戶隨附的 Microsoft 軟體進行開發/測試，而不需額外付費。 Contoso 只會支付執行 Vm 的 Linux 費率。 這包括具有 SQL Server、SharePoint Server 或其他軟體的 Vm，通常以較高的費率計費。
+> Contoso 會在其環境中使用 [隨用隨付開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶供應專案。 小組中的每個 active Visual Studio 訂閱者都可以在 Azure 虛擬機器上使用訂用帳戶隨附的 Microsoft 軟體進行開發/測試，而不需額外付費。 Contoso 只會支付執行 Vm 的 Linux 費率。 這包括具有 SQL Server、SharePoint Server 或其他軟體的 Vm，通常以較高的費率計費。
 
 <!-- -->
 
 > [!NOTE]
-> 具有 Enterprise 合約的 azure 客戶也可受益于 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0148p)用帳戶供應專案。 若要深入瞭解，請參閱 [這段影片](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal) ，以瞭解如何使用 Enterprise 合約入口網站建立 Azure 開發/測試訂用帳戶。
+> 具有 Enterprise 合約的 azure 客戶也可受益于 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0148p/)用帳戶供應專案。 若要深入瞭解，請參閱 [這段影片](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal) ，以瞭解如何使用 Enterprise 合約入口網站建立 Azure 開發/測試訂用帳戶。
 
 ## <a name="migration-goals"></a>移轉目標
 
@@ -69,7 +69,7 @@ Contoso 開發小組已將此遷移的目標釘選。 這些目標是用來判�
 
 ### <a name="proposed-architecture"></a>建議的架構
 
-- Contoso 會使用 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶來降低 azure 資源的成本。 此訂用帳戶可節省大量費用，包括不會產生 Microsoft 軟體授權費用的 Vm。
+- Contoso 會使用 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶來降低 azure 資源的成本。 此訂用帳戶可節省大量費用，包括不會產生 Microsoft 軟體授權費用的 Vm。
 - Contoso 會使用 DevTest Labs 來管理環境。 將在 DevTest Labs 中建立新的 Vm，以支援移至新的工具，在雲端中進行開發和測試。
 - 完成遷移之後，Contoso 資料中心內的內部部署開發/測試 Vm 將會解除委任。
 - 開發人員和測試人員可以存取其工作站的 Windows 虛擬桌面。
@@ -100,7 +100,7 @@ Contoso 會使用 DevTest Labs 將其開發應用程式和資料庫 Vm 遷移至
 - Contoso 已經有 [Azure 基礎結構](./contoso-migration-infrastructure.md) ，包括開發虛擬網路。
 - 一切準備就緒之後，Contoso 會布建並設定 DevTest Labs。
 - Contoso 會設定開發虛擬網路、指派資源群組，以及設定原則。
-- Contoso 會建立 Windows 虛擬桌面，讓開發人員在遠端位置使用。
+- Contoso 會建立 Windows 虛擬桌面實例，讓開發人員在遠端位置使用。
 - Contoso 會在 DevTest Labs 中建立 Vm，以便開發和遷移資料庫。
 
 ![說明遷移程式的圖表。](./media/contoso-migration-devtest-to-labs/migration-process-devtest-labs.png)
@@ -113,7 +113,7 @@ _圖2：遷移程式。_
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶，以降低高達80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶，以降低高達80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
 | **Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。 |
 
 ## <a name="scenario-steps"></a>案例步驟
@@ -133,7 +133,7 @@ Contoso 管理員必須先使用 Azure 開發/測試供應專案來布建新的�
 
 他們依照下列方式進行其設定：
 
-系統管理員會遵循 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶供應專案的連結，並布建新的訂用帳戶，以在其系統上節省最高80% 的費用。 此供應專案可讓他們在 Azure 上執行 Windows 10 映射以進行開發/測試。 他們將獲得 [Windows 虛擬桌面](/azure/virtual-desktop/overview) 的存取權，以簡化遠端開發人員的管理經驗。
+系統管理員會遵循 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶供應專案的連結，並布建新的訂用帳戶，以在其系統上節省最高80% 的費用。 此供應專案可讓他們在 Azure 上執行 Windows 10 映射以進行開發/測試。 他們將獲得 [Windows 虛擬桌面](/azure/virtual-desktop/overview) 的存取權，以簡化遠端開發人員的管理經驗。
 
 ![隨用隨付開發/測試供應專案的螢幕擷取畫面，其中包含 [啟用] 按鈕。](./media/contoso-migration-devtest-to-labs/devtest-subscription.png)
 
@@ -157,7 +157,7 @@ _圖4：建立新的 DevTest Labs 實例。_
 
       _圖5： DevTest Labs 實例：設定和原則。_
 
-   2. Contoso 會選取 [**虛擬網路**]  >  **+ [新增**]，選擇 [ **vnet-開發-eus2**]，然後選取 [**儲存**]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
+   2. Contoso 會選取 [**虛擬網路**]，再選擇 [新增]，然後  >  **+ Add** `vnet-dev-eus2` 選取 [**儲存**]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
 
       ![新增虛擬網路之選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/vnets.png)
 
@@ -251,7 +251,7 @@ Contoso 必須為遠端開發人員建立 Windows 虛擬桌面。
 1. 為了建立資料庫 VM 公式，Contoso 會遵循相同的基本步驟。 這次，它會選取基底的 SQL Server 2012 映射。
 
    ![顯示 SQL Server 2012 R2 基底之選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/sql-2012-base.png)
-  
+
    _圖18： SQL Server 2012 影像。_
 
 1. Contoso 會使用大小和構件來設定公式。 這些成品包含此資料庫開發 VM 公式所需的 SQL Server Management Studio。
@@ -260,7 +260,7 @@ Contoso 必須為遠端開發人員建立 Windows 虛擬桌面。
 
    _圖19： SQL 2020 R2 基本設定。_
 
-   深入瞭解如何搭配使用 [公式](/azure/lab-services/devtest-lab-manage-formulas) 與 DevTest Labs。
+   深入瞭解如何搭配 [使用公式與 Azure DevTest Labs](/azure/devtest-labs/devtest-lab-manage-formulas)。
 
 1. Contoso 現在已建立要用於應用程式和資料庫之開發人員的 Windows 基底公式。
 
@@ -321,7 +321,7 @@ Contoso 安全性小組會檢查 Azure Vm 以判斷任何安全性問題。 若�
 
 - Contoso 會確保所有開發/測試訂用帳戶都是透過此開發/測試訂用帳戶建立，以節省80% 的成本。
 - 系統會針對 Vm 的所有 DevTest Labs 實例和原則，檢查預算，以確保包含成本，而過度布建不會錯誤地發生。
-- Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
+- Contoso 會啟用 [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
 
 ## <a name="conclusion"></a>結論
 
@@ -329,4 +329,4 @@ Contoso 安全性小組會檢查 Azure Vm 以判斷任何安全性問題。 若�
 
 **需要其他協助嗎？**
 
-立即在您的訂用帳戶中[建立 DevTest labs 實例](/azure/lab-services/devtest-lab-create-lab)，並瞭解如何使用[適用于開發人員的 DevTest labs](/azure/lab-services/devtest-lab-developer-lab)。
+立即在您的訂用帳戶中[建立 DevTest labs 實例](/azure/devtest-labs/devtest-lab-create-lab)，並瞭解如何使用[適用于開發人員的 DevTest labs](/azure/devtest-labs/devtest-lab-developer-lab)。

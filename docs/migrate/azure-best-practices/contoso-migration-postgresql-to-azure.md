@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f9dfee1aca21acbbf0f840b79d61501ad90c73a
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 6dca1ce7cbd13630207ba04a8298769263145e67
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603864"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334641"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -48,7 +48,7 @@ Contoso 雲端小組已將此遷移的目標釘選出來，並將使用它們來
 
 ### <a name="current-environment"></a>目前的環境
 
-于 postgresql 9.6.7 是在 Contoso 資料中心 () 的實體 Linux 機器上執行 `sql-pg-01.contoso.com` 。 Contoso 已經有一個具有站對站虛擬網路閘道的 Azure 訂用帳戶，可使用內部部署資料中心網路。
+于 postgresql 9.6.7 是在 Contoso 資料中心 () 的實體 Linux 機器上執行 `sql-pg-01.contoso.com` 。 Contoso 已經有一個具有站對站 VPN 閘道的 Azure 訂用帳戶，可使用內部部署資料中心網路。
 
 ### <a name="proposed-solution"></a>建議的解決方案
 
@@ -129,6 +129,8 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 若要準備，請設定虛擬網路來存取資料庫。 使用 [VPN 閘道](/azure/vpn-gateway/vpn-gateway-about-vpngateways) 以各種方式建立虛擬網路連線。
 
+<!-- docutune:ignore "Azure Database Migration Services" -->
+
 ### <a name="create-an-azure-database-migration-service-instance"></a>建立 Azure 資料庫移轉服務執行個體
 
 1. 在 [ [Azure 入口網站](https://portal.azure.com)中，選取 [ **新增資源**]。
@@ -187,7 +189,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 1. 在 Azure 入口網站中，Contoso 會移至其資料庫移轉服務資源。
 1. 如果服務未啟動，請選取 [ **啟動服務**]。
-1. 選取 [ **新增遷移專案**]。
+1. 選取 [新增移轉專案]。
 
     ![顯示反白顯示 [新增遷移專案] 選項的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project.png)
 
@@ -269,7 +271,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 Contoso 必須：
 
-- 確定于 postgresql 實例和資料庫的新 Azure 資料庫是安全的。 如需詳細資訊，請參閱 [適用於 PostgreSQL 的 Azure 資料庫-單一伺服器中的安全性](/azure/postgresql/concepts-security)。
+- 確定新的適用於 PostgreSQL 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用於 PostgreSQL 的 Azure 資料庫-單一伺服器中的安全性](/azure/postgresql/concepts-security)。
 - 請檢查 [防火牆規則](/azure/postgresql/concepts-firewall-rules) 和虛擬網路設定，以確認連線只限于需要它的應用程式。
 - 針對資料加密執行 [BYOK](/azure/postgresql/concepts-data-encryption-postgresql) 。
 - 更新所有應用程式，以要求對資料庫進行 [SSL](/azure/postgresql/concepts-ssl-connection-security) 連接。

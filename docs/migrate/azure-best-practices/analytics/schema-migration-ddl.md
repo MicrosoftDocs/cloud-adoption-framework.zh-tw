@@ -1,20 +1,20 @@
 ---
 title: 架構遷移資料定義語言
-description: 使用 Azure Synapse Analytics 功能來解決高可用性和嚴重損壞修復的需求。
+description: 瞭解當您將架構遷移至 Azure Synapse Analytics 時， (Ddl) 的資料定義語言的設計考慮和效能選項。
 author: v-hanki
 ms.author: brblanch
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8652d3b67e42da037dc620f74af707f05a9fdcce
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: eebd659ad0dc0455c481e0f5b82a84fafa960c9e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775916"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334743"
 ---
-<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
+<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
 # <a name="data-definition-languages-for-schema-migration"></a>架構遷移的資料定義語言
 
@@ -79,13 +79,13 @@ ms.locfileid: "90775916"
 
 如果您可以使用這些或類似的方法，將會減少要遷移的資料表數目。 某些處理常式可能已簡化或消除，進而減少遷移工作負載。 這些方法的適用性取決於個別的使用案例。 但一般原則是考慮盡可能使用 Azure 生態系統的功能和功能來減少遷移工作負載，並建立符合成本效益的目標環境。 這也適用于其他功能，例如備份/還原和工作流程管理與監視。
 
-Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移，而在某些情況下會將部分流程自動化。 如果現有的系統納入協力廠商 ETL 產品，則可能已支援 Azure Synapse Analytics 做為目標環境。 現有的 ETL 工作流程可以重新導向至新的目標 Azure SQL 資料倉儲。
+Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移，而在某些情況下會將部分流程自動化。 如果現有的系統納入協力廠商 ETL 產品，則可能已支援 Azure Synapse Analytics 做為目標環境。 現有的 ETL 工作流程可以重新導向至新的目標資料倉儲。
 
 ### <a name="data-marts-physical-or-virtual"></a>資料超市：實體或虛擬
 
 如果組織使用較舊的資料倉儲環境來建立資料超市，以提供其部門或商務功能，並提供良好的臨機操作自助查詢和報告效能，這是常見的作法。 資料超市通常包含資料倉儲的子集，其中包含原始資料的匯總版本。 它的表單通常是維度資料模型，可讓使用者輕鬆地查詢資料，並從 Tableau、MicroStrategy 或 Microsoft Power BI 等方便使用的工具獲得快速回應時間。
 
-資料超市的其中一種用法是以可用的形式公開資料，即使基礎倉儲資料模型不同 (例如，資料保存庫) 。 這種方法也稱為三層式模型。
+資料超市的其中一種用法是以可用形式公開資料，即使基礎倉儲資料模型是不同 (例如資料保存庫) 。 這種方法也稱為三層式模型。
 
 您可以針對組織內的個別營業單位使用不同的資料超市，以實行穩固的資料安全性制度。 例如，您可以允許使用者存取與其相關的特定資料超市，以及消除、模糊化或匿名敏感性資料。
 
@@ -156,17 +156,17 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 | 不支援的資料類型 | 因應措施 |
 |--|--|
-| `geometry`              | `varbinary`                                                       |
-| `geography`             | `varbinary`                                                       |
-| `hierarchyid`           | `nvarchar(4000)`                                                  |
-| `image`                 | `varbinary`                                                       |
-| `text`                  | `varchar`                                                         |
-| `ntext`                 | `nvarchar`                                                        |
-| `sql_variant`           | 將資料行分割成數個強型別資料行                |
-| `table`                 | 轉換成臨時表                                     |
-| `timestamp`             | 改編要使用的程式碼和函式 `datetime2` `CURRENT_TIMESTAMP` |
-| `xml`                   | `varchar`                                                         |
-| 使用者定義型別     | 盡可能轉換回原生資料類型              |
+| `geometry` | `varbinary` |
+| `geography` | `varbinary` |
+| `hierarchyid` | `nvarchar(4000)` |
+| `image` | `varbinary` |
+| `text` | `varchar` |
+| `ntext` | `nvarchar` |
+| `sql_variant` | 將資料行分割成數個強型別資料行 |
+| `table` | 轉換成臨時表 |
+| `timestamp` | 改編要使用的程式碼和函式 `datetime2` `CURRENT_TIMESTAMP` |
+| `xml` | `varchar` |
+| 使用者定義型別 | 盡可能轉換回原生資料類型 |
 
 #### <a name="potential-data-issues"></a>潛在的資料問題
 
@@ -183,7 +183,7 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 在遷移練習期間檢查和合理化目前的資料定義是很好的時機。 您可以使用 SQL 查詢來尋找資料欄位中的最大數值或字元長度，並比較結果與資料類型，來自動化這些工作。
 
-一般來說，將資料表的總定義資料列長度最小化是很好的作法。 為了獲得最佳查詢效能，您可以使用每個資料行的最小資料類型，如先前所述。 從 Azure Synapse Analytics 中的外部資料表載入資料的建議方法是使用 PolyBase 公用程式，其支援的最大定義資料列長度為 1 mb (MB) 。 PolyBase 不會載入資料列超過 1 MB 的資料表，因此您必須改用大量複製程式。
+一般來說，將資料表的總定義資料列長度最小化是很好的作法。 為了獲得最佳查詢效能，您可以使用每個資料行的最小資料類型，如先前所述。 從 Azure Synapse Analytics 中的外部資料表載入資料的建議方法是使用 PolyBase 公用程式，其支援的最大定義資料列長度為 1 mb (MB) 。 PolyBase 不會載入資料列超過 1 MB 的資料表，因此您必須改用 [bcp](/sql/tools/bcp-utility?view=sql-server-ver15) 。
 
 針對最有效率的聯結執行，請將聯結兩端的資料行定義為相同的資料類型。 如果維度資料表的索引鍵定義為 `SMALLINT` ，則使用該維度之事實資料表中的對應參考資料行也應定義為 `SMALLINT` 。
 
@@ -273,7 +273,7 @@ Azure Synapse Analytics 包含在大型資料表中索引資料的選項，以�
 
 #### <a name="clustered-columnstore-index"></a>叢集資料行存放區索引
 
-叢集資料行存放區索引是 Azure Synapse Analytics 中的預設索引選項。 它提供最佳的壓縮和查詢效能給大型資料表。 針對少於60000000個數據列的較小資料表，這些索引不會有效，因此您應該使用堆積選項。 同樣地，如果資料表中的資料是暫時性的，而且是 ETL/ELT 進程的一部分，則堆積或臨時表可能更有效率。
+叢集資料行存放區索引是 Azure Synapse Analytics 中的預設索引選項。 它提供最佳的壓縮和查詢效能給大型資料表。 針對少於60000000個數據列的較小資料表，這些索引不會有效，因此您應該使用 `HEAP` 選項。 同樣地，如果資料表中的資料是暫時性的，而且是 ETL/ELT 進程的一部分，則堆積或臨時表可能更有效率。
 
 #### <a name="clustered-index"></a>叢集索引
 

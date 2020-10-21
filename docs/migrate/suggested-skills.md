@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 635fed255982b7e25fcf8755380ab4a10de9d8e4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0595d0ce6573d9dabed538aa39999ed6803e5842
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885859"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334879"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
@@ -31,8 +31,8 @@ ms.locfileid: "88885859"
 - [平衡組合](../strategy/balance-the-portfolio.md)：確保應用程式組合之間的平衡和適當的投資分配。
 - [打造商務理由](../strategy/cloud-migration-business-case.md)：建立及瞭解推動雲端遷移工作的業務理由。
 - [合理化數位](../digital-estate/rationalize.md)資產：合理化數位資產中的資產。
-- [應用程式組合評](/learn/modules/app-and-infra-migration-and-modernization)量：在應用程式組合內進行有關遷移或創新選項的決策準則。
-- [評估和規劃 Microsoft Azure 遷移](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning)： Pluralsight 的課程，可協助您評估內部部署工作負載。
+- [應用程式組合評](/learn/modules/app-and-infra-migration-and-modernization/)量：在應用程式組合內進行有關遷移或創新選項的決策準則。
+- [評估和規劃 Microsoft Azure 遷移](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning-update)： Pluralsight 的課程，可協助您評估內部部署工作負載。
 
 在評估過程中，架構設計人員將會設計每個工作負載的解決方案。 下列技能資源可協助您準備這些工作的架構設計人員：
 

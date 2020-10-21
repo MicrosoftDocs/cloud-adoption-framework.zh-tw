@@ -7,25 +7,26 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dca1d095eccc473445c602f679f475f44c19f1b5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7df0db259902f3b840c21138e111f06ab492aca4
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882323"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334794"
 ---
-<!-- cSpell:ignore DATEADD DATEDIFF Attunity Teradata Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" "Attunity Replicate" -->
+<!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-teradata"></a>適用于 Teradata 的 Azure Synapse Analytics 解決方案和遷移
 
-許多組織已準備好將昂貴的資料倉儲工作（例如基礎結構維護和平臺開發）移至雲端提供者。 組織現在希望利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。  
+許多組織已準備好將昂貴的資料倉儲工作（例如基礎結構維護和平臺開發）移至雲端提供者。 組織現在希望利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。
+
 
 Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料倉儲和大型資料分析整合在一起。 它可讓您自由使用無伺服器隨選或布建資源，以大規模地查詢您的詞彙資料。 瞭解當您將舊版 Teradata 系統移轉至 Azure Synapse 時要做什麼規劃。
 
 雖然 Teradata 和 Azure Synapse 很類似，但它們都是設計來使用大量平行處理技術的 SQL 資料庫，以達到大型資料磁片區的高查詢效能，但有一些基本差異：
 
-- 舊版 Teradata 系統是安裝在內部部署環境，並使用專屬硬體。 Azure Synapse 是以雲端為基礎，並使用 Azure 儲存體和計算資源。
-- 升級 Teradata 設定是一項主要工作，牽涉到額外的實體硬體以及可能冗長的資料庫重新設定或傾印和重載。 在 Azure Synapse 中，儲存體和計算資源是分開的，因此您可以使用 Azure 的彈性擴充性來輕鬆地相應增加或減少。
+- 舊版 Teradata 系統是安裝在內部部署環境，並使用專屬硬體。 Azure Synapse 是以雲端為基礎，並使用 Azure 計算和儲存體資源。
+- 升級 Teradata 設定是一項主要工作，牽涉到額外的實體硬體以及可能冗長的資料庫重新設定或傾印和重載。 在 Azure Synapse 中，計算和儲存體資源是分開的，因此您可以使用 Azure 的彈性擴充性來輕鬆地相應增加或減少。
 - 若沒有實體系統可支援，您可以視需要暫停或調整 Azure Synapse 的大小，以降低資源使用率和成本。 在 Azure 中，您可以存取全球可用、高度安全且可擴充的雲端環境，其中包含 Azure Synapse 的支援工具和功能生態系統中。
 
 在本文中，我們將探討架構遷移，其目標是在 Azure Synapse 上取得已遷移 Teradata 資料倉儲和資料超市的對等或更高的效能。 我們考慮特別適用于從現有的 Teradata 環境進行遷移的考慮。
@@ -48,7 +49,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 從支援這些目標的 Teradata 環境初始遷移的絕佳候選，通常是執行 Power BI/分析工作負載，而非 OLTP 工作負載的一種。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
 
-針對大小，您在初始練習中遷移的資料量很重要，足以示範 Azure Synapse 環境的功能和優點，並提供簡短的時間來示範價值。 通常符合需求的大小是在 1 tb (TB) 至 10 tb 之間。
+針對大小，您在初始練習中遷移的資料量很重要，足以示範 Azure Synapse 環境的功能和優點，並提供簡短的時間來示範價值。 通常符合需求的大小介於1到 10 tb (TB) 。
 
 初始遷移專案的方法可將風險和實行時間降至最低，以限制遷移至資料超市的範圍。 在 Teradata 中，有一個很好的例子，就是 Teradata 資料倉儲的 OLAP 資料庫部分。 這種方法是很好的起點，因為它會限制遷移的範圍，而且通常可以在短時間點上達到。
 
@@ -58,11 +59,11 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 無論您為遷移選擇的驅動程式和範圍為何，都可以選擇兩種一般類型的遷移：
 
-- 隨即**轉移方法**：在此方法中，會將現有的資料模型（例如星狀架構）原封不動地遷移至新的 Azure Synapse platform。 重點在於降低風險，並藉由減少達成移往 Azure 雲端環境所需的工作所需的時間來進行遷移。
+- 隨即**轉移方法：** 使用這種方法時，現有的資料模型（例如星狀架構）會以不變的方式遷移至新的 Azure Synapse 平臺。 重點在於降低風險，並藉由減少達成移往 Azure 雲端環境所需的工作所需的時間來進行遷移。
 
   這種方法適用于現有的 Teradata 環境，在此環境中，將會遷移單一資料超市，以及資料是否已在設計良好的星星或雪花式架構中。 如果您有時間和成本壓力可移至更新式的雲端環境，這種方法也是不錯的選擇。
 
-- **合併修改的階段式方法**：如果您的舊版倉儲隨著時間演進，您可能需要 reengineer 資料倉儲來維持所需的效能，或支援新的資料來源（例如 IoT 串流）。 遷移至 Azure Synapse，以瞭解可調整雲端環境的知名優點，可能會被視為重建程式的一部分。 此程式可能包括變更基礎資料模型，例如從 Inmon 模型移至 Azure 資料保存庫。
+- **合併修改的階段式方法：** 如果您的舊版倉儲演進過了一段時間，您可能需要 reengineer 資料倉儲來維持所需的效能，或支援新的資料來源（例如 IoT 串流）。 遷移至 Azure Synapse，以瞭解可調整雲端環境的知名優點，可能會被視為重建程式的一部分。 此程式可能包括變更基礎資料模型，例如從 Inmon 模型移至 Azure 資料保存庫。
 
   我們建議的方法是先將現有的資料模型依原樣移至 Azure。 然後，利用 Azure 服務的效能和彈性來套用重建變更，而不會影響現有的來源系統。
 
@@ -84,7 +85,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用 Data Factory 在雲端建立資料驅動的工作流程，以協調和自動化資料移動和資料轉換。 Data Factory 管線可以從不同的資料存放區內嵌資料。 然後，他們會使用計算服務來處理和轉換資料，例如 Azure HDInsight 的 Apache Hadoop 和 Apache Spark、Azure Data Lake Analytics 和 Azure Machine Learning。
 
-首先建立中繼資料，以列出您想要遷移的資料表及其位置。 然後，使用 Data Factory 功能來管理遷移程式。
+首先，建立中繼資料來列出您想要遷移的資料表及其位置。 然後，使用 Data Factory 功能來管理遷移程式。
 
 ## <a name="design-differences-between-teradata-and-azure-synapse"></a>Teradata 與 Azure Synapse 之間的設計差異
 
@@ -92,7 +93,7 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>多個資料庫與單一資料庫和架構
 
-在 Teradata 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及資料超市的另一個資料庫 (有時稱為 *語義層*) 。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
+在 Teradata 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及資料超市的另一個資料庫 (有時稱為 _語義層_) 。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
 Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在 Azure Synapse 中使用一系列的架構，以模仿您從 Teradata 遷移的任何個別資料庫。
 
@@ -153,7 +154,7 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
   `SELECT * FROM (SELECT col1, ROW_NUMBER() OVER (PARTITION by col1 ORDER BY col1) rn FROM tab1 WHERE c1='XYZ' ) WHERE rn = 1;`
 
-- **日期算術**： Azure Synapse 具有和之類 `DATEADD` `DATEDIFF` 的運算子，可供您在 `DATE` 或上使用 `DATETIME` 。
+- **日期算術：** Azure Synapse 具有和之類 `DATEADD` `DATEDIFF` 的運算子，您可以在或上使用它 `DATE` `DATETIME` 。
 
    Teradata 支援日期的直接減法：
 
@@ -179,27 +180,27 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 以下是有關遷移函數、預存程式、觸發程式和順序的詳細資訊：
 
-- **函數**：如同大部分的資料庫產品，TERADATA 在 SQL 執行中支援系統函數和使用者定義函數。 當一般系統函式遷移至另一個資料庫平臺（例如 Azure Synapse）時，通常會在新的環境中使用，而且可以在不變更的情況下遷移。 如果系統函數在新的環境中有稍微不同的語法，您通常可以將必要的變更自動化。
+- **函數：** 如同大多數的資料庫產品，Teradata 在 SQL 執行中支援系統函數和使用者定義函數。 當一般系統函式遷移至另一個資料庫平臺（例如 Azure Synapse）時，通常會在新的環境中使用，而且可以在不變更的情況下遷移。 如果系統函數在新的環境中有稍微不同的語法，您通常可以將必要的變更自動化。
 
   您可能需要在新的環境中，對沒有對等專案的任意使用者自訂函數和系統函數進行編碼。 使用新環境中可用的語言。 Azure Synapse 會使用熱門的 Transact-sql 語言來執行使用者定義函數。
 
-- **預存程式**：在大部分新式資料庫產品中，您可以將程式儲存在資料庫中。 預存程式通常包含 SQL 語句和一些程式邏輯。 它可能也會傳回資料或狀態。
+- **預存程式：** 在大部分的新式資料庫產品中，您可以將程式儲存在資料庫中。 預存程式通常包含 SQL 語句和一些程式邏輯。 它可能也會傳回資料或狀態。
 
   Teradata 提供預存程式語言以建立預存程式。 Azure Synapse 支援使用 T-sql 的預存程式。 如果您將預存程式遷移至 Azure Synapse，您必須使用 T-sql 來將它們重設成。
 
-- **觸發**程式：您無法在 Azure Synapse 中建立觸發程式，但可以在 Data Factory 中執行觸發程式。
+- **觸發程式：** 您無法在 Azure Synapse 中建立觸發程式，但可以在 Data Factory 中執行觸發程式。
 
-- **順序**： Azure Synapse 序列的處理方式類似于 Teradata 中的處理方式。 使用 `IDENTITY` 資料行或 SQL 程式碼來建立數列中的下一個序號。
+- **順序：** Azure Synapse 順序的處理方式類似于 Teradata 中的處理方式。 使用 `IDENTITY` 資料行或 SQL 程式碼來建立數列中的下一個序號。
 
 ## <a name="metadata-and-data-extraction"></a>中繼資料和資料解壓縮
 
 當您規劃如何從 Teradata 環境中解壓縮中繼資料和資料時，請考慮下列資訊：
 
-- **資料定義語言 (DDL) 產生**：如先前所述，您可以視需要編輯現有 `CREATE TABLE` 的 Teradata 和 `CREATE VIEW` 腳本，以建立具有已修改資料類型的對等定義。 在此案例中，您通常必須移除額外的 Teradata 特定子句 (例如 `FALLBACK`) 。
+- **資料定義語言 (DDL) 產生：** 如先前所述，如有必要，您可以編輯現有 `CREATE TABLE` 的 Teradata 和 `CREATE VIEW` 腳本，以建立具有已修改資料類型的對等定義。 在此案例中，您通常必須移除額外的 Teradata 特定子句 (例如 `FALLBACK`) 。
 
   指定目前資料表和 view 定義的資訊會保留在系統目錄資料表中。 系統目錄資料表是資訊的最佳來源，因為資料表可能是最新的，而且已完成。 使用者維護的檔可能不會與目前的資料表定義同步。
 
-  您可以使用目錄上的 views 來存取訊號，例如 `DBC.ColumnsV` 。 您也可以使用 views 來 `CREATE TABLE` 為 Azure Synapse 中的對等資料表產生對等的資料定義語言 (DDL) 語句。  
+  您可以使用目錄上的 views 來存取訊號，例如 `DBC.ColumnsV` 。 您也可以使用 views 來 `CREATE TABLE` 為 Azure Synapse 中的對等資料表產生對等的資料定義語言 (DDL) 語句。
 
   協力廠商的遷移和 ETL 工具也會使用類別目錄資訊來達成相同的結果。
 
@@ -207,9 +208,9 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
   使用標準 Teradata 公用程式（如和），從現有的 Teradata 資料表遷移原始資料 `BTEQ` `FASTEXPORT` 。 在遷移練習中，盡可能有效率地將資料解壓縮，通常很重要。 我們針對最新版本的 Teradata 所建議的方法是使用 Teradata Parallel Transporter，此公用程式會使用多個平行 `FASTEXPORT` 資料流程來達到最佳輸送量。
 
-  您可以直接從 Data Factory 呼叫 Teradata Parallel Transporter。 我們建議使用此方法來管理資料移轉程式、Teradata 實例是否在內部部署環境中，或複製到 Azure 環境中的 VM （如先前所述）。  
+  您可以直接從 Data Factory 呼叫 Teradata Parallel Transporter。 我們建議使用此方法來管理資料移轉程式、Teradata 實例是否在內部部署環境中，或複製到 Azure 環境中的 VM （如先前所述）。
 
-  我們建議用於解壓縮資料的資料格式是分隔的文字檔 (也稱為 *逗點分隔值*) 、優化的資料列單欄式檔案或 Parquet 檔案。
+  我們建議用於解壓縮資料的資料格式是分隔的文字檔 (也稱為 _逗點分隔值_) 、優化的資料列單欄式檔案或 Parquet 檔案。
 
 如需從 Teradata 環境遷移資料和 ETL 之程式的詳細資訊，請參閱 Teradata 檔。
 
@@ -217,25 +218,25 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 在優化的時候，平臺有一些差異。 在下列效能微調建議清單中，Teradata 和 Azure Synapse 之間的較低層級執行差異，以及您遷移的替代專案會反白顯示：
 
-- **資料散發選項**：在 Azure 中，您可以設定個別資料表的資料散發方法。 這項功能的目的是要減少執行查詢時，在處理節點之間移動的資料量。  
+- **資料散發選項：** 在 Azure 中，您可以設定個別資料表的資料散發方法。 這項功能的目的是要減少執行查詢時，在處理節點之間移動的資料量。
 
   針對大型資料表/大型資料表聯結，雜湊在其中一個或兩個 (都是在理想的情況下，聯結資料行上的) 資料表有助於確保聯結處理可以在本機執行，因為要聯結的資料列已經共置於相同的處理節點上。
 
   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結 (通常稱為星狀架構模型) 中的 *維度資料表/事實資料表聯結* 。 您會將較小的資料表複寫到所有節點，藉此確保較大資料表的聯結索引鍵值具有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
-- **資料索引編制**： Azure Synapse 提供各種索引編制選項，但在 Teradata 中，索引選項的作業和使用方式各不相同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱在 [Azure Synapse 集區中設計資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview)。
+- **資料索引編制：** Azure Synapse 提供各種索引編制選項，但在 Teradata 中，索引選項的作業和使用方式各不相同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱在 [Azure Synapse 集區中設計資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview)。
 
   來源 Teradata 環境中的現有索引可以提供資料使用方式的實用指示，並提供在 Azure Synapse 環境中編制索引所需的候選資料行的指示。
 
-- **資料分割**：在企業資料倉儲中，事實資料表可能包含許多數十億個數據列的資料。 資料分割是將這些資料表中的維護和查詢優化的一種方式。 將資料表分割成不同的部分，可減少一次處理的資料量。 資料表的資料分割是在語句中定義 `CREATE TABLE` 。
+- **資料分割：** 在企業資料倉儲中，事實資料表可能包含許多數十億個數據列的資料。 資料分割是將這些資料表中的維護和查詢優化的一種方式。 將資料表分割成不同的部分，可減少一次處理的資料量。 資料表的資料分割是在語句中定義 `CREATE TABLE` 。
 
   每個資料表只能有一個欄位可以用來進行資料分割。 經常用於資料分割的欄位是日期欄位，因為許多查詢都會依日期或日期範圍進行篩選。 您可以在初始載入之後變更資料表的資料分割。 若要變更資料表的資料分割，請使用語句的新散發重新建立資料表 `CREATE TABLE AS SELECT` 。 如需 Azure Synapse 中資料分割的詳細說明，請參閱 [Azure SYNAPSE SQL 集區中](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition)的分割資料表。
 
-- **資料表統計資料**：您可以藉由在 `COLLECT STATISTICS` ETL/ELT 工作中加入步驟，或在資料表上啟用自動統計資料收集，來確保有關資料表的統計資料是最新的。
+- **資料表統計資料：** 您可以藉由在 `COLLECT STATISTICS` ETL/ELT 工作中加入步驟，或在資料表上啟用自動統計資料收集，來確保有關資料表的統計資料是最新的。
 
-- **用於資料載入的 polybase**： polybase 是最有效率的方法，可用來將大量資料載入至倉儲。 您可以使用 PolyBase 來載入平行資料流程中的資料。
+- **用於載入資料的 PolyBase：** PolyBase 是最有效率的方法，可用來將大量資料載入至倉儲。 您可以使用 PolyBase 來載入平行資料流程中的資料。
 
-- **適用于工作負載管理的資源類別**： Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
+- **工作負載管理的資源類別：** Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
 ## <a name="next-steps"></a>後續步驟
 

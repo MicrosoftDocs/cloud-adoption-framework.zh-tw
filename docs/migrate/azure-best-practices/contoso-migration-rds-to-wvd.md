@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30340f9dfcacfb3aafe2dfeee5cbad21b6f75110
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3102bbef6c856dd5fdb7a814b74f03dc40b1363a
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775831"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334709"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -161,7 +161,7 @@ Contoso 會在 Azure 區域中布建 Windows 虛擬桌面服務 `East US 2` 。 
 1. Contoso 會連接 Azure Migrate 和 Lakeside，並接受任何要求的許可權。
 
    ![顯示登入以連接 Azure 和 Lakeside 的螢幕擷取畫面。 ](./media/contoso-migration-rds-to-wvd/lakeside-login.png)
-   _圖8：將 Azure 連接到 lakeside。_
+   _圖8：將 Azure 連接到 Lakeside。_
 
 1. Contoso 會繼續使用 Lakeside 工具來建立新的租使用者，並開始評估目前的內部部署 RDS 環境。 從儀表板中，Contoso 可以存取部署指南、下載評量用戶端以部署至目前的環境，以及檢查從這些代理程式收集到的資料。
 
@@ -201,7 +201,7 @@ Contoso 會分析資料，以判斷共用的 Windows 虛擬桌面資源和個人
 
    - Contoso 會設定 VM，並選取 [ **變更大小** ] 或使用預設值來選擇自訂大小。
    - Windows 虛擬桌面會被選為這些共用桌面的 VM 名稱前置詞。
-   - 因為 Contoso 正在建立共用伺服器，以使用新的 Windows 10 多會話功能來進行虛擬機器設定，請將映射來源設定為資源 **庫**。 此選項可讓 Contoso 選取 Vm 的 Windows 10 企業版多會話映射。
+   - 因為 Contoso 正在建立共用伺服器，以使用新的 Windows 10 企業版多會話功能來進行虛擬機器設定，請將映射來源設定為資源 **庫**。 此選項可讓 Contoso 選取 Vm 的 Windows 10 企業版多會話映射。
    - 根據 Lakeside 評量使用者的角色，Contoso 會將使用者總數設為 **150**。
    - 其他設定包括磁片類型、AD 網域加入 UPN 欄位、系統管理員密碼、新增機器的選用 OU 路徑、虛擬網路，以及用於新增伺服器的子網。
 
@@ -302,7 +302,7 @@ Contoso 安全性小組會檢查 Azure Vm 以判斷任何安全性問題。 若�
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
 - [Microsoft 365 授權](https://azure.microsoft.com/pricing/details/virtual-desktop/) 用於桌上型電腦部署。
-- Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
+- Contoso 會啟用 [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
 - Contoso 具有其 Vm 的現有授權，而且會利用應用程式伺服器的 Azure Hybrid Benefit。 Contoso 會轉換現有的 Azure VM，以便充分利用這個定價。
 
 ## <a name="conclusion"></a>結論

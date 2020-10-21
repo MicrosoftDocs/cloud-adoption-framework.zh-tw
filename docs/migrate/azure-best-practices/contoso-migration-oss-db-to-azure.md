@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6579a5f4f699b3a5880076cb125b3faaea5b0c4b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1dcff70eaf185d59592682bdb61d777bf7dd0795
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603690"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334607"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 
@@ -60,7 +60,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | Azure 會在資料庫工作負載中提供單一的透明窗格。 <br><br> 系統會透過 Azure 成本管理和帳單來監視成本。 <br><br> 您可以使用 Azure 計費 API 輕鬆地執行商務計費計費。 <br><br> 伺服器和軟體維護只會縮減為以 IaaS 為基礎的環境。 |
+| **優點** | Azure 會在資料庫工作負載中提供單一的透明窗格。 <br><br> 系統會透過 Azure 成本管理 + 計費來監視成本。 <br><br> 您可以使用 Azure 計費 API 輕鬆地執行商務計費計費。 <br><br> 伺服器和軟體維護只會縮減為以 IaaS 為基礎的環境。 |
 | **缺點** | 由於 IaaS Vm 的需求，所以仍需要在這些電腦上管理軟體。 |
 
 ### <a name="budget-and-management"></a>預算和管理
@@ -91,7 +91,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 #### <a name="step-1-discovery"></a>步驟1：探索
 
-Contoso 使用 Azure Migrate 來呈現 Contoso 環境之間的相依性。 Azure Migrate 自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 也顯示 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連線。 Contoso 只需要安裝 [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) 和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)。
+Contoso 使用 Azure Migrate 來呈現 Contoso 環境之間的相依性。 Azure Migrate 自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 也顯示 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連線。 Contoso 只需要安裝 [Microsoft Monitoring Agent](/azure/azure-monitor/platform/agent-windows) 和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid#install-the-dependency-agent-on-windows)。
 
 Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些實例中，大約40% 可移至 PaaS 服務。 在剩餘的60% 中，必須將其移至執行個別資料庫軟體的 VM，以 IaaS 為基礎的方法。
 
@@ -145,7 +145,7 @@ Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期�
 
 Contoso 必須：
 
-- 確定其新的 Azure 資料庫工作負載是安全的。 如需詳細資訊，請參閱 [Azure SQL Database 和 SQL 受控執行個體安全性功能](/azure/sql-database/sql-database-security-overview)。
+- 確定其新的 Azure 資料庫工作負載是安全的。 如需詳細資訊，請參閱 [Azure SQL Database 和 SQL 受控執行個體安全性功能](/azure/azure-sql/database/security-overview)。
 - 檢查防火牆和虛擬網路設定。
 - 設定 Azure Private Link，以便在 Azure 和內部部署網路內保存所有資料庫流量。
 - 啟用 Azure 進階威脅防護。
@@ -155,7 +155,7 @@ Contoso 必須：
 請確定使用異地還原來備份 Azure 資料庫。 如此一來，在發生區域性中斷的情況下，備份可以在配對的區域中使用。
 
 > [!IMPORTANT]
->請確定 Azure 資源具有 [資源鎖定](/azure/azure-resource-manager/management/lock-resources) ，以防止其遭到刪除。 無法還原已刪除的伺服器。
+> 請確定 Azure 資源具有 [資源鎖定](/azure/azure-resource-manager/management/lock-resources) ，以防止其遭到刪除。 無法還原已刪除的伺服器。
 
 #### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 

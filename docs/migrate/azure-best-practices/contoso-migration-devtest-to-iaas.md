@@ -7,15 +7,14 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7dd81b5d1fed63d0c77d7eeaf8ec9c1edffcfe08
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 96175c54a3121252cf2e4d1b2649f1de46775988
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775967"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334692"
 ---
-<!-- docutune:casing SmartHotel360 -->
-<!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless osTicket WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
+<!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
 # <a name="rehost-an-on-premises-devtest-environment-on-azure-virtual-machines-via-azure-migrate"></a>透過 Azure Migrate 在 Azure 虛擬機器上重新裝載內部部署開發/測試環境
 
@@ -29,7 +28,7 @@ Contoso 有數個選項可將開發/測試環境移至 Azure：
 
 | 移轉選項 | 結果 |
 | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | [評定](/azure/migrate/tutorial-assess-vmware) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <br><br> 使用 Azure 基礎結構即服務 (IaaS) 來執行開發/測試伺服器。 <br><br> 使用 [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager)管理 vm。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | [評定](/azure/migrate/tutorial-assess-vmware-azure-vm) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <br><br> 使用 Azure 基礎結構即服務 (IaaS) 來執行開發/測試伺服器。 <br><br> 使用 [Azure Resource Manager](/azure/azure-resource-manager/management/overview)管理 vm。 |
 | [Azure DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | 快速布建開發與測試環境。 <br><br> 使用配額和原則將浪費降至最低。 <br><br> 設定自動關機將成本降至最低。 <br><br> 建立 Windows 和 Linux 環境。 |
 
 > [!NOTE]
@@ -40,7 +39,7 @@ Contoso 有數個選項可將開發/測試環境移至 Azure：
 開發領導小組已概述要如何透過此遷移來達成目標。 它的目標是快速將開發/測試功能從內部部署資料中心移出，而不再購買硬體來開發軟體。 它也可讓開發人員在不需要介入的情況下，建立及執行其環境。
 
 > [!NOTE]
-> Contoso 會在其環境中使用 [隨用隨付開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶供應專案。 小組中的每個 active Visual Studio 訂閱者都可以使用訂用帳戶虛擬機器隨附的 Microsoft 軟體進行開發/測試，而不需額外付費。 Contoso 只會支付執行 Vm 的 Linux 費率。 這包括具有 SQL Server、SharePoint Server 或其他軟體的 Vm，通常以較高的費率計費。
+> Contoso 會在其環境中使用 [隨用隨付開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶供應專案。 小組中的每個 active Visual Studio 訂閱者都可以使用訂用帳戶虛擬機器隨附的 Microsoft 軟體進行開發/測試，而不需額外付費。 Contoso 只會支付執行 Vm 的 Linux 費率。 這包括具有 SQL Server、SharePoint Server 或其他軟體的 Vm，通常以較高的費率計費。
 
 ## <a name="migration-goals"></a>移轉目標
 
@@ -70,7 +69,7 @@ Contoso 開發小組已將此遷移的目標釘選。 這些目標是用來判�
 - 移轉完成之後，將會解除委任 Contoso 資料中心的內部部署 VM。
 
   ![建議的案例架構圖表，其中包含內部部署和虛擬機器。](./media/contoso-migration-devtest-to-iaas/architecture.png)
-  
+
   _圖1：建議的架構。_
 
 ### <a name="database-considerations"></a>資料庫考量
@@ -111,15 +110,15 @@ _圖2：遷移程式的總覽。_
 
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
-| [Azure Migrate：伺服器移轉](/azure/migrate) | 服務會協調和管理內部部署應用程式和工作負載，以及 AWS 或 GCP VM 實例的遷移。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 [深入了解](https://azure.microsoft.com/pricing/details/azure-migrate)費用和定價。 |
+| [Azure Migrate：伺服器移轉](/azure/migrate/) | 服務會協調和管理內部部署應用程式和工作負載，以及 AWS 或 GCP VM 實例的遷移。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 深入瞭解 [費用和定價](https://azure.microsoft.com/pricing/details/azure-migrate/)。 |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
 
 這是 Contoso 執行此案例所需的內容：
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p) 用帳戶，以利用最多可降低80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，但您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用角色型存取控制來管理 Site Recovery 存取 (RBAC) ](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶，以利用最多可降低80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，但您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用角色型存取控制來管理 Site Recovery 存取 (RBAC) ](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
 | **Azure 基礎結構** | 瞭解 Contoso 如何 [設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 <br><br> 深入瞭解 Azure Migrate 的特定 [必要條件](#prerequisites) ：伺服器遷移。 |
 | **內部部署伺服器** | 內部部署 vCenter 伺服器應執行5.5、6.0、6.5 或6.7 版。 <br><br> ESXi 主機應該執行5.5、6.0、6.5 或6.7 版。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
 
@@ -140,7 +139,7 @@ Contoso 需要將 Vm 遷移至虛擬網路，當 Azure Vm 建立、布建和設�
 
 1. 設定網路： Contoso 已設定可用於 Azure Migrate：在 [部署 Azure 基礎結構](./contoso-migration-infrastructure.md)時進行伺服器遷移的網路。
 
-    - 要遷移的 Vm 會用於開發。 它們會遷移至 Azure 開發虛擬網路， (`VNET-DEV-EUS2` 在主要美國東部2區域中) 。
+    - 要遷移的 Vm 會用於開發。 它們會遷移至主要區域中的 Azure 開發虛擬網路 (`VNET-DEV-EUS2`) `East US 2` 。
     - 這兩個 Vm 會放在 `ContosoDevRG` 用於開發資源的資源群組中。
     - 應用程式前端 Vm (`WEBVMDEV` 和 `OSTICKETWEBDEV`) 會 `DEV-FE-EUS2` 在開發虛擬網路中遷移至前端子網 () 。
     - 應用程式資料庫 VM (`SQLVMDEV` 和 `OSTICKETMYSQLDEV`) 將會遷移至開發虛擬網路中的資料庫子網 (`DEV-DB-EUS2`) 。
@@ -183,7 +182,7 @@ Contoso 需要將 Vm 遷移至虛擬網路，當 Azure Vm 建立、布建和設�
 
 **需要其他協助嗎？**
 
-瞭解如何 [設定 Azure Migrate：伺服器遷移工具](/azure/migrate)。
+瞭解如何 [設定 Azure Migrate：伺服器遷移工具](/azure/migrate/)。
 
 ### <a name="prepare-on-premises-vms"></a>準備內部部署 Vm
 
@@ -196,7 +195,7 @@ Contoso 需要將 Vm 遷移至虛擬網路，當 Azure Vm 建立、布建和設�
     - 檢查作業系統防火牆中是否允許 RDP 或 SSH。
     - 透過下列命令安裝 SSH： `sudo apt-get ssh install -y` 。
 
-2. 為了透過站對站 VPN 存取，他們：
+2. 若要透過站對站 VPN 存取，他們：
 
     - 在遷移之前，先在內部部署 VM 上啟用 RDP 或 SSH。
     - 檢查作業系統防火牆中是否允許 RDP 或 SSH。
@@ -229,7 +228,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     _圖9：來源設定。_
 
 4. 在 [ **虛擬機器**] 中，選取您要複寫的機器。
-    - 如果您已執行 Vm 的評量，您可以從評量結果將 VM 大小和磁片類型套用 (premium 或標準) 建議。 若要這麼做，請在 [從 Azure Migrate 評估匯入移轉設定?] 中，選取 [是] 選項。
+    - 如果您已執行 Vm 的評量，您可以從評量結果將 VM 大小和磁片類型套用 (premium 或標準) 建議。 若要這麼做，請在 [從 Azure Migrate 評估匯入移轉設定?]**** 中，選取 [是]**** 選項。
     - 如果您未執行評量，或不想使用評量設定，請選取 [ **否** ] 選項。
     - 如果您選擇使用評量，請選取 VM 群組和評量名稱。
 
@@ -239,12 +238,12 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
 
 5. 在 **虛擬機器**中，視需要搜尋 vm，並檢查您想要遷移的每個 vm。 然後選取 **[下一步：目標設定]**。
 
-6. 在 [ **目標設定**] 中，選取您要遷移的訂用帳戶和目的地區域。 然後，指定 Azure Vm 在遷移後將位於其中的資源群組。 在 [ **虛擬網路**] 中，選取 azure vm 在遷移後將加入的 azure 虛擬網路或子網。
+6. 在 [ **目標設定**] 中，選取您要遷移的訂用帳戶和目的地區域。 然後，指定 Azure Vm 在遷移後將位於其中的資源群組。 在 [ **虛擬網路**] 中，選取 Azure vm 在遷移後將加入的虛擬網路或子網。
 
-7. 在 **Azure Hybrid Benefit**中，如果您不想要套用 Azure Hybrid Benefit，請選取 [ **否** ]。 然後，選取 [下一步]。 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後，選取 [下一步]。
+7. 在 **Azure Hybrid Benefit**中，如果您不想要套用 Azure Hybrid Benefit，請選取 [ **否** ]。 然後選取 [下一步]  。 如果您有 active 軟體保證或 Windows Server 訂用帳戶所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後選取 [下一步]  。
 
       > [!NOTE]
-      > 在 Contoso 的案例中，系統管理員會選取 [ **否** ] Azure Hybrid Benefit，因為這是 Azure 開發/測試訂用帳戶。 這表示他們只需支付計算費用。 [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit) 只能用於具有軟體保證優點的生產系統。
+      > 在 Contoso 的案例中，系統管理員會選取 [ **否** ] Azure Hybrid Benefit，因為這是 Azure 開發/測試訂用帳戶。 這表示他們只需支付計算費用。 [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/) 只能用於具有軟體保證優點的生產系統。
 
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -252,7 +251,7 @@ Contoso 管理員必須先設定並啟用複寫，才能執行移轉至 Azure �
     - **作業系統磁片：** 為 VM 指定作業系統 (開機) 磁片。 作業系統磁片具有作業系統開機載入器和安裝程式。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此集合必須位於您為遷移指定的目標資源群組中。
 
-9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 azure，並在 azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 然後，選取 [下一步]。 您可以從複寫排除磁碟。 如果您這麼做，則在遷移後將不會出現在 Azure VM 上。
+9. 在 [ **磁片**] 中，指定是否應將 VM 磁片複寫至 azure，並在 azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型。 然後選取 [下一步]  。 您可以從複寫排除磁碟。 如果您這麼做，則在遷移後將不會出現在 Azure VM 上。
 
 10. 在 [ **檢查並開始**複寫] 中，檢查設定 **並選取 [複寫]，以** 啟動伺服器的初始複寫。
 
@@ -277,7 +276,7 @@ Contoso 管理員會執行快速測試遷移，然後執行完整遷移來遷移
 
     _圖12：測試遷移。_
 
-3. 在 [測試移轉]**** 中，選取 Azure VM 在移轉後將位於其中的 Azure 虛擬網路。 建議您使用非生產虛擬網路。
+3. 在 [ **測試遷移**] 中，選取 Azure VM 在遷移後將位於其中的虛擬網路。 建議您使用非生產虛擬網路。
 4. **測試移轉**作業隨即啟動。 請在入口網站通知中監視作業。
 5. 移轉完成之後，請在 Azure 入口網站的 [虛擬機器] 中檢視已遷移的 Azure VM。 電腦名稱稱具有 **-Test** 尾碼。
 6. 測試完成後，選取並保存 (或以滑鼠右鍵按一下 [複寫 **機器**中的 Azure VM) ]，然後選取 [ **清除測試遷移**]。
@@ -333,7 +332,7 @@ Contoso 安全性小組會檢查 Azure Vm 以判斷任何安全性問題。 若�
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-Contoso 會確保所有開發/測試訂用帳戶建立的 Azure 資源都能節省80%。 系統管理員會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
+Contoso 會確保所有開發/測試訂用帳戶建立的 Azure 資源都能節省80%。 系統管理員會啟用 [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) ，以協助監視和管理 Azure 資源。
 
 ## <a name="conclusion"></a>結論
 

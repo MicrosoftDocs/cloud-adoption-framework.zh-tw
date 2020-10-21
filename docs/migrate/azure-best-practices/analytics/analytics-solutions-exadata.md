@@ -7,22 +7,22 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c89967ac5cb815ad771e6a9ee70cad2f97056db
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6498aa455b196a8648902f42c22131c146ef48d6
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570822"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334845"
 ---
 <!-- cSpell:ignore Exadata SSMA -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-an-oracle-data-warehouse"></a>Azure Synapse Analytics Oracle 資料倉儲的解決方案和遷移
 
-Oracle 資料倉儲架構不同于 Azure Synapse Analytics 的方式有好幾種。 這些差異包括資料庫、資料類型，以及 Azure Synapse 中不支援的 Oracle 資料庫物件類型範圍。
+Oracle 資料倉儲架構不同于 Azure Synapse Analytics 的方式有好幾種。 這些差異包括資料庫、資料類型，以及 Azure Synapse 中不支援的 Oracle Database 物件類型範圍。
 
 就像其他資料庫管理系統一樣，當您將 Oracle 資料倉儲遷移至 Azure Synapse 時，您會發現 Oracle 具有多個個別的資料庫，而 Azure Synapse 只有一個資料庫。 您可能需要使用新的命名慣例（例如，串連 Oracle 架構和資料表名稱），將 Oracle 資料倉儲臨時資料庫、生產資料庫和資料超市資料庫中的資料表和觀點移至 Azure Synapse。
 
-Azure Synapse 不支援數個 Oracle 資料庫物件。 Azure Synapse 中不支援的資料庫物件包括 Oracle 位對應索引、以函式為基礎的索引、定義域索引、Oracle 叢集資料表、資料列層級觸發程式、使用者定義資料類型，以及 PL/SQL 預存程式。 您可以藉由查詢各種 Oracle 系統目錄資料表和 views 來識別這些物件。 在某些情況下，您可以使用因應措施。 例如，您可以使用 Azure Synapse 中的資料分割或其他索引類型，來解決 Oracle 中不支援的索引類型。 您可以使用具體化視圖（而不是 Oracle 叢集資料表），而 Oracle 的 SQL Server 移轉小幫手 (SSMA) 等遷移工具，至少可以轉譯一些 PL/SQL。
+Azure Synapse 不支援數個 Oracle Database 物件。 Azure Synapse 中不支援的資料庫物件包括 Oracle 位對應索引、以函式為基礎的索引、定義域索引、Oracle 叢集資料表、資料列層級觸發程式、使用者定義資料類型，以及 PL/SQL 預存程式。 您可以藉由查詢各種 Oracle 系統目錄資料表和 views 來識別這些物件。 在某些情況下，您可以使用因應措施。 例如，您可以使用 Azure Synapse 中的資料分割或其他索引類型，來解決 Oracle 中不支援的索引類型。 您可以使用具體化視圖（而不是 Oracle 叢集資料表），而 Oracle 的 SQL Server 移轉小幫手 (SSMA) 等遷移工具，至少可以轉譯一些 PL/SQL。
 
 當您遷移 Oracle 資料倉儲架構時，您也必須考慮資料行的資料類型差異。 若要在您的 Oracle 資料倉儲和資料超市架構中尋找資料類型不會對應至 Azure Synapse 中資料類型的資料行，請查詢 Oracle 目錄。 您可以針對這些實例的數個使用因應措施。
 

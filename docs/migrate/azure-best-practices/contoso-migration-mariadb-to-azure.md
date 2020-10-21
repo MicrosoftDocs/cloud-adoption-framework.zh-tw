@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 650b41a6f27c4343422f0d185f2f3255b5f7a42d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a96c4afaa31a7cc399cee0e249e04348623e847d
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605032"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334675"
 ---
-<!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
+<!-- cSpell:ignore mysqldump -->
 
 # <a name="migrate-mariadb-databases-to-azure"></a>將適用于 mariadb 資料庫移轉至 Azure
 
@@ -22,10 +22,10 @@ ms.locfileid: "89605032"
 
 Contoso 會使用適用于 mariadb 而不是 MySQL，因為其：
 
-- 無數的儲存引擎。
+- 許多儲存引擎選項。
 - 快取和索引效能。
 - 具有功能和擴充功能的開放原始碼支援。
-- 分析資料行存放區支援。
+- 分析工作負載的資料行存放區引擎。
 
 公司的遷移目標是繼續使用適用于 mariadb，但不必擔心如何管理支援它所需的環境。
 
@@ -47,7 +47,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 | **可用性** | 目前，內部員工對適用于 mariadb 實例的裝載環境有很難的時間。 Contoso 希望資料庫層有接近99.99% 的可用性。 |
 | **延展性** | 內部部署資料庫主機的容量很快地用盡。 Contoso 需要一種方法來調整超過目前限制的實例，或在商務環境變更時縮小以節省成本。 |
 | **效能** | Contoso 人力資源 (HR) 部門有數個報表，每日、每週和每月執行一次。 當它執行這些報表時，會注意到與員工面向的應用程式有相當大的效能問題。 它需要執行報表，而不會影響應用程式效能。 |
-| **安全性** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
+| **Security** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
 | **監視** | Contoso 目前使用工具來監視適用于 mariadb 資料庫的計量，並在 CPU、記憶體或儲存體發生問題時提供通知。 公司想要在 Azure 中擁有相同的功能。 |
 | **業務持續性** | HR 資料存放區是 Contoso 日常營運的重要部分。 如果它損毀或需要還原，公司想要將停機時間降到最低。 |
 | **Azure** | Contoso 想要將應用程式移至 Azure，而不在 Vm 上執行。 Contoso 需求狀態為使用 Azure 平臺即服務 (適用于資料層的 PaaS) 服務。 |
@@ -75,7 +75,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 - 適用於 MariaDB 的 Azure 資料庫具有 Contoso 針對其審計員必須符合的必要合規性和隱私權認證。
 - 報表和應用程式處理效能將會使用讀取複本來增強。
 - 只能將服務公開給內部網路流量的能力， (使用 [Azure Private Link](/azure/mariadb/concepts-data-access-security-private-link)的無公用存取) 。
-- Contoso 選擇不移至適用於 MySQL 的 Azure 資料庫，因為未來可能會使用適用于 mariadb 資料行存放區和 GraphDBMS 資料庫模型。
+- Contoso 選擇不移至適用於 MySQL 的 Azure 資料庫，因為未來可能會使用適用于 mariadb 資料行存放區和圖形資料庫模型。
 - 從應用程式到資料庫的 [頻寬和延遲](/azure/vpn-gateway/vpn-gateway-about-vpngateways) ，會根據所選的閘道而足夠， (Azure ExpressRoute 或站對站 VPN) 。
 
 ### <a name="solution-review"></a>解決方案檢閱
@@ -193,10 +193,10 @@ Contoso 必須：
 
 ### <a name="backups"></a>備份
 
-請確定使用異地還原來備份適用于 mariadb 資料庫的 Azure 資料庫。 如此一來，在發生區域性中斷的情況下，備份可以在配對的區域中使用。
+確定適用於 MariaDB 的 Azure 資料庫實例是使用異地還原進行備份。 如此一來，在發生區域性中斷的情況下，備份可以在配對的區域中使用。
 
 > [!IMPORTANT]
-> 請確定適用於 MariaDB 的 Azure 資料庫資源具有 [資源鎖定](/azure/azure-resource-manager/management/lock-resources) ，以防止其遭到刪除。 無法還原已刪除的伺服器。
+> 請確定適用於 MariaDB 的 Azure 資料庫實例具有 [資源鎖定](/azure/azure-resource-manager/management/lock-resources) ，以防止其遭到刪除。 無法還原已刪除的伺服器。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
