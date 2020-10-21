@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6e16c72b6703c3ddaa3db1a7f5d712571a62063f
-ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
+ms.openlocfilehash: d1c30e7d2fdc98aedb61e6c7abd403fd482c74f4
+ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92003909"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92253430"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
 
@@ -66,7 +66,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 [Azure 基本](/learn/paths/azure-fundamentals)概念：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 雲端運算的優點，以及它如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的廣泛服務，包括計算、網路、儲存體和安全性。
 
-[管理 azure 中的資源](/learn/paths/control-and-organize-with-azure-resource-manager)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
+[管理 azure 中的資源](/learn/modules/control-and-organize-with-azure-resource-manager)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
 
 [管理 Azure 中的基礎結構資源](/learn/paths/administer-infrastructure-resources-in-azure)：瞭解如何建立、管理、保護及調整虛擬機器資源。
 

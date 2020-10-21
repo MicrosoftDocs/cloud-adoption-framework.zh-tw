@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a853eebdb19e51dc07d55893821adc798bcc78f
-ms.sourcegitcommit: 523d3b21cab320294f54b661abf85874af9f5e9a
+ms.openlocfilehash: a3f72d69220d30ac319ffa5c0aa1d266a8b568a3
+ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178953"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92253448"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -28,6 +28,8 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 
 - 您可以透過 Azure 原則，使用管理群組來匯總原則和方案指派。
 - 管理群組樹狀結構最多可支援 [六個深度層級](/azure/governance/management-groups/overview#hierarchy-of-management-groups-and-subscriptions)。 這個限制不包含租用戶根層級或訂用帳戶層級。
+- Azure AD 租使用者中的任何主體 (使用者、服務主體) 都可以建立新的管理群組，因為預設不會啟用管理群組作業的 RBAC 授權。
+- 預設會將所有新的訂用帳戶放在根管理群組下。
 
 **設計建議：**
 
@@ -42,7 +44,8 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 - 將 `Contributor` 許可權指派給先前在根管理群組範圍中提及的 SPN (`/`) ，以允許租使用者層級的作業。 這個權限層級可確保 SPN 可用來部署和管理組織內任何訂用帳戶的資源。
 - `Platform`在根管理群組下建立管理群組，以支援常見的平臺原則和 RBAC 指派。 此群組結構可確保不同的原則可以套用至您的 Azure 基礎所使用的訂用帳戶。 它也可確保一般資源的計費是集中在一組基本訂用帳戶中。
 - 限制在根管理群組範圍上進行的 Azure 原則指派數目 (`/`) 。 這項限制可使較低層級管理群組所繼承原則的偵錯最小化。
-- 請勿在根管理群組下建立任何訂用帳戶。 此階層可確保訂用帳戶不只會繼承在根層級管理群組指派的一小部分 Azure 原則，而不代表工作負載所需的完整集合。
+- 在管理群組階層設定中啟用 RBAC 授權，以確保只有有許可權的使用者可以操作租使用者中的管理群組。
+- 為新的訂用帳戶設定預設的專用管理群組，以確保不會在根管理群組下放置任何訂用帳戶。
 
 ## <a name="subscription-organization-and-governance"></a>訂用帳戶的組織和治理
 

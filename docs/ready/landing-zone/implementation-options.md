@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a5aad81f1ea855434160c2bc8aefd313fca7335
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 14cd74e53a0b007c59b26abe4044111ee2add7d5
+ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662195"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92253392"
 ---
 # <a name="landing-zone-implementation-options"></a>登陸區域的執行選項
 
@@ -36,9 +36,11 @@ ms.locfileid: "88662195"
 |---|---|---|---|---|
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 部署用於遷移低風險資產的基本基礎。 | 從小規模開始 | [設計原則](./migrate-landing-zone.md#design-principles) | [部署](./migrate-landing-zone.md) |
 | [CAF 基礎藍圖](./foundation-blueprint.md) | 新增開始開發治理策略所需的基本工具。 | 從小規模開始 | [設計原則](./foundation-blueprint.md#design-principles) | [部署](./foundation-blueprint.md) |
-| [CAF 企業級登陸區域](../enterprise-scale/index.md) | 使用所有必要的共用服務來部署符合企業需求的平臺基礎，以支援完整的 IT 組合。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [使用 vWan) CAF 企業規模的登陸區域 (混合式連線能力 ](../enterprise-scale/index.md) | 使用所有必要的共用服務來部署符合企業需求的平臺基礎，以支援完整的 IT 組合，包括混合式連線 (VWAN) 。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF 企業規模的登陸區域 (與中樞 & 輪輻) 的混合式連線能力 ](../enterprise-scale/index.md) | 使用所有必要的共用服務來部署符合企業需求的平臺基礎，以支援完整的 IT 組合，包括混合式連線 (中樞 & 輪輻) 。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
+| [CAF 企業級登陸區域](../enterprise-scale/index.md) | 使用所有必要的共用服務來部署符合企業需求的平臺基礎，以支援完整的 IT 組合，並在稍後視需要新增連線能力。 | 企業規模 | [設計原則](../enterprise-scale/design-principles.md) | [部署](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) |
 | [CAF Terraform 模組](./terraform-landing-zone.md) | 多重雲端作業模型的協力廠商路徑。 此路徑可以限制 Azure 優先的作業模型。 | 從小規模開始 | [設計原則](./terraform-landing-zone.md#design-decisions) | [部署](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
-| [合作夥伴登陸區域](./partner-landing-zone.md) | 提供符合「雲端採用架構」之就緒方法的合作夥伴，可以提供自己的自訂實作為選項。 | 變數 | [設計原則](./partner-landing-zone.md) | [尋找合作夥伴](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
+| [夥伴登陸區域](./partner-landing-zone.md) | 提供符合「雲端採用架構」之就緒方法的合作夥伴，可以提供自己的自訂實作為選項。 | 變數 | [設計原則](./partner-landing-zone.md) | [尋找合作夥伴](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
 
 下表從稍微不同的觀點來看看其中的一些實選項，以引導更多技術決策流程。
 
