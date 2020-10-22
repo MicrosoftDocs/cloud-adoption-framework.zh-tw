@@ -7,12 +7,12 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: d66e0c59d7c3e55a97ae4cee7c07ea0ec4ee7a74
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 12ad4cd712f65fe2243f01227e7a77a41c84e072
+ms.sourcegitcommit: f7c7ffedcb1fcddb932d56c48e87776394dc75a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898245"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92437058"
 ---
 # <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
@@ -364,7 +364,7 @@ _**主要焦點區域**：_ 雖然資源連結中說明了許多詳細資料，�
 
 **原因**：在任何可能的情況下，使用 Azure AD 身分識別，而不是金鑰型驗證 (Azure 服務、應用程式、api 等 ) 。
 
-**原因**：金鑰型驗證可以用來對雲端服務和 api 進行驗證，但需要安全地管理金鑰，這是執行妥善 (的挑戰，特別是大規模) 。 安全金鑰管理對於非安全性 processionals （例如開發人員和基礎結構專業人員）很困難，而且通常無法安全地進行，通常會為組織建立重大的安全性風險。
+**原因**：金鑰型驗證可以用來對雲端服務和 api 進行驗證，但需要安全地管理金鑰，這是執行妥善 (的挑戰，特別是大規模) 。 安全金鑰管理對於開發人員和基礎結構專業人員等非安全性專業人員而言很困難，而且通常無法安全地進行，通常會為組織帶來重大的安全性風險。
 
 以身分識別為基礎的驗證克服了許多挑戰，並提供秘密輪替、生命週期管理、系統管理委派等的成熟功能。
 

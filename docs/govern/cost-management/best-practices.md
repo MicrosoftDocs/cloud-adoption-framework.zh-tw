@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ef357abfec7180ad484c783a86341f26f66b7a59
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 4ba4d1affb073b987c87886a119849b9772e2f2c
+ms.sourcegitcommit: f7c7ffedcb1fcddb932d56c48e87776394dc75a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92437033"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "91108231"
 
 ## <a name="workload-cost-management-best-practices"></a>工作負載成本管理最佳做法
 
-在進行架構變更之前，請先參閱工作負載的技術主管。 使用 [Microsoft Azure 架構良好的審核](/assessments/?id=azure-architecture-review) ，以及 [Microsoft Azure 架構良好的架構](/azure/architecture/framework) ，以引導您瞭解有關下列架構變更類型的決策，以促進工作負載的評論。
+在進行架構變更之前，請先參閱工作負載的技術主管。 使用 [Microsoft Azure Well-Architected 審核](/assessments/?id=azure-architecture-review) 來加速工作負載的檢查，以及 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) ，以引導有關下列架構變更類型的決策。
 
 - **Azure App Service。** 確認任何進階層 App Service 方案的生產需求。 如果沒有了解工作負載和基礎資產設定的商務需求，就很難判斷是否需要進階層方案。
 - **水準縮放。** 使用多個小型實例可讓您更輕鬆地調整單一大型實例的路徑。 這可讓調整規模自動化，以建立成本優化。 技術小組必須先確認應用程式具有等冪性，工作負載才能水準調整。 水準調整可能需要變更應用程式的各層級的程式碼和設定。
@@ -94,7 +94,7 @@ ms.locfileid: "91108231"
 
 當您部署 Azure VM 以支援工作負載時，您可以選擇數個選項。 每個 VM 類型都有特定的功能與不同的 CPU、記憶體與磁碟組合。 VM 會依下列方式分組：
 
-| 類型 | 詳細資料 | 使用量 |
+| 類型 | 詳細資料 | 使用方式 |
 |---|---|---|
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫、低至中度的流量 web 伺服器。 |
 | **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理、應用程式伺服器。 |
@@ -125,7 +125,7 @@ ms.locfileid: "91108231"
 
 Azure 提供數種儲存體資料類型。
 
-| 資料類型 | 詳細資料 | 使用量 |
+| 資料類型 | 詳細資料 | 使用方式 |
 | ---|---|---|
 | **Blob** | 針對儲存大量非結構化物件（例如文字或二進位資料）進行優化。 | 透過 HTTP/HTTPS 從任意位置存取資料。 <br><br> 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。 |
 | **檔案** | 透過 SMB 3.0 存取的受控檔案共用。 | 在遷移內部部署檔案共用時使用，以及提供檔案資料的多個存取與連接。 |
@@ -137,17 +137,17 @@ Azure 提供數種儲存體資料類型。
 
 Azure 儲存體提供不同的選項來存取區塊 blob 資料。 選取適當的存取層可確保您以最具成本效益的方式儲存區塊 Blob 資料。
 
-| 存取層 | 詳細資料 | 使用量 |
+| 存取層 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **經常性** | 儲存成本較高，存取和交易成本較低 <br><br> 這是預設的存取層。 | 針對經常存取之作用中用途使用。 |
-| **酷** | 儲存體成本較低，存取和交易成本較高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
+| **非經常性** | 儲存體成本較低，存取和交易成本較高。 <br><br> 至少存放 30 天。 | 短期存放，資料可用但不經常存取。 |
 | **封存** | 用於個別區塊 Blob。 <br><br> 最具成本效益的儲存體選項。 最低儲存體成本、最高存取和交易成本。 | 使用可容忍數小時的抓取延遲時間，而且將在封存層中至少有180天的資料。 |
 
 ### <a name="storage-account-types"></a>儲存體帳戶類型
 
 Azure 提供數種儲存體帳戶類型與效能層級。
 
-| 帳戶類型 | 詳細資料 | 使用量 |
+| 帳戶類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途 v2 標準層** | 支援 Blob (區塊、分頁、附加)、檔案、磁碟、佇列與資料表。 <br><br> 支援經常性存取、非經常性存取和封存存取層。 支援區域冗余儲存體 (ZRS) 。 | 用於大部分案例與大部分類型的資料。 標準儲存體帳戶可以是 HDD 或 SSD 型。 |
 | **一般用途 v2 Premium 層** | 支援 Blob 儲存體資料 (分頁 Blob)。 支援經常性存取、非經常性存取和封存存取層。 支援 ZRS。 <br><br> 存放在 SSD 上。 | Microsoft 建議為所有 VM 使用。 |
@@ -158,7 +158,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 儲存體帳戶可以使用不同類型的備援選項來獲得備援能力與高可用性。
 
-| 類型 | 詳細資料 | 使用量 |
+| 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **本機備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 提供至少 99.999999999% (11 9 的物件在指定一年的) 耐久性。 | 請考慮您的應用程式是否儲存可輕鬆重建的資料。 |
 | **區域備援儲存體 (ZRS)** | 透過複寫到單一區域中的三個儲存體叢集，來維持在資料中心無法使用時的可用性。 每個儲存體叢集實際上都是分開的，位於自己的可用性區域中。 藉由在多個資料中心或區域中保留多個資料複本，在指定的一年內提供至少 99.9999999999% (12 9 的物件持久性) 。 | 考慮您是否需要一致性、持久性和高可用性。 當多個區域都受到永久影響時，可能無法針對區域性災害提供保護。 |
@@ -254,12 +254,14 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 此外，請考慮任何非生產環境的一般成本降低：
 
 - 減少非生產資源，以使用較低成本的 B 系列 Vm 和標準儲存體。
+- 使用點 Vm 減少非生產計算成本。
 - 套用 Azure 原則，以針對任何非生產資源要求資源層級的成本降低。
 
 **瞭解更多資訊：**
 
 - [使用標記](/azure/azure-resource-manager/management/tag-resources) 來識別要調整大小或終止的開發、測試或 QA 目標。
 - [自動關機 vm](/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms) 會設定 vm 的夜間終止時間。 使用這項功能將會每晚停止非生產的 Vm，要求開發人員在準備好繼續開發時重新開機這些 Vm。
+- 現成的[vm](/azure/virtual-machines/spot-vms)可讓 it 以大幅節省成本的方式利用未使用的 Azure 容量。 不過，在 Azure 需要取回容量的任何時間點，Azure 基礎結構將會收回 Vm 的位置。
 - 鼓勵開發小組使用 [Azure DevTest Labs](/azure/lab-services/devtest-lab-overview) 來建立自己的成本控制方法，並避免在先前步驟中使用標準自動關機計時的影響。
 
 ## <a name="best-practice-use-azure-cost-management--billing"></a>最佳做法：使用 Azure 成本管理 + 計費
