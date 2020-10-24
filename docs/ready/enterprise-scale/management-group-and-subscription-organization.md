@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3f72d69220d30ac319ffa5c0aa1d266a8b568a3
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 1f7b046abd13df1d4d16d6deb7315b6e620ac3c3
+ms.sourcegitcommit: 84696bcaf2fa7187b7db0ee38b83b9fdd78cee07
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253448"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92494178"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -38,7 +38,7 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 - 在您的根層級管理群組下建立管理群組，以代表您將裝載的工作負載類型 (原型) ，以及根據其安全性、合規性、連線能力和功能需求的工作負載。 此群組結構可讓您針對需要相同安全性、合規性、連線能力、功能設定的所有工作負載，在管理群組層級套用一組 Azure 原則。
 - 使用可透過 Azure 原則強制執行或附加的資源標籤，以進行跨管理群組階層的查詢和水平導覽。 接著，您可以將資源分組以滿足搜尋需求，而不需要使用複雜的管理群組階層。
 - 建立最上層的沙箱管理群組，讓使用者能夠立即試驗 Azure。 然後，使用者可以試驗在實際執行環境中可能尚未允許的資源。 沙箱可提供與開發、測試、實際執行環境隔離的環境。
-  - 如需最上層沙箱管理群組的進一步指引，請參閱 [實施指導方針](/docs/ready/enterprise-scale/implementation-guidelines.md)。
+  - 如需最上層沙箱管理群組的進一步指引，請參閱 [實施指導方針](./implementation-guidelines.md#sandbox-governance-guidance)。
 - 使用專用的服務主體名稱 (SPN) 來執行管理群組管理作業、訂用帳戶管理作業、角色指派。 使用 SPN 可減少較高權限的使用者人數，遵循最低權限方針。
 - `User Access Administrator`在根管理群組範圍 (RBAC) 角色指派 Azure 角色型存取控制， (`/`) 以授與在根層級上提及的 SPN 存取權。 授與 SPN 許可權之後， `User Access Administrator` 就可以安全地移除角色。 如此一來，只有 SPN 是角色的一部分 `User Access Administrator` 。
 - 將 `Contributor` 許可權指派給先前在根管理群組範圍中提及的 SPN (`/`) ，以允許租使用者層級的作業。 這個權限層級可確保 SPN 可用來部署和管理組織內任何訂用帳戶的資源。
