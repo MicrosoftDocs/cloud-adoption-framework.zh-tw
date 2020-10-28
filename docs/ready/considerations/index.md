@@ -4,15 +4,15 @@ description: 使用適用於 Azure 的雲端採用架構來了解如何擴充登
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5bda49e04da5febf7bc2564f250ca4686c172cc
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a83c21117388acee16d8b814d974dea280628320
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575191"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689989"
 ---
 # <a name="expand-your-landing-zone"></a>擴充登陸區域
 
@@ -32,12 +32,12 @@ _圖1：共用架構準則。_
 為了更符合雲端採用架構的方法，上述原則可分成幾項可操作的登陸區域改進功能：
 
 - 基本考量：重構登陸區域，以精簡裝載、基本概念和其他基礎元素。
-- 作業擴充：新增作業管理設定，以改善**效能、可靠性和卓越營運**。
-- 控管擴充：新增控管設定，以改善**成本、可靠性、安全性**和一致性。
-- 安全性擴充：新增**安全性**設定，以改善敏感性資料和重要系統的保護。
+- 作業擴充：新增作業管理設定，以改善 **效能、可靠性和卓越營運** 。
+- 控管擴充：新增控管設定，以改善 **成本、可靠性、安全性** 和一致性。
+- 安全性擴充：新增 **安全性** 設定，以改善敏感性資料和重要系統的保護。
 
 > [!WARNING]
-> 採用小組若具有**在雲端中裝載超過 1,000 項資產 (應用程式、基礎結構或資料資產)** 的中期目標 (在 24 個月內)，應考慮及早在其雲端採用旅程中進行每一項擴充。 若為其他各種採用模式，登陸區域擴充可以是平行的反覆項目，以利及早獲致商務成就。
+> 採用小組若具有 **在雲端中裝載超過 1,000 項資產 (應用程式、基礎結構或資料資產)** 的中期目標 (在 24 個月內)，應考慮及早在其雲端採用旅程中進行每一項擴充。 若為其他各種採用模式，登陸區域擴充可以是平行的反覆項目，以利及早獲致商務成就。
 
 ## <a name="next-steps"></a>後續步驟
 
