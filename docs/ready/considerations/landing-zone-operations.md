@@ -4,15 +4,15 @@ description: 改進登陸區域作業。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46c56b2518578261396588e8f142521fe8159a53
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 80b172f5c81ec5ee9dfe60d7a5a4845341a96c40
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603972"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690038"
 ---
 # <a name="improve-landing-zone-operations"></a>改善登陸區域作業
 

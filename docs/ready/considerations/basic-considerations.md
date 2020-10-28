@@ -4,19 +4,19 @@ description: 使用適用于 Azure 的雲端採用架構，以瞭解登陸區域
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/09/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37f99b3d42232b830edede242ac89602561bf7ff
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a1c2c54f450918314582516d22427c1101dba396
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572862"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689965"
 ---
 # <a name="landing-zone-considerations"></a>登陸區域考量
 
-登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」__ 一詞指的是已佈建並準備好在雲端環境 (例如 Azure) 中裝載工作負載的環境。 完全運作的登陸區域是最終交付項目，由雲端採用架構備妥方法的任何反覆項目組成。
+登陸區域是任何雲端採用環境的基本建置區塊。 「登陸區域」  一詞指的是已佈建並準備好在雲端環境 (例如 Azure) 中裝載工作負載的環境。 完全運作的登陸區域是最終交付項目，由雲端採用架構備妥方法的任何反覆項目組成。
 
 ![登陸區域考慮 ](../../_images/ready/landing-zone-considerations.png)
  _圖1：登陸區域考慮。_

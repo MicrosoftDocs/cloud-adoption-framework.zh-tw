@@ -4,26 +4,26 @@ description: 瞭解重構登陸區域的流程。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7f4982669209f52f597411c036ad4d669afcb98f
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: b3e806c6e0c926f60069bf308c29a54c0cf78c92
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661855"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690055"
 ---
 # <a name="refactor-landing-zones"></a>重構登陸區域
 
-登陸區域是裝載 **透過程式碼 preprovisioned**之工作負載的環境。 由於登陸區域基礎結構是在程式碼中定義，因此可以重構類似于任何其他程式碼基底。 重構是修改或重建原始程式碼以將該程式碼的輸出優化，而不需要變更其用途或核心功能的程式。
+登陸區域是裝載 **透過程式碼 preprovisioned** 之工作負載的環境。 由於登陸區域基礎結構是在程式碼中定義，因此可以重構類似于任何其他程式碼基底。 重構是修改或重建原始程式碼以將該程式碼的輸出優化，而不需要變更其用途或核心功能的程式。
 
 就緒的方法會使用重構的概念，以加速遷移和移除常見的封鎖程式。 「準備的總覽」中的步驟會討論以預先定義的登陸區域範本開始的程式，其最適合您的裝載功能。 然後重構或新增至原始程式碼，以擴充登陸區域透過改善的安全性、作業或治理來提供該功能的能力。 下圖說明重構的概念。
 
 ![登陸區域重構圖-本文章稍後章節中所述 ](../../_images/ready/refactor.png)
  _：登陸區域重構。_
 
-## <a name="common-blockers"></a>常見的封鎖器
+## <a name="common-blockers"></a>常見障礙
 
 當客戶採用雲端時，登陸區域考慮是採用和雲端相關商務結果的單一最常見封鎖者。 客戶傾向于達到下列兩個阻礙之一。 不同的小組通常會達到這兩個阻礙的其中一種，導致文化鎖死讓採用變得困難。
 
