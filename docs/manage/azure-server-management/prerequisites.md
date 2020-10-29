@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 978524f0677c54627818ebe80a550c4334dcf66f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3a591c3f8419c11cb8077a897fb05784407a2d52
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571893"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024584"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的先決條件規劃
 
@@ -39,7 +39,7 @@ ms.locfileid: "88571893"
 
 下列 Azure 伺服器管理服務需要連結的 Log Analytics 工作區和自動化帳戶：
 
-- [Azure 更新管理](/azure/automation/automation-update-management)
+- [Azure 更新管理](/azure/automation/update-management/overview)
 - [變更追蹤和清查](/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](/azure/virtual-machines/extensions/dsc-overview)
@@ -52,7 +52,7 @@ ms.locfileid: "88571893"
 
 準備您需要的工作區和帳戶以登入管理服務時，請考慮下列問題：
 
-- **Azure 地理位置和法規遵循：** Azure 區域會組織成 _地理_位置。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，則工作區和自動化帳戶必須部署到相同 Azure 地理位置內的區域，以作為其所支援的工作負載資源。
+- **Azure 地理位置和法規遵循：** Azure 區域會組織成 _地理_ 位置。 [Azure 地理位置](https://azure.microsoft.com/global-infrastructure/geographies)可確保符合地理界限內的資料落地、主權、合規性及復原需求。 如果您的工作負載受限於資料主權或其他合規性需求，則工作區和自動化帳戶必須部署到相同 Azure 地理位置內的區域，以作為其所支援的工作負載資源。
 - **工作區數目：** 作為指導準則，請建立每個 Azure 地理位置所需的工作區數目下限。 針對您的計算或儲存體資源所在的每個 Azure 地理位置，建議至少要有一個工作區。 當您將資料移轉至不同的地理位置時，此初始對齊有助於避免未來的法規問題。
 - **資料保留和上限：** 建立工作區或自動化帳戶時，您可能也需要將資料保留原則或資料上限需求納入考慮。 如需這些原則的詳細資訊，以及規劃工作區時的其他考慮，請參閱 [Azure 監視器中的記錄管理資料和工作區](/azure/azure-monitor/platform/manage-access)。
 - **區域對應：** 只有在某些 Azure 區域之間，才支援連結 Log Analytics 工作區和 Azure 自動化帳戶。 例如，如果 Log Analytics 工作區裝載在 `East US` 區域中，則必須在 `East US 2` 要與管理服務搭配使用的區域中建立連結的自動化帳戶。 如果您的自動化帳戶是在另一個區域中建立的，則無法連結至中的工作區 `East US` 。 部署區域的選擇可能會大幅影響 Azure 地理位置的需求。 請參閱 [區域對應表](/azure/automation/how-to/region-mappings) ，以決定哪個區域應裝載您的工作區和自動化帳戶。

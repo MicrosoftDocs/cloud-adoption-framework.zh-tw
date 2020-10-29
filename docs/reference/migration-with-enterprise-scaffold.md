@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: ff6f659e66d843b2c0abed5c04e07f8db6e32cdd
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 29c4ed2fa786d9c697ba14adcc92c73e93bb4b73
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776341"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024567"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -66,19 +66,19 @@ Azure 訂用帳戶是內含所有資源的基本單位。 它也可在 Azure 中
 
 EA 註冊的三種常見模式如下：
 
-- **功能性**模式：
+- **功能性** 模式：
 
   ![功能模式](../_images/reference/functional.png)
 
-- **業務單位**模式：
+- **業務單位** 模式：
 
   ![業務單位模式](../_images/reference/business.png)
 
-- **地理**模式：
+- **地理** 模式：
 
   ![地理模式](../_images/reference/geographic.png)
 
-雖然這些模式中的每一個都有其作用，但愈來愈多人採用**業務單位**模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和作業群組已建立以**聯邦**、**州**和**地方**建立模型的有效**商務單位**模式子集。 如需詳細資訊，請參閱組織您的訂用帳戶 [和資源群組](../ready/azure-best-practices/organize-subscriptions.md)。
+雖然這些模式中的每一個都有其作用，但愈來愈多人採用 **業務單位** 模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和作業群組已建立以 **聯邦** 、 **州** 和 **地方** 建立模型的有效 **商務單位** 模式子集。 如需詳細資訊，請參閱組織您的訂用帳戶 [和資源群組](../ready/azure-best-practices/organize-subscriptions.md)。
 
 ### <a name="azure-management-groups"></a>Azure 管理群組
 
@@ -89,7 +89,7 @@ Microsoft 現在提供另一種模型來建立階層模型： [Azure 管理群�
 
 設計完善的管理群組，以及 Azure 原則和方案，也是有效治理 Azure 的骨幹。
 
-### <a name="subscriptions"></a>訂用帳戶
+### <a name="subscriptions"></a>訂閱
 
 在決定您的部門及帳戶 (或管理群組) 時，您會優先探討如何分配 Azure 環境以符合您的組織。 不過，訂用帳戶是實際工作的發生位置，而此處的決策會影響安全性、擴充性和計費。 許多組織會查看下列模式來作為他們的指引：
 
@@ -180,7 +180,7 @@ Azure 最初發行時，訂用帳戶的存取控制是基本的︰系統管理�
 - 控制訂用帳戶的系統管理員/共同管理員，因為這些角色具有廣泛的權限。 如果「訂用帳戶擁有者」需要管理 Azure 傳統部署，只需將它們新增為共同管理員即可。
 - 使用管理群組來跨多個訂用帳戶指派[角色](/azure/azure-resource-manager/management-groups-overview#management-group-access)，並降低在訂用帳戶層級上管理這些角色的負擔。
 - 將 Azure 使用者新增至 Active Directory 中的群組 (例如，應用程式 X 擁有者)。 使用已同步處理的群組，提供群組成員管理資源群組 (包含應用程式) 的適當權限。
-- 依照授與執行預期工作所需**最低權限**的原則。
+- 依照授與執行預期工作所需 **最低權限** 的原則。
 
 > [!IMPORTANT]
 > 請考慮使用 [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted)和[條件式存取](/azure/active-directory/conditional-access/overview)功能，為您 Azure 訂用帳戶上的系統管理動作提供更佳的安全性和更高的可見性。 這些功能來自有效的 Azure AD Premium 授權 (視功能而訂)，可進一步保護及管理您的身分識別。 Azure AD PIM 可啟用 "Just-in-Time" 管理存取及核准工作流程，以及完整的系統管理員啟用和活動稽核。 Azure Multi-Factor Authentication 是另一項重要的功能，可讓您進行雙步驟驗證以登入 Azure 入口網站。 如果結合條件式存取控制，您可以有效地管理損害風險。
@@ -218,7 +218,7 @@ AzSK 是一組豐富的工具、腳本和資訊，這些都是完整 Azure 治�
 
 ### <a name="azure-update-management"></a>Azure 更新管理
 
-保護您環境安全的主要工作之一是確保伺服器已套用最新的更新。 雖然有許多工具可達成此目的，但 Azure 提供的 [Azure 更新管理](/azure/automation/automation-update-management)解決方案會對重大 OS 修補程式的識別和推出有所因應。 並且會運用 Azure 自動化 (稍後會在本指南的[自動化](#automate)區段中加以說明)。
+保護您環境安全的主要工作之一是確保伺服器已套用最新的更新。 雖然有許多工具可達成此目的，但 Azure 提供的 [Azure 更新管理](/azure/automation/update-management/overview)解決方案會對重大 OS 修補程式的識別和推出有所因應。 並且會運用 Azure 自動化 (稍後會在本指南的[自動化](#automate)區段中加以說明)。
 
 ## <a name="monitor-and-alerts"></a>監視和警示
 
@@ -228,9 +228,9 @@ AzSK 是一組豐富的工具、腳本和資訊，這些都是完整 Azure 治�
 - **計量** 是由資源發出的數值資訊，可描述資源的效能和健康情況。
 - **診斷記錄** 是由 Azure 服務發出，提供有關該服務作業的豐富、經常性資料。
 
-這項資訊可以在多個層級上查看和處理，並持續改善。 Azure 透過下圖中所述的服務，提供 Azure 資源的 **共用**、 **核心**和 **深層** 監視功能。
+這項資訊可以在多個層級上查看和處理，並持續改善。 Azure 透過下圖中所述的服務，提供 Azure 資源的 **共用** 、 **核心** 和 **深層** 監視功能。
 
-![監視](../_images/reference/monitoring.png)
+![描述深層應用程式監視、深層基礎結構監視、核心監視和共用功能的圖表。](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>共用功能
 
@@ -248,7 +248,7 @@ AzSK 是一組豐富的工具、腳本和資訊，這些都是完整 Azure 治�
 
 - **Azure 服務健康狀態：** Azure 服務健康狀態可識別任何可能影響您應用程式的 Azure 服務問題，並協助您規劃排程維護時段。
 
-- **活動記錄：** 活動記錄會描述訂用帳戶中資源上的所有作業。 它會提供一個審核_記錄，以_判斷任何在資源上建立、更新、刪除_作業的__內容_。 活動記錄檔事件會儲存在平臺中，而且可供查詢90天。 您可以將活動記錄內嵌至 Log Analytics，以獲得較長的保留期間，以及跨多個資源更深入的查詢和分析。
+- **活動記錄：** 活動記錄會描述訂用帳戶中資源上的所有作業。 它會提供一個審核 _記錄，以_ 判斷任何在資源上建立、更新、刪除 _作業的__內容_ 。 活動記錄檔事件會儲存在平臺中，而且可供查詢90天。 您可以將活動記錄內嵌至 Log Analytics，以獲得較長的保留期間，以及跨多個資源更深入的查詢和分析。
 
 ### <a name="deep-application-monitoring"></a>深層應用程式監視
 
@@ -331,7 +331,7 @@ Azure 是超大規模雲端提供者。 當您將組織從內部部署伺服器�
 
 Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以安全的方式存取 Azure。 資源的存取可以是內部的 (在公司網路內) 或外部的 (透過網際網路)。 您組織中的使用者很容易不小心將資源放在錯誤的位置，並可能加以開啟而遭到惡意存取。 針對內部部署裝置，企業必須加上適度的控制，以確保 Azure 使用者能做出適當的決策。 針對訂用帳戶治理，我們會找出可提供基本存取控制的核心資源。 核心資源是由下列各項所組成︰
 
-- **虛擬網路**是子網路的容器物件。 雖然不是絕對必要，但通常使用於將應用程式連接到內部公司資源時。
+- **虛擬網路** 是子網路的容器物件。 雖然不是絕對必要，但通常使用於將應用程式連接到內部公司資源時。
 - **使用者定義的路由** 可讓您操作子網內的路由表，讓您可以透過網路虛擬裝置或對等互連虛擬網路上的遠端閘道，來傳送流量。
 - **虛擬網路對等互連** 可讓您在 Azure 中順暢地連接兩個或多個虛擬網路，以建立更複雜的中樞和輪輻設計或共用服務網路。
 - **服務端點。** 在過去，PaaS 服務會仰賴不同方法來保護您虛擬網路中這些資源的存取。 服務端點可讓您安全地存取已啟用的 PaaS 服務， **只** 來自已連線的端點，進而提高整體安全性。

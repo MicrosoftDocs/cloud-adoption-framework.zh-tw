@@ -7,27 +7,27 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d9c59cf935d122581465fa5d96ffd05bc4e39dd8
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4acfe75b2499d782946a89471e9ae61c4c868dbc
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604031"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024465"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure 伺服器管理工具和服務
 
 如同本指南的 [概述](./index.md) 中所述，Azure 伺服器管理服務套件涵蓋下列各方面：
 
-- 移轉
+- 遷移
 - 安全
-- 保護
+- Protect
 - 監視
 - 設定
 - 治理
 
 下列各節將簡短說明這些管理區域，並提供支援這些管理區域之主要 Azure 服務的詳細內容連結。
 
-## <a name="migrate"></a>移轉
+## <a name="migrate"></a>遷移
 
 遷移服務可協助您將工作負載遷移至 Azure。 為了提供最佳的指引，Azure Migrate 服務一開始會測量內部部署伺服器效能，並評估遷移的適用性。 Azure Migrate 完成評量之後，您可以使用 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) 和 [Azure 資料庫移轉服務](/azure/dms/dms-overview) ，將您的內部部署機器遷移至 azure。
 
@@ -35,7 +35,7 @@ ms.locfileid: "89604031"
 
 [Azure 資訊安全中心](/azure/security-center/security-center-intro) 是全方位的安全性管理應用程式。 藉由上線至安全中心，您可以快速評估環境的安全性和法規合規性狀態。 如需將伺服器上架至 Azure 資訊安全中心的指示，請參閱 [設定訂用帳戶的 Azure 管理服務](./onboard-at-scale.md#azure-security-center)。
 
-## <a name="protect"></a>保護
+## <a name="protect"></a>Protect
 
 若要保護您的資料，您需要規劃備份、高可用性、加密、授權和相關的操作問題。 這些主題廣泛地在線上討論，因此我們將著重于建立商務持續性和嚴重損壞修復 (BCDR) 方案。 我們將包含說明文件的參考，其中詳細說明如何執行和部署這種類型的計畫。
 
@@ -73,7 +73,7 @@ ms.locfileid: "89604031"
 
 這些服務是支援進行中作業的必要項：
 
-- [更新管理](/azure/automation/automation-update-management) 在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它同時支援 Windows 和 Linux 作業系統，並追蹤因遺漏修補程式而造成的主要作業系統弱點和不符合項。
+- [更新管理](/azure/automation/update-management/overview) 在您的環境中自動部署修補程式，包括部署至在 Azure 外部執行的作業系統實例。 它同時支援 Windows 和 Linux 作業系統，並追蹤因遺漏修補程式而造成的主要作業系統弱點和不符合項。
 - [變更追蹤和清查](/azure/automation/change-tracking) 可讓您深入瞭解在您的環境中執行的軟體，並反白顯示發生的任何變更。
 - [Azure 自動化](/azure/automation/automation-intro) 可讓您執行 Python 和 PowerShell 腳本或 runbook，將整個環境中的工作自動化。 當您搭配 [混合式 Runbook 背景工作角色](/azure/automation/automation-hybrid-runbook-worker)使用自動化時，您也可以將 runbook 擴充至內部部署資源。
 - [Azure 自動化狀態設定](/azure/automation/automation-dsc-overview) 可讓您直接從 Azure 推送 PowerShell DESIRED STATE CONFIGURATION (DSC) 設定。 DSC 也可讓您監視及保留客體作業系統和工作負載的設定。

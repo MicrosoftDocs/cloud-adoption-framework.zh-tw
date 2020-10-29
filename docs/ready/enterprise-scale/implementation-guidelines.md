@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e93f231d0b5749edc6216cf0338fd66931410673
-ms.sourcegitcommit: 523d3b21cab320294f54b661abf85874af9f5e9a
+ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178962"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024601"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "92178962"
 
 1. **企業規模架構必須符合下列條件：** 包含必須由 Azure 和 Azure Active Directory (Azure AD) 系統管理員所執行的活動，才能建立初始設定。 這些活動是依本質順序排列，而且主要是一次性活動。
 
-2. ** (檔案中啟用新的區域，> 新的 > 區域) ：** 包含需要將企業規模平臺擴展至新的 Azure 區域時，所需的活動。
+2. **(檔案中啟用新的區域，> 新的 > 區域) ：** 包含需要將企業規模平臺擴展至新的 Azure 區域時，所需的活動。
 
 3. **將新的登陸區域 (檔案部署 > 新的 > 登陸區域) ：** 這些是具現化新登陸區域所需的週期性活動。
 
@@ -82,9 +82,9 @@ ms.locfileid: "92178962"
 
   | 名稱                  |     描述                                                                                     | 指派注意事項 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-VNET-Peering-Cross-Subscription.parameters.json) | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
+  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
   | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; *例如 VPN/ExpressRoute/VirtualWAN* | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 | 
-  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Budget-Sandbox.parameters.json) | 確保每個沙箱訂用帳戶的預算都有，並啟用電子郵件警示。 在每個訂用帳戶中，預算會命名為： `default-sandbox-budget` 。 | 如果在指派原則時，不會修改參數的預設值，就會 `default-sandbox-budget` 使用1000貨幣閾值限制來建立預算 () 將會根據 RBAC 角色指派，將電子郵件警示傳送給訂用帳戶的擁有者和參與者 (以) 90% 和100% 的預算閾值。 |
+  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 確保每個沙箱訂用帳戶的預算都有，並啟用電子郵件警示。 在每個訂用帳戶中，預算會命名為： `default-sandbox-budget` 。 | 如果在指派原則時，不會修改參數的預設值，就會 `default-sandbox-budget` 使用1000貨幣閾值限制來建立預算 () 將會根據 RBAC 角色指派，將電子郵件警示傳送給訂用帳戶的擁有者和參與者 (以) 90% 和100% 的預算閾值。 |
 
 ### <a name="global-networking-and-connectivity"></a>全球網路和連線能力
 

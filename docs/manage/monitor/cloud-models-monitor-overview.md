@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e33e3e8129229229bfd3737d85032af8b33ae09a
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334386"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024482"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -42,9 +42,9 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 下表摘要說明監視堆疊各層的建議方法：
 
-| 層 | 資源 | 範圍 | 方法 |
+| 層 | 資源 | 影響範圍 | 方法 |
 |---|---|---|---|
-| 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
+| Application | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能度量的 Azure 資料庫。 | 啟用診斷記錄，以將 SQL 資料串流至 Azure 監視器記錄。 |
 | Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure [負載平衡服務](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3. 網路安全性群組 <br> 4. Azure 虛擬機器 <br> 5. [Azure Kubernetes Service](/azure/aks/intro-kubernetes) / [Azure 容器實例](/azure/container-instances/) | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 5. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 針對第一個資料行中的專案1到5，系統會自動收集平臺計量和活動記錄，並可在 Azure 監視器中使用以進行分析和警示。 <br> 設定診斷設定，以將資源記錄轉送至 Azure 監視器記錄。 <br> 4. 啟用 [適用於 VM 的 Azure 監視器](/azure/azure-monitor/insights/vminsights-overview)。 <br> 5. 啟用 [容器的 Azure 監視器](/azure/azure-monitor/insights/container-insights-overview)。 |
 | 網路 | 虛擬機器與一或多個端點之間的通訊 (另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址) 。 | 監視 VM 與端點之間發生的連線能力、延遲和網路拓撲變更。 | Azure 網路監看員。 |
@@ -155,7 +155,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 - 從 Azure、其他雲端提供者和您的公司網路之間託管元件的簡單或多層式架構，監視混合式基礎結構和應用程式。 這些元件可能包括一或多個 Vm、放置在可用性設定組或虛擬機器擴展集中的多個 Vm，或部署到在 Windows Server 或 Linux 容器上執行的 Azure Kubernetes Service (AKS) 的容器化應用程式。
 
-- 使用 [Azure Arc](/azure-arc/overview) ，在您的環境中準備您的伺服器、虛擬機器、Kubernetes 叢集和資料庫以進行管理，就像是在 Azure 中執行一樣。 Azure Arc 透過熟悉的 Azure 服務和管理功能提供一致的清查、管理、治理和安全性。
+- 使用 [Azure Arc](/azure/azure-arc/overview) ，在您的環境中準備您的伺服器、虛擬機器、Kubernetes 叢集和資料庫以進行管理，就像是在 Azure 中執行一樣。 Azure Arc 透過熟悉的 Azure 服務和管理功能提供一致的清查、管理、治理和安全性。
 
 - 啟用容器適用於 VM 的 Azure 監視器、Azure 監視器，以及 Application Insights 偵測和診斷基礎結構和應用程式之間的問題。 若要對從多個元件或支援應用程式之相依性收集的資料進行更徹底的分析和相互關聯，您必須使用 Azure 監視器記錄。
 

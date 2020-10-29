@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 65dc5c6830fd5e68c9c8a23c5b796eea18f21c3c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b8389e4869383be2ed03600e904a2f982d8a237
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571995"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024516"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>在單一 VM 上啟用伺服器管理服務以進行評估
 
@@ -29,7 +29,7 @@ ms.locfileid: "88571995"
 
 如需有關如何將這些解決方案上架到個別 Vm 的詳細資訊，請參閱：
 
-- [從 Azure 虛擬機器上架更新管理、變更追蹤和清查解決方案](/azure/automation/automation-onboard-solutions-from-vm)
+- [從 Azure 虛擬機器上架更新管理、變更追蹤和清查解決方案](/azure/automation/change-tracking/manage-inventory-vms)
 - [將適用于 Vm 的 Azure 監視器上線](/azure/azure-monitor/insights/vminsights-enable-single-vm)
 
 ## <a name="next-steps"></a>後續步驟

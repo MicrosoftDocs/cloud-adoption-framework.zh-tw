@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bdf4656df0845636e6065e88085dbb03d7c7f00
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c8fd183115c17f1f26087af99dd5c8578885845a
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879246"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024431"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 
@@ -54,7 +54,7 @@ ms.locfileid: "88879246"
 
 **原則聲明：** 治理工具必須強制在所有已部署的 Vm 上啟用自動更新。 必須與作業管理小組一起檢閱違規事件，並根據作業原則來進行修復。 不會自動更新之資產必須包含在 IT 部門所負責的處理程序中。
 
-**可能的設計選項：** 針對 Azure 裝載的 Vm，您可以 [在 Azure 自動化中使用更新管理解決方案](/azure/automation/automation-update-management)，以提供一致的更新管理。
+**可能的設計選項：** 針對 Azure 裝載的 Vm，您可以 [在 Azure 自動化中使用更新管理解決方案](/azure/automation/update-management/overview)，以提供一致的更新管理。
 
 ## <a name="deployment-compliance"></a>部署合規性
 
