@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 7338c715015b838df95ffdfdc0f9368e70f083c2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c23bfed62f42e5f6a6d811f0c962d1ace846665b
+ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885179"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93066473"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -25,17 +25,9 @@ ms.locfileid: "88885179"
 
 並非所有企業都採用相同的方式，因此雲端採用架構企業規模的登陸區域架構在客戶之間會有所不同。 本指南中的技術考慮和設計建議可能會根據您組織的案例而產生不同的取捨。 預計會有一些變化，但您如果遵循核心建議，則所產生的目標架構會將您組織放在可持續調整的路徑上。
 
-## <a name="landing-zone-expanded-definition"></a>登陸區域：展開的定義
+## <a name="landing-zone-in-enterprise-scale"></a>企業規模的登陸區域
 
-[登陸區域考慮](../../ready/considerations/index.md) 提供詞彙 _登陸區域_的詳細定義。 雲端採用架構企業規模登陸區域的物件需要更明確的定義。
-
-- **範圍：** 在雲端採用架構的企業規模登陸區域內，登陸區域的範圍會大幅成長，以支援在 Azure 中企業規模的應用程式遷移和環保現場開發。 這項擴充功能可讓您進行設計，以在客戶的完整 IT 組合中進行調整，而不是短期的雲端採用方案。
-
-- **重構：** 支援完整企業規模 IT 組合所需的訂用帳戶數目可能很大。 一開始，雲端採用架構鼓勵高頻率的重構，在第十個生產工作負載部署至雲端之前，應該穩定。 當您在企業組合中工作時，可以快速部署10個應用程式，並使重構作業不切實際。 相反地，中央 IT 小組或卓越的雲端中心應該會在第一次發行期間提供更完整的登陸區域。
-
-- **目標：** 根據應用程式原型訂用帳戶原則提供一致的登陸區域，以將訂用帳戶的激增降至最低。 展開必要元件的定義，使其更符合雲端成熟企業的治理和合規性需求。 如需總覽，請參閱圖1。
-
-- **主要用途：** 有限的重構機會和定義的訂用帳戶原則，可讓客戶更快地成熟地成熟客戶的登陸區域。 雲端採用架構的企業規模登陸區域可擴充了登陸區域的主體用途，以專注于治理、合規性、安全性和作業管理方面。 在第一版登陸區域和支援共用服務時，每個區域都會獲得解決。
+Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中的企業規模進行應用程式移轉和綠地開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
 
 例如，您可以在建立新的房屋之前，先存取水、天然氣和電力等城市公用程式。 在此內容中，網路、身分識別和存取管理、原則、管理和監視是共用的公用程式服務，必須立即可用以協助在應用程式開始之前簡化應用程式遷移程式。
 
@@ -43,37 +35,37 @@ ms.locfileid: "88885179"
 
 _圖1：登陸區域設計。_
 
-## <a name="expanded-list-of-requisite-components"></a>擴充的必要元件清單
-
-下列清單會針對登陸區域圖例進行擴充。 它概述了必須在客戶需求內容中設計和開發的核心技術結構，以建立符合規範的技術登陸區域環境，以及成功採用 Azure 的條件。
-
-- 身分**識別和存取管理：** 您必須建立 Azure Active Directory 的設計和整合，才能確保伺服器和使用者驗證。 以資源為基礎的存取控制 (RBAC) 必須進行模型化和部署，以強制將職責區隔和平臺操作和管理所需的權利分開。 金鑰管理必須經過設計和部署，以確保安全地存取資源和支援作業，例如輪替和復原。 最後，系統會將存取角色指派給控制項和資料平面的應用程式擁有者，以自主建立及管理資源。
-
-- **原則管理：** 您必須識別、描述、建立整體和登陸區域特定的原則，並將其部署到目標 Azure 平臺上，以確保公司、法規和企業營運控制項都已就緒。 最後，您應該使用原則來確保應用程式和基礎資源的相容性，而不需要任何抽象概念布建或管理功能。
-
-- **管理與監視：** 平台層級整體 (水準) 資源監視和警示必須經過設計、部署和整合。 您也必須定義和簡化諸如修補和備份等作業工作。 安全性作業、監視和記錄必須與 Azure 上的資源和現有的內部部署系統進行設計及整合。 所有跨資源取得控制平面作業的訂用帳戶活動記錄，都應該串流至 Log Analytics，以供查詢及分析，受限於 RBAC 許可權。
-
-- **網路拓撲和連線能力：** 您必須在 Azure 區域和內部部署環境中建立和部署端對端網路拓撲，以確保平臺部署之間的北歐和中東連線能力。 您必須在網路安全性設計中識別、部署和設定必要的服務和資源，例如防火牆和網路虛擬裝置，以確保完全符合安全性需求。
-
-- **共用服務基礎結構：** 集中控制但廣泛部署的服務（例如網域控制站）必須設計、設定及建立，以協助應用程式小組取用及整合必要和一般服務和資源。 並非所有傳統和共用的內部部署服務都應該在雲端中提供。 例如，檔案共用和硬體安全性模組應視為使用原生 Azure 服務的應用層級資源。
-
-- **DevOps：** 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
-
-除了此處所述的重要層面之外，每個登陸區域的設計、設定、部署和整合，都應該符合您組織與下列相關的重要需求：
-
-- 平臺和應用層級的商務持續性和嚴重損壞修復。
-- 服務管理，例如事件回應和支援。
-- 服務類別目錄 (例如，設定管理資料庫) 。
-
 ## <a name="high-level-architecture"></a>高階架構
 
-[![顯示雲端採用架構企業規模登陸區域架構的圖表。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
+Enterprise-Scale 的架構是由一組不同的設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：根據 AZURE 虛擬 WAN 網路拓撲的 Enterprise-Scale 架構 (depictured 在 [圖 2]) 上，或根據 [圖 3] (所示的中樞和輪輻架構的傳統 Azure 網路拓撲來定義。   
 
-_圖2：雲端採用架構企業規模登陸區域架構。_
+[![此圖顯示以 Azure 虛擬 WAN 網路拓撲為基礎的雲端採用架構企業規模登陸區域架構。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-下載包含此架構圖表的 [PDF](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 檔案。
+_圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登陸區域架構。_
 
-## <a name="next-steps"></a>後續步驟
+[![顯示雲端採用架構企業規模登陸區域架構的圖表。](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
+
+_圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure 網路拓撲為基礎。_
+
+下載 PDF 檔案，其中包含以 [虛擬 WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲為基礎的 Enterprise-Scale 架構圖表，或是以 [中樞和輪輻](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。
+
+在 [圖 2] 和 [3] 中，有 Enterprise-Scale 重要設計區域的參考，以字母 A 表示：
+
+![字母 A ](./media/a.png) [ENTERPRISE 合約 (EA) 註冊和 Azure Active Directory](./enterprise-enrollment-and-azure-ad-tenants.md)租使用者。 註冊 Enterprise 合約 (EA) 代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的數位資產管理。 您的 EA 註冊可透過 Azure 企業版入口網站來管理。 註冊通常代表組織的階層，其中包括部門、帳戶和訂用帳戶。 Azure AD 租用戶提供身分識別與存取權管理，這是安全性狀態的重要部分。 Azure AD 租用戶可確保已驗證和授權的使用者只能存取他們具有存取權限的資源。
+
+![字母 B 身分 ](./media/b.png) [識別和存取管理](./identity-and-access-management.md)。 您必須建立 Azure Active Directory 的設計和整合，才能確保伺服器和使用者驗證。 以資源為基礎的存取控制 (RBAC) 必須進行模型化和部署，以強制將職責區隔和平臺操作和管理所需的權利分開。 金鑰管理必須經過設計和部署，以確保安全地存取資源和支援作業，例如輪替和復原。 最後，系統會將存取角色指派給控制項和資料平面的應用程式擁有者，以自主建立及管理資源。
+
+![字母 C ](./media/c.png) [管理群組和訂](./management-group-and-subscription-organization.md)用帳戶組織。 Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織對應，在組織規劃大規模採用 Azure 時必須詳細考慮管理群組。 訂用帳戶是 Azure 中管理、計費、縮放的單位。 當您設計大規模的 Azure 採用時，訂用帳戶扮演著重要的角色。 這個關鍵的設計領域可協助您根據重要因素來捕捉訂用帳戶需求和設計目標訂閱。 這些因素包括環境類型、擁有權和治理模型、組織結構、應用程式組合。
+
+![字母 D 的 ](./media/d.png) [管理和監視](./management-and-monitoring.md)。 平台層級的整體 (水平) 資源監視與警示必須經過設計、部署及整合。 您也必須定義和簡化諸如修補和備份等作業工作。 安全性作業、監視和記錄必須與 Azure 上的資源和現有的內部部署系統進行設計及整合。 所有跨資源取得控制平面作業的訂用帳戶活動記錄，都應該串流至 Log Analytics，以供查詢及分析，受限於 RBAC 許可權。
+
+![字母 E ](./media/e.png) [網路拓朴和連線能力](./network-topology-and-connectivity.md)。 您必須在 Azure 區域和內部部署環境中建立和部署端對端網路拓撲，以確保平臺部署之間的北歐和中東連線能力。 您必須在網路安全性設計中識別、部署和設定必要的服務和資源，例如防火牆和網路虛擬裝置，以確保完全符合安全性需求。
+
+![字母 F ](./media/f.png) 、 ![ 字母 G ](./media/g.png) 、 ![ 字母 H ](./media/h.png) [商務持續性和](./business-continuity-and-disaster-recovery.md) 嚴重損壞修復和 [安全性、治理和合規性](./security-governance-and-compliance.md)。 您必須識別、描述、建立整體和登陸區域特定的原則，並將其部署到目標 Azure 平臺上，以確保公司、法規和企業營運控制項都已就緒。 最後，您應該使用原則來確保應用程式和基礎資源的相容性，而不需要任何抽象概念布建或管理功能。
+
+![字母 I ](./media/i.png) [平臺自動化和 DevOps](platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
+
+## <a name="next-steps"></a>下一步
 
 使用雲端採用架構企業規模的設計指導方針，自訂此架構的執行。
 

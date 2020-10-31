@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aba1b915bf1cff47e26407940c871496cd640be
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 9b9a0b5893195a6089c48b918f8d702c2310f092
+ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334930"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93066699"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -37,7 +37,7 @@ Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 �
 > - **步驟5：安全性。** 它會如何保護混合式部署的安全？
 > - **步驟6：管理。** 它會如何讓部署符合安全性和治理需求？
 
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
+## <a name="before-you-start"></a>開始之前
 
 開始查看基礎結構之前，請考慮閱讀相關 Azure 功能的一些背景資訊：
 
@@ -130,9 +130,9 @@ Contoso 公司決定將其內部部署 Active Directory 擴充至雲端，而不
 
 Contoso 會使用 Azure 訂用帳戶隨附的 Azure AD Free 版本。 Contoso 管理員會建立 Azure AD 目錄：
 
-1. 在[Azure 入口網站](https://portal.azure.com)中，他們會移至**建立資源**身分  >  **識別**  >  **Azure Active Directory**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，他們會移至 **建立資源** 身分  >  **識別**  >  **Azure Active Directory** 。
 
-1. 在 [ **建立目錄**] 中，他們會指定目錄的名稱、初始功能變數名稱，以及應建立目錄的區域。
+1. 在 [ **建立目錄** ] 中，他們會指定目錄的名稱、初始功能變數名稱，以及應建立目錄的區域。
 
    ![建立 Azure AD 目錄之選取專案的螢幕擷取畫面。](./media/contoso-migration-infrastructure/azure-ad-create.png)
 
@@ -143,14 +143,14 @@ Contoso 會使用 Azure 訂用帳戶隨附的 Azure AD Free 版本。 Contoso �
 
 ### <a name="add-the-domain-name"></a>新增網域名稱
 
-若要使用標準功能變數名稱，Contoso 管理員必須將它新增為 Azure AD 的自訂功能變數名稱。 此選項可讓他們指派熟悉的使用者名稱。 例如，使用者可以使用電子郵件地址來登入， `billg@contoso.com` 而不是登入 `billg@contosomigration.microsoft.com` 。
+若要使用標準功能變數名稱，Contoso 管理員必須將它新增為 Azure AD 的自訂功能變數名稱。 此選項可讓他們指派熟悉的使用者名稱。 例如，使用者可以使用電子郵件地址來登入， `billg@contoso.com` 而不是登入 `billg@contosomigration.onmicrosoft.com` 。
 
 若要設定自訂功能變數名稱，系統管理員會將它新增至目錄、新增 DNS 專案，然後在 Azure AD 中確認名稱。
 
-1. 在**自訂功能變數名稱**  >  **新增自訂**網域時，他們會新增網域。
+1. 在 **自訂功能變數名稱**  >  **新增自訂** 網域時，他們會新增網域。
 2. 若要在 Azure 中使用 DNS 專案，他們必須向其網域註冊機構註冊：
 
-    - 在 [自訂網域名稱]**** 清單中，他們記下名稱的 DNS 資訊。 它使用 MX 記錄。
+    - 在 [自訂網域名稱]  清單中，他們記下名稱的 DNS 資訊。 它使用 MX 記錄。
     - 他們需要存取名稱伺服器。 他們會登入 `contoso.com` 網域，並使用記下的詳細資料，為 Azure AD 所提供的 DNS 專案建立新的 MX 記錄。
 
 3. 在 DNS 記錄傳播之後，他們會選取 [ **驗證** ] 來檢查網域詳細資料中的自訂功能變數名稱。
@@ -181,9 +181,9 @@ Contoso 管理員會設定 Azure 資源群組，如下表所示。
 
 他們依照下列方式建立資源群組：
 
-1. 在 Azure 入口網站 > [資源群組]**** 中，他們新增群組。
+1. 在 Azure 入口網站 > [資源群組]  中，他們新增群組。
 2. 針對每個群組，他們會指定名稱、群組所屬的訂用帳戶，以及區域。
-3. 資源群組會出現在 [資源群組]**** 清單中。
+3. 資源群組會出現在 [資源群組]  清單中。
 
    ![顯示資源群組清單的螢幕擷取畫面](./media/contoso-migration-infrastructure/resource-groups.png)
 
@@ -211,13 +211,13 @@ Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的
 
 ### <a name="download-the-tool"></a>下載工具
 
-1. 在 Azure 入口網站中，Contoso 管理員會移至**Azure Active Directory**  >  **Azure AD Connect** ，並將最新版本的工具下載至他們用來進行同步處理的伺服器。
+1. 在 Azure 入口網站中，Contoso 管理員會移至 **Azure Active Directory**  >  **Azure AD Connect** ，並將最新版本的工具下載至他們用來進行同步處理的伺服器。
 
     ![顯示下載 Azure A D Connect 之連結的螢幕擷取畫面。](./media/contoso-migration-infrastructure/download-ad-connect.png)
 
     _圖8：下載 Azure AD Connect。_
 
-2. 他們使用 [ `AzureADConnect.msi` **快速設定**] 開始安裝。 這是最常見的安裝，可用於具有密碼雜湊同步處理的單一樹系拓撲以進行驗證。
+2. 他們使用 [ `AzureADConnect.msi` **快速設定** ] 開始安裝。 這是最常見的安裝，可用於具有密碼雜湊同步處理的單一樹系拓撲以進行驗證。
 
     ![顯示 Azure AD Connect Wizard 的螢幕擷取畫面。](./media/contoso-migration-infrastructure/ad-connect-wiz1.png)
 
@@ -235,7 +235,7 @@ Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的
 
     _圖11： Azure AD Connect Wizard：連接到 AD DS。_
 
-5. 在 [準備好設定]**** 頁面中，他們會選取 [在設定完成時開始同步處理程序]**** 以立即啟動同步。 然後，他們進行安裝。
+5. 在 [準備好設定]  頁面中，他們會選取 [在設定完成時開始同步處理程序]  以立即啟動同步。 然後，他們進行安裝。
 
     請注意：
 
@@ -259,8 +259,8 @@ Azure [RBAC](/azure/role-based-access-control/role-assignments-portal) 可讓您
 
 然後，Contoso 管理員會將角色指派給他們從內部部署同步處理的 Active Directory 群組。
 
-1. 在 `ControlCobRG` 資源群組中，他們會選取 [**存取控制] (IAM) **  >  **新增角色指派**]。
-2. 在「**新增角色指派**  >  **角色**  >  **參與者**」中，他們會 `ContosoCobRG` 從清單中選取安全性群組。 接著，群組就會出現在 [選取的成員]**** 清單中。
+1. 在 `ControlCobRG` 資源群組中，他們會選取 [ **存取控制] (IAM)**  >  **新增角色指派** ]。
+2. 在「 **新增角色指派**  >  **角色**  >  **參與者** 」中，他們會 `ContosoCobRG` 從清單中選取安全性群組。 接著，群組就會出現在 [選取的成員]  清單中。
 3. 他們以相同的許可權對其他資源群組重複此步驟 (但 `ContosoAzureAdmins`) ，方法是將 **參與者** 許可權新增至符合資源群組的安全性群組。
 4. 針對 `ContosoAzureAdmins` 安全性群組，他們會指派「 **擁有** 者」角色。
 
@@ -563,7 +563,7 @@ _圖22：中樞網路架構。_
 
 針對網路中的網域控制站 `VNET-PROD-EUS2` ，Contoso 想要在 `EUS2` 中樞/生產網路之間，以及透過 VPN 連線，在內部部署之間流動流量。 若要這樣做，Contoso 管理員必須允許下列各項：
 
-1. 在對等連線上**允許轉送的流量**和**允許閘道傳輸組態**。 在我們的範例中，這會是從 `VNET-HUB-EUS2` 到的連接 `VNET-PROD-EUS2` 。
+1. 在對等連線上 **允許轉送的流量** 和 **允許閘道傳輸組態** 。 在我們的範例中，這會是從 `VNET-HUB-EUS2` 到的連接 `VNET-PROD-EUS2` 。
 
     ![顯示選取核取方塊的螢幕擷取畫面，可允許轉送的流量並允許閘道傳輸。](./media/contoso-migration-infrastructure/peering1.png)
 
@@ -645,13 +645,13 @@ Contoso 管理員認為 Azure DNS 服務在混合式環境中並非理想的選�
 
 5. 新增磁片之後，它們會透過遠端桌面服務連接到 VM，並開啟伺服器管理員。
 
-6. 在 [檔案 **和存放服務**] 中，他們會執行新的磁片區 Wizard。 它們可確保在本機 VM 上將磁碟機號指派為 F 或以上。
+6. 在 [檔案 **和存放服務** ] 中，他們會執行新的磁片區 Wizard。 它們可確保在本機 VM 上將磁碟機號指派為 F 或以上。
 
     ![顯示新的磁片區嚮導的螢幕擷取畫面。](./media/contoso-migration-infrastructure/volume-wizard.png)
 
     _圖31：新的磁片區 Wizard。_
 
-7. 在伺服器管理員中，他們新增 [Active Directory Domain Services]**** 角色。 接著，他們將 VM 設定為網域控制站。
+7. 在伺服器管理員中，他們新增 [Active Directory Domain Services]  角色。 接著，他們將 VM 設定為網域控制站。
 
     ![顯示選取伺服器角色的螢幕擷取畫面。](./media/contoso-migration-infrastructure/server-role.png)
 
@@ -714,18 +714,18 @@ Contoso 想要開始兩個原則。 它想要有一個原則，以確保資源�
 
 #### <a name="limit-resources-to-regions"></a>將資源限定於區域
 
-Contoso 使用內建的原則定義 [允許的位置]**** 來限制資源區域。
+Contoso 使用內建的原則定義 [允許的位置]  來限制資源區域。
 
-1. 在 Azure 入口網站中，選取 [所有服務]****，然後搜尋 [原則]****。
-2. 選取**Assignments**  >  **指派指派原則**。
-3. 在原則清單中，選取 [允許的位置]****。
+1. 在 Azure 入口網站中，選取 [所有服務]  ，然後搜尋 [原則]  。
+2. 選取 **Assignments**  >  **指派指派原則** 。
+3. 在原則清單中，選取 [允許的位置]  。
 4. 將 [ **範圍** ] 設定為 Azure 訂用帳戶的名稱，並選取允許清單中的兩個區域。
 
     ![顯示透過原則定義之允許位置的螢幕擷取畫面。](./media/contoso-migration-infrastructure/policy-region.png)
 
     _圖38：允許透過原則定義的位置。_
 
-5. 根據預設，原則會設定為 [ **拒絕**]。 這項設定表示，如果有人在不屬於或區域的訂用帳戶中啟動部署 `East US 2` `Central US` ，部署將會失敗。 如果 Contoso 訂用帳戶中有人嘗試在中設定部署，就會發生這種情況 `West US` 。
+5. 根據預設，原則會設定為 [ **拒絕** ]。 這項設定表示，如果有人在不屬於或區域的訂用帳戶中啟動部署 `East US 2` `Central US` ，部署將會失敗。 如果 Contoso 訂用帳戶中有人嘗試在中設定部署，就會發生這種情況 `West US` 。
 
     ![顯示失敗原則錯誤的螢幕擷取畫面。](./media/contoso-migration-infrastructure/policy-failed.png)
 
@@ -741,7 +741,7 @@ _圖40：原則 SKU。_
 
 #### <a name="check-policy-compliance"></a>檢查原則合規性
 
-原則會立即生效，而 Contoso 可以檢查資源的合規性。 在 Azure 入口網站中，選取 [合規性]**** 連結。 合規性儀表板隨即出現。 您可以向下切入以取得詳細資料。
+原則會立即生效，而 Contoso 可以檢查資源的合規性。 在 Azure 入口網站中，選取 [合規性]  連結。 合規性儀表板隨即出現。 您可以向下切入以取得詳細資料。
 
 ![顯示合規性儀表板的螢幕擷取畫面。](./media/contoso-migration-infrastructure/policy-compliance.png)
 
@@ -859,6 +859,6 @@ Contoso 確定特定 VM 需要加密。 Contoso 會將加密套用至具有客�
 
 雲端遷移並不需要在此處採取的每個步驟。 在此案例中，Contoso 規劃了可處理所有類型的遷移，同時又安全、具彈性且可擴充的網路基礎結構。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 設定好其 Azure 基礎結構之後，Contoso 就可以開始將工作負載遷移至雲端。 如需使用此範例基礎結構作為遷移目標的案例，請參閱 [移轉模式和範例總覽](./contoso-migration-overview.md#windows-server-workloads) 。
