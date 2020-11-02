@@ -131,6 +131,8 @@ items:
             href: digital-estate/rationalize.md
           - name: 將成本模型對應至預測成本
             href: digital-estate/calculate.md
+          - name: 使用 AppDynamics 測量商務結果
+            href: digital-estate/app-dynamics.md
       - name: 初始組織對齊
         href: plan/initial-org-alignment.md
       - name: 技能整備程度方案
@@ -143,7 +145,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: 必要條件
+          - name: Prerequisites
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -467,7 +469,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: 必要條件
+                  - name: Prerequisites
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -707,7 +709,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: 必要條件
+              - name: Prerequisites
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
