@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4809b00f7cd195646619d5ace8d7924a78e0b625
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: fb16286bdab9bedc4d9f14670060ebbe5c19ac0f
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91107852"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282922"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
@@ -125,7 +125,7 @@ IT 和業務領導力很滿意 IT、應用程式開發和 BI 團隊的早期實�
     - 稽核 Linux 及 Windows 電腦內密碼安全性設定皆設定正確。
   - 審核並強制執行訂用帳戶中的 Azure 復原服務保存庫。
 - 防火牆組態：
-  - 識別符合所需安全性需求的 Azure 防火牆設定。 或者，識別與 Azure 相容的相容協力廠商應用裝置。
+  - 識別符合所需安全性需求的 Azure 防火牆設定。 或者，識別與 Azure 相容的相容協力廠商應用裝置。 Azure 安全性基準測試提供 [網路安全性策略](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-5-define-network-security-strategy) 和防火牆設定的其他資訊， [以支援您的安全性策略](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-network-security#ns-4-protect-applications-and-services-from-external-network-attacks)。
   - 建立 Resource Manager 範本來部署具有必要設定的防火牆。
 - Azure 藍圖：
   - 建立名為 `protected-data` 的新藍圖。

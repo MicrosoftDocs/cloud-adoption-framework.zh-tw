@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c6c6f2ebfca8337ba4f6aaa0218b763bf8b11398
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 48dd54d684a9c2e7af5781a98aabcef53ae8ed0b
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604646"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283140"
 ---
 # <a name="ai-applications-and-agents"></a>AI 應用程式和代理程式
 
@@ -85,16 +85,16 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 - Bot Framework 是開放原始碼供應專案，提供 c #、JavaScript、Python 和 JAVA) 提供的 SDK (，可協助您設計、建立及測試您的 bot。 它也提供 Bot Framework 編輯器中的免費視覺化撰寫畫布，以及 Bot Framework Emulator 中的測試控管。
 - Azure Bot Service 是 Azure 中的專用服務，可讓您在 Azure 中裝載或發佈您的 Bot，並聯機到熱門通道。
 
-- [瞭解 Azure Bot Service 和 Bot Framework 總覽](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Bot 設計準則](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- [尋找 Bot Framework SDK 和工具的最新版本](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
+- 閱讀 [Azure Bot Service 並 Bot Framework 總覽](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- 瞭解 [bot 設計的原則](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
+- 取得 [BOT FRAMEWORK SDK 和工具的最新版本](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
 
 開始使用的其中一個最簡單方式是使用 QnA Maker，這是 Azure 認知服務的一部分，可讓您以智慧方式將常見問題檔或網站轉換成 Q&體驗（以分鐘為單位）。
 
-- [瞭解如何使用 QnA Maker 快速建立具有 Q&功能的 bot](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
-- [直接測試 QnA Maker 服務](https://www.qnamaker.ai/)
+- [使用 QnA Maker 快速建立具有 Q&功能的 bot](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
+- 測試 [QnA Maker 服務](https://www.qnamaker.ai/)
 
-下載並使用 Bot Framework SDK 和工具來開發 Bot
+下載並使用 Bot Framework SDK 和工具來開發 Bot。
 
 - [使用 Bot Framework 編輯器的5分鐘快速入門](/composer/)
 - [使用 Bot Framework SDK (c #、JavaScript、Python) 建立及測試 bot ](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)

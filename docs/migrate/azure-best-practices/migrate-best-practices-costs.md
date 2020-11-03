@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 636de72aa1dc6b58f80c1804dfd20a1c4aefc78b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 2b71028c33fcab389bff9925f0ffc93f85fbff64
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108406"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283401"
 ---
 <!-- docutune:casing ARO -->
 
@@ -60,20 +60,20 @@ ms.locfileid: "91108406"
     - **儲存體成本：** Azure Migrate 藉由匯總評量中所有 Vm 的儲存成本，來計算每月總儲存體成本。 您可以透過彙總連結到特定機器之所有磁碟的每月成本，以計算該機器的每月儲存體成本。
 
     ![Azure Migrate ](./media/migrate-best-practices-costs/assess.png)
-     _圖2： Azure Migrate 評定_的螢幕擷取畫面。
+     _圖2： Azure Migrate 評定_ 的螢幕擷取畫面。
 
 **瞭解更多資訊：**
 
-- [使用](https://azure.microsoft.com/pricing/calculator) Azure 定價計算機。
+- 使用 [Azure 定價計算機](https://azure.microsoft.com/pricing/calculator)。
 - 閱讀 [Azure Migrate 總覽](/azure/migrate/migrate-services-overview)。
-- [了解](/azure/migrate/concepts-assessment-calculation) Azure Migrate 評量。
+- 閱讀 [Azure Migrate 評](/azure/migrate/concepts-assessment-calculation)量的相關資訊。
 - 深入瞭解 [Azure 資料庫移轉服務](/azure/dms/dms-overview)。
 
 ## <a name="best-practice-right-size-vms"></a>最佳做法：適當的 Vm 大小
 
 當您部署 Azure VM 以支援工作負載時，您可以選擇數個選項。 每個 VM 類型都有特定的功能與不同的 CPU、記憶體與磁碟組合。 Vm 的分組方式如下表所示：
 
-| 類型 | 詳細資料 | 使用量 |
+| 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中流量的 web 伺服器。 |
 | **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
@@ -104,7 +104,7 @@ ms.locfileid: "91108406"
 
 Azure 提供數種儲存體資料類型。
 
-| 資料類型 | 詳細資料 | 使用量 |
+| 資料類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **Blob** | 針對儲存大量非結構化物件（例如文字或二進位資料）進行優化。 <br><br> | 透過 HTTP/HTTPS 從任意位置存取資料。 <br><br> 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。 |
 | **檔案** | 透過 SMB 3.0 存取的受控檔案共用。 | 當移轉內部部署檔案共用時使用，並提供檔案資料的多個存取/連線。 |
@@ -116,17 +116,17 @@ Azure 提供數種儲存體資料類型。
 
 Azure 儲存體提供不同的選項來存取區塊 blob 資料。 選取適當的存取層可確保您以最具成本效益的方式儲存區塊 Blob 資料。
 
-| 存取層 | 詳細資料 | 使用量 |
+| 存取層 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **經常性** | 儲存體成本比非經常性存取更高。 存取費用較非經常性存取。 <br><br> 這是預設層。 | 適用于經常存取的使用中資料。 |
-| **酷** | 儲存體成本較熱。 存取費用高於經常性存取費用。 <br><br> 至少存放 30 天。 | 儲存短期。 資料可供使用，但不常存取。 |
+| **非經常性** | 儲存體成本較熱。 存取費用高於經常性存取費用。 <br><br> 至少存放 30 天。 | 儲存短期。 資料可供使用，但不常存取。 |
 | **封存** | 用於個別區塊 Blob。 <br><br> 最具成本效益的儲存體選項。 相較於經常性與非經常性存取層，資料存取成本比較高。 | 針對可容忍數小時的抓取延遲的資料使用，且至少會保留在此層中的180天。 |
 
 ### <a name="storage-account-types"></a>儲存體帳戶類型
 
 Azure 提供數種儲存體帳戶類型與效能層級。
 
-| 帳戶類型 | 詳細資料 | 使用量 |
+| 帳戶類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途 v2 標準** | 支援 blob (區塊、分頁和附加) 、檔案、磁片、佇列和資料表。 <br><br> 支援經常性存取、非經常性存取和封存存取層。 支援區域冗余儲存體 (ZRS) 。 | 用於大部分案例與大部分類型的資料。 標準儲存體帳戶可以是 HDD 或 SSD 型。 |
 | **一般用途 v2 premium** | 支援 Blob 儲存體資料 (分頁 Blob)。 支援經常性存取、非經常性存取和封存存取層。 支援 ZRS。 <br><br> 存放在 SSD 上。 | Microsoft 建議為所有 VM 使用。 |
@@ -137,7 +137,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 儲存體帳戶可以使用不同類型的備援選項來獲得備援能力與高可用性。
 
-| 類型 | 詳細資料 | 使用量 |
+| 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **本機備援儲存體 (LRS)** | 透過在單一儲存體單位中複寫到不同的容錯網域與更新網域，來在本地服務故障時維持可用性。 在一個資料中心存放您資料的多個複本。 提供至少 99.999999999% (11 個九) 特定一年的物件持久性。 | 請考慮您的應用程式是否儲存可輕鬆重建的資料。 |
 | **區域備援儲存體 (ZRS)** | 藉由在單一區域中的三個儲存體叢集間複寫，防止資料中心中斷。 每個儲存體叢集實際上都是分開的，位於自己的可用性區域中。 透過在多個資料中心或區域中保留多個資料複本，提供至少 99.9999999999% (十二個九) 物件在特定一年的持久性。 | 考慮您是否需要一致性、持久性和高可用性。 當有多個區域受到永久影響時，可能無法防止區域損毀。 |
@@ -227,7 +227,7 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
   - 您可以取得顯示當月份總成本的成本分析，以及累計每日成本。
 
   ![Azure 成本管理分析 ](./media/migrate-best-practices-costs/analysis.png)
-   _圖5： Azure 成本管理 + 帳單分析_的螢幕擷取畫面。
+   _圖5： Azure 成本管理 + 帳單分析_ 的螢幕擷取畫面。
 
 - 取得 Advisor 建議，其中顯示如何最佳化及改進效率。
 

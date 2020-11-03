@@ -7,12 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba0d19a7c6dd050e5580c1ef701cc63ed0debda4
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 68941187e45d393ac21e00027a7b54998625597a
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334760"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283362"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>將開發/測試環境遷移至 Azure DevTest Labs
 
@@ -45,7 +45,7 @@ Contoso 在將其開發/測試環境移至 Azure 時，有數個可用的選項�
 <!-- -->
 
 > [!NOTE]
-> 具有 Enterprise 合約的 azure 客戶也可受益于 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0148p/)用帳戶供應專案。 若要深入瞭解，請參閱 [這段影片](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal) ，以瞭解如何使用 Enterprise 合約入口網站建立 Azure 開發/測試訂用帳戶。
+> 具有 Enterprise 合約的 azure 客戶也可受益于 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0148p/)用帳戶供應專案。 若要深入瞭解，請參閱影片，以 [透過 ea 入口網站啟用和建立 Ea 開發/測試訂閱](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal)。
 
 ## <a name="migration-goals"></a>移轉目標
 
@@ -107,14 +107,14 @@ Contoso 會使用 DevTest Labs 將其開發應用程式和資料庫 Vm 遷移至
 
 _圖2：遷移程式。_
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 以下是 Contoso 要執行此案例所需的項目。
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶，以降低高達80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的權限，請檢閱[此文章](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
-| **Azure 基礎結構** | [了解](./contoso-migration-infrastructure.md) Contoso 如何設定 Azure 基礎結構。 |
+| **Azure 開發/測試訂用帳戶** | Contoso 會建立 [Azure 開發/測試訂](https://azure.microsoft.com/offers/ms-azr-0023p/) 用帳戶，以降低高達80% 的成本。 <br><br> 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用 Azure 角色型存取控制來管理 Site Recovery 存取權](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 基礎結構** | 瞭解 Contoso 如何 [設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 |
 
 ## <a name="scenario-steps"></a>案例步驟
 
@@ -151,13 +151,13 @@ _圖4：建立新的 DevTest Labs 實例。_
 
 1. 設定虛擬網路：
 
-   1. 在入口網站中，Contoso 會開啟 DevTest Labs 實例，並選取設定 **和原則**。
+   1. 在入口網站中，Contoso 會開啟 DevTest Labs 實例，並選取設定 **和原則** 。
 
       ![ContosoDevTestLabs 設定中的 [設定與原則] 的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/configure-lab.png)
 
       _圖5： DevTest Labs 實例：設定和原則。_
 
-   2. Contoso 會選取 [**虛擬網路**]，再選擇 [新增]，然後  >  **+ Add** `vnet-dev-eus2` 選取 [**儲存**]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
+   2. Contoso 會選取 [ **虛擬網路** ]，再選擇 [新增]，然後  >  **+ Add** `vnet-dev-eus2` 選取 [ **儲存** ]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
 
       ![新增虛擬網路之選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/vnets.png)
 
@@ -206,7 +206,7 @@ _圖4：建立新的 DevTest Labs 實例。_
 
 Contoso 必須為遠端開發人員建立 Windows 虛擬桌面。
 
-1. Contoso 會選取**所有虛擬機器**  >  ，然後**新增**並選擇 VM 的 Windows 10 企業版多會話基底。
+1. Contoso 會選取 **所有虛擬機器**  >  ，然後 **新增** 並選擇 VM 的 Windows 10 企業版多會話基底。
 
    ![顯示選取 Windows 10 基底的螢幕擷取畫面](./media/contoso-migration-devtest-to-labs/windows-10-vm-base.png)
 
@@ -236,7 +236,7 @@ Contoso 必須為遠端開發人員建立 Windows 虛擬桌面。
 
 1. Contoso 會為應用程式和資料庫 Vm (可重複使用的基底) 建立公式，並使用公式來布建應用程式和資料庫 Vm。
 
-   Contoso 會選取**公式**  >  **+ 新增**，然後選取**Windows Server 2012 R2 Datacenter**基礎。
+   Contoso 會選取 **公式**  >  **+ 新增** ，然後選取 **Windows Server 2012 R2 Datacenter** 基礎。
 
    ![顯示 Windows 2012 R2 基底選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/windows-2012-base.png)
 

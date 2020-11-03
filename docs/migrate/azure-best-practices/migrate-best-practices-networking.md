@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1771e61b884cd53480fdb2d47c2805b502735d86
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ceb8fcff6417754f27d9d1c9f32469f58f88f4aa
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776069"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283356"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -101,7 +101,7 @@ Azure 為虛擬網路提供下列功能：
 **瞭解更多資訊：**
 
 - 瞭解如何 [設計子網](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)。
-- [了解](/azure/migrate/contoso-migration-infrastructure)虛構公司 (Contoso) 如何讓其網路基礎結構做好移轉準備。
+- 瞭解 Contoso （虛構公司）如何 [準備其網路基礎結構來進行遷移](/azure/migrate/contoso-migration-infrastructure)。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>最佳做法：設定 DNS 伺服器
 
@@ -143,7 +143,7 @@ Azure 為虛擬網路提供下列功能：
   - **區域冗余服務：** 資源會自動跨區域複寫，例如區域冗余儲存體或 Azure SQL Database。
 - 若要提供區域性容錯功能，您可以使用網際網路對應的工作負載或應用層來部署標準的 Azure 負載平衡器。
 
-    ![標準 Azure 負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) _圖4：負載平衡器_的圖表。
+    ![標準 Azure 負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) _圖4：負載平衡器_ 的圖表。
 
 **瞭解更多資訊：**
 
@@ -347,9 +347,9 @@ _圖8：周邊網路部署。_
 
 - 此 **Sql** 標籤代表 Azure SQL Database 和 Azure SQL 資料倉儲服務的位址前置詞。
 - 如果您將 **sql** 指定為值，就會允許或拒絕 sql 的流量。
-- 如果您只需要允許存取特定**區域**中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部地區的 Azure SQL Database，您可以指定服務標記的 **EastUS** 。
+- 如果您只需要允許存取特定 **區域** 中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部地區的 Azure SQL Database，您可以指定服務標記的 **EastUS** 。
 - 標籤代表服務，但不代表服務的特定執行個體。 例如，標記代表 Azure SQL Database 服務，但不代表特定的 SQL Database 或伺服器。
-- 此標記所表示的所有位址前置詞，也都可用**網際網路**標記表示。
+- 此標記所表示的所有位址前置詞，也都可用 **網際網路** 標記表示。
 
 **瞭解更多資訊：**
 
@@ -473,7 +473,7 @@ Web 應用程式防火牆 (WAF) 是 Azure 應用程式閘道的一項功能，�
 Azure 網路監看員提供的工具可監視 Azure 虛擬網路中的資源和通訊。 例如，您可以監視 VM 與端點之間的通訊，例如另一個 VM 或 FQDN。 您也可以在虛擬網路中查看資源與資源的關聯性，或診斷網路流量問題。
 
 ![網路監看員的螢幕擷取畫面。 ](./media/migrate-best-practices-networking/network-watcher.png)
-_圖12：網路_監看員。
+_圖12：網路_ 監看員。
 
 以下是更多詳細資料：
 

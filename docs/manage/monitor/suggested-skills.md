@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2dda4bc3feaf207e2aca63b008f40beabc223bec
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 9575e666e8aafa2ab20de87a5086249d39ac9299
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898109"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283322"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "91898109"
 
 - [Azure 原則](/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit guest configuration 設定等。
 
-- [Azure 命令列介面 (CLI) ](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)的簡介，這是我們用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱 [Azure PowerShell](/powershell/azure/?view=azps-3.6.1)的簡介。 LinkedIn 供應專案是其初學者層級課程 [學習 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)的一部分，其中涵蓋 Azure CLI 和 PowerShell 程式設計語言的會話：
+- [Azure 命令列介面 (CLI) ](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)的簡介，這是我們用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱 [Azure PowerShell](/powershell/azure/?view=azps-3.6.1)的簡介。 在其初學者層級的課程中， [瞭解 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)（LinkedIn）提供涵蓋 Azure CLI 和 PowerShell 程式設計語言的會話：
 
   - [使用 Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)

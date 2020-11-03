@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 91892078c457bc701f35f050b458b94fb6498be8
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 42bb7e66f9b9c997babf3f0e40fcf8145cd849f7
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024635"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283436"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -164,8 +164,8 @@ Azure 提供下列解決方案：
 
 **瞭解更多資訊：**
 
-- [關於](/azure/role-based-access-control/overview) RBAC。
-- [瞭解](/azure/role-based-access-control/role-assignments-portal) 如何使用 RBAC 和 Azure 入口網站來管理存取權。
+- 瞭解 [Azure 角色型存取控制 (RBAC) ](/azure/role-based-access-control/overview)。
+- 瞭解如何透過 [RBAC 和 Azure 入口網站](/azure/role-based-access-control/role-assignments-portal)來管理存取權。
 - 瞭解 [自訂角色](/azure/role-based-access-control/custom-roles)。
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>最佳做法：審核審核和安全性記錄
@@ -378,7 +378,7 @@ Azure VM 會以分頁 Blob 的形式儲存在 Azure 儲存體中。 快照集會
 - 深入瞭解 [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction)。
 - 瞭解如何 [建立 blob 快照](/azure/storage/blobs/storage-blob-snapshots)集。
 - 檢查 Blob 儲存體備份的[範例案例](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup)。
-- [閱讀](/azure/storage/blobs/storage-blob-soft-delete)虛刪除的相關資訊。
+- 深入瞭解 [blob 的虛刪除](/azure/storage/blobs/storage-blob-soft-delete)。
 - [Azure 儲存體中的災害復原和強制容錯移轉 (預覽)](/azure/storage/common/storage-disaster-recovery-guidance)
 
 #### <a name="third-party-backup"></a>協力廠商備份
@@ -456,7 +456,7 @@ _圖14：診斷記錄。_
 **瞭解更多資訊：**
 
 - 瞭解如何 [收集和使用記錄資料](/azure/azure-monitor/platform/platform-logs-overview)。
-- [了解](/azure/azure-monitor/platform/diagnostic-logs-schema)診斷記錄的支援項目。
+- 瞭解支援 [診斷記錄](/azure/azure-monitor/platform/diagnostic-logs-schema)的功能。
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>最佳做法：設定警示和操作手冊
 

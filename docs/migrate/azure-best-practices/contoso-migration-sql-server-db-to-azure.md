@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 071e6d8f33ea299dac78136f71f5bbce7badb95d
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: fc9be8cfc1f51e35e0eb2dbb7270c818276c7767
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775219"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283242"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -141,7 +141,7 @@ Contoso 使用 DMA 來執行評量，然後將資料直接上傳至 Azure Migrat
 當 DMA 無法在資料來源上執行時，會遵循下列指導方針來進行資料庫移轉。
 
 > [!NOTE]
-> 在評估階段，Contoso 探索了各種開放原始碼資料庫。 它們分別遵循 [本指南](./contoso-migration-oss-db-to-azure.md) 來瞭解其遷移計畫。
+> 在評估階段，Contoso 探索了各種開放原始碼資料庫。 它們分別是 [將開放原始碼資料庫移轉至 Azure](./contoso-migration-oss-db-to-azure.md) ，以進行遷移規劃。
 
 <!-- docutune:casing "custom .NET" -->
 

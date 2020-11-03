@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 31371f8b2902295eeabf3ffb19af4e0a13c82fde
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7a9d71dcbb294d9ef4dcca4fa036b6a003332f9d
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883275"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283157"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 
@@ -20,16 +20,17 @@ ms.locfileid: "88883275"
 
 ## <a name="strategic-metrics"></a>策略性計量
 
-在雲端採用生命週期的 [策略階段](../../strategy/index.md) 中，我們會探討 [動機](../../strategy/motivations.md) 和 [業務成果](../../strategy/business-outcomes/index.md)。 這些做法會提供一組用來測試客戶影響的度量。 當創新成功時，您通常會看到與您的策略性目標一致的結果。
+[策略方法](../../strategy/index.md)會檢查[動機](../../strategy/motivations.md)和[業務成果](../../strategy/business-outcomes/index.md)。 這些做法提供一組計量來測試客戶的影響。 當創新成功時，您通常會看到與策略性目標一致的結果。
 
 在建立學習計量之前，請定義您想要這項創新影響的少數策略性計量。 這些策略性計量通常會與下列一或多個結果區域一致：
-    - [企業靈活性](../../strategy/business-outcomes/agility-outcomes.md)
-    - [客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)
-    - [客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)
-    - [財務衝擊](../../strategy/business-outcomes/fiscal-outcomes.md)
-    - [解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)，以營運創新的情況為例。
 
-記錄已同意的計量，並定期追蹤其影響。 但不會預期這些計量中的任何一項都會出現幾次反復專案。 如需有關設定相關各方期望的詳細資訊，請參閱 [反覆運算的承諾](./index.md#commitment-to-iteration)。
+- [企業靈活性](../../strategy/business-outcomes/agility-outcomes.md)
+- [客戶參與](../../strategy/business-outcomes/engagement-outcomes.md)
+- [客戶觸及](../../strategy/business-outcomes/reach-outcomes.md)
+- [財務衝擊](../../strategy/business-outcomes/fiscal-outcomes.md)
+- [解決方案效能](../../strategy/business-outcomes/fiscal-outcomes.md)，以營運創新的情況為例。
+
+記錄已同意的計量，並經常追蹤其影響，但不預期會導致這些計量中的任何一種反復發生。 如需有關設定相關各方期望的詳細資訊，請參閱 [反覆運算的承諾](./index.md#commitment-to-iteration)。
 
 除了動機和業務成果的度量之外，本文的其餘部分將著重于學習計量，其設計目的是要引導透明探索和客戶導向的反覆運算。 如需有關這些層面的詳細資訊，請參閱 [透明度承諾](./index.md#commitment-to-transparency)。
 
@@ -50,9 +51,9 @@ ms.locfileid: "88883275"
 1. **起始點-初始觸發程式：** 起始點是觸發此解決方案需求的案例。 當您以客戶理解的方式建立解決方案時，該初始觸發程式應該會激發客戶嘗試 MVP 解決方案的過程。
 2. **客戶需求符合：** 使用解決方案符合客戶的需求時，就會驗證假設。
 3. **解決方案步驟：** 此詞彙是指將客戶從初始觸發程式移至成功結果所需的步驟。 每個步驟都會根據客戶決策來產生學習度量，以繼續進行下一個步驟。
-4. 達成的**個別採用：** 下一次遇到觸發程式時，如果客戶返回解決方案以達到其需求，則已達成個別採用。
+4. 達成的 **個別採用：** 下一次遇到觸發程式時，如果客戶返回解決方案以達到其需求，則已達成個別採用。
 5. **商務結果指標：** 當客戶的行為與所定義商務結果產生貢獻時，會觀察到商務結果指標。
-6. **真正的創新：** 當 *商務結果* 指標和 *個別採用* 都發生在所需的規模時，您就能實現真正的創新。
+6. **真正的創新：** 當 _商務結果_ 指標和 _個別採用_ 都發生在所需的規模時，您就能實現真正的創新。
 
 客戶流程的每個步驟都會產生學習計量。 在每次反覆運算 (或發行) 之後，會測試新的假設版本。 同時，對方案進行調整會經過測試，以反映假設中的調整。 當客戶在任何指定的步驟中遵循指定的路徑時，會記錄正面的度量。 當客戶偏離指定的路徑時，會記錄負面度量。
 
@@ -64,7 +65,7 @@ ms.locfileid: "88883275"
 
 - **實驗或焦點群組：** 根據其參與特定實驗（設計來測試一段時間的變更）來將客戶分組。
 - **區段：** 依公司規模將客戶分組。
-- **垂直：** 依產業所代表的 *產業* 來將客戶分組。
+- **垂直：** 依產業所代表的 _產業_ 來將客戶分組。
 - **個別人口統計：** 根據個人人口統計（例如年齡和實體位置）進行分組。
 
 這些類型的群組可協助您在您的創新工作期間，為這些客戶選擇與您合作的各種不同的跨區段驗證學習計量。 所有後續的計量都應衍生自可定義的客戶群組。

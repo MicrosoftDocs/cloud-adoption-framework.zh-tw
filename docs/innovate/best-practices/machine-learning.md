@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 904fd950a7d19f33d7589cc0ccff69e56026660b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 90ef5b895e8ac6f9674de3b4c15edf238d789a4b
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878515"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283004"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -62,7 +62,7 @@ Machine Learning 作業 (MLOps) 是以提高工作流程效率的 [DevOps](https
 - 更快速地將模型部署到生產環境
 - 品質保證
 
-當您有正確的模型時，您可以在 Web 服務中、在 IoT 裝置上或從 Power BI 輕鬆使用它。 如需詳細資訊，請參閱有關[如何部署和部署位置](/azure/machine-learning/how-to-deploy-and-where)的文章。
+當您有正確的模型時，您可以在 Web 服務中、在 IoT 裝置上或從 Power BI 輕鬆使用它。 如需詳細資訊，請參閱 [使用 Azure Machine Learning 部署模型](/azure/machine-learning/how-to-deploy-and-where)。
 
 然後，您可以使用 [適用于 Python](/python/api/overview/azure/ml/?view=azure-ml-py)、 [Azure Machine Learning studio](https://ml.azure.com/)或 [MACHINE Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli)的 Azure Machine Learning SDK 來管理已部署的模型。
 

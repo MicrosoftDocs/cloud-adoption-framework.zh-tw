@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e8df2f2713a07a38409b6542ddd4047df6de70a9
-ms.sourcegitcommit: b30752f6eed13c7ce337d19391f3d038f7776ffa
+ms.openlocfilehash: 49af307d23c997692def763772eb87d37f5b5c70
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92898839"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283376"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -150,7 +150,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 **設計建議：**
 
-- 針對 Azure 中的新大型或全球網路部署，我們建議虛擬 WAN，您需要跨 Azure 區域和內部部署位置的全球傳輸連線能力。 如此一來，您就不需要手動設定 Azure 網路的過渡路由。
+- 針對在 Azure 中需要跨 Azure 區域與內部部署位置進行全域傳輸連線的新大型或全域網路部署，建議使用虛擬 WAN。 如此一來，您就不需要手動設定 Azure 網路的過渡路由。
 
   下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有大量的分公司。 環境透過虛擬 WAN 和 ExpressRoute 全球接觸來全球連線。
 
@@ -176,7 +176,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 當您部署合作夥伴網路技術和 Nva 時，請遵循合作夥伴廠商的指導方針，以確保 Azure 網路功能沒有任何衝突的設定。
 
-- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足可轉移的網路拓撲需求，例如使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。 
+- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足可轉移的網路拓撲需求，例如使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。
 
 - 請勿使用現有的內部部署網路（例如多重通訊協定標籤）切換 (MPLS) 來跨 Azure 區域連接 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。 這是因為 Microsoft 骨幹的效能與執行時間特性，以及路由簡單的功能。 這項建議會解決 Microsoft 骨幹的效能與執行時間特性。 它也鼓勵路由簡化。
 
@@ -344,7 +344,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 請勿明確地從單一對等互連位置使用 ExpressRoute 線路。 這會產生單一失敗點，並讓您的組織容易發生對等互連位置中斷的影響。
 
-- 請勿使用相同的 ExpressRoute 線路來連接多個需要隔離或專用頻寬的環境，以避免雜訊的風險。
+- 請不要使用相同的 ExpressRoute 線路來連線多個需要隔離或專用頻寬的環境，以避免鄰近干擾風險。
 
 ## <a name="connectivity-to-azure-paas-services"></a>Azure PaaS 服務的連線能力
 
@@ -388,7 +388,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計考慮：**
 
-- Azure-原生網路安全性服務（例如 Azure 防火牆、Azure Web 應用程式防火牆 (WAF) Azure 應用程式閘道）和 Azure Front Door 服務都是完全受控的服務。 因此，您不會產生與基礎結構部署相關聯的營運和管理成本，而這可能會變得複雜。
+- Azure-原生網路安全性服務（例如 Azure 防火牆、Azure Web 應用程式防火牆 (WAF) Azure 應用程式閘道）和 Azure Front Door 服務都是完全受控的服務。 因此您不會產生與基礎結構部署相關聯的作業與管理成本，該成本在大規模的情況下可能會變得很複雜。
 
 - 如果您的組織偏好使用 Nva 或原生服務無法滿足您組織的特定需求，則企業規模架構與合作夥伴 Nva 完全相容。
 
@@ -423,7 +423,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 使用 [Azure DDoS 保護標準保護方案](/azure/virtual-network/ddos-protection-overview) 來協助保護虛擬網路內裝載的所有公用端點。
 
-- 請勿將內部部署周邊網路概念和架構複寫到 Azure。 Azure 中有類似的安全性功能，但實作和架構必須適應雲端。
+- 請勿將內部部署周邊網路的概念與架構直接應用到 Azure。 Azure 中有類似的安全性功能，但實作和架構必須適應雲端。
 
 ## <a name="plan-for-app-delivery"></a>規劃應用程式傳遞
 
