@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
-ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
+ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89557038"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282921"
 ---
-<!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
-
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
 在此旅程階段中，您會使用評估階段的輸出來起始環境的移轉。 本指南可協助您找出適當的工具以達到已完成狀態。 您將探索原生工具、協力廠商工具和專案管理工具。

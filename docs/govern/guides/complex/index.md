@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6bd3dc0ae4f5a2a0ef9236992cd4f5b7b186f8
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: f67a88860bb7532f37e110fdda8da9af6adbabb3
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621088"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283208"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -44,7 +44,7 @@ ms.locfileid: "91621088"
 
 1. 在此群組階層的每個層級套用[一致的命名法](../../../ready/azure-best-practices/naming-and-tagging.md)。
 
-1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需資源群組最佳用法的詳細資訊，[請參閱這裡](../../../decision-guides/resource-consistency/index.md)。
+1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需使用資源群組最佳用法的詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md)。
 
 1. [區域選取](../../../migrate/azure-best-practices/multiple-regions.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
 

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2064586262b4a0023b21fa63115245d24f346cf1
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882612"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024499"
 ---
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
-_作業合規性_是任何雲端管理基準中的第二個專業領域。
+_作業合規性_ 是任何雲端管理基準中的第二個專業領域。
 
 ![雲端管理基準](../../_images/manage/management-baseline.png)
 
@@ -53,7 +53,7 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 - Azure 自動化 Hybrid Runbook Worker。
 - 適用於 Windows 電腦的 Microsoft Update 或 Windows Server Update Services (WSUS)。
 
-如需詳細資訊，請參閱[更新管理解決方案](/azure/automation/automation-update-management)。
+如需詳細資訊，請參閱[更新管理解決方案](/azure/automation/update-management/overview)。
 
 > [!WARNING]
 > 在使用更新管理之前，您必須先將虛擬機器或整個訂用帳戶上線到 Log Analytics 和 Azure 自動化。
@@ -70,9 +70,9 @@ _作業合規性_是任何雲端管理基準中的第二個專業領域。
 若要將原則套用至資源群組：
 
 1. 移至 [Azure 自動化](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)。
-1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
+1. 選取 **自動化帳戶** ，並選擇其中一個列出的帳戶。
 1. 移至 [設定管理]。
-1. **清查**、**變更管理**和**狀態設定**都可用來控制受控 VM 的狀態和作業合規性。
+1. **清查** 、 **變更管理** 和 **狀態設定** 都可用來控制受控 VM 的狀態和作業合規性。
 
 ::: zone target="chromeless"
 
@@ -188,7 +188,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 ::: zone target="chromeless"
 
-1. 移至**藍圖 - 藍圖定義**。
+1. 移至 **藍圖 - 藍圖定義** 。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
 1. 在 [版本] 方塊中輸入版本，例如 "1.0"。

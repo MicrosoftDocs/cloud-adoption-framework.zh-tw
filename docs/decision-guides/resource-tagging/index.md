@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f9ca594839cbd1e5d5ff641c81b083d30cd4481b
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: 9c5d0b90513f5bfedef2dfdb030cf58cb166ae86
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91620833"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283123"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -32,7 +32,7 @@ ms.locfileid: "91620833"
   - [成本最佳化策略](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)
 - **作業管理：** 作業管理小組在商務承諾和 SLA 方面的可見度，是進行中作業的重要層面。 為了妥善管理，必須標記[任務重要性](../../manage/considerations/criticality.md)。
 - **安全性：** 當漏洞或其他安全性問題發生時，資料和安全性影響的分類是小組的重要資料點。 若要安全地作業，必須標記[資料分類](../../govern/policy-compliance/data-classification.md)。
-- **控管與法規合規性：** 維護資源間的一致性，有助於在已同意原則間找出歧異。 [此控管基礎文章](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)示範下列其中一種模式對於部署控管實務有何幫助。 另有類似的模式可讓您使用標籤來評估法規合規性。
+- **控管與法規合規性：** 維護資源間的一致性，有助於在已同意原則間找出歧異。 [資源標記的規範性指引](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)示範下列其中一種模式對於部署控管實務有何幫助。 另有類似的模式可讓您使用標籤來評估法規合規性。
 - **自動化：** 除了讓 IT 更容易管理資源之外，適當的組織配置也可讓您運用自動化功能自動建立資源、監視作業，以及建立 DevOps 程序。
 - **工作負載最佳化：** 標記有助於識別模式並解決多種問題。 標籤也有助於識別支援單一工作負載所需的資產。 標記所有與每個工作負載相關聯的資產，可讓您更深入分析任務關鍵性工作負載，以制定良好的架構決策。
 
