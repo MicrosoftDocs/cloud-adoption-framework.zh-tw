@@ -3,25 +3,51 @@ title: 新功能
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構的最新更新。
 author: JanetCThomas
 ms.author: janet
-ms.date: 08/25/2020
+ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a8f3afe5e08e415fc4fb08e1036dd559a66747ba
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 8303e9e10f96360f5db48d9248d518c6d397802d
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775576"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344052"
 ---
-<!-- docutune:casing "internal Microsoft teams" OneMigrate -->
-<!-- cSpell:ignore MSPs Teradata Netezza Exadata mlops -->
+<!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>適用于 Azure 的 Microsoft 雲端採用架構中的新功能
 
 以下是雲端採用架構最近所做的變更清單。
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同建立。 新的和更新的內容會在推出時發行。 這些版本可讓您與我們一起測試、驗證和精簡指導方針。 我們鼓勵您與我們合作來打造雲端採用架構。
+
+## <a name="october-2020"></a>2020 年 10 月
+
+本月的更新包括整個雲端採用架構的累加式改進，以及支援的 web 資產。
+
+我們最大的投資專注于打造 Microsoft Learn 課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，消費者入門模組提供與產業垂直相關的第一項指引，方法是向零售客戶介紹 (Tailwind 商貿) ，我們會遵循所有核心方法模組來遵循。
+
+| 模組 | Description |
+|---|---|
+| [總覽模組](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | 入門層級的架構簡介。 |
+| [消費者入門模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
+| [Azure 登陸區域](/learn/modules/cloud-adoption-framework-ready/) | 在建立您的雲端環境之前，請先瞭解您的作業需求，並選擇最適當的 Azure 登陸區域產品，以開始使用。 |
+| [建立企業規模的架構](/learn/paths/enterprise-scale-architecture/) | 遵循一組企業級的設計原則、參考架構和參考實現，大規模建立登陸區域。 四個模組，可建立成功的單一學習路徑。 |
+
+我們也擴充了商務成果，以分享一些在 COVID-19 後 marketplace 中持續出現的常見商業動機和方法。
+
+| 發行項 | 描述 |
+|---|---|
+| [持續性結果的範例](../strategy/business-outcomes/sustainability.md) | 瞭解雲端運算如何協助您減少碳排放量、更有效率地使用資源，以及縮減您的環境耗用量。 |
+| [使用目標和關鍵結果來測量商務成果 (OKRs) ](../strategy/business-outcomes/okr.md) | 瞭解如何使用 OKRs 來測量商務成果。 |
+| [使用 AppDynamics 測量商務結果](../digital-estate/app-dynamics.md) | 瞭解應用程式的效能和使用者體驗是測量業務成果的關鍵。 瞭解 AppDynamics 如何為大部分的使用案例供應商業見解。 |
+| [成本管理更新：找出 Vm](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) | 在非生產環境中使用現成的 Vm 是一種快速新興的做法，可進一步降低這些環境中的成本。現有的環境。 「我已經有一個工作環境。 如何應用企業規模的設計原則？」 轉換成企業規模的新文章可以提供協助。 |
+
+| 發行項 | 描述 |
+|---|---|
+| [將現有的 Azure 環境轉換成企業規模](../ready/enterprise-scale/transition.md) | 本文可協助組織根據現有的 Azure 環境，以轉換成企業規模的形式流覽正確的路徑。 |
+| [雲端採用架構企業規模登陸區域架構](../ready/enterprise-scale/architecture.md) | 本文已更新為根據中樞和輪輻網路拓撲，包含企業規模登陸區域架構的高階圖表，並提供更新以描述及交叉參考企業規模登陸區域架構的重要設計領域。 |
 
 ## <a name="august-25-2020"></a>2020 年 8 月 25 日
 
@@ -88,7 +114,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 ## <a name="june-15-2020"></a>2020 年 6 月 15 日
 
-雲端環境的正確設定通常是雲端採用期間的第一個和最常見的技術封鎖程式。 此版本著重于加速部署雲端環境的指引。 為了克服這種常見的封鎖程式，雲端採用架構引進了 **Azure 登陸區域**。
+雲端環境的正確設定通常是雲端採用期間的第一個和最常見的技術封鎖程式。 此版本著重于加速部署雲端環境的指引。 為了克服這種常見的封鎖程式，雲端採用架構引進了 **Azure 登陸區域** 。
 
 | 發行項 | 描述 |
 |--|--|
@@ -103,13 +129,13 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 | [企業規模總覽](../ready/enterprise-scale/index.md) | 企業規模總覽 |
 | [實行 CAF 企業規模的登陸區域](../ready/enterprise-scale/implementation.md) | 快速的執行選項和 GitHub 範例 |
 | [企業規模架構](../ready/enterprise-scale/architecture.md) | 瞭解企業規模背後的架構 |
-| [企業規模的設計原則](../ready/enterprise-scale/design-principles.md) | 瞭解在執行期間引導決策的架構設計原則，以評估此方法是否符合您的雲端作業模型 |
+| [企業級設計原則](../ready/enterprise-scale/design-principles.md) | 瞭解在執行期間引導決策的架構設計原則，以評估此方法是否符合您的雲端作業模型 |
 | [企業規模的設計指導方針](../ready/enterprise-scale/design-guidelines.md) | 評估企業規模的指導方針，以滿足 Azure 登陸區域的一般設計區域 |
 | [實作指導方針](../ready/enterprise-scale/implementation-guidelines.md) | 在部署之前，請先檢查企業規模部署所需的活動 |
 
 合作夥伴是成功採用雲端的重要層面。 在雲端採用架構指引中，我們新增了參考，以顯示夥伴扮演的重要角色，以及客戶如何更妥善地與合作夥伴互動。 如需已驗證的 CAF 夥伴清單，請參閱 [CAF 對齊的合作夥伴](https://aka.ms/adopt/partneroffers)供應專案、 [Azure 專家受控服務提供者 (msp) ](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)或 [advanced 專家合作夥伴](https://www.microsoft.com/azure/partners/advspec)。
 
-## <a name="may-15-2020"></a>2020 5 月15日
+## <a name="may-15-2020"></a>2020 年 5 月 15 日
 
 根據意見反應，我們已建立新的內容，讓您開始使用雲端採用架構。 新的「快速入門手冊」可協助您根據想要完成的工作來流覽架構。 我們也建立了新的登陸頁面，讓您更輕鬆地找到可支援雲端採用旅程的指引、工具、學習模組和程式。
 
