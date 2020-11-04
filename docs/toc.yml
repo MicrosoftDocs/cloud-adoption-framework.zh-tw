@@ -145,7 +145,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: Prerequisites
+          - name: 必要條件
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -469,7 +469,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Prerequisites
+                  - name: 必要條件
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -709,7 +709,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: Prerequisites
+              - name: 必要條件
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
@@ -1530,7 +1530,7 @@ items:
           - name: 適用於工作負載架構的 Microsoft Azure Well-Architected Framework
             href: /azure/architecture/framework
           - name: 產品實作文件
-            href: null
+            href: /
           - name: 了解如何開發技能
             href: /learn
           - name: 個人化指引的評量
