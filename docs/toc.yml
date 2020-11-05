@@ -81,10 +81,14 @@ items:
             href: strategy/business-outcomes/engagement-outcomes.md
           - name: 效能成果
             href: strategy/business-outcomes/performance-outcomes.md
+          - name: 永續性結果
+            href: strategy/business-outcomes/sustainability.md
           - name: 業務成果範本
             href: strategy/business-outcomes/business-outcome-template.md
           - name: 配合學習計量的付出
             href: strategy/learning-metrics.md
+          - name: 目標和重要結果
+            href: strategy/business-outcomes/okr.md
       - name: 商業論證
         items:
           - name: 建置業務理由
@@ -145,7 +149,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: 必要條件
+          - name: Prerequisites
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -469,7 +473,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: 必要條件
+                  - name: Prerequisites
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -709,7 +713,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: 必要條件
+              - name: Prerequisites
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md

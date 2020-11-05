@@ -3,16 +3,16 @@ title: 轉換旅程的商務結果
 description: 使用「適用於 Azure 的雲端採用架構」，了解與雲端轉換相關聯的商務結果。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/27/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d0c057d690fd5824346e5b7e0188d8d1fe83f8c3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 88cdc53fcc9fafc42c09a6cec7d509307c4fb73e
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884975"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344035"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
@@ -30,6 +30,7 @@ ms.locfileid: "88884975"
 - **行銷：** 取得並留住客戶，建立信譽。
 - **銷售：** 加速銷售，改善客戶存留期價值。
 - **人力資源：** 保留、招募，以及提升員工能力。
+- **主管領導能力：** 符合市場成長需求和環境永續性計量。
 
 ## <a name="sample-outcomes-by-category"></a>依類別的範例成果
 
@@ -68,6 +69,12 @@ ms.locfileid: "88884975"
 效能和可靠性會加以假設。 當兩者之一衰退，信譽受損可能是痛苦和持久的。
 
 深入了解[效能成果](./performance-outcomes.md)。
+
+### <a name="sustainability-goals"></a>永續性目標
+
+愈來愈多組織在討論環境目標和永續性目標。
+
+深入了解[永續性目標](./sustainability.md)。
 
 前述類別中列出的每項業務成果，都有助於促進與業務和技術小組成員的重點溝通。 不過，您不應該讓溝通受限這些一般的範例。 了解業務的獨特需求並建置相符的結果，以最大化雲端轉換的價值。
 
