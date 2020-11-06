@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e749ea3b5a1b70e0cf4cbe497ded83b857200d1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d6f5aa596b1012732669224a03472c40e07d347d
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879620"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333571"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 
-這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 如需 [Azure 合規性供應](https://aka.ms/allcompliance) 專案的詳細資訊，請參閱 [Microsoft 信任中心](https://www.microsoft.com/trust-center)。 此外，所有可下載的檔都可供 [Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的某些 Azure 客戶使用。
+這是關於法規合規性的簡介文章，因此不適用於實作合規性策略。 如需 [Azure 合規性供應](/microsoft-365/compliance/offering-home) 專案的詳細資訊，請參閱 [Microsoft 信任中心](https://www.microsoft.com/trust-center)。 此外，所有可下載的檔都可供 [Microsoft 服務信任入口網站](https://servicetrust.microsoft.com)中的某些 Azure 客戶使用。
 
 法規合規性是指確保公司遵循其地理位置中治理主體或主動採用產業標準所需規則的規範和流程。 針對 IT 法規合規性，人員和程式會監視公司系統，以偵測並防止違反這些治理法規和標準所建立的原則和程式。 這接著會套用至各式各樣的監視和強制執行程式。 根據產業和地理位置，這些程式可能會變得冗長且複雜。
 
