@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 543a119bb6f89db76bf1fb68197721a3efe5b0fc
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: ded26770595abe0d416f55923f59a70a8568bff7
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283021"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378880"
 ---
 # <a name="transition-existing-azure-environments-to-enterprise-scale"></a>將現有的 Azure 環境轉換成 Enterprise-Scale
 
@@ -25,7 +25,7 @@ ms.locfileid: "93283021"
 
 您可以在建立後移動 Azure 中的某些資源，而且有不同的方法可讓組織依使用者的 RBAC 許可權（以及跨範圍）。 下表概述哪些資源可以移動、哪些範圍，以及與每個資源相關聯的優缺點。
 
-| 影響範圍 | 目的地 | 優點 | 缺點 |
+| 影響範圍 | Destination | 優點 | 缺點 |
 |--|--|--|--|
 | 資源群組中的資源 | 可移至相同或不同訂用帳戶中的新資源群組  | 可讓您在部署之後修改資源群組中的資源組合 | -所有 resourceTypes 都不支援 <br> -某些 resourceTypes 有特定的限制或需求 <br> -Resourceid 會更新並影響現有的監視、警示和控制平面作業 <br> -在移動期間鎖定資源群組 <br> -需要評估原則和 RBAC 的前置和移動後作業 |
 | 租使用者中的訂用帳戶  | 可移至不同的管理群組和不同的租使用者 | 對訂用帳戶內的現有資源沒有任何影響，因為系統不會變更任何 resourceId | 需要評估原則和 RBAC 的前置和移動後作業 |
@@ -34,7 +34,7 @@ ms.locfileid: "93283021"
 
 ## <a name="subscription-move"></a>訂用帳戶移動
 
-移動訂用帳戶的常見使用案例主要是 1) 將訂用帳戶組織成管理群組，而 2) 將訂用帳戶轉移至新的 Azure Active Directory 租使用者。 我們將著重于將訂用帳戶移至本節中的管理群組，因為移至新的租使用者主要是為了 [轉移帳單擁有權](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer)。
+移動訂用帳戶的常見使用案例是將訂用帳戶組織成管理群組，或將訂用帳戶傳送到新的 Azure Active Directory 租使用者。 企業規模的訂用帳戶移動著重于將訂用帳戶移至管理群組。 將訂用帳戶移至新的租使用者主要是為了 [轉移帳單擁有權](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer)。 
 
 ### <a name="rbac-requirements"></a>RBAC 需求
 
