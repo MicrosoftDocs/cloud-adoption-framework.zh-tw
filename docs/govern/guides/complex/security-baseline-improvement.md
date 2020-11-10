@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2079df7b65103e59d93d71812f22e4dec969bcee
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 4384d404142ccd87587f693804e6b1ec37c734df
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91107866"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432562"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -99,11 +99,11 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 新的最佳作法分為兩類：公司 IT (中樞) 和雲端採用 (輪輻) 。
 
-**建立企業 IT 中樞和輪輻訂用帳戶來集中管理安全性基準：** 在此最佳作法中，現有的治理容量是由 [具有共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/shared-services)包裝，其中包含一些雲端治理小組的重要新增專案。
+**建立企業 IT 中樞和輪輻訂用帳戶來集中管理安全性基準：** 在此最佳作法中，現有的治理容量是由 [具有共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)包裝，其中包含一些雲端治理小組的重要新增專案。
 
 1. Azure DevOps 存放庫。 在 Azure DevOps 中建立存放庫來存放所有相關的 Azure Resource Manager 範本和指令碼式的組態，並為這些項目設定版本。
 1. 中樞和輪輻範本：
-    1. [使用共用服務參考架構的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/shared-services)中的指導方針可用來產生公司 IT 中樞所需資產的 Resource Manager 範本。
+    1. [使用共用服務參考架構的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)中的指導方針可用來產生公司 IT 中樞所需資產的 Resource Manager 範本。
     1. 使用那些範本，此結構就能重複，以作為中央治理策略的一部分。
     1. 除了目前的參考架構之外，您還必須建立網路安全性群組範本，以捕捉虛擬網路裝載防火牆的任何埠封鎖或允許清單需求。 此網路安全性群組與先前的群組不同，因為它會是允許公用流量進入虛擬網路的第一個網路安全性群組。
 1. 建立 Azure 原則。 建立名為的原則 `hub NSG enforcement` ，以強制設定指派給此訂用帳戶中所建立之任何虛擬網路的網路安全性群組。 套用適用于來賓設定的內建原則，如下所示：
@@ -123,12 +123,12 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
     1. 將 Azure 自動化 state configuration 部署至公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
     1. 目前的藍圖旨在啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
-將**其他治理套用至雲端採用訂用帳戶， (輪輻) ：** 根據，針對應用 `corporate IT subscription` 程式原型支援所專用的每個訂用帳戶所套用之治理 MVP 的微小變更，可能會產生迅速的改進。
+將 **其他治理套用至雲端採用訂用帳戶， (輪輻) ：** 根據，針對應用 `corporate IT subscription` 程式原型支援所專用的每個訂用帳戶所套用之治理 MVP 的微小變更，可能會產生迅速的改進。
 
 在先前的最佳作法反復變更中，我們定義了網路安全性群組，以封鎖公用流量並允許內部流量。 此外，Azure 藍圖已暫時建立 DMZ 和 Active Directory 功能。 在此反復專案中，我們將會建立新版本的 Azure 藍圖，以建立新版本的 Azure 藍圖。
 
 1. 網路對等互連範本。 此範本會將每個訂用帳戶中的虛擬網路與公司 IT 訂用帳戶中的中樞虛擬網路對等互連。
-    1. 上一節的參考架構、 [使用共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/shared-services)，產生了可啟用虛擬網路對等互連的 Resource Manager 範本。
+    1. 上一節的參考架構、 [使用共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)，產生了可啟用虛擬網路對等互連的 Resource Manager 範本。
     2. 該範本可作為指南，以修改先前治理反復專案的 DMZ 範本。
     3. 現在，我們會將虛擬網路對等互連新增至先前透過 VPN 連線到本機 edge 裝置的 DMZ 虛擬網路。
     4. 此外，也應該從這個範本移除 VPN，以確保不會將流量直接路由傳送至內部部署資料中心，而不會通過公司 IT 訂用帳戶和防火牆解決方案。 當 ExpressRoute 電路中斷時，您也可以將此 VPN 設定為容錯移轉電路。

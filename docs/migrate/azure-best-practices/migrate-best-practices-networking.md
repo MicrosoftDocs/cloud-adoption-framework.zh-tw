@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ceb8fcff6417754f27d9d1c9f32469f58f88f4aa
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 522c3824c52550664d1656970ca2f9881dbe86d1
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432715"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -47,8 +47,9 @@ Azure 為虛擬網路提供下列功能：
 規劃的其他秘訣如下：
 
 - 虛擬網路位址空間不應與內部部署網路範圍重迭。
-- 請勿使用 (NAT) 的網路位址轉譯。
-- 重迭的位址可能會導致無法連線的網路，以及無法正常運作的路由。 如果網路重迭，您將需要重新設計網路或使用 NAT。
+- 重迭的位址可能會導致無法連線的網路，以及無法正常運作的路由。 
+- 如果網路重迭，您將需要重新設計網路。
+- 如果您絕對無法重新設計網路， (NAT) 的網路位址轉譯可提供協助。 但應該盡可能避免或限制。
 
 **瞭解更多資訊：**
 
@@ -92,7 +93,7 @@ Azure 為虛擬網路提供下列功能：
 
 下表顯示虛擬網路的範例，其中的位址空間會 `10.245.16.0/20` 分割成子網，以進行計畫的遷移。
 
-| 子網路 | CIDR | 位址 | 使用方式 |
+| 子網路 | CIDR | 位址 | 使用量 |
 | --- | --- | --- | --- |
 | `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | 前端或 web 層 Vm |
 | `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | 應用程式層 VM |
@@ -266,7 +267,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
 ![具有路徑路徑錯誤電路的 VPN 圖表。 ](./media/migrate-best-practices-networking/bgp1.png)
 _圖6： BGP 群體未優化連接。_
 
-**解決方法：**
+**解決方案：**
 
 若要將兩個辦公室的路由優化，您需要知道哪個前置詞來自 Azure `West US` ，哪些是來自 azure `East US` 。 您可以使用 BGP 社群值來編碼這項資訊。
 
@@ -378,7 +379,7 @@ _圖8：周邊網路部署。_
 
 在本例中，每個網路介面都只屬於一個應用程式安全性群組，但事實上介面可以屬於多個群組 (取決於 Azure 限制)。 這些網路介面都沒有相關聯的 NSG。 `NSG1` 與這兩個子網相關聯，且包含下列規則：
 
-| 規則名稱 | 用途 | 詳細資料 |
+| 規則名稱 | 目的 | 詳細資料 |
 | --- | --- | --- |
 | `Allow-HTTP-Inbound-Internet` | 讓流量從網際網路流向 Web 伺服器。 預設安全性規則會拒絕來自網際網路的輸入流量 `DenyAllInbound` ，因此 `AsgLogic` 或 `AsgDb` 應用程式安全性群組不需要額外的規則。 | 優先順序：`100`<br><br> 來源：`internet` <br><br> 來源埠： `*` <br><br> 目的地： `AsgWeb` <br><br> 目的地埠： `80` <br><br> 協定： `TCP` <br><br> 訪問： `Allow` |
 | `Deny-Database-All` | `AllowVNetInBound` 預設安全性規則允許相同虛擬網路中的資源之間的所有通訊。 需要此規則才能拒絕來自所有資源的流量。 | 優先順序：`120` <br><br> 來源：`*` <br><br> 來源埠： `*` <br><br> 目的地： `AsgDb` <br><br> 目的地埠： `1433` <br><br> 協定： `All` <br><br> 訪問： `Deny` |

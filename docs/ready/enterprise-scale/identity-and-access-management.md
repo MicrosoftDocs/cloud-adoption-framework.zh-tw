@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7935b32f03f7895c5d7618f993bfb45687a58aed
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378897"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432664"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -60,13 +60,13 @@ _圖1：身分識別和存取管理。_
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
 - 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用方式 | 動作 | 沒有任何動作 |
+| 角色 | 使用量 | 動作 | 沒有任何動作 |
 |---|---|---|---|
 | Azure 平臺擁有者 (亦即內建的擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | 安全性作業 (SecOps)        | 在整個 Azure 資產和 Azure Key Vault 清除原則之間進行水準視圖安全性系統管理員角色 | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | 訂用帳戶擁有者                 | 衍生自訂用帳戶擁有者角色之訂用帳戶擁有者的委派角色                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
-| 應用程式擁有者 (DevOps/AppOps)  | 在資源群組層級授與應用程式/作業小組的參與者角色                                 |                                                                                                                                                                                                                    | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
+| 應用程式擁有者 (DevOps/AppOps)  | 在資源群組層級授與應用程式/作業小組的參與者角色                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - 在所有基礎結構即服務 (IaaS) 資源使用 Azure 資訊安全中心的 Just-In-Time 存取權，以便對 IaaS 虛擬機器的暫時性使用者存取實施網路層級保護。
 - 對 Azure 資源使用 Azure AD 管理的身分識別，來避免以使用者名稱和密碼進行驗證。 因為公用雲端資源的許多安全性缺口源自於內嵌在程式碼或其他文字來源的認證竊取，對寫在程式碼中的存取強制執行受控識別，可大幅降低認證竊取的風險。

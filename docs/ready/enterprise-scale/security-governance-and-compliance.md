@@ -1,5 +1,5 @@
 ---
-title: 企業規模的安全性治理和合規性
+title: 企業規模的安全性、治理和合規性
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構中企業規模的安全性治理和合規性。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,20 +7,20 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0bb3f450e91aa9963fc13b6e90a460321a8a55b4
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 9143a4df4de8e720529f3bf88d835f9e507e245f
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898216"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432647"
 ---
-# <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性治理和合規性
+# <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性、治理和合規性
 
 本文涵蓋定義加密與金鑰管理、規劃治理、定義安全性監視和稽核原則，以及規劃平臺安全性。 在本文結尾，您可以參考描述架構的表格，以評估 Azure 服務的企業安全性就緒程度。
 
 ## <a name="define-encryption-and-key-management"></a>定義加密與金鑰管理
 
-加密是在 Microsoft Azure 中確保資料隱私權、合規性及資料落地的重要步驟。 這也是許多企業最重要的安全性顧慮之一。 本節涵蓋與加密及金鑰管理有關的設計考慮和建議。
+加密是在 Microsoft Azure 中確保資料隱私權、合規性及資料落地的重要步驟。 其也是許多企業最重要的安全性考量之一。 本節涵蓋與加密及金鑰管理有關的設計考慮和建議。
 
 ### <a name="design-considerations"></a>設計考量
 

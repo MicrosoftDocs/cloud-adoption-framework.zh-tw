@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9638e1a16c7e2acfecf2cdeebf5671c38af3c527
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f24f29b9d910c97da2dc1109db8b186c0dfef0bd
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570533"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432630"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure 區域決策指南
 
@@ -112,7 +112,7 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 
 下列方法使用資料驅動模型來解決全域遷移的複雜度。 當遷移的範圍包含多個區域時，雲端採用小組應評估下列準備考慮：
 
-- 資料主權可能需要對某些資產進行當地語系化，但有許多資產可能不受這些合規性條件約束的規範。 記錄、報告、網路路由、身分識別和其他中央 IT 服務等專案，可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 雲端採用小組應使用這些服務的共用服務模型進行評估，如 [使用共用服務的中樞和輪輻拓撲參考架構](/azure/architecture/reference-architectures/hybrid-networking/shared-services)中所述。
+- 資料主權可能需要對某些資產進行當地語系化，但有許多資產可能不受這些合規性條件約束的規範。 記錄、報告、網路路由、身分識別和其他中央 IT 服務等專案，可能都有資格在多個訂用帳戶或甚至多個區域中裝載為共用服務。 雲端採用小組應使用這些服務的共用服務模型進行評估，如 [使用共用服務的中樞和輪輻拓撲參考架構](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)中所述。
 - 當您部署類似環境的多個實例時，環境 factory 可以建立一致性、改善治理，以及加速部署。 [複雜企業治理指南](../../govern/guides/complex/index.md)建立了一套方法，會產生規模橫跨多個區域的環境。
 
 當小組熟悉基準方法且準備就緒時，您應該考慮幾個資料驅動的必要條件：
@@ -154,7 +154,7 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 
 **Azure Site Recovery 保存庫設計：** Azure Site Recovery 是適用于雲端原生複寫和數位資產與 Azure 同步處理的建議工具。 Site Recovery 會將資產相關資料複寫到 Site Recovery 保存庫，而該保存庫繫結至特定區域和 Azure 資料中心內的特定訂用帳戶。 當您將資產複寫到第二個區域時，您可能也需要第二個 Site Recovery 保存庫。
 
-設定**和進程伺服器設計：** Site Recovery 適用于設定和進程伺服器的本機實例，此實例會系結至單一 Site Recovery 保存庫。 這表示您可能需要在源資料中心安裝這些伺服器的第二個實例，以便進行複寫。
+設定 **和進程伺服器設計：** Site Recovery 適用于設定和進程伺服器的本機實例，此實例會系結至單一 Site Recovery 保存庫。 這表示您可能需要在源資料中心安裝這些伺服器的第二個實例，以便進行複寫。
 
 **網路頻寬設計：** 在複寫和進行中的同步處理期間，您可以透過網路將二進位資料從來源資料中心移至目標 Azure 資料中心內的 Site Recovery 保存庫。 此程序會耗用頻寬。 將工作負載複製到第二個區域會使耗用的頻寬量加倍。 當頻寬有限或工作負載涉及大量設定或資料漂移時，便可能會干擾到完成移轉所需的時間。 更重要的是，它可能會影響使用者或應用程式的體驗，而這些使用者或應用程式仍相依于源資料中心的頻寬。
 

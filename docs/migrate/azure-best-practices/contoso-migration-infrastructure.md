@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3f531866d23bf684a7127df0bf8777c0d23add59
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: d239d3bab6e2c799f7b896c4a9f38584d75bb783
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283425"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432732"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "93283425"
 
 您是否需要本文所說明的所有元素，取決於您的移轉策略。 例如，如果您只在 Azure 中建立雲端原生應用程式，則可能需要較不復雜的網路結構。
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 通常，Contoso 需要考慮六個區域：
 
@@ -237,7 +237,7 @@ Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的
 
 5. 在 [準備好設定] 頁面中，他們會選取 [在設定完成時開始同步處理程序] 以立即啟動同步。 然後，他們進行安裝。
 
-    請注意：
+    注意下列事項：
 
     - Contoso 直接連線至 Azure。 如果您的內部部署 Active Directory 實例位於 proxy 後方，請參閱 [Azure AD 連線能力的疑難排解](/azure/active-directory/hybrid/tshoot-connect-connectivity)。
 
@@ -524,7 +524,7 @@ _圖21：配對區域中的中樞和輪輻模型。_
 | `IB-TrustZone` | `10.250.1.0/24` | 251 |
 | `OB-UntrustZone` | `10.250.2.0/24` | 251 |
 | `OB-TrustZone` | `10.250.3.0/24` | 251 |
-| `GatewaySubnet` | `10.250.2.0/24` | 251 |
+| `GatewaySubnet` | `10.250.10.0/24` | 251 |
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>生產網路中的子網 `Central US` (`VNET-PROD-CUS`) 
 
@@ -839,7 +839,7 @@ _圖45：安全性模型。_
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-| 動作 | 名稱 | 來源 | 目標 | 連接埠 |
+| 動作 | 名稱 | 來源 | 目標 | Port |
 | --- | --- | --- | --- | --- |
 | `Allow` | `AllowInternetToFE` | `VNET-HUB-EUS1`/`IB-TrustZone` | `APP1-FE` | 80、443 |
 | `Allow` | `AllowWebToApp` | `APP1-FE` | `APP1-APP` | 80、443 |

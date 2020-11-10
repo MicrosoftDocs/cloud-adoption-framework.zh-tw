@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: c23bfed62f42e5f6a6d811f0c962d1ace846665b
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93066473"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432698"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -41,11 +41,11 @@ Enterprise-Scale 的架構是由一組不同的設計考慮和建議，在八個
 
 [![此圖顯示以 Azure 虛擬 WAN 網路拓撲為基礎的雲端採用架構企業規模登陸區域架構。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-_圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登陸區域架構。_
+_圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登陸區域架構。請注意，連線訂用帳戶會使用 VWAN 中樞。_
 
 [![顯示雲端採用架構企業規模登陸區域架構的圖表。](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-_圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure 網路拓撲為基礎。_
+_圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure 網路拓撲為基礎。請注意，連線訂用帳戶會使用中樞 VNet。_
 
 下載 PDF 檔案，其中包含以 [虛擬 WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲為基礎的 Enterprise-Scale 架構圖表，或是以 [中樞和輪輻](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。
 
@@ -65,7 +65,7 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 ![字母 I ](./media/i.png) [平臺自動化和 DevOps](platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 使用雲端採用架構企業規模的設計指導方針，自訂此架構的執行。
 

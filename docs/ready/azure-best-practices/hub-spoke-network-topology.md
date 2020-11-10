@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 9aa123f458258a8fbb666345006661332701f12d
-ms.sourcegitcommit: 014fe718162573f02d41bdc151a7302f02ca777b
+ms.openlocfilehash: 06e01a4356fec567641829f797be01702b7d509b
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832887"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432681"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -30,7 +30,7 @@ _中樞和輪輻_ 是一種網路模型，可有效率地管理常見的通訊�
 > Azure 參考架構網站包含範例範本，您可以使用這些範本作為基礎來執行您自己的中樞和輪輻網路：
 >
 > - [在 Azure 中執行中樞和輪輻網路拓撲](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [在 Azure 中使用共用服務來實行中樞和輪輻網路拓撲](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [在 Azure 中使用共用服務來實行中樞和輪輻網路拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)
 
 ## <a name="overview"></a>概觀
 
