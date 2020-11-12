@@ -1,20 +1,20 @@
 ---
 title: Azure 創新：實現採用
 description: 協助開發人員小組有效率地進行建置、促進安全的全球共同作業，以及移除 Azure 中的創新障礙。
-author: absheik
-ms.author: absheik
+author: BrianBlanchard
+ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98d5647062e440abbc54da1fc20d99640c9e63a5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604316"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378863"
 ---
 # <a name="empower-adoption"></a>實現採用
 
@@ -95,6 +95,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 ### <a name="learn-more"></a>深入了解
 
+- [在 GitHub 中開啟開放原始碼](https://azure.microsoft.com/en-in/products/github/)
 - [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
