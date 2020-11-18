@@ -1,22 +1,22 @@
 ---
 title: 使用 Azure Machine Learning 的 MLOps
-description: 瞭解 Machine Learning 作業 (MLOps 可提高工作流程效率的) 準則和做法，例如持續整合、傳遞和部署。
+description: 深入瞭解機器學習作業 (MLOps) 原則和做法，以提高工作流程的效率，例如持續整合、傳遞和部署。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ab0841311b1f532b9a79269f1fd91650de5c6378
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: aa4a7983868af3250ac85cb700ce828cec3fe008
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711723"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879475"
 ---
-# <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning Machine Learning 作業
+# <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning 的機器學習作業
 
-Machine Learning 作業 (MLOps) 是以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，以便：
+機器學習作業 (MLOps) 以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，以便：
 
 - 更快速地實驗和開發模型。
 - 更快速地將模型部署到生產環境。
@@ -39,7 +39,7 @@ Azure Machine Learning 提供下列 MLOps 功能：
 使用 Azure MLOps 可協助您：
 
 - 建立可重現的模型和可重複使用的訓練管線。
-- 簡化品質控制和 A/B 測試的模型封裝、驗證和部署。
+- 簡化品質控制和 a/B 測試的模型封裝、驗證和部署。
 - 說明並觀察模型行為，並將重新定型程式自動化。
 
 MLOps 改進了機器學習解決方案的品質與一致性。 若要深入瞭解如何使用 Azure Machine Learning 來管理模型的生命週期，請參閱 [MLOps：使用 Azure Machine Learning 的模型管理、部署和監視](/azure/machine-learning/concept-model-management-and-deployment)。
@@ -50,7 +50,7 @@ MLOps 改進了機器學習解決方案的品質與一致性。 若要深入瞭�
 
 - [MLOps：使用 Azure Machine Learning 的模型管理、部署及監視](/azure/machine-learning/concept-model-management-and-deployment)
 - [使用 Azure Machine Learning 部署模型的](/azure/machine-learning/how-to-deploy-and-where)方式和位置
-- 教學課程： [在 ACI 中部署影像分類模型](/azure/machine-learning/tutorial-deploy-models-with-aml)
+- 教學課程： [在 Azure 容器實例中部署影像分類模型](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [端對端 MLOps 範例存放庫](https://github.com/microsoft/MLOps)
 - [使用 Azure Pipelines 的機器學習模型 CI/CD](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)
 - 建立使用已[部署模型](/azure/machine-learning/how-to-consume-web-service)的用戶端

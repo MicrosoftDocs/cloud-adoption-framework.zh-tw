@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0a5face64211b93761e567f2149ec44fd624a472
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0f1ea685d03bad74ef59c4baad5dc983e1ef9f73
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877988"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880172"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 
@@ -41,6 +41,6 @@ ms.locfileid: "88877988"
 - **平臺作業：** 所有的 IT 環境都包含一組常用的平臺。 這些平臺可能包含資料存放區，例如 SQL Server 或 Azure HDInsight。 其他常見的平臺可能包含容器解決方案，例如 Azure Kubernetes Service (AKS) 。 無論平臺為何，平臺作業成熟度都著重于根據如何部署、設定及使用工作負載的一般平臺來自訂作業。
 - **工作負載作業：** 在最高層級的作業成熟度，雲端營運團隊可以調整重要工作負載的作業。 針對這些工作負載，可用資料可以根據工作負載的使用量，協助自動化補救、調整大小或保護工作負載。
 
-其他指導方針，例如 [設計審核架構 (程式碼名稱：雲端設計原則) ](/azure/architecture/framework/resiliency/overview)，可協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
+其他指引（例如 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework/)）可協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
 
 雲端採用架構的這一節將會以上述每個主題為依據，以協助提升組織內成熟的雲端作業。

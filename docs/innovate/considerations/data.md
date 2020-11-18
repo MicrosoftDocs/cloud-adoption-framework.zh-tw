@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f94aed91d62007ce5b9a9555902c8e2d3c8c481
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3139662b0ef42661dc85d64a44294c3ac1bce09e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878277"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880920"
 ---
 # <a name="democratize-data-with-digital-invention"></a>使用數位發明將大眾化資料
 
@@ -28,7 +28,7 @@ ms.locfileid: "88878277"
 
 ![將大眾化資料的處理常式](../../_images/innovate/democratize-data.png)
 
-### <a name="share-data"></a>分享資料
+### <a name="share-data"></a>共用資料
 
 當您 [以客戶理解的方式建立](./build.md)時，所有程式都會透過技術解決方案提升客戶的需求。 由於將大眾化資料不例外，我們會從共用資料開始。 若要將大眾化資料，它必須包含與資料取用者共用資料的解決方案。 資料取用者可以是直接客戶或為客戶做出決策的 proxy。 核准的資料取用者可以分析、查閱和報告集中式資料，而不受 IT 人員的支援。
 
@@ -71,7 +71,7 @@ ms.locfileid: "88878277"
 
 **整合：** 您可以使用傳統的資料移動技術，將位於現有資料存放區中的資料整合到集中式資料存放區。 這在牽涉到多重雲端資料儲存體的案例中特別常見。 這些技術包括從現有的資料存放區解壓縮資料，然後將資料載入中央資料存放區。 在此程式中的某個時間點，資料通常會轉換成更有用且與中央存放區相關。
 
-以雲端為基礎的工具已將這些技巧轉換成依使用量付費的工具，減少進入資料收集和集中的障礙。 Azure 資料庫移轉服務和 Azure Data Factory 等工具都是兩個範例。 [具有 OLAP 資料存放區之 data factory](/azure/architecture/data-guide/relational-data/etl)的參考架構，就是其中一個這類解決方案的範例。
+以雲端為基礎的工具已將這些技巧轉換成依使用量付費的工具，減少進入資料收集和集中的障礙。 Azure 資料庫移轉服務和 Azure Data Factory 等工具都是兩個範例。 [使用 OLAP 資料存放區 Data Factory](/azure/architecture/data-guide/relational-data/etl)的參考架構，就是其中一個這類解決方案的範例。
 
 內嵌 **：** 某些資料不在現有的資料存放區中。 當此暫時性資料是創新的主要來源時，您會想要考慮替代方法。 您可以在各種不同的現有來源中找到暫時性資料，例如應用程式、Api、資料流程、IoT 裝置、區塊鏈、應用程式快取、媒體內容，甚至一般檔案。
 

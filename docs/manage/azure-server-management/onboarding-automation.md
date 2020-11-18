@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d5503daac7c64613a427c8ae16610ec3c6cf54ba
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 8baa837b01fb2093628afdbf754ea1fd902fe2f7
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711740"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880308"
 ---
 # <a name="automate-onboarding"></a>自動上線
 
 若要改善 Azure 伺服器管理服務的部署效率，請考慮依照本指南前面幾節所述，將部署自動化。 下列各節所提供的腳本和範例範本是開始開發您自己的上架程式自動化的起點。
 
-本指南包含範例程式碼（ [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples)）的支援 GitHub 存放庫。 存放庫提供範例腳本和 Azure Resource Manager 範本，可協助您自動化 Azure 伺服器管理服務的部署。
+範例程式碼的 GitHub 存放 [庫](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices)支援此指引。 存放庫提供範例腳本和 Azure Resource Manager 範本，可協助您自動化 Azure 伺服器管理服務的部署。
 
 範例檔案說明如何使用 Azure PowerShell Cmdlet 將下列工作自動化：
 
@@ -28,11 +28,11 @@ ms.locfileid: "94711740"
 
 - 連結自動化帳戶和 Log Analytics 工作區。 如果您是使用 Azure 入口網站上架，就不需要執行此步驟。
 
-- 啟用工作區的更新管理、變更追蹤和清查。
+- 啟用工作區的更新管理解決方案和變更追蹤和清查解決方案。
 
 - 使用 Azure 原則將 Azure Vm 上架。 原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Microsoft Dependency Agent。
 
-- 使用[Azure 原則](/azure/backup/backup-azure-auto-enable-backup)自動啟用適用于 Vm 的 Azure 備份
+- 使用[Azure 原則](/azure/backup/backup-azure-auto-enable-backup)自動啟用 vm 的 Azure 備份
 
 - 在內部部署伺服器上安裝 Log Analytics 代理程式，以將其上架。
 
@@ -43,9 +43,9 @@ ms.locfileid: "94711740"
 | `New-AMSDeployment.ps1` | 主要的協調腳本，它會自動上架。 它會建立資源群組、位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
 | `Workspace-AutomationAccount.json` | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
 | `WorkspaceSolutions.json` | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
-| `ScopeConfig.json` | Resource Manager 範本，其使用內部部署伺服器的加入宣告模型與變更追蹤解決方案。 使用加入宣告模型是選擇性的。 |
-| `Enable-VMInsightsPerfCounters.ps1` | PowerShell 腳本，可啟用伺服器的 VM 深入解析，並設定效能計數器。 |
-| `ChangeTracking-FileList.json` | Resource Manager 範本，定義將由變更追蹤監視的檔案清單。 |
+| `ScopeConfig.json` | Resource Manager 範本，其使用具有變更追蹤和清查解決方案的內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
+| `Enable-VMInsightsPerfCounters.ps1` | PowerShell 腳本，可適用於 VM 的 Azure 監視器並設定效能計數器。 |
+| `ChangeTracking-FileList.json` | Resource Manager 範本，可定義變更追蹤將監視的檔案清單。 |
 
 使用下列命令來執行 `New-AMSDeployment.ps1` ：
 

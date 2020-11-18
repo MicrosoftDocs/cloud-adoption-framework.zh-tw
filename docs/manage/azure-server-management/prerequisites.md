@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3a591c3f8419c11cb8077a897fb05784407a2d52
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 1fe1b40d904163992fe95635310d29ce89cb289e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024584"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880274"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的先決條件規劃
 
@@ -39,7 +39,7 @@ ms.locfileid: "93024584"
 
 下列 Azure 伺服器管理服務需要連結的 Log Analytics 工作區和自動化帳戶：
 
-- [Azure 更新管理](/azure/automation/update-management/overview)
+- [更新管理](/azure/automation/update-management/overview)
 - [變更追蹤和清查](/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](/azure/virtual-machines/extensions/dsc-overview)
@@ -60,7 +60,7 @@ ms.locfileid: "93024584"
 
 ## <a name="resource-placement-examples"></a>資源放置範例
 
-有幾個不同的模型可供選擇您放置 Log Analytics 工作區和自動化帳戶所在的訂用帳戶。 簡而言之，將工作區和自動化帳戶放在負責執行更新管理服務和變更追蹤和清查服務的小組所擁有的訂用帳戶中。
+有幾個不同的模型可供選擇您放置 Log Analytics 工作區和自動化帳戶所在的訂用帳戶。 簡單來說，將工作區和自動化帳戶放在負責執行更新管理方案和變更追蹤和清查服務的小組所擁有的訂用帳戶中。
 
 以下是一些部署工作區和自動化帳戶的方式範例。
 
@@ -95,7 +95,7 @@ ms.locfileid: "93024584"
 若要使用 Azure 入口網站建立 Log Analytics 工作區，請參閱 [建立工作區](/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace)。 接下來，請遵循 [建立 Azure 自動化帳戶](/azure/automation/automation-quickstart-create-account)中的步驟，為每個工作區建立相符的自動化帳戶。
 
 > [!NOTE]
-> 當您使用 Azure 入口網站建立自動化帳戶時，入口網站預設會嘗試建立 Azure Resource Manager 和傳統部署模型資源的執行帳戶。 如果您的環境中沒有傳統虛擬機器，而且您不是訂用帳戶的共同管理員，則入口網站會為 Resource Manager 建立執行身分帳戶，但在部署傳統執行身分帳戶時，會產生錯誤。 如果您不打算支援傳統資源，則可以忽略此錯誤。
+> 當您使用 Azure 入口網站建立自動化帳戶時，入口網站預設會嘗試建立 Azure Resource Manager 和傳統部署模型資源的執行帳戶。 如果您的環境中沒有傳統虛擬機器，而且您不是訂用帳戶上的 Co-Administrator，則入口網站會建立 Resource Manager 的執行帳戶，但在部署傳統執行身份帳戶時，會產生錯誤。 如果您不打算支援傳統資源，則可以忽略此錯誤。
 >
 > 您也可以使用 [PowerShell](/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell)來建立執行身份帳戶。
 

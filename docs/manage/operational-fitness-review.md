@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c849d4a2a798f0738844352e916fda97b35441a5
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 70bc3bfe59756d78364e7f6b24306d3969907935
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713474"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879236"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 

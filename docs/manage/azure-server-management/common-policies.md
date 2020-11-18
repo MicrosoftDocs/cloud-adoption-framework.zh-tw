@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0b82f70aa7d7e2e0e9553f586b66a6dd8673b1c5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c2abae951b90703a5b2f0da3cea0e3ed069375fe
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604072"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880512"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 

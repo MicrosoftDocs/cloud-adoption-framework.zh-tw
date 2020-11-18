@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: a94062dad8e600431319b976fef4d728be290f8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712046"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880580"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -20,17 +20,17 @@ ms.locfileid: "94712046"
 
 Azure 變更追蹤和清查提供混合式環境的設定狀態警示，以及對該環境所做的變更。 它可以報告重要的檔案、服務、軟體和登錄變更，這些變更可能會影響您部署的伺服器。
 
-Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議用來監視的登錄機碼清單。 若要查看此清單，請移至 Azure 入口網站中的自動化帳戶，然後選取 [**清查**  >  **編輯設定**]。
+Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方案會提供建議用來監視的登錄機碼清單。 若要查看此清單，請移至 Azure 入口網站中的 Azure 自動化帳戶，然後選取 [**清查**  >  **編輯設定**]。
 
 ![Azure 入口網站中 Azure 自動化清查視圖的螢幕擷取畫面](./media/change-tracking1.png)
 
 如需每個登錄機碼的詳細資訊，請參閱登錄機 [碼變更追蹤](/azure/automation/automation-change-tracking#registry-key-change-tracking)。 選取任何要評估的金鑰，然後加以啟用。 此設定會套用至目前工作區中啟用的所有 Vm。
 
-您也可以使用服務來追蹤重要的檔案變更。 例如，您可能會想要追蹤 C:\windows\system32\drivers\etc\hosts 檔案，因為 OS 會使用它來將主機名稱對應至 IP 位址。 對此檔案所做的變更可能會導致連線問題，或將流量重新導向至危險的網站。
+您也可以使用服務來追蹤重要的檔案變更。 例如，您可能想要追蹤檔案， `C:\windows\system32\drivers\etc\hosts` 因為 OS 會使用它來將主機名稱對應至 IP 位址。 對此檔案所做的變更可能會導致連線問題，或將流量重新導向至危險的網站。
 
 若要啟用主機檔案的檔案內容追蹤，請依照 [啟用檔案內容追蹤](/azure/automation/change-tracking-file-contents#enable-file-content-tracking)中的步驟執行。
 
-您也可以針對正在追蹤的檔案新增變更的警示。 例如，假設您想要設定主機檔案變更的警示。 在命令列上選取 **Log analytics** ，或針對連結的 log Analytics 工作區選取記錄搜尋。 在 Log Analytics 中，使用下列查詢來搜尋主機檔案的變更：
+您也可以針對正在追蹤的檔案新增變更的警示。 例如，您可能想要設定主機檔案變更的警示。 若要這樣做，請在命令列上選取 **Log analytics** ，或針對連結的 log Analytics 工作區選取 **記錄搜尋** 。 在 Log Analytics 中，使用下列查詢來搜尋主機檔案的變更：
 
   ```kusto
   ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"

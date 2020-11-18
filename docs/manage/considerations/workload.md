@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 683f551ca61da0acbd80dd8e670fd4bb0a620ee6
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: bc6114358b74445a74aedc21e5cceeb7d132834e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775950"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879560"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -24,7 +24,7 @@ ms.locfileid: "90775950"
 
 ## <a name="when-to-invest-in-workload-operations"></a>投入工作負載作業的時機
 
-_排列準則_ (也稱為_80/20 規則_) 指出80% 的效果來自20% 的原因。 當允許組合茁壯一段時間後，此規則通常會在 IT 組合的評論中加以說明。 根據需要投資的影響，原因可能不同，但一般準則成立：
+_排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因。 當允許組合茁壯一段時間後，此規則通常會在 IT 組合的評論中加以說明。 根據需要投資的影響，原因可能不同，但一般準則成立：
 
 - 80% 的系統失敗通常是20% 的常見錯誤或錯誤的結果。
 - 80% 的商業價值傾向于組合中的20% 工作負載。
@@ -88,13 +88,13 @@ _排列準則_ (也稱為_80/20 規則_) 指出80% 的效果來自20% 的原因�
 
 在技術債務解析和自動修復的情況下，系統缺陷是大部分系統中斷的常見原因。 您可以遵循一些設計原則，對整體工作負載作業產生最大的影響：
 
-- 擴充**性：** 系統處理負載增加的能力。
+- 擴充 **性：** 系統處理負載增加的能力。
 - **可用性：** 系統運作並正常運作的時間百分比。
 - **復原能力：** 系統從失敗中復原並繼續運作的能力。
 - **管理：** 讓系統在生產環境中執行的作業進程。
 - **安全性：** 保護應用程式和資料免于遭受威脅。
 
-為了協助改善整體作業， [Microsoft Azure 架構良好的架構](/azure/architecture/framework) 會提供一種方法來評估特定工作負載，以遵循這些要素。 將支柱套用至平臺作業和工作負載作業。
+為了協助改善整體作業， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供一種方法來評估特定工作負載，以遵守這些要素。 將支柱套用至平臺作業和工作負載作業。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -7,12 +7,12 @@ ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b49425113e135549413c86ba9f12ee380b8cef27
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 449f1fbe966059ff6647fef114637068f7e897ac
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604013"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879458"
 ---
 <!-- cSpell:ignore multisignal -->
 
@@ -79,14 +79,14 @@ Azure 監視器包含與其他監視平臺整合的支援，以及 ITSM 軟體�
 
 [管理解決方案](/azure/azure-monitor/insights/solutions-inventory) 通常會將其資料儲存 Azure 監視器記錄。 針對容器適用於 VM 的 Azure 監視器和 Azure 監視器兩個例外狀況。 下表說明以特定資料類型和儲存位置為基礎的警示體驗。
 
-| 解決方案 | 資料類型 | 警示行為 |
+| 解決方法 | 資料類型 | 警示行為 |
 |---| ---| --- |
 | 適用於容器的 Azure 監視器 | 從節點和 pod 計算的平均效能資料會寫入計量資料庫。 | 如果您想要根據測量的使用量效能變化來發出警示，請建立計量警示，並在一段時間後匯總。 |
 | | 使用從節點、控制器、容器和 pod 百分位數的計算效能資料會寫入工作區。 容器記錄和清查資訊也會寫入工作區。 | 如果您想要根據叢集和容器的測量使用率變化來收到警示，請建立記錄查詢警示。 您也可以根據 pod-階段計數和狀態節點計數來設定記錄查詢警示。 |
 | 適用於 VM 的 Azure 監視器 | 健康情況準則是儲存在計量資料庫中的計量。 | 健全狀況狀態從狀況良好變更為狀況不良時，會產生警示。 此警示僅支援設定為傳送 SMS 或電子郵件通知的動作群組。 |
 | | 系統會將對應和客體作業系統效能記錄資料寫入 Log Analytics 工作區。 | 建立記錄查詢警示。 |
 
-### <a name="fastest-speed-driven-by-cost"></a>以成本最快的速度推動
+### <a name="fastest-speed-driven-by-cost"></a>速度最快，以成本推動
 
 延遲是驅動警示的最重要決策，以及對影響服務的問題快速解決的問題之一。 如果您需要在五分鐘內進行近乎即時的警示，請先評估，如果您在遙測上有預設儲存的警示，請先進行評估。 一般而言，此策略也是最便宜的選項，因為您所使用的工具已經將其資料傳送至該位置。
 
@@ -98,7 +98,7 @@ Azure 監視器包含與其他監視平臺整合的支援，以及 ITSM 軟體�
 
 - 最便宜的，但在某些內嵌延遲的情況下，是將它傳送至 Log Analytics 工作區。 在 VM 上執行 Log Analytics 代理程式是取得所有客體作業系統計量和記錄資料到工作區的最佳方式。
 
-- 您可以在相同的 VM 上執行診斷擴充功能和 Log Analytics 代理程式，以將其作為度量傳送給儲存體，並以 Azure 監視器登入。 然後，您可以更快速地發出警示，但也可以在結合其他遙測資料時，使用客體作業系統資料作為更複雜查詢的一部分。
+- 您可以在相同的 VM 上執行 Azure 診斷擴充功能和 Log Analytics 代理程式，以將其作為度量傳送給儲存體，並以 Azure 監視器登入。 然後，您可以更快速地發出警示，但也可以在結合其他遙測資料時，使用客體作業系統資料作為更複雜查詢的一部分。
 
 **從內部部署匯入資料：** 如果您嘗試在 Azure 和內部部署中執行的機器之間進行查詢和監視，您可以使用 Log Analytics 代理程式來收集客體作業系統資料。 然後，您可以使用稱為「 [記錄](/azure/azure-monitor/platform/alerts-metric-logs) 」的功能來收集計量，並將其儲存為 Azure 監視器中的度量。 這個方法會在 Azure 監視器記錄中略過內嵌程式的一部分，而資料可供稍後使用。
 
@@ -125,4 +125,4 @@ Azure 監視器包含與其他監視平臺整合的支援，以及 ITSM 軟體�
 
 ### <a name="best-query-experience"></a>最佳查詢體驗
 
-如果您要尋找所有資料的趨勢，請將所有資料匯入到 Azure 記錄檔中，除非它已經在 Application Insights 中。 您可以跨這兩個工作區建立查詢，因此不需要在兩者之間移動資料。 您也可以將活動記錄和 Azure 服務健康狀態資料匯入 Log Analytics 工作區。 您需支付此內嵌和儲存體的費用，但您會將所有資料都放在單一位置，以供分析和查詢。 這種方法也可讓您建立複雜的查詢準則，並對其發出警示。
+如果您要尋找所有資料的趨勢，請將所有資料匯入 Azure 監視器記錄檔中，除非它已在 Application Insights 中。 您可以跨這兩個工作區建立查詢，因此不需要在兩者之間移動資料。 您也可以將活動記錄和 Azure 服務健康狀態資料匯入 Log Analytics 工作區。 您需支付此內嵌和儲存體的費用，但您會將所有資料都放在單一位置，以供分析和查詢。 這種方法也可讓您建立複雜的查詢準則，並對其發出警示。

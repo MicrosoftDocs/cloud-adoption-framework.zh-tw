@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a015370bdbc90440606b8089a4c644cad3b853c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e096fce40e00f66ce02bf2a98ff50f324f80b8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571842"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880189"
 ---
 # <a name="set-up-basic-alerts"></a>設定基本警示
 
@@ -34,7 +34,9 @@ Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) �
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>自動部署建議的警示
 
-在本指南中，我們建議您建立一組15個警示來監視基本的基礎結構。 在 [Azure 警示工具組 GitHub 存放庫](https://github.com/Microsoft/manageability-toolkits)中尋找部署腳本。
+<!-- docutune:casing "Alert Toolkit" -->
+
+在本指南中，我們建議您建立一組15個警示來監視基本的基礎結構。 在 [警示工具](https://github.com/Microsoft/manageability-toolkits) 組 GitHub 存放庫中尋找部署腳本。
 
 此封裝會建立下列警示：
 
@@ -45,7 +47,7 @@ Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) �
 - 檔案系統損毀
 - 常見的硬體故障
 
-套件會使用 HP server 硬體作為範例。 變更相關聯設定檔中的設定，以反映您的 OEM 硬體。 您也可以在設定檔中新增更多效能計數器。 若要部署封裝，請執行 New-CoreAlerts.ps1 檔。
+封裝會使用 HPE 伺服器硬體作為範例。 變更相關聯設定檔中的設定，以反映您的 OEM 硬體。 您也可以在設定檔中新增更多效能計數器。 若要部署封裝，請執行檔案 `New-CoreAlerts.ps1` 。
 
 ## <a name="next-steps"></a>後續步驟
 

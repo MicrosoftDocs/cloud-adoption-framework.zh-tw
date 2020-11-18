@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2040be11d1c64e002ee304e8638ced855d7973e5
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 7d878cfa4e8fd9234c01fb4647a5b037857bfada
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713491"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879186"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -49,9 +49,9 @@ ms.locfileid: "94713491"
 
 - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) 腳本會探索可用來取得 Azure SQL Database、Azure SQL 資料倉儲和 Azure Cosmos DB 的深入解析和可採取動作步驟的重要監視功能。
 
-- [監視 Microsoft Azure 混合式雲端網路](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring) 是一種高階課程，可協助您瞭解如何使用 azure 監視工具，為您的混合式雲端執行視覺化、維護和優化 azure 虛擬網路和虛擬私人網路連線。
+- [監視 Microsoft Azure 混合式雲端網路](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring) 是一種先進的課程，可協助您瞭解如何使用 Azure 監視工具，為您的混合式雲端執行視覺化、維護和優化虛擬網路和虛擬私人網路連線。
 
-- 透過 [適用於伺服器的 Azure Arc](/azure/azure-arc/servers/overview)，瞭解如何管理裝載于 Azure 外部的 Windows 和 Linux 機器，類似于管理原生 azure 虛擬機器的方式。
+- 透過 [適用於伺服器的 Azure Arc](/azure/azure-arc/servers/overview)，瞭解如何管理裝載于 azure 外部的 Windows 和 Linux 機器，類似于如何管理在 azure 中執行的虛擬機器。
 
 - [如何監視您的 vm](https://www.youtube.com/watch?v=O7scXPrsM_0&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6&t=0s) 提供中繼層級深入探討，以協助您瞭解如何使用適用於 VM 的 Azure 監視器來監視混合式電腦或伺服器，以及 Azure VM 或虛擬機器擴展集。
 
@@ -67,7 +67,9 @@ ms.locfileid: "94713491"
 
   - 使用[Azure 監視器 Application Insights 檢測應用程式](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)是使用 Application Insights SDK 從應用程式收集遙測和事件（具有角和 Node.js 元件）的深入教學課程。
 
-  - [應用程式的偵錯工具和分析](https://www.pluralsight.com/courses/devintersection-azureai-session-31) 是 Microsoft 會議會話中使用和解讀 Azure 監視器 Application Insights 快照偵錯工具和 Profiler 所提供資料的記錄。
+  - [應用程式的偵錯工具和分析](https://www.pluralsight.com/courses/devintersection-azureai-session-31) 是使用上的 Microsoft 會議會話記錄，以及解讀 Azure 監視器 Application Insights 快照集偵錯工具和分析工具所提供的資料。
+
+<!-- docutune:ignore "from Scratch" -->
 
 ## <a name="data-analysis"></a>資料分析
 
@@ -89,9 +91,9 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
-混合式雲端環境會將未定義的角色、責任和活動中斷。 組織必須移至現代化的服務管理實務（包括 Agile 和 DevOps 方法），以更有效率且有效率的方式滿足現今企業的轉換和優化需求。
+混合式雲端環境會將未定義的角色、責任和活動中斷。 組織必須移至現代化的服務管理實務（包括 agile 和 DevOps 方法），以更有效率且有效率的方式滿足現今企業的轉換和優化需求。
 
-在遷移至雲端監視平臺的過程中，負責管理企業中監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 _開發_ 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供 GitHub 認可和提取要求至工作專案之間的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
+在遷移至雲端監視平臺的過程中，負責管理企業監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 _開發_ 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供 GitHub 認可和提取要求至工作專案之間的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
 
 若要深入瞭解，請參閱下列各項：
 
@@ -107,8 +109,10 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 客戶通常會難以管理、維護及傳遞預期的商務 (，以及 IT 組織) 透過提供計費的服務結果。 監視會視為核心來管理基礎結構和業務，並著重于測量服務品質和客戶體驗。 為了達成這些目標，請使用 ITSM 搭配 DevOps 來奠定基礎，這可協助監視小組成熟管理、交付和支援監視服務的方式。 採用 ITSM 架構可讓監視小組以提供者的形式運作，並藉由與組織的策略性目標和需求，讓辨識成為受信任的商務啟用程式。
 
-請參閱下列各項，以瞭解對最受歡迎的 ITSM framework [ITIL v4 和雲端運算技術白皮書](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)所進行的更新，其著重于將現有的 ITIL 指引與 DevOps、Agile 和精簡的最佳作法聯結。 另外也請考慮 [IT4IT 的參考架構](https://www.opengroup.org/it4it) ，以提供如何使用程式中立的架構來轉換它的替代藍圖。
+<!-- docutune:casing "ITIL 4 and the Cloud" -->
+
+請參閱下列文章，以瞭解對最受歡迎的 ITSM framework [ITIL 4 和雲端白皮書](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)所做的更新，其著重于將現有的 ITIL 指引與 DevOps、agile 和精簡方法的最佳作法聯結。 另外也請考慮 [IT4IT 的參考架構](https://www.opengroup.org/it4it) ，以提供如何使用程式中立的架構來轉換它的替代藍圖。
 
 ## <a name="learn-more"></a>深入了解
 
-如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用角色篩選器，讓學習路徑與您的角色一致。
+如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。

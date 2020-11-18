@@ -1,18 +1,18 @@
 ---
 title: 上架 Azure 伺服器管理服務
-description: 使用 Azure 虛擬機器和內部部署伺服器的資訊，將 Azure 伺服器管理服務上架。
+description: 將 Azure 伺服器管理服務與 Azure 和內部部署伺服器中的虛擬機器相關資訊上架。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c77548023e11be6984051c1d002d5198b0649a42
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0b3fc5f2e6d1cf32155ac954ef34b411c00239a4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711791"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880325"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>第2階段：上架 Azure 伺服器管理服務
 
@@ -23,7 +23,7 @@ ms.locfileid: "94711791"
 
 ## <a name="onboarding-processes"></a>上架程式
 
-本指南的這一節涵蓋下列兩個 Azure 虛擬機器和內部部署伺服器的上架流程：
+本指南的這一節涵蓋了 Azure 和內部部署伺服器中兩部虛擬機器的下列上架程式：
 
 - **使用入口網站在單一 VM 上啟用管理服務以進行評估。** 您可以使用此程式來熟悉 Azure 伺服器管理服務。
 - **使用入口網站設定訂用帳戶的管理服務。** 此程式可協助您設定 Azure 環境，以便任何布建的新 Vm 都會自動使用管理服務。 如果您想要 Azure 入口網站的腳本和命令列體驗，請使用此方法。

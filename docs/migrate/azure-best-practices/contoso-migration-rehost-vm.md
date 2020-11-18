@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ada5194d581384ee6d1632e6d6088fb3f8f03fd4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 1275997c3ca3e2da4947dff20e063e18cd907e9f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713219"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879441"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -210,8 +210,8 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 
 7. 在 [Azure Hybrid Benefit] 中：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後，選取 [下一步]。
-    - 如果您有 active 軟體保證或 Windows Server 訂閱所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後，選取 [下一步]。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後選取 [下一步]  。
+    - 如果您有 active 軟體保證或 Windows Server 訂閱所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後選取 [下一步]  。
 
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -219,7 +219,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
     - **作業系統磁片：** 為 VM 指定作業系統 (開機) 磁片。 作業系統磁片具有作業系統開機載入器和安裝程式。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此集合必須位於您為遷移指定的目標資源群組中。
 
-9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後，選取 [下一步]。
+9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]  。
 
    您可以從複寫排除磁碟。 如果您排除磁片，則在遷移後將不會出現在 Azure VM 上。
 
@@ -308,3 +308,4 @@ Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/c
 ## <a name="conclusion"></a>結論
 
 在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。
+如需在您的環境中完成類似專案的指引，請參閱 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)的 Azure DevOps 專案範本。 

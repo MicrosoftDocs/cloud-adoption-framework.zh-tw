@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 65f84c5b5cdd512a2a3c5f639d853d7cf11b2d93
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713049"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878999"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -47,7 +47,7 @@ _圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登
 
 _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure 網路拓撲為基礎。請注意，連線訂用帳戶會使用中樞 VNet。_
 
-下載 PDF 檔案，其中包含以 [虛擬 WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲為基礎的 Enterprise-Scale 架構圖表，或是以 [中樞和輪輻](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。
+下載 PDF 或 Visio 檔案，其中包含根據 [虛擬 WAN (PDF) ](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲的 Enterprise-Scale 架構圖表，或是以 [中樞和輪輻 (pdf) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。 您可以將包含虛擬 WAN 和中樞和輪輻架構圖表的 visio 檔案下載為 [visio 圖表， (.vsdx) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx)。
 
 在 [圖 2] 和 [3] 中，有 Enterprise-Scale 重要設計區域的參考，以字母 A 表示：
 

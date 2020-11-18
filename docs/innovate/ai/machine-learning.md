@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fb28e0f68a5eddaff094a3f16640689cad48769
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7a68e6b5fef2ec189d9b0825ab7ac9608a0ea136
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568544"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880971"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
@@ -49,7 +49,7 @@ Azure 可為您提供最先進的機器學習功能。 使用 Azure Machine Lear
   - [使用 scikit-learn 分類影像-學習](/azure/machine-learning/tutorial-train-models-with-aml)
   - [建立批次評分的 Machine Learning 管線](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)
 
-- **遵循影片教學** 課程，以深入瞭解 Machine Learning 的優點，例如無程式碼模型建立、MLOPS、ONNX 執行時間、模型可解譯性和透明度等等。
+- **遵循影片教學** 課程，以深入瞭解 Machine Learning 的優點，例如無程式碼模型建立、機器學習作業 (MLOps) 、ONNX 執行時間、模型可解譯性和透明度等等。
 
   - [Machine Learning 的新功能](https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML)
   - [使用 AutoML 建立模型](https://aka.ms/automlvideo)

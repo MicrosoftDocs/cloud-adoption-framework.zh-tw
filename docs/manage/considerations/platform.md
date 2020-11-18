@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b642a66e1180e6d777b28d721c7bd18b277e9996
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 30c07aa131b31ea6e410afc6dfa6cc10adac041c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571553"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879747"
 ---
 # <a name="platform-operations-in-cloud-management"></a>雲端管理中的平臺作業
 
@@ -20,7 +20,7 @@ ms.locfileid: "88571553"
 
 快速研究 IT 組合中的資產會在支援的工作負載之間強調模式。 在這些工作負載中，將會有通用平臺。 根據公司內過去的技術決策，這些平臺可能會有很大的差異。
 
-對於某些組織而言，SQL Server、Oracle 或其他開放原始碼資料平臺會有很大的相依性。 在其他組織中，共通性可能是虛擬機器) 或容器 (Vm 的裝載平臺。 但是其他人可能會對應用程式或企業資源規劃 (ERP) 系統（例如 SAP、Oracle 或其他）有共同的相依性。
+對於某些組織而言，SQL Server、Oracle 或其他開放原始碼資料平臺會有很大的相依性。 在其他組織中，共通性可能是虛擬機器) 或容器 (Vm 的裝載平臺。 但是其他人可能會對應用程式或企業資源規劃有共同的相依性 (ERP) 系統（例如 SAP 或 Oracle）。
 
 藉由瞭解這些共通性，雲端管理小組可以針對這些優先的平臺，特殊化更高層級的支援。
 
@@ -55,7 +55,7 @@ ms.locfileid: "88571553"
 - **可靠性：** 設計系統以從失敗中復原並繼續運作的能力。
 - **安全性：** 保護應用程式和資料，使其免於威脅。
 
-[Microsoft Azure 架構良好的架構](/azure/architecture/framework)會提供一種方法來評估特定工作負載，以遵循這些要素，以改善整體作業。 這些要素可以套用至平臺作業和工作負載作業。
+[Microsoft Azure Well-Architected 架構](/azure/architecture/framework)會提供一種方法來評估特定工作負載，以遵循這些要素，以改善整體作業。 這些要素可以套用至平臺作業和工作負載作業。
 
 ## <a name="get-started-with-specific-platforms"></a>開始使用特定平臺
 
@@ -71,7 +71,7 @@ ms.locfileid: "88571553"
 
 當資料裝載于傳統基礎結構即服務 (IaaS) 解決方案時，改善 RPO 和 RTO 的工作可能會大幅增加。 但商務專案關係人想要達成更好的管理承諾，很少會受到 PaaS 和 IaaS 決策的影響。 如果有任何問題，瞭解架構中的基本差異，可能會提示企業要求 PaaS 解決方案或符合 PaaS 解決方案可用的承諾。 您應該將任何 IaaS 資料平臺的現代化視為平臺作業的第一步。
 
-當現代化無法選擇時，雲端管理小組通常會優先處理以 IaaS 為基礎的資料平臺，作為服務類別目錄中的第一個必要服務。 將獨立資料伺服器和叢集化、高可用性、資料解決方案的選擇提供給企業，讓商務承諾的對話更加容易。 對營運改良和增加成本有基本的瞭解，將使企業能夠針對商務程式和支援工作負載做出最佳決策。
+當現代化無法選擇時，雲端管理小組通常會優先處理以 IaaS 為基礎的資料平臺，作為服務類別目錄中的第一個必要服務。 將獨立資料伺服器和叢集化、高可用性、資料解決方案的選擇提供給企業，讓商務承諾的對話更加容易。 對營運改進和增加成本有基本的瞭解，可協助企業對商務程式和支援工作負載做出最佳決策。
 
 ### <a name="other-common-platform-operations"></a>其他常見的平臺作業
 

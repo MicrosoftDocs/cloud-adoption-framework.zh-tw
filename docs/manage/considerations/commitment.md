@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 54096b19fe5e72083818cb69a74c1d30694803ae
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6abda70a359a464d213888989425893d88e9b72
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571638"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879968"
 ---
 # <a name="business-commitment-in-cloud-management"></a>雲端管理的業務承諾
 
@@ -49,7 +49,7 @@ ms.locfileid: "88571638"
 <!-- -->
 
 > [!TIP]
-> 如果您使用 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) 來規劃雲端管理，則應該更新作業管理欄位以反映這些必要條件。 這些欄位包括 _承諾用量層級_、 _複合 SLA_和 _每月費用_。 每月費用應以每月為基礎來代表新增的操作管理工具的成本。
+> 如果您使用 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) 來規劃雲端管理，則應該更新作業管理欄位以反映這些必要條件。 這些欄位包括 _承諾用量層級_、 _複合 SLA_ 和 _每月費用_。 每月費用應以每月為基礎來代表新增的操作管理工具的成本。
 
 作業管理基準可作為在下列各節中要驗證的初始起點。
 
@@ -110,19 +110,19 @@ ms.locfileid: "88571638"
 下列計算將逐步解說公式，以協助您進一步瞭解遺失和增加管理投資之間的差異。 如需計算增加管理成本的指引，請參閱 [工作負載自動化](./workload.md) 和 [平臺自動化](./platform.md)。
 
 > [!TIP]
-> 如果您使用 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) 來規劃雲端管理，請更新作業管理欄位，以反映每個交談。 這些欄位包括 _承諾用量層級_、 _複合 SLA_和 _每月費用_。 每月費用應代表新增的作業管理工具的每月費用。 更新之後，欄位將會更新 ROI 公式和下列每個欄位。
+> 如果您使用 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) 來規劃雲端管理，請更新作業管理欄位，以反映每個交談。 這些欄位包括 _承諾用量層級_、 _複合 SLA_ 和 _每月費用_。 每月費用應代表新增的作業管理工具的每月費用。 更新之後，欄位將會更新 ROI 公式和下列每個欄位。
 
 ### <a name="estimate-outage-hours-per-year"></a>預估每年的中斷 (小時) 
 
-複合 SLA 是以工作負載中每個資產的部署為基礎的服務等級協定。 該欄位會驅動) 的活頁簿中標示的 _預估中斷_ (`Est. Outage` 。 若要在不使用活頁簿的情況下計算每年的預估停機時間，請套用下列公式：
+複合 SLA 是以工作負載中每個資產的部署為基礎的服務等級協定。 該欄位會驅動) 的活頁簿中標示的 _預估中斷_ (`Est.Outage` 。 若要在不使用活頁簿的情況下計算每年的預估停機時間，請套用下列公式：
 
 > _預估中斷 = (1-複合 SLA 百分比) &#215; 年中的小時數_
 
-活頁簿會使用 _每年8760小時_的預設值。
+活頁簿會使用 _每年8760小時_ 的預設值。
 
 ### <a name="standard-loss-impact"></a>標準損失影響
 
-在活頁簿中標示 (_標準損失影響_ `Standard Impact`) 預測任何中斷的財務影響，並假設_預估的中斷_預測可證明正確。 若要在不使用活頁簿的情況下計算此預測，請套用下列公式：
+在活頁簿中標示 (_標準損失影響_ `Standard Impact`) 預測任何中斷的財務影響，並假設 _預估的中斷_ 預測可證明正確。 若要在不使用活頁簿的情況下計算此預測，請套用下列公式：
 
 > _標準影響 = 預估停機時間是三個9的執行時間 &#215; 時間值影響_
 
@@ -130,7 +130,7 @@ ms.locfileid: "88571638"
 
 ### <a name="composite-sla-impact"></a>複合-SLA 影響
 
- (在活頁簿中標示的_複合 SLA 影響_ `Commitment level impact` ，) 根據執行時間 SLA 的變更，提供更新的會計影響。 這項計算可讓您比較這兩個選項的預期財務影響。 若要計算沒有試算表的預測影響，請套用下列公式：
+ (在活頁簿中標示的 _複合 SLA 影響_ `Commitment level impact` ，) 根據執行時間 SLA 的變更，提供更新的會計影響。 這項計算可讓您比較這兩個選項的預期財務影響。 若要計算沒有試算表的預測影響，請套用下列公式：
 
 > _複合-SLA 影響 = 預估中斷 &#215; 時間值影響_
 
@@ -142,9 +142,9 @@ _比較基礎_ 會評估標準影響和複合 SLA 的影響，以判斷哪一個
 
 ### <a name="return-on-loss-avoidance"></a>避免在遺失時返回
 
-如果管理工作負載的成本超過可能的損失，則可能無法豐富雲端管理的建議投資。 若要比較 _遺失規避_的結果，請參閱標示為「年度 ROI」的資料行 _* *_* *。 若要自行計算此資料行，請使用下列公式：
+如果管理工作負載的成本超過可能的損失，則可能無法豐富雲端管理的建議投資。 若要比較 _遺失規避_ 的結果，請參閱標示為「年度 ROI」的資料行 _* *_* *。 若要自行計算此資料行，請使用下列公式：
 
-> _因遺失而無法避免 = (比較- (每月成本 &#215; 12) ) &#247; (每月成本 &#215; 12) ) _
+> _因遺失而無法避免 = (比較- (每月成本 &#215; 12) ) &#247; (每月成本 &#215; 12) )_
 
 除非有其他需要考慮的軟成本因素，所以這項比較可以快速地建議雲端作業、復原能力、可靠性或其他領域是否應有更深入的投資。
 

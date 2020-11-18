@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4384d404142ccd87587f693804e6b1ec37c734df
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: cf14c3149f197878f32d1779590183b3e5baaf71
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432562"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879152"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -120,7 +120,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
     1. 這將在每個區域中，為每個營業單位建立中樞。 注意：您可以在每個區域的業務單位之間共用中樞，以進一步節省成本。
 1. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
     1. 將 GPO 轉換成 DSC。 GitHub 中的 [Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement) 可以加速這項工作。 務必將 DSC 儲存在存放庫中，並與 Resource Manager 範本平行處理。
-    1. 將 Azure 自動化 state configuration 部署至公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
+    1. 將 Azure 自動化狀態設定部署至公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
     1. 目前的藍圖旨在啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
 將 **其他治理套用至雲端採用訂用帳戶， (輪輻) ：** 根據，針對應用 `corporate IT subscription` 程式原型支援所專用的每個訂用帳戶所套用之治理 MVP 的微小變更，可能會產生迅速的改進。

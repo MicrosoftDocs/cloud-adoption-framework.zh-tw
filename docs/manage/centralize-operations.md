@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fce6da886e8b4336a1c9d61a8ed2e4455ac6200b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6814fb5ecfb91068979226ebf0163ea6d54ec3eb
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877801"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880036"
 ---
 # <a name="centralize-management-operations"></a>集中化管理作業
 
@@ -29,7 +29,7 @@ ms.locfileid: "88877801"
 
 例如，假設您的組織有單一租使用者 `Tenant A` 。 然後，組織會取得兩個額外的租使用者，而且 `Tenant B` `Tenant C` 您有商務原因需要您將其維護為個別的租使用者。
 
-貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有使用者 (包括負責在租使用者 A 中執行這些工作的使用者群組和服務主體) ，所以您可以將租使用者 B 和租使用者 C 內的所有訂用帳戶上架，讓租使用者 A 中的相同使用者可以執行這些工作。 租使用者 A 接著會成為租使用者 B 和租使用者 C 的管理租使用者。
+貴組織想要在所有租用戶中使用相同的原則定義、備份做法和安全性程序。 因為您已經有使用者 (包括負責在中執行這些工作的使用者群組和服務主體) `Tenant A` ，所以您可以將和中的所有訂用帳戶上架， `Tenant B` `Tenant C` 讓這些相同的使用者 `Tenant A` 可以執行這些工作。 `Tenant A` 然後成為和的管理租 `Tenant B` 使用者 `Tenant C` 。
 
 ![租用戶 A 中的使用者管理租用戶 B 和租用戶 C 中的資源](../_images/manage/enterprise-azure-lighthouse.jpg)
 

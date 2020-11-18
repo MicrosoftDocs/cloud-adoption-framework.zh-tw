@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: daa24a986e768187f02799d9abe6c5c7ce2e6799
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: d12f568fe12b82b7a1a89cf0663e88ba2a107bb4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711808"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880495"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -34,12 +34,12 @@ ms.locfileid: "94711808"
 
 ## <a name="use-azure-policy-to-deploy-extensions-to-azure-vms"></a>使用 Azure 原則將擴充功能部署至 Azure Vm
 
-[Azure 管理工具和服務](./tools-services.md)中討論的所有管理解決方案都需要在 azure 虛擬機器和內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則來大規模上架 Azure Vm。 指派原則，以確保代理程式已安裝在您的 Azure Vm 上，並已連線到正確的 Log Analytics 工作區。
+[Azure 管理工具和服務](./tools-services.md)中討論的所有管理解決方案都需要在 azure 中的虛擬機器以及內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則來大規模上架 Azure Vm。 指派原則，以確保代理程式已安裝在您的 Azure Vm 上，並已連線到正確的 Log Analytics 工作區。
 
 Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/definition-structure#initiatives) ，其中包含適用於 VM 的 Azure 監視器所需的 Log Analytics 代理程式和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent)。
 
 > [!NOTE]
-> 如需有關各種 Azure 監視代理程式的詳細資訊，請參閱 [azure 監視代理](/azure/azure-monitor/platform/agents-overview)程式的總覽。
+> 如需監視 Azure 的各種代理程式的詳細資訊，請參閱 [azure 監視代理](/azure/azure-monitor/platform/agents-overview)程式的總覽。
 
 ### <a name="assign-policies"></a>指派原則
 
@@ -49,7 +49,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
     ![入口網站的原則介面螢幕擷取畫面，其中包含指派選項和指派方案選項（稱為 out）。](./media/onboarding-at-scale1.png)
 
-2. 在 [ **指派原則** ] 頁面上，選取省略號 ( ... ) 然後選取管理群組或訂用帳戶，以設定 **範圍** 。 選擇性地選取資源群組。 然後選擇 [**範圍**] 頁面底部的 [**選取**]。 範圍會決定原則指派給哪些資源或資源群組。
+2. 在 [**指派原則**] 頁面上，選取省略號 (**...**) 然後選取管理群組或訂用帳戶，以設定 **範圍**。 選擇性地選取資源群組。 然後選擇 [**範圍**] 頁面底部的 [**選取**]。 範圍會決定原則指派給哪些資源或資源群組。
 
 3. 選取 [**原則定義**] 旁的省略號 (**...**) 以開啟可用定義的清單。 若要篩選計畫定義，請在 [**搜尋**] 方塊中輸入 **Azure 監視器**：
 
@@ -57,7 +57,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 4. **指派名稱** 會自動填入您選取的原則名稱，但您可以加以變更。 您也可以新增選擇性的描述，以提供有關此原則指派的詳細資訊。 [ **指派者** ] 欄位會自動填入已登入的使用者。 此為選擇性欄位，而且支援自訂值。
 
-5. 針對此原則，請選取要與 Log analytics 代理程式建立關聯的 **Log analytics 工作區** 。
+5. 針對此原則，請選取要與 Log Analytics 代理程式建立關聯的 **Log analytics 工作區** 。
 
     ![[Log Analytics 工作區] 選項的螢幕擷取畫面。](./media/onboarding-at-scale3.png)
 
@@ -82,9 +82,9 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 ### <a name="update-management"></a>更新管理
 
-更新管理、變更追蹤和清查解決方案都需要 Log Analytics 工作區和自動化帳戶。 為確保這些資源已正確設定，建議您在自動化帳戶上架。 如需詳細資訊，請參閱 [更新管理、變更追蹤和清查解決方案上架](/azure/automation/change-tracking/manage-change-tracking)。
+更新管理解決方案和變更追蹤和清查解決方案都需要 Log Analytics 工作區和 Azure 自動化帳戶。 為確保這些資源已正確設定，建議您在自動化帳戶上架。 如需詳細資訊，請參閱 [更新管理解決方案上架和變更追蹤和清查解決方案](/azure/automation/change-tracking/manage-change-tracking)。
 
-建議您為所有伺服器啟用更新管理的解決方案。 適用于 Azure Vm 和內部部署伺服器的更新管理免費。 如果您透過自動化帳戶啟用更新管理，工作區中就會建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理服務所涵蓋的電腦。
+建議您為所有伺服器啟用更新管理的解決方案。 適用于 Azure Vm 和內部部署伺服器的更新管理免費。 如果您透過自動化帳戶啟用更新管理，工作區中就會建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理解決方案所涵蓋的電腦。
 
 若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取 **Update Management**[  >  **Manage machine**  >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
 
@@ -92,9 +92,9 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 ### <a name="change-tracking-and-inventory-solutions"></a>變更追蹤和清查解決方案
 
-若要將變更追蹤和清查解決方案上架，請依照更新管理的相同步驟執行。 如需如何從自動化帳戶將這些解決方案上線的詳細資訊，請參閱 [更新管理、變更追蹤和清查解決方案上架](/azure/automation/change-tracking/manage-change-tracking)。
+若要將變更追蹤和清查解決方案上架，請依照更新管理的相同步驟執行。 如需有關如何將這些解決方案從您的自動化帳戶上架的詳細資訊，請參閱 [更新管理方案和變更追蹤和清查解決方案上架](/azure/automation/change-tracking/manage-change-tracking)。
 
-適用于 Azure Vm 的變更追蹤解決方案免費，對於內部部署伺服器，每月每個節點的成本為 $6。 此成本涵蓋變更追蹤、清查和 Desired State Configuration。 如果您只想要註冊特定的內部部署伺服器，您可以選擇這些伺服器。 建議您將所有的實際執行伺服器上架。
+適用于內部部署伺服器的變更追蹤和清查解決方案免費，適用于 Azure Vm 和每月每節點 $6 成本。 此成本涵蓋變更追蹤、清查及 Desired State Configuration。 如果您只想要註冊特定的內部部署伺服器，您可以選擇這些伺服器。 建議您將所有的實際執行伺服器上架。
 
 #### <a name="opt-in-via-the-azure-portal"></a>透過 Azure 入口網站加入宣告
 
@@ -118,7 +118,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 1. 在 [ **篩選** ] 方塊中，輸入 **變更追蹤** 以篩選已儲存的搜尋清單。 在結果中，選取 [ **>microsoftdefaultcomputergroup**]。
 
-1. 輸入電腦名稱稱或 VMUUID，以包含您想要加入變更追蹤的電腦。
+1. 輸入電腦名稱稱或 VMUUID，以包含您想要加入變更追蹤和清查的電腦。
 
   ```kusto
   Heartbeat
@@ -161,7 +161,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 
 ### <a name="antimalware-assessment"></a>反惡意程式碼評估
 
-反惡意程式碼軟體評定的解決方案可協助您找出受到惡意程式碼感染或更高風險感染的伺服器。
+反惡意程式碼軟體評估解決方案可協助您找出受到惡意程式碼感染的伺服器或惡意軟體感染的風險。
 
 若要執行此解決方案：
 

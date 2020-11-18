@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 11c95d186383db736f87010db821e3fd0e2340a7
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712607"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881022"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -35,7 +35,7 @@ ms.locfileid: "94712607"
 
 MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zRef 基準測試提供下列估計值：
 
-- 針對線上 (CICS) 作業，每個在 HP Proliant 伺服器上執行的 Intel 型核心為 288 MIPS。
+- 288在線上 (CICS) 作業的 HPE ProLiant 伺服器上，每個以 Intel 為基礎之核心的 MIPS。
 
 - 針對 COBOL 批次作業，每個 Intel 核心為 170 MIPS。
 

@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 53587e37babffe0dc7e6c722643d4bafda646ff3
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712634"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881039"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -37,7 +37,7 @@ ms.locfileid: "94712634"
 
 ## <a name="mainframe-emulation-in-azure"></a>Azure 中的大型主機模擬
 
-Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用現有的大型主機程式碼和應用程式。 可模擬的常見伺服器元件包括線上交易處理 (OLTP)、批次和資料擷取系統。
+Azure 服務可以模擬傳統的大型主機環境，讓您重複使用現有的大型主機程式碼和應用程式。 可模擬的常見伺服器元件包括線上交易處理 (OLTP)、批次和資料擷取系統。
 
 ### <a name="oltp-systems"></a>OLTP 系統
 

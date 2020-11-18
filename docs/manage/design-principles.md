@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e271f4da4b4cb5f4dc93f5e67793d0c0531957b6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571536"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879543"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和 advanced 作業
 
@@ -77,7 +77,7 @@ CCoE 中角色的自然對齊如下所示：
 
 改善系統設計最能有效改善任何常見平台的作業。 系統設計改進有助於提高穩定性並減少業務中斷。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。此架構的重點在於改善整個結構的五個要素：
+作為此架構的補充， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供指導原則，以改善平臺或特定工作負載的品質。 此架構著重于改善五個卓越的架構要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
@@ -87,9 +87,9 @@ CCoE 中角色的自然對齊如下所示：
 
 大部分的業務中斷等同於某種形式的技術債務，或架構缺失。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新部署，則可以將系統設計改善視為技術債務的迴避。 下一節「自動補救」探討瞭解決無法或不應解決的技術債務的方式。
 
-若要改善系統設計，請進一步瞭解 [Microsoft Azure 架構良好的架構](/azure/architecture/framework)。 當您的系統設計改善時，請返回本文以找出新的機會，以改善及調整整個環境的改進。
+若要改善系統設計，請進一步瞭解 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework)。 當您的系統設計改善時，請返回本文以找出新的機會，以改善及調整整個環境的改進。
 
-### <a name="automated-remediation"></a>建議的補救方式
+### <a name="automated-remediation"></a>自動補救
 
 有些技術債務無法或不應解決。 解決方案可能需要太大的成本，所以就未矯正。 它可能會進行規劃，但可能會有較長的專案持續時間。 業務中斷可能不會對業務造成重大影響，或者業務優先順序是快速復原，而不是投資復原能力。
 

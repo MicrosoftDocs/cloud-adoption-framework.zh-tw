@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fd31fa49a623f3eccec460f2d6f04dedfc86f9ac
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 3a0edf01c1474f7f3fa7d75ca2edb94ebbf401a5
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712012"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880937"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -56,7 +56,7 @@ Azure Machine Learning 為開發人員和資料科學家提供其機器學習工
 
 ## <a name="mlops-deploy-and-lifecycle-management"></a>MLOps：部署和生命週期管理
 
-Machine Learning 作業 (MLOps) 是以提高工作流程效率的 [DevOps](https://azure.microsoft.com/overview/what-is-devops/) 準則和作法為基礎。 例如，持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，其目標為：
+機器學習作業 (MLOps) 是以提高工作流程效率的 [DevOps](https://azure.microsoft.com/overview/what-is-devops/) 準則和作法為基礎。 例如，持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，其目標為：
 
 - 更快速地實驗和開發模型
 - 更快速地將模型部署到生產環境

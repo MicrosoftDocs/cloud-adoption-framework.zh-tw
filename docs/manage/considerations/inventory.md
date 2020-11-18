@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e28906443deddf21b4058a07ff4af7c66f5bed3f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571570"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879764"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -49,7 +49,7 @@ ms.locfileid: "88571570"
 - 責任和可見度
 - 清查
 - 集中式記錄
-- 變更追蹤
+- Change tracking
 - 效能遙測
 
 ### <a name="responsibility-and-visibility"></a>責任和可見度
@@ -62,11 +62,11 @@ ms.locfileid: "88571570"
 
 ### <a name="central-logging"></a>集中式記錄
 
-集中式記錄對於營運管理小組所需的日常可見度而言很重要。 部署至雲端的所有資產都應該將記錄記錄到中央位置。 在 Azure 中，該中央位置是 log analytics。 記錄的集中化會驅動有關變更管理、服務健康狀態、設定，以及 IT 營運的大部分其他層面的報告。
+集中式記錄對於營運管理小組所需的日常可見度而言很重要。 部署至雲端的所有資產都應該將記錄記錄到中央位置。 在 Azure 中，該中央位置是 Log Analytics。 記錄的集中化會產生有關變更管理、服務健康情況、設定以及 IT 作業其他大部分層面的報告。
 
 強制一致使用集中式記錄是建立可重複作業的第一步。 您可以透過公司原則來完成強制執行。 但是，如果可能的話，應該自動化強制執行，以確保一致性。
 
-### <a name="change-tracking"></a>變更追蹤
+### <a name="change-tracking"></a>Change tracking
 
 變更是技術環境中的一個常數。 對多個工作負載的變更感知和瞭解對可靠的作業而言是不可或缺的。 任何雲端管理解決方案都應該包含瞭解技術變更時間、方式和原因的方法。 如果沒有這些資料點，則會大幅妨礙運作補救工作。
 
@@ -75,6 +75,8 @@ ms.locfileid: "88571570"
 雲端管理的商務承諾是由資料所驅動。 為了妥善維護承諾，雲端營運小組必須先瞭解有關工作負載的穩定性、效能和作業的遙測，以及支援工作負載的資產。
 
 網路、DNS、作業系統和環境其他基礎層面的持續健康情況和作業，都是構成任何工作負載整體健康情況的重要資料點。
+
+<!-- docutune:ignore "cloud management methodology" "service management integration" -->
 
 ## <a name="processes"></a>處理序
 
