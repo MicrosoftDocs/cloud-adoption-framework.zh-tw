@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.openlocfilehash: c5b98dd3259ed69ead71bd1d0a49f4f4384cfdb4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275360"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713899"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "89275360"
 每個 Azure 登陸區域的執行選項都會提供部署方法和定義的設計原則。 選擇 [執行] 選項之前，請使用本文來瞭解下表所列的設計領域。
 
 > [!NOTE]
-> 這些設計區域會說明部署登陸區域之前應該考慮的事項。 請使用它作為簡單參考。 如需部署的設計原則和可採取動作的步驟，請參閱 [登陸區域的執行選項](./implementation-options.md) 。  
+> 這些設計區域會說明部署登陸區域之前應該考慮的事項。 請使用它作為簡單參考。 如需部署的設計原則和可採取動作的步驟，請參閱 [登陸區域的執行選項](./implementation-options.md) 。
 
 ## <a name="design-areas"></a>設計區域
 

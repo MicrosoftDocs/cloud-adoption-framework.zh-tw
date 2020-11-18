@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: cb053e2a62bb1451b2044291f6851fc20d4e1333
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024601"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713661"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -74,7 +74,7 @@ ms.locfileid: "93024601"
 
 如 [管理群組和訂用帳戶組織重要設計區域](./management-group-and-subscription-organization.md)中所述，位於沙箱管理群組階層內的訂用帳戶應該具有較不嚴格的原則方法。 因為企業中的使用者應該使用這些訂用帳戶來進行實驗，並使用 Azure 產品和服務來進行創新，所以您的登陸區域階層中可能尚未允許這些訂用帳戶，以驗證其想法/概念是否可運作;進入正式開發環境之前。
 
-不過，在沙箱管理群組階層中，這些訂用帳戶仍然需要套用一些護欄，以確保只以正確的方式使用這些訂用帳戶;例如，為了進行創新，請 trialling 新的 Azure 服務/產品/功能和概念發想驗證。 
+不過，在沙箱管理群組階層中，這些訂用帳戶仍然需要一些護欄，以確保正確使用這些訂用帳戶，例如進行創新、體驗新的 Azure 服務和功能，以及概念發想驗證。
 
 **因此，我們建議您：**
 
@@ -83,7 +83,7 @@ ms.locfileid: "93024601"
   | 名稱                  |     描述                                                                                     | 指派注意事項 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
   | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; *例如 VPN/ExpressRoute/VirtualWAN* | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 | 
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; *例如 VPN/ExpressRoute/VirtualWAN* | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 |
   | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 確保每個沙箱訂用帳戶的預算都有，並啟用電子郵件警示。 在每個訂用帳戶中，預算會命名為： `default-sandbox-budget` 。 | 如果在指派原則時，不會修改參數的預設值，就會 `default-sandbox-budget` 使用1000貨幣閾值限制來建立預算 () 將會根據 RBAC 角色指派，將電子郵件警示傳送給訂用帳戶的擁有者和參與者 (以) 90% 和100% 的預算閾值。 |
 
 ### <a name="global-networking-and-connectivity"></a>全球網路和連線能力

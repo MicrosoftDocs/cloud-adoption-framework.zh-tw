@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bc9ae42f65f67d1f770de2ef53607937d811e735
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ff95510b54d8c82036f7cae5ec5f70809489672d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571604"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713559"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>跨雲端管理專業領域的管理
 
@@ -34,8 +34,7 @@ ms.locfileid: "88571604"
 
 組織也可以選擇將 [與一或多個管理層級相關的功能外包給服務提供者](https://aka.ms/adopt/partneroffers)。 這些服務提供者可以使用 [Azure Lighthouse](/azure/lighthouse/overview) 來提供更高的精確度和透明度。
 
-本系列的其餘文章將概述這些專業領域中常見的流程。
-[Azure 管理指南](../azure-management-guide/index.md)會以平行方式，示範可支援每個處理常式的工具。 如需建立管理基準的協助，請從 Azure 管理指南著手。 在您建立基準之後，這篇文章系列和隨附的最佳作法可協助您擴展該基準，以定義其他層級的管理支援。
+本系列的其餘文章將概述這些專業領域中常見的流程。 [Azure 管理指南](../azure-management-guide/index.md)會以平行方式，示範可支援每個處理常式的工具。 如需建立管理基準的協助，請從 Azure 管理指南著手。 在您建立基準之後，這篇文章系列和隨附的最佳作法可協助您擴展該基準，以定義其他層級的管理支援。
 
 ## <a name="cloud-management-disciplines"></a>雲端管理專業領域
 

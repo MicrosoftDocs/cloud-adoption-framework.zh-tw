@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ba4d1affb073b987c87886a119849b9772e2f2c
-ms.sourcegitcommit: f7c7ffedcb1fcddb932d56c48e87776394dc75a8
+ms.openlocfilehash: 4c66359beb3da2c18743de13cb1d9761d12b05a8
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92437033"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713746"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -20,16 +20,16 @@ ms.locfileid: "92437033"
 
 在提供治理的專業領域時，成本管理是企業層級的週期性主題。 藉由優化和管理成本，您可以確保 Azure 環境的長期成功。 所有小組都 (（例如財務、管理和應用程式開發團隊）) 瞭解相關聯的成本，並定期進行審查。
 
-> [!IMPORTANT]
-> 本文中所述的最佳作法和意見，是根據在撰寫本文時可使用的 Azure 平臺和服務功能。 特色與功能會隨著時間改變。 並非所有的建議都適用于您的部署，因此請選擇最適合您的情況。
-
 ## <a name="best-practices-by-team-and-accountability"></a>小組和責任的最佳作法
 
 整個企業的成本管理是雲端治理和雲端操作功能。 所有成本管理決策都會導致支援工作負載的資產變更。 當這些變更影響工作負載的架構時，需要其他考慮，以將對使用者和商務功能的影響降至最低。 設定或開發該工作負載的雲端採用小組可能會持有完成這些變更類型的責任。
 
-- **標記對於所有治理都很重要。** 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md) ，並 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。
-- **找出適當大小的機會。** 查看整個環境中目前的資源使用率和效能需求。
-- 重**設大小：** 修改每個資源，以使用可支援每個資源之效能需求的最小實例或 SKU。
+集中式與非集中式小組應共同合作，以確保下列高階行為會跨您的組合來實行：
+
+- **標記對於所有治理都很重要。** 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md) ，並 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。 這可協助您的集中式治理小組制定明智的成本管理決策。
+- **授權調整：** 適當配置 Azure Hybrid Benefit 和 Azure 保留的 VM 執行個體將可大幅降低您的資產組合中各項資產的每單位成本。 這些類型的授權決策通常是由中央採購功能所建立和維護。 不過，非集中式工作負載小組可能會想要獲得購買和配置授權的諮詢，以將其個別工作負載的成本降至最低。
+- **找出適當大小的機會。** 查看整個環境中目前的資源使用率和效能需求。 修改每個資源，以使用可支援每個資源之效能需求的最小實例或 SKU。
+- **關閉並取消布建未使用的資源：** 未使用的資產會在雲端環境中增加成本。 識別並終止任何新增至成本的資源，但不會新增至商業價值。
 - **水準縮放。** 使用多個小型實例可讓您更輕鬆地調整單一大型實例的路徑。 這可讓調整規模自動化，以建立成本優化。
 
 ## <a name="operational-cost-management-best-practices"></a>營運成本管理最佳做法
@@ -37,6 +37,7 @@ ms.locfileid: "92437033"
 下列最佳作法通常是由雲端治理或雲端作業小組的成員，根據修補和其他排程維護程式來完成。 這些最佳作法會對應到本文稍後的可採取動作的指導方針。
 
 - **標記對於所有治理都很重要：** 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../../ready/azure-best-practices/naming-and-tagging.md) ，並 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。
+- **授權調整：** 對於大量工作負載的最立即成本影響，將來自于規劃完善的授權取得策略。 Azure Hybrid Benefit、Azure 保留的 VM 執行個體、點 Vm 和其他購買策略的購買和配置，將可快速降低整個雲端組合的成本。 
 - **找出適當的大小機會：** 在整個環境中檢查目前的資源使用率和效能需求，以找出在一段時間內保持使用量過低的資源， (通常超過90天的) 。
 - **適當大小的已布建 sku：** 修改使用量過低的資源，以使用可支援每個資源之效能需求的最小實例或 SKU。
 - **Vm 的自動關機：** 當 VM 不是持續使用時，請考慮自動關機。 VM 將不會被刪除或解除委任，但在重新開啟之前，將會停止耗用計算和記憶體成本。
@@ -283,7 +284,7 @@ Microsoft 提供 Azure 成本管理 + 計費來協助您追蹤費用：
   - 您可以將成本管理資料匯出至 Azure 儲存體，以進行分析。
 
     ![](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    *以 Azure 成本管理 + 計費*的 Azure 成本管理 + 計費預算來查看預算。
+    *以 Azure 成本管理 + 計費* 的 Azure 成本管理 + 計費預算來查看預算。
 
 - **進行成本分析：** 取得成本分析來探索及分析組織成本，以協助您瞭解成本如何累積，並找出花費趨勢。
   - EA 使用者可以使用成本分析功能。

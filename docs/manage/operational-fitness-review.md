@@ -7,16 +7,16 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: eb0b5b529bd649ee398631f528ffaa7c79470bad
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c849d4a2a798f0738844352e916fda97b35441a5
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570873"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713474"
 ---
 # <a name="establish-an-operational-fitness-review"></a>建立操作適用性檢閱
 
-當您的企業開始操作 Azure 中的工作負載時，下一步就是建立 _操作健身審查_的流程。 此程式會列舉、實行和反復檢查這些工作負載的非 _功能性需求_ 。 非功能性需求與服務預期的操作行為有關。
+當您的企業開始操作 Azure 中的工作負載時，下一步就是建立 _操作健身審查_ 的流程。 此程式會列舉、實行和反復檢查這些工作負載的非 _功能性需求_ 。 非功能性需求與服務預期的操作行為有關。
 
 非功能性需求有五個基本的類別，也就是 [卓越的架構](/azure/architecture/framework)要素：
 
@@ -55,7 +55,7 @@ Microsoft 遵循的程式會形成本文中所述程式的基礎。
 
 ![操作健身審查的流程總覽](../_images/manage/ofr-flow.png)
 
-從高階觀點來看，該程序有兩個階段。 在 _必要條件階段_中，已建立需求並將其對應至支援的服務。 這個階段不常發生：可能是每年或推出新作業。 「 _流程_」階段會使用「必要條件」階段的輸出。 流程階段會更頻繁地發生，例如每月。
+從高階觀點來看，該程序有兩個階段。 在 _必要條件階段_ 中，已建立需求並將其對應至支援的服務。 這個階段不常發生：可能是每年或推出新作業。 「 _流程_」階段會使用「必要條件」階段的輸出。 流程階段會更頻繁地發生，例如每月。
 
 ### <a name="prerequisites-phase"></a>先決條件階段
 
@@ -71,7 +71,7 @@ Microsoft 遵循的程式會形成本文中所述程式的基礎。
 
     也請考慮內部部署服務與 Azure 服務之間的相依性。 在購物車範例中，庫存庫存管理服務可能會裝載于內部部署環境，並內嵌來自實體倉儲的員工所輸入的資料。 不過，它可能會將內部部署的資料儲存在 Azure 服務中，例如 [Azure 儲存體](/azure/storage/common/storage-introduction)或資料庫，例如 [Azure Cosmos DB](/azure/cosmos-db/introduction)。
 
-這些活動的輸出是一組服務作業的_計分卡計量_。 計分卡會測量準則，例如可用性、擴充性和嚴重損壞修復。 計分卡計量表達您預期服務符合的操作準則。 這些計量可以用任何適用于服務作業的資料細微性層級來表示。
+這些活動的輸出是一組服務作業的 _計分卡計量_。 計分卡會測量準則，例如可用性、擴充性和嚴重損壞修復。 計分卡計量表達您預期服務符合的操作準則。 這些計量可以用任何適用于服務作業的資料細微性層級來表示。
 
 計分卡應該以在公司擁有者與工程人員之間促使有意義之決策的簡單方式表示。 例如，擴充性的計分卡度量可能會以簡單的方式以色彩標示。 綠色表示符合定義的準則，黃色表示無法符合已定義的準則，而是主動實行計畫的補救，而紅色表示無法符合定義的準則，而不需要計畫或動作。
 
@@ -121,17 +121,13 @@ Microsoft 遵循的程式會形成本文中所述程式的基礎。
 
 ## <a name="recommended-resources"></a>建議的資源
 
-- [Microsoft Azure 架構良好的架構](/azure/architecture/framework)：瞭解用來改善工作負載品質的指導原則。 該架構包含五個卓越的架構要素：
+- [Microsoft Azure Well-Architected 架構](/azure/architecture/framework)：瞭解改善工作負載品質的指導原則。 該架構包含五個卓越的架構要素：
   - 成本最佳化
   - 卓越營運
   - 效能效率
   - 可靠性
   - 安全性
-- [Azure 應用程式的10個設計原則](/azure/architecture/guide/design-principles)。
-    請遵循這些設計原則，讓您的應用程式更有擴充空間、可容易復原且更方便管理。
-- [設計適用于 Azure 的復原應用程式](/azure/architecture/resiliency)。
-    使用結構化的方法，在應用程式的存留期內建立和維護可靠的系統，從設計和執行到部署和作業。
-- [雲端設計模式](/azure/architecture/patterns)。
-    使用設計模式，在卓越的架構要素上打造應用程式。
-- [Azure Advisor](/azure/advisor)。
-    Azure Advisor 根據您的使用方式和設定提供個人化建議，以協助將您的資源優化，以獲得高可用性、安全性、效能和成本。
+- [Azure 應用程式的10個設計原則](/azure/architecture/guide/design-principles)。 請遵循這些設計原則，讓您的應用程式更有擴充空間、可容易復原且更方便管理。
+- [設計適用于 Azure 的復原應用程式](/azure/architecture/resiliency)。 使用結構化的方法，在應用程式的存留期內建立和維護可靠的系統，從設計和執行到部署和作業。
+- [雲端設計模式](/azure/architecture/patterns)。 使用設計模式，在卓越的架構要素上打造應用程式。
+- [Azure Advisor](/azure/advisor)。 Azure Advisor 根據您的使用方式和設定提供個人化建議，以協助將您的資源優化，以獲得高可用性、安全性、效能和成本。

@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: d4cc0d02eda6c22164496295b57519be50c507a3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024482"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711706"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -44,7 +44,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 | 層 | 資源 | 影響範圍 | 方法 |
 |---|---|---|---|
-| Application | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
+| 應用程式 | 在 .NET、.NET Core、JAVA、JavaScript 和 Node.js 平臺上，于 Azure VM 上執行的 web 應用程式，Azure App Service、Azure Service Fabric、Azure Functions 和 Azure 雲端服務。 | 監視即時 web 應用程式以自動偵測效能異常、識別程式碼例外狀況和問題，以及收集使用者行為分析。 | Application Insights (Azure 監視器) 的功能。 |
 | Azure 資源-平臺即服務 (PaaS)  | Azure 資料庫服務 (例如 SQL 或 MySQL) 。 | 適用于 SQL 效能度量的 Azure 資料庫。 | 啟用診斷記錄，以將 SQL 資料串流至 Azure 監視器記錄。 |
 | Azure 資源-基礎結構即服務 (IaaS)  | 1. Azure 儲存體 <br> 2. Azure [負載平衡服務](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3. 網路安全性群組 <br> 4. Azure 虛擬機器 <br> 5. [Azure Kubernetes Service](/azure/aks/intro-kubernetes) / [Azure 容器實例](/azure/container-instances/) | 1. 容量、可用性和效能。 <br> 2. 效能和診斷記錄 (活動、存取、效能和防火牆) 。 <br> 3. 套用規則時監視事件，以及將規則套用至拒絕或允許的次數規則計數器。 <br> 4. 監視來賓 VM 作業系統 (OS) 中的容量、可用性和效能。 對應每個 VM 上裝載的應用程式相依性，包括伺服器之間的作用中網路連線可見度、輸入和輸出連線延遲，以及任何 TCP 連接架構之間的埠。 <br> 5. 監視容器和容器實例上執行之工作負載的容量、可用性和效能。 | 針對第一個資料行中的專案1到5，系統會自動收集平臺計量和活動記錄，並可在 Azure 監視器中使用以進行分析和警示。 <br> 設定診斷設定，以將資源記錄轉送至 Azure 監視器記錄。 <br> 4. 啟用 [適用於 VM 的 Azure 監視器](/azure/azure-monitor/insights/vminsights-overview)。 <br> 5. 啟用 [容器的 Azure 監視器](/azure/azure-monitor/insights/container-insights-overview)。 |
 | 網路 | 虛擬機器與一或多個端點之間的通訊 (另一個 VM、完整功能變數名稱、統一資源識別項或 IPv4 位址) 。 | 監視 VM 與端點之間發生的連線能力、延遲和網路拓撲變更。 | Azure 網路監看員。 |
@@ -96,7 +96,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 ### <a name="monitor-with-system-center-operations-manager"></a>使用 System Center Operations Manager 監視
 
-雖然 System Center Operations Manager 原本是設計成內部部署解決方案，以便在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件之間進行監視，但仍會演變為包含雲端監視功能。 它會與 Azure、Microsoft 365 和 Amazon Web Services (AWS) 整合。 它可以透過設計和更新的管理元件來監視這些不同的環境，以支援這些環境。  
+雖然 System Center Operations Manager 原本是設計成內部部署解決方案，以便在您的 IT 環境中執行的應用程式、工作負載和基礎結構元件之間進行監視，但仍會演變為包含雲端監視功能。 它會與 Azure、Microsoft 365 和 Amazon Web Services (AWS) 整合。 它可以透過設計和更新的管理元件來監視這些不同的環境，以支援這些環境。
 
 如果客戶對 Operations Manager 進行了大幅的投資，以達成與 IT 服務管理程式和工具緊密整合的全面監視，或針對 Azure 的新客戶，則可瞭解如何提出下列問題：
 
@@ -120,7 +120,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 針對可從外部連線的任何 web 應用程式，您應該啟用一種稱為 [可用性監視](/azure/azure-monitor/app/monitor-web-app-availability)的綜合交易類型。 請務必瞭解您的應用程式或應用程式所依賴的重要 HTTP/HTTPS 端點是否可用且有回應。 透過 Application Insights 可用性監視，您可以從多個 Azure 資料中心執行測試，並從全球觀點深入瞭解應用程式的健康情況。
 
-雖然 Operations Manager 可監視 Azure 中裝載的資源，但有數個優點可包含 Azure 監視器，因為它的強項可克服 Operations Manager 的限制，而且可以建立強大的基礎來支援從它的最終遷移。 在這裡，我們將探討每個優點和缺點，並建議您將 Azure 監視器納入混合式監視策略中。  
+雖然 Operations Manager 可監視 Azure 中裝載的資源，但有數個優點可包含 Azure 監視器，因為它的強項可克服 Operations Manager 的限制，而且可以建立強大的基礎來支援從它的最終遷移。 在這裡，我們將探討每個優點和缺點，並建議您將 Azure 監視器納入混合式監視策略中。
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>使用 Operations Manager 本身的缺點
 
@@ -163,7 +163,7 @@ Azure 監視器是 Azure 原生平臺服務，提供監視 Azure 資源的單一
 
 - 定義查詢和儀表板的程式庫，以支援 IT 組織中各種不同角色的需求。
 
-- 定義在混合式和雲端資源之間啟用監視的標準和方法、每個資源的監視基準、警示閾值等等。  
+- 定義在混合式和雲端資源之間啟用監視的標準和方法、每個資源的監視基準、警示閾值等等。
 
 - 設定 (RBAC) 的角色型存取控制，因此您只授與使用者和群組監視所管理資源的資料所需的存取權。
 

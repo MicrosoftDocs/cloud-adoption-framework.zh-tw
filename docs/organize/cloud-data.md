@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 07/14/2020
-ms.openlocfilehash: 5f1dd3f63adabd18185e9e07fd0046019f220bb7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1ded8b088d866bcb8d00f14dbe6286266313f63e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574766"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712318"
 ---
 # <a name="cloud-data-functions"></a>雲端資料功能
 
@@ -34,7 +34,7 @@ Azure Synapse Analytics 讓整個企業（從 IT 專案關係人到商務分析�
 
 ## <a name="enterprise-architects-and-data-engineers"></a>企業架構設計人員和資料工程師
 
-這些小組負責將複雜的解決方案與橫跨各種資料工具和解決方案 swath 的元件整合在一起。 其中包括：
+這些小組負責將複雜的解決方案與橫跨各種資料工具和解決方案 swath 的元件整合在一起。 它們包括：
 
 - 結構化與非結構化資料
 - 轉換
@@ -57,7 +57,7 @@ Azure Synapse Analytics 讓整個企業（從 IT 專案關係人到商務分析�
 
 ## <a name="business-analysts"></a>商務分析師
 
-這些小組會建立和使用儀表板、報表和其他形式的資料視覺效果，以取得作業所需的快速見解。 通常，每個企業營運部門都有專門的商務分析師，可收集並封裝來自特製化應用程式的資訊和分析。 這些特製化的應用程式可用於信用卡、零售銀行、商業銀行、財政部、行銷和其他組織。  
+這些小組會建立和使用儀表板、報表和其他形式的資料視覺效果，以取得作業所需的快速見解。 通常，每個企業營運部門都有專門的商務分析師，可收集並封裝來自特製化應用程式的資訊和分析。 這些特製化的應用程式可用於信用卡、零售銀行、商業銀行、財政部、行銷和其他組織。
 
 使用 Azure Synapse Analytics，商務分析師可以安全地存取資料集，並使用 Power BI 來建立儀表板。 他們也可以透過 Azure Data Share，安全地在組織內外共用資料。
 

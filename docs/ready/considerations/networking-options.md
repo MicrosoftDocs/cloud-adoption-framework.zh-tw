@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0ebab543a39440190d530b6e7e68b441e49ff017
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 6895f8a68b76c378bec14b49896dec8bd0320ca8
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776171"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713814"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -49,7 +49,7 @@ ms.locfileid: "90776171"
 
 Azure 網路是由提供不同網路功能的多項產品和服務所組成。 作為網路設計程序的一部分，您可以將工作負載需求與下表中的網路案例進行比較，以識別您可以用來提供這些網路功能的 Azure 工具或服務：
 
-| 案例 | 網路產品或服務 |
+| 狀況 | 網路產品或服務 |
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](/azure/virtual-network) |
 | 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure Load Balancer](/azure/load-balancer) |
@@ -71,7 +71,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 下表摘要說明這些模式支援的主要案例：
 
-| 案例  | 建議的網路架構                                                  |
+| 狀況  | 建議的網路架構                                                  |
 | --- | --- |
 | 所有部署至登陸區域的 Azure 裝載工作負載都將完全以 PaaS 為基礎，不需要虛擬網路，且不屬於更廣泛的雲端採用工作，包括 IaaS 資源。                                                                                                                                                          | [僅限 PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure 裝載的工作負載將會部署 IaaS 型資源 (例如虛擬機器)，否則需要虛擬網路，但不需要連線到您的內部部署環境。                                                                                                                                                                            | [雲端原生](../../decision-guides/software-defined-network/cloud-native.md)      |
@@ -98,6 +98,6 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 在您的網路設計過程中，請參閱下列文章：
 
-- [虛擬網路規劃](/azure/virtual-network/virtual-network-vnet-plan-design-arm?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 了解如何根據您的隔離、連線和位置需求規劃虛擬網路。
-- [適用於網路安全性的 Azure 最佳做法](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
-- [將工作負載遷移至 Azure 時的網路最佳做法](/azure/migrate/migrate-best-practices-networking?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 取得如何實作 Azure 網路以支援 IaaS 型和 PaaS 型工作負載的其他指引。
+- [虛擬網路規劃](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解如何根據您的隔離、連線和位置需求規劃虛擬網路。
+- [適用於網路安全性的 Azure 最佳做法](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 深入了解可協助您增強網路安全性的 Azure 最佳做法。
+- [將工作負載遷移至 Azure 時的網路最佳做法](/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 取得如何實作 Azure 網路以支援 IaaS 型和 PaaS 型工作負載的其他指引。

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a8826b82e9ec3aa503e79e0aa5345a3a494a2bef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567541"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712046"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -39,7 +39,7 @@ Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方�
 ![Azure 入口網站中 Log Analytics 查詢編輯器的螢幕擷取畫面](./media/change-tracking2.png)
 
 此查詢會搜尋檔案內容的變更，這些檔案的路徑包含「主機」一詞。 您也可以藉由變更 path 參數來搜尋特定的檔案。 (例如，`FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
-  
+
 查詢傳回結果之後，請選取 [ **新增警示規則** ] 以開啟 [警示規則編輯器]。 您也可以透過 Azure 入口網站中的 Azure 監視器來取得此編輯器。
 
 在 [警示規則] 編輯器中，檢查查詢並視需要變更警示邏輯。 在此情況下，我們想要在環境中的任何電腦上偵測到任何變更時引發警示。
@@ -96,7 +96,7 @@ Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方�
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
   ```
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 瞭解 Azure 自動化如何 [建立更新](./update-schedules.md) 排程，以管理伺服器的更新。
 

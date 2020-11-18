@@ -7,19 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7df0db259902f3b840c21138e111f06ab492aca4
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 7ed45f10e54ddfb4bac090dd9815e61b503b6003
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334794"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713372"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-teradata"></a>適用于 Teradata 的 Azure Synapse Analytics 解決方案和遷移
 
 許多組織已準備好將昂貴的資料倉儲工作（例如基礎結構維護和平臺開發）移至雲端提供者。 組織現在希望利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。
-
 
 Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料倉儲和大型資料分析整合在一起。 它可讓您自由使用無伺服器隨選或布建資源，以大規模地查詢您的詞彙資料。 瞭解當您將舊版 Teradata 系統移轉至 Azure Synapse 時要做什麼規劃。
 
@@ -59,7 +58,7 @@ Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料�
 
 無論您為遷移選擇的驅動程式和範圍為何，都可以選擇兩種一般類型的遷移：
 
-- 隨即**轉移方法：** 使用這種方法時，現有的資料模型（例如星狀架構）會以不變的方式遷移至新的 Azure Synapse 平臺。 重點在於降低風險，並藉由減少達成移往 Azure 雲端環境所需的工作所需的時間來進行遷移。
+- 隨即 **轉移方法：** 使用這種方法時，現有的資料模型（例如星狀架構）會以不變的方式遷移至新的 Azure Synapse 平臺。 重點在於降低風險，並藉由減少達成移往 Azure 雲端環境所需的工作所需的時間來進行遷移。
 
   這種方法適用于現有的 Teradata 環境，在此環境中，將會遷移單一資料超市，以及資料是否已在設計良好的星星或雪花式架構中。 如果您有時間和成本壓力可移至更新式的雲端環境，這種方法也是不錯的選擇。
 

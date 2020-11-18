@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ab6b3c853f02154ea38a1c0a4a7d642ea7e8eb75
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 2040be11d1c64e002ee304e8638ced855d7973e5
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333638"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713491"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "94333638"
 
 在遷移旅程的計畫階段中，目標是要開發引導執行所需的計畫。 這些方案也必須包含如何在將這些工作負載轉換或發行到生產環境之前，以及之後才進行操作。 商務專案關係人預期會有寶貴的服務，並預期他們不會中斷。 IT 人員成員瞭解他們需要學習新的技能並進行調整，讓他們準備好安心地使用整合的 Azure 服務，以有效地監視 Azure 和混合式環境中的資源。
 
-您可以使用下列學習路徑來加速開發必要的技能。 它們是從學習基本概念開始，然後劃分到三個主要的主旨網域-基礎結構、應用程式和資料分析。  
+您可以使用下列學習路徑來加速開發必要的技能。 它們是從學習基本概念開始，然後分成三個主要主體網域：基礎結構、應用程式和資料分析。
 
 ## <a name="fundamentals"></a>基礎
 
@@ -62,7 +62,7 @@ ms.locfileid: "94333638"
   - [Microsoft Azure DevOps 工程師：優化意見反應機制](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) 可協助您使用 Azure 監視器（包括 Application Insights）來監視和優化您的 web 應用程式。
 
   - [在您的 Azure web 應用程式中，捕獲並查看頁面載入時間](/learn/modules/capture-page-load-times-application-insights/)。 開始使用 Azure 監視器 Application Insights，以在 Azure 中執行應用程式元件的端對端監視。
-  
+
   - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) 腳本可協助您瞭解如何執行 Azure SQL Database、Azure SQL 資料倉儲和 Azure Cosmos DB 的監視。
 
   - 使用[Azure 監視器 Application Insights 檢測應用程式](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)是使用 Application Insights SDK 從應用程式收集遙測和事件（具有角和 Node.js 元件）的深入教學課程。

@@ -7,12 +7,12 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7fd16db11e5fb36179961a9febb719e162aa094d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 228601766d4c580b73df2e78540833c05ff00924
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602614"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713542"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -30,11 +30,11 @@ Microsoft 提供一系列來自兩種產品的監視功能： System Center Oper
 
 ## <a name="the-story-of-azure-monitor"></a>Azure 監視器的故事
 
-當 Azure 在2010中發行時，會提供 Azure 診斷代理程式的監視雲端服務，以提供從 Azure 資源收集診斷資料的方式。 這項功能被視為一般監視工具，而不是企業級監視平臺。  
+當 Azure 在2010中發行時，會提供 Azure 診斷代理程式的監視雲端服務，以提供從 Azure 資源收集診斷資料的方式。 這項功能被視為一般監視工具，而不是企業級監視平臺。
 
 Application Insights 導入了業界的變更，其中雲端、行動裝置和 IoT 裝置的激增成長，以及 DevOps 實務的引進。 它會從 Operations Manager 的應用程式效能監視成長到 Azure 中的服務，並提供豐富的監視功能，讓您以各種語言撰寫的 web 應用程式。 在2015中，Visual Studio 的 Application Insights 預覽已宣佈，之後又稱為 Application Insights。 它會收集應用程式效能、要求和例外狀況，以及追蹤的詳細資料。
 
-在2015中，Azure Operational Insights 已公開推出。 它已提供 Log Analytics 分析服務，該服務會從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件提供各種預先封裝的管理和監視設定，這些設定包含在安全性審核、健全狀況評定和警示管理等案例中，包含一組查詢和分析邏輯、視覺效果和資料收集規則。 之後，Azure Operational Insights 即成為 Log Analytics。  
+在2015中，Azure Operational Insights 已公開推出。 它已提供 Log Analytics 分析服務，該服務會從 Azure、內部部署或其他雲端環境中的電腦收集和搜尋資料，並連接到 System Center Operations Manager。 提供的智慧套件提供各種預先封裝的管理和監視設定，這些設定包含在安全性審核、健全狀況評定和警示管理等案例中，包含一組查詢和分析邏輯、視覺效果和資料收集規則。 之後，Azure Operational Insights 即成為 Log Analytics。
 
 在2016中，已在 Microsoft Ignite 會議宣佈 Azure 監視器的預覽。 它提供了一個通用架構，可從任何使用架構開始的 Azure 服務收集平臺計量、資源診斷記錄，以及訂用帳戶層級的活動記錄事件。 先前，每個 Azure 服務都有自己的監視方法。
 
@@ -42,9 +42,10 @@ Application Insights 導入了業界的變更，其中雲端、行動裝置和 I
 
 - 原始 **Azure 監視器**，用於收集僅適用于 Azure 平臺資源的平臺計量、資源診斷記錄和活動記錄。
 - **Application Insights**，用於監視應用程式。
-- **Log Analytics**是收集和分析記錄資料的主要位置。
-- 新的 **整合警示服務**，其結合了先前提及的每個其他服務的警示機制。  
-- **Azure 網路**監看員，可針對虛擬網路中的資源進行監視、診斷和查看計量。
+- **Log Analytics** 是收集和分析記錄資料的主要位置。
+- 新的 **整合警示服務**，其結合了先前提及的每個其他服務的警示機制。
+
+- **Azure 網路** 監看員，可針對虛擬網路中的資源進行監視、診斷和查看計量。
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite (OMS) 的案例
 
@@ -68,7 +69,7 @@ Operations Manager 需要大量的基礎結構和維護，才能支援管理群�
 
 ### <a name="azure-monitor"></a>Azure 監視器
 
-Azure 監視器是一種軟體即服務 (SaaS) 供應專案，因此其支援的基礎結構會在 Azure 中執行，並由 Microsoft 管理。 它會大規模地執行監視、分析和診斷。 它適用于所有國家雲端。 基礎結構 (收集器、計量和記錄存放區，以及支援 Azure 監視器的分析) 的核心部分會由 Microsoft 維護。  
+Azure 監視器是一種軟體即服務 (SaaS) 供應專案，因此其支援的基礎結構會在 Azure 中執行，並由 Microsoft 管理。 它會大規模地執行監視、分析和診斷。 它適用于所有國家雲端。 基礎結構 (收集器、計量和記錄存放區，以及支援 Azure 監視器的分析) 的核心部分會由 Microsoft 維護。
 
 ![Azure 監視器的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 

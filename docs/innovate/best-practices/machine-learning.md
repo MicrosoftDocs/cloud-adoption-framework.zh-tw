@@ -7,16 +7,16 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 90ef5b895e8ac6f9674de3b4c15edf238d789a4b
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: fd31fa49a623f3eccec460f2d6f04dedfc86f9ac
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283004"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712012"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
-# <a name="what-is-machine-learning"></a>什麼是機器學習？
+# <a name="what-is-machine-learning"></a>什麼是機器學習服務？
 
 機器學習是一項資料科學技術，可讓電腦使用現有資料來預測未來的行為、結果和趨勢。 使用機器學習，電腦不需要明確進行程式設計就能學習。
 
@@ -99,7 +99,7 @@ Machine Learning 作業 (MLOps) 是以提高工作流程效率的 [DevOps](https
 
 ## <a name="integration-with-other-services"></a>與其他服務整合
 
-Azure Machine Learning 適用于 Azure 平臺上的其他服務，也會與 Git 和 MLflow 等開放原始碼工具整合。
+Azure Machine Learning 可與 Azure 平臺上的其他服務搭配使用，也可與開放原始碼工具（例如 Git 和 MLflow）整合。
 
 - 計算目標，例如 Azure Kubernetes Service、Azure 容器執行個體、Azure Databricks、Azure Data Lake Analytics 和 Azure HDInsight。 如需計算目標的詳細資訊，請參閱[什麼是計算目標？](/azure/machine-learning/concept-compute-target)。
 - Azure 事件格線。 如需詳細資訊，請參閱[取用 Azure Machine Learning 事件](/azure/machine-learning/how-to-use-event-grid)。

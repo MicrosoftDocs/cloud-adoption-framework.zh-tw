@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4fb22a8ac71dd7decb6111a3ad196d1e97957abe
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713289"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -31,11 +31,11 @@ ms.locfileid: "90775338"
 
 與商務合作夥伴密切合作，Contoso IT 小組定義了 VMware 遷移至 Azure 的商業驅動程式。 這些驅動程式可包含：
 
-- **資料中心撤離或關機**：當 VMware 工作負載合併或淘汰現有的資料中心時，可順暢地移動這些工作負載。
-- 嚴重損壞**修復和商務持續性**：使用部署在 Azure 中的 VMware 堆疊作為內部部署資料中心基礎結構的主要或次要隨選災難復原網站。
-- **應用程式現代化**：利用 Azure 生態系統將 Contoso 應用程式現代化，而不需要重建 VMware 環境。
-- **實施 DevOps**：將 Azure DevOps 工具鏈帶入 VMware 環境，並以自己的步調將應用程式現代化。
-- **確保作業持續性**：將 vSphere 型應用程式重新部署至 Azure，同時避免虛擬程式的轉換和應用程式重構。 擴充對執行 Windows 和 SQL Server 之繼承應用程式的支援。
+- **Datacenter 撤離或 shutdown：** 在合併或淘汰現有的資料中心時，順暢地移動以 VMware 為基礎的工作負載。
+- 嚴重損壞 **修復和商務持續性：** 使用部署在 Azure 中的 VMware 堆疊作為內部部署資料中心基礎結構的主要或次要隨選災難復原網站。
+- **應用程式現代化：** 利用 Azure 生態系統將 Contoso 應用程式現代化，而不需要重建 VMware 環境。
+- **執行 DevOps：** 將 Azure DevOps 工具鏈帶入 VMware 環境，並依自己的步調將應用程式現代化。
+- **確保操作持續性：** 將以 vSphere 為基礎的應用程式重新部署至 Azure，同時避免基礎程式轉換和應用程式重構。 擴充對執行 Windows 和 SQL Server 之繼承應用程式的支援。
 
 ## <a name="goals-for-migrating-vmware-on-premises-to-vmware-in-the-cloud"></a>將 VMware 內部部署遷移至雲端中 VMware 的目標
 

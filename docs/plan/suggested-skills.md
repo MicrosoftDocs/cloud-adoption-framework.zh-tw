@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 448de153e3c696ef3b0a988095da1760014d66c3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776103"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712063"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>開始使用技能就緒路徑
 
@@ -41,7 +41,8 @@ IT 人員成員可能會覺得其角色和職位的有點焦慮，因為他們�
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得學分和等級，並達成更多目標！
-以下是在 Microsoft Learn 上量身打造的學習路徑範例，其符合雲端採用架構的計畫方法：
+
+在 Microsoft Learn 上量身打造的學習路徑範例，與雲端採用架構的計畫方法相符，包括：
 
 <!-- docutune:ignore "on premises" -->
 

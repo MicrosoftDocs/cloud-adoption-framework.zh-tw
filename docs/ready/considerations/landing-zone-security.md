@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f2cd1f500b248f4568e572eac4ea82cce11af285
-ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
+ms.openlocfilehash: 2aa6cd6c81dfa7f4d6719851622c75ab462031f4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92689976"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713831"
 ---
 # <a name="improve-landing-zone-security"></a>改善登陸區域安全性
 
@@ -22,13 +22,13 @@ ms.locfileid: "92689976"
 
 下列參考架構和最佳作法清單提供改進登陸安全性的方法範例：
 
-- [Azure 資訊安全中心](/azure/security-center/security-center-get-started?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)：將訂用帳戶上架到「安全性中心」。
-- [Azure Sentinel](/azure/sentinel/quickstart-onboard?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)：將 Azure Sentinel 上線，以提供 **安全性資訊事件管理 (SIEM)** 和 **安全性協調流程自動化回應 (SOAR)** 解決方案。
+- [Azure 資訊安全中心](/azure/security-center/security-center-get-started?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：將訂用帳戶上架到「安全性中心」。
+- [Azure Sentinel](/azure/sentinel/quickstart-onboard?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：將 Azure Sentinel 上線，以提供 **安全性資訊事件管理 (SIEM)** 和 **安全性協調流程自動化回應 (SOAR)** 解決方案。
 - [網路界限安全性](../../reference/networking-vdc.md)：用於開發網路的數個參考模式，類似于在資料中心內保護網路界限的方式。
-- [安全網路架構](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)：用於執行周邊網路和安全網路架構的參考架構。
-- 身分[識別管理和存取控制](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)：在 Azure 中執行身分識別和存取安全登陸區域的最佳作法系列。
-- [網路安全性作法](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)：提供保護網路的其他最佳做法。
-- [營運安全性](/azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) 可提供在 Azure 中提高營運安全性的最佳作法。
+- [安全網路架構](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：用於執行周邊網路和安全網路架構的參考架構。
+- 身分[識別管理和存取控制](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：在 Azure 中執行身分識別和存取安全登陸區域的最佳作法系列。
+- [網路安全性作法](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：提供保護網路的其他最佳做法。
+- [營運安全性](/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) 可提供在 Azure 中提高營運安全性的最佳作法。
 - [安全性基準專業領域](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-best-practices)：開發治理導向安全性基準以強制執行安全性需求的範例。
 
 ## <a name="test-driven-development-cycle"></a>測試導向的開發週期

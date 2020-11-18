@@ -7,38 +7,38 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b23385287ac592f019e917ca67f685d4a824100b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: bab307f1a9476de3f53710c3798d77365cc2c3dc
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194250"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712216"
 ---
 # <a name="function-of-cloud-threat-intelligence"></a>雲端威脅情報的功能
 
-安全性威脅情報針對主動攻擊和潛在威脅提供內容和可操作的深入解析，讓安全性小組、技術團隊和組織領導人做出決策。
+安全性威脅情報可針對主動攻擊和潛在的威脅提供內容和可操作的見解，讓安全性小組、技術小組和組織領導人能夠做出決策。
 
 ## <a name="modernization"></a>現代化
 
-威脅情報團隊既有新興又進化，以符合安全性作業中心 (SOC) 和其他管理組織安全性風險的需求。
+威脅情報團隊不斷演進並不斷演進，以滿足安全性作業中心 (SOC) 和其他管理組織安全性風險的需求。
 
-這些小組應該著重于包含下列各項的策略：
+這些團隊應著重于包含下列各項的策略：
 
-- 專為主管物件量身打造的**策略性威脅情報**，可增加對網路安全性風險、資金資助需求的認知，並支援組織領導能力所做出的合理風險決策。
-- **增量程式成長**可提供快速的事件支援，併發展成威脅情報平臺來追蹤和通知專案關係人。
-- **策略性和營運威脅情報**，以引導在事件調查和威脅偵測期間進行決策。
+- 專為 executive 物件量身打造的 **策略性威脅情報**，可提升對網路安全性風險、資金需求的認知，並支援組織領導階層的音效風險決策。
+- 累加 **程式成長**，可提供直接事件支援的快速獲勝，併發展成威脅情報平臺，以追蹤和通知專案關係人。
+- **策略性和操作威脅情報** ，以引導事件調查和威脅偵測期間的決策進行。
 
-## <a name="team-composition-and-key-relationships"></a>小組撰寫和按鍵關聯性
+## <a name="team-composition-and-key-relationships"></a>小組撰寫和索引鍵關聯性
 
 雲端威脅情報通常由下列角色類型提供。
 
 - 安全性狀態管理
-- 組織主管領導
-- 主要業務領導人或其代表
+- 組織主管領導階層
+- 關鍵業務領導人或其代表
 - 安全性架構和作業
 - IT 架構和作業
 - 風險管理小組
 
 ## <a name="next-steps"></a>後續步驟
 
-審查雲端安全性狀態[管理](./cloud-security-posture-management.md)的功能。
+複習雲端安全性狀態 [管理](./cloud-security-posture-management.md)的功能。

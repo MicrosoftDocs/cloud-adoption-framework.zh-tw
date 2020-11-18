@@ -7,12 +7,12 @@ ms.date: 06/24/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3dc4b921e8c2ffc1dd020274b9f6dbe53e700507
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4a0d6d857481b3c3bbd73d44a81ff5fe72e4a3fd
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605213"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712080"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -90,8 +90,7 @@ ms.locfileid: "89605213"
 - Microsoft Azure ExpressRoute 直接將壓縮的資料傳輸至 Azure。
 - 檔案匯出至 Azure 資料箱。
 
-影響選取這些選項的主要因素是資料磁片區大小 (以 tb 為單位的) 和網路速度 (Mbps 的) 。 需要計算以判斷透過網路遷移資料所需的時間，並考慮資料可能會在您的資料倉儲中壓縮並在您匯出時變成未壓縮。 這種情況可能會減緩資料傳送速率。 使用上述任何一種方法來移動資料時，透過 Gzip 重新壓縮資料。 PolyBase 可以直接處理 gzipped 資料。
-如果移動資料需要太長的時間，可能會透過 Azure 資料箱來遷移大型資料磁片區。
+影響選取這些選項的主要因素是資料磁片區大小 (以 tb 為單位的) 和網路速度 (Mbps 的) 。 需要計算以判斷透過網路遷移資料所需的時間，並考慮資料可能會在您的資料倉儲中壓縮並在您匯出時變成未壓縮。 這種情況可能會減緩資料傳送速率。 使用上述任何一種方法來移動資料時，透過 Gzip 重新壓縮資料。 PolyBase 可以直接處理 gzipped 資料。 如果移動資料需要太長的時間，可能會透過 Azure 資料箱來遷移大型資料磁片區。
 
 此外，若要讓 Azure Data Factory 控制從 Azure 匯出現有資料倉儲資料的執行，您的資料中心必須安裝自我裝載整合執行時間軟體，才能繼續進行遷移。 基於這些需求，如果需要正式核准才能達成此目的，則儘早啟動適當的核准程式以達成此目的，將有助於避免延遲行。
 

@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a9f188a49becd5c9f0d8156488a3456aa93fee8
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775797"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712634"
 ---
-<!-- docutune:casing GDGs -->
+<!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>大型主機應用程式移轉
@@ -31,7 +31,7 @@ ms.locfileid: "90775797"
 
 - **重建：** 有些組織會選擇使用新式技術來完全重寫程式。 由於這種方法的增加成本和複雜度，並不像隨即轉移方法一般。 進行此類型的移轉後，一般通常會使用程式碼轉換引擎開始取代模組和程式碼。
 
-- **取代：** 這種方法會以雲端中的對等功能取代大型主機功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，目前也已有許多產業特定應用程式，可用來解決先前由自訂大型主機解決方案負責解決的問題。
+- **取代：** 這種方法會以雲端中的對等功能取代大型主機功能。 軟體即服務 (SaaS) 是選項之一，它採用專為企業需求而建立的解決方案，例如財務、人力資源、製造或企業資源規劃等領域。 此外，許多產業專屬的應用程式現在都可解決自訂大型主機解決方案先前解決的問題。
 
 您應該考慮開始先規劃您想要遷移的工作負載，然後判斷移動相關聯的應用程式、舊版程式碼基底和資料庫的需求。
 
@@ -43,7 +43,7 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 許多大型主機都有 OLTP 系統，為廣大的使用者處理數千、甚或數以百萬計的更新。 這些應用程式通常會使用交易處理和螢幕形式處理軟體，例如客戶資訊控制系統 (CICS) 、資訊管理系統 (IMS) ，以及終端介面處理器 (提示) 。
 
-將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api （例如 ActiveX data objects）結合 (ADO) 、開放式資料庫連接 (ODBC) ，以及 JAVA 資料庫連接 (JDBC) 以進行資料存取和交易。
+將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api 結合，例如 ActiveX Data Objects (ADO) 、開放式資料庫連接 (ODBC) 和 JAVA 資料庫連線 (JDBC) 進行資料存取和交易。
 
 ### <a name="time-constrained-batch-updates"></a>有時間限制的批次更新
 
@@ -61,7 +61,7 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 隨即轉移方法是可快速將現有應用程式遷移至 Azure 的無程式碼選項。 每個應用程式都會依現狀移轉，因而提供使用雲端時無需承擔程式碼變更風險或費用的好處。 在 Azure 上使用大型主機交易處理 (TP) 監視器的模擬器時，可支援此方法。
 
-您可以從不同的廠商取得 TP 監視器，並在虛擬機器上執行，這是 Azure 上的基礎結構即服務 (IaaS) 選項。 下列執行前後圖表顯示 IBM DB2 (關聯式資料庫管理系統 (DBMS)) 所支援的線上應用程式在 IBM z/OS 大型主機上移轉的情形。 DB2 for z/OS 會使用虛擬儲存體存取方法 (VSAM) 檔案來儲存資料，並使用索引循序存取方法 (ISAM) 來處理一般檔案。 此架構也會使用 CICS 進行交易監視。
+您可以從不同的廠商取得 TP 監視器，並在虛擬機器上執行，這是 Azure 上的基礎結構即服務 (IaaS) 選項。 下列執行前後圖表顯示 IBM DB2 (關聯式資料庫管理系統 (DBMS)) 所支援的線上應用程式在 IBM z/OS 大型主機上移轉的情形。 DB2 for z/OS 會使用虛擬儲存體存取方法 (VSAM) 檔案來儲存資料和索引的循序存取方法 (適用于一般檔案的 ISAM) 。 此架構也會使用 CICS 進行交易監視。
 
 ![使用模擬軟體將大型主機環境遷移至 Azure 的「隨即轉移」](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
@@ -69,9 +69,9 @@ Azure 雲端服務可以模擬傳統的大型主機環境，讓您重複使用�
 
 畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如：
 
-- 以 Windows 為基礎的 Vm： Internet Information Server (IIS) ，以及用於螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
+- 以 **Windows 為基礎的 vm：** Internet Information Server (IIS) ，以及用於螢幕處理和商務邏輯的 ASP.NET。 針對資料存取和交易，請使用 ADO.NET。
 
-- 以 Linux 為基礎的 Vm：可用的 JAVA 應用程式伺服器，例如適用于螢幕處理的 Apache Tomcat，以及以 JAVA 為基礎的商務功能。 針對資料存取和交易，請使用 JDBC。
+- 以 **Linux 為基礎的 vm：** 可用的 JAVA 應用程式伺服器，例如適用于螢幕處理的 Apache Tomcat，以及以 JAVA 為基礎的商務功能。 針對資料存取和交易，請使用 JDBC。
 
 ## <a name="migrate-batch-workloads-to-azure"></a>將批次工作負載移轉至 Azure
 
@@ -99,11 +99,11 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 - 將多個磁碟等量分割，使每個儲存體大小有更多 IOPS。
 
-- 分割儲存體，以將 IO 分散到多個 Azure 儲存體裝置。
+- 分割以將 i/o 分散到多個 Azure 儲存體裝置上。
 
 ### <a name="networking"></a>網路功能
 
-- 使用 [Azure 加速網路](/azure/virtual-network/create-vm-accelerated-networking-powershell)，以盡可能降低延遲。
+- 使用 [Azure 加速網路](/azure/virtual-network/create-vm-accelerated-networking-powershell) 將延遲降至最低。
 
 ### <a name="monitoring"></a>監視
 
@@ -115,14 +115,14 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 | 元件        | Azure 選項                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| z/OS             | Windows、Linux 或 UNIX                                                                                                                      |
+| z/OS             | Windows、Linux 或 Unix                                                                                                                      |
 | CICS             | Micro Focus、Oracle、GT Software (Fujitsu)、TmaxSoft、Raincode 和 NTT Data 所提供的 Azure 服務，或使用 Kubernetes 重寫 |
 | IMS              | Micro Focus 和 Oracle 所提供的 Azure 服務                                                                                  |
 | 組合器        | Raincode 和 TmaxSoft 所提供的 Azure 服務；或 COBOL、C 或 Java，或對應至作業系統功能               |
 | JCL              | JCL、PowerShell 或其他指令碼工具                                                                                                   |
 | COBOL            | COBOL、C 或 Java                                                                                                                            |
 | Natural          | Natural、COBOL、C 或 Java                                                                                                                  |
-| FORTRAN 和 PL/I | FORTRAN、PL/I、COBOL、C 或 Java                                                                                                           |
+| Fortran 和 PL/I | Fortran、PL/I、COBOL、C 或 JAVA                                                                                                           |
 | REXX 和 PL/I    | REXX、PowerShell 或其他指令碼工具                                                                                                  |
 
 ## <a name="migrate-databases-and-data"></a>移轉資料庫和資料
@@ -131,11 +131,11 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 例如，如果大型主機資料層使用下列項目，則可以進行移轉：
 
-- IBM DB2 或 IMS 資料庫，請在 Azure 上使用 Azure SQL Database、SQL Server、DB2 LUW 或 Oracle Database。
+- IBM DB2 或 IMS 資料庫，請使用 Azure SQL Database、SQL Server、DB2 LUW 或 Azure 上的 Oracle Database。
 
-- VSAM 和其他一般檔案，請對 Azure SQL、SQL Server、DB2 LUW 或 Oracle 使用索引循序存取方法 (ISAM) 一般檔案。
+- VSAM 和其他一般檔案，針對 Azure SQL Database、SQL Server、DB2 LUW 或 Oracle 使用索引循序存取方法 (ISAM) 一般檔案。
 
-- Generation Date Group (GDG)，請移轉至 Azure 上使用具有 GDG 類似功能的命名慣例和副檔名的檔案。
+- 產生日期群組 (Gdg) ，遷移至 Azure 上使用命名慣例和副檔名的檔案，這些檔案會提供類似 Gdg 的功能。
 
 IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉資料庫時，您也應移轉集區中包含的資料集合，因為其中包含 dbextents，這是 z/OS VSAM 資料集。 移轉必須包含目錄以識別資料在儲存體集區中的位置。 此外，您的移轉計劃必須考量資料庫記錄，其中包含在資料庫上執行作業的記錄。 一個資料庫可以有一個、兩個 (雙重或替代) 或四個 (雙重和替代) 記錄。
 
@@ -151,9 +151,9 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 ## <a name="optimize-scale-and-throughput-for-azure"></a>最佳化 Azure 的規模和輸送量
 
-一般來說，大型主機會擴大，而雲端會相應放大。若要將在 Azure 上執行之大型主機樣式應用程式的規模和輸送量優化，請務必瞭解大型主機如何分隔及隔離應用程式。 z/OS 大型主機會使用名為「邏輯分割區」(LPARS) 的功能，來隔離及管理單一執行個體上特定應用程式的資源。
+一般來說，大型主機會擴大，而雲端會相應放大。若要將在 Azure 上執行之大型主機樣式應用程式的規模和輸送量優化，請務必瞭解大型主機如何分隔及隔離應用程式。 Z/OS 大型主機會使用稱為邏輯分區的功能 (Lpar) 來隔離及管理單一實例上特定應用程式的資源。
 
-例如，大型主機可能會對具有相關 COBOL 程式的 CICS 區域使用一個邏輯分割區 (LPAR)，並且對 DB2 使用另一個 LPAR。 其他 LPAR 通常用於開發、測試和預備環境。
+例如，大型主機可能會針對具有相關 COBOL 程式的 CICS 區域使用一個 LPAR，並針對 DB2 使用個別的 LPAR。 其他 LPAR 通常用於開發、測試和預備環境。
 
 在 Azure 上，使用不同的 Vm 來提供此用途更為普遍。 Azure 架構通常會為應用程式層部署 VM、為資料層部署不同一組 VM，且再部署另一組用於開發，依此類推。 您可以使用適用于該環境的最適合 Vm 和功能類型來優化每個處理層。
 
@@ -165,19 +165,17 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>執行從大型主機至 Azure 的分段移轉
 
-要將解決方案從大型主機移至 Azure 可能需執行_分段_移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
+要將解決方案從大型主機移至 Azure 可能需執行 _分段_ 移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
 
 常見的案例是，將應用程式移至 Azure，但將應用程式所使用的資料保留在大型主機上。 您可以使用特定軟體讓 Azure 上的應用程式可從大型主機存取資料。 幸運的是，有許多解決方案都提供 Azure 與現有大型主機環境的整合功能、混合式案例的支援，以及長時間的漸進移轉。 Microsoft 合作夥伴、獨立軟體廠商和系統整合商皆可協助您展開此程序。
 
-其中一個選項是 [Microsoft Host Integration Server](/host-integration-server)，這是一個解決方案，可提供分散式關係資料庫架構 (DRDA) 讓 Azure 中的應用程式存取 DB2 中仍保留在大型主機上的資料。 將大型主機整合至 Azure 的其他選項包括 IBM、Attunity、Codit、其他廠商所提供的解決方案，和開放原始碼選項。
+其中一個選項是 [Microsoft Host Integration Server](/host-integration-server)，這是一個解決方案，可提供分散式關係資料庫架構 (DRDA) 讓 Azure 中的應用程式存取 DB2 中仍保留在大型主機上的資料。 適用于大型主機與 Azure 整合的其他選項包括 IBM、Attunity、Codit、其他廠商和開放原始碼選項的解決方案。
 
 ## <a name="partner-solutions"></a>合作夥伴解決方案
 
 如果您考慮進行大型主機移轉，合作夥伴生態系統將可協助您。
 
 Azure 提供經過實證、高度可用且可調整的基礎結構，適用於目前在大型主機上執行的系統。 某些工作負載比較容易移轉。 其他依賴舊式系統軟體 (例如 CICS 與 IMS) 的工作負載，可以使用合作夥伴解決方案重新裝載，再分階段移轉至 Azure。 無論您如何選擇，Microsoft 與合作夥伴都很樂意協助您達成 Azure 的最佳化，同時保有大型主機系統軟體功能。
-
-<!-- docutune:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>深入了解
 

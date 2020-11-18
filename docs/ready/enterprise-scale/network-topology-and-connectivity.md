@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 49af307d23c997692def763772eb87d37f5b5c70
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 838ef802195d5d3dc56d7df415db8a58486e83e0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283376"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713678"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -103,8 +103,7 @@ ms.locfileid: "93283376"
 
 ## <a name="virtual-wan-network-topology-microsoft-managed"></a>虛擬 WAN 網路拓撲 (Microsoft 管理的) 
 
-![說明虛擬 WAN 網路拓撲的圖。](./media/virtual-wan-topology.png)
-
+![說明虛擬 WAN 網路拓撲的圖表。 ](./media/virtual-wan-topology.png)
 _圖1：虛擬 WAN 網路拓撲。_
 
 **設計考慮：**
@@ -113,8 +112,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 虛擬 WAN 藉由建立 [中樞和輪輻網路架構](/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，大幅簡化了 Azure 和跨單位的端對端網路連線能力。 此架構會跨多個 Azure 區域和內部部署位置 (任何現成的連線) ，如下圖所示：
 
-  ![此圖說明使用虛擬 WAN 的全球傳輸網路。](./media/global-transit.png)
-  
+  ![此圖說明使用虛擬 WAN 的全球傳輸網路。 ](./media/global-transit.png)
   _圖2：使用虛擬 WAN 的全球傳輸網路。_
 
 - 虛擬 WAN 任意對任意可轉移的連線能力支援在相同區域內和跨區域)  (下列路徑：
@@ -154,8 +152,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
   下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有大量的分公司。 環境透過虛擬 WAN 和 ExpressRoute 全球接觸來全球連線。
 
-  ![範例網路拓撲的圖表。](./media/global-reach-topology.png)
-  
+  ![範例網路拓撲的圖表。 ](./media/global-reach-topology.png)
   _圖3：網路拓撲範例。_
 
 - 使用虛擬 WAN 作為全球連線資源。 您可以使用每個 Azure 區域的虛擬 WAN 中樞，透過本機虛擬 WAN 中樞，將多個登陸區域連接在一起的 Azure 區域。
@@ -250,10 +247,9 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 集中式 Nva 和細微路由的相依性。
 
-- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。  這可讓適當的流量控制符合大部分的分割和檢查需求。
+- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。 這可讓適當的流量控制符合大部分的分割和檢查需求。
 
-  ![說明中樞和輪輻網路拓撲的圖。](./media/hub-and-spoke-topology.png)
-
+  ![說明中樞和輪輻網路拓撲的圖表。 ](./media/hub-and-spoke-topology.png)
   _圖5：中樞和輪輻網路拓撲。_
 
 - 當下列其中一個條件成立時，請使用與多個 ExpressRoute 線路連線之多個虛擬網路的拓撲：
@@ -263,11 +259,10 @@ _圖4：傳統的 Azure 網路拓撲。_
   - 您需要特定業務單位的專用 ExpressRoute 頻寬。
 
   - 您已達到每個 ExpressRoute 閘道的最大連線數目 (四個) 。
-  
-  下圖顯示此拓撲。
+
+下圖顯示此拓撲。
 
   ![說明多個 ExpressRoute 線路連線之多個虛擬網路的圖表。](./media/vnet-multiple-circuits.png)
-  
   _圖6：多個連接到多個 ExpressRoute 線路的虛擬網路。_
 
 - 部署一組最基本的共用服務，包括 ExpressRoute 閘道、VPN 閘道 (視需要) ，以及在中央中樞虛擬網路中) 所需的 Azure 防火牆或合作夥伴 Nva (。 如有必要，也請部署 Active Directory 網域控制站和 DNS 伺服器。
@@ -290,8 +285,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 當您在兩個 Azure 區域中部署中樞和輪輻網路架構，且需要跨區域的所有登陸區域之間的傳輸連線時，請使用 ExpressRoute 搭配雙重線路，以提供跨 Azure 區域之登陸區域虛擬網路的傳輸連線能力。 在此案例中，登陸區域可以透過本機中樞虛擬網路中的 NVA，以及透過 ExpressRoute 線路跨區域在區域內傳輸。 流量必須在 MSEE 路由器上 hairpin。 下圖顯示此設計。
 
-  ![說明登陸區域連線能力設計的圖表。](./media/vnet-dual-circuits.png)
-  
+  ![說明登陸區域連線能力設計的圖表。 ](./media/vnet-dual-circuits.png)
   _圖7：登陸區域連接設計。_
 
 - 當您的組織需要跨兩個 Azure 區域的中樞和輪輻網路架構，以及登陸區域之間的全球傳輸連線能力時，需要跨 Azure 區域的虛擬網路。 您可以藉由將中央中樞虛擬網路與全域虛擬網路對等互連進行虛擬化，並使用 Udr 和 Nva 來啟用全域傳輸路由，來執行此架構。 因為複雜性和管理的額外負荷很高，所以我們建議使用虛擬 WAN 來評估全域傳輸網路架構。
@@ -501,11 +495,11 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 當您使用具有私人對等互連的 ExpressRoute 時，流量目前不會加密。
 
-- 透過 ExpressRoute 私用對等互連設定站對站 VPN 連線現已進入 [預覽階段](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering)。
+- 透過 ExpressRoute 私用對等互連設定站對站 VPN 連線現已進入 [預覽階段](/azure/vpn-gateway/site-to-site-vpn-private-peering)。
 
 - 您可以將 [媒體存取控制安全性 (MACsec) ](/azure/expressroute/expressroute-howto-MACsec) 加密套用至 ExpressRoute Direct，以達成網路加密。
 
-- 當 Azure 流量在資料中心之間移動 (不是由 Microsoft 或代表 Microsoft) 所控制的實體界限之外，就會在基礎網路硬體上使用 [MACsec 資料連結層加密](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 。 這適用于 VNet 對等互連流量。
+- 當 Azure 流量在資料中心之間移動 (不是由 Microsoft 或代表 Microsoft) 所控制的實體界限之外，就會在基礎網路硬體上使用 [MACsec 資料連結層加密](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 。 這適用于 VNet 對等互連流量。
 
 **設計建議：**
 
@@ -517,13 +511,13 @@ _圖8：加密流程。_
 
 - 當您使用 ExpressRoute Direct 時，請設定 [MACsec](/azure/expressroute/expressroute-howto-MACsec) ，以便在您組織的路由器與 MSEE 之間的兩層級加密流量。 此圖顯示此加密在 flow 中 `B` 。
 
-- 針對不是 MACsec 選項 (的虛擬 WAN 案例，例如，請勿使用 ExpressRoute Direct) ，請使用虛擬 WAN VPN 閘道透過 [ExpressRoute 私用對等互連來建立 IPsec 通道](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute)。 此圖顯示此加密在 flow 中 `C` 。
+- 針對不是 MACsec 選項 (的虛擬 WAN 案例，例如，請勿使用 ExpressRoute Direct) ，請使用虛擬 WAN VPN 閘道透過 [ExpressRoute 私用對等互連來建立 IPsec 通道](/azure/virtual-wan/vpn-over-expressroute)。 此圖顯示此加密在 flow 中 `C` 。
 
 - 針對非虛擬 WAN 案例，而且 MACsec 不是選項 (例如，不使用 ExpressRoute Direct) ，唯一的選項如下：
-  
+
   - 使用 partner Nva 透過 ExpressRoute 私用對等互連來建立 IPsec 通道。
   - 透過搭配 Microsoft 對等互連的 ExpressRoute 建立 VPN 通道。
-  - 評估功能以透過 ExpressRoute 私人對等互連設定站對站 VPN 連線 ([預覽](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering)) 。
+  - 評估功能以透過 ExpressRoute 私人對等互連設定站對站 VPN 連線 ([預覽](/azure/vpn-gateway/site-to-site-vpn-private-peering)) 。
 
 - 如果必須加密 Azure 區域之間的流量，請使用全域 VNet 對等互連來跨區域連接虛擬網路。
 

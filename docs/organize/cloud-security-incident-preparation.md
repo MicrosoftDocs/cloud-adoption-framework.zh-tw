@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: cbf362a0a4230a3a882b60883bbf9e457bcdfef9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 15a288751d42bc230824fa31fa78a2a335647c28
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776154"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712284"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>雲端安全性事件準備的功能
 
@@ -22,14 +22,14 @@ ms.locfileid: "90776154"
 
 實務練習已成為功能強大的工具，可確保專案關係人在重大安全性事件中獲得通知並熟悉其角色。 這些練習的參與者應包括：
 
-- 主管**領導和**董事會，以制定策略性風險決策並提供監督。
+- 主管 **領導和** 董事會，以制定策略性風險決策並提供監督。
 - **溝通與公用關係** ，以確保內部使用者、客戶和其他外部專案關係人都能獲得相關和適當資訊的通知。
-- 提供法律顧問和其他商務建議的**內部專案關係人**
+- 提供法律顧問和其他商務建議的 **內部專案關係人**
 - **事件管理** 以協調活動與通訊。
-- 調查和修復事件的**技術團隊成員**。
+- 調查和修復事件的 **技術團隊成員**。
 - **商務持續性** 與擁有危機管理、嚴重損壞修復和商務持續性計畫的組織功能整合。
 
-<!-- docutune:casing "Incident Response Reference Guide (IRRG)" -->
+<!-- docutune:casing "Incident Response Reference Guide" "IRRG" -->
 <!-- cSpell:ignore IRRG -->
 
 Microsoft 已在《 [事件回應參考指南》 (IRRG) ](https://aka.ms/IRRG)中發表學習和建議。

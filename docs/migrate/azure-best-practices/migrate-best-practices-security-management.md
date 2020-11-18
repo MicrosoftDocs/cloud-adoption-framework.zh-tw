@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42bb7e66f9b9c997babf3f0e40fcf8145cd849f7
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 2e020b1284fedf8ea6fdf45d46ab2d14fa8ea49d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283436"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712709"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -215,7 +215,6 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 請注意�
 如果您要使用 Azure AD Connect 來同步處理內部部署 Active Directory Azure AD，請考慮將內部部署安全性群組的名稱與 Azure 中的資源群組名稱相符。
 
   ![資源群組命名的螢幕擷取畫面。](./media/migrate-best-practices-security-management/naming.png)
-  
   _圖5：資源群組命名。_
 
 **瞭解更多資訊：**
@@ -227,7 +226,6 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 請注意�
 您最不想遇到的情況，便是資源群組被意外刪除而消失不見。 建議您執行刪除鎖定，如此一來，就不會發生這種情況。
 
   ![刪除鎖定的螢幕擷取畫面。](./media/migrate-best-practices-security-management/locks.png)
-
   _圖6：刪除鎖定。_
 
 **瞭解更多資訊：**

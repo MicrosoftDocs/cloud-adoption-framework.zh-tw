@@ -7,13 +7,15 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4e5521c2f3b699584d7785a80e3c92b3db24e347
-ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
+ms.openlocfilehash: e22f93f7a375431684002904ade30982ab460b23
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91206206"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713763"
 ---
+<!-- docutune:casing IR -->
+
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>開始使用：跨企業環境執行安全性
 
 安全性可協助建立商務的機密性、完整性和可用性保證。 安全性工作的重點在於保護內部和外部惡意和無意的行為所造成的作業可能會造成的影響。
@@ -38,14 +40,16 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 ## <a name="step-1-establish-essential-security-practices"></a>步驟1：建立基本的安全性作法
 
-雲端中的安全性一開始會將最重要的安全性作法套用至系統的人員、程式和技術元素。 此外，某些架構決策是基本的，而且稍後很難變更，因此應謹慎套用。 
+雲端中的安全性一開始會將最重要的安全性作法套用至系統的人員、程式和技術元素。 此外，某些架構決策是基本的，而且稍後很難變更，因此應謹慎套用。
 
 無論您是在雲端中運作，或是正在規劃未來的採用，我們都建議您遵循這11個基本的安全性作法 (，並符合) 的任何明確法規合規性需求。
+
+<!-- markdownlint-disable MD029 -->
 
 **人：**
 
 1. [教育團隊瞭解雲端安全性旅程](../security/security-top-10.md#1-people-educate-teams-about-the-cloud-security-journey)
-2. [教育小組雲端安全性技術](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology) 
+2. [教育小組雲端安全性技術](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology)
 
 **過程：**
 
@@ -55,7 +59,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 **技術：**
 
-6. [需要無密碼或 Multi-Factor Authentication (MFA) ](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
+6. [需要無密碼或多重要素驗證](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
 7. [整合原生防火牆和網路安全性](../security/security-top-10.md#7-technology-integrate-native-firewall-and-network-security)
 8. [整合原生威脅偵測](../security/security-top-10.md#8-technology-integrate-native-threat-detection)
 
@@ -65,6 +69,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 10. [使用以身分識別為基礎的存取控制 (而非金鑰) ](../security/security-top-10.md#10-architecture-use-identity-based-access-control-instead-of-keys)
 11. [建立單一整合的安全性策略](../security/security-top-10.md#11-architecture-establish-a-single-unified-security-strategy)
 
+<!-- markdownlint-enable MD029 -->
 
 > [!NOTE]
 > 每個組織都應該定義它自己的最低標準。 風險狀態和後續的風險容錯可能會根據產業、文化特性和其他因素而有很大的差異。 例如，銀行可能無法容忍對測試系統進行輕微攻擊的任何可能損害。 某些組織會在將數位轉型加速三到六個月時，接受這項相同的風險。
@@ -94,7 +99,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 - **密切配合商務策略：** 安全性的職責是保護商業價值。 將所有安全性工作與該目的保持一致，並將內部衝突降至最低是很重要的。
 
-  - 打造商務、IT 和安全性需求的**共用理解**。
+  - 打造商務、IT 和安全性需求的 **共用理解**。
   - **及早將安全性整合到雲端採用** ，以避免從肇因風險中危機的最後一分鐘。
   - **使用敏捷式方法** 來立即建立最小的安全性需求，並持續改善一段時間的安全性保證。
   - 透過刻意主動領導力的行動，**鼓勵安全性文化變革**。
@@ -142,11 +147,11 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
   安全性計畫應包含所有這些元素：
 
-  - **組織**函式方案，讓小組知道目前的安全性角色和責任如何隨著移至雲端而改變。
+  - **組織** 函式方案，讓小組知道目前的安全性角色和責任如何隨著移至雲端而改變。
 
   - **安全性技能計畫** 在流覽技術、角色和責任的重大變更時，支援小組成員。
 
-  - 引導技術團隊的**技術安全性架構和功能藍圖**。
+  - 引導技術團隊的 **技術安全性架構和功能藍圖**。
 
     Microsoft 提供參考架構和技術功能，可在您建立架構和藍圖時協助您，包括：
 
@@ -166,7 +171,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
   - **安全性意識和教育計畫**，讓所有小組都有基本的重要安全性知識。
 
-  - 使用與業務影響一致的分類法，標示要指定敏感性資產的**資產敏感性**。 分類法是由商務專案關係人、安全性小組和其他感興趣的合作物件共同建立。
+  - 使用與業務影響一致的分類法，標示要指定敏感性資產的 **資產敏感性**。 分類法是由商務專案關係人、安全性小組和其他感興趣的合作物件共同建立。
 
   - **雲端方案的安全性變更：** 更新雲端採用方案的其他區段，以反映安全性計畫所觸發的變更。
 
@@ -178,7 +183,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 - **採用 agile 安全性：** 先建立最基本的安全性需求，並將所有非關鍵的專案移至後續步驟的優先順序清單。 這應該不是傳統的詳細計畫3-5 年。 雲端和威脅環境的變更速度太快，讓這種類型的計畫很有用。 您的計畫應著重于開發開始步驟和結束狀態：
 
-  - 立即開始**使用，這**會在長期的計畫開始之前，提供高影響力。 時間範圍可能是3-12 個月，視組織文化、標準實務和其他因素而定。
+  - 立即開始 **使用，這** 會在長期的計畫開始之前，提供高影響力。 時間範圍可能是3-12 個月，視組織文化、標準實務和其他因素而定。
   - **清楚知道** 所需的結束狀態，以引導每個小組的規劃流程 (可能需要幾年的時間才能達到) 。
 
 - **廣泛共用方案：** 提高專案關係人的認知、意見反應及購買。
@@ -196,7 +201,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
     您可以使用 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)來記錄計畫。 您也可以使用 [線上 Microsoft 安全性訓練](/security/compass/microsoft-security-compass-introduction) ，協助您的團隊成員教育。
 
-  - 保障**安全性認知**，以協助人員真的與保護組織安全的部分。
+  - 保障 **安全性認知**，以協助人員真的與保護組織安全的部分。
 
 - **複習 Microsoft 學習和指導方針：** Microsoft 已發佈見解和觀點，可協助您的組織規劃雲端的轉型和新式的安全性策略。 本檔包含記錄的訓練、檔和安全性最佳作法，以及建議的標準。
 

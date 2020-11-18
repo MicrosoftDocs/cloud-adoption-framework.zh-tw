@@ -1,23 +1,22 @@
 ---
 title: 使用 Azure Machine Learning 的 MLOps
-description: 使用適用于 Azure 的雲端採用架構，以瞭解必須進行的各種轉換，才能在雲端中啟用操作管理。
+description: 瞭解 Machine Learning 作業 (MLOps 可提高工作流程效率的) 準則和做法，例如持續整合、傳遞和部署。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4cbc51385cec6ccde4eaa500a7c62425d5e060a4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ab0841311b1f532b9a79269f1fd91650de5c6378
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571298"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711723"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning Machine Learning 作業
 
-Machine Learning 作業 (MLOps) 是以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。
-MLOps 會將這些原則套用至機器學習程式，以便：
+Machine Learning 作業 (MLOps) 是以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，以便：
 
 - 更快速地實驗和開發模型。
 - 更快速地將模型部署到生產環境。
@@ -25,13 +24,13 @@ MLOps 會將這些原則套用至機器學習程式，以便：
 
 Azure Machine Learning 提供下列 MLOps 功能：
 
-- **建立可重現的管線**。 Machine Learning 管線可讓您針對資料準備、定型和評分程式，定義可重複且可重複使用的步驟。
-- **建立可重複使用的軟體環境**  用於定型和部署模型。
-- **從任何地方註冊、封裝及部署模型**。 您可以追蹤使用模型所需的相關中繼資料。
-- **捕捉端對端生命週期的治理資料**。 記錄的資訊可能包括正在發佈模型的人員、進行變更的原因，以及在生產環境中部署或使用模型的時間。
-- **通知並警示生命週期中的事件**。 例如，您可以取得實驗完成、模型註冊、模型部署和資料漂移偵測的警示。
-- **監視應用程式，以瞭解操作與機器學習相關的問題**。 比較定型和推斷之間的模型輸入、探索模型特定的計量，並在您的機器學習基礎結構上提供監視和警示。
-- **使用 Azure Machine Learning 和 Azure Pipelines 自動化端對端機器學習生命週期**。 透過管線，您可以經常更新模型、測試新的模型，並與其他應用程式和服務持續推出新的機器學習模型。
+- **建立可重現的管線。** Machine Learning 管線可讓您針對資料準備、定型和評分程式，定義可重複且可重複使用的步驟。
+- **建立可重複使用的軟體環境** ，以定型和部署模型。
+- **從任何地方註冊、封裝及部署模型。** 您可以追蹤使用模型所需的相關中繼資料。
+- **捕捉端對端生命週期的治理資料。** 記錄的資訊可能包括正在發佈模型的人員、進行變更的原因，以及在生產環境中部署或使用模型的時間。
+- **通知並警示生命週期中的事件。** 例如，您可以取得實驗完成、模型註冊、模型部署和資料漂移偵測的警示。
+- **監視應用程式，以瞭解操作與機器學習相關的問題。** 比較定型和推斷之間的模型輸入、探索模型特定的計量，並在您的機器學習基礎結構上提供監視和警示。
+- **使用 Azure Machine Learning 和 Azure Pipelines 自動化端對端機器學習生命週期。** 透過管線，您可以經常更新模型、測試新的模型，並與其他應用程式和服務持續推出新的機器學習模型。
 
 ## <a name="best-practices-for-mlops-with-azure-machine-learning"></a>使用 Azure Machine Learning MLOps 的最佳作法
 

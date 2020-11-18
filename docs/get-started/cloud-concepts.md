@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04b34a0914ec0be193c670be005af269d0aa2d14
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: c8006f3b83fa4dd07f25c49b02294084c435d13a
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775712"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713780"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解及記錄基礎對齊決策
 
@@ -25,7 +25,7 @@ ms.locfileid: "90775712"
 
 當您完成本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄我們的基本決策。 範本可協助您快速將參與雲端採用生命週期的團隊成員上線，方法是澄清雲端環境的設定和原因。
 
-如果您已經在 Azure 中執行環境，Azure 治理的 [視覺化檢視](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) 可協助您加速檔。 深入瞭解原則、角色型存取控制 (RBAC) 、Azure 藍圖、訂用帳戶等等。 從收集的資料中，工具會在階層架構上提供可見度、建立租使用者摘要，以及建立有關管理群組和訂用帳戶的細微範圍深入解析。 
+如果您已經在 Azure 中執行環境，Azure 治理的 [視覺化檢視](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) 可協助您加速檔。 深入瞭解原則、角色型存取控制 (RBAC) 、Azure 藍圖、訂用帳戶等等。 從收集的資料中，工具會在階層架構上提供可見度、建立租使用者摘要，以及建立有關管理群組和訂用帳戶的細微範圍深入解析。
 
 ## <a name="step-1-understand-how-azure-works"></a>步驟1：瞭解 Azure 的運作方式
 

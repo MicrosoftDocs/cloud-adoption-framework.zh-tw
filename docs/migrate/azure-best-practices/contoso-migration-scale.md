@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bb9a42a911e1a635c3b0c1e6d1b1585feb8cc5b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7662a72505d34db4f488b64dd18374eead09ceb6
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775236"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713083"
 ---
 <!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -50,7 +50,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 它會使用�
 
 Contoso 已規劃並設定 [Azure 基礎結構](./contoso-migration-infrastructure.md) ，並嘗試進行不同的概念證明 (POC) 遷移組合（如上表所述）。 現在已準備好步屬於大規模的完整遷移至 Azure。 Contoso 想要移轉的內容如下。
 
-| Item | 磁碟區 | 詳細資料 |
+| 項目 | 磁碟區 | 詳細資料 |
 | --- | --- | --- |
 | 工作負載 | > 3000 應用程式 | <li> 應用程式會在 Vm 上執行。 <li> 應用程式平臺包括 Windows、SQL Server 和 [燈泡](https://wikipedia.org/wiki/LAMP_(software_bundle))。 |
 | 資料庫 | 大約8500資料庫 | 資料庫包含 SQL Server、MySQL 和于 postgresql。 |
@@ -162,8 +162,8 @@ Contoso 會按照下列方式使用 Azure Migrate：
 
 - 在 vCenter 中，將 Vm 組織成資料夾。 這可讓系統管理員在對特定資料夾中的 Vm 執行評量時，輕鬆地將焦點放在一起。
 - 評估機器之間的相依性。 VM 上必須安裝代理程式才能進行評估。
-  
-  Contoso 會使用自動化指令碼來安裝所需的 Windows 或 Linux 代理程式。 透過編寫指令碼，Contoso 可以將安裝推送到 vCenter 資料夾內的 VM。
+
+Contoso 會使用自動化指令碼來安裝所需的 Windows 或 Linux 代理程式。 透過編寫指令碼，Contoso 可以將安裝推送到 vCenter 資料夾內的 VM。
 
 #### <a name="database-tools"></a>資料庫工具
 
@@ -188,7 +188,7 @@ Contoso 可以考慮採用四種廣泛的遷移策略。
 | 策略 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | 重新裝載 | <li> 這通常稱為「隨即 _轉移_ 」，這是可讓您快速將現有應用程式遷移至 Azure 的無程式碼選項。 <li> 應用程式會以雲端的優點進行遷移，而不會有與程式碼變更相關聯的風險或成本。 | <li> Contoso 可以重新裝載不需要變更程式碼的較不具策略性的應用程式。 |
-| 重構 | <li> 也稱為重新封裝，此策略需要最基本的應用程式程式碼或設定 *變更，以*將應用程式連線至 Azure PaaS，並利用雲端功能。 | <li> Contoso 可以重構策略性應用程式來保留相同的基本功能，但請將其移到 Azure 平臺上執行（例如 Azure App Service）。 <li> 此策略所需變更的程式碼最少。 <li> 另一方面，Contoso 必須維持 VM 平臺，因為 Microsoft 不會管理這一點。 |
+| 重構 | <li> 也稱為重新封裝，此策略需要最基本的應用程式程式碼或設定 *變更，以* 將應用程式連線至 Azure PaaS，並利用雲端功能。 | <li> Contoso 可以重構策略性應用程式來保留相同的基本功能，但請將其移到 Azure 平臺上執行（例如 Azure App Service）。 <li> 此策略所需變更的程式碼最少。 <li> 另一方面，Contoso 必須維持 VM 平臺，因為 Microsoft 不會管理這一點。 |
 | 重新架構 | <li> 此策略會修改或擴充應用程式的程式碼基底，以優化雲端功能和規模的應用程式架構。 <li> 它會將應用程式將其現代化至彈性、可高度擴充、可獨立部署的架構。 <li> Azure 服務可以加速程式、安心地調整應用程式，並輕鬆管理應用程式。 |
 | 重建 | <li> 這種方法會使用雲端原生技術從頭重建應用程式。 <li> Azure PaaS 在雲端提供完整的開發和部署環境。 它消除了軟體授權的一些費用和複雜度。 此外，也不再需要基礎應用程式基礎結構、中介軟體和其他資源。 | <li> Contoso 可以重寫重要的應用程式，以利用無伺服器計算或微服務等雲端技術。 <li> Contoso 將會管理它所開發的應用程式和服務，而 Azure 會管理其他所有專案。 |
 
@@ -329,7 +329,7 @@ Contoso 會依賴 Azure 資訊安全中心進行統一的安全性管理，並�
 
 「安全性中心」可讓您在 Azure 中全面掌握雲端應用程式的安全性並對其進行控制。 Contoso 可以快速偵測威脅並採取動作來回應，以及藉由啟用調適性威脅防護來減少安全性風險。
 
-[深入瞭解](https://azure.microsoft.com/services/security-center) 資訊安全中心。
+深入瞭解資訊 [安全中心](https://azure.microsoft.com/services/security-center)。
 
 ### <a name="monitoring"></a>監視
 

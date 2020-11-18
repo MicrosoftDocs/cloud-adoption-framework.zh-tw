@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d6f5aa596b1012732669224a03472c40e07d347d
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 7cb649e28f0449e5f06ae14277eb137fad4f6135
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333571"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712743"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>法規合規性簡介
 

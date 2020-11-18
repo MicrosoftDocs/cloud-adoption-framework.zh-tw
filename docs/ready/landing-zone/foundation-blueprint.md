@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46ed8211a9206c7eed07760a0452ed97df2e5901
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: bb8d2a7d77bb4ad6cc8ab0f3a391e7aeaa1a4fdd
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776307"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713865"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -41,11 +41,11 @@ CAF 基礎藍圖不會部署登陸區域。 相反地，它會部署建立治理
 
 ### <a name="identity"></a>身分識別
 
-此實選項假設目標訂用帳戶已根據身分 [識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)與 Azure Active Directory 實例相關聯。
+此實選項假設目標訂用帳戶已根據身分 [識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)與 Azure Active Directory 實例相關聯。
 
 ### <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
-此實行選項假設登陸區域已根據 [網路安全性最佳作法](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)，已定義網路拓撲。
+此實行選項假設登陸區域已根據 [網路安全性最佳作法](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，已定義網路拓撲。
 
 ### <a name="resource-organization"></a>資源組織
 
@@ -66,10 +66,10 @@ CAF 基礎藍圖不會部署登陸區域。 相反地，它會部署建立治理
 
 這項實行示範在治理方法的成本管理專業領域中，有一種成熟度的方法。 具體來說，它會示範如何使用 Azure 原則來建立特定 Sku 的允許清單。 限制可部署至登陸區域之資源的類型和大小，可減少超支的風險。
 
-若要加速開發其他治理專業領域的平行開發，請參閱 [管理方法](../../govern/index.md)。 若要繼續成熟治理的成本管理專業領域，請參閱 [成本管理專業領域指南](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)。
+若要加速開發其他治理專業領域的平行開發，請參閱 [管理方法](../../govern/index.md)。 若要繼續成熟治理的成本管理專業領域，請參閱 [成本管理專業領域指南](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)。
 
 > [!WARNING]
-> 當治理專業領域成熟時，可能需要重構。 可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。
+> 當治理專業領域成熟時，可能需要重構。 可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="operations-baseline"></a>作業基準
 
@@ -78,7 +78,7 @@ CAF 基礎藍圖不會部署登陸區域。 相反地，它會部署建立治理
 若要加速操作基準的平行開發，請參閱 [管理方法](../../manage/index.md) ，並考慮部署 [Azure 伺服器管理指南](../../manage/azure-server-management/index.md)。
 
 > [!WARNING]
-> 當作業基準進行開發時，可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。
+> 當作業基準進行開發時，可能需要重構。 具體而言，稍後可能需要將資源 [移至新的訂用帳戶或資源群組](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>業務持續性和災害復原 (BCDR)
 

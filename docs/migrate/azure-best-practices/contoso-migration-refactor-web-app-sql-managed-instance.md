@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e022bafd67489695a5c99b6e0a2a115f213d1bad
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 0f4b2042c5f2dcbd8ab9b0553a86d29ae1ff1b73
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333682"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713457"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -26,11 +26,11 @@ ms.locfileid: "94333682"
 
 Contoso IT 領導小組與商務合作夥伴密切合作，以了解此次移轉所要實現的目標：
 
-- **解決業務成長** 。 Contoso 正在成長，而對內部部署系統和基礎結構造成了壓力。
-- **提高效率** 。 Contoso 必須移除不必要的程式，並簡化開發人員和使用者的流程。 企業亟需快速且不浪費時間或金錢的 IT 服務，進而更快滿足客戶的需求。
-- **增加靈活性** 。 Contoso IT 必須能夠更快因應企業的需求。 它必須能夠以更快的速度回應 marketplace 中的變更，以實現全球經濟的成功。 反應時間不得以方式取得，或成為企業封鎖程式。
-- **擴充** 。 隨著企業順利成長，Contoso IT 必須提供能夠同步成長的系統。
-- **降低成本** 。 Contoso 想要將授權費用降至最低。
+- **解決業務成長。** Contoso 正在成長，而對內部部署系統和基礎結構造成了壓力。
+- **提高效率。** Contoso 必須移除不必要的程式，並簡化開發人員和使用者的流程。 企業亟需快速且不浪費時間或金錢的 IT 服務，進而更快滿足客戶的需求。
+- **增加靈活性。** Contoso IT 必須能夠更快因應企業的需求。 它必須能夠以更快的速度回應 marketplace 中的變更，以實現全球經濟的成功。 反應時間不得以方式取得，或成為企業封鎖程式。
+- **規模。** 隨著企業順利成長，Contoso IT 必須提供能夠同步成長的系統。
+- **降低成本。** Contoso 想要將授權費用降至最低。
 
 ## <a name="migration-goals"></a>移轉目標
 
@@ -102,7 +102,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -118,16 +118,15 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 > [!div class="checklist"]
 >
 > - **步驟1：評定及遷移 web 應用程式。** Contoso 會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來執行遷移前相容性檢查，並將其 web 應用程式遷移至 Azure App Service。
-> - **步驟2：設定 SQL 受控實例** 。 Contoso 需要現有的受控執行個體，以作為內部部署 SQL Server 資料庫的移轉目的地。
-> - **步驟3：透過 Azure 資料庫移轉服務進行遷移** 。 Contoso 會透過 Azure 資料庫移轉服務來遷移應用程式資料庫。
-> - **步驟4：設定 Azure DevOps** 。 Contoso 會建立新的 Azure DevOps 專案，並匯入 Git 存放庫。
-> - **步驟5：設定連接字串** 。 Contoso 會設定連接字串，讓 web 層 web 應用程式、WCF 服務 web 應用程式和 SQL 受控實例可以進行通訊。
-> - **步驟6：在 Azure DevOps 中設定組建和發行管線** 。 在最後一個步驟中，Contoso 會在 Azure DevOps 中設定組建和發行管線，以建立應用程式。 小組接著將管線部署至兩個不同的 web 應用程式。
+> - **步驟2：設定 SQL 受控實例**。 Contoso 需要現有的受控執行個體，以作為內部部署 SQL Server 資料庫的移轉目的地。
+> - **步驟3：透過 Azure 資料庫移轉服務進行遷移**。 Contoso 會透過 Azure 資料庫移轉服務來遷移應用程式資料庫。
+> - **步驟4：設定 Azure DevOps**。 Contoso 會建立新的 Azure DevOps 專案，並匯入 Git 存放庫。
+> - **步驟5：設定連接字串**。 Contoso 會設定連接字串，讓 web 層 web 應用程式、WCF 服務 web 應用程式和 SQL 受控實例可以進行通訊。
+> - **步驟6：在 Azure DevOps 中設定組建和發行管線**。 在最後一個步驟中，Contoso 會在 Azure DevOps 中設定組建和發行管線，以建立應用程式。 小組接著將管線部署至兩個不同的 web 應用程式。
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>步驟1：評定及遷移 web 應用程式
 
-Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來評定及遷移其 web 應用程式。 它們使用 [Microsoft Learning 路徑](/learn/paths/migrate-dotnet-apps-azure/) 作為程式期間的指南。
-簡單來說，系統管理員會執行下列動作：
+Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來評定及遷移其 web 應用程式。 它們使用 [Microsoft Learning 路徑](/learn/paths/migrate-dotnet-apps-azure/) 作為程式期間的指南。 簡單來說，系統管理員會執行下列動作：
 
 - 他們使用 Azure [App Service 遷移評估](https://appmigration.microsoft.com/assessment/) 工具來評估其 web 應用程式之間的任何相依性，並判斷其內部部署 web 應用程式與 Azure App Service 支援的專案之間是否有任何不相容性。
 
@@ -162,16 +161,20 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 1. 部署虛擬網路和子網路之後，他們會將網路對等互連，如下所示：
 
-    - `VNET-SQLMI-EUS2` `VNET-HUB-EUS2` () 的中樞虛擬網路對等互連 `East US 2` 。  
+    - `VNET-SQLMI-EUS2` `VNET-HUB-EUS2` () 的中樞虛擬網路對等互連 `East US 2` 。
+
     - `VNET-SQLMI-EUS2` `VNET-PROD-EUS2` (生產網路) 的對等。
 
       ![對等互連網路的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-peering.png)
 
 1. 他們可設定自訂 DNS 設定。 DNS 設定會先指向 Contoso 的 Azure 網域控制站。 而後指向 Azure DNS。 Contoso Azure 網域控制站的位置如下所示：
 
-    - 位於生產網路的生產 EUS2 子網中，在美國東部2區域中 (VNET-生產 EUS2) 。  
-    - `CONTOSODC3` 位址： `10.245.42.4`  
-    - `CONTOSODC4` 位址： `10.245.42.5`  
+    - 位於生產網路的生產 EUS2 子網中，在美國東部2區域中 (VNET-生產 EUS2) 。
+
+    - `CONTOSODC3` 位址： `10.245.42.4`
+
+    - `CONTOSODC4` 位址： `10.245.42.5`
+
     - Azure DNS 解析程式： `168.63.129.16`
 
     ![網路 DNS 伺服器清單的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
@@ -222,7 +225,8 @@ Contoso 會考量下列因素：
     ![[SQL 受控執行個體] 窗格的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
     部署受控實例之後，ContosoRG 資源群組中會出現兩個新的資源：
-    - 新的 SQL 受控實例。  
+    - 新的 SQL 受控實例。
+
     - 虛擬叢集，以防 Contoso 有多個受控實例。
 
       ![ContosoRG 資源群組中新資源的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
@@ -240,7 +244,7 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-sql-se
 - 他們會使用連線到虛擬網路的 Premium SKU 來建立 Azure 資料庫移轉服務實例。
 - 它們可確保資料庫移轉服務可以透過虛擬網路存取遠端 SQL Server。 這會需要確保 Azure 中的所有連入埠都能在虛擬網路層級、網路 VPN 和裝載 SQL Server 的電腦上 SQL Server。
 - 他們會設定 Azure 資料庫移轉服務：
-  - 建立遷移專案。
+  - 建立移轉專案。
   - 將來源 (內部部署資料庫) 。
   - 選取目標。
   - 選取要遷移的資料庫。
@@ -273,7 +277,7 @@ Contoso 需要為應用程式建置 DevOps 基礎結構和管線。 若要這樣
 
 Contoso 管理員可確保 web 應用程式和資料庫能夠彼此通訊。 若要這樣做，須在程式碼和 Web 應用程式中設定連接字串。
 
-1. 在 WCF 服務的 web 應用程式中，>shwcf-eus2-EUS2 的 [ **設定**  >  **應用程式設定** ] 下，他們會新增名為 **DefaultConnection** 的新連接字串。
+1. 在 WCF 服務的 web 應用程式中，>shwcf-eus2-EUS2 的 [**設定**  >  **應用程式設定**] 下，他們會新增名為 **DefaultConnection** 的新連接字串。
 1. 他們會從 SmartHotel-Registration 資料庫提取連接字串，然後使用正確的認證加以更新。
 
     ![連接字串設定窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
@@ -292,7 +296,7 @@ Contoso 管理員可確保 web 應用程式和資料庫能夠彼此通訊。 若
 
 Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
-1. 在 Azure DevOps 中，他們會選取 [ **建立併發行**  >  **新的管線** ]。
+1. 在 Azure DevOps 中，他們會選取 [**建立併發行**  >  **新的管線**]。
 
     ![Azure DevOps 中 [新增管線] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline1.png)
 
@@ -304,7 +308,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![選取 [選取範本] 窗格以選取 ASP.NET 範本的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline3.png)
 
-1. 它們會使用組建的名稱 **>contososmarthotelrefactor-ASP.NET-CI** ，然後選取 [ **儲存] & 佇列** ，以啟動第一個組建。
+1. 它們會使用組建的名稱 **>contososmarthotelrefactor-ASP.NET-CI** ，然後選取 [ **儲存] & 佇列**，以啟動第一個組建。
 
      ![組建的 [儲存並排在佇列] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline4.png)
 
@@ -319,7 +323,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![[構件 explorer] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline6.png)
 
-1. 他們會選取 [ **發行**  >  **+ 新增管線** ]。
+1. 他們會選取 [**發行**  >  **+ 新增管線**]。
 
     ![顯示 [新增管線] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline7.png)
 
@@ -335,11 +339,11 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
     ![[1 個作業，1個工作] 選項的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
-1. 他們會確認已選取並授權訂用帳戶，然後選取 **應用程式服務名稱** 。
+1. 他們會確認已選取並授權訂用帳戶，然後選取 **應用程式服務名稱**。
 
      ![選取 app service 名稱的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline11.png)
 
-1. 在管線 **上，他們會選取成品** 、選取 [ **+ 新增** 成品]、選取 [ **組建** ] 作為來源類型，然後使用 `ContosoSmarthotel360Refactor` 管線建立。
+1. 在管線 **上，他們會選取成品**、選取 [ **+ 新增** 成品]、選取 [ **組建** ] 作為來源類型，然後使用 `ContosoSmarthotel360Refactor` 管線建立。
 
      ![[新增成品] 窗格上 [組建] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
@@ -347,23 +351,23 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![構件上閃電圖示的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline13.png)
 
-1. 他們會將持續部署觸發程式設定為 **啟用** 。
+1. 他們會將持續部署觸發程式設定為 **啟用**。
 
     ![顯示 [持續部署] 觸發程式設為 [已啟用] 的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline14.png)
 
-1. 系統管理員回到第 **1 階段作業，1項工作，** 然後選取 [ **部署 Azure App Service** 。
+1. 系統管理員回到第 **1 階段作業，1項工作，** 然後選取 [ **部署 Azure App Service**。
 
     ![選取 [部署 Azure App Service] 選項的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
 
-1. 在 [ **選取檔案或資料夾** ] 中，展開 [ **放置** ] 資料夾，選取組建期間建立的檔案，然後 `SmartHotel.Registration.Wcf.zip` 選取 [ **儲存** ]。
+1. 在 [ **選取檔案或資料夾**] 中，展開 [ **放置** ] 資料夾，選取組建期間建立的檔案，然後 `SmartHotel.Registration.Wcf.zip` 選取 [ **儲存**]。
 
     ![選取 WCF 檔案的 [選取檔案或資料夾] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
-1. 他們會選取 [ **管線**  >  **階段** ]，然後選取 [ **+ 新增** ] 以新增的環境 `SHWEB-EUS2` 。 他們會選取另一個 Azure App Service 部署。
+1. 他們會選取 [**管線**  >  **階段**]，然後選取 [ **+ 新增**] 以新增的環境 `SHWEB-EUS2` 。 他們會選取另一個 Azure App Service 部署。
 
     ![新增環境的 [1 個作業，1個工作] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
-1. 他們會重複此程式，將 web 應用程式 *SmartHotel.Registration.Web.zip* 檔案發佈至正確的 web 應用程式，然後選取 [ **儲存** ]。
+1. 他們會重複此程式，將 web 應用程式 *SmartHotel.Registration.Web.zip* 檔案發佈至正確的 web 應用程式，然後選取 [ **儲存**]。
 
     ![選取 WEB 檔案的 [選取檔案或資料夾] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
 
@@ -371,7 +375,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
      ![發行管線摘要的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline19.png)
 
-1. 他們回到 [ **組建** ]，選取 [ **觸發** 程式]，然後選取 [ **啟用持續整合** ] 核取方塊。 此動作會啟用管線，如此一來，當變更認可至程式碼時，就會進行完整的組建和發行。
+1. 他們回到 [ **組建**]，選取 [ **觸發** 程式]，然後選取 [ **啟用持續整合** ] 核取方塊。 此動作會啟用管線，如此一來，當變更認可至程式碼時，就會進行完整的組建和發行。
 
     ![反白顯示 [啟用持續整合] 核取方塊的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
@@ -410,7 +414,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 ### <a name="backups"></a>備份
 
 - Contoso 團隊會在 Azure SQL 受控執行個體中審核資料庫的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
-- 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 [深入了解](/azure/sql-database/sql-database-automated-backups)自動備份。
+- 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 深入瞭解 [自動備份](/azure/sql-database/sql-database-automated-backups)。
 - 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
 - 他們考慮在主要區域中部署 web 應用程式 (`East US 2`) 和次要區域 (`Central US`) 以進行復原。 小組可以設定流量管理員，以確保在發生區域性中斷時進行容錯移轉。
 

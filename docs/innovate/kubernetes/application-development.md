@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 78ee8c9daae963c12b3c88e499e21b38e01142bb
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 9232aab78d714094d84e21cc206cfd3718bd14eb
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333595"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711961"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 

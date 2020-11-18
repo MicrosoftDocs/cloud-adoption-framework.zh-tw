@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 522c3824c52550664d1656970ca2f9881dbe86d1
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: fd02f8755ebd44f7f3e3444772c76bc4357c7071
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432715"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712879"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -47,7 +47,7 @@ Azure 為虛擬網路提供下列功能：
 規劃的其他秘訣如下：
 
 - 虛擬網路位址空間不應與內部部署網路範圍重迭。
-- 重迭的位址可能會導致無法連線的網路，以及無法正常運作的路由。 
+- 重迭的位址可能會導致無法連線的網路，以及無法正常運作的路由。
 - 如果網路重迭，您將需要重新設計網路。
 - 如果您絕對無法重新設計網路， (NAT) 的網路位址轉譯可提供協助。 但應該盡可能避免或限制。
 
@@ -59,8 +59,7 @@ Azure 為虛擬網路提供下列功能：
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>最佳做法：實行中樞和輪輻網路拓撲
 
-中樞和輪輻網路拓撲會在共用服務（例如身分識別和安全性）時隔離工作負載。 中樞是 Azure 虛擬網路，可作為連線的中心點。
-輪輻是使用對等互連連線至中樞虛擬網路的虛擬網路。 共用的服務會部署在中樞中，而個別的工作負載會部署為輪輻。
+中樞和輪輻網路拓撲會在共用服務（例如身分識別和安全性）時隔離工作負載。 中樞是 Azure 虛擬網路，可作為連線的中心點。 輪輻是使用對等互連連線至中樞虛擬網路的虛擬網路。 共用的服務會部署在中樞中，而個別的工作負載會部署為輪輻。
 
 請考慮下列事項：
 
@@ -93,7 +92,7 @@ Azure 為虛擬網路提供下列功能：
 
 下表顯示虛擬網路的範例，其中的位址空間會 `10.245.16.0/20` 分割成子網，以進行計畫的遷移。
 
-| 子網路 | CIDR | 位址 | 使用量 |
+| 子網路 | CIDR | 位址 | 使用方式 |
 | --- | --- | --- | --- |
 | `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | 前端或 web 層 Vm |
 | `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | 應用程式層 VM |

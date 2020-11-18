@@ -7,13 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 29e2e0c50fd201dd1bc0bd4498fd8351257dae02
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775763"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712607"
 ---
+<!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>從大型主機切換至 Azure
@@ -32,7 +33,7 @@ ms.locfileid: "90775763"
 
 小型組織可能需要低於 500 MIPS，而大型組織通常需要超過 5,000 MIPS。 假設每單一 MIPS 需要 $1000 美元的情況下，大型組織每年需花費大約 5 百萬美元來部署 5,000 MIPS 的基礎結構。 針對此規模的一般 Azure 部署，每年的成本評估大約是 MIPS 基礎結構的十分支一。 如需詳細資訊，請參閱 [Azure 移轉的大型主機釋疑](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) \(英文\) 白皮書中的表格 4。
 
-MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zREF 基準測試 \(英文\) 可提供下列評估：
+MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zRef 基準測試提供下列估計值：
 
 - 針對線上 (CICS) 作業，每個在 HP Proliant 伺服器上執行的 Intel 型核心為 288 MIPS。
 
@@ -47,11 +48,11 @@ MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實�
 
 當使用大型主機耦合與 Parallel Sysplex 時，大型主機系統通常會提供五個 9 的可用性 (99.999%)。 但是系統操作員仍需要為了維護和初始程式載入來排程停機時間。 實際的可用性方法有二或三個9，相當於高端的 Intel 型伺服器。
 
-相較之下，Azure 提供以服務等級協定 (SLA) 為基礎的承諾，預設便提供多個 9 的可用性，且透過服務的本機或異地複寫最佳化。
+相較之下，Azure 提供以承諾為基礎的服務等級協定 (Sla) ，其中有多個9的可用性是預設值，以本機或異地複寫服務進行優化。
 
 Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中) 複寫資料，提供額外的可用性。 萬一發生 Azure 失敗，計算資源可以存取本機或區域層級的複寫資料。
 
-當您使用 Azure 平台作為服務 (PaaS) 資源時 (例如 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos Database](/azure/cosmos-db/introduction))，Azure 可以自動處理容錯移轉。 當您使用 Azure 基礎結構即服務 (IaaS) 時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
+當您使用 Azure 平臺即服務 (PaaS) 資源（例如 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos DB](/azure/cosmos-db/introduction)）時，Azure 會自動處理容錯移轉。 當您使用 Azure 基礎結構即服務 (IaaS) 時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
 
 ## <a name="scalability"></a>延展性
 

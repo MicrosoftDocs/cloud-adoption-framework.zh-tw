@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114c366cd01ae28a60e9d9a7fa25f1cfe9f83b72
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: daa24a986e768187f02799d9abe6c5c7ce2e6799
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024533"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711808"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -45,13 +45,13 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 若要指派上一節中所述的原則：
 
-1. 在 Azure 入口網站中，移至 [ **原則**  >  **指派**  >  **指派方案** ]。
+1. 在 Azure 入口網站中，移至 [**原則**  >  **指派**  >  **指派方案**]。
 
     ![入口網站的原則介面螢幕擷取畫面，其中包含指派選項和指派方案選項（稱為 out）。](./media/onboarding-at-scale1.png)
 
-2. 在 [ **指派原則** ] 頁面上，選取省略號 ( ... ) 然後選取管理群組或訂用帳戶，以設定 **範圍** 。 選擇性地選取資源群組。 然後選擇 [ **範圍** ] 頁面底部的 [ **選取** ]。 範圍會決定原則指派給哪些資源或資源群組。
+2. 在 [ **指派原則** ] 頁面上，選取省略號 ( ... ) 然後選取管理群組或訂用帳戶，以設定 **範圍** 。 選擇性地選取資源群組。 然後選擇 [**範圍**] 頁面底部的 [**選取**]。 範圍會決定原則指派給哪些資源或資源群組。
 
-3. 選取 [ **原則定義** ] 旁的省略號 ( **...** ) 以開啟可用定義的清單。 若要篩選計畫定義，請在 [ **搜尋** ] 方塊中輸入 **Azure 監視器** ：
+3. 選取 [**原則定義**] 旁的省略號 (**...**) 以開啟可用定義的清單。 若要篩選計畫定義，請在 [**搜尋**] 方塊中輸入 **Azure 監視器**：
 
     ![針對 V M 方案定義啟用 Azure 監視器的螢幕擷取畫面。](./media/onboarding-at-scale2.png)
 
@@ -63,7 +63,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 6. 選取 [ **受控識別位置** ] 核取方塊。 如果此原則的類型為 [`DeployIfNotExists`](/azure/governance/policy/concepts/effects#deployifnotexists) ，則需要受控識別才能部署原則。 在入口網站中，將會依照核取方塊選取專案的指示建立帳戶。
 
-7. 選取 [指派]  。
+7. 選取 [指派]。
 
 完成嚮導之後，原則指派將會部署至環境。 原則可能需要30分鐘的時間才會生效。 若要進行測試，請在30分鐘之後建立新的 Vm，並根據預設，檢查 VM 上的 Microsoft Monitoring Agent 是否已啟用。
 
@@ -72,7 +72,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 > [!NOTE]
 > 請先建立必要的 [Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account) ，再將 Azure 伺服器管理服務上架到伺服器。
 
-針對內部部署伺服器，您必須手動下載並安裝 [Log Analytics 代理程式和 Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並將其設定為連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [ **設定**  >  **Advanced settings** ]。
+針對內部部署伺服器，您必須手動下載並安裝 [Log Analytics 代理程式和 Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並將其設定為連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**  >  **Advanced settings**]。
 
 ![Azure 入口網站中 Log Analytics 工作區 advanced 設定的螢幕擷取畫面](./media/onboarding-on-premises.png)
 
@@ -86,7 +86,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 建議您為所有伺服器啟用更新管理的解決方案。 適用于 Azure Vm 和內部部署伺服器的更新管理免費。 如果您透過自動化帳戶啟用更新管理，工作區中就會建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理服務所涵蓋的電腦。
 
-若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取 **Update Management** [  >  **Manage machine**  >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
+若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取 **Update Management**[  >  **Manage machine**  >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
 
 ![Azure 入口網站中更新管理的螢幕擷取畫面](./media/onboarding-configuration1.png)
 
@@ -99,9 +99,9 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 #### <a name="opt-in-via-the-azure-portal"></a>透過 Azure 入口網站加入宣告
 
 1. 移至已啟用變更追蹤和清查的自動化帳戶。
-2. 選取 [ **變更追蹤** ]。
+2. 選取 [ **變更追蹤**]。
 3. 選取右上方窗格中的 [ **管理機器** ]。
-4. 選取 [ **在選取的電腦上啟用** ]。 然後選取 [電腦名稱稱] 旁的 [ **新增** ]。
+4. 選取 [ **在選取的電腦上啟用**]。 然後選取 [電腦名稱稱] 旁的 [ **新增** ]。
 5. 選取 [ **啟用** ] 以啟用這些機器的解決方案。
 
 ![Azure 入口網站中變更追蹤的螢幕擷取畫面](./media/onboarding-configuration2.png)
@@ -114,9 +114,9 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 1. 移至與您在先前步驟中設定的自動化帳戶連結的 Log Analytics 工作區。
 
-1. 在 [一般]  下，選取 [已儲存的搜尋]  。
+1. 在 [一般] 下，選取 [已儲存的搜尋]。
 
-1. 在 [ **篩選** ] 方塊中，輸入 **變更追蹤** 以篩選已儲存的搜尋清單。 在結果中，選取 [ **>microsoftdefaultcomputergroup** ]。
+1. 在 [ **篩選** ] 方塊中，輸入 **變更追蹤** 以篩選已儲存的搜尋清單。 在結果中，選取 [ **>microsoftdefaultcomputergroup**]。
 
 1. 輸入電腦名稱稱或 VMUUID，以包含您想要加入變更追蹤的電腦。
 
@@ -137,8 +137,8 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 [ **所有服務** ]，然後選取 [ **管理 + 治理**  >  **解決方案** ]。
-2. 在 [ **方案** ] 視圖中，選取 [ **新增** ]。
+1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
+2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋 **活動記錄分析** ，然後選取它。
 4. 選取 [建立]。
 
@@ -150,14 +150,14 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 [ **所有服務** ]，然後選取 [ **管理 + 治理**  >  **解決方案** ]。
-2. 在 [ **方案** ] 視圖中，選取 [ **新增** ]。
+1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
+2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋 **Azure Log Analytics 代理程式健康** 情況，然後選取它。
 4. 選取 [建立]。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
-建立完成之後，當您選取 [  。
+建立完成之後，當您選取 [ **View** 解決方案] 時，工作區資源實例會顯示 **AgentHealthAssessment**  >  ****。
 
 ### <a name="antimalware-assessment"></a>反惡意程式碼評估
 
@@ -165,14 +165,14 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 [ **所有服務** ]，選取 [選取 **管理 + 治理**  >  **解決方案** ]。
-2. 在 [ **方案** ] 視圖中，選取 [ **新增** ]。
-3. 搜尋，然後選取 [ **反惡意程式碼軟體評定** ]。
+1. 在 Azure 入口網站中，開啟 [**所有服務**]，選取 [**管理 + 治理**  >  **解決方案**]。
+2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
+3. 搜尋，然後選取 [ **反惡意程式碼軟體評定**]。
 4. 選取 [建立]。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
-建立完成之後，當您選取 [  。
+建立完成之後，當您選取 [ **View** 解決方案] 時，工作區資源實例會顯示 **反惡意** 代碼  >  ****。
 
 ### <a name="azure-monitor-for-vms"></a>適用於 VM 的 Azure 監視器
 
@@ -185,7 +185,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 若要啟用 Azure 資訊安全中心的免費層，請遵循下列步驟：
 
 1. 移至 [ **Security Center** 入口網站] 頁面。
-2. 在 [ **原則 & 合規性** ] 底下，選取 [ **安全性原則** ]。
+2. 在 [ **原則 & 合規性**] 底下，選取 [ **安全性原則**]。
 3. 尋找您在右側窗格中建立的 Log Analytics 工作區資源。
 4. 選取該工作區的 [ **編輯設定** ]。
 5. 選取 [定價層]  。

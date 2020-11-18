@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432698"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713049"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -37,7 +37,7 @@ _圖1：登陸區域設計。_
 
 ## <a name="high-level-architecture"></a>高階架構
 
-Enterprise-Scale 的架構是由一組不同的設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：根據 AZURE 虛擬 WAN 網路拓撲的 Enterprise-Scale 架構 (depictured 在 [圖 2]) 上，或根據 [圖 3] (所示的中樞和輪輻架構的傳統 Azure 網路拓撲來定義。   
+Enterprise-Scale 的架構是由一組不同的設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：根據 AZURE 虛擬 WAN 網路拓撲的 Enterprise-Scale 架構 (depictured 在 [圖 2]) 上，或根據 [圖 3] (所示的中樞和輪輻架構的傳統 Azure 網路拓撲來定義。
 
 [![此圖顯示以 Azure 虛擬 WAN 網路拓撲為基礎的雲端採用架構企業規模登陸區域架構。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 

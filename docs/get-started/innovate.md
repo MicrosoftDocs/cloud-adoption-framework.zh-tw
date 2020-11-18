@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 560bbf233bd8648e50192037b1712382dfeeac6f
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c902bed3b665aac6ca41c5881a239a1efe6d2787
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603430"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713729"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
@@ -235,7 +235,7 @@ ms.locfileid: "89603430"
 下列小組可以使用這些後續步驟來繼續提升其工作的成熟度。 這些平行處理並不是線性的，也不應該視為阻礙。 相反地，每個都是平行值串流，可協助您成熟公司的整體雲端就緒程度。
 
 | 小組 | 下一次反復專案 |
-|---|---|
+|--|--|
 | 雲端 &nbsp; 採用 &nbsp; 小組 | 程式[改進](../innovate/considerations/index.md)可讓您深入瞭解在創新方面提供的方法，以影響客戶及推動重複採用。 |
 | 雲端 &nbsp; 策略 &nbsp; 小組 | [策略方法](../strategy/index.md)和[計畫方法](../plan/index.md)是利用採用計畫演進的反復程式。 返回這些總覽頁面，並繼續逐一查看您的商務和技術策略。 |
 | 雲端 &nbsp; 平臺 &nbsp; 小組 | 請重新流覽 [就緒的方法](../ready/index.md) ，以繼續推進支援遷移或其他採用工作的整體雲端平臺。 |

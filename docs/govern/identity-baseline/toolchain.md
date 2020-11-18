@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835cb15479de8cc0303a7dd4c1298ab5f8e606a2
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 757c4ee78b862bf913290d8e2d645b3e0972d427
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604709"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713712"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure 中的身分識別基準工具
 
@@ -66,7 +66,7 @@ ms.locfileid: "89604709"
 | 是否支援 Windows Hello 企業版？ | [金鑰信任模型](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [使用 Intune 的憑證信任模型](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [金鑰信任模型](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [使用 Intune 的憑證信任模型](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [金鑰信任模型](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [憑證信任模型](/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |
 | 多重要素驗證選項有哪些？ | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [具有 Azure AD 條件式存取的自訂控制項 *](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [具有 Azure AD 條件式存取的自訂控制項 *](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure Multi-Factor Authentication server](/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [協力廠商多重要素驗證](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [具有 Azure AD 存取權的自訂控制項](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
 | 支援哪些使用者帳戶狀態？ | 停用的帳戶 <br>  (最多30分鐘的延遲)  | 停用的帳戶 <br><br> 帳戶已鎖定 <br><br> 帳戶已過期 <br><br> 密碼已過期 <br><br> 登入時數 | 停用的帳戶 <br><br> 帳戶已鎖定 <br><br> 帳戶已過期 <br><br> 密碼已過期 <br><br> 登入時數 |
-| 什麼是 Azure AD 條件式存取選項？ | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) <br><br> [AD FS 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
+| Azure AD 中的條件式存取選項有哪些？ | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) | [Azure AD 條件式存取](/azure/active-directory/conditional-access/overview) <br><br> [AD FS 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
 | 是否支援封鎖舊版通訊協定？ | [是](/azure/active-directory/conditional-access/concept-baseline-protection) | [是](/azure/active-directory/conditional-access/concept-baseline-protection) | [是](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
 | 您是否可以自訂登入頁面上的標誌、影像和說明？ | [是，使用 Azure AD Premium](/azure/active-directory/customize-branding) | [是，使用 Azure AD Premium](/azure/active-directory/customize-branding) | [是](/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo) |
 | 支援哪些進階案例？ | [智慧型密碼鎖定](/azure/active-directory/authentication/concept-sspr-howitworks) <br><br> [認證外洩報告](/azure/active-directory/reports-monitoring/concept-risk-events) | [智慧型密碼鎖定](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout) | 多網站低延遲驗證系統 <br><br> [AD FS 外部網路鎖定](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection) <br><br> [與第三方身分識別系統整合](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) |

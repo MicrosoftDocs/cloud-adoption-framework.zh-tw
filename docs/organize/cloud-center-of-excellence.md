@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2c7bf4e4703df1c524f2a7d34bf55e47cb69699b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8e4e1b48d98abb456b3adb68c6fd5aa556fc1b7d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881575"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712454"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>卓越的雲端中心 (CCoE) 功能
 
@@ -63,7 +63,7 @@ CCoE 的每個成員都是負責瞭解所需的條件約束、風險和防護，
 
 這項轉換的範例：
 
-| 案例 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
+| 狀況 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
 |---------|---------|---------|
 | 布建生產 SQL Server | 網路、IT 和資料平臺小組會在幾天或甚至數周的時間內布建各種元件。 | 需要伺服器的團隊部署 Azure SQL Database 的 PaaS 實例。 或者，preapproved 範本可以用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
 | 布建開發環境 | 網路、IT、開發和 DevOps 團隊同意規格和部署環境。 | 開發小組會定義自己的規格，並根據配置的預算部署環境。 |

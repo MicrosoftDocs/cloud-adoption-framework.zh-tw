@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c914d971b97e72d1b5e303fdec7a0df17351b423
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9235a7039ea7c95cd330481700898915e42dc3bb
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574409"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713644"
 ---
 # <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
@@ -68,7 +68,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 網路管理 (全面的) 。
 
-- **AppDevOps**。 允許應用程式擁有者透過 DevOps 模型來建立和管理應用程式資源。 下列清單針對應用程式小組提供建議的 DevOps 角色：
+- **AppDevOps.** 允許應用程式擁有者透過 DevOps 模型來建立和管理應用程式資源。 下列清單針對應用程式小組提供建議的 DevOps 角色：
 
   - 應用程式遷移或轉換。
 

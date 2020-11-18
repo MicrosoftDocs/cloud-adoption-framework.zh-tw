@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712845"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -36,7 +36,7 @@ ms.locfileid: "90776528"
 > Azure 參考架構提供範例範本，可讓您用來實作您自己的周邊網路：
 >
 > - [在 Azure 與您的內部部署資料中心之間執行周邊網路](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [在 Azure 與網際網路之間執行周邊網路](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> - [在 Azure 與網際網路之間執行周邊網路](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常，您的中央 IT 小組和安全性小組會負責定義操作周邊網路的需求。
 

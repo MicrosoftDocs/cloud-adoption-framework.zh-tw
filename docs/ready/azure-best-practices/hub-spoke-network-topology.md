@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 06e01a4356fec567641829f797be01702b7d509b
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 234662ed55a71c11512b2ed9c25903158a090e95
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432681"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712114"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -34,7 +34,8 @@ _中樞和輪輻_ 是一種網路模型，可有效率地管理常見的通訊�
 
 ## <a name="overview"></a>概觀
 
-![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)  
+![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
+
 _圖1：中樞和輪輻網路拓撲的範例。_
 
 如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則 (標示為 `VNet hub` 圖表) ，或根據 Azure 虛擬 WAN (標示為 Azure 虛擬 WAN 的設計， `Virtual WAN` 適用于大規模分支對分支和分支對 Azure 通訊的圖表) 。
@@ -64,7 +65,8 @@ _圖1：中樞和輪輻網路拓撲的範例。_
 
 如果限制可能會產生問題，您可以將模型從單一中樞和輪輻延伸到中樞和輪輻叢集，即可進一步延展架構。 您可以使用虛擬網路對等互連、Azure ExpressRoute、Azure 虛擬 WAN 或站對站 VPN，將一或多個 Azure 區域中的多個中樞互連。
 
-![中樞和輪輻叢集](../../_images/azure-best-practices/network-hub-spokes-cluster.png)  
+![中樞和輪輻叢集](../../_images/azure-best-practices/network-hub-spokes-cluster.png)
+
 _圖2：中樞和輪輻的群集。_
 
 導入多個中樞會增加系統的成本和管理額外負荷。 此狀況只能從使用者效能或災害復原的延展性、系統限制或備援和區域複寫來調整。 在需要多個中樞的案例中，所有中樞都應該致力於提供一組相同的易操作服務。
@@ -77,7 +79,8 @@ _圖2：中樞和輪輻的群集。_
 
 此案例的常見範例是，應用程式處理伺服器位於一個輪輻 (或虛擬網路) 中。 資料庫則部署在多個輪輻 (或虛擬網路) 中。 在此情況下，可以輕易地透過虛擬網路對等互連將輪輻互相連線，而避免透過中樞傳輸。 解決方法是執行仔細的架構和安全性審查，以確保略過中樞並不會略過可能僅存在於中樞的重要安全性或審核點。
 
-![連線到中樞及彼此連線的輪輻](../../_images/azure-best-practices/network-spoke-to-spoke.png)  
+![連線到中樞及彼此連線的輪輻](../../_images/azure-best-practices/network-spoke-to-spoke.png)
+
 _圖3：輪輻彼此連接，以及一個中樞。_
 
 支點也可以與作為中樞的支點互相連接。 這種方法會建立雙層階層：較高層級的輪輻 (層級 0) 會變成階層中較低輪輻 (層級 1) 的中樞。 中樞和輪輻執行的輪輻必須將流量轉送到中央中樞，讓流量可以傳輸至內部部署網路或公用網際網路的目的地。 具有兩層中樞的架構引進複雜路由，以移除簡單中樞和輪輻關聯性的優點。
