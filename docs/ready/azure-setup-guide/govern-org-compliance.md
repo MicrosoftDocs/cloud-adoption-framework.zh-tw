@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d6b4e20d484bb055beaf6998e9aca6f97437217c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ab3b3e0d4012113e2b132c8df1e0bfe89758252d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884465"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711689"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure 中的控管、安全性和合規性
 
@@ -68,7 +68,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 移至 **藍圖：藍圖定義**。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
-1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]。
+1. 提供 **版本** (例如 _1.0_) 和任何 **變更附註**，然後選取 [發佈]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -79,7 +79,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 在 Azure 入口網站中，移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖定義。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
-1. 提供**版本** (例如 _1.0_) 和任何**變更附註**，然後選取 [發佈]。
+1. 提供 **版本** (例如 _1.0_) 和任何 **變更附註**，然後選取 [發佈]。
 
 ::: zone-end
 

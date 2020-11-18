@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e1a97180e2a2a56d5ebd10b118a05a630b64b204
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 7e913c5143b7f276c3457deb7a92cc7bfeeff11d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898143"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713576"
 ---
 # <a name="protect-and-recover-in-azure"></a>Azure 中的保護和復原
 
