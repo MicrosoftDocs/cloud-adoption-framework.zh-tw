@@ -1109,7 +1109,7 @@ items:
                     href: innovate/best-practices/predict.md
                   - name: 機器學習服務
                     items:
-                      - name: 什麼是 Machine Learning
+                      - name: 什麼是機器學習服務？
                         href: innovate\best-practices\machine-learning.md
                       - name: Azure Machine Learning 工作流程
                         href: /azure/machine-learning/concept-azure-machine-learning-architecture?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -1125,7 +1125,7 @@ items:
                         href: innovate\best-practices\conversational-ai.md
                   - name: 知識採礦
                     items:
-                      - name: 什麼是 Azure 認知搜尋
+                      - name: 什麼是 Azure 認知搜尋？
                         href: innovate\best-practices\cognitive-search.md
           - name: 流程改善
             items:
