@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 2abab02b5d73bd69b33c8124fb4500129e97e545
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282921"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712420"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
@@ -32,12 +32,12 @@ Azure Migrate 是集中式的中樞，可評估內部部署伺服器、基礎結
 
 - 統合平台的評估、移轉和進度追蹤。
 - 增強的評估及移轉功能：
-    - 包含 Hyper-v & VMware 的內部部署伺服器。
-    - VMware 虛擬機器對 Azure 的無代理程式移轉。
-    - 資料庫移轉至 Azure SQL Database 或 SQL 受控執行個體
-    - Web 應用程式
-    - 虛擬桌面基礎結構 (VDI) 遷移至 Azure 中的 Windows 虛擬桌面
-    - 使用 Azure 資料箱產品的大型資料集合
+  - 包含 Hyper-v 和 VMware 的內部部署伺服器。
+  - VMware 虛擬機器對 Azure 的無代理程式移轉。
+  - 資料庫移轉至 Azure SQL Database 或 SQL 受控執行個體
+  - Web 應用程式
+  - 虛擬桌面基礎結構 (VDI) 遷移至 Azure 中的 Windows 虛擬桌面
+  - 使用 Azure 資料箱產品的大型資料集合
 - ISV 整合的可擴充方法 (例如 Cloudamize)。
 
 若要使用 Azure Migrate 執行移轉，請遵循下列步驟：
@@ -105,6 +105,7 @@ Azure App Service Migration Assistant 是 [大型應用程式套件的一部分]
 
 1. 其會在 Web 應用程式上執行預先移轉相容性檢查，以評估安裝在 Windows Server 上的特定 Web 應用程式，來判斷是否可以在不修改 Web 應用程式的情況下，進行 Azure App Service 移轉。
 1. 如果評定後確定可移轉 Web 應用程式，Migration Assistant 就會執行移轉。 您必須向 Migration Assistant 提供 Azure 帳戶存取權、選取要使用的資源群組、選取 Web 應用程式的名稱，以及其他詳細資料。
+
 或者，Migration Assistant 會產生一個 Azure Resource Manager 範本，您可以用其來以更自動化且可重複的方式來遷移 Web 應用程式。
 
 #### <a name="migrate-a-web-app-to-azure-app-service"></a>將 Web 應用程式遷移至 Azure App Service
@@ -125,7 +126,7 @@ Migration Assistant 會從收集 Azure 帳戶的重要詳細資料來展開移�
 
 您也可以決定變更 Azure App Service 主控方案和其他設定，例如自動調整和部署位置。
 
-如需詳細資訊，請參閱： 
+如需詳細資訊，請參閱：
 
 [將 ASP.NET 應用程式移轉至 Azure](/learn/paths/migrate-dotnet-apps-azure)
 
