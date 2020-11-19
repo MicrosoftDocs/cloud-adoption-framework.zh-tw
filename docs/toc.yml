@@ -149,7 +149,7 @@ items:
         items:
           - name: 概觀
             href: plan/plan-intro.md
-          - name: Prerequisites
+          - name: 必要條件
             href: plan/prerequisites.md
           - name: 將範本部署到 Azure DevOps
             href: plan/template.md
@@ -411,6 +411,24 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
                   - name: 在 Azure VM 和適用於 MySQL 的 Azure 資料庫上重新裝載 Linux 應用程式
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+              - name: 開放原始碼平台
+                items:
+                  - name: Moodle 移轉
+                    items:
+                      - name: 概觀
+                        href: scenarios/lamp/moodle/index.md
+                      - name: 必要條件
+                        href: scenarios/lamp/moodle/migration-pre.md
+                      - name: 架構和範本
+                        href: scenarios/lamp/moodle/migration-arch.md
+                      - name: 資源描述
+                        href: scenarios/lamp/moodle/migration-resources.md
+                      - name: 移轉步驟
+                        href: scenarios/lamp/moodle/migration-start.md
+                      - name: Azure 基礎結構設定
+                        href: scenarios/lamp/moodle/azure-infra-config.md
+                      - name: 移轉後
+                        href: scenarios/lamp/moodle/migration-post.md
               - name: 開發/測試工作負載
                 items:
                   - name: 將開發/測試環境遷移至 Azure IaaS
@@ -487,7 +505,7 @@ items:
                 items:
                   - name: 重新裝載 VMWare 時的考量
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: Prerequisites
+                  - name: 必要條件
                     items:
                       - name: 保護您的環境
                         href: /azure/vmware-cloudsimple/private-cloud-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
@@ -727,7 +745,7 @@ items:
             items:
               - name: 概觀
                 href: migrate/migration-considerations/index.md
-              - name: Prerequisites
+              - name: 必要條件
                 items:
                   - name: 概觀
                     href: migrate/migration-considerations/prerequisites/index.md
