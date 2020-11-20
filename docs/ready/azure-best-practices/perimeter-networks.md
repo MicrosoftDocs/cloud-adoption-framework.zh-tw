@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 3071c65925a4d96740be8f7314538b60b0559142
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712845"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997364"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 

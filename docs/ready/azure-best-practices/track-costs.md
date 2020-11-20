@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 91a3b4b81bfa9e0847e5f44736e918e145d97d22
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 8b4ed49f9a6eea93a8f9b6095d315f60b3b7ef70
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712947"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997347"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>追蹤營業單位、環境或專案之間的成本
 
@@ -29,7 +29,7 @@ ms.locfileid: "94712947"
 
 ### <a name="classification"></a>分類
 
-「標記」是將資產分類的簡單方式。 標記會使中繼資料與資產產生關聯。 該中繼資料可以用來根據各種資料點以分類資產。 當使用標記來分類資產作為成本管理工作的一部分時，公司通常需要下列標籤：營業單位、部門、收費代碼、地理位置、環境、專案、工作負載或「應用程式分類」。 Azure 成本管理和帳單可以使用這些標記來建立不同的成本資料檢視。
+「標記」是將資產分類的簡單方式。 標記會使中繼資料與資產產生關聯。 該中繼資料可以用來根據各種資料點以分類資產。 當使用標記來分類資產作為成本管理工作的一部分時，公司通常需要下列標籤：營業單位、部門、收費代碼、地理位置、環境、專案、工作負載或「應用程式分類」。 Azure 成本管理 + 計費可以使用這些標記來建立不同的成本資料檢視。
 
 標記是了解任何成本報告中資料的主要方式。 它是任何妥善管理環境的基本部分。 這也是建立任何環境適當治理的第一步。
 
@@ -73,7 +73,7 @@ ms.locfileid: "94712947"
 
 <!-- docutune:casing Owner Contributor Reader -->
 
-Azure 成本管理和帳單支援每個範圍的下列內建角色：
+Azure 成本管理 + 計費支援每個範圍的下列內建角色：
 
 - [擁有](/azure/role-based-access-control/built-in-roles#owner)者：可以查看成本及管理所有專案，包括成本配置。
 - [參與者](/azure/role-based-access-control/built-in-roles#contributor)：可以查看成本及管理所有專案，包括成本設定，但不包括存取控制。
@@ -81,7 +81,7 @@ Azure 成本管理和帳單支援每個範圍的下列內建角色：
 - [成本管理參與者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)：可以查看成本及管理成本設定。
 - [成本管理讀者](/azure/role-based-access-control/built-in-roles#cost-management-reader)：可以查看成本資料和設定。
 
-一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 但 [雲端策略小組](../../organize/cloud-strategy.md) 的成員只應設定為成本管理讀者。 這是因為它們並不是在 Azure 成本管理和帳單工具內設定預算的相關工作。
+一般的最佳做法是，所有小組成員都應該獲指派成本管理參與者的角色。 此角色會授與建立與管理預算和匯出的存取權，以更有效率地監視和報告成本。 但 [雲端策略小組](../../organize/cloud-strategy.md) 的成員只應設定為成本管理讀者。 這是因為它們並不涉及在 Azure 成本管理 + 計費工具內設定預算。
 
 ### <a name="scope"></a>影響範圍
 
@@ -113,13 +113,13 @@ Azure 成本管理和帳單支援每個範圍的下列內建角色：
 
 ## <a name="additional-cost-management-resources"></a>額外的成本管理資源
 
-Azure 成本管理和計費是記錄完善的工具，可用於設定預算，並取得 Azure 或 AWS 的雲端成本可見度。 在您建立妥善管理環境階層的存取權之後，下列文章可協助您使用該工具來監視和控制成本。
+Azure 成本管理 + 計費是妥善記載的工具，可用於設定預算，並取得 Azure 或 AWS 的雲端成本可見度。 在您建立妥善管理環境階層的存取權之後，下列文章可協助您使用該工具來監視和控制成本。
 
-### <a name="get-started-with-azure-cost-management-and-billing"></a>開始使用 Azure 成本管理和帳單
+### <a name="get-started-with-azure-cost-management--billing"></a>開始使用 Azure 成本管理 + 計費
 
-若要開始使用 Azure 成本管理和帳單，請參閱 [如何使用 Azure 成本管理和帳單來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
+若要開始使用 Azure 成本管理 + 計費，請參閱 [如何使用 Azure 成本管理 + 計費來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。
 
-### <a name="use-azure-cost-management-and-billing"></a>使用 Azure 成本管理和帳單
+### <a name="use-azure-cost-management--billing"></a>使用 Azure 成本管理 + 計費
 
 - [建立及管理預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
 - [匯出成本資料](/azure/cost-management-billing/costs/tutorial-export-acm-data)
@@ -128,7 +128,7 @@ Azure 成本管理和計費是記錄完善的工具，可用於設定預算，�
 
 <!-- docutune: "AWS Cost and Usage" -->
 
-### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>使用 Azure 成本管理和帳單來管理 AWS 成本
+### <a name="use-azure-cost-management--billing-to-govern-aws-costs"></a>使用 Azure 成本管理 + 計費來管理 AWS 成本
 
 - [設定 AWS 成本和使用量報告整合](/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [管理 AWS 成本](/azure/cost-management/aws-integration-manage)

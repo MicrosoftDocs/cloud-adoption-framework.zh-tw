@@ -7,13 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e020b1284fedf8ea6fdf45d46ab2d14fa8ea49d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 35f078aeb04c6fda78470e33e27f332f67bdaeee
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712709"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997466"
 ---
+<!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
 # <a name="best-practices-to-secure-and-manage-workloads-migrated-to-azure"></a>保護和管理遷移至 Azure 之工作負載的最佳作法
@@ -85,7 +86,7 @@ Azure 租使用者系統管理員必須啟用安全性功能，以保護工作�
 
 不同于 IaaS，您可以在其中管理自己的 Vm 和基礎結構，而在 PaaS 模型平臺中，基礎結構是由提供者管理。 您可以專注于核心應用程式邏輯和功能。 由於 PaaS 服務類型眾多，因此基於安全性目的，我們會對每個服務進行個別評估。 例如，讓我們看看您可能如何啟用 Azure SQL Database 的加密。
 
-- **Always Encrypted：** 您可以使用 SQL Server Management Studio 中的 Always Encrypted Wizard 來保護待用資料。
+- **Always Encrypted：** 您可以使用 SQL Server Management Studio 中的 Always Encrypted wizard 來保護待用資料。
   - 您可以建立 Always Encrypted 金鑰來加密個別的資料行資料。
   - Always Encrypted 金鑰能以加密的形式儲存在資料庫中繼資料中，或是儲存在受信任的金鑰存放區中，例如 Azure Key Vault。
   - 最可能的情況是，若要使用此功能，您必須進行應用程式變更。
@@ -99,8 +100,8 @@ Azure 租使用者系統管理員必須啟用安全性功能，以保護工作�
 - 啟用 [Windows vm 的 Azure 磁碟加密](/azure/virtual-machines/windows/disk-encryption-overview)。
 - 瞭解 [Azure 儲存體待用資料加密](/azure/storage/common/storage-service-encryption)。
 - 閱讀 [Always Encrypted 總覽](/azure/sql-database/sql-database-always-encrypted-azure-key-vault)。
-- 瞭解 [SQL Database 和 Azure synapse 的透明資料加密](/azure/sql-database/transparent-data-encryption-azure-sql)。
-- 深入瞭解 [AZURE SQL 透明資料加密與客戶管理的金鑰](/azure/sql-database/transparent-data-encryption-byok-azure-sql)。
+- 瞭解 [SQL Database 和 Azure Synapse 的透明資料加密](/azure/sql-database/transparent-data-encryption-azure-sql)。
+- 瞭解如何 [使用客戶管理的金鑰來 Azure SQL Database 透明資料加密](/azure/sql-database/transparent-data-encryption-byok-azure-sql)。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>最佳做法：使用反惡意程式碼保護 Vm
 
@@ -237,7 +238,7 @@ Azure 提供能提供進階安全性選項的其他安全性功能。 請注意�
 訂用帳戶擁有者會具有訂用帳戶中所有資源群組和資源的存取權。
 
 - 請謹慎地將這個貴重的權限指派給其他人員。 了解指派這些權限類型的後果，將能大幅協助保持環境的安全及穩定性。
-- 請確定您將資源置於適當的資源群組中：
+- 請確定您將資源放在適當的資源群組中：
   - 將具有類似生命週期的資源配對在一起。 在理想情況下，您應該不需要在刪除整個資源群組時移動某個資源。
   - 支援某個功能或工作負載的資源應該被放置在一起，以簡化管理工作。
 
@@ -322,7 +323,7 @@ Azure 原則會評估您的資源，掃描那些不符合您原則規範的資�
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>最佳做法：實行 BCDR 策略
 
-規劃商務持續性和嚴重損壞修復 (BCDR) 是您應在 Azure 遷移規劃過程中完成的重要練習。 就法律規定而言，您的合約可能包含 *強制不可抗力* 子句，因為有更大的強制，例如颶風或地震。 但您也有義務確保服務會繼續執行，並在發生嚴重損壞時復原所需的功能。 您達成此義務的能力，可能會左右您公司的未來發展。
+規劃商務持續性和嚴重損壞修復 (BCDR) 是您應在 Azure 遷移規劃過程中完成的重要練習。 就法律規定而言，您的合約可能包含 _強制不可抗力_ 子句，因為有更大的強制，例如颶風或地震。 但您也有義務確保服務會繼續執行，並在發生嚴重損壞時復原所需的功能。 您達成此義務的能力，可能會左右您公司的未來發展。
 
 廣義來說，您的 BCDR 策略必須考慮：
 
@@ -347,13 +348,13 @@ Azure 原則會評估您的資源，掃描那些不符合您原則規範的資�
 
 #### <a name="azure-backup"></a>Azure 備份
 
-Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備份可以備份 Azure VM 磁碟，以及 Azure 檔案 (預覽)。 Azure 檔案儲存體提供雲端中的檔案共用，可透過伺服器訊息區存取。
+Azure 備份會建立儲存在 Azure 儲存體中的資料復原點。 Azure 備份可以備份 Azure VM 磁碟，以及 Azure 檔案 (預覽)。 Azure 檔案儲存體提供雲端中的檔案共用，可透過伺服器訊息區 (SMB) 來存取。
 
 您可以透過下列方式使用 Azure 備份備份 Vm：
 
 - **從 VM 設定直接備份。** 您可以直接從 Azure 入口網站中的 VM 選項，直接搭配 Azure 備份來備份 VM。 您每天可以備份一次 VM，而且您可以視需要還原 VM 磁片。 Azure 備份會採用應用程式感知的資料快照集，且 VM 上不會安裝任何代理程式。
 - **在復原服務保存庫中直接備份。** 您可以部署 Azure 備份復原服務保存庫，來備份您的 IaaS VM。 這會提供單一位置來追蹤和管理備份，以及細微的備份和還原選項。 在檔案和資料夾層級，備份一天最多三次。 它無法感知應用程式，且不支援 Linux。 使用這個方法，在您要備份的每個 VM 上安裝 Microsoft Azure 復原服務 (MARS) 代理程式。
-- **保護 VM 以 Azure 備份 server。** Azure 備份 server 免費提供 Azure 備份。 VM 會備份到本機 Azure 備份 server 儲存體。 然後，您會將 Azure 備份伺服器備份至保存庫中的 Azure。 備份可感知應用程式，並針對備份頻率和保留期提供完整的細微控制。 您可以在應用層級進行備份，例如 SQL Server 或 SharePoint 備份。
+- **保護 VM 以 Azure 備份 server。** Azure 備份 server 免費提供 Azure 備份。 VM 會備份到本機 Azure 備份 server 儲存體。 然後，您會將 Azure 備份伺服器備份至保存庫中的 Azure。 備份可感知應用程式，並具有備份頻率和保留的完整細微性。 您可以在應用層級進行備份，例如 SQL Server 或 SharePoint 備份。
 
 基於安全性，Azure 備份會使用 AES-256 來加密進行中的資料。 它會透過 HTTPS 將它傳送至 Azure。 Azure 中已備份的待用資料會使用 [Azure 儲存體加密](/azure/storage/common/storage-service-encryption)來加密。
 
@@ -429,7 +430,7 @@ Azure 受控磁片會管理與 VM 磁片相關聯的儲存體帳戶，以簡化 
 
 這兩種案例具有不同的解決方式，但在這兩種情況下，您需要深入瞭解使用狀況和效能監視的情況。
 
-- Azure 監視器有助於呈現這些計量，並提供警示、自動調整、事件中樞和邏輯應用程式的回應。
+- Azure 監視器有助於呈現這些計量，並提供警示、自動調整、事件中樞和 Logic Apps 的回應。
 - 您也可以整合協力廠商 SIEM 應用程式，以監視 Azure 記錄檔，以取得審核和效能事件。
 
   ![Azure 監視器的螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/monitor.png)
@@ -446,7 +447,7 @@ Azure 受控磁片會管理與 VM 磁片相關聯的儲存體帳戶，以簡化 
 
 Azure 資源會產生相當多的記錄計量和遙測資料。 根據預設，大部分的資源類型都沒有啟用診斷記錄。 透過在資源上啟用診斷記錄，您可以查詢記錄資料，並根據它建置警示和劇本。
 
-當您啟用診斷記錄時，每個資源都會有特定的類別集合。 您可以選取一或多個記錄類別，以及記錄資料的儲存位置。 記錄可以被傳送至儲存體帳戶、事件中樞或 Azure 監視器記錄。
+當您啟用診斷記錄時，每個資源都會有特定的類別集合。 您可以選取一或多個記錄類別，以及記錄資料的儲存位置。 記錄可以傳送至儲存體帳戶、事件中樞或 Azure 監視器記錄。
 
 ![診斷記錄的螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/diagnostics.png)
 _圖14：診斷記錄。_
@@ -507,9 +508,9 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 
 搭配最新的作業系統和軟體更新來將 Azure VM 保持在最新狀態，是一件規模龐大的工作。 能夠呈現所有 Vm、找出所需的更新，並自動推送這些更新非常重要。
 
-- 您可以在 Azure 自動化中使用更新管理來管理作業系統更新。 這適用于執行部署在 Azure、內部部署和其他雲端提供者中的 Windows 和 Linux 電腦的電腦。
-- 使用「更新管理」來快速評估所有代理程式電腦上可用更新的狀態，並管理更新安裝。
-- 您可以直接從 Azure 自動化帳戶啟用 Vm 的更新管理。 您也可以在 Azure 入口網站中從 VM 頁面更新單一 VM。
+- 您可以使用 Azure 自動化中的更新管理來管理作業系統更新。 這適用于執行部署在 Azure、內部部署和其他雲端提供者中的 Windows 和 Linux 電腦的電腦。
+- 使用更新管理以快速評估所有代理程式電腦上可用更新的狀態，並管理更新安裝。
+- 您可以從 Azure 自動化帳戶直接為 VM 啟用更新管理。 您也可以在 Azure 入口網站中從 VM 頁面更新單一 VM。
 - 此外，您可以向 System Center Configuration Manager 註冊 Azure Vm。 然後，您可以將 Configuration Manager 工作負載遷移至 Azure，並從單一 web 介面進行報告和軟體更新。
 
   ![VM 更新的圖表。 ](./media/migrate-best-practices-security-management/updates.png)
@@ -544,7 +545,7 @@ Azure 在 Azure 自動化中有變更追蹤解決方案：
 - 瞭解 [變更追蹤](/azure/automation/automation-change-tracking)。
 - 瞭解 [Azure 自動化功能](/azure/automation/automation-intro)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 檢閱其他最佳做法：
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 9c1377bfed389d435403f9f72dd6ac4e48ed8ee8
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378931"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997381"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -22,7 +22,7 @@ ms.locfileid: "94378931"
 
 組織您的雲端資產，以支援營運管理和會計需求。 定義完善的命名和元資料標記慣例有助於快速找出及管理資源。 這些慣例也有助於透過計費和回報會計機制，將雲端使用量成本與商務小組產生關聯。
 
-確切的資源表示和命名是安全性目的不可或缺的。 發生安全性事件時，迅速找出受影響的系統、其潛在的業務衝擊，以及它們所使用的內容，對於做出良好的風險決策而言很重要。 安全性服務（例如 [Azure 資訊安全中心](https://docs.microsoft.com/azure/security-center/security-center-introduction) 和 [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) 參考資源）及其相關聯的記錄/警示資訊（依資源名稱）。
+確切的資源表示和命名是安全性目的不可或缺的。 發生安全性事件時，迅速找出受影響的系統、其潛在的業務衝擊，以及它們所使用的內容，對於做出良好的風險決策而言很重要。 安全性服務（例如 [Azure 資訊安全中心](/azure/security-center/security-center-introduction) 和 [Azure Sentinel](/azure/sentinel) 參考資源）及其相關聯的記錄/警示資訊（依資源名稱）。
 
 Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)。 本指引提供詳細的建議，以支援企業雲端採用工作。
 
@@ -91,7 +91,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | API 管理服務實例 | apim       |
 | 受控識別                | 識別碼         |
 
-### <a name="networking"></a>網路功能
+### <a name="networking"></a>網路
 
 | 資產類型                            | 名稱前置詞 |
 |---------------------------------------|-------------|
@@ -127,7 +127,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 受控磁片 (OS)  | osdisk |
 | 受控磁片 (資料)  | disk |
 | VM 儲存體帳戶 | stvm |
-| Azure Arc 啟用的伺服器 | 圓弧 |
+| 已啟用 Azure Arc 的伺服器 | 圓弧 |
 | Azure Arc 啟用的 Kubernetes 叢集 | arck |
 | 容器登錄 | 鉻 |
 | 容器實例 | ci |
@@ -136,7 +136,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | App Service 環境 | ase |
 | App Service 方案 | 餐 |
 | Web 應用程式 | 應用 |
-| 函式應用程式 | func |
+| 函數應用程式 | func |
 | 雲端服務 | 無法 |
 | 通知中樞 | contoso.ntf |
 | 通知中樞命名空間 | ntfns- |
@@ -192,7 +192,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 服務匯流排佇列   | sbq-        |
 | 服務匯流排主題   | sbt        |
 
-### <a name="management-and-governance"></a>管理和治理
+### <a name="management-and-governance"></a>管理與治理
 
 | 資產類型 | 名稱前置詞 |
 |--|--|
@@ -205,7 +205,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | Application Insights | appi- |
 | 復原服務保存庫 | rsv- |
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -226,14 +226,14 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 應用程式名稱          | 與資源相關聯的應用程式、服務或工作負載名稱。                                                                                                                                       | _ApplicationName_ | _{應用程式名稱}_                                               |
 | 核准者名稱             | 負責核准此資源相關成本的人員。                                                                                                                                                     | _人員_        | _電子郵件_                                                  |
 | 需要的/核准的預算  | 配置給此應用程式、服務或工作負載的金額。                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | _BusinessUnit_    | _財務_ 、 _行銷_ 、 _{產品名稱}_ 、 _CORP_ 、 _共用_ |
+| 業務單位             | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此標記可能是單一公司或共用的頂層組織元素。 | _BusinessUnit_    | _財務_、 _行銷_、 _{產品名稱}_、 _CORP_、 _共用_ |
 | 成本中心               | 與此資源相關聯的會計成本中心。                                                                                                                                                                | _CostCenter_      | _數量_                                                 |
-| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                       | _DR_              | _任務關鍵性_ 、 _關鍵_ 、 _重要_                |
+| 災害復原         | 應用程式、工作負載或服務的業務關鍵性。                                                                                                                                                       | _DR_              | _任務關鍵性_、 _關鍵_、 _重要_                |
 | 專案的結束日期   | 排定淘汰應用程式、工作負載或服務的日期。                                                                                                                                         | _日期_         | _更新_                                                   |
-| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_ 、 _開發_ 、 _QA_ 、 _階段_ 、 _測試_                       |
+| 環境               | 應用程式、工作負載或服務的部署環境。                                                                                                                                                     | _Env_             | _生產_、 _開發_、 _QA_、 _階段_、 _測試_                       |
 | 擁有人名稱                | 應用程式、工作負載或服務的擁有者。                                                                                                                                                                      | _擁有者_           | _電子郵件_                                                  |
 | 要求者名稱            | 要求建立此應用程式的使用者。                                                                                                                                                                 | _要求者_       | _電子郵件_                                                  |
-| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _Dev_ 、 _銅牌_ 、 _銀_ 級、 _金_ 級                          |
+| 服務類別             | 應用程式、工作負載或服務的服務等級協定層級。                                                                                                                                              | _ServiceClass_    | _Dev_、_銅牌_、_銀_ 級、_金_ 級                          |
 | 專案的開始日期 | 初次部署應用程式、工作負載或服務的日期。                                                                                                                                                  | _起始_       | _更新_                                                   |
 
 ## <a name="example-names"></a>範例名稱
@@ -257,7 +257,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 受控識別                | 資源群組                        | 識別碼\<App or service name\>                                  | 識別碼-appcn-keda-生產-eus-001                                                                         |
 
 > [!NOTE]
-> 本檔中上述和其他位置的範例名稱會參考三位數填補 (\<\#\#\#\>) 。 即。  mktg-生產- *001*
+> 本檔中上述和其他位置的範例名稱會參考三位數填補 (\<\#\#\#\>) 。 即。 mktg-生產-*001*
 >
 > 在設定管理資料庫 (CMDB) 、IT 資產管理工具或傳統的帳戶處理工具中管理資產時，填補有助於人類的可讀性和排序。 當部署的資產集中管理成為較大型清查或 IT 資產組合的一部分時，填補方法會與這些系統用來管理清查命名的介面對齊。
 >
@@ -289,7 +289,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 虛擬機器             | 資源群組 | Vm\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
 | VM 儲存體帳戶          | 全球         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
 | Web 應用程式                     | 全球         | 應用程式- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
-| 函式應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
+| 函數應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
 | 雲端服務               | 全球         | 可能- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{cloudapp.net}]        | <li> could-navigator-prod-001.azurewebsites.net <li> could-accountlookup-dev-001.azurewebsites.net |
 | 通知中樞            | 資源群組 | contoso.ntf\<App Name\>-\<Environment\>                                    | <li> contoso.ntf-navigator-生產 <li> contoso.ntf-排放-開發 |
 | 通知中樞命名空間 | 全球         | ntfns-\<App Name\>-\<Environment\>                                  | <li> ntfns-navigator-生產 <li> ntfns-排放-開發 |

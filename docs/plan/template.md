@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8c5dd7d7e1b40172c6dc996bc865d72ac532f50c
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 0a4329dbb8c13e4778f791e5055d15d9783d2554
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681413"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997415"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
@@ -40,13 +40,13 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 若要準備工作站進行大量編輯，請參閱 [使用 Microsoft Excel 大量加入或修改工作專案](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
 
-有些使用者可能會想要使用 Project 來追蹤其工作、建立待處理專案並指派資源。 以下是將 [專案連接至 Azure DevOps](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)的步驟。
+有些使用者可能會想要使用 Microsoft Project 來追蹤其工作、建立待處理專案並指派資源。 以下是將 [Microsoft Project 連接到 Azure DevOps](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)的步驟。
 
 ## <a name="use-the-cloud-adoption-plan"></a>使用雲端採用方案
 
 雲端採用方案會依活動類型來組織活動：
 
-- **Epics：**_長篇故事_代表雲端採用生命週期的整體階段。
+- **Epics：**_長篇故事_ 代表雲端採用生命週期的整體階段。
 - **功能：** 功能是用來在每個階段中組織特定的目標。 比方說，特定工作負載的遷移是一項功能。
 - **使用者案例：** 使用者案例群組會根據特定目標，進入活動的邏輯集合。
 - 工作 **：** 工作是要完成的實際工作。
@@ -72,7 +72,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 這五篇文章有助於開始管理您的採用工作所需的每個調整工作。 下一個步驟可讓您開始進行對齊練習。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 藉由 [定義和排列工作負載的優先順序，](./workloads.md)開始調整您的方案專案。
 
