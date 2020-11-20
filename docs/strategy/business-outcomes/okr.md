@@ -7,14 +7,14 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 92e193bd14969ad45cb717f22a5ffd10a5dca661
-ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
+ms.openlocfilehash: c40ffd25ef19d25ee1436090b0053e0f02257359
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93352071"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996888"
 ---
-<!--docutune:casing WorkBoard -->
+<!-- docutune:casing WorkBoard -->
 
 # <a name="measure-business-outcomes-using-objectives-and-key-results-okrs"></a>使用目標和關鍵結果來測量商務成果 (OKRs) 
 
@@ -88,7 +88,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 1. 增加5% 的銷售參與率
 1. 減少8% 的交易關閉時間
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 五個步驟可協助您的組織使用 OKRs 繼續進行：
 
@@ -102,7 +102,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 
 **步驟5：改善：** 繼續改進、重新討論和重新思考如何在整個組織中進一步連接。 試算表中的 OKRs 可能很有用，但組織最能受益于參與目標的每個人，並從對齊的資料取得見解。
 
-請聯絡 [WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ?debug=true%2F%3FignoreAutoSignIn%3Dtrue&tab=Overview) 以開始使用。
+請聯絡 [WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ) 以開始使用。
 
 > [!div class="nextstepaction"]
 > [調整學習計量的工作量](../learning-metrics.md)

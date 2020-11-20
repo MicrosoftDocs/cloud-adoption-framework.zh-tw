@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 42e1e6ef830aa0f5bdc9eadf6346f2a360c19e53
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5280611c88caa3aa2ebb70f615eae8e7b5ff73e4
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877053"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994440"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>建立雲端轉換的財務模型
 
@@ -57,7 +57,7 @@ ms.locfileid: "88877053"
 
 投入資本以取得資產時，該項投資有可能是基於財務或稅務用途，目的是要在資產的預期使用期限內產生持續性的效益。 有些公司會將折舊列為稅務利益。 其他人會看到它是一種已認可且持續的費用，類似于每年 IT 預算的其他週期性費用。
 
-請與財務辦公室交談，找出是否有可能刪除折舊，以及是否要對成本差異做出正面貢獻。
+與財務辦公室交談，以找出是否有可能刪除折舊，以及是否要對成本差異做出正面貢獻。
 
 ### <a name="physical-asset-recovery"></a>實體資產回收
 
@@ -104,7 +104,7 @@ ms.locfileid: "88877053"
 
 如果重新整理週期經過核准且已預算，則雲端轉換有助於消除該成本。 如果已規劃重新整理週期，但尚未核准，則雲端轉換可以避免資本支出。 這兩個降低都會新增至成本差異。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [雲端帳戶](./cloud-accounting.md) 處理模型。
 

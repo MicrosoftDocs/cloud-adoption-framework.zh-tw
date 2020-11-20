@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: f4942f91b5ac265679a8cfb6545be9b81d459550
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510578"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995919"
 ---
 # <a name="compare-common-cloud-operating-models"></a>比較常見的雲端作業模型
 
-作業模型是唯一的，而且會根據其目前的需求和限制，以其支援的業務為基礎。 但是，這種唯一性不建議 *了雪花*作業模型。 客戶作業模型有幾個常見的模式。 本文概述四個最常見的模式。
+作業模型是唯一的，而且會根據其目前的需求和限制，以其支援的業務為基礎。 但是，這種唯一性不建議 _了雪花_ 作業模型。 客戶作業模型有幾個常見的模式。 本文概述四個最常見的模式。
 
 ## <a name="operating-model-comparison"></a>操作模型比較
 
@@ -68,7 +68,7 @@ ms.locfileid: "89510578"
 
 |  | 分散式 ops | 集中式 ops | 企業營運 | 分散式 ops |
 |--|--|--|--|--|
-| **起點** | [Azure 架構良好的架構 (WAF) ](/azure/architecture/framework/) | Azure 登陸區域： [開始-小型選項](../ready/landing-zone/implementation-options.md) | Azure 登陸區域： [CAF 企業規模](../ready/enterprise-scale/implementation.md) | [業務配合](../manage/considerations/business-alignment.md) |
+| **起點** | [Azure Well-Architected Framework (WAF) ](/azure/architecture/framework/) | Azure 登陸區域： [開始-小型選項](../ready/landing-zone/implementation-options.md) | Azure 登陸區域： [CAF 企業規模](../ready/enterprise-scale/implementation.md) | [業務配合](../manage/considerations/business-alignment.md) |
 | **迭 代** | 專注于工作負載可讓小組在 WAF 中反復查看。 | [開始-小型] 選項需要在每個方法上進行額外的反復專案，但可在雲端採用工作成熟時進行。 | 如參考執行所示，未來的反復專案通常著重于次要設定的新增專案。 | 請參閱 [Azure 登陸區域的執行選項](../ready/landing-zone/implementation-options.md) ，以開始使用最符合您作業基準的選項。 遵循該選項的設計原則中所定義的反復專案路徑。 |
 
 ## <a name="decentralized-operations"></a>分散式作業
@@ -81,7 +81,7 @@ ms.locfileid: "89510578"
 - **不同的優點：** 藉由將工作負載和業務小組完全掌控設計、組建和作業，讓創新的速度發揮最大效益。
 - **不同的缺點：** 減少跨工作負載的標準化、透過共用服務的規模經濟，以及一致的治理集中式合規性工作。
 - **風險：** 這種方法會在管理工作負載組合時帶來風險。 由於工作負載小組較不可能有專屬於中央 IT 職能的特殊小組，因此某些組織會將此作業模型視為高風險選項，特別是需要遵循協力廠商合規性需求的公司。
-- **指導方針：** 非集中式作業僅限於工作負載層級決策。 Microsoft Azure 架構良好的架構是設計用來支援在該範圍內所做的決定。 雲端採用架構中的程式和指引，可能會增加非集中式作業所需的額外負荷。
+- **指導方針：** 非集中式作業僅限於工作負載層級決策。 Microsoft Azure Well-Architected Framework 的設計目的，是要支援在該範圍內所做的決定。 雲端採用架構中的程式和指引，可能會增加非集中式作業所需的額外負荷。
 
 ### <a name="advantages-of-decentralized-operations"></a>分散式作業的優點
 
@@ -100,7 +100,7 @@ ms.locfileid: "89510578"
 - **責任：** 缺乏集中式支援的團隊表示工作負載小組完全負責治理、安全性、作業及變更管理。 當這些工作未在程式碼審核和發行管線中自動化時，這就是而損及。
 - **標準化：** 跨工作負載組合的標準化可能會變成變數且不一致。
 - **作業支援：** 通常會錯過調整效率。 作為跨多個工作負載的統一最佳做法。
-- **專長：** 小組成員有更高的責任，可針對應用程式設計和設定內的治理、安全性、作業及變更管理決策做出明智的決策。 您應經常查閱 Microsoft Azure 架構良好的審查和 Azure 架構良好的架構，以改善所需的專業知識。
+- **專長：** 小組成員有更高的責任，可針對應用程式設計和設定內的治理、安全性、作業及變更管理決策做出明智的決策。 您應經常查閱 Microsoft Azure Well-Architected 評論和 Azure Well-Architected 架構，以改善所需的專業知識。
 - **登陸區域設計：** 登陸區域不是工作負載專屬的，而且不會考慮採用此方法。
 - **基本公用程式：** (如果有任何) 基礎服務跨工作負載共用，則降低調整效率。
 - **責任分隔：** 更高的 DevOps 和開發小組需求會提高從這些小組提高許可權的使用。 如果需要區分職責，則需要大量投資 DevOps 成熟度才能以這種方式運作。
@@ -130,7 +130,7 @@ ms.locfileid: "89510578"
 
 ### <a name="disadvantages-of-centralized-operations"></a>集中式作業的缺點
 
-- **成本管理：** 中央小組很少對工作負載架構有充分的瞭解，以產生工作負載層級的具影響力優化。 這會限制來自妥善調整的工作負載作業所能節省的成本。 此外，缺乏工作負載架構的理解可能會導致集中式成本優化，直接影響妥善架構工作負載的效能、規模或其他要素。 將全企業成本變更套用至高設定檔工作負載之前，請先完成 Microsoft Azure 良好的架構審查，並將其視為中央 IT 團隊。
+- **成本管理：** 中央小組很少對工作負載架構有充分的瞭解，以產生工作負載層級的具影響力優化。 這會限制來自妥善調整的工作負載作業所能節省的成本。 此外，缺乏工作負載架構的理解可能會導致集中式成本優化，直接影響妥善架構工作負載的效能、規模或其他要素。 將全企業成本變更套用至高設定檔工作負載之前，Microsoft Azure 的 Well-Architected 評論應由中央 IT 團隊完成和考慮。
 - **責任：** 集中生產支援和存取權會在較少的人員上提高營運負擔。 它也會對這些人員帶來更大的壓力，以對已部署的工作負載執行更深入的評論，以驗證是否符合詳細的安全性、治理和合規性需求。
 - **標準化：** 中央 IT 方法讓您難以調整標準化規模，而不需要對中央 IT 人員進行線性調整。
 - **作業支援：** 不是上面所列的缺點和風險。 這種方法最大的缺點，是與調整創新優先順序的重大規模和轉移相關聯。
@@ -200,7 +200,7 @@ ms.locfileid: "89510578"
 
 這種方法的優點和缺點是特意空白。 當您完成組合的商務一致性之後，請參閱上面的「主流作業模型」一節，以清楚瞭解優點和缺點。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解與操作模型相關聯的術語。 這些術語可協助您瞭解操作模型如何融入企業規劃的更大主題。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2aa6cd6c81dfa7f4d6719851622c75ab462031f4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 8640ea8c6e9e346502382c329f506ab5b933b609
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713831"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997228"
 ---
 # <a name="improve-landing-zone-security"></a>改善登陸區域安全性
 
@@ -20,7 +20,7 @@ ms.locfileid: "94713831"
 
 ## <a name="landing-zone-security-best-practices"></a>登陸區域安全性最佳作法
 
-下列參考架構和最佳作法清單提供改進登陸安全性的方法範例：
+下列參考架構和最佳作法清單提供改進登陸區域安全性的方法範例：
 
 - [Azure 資訊安全中心](/azure/security-center/security-center-get-started?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：將訂用帳戶上架到「安全性中心」。
 - [Azure Sentinel](/azure/sentinel/quickstart-onboard?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)：將 Azure Sentinel 上線，以提供 **安全性資訊事件管理 (SIEM)** 和 **安全性協調流程自動化回應 (SOAR)** 解決方案。
@@ -37,7 +37,7 @@ ms.locfileid: "94713831"
 
 ![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何 [改善登陸區域作業](./landing-zone-operations.md) 以支援重要的應用程式。
 

@@ -7,12 +7,12 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1977d66b5bfc387e94b33106087ddf1df0c2ee20
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 7031a8feb3b034b394e7c437e58f5aca3189a23f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712862"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996973"
 ---
 # <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
@@ -22,7 +22,7 @@ ms.locfileid: "94712862"
 
 ## <a name="1-people-educate-teams-about-the-cloud-security-journey"></a>1. 人員：教育團隊關於雲端安全性旅程
 
-*小組必須瞭解他們所在的旅程。*
+_小組必須瞭解他們所在的旅程。_
 
 事項：教育您的安全性和 IT 小組 **瞭解** 雲端安全性旅程，以及他們將流覽的變更，包括：
 
@@ -49,7 +49,7 @@ Microsoft 已在旅程至雲端的客戶和我們自己的 IT 組織所學到的
 
 ## <a name="2-people-educate-teams-on-cloud-security-technology"></a>2. 人員：教育小組雲端安全性技術
 
-*人們必須瞭解他們的進展。*
+_人們必須瞭解他們的進展。_
 
 **什麼是**：確保您的小組有時間在保護雲端資源的技術教育上進行設定，包括：
 
@@ -92,7 +92,7 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **事項：指定** 負責為企業 Azure 環境進行各類安全性決策的人員。
 
-**原因**：清除安全性決策的擁有權可加速雲端採用 *並* 提高安全性。 缺乏的情況通常會造成不相關的問題，因為沒有人有能力進行決策、沒有人知道誰要要求決策，而且沒有人有主動性研究明智的決策。 這項摩擦通常會妨礙商務目標、開發人員時程表、IT 目標和安全性保證，進而導致：
+**原因**：清除安全性決策的擁有權可加速雲端採用 **並** 提高安全性。 缺乏的情況通常會造成不相關的問題，因為沒有人有能力進行決策、沒有人知道誰要要求決策，而且沒有人受到激勵研究明智的決策。 這項摩擦通常會妨礙商務目標、開發人員時程表、IT 目標和安全性保證，進而導致：
 
 - 停止等待安全性核准的專案
 - 無法等待安全性核准的不安全部署
@@ -105,14 +105,14 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 這些是需要安全性決策的一般區域、描述，以及哪些小組通常會進行決策。
 
-| 決策         | 描述           | 一般小組  |
+| 決策         | Description           | 一般小組  |
 | ------------- |-------------| -----|
-| 網路安全性 | Azure 防火牆的設定和維護、網路虛擬裝置 (以及相關聯的路由) 、Waf、Nsg、Asg 等。 |    *[基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md)小組通常著重于網路安全性*  |
-| 網路管理 | 企業級的虛擬網路和子網配置  | *一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組* |
-| 伺服器端點安全性 | 監視及修復伺服器安全性 (修補、設定、端點安全性等 )   | *通常 [中央 IT 營運](../organize/central-it.md) 和 [基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md) 小組共同合作* |
-| 事件監視和回應 | 調查和補救 SIEM 或來源主控台中的安全性事件 (Azure 資訊安全中心、Azure AD Identity Protection 等 )  | *一般 [安全性作業](../organize/cloud-security-operations-center.md) 小組* |
-| 原則管理 | 設定使用角色型存取控制的方向 (RBAC) 、Azure 資訊安全中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | *通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同* |
-| 身分識別安全性與標準 | Azure AD 目錄、PIM/PAM 使用量、MFA、密碼/同步處理設定、應用程式識別標準的設定方向 | *通常是身分 [識別與金鑰管理](../organize/cloud-security-identity-keys.md)  +  [原則以及標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同*  |
+| 網路安全性 | Azure 防火牆的設定和維護、網路虛擬裝置 (以及相關聯的路由) 、Waf、Nsg、Asg 等。 | _[基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md)小組通常著重于網路安全性_  |
+| 網路管理 | 企業級的虛擬網路和子網配置  | _一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組_ |
+| 伺服器端點安全性 | 監視及修復伺服器安全性 (修補、設定、端點安全性等 )   | _通常 [中央 IT 營運](../organize/central-it.md) 和 [基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md) 小組共同合作_ |
+| 事件監視和回應 | 調查和補救 SIEM 或來源主控台中的安全性事件 (Azure 資訊安全中心、Azure AD Identity Protection 等 )  | _一般 [安全性作業](../organize/cloud-security-operations-center.md) 小組_ |
+| 原則管理 | 設定使用角色型存取控制的方向 (RBAC) 、Azure 資訊安全中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | _通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_ |
+| 身分識別安全性與標準 | Azure AD 目錄、PIM/PAM 使用量、MFA、密碼/同步處理設定、應用程式識別標準的設定方向 | _通常是身分 [識別與金鑰管理](../organize/cloud-security-identity-keys.md)  +  [原則以及標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_  |
 
 > [!NOTE]
 >
@@ -121,9 +121,9 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 另請參閱 Azure 安全性基準測試 [GS-3：讓組織角色、職責和責任保持一致](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-3-align-organization-roles-responsibilities-and-accountabilities)
 
-## <a name="4-process-update-incident-response-ir-processes-for-cloud"></a>4. 進程：更新雲端 (IR) 進程的事件回應
+## <a name="4-process-update-incident-response-processes-for-cloud"></a>4. 進程：更新雲端的事件回應程式
 
-*您沒有時間規劃危機期間的危機。*
+_您沒有時間規劃危機期間的危機。_
 
 **什麼**：更新處理常式並準備分析師，以回應您 Azure 雲端平臺上的安全性事件 (包括您已採用) 的任何 [原生威脅偵測工具](../get-started/security.md#step-1-establish-essential-security-practices) 。 更新程式、準備您的小組，以及實務模擬的攻擊，讓他們在事件調查、補救和威脅搜尋期間都能以最佳方式執行。
 
@@ -133,8 +133,8 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **誰**：現代化 IR 程式通常是由 [安全性作業](../organize/cloud-security-operations-center.md) 所導致，並支援其他群組的知識與專業知識。
 
-- *贊助* -此程式現代化通常是由安全性作業總監或對等專案贊助。
-- *執行* -將現有的程式 (或第一次撰寫) 是一項共同作業的工作，其中包括：
+- **贊助：** 這項程式現代化通常是由安全性作業總監或對等專案來贊助。
+- **執行：** 將現有的程式 (或第一次撰寫) 是一項共同作業的工作，其中包括：
 
   - **[安全性作業](../organize/cloud-security-operations-center.md)** 事件管理小組或領導階層–會產生更新來處理和整合重要的外部專案關係人，包括法律和溝通/公共關係小組
   - **[安全性作業](../organize/cloud-security-operations-center.md)** 安全性分析師-提供技術事件調查和分級的專業知識
@@ -235,8 +235,8 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **誰**：密碼和多重要素方案通常是由身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 及/或 [安全性架構](../organize/cloud-security-architecture.md)所導致。
 
-- *贊助* -這通常是由 CISO、CIO 或身分識別總監贊助
-- *執行* -這是一項共同作業，牽涉到
+- **贊助：** 這通常是由 CISO、CIO 或身分識別總監贊助
+- **執行：** 這是一項共同作業的工作，牽涉到
   - [原則和標準](../organize/cloud-security-policy-standards.md) 小組建立明確的需求
   - 執行原則的身分[識別和金鑰管理](../organize/cloud-security-identity-keys.md)或[中央 IT 作業](../organize/central-it.md)
   - [安全性合規性管理](../organize/cloud-security-compliance-management.md) 監視以確保合規性
@@ -267,8 +267,8 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **誰**：
 
-- *贊助*：這項網路安全性策略更新通常是由安全性領導力和/或 IT 領導階層贊助
-- *執行*：將這些整合到您的雲端網路安全性策略，是一項共同作業的工作，包括：
+- **贊助：** 這項網路安全性策略更新通常是由安全性領導力和/或 IT 領導階層贊助
+- **執行：** 將這些整合到您的雲端網路安全性策略，是一項共同作業的工作，包括：
 
   - **[安全性架構](../organize/cloud-security-architecture.md)** -使用雲端網路與雲端網路安全性潛在客戶建立雲端網路安全性架構。
   - **雲端網路領導** ([中央 IT 營運](../organize/central-it.md)) + **雲端網路安全性的潛在客戶** ([基礎結構安全性小組](../organize/cloud-security-infrastructure-endpoint.md)) 
@@ -335,8 +335,8 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **誰**：這通常是由 [安全性架構](../organize/cloud-security-architecture.md) 或身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 小組所推動的跨小組工作。
 
-- *贊助* -這通常是由身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 和 [安全性架構](../organize/cloud-security-architecture.md) 所贊助 (但某些組織可能需要 CISO 或 CIO 的贊助) 
-- *執行* –這是一項共同作業的工作，其中包括：
+- **贊助：** 這通常是由身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 和 [安全性架構](../organize/cloud-security-architecture.md) 所贊助 (但某些組織可能需要 CISO 或 CIO 的贊助) 
+- **執行：** 這是一項共同作業的工作，包括：
   - **[安全性架構](../organize/cloud-security-architecture.md)：** 納入安全性和 IT 架構檔和圖表
   - **[原則和標準](../organize/cloud-security-policy-standards.md)：** 符合規範的檔原則和監視
   - 身分 **[識別和金鑰管理](../organize/cloud-security-identity-keys.md)** 或 **[集中 IT 作業](../organize/central-it.md)**，藉由啟用功能並支援帳戶、教育等的開發人員來執行此原則。
@@ -372,8 +372,8 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **誰**：這通常是由 [安全性架構](../organize/cloud-security-architecture.md) 或身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 小組所推動的跨小組工作。
 
-- *贊助* -這通常是由 [安全性架構](../organize/cloud-security-architecture.md) 或身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md)  所贊助 (但某些組織可能需要 CISO 或 CIO) 的贊助。
-- *執行* –這是一項共同作業的工作，牽涉到
+- **贊助：** 這通常是由 [安全性架構](../organize/cloud-security-architecture.md) 或身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md)  所贊助 (但某些組織可能需要 CISO 或 CIO) 的贊助。
+- **執行：** 這是一項共同作業的工作，牽涉到
   - **[安全性架構](../organize/cloud-security-architecture.md)：** 結合安全性和 IT 架構圖表與檔。
   - **[原則和標準](../organize/cloud-security-policy-standards.md)：** 符合規範的檔原則和監視。
   - 身分 **[識別和金鑰管理](../organize/cloud-security-identity-keys.md)** 或 **[集中 IT 作業](../organize/central-it.md)**，藉由啟用功能並支援帳戶、教育版等開發人員來執行此原則。
@@ -390,7 +390,7 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 **技術：** 針對非人力帳戶（例如服務或自動化），請使用 [受控](/azure/active-directory/managed-identities-azure-resources/overview)識別。 Azure 受控識別可以向支援 Azure AD authentication 的 Azure 服務和資源進行驗證。 透過預先定義的存取授與規則來啟用驗證，以避免在原始程式碼或設定檔中使用硬式編碼的認證。
 
-針對不支援受控識別的服務，請使用 Azure AD，改為在資源層級上建立具有限制許可權的 [服務主體](/azure/active-directory/develop/app-objects-and-service-principals) 。 我們建議您設定具有憑證認證的服務主體，並切換回用戶端密碼。 在這兩種情況下， [Azure Key Vault](/azure/key-vault/general/overview) 可以搭配使用 azure 受控識別，讓執行時間環境 (例如 azure function) 可以從金鑰保存庫取得認證。
+針對不支援受控識別的服務，請使用 Azure AD，改為在資源層級建立具有限制許可權的 [服務主體](/azure/active-directory/develop/app-objects-and-service-principals) 。 我們建議您設定具有憑證認證的服務主體，並切換回用戶端密碼。 在這兩種情況下， [Azure Key Vault](/azure/key-vault/general/overview) 可以搭配使用 azure 受控識別，讓執行時間環境 (例如 azure function) 可以從金鑰保存庫取得認證。
 
 另請參閱 Azure 安全性基準測試 [識別碼-2：安全且自動地管理應用程式識別](/azure/security/benchmarks/security-controls-v2-identity-management#id-2-manage-application-identities-securely-and-automatically)。
 
@@ -405,17 +405,17 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 在許多組織中一致地播放的其中一個範例是資產的分割：
 
 - _網路安全性小組_ 開發了一套將一般 _網路_ 分割的策略，以根據實體網站、指派的 IP 位址位址/範圍或類似的) 來提高安全性 (
-- 身分 *識別小組* 會個別根據其對組織的瞭解和知識，為群組和 Active Directory 組織單位開發策略， (ou) 。
-- *應用程式小組* 通常會發現很難使用這些系統，因為它們是以有限的輸入和瞭解商務營運、目標和風險來設計的。
+- 身分 _識別小組_ 會個別根據其對組織的瞭解和知識，為群組和 Active Directory 組織單位開發策略， (ou) 。
+- _應用程式小組_ 通常會發現很難使用這些系統，因為它們是以有限的輸入和瞭解商務營運、目標和風險來設計的。
 
 在發生這種情況的組織中，小組經常會經歷與防火牆例外的衝突，而這會對安全性 (例外狀況造成負面影響，通常是核准的) 和產能 (部署對於商務需求) 的應用程式功能會變慢
 
-雖然安全性可以藉由強制執行重要的思考來建立狀況良好的衝突，但這項衝突只會產生妨礙目標的不良衝突。 如需詳細資訊，請參閱 [安全性策略指引](../strategy/define-security-strategy.md#modernize-your-security-strategy)中的 *適當安全性分歧層級*。
+雖然安全性可以藉由強制執行重要的思考來建立狀況良好的衝突，但這項衝突只會產生妨礙目標的不良衝突。 如需詳細資訊，請參閱 [安全性策略指引：正確層級的安全性摩擦](../strategy/define-security-strategy.md#modernize-your-security-strategy)。
 
-**誰**：
+**誰：**
 
-- *贊助* -通常由 CIO、CISO 和 (CTO 共同贊助的整合策略，通常會有一些高階元素的商務領導力支援) ，以及每個小組的代表探討。
-- *執行* -每個人都必須實行安全性策略，因此它應該整合各小組的輸入，以提升擁有權、購買和成功的可能性。
+- **贊助：** 整合策略通常會由 CIO、CISO 和 CTO 共同贊助 (通常會有針對某些高階元素) 的業務領導支援，以及每個小組的代表探討。
+- **執行：** 每個人都必須實行安全性策略，因此它應該整合各小組的輸入，以提升擁有權、購買和成功的可能性。
   - **[安全性架構](../organize/cloud-security-architecture.md)：** 帶領您致力於建立安全性策略和產生的架構、主動收集小組的意見反應，並將其記錄在各種觀眾的簡報、檔和圖表中。
   - **[原則和標準](../organize/cloud-security-policy-standards.md)：** 會將適當的元素捕獲到標準和原則，然後監視合規性。
   - **所有技術 IT 和安全性小組：** 提供輸入需求，然後配合並實行企業策略。
@@ -430,11 +430,11 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 - **穩定但有彈性：** 策略應維持相對一致且穩定，但架構和檔可能需要變更，以增加清楚，並配合雲端的動態本質。 例如，即使您從使用協力廠商新一代防火牆轉移至 Azure 防火牆，以及調整圖表/如何執行的指引，篩選出惡意的外部流量仍會保持一致。
 - **從分割開始：** 在雲端採用的過程中，您的小組將解決許多非常龐大的策略主題，但是您必須從某處開始。 我們建議您以企業資產分割來開始安全性策略，因為這是一項基本決策，在稍後需要進行變更，且需要商務輸入和許多技術團隊。
 
-Microsoft 已發佈在 [這段影片](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 中將分割策略套用至 Azure 的指引，以及將 [企業分割](/security/compass/governance#enterprise-segmentation-strategy) 的相關檔，並讓 [網路安全性](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)一致。
+Microsoft 已發佈將 [分割策略套用至 Azure](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 的影片指引，以及 [企業分割](/security/compass/governance#enterprise-segmentation-strategy) 的相關檔，並讓 [網路安全性](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)一致。
 
 雲端採用架構包含指引來協助您的小組：
 
 - **[建立雲端策略小組](../get-started/team/cloud-strategy.md)：** 在理想的情況下，安全性應該整合至現有的雲端策略。
 - **[打造或現代化安全性策略](../strategy/define-security-strategy.md)：** 符合目前雲端服務和新式威脅的商務和安全性目標。
 
-另請參閱 Azure 安全性基準測試 [治理和策略](/azure/security/benchmarks/security-controls-v2-governance-strategy)。
+另請參閱 [Azure 安全性基準測試治理和策略](/azure/security/benchmarks/security-controls-v2-governance-strategy)。

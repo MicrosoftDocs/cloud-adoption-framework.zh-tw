@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 15a288751d42bc230824fa31fa78a2a335647c28
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 597b7ef27d8feb4f6caa85c0b315f5143fa393cb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712284"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995545"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>雲端安全性事件準備的功能
 

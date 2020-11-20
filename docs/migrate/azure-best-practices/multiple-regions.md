@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f24f29b9d910c97da2dc1109db8b186c0dfef0bd
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 372dc33a6088f2a5ccf1421abd40eb2b71448975
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432630"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996021"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure 區域決策指南
 
@@ -23,7 +23,7 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 - **容量：** 每個區域都有最大容量。 這可能會影響哪些類型的訂用帳戶可以部署哪些類型的服務，以及在何種情況下。 這與訂用帳戶配額不同。 如果您打算大規模地將資料中心遷移到 Azure，您可以洽詢當地的 Azure 現場小組或客戶經理，確認您可以根據所需的規模進行部署。
 - **條件約束：** 某些條件約束會放置在特定區域中的服務部署上。 例如，某些區域只能作為備份或容錯移轉目標。 其他值得注意的條件約束是[資料主權需求](https://azure.microsoft.com/global-infrastructure/geographies)。
 - **主權：** 特定區域專屬於特定的主權實體。 雖然所有區域都是 Azure 區域，但這些主權區域會與其余的 Azure 完全隔離。 它們不一定是由 Microsoft 管理，而且可能會受限於特定類型的客戶。 這些主權區域包括：
-  - [Azure China](https://azure.microsoft.com/global-infrastructure/china)
+  - [Azure China 21Vianet](https://azure.microsoft.com/global-infrastructure/china)
   - [Azure 德國](https://azure.microsoft.com/global-infrastructure/germany)： Azure 德國被取代為德國的標準非主權 Azure 區域。
   - [Azure 美國政府](https://azure.microsoft.com/global-infrastructure/government)
   - [澳大利亞](https://azure.microsoft.com/global-infrastructure/australia)的兩個區域是由 Microsoft 管理，但提供給澳大利亞政府及其客戶和承包商。 因此，這些區域會攜帶類似于其他主權雲端的用戶端條件約束。
@@ -82,9 +82,9 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 | 區域        | Country     | 當地員工 | 本機外部使用者   | 本機資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | 美國         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | Canada      | 否              | 客戶              | 是                         | 是                           |
-| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 無網路           | 是                           |
-| 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
+| 北美洲 | 加拿大      | No              | 客戶              | 是                         | 是                           |
+| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 無網路           | Yes                           |
+| 亞太地區  | 南韓 | Yes             | 合作夥伴               | 是                         | 否                            |
 
 ## <a name="relevance-of-data-sovereignty"></a>資料主權的相關性
 
@@ -121,7 +121,7 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 - **在每個受影響的國家/地區執行使用者設定檔分析：** 請務必及早瞭解遷移程式的一般使用者路由。 變更全球租用線路並將 ExpressRoute 等連線新增至雲端資料中心會讓網路功能延遲好幾個月。 請盡早在程序中解決這一點。
 - **初始數位資產合理化：** 每次在遷移策略中引進複雜性時，您都應該完成初步的數位資產合理化。 請參閱 [數位資產合理化](../../digital-estate/index.md)的指引。
   - **其他數位資產需求：** 建立標記原則，以識別受資料主權需求影響的任何工作負載。 所需的標記應該從數位資產合理化開始，並帶到遷移遷移後的資產。
-- **評估中樞和輪輻模型：** 分散式系統通常會共用共同的相依性。 這些相依性通常可以透過中樞和輪輻模型的執行來解決。 雖然這類模型不在遷移程式的範圍內，但在 [準備好](../../ready/index.md)的程式的未來反覆運算期間，應該將其標示為考慮。
+- **評估中樞和輪輻模型：** 分散式系統通常會共用共同的相依性。 這些相依性通常可透過實作中樞和輪輻模型來加以解決。 雖然這類模型不在遷移程式的範圍內，但在 [準備好](../../ready/index.md)的程式的未來反覆運算期間，應該將其標示為考慮。
 - **遷移待處理專案的優先順序：** 當需要網路變更以支援支援多個區域之工作負載的生產環境部署時，雲端策略小組應該追蹤和管理有關這些網路變更的升級。 更高層級的 executive 支援藉由釋出策略小組來調整待處理專案的優先順序，並確保網路變更不會封鎖全域工作負載，以協助加速變更。 這類工作負載應該只在完成網路變更之後設定優先順序。
 
 這些必要條件有助於建立程式，以在執行遷移策略時解決這種複雜性。

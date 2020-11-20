@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4668d9a35d51f40322946f239e5d66373d83d144
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 16a9a7c0bd33503bc9ae9f0bf37a7dca4faa87e3
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572998"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996599"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -24,24 +24,24 @@ ms.locfileid: "88572998"
 
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>資產應在移轉期間還是之後進行最佳化？
 
-是否應該在遷移期間或之後優化資產？ 簡單的答案是**兩者皆可**。 不過，這並非全然正確。 如需說明，請參閱兩個最佳化資源大小的基本案例：
+是否應該在遷移期間或之後優化資產？ 簡單的答案是 **兩者皆可**。 不過，這並非全然正確。 如需說明，請參閱兩個最佳化資源大小的基本案例：
 
 - **已規劃的大小調整。** 資產常會出現明顯過大和使用量過低，而且應在部署期間調整大小的情形。 在此情況下，要判斷資產是否已成功調整大小，必須在移轉後進行使用者接受度測試。 如果進階使用者在測試期間未遇到效能或功能下降的情況，您即可認定資產已成功調整大小。
 - **優化。** 如果不清楚最佳化需求的情況下，IT 小組應使用資料導向的方法來管理資源大小。 IT 小組可以使用資產效能的基準測試，做出有關解決方案最適當大小、服務、規模和架構的明智決策。 然後，他們可以在移轉後調整大小並測試效能理論。
 
 在移轉期間，請使用有根據的猜測並進行調整大小的實驗。 不過，要進行真正的資源最佳化，必須要有以雲端環境中的實際效能為基礎的資料。 為了執行真正的最佳化，IT 小組必須先實作監視效能和資源使用率的方法。
 
-## <a name="benchmark-and-optimize-with-azure-cost-management-and-billing"></a>使用 Azure 成本管理和帳單進行基準測試和優化
+## <a name="benchmark-and-optimize-with-azure-cost-management--billing"></a>使用 Azure 成本管理 + 計費進行基準測試和優化
 
-[Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview) 以透明和精確度來管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
+[Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) 會以透明和精確度來管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
 
 歷史資料有助於管理成本，因為它可分析隨時間變化的使用量和成本以辨識趨勢，而這些趨勢隨後可用來預測未來的費用。 成本管理也包含有用的預估成本報告。 成本配置可根據標記原則來分析成本，藉以管理成本。 您可將成本配置用於回報/退款，以顯示資源使用量和相關成本，進而影響消費行為或對租用戶客戶收費。 存取控制可確保使用者和小組只能存取所需的成本管理資料，以協助管理成本。 警示可以在出現異常消費或超支時，透過自動通知協助您管理成本。 警示也可以在出現異常消費和超支風險時，自動通知利害關係人。 多種不同報告皆支援以預算和成本閾值為基礎的警示。
 
 ## <a name="improve-efficiency"></a>改善效率
 
-使用成本管理和計費，判斷最佳的 VM 使用量、識別閒置的 Vm，或移除閒置的 Vm 和未連結的磁片。 使用大小調整最佳化和低效率報告中的資訊，可建立縮減或移除閒置 VM 的計劃。
+使用 Azure 成本管理 + 計費來決定最佳的 VM 使用量、識別閒置的 Vm，或移除閒置的 Vm 和未連結的磁片。 使用大小調整最佳化和低效率報告中的資訊，可建立縮減或移除閒置 VM 的計劃。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在工作負載經過測試和最佳化後，即可[準備工作負載以進行升階](./ready.md)。
 

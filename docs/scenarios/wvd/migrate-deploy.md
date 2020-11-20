@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99f7bc2f33e3aa5eec08ca0d5b9cca5f85e55063
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: b6034f20eb29473217fca39aff18fe96476b8fcb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108386"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994372"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -46,7 +46,7 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 ### <a name="application-and-desktop-considerations"></a>應用程式與桌面的考慮
 
-某些角色可能相依于舊版解決方案，與 Windows &nbsp; 10 多會話不相容。 在這些情況下，某些角色可能需要專用的桌面。 在部署和測試之前，可能不會探索到此相依性。
+某些角色可能相依于舊版解決方案，與 Windows &nbsp; 10 企業版多會話不相容。 在這些情況下，某些角色可能需要專用的桌面。 在部署和測試之前，可能不會探索到此相依性。
 
 如果在程式中延遲發現，未來的反復專案應配置給繼承應用程式的現代化或遷移。 這會降低桌面體驗的長期成本。 這些未來的反復專案應該根據現代化的整體定價影響以及與專用桌面相關聯的額外成本，來優先處理和完成。 為了避免管線中斷和企業成果的實現，這種優先順序應該不會影響目前的反覆運算。
 
@@ -74,6 +74,6 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 在 Windows 虛擬桌面遷移或部署的生產環境範圍中，將所有考慮納入考慮之後，就可以開始處理。 採用反復的步調，採用小組現在會部署主機集區、應用程式和使用者設定檔。 完成此階段之後，就可以開始 [測試和上線使用者](./migrate-release.md) 的部署後工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 [將 Windows 虛擬桌面部署發行至生產環境](./migrate-release.md)

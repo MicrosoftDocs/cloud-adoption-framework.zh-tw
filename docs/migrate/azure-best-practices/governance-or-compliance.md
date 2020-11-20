@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f38e8de88c38ef27ca6148bd5ff61c1dfdbc1b7e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8449ccec7252e35f0ed113c3d9c7cb29de792716
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574800"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996174"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -30,7 +30,7 @@ ms.locfileid: "88574800"
 
 **國際標準組織 (ISO) 27001 合規性藍圖：** 如果您的組織需要遵守 ISO 合規性標準， [iso 27001 共用服務藍圖範例](/azure/governance/blueprints/samples/iso27001-shared) 可以成為更有效的 MVP。 藍圖可以產生更豐富的治理條件約束，稍早在反復的流程中。 [ISO 27001 App Service 環境/SQL Database 工作負載藍圖範例](/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會在共用服務藍圖上展開，以對應控制項並部署應用程式環境的通用架構。
 
-**雲端採用架構企業規模登陸區域：** 您可能需要更健全的治理起點。 如果有，請考慮採用 [雲端採用架構的企業規模登陸區域](../../ready/enterprise-scale/index.md)。 雲端採用架構的企業規模登陸區域方法著重于在24個月內擁有長期目標 (的採用小組) 裝載超過1000的資產 (應用程式、基礎結構或資料資產) 在雲端中。 雲端採用架構企業規模登陸區域是針對這些大型雲端採用工作的複雜治理案例*的選擇。*
+**雲端採用架構企業規模登陸區域：** 您可能需要更健全的治理起點。 如果有，請考慮採用 [雲端採用架構的企業規模登陸區域](../../ready/enterprise-scale/index.md)。 雲端採用架構的企業規模登陸區域方法著重于在24個月內擁有長期目標 (的採用小組) 裝載超過1000的資產 (應用程式、基礎結構或資料資產) 在雲端中。 雲端採用架構企業規模登陸區域是針對這些大型雲端採用工作的複雜治理案例的選擇。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>可供完成必要條件的合作關係選項
 
@@ -38,7 +38,7 @@ ms.locfileid: "88574800"
 
 - **雲端基礎：** 使用 [混合式雲端基礎](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) 解決方案，建立客戶的核心 Azure 設計、模式和治理架構。 將客戶的需求對應至最適當的參考架構。 實行包含共用服務和 IaaS 工作負載的最小可行產品。
 - **雲端現代化：** 使用 [雲端現代化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) 解決方案作為將應用程式、資料和基礎結構移至符合企業需求之雲端的全方位方法。 您也可以在雲端部署之後優化和現代化。
-- **使用雲端創新：** 透過 [雲端卓越的雲端中心 (CCoE) ](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) 解決方案來與客戶互動。 它會實行敏捷式方法來捕捉商務需求，並重複使用與安全性、合規性和服務管理原則一致的部署套件。 它也會維護 Azure 平臺與操作程式的對齊。
+- **使用雲端創新：** 透過 [雲端卓越的雲端中心 (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) 解決方案來與客戶互動。 它會實行敏捷式方法來捕捉商務需求，並重複使用與安全性、合規性和服務管理原則一致的部署套件。 它也會維護 Azure 平臺與操作程式的對齊。
 
 ## <a name="assess-process-changes"></a>評定程序變更
 
@@ -66,7 +66,7 @@ ms.locfileid: "88574800"
 
 在此過程中，專案計劃應該包含雲端治理小組針對生產升級規劃的每個工作負載執行合規性審查的時間配置。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 返回檢查清單，以重新評估遷移工作的任何其他範圍需求。
 

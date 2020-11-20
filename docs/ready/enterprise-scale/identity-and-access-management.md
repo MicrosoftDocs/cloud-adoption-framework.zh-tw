@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: f5c05b97515203270f33d9b97c62652ddabd6169
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432664"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997194"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -51,7 +51,7 @@ _圖1：身分識別和存取管理。_
 
 - 使用 Azure AD [RBAC](/azure/role-based-access-control/overview) 來管理資源的資料平面存取（可能的話）。 範例為 Azure Key Vault、儲存體帳戶或 SQL 資料庫。
 - 針對具有 Azure 環境存取權限的任何使用者，部署 Azure AD 條件式存取原則。 這麼做可提供另一種機制，協助保護受控制的 Azure 環境不受未經授權的存取。
-- 針對任何具有 Azure 環境許可權的使用者，強制執行多重要素驗證 (MFA) 。 MFA 強制是許多合規性架構的需求。 它可大幅降低認證竊取和未經授權存取的風險。
+- 針對具有 Azure 環境許可權的任何使用者強制執行多重要素驗證。 強制執行多重要素驗證是許多合規性架構的要件。 它可大幅降低認證竊取和未經授權存取的風險。
 - 使用 [Azure AD Privileged Identity Management (PIM) ](/azure/active-directory/privileged-identity-management/pim-configure) 來建立零的長期存取和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和程式的延伸模組、如所述使用 Azure 原生工具，或視需要使用兩者。
 - 當您授與對資源的存取權時，請在 Azure AD PIM 中的 Azure 控制平面資源使用「僅限 Azure AD」的群組。
   - 如果已經有群組管理系統，請將內部部署群組新增至「僅限 Azure AD」群組。
@@ -60,9 +60,9 @@ _圖1：身分識別和存取管理。_
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
 - 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用量 | 動作 | 沒有任何動作 |
+| 角色 | 使用方式 | 動作 | 沒有任何動作 |
 |---|---|---|---|
-| Azure 平臺擁有者 (亦即內建的擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
+| Azure 平臺擁有者 (例如內建擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | 安全性作業 (SecOps)        | 在整個 Azure 資產和 Azure Key Vault 清除原則之間進行水準視圖安全性系統管理員角色 | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | 訂用帳戶擁有者                 | 衍生自訂用帳戶擁有者角色之訂用帳戶擁有者的委派角色                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
@@ -75,7 +75,7 @@ _圖1：身分識別和存取管理。_
 
 ### <a name="plan-for-authentication-inside-a-landing-zone"></a>規劃登陸區域內的驗證
 
-企業組織採用 Azure 時，必須做出一個重要的設計決策：要將現有的內部部署身分識別網域擴充至 Azure 或要建立全新的身分識別網域。 登陸區域內的驗證需求必須經過徹底評估並納入規劃，以部署 Windows server 中的 Active Directory Domain Services (AD DS) ，Azure AD Domain Services (Azure AD DS) 或兩者。 大部分的 Azure 環境至少會在 Azure 網狀架構驗證、AD DS 區域主機驗證、群組原則管理上使用 Azure AD 。
+企業組織採用 Azure 時，必須做出一個重要的設計決策：要將現有的內部部署身分識別網域擴充至 Azure 或要建立全新的身分識別網域。 企業應徹底評估登陸區域內的驗證需求，將其納入在 Windows Server、Azure AD Domain Services (Azure AD DS) 或兩者中部署 Active Directory Domain Services (AD DS) 的規劃。 大部分的 Azure 環境至少會在 Azure 網狀架構驗證、AD DS 區域主機驗證、群組原則管理上使用 Azure AD 。
 
 **設計考慮：**
 
@@ -87,9 +87,9 @@ _圖1：身分識別和存取管理。_
 - 根據角色和安全性需求，使用集中和委派的責任來管理部署在登陸區域內的資源。
 - 特殊權限的作業 (例如建立服務主體物件、在 Azure AD 中註冊應用程式、採購和處理憑證或萬用字元憑證) 都需要特殊存取權限。 請考慮哪些使用者將處理這類要求，以及如何根據所需的努力來保護和監視其帳戶。
 - 如果組織有使用整合式 Windows 驗證的應用程式必須透過 Azure AD 從遠端存取的案例，請考慮使用 [Azure AD 應用程式 Proxy](/azure/active-directory/manage-apps/application-proxy)。
-- 在 Windows server 上執行的 Azure AD、Azure AD DS 和 AD DS 之間有差異。 評估您的應用程式需求，瞭解並記錄每個使用者將使用的驗證提供者。 針對所有應用程式做出相應的規劃。
-- 針對 Windows server 上的 AD DS 以及 Azure AD DS 評估工作負載的相容性。
-- 確定您的網路設計可讓需要 Windows server AD DS 的資源進行本機驗證和管理，以存取適當的網域控制站。
-  - 針對 Windows server 上的 AD DS，請考慮在較大的企業級網路內容中提供本機驗證和主機管理的共用服務環境。
+- 在 Windows Server 上執行的 Azure AD、Azure AD DS 和 AD DS 之間有差異。 評估您的應用程式需求，瞭解並記錄每個使用者將使用的驗證提供者。 針對所有應用程式做出相應的規劃。
+- 評估 Windows Server 上 AD DS 和 Azure AD DS 的工作負載的相容性。
+- 確定您的網路設計可讓需要 Windows Server AD DS 的資源進行本機驗證和管理，以存取適當的網域控制站。
+  - 針對 Windows Server 上的 AD DS，可考慮使用共用服務環境，此環境能在較大的整體企業網路中提供本機驗證和主機管理。
 - 在主要區域中部署 Azure AD DS，因為此服務只能投射到一個訂用帳戶。
 - 使用受控識別而不是服務主體來向 Azure 服務驗證身分。 這種做法可減少認證竊取的風險。

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: adf762a9c813b68905f0930670111a949565d55a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 183c2a8ef8df5f72c51820c7a8ac7d593805f866
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885230"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994389"
 ---
 # <a name="examples-of-agility-outcomes"></a>敏捷結果範例
 
@@ -32,7 +32,7 @@ ms.locfileid: "88885230"
 
 - **範例1：** 美國公司的歐洲部門必須藉由保護支援 UK 作業的資料庫中的客戶資料，以符合 GDPR 規定。 其現有版本的 SQL Server 不支援必要的資料列層級安全性。 就地升級會造成過度干擾。 使用 Azure SQL Database 來複寫及升級資料庫時，客戶會在幾周內新增必要的合規性措施。
 
-- **範例2：** 物流公司已發現市場的未開發部門，但需要新版本的旗艦版應用程式才能抓住這個市場佔有率。 他們的大型競爭者已經進行了相同的探索。 透過雲端應用程式創新工作的執行，該公司將客戶的對和 DevOps 導向的開發方法帶到更慢的傳統競爭者（ *x* 個月）。 這是市場進入安全的客戶群。
+- **範例2：** 物流公司已發現市場的未開發部門，但需要新版本的旗艦版應用程式才能抓住這個市場佔有率。 他們的大型競爭者已經進行了相同的探索。 透過雲端應用程式創新工作的執行，該公司將客戶的對和 DevOps 導向的開發方法帶到更慢的傳統競爭者（ _x_ 個月）。 這是市場進入安全的客戶群。
 
 <!-- docutune:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
@@ -56,7 +56,7 @@ ms.locfileid: "88885230"
 
 - **範例：** 消費性包裝商品公司需要每年數百個資料庫叢集的建立和細分，以滿足業務的營運需求。 您可以快速布建內部部署虛擬主機，但復原虛擬資產的程式很慢，而且需要團隊花費很長的時間。 因此，舊版的內部部署環境會免于膨脹，而且幾乎不會跟上需求。 在雲端遷移之後，您可以更輕鬆地提供已編寫腳本的自我布建資源，並提供計費方法來計費。 這可讓企業在需要時儘快移動，但仍須負責其所需資源的成本。 在雲端中這麼做會將部署限制為僅限企業的預算。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [達成成果](./reach-outcomes.md)。
 

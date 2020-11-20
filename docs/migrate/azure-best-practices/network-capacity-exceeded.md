@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d742d6528f4128ef8609a97620b6bcb9703aa60c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3429f0a47e5d8ed3d5bc88ea95e46df112646d84
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570550"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996905"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -55,7 +55,7 @@ ms.locfileid: "88570550"
 > [!IMPORTANT]
 > 分析結束時，您可能需要更新發行計畫，以反映出貨、還原和同步處理要離線傳輸的資產所需的時間。
 
-**漂移分析：** 分析每個要離線傳輸的資產，以進行儲存和設定漂移。 *儲存體漂移* 是一段時間內基礎儲存體的變更量。 設定*漂移*會隨著時間而變更資產的設定。 從儲存體複製到資產升級到生產環境的時間，可能會遺失任何漂移。 如果該漂移必須反映在已遷移的資產中，則您必須同步處理本機資產和已遷移的資產。 在遷移執行期間，將此旗標標示為考慮。
+**漂移分析：** 分析每個要離線傳輸的資產，以進行儲存和設定漂移。 _儲存體漂移_ 是一段時間內基礎儲存體的變更量。 設定 _漂移_ 會隨著時間而變更資產的設定。 從儲存體複製到資產升級到生產環境的時間，可能會遺失任何漂移。 如果該漂移必須反映在已遷移的資產中，則您必須同步處理本機資產和已遷移的資產。 在遷移執行期間，將此旗標標示為考慮。
 
 ## <a name="migration-process-changes"></a>遷移流程變更
 
@@ -81,7 +81,7 @@ ms.locfileid: "88570550"
 
 安全性和管理活動不太可能受到範圍內的這項變更所影響。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 返回檢查清單，以確保您的遷移方法完全一致。
 

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eebd659ad0dc0455c481e0f5b82a84fafa960c9e
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: f433a978c923105c15a8cebb4a3cfcbd34df90e8
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334743"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996276"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
@@ -123,8 +123,6 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 <!-- TODO: Review format of this list. Are the arguments necessary for this list? -->
 
-<!-- docutune:disable -->
-
 - `bigint`
 - `binary [ (n) ]`
 - `bit`
@@ -149,8 +147,6 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 - `uniqueidentifier`
 - `varbinary [ (n | MAX) ]`
 - `varchar [ (n | MAX) ]`
-
-<!-- docutune:enable -->
 
 下表列出目前不支援的常見資料類型，以及將它們儲存在 Azure Synapse Analytics 中的建議方法。 如需特定環境（例如 Teradata 或 Netezza），請參閱相關聯的檔，以取得詳細資訊。
 

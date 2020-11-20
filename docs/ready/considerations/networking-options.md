@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6895f8a68b76c378bec14b49896dec8bd0320ca8
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: eb7c57457ed49ff31cca71127fb1f27bde2046a0
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713814"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995035"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -85,7 +85,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 ### <a name="azure-virtual-datacenter"></a>Azure 虛擬資料中心
 
-除了使用其中一種架構模式，如果您的企業 IT 小組管理大型雲端環境，請考慮諮詢 [CAF 企業規模的登陸區域](../../ready/enterprise-scale/index.md)。 當您設計以 Azure 為基礎的雲端基礎結構時，如果您在24個月內有長期目標 (，就能將 CAF 企業規模的登陸區域提供給網路、安全性、管理和基礎結構，) **裝載超過1000的資產 (應用程式、基礎結構或資料資產) 在雲端中**。
+除了使用其中一種架構模式，如果您的企業 IT 小組管理大型雲端環境，請考慮諮詢 [CAF 企業規模的登陸區域](../../ready/enterprise-scale/index.md)。 當您設計以 Azure 為基礎的雲端基礎結構時，如果您在24個月內有長期目標 (，就能將 CAF 企業規模的登陸區域提供給網路、安全性、管理和基礎結構的組合，) **裝載超過1000的資產 (應用程式、基礎結構或資料資產) 在雲端中**。
 
 對於符合下列準則的組織，您也可以開始使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)：
 

@@ -7,13 +7,15 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9235a7039ea7c95cd330481700898915e42dc3bb
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 31c8bb2fdf84090eeee81b5b75b5079034784553
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713644"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997143"
 ---
+<!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
+
 # <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
 ![平臺自動化和 DevOps 的圖表。](./media/DevOps.png)
@@ -76,7 +78,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - RBAC (應用程式資源) 。
 
-  - 安全性監視和審核 (應用程式資源) 。
+  - 安全性監視和 audit (應用程式資源) 。
 
   - 成本管理 (應用程式資源) 。
 
@@ -92,11 +94,11 @@ _圖1：平臺自動化和 DevOps。_
 
   - 請勿限制應用程式小組使用中央成品或方法，因為它會妨礙其靈活性。 您可以透過原則導向的基礎結構方法和 RBAC 指派，強制執行一致的基準設定。 這可確保應用程式 (營業單位) 團隊有足夠的彈性可進行創新，同時仍然能夠從一組預先定義的範本進行繪製。
 
-  - 請勿強制應用程式小組使用中央進程或布建管線來具現化或管理應用程式資源。 已依賴 DevOps 管線進行應用程式傳遞的現有小組，仍然可以使用他們所使用的相同工具。 請記住，您仍然可以使用 Azure 原則來維護防護滑軌，與 Azure 中的資源部署方式無關。
+  - 請勿強制應用程式小組使用中央進程或布建管線來具現化或管理應用程式資源。 已經依賴 DevOps 管線進行應用程式傳遞的現有小組，仍然可以使用他們所使用的相同工具。 請記住，您仍然可以使用 Azure 原則來維護護欄，與 Azure 中的資源部署方式無關。
 
 ## <a name="define-central-and-federated-responsibilities"></a>定義中央和聯盟責任
 
-在中央 IT 小組和應用程式小組之間散發角色、職責和信任，對於組織在大規模採用雲端時所必須採取的營運轉型而言，是最重要的。
+在中央 IT 小組和應用程式小組之間散發角色、職責和信任，對於組織在大規模採用雲端時所必須採取的營運轉換相當重要。
 
 ### <a name="design-considerations"></a>設計考量
 
@@ -106,17 +108,17 @@ _圖1：平臺自動化和 DevOps。_
 
 下列清單顯示在中央 IT 小組和應用程式小組之間建議的職責散發。 您致力於以基本的集中式相依性來提升遷移和轉換活動的能力。 同時，您也想要支援集中治理跨整個資產的安全性和互用性。
 
-- **應用程式功能**
+- **應用程式函式**
 
   - 應用程式遷移和轉換。
 
-  - 應用程式 (應用程式資源) 的管理和監視。
+  - 應用程式 (應用程式資源) 的應用程式管理與監視。
 
-  - 金鑰管理 (應用程式金鑰) 。
+  - 金鑰管理 (的應用程式金鑰) 。
 
   - RBAC (應用程式資源) 。
 
-  - 安全性監視和審核 (應用程式資源) 。
+  - 安全性監視和 audit (應用程式資源) 。
 
   - 成本管理 (應用程式資源) 。
 

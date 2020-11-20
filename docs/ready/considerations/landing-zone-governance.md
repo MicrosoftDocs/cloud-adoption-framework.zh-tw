@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52a09591b5c7dcaaa5aa60495dce84eb8c646a76
-ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
+ms.openlocfilehash: f841854558e297c61645c518d1d42cf415b3124b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92689950"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997245"
 ---
 # <a name="improve-landing-zone-governance"></a>改善登陸區域控管
 
@@ -20,7 +20,7 @@ ms.locfileid: "92689950"
 
 ## <a name="landing-zone-governance-best-practices"></a>登陸區域治理最佳作法
 
-- **初始登陸治理：** 建立 [初始治理基礎](../../govern/guides/complex/index.md) 的文章有助於將初始治理工具新增至前幾個登陸區域。 這些做法可協助調整採用和治理，以及實行合理的成本管理。 此方法的開頭為：資源組織、原則定義、RBAC 角色和藍圖定義。
+- **初始登陸區域治理：** 建立 [初始治理基礎](../../govern/guides/complex/index.md) 的文章有助於將初始治理工具新增至前幾個登陸區域。 這些做法可協助調整採用和治理，以及實行合理的成本管理。 此方法的開頭為：資源組織、原則定義、RBAC 角色和藍圖定義。
 - **[命名和標記標準](../azure-best-practices/naming-and-tagging.md)：** 確保命名和標記的一致性，這是建立音效治理實務的基本資料。
 - **[追蹤工作負載之間的成本](../azure-best-practices/track-costs.md)：** 開始在您的第一個登陸區域中追蹤成本。 評估如何跨多個工作負載和角色來套用一致性。
 - **[使用多個訂用帳戶進行調整](../azure-best-practices/scale-subscriptions.md)：** 評估此登陸區域和其他登陸區域的擴充方式，因為多個訂用帳戶會成為需求。
@@ -35,7 +35,7 @@ ms.locfileid: "92689950"
 3. [初始治理基礎](../../govern/initial-foundation.md)：小型、容易實施的治理工具組，可為所有登陸區域建立初始基礎。
 4. [改進治理基礎](../../govern/foundation-improvements.md)：反復加入治理控制項，以強化所有登陸區域治理。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 雲端採用將會隨著新工作負載的每個 wave 或版本持續擴充。 為了持續滿足這些需求，雲端平臺小組應定期檢查其他登陸區域的最佳做法。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: aeb2cfd8ed273349b5ee7e1868ddd69791abedc9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 081d8ccc5cce83cb93e1043d0aef8b8bbff8433b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884652"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997211"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 
@@ -43,15 +43,15 @@ ms.locfileid: "88884652"
 
 Azure 提供許多內建角色定義，其中包含三個核心角色來提供存取權：
 
-- [擁有者](/azure/role-based-access-control/built-in-roles#owner)角色可以管理所有事項，包括對於資源的存取。
-- [參與者](/azure/role-based-access-control/built-in-roles#contributor)角色可以管理所有事項，但不包括對於資源的存取。
-- [讀者](/azure/role-based-access-control/built-in-roles#reader)角色可以檢視所有項目，但是無法進行變更。
+- [擁有者角色](/azure/role-based-access-control/built-in-roles#owner)可以管理所有專案，包括對資源的存取。
+- [參與者角色](/azure/role-based-access-control/built-in-roles#contributor)可以管理資源存取以外的所有專案。
+- [讀者角色](/azure/role-based-access-control/built-in-roles#reader)可以查看所有內容，但不會進行任何變更。
 
 從這些核心存取層級開始，其他內建角色會提供更詳細的控制項來存取特定資源類型或 Azure 功能。 例如，您可以使用下列內建角色來管理對虛擬機器的存取：
 
-- [虛擬機器系統管理員登](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login)入角色可以在入口網站中查看虛擬機器，並以身分登入 `administrator` 。
-- 「 [虛擬機器參與者](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) 」角色可以管理虛擬機器，但無法存取它們或它們所連線的虛擬網路或儲存體帳戶。
-- [虛擬機器使用者登](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login)入角色可以在入口網站中查看虛擬機器，並以一般使用者身分登入。
+- [虛擬機器系統管理員登入角色](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login)可以在入口網站中查看虛擬機器，並以身分登入 `administrator` 。
+- 「 [虛擬機器參與者」角色](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) 可以管理虛擬機器，但無法存取它們或它們所連線的虛擬網路或儲存體帳戶。
+- [虛擬機器使用者登入角色](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login)可以在入口網站中查看虛擬機器，並以一般使用者身分登入。
 
 如需使用內建角色來管理特定功能存取權的另一個範例，請參閱有關在 [業務單位、環境或專案之間追蹤](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)成本追蹤功能存取權的討論。
 
@@ -65,13 +65,13 @@ Azure RBAC 文件包含[建立自訂角色](/azure/role-based-access-control/cus
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>為大型組織區分職責與角色
 
-RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理工作。 它可以讓中央 IT 小組控制核心存取與安全性功能，同時讓軟體發展人員和其他小組對特定工作負載或資源群組進行大量控制。
+RBAC 可讓組織將不同的小組指派給大型雲端資產內的各種管理工作。 它可以讓中央 IT 小組控制核心存取和安全性功能，同時讓軟體開發人員和其他小組對特定工作負載或資源群組進行大量控制。
 
 大部分雲端環境也可以受益於使用多個角色的存取控制策略，並強調這些角色之間的職責分隔。 這種方法需要資源或基礎結構的任何重大變更有多個角色涉入才能完成，確保有多人必須檢閱並核准變更。 這種職責區隔可限制單一人員存取敏感性資料的能力，或在不知道其他小組成員的情況下引進弱點。
 
 下表說明將 IT 職責劃分成不同自訂角色的常見模式：
 
-| 分組 | 一般角色名稱 | 職責 |
+| 群組 | 一般角色名稱 | 職責 |
 | --- | --- | --- |
 | 安全性作業 | SecOps | 提供一般的安全性監督。 <br> 建立並強制執行安全性原則，例如靜態加密。 <br><br> 管理加密金鑰。 <br><br> 管理防火牆規則。 |
 | 網路作業 | NetOps | 管理虛擬網路中的網路設定和作業，例如路由和對等互連。 |

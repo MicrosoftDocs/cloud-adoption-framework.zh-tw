@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8e4e1b48d98abb456b3adb68c6fd5aa556fc1b7d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 77a93fb7bfca7fd368d2496602c735757ace624b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712454"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996497"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>卓越的雲端中心 (CCoE) 功能
 
@@ -119,7 +119,7 @@ CCoE 工作可透過商務專案關係人的支援來加速。 CCoE 工作的大
 
 在 CCoE 工作的前六到九個月中，我們建議商務專案關係人配置時間，以符合 IT 領導和 CCoE 的每月。 這些會議不需要正式的繁瑣。 只要提醒 CCoE 成員及其對此計畫重要性的領導力，就可以推動 CCoE 的成功。
 
-此外，我們建議商務專案關係人隨時掌握 CCoE 團隊所遭遇的進度和阻礙。 他們的許多努力看起來就像技術 minutiae。 但是，商務專案關係人必須瞭解計畫的進度，讓他們可以在團隊失去串流，或因其他優先順序而成為注意力。
+此外，我們建議商務專案關係人隨時掌握 CCoE 團隊所遭遇的進度和阻礙。 他們的許多努力看起來就像技術 minutiae。 但是，商務專案關係人必須瞭解計畫的進度，讓他們可以在團隊失去流時或因其他優先順序而產生注意力時進行互動。
 
 ### <a name="it-stakeholder-support"></a>IT 專案關係人支援
 
@@ -129,7 +129,7 @@ CCoE 工作可透過商務專案關係人的支援來加速。 CCoE 工作的大
 
 **建立緩衝區：** CCoE 團隊將會試驗新的方法。 其中有些方法無法妥善配合現有的作業或技術限制。 當實驗失敗時，CCoE 發生壓力或要是時，會有一個真正的風險。 從「快速失敗」學習機會的結果中，鼓勵和緩衝處理小組是很重要的。 小組必須負責成長思維，以確保他們從這些實驗中學習，並找出更好的解決方案，也同樣重要。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 CCoE 模型需要雲端平臺功能和雲端自動化功能。 下一步是要調整雲端平臺功能。
 

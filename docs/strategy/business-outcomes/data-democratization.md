@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 81beb5d31a39b6c61c4d9c26649cd55a9c86b16b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: b62e9ac5cc9da4facd68d4d1715bd57ecdd991c6
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774250"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994406"
 ---
 # <a name="data-democratization"></a>資料民主化
 
@@ -22,15 +22,15 @@ ms.locfileid: "90774250"
 
 Azure Synapse Analytics 是單一服務，可進行順暢的共同作業和加速的時間剖析。 若要更詳細地瞭解這項服務，請先考慮與一般資料資產相關的各種角色和技能：
 
-**資料倉儲**： *資料庫管理員* 支援資料 lake 和資料倉儲的管理，同時以智慧方式優化工作負載並自動保護資料。
+**資料倉儲**： _資料庫管理員_ 支援資料 lake 和資料倉儲的管理，同時以智慧方式優化工作負載並自動保護資料。
 
-**資料整合**： *資料工程師* 會使用無程式碼的環境，輕鬆地連接多個來源和類型的資料。
+**資料整合**： _資料工程師_ 會使用無程式碼的環境，輕鬆地連接多個來源和類型的資料。
 
-**Big data 和 machine learning**： *資料科學家* 會快速建立概念證明，並視需要布建資源，同時使用其選擇的語言 (例如 T-sql、Python、Scala、.net 或 Spark SQL) 。
+**Big data 和 machine learning**： _資料科學家_ 會快速建立概念證明，並視需要布建資源，同時使用其選擇的語言 (例如 T-sql、Python、Scala、.net 或 Spark SQL) 。
 
-**管理和安全性**： *IT 專業人員* 可以更有效率地保護和管理資料、強制執行隱私權需求，以及安全地存取雲端和混合式設定。
+**管理和安全性**： _IT 專業人員_ 可以更有效率地保護和管理資料、強制執行隱私權需求，以及安全地存取雲端和混合式設定。
 
-**商業智慧**： *商務分析師* 會安全地存取資料集、建立儀表板，以及在組織內外共用資料。
+**商業智慧**： _商務分析師_ 會安全地存取資料集、建立儀表板，以及在組織內外共用資料。
 
 下圖顯示傳統資料倉儲架構的範例。 已知的結構化資料會從核心交易處理系統中解壓縮，並複製到臨時區域中。 從該處，它會進行清除、轉換並整合到資料倉儲中的生產資料表。 在此情況下，通常會以累加方式建立數年的歷史交易資料。 這會提供瞭解銷售變化、客戶購買行為，以及一段時間內的客戶分割所需的資料。 它也提供年度財務報告和分析，以協助進行決策。
 

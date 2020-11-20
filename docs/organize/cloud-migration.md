@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 710c9d844ab9e3e3bfd7287dc26d61160be3e161
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e4b5a3d16c1515e123146c46c199134222795a11
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570108"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995613"
 ---
 # <a name="cloud-migration-functions"></a>雲端遷移功能
 
@@ -69,7 +69,7 @@ ms.locfileid: "88570108"
 - 資料科學家
 - 資料或應用程式平臺專家
 
-為了獲得最佳的共同作業和效率，我們建議雲端採用小組的平均小組人數為六人。 這些團隊應該從技術執行的觀點來自我組織。 我們強烈建議這些小組也包括專案管理專長，以及敏捷式、scrum 或其他反復模型的深度體驗。 此小組在使用一般結構管理時最有效。
+為了獲得最佳的共同作業和效率，我們建議雲端採用小組的平均小組人數為六人。 這些團隊應該從技術執行的觀點來自我組織。 我們強烈建議這些小組也包括專案管理專長，以及敏捷式、Scrum 或其他反復模型的深度體驗。 此小組在使用一般結構管理時最有效。
 
 ## <a name="out-of-scope"></a>超出範圍
 

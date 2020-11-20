@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 373e9b9d6a64e43beb44860507db4b877e165651
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 2d654227b90ecfb08c9b0451e59de32128e0061d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776358"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995494"
 ---
-<!-- docutune:casing "Cyber Defense Operations Center" -->
+<!-- docutune:casing CDOC "Cyber Defense Operations Center" -->
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
 # <a name="cloud-soc-functions"></a>雲端 SOC 函數
@@ -32,8 +32,8 @@ ms.locfileid: "90776358"
 
 - **提升企業風險管理：** SOC 不斷成長成為管理組織業務風險的重要元件
 - **計量和目標：** 追蹤 SOC 效能從「偵測時間」到這些關鍵指標的演變：
-  - 透過平均時間認可 (MTTA) 的_回應_性。
-  - 透過平均時間來補救 (MTTR) 的_補救速度_。
+  - 透過平均時間認可 (MTTA) 的 _回應_ 性。
+  - 透過平均時間來補救 (MTTR) 的 _補救速度_。
 - **技術演進：** SOC 技術正從 SIEM 中的靜態記錄檔的靜態分析發展而來，以新增使用特製化工具和複雜的分析技術。 這可提供更深入的資產深入解析，以提供高品質的警示和調查體驗，以補充 SIEM 的廣泛觀點。 這兩種工具都使用 AI 和機器學習、行為分析和整合威脅情報，來協助找出可能成為惡意攻擊者的異常動作並設定其優先順序。
 - **威脅搜尋：** SOCs 新增了假設導向的威脅搜尋，可主動找出 frontline 分析師佇列的 advanced 攻擊者和轉移雜訊警示。
 - **事件管理：** 專業領域已成為正規化，可協調事件的非技術性元素與法律、通訊和其他小組。
@@ -60,6 +60,6 @@ ms.locfileid: "90776358"
 - 風險組織 (如果存在) 
 - 在發生事件之前 (產業專屬的關聯、社區和廠商) 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 複習 [安全性架構](./cloud-security-architecture.md)的功能。

@@ -7,13 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9143a4df4de8e720529f3bf88d835f9e507e245f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 9efaabd1044c3752a373bb3829f7c7257aff9690
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432647"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994763"
 ---
+<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
+<!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
+
 # <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性、治理和合規性
 
 本文涵蓋定義加密與金鑰管理、規劃治理、定義安全性監視和稽核原則，以及規劃平臺安全性。 在本文結尾，您可以參考描述架構的表格，以評估 Azure 服務的企業安全性就緒程度。
@@ -30,9 +33,7 @@ ms.locfileid: "94432647"
 
 - 您可以將特定應用程式和工作負載特定的密碼和共用的密碼，以適當的 [控制存取權](/azure/key-vault/general/best-practices)來隔離。
 
-<!-- cSpell:ignore FIPS -->
-
-- 您可以優化 premium Sku，其中需要硬體安全模組保護的金鑰。 基礎硬體安全性模組 (Hsm) 符合 FIPS 140-2 層級2的規範。 考慮支援的案例，以管理 FIPS 140-2 level 3 合規性的 Azure 專用 HSM。
+- 您可以優化 Premium Sku，其中需要硬體安全模組保護的金鑰。 基礎硬體安全性模組 (Hsm) 符合 FIPS 140-2 層級2的規範。 考慮支援的案例，以管理 FIPS 140-2 Level 3 合規性的 Azure 專用 HSM。
 
 - 金鑰輪替和密碼到期。
 
@@ -95,7 +96,7 @@ ms.locfileid: "94432647"
 
 - 瞭解 Azure 原則有限制，例如任何特定範圍的定義限制： [原則限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
-- 瞭解法規合規性原則。 這些可能包括健康保險流通與責任法案、支付卡產業、資料安全性標準、服務組織控制信任服務主體和準則。
+- 瞭解法規合規性原則。 這些可能包括 HIPAA、PCI DSS，以及 SOC2 信任服務準則和準則。
 
 ### <a name="design-recommendations"></a>設計建議
 
@@ -185,7 +186,7 @@ ms.locfileid: "94432647"
 
 <!-- docutune:ignore "and conditional access" -->
 
-## <a name="azure-security-benchmarks"></a>Azure 安全性效能評定
+## <a name="azure-security-benchmark"></a>Azure 安全性效能評定
 
 Azure 安全性基準測試包含一組高度影響的安全性建議，可用來協助保護您在 Azure 中使用的大部分服務。 您可以將這些建議視為「一般」或「組織」，因為它們適用于大部分的 Azure 服務。 接著會針對每個 Azure 服務自訂 Azure 安全性效能評定建議，而此自訂指導方針包含在服務建議文章中。
 

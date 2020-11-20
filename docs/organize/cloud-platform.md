@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f6fafc8ed679ae068fd24d0897d4983dad06ae97
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b6853bc98a2211496fba3bade2f04012e29ae78f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569989"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995596"
 ---
 # <a name="cloud-platform-functions"></a>雲端平台功能
 
@@ -26,7 +26,7 @@ ms.locfileid: "88569989"
 - IT 作業
 - IT 治理
 - IT 基礎結構
-- 網路功能
+- 網路
 - 身分識別
 - 虛擬化
 - 商務持續性和災害復原
@@ -72,7 +72,7 @@ ms.locfileid: "88569989"
 - 建立和驗證平臺架構的部署。
 - 查看新平臺需求來源的發行計畫。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 隨著您的雲端平臺變得更好，調整 [雲端自動化功能](./cloud-automation.md) 可加速採用。 它也可以協助建立最佳做法，同時降低業務和技術的風險。
 

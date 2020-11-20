@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a1e12ac1ca226d9605a1d5b296582636e9275303
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7afed36939d3d143934ad962aa87e3921535ed06
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574290"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996531"
 ---
 # <a name="cloud-adoption-functions"></a>雲端採用功能
 
@@ -31,7 +31,7 @@ ms.locfileid: "88574290"
 - 資料科學家
 - 資料或應用程式平臺專家
 
-為了獲得最佳的共同作業和效率，我們建議雲端採用小組的平均小組人數為六人。 這些團隊應該從技術執行的觀點來自我組織。 我們強烈建議這些小組也包括專案管理專長，以及敏捷式、scrum 或其他反復模型的深度體驗。 此小組在使用一般結構管理時最有效。
+為了獲得最佳的共同作業和效率，我們建議雲端採用小組的平均小組人數為六人。 這些團隊應該從技術執行的觀點來自我組織。 我們強烈建議這些小組也包括專案管理專長，以及敏捷式、Scrum 或其他反復模型的深度體驗。 此小組在使用一般結構管理時最有效。
 
 ## <a name="preparation"></a>準備
 
@@ -80,7 +80,7 @@ ms.locfileid: "88574290"
 
 深入瞭解卓越或[雲端治理小組](./cloud-governance.md)的[雲端中心](./cloud-center-of-excellence.md)功能。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - [建置雲端採用小組](../get-started/team/cloud-adoption.md)
 - 利用 [雲端治理功能](./cloud-governance.md) 讓雲端採用工作保持一致，以加速採用和實行最佳作法，同時降低商務和技術風險。

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d40df91ae7eb3fc9ed3c651859ecc01b62f5afc
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0f7ddb2d523e4421b114e21c2ffac2d6abc17a9b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713933"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994814"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -53,7 +53,7 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 
 **設計考慮：**
 
-- 訂用帳戶可作為指派 Azure 原則的界限。 例如，安全的工作負載（例如支付卡產業 (PCI) 工作負載）通常需要額外的原則才能達成合規性。 與其使用管理群組來將需要 PCI 合規性的工作負載分組，您可以使用訂用帳戶來達到相同的隔離。 如此一來，您就不會有太多具有少數訂用帳戶的管理群組。
+- 訂用帳戶可作為指派 Azure 原則的界限。 例如，保護工作負載 (例如支付卡產業 (PCI) 工作負載) 通常需要額外的原則才能達成合規性。 與其使用管理群組來將需要 PCI 合規性的工作負載分組，您可以使用訂用帳戶來達到相同的隔離。 如此一來，您就不會有太多具有少數訂用帳戶的管理群組。
 - 訂用帳戶可作為縮放單位，讓元件工作負載可以在平臺 [訂](/azure/azure-subscription-service-limits)用帳戶限制內調整。 在您的工作負載設計階段，請務必考慮訂用帳戶的資源限制。
 - 訂用帳戶提供治理和隔離的管理界限，可建立明確的關注點分離。
 - 您可以進行手動程式，並規劃未來的自動化，以限制 Azure AD 租使用者只能使用 Enterprise 合約註冊訂閱。 此程式可防止在根管理群組範圍建立 Microsoft 開發人員的網路訂用帳戶。
@@ -72,9 +72,9 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
   - **目標網路拓撲：** 虛擬網路無法跨訂用帳戶共用，但它們可以使用不同的技術進行連線，例如虛擬網路對等互連或 Azure ExpressRoute。 當您決定是否需要新的訂用帳戶時，請考慮哪些工作負載必須彼此通訊。
 - 依據大規模管理群組結構和原則需求，將訂用帳戶分到各管理群組之下。 群組可確保具有同一組原則和 RBAC 指派的訂用帳戶可以從管理群組繼承這些原則和指派，以避免重複的指派。
 - 在管理群組中建立專用的管理訂用帳戶 `Platform` ，以支援 Azure 監視器 Log Analytics 工作區和 Azure 自動化 runbook 等全域管理功能。
-- 必要時，請在管理群組中建立專用的身分識別訂用帳戶 `Platform` ，以裝載 Windows server Active Directory 網域控制站。
+- 必要時，請在管理群組中建立專用的身分識別訂用帳戶 `Platform` ，以裝載 Windows Server Active Directory 網域控制站。
 - 在管理群組中建立專用的連線訂用帳戶 `Platform` ，以裝載 Azure 虛擬 WAN 中樞、私人網域名稱系統 (DNS) 、ExpressRoute 線路和其他網路資源。 專用的訂用帳戶可確保所有的基礎網路資源會一起計費，並與其他工作負載隔離。
-- 避免使用固定的訂用帳戶模型，並改為選擇一組彈性準則，來將組織內的訂用帳戶分組。 這種彈性可確保當您的組織結構和工作負載組成變更時，您可以建立新的訂用帳戶群組，而不是使用一組固定的現有訂閱。 一個大小不能適用於所有訂閱。 一個業務單位的運作方式可能不適合另一個。 某些應用程式可能會在相同登陸區域訂用帳戶內並存，而其他應用程式可能需要自己的訂用帳戶。
+- 避免使用固定的訂用帳戶模型，並改為選擇一組彈性準則，來將組織內的訂用帳戶分組。 這種彈性可確保當您的組織結構和工作負載組成變更時，您可以建立新的訂用帳戶群組，而不是使用一組固定的現有訂閱。 一個大小不能適用於所有訂閱。 一個業務單位的運作方式可能不適合另一個。 有些應用程式能在相同的登陸區域訂用帳戶中並存，有些則需要自己的訂用帳戶。
 
 ## <a name="configure-subscription-quota-and-capacity"></a>設定訂用帳戶配額和容量
 
@@ -106,5 +106,5 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 
 **設計建議：**
 
-- 使用 Azure 成本管理和計費來進行成本匯總。 讓應用程式擁有者可以使用它。
+- 使用 Azure 成本管理 + 計費來進行成本匯總。 讓應用程式擁有者可以使用它。
 - 使用 Azure 資源標籤進行成本分類和資源分組。 使用標籤可讓您針對共用訂用帳戶的工作負載，或跨多個訂用帳戶的指定工作負載，提供計費機制。

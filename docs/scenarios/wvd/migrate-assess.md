@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b85900e887122b20c7dc776ac74deb12dad93220
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: f489c9230a26c149c7d44b9eb0ba0631a757c0ef
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108430"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997007"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
@@ -49,10 +49,10 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 |---------|---------|---------|---------|
 | 集區  | 集區 | 集區 | 專用 (安全性考慮)  |
 | 密度 | Light (6 &nbsp; 使用者/vCPU)  | 大量 (2 &nbsp; 使用者/vCPU)  | 專用 (1 &nbsp; 使用者/vCPU)  |
-| 效能 | 低度 | 高記憶體 | 低度 |
+| 效能 | 低 | 高記憶體 | 低 |
 | GPU | N/A | 必要 | 不適用 |
 | Azure 區域 | 北美洲 | 西歐 | 北美洲 |
-| 使用者計數 | 1000 | 50 | 20 |
+| 使用者計數 | 1,000 | 50 | 20 |
 | 會話計數 | 200 | 50 | 10 |
 
 每個角色（或每個具有不同商務功能和技術需求的使用者群組）都需要特定的主機集區設定。
@@ -69,7 +69,7 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 
 - 是否需要安裝任何應用程式，角色才能使用此桌面？ 除非角色使用100% 的 web 型軟體即服務應用程式，否則您可能需要為每個角色 [設定自訂的主要 VHD 映射](/azure/virtual-desktop/set-up-customize-master-image) ，並在主要映射上安裝必要的應用程式。
 - 此角色是否需要 Microsoft 365 應用程式？ 如果是，您必須 [將 Microsoft 365 新增至自訂的主要 VHD 映射](/azure/virtual-desktop/install-office-on-wvd-master-image)。
-- 此應用程式是否與 Windows &nbsp; 10 多重會話相容？ 如果應用程式不相容，可能需要 [個人集](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) 區才能執行自訂 VHD 映射。 如需有關應用程式和 Windows 虛擬桌面相容性問題的協助，請參閱 [桌面應用程式確保](/fasttrack/win-10-app-assure-assistance-offered) 服務。
+- 此應用程式是否與 Windows &nbsp; 10 企業版多重會話相容？ 如果應用程式不相容，可能需要 [個人集](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) 區才能執行自訂 VHD 映射。 如需有關應用程式和 Windows 虛擬桌面相容性問題的協助，請參閱 [桌面應用程式確保](/fasttrack/win-10-app-assure-assistance-offered) 服務。
 - 要徑任務應用程式是否可能會受到 Windows 虛擬桌面實例與任何後端系統之間的延遲？ 若是如此，您可能會想要考慮將支援應用程式的後端系統移轉至 Azure。
 
 這些問題的答案可能會要求計畫在進行桌上型電腦遷移或部署之前，先在桌面映射或支援應用程式元件中納入補救。

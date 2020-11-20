@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e22f93f7a375431684002904ade30982ab460b23
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 2f5c389180909031b002f836d83489411ac13b1e
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713763"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994457"
 ---
 <!-- docutune:casing IR -->
 
@@ -54,7 +54,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 **過程：**
 
 3. [指派雲端安全性決策的責任](../security/security-top-10.md#3-process-assign-accountability-for-cloud-security-decisions)
-4. [更新雲端的事件回應 (IR) 進程](../security/security-top-10.md#4-process-update-incident-response-ir-processes-for-cloud)
+4. [更新雲端的事件回應程式](../security/security-top-10.md#4-process-update-incident-response-processes-for-cloud)
 5. [建立安全性狀態管理](../security/security-top-10.md#5-process-establish-security-posture-management)
 
 **技術：**
@@ -299,7 +299,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 | --- | --- |
 | <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 卓越或中央 IT 團隊的雲端中心 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 本指南中的步驟可協助您實行一致管理整個企業安全性風險所需的策略、控制項、流程、技能和文化特性。
 

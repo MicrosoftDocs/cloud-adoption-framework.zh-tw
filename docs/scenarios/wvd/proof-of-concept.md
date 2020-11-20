@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: d43eafcc0ce5a0d85488c38e31b79c48d74de613
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108278"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996990"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "91108278"
 - 所有使用者都可以使用 Azure Marketplace 的 Windows &nbsp; 10 企業版多會話映射。
 - 所有的使用者設定檔都會遷移至 FSLogix 設定檔容器的 Azure 檔案儲存體、Azure NetApp Files 或以 VM 為基礎的儲存體服務。
 - 所有使用者都可以透過每個虛擬中央處理器的每個虛擬中央處理單位（每個虛擬中央處理器 (vCPU) 和 4 &nbsp; (gb) RAM）來描述，並 [根據 VM 大小調整建議](/windows-server/remote/remote-desktop-services/virtual-machine-recs#multi-session-recommendations)。
-- 所有工作負載都與 Windows &nbsp; 10 多重會話相容。
+- 所有工作負載都與 Windows &nbsp; 10 企業版多重會話相容。
 - 虛擬桌面和應用程式群組之間的延遲可供生產環境使用。
 
 為了根據概念證明設定參考來計算 Windows 虛擬桌面案例的成本，小組會使用適用于 [美國東部](https://azure.com/e/448606254c9a44f88798892bb8e0ef3c)、 [西歐](https://azure.com/e/61a376d5f5a641e8ac31d1884ade9e55)或 [東南亞](https://azure.com/e/7cf555068922461587d0aa99a476f926)的定價計算機。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 65f84c5b5cdd512a2a3c5f639d853d7cf11b2d93
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.openlocfilehash: 46ed186beee5f03e5635c603775ed4b5c7fa28c6
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878999"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995086"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -27,7 +27,7 @@ ms.locfileid: "94878999"
 
 ## <a name="landing-zone-in-enterprise-scale"></a>企業規模的登陸區域
 
-Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中的企業規模進行應用程式移轉和綠地開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
+Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中以企業規模進行應用程式遷移和 greenfield 開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
 
 例如，您可以在建立新的房屋之前，先存取水、天然氣和電力等城市公用程式。 在此內容中，網路、身分識別和存取管理、原則、管理和監視是共用的公用程式服務，必須立即可用以協助在應用程式開始之前簡化應用程式遷移程式。
 
@@ -37,21 +37,21 @@ _圖1：登陸區域設計。_
 
 ## <a name="high-level-architecture"></a>高階架構
 
-Enterprise-Scale 的架構是由一組不同的設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：根據 AZURE 虛擬 WAN 網路拓撲的 Enterprise-Scale 架構 (depictured 在 [圖 2]) 上，或根據 [圖 3] (所示的中樞和輪輻架構的傳統 Azure 網路拓撲來定義。
+企業規模的架構是由一組設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：以 AZURE 虛擬 WAN 網路拓撲為基礎的企業級架構 (在 [圖 2] 上 depictured) ，或根據以中樞和輪輻架構為基礎的傳統 Azure 網路拓撲， (如圖 3) 所示。
 
 [![此圖顯示以 Azure 虛擬 WAN 網路拓撲為基礎的雲端採用架構企業規模登陸區域架構。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-_圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登陸區域架構。請注意，連線訂用帳戶會使用 VWAN 中樞。_
+_圖2：根據 Azure 虛擬 WAN 網路拓撲的雲端採用架構企業規模登陸區域架構。請注意，連線訂用帳戶會使用虛擬 WAN 中樞。_
 
 [![顯示雲端採用架構企業規模登陸區域架構的圖表。](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
 _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure 網路拓撲為基礎。請注意，連線訂用帳戶會使用中樞 VNet。_
 
-下載 PDF 或 Visio 檔案，其中包含根據 [虛擬 WAN (PDF) ](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲的 Enterprise-Scale 架構圖表，或是以 [中樞和輪輻 (pdf) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。 您可以將包含虛擬 WAN 和中樞和輪輻架構圖表的 visio 檔案下載為 [visio 圖表， (.vsdx) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx)。
+下載 PDF 或 Visio 檔案，其中包含根據 [虛擬 WAN (pdf) ](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲的企業級架構圖表，或是以 [中樞和輪輻 (pdf) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。 您可以將包含虛擬 WAN 和中樞和輪輻架構圖表的 Visio 檔案下載為 [visio 圖表 (的) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx)。
 
-在 [圖 2] 和 [3] 中，有 Enterprise-Scale 重要設計區域的參考，以字母 A 表示：
+在 [圖 2] 和 [3] 中，有企業級關鍵設計區域的參考，這些都是以 a 到 I 的字母來表示：
 
-![字母 A ](./media/a.png) [ENTERPRISE 合約 (EA) 註冊和 Azure Active Directory](./enterprise-enrollment-and-azure-ad-tenants.md)租使用者。 註冊 Enterprise 合約 (EA) 代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的數位資產管理。 您的 EA 註冊可透過 Azure 企業版入口網站來管理。 註冊通常代表組織的階層，其中包括部門、帳戶和訂用帳戶。 Azure AD 租用戶提供身分識別與存取權管理，這是安全性狀態的重要部分。 Azure AD 租用戶可確保已驗證和授權的使用者只能存取他們具有存取權限的資源。
+![字母 A ](./media/a.png) [ENTERPRISE 合約 (EA) 註冊和 Azure Active Directory](./enterprise-enrollment-and-azure-ad-tenants.md)租使用者。 註冊 Enterprise 合約 (EA) 代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的數位資產管理。 您的 EA 註冊可透過 Azure EA 入口網站進行管理。 註冊通常代表組織的階層，其中包括部門、帳戶和訂用帳戶。 Azure AD 租用戶提供身分識別與存取權管理，這是安全性狀態的重要部分。 Azure AD 租用戶可確保已驗證和授權的使用者只能存取他們具有存取權限的資源。
 
 ![字母 B 身分 ](./media/b.png) [識別和存取管理](./identity-and-access-management.md)。 您必須建立 Azure Active Directory 的設計和整合，才能確保伺服器和使用者驗證。 以資源為基礎的存取控制 (RBAC) 必須進行模型化和部署，以強制將職責區隔和平臺操作和管理所需的權利分開。 金鑰管理必須經過設計和部署，以確保安全地存取資源和支援作業，例如輪替和復原。 最後，系統會將存取角色指派給控制項和資料平面的應用程式擁有者，以自主建立及管理資源。
 
@@ -65,7 +65,7 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 ![字母 I ](./media/i.png) [平臺自動化和 DevOps](platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用雲端採用架構企業規模的設計指導方針，自訂此架構的執行。
 

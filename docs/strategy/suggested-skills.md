@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 375dcdbb63241d3bc3b1c29f9308bccbe698844c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a091490fda2148093965bf8826858a0f52c9d412
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885757"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996803"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>在遷移旅程的規劃階段期間的技能就緒途徑
 
@@ -90,8 +90,8 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下是量身打造的學習路徑範例，其符合雲端採用架構的策略方法。
 
-[瞭解 Microsoft Azure 的商業價值](/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您瞭解數位轉型和雲端的威力如何改造您的業務。 內容會涵蓋 Microsoft Azure 雲端服務如何在受信任雲端平台上推動組織發展。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
+[瞭解 Microsoft Azure 的商業價值](/learn/paths/learn-business-value-of-azure)：此學習體驗將會帶您瞭解數位轉型和雲端的威力如何改造您的業務。 我們將探討 Microsoft Azure 雲端服務如何讓您的組織在受信任的雲端平臺上進行強化。 最後，我們會透過說明如何讓您的組織實踐這一切來收尾。
 
 ## <a name="learn-more"></a>深入了解
 
-如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用**角色**篩選器，讓學習路徑與您的角色一致。
+如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用 **角色** 篩選器，讓學習路徑與您的角色一致。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a370a4aa58c176ccb1dc58a777a10f2f91ca7370
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 31aeba36eaedef0956aacd21647c518afc1b6222
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884924"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995477"
 ---
 # <a name="mature-team-structures"></a>成熟的團隊結構
 
@@ -40,7 +40,7 @@ ms.locfileid: "88884924"
 5. [營運一致性](#operational-alignment)
 6. [卓越的雲端中心 (CCoE) ](#cloud-center-of-excellence)
 
-大部分的公司從 *雲端採用小組*開始著手。 但是，我們建議您建立一個與 [MVP 最佳作法](#best-practice-minimum-viable-product-mvp) 結構更相近的組織結構。
+大部分的公司從 _雲端採用小組_ 開始著手。 但是，我們建議您建立一個與 [MVP 最佳作法](#best-practice-minimum-viable-product-mvp) 結構更相近的組織結構。
 
 ## <a name="cloud-adoption-team-only"></a>僅限雲端採用小組
 
@@ -100,7 +100,7 @@ ms.locfileid: "88884924"
 
 此結構與上面中央 IT 小組結構之間的主要差異，是自助和 democratization 的強大焦點。 此結構中的小組會盡可能地以委派控制權的意圖進行組織。 將治理和合規性實務與雲端原生解決方案保持一致，可建立護欄和保護機制。 與中央 IT 小組模型不同的是，雲端原生方法可充分發揮創新，並將作業的額外負荷降至最低。 若要採用此模型，您必須將 IT 流程現代化的相互協定，從商務和 IT 領導力都需要。 此模型不太可能發生茁壯，而且通常需要執行支援。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在符合組織結構成熟度的特定階段之後，您就可以使用 [RACI 圖表](./raci-alignment.md) 來調整每個小組的責任和責任。
 

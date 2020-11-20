@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 4c2e35b3401d4a4eaeb534befee9e33c4b1a83df
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713289"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996413"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -155,7 +155,7 @@ Azure VMware 解決方案私用雲端是透過 Azure VMware 解決方案入口�
 
     ![用來建立 Azure VMware 解決方案私人雲端的 [Azure 入口網站] 窗格螢幕擷取畫面。](./media/contoso-migration-vmware-to-azure/create-private-cloud.png)
 
-1. 小組會藉由前往資源群組並選取私用雲端資源，來驗證 Azure VMware 解決方案私人雲端部署是否已完成。 狀態會顯示為 [ *成功*]。
+1. 小組會藉由前往資源群組並選取私用雲端資源，來驗證 Azure VMware 解決方案私人雲端部署是否已完成。 狀態會顯示為 [ **成功**]。
 
     ![[Contoso Azure VMware 解決方案私人雲端] 頁面的螢幕擷取畫面，其中顯示部署成功。](./media/contoso-migration-vmware-to-azure/validate-deployment.png)
 
@@ -168,7 +168,7 @@ Azure VMware 解決方案私用雲端需要虛擬網路。 因為 Azure VMware �
 1. Contoso 小組會先建立具有閘道子網的虛擬網路。
 
     > [!IMPORTANT]
-    > 小組必須使用與建立私人雲端時所用的位址空間 *不* 重迭的位址空間。
+    > 小組必須使用與建立私人雲端時所用的位址空間 _不_ 重迭的位址空間。
 
 1. 小組會建立 ExpressRoute VPN 閘道，請務必選取正確的 SKU，然後選取 [ **審核 + 建立**]。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 234662ed55a71c11512b2ed9c25903158a090e95
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: c37cc134ff40f1b0d158498db9d3c7375ac320a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712114"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995361"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
@@ -44,7 +44,7 @@ _圖1：中樞和輪輻網路拓撲的範例。_
 
 中樞通常包含輪輻所使用的一般服務元件。 以下是常用中央服務的範例：
 
-- Windows server Active Directory 基礎結構，為協力廠商從未受信任的網路取得存取權，然後才能夠存取輪輻中的工作負載所需的使用者驗證。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
+- 當第三方從不受信任的網路取得存取權時，需要 Windows Server Active Directory 基礎結構來進行使用者驗證，如此他們才能夠存取輪輻中的工作負載。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
 - DNS 服務，用來對輪輻中的工作負載進行命名解析，以存取內部部署和網際網路上的資源 (如果未使用 [Azure DNS](/azure/dns/dns-overview))。
 - 公開金鑰基礎結構 (PKI)，用以實作工作負載的單一登入。
 - 輪輻網路區域與網際網路之間的 TCP 和 UDP 流量的流量控制。

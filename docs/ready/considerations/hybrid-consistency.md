@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dee8a0552db02a070d4832a0da885469a02ecf11
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 53a958fad2f4cbbdd8184fc13c5102fd0ca6041d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776188"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997262"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -41,13 +41,13 @@ ms.locfileid: "90776188"
 - Azure Active Directory (Azure AD) 可與內部部署 Active Directory 搭配使用，為所有使用者提供通用身分識別。 跨內部部署和透過雲端的 SSO 可讓使用者輕鬆安全地存取需要的應用程式與資產。 系統管理員可以管理安全性和治理控制項，也可以彈性地調整許可權，而不會影響使用者體驗。
 - Azure 提供雲端和內部部署基礎結構的整合式管理和安全性服務。 這些服務包含一組整合的工具，可用來監視、設定和保護混合式雲端。 這種端對端的管理方法，專門解決組織考慮混合式雲端解決方案的真實世界挑戰。
 - Azure 混合式雲端提供通用工具，確保對所有資料的存取都是安全、順暢且有效率的。 Azure 資料服務結合 Microsoft SQL Server，以建立一致的資料平台。 一致的混合式雲端模型可讓使用者同時使用操作和分析資料。 您可以在內部部署和雲端中提供相同的服務，以進行資料倉儲、資料分析和資料視覺效果。
-- 結合 Azure Stack 內部部署的 azure 雲端服務，可提供統一的開發和 DevOps。 跨雲端和內部部署的一致性表示 DevOps 團隊可以建立在任一環境中執行的應用程式，而且可以輕鬆地部署到正確的位置。 您也可以在混合式解決方案中重複使用範本，這可進一步簡化 DevOps 程式。
+- Azure 雲端服務（結合 Azure Stack 內部部署）可提供統一的開發和 DevOps。 跨雲端和內部部署的一致性表示 DevOps 團隊可以建立在任一環境中執行的應用程式，而且可以輕鬆地部署到正確的位置。 您也可以在混合式解決方案中重複使用範本，這可進一步簡化 DevOps 程式。
 
 ## <a name="azure-stack-in-a-hybrid-cloud-environment"></a>混合式雲端環境中的 Azure Stack
 
 Azure Stack 是混合式雲端解決方案，可讓組織在其資料中心執行一致的 Azure 服務。 它提供與 Azure 公用雲端服務一致的簡化開發、管理和安全性體驗。 Azure Stack 是 Azure 的延伸模組。 您可以使用它從您的內部部署環境執行 Azure 服務，然後在必要時移至 Azure 雲端。
 
-透過 Azure Stack，您可以使用相同的工具，並提供與 Azure 公用雲端相同的體驗，來部署和操作 IaaS 和 PaaS。 無論是透過 web ui 入口網站或透過 PowerShell 來管理 Azure Stack，都能為 IT 系統管理員和使用 Azure 的使用者提供一致的外觀與風格。
+透過 Azure Stack，您可以使用相同的工具，並提供與 Azure 公用雲端相同的體驗，來部署和操作 IaaS 和 PaaS。 不論是透過 Web UI 入口網站或 PowerShell，Azure Stack 的管理對於使用 Azure 的 IT 系統管理員和終端使用者都有一致的外觀與操作。
 
 Azure 和 Azure Stack 針對面向客戶與內部的企業營運應用程式，開啟新的混合式使用案例：
 
@@ -64,10 +64,10 @@ Azure Stack 透過兩種部署選項來提供現代化：
 
 您可以使用完整的 Azure 生態系統來加速 Azure Stack 方案：
 
-<!-- docutune:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
-<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
+<!-- docutune:casing ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers Tieto NTT "Kemp Technologies" "Pivotal Cloud Foundry" -->
+<!-- cSpell:ignore ISVs Bitnami Infront Kemp Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Tieto -->
 
-- Azure 可確保大部分已通過 Azure 認證的應用程式和服務都可在 Azure Stack 上運作。 有數個 Isv 將其解決方案擴充至 Azure Stack。 這些 Isv 包括 Bitnami、Docker、kemp 技術、pivotal cloud foundry、Red Hat enterprise Linux 和 suse Linux。
-- 您可以選擇讓 Azure Stack 提供這些解決方案，並以完全受控服務的方式運作。 數個合作夥伴很快就會在 Azure 和 Azure Stack 上提供受控服務供應專案。 這些合作夥伴包括 tieto、Yourhosting、Revera、Pulsant 和 ntt。 這些合作夥伴會透過雲端解決方案提供者 (CSP) 方案，為 Azure 提供受控服務。 他們正在擴充其供應專案，以納入混合式解決方案。
+- Azure 可確保大部分已通過 Azure 認證的應用程式和服務都可在 Azure Stack 上運作。 有數個 Isv 將其解決方案擴充至 Azure Stack。 這些 Isv 包括 Bitnami、Docker、Kemp 技術、Pivotal Cloud Foundry、Red Hat Enterprise Linux 和 SUSE Linux。
+- 您可以選擇讓 Azure Stack 提供這些解決方案，並以完全受控服務的方式運作。 數個合作夥伴很快就會在 Azure 和 Azure Stack 上提供受控服務供應專案。 這些合作夥伴包括 Tieto、Yourhosting、Revera、Pulsant 和 NTT。 這些合作夥伴會透過雲端解決方案提供者 (CSP) 方案，為 Azure 提供受控服務。 他們正在擴充其供應專案，以納入混合式解決方案。
 - 以完整且完全受控的混合式雲端解決方案作為範例，Avanade 提供了多項供應專案。 它包含雲端轉換服務、軟體、基礎結構、設定和設定，以及持續受管理的服務。 如此一來，客戶就可以使用 Azure Stack，就像現在的 Azure 一樣。
 - 提供者可為客戶建立端對端的 Azure 解決方案，協助加速應用程式現代化方案。 每個提供者都帶來深層的 Azure 技能、領域和產業知識，以及 DevOps 等程式專長。 每個 Azure Stack 的執行都是一個機會，可讓提供者設計解決方案和潛在客戶，並影響系統部署。 他們也可以自訂包含的功能，並提供營運活動。 提供者的範例包括 Avanade、DXC、Dell EMC 服務、Infront 諮詢群組、HPE Pointnext 和 PWC (先前的 PricewaterhouseCoopers) 。

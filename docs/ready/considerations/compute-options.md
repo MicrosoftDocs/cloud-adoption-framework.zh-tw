@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4c1b598eb8e027947a218ef558c1827878fa5f68
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d70160082c0c195167272cb9623cc619fde1ee63
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574239"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995205"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -40,7 +40,7 @@ ms.locfileid: "88574239"
 - **您的應用程式是以 web 或 API 為基礎，而且會使用 PHP、ASP.NET、Node.js 或類似的技術嗎？** Web 應用程式可以部署到受控的 [Azure App Service](/azure/app-service/overview) 執行個體，因此您不需要維護裝載用的虛擬機器。
 - **您需要完整控制您工作負載的作業系統和裝載環境嗎？** 如果您需要控制裝載環境 (包括作業系統、磁碟、本機執行的軟體和其他設定)，您可以使用 [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines)來裝載您的應用程式和服務。 除了選擇您的虛擬機器大小和效能層級，您對於虛擬磁片儲存體的決策將會影響基礎結構即服務工作負載的相關效能和 Sla。 如需詳細資訊，請參閱 [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) 檔。
 - **您的工作負載是否牽涉到高效能運算 (HPC) 功能？** [Azure Batch](/azure/batch/batch-technical-overview) 能以平台服務的形式為電腦資源提供工作排程及自動調整服務，讓您在雲端輕鬆執行大規模平行應用程式和 HPC 應用程式。
-- **您的應用程式會使用微服務架構嗎？** 使用微服務架構的應用程式可以利用數個最佳化的計算技術。 由事件驅動的獨立工作負載可以使用 [Azure Functions](/azure/azure-functions/functions-overview) 來建立可調整的無伺服器應用程式，其不需要基礎結構。 對於需要更充分掌控微服務執行環境的應用程式，您可以使用容器服務，例如 [azure 容器實例](/azure/container-instances/container-instances-overview)、 [Azure Kubernetes Service](/azure/aks/intro-kubernetes)和 [azure Service Fabric](/azure/service-fabric/service-fabric-overview)。
+- **您的應用程式會使用微服務架構嗎？** 使用微服務架構的應用程式可以利用數個最佳化的計算技術。 由事件驅動的獨立工作負載可以使用 [Azure Functions](/azure/azure-functions/functions-overview) 來建立可調整的無伺服器應用程式，其不需要基礎結構。 對於需要更充分掌控微服務執行所在環境的應用程式，您可以使用容器服務，例如 [Azure 容器](/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](/azure/aks/intro-kubernetes) 和 [Azure Service Fabric](/azure/service-fabric/service-fabric-overview)。
 
 > [!NOTE]
 > 大部分的 Azure 計算服務都會與 Azure 儲存體搭配使用。 如需了解相關的儲存體決策，請參閱[儲存體決策指引](./storage-options.md)。
@@ -54,16 +54,16 @@ ms.locfileid: "88574239"
 | 我需要透過選擇的設定，在幾秒內佈建 Linux 和 Windows 虛擬機器。 | [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines) |
 | 我需要透過自動調整達到高可用性，以用幾分鐘的時間建立數千部 VM。 | [虛擬機器擴展集](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
 | 我想簡化 Kubernetes 的部署、管理與作業。 | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
-| 我需要使用事件驅動的無伺服器架構加速應用程式開發。 | [Azure Functions](https://azure.microsoft.com/services/functions) |
+| 我需要使用事件驅動的無伺服器架構來加快應用程式開發的速度。 | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | 我需要在 Windows 或 Linux 上開發微服務及協調容器。 | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| 我想使用完全受控平台快速建立適用於 Web 和行動裝置的雲端應用程式。 | [Azure App Service](https://azure.microsoft.com/services/app-service) |
-| 我想使用單一命令將應用程式容器化並輕鬆執行容器。 | [Azure 容器實例](https://azure.microsoft.com/services/container-instances) |
+| 我想要使用完全受控的平臺，快速建立 web 和行動裝置的雲端應用程式。 | [Azure App Service](https://azure.microsoft.com/services/app-service) |
+| 我想要使用單一命令來將應用程式，並輕鬆地執行容器。 | [Azure 容器執行個體](https://azure.microsoft.com/services/container-instances) |
 | 我需要雲端規模的作業排程和計算管理可調整成數十、數百或數千部虛擬機器。 | [Azure Batch](https://azure.microsoft.com/services/batch) |
-| 我需要建立高可用性與極具調整彈性的雲端應用程式和 API，以協助我全心開發應用程式而非硬體。 | [Azure 雲端服務](https://azure.microsoft.com/services/cloud-services) |
+| 我需要建立高度可用、可擴充的雲端應用程式和 Api，以協助我專注于應用程式，而不是硬體。 | [Azure 雲端服務](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>區域可用性
 
-Azure 可讓您以所需的規模，將服務提供給客戶和**合作夥伴。** 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
+Azure 可讓您以所需的規模，將服務提供給客戶和 **合作夥伴。** 規劃雲端部署的關鍵要素是判斷哪個 Azure 區域可託管您的工作負載資源。
 
 某些計算選項（例如 Azure App Service）已在大部分的 Azure 區域中正式運作，而其他計算服務僅在特定區域中受到支援。 某些虛擬機器類型及其相關聯儲存體類型的區域可用性有限。 在您決定要部署計算資源的區域之前，建議您先參閱 [ [區域] 頁面](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) ，以檢查區域可用性的最新狀態。
 

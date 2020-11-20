@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 18c79fc5639588e4af3a75daf2e77fe39a6287cb
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 792f71c94d9ed16d134d444da8b467983ae9b5a8
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334811"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996327"
 ---
 <!-- docutune:casing Informatica Talend Inmon Attunity Qlik nzLua CBT CBTs NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -58,7 +58,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 無論您為遷移選擇的驅動程式和範圍為何，都可以選擇兩種一般類型的遷移：
 
-- 隨即**轉移方法：** 使用這種方法時，現有的資料模型（例如星狀架構）會以不變的方式遷移至新的 Azure Synapse 平臺。 在此案例中，重點在於將風險降至最低，以及藉由減少必須完成以達成移往 Azure 雲端環境之優點所需的工作來進行遷移。
+- 隨即 **轉移方法：** 使用這種方法時，現有的資料模型（例如星狀架構）會以不變的方式遷移至新的 Azure Synapse 平臺。 在此案例中，重點在於將風險降至最低，以及藉由減少必須完成以達成移往 Azure 雲端環境之優點所需的工作來進行遷移。
 
   這種方法適用于現有的 Teradata 環境，在此環境中，將會遷移單一資料超市，以及資料是否已在設計良好的星形或雪花式架構中。 如果您有時間和成本壓力可移至更新式的雲端環境，這種方法也是不錯的選擇。
 
@@ -78,7 +78,7 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>多個資料庫與單一資料庫和架構
 
-在 Netezza 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及另一個適用于資料超市的資料庫，有時也稱為「 *語義層*」。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
+在 Netezza 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及另一個適用于資料超市的資料庫，有時稱為「 _語義層_」。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
 Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在目標 Azure Synapse 中使用一系列的架構，以模仿您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和觀點移至新的環境。 例如，您可能會將現有的 Netezza 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
 
@@ -109,7 +109,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
   Azure Synapse 不會使用區域對應，但您可以使用使用者定義的索引類型或資料分割來達到類似的結果。
 
-- 叢集**基礎資料表 (CBTs) ：** 在 Netezza 中，最常見的 CBT 是包含數十億筆記錄的事實資料表。 掃描這類大型資料表需要較長的處理時間，因為可能需要完整的資料表掃描才能取得相關記錄。 藉由以限制的 CBTs 組織記錄，Netezza 可以將記錄分組在相同或鄰近的範圍中。 此程式也會建立區域對應，藉由減少要掃描的資料量來改善效能。
+- 叢集 **基礎資料表 (CBTs) ：** 在 Netezza 中，最常見的 CBT 是包含數十億筆記錄的事實資料表。 掃描這類大型資料表需要較長的處理時間，因為可能需要完整的資料表掃描才能取得相關記錄。 藉由以限制的 CBTs 組織記錄，Netezza 可以將記錄分組在相同或鄰近的範圍中。 此程式也會建立區域對應，藉由減少要掃描的資料量來改善效能。
 
   在 Azure Synapse 中，您可以透過資料分割或使用其他索引類型來達到類似的結果。
 
@@ -206,7 +206,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **資料散發選項：** 在 Netezza 和 Azure Synapse 中，您可以使用 `CREATE TABLE` 語句來指定散發定義。 用於 `DISTRIBUTE ON` Netezza 和 `DISTRIBUTION =` Azure Synapse。
 
-   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的 *維度資料表/事實資料表聯結* 。 方法是在所有節點之間複寫較小的維度資料表，藉此確保較大資料表的聯結索引鍵值，會有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
+   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的 _維度資料表/事實資料表聯結_ 。 方法是在所有節點之間複寫較小的維度資料表，藉此確保較大資料表的聯結索引鍵值，會有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
 - **資料索引編制：** Azure Synapse 提供各種使用者可定義的索引編制選項，但是在 Netezza 中，這些選項與系統管理的區域對應的操作和使用方式不同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱 [Azure SYNAPSE SQL 集區中的索引資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index)。
 
@@ -220,6 +220,6 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **工作負載管理的資源類別：** Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如需有關執行 Netezza 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

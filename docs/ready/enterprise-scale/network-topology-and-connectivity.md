@@ -7,13 +7,14 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 838ef802195d5d3dc56d7df415db8a58486e83e0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0c4c92529e34ae57be70e136514e4cfbb7ecd586
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713678"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994967"
 ---
+<!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
 # <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
@@ -68,7 +69,7 @@ ms.locfileid: "94713678"
 
 - 針對 Azure 中的名稱解析是必要的環境，請使用 Azure 私人 DNS 進行解析。 建立委派區域以進行名稱解析 (例如 `azure.contoso.com`) 。
 
-- 針對在 Azure 和內部部署之間進行名稱解析的環境，請使用現有的 DNS 基礎結構 (例如，Active Directory 整合的 DNS) 部署到至少兩部 Azure 虛擬機器 (Vm) 。 在虛擬網路中設定 DNS 設定，以使用這些 DNS 伺服器。
+- 針對在 Azure 和內部部署之間進行名稱解析的環境，請使用現有的 DNS 基礎結構 (例如，Active Directory 整合的 DNS) 部署到至少兩部虛擬機器 (Vm) 。 在虛擬網路中設定 DNS 設定，以使用這些 DNS 伺服器。
 
 - 您仍然可以將 Azure 私人 DNS 區域連結至虛擬網路，並使用 DNS 伺服器做為混合式解析程式，搭配使用內部部署 dns 名稱的條件式轉送（例如 `onprem.contoso.com` ），並使用內部部署 dns 伺服器。 您可以使用條件轉寄站來設定內部部署伺服器，以在 azure 中針對 Azure 私人 DNS 區域解析 Vm (例如 `azure.contoso.com`) 。
 
@@ -126,9 +127,9 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 虛擬 WAN 可透過 ExpressRoute 私用對等互連，將每個虛擬 WAN 中樞的10000首碼最多增加200個首碼。 10000首碼的限制也包含站對站 VPN 和點對站 VPN。
 
-- 區域內和跨) 區域的網路對網路可轉移連線 (，現已正式推出 (GA) 。
+- 區域內和跨) 區域的網路對網路可轉移連線 (，現已正式推出。
 
-- 虛擬 WAN 中樞對中樞連線現在已正式推出。
+- 虛擬 WAN 中樞對中樞連線現已正式運作。
 
 - 由於每個虛擬中樞都有路由器，因此會啟用標準虛擬 WAN 中虛擬網路之間的傳輸連線。 每個虛擬中樞路由器最多支援 50 Gbps 的彙總輸送量。
 
@@ -142,7 +143,7 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 需要 premium 附加元件的 ExpressRoute 線路。 它們應該來自于 ExpressRoute 的全球接觸位置。
 
-- Azure 防火牆管理員現已正式推出，可讓您在虛擬 WAN 中樞中部署 Azure 防火牆。
+- Azure 防火牆管理員現已正式推出，可讓您在虛擬 WAN 中樞部署 Azure 防火牆。
 
 - 目前不支援透過 Azure 防火牆的虛擬 WAN 中樞對中樞流量。 或者，您也可以使用虛擬 WAN 中的原生中樞對中樞傳輸路由功能。 使用網路安全性群組 (Nsg) 來允許或封鎖跨中樞的虛擬網路流量。
 
@@ -213,7 +214,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 您可以使用 ExpressRoute 線路，在相同地緣政治區域內的虛擬網路之間建立連線，或使用 premium 附加元件在地緣政治區域間進行連線。 請記住下列重點：
 
-  - 網路對網路流量可能會遇到更多延遲，因為流量必須在 Microsoft enterprise edge (MSEE) 路由器上 hairpin。
+  - 網路對網路流量可能會遇到更多延遲，因為流量必須在 Microsoft Enterprise Edge (MSEE) 路由器上 hairpin。
 
   - 頻寬會受限於 ExpressRoute 閘道 SKU。
 
@@ -350,7 +351,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 虛擬網路插入可為支援的服務提供專用的私人部署。 但管理平面流量會流經公用 IP 位址。
 
-  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) 使用私人 IP 位址來提供專用存取，方法是使用私人 IP 位址來存取 Azure PaaS 實例或 Azure Load Balancer Standard 後方的自訂服務
+  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) 藉由使用私人 IP 位址來存取 Azure PaaS 實例或 Azure Load Balancer 標準層後方的自訂服務，以提供專屬存取權。
 
   - 虛擬網路服務端點可從選取的子網提供服務層級的存取權給選取的 PaaS 服務。
 
@@ -382,7 +383,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計考慮：**
 
-- Azure-原生網路安全性服務（例如 Azure 防火牆、Azure Web 應用程式防火牆 (WAF) Azure 應用程式閘道）和 Azure Front Door 服務都是完全受控的服務。 因此您不會產生與基礎結構部署相關聯的作業與管理成本，該成本在大規模的情況下可能會變得很複雜。
+- Azure 原生的網路安全性服務 (例如 Azure 防火牆、Azure 應用程式閘道上的 Azure Web 應用程式防火牆 (WAF)，以及 Azure Front Door) 為完全受控服務。 因此您不會產生與基礎結構部署相關聯的作業與管理成本，該成本在大規模的情況下可能會變得很複雜。
 
 - 如果您的組織偏好使用 Nva 或原生服務無法滿足您組織的特定需求，則企業規模架構與合作夥伴 Nva 完全相容。
 
@@ -396,7 +397,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 如果您的組織需要) 的東部/西部流量篩選 (。
 
-- 使用具有虛擬 WAN 的防火牆管理員來部署和管理跨虛擬 WAN 中樞或中樞虛擬網路的 Azure 防火牆。 防火牆管理員現在已正式推出，適用于虛擬 WAN 和一般虛擬網路。
+- 使用具有虛擬 WAN 的防火牆管理員來部署和管理跨虛擬 WAN 中樞或中樞虛擬網路的 Azure 防火牆。 防火牆管理員現在已正式推出虛擬 WAN 和一般虛擬網路。
 
 - 建立全域 Azure 防火牆原則，以控制全球網路環境的安全性狀態，並將其指派給所有的 Azure 防火牆實例。 透過以角色為基礎的存取控制，將累加式防火牆原則委派給本機安全性小組，以允許細微的原則符合特定區域的需求。
 
@@ -404,9 +405,9 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 在登陸區域的虛擬網路內使用 WAF，以保護來自網際網路的輸入 HTTP/S 流量。
 
-- 使用 Azure Front Door 服務和 WAF 原則，在 Azure 區域之間提供對登陸區域之輸入 HTTP/S 連線的全域保護。
+- 使用 Azure Front Door 和 WAF 原則，在 Azure 區域之間提供對登陸區域之輸入 HTTP/S 連線的全域保護。
 
-- 當您使用 Azure Front Door 服務和 Azure 應用程式閘道來協助保護 HTTP/S 應用程式時，請使用 Azure Front Door 服務中的 WAF 原則。 鎖定 Azure 應用程式閘道，只接收來自 Azure Front Door 服務的流量。
+- 當您使用 Azure Front Door 並 Azure 應用程式閘道來協助保護 HTTP/S 應用程式時，請在 Azure Front Door 中使用 WAF 原則。 鎖定 Azure 應用程式閘道，只接收來自 Azure Front Door 的流量。
 
 - 如果東部/西部或南/北流量保護和篩選都需要合作夥伴 Nva：
 
@@ -429,7 +430,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - Azure 應用程式閘道可讓您在區域層級進行 HTTP/S 應用程式的安全傳遞。
 
-- Azure Front Door 服務允許在 Azure 區域之間提供高可用性 HTTP/S 應用程式的安全傳遞。
+- Front Door 允許跨 Azure 區域提供高可用性 HTTP/S 應用程式的安全傳遞。
 
 - Azure 流量管理員允許提供全球應用程式。
 
@@ -445,9 +446,9 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 針對登陸區域中的所有公用 IP 位址，使用 DDoS 標準保護計劃。
 
-- 使用 Azure Front Door Service 搭配 WAF 原則，來提供及協助保護橫跨 Azure 區域的全域 HTTP/S 應用程式。
+- 使用 Azure Front Door 搭配 WAF 原則，以提供並協助保護橫跨 Azure 區域的全域 HTTP/S 應用程式。
 
-- 當您使用 Azure Front Door 服務和應用程式閘道來協助保護 HTTP/S 應用程式時，請使用 Azure Front Door 服務中的 WAF 原則。 鎖定應用程式閘道，只接收來自 Azure Front Door 服務的流量。
+- 當您使用 Front Door 和應用程式閘道來協助保護 HTTP/S 應用程式時，請在 Front Door 中使用 WAF 原則。 鎖定應用程式閘道，只接收來自 Front Door 的流量。
 
 - 使用流量管理員來提供跨越 HTTP/S 以外之通訊協定的全球應用程式。
 
@@ -469,7 +470,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 **設計建議：**
 
-- 將子網路建立委派給登陸區域擁有者。 這可讓它們定義如何跨子網分割工作負載 (例如單一大型子網、多層式應用程式或網路插入的應用程式) 。 平臺小組可以使用 Azure 原則來確保具有特定規則的 NSG (例如拒絕來自網際網路的連入 SSH 或 RDP，或允許/封鎖跨登陸區域的流量) 一律與具有拒絕原則的子網相關聯。
+- 將子網路建立委派給登陸區域擁有者。 這可讓它們定義如何跨子網分割工作負載 (例如，單一大型子網、多層式應用程式或網路插入的應用程式) 。 平臺小組可以使用 Azure 原則來確保具有特定規則的 NSG (例如拒絕來自網際網路的連入 SSH 或 RDP，或允許/封鎖跨登陸區域的流量) 一律與具有拒絕原則的子網相關聯。
 
 - 使用 Nsg 協助保護跨子網的流量，以及跨平臺的東部/西部流量 (登陸區域間的流量) 。
 
@@ -495,11 +496,11 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 當您使用具有私人對等互連的 ExpressRoute 時，流量目前不會加密。
 
-- 透過 ExpressRoute 私用對等互連設定站對站 VPN 連線現已進入 [預覽階段](/azure/vpn-gateway/site-to-site-vpn-private-peering)。
+- 透過 ExpressRoute 私用對等互連設定站對站 VPN 連線現已 [進入預覽階段](/azure/vpn-gateway/site-to-site-vpn-private-peering)。
 
 - 您可以將 [媒體存取控制安全性 (MACsec) ](/azure/expressroute/expressroute-howto-MACsec) 加密套用至 ExpressRoute Direct，以達成網路加密。
 
-- 當 Azure 流量在資料中心之間移動 (不是由 Microsoft 或代表 Microsoft) 所控制的實體界限之外，就會在基礎網路硬體上使用 [MACsec 資料連結層加密](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 。 這適用于 VNet 對等互連流量。
+- 當 Azure 流量在資料中心之間移動 (不是由 Microsoft 或代表 Microsoft) 控制的實體界限之外， [MACsec 資料連結層加密](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 會用於基礎網路硬體。 這適用于 VNet 對等互連流量。
 
 **設計建議：**
 

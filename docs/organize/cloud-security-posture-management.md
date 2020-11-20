@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3f36b60a37a8e7d86ead4c0171e109f350bf0ecc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 96bb73571c0f876f90f2e3132cb8751232bae653
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877121"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996310"
 ---
-<!--docsTest:casing TVM -->
+<!-- docsTest:casing TVM -->
 
 # <a name="function-of-cloud-security-posture-management"></a>雲端安全性狀態管理的功能
 
@@ -26,9 +26,9 @@ ms.locfileid: "88877121"
 
 狀態管理會使用下列方式，為您介紹結構化方法：
 
-- 以**零信任為基礎的存取控制：** 這會在存取控制決策期間考慮使用中的威脅層級。
+- 以 **零信任為基礎的存取控制：** 這會在存取控制決策期間考慮使用中的威脅層級。
 - **即時風險評分：** 以提供最高風險的可見度。
-- **威脅和弱點管理 (TVM) ** 來建立組織攻擊面和風險的整體觀點，並將其整合至營運和工程決策制定。
+- **威脅和弱點管理 (TVM)** 來建立組織攻擊面和風險的整體觀點，並將其整合至營運和工程決策制定。
 - **探索共用風險：** 瞭解獲批准和待批准雲端服務上企業智慧財產的資料暴露情形。
 - **雲端安全性狀態管理** 可利用雲端檢測來監視和優先處理安全性改進。
 - **技術原則：** 將護欄套用至對技術系統進行審核並強制執行組織的標準和原則。 請參閱 Azure 原則和 [Azure 藍圖](/azure/governance/blueprints/overview)。
@@ -49,6 +49,6 @@ ms.locfileid: "88877121"
 - 安全性架構和作業
 - Audit 小組
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 複習雲端安全性 [事件準備](./cloud-security-incident-preparation.md)的功能。

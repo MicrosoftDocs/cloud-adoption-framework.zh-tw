@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 928ba549faee14142aeb8bd12b796bdc3bf6307a
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 03556fa15b1fb5c2052919e892bd26bb1737f4ba
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713916"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997126"
 ---
-# <a name="transition-existing-azure-environments-to-enterprise-scale"></a>將現有的 Azure 環境轉換成 Enterprise-Scale
+<!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
+
+# <a name="transition-existing-azure-environments-to-enterprise-scale"></a>將現有的 Azure 環境轉換成企業規模
 
 我們認為大部分的組織在 Azure 中可能會有現有的使用量、一或多個訂用帳戶，而且可能是其管理群組的現有結構。 視其最初的商務需求和案例而定，混合式連線 (（例如使用站對站 VPN 和/或 ExpressRoute) ）可能已部署。
 
-本文可協助組織根據現有的 Azure 環境，以轉換成企業規模的形式流覽正確的路徑。 本文也會說明在 Azure 中移動資源的考慮 (例如，將訂用帳戶從一個現有的管理群組移至另一個管理群組) ，可協助您評估及規劃將現有的 Azure 環境轉換成 Enterprise-Scale 登陸區域。
+本文可協助組織根據現有的 Azure 環境，以轉換成企業規模的形式流覽正確的路徑。 本文也會說明在 Azure 中移動資源的考慮 (例如，將訂用帳戶從一個現有的管理群組移至另一個管理群組) ，可協助您評估及規劃將現有的 Azure 環境轉換成企業規模的登陸區域。
 
 ## <a name="moving-resources-in-azure"></a>在 Azure 中移動資源
 
@@ -38,9 +40,9 @@ ms.locfileid: "94713916"
 
 ### <a name="rbac-requirements"></a>RBAC 需求
 
-若要在移動之前評估訂用帳戶，使用者必須具有適當的 RBAC，例如訂用帳戶上的擁有者 (直接 roleAssignment) ，而且具有目標管理群組的寫入權限 (支援此功能的內建角色是擁有者、參與者、管理群組參與者) 。
+若要在移動之前評估訂用帳戶，使用者必須具有適當的 RBAC，例如訂用帳戶上的擁有者 (直接角色指派) ，而且具有目標管理群組的寫入權限 (支援這項作業的內建角色是擁有者角色、參與者角色，以及) 的管理群組參與者角色。
 
-如果使用者對現有管理群組的訂用帳戶具有繼承的擁有者許可權，則訂用帳戶只能移至已獲指派擁有者角色之使用者的管理群組。
+如果使用者對現有管理群組的訂用帳戶具有繼承的擁有者角色許可權，則訂用帳戶只能移至已獲指派擁有者角色之使用者的管理群組。
 
 ### <a name="policy"></a>原則
 
@@ -60,7 +62,7 @@ Azure Resource Graph 可以用來執行現有資源的清查，並將其設定�
 
 ## <a name="resource-move"></a>資源移動
 
-執行資源移動的主要使用案例是當您想要在共用相同的生命週期時將資源合併到相同的資源群組，或將資源移至不同的訂用帳戶，因為成本、擁有權或 RBAC 需求。
+執行資源移動的主要使用案例是當您想要將資源合併到相同的資源群組時，如果它們共用相同的生命週期，或將資源移至不同的訂用帳戶，因為成本、擁有權或 RBAC 需求。
 
 執行資源移動時，會鎖定來源資源群組和目標資源群組 (此鎖定不會影響資源群組中的任何資源) 在移動作業期間，這表示您無法新增、更新或刪除資源群組中的資源。 資源移動作業不會變更資源的位置。
 

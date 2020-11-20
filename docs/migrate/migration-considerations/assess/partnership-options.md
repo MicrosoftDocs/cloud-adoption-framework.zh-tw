@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 711ad79f89cda5364daae00a7721d492dbe52a66
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 463bf30cdb27767e0874ef5f4914a3903312996a
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605080"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995987"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -68,7 +68,7 @@ ms.locfileid: "89605080"
 FastTrack for Azure 的典型互動主要階段如下：
 
 - **發現。** 找出重要的專案關係人、針對所要解決的問題了解其目標或願景，然後評估架構需求。
-- **實現解決方案。** 了解建置應用程式的設計原則、檢閱應用程式與解決方案的架構，並取得指導和工具，以推動概念證明 (PoC) 到生產階段的落實。
+- **實現解決方案。** 瞭解用來建立應用程式的設計原則、審查應用程式和解決方案的架構，以及取得指導方針和工具，以推動概念證明工作通過生產環境。
 - **持續的合作關係。** Azure 工程師和計劃經理會定期聯繫，以確保部署進展順利以及協助排除阻礙。
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>與雲端採用架構方法配合的 Microsoft 服務供應項目
@@ -96,7 +96,7 @@ Microsoft 認證解決方案提供者專精於根據全球各地的 Microsoft �
 - [尋找雲端解決方案合作夥伴](https://www.microsoft.com/solution-providers/home)。 認證 CSP 可協助您充分利用雲端，方法是評估雲端採用的業務目標，以及找出可符合業務需求並協助企業變得更敏捷且更有效率的適當雲端解決方案。
 - [尋找 (msp) 的 Azure 專家受控服務提供者 ](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)。 Msp 藉由指導雲端旅程的所有層面，協助企業轉換至 Azure。 從諮詢、移轉和營運管理，雲端 MSP 會向客戶展示採用雲端所能帶來的所有好處。 它們也會以一種方式來處理常見的支援、布建和帳單體驗，並具備彈性的隨用隨付商務模型。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在選取合作夥伴和支援策略後，即可更新[發行和反覆執行待辦項目](./release-iteration-backlog.md)以反映所規劃的工作和任務。
 

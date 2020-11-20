@@ -7,20 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bc6114358b74445a74aedc21e5cceeb7d132834e
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.openlocfilehash: a79c9e158bddacacce13730b017352c9f2e027a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879560"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996344"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
 某些工作負載對於企業成功是不可或缺的。 針對這些工作負載，管理基準不足以符合雲端管理所需的商務承諾。 平臺作業甚至可能不足以符合業務承諾。 這項極為重要的工作負載子集需要專門專注于工作負載的運作方式，以及其支援方式。
 
 傳回時，工作負載作業的投資可能會提升效能、降低商務中斷的風險，以及在發生系統失敗時更快復原。 本文將討論如何投資這些高優先順序工作負載的持續運作方式，以提升商務承諾量。
-
-<!-- docutune:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>投入工作負載作業的時機
 
@@ -96,7 +94,7 @@ _排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因
 
 為了協助改善整體作業， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供一種方法來評估特定工作負載，以遵守這些要素。 將支柱套用至平臺作業和工作負載作業。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完全瞭解雲端採用架構內的管理方法，現在您已準備好執行雲端管理原則。 瞭解如何在您的作業環境內使此方法可採取動作。
 

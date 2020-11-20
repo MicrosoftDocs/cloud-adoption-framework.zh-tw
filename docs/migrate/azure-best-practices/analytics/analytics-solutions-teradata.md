@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ed45f10e54ddfb4bac090dd9815e61b503b6003
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: f81930fc3fd90a83cfb3a175d744639cdd0290dd
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713372"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996293"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
@@ -221,7 +221,7 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
   針對大型資料表/大型資料表聯結，雜湊在其中一個或兩個 (都是在理想的情況下，聯結資料行上的) 資料表有助於確保聯結處理可以在本機執行，因為要聯結的資料列已經共置於相同的處理節點上。
 
-  Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結 (通常稱為星狀架構模型) 中的 *維度資料表/事實資料表聯結* 。 您會將較小的資料表複寫到所有節點，藉此確保較大資料表的聯結索引鍵值具有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
+  Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結 (通常稱為星狀架構模型) 中的 _維度資料表/事實資料表聯結_ 。 您會將較小的資料表複寫到所有節點，藉此確保較大資料表的聯結索引鍵值具有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
 - **資料索引編制：** Azure Synapse 提供各種索引編制選項，但在 Teradata 中，索引選項的作業和使用方式各不相同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱在 [Azure Synapse 集區中設計資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview)。
 
@@ -237,6 +237,6 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 - **工作負載管理的資源類別：** Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如需有關執行 Teradata 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。
