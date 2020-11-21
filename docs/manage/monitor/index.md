@@ -7,12 +7,12 @@ ms.date: 10/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1c59389754f8c109158ca8ac6aca54fe8cd92a1a
-ms.sourcegitcommit: d81a822575820115d9814b0fc6c05ae33e535825
+ms.openlocfilehash: 8163ef4e1b857281ae853e7b7d3de9db745e858e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058762"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879373"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>雲端監視指南：簡介
 
