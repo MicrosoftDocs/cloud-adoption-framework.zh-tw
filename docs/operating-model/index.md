@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: ef99de4a051c07fe88ca93286c86208867cde88c
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 395c7533ed08982add6b4d6e309fb54257326947
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776273"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995784"
 ---
 <!-- docutune:casing GRC -->
 <!-- cspell:ignore reimagine -->
 
 # <a name="understand-cloud-operating-models"></a>了解雲端作業模型
 
-採用雲端可建立機會來重新審視您操作技術系統的方式。 本文系列將澄清雲端作業模式，以及影響您雲端採用策略的考量。 但首先，讓我們來澄清*雲端做業模型*這個字詞。
+採用雲端可建立機會來重新審視您操作技術系統的方式。 本文系列將澄清雲端作業模式，以及影響您雲端採用策略的考量。 但首先，讓我們來澄清 _雲端做業模型_ 這個字詞。
 
 ## <a name="define-your-operating-model"></a>定義您的作業模型
 
@@ -28,7 +28,7 @@ ms.locfileid: "90776273"
 
 ## <a name="what-is-an-operating-model"></a>什麼是作業模型？
 
-在雲端技術存在之前，技術小組已建立作業模型來定義技術支援企業的方式。 任何公司的 IT 營運模式都有幾項因素，但仍保持一致：*與商務策略、人員的組織、變更管理 (或採用流程)、作業管理、治理/合規性和安全性*的一致性。 每個因素都是長期技術作業不可或缺的一項。
+在雲端技術存在之前，技術小組已建立作業模型來定義技術支援企業的方式。 任何公司的 IT 營運模式都有幾項因素，但仍保持一致：_與商務策略、人員的組織、變更管理 (或採用流程)、作業管理、治理/合規性和安全性_ 的一致性。 每個因素都是長期技術作業不可或缺的一項。
 
 當技術作業轉移至雲端時，這些重要的流程仍然相關，但可能會以某些方式變更。 目前的作業模型，主要著重在實際透過資本支出週期投資的實體資產。 這些資產是用來支援企業維護商務營運所需的工作負載。 大部分作業模型的任務是藉由投資基礎實體資產的穩定性，為工作負載的穩定性設定優先順序。
 

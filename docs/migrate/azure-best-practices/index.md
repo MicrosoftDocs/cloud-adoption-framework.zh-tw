@@ -1,7 +1,6 @@
 ---
 title: Azure 雲端移轉最佳做法檢查清單
 description: 探索 Azure 雲端移轉檢查清單，了解如何實作雲端移轉最佳做法搭配使用的 Azure 工具。
-keywords: azure 雲端移轉最佳做法, azure 移轉檢查清單, 雲端移轉檢查清單, 雲端移轉最佳做法
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2020
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 81f5fe9bf3f67031ffc35caf960009f0c3491c2c
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: f90c1ef74d63d282270eeb022ca6e4ec54300071
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87472786"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996072"
 ---
 # <a name="azure-cloud-migration-best-practices-checklist"></a>Azure 雲端移轉最佳做法檢查清單
 
