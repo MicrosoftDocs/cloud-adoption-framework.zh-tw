@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a7d911677e9496119e1abcfbc97d13bd660c941
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: think-tank
+ms.openlocfilehash: 92dcd037e5fc7699430a77af8b4c0bcae91b2312
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776409"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447314"
 ---
 # <a name="start-with-cloud-adoption-framework-enterprise-scale-landing-zones"></a>開始使用雲端採用架構的企業規模登陸區域
 

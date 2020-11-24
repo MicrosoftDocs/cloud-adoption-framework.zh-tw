@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22da52f3cdec09d3337c320875076c579bb5bb61
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: e3f90d704d89bb7d3693738a62515809a234c199
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373147"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996004"
 ---
 # <a name="azure-migration-guide-overview"></a>Azure 移轉指南概觀
 
@@ -54,6 +54,8 @@ ms.locfileid: "86373147"
 - 您要移轉少量的伺服器。
 - 要移轉的元件相依性對應很容易定義。
 - 您的產業和此移轉相關的法規需求最少。
+
+<!-- docutune:casing "our Microsoft teams" -->
 
 如果上述有任一條件不適用於您的情況，就應該考慮改用其他[雲端移轉的最佳作法](../azure-best-practices/index.md)。 我們也建議您向其中一個 Microsoft 小組或合作夥伴要求協助，以執行更複雜的移轉。 有 Microsoft 或經認證的合作夥伴參與其中的客戶，較能成功移轉。 要求協助的詳細資訊可在本指南取得。
 

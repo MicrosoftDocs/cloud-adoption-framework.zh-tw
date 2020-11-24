@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cb923e88d1bcbea21c3e38ecba7d9eda7999eff6
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: 35c87f668a78435f3da3e8212fa829c503dd1c92
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621479"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997058"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -35,7 +35,7 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 | **混合式** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [大型主機](../infrastructure/mainframe-migration/index.md) | NetApp 和 SAP HANA |
 
-## <a name="migration-methodology"></a>移轉方法
+## <a name="migrate-methodology"></a>遷移方法
 
 在上述每個移轉案例中，當您將現有的工作負載遷移至雲端時，相同的基本流程將會引導您，如下所示：
 

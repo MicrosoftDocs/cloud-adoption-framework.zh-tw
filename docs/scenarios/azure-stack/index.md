@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0e6732c79fc08b22765f67907f8ee8fec9659616
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3158a14c5fd71af6b342242f774b9e525f93d87c
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885502"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997024"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack：在您的資料中心內執行 Azure 的策略選項
 
@@ -28,7 +28,7 @@ Azure Stack Hub 會作為主權雲端的另一個執行個體，由客戶在其�
 
 ## <a name="azure-stack-hub-in-your-strategy"></a>您策略中的 Azure Stack Hub
 
-Azure Stack Hub 提供了替代方法，讓您可以在實體伺服器或現有虛擬化平台上，遷移執行的現有應用程式。 藉由將這些工作負載移到 Azure Stack Hub IaaS 環境，小組可以從更順暢的作業、自助式部署、標準化的硬體設定和 Azure 一致性中獲益。 使用 Azure Stack Hub 來提供現代化或創新支援，可讓您的小組針對應用程式和工作負載做好準備，以充分利用雲端。
+Azure Stack Hub 提供了替代方法，讓您可以在實體伺服器或現有虛擬化平台上，遷移執行的現有應用程式。 藉由將這些工作負載移到 Azure Stack Hub 部署 IaaS 環境，小組可以從更順暢的作業、自助式部署、標準化的硬體設定和 Azure 一致性中獲益。 使用 Azure Stack Hub 來提供現代化或創新支援，可讓您的小組針對應用程式和工作負載做好準備，以充分利用雲端。
 
 藉由跨 Azure 和 Azure Stack Hub 遵循一致的雲端採用做法，您可以將相同的治理和作業模型套用至公用雲端或自有資料中心內的資產。 Azure Stack Hub 使用的 Azure Resource Manager 模型與 Azure 相同，因此您可以在單一位置檢視您所有的解決方案。
 
@@ -38,7 +38,7 @@ Azure 與 Azure Stack Hub 之間有一些差異。 有些很明顯，其他則�
 
 - Azure 提供近乎無限的容量。 Azure Stack Hub 則建置在您資料中心內的實體硬體之上，因此會導致容量有限。
 - Azure 與 Azure Stack Hub 之間的 API 版本和驗證機制可能會稍有不同。
-- Azure Stack Hub 在雲端的*操作者*這一點有所不同，因此會影響工作負載作業的層級。
+- Azure Stack Hub 在雲端的 _操作者_ 這一點有所不同，因此會影響工作負載作業的層級。
 - 必須考慮 Azure Stack Hub 操作員執行的是 Azure Stack Hub 服務的哪個部分，因為這會決定客戶要呼叫服務 PaaS 還是軟體即服務 (SaaS)。
 
 其他差異將會在雲端採用生命週期的不同時間點，於其他 Azure Stack Hub 文章中加以說明。

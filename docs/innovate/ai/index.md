@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 75e2e1cd11f41f44cdb2327f3ce9022c0e642888
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 57495b0a3a0fc4c2c242c33a6f9efedbda5b8c41
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881005"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446877"
 ---
 <!-- docutune:casing InterpretML FairLearn -->
 
