@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3d799dd4d5d1821a8d914ad5ad4daae631d65df6
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: 6909c0c6f5b60694ebb7dc6d98d794e484f11efe
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604611"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446635"
 ---
 # <a name="what-are-ai-applications"></a>什麼是 AI 應用程式？
 
@@ -52,9 +53,9 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 | 服務名稱 | 服務說明 |
 |--|--|
-| [Language Understanding (LUIS) ](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
+| [語言理解 (LUIS)](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
 | [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker 可讓您從半結構化內容中建立問答服務。 |
-| [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析針對情感分析、關鍵字組解壓縮和語言偵測的原始文字提供自然語言處理。 |
+| [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析可針對原始文字進行自然語言處理，進行情感分析、關鍵片語擷取和語言偵測。 |
 | [翻譯工具](/azure/cognitive-services/translator/) | Translator 以近乎即時的方式提供以電腦為基礎的文字轉譯。 |
 
 ### <a name="decision-apis"></a>決策 API

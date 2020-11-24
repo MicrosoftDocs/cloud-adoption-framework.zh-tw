@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 31c8bb2fdf84090eeee81b5b75b5079034784553
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 8e6e052c86964ae11d32a491c36d5ee4e1457e0d
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997143"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447263"
 ---
 <!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
 

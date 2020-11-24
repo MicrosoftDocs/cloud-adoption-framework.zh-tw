@@ -7,12 +7,13 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c40ffd25ef19d25ee1436090b0053e0f02257359
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 0be8841fb83d2c00fb10a86bb103880ee59b7e7a
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996888"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447195"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -88,7 +89,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 1. 增加5% 的銷售參與率
 1. 減少8% 的交易關閉時間
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 五個步驟可協助您的組織使用 OKRs 繼續進行：
 

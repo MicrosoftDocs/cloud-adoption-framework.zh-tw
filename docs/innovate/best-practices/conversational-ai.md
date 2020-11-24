@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f268e1a91f70b3cfb114e8769ef6cea66077eee3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: f3174a439376cbb23f1446a1bdca30f77e613363
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604568"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446822"
 ---
 <!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
@@ -34,7 +35,7 @@ Azure Bot Service 和 Bot Framework 提供一組整合的工具和服務，以�
 
 ![此圖顯示 bot 開發各階段的工具。](../../_images/ai-bot-dev-tools.png)
 
-### <a name="plan"></a>計畫
+### <a name="plan"></a>規劃
 
 徹底瞭解目標、處理常式和使用者需求，對於建立成功 bot 的程式非常重要。 撰寫程式碼之前，請先參閱 bot [設計指導方針](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) ，以瞭解最佳作法，並找出 bot 的需求。 您可以建立簡單的 bot，或包含更複雜的功能，例如語音、自然語言理解和問題答案。
 

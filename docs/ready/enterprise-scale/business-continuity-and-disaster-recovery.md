@@ -1,5 +1,5 @@
 ---
-title: 企業規模的商務持續性和嚴重損壞修復
+title: 企業級商務持續性和災害復原 \(部分機器翻譯\)
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構中企業規模的商務持續性和嚴重損壞修復。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,14 +7,15 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bfbc6924d36a4e4b77a7a23902db18826b2a811b
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.custom: think-tank
+ms.openlocfilehash: b09e5ca4d5bbe6e2080cc90f5c017858b0fe5fce
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275343"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447297"
 ---
-# <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業規模的商務持續性和嚴重損壞修復
+# <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業級商務持續性和災害復原 \(部分機器翻譯\)
 
 您的組織或企業需要設計適合的平台層級功能，讓應用程式工作負載可以取用這些功能來滿足其特定需求。 具體來說，這些應用程式工作負載的需求，與復原時間目標 (RTO) 和復原點目標 (RPO) 有關。 請確定您已 (DR) 需求來取得嚴重損壞修復，以便為這些工作負載設計適當的功能。
 

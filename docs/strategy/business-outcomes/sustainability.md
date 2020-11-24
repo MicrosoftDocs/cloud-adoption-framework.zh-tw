@@ -7,12 +7,13 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9ac5e6fb4feee132de095c00897397ab0b4140ef
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 1e1a9ba6b40baab411c8ddb0d88711c86fb31be3
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994253"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447152"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
@@ -44,7 +45,7 @@ Bee'ah 是中東的持續性先鋒，可相信技術和持續性為未來建立�
 
 這些客戶案例會示範持續性和環境解決方案的優先順序，如何協助組織創造新的商機。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 蓄意的方法可協助組織流覽其持續性旅程。 這四個步驟可能會影響您公司的結果：
 

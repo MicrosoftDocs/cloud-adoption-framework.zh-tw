@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f5c05b97515203270f33d9b97c62652ddabd6169
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 464e20686a9e61157f350491c97396345fe9ad95
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997194"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447348"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -60,7 +61,7 @@ _圖1：身分識別和存取管理。_
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
 - 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
 
-| 角色 | 使用方式 | 動作 | 沒有任何動作 |
+| [角色] | 使用方式 | 動作 | 沒有任何動作 |
 |---|---|---|---|
 | Azure 平臺擁有者 (例如內建擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |

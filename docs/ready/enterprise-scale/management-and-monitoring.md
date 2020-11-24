@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: db2dccf2119d1e871b85d5a57f720f170f58b5a6
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: b7ec1ea50b6f7366444b8199637d5bb8dbab6f4f
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997160"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447246"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 

@@ -7,13 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: csu
-ms.openlocfilehash: 46ed186beee5f03e5635c603775ed4b5c7fa28c6
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: csu, think-tank
+ms.openlocfilehash: a86439fe71235542a9e5b8f9ce66a364db5004a7
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995086"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447331"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -65,7 +65,7 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 ![字母 I ](./media/i.png) [平臺自動化和 DevOps](platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 使用雲端採用架構企業規模的設計指導方針，自訂此架構的執行。
 

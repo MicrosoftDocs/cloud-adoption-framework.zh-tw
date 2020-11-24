@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54a1b556edad27f04d5da442cca39299cec2f4b8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: think-tank
+ms.openlocfilehash: 6131e1c8673bb877c556efb3f6e3d9f293d6b770
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568629"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446788"
 ---
 # <a name="knowledge-mining"></a>知識採礦
 

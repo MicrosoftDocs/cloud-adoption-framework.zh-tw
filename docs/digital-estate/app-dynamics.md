@@ -1,5 +1,5 @@
 ---
-title: 使用 AppDynamics 測量商務成果
+title: 使用 AppDynamics 測量商務結果
 description: 使用 AppDynamics 來瞭解應用程式的效能和使用者經驗如何影響業務成果。
 author: BrianBlanchard
 ms.author: wayneme
@@ -7,16 +7,17 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 171fdfc896ec0669a010be9a9afb33175b5210a6
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.custom: think-tank
+ms.openlocfilehash: 502dba2d970f46d8e929755a9c05be270724f501
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93122035"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447093"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
-# <a name="measure-business-outcomes-with-appdynamics"></a>使用 AppDynamics 測量商務成果
+# <a name="measure-business-outcomes-with-appdynamics"></a>使用 AppDynamics 測量商務結果
 
 測量和量化成功的業務成果是任何雲端採用策略的重要部分。 瞭解應用程式的效能和使用者體驗是測量這些業務成果的關鍵。 不過，精確地測量應用程式效能、使用者體驗和業務衝擊之間的關聯性，通常很難、不准確且耗時。
 

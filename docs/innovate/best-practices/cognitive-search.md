@@ -1,5 +1,5 @@
 ---
-title: 什麼是 Azue 認知搜尋？
+title: 什麼是 Azure 認知搜尋？
 description: Azure 認知搜尋先前稱為「Azure 搜尋服務」，可協助您在編制索引期間套用 AI 流程。
 author: v-hanki
 ms.author: janet
@@ -7,19 +7,20 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5af45a28a2047d05fa48ca76bbc7468816cfd610
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: 88799ab1cadd5274b778f6eef6886b9bdff1778c
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604607"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446839"
 ---
 <!-- cSpell:ignore Lucene -->
 
 <!-- docutune:casing "JFK Files" -->
 <!-- docutune:ignore "Azure Search" -->
 
-# <a name="what-is-azure-cognitive-search"></a>什麼是 Azue 認知搜尋？
+# <a name="what-is-azure-cognitive-search"></a>什麼是 Azure 認知搜尋？
 
 Azure 認知搜尋是一種受控的雲端解決方案，可為開發人員提供 Api 和工具，透過 web、行動和企業應用程式中的私用、異類內容來新增豐富的搜尋體驗。 您的程式碼或工具會叫用資料擷取 (索引編制) 以建立和載入索引。 您可以選擇新增認知技能，以在編製索引期間套用 AI 程序。 這樣做可以加入適用于搜尋和其他案例的新資訊和結構。
 

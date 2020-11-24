@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 78232fa1927667a94e8473b540228e348122549e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: a222333c16e29656b3ffb25b0b33a7973b6a29b5
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712539"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446992"
 ---
 # <a name="ai-applications-and-agents"></a>AI 應用程式和代理程式
 
@@ -112,5 +113,5 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 
 探索其他 AI 解決方案類別：
 
-- [機器學習](./machine-learning.md)
+- [機器學習服務](./machine-learning.md)
 - [知識採礦](./knowledge-mining.md)
