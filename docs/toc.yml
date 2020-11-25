@@ -416,7 +416,7 @@ items:
                   - name: Moodle 移轉
                     items:
                       - name: 概觀
-                        href: scenarios/lamp/moodle/index.md
+                        href: scenarios/lamp/moodle/migration-overview.md
                       - name: 必要條件
                         href: scenarios/lamp/moodle/migration-pre.md
                       - name: 架構和範本
