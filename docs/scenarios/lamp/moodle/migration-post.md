@@ -1,246 +1,296 @@
 ---
 title: 如何在 Moodle 遷移之後追蹤
-description: 瞭解如何在 Moodle 遷移之後進行後續追蹤。
+description: 瞭解如何在 Moodle 遷移之後進行後續追蹤。 瞭解如何更新記錄檔路徑、重新開機伺服器，以及採取完成遷移所需的其他步驟。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/06/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8594919772cfccf3dd02769a14d62f64cb1ad995
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 7a358dbb8f05bcfd9625c7a8afdcba1f7b7890b1
+ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714490"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96038403"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>如何在 Moodle 遷移之後追蹤
 
 ## <a name="post-migration-tasks"></a>移轉後工作
 
-遷移後工作是最終的應用程式設定，包括設定記錄目的地、SSL 憑證，以及排程的工作/cron 作業。 此範圍的工作包括：
+在遷移 Moodle 之後，您必須負責進行某些遷移後工作，以完成您的設定。 這些工作包括：
 
-- 設定應用程式。
-- 正在更新虛擬機器擴展集實例 (s) 中的記錄檔路徑。
-- 正在重新開機虛擬機器擴展集實例 (s 中的伺服器) 。
+- 正在更新虛擬機器擴展集實例中的記錄檔路徑。
+- 正在重新開機虛擬機器擴展集實例中的伺服器。
 - 正在更新憑證。
 - 正在更新憑證位置。
 - 正在更新 HTML 本機複本。
 - 重新開機 PHP 和 nginx 伺服器。
-- 將 DNS 名稱對應至 Azure Load Balancer IP。
+- 將 DNS 名稱對應至 Azure Load Balancer IP 位址。
 
 ## <a name="controller-virtual-machine-scale-set"></a>控制器虛擬機器擴展集
 
-### <a name="log-paths"></a>記錄檔路徑
+請採取下列步驟來完成您的虛擬機器擴展集設定。
 
-內部部署可能會有不同的記錄路徑位置，需要以 Azure 記錄路徑更新。 例如，/var/log/syslogs/moodle/access.log 和/var/log/syslogs/moodle/error.log。
+### <a name="update-log-paths"></a>更新記錄檔路徑
 
-- 更新記錄檔的位置。 此命令會開啟設定檔：
+您的內部部署環境和 Azure 可能會將記錄檔儲存在不同的位置。 例如，您可能需要更新這些記錄檔路徑：
 
-  ```bash
-  nano /etc/nginx/nginx.conf
-  ```
+- `/var/log/syslogs/moodle/access.log`
+- `/var/log/syslogs/moodle/error.log`
 
-- 變更記錄檔路徑位置。
+請遵循下列步驟來更新記錄檔位置：
 
-- 尋找 `access_log` 並 `error_log` 更新記錄檔路徑。
+1. 輸入此命令以開啟設定檔：
 
-- 按下 `CTRL+O` 以儲存並結束 `CTRL+X` 。
+   ```bash
+   nano /etc/nginx/nginx.conf
+   ```
+
+2. 尋找 `access_log` 並 `error_log` 更新記錄檔路徑。
+
+3. 按 CTRL + O 儲存變更，然後按 CTRL + X 關閉檔案。
 
 ### <a name="restart-servers"></a>重新開機伺服器
 
-重新開機 nginx 和 php-php-fpm 伺服器：
+輸入下列命令以重新開機 nginx 和 php php-fpm 伺服器：
 
-  ```bash
-  sudo systemctl restart nginx
-  sudo systemctl restart php<phpVersion>-fpm
-  ```
+```bash
+sudo systemctl restart nginx
+sudo systemctl restart php<php version>-fpm
+```
 
 ## <a name="controller-virtual-machine"></a>控制器虛擬機器
 
-### <a name="certificates"></a>憑證
+請採取下列步驟來完成控制器虛擬機器設定。
 
-- 若要存取憑證，請登入控制器虛擬機器。
+### <a name="update-security-certificates"></a>更新安全性憑證
 
-- Moodle 應用程式的憑證位於/moodle/certs。
+1. 登入控制器虛擬機器。 您可以在資料夾中找到 Moodle 應用程式的憑證 `/moodle/certs` 。
 
-- 將 .crt 和金鑰檔案複製到/moodle/certs/。 檔案名應變更為 nginx 和 nginx，才能由設定的 nginx 伺服器辨識。 根據您的本機環境，您可以選擇使用公用程式 SCP 或 WinSCP 之類的工具，將這些檔案複製到控制器虛擬機器。
+1. 將和檔案複製 `.crt` `.key` 到 `/moodle/certs/` 。 分別將檔案名變更為 `nginx.crt` 和 `nginx.key` ，讓設定的 nginx 伺服器能夠辨識這些名稱。 如果您的本機環境支援 SCP 公用程式或工具（例如 WinSCP），您可以使用這些工具將這些檔案複製到控制器虛擬機器。 否則，請使用下列命令：
 
-- 用來變更憑證名稱的命令。
+   ```bash
+   cd /<path to certs location>
+   mv /<path to certs location>/*.key /moodle/certs/nginx.key
+   mv /<path to certs location>/*.crt /moodle/certs/nginx.crt
+   ```
 
-  ```bash
-  cd /path/to/certs/location
-  mv /path/to/certs/location/*.key /moodle/certs/nginx.key
-  mv /path/to/certs/location/*.crt /moodle/certs/nginx.crt
-  ```
+   若要複製檔案，您可以使用下列命令來產生自我簽署的憑證：
 
-- 您也可以產生自我簽署的憑證，這只適用于測試。
-
-  ```bash
-  openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-  -keyout /moodle/certs/nginx.key \
+   ```bash
+   openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+   -keyout /moodle/certs/nginx.key \
    -out /moodle/certs/nginx.crt \
-  -subj "/C=US/ST=WA/L=Redmond/O=IT/CN=mydomain.com"
-  ```
+   -subj "/C=US/ST=WA/L=Redmond/O=IT/CN=mydomain.com"
+   ```
 
-- 建議將憑證檔案設為唯讀給擁有者，並將這些檔案設為擁有者 `www-data:www-data` 。
+   您只能使用自我簽署憑證進行測試。
 
-  ```bash
-  chown www-data:www-data /moodle/certs/nginx.*
+1. 建議的憑證檔案是由擁有者所擁有，而且對擁有者而言 `www-data:www-data` 是唯讀的。 輸入下列命令來進行這些變更：
+
+   ```bash
+   chown www-data:www-data /moodle/certs/nginx.*
    chmod 400 /moodle/certs/nginx.*
-  ```
+   ```
 
-- 若要更新憑證位置並開啟設定檔：
+1. 採取下列步驟來更新憑證位置：
 
-  ```bash
-  nano /etc/nginx/sites-enabled/*.conf
-  ```
+   1. 輸入此命令以開啟設定檔：
 
-- 若要變更憑證的路徑位置，請尋找 `ssl_certificate` 。 更新憑證的路徑，如下所示：
+      ```bash
+      nano /etc/nginx/sites-enabled/*.conf
+      ```
 
-```bash
-   /moodle/certs/moodle/certs/nginx.crt;
-   /moodle/certs/nginx.key;
-```
+   1. `ssl_certificate`在檔案中尋找。
 
-- 按下 `CTRL+O` 以儲存檔案並結束 `CTRL+X` 。
+   1. 將憑證的路徑取代為下列值：
+
+      ```bash
+      /moodle/certs/moodle/certs/nginx.crt;
+      /moodle/certs/nginx.key;
+      ```
+
+    1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
 
 ### <a name="update-the-local-html-copy"></a>更新本機 HTML 複本
 
-Moodle html 網站 (`/moodle/html/moodle`) 內容的本機複本會在虛擬機器擴展集中建立 `/var/www/html/moodle` 。 只有在時間戳記有更新時，才會更新本機複本。 從控制器虛擬機器執行下列命令，以更新時間戳記。
+Moodle HTML 網站內容的本機複本 `/moodle/html/moodle` 是在此資料夾的虛擬機器擴展集中建立： `/var/www/html/moodle` 。 只有在時間戳記變更時，才會更新本機複本。 在控制器虛擬機器中輸入下列命令，以更新時間戳記：
 
-  ```bash
-  sudo -s
-  /usr/local/bin/update_last_modified_time.moodle_on_azure.sh
-  ```
+```bash
+sudo -s
+/usr/local/bin/update_last_modified_time.moodle_on_azure.sh
+```
 
-- 每次執行上次修改時間戳記檔案中的腳本 (`/moodle/html/moodle/last_modified_time.moodle_on_azure`) 時， `/moodle/html/moodle` 會在本機複製 () 更新目錄內容 `/var/www/html` 。
+上次修改時間戳記檔案 `/moodle/html/moodle/last_modified_time.moodle_on_azure` 包含腳本。 每次腳本執行時， `/moodle/html/moodle` 都會更新本機複本中的目錄內容 `/var/www/html` 。
 
 ### <a name="restart-servers"></a>重新開機伺服器
 
-- 重新開機 `nginx` 和 `php-fpm` 伺服器。
+輸入下列命令以重新開機 `nginx` 和 `php-fpm` 伺服器：
 
-  ```bash
-  sudo systemctl restart nginx
-  sudo systemctl restart php<phpVersion>-fpm
-  ```
+```bash
+sudo systemctl restart nginx
+sudo systemctl restart php<php version>-fpm
+```
 
-### <a name="map-the-dns-name-to-the-azure-load-balancer-ip"></a>將 DNS 名稱對應至 Azure Load Balancer IP
+### <a name="map-the-dns-name-to-the-azure-load-balancer-ip-address"></a>將 DNS 名稱對應至 Azure Load Balancer IP 位址
 
-- Azure Load Balancer IP 的 DNS 名稱對應必須在主機服務提供者層級進行。
+請在主機服務提供者層級遵循下列步驟，將 DNS 名稱對應至 Azure Load Balancer IP：
 
-- 停用 Moodle 網站上的 **維護模式** 。
+1. 在控制器虛擬機器中輸入下列命令，以關閉 Moodle 網站上的維護模式：
 
-- 在控制器虛擬機器中執行下列命令：
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php --disable
-  ```
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php --disable
+   ```
 
-- 若要檢查 Moodle 網站的狀態，請執行下列命令：
+1. 輸入此命令以檢查 Moodle 網站的狀態：
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php
-  ```
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php
+   ```
 
-- 點擊 DNS 名稱以取得遷移的 Moodle 網頁。
+1. 移至 DNS 名稱，以查看遷移的 Moodle 網頁。
 
 ## <a name="frequently-asked-questions-and-troubleshooting"></a>常見問題和疑難排解
 
-1. 錯誤：資料庫連接失敗：針對 _資料庫連接失敗_ 之類的錯誤，或 _無法連接到您指定的資料庫_，可能的原因和解決方案如下：
+當您有關于 Moodle 遷移的問題時，請參閱下列資訊。 這些記錄檔也可協助您針對問題進行疑難排解：
 
-    - 未安裝或正在執行您的資料庫伺服器。 若要檢查 MySQL 是否有此情況，請嘗試輸入下列命令：
+- Syslog 檔案：
 
-      ```bash
-      $telnet database_host_name 3306
-      ```
+  - 每當使用者移至您的網頁時，系統就會產生錯誤記錄檔或存取記錄檔。
+  - 您可以在此資料夾中找到它們： `/var/log/nginx/` 。
 
-    - 您應該會取得不需要的回應，其中包含 MySQL 伺服器的版本號碼。
+- Cron 記錄檔：
+  - 當 cron 作業執行時，它會更新記錄檔的本機複本。
+  - 您可以在此資料夾中找到此檔案： `/var/log/sitelogs/moodle/cron.log` 。
 
-    - 如果您嘗試在不同的埠上執行兩個 Moodle 實例，請在設定中使用主機 (不是 localhost) 的 IP 位址 `$CFG->dbhost` ; 例如 `$CFG->dbhost = 127.0.0.1:3308` 。
+### <a name="database-connection-failure"></a>資料庫連接失敗
 
-    - 您尚未建立 Moodle 資料庫或指派具有正確許可權的使用者來存取它。
+針對 *資料庫連接失敗* 或 *無法連接到您指定之資料庫* 的錯誤，以下是一些可能的原因和解決方案：
 
-    - Moodle 資料庫設定不正確。 Moodle 設定檔中的資料庫名稱、資料庫使用者或資料庫使用者密碼 `config.php` 不正確。
+- 未安裝或正在執行您的資料庫伺服器。 若要在 MySQL 中檢查這個條件，請輸入下列命令：
 
-    - 檢查您的 MySQL 使用者名稱或密碼中沒有任何單引號或非字母字母。
+  ```bash
+  $telnet database_host_name 3306
+  ```
 
-2. 錯誤： _500：內部伺服器錯誤_：發生此錯誤的可能原因有好幾個。 首先請檢查您的 web 伺服器錯誤記錄檔，這應該會有更完整的說明。 以下是一些已知的可能性：
+  如果您的資料庫正在執行，您應該會收到包含 MySQL 伺服器版本號碼的回應。
 
-    - 或檔案中有語法錯誤 `.htaccess` `httpd.conf` 。 指示詞的寫入方式會因您所使用的檔案而有所不同。 您可以使用下列命令來測試 nginx 檔中的設定錯誤：
+- 未正確設定主機位址。 如果您在不同的埠上執行兩個 Moodle 實例，請在設定中使用主機的 IP 位址，而不是 `localhost` `$CFG->dbhost` 。 例如，使用：
 
-      `nginx -t`
+  `$CFG->dbhost = 127.0.0.1:3308`
 
-    - Web 服務器會以您自己的使用者名稱執行，而且所有檔案的最大許可權等級為755。 檢查是否已在 [控制台] 中為您的 Moodle 目錄設定此設定，或如果您有 shell 的存取權，請使用此命令：
+- 您尚未建立 Moodle 資料庫。 或者，您尚未指派適當的許可權來存取資料庫。 檢查資料庫和您授與的許可權。
 
-      ```bash
-      chmod -R 755 moodle
-      ```
+- Moodle 資料庫設定不正確。 比方說，Moodle 設定檔中的資料庫名稱、使用者名稱或密碼 `config.php` 不正確。 請確定您的 MySQL 使用者名稱和密碼未包含單引號或非英數位元。
 
-3. 錯誤： _403：禁止_。
+### <a name="internal-server-error"></a>內部伺服器錯誤
 
-    此錯誤表示 PHP memory_limit 值對 PHP 腳本而言不足。 Memory_limit 值是允許的記憶體大小， `64M` 在上述範例中 (67108864 個位元組/1024 = 65536 KB。 65536 KB/1024 = 64 MB) 。 您必須增加 PHP memory_limit 值，直到此訊息消失為止。 有兩種方法可以執行這項操作：
+此錯誤有幾個可能的原因： *500：內部伺服器錯誤*。 一開始請先檢查您的 web 伺服器錯誤記錄檔，其中應該包含詳細說明。 以下是一些可能性：
 
-    方法1：針對託管安裝，您應該要求您的主機支援如何執行這項操作。 許多允許 `.htaccess` 的檔案。 如果有的話，請將下列這一行新增至您 `.htaccess` 的檔案，或在 Moodle 目錄中建立檔案（如果尚未存在的話）：
+- 或檔案中有語法錯誤 `.htaccess` `httpd.conf` 。 指示詞的正確語法會因您所使用的檔案而有所不同。 使用下列命令來測試 nginx 檔中的設定錯誤：
 
-      ```bash
-      php_value memory_limit <value>M
-      Example: php_value memory_limit 40M
-      ```
+  ```bash
+  `nginx -t`
+  ```
 
-    方法2：如果您有自己的伺服器搭配 shell 存取，請編輯您的檔案 `php.ini` 。 簽入您的輸出，以確定它是正確的 `phpinfo` ：
+- Web 服務器會以您自己的使用者名稱執行，而且存取權限不正確。 在此情況下，所有檔案都需要最大許可權等級755。 檢查是否已在 [控制台] 中為您的 Moodle 目錄設定此層級。 或者，如果您有 shell 的存取權，請使用此命令來設定層級：
 
-      ```bash
-      memory_limit <value>M
-      Example: memory_limit 40M
-      ```
+  ```bash
+  chmod -R 755 moodle
+  ```
 
-    請記住，您需要重新開機您的 web 伺服器，才能讓變更 `php.ini` 生效。 替代方法是 `memory_limit` 使用 ' memory_limit 0 ' 命令停用。
+### <a name="memory-limit-error"></a>記憶體限制錯誤
 
-4. 無法登入;卡在登入畫面上。
+當 *403：禁止* 的錯誤發生時，php `memory_limit` 值不夠大，無法用於 php 腳本。 此 `memory_limit` 值為允許的記憶體大小。 `memory_limit`以較小的數量增加 PHP 值，直到訊息消失為止。 使用下列其中一種方法：
 
-    如果您看到您的會話已超時，也可以套用此 _程式。請重新登入。_ 或偵測 _到會影響您登入會話的伺服器錯誤。請重新登入，或重新開機瀏覽器。_ 以下是您可以採取來解決此問題的可能原因和動作：
+- 若為託管安裝，請要求您的主機支援如何增加值。 許多環境會使用檔案 `.htaccess` 。 如果您的安裝已安裝，請在您的檔案中新增下列程式 `.htaccess` 程式碼：
 
-    - 首先，檢查您的主要系統管理員帳戶是否為另一個手動帳戶，也是問題所在。 如果您的使用者使用外部驗證方法 (例如，LDAP) ，則這可能是問題所在。 找出原因，並確認它已 Moodle，然後再繼續進行。
+  ```bash
+  php_value memory_limit <value>M
+  ```
 
-    - 檢查您的硬碟未滿、您的伺服器在共用主機上，而且您尚未達到您的磁碟空間配額。 這可防止建立新的會話，而且沒有人能夠登入。
+  例如，若要將值增加為 40 mb，請輸入：
 
-    - 請仔細檢查您區域中的許可權 `moodledata` 。 網頁伺服器必須能夠寫入 `sessions` 子目錄。
+  `php_value memory_limit 40M`
 
-5. 嚴重錯誤： _$CFG >dataroot 無法寫入。系統管理員必須修正目錄許可權！_ 正在結束。
+  如果檔案不 `.htaccess` 存在，請在 Moodle 目錄中使用該行建立一個檔案。
 
-    - 檢查 Moodle 和 moodledata 許可權是否為 www 資料：僅限 www 資料。 如果不是，請變更群組和擁有權許可權。 下列命令會更新許可權：
+- 如果您有自己的伺服器具有 shell 存取權，請編輯您的檔案 `php.ini` 。 然後重新開機您的 web 伺服器，以套用您在中所做的變更 `php.ini` 。 若要確定您已正確更新此值，請輸入下列命令：
 
-      ```bash
-      sudo chown -R /moodle/moodledata
-      ```
+  ```bash
+  `phpinfo`
+  ```
 
-6. 找不到最上層課程。
+  的輸出 `phpinfo` 應該包含類似下面的行：
 
-    - 如果在您嘗試安裝 Moodle 後立即顯示，可能表示安裝未完成。 完整的安裝將會要求您提供系統管理員設定檔，並在完成之前將網站命名。 檢查您的記錄檔是否有錯誤，然後卸載資料庫以重新開機。 如果您使用 web 型安裝程式，請嘗試命令列1。
+  ```bash
+  memory_limit <value>M
+  ```
 
-7. 登入時，登入連結不會變更。 我已登入，但無法自由導覽。 請確定您的設定中的 URL 與 `$CFG->wwwroot` 您實際用來存取網站的 URL 完全相同。
+  例如，它可能包含下列程式程式碼：
 
-8. 上傳檔案時發生錯誤：
+  `memory_limit 40M`
 
-    - 如果您在上傳檔案時收到「找 _不_ 到檔案」錯誤，表示您的 web 伺服器上未啟用斜線引數。 請嘗試啟用。
+增加值的替代 `memory_limit` 方式是輸入下列命令來關閉記憶體限制：
 
-    - 如果您的網頁伺服器不支援斜線引數，則可以在 Moodle 中停用這些引數，方法是 unticking Administration > Site Administration > Server > HTTP 的 [ **使用斜線引數** ] 核取方塊。
+  ```bash
+memory_limit 0
+```
 
-      > [!WARNING]
-      > 停用斜線引數會導致 SCORM 套件無法運作，而且會顯示斜線引數警告！
+### <a name="sign-in-errors"></a>登入錯誤
 
-9. 網站卡在 **維護模式** 中。 有時候 Moodle 會卡在 **維護模式** 中，而 _此網站正在進行維護的訊息，而且目前無法使用_ ，因為您嘗試將其關閉。 當您將 Moodle 置於 **維護模式** 時，它會 `maintenance.html` 在網站檔案的目錄中建立檔案 `moodledata/maintenance.html` 。 若要修正此問題，請嘗試下列方法：
+有時您無法登入，或看到下列其中一則訊息：
 
-    - 檢查 web 伺服器使用者是否有 moodledata 目錄的寫入權限。
-    - 手動刪除檔案 `maintenance.html` 。
+- *您的會話已超時。請重新登入。*
 
-10. 何處可以找到記錄：
+- *偵測到會影響您登入會話的伺服器錯誤。請重新登入，或重新開機瀏覽器。*
 
-    - Syslog: 
-      - 當有人存取頁面時，可能會產生錯誤或存取記錄。
-      - 它們會在此位置進行捕捉： `/var/log/nginx/` 。
+您的驗證方法可能有問題，特別是當您使用 LDAP 之類的外部方法來驗證使用者時。 嘗試登入另一個手動帳戶，例如您的主要系統管理員帳戶。 如果您無法登入，請檢查您的驗證。 如果您可以登入其他帳戶，以下是 Moodle 登入問題的可能原因和解決方案：
 
-    - Cron 記錄：
-      - Cron 作業將會執行，並會更新實例中的本機複本。
-      - 路徑為 `/var/log/sitelogs/moodle/cron.log` 。
+- 硬碟可能已滿。 在此情況下，Moodle 無法建立新的會話，且使用者無法登入。 檢查您的硬碟未滿、您的伺服器在共用主機上，而且您尚未達到您的磁碟空間配額。
+
+- Web 服務器無法寫入 `sessions` 子目錄。 請仔細檢查您區域中的許可權 `moodledata` 。
+
+### <a name="fatal-errors"></a>嚴重錯誤
+
+如果您看到此錯誤，Moodle 和 moodledata 許可權可能不正確：*嚴重錯誤： $CFG->dataroot 無法寫入。系統管理員必須修正目錄許可權！* 正在結束。
+
+檢查這些許可權是否 `www-data:www-data` 只有。 如果許可權位於不同層級，請使用此命令變更群組和擁有權許可權：
+
+```bash
+sudo chown -R /moodle/moodledata
+```
+
+### <a name="top-level-course-errors"></a>最高層級的課程錯誤
+
+如果您在安裝 Moodle 後找不到最上層課程，則安裝可能尚未完成。 在完成安裝結束之前，Moodle 會要求您提供系統管理員設定檔，並提示您為網站命名。 如果缺少這些步驟，請檢查記錄檔中是否有錯誤。 然後重新開機資料庫。 如果您使用 web 型安裝程式，請使用命令列再次安裝 Moodle。
+
+### <a name="navigation-errors"></a>流覽錯誤
+
+如果您無法在登入後於 Moodle 中自由流覽，您的 URL 設定可能不正確。 請確定您設定中的 URL 與 `$CFG->wwwroot` 您用來存取網站的 URL 相同。
+
+### <a name="file-upload-errors"></a>檔案上傳錯誤
+
+如果您在上傳檔案時看到「找 *不* 到檔案」錯誤，則您的 web 伺服器可能未開啟斜線引數。
+
+- 如果您的 web 伺服器支援斜線引數，請將其開啟。
+
+- 如果您的網頁伺服器不支援斜線引數，請清除 **Administration** Site administration server HTTP 中的 [**使用斜線引數**] 核取方塊，在 Moodle 中將它們關閉  >  **Site administration**  >  **Server**  >  ****。 您可能會看到此訊息。
+
+  > [!WARNING]
+  > 停用斜線引數會導致 SCORM 套件無法運作，而且會顯示斜線引數警告！
+
+### <a name="maintenance-mode-errors"></a>維護模式錯誤
+
+當 Moodle 處於維護模式，而您嘗試離開該模式時，有時您會看到此訊息： *此網站正在進行維護，目前無法使用*。 當 `maintenance.html` Moodle 在 `moodledata` 進入維護模式時，資料夾中所建立的檔案有問題時，就會出現這種情況。 在此情況下，請執行下列步驟：
+
+- 檢查 web 伺服器使用者是否在目錄中具有寫入權限 `moodledata` 。
+- 手動刪除檔案 `maintenance.html` 。
+
+## <a name="next-steps"></a>後續步驟
+
+- [適用於 MySQL 的 Azure 資料庫文件](https://docs.microsoft.com/azure/mysql/)
+- [什麼是虛擬機器擴展集？](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
+- [儲存體帳戶總覽](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

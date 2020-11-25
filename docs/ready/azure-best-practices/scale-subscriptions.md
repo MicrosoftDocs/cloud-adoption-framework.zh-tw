@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 29ae946d7ed18e84733e805d6d08dab3ea45bbd0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5599c735c9dbb5acd876ea020435a11d72565ca4
+ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569768"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96038596"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶以調整 Azure 環境
 
@@ -37,9 +37,9 @@ ms.locfileid: "88569768"
 您的業務優先順序可能會讓您建立額外的訂用帳戶。 這些優先順序包括：
 
 - 創新
-- 移轉
+- 遷移
 - 成本
-- Operations
+- 作業
 - 安全性
 - 控管
 
@@ -54,10 +54,10 @@ ms.locfileid: "88569768"
 - 識別負責建立新訂閱的人員。
 - 決定預設訂用帳戶中有哪些資源類型可供使用。
 - 決定所有標準訂用帳戶的型態。 這些考量包括 RBAC 存取、原則、標記和基礎結構資源。
-- 可能的話，請以程式設計方式透過服務主體 [建立新的訂閱](/azure/azure-resource-manager/management/programmatically-create-subscription) 。 您必須將 [許可權授與服務主體](/azure/azure-resource-manager/grant-access-to-create-subscription) ，才能建立訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
+- 可能的話，請以程式設計方式透過服務主體 [建立新的訂閱](/azure/cost-management-billing/manage/programmatically-create-subscription-preview) 。 您必須將 [許可權授與服務主體](/azure/azure-resource-manager/grant-access-to-create-subscription) ，才能建立訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
 - 如果您是 Enterprise 合約 (EA) 客戶，請要求 Azure 支援服務為您的組織封鎖非 EA 訂用帳戶的建立。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 建立管理群組階層，以協助 [組織及管理您的](./organize-subscriptions.md)訂用帳戶和資源。
 

@@ -1,258 +1,296 @@
 ---
 title: 如何準備進行 Moodle 遷移
-description: 瞭解如何準備 Moodle 遷移。
+description: 瞭解如何準備 Moodle 遷移。 瞭解如何備份 Moodle 檔，並建立遷移所需的資源。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/06/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 71990470e04f68f78b0bfffc2b1d837c7f0f29ad
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0524a761cb1fadb4f41f9c189ccab67a69c61295
+ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714530"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96038474"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>如何準備進行 Moodle 遷移
 
-## <a name="pre-migration-tasks"></a>預先遷移工作
-
-將資料從內部部署匯出至 Azure 包含下列工作：
-
-- 安裝 Azure CLI。
-- 建立訂閱。
-- 建立資源群組。
-- 建立儲存體帳戶。
-- 備份內部部署資料。
-- 下載並安裝 AzCopy。
-- 將封存的檔案複製到 Azure Blob。
+將 Moodle 應用程式從內部部署環境遷移至 Azure 之前，您應該匯出資料。 本指南說明匯出流程的步驟。
 
 ## <a name="install-the-azure-cli"></a>安裝 Azure CLI
 
-- 在內部部署基礎結構內部的主機上安裝 Azure CLI，以進行所有 Azure 相關的工作。
+請遵循下列步驟，在您的內部部署環境中設定 Azure CLI：
 
-  ```bash
+1. 在可用於 Azure 工作的主機上，輸入下列命令以安裝 Azure CLI：
+
+   ```bash
    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-  ```
+   ```
 
-- 登入您的 Azure 帳戶。
+1. 在 Azure CLI 中，輸入此命令以登入您的 Azure 帳戶：
 
-  ```bash
-  az login
-  ```
+   ```bash
+   az login -u <username> -p <password>
+   ```
 
-- Az login 命令： Azure CLI 可能會在您的預設網頁瀏覽器內啟動實例或索引標籤，並提示您使用您的 Microsoft 帳戶登入 Azure。 如果瀏覽器啟動不發生，請在中開啟新的頁面， [https://aka.ms/devicelogin](https://aka.ms/devicelogin) 然後輸入終端機中顯示的授權碼。
-
-- 若要使用命令列，請輸入下列命令：
-
-  ```bash
-  az login -u <username> -p <password>
-  ```
+1. 如果 Azure CLI 開啟瀏覽器視窗或索引標籤，請使用您的 Microsoft 帳戶登入 Azure。 如果瀏覽器視窗未開啟，請移至 [https://aka.ms/devicelogin](https://aka.ms/devicelogin) ，然後輸入終端機中顯示的授權碼。
 
 ## <a name="create-a-subscription"></a>建立訂用帳戶
 
-如果您有訂用帳戶，請略過此步驟。 如果您沒有訂用帳戶，您可以選擇在 [Azure 入口網站內建立一個](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) 訂用帳戶，或選擇 [隨用隨付](https://azure.microsoft.com/offers/ms-azr-0003p/) 訂用帳戶。
+如果您已經有 Azure 訂用帳戶，請略過此步驟。
 
-- 若要使用 Azure 入口網站建立訂用帳戶，請 **從 [** **首頁** ] 區段流覽至 [訂用帳戶]。
+如果您沒有 Azure 訂用帳戶，您可以 [免費建立一個](https://azure.microsoft.com/free/)訂用帳戶。 您也可以設定 [隨用隨付訂](https://azure.microsoft.com/offers/ms-azr-0003p/)用帳戶，也可以在 Azure 中建立訂用帳戶。
 
-  ![Azure 訂用帳戶。](./images/subscriptions.png)
+- 若要使用 Azure 入口網站建立訂用帳戶，請 [開啟 [](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)訂用帳戶]，選取 [ **新增**]，然後輸入必要的資訊。
 
-- 此命令會設定訂用帳戶：
+  ![Azure 入口網站中 [訂閱] 頁面的螢幕擷取畫面。](./images/azure-subscriptions-page.png)
 
-  ```bash
-  az account set --subscription "Subscription Name"
+- 若要使用 Azure CLI 建立訂用帳戶，請輸入下列命令：
 
-  Example: az account set --subscription "ComputePM LibrarySub"
+  ```azurecli
+  az account set --subscription '<subscription name>'
   ```
+
+  例如，輸入：
+
+  `az account set --subscription 'ComputePM LibrarySub'`
 
 ## <a name="create-a-resource-group"></a>建立資源群組
 
-訂用帳戶設定好之後，您必須建立資源群組。 其中一個選項是使用 Azure 入口網站來建立它。 流覽至 [ **首頁** ] 區段、搜尋 **資源群組**、選取它、填寫必要欄位，然後選取 [ **建立**]。
+設定好訂用帳戶之後，請在 Azure 中建立資源群組。 您可以使用 Azure 入口網站或 CLI 來建立群組。
 
-![資源群組：建立資源群組。](./images/resource-group.png)
+- 若要使用 Azure 入口網站，請遵循下列步驟：
 
-或者，您可以使用 Azure CLI 來建立資源群組。
+  1. 開啟 [ [資源群組](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]，然後選取 [ **新增**]。
+  
+  1. 輸入您的訂用帳戶名稱、資源組名和區域。 如需可用區域的清單，請參閱 [Azure 中的資料](https://azure.microsoft.com/global-infrastructure/data-residency/) 存放區。 記下您輸入的資源組名，讓您可以在稍後的步驟中使用該名稱。
+  
+  1. 選取 [檢閱 + 建立]。
 
-- 提供先前步驟中的相同預設位置。
+  ![[建立資源群組] 頁面的螢幕擷取畫面，其中包含 Azure 入口網站 [訂用帳戶]、[資源群組] 和 [區域] 方塊，以及 [審核 + 建立] 按鈕。](./images/resource-group.png)
 
-  ```bash
-  az group create -l location -n name -s Subscription_NAME_OR_ID
+- 若要使用 Azure CLI 建立資源群組，請輸入下列命令：
+
+  ```azurecli
+  az group create -l <region> -n <resource group name> -s '<subscription name>'
   ```
 
-- 使用範例測試帳戶更新螢幕擷取畫面和訂用帳戶名稱。
+  例如，輸入：
 
-  例如：`az group create -l eastus -n manual_migration -s ComputePM LibrarySub`
+  `az group create -l eastus -n manual_migration -s 'ComputePM LibrarySub'`
 
-- 在上一個步驟中，會建立一個資源群組做為「manual_migration」。 在後續步驟中使用相同的資源群組。
-
-探索 [Azure 中的位置](https://azure.microsoft.com/global-infrastructure/data-residency/) ，以取得詳細資訊。
+  您以參數提供的值會 `-l` 指定預設位置。 使用您在先前步驟中使用的相同位置。 記下您所建立的資源組名，並在稍後的步驟中使用該名稱。
 
 ## <a name="create-a-storage-account"></a>建立儲存體帳戶
 
-下一步是在已建立的資源群組中 [建立儲存體帳戶](https://ms.portal.azure.com/#create/Microsoft.StorageAccount) 。 您可以使用 Azure 入口網站或 Azure CLI 來建立儲存體帳戶。
+接下來，在您剛才建立的資源群組中建立儲存體帳戶。 您將使用此儲存體帳戶來備份您的內部部署 Moodle 資料。
 
-- 若要使用入口網站建立，請流覽至該入口網站、搜尋儲存體帳戶，然後選取 [ **新增** ] 按鈕。 填寫必要欄位之後，請選取 [ **建立**]。
+您可以使用 Azure 入口網站或 Azure CLI 來建立儲存體帳戶。
 
-  ![建立儲存體帳戶。](./images/create-storage-account.png)
+- 若要使用 Azure 入口網站，請遵循下列步驟：
 
-- 或者，您可以使用 Azure CLI：
+  1. 開啟 [ [建立儲存體帳戶](https://ms.portal.azure.com/#create/Microsoft.StorageAccount)]。
 
-  ```bash
-  az storage account create -n storageAccountName -g resourceGroupName --sku Standard_LRS --kind BlobStorage -l location
+  1. 輸入下列資訊：
+
+     - 您的訂用帳戶名稱
+     - 您剛才建立的資源組名
+     - 儲存體帳戶名稱
+     - 您的區域
+   
+  1. 針對 [ **帳戶類型**]，輸入 **BlobStorage**。
+  
+  1. 針對 **複寫**，請輸入 **讀取權限異地冗余儲存體 (GRS)**。
+
+  1. 選取 [檢閱 + 建立]。
+
+  ![Azure 入口網站中的 [建立儲存體帳戶] 頁面的螢幕擷取畫面，其中包含多個輸入方塊和 [審核 + 建立] 按鈕。](./images/create-storage-account.png)
+
+- 若要使用 Azure CLI 建立儲存體帳戶，請輸入下列命令：
+
+  ```azurecli
+  az storage account create -n <storage account name> -g <resource group name> --sku <storage account SKU> --kind <storage account type> -l <region>
   ```
 
-  範例：`az storage account create -n onpremisesstorage -g manual_migration --sku Standard_LRS --kind BlobStorage -l eastus`
+  例如，輸入：
 
-- 在先前的命令中， `--kind` 表示儲存體帳戶的類型。 一旦 `onpremisesstorage` 建立帳戶，它就會成為內部部署備份的目的地。
+  `az storage account create -n onpremisesstorage -g manual_migration --sku Standard_LRS --kind BlobStorage -l eastus`
+
+  `--kind`參數會指定儲存體帳戶的類型。
 
 ## <a name="back-up-on-premises-data"></a>備份內部部署資料
 
-- 在備份內部部署資料之前，請先啟用 Moodle 網站的 **維護模式** 。 從內部部署虛擬機器執行下列命令：
+備份您的內部部署 Moodle 資料之前，請遵循下列步驟，在您的 Moodle 網站上開啟 **維護模式** ：
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php --enable
-  ```
+1. 在內部部署虛擬機器上，輸入此命令：
 
-- 執行下列命令以檢查 Moodle 網站的狀態：
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php --enable
+   ```
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php
-  ```
+2. 輸入下列命令以檢查 Moodle 網站的狀態：
 
-- 當您備份內部部署 Moodle 和 moodledata 檔案、設定和資料庫時，備份至單一目錄。 下圖摘要說明：
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php
+   ```
 
-  ![Moodle 備份目錄結構。](./images/directory-structure.png)
+當您備份內部部署 Moodle 和 moodledata 檔案、設定和資料庫時，備份至單一目錄。 下圖摘要說明此概念：
 
-- 若要複製所有資料，請在任何想要的位置中建立空的儲存體目錄：
+![顯示 Moodle 備份儲存體目錄結構的圖表。](./images/directory-structure.png)
+
+### <a name="create-a-storage-directory"></a>建立儲存體目錄
+
+複製您的資料之前，請在任何想要的位置建立空的儲存體目錄。 例如，如果位置為 `/home/azureadmin` ，請輸入下列命令：
 
   ```bash
   sudo -s
-  ```
-
-  例如，位置是 `/home/azureadmin` 。
-
-  ```bash
   cd /home/azureadmin
   mkdir storage
   ```
 
-### <a name="back-up-moodle-and-moodledata"></a>備份 Moodle 和 moodledata
+### <a name="back-up-moodle-directories"></a>備份 Moodle 目錄
 
-- Moodle 目錄是由網站 HTML 內容所組成。 Moodledata 包含 Moodle 網站資料。
+在您的內部部署環境中， `moodle` 目錄包含網站 HTML 內容。 `moodledata`目錄包含 Moodle 網站資料。
 
-- 複製 Moodle 和 moodledata 的命令如下：
+輸入下列命令，將檔案從 `moodle` 和 `moodledata` 目錄複寫到儲存體目錄中：
 
   ```bash
   cp -R /var/www/html/moodle /home/azureadmin/storage/
   cp -R /var/moodledata /home/azureadmin/storage/
   ```
 
-### <a name="backup-php-and-web-server-configurations"></a>備份 PHP 和 web 伺服器設定
+### <a name="back-up-php-and-web-server-configurations"></a>備份 PHP 和 web 伺服器設定
 
-- 將、、和目錄等 PHP 配置檔案複製 `php-fpm.conf` `php.ini` `pool.d` `conf.d` 到 `phpconfig` 目錄下的目錄 `configuration` 。
+若要備份設定檔，請遵循下列步驟：
 
-- 將和等 ngnix 設定 `nginx.conf` 複製 `sites-enabled/dns.conf` 到 `nginxconfig` 目錄下的目錄 `configuration` 。
+1. 輸入下列命令，在您的儲存體目錄下建立新的目錄：
 
-  ```bash
-  cd /home/azureadmin/storage mkdir configuration
-  ```
+   ```bash
+   cd /home/azureadmin/storage
+   mkdir configuration
+   ```
 
-- 複製 nginx 和 PHP 設定的命令如下：
+2. 輸入下列命令來複製 PHP 和 nginx 設定檔：
 
-  ```bash
-  cp -R /etc/nginx /home/azureadmin/storage/configuration/nginx
-  cp -R /etc/php /home/azureadmin/storage/configuration/php
-  ```
+   ```bash
+   cp -R /etc/php /home/azureadmin/storage/configuration/
+   cp -R /etc/nginx /home/azureadmin/storage/configuration/
+   ```
 
-### <a name="create-a-backup-of-the-database"></a>建立資料庫的備份
+   `php`目錄會儲存 PHP 設定檔，例如 `php-fpm.conf` 、、 `php.ini` `pool.d` 和 `conf.d` 。 `nginx`目錄會儲存 ngnix 設定，例如 `nginx.conf` 和 `sites-enabled/dns.conf` 。
 
-- 如果您已經安裝 mysql-用戶端，請略過安裝的步驟。 如果您沒有 mysql 用戶端，請立即安裝：
+### <a name="back-up-the-database"></a>備份資料庫
 
-  ```bash
-  sudo -s
-  ```
+遵循下列步驟來備份您的資料庫：
 
-- 執行下列命令來檢查是否已安裝 mysql-用戶端：
+1. 輸入下列命令來檢查是否已安裝 mysql-用戶端：
 
-  ```bash
-  mysql -V
-  ```
+   ```bash
+   sudo -s
+   mysql -V
+   ```
 
-- 如果未安裝 mysql-用戶端，請執行下列命令：
+2. 如果已安裝 mysql-用戶端，請略過此步驟。 否則，請輸入此命令以安裝 mysql-client：
 
-  ```bash
-  sudo apt-get install mysql-client
-  ```
+   ```bash
+   sudo apt-get install mysql-client
+   ```
 
-- 此命令可讓您備份資料庫：
+3. 輸入此命令來備份資料庫：
 
-  ```bash
-  mysqldump -h dbServerName -u dbUserId -pdbPassword dbName > /home/azureadmin/storage/database.sql
-  ```
+   ```bash
+   mysqldump -h <database server name> -u <database user ID> -p<database password> <database name> > /home/azureadmin/storage/database.sql
+   ```
 
-- 將 dbServerName、dbUserId、dbPassword 和 dbName 取代為內部部署資料庫詳細資料。
+   針對 `<database server name>` 、 `<database user ID>` 、 `<database password>` 和 `<database name>` ，請使用您的內部部署資料庫所使用的值。
 
-- 建立 `storage.tar.gz` 備份目錄的封存檔案：
+### <a name="create-an-archive"></a>建立封存
 
-  ```bash
-  cd /home/azureadmin/ tar -zcvf storage.tar.gz storage
-  ```
+輸入此命令可 `storage.tar.gz` 針對您的備份目錄建立保存檔案：
+
+```bash
+cd /home/azureadmin/ tar -zcvf storage.tar.gz storage
+```
 
 ## <a name="download-and-install-azcopy"></a>下載並安裝 AzCopy
 
-執行下列命令以安裝 AzCopy：
+輸入下列命令以安裝 AzCopy：
+
+```bash
+sudo -s
+wget https://aka.ms/downloadazcopy-v10-linux
+tar -xvf downloadazcopy-v10-linux
+sudo rm /usr/bin/azcopy
+sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+```
+
+## <a name="copy-archived-files-to-azure-blob-storage"></a>將封存的檔案複製到 Azure Blob 儲存體
+
+遵循下列步驟以使用 AzCopy 將封存的內部部署檔案複製到 Azure Blob 儲存體。
+
+### <a name="generate-a-security-token"></a>產生安全性權杖
+
+若要產生 AzCopy 的共用存取簽章 (SAS) 權杖，請遵循下列步驟：
+
+1. 在 Azure 入口網站中，移至您稍早建立的儲存體帳戶頁面。
+
+1. 在左面板中，選取 [ **共用存取** 簽章]。
+
+   ![儲存體帳戶 Azure 入口網站中頁面的螢幕擷取畫面，其中已醒目提示 [共用存取簽章] （在左側面板中）。](./images/new-storage-account-page.png)
+
+1. 在 [ **允許的資源類型**] 下，選取 [ **容器**]。
+
+1. 在 [ **開始與到期日期/時間**] 下，輸入 SAS 權杖的開始和結束時間。
+
+1. 選取 [產生 SAS 與連接字串]。
+
+   ![Azure 入口網站的螢幕擷取畫面，其中顯示儲存體帳戶的共用存取簽章頁面。](./images/shared-access-signature-page.png)
+
+1. 製作 SAS 權杖的複本，以便在稍後的步驟中使用。
+
+### <a name="create-a-container"></a>建立容器
+
+在儲存體帳戶中建立容器。 您可以使用此步驟的 Azure CLI 或 Azure 入口網站。
+
+- 若要使用 Azure CLI，請輸入下列命令：
 
   ```bash
-  sudo -s
-  wget https://aka.ms/downloadazcopy-v10-linux
-  tar -xvf downloadazcopy-v10-linux
-  sudo rm /usr/bin/azcopy
-  sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+  az storage container create --account-name <storage account name> --name <container name> --auth-mode login
   ```
 
-## <a name="copy-archived-files-to-azure-blob"></a>將封存的檔案複製到 Azure Blob
+  例如，輸入：
 
-使用 AzCopy 將封存的內部部署檔案複製到 Azure Blob。
+  `az storage container create --account-name onpremisesstorage --name migration --auth-mode login`
 
-- 若要使用 AzCopy，請先產生 SAS 權杖。 移至所建立的 **儲存體帳戶資源**，然後流覽至左面板中的 [ **共用存取** 簽章]。
+  當您搭配的 `--auth-mode` 值使用參數時 `login` ，Azure 會使用您的認證進行驗證，然後建立容器。
 
-  ![範例儲存體帳戶。](./images/storage-account-created.png)
+- 若要使用 Azure 入口網站建立容器，請遵循下列步驟：
 
-- 選取 [ **容器** ] 和 [核取方塊]，並設定 SAS 權杖的開始和到期日。 選取 [產生 SAS 與連接字串]。
+  1. 在入口網站中，移至您稍早建立的儲存體帳戶頁面。
 
-  ![正在產生 SAS 權杖。](images/SAS-token-generation.png)
+  1. 選取 [ **容器**]，然後選取 [ **新增**]。
 
-- 複製並儲存 SAS 權杖以供日後使用。
+  1. 輸入容器的名稱，然後選取 [ **建立**]。
 
-- 用來在儲存體帳戶中建立容器的命令：
+     ![對話方塊的螢幕擷取畫面，其中包含 [名稱] 方塊和 [建立] 按鈕建立新容器的 Azure 入口網站。](./images/new-container.png)
 
-  ```bash
-  az storage container create --account-name <storageAccountName> --name <containerName> --auth-mode login
-  ```
+### <a name="copy-the-archive-file-to-azure-blob-storage"></a>將封存檔案複製到 Azure Blob 儲存體
 
-  例如：`az storage container create --account-name onpremisesstorage --name migration --auth-mode login`
+輸入此命令以將封存檔案複製到您在 Blob 儲存體中建立的容器：
 
-  `--auth-mode login` 表示登入時的驗證模式。 登入之後，將會建立容器。
+```bash
+sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storage account name>.blob.core.windows.net/<container name>/<SAS token>'
+```
 
-- 也可以使用 Azure 入口網站來建立容器。 流覽至所建立的相同儲存體帳戶，選取容器，然後選取 [ **新增** ] 按鈕。
+例如，輸入：
 
-- 輸入強制容器名稱之後，請選取 [ **建立** ] 按鈕。
+`azcopy copy /home/azureadmin/storage.tar.gz 'https://onpremisesstorage.blob.core.windows.net/migration/?sv=2019-12-12&ss='`
 
-  ![新的容器。](images/new-container.png)
+您的 Blob 儲存體帳戶現在應該包含封存的複本。
 
-- 將封存檔案複製到 Azure Blob 帳戶的命令：
-
-  ```bash
-  sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storageAccountName>.blob.core.windows.net/<containerName>/<SAStoken>'
-  ```
-
-  例如：`azcopy copy /home/azureadmin/storage.tar.gz 'https://onpremisesstorage.blob.core.windows.net/migration/?sv=2019-12-12&ss='`
-
-  ![Azure Blob 中的封存。](images/archive-in-blob.png)
-
-- Azure Blob 帳戶內現在應該會有一個封存複本。
+![顯示 Blob 儲存體帳戶 Azure 入口網站中頁面的螢幕擷取畫面。 您可以看見儲存體目錄的壓縮 tar 檔案。](./images/archive-in-blob-storage.png)
 
 ## <a name="next-steps"></a>後續步驟
 
-如需 Moodle 遷移程式的詳細資訊 [，請繼續 Moodle 遷移工作、架構和範本](./migration-arch.md) 。
+繼續 [Moodle 遷移架構和範本](./migration-arch.md)。
