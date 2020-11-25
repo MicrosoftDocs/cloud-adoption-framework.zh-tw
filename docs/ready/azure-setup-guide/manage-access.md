@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 87f5f5a21aba0035c6348e2a9d8e8621dedd0117
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: bf9414422e1ad9671fab21ea11c8e5744463dccd
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884431"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995273"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>透過角色型存取控制來管理對 Azure 環境的存取
 
@@ -67,7 +67,7 @@ _圖 1：RBAC 角色。_
 
 若要對使用者授與資源群組的存取權：
 
-1. 移至[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [存取控制 (IAM)]。
 1. 選取 [+新增] > [新增角色指派]。
@@ -77,7 +77,7 @@ _圖 1：RBAC 角色。_
 
 若要對使用者授與訂用帳戶的存取權：
 
-1. 請移至[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)。
+1. 請移至 [[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)]。
 1. 選取一個訂用帳戶。
 1. 選取 [存取控制 (IAM)]。
 1. 選取 [+新增] > [新增角色指派]。

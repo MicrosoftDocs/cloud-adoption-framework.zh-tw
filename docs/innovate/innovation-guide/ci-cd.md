@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 3f77b3f9667661f2e554f0e94050ee4bc29f0c3d
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378863"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880818"
 ---
 # <a name="empower-adoption"></a>實現採用
 
@@ -93,9 +93,11 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 
 為了創新，許多開發人員都會使用開放原始碼的程式碼。 80% 至 90% 的新應用程式開發是從開放原始碼著手。 開放原始碼不單純是程式碼， 同時也是讓全球各地的互連社群和開發人員一起打造應用程式。 透過使用 GitHub 的開放式開發模型，團隊得以創新和合作、及早識別安全性弱點，以及查覺專家人才。 企業的開發團隊可以整合 GitHub 存放庫與 Microsoft Teams 和 Azure。 只有 Teams 這個解決方案能夠將聊天、語音和合作，與 Microsoft Office 應用程式的能力、會議和商務工作流程全都整合到單一使用者體驗中。 這是團隊合作和創新的中樞。
 
+<!-- docutune:ignore "Open source starts" "Open source on Azure" -->
+
 ### <a name="learn-more"></a>深入了解
 
-- [在 GitHub 中開啟開放原始碼](https://azure.microsoft.com/en-in/products/github/)
+- [在 GitHub 中開啟開放原始碼](https://azure.microsoft.com/products/github/)
 - [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
