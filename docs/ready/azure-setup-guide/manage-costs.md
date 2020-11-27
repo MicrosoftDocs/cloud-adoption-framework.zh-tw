@@ -9,27 +9,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 230d5d4927033fe93650b19c152b8db3ab4b70f8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d072897e93cb0f368a2c61c69d9fd7d8822389fe
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884397"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997330"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>管理 Azure 資源的成本和計費
 
-成本管理是有效規劃和控制商務相關成本的流程。 成本管理工作通常是由財務、管理和應用程式小組執行。 Azure 成本管理和計費可協助您在規劃時考量成本。 它也可協助您有效地分析成本，並採取動作來將雲端費用最佳化。
+成本管理是有效規劃和控制商務相關成本的流程。 成本管理工作通常是由財務、管理和應用程式小組執行。 Azure 成本管理 + 計費可協助您在規劃時考量成本。 它也可協助您有效地分析成本，並採取動作來將雲端費用最佳化。
 
 如需在整個組織中整合雲端成本管理程序的詳細資訊，請參閱「雲端採用架構」一文中有關於如何[跨業務單位、環境或專案追蹤成本](../azure-best-practices/track-costs.md)的部分。
 
-## <a name="manage-your-costs-with-azure-cost-management-and-billing"></a>使用 Azure 成本管理和計費來管理成本
+## <a name="manage-your-costs-with-azure-cost-management--billing"></a>使用 Azure 成本管理 + 計費來管理成本
 
-Azure 成本管理和計費提供數種方式來協助您預測和管理成本：
+Azure 成本管理 + 計費提供數種方式來協助您預測和管理成本：
 
-- **分析雲端成本**可協助您探索及分析您的成本。 您可以檢視帳戶的彙總成本，或檢視一段時間的累積成本。
-- **透過預算進行監視**可讓您建立預算，然後設定警示以在即將超出預算時警告您。
-- **透過建議達到最佳化**有助於識別閒置和未充分使用的資源，因此您可採取行動來減少浪費。
-- **管理發票和付款**可讓您看見雲端投資。
+- **分析雲端成本** 可協助您探索及分析您的成本。 您可以檢視帳戶的彙總成本，或檢視一段時間的累積成本。
+- **透過預算進行監視** 可讓您建立預算，然後設定警示以在即將超出預算時警告您。
+- **透過建議達到最佳化** 有助於識別閒置和未充分使用的資源，因此您可採取行動來減少浪費。
+- **管理發票和付款** 可讓您看見雲端投資。
 
 ::: zone target="docs"
 
@@ -52,21 +52,21 @@ Azure 成本管理和計費提供數種方式來協助您預測和管理成本�
 
 若要提交新的支援要求：
 
-1. 移至[説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
+1. 移至 [説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
 1. 選取 [新增支援要求]。
 
 ### <a name="view-a-support-request"></a>檢視支援要求
 
 若要檢視您的支援要求及其狀態：
 
-1. 移至[説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
+1. 移至 [説明 + 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)。
 1. 選取 [所有支援要求]。
 
 ## <a name="learn-more"></a>深入了解
 
 若要深入了解，請參閱：
 
-- [Azure 成本管理和計費文件](/azure/billing)
+- [Azure 成本管理 + 計費文件](/azure/billing)
 - [雲端採用架構：跨業務單位、環境或專案追蹤成本](../azure-best-practices/track-costs.md)
 - [雲端採用架構：成本管理專業領域](../../govern/cost-management/index.md)
 

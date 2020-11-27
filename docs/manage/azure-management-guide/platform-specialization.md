@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb9c39784714dfab8233598d5180d5b770b9402c
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2b575e6a6606f5d0a32695e2deb3b4f833ca6466
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604192"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880631"
 ---
+<!-- docutune:casing "SQL Server Health Check" -->
+
 # <a name="platform-specialization-for-cloud-management"></a>用於雲端管理的平台特製化
 
 和增強的管理基準很像，平台特製化也是超越標準管理基準的擴充功能。 請參閱下方影像和清單，其中說明擴展管理基準的方式。 本文將說明平台特製化選項。
@@ -61,7 +63,7 @@ ms.locfileid: "89604192"
 
 改善系統設計最能有效改善任何常見平台的作業。 透過改善系統設計，不僅穩定性會增加，業務中斷的情形也會減少。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。此架構的重點在於改善整個結構的五個要素：
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。

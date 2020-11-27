@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b30aa8ab692f9cb88302075d42d70af405c4dd94
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fa57d16b874c32fda3fc874e82d32c0e1a42c708
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572267"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880886"
 ---
-<!-- cSpell:ignore ITSMC -->
-
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 
 前三個雲端管理專業領域描述的是管理基準。 本指南中的前述文章概述了雲端管理服務的最簡可行產品 (MVP)，亦稱為管理基準。 本文會概述管理基準的一些常見改善。
@@ -45,6 +43,8 @@ ms.locfileid: "88572267"
 
 工作負載作業和平台作業都必須變更設計和架構方面的原則。 這些變更需要不少時間，而且可能會導致營運費用增加。 為了減少需要這類投資的工作負載數目，增強的管理基準可提供足夠的商務承諾改善。
 
+<!-- docutune:casing "IT Service Management" "IT Service Management Connector" ITSMC "Free and Standard" -->
+
 此資料表概述客戶增強的管理基準中有哪些流程、工具和潛在影響：
 
 | 專業領域  | Process  | 工具 | 潛在影響 | 深入了解 |
@@ -54,7 +54,7 @@ ms.locfileid: "88572267"
 | 作業合規性 | 作業自動化 | Azure 自動化 | 將作業合規性自動化，以更快、更精確地回應變更。 | 請參閱下列各節 |
 | 作業合規性 | 效能自動化 | Azure 自動化 | 透過效能預期自動執行作業合規性，以解決資源特有的調整或大小調整常見問題。 | 請參閱下列各節 |
 | 作業合規性 | 多重雲端作業 | Azure 自動化 Hybrid Runbook Worker | 將跨越多個雲端的作業自動化。 | [混合式 Runbook 背景工作概觀](/azure/automation/automation-hybrid-runbook-worker) |
-| 作業合規性 | 來賓自動化 |  期望狀態設定 (DSC) | 透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。 | [DSC 概觀](/powershell/scripting/dsc/overview/overview) |
+| 作業合規性 | 來賓自動化 | 期望狀態設定 (DSC) | 透過程式碼來設定客體作業系統，以減少錯誤和設定漂移。 | [DSC 概觀](/powershell/scripting/dsc/overview/overview) |
 | 保護和復原 | 安全性缺口通知 | Azure 資訊安全中心 | 擴大保護範圍，納入安全性缺口復原觸發程序。 | 請參閱下列各節 |
 
 ::: zone target="docs"
@@ -79,7 +79,7 @@ Runbook 是用來提供自動化補救的基本程式碼單位。 Runbook 包含
 若要建立或管理 Runbook：
 
 1. 移至 **Azure 自動化**。
-1. 選取**自動化帳戶**，並選擇其中一個列出的帳戶。
+1. 選取 **自動化帳戶**，並選擇其中一個列出的帳戶。
 1. 移至 [程序自動化]。
 1. 有了這個選項，您就可以建立或管理 Runbook、排程和其他自動化補救功能。
 

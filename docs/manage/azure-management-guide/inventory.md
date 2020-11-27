@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e82727e6d8f90ecf3681ff8a85096088b4a6de70
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7d1059721ea4bcc466f2ecfd30a28a0ff24b6c9c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572182"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880716"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -31,7 +31,7 @@ ms.locfileid: "88572182"
 | 監視 Azure 服務的健康情況 | Azure 服務健康狀態 | Azure 中所執行服務的健康情況、效能和診斷 |
 | 記錄集中化 | Log Analytics | 適用於所有可見性用途的集中式記錄 |
 | 監視集中化 | Azure 監視器 | 操作資料和趨勢的集中監視 |
-| 虛擬機器清查和變更追蹤 | Azure 變更追蹤和清查 | 清查 VM 和監視來賓作業系統層級的變更 |
+| 虛擬機器清查和變更追蹤 | 變更追蹤與詳細目錄 | 清查 VM 和監視來賓作業系統層級的變更 |
 | 訂用帳戶監視 | Azure 活動記錄檔 | 監視訂用帳戶層級的變更 |
 | 來賓作業系統監視 | 適用於 VM 的 Azure 監視器 | 監視 VM 的變更和效能 |
 | 網路監視 | Azure 網路監看員 | 監視網路變更和效能 |
@@ -179,8 +179,8 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 每篇文章都會引導您完成一系列的步驟，以將下列解決方案上線：
 
-- 更新管理
-- 變更追蹤與詳細目錄
+- 更新管理解決方案
+- 「變更追蹤和清查」解決方案
 - Azure 活動記錄檔
 - Azure Log Analytics 代理程式健全狀況
 - 反惡意程式碼評估

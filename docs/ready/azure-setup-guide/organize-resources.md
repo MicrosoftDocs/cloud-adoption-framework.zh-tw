@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d5c1bd2c96b7154956f37960c345d2a2009fa4bc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d188e053feaf3deba964c72e495c6f3987c47f75
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885944"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995223"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -62,7 +62,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
 
-1. 請移至[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
+1. 請移至 [[訂用帳戶](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)]。
 2. 選取 [新增]。
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 建立資源群組，以容納共用相同生命週期、權限及原則的 Web 應用程式、資料庫和儲存體帳戶等資源。
 
-1. 移至[資源群組](https://portal.azure.com/#create/Microsoft.ResourceGroup)。
+1. 移至 [[資源群組](https://portal.azure.com/#create/Microsoft.ResourceGroup)]。
 1. 選取 [新增]。
 1. 選取要用來建立資源群組的 [訂用帳戶]。
 1. 輸入 [資源群組] 的名稱。
@@ -100,7 +100,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 建立管理群組，以協助您針對多個訂用帳戶管理存取、原則及合規性。
 
-1. 請移至**管理群組**。
+1. 請移至 **管理群組**。
 1. 選取 [新增管理群組]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade]" submitText="Go to Management groups" :::
@@ -163,7 +163,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 - **中繼資料和文件：** 系統管理員套用 `ProjectOwner` 之類的標記，即可輕易查看其所處理資源的相關詳細資料。
 - **自動化：** 您可能有定期執行的指令碼，其會根據 `ShutdownTime` 或 `DeprovisionDate` 等標記值來採取動作。
-- **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理和計費中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
+- **成本最佳化：** 您可以將資源配置給負責成本的小組和資源。 在 Azure 成本管理 + 計費中，您可以套用成本中心標記做為篩選準則，以根據小組或部門使用量來報告費用。
 
 每個資源或資源群組最多都可以有 50 個標記名稱和值組。 此限制只適用於直接套用至資源群組或資源的標記。
 
@@ -175,7 +175,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 若要對資源群組套用標記：
 
-1. 移至[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)。
+1. 移至 [[資源群組](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]。
 1. 選取資源群組。
 1. 選取 [指派標記]。
 1. 輸入新的名稱和值，或使用下拉式清單來選取現有的名稱和值。

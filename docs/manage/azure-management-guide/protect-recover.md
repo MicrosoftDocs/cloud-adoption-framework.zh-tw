@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e913c5143b7f276c3457deb7a92cc7bfeeff11d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: b57eb90f5cee020b2eb58026a886f4082c992fa6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713576"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880597"
 ---
+<!-- docutune:ignore "provide advanced threat protection" -->
+
 # <a name="protect-and-recover-in-azure"></a>Azure 中的保護和復原
 
 「保護和復原」是任何雲端管理基準中的第三個和最後一個專業領域。
@@ -44,9 +46,9 @@ ms.locfileid: "94713576"
 
 透過 Azure 備份，您可以在 Microsoft 雲端中備份、保護及還原資料。 Azure 備份會以雲端式解決方案取代您現有的內部部署或異地備份解決方案。 這是一個可靠、安全及具成本競爭力的新解決方案。 Azure 備份也可透過一個一致的解決方案，協助您保護和復原內部部署資產。
 
-對於存在於 Azure 中的資料，Azure 備份提供各種不同的保護層級。 例如：針對備份 Azure 虛擬機器和 Azure 檔案儲存體等重要雲端基礎結構元件，其提供 [ Azure 虛擬機器備份](/azure/backup/backup-azure-vms-introduction) 和 [Azure 檔案備份](/azure/backup/azure-file-share-backup-overview)。 針對在 Azure 虛擬機器中執行的資料庫之類的重要元件，其會針對 [MS SQL](/azure/backup/backup-azure-sql-database) 和 [SAP Hana](/azure/backup/sap-hana-db-about)以較低的 RPO 提供專用的資料庫備份解決方案。
+對於存在於 Azure 中的資料，Azure 備份提供各種不同的保護層級。 例如，當備份 Azure 虛擬機器和 Azure 檔案儲存體等重要雲端基礎結構元件時，其提供 [ Azure 虛擬機器備份](/azure/backup/backup-azure-vms-introduction) 和 [Azure 檔案備份](/azure/backup/azure-file-share-backup-overview)。 針對在 Azure 虛擬機器中執行的資料庫之類的重要元件，其會針對 [MS SQL](/azure/backup/backup-azure-sql-database) 和 [SAP Hana](/azure/backup/sap-hana-db-about)以較低的 RPO 提供專用的資料庫備份解決方案。
 
-若要瞭解使用 Azure 備份來啟用備份有多麼容易，請查看以下一節以啟用 Azure 虛擬機器的備份
+若要了解使用 Azure 備份來啟用備份有多麼容易，請查看以下一節以啟用 Azure 虛擬機器的備份。
 
 ### <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
 
@@ -66,7 +68,7 @@ ms.locfileid: "94713576"
 
 ::: zone target="docs"
 
-如需 Azure 備份和其各種供應專案的詳細資訊，請參閱[概觀](/azure/backup/backup-overview)一節
+如需 Azure 備份的詳細資訊，請參閱 [Azure 備份概觀](/azure/backup/backup-overview)。
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

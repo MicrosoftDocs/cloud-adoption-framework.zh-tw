@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 922a123fe13b268548e2b51ffcc9d42c05d9c64a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883122"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880835"
 ---
 # <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
 

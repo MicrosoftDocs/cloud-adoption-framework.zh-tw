@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5fe9338002a8a1223ad64b81f884d70de9191161
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2e7e13ee2fe02d0f720d5992a8d9d2881d0a28e4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604303"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880784"
 ---
 <!-- cSpell:ignore ONNX -->
 

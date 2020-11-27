@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 24b31b27bf660229187caeea15881fe99722202a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883173"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880852"
 ---
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
 

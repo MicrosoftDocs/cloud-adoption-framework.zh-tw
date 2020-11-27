@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1625157c39a3a1cb158f4fae7cc849081a3b10fb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885009"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996684"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
@@ -27,7 +27,7 @@ ms.locfileid: "88885009"
 > - Azure Migrate
 > - Azure 定價計算機
 > - Azure TCO 計算機
-> - Azure 成本管理和計費
+> - Azure 成本管理 + 計費
 > - Azure Advisor
 
 要完成本文所述的程序，可能還需要與 IT 經理、財務部門或企業營運應用程式擁有者合作。
@@ -87,13 +87,13 @@ _圖 1：此圖表顯示 Azure Migrate 中評估的成本詳細資料檢視。_
 2. Advisor 儀表板會顯示所有選取之訂用帳戶的建議摘要。 您可以使用訂用帳戶篩選下拉式清單，選擇您想要顯示建議的訂用帳戶。
 3. 若要查看成本建議，請選取 [成本]索引標籤。
 
-### <a name="azure-cost-management-and-billing"></a>Azure 成本管理和計費
+### <a name="azure-cost-management--billing"></a>Azure 成本管理 + 計費
 
-Azure 成本管理和計費可以提供更全面的消費習慣檢視，包括一段時間內的成本和支出趨勢的詳細檢視。 對於大型或複雜的移轉，此檢視可以提供所需的深入解析，以進行廣泛的成本管理決策。
+Azure 成本管理 + 計費可以提供更全面的消費習慣檢視，包括一段時間內的成本和支出趨勢的詳細檢視。 對於大型或複雜的移轉，此檢視可以提供所需的深入解析，以進行廣泛的成本管理決策。
 
-**必要條件：** 此索引標籤的其餘部分會假設讀者已在完成 Azure 設定指南時完成了 Azure 成本管理和計費的設定。 如需關於設定 Azure 成本管理和計費的詳細資訊，請參閱 Azure 設定指南中的[管理 Azure 資源的成本和計費](../../ready/azure-setup-guide/manage-costs.md)。 填入資料之後，請依照接下來的幾個步驟，根據收集到的資料來預估每月成本。
+**必要條件：** 此索引標籤的其餘部分會假設讀者已在完成 Azure 設定指南時完成了 Azure 成本管理 + 計費的設定。 如需關於設定 Azure 成本管理 + 計費的詳細資訊，請參閱 Azure 設定指南中的[管理 Azure 資源的成本和計費](../../ready/azure-setup-guide/manage-costs.md)。 填入資料之後，請依照接下來的幾個步驟，根據收集到的資料來預估每月成本。
 
-下列步驟將為您的訂用帳戶載入 Azure 成本管理和計費的成本分析資料：
+下列步驟將為您的訂用帳戶載入 Azure 成本管理 + 計費的成本分析資料：
 
 1. 瀏覽至入口網站中的 [成本管理 + 帳單]。 如果在左窗格中沒有看到 [成本管理 + 計費]，請選取 [所有服務]。 在服務功能表窗格中，於 [監視與管理] 底下，選取 [成本管理 + 計費]。
 2. 在 [成本管理 + 帳單]中，選取左側瀏覽窗格中的 [成本管理]，以開始分析雲端成本並將成本最佳化。
@@ -106,7 +106,7 @@ Azure 成本管理和計費可以提供更全面的消費習慣檢視，包括�
 
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，請參閱[成本管理專業領域](../../govern/cost-management/index.md)，和[成本管理專業領域改善](../../govern/guides/complex/cost-management-improvement.md)。
 - 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](/azure/advisor/advisor-cost-recommendations)。
-- 如需 Azure 成本管理和計費的詳細資訊，請參閱[了解和使用範圍](/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)。
+- 如需 Azure 成本管理 + 計費的詳細資訊，請參閱[了解和使用範圍](/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[將成本最佳化的提示和秘訣](#tab/TipsTricks)
 

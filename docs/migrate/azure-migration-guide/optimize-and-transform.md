@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c5cd50b0f0dbaaa215f4c7c88e6f482d57027243
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605054"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996633"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -102,7 +102,7 @@ Azure Migrate 會在其預先移轉評估階段中執行適當大小分析，而
 
 請務必執行持續成本分析和審查。 此工作讓您有機會視需要調整資源大小，以平衡成本和工作負載。
 
-Azure 成本管理和計費可搭配 Azure Advisor，提供成本最佳化建議。 Azure Advisor 可協助您透過識別閒置及使用量過低的資源來最佳化及改善效率。
+Azure 成本管理 + 計費可搭配 Azure Advisor，提供成本最佳化建議。 Azure Advisor 可協助您透過識別閒置及使用量過低的資源來最佳化及改善效率。
 
 1. 選取 [成本管理 + 計費]。
 1. 選取 [Advisor 建議] 和 [成本] 索引標籤。
