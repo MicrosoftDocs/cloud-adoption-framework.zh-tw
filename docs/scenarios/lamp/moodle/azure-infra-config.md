@@ -3,16 +3,16 @@ title: 如何設定 Moodle 背景工作節點
 description: 瞭解如何設定 Moodle 的虛擬機器擴展集。 瞭解如何使用私人 IP 位址從控制器存取擴展集。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19afe11978a6a8d79dffc1c4070d91da0851da80
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.openlocfilehash: 0ea1e7748f682efe419601e2df59599c2519ad4b
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038176"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327554"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>如何設定 Moodle 背景工作節點
 

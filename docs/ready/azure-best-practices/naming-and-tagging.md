@@ -3,21 +3,18 @@ title: 建議的命名和標記慣例
 description: 瞭解專為支援企業雲端採用工作而設計的詳細資源命名和標記建議。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/05/2020
+ms.date: 11/12/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.openlocfilehash: c96e043cd483600a54da3b8e1174458d2ce01b45
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997381"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327809"
 ---
-<!-- docutune:disable -->
-<!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
-
 # <a name="recommended-naming-and-tagging-conventions"></a>建議的命名和標記慣例
 
 組織您的雲端資產，以支援營運管理和會計需求。 定義完善的命名和元資料標記慣例有助於快速找出及管理資源。 這些慣例也有助於透過計費和回報會計機制，將雲端使用量成本與商務小組產生關聯。
@@ -136,7 +133,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | App Service 環境 | ase |
 | App Service 方案 | 餐 |
 | Web 應用程式 | 應用 |
-| 函數應用程式 | func |
+| 函式應用程式 | func |
 | 雲端服務 | 無法 |
 | 通知中樞 | contoso.ntf |
 | 通知中樞命名空間 | ntfns- |
@@ -205,7 +202,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | Application Insights | appi- |
 | 復原服務保存庫 | rsv- |
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 | 資產類型                          | 名稱前置詞 |
 |-------------------------------------|-------------|
@@ -289,7 +286,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 | 虛擬機器             | 資源群組 | Vm\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
 | VM 儲存體帳戶          | 全球         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
 | Web 應用程式                     | 全球         | 應用程式- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
-| 函數應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
+| 函式應用程式                | 全球         | func- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
 | 雲端服務               | 全球         | 可能- \<App Name\> - \<Environment\> - \<\#\#\#\> . [{cloudapp.net}]        | <li> could-navigator-prod-001.azurewebsites.net <li> could-accountlookup-dev-001.azurewebsites.net |
 | 通知中樞            | 資源群組 | contoso.ntf\<App Name\>-\<Environment\>                                    | <li> contoso.ntf-navigator-生產 <li> contoso.ntf-排放-開發 |
 | 通知中樞命名空間 | 全球         | ntfns-\<App Name\>-\<Environment\>                                  | <li> ntfns-navigator-生產 <li> ntfns-排放-開發 |

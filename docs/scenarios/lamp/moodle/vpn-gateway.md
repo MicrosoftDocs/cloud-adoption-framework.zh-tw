@@ -3,16 +3,16 @@ title: 建立虛擬網路閘道並連接至 Vm
 description: 使用私人 IP 位址和密碼，建立虛擬網路閘道、憑證和 VPN，並使用 SSH 連線至虛擬機器擴展集實例。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/23/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0f30f40a1204c52657868d56e22726b2ab23b4d2
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.openlocfilehash: db82bc164af0cc6b34235d307bbcb36db2f53939
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038337"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327911"
 ---
 # <a name="create-a-virtual-network-gateway-and-connect-to-vms"></a>建立虛擬網路閘道並連接至 Vm
 

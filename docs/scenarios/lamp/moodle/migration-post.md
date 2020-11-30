@@ -3,16 +3,16 @@ title: 如何在 Moodle 遷移之後追蹤
 description: 瞭解如何在 Moodle 遷移之後進行後續追蹤。 瞭解如何更新記錄檔路徑、重新開機伺服器，以及採取完成遷移所需的其他步驟。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7a358dbb8f05bcfd9625c7a8afdcba1f7b7890b1
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.openlocfilehash: 4691a170d9eba47e9e4c0f581801d3561b8b93c8
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038403"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327775"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>如何在 Moodle 遷移之後追蹤
 
