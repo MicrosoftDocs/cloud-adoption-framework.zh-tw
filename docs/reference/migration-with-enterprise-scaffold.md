@@ -7,13 +7,13 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ROBOTS: NOINDEX
-ms.openlocfilehash: 29c4ed2fa786d9c697ba14adcc92c73e93bb4b73
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: ba49dee351be0476bc8224da933a7f0372c2bc61
+ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024567"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96557564"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -78,7 +78,7 @@ EA 註冊的三種常見模式如下：
 
   ![地理模式](../_images/reference/geographic.png)
 
-雖然這些模式中的每一個都有其作用，但愈來愈多人採用 **業務單位** 模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和作業群組已建立以 **聯邦** 、 **州** 和 **地方** 建立模型的有效 **商務單位** 模式子集。 如需詳細資訊，請參閱組織您的訂用帳戶 [和資源群組](../ready/azure-best-practices/organize-subscriptions.md)。
+雖然這些模式中的每一個都有其作用，但愈來愈多人採用 **業務單位** 模式，因為在模型化組織成本模型及反映控制範圍上，此模式具有高度彈性。 Microsoft 核心工程和作業群組已建立以 **聯邦**、**州** 和 **地方** 建立模型的有效 **商務單位** 模式子集。 如需詳細資訊，請參閱組織您的訂用帳戶 [和資源群組](../ready/azure-best-practices/organize-subscriptions.md)。
 
 ### <a name="azure-management-groups"></a>Azure 管理群組
 
@@ -89,7 +89,7 @@ Microsoft 現在提供另一種模型來建立階層模型： [Azure 管理群�
 
 設計完善的管理群組，以及 Azure 原則和方案，也是有效治理 Azure 的骨幹。
 
-### <a name="subscriptions"></a>訂閱
+### <a name="subscriptions"></a>訂用帳戶
 
 在決定您的部門及帳戶 (或管理群組) 時，您會優先探討如何分配 Azure 環境以符合您的組織。 不過，訂用帳戶是實際工作的發生位置，而此處的決策會影響安全性、擴充性和計費。 許多組織會查看下列模式來作為他們的指引：
 
@@ -228,7 +228,7 @@ AzSK 是一組豐富的工具、腳本和資訊，這些都是完整 Azure 治�
 - **計量** 是由資源發出的數值資訊，可描述資源的效能和健康情況。
 - **診斷記錄** 是由 Azure 服務發出，提供有關該服務作業的豐富、經常性資料。
 
-這項資訊可以在多個層級上查看和處理，並持續改善。 Azure 透過下圖中所述的服務，提供 Azure 資源的 **共用** 、 **核心** 和 **深層** 監視功能。
+這項資訊可以在多個層級上查看和處理，並持續改善。 Azure 透過下圖中所述的服務，提供 Azure 資源的 **共用**、 **核心** 和 **深層** 監視功能。
 
 ![描述深層應用程式監視、深層基礎結構監視、核心監視和共用功能的圖表。](../_images/reference/monitoring.png)
 
@@ -248,7 +248,7 @@ AzSK 是一組豐富的工具、腳本和資訊，這些都是完整 Azure 治�
 
 - **Azure 服務健康狀態：** Azure 服務健康狀態可識別任何可能影響您應用程式的 Azure 服務問題，並協助您規劃排程維護時段。
 
-- **活動記錄：** 活動記錄會描述訂用帳戶中資源上的所有作業。 它會提供一個審核 _記錄，以_ 判斷任何在資源上建立、更新、刪除 _作業的__內容_ 。 活動記錄檔事件會儲存在平臺中，而且可供查詢90天。 您可以將活動記錄內嵌至 Log Analytics，以獲得較長的保留期間，以及跨多個資源更深入的查詢和分析。
+- **活動記錄：** 活動記錄會描述訂用帳戶中資源上的所有作業。 它會提供一個審核 _記錄，以_ 判斷任何在資源上建立、更新、刪除 _作業的__內容_。 活動記錄檔事件會儲存在平臺中，而且可供查詢90天。 您可以將活動記錄內嵌至 Log Analytics，以獲得較長的保留期間，以及跨多個資源更深入的查詢和分析。
 
 ### <a name="deep-application-monitoring"></a>深層應用程式監視
 

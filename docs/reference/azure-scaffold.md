@@ -7,12 +7,13 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 02fd0d70cef736aa20b7aa37c777b2ca070015ae
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: e0b5341e3220633b5a7066ef5899334dd034ac0b
+ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885621"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96557530"
 ---
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure enterprise scaffold 現在是適用于 Azure 的 Microsoft 雲端採用架構
 
