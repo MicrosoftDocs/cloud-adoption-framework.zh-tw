@@ -1,19 +1,19 @@
 ---
 title: 軟體定義網路：中樞和輪輻
 description: 使用適用于 Azure 的雲端採用架構，瞭解中樞和輪輻網路如何將您的網路基礎結構組織為多個已連線的虛擬網路。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9b564c5e73afe2968b928c78a3cc1dd4b9ea3028
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 83cd8eb9f67a5fc390132baae67a2fb239414a9d
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432579"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605603"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>軟體定義網路：中樞和輪輻
 

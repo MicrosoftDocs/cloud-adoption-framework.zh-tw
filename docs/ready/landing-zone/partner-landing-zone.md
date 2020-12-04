@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6ff7dad3524f00119b161dfc87aaa1a70a2b4e19
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: af2fbf5bde312fdc6f1230e5ee5138d28212f3b1
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602189"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605399"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 
@@ -59,7 +59,7 @@ ms.locfileid: "89602189"
 
 **合作夥伴的問題：** 您的 Azure 登陸區域解決方案支援下列哪一項？
 
-- 設定**自動化：** 解決方案是否會從部署管線或部署工具部署登陸區域？
+- 設定 **自動化：** 解決方案是否會從部署管線或部署工具部署登陸區域？
 - **手動設定：** 解決方案是否可讓 IT 小組手動設定登陸區域，而不會將錯誤插入登陸區域原始程式碼中？
 
 **合作夥伴的問題：** 合作夥伴的解決方案支援哪些 Azure 登陸區域的執行選項？ 如需完整的選項清單，請參閱 [Azure 登陸區域的執行選項](./implementation-options.md) 一文。
@@ -92,7 +92,7 @@ ms.locfileid: "89602189"
 **合作夥伴的問題：** 合作夥伴的登陸區域設計是否包含下列資源組織實務的考慮？
 
 - **命名標準：** 這項供應專案會遵循哪些 [命名標準](../azure-best-practices/naming-and-tagging.md) ，並透過原則自動強制執行標準？
-- **標記標準：** 登陸區域設定是否遵循並強制執行 [標記資產的特定標準](../azure-best-practices/naming-and-tagging.md#metadata-tags)？
+- **標記標準：** 登陸區域設定是否遵循並強制執行 [標記資產的特定標準](../azure-best-practices/resource-tagging.md)？
 - **訂用帳戶設計：** 合作夥伴供應專案支援哪些訂用帳戶 [設計策略](../../decision-guides/subscriptions/index.md) ？
 - **管理群組設計：** 合作夥伴供應專案是否遵循 [Azure 管理群組](../azure-best-practices/organize-subscriptions.md) 階層的定義模式來組織訂用帳戶？
 - **資源群組對齊：** 如何使用資源群組將部署至雲端的資產分組？ 在合作夥伴供應專案中，資源群組是用來將資產群組至工作負載、部署套件或其他組織標準？
@@ -115,7 +115,7 @@ ms.locfileid: "89602189"
 - **成本管理：** 合作夥伴是否可提供團隊評估、監視及優化支出，同時與工作負載小組建立成本責任？
 - **安全性基準：** 合作夥伴是否提供讓小組在安全性需求變更和成熟的情況之下維持合規性的準備？
 - **資源一致性：** 合作夥伴是否可為小組提供準備，以確保雲端中的所有資產都上線到相關的作業管理程式中？
-- 身分**識別基準：** 合作夥伴供應專案是否會在部署初始登陸區域之後，準備小組來維護身分識別、角色定義和指派？
+- 身分 **識別基準：** 合作夥伴供應專案是否會在部署初始登陸區域之後，準備小組來維護身分識別、角色定義和指派？
 
 ### <a name="operations-baseline"></a>作業基準
 

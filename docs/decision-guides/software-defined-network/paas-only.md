@@ -1,19 +1,19 @@
 ---
 title: 軟體定義網路：僅限 PaaS
 description: 瞭解在雲端的軟體定義網路中，僅限 PaaS 架構模型的優點和限制。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9a3dae9463e68740178a3303e191470cd3dd6ac5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b61f6e2c877442824891c947df6e1cebaaad202b
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573967"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605654"
 ---
 # <a name="software-defined-networking-paas-only"></a>軟體定義網路：僅限 PaaS
 

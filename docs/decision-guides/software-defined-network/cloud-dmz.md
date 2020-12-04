@@ -1,19 +1,19 @@
 ---
 title: 軟體定義網路：雲端 DMZ
 description: 瞭解雲端 DMZ 網路架構，以允許使用 VPN 在內部部署和雲端式網路之間進行有限的存取。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: db4d90e01a5564374cbd715f4cd6b94967224495
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e2e22fc5b77aec9e0d07bb84d514ea940b1723ba
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884380"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605637"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 

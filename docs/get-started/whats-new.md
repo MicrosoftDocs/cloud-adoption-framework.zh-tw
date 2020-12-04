@@ -1,5 +1,5 @@
 ---
-title: 新功能
+title: Microsoft 雲端採用架構的新功能
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構的最新更新。
 author: JanetCThomas
 ms.author: janet
@@ -7,12 +7,12 @@ ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e6889705a455de067c5af6a18adc7a8c00b81e11
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.openlocfilehash: 7c8dab21fbe934fef666035853178c0d83dd82cb
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879084"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605552"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -22,14 +22,23 @@ ms.locfileid: "94879084"
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同建立。 新的和更新的內容會在推出時發行。 這些版本可讓您與我們一起測試、驗證和精簡指導方針。 我們鼓勵您與我們合作來打造雲端採用架構。
 
+## <a name="december-2020"></a>2020 年 12 月
+
+我們已修訂命名和標記策略指引，以及新增 Moodle 遷移案例的指引。
+
+| 發行項 | 描述 |
+|--|--|
+| [開發 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Azure 資源的命名和標記策略](../ready/azure-best-practices/naming-and-tagging.md) | 我們已精簡定義您的命名和標記策略的指導方針。 除了總覽之外，我們也將本指南分為多篇文章，涵蓋這些主題： <br><br> <li> [定義您的命名慣例](../ready/azure-best-practices/resource-naming.md) <li> [適用于各種 Azure 資源類型的建議縮寫](../ready/azure-best-practices/resource-abbreviations.md) <li> [定義您的標記策略](../ready/azure-best-practices/resource-tagging.md) |
+| [將 Moodle 部署遷移至 Azure](../scenarios/lamp/moodle/migration-overview.md) | 瞭解如何將 Moodle 開放原始碼學習管理系統的部署從內部部署環境遷移至 Azure。 您可以使用 Azure 入口網站或部署的 Azure CLI 來提供步驟。 |
+
 ## <a name="october-2020"></a>2020 年 10 月
 
 本月的更新包括整個雲端採用架構的累加式改進，以及支援的 web 資產。
 
 我們最大的投資專注于打造 Microsoft Learn 課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，消費者入門模組提供與產業垂直相關的第一項指引，方法是向零售客戶介紹 (Tailwind 商貿) ，我們會遵循所有核心方法模組來遵循。
 
-| 模組 | 說明 |
-|---|---|
+| 模組 | 描述 |
+|--|--|
 | [總覽模組](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | 入門層級的架構簡介。 |
 | [消費者入門模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
 | [Azure 登陸區域](/learn/modules/cloud-adoption-framework-ready/) | 在建立您的雲端環境之前，請先瞭解您的作業需求，並選擇最適當的 Azure 登陸區域產品，以開始使用。 |
@@ -37,15 +46,15 @@ ms.locfileid: "94879084"
 
 我們也擴充了商務成果，以分享一些在 COVID-19 後 marketplace 中持續出現的常見商業動機和方法。
 
-| 發行項 | 說明 |
-|---|---|
+| 發行項 | 描述 |
+|--|--|
 | [持續性結果的範例](../strategy/business-outcomes/sustainability.md) | 瞭解雲端運算如何協助您減少碳排放量、更有效率地使用資源，以及縮減您的環境耗用量。 |
 | [使用目標和關鍵結果來測量商務成果 (OKRs) ](../strategy/business-outcomes/okr.md) | 瞭解如何使用 OKRs 來測量商務成果。 |
 | [使用 AppDynamics 測量商務結果](../digital-estate/app-dynamics.md) | 瞭解應用程式的效能和使用者體驗是測量業務成果的關鍵。 瞭解 AppDynamics 如何為大部分的使用案例供應商業見解。 |
 | [成本管理更新：找出 Vm](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) | 在非生產環境中使用現成的 Vm 是一種快速新興的做法，可進一步降低這些環境中的成本。現有的環境。 「我已經有一個工作環境。 如何應用企業規模的設計原則？」 轉換成企業規模的新文章可以提供協助。 |
 
-| 發行項 | 說明 |
-|---|---|
+| 發行項 | 描述 |
+|--|--|
 | [將現有的 Azure 環境轉換成企業規模](../ready/enterprise-scale/transition.md) | 本文可協助組織根據現有的 Azure 環境，以轉換成企業規模的形式流覽正確的路徑。 |
 | [雲端採用架構企業規模登陸區域架構](../ready/enterprise-scale/architecture.md) | 本文已更新為根據中樞和輪輻網路拓撲，包含企業規模登陸區域架構的高階圖表，並提供更新以描述及交叉參考企業規模登陸區域架構的重要設計領域。 |
 
@@ -57,8 +66,8 @@ ms.locfileid: "94879084"
 
 登陸區域設計和實行最重要的考慮之一，就是您的作業模型。 您想要在雲端中操作的方式，將會對要執行的架構和控制項有直接的影響。 下列文章將協助您將目標作業模型與雲端中常見的一些模型保持一致。 然後將它們對應至最適當的執行，以開始使用。
 
-| 發行項 | 說明 |
-|---|---|
+| 發行項 | 描述 |
+|--|--|
 | [比較常見的作業模型](../operating-model/compare.md) | 本文是比較作業模型和選擇動作課程的主要指南。 |
 | [了解雲端作業模型](../operating-model/index.md) | 關於您的作業模型進行匯入決策的入門。 |
 | [使用 CAF 定義您的作業模型](../operating-model/define.md) | 雲端採用架構是一種累加式指南，可在您選擇的作業模型內建立您的環境並採用雲端。 本文將建立參考的框架，以瞭解各種方法如何支援您的作業模型開發。 |
@@ -68,8 +77,8 @@ ms.locfileid: "94879084"
 
 Azure 登陸區域背後的概念和實現選項是與領先的 Microsoft 合作夥伴一起建立。 此版本辨識出現有的智慧財產 (IP) ，這些合作夥伴會使用這些內容來加速雲端採用。
 
-| 發行項 | 說明 |
-|---|---|
+| 發行項 | 描述 |
+|--|--|
 | [夥伴登陸區域](../ready/landing-zone/partner-landing-zone.md) | 檢查並比較合作夥伴提供的 Azure 登陸區域供應專案。 |
 | [實作選項](../ready/landing-zone/implementation-options.md) | 已更新以將夥伴登陸區域選項新增至現有的 Azure 登陸區域實行選項。 |
 | [企業規模的參考實施](../ready/enterprise-scale/implementation.md) | 已更新，可將中樞輪輻參考實作為企業規模的參考實施。 |
@@ -85,7 +94,7 @@ Azure 登陸區域背後的概念和實現選項是與領先的 Microsoft 合作
 
 新的 [遷移案例總覽頁面](../scenarios/index.md) 建基於遷移方法，以示範 Azure 如何提供「#OneMigrate」承諾。 它提供將多個第一個和協力廠商案例遷移至 Azure 的方法。 這包括三種新的遷移案例：
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [Windows 虛擬桌面](../scenarios/wvd/index.md) | 此案例可提高產能，並加速各種工作負載的移轉，以支援使用者體驗。 |
 | [Azure Stack](../scenarios/azure-stack/index.md) | 瞭解如何使用 Azure Stack Hub 在您的資料中心部署 Azure。 |
@@ -94,7 +103,7 @@ Azure 登陸區域背後的概念和實現選項是與領先的 Microsoft 合作
 
 分析解決方案現已包含在 Microsoft 雲端採用架構中。 這些新主題強調在您的雲端採用旅程期間啟用分析解決方案的最佳作法。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [適用于 Teradata、Netezza、Exadata 的分析解決方案](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) | 瞭解如何將舊版的內部部署環境（包括 Teradata、Netezza 和 Exadata）遷移至新式分析解決方案。 |
 | [Azure Synapse 的高可用性](../migrate/azure-best-practices/analytics/azure-synapse.md) | 瞭解新式雲端式基礎結構的其中一個主要優點，內建高可用性和嚴重損壞修復。 |
@@ -104,7 +113,7 @@ Azure 登陸區域背後的概念和實現選項是與領先的 Microsoft 合作
 
 AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中。 這些 AI 解決方案可協助您利用有關客戶需求的預測來加速創新、將商務程式自動化、探索資訊、尋找新的方式來與客戶互動，並在您的雲端採用旅程期間提供更佳的體驗。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [負責任的 AI](../strategy/responsible-ai.md) | 瞭解您在實施 AI 解決方案時應考慮的 AI 原則，並瞭解如何建立負責任的 AI 策略。 |
 | [Azure 創新指南：使用 AI 來創新](../innovate/innovation-guide/predict.md) | 瞭解如何使用 AI 進行創新，並根據您的實所需求找出最佳解決方案。 |
@@ -116,7 +125,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 雲端環境的正確設定通常是雲端採用期間的第一個和最常見的技術封鎖程式。 此版本著重于加速部署雲端環境的指引。 為了克服這種常見的封鎖程式，雲端採用架構引進了 **Azure 登陸區域**。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [Azure 登陸區域](../ready/landing-zone/index.md) | Azure 登陸區域會建立一組常用的設計區域和實行選項，以加速環境建立，使其符合雲端採用方案和雲端作業模式。 這篇新文章更清楚地定義 Azure 登陸區域。 |
 | [Azure 登陸區域：設計區域](../ready/landing-zone/design-areas.md) | 所有 Azure 登陸區域都共用一組通用的8個設計區域。 在部署任何 Azure 登陸區域之前，客戶應考慮這些設計，以做出重要的決策。 |
@@ -124,7 +133,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 現有的 CAF 藍圖定義和 CAF Terraform 模組提供 Azure 登陸區域執行的起點。 不過，有些客戶需要更豐富的實作選項，以符合企業規模雲端採用方案的需求。 此版本會將 **CAF 企業規模** 新增至 Azure 登陸區域的執行選項，以滿足該需求。 以下列出一些文章，可協助您開始使用 CAF 企業規模的架構和參考。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [企業規模總覽](../ready/enterprise-scale/index.md) | 企業規模總覽 |
 | [實行 CAF 企業規模的登陸區域](../ready/enterprise-scale/implementation.md) | 快速的執行選項和 GitHub 範例 |
@@ -139,7 +148,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 根據意見反應，我們已建立新的內容，讓您開始使用雲端採用架構。 新的「快速入門手冊」可協助您根據想要完成的工作來流覽架構。 我們也建立了新的登陸頁面，讓您更輕鬆地找到可支援雲端採用旅程的指引、工具、學習模組和程式。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [適用於 Azure 的雲端採用架構](../index.yml) | 雲端採用架構登陸頁面已經過重新設計，可讓您更輕鬆地找到可支援雲端採用旅程的指引、工具、學習模組和程式。 |
 | [開始使用雲端採用架構](./index.md) | 選擇與您的雲端採用目標一致的使用者入門指南。 這些常見案例會透過適用於 Azure 的 Microsoft 雲端採用架構來提供藍圖。 |
@@ -152,7 +161,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 我們已將所有雲端採用工具和樣板集中在一處，讓他們更容易尋找。
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [工具和範本](../reference/tools-templates.md) | 尋找可協助您加速雲端採用旅程的工具、範本和評量。 |
 
@@ -162,13 +171,13 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 **遷移方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [遷移方法](../migrate/index.md) | 這些變更簡化了遷移工作的階段， (評估工作負載、部署工作負載，以及) 的發行工作負載。 這些變更也會移除有關遷移待處理專案的詳細資料。 移除這些詳細資料，並參考計畫、就緒和採用方法，反而會為各種不同的雲端採用方案建立彈性，以更妥善配合方法。 |
 
 **現成的方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [重構登陸區域](../ready/landing-zone/refactor.md) | **新文章：** 本文從現成的方法研討會進行繪製，示範從初始範本開始，使用決策樹和重構來擴展登陸區域，並移往未來的企業就緒狀態。 |
 | [擴充登陸區域](../ready/considerations/index.md) | **新文章：** 以重構文章的「平行反覆運算」一節為基礎，顯示各種類型的登陸區域擴充如何將共用原則內嵌至支援的平臺。 本總覽的原始內容已移至目錄中的 [基本登陸區域考慮](../ready/considerations/basic-considerations.md) 節點。 |
@@ -185,7 +194,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 **訂用帳戶指引更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [建立您的初始 Azure 訂用帳戶](../ready/azure-best-practices/initial-subscriptions.md) | **新文章：** 建立您的初始生產和非生產訂用帳戶，並決定是否要建立沙箱訂用帳戶，以及包含共用服務的訂用帳戶。 |
 | [建立額外的訂用帳戶以調整 Azure 環境](../ready/azure-best-practices/scale-subscriptions.md) | 瞭解建立其他訂用帳戶、在訂用帳戶之間移動資源，以及建立新訂閱秘訣的原因。 |
@@ -197,7 +206,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 **Kubernetes**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [應用程式開發與部署](../innovate/kubernetes/application-development.md) | **新文章：** 提供規劃應用程式開發、設定 CI/CD 管線，以及為 Kubernetes 實施網站可靠性工程的檢查清單、資源和最佳作法。 |
 | [叢集設計和作業](../innovate/kubernetes/cluster-design-operations.md) | **新文章：** 提供檢查清單、資源和最佳作法，適用于叢集設定、網路設計、未來的調整規模、商務持續性，以及 Kubernetes 的嚴重損壞修復。 |
@@ -211,20 +220,20 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 **策略方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [平衡組合](../strategy/balance-the-portfolio.md) | 已將本文移至稍早在策略方法中顯示。 這可讓您在生命週期的先前思考流程中看到。 |
 | [平衡 &nbsp; 競爭 &nbsp; 優先順序](../strategy/balance-competing-priorities.md) | **新文章：** 概述各方法之間的優先順序平衡，以協助通知您的策略。 |
 
 **方案方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [評量 &nbsp; 最佳 &nbsp; 作法](../plan/contoso-migration-assessment.md) | 將本文移至方案方法的新「最佳做法」一節。 這可讓您瞭解在生命週期中稍早評估本機環境的做法。 |
 
 **現成的方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [什麼 &nbsp; 是 &nbsp; &nbsp; 登陸 &nbsp; 區域？](../ready/landing-zone/index.md) | **新文章：** 定義詞彙登陸區域。 |
 | 第一個登陸區域 | **新文章：** 擴充不同登陸區域的比較。 |
@@ -233,7 +242,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 
 **遷移方法更新：**
 
-| 發行項 | 說明 |
+| 發行項 | 描述 |
 |--|--|
 | [概觀](../migrate/azure-migration-guide/index.md) | 以較清楚的指南描述和較少的步驟來更新。 |
 | [評估](../migrate/azure-migration-guide/assess.md) | 新增「具挑戰性的假設」一節，以示範此等級的評定如何與計畫方法中所述的累加式評估方法搭配運作。 |

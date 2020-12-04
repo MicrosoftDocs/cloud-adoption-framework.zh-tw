@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb8d2a7d77bb4ad6cc8ab0f3a391e7aeaa1a4fdd
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: ca41e563d3a1be57d8d8e27b15179dfe7a37b6b8
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713865"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605824"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -58,7 +58,7 @@ CAF 基礎藍圖不會部署登陸區域。 相反地，它會部署建立治理
 - [初始 Azure](../azure-best-practices/initial-subscriptions.md)訂用帳戶：在採用規模的這個階段中，您的作業模型是否需要兩個、三個或四個訂用帳戶？
 - [調整](../azure-best-practices/scale-subscriptions.md)訂用帳戶：採用調整規模時，將使用哪些準則來推動訂用帳戶調整？
 - [組織](../azure-best-practices/organize-subscriptions.md)訂用帳戶：您要如何在調整規模時組織訂閱？
-- [標記標準](../azure-best-practices/naming-and-tagging.md#metadata-tags)：需要在標記中一致地捕捉哪些其他準則以增強您的訂用帳戶設計？
+- [標記標準](../azure-best-practices/resource-tagging.md)：需要在標記中一致地捕捉哪些其他準則以增強您的訂用帳戶設計？
 
 若要在小組進一步配合雲端採用時協助進行這項比較，請參閱《治理指南》中的治理模式一節 [-規範指引](../../govern/guides/complex/prescriptive-guidance.md#application-of-governance-defined-patterns) 文章。 這一節的規範指引會根據特定敘述和作業模型來示範一組模式。 該指導方針也包含其他應考慮之模式的連結。
 
