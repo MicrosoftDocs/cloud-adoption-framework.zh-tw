@@ -1,19 +1,19 @@
 ---
 title: 身分識別決策指南
 description: 了解身分識別和存取管理 (IAM) 服務可讓您管理雲端中存取控制的方法。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c6f8bd83e9d58e2ed8df3339329c7d41c1ca35b8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 95871126f39751bade70e81790ec9ae81519b661
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881864"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605518"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 

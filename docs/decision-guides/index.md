@@ -1,19 +1,19 @@
 ---
 title: 架構決策指南
 description: 使用這些核心雲端部署基礎結構元件模式和模型，來支援您的特定雲端部署案例。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7c9a0e9aaf9f2c2956e29643f5ef8ff3893f6583
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 3c0ea34fae2eb46eda498d01ed4e31e88b62df2c
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603455"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605450"
 ---
 # <a name="architectural-decision-guides"></a>架構決策指南
 

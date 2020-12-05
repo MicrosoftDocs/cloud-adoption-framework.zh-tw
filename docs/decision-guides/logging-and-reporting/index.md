@@ -1,19 +1,19 @@
 ---
 title: 記錄與報告決策指南
 description: 開發核心記錄、報告和監視策略，以確保您的組織符合運作時間、安全性和原則合規性目標。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 83487c086061cde929b318d44e4ad399d43ed8d6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 354425583022ca5bea49d23da8768bb40212033c
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881779"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605535"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>記錄與報告決策指南
 
