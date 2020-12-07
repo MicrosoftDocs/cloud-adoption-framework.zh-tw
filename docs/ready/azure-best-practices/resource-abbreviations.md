@@ -3,17 +3,17 @@ title: Azure 資源類型的建議縮寫
 description: 在命名資源和資產時，請參閱建議的縮寫以用於各種 Azure 資源類型。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/20/2020
+ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: dbdc224f227321d4c0c576e0ac3ae7c113b6926b
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.openlocfilehash: 1c93f83a1a5a7f55d13d8486e03c12a7954ddddd
+ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96610998"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96772458"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure 資源類型的建議縮寫
 

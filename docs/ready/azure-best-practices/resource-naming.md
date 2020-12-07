@@ -3,17 +3,17 @@ title: 定義您的命名慣例
 description: 瞭解 azure 資源和資產的命名考慮，以及查看 Azure 中資源和資產的範例名稱。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/20/2020
+ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: 805fd4c879be86b588fe999cf2644e66f65b10d5
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.openlocfilehash: 6c600d57ca14610e16747565a2a4536d31a4d150
+ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96611002"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96772509"
 ---
 # <a name="define-your-naming-convention"></a>定義您的命名慣例
 
@@ -45,12 +45,12 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 | 命名元件 | 描述 |
 |--|--|--|
-| **資源類型** | 表示 Azure 資源或資產類型的縮寫。 此元件是名稱的前置詞或尾碼。 如需詳細資訊，請參閱 [Azure 資源類型的建議縮寫](./resource-abbreviations.md)。 範例：`rg`、`vm` |
+| **資源類型** | 表示 Azure 資源或資產類型的縮寫。 此元件通常用來做為名稱中的前置詞或尾碼。 如需詳細資訊，請參閱 [Azure 資源類型的建議縮寫](./resource-abbreviations.md)。 範例：`rg`、`vm` |
 | **業務單位** | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 在小型組織中，此元件可能是單一公司的頂層組織元素。 範例： `fin` 、 `mktg` 、 `product` 、 `it` 、 `corp` |
-| **訂用帳戶類型** | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。 範例： `prod` 、 `shared` 、 `client` |
 | **應用程式或服務名稱** | 資源所屬應用程式、工作負載或服務的名稱。 範例： `navigator` 、 `emissions` 、 `sharepoint` 、 `hadoop` |
+| **訂用帳戶類型** | 資源所在訂用帳戶的用途摘要描述。 通常會依部署環境類型或特定工作負載來細分。 範例： `prod` 、 `shared` 、 `client` |
 | **部署 &nbsp; 環境** | 資源所支援工作負載的開發週期階段。 範例： `prod` 、 `dev` 、 `qa` 、 `stage` 、 `test` |
-| **區域** | 部署資源所在的 Azure 區域。 範例： `westus` 、 `eastus2` 、 `westeurope` 、 `usgovia` |
+| **區域** | 部署資源所在的 Azure 區域。 範例： `westus` 、 `eastus2` 、 `westeu` 、 `usva` 、 `ustx` |
 
 ## <a name="example-names-for-common-azure-resource-types"></a>常見 Azure 資源類型的範例名稱
 
@@ -78,25 +78,25 @@ _圖2： Azure 資源名稱的範圍層級。_
 |--|--|--|
 | **管理群組** | 營業單位及/或 <br> 環境類型 | _mg- \<business unit> [- \<environment type> ]_ <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
 | **訂用帳戶** | 帳戶/企業合約 | _\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>_ <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
-| **資源群組** | 訂用帳戶 | _rg- \<app&nbsp;or&nbsp;service&nbsp;name> -<訂用帳戶 &nbsp; 類型>-\<###>_ <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-share-001` <li> `rg-ad-dir-services-shared-001` |
+| **資源群組** | 訂用帳戶 | _rg- \<app&nbsp;or&nbsp;service&nbsp;name> -<訂用帳戶 &nbsp; 類型>-\<###>_ <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-shared-001` <li> `rg-ad-dir-services-shared-001` |
 | **API 管理服務實例** | 全球 | _apim\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> `apim-navigator-prod` |
-| **受控識別** | 資源群組 | _識別碼\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> <li> `id-appcn-keda-prod-eus-001` |
+| **受控識別** | 資源群組 | _識別碼\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> <li> `id-appcn-keda-prod-eastus2-001` |
 
 ## <a name="example-names-networking"></a>範例名稱：網路
 
 | 資產類型 | 範圍 | 格式和範例 |
 |--|--|--|
-| **虛擬網路** | 資源群組 | _vnet\<subscription&nbsp;type>-\<region>\<###>_ <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
-| **子網路** | 虛擬網路 | _snet-\<subscription>-\<subregion>-\<###>_ <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
+| **虛擬網路** | 資源群組 | _vnet\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
+| **子網路** | 虛擬網路 | _snet-\<subscription>-\<region>-\<###>_ <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
 | **網路介面 (NIC)** | 資源群組 | _nic-< # # >-\<vm&nbsp;name>-\<subscription>-\<###>_ <br><br> <li> `nic-01-dc1-shared-001` <li> `nic-02-vmhadoop1-prod-001` <li> `nic-02-vmtest1-client-001` |
-| **公用 IP 位址** | 資源群組 | _點數\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<subregion>-\<###>_ <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
-| **負載平衡器** | 資源群組 | _磅\<app&nbsp;name&nbsp;or&nbsp;role><environment>\<###>_ <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
+| **公用 IP 位址** | 資源群組 | _點數\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<region>-\<###>_ <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
+| **負載平衡器** | 資源群組 | _磅\<app&nbsp;name&nbsp;or&nbsp;role>-<environment>-\<###>_ <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
 | **網路安全性群組 (NSG)** | 子網或 NIC | _nsg\<policy&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<###>_ <br><br> <li> `nsg-weballow-001` <li> `nsg-rdpallow-001` <li> `nsg-sqlallow-001` <li> `nsg-dnsblocked-001` |
 | **局域網路閘道** | 虛擬閘道 | _lgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `lgw-shared-eastus2-001` <li> `lgw-prod-westus-001` <li> `lgw-client-eastus2-001` |
 | **虛擬網路閘道** | 虛擬網路 | _vgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
 | **虛擬網路閘道** | 虛擬網路 | _vgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
-| **站對站連線** | 資源群組 | _cn----- \<local&nbsp;gateway&nbsp;name>\<virtual&nbsp;gateway&nbsp;name>_ <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-shared-westus-001` |
-| **VPN 連線** | 資源群組 | _cn----- \<subscription1> \<region1>\<subscription2>\<region2>-_ <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
+| **站對站連線** | 資源群組 | _cn----- \<local&nbsp;gateway&nbsp;name>\<virtual&nbsp;gateway&nbsp;name>_ <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-westus-001` |
+| **VPN 連線** | 資源群組 | _cn- \<subscription1> - ---- \<region1>\<subscription2>-\<region2>-_ <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
 | **路由表** | 資源群組 | _往\<route&nbsp;table&nbsp;name>_ <br><br> <li> `route-navigator` <li> `route-sharepoint` |
 | **DNS 標籤** | 全球 | _\<DNS&nbsp;A&nbsp;record&nbsp;for&nbsp;VM>.\<region>.cloudapp.azure.com_ <br><br> <li> `dc1.westus.cloudapp.azure.com` <li> `web1.eastus2.cloudapp.azure.com` |
 
@@ -109,8 +109,8 @@ _圖2： Azure 資源名稱的範圍層級。_
 | **Web 應用程式** | 全球 | _\<app name> - \<environment> - \<###> azurewebsites.net_ <br><br> <li> `app-navigator-prod-001.azurewebsites.net` <li> `app-accountlookup-dev-001.azurewebsites.net` |
 | **函數應用程式** | 全球 | _func- \<app name> - \<environment> - \<###> . azurewebsites.net_ <br><br> <li> `func-navigator-prod-001.azurewebsites.net` <li> `func-accountlookup-dev-001.azurewebsites.net` |
 | **雲端服務** | 全球 | _\<app name> - \<environment> - \<###> cloudapp.net}_ <br><br> <li> `cld-navigator-prod-001.azurewebsites.net` <li> `cld-accountlookup-dev-001.azurewebsites.net` |
-| **通知中樞** | 資源群組 | _contoso.ntf\<app name>-\<environment>_ <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
 | **通知中樞命名空間** | 全球 | _ntfns-\<app name>-\<environment>_ <br><br> <li> `ntfns-navigator-prod` <li> `ntfns-emissions-dev` |
+| **通知中樞** | 通知中樞命名空間 | _contoso.ntf\<app name>-\<environment>_ <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
 
 ## <a name="example-names-databases"></a>範例名稱：資料庫
 
@@ -155,7 +155,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 | **HDInsight-Hadoop 叢集** | 全球 | _hadoop\<app name>-\<environment>_ <br><br> <li> `hadoop-navigator-prod` <li> `hadoop-emissions-dev` |
 | **HDInsight-Spark 叢集** | 全球 | _大家\<app name>-\<environment>_ <br><br> <li> `spark-navigator-prod` <li> `spark-emissions-dev` |
 | **IoT 中樞** | 全球 | _iot\<app name>-\<environment>_ <br><br> <li> `iot-navigator-prod` <li> `iot-emissions-dev` |
-| **Power BI Embedded** | 全球 | _pbi\<app Name>\<environment>_ <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
+| **Power BI Embedded** | 全球 | _pbi\<app name>-\<environment>_ <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
 
 ## <a name="example-names-integration"></a>範例名稱：整合
 
