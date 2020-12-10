@@ -2,18 +2,19 @@
 title: Azure enterprise scaffold 現在是適用于 Azure 的雲端採用架構
 description: Azure 企業 scaffold 已整合到適用于 Azure 的 Microsoft 雲端採用架構中。
 author: rdendtler
-ms.author: rodend
+ms.author: brblanch
 ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
+ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e0b5341e3220633b5a7066ef5899334dd034ac0b
-ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
+ms.openlocfilehash: 83f85513fa3710628a47c59ec40261022abdeec2
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96557530"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012578"
 ---
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure enterprise scaffold 現在是適用于 Azure 的 Microsoft 雲端採用架構
 

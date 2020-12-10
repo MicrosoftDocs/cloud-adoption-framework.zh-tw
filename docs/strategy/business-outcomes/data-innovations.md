@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3a12bf2ff26ff28ff7c561badba702bdc064e23d
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: c70e8a29b6e1debf2b05fd4fb1bae981bf0cdf4e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996939"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013156"
 ---
 # <a name="data-innovations"></a>資料創新
 
@@ -80,7 +81,7 @@ ms.locfileid: "94996939"
 - 避免在內部部署硬體上分析和儲存高速大量資料的成本。 例如，如果您需要分析即時、機器產生的資料（例如，按一下資料流程和串流處理資料倉儲中的 IoT 資料），您可以使用 Azure Synapse Analytics。
 - 您可以在資料倉儲成長時，避免支付 premium 以將資料儲存在資料中心的昂貴倉儲硬體上。 Azure Synapse Analytics 可以將您的資料以較低的成本儲存在雲端儲存體中。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 <!-- TODO: More detail needed here. -->
 

@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8449ccec7252e35f0ed113c3d9c7cb29de792716
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: bb8b123e4b1414a63d58a23e9ca71e5723b39149
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996174"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013683"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -66,7 +67,7 @@ ms.locfileid: "94996174"
 
 在此過程中，專案計劃應該包含雲端治理小組針對生產升級規劃的每個工作負載執行合規性審查的時間配置。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 返回檢查清單，以重新評估遷移工作的任何其他範圍需求。
 

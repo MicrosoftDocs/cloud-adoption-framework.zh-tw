@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1275997c3ca3e2da4947dff20e063e18cd907e9f
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: cfba0681dd1a07a787c24561d5ca23e0dbef5bc7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879441"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013989"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -93,7 +94,7 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具中的無代理程式方�
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](/azure/migrate/contoso-migration-rehost-vm) | 此服務會協調和管理內部部署應用程式和工作負載的遷移，以及 Amazon Web Services (AWS) 和 Google Cloud Platform (VM 實例) GCP。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 深入瞭解 [費用和定價](https://azure.microsoft.com/pricing/details/azure-migrate)。  |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者必須符合此案例的下列必要條件。
 
@@ -150,7 +151,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 
 當您完成設定時，工具需要一些時間來列舉所有 Vm。 當此程式完成時，您會看到它們填入 Azure 中的 Azure Migrate 工具。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何設定 [Azure Migrate：伺服器遷移工具](/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)。
 
@@ -177,7 +178,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 - 若是 Windows，當您觸發遷移時，VM 上不應該有擱置中的 Windows 更新。 如果有，則在更新完成之前，系統管理員將無法登入 VM。
 - 遷移之後，系統管理員可以檢查 **開機診斷** 以查看 VM 的螢幕擷取畫面。 如果這不可行，則應確認 VM 是否正在執行，並檢查 [疑難排解秘訣](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [準備 vm 以進行遷移](/azure/migrate/prepare-for-migration)。
 
@@ -210,8 +211,8 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 
 7. 在 [Azure Hybrid Benefit] 中：
 
-    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後選取 [下一步]  。
-    - 如果您有 active 軟體保證或 Windows Server 訂閱所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後選取 [下一步]  。
+    - 如果您不想套用 Azure Hybrid Benefit，請選取 [否]。 然後選取 [下一步]。
+    - 如果您有 active 軟體保證或 Windows Server 訂閱所涵蓋的 Windows Server 電腦，而且您想要將權益套用至您要遷移的機器，請選取 **[是]** 。 然後選取 [下一步]。
 
 8. 在 [計算] 中，檢閱 VM 名稱、大小、OS 磁碟類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
@@ -219,7 +220,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
     - **作業系統磁片：** 為 VM 指定作業系統 (開機) 磁片。 作業系統磁片具有作業系統開機載入器和安裝程式。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，請指定集合。 此集合必須位於您為遷移指定的目標資源群組中。
 
-9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]  。
+9. 在 [磁碟] 中，指定是否應將 VM 磁碟複寫至 Azure，並選取 Azure 中的磁碟類型 (標準 SSD/HDD 或進階受控磁碟)。 然後選取 [下一步]。
 
    您可以從複寫排除磁碟。 如果您排除磁片，則在遷移後將不會出現在 Azure VM 上。
 
@@ -264,7 +265,7 @@ Contoso 管理員現在會執行完整的遷移。
 4. VM 會啟動移轉作業。 請在 Azure 通知中追蹤該作業。
 5. 作業完成後，您可以從 [虛擬機器] 頁面檢視及管理 VM。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解如何 [執行測試遷移](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
 - 瞭解如何將 [vm 遷移至 Azure](/azure/migrate/tutorial-migrate-vmware#migrate-vms)。
@@ -307,5 +308,4 @@ Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/c
 
 ## <a name="conclusion"></a>結論
 
-在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。
-如需在您的環境中完成類似專案的指引，請參閱 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)的 Azure DevOps 專案範本。 
+在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。 如需在您的環境中完成類似專案的指引，請參閱 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)的 Azure DevOps 專案範本。 

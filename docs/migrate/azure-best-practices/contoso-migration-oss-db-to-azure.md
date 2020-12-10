@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1dcff70eaf185d59592682bdb61d777bf7dd0795
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 1c301eef0bfe30309cb847c1a1b54216f4326f62
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334607"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015026"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 

@@ -7,12 +7,13 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ca41e563d3a1be57d8d8e27b15179dfe7a37b6b8
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 7dbaf4afe02d939bbc62b6b1e5d39a12c7b4b788
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605824"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013360"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 

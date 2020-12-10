@@ -7,13 +7,13 @@ ms.date: 05/12/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.custom: governance
-ms.openlocfilehash: 6e05264fd117ceec2aa6c0a00f6236aef5345340
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 93c3a156134b637e41ffde9951453fe73d936cbe
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776477"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012425"
 ---
 <!-- docutune:ignore "Cloud Operating Model" -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "90776477"
 
 在 2018 年初，Microsoft 發行了雲端作業模型 (COM)。 COM 是一項指南，可協助客戶瞭解數位轉型的 _內容_ 和 _原因_ 。 這可協助客戶瞭解所有需要解決的領域：商務策略、文化策略和技術策略。 COM 中未包含的內容是特定的 how _to_ 步驟，這是離開客戶想要的，也就是「我們從這裡前往哪裡？」
 
-適用于 Azure 的 Microsoft 雲端採用架構是設計來協助您瞭解**如何**及**原因**，並提供有關如何協助加速雲端採用**工作的整合**指引。
+適用于 Azure 的 Microsoft 雲端採用架構是設計來協助您瞭解 **如何** 及 **原因**，並提供有關如何協助加速雲端採用 **工作的整合** 指引。
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>在雲端採用架構內使用雲端作業模型實務
 

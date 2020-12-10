@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7fe9f32320348cae396e1b671b33066408cc300a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: d01e7333d6e5e85576287248073562fc2f2b181f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884737"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012850"
 ---
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>全球市場決策會如何影響轉型旅程？
 

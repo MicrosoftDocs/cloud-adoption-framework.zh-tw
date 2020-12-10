@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9471b396885c3eb3e29d4e5c9892cf572c8f6f5c
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 9db6da656e4a684ce8ee3c45f12fe8d5c95a4871
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996854"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012255"
 ---
 <!-- cSpell:ignore Personalizer -->
 <!-- docutune:ignore "global reach" -->
@@ -45,7 +46,7 @@ ms.locfileid: "94996854"
 
 以美國為基礎的公用程式提供者已被授與在加拿大提供公用事業的合約。 加拿大資料主權法律要求加拿大的資料必須保留在加拿大。 這家公司一直以來都有多年的雲端應用程式創新工作。 因此，他們的軟體是透過完整的腳本 DevOps 程式來部署。 只要稍微變更程式碼基底，就可以將程式碼的工作複本部署到加拿大的 Azure 資料中心，符合資料主權的合規性，並保留客戶。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 深入了解客戶參與成果。
 

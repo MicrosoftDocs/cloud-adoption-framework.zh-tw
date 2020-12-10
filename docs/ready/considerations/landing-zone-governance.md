@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f841854558e297c61645c518d1d42cf415b3124b
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 624a73a649e85362355757574dc1d1391297948d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997245"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013462"
 ---
 # <a name="improve-landing-zone-governance"></a>改善登陸區域控管
 
@@ -35,7 +36,7 @@ ms.locfileid: "94997245"
 3. [初始治理基礎](../../govern/initial-foundation.md)：小型、容易實施的治理工具組，可為所有登陸區域建立初始基礎。
 4. [改進治理基礎](../../govern/foundation-improvements.md)：反復加入治理控制項，以強化所有登陸區域治理。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 雲端採用將會隨著新工作負載的每個 wave 或版本持續擴充。 為了持續滿足這些需求，雲端平臺小組應定期檢查其他登陸區域的最佳做法。
 

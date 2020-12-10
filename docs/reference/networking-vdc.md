@@ -2,19 +2,19 @@
 title: 虛擬資料中心：網路觀點
 description: 使用適用于 Azure 的雲端採用架構，瞭解如何使用 Azure 順暢地將基礎結構延伸至雲端，並建立多層式架構。
 author: tracsman
-ms.author: jonor
+manager: rossort
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-manager: rossort
-ms.custom: virtual-network
-ms.openlocfilehash: 08eb791a18fa5252bc0e6ba69a07980f8ef73be7
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank, virtual-network
+ms.openlocfilehash: 83a71125116e6239265f03819386f2f0ca6a6771
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713695"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012561"
 ---
 <!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
@@ -173,7 +173,7 @@ _Azure 虛擬 WAN 拓撲_ 可支援大規模的分公司案例和全球 WAN 服�
 
 雖然 Azure 允許複雜拓撲，但是 VDC 概念的其中一個核心準則是重複性和簡單性。 若要將管理投入時間降到最低，我們建議採用 VDC 參考架構這種簡單的中樞輪輻設計。
 
-### <a name="components"></a>元件
+### <a name="components"></a>單元
 
 虛擬資料中心是由四種基本元件類型所組成： **基礎結構**、 **周邊網路**、 **工作負載** 和 **監視**。
 
@@ -286,7 +286,7 @@ Azure Load Balancer 也可以探查各種伺服器實例的健全狀況，而且
 
 Azure Front Door 也提供 web 應用程式防火牆 (WAF) ，以保護 web 應用程式免于遭受常見的弱點和入侵。
 
-[Azure 應用程式閘道][AppGW] 是一種專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。 它可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的效能。 它也提供其他第7層路由功能，例如迴圈配置傳入流量、以 cookie 為基礎的會話親和性、以 URL 路徑為基礎的路由，以及在單一應用程式閘道上裝載多個網站的能力。 Web 應用程式防火牆 (WAF) 也是提供為應用程式閘道 WAF SKU 的一部分。 此 SKU 會保護 Web 應用程式免於遭遇常見的 Web 弱點和攻擊。 應用程式閘道可以設定為面向網際網路的閘道、內部專用閘道或兩者混合。
+[Azure 應用程式閘道][AppGW] 是一種專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。 它可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的效能。 它也提供其他第7層路由功能，例如迴圈配置傳入流量、以 cookie 為基礎的會話親和性、以 URL 路徑為基礎的路由，以及在單一應用程式閘道上裝載多個網站的能力。 Web 應用程式防火牆 (WAF) 也是提供為應用程式閘道 WAF SKU 的一部分。 此 SKU 會保護 Web 應用程式免於遭遇常見的 Web 弱點和攻擊。 應用程式閘道可以設定為面向網際網路的閘道、內部私人網路關或兩者的組合。
 
 [公用 ip][PIP]。 使用某些 Azure 功能時，您可以將服務端點與公用 IP 位址建立關聯，以便從網際網路存取您的資源。 此端點會使用 NAT 將流量路由傳送至 Azure 虛擬網路上的內部位址和埠。 這個路徑是外部流量進入虛擬網路的主要方式。 您可以設定公用 IP 位址以決定要傳入的流量，以及該流量在虛擬網路上的轉譯方式和目的地。
 
@@ -414,7 +414,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 資料中心遷移的虛擬資料中心方法會建立可調整的架構，以優化 Azure 資源的使用、降低成本，並簡化系統管理。 虛擬資料中心通常是以使用虛擬網路對等互連或虛擬 WAN 中樞)  (的中樞和輪輻網路拓撲為基礎。 中樞內提供的一般共用服務，以及特定的應用程式和工作負載會部署在輪輻中。 虛擬資料中心也會符合公司角色的結構，其中的不同部門（例如中央 IT、DevOps、作業和維護）會一起運作，同時執行其特定角色。 虛擬資料中心支援將現有的內部部署工作負載遷移至 Azure，但也提供雲端原生部署的許多優點。
 
-## <a name="references"></a>參考
+## <a name="references"></a>參考資料
 
 深入瞭解本檔中討論的 Azure 功能。
 
@@ -472,7 +472,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 :::row:::
     :::column:::
-        **安全性** <br>
+        **Security** <br>
         [Azure 防火牆][AzFW] <br>
         [防火牆管理員][AzFWMgr] <br>
         [應用程式閘道 WAF][AppGWWAF] <br>

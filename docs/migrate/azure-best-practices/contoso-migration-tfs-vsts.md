@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df88116b3e3041e68a183fa1586dede6e36ac63c
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 765b52e99fdac45002f1569f7b642b01a096e7db
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014482"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -36,7 +37,7 @@ Contoso 雲端小組已針對遷移至 Azure DevOps Services 的下列目標：
 - 他們必須移轉去年的工作項目資料和歷程記錄。
 - 小組不想設定新的使用者名稱和密碼。 目前的所有系統指派都必須保留。
 - 小組想要從 Team Foundation 版本控制 (TFVC) 移轉至 Git，以進行原始檔控制。
-- 轉換至 Git 將會是僅匯入最新版本原始程式碼的 tip 遷移。 當程式碼基底轉移時，當所有工作都將停止時，就會在停機期間發生轉換。 小組了解，在移動之後，將只有目前的主要分支歷程記錄可供使用。
+- 轉換至 Git 將會是僅匯入最新版本原始程式碼的 tip 遷移。 當程式碼基底轉移時，當所有工作都將停止時，就會在停機期間發生轉換。 小組瞭解在移動之後，只有目前的主要分支歷程記錄可供使用。
 - 小組關心這項變更，而且想要在進行完整移動之前測試它。 即使在移至 Azure DevOps Services 之後，小組也想要保留 Team Foundation Server 的存取權。
 - 小組有多個集合，而若要進一步瞭解此程式，它想要從只有幾個專案的專案開始。
 - 小組瞭解 Team Foundation Server 集合是與 Azure DevOps Services 組織之間的一對一關聯性，因此會有多個 Url。 但這符合其目前的程式碼基底和專案分離模型。
@@ -63,7 +64,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 ![Contoso 遷移程式的圖表。](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -91,7 +92,7 @@ Contoso 會按照下列方式完成移轉程序：
 
     ![[建立儲存體帳戶] 窗格的螢幕擷取畫面。](./media/contoso-migration-tfs-vsts/storage1.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - [Azure 儲存體簡介](/azure/storage/common/storage-introduction)。
 - [建立儲存體帳戶](/azure/storage/common/storage-create-storage-account)。
@@ -131,7 +132,7 @@ Contoso 管理員會將 Team Foundation Server 實例升級為 Team Foundation S
 > [!NOTE]
 > 某些 Team Foundation Server 升級需要在升級完成後執行 [設定功能] Wizard。 [深入了解](/azure/devops/reference/configure-features-after-upgrade?view=vsts)。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [升級 Team Foundation Server](/azure/devops/server/upgrade/get-started)。
 
@@ -476,7 +477,7 @@ Contoso 管理員會執行試執行的遷移，以確定一切都如預期般運
 
     ![螢幕擷取畫面，顯示已完成遷移至 Azure DevOps Services。](./media/contoso-migration-tfs-vsts/git6.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 如需詳細資訊，請參閱 [將存放庫從 TFVC 匯入 Git](/azure/devops/repos/git/import-from-TFVC?view=vsts)。
 

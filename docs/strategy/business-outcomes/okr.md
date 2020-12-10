@@ -2,18 +2,18 @@
 title: '使用目標和關鍵結果來測量商務成果 (OKRs) '
 description: 使用雲端採用架構，利用目標和關鍵結果 (OKRs) 來測量商務成果。
 author: wayneme75
-ms.author: wayneme
+ms.author: brblanch
 ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 0be8841fb83d2c00fb10a86bb103880ee59b7e7a
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: c9da763c77ace61575bee488f6dbdef6a813463d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447195"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012323"
 ---
 <!-- docutune:casing WorkBoard -->
 

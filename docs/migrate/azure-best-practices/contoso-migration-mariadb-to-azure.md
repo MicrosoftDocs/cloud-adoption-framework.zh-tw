@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a96c4afaa31a7cc399cee0e249e04348623e847d
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 1e21ad6985b6790676005836590a91be1fd50adf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334675"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015163"
 ---
 <!-- cSpell:ignore mysqldump -->
 

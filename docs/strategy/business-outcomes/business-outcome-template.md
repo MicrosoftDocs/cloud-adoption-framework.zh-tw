@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dd10212e506550a641c01481983bc42703887f19
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 84aff9b90a3c281be00801bfc94d4c58254aabde
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774335"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013241"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>如何使用業務成果範本
 
@@ -48,7 +49,7 @@ ms.locfileid: "90774335"
 
 *圖3：探索的五個重點區域：專案關係人、結果、驅動程式、Kpi 和功能。*
 
-專案**關係人：** 組織中的誰可能會在特定的業務成果中看到最大的價值？ 誰最有可能支援這項轉換，尤其是當事情變得很困難或耗時？ 誰對於這項轉換成功有最大的影響？ 這位人員是潛在的專案關係人。
+專案 **關係人：** 組織中的誰可能會在特定的業務成果中看到最大的價值？ 誰最有可能支援這項轉換，尤其是當事情變得很困難或耗時？ 誰對於這項轉換成功有最大的影響？ 這位人員是潛在的專案關係人。
 
 **業務成果：** 商務結果是一個精簡、定義且可觀察的結果或業務績效的變更，並受到特定量值的支援。 專案關係人想要如何變更企業？ 企業會受到何種影響？ 這項轉換的價值為何？
 

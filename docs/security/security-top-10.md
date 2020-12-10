@@ -2,17 +2,18 @@
 title: Azure 安全性最佳做法
 description: 瞭解 Microsoft 為最重要的 Azure 安全性最佳作法所建議的內容。
 author: JanetCThomas
-ms.author: mas
+ms.author: brblanch
 ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 7031a8feb3b034b394e7c437e58f5aca3189a23f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 254975d16c19626881dcc872517b1af58a2998fd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996973"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013275"
 ---
 # <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
@@ -105,7 +106,7 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 
 這些是需要安全性決策的一般區域、描述，以及哪些小組通常會進行決策。
 
-| 決策         | Description           | 一般小組  |
+| 決策         | 描述           | 一般小組  |
 | ------------- |-------------| -----|
 | 網路安全性 | Azure 防火牆的設定和維護、網路虛擬裝置 (以及相關聯的路由) 、Waf、Nsg、Asg 等。 | _[基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md)小組通常著重于網路安全性_  |
 | 網路管理 | 企業級的虛擬網路和子網配置  | _一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組_ |
@@ -421,7 +422,7 @@ _您沒有時間規劃危機期間的危機。_
   - **所有技術 IT 和安全性小組：** 提供輸入需求，然後配合並實行企業策略。
   - **應用程式擁有者和開發人員：** 閱讀並瞭解適用于這些應用程式的策略檔 (在理想的情況下，針對其角色) 量身打造的指引。
 
-**How** 作法：
+作法：
 
 打造及實施雲端的安全性策略，其中包含所有小組的輸入和積極參與。 雖然流程檔案格式會有所不同，但這應該一律包含：
 

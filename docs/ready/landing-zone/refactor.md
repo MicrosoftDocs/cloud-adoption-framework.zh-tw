@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4369a61349622def7733101f59db166fd175d29c
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: cbcf8501788944a51f1dcae99f21e8dbad1dc931
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997092"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013428"
 ---
 # <a name="refactor-landing-zones"></a>重構登陸區域
 
@@ -110,7 +111,7 @@ ms.locfileid: "94997092"
 
 [展開登陸區域](../considerations/index.md)的每個小節都會對應到上圖中所述的其中一項新增專案。 除了這些基本擴充之外，更深層的方法 (例如治理或管理此架構) 將有助於超越基本的登陸區域修改，以實行長期的專業領域。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 若要開始重構流程，請開始使用 [Azure 登陸區域](./index.md)。
 

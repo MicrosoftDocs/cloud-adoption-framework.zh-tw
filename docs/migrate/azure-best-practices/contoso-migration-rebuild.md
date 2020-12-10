@@ -7,12 +7,13 @@ ms.date: 7/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cd2f547218baed649bb5c64a2e9047a191401a8
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: internal
+ms.openlocfilehash: fcde3cf74bcafc67a4399859f7be4b1eb10ef3f5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334947"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015230"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -102,7 +103,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 | [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 成本是以功能、儲存體和使用持續時間為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
 | [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建立、部署及調整企業級 web、行動和 API 應用程式，以在任何平臺上執行。 | App Service 方案會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -153,7 +154,7 @@ Contoso 管理員會布建 AKS 和 Azure Container Registry，如下所示：
 
     _圖4：儲存檔案。_
 
-4. 他們會選取 [ **View**  >  **整合式終端**機]，在 Visual Studio Code 中開啟整合式終端機。
+4. 他們會選取 [ **View**  >  **整合式終端** 機]，在 Visual Studio Code 中開啟整合式終端機。
 
     ![顯示 [整合式終端機] 連結的螢幕擷取畫面。](./media/contoso-migration-rebuild/aks3.png)
 
@@ -225,7 +226,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖13：匯入 GitHub 存放庫。_
 
-4. 在 **管線**中，他們會選取 [ **建立** ] 並建立新的管線，方法是使用 Azure Repos Git 作為存放庫中的來源。
+4. 在 **管線** 中，他們會選取 [ **建立** ] 並建立新的管線，方法是使用 Azure Repos Git 作為存放庫中的來源。
 
     ![用於建立新管線的 [DevOps] 窗格螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts3.png)
 
@@ -237,19 +238,19 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖15：從空的作業開始。_
 
-6. 他們會選取 [裝載的 Linux 預覽]**** 作為建置管線。
+6. 他們會選取 [裝載的 Linux 預覽] 作為建置管線。
 
     ![在 Azure DevOps 中設定組建管線的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts5.png)
 
     _圖16：設定組建管線。_
 
-7. 在 [第 1 階段]**** 中，他們會新增 [Docker Compose]**** 工作。 此工作會建立 Docker Compose。
+7. 在 [第 1 階段] 中，他們會新增 [Docker Compose] 工作。 此工作會建立 Docker Compose。
 
     ![在 Azure DevOps 中建立 Docker Compose 工作的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts6.png)
 
     _圖17：建立 Docker Compose。_
 
-8. 他們會重複相同步驟，以新增另一個 [Docker Compose]**** 工作。 這會將容器推送至容器登錄。
+8. 他們會重複相同步驟，以新增另一個 [Docker Compose] 工作。 這會將容器推送至容器登錄。
 
      ![在 Azure DevOps 中新增另一個 Docker Compose 工作的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts7.png)
 
@@ -261,7 +262,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖19：建立和設定組建。_
 
-10. 他們會在存放庫 `docker-compose.yaml` 的 *src* 資料夾中指定檔案的路徑。 他們選擇建立服務映射，並包含最新的標記。 當動作變更為 [建置服務映像]**** 時，Azure DevOps 工作的名稱會變更為 [自動建置服務]****。
+10. 他們會在存放庫 `docker-compose.yaml` 的 *src* 資料夾中指定檔案的路徑。 他們選擇建立服務映射，並包含最新的標記。 當動作變更為 [建置服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動建置服務]。
 
     ![Azure DevOps 中各種工作建立細節的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts9.png)
 
@@ -273,7 +274,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖21：設定第二個 Docker 工作。_
 
-12. 他們會輸入 *yaml* 檔案名，並選取 **推送服務映射**，包括最新的標記。 當動作變更為 [推送服務映像]**** 時，Azure DevOps 工作的名稱會變更為 [自動推送服務]****。
+12. 他們會輸入 *yaml* 檔案名，並選取 **推送服務映射**，包括最新的標記。 當動作變更為 [推送服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動推送服務]。
 
     ![變更 Azure DevOps 工作名稱的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -346,7 +347,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖29：建立新的管線。_
 
-3. 他們會選取 [空白作業]**** 來開始管線，而不使用範本。
+3. 他們會選取 [空白作業] 來開始管線，而不使用範本。
 4. 他們會提供階段和管線名稱。
 
       ![顯示在 Azure DevOps 中建立階段名稱的螢幕擷取畫面。](./media/contoso-migration-rebuild/back-pipe4.png)
@@ -494,7 +495,7 @@ Contoso 管理員會佈建「電腦視覺 API」。 此函式會呼叫 API，以
 
 Contoso 管理員會使用 Azure 入口網站來布建 web 應用程式。
 
-1. 在入口網站中選取 [Web 應用程式]****。
+1. 在入口網站中選取 [Web 應用程式]。
 
     ![在 Azure 入口網站中選取 web 應用程式的螢幕擷取畫面。](./media/contoso-migration-rebuild/web-app1.png)
 
@@ -518,7 +519,7 @@ Contoso 管理員會使用 Azure 入口網站來布建 web 應用程式。
 
 在 Azure 入口網站中，Contoso 管理員會布建函數應用程式。
 
-1. 他們會選取 [函數應用程式]****。
+1. 他們會選取 [函數應用程式]。
 
     ![顯示建立函數應用程式的螢幕擷取畫面。](./media/contoso-migration-rebuild/function-app1.png)
 
@@ -596,24 +597,24 @@ Contoso 管理員現在會設定 Web 應用程式以使用 Contoso 資源。
 
 Contoso 管理員現在已可發佈網站。
 
-1. 他們會開啟 Azure DevOps，並在 `SmartHotelFrontend` **組建和版本**的專案中，選取 [ **+ 新增管線**]。
-2. 他們會選取 [Azure DevOps Git]**** 作為來源。
-3. 他們會選取 [ASP.NET Core]**** 範本。
+1. 他們會開啟 Azure DevOps，並在 `SmartHotelFrontend` **組建和版本** 的專案中，選取 [ **+ 新增管線**]。
+2. 他們會選取 [Azure DevOps Git] 作為來源。
+3. 他們會選取 [ASP.NET Core] 範本。
 4. 他們會檢查管線，並檢查以確定已選取 [ **發行 Web 專案** ] 和 [ **Zip 已發行] 專案** 。
 
     ![Web 專案之管線設定的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front2.png)
 
     _圖61：管線設定。_
 
-5. 在 **觸發**程式中，他們會啟用持續整合並新增 master 分支。 這可確保每次方案將新的程式碼認可至主要分支時，組建管線便會啟動。
+5. 在 **觸發** 程式中，他們會啟用持續整合並新增主要分支。 這可確保每次方案將新的程式碼認可至主要分支時，組建管線便會啟動。
 
     ![啟用持續整合和新增主要分支的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front3.png)
 
     _圖62：啟用持續整合。_
 
-6. 他們會選取 [儲存並排入佇列]**** 來啟動建置作業。
-7. 組建完成後，會使用 **Azure App Service 部署**來設定發行管線。
-8. 它們提供階段名稱和 **預備**環境。
+6. 他們會選取 [儲存並排入佇列] 來啟動建置作業。
+7. 組建完成後，會使用 **Azure App Service 部署** 來設定發行管線。
+8. 它們提供階段名稱和 **預備** 環境。
 
     ![提供環境階段名稱的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front4.png)
 
@@ -631,21 +632,21 @@ Contoso 管理員現在已可發佈網站。
 
     _圖65：啟用持續部署。_
 
-11. 在 [環境]**** 中，他們會選取 [Staging]**** 底下的 [1 個作業, 1 個工作]****。
+11. 在 [環境] 中，他們會選取 [Staging] 底下的 [1 個作業, 1 個工作]。
 
-12. 選取訂用帳戶和 web 應用程式名稱之後，系統管理員會開啟 [ **部署 Azure App Service** 工作。 此部署已設定成使用 [預備環境]**** 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
+12. 選取訂用帳戶和 web 應用程式名稱之後，系統管理員會開啟 [ **部署 Azure App Service** 工作。 此部署已設定成使用 [預備環境] 部署位置。 這會自動在此位置建置要檢閱和核准的程式碼。
 
      ![將 web 應用程式部署至某個位置的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front7.png)
 
     _圖66：部署至位置。_
 
-13. 在 [管線]**** 中，他們會新增新的階段。
+13. 在 [管線] 中，他們會新增新的階段。
 
     ![[管線] 索引標籤的螢幕擷取畫面，並新增新的階段。](./media/contoso-migration-rebuild/vsts-publish-front8.png)
 
     _圖67：加入新的階段。_
 
-14. 他們會選取 [ **使用位置 Azure App Service 部署** ]，然後將環境命名為 **生產**環境。
+14. 他們會選取 [ **使用位置 Azure App Service 部署** ]，然後將環境命名為 **生產** 環境。
 
 15. 他們會選取 [ **1 個作業]、[2 個工作** ]，然後選取訂用帳戶、應用程式服務名稱和 **預備** 位置。
 
@@ -653,13 +654,13 @@ Contoso 管理員現在已可發佈網站。
 
     _圖68：命名環境。_
 
-16. 他們會從管線中移除 [將 Azure App Service 部署至位置]****。 這是先前的步驟所放置。
+16. 他們會從管線中移除 [將 Azure App Service 部署至位置]。 這是先前的步驟所放置。
 
     ![顯示從管線中移除位置的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front11.png)
 
     _圖69：從管線中移除插槽。_
 
-17. 他們會儲存管線。 他們會在管線上選取 [部署後的條件]****。
+17. 他們會儲存管線。 他們會在管線上選取 [部署後的條件]。
 
     ![[部署後的條件] 按鈕的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts-publish-front12.png)
 
@@ -693,7 +694,7 @@ Contoso 管理員現在已可發佈網站。
 
     _圖74：正在完成交換。_
 
-24. 小組會檢查 [生產環境]**** 位置，以確認該 Web 應用程式已於 `https://smarthotelcontoso.azurewebsites.net/` 投入生產環境。
+24. 小組會檢查 [生產環境] 位置，以確認該 Web 應用程式已於 `https://smarthotelcontoso.azurewebsites.net/` 投入生產環境。
 
 ### <a name="deploy-the-petchecker-function-app"></a>部署 PetChecker 函數應用程式
 
@@ -709,9 +710,9 @@ Contoso 管理員會藉由執行下列步驟來部署應用程式：
 
 4. 他們會認可程式碼，並將其同步處理回到 Azure DevOps，以推送其變更。
 5. 他們會新增新的組建管線，然後選取來源 **Azure DevOps Git** 。
-6. 他們會選取 [ASP.NET Core (.NET Framework)]**** 範本。
+6. 他們會選取 [ASP.NET Core (.NET Framework)] 範本。
 7. 他們會接受範本的預設值。
-8. 在 **觸發**程式底下，選取 [ **啟用持續整合** ]，然後選取 [ **儲存 & 佇列** ] 以啟動組建。
+8. 在 **觸發** 程式底下，選取 [ **啟用持續整合** ]，然後選取 [ **儲存 & 佇列** ] 以啟動組建。
 9. 組建成功之後，他們會建立發行管線， **並使用位置新增 Azure App Service 部署**。
 
 10. 他們將環境命名為 **生產** 環境，然後選取訂用帳戶。 他們會將 **應用程式類型** 設定為函式 **應用程式** ，並將應用程式服務名稱設定為 `smarthotelpetchecker` 。
@@ -728,9 +729,9 @@ Contoso 管理員會藉由執行下列步驟來部署應用程式：
 
 12. 他們會啟用 **持續部署觸發** 程式，然後選取 [ **儲存**]。
 
-13. 他們會選取 [將新組建排入佇列]****，以執行完整的 CI/CD 管線。
+13. 他們會選取 [將新組建排入佇列]，以執行完整的 CI/CD 管線。
 
-14. 函式部署完成後，它會出現在 [Azure 入口網站中，狀態為 [ **正在**執行]。
+14. 函式部署完成後，它會出現在 [Azure 入口網站中，狀態為 [ **正在** 執行]。
 
     ![函式應用程式的螢幕擷取畫面，其中顯示「正在執行」狀態。](./media/contoso-migration-rebuild/function6.png)
 

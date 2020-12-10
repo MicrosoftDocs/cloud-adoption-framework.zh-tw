@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f4b2042c5f2dcbd8ab9b0553a86d29ae1ff1b73
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 5d52a66bab0313eb5b347b7668caee18ecb80987
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713457"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014567"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -102,7 +103,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -179,7 +180,7 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
     ![網路 DNS 伺服器清單的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 閱讀 [SQL 受控執行個體總覽](/azure/sql-database/sql-database-managed-instance)。
 - 瞭解如何 [建立 SQL 受控實例的虛擬網路](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
@@ -211,7 +212,7 @@ Contoso 會考量下列因素：
 
     ![用來路由傳送資料表子網的 [關聯子網] 窗格螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [設定受控實例的路由](/azure/sql-database/sql-database-managed-instance-get-started)。
 
@@ -231,7 +232,7 @@ Contoso 會考量下列因素：
 
       ![ContosoRG 資源群組中新資源的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何布建 [受控實例](/azure/sql-database/sql-database-managed-instance-get-started)。
 

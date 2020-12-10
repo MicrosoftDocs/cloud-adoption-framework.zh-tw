@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df3ca412e1cf405a0927e13e5c030da66f4a0e53
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 0755b0e3aa4d2fdad1aab0ff68c7db9fde0af34b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713627"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014805"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -91,7 +92,7 @@ Contoso 會完成遷移程式，如下所示：
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
 | [適用於 MySQL 的 Azure 資料庫](/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署，提供完全受控、符合企業需求的社區 MySQL 資料庫。 | 定價是以計算、儲存體和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -134,7 +135,7 @@ Contoso 管理員會在每個區域中布建兩個 web 應用程式 (一個) 使
 
     ![選取 [Web 應用程式] 窗格的螢幕擷取畫面，其中包含 Linux OS、美國中部位置和 PHP 7.0。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app4.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解 [Azure App Service web 應用程式](/azure/app-service/overview)。
 - 了解 [Linux 上的 Azure App Service](/azure/app-service/containers/app-service-linux-intro)。
@@ -155,7 +156,7 @@ Contoso 管理員會設定流量管理員，將輸入的 web 要求導向至在 
 
     ![在流量管理員中監視端點的 [端點] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/traffic-manager3.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 了解[流量管理員](/azure/traffic-manager/traffic-manager-overview)。
 - 了解如何[將流量路由傳送至優先端點](/azure/traffic-manager/traffic-manager-configure-priority-routing-method)。

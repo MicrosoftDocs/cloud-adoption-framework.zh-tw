@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 733216e9e8a4bca165c1bc73a1fd1870ecba8d3a
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: b95cbdd7dda23366eccd66c8f1ac7265da225e4a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879220"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013819"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -212,5 +213,6 @@ Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期�
 
 ## <a name="conclusion"></a>結論
 
-在本文中，Contoso 已評估、規劃並將其 Microsoft SQL Server 工作負載遷移至 Azure。  
-已開發 Azure DevOps 專案，可讓您在 SQL 遷移旅程圖中運用。 專案符合雲端採用架構。 專案會逐步引導您完成所需的重要決策，請 [按一下這裡](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 前往 Azure DevOps 專案。 
+在本文中，Contoso 已評估、規劃並將其 Microsoft SQL Server 工作負載遷移至 Azure。
+
+已開發 Azure DevOps 專案，可讓您在 SQL 遷移旅程圖中運用。 專案符合雲端採用架構。 專案會逐步引導您完成所需的重要決策，請 [按一下這裡](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 前往 Azure DevOps 專案。

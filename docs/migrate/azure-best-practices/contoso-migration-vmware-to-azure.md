@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c2e35b3401d4a4eaeb534befee9e33c4b1a83df
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: f41366beaef98e9f53082f43d4c45d662ffdb0ed
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996413"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013853"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -20,7 +21,7 @@ ms.locfileid: "94996413"
 
 當虛構公司 Contoso (Vm) 從內部部署資料中心遷移至 Azure 時，就會有兩個選項可供小組使用。 本文著重于 Azure VMware 解決方案，Contoso 已判定為更好的遷移選項。
 
-| 移轉選項 | 結果 |
+| 移轉選項 | 成果 |
 | --- | --- |
 | [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/) | <li>[評定](/azure/migrate/tutorial-assess-vmware) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <li>使用 Azure 基礎結構即服務 (IaaS) 來執行工作負載。 <li>使用 [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)管理 vm。 |
 | [Azure VMware 解決方案](https://azure.microsoft.com/overview/azure-vmware) | <li>使用 VMware 混合式雲端擴充 (HCX) 或 vMotion 來移動內部部署 Vm。 <li>在 Azure 裸機硬體上執行原生 VMware 工作負載。 <li>使用 vSphere 管理 Vm。 |

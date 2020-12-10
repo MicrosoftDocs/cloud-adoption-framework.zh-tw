@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: addfab1821faadae120fc5dbd2e1af1caabe15d2
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: a5552fb22547f24aa55d73b8d31a36f198fd0846
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713525"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014380"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -97,7 +98,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要執行此案例，Contoso 必須符合下列必要條件：
 
@@ -156,7 +157,7 @@ Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure
 
     ![資料庫實例文字檔的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql/provision-sql6.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - [說明](/azure/sql-database/sql-database-get-started-portal)如何佈建 SQL Database。
 - 瞭解 [vCore 資源限制](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)。

@@ -7,12 +7,13 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 46e17eed32ecfab14671fd59358c86bd3909311d
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 6e86cdefabd9d1c2caf81fdbd4a2335217086282
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994423"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013258"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 
@@ -140,7 +141,7 @@ ms.locfileid: "94994423"
 
 **擴充的範圍範例：** 在許多情況下，會觸發集中式控制的需求。 協力廠商合規性需求和暫時性的安全性漏洞是集中控制的兩個觸發程式範例。 在這些情況下，通常需要建立限制原則和固定的固定控制項。 不過，為了讓創新和採用繼續進行，建議中央 IT 小組根據每個工作負載的重要性和敏感性來提供這些控制項。 提供較少控制的環境，但是範圍或風險設定檔，甚至可以在需要控制時提供彈性。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 瞭解如何 [平衡遷移、創新和實驗](./balance-the-portfolio.md) ，以充分發揮雲端遷移工作的價值。
 

@@ -2,17 +2,18 @@
 title: 使用 Terraform 來建立登陸區域
 description: 瞭解如何使用 Terraform by HashiCorp 來建立登陸區域。
 author: arnaudlh
-ms.author: arnaul
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1aeb06a9e103365ad5cbcfd9e23055fa47f00eb7
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: a1e2de16aea7af82795c4227675c5dc72ccf523c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994780"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012510"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -44,7 +45,7 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 | 元件 | 責任 |
 |---|---|
 | 資源群組 | 基礎所需的核心資源群組 |
-| 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中樞 |
+| 活動記錄 | 審核所有訂用帳戶活動和封存： <li> 儲存體帳戶 <li> Azure 事件中心 |
 | 診斷記錄 | 所有作業記錄都會保留一天的特定天數： <li> 儲存體帳戶 <li> 事件中樞 |
 | Log Analytics | 儲存作業記錄。 部署適用于深入應用程式最佳作法審核的常見解決方案： <li> NetworkMonitoring <li> AdAssessment <li> Get-adreplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure 資訊安全中心 | 傳送至電子郵件和電話號碼的安全性防護計量和警示 |
@@ -200,7 +201,7 @@ security_center = {
 
 檢查設定之後，您可以部署設定，就像部署 Terraform 環境一樣。 建議您使用 rover，這是可讓您從 Windows、Linux 或 macOS 進行部署的 Docker 容器。 您可以開始使用 [登陸區域](https://github.com/azure/caf-terraform-landingzones)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 基礎登陸區域以分解的方式為複雜的環境奠定基礎。 此版本提供一組簡單的功能，可透過將其他模組新增至藍圖或將其他登陸區域分層在其上進行擴充。
 

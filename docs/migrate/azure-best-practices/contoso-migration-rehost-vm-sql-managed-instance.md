@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 546c5103489ce15f066d9856078abadc6440cef2
-ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
+ms.custom: think-tank
+ms.openlocfilehash: 5dfb82b25f4e864ee3126ac70eb5c7c23dd36065
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90988901"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014312"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -118,7 +119,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 | **Azure 基礎結構** | Contoso 會如 Azure 基礎結構中所述，設定其 Azure 基礎結構 [以進行遷移](./contoso-migration-infrastructure.md)。 |
 | **內部部署伺服器** | 內部部署 vCenter Server 應執行5.5、6.0 或6.5 版。 <br><br> ESXi 主機應該執行5.5、6.0 或6.5 版。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
 | **內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](/azure/virtual-machines/linux/endorsed-distros)。 |
-| **資料庫移轉服務** | 針對 Azure 資料庫移轉服務，您需要相容的內部 [部署 VPN 裝置](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。 <br><br> 您必須能夠設定內部部署 VPN 裝置。 它必須有對外開放的公用 IPv4 位址。 此位址不能位於 NAT 裝置後方。 <br><br> 請確定您可以存取內部部署 SQL Server 資料庫。 <br><br> Windows 防火牆應該要能存取來源資料庫引擎。 瞭解如何 [設定適用于 database engine 存取的 Windows 防火牆](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)。 <br><br> 如果資料庫機器前面有防火牆，請新增規則以允許存取資料庫，以及允許透過 SMB 連接埠 445 存取檔案。 <br><br> 用來連接到來源 SQL Server 實例和目標 SQL 受控執行個體的認證必須是系統管理員（sysadmin）伺服器角色的成員。 <br><br> 您的內部部署資料庫中必須有一個網路共用，讓 Azure 資料庫移轉服務可用來備份源資料庫。 <br><br> 請確定執行來源 SQL Server 執行個體的服務帳戶擁有網路共用的寫入權限。 <br><br> 請記下擁有網路共用完整控制權限的 Windows 使用者和密碼。 Azure 資料庫移轉服務會模擬這些使用者認證，以便將備份檔案上傳至 Azure 儲存體容器。 <br><br> SQL Server Express 安裝程序預設會將 TCP/IP 通訊協定設定為**停用**。 請務必將其啟用。 |
+| **Database Migration Service** | 針對 Azure 資料庫移轉服務，您需要相容的內部 [部署 VPN 裝置](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。 <br><br> 您必須能夠設定內部部署 VPN 裝置。 它必須有對外開放的公用 IPv4 位址。 此位址不能位於 NAT 裝置後方。 <br><br> 請確定您可以存取內部部署 SQL Server 資料庫。 <br><br> Windows 防火牆應該要能存取來源資料庫引擎。 瞭解如何 [設定適用于 database engine 存取的 Windows 防火牆](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)。 <br><br> 如果資料庫機器前面有防火牆，請新增規則以允許存取資料庫，以及允許透過 SMB 連接埠 445 存取檔案。 <br><br> 用來連接到來源 SQL Server 實例和目標 SQL 受控執行個體的認證必須是系統管理員（sysadmin）伺服器角色的成員。 <br><br> 您的內部部署資料庫中必須有一個網路共用，讓 Azure 資料庫移轉服務可用來備份源資料庫。 <br><br> 請確定執行來源 SQL Server 執行個體的服務帳戶擁有網路共用的寫入權限。 <br><br> 請記下擁有網路共用完整控制權限的 Windows 使用者和密碼。 Azure 資料庫移轉服務會模擬這些使用者認證，以便將備份檔案上傳至 Azure 儲存體容器。 <br><br> SQL Server Express 安裝程序預設會將 TCP/IP 通訊協定設定為 **停用**。 請務必將其啟用。 |
 
 ## <a name="scenario-steps"></a>案例步驟
 
@@ -175,7 +176,7 @@ Contoso 和其他使用者必須符合此案例的下列必要條件。
 
       ![顯示網路 DNS 伺服器的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 閱讀 [SQL 受控執行個體總覽](/azure/sql-database/sql-database-managed-instance)。
 - 瞭解如何 [建立 SQL 受控實例的虛擬網路](/azure/sql-database/sql-database-managed-instance-vnet-configuration)。
@@ -199,7 +200,7 @@ Contoso 會考量下列因素：
 
     ![顯示路由表的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table.png)
 
-1. 為了符合 SQL 受控執行個體需求，在部署路由表 (`MIRouteTable`) 之後，他們會新增位址前置詞為的路由 `0.0.0.0/0` 。 [下一個躍點類型]**** 選項會設定為 [網際網路]****。
+1. 為了符合 SQL 受控執行個體需求，在部署路由表 (`MIRouteTable`) 之後，他們會新增位址前置詞為的路由 `0.0.0.0/0` 。 [下一個躍點類型] 選項會設定為 [網際網路]。
 
     ![顯示路由表前置詞的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-prefix.png)
 
@@ -207,7 +208,7 @@ Contoso 會考量下列因素：
 
     ![顯示路由表子網的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [設定受控實例的路由](/azure/sql-database/sql-database-managed-instance-get-started)。
 
@@ -227,7 +228,7 @@ Contoso 管理員現在可以布建 SQL 受控實例：
 
       ![顯示兩個新資源的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何布建 [受控實例](/azure/sql-database/sql-database-managed-instance-get-started)。
 
@@ -257,7 +258,7 @@ Contoso 管理員現在可以布建 SQL 受控實例：
 
         ![顯示設定網路的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-network.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解如何 [設定 Azure 資料庫移轉服務](/azure/dms/quickstart-create-data-migration-service-portal)。
 - 了解如何[建立和使用 SAS](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)。
@@ -320,7 +321,7 @@ Contoso 管理員會依照下列步驟來設定這些元件：
 
 1. 設定完成之後，工具會花一些時間來列舉所有的虛擬機器。 程式完成之後，Contoso 管理員可以看到在 Azure 的 Azure Migrate 工具中填入的 Vm。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何設定 [Azure Migrate 設備](/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)。
 
@@ -331,7 +332,7 @@ Contoso 管理員會依照下列步驟來設定這些元件：
 1. 為了透過網際網路存取，他們會：
 
     - 在遷移之前，先在內部部署 VM 上啟用 RDP 或 SSH。
-    - 確定已為**公用**設定檔新增 TCP 和 UDP 規則。
+    - 確定已為 **公用** 設定檔新增 TCP 和 UDP 規則。
     - 檢查作業系統防火牆中是否允許 RDP 或 SSH。
 
 1. 為了透過站對站 VPN 存取，他們：
@@ -350,7 +351,7 @@ Contoso 管理員會依照下列步驟來設定這些元件：
    - 若是 Windows，在觸發遷移時，VM 上不應該有暫止的 Windows 更新。 如果有，在更新完成之前，他們將無法登入 VM。
    - 遷移後，他們可以檢查 **開機診斷** 以查看 VM 的螢幕擷取畫面。 如果這不可行，則應確認 VM 是否正在執行，並檢查這些 [疑難排解秘訣](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [準備 vm 以進行遷移](/azure/migrate/prepare-for-migration)。
 
@@ -366,40 +367,40 @@ Contoso 管理員會依照下列步驟來設定這些元件：
 
 1. 在 **[** 複寫  >  **來源設定**] 中，您的  >  **電腦虛擬化了嗎？** 他們會選取 **[是]，VMware vSphere**。
 
-1. 在 **內部部署設備**中，他們會選取已設定 Azure Migrate 設備的名稱，然後選取 **[確定]**。
+1. 在 **內部部署設備** 中，他們會選取已設定 Azure Migrate 設備的名稱，然後選取 **[確定]**。
 
     ![顯示 [來源設定] 索引標籤的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/source-settings.png)
 
-1. 在 **虛擬機器**中，他們會選取要複寫的機器：
+1. 在 **虛擬機器** 中，他們會選取要複寫的機器：
     - 如果他們已執行 Vm 的評量，則可以將 VM 大小調整和磁片類型套用至評定結果 (premium/standard) 建議。 在 [ **從 Azure Migrate 評量匯入遷移設定？**] 中，他們會選取 [ **是]** 選項。
     - 如果他們未執行評量，或他們不想使用評量設定，則會選取 [ **否** ] 選項。
     - 如果他們選擇使用評量，他們會選取 VM 群組和評量名稱。
 
     ![顯示選取評定的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/select-assessment.png)
 
-1. 在 **虛擬機器**中，他們會視需要搜尋 vm，並檢查每個要遷移的 vm。 然後選取 **[下一步：目標設定]**。
+1. 在 **虛擬機器** 中，他們會視需要搜尋 vm，並檢查每個要遷移的 vm。 然後選取 **[下一步：目標設定]**。
 
-1. 在 [ **目標設定**] 中，他們會選取要遷移至的訂用帳戶和目的地區域。 它們也會指定 Azure Vm 在遷移後所在的資源群組。 在 **虛擬網路**中，他們會選取 azure vm 在遷移後將加入的 azure 虛擬網路/子網。
+1. 在 [ **目標設定**] 中，他們會選取要遷移至的訂用帳戶和目的地區域。 它們也會指定 Azure Vm 在遷移後所在的資源群組。 在 **虛擬網路** 中，他們會選取 azure vm 在遷移後將加入的 azure 虛擬網路/子網。
 
-1. 在 **Azure Hybrid Benefit**中，他們：
+1. 在 **Azure Hybrid Benefit** 中，他們：
 
     - 如果不想套用 Azure Hybrid Benefit，請選取 [ **否** ]。 然後選取 **[下一步]**。
     - 如果 Windows Server 電腦具有 active 軟體保證或 Windows Server 訂用帳戶的涵蓋範圍，且他們想要將權益套用至其所要遷移的機器，請選取 **[是]** 。 然後選取 **[下一步]**。
 
-1. 在 **計算**中，他們會檢查 VM 名稱、大小、OS 磁片類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
+1. 在 **計算** 中，他們會檢查 VM 名稱、大小、OS 磁片類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
-    - **VM 大小：** 如果他們使用評量建議，則 [VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來挑選大小。 或者，他們可以選擇**AZURE VM 大小**的手動大小。
+    - **VM 大小：** 如果他們使用評量建議，則 [VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來挑選大小。 或者，他們可以選擇 **AZURE VM 大小** 的手動大小。
     - **作業系統磁片：** 他們會為 VM 指定作業系統 (開機) 磁片。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，則會指定該集合。 此集合必須在為遷移所指定的目標資源群組中。
 
-1. 在 **磁片**中，它們會指定是否應將 VM 磁片複寫至 Azure。 然後，他們會在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型，然後選取 **[下一步]**。
+1. 在 **磁片** 中，它們會指定是否應將 VM 磁片複寫至 Azure。 然後，他們會在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型，然後選取 **[下一步]**。
     - 它們可以將磁片從複寫中排除。
     - 如果將磁片排除，則在遷移後將不會出現在 Azure VM 上。
 
-1. 在 [ **檢查 + 開始**複寫] 中，他們會檢查設定。 然後 **，他們會選取 [** 複寫] 以啟動伺服器的初始複寫。
+1. 在 [ **檢查 + 開始** 複寫] 中，他們會檢查設定。 然後 **，他們會選取 [** 複寫] 以啟動伺服器的初始複寫。
 
 > [!NOTE]
-> 複寫設定可以在複寫開始之前的任何時間更新，以**管理**複寫  >  **機器**。 在複寫啟動後，就無法變更設定。
+> 複寫設定可以在複寫開始之前的任何時間更新，以 **管理** 複寫  >  **機器**。 在複寫啟動後，就無法變更設定。
 
 ## <a name="step-6-migrate-the-database-via-azure-database-migration-service"></a>步驟6：透過 Azure 資料庫移轉服務遷移資料庫
 
@@ -427,7 +428,7 @@ Contoso 管理員必須建立資料庫移轉服務專案，然後遷移資料庫
 
     ![顯示 [目標詳細資料] 窗格的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-target-details.png)
 
-1. 在**新的活動**  >  **執行遷移**中，他們會指定執行遷移的設定：
+1. 在 **新的活動**  >  **執行遷移** 中，他們會指定執行遷移的設定：
     - 來源和目標認證。
     - 要遷移的資料庫。
     - 在內部部署 VM 上建立的網路共用。 Azure 資料庫移轉服務會取得此共用的來源備份。
@@ -438,7 +439,7 @@ Contoso 管理員必須建立資料庫移轉服務專案，然後遷移資料庫
         ![顯示 [設定遷移設定] 畫面的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-migration-settings.png)
 
 1. 他們會儲存遷移設定，然後執行遷移。
-1. 在 [概觀]**** 中，他們會監視移轉狀態。
+1. 在 [概觀] 中，他們會監視移轉狀態。
 
     ![顯示狀態的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-monitor1.png)
 
@@ -460,8 +461,8 @@ Contoso 管理員會執行快速測試遷移，並確認 VM 是否正常運作�
 
     ![顯示測試遷移專案的螢幕擷取畫面。](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
-1. 在 **測試遷移**中，他們會選取 azure 虛擬網路，azure VM 在遷移後將位於此網路中。 我們建議使用非生產虛擬網路。
-1. **測試移轉**作業隨即啟動。 他們會在入口網站通知中監視作業。
+1. 在 **測試遷移** 中，他們會選取 azure 虛擬網路，azure VM 在遷移後將位於此網路中。 我們建議使用非生產虛擬網路。
+1. **測試移轉** 作業隨即啟動。 他們會在入口網站通知中監視作業。
 1. 在遷移完成後，他們會在 Azure 入口網站的 **虛擬機器** 中，查看已遷移的 Azure VM。 機器名稱會具有尾碼 **-Test**。
 1. 測試完成後，他們會選取並保存 (或以滑鼠右鍵按一下) 複寫 **機器** 中的 Azure VM，然後選取 [ **清除測試遷移**]。
 
@@ -471,12 +472,12 @@ Contoso 管理員會執行快速測試遷移，並確認 VM 是否正常運作�
 
 Contoso 管理員現在會執行完整遷移來完成移動。
 
-1. 在 Azure Migrate 專案中，他們移至 [**伺服器**  >  **Azure Migrate：伺服器遷移**]，然後選取 [複寫**伺服器**]。
+1. 在 Azure Migrate 專案中，他們移至 [**伺服器**  >  **Azure Migrate：伺服器遷移**]，然後選取 [複寫 **伺服器**]。
 
     ![顯示 [複寫伺服器] 專案的螢幕擷取畫面。](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
-1. 在複寫 **機器**時，他們會選取並保存 (或以滑鼠右鍵按一下) VM，然後選取 [ **遷移**]。
-1. 在**Migrate**  >  [遷移] 會**關閉虛擬機器，並在不遺失資料**的情況下執行規劃的遷移，然後選取 [**是**  >  **]**。
+1. 在複寫 **機器** 時，他們會選取並保存 (或以滑鼠右鍵按一下) VM，然後選取 [ **遷移**]。
+1. 在  >  [遷移] 會 **關閉虛擬機器，並在不遺失資料** 的情況下執行規劃的遷移，然後選取 [**是**  >  **]**。
     - 根據預設，Azure Migrate 會關閉內部部署 VM，並執行隨選複寫來同步處理自從上次複寫之後發生的任何 VM 變更。 此動作可確保不會遺失任何資料。
     - 如果他們不想關閉 VM，則會選取 [ **否**]。
 1. VM 會啟動移轉作業。 他們會在 Azure 通知中追蹤作業。
@@ -497,7 +498,7 @@ Contoso 管理員現在會執行完整遷移來完成移動。
 1. 重新開機 IIS 之後，應用程式會使用在 SQL 受控實例上執行的資料庫。
 1. 此時，他們可以關閉內部部署 SQLVM 機器。 遷移已完成。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解如何 [執行測試容錯移轉](/azure/site-recovery/tutorial-dr-drill-azure)。
 - 瞭解如何 [建立復原方案](/azure/site-recovery/site-recovery-create-recovery-plans)。

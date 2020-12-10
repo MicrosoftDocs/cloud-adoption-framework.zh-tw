@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3102bbef6c856dd5fdb7a814b74f03dc40b1363a
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 6cd6c05e390275bf52f4b39dc3f2d901117cdb46
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334709"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014635"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -21,7 +22,7 @@ ms.locfileid: "92334709"
 
 Windows 虛擬桌面是在雲端中執行的全方位桌面與應用程式虛擬化服務。 它是唯一 (VDI) 的虛擬桌面基礎結構，可提供簡化的管理、Windows 10 企業版適用于企業的 Microsoft 365 應用程式的多重會話優化，以及遠端桌面服務 (RDS) 環境的支援。 幾分鐘內就能在 Azure 上部署及調整 Windows 桌面和應用程式，並取得內建的安全性和合規性功能。
 
-| 移轉選項 | 結果 |
+| 移轉選項 | 成果 |
 |--- | --- |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | 評定及遷移內部部署 RDS 環境。 <br><br> 使用 Azure Windows 虛擬桌面執行工作負載。 <br><br> 使用 [Windows 虛擬桌面管理 UX](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux)管理 Windows 虛擬桌面。 |
 
@@ -34,7 +35,7 @@ Windows 虛擬桌面是在雲端中執行的全方位桌面與應用程式虛擬
 
 - **目前的環境生命週期結束：** 當資料中心達到租用期結束或關閉時，就會超出容量。 遷移至雲端可提供幾乎無限制的容量。 目前的軟體也可能在生命週期結束後，必須將執行 Contoso 目前的 VDI 解決方案的軟體升級為必要。
 - **多會話 WINDOWS 10 VDI：** 為 Contoso 使用者提供在雲端中虛擬化的唯一多會話 Windows 10 桌面，可高度擴充、最新且可在任何裝置上使用。
-- 針對**enterprise 的 Microsoft 365 應用程式優化：** 為企業經驗提供最佳的 Microsoft 365 應用程式，提供多會話的虛擬桌面案例，為 Contoso 的使用者提供最有效率的虛擬化體驗。
+- 針對 **enterprise 的 Microsoft 365 應用程式優化：** 為企業經驗提供最佳的 Microsoft 365 應用程式，提供多會話的虛擬桌面案例，為 Contoso 的使用者提供最有效率的虛擬化體驗。
 - **幾分鐘內即可部署及調整：** 使用 Azure 入口網站中的整合管理，在短短幾分鐘內快速將現代化和舊版桌面應用程式虛擬化及部署至雲端。
 - **Azure 和 Microsoft 365 的安全和生產力：** 部署完整的智慧型解決方案，為每個人增強創意和協同作業。 移至 Microsoft 365 並取得 Office 365、Windows 10 和 Enterprise Mobility + Security。
 

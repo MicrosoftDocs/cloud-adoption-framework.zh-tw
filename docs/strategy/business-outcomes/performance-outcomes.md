@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cbd69491c35ee0c89c127e1090e609b7f3e35903
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 7324e81a2a9f15f6d5ed62755984f24d2ee3fb32
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885043"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012936"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果範例
 

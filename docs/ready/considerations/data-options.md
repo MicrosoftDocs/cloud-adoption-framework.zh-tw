@@ -7,12 +7,13 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5008cd58cc8c15291671a02b269891b6278d0470
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 1a3073ff71cc3dfee726249d7ec5dbcdb710abac
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997279"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013598"
 ---
 # <a name="review-your-data-options"></a>檢查您的資料選項
 
@@ -48,7 +49,7 @@ ms.locfileid: "94997279"
 
 下表說明一些常見的使用案例需求，以及用來處理這些需求的建議資料庫服務：
 
-| 狀況  | 資料服務 |
+| 案例  | 資料服務 |
 |---|---|
 | 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。 | [Azure Cosmos DB](/azure/cosmos-db/introduction) |
 | 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |

@@ -7,13 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: governance
-ms.openlocfilehash: dea15cfe0abfcfbb8a7771149a4a734dd0d278d9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 3079ac958e4620ec8589259b68668fdf1b89a197
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884805"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012782"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>建置雲端移轉的商業論證
 

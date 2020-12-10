@@ -7,13 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: governance
-ms.openlocfilehash: 6fe8d8c358681b7281c8f2eaba4239b4b9bb0969
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: ec906f1c54a2fa148694af2280d0dfa2fd46c411
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996871"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013054"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -98,7 +98,7 @@ Coverdell 透過 Azure 將其基礎結構現代化，以節省記錄成本。 Co
 
 - **範例：** 過去三年來，公司的資料中心目前 depreciating 為每年 _$X 美元_ 。 預期需要額外的 _$Y 美元_ 才能重新整理硬體下一年。 我們可以在每個月 _$Z 美元_ 的平均費率將資本支出轉換為營運費用模型，讓您能夠更妥善管理及責任操作技術的營運成本。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 深入瞭解 [靈活性成果](./agility-outcomes.md)。
 

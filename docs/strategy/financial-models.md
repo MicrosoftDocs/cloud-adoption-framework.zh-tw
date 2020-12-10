@@ -7,13 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: governance
-ms.openlocfilehash: 5280611c88caa3aa2ebb70f615eae8e7b5ff73e4
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: a56974c92f7368728db25a450c3ae2df49ac85fd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994440"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012663"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>建立雲端轉換的財務模型
 
@@ -104,7 +104,7 @@ ms.locfileid: "94994440"
 
 如果重新整理週期經過核准且已預算，則雲端轉換有助於消除該成本。 如果已規劃重新整理週期，但尚未核准，則雲端轉換可以避免資本支出。 這兩個降低都會新增至成本差異。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 深入瞭解 [雲端帳戶](./cloud-accounting.md) 處理模型。
 

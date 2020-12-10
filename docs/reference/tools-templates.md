@@ -4,15 +4,16 @@ description: 尋找可在雲端採用架構中使用的工具和範本，以協�
 author: JanetCThomas
 ms.author: janet
 ms.date: 04/14/2020
+ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.topic: article
-ms.openlocfilehash: 975a848cbc2afe9ded2d0dea56b69717f796c5d3
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 3cf80c711a207f19f00cd5e6d4ea37f36d92b721
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879169"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012306"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -20,24 +21,23 @@ ms.locfileid: "94879169"
 
 ## <a name="strategy"></a>策略
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
 
 ## <a name="plan"></a>計畫
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
 | [雲端採用方案產生器](../plan/template.md) | 使用範本將待處理專案部署至 [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) ，以將程式標準化。 |
-| [使用策略-規劃就緒-治理 ADO 範本](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | 使用範本將待處理專案部署至 [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) ，以將程式標準化。 |  
-
+| [使用策略-規劃就緒-治理 ADO 範本](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | 使用範本將待處理專案部署至 [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) ，以將程式標準化。 |
 
 ## <a name="ready"></a>就緒
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [就緒 &nbsp; 檢查清單](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | 使用此檢查清單來準備您的環境以供採用，包括準備您的第一個遷移登陸區域、將藍圖個人化，以及將其擴充。 |
 | [命名和標記慣例追蹤範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) | 記錄有關命名和標記標準的決策，以確保一致性並減少上線時間。 |
@@ -48,7 +48,7 @@ ms.locfileid: "94879169"
 
 ## <a name="govern"></a>治理
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [治理基準評估](https://cafbaseline.com) | 識別您目前的狀態與業務優先順序之間的差異，並取得適當的資源以利消除這些差異。 |
 | [CAF 基礎藍圖](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 輕量的初始治理基礎，以提供有關 Azure 治理工具的實際操作經驗。 |
@@ -62,14 +62,14 @@ ms.locfileid: "94879169"
 
 ## <a name="migrate"></a>移轉
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [資料中心遷移探索檢查清單](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | 請參閱此檢查清單，以取得有助於識別資料中心內工作負載、伺服器和其他資產的資訊。 您可以使用此資訊來協助規劃您的遷移。
 | [遷移範本](https://aka.ms/adopt/plan/generator) | 在 Azure DevOps 產生器中，我們建立了一些範本，可讓您用來協助簡化您的專案。 已針對 [WVD](https://azuredevopsdemogenerator.azurewebsites.net/?name=wvdmigration)、 [伺服器遷移](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)、 [SQL 遷移](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 和 [AKS 部署](https://azuredevopsdemogenerator.azurewebsites.net/?name=cafaks)建立範本。
 
 ## <a name="manage"></a>管理
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [Microsoft Azure 架構完善的檢閱](/assessments/?id=azure-architecture-review) | 這項線上評量將有助於定義工作負載的特定架構和作業選項。 |
 | [最佳 &nbsp; 做法 &nbsp; 來源程式 &nbsp; 碼](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | 此可部署的原始程式碼可補充並加速採用 Azure 伺服器管理服務的最佳做法。 使用此原始程式碼可快速啟用作業管理，並建立作業基準。 |
@@ -77,6 +77,6 @@ ms.locfileid: "94879169"
 
 ## <a name="organize"></a>組織
 
-| 資源 | 說明 |
+| 資源 | 描述 |
 |----------|-------------|
 | [跨小組 RACI 圖](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) | 下載並修改 RACI 試算表範本，以追蹤一段時間的組織結構決策。 |

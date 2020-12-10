@@ -2,18 +2,18 @@
 title: 商務的持續性結果和優點
 description: 瞭解雲端採用架構和雲端運算如何支援您減少碳排放量、更有效率地使用資源，並減少您的環境使用量。
 author: wayneme75
-ms.author: wayneme
+ms.author: brblanch
 ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 1e1a9ba6b40baab411c8ddb0d88711c86fb31be3
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 1ef8346bd63fe9d0f47dd1351f088f47e529bbaa
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447152"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012884"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->

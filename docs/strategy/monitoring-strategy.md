@@ -2,17 +2,18 @@
 title: 雲端監視策略
 description: 深入瞭解如何定義有效的雲端監視策略。
 author: mgoedtel
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b940ff5e1ffa4eeb07ffb7011faa09d24079676
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 9391f3188ef609df1b5063fd5f5de48b60eb7eb3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996820"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012680"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 

@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5490fe413db98fcccab94905e70d0ac601da9f5e
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 7e549cb26a56602a957866ae6173341c19777d99
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334624"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014839"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure 的應用程式移轉範例概觀
 

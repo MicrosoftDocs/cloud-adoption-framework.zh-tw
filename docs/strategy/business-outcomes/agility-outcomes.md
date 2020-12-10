@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 183c2a8ef8df5f72c51820c7a8ac7d593805f866
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 43a25396d4d866489b61df04784023f10dfef34f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994389"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012238"
 ---
 # <a name="examples-of-agility-outcomes"></a>敏捷結果範例
 
@@ -56,7 +57,7 @@ ms.locfileid: "94994389"
 
 - **範例：** 消費性包裝商品公司需要每年數百個資料庫叢集的建立和細分，以滿足業務的營運需求。 您可以快速布建內部部署虛擬主機，但復原虛擬資產的程式很慢，而且需要團隊花費很長的時間。 因此，舊版的內部部署環境會免于膨脹，而且幾乎不會跟上需求。 在雲端遷移之後，您可以更輕鬆地提供已編寫腳本的自我布建資源，並提供計費方法來計費。 這可讓企業在需要時儘快移動，但仍須負責其所需資源的成本。 在雲端中這麼做會將部署限制為僅限企業的預算。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 深入瞭解 [達成成果](./reach-outcomes.md)。
 

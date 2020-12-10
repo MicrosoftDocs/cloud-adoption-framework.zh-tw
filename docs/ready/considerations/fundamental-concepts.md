@@ -7,12 +7,13 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 603b4351eb312fd95726ca2539c2bcbca4a64c9b
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: db862e0329769f4093e1cd71f302e31f2aad01af
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995120"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013513"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -92,7 +93,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 - [Azure AD Connect 的拓撲](/azure/active-directory/hybrid/plan-connect-topologies)
 - [Microsoft 雲端供應項目的訂閱、授權、帳戶和租用戶](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 現在您已了解基本的 Azure 概念，您可以接著了解如何使用多個 Azure 訂用帳戶進行調整。
 

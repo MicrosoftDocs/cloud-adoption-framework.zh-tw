@@ -7,12 +7,13 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af2fbf5bde312fdc6f1230e5ee5138d28212f3b1
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 965a021ba2c70a75ef056cc9099c851ce9bc8bf2
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605399"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013326"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 

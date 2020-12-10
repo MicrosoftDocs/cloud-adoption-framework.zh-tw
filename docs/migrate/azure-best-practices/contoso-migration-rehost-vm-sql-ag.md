@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 952462547953c1ade7e426d6369f941484185162
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: think-tank
+ms.openlocfilehash: 2f549617ca5f6bb164d58a6cacf803fce9ac17a5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776137"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014193"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -109,7 +110,7 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
     ![顯示遷移程式圖表的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 在此案例中應該準備好的事項。
 
@@ -144,14 +145,14 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
     ![顯示 SQL VM SKU 的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/sql-vm-sku.png)
 
-1. 在**建立虛擬機器嚮導**的  >  **基本概念**中，他們會設定：
+1. 在 **建立虛擬機器嚮導** 的  >  **基本概念** 中，他們會設定：
 
     - Vm 的名稱： `SQLAOG1` 和 `SQLAOG2` 。
     - 因為機器是業務關鍵性的，所以請為 VM 磁片類型啟用 SSD。
     - 指定電腦認證。
     - 他們會將 Vm 部署在主要區域中， (`East US 2`) 在 `ContosoRG` 資源群組中。
 
-1. 就 **大小**而言，它們是從 `D2S v3` 兩個 vm 的實例開始。 稍後會視需要進行調整。
+1. 就 **大小** 而言，它們是從 `D2S v3` 兩個 vm 的實例開始。 稍後會視需要進行調整。
 1. 在 [ **設定**] 中，他們會執行下列動作：
 
     - 因為這些 Vm 是應用程式的重要資料庫，所以會使用受控磁片。
@@ -160,11 +161,11 @@ Contoso 管理員會將應用程式 Vm 遷移至 Azure。
 
       ![顯示新可用性設定組的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/sql-vm-settings.png)
 
-1. 在 **SQL Server 設定**中，它們會將虛擬網路的 SQL 連線能力限制在預設通訊埠1433上 (私用) 。 針對驗證，他們使用的認證與在網站上使用的 (`contosoadmin`) 相同。
+1. 在 **SQL Server 設定** 中，它們會將虛擬網路的 SQL 連線能力限制在預設通訊埠1433上 (私用) 。 針對驗證，他們使用的認證與在網站上使用的 (`contosoadmin`) 相同。
 
     ![顯示 SQL Server 設定的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/sql-vm-db.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 取得有關如何布建 [SQL SERVER VM](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)的說明。
 - 瞭解如何 [針對不同的 SQL Server sku 設定 vm](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)。
@@ -239,7 +240,7 @@ Contoso 管理員現在可以啟用 Always On 可用性群組：
 
 在啟用 Always On 可用性群組的情況下，Contoso 可以設定將會保護 SmartHotel360 資料庫的 Always On 可用性群組。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 閱讀雲端見證的相關資訊 [，並為其設定儲存體帳戶](/windows-server/failover-clustering/deploy-cloud-witness)。
 - 取得如何 [設定叢集和建立可用性群組](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)的指示。
@@ -298,7 +299,7 @@ Contoso 管理員會建立健康情況探查，讓負載平衡器能夠監視應
 
     ![顯示健康情況探查設定的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/nlb-probe.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 取得 [Azure Load Balancer](/azure/load-balancer/load-balancer-overview)的總覽。
 - 瞭解如何 [建立負載平衡器](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)。
@@ -348,7 +349,7 @@ Azure Migrate 需要存取 VMware 伺服器才能：
 1. 為了透過網際網路存取，他們會：
 
     - 在遷移之前，先在內部部署 VM 上啟用 RDP 或 SSH。
-    - 確定已為**公用**設定檔新增 TCP 和 UDP 規則。
+    - 確定已為 **公用** 設定檔新增 TCP 和 UDP 規則。
     - 檢查作業系統防火牆中是否允許 RDP 或 SSH。
 
 1. 為了透過站對站 VPN 存取，他們：
@@ -367,7 +368,7 @@ Azure Migrate 需要存取 VMware 伺服器才能：
    - 若是 Windows，在觸發遷移時，VM 上不應該有暫止的 Windows 更新。 如果有，Contoso 管理員將無法登入 VM，直到更新完成為止。
    - 遷移後，他們可以檢查 **開機診斷** 以查看 VM 的螢幕擷取畫面。 如果沒有作用，則應確認 VM 是否正在執行，並檢查這些 [疑難排解秘訣](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 瞭解如何 [準備 vm 以進行遷移](/azure/migrate/prepare-for-migration)。
 
@@ -377,46 +378,46 @@ Azure Migrate 需要存取 VMware 伺服器才能：
 
 完成探索之後，他們就可以開始將 VMware Vm 複寫至 Azure。
 
-1. 在 Azure Migrate 專案中，他們會移至 [**伺服器**  >  **Azure Migrate：伺服器遷移**] ** **，然後選取 [複寫]。
+1. 在 Azure Migrate 專案中，他們會移至 [**伺服器**  >  **Azure Migrate：伺服器遷移**] ****，然後選取 [複寫]。
 
     ![顯示 [複寫] 選項的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/select-replicate.png)
 
 1. 在 **[** 複寫  >  **來源設定**] 中，您的  >  **電腦虛擬化了嗎？** 他們會選取 **[是]，VMware vSphere**。
 
-1. 在 **內部部署設備**中，他們會選取已設定 Azure Migrate 設備的名稱，然後選取 **[確定]**。
+1. 在 **內部部署設備** 中，他們會選取已設定 Azure Migrate 設備的名稱，然後選取 **[確定]**。
 
     ![顯示 [來源設定] 索引標籤的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/source-settings.png)
 
-1. 在 **虛擬機器**中，他們會選取要複寫的機器。
+1. 在 **虛擬機器** 中，他們會選取要複寫的機器。
     - 如果 Contoso 系統管理員已執行 Vm 的評量，則可以將 VM 大小調整和磁片類型套用至評定結果 (premium/standard) 建議。 在 [ **從 Azure Migrate 評量匯入遷移設定？**] 中，他們會選取 [ **是]** 選項。
     - 如果他們未執行評量，或不想使用評量設定，則會選取 [ **否** ] 選項。
     - 如果他們選擇使用評量，他們會選取 VM 群組和評量名稱。
 
     ![顯示選取評定的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/select-assessment.png)
 
-1. 在 **虛擬機器**中，他們會視需要搜尋 vm，並檢查每個 vm 以進行遷移。 然後選取 **[下一步：目標設定]**。
+1. 在 **虛擬機器** 中，他們會視需要搜尋 vm，並檢查每個 vm 以進行遷移。 然後選取 **[下一步：目標設定]**。
 
-1. 在 [ **目標設定**] 中，他們會選取要遷移的訂用帳戶和目的地區域，並指定 Azure vm 在遷移後將位於其中的資源群組。 在 **虛擬網路**中，他們會選取 azure vm 在遷移後將加入的 azure 虛擬網路/子網。
+1. 在 [ **目標設定**] 中，他們會選取要遷移的訂用帳戶和目的地區域，並指定 Azure vm 在遷移後將位於其中的資源群組。 在 **虛擬網路** 中，他們會選取 azure vm 在遷移後將加入的 azure 虛擬網路/子網。
 
-1. 在 **Azure Hybrid Benefit**中，Contoso 管理員：
+1. 在 **Azure Hybrid Benefit** 中，Contoso 管理員：
 
     - 如果不想套用 Azure Hybrid Benefit，請選取 [ **否** ]。 然後選取 **[下一步]**。
     - 如果 Windows Server 電腦具有 active 軟體保證或 Windows Server 訂用帳戶的涵蓋範圍，請選取 **[是]** ，且他們想要將權益套用至它們所要遷移的機器。 然後選取 **[下一步]**。
 
-1. 在 **計算**中，他們會檢查 VM 名稱、大小、OS 磁片類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
+1. 在 **計算** 中，他們會檢查 VM 名稱、大小、OS 磁片類型和可用性設定組。 VM 必須符合 [Azure 需求](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)。
 
-    - **VM 大小：** 如果他們使用評量建議，則 [VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來挑選大小。 或者，他們可以選擇**AZURE VM 大小**的手動大小。
+    - **VM 大小：** 如果他們使用評量建議，則 [VM 大小] 下拉式清單會包含建議的大小。 否則，Azure Migrate 會根據 Azure 訂用帳戶中最接近的相符項來挑選大小。 或者，他們可以選擇 **AZURE VM 大小** 的手動大小。
     - **作業系統磁片：** 他們會為 VM 指定作業系統 (開機) 磁片。 OS 磁碟是具有作業系統開機載入器和安裝程式的磁碟。
     - **可用性設定組：** 如果 VM 在遷移後應位於 Azure 可用性設定組中，則會指定該集合。 此集合必須在為遷移所指定的目標資源群組中。
 
-1. 在 **磁片**中，它們會指定是否應將 VM 磁片複寫至 Azure。 然後，他們會在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型，然後選取 **[下一步]**。
+1. 在 **磁片** 中，它們會指定是否應將 VM 磁片複寫至 Azure。 然後，他們會在 Azure 中選取 (標準 SSD/HDD 或 premium 受控磁片) 的磁片類型，然後選取 **[下一步]**。
     - 它們可以將磁片從複寫中排除。
     - 如果將磁片排除，則在遷移後將不會出現在 Azure VM 上。
 
-1. 在 [ **檢查 + 開始**複寫] 中，他們會檢查設定。 然後 **，他們會選取 [** 複寫] 以啟動伺服器的初始複寫。
+1. 在 [ **檢查 + 開始** 複寫] 中，他們會檢查設定。 然後 **，他們會選取 [** 複寫] 以啟動伺服器的初始複寫。
 
 > [!NOTE]
-> 複寫設定可以在複寫開始之前的任何時間更新，以**管理**複寫  >  **機器**。 在複寫啟動後，就無法變更設定。
+> 複寫設定可以在複寫開始之前的任何時間更新，以 **管理** 複寫  >  **機器**。 在複寫啟動後，就無法變更設定。
 
 ## <a name="step-7-migrate-the-database-via-azure-database-migration-service"></a>步驟7：透過 Azure 資料庫移轉服務遷移資料庫
 
@@ -427,7 +428,7 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-sql-se
 - 使用 Premium 定價層來建立連接到虛擬網路的 Azure 資料庫移轉服務實例。
 - 確定實例可以透過虛擬網路存取遠端 SQL Server。 請確定 Azure 中允許的所有連入埠都能在虛擬網路層級、網路 VPN 和裝載 SQL Server 的電腦上 SQL Server。
 - 設定實例：
-  - 建立遷移專案。
+  - 建立移轉專案。
   - 將來源 (內部部署資料庫) 。
   - 選取目標。
   - 選取要遷移的資料庫。
@@ -455,7 +456,7 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-sql-se
 
     ![顯示 [建立可用性群組接聽程式] 選項的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/aog-3.png)
 
-1. 在 [選取資料同步處理]**** 中，他們啟用自動植入。 使用這個選項時，SQL Server 會自動為群組中的每個資料庫建立次要複本，所以 Contoso 不需要手動備份和還原它們。 驗證之後，會建立可用性群組。
+1. 在 [選取資料同步處理] 中，他們啟用自動植入。 使用這個選項時，SQL Server 會自動為群組中的每個資料庫建立次要複本，所以 Contoso 不需要手動備份和還原它們。 驗證之後，會建立可用性群組。
 
     ![顯示 Always On 可用性群組已建立的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/aog-4.png)
 
@@ -471,13 +472,13 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-sql-se
 
 ![顯示叢集接聽程式的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/cluster-listener.png)
 
-### <a name="verify-the-configuration"></a>驗證組態
+### <a name="verify-the-configuration"></a>驗證設定
 
 在所有設定完成後，Contoso 此時在使用移轉後資料庫的 Azure 中已有可運作的可用性群組。 系統管理員會藉由連接到 SQL Server Management Studio 中的內部負載平衡器來驗證設定。
 
 ![顯示內部負載平衡器連線的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-ag/ilb-connect.png)
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解如何建立[可用性群組](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)和接聽[程式。](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)
 - 手動[設定叢集以使用負載平衡器 IP 位址](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)。
@@ -531,7 +532,7 @@ Contoso 管理員會執行快速測試容錯移轉，然後遷移 VM。
 1. 更新檔案並加以儲存後，就會重新開機 IIS `WEBVM` 。 它們會 `iisreset /restart` 從命令提示字元使用。
 1. 重新開機 IIS 之後，應用程式現在會使用在受控實例上執行的資料庫。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 - 瞭解如何 [執行測試容錯移轉](/azure/site-recovery/tutorial-dr-drill-azure)。
 - 瞭解如何 [建立復原方案](/azure/site-recovery/site-recovery-create-recovery-plans)。
