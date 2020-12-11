@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: e2e22fc5b77aec9e0d07bb84d514ea940b1723ba
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 90bea6bbf47f0447073947633e5038691ebd3831
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605637"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023271"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>軟體定義網路：雲端 DMZ
 

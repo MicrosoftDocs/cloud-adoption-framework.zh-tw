@@ -2,19 +2,19 @@
 title: 建議的角色型存取控制
 description: 瞭解如何分隔小組內的職責，並授與角色型存取控制，讓使用者和群組可以執行其工作。
 author: alexbuckgit
+manager: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-manager: BrianBlanchard
-ms.custom: virtual-network
-ms.openlocfilehash: c28fabb1f8514c0eee3ac2a6b9c21535775c2787
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal, virtual-network
+ms.openlocfilehash: 7a425da0ff7378d7da501b4e6ff85d0efe80fd10
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605297"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024121"
 ---
 # <a name="role-based-access-control"></a>角色型存取控制
 

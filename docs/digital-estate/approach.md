@@ -7,13 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: governance
-ms.openlocfilehash: 88f0f56507290666aead6e81e10d0a50f7dcae61
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 326498d72d9064cf7cbe27bd9e1e1ce93077eaec
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774063"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022948"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>數位資產規劃方法
 

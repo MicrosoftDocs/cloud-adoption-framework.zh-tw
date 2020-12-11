@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2f5c389180909031b002f836d83489411ac13b1e
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: a61af9ba10bf99168aa2cc389e9a12930745101c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994457"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022370"
 ---
 <!-- docutune:casing IR -->
 
@@ -299,7 +300,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 | --- | --- |
 | <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 卓越或中央 IT 團隊的雲端中心 |
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 本指南中的步驟可協助您實行一致管理整個企業安全性風險所需的策略、控制項、流程、技能和文化特性。
 

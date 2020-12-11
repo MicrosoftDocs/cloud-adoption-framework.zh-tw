@@ -3,16 +3,17 @@ title: 瞭解雲端操作功能
 description: 瞭解雲端作業功能的構成，並適當地為您的小組工作。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 5762688ddd367e6f01e7276d9d9079aaf27f56da
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 5a5d279ea5da00c3fa9b2f2ad311cf528c21b0af
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569972"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024733"
 ---
 # <a name="cloud-operations-functions"></a>雲端作業功能
 

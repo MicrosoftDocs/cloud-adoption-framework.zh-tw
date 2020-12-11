@@ -7,12 +7,13 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ed9028167025c161f3a7eab8b3d73ad9c9887861
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 110afe2e3e67b42ba396871584dbfbde1962ccbb
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996837"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023883"
 ---
 # <a name="first-cloud-adoption-project"></a>第一個雲端採用專案
 
@@ -66,7 +67,7 @@ ms.locfileid: "94996837"
 - **效能實驗室：** 當您在實驗室設定中需要高效能的效能時，請使用雲端快速且符合成本效益的方式，在短時間內布建這些實驗室。
 - **資料平臺：** 使用可調整的計算來建立 data lake，以供分析、報告或機器學習工作負載使用，並使用傾印/還原方法或資料移轉服務遷移至受控資料庫。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 瞭解 [平衡競爭優先順序](./balance-competing-priorities.md)的策略。
 

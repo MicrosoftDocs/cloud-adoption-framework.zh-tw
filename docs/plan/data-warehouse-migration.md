@@ -7,12 +7,13 @@ ms.date: 06/24/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4797f40f4353367a99ef68800becf23127c0c203
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 7992b8aab26b5d00d7f9586b172f5ad0cb0f20e6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997449"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024512"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -233,6 +234,6 @@ ms.locfileid: "94997449"
 - 先考慮遷移資料超市的策略，再接著將資料倉儲作為資料超市來源的資料倉儲。 這是因為它可進行累加式遷移，讓它更容易管理，而且可以根據業務需求來排定遷移的優先順序。
 - 在遷移之前，考慮使用資料虛擬化來簡化您目前的資料倉儲架構，例如，將資料超市取代為虛擬資料超市，讓您可以消除資料超市的實體資料存放區和 ETL 作業，而不會在遷移前遺失任何功能。 這樣做會減少要遷移的資料存放區數量、減少資料複本、降低擁有權的總成本，以及提升靈活性。 這需要在遷移您的資料倉儲之前，先從實體切換至虛擬資料超市。 在許多方面，您可以在遷移前考慮這項資料倉儲現代化步驟。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 如需有關資料倉儲遷移的詳細資訊，請從 Informatica 參加 [Azure 上的虛擬雲端資料倉儲現代化研討會](https://now.informatica.com/Microsoft_CDW_Workshops.html) 。

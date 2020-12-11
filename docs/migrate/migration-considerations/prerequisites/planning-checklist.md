@@ -1,36 +1,37 @@
 ---
 title: 遷移環境規劃檢查清單
-description: 請先使用遷移環境規劃檢查清單來驗證環境是否已就緒，再進行遷移。
+description: 您可以使用「遷移環境規劃」檢查清單來驗證環境是否已就緒，再進行遷移。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe42f3cc8e2003dd73dc191225173d2270d53190
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.custom: internal
+ms.openlocfilehash: 19db2f286b6b8753a5b9f6f438daf8caa3135a42
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235325"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024886"
 ---
-# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境是否就緒
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境的就緒程度
 
 在移轉程序的初始步驟中，您必須在雲端建立正確的環境，以接收、裝載及支援資產的移轉。 本文將列載在進行移轉前須在目前的環境中驗證的事項。
 
-下列檢查清單會與雲端採用架構的[就緒方法](../../../ready/index.md)中的指引一致。 請參閱這一節，以取得執行下列任何作業的相關指引。
+下列檢查清單與雲端採用架構的 [就緒方法](../../../ready/index.md) 中的指引相符。 請參閱這一節，以取得執行下列任何作業的相關指引。
 
 ## <a name="effort-type-assumption"></a>採用的工作類型
 
-本文和檢查清單均採用_重新裝載_或_雲端轉換_方法來進行雲端移轉。
+本文和檢查清單均採用 _重新裝載_ 或 _雲端轉換_ 方法來進行雲端移轉。
 
 ## <a name="governance-alignment"></a>控管一致性
 
-關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應該瞭解這項遷移功能是否會在有限的治理、完全受控的環境處理站，或介於之間進行某種變化的單一環境中進行登陸。 如需治理調整的其他指引，請參閱[管理方法](../../../govern/index.md)。
+關於任何可供移轉的環境，首要決策就是控管一致性的選擇。 移轉基礎的控管一致性是否已達成相關共識？ 雲端採用小組至少應瞭解這項遷移是在具有有限治理的單一環境、完全受控的環境處理站，還是介於兩者之間的部分變化。 如需治理調整的其他指引，請參閱 [管理方法](../../../govern/index.md)。
 
 ## <a name="operations-management-alignment"></a>作業管理對齊
 
-將資產遷移至雲端之前，請務必瞭解與作業管理有關的任何需求或限制。 遷移環境至少應包含符合作業基準所需的任何需求。 如需作業對齊的其他指引，請參閱[管理方法](../../../manage/index.md)。
+將資產遷移至雲端之前，請務必瞭解有關作業管理的任何需求或限制。 遷移環境至少應包含符合作業基準所需的任何執行。 如需作業對齊的其他指引，請參閱 [管理方法](../../../manage/index.md)。
 
 ## <a name="cloud-readiness-implementation"></a>實作雲端整備
 
@@ -38,7 +39,7 @@ ms.locfileid: "86235325"
 
 如果您打算從一開始就讓移轉與雲端控管策略保持一致，您必須套用[雲端治理的五個專業領域](../../../govern/governance-disciplines.md)，以利傳達可讓雲端環境符合整體公司需求的原則、工具鏈和強制執行機制的決策。 請參閱雲端採用架構的[可採取動作的控管設計指南](../../../govern/guides/index.md)，以取得如何使用 Azure 服務來實作此模型的範例。
 
-如果您的初始移轉並未與更廣泛的雲端控管策略緊密保持一致，則仍需要管理組織、存取和基礎結構規劃的一般問題。 如需這些雲端就緒決策的協助，請參閱[Azure 設定指南](../../../ready/azure-setup-guide/index.md)。
+如果您的初始移轉並未與更廣泛的雲端控管策略緊密保持一致，則仍需要管理組織、存取和基礎結構規劃的一般問題。 請參閱 [Azure 設定指南](../../../ready/azure-setup-guide/index.md) ，以取得這些雲端準備決策的協助。
 
 > [!CAUTION]
 > 強烈建議您針對初始工作負載移轉以外的任何移轉制定控管策略。
@@ -55,7 +56,7 @@ ms.locfileid: "86235325"
 
 ### <a name="resource-governance"></a>資源管理
 
-在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 雲端治理小組應該在進行遷移之前，定義和要求在治理工具上執行最基本的可行產品 (MVP) 。
+在移轉之前，應先決定用來控管資源的相關工具。 這些工具不需要完全實作，但應選取並測試方向。 雲端治理小組應該在遷移前，定義並要求將最基本的可行產品 (MVP) ，以進行治理工具。
 
 ## <a name="network"></a>網路
 

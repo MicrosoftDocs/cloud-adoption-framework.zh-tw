@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 493a57feb711e6e3303d146c8e225afa78689f49
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: bcb40b4f698ba5b0aa0337303a1868e7b5561f16
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996616"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025073"
 ---
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>複寫在移轉程序中扮演什麼角色？
 
@@ -44,7 +45,7 @@ ms.locfileid: "94996616"
 - **磁碟漂移的累計效果。** 從複寫的時間點，到資產升階點至生產環境，來源與目的地二進位檔都必須保持同步。 _二進位檔_ 的漂移會耗用額外的頻寬，因為二進位檔的所有變更都必須定期複寫。 在同步處理期間，所有的二進位檔漂移都必須納入移轉儲存體總計的計算中。 將資產升階至生產環境所需的時間愈久，就會產生愈多累計漂移。 同步處理的資產愈多，耗用的頻寬就越多。 為了讓每項資產都處於同步狀態，可用移轉頻寬總計會略為減損。
 - **規劃業務變更的時間。** 如先前所述，同步處理時間對遷移速度有累積的負面影響。 訂出移轉待處理項目的優先順序，並事先備妥[業務變更方案](../optimize/business-change-plan.md)，對於移轉的速度是很重要的。 在移轉的過程中，最重要的業務和技術調整測試，就是升階的步調。 資產升階到生產環境的速度愈快，磁碟漂移對頻寬的影響也愈低，且可為下一個工作負載的複寫配置的頻寬/時間就愈多。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 複寫完成後，即可開始[預備活動](./stage.md)。
 

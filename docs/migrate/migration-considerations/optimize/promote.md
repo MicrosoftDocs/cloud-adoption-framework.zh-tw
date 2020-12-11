@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7082380e7b64160071f4304bc5ca3a4d341df24b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 1b93b3c3e500c9ae7291c8d0632ea14f9344241b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884669"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024988"
 ---
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>要將移轉後的資源升階至生產環境需要什麼？
 
@@ -26,7 +27,7 @@ ms.locfileid: "88884669"
 
 - **[評定](../assess/index.md)：** 已評估工作負載的雲端相容性。
 - **[架構設計師](../assess/architect.md)：** 工作負載的結構已正確設計，可配合所選的雲端提供者。
-- 複寫** [ ](../migrate/replicate.md)：** 資產已複寫至雲端環境。
+- 複寫 **[](../migrate/replicate.md)：** 資產已複寫至雲端環境。
 - **[階段](../migrate/stage.md)：** 已在雲端環境的預備實例中還原複寫的資產。
 - **[商務測試](./business-test.md)：** 工作負載已由商務使用者經過完整的測試和驗證。
 - **[商務變更計畫](./business-change-plan.md)：** 企業已依據生產升級的方式，為變更進行了計畫。這應該包括使用者採用方案、商務程式的變更、需要訓練的使用者，以及各種活動的時間軸。

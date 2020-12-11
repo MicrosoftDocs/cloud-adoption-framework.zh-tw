@@ -7,12 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 06cd833f95e3c0403371141cfaaf6ef171065085
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 3bfb24c086fba3f2be8f7e0d1151f087f0848086
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995902"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024920"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -83,7 +84,7 @@ ms.locfileid: "94995902"
 - 工作規模。
 - 工作時間。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在小組之間瞭解程式之後，就可以複習技術必要條件。 [移轉環境規劃檢查清單](./planning-checklist.md)有助於確保技術基礎已準備好進行移轉。
 

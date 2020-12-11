@@ -7,17 +7,17 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 263ce9684164c97f903825080946be90999e0a4c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 1b4e64f2392be617391de88d4c369d362263b5ee
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884873"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024546"
 ---
 # <a name="align-responsibilities-across-teams"></a>協調小組間的職責
 
-瞭解如何藉由開發跨小組的矩陣，識別 _負責任、負責任、諮詢及告知 (RACI) _ 合作物件，以協調各小組的責任。 本文提供「 [建立小組結構](./organization-structures.md)」中所述之組織結構的範例 RACI 矩陣：
+瞭解如何藉由開發跨小組的矩陣，識別 _負責任、負責任、諮詢及告知 (RACI)_ 合作物件，以協調各小組的責任。 本文提供「 [建立小組結構](./organization-structures.md)」中所述之組織結構的範例 RACI 矩陣：
 
 - [僅限雲端採用小組](#cloud-adoption-team-only)
 - [MVP 最佳作法](#best-practice-minimum-viable-product-mvp)
@@ -30,8 +30,8 @@ ms.locfileid: "88884873"
 
 本文中的範例會指定下列 RACI 結構：
 
-- _負責_某項功能的團隊。
-- _負責_結果的團隊。
+- _負責_ 某項功能的團隊。
+- _負責_ 結果的團隊。
 - 規劃期間應 _諮詢_ 的團隊。
 - 當工作完成時應 _通知_ 的團隊。
 

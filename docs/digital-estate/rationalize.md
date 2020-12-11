@@ -7,13 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: governance
-ms.openlocfilehash: 6754c1b9677319aba846e09e08ef83d233147479
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: d84d4da259db88bff110c1a6825252359d7ffcfd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881235"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022778"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -121,7 +121,7 @@ ms.locfileid: "88881235"
 
 雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 這種共同作業建立了一個建立和測試定性分析準則的控制機會。 較小型的人口會讓您有機會調查受影響的使用者，並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素，請參閱 [五個合理化 Rs](./5-rs-of-rationalization.md)中的特定合理化目標。
 
-### <a name="migration"></a>遷移
+### <a name="migration"></a>移轉
 
 雲端採用小組可以與持續合理化平行地開始遷移小型工作負載，以在下列關鍵領域中擴展學習：
 

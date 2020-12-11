@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8672ff3f25bef1bacb0019aaba54db3459d160cb
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: a2e79e8997d9a4e9aa9984ca62a48706d39e2858
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775644"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022540"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>開始使用：在數位轉型期間提供卓越的營運
 
@@ -116,7 +117,7 @@ ms.locfileid: "90775644"
 
 卓越的營運需要有嚴格的可靠性、效能、安全性和成本優化方法。 使用本系列中的其餘指引，透過一致的自動化方法來實行這些原則。
 
-- **成本優化：** 使用快速入門手冊來[管理企業成本](./manage-costs.md)，以持續優化營運成本
+- **成本優化：** 使用快速入門手冊來 [管理企業成本](./manage-costs.md)，以持續優化營運成本
 - **安全性：** 使用 [跨組合實行安全性](./security.md)的使用者入門指南，將企業安全性整合在各組合中，以降低風險。
 - **效能管理：** 使用 [跨企業效能管理](./performance.md)的使用者入門指南，確保 IT 資產效能支援商務程式。
 - **可靠性：** 藉由使用執行控制項的使用者入門指南 [來建立可靠性，以](./reliability.md)提升可靠性並減少業務中斷。

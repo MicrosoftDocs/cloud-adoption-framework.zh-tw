@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: dac79c954a72aeb72002a5583dce64c85a065fb1
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 1b030226ccbf36a5960ec5bae173534bb5aa1623
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604983"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021894"
 ---
 # <a name="cost-management-discipline-improvement"></a>成本管理專業領域改進
 

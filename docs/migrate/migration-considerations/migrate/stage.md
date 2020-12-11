@@ -1,22 +1,23 @@
 ---
 title: 移轉期間的預備活動
-description: 使用適用于 Azure 的雲端採用架構，瞭解遷移期間所需的預備活動和相關聯的交付專案。
+description: 使用適用于 Azure 的雲端採用架構，瞭解在遷移期間所需的預備活動和相關聯的交付專案。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 72f793383bd525b48f3f8ae30cd6e0d470ddba64
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.custom: internal
+ms.openlocfilehash: 13f2c81dab13aa0bebc00396b357213dc024fa85
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88193294"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025056"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>了解移轉期間的預備活動
 
-如升級模型文章所述，「預備」__ 是資產遷移至雲端的時間點。 不過，他們尚未準備好升級至生產環境。 這通常是移轉的遷移程序最終步驟。 在預備過後，工作負載便會由 IT 營運或雲端營運小組管理，以便讓其準備好用於生產環境。
+如升級模型文章所述，「預備」是資產遷移至雲端的時間點。 不過，它們尚未準備好升級至生產環境。 這通常是移轉的遷移程序最終步驟。 在預備過後，工作負載便會由 IT 營運或雲端營運小組管理，以便讓其準備好用於生產環境。
 
 ## <a name="deliverables"></a>交付項目
 

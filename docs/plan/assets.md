@@ -7,12 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d494bad6c5a64972ba317411ca2fcc4ab92ef857
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 7210c175ad5c3d77c0f42142b928a318bbc54a0d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574562"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024529"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對齊優先順序的工作負載
 

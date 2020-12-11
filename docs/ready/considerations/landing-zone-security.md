@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8640ea8c6e9e346502382c329f506ab5b933b609
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: e79921cfe0752b77bf349d9976fdb1c3692d2ae9
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997228"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023696"
 ---
 # <a name="improve-landing-zone-security"></a>改善登陸區域安全性
 
@@ -37,7 +38,7 @@ ms.locfileid: "94997228"
 
 ![雲端登陸區域的測試導向開發流程](../../_images/ready/test-driven-development-process.png)
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 瞭解如何 [改善登陸區域作業](./landing-zone-operations.md) 以支援重要的應用程式。
 

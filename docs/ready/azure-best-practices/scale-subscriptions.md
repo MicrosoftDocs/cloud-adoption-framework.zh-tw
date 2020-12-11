@@ -7,12 +7,13 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5599c735c9dbb5acd876ea020435a11d72565ca4
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.custom: internal
+ms.openlocfilehash: 4d089b89d3bc7fe08cfa07b3573084c7b2cf342e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038596"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024342"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶以調整 Azure 環境
 
@@ -37,9 +38,9 @@ ms.locfileid: "96038596"
 您的業務優先順序可能會讓您建立額外的訂用帳戶。 這些優先順序包括：
 
 - 創新
-- 遷移
+- 移轉
 - 成本
-- 作業
+- Operations
 - 安全性
 - 控管
 

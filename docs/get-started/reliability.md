@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ef09f13acdcc29e3314e2684a307efba788120c
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: a42115e034e0f737e05feedad44cd5c0c777317f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775593"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022336"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：使用正確的控制項提升可靠性
 
@@ -51,7 +52,7 @@ ms.locfileid: "90775593"
   - 作業[合規性](../manage/considerations/operational-compliance.md)：中斷的最高百分比，通常是來自資源設定或不佳維護實務的變更。 遵循 [Azure 伺服器管理指南](../manage/azure-server-management/index.md) 來執行雲端原生工具，以管理修補和資源設定的變更。
   - [保護和](../manage/considerations/protect.md)復原：任何平臺上的中斷都是不可避免的。 當發生中斷時，請使用 [備份和復原解決方案](../manage/azure-management-guide/protect-recover.md) 來做好準備，以將持續時間降到最低。
 - [Advanced 作業](../manage/design-principles.md)：使用管理基準做為您的 [業務協調](../manage/considerations/business-alignment.md) 對話的基礎。 它可協助您清楚地討論 [重要性](../manage/considerations/criticality.md)、 [業務衝擊](../manage/considerations/impact.md)和 [營運承諾](../manage/considerations/commitment.md)。 企業調整有助於量化和驗證要求的 [增強基準](../manage/azure-management-guide/enhanced-baseline.md)、特定 [技術平臺](../manage/azure-management-guide/workload-specialization.md)的管理，或 [工作負載特定的作業](../manage/azure-management-guide/platform-specialization.md)。
-- **引導架構審核：** 工作負載層級的架構變更可能需要符合作業需求。 [Microsoft Azure 架構良好的架構](/azure/architecture/framework/cost/tradeoffs)，並[Microsoft Azure 架構良好的審查](/assessments?id=azure-architecture-review)，可協助引導這些交談與特定工作負載的技術擁有者。
+- **引導架構審核：** 工作負載層級的架構變更可能需要符合作業需求。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft Azure Well-Architected 評論](/assessments?id=azure-architecture-review)可協助引導這些交談與特定工作負載的技術擁有者。
 
 <br>
 
@@ -72,7 +73,7 @@ ms.locfileid: "90775593"
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，並針對重要性的標記特別強調。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理專業領域，請遵循「 [成本管理專業領域改進](../govern/guides/complex/cost-management-improvement.md) 」一文中的指導方針。 將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理專業領域，請遵循「 [成本管理專業領域改進](../govern/guides/complex/cost-management-improvement.md) 」一文中的指導方針。 將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) ] 區段。
 
 > [!NOTE]
 > **與其他小組開始可靠性合作的步驟：** 整個雲端採用生命週期的各種決策可能會對可靠性有直接的影響。 下列步驟概述在 IT 組合之間提供一致的可靠性所需的合作關係和支援工作。

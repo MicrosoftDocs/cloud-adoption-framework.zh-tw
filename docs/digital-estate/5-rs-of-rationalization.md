@@ -7,13 +7,13 @@ ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: governance
-ms.openlocfilehash: e35ec6e6db843e352f05dc6904cd1245ea5bd822
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 1b8c21889f381436d4e9126c580ab13a9b3338c8
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774217"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022965"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 

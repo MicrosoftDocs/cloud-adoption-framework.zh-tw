@@ -3,16 +3,17 @@ title: 雲端安全性狀態管理的功能
 description: 瞭解雲端安全性狀態管理的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 96bb73571c0f876f90f2e3132cb8751232bae653
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 77ad129f12e859c0530aaedf351df0374f8b96ec
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996310"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024563"
 ---
 <!-- docsTest:casing TVM -->
 
@@ -49,6 +50,6 @@ ms.locfileid: "94996310"
 - 安全性架構和作業
 - Audit 小組
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 複習雲端安全性 [事件準備](./cloud-security-incident-preparation.md)的功能。

@@ -7,13 +7,13 @@ ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: f270e366cf180728ac52e8ad90dfa6e7cb1ab051
-ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
+ms.custom: internal, readiness, fasttrack-edit
+ms.openlocfilehash: 29b6f4d8528e3f8ecd531f33fce791d07cb9f26c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96772492"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024359"
 ---
 # <a name="develop-your-naming-and-tagging-strategy-for-azure-resources"></a>開發 Azure 資源的命名和標記策略
 

@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5b23a9b0e62b59cda914a6733d15f76157c5f0eb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: d4a427c01b58b0d319f4634cf9288d6741908404
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883989"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022217"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>開始使用：建立雲端策略小組
 
@@ -25,7 +26,7 @@ ms.locfileid: "88883989"
 ![開始打造雲端策略小組](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> 本文討論在雲端採用過程中的 *策略推動*者，這是一個重要的玩家。 角色通常是由專案經理、架構設計人員或顧問所持有。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立一致，並讓小組與商務目標保持一致。 策略推動者通常是最負責雲端採用旅程成功的人。
+> 本文討論在雲端採用過程中的 *策略推動* 者，這是一個重要的玩家。 角色通常是由專案經理、架構設計人員或顧問所持有。 當雲端策略小組形成並開始使用時，策略主持者會暫時負責建立一致，並讓小組與商務目標保持一致。 策略推動者通常是最負責雲端採用旅程成功的人。
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>步驟1：判斷是否需要雲端策略小組
 

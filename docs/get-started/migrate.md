@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3df2987e8580b283766b672f2377c3388923fe21
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: 30da56d95560a90adf862f56aaf723ffe534e106
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108255"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022557"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -227,10 +228,10 @@ ms.locfileid: "91108255"
 
 - 部署管理基準。
 - 完成 operations management 活頁簿。
-- 找出需要 Microsoft Azure 架構良好審核評量的任何工作負載。
+- 找出需要 Microsoft Azure Well-Architected 評論評量的任何工作負載。
 - 時間軸風險：
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
-  - 完成 Microsoft Azure 架構良好的審核評定：每個應用程式預估一小時。
+  - 完成 Microsoft Azure Well-Architected 審核評定：每個應用程式預估一小時。
 
 <br>
 

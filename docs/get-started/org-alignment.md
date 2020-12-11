@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 99d4ed4ffd2e627eedbd2c0c78f2306b80a0a629
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: fc5c44b2197dca8eba6f88a87578e8284ba6fa95
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884278"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022387"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：讓您的組織保持一致
 
@@ -52,7 +53,7 @@ ms.locfileid: "88884278"
 判斷下列模型如何符合您的組織結構：
 
 - **組織的圖表對齊方式：** 管理階層、管理員責任和員工的調整會與組織結構一致。
-- **虛擬小組：** 管理結構和組織結構會保持不變。 相反地，將會建立虛擬小組，並負責處理所需的功能。
+- **虛擬團隊：** 管理結構和組織圖會保持不變。 相反地，將會建立虛擬小組，並負責處理所需的功能。
 - **混合模型：** 更常見的情況是，組織結構與虛擬團隊的組合組合將需要提供雲端轉換目標。
 
 ## <a name="step-4-establish-team-structures"></a>步驟4：建立小組結構

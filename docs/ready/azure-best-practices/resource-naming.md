@@ -7,13 +7,13 @@ ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: 6c600d57ca14610e16747565a2a4536d31a4d150
-ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
+ms.custom: internal, readiness, fasttrack-edit
+ms.openlocfilehash: 40c0754c9f5085a0735b74b893424428a63fcc3c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96772509"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024393"
 ---
 # <a name="define-your-naming-convention"></a>定義您的命名慣例
 
@@ -74,7 +74,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-general"></a>範例名稱：一般
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **管理群組** | 營業單位及/或 <br> 環境類型 | _mg- \<business unit> [- \<environment type> ]_ <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
 | **訂用帳戶** | 帳戶/企業合約 | _\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>_ <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
@@ -84,7 +84,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-networking"></a>範例名稱：網路
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **虛擬網路** | 資源群組 | _vnet\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
 | **子網路** | 虛擬網路 | _snet-\<subscription>-\<region>-\<###>_ <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
@@ -102,7 +102,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-compute-and-web"></a>範例名稱：計算和 Web
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **虛擬機器** | 資源群組 | _Vm\<policy name or app name>\<###>_ <br><br> <li> `vmnavigator001` <li> `vmsharepoint001` <li> `vmsqlnode001` <li> `vmhadoop001` |
 | **VM 儲存體帳戶** | 全球 | _stvm\<performance type>\<app name or prod name>\<region>\<###>_ <br><br> <li> `stvmstcoreeastus2001` <li> `stvmpmcoreeastus2001` <li> `stvmstplmeastus2001` <li> `stvmsthadoopeastus2001` |
@@ -114,7 +114,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-databases"></a>範例名稱：資料庫
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **Azure SQL Database 伺服器** | 全球 | _.sql\<app name>-\<environment>_ <br><br> <li> `sql-navigator-prod` <li> `sql-emissions-dev` |
 | **Azure SQL 資料庫** | Azure SQL Database | _sqldb\<database name>-\<environment>_ <br><br> <li> `sqldb-users-prod` <li> `sqldb-users-dev` |
@@ -127,16 +127,16 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-storage"></a>範例名稱：儲存體
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **儲存體帳戶 (一般用途)** | 全球 | _st\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
+| **儲存體帳戶 (一般用途)** | 全球 | _聖\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
 | **儲存體帳戶 (診斷記錄)** | 全球 | _stdiag\<first 2 letters of subscription name and number>\<region>\<###>_ <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
 | **Azure StorSimple** | 全球 | _ssimp\<app name>-\<environment>_ <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
 | **Azure Container Registry** | 全球 | _Acr\<app name>\<environment>\<###>_ <br><br> <li> `acrnavigatorprod001` |
 
 ## <a name="example-names-ai-and-machine-learning"></a>範例名稱： AI 和機器學習
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **Azue 認知搜尋** | 全球 | _srch-\<app name>-\<environment>_ <br><br> <li> `srch-navigator-prod` <li> `srch-emissions-dev` |
 | **Azure 認知服務** | 資源群組 | _齒輪\<app name>-\<environment>_ <br><br> <li> `cog-navigator-prod` <li> `cog-emissions-dev` |
@@ -144,7 +144,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-analytics-and-iot"></a>範例名稱：分析和 IoT
 
-| 資產類型 | 範圍 | 格式和範例 |
+| 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
 | **Azure Data Factory** | 全球 | _放下\<app name>\<environment>_ <br><br> <li> `adf-navigator-prod` <li> `adf-emissions-dev` |
 | **Azure 串流分析** | 資源群組 | _asa\<app name>-\<environment>_ <br><br> <li> `asa-navigator-prod` <li> `asa-emissions-dev` |
@@ -159,7 +159,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 ## <a name="example-names-integration"></a>範例名稱：整合
 
-| 資產類型 | 範圍 | 格式和範例|
+| 資產類型 | 影響範圍 | 格式和範例|
 |--|--|--|
 | **服務匯流排** | 全球 | _sb- \<app name> - \<environment> . servicebus.windows.net_ <br><br> <li> `sb-navigator-prod` <li> `sb-emissions-dev` |
 | **服務匯流排佇列** | 服務匯流排 | _sbq-\<query descriptor>_ <br><br> <li> `sbq-messagequery` |

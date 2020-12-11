@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7a3e3eb6feec8fde3749e3204519f1859f19b280
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: bb9bb3701f2f185fdc85e8c0f6863cd8852dc33f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108209"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022302"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>開始使用：建立雲端採用小組
 
@@ -43,7 +44,7 @@ ms.locfileid: "91108209"
 
 - 判斷小組是否更適合遷移方法或創新方法。
 - 每個方法都有四個步驟的上線體驗，可協助小組瞭解取得該工作所需的工具和流程。 以小組的方式投入時間，以瞭解您在早期反覆運算中最可能需要的工具和案例。
-- 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI) * 合作物件的跨小組，以協調各小組的責任。 更新貴公司的 [RACI 範本](../../organize/raci-alignment.md) ，協助其他人瞭解團隊的身分，以及小組將著重在提供的方法。
+- 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI)* 合作物件的跨小組，以協調各小組的責任。 更新貴公司的 [RACI 範本](../../organize/raci-alignment.md) ，協助其他人瞭解團隊的身分，以及小組將著重在提供的方法。
 
 **支援交付完成的指導方針：**
 

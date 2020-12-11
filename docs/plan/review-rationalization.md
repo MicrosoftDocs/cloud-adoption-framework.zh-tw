@@ -7,12 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e40a568f92276d3089ec2e8c1324710e82029245
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 9ffb9d920296912fbfa68f0444eaa24b4976ccdd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997432"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024461"
 ---
 # <a name="review-rationalization-decisions"></a>檢閱合理化決策
 
@@ -66,7 +67,7 @@ ms.locfileid: "94997432"
 
 針對具有多個不同專案的大型、複雜採用方案，請考慮更新反復專案路徑。 變更區域路徑，只會讓指派給該區域路徑的小組看到工作負載。 這項變更可減少可見工作的數目，讓雲端採用小組更輕鬆地工作。 但是，它會增加專案管理程式的複雜性。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 [建立反覆運算和發行計畫](./iteration-paths.md) 以開始規劃工作。
 

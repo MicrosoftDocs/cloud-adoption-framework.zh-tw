@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b6ec6b88d68cbf57dd940abf3998bac5fcbafaa3
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: e11b824486c43d264da41a590d316b029a2a8c65
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995936"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024852"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>為技術複雜度做準備：敏捷式變更管理
 
@@ -120,7 +121,7 @@ INVEST 是許多敏捷式方法中常見的縮略字，用於撰寫使用者劇�
 - **作業核准。** 從應用程式擁有者和負責在部署後管理工作負載的 IT 作業人員進行驗證作業準備的簽核。
 - **架構核准。** 由工作負載擁有者和雲端採用小組簽核，以驗證裝載每個資產所需的任何架構變更。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在建立變更管理方法之後，就可以解決最後的必要條件、[遷移待](./migration-backlog-review.md)處理專案審查
 

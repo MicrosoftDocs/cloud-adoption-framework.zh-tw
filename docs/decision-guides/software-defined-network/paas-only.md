@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: b61f6e2c877442824891c947df6e1cebaaad202b
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 951d6a958cd780ede0d79d78f6652df8f6409f2e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605654"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023152"
 ---
 # <a name="software-defined-networking-paas-only"></a>軟體定義網路：僅限 PaaS
 

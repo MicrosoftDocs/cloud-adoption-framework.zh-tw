@@ -7,13 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: homepage
-ms.openlocfilehash: d0f6c6348a7204d7991fb2be1a739addf4afe137
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal, homepage
+ms.openlocfilehash: 76580f373adc5cd1a2edb10c8db4cbb2e3006700
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776120"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024631"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 

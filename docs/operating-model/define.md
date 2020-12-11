@@ -1,19 +1,19 @@
 ---
 title: 定義您的雲端作業模型
-description: 瞭解雲端採用架構如何協助您定義操作模型。
+description: 瞭解雲端採用架構如何協助您定義作業模型。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: operating-model
-ms.openlocfilehash: 0a92752d339cd59253ad47b10b8ae949090b5b0a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal, operating-model
+ms.openlocfilehash: 7204b4ee6b1a3f86278295d198cde52caa71bcf8
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575909"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024835"
 ---
 # <a name="define-your-cloud-operating-model"></a>定義您的雲端作業模型
 
@@ -53,7 +53,7 @@ ms.locfileid: "88575909"
 - [策略](../strategy/index.md)：掌握商務策略的指引，並將其對應到可由雲端採用策略啟用的工作。
 - [規劃](../plan/index.md)：敏捷式變更管理的指導方針，可建立待處理專案並配合進行中的變更。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 在參與上述任何方法之前，請使用下一篇文章來比較常見的雲端作業模型，並尋找與您的需求密切相符的模型。 這篇文章將協助您建立最具可採取動作的起點和一組練習，讓您移往雲端平臺上的所需作業模型。
 

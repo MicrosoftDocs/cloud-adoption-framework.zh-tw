@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 2d6d87baacebf0e737bb55b519c2bbee8121401a
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.custom: internal
+ms.openlocfilehash: 48f9c5e45e829ace466c4948ac5ed454bc6ff401
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510357"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022098"
 ---
 # <a name="evaluate-corporate-policy"></a>評估公司原則
 

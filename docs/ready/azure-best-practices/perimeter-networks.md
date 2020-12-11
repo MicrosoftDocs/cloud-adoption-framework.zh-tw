@@ -2,19 +2,19 @@
 title: 周邊網路
 description: 使用適用于 Azure 的雲端採用架構，瞭解如何為您的組織有效地設定 Azure。
 author: tracsman
-ms.author: jonor
+manager: rossort
+ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-manager: rossort
-ms.custom: virtual-network
-ms.openlocfilehash: 3071c65925a4d96740be8f7314538b60b0559142
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, virtual-network
+ms.openlocfilehash: 13838e7fc0e517c9c688ffa937bd0caf20dafe76
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997364"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024376"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 

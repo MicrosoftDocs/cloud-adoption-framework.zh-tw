@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9870bf983bf7cbbfdac885c5b252c1565b9d8ce9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: ebc6265566b9925d30df08d16d1214ee33595f58
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775627"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022421"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的效能一致
 
@@ -39,7 +40,7 @@ ms.locfileid: "90775627"
 **支援交付完成的指導方針：**
 
 - [增強型管理基準](../manage/azure-management-guide/enhanced-baseline.md)文章概述使用 Azure 自動化等工具來新增效能相關增強功能的範例。 這種方法有助於維持一致的效能，方法是對支援資產的大小和規模進行基本修改。
-- [工作負載](../manage/azure-management-guide/platform-specialization.md) 專屬的作業使用 Microsoft Azure 架構良好的評論，針對特定工作負載提供自動化的指引。 當工作負載特定的資料應該推動操作動作時，此效能管理方法特別有用。
+- [工作負載](../manage/azure-management-guide/platform-specialization.md) 專屬的作業會使用 Microsoft Azure Well-Architected 評論，針對特定工作負載提供自動化的指引。 當工作負載特定的資料應該推動操作動作時，此效能管理方法特別有用。
 - 上述指導方針假設 [管理基準](../manage/considerations/discipline.md) 的現有執行支援完整的工作負載組合。
 
 > [!NOTE]
@@ -64,7 +65,7 @@ ms.locfileid: "90775627"
 
 - 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 [使用 Azure 原則來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)，特別強調「重要性」的標記。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理專業領域，請考慮遵循 [有關成本管理專業領域改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理專業領域，請考慮遵循 [有關成本管理專業領域改進的文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) ] 區段。
 
 <br>
 

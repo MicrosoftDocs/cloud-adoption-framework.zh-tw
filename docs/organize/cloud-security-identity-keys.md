@@ -3,16 +3,17 @@ title: 雲端中的身分識別和金鑰管理功能
 description: 瞭解雲端中身分識別和金鑰管理的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7942cc63341b3f15f770d6f23dca3e56bc606b65
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 5a1c603cd118c93679b30104eae6c962b12d1a09
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574732"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024682"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>雲端中的身分識別和金鑰管理功能
 
@@ -26,7 +27,7 @@ ms.locfileid: "88574732"
 - 身分識別控制項可作為雲端應用程式的主要安全性周邊
 - 因為儲存和安全地提供這些金鑰的存取權，所以會將雲端服務的金鑰型驗證取代為身分識別管理。
 - 從內部部署身分識別架構（例如單一身分識別、單一登入 (SSO) 和原生應用程式整合）中學到的正面經驗，相當重要。
-- 避免常見的內部部署架構錯誤（通常會 overcomplicated）的重要重要性，讓支援變得更容易。 其中包括：
+- 避免常見的內部部署架構錯誤（通常會 overcomplicated）的重要重要性，讓支援變得更容易。 其中包含：
   -  (Ou) 的擴張群組和組織單位。
   - 擴張協力廠商目錄和身分識別管理系統的集合。
   - 缺乏明確的應用程式身分識別策略的標準化和擁有權。

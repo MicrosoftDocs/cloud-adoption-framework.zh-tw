@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e3683c652ef69b9cd327164a992966cff1ce4868
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 42d332ecbe04698c44a0e9d32245be6789d52dae
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603033"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022268"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>開始使用：建立雲端治理小組
 
@@ -27,7 +28,7 @@ ms.locfileid: "89603033"
 **交付：**
 
 - 判斷您是否需要雲端治理小組。
-- 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI) * 合作物件的跨小組，以協調各小組的責任。 使用工作表中的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) ，記錄決策和負責任的個人 `Org Alignment` 。
+- 開發跨小組的矩陣，以識別 *負責、負責任、諮詢及告知 (RACI)* 合作物件的跨小組，以協調各小組的責任。 使用工作表中的 [RACI 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) ，記錄決策和負責任的個人 `Org Alignment` 。
 
 **支援交付完成的指導方針：**
 

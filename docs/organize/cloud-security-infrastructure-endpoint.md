@@ -3,16 +3,17 @@ title: 雲端基礎結構和端點安全性的功能
 description: 瞭解雲端基礎結構和端點安全性的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: b981d434e6874265511aec109afecab666c43e2a
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 437576b84ee6c96b0d6b3be74c55359f80a3d7ef
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996361"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024665"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>雲端基礎結構和端點安全性的功能
 
@@ -43,6 +44,6 @@ ms.locfileid: "94996361"
 - 合規性小組
 - Audit 小組
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 複習 [威脅情報](./cloud-security-threat-intelligence.md)的功能。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9e8b1c93cd64f7e5ea6b7b93a17e286d9469e6c4
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: a3d36d29614335bfa758679bbe72e5ed518186e5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447124"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023900"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -65,11 +65,11 @@ ms.locfileid: "95447124"
 
 6. 在下表中為登陸區域建立 Azure 原則指派。
 
-  | Name                  |     描述                                                                                     |
-  |-----------------------|-----------------------------------------------------------------------------------------------|
-  | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | 拒絕在所有登陸區域上建立具有公用端點的服務。 |
-  | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/Landing%20Zones%20(landingzones)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | 確保備份已設定並部署至登陸區域中的所有 Vm。 |
-  | [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | 確保所有登陸區域都已部署虛擬網路，並對等互連至區域虛擬中樞。 |
+   | 名稱 | 描述 |
+   |--|--|
+   | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.js | 拒絕在所有登陸區域上建立具有公用端點的服務。 |
+   | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /Landing%20Zones%20 (landingzones) /。) 上的 AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.js | 確保備份已設定並部署至登陸區域中的所有 Vm。 |
+   | [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.js | 確保所有登陸區域都已部署虛擬網路，並對等互連至區域虛擬中樞。 |
 
 #### <a name="sandbox-governance-guidance"></a>沙箱治理指導方針
 
@@ -81,11 +81,11 @@ ms.locfileid: "95447124"
 
 1. 在下表的沙箱管理群組範圍中建立 Azure 原則指派：
 
-  | Name                  |     描述                                                                                     | 指派注意事項 |
+  | 名稱                  |     描述                                                                                     | 指派注意事項 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; _例如 VPN/ExpressRoute/VirtualWAN_ | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 |
-  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 確保每個沙箱訂用帳戶的預算都有，並啟用電子郵件警示。 在每個訂用帳戶中，預算會命名為： `default-sandbox-budget` 。 | 如果在指派原則時，不會修改參數的預設值，就會 `default-sandbox-budget` 使用1000貨幣閾值限制來建立預算 () 將會根據 RBAC 角色指派，將電子郵件警示傳送給訂用帳戶的擁有者和參與者 (以) 90% 和100% 的預算閾值。 |
+  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState)  | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.js | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; *例如 VPN/ExpressRoute/VirtualWAN* | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 |
+  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState)  | 確保每個沙箱訂用帳戶的預算都有，並啟用電子郵件警示。 在每個訂用帳戶中，預算會命名為： `default-sandbox-budget` 。 | 如果在指派原則時，不會修改參數的預設值，就會 `default-sandbox-budget` 使用1000貨幣閾值限制來建立預算 () 將會根據 RBAC 角色指派，將電子郵件警示傳送給訂用帳戶的擁有者和參與者 (以) 90% 和100% 的預算閾值。 |
 
 ### <a name="global-networking-and-connectivity"></a>全球網路和連線能力
 
@@ -114,11 +114,11 @@ ms.locfileid: "95447124"
 
 下列清單顯示當您在執行企業規模部署的網路資源時，所使用的 Azure 原則指派：
 
-| Name                     | 描述                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | 建立防火牆原則。 |
-| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會部署虛擬中樞、Azure 防火牆和 VPN/ExpressRoute 閘道。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
-| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)| 部署虛擬 WAN。 |
+| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.js | 建立防火牆原則。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.js | 此原則會部署虛擬中樞、Azure 防火牆和 VPN/ExpressRoute 閘道。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
+| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.js | 部署虛擬 WAN。 |
 
 ### <a name="security-governance-and-compliance"></a>安全性、治理和合規性
 
@@ -138,21 +138,21 @@ ms.locfileid: "95447124"
 
 您應使用下列原則來強制執行全公司的合規性狀態。
 
-| Name                       | 描述                                                        |
+| 名稱                       | 描述                                                        |
 |----------------------------|--------------------------------------------------------------------|
-| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | 指定可在其中部署資源的允許區域。 |
-| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | 指定可在其中部署資源群組的允許區域。 |
-| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 公司拒絕的資源。 |
-| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | 允許在啟用 Azure Web 應用程式防火牆的情況下部署應用程式閘道。 |
-| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | 拒絕 IP 轉送。 |
-| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | 拒絕來自網際網路的 RDP 連接。 |
-| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | 拒絕建立子網，而不使用 NSG。 |
-| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | 設定 Azure 資訊安全中心連續匯出至您的 Log Analytics 工作區。 |
-| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | 啟用安全中心的監視功能。 |
-| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | 確定訂用帳戶已啟用安全中心標準。 |
-| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | 啟用診斷活動記錄，並轉送至 Log Analytics。 |
-| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
-| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | 確保已啟用 VM 監視。 |
+| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.js   | 指定可在其中部署資源的允許區域。 |
+| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.js         | 指定可在其中部署資源群組的允許區域。 |
+| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.js           | 公司拒絕的資源。 |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.js     | 允許在啟用 Azure Web 應用程式防火牆的情況下部署應用程式閘道。 |
+| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.js         | 拒絕 IP 轉送。 |
+| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.js     | 拒絕來自網際網路的 RDP 連接。 |
+| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.js    | 拒絕建立子網，而不使用 NSG。 |
+| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.js              | 設定 Azure 資訊安全中心連續匯出至您的 Log Analytics 工作區。 |
+| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.js      | 啟用安全中心的監視功能。 |
+| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.js        | 確定訂用帳戶已啟用安全中心標準。 |
+| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.js | 啟用診斷活動記錄，並轉送至 Log Analytics。 |
+| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.js | |
+| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.js | 確保已啟用 VM 監視。 |
 
 ### <a name="platform-identity"></a>平臺身分識別
 
@@ -162,10 +162,10 @@ ms.locfileid: "95447124"
 
 下列清單顯示當您在執行企業規模部署的身分識別資源時，可以使用的原則。
 
-| Name                         | 描述                                                               |
+| 名稱                         | 描述                                                               |
 |------------------------------|---------------------------------------------------------------------------|
-| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/) | 由安全性中心自動建立的資料保護。 |
-| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | 將虛擬網路部署到身分識別訂用帳戶中，以裝載 (例如 DC) 。 |
+| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/)  | 由安全性中心自動建立的資料保護。 |
+| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.js | 將虛擬網路部署到身分識別訂用帳戶中，以裝載 (例如 DC) 。 |
 
 ### <a name="platform-management-and-monitoring"></a>平臺管理與監視
 
@@ -179,10 +179,10 @@ ms.locfileid: "95447124"
 
 5. 如果您透過 Azure 原則建立平臺管理資源，請將下表所列的原則指派給管理訂用帳戶。 如此一來，Azure 原則可確保會根據提供的參數來建立下列清單中的資源。
 
-| Name                   | 描述                                                                            |
+| 名稱                   | 描述                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Configuration Log Analytics 工作區。 |
-| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | 部署 Log Analytics 工作區。 |
+| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.js | Configuration Log Analytics 工作區。 |
+| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.js | 部署 Log Analytics 工作區。 |
 
 ## <a name="file--new--region"></a>檔案 > 新的 > 區域
 
@@ -198,9 +198,9 @@ ms.locfileid: "95447124"
 
 4.  (選擇性) 透過 ExpressRoute 私用對等互連設定加密。
 
-| Name                     | 描述                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | 此原則會將虛擬中樞、Azure 防火牆和閘道部署 (VPN/ExpressRoute) 。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.js | 此原則會將虛擬中樞、Azure 防火牆和閘道部署 (VPN/ExpressRoute) 。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
 
 <!-- docutune:disable -->
 

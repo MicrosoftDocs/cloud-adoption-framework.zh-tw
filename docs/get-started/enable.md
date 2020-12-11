@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e79ba73affd92a932e95bdf6ed4aff5bcae0be73
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: cefb7a92c6ed7ada514eef199f2890b3c7b65000
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884414"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022676"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>利用音效作業模型與組織對齊，讓客戶成功
 
@@ -39,11 +40,11 @@ ms.locfileid: "88884414"
 
 | 指南                                                                                    | 描述                                                                                                                               |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [如何在雲端轉型期間提供卓越的營運？](./operational-excellence.md)                   | 本指南中的步驟可協助策略小組領導組織變更管理，以一致的方式確保卓越的營運。 |
-| [如何管理企業成本？](./manage-costs.md)                                          | 開始最佳化企業成本，並管理整個環境的成本。                                                                           |
-| [我們如何以一致的方式保護企業雲端環境？](./security.md)             | 本入門指南可協助確保已在企業中套用適當的安全性需求，以將缺口的風險降至最低，並在發生缺口時加速復原。                                       |
-| [如何套用正確的控制項來改善可靠性？](./reliability.md)                   | 本入門指南可協助將設定、資源組織、安全性基準或資源保護原則中不一致的中斷情形降至最低。 |
-| [如何確保整個企業的效能？](./performance.md)                               | 本入門指南可協助您建立流程，以維護整個企業的效能。                               |
+| [我們要如何在雲端轉換期間提供卓越的營運？](./operational-excellence.md)                   | 本指南中的步驟可協助策略小組領導組織變更管理，以一致的方式確保卓越的營運。 |
+| [我們要如何管理企業成本？](./manage-costs.md)                                          | 開始最佳化企業成本，並管理整個環境的成本。                                                                           |
+| [我們要如何一致地保護企業雲端環境？](./security.md)             | 本入門指南可協助確保已在企業中套用適當的安全性需求，以將缺口的風險降至最低，並在發生缺口時加速復原。                                       |
+| [我們要如何套用適當的控制項來提升可靠性？](./reliability.md)                   | 本入門指南可協助將設定、資源組織、安全性基準或資源保護原則中不一致的中斷情形降至最低。 |
+| [我們要如何確保整個企業的效能？](./performance.md)                               | 本入門指南可協助您建立流程，以維護整個企業的效能。                               |
 | [我們要如何讓組織保持一致？](./org-alignment.md)                               | 本快速入門手冊可協助您建立適當的員工組織結構。                               |
 
 ## <a name="shared-architecture-principles"></a>共用架構原則
@@ -52,9 +53,9 @@ ms.locfileid: "88884414"
 
 ![說明共用架構原則的圖表。](../_images/shared-principles.png)
 
-這些原則會在 Azure Advisor、Microsoft Azure 架構架構良好的架構，以及 Azure 架構中心中的解決方案之間共用：
+這些原則會在 Azure Advisor、Microsoft Azure Well-Architected Framework 和 Azure 架構中心中的解決方案之間共用：
 
 - [Azure Advisor](/azure/advisor/advisor-overview) 會評估跨解決方案、工作負載和完整組合的個別資產原則。
 - [Azure 架構中心](/azure/architecture/) 套用這些原則來開發和管理特定的技術解決方案。
-- [Microsoft Azure 架構良好的架構](/azure/architecture/framework/) 有助於在工作負載之間平衡這些原則，以引導架構決策。
+- [Microsoft Azure Well-Architected 架構](/azure/architecture/framework/) 有助於在工作負載之間平衡這些原則，以引導架構決策。
 - [雲端採用架構](../index.yml) 可確保這些原則會跨組合進行調整，以透過妥善管理的環境來實現採用小組。

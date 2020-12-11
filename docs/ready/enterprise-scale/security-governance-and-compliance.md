@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: d05426ff488c726c6f152eb9a8fe6e5e5d1dfbe4
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 4e76a3299db2962b46bb6f68c76b5aa829fef2d4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447110"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023577"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 <!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
@@ -85,7 +85,7 @@ ms.locfileid: "95447110"
 
 治理提供多項機制和流程，以便維持控制 Azure 中的應用程式與資源。 Azure 原則在企業技術資產中確保安全性與合規性是不可或缺的。 它可以在 Azure 平臺服務中強制執行重要的管理和安全性慣例，並補充角色型存取控制 (RBAC) ，以控制授權使用者可執行檔動作。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 - 判斷所需的 Azure 原則。
 
@@ -99,7 +99,7 @@ ms.locfileid: "95447110"
 
 - 瞭解法規合規性原則。 這些可能包括 HIPAA、PCI DSS，以及 SOC2 信任服務準則和準則。
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 - 識別所需的 Azure 標記，並使用附加原則模式來強制使用。
 
@@ -121,7 +121,7 @@ ms.locfileid: "95447110"
 
 企業必須可以看到其技術雲端資產中的情況。 Azure 平臺服務的安全性監視和審核記錄是可擴充架構的重要元件。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 - Audit data 的資料保留期限。 Azure AD Premium 報表有30天的保留期限。
 
@@ -139,7 +139,7 @@ ms.locfileid: "95447110"
 
 - Vm 的弱點評定。
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 - 使用 Azure AD 報告功能來產生存取控制審核報告。
 
@@ -161,7 +161,7 @@ ms.locfileid: "95447110"
 
 當您採用 Azure 時，您必須維持狀況良好的安全性狀況。 除了可見度之外，您還必須能夠控制 Azure 服務發展時的初始設定和變更。 因此，規劃平臺安全性是關鍵的。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 - 共同責任。
 
@@ -171,7 +171,7 @@ ms.locfileid: "95447110"
 
 - 主要平臺元件的多租使用者。 這包括 Hyper-v、Hsm 底層 Key Vault 和資料庫引擎。
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 - 在您的基礎需求內容中，進行每個必要服務的聯合檢查。 如果您想要攜帶您自己的金鑰，則可能不會在所有已被視為的服務上受到支援。 實行相關的緩和措施，讓不一致的結果不會妨礙預期的結果。 選擇適當的區域配對和嚴重損壞修復區域，以將延遲降至最低。
 

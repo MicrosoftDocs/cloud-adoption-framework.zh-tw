@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 82d216ea194e7d94091877dc1e80c2dde0d3f6d1
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 170f8c68e8bf23030cdf858c63f73a2eb1b82930
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603725"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022795"
 ---
 # <a name="get-started-environment-design-and-configuration"></a>開始使用：環境設計和設定
 
@@ -151,10 +152,10 @@ ms.locfileid: "89603725"
 
 - 部署管理基準。
 - 完成 operations management 活頁簿。
-- 找出需要 Microsoft Azure 架構良好審核評量的任何工作負載。
+- 找出需要 Microsoft Azure Well-Architected 評論評量的任何工作負載。
 - 時間軸風險：
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
-  - 完成 Microsoft Azure 架構良好的審核評定：每個應用程式預估一小時。
+  - 完成 Microsoft Azure Well-Architected 審核評定：每個應用程式預估一小時。
 
 **支援交付完成的指導方針：**
 

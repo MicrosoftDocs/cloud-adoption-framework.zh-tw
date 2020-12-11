@@ -3,16 +3,17 @@ title: 瞭解雲端治理功能
 description: 瞭解雲端治理小組的功能，包括來源、領域和交付專案。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: e0072ca4e2c1606024c992088fe38618498b2625
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 93017b233340492a397f0cd15d815e73d72c04d7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712301"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024750"
 ---
 <!-- docutune:ignore IS -->
 
@@ -27,7 +28,7 @@ ms.locfileid: "94712301"
 - 安全性
 - IT 作業
 - IT 基礎結構
-- 網路功能
+- 網路
 - 身分識別
 - 虛擬化
 - 商務持續性和災害復原

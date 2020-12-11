@@ -2,17 +2,18 @@
 title: 雲端安全性功能
 description: 在企業中管理資訊安全性風險所需的組織功能總覽
 author: MarkSimos
-ms.author: mas
+ms.author: brblanch
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7c24e03b2727e31a673675ba62fc76a90c117e03
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.custom: think-tank
+ms.openlocfilehash: 8ef347bf444bdbcadcdc51054d833febf06b5987
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681265"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024597"
 ---
 # <a name="cloud-security-functions"></a>雲端安全性功能
 

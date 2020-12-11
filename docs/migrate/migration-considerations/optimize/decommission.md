@@ -1,18 +1,19 @@
 ---
 title: 解除委任已淘汰的資產
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何在最少的商務中斷情況之下，適當地解除委任已淘汰的資源。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何以最少量的商務中斷來適當解除委任已淘汰的資源。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ef890dce11530f30a0863ab9a51dcc3832125e24
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.custom: internal
+ms.openlocfilehash: c6270e657ed776a9d30dd4808182bfc0898710c0
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432319"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025039"
 ---
 # <a name="decommission-retired-assets"></a>解除委任已淘汰的資產
 
@@ -39,4 +40,4 @@ ms.locfileid: "80432319"
 已淘汰的資產解除委任後，移轉即完成。 您可以藉此機會改善移轉程序，而[回顧](./retrospective.md)可以讓雲端採用小組檢討發行過程，以期能學習並改善。
 
 > [!div class="nextstepaction"]
-> [追溯](./retrospective.md)
+> [回顧](./retrospective.md)

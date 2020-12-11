@@ -3,16 +3,17 @@ title: 雲端安全性合規性管理功能
 description: 瞭解雲端安全性合規性管理所需的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: c2ace7de07c6c203e090a079375d9e02420eab9c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 90b080b8d599f49f0222abfd0d86f95d14811229
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569955"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024699"
 ---
 # <a name="cloud-security-compliance-management-functions"></a>雲端安全性合規性管理功能
 
@@ -38,6 +39,6 @@ ms.locfileid: "88569955"
 - 審核和法律團隊
 - 關鍵業務領導人或其代表
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 複習 [人員安全性](./cloud-security-people.md)的功能。

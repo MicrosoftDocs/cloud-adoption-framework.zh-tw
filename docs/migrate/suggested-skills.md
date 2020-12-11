@@ -7,12 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66cde14dd786fc0f203725802b3ea49295b35148
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 5dcd54f2db94ab52b72eb4bef344ed3d20c85aa3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879101"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024818"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 

@@ -4,15 +4,16 @@ description: 瞭解管理雲端採用相關成本的基本概念。
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: bb1c7ff3de8fae692decd61c0f939ddd21239163
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: ccc8f2d86a9e99544a1022e8864523e56f226d7f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775678"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022608"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -41,7 +42,7 @@ ms.locfileid: "90775678"
   - 刪除或解除配置已停止的 Vm。
   - 確定適當的資源大小。
   - 將支出與預算的期望保持一致。
-- 使用 Microsoft Azure 架構良好的審查來驗證任何架構變更，以促進與工作負載技術擁有者的交談。
+- 使用 Microsoft Azure Well-Architected 評論來驗證任何架構變更，以促進與工作負載技術擁有者的交談。
 
 **支援交付完成的指導方針：**
 
@@ -55,9 +56,9 @@ ms.locfileid: "90775678"
   - 透過原則來[降低非生產成本](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)，以管理非生產環境。
   - 針對 [成本優化建議](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)採取行動。
 
-- 您可能需要在工作負載層級進行取捨，以實行有效的成本優化變更。 [Microsoft Azure 架構良好的架構](/azure/architecture/framework/cost/tradeoffs)，並[Microsoft Azure 架構良好的審查](/assessments/?id=azure-architecture-review)，可協助引導這些交談與特定工作負載的技術擁有者。
+- 您可能需要在工作負載層級進行取捨，以實行有效的成本優化變更。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft Azure Well-Architected 評論](/assessments/?id=azure-architecture-review)可協助引導這些交談與特定工作負載的技術擁有者。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
-- 如果您不熟悉成本管理專業領域，請考慮遵循 [成本管理專業領域的改進文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) ] 區段。
+- 如果您不熟悉成本管理專業領域，請考慮遵循 [成本管理專業領域的改進文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) ] 區段。
 
 <br>
 
@@ -172,8 +173,8 @@ ms.locfileid: "90775678"
 
 **支援交付完成的指導方針：**
 
-- 使用 [Microsoft Azure 架構良好的評論](/assessments/?id=azure-architecture-review) ，以瞭解架構決策的平衡。
-- 複習 [Microsoft Azure 架構良好的架構](/azure/architecture/framework) ，以取得創新期間成本優化的更深入指引。
+- 使用 [Microsoft Azure Well-Architected 評論](/assessments/?id=azure-architecture-review) 來瞭解架構決策的平衡。
+- 複習 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) ，以取得創新期間成本優化的更深入指引。
 
 <br>
 

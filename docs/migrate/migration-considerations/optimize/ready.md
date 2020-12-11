@@ -1,18 +1,19 @@
 ---
 title: 讓遷移後的應用程式準備好進行生產環境升階
-description: 使用適用于 Azure 的雲端採用架構來瞭解針對生產環境升級準備遷移的應用程式時所需的驗證。
+description: 使用適用于 Azure 的雲端採用架構，瞭解準備遷移的應用程式以進行生產升級所需的驗證。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8c31b25b7c5ce75ab1b4c1ed3b76e9a1dfcb7422
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.custom: internal
+ms.openlocfilehash: 4b06c3bf6187d3536af57b772980af76d0b443c3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215903"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024971"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>讓遷移後的應用程式準備好進行生產環境升階
 
@@ -29,7 +30,7 @@ ms.locfileid: "83215903"
 
 ## <a name="final-technical-readiness-tests"></a>最終的技術整備測試
 
-「就緒」__ 是生產發行前的最後一個步驟。 這表示此步驟也是測試工作負載的最後一次機會。 以下是此階段進行期間所建議的幾項測試：
+「就緒」是生產發行前的最後一個步驟。 這表示此步驟也是測試工作負載的最後一次機會。 以下是此階段進行期間所建議的幾項測試：
 
 - **網路隔離測試。** 測試和監視網路流量以確保有適當隔離，而且沒有未預期的網路弱點。 也請驗證在移轉期間所提供的任何網路路由都不會遇到非預期的流量。
 - **相依性測試。** 請確定所有工作負載應用程式相依性都已遷移，而且可以從遷移後的資產存取。
