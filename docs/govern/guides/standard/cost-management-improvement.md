@@ -1,19 +1,19 @@
 ---
 title: 標準企業治理：改善成本管理專業領域
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何將成本控制新增至治理的最小可行產品 (MVP) 。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何將成本控制新增至簡單治理的最小可行產品 (MVP) 。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 046507bea45c8a53d97d05ff9b566a3d1fb7c888
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: b7d2d5d142646d38b0ef6f69706dc25c485e734a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91107943"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020829"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準企業治理指南：改善成本管理專業領域
 

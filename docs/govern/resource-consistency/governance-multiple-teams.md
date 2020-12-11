@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 0ef7c38fe9deedd45f0c8c9c902e852d671f8cf8
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 0d9f84b8d3f657aa3981cc44c681315252126d42
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881107"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020160"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -239,7 +239,7 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
 > [!NOTE]
 > 若要深入瞭解 Azure 帳戶與訂用帳戶之間的關聯性，請參閱 [瞭解 azure 中的資源存取](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
-依照下列步驟執行：
+請遵循這些步驟：
 
 1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](/azure/active-directory/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
     - 建立訂閱。

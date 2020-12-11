@@ -2,17 +2,18 @@
 title: 大型主機遷移誤解和事實
 description: 瞭解如何區別關於大型主機的相關誤解，並評估最適合 Azure 的大型主機工作負載。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8ed2f71a7d397873446690f69167ae45cdf4b344
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: db3949faf5f4cd954bbc2fd1fc7977a9ffa09172
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712556"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018732"
 ---
 <!-- cSpell:ignore chargebacks IPLs -->
 

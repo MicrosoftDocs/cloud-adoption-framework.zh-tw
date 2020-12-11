@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 8ab66a82b7677beb44fae256fade1ed1afd1173e
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: c6b39638f1560e29c8be4fcdc146510c5f43e700
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108011"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020007"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>進行雲端原則審核
 

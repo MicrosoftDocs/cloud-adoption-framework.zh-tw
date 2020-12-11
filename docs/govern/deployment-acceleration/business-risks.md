@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: f71def92ecf52e8dd2725ba4a89a68c5cfdf15d9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 76707cd3f67fe5dc3f6a78002b8fcecf07285b27
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883615"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021656"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>部署加速專業領域中的動機和業務風險
 

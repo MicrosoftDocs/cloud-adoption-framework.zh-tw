@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 7767822fdfa50b4be8c1148b36b983ef3b3eedbd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: aa2a90a768b271ce00e6d04d3775bd77358a9feb
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883666"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021724"
 ---
 # <a name="cost-management-discipline-template"></a>成本管理專業領域範本
 

@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 93c5e61124a4045aef7bad6bca6838650288de22
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: dc2a86cbdac8b3acb8cc62eff197af93b79f75e6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879433"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019395"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -23,14 +23,14 @@ ms.locfileid: "88879433"
 
 ## <a name="what-is-an-azure-resource"></a>什麼是 Azure 資源？
 
-在 Azure 中，*資源*一詞是指由 Azure 管理的實體。 例如，虛擬機器、虛擬網路以及儲存體帳戶都是 Azure 資源。
+在 Azure 中，*資源* 一詞是指由 Azure 管理的實體。 例如，虛擬機器、虛擬網路以及儲存體帳戶都是 Azure 資源。
 
 ![資源 ](../../_images/govern/design/governance-1-9.png)
- *圖1：資源*的圖表。
+ *圖1：資源* 的圖表。
 
 ## <a name="what-is-an-azure-resource-group"></a>什麼是 Azure 資源群組？
 
-Azure 中的每個資源都必須屬於一個[資源群組](/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是一個邏輯結構，可將多個資源群組在一起，以便 **根據生命週期和安全性**將它們當作單一實體來管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 換句話說，在一起的所有專案都會一起進行管理，並一起淘汰，在資源群組中一起運作。
+Azure 中的每個資源都必須屬於一個[資源群組](/azure/azure-resource-manager/management/overview#resource-groups)。 資源群組只是一個邏輯結構，可將多個資源群組在一起，以便 **根據生命週期和安全性** 將它們當作單一實體來管理。 例如，共用類似生命週期的資源如[多層式架構應用程式](/azure/architecture/guide/architecture-styles/n-tier)的資源，能以群組形式建立或刪除。 換句話說，在一起的所有專案都會一起進行管理，並一起淘汰，在資源群組中一起運作。
 
 ![包含資源的資源群組圖 ](../../_images/govern/design/governance-1-10.png)
  *2：資源群組包含資源。*
@@ -42,14 +42,14 @@ Azure 中的每個資源都必須屬於一個[資源群組](/azure/azure-resourc
 Azure *訂* 用帳戶類似于資源群組，因為它是將資源群組和其資源群組在一起的邏輯結構。 Azure 訂用帳戶也會與 Azure Resource Manager 所使用的控制項相關聯。 進一步了解 Azure Resource Manager，以了解它與 Azure 訂用帳戶之間的關聯性。
 
 ![Azure 訂用帳戶的圖 ](../../_images/govern/design/governance-1-11.png)
- *3： azure 訂*用帳戶。
+ *3： azure 訂* 用帳戶。
 
 ## <a name="what-is-azure-resource-manager"></a>什麼是 Azure Resource Manager？
 
 [Azure 如何運作？](../../get-started/what-is-azure.md)您已瞭解 azure 所包含的前端有許多可協調 Azure 功能的服務。 這些服務的其中之一就是 [Azure Resource Manager](/azure/azure-resource-manager)，這個服務會裝載用戶端用來管理資源的 RESTful API。
 
 ![Azure Resource Manager ](../../_images/govern/design/governance-1-12.png)
- *圖4： Azure Resource Manager*的圖表。
+ *圖4： Azure Resource Manager* 的圖表。
 
 下圖顯示三個用戶端： [PowerShell](/powershell/azure/overview)、 [Azure 入口網站](https://portal.azure.com)和 [Azure CLI](/cli/azure)：
 
@@ -75,7 +75,7 @@ Azure Resource Manager 需要用戶端同時指定訂用帳戶和資源群組的
 ![Azure Active Directory ](../../_images/govern/design/governance-1-16.png)
  *圖8： Azure Active Directory。*
 
-在 Azure AD 中，使用者會劃分到不同租用戶中。 *租*使用者是一種邏輯結構，代表通常與組織相關聯 Azure AD 的安全、專用的實例。 每個訂用帳戶都會與 Azure AD 租用戶相關聯。
+在 Azure AD 中，使用者會劃分到不同租用戶中。 *租* 使用者是一種邏輯結構，代表通常與組織相關聯 Azure AD 的安全、專用的實例。 每個訂用帳戶都會與 Azure AD 租用戶相關聯。
 
 ![與訂用帳戶相關聯的 Azure AD 租使用者 ](../../_images/govern/design/governance-1-17.png)
  *： [圖 9]：與訂用帳戶相關聯的 Azure AD 租使用者。*

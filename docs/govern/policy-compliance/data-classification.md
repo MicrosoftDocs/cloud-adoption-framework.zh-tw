@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 32d6d60934cedc4f3f6e2ada4ddbba88f821fe03
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 1a6c97b270df0122a410b7f5ae9b64785635b601
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96605705"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019990"
 ---
 # <a name="what-is-data-classification"></a>什麼是資料分類？
 

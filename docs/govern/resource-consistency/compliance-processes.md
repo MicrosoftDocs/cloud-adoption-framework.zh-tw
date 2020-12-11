@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 0177a577ef34165fd593da1a3e2716fac3de3ab9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 76b98da2d82d78dd79b281d14b179ddc24f21e89
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879383"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019565"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>資源一致性原則的合規性程序
 

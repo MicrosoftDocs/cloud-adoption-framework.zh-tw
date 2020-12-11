@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 997597ab99dffa1882ff6d26610efdec8d8e9b7a
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 69a833c1cd7018cd29445c18e55e65c8e375b35a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604662"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019124"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 

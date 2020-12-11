@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 4eb41f087e999538dc7c5fc9366b6173926c924a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 8e50ea60d37198200f67a7ea66c1b409b3a516bf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879671"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019769"
 ---
 # <a name="establish-policy-adherence-processes"></a>建立原則遵循流程
 

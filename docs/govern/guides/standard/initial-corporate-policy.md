@@ -1,19 +1,19 @@
 ---
 title: 標準企業治理：初始公司原則
-description: 使用適用于 Azure 的雲端採用架構，來定義初始治理位置、初期風險、初始原則聲明，以及早期強制執行的流程。
+description: 使用適用于 Azure 的雲端採用架構，來定義初始標準治理位置、初期風險、初始原則聲明，以及早期強制執行的流程。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 9b925aa9680fbfe7eb1d506ff29d9af31f67b480
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 8313b926ff9a65d9210e9d9adaa66f4ae9862aa7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880453"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020738"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的初始公司原則
 
@@ -24,7 +24,7 @@ ms.locfileid: "88880453"
 
 ## <a name="cloud-governance-team"></a>雲端治理小組
 
-在此敘述中，雲端治理小組是由兩個系統管理員所組成，這些系統管理員已辨識出治理的需求。 在接下來的幾個月，他們將會繼承清除公司雲端的治理，並以 *雲端*監管者的職稱贏得他們的工作。 在後續的反復專案中，此標題可能會變更。
+在此敘述中，雲端治理小組是由兩個系統管理員所組成，這些系統管理員已辨識出治理的需求。 在接下來的幾個月，他們將會繼承清除公司雲端的治理，並以 *雲端* 監管者的職稱贏得他們的工作。 在後續的反復專案中，此標題可能會變更。
 
 [!INCLUDE [business-risk](../../../../includes/business-risks.md)]
 

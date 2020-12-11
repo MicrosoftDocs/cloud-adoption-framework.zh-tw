@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: ac1b362abf96009cb8b68f85fbe2e754f59018eb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 16171c38e3913cb605160f5b4d60123794f304b9
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880759"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021092"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>適用于複雜企業的治理指南：多層治理
 

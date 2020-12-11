@@ -2,17 +2,18 @@
 title: 大型主機應用程式遷移策略
 description: 瞭解重新裝載、淘汰、重建或取代應用程式，以從大型主機環境遷移至 Azure 的策略。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 53587e37babffe0dc7e6c722643d4bafda646ff3
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 3f3b9f4ab6c35b62a35120e4fcc9ae9f8352253a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881039"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018885"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -101,7 +102,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 - 分割以將 i/o 分散到多個 Azure 儲存體裝置上。
 
-### <a name="networking"></a>網路功能
+### <a name="networking"></a>網路
 
 - 使用 [Azure 加速網路](/azure/virtual-network/create-vm-accelerated-networking-powershell) 將延遲降至最低。
 

@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: fc6528eaf2fa4eb6be83fe701f27f8ea110c1f6d
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 78e7d921a9e4021608fcb8a5f9d1f23b29a27af9
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96605672"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018596"
 ---
 # <a name="classify-your-organizations-data"></a>分類組織的資料
 

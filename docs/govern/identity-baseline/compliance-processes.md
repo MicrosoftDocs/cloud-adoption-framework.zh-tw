@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 52f6a6d23ea324b7a1764807e2f87bef68de4ee4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 897d0052ab35ee7df1bbe6537cdbcc9710e3e22c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880198"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020415"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>身分識別基準原則合規性流程
 
@@ -51,9 +51,9 @@ ms.locfileid: "88880198"
 
 下列觸發程序和強制執行動作提供範例，您可以在規劃如何使用監視資料以解決原則違規時加以參考：
 
-- 偵測**到可疑的活動：** 從匿名 proxy IP 位址、不熟悉的位置或非常遙遠地理位置的後續登入所偵測到的使用者登入，可能表示潛在的帳戶缺口或惡意存取嘗試。 登入將會遭到封鎖，直到可以驗證使用者身分識別和密碼重設。
+- 偵測 **到可疑的活動：** 從匿名 proxy IP 位址、不熟悉的位置或非常遙遠地理位置的後續登入所偵測到的使用者登入，可能表示潛在的帳戶缺口或惡意存取嘗試。 登入將會遭到封鎖，直到可以驗證使用者身分識別和密碼重設。
 - **洩漏的使用者認證：** 將其使用者名稱和密碼洩漏至網際網路的帳戶將會停用，直到可以驗證使用者身分識別和密碼重設為止。
-- 偵測**到存取控制不足：** 存取限制不符合安全性需求的任何受保護資產都將封鎖存取，直到資源進入合規性為止。
+- 偵測 **到存取控制不足：** 存取限制不符合安全性需求的任何受保護資產都將封鎖存取，直到資源進入合規性為止。
 
 ## <a name="next-steps"></a>後續步驟
 

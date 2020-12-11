@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 986c2398b1bf0b00b88d853d8cec072287bd4010
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: a71340b92f0290e94855030393118dcbd5d4e8dc
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604789"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020704"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準企業治理指南：最佳作法說明
 
@@ -27,13 +27,13 @@ ms.locfileid: "89604789"
 
 為了建立起點，本文將討論安全性基準、身分識別基準，以及建立治理 MVP 所需的部署加速專業領域（將作為所有採用的基礎）所需的高層級策略。
 
-![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp.png)
+![此圖顯示累加式治理 MVP 的範例。](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>實作程序
 
 治理 MVP 的實施具有身分識別、安全性和網路功能的相依性。 解決相依性後，雲端治理小組就會決定治理的幾個層面。 雲端治理小組和來自支援小組的決策，將透過單一的強制資產套件來實行。
 
-![累加式治理 MVP 的範例](../../../_images/govern/governance-mvp-implementation-flow.png)
+![顯示治理 MVP 之實行流程的圖表。](../../../_images/govern/governance-mvp-implementation-flow.png)
 
 這項實作也可以使用簡單的檢查清單來說明：
 
