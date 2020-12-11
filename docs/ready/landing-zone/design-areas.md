@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c5b98dd3259ed69ead71bd1d0a49f4f4384cfdb4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 298d55794939233e3ee16c2d982c5ea6f70e97f2
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713899"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026637"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 

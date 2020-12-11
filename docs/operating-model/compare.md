@@ -7,13 +7,13 @@ ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: operating-model
-ms.openlocfilehash: f4942f91b5ac265679a8cfb6545be9b81d459550
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal, operating-model
+ms.openlocfilehash: 8dd0b5231adf12991aede408da1d55523a78a2cf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995919"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026688"
 ---
 # <a name="compare-common-cloud-operating-models"></a>比較常見的雲端作業模型
 
@@ -69,7 +69,7 @@ ms.locfileid: "94995919"
 |  | 分散式 ops | 集中式 ops | 企業營運 | 分散式 ops |
 |--|--|--|--|--|
 | **起點** | [Azure Well-Architected Framework (WAF) ](/azure/architecture/framework/) | Azure 登陸區域： [開始-小型選項](../ready/landing-zone/implementation-options.md) | Azure 登陸區域： [CAF 企業規模](../ready/enterprise-scale/implementation.md) | [業務配合](../manage/considerations/business-alignment.md) |
-| **迭 代** | 專注于工作負載可讓小組在 WAF 中反復查看。 | [開始-小型] 選項需要在每個方法上進行額外的反復專案，但可在雲端採用工作成熟時進行。 | 如參考執行所示，未來的反復專案通常著重于次要設定的新增專案。 | 請參閱 [Azure 登陸區域的執行選項](../ready/landing-zone/implementation-options.md) ，以開始使用最符合您作業基準的選項。 遵循該選項的設計原則中所定義的反復專案路徑。 |
+| **反覆運算次數** | 專注于工作負載可讓小組在 WAF 中反復查看。 | [開始-小型] 選項需要在每個方法上進行額外的反復專案，但可在雲端採用工作成熟時進行。 | 如參考執行所示，未來的反復專案通常著重于次要設定的新增專案。 | 請參閱 [Azure 登陸區域的執行選項](../ready/landing-zone/implementation-options.md) ，以開始使用最符合您作業基準的選項。 遵循該選項的設計原則中所定義的反復專案路徑。 |
 
 ## <a name="decentralized-operations"></a>分散式作業
 
@@ -200,7 +200,7 @@ ms.locfileid: "94995919"
 
 這種方法的優點和缺點是特意空白。 當您完成組合的商務一致性之後，請參閱上面的「主流作業模型」一節，以清楚瞭解優點和缺點。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 瞭解與操作模型相關聯的術語。 這些術語可協助您瞭解操作模型如何融入企業規劃的更大主題。
 

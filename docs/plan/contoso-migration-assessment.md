@@ -7,12 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9e52a468b2a032c70bace6a89e8aa963e6a629de
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.custom: internal
+ms.openlocfilehash: a437e1cbc6daa788fa5e24c3af4ef892d826ccce
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038676"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026569"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -94,7 +95,7 @@ Contoso 會使用 Microsoft 工具進行其移轉評量。 這些工具與該公
   - `OSTICKETWEB` 正在執行 Apache 2 和 PHP 7.0。
   - `OSTICKETMYSQL` 正在執行 MySQL 5.7.22。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者都必須符合下列先決條件才能進行評量：
 

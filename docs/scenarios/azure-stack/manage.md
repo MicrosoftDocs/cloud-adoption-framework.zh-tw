@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bac23e8fbd32e77686015f0a6a7d75649b6273b9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 63cd498b92141a6c9e8ee0dbefae4842ec223145
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885485"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025804"
 ---
 # <a name="manage-workloads-that-run-on-azure-stack-hub"></a>管理在 Azure Stack Hub 上執行的工作負載
 

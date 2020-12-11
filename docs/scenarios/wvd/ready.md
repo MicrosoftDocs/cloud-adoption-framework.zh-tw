@@ -7,12 +7,13 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f7aeba65ddd357ea7a65c6e902d7403f0c403a20
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: a906c64b4e9bcc73223c1c1f6165d9bd5392c64d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108304"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025430"
 ---
 # <a name="windows-virtual-desktop-azure-landing-zone-review"></a>Windows 虛擬桌面 Azure 登陸區域審核
 

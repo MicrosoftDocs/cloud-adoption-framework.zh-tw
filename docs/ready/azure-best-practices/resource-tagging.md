@@ -7,13 +7,13 @@ ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: b59c0d163fb215ac77149f5c0dfedd32b8313f22
-ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
+ms.custom: internal, readiness, fasttrack-edit
+ms.openlocfilehash: b20ec4bc4cf6d1c5fde40e0bf9f83be150697fbb
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96772441"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026127"
 ---
 # <a name="define-your-tagging-strategy"></a>定義您的標記策略
 

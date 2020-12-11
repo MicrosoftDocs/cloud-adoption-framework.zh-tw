@@ -1,18 +1,19 @@
 ---
 title: 如何設定 Moodle 背景工作節點
 description: 瞭解如何設定 Moodle 的虛擬機器擴展集。 瞭解如何使用私人 IP 位址從控制器存取擴展集。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0ea1e7748f682efe419601e2df59599c2519ad4b
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: c0b3a01440b907dfd31eadda27d727d9a2afd587
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327554"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025719"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>如何設定 Moodle 背景工作節點
 
@@ -67,6 +68,7 @@ mkdir -p backup/moodle
 ```
 
 ### <a name="configure-the-php-and-web-server"></a>設定 PHP 和網頁伺服器
+
 若要設定 PHP 和 web 伺服器，請執行下列步驟：
 
 1. 將 PHP 版本設定為變數：

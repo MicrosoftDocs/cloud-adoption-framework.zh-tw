@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 37f7186e1d74dc9e3995bffbe775bb2111156f2a
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 8384ffe2a291b82cea444e61974b045c72077bea
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603626"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025260"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 

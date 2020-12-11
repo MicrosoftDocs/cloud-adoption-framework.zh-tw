@@ -1,24 +1,25 @@
 ---
 title: Moodle 手動遷移的總覽
 description: 請參閱手動將 Moodle 從內部部署環境遷移至 Azure 的必要條件和整體步驟。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 659c1a151bd1f6d908737c6be5ab0177f361b2f1
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 1e6ff81c76fc24c6868579268d6e1e05eb4354ec
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605416"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025515"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>Moodle 手動遷移的總覽
 
 [Moodle](https://moodle.org/) 是以 PHP 撰寫的免費開放原始碼學習管理系統。 本指南說明如何將 Moodle 部署從內部部署環境遷移至 Azure。 本指南提供兩種不同方法的步驟，使用 Azure 入口網站或 Azure 命令列介面 (Azure CLI) 。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 開始遷移之前，您需要下列必要條件：
 

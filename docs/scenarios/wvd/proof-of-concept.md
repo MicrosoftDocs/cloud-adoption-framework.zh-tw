@@ -7,12 +7,13 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d43eafcc0ce5a0d85488c38e31b79c48d74de613
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 83ecb010144d1c42b1608e3b63fb9fe7403067ae
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996990"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025583"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 

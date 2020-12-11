@@ -2,19 +2,19 @@
 title: 中樞和輪輻網路拓撲
 description: 深入瞭解中樞和輪輻網路拓撲，以更有效率地管理常見的通訊或安全性需求。
 author: tracsman
-ms.author: jonor
+manager: rossort
+ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-manager: rossort
-ms.custom: virtual-network
-ms.openlocfilehash: c37cc134ff40f1b0d158498db9d3c7375ac320a9
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, virtual-network
+ms.openlocfilehash: 0e5e7d073ddfa8942a12fdfeb5056082c93c736b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995361"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026195"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 

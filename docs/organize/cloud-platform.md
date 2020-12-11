@@ -3,16 +3,17 @@ title: 瞭解雲端平臺功能
 description: 瞭解雲端平臺功能，包括來源、範圍和交付成果。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: b6853bc98a2211496fba3bade2f04012e29ae78f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 87326ff3f61ae0d5743beaaf25a6f4b3cf1361c0
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995596"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026484"
 ---
 # <a name="cloud-platform-functions"></a>雲端平台功能
 
@@ -72,7 +73,7 @@ ms.locfileid: "94995596"
 - 建立和驗證平臺架構的部署。
 - 查看新平臺需求來源的發行計畫。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 隨著您的雲端平臺變得更好，調整 [雲端自動化功能](./cloud-automation.md) 可加速採用。 它也可以協助建立最佳做法，同時降低業務和技術的風險。
 

@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8bd22bbdfd3f0d15a11bb6212e5b745a6aaa6bec
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 8d25844c2560fd6463bdb77e1b6d5c5116c33001
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994678"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025753"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>將工作負載部署到 Azure Stack Hub
 

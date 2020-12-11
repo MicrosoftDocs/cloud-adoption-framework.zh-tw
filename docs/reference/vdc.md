@@ -2,17 +2,18 @@
 title: Azure 虛擬資料中心
 description: Azure 虛擬資料中心現在是適用于 Azure 的 Microsoft 雲端採用架構。 瞭解可用來支援這種轉換的資源。
 author: tracsman
-ms.author: jonor
+ms.author: brblanch
 ms.date: 06/16/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6aba3c4ef764f6dc9fa7a324323815d957ed1d43
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: think-tank
+ms.openlocfilehash: 0ee118444a1bad009f5815029e98520c3bc14fbc
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776001"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025838"
 ---
 <!-- docutune:ignore "Azure Virtual Datacenter" -->
 

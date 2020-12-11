@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 83859b5687c8342c8b09ccab36aaefb53a169cd6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: c52a46a16f757d20d53d4f3920f123ffe126f288
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570176"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025226"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 

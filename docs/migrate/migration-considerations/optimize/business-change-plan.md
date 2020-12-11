@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: abc4971315dc590d267265755538d21e1acff7bf
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 40c3b2cce9a5dfca3f2413856b3b8125d5b5a0c7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996650"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025090"
 ---
 <!-- cSpell:ignore Eason -->
 <!-- docutune:casing "Eason Matrix" -->
@@ -59,7 +60,7 @@ ms.locfileid: "94996650"
 
 業務變更方案會因公司而異。 這些問題的目標是要協助讓業務更好地整合到與每個發行相關聯的變更。 不要將每個發行視為要採用的技術變更，而是視為業務變更方案，業務成果就會變得更唾手可得。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在記載並規劃業務變更後，就可以開始進行[業務測試](./business-test.md)。
 

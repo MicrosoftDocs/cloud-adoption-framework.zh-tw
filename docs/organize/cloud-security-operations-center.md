@@ -3,16 +3,17 @@ title: 雲端 SOC 函數
 description: 瞭解雲端安全性作業中心 (SOC) 功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 2d654227b90ecfb08c9b0451e59de32128e0061d
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: eb7a2de76e94a5c0b0a36d28a15338d00807b536
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995494"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026399"
 ---
 <!-- docutune:casing CDOC "Cyber Defense Operations Center" -->
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
@@ -60,6 +61,6 @@ ms.locfileid: "94995494"
 - 風險組織 (如果存在) 
 - 在發生事件之前 (產業專屬的關聯、社區和廠商) 
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 複習 [安全性架構](./cloud-security-architecture.md)的功能。

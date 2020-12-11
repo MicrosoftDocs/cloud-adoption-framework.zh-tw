@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 8e6e052c86964ae11d32a491c36d5ee4e1457e0d
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: c4153a612c1ddf7e0e3c2bfc185157bd4e49677d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447263"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026705"
 ---
 <!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
 
@@ -27,7 +27,7 @@ _圖1：平臺自動化和 DevOps。_
 
 許多傳統的 IT 作業模型與雲端都不相容，而且組織必須進行營運和組織轉型，以針對企業遷移目標進行傳遞。 您應該針對應用程式和中央小組使用 DevOps 方法。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 - 在中央團隊的考慮下，您應該使用管線進行持續整合和持續部署。 使用管線來管理原則定義、角色定義、原則指派、管理群組階層和訂用帳戶。 這些管線可協助確保您可以操作管理多個訂用帳戶，同時仍符合預期狀態。
 
@@ -41,7 +41,7 @@ _圖1：平臺自動化和 DevOps。_
 
 <!-- cSpell:ignore PlatformOps SecOps NetOps AppDevOps AppDataOps AppSecOps -->
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 建立跨功能的 DevOps 平臺小組，以建立、管理及維護企業規模的架構。 此小組應包含來自您中央 IT 團隊的成員、安全性、合規性及業務單位，以確保您的企業有廣大的表現。 下列清單針對中央平臺小組提供一組建議的 DevOps 角色：
 
@@ -101,11 +101,11 @@ _圖1：平臺自動化和 DevOps。_
 
 在中央 IT 小組和應用程式小組之間散發角色、職責和信任，對於組織在大規模採用雲端時所必須採取的營運轉換相當重要。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 中央團隊致力於維持完整控制權，而應用程式擁有者會尋求最大的靈活性。 這些目標之間的平衡可能會大幅影響遷移的成功。
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 下列清單顯示在中央 IT 小組和應用程式小組之間建議的職責散發。 您致力於以基本的集中式相依性來提升遷移和轉換活動的能力。 同時，您也想要支援集中治理跨整個資產的安全性和互用性。
 

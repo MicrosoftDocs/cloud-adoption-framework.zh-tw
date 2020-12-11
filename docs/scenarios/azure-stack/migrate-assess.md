@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 195b630b994a83a39026374f27de297b010ae024
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 5e271a1144aaa09a45b92125c5d6db473932b751
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885468"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025770"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>評估 Azure Stack Hub 遷移的工作負載
 
@@ -49,7 +50,7 @@ ms.locfileid: "88885468"
 
 - 效能
 - 可用性
-- 復原
+- 災害復原
 - 部署或遷移方法
 
 ## <a name="licensing"></a>授權

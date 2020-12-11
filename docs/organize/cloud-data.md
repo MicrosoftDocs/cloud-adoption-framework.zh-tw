@@ -3,16 +3,17 @@ title: 瞭解雲端資料函數
 description: 瞭解雲端資料功能，包括功能的來源、範圍和交付成果。
 author: v-hanki
 ms.author: janet
+ms.date: 07/14/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 07/14/2020
-ms.openlocfilehash: a0231d05fdb05a89499f253fa4564faf286ca1ef
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 4a3fe521c09f15fae623cebcd8b138316ed4a6ce
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995647"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026518"
 ---
 # <a name="cloud-data-functions"></a>雲端資料功能
 
@@ -34,7 +35,7 @@ Azure Synapse Analytics 讓整個企業（從 IT 專案關係人到商務分析�
 
 ## <a name="enterprise-architects-and-data-engineers"></a>企業架構設計人員和資料工程師
 
-這些小組負責將複雜的解決方案與橫跨各種資料工具和解決方案 swath 的元件整合在一起。 它們包括：
+這些小組負責將複雜的解決方案與橫跨各種資料工具和解決方案 swath 的元件整合在一起。 其中包含：
 
 - 結構化與非結構化資料
 - 轉換

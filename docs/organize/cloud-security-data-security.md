@@ -3,16 +3,17 @@ title: 雲端資料安全性的功能
 description: 瞭解雲端資料安全性的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7be2796c2c8033b92e47578eed30611f596df094
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 9a3fb0062db9b9570c2be5d1b1aff370c524933a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995562"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026450"
 ---
 # <a name="function-of-cloud-data-security"></a>雲端資料安全性的功能
 
@@ -40,6 +41,6 @@ ms.locfileid: "94995562"
 - Insider 風險小組
 - 合規性/風險管理小組
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 複習 [雲端基礎結構和端點安全性](./cloud-security-infrastructure-endpoint.md)的功能。

@@ -1,18 +1,19 @@
 ---
 title: 建立虛擬網路閘道並連接至 Vm
 description: 使用私人 IP 位址和密碼，建立虛擬網路閘道、憑證和 VPN，並使用 SSH 連線至虛擬機器擴展集實例。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: db82bc164af0cc6b34235d307bbcb36db2f53939
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 0853343e96436c257ae9c621942a2843d5323cd1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327911"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025668"
 ---
 # <a name="create-a-virtual-network-gateway-and-connect-to-vms"></a>建立虛擬網路閘道並連接至 Vm
 
@@ -25,17 +26,17 @@ ms.locfileid: "96327911"
 在 [Azure 入口網站](https://portal.azure.com)：
 
 1. 搜尋並選取 [ **虛擬網路閘道**]。
-   
+
 1. 選取 [ **建立虛擬網路閘道**]。
-   
+
 1. 在 [ **建立虛擬網路閘道** ] 頁面上，完成下欄欄位：
    - 選取您的 **訂** 用帳戶。
    - 填入閘道的 **名稱** 。
    - 選取 Moodle Azure Resource Manager (ARM) 範本部署的 **虛擬網路** 。
    - 填入 **公用 IP 位址名稱**。
-   
+
 1. 保留其餘欄位的預設填滿值。
-   
+
 1. 選取 [ **審核 + 建立**]，並在驗證通過時選取 [ **建立**]。
 
 ![顯示 Azure 入口網站建立虛擬網路閘道] 畫面的螢幕擷取畫面。](images/vpn-gateway.png)
@@ -74,10 +75,8 @@ az network vnet-gateway create -g <moodle resource group> -n <new virtual networ
 匯出憑證以將其安裝在您的系統上。
 
 1. 從 Windows [開始] 功能表中，選取 [ **執行**]，然後輸入 **mmc**。
-   
-1. 在 Microsoft Management Console 左方流覽窗格的 [ **個人** ] 資料夾底下，選取 [ **憑證**]。
-   
-尋找 **P2SRootCert** 和 **P2SChildCert** 憑證。
+
+1. 在 Microsoft Management Console 左方流覽窗格的 [ **個人** ] 資料夾底下，選取 [ **憑證**]。 尋找 **P2SRootCert** 和 **P2SChildCert** 憑證。
 
 若要匯出根憑證：
 
@@ -130,32 +129,32 @@ az network vnet-gateway create -g <moodle resource group> -n <new virtual networ
 若要設定密碼驗證，請從控制器虛擬機器 (VM) ：
 
 1. 開啟 `sshd` 設定檔以進行編輯：
-   
+
    ```bash
    sudo vi /etc/ssh/sshd_config
    ```
-   
+
 1. 更新下列參數：
-   
+
    - `PasswordAuthentication`從變更 `no` 為 `yes` 。
    - 尋找批註 `UseLogin` 、移除 `#` ，然後將值變更為 `yes` 。
-   
+
 1. 按下 ESC 鍵並輸入 `:wq!` 以儲存變更。
-   
+
 1. `sshd`執行下列命令來重新開機：
-   
+
    ```bash
    sudo systemctl restart sshd
    ```
-   
+
 1. 執行下列命令來設定密碼：
-   
+
    ```bash
    sudo passwd <username>
    ```
-   
-   例如，此命令會 `sudo passwd azureadmin` 設定使用者的密碼 `azureadmin` 。
-   
+
+例如，此命令會 `sudo passwd azureadmin` 設定使用者的密碼 `azureadmin` 。
+
 1. 出現提示時，輸入並重新輸入密碼。
 
 ## <a name="sign-in-to-vms-from-the-controller-vm"></a>從控制器 VM 登入 Vm
@@ -163,15 +162,15 @@ az network vnet-gateway create -g <moodle resource group> -n <new virtual networ
 透過 SSH 登入具有私人 IP 位址的擴展集 Vm。
 
 1. 登入控制器 VM。
-   
+
 1. 執行此命令以連接到私人 VM：
-   
+
    ```bash
    sudo ssh <username>@<private IP address>
    ```
-   
-   例如， `sudo ssh azureadmin@102.xx.xx.xx`
-   
+
+例如：`sudo ssh azureadmin@102.xx.xx.xx`
+
 1. 在提示字元中，輸入密碼。
 
 ## <a name="next-steps"></a>後續步驟

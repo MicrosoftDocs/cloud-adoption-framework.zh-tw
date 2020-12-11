@@ -1,22 +1,23 @@
 ---
 title: 轉換過程中的業務優先順序
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在長期轉換程式期間維持業務的對齊。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何在長期轉換程式期間維護業務一致性。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f2bac40952af40376e57243c75c4dd6910d2bc1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.custom: internal
+ms.openlocfilehash: 1b624e02181925b1e851b2b8c6be86794b4587ea
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787838"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025294"
 ---
-# <a name="business-priorities-maintaining-alignment"></a>商務優先順序：維護對齊
+# <a name="business-priorities-maintaining-alignment"></a>業務優先順序：維持一致
 
-_轉換_通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
+_轉換_ 通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
 
 工作負載的合理化或轉型所需的時間會有所不同，視涉及的技術複雜度而定。 不過，即便此程序可快速地套用至單一工作負載或應用程式群組，要在使用者群間產生實質性的改變，仍需要時間。 要將傳播到現有商務程序的各種層級，則需要更長的時間。 如果預期轉換會形塑消費者的行為模式，可能需要更長的時間才能產生顯著的結果。
 

@@ -3,16 +3,17 @@ title: 瞭解雲端策略的功能
 description: 瞭解雲端策略函式如何在業務成果與雲端採用工作之間提供一致。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/05/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/05/2020
-ms.openlocfilehash: a776c93023eb0b3f5ca9c8ad4fc26d3723b8997d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 1d9f3f82c928ce8855a54a72eabc131d8b6bc937
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574613"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026331"
 ---
 # <a name="cloud-strategy-functions"></a>雲端策略功能
 

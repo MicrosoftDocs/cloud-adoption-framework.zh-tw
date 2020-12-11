@@ -7,13 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 5581d543c2bd48575b1c73bc50d5f8272ebd5926
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 37a603d8211573fa0136a279ab99a737933f5ded
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995664"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026552"
 ---
 # <a name="central-it-team-functions"></a>中央 IT 小組功能
 
@@ -111,7 +111,7 @@ Contoso 採用了中央 IT 小組模型來支援企業的雲端資源。 為了�
 
 Contoso 中央 IT 小組成熟的創意方法，提供了一個不會危及治理或合規性的解決方案，但仍鼓勵採用。 這種代理方法，而不是將雲端原生的方法集中在一起，而是建立卓越雲端中心 (CCoE) 的第一步。 採用這種方法來快速發展現有的原則，可讓您在必要時進行集中式控制，並且在可接受更多彈性時進行治理護欄。 平衡這兩個考慮可減輕雲端集中的集中式 IT 相關風險。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 - 由於中央 IT 團隊逐漸成熟其雲端功能，因此下一個成熟度步驟通常是較鬆散雲端作業的結合。 雲端原生作業管理工具的可用性和 PaaS 優先解決方案較低的營運成本，通常會導致商務團隊 (或更明確地或更明確地在) 企業內 DevOps 小組，以承擔雲端營運的責任。
 

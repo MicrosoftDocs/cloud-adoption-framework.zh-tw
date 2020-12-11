@@ -3,16 +3,17 @@ title: 雲端安全性原則和標準的功能
 description: 瞭解雲端安全性原則和標準的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: c9a141575b8978eb5f16b51b7c5139801bb0fb66
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.custom: internal
+ms.openlocfilehash: a001704126e5433a4bfcfa52cc091cc259d8dc84
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848290"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026382"
 ---
 # <a name="function-of-cloud-security-policy-and-standards"></a>雲端安全性原則和標準的功能
 

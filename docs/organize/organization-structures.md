@@ -7,13 +7,13 @@ ms.date: 05/18/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 31aeba36eaedef0956aacd21647c518afc1b6222
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 7178eede5459350b20c0d50a8b334948cb0737a5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995477"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026416"
 ---
 # <a name="mature-team-structures"></a>成熟的團隊結構
 
@@ -100,7 +100,7 @@ ms.locfileid: "94995477"
 
 此結構與上面中央 IT 小組結構之間的主要差異，是自助和 democratization 的強大焦點。 此結構中的小組會盡可能地以委派控制權的意圖進行組織。 將治理和合規性實務與雲端原生解決方案保持一致，可建立護欄和保護機制。 與中央 IT 小組模型不同的是，雲端原生方法可充分發揮創新，並將作業的額外負荷降至最低。 若要採用此模型，您必須將 IT 流程現代化的相互協定，從商務和 IT 領導力都需要。 此模型不太可能發生茁壯，而且通常需要執行支援。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 在符合組織結構成熟度的特定階段之後，您就可以使用 [RACI 圖表](./raci-alignment.md) 來調整每個小組的責任和責任。
 

@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1890956d6672be0c6d91fa41e784dd491e5b8f28
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 294829da8d89e21bd30b2afdfd7baa550a5b75b7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885400"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025549"
 ---
 # <a name="plan-your-azure-stack-hub-migration"></a>規劃您的 Azure Stack Hub 遷移
 
@@ -33,7 +34,7 @@ ms.locfileid: "88885400"
 
 針對某些工作負載，您對這些問題的答案將會針對該工作負載的 Azure 值與 Azure Stack Hub 的相關討論。
 
-## <a name="assessment-best-practices"></a>評量最佳作法
+## <a name="assessment-best-practices"></a>評量最佳做法
 
 藉由運用 [Azure Migrate 評估數位資產](../../plan/contoso-migration-assessment.md)的最佳作法，您可以加速評估和調整數位資產中的工作負載和資產。 這種最佳做法可讓您深入瞭解您的完整 IT 組合。 它也有助於識別容量、規模和設定的技術需求，以引導您的遷移。
 

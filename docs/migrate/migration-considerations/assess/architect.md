@@ -1,18 +1,19 @@
 ---
 title: 在移轉前建構工作負載
-description: 使用適用于 Azure 的雲端採用架構，以瞭解如何在雲端遷移開始之前定義新的架構。
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何在開始雲端遷移之前定義新的架構。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e5211d263e2833b8cef41d3f8b3cc1d709b89d39
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.custom: internal
+ms.openlocfilehash: b394a4c610818811bf6b2ec764a60800e9074cb4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432898"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025311"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>在移轉前建構工作負載
 
@@ -22,7 +23,7 @@ ms.locfileid: "80432898"
 
 以下是任何移轉工作的典型假設：
 
-- **IaaS.** 通常會假設遷移工作負載主要涉及透過 IaaS 移轉，將虛擬機器從實體資料中心移至雲端資料中心，且需要最低限度的重新開發或重新設定。 這稱為隨即_轉移_。 (接著是例外狀況。)
+- **Iaas。** 通常會假設遷移工作負載主要涉及透過 IaaS 移轉，將虛擬機器從實體資料中心移至雲端資料中心，且需要最低限度的重新開發或重新設定。 這稱為隨即 _轉移_ 。 (接著是例外狀況。)
 - **架構一致性。** 在移轉期間對核心架構所做的變更會大幅增加複雜性。 在新平台上進行已變更系統的偵錯，引進了許多可能難以隔離的變數。 基於這個理由，工作負載應該只會在移轉期間經歷次要變更，且應該徹底測試任何變更。
 - **淘汰測試。** 資產的移轉和裝載會耗用營運和潛在的資本費用。 假設任何要遷移的工作負載都已經過審查，以驗證持續的使用量。 選擇淘汰未使用的資產會帶來立即的成本節約。
 - **調整資產大小。** 假設少數內部部署資產完全使用配置的資源。 在移轉之前，假設資產會調整大小以符合實際的使用需求。
@@ -36,7 +37,7 @@ ms.locfileid: "80432898"
 - **支付技術債務。** 有些老舊的工作負載會帶來大量的技術債務。 這可能會增加任何雲端提供者的裝載成本，進而導致長期挑戰。 當技術債務不自然地增加裝載成本時，就應該評估替代架構。
 - **使用者流量模式。** 現有的解決方案可能取決於現有的網路路由模式。 這些模式可能會大幅降低效能。 此外，引進新的混合式廣域網路 (WAN) 解決方案可能需要數周或甚至數個月的時間。 考量各種核心基礎結構服務的流量模式和變更，及早在建構流程中針對這些障礙預做準備。
 
-## <a name="accelerate-business-value"></a>加速商業價值
+## <a name="accelerate-business-value"></a>加速商務價值
 
 有些案例可能需要不同於所假設 IaaS 重新裝載策略的架構。 以下是一些範例：
 

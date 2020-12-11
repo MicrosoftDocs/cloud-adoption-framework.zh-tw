@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b71028c33fcab389bff9925f0ffc93f85fbff64
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: internal
+ms.openlocfilehash: 568f865589aa94dcc48d33bfde40c857ffdd4379
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283401"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025974"
 ---
 <!-- docutune:casing ARO -->
 
@@ -76,7 +77,7 @@ ms.locfileid: "93283401"
 | 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中流量的 web 伺服器。 |
-| **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
+| **計算最佳化** | CPU 與記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
 | **記憶體優化** | 高記憶體對 CPU。 | 適用于關係資料庫、中型至大型快取，以及記憶體內部分析。 |
 | **儲存體最佳化** | 高磁片輸送量和 i/o。 | 適用于大型資料，以及 SQL 和 NoSQL 資料庫。 |
 | **GPU 最佳化** | 特製化 VM。 單一或多個 GPU。 | 繁重圖形與視訊編輯。 |

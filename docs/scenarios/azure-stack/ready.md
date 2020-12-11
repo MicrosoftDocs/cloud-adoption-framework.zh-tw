@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6799879a957ed75c8c5557aa0787ee6f3fcb4472
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 304034b2549b6ef3018bf291b85b19ca53833cbe
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994542"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025736"
 ---
 # <a name="ready-your-cloud-environment-for-azure-stack-hub-migration"></a>準備好您的雲端環境以進行 Azure Stack Hub 遷移
 

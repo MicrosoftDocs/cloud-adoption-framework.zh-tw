@@ -1,18 +1,19 @@
 ---
 title: 遷移期間的商務測試指導方針
-description: 瞭解如何使用商務測試來請求驗證解決方案效能是否符合預期，並不會妨礙商務程式。
+description: 瞭解如何使用商務測試來請求解決方案效能符合預期且不會妨礙商務程式的驗證。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15ab13f8d5797921e125c3b397b44213afcde249
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.custom: internal
+ms.openlocfilehash: ba4d3deb27dd5023b928b6371b029c417d7c4dd3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432382"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026603"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>在移轉期間進行商務測試 (UAT) 的指引
 

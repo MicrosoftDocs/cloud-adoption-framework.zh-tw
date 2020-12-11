@@ -1,18 +1,19 @@
 ---
 title: 如何在 Moodle 遷移之後追蹤
 description: 瞭解如何在 Moodle 遷移之後進行後續追蹤。 瞭解如何更新記錄檔路徑、重新開機伺服器，以及採取完成遷移所需的其他步驟。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4691a170d9eba47e9e4c0f581801d3561b8b93c8
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 05ad1f31a2ac8e04abb7aa2942d0b564748f870b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327775"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025702"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>如何在 Moodle 遷移之後追蹤
 
@@ -53,7 +54,7 @@ ms.locfileid: "96327775"
 
 ### <a name="restart-servers"></a>重新開機伺服器
 
-輸入下列命令以重新開機 nginx 和 php php-fpm 伺服器：
+輸入下列命令以重新開機 `nginx` 和 `php-fpm` 伺服器：
 
 ```bash
 sudo systemctl restart nginx
@@ -111,7 +112,7 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-    1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
+   1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
 
 ### <a name="update-the-local-html-copy"></a>更新本機 HTML 複本
 
@@ -138,7 +139,6 @@ sudo systemctl restart php<php version>-fpm
 請在主機服務提供者層級遵循下列步驟，將 DNS 名稱對應至 Azure Load Balancer IP：
 
 1. 在控制器虛擬機器中輸入下列命令，以關閉 Moodle 網站上的維護模式：
-
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable
@@ -277,7 +277,7 @@ sudo chown -R /moodle/moodledata
 
 - 如果您的 web 伺服器支援斜線引數，請將其開啟。
 
-- 如果您的網頁伺服器不支援斜線引數，請清除 **Administration** Site administration server HTTP 中的 [**使用斜線引數**] 核取方塊，在 Moodle 中將它們關閉  >  **Site administration**  >  **Server**  >  ****。 您可能會看到此訊息。
+- 如果您的網頁伺服器不支援斜線引數，請清除 **Administration** Site administration server HTTP 中的 [**使用斜線引數**] 核取方塊，在 Moodle 中將它們關閉  >    >    >  ****。 您可能會看到此訊息。
 
   > [!WARNING]
   > 停用斜線引數會導致 SCORM 套件無法運作，而且會顯示斜線引數警告！
@@ -291,6 +291,6 @@ sudo chown -R /moodle/moodledata
 
 ## <a name="next-steps"></a>後續步驟
 
-- [適用於 MySQL 的 Azure 資料庫文件](https://docs.microsoft.com/azure/mysql/)
-- [什麼是虛擬機器擴展集？](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
-- [儲存體帳戶總覽](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [適用於 MySQL 的 Azure 資料庫文件](/azure/mysql/)
+- [什麼是虛擬機器擴展集？](/azure/virtual-machine-scale-sets/overview)
+- [儲存體帳戶總覽](/azure/storage/common/storage-account-overview)

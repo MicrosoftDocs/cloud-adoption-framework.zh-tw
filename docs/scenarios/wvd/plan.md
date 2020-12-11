@@ -7,12 +7,13 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a5611ede4a0fea9ef1623a2c2e3d456afa2b963
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: e942291326393ed5b263ad99957e3231d755e14c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108349"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025464"
 ---
 # <a name="windows-virtual-desktop-planning"></a>Windows 虛擬桌面規劃
 

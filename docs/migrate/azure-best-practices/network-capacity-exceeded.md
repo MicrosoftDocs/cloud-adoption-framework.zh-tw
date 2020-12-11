@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3429f0a47e5d8ed3d5bc88ea95e46df112646d84
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 2595aa2cd9ee5865934e27946092e8cf22047a0f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996905"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025940"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -81,7 +82,7 @@ ms.locfileid: "94996905"
 
 安全性和管理活動不太可能受到範圍內的這項變更所影響。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 返回檢查清單，以確保您的遷移方法完全一致。
 

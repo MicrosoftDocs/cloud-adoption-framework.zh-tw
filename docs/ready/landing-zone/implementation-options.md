@@ -7,12 +7,13 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 980d714bc5394161dd064032fae4b3fa6ea579d6
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: ce0f66a8c21a7c154bcdec4f54a3564ad733bc13
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997109"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026654"
 ---
 # <a name="landing-zone-implementation-options"></a>登陸區域的執行選項
 
@@ -32,7 +33,7 @@ ms.locfileid: "94997109"
 
 下表說明登陸區域的一些實作為選項，以及可能會推動決策的變數。
 
-| 實選項 | Description | 部署速度 | 更深入的設計原則 | 部署指示 |
+| 實選項 | 描述 | 部署速度 | 更深入的設計原則 | 部署指示 |
 |---|---|---|---|---|
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 部署用於遷移低風險資產的基本基礎。 | 從小規模開始 | [設計原則](./migrate-landing-zone.md#design-principles) | [部署](./migrate-landing-zone.md) |
 | [CAF 基礎藍圖](./foundation-blueprint.md) | 新增開始開發治理策略所需的基本工具。 | 從小規模開始 | [設計原則](./foundation-blueprint.md#design-principles) | [部署](./foundation-blueprint.md) |
@@ -50,6 +51,6 @@ ms.locfileid: "94997109"
 | [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md) | 需要重構 | 已包括 | Azure Resource Manager 範本、Azure 入口網站和 Azure 藍圖 | [部署](./migrate-landing-zone.md) |
 | [CAF Terraform 模組](./terraform-landing-zone.md)  | 包含在虛擬資料中心模組中 | 已包括 | Terraform | [部署](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 若要繼續，請選擇上表所示的其中一個 [執行] 選項。 每個選項都包含部署指示的連結，以及引導執行的特定設計原則。

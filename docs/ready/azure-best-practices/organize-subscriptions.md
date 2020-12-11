@@ -7,12 +7,13 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd6b7a979fad4d92f71adeeedb2449eda7e510e6
-ms.sourcegitcommit: ef60c52edbeda552bc8d36b41fde0a285d46ed19
+ms.custom: internal
+ms.openlocfilehash: fdade53cdc4ebbbe437c5a6242cb51d6174124d1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96522980"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026178"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 

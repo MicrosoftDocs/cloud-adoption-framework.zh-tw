@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35f078aeb04c6fda78470e33e27f332f67bdaeee
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: fd4ab0ec5e2205689e78f6780847a8fe3ba28cda
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026093"
 ---
 <!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
@@ -545,7 +546,7 @@ Azure 在 Azure 自動化中有變更追蹤解決方案：
 - 瞭解 [變更追蹤](/azure/automation/automation-change-tracking)。
 - 瞭解 [Azure 自動化功能](/azure/automation/automation-intro)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 檢閱其他最佳做法：
 

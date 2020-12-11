@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: deb75877c22c1e813c99b876da0d6aa8d64bd184
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 62221d86b1bb9b13156118d216e5030fbe1462c7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996242"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026059"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -513,7 +514,7 @@ _圖12：網路_ 監看員。
 
 - 瞭解如何 [在 Azure 虛擬網路中使用 nva](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 檢閱其他最佳做法：
 

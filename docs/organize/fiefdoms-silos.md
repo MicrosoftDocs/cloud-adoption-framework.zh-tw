@@ -7,13 +7,13 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 58167ace28964504758e9705c344b9af320146fb
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: dbbd0512d4c3b9b640f265937f1b94c5de47fdc1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712250"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026348"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：定址接收器和領域
 

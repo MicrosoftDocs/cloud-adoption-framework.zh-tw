@@ -7,12 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: bd07fc8ebe84170369e5b105d991e4918b16a8b1
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 8a60f40671b87b728065daf72ef98535e24c26d7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776086"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026161"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>雲端採用方案中的時程表
 

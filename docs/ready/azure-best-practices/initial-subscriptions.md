@@ -7,12 +7,13 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 35e6806fe93607e4797bdcd20302fec09032778e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 7cdfc50b10507ec1407d46af9e14cfc9e812708d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605200"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026229"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>建立您的初始 Azure 訂用帳戶
 

@@ -3,16 +3,17 @@ title: 雲端安全性事件準備的功能
 description: 瞭解雲端安全性事件準備的功能。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 597b7ef27d8feb4f6caa85c0b315f5143fa393cb
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 7e692468d8263fe23c2dea054f2f97579214f3b1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995545"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026433"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>雲端安全性事件準備的功能
 

@@ -7,13 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 372dc33a6088f2a5ccf1421abd40eb2b71448975
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 2fd34ffd8293645ac3035e54e0ace76ffbd5dde3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996021"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025889"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure 區域決策指南
 
@@ -82,9 +82,9 @@ Azure 是由世界各地的許多區域所組成。 每個 [Azure 區域](https:
 | 區域        | Country     | 當地員工 | 本機外部使用者   | 本機資料中心或資產 | 資料主權需求 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | 北美洲 | 美國         | 是             | 合作夥伴和客戶 | 是                         | 否                            |
-| 北美洲 | 加拿大      | No              | 客戶              | 是                         | 是                           |
-| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 無網路           | Yes                           |
-| 亞太地區  | 南韓 | Yes             | 合作夥伴               | 是                         | 否                            |
+| 北美洲 | 加拿大      | 否              | 客戶              | 是                         | 是                           |
+| 歐洲        | 德國     | 是             | 合作夥伴和客戶 | 無網路           | 是                           |
+| 亞太地區  | 南韓 | 是             | 合作夥伴               | 是                         | 否                            |
 
 ## <a name="relevance-of-data-sovereignty"></a>資料主權的相關性
 

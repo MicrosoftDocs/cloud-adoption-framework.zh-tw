@@ -1,18 +1,19 @@
 ---
 title: 如何準備進行 Moodle 遷移
 description: 瞭解如何準備 Moodle 遷移。 瞭解如何備份 Moodle 檔，並建立遷移所需的資源。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b0f2c719e73248d9b6ae2936cb5162a38aa2b8e8
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: eaed30fb982f10e51de85951a48b89a790549c3a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327877"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025617"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>如何準備進行 Moodle 遷移
 
@@ -63,9 +64,9 @@ ms.locfileid: "96327877"
 - 若要使用 Azure 入口網站，請遵循下列步驟：
 
   1. 開啟 [ [資源群組](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]，然後選取 [ **新增**]。
-  
+
   1. 輸入您的訂用帳戶名稱、資源組名和區域。 如需可用區域的清單，請參閱 [Azure 中的資料](https://azure.microsoft.com/global-infrastructure/data-residency/) 存放區。 記下您輸入的資源組名，讓您可以在稍後的步驟中使用該名稱。
-  
+
   1. 選取 [檢閱 + 建立]。
 
   ![[建立資源群組] 頁面的螢幕擷取畫面，其中包含 Azure 入口網站 [訂用帳戶]、[資源群組] 和 [區域] 方塊，以及 [審核 + 建立] 按鈕。](./images/resource-group.png)
@@ -98,9 +99,9 @@ ms.locfileid: "96327877"
      - 您剛才建立的資源組名
      - 儲存體帳戶名稱
      - 您的區域
-   
+
   1. 針對 [ **帳戶類型**]，輸入 **BlobStorage**。
-  
+
   1. 針對 **複寫**，請輸入 **讀取權限異地冗余儲存體 (GRS)**。
 
   1. 選取 [檢閱 + 建立]。

@@ -7,12 +7,13 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b6034f20eb29473217fca39aff18fe96476b8fcb
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 8546db1193fa9746675e3fabcfde042671e2eb70
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994372"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025481"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -74,6 +75,6 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 在 Windows 虛擬桌面遷移或部署的生產環境範圍中，將所有考慮納入考慮之後，就可以開始處理。 採用反復的步調，採用小組現在會部署主機集區、應用程式和使用者設定檔。 完成此階段之後，就可以開始 [測試和上線使用者](./migrate-release.md) 的部署後工作。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 [將 Windows 虛擬桌面部署發行至生產環境](./migrate-release.md)
