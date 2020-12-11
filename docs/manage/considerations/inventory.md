@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e28906443deddf21b4058a07ff4af7c66f5bed3f
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 1edcdd42d4b635929410a7e54c2f865f8ab4dc60
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879764"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016267"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -49,7 +50,7 @@ ms.locfileid: "94879764"
 - 責任和可見度
 - 清查
 - 集中式記錄
-- Change tracking
+- 變更追蹤
 - 效能遙測
 
 ### <a name="responsibility-and-visibility"></a>責任和可見度
@@ -66,7 +67,7 @@ ms.locfileid: "94879764"
 
 強制一致使用集中式記錄是建立可重複作業的第一步。 您可以透過公司原則來完成強制執行。 但是，如果可能的話，應該自動化強制執行，以確保一致性。
 
-### <a name="change-tracking"></a>Change tracking
+### <a name="change-tracking"></a>變更追蹤
 
 變更是技術環境中的一個常數。 對多個工作負載的變更感知和瞭解對可靠的作業而言是不可或缺的。 任何雲端管理解決方案都應該包含瞭解技術變更時間、方式和原因的方法。 如果沒有這些資料點，則會大幅妨礙運作補救工作。
 
@@ -108,7 +109,7 @@ ms.locfileid: "94879764"
 
 沒有動作的資料會產生極少的報酬。 雲端管理的擴充能力可能超越雲端原生工具和流程。 為了配合更廣泛的處理常式，可能需要增強雲端管理基準，以納入報告、IT 服務管理整合或資料集中化。 在營運成熟度的各個階段中，雲端管理可能需要包含下列一或多個。
 
-### <a name="report"></a>Report
+### <a name="report"></a>報表
 
 與商務專案關係人的承諾相關的離線程式和溝通通常需要報告。 自助報告或定期報告可能是增強管理基準的必要元件。
 

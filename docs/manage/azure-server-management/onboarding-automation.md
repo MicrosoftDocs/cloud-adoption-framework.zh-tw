@@ -7,12 +7,13 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8baa837b01fb2093628afdbf754ea1fd902fe2f7
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 13a26921069334db6caefa11a0b7bac54ecbd269
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880308"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016896"
 ---
 # <a name="automate-onboarding"></a>自動上線
 

@@ -7,12 +7,13 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5af275b0309008c1ebcab8c1f3ff9edba2789b2e
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 7b39a03b54c2ebd99db4fc6dd508e914620f4257
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880359"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016964"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>在單一 VM 上啟用伺服器管理服務以進行評估
 

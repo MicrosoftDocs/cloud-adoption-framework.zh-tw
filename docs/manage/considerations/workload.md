@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a79c9e158bddacacce13730b017352c9f2e027a9
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 950e48e41b53bd99be14a694992cd920e34df4e9
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996344"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016182"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -71,14 +72,14 @@ _排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因
 工作負載中的資料和通訊投資將會針對下列三個領域之一的進行中的作業，提供改進的建議：
 
 - 技術債務解決方案
-- 自動補救
+- 建議的補救方式
 - 改進的系統設計
 
 ### <a name="technical-debt-resolution"></a>技術債務解決方案
 
 最佳的工作負載作業方案仍需要補救。 當您的雲端管理小組試圖保持聯繫以瞭解採用的工作和版本時，小組同樣應該定期分享補救需求，以確保技術債務和 bug 是您開發小組的持續優先。
 
-### <a name="automated-remediation"></a>自動補救
+### <a name="automated-remediation"></a>建議的補救方式
 
 藉由套用排列準則，我們可以說，80% 的負面商務衝擊可能是來自服務事件的20%。 當這些事件無法在正常的開發週期中解決時，對補救自動化的投資可大幅降低業務中斷。
 
@@ -94,7 +95,7 @@ _排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因
 
 為了協助改善整體作業， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供一種方法來評估特定工作負載，以遵守這些要素。 將支柱套用至平臺作業和工作負載作業。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 完全瞭解雲端採用架構內的管理方法，現在您已準備好執行雲端管理原則。 瞭解如何在您的作業環境內使此方法可採取動作。
 

@@ -7,12 +7,13 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d12f568fe12b82b7a1a89cf0663e88ba2a107bb4
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 2f4ddeb537e958ae6582fd66e8fad613266d7ef4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880495"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017083"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -86,7 +87,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 建議您為所有伺服器啟用更新管理的解決方案。 適用于 Azure Vm 和內部部署伺服器的更新管理免費。 如果您透過自動化帳戶啟用更新管理，工作區中就會建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理解決方案所涵蓋的電腦。
 
-若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取 **Update Management**[  >  **Manage machine**  >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
+若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取[  >    >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
 
 ![Azure 入口網站中更新管理的螢幕擷取畫面](./media/onboarding-configuration1.png)
 

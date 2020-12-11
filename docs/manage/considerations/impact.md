@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e97f09727cb383f0092b1a23a170d963c7a16305
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: b9a3f2a334a6f015b8570d8ef2b2e9b41bcc6fcf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879866"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016505"
 ---
 # <a name="business-impact-in-cloud-management"></a>雲端管理的業務衝擊
 

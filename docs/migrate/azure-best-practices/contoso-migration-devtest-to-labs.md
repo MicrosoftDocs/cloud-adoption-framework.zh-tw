@@ -7,12 +7,13 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 68941187e45d393ac21e00027a7b54998625597a
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: think-tank
+ms.openlocfilehash: 4ee7606522b967849eff4805ddaebbb48021cf2f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283362"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015485"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>將開發/測試環境遷移至 Azure DevTest Labs
 
@@ -22,7 +23,7 @@ ms.locfileid: "93283362"
 
 Contoso 在將其開發/測試環境移至 Azure 時，有數個可用的選項。
 
-| 移轉選項 | 結果 |
+| 移轉選項 | 成果 |
 | --- | --- |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | [評定](/azure/migrate/tutorial-assess-vmware-azure-vm) 及 [遷移](/azure/migrate/tutorial-migrate-vmware) 內部部署 vm。 <br><br> 使用 Azure 基礎結構即服務 (IaaS) 來執行開發/測試伺服器。 <br><br> 使用 [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)管理 vm。 |
 | [DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | 快速布建開發與測試環境。 <br><br> 使用配額和原則將浪費降至最低。 <br><br> 設定自動關機將成本降至最低。 <br><br> 建立 Windows 和 Linux 環境。 |
@@ -107,7 +108,7 @@ Contoso 會使用 DevTest Labs 將其開發應用程式和資料庫 Vm 遷移至
 
 _圖2：遷移程式。_
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 要執行此案例所需的項目。
 
@@ -151,13 +152,13 @@ _圖4：建立新的 DevTest Labs 實例。_
 
 1. 設定虛擬網路：
 
-   1. 在入口網站中，Contoso 會開啟 DevTest Labs 實例，並選取設定 **和原則** 。
+   1. 在入口網站中，Contoso 會開啟 DevTest Labs 實例，並選取設定 **和原則**。
 
       ![ContosoDevTestLabs 設定中的 [設定與原則] 的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/configure-lab.png)
 
       _圖5： DevTest Labs 實例：設定和原則。_
 
-   2. Contoso 會選取 [ **虛擬網路** ]，再選擇 [新增]，然後  >  **+ Add** `vnet-dev-eus2` 選取 [ **儲存** ]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
+   2. Contoso 會選取 [**虛擬網路**]，再選擇 [新增]，然後  >   `vnet-dev-eus2` 選取 [**儲存**]。 這可讓開發虛擬網路用於 VM 部署。 部署 DevTest Labs 實例時，也會建立虛擬網路。
 
       ![新增虛擬網路之選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/vnets.png)
 
@@ -236,7 +237,7 @@ Contoso 必須為遠端開發人員建立 Windows 虛擬桌面。
 
 1. Contoso 會為應用程式和資料庫 Vm (可重複使用的基底) 建立公式，並使用公式來布建應用程式和資料庫 Vm。
 
-   Contoso 會選取 **公式**  >  **+ 新增** ，然後選取 **Windows Server 2012 R2 Datacenter** 基礎。
+   Contoso 會選取 **公式**  >  **+ 新增**，然後選取 **Windows Server 2012 R2 Datacenter** 基礎。
 
    ![顯示 Windows 2012 R2 基底選取範圍的螢幕擷取畫面。](./media/contoso-migration-devtest-to-labs/windows-2012-base.png)
 
@@ -327,6 +328,6 @@ Contoso 安全性小組會檢查 Azure Vm 以判斷任何安全性問題。 若�
 
 在本文中，Contoso 將其開發環境移至 DevTest Labs。 它也將 Windows 虛擬桌面實作為遠端和合約開發人員的平臺。
 
-**需要其他協助嗎？**
+**需要其他協助？**
 
 立即在您的訂用帳戶中[建立 DevTest labs 實例](/azure/devtest-labs/devtest-lab-create-lab)，並瞭解如何使用[適用于開發人員的 DevTest labs](/azure/devtest-labs/devtest-lab-developer-lab)。

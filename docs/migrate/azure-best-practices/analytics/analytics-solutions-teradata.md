@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f81930fc3fd90a83cfb3a175d744639cdd0290dd
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 7e5358f5a05b4d1d1c2539be10d728c9cd94b12c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996293"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015417"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
@@ -237,6 +238,6 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 - **工作負載管理的資源類別：** Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 如需有關執行 Teradata 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

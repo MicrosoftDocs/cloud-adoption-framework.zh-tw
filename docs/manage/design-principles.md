@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e271f4da4b4cb5f4dc93f5e67793d0c0531957b6
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: b89f54d380bf8a9e6a828c951d5720f464f2d888
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879543"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016148"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和 advanced 作業
 
@@ -77,7 +78,7 @@ CCoE 中角色的自然對齊如下所示：
 
 改善系統設計最能有效改善任何常見平台的作業。 系統設計改進有助於提高穩定性並減少業務中斷。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-作為此架構的補充， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供指導原則，以改善平臺或特定工作負載的品質。 此架構著重于改善五個卓越的架構要素：
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
@@ -89,7 +90,7 @@ CCoE 中角色的自然對齊如下所示：
 
 若要改善系統設計，請進一步瞭解 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework)。 當您的系統設計改善時，請返回本文以找出新的機會，以改善及調整整個環境的改進。
 
-### <a name="automated-remediation"></a>自動補救
+### <a name="automated-remediation"></a>建議的補救方式
 
 有些技術債務無法或不應解決。 解決方案可能需要太大的成本，所以就未矯正。 它可能會進行規劃，但可能會有較長的專案持續時間。 業務中斷可能不會對業務造成重大影響，或者業務優先順序是快速復原，而不是投資復原能力。
 
@@ -105,7 +106,7 @@ CCoE 中角色的自然對齊如下所示：
 
 如需發行至服務類別目錄的相關資訊，請參閱 [發行至服務類別目錄](/azure/managed-applications/publish-service-catalog-app)的一系列。
 
-### <a name="continuous-improvement"></a>持續改進
+### <a name="continuous-improvement"></a>持續改善
 
 平台特製化和平台作業都仰賴採用、平台、自動化和管理小組之間的強大意見反應迴圈。 以資料作為這些意見反應迴圈的基礎，可讓每個小組做出明智的決策。 針對可達成長期商務承諾的平臺作業，請務必利用集中式平臺專屬的深入解析。 因為容器和 SQL Server 是兩個最常見的集中管理平臺，請考慮下列文章來開始進行連續的改進資料收集：
 

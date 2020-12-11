@@ -7,12 +7,13 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a94062dad8e600431319b976fef4d728be290f8b
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: eb784eb557c6296e454e1f79bc8151152645dd0c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880580"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017151"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -38,7 +39,7 @@ Azure 自動化清查服務預設不會監視檔案或登錄設定。 解決方�
 
 ![Azure 入口網站中 Log Analytics 查詢編輯器的螢幕擷取畫面](./media/change-tracking2.png)
 
-此查詢會搜尋檔案內容的變更，這些檔案的路徑包含「主機」一詞。 您也可以藉由變更 path 參數來搜尋特定的檔案。 (例如，`FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
+此查詢會搜尋檔案內容的變更，這些檔案的路徑包含「主機」一詞。 您也可以藉由變更 path 參數來搜尋特定的檔案。 (例如：`FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
 
 查詢傳回結果之後，請選取 [ **新增警示規則** ] 以開啟 [警示規則編輯器]。 您也可以透過 Azure 入口網站中的 Azure 監視器來取得此編輯器。
 

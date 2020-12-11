@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5e2bdbc808b6360691c39f4d124cd3dd7ede6c75
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 8209ade18c3396189b9617aeccece3970e470091
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879730"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016250"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的作業合規性
 

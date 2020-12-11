@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ade0514d0f7d0aec344f7542e94face9ac437e3a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: a22e95e2a8c44dc6a08c6d0b5c147786244a981e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878668"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018545"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>在 Azure 中與裝置互動的工具
 
@@ -24,7 +25,7 @@ ms.locfileid: "88878668"
 
 這種類型的數位發明可透過下列任何等級的環境體驗來傳遞。 這些層級會與上述影像中所示的方法一致。 此頁面左側的目錄列出加速數位發明的技術指引。 這些文章會依環境經驗等級分組，以配合方法。
 
-- 行動**體驗：** 行動裝置應用程式通常是客戶周圍環境的一部分。 在某些情況下，行動裝置可能會提供足夠的互動功能來使解決方案環境更穩固。
+- 行動 **體驗：** 行動裝置應用程式通常是客戶周圍環境的一部分。 在某些情況下，行動裝置可能會提供足夠的互動功能來使解決方案環境更穩固。
 - **混合現實：** 有時，客戶的自然周圍都必須透過混合現實來改變。 在該混合現實內吸引客戶，可提供一種環境體驗。
 - **整合現實：** 相較于真正的環境，整合式現實解決方案著重于使用客戶的實體裝置，將解決方案整合到自然行為中。
 - **調整的現實：** 當上述任何解決方案使用預測性分析來提供該客戶自然周圍環境內的客戶互動時，該解決方案會建立最高形式的環境體驗。

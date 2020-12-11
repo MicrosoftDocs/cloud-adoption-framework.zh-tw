@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4425cfe78253f4fbbe1db910ef9635a19f114d4
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: think-tank
+ms.openlocfilehash: 3a14d0e9a9b6f49bf8df6f094888bf8bdf152b78
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283259"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015621"
 ---
 # <a name="azure-synapse-analytics-solutions-and-migration-for-an-oracle-data-warehouse"></a>Azure Synapse Analytics Oracle 資料倉儲的解決方案和遷移
 

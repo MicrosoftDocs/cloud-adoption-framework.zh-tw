@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 71c155ccb75091681bd760fda794279c73f948c9
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: b6ad43c6c0f918dd07b5923dedadcfdf765c4fdb
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879645"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016199"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 

@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9b2d610942615c3f86e9e5cc0dbbb194d8192293
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 77f2bd2db91ec8c335675d69ee115fb1f9117bff
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879985"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016522"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務一致性
 

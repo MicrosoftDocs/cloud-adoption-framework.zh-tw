@@ -2,17 +2,18 @@
 title: 收集雲端中的監視資料
 description: 瞭解如何觀察雲端解決方案的健康情況和可用性，以收集適當的監視資料。
 author: MGoedtel
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a1f95222aac6d2b69cc7a2835d7eeaf12df575f4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: 85ff480d99bd816c4cf65292d623af5c96f23753
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602768"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015854"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 

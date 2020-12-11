@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3139662b0ef42661dc85d64a44294c3ac1bce09e
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: a146c08eeb645de42cdc06e8a0d7c214e1ca845c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880920"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018171"
 ---
 # <a name="democratize-data-with-digital-invention"></a>使用數位發明將大眾化資料
 

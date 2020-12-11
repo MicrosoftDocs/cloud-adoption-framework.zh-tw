@@ -7,12 +7,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7a9d71dcbb294d9ef4dcca4fa036b6a003332f9d
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: internal
+ms.openlocfilehash: 876906c45f1f12ec82cc24eec0b499a00af8a2ea
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283157"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017967"
 ---
 # <a name="measure-for-customer-impact"></a>測量客戶影響
 

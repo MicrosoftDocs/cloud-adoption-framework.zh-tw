@@ -7,12 +7,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 36987a60f7dcf5144623338074991678f60ccf36
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 488d6620f85631542f2806f1f7b6d73069764948
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880903"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018205"
 ---
 <!-- docutune:casing "Oxford English Dictionary" -->
 

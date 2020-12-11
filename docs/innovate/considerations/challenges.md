@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 37fe92fce8f64177cb198df6baa335c800e11916
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 2b85913a8a288bee986bbeb50e1c65becbbc5831
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878379"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018154"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>常見的阻礙和創新挑戰
 

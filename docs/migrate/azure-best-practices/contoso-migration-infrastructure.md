@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: af6ed897f86978058f83e5c6c6dc600f10fd7072
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 801d24aaec9a381e2b60eb8874a1a70cea2054b5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713610"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015757"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -718,7 +719,7 @@ Contoso 想要開始兩個原則。 它想要有一個原則，以確保資源�
 Contoso 使用內建的原則定義 [允許的位置] 來限制資源區域。
 
 1. 在 Azure 入口網站中，選取 [所有服務]，然後搜尋 [原則]。
-2. 選取 **Assignments**  >  **指派指派原則**。
+2. 選取  >  **指派指派原則**。
 3. 在原則清單中，選取 [允許的位置]。
 4. 將 [ **範圍** ] 設定為 Azure 訂用帳戶的名稱，並選取允許清單中的兩個區域。
 
@@ -840,7 +841,7 @@ _圖45：安全性模型。_
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-| 動作 | 名稱 | 來源 | 目標 | Port |
+| 動作 | 名稱 | 來源 | 目標 | 連接埠 |
 | --- | --- | --- | --- | --- |
 | `Allow` | `AllowInternetToFE` | `VNET-HUB-EUS1`/`IB-TrustZone` | `APP1-FE` | 80、443 |
 | `Allow` | `AllowWebToApp` | `APP1-FE` | `APP1-APP` | 80、443 |

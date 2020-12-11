@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5486c3247acf44e3326e1eb2e8551ee3dd5e5edd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 3bd66ccd89a150b2719732b558ffa4879162b099
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571621"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016539"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理的業務重要性
 
