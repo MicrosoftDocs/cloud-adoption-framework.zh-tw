@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 1549bc6870180efd9c5223844b11f3e28b212f85
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: a0c706b457b26bc887a2995fc7f98d64c14b61dd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994321"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023475"
 ---
 # <a name="migration-tools-decision-guide"></a>移轉工具決策指南
 

@@ -2,17 +2,18 @@
 title: 大型主機移轉概觀
 description: 將大型主機工作負載、應用程式和資料庫遷移至 Azure，以獲得經過證實、具有高可用性且可調整的基礎結構，而不必承受許多大型主機的缺點。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cf30852204f3ce6b5911787e79beb99a072b6ba3
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 266a6e417e651f81d6440b7d7fd0e6d517f7e166
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712590"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018851"
 ---
 <!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC TWS-OPC CA-SAR IMS/TM IMS/DC "IMS/Data Communications" "Micro Focus Server Enterprise Edition" VSE -->
 <!-- docutune:ignore JOB Natural SPOOL -->

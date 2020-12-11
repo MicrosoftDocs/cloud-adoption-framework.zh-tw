@@ -7,13 +7,13 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 973fd0cdcbb879e8b0e9c6a4604123609a3df183
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 99a006008234d14ab9ed7e26727dc3fa8276dc19
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880011"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020245"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>在適用於 Azure 的 Microsoft 雲端採用架構中治理
 

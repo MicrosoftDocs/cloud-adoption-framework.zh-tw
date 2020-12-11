@@ -7,12 +7,13 @@ ms.date: 08/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b04d217a426706a7eaf7826ea2b4fbcedee437fa
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.custom: internal
+ms.openlocfilehash: ea08b65ee34b431b9088b22c2e5304fcedfb2eb5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91620868"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022625"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 

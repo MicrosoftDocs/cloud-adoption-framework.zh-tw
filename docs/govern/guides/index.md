@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: a39440dff04e267a80fa085dfdf6c565d33762cb
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 3a854dd2b326fb9681cb62b06e80c2ba2467609d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604839"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020908"
 ---
 # <a name="cloud-governance-guides"></a>雲端治理指南
 
@@ -87,7 +87,7 @@ CAF 企業級登陸區域會在 Azure 平台內部署您自己的「孤立雲端
 
 雖然較小型的小組可受益於 CAF 企業級登陸區域所提供的架構和建議。 但我們的目標是要持續簡化 CAF 企業級登陸區域實作，使其更方便較小型的小組進行實作。 此方法目前的設計訴求是要引導中央 IT 小組管理大型雲端環境。
 
-[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端**裝載 1000 個以上的資產 (應用程式、基礎結構或資料資產)** 。
+[CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)方法著重於具有以下中期目標 (24 個月內) 的採用小組：在雲端 **裝載 1000 個以上的資產 (應用程式、基礎結構或資料資產)** 。
 
 對於符合下列準則的組織，您也可以開始使用 [CAF 企業級登陸區域](../../ready/enterprise-scale/index.md)：
 

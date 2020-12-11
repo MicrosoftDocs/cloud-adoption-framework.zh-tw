@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 95871126f39751bade70e81790ec9ae81519b661
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 86d4e01e4c5cffa81d7109b30fdac2efc014a351
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605518"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023594"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 

@@ -7,13 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: seo-azure-migrate
-ms.openlocfilehash: f90c1ef74d63d282270eeb022ca6e4ec54300071
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal, seo-azure-migrate
+ms.openlocfilehash: c36e3be3bf00589cbe99d230b3e845353b8b9a85
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996072"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013666"
 ---
 # <a name="azure-cloud-migration-best-practices-checklist"></a>Azure 雲端移轉最佳做法檢查清單
 

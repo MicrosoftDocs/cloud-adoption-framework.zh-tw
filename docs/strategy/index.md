@@ -7,12 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 2f00f46c7b3ccf0c716d01353e5ffa61437c7188
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.custom: internal
+ms.openlocfilehash: 93676cd9b9ff491d44dff7e752d891d9986fae75
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621394"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023951"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>開發雲端採用策略
 

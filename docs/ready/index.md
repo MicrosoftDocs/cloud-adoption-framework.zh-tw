@@ -7,12 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 66f0ac172208453cd9c668ab36aa8c828b48269b
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.custom: internal
+ms.openlocfilehash: d006f14403ca6b1762678c935b4b07c41efe0584
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621360"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023662"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>確定已對雲端採用方案準備好環境
 

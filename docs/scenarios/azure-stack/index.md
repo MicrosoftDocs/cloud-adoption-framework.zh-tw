@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3158a14c5fd71af6b342242f774b9e525f93d87c
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 1c188c57de5881829b57d606e78692d456e4272d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997024"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025821"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack：在您的資料中心內執行 Azure 的策略選項
 

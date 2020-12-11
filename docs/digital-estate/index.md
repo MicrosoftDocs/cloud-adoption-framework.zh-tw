@@ -7,12 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 102d20998da273dbcf8936be4efdc3b1faf52188
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: ff7a924f784ea49f4bd0a7ae2f7cd8ce62902d9e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774080"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022914"
 ---
 # <a name="what-is-a-digital-estate"></a>什麼是數位資產？
 

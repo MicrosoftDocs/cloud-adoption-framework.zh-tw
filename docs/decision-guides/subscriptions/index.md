@@ -7,19 +7,19 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 4312329fa5747bfaa2ad12de308f156a6aa74e99
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 979be1c51363d2e3073527b5bb5a8121b6bacb93
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881524"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023067"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
 有效的訂用帳戶設計可協助組織建立一種結構，以在雲端採用期間在 Azure 中組織及管理資產。 本指南將協助您決定何時要建立其他訂用帳戶並擴充管理群組階層，以支援您的商務優先順序。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 採用 Azure 時，首先請建立 Azure 訂用帳戶、將其與帳戶建立關聯，然後將虛擬機器和資料庫等資源部署至訂用帳戶。 如需這些概念的概觀，請參閱 [Azure 基本概念](../../ready/considerations/fundamental-concepts.md)。
 

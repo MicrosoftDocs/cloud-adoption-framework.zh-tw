@@ -7,13 +7,13 @@ ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: operating-model
-ms.openlocfilehash: 395c7533ed08982add6b4d6e309fb54257326947
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal, operating-model
+ms.openlocfilehash: 449139c6fc65e1f33dd6c4f8380aef73bdc6f4f3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995784"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026586"
 ---
 <!-- docutune:casing GRC -->
 <!-- cspell:ignore reimagine -->

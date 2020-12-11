@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 9c5d0b90513f5bfedef2dfdb030cf58cb166ae86
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: internal
+ms.openlocfilehash: e4667582281c7fa6670bf70be801398aa0d08f44
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283123"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023288"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 

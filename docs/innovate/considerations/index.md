@@ -7,12 +7,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6036a110b393af78901ea92d0b3fe58630b983cc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 04beb7ccc9d66ecac5658db7bfa5919f25b0f152
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878073"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018120"
 ---
 # <a name="innovation-in-the-digital-economy"></a>數位經濟的創新
 
@@ -55,7 +56,7 @@ ms.locfileid: "88878073"
 
 ## <a name="commitment-to-transparency"></a>承諾保持透明
 
-若要了解創新方法中的測量數據，請務必先了解透明度承諾。 創新只能在符合*成長心態*的環境中發展。 必須要有從經驗中學習的文化才能發展出成長心態。 成功的創新和持續學習源自於承諾讓測量數據保持透明。 這是屬於雲端採用團隊的勇敢承諾。 不過，要讓這項承諾有意義，就必須同時承諾在領導團隊和雲端策略團隊內部保持透明。
+若要了解創新方法中的測量數據，請務必先了解透明度承諾。 創新只能在符合 *成長心態* 的環境中發展。 必須要有從經驗中學習的文化才能發展出成長心態。 成功的創新和持續學習源自於承諾讓測量數據保持透明。 這是屬於雲端採用團隊的勇敢承諾。 不過，要讓這項承諾有意義，就必須同時承諾在領導團隊和雲端策略團隊內部保持透明。
 
 透明之所以重要，是因為測量客戶影響並不會解答對或錯的問題。 影響的測量數據也不代表採用團隊的工作品質或效能。 相反地，它們代表的是學習機會和更加契合客戶的需求。 誤用創新計量可能會扼殺該文化。 最後，這類誤用會導致操縱計量，進而導致發明、支援人員，乃至誤用資料的管理結構長期失敗。 領導人和參與者同樣應該避免將測量數據用於學習機會和改善 MVP 解決方案以外的任何其他地方。
 

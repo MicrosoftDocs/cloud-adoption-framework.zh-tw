@@ -7,12 +7,13 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d39d31dd5c8a8a280deb23be9962835bdaa318b6
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 4a94db9b868c1c419ff19d5bd7cc7a73fddb2bc6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604118"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016998"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure 伺服器管理服務的概觀
 

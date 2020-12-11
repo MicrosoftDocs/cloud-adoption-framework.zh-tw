@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 249a5bcd3fcbefc1378fd2ee0cf8757a5b85b76e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 0e31ec9f19f504afead27744919d4c34f700dd1e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879790"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019956"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>準備公司的雲端 IT 原則
 

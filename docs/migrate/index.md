@@ -7,13 +7,13 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: seo-azure-migrate
-ms.openlocfilehash: 8549f6719acdc13e32f005f085c1e99ec1d53b7d
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: internal, seo-azure-migrate
+ms.openlocfilehash: 6909b8a1aa3d5eeb8b2f8595c81e01b2960b13ff
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334913"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025345"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -47,7 +47,7 @@ ms.locfileid: "92334913"
 下列項目符號將概述此程序的各個階段 (如上圖所示)：
 
 - **評估工作負載：** 評估工作負載以評估成本、現代化和部署工具。 此程序主要會更深入檢視合理化選項，以驗證或挑戰在先前的探索和評估期間所做的假設。 此時也會仔細研究使用者模式和相依性，以確保工作負載在移轉後能夠達到技術成功。
-- **部署工作負載：** 評估工作負載之後，這些工作負載的現有功能會在雲端中進行複寫 (或改良)。 此時可能需進行_隨即轉移_，或_重新裝載_到雲端。 但此階段中更常見的情況是，許多支援這些工作負載的資產會現代化，以利用雲端的優勢。
+- **部署工作負載：** 評估工作負載之後，這些工作負載的現有功能會在雲端中進行複寫 (或改良)。 此時可能需進行 _隨即轉移_，或 _重新裝載_ 到雲端。 但此階段中更常見的情況是，許多支援這些工作負載的資產會現代化，以利用雲端的優勢。
 - **發行工作負載：** 功能複寫到雲端後，即可測試、最佳化、記載和發行工作負載，以用於進行中的作業。 此程序中的重要關鍵是，必須檢閱已移轉的工作負載，並將其遞交給控管、作業管理和安全性小組，以持續支援這些工作負載。
 
 > [!NOTE]

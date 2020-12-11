@@ -2,17 +2,18 @@
 title: 在雲端採用架構中的 Kubernetes
 description: 了解雲端採用架構中的 Kubernetes。
 author: sabbour
-ms.author: asabbour
+ms.author: brblanch
 ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 658966ece13b5d26e5b016fa189eacf2ce1d6f6f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: think-tank
+ms.openlocfilehash: aa961d688562585e0e920dbc72a69abf731ffd6b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878022"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017491"
 ---
 # <a name="kubernetes-in-the-cloud-adoption-framework"></a>在雲端採用架構中的 Kubernetes
 
