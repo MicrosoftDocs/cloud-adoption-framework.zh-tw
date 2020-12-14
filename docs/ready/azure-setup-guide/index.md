@@ -1,20 +1,20 @@
 ---
-title: Azure 設定指南：開始之前
-description: 透過逐步指南了解如何有效地為組織設定 Azure。
+title: Azure 設定指南概觀
+description: 取得 Azure 設定指南的概觀。 該指南可協助您了解如何透過逐步指南，為組織有效地設定 Azure。
 author: timleyden
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4ebb8dc70a373d2dd458c074689bf201d4a05f60
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: 7b8fd3f67e06ed839892d4e6fadfc8f7073a3f3b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275584"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026076"
 ---
 # <a name="azure-setup-guide-overview"></a>Azure 設定指南概觀
 

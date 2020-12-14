@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 7917768760eec85e4992bda3e11c892b275f9652
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 434c7ab67bfbbefdc123297e70d14bbac011da03
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605501"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023560"
 ---
 # <a name="encryption-decision-guide"></a>加密決策指南
 
@@ -81,7 +81,7 @@ ms.locfileid: "96605501"
 
 ### <a name="data-in-transit"></a>資料傳輸中
 
-資料傳輸中代表資料正在內部資源之間、在資料中心或外部網路之間，或在網際網路上移動。
+資料傳輸中代表資料正在內部網路資源之間、在資料中心或外部網路之間，或在網際網路上移動。
 
 傳輸中資料的加密通常是透過要求網路流量所需的 SSL/TLS 通訊協定來完成。 雲端託管資源與外部網路或公用網際網路之間的流量應一律加密。 根據預設，PaaS 資源通常會強制執行 SSL/TLS 加密。 針對虛擬網路內部所裝載 IaaS 資源之間的流量，您的雲端採用小組和工作負載擁有者應考慮對其進行強制加密。
 
