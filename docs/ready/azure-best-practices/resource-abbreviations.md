@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 8f171ea017e4a2501f255d0cb51a9de725d61e26
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: af3f214209911c5aad8f31f11cdb88c7886c3f51
+ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026144"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97521742"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure 資源類型的建議縮寫
 
@@ -34,7 +34,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | API 管理服務實例 | `apim-` |
 | 受控識別 | `id-` |
 
-## <a name="networking"></a>網路
+## <a name="networking"></a>網路功能
 
 | 資產類型 | 縮寫 |
 |--|--|
@@ -159,13 +159,14 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 |--|--|
 | 自動化帳戶 | `aa-` |
 | Azure 監視器動作群組 | `ag-` |
+| Azure 範疇實例 | `pview-` |
 | 藍圖 | `bp-` |
 | 藍圖指派 | `bpa-` |
 | 金鑰保存庫 | `kv-` |
 | Log Analytics 工作區 | `log-` |
 | Application Insights | `appi-` |
 
-## <a name="migration"></a>移轉
+## <a name="migration"></a>遷移
 
 | 資產類型 | 縮寫 |
 |--|--|

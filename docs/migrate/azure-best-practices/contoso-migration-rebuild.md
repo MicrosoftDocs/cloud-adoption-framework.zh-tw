@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: fcde3cf74bcafc67a4399859f7be4b1eb10ef3f5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 281132c0668f6556520be15540c084376c05e8ae
+ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015230"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97521866"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -352,11 +352,11 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
       ![顯示在 Azure DevOps 中建立階段名稱的螢幕擷取畫面。](./media/contoso-migration-rebuild/back-pipe4.png)
 
-        _Figure 30: The stage name._
+    _圖30：階段名稱。_
 
       ![顯示在 Azure DevOps 中建立管線名稱的螢幕擷取畫面。](./media/contoso-migration-rebuild/back-pipe5.png)
 
-        _Figure 31: The pipeline name._
+    _圖31：管線名稱。_
 
 5. 他們會新增成品。
 
