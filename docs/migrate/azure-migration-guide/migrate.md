@@ -2,19 +2,19 @@
 title: 遷移資產
 description: 藉由識別要使用的適當工具，包括原生工具、第三方工具和專案管理工具，來起始移轉到 Azure。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 63f9d6997f1ab8c554a89fd6927408fc2b76a7b1
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: c6bf840e7cb10051ade264738ab09c42c9213fe4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995953"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025362"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
@@ -76,6 +76,7 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 ::: zone-end
 
 <!-- docutune:casing "Create Migration Service wizard" -->
+
 註冊資源提供者之後，您可以建立 Azure 資料庫移轉服務的執行個體。
 
 1. 選取 [+ 建立資源]，然後在 Marketplace 中搜尋 [Azure 資料庫移轉服務]。

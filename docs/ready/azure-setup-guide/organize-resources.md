@@ -2,19 +2,19 @@
 title: 有效地組織 Azure 資源
 description: 了解有效組織 Azure 資源以簡化資源管理工作的最佳做法。
 author: laraaleite
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 61c4185a3b41f3e821100e95467920cceda26138
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: 783244673596e58d422f209eff92ff972044bf28
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038369"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024240"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 

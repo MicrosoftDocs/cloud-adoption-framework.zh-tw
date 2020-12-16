@@ -2,19 +2,19 @@
 title: 管理 Azure 資源的成本和計費
 description: 使用「適用於 Azure 的雲端採用架構」來了解發票，並了解如何設定 Azure 資源的預算和付款。
 author: dchimes
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d072897e93cb0f368a2c61c69d9fd7d8822389fe
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: 1ad25c981b7f3762be49362af6b943813a9c62ef
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997330"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026025"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>管理 Azure 資源的成本和計費
 

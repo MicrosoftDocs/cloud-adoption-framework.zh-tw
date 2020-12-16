@@ -2,19 +2,19 @@
 title: 隨時得知 Azure 的最新動態
 description: 使用「適用於 Azure 的雲端採用架構」，了解如何保持最新狀態，以及管理現今雲端節奏的變更。
 author: jelledruyts
-ms.author: andym
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 066e9029c10a6a46ae29e00389a530b0da0cadef
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC, setup
+ms.openlocfilehash: 8bbe9cd6f5283f24684b56e2198eb6b75eba7c38
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997296"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025991"
 ---
 <!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->

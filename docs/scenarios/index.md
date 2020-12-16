@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 092f3d32acf5ccdcb7b4e5e7ab96ef99f65e188f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f13c4e4f8e4415c3873243b30f9a83fa3d71a0a0
+ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025532"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97521799"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -34,7 +34,8 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 | **應用程式** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
 | **Data** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [開放原始碼資料庫](../migrate/azure-best-practices/sql-migration.md) | [分析](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) |
 | **混合式** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
-| **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [大型主機](../infrastructure/mainframe-migration/index.md) | NetApp 和 SAP HANA |
+| **技術平台** | SAP (傳統 & HANA) | Kubernetes | [大型主機](../infrastructure/mainframe-migration/index.md) | 
+| **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [多租用戶環境](https://docs.microsoft.com/azure/lighthouse/how-to/migration-at-scale?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) | NetApp |
 
 ## <a name="migrate-methodology"></a>遷移方法
 

@@ -2,19 +2,19 @@
 title: 最佳化及升階
 description: 了解如何檢閱解決方案以找出最佳化的可能區域，包括解決方案的設計、調整服務的大小，以及分析成本。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c5cd50b0f0dbaaa215f4c7c88e6f482d57027243
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: 2501710a43fa86ad1cf4a8196e59e63769cb9ef8
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996633"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025328"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 

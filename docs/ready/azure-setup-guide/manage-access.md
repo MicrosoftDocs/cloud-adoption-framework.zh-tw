@@ -2,19 +2,19 @@
 title: 透過角色型存取控制來管理對 Azure 環境的存取
 description: 了解如何透過角色型存取控制為 Azure 環境設定存取控制。
 author: LijuKodicheraJayadevan
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: bf9414422e1ad9671fab21ea11c8e5744463dccd
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: f60f68e56ac970b9bbb527061124afac5cd98e0e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995273"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024291"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>透過角色型存取控制來管理對 Azure 環境的存取
 

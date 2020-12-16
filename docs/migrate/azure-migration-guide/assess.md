@@ -2,19 +2,19 @@
 title: 評估每個工作負載並精簡方案
 description: 使用「適用於 Azure 的雲端採用架構」，評估您的環境是否適合進行移轉，以及應考慮哪些方法。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f8805746d1ae06978c179db076d0312fac89311c
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: 25a6564e9c52e507411fde54d02c27af8b948446
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605299"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025413"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 
@@ -22,7 +22,7 @@ ms.locfileid: "89605299"
 
 ## <a name="tools"></a>[工具](#tab/Tools)
 
-如果您未遵循上述連結中的指導方針，您可能會需要資料和評量工具來做出明智的移轉決策。 Azure Migrate 是用來評估**和**遷移至 Azure 的原生工具。 如果您還沒有這些項目，請使用下列步驟來建立新的伺服器移轉專案，並收集必要的資料。
+如果您未遵循上述連結中的指導方針，您可能會需要資料和評量工具來做出明智的移轉決策。 Azure Migrate 是用來評估 **和** 遷移至 Azure 的原生工具。 如果您還沒有這些項目，請使用下列步驟來建立新的伺服器移轉專案，並收集必要的資料。
 
 ### <a name="azure-migrate"></a>Azure Migrate
 
