@@ -7,14 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0be72ecfc2946aa39be439074733d604674134e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal, fasttrack-new, AQC
+ms.openlocfilehash: 1a72507853cf2221ff1b2e4a537e000eddd6e883
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883003"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017780"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 

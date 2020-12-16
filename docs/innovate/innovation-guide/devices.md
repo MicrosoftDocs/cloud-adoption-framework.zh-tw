@@ -2,19 +2,19 @@
 title: Azure 創新：透過裝置互動
 description: 了解 Azure 如何透過已連線和感知的邊緣裝置，提供一個架構供您建置沉浸式且有效的商務解決方案。
 author: umarmohamedusman
-ms.author: umarm
+ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b0536b627d9039f348f1c069bb1ae5ed4e4e74a6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: bc0ebac1dd6dd0b0120dc4babd736ef691db7338
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882986"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017763"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -40,8 +40,8 @@ Azure 客戶可以利用一組持續擴展的連線系統和裝置，來收集�
 
 以下是您會發現的一些功能：
 
-- **增強安全性的通訊**通道，用以從 IoT 裝置傳送和接收資料。
-- **內建裝置管理**和佈建，以大規模連線和管理 IoT 裝置。
+- **增強安全性的通訊** 通道，用以從 IoT 裝置傳送和接收資料。
+- **內建裝置管理** 和佈建，以大規模連線和管理 IoT 裝置。
 - **與事件方格完全整合**，也與無伺服器運算完全整合，從而簡化 IoT 應用程式開發。
 - **與 Azure IoT Edge 相容**，可建置混合式 IoT 應用程式。
 
@@ -77,7 +77,7 @@ Azure IoT 中樞裝置佈建服務是 Azure IoT 中樞適用的協助程式服�
 
 若要建立 Azure IoT 中樞裝置佈建服務：
 
-1. 移至**裝置佈建服務**。
+1. 移至 **裝置佈建服務**。
 2. 選取 [新增]。
 
 <!-- markdownlint-disable DOCSMD001 -->

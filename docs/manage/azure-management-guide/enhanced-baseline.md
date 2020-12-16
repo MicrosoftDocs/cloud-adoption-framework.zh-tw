@@ -7,14 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fa57d16b874c32fda3fc874e82d32c0e1a42c708
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal, fasttrack-edit, AQC
+ms.openlocfilehash: 4ad9cc8fa155153becb036f2be678b4e292004ae
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880886"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017440"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 

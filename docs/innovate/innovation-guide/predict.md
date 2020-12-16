@@ -7,14 +7,14 @@ ms.date: 06/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7e13ee2fe02d0f720d5992a8d9d2881d0a28e4
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal, fasttrack-edit, AQC
+ms.openlocfilehash: 00d4b08788461a7c1bd519c9f177908b36f6116e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880784"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017678"
 ---
 <!-- cSpell:ignore ONNX -->
 

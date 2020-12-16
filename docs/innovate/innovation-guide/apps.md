@@ -2,19 +2,19 @@
 title: Azure 創新：透過應用程式參與
 description: 了解 Azure 服務如何協助您輕鬆地將現有 Web 和 API 應用程式現代化，並建立雲端原生應用程式。
 author: billyclaymyersmsft
-ms.author: wimyers
+ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 922a123fe13b268548e2b51ffcc9d42c05d9c64a
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank, fasttrack-edit, AQC
+ms.openlocfilehash: fb47f30f0e5a04b5f45b5558827a278f1e9493fc
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880835"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017814"
 ---
 # <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
 
