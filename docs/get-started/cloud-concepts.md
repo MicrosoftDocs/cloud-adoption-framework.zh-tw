@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 35144dbae1c9636d9e123effa303ada548aef04c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4fac7200ac37208eabf7f2c93c7a00a2c9cd6825
+ms.sourcegitcommit: b210ef2a057d61554148b4c4b89485a4a5c9b25c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022761"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646291"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解及記錄基礎對齊決策
 
@@ -22,7 +22,7 @@ ms.locfileid: "97022761"
 > [!NOTE]
 > 選取下列任何連結，可能會讓您在 Azure 適用的 Microsoft 雲端採用架構的目錄中彈跳，尋找您稍後將用來協助小組執行相關指引的基本概念。 將此頁面加入書簽，以便經常返回此檢查清單。
 
-## <a name="before-your-begin"></a>開始之前
+## <a name="before-you-begin"></a>開始之前
 
 當您完成本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄我們的基本決策。 範本可協助您快速將參與雲端採用生命週期的團隊成員上線，方法是澄清雲端環境的設定和原因。
 
