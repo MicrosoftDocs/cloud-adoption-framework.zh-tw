@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: be8e5e73d5522cae37e6d4c7551db86e4d6595a6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 512d5574110ea46afc256504230ce669efb2de97
+ms.sourcegitcommit: b210ef2a057d61554148b4c4b89485a4a5c9b25c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016131"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646308"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -25,8 +25,8 @@ ms.locfileid: "97016131"
 
 | <span title="圖示">&nbsp;</span> | <span title="描述">&nbsp;</span> |
 |--|--|
-| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [建立管理基準](./azure-management-guide/index.md)：定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。 |
-| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [定義商務承諾](./considerations/business-alignment.md)：記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [定義商務承諾](./considerations/business-alignment.md)：記錄所支援的工作負載，以便與企業建立營運承諾，並對要在每個工作負載投入多少雲端管理心力達成協議。  |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [建立管理基準](./azure-management-guide/index.md)：定義重要性分類、雲端管理工具和所需流程，以提供能夠進行作業管理的最低承諾。 |
 | <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [擴展管理基準](./best-practices.md)：根據商務承諾和營運決策，利用內含的最佳做法來實作所需的雲端管理工具。 |
 | <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [先進的作業和設計原則](./design-principles.md)：需要更高度商務承諾的平台或工作負載，可能需要更深入地檢閱架構，以提供復原能力和可靠性承諾。 |
 
