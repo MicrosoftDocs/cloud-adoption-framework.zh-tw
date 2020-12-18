@@ -1,19 +1,18 @@
 ---
 title: 如何在 Moodle 遷移之後追蹤
 description: 瞭解如何在 Moodle 遷移之後進行後續追蹤。 瞭解如何更新記錄檔路徑、重新開機伺服器，以及採取完成遷移所需的其他步驟。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: 05ad1f31a2ac8e04abb7aa2942d0b564748f870b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4975037dc30aa95bcb4bc58d69914970769e3183
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025702"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687739"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>如何在 Moodle 遷移之後追蹤
 
@@ -31,7 +30,7 @@ ms.locfileid: "97025702"
 
 ## <a name="controller-virtual-machine-scale-set"></a>控制器虛擬機器擴展集
 
-請採取下列步驟來完成您的虛擬機器擴展集設定。
+請採取下列步驟來完成您的虛擬機器擴展集設定。 您將需要使用私人 IP 位址，以 SSH 連線到您的虛擬機器擴展集實例，如 [存取虛擬機器擴展集](azure-infra-config.md#access-the-virtual-machine-scale-set)所述。
 
 ### <a name="update-log-paths"></a>更新記錄檔路徑
 
@@ -54,7 +53,7 @@ ms.locfileid: "97025702"
 
 ### <a name="restart-servers"></a>重新開機伺服器
 
-輸入下列命令以重新開機 `nginx` 和 `php-fpm` 伺服器：
+輸入下列命令以重新開機 nginx 和 php php-fpm 伺服器：
 
 ```bash
 sudo systemctl restart nginx
@@ -112,9 +111,9 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-   1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
+    1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
 
-### <a name="update-the-local-html-copy"></a>更新本機 HTML 複本
+### <a name="update-local-html-copy"></a>更新本機 HTML 複製
 
 Moodle HTML 網站內容的本機複本 `/moodle/html/moodle` 是在此資料夾的虛擬機器擴展集中建立： `/var/www/html/moodle` 。 只有在時間戳記變更時，才會更新本機複本。 在控制器虛擬機器中輸入下列命令，以更新時間戳記：
 
@@ -139,6 +138,7 @@ sudo systemctl restart php<php version>-fpm
 請在主機服務提供者層級遵循下列步驟，將 DNS 名稱對應至 Azure Load Balancer IP：
 
 1. 在控制器虛擬機器中輸入下列命令，以關閉 Moodle 網站上的維護模式：
+
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable
@@ -293,4 +293,4 @@ sudo chown -R /moodle/moodledata
 
 - [適用於 MySQL 的 Azure 資料庫文件](/azure/mysql/)
 - [什麼是虛擬機器擴展集？](/azure/virtual-machine-scale-sets/overview)
-- [儲存體帳戶總覽](/azure/storage/common/storage-account-overview)
+- [儲存體帳戶概觀](/azure/storage/common/storage-account-overview)

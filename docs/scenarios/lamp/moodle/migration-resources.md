@@ -1,19 +1,18 @@
 ---
 title: Moodle 移轉資源
 description: 瞭解 Moodle 遷移在 Azure 中建立的資源。 範例包括 Azure 虛擬網路、網路安全性群組和子網。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: 6f52d10991db528da083120f60106c0a074a9540
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1ff3f1036e039328733061392b498de44c0706d6
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025685"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687674"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移轉資源
 
@@ -69,8 +68,8 @@ ARM 範本支援下列儲存體帳戶類型：
 
 ## <a name="scale-set-template"></a>擴展集範本
 
-擴展集範本部署會建立 [虛擬機器擴展集](/azure/virtual-machine-scale-sets/overview)。 您可以使用虛擬機器擴展集來部署和管理一組自動調整虛擬機器。 您可以手動調整擴展集中的虛擬機器數目，或定義規則以根據資源使用量（例如 [CPU](/visualstudio/profiling/average-cpu-utilization)、記憶體需求或網路流量）自動調整。 當實例擴大時，它會部署虛擬機器。 然後執行會安裝 Moodle 必要條件並設定 cron 作業的 shell 腳本。 擴展集中的虛擬機器具有私人 IP 位址。 遵循 [如何建立虛擬網路閘道，並透過私人 ip](./vpn-gateway.md) 連線來連線到擴展集中具有私人 ip 位址的虛擬機器的步驟。
+擴展集範本部署會建立 [虛擬機器擴展集](/azure/virtual-machine-scale-sets/overview)。 您可以使用虛擬機器擴展集來部署和管理一組自動調整虛擬機器。 您可以手動調整擴展集中的虛擬機器數目，或定義規則以根據資源使用量（例如 [CPU](/visualstudio/profiling/average-cpu-utilization)、記憶體需求或網路流量）自動調整。 當實例擴大時，它會部署虛擬機器。 然後執行會安裝 Moodle 必要條件並設定 cron 作業的 shell 腳本。 擴展集中的虛擬機器具有私人 IP 位址。 如需有關如何在擴展集中查看虛擬機器實例，以及如何存取這些實例的詳細資訊，請參閱 [虛擬機器擴展集檔](/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli#view-the-vm-instances-in-a-scale-set)。
 
 ## <a name="next-steps"></a>後續步驟
 
-繼續 [瞭解如何建立虛擬網路閘道，並透過私人 IP 連接](./vpn-gateway.md)。
+繼續 [Moodle 手動遷移步驟](migration-start.md) ，以進行 Moodle 遷移程式中的後續步驟。

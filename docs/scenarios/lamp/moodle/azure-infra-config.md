@@ -1,19 +1,18 @@
 ---
 title: 如何設定 Moodle 背景工作節點
 description: 瞭解如何設定 Moodle 的虛擬機器擴展集。 瞭解如何使用私人 IP 位址從控制器存取擴展集。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: c0b3a01440b907dfd31eadda27d727d9a2afd587
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 902c7b93e88725ec7c37ddaac09f92db8287af49
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025719"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687630"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>如何設定 Moodle 背景工作節點
 
@@ -26,12 +25,6 @@ ms.locfileid: "97025719"
 ### <a name="access-the-virtual-machine-scale-set"></a>存取虛擬機器擴展集
 
 請遵循下列步驟來存取虛擬機器擴展集：
-
-1. 讓您的閘道將虛擬機器擴展集實例連接到私人 IP 位址。
-
-1. 遵循 [如何建立虛擬網路閘道，並透過私人 IP 連接](./vpn-gateway.md) ，以使用閘道來存取虛擬機器擴展集實例。
-
-1. 將您的虛擬機器擴展集設定為啟用密碼。
 
 1. 判斷 Azure 針對您的虛擬機器擴展集實例所使用的私人 IP 位址：
 
@@ -68,7 +61,6 @@ mkdir -p backup/moodle
 ```
 
 ### <a name="configure-the-php-and-web-server"></a>設定 PHP 和網頁伺服器
-
 若要設定 PHP 和 web 伺服器，請執行下列步驟：
 
 1. 將 PHP 版本設定為變數：
