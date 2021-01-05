@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: e0d099cab106d950f4135b8a935a8cac8c24f46d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: dc365b6498c94656fbda65d2693c724c5520f9b8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015706"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712258"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "97015706"
 
 ## <a name="fundamentals"></a>基礎
 
-- [Azure Resource Manager](/azure/azure-resource-manager/management/overview)的簡介討論管理和部署 Azure 資源的基本概念。 管理整個企業的監視體驗的 IT 人員應該瞭解管理範圍、角色型存取控制 (RBAC) 的使用。 使用 Azure CLI 和 Azure PowerShell Azure Resource Manager 範本和資源管理。
+- [Azure Resource Manager](/azure/azure-resource-manager/management/overview)的簡介討論管理和部署 Azure 資源的基本概念。 管理整個企業的監視體驗的 IT 人員應該瞭解管理範圍、Azure 角色型存取控制 (Azure RBAC) 的使用。 使用 Azure CLI 和 Azure PowerShell Azure Resource Manager 範本和資源管理。
 
 - [Azure 原則](/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit guest configuration 設定等。
 
@@ -34,7 +34,7 @@ ms.locfileid: "97015706"
   - [使用 Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- 瞭解如何使用原則、角色型存取控制和其他 Azure 服務來保護資源安全，方法是 [在 Azure 中觀看執行資源管理安全性](/learn/paths/implement-resource-mgmt-security)。
+- 瞭解如何藉由 [在 Azure 中觀看實作為資源管理安全性](/learn/paths/implement-resource-mgmt-security)，以使用原則、Azure 角色型存取控制和其他 Azure 服務來保護資源。
 
 - [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update) 可協助您瞭解如何使用 azure 監視工具來監視 azure 網路資源，以及內部部署資源。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 72e27d6ac48a6cccc5c35805374f80de309d08b6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 32b46648f28afef63e37e4e3e8c50c532984d331
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019684"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712802"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>簡單工作負載的治理設計
 
@@ -70,7 +70,7 @@ Azure 只信任由 [Azure AD](/azure/active-directory) 來驗證使用者以及�
 ![Azure 帳戶擁有者會將 * * 工作負載擁有者 * * 新增至訂用帳戶 ](../../_images/govern/design/governance-1-5.png)
  *圖5： Azure 帳戶擁有者會將工作負載擁有者新增至訂用帳戶。*
 
-Azure **帳戶擁有者** 會藉由指派 [角色型存取控制 (RBAC)](/azure/role-based-access-control) 角色，將權限授與 **工作負載擁有者**。 RBAC 角色會指定一組權限，讓 **工作負載擁有者** 針對個別資源類型或一組資源類型使用。
+Azure **帳戶擁有** 者藉由指派 [Azure 角色](/azure/role-based-access-control)來授與許可權給 **工作負載擁有** 者。 Azure 角色會指定 **工作負載擁有** 者針對個別資源類型或一組資源類型所擁有的一組許可權。
 
 請注意，在此範例中，**帳戶擁有者** 已獲得指派 [內建 **擁有者** 角色](/azure/role-based-access-control/built-in-roles#owner)：
 

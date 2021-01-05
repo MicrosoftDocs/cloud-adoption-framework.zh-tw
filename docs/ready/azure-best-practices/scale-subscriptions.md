@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 4d089b89d3bc7fe08cfa07b3573084c7b2cf342e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 64bffce5f637f9903385df2fae143195f97a4b31
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024342"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713669"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶以調整 Azure 環境
 
@@ -29,7 +29,7 @@ ms.locfileid: "97024342"
 
 **訂用帳戶限制：** 訂用帳戶已定義某些資源類型的限制。 例如，訂用帳戶中的虛擬網路數目會受限。 當訂用帳戶接近這些限制時，您必須建立另一個訂用帳戶，並在該處放入其他資源。 如需詳細資訊，請參閱 [Azure 訂用帳戶和服務限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits)。
 
-**傳統模型資源：** 如果您已使用 Azure 很長一段時間，您可能會有使用傳統部署模型建立的資源。 Azure 原則、角色型存取控制、資源群組和標記無法套用至傳統模型資源。 您應該將這些資源移至僅包含傳統模型資源的訂用帳戶。
+**傳統模型資源：** 如果您已使用 Azure 很長一段時間，您可能會有使用傳統部署模型建立的資源。 Azure 原則、Azure 角色型存取控制、資源群組和標記無法套用至傳統模型資源。 您應該將這些資源移至僅包含傳統模型資源的訂用帳戶。
 
 **成本：** 訂用帳戶之間的資料輸入和輸出可能會有一些額外成本。
 
@@ -39,8 +39,8 @@ ms.locfileid: "97024342"
 
 - 創新
 - 移轉
-- 成本
-- Operations
+- Cost
+- 作業
 - 安全性
 - 控管
 
@@ -54,7 +54,7 @@ ms.locfileid: "97024342"
 
 - 識別負責建立新訂閱的人員。
 - 決定預設訂用帳戶中有哪些資源類型可供使用。
-- 決定所有標準訂用帳戶的型態。 這些考量包括 RBAC 存取、原則、標記和基礎結構資源。
+- 決定所有標準訂用帳戶的型態。 考慮包括 Azure RBAC 存取、原則、標記和基礎結構資源。
 - 可能的話，請以程式設計方式透過服務主體 [建立新的訂閱](/azure/cost-management-billing/manage/programmatically-create-subscription-preview) 。 您必須將 [許可權授與服務主體](/azure/azure-resource-manager/grant-access-to-create-subscription) ，才能建立訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
 - 如果您是 Enterprise 合約 (EA) 客戶，請要求 Azure 支援服務為您的組織封鎖非 EA 訂用帳戶的建立。
 

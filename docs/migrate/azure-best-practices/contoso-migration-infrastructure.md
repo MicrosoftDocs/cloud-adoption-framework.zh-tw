@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 801d24aaec9a381e2b60eb8874a1a70cea2054b5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6729ff48934cd4e0471ff0ade338b3a10f94e6c4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015757"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712734"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -206,7 +206,7 @@ _圖7：內部部署 Active Directory 安全性群組。_
 
 ### <a name="synchronize-active-directory"></a>同步處理 Active Directory
 
-Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的資源。 若要這樣做，它會將內部部署 Active Directory 實例與 Azure AD 整合。 使用此模型，使用者和組織可以利用單一身分識別來存取內部部署應用程式和雲端服務，例如 Microsoft 365 或網際網路上上千個其他網站。 系統管理員可以使用 Active Directory 中的群組，在 Azure 中執行以 [角色為基礎的存取控制 (RBAC) ](/azure/role-based-access-control/role-assignments-portal) 。
+Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的資源。 若要這樣做，它會將內部部署 Active Directory 實例與 Azure AD 整合。 使用此模型，使用者和組織可以利用單一身分識別來存取內部部署應用程式和雲端服務，例如 Microsoft 365 或網際網路上上千個其他網站。 系統管理員可以使用 Active Directory 中的群組來執行 azure [RBAC)  (的 azure 角色型存取控制 ](/azure/role-based-access-control/role-assignments-portal)。
 
 為了加速整合，Contoso 使用 [Azure AD Connect 工具](/azure/active-directory/hybrid/whatis-hybrid-identity)。 當您在網域控制站上安裝並設定此工具時，它會同步處理內部部署 Active Directory 身分識別，以 Azure AD。
 
@@ -254,9 +254,9 @@ Contoso 想要提供一般身分識別，用來存取內部部署和雲端中的
 
       _圖13：群組成員資格。_
 
-### <a name="set-up-rbac"></a>設定 RBAC
+### <a name="set-up-azure-rbac"></a>設定 Azure RBAC
 
-Azure [RBAC](/azure/role-based-access-control/role-assignments-portal) 可讓您對 azure 進行更細緻的存取管理。 藉由使用 RBAC，您可以只授與使用者執行工作所需的存取權數量。 您可以在特定範圍層級，將適當的 RBAC 角色指派給使用者、群組及應用程式。 角色指派的範圍可以是訂用帳戶、資源群組或單一資源。
+[AZURE RBAC](/azure/role-based-access-control/role-assignments-portal) 可讓您對 azure 進行更細緻的存取管理。 藉由使用 Azure RBAC，您可以只授與使用者執行工作所需的存取權數量。 您可以將適當的 Azure 角色指派給範圍層級的使用者、群組和應用程式。 角色指派的範圍可以是訂用帳戶、資源群組或單一資源。
 
 然後，Contoso 管理員會將角色指派給他們從內部部署同步處理的 Active Directory 群組。
 

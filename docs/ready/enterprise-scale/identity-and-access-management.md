@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 464e20686a9e61157f350491c97396345fe9ad95
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: a9dad92595ab98024e19b0813ccb6829ae59ddef
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447348"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713514"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "95447348"
 
 ### <a name="plan-for-identity-and-access-management"></a>規劃身分識別與存取權管理
 
-企業組織在操作存取上通常會遵循最低特殊權限的做法。 您應將此模型加以擴充，透過 Azure Active Directory (Azure AD) 角色型存取控制 (RBAC) 和自訂角色定義來考慮 Azure。 規劃如何在 Azure 中管理資源的控制和資料平面存取是很重要的。 IAM 和 RBAC 的任何設計都必須符合法規、安全性、營運的需求，才能採納。
+企業組織在操作存取上通常會遵循最低特殊權限的做法。 您應擴充此模型，以透過 Azure Active Directory (Azure AD) 、Azure 角色型存取控制 (Azure RBAC) 和自訂角色定義來考慮 Azure。 規劃如何在 Azure 中管理資源的控制和資料平面存取是很重要的。 IAM 和 Azure RBAC 的任何設計都必須符合法規、安全性和營運需求，才能接受。
 
 身分識別與存取權管理是多步驟的程序，其中牽涉到仔細規劃身分識別整合和其他安全性考量，例如封鎖舊版驗證、規劃新式密碼。 臨時性規劃也牽涉到選擇企業對企業或企業對消費者的身分識別與存取權管理。 雖然這些需求各有不同，但還是需要考慮企業登陸區域的常見設計考量和建議。
 
@@ -39,9 +39,9 @@ _圖1：身分識別和存取管理。_
 
 **設計考慮：**
 
-- 當您為 IAM 和治理制定架構時，必須考慮自訂角色和角色指派的數目限制。 如需詳細資訊，請參閱 [AZURE RBAC 服務限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#role-based-access-control-limits)。
-- 每個訂用帳戶的自訂 RBAC 角色指派限制為 2000。
-- 每個管理群組的自訂 RBAC 角色指派限制為 500。
+- 當您為 IAM 和治理制定架構時，必須考慮自訂角色和角色指派的數目限制。 如需詳細資訊，請參閱 [AZURE RBAC 服務限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-role-based-access-control-limits)。
+- 每個訂用帳戶的角色指派限制為2000。
+- 每個管理群組的角色指派限制為500。
 - 集中式與同盟資源擁有權：
   - 共用資源或環境中任何實作或強制安全性界限 (例如網路) 的層面，都必須集中管理。 這項需求是許多法規架構的一部分。 對於授與或拒絕存取機密或重要商務資源的任何組織而言，這是標準做法。
   - 管理不違反安全性界限的應用程式資源，或管理其他需要維護安全性和合規性的層面，都可以委派給應用程式小組。 允許使用者在安全管理的環境中佈建資源，可讓組織充分利用雲端的靈活特性，同時防止違反任何重要的安全性或治理界限。
@@ -50,7 +50,7 @@ _圖1：身分識別和存取管理。_
 
 **設計建議：**
 
-- 使用 Azure AD [RBAC](/azure/role-based-access-control/overview) 來管理資源的資料平面存取（可能的話）。 範例為 Azure Key Vault、儲存體帳戶或 SQL 資料庫。
+- 您可以使用 [AZURE RBAC](/azure/role-based-access-control/overview) 來管理對資源的資料平面存取。 範例為 Azure Key Vault、儲存體帳戶或 SQL 資料庫。
 - 針對具有 Azure 環境存取權限的任何使用者，部署 Azure AD 條件式存取原則。 這麼做可提供另一種機制，協助保護受控制的 Azure 環境不受未經授權的存取。
 - 針對具有 Azure 環境許可權的任何使用者強制執行多重要素驗證。 強制執行多重要素驗證是許多合規性架構的要件。 它可大幅降低認證竊取和未經授權存取的風險。
 - 使用 [Azure AD Privileged Identity Management (PIM) ](/azure/active-directory/privileged-identity-management/pim-configure) 來建立零的長期存取和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和程式的延伸模組、如所述使用 Azure 原生工具，或視需要使用兩者。
@@ -59,9 +59,9 @@ _圖1：身分識別和存取管理。_
 - 使用 Azure AD PIM 存取權檢閱來定期驗證資源權利。 存取權檢閱是許多合規性架構的一部分。 如此一來，許多組織都已有程式可解決這項需求。
 - 整合 Azure AD 記錄與平臺中央 [Azure 監視器](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)。 Azure 監視器允許 Azure 中的記錄和監視資料使用單一事實來源，這可為組織提供雲端原生選項，以符合記錄收集和保留方面的需求。
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
-- 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂 RBAC 角色定義：
+- 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂角色定義：
 
-| [角色] | 使用方式 | 動作 | 沒有任何動作 |
+| 角色 | 使用方式 | 動作 | 沒有任何動作 |
 |---|---|---|---|
 | Azure 平臺擁有者 (例如內建擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |

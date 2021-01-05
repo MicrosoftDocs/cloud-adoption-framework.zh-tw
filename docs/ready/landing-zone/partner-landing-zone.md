@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 965a021ba2c70a75ef056cc9099c851ce9bc8bf2
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d8aa2e29baa730f6e47a2418477d5e7e146cb1b9
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013326"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713839"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 
@@ -71,7 +71,7 @@ ms.locfileid: "97013326"
 
 **合作夥伴的問題：** 合作夥伴解決方案支援下列哪一個身分識別管理選項？
 
-- **Azure AD：** 建議的最佳作法是使用 Azure AD 和角色型存取控制來管理 Azure 中的身分識別和存取。
+- **Azure AD：** 建議的最佳作法是使用 Azure AD 和 Azure 角色型存取控制來管理 Azure 中的身分識別和存取。
 - **Active Directory：** 如有需要，合作夥伴解決方案是否提供將 Active Directory 部署為基礎結構即服務解決方案的選項？
 - **協力廠商識別提供者：** 如果您的公司使用協力廠商身分識別解決方案，請判斷合作夥伴的 Azure 登陸區域是否與協力廠商解決方案整合。
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: 83a71125116e6239265f03819386f2f0ca6a6771
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: efe7a4e957bd2287c4cfe846562788b0c165c3ee
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012561"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713076"
 ---
 <!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
@@ -71,13 +71,13 @@ Microsoft Azure 利用企業級功能和可靠性來提供超大規模的服務�
 
 任何大型企業都需要定義身分識別管理程式，以描述如何管理其 VDC 內或之間的個別身分識別、其驗證、授權、角色和許可權。 此程式的目標應該是提高安全性與生產力，同時降低成本、停機時間和重複性的手動工作。
 
-企業組織可能需要針對不同的業務需求混合使用服務，而員工在與不同的專案相關時，通常會有不同的角色。 使用 VDC 時，各具有特定角色定義的不同小組之間必須密切合作，使系統在妥善的控管下執行。 責任、存取權和權限的矩陣可能會很複雜。 VDC 中的身分識別管理是透過 [Azure Active Directory 的 (Azure AD) ][azure-ad] 和以角色為基礎的存取控制 (RBAC) 來實行。
+企業組織可能需要針對不同的業務需求混合使用服務，而員工在與不同的專案相關時，通常會有不同的角色。 使用 VDC 時，各具有特定角色定義的不同小組之間必須密切合作，使系統在妥善的控管下執行。 責任、存取權和權限的矩陣可能會很複雜。 VDC 中的身分識別管理是透過 [Azure Active Directory (Azure AD) ][azure-ad] 和 azure 角色型存取控制 (azure RBAC) 來實行。
 
 目錄服務是一種共用資訊基礎結構，用以尋找、管理和組織日常項目和網路資源。 這些資源可能包含磁碟區、資料夾、檔案、印表機、使用者、群組、裝置和其他物件。 目錄伺服器會將網路上的每個資源都視為物件。 資源的相關資訊會儲存為與該資源或物件建立關聯的屬性集合。
 
 所有 Microsoft online 商務服務都依賴 Azure Active Directory (Azure AD) 進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，它結合了核心目錄服務、進階身分識別管制及應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
 
-VDC 實作中的所有權限不一定要由單一全域管理員指派。 相反地，每個特定部門、使用者群組或目錄服務中的服務都可以有管理其在 VDC 實作內專屬資源所需的權限。 建構權限需要平衡。 權限太多可能會阻礙效能效率，而權限太少或鬆散可能會增加安全性風險。 Azure 角色型存取控制 (RBAC) 協助您解決此問題，方法是在 VDC 執行的資源提供更細緻的存取管理。
+VDC 實作中的所有權限不一定要由單一全域管理員指派。 相反地，每個特定部門、使用者群組或目錄服務中的服務都可以有管理其在 VDC 實作內專屬資源所需的權限。 建構權限需要平衡。 權限太多可能會阻礙效能效率，而權限太少或鬆散可能會增加安全性風險。 Azure 角色型存取控制 (Azure RBAC) 協助您解決此問題，方法是在 VDC 執行的資源提供更細緻的存取管理。
 
 ### <a name="security-infrastructure"></a>安全性基礎結構
 
@@ -190,7 +190,7 @@ VDC 的上述高階概念架構顯示不同中樞輪輻拓撲區域中所使用�
 許多組織都會使用下列群組的一種變化，以提供角色的主要分析：
 
 - 名為 **Corp** 的中央 IT 團隊具有控制基礎結構元件的擁有權許可權。 例如網路和安全性。 群組必須具有訂用帳戶的參與者角色、中樞的控制權，以及輪輻中的網路參與者權限。 大型組織常會將這些管理職責劃分到多個小組間。 例如，網路作業 **CorpNetOps** 群組 (具有網路的獨佔焦點)，和安全性作業 **CorpSecOps** 群組 (負責防火牆和安全性原則)。 在這種特定情況下，需要建立兩個不同的群組，才能指派這些自訂角色。
-- 名為 **AppDevOps** 的開發/測試群組必須負責部署應用程式或服務工作負載。 此群組會扮演虛擬機器參與者的角色，以進行 IaaS 部署或一或多個 PaaS 參與者的角色。 如需詳細資訊，請參閱 [Azure 資源的內建角色][Roles]。 （選擇性）開發/測試小組可能需要 (網路安全性群組) 和路由原則的資訊安全性原則， (中樞內) 的使用者定義路由或特定輪輻。 除了工作負載參與者角色之外，此群組也需要網路讀取者角色。
+- 名為 **AppDevOps** 的開發/測試群組必須負責部署應用程式或服務工作負載。 此群組會扮演虛擬機器參與者的角色，以進行 IaaS 部署或一或多個 PaaS 參與者的角色。 如需詳細資訊，請參閱 [Azure 內建角色][Roles]。 （選擇性）開發/測試小組可能需要 (網路安全性群組) 和路由原則的資訊安全性原則， (中樞內) 的使用者定義路由或特定輪輻。 除了工作負載參與者角色之外，此群組也需要網路讀取者角色。
 - 稱為 **CorpInfraOps** 或 **AppInfraOps** 的作業和維護群組，負責管理生產環境中的工作負載。 此群組必須是任何生產訂用帳戶中工作負載的訂用帳戶參與者。 某些組織可能也會評估他們是否需要在生產環境和中央中樞訂用帳戶中具有訂用帳戶參與者角色的額外擴大支援小組群組。 額外的群組可修正生產環境中潛在的設定問題。
 
 VDC 的設計目的是為了讓中央 IT 小組所建立的群組，在工作負載層級擁有對應的群組。 除了管理中樞資源之外，中央 IT 團隊還可以控制訂用帳戶的外部存取和最上層許可權。 工作負載群組也可以從中央 IT 小組獨立控制其虛擬網路的資源和許可權。
@@ -230,7 +230,7 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 - [網路安全性群組][NSG]。 網路安全性群組是安全性規則清單，可作為 IP 來源、IP 目的地、通訊協定、IP 來源埠和 IP 目的地埠的流量篩選， (也稱為「層級 4 5-元組) 。 網路安全性群組可以套用至子網、與 Azure VM 相關聯的虛擬 NIC，或兩者皆適用。 網路安全性群組在中樞和輪輻中執行正確的流程式控制制時，是不可或缺的。 網路安全性群組所提供的安全性層級是您開啟的埠，以及用途的功能。 客戶應該使用主機型防火牆（例如 iptables 或 Windows 防火牆）來套用額外的每個 VM 篩選。
 - [DNS][DNS]。 DNS 可為虛擬資料中心內的資源提供名稱解析。 Azure 可提供 DNS 服務，以進行[公用][DNS]和[私人][PrivateDNS]名稱解析。 私人區域可在虛擬網路內及虛擬網路之間提供名稱解析。 私人區域不僅可以橫跨相同區域內的虛擬網路，也可以橫跨區域和訂用帳戶。 至於公用解析，Azure DNS 可提供 DNS 網域的主機服務，使用 Microsoft Azure 基礎結構提供名稱解析。 只要將您的網域裝載於 Azure，就可以像管理其他 Azure 服務一樣，使用相同的認證、API、工具和計費方式來管理 DNS 記錄。
 - [管理群組][MgmtGrp]、 [訂](../ready/azure-best-practices/scale-subscriptions.md)用帳戶和 [資源群組][RGMgmt] 管理。 訂用帳戶定義自然界限，以在 Azure 中建立多個資源群組。 這種分隔可用於函式、角色隔離或計費。 訂用帳戶中的資源會組合在稱為資源群組的邏輯容器中。 資源群組代表邏輯群組，用來組織虛擬資料中心內的資源。 如果貴組織有多個訂用帳戶，您可能需要一個方法來有效率地管理這些訂用帳戶的存取、原則和相容性。 Azure 管理群組可以在訂用帳戶之上提供範圍層級。 您將訂用帳戶整理到稱為管理群組的容器，並將治理條件套用至管理群組。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。 若要查看階層視圖中的這三個功能，請參閱在雲端採用架構中 [組織您的資源](../ready/azure-setup-guide/organize-resources.md) 。
-- 以[角色為基礎的存取控制 (RBAC) ][RBAC]。 RBAC 可以對應組織角色和許可權，以存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要同步處理 Azure Active Directory 與內部部署 Active Directory，您可以在 Azure 中使用您在內部部署使用的相同 Active Directory 群組。 使用 RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，來授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 RBAC 允許繼承權限。 在父範圍指派的角色也會授與其內含子系的存取權。 RBAC 可讓您區隔職責，而僅授與使用者執行工作所需的存取權。 例如，一個員工可以管理訂用帳戶中的虛擬機器，另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
+- [Azure 角色型存取控制 (AZURE RBAC) ][RBAC]。 Azure RBAC 可以對應組織角色和許可權，以存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要同步處理 Azure Active Directory 與內部部署 Active Directory，您可以在 Azure 中使用您在內部部署使用的相同 Active Directory 群組。 使用 Azure RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，以授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 Azure RBAC 允許繼承許可權。 在父範圍指派的角色也會授與其內含子系的存取權。 使用 Azure RBAC，您可以將職責區隔，並只授與使用者執行其作業所需的存取權數量。 例如，一個員工可以管理訂用帳戶中的虛擬機器，另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
 
 #### <a name="component-type-perimeter-networks"></a>元件類型：周邊網路
 
@@ -441,7 +441,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         **連線能力** <br>
         [虛擬網路對等互連][virtual-network-peering] <br>
         [虛擬私人網路][VPN] <br>
-        [Virtual WAN][virtual-wan] <br>
+        [虛擬 WAN][virtual-wan] <br>
         [ExpressRoute][ExR] <br>
         [ExpressRoute Direct][ExRD]
     :::column-end:::
@@ -452,8 +452,8 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         **身分識別** <br>
         [Azure Active Directory][azure-ad] <br>
         [Multi-Factor Authentication][multi-factor-authentication] <br>
-        [角色型存取控制][RBAC] <br>
-        [預設 Azure AD 角色][Roles]
+        [Azure 角色型存取控制][RBAC] \(部分機器翻譯\) <br>
+        [Azure 內建角色][Roles]
     :::column-end:::
     :::column:::
         **監視** <br>
@@ -462,7 +462,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         [Log Analytics][LogAnalytics]
     :::column-end:::
     :::column:::
-        **最佳做法** <br>
+        **最佳作法** <br>
         [管理群組][MgmtGrp] <br>
         [訂用帳戶管理](../ready/azure-best-practices/scale-subscriptions.md) <br>
         [資源群組管理][RGMgmt] <br>
@@ -472,7 +472,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 :::row:::
     :::column:::
-        **Security** <br>
+        **安全性** <br>
         [Azure 防火牆][AzFW] <br>
         [防火牆管理員][AzFWMgr] <br>
         [應用程式閘道 WAF][AppGWWAF] <br>
@@ -496,8 +496,8 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 ## <a name="next-steps"></a>後續步驟
 
 - 深入瞭解 [虛擬網路對等互連][virtual-network-peering]，也就是中樞和輪輻拓撲的核心技術。
-- 執行 [Azure Active Directory][azure-ad] 以使用 [角色型存取控制][RBAC]。
-- 使用符合組織結構、需求和原則的角色型存取控制，來開發訂用帳戶和資源管理模型。 正在規劃最重要的活動。 分析重組、合併、新的產品線和其他考慮將如何影響您的初始模型，以確保您可以調整規模以符合未來的需求和成長。
+- 執行 [Azure Active Directory][azure-ad] 以使用 [Azure 角色型存取控制][RBAC]。
+- 使用 Azure 角色型存取控制來開發訂用帳戶和資源管理模型，以符合組織的結構、需求和原則。 正在規劃最重要的活動。 分析重組、合併、新的產品線和其他考慮將如何影響您的初始模型，以確保您可以調整規模以符合未來的需求和成長。
 
 <!-- images -->
 

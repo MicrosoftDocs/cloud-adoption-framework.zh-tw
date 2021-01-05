@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 0e5c31de674499aceba07ad80d8b15c8b3f41c73
-ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
+ms.openlocfilehash: e2f3ac4659466061a6a8fa7ca67dc8c3d0672160
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97521785"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713720"
 ---
 # <a name="build-technical-skills"></a>建置技術技能
 
@@ -40,7 +40,7 @@ ms.locfileid: "97521785"
 - [建立 VM](/learn/modules/create-windows-virtual-machine-in-azure)：使用 Azure 入口網站來建立虛擬機器。
 - [Azure 網路服務](/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
 - [Azure 計算選項](/learn/modules/intro-to-azure-compute)：檢查 azure 計算服務。
-- [使用 Rbac 保護資源](/learn/modules/secure-azure-resources-with-rbac)：使用角色型存取控制 (rbac) 來保護資源。
+- [使用 AZURE Rbac 保護資源](/learn/modules/secure-azure-resources-with-rbac)：使用 azure 角色型存取控制 (azure rbac) 來保護資源。
 - [Azure 儲存體選項](/learn/modules/intro-to-data-in-azure)：瞭解 Azure 資料儲存體的優點。
 
 在準備階段期間，架構設計人員必須設計跨所有 Azure 環境的解決方案。 下列資源可為這些工作做好準備：

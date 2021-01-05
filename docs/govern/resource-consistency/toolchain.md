@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: b9f47d30ec02a3fe1bb45a734abc15a2c7a68242
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5dce13da4babb6289d25d0c363715e6c9f59ea66
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019276"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712632"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
@@ -32,7 +32,7 @@ ms.locfileid: "97019276"
 | 定義資源群組                       | 是 | 是 | 是 | 否  | 否  | 否 | 否 |
 | 管理工作負載和帳戶擁有者           | 是 | 是 | 是 | 否  | 否  | 否 | 否 |
 | 管理資源的條件式存取       | 是 | 是 | 是 | 否  | 否  | 否 | 否 |
-| 設定 RBAC 使用者                         | 是 | 否  | 否  | 否  | 是 | 否 | 否 |
+| 設定 Azure RBAC 使用者                   | 是 | 否  | 否  | 否  | 是 | 否 | 否 |
 | 將角色和權限指派給資源 | 是 | 是 | 是 | 否  | 是 | 否 | 否 |
 | 定義資源間的相依性        | 否  | 是 | 是 | 否  | 否  | 否 | 否 |
 | 套用存取控制                         | 是 | 是 | 是 | 否  | 是 | 否 | 否 |

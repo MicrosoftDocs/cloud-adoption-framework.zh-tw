@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 06aa4b815fd436c57cfa9e0014263af3d41892f4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4d4ca4be94afeae4e019da935726ca0708097c64
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024172"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713347"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -53,11 +53,11 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 ![字母 A ](./media/a.png) [ENTERPRISE 合約 (EA) 註冊和 Azure Active Directory](./enterprise-enrollment-and-azure-ad-tenants.md)租使用者。 註冊 Enterprise 合約 (EA) 代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的數位資產管理。 您的 EA 註冊可透過 Azure EA 入口網站進行管理。 註冊通常代表組織的階層，其中包括部門、帳戶和訂用帳戶。 Azure AD 租用戶提供身分識別與存取權管理，這是安全性狀態的重要部分。 Azure AD 租用戶可確保已驗證和授權的使用者只能存取他們具有存取權限的資源。
 
-![字母 B 身分 ](./media/b.png) [識別和存取管理](./identity-and-access-management.md)。 您必須建立 Azure Active Directory 的設計和整合，才能確保伺服器和使用者驗證。 以資源為基礎的存取控制 (RBAC) 必須進行模型化和部署，以強制將職責區隔和平臺操作和管理所需的權利分開。 金鑰管理必須經過設計和部署，以確保安全地存取資源和支援作業，例如輪替和復原。 最後，系統會將存取角色指派給控制項和資料平面的應用程式擁有者，以自主建立及管理資源。
+![字母 B 身分 ](./media/b.png) [識別和存取管理](./identity-and-access-management.md)。 您必須建立 Azure Active Directory 的設計和整合，才能確保伺服器和使用者驗證。 Azure 角色型存取控制 (Azure RBAC) 必須進行模型化和部署，以強制將職責區隔和平臺作業和管理所需的權利分開。 金鑰管理必須經過設計和部署，以確保安全地存取資源和支援作業，例如輪替和復原。 最後，系統會將存取角色指派給控制項和資料平面的應用程式擁有者，以自主建立及管理資源。
 
 ![字母 C ](./media/c.png) [管理群組和訂](./management-group-and-subscription-organization.md)用帳戶組織。 Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織對應，在組織規劃大規模採用 Azure 時必須詳細考慮管理群組。 訂用帳戶是 Azure 中管理、計費、縮放的單位。 當您設計大規模的 Azure 採用時，訂用帳戶扮演著重要的角色。 這個關鍵的設計領域可協助您根據重要因素來捕捉訂用帳戶需求和設計目標訂閱。 這些因素包括環境類型、擁有權和治理模型、組織結構、應用程式組合。
 
-![字母 D 的 ](./media/d.png) [管理和監視](./management-and-monitoring.md)。 平台層級的整體 (水平) 資源監視與警示必須經過設計、部署及整合。 您也必須定義和簡化諸如修補和備份等作業工作。 安全性作業、監視和記錄必須與 Azure 上的資源和現有的內部部署系統進行設計及整合。 所有跨資源取得控制平面作業的訂用帳戶活動記錄，都應該串流至 Log Analytics，以供查詢及分析，受限於 RBAC 許可權。
+![字母 D 的 ](./media/d.png) [管理和監視](./management-and-monitoring.md)。 平台層級的整體 (水平) 資源監視與警示必須經過設計、部署及整合。 您也必須定義和簡化諸如修補和備份等作業工作。 安全性作業、監視和記錄必須與 Azure 上的資源和現有的內部部署系統進行設計及整合。 所有跨資源執行控制平面作業的訂用帳戶活動記錄，都應串流至 Log Analytics，以供查詢及分析，受限於 Azure RBAC 許可權。
 
 ![字母 E ](./media/e.png) [網路拓朴和連線能力](./network-topology-and-connectivity.md)。 您必須在 Azure 區域和內部部署環境中建立和部署端對端網路拓撲，以確保平臺部署之間的北歐和中東連線能力。 您必須在網路安全性設計中識別、部署和設定必要的服務和資源，例如防火牆和網路虛擬裝置，以確保完全符合安全性需求。
 

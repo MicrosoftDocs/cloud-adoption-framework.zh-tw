@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 06ff80acc1da04697fbf42ef0e50ac9768a79e94
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: ea6cf417488fff80e37a7366d7d44b6fabde8989
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447212"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713450"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理群組和訂用帳戶組織
 
@@ -29,7 +29,7 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 
 - 您可以透過 Azure 原則，使用管理群組來匯總原則和方案指派。
 - 管理群組樹狀結構最多可支援 [六個深度層級](/azure/governance/management-groups/overview#hierarchy-of-management-groups-and-subscriptions)。 這個限制不包含租用戶根層級或訂用帳戶層級。
-- Azure AD 租使用者中的任何主體 (使用者、服務主體) 都可以建立新的管理群組，因為預設不會啟用管理群組作業的 RBAC 授權。
+- Azure AD 租使用者中的任何主體 (使用者、服務主體) 都可以建立新的管理群組作為 Azure 角色型存取控制 (Azure RBAC) 管理群組作業的授權預設不會啟用。
 - 預設會將所有新的訂用帳戶放在根管理群組下。
 
 **設計建議：**
@@ -41,11 +41,11 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
 - 建立最上層的沙箱管理群組，讓使用者能夠立即試驗 Azure。 然後，使用者可以試驗在實際執行環境中可能尚未允許的資源。 沙箱可提供與開發、測試、實際執行環境隔離的環境。
   - 如需最上層沙箱管理群組的進一步指引，請參閱 [實施指導方針](./implementation-guidelines.md#sandbox-governance-guidance)。
 - 使用專用的服務主體名稱 (SPN) 來執行管理群組管理作業、訂用帳戶管理作業、角色指派。 使用 SPN 可減少較高權限的使用者人數，遵循最低權限方針。
-- `User Access Administrator`在根管理群組範圍 (RBAC) 角色指派 Azure 角色型存取控制， (`/`) 以授與在根層級上提及的 SPN 存取權。 授與 SPN 許可權之後， `User Access Administrator` 就可以安全地移除角色。 如此一來，只有 SPN 是角色的一部分 `User Access Administrator` 。
+- 將 `User Access Administrator` 根管理群組範圍 (的 Azure 角色指派給 `/`) ，以授與在根層級上提及之 SPN 的存取權。 授與 SPN 許可權之後， `User Access Administrator` 就可以安全地移除角色。 如此一來，只有 SPN 是角色的一部分 `User Access Administrator` 。
 - 將 `Contributor` 許可權指派給先前在根管理群組範圍中提及的 SPN (`/`) ，以允許租使用者層級的作業。 這個權限層級可確保 SPN 可用來部署和管理組織內任何訂用帳戶的資源。
-- `Platform`在根管理群組下建立管理群組，以支援常見的平臺原則和 RBAC 指派。 此群組結構可確保不同的原則可以套用至您的 Azure 基礎所使用的訂用帳戶。 它也可確保一般資源的計費是集中在一組基本訂用帳戶中。
+- `Platform`在根管理群組下建立管理群組，以支援常見的平臺原則和 Azure 角色指派。 此群組結構可確保不同的原則可以套用至您的 Azure 基礎所使用的訂用帳戶。 它也可確保一般資源的計費是集中在一組基本訂用帳戶中。
 - 限制在根管理群組範圍上進行的 Azure 原則指派數目 (`/`) 。 這項限制可使較低層級管理群組所繼承原則的偵錯最小化。
-- 在管理群組階層設定中啟用 RBAC 授權，以確保只有有許可權的使用者可以操作租使用者中的管理群組。
+- 在管理群組階層設定中啟用 Azure RBAC 授權，以確保只有具特殊許可權的使用者可以操作租使用者中的管理群組。
 - 為新的訂用帳戶設定預設的專用管理群組，以確保不會在根管理群組下放置任何訂用帳戶。
 
 ## <a name="subscription-organization-and-governance"></a>訂用帳戶的組織和治理
@@ -71,7 +71,7 @@ Azure Active Directory (Azure AD) 租用戶內的管理群組結構支援組織�
   - **管理界限：** 訂用帳戶會提供治理和隔離的管理界限，讓您能夠清楚地分隔考慮。 例如，開發、測試、實際執行等不同環境通常會與管理觀點隔離。
   - **原則界限：** 訂用帳戶可作為 Azure 原則指派的界限。 例如，保護工作負載 (例如 PCI) 通常需要額外的原則才能達成合規性。 如果使用個別的訂用帳戶，則不需要全面考量這項額外負擔。 同樣地，相較於實際執行環境，開發環境可能會有更寬鬆的原則需求。
   - **目標網路拓撲：** 虛擬網路無法跨訂用帳戶共用，但它們可以使用不同的技術進行連線，例如虛擬網路對等互連或 Azure ExpressRoute。 當您決定是否需要新的訂用帳戶時，請考慮哪些工作負載必須彼此通訊。
-- 依據大規模管理群組結構和原則需求，將訂用帳戶分到各管理群組之下。 群組可確保具有同一組原則和 RBAC 指派的訂用帳戶可以從管理群組繼承這些原則和指派，以避免重複的指派。
+- 依據大規模管理群組結構和原則需求，將訂用帳戶分到各管理群組之下。 群組可確保具有同一組原則和 Azure 角色指派的訂用帳戶可以從管理群組繼承這些訂用帳戶，以避免重複的指派。
 - 在管理群組中建立專用的管理訂用帳戶 `Platform` ，以支援 Azure 監視器 Log Analytics 工作區和 Azure 自動化 runbook 等全域管理功能。
 - 必要時，請在管理群組中建立專用的身分識別訂用帳戶 `Platform` ，以裝載 Windows Server Active Directory 網域控制站。
 - 在管理群組中建立專用的連線訂用帳戶 `Platform` ，以裝載 Azure 虛擬 WAN 中樞、私人網域名稱系統 (DNS) 、ExpressRoute 線路和其他網路資源。 專用的訂用帳戶可確保所有的基礎網路資源會一起計費，並與其他工作負載隔離。

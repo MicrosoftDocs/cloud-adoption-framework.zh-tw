@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 6014ee89b7aada82c3d8c398deaadf87b89d224b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 96a88744a401251f6c4863cf514a43fe75b62e69
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020568"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712990"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準企業治理指南：改善安全性基準專業領域
 
@@ -115,7 +115,7 @@ IT 和業務領導力很滿意 IT、應用程式開發和 BI 團隊的早期實�
   - 在所有管理群組和訂用帳戶中，對資料和資料分類的重要性進行審核並強制執行，以識別具有受保護資料分類的任何訂閱。
   - 僅稽核並強制使用已核准的映像。
 - 針對包含受保護資料分類的所有訂用帳戶更新 Azure 原則：
-  - 僅稽核並強制使用標準 Azure RBAC 角色。
+  - 只審核並強制使用標準 Azure 角色。
   - 為個別節點上待用的所有儲存體帳戶和檔案，稽核並強制執行加密。
   - 稽核並強制執行使用 NSG 連到所有 NIC 和子網路的應用程式。 網路和 IT 安全性小組將會定義 NSG。
   - 針對每個網路介面，審核並強制使用已核准的網路子網和虛擬網路。

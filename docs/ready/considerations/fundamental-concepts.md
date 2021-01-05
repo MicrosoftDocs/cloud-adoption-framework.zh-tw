@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: db862e0329769f4093e1cd71f302e31f2aad01af
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 378836786bf0d35f26dccbbf25b59fb4f02332f6
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013513"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713398"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎概念
 
@@ -41,7 +41,7 @@ Azure 訂用帳戶有數個用途。 Azure 訂用帳戶可以是：
 - **法律合約。** 每個訂用帳戶都與 [Azure 供應](https://azure.microsoft.com/support/legal/offer-details)專案相關聯，例如免費試用或隨用隨付。 每個供應項目都有特定的費率方案、優點和相關聯的條款及條件。 您可以在建立訂用帳戶時，選擇 Azure 供應項目。
 - **付款合約。** 當您建立訂用帳戶時，您會為該訂用帳戶提供付款資訊，例如信用卡號碼。 資源部署到該訂用帳戶上時產生的每月成本，會透過該付款方式計算並計費。
 - **尺規的界限。** 您可以對訂用帳戶定義規模限制。 訂用帳戶的資源不能超過設定的調整限制。 例如，限制單一訂用帳戶中可建立的虛擬機器數目。
-- **系統管理界限。** 訂用帳戶可以作為系統管理、安全性和原則的界限。 Azure 也會提供其他機制來滿足這些需求，例如管理群組、資源群組和角色型存取控制。
+- **系統管理界限。** 訂用帳戶可以作為系統管理、安全性和原則的界限。 Azure 也會提供其他機制來滿足這些需求，例如管理群組、資源群組和 Azure 角色型存取控制。
 
 ## <a name="azure-subscription-considerations"></a>Azure 訂用帳戶考量
 
@@ -58,18 +58,18 @@ Azure 訂用帳戶有數個用途。 Azure 訂用帳戶可以是：
 Azure 會定義三種類型的角色來管理訂用帳戶、身分識別和資源：
 
 - 傳統訂用帳戶管理員角色
-- Azure 角色型存取控制 (RBAC) 角色
-- Azure Active Directory (Azure AD) 管理員角色
+- Azure 角色
+- Azure Active Directory (Azure AD) 角色
 
 Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶時所用的電子郵件帳戶。 帳戶管理員是訂用帳戶的帳單擁有者。 帳戶管理員可以透過 Azure 入口網站 [管理訂](/azure/cost-management-billing/manage/add-change-subscription-administrator) 用帳戶管理員。
 
-依預設，訂用帳戶的服務系統管理員角色也會指派給用來建立 Azure 訂用帳戶的電子郵件帳戶。 服務系統管理員具有等同于 RBAC 型擁有者角色的訂用帳戶許可權。 服務管理員也有 Azure 入口網站的完整存取權。 帳戶管理員可以將服務管理員變更為不同的電子郵件帳戶。
+依預設，訂用帳戶的服務系統管理員角色也會指派給用來建立 Azure 訂用帳戶的電子郵件帳戶。 服務系統管理員具有等同于 Azure RBAC 型擁有者角色的訂用帳戶許可權。 服務管理員也有 Azure 入口網站的完整存取權。 帳戶管理員可以將服務管理員變更為不同的電子郵件帳戶。
 
 當您建立 Azure 訂用帳戶時，您可以將訂用帳戶與現有的 Azure AD 租用戶建立關聯。 否則，會建立具有相關聯目錄的新 Azure AD 租用戶。 Azure AD 目錄中的全域管理員角色會指派給用來建立 Azure AD 訂用帳戶的電子郵件帳戶。
 
 電子郵件帳戶可以與多個 Azure 訂用帳戶相關聯。 帳戶管理員可以將訂用帳戶轉移到另一個帳戶。
 
-如需 Azure 中定義的角色詳細說明，請參閱[傳統訂用帳戶管理員角色、Azure RBAC 角色和 Azure AD 管理員角色](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
+如需 Azure 中所定義角色的詳細說明，請參閱 [傳統訂用帳戶管理員角色、Azure 角色和 Azure AD 角色](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
 ## <a name="subscriptions-and-regions"></a>訂用帳戶和區域
 
@@ -87,7 +87,7 @@ Azure 訂用帳戶的帳戶管理員角色會指派給建立 Azure 訂用帳戶�
 - [Azure 如何運作？](../../get-started/what-is-azure.md)
 - [Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [Azure Resource Manager 概觀](/azure/azure-resource-manager/management/overview)
-- [Azure 資源的角色型存取控制 (RBAC)](/azure/role-based-access-control/overview)
+- [Azure 角色型存取控制 (Azure RBAC)](/azure/role-based-access-control/overview)
 - [什麼是 Azure Active Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 - [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租用戶](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Azure AD Connect 的拓撲](/azure/active-directory/hybrid/plan-connect-topologies)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: fd260d898dbc5fa39e17b3ad245b6410101059a6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3036bdff7300db9a84cf48a033aa73715ca225ab
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020313"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712768"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 
@@ -42,15 +42,15 @@ ms.locfileid: "97020313"
 - 最小許可權的存取模型將會套用至任何與任務關鍵性應用程式或受保護資料相關的資源。
 - 更高的許可權應該是例外狀況，而任何這類例外狀況都必須與雲端治理小組一起記錄。 應定期稽核例外狀況。
 
-**可能的設計選項：** 請參閱 [Azure 身分識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices) ，以 (RBAC) 策略來限制存取，根據 [需要知道](https://wikipedia.org/wiki/Need_to_know) 和 [最低許可權安全性原則](https://wikipedia.org/wiki/Principle_of_least_privilege) 來限制存取。
+**可能的設計選項：** 請參閱 [azure 身分識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices) ， (azure RBAC) 策略，根據 [需要知道](https://wikipedia.org/wiki/Need_to_know) 和 [最低許可權的安全性原則](https://wikipedia.org/wiki/Principle_of_least_privilege) 來限制存取。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>缺少內部部署與雲端之間的共用管理帳戶
 
 **技術風險：** 在內部部署 Active Directory 有帳戶的 IT 管理或系統管理人員可能沒有足夠的雲端資源存取權，可能無法有效率地解決操作或安全性問題。
 
-**原則聲明：** 內部部署 Active Directory 基礎結構中具有更高許可權的所有群組，都應該對應至核准的 RBAC 角色。
+**原則聲明：** 內部部署 Active Directory 基礎結構中具有更高許可權的所有群組，都應該對應至核准的 Azure 角色。
 
-**可能的設計選項：** 在雲端式 Azure Active Directory 與您的內部部署 Active Directory 之間執行混合式身分識別解決方案，並將必要的內部部署群組新增至執行其工作所需的 RBAC 角色。
+**可能的設計選項：** 在雲端式 Azure Active Directory 與您的內部部署 Active Directory 之間執行混合式身分識別解決方案，並將必要的內部部署群組新增至執行其工作所需的 Azure 角色。
 
 ## <a name="weak-authentication-mechanisms"></a>弱式驗證機制
 

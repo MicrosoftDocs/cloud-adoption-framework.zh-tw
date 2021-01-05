@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 254975d16c19626881dcc872517b1af58a2998fd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0c5fed524999b0aa083d81af90de40084b497eae
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013275"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713025"
 ---
 # <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
@@ -112,7 +112,7 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 | 網路管理 | 企業級的虛擬網路和子網配置  | _一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組_ |
 | 伺服器端點安全性 | 監視及修復伺服器安全性 (修補、設定、端點安全性等 )   | _通常 [中央 IT 營運](../organize/central-it.md) 和 [基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md) 小組共同合作_ |
 | 事件監視和回應 | 調查和補救 SIEM 或來源主控台中的安全性事件 (Azure 資訊安全中心、Azure AD Identity Protection 等 )  | _一般 [安全性作業](../organize/cloud-security-operations-center.md) 小組_ |
-| 原則管理 | 設定使用角色型存取控制的方向 (RBAC) 、Azure 資訊安全中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | _通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_ |
+| 原則管理 | 設定 azure 角色型存取控制的使用方向 (Azure RBAC) 、Azure 資訊安全中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | _通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_ |
 | 身分識別安全性與標準 | Azure AD 目錄、PIM/PAM 使用量、MFA、密碼/同步處理設定、應用程式識別標準的設定方向 | _通常是身分 [識別與金鑰管理](../organize/cloud-security-identity-keys.md)  +  [原則以及標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_  |
 
 > [!NOTE]

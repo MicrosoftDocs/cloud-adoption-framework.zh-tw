@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: fd4ab0ec5e2205689e78f6780847a8fe3ba28cda
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a58049062037daa3fcb2c3289b0993a6fb6848c8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026093"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713172"
 ---
 <!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
@@ -53,7 +53,7 @@ Azure 租使用者系統管理員必須啟用安全性功能，以保護工作�
 - **及時 (JIT) 存取。** 使用對 Azure Vm 上管理埠的即時控制存取，減少網路攻擊面。
   - 在網際網路上開啟 VM RDP 埠3389，會將 Vm 公開給不良執行者的持續活動。 由於 Azure IP 位址是眾所周知的，因此駭客會持續對它們進行探查，以對開啟的 3389 連接埠發動攻擊。
   - 及時使用網路安全性群組 (Nsg) 和內送規則，以限制特定埠開啟的時間量。
-  - 啟用即時存取後，安全性中心會檢查使用者是否具有角色型存取控制 (RBAC) VM 的寫入存取權限。 此外，您可以指定使用者如何連線至 Vm 的規則。 如果許可權沒問題，就會核准存取要求，而「安全性中心」會將 Nsg 設定為在您指定的時間量內允許輸入流量進入選取的埠。 當時間過期時，Nsg 會回到其先前的狀態。
+  - 啟用即時存取後，安全性中心會檢查使用者是否有 Azure 角色型存取控制 (Azure RBAC) VM 的寫入存取權限。 此外，您可以指定使用者如何連線至 Vm 的規則。 如果許可權沒問題，就會核准存取要求，而「安全性中心」會將 Nsg 設定為在您指定的時間量內允許輸入流量進入選取的埠。 當時間過期時，Nsg 會回到其先前的狀態。
 - **適應性應用程式控制。** 使用動態允許清單來控制 Vm 上執行的應用程式，以將軟體和惡意程式碼保留在 Vm 上。
   - 適應性應用程式控制可讓您核准應用程式，並防止惡意使用者或系統管理員在您的 Vm 上安裝未經核准或調查的軟體應用程式。
     - 您可以封鎖或警示執行惡意應用程式的嘗試、避免不想要或惡意的應用程式，並確保符合您組織的應用程式安全性原則。
@@ -152,11 +152,11 @@ Azure 提供下列解決方案：
 
 ## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>最佳做法：審查訂用帳戶和資源許可權
 
-在您移轉工作負載並在 Azure 中執行它們的同時，具有工作負載存取權的人員也會四處移動。 您的安全性小組應該定期檢閱針對您 Azure 租用戶和資源群組的存取權。 Azure 有一些供應項目可供進行身分識別管理和存取控制安全性，其中包括角色型存取控制 (RBAC) 以針對存取 Azure 資源的權限進行授權。
+在您移轉工作負載並在 Azure 中執行它們的同時，具有工作負載存取權的人員也會四處移動。 您的安全性小組應該定期檢閱針對您 Azure 租用戶和資源群組的存取權。 Azure 提供身分識別管理和存取控制安全性的供應專案，包括 Azure 角色型存取控制 (Azure RBAC) ，以授與存取 Azure 資源的許可權。
 
-- RBAC 會針對安全性主體指派存取權限。 安全性主體代表使用者、群組 (一組使用者) 、服務主體 (應用程式和服務所使用的身分識別) ，以及受控識別 (Azure Azure Active Directory 自動管理的) 身分識別。
-- RBAC 可將角色指派給安全性主體，例如擁有者、參與者和讀取者，以及角色定義 () 的許可權集合，以定義角色可執行檔作業。
-- RBAC 也可以設定範圍以設定角色的界線。 範圍可以設定於數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
+- Azure RBAC 會為安全性主體指派存取權限。 安全性主體代表使用者、群組 (一組使用者) 、服務主體 (應用程式和服務所使用的身分識別) ，以及受控識別 (Azure Azure Active Directory 自動管理的) 身分識別。
+- Azure RBAC 可將角色指派給安全性主體，例如擁有者、參與者和讀取者，以及角色定義 () 的許可權集合，以定義角色可執行檔作業。
+- Azure RBAC 也可以設定設定角色界限的範圍。 範圍可以設定於數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
 - 確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
 
 確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
@@ -166,8 +166,8 @@ Azure 提供下列解決方案：
 
 **瞭解更多資訊：**
 
-- 瞭解 [Azure 角色型存取控制 (RBAC) ](/azure/role-based-access-control/overview)。
-- 瞭解如何透過 [RBAC 和 Azure 入口網站](/azure/role-based-access-control/role-assignments-portal)來管理存取權。
+- 瞭解 [ (AZURE RBAC) 的 azure 角色型存取控制 ](/azure/role-based-access-control/overview)。
+- 瞭解如何透過 [AZURE RBAC 和 Azure 入口網站](/azure/role-based-access-control/role-assignments-portal)來管理存取權。
 - 瞭解 [自訂角色](/azure/role-based-access-control/custom-roles)。
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>最佳做法：審核審核和安全性記錄

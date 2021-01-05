@@ -263,7 +263,7 @@ items:
                     href: ready/considerations/storage-options.md
                   - name: 檢閱資料選項
                     href: ready/considerations/data-options.md
-                  - name: 角色型存取控制
+                  - name: Azure 角色型存取控制
                     href: ready/considerations/roles.md
                   - name: 建立混合式雲端一致性
                     href: ready/considerations/hybrid-consistency.md
@@ -429,8 +429,6 @@ items:
                         href: scenarios/lamp/moodle/migration-arch.md
                       - name: Moodle 移轉資源
                         href: scenarios/lamp/moodle/migration-resources.md
-                      - name: 虛擬網路閘道連線
-                        href: scenarios/lamp/moodle/vpn-gateway.md
                       - name: 移轉步驟
                         href: scenarios/lamp/moodle/migration-start.md
                       - name: 設定 Moodle 背景工作節點

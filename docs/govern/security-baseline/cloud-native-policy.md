@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 572835ca2416ef50d4fbe9175a1eb34adf33188b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c4db0589f250c88b77b21e994f35356ada877d3a
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019225"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712513"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
@@ -40,7 +40,7 @@ ms.locfileid: "97019225"
 
 在雲端和內部部署目錄中，用於身分識別的雲端原生原則範例，可能包含如下所示的需求：
 
-- 具有角色型存取控制的資源的授權存取 (RBAC) 、多重要素驗證，以及單一登入 (SSO) 。
+- 使用 Azure 角色型存取控制 (Azure RBAC) 、多重要素驗證及單一登入 (SSO) 存取資源的授權。
 - 快速緩和疑似入侵的使用者身分識別。
 - 及時 (JIT) ，以工作為基礎授與足夠的存取權，以限制公開 overprivileged 的系統管理員認證。
 - 透過 Azure Active Directory，擴充使用者身分識別，以及跨多個環境存取原則。

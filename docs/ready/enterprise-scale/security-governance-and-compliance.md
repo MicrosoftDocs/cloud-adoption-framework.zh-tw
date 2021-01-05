@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 4e76a3299db2962b46bb6f68c76b5aa829fef2d4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9f86a97665d3a6fc4e14165b6f6eed4ac9ffa936
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023577"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713227"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 <!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
@@ -83,7 +83,7 @@ ms.locfileid: "97023577"
 
 ## <a name="plan-for-governance"></a>為控管做規劃
 
-治理提供多項機制和流程，以便維持控制 Azure 中的應用程式與資源。 Azure 原則在企業技術資產中確保安全性與合規性是不可或缺的。 它可以在 Azure 平臺服務中強制執行重要的管理和安全性慣例，並補充角色型存取控制 (RBAC) ，以控制授權使用者可執行檔動作。
+治理提供多項機制和流程，以便維持控制 Azure 中的應用程式與資源。 Azure 原則在企業技術資產中確保安全性與合規性是不可或缺的。 它可以在 Azure 平臺服務中強制執行重要的管理和安全性慣例，並補充 Azure 角色型存取控制 (Azure RBAC) ，以控制授權使用者可執行檔動作。
 
 **設計考慮：**
 
@@ -103,7 +103,7 @@ ms.locfileid: "97023577"
 
 - 識別所需的 Azure 標記，並使用附加原則模式來強制使用。
 
-- 將法規和合規性需求對應至 Azure 原則定義和 Azure AD RBAC 指派。
+- 將法規和合規性需求對應至 Azure 原則定義和 Azure 角色指派。
 
 - 在最上層根管理群組上建立 Azure 原則定義，以便在繼承的範圍指派這些定義。
 

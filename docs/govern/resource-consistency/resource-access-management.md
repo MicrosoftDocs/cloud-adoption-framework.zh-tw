@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: dc2a86cbdac8b3acb8cc62eff197af93b79f75e6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 88f91656ad0443db4e6cf150b299dc36f38b2a86
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019395"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712845"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -82,12 +82,12 @@ Azure Resource Manager 需要用戶端同時指定訂用帳戶和資源群組的
 
 對於要在特定訂用帳戶中管理資源的每個用戶端要求，都需要使用者在相關聯的 Azure AD 租用戶中具有帳戶。
 
-下一個控制項會檢查使用者具有足夠權限可以提出要求。 您要使用[角色型存取控制 (RBAC)](/azure/role-based-access-control) 將權限指派給使用者。
+下一個控制項會檢查使用者具有足夠權限可以提出要求。 許可權是使用 [azure 角色型存取控制 (AZURE RBAC) ](/azure/role-based-access-control)指派給使用者。
 
-![指派給 RBAC 角色的使用者 ](../../_images/govern/design/governance-1-18.png)
- *圖10：租使用者中的每位使用者都會獲指派一或多個 RBAC 角色。*
+![指派給 Azure 角色 ](../../_images/govern/design/governance-1-18.png)
+ *的使用者圖10：租使用者中的每位使用者都會獲指派一或多個 Azure 角色。*
 
-RBAC 角色指定了一組權限，使用者可能會在特定資源上採用那些權限。 當角色指派給使用者時，會套用這些權限。 例如， [內建 `owner` 角色](/azure/role-based-access-control/built-in-roles#owner) 可讓使用者在資源上執行任何動作。
+Azure 角色會指定使用者在特定資源上所採取的一組許可權。 當角色指派給使用者時，會套用這些權限。 例如， [內建 `owner` 角色](/azure/role-based-access-control/built-in-roles#owner) 可讓使用者在資源上執行任何動作。
 
 下一個控制項會檢查在針對 [Azure 資源原則](/azure/governance/policy)指定的設定下，是否允許要求。 Azure 資源原則會指定對特定資源允許的作業。 例如，Azure 資源原則可以指定只允許使用者部署特定類型的虛擬機器。
 

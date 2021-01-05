@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 0d9f84b8d3f657aa3981cc44c681315252126d42
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7f011b67288b40a82dc4901ca264dfc0f607ed7d
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020160"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712938"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -37,7 +37,7 @@ ms.locfileid: "97020160"
   - 每個工作負載擁有者預設會遭到拒絕存取資源。 資源存取權是由資源群組範圍中的單一受信任使用者明確授與。
   - 共用基礎結構資源的管理存取權，僅限於共用的基礎結構擁有者。
   - 每個工作負載的管理存取權僅限於生產環境中的工作負載擁有者，並在開發過程中提高控制層級，以在開發、測試、預備和生產)  (開發、測試、預備和生產環境。
-  - 企業不想要在三個主要環境中各自獨立管理角色，因此需要使用 Azure 的角色型存取控制中唯一可用的 [內建角色](/azure/role-based-access-control/built-in-roles) (RBAC) 。 如果企業絕對需要自訂的 RBAC 角色，則需要額外的程式，才能在三個環境之間同步處理自訂角色。
+  - 企業不想要在三個主要環境中各自獨立管理角色，因此只需要使用 Azure 角色型存取控制中的可用內 [建角色](/azure/role-based-access-control/built-in-roles) (Azure RBAC) 。 如果企業絕對需要自訂角色，則需要額外的程式，才能在三個環境之間同步處理自訂角色。
 - 依工作負載擁有者名稱、環境或兩者所追蹤的成本。
 
 ## <a name="identity-management"></a>身分識別管理
@@ -72,11 +72,11 @@ _圖2： Azure AD 全域管理員在租使用者中建立必要的使用者帳�
 
 ## <a name="resource-access-permissions-model-of-least-privilege"></a>最低權限的資源存取權限模型
 
-既然您已建立身分識別管理系統和使用者帳戶，您必須決定如何將角色型存取控制 (RBAC) 角色套用到每個帳戶，以支援最低權限的權限模型。
+現在您已建立身分識別管理系統和使用者帳戶，您必須決定如何將 Azure 角色套用到每個帳戶，以支援最低許可權的許可權模型。
 
 其他需求指出與每個工作負載相關聯的資源要彼此隔離，這樣就不會有工作負載擁有者具備並非他們擁有的其他任何工作負載的管理存取權。 此外，也需要使用 Azure 角色型存取控制的內建角色來執行此模型。
 
-每個 RBAC 角色會在 Azure 中三個範圍的其中一個套用：**訂用帳戶**、**資源群組**，然後是個別 **資源**。 角色會在較低的範圍繼承。 例如，如果在訂用帳戶層級將 [內建擁有者角色](/azure/role-based-access-control/built-in-roles#owner) 指派給使用者，除非覆寫，否則該角色也會在資源群組和個別資源層級指派給該使用者。
+每個 Azure 角色會套用到 Azure 中的三個範圍之一： **訂** 用帳戶、 **資源群組**，以及個別 **資源**。 角色會在較低的範圍繼承。 例如，如果在訂用帳戶層級將 [內建擁有者角色](/azure/role-based-access-control/built-in-roles#owner) 指派給使用者，除非覆寫，否則該角色也會在資源群組和個別資源層級指派給該使用者。
 
 因此，若要建立最低許可權的模型，您必須決定特定類型使用者可在這三個範圍中執行的動作。 例如，需求是工作負載擁有者僅有權可以管理與他們的工作負載相關聯的資源，無法管理其他工作負載。 如果您要在訂用帳戶範圍指派內建的擁有者角色，每個工作負載擁有者都會具有所有工作負載的管理存取權。
 
@@ -239,7 +239,7 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
 > [!NOTE]
 > 若要深入瞭解 Azure 帳戶與訂用帳戶之間的關聯性，請參閱 [瞭解 azure 中的資源存取](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
-請遵循這些步驟：
+依照下列步驟執行：
 
 1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](/azure/active-directory/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
     - 建立訂閱。
@@ -273,4 +273,4 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
 
 ## <a name="related-resources"></a>相關資源
 
-[適用於 Azure 資源的內建角色](/azure/role-based-access-control/built-in-roles)
+[Azure 內建角色](/azure/role-based-access-control/built-in-roles)

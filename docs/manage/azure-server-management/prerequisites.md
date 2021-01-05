@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 0262cebac478fd6c6736ea5c30ed2b5bd1cfd055
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6ccfcd565a48f597671af0f8106e8094a51108b8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016913"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712615"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>第1階段： Azure 伺服器管理服務的先決條件規劃
 
@@ -41,7 +41,7 @@ ms.locfileid: "97016913"
 下列 Azure 伺服器管理服務需要連結的 Log Analytics 工作區和自動化帳戶：
 
 - [更新管理](/azure/automation/update-management/overview)
-- [變更追蹤與詳細目錄](/azure/automation/change-tracking)
+- [變更追蹤和清查](/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](/azure/virtual-machines/extensions/dsc-overview)
 
@@ -71,7 +71,7 @@ ms.locfileid: "97016913"
 
 您可以在每個資源群組中建立一個工作區和一個 Azure 自動化帳戶。 然後，將對應的地理位置中的配對部署到虛擬機器。
 
-或者，如果您的資料合規性原則不規定資源位於特定區域，您可以建立一組來管理所有虛擬機器。 我們也建議您將工作區和自動化帳戶組放在不同的資源群組中，以提供更細微的角色型存取控制 (RBAC) 。
+或者，如果您的資料合規性原則不規定資源位於特定區域，您可以建立一組來管理所有虛擬機器。 我們也建議您將工作區和自動化帳戶組放在不同的資源群組中，以提供更細微的 Azure 角色型存取控制 (Azure RBAC) 。
 
 下圖中的範例有一個具有兩個資源群組的訂用帳戶，每個群組都位於不同的地理位置：
 

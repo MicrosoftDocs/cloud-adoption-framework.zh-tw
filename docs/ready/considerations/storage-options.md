@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 6f9a14c2373d7420207ea0f4e849d5d89d6f62c1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9ef641892ec564e42557a0fb8ad91ff18507c722
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024104"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713330"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -105,7 +105,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 |---|---|
 | [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體是 Microsoft 針對雲端推出的物件儲存體解決方案。 Blob 儲存體已針對儲存大量非結構化資料進行最佳化。 非結構化資料是指不符合特定資料模型或定義的資料，例如文字或二進位資料。 <br><br> Blob 儲存體設計用來： <li> 直接提供映像或文件給瀏覽器。 <li> 儲存檔案供分散式存取。 <li> 串流影片和音訊。 <li> 寫入記錄檔。 <li> 儲存備份和還原、災害復原和封存資料。 <li> 儲存資料供內部部署或 Azure 裝載服務進行分析。 |
 | [Azure Data Lake Storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) | Blob 儲存體支援 Azure Data Lake Storage Gen2，這是適用於雲端的 Microsoft 企業巨量資料分析解決方案。 Azure Data Lake Storage Gen2 提供階層式檔案系統和 Blob 儲存體的各項優點，包括低成本、分層式儲存體、高可用性、強式一致性，以及災害復原功能。 |
-| [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) | Azure 磁片儲存體提供持續、高效能的區塊儲存體，以供 Azure 虛擬機器的電源。 Azure 磁片具有高度耐久性、安全，並為使用 [premium 或 Ultra ssd](/azure/virtual-machines/windows/disks-types)的 vm 提供業界唯一的單一實例 SLA。 Azure 磁片提供可用性設定組和可用性區域的高可用性，可對應至您的 Azure 虛擬機器容錯網域。 此外，Azure 磁碟會作為 Azure 中的最上層資源來管理。 根據預設，系統會提供角色型存取控制 (RBAC)、原則和標記等 Azure Resource Manager 功能。 |
+| [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) | Azure 磁片儲存體提供持續、高效能的區塊儲存體，以供 Azure 虛擬機器的電源。 Azure 磁片具有高度耐久性、安全，並為使用 [premium 或 Ultra ssd](/azure/virtual-machines/windows/disks-types)的 vm 提供業界唯一的單一實例 SLA。 Azure 磁片提供可用性設定組和可用性區域的高可用性，可對應至您的 Azure 虛擬機器容錯網域。 此外，Azure 磁碟會作為 Azure 中的最上層資源來管理。 預設會提供 Azure Resource Manager 功能（例如 Azure 角色型存取控制） (Azure RBAC) 、原則和標記。 |
 | [Azure 檔案](/azure/storage/files/storage-files-planning) | Azure 檔案儲存體可提供完全受控的原生 SMB 檔案共用，而不需要執行 VM。 您可以將 Azure 檔案儲存體共用掛接為任何 Azure VM 或內部部署機器的網路磁碟機。 |
 | [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | 您可使用 Azure 檔案同步將組織的檔案共用集中在 Azure 檔案服務中，同時保有內部部署檔案伺服器的靈活度、效能及相容性。 Azure 檔案同步會將 Windows Server 轉換成 Azure 檔案共用的快速快取。 |
 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files 服務是企業等級、高效能、計量檔案儲存體服務。 Azure NetApp Files 支援任何工作負載類型，預設為高度可用。 您可以選取服務和效能層級，並且透過服務設定快照集。 |
@@ -125,7 +125,7 @@ Azure 儲存體有各種不同的選項，可根據客戶需求來協助確保�
 
 為了協助您保護雲端中的資料，Azure 儲存體針對待用和傳輸中的資料，提供了數個資料安全性和加密的最佳做法。 您可以：
 
-- 使用 RBAC 和 Azure AD 保護儲存體帳戶。
+- 使用 Azure RBAC 和 Azure AD 來保護儲存體帳戶。
 - 使用用戶端加密、HTTPS 或 SMB 3.0，保護應用程式和 Azure 之間傳輸中資料的安全。
 - 使用 Azure 儲存體加密將資料寫入 Azure 儲存體時，將資料設定為自動加密。
 - 使用共用存取簽章，將委派存取權授與 Azure 儲存體中的資料物件。

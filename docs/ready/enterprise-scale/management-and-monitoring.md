@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: b7ec1ea50b6f7366444b8199637d5bb8dbab6f4f
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 14eb89c8accb6ec765d617bed72c70b03132a4d4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447246"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713313"
 ---
 # <a name="management-and-monitoring"></a>管理與監視
 
@@ -53,9 +53,9 @@ _圖1：平臺管理與監視。_
 
 **設計建議：**
 
-- 使用單一 [監視器記錄工作區](/azure/azure-monitor/platform/design-logs-deployment) 來集中管理平臺，但角色型存取控制 (RBAC) 、資料主權需求和資料保留原則會強制執行不同的工作區。 集中式記錄對於營運管理小組所需的可見度而言是不可或缺的。 記錄集中的驅動有關變更管理、服務健康狀態、設定，以及 IT 營運的大部分其他層面的報告。 在集中式工作區模型上進行融合可減少系統管理工作，以及可檢視性中的間隙機會。
+- 使用單一 [監視器記錄工作區](/azure/azure-monitor/platform/design-logs-deployment) 來集中管理平臺，但 azure 角色型存取控制 (azure RBAC) 、資料主權需求和資料保留原則會強制執行不同的工作區。 集中式記錄對於營運管理小組所需的可見度而言是不可或缺的。 記錄集中的驅動有關變更管理、服務健康狀態、設定，以及 IT 營運的大部分其他層面的報告。 在集中式工作區模型上進行融合可減少系統管理工作，以及可檢視性中的間隙機會。
 
-    在企業級架構的環境中，集中式記錄主要與平台作業有關。 這項強調不會防止針對以 VM 為基礎的應用程式記錄使用相同的工作區。 在以資源為中心的存取控制模式下設定工作區時，會強制執行細微的 RBAC，以確保應用程式小組只能存取來自其資源的記錄。 在此模型中，應用程式小組可透過減少其管理開銷，從使用現有的平台基礎結構中受益。 對於任何非計算資源（例如 web 應用程式或 Azure Cosmos DB 資料庫），應用程式小組可以使用自己的 Log Analytics 工作區，並設定診斷和計量以在此路由傳送。
+    在企業級架構的環境中，集中式記錄主要與平台作業有關。 這項強調不會防止針對以 VM 為基礎的應用程式記錄使用相同的工作區。 使用以資源為中心的存取控制模式設定的工作區時，會強制執行細微的 Azure RBAC，以確保應用程式小組只能存取其資源的記錄。 在此模型中，應用程式小組可透過減少其管理開銷，從使用現有的平台基礎結構中受益。 對於任何非計算資源（例如 web 應用程式或 Azure Cosmos DB 資料庫），應用程式小組可以使用自己的 Log Analytics 工作區，並設定診斷和計量以在此路由傳送。
 
 <!-- docutune:ignore WORM -->
 
@@ -65,7 +65,7 @@ _圖1：平臺管理與監視。_
 - 使用 [Azure 自動化中的更新管理](/azure/automation/update-management/overview) 作為 Windows 和 Linux vm 的長期修補機制。 透過 Azure 原則強制執行更新管理設定可確保所有 Vm 都包含在修補程式管理擬訂規則中，並讓應用程式小組能夠管理其 Vm 的修補部署。 它也會為所有 Vm 的中央 IT 小組提供可見度和強制功能。
 - 使用網路監看員，透過網路監看員 [NSG 流量記錄 v2](/azure/network-watcher/network-watcher-nsg-flow-logging-overview)主動監視流量流程。 使用[分析](/azure/network-watcher/traffic-analytics)會分析 NSG 流量記錄，以收集虛擬網路內 IP 流量的深入解析，並提供重要的資訊以進行有效的管理和監視。 流量分析提供的資訊包括大部分的通訊主機和應用程式協定、最常交談的主機配對、允許或封鎖的流量、輸入和輸出流量、開啟網際網路埠、大部分封鎖規則、每個 Azure 資料中心的流量分配、虛擬網路、子網或 rogue 網路。
 - 使用資源鎖定來防止意外刪除重要的共用服務。
-- 使用 [拒絕原則](/azure/governance/policy/concepts/effects#deny) 補充 Azure AD RBAC 指派。 拒絕原則可用來防止將要求傳送至資源提供者，以防止部署和設定不符合所定義之標準的資源。 拒絕原則和 RBAC 指派的組合可確保適當的護欄已準備好可部署和設定 _資源，_ _以及可部署_ 和設定的資源。
+- 使用 [拒絕原則](/azure/governance/policy/concepts/effects#deny) 來補充 Azure 角色指派。 拒絕原則可用來防止將要求傳送至資源提供者，以防止部署和設定不符合所定義之標準的資源。 拒絕原則和 Azure 角色指派的組合可確保適當的護欄已準備好可部署和設定 _資源，_ _以及可部署_ 和設定的資源。
 - 在整體平臺監視解決方案中包含 [服務](/azure/service-health/service-health-overview) 和 [資源](/azure/service-health/resource-health-overview) 健康狀態事件。 從平臺的觀點來追蹤服務和資源健康狀態，是 Azure 中資源管理的重要元件。
 - 請勿將原始記錄專案傳送回內部部署監視系統。 相反地，請採用在 azure 中所提供的 _資料會保留在 azure 中_ 的原則。 如果需要內部部署 SIEM 整合，則 [傳送重大警示](/azure/security-center/continuous-export) ，而不是記錄。
 
@@ -76,7 +76,7 @@ _圖1：平臺管理與監視。_
 **設計考慮：**
 
 - 應用程式監視可以使用專用的 Log Analytics 工作區。
-- 針對部署到虛擬機器的應用程式，記錄應該從平臺的觀點集中儲存到專用的 Log Analytics 工作區。 應用程式小組可以存取其應用程式或虛擬機器上所擁有之 RBAC 的記錄。
+- 針對部署到虛擬機器的應用程式，記錄應該從平臺的觀點集中儲存到專用的 Log Analytics 工作區。 應用程式小組可以存取在其應用程式或虛擬機器上受限於 Azure RBAC 的記錄。
 - 適用于基礎結構即服務的應用程式效能和健全狀況監視 (IaaS) 和平臺即服務 (PaaS) 資源。
 - 跨所有應用程式元件的資料匯總。
 - [健康情況模型和運算化](../..//manage/monitor/cloud-models-monitor-overview.md)：
@@ -86,7 +86,7 @@ _圖1：平臺管理與監視。_
 
 **設計建議：**
 
-- 使用集中式 Azure 監視器 Log Analytics 工作區，從 IaaS 和 PaaS 應用程式資源收集記錄和計量，並 [使用 RBAC 控制記錄存取](/azure/azure-monitor/platform/design-logs-deployment#access-control-overview)。
+- 使用集中式 Azure 監視器 Log Analytics 工作區，從 IaaS 和 PaaS 應用程式資源收集記錄和計量，並 [使用 AZURE RBAC 來控制記錄存取](/azure/azure-monitor/platform/design-logs-deployment#access-control-overview)。
 - 使用 [Azure 監視器計量](/azure/azure-monitor/platform/data-platform-metrics) 來進行時間緊迫的分析。 Azure 監視器中的計量會儲存在經過優化的時間序列資料庫中，以分析時間戳記資料。 這些計量非常適用于警示和快速偵測問題。 它們也可以告訴您系統的執行狀況。 它們通常需要與記錄結合，以找出問題的根本原因。
 - 使用 [Azure 監視器記錄](/azure/azure-monitor/platform/data-platform-logs) 來取得深入解析和報告。 記錄包含不同類型的資料，這些資料會組織成具有不同屬性集的記錄。 它們適合用來分析來自各種來源的複雜資料，例如效能資料、事件和追蹤。
 - 必要時，請使用登陸區域內的共用儲存體帳戶來儲存 Azure 診斷擴充記錄儲存體。

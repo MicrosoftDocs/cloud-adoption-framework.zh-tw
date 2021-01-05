@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 3cf80c711a207f19f00cd5e6d4ea37f36d92b721
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d256e830e2da3428d3e5177aab00439d3c1d426d
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012306"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713822"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -26,7 +26,7 @@ ms.locfileid: "97012306"
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
 
-## <a name="plan"></a>計畫
+## <a name="plan"></a>方案
 
 | 資源 | 描述 |
 |----------|-------------|
@@ -58,9 +58,9 @@ ms.locfileid: "97012306"
 | [身分識別基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于身分識別需求。 |
 | [資源一致性專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于資源一致性。 |
 | [安全性基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于安全性基準。 |
-| [Azure 治理視覺化](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理的視覺化程式是 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能中捕捉資料，例如 Azure 原則、角色型存取控制 (RBAC) 和 Azure 藍圖。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
+| [Azure 治理視覺化](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理的視覺化程式是 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能（例如 Azure 原則、Azure 角色型存取控制 (Azure RBAC) 和 Azure 藍圖）取得資料。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
 
-## <a name="migrate"></a>移轉
+## <a name="migrate"></a>遷移
 
 | 資源 | 描述 |
 |----------|-------------|

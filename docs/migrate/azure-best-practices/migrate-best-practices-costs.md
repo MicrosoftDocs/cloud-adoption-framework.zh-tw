@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 568f865589aa94dcc48d33bfde40c857ffdd4379
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d357b3c3f38100c684f97920d320ceb7ea8effc2
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025974"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713142"
 ---
 <!-- docutune:casing ARO -->
 
@@ -195,7 +195,7 @@ _圖3： Azure 保留的 VM 執行個體。_
 
 - 閱讀 [Azure 使用量 api 總覽](/azure/billing/billing-consumption-api-overview)。
 - 瞭解如何 [連接到 Power BI Desktop 中的 Azure 使用量見解](/power-bi/desktop-connect-azure-consumption-insights)。
-- 瞭解如何 [使用角色型存取控制 (RBAC) 來管理 Azure 帳單資訊的存取權 ](/azure/billing/billing-manage-access)。
+- 瞭解如何 [使用 azure 角色型存取控制 (AZURE RBAC) 來管理 azure 帳單資訊的存取權 ](/azure/billing/billing-manage-access)。
 
 ## <a name="after-migration"></a>移轉之後
 

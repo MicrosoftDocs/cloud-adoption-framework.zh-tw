@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3d527d623bfd6fb7ed12910366fa7e4ddbf131e4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5927992123c9d509b2a38b2e943e60bf3981faa8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022047"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713125"
 ---
 <!-- docutune:casing ARO -->
 
@@ -230,7 +230,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 - 閱讀 [Azure 使用量 api 總覽](/azure/billing/billing-consumption-api-overview)。
 - 瞭解如何 [連接到 Power BI Desktop 中的 Azure 使用量見解](/power-bi/desktop-connect-azure-consumption-insights)。
-- 瞭解如何 [使用角色型存取控制 (RBAC) 來管理 Azure 帳單資訊的存取權 ](/azure/billing/billing-manage-access)。
+- 瞭解如何 [使用 azure 角色型存取控制 (AZURE RBAC) 來管理 azure 帳單資訊的存取權 ](/azure/billing/billing-manage-access)。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>最佳做法：監視資源使用量
 

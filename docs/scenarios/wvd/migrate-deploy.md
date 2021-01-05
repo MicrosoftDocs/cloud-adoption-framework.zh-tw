@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 8546db1193fa9746675e3fabcfde042671e2eb70
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 8d0b754ed37665b01fb3b9852b1af027c9c37beb
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025481"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713788"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -65,7 +65,7 @@ Windows 虛擬桌面實例的部署遵循類似于 [概念證明](./proof-of-con
 
 您也可以使用 [Azure 檔案儲存體來裝載使用者設定檔](/azure/virtual-desktop/create-file-share)。 這麼做將需要範圍中的幾個額外步驟，包括：
 
-- **每 Azure 檔案儲存體實例：** 您也可以設定儲存體帳戶、磁片類型，以及 Active Directory 連線 ([Active Directory Domain Services (AD DS](/azure/virtual-desktop/create-profile-container-adds)) 、指派 Active Directory 使用者群組的角色型存取控制存取、套用新的技術檔案系統許可權，以及取得儲存體帳戶存取金鑰。
+- **每 Azure 檔案儲存體實例：** 另外也支援設定儲存體帳戶、磁片類型，以及 Active Directory 連線 ([Active Directory Domain Services (AD DS](/azure/virtual-desktop/create-profile-container-adds)) 、指派 Active Directory 使用者群組的 Azure 角色型存取控制存取、套用新的技術檔案系統許可權，以及取得儲存體帳戶存取金鑰。
 - **每一主機/角色：** 設定工作階段主機虛擬機器上的 FSLogix。
 - **每位使用者：** 將使用者指派給主機會話。
 

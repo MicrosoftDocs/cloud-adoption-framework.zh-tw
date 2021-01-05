@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: f9afb3f71a05f57c735cd416ce47b56ba8551669
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bd095d6474c5469fdc930b30a4a6d3ed0a901125
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012799"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713008"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>在遷移旅程的規劃階段期間的技能就緒途徑
 
@@ -63,7 +63,7 @@ ms.locfileid: "97012799"
 - [建立 VM](/learn/modules/create-windows-virtual-machine-in-azure)。 使用 Azure 入口網站建立虛擬機器。
 - [Azure 網路](/learn/modules/intro-to-azure-networking)功能。 瞭解 Azure 網路功能的基本概念，以及 Azure 網路功能如何協助您提升復原能力並減少延遲。
 - [Azure 計算選項](/learn/modules/intro-to-azure-compute)。 瞭解 Azure 計算服務。
-- [使用 RBAC 保護資源](/learn/modules/secure-azure-resources-with-rbac)。 使用 RBAC 保護資源。
+- [使用 AZURE RBAC 保護資源](/learn/modules/secure-azure-resources-with-rbac)。 使用 Azure RBAC 來保護資源。
 - [資料儲存選項](/learn/modules/intro-to-data-in-azure)。 瞭解 Azure 資料儲存體的優點。
 
 ## <a name="organizational-skills"></a>組織技能

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: c4153a612c1ddf7e0e3c2bfc185157bd4e49677d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1bea8e50197ade15d232cb4b371969f1ca66e7e4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026705"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713261"
 ---
 <!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
 
@@ -59,7 +59,7 @@ _圖1：平臺自動化和 DevOps。_
 
 - **SecOps** (安全性作業) 
 
-  - 以角色為基礎的存取控制 (RBAC)  (全面的) 。
+  - Azure 以角色為基礎的存取控制 (Azure RBAC)  (全面的) 。
 
   - 適用于中央服務、簡易郵件傳輸通訊協定，以及網域控制站) 的金鑰管理 (。
 
@@ -77,7 +77,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 應用程式管理與監視。
 
-  - RBAC (應用程式資源) 。
+  - Azure RBAC (應用程式資源) 。
 
   - 安全性監視和 audit (應用程式資源) 。
 
@@ -89,11 +89,11 @@ _圖1：平臺自動化和 DevOps。_
 
   - 提供中央應用程式 DevOps 函式，以支援沒有現有 DevOps 功能的應用程式或商務案例，以建立一個 (例如，) 的開發功能較低的繼承應用程式。
 
-  - 使用原則導向的方法搭配清楚的 RBAC 界限，在應用程式小組之間集中強制執行一致性和安全性。 這可確保使用 RBAC 指派和 Azure 原則的組合來採取最少許可權的方法，且該工作負載隨時都符合 Azure 原則指派的規範。
+  - 使用以原則導向的方法搭配清楚的 Azure RBAC 界限，跨應用程式小組集中強制執行一致性和安全性。 這可確保使用 Azure RBAC 和 Azure 原則的組合來取得最小許可權的方法，且該工作負載隨時都符合 Azure 原則指派的規範。
 
   - 為了加速採用 Azure，中央平臺小組應建立一組常用的範本和程式庫，讓應用程式小組進行繪製。 例如，水準 (的跨函式) 指導方針，可協助您透過主題專業知識支援遷移，並確保與整體目標企業規模架構一致。
 
-  - 請勿限制應用程式小組使用中央成品或方法，因為它會妨礙其靈活性。 您可以透過原則導向的基礎結構方法和 RBAC 指派，強制執行一致的基準設定。 這可確保應用程式 (營業單位) 團隊有足夠的彈性可進行創新，同時仍然能夠從一組預先定義的範本進行繪製。
+  - 請勿限制應用程式小組使用中央成品或方法，因為它會妨礙其靈活性。 您可以透過原則導向的基礎結構方法和 Azure RBAC 來強制執行一致的基準設定。 這可確保應用程式 (營業單位) 團隊有足夠的彈性可進行創新，同時仍然能夠從一組預先定義的範本進行繪製。
 
   - 請勿強制應用程式小組使用中央進程或布建管線來具現化或管理應用程式資源。 已經依賴 DevOps 管線進行應用程式傳遞的現有小組，仍然可以使用他們所使用的相同工具。 請記住，您仍然可以使用 Azure 原則來維護護欄，與 Azure 中的資源部署方式無關。
 
@@ -117,7 +117,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 金鑰管理 (的應用程式金鑰) 。
 
-  - RBAC (應用程式資源) 。
+  - Azure RBAC (應用程式資源) 。
 
   - 安全性監視和 audit (應用程式資源) 。
 
@@ -137,7 +137,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 平臺管理和監視 (全面的) 。
 
-  - RBAC (全面的) 。
+  - Azure RBAC (全面的) 。
 
   -  (中央服務) 的金鑰管理。
 

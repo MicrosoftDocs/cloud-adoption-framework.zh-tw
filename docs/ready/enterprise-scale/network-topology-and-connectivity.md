@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 81ab318f69a67baa00a9e55c230e8fb443354ae7
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 002d62e1369e0e310e2f12e1b7530a46d6b9050f
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446856"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713531"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -400,7 +400,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 使用具有虛擬 WAN 的防火牆管理員來部署和管理跨虛擬 WAN 中樞或中樞虛擬網路的 Azure 防火牆。 防火牆管理員現在已正式推出虛擬 WAN 和一般虛擬網路。
 
-- 建立全域 Azure 防火牆原則，以控制全球網路環境的安全性狀態，並將其指派給所有的 Azure 防火牆實例。 透過以角色為基礎的存取控制，將累加式防火牆原則委派給本機安全性小組，以允許細微的原則符合特定區域的需求。
+- 建立全域 Azure 防火牆原則，以控制全球網路環境的安全性狀態，並將其指派給所有的 Azure 防火牆實例。 藉由透過 Azure 角色型存取控制將累加式防火牆原則委派給本機安全性小組，以允許細微的原則符合特定區域的需求。
 
 - 如果您的組織想要使用這類解決方案來協助保護輸出連線，請在防火牆管理員中設定支援的夥伴 SaaS 安全性提供者。
 

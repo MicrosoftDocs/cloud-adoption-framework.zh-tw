@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 897d0052ab35ee7df1bbe6537cdbcc9710e3e22c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6fb01d4e04249d06a1dd833a4ab60297cffac9dc
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020415"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712819"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>身分識別基準原則合規性流程
 
@@ -37,7 +37,7 @@ ms.locfileid: "97020415"
 
 **教育與訓練：** 以 bimonthly 為基礎，提供訓練課程，以確保 IT 人員和開發人員都能掌握最新的身分識別原則需求。 作為此程式的一部分，請檢查並更新任何檔、指引或其他訓練資產，以確保其與最新的公司原則聲明同步。
 
-**每月審核和報告審查：** 每月對所有雲端部署執行審核，以確保其持續與身分識別原則一致。 使用這個檢閱根據業務變更來檢查使用者存取，以確保使用者具有雲端資源的正確存取權，以及確保一致地遵循例如 RBAC 的存取策略。 識別任何特殊權限帳戶，並記錄其用途。 此審查程式會為雲端策略小組和每個雲端採用小組產生一份報告，詳述整體的原則遵循狀況。 報告也會儲存以便用於稽核和法律用途。
+**每月審核和報告審查：** 每月對所有雲端部署執行審核，以確保其持續與身分識別原則一致。 您可以使用此評論來檢查使用者對商務變更的存取，以確保使用者能正確存取雲端資源，並確保一致地遵循 Azure RBAC 之類的存取策略。 識別任何特殊權限帳戶，並記錄其用途。 此審查程式會為雲端策略小組和每個雲端採用小組產生一份報告，詳述整體的原則遵循狀況。 報告也會儲存以便用於稽核和法律用途。
 
 ## <a name="processes-for-ongoing-monitoring"></a>持續監視的進程
 

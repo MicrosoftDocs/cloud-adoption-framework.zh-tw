@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: aae5e8b7fcd8b1c0cad29f795f494c4f0ccaac26
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b7f40bd5a4eca62b3712c0a9b6073512edbdb374
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020398"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712836"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -103,7 +103,7 @@ _圖1：漸進式雲端治理方法的階段。_
 - 審查任何應用程式內或資料庫內身分識別存放區的需求。 落在適當身分識別提供者 (第一方或第三方) 範圍外的身分識別，可以代表應用程式和使用者的風險。
 - 啟用[內部部署同盟應用程式](/azure/active-directory/devices/overview)的條件式存取。
 - 跨全域區域在多個中樞 (具有區域之間的同步處理) 中散佈身分識別。
-- 建立中央角色型存取控制 (RBAC) 同盟。
+-  (Azure RBAC) 同盟建立中央 Azure 角色型存取控制。
 
 ## <a name="operate-and-post-implementation"></a>操作和實作後
 

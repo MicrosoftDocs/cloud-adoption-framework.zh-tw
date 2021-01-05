@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: ece24278ca31bffabaabcd930ca924390c6f39b1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a91294046e6a36f92929f4bc1afa2f7a365eb3d4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024580"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713754"
 ---
 # <a name="build-a-cost-conscious-organization"></a>打造成本重視的組織
 
@@ -30,7 +30,7 @@ ms.locfileid: "97024580"
   - 正確的報告範圍。
   - 適當的資源組織 (管理群組、資源群組、訂用帳戶) 。
   - 清除標記策略。
-  -  (RBAC) 適當的存取控制。
+  - Azure RBAC)  (適當的存取控制。
 
 - **責任：** 責任與可見度一樣重要。 責任的開始是明確的採用工作預算。 預算應妥善建立、清楚溝通，並根據實際的期望。 責任需要反復的流程和成長思維，才能促成適當的責任層級。
 
