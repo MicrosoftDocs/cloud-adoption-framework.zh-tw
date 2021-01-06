@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 7b8fd3f67e06ed839892d4e6fadfc8f7073a3f3b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b02f5aaeb9c4815a972e514f2a2754fc27e06936
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026076"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713691"
 ---
 # <a name="azure-setup-guide-overview"></a>Azure 設定指南概觀
 
@@ -32,7 +32,7 @@ ms.locfileid: "97026076"
 > [!div class="checklist"]
 >
 > - **[組織資源](./organize-resources.md)：** 設定管理階層以便對資源群組一致地套用存取控制、原則和合規性，並使用標記功能來追蹤相關資源。
-> - **[管理存取](./manage-access.md)：** 使用角色型存取控制來確定使用者只擁有其真正需要的權限。
+> - **[管理存取](./manage-access.md)：** 使用 Azure 角色型存取控制來確定使用者只擁有其真正需要的權限。
 > - **[管理成本和計費](./manage-costs.md)：** 識別訂用帳戶類型、了解計費方式，以及如何控制成本。
 > - **[規劃治理、安全性和合規性](./govern-org-compliance.md)：** 強制套用並自動執行原則和安全性設定，以協助您遵循適用的法律需求。
 > - **[使用監視和報告](./monitoring-reporting.md)：** 能夠查看各項資源，以尋找和修正問題、將效能最佳化，以及取得客戶行為的見解。

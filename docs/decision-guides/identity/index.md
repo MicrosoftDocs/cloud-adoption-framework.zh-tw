@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 86d4e01e4c5cffa81d7109b30fdac2efc014a351
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4a6c468f17e398286152aa44ea8043cef2881e6d
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023594"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712139"
 ---
 # <a name="identity-decision-guide"></a>身分識別決策指南
 
@@ -99,7 +99,7 @@ Azure AD 支援使用 [Active Directory 同盟服務](/azure/active-directory/hy
 
 - **[Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD 提供雲端式身分識別服務。 讓您管理對於 Azure 資源的存取並控制身分識別管理、裝置註冊、使用者佈建、應用程式存取控制和資料保護。
 - **[Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect 工具可讓您將 Azure AD 執行個體與現有身分識別管理解決方案連線，以允許雲端中現有目錄的同步作業。
-- **[角色型存取控制 (RBAC)](/azure/role-based-access-control/overview)。** Azure AD 提供 RBAC，可有效率且安全地管理在管理平面中的資源存取權。 工作和責任會組織成角色，然後使用者會被指派到這些角色。 RBAC 可讓您控制誰對於資源擁有存取權，以及使用者可以在該資源上執行哪些動作。
+- **[Azure 角色型存取控制 (Azure RBAC)](/azure/role-based-access-control/overview).** Azure RBAC 可有效率且安全地管理在管理平面中的資源存取權。 工作和責任會組織成角色，然後使用者會被指派到這些角色。 Azure RBAC 可讓您控制誰對於資源擁有存取權，以及使用者可以在該資源上執行哪些動作。
 - **[Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure)。** PIM 會降低資源存取權限的曝光時間，並透過報告和警示提升他們使用的可見度。 也會限制使用者在 Just-In-Time (JIT) 狀態下行使其權限，或指派持續時間較短的權限，並在時間到達之後自動撤銷該權限。
 - **[整合內部部署 Active Directory 網域與 Azure Active Directory](/azure/architecture/reference-architectures/identity/azure-ad)。** 此參考架構提供內部部署 Active Directory 網域和 Azure AD 之間的目錄同步作業範例。
 - **[將 Active Directory Domain Services (AD DS) 擴充至 Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)。** 此參考架構提供部署 AD DS 伺服器以擴充網域服務至雲端式資源的範例。

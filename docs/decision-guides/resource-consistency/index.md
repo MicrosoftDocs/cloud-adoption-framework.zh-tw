@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: ae48eb9bcbd60244441d7dbe22002b9b4111852f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f88b4b68fe0fde661d611ecaf1b63d0d603741bd
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023305"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712122"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -31,7 +31,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 
 在 Azure 中，[資源群組](/azure/azure-resource-manager/management/overview#resource-groups)是以邏輯方式將訂用帳戶內的資源分組的核心資源組織機制。
 
-資源群組會作為具有一般生命週期和共用管理條件約束 (例如原則或角色型存取控制 (RBAC) 要求) 的資源容器。 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 所有控制平面動作都會對資源群組中的所有資源採取行動。 例如，刪除資源群組也會刪除該群組內的所有資源。 資源群組管理的慣用模式是考慮：
+資源群組會作為具有一般生命週期和共用管理條件約束 (例如原則或 Azure 角色型存取控制 (Azure RBAC) 要求) 的資源容器。 資源群組不能建立巢狀結構，且資源只能屬於一個資源群組。 所有控制平面動作都會對資源群組中的所有資源採取行動。 例如，刪除資源群組也會刪除該群組內的所有資源。 資源群組管理的慣用模式是考慮：
 
 1. 資源群組的內容是否一起開發？
 1. 資源群組的內容是否由相同的人員或小組一起管理、更新和監視？

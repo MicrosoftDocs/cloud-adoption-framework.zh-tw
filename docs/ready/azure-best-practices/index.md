@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f8749091754f883b30ed81c104dcafb81538d17e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 39e94b661964ab2ac22f485d09aad93331220b40
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024410"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713687"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 移轉整備程度的最佳做法
 
@@ -45,7 +45,7 @@ ms.locfileid: "97024410"
 設計身分識別和存取控制基礎結構，以改善工作負載的安全性和管理效率。
 
 - [Azure 身分識別管理和存取控制安全性最佳做法](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 了解使用內建 Azure 功能進行身分識別管理和存取控制的最佳做法。
-- [角色型存取控制最佳做法](../considerations/roles.md)。 能夠針對為使用者角色所組織的資源，進行更細緻和以群組為基礎的存取管理工作。
+- [Azure 角色型存取控制的最佳做法](../considerations/roles.md)。 能夠針對為使用者角色所組織的資源，進行更細緻和以群組為基礎的存取管理工作。
 - [在 Azure Active Directory 中保護混合式部署和雲端部署的特殊權限存取](/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 確保組織的系統管理存取，和特殊權限帳戶在整個雲端和內部部署環境中，都是安全無虞的。
 
 ## <a name="storage"></a>儲存體

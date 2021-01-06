@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 5f814fae4919fe23c624d52af5e35ef873bee111
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e9fa4ef47cf7e98779a2e09bff8c6afbc6da7da2
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023458"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712105"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -36,7 +36,7 @@ ms.locfileid: "97023458"
 - [部署範本](../resource-consistency/index.md)可以佈建具有標準化結構和設定的資源。
 - [標記和命名標準](../resource-tagging/index.md)有助於組織作業，並支援會計和業務需求。
 - 流量管理和網路限制可以透過[軟體定義網路](../software-defined-network/index.md)實作。
-- [角色型存取控制](../identity/index.md)可以保護和隔離您的雲端資源。
+- [Azure 角色型存取控制](../identity/index.md)可以保護和隔離您的雲端資源。
 
 透過檢查這些指南通篇討論的標準模式應用程式如何能夠協助符合您的組織需求，開始您的雲端原則強制執行規劃。
 
