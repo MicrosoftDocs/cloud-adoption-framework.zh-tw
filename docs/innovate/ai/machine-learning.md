@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 8b2cb606ded625dfcfecc5e8168f38d45ac01c2d
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 8518fdb8702b92575069e22c8994e65ef862ea40
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446720"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909407"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
@@ -36,10 +36,10 @@ Azure 可為您提供最先進的機器學習功能。 使用 Azure Machine Lear
 
 ## <a name="checklist"></a>檢查清單
 
-- **首先熟悉您自己的 Machine Learning**，然後選擇要開始使用的體驗。 您可以遵循下列步驟，使用 Jupyter 筆記本搭配 Python、視覺效果拖放體驗，或自動化機器學習 (AutoML) 。
+- **首先熟悉您自己的 Machine Learning**，然後選擇要開始使用的體驗。 您可以遵循下列步驟來搭配使用 Jupyter Notebook 與 Python、視覺效果拖放體驗或自動化機器學習 (AutoML) 。
 
   - [Machine Learning 總覽](/azure/machine-learning/overview-what-is-azure-ml)
-  - [使用 Python 搭配 Jupyter 筆記本建立您的第一個機器學習實驗](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)
+  - [使用 Python Jupyter Notebook 建立您的第一個機器學習實驗](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)
   - [視覺效果拖放實驗](/azure/machine-learning/tutorial-designer-automobile-price-train-score)
   - [使用 AutoML UI](/azure/machine-learning/tutorial-first-experiment-automated-ml)
   - [設定您的開發環境](/azure/machine-learning/how-to-configure-environment)
