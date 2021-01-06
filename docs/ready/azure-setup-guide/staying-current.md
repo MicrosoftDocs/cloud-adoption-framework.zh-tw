@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC, setup
-ms.openlocfilehash: 8bbe9cd6f5283f24684b56e2198eb6b75eba7c38
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a921919768187a18afeaf02ccd2dae5dbf11c0ee
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025991"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713635"
 ---
 <!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->
@@ -39,7 +39,7 @@ ms.locfileid: "97025991"
 
 - [Azure Friday](https://channel9.msdn.com/shows/Azure-Friday)：由建置 Azure 的工程師示範的每週影片。 這些影片會進行示範、回答問題，以及分享見解。 透過 [Azure Friday RSS 摘要](https://channel9.msdn.com/Shows/Azure-Friday/feed)來訂閱。
 - [Azure 圖表](https://azurecharts.com)：這個視覺效果會顯示過去六個月內所做的所有 Azure 更新。 其中包含其他實用的圖表和公用程式，可協助您追蹤 Azure 變更。 \*
-- [AzAdvertizer](https://www.azadvertizer.net)：Azure 治理功能 (例如 Azure 原則、原則計畫、原則別名和角色型存取控制 (RBAC)) 的發行和變更追蹤。 \*
+- [AzAdvertizer](https://www.azadvertizer.net)：Azure 治理功能，例如 Azure 原則、原則計畫、原則別名和 Azure 角色型存取控制 (Azure RBAC) 的發行和變更追蹤。 \*
 - [Azure Weekly](https://azureweekly.info)*
   - 這份由 [endjin.com](https://endjin.com) 提供的電子報包含關於 Microsoft Azure 的當周最新消息摘要。 也包含有趣的歷史內容。 透過 [Azure 每週電子郵件](https://azureweekly.info)來訂閱。 \*
 

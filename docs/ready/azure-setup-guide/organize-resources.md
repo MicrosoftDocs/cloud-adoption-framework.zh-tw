@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 783244673596e58d422f209eff92ff972044bf28
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 95ca26aaa53625578fec9b4b4d169551d9c0f0d6
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024240"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713652"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -37,7 +37,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 
 ### <a name="scope-of-management-settings"></a>管理設定的範圍
 
-您可以在任何管理層級套用管理設定，例如原則和角色型存取控制。 您選取的層級會決定套用設定的範圍。 較低層級會從較高層級繼承設定。 例如，當您將原則套用到訂用帳戶時，該訂用帳戶中的所有資源群組和資源也都會套用該原則。
+您可以在任何管理層級套用管理設定，例如原則和 Azure 角色型存取控制。 您選取的層級會決定套用設定的範圍。 較低層級會從較高層級繼承設定。 例如，當您將原則套用到訂用帳戶時，該訂用帳戶中的所有資源群組和資源也都會套用該原則。
 
 通常我們會在較高層級套用重要設定，而在較低層級套用專案特定需求。 例如，您可能想要確定組織的所有資源都部署到特定區域。 若要這樣做，請將原則套用至指定了允許位置的訂用帳戶。 當貴組織中其他使用者新增新的資源群組和資源時，會自動強制執行允許的位置。 請深入了解本指南的控管、安全性和合規性區段中所提供的原則。
 

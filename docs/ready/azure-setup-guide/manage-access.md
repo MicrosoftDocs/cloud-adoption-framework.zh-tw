@@ -1,6 +1,6 @@
 ---
-title: 透過角色型存取控制來管理對 Azure 環境的存取
-description: 了解如何透過角色型存取控制為 Azure 環境設定存取控制。
+title: 透過 Azure 角色型存取控制來管理對 Azure 環境的存取
+description: 了解如何透過 Azure 角色型存取控制為 Azure 環境設定存取控制。
 author: LijuKodicheraJayadevan
 ms.author: brblanch
 ms.date: 04/09/2019
@@ -9,27 +9,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: f60f68e56ac970b9bbb527061124afac5cd98e0e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d2a50dbdd65048aad15fcbd7b1ca9e02d245fe17
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024291"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713737"
 ---
-# <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>透過角色型存取控制來管理對 Azure 環境的存取
+# <a name="manage-access-to-your-azure-environment-with-azure-role-based-access-control"></a>透過 Azure 角色型存取控制來管理對 Azure 環境的存取
 
-管理哪些人員可以存取 Azure 資源和訂用帳戶是 Azure 治理策略中很重要的一環，而且指派群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 Azure 角色型存取控制 (RBAC) 是對 Azure 中的存取進行管理的主要方法。
+管理哪些人員可以存取 Azure 資源和訂用帳戶是 Azure 治理策略中很重要的一環，而且指派群組型存取權和許可權是不錯的做法。 處理群組而不是個別使用者，會簡化存取原則的維護、提供跨小組的一致存取管理，以及減少設定錯誤。 Azure 角色型存取控制 (Azure RBAC) 是對 Azure 中的存取進行管理的主要方法。
 
-RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助您管理可存取 Azure 資源的人員、這些人員如何使用資源，以及其可存取的範圍。
+Azure RBAC 可讓您對 Azure 中的資源進行詳細的存取管理。 其可協助您管理可存取 Azure 資源的人員、這些人員如何使用資源，以及其可存取的範圍。
 
-在規劃存取控制策略時，授與使用者完成其工作所需的最低權限。 下圖顯示指派 RBAC 的建議模式。
+在規劃存取控制策略時，授與使用者完成其工作所需的最低權限。 下圖顯示指派 Azure RBAC 的建議模式。
 
-![顯示 RBAC 角色的圖示](./media/manage-access/role-examples.png)
-_圖 1：RBAC 角色。_
+![顯示 Azure 角色的圖示](./media/manage-access/role-examples.png)
+圖 1：Azure 角色。
 
 在規劃存取控制方法時，建議您與組織中擔任下列角色的人員合作：安全性和合規性、IT 管理和企業架構設計人員。
 
-雲端採用架構會提供其他指引來使用[角色型存取控制](../considerations/roles.md)來作為雲端採用工作。
+雲端採用架構會提供其他指引來使用[ Azure 角色型存取控制](../considerations/roles.md)來作為雲端採用工作。
 
 ::: zone target="chromeless"
 
@@ -87,7 +87,7 @@ _圖 1：RBAC 角色。_
 
 若要深入了解，請參閱：
 
-- [什麼是角色型存取控制 (Azure RBAC)？](/azure/role-based-access-control/overview)
-- [雲端採用架構：使用角色型存取控制](../considerations/roles.md)
+- [什麼是 Azure 角色型存取控制 (Azure RBAC)？](/azure/role-based-access-control/overview)
+- [雲端採用架構：使用 Azure 角色型存取控制](../considerations/roles.md)
 
 ::: zone-end

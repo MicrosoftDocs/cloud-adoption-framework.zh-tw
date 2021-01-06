@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 751c04935e6a1de490c8792e221a15c7bd4f9011
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 767de31ef0fea9355482894748636ba0a44f1e22
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024648"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909475"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 
@@ -50,6 +50,7 @@ ms.locfileid: "97024648"
 - [雲端卓越中心](./cloud-center-of-excellence.md)：提高採用的品質、速度和彈性。
 - [雲端平台](./cloud-platform.md)：操作平台並讓平台更完善。
 - [雲端自動化](./cloud-automation.md)：加速採用與創新。
+- [雲端資料](./cloud-data.md)：管理資料並啟用分析解決方案。
 - [雲端安全性](./cloud-security.md)：管理資訊安全性風險。
 
 在某種程度上，上述每項功能在每次雲端採用工作中均有提供，都是明確或根據定義的團隊結構來提供。
