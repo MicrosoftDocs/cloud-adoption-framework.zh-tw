@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: dd1d597f3d58b76540c315976578bd4130755689
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 58c32203c997e9a975f8dca1c4f5e62a69a35e63
+ms.sourcegitcommit: db4595764b8ec22629ea982f4511f0eab95dc6c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013343"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951968"
 ---
 <!-- cSpell:ignore multisubscription -->
 
 # <a name="what-is-an-azure-landing-zone"></a>什麼是 Azure 登陸區域？
 
 Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中的企業規模進行應用程式移轉和綠地開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
+
+登陸區域是用來裝載工作負載的環境，可透過程式碼預先佈建。 請觀看下列影片以深入了解。  
 
 <!-- markdownlint-disable MD034 -->
 
