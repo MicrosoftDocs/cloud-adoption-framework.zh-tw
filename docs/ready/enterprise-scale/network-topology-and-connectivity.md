@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 002d62e1369e0e310e2f12e1b7530a46d6b9050f
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: d9b9097f4519e7d529d31e98e166e1352e3b4c33
+ms.sourcegitcommit: 1acc1aeb230205ec711a3fcadde52682c1c86bf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713531"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97974476"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -84,24 +84,19 @@ ms.locfileid: "97713531"
 
 ## <a name="define-an-azure-network-topology"></a>定義 Azure 網路拓撲
 
-網路拓撲是企業規模架構的重要元素，因為它會定義應用程式彼此通訊的方式。 本節探討適用于企業 Azure 部署的技術與拓撲方法。 它著重于兩個核心方法：以 Azure 虛擬 WAN 和傳統拓撲為基礎的拓撲。
+網路拓撲是企業規模架構的重要元素，因為它會定義應用程式彼此通訊的方式。 本節探討適用于 Azure 部署的技術與拓撲方法。 它著重于兩個核心方法：以 Azure 虛擬 WAN 和傳統拓撲為基礎的拓撲。
 
-如果下列任何一項成立，請使用以 Azure 虛擬 WAN 為基礎的網路拓撲：
+虛擬 WAN 可用來滿足大規模的互連能力需求。 因為這是 Microsoft 管理的服務，所以它也會降低整體網路複雜度，並有助於將組織的網路現代化。 如果下列任一點符合您的需求，則以虛擬 WAN 為基礎的拓撲可能最適合：
 
-- 您的組織想要跨數個 Azure 區域部署資源，並需要將您的全球位置連線到 Azure 和內部部署。
-- 您的組織想要使用軟體定義的 WAN (SD-WAN) 部署與 Azure 完全整合。
-- 您想要在所有連線到單一 Azure 虛擬 WAN 中樞的 Vnet 上部署最多2000的虛擬機器工作負載。
+- 您的組織想要跨數個 Azure 區域部署資源，而且需要在這些 Azure 區域的 Vnet 與多個內部部署位置之間有全球連線能力。
+- 您的組織想要透過軟體定義的 WAN (SD-WAN) 部署，將大規模分支網路直接整合到 Azure，或需要超過30個分支網站以進行原生 IPsec 終止。
+- 您需要 VPN 和 ExpressRoute 之間的可轉移路由。 例如 透過站對站 VPN 或透過點對站 VPN 連線的遠端使用者連線的遠端分支，需要透過 Azure 連線到 ExpressRoute 連線的 DC。
 
-虛擬 WAN 可用來滿足大規模的互連能力需求。 因為這是 Microsoft 管理的服務，所以它也會降低整體網路複雜度，並有助於將組織的網路現代化。
+傳統的中樞和輪輻網路拓撲可協助您在 Azure 中建立自訂的安全大規模網路，並提供客戶所管理的路由和安全性。 如果下列任一點符合您的需求，傳統拓撲可能最適合：
 
-如果下列任何一項成立，請使用傳統的 Azure 網路拓撲：
-
-- 您的組織想要跨數個 Azure 區域部署資源。
-- 您可以使用全域 VNet 對等互連來連線到 Azure 區域之間的虛擬網路。
-- 您每個區域的遠端或分支位置都有很多。 也就是說，您需要少於30個 IP 安全性 (IPsec) 通道。
-- 您需要完整的控制和細微性，才能手動設定 Azure 網路。
-
-傳統的網路拓撲可協助您在 Azure 中建立安全的大規模網路。
+- 您的組織想要在一或多個 Azure 區域中部署資源，而在 Azure 區域之間有一些流量是預期的 (例如，在兩個不同 Azure 區域之間的兩個虛擬網路之間的流量) ，則不需要跨所有 Azure 區域的完整網狀網路。
+- 您每個區域的遠端或分支位置都有很多。 也就是說，您需要少於30個 IP 安全性 (IPsec) 站對站通道。
+- 您需要完整的控制和細微性，才能手動設定 Azure 網路路由原則。
 
 ## <a name="virtual-wan-network-topology-microsoft-managed"></a>虛擬 WAN 網路拓撲 (Microsoft 管理的) 
 
@@ -110,9 +105,9 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 **設計考慮：**
 
-- [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) 是由 Microsoft 管理的解決方案，預設會提供端對端的全球傳輸連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的必要。 例如，您不需要設定使用者定義的路由 (UDR) 或網路虛擬裝置 (Nva) 以啟用全域傳輸連線。
+- [Azure 虛擬 WAN](/azure/virtual-wan/virtual-wan-about) 是一種受 Microsoft 管理的解決方案，預設會提供端對端、全域和動態傳輸的連線能力。 虛擬 WAN 中樞可免除手動設定網路連線的必要。 例如，您不需要管理 (UDR) 或網路虛擬裝置 (Nva) 的使用者定義路由，以啟用全域傳輸連線。
 
-- 虛擬 WAN 藉由建立 [中樞和輪輻網路架構](/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，大幅簡化了 Azure 和跨單位的端對端網路連線能力。 此架構會跨多個 Azure 區域和內部部署位置 (任何現成的連線) ，如下圖所示：
+- 虛擬 WAN 藉由建立 [中樞和輪輻網路架構](/azure/virtual-wan/virtual-wan-global-transit-network-architecture)，在 azure 中簡化端對端網路連線，以及從內部部署環境到 Azure。 您可以輕鬆地調整架構，以支援多個 Azure 區域和內部部署位置 (任何連線) ，如下圖所示：
 
   ![此圖說明使用虛擬 WAN 的全球傳輸網路。 ](./media/global-transit.png)
   _圖2：使用虛擬 WAN 的全球傳輸網路。_
@@ -124,44 +119,50 @@ _圖1：虛擬 WAN 網路拓撲。_
   - 分支至虛擬網路
   - 分支至分支
 
-- 虛擬 WAN 中樞已鎖定。 您唯一可以在其中部署的資源為虛擬網路閘道 (點對站 VPN、站對站 VPN 和 Azure ExpressRoute) 、透過防火牆管理員的 Azure 防火牆，以及路由表。
+- 虛擬 WAN 中樞受限於 Microsoft 受控資源的部署。 您唯一可以在其中部署的資源包括虛擬網路閘道 (點對站 VPN、站對站 VPN、Azure ExpressRoute) 、透過防火牆管理員的 Azure 防火牆、路由表和 [某些網路虛擬裝置 (NVA) ](/azure/virtual-wan/about-nva-hub) 適用于廠商專屬的 SD WAN 功能。
 
-- 虛擬 WAN 可透過 ExpressRoute 私用對等互連，將每個虛擬 WAN 中樞的10000首碼最多增加200個首碼。 10000首碼的限制也包含站對站 VPN 和點對站 VPN。
+- 虛擬 WAN 系結至某些 Azure 訂用帳戶限制，其記載[于本文中。](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits)
 
-- 區域內和跨) 區域的網路對網路可轉移連線 (，現已正式推出。
+- 透過中樞對中樞) ，區域內和跨區域的網路對網路可轉移連線 (現已正式推出 (GA) 。
 
-- 虛擬 WAN 中樞對中樞連線現已正式運作。
+- 由於每個虛擬中樞都有 Microsoft 管理的路由功能，因此標準虛擬 WAN 中的虛擬網路之間的傳輸連線已啟用。 針對 VNet 對 VNet 流量，每個中樞支援最高 50 Gbps 的匯總輸送量。
 
-- 由於每個虛擬中樞都有路由器，因此會啟用標準虛擬 WAN 中虛擬網路之間的傳輸連線。 每個虛擬中樞路由器最多支援 50 Gbps 的彙總輸送量。
-
-- 在所有 Vnet 上最多可以有2000的 VM 工作負載連線到單一虛擬 WAN 中樞。
+- 單一 Azure 虛擬 WAN 中樞可以跨所有直接連接的 Vnet 支援特定的 VM 工作負載數目上限，其記載于 [Azure 虛擬 wan 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits) 文章中。
 
 - 虛擬 WAN 與各種 [SD wan 提供者](/azure/virtual-wan/virtual-wan-locations-partners)整合。
 
 - 許多受控服務提供者為虛擬 WAN 提供 [受控服務](/azure/networking/networking-partners-msp) 。
 
-- 虛擬 WAN 中的 VPN 閘道最多可以針對每個虛擬中樞擴大至 20 Gbps 和20000連線。
+- 虛擬 WAN 中的使用者 VPN (點對站) 閘道可擴大為每個虛擬中樞最多 20 Gbps 的匯總輸送量和10000用戶端連線。
 
-- 需要 premium 附加元件的 ExpressRoute 線路。 它們應該來自于 ExpressRoute 的全球接觸位置。
+- 虛擬 WAN 中的站對站 VPN 閘道最多可擴大至 20 Gbps 的匯總輸送量。
 
-- Azure 防火牆管理員現已正式推出，可讓您在虛擬 WAN 中樞部署 Azure 防火牆。
+- 具有 SKU Local、Standard 或 Premium 的 ExpressRoute 線路可供連接到虛擬 WAN 中樞。
 
-- 目前不支援透過 Azure 防火牆的虛擬 WAN 中樞對中樞流量。 或者，您也可以使用虛擬 WAN 中的原生中樞對中樞傳輸路由功能。 使用網路安全性群組 (Nsg) 來允許或封鎖跨中樞的虛擬網路流量。
+- ExpressRoute 標準或進階線路若位於 ExpressRoute Global Reach 支援的位置，則可以連線至虛擬 WAN ExpressRoute 閘道，並享用所有虛擬 WAN 傳輸功能 (VPN 至 VPN、VPN 與 ExpressRoute transit)。 處於非全球存取位置的 ExpressRoute Standard 和 Premium 線路可以連線到 Azure 資源，但無法使用虛擬 WAN 傳輸功能。
+
+- 如果連線到虛擬 WAN 中樞的輪輻 Vnet 與虛擬 WAN 中樞位於相同的區域中，則 Azure 虛擬 WAN 中樞支援 ExpressRoute Local。
+
+- Azure 防火牆管理員現已正式推出，可讓您在虛擬 WAN 中樞中部署 Azure 防火牆。 如需安全虛擬中樞和最新[條件約束](/azure/firewall-manager/overview#known-issues)的總覽，請參閱 Azure 防火牆管理員[產品頁面](/azure/firewall-manager/overview)。
+
+- 當 Azure 防火牆部署在 VWAN hub 本身 (安全的虛擬中樞) 時，目前不支援透過 Azure 防火牆的虛擬 WAN 中樞對中樞流量。 有幾項因應措施存在，視您的需求而定，包括將 [Azure 防火牆放在輪輻虛擬網路中](/azure/virtual-wan/scenario-route-through-nva)，或使用 nsg 進行流量篩選。
 
 **設計建議：**
 
-- 針對在 Azure 中需要跨 Azure 區域與內部部署位置進行全域傳輸連線的新大型或全域網路部署，建議使用虛擬 WAN。 如此一來，您就不需要手動設定 Azure 網路的過渡路由。
+- 針對在 Azure 中需要跨 Azure 區域與內部部署位置進行全域傳輸連線的新大型或全域網路部署，建議使用虛擬 WAN。 如此一來，您就不需要手動設定 Azure 網路的可轉移路由。
 
-  下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有大量的分公司。 環境透過虛擬 WAN 和 ExpressRoute 全球接觸來全球連線。
+  下圖顯示在歐洲和美國分佈的資料中心的範例全球企業部署。 這兩個區域中的部署也有許多分公司。 環境透過 Azure 虛擬 WAN 和 [ExpressRoute 全球接觸](/azure/expressroute/expressroute-global-reach)來全球連線。
 
   ![範例網路拓撲的圖表。 ](./media/global-reach-topology.png)
   _圖3：網路拓撲範例。_
 
-- 使用虛擬 WAN 作為全球連線資源。 您可以使用每個 Azure 區域的虛擬 WAN 中樞，透過本機虛擬 WAN 中樞，將多個登陸區域連接在一起的 Azure 區域。
+- 使用每個 Azure 區域的虛擬 WAN 中樞，透過常見的全球 Azure 虛擬 WAN，將多個登陸區域一起連接到整個 Azure 區域。
+
+- 使用 [虛擬中樞路由](/azure/virtual-wan/about-virtual-hub-routing) 功能進一步區隔 vnet 與分支之間的流量。
 
 - 使用 ExpressRoute 將虛擬 WAN 中樞連線至內部部署資料中心。
 
-- 在專用登陸區域中部署必要的共用服務，例如 DNS 伺服器。 需要的共用資源無法部署到虛擬 WAN 中樞。
+- 在專用輪輻虛擬網路中部署必要的共用服務，例如 DNS 伺服器。 客戶部署的共用資源無法部署在虛擬 WAN 中樞本身內。
 
 - 透過站對站 VPN 將分支和遠端位置連接到最接近的虛擬 WAN 中樞，或透過 SD WAN 合作夥伴解決方案來啟用虛擬 WAN 的分支連線能力。
 
@@ -169,15 +170,11 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 遵循「Azure 中的流量會保留在 Azure 中」的原則，以便在 Azure 中跨資源的通訊會透過 Microsoft 骨幹網路進行，即使資源位於不同的區域。
 
-- 在適用于東亞/西部的虛擬 WAN 中樞中部署 Azure 防火牆，並在 Azure 區域內部署南/北流量保護和篩選。
+- 針對網際網路輸出保護和篩選，請考慮在虛擬中樞部署 Azure 防火牆。
 
-- 如果東部/西部或南/北流量保護和篩選需要合作夥伴 Nva，請將 Nva 部署到個別的虛擬網路，例如 NVA 虛擬網路。 將它連線到區域虛擬 WAN 中樞以及需要存取 Nva 的登陸區域。 如需詳細資訊，請參閱 [建立 nva 的虛擬 WAN 中樞路由表](/azure/virtual-wan/virtual-wan-route-table-portal)。
+- 如果東部/西部或南/北流量保護和篩選需要合作夥伴 Nva，因為 Azure 虛擬 WAN 不允許在虛擬中樞中部署這類安全性 Nva，請評估是否將這些 Nva 部署到個別的輪輻虛擬網路，並依照本文所述設定靜態路由，以符合 [您的需求](/azure/virtual-wan/scenario-route-through-nva) 。 或者，請考慮以中樞和輪輻模型為基礎的傳統網路拓撲，因為合作夥伴 Nva 可以部署在一般的中樞虛擬網路中。
 
 - 當您部署合作夥伴網路技術和 Nva 時，請遵循合作夥伴廠商的指導方針，以確保 Azure 網路功能沒有任何衝突的設定。
-
-- 請勿在 Azure 虛擬 WAN 之上建立傳輸網路。 虛擬 WAN 可滿足可轉移的網路拓撲需求，例如使用協力廠商 Nva 的能力。 在 Azure 虛擬 WAN 之上建立傳輸網路會是多餘的，而且會增加複雜性。
-
-- 請勿使用現有的內部部署網路（例如多重通訊協定標籤）切換 (MPLS) 來跨 Azure 區域連接 Azure 資源，因為 Azure 網路技術支援透過 Microsoft 骨幹跨區域互連 Azure 資源。 這是因為 Microsoft 骨幹的效能與執行時間特性，以及路由簡單的功能。 這項建議會解決 Microsoft 骨幹的效能與執行時間特性。 它也鼓勵路由簡化。
 
 - 針對您從不是以虛擬 WAN 為基礎的中樞和輪輻網路拓撲進行遷移的棕色地帶案例，請參閱 [遷移至 Azure 虛擬 wan](/azure/virtual-wan/migrate-from-hub-spoke-topology)。
 
@@ -187,17 +184,9 @@ _圖1：虛擬 WAN 網路拓撲。_
 
 - 請仔細規劃您的部署，並確定您的網路架構是在 [Azure 虛擬 WAN 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits)內。
 
+- 使用 [虛擬 wan (Preview) 的 Azure 監視器見解 ](/azure/virtual-wan/azure-monitor-insights) 來監視虛擬 wan 的端對端拓撲，以及狀態和關鍵 [計量](/azure/virtual-wan/azure-monitor-insights#detailed)。
+
 ## <a name="traditional-azure-networking-topology"></a>傳統的 Azure 網路拓撲
-
-雖然虛擬 WAN 提供各式各樣的強大功能，但在某些情況下，傳統的 Azure 網路方法可能會是最佳的：
-
-- 如果不需要跨多個 Azure 區域或跨單位的全球可轉移網路。 例如，在美國的分支，需要連接到歐洲的虛擬網路。
-
-- 如果您需要跨多個 Azure 區域部署全球網路，您可以使用全域 VNet 對等互連來跨區域連接虛擬網路。
-
-- 如果不需要透過 VPN 連線到大量的遠端位置，或與 SD WAN 解決方案整合。
-
-- 如果您組織的喜好設定是在 Azure 中設定網路拓撲時有細微的控制和設定。
 
 ![說明傳統 Azure 網路拓撲的圖表。](./media/customer-managed-topology.png)
 
@@ -207,11 +196,11 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 各種網路拓撲都可以連接多個登陸區域虛擬網路。 範例是一個大型的一般虛擬網路、多個連接多個 ExpressRoute 線路的虛擬網路、中樞和輪輻、全網格和混合式。
 
-- 虛擬網路不會跨越訂用帳戶界限。 但是，您可以使用虛擬網路對等互連、ExpressRoute 線路或 VPN 閘道，在不同訂用帳戶中的虛擬網路之間達到連線能力。
+- 虛擬網路無法跨越訂用帳戶界限。 不過，您可以使用虛擬網路對等互連、ExpressRoute 線路或 VPN 閘道，在不同訂用帳戶之間達到虛擬網路之間的連線能力。
 
-- 您可以使用虛擬網路對等互連，將相同區域、不同 Azure 區域，以及不同 Azure Active Directory (Azure AD) 租使用者之間的虛擬網路連線。
+- 虛擬網路對等互連是在 Azure 中連接虛擬網路的慣用方法。 您可以使用虛擬網路對等互連，將相同區域、不同 Azure 區域，以及不同 Azure Active Directory (Azure AD) 租使用者之間的虛擬網路連線。
 
-- 虛擬網路對等互連和全域虛擬網路對等互連無法轉移。 需要 Udr 和 Nva，才能啟用傳輸網路。 如需詳細資訊，請參閱 [Azure 中的中樞輪輻網路拓撲](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)。
+- 虛擬網路對等互連和全域虛擬網路對等互連不是可轉移的。 需要 Udr 和 Nva，才能啟用傳輸網路。 如需詳細資訊，請參閱 [Azure 中的中樞輪輻網路拓撲](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)。
 
 - 您可以使用 ExpressRoute 線路，在相同地緣政治區域內的虛擬網路之間建立連線，或使用 premium 附加元件在地緣政治區域間進行連線。 請記住下列重點：
 
@@ -221,23 +210,23 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 如果您需要檢查或記錄跨虛擬網路的流量，您仍然必須部署及管理 Udr。
 
-- 具有邊界閘道協定 (BGP) 的 VPN 閘道可在 Azure 和內部部署中轉移，但不會跨 ExpressRoute 閘道傳輸。
+- 具有邊界閘道協定 (BGP) 的 VPN 閘道在 Azure 和內部部署中都是可轉移的，但它們並不會提供透過 ExpressRoute 連線之網路的可轉移存取。
 
 - 當有多個 ExpressRoute 線路連線到相同的虛擬網路時，請使用連線權數和 BGP 技術，以確保內部部署與 Azure 之間流量的最佳路徑。 如需詳細資訊，請參閱 [優化 ExpressRoute 路由](/azure/expressroute/expressroute-optimize-routing)。
 
-- 使用 BGP 技術來影響 ExpressRoute 路由是 Azure 平臺以外的設定。 您的組織或連接提供者必須據以設定內部部署路由器。
+- 使用 BGP 計量來影響 ExpressRoute 路由是在 Azure 平臺外部所做的設定變更。 您的組織或連接提供者必須據以設定內部部署路由器。
 
-- ExpressRoute 線路與 premium 附加元件提供全球連線能力。 不過，每個 ExpressRoute 閘道的 ExpressRoute 連線數目上限為四個。
+- ExpressRoute 線路與 premium 附加元件提供全球連線能力。
 
-- 雖然每個虛擬網路的虛擬網路對等互連連線數目上限是500，但可透過 ExpressRoute 私用對等互連從 Azure 向內部部署公告的最大路由數目是200。
+- ExpressRoute 系結至特定的限制，例如每個 ExpressRoute 閘道的 ExpressRoute 連線數目上限，或可透過 ExpressRoute 私用對等互連從 Azure 公告至內部部署的最大路由數目。 這類限制記載于 [ExpressRoute 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#expressroute-limits) 文章中。
 
 - VPN 閘道的匯總輸送量上限為 10 Gbps。 它支援最多30個站對站或網路對網路通道。
 
 **設計建議：**
 
-- 在下列案例中，請考慮以中樞和輪輻網路拓撲為基礎的網路設計，搭配非虛擬 WAN 技術：
+- 針對下列案例，請考慮以傳統中樞和輪輻網路拓撲為基礎的網路設計：
 
-  - Azure 部署中的流量界限位於 Azure 區域內。
+  - 在單一 Azure 區域內部署的網路架構。
 
   - 網路架構跨越多個 Azure 區域，而且跨區域的登陸區域的虛擬網路之間不需要可轉移的連線能力。
 
@@ -245,11 +234,11 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - VPN 和 ExpressRoute 連線之間不需要可轉移的連線能力。
 
-  - 主要的跨單位連線通道是 ExpressRoute，而且每個 VPN 閘道的 VPN 連線數目小於30。
+  - 主要的混合式連線方法是 ExpressRoute，每個 VPN 閘道的 VPN 連線數目小於30。
 
   - 集中式 Nva 和細微路由的相依性。
 
-- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線，以及透過 NVA 的網際網路輸出保護來進行跨單位連線。 下圖顯示此拓撲。 這可讓適當的流量控制符合大部分的分割和檢查需求。
+- 針對區域部署，主要是使用中樞與輪輻拓撲。 使用登陸區域虛擬網路，將虛擬網路對等互連連線到中央中樞虛擬網路，以透過 ExpressRoute 進行跨單位連線、適用于分支連線的 VPN、透過 Nva 和 Udr 的輪輻對輪輻連線能力，以及透過 Azure 防火牆或協力廠商 NVA 的網際網路輸出保護。 下圖顯示此拓撲。 這可讓適當的流量控制符合大部分的分割和檢查需求。
 
   ![說明中樞和輪輻網路拓撲的圖表。 ](./media/hub-and-spoke-topology.png)
   _圖5：中樞和輪輻網路拓撲。_
@@ -260,7 +249,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
   - 您需要特定業務單位的專用 ExpressRoute 頻寬。
 
-  - 您已達到每個 ExpressRoute 閘道的最大連線數目 (四個) 。
+  - 您已達到每個 ExpressRoute 閘道的連線數目上限 (請參閱) 最大數目的 [expressroute 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits#expressroute-limits) 文章。
 
 下圖顯示此拓撲。
 
@@ -294,7 +283,7 @@ _圖4：傳統的 Azure 網路拓撲。_
 
 - 使用 [網路 (預覽) 的 Azure 監視器 ](/azure/azure-monitor/insights/network-insights-overview) ，來監視 Azure 上網路的端對端狀態。
 
-- 請勿為每個中央中樞虛擬網路建立超過200個對等互連連線。 雖然虛擬網路支援最多500對等互連連線，但具有私人對等互連的 ExpressRoute 僅支援從 Azure 到內部部署的最多200首碼。
+- 將輪輻虛擬網路連線到中央中樞虛擬網路時，有兩個必須考慮的 [限制](/azure/azure-resource-manager/management/azure-subscription-service-limits) ：每個虛擬網路的虛擬網路對等互連連線數目上限，以及透過 ExpressRoute 與私人對等互連從 Azure 向內部部署公告的最大首碼數目。 確定連線至中樞虛擬網路的輪輻虛擬網路數目未超過任何一項限制。
 
 ## <a name="connectivity-to-azure"></a>Azure 的連線能力
 
