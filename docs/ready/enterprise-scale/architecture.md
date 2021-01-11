@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 4d4ca4be94afeae4e019da935726ca0708097c64
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 2cc997cde2a35595f980f03703e09ac3710271f3
+ms.sourcegitcommit: 4e1b3dd61686712727a2b74203646cf679940e76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713347"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069384"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -49,7 +49,7 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 下載 PDF 或 Visio 檔案，其中包含根據 [虛擬 WAN (pdf) ](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) 網路拓撲的企業級架構圖表，或是以 [中樞和輪輻 (pdf) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) 架構為基礎的傳統 Azure 網路拓撲。 您可以將包含虛擬 WAN 和中樞和輪輻架構圖表的 Visio 檔案下載為 [visio 圖表 (的) ](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx)。
 
-在 [圖 2] 和 [3] 中，有企業級關鍵設計區域的參考，這些都是以 a 到 I 的字母來表示：
+在 [圖 2] 和 [3] 中，有企業級關鍵設計區域的參考，這些都是以 A 到 I 的字母來表示：
 
 ![字母 A ](./media/a.png) [ENTERPRISE 合約 (EA) 註冊和 Azure Active Directory](./enterprise-enrollment-and-azure-ad-tenants.md)租使用者。 註冊 Enterprise 合約 (EA) 代表 Microsoft 與您的組織如何使用 Azure 之間的商業關係。 它提供您所有訂用帳戶的計費基礎，並影響您的數位資產管理。 您的 EA 註冊可透過 Azure EA 入口網站進行管理。 註冊通常代表組織的階層，其中包括部門、帳戶和訂用帳戶。 Azure AD 租用戶提供身分識別與存取權管理，這是安全性狀態的重要部分。 Azure AD 租用戶可確保已驗證和授權的使用者只能存取他們具有存取權限的資源。
 
