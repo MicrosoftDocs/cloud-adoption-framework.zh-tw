@@ -1,18 +1,19 @@
 ---
 title: 如何準備進行 Moodle 遷移
 description: 瞭解如何準備 Moodle 遷移。 瞭解如何備份 Moodle 檔，並建立遷移所需的資源。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4a4a3ce829263aaac9806f03ee7b743f0e225016
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: 5b82b1c440a8a7bd311098906d3baf902bfd6327
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687714"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123607"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>如何準備進行 Moodle 遷移
 

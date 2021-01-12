@@ -1,18 +1,19 @@
 ---
 title: Moodle 手動遷移步驟
 description: 請遵循下列步驟，將 Moodle 內部部署備份封存匯入至 Azure 資源，並設定 Moodle 應用程式。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 07c8853fa2e843d18c9ab818e19dc65ca93c0849
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: 729131cf4245dbda7c48e7067cf224fbff927c67
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687692"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123539"
 ---
 # <a name="moodle-manual-migration-steps"></a>Moodle 手動遷移步驟
 
@@ -42,7 +43,7 @@ ms.locfileid: "97687692"
    
 1. 選取 [ **驗證**]，然後尋找您用來部署 Azure 基礎結構與 ARM 範本的 SSH 金鑰檔案。
    
-1. 選取 [開啟]。 針對 [使用者名稱]，輸入 **azureadmin**，因為它是在範本中硬式編碼。
+1. 選取 [開啟]  。 針對 [使用者名稱]，輸入 **azureadmin**，因為它是在範本中硬式編碼。
    
    ![顯示 SSH 驗證設定的 [PuTTY 設定] 頁面螢幕擷取畫面。](images/putty-ssh-key.png)
    

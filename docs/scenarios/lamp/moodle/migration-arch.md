@@ -1,18 +1,19 @@
 ---
 title: Moodle 遷移架構和範本
 description: 瞭解 Azure Resource Manager (ARM) 範本以 Moodle Azure 基礎結構部署，以及如何部署或編輯它們。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4f2f943faa97651e7c860fd2e5286037c4a76fd7
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: bff94f48705d5e080607d5f41017acf421e394ac
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687766"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123505"
 ---
 # <a name="moodle-migration-architecture-and-templates"></a>Moodle 遷移架構和範本
 
@@ -90,7 +91,7 @@ Moodle 遷移至 Azure 包含下列工作：
    
    :::image type="content" source="images/edit-template.png" alt-text="顯示 Moodle 部署 ARM 範本的 [編輯範本] 頁面的螢幕擷取畫面。" border="false":::
    
-1. 選取 [儲存]。
+1. 選取 [儲存]  。
 
 ## <a name="next-steps"></a>後續步驟
 

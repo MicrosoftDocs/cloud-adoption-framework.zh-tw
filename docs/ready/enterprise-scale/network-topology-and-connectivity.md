@@ -3,17 +3,17 @@ title: 網路拓樸和連線能力
 description: 檢查有關網路功能的主要設計考慮和建議，以及在 Microsoft Azure 之間的連線能力和連線能力。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 06/15/2020
+ms.date: 01/08/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: d9b9097f4519e7d529d31e98e166e1352e3b4c33
-ms.sourcegitcommit: 1acc1aeb230205ec711a3fcadde52682c1c86bf8
+ms.openlocfilehash: 15f72f6899ba9ae3cf5a9bf9a804c7e0e1363d9c
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97974476"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123556"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->

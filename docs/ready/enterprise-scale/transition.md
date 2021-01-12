@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 36239c846de012165467c7fc3ed3cfc78d360101
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 1fc58ed9f74d37eb641fce1d3571add71c3b5526
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713059"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123471"
 ---
 <!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
 
@@ -29,8 +29,8 @@ ms.locfileid: "97713059"
 
 | 影響範圍 | Destination | 優點 | 缺點 |
 |--|--|--|--|
-| 資源群組中的資源 | 可移至相同或不同訂用帳戶中的新資源群組  | 可讓您在部署之後修改資源群組中的資源組合 | -所有 resourceTypes 都不支援 <br> -某些 resourceTypes 有特定的限制或需求 <br> -Resourceid 會更新並影響現有的監視、警示和控制平面作業 <br> -在移動期間鎖定資源群組 <br> -需要評估原則和 Azure RBAC 的前置和移動後作業 |
-| 租使用者中的訂用帳戶  | 可移至不同的管理群組和不同的租使用者 | 因為不會變更 resourceId 值，所以不會影響訂用帳戶內的現有資源 | 需要評估原則和 Azure RBAC 的前置和移動後作業 |
+| 資源群組中的資源 | 可移至相同或不同訂用帳戶中的新資源群組  | 可讓您在部署之後修改資源群組中的資源組合 | -所有 resourceTypes 都不支援 <br> -某些 resourceTypes 有特定的限制或需求 <br> -Resourceid 會更新並影響現有的監視、警示和控制平面作業 <br> -在移動期間鎖定資源群組 <br> -需要評估原則和 RBAC 的前置和移動後作業 |
+| 租使用者中的訂用帳戶  | 可移至不同的管理群組 | 因為不會變更 resourceId 值，所以不會影響訂用帳戶內的現有資源 | 需要評估原則和 RBAC 的前置和移動後作業 |
 
 為了瞭解您應使用的移動策略，我們將逐步解說兩者的範例：
 

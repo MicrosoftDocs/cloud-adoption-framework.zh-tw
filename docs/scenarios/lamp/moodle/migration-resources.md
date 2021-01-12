@@ -1,18 +1,19 @@
 ---
 title: Moodle 移轉資源
 description: 瞭解 Moodle 遷移在 Azure 中建立的資源。 範例包括 Azure 虛擬網路、網路安全性群組和子網。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1ff3f1036e039328733061392b498de44c0706d6
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: f50a908070a7909f02f00f6f96477cae0117fdc7
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687674"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123488"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移轉資源
 
