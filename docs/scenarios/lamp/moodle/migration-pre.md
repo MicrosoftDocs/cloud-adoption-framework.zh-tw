@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 5b82b1c440a8a7bd311098906d3baf902bfd6327
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: c5d8319f1f181848e70d303c7315403a5b52f7c0
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123607"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175197"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>如何準備進行 Moodle 遷移
 
@@ -43,7 +43,7 @@ ms.locfileid: "98123607"
 
 如果您沒有 Azure 訂用帳戶，您可以 [免費建立一個](https://azure.microsoft.com/free/)訂用帳戶。 您也可以設定 [隨用隨付訂](https://azure.microsoft.com/offers/ms-azr-0003p/)用帳戶，也可以在 Azure 入口網站中建立訂用帳戶。
 
-- 若要使用 Azure 入口網站建立訂用帳戶，請 [開啟 [](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)訂用帳戶]，選取 [ **新增**]，然後輸入必要的資訊。
+- 若要使用 Azure 入口網站建立訂用帳戶，請 [**開啟 [**](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)訂用帳戶]，選取 [ **新增**]，然後輸入必要的資訊。
 
   ![Azure 入口網站中 [訂閱] 頁面的螢幕擷取畫面。](./images/azure-subscriptions-page.png)
 
@@ -59,14 +59,14 @@ ms.locfileid: "98123607"
 
 ## <a name="create-a-resource-group"></a>建立資源群組
 
-設定 Azure 訂用帳戶之後，請在 Azure 中建立資源群組。 您可以使用 Azure 入口網站 **或** Azure CLI 來建立資源群組。
+設定 Azure 訂用帳戶之後，請使用 Azure 入口網站或 Azure CLI 在 Azure 中建立資源群組。
 
 - 若要使用 Azure 入口網站，請遵循下列步驟：
 
-  1. 開啟 [ [資源群組](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]，然後選取 [ **新增**]。
-  
+  1. 開啟 [ [**資源群組**](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)]，然後選取 [ **新增**]。
+
   1. 輸入您的訂用帳戶名稱、資源組名和區域。 如需可用區域的清單，請參閱 [Azure 中的資料](https://azure.microsoft.com/global-infrastructure/data-residency/) 存放區。 記下您輸入的資源組名，讓您可以在稍後的步驟中使用該名稱。
-  
+
   1. 選取 [檢閱 + 建立]。
 
   ![[建立資源群組] 頁面的螢幕擷取畫面，其中包含 Azure 入口網站 [訂用帳戶]、[資源群組] 和 [區域] 方塊，以及 [審核 + 建立] 按鈕。](./images/resource-group.png)
@@ -87,11 +87,11 @@ ms.locfileid: "98123607"
 
 接下來，在您剛才建立的資源群組中建立儲存體帳戶。 您將使用此儲存體帳戶來備份您的內部部署 Moodle 資料。
 
-您可以使用 Azure 入口網站 **或** Azure CLI 來建立儲存體帳戶。
+您可以使用 Azure 入口網站或 Azure CLI 來建立儲存體帳戶。
 
 - 若要使用 Azure 入口網站，請遵循下列步驟：
 
-  1. 開啟 [ [建立儲存體帳戶](https://ms.portal.azure.com/#create/Microsoft.StorageAccount)]。
+  1. 移至 [**建立儲存體帳戶**](https://ms.portal.azure.com/#create/Microsoft.StorageAccount)。
 
   1. 輸入下列資訊：
 
@@ -99,9 +99,9 @@ ms.locfileid: "98123607"
      - 您剛才建立的資源組名
      - 儲存體帳戶名稱
      - 您的區域
-   
+
   1. 針對 [ **帳戶類型**]，從下拉式清單中選取 [ **BlobStorage** ]。
-  
+
   1. 若 **要進行** 複寫，請從下拉式清單中選取 [ **讀取權限異地冗余儲存體] (GRS)** 。
 
   1. 選取 [檢閱 + 建立]。
@@ -136,7 +136,7 @@ ms.locfileid: "98123607"
    sudo /usr/bin/php admin/cli/maintenance.php
    ```
 
-當您備份內部部署 Moodle 和 moodledata 檔案、設定和資料庫時，建議您將這些資源備份至單一目錄。 下圖摘要說明此概念：
+您應該將內部部署的 Moodle 和 moodledata 檔案、設定和資料庫備份至單一目錄。 下圖摘要說明這項建議：
 
 ![顯示 Moodle 備份儲存體目錄結構的圖表。](./images/directory-structure.png)
 
@@ -172,7 +172,7 @@ ms.locfileid: "98123607"
    mkdir configuration
    ```
 
-2. 輸入下列命令來複製 PHP 和 nginx 設定檔：
+2. 輸入下列命令來複製 PHP 和 NGINX 設定檔：
 
    ```bash
    cp -R /etc/php /home/azureadmin/storage/configuration/
@@ -292,6 +292,6 @@ sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storage account name>
 
 ![顯示 Blob 儲存體帳戶 Azure 入口網站中頁面的螢幕擷取畫面。 您可以看見儲存體目錄的壓縮 tar 檔案。](./images/archive-in-blob-storage.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續 [Moodle 遷移架構和範本](./migration-arch.md)。

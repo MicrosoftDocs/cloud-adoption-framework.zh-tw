@@ -1,6 +1,6 @@
 ---
 title: Moodle 移轉資源
-description: 瞭解 Moodle 遷移在 Azure 中建立的資源。 範例包括 Azure 虛擬網路、網路安全性群組和子網。
+description: 瞭解 Moodle 遷移在 Azure 中建立的資源，例如 Azure 虛擬網路、網路安全性群組和子網。
 author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: f50a908070a7909f02f00f6f96477cae0117fdc7
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 677b8c4a582688599a868ae5af9b9f43d8b0cdca
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123488"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175129"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移轉資源
 
@@ -23,19 +23,19 @@ ms.locfileid: "98123488"
 
 網路範本部署會建立下列資源：
 
-- [Azure 虛擬網路](/azure/virtual-network/virtual-networks-overview)：在雲端中表示您自己的網路。 虛擬網路是專屬於您訂用帳戶的 Azure 雲端邏輯隔離。 當您建立虛擬網路時，您內的服務和虛擬機器可以直接且安全地在雲端中進行通訊。 網路範本建立的虛擬網路包括虛擬網路名稱、API 版本、位置、DNS 伺服器名稱和 AddressSpace。 AddressSpace 包含子網可使用的 IP 位址範圍。
+- [Azure 虛擬網路](/azure/virtual-network/virtual-networks-overview)：在雲端中表示您自己的網路。 虛擬網路是專屬於您訂用帳戶的 Azure 雲端邏輯隔離。 當您建立虛擬網路時，您內的服務和虛擬機器可以直接且安全地在雲端中進行通訊。 網路範本建立的虛擬網路包括虛擬網路名稱、API 版本、位置、DNS 伺服器名稱和位址空間。 位址空間包含子網可使用的 IP 位址範圍。
 
 - [網路安全性群組 (NSG) ](/azure/virtual-network/network-security-groups-overview)：網路篩選器或防火牆，其中包含安全性規則的清單。 這些規則可允許或拒絕連線至虛擬網路之資源的網路流量。
 
-- [網路介面](/azure/virtual-network/virtual-network-network-interface)： Azure 虛擬機器可用於與網際網路、Azure 和內部部署資源通訊的介面。
+- [網路介面](/azure/virtual-network/virtual-network-network-interface)： azure 虛擬機器可用於與網際網路、Azure 和內部部署資源通訊的介面。
 
 - [子網](/azure/virtual-network/virtual-network-manage-subnet)：大型網路內的較小網路。 子網也稱為子網。 根據預設，子網中的 IP 位址可以與虛擬網路內的任何其他 IP 位址通訊。
 
-- [公用 ip 位址](/azure/virtual-network/public-ip-addresses#:~:text=Public%20IP%20addresses%20enable%20Azure,IP%20assigned%20can%20communicate%20outbound)： Azure 資源用來與網際網路通訊的 ip 位址。 此位址是 Azure 資源專屬的位址。
+- [公用 ip 位址](/azure/virtual-network/public-ip-addresses#:~:text=public%20ip%20addresses%20enable%20azure,IP%20assigned%20can%20communicate%20outbound)： Azure 資源用來與網際網路通訊的 ip 位址。 此位址是 Azure 資源專屬的位址。
 
-- [Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=An%20Azure%20load%20balancer%20is,traffic%20to%20an%20operational%20VM)：負載平衡器，可有效率地將網路或應用程式流量分散到伺服器陣列中的多部伺服器。 Load Balancer 只能將要求傳送到線上的伺服器，以確保高可用性和可靠性。
+- [Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=an%20azure%20load%20balancer%20is,traffic%20to%20an%20operational%20vm)：負載平衡器，可有效率地將網路或應用程式流量分散到伺服器陣列中的多部伺服器。 負載平衡器只會將要求傳送到線上的伺服器，以確保高可用性和可靠性。
 
-- [Azure 應用程式閘道](/azure/application-gateway/overview)： Load Balancer 的替代方案。 所有四個預先定義的 ARM 範本都會部署 Load Balancer。 如果您使用完全可設定的部署，而不是 ARM 範本，您可以選擇應用程式閘道，而不是 Load Balancer。 應用程式閘道是網路流量 Load Balancer，可用來管理 web 應用程式的流量。 應用程式閘道可以根據 HTTP 要求的其他屬性（例如 URI 路徑或主機標頭）進行路由決策。
+- [Azure 應用程式閘道](/azure/application-gateway/overview)： Load Balancer 的替代方案。 所有四個預先定義的 ARM 範本都會部署 Load Balancer。 如果您使用完全可設定的部署，而不是 ARM 範本，您可以選擇應用程式閘道，而不是 Load Balancer。 應用程式閘道是網路流量負載平衡器，可讓您用來管理 web 應用程式的流量。 應用程式閘道可以根據 HTTP 要求的其他屬性（例如 URI 路徑或主機標頭）進行路由決策。
 
 - [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview)：以開放原始碼軟體 Redis 為基礎的記憶體中資料存放區。 Redis 可改善大量儲存後端資料之應用程式的效能和擴充性。 它可以藉由將經常存取的資料保存在伺服器記憶體中，來處理大量的應用程式要求。 這種資料可以快速寫入和讀取。
 
@@ -43,7 +43,7 @@ ms.locfileid: "98123488"
 
 儲存體帳戶範本部署會建立 FileStorage 類型的 Azure 儲存體帳戶。 此帳戶具有 premium 效能、本機冗余儲存體 (LRS) 複寫，以及 1 tb (TB 的儲存體) 。 預先定義的範本會設定成讓具有 Azure 檔案儲存體的儲存體帳戶建立檔案共用。
 
-[Azure 儲存體帳戶](/azure/storage/common/storage-account-overview)包含 Azure 儲存體的資料物件，例如 blob、檔案、佇列、資料表和磁片。 儲存體帳戶會為您的 Azure 儲存體資料提供唯一的命名空間，此命名空間可透過 HTTP 或 HTTPS 從世界各地存取。 以下是可用的 Azure 儲存體帳戶類型：一般用途 v1、一般用途 v2、BlockBlobStorage、FileStorage 和 Blob 儲存體。 複寫類型可以是異地冗余或 LRS 和區域多餘的儲存體。 效能類型為 standard 和 premium，而個別儲存體帳戶最多可儲存 500 TB 的資料，就像任何其他 Azure 服務一樣。
+[Azure 儲存體帳戶](/azure/storage/common/storage-account-overview)包含 Azure 儲存體的資料物件，例如 blob、檔案、佇列、資料表和磁片。 儲存體帳戶會為您的 Azure 儲存體資料提供唯一的命名空間，此命名空間可透過 HTTP 或 HTTPS 從世界各地存取。 可用的 Azure 儲存體帳戶類型如下： General-Purpose v1、General-Purpose v2、BlockBlobStorage、FileStorage 和 Blob 儲存體。 複寫類型可以是異地冗余或 LRS 和區域多餘的儲存體。 效能類型為 standard 和 premium，而個別儲存體帳戶最多可儲存 500 TB 的資料，就像任何其他 Azure 服務一樣。
 
 ARM 範本支援下列儲存體帳戶類型：
 
@@ -71,6 +71,6 @@ ARM 範本支援下列儲存體帳戶類型：
 
 擴展集範本部署會建立 [虛擬機器擴展集](/azure/virtual-machine-scale-sets/overview)。 您可以使用虛擬機器擴展集來部署和管理一組自動調整虛擬機器。 您可以手動調整擴展集中的虛擬機器數目，或定義規則以根據資源使用量（例如 [CPU](/visualstudio/profiling/average-cpu-utilization)、記憶體需求或網路流量）自動調整。 當實例擴大時，它會部署虛擬機器。 然後執行會安裝 Moodle 必要條件並設定 cron 作業的 shell 腳本。 擴展集中的虛擬機器具有私人 IP 位址。 如需有關如何在擴展集中查看虛擬機器實例，以及如何存取這些實例的詳細資訊，請參閱 [虛擬機器擴展集檔](/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli#view-the-vm-instances-in-a-scale-set)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 繼續 [Moodle 手動遷移步驟](migration-start.md) ，以進行 Moodle 遷移程式中的後續步驟。

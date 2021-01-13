@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: bff94f48705d5e080607d5f41017acf421e394ac
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 0cef3da5be2430c79411600e9caa1e51bd107991
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123505"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175214"
 ---
 # <a name="moodle-migration-architecture-and-templates"></a>Moodle 遷移架構和範本
 
@@ -41,19 +41,19 @@ Moodle 遷移至 Azure 包含下列工作：
 預先定義的部署範本使用四種預先定義的 Moodle 大小之一：最小、最短、最大或最大。
 
 - *最基本的部署* 只需要兩部虛擬機器 (vm) ，因此可搭配 Azure 免費試用訂用帳戶使用。 此部署會使用網路檔案系統 (NFS) 、MySQL 和較小的自動調整 web 前端 VM SKU 與一個 vCore。 此範本的快速部署時間為30分鐘。
-  
+
   [![啟動最基本 Moodle 部署 ARM 範本的按鈕。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
 
-- *小規模部署* 最多可支援1000個並行使用者。 此部署使用不具高可用性的 NFS，以及在八虛擬核心上的 MySQL。 此部署不包含 Elasticsearch 或 Redis Cache 等選項。
-  
+- *小規模部署* 最多可支援1000個並行使用者。 此部署使用不具高可用性的 NFS，以及在八虛擬核心上的 MySQL。 此部署不包含 Elasticsearch 或 Azure Cache for Redis 之類的選項。
+
   [![此按鈕會啟動小型至中型 Moodle 部署 ARM 範本。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
 
-- *大型的高可用性部署* 支援超過2000個並行使用者。 此部署使用 Azure 檔案儲存體、具有16虛擬核心的 MySQL 和 Azure Redis 快取，而不需要其他選項，例如 Elasticsearch。
-  
+- *大型的高可用性部署* 支援超過2000個並行使用者。 此部署使用 Azure 檔案儲存體、具有16虛擬核心的 MySQL，Azure Cache for Redis，而不需要其他選項（例如 Elasticsearch）。
+
   [![此按鈕會啟動大型的高可用性 Moodle 部署 ARM 範本。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
 
-- 最 *大部署會* 使用 Azure 檔案儲存體、具有最高 SKU 的 MySQL、Azure Redis 快取、在三個 Vm 上 Elasticsearch，以及資料磁片和資料庫的大型儲存體大小。
-  
+- 最 *大部署會* 使用 Azure 檔案儲存體、具有最高 SKU 的 MySQL、Azure Cache for Redis、三個 vm 上的 Elasticsearch，以及適用于資料磁片和資料庫的大型儲存體大小。
+
   [![啟動最大 Moodle 部署 ARM 範本的按鈕。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
 
 ## <a name="deploy-the-template"></a>部署範本
@@ -61,11 +61,11 @@ Moodle 遷移至 Azure 包含下列工作：
 若要部署其中一個預先定義的 ARM 範本：
 
 1. 在上一節中，針對您想要的部署選取 [ **部署至 Azure** ] 按鈕。 此動作會帶您前往 Azure 入口網站。
-   
-1. 在 Azure 入口網站的 [ **自訂部署** ] 頁面上，完成 [強制 **訂** 用帳戶]、[ **資源群組**]、[ **區域**] 和 [ **Ssh 公用金鑰** ] 欄位。 如需有關如何新增 SSH 金鑰的詳細資訊，請參閱 [產生新的 ssh 金鑰，並將它新增至 ssh 代理程式](https://docs.github.com/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)。
-   
+
+1. 在 Azure 入口網站的 [ **自訂部署** ] 頁面上，完成 [強制 **訂** 用帳戶]、[ **資源群組**]、[ **區域**] 和 [ **SSH 公用金鑰** ] 欄位。 如需有關如何新增 SSH 金鑰的詳細資訊，請參閱 [產生新的 ssh 金鑰，並將它新增至 ssh 代理程式](https://docs.github.com/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)。
+
    :::image type="content" source="images/custom-deployment.png" alt-text="顯示 Moodle deployment ARM 範本的 Azure 自訂部署畫面的螢幕擷取畫面。" border="false":::
-   
+
 1. 選取 [檢閱 + 建立]。
 
 ### <a name="edit-the-template"></a>編輯範本
@@ -79,19 +79,19 @@ Moodle 遷移至 Azure 包含下列工作：
 如果您的內部部署 PHP 和 Moodle 版本與先前的值不同，請遵循下列步驟來更新範本版本以符合：
 
 1. 在 Azure 入口網站的 [ARM 範本 **自訂部署** ] 頁面上，選取 [ **編輯範本**]。
-   
+
 1. 在範本的 **資源** 區段中，于 [ **參數**] 下，為您的 Moodle 和 PHP 版本新增參數。
 
    ```json
    "phpVersion":       { "value": "7.2" },
    "moodleVersion":    { "value": "MOODLE_38_STABLE"}
    ```
-   
+
    例如，針對 Moodle 3.9，此 `moodleVersion` 值應為 `MOODLE_39_STABLE` 。
-   
+
    :::image type="content" source="images/edit-template.png" alt-text="顯示 Moodle 部署 ARM 範本的 [編輯範本] 頁面的螢幕擷取畫面。" border="false":::
-   
-1. 選取 [儲存]  。
+
+1. 選取 [儲存]。
 
 ## <a name="next-steps"></a>後續步驟
 

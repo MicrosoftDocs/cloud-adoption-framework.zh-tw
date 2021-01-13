@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: cfba0681dd1a07a787c24561d5ca23e0dbef5bc7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6a05051287765528ea34774b4a5cbfb12e575639
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013989"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174398"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -94,7 +94,7 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具中的無代理程式方�
 | --- | --- | --- |
 | [Azure Migrate：伺服器移轉](/azure/migrate/contoso-migration-rehost-vm) | 此服務會協調和管理內部部署應用程式和工作負載的遷移，以及 Amazon Web Services (AWS) 和 Google Cloud Platform (VM 實例) GCP。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 深入瞭解 [費用和定價](https://azure.microsoft.com/pricing/details/azure-migrate)。  |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 Contoso 和其他使用者必須符合此案例的下列必要條件。
 
@@ -308,4 +308,5 @@ Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/c
 
 ## <a name="conclusion"></a>結論
 
-在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。 如需在您的環境中完成類似專案的指引，請參閱 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)的 Azure DevOps 專案範本。 
+在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。
+您也可以查看 [DevOps](https://aka.ms/adopt/plan/generator)產生器中已發佈的 Azure DevOps 專案。 一旦在產生器中，請下載雲端採用架構導覽下的 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration) 。 

@@ -1,6 +1,6 @@
 ---
 title: 在遷移旅程的規劃階段期間的技能就緒途徑
-description: 使用適用于 Azure 的雲端採用架構，瞭解遷移計畫階段期間的技能就緒途徑。
+description: 使用適用于 Azure 的雲端採用架構，以瞭解在遷移的規劃階段期間的技能就緒途徑。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: bd095d6474c5469fdc930b30a4a6d3ed0a901125
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: d1c1242f57bc97f1cc934c78e5ca5604a7e5c6ae
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713008"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174942"
 ---
-# <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>在遷移旅程的規劃階段期間的技能就緒途徑
+# <a name="skills-readiness-path-during-the-planning-phase-of-a-migration-journey"></a>在遷移旅程的規劃階段期間的技能就緒途徑
 
-在遷移旅程的規劃階段中，目標是要開發指引遷移的必要計畫。 這個階段需要一些重要技能，包括：
+在遷移旅程的規劃階段中，目標是要開發引導遷移的必要計畫。 這個階段需要一些重要技能，包括：
 
 - 建立願景。
 - 打造商務理由。
@@ -53,7 +53,7 @@ ms.locfileid: "97713008"
 
 ## <a name="business-planning-skills"></a>商務規劃技能
 
-在準備階段，技術人員會建立可裝載、操作及管理已遷移至雲端之工作負載的遷移登陸區域。 這些學習路徑可協助您開發所需的技能：
+在準備階段期間，技術人員會建立可裝載、操作及管理已遷移至雲端之工作負載的遷移登陸區域。 這些學習路徑可協助您開發所需的技能：
 
 - [建立 Azure 帳戶](/learn/modules/create-an-azure-account)。 使用 Azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所布建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
 - [Azure 入口網站](/learn/modules/tour-azure-portal)。 瀏覽 Azure 入口網站的功能和服務，並自訂入口網站。
@@ -75,7 +75,7 @@ ms.locfileid: "97713008"
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
-除了這些用於開發技能的初始選項之外，還有各種學習選項可供使用。
+這些初始選項以外的各種學習選項都可用於開發技能。
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 

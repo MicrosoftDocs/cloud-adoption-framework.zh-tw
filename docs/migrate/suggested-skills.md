@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5dcd54f2db94ab52b72eb4bef344ed3d20c85aa3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e36fb243716808df82bf71a46135734f322ef805
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024818"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175265"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
@@ -23,7 +23,7 @@ ms.locfileid: "97024818"
 
 ## <a name="prerequisites-skilling-resources"></a>必要的技能資源
 
-遷移方法的執行是以 [規劃階段](../strategy/suggested-skills.md) 期間所取得的技能和遷移旅程的 [準備階段](../organize/suggested-skills.md) 為基礎。
+遷移方法的執行是以 [規劃](../strategy/suggested-skills.md) 和 [準備](../organize/suggested-skills.md) 遷移旅程期間所取得的技能為基礎。
 
 ## <a name="assess-skilling-resources"></a>評估技能資源
 
@@ -63,7 +63,7 @@ ms.locfileid: "97024818"
 
 - [保護及管理 azure 中的工作負載](./azure-best-practices/migrate-best-practices-security-management.md)：在 azure 中保護和管理工作負載的最佳做法。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 返回 [遷移最佳做法檢查清單](./azure-best-practices/index.md) ，以確保您的遷移方法完全一致。
 

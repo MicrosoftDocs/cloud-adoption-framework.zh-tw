@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b66a9258eeab8ddf3be16d6b71d360a2da77cf93
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 77fe35a487858a240e7b3dc8879acd67e28afa8d
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026212"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175112"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>開始使用技能就緒路徑
 
@@ -37,7 +37,7 @@ IT 人員成員可能會覺得其角色和職位的有點焦慮，因為他們�
   - **管理：** 享有管理雲端環境所需的技能。
   - **[監視](../manage/monitor/suggested-skills.md)：** 享有監視雲端環境所需的技能。
 
-上述每一個學習路徑都能跨多個媒體類型分享商機，以充分發揮知識。
+上述每一個學習路徑都能跨多個媒體類型分享商機，以充分發揮知識。 當您發展學習路徑時，會看到您的員工和學習人員要如何取得認證。 下列資源可協助您對應認證路徑，使其無法瞭解憑證總覽所提供的組合、建議的步驟，以及認證所需的建議定型。 [Azure 認證組](https://aka.ms/azuretraincertdeck)。 
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 

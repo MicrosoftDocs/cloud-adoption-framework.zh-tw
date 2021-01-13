@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 21c0881738e4e83ef7943cf99a13eac5b14f0fbd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a1ac602ebebaed55b7487489bdb162e095eb466c
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013207"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174772"
 ---
 # <a name="balance-the-portfolio"></a>平衡組合
 
@@ -29,7 +29,7 @@ ms.locfileid: "97013207"
 
 在平衡組合之前，請務必記錄並分享推動雲端遷移工作的業務成果。 下表可協助記載及分享所需的業務成果。 請務必注意，大部分企業都會一次追求數個成果。 此練習的重要性是要釐清與雲端移轉工作最直接相關的成果：
 
-| 成果 | 測量依據 | 目標 | 時間範圍 | 此工作的優先順序 |
+| 結果 | 測量依據 | 目標 | 時間範圍 | 此工作的優先順序 |
 |--|--|--|--|--|
 | 降低 IT 成本 | 資料中心預算 | 減少 $ 2M 美元 | 12 個月 | #1 |
 | 資料中心的退出 | 離開資料中心 | 2個資料中心 | 6 個月 | #2 |
@@ -49,7 +49,7 @@ ms.locfileid: "97013207"
 
 [記載業務成果](#document-business-outcomes)一節中的表格遺漏了一項重要成果，此成果可支援減少 IT 成本這個首要目標。 當您將降低 IT 成本列於業務成果清單任一順位時，請務必考慮您有可能需要廢止或淘汰工作負載。 在某些案例中，節省成本可能是因為不會遷移不保證短期投資的工作負載。 某些客戶回報，其已藉由淘汰使用率過低的工作負載來節省成本，其金額超過所減少總成本的 20%。
 
-為了平衡組合、更清楚地反映終止和淘汰決策，雲端策略小組和雲端採用小組鼓勵您在評估和遷移階段中，對每個工作負載提出下列問題：
+為了平衡組合、更清楚地反映終止和淘汰決策，雲端策略小組和雲端採用小組鼓勵在評定和遷移階段時，對每個工作負載詢問下列問題：
 
 - 在過去六個月內，終端使用者是否曾使用過此工作負載？
 - 終端使用者的流量保持一致還是在成長？
@@ -107,7 +107,7 @@ ms.locfileid: "97013207"
 
 在遷移期間，應以上述三種方式分割工作，並在適當的反復專案中由適當的小組執行。 當您應該 [多樣化組合時，也請確保工作保持在最專注和隔離的狀態。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解 [全球市場決策](./global-markets.md) 會如何影響您的轉型旅程。
 

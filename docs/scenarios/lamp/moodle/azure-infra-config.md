@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: ef6af215d67a5e2c12792e6f54e4e74d915da381
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 744bdf4b3e348f522a90941102521d5ffe83ccd8
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175231"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>如何設定 Moodle 背景工作節點
 
@@ -62,6 +62,7 @@ mkdir -p backup/moodle
 ```
 
 ### <a name="configure-the-php-and-web-server"></a>設定 PHP 和網頁伺服器
+
 若要設定 PHP 和 web 伺服器，請執行下列步驟：
 
 1. 將 PHP 版本設定為變數：
@@ -95,7 +96,26 @@ mkdir -p backup/moodle
    php -m
    ```
 
-1. 使用 Azure Resource Manager 範本來安裝下列 PHP 擴充功能： php-fpm、cli、捲曲、zip、梨、g.、dev、mcrypt、soap、json、redis、bcmath、gd、mysql、xmlrpc、國際、xml 和 bz2。
+1. 使用 Azure Resource Manager 範本來安裝下列 PHP 擴充功能：
+
+    - `fpm`
+    - `cli`
+    - `curl`
+    - `zip`
+    - `pear`
+    - `mbstring`
+    - `dev`
+    - `mcrypt`
+    - `soap`
+    - `json`
+    - `redis`
+    - `bcmath`
+    - `gd`
+    - `mysql`
+    - `xmlrpc`
+    - `intl`
+    - `xml`
+    - `bz2`
 
 1. 如果內部部署 Moodle 應用程式具有不在控制器虛擬機器中的任何其他 PHP 延伸模組，請使用下列命令手動安裝它們：
 
@@ -103,6 +123,6 @@ mkdir -p backup/moodle
    sudo apt-get install -y php-<extension name>
    ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在 [Moodle 遷移之後](./migration-post.md)，繼續進行後續操作。

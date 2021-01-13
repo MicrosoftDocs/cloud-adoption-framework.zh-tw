@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 4f1285ec3b25af2246941e37fbb45a6aec9e7307
-ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
+ms.openlocfilehash: 10baaefc8b06b46b918beb4e08c27ecc188e6e90
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96557513"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174330"
 ---
 # <a name="knowledge-mining"></a>知識採礦
 
@@ -37,6 +37,7 @@ Azure 認知搜尋是受控的雲端解決方案，可為開發人員提供 Api 
   - [知識挖掘研討會](https://github.com/Azure-Samples/azure-search-knowledge-mining/tree/master/workshops)
   - [知識挖掘開機 camp](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp)
   - [知識挖掘電子書](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/)
+  - [知識挖掘 Azure DevOps 專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)、登入、移至雲端採用架構流覽、選取知識挖掘。 
 
 - **使用 power 技能：** [Azure 搜尋服務的強大技能](https://github.com/Azure-Samples/azure-search-power-skills) 提供實用的功能，可部署為 Azure 認知搜尋的自訂技能。 技能可作為您自訂技能的 [範本](https://github.com/Azure-Samples/azure-search-power-skills/blob/master/Template/HelloWorld/README.md) 或起點。 如果它們符合您的需求，也可以部署及使用它們。 我們也邀請您提交 [提取要求](https://github.com/Azure-Samples/azure-search-power-skills/compare)來參與您自己的工作。
 
@@ -48,9 +49,9 @@ Azure 認知搜尋是受控的雲端解決方案，可為開發人員提供 Api 
   - [AI 擴充的設計秘訣和訣竅](/azure/search/cognitive-search-concept-troubleshooting)
   - [全文檢索搜尋](/azure/search/search-lucene-query-architecture)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 探索其他 AI 解決方案類別：
 
 - [AI 應用程式和代理程式](./ai-applications.md)
-- [機器學習](./machine-learning.md)
+- [機器學習服務](./machine-learning.md)

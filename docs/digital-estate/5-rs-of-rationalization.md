@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 1b8c21889f381436d4e9126c580ab13a9b3338c8
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b098d1f1b03c83a40249f34d48e07c589eaea507
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022965"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174449"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -33,7 +33,7 @@ ms.locfileid: "97022965"
 
 ### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>迷思：業務理由必須等待所有工作負載合理化
 
-若要開發雲端採用工作的商業理由，請在組合層級進行一些基本假設。 當動機與創新一致時，請採用重新架構。 當動機符合遷移的考慮時，請採用重新裝載。 這些假設可以加速商務理由流程。 然後，在每個工作負載的採用週期的評估階段期間，會對其進行挑戰和預算調整。
+若要開發雲端採用工作的商業理由，請在組合層級進行一些基本假設。 當動機與創新一致時，請採用重新架構。 當動機符合遷移的考慮時，請採用重新裝載。 這些假設可以加速商務理由流程。 然後，在每個工作負載的採用週期的評量階段期間，會對其進行挑戰和預算調整。
 
 現在，請參閱下列五個合理化 Rs，讓自己熟悉長期的流程。 開發雲端採用方案時，請選擇最符合您動機、業務成果和目前狀態環境的選項。 數位資產合理化的目標是設定基準，而不是將每個工作負載合理化。
 
@@ -165,7 +165,7 @@ ms.locfileid: "97022965"
 - 資料架構。
 - 自訂或自動化流程。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以將這五個合理化的合理化套用至數位資產，以協助您針對每個應用程式的未來狀態進行合理化決策。
 

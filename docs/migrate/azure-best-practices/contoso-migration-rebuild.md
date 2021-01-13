@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 281132c0668f6556520be15540c084376c05e8ae
-ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
+ms.openlocfilehash: 3c1daeaf7b772b12d82ccfe5d9a01b72816a80e9
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97521866"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175163"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -103,7 +103,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 | [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 成本是以功能、儲存體和使用持續時間為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
 | [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建立、部署及調整企業級 web、行動和 API 應用程式，以在任何平臺上執行。 | App Service 方案會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 以下是 Contoso 針對此案例所需的項目：
 
@@ -244,7 +244,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
     _圖16：設定組建管線。_
 
-7. 在 [第 1 階段] 中，他們會新增 [Docker Compose] 工作。 此工作會建立 Docker Compose。
+7. 在 **步驟 1** 中，他們會新增 **Docker Compose** 工作。 此工作會建立 Docker Compose。
 
     ![在 Azure DevOps 中建立 Docker Compose 工作的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts6.png)
 

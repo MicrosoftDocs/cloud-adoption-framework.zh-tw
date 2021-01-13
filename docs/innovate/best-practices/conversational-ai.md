@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: f3174a439376cbb23f1446a1bdca30f77e613363
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 61673e47f274c2e1fc59cb8810e3c1b274685f79
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446822"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174347"
 ---
 <!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
@@ -35,11 +35,11 @@ Azure Bot Service 和 Bot Framework 提供一組整合的工具和服務，以�
 
 ![此圖顯示 bot 開發各階段的工具。](../../_images/ai-bot-dev-tools.png)
 
-### <a name="plan"></a>規劃
+### <a name="plan"></a>方案
 
 徹底瞭解目標、處理常式和使用者需求，對於建立成功 bot 的程式非常重要。 撰寫程式碼之前，請先參閱 bot [設計指導方針](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) ，以瞭解最佳作法，並找出 bot 的需求。 您可以建立簡單的 bot，或包含更複雜的功能，例如語音、自然語言理解和問題答案。
 
-當您在計畫階段中設計 bot 時，請考慮下列層面：
+當您在規劃階段設計 bot 時，請考慮下列層面：
 
 - 定義 bot 角色：
   - 您的 bot 應該看起來像什麼？
@@ -78,11 +78,11 @@ Bot 是一種複雜的應用程式，其中有許多不同的元件可一起運�
 - 在 [Web](/azure/bot-service/bot-service-manage-test-webchat?view=azure-bot-service-4.0) 上測試您的 Bot。 透過 Azure 入口網站設定您的 bot 之後，也可以透過網路聊天介面來觸達。 網路聊天介面是將 bot 存取權授與給測試人員的絕佳方法，以及其他無法直接存取執行中程式碼的人員。
 - 使用 Bot Framework SDK 的七月更新對[bot 進行單元測試](/azure/bot-service/unit-test-bots)。
 
-### <a name="publish"></a>發行
+### <a name="publish"></a>發佈
 
 當您準備好讓 bot 可在 web 上使用時，請將 [其發佈至 Azure](/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0) 或您自己的 web 服務或資料中心。 在公用網際網路上使用位址，是在您的網站上或在聊天頻道中讓 bot 上線的第一個步驟。
 
-### <a name="connect"></a>連線
+### <a name="connect"></a>將
 
 將您的 bot 連接到 Facebook、Messenger、Kik、Skype、時差、Microsoft 小組、Telegram、text/SMS、Twilio、Cortana 及 Skype 等通道。 Bot Framework 會執行從所有這些不同平臺傳送和接收訊息所需的大部分工作。 您的 bot 應用程式會收到統一的正規化訊息串流，無論其所連接的通道數目和類型為何。 如需如何新增通道的詳細資訊，請參閱 [通道](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0)。
 
@@ -110,7 +110,7 @@ Bot 是一種複雜的應用程式，其中有許多不同的元件可一起運�
 
    如需如何在網站內整合 bot 的詳細資訊，請參閱將 [Bot 內嵌在網站中](/azure/bot-service/bot-service-design-pattern-embed-web-site?view=azure-bot-service-4.0)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - 複習機器學習技術白皮書和有關 [Azure Bot Service](https://azure.microsoft.com/resources/whitepapers/search/?service=bot-service)的電子書。
 - 複習 [AI + Machine Learning 架構](/azure/architecture/browse/)。

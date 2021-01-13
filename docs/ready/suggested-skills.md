@@ -1,5 +1,5 @@
 ---
-title: 移轉旅程準備階段期間的技能整備程度路徑
+title: 在遷移旅程的準備階段期間的技能就緒途徑
 description: 使用適用于 Azure 的雲端採用架構，瞭解如何建立完成您的遷移旅程所需的技能。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: ef16aa18163f5631f1b0d310e53605c58535caf9
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 656588a187446214d2f62e0ae99ffdf5a9c889c1
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713042"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174959"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移轉旅程準備階段期間的技能整備程度路徑
+# <a name="skills-readiness-path-during-the-readiness-phase-of-a-migration-journey"></a>在遷移旅程的準備階段期間的技能就緒途徑
 
-在移轉旅程的準備階段期間，我們的目標是為旅程做好預先準備。 此階段會在兩個主要區域中完成：組織整備程度和環境 (技術) 整備程度。 每個領域可能都需要技術和非技術性參與者具備新技能。 下列各節將說明一些可協助您建立必要技能的選項。
+在遷移旅程的準備階段期間，目標是要事先準備旅程。 此階段會在兩個主要區域中完成：組織整備程度和環境 (技術) 整備程度。 每個領域可能都需要技術和非技術性參與者具備新技能。 下列各節將說明一些可協助您建立必要技能的選項。
 
 ## <a name="organizational-readiness-learning-paths"></a>組織整備程度的學習路徑
 
@@ -28,7 +28,7 @@ ms.locfileid: "97713042"
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) 整備程度學習路徑
 
-在準備階段期間，我們需要技術人員來建立移轉登陸區域，以裝載、操作及管理遷移至雲端的工作負載。 您可以使用下列學習路徑來加速開發必要的技能：
+在準備階段期間，會呼叫技術人員來建立可裝載、操作及管理已遷移至雲端之工作負載的遷移登陸區域。 您可以使用下列學習路徑來加速開發必要的技能：
 
 - [建立 azure 帳戶](/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所佈建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
 - [Azure 入口網站](/learn/modules/tour-azure-portal)：導覽 Azure 入口網站功能和服務，以及自訂入口網站。
@@ -41,7 +41,7 @@ ms.locfileid: "97713042"
 - 使用 azure[角色型存取控制來保護資源 (AZURE rbac) ](/learn/modules/secure-azure-resources-with-rbac)：使用 azure rbac 來保護資源。
 - [資料儲存體選項](/learn/modules/intro-to-data-in-azure)： Azure 資料儲存體的優點。
 
-在準備階段期間，我們會需要架構設計人員來建構跨越所有 Azure 環境的解決方案。 下列技能建立資源可協助您準備這些工作的架構：
+在準備階段期間，架構設計人員會在設計跨所有 Azure 環境的解決方案時呼叫。 下列技能建立資源可協助您準備這些工作的架構：
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)： Pluralsight 的課程，可協助架構正確的基礎解決方案。
 - [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎結構設計師的 Pluralsight 課程。
@@ -49,7 +49,7 @@ ms.locfileid: "97713042"
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
-除了這些用於開發技能的初始選項之外，還有各種學習選項可供使用。
+這些初始選項以外的各種學習選項都可用於開發技能。
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 85ff480d99bd816c4cf65292d623af5c96f23753
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7bf30e89bd3560dac8f0a3a9e62f01143a1e7c5f
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015854"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174279"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -21,7 +21,7 @@ ms.locfileid: "97015854"
 
 若要觀察雲端解決方案的健全狀況和可用性，您必須設定監視工具來收集以可預測失敗狀態為基礎的信號層級。 這些信號是失敗的徵兆，而不是原因。 監視工具會使用計量，並針對先進的診斷和根本原因分析記錄進行記錄。
 
-仔細規劃監視和遷移。 一開始請將監視服務擁有者、作業管理員和其他相關人員納入計畫階段，然後在開發和發行週期中繼續參與。 其焦點將是根據下列準則來開發監視設定：
+仔細規劃監視和遷移。 一開始請將監視服務擁有者、操作管理員和其他相關人員納入規劃階段，並在整個開發和發行週期中繼續參與。 其焦點將是根據下列準則來開發監視設定：
 
 - 這項服務的組合為何？ 這些相依性現在是否受到監視？ 如果有，是否牽涉到多個工具？ 是否有機會合並，而不會產生風險？
 - 服務的 SLA 為何，以及我要如何衡量和報告？
@@ -46,7 +46,7 @@ ms.locfileid: "97015854"
 
 採用這組準則，可協助您獲得近乎即時的深入解析，以及更妥善地管理您的服務。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [警示策略](./alerting.md)

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: d256e830e2da3428d3e5177aab00439d3c1d426d
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 3803165a69bfb0dd0d9b510cc0bdffbc21da31d2
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713822"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98173990"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -60,12 +60,20 @@ ms.locfileid: "97713822"
 | [安全性基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于安全性基準。 |
 | [Azure 治理視覺化](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理的視覺化程式是 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能（例如 Azure 原則、Azure 角色型存取控制 (Azure RBAC) 和 Azure 藍圖）取得資料。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
 
-## <a name="migrate"></a>遷移
+## <a name="migrate"></a>移轉
 
 | 資源 | 描述 |
 |----------|-------------|
 | [資料中心遷移探索檢查清單](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | 請參閱此檢查清單，以取得有助於識別資料中心內工作負載、伺服器和其他資產的資訊。 您可以使用此資訊來協助規劃您的遷移。
 | [遷移範本](https://aka.ms/adopt/plan/generator) | 在 Azure DevOps 產生器中，我們建立了一些範本，可讓您用來協助簡化您的專案。 已針對 [WVD](https://azuredevopsdemogenerator.azurewebsites.net/?name=wvdmigration)、 [伺服器遷移](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)、 [SQL 遷移](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 和 [AKS 部署](https://azuredevopsdemogenerator.azurewebsites.net/?name=cafaks)建立範本。
+
+
+## <a name="innovate"></a>創新
+
+| 資源 | 描述 |
+|----------|-------------|
+| [部署範本](https://aka.ms/adopt/plan/generator) | [知識挖掘](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)範本為您提供結構化的方法，以探索結構化和非結構化資料中包含的潛在見解。 .
+
 
 ## <a name="manage"></a>管理
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: df9df8cdc1dec1b9388e01c2d82d3f4ec54bf935
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 80fa19f514e425bf11fee61a6f245290d49bb3d3
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019548"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174466"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -71,7 +71,7 @@ ms.locfileid: "97019548"
 - 建立最低許可權的許可權模型，其中使用者預設沒有任何許可權。
 - 判斷組織中誰擁有每個工作負載和帳戶，以及誰將需要存取以維護或修改這些資源。 定義符合這些需求的雲端角色和職責，並將這些角色作為存取控制的基礎。
 - 定義資源間的相依性。
-- 執行自動化的資源調整，以符合計畫階段中所定義的需求。
+- 執行自動化的資源調整，以符合規劃階段期間所定義的需求。
 - 執行存取性能以測量收到的服務品質。
 - 考慮使用設定和資源建立規則來部署 [Azure 原則](/azure/governance/policy/overview) ，以管理 SLA 強制執行。
 
@@ -124,7 +124,7 @@ ms.locfileid: "97019548"
 - 評估記錄和監視工具，以判斷您的內部部署、雲端閘道或混合式解決方案是否需要調整。
 - 針對業務單位和地理位置分散的群組，請判斷您的組織是否應考慮使用其他雲端管理功能（例如 [Azure 管理群組](/azure/governance/management-groups) ）來更妥善地套用集中式原則，並符合 SLA 需求。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 既然您已了解雲端資源治理的概念，請繼續深入了解在 Azure 中[如何管理資源存取權](./resource-access-management.md)，以準備學習如何設計[簡單工作負載](./governance-simple-workload.md)和[多個小組](./governance-multiple-teams.md)的治理模型。
 

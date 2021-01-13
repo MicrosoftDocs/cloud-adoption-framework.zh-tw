@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 9ffb9d920296912fbfa68f0444eaa24b4976ccdd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f29396b2ac53f1619f8bfe69feccaf0fe27a430c
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024461"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175095"
 ---
 # <a name="review-rationalization-decisions"></a>檢閱合理化決策
 
 在初始策略和規劃階段期間，我們建議您將 [增量合理化](../digital-estate/rationalize.md#incremental-rationalization) 方法套用到數位資產。 但這種方法會將一些假設內嵌到所產生的決策中。 我們建議雲端策略小組和雲端採用小組，以較輕量的擴充工作負載檔來審視這些決策。 這項評論也是在未來的州決策中參與商務專案關係人和主管贊助商的好時機。
 
 > [!IMPORTANT]
-> 在遷移的評估階段，將會進行合理化決策的進一步驗證。 這項驗證著重于企業對合理化的檢查，以適當地調整資源。
+> 在遷移的評估階段，會進行合理化決策的進一步驗證。 這項驗證著重于企業對合理化的檢查，以適當地調整資源。
 
 若要驗證合理化決策，請使用下列問題來促進與業務的交談。 這些問題會依可能的合理化對齊來分組。
 
@@ -67,7 +67,7 @@ ms.locfileid: "97024461"
 
 針對具有多個不同專案的大型、複雜採用方案，請考慮更新反復專案路徑。 變更區域路徑，只會讓指派給該區域路徑的小組看到工作負載。 這項變更可減少可見工作的數目，讓雲端採用小組更輕鬆地工作。 但是，它會增加專案管理程式的複雜性。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 [建立反覆運算和發行計畫](./iteration-paths.md) 以開始規劃工作。
 

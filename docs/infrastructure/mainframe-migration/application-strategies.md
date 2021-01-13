@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 3f3b9f4ab6c35b62a35120e4fcc9ae9f8352253a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4d36ef28177eaae36a58b81498c1bbbd6bdb8aab
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018885"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174483"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->

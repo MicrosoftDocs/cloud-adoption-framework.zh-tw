@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: dc365b6498c94656fbda65d2693c724c5520f9b8
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: d9505b5b5d60793f0293cbaa56f115e5c685adfa
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712258"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174194"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>雲端監視的技能就緒
 
-在遷移旅程的計畫階段中，目標是要開發引導執行所需的計畫。 這些方案也必須包含如何在將這些工作負載轉換或發行到生產環境之前，以及之後才進行操作。 商務專案關係人預期會有寶貴的服務，並預期他們不會中斷。 IT 人員成員瞭解他們需要學習新的技能並進行調整，讓他們準備好安心地使用整合的 Azure 服務，以有效地監視 Azure 和混合式環境中的資源。
+在規劃您的遷移旅程時，目標是開發引導執行所需的計畫。 這些方案也必須包含如何在將這些工作負載轉換或發行到生產環境之前，以及之後才進行操作。 商務專案關係人預期會有寶貴的服務，並預期他們不會中斷。 IT 人員成員瞭解他們需要學習新的技能並進行調整，讓他們準備好安心地使用整合的 Azure 服務，以有效地監視 Azure 和混合式環境中的資源。
 
 您可以使用下列學習路徑來加速開發必要的技能。 它們是從學習基本概念開始，然後分成三個主要主體網域：基礎結構、應用程式和資料分析。
 
@@ -80,7 +80,7 @@ ms.locfileid: "97712258"
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
-除了這些用於開發技能的初始選項之外，還有各種學習選項可供使用。
+這些初始選項以外的各種學習選項都可用於開發技能。
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 
@@ -92,19 +92,19 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
-混合式雲端環境會將未定義的角色、責任和活動中斷。 組織必須移至現代化的服務管理實務（包括 agile 和 DevOps 方法），以更有效率且有效率的方式滿足現今企業的轉換和優化需求。
+混合式雲端環境會將未定義的角色、責任和活動中斷。 組織必須移至現代化實務來管理服務（包括 agile 和 DevOps 方法），以簡化且有效率的方式，更符合現今企業的轉換和優化需求。
 
-在遷移至雲端監視平臺的過程中，負責管理企業監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 _開發_ 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供 GitHub 認可和提取要求至工作專案之間的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
+在遷移至雲端監視平臺的過程中，負責管理企業監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 _開發_ 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供從 GitHub 中的認可和提取要求到工作專案的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure Boards 來規劃和追蹤您的工作。
 
 若要深入瞭解，請參閱下列各項：
 
 - [Azure DevOps 入門](/learn/modules/get-started-with-devops)。
 
-- [了解 DevOps Dojo 白帶基礎](/learn/paths/devops-dojo-white-belt-foundation)
+- [深入瞭解 DevOps Dojo 的基礎](/learn/paths/devops-dojo-white-belt-foundation)。
 
-- [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices)
+- [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices)。
 
-- [使用 Azure DevOps 自動化您的部署](/learn/paths/automate-deployments-azure-devops)
+- [使用 Azure DevOps 將您的部署自動化](/learn/paths/automate-deployments-azure-devops)。
 
 ## <a name="other-considerations"></a>其他考量
 

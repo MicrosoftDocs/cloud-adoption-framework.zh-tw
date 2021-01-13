@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: d01e7333d6e5e85576287248073562fc2f2b181f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9e1483139aa0ff7bbcee8fbde897cfbe2e9e9b2a
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012850"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175061"
 ---
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>全球市場決策會如何影響轉型旅程？
 
@@ -39,9 +39,9 @@ ms.locfileid: "97012850"
 
 瞭解外部使用者的使用模式（例如客戶或合作夥伴）也同樣重要。 就像員工使用模式一樣，外部使用者使用模式可能會對雲端部署的效能產生負面影響。 當大型或任務關鍵性的使用者群位於外部國家/地區時，在整體解決方案設計中包含全域部署策略可能是明智的做法。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-瞭解雲端採用旅程 [策略階段期間所需的技能](./suggested-skills.md) 。
+瞭解雲端採用旅程 [的 strategizing 階段期間所需的技能](./suggested-skills.md) 。
 
 > [!div class="nextstepaction"]
-> [策略階段期間所需的技能](./suggested-skills.md)
+> [在 strategizing 階段期間所需的技能](./suggested-skills.md)

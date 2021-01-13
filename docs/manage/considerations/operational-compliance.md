@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 8209ade18c3396189b9617aeccece3970e470091
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6e7b37b5ff6b299027bc89ab18974a10e5dc4083
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016250"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174245"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的作業合規性
 
@@ -35,7 +35,7 @@ ms.locfileid: "97016250"
 
 ### <a name="environment-consistency"></a>環境一致性
 
-建立一致的環境（或登陸區域）是操作合規性的下一個最重要步驟。 當登陸區域一致，並透過自動化工具強制執行時，診斷和解決操作問題會變得更複雜。 如需更深入的環境一致性指引，請參閱雲端採用生命週期的 [準備階段](../../ready/index.md) 。 該階段中的練習有助於建立可重複的程式，以定義和成熟以程式碼為基礎的環境開發的一致程式碼優先方法。
+建立一致的環境（或登陸區域）是操作合規性的下一個最重要步驟。 當登陸區域一致，並透過自動化工具強制執行時，診斷和解決操作問題會變得更複雜。 如需更深入的環境一致性指引，請參閱雲端採用生命週期的 [準備階段](../../ready/index.md) 。 此階段中的練習有助於建立可重複的程式，以定義和成熟一致的程式碼優先方法，以開發雲端式環境。
 
 ### <a name="resource-configuration-consistency"></a>資源設定一致性
 
@@ -59,7 +59,7 @@ ms.locfileid: "97016250"
 
 許多人認為有足夠的問題可以自動解決，應該透過解決技術債務來解決問題。 當您審慎解決長期解析時，它應該是預設選項。 不過，某些商務案例會讓您難以證明技術債務的解決問題。 當這類解決方案無法調整時，但補救是一項常見且昂貴的負擔，而自動補救是下一個最佳的解決方案。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 [保護和](./protect.md) 復原是雲端管理基準中的下一個要考慮的領域。
 

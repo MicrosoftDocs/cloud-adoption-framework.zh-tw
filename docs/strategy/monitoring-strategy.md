@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 9391f3188ef609df1b5063fd5f5de48b60eb7eb3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a0b0df8710f3c82d02ff93bd2989229ad58b95d6
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012680"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174976"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "97012680"
 
 ## <a name="where-to-start"></a>從哪裡開始？
 
-若要簡化您的雲端旅程，請使用雲端採用架構的 [策略階段](./index.md) 和 [計畫階段](../plan/index.md) 。 監視會影響動機、業務成果和計畫。 在策略和規劃階段、您的計畫和專案中包含監視。 例如，請檢查第一個採用專案如何在 Azure 中建立早期的作業管理。 想像一下雲端作業模型的外觀，包括監視的角色。 監視是以服務為基礎的方法來提供服務，這是一項作業函式，其中監視是一項諮詢服務，以及商務和 IT 取用者的專業知識。
+若要簡化您的雲端旅程，請使用雲端採用架構的 [strategizing](./index.md) 和 [規劃](../plan/index.md) 階段。 監視會影響動機、業務成果和計畫。 包含在 strategizing 和規劃階段期間的監視、您的計畫和專案。 例如，請檢查第一個採用專案如何在 Azure 中建立早期的作業管理。 想像一下雲端作業模型的外觀，包括監視的角色。 監視是以服務為基礎的方法來提供服務，這是一項作業函式，其中監視是一項諮詢服務，以及商務和 IT 取用者的專業知識。
 
 以下是強烈影響音效監視策略的重要區域：
 
@@ -209,7 +209,7 @@ Azure 監視器會收集、編制索引及分析即時電腦和資源產生的�
 
 - **學習和改進：** 參與學習週期的提供者和取用者意指透過見解、報表和活頁簿取用實際的監視資料，以持續改善目標服務，並進行監視設定的微調和優化。 變更也很重要，因為監視設定會隨著 (服務的變更（例如新增、修改或淘汰的) ）一起變更，並繼續符合實際的服務保證。
 
-為了協助您將監視計畫對齊策略，請使用下表來分類更詳細的不同監視案例。 這適用于稍早在計畫階段中引進的五個合理化 Rs。 如果您是使用 System Center Operations Manager，就可以使用混合式和雲端選項來合理化您的投資。
+為了協助您將監視計畫對齊策略，請使用下表來分類更詳細的不同監視案例。 這適用于在規劃階段之前引進的五個合理化 Rs。 如果您是使用 System Center Operations Manager，就可以使用混合式和雲端選項來合理化您的投資。
 
 | 類型 | 監視目標 | 範例目標 |
 |-----|---------------------|------------------|

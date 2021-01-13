@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 5c20b16ecad33f2a20212342a5da04fab92c9023
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3a998ee369aa5c21f2dc64938788be75b20c11e7
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012833"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175044"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "97012833"
 
 ## <a name="steps-to-align-the-partnership-strategy"></a>協調合作策略的步驟
 
-在採用的策略階段，開始調整您的合作關係策略相當重要。 下列步驟可協助您在採用生命週期的後續階段中移除障礙。
+在採用 strategizing 階段期間，請務必開始調整您的合作關係策略。 下列步驟可協助您在採用生命週期的後續階段中移除障礙。
 
 1. 開始瞭解支援需求。
 1. 請考慮符合您文化和需求的合作關係選項。
@@ -48,7 +48,7 @@ ms.locfileid: "97012833"
 
 少數公司具有支援策略、規劃、就緒、採用、治理和管理所需的技能多樣性。 合作夥伴和其他支援模型通常需要填寫小組技能和責任的差距。
 
-不同的合作選項可以協助開發所需的技巧、增強人員配置需求，或完全卸載特定的流程。
+不同的合作選項可協助開發所需的技能、增強人員配置需求，或完全卸載特定的程式。
 
 ## <a name="partnership-options"></a>合作關係選項
 
@@ -96,7 +96,7 @@ Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證�
 
 ## <a name="shortlist-of-partner-options"></a>合作夥伴選項名單
 
-在策略開發期間，它很難定義特定的合作關係需求。 在雲端採用方案和技能方案的開發期間，這些需求將會成為焦點。
+在策略開發期間，很難定義特定的合作關係需求。 在雲端採用方案和技能方案的開發期間，這些需求將會成為焦點。
 
 但是，根據您的小組文化和成熟度，您可能會決定更符合您預期需求的合作關係選項。
 
@@ -110,7 +110,7 @@ Azure 專家管理的服務提供者 (MSP) 經過協力廠商 audit，以驗證�
 
 如果您的公司需要將廠商新增至核准的廠商清單，尤其如此。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 當您的合作夥伴對齊策略開始時，您可能會想要先考慮您的 [安全性策略](./define-security-strategy.md) 。
 

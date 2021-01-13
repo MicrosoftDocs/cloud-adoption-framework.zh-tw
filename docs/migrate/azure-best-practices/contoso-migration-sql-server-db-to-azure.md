@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: b95cbdd7dda23366eccd66c8f1ac7265da225e4a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 22cc5f779cbdbac94ac7de0e661b11d40f9c24de
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013819"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174126"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -142,7 +142,7 @@ Contoso 使用 DMA 來執行評量，然後將資料直接上傳至 Azure Migrat
 當 DMA 無法在資料來源上執行時，會遵循下列指導方針來進行資料庫移轉。
 
 > [!NOTE]
-> 在評估階段，Contoso 探索了各種開放原始碼資料庫。 它們分別是 [將開放原始碼資料庫移轉至 Azure](./contoso-migration-oss-db-to-azure.md) ，以進行遷移規劃。
+> Contoso 在評量階段期間發現了各種開放原始碼資料庫。 它們分別是 [將開放原始碼資料庫移轉至 Azure](./contoso-migration-oss-db-to-azure.md) ，以進行遷移規劃。
 
 <!-- docutune:casing "custom .NET" -->
 
@@ -214,5 +214,5 @@ Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期�
 ## <a name="conclusion"></a>結論
 
 在本文中，Contoso 已評估、規劃並將其 Microsoft SQL Server 工作負載遷移至 Azure。
-
-已開發 Azure DevOps 專案，可讓您在 SQL 遷移旅程圖中運用。 專案符合雲端採用架構。 專案會逐步引導您完成所需的重要決策，請 [按一下這裡](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 前往 Azure DevOps 專案。
+ 
+您已開發 Azure DevOps 專案，以供您在 SQL 遷移旅程圖中進行研究，並符合雲端採用架構。 此專案將引導您完成所需的重要決策。 [選取此連結](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) 以流覽至 Azure DevOps 專案。

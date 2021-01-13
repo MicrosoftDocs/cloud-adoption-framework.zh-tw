@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: dc0f644439fad82558dfe22501ff700f54709c46
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3d0a1fb138d526f1f666ae8ac2545e67f967bf61
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018409"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174313"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>打造創新商業價值的共識
 
@@ -48,7 +48,7 @@ ms.locfileid: "97018409"
 
 ## <a name="address-the-big-picture-first"></a>先處理最大的圖片
 
-雲端採用架構會遵循四個階段的指定路徑：策略、規劃、就緒和採用。 雲端創新適合在此程式的採用階段內。 解決 [問題](#qualifying-questions) 三和四個考慮結果與動機的答案。 當這些答案不一致時，表示您的組織在雲端採用生命週期的策略階段中遺漏了某個東西。 下列幾個案例可能會在播放中。
+雲端採用架構會遵循四個階段的指定路徑： strategizing、規劃、準備和採用。 雲端創新適合在此程式的採用階段內。 解決 [問題](#qualifying-questions) 三和四個考慮結果與動機的答案。 當這些答案不一致時，表示您的組織在雲端採用生命週期的 strategizing 階段中遺漏了某個東西。 下列幾個案例可能會在播放中。
 
 - **對齊機會：** 當商務專案關係人無法同意與雲端創新工作相關的動機和業務成果時，就會有較大挑戰的徵兆。 [策略方法](../strategy/index.md)中的練習有助於開發商務專案關係人之間的對齊。 此外，強烈建議讓相同的專案關係人形成符合一般情況的 [雲端策略小組](../organize/cloud-strategy.md) 。
 
@@ -74,7 +74,7 @@ ms.locfileid: "97018409"
 
 您可以遵循本文每一節中的方法和待處理專案管理工具，協助建立解決方案的對齊方式。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 當您調整商務價值主張並傳達它之後，您就可以開始建立解決方案。
 

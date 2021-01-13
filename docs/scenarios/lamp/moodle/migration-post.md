@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: d36b6cd1fae07156c604c9ebf560ecd2b4873d35
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 18fca8720f3391e5c1ea595552c839efe5cc6b29
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123437"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175146"
 ---
+<!--docutune:casing SCP WinSCP SCORM -->
+
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>如何在 Moodle 遷移之後追蹤
 
 ## <a name="post-migration-tasks"></a>移轉後工作
@@ -26,7 +28,7 @@ ms.locfileid: "98123437"
 - 正在更新憑證。
 - 正在更新憑證位置。
 - 正在更新 HTML 本機複本。
-- 重新開機 PHP 和 nginx 伺服器。
+- 重新開機 PHP 和 NGINX 伺服器。
 - 將 DNS 名稱對應至 Azure Load Balancer IP 位址。
 
 ## <a name="controller-virtual-machine-scale-set"></a>控制器虛擬機器擴展集
@@ -50,11 +52,11 @@ ms.locfileid: "98123437"
 
 2. 尋找 `access_log` 並 `error_log` 更新記錄檔路徑。
 
-3. 按 CTRL + O 儲存變更，然後按 CTRL + X 關閉檔案。
+3. 按 Ctrl + O 儲存變更，然後按 Ctrl + X 關閉檔案。
 
 ### <a name="restart-servers"></a>重新開機伺服器
 
-輸入下列命令以重新開機 nginx 和 php php-fpm 伺服器：
+輸入下列命令以重新開機 `nginx` 和 `php-fpm` 伺服器：
 
 ```bash
 sudo systemctl restart nginx
@@ -69,7 +71,7 @@ sudo systemctl restart php<php version>-fpm
 
 1. 登入控制器虛擬機器。 您可以在資料夾中找到 Moodle 應用程式的憑證 `/moodle/certs` 。
 
-1. 將和檔案複製 `.crt` `.key` 到 `/moodle/certs/` 。 分別將檔案名變更為 `nginx.crt` 和 `nginx.key` ，讓設定的 nginx 伺服器能夠辨識這些名稱。 如果您的本機環境支援 SCP 公用程式或工具（例如 WinSCP），您可以使用這些工具將這些檔案複製到控制器虛擬機器。 否則，請使用下列命令：
+1. 將和檔案複製 `.crt` `.key` 到 `/moodle/certs/` 。 分別將檔案名變更為 `nginx.crt` 和 `nginx.key` ，讓設定的 NGINX 伺服器能夠辨識這些名稱。 如果您的本機環境支援 SCP 公用程式或工具（例如 WinSCP），您可以使用這些工具將這些檔案複製到控制器虛擬機器。 否則，請使用下列命令：
 
    ```bash
    cd /<path to certs location>
@@ -112,7 +114,7 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-    1. 按 CTRL + O 儲存您的變更，然後按 CTRL + X 關閉檔案。
+   1. 按 Ctrl + O 儲存您的變更，然後按 Ctrl + X 關閉檔案。
 
 ### <a name="update-local-html-copy"></a>更新本機 HTML 複製
 
@@ -139,7 +141,6 @@ sudo systemctl restart php<php version>-fpm
 請在主機服務提供者層級遵循下列步驟，將 DNS 名稱對應至 Azure Load Balancer IP：
 
 1. 在控制器虛擬機器中輸入下列命令，以關閉 Moodle 網站上的維護模式：
-
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable
@@ -190,7 +191,7 @@ sudo systemctl restart php<php version>-fpm
 
 此錯誤有幾個可能的原因： *500：內部伺服器錯誤*。 一開始請先檢查您的 web 伺服器錯誤記錄檔，其中應該包含詳細說明。 以下是一些可能性：
 
-- 或檔案中有語法錯誤 `.htaccess` `httpd.conf` 。 指示詞的正確語法會因您所使用的檔案而有所不同。 使用下列命令來測試 nginx 檔中的設定錯誤：
+- 或檔案中有語法錯誤 `.htaccess` `httpd.conf` 。 指示詞的正確語法會因您所使用的檔案而有所不同。 使用下列命令來測試 NGINX 檔中的設定錯誤：
 
   ```bash
   `nginx -t`
@@ -244,9 +245,9 @@ memory_limit 0
 
 有時您無法登入，或看到下列其中一則訊息：
 
-- *您的會話已超時。請重新登入。*
+- `Your session has timed out. Please log in again.`
 
-- *偵測到會影響您登入會話的伺服器錯誤。請重新登入，或重新開機瀏覽器。*
+- `A server error that affects your login session was detected. Please log in again or restart your browser.`
 
 您的驗證方法可能有問題，特別是當您使用 LDAP 之類的外部方法來驗證使用者時。 嘗試登入另一個手動帳戶，例如您的主要系統管理員帳戶。 如果您無法登入，請檢查您的驗證。 如果您可以登入其他帳戶，以下是 Moodle 登入問題的可能原因和解決方案：
 
@@ -256,7 +257,7 @@ memory_limit 0
 
 ### <a name="fatal-errors"></a>嚴重錯誤
 
-如果您看到此錯誤，Moodle 和 moodledata 許可權可能不正確：*嚴重錯誤： $CFG->dataroot 無法寫入。系統管理員必須修正目錄許可權！* 正在結束。
+如果您看到此錯誤，Moodle 和 moodledata 許可權可能會不正確： `fatal error: $cfg->dataroot is not writable. The admin has to fix directory permissions! Exiting.`
 
 檢查這些許可權是否 `www-data:www-data` 只有。 如果許可權位於不同層級，請使用此命令變更群組和擁有權許可權：
 
@@ -290,7 +291,7 @@ sudo chown -R /moodle/moodledata
 - 檢查 web 伺服器使用者是否在目錄中具有寫入權限 `moodledata` 。
 - 手動刪除檔案 `maintenance.html` 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - [適用於 MySQL 的 Azure 資料庫文件](/azure/mysql/)
 - [什麼是虛擬機器擴展集？](/azure/virtual-machine-scale-sets/overview)

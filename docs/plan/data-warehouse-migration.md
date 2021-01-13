@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 7992b8aab26b5d00d7f9586b172f5ad0cb0f20e6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 92e6baf8a0807588390f51c69ad31c4df561aa1e
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024512"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175078"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -81,7 +81,7 @@ ms.locfileid: "97024512"
 
 準備遷移的另一個部分是需要完整評估現有的資料倉儲，以充分瞭解架構、資料存放區、架構、商務邏輯、資料流程、使用的 DBMS 功能、倉儲作業和相依性。 更深入瞭解更好。 深入瞭解系統的運作方式，有助於與所有基底進行通訊和涵蓋。
 
-評量的目的不只是為了確保對整個遷移團隊的目前設定有詳細的瞭解，還可以瞭解目前設定中的優點和缺點。 因此，評估您目前的資料倉儲的結果，可能會影響您的遷移策略（以增益和轉移為範圍）。 例如，如果評量的結果是您的資料倉儲在生命週期結束，則在 Azure Synapse 上將資料移轉至新設計的資料倉儲，以及隨即轉移方法，會有很大的策略。
+評量的目的不只是為了確保對整個遷移團隊的目前設定有詳細的瞭解，還可以瞭解目前設定中的優點和缺點。 因此，評估您目前的資料倉儲的結果，可能會影響您的遷移策略（以增益和轉移為範圍）。 例如，如果評量的結果是您的資料倉儲在生命週期結束，則在 Azure Synapse 上將資料移轉至新設計的資料倉儲，以及隨即轉移的方法，將會很清楚。
 
 ### <a name="on-premises-preparation-for-data-migration"></a>資料移轉的內部部署準備工作
 
@@ -184,7 +184,7 @@ ms.locfileid: "97024512"
 
 您應該避免這些複雜性，並透過原始檔控制存放庫從共同的位置控制這些複雜性，以管理從開發到測試和生產環境的變更。 遷移執行牽涉到需要在內部部署、網路和 Azure 中執行的工作。 因為 Azure Synapse 是目標環境，所以控制 Azure 的遷移執行可簡化管理。 使用 Azure Data Factory 建立遷移控制管線，以控制內部部署和 Azure 上的執行。 這會引進自動化並將錯誤降至最低。 Data Factory 成為「遷移協調流程」工具，而不只是「企業資料整合」工具。
 
-從 Azure 上執行的 Microsoft 合作夥伴控制可供使用的其他選項包括資料倉儲自動化工具，以嘗試將遷移自動化。 例如 WhereScape 和 Attunity 等廠商。 大部分的自動化工具都是以轉移方法為目標。 在此情況下，這類工具可能不支援某些作業，例如預存程式。 這些產品和數個其他產品會在協力廠商工具專屬的個別指南中詳細說明，以協助您遷移至 Azure Synapse。
+從 Azure 上執行的 Microsoft 合作夥伴控制可供使用的其他選項包括資料倉儲自動化工具，以嘗試將遷移自動化。 例如 WhereScape 和 Attunity 等廠商。 大部分的自動化工具都是以轉移的方法為目標。 在此情況下，這類工具可能不支援某些作業，例如預存程式。 這些產品和數個其他產品會在協力廠商工具專屬的個別指南中詳細說明，以協助您遷移至 Azure Synapse。
 
 ### <a name="migration-testing"></a>遷移測試
 
@@ -234,6 +234,6 @@ ms.locfileid: "97024512"
 - 先考慮遷移資料超市的策略，再接著將資料倉儲作為資料超市來源的資料倉儲。 這是因為它可進行累加式遷移，讓它更容易管理，而且可以根據業務需求來排定遷移的優先順序。
 - 在遷移之前，考慮使用資料虛擬化來簡化您目前的資料倉儲架構，例如，將資料超市取代為虛擬資料超市，讓您可以消除資料超市的實體資料存放區和 ETL 作業，而不會在遷移前遺失任何功能。 這樣做會減少要遷移的資料存放區數量、減少資料複本、降低擁有權的總成本，以及提升靈活性。 這需要在遷移您的資料倉儲之前，先從實體切換至虛擬資料超市。 在許多方面，您可以在遷移前考慮這項資料倉儲現代化步驟。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如需有關資料倉儲遷移的詳細資訊，請從 Informatica 參加 [Azure 上的虛擬雲端資料倉儲現代化研討會](https://now.informatica.com/Microsoft_CDW_Workshops.html) 。

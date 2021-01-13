@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 2595aa2cd9ee5865934e27946092e8cf22047a0f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1a493c8624d1cbcd4fbf9d4c9a4a6fb559b5d4c1
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025940"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174806"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "97025940"
 
 ## <a name="general-scope-expansion"></a>一般範圍擴充
 
-此範圍擴充所需的大部分工作都是在遷移的必要條件、評估和遷移階段期間進行。
+此範圍擴充所需的大部分工作都是在遷移的先決條件規劃、評估和遷移階段期間進行。
 
 ## <a name="suggested-prerequisites"></a>建議的必要條件
 
@@ -82,7 +82,7 @@ ms.locfileid: "97025940"
 
 安全性和管理活動不太可能受到範圍內的這項變更所影響。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 返回檢查清單，以確保您的遷移方法完全一致。
 
