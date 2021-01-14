@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal, seo-azure-migrate
-ms.openlocfilehash: 6909b8a1aa3d5eeb8b2f8595c81e01b2960b13ff
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fa3fde433d7506d5a5bb88e5befaaa252d09f22a
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025345"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174738"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端移轉
 
@@ -38,7 +38,7 @@ ms.locfileid: "97025345"
 
 ## <a name="migration-effort"></a>移轉工作
 
-移轉每個工作負載所需的工作通常分成三種類型的工作 (或階段)：評估工作負載、部署工作負載和發行版本工作負載。 這一節的「雲端採用架構」內容會教導讀者如何讓將工作負載移轉至生產環境所需的每個階段發揮最大效用。
+遷移工作負載所需的動作通常分成三種類型的工作 (或階段)：評估工作負載、部署工作負載和發行版本工作負載。 這一節的「雲端採用架構」內容會教導讀者如何讓將工作負載移轉至生產環境所需的每個階段發揮最大效用。
 
 在兩個星期的標準反覆項目中，經驗豐富的移轉小組可對 2-5 中/低複雜度的工作負載完成此程序。 更複雜的工作負載 (例如 SAP) 可能需要數個兩周的反覆項目，才能對單一工作負載全數完成三個移轉工作階段。 體驗和複雜度對時間軸和移轉速度會有很大的影響。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: ce8eab394356b594349268c0717d8daf38043faf
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a4ce8d96d650a971c90bcaa9b85a14502d094b25
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024903"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174024"
 ---
 # <a name="prerequisites-for-migration"></a>進行移轉的必要條件
 
@@ -45,7 +45,7 @@ ms.locfileid: "97024903"
 
 ## <a name="accountability-during-prerequisites"></a>必要條件階段期間的責任
 
-有兩個小組必須負責必要條件階段期間的整備程度：
+有兩個小組必須負責完成必要條件時的整備程度：
 
 - **雲端策略小組：** 此小組需負責識別初始的二或三個工作負載並設定其優先順序，以作為移轉候選項目。
 - **雲端採用小組：** 此小組需負責驗證技術環境的整備程度，以及移轉目標工作負載的可行性。
