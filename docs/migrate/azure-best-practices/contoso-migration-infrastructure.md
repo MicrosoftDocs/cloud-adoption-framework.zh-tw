@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 6729ff48934cd4e0471ff0ade338b3a10f94e6c4
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 3d65538ed9fa3c45563bb99d85c93ade1e11f1a4
+ms.sourcegitcommit: 30837e99289338b0cc0f9efb2a5e07aca052e2e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712734"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560743"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -38,7 +38,7 @@ Contoso 必須先將 Azure 基礎結構準備就緒，才能遷移至 Azure。 �
 > - **步驟5：安全性。** 它會如何保護混合式部署的安全？
 > - **步驟6：管理。** 它會如何讓部署符合安全性和治理需求？
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 開始查看基礎結構之前，請考慮閱讀相關 Azure 功能的一些背景資訊：
 
@@ -82,7 +82,7 @@ Contoso 正在 [Enterprise 合約](https://azure.microsoft.com/overview/sales-nu
 
 向 Azure 支付費用後，Contoso 必須了解如何管理 Azure 訂用帳戶。 由於 Contoso 有 EA，因此它可以建立的 Azure 訂用帳戶數目沒有任何限制。 Azure Enterprise 合約註冊會定義公司圖形和使用 Azure 服務的方式，並定義核心治理結構。
 
-在第一個步驟中，Contoso 定義了一種結構，稱為 _企業 scaffold_ 進行註冊。 Contoso 使用 [Azure enterprise scaffold 指引](/azure/cloud-adoption-framework/reference/azure-scaffold) 來協助您瞭解及設計 scaffold。
+在第一個步驟中，Contoso 定義了一種結構，稱為 _企業 scaffold_ 進行註冊。 Contoso 使用 [Azure enterprise scaffold 指引](../../reference/azure-scaffold.md) 來協助您瞭解及設計 scaffold。
 
 現在，Contoso 已決定使用功能性方法來管理訂用帳戶：
 
