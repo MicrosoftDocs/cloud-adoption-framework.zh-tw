@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 9ef641892ec564e42557a0fb8ad91ff18507c722
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 752fd6a3eeb803c7767574b2f8502dd869520a39
+ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713330"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571952"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -52,7 +52,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 
 <!-- docutune:ignore M-series -->
 
-| 案例 | 建議的 Azure 服務 | 建議服務的考量 |
+| 狀況 | 建議的 Azure 服務 | 建議服務的考量 |
 |---|---|---|
 | 我有裸機伺服器或 VM (Hyper-V 或 VMware)，並具有執行 LOB 應用程式的直接連接儲存體。 | [Azure 磁片儲存體 (premium SSD) ](/azure/virtual-machines/windows/disks-types#premium-ssd) | 針對生產服務，premium SSD 選項提供一致的低延遲，並結合高 IOPS 和輸送量。 |
 | 我有伺服器將裝載 Web 和行動裝置應用程式。 | [Azure 磁片儲存體 (標準 SSD) ](/azure/virtual-machines/windows/disks-types#standard-ssd) | 在生產環境中，標準 SSD IOPS 和輸送量的 (成本，可能會比高階 SSD) 高出 CPU 的 web 和應用程式伺服器低。 |
@@ -67,10 +67,10 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 
 ### <a name="file-and-object-storage-scenarios"></a>檔案和物件儲存體案例
 
-| 案例 | 建議的 Azure 服務 | 建議服務的考量 |
+| 狀況 | 建議的 Azure 服務 | 建議服務的考量 |
 |---|---|---|
 | 我使用的是 Windows 檔案伺服器。 | [Azure 檔案](/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | 使用 Azure 檔案同步，您可以在雲端式 Azure 檔案共用上儲存鮮少使用的資料，同時快取您最常使用的內部部署檔案，以進行快速、本機存取。 您也可以使用多網站同步處理，讓檔案在多部伺服器之間保持同步。 如果您打算將工作負載遷移至僅限雲端的部署，Azure 檔案儲存體可能就已足夠。 |
-| 我有企業 NAS (，例如 Azure NetApp Files 或 Dell-EMC Isilon) 。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure 檔案儲存體 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) | 如果您有內部部署的 NetApp，請考慮使用 Azure NetApp Files 將您的部署遷移至 Azure。 如果您是使用或遷移至 Windows 或 Linux 伺服器，或有基本的檔案共用需求，請考慮使用 Azure 檔案儲存體。 若要繼續進行內部部署存取，請使用 Azure 檔案同步透過雲端階層處理機制，將 Azure 檔案共用與內部部署檔案共用同步。 |
+| 我有企業 NAS (，例如 NetApp 或 Dell-EMC Isilon) 。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure 檔案儲存體 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) | 如果您有內部部署的 NetApp，請考慮使用 Azure NetApp Files 將您的部署遷移至 Azure。 如果您是使用或遷移至 Windows 或 Linux 伺服器，或有基本的檔案共用需求，請考慮使用 Azure 檔案儲存體。 若要繼續進行內部部署存取，請使用 Azure 檔案同步透過雲端階層處理機制，將 Azure 檔案共用與內部部署檔案共用同步。 |
 | 我有一個檔案共用 (SMB 或 NFS)。 | [Azure 檔案儲存體 (standard 或 premium) ](/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | 高階與標準 Azure 檔案儲存體層的選擇取決於 IOPS、輸送量和您的延遲一致性需求。 如果您有內部部署的 NetApp，請考量使用 Azure NetApp Files。 如果您需要將存取控制清單 (ACL) 和時間戳記遷移至雲端，Azure 檔案同步可以將所有這些設定帶入您的 Azure 檔案共用，作為便利的移轉路徑。 |
 | 我有適用於數 PB 資料的內部部署物件儲存體系統 (例如 Dell-EMC ECS)。 | [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體提供進階、經常性存取、非經常性存取和封存層，以符合您的工作負載效能和成本需求。 |
 | 我有一個 dfsr 部署或另一個處理分公司的方式。 | [Azure 檔案](/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步提供多網站同步處理，讓檔案在雲端中的多部伺服器和原生 Azure 檔案共用之間保持同步。 使用雲端階層處理，移至內部部署的固定儲存體使用量。 雲端階層處理會將您的伺服器轉換成相關檔案的快取，同時在 Azure 檔案共用中調整幾乎不存取的資料。 |
@@ -83,7 +83,7 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 
 ### <a name="plan-based-on-data-workloads"></a>根據資料工作負載進行規劃
 
-| 案例 | 建議的 Azure 服務 | 建議服務的考量 |
+| 狀況 | 建議的 Azure 服務 | 建議服務的考量 |
 |---|---|---|
 | 我想要開發新的雲端原生應用程式，其需要保存非結構化資料。 | [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction) | |
 | 我需要將資料從內部部署 NetApp 執行個體遷移至 Azure。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | |

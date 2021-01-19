@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: b20ec4bc4cf6d1c5fde40e0bf9f83be150697fbb
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2f889349e9ae296a416bfb4956dfd4810121576c
+ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026127"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571918"
 ---
 # <a name="define-your-tagging-strategy"></a>定義您的標記策略
 
@@ -41,16 +41,16 @@ ms.locfileid: "97026127"
 | 標記名稱 | 描述 | 索引鍵和範例值 |
 |--|--|--|
 | **應用程式名稱** | 如果工作負載是在多個應用程式或服務之間進行細分，則會增加資料細微性。 | _ApplicationName_ <br><br> <li> `IssueTrackingSystem` |
-| **核准者名稱** | 負責核准此資源相關成本的人員。 | _人員_ <br><br> <li> `chris@contoso.com` |
+| **核准者名稱** | 負責核准此資源相關成本的人員。 | _核准者_ <br><br> <li> `chris@contoso.com` |
 | **需要的/核准的預算** | 配置給此應用程式、服務或工作負載的金額。 | _BudgetAmount_ <br><br> <li> `$200,000` |
 | **成本中心** | 與此資源相關聯的會計成本中心。 | _CostCenter_ <br><br> <li> `55332` |
 | **災害復原** | 應用程式、工作負載或服務的業務關鍵性。 | _DR_ <br><br> <li> `Mission-critical` <li> `Critical` <li> `Essential` |
-| **專案的結束日期** | 排定淘汰應用程式、工作負載或服務的日期。 | _日期_ <br><br> <li> `10/15/2023` |
+| **專案的結束日期** | 排定淘汰應用程式、工作負載或服務的日期。 | _日期_ <br><br> <li> `2023-10-15` |
 | **環境** | 應用程式、工作負載或服務的部署環境。 | _Env_ <br><br> <li> `Prod` <li> `Dev` <li> `QA` <li> `Stage` <li> `Test` |
 | **擁有者名稱** | 應用程式、工作負載或服務的擁有者。 | _擁有者_ <br><br> <li> `jane@contoso.com` |
 | **要求者名稱** | 要求建立此應用程式的使用者。 | _要求者_ <br><br> <li> `john@contoso.com` |
 | **服務類別** | 應用程式、工作負載或服務的服務等級協定層級。 | _ServiceClass_ <br><br> <li> `Dev` <li> `Bronze` <li> `Silver` <li> `Gold` |
-| **專案的開始日期** | 初次部署應用程式、工作負載或服務的日期。 | _起始_ <br><br> <li> `10/15/2020` |
+| **專案的開始日期** | 初次部署應用程式、工作負載或服務的日期。 | _起始_ <br><br> <li> `2020-10-15` |
 
 ## <a name="take-action"></a>採取動作
 
