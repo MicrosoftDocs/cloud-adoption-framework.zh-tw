@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 030015caea60edbd2342342e1de60058a5fa013d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d5a4f593e62772dbd45fa9aea3eebfb6360fbcf4
+ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013615"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98625713"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -25,8 +25,16 @@ ms.locfileid: "97013615"
 
 針對您要部署到登陸區域環境的每個應用程式或服務，請使用下列決策樹作為起點，以協助您判斷計算服務需求：
 
-![Azure 計算服務決策樹 ](../../_images/ready/compute-decision-tree.png)
- _圖1： azure 計算服務決策樹。_
+![Azure 計算服務決策樹的圖表。](../../_images/ready/compute-decision-tree.png)
+
+_圖1： Azure 計算服務決策樹。_
+
+定義：
+
+- 「隨即轉移」是一種將工作負載遷移至雲端，而不需要重新設計應用程式或進行程式碼變更的策略。 也稱為重新裝載。 如需詳細資訊，請參閱 Azure 移轉中心。
+- 「雲端優化」是一種將應用程式重構以利用雲端原生特性和功能來遷移至雲端的策略。
+
+此流程圖的輸出是要考慮的起點。 接下來，請執行更詳細的服務評估，以查看是否符合您的需求。
 
 > [!NOTE]
 > 在 [Azure 應用程式架構指南](/azure/architecture/guide/technology-choices/compute-decision-tree)中，深入了解如何評估每個應用程式或服務的計算選項。
@@ -50,7 +58,7 @@ ms.locfileid: "97013615"
 
 下表說明一些常見的使用案例，以及用來處理這些需求的建議計算服務：
 
-| 案例  | 計算服務 |
+| 狀況  | 計算服務 |
 | --- | --- |
 | 我需要透過選擇的設定，在幾秒內佈建 Linux 和 Windows 虛擬機器。 | [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines) |
 | 我需要透過自動調整達到高可用性，以用幾分鐘的時間建立數千部 VM。 | [虛擬機器擴展集](https://azure.microsoft.com/services/virtual-machine-scale-sets) |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 8529745bb200361247fbcff04f43e74c861379ee
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ea86e455a3fb6bc52e5a6ee359cd84ae75df7b65
+ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024223"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98625764"
 ---
 # <a name="test-driven-development-for-landing-zones-in-azure"></a>Azure 中登陸區域的測試導向開發
 
@@ -21,8 +21,9 @@ ms.locfileid: "97024223"
 
 ## <a name="azure-tools-to-support-landing-zone-tdd-cycles"></a>支援登陸區域 TDD 週期的 Azure 工具
 
-![Azure 圖1中的測試導向開發工具 ](../../_images/ready/azure-tdd-tools.png)
- _： azure 中的測試驅動開發工具。_
+![Azure 中的測試導向開發工具](../../_images/ready/azure-tdd-tools.png)
+
+_圖1： Azure 中的測試驅動開發工具。_
 
 Azure 原生治理產品和服務的工具鏈可以輕鬆地整合到測試導向開發，以建立登陸區域。 這些工具每一個都有特定用途，讓您更容易開發、測試及部署登陸區域，以配合 TDD 週期進行調整。
 
