@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 2501710a43fa86ad1cf4a8196e59e63769cb9ef8
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 923cb7542d85af87a40beb6c1429a3e47fc440b8
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025328"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174653"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "97025328"
 
 ### <a name="resize-a-virtual-machine"></a>調整虛擬機器大小
 
-Azure Migrate 會在其預先移轉評估階段中執行適當大小分析，而使用此工具遷移的虛擬機器可能已根據您的預先移轉需求進行大小調整。
+Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而使用此工具遷移的虛擬機器可能已根據您的預先移轉需求進行大小調整。
 
 不過，對於使用其他方法建立或遷移的虛擬機器，或者在移轉後虛擬機器需求需要調整的情況下，您可能會想要進一步調整虛擬機器的大小。
 

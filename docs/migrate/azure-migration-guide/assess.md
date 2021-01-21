@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 25a6564e9c52e507411fde54d02c27af8b948446
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 53eb1e6f6597e87125266ac46285dce6513e8e13
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025413"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174755"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>評估工作負載並精簡方案
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: c6bf840e7cb10051ade264738ab09c42c9213fe4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ccb8ae667235166194520abc841c4eb7e3eeab4b
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025362"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174721"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
