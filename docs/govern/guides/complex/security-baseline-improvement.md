@@ -3,17 +3,17 @@ title: 複雜的企業治理：改善安全性基準專業領域
 description: 使用適用于 Azure 的雲端採用架構，以瞭解如何新增可支援將受保護資料移至雲端的安全性控制。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 01/25/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 02f6196a73ada66a9895b894c0a810dafc43264e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e9ab8d0b28141db65dc0c45e25e630c719a9fe35
+ms.sourcegitcommit: b12b731b1cf22f9e80db108f79734bc4cf17895e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020959"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810831"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -168,7 +168,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 ## <a name="next-steps"></a>後續步驟
 
-隨著雲端採用持續並提供額外的商業價值，風險和雲端治理需求也會改變。 針對本指南中的虛構公司，下一個步驟是支援任務關鍵性工作負載。 這是需要資源一致性控制項的時間點。
+隨著雲端採用持續並提供額外的商業價值，風險和雲端治理需求也會改變。 針對本指南中的虛構公司，下一個步驟是支援任務關鍵性工作負載。 這是需要資源一致性控制項的時間點。 安全性治理敘述的重要部分，就是複習 Microsoft 為安全性打造的最佳作法。 Azure 安全性基準測試 (ASB) 提供規定的最佳作法和建議，以協助改善 Azure 上的工作負載、資料和服務的安全性。 [請參閱這裡。](https://docs.microsoft.com/azure/security/benchmarks/overview)
 
 > [!div class="nextstepaction"]
 > [改善資源一致性專業領域](./resource-consistency-improvement.md)
