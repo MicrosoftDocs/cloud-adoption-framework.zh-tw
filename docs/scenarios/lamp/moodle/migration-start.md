@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 5cf783fc9ab303cac14f647a7d9b2493f5d51801
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 6b47b937630097efa0201313447640de6ac97207
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174993"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227093"
 ---
 # <a name="moodle-manual-migration-steps"></a>Moodle 手動遷移步驟
 
@@ -21,16 +21,16 @@ ms.locfileid: "98174993"
 
 開始此程式之前，請務必完成這些文章中的所有步驟：
 
-- [如何準備進行 Moodle 遷移](migration-pre.md)
-- [Moodle 遷移架構和範本](migration-arch.md)
+- [如何準備進行 Moodle 遷移](./migration-pre.md)
+- [Moodle 遷移架構和範本](./migration-arch.md)
 
 在 Azure Resource Manager (ARM) 範本部署完成後，請登入 [Azure 入口網站](https://portal.azure.com/) ，然後移至您在部署程式中建立的資源群組。 檢查新建立之基礎結構資源的清單。 根據您用於部署的 ARM 範本，建立的資源看起來會與下圖類似。
 
-![顯示在 Moodle 遷移資源群組中建立之基礎結構資源的螢幕擷取畫面。](images/resource-creation-overview.png)
+![顯示在 Moodle 遷移資源群組中建立之基礎結構資源的螢幕擷取畫面。](./images/resource-creation-overview.png)
 
 ## <a name="copy-the-moodle-archive"></a>複製 Moodle 封存
 
-遷移程式的第一個步驟是將 Moodle 備份封存從 Azure Blob 儲存體複製到控制器虛擬機器 (VM) 以進行 Moodle 部署。 這是您在 [建立](migration-pre.md#create-an-archive)封存時所建立的相同封存。
+遷移程式的第一個步驟是將 Moodle 備份封存從 Azure Blob 儲存體複製到控制器虛擬機器 (VM) 以進行 Moodle 部署。 這是您在 [建立](./migration-pre.md#create-an-archive)封存時所建立的相同封存。
 
 ### <a name="sign-in-to-the-controller-virtual-machine"></a>登入控制器虛擬機器
 
@@ -40,13 +40,13 @@ ms.locfileid: "98174993"
 
 1. 在左側導覽中，展開 [ **SSH**]。
 
-   ![[PuTTY 設定] 頁面的螢幕擷取畫面。](images/putty-configuration.png)
+   ![[PuTTY 設定] 頁面的螢幕擷取畫面。](./images/putty-configuration.png)
 
 1. 選取 [ **驗證**]，然後尋找您用來部署 Azure 基礎結構與 ARM 範本的 SSH 金鑰檔案。
 
 1. 選取 [開啟]  。 針對 [使用者名稱]，輸入 **azureadmin**，因為它是在範本中硬式編碼。
 
-   ![顯示 SSH 驗證設定的 [PuTTY 設定] 頁面螢幕擷取畫面。](images/putty-ssh-key.png)
+   ![顯示 SSH 驗證設定的 [PuTTY 設定] 頁面螢幕擷取畫面。](./images/putty-ssh-key.png)
 
 如需 PuTTY 的詳細資訊，請參閱 [PuTTY 一般常見問題/疑難排解問題](https://documentation.help/PuTTY/faq.html)。
 
@@ -134,11 +134,11 @@ az mysql server firewall-rule create --resource-group <myresourcegroup> --server
 
 您可以在這裡新增允許的 IP 位址和設定防火牆規則。 建立規則之後，請選取 [ **儲存** ]。
 
-![適用於 MySQL 的 Azure 資料庫伺服器的 [連線安全性] 窗格螢幕擷取畫面。](images/database-connection-security.png)
+![適用於 MySQL 的 Azure 資料庫伺服器的 [連線安全性] 窗格螢幕擷取畫面。](./images/database-connection-security.png)
 
 您現在可以使用 [`mysql`](https://dev.mysql.com/doc/refman/8.0/en/mysql.html) 命令列工具或 [mysql 工作臺](https://dev.mysql.com/doc/workbench/en/)來連接至 mysql 伺服器。
 
-![[MySQL 工作臺設定新連線] 畫面的螢幕擷取畫面。](images/database-connection.png)
+![[MySQL 工作臺設定新連線] 畫面的螢幕擷取畫面。](./images/database-connection.png)
 
 若要取得連線資訊，請移至您在 Azure 入口網站中的 MySQL 伺服器的 **[總覽** ] 頁面。 使用每個欄位旁的複製圖示來複製 **伺服器名稱** 和 **伺服器管理員登入名稱**。
 
@@ -343,4 +343,4 @@ cp /etc/php/$_PHPVER/fpm/pool.d/www.conf /moodle/config/php
 
 ## <a name="next-steps"></a>下一步
 
-繼續 [設定 Moodle 控制器實例和背景工作角色節點](azure-infra-config.md) ，以進行 Moodle 遷移程式中的後續步驟。
+繼續 [設定 Moodle 控制器實例和背景工作角色節點](./azure-infra-config.md) ，以進行 Moodle 遷移程式中的後續步驟。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 677b8c4a582688599a868ae5af9b9f43d8b0cdca
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: de239a06690f4832cabdb88d277fda8f45c5b84f
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175129"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227017"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移轉資源
 
@@ -73,4 +73,4 @@ ARM 範本支援下列儲存體帳戶類型：
 
 ## <a name="next-steps"></a>下一步
 
-繼續 [Moodle 手動遷移步驟](migration-start.md) ，以進行 Moodle 遷移程式中的後續步驟。
+繼續 [Moodle 手動遷移步驟](./migration-start.md) ，以進行 Moodle 遷移程式中的後續步驟。

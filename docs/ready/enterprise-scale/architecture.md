@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 2cc997cde2a35595f980f03703e09ac3710271f3
-ms.sourcegitcommit: 4e1b3dd61686712727a2b74203646cf679940e76
+ms.openlocfilehash: 258b93dda665fe56a09e31831e5e769a4787d3ed
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069384"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227059"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -37,7 +37,7 @@ _圖1：登陸區域設計。_
 
 ## <a name="high-level-architecture"></a>高階架構
 
-企業規模的架構是由一組設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：以 AZURE 虛擬 WAN 網路拓撲為基礎的企業級架構 (在 [圖 2] 上 depictured) ，或根據以中樞和輪輻架構為基礎的傳統 Azure 網路拓撲， (如圖 3) 所示。
+企業規模的架構是由一組設計考慮和建議，在八個 [重要的設計區域](./design-guidelines.md)中定義，其中有兩個建議的網路拓撲：以 AZURE 虛擬 WAN 網路拓撲為基礎的企業級架構 (圖 2) 所示，或根據以中樞和輪輻架構為基礎的傳統 Azure 網路拓撲， (如圖 3) 所示。
 
 [![此圖顯示以 Azure 虛擬 WAN 網路拓撲為基礎的雲端採用架構企業規模登陸區域架構。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
@@ -63,9 +63,9 @@ _圖3：雲端採用架構企業規模的登陸區域架構，以傳統的 Azure
 
 ![字母 F ](./media/f.png) 、 ![ 字母 G ](./media/g.png) 、 ![ 字母 H ](./media/h.png) [商務持續性和](./business-continuity-and-disaster-recovery.md) 嚴重損壞修復和 [安全性、治理和合規性](./security-governance-and-compliance.md)。 您必須識別、描述、建立整體和登陸區域特定的原則，並將其部署到目標 Azure 平臺上，以確保公司、法規和企業營運控制項都已就緒。 最後，您應該使用原則來確保應用程式和基礎資源的相容性，而不需要任何抽象概念布建或管理功能。
 
-![字母 I ](./media/i.png) [平臺自動化和 DevOps](platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
+![字母 I ](./media/i.png) [平臺自動化和 DevOps](./platform-automation-and-devops.md)。 您必須設計、建立及部署具有穩固軟體發展生命週期實務的端對端 DevOps 體驗，以確保基礎結構即程式碼構件的安全、可重複且一致的傳遞。 您可以使用專用的整合、發行和部署管線，搭配強大的原始檔控制和追蹤功能，來開發、測試及部署這類構件。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用雲端採用架構企業規模的設計指導方針，自訂此架構的執行。
 

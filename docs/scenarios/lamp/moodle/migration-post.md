@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 18fca8720f3391e5c1ea595552c839efe5cc6b29
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 6f36af5aef4c3673b3a529b487ad3e0e7d74d310
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175146"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226924"
 ---
 <!--docutune:casing SCP WinSCP SCORM -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "98175146"
 
 ## <a name="controller-virtual-machine-scale-set"></a>控制器虛擬機器擴展集
 
-請採取下列步驟來完成您的虛擬機器擴展集設定。 您將需要使用私人 IP 位址，以 SSH 連線到您的虛擬機器擴展集實例，如 [存取虛擬機器擴展集](azure-infra-config.md#access-the-virtual-machine-scale-set)所述。
+請採取下列步驟來完成您的虛擬機器擴展集設定。 您將需要使用私人 IP 位址，以 SSH 連線到您的虛擬機器擴展集實例，如 [存取虛擬機器擴展集](./azure-infra-config.md#access-the-virtual-machine-scale-set)所述。
 
 ### <a name="update-log-paths"></a>更新記錄檔路徑
 

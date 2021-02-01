@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 1bea8e50197ade15d232cb4b371969f1ca66e7e4
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 77b04dc10f6a41f73ec5a38e2ae50558a8ec7cd4
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713261"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227000"
 ---
 <!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
 
 # <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
-![平臺自動化和 DevOps 的圖表。](./media/DevOps.png)
+![平臺自動化和 DevOps 的圖表。](./media/devops.png)
 
 _圖1：平臺自動化和 DevOps。_
 

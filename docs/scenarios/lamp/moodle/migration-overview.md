@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 1893b6625ad6bf3614e0a444a9ae83055edf5cd2
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 06db48a1c64d15a256a0ae6c5ff85895d98b2407
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175180"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227076"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>Moodle 手動遷移的總覽
 
 [Moodle](https://moodle.org/) 是以 PHP 撰寫的免費開放原始碼學習管理系統。 本指南說明如何將 Moodle 部署從內部部署環境遷移至 Azure。 本指南提供兩種不同方法的步驟，使用 Azure 入口網站或 Azure 命令列介面 (Azure CLI) 。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 開始遷移之前，您需要下列必要條件：
 
@@ -30,9 +30,9 @@ ms.locfileid: "98175180"
   - PHP 7.2、7.3 或 7.4
   - Moodle 3.8 或3
 - 您的 Moodle 網站設定為 **維護模式**。
-- 存取內部部署基礎結構，以 [備份 Moodle 部署和](migration-pre.md#back-up-on-premises-data)設定，包括資料庫設定。
-- [Azure CLI](migration-pre.md#install-the-azure-cli) 和 [AzCopy](migration-pre.md#download-and-install-azcopy) 安裝在內部部署環境。
-- 建立 [Azure 訂](migration-pre.md#create-a-subscription) 用 [帳戶和 Azure Blob 儲存體帳戶](migration-pre.md#create-a-storage-account) 。
+- 存取內部部署基礎結構，以 [備份 Moodle 部署和](./migration-pre.md#back-up-on-premises-data)設定，包括資料庫設定。
+- [Azure CLI](./migration-pre.md#install-the-azure-cli) 和 [AzCopy](./migration-pre.md#download-and-install-azcopy) 安裝在內部部署環境。
+- 建立 [Azure 訂](./migration-pre.md#create-a-subscription) 用 [帳戶和 Azure Blob 儲存體帳戶](./migration-pre.md#create-a-storage-account) 。
 
 ## <a name="moodle-migration-process"></a>Moodle 遷移程式
 
@@ -40,9 +40,9 @@ ms.locfileid: "98175180"
 
 Azure 的 Moodle 遷移步驟可細分為下列三個階段：
 
-1. [移轉前](migration-pre.md)
-1. [應用程式移轉](migration-start.md)
-1. [移轉後](migration-post.md)
+1. [移轉前](./migration-pre.md)
+1. [應用程式移轉](./migration-start.md)
+1. [移轉後](./migration-post.md)
 
 ## <a name="next-steps"></a>下一步
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 33aaf69ecb9712415ee862d3e8e8e4c77abd4d28
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: 3f41f6dda926e4b51de5f8026983b9c383fd6403
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909390"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226907"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure 資源類型的建議縮寫
 
@@ -79,6 +79,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | App Service 環境 | `ase-` |
 | App Service 方案 | `plan-` |
 | Web 應用程式 | `app-` |
+| 靜態 Web 應用程式 | `stapp` |
 | 函數應用程式 | `func-` |
 | 雲端服務 | `cld-` |
 | 通知中樞 | `ntf-` |
@@ -126,7 +127,10 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | Azure Data Factory | `adf-` |
 | Data Lake Store 帳戶 | `dls` |
 | Data Lake Analytics 帳戶 | `dla` |
+| 事件中樞命名空間 | `evhns` |
 | 事件中樞 | `evh-` |
+| 事件方格網域 | `evgd-` |
+| 事件方格主題 | `evgt-` |
 | HDInsight-Hadoop 叢集 | `hadoop-` |
 | HDInsight-HBase 叢集 | `hbase-` |
 | HDInsight-Kafka 叢集 | `kafka-` |
@@ -165,7 +169,6 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | 金鑰保存庫 | `kv-` |
 | Log Analytics 工作區 | `log-` |
 | Application Insights | `appi-` |
-| Azure Purview | `pvw-` |
 
 ## <a name="migration"></a>移轉
 
@@ -175,7 +178,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | 資料庫移轉服務實例 | `dms-` |
 | 復原服務保存庫 | `rsv-` |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 查看 Azure 資源和資產的標記建議。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: c9da763c77ace61575bee488f6dbdef6a813463d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: def676cd47056ea7d3dd7a0ccb5f775023c6f62e
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012323"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226951"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -53,7 +53,7 @@ ms.locfileid: "97012323"
 
 OKRs 可協助您在組織內建立一致和責任。
 
-![OKRs 如何提高組織內的一致性和責任，以協助他們更快達成目標。](../../_images/strategy/OKR.jpg)
+![OKRs 如何提高組織內的一致性和責任，以協助他們更快達成目標。](../../_images/strategy/okr.jpg)
 
 _圖1： OKRs 如何提高組織內的一致性和責任，以協助他們更快達成目標。_
 
@@ -89,7 +89,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 1. 增加5% 的銷售參與率
 1. 減少8% 的交易關閉時間
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 五個步驟可協助您的組織使用 OKRs 繼續進行：
 

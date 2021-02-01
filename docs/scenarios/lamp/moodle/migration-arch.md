@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 0cef3da5be2430c79411600e9caa1e51bd107991
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 1106e7e4ffbda0d93c6e141cd9743221eb14aace
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175214"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227042"
 ---
 # <a name="moodle-migration-architecture-and-templates"></a>Moodle 遷移架構和範本
 
 Moodle 遷移至 Azure 包含下列工作：
 
 1. 使用 Azure Resource Manager (ARM) 範本來部署 Azure 基礎結構。
-1. [下載並安裝 AzCopy](migration-start.md#download-and-install-azcopy-on-the-controller-vm)。
-1. [將 Moodle 備份封存複製到 Azure Resource Manager 部署中的控制器虛擬機器](migration-start.md#copy-the-moodle-archive-to-the-controller-vm) 實例。
-1. [遷移 Moodle 應用程式和](migration-start.md#import-the-moodle-database-to-azure)設定。
-1. [設定 Moodle 控制器實例和背景工作節點](azure-infra-config.md)。
-1. [設定 PHP 和 web 伺服器](azure-infra-config.md)。
+1. [下載並安裝 AzCopy](./migration-start.md#download-and-install-azcopy-on-the-controller-vm)。
+1. [將 Moodle 備份封存複製到 Azure Resource Manager 部署中的控制器虛擬機器](./migration-start.md#copy-the-moodle-archive-to-the-controller-vm) 實例。
+1. [遷移 Moodle 應用程式和](./migration-start.md#import-the-moodle-database-to-azure)設定。
+1. [設定 Moodle 控制器實例和背景工作節點](./azure-infra-config.md)。
+1. [設定 PHP 和 web 伺服器](./azure-infra-config.md)。
 
 本文說明如何 Moodle Azure 基礎結構選項，以及如何使用可提供您選擇的 Azure 功能的 ARM 範本來部署 Azure 資源。
 
@@ -32,7 +32,7 @@ Moodle 遷移至 Azure 包含下列工作：
 
 下圖顯示 Azure Moodle 基礎結構資源的總覽：
 
-![顯示 Azure 基礎結構資源的圖表。](images/architecture.png)
+![顯示 Azure 基礎結構資源的圖表。](./images/architecture.png)
 
 ## <a name="arm-template-options"></a>ARM 範本選項
 
@@ -42,19 +42,19 @@ Moodle 遷移至 Azure 包含下列工作：
 
 - *最基本的部署* 只需要兩部虛擬機器 (vm) ，因此可搭配 Azure 免費試用訂用帳戶使用。 此部署會使用網路檔案系統 (NFS) 、MySQL 和較小的自動調整 web 前端 VM SKU 與一個 vCore。 此範本的快速部署時間為30分鐘。
 
-  [![啟動最基本 Moodle 部署 ARM 範本的按鈕。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
+  [![啟動最基本 Moodle 部署 ARM 範本的按鈕。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
 
 - *小規模部署* 最多可支援1000個並行使用者。 此部署使用不具高可用性的 NFS，以及在八虛擬核心上的 MySQL。 此部署不包含 Elasticsearch 或 Azure Cache for Redis 之類的選項。
 
-  [![此按鈕會啟動小型至中型 Moodle 部署 ARM 範本。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
+  [![此按鈕會啟動小型至中型 Moodle 部署 ARM 範本。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
 
 - *大型的高可用性部署* 支援超過2000個並行使用者。 此部署使用 Azure 檔案儲存體、具有16虛擬核心的 MySQL，Azure Cache for Redis，而不需要其他選項（例如 Elasticsearch）。
 
-  [![此按鈕會啟動大型的高可用性 Moodle 部署 ARM 範本。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
+  [![此按鈕會啟動大型的高可用性 Moodle 部署 ARM 範本。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
 
 - 最 *大部署會* 使用 Azure 檔案儲存體、具有最高 SKU 的 MySQL、Azure Cache for Redis、三個 vm 上的 Elasticsearch，以及適用于資料磁片和資料庫的大型儲存體大小。
 
-  [![啟動最大 Moodle 部署 ARM 範本的按鈕。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
+  [![啟動最大 Moodle 部署 ARM 範本的按鈕。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
 
 ## <a name="deploy-the-template"></a>部署範本
 
@@ -95,4 +95,4 @@ Moodle 遷移至 Azure 包含下列工作：
 
 ## <a name="next-steps"></a>後續步驟
 
-繼續 [Moodle 遷移資源](migration-resources.md) 以取得 ARM 範本部署至 Azure 之資源的相關資訊。
+繼續 [Moodle 遷移資源](./migration-resources.md) 以取得 ARM 範本部署至 Azure 之資源的相關資訊。
