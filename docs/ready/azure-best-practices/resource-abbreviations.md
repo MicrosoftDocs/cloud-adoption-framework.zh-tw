@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 3f41f6dda926e4b51de5f8026983b9c383fd6403
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: d1c8e2067c405fa26f18ffe2806ad013524a9852
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839063"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure 資源類型的建議縮寫
 
@@ -34,7 +34,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | API 管理服務實例 | `apim-` |
 | 受控識別 | `id-` |
 
-## <a name="networking"></a>網路
+## <a name="networking"></a>網路功能
 
 | 資產類型 | 縮寫 |
 |--|--|
@@ -127,7 +127,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | Azure Data Factory | `adf-` |
 | Data Lake Store 帳戶 | `dls` |
 | Data Lake Analytics 帳戶 | `dla` |
-| 事件中樞命名空間 | `evhns` |
+| 事件中樞命名空間 | `evhns-` |
 | 事件中樞 | `evh-` |
 | 事件方格網域 | `evgd-` |
 | 事件方格主題 | `evgt-` |
@@ -170,7 +170,7 @@ Azure 工作負載通常是由多個資源和服務所組成。 在資源名稱�
 | Log Analytics 工作區 | `log-` |
 | Application Insights | `appi-` |
 
-## <a name="migration"></a>移轉
+## <a name="migration"></a>遷移
 
 | 資產類型 | 縮寫 |
 |--|--|

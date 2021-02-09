@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 258b93dda665fe56a09e31831e5e769a4787d3ed
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 3ab0c273051e2e7543a90b3746b4c09a687b117a
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839197"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>雲端採用架構企業規模登陸區域架構
 
@@ -27,7 +27,7 @@ ms.locfileid: "99227059"
 
 ## <a name="landing-zone-in-enterprise-scale"></a>企業規模的登陸區域
 
-Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中的企業規模進行應用程式移轉和綠地開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
+Azure 登陸區域是多訂用帳戶 Azure 環境的輸出，其可解釋規模、安全性、治理、網路功能和身分識別。 Azure 登陸區域可讓您在 Azure 中以企業規模進行應用程式遷移和 greenfield 開發。 這些區域會考慮支援客戶的應用程式組合所需的所有平台資源，並不會區分基礎結構即服務或平台即服務。
 
 例如，您可以在建立新的房屋之前，先存取水、天然氣和電力等城市公用程式。 在此內容中，網路、身分識別和存取管理、原則、管理和監視是共用的公用程式服務，必須立即可用以協助在應用程式開始之前簡化應用程式遷移程式。
 
