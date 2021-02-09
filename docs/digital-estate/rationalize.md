@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: d84d4da259db88bff110c1a6825252359d7ffcfd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d3b943a0a2c31ba0c0b03d6f482de472895c9a7e
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838824"
 ---
 # <a name="rationalize-the-digital-estate"></a>合理化數位資產
 
@@ -37,7 +37,7 @@ ms.locfileid: "97022778"
 
 **合理化決策：** 在經驗豐富的合理化小組手中，定性和量化資料可建立明確的決策。 只可惜，合理化經驗豐富的小組僱用成本高昂，或是需要好幾個月的事前訓練。
 
-## <a name="rationalization-at-enterprise-scale"></a>企業規模的合理化
+## <a name="rationalization-at-enterprise-scale"></a>以企業規模合理化
 
 如果這項投入時間相當耗時，而且對 50-VM 數位資產來說相當困難，請想像在具有上千部 Vm 和數百個應用程式的環境中推動業務轉型所需的工作。 所需的人力工作很容易就能超過 1500 FTE 小時和九個月的規劃。
 
@@ -121,7 +121,7 @@ ms.locfileid: "97022778"
 
 雲端採用小組和雲端策略小組可以共同合作來分析此小型工作負載。 這種共同作業建立了一個建立和測試定性分析準則的控制機會。 較小型的人口會讓您有機會調查受影響的使用者，並在一周或更短的時間內完成詳細的定性分析。 如需常見的定性分析因素，請參閱 [五個合理化 Rs](./5-rs-of-rationalization.md)中的特定合理化目標。
 
-### <a name="migration"></a>移轉
+### <a name="migration"></a>遷移
 
 雲端採用小組可以與持續合理化平行地開始遷移小型工作負載，以在下列關鍵領域中擴展學習：
 
@@ -159,7 +159,7 @@ ms.locfileid: "97022778"
 
 在某些情況下，財務模型可能太過嚴格，而不會進行其他合理化。 在這種情況下，您可能需要更傳統的合理化方法。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 合理化工作的輸出是受所選轉換影響之所有資產的優先順序待處理專案。 此待辦項目現已可作為雲端服務成本計算模型的基礎。
 
