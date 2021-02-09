@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 1548ce843dfb1c8522dd000e9f44afddd6eb55dc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: da9c9b4ba21f328f2f5d256a854b0993be6a3356
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838807"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -22,6 +22,16 @@ ms.locfileid: "97022081"
 以下是雲端採用架構最近所做的變更清單。
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同建立。 新的和更新的內容會在推出時發行。 這些版本可讓您與我們一起測試、驗證和精簡指導方針。 我們鼓勵您與我們合作來打造雲端採用架構。
+
+## <a name="january-2021"></a>2021 年 1 月
+
+為了協助您加速採用和創新，我們新增了有關使用 GitHub 和更新機器學習的最佳作法的新資訊。 我們也發行了新的文章和影片，可協助您選擇最適合的登陸區域。
+
+| 發行項 | 描述 |
+|--|--|
+| [&nbsp;GitHub 如何 &nbsp; 加速 &nbsp; 雲端 &nbsp; 採用](../scenarios/github-velocity/index.md) | 本文將概述使用 GitHub 來加速雲端採用的優點，方法是利用開放原始碼資產、共同作業開發環境、自動化和安全性功能。 |
+| 新的 [機器 &nbsp; 學習](../innovate/best-practices/machine-learning.md) 最佳作法指引 | 我們已更新並擴充了 Machine Learning 的最佳作法指引。 最佳做法包括： <br><br> <li> [如何處理機器學習作業](../innovate/best-practices/how-to-approach-mlops.md)和[MLOps](../innovate/best-practices/mlops-process.md)程式 <li> [機器學習安全性](../innovate/best-practices/ml-security.md) <li> [機器學習推斷和部署](../innovate/best-practices/ml-deployment-inference.md) <li> [判斷模型的計算實例](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [設定機器學習服務工作區](../innovate/best-practices/set-up-ml-workspaces.md) <li> [負責任和受信任的 AI](../innovate/best-practices/trusted-ai.md) |
+| [選擇 &nbsp; &nbsp; 登陸 &nbsp; 區域 &nbsp; 選項](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft 為登陸區域提供兩種實行選項：*從小規模開始、擴大**規模和企業規模*。 您可以使用這篇新文章來檢查這兩個選項，並為您的組織選擇正確的方法。 |
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -36,12 +46,12 @@ ms.locfileid: "97022081"
 
 本月的更新包括整個雲端採用架構的累加式改進，以及支援的 web 資產。
 
-我們最大的投資專注于打造 Microsoft Learn 課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，消費者入門模組提供與產業垂直相關的第一項指引，方法是向零售客戶介紹 (Tailwind 商貿) ，我們會遵循所有核心方法模組來遵循。
+我們最大的投資專注于打造 Microsoft Learn 課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，開始使用模組提供與產業垂直相關的第一項指引，方法是向零售客戶介紹 (Tailwind 商貿) ，我們會遵循所有核心方法模組來遵循。
 
-| 模組 | 描述 |
+| 模組 | Description |
 |--|--|
 | [總覽模組](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | 入門層級的架構簡介。 |
-| [消費者入門模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
+| [開始使用模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
 | [Azure 登陸區域](/learn/modules/cloud-adoption-framework-ready/) | 在建立您的雲端環境之前，請先瞭解您的作業需求，並選擇最適當的 Azure 登陸區域產品，以開始使用。 |
 | [建立企業規模的架構](/learn/paths/enterprise-scale-architecture/) | 遵循一組企業級的設計原則、參考架構和參考實現，大規模建立登陸區域。 四個模組，可建立成功的單一學習路徑。 |
 

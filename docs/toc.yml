@@ -207,6 +207,8 @@ items:
             href: ready/landing-zone/index.md
           - name: 設計區域
             href: ready/landing-zone/design-areas.md
+          - name: 選擇登陸區域選項
+            href: ready/landing-zone/choose-landing-zone-option.md
           - name: 實作選項
             href: ready/landing-zone/implementation-options.md
           - name: 開始使用企業規模
@@ -1123,12 +1125,20 @@ items:
                     items:
                       - name: 什麼是機器學習服務？
                         href: innovate\best-practices\machine-learning.md
-                      - name: Azure Machine Learning 工作流程
-                        href: /azure/machine-learning/concept-azure-machine-learning-architecture?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
-                      - name: 使用 Azure Machine Learning 分析資料
-                        href: /azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
-                      - name: 部署預測
-                        href: /azure/machine-learning/how-to-deploy-and-where?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                      - name: 如何處理機器學習作業
+                        href: innovate\best-practices\how-to-approach-mlops.md
+                      - name: 機器學習作業進程
+                        href: innovate\best-practices\mlops-process.md
+                      - name: 機器學習安全性
+                        href: innovate\best-practices\ml-security.md
+                      - name: 機器學習推斷和部署
+                        href: innovate\best-practices\ml-deployment-inference.md
+                      - name: 判斷模型的計算實例
+                        href: innovate\best-practices\dev-train-comp-instances-for-ml.md
+                      - name: 設定機器學習服務工作區
+                        href: innovate\best-practices\set-up-ml-workspaces.md
+                      - name: 負責任和受信任的 AI
+                        href: innovate\best-practices\trusted-ai.md
                   - name: AI 應用程式和代理程式
                     items:
                       - name: 什麼是 AI 應用程式

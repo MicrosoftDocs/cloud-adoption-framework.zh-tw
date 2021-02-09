@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: d8aa2e29baa730f6e47a2418477d5e7e146cb1b9
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: c3999d47b4d85789d332a233cb4c9d8651ff3375
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839007"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>評估 Microsoft 合作夥伴的 Azure 登陸區域
 
@@ -136,7 +136,7 @@ ms.locfileid: "97713839"
 
 如果您判斷 Azure 登陸區域部署的自助方法更適合，請參閱或重新流覽 [azure 登陸區域的執行選項](./implementation-options.md) ，以找出最符合您雲端作業模式的樣板化登陸區域方法。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解重構登陸區域的流程。
 

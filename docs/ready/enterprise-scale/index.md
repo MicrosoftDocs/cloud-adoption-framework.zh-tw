@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 92dcd037e5fc7699430a77af8b4c0bcae91b2312
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
-ms.translationtype: HT
+ms.openlocfilehash: 40e0f6b736e2c009ecf173ac105c65c68aadc84d
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99976230"
 ---
 # <a name="start-with-cloud-adoption-framework-enterprise-scale-landing-zones"></a>開始使用雲端採用架構的企業規模登陸區域
 
@@ -25,7 +25,7 @@ ms.locfileid: "95447314"
 
 企業規模架構提供與 Azure 最佳做法結合的規範性指引。 其會遵循組織的 Azure 環境重要設計區域中的設計原則。
 
-## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定條件：我應該從企業級架構著手嗎？
+## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>限定詞：我應該從企業規模開始嗎？
 
 企業規模架構是依設計進行模組化。 可讓您從支援應用程式組合的基礎登陸區域著手，而不管應用程式是否正在遷移或是新開發並部署至 Azure。 不論調整點為何，此架構都可以隨著您的商務需求調整。
 
