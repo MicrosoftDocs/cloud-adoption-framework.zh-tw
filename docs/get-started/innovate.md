@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: fce5e1d0de6574df44194a3697eb76d07e6dfd23
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 74f0166a50a88bda3ec4e786c52a5b7db4cfee2c
+ms.sourcegitcommit: 4b525fc72f00bb57fff65998083320b7015ad7da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022642"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100008650"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
@@ -213,7 +213,7 @@ ms.locfileid: "97022642"
 
 **交付：**
 
-- 使用 [Ai 成熟度模型工具](https://aiready.microsoft.com) 來評估貴組織的 ai 成熟度，以建立 ai 型系統。
+- 使用 [Ai 成熟度模型工具](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model) 來評估貴組織的 ai 成熟度，以建立 ai 型系統。
 
 **支援交付完成的指導方針：**
 
@@ -229,7 +229,7 @@ ms.locfileid: "97022642"
 
 本指南所述的步驟可協助您和您的小組在雲端建立創新的解決方案，以建立商業價值、適當地進行控管，並妥善架構。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 雲端採用架構是生命週期的解決方案。 它可協助您開始創新的旅程。 它可協助您的組織開始創新旅程，並讓支援創新工作的團隊更成熟。
 
