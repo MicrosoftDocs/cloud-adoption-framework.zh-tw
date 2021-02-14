@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 57baebddb2dfc4c6209c54a75c7c017f86766fd2
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: 5a4f5de75d3550db5446302eccb3d621cf8bc012
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971939"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492267"
 ---
 # <a name="choose-the-landing-zone-for-your-organization"></a>選擇您組織的登陸區域
 
@@ -23,6 +23,10 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 - 從小規模著手並擴充
 - 企業規模
+
+觀看下列15分鐘的影片，以深入瞭解如何選擇最符合您需求的 Azure 登陸區域實作選項。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwZeg]
 
 您也可以考慮進行協力廠商的實施。 我們的合作夥伴有許多透過其服務提供的實現。 如需詳細資訊，請參閱 [評估 Microsoft 合作夥伴的 Azure 登陸區域](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone)。
 

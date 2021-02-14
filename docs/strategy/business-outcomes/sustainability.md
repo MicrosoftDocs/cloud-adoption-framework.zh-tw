@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 1ef8346bd63fe9d0f47dd1351f088f47e529bbaa
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c4dc771a9e5d72b2c552f93c08b7cb70ac205f95
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012884"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492709"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
@@ -21,6 +21,10 @@ ms.locfileid: "97012884"
 # <a name="sustainability-outcomes-and-benefits-for-business"></a>商務的持續性結果和優點
 
 雖然傳統上是以財務和效率計量來測量雲端的影響和優點，但客戶更常尋求瞭解雲端如何協助他們達成持續性和環境目標。 雲端運算可支援您的組織減少碳排放量、更有效率地使用資源，並減少您的環境耗用量。
+
+觀看下列影片以深入瞭解持續性，以及雲端遷移如何開啟適用于全球且適合您企業的持續性解決方案。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWx4po]
 
 Microsoft 已領導許多這些領域。 公司自2012起一直都是以碳中立的方式運作，並已將2030的承諾設為負數。 [雲端運算的碳優勢](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)、與 WSP 合作的 Microsoft cloud 研究可支援研究如何將內部部署資料中心移至 microsoft 雲端，以大幅減少碳足跡。
 
@@ -45,7 +49,7 @@ Bee'ah 是中東的持續性先鋒，可相信技術和持續性為未來建立�
 
 這些客戶案例會示範持續性和環境解決方案的優先順序，如何協助組織創造新的商機。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 蓄意的方法可協助組織流覽其持續性旅程。 這四個步驟可能會影響您公司的結果：
 

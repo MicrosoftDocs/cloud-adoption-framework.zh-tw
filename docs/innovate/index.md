@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: f5d293eb80be69cd809625cf3e246024a45ea341
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 171264fae5d3d90f944b0726bcf90a60ab973247
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017916"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492692"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端創新
 
@@ -46,4 +46,4 @@ ms.locfileid: "97017916"
 
 [建立無伺服器應用程式](/learn/paths/create-serverless-applications)：Azure Functions 可建立由事件驅動、依需求計算的系統，以供各種不同的外部事件觸發。 了解使用函式來執行伺服器端邏輯，並建置無伺服器架構。
 
-如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用 **角色** 篩選器，讓學習路徑與您的角色一致。
+若要探索更多學習路徑，請流覽 [Microsoft Learn 目錄](/learn/browse)。 使用 **角色** 篩選器，讓學習路徑與您的角色一致。

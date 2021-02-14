@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal, homepage
-ms.openlocfilehash: 76580f373adc5cd1a2edb10c8db4cbb2e3006700
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: eaee9ce834161df01b38bc759b393b54f523d794
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024631"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492726"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>什麼是適用於 Azure 的 Microsoft 雲端採用架構？
 
@@ -34,7 +34,7 @@ ms.locfileid: "97024631"
 | <br> ![策略圖示](./_images/icons/strategy.png) | <br> [策略](./strategy/index.md)： &nbsp; 定義 &nbsp; 商業 &nbsp; 理由 &nbsp; 和預期的採用結果。 | <br> ![規劃圖示](./_images/icons/plan.png) | <br> [方案](./plan/index.md)： &nbsp; &nbsp; 將可採取動作的 &nbsp; 採用 &nbsp; 方案與業務成果保持一致。 |
 | <br> ![就緒圖示](./_images/icons/ready.png)       | <br> [就緒](./ready/index.md)：準備雲端環境以進行已規劃的變更。 | <br> ![遷移圖示](./_images/icons/adopt.png) | <br> [遷移](./migrate/index.md)：遷移和現代化現有的工作負載。 |
 | <br> ![創新圖示](./_images/icons/innovate.png) | <br> [創新](./innovate/index.md)：開發新的雲端原生或混合式解決方案。 | <br> ![管理圖示](./_images/icons/govern.png) | <br> 治理[：管理](./govern/index.md)環境和工作負載。 |
-| <br> ![管理圖示](./_images/icons/manage.png)     | <br> [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | <br> [組織](./organize/index.md)：管理環境和工作負載。 |
+| <br> ![管理圖示](./_images/icons/manage.png)     | <br> [管理](./manage/index.md)：雲端和混合式解決方案的作業管理。 | <br> ![組織圖示](./_images/icons/organize.png) | <br> [組織](./organize/index.md)：讓支援組織雲端採用工作的小組和角色保持一致。 |
 
 ## <a name="understand-the-lifecycle"></a>了解生命週期
 

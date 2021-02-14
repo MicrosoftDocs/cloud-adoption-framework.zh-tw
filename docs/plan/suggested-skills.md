@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 77fe35a487858a240e7b3dc8879acd67e28afa8d
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: cd2a5dbc347030fa4daa36e5efdc5244f37192a7
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175112"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492352"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>開始使用技能就緒路徑
 
@@ -53,4 +53,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 ## <a name="learn-more"></a>深入了解
 
-如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。
+若要探索更多學習路徑，請流覽 [Microsoft Learn 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。

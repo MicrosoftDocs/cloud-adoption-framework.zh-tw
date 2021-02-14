@@ -12,12 +12,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: 781d35675e981fbe57d63496f88bc2c42ae0ed3f
-  ms.sourcegitcommit: b210ef2a057d61554148b4c4b89485a4a5c9b25c
-  ms.translationtype: HT
+  ms.openlocfilehash: dad20e2b85cd94c038e3cb2202a849ac5baf0637
+  ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "97646325"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "100492404"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -85,7 +85,7 @@ productDirectory:
     links:
     - url: ./migrate/azure-migration-guide/index.md
       text: Azure 移轉指南
-    - url: ./migrate/azure-best-practices/contoso-migration-overview.md
+    - url: ./scenarios/index.md
       text: 移轉案例
     - url: ./migrate/azure-best-practices/index.md
       text: 雲端移轉的最佳做法

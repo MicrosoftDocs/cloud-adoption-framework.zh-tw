@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: e0ed0b0407b29ad04fa942231858203b0af4a923
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 57d15fdb0ec445415688c47ddebeb1d3d804d671
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174568"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492658"
 ---
 # <a name="build-technical-skills"></a>建置技術技能
 
@@ -55,7 +55,11 @@ ms.locfileid: "98174568"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 
-Microsoft 及其合作夥伴提供的選項，可協助所有的受眾開發其使用 Azure 服務的技能。 我們建議您透過 [Microsoft Azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx)，讓您的 Azure 知識變成官方辨識。
+Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 Azure 服務開發技能。
+
+- [對應角色和技能](/azure/cloud-adoption-framework/plan/suggested-skills)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
+
+- 探索 [azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx) ，以取得您 azure 知識的官方認知。
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 

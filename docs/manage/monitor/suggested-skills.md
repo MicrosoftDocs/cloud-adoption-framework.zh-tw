@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: d9505b5b5d60793f0293cbaa56f115e5c685adfa
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: ce33a87fa98774e0fcd01079d6ebc0c8a5a7cbcd
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174194"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492318"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -84,11 +84,11 @@ ms.locfileid: "98174194"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 
-Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，協助他們培養 Azure 服務的各項技能：
+Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 Azure 服務開發技能。
 
-- [MICROSOFT IT 專業人員職業中心](https://www.microsoft.com/itpro)：作為免費的線上資源，可協助您對應雲端事業途徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
+- [對應角色和技能](/azure/cloud-adoption-framework/plan/suggested-skills)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
 
-透過 [azure 認證訓練和測驗，](https://www.microsoft.com/learning/certification-overview.aspx)讓您的 azure 知識變成官方辨識。
+- 探索 [azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx) ，以取得您 azure 知識的官方認知。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
@@ -116,4 +116,4 @@ Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，�
 
 ## <a name="learn-more"></a>深入了解
 
-如要探索其他學習路徑，請瀏覽 [Microsoft Learn 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。
+若要探索更多學習路徑，請流覽 [Microsoft Learn 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。

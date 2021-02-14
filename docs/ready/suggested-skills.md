@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 656588a187446214d2f62e0ae99ffdf5a9c889c1
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 69ec8f991d98363be075e7421e3b8743a3b7b795
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174959"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492675"
 ---
 # <a name="skills-readiness-path-during-the-readiness-phase-of-a-migration-journey"></a>在遷移旅程的準備階段期間的技能就緒途徑
 
@@ -53,13 +53,13 @@ ms.locfileid: "98174959"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>雲端 IT 角色的一般對應
 
-Microsoft 與合作夥伴會為所有學員提供各種不同的課程選擇，協助他們培養 Azure 服務的各項技能：
+Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 Azure 服務開發技能。
 
-- [MICROSOFT IT 專業人員職業中心](https://www.microsoft.com/itpro)：作為免費的線上資源，可協助您對應雲端事業途徑。 了解產業專家針對您雲端角色提供的建議，以及進行建議內容的技能。 依照您自己的步調遵循學習課程，以建立可讓您跟上趨勢的必要技能。
+- [對應角色和技能](/azure/cloud-adoption-framework/plan/suggested-skills)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
 
-參加 [Microsoft Azure 認證訓練課程與測驗](https://www.microsoft.com/learning/certification-overview.aspx)，讓您的 Azure 知識獲得官方認證。
+- 探索 [azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx) ，以取得您 azure 知識的官方認知。
 
-## <a name="microsoft-learn"></a>Microsoft Learn
+### <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和等級，並達成更多目標。
 
