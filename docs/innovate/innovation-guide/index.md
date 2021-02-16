@@ -1,33 +1,34 @@
 ---
-title: Azure 創新：開始之前
-description: 透過 Azure 功能讓環境做好雲端創新準備，以協助您與客戶互動、建置解決方案以及推動採用。
+title: 創新的解決方案指南
+description: 開始之前，請參閱本指南，以瞭解使用雲端採用架構的創新解決方案。 取得雲端創新，以協助與客戶互動並促進採用。
 author: matticusau
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: c76181620d8d465c4244ccc043500f3b39983eb9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: think-tank, fasttrack-edit, AQC, sep-caf-innovate
+keywords: 創新解決方案，雲端採用架構，創新解決方案
+ms.openlocfilehash: 068205e9806664ca4156e64db96a0d4d2839bbd3
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017729"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525827"
 ---
-# <a name="azure-innovation-guide-overview"></a>Azure 創新指南概觀
+# <a name="azure-innovative-solutions-guide-overview"></a>Azure 創新解決方案指南總覽
 
 ::: zone target="docs"
 
 > [!NOTE]
-> 本指南可作為雲端採用架構的創新指引起點。 您也可以在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)內取得本指南。
+> 這份創新解決方案指南提供雲端採用架構中的創新指引起點。 您也可以在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)內取得本指南。
 
 ::: zone-end
 
-在開始使用 Azure 服務開發創新解決方案之前，您必須先準備環境，包括準備好客戶意見反應迴圈的管理機制。 在本指南中，我們引進了一些功能，來協助您與客戶互動、建立解決方案及促成採用。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的創新一節](../index.md)。
+在開始使用 Azure 服務開發創新解決方案之前，您必須先準備環境，包括準備好客戶意見反應迴圈的管理機制。 在本指南中，我們會介紹可協助您與客戶互動、打造創新解決方案及推動採用的功能。 如需詳細資訊、最佳做法，以及與準備雲端環境相關的考量，請參閱[雲端採用架構的創新一節](../index.md)。
 
-在本指南中，您將了解如何：
+在此創新指南中，您將瞭解如何：
 
 > [!div class="checklist"]
 >

@@ -8,16 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: cc328ed78a7ad7f349f41fe3cbc67bc0c83e1506
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0c1a4bca2ef0ba15a5046e57606a5b835e8c6e56
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018749"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526063"
 ---
 # <a name="tools-to-engage-via-applications-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 
-如透過 [應用程式進行互動](../considerations/apps.md)所述，應用程式可以是 MVP 解決方案的重要層面。 測試假設通常需要應用程式。 本文可協助您瞭解 Azure 提供的工具，以加速開發這些應用程式。
+建立雲端原生應用程式，以新的方式連接客戶。 雲端原生應用程式專為雲端規模與效能最佳化全新打造。 雲端原生應用程式是以微服務架構為基礎、使用受管理的服務，並利用持續傳遞來達成可靠性及加快上市時間。
+
+如透過 [應用程式進行互動](../considerations/apps.md)所述，應用程式可以是最基本的可行產品 (MVP) 解決方案的重要層面。 測試假設通常需要應用程式。 本文可協助您瞭解 Azure 提供的工具，以加速開發這些應用程式。
 
 ![透過應用程式吸引的雲端採用架構方法](../../_images/innovate/engage-via-apps.png)
 

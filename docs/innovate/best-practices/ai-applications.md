@@ -1,21 +1,24 @@
 ---
 title: 什麼是 AI 應用程式？
-description: 瞭解如何使用 Azure 認知服務將 AI 功能和突破整合至您的應用程式。
+description: 什麼是 AI 應用程式？ 瞭解如何使用 Azure 認知服務，將 AI 應用程式和功能與您的應用程式整合。
 author: v-hanki
 ms.author: janet
-ms.date: 07/14/2020
+ms.date: 01/26/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 6909c0c6f5b60694ebb7dc6d98d794e484f11efe
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.custom: think-tank, seo-caf-innovate
+keywords: ai 應用程式，什麼是 ai 應用程式、語音辨識 api、電腦視覺 api、決策邏輯 api
+ms.openlocfilehash: 39d664452d14b13514f7e1b0ff78c0cf66e59468
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446635"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526012"
 ---
 # <a name="what-are-ai-applications"></a>什麼是 AI 應用程式？
+
+AI 應用程式就像是語音辨識 Api、電腦視覺 Api、決策邏輯 Api，以及其他模仿人為原因的智慧型系統等專案。 這些是現今市場中許多軟體產品的基本功能，因為 AI 應用程式能夠以更自然的方式與終端使用者通訊，並提供更好的使用者體驗。 Azure 可讓您和您的團隊能夠在任何地方推出 AI 應用程式，以協助您和您的小組節省時間。
 
 在 Azure 中，您可以使用所選和內建 AI 的工具和技術，更快地建立智慧型應用程式。
 
@@ -29,18 +32,18 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 認知服務是由 Api、Sdk 和服務所組成，可協助開發人員建立智慧型應用程式，而不需要直接 AI 或資料科學技能或知識。 認知服務可讓開發人員輕鬆地將認知功能新增至其應用程式。 認知服務中的服務目錄可以分成五個主要部分：視覺、語音、語言、web 搜尋和決策。
 
-### <a name="vision-apis"></a>視覺 API
+### <a name="computer-vision-apis"></a>電腦視覺 Api
 
 | 服務名稱 | 服務說明 |
 | --- | --- |
-| [電腦視覺](/azure/cognitive-services/computer-vision/) | 電腦視覺可供您存取進階演算法，以處理影像及傳回資訊。 |
+| [電腦視覺](/azure/cognitive-services/computer-vision/) | 電腦視覺 Api 可讓您存取先進的演算法，以處理影像及傳回信息。 |
 | [自訂視覺](/azure/cognitive-services/custom-vision-service/home) | 自訂視覺可讓您建立自訂影像分類器。 |
 | [臉部](/azure/cognitive-services/face/) | 臉部辨識服務可讓您存取先進的臉部演算法，以偵測和辨識臉部屬性。 |
 |  (預覽版的[表單辨識器](/azure/cognitive-services/form-recognizer/))  | 表單辨識器會識別和解壓縮表單檔中的索引鍵/值組和資料表資料。 然後，它會在原始檔案中輸出結構化資料，包括關聯性。 |
 | [筆跡辨識器](/azure/cognitive-services/ink-recognizer/) (預覽)  | 筆跡辨識器可讓您辨識及分析數位筆跡-筆劃資料、圖形和手寫內容，並輸出具有所有已辨識實體的檔結構。 |
 | [影片索引子](/azure/cognitive-services/video-indexer/video-indexer-overview) | 影片索引子可讓您從影片中取出見解。 |
 
-### <a name="speech-apis"></a>語音識別 API
+### <a name="speech-recognition-apis"></a>語音辨識 Api
 
 | 服務名稱 | 服務說明 |
 | --- | --- |
@@ -58,7 +61,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 | [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析可針對原始文字進行自然語言處理，進行情感分析、關鍵片語擷取和語言偵測。 |
 | [翻譯工具](/azure/cognitive-services/translator/) | Translator 以近乎即時的方式提供以電腦為基礎的文字轉譯。 |
 
-### <a name="decision-apis"></a>決策 API
+### <a name="decision-logic-apis"></a>決策邏輯 Api
 
 | 服務名稱 | 服務說明 |
 | --- | --- |
@@ -101,7 +104,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 機器學習服務通常需要較長的時間才能成功執行。 這段時間花費在資料收集、清除、轉換、演算法選取、模型定型及部署，以取得認知服務所提供的相同層級功能。 有了機器學習服務，就可以提供高特製化或特定問題的解答。 機器學習問題需要熟悉考慮和專長的特定主題和問題資料。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - 深入瞭解 [認知服務](/azure/cognitive-services/)。
 - 尋找 [AI 架構的最佳做法](/azure/architecture/solution-ideas/articles/ai-at-the-edge)。

@@ -1,19 +1,20 @@
 ---
 title: 什麼是 Azue 認知搜尋？
-description: Azure 認知搜尋先前稱為「Azure 搜尋服務」，可協助您在編制索引期間套用 AI 流程。
+description: 先前為 Azure 搜尋服務，Azure 認知搜尋是認知搜尋引擎，可協助您在編制索引時套用 AI 程式。 深入瞭解 Azure 認知服務。
 author: v-hanki
 ms.author: janet
-ms.date: 07/14/2020
+ms.date: 01/26/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 82679ff7da2c3c7ec64a9f869633958ec1121789
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.custom: think-tank, seo-caf-innovate
+keywords: 認知搜尋、azure 認知服務、認知搜尋引擎、何謂認知、azure 搜尋服務
+ms.openlocfilehash: 715dd65e072e09fe8046908ccc0a4a660a2c4328
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227110"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526046"
 ---
 <!-- cSpell:ignore Lucene -->
 
@@ -22,9 +23,11 @@ ms.locfileid: "99227110"
 
 # <a name="what-is-azure-cognitive-search"></a>什麼是 Azue 認知搜尋？
 
-Azure 認知搜尋是一種受控的雲端解決方案，可為開發人員提供 Api 和工具，透過 web、行動和企業應用程式中的私用、異類內容來新增豐富的搜尋體驗。 您的程式碼或工具會叫用資料擷取 (索引編制) 以建立和載入索引。 您可以選擇新增認知技能，以在編製索引期間套用 AI 程序。 這樣做可以加入適用于搜尋和其他案例的新資訊和結構。
+Azure 認知搜尋是一種受控的雲端解決方案，可為開發人員提供 Api 和工具，透過 web、行動和企業應用程式中的私用、異類內容來新增豐富的搜尋體驗。 您的程式碼或工具會叫用資料擷取 (索引編制) 以建立和載入索引。 您可以選擇新增認知技能，以在編製索引期間套用 AI 程序。 使用 Azure 認知服務可以新增適用于搜尋和其他案例的新資訊和結構。
 
 在服務的另一方面，應用程式程式碼會發出查詢要求和處理回應。 搜尋體驗會透過 Azure 認知搜尋的功能，在您的用戶端中進行定義，而查詢會針對您在服務上建立、擁有及儲存的持續性索引執行。
+
+認知搜尋在應用程式中是很重要的功能。 快速尋找相關資料的能力，對於使用者體驗和結果而言是不可或缺的。 認知搜尋引擎使用的 AI 功能，可協助應用程式以更類似人類的方式運作，並建立超越單純關鍵字比對的關聯。 Azure 認知服務可協助您的終端使用者更快速地找到需要知道的資訊。
 
 ![顯示 Azure 認知搜尋的圖表。](../../_images/ai-cognitive-search.png)
 
@@ -67,7 +70,9 @@ Azure 認知搜尋適用於下列應用程式案例：
 
 ### <a name="step-4-search"></a>步驟 4：搜尋
 
-填入索引之後，您可以使用簡單的 HTTP 要求搭配[REST api](/rest/api/searchservice/search-documents)或[.net SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations)，將[搜尋查詢發出](/azure/search/search-query-overview)至服務端點。 逐步建立 [您的第一個搜尋應用程式](/azure/search/tutorial-csharp-create-first-app) ，以建立並擴充可收集使用者輸入和處理結果的網頁。 您也可以使用 [Postman 進行互動式 REST](/azure/search/search-get-started-rest) 呼叫，或使用內建的 [搜尋瀏覽器](/azure/search/search-explorer) ，在 Azure 入口網站中查詢現有的索引。
+
+填入索引之後，您可以使用簡單的 HTTP 要求搭配[REST api](/rest/api/searchservice/search-documents)或[.net SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet&preserve-view=true)，將[搜尋查詢發出](/azure/search/search-query-overview)至服務端點。 逐步建立 [您的第一個搜尋應用程式](/azure/search/tutorial-csharp-create-first-app) ，以建立並擴充可收集使用者輸入和處理結果的網頁。 您也可以使用 [Postman 進行互動式 REST](/azure/search/search-get-started-postman) 呼叫，或使用內建的 [搜尋瀏覽器](/azure/search/search-explorer) ，在 Azure 入口網站中查詢現有的索引。
+
 
 ## <a name="next-steps"></a>下一步
 
