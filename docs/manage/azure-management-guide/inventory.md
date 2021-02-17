@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 3c8f77364f109d8f72d8e7158f44662cd9dda2ee
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1c5f49ff4ea88826b5e2022e7a5a85ffcb65b71f
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017406"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492335"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -28,14 +28,14 @@ ms.locfileid: "97017406"
 
 | Process | 工具 | 目的 |
 |---|---|---|
-| 監視 Azure 服務的健康情況 | Azure 服務健康狀態 | Azure 中所執行服務的健康情況、效能和診斷 |
-| 記錄集中化 | Log Analytics | 適用於所有可見性用途的集中式記錄 |
-| 監視集中化 | Azure 監視器 | 操作資料和趨勢的集中監視 |
-| 虛擬機器清查和變更追蹤 | 變更追蹤與詳細目錄 | 清查 VM 和監視來賓作業系統層級的變更 |
-| 訂用帳戶監視 | Azure 活動記錄檔 | 監視訂用帳戶層級的變更 |
-| 來賓作業系統監視 | 適用於 VM 的 Azure 監視器 | 監視 VM 的變更和效能 |
-| 網路監視 | Azure 網路監看員 | 監視網路變更和效能 |
-| DNS 監視 | DNS 分析 | DNS 的安全性、效能和作業 |
+| 監視 Azure 服務的健康情況 | [Azure 服務健康狀態](/azure/service-health/service-health-overview) | Azure 中所執行服務的健康情況、效能和診斷 |
+| 記錄集中化 | [Log Analytics](/azure-monitor/log-query/log-analytics-overview) | 適用於所有可見性用途的集中式記錄 |
+| 監視集中化 | [Azure 監視器](/azure/azure-monitor/overview) | 操作資料和趨勢的集中監視 |
+| 虛擬機器清查和變更追蹤 | [變更追蹤與詳細目錄](/azure/automation/change-tracking/overview) | 清查 VM 和監視來賓作業系統層級的變更 |
+| 訂用帳戶監視 | [Azure 活動記錄](/azure/azure-monitor/platform/activity-log) | 監視訂用帳戶層級的變更 |
+| 來賓作業系統監視 | [適用於 VM 的 Azure 監視器](/azure/azure-monitor/insights/vminsights-overview) | 監視 VM 的變更和效能 |
+| 網路監視 | [Azure 網路監看員](/azure/network-watcher/network-watcher-monitoring-overview) | 監視網路變更和效能 |
+| DNS 監視 | [DNS 分析](/azure/azure-monitor/insights/dns-analytics) | DNS 的安全性、效能和作業 |
 
 ::: zone target="docs"
 
