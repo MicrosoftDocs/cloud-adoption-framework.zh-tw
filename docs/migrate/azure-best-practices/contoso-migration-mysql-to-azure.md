@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: e0e2c099901a6c63f259877e57c5467e9e9cd220
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7a5149b49e2a50590da2dbbda14f4e6c40ffdc16
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015094"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631486"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -39,7 +39,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 | **可用性** | 目前內部員工正在使用 MySQL 實例的裝載環境。 Contoso 希望資料庫層有接近99.99% 的可用性。 |
 | **延展性** | 內部部署資料庫主機的容量很快地用盡。 Contoso 需要一種方法來調整超過目前限制的實例，或在商務環境變更時縮小以節省成本。 |
 | **效能** | Contoso 人力資源 (HR) 部門每天、每週和每月執行各種報告。 當它執行這些報表時，它會遇到與員工面向應用程式明顯的效能問題。 它需要執行報表，而不會影響應用程式效能。 |
-| **Security** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
+| **安全性** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
 | **監視** | Contoso 目前使用工具來監視 MySQL 資料庫伺服器的計量，並在 CPU、記憶體或儲存體發生問題時提供通知。 公司想要在 Azure 中擁有相同的功能。 |
 | **業務持續性** | HR 資料存放區是 Contoso 日常營運的重要部分。 如果它損毀或需要還原，公司想要盡可能將停機時間降到最低。 |
 | **Azure** | Contoso 想要將應用程式移至 Azure，而不在 Vm 上執行。 Contoso 想要使用 Azure 平臺即服務 (適用于資料層的 PaaS) 服務。 |
@@ -115,7 +115,7 @@ Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並�
 
 - 確定已符合所有的遷移必要條件：
   - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。
-  - `my.ini` (Windows) 或 `my.cnf` (Unix) 啟用二進位記錄。 無法啟用二進位記錄，會在 [遷移嚮導] 中出現下列錯誤：「二進位記錄中的錯誤。 變數 binlog_row_image 的值為「基本」。 請將其變更為「完整」。如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
+  - `my.ini` (Windows) 或 `my.cnf` (Unix) 啟用二進位記錄。 無法啟用二進位記錄，會在遷移嚮導中產生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal.' please change it to 'full'.` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
   - 使用者必須具有 `ReplicationAdmin` 角色。
   - 在不包含外鍵和觸發程式的情況下遷移資料庫架構。
 - 建立透過 ExpressRoute 或 VPN 連接到內部部署網路的虛擬網路。

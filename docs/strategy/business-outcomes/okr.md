@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: def676cd47056ea7d3dd7a0ccb5f775023c6f62e
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: c38f725f7a2f7f138594d6167c0c823d04118166
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226951"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632472"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -103,7 +103,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 
 **步驟5：改善：** 繼續改進、重新討論和重新思考如何在整個組織中進一步連接。 試算表中的 OKRs 可能很有用，但組織最能受益于參與目標的每個人，並從對齊的資料取得見解。
 
-請聯絡 [WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ) 以開始使用。
+請聯絡 [WorkBoard](https://appsource.microsoft.com/product/office/WA104381599) 以開始使用。
 
 > [!div class="nextstepaction"]
 > [調整學習計量的工作量](../learning-metrics.md)

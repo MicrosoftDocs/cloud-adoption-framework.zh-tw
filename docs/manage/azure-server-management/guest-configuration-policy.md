@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 66e93f25101f29890cdcc367560e2ab8d996353e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: cc67a0d31b32522a32c331e9fcd798e259b17e11
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017066"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631911"
 ---
 # <a name="azure-policy-guest-configuration-extension"></a>Azure 原則來賓設定延伸模組
 
@@ -35,7 +35,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 - 確認已正確設定 Windows 和 Linux 電腦中的密碼安全性設定。
 - 確認憑證在 Windows Vm 上未接近到期。
 
- 執行此腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。 當您執行腳本時，您必須提供要套用原則的訂用帳戶名稱。
+ 執行此腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 來登入。 當您執行腳本時，您必須提供要套用原則的訂用帳戶名稱。
 
 ```powershell
 
@@ -58,7 +58,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何針對重要的檔案、服務、軟體和登錄變更 [啟用變更追蹤和警示](./enable-tracking-alerting.md) 。
 

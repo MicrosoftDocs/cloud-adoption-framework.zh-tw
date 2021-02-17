@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: ce33a87fa98774e0fcd01079d6ebc0c8a5a7cbcd
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: dffd1534d461d443a80f20b3f7cd65392dbe9acc
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492318"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631384"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "100492318"
 
 - [Azure 原則](/azure/governance/policy/overview)簡介可協助您瞭解如何使用 Azure 原則來建立、指派和管理原則。 Azure 原則可以部署和設定 Azure 監視器代理程式、啟用適用於 VM 的 Azure 監視器和 Azure 資訊安全中心的監視、部署診斷設定、audit guest configuration 設定等。
 
-- [Azure 命令列介面 (CLI) ](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)的簡介，這是我們用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱 [Azure PowerShell](/powershell/azure/?view=azps-3.6.1)的簡介。 在其初學者層級的課程中， [瞭解 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)（LinkedIn）提供涵蓋 Azure CLI 和 PowerShell 程式設計語言的會話：
+- [Azure 命令列介面 (CLI) ](/cli/azure/get-started-with-azure-cli)的簡介，這是我們用來管理 Azure 資源的跨平臺命令列體驗。 另請參閱 [Azure PowerShell](/powershell/azure/)的簡介。 在其初學者層級的課程中， [瞭解 Azure 管理工具](https://www.linkedin.com/learning/learning-azure-management-tools)（LinkedIn）提供涵蓋 Azure CLI 和 PowerShell 程式設計語言的會話：
 
   - [使用 Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)

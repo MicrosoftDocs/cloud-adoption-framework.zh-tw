@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 5d52a66bab0313eb5b347b7668caee18ecb80987
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0264f875fde9ec2f4d3407232b5eba7de7f3acef
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014567"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631690"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -98,9 +98,9 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
 | [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | 無需變更程式碼即可從內部部署順暢地將 .NET web 應用程式遷移至雲端的免費和簡單路徑。 | 這是可下載的免費工具。 |
-| [Azure 資料庫移轉服務](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入瞭解 [支援的區域](/azure/dms/dms-overview#regional-availability) 和 [Azure 資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
-| [Azure SQL 受控執行個體](/azure/sql-database/sql-database-managed-instance) | SQL 受控執行個體是受控資料庫服務，代表 Azure 中完全受控的 SQL Server 實例。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會產生以容量為基礎的費用。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
-| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure 資料庫移轉服務](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入瞭解 [支援的區域](/azure/dms/dms-overview#regional-availability) 和 [Azure 資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration/)。 |
+| [Azure SQL 受控執行個體](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) | SQL 受控執行個體是受控資料庫服務，代表 Azure 中完全受控的 SQL Server 實例。 它會使用與最新版 SQL Server 資料庫引擎相同的程式碼，並擁有最新的功能、效能增強功能和安全性修補程式。 | 使用在 Azure 中執行的 SQL 受控實例會產生以容量為基礎的費用。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/)。 |
+| [Azure App Service](/azure/app-service/overview) | 協助建立強大的雲端應用程式，以使用完全受控平臺。 | 定價是根據大小、位置和使用持續時間。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | 提供持續整合和持續部署 (CI/CD) 管線以進行應用程式開發。 管線會從用於管理應用程式程式碼的 Git 存放庫開始，以及用來產生封裝和其他組建成品的組建系統，以及可在開發、測試和生產環境中部署變更的發行管理系統。 |
 
 ## <a name="prerequisites"></a>必要條件
@@ -109,7 +109,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 |
+| **Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 |
 | **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。 |
 
 ## <a name="scenario-steps"></a>案例步驟
@@ -129,7 +129,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 
 Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) 工具來評定及遷移其 web 應用程式。 它們使用 [Microsoft Learning 路徑](/learn/paths/migrate-dotnet-apps-azure/) 作為程式期間的指南。 簡單來說，系統管理員會執行下列動作：
 
-- 他們使用 Azure [App Service 遷移評估](https://appmigration.microsoft.com/assessment/) 工具來評估其 web 應用程式之間的任何相依性，並判斷其內部部署 web 應用程式與 Azure App Service 支援的專案之間是否有任何不相容性。
+- 他們使用 Azure [App Service 遷移評估](https://azure.microsoft.com/services/app-service/migration-assistant/) 工具來評估其 web 應用程式之間的任何相依性，並判斷其內部部署 web 應用程式與 Azure App Service 支援的專案之間是否有任何不相容性。
 
 - 他們會下載 Azure App Service Migration Assistant 並登入其 Azure 帳戶。
 
@@ -143,10 +143,10 @@ Contoso 管理員會使用 [Azure App Service Migration Assistant](https://azure
 - 在建立受控實例之後，Contoso 不應將資源新增至子網。
 - 子網路不能有與其相關聯的網路安全性群組。
 - 子網路必須有使用者定義的路由表。 唯一指派的路由應該是 `0.0.0.0/0` 下一個躍點網際網路。
-- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增至清單。 瞭解如何 [設定 AZURE SQL 受控實例的自訂 DNS](/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 如果為虛擬網路指定了選擇性的自訂 DNS，則 `168.63.129.16` 必須將 Azure 中遞迴解析程式的虛擬 IP 位址新增至清單。 瞭解如何 [設定 AZURE SQL 受控實例的自訂 DNS](/azure/azure-sql/managed-instance/custom-dns-configure)。
 - 子網路不得有相關聯的服務端點 (儲存體或 SQL)。 虛擬網路上應該停用服務端點。
-- 子網路必須至少具有 16 個 IP 位址。 瞭解如何 [調整受控實例子網的大小](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
-- 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解 [DNS 自訂](/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 子網路必須至少具有 16 個 IP 位址。 瞭解如何 [調整受控實例子網的大小](/azure/azure-sql/managed-instance/vnet-existing-add-subnet)。
+- 在 Contoso 的混合式環境中，需要有自訂 DNS 設定。 Contoso 會將 DNS 設定配置為使用公司的其中一或多部 Azure DNS 伺服器。 深入瞭解 [DNS 自訂](/azure/azure-sql/managed-instance/custom-dns-configure)。
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>設定受控執行個體的虛擬網路
 
@@ -182,8 +182,8 @@ Contoso 管理員會設定虛擬網路，如下所示：
 
 **需要其他協助？**
 
-- 閱讀 [SQL 受控執行個體總覽](/azure/sql-database/sql-database-managed-instance)。
-- 瞭解如何 [建立 SQL 受控實例的虛擬網路](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
+- 閱讀 [SQL 受控執行個體總覽](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)。
+- 瞭解如何 [建立 SQL 受控實例的虛擬網路](/azure/azure-sql/managed-instance/vnet-existing-add-subnet)。
 - 了解如何[設定對等互連](/azure/virtual-network/virtual-network-manage-peering)。
 - 了解如何[更新 Azure Active Directory DNS 設定](/azure/active-directory-domain-services/tutorial-create-instance)。
 
@@ -214,14 +214,14 @@ Contoso 會考量下列因素：
 
 **需要其他協助？**
 
-瞭解如何 [設定受控實例的路由](/azure/sql-database/sql-database-managed-instance-get-started)。
+瞭解如何 [設定受控實例的路由](/azure/azure-sql/managed-instance/instance-create-quickstart)。
 
 ### <a name="create-a-managed-instance"></a>建立受控執行個體
 
 現在，Contoso 管理員會藉由執行下列動作來布建 SQL 受控實例：
 
 1. 因為受控實例會為商務應用程式提供服務，所以系統管理員會在公司的主要區域中部署受控實例， (美國東部 2) 。 他們會將受控實例新增至 ContosoRG 資源群組。
-1. 他們會選取執行個體的定價層、大小計算和儲存體。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/sql-database/managed)。
+1. 他們會選取執行個體的定價層、大小計算和儲存體。 深入瞭解 [SQL 受控執行個體定價](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/)。
 
     ![[SQL 受控執行個體] 窗格的螢幕擷取畫面。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
@@ -234,7 +234,7 @@ Contoso 會考量下列因素：
 
 **需要其他協助？**
 
-瞭解如何布建 [受控實例](/azure/sql-database/sql-database-managed-instance-get-started)。
+瞭解如何布建 [受控實例](/azure/azure-sql/managed-instance/instance-create-quickstart)。
 
 ## <a name="step-3-migrate-via-azure-database-migration-service"></a>步驟3：透過 Azure 資料庫移轉服務遷移
 
@@ -380,7 +380,7 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
     ![反白顯示 [啟用持續整合] 核取方塊的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
-1. 他們選取 [儲存並排入佇列]，以執行完整管線。 觸發新的組建，然後再為 Azure App Service 建立應用程式的第一個版本。
+1. 他們會選取 [ **儲存 & 佇列** ]，以執行完整管線。 觸發新的組建，然後再為 Azure App Service 建立應用程式的第一個版本。
 
     ![[儲存 & 佇列] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline21.png)
 
@@ -409,14 +409,14 @@ Contoso 管理員現在會設定 Azure DevOps 來執行組建和發行程式。
 
 ### <a name="security"></a>安全性
 
-- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [深入了解](/azure/sql-database/sql-database-security-overview)。
+- Contoso 有助於確保其新的 `SmartHotel-Registration` 資料庫安全。 [深入了解](/azure/azure-sql/database/security-overview)。
 - 尤其是，Contoso 會將 web 應用程式更新為搭配使用 SSL 與憑證。
 
 ### <a name="backups"></a>備份
 
-- Contoso 團隊會在 Azure SQL 受控執行個體中審核資料庫的備份需求。 [深入了解](/azure/sql-database/sql-database-automated-backups)。
-- 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 深入瞭解 [自動備份](/azure/sql-database/sql-database-automated-backups)。
-- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [深入了解](/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso 團隊會在 Azure SQL 受控執行個體中審核資料庫的備份需求。 [深入了解](/azure/azure-sql/database/automated-backups-overview)。
+- 它們也會瞭解管理 SQL Database 備份和還原的相關資訊。 [深入了解](/azure/azure-sql/database/automated-backups-overview)自動備份。
+- 他們會考慮執行容錯移轉群組，以提供資料庫的區域性容錯移轉。 [深入了解](/azure/azure-sql/database/auto-failover-group-overview)。
 - 他們考慮在主要區域中部署 web 應用程式 (`East US 2`) 和次要區域 (`Central US`) 以進行復原。 小組可以設定流量管理員，以確保在發生區域性中斷時進行容錯移轉。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化

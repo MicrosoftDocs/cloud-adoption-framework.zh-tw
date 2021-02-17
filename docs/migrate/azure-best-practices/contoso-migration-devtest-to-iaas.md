@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 6256de325aff36a6a9788722a2689cdf7af71657
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 24b29df57baf21d6d0d96dd605bcec4ba1cafb1f
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712429"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631826"
 ---
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
@@ -149,7 +149,7 @@ Contoso 需要將 Vm 遷移至虛擬網路，當 Azure Vm 建立、布建和設�
 
     1. 從 Azure Migrate 下載。OVA 映射，並將其匯入 VMware。
 
-       ![下載畫面的螢幕擷取畫面。OVA 檔案。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
+       ![下載的螢幕擷取畫面。OVA 檔案。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
 
        _圖3：下載。OVA 檔案。_
 

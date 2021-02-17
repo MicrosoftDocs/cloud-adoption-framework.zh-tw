@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 6a05051287765528ea34774b4a5cbfb12e575639
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 9602b4921249c13cc34d23fcf8a44f75b65b6251
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174398"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631435"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -75,7 +75,7 @@ Contoso 藉由結合一份優缺點來評估提議的設計。
 | 考量 | 詳細資料 |
 | --- | --- |
 | **優點** | 這兩個應用程式 Vm 都會移至 Azure，而不需要變更，讓遷移變簡單。 <br><br> 因為 Contoso 會針對這兩個應用程式 Vm 使用隨即轉移方法，所以不需要應用程式資料庫的任何特殊設定或遷移工具。 <br><br> Contoso 可以使用 Azure Hybrid Benefit 來利用其軟體保證的投資。 <br><br> Contoso 會保留 Azure 中應用程式 Vm 的完整控制權。 |
-| **缺點** | `WEBVM` 和 `SQLVM` 正在執行 Windows Server 2008 R2。 Azure 支援特定角色的作業系統。 [深入了解](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。 <br><br> 應用程式的 web 和資料層會保留為單一失敗點。 <br><br> `SQLVM` 正在 SQL Server 2008 R2 上執行。 SQL Server 2008 R2 不再存在於主流支援中，但 Azure Vm 支援此功能。 [深入了解](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-2008-eos-extend-support)。 <br><br> Contoso 必須繼續支援 Azure Vm 上的應用程式，而不是移至受管理的服務，例如 Azure App Service 或 Azure SQL Database。 |
+| **缺點** | `WEBVM` 和 `SQLVM` 正在執行 Windows Server 2008 R2。 Azure 支援特定角色的作業系統。 [深入了解](/troubleshoot/azure/virtual-machines/server-software-support)。 <br><br> 應用程式的 web 和資料層會保留為單一失敗點。 <br><br> `SQLVM` 正在 SQL Server 2008 R2 上執行。 SQL Server 2008 R2 不再存在於主流支援中，但 Azure Vm 支援此功能。 [深入了解](/azure/azure-sql/virtual-machines/windows/sql-server-2008-extend-end-of-support)。 <br><br> Contoso 必須繼續支援 Azure Vm 上的應用程式，而不是移至受管理的服務，例如 Azure App Service 或 Azure SQL Database。 |
 
 ### <a name="migration-process"></a>移轉程序
 
@@ -92,15 +92,15 @@ Contoso 會使用 Azure Migrate：伺服器遷移工具中的無代理程式方�
 
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
-| [Azure Migrate：伺服器移轉](/azure/migrate/contoso-migration-rehost-vm) | 此服務會協調和管理內部部署應用程式和工作負載的遷移，以及 Amazon Web Services (AWS) 和 Google Cloud Platform (VM 實例) GCP。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 深入瞭解 [費用和定價](https://azure.microsoft.com/pricing/details/azure-migrate)。  |
+| [Azure Migrate：伺服器移轉](/azure/cloud-adoption-framework/migrate/) | 此服務會協調和管理內部部署應用程式和工作負載的遷移，以及 Amazon Web Services (AWS) 和 Google Cloud Platform (VM 實例) GCP。 | 複寫至 Azure 的期間會產生 Azure 儲存體費用。 系統會建立 azure Vm，並在發生遷移時產生費用，並在 Azure 中執行 Vm。 深入瞭解 [費用和定價](https://azure.microsoft.com/pricing/details/azure-migrate/)。  |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 Contoso 和其他使用者必須符合此案例的下列必要條件。
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用 Azure 角色型存取控制來管理 Site Recovery 存取權](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 訂用帳戶** | Contoso 已在本系列稍早的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用 Azure 角色型存取控制來管理 Site Recovery 存取權](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
 | **Azure 基礎結構** | 瞭解 Contoso 如何 [設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 <br><br> 深入瞭解 Azure Migrate 的特定 [必要條件](./contoso-migration-devtest-to-iaas.md#prerequisites) ：伺服器遷移。 |
 | **內部部署伺服器** | 內部部署 vCenter 伺服器應執行5.5、6.0、6.5 或6.7 版。 <br><br> ESXi 主機應該執行5.5、6.0、6.5 或6.7 版。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
 
@@ -309,4 +309,4 @@ Contoso 會啟用 [Azure 成本管理和帳單](/azure/cost-management-billing/c
 ## <a name="conclusion"></a>結論
 
 在本文中，Contoso 會在 Azure 中重新裝載 SmartHotel360 應用程式。 系統管理員會使用 Azure Migrate：伺服器遷移工具，將應用程式 Vm 遷移至 Azure Vm。
-您也可以查看 [DevOps](https://aka.ms/adopt/plan/generator)產生器中已發佈的 Azure DevOps 專案。 一旦在產生器中，請下載雲端採用架構導覽下的 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration) 。 
+您也可以查看 [DevOps](https://aka.ms/adopt/plan/generator)產生器中已發佈的 Azure DevOps 專案。 一旦在產生器中，請下載雲端採用架構導覽下的 [伺服器遷移專案](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration) 。

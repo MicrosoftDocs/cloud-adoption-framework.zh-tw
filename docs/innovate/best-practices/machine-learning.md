@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: 什麼是機器學習服務、azure machine learning、機器學習工具、mlops、自動化機器學習
-ms.openlocfilehash: 8726613bd5291a2f99a32db4b63d1ee832fd6667
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 82120b386c9d3eb6d97b9642a2202402c7014596
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525876"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632132"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -41,7 +41,7 @@ Azure Machine Learning 為開發人員和資料科學家提供其機器學習工
 
 ## <a name="build-machine-learning-models-in-python-or-r"></a>以 Python 或 R 建立機器學習模型
 
-使用 Azure Machine Learning [Python SDK](/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) 或 [R SDK](https://azure.github.io/azureml-sdk-for-r/reference/index.html)，開始訓練您的本機電腦。 然後可以擴增至雲端。 有許多可用的 [計算目標](/azure/machine-learning/how-to-set-up-training-targets)，例如 Azure Machine Learning 計算和 [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks)，以及具有 [advanced 超參數微調服務](/azure/machine-learning/how-to-tune-hyperparameters)，您可以使用雲端的強大功能，更快建立更好的模型。 您也可以使用 SDK，[自動進行模型定型和微調](/azure/machine-learning/tutorial-auto-train-models)。
+使用 Azure Machine Learning [Python SDK](/python/api/overview/azure/ml) 或 [R SDK](https://azure.github.io/azureml-sdk-for-r/reference/index.html)，開始訓練您的本機電腦。 然後可以擴增至雲端。 有許多可用的 [計算目標](/azure/machine-learning/how-to-set-up-training-targets)，例如 Azure Machine Learning 計算和 [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks)，以及具有 [advanced 超參數微調服務](/azure/machine-learning/how-to-tune-hyperparameters)，您可以使用雲端的強大功能，更快建立更好的模型。 您也可以使用 SDK，[自動進行模型定型和微調](/azure/machine-learning/tutorial-auto-train-models)。
 
 ## <a name="build-machine-learning-models-with-no-code-tools"></a>使用無程式碼工具建立機器學習模型
 
@@ -66,7 +66,7 @@ Azure Machine Learning 為開發人員和資料科學家提供其機器學習工
 
 當您有正確的模型時，您可以在 Web 服務中、在 IoT 裝置上或從 Power BI 輕鬆使用它。 如需詳細資訊，請參閱 [使用 Azure Machine Learning 部署模型](/azure/machine-learning/how-to-deploy-and-where)。
 
-然後，您可以使用 [適用于 Python](/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true)、 [Azure Machine Learning studio](https://ml.azure.com/)或 [MACHINE Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli)的 Azure Machine Learning SDK 來管理已部署的模型。
+然後，您可以使用 [適用于 Python](/python/api/overview/azure/ml/)、 [Azure Machine Learning studio](https://ml.azure.com/)或 [MACHINE Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli)的 Azure Machine Learning SDK 來管理已部署的模型。
 
 您可以使用這些模型，並以 [即時](/azure/machine-learning/how-to-consume-web-service) 或 [非同步方式](/azure/machine-learning/how-to-use-parallel-run-step) 傳回大量資料的預測。
 
@@ -108,7 +108,7 @@ Azure Machine Learning 可與 Azure 平臺上的其他服務搭配使用，也�
 - Azure 監視器。 如需詳細資訊，請參閱[監視 Azure Machine Learning](/azure/machine-learning/monitor-azure-machine-learning)。
 - 資料存放區，例如 Azure 儲存體帳戶、Azure Data Lake Storage、Azure SQL Database、適用於 PostgreSQL 的 Azure 資料庫和 Azure 開放資料集。 如需詳細資訊，請參閱 [存取 Azure 儲存體服務中的資料](/azure/machine-learning/how-to-access-data) ，以及 [使用 Azure 開放資料集來建立資料集](/azure/machine-learning/how-to-create-register-datasets#create-datasets-with-azure-open-datasets)。
 - Azure 虛擬網路。 如需詳細資訊，請參閱[虛擬網路中的安全實驗和推斷](/azure/machine-learning/how-to-enable-virtual-network)。
-- Azure Pipelines。 如需詳細資訊，請參閱[定型和部署機器學習服務模型](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops&preserve-view=true)。
+- Azure Pipelines。 如需詳細資訊，請參閱[定型和部署機器學習服務模型](/azure/devops/pipelines/targets/azure-machine-learning)。
 - Git 存放庫記錄。 如需詳細資訊，請參閱 [Git 整合](/azure/machine-learning/concept-train-model-git-integration)。
 - MLflow. 如需詳細資訊，請參閱 [MLflow 來追蹤計量和部署模型](/azure/machine-learning/how-to-use-mlflow)。
 - Kubeflow。 如需詳細資訊，請參閱 [組建端對端工作流程管線](https://www.kubeflow.org/docs/azure/)。

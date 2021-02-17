@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 49aafe3f20e238cb9322472168f465cd98843067
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5dd750bcff3e2db84c709db2f4eaf853811d345a
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016012"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631707"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning 的機器學習作業
 
@@ -45,7 +45,7 @@ Azure Machine Learning 提供下列 MLOps 功能：
 
 MLOps 改進了機器學習解決方案的品質與一致性。 若要深入瞭解如何使用 Azure Machine Learning 來管理模型的生命週期，請參閱 [MLOps：使用 Azure Machine Learning 的模型管理、部署和監視](/azure/machine-learning/concept-model-management-and-deployment)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要深入瞭解，請閱讀及探索下列資源：
 
@@ -53,7 +53,7 @@ MLOps 改進了機器學習解決方案的品質與一致性。 若要深入瞭�
 - [使用 Azure Machine Learning 部署模型的](/azure/machine-learning/how-to-deploy-and-where)方式和位置
 - 教學課程： [在 Azure 容器實例中部署影像分類模型](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [端對端 MLOps 範例存放庫](https://github.com/microsoft/MLOps)
-- [使用 Azure Pipelines 的機器學習模型 CI/CD](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)
+- [使用 Azure Pipelines 的機器學習模型 CI/CD](/azure/devops/pipelines/targets/azure-machine-learning)
 - 建立使用已[部署模型](/azure/machine-learning/how-to-consume-web-service)的用戶端
 - [大規模機器學習](/azure/architecture/data-guide/big-data/machine-learning-at-scale)
 - [Azure AI 參考架構和最佳做法存放庫](https://github.com/microsoft/AI)

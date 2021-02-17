@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3c1daeaf7b772b12d82ccfe5d9a01b72816a80e9
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 52211e45aea8533a462f7052eae0c1ec2fe22911
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175163"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632013"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -98,20 +98,20 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 服務 | 描述 | 成本 |
 |---|---|---|
-| [AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只針對所耗用的 Vm 和相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service)。 |
-| [Azure Functions](https://azure.microsoft.com/services/functions) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions)。 |
-| [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | 儲存所有容器部署類型的映像。 | 成本是以功能、儲存體和使用持續時間為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry)。 |
-| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | 快速建立、部署及調整企業級 web、行動和 API 應用程式，以在任何平臺上執行。 | App Service 方案會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) | 簡化 Kubernetes 管理、部署和作業。 提供完全受控的 Kubernetes 容器協調流程服務。 | AKS 是免費服務。 只針對所耗用的 Vm 和相關聯的儲存體和網路資源支付費用。 [深入了解](https://azure.microsoft.com/pricing/details/kubernetes-service/)。 |
+| [Azure Functions](https://azure.microsoft.com/services/functions/) | 以事件驅動的無伺服器計算體驗，加快開發速度。 依需求進行調整。 | 只需就取用的資源支付費用。 根據每秒的資源取用量和執行次數計算方案的費用。 [深入了解](https://azure.microsoft.com/pricing/details/functions/)。 |
+| [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) | 儲存所有容器部署類型的映像。 | 成本是以功能、儲存體和使用持續時間為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/container-registry/)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service) | 快速建立、部署及調整企業級 web、行動和 API 應用程式，以在任何平臺上執行。 | App Service 方案會以每秒為單位計費。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 以下是 Contoso 針對此案例所需的項目：
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| Azure 訂用帳戶 | <li> Contoso 已在先前的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <li> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <li> 如果您使用現有的訂用帳戶，但您不是系統管理員，則需要與系統管理員合作，以指派擁有者或參與者許可權給您。 |
+| Azure 訂用帳戶 | <li> Contoso 已在先前的文章中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <li> 如果您建立免費帳戶，您就是訂用帳戶的系統管理員，而且可以執行所有動作。 <li> 如果您使用現有的訂用帳戶，但您不是系統管理員，則需要與系統管理員合作，以指派擁有者或參與者許可權給您。 |
 | Azure 基礎結構 | <li> 瞭解 [Contoso 如何設定 Azure 基礎結構](./contoso-migration-infrastructure.md)。 |
-| 開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li> [Visual Studio Community 2017 15.5 版](https://visualstudio.microsoft.com) <li> .NET 工作負載，已啟用 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker 社區版 (Windows 10) 或 Docker Enterprise edition (Windows Server) ](https://docs.docker.com/docker-for-windows/install)，設定為使用 windows 容器 |
+| 開發人員必要條件 | 在開發人員工作站上，Contoso 需要下列工具： <li> [Visual Studio Community 2017 15.5 版](https://visualstudio.microsoft.com/vs/community/) <li> .NET 工作負載，已啟用 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads/) <li> [Azure CLI](/cli/azure/install-azure-cli) <li> [Docker 社區版 (Windows 10) 或 Docker Enterprise edition (Windows Server) ](https://docs.docker.com/docker-for-windows/install/)，設定為使用 windows 容器 |
 
 ## <a name="scenario-steps"></a>案例步驟
 
@@ -166,7 +166,7 @@ Contoso 管理員會布建 AKS 和 Azure Container Registry，如下所示：
 
     _圖6： PowerShell 整合式終端機。_
 
-6. 他們會執行 `az login` 命令，並遵循指示以使用其網頁瀏覽器進行驗證，藉以驗證 Azure CLI。 深入瞭解如何 [使用 Azure CLI 登入](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)。
+6. 他們會執行 `az login` 命令，並遵循指示以使用其網頁瀏覽器進行驗證，藉以驗證 Azure CLI。 深入瞭解如何 [使用 Azure CLI 登入](/cli/azure/authenticate-azure-cli)。
 
     ![顯示 Azure CLI 驗證視窗的螢幕擷取畫面。](./media/contoso-migration-rebuild/aks5.png)
 
@@ -763,14 +763,14 @@ Contoso 管理員會藉由執行下列步驟來部署應用程式：
 
 ### <a name="security"></a>安全性
 
-- Contoso 必須確保新資料庫安全無虞。 若要深入瞭解，請參閱 [Azure SQL Database 和 SQL 受控執行個體安全性功能的總覽](/azure/sql-database/sql-database-security-overview)。
+- Contoso 必須確保新資料庫安全無虞。 若要深入瞭解，請參閱 [Azure SQL Database 和 SQL 受控執行個體安全性功能的總覽](/azure/azure-sql/database/security-overview)。
 - 您必須將應用程式更新為搭配使用 SSL 與憑證。 容器執行個體應重新部署為會在 443 上接聽。
 - Contoso 應考慮使用 Azure Key Vault 來協助保護其 Service Fabric 應用程式的秘密。 若要深入瞭解，請參閱 [在 Service Fabric 應用程式中管理加密的秘密](/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>備份和災害復原
 
-- Contoso 必須檢查 [Azure SQL Database 的備份需求](/azure/sql-database/sql-database-automated-backups)。
-- Contoso 應考慮執行 [SQL 容錯移轉群組，以提供資料庫的區域性容錯移轉](/azure/sql-database/sql-database-auto-failover-group)。
+- Contoso 必須檢查 [Azure SQL Database 的備份需求](/azure/azure-sql/database/automated-backups-overview)。
+- Contoso 應考慮執行 [SQL 容錯移轉群組，以提供資料庫的區域性容錯移轉](/azure/azure-sql/database/auto-failover-group-overview)。
 - Contoso 可以使用 [Azure Container Registry PREMIUM SKU 的異地](/azure/container-registry/container-registry-geo-replication)複寫。
 - Azure Cosmos DB 會自動備份。 若要深入瞭解，請參閱 [Azure Cosmos DB 中的線上備份和隨選資料還原](/azure/cosmos-db/online-backup-and-restore)。
 
@@ -792,6 +792,6 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 <!-- docsTest:casing "with the Azure Cognitive Vision Services" "computer vision functionality" -->
 
-- **[使用 Azure App Service 將網站部署至 Azure](/learn/paths/deploy-a-website-with-azure-app-service)：** 藉由在 Azure 中建立 web 應用程式，您可以輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注于網站功能，並依賴健全的 Azure 平臺來協助提供網站的安全存取。
+- **[使用 Azure App Service 將網站部署至 Azure](/learn/paths/deploy-a-website-with-azure-app-service/)：** 藉由在 Azure 中建立 web 應用程式，您可以輕鬆地發佈及管理網站，而不需要使用基礎伺服器、儲存體或網路資產。 相反地，您可以專注于網站功能，並依賴健全的 Azure 平臺來協助提供網站的安全存取。
 
-- **[使用 Azure 認知視覺服務來處理和分類影像](/learn/paths/classify-images-with-vision-services)：** Azure 認知服務提供預建功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用 Azure 認知視覺服務來偵測臉部、標記和分類影像，以及識別物件。
+- **[使用 Azure 認知視覺服務來處理和分類影像](/learn/paths/process-classify-images-with-azure-cognitive-vision-services/)：** Azure 認知服務提供預建功能，可在您的應用程式中啟用電腦視覺功能。 瞭解如何使用 Azure 認知視覺服務來偵測臉部、標記和分類影像，以及識別物件。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 078c5500fddc61c4f4fef6aad61ac7fcc2803510
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 0a679af5d8b7d73cc48accb4cb08932905bce763
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712919"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631741"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -111,7 +111,7 @@ Contoso 管理員會將 Team Foundation Server 實例升級為 Team Foundation S
 
 1. 若要開始，系統管理員會備份其 Team Foundation Server 實例，此實例是在 VMware 虛擬機器) 上執行 (VM，而且它們會採用 VMware 快照集。
 
-    ![用於升級 Team Foundation Server 的 [消費者入門] 窗格螢幕擷取畫面。](./media/contoso-migration-tfs-vsts/upgrade1.png)
+    ![用於升級 Team Foundation Server 的 [開始使用] 窗格螢幕擷取畫面。](./media/contoso-migration-tfs-vsts/upgrade1.png)
 
 1. Team Foundation Server 安裝程式隨即啟動，並選擇安裝位置。 安裝程式需要存取網際網路。
 
@@ -130,7 +130,7 @@ Contoso 管理員會將 Team Foundation Server 實例升級為 Team Foundation S
      ![確認 Team Foundation Server 安裝的 [產品待處理專案] 窗格螢幕擷取畫面。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 某些 Team Foundation Server 升級需要在升級完成後執行 [設定功能] Wizard。 [深入了解](/azure/devops/reference/configure-features-after-upgrade?view=vsts)。
+> 某些 Team Foundation Server 升級需要在升級完成後執行 [設定功能] Wizard。 [深入了解](/azure/devops/reference/configure-features-after-upgrade?view=vsts&preserve-view=true)。
 
 **需要其他協助？**
 
@@ -479,13 +479,13 @@ Contoso 管理員會執行試執行的遷移，以確定一切都如預期般運
 
 **需要其他協助？**
 
-如需詳細資訊，請參閱 [將存放庫從 TFVC 匯入 Git](/azure/devops/repos/git/import-from-TFVC?view=vsts)。
+如需詳細資訊，請參閱 [將存放庫從 TFVC 匯入 Git](/azure/devops/repos/git/import-from-TFVC?view=vsts&preserve-view=true)。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
 現在完成遷移後，Contoso 團隊必須執行下列動作：
 
-- 檢閱[匯入之後](/azure/devops/articles/migration-post-import?view=vsts)一文，以了解其他匯入活動的相關資訊。
+- 檢閱[匯入之後](/azure/devops/articles/migration-post-import?view=vsts&preserve-view=true)一文，以了解其他匯入活動的相關資訊。
 - 請刪除 TFVC 存放庫或將其放在唯讀模式中。 不能使用程式碼基底，但可以參考其歷程記錄。
 
 ## <a name="post-migration-training"></a>移轉後訓練

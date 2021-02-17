@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 8e87f0ac16a4a5c942c20deb1bddecb090e88c58
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 030c036b41532c1cc55321ebcfe4c352a66e9775
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014737"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631520"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -144,10 +144,10 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 1. 選取定價層。
 1. 選取 [檢閱 + 建立]。
 
-    ![[建立遷移服務] 畫面的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
+    ![[建立遷移服務] 頁面的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
     _圖3：複習和建立。_
 
-1. 選取 [建立]。
+1. 選取 [建立]  。
 
 ### <a name="create-an-azure-database-for-postgresql-instance"></a>建立「適用於 PostgreSQL 的 Azure 資料庫」執行個體
 
@@ -215,7 +215,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
     ![顯示選取目標資訊的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_target.png)
     _圖7：選取目標資訊。_
 
-1. 選取要遷移的資料庫。 每個資料庫的架構都應該已在先前遷移。 接著，選取 [儲存]。
+1. 選取要遷移的資料庫。 每個資料庫的架構都應該已在先前遷移。 然後選取 [儲存]。
 
     ![顯示選取資料庫的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_db.png)
     _圖8：選取資料庫。_

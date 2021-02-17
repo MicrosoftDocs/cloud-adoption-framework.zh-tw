@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: c7ba2e6771069e494568a5dbe5d29a4f2cac2f97
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5b5b5318baed959387540b65580d69d1877ccad2
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015791"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631724"
 ---
 <!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->
@@ -85,7 +85,7 @@ Azure 監視器是一種軟體即服務 (SaaS) 供應專案，因此其支援的
 
 #### <a name="agents"></a>代理程式
 
-Operations Manager 直接從安裝在 [Windows 電腦](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)上的代理程式收集資料。 它可以接受來自 Operations Manager SDK 的資料，但這種方法通常用於以自訂應用程式擴充產品的合作夥伴，而不是用來收集監視資料。 它可以從遠端存取這些其他裝置的 Windows 代理程式上執行的特殊模組，收集其他來源（例如 [Linux 電腦](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) 和網路裝置）的資料。
+Operations Manager 直接從安裝在 [Windows 電腦](/system-center/scom/plan-planning-agent-deployment#windows-agent)上的代理程式收集資料。 它可以接受來自 Operations Manager SDK 的資料，但這種方法通常用於以自訂應用程式擴充產品的合作夥伴，而不是用來收集監視資料。 它可以從遠端存取這些其他裝置的 Windows 代理程式上執行的特殊模組，收集其他來源（例如 [Linux 電腦](/system-center/scom/plan-planning-agent-deployment#linuxunix-agent) 和網路裝置）的資料。
 
 ![Operations Manager 代理程式的圖表](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -93,7 +93,7 @@ Operations Manager 代理程式可以從本機電腦上的多個資料來源收�
 
 #### <a name="management-packs"></a>管理組件
 
-Operations Manager 會使用工作流程 (規則、監視和物件探索) 來執行所有監視。 這些工作流程會一起封裝在 [管理元件](/system-center/scom/manage-overview-management-pack?view=sc-om-2019) 中，並部署至代理程式。 管理套件適用于各種不同的產品和服務，包括預先定義的規則和監視。 您也可以為自己的應用程式和自訂案例撰寫自己的管理元件。
+Operations Manager 會使用工作流程 (規則、監視和物件探索) 來執行所有監視。 這些工作流程會一起封裝在 [管理元件](/system-center/scom/manage-overview-management-pack) 中，並部署至代理程式。 管理套件適用于各種不同的產品和服務，包括預先定義的規則和監視。 您也可以為自己的應用程式和自訂案例撰寫自己的管理元件。
 
 #### <a name="monitoring-configuration"></a>監視設定
 
@@ -109,7 +109,7 @@ Operations Manager 會使用工作流程 (規則、監視和物件探索) 來執
 
 #### <a name="data-sources"></a>資料來源
 
-Azure 監視器會收集各種來源的資料，包括 Azure 基礎結構和平臺資源、Windows 和 Linux 電腦上的代理程式，以及在 Azure 儲存體中收集的監視資料。 任何 REST 用戶端都可以使用 API 將記錄資料寫入 Azure 監視器，而且您可以定義 web 應用程式的自訂計量。 某些計量資料可以路由至不同的位置，視其使用方式而定。 例如，您可能會使用資料進行「快速」的警示，或使用長期趨勢分析搜尋與其他記錄資料。
+Azure 監視器會收集各種來源的資料，包括 Azure 基礎結構和平臺資源、Windows 和 Linux 電腦上的代理程式，以及監視 Azure 儲存體中收集的資料。 任何 REST 用戶端都可以使用 API 將記錄資料寫入 Azure 監視器，而且您可以定義 web 應用程式的自訂計量。 某些計量資料可以路由至不同的位置，視其使用方式而定。 例如，您可能會使用資料來進行「盡可能快速」的警示，或將長期趨勢分析搜尋與其他記錄資料一起使用。
 
 #### <a name="monitoring-solutions-and-insights"></a>監視解決方案和見解
 
@@ -125,7 +125,7 @@ Azure 監視器所收集的資料會儲存為記錄檔或計量，而 Azure 監�
 
 因為 Azure 監視器會將資料收集與該資料的動作分開，所以在許多情況下可能無法提供近乎即時的警示。 若要對記錄資料發出警示，查詢會依照警示中定義的週期性排程執行。 此行為可讓 Azure 監視器輕鬆地將所有受監視來源的資料相互關聯，而且您可以透過各種方式以互動方式分析資料。 這特別有助於進行根本原因分析，並找出可能發生問題的位置。
 
-## <a name="health-monitoring"></a>健康狀況監視
+## <a name="health-monitoring"></a>健康狀態監視
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -199,7 +199,7 @@ Azure 監視器從 Azure 資源收集計量和記錄，幾乎不需要設定。 
 
 監視器支援數種方法，可從 Azure 或外部資源收集監視或管理資料。 然後，您可以將資料從度量或記錄存放區解壓縮和轉送到 ITSM 或監視工具。 或者，您可以使用 Azure 監視器 REST API 來執行管理工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [監視雲端部署模型](./cloud-models-monitor-overview.md)

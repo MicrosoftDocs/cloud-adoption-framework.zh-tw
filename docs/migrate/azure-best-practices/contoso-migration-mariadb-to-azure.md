@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 1e21ad6985b6790676005836590a91be1fd50adf
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a2ccca8bc86fe344690ec74ba3d567d045cbb6ee
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015163"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631537"
 ---
 <!-- cSpell:ignore mysqldump -->
 
@@ -48,7 +48,7 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 | **可用性** | 目前，內部員工對適用于 mariadb 實例的裝載環境有很難的時間。 Contoso 希望資料庫層有接近99.99% 的可用性。 |
 | **延展性** | 內部部署資料庫主機的容量很快地用盡。 Contoso 需要一種方法來調整超過目前限制的實例，或在商務環境變更時縮小以節省成本。 |
 | **效能** | Contoso 人力資源 (HR) 部門有數個報表，每日、每週和每月執行一次。 當它執行這些報表時，會注意到與員工面向的應用程式有相當大的效能問題。 它需要執行報表，而不會影響應用程式效能。 |
-| **Security** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
+| **安全性** | Contoso 必須知道資料庫只能供其內部應用程式存取，而且無法透過網際網路顯示或存取。 |
 | **監視** | Contoso 目前使用工具來監視適用于 mariadb 資料庫的計量，並在 CPU、記憶體或儲存體發生問題時提供通知。 公司想要在 Azure 中擁有相同的功能。 |
 | **業務持續性** | HR 資料存放區是 Contoso 日常營運的重要部分。 如果它損毀或需要還原，公司想要將停機時間降到最低。 |
 | **Azure** | Contoso 想要將應用程式移至 Azure，而不在 Vm 上執行。 Contoso 需求狀態為使用 Azure 平臺即服務 (適用于資料層的 PaaS) 服務。 |
@@ -136,7 +136,7 @@ Contoso 會使用下列步驟來遷移其資料庫。
     ![螢幕擷取畫面顯示 Azure 中的新適用于 mariadb 實例。 ](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
     _圖4： Azure 中的新適用于 mariadb 實例。_
 
-  - 選取 [建立]。
+  - 選取 [建立]  。
   - 選取您的訂用帳戶和資源群組。
   - 選取伺服器名稱和位置。
   - 選取您的目標版本，也就是10.2 或10.3。
@@ -144,10 +144,10 @@ Contoso 會使用下列步驟來遷移其資料庫。
   - 輸入系統管理員使用者名稱和密碼。
   - 選取 [檢閱 + 建立]。
 
-    ![螢幕擷取畫面顯示 [建立適用于 mariadb 伺服器] 畫面。 ](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
+    ![[建立適用于 mariadb 伺服器] 頁面的螢幕擷取畫面。 ](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
     _圖5：檢查和建立。_
 
-  - 選取 [建立]。
+  - 選取 [建立]  。
   - 記錄伺服器主機名稱、使用者名稱和密碼。
   - 選取 [ **連接安全性**]。
   - 選取 [ **新增用戶端 ip** ] (您將從) 還原資料庫的 ip。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: a4f78228dad4ad2be191d7515824b1855ee9f690
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: b82eaf9e330e8f59e542d43ea07f3593afa1ffab
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712666"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631639"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -81,9 +81,9 @@ Contoso 會按照下列方式完成移轉程序：
 
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 來評定其 VMware Vm。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) 可免費使用。 您可能會產生費用，取決於您決定要用於評量和遷移的 (第一方或 ISV) 工具。 |
-| [Azure 資料庫移轉服務](/azure/dms/dms-overview) | 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
-| [適用於 MySQL 的 Azure 資料庫](/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫 [定價](https://azure.microsoft.com/pricing/details/mysql) 和擴充性選項。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso 會使用 Azure Migrate 來評定其 VMware Vm。 Azure Migrate 會評定機器是否適合移轉。 它會提供在 Azure 中執行的大小調整建議和成本估計。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate/) 可免費使用。 您可能會產生費用，取決於您決定要用於評量和遷移的 (第一方或 ISV) 工具。 |
+| [Azure 資料庫移轉服務](/azure/dms/dms-overview) | 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration/)。 |
+| [適用於 MySQL 的 Azure 資料庫](/azure/mysql/) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署提供完全受控的企業專用的 MySQL 資料庫。 | 深入瞭解適用於 MySQL 的 Azure 資料庫 [定價](https://azure.microsoft.com/pricing/details/mysql/server/) 和擴充性選項。 |
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -91,7 +91,7 @@ Contoso 會按照下列方式完成移轉程序：
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用 AZURE RBAC) 的 azure 角色型存取控制來管理 Site Recovery 存取 (](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
+| **Azure 訂用帳戶** | Contoso 在先前文章期間已建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有的訂用帳戶，而且您不是系統管理員，請與系統管理員合作，指派擁有者或參與者許可權給您。 <br><br> 如果您需要更細微的許可權，請參閱 [使用角色型存取控制來管理 Azure Site Recovery 存取 (RBAC) ](/azure/site-recovery/site-recovery-role-based-linked-access-control)。 |
 | **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定 Azure 基礎結構。 |
 | **內部部署伺服器** | 內部部署 vCenter Server 應執行5.5、6.0、6.5 或6.7 版。 <br><br> 執行5.5、6.0、6.5 或6.7 版本的 ESXi 主機。 <br><br> 一或多部在 ESXi 主機上執行的 VMware VM。 |
 | **內部部署 VM** | 檢閱已背書在 Azure 上執行的 [Linux 機器](/azure/virtual-machines/linux/endorsed-distros)。 |
@@ -129,11 +129,11 @@ Contoso 會按照下列方式完成移轉程序：
 
        1. 設定必要條件。
 
-          ![顯示 [設定必要條件] 畫面的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/migration-setup-prerequisites.png)
+          ![[設定必要條件] 頁面的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/migration-setup-prerequisites.png)
 
        1. 將工具指向 Azure 訂用帳戶。
 
-          ![顯示設定訂用帳戶的螢幕擷取畫面](./media/contoso-migration-rehost-vm/migration-register-azure.png)
+          ![設定訂用帳戶的螢幕擷取畫面。](./media/contoso-migration-rehost-vm/migration-register-azure.png)
 
        1. 設定 VMware vCenter 認證。
 
@@ -287,7 +287,7 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-
 
 - 確定已符合所有的遷移必要條件：
   - MySQL 伺服器資料庫來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。
-  - `my.ini` (Windows) 或 `my.cnf` (Unix) 啟用二進位記錄。 若無法這樣做，將會在 [遷移嚮導] 中造成下列錯誤：「二進位記錄中的錯誤。 變數 binlog_row_image 的值為「基本」。 請將其變更為「完整」。 如需詳細資訊，請參閱 [MySQL 網站](https://go.microsoft.com/fwlink/?linkid=873009`)。
+  - `my.ini` (Windows) 或 `my.cnf` (Unix) 啟用二進位記錄。 若未這麼做，將會在遷移嚮導中產生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal.' Please change it to 'full.'` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
   - 使用者必須有 `ReplicationAdmin` 角色。
   - 在不包含外鍵和觸發程式的情況下遷移資料庫架構。
 - 建立透過 Azure ExpressRoute 或 VPN 連接到內部部署網路的虛擬網路。
@@ -347,7 +347,7 @@ Contoso 管理員會使用 [使用 MySQL 的備份和還原] 工具來遷移資�
 
 1. 將資料庫匯出為 `osticket` 本機獨立檔案。
 
-    ![顯示資料匯出畫面的螢幕擷取畫面。](./media/contoso-migration-rehost-linux-vm-mysql/workbench2.png)
+    ![[資料匯出] 頁面的螢幕擷取畫面。](./media/contoso-migration-rehost-linux-vm-mysql/workbench2.png)
 
 1. 在本機備份資料庫之後，請建立適用於 MySQL 的 Azure 資料庫實例的連接。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1df49da24679b6dd241f4fc7e550411660afad60
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c4d177b427724cd9c3eb7573e8a0efe62435a454
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016692"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631860"
 ---
 # <a name="create-update-schedules"></a>建立更新排程
 
@@ -21,7 +21,7 @@ ms.locfileid: "97016692"
 
 若要透過 Azure 入口網站建立更新排程，請參閱 [排程更新部署](/azure/automation/update-management/deploy-updates#schedule-an-update-deployment)。
 
-此 `Az.Automation` 模組現在支援使用 Azure PowerShell 來設定更新管理。 模組的[版本 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0)新增[AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) Cmdlet 的支援。 此 Cmdlet 可讓您使用標籤、位置和已儲存的搜尋，來設定彈性電腦群組的更新排程。
+此 `Az.Automation` 模組現在支援使用 Azure PowerShell 來設定更新管理。 [AzAutomationUpdateManagementAzureQuery 指令程式](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery)可讓您使用標籤、位置和已儲存的搜尋，來設定彈性電腦群組的更新排程。
 
 ## <a name="example-script"></a>範例指令碼
 
@@ -34,7 +34,7 @@ ms.locfileid: "97016692"
   - 具有 `Production` 將值設定為的標記套用 `true` 。
 - 將更新排程套用到查詢的電腦，並設定兩小時的更新時段。
 
-執行範例腳本之前，您必須使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 登入。 當您啟動腳本時，請提供下列資訊：
+執行範例腳本之前，您必須使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 登入。 當您啟動腳本時，請提供下列資訊：
 
 - 目標訂用帳戶識別碼
 - 目標資源群組
@@ -107,7 +107,7 @@ ms.locfileid: "97016692"
         -IncludedUpdateClassification Security,Critical
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱如何 [在 Azure 中](./common-policies.md) 執行可協助管理伺服器的一般原則範例。
 

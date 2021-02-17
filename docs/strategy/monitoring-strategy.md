@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: a0b0df8710f3c82d02ff93bd2989229ad58b95d6
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 310d967796a0a1896492d68711edbde6d920e185
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174976"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632540"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -61,7 +61,7 @@ ms.locfileid: "98174976"
 
 ## <a name="high-level-modeling"></a>高層級模型
 
-當企業判斷要移動哪些服務時，您必須謹慎投資您的資源。 在內部部署環境中，您擁有監視和大量投資的所有責任。 例如，對 SaaS 服務所做的移動，不會消除您的監視責任。 您將決定誰需要存取權、誰取得警示，以及至少需要存取分析的人員。 [Azure 監視器](/azure/azure-monitor/) 和 [Azure Arc](https://azure.microsoft.com/services/azure-arc/) 是 azure 服務，可彈性地處理所有四個雲端模型中的監視案例，而不只是 azure 內的資源。 您需要查看一般的雲端模型，如下所示。 如果您是使用組織中 [Microsoft 365](/microsoft-365/?view=o365-worldwide) 服務所提供的 Microsoft Office 應用程式，除了 [Azure 資訊安全中心](/azure/security-center/)之外，還必須包含 Microsoft 365 的安全性和合規性監視。 這包括身分識別、端點管理，以及您公司網路以外的裝置監視。
+當企業判斷要移動哪些服務時，您必須謹慎投資您的資源。 在內部部署環境中，您擁有監視和大量投資的所有責任。 例如，對 SaaS 服務所做的移動，不會消除您的監視責任。 您將決定誰需要存取權、誰取得警示，以及至少需要存取分析的人員。 [Azure 監視器](/azure/azure-monitor/) 和 [Azure Arc](https://azure.microsoft.com/services/azure-arc/) 是 azure 服務，可彈性地處理所有四個雲端模型中的監視案例，而不只是 azure 內的資源。 您需要查看一般的雲端模型，如下所示。 如果您是使用組織中 [Microsoft 365](/microsoft-365/) 服務所提供的 Microsoft Office 應用程式，除了 [Azure 資訊安全中心](/azure/security-center/)之外，還必須包含 Microsoft 365 的安全性和合規性監視。 這包括身分識別、端點管理，以及您公司網路以外的裝置監視。
 
 ![雲端模型圖表](./media/monitoring-strategy/cloud-models.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "98174976"
 
 - 從服務資產開始到堆疊的資料流程方法：基礎結構、IoT 裝置、行動裝置和其他裝置所發出的計量和記錄資料。 管理下的所有專案（ () 中的監視工具）？ 向上和向外移動 (ITSM 工具、全域監視、安全性資訊和事件管理 (SIEM) 、自訂警示擴充，以及其他) 。
 
-- 是否要繼續 [System Center Operations Manager](/system-center/scom/welcome?view=sc-om-2019) 或其他監視工具。
+- 是否要繼續 [System Center Operations Manager](/system-center/scom/welcome) 或其他監視工具。
 
 - 經濟成本。
 

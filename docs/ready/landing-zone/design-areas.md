@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 29a7bd79511f1a7ae7722ef7746f18dac1c75918
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: 88eb52e410c9f7a1caf2c3c8f4bfc45bbb743ce0
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909373"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632523"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "97909373"
 | 業務持續性和災害復原 (BCDR) | 復原是讓應用程式順利運作的關鍵。 BCDR 是復原的重要元件。 BCDR 牽涉到透過備份來保護資料，以及保護應用程式免于透過災難復原中斷。 | 管理 |
 | 部署選項 | 調整最適合的工具和範本，以部署登陸區域和支援資源。 | 就緒 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 您可以在一段時間內實行這些設計區域，讓您可以成長到雲端作業模型。 或者，也有豐富的固定實選項，其開頭為每個設計區域上定義的位置。
 

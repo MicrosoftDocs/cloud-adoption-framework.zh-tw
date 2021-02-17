@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 3d65538ed9fa3c45563bb99d85c93ade1e11f1a4
-ms.sourcegitcommit: 30837e99289338b0cc0f9efb2a5e07aca052e2e8
+ms.openlocfilehash: f086849ad56e3cced9ac1de89fd109781772526f
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560743"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631979"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -82,7 +82,7 @@ Contoso 正在 [Enterprise 合約](https://azure.microsoft.com/overview/sales-nu
 
 向 Azure 支付費用後，Contoso 必須了解如何管理 Azure 訂用帳戶。 由於 Contoso 有 EA，因此它可以建立的 Azure 訂用帳戶數目沒有任何限制。 Azure Enterprise 合約註冊會定義公司圖形和使用 Azure 服務的方式，並定義核心治理結構。
 
-在第一個步驟中，Contoso 定義了一種結構，稱為 _企業 scaffold_ 進行註冊。 Contoso 使用 [Azure enterprise scaffold 指引](../../reference/azure-scaffold.md) 來協助您瞭解及設計 scaffold。
+在第一個步驟中，Contoso 定義了一種結構，稱為 *企業 scaffold* 進行註冊。 Contoso 使用 [Azure enterprise scaffold 指引](../../reference/azure-scaffold.md) 來協助您瞭解及設計 scaffold。
 
 現在，Contoso 已決定使用功能性方法來管理訂用帳戶：
 
@@ -125,7 +125,7 @@ _圖3： Azure 保留的虛擬機器執行個體。_
 
 Contoso 公司決定將其內部部署 Active Directory 擴充至雲端，而不是在 Azure 中建置新的個別系統。 因為 Contoso 尚未使用 Microsoft 365，所以需要布建 Azure AD 實例。 如果 Contoso 使用 Microsoft 365，則它已經有現有的 Azure AD 租使用者和目錄，可以用來做為主要的 Azure AD 實例。
 
-深入瞭解 [Microsoft 365 身分識別模型和 Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide)。 您也可以瞭解如何 [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租使用者](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。
+深入瞭解 [Microsoft 365 身分識別模型和 Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity)。 您也可以瞭解如何 [將 Azure 訂用帳戶關聯或新增至您的 Azure Active Directory 租使用者](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)。
 
 ### <a name="create-an-azure-ad-directory"></a>建立 Azure AD 目錄
 
@@ -841,7 +841,7 @@ _圖45：安全性模型。_
 
 與 ASG 相關聯的 NSG 將會以最低權限設定，以確保只有允許的封包可從網路的某個部分流向其目的地。
 
-| 動作 | 名稱 | 來源 | 目標 | 連接埠 |
+| 動作 | 名稱 | 來源 | 目標 | Port |
 | --- | --- | --- | --- | --- |
 | `Allow` | `AllowInternetToFE` | `VNET-HUB-EUS1`/`IB-TrustZone` | `APP1-FE` | 80、443 |
 | `Allow` | `AllowWebToApp` | `APP1-FE` | `APP1-APP` | 80、443 |
@@ -860,6 +860,6 @@ Contoso 確定特定 VM 需要加密。 Contoso 會將加密套用至具有客�
 
 雲端遷移並不需要在此處採取的每個步驟。 在此案例中，Contoso 規劃了可處理所有類型的遷移，同時又安全、具彈性且可擴充的網路基礎結構。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 設定好其 Azure 基礎結構之後，Contoso 就可以開始將工作負載遷移至雲端。 如需使用此範例基礎結構作為遷移目標的案例，請參閱 [移轉模式和範例總覽](./contoso-migration-overview.md#windows-server-workloads) 。

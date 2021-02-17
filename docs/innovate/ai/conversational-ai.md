@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: bfa2d419b2f58eb44c173e55fcb14ec117774b16
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 539ea18bc9d5d076c84bdd3db8142b23992f6a03
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446737"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632166"
 ---
 # <a name="conversational-ai"></a>對話式 AI
 
@@ -37,19 +37,19 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 - Bot Framework 是開放原始碼供應專案，提供 c #、JavaScript、Python 和 JAVA) 提供的 SDK (，可協助您設計、建立及測試您的 bot。 它也提供 Bot Framework 編輯器中的免費視覺化撰寫畫布，以及 Bot Framework Emulator 中的測試控管。
 - Azure Bot Service 是 Azure 中的專用服務，可讓您在 Azure 中裝載或發佈您的 Bot，並聯機到熱門通道。
 
-- 閱讀 [Azure Bot Service 並 Bot Framework 總覽](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- 瞭解 [bot 設計的原則](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- 取得 [BOT FRAMEWORK SDK 和工具的最新版本](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
+- 閱讀 [Azure Bot Service 並 Bot Framework 總覽](/azure/bot-service/bot-service-overview-introduction)
+- 瞭解 [bot 設計的原則](/azure/bot-service/bot-service-design-principles)
+- 取得 [BOT FRAMEWORK SDK 和工具的最新版本](/azure/bot-service/what-is-new)
 
 開始使用的其中一個最簡單方式是使用 QnA Maker，這是 Azure 認知服務的一部分，可讓您以智慧方式將常見問題檔或網站轉換成 Q&體驗（以分鐘為單位）。
 
-- [使用 QnA Maker 快速建立具有 Q&功能的 bot](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
+- [使用 QnA Maker 快速建立具有 Q&功能的 bot](/azure/bot-service/bot-builder-tutorial-add-qna)
 - 測試 [QnA Maker 服務](https://www.qnamaker.ai/)
 
 下載並使用 Bot Framework SDK 和工具來開發 Bot。
 
 - [Bot Framework 編輯器的5分鐘快速入門](/composer/)
-- [使用 Bot Framework SDK (c #、JavaScript、Python) 建立及測試 bot ](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
+- [使用 Bot Framework SDK (c #、JavaScript、Python) 建立及測試 bot ](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart)
 
 瞭解如何新增認知服務，讓您的 bot 更具智慧。
 
@@ -60,6 +60,6 @@ Microsoft 的 Azure AI 平臺旨在讓開發人員能夠創新並加速其專案
 
 - [Bot Framework 虛擬助理解決方案](https://microsoft.github.io/botframework-solutions/index)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 [知識採礦](./knowledge-mining.md)

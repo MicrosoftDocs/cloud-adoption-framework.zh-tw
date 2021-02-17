@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 15f72f6899ba9ae3cf5a9bf9a804c7e0e1363d9c
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: dbbd458530d3507cf7247a3579bf5f41237e7e52
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123556"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632557"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -508,7 +508,7 @@ _圖8：加密流程。_
 
   - 使用 partner Nva 透過 ExpressRoute 私用對等互連來建立 IPsec 通道。
   - 透過搭配 Microsoft 對等互連的 ExpressRoute 建立 VPN 通道。
-  - 評估功能以透過 ExpressRoute 私人對等互連設定站對站 VPN 連線 ([預覽](/azure/vpn-gateway/site-to-site-vpn-private-peering)) 。
+  - 評估功能以透過 [ExpressRoute 私人對等互連設定站對站 VPN 連線 (預覽) ](/azure/vpn-gateway/site-to-site-vpn-private-peering)。
 
 - 如果必須加密 Azure 區域之間的流量，請使用全域 VNet 對等互連來跨區域連接虛擬網路。
 

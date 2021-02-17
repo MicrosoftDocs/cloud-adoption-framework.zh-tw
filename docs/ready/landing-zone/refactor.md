@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: cbcf8501788944a51f1dcae99f21e8dbad1dc931
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0ccf17d2b5abe76fd28c24b3317c2ff1f0e13510
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013428"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632489"
 ---
 # <a name="refactor-landing-zones"></a>重構登陸區域
 
@@ -104,14 +104,14 @@ ms.locfileid: "97013428"
 
 ## <a name="meeting-long-term-requirements-while-refactoring"></a>在重構時符合長期需求
 
-擴充登陸區域的就緒方法章節將有助於移至較長期的需求。 當雲端採用小組採用其採用方案時，請參閱 [擴充您的登陸區域](../considerations/index.md)) ，以取得協助進行決策和重構的指引，以符合各種團隊不斷演進的需求。
+擴充登陸區域的就緒方法章節將有助於移至較長期的需求。 當雲端採用小組採用其採用方案時，請參閱 [您的登陸區域](../considerations/index.md) 以取得指導方針，以協助做出決策並進行重構，以符合各種團隊不斷演進的需求。
 
 ![平行登陸區域反復專案 ](../../_images/ready/refactor-methodologies.png)
  _圖5：協助平行登陸區域反復專案的更深入方法。_
 
 [展開登陸區域](../considerations/index.md)的每個小節都會對應到上圖中所述的其中一項新增專案。 除了這些基本擴充之外，更深層的方法 (例如治理或管理此架構) 將有助於超越基本的登陸區域修改，以實行長期的專業領域。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要開始重構流程，請開始使用 [Azure 登陸區域](./index.md)。
 

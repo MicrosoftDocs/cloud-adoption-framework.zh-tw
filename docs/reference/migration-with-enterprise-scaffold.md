@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 0c68c14b78238af248034ef14a27ad1323483a74
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: cfd2587c3b45de7021755916c8913b26bd6a13f3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713856"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632574"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -289,7 +289,7 @@ Microsoft 提供數個工具，可協助您視覺化、追蹤和管理您的成�
 
 - **Power BI Azure 使用量見解：** 您是否要為您的組織建立自己的視覺效果？ 若是如此，則 Power BI 的 Azure 使用量見解內容套件就是您選擇的工具。 您可以使用此內容套件和 Power BI 建立自訂視覺效果來代表您的組織、對成本進行更深入的分析，並新增其他資料來源，以供進一步擴充。
 
-- **Azure 使用量 api：**[使用量 api](/rest/api/consumption)可讓您以程式設計方式存取成本和使用量資料，以及預算、保留實例和 marketplace 費用的資訊。 這些 Api 只能供 EA 註冊和某些 Web Direct 訂用帳戶存取，不過它們可讓您將成本資料整合到您自己的工具和資料倉儲中。 您也可以透過 [Azure CLI 存取這些 api](/cli/azure/consumption?view=azure-cli-latest)。
+- **Azure 使用量 api：**[使用量 api](/rest/api/consumption)可讓您以程式設計方式存取成本和使用量資料，以及預算、保留實例和 marketplace 費用的資訊。 這些 Api 只能供 EA 註冊和某些 Web Direct 訂用帳戶存取，不過它們可讓您將成本資料整合到您自己的工具和資料倉儲中。 您也可以透過 [Azure CLI 存取這些 api](/cli/azure/consumption)。
 
 身為長期和成熟雲端使用者的客戶，會遵循特定的最佳作法：
 
@@ -308,7 +308,7 @@ Microsoft 提供數個工具，可協助您視覺化、追蹤和管理您的成�
 
 - **Azure 自動化** 是一種雲端式功能，可讓您以 PowerShell 或 Python) 撰寫 runbook (，並可讓您自動化程式、設定資源，甚至是套用修補程式。 [Azure 自動化](/azure/automation/automation-intro)具有一組廣泛的跨平台功能，並且可整合至您的部署，但因為範圍太廣泛，無法在此深入說明。
 - **事件方格** 是完全受控的事件路由系統，可讓您對 Azure 環境內的事件做出回應。 就像 Azure 自動化是成熟雲端組織的連線組織， [事件方格](/azure/event-grid) 是良好自動化的連線組織。 您可以使用事件方格建立簡單的無伺服器動作，以在每次建立新資源時傳送電子郵件給系統管理員，並將該資源記錄至資料庫。 同樣的事件方格可以在刪除資源和從資料庫中移除項目時，發出通知。
-- **Azure Cloud Shell** 是以瀏覽器為基礎的互動式 [Shell](/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 Azure Cloud Shell 提供其他重要工具的存取權（已安裝），以自動化您的環境，包括 [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)、 [Terraform](/azure/virtual-machines/linux/terraform-install-configure) 和不斷成長的額外 [工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) 清單，以管理容器、資料庫 (sqlcmd) 等。
+- **Azure Cloud Shell** 是以瀏覽器為基礎的互動式 [Shell](/azure/cloud-shell/overview) ，可用於管理 Azure 中的資源。 其提供可視需要啟動 PowerShell 或 Bash 的完整環境 (還可以為您進行維護)，讓您擁有統一的環境可執行指令碼。 Azure Cloud Shell 提供其他重要工具的存取權（已安裝），以自動化您的環境，包括 [Azure CLI](/cli/azure/get-started-with-azure-cli)、 [Terraform](/azure/virtual-machines/linux/terraform-install-configure) 和不斷成長的額外 [工具](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) 清單，以管理容器、資料庫 (sqlcmd) 等。
 
 自動化是一項全職的工作，而且很快就會成為雲端小組內最重要的作業工作之一。 採用「自動化優先」方法的組織在使用 Azure 上有更高的成就：
 
@@ -319,7 +319,7 @@ Microsoft 提供數個工具，可協助您視覺化、追蹤和管理您的成�
 
 如同自動化區段中所強調的，您的目標應該是讓組織透過由原始程式碼控制的範本和指令碼來佈建資源，並將環境的互動式設定降到最低。 使用此「基礎結構即程式碼」方法及用於持續部署的嚴謹 DevOps 程序，即可確保環境中的一致性並減少漂移。 幾乎每個 Azure 資源都可透過 [AZURE RESOURCE MANAGER JSON 範本](/azure/azure-resource-manager/resource-group-template-deploy) 與 PowerShell 或 azure 跨平臺 CLI 以及 HashiCorp （例如 Terraform by）進行部署，這類工具具有一流的支援和與 Azure Cloud Shell) 的整合。
 
-[使用 Azure Resource Manager 範本的最佳作法（例如使用範本的最佳作法](/archive/blogs/mvpawardprogram/azure-resource-manager)）可提供最佳作法的絕佳討論，以及使用[Azure DevOps](/azure/devops/user-guide/?view=vsts)工具鏈將 DevOps 方法套用至 Azure Resource Manager 範本所學習到的經驗。 請花時間和精力開發一組您組織需求專屬的核心範本，並使用 DevOps 工具鏈 (（例如 Azure DevOps、Jenkins、Bamboo、TeamCity 和 Concourse) ）來開發持續傳遞管線，特別是針對您的生產環境和 QA 環境。 GitHub 上有一個大型的 [Azure 快速入門範本](https://github.com/azure/azure-quickstart-templates) 程式庫，您可以使用這些範本作為範本的起點，也可以使用 Azure DevOps 快速建立雲端式傳遞管線。
+[使用 Azure Resource Manager 範本的最佳作法（例如使用範本的最佳作法](/archive/blogs/mvpawardprogram/azure-resource-manager)）可提供最佳作法的絕佳討論，以及使用[Azure DevOps](/azure/devops/user-guide)工具鏈將 DevOps 方法套用至 Azure Resource Manager 範本所學習到的經驗。 請花時間和精力開發一組您組織需求專屬的核心範本，並使用 DevOps 工具鏈 (（例如 Azure DevOps、Jenkins、Bamboo、TeamCity 和 Concourse) ）來開發持續傳遞管線，特別是針對您的生產環境和 QA 環境。 GitHub 上有一個大型的 [Azure 快速入門範本](https://github.com/azure/azure-quickstart-templates) 程式庫，您可以使用這些範本作為範本的起點，也可以使用 Azure DevOps 快速建立雲端式傳遞管線。
 
 作為生產訂用帳戶或資源群組的最佳做法，您的目標應該使用 Azure RBAC 安全性，根據預設不允許互動式使用者，並根據服務主體使用自動化的持續傳遞管線來布建所有資源，並傳遞所有的應用程式程式碼。 系統管理員或開發人員都不應該接觸 Azure 入口網站以互動方式設定資源。 此層級的 DevOps 會採取一致的努力，並使用 Azure scaffold 的所有概念，提供一致且更安全的環境，以符合您組織的規模需求。
 
@@ -351,7 +351,7 @@ Azure Scaffold 參考模型的最後一個元件是，您的組織要如何以�
 
 Azure 提供來自廣泛合作夥伴網路的內部和協力廠商功能，提供您有效的安全性立場。 更重要的是，Microsoft 會以 [Azure 虛擬資料中心 (VDC) ](./networking-vdc.md)的形式提供最佳作法和指引。 當您從單一工作負載移至使用混合式功能的多個工作負載時，VDC 指導方針將提供您「食譜」來啟用彈性的網路，隨著您在 Azure 中的工作負載成長，將會隨之成長。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 治理是 Azure 成功的重要關鍵。 本文是以企業 Scaffold 的技術實作為目標，但只論及更廣泛的處理程序和元件之間的關聯性。 原則治理會從上而下流動，並由需要達成的業務來決定。 當然，Azure 治理模型的建立納入 IT 部門代表，但更重要的是應該具有來自事業群領導者及安全性和風險管理階層的強大代表性。 最後，企業 Scaffold 與降低業務風險有關，以達成組織的任務與目標。
 

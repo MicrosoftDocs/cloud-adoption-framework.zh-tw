@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0755b0e3aa4d2fdad1aab0ff68c7db9fde0af34b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 75961a8b57273c84449f5fa3c95b232859434a45
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014805"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631809"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -87,10 +87,10 @@ Contoso 會完成遷移程式，如下所示：
 
 | 服務 | 描述 | 成本 |
 | --- | --- | --- |
-| [Azure App Service](https://azure.microsoft.com/services/app-service) | 此服務會使用 Azure 平臺即服務 (適用于網站的 PaaS) 來執行及調整應用程式。 | 定價是以實例的大小和所需的功能為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
-| [Azure 流量管理員](https://azure.microsoft.com/services/traffic-manager) | 使用網域名稱系統 (DNS) 將使用者導向 Azure 或外部網站和服務的負載平衡器。 | 定價是根據收到的 DNS 查詢數目和受監視的端點數目。 | [深入了解](https://azure.microsoft.com/pricing/details/traffic-manager)。 |
-| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration)。 |
-| [適用於 MySQL 的 Azure 資料庫](/azure/mysql) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署，提供完全受控、符合企業需求的社區 MySQL 資料庫。 | 定價是以計算、儲存體和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/) | 此服務會使用 Azure 平臺即服務 (適用于網站的 PaaS) 來執行及調整應用程式。 | 定價是以實例的大小和所需的功能為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
+| [Azure 流量管理員](https://azure.microsoft.com/services/traffic-manager/) | 使用網域名稱系統 (DNS) 將使用者導向 Azure 或外部網站和服務的負載平衡器。 | 定價是根據收到的 DNS 查詢數目和受監視的端點數目。 | [深入了解](https://azure.microsoft.com/pricing/details/traffic-manager/)。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure 資料庫移轉服務可讓您從多個資料庫來源順暢地遷移到 Azure 資料平臺，並減少停機時間。 | 深入了解[支援的區域](/azure/dms/dms-overview#regional-availability)和[資料庫移轉服務定價](https://azure.microsoft.com/pricing/details/database-migration/)。 |
+| [適用於 MySQL 的 Azure 資料庫](/azure/mysql/) | 資料庫是以開放原始碼 MySQL 資料庫引擎為基礎。 它為應用程式開發和部署，提供完全受控、符合企業需求的社區 MySQL 資料庫。 | 定價是以計算、儲存體和備份需求為基礎。 [深入了解](https://azure.microsoft.com/pricing/details/mysql/server/)。 |
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -98,7 +98,7 @@ Contoso 會完成遷移程式，如下所示：
 
 | 需求 | 詳細資料 |
 | --- | --- |
-| **Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 |
+| **Azure 訂用帳戶** | Contoso 稍早已在本文章系列中建立訂用帳戶。 如果您沒有 Azure 訂用帳戶，請建立[免費帳戶](https://azure.microsoft.com/free/)。 <br><br> 如果您建立免費帳戶，您就是訂用帳戶的管理員，並可執行所有動作。 <br><br> 如果您使用現有訂用帳戶，而且您不是系統管理員，則需要與系統管理員合作，讓其指派擁有者或參與者權限給您。 |
 | **Azure 基礎結構** | Contoso 會如[適用於移轉的 Azure 基礎結構](./contoso-migration-infrastructure.md)中所述，設定其 Azure 基礎結構。 |
 
 ## <a name="scenario-steps"></a>案例步驟
@@ -138,7 +138,7 @@ Contoso 管理員會在每個區域中布建兩個 web 應用程式 (一個) 使
 **需要其他協助？**
 
 - 瞭解 [Azure App Service web 應用程式](/azure/app-service/overview)。
-- 了解 [Linux 上的 Azure App Service](/azure/app-service/containers/app-service-linux-intro)。
+- 了解 [Linux 上的 Azure App Service](/azure/app-service/overview#app-service-on-linux)。
 
 ## <a name="step-2-set-up-traffic-manager"></a>步驟 2：設定流量管理員
 
@@ -201,11 +201,8 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-
 簡言之，Contoso 會執行下列動作：
 
 - 它們可確保符合所有的遷移必要條件：
-  - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。
-
-  - 它們可在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會在 [遷移嚮導] 中產生下列錯誤：
-
-    「二進位記錄中發生錯誤。 變數 binlog_row_image 的值為「基本」。 請將其變更為「完整」。 如需詳細資訊，請參閱 `https://go.microsoft.com/fwlink/?linkid=873009` 。
+  - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。  
+  - 它們可在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會在遷移嚮導中產生下列錯誤：  `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'.` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
 
   - 使用者必須擁有該 `ReplicationAdmin` 角色。
 
@@ -297,9 +294,9 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-
 
     ![記事本檔案中所貼上之連接字串的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench9.png)
 
-11. 他們可以在 Azure 入口網站的 MySQL 實例的 [ **總覽** ] 窗格中，確認伺服器名稱和登入。
+11. 他們可以透過 Azure 入口網站中 MySQL 實例的 [ **總覽** ] 窗格來確認伺服器名稱和登入。
 
-    ![[資源群組] 窗格的螢幕擷取畫面，其中顯示 [伺服器名稱] 和 [伺服器管理員登入名稱]。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
+    ![[資源群組] 窗格的螢幕擷取畫面，其中顯示 [伺服器名稱] 和 [伺服器管理員帳戶名稱]。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
 
 ## <a name="step-5-set-up-github"></a>步驟 5︰設定 GitHub
 

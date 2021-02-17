@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 1fc58ed9f74d37eb641fce1d3571add71c3b5526
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: fba46a86e0b1d71d37e9bfe5ceb25afde8043b87
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123471"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632336"
 ---
 <!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "98123471"
 
 ## <a name="subscription-move"></a>訂用帳戶移動
 
-移動訂用帳戶的常見使用案例是將訂用帳戶組織成管理群組，或將訂用帳戶傳送到新的 Azure Active Directory 租使用者。 企業規模的訂用帳戶移動著重于將訂用帳戶移至管理群組。 將訂用帳戶移至新的租使用者主要是為了 [轉移帳單擁有權](/azure/cost-management-billing/manage/billing-subscription-transfer)。
+移動訂用帳戶的常見使用案例是將訂用帳戶組織成管理群組，或將訂用帳戶轉移至新的 Azure Active Directory 租使用者。 企業規模的訂用帳戶移動著重于將訂用帳戶移至管理群組。 將訂用帳戶移至新的租使用者主要是為了 [轉移帳單擁有權](/azure/cost-management-billing/manage/billing-subscription-transfer)。
 
 ### <a name="azure-rbac-requirements"></a>Azure RBAC 需求
 
@@ -54,9 +54,9 @@ Azure Resource Graph 可以用來執行現有資源的清查，並將其設定�
 
 - 任何繼承至已移動訂用帳戶的 Azure RBAC 最多可能需要30分鐘的時間，管理群組快取中的使用者權杖才會重新整理。 若要加速此程式，您可以藉由登出和或要求新的權杖來重新整理權杖。
 - 指派範圍包含已移動之訂用帳戶的任何原則，都只會對現有的資源執行審核作業。 具體而言：
-  - 訂用帳戶中 **deployIfNotExists** 原則效果的任何現有資源會顯示為不符合規範，且不會自動補救，但需要使用者互動才能手動執行補救。
-  - 訂用帳戶中的任何現有資源（受 **拒絕** 原則影響）會顯示為不符合規範，且不會被拒絕。 使用者必須視需要手動減輕此結果。
-  - 訂用帳戶中任何符合 **附加** 和 **修改** 原則效果的現有資源將會顯示為不符合規範，且需要使用者互動才能減輕問題。
+  - 訂用帳戶中的任何現有資源（受限於 **deployIfNotExists** 原則效果）將會顯示為不符合規範，且不會自動補救，但需要使用者互動以手動執行補救。
+  - 訂用帳戶中的任何現有資源（受 **拒絕** 原則影響）將會顯示為不符合規範，且不會被拒絕。 使用者必須視需要手動減輕此結果。
+  - 訂用帳戶中任何符合 **附加** 和 **修改** 原則效果的現有資源會顯示為不符合規範，且需要使用者互動才能緩和。
   - 訂用帳戶中任何現有的資源會受到 **audit** 和 **auditIfNotExist** 的規範，且需要使用者互動才能緩和。
 - 針對已移動訂用帳戶中資源的所有新寫入，將會以正常的方式即時受指派的原則。
 

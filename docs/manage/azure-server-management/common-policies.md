@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 46d5cc077730610bc6bb9bdb3785609880a77c64
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1859cd42cdfa5487dd2a14d766debf75739576e3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017134"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631945"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
@@ -37,7 +37,7 @@ Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn')
   -and ($_.Properties.displayName -like '*location*') }
 ```
 
-下列腳本說明如何指派原則。 變更 `$SubscriptionID` 值以指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。
+下列腳本說明如何指派原則。 變更 `$SubscriptionID` 值以指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 來登入。
 
 ```powershell
 # Specify the value for $SubscriptionID.
@@ -76,7 +76,7 @@ Azure 提供各種不同的 VM 大小來支援各種工作負載。 若要控制
 
 原則 GUID 為 `2835b622-407b-4114-9198-6f7064cbe0dc` 。
 
-下列腳本說明如何指派原則。 若要使用腳本，請將 `$SubscriptionID` 值變更為指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) Cmdlet 來登入。
+下列腳本說明如何指派原則。 若要使用腳本，請將 `$SubscriptionID` 值變更為指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 來登入。
 
 ```powershell
 # Specify the value for $SubscriptionID.
@@ -90,7 +90,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解其他可用的伺服器管理工具和服務。
 
