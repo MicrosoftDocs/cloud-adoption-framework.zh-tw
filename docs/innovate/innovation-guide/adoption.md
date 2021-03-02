@@ -1,20 +1,21 @@
 ---
-title: Azure 創新：準備意見回應
+title: 定性和量化資料的意見反應
 description: 了解如何使用 Azure 工具，從 GitHub 中裝載的 Web 應用程式和 API 中收集量化和質化的意見反應。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: f390dd74a04ac423a98c17a4a6e7cce4cfedecd7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
+keywords: 量化資料、量化意見反應、定性意見反應、測試意見反應、客戶意見反應
+ms.openlocfilehash: 72a932f827c658c11f55f353746a171d3defe4c2
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017848"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632115"
 ---
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
 
@@ -25,7 +26,9 @@ ms.locfileid: "97017848"
 - **量化 (測試意見反應)：** 此意見反應會測量我們希望看見的動作。
 - **定性 (客戶意見反應)：** 此意見反應讓我們知道這些計量在客戶心目中所代表的意義。
 
-在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式，所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops)的文章可協助您開始使用您的存放庫。
+量化資料是以數位為基礎，使用可量化的度量程式。 量化意見反應可提供資料的數值深入解析，這有助於快速收集客戶的大量答案。 量化意見反應的範例是多個選擇的問題和數值的使用者參與資料。 您可以深入瞭解意見反應，以取得更多關於客戶想法或意見的答案和深入解析。 定性意見反應的範例是客戶問卷，其中包含開放式問題。 客戶意見反應的這兩種方法都會提供寶貴的見解，以改善貴公司的產品和服務。  
+
+在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式，所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](/azure/devops/pipelines/repos/github)的文章可協助您開始使用您的存放庫。
 
 下列每個 Azure 工具都會與 GitHub 中裝載的專案整合 (或相容)：
 
@@ -126,7 +129,7 @@ Azure Board 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站
 
 若要建立 DevOps 專案：
 
-1. 移至 [Azure DevOps 專案]。
+1. 移至 [Azure DevOps Projects]。
 2. 選取 [建立 DevOps 專案]。
 3. 選取 [執行階段、架構和服務]。
 
@@ -140,8 +143,8 @@ Azure Board 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站
 
 這些文章將協助您使用 Azure Boards 搭配 GitHub 來集中管理意見反應：
 
-- [開始使用 Azure Boards](/azure/devops/boards/get-started/?view=azure-devops)
-- [Azure Boards 和 GitHub](/azure/devops/boards/github?view=azure-devops)
+- [開始使用 Azure Boards](/azure/devops/boards/get-started/)
+- [Azure Boards 和 GitHub](/azure/devops/boards/github/)
 
 ## <a name="close-the-loop-with-pipelines"></a>[使用管線關閉迴圈](#tab/pipelines)
 
@@ -175,5 +178,5 @@ Azure Board 和 Azure Pipelines 需要與 GitHub 和 Azure 不同的入口網站
 
 開始建置您的部署管線：
 
-- [建立您的第一個管線](/azure/devops/pipelines/create-first-pipeline?tabs=tfs-2018-2&view=azure-devops)
-- [`GitHub Release` 工作](/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [建立您的第一個管線](/azure/devops/pipelines/create-first-pipeline)
+- [`GitHub Release` 工作](/azure/devops/pipelines/tasks/utility/github-release)

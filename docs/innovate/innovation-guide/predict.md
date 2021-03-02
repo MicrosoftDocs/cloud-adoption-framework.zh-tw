@@ -3,31 +3,32 @@ title: Azure 創新：使用 AI 來創新
 description: 了解 Azure 解決方案以預測客戶的需求、讓商務程序自動化、探索非結構化資料中的潛在資訊，並以新的方式與客戶互動，以提供更好的體驗。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 06/26/2020
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 00d4b08788461a7c1bd519c9f177908b36f6116e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
+keywords: 將商務程式自動化、ai 創新、機器學習服務、知識挖掘
+ms.openlocfilehash: cc42a37a151c3f0c60fe58d3e1137093de7237f3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017678"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632047"
 ---
 <!-- cSpell:ignore ONNX -->
 
 # <a name="innovate-with-ai"></a>使用 AI 來創新
 
-身為創新者，貴公司有豐富的商業和客戶相關資訊。 您的公司可以使用 AI 來：
+身為創新者，貴公司有豐富的商業和客戶相關資訊。 您的公司可以使用 AI 創新：
 
 - 對客戶的需求進行預測。
 - 自動化商務流程。
 - 探索非結構化資料中的潛在資訊。
 - 以新的方式與客戶互動，以提供更好的體驗。
 
- 本文介紹一些使用 AI 進行創新的方法。 下表可協助您根據實作需求找到最佳的解決方案。
+ 本文介紹一些使用 AI 進行創新的方法。 創新可將貴公司的商業見解擴充至現有的資料。 下表可協助您根據實作需求找到最佳的解決方案。
 
 | 解決方案類別 | 描述                                                                                                                              | 所需技能              |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -145,7 +146,7 @@ Azure 提供一組稱為認知服務的預先建置 AI 服務，來建置 AI 應
 
 ## <a name="knowledge-mining"></a>知識採礦
 
-使用 Azure 認知搜尋從您的內容中發現潛在的深入解析，包括文件、影像和媒體。 您可以探索內容中的模式和關聯性、了解情感，以及擷取關鍵片語。
+知識挖掘利用人工智慧 (AI) ，推動大量非結構化、半結構化和結構化資訊的內容瞭解。 使用 Azure 認知搜尋從您的內容中發現潛在的深入解析，包括文件、影像和媒體。 您可以探索內容中的模式和關聯性、了解情感，以及擷取關鍵片語。
 
 <!-- docutune:ignore "Azure Search" -->
 

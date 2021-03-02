@@ -1,22 +1,25 @@
 ---
-title: Azure 創新：透過應用程式參與
-description: 了解 Azure 服務如何協助您輕鬆地將現有 Web 和 API 應用程式現代化，並建立雲端原生應用程式。
+title: 使用應用程式服務建立應用程式並進行互動
+description: 建立雲端原生應用程式，並輕鬆地將現有的 web 應用程式和 API 應用程式現代化。 瞭解 Azure App Service、Azure DevOps 和 Visual Studio App Center。
 author: billyclaymyersmsft
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: fb47f30f0e5a04b5f45b5558827a278f1e9493fc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: think-tank, fasttrack-edit, AQC, seo-caf-innovate
+keywords: Azure app service，app service azure，app service，組建應用程式，雲端原生應用程式，雲端原生應用程式
+ms.openlocfilehash: e1fe2fb351fed0e092e2d669d2aa7c9384dce2e5
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017814"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632098"
 ---
 # <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
+
+建立雲端原生應用程式，以新的方式連接客戶。 雲端原生應用程式專為雲端規模與效能最佳化全新打造。 雲端原生應用程式是以微服務架構為基礎、使用受管理的服務，並利用持續傳遞來達成可靠性及加快上市時間。
 
 透過應用程式來創新包含兩個步驟，分別是將裝載於內部部署環境的現有應用程式現代化，以及使用容器或無伺服器技術建置雲端原生應用程式。 Azure 提供了 PaaS 服務 (例如，Azure App Service)，協助您輕鬆地將以 .NET、.NET Core、Java、Node.js、Ruby、Python 或 PHP 撰寫的現有 Web 和 API 應用程式現代化，以便部署到 Azure 中。
 
@@ -102,7 +105,7 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供了這樣的地方，讓您可以在 iOS、Android、Windows 和 macOS 上測試應用程式，還提供監視平台，讓您得以輕鬆快速地運用 Azure Application Insights 來分析遙測資料。 如需詳細資訊，請參閱 [Visual Studio App Center](/appcenter)。
+隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不只提供可讓您在 iOS、Android、Windows 和 macOS 上測試雲端原生應用程式的位置，它也提供監視平臺，可使用 Azure 應用程式 Insights 快速輕鬆地分析您的遙測。 如需詳細資訊，請參閱 [Visual Studio App Center](/appcenter)。
 
 Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](/appcenter/push)。
 
@@ -111,9 +114,9 @@ Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每�
 - [App Service 概觀](/azure/app-service/overview)
 - [用於容器的 Web App：執行自訂容器](/azure/app-service/containers/quickstart-docker)
 - [Azure Functions 簡介](/azure/azure-functions/functions-overview)
-- [適用於 .NET 和 .NET Core 開發人員的 Azure](/dotnet/azure/?view=azure-dotnet)
+- [適用於 .NET 和 .NET Core 開發人員的 Azure](/dotnet/azure)
 - [Azure SDK for Python 文件](/azure/python)
-- [適用於 Java 雲端開發人員的 Azure](/azure/java/?view=azure-java-stable)
+- [適用於 Java 雲端開發人員的 Azure](/azure/developer/java)
 - [在 Azure 中建立 PHP Web 應用程式](/azure/app-service/app-service-web-get-started-php)
 - [Azure SDK for JavaScript 文件](/azure/javascript)
 - [Azure SDK for Go 文件](/azure/go)

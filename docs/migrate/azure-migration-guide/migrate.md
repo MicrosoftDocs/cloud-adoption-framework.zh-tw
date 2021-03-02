@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: ccb8ae667235166194520abc841c4eb7e3eeab4b
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
-ms.translationtype: HT
+ms.openlocfilehash: 685282288f7cd313492c4c0509ae3177958cd2f6
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174721"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632506"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
@@ -130,7 +130,7 @@ Migration Assistant 會從收集 Azure 帳戶的重要詳細資料來展開移�
 
 如需詳細資訊，請參閱
 
-[將 ASP.NET 應用程式遷移至 Azure](/learn/paths/migrate-dotnet-apps-azure)
+[將 ASP.NET 應用程式移轉至 Azure](/learn/paths/migrate-dotnet-apps-azure/)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
@@ -158,7 +158,7 @@ Data Migration Assistant 已與 Azure Migrate 整合，可讓您在 Azure Migrat
 
 - [Data Migration Assistant 概觀](/sql/dma/dma-overview)
 - [使用 DMA 評估企業及整合評估報告](/sql/dma/dma-consolidatereports)
-- [使用 Power BI 分析由 Data Migration Assistant 建立的整合評估報告](/sql/dma/dma-powerbiassesreport)
+- [使用 Power BI 分析由 Data Migration Assistant 建立的整合評估報告](/sql/dma/dma-consolidatereports)
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server 移轉小幫手
 
@@ -230,7 +230,7 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 [深入了解](/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
-請造訪 [Azure 移轉中心](https://azure.microsoft.com/migration/support)，查看有哪些組織提供現成可用的合作夥伴技術解決方案以因應您的移轉案例，並深入了解其他第三方移轉工具和支援服務。
+請造訪 [Azure 移轉中心](https://azure.microsoft.com/migration/migration-partners/)，查看有哪些組織提供現成可用的合作夥伴技術解決方案以因應您的移轉案例，並深入了解其他第三方移轉工具和支援服務。
 
 造訪 [Azure Database 移轉指南](https://datamigration.microsoft.com)，了解原生和合作夥伴的一系列資料庫移轉選項及逐步指引。
 
@@ -238,14 +238,14 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 不受追蹤和管理的專案較可能會發生問題。 為確保能有成功的結果，我們認為您必須使用專案管理工具。 目前有許多不同的工具可供使用，而您組織中的專案管理人員可能已有偏好的工具。
 
-Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用 [雲端採用方案和 Azure DevOps](/azure/architecture/cloud-adoption/plan/template)中的指示來部署範本。 您可以修改範本以反映要遷移的[工作負載](/azure/architecture/cloud-adoption/plan/workloads)和[資產](/azure/architecture/cloud-adoption/plan/assets)。
+Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用 [雲端採用方案和 Azure DevOps](/azure/cloud-adoption-framework/plan/template)中的指示來部署範本。 您可以修改範本以反映要遷移的[工作負載](/azure/cloud-adoption-framework/plan/workloads)和[資產](/azure/cloud-adoption-framework/plan/assets)。
 
 Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更廣泛的功能：
 
 - [Microsoft Planner](https://tasks.office.com)：以簡單的視覺化方式組織團隊合作。
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software)：專案組合管理、資源容量管理、財務管理、時程表和排程管理。
-- [Microsoft Teams](https://products.office.com/microsoft-teams)：小組共同作業與通訊工具。 Teams 也整合了 Planner 和其他工具來改善共同作業。
-- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
+- [Microsoft Project](https://www.microsoft.com/microsoft-365/project/project-management-software)：專案組合管理、資源容量管理、財務管理、時程表和排程管理。
+- [Microsoft Teams](https://www.microsoft.com/microsoft-teams/group-chat-software)：小組共同作業與通訊工具。 Teams 也整合了 Planner 和其他工具來改善共同作業。
+- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops)：使用 Azure DevOps 不需要雲端採用架構規劃範本。 您可以使用沒有範本的服務以程式碼管理基礎結構，或使用工作項目和面板來執行專案管理。 日趨成熟後，您的組織可以開始運用 CI/CD 功能。
 
 這些專案管理工具並不是唯一可用的工具。 另有許多第三方工具也廣泛用於專案管理社群中。
 
@@ -253,7 +253,7 @@ Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更�
 
 當您遷移至雲端技術時，這將是您為組織設定 DevOps 和 CI/CD 的絕佳機會。 即使您的組織僅管理基礎結構，當您開始以程式碼管理基礎結構，並使用 DevOps 的業界模式和實務時，您將可透過 CI/CD 管線開始提高靈活性，因而能夠更快速地因應變更、成長、發行，甚或復原案例。
 
-Azure DevOps 提供必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops)。 如需引導式訓練，請參閱[快速入門：使用 Azure DevOps 的 CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
+Azure DevOps 提供必要的功能，並且可整合 Azure、內部部署環境甚或其他雲端。 如需詳細資訊，請參閱 [Azure DevOps](https://azure.microsoft.com/services/devops/)。 如需引導式訓練，請參閱[快速入門：使用 Azure DevOps 的 CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)。
 
 ### <a name="suggested-skills"></a>建議的技能
 
@@ -261,7 +261,7 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 以下是在 Microsoft Learn 上量身打造的學習路徑範例，可補充雲端採用架構中 DevOps 指引設定的不足之處。
 
-[透過 Azure DevOps 建置應用程式](/learn/paths/build-applications-with-azure-devops)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。
+[透過 Azure DevOps 建置應用程式](/learn/paths/build-applications-with-azure-devops/)：與他人共用作業，使用 Azure Pipelines 和 GitHub 建置應用程式。 在管線中執行自動化測試，驗證程式碼品質。 掃描來源程式碼和第三方元件，找出可能的弱點。 定義用來建置應用程式的多個管線。 使用 Microsoft 裝載的代理程式和您自己建置的代理程式一同建置應用程式。
 
 ## <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 

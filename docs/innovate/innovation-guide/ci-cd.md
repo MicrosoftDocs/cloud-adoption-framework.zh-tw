@@ -1,24 +1,25 @@
 ---
-title: Azure 創新：實現採用
-description: 協助開發人員小組有效率地進行建置、促進安全的全球共同作業，以及移除 Azure 中的創新障礙。
+title: 強化數位轉型
+description: 協助開發人員團隊有效率地建立、促進安全的全球共同作業，以及消除調整創新的障礙。 取得 Azure 上的數位轉型服務。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-new, AQC
-ms.openlocfilehash: 36639dce9045a136b67901c84b25f641e8ac33d3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
+keywords: 數位轉型，數位轉型服務，雲端採用
+ms.openlocfilehash: 69044c6d7f1a66b7d2cd47dc0cadd1181ae388e4
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017797"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632064"
 ---
-# <a name="empower-adoption"></a>實現採用
+# <a name="empower-cloud-adoption"></a>強化雲端採用
 
-您知道創新攸關企業的成敗。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 開發人員是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
+您知道創新和數位轉型對於企業成功是不可或缺的。 數位轉型是採用雲端式和數位技術來取代舊的系統，並從資料中創造更好的客戶體驗、更佳的效率、商業見解和更高的創新。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 開發人員是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
 
 ## <a name="generate-value"></a>產生值
 
@@ -30,7 +31,7 @@ ms.locfileid: "97017797"
 > - 有時候，大家流露的態度是「我們只要使用更多技術，情況就會有所改善。」 但是，創新的重點其實在於人。
 > - 創新是人與技術的結合。
 
-在創新方面獲得成功的組織，會將願景、策略、文化、獨特的潛能以及能力視為基礎要素， 接著才會帶著特定目的來求助於技術。 每一家公司都成為軟體公司。 根據 LinkedIn 的資料，在聘用軟體工程師方面，非科技產業的成長速度快過科技產業本身。
+成功創新以進行數位轉型的組織，請參閱願景、策略、文化、獨特的潛能和功能，作為基礎元素。 接著才會帶著特定目的來求助於技術。 每一家公司都成為軟體公司。 根據 LinkedIn 的資料，在聘用軟體工程師方面，非科技產業的成長速度快過科技產業本身。
 
 當組織能夠讓員工獲得支援而產生所要的價值時，便會實現創新。 能夠引發創新的其中一組人就是開發人員。 無論是哪個產業，開發人員都在價值產生和成長方面扮演越來越吃重的角色。 他們是我們這個時代的建築者，他們編寫這個世界的程式碼，矗立在創新的核心位置。 創新的組織會打造一種文化，讓開發人員有能力實現更多成果。
 
@@ -38,7 +39,7 @@ ms.locfileid: "97017797"
 
 ### <a name="developer-velocity"></a>開發人員的速度
 
-讓開發人員有能力發明，意味著要提升開發人員的速度，從而讓他們能夠產生更多價值、做出更多創新，以及解決更多問題。 開發人員的速度是每個組織技術強度的基礎。 開發人員速度不僅是要快速， 還要釋放開發人員的創意，也就是將他們的想法快速靈活地轉換成軟體，以便打造創新的解決方案。 具差異化的 Azure 解決方案，專門定位在釋放組織內部的創新能力。
+讓開發人員有能力發明，意味著要提升開發人員的速度，從而讓他們能夠產生更多價值、做出更多創新，以及解決更多問題。 開發人員的速度是每個組織技術強度的基礎。 開發人員速度不僅是要快速， 還要釋放開發人員的創意，也就是將他們的想法快速靈活地轉換成軟體，以便打造創新的解決方案。 不同的 Azure 解決方案是唯一定位，可在您的組織中充分運用創新和雲端採用。
 
 ### <a name="build-productively"></a>有效率地打造
 
@@ -49,9 +50,9 @@ Azure 可在以下幾個方面創造機會來協助您有效率地開發：
 > - 藉由協助開發人員提升知識，確保他們能熟習各自的領域並保持下去。
 > - 藉由提供適當工具來打磨出合適的技能。
 
-想要提升開發人員的技能，最好的方式之一就是為他們提供熟悉且愛用的工具。 Azure 工具不僅可滿足開發人員目前所需，還可在其正在撰寫的程式碼內容中引進新技術。 Azure 承諾提供開放原始碼軟體，並在 Azure 工具中支援所有語言和架構，因此您的開發人員可以用自己的方式建置環境，以及在您想要的位置部署環境。
+想要提升開發人員的技能，最好的方式之一就是為他們提供熟悉且愛用的工具。 Azure 工具可滿足他們目前的開發人員，並在其撰寫的程式碼內容仲介紹新的數位轉型技術。 Azure 承諾提供開放原始碼軟體，並在 Azure 工具中支援所有語言和架構，因此您的開發人員可以用自己的方式建置環境，以及在您想要的位置部署環境。
 
-Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人員服務將現代化的開發做法和新興趨勢注入到我們所提供的工具中。 透過 Azure 平台，開發人員可以取得最新技術，以及能支援其工作方式的先進工具鏈。
+Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人員和數位轉型服務注入現代化開發實務和新興的工具趨勢。 透過 Azure 平台，開發人員可以取得最新技術，以及能支援其工作方式的先進工具鏈。
 
 > [!div class="checklist"]
 >
@@ -61,7 +62,7 @@ Azure DevOps 可為每位開發人員提供同級最佳工具。 Azure 開發人
 
 ::: zone target="docs"
 
-**移至 [Azure DevOps 文件](/azure/devops/user-guide/?view=azure-devops)**
+**移至 [Azure DevOps 文件](/azure/devops/get-started/)**
 
 ::: zone-end
 
@@ -98,7 +99,7 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 ### <a name="learn-more"></a>深入了解
 
 - [在 GitHub 中開啟開放原始碼](https://azure.microsoft.com/products/github/)
-- [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource)
+- [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource/)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
@@ -139,4 +140,4 @@ LiveOps 也有助於讓資料變得人性化。 LiveOps 方法會讓資料變得
 
 PlayFab 提供差異化、利潤更高的 LiveOps 工具和服務，以提高獲利並延長遊戲壽命。 PlayFab 完全不受裝置和平台限制，而且可以輕易地與社交識別提供者 (例如 Facebook) 或居中進行商務協調的商店平台 (Steam) 整合，並與 iOS、Android、Xbox 和 PlayStation 等裝置平台整合。 Azure 資料資產可讓 PlayFab 提供智慧型服務，以協助我們的客戶做出更好的遊戲和更聰明的決策、吸引並留住玩家，以及更快速地執行更多實驗和反覆執行來加快學習速度。
 
-**移至 [Azure PlayFab 文件](/gaming/playfab)**
+**移至 [Azure PlayFab 文件](/gaming/playfab/)**

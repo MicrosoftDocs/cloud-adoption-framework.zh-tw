@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: ab07b197f220e355fb6029cfccec1f670ad4bd49
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 350c8787e25b1709a79b1bbcd521572d41e7a51a
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017322"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631996"
 ---
 <!-- docutune:casing "SQL Server Health Check" -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "97017322"
 
 改善系統設計最能有效改善任何常見平台的作業。 透過改善系統設計，不僅穩定性會增加，業務中斷的情形也會減少。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
@@ -75,7 +75,7 @@ ms.locfileid: "97017322"
 
 下一個 [自動補救] 索引標籤會示範如何解決無法或不應解決的技術債務。
 
-深入了解 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 以改善系統設計。
+深入了解 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) 以改善系統設計。
 
 系統設計改善後，請回到本文來尋找新的改善機會，並將這些改善擴展到整個環境。
 
@@ -113,7 +113,7 @@ ms.locfileid: "97017322"
 
 若要讓最佳化平台的採用最大化，並讓維護成本降到最低，就應該將平台新增至 Azure 服務目錄。 您可以透過服務目錄來部署目錄中的每個應用程式，以供內部取用，或作為市集供應項目來供外部取用者取用。
 
-如需如何發佈至服務類別目錄的指示，請參閱關於[發佈至服務類別目錄](/azure/managed-applications/publish-service-catalog-app)的文章系列。
+如需如何發佈至服務類別目錄的指示，請參閱關於[發佈至服務類別目錄](/azure/azure-resource-manager/managed-applications/publish-service-catalog-app)的文章系列。
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>從服務類別目錄部署應用程式
 

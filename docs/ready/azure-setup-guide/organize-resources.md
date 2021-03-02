@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 95ca26aaa53625578fec9b4b4d169551d9c0f0d6
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
-ms.translationtype: HT
+ms.openlocfilehash: 4da0e4598c91c971a0ed5112b2a3767e272c07a5
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713652"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632421"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -66,7 +66,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 2. 選取 [新增]。
 
 > [!NOTE]
-> 亦可透過程式設計方式建立訂閱。 如需詳細資訊，請參閱[以程式設計方式建立 Azure 訂用帳戶](/azure/cost-management-billing/manage/programmatically-create-subscription-preview?tabs=azure-powershell)。
+> 亦可透過程式設計方式建立訂閱。 如需詳細資訊，請參閱[以程式設計方式建立 Azure 訂用帳戶](/azure/cost-management-billing/manage/programmatically-create-subscription)。
 
 #### <a name="create-a-resource-group"></a>建立資源群組
 
