@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: ce6d0747fdca348a2a97fa9b796801a99dcfb98b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 06ba3164410c5828da7dd97a999a0c152580a910
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018970"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792375"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>安全性基準範例原則聲明
 
@@ -63,7 +63,7 @@ ms.locfileid: "97018970"
 
 **原則聲明：** 將自動化的 DDoS 風險降低機制部署到所有可公開存取的網路端點。 不需要 DDoS 就能向網際網路公開不受 IaaS 支援的公眾對應網站。
 
-**可能的設計選項：** 使用 [Azure DDoS 保護 Standard](/azure/virtual-network/ddos-protection-overview) 可將 DDoS 攻擊所造成的中斷情況降到最低。
+**可能的設計選項：** 使用 [Azure DDoS 保護標準](/azure/ddos-protection/ddos-protection-overview) ，將 DDoS 攻擊所造成的中斷情況降到最低。
 
 ## <a name="secure-on-premises-connectivity"></a>保護內部部署連線
 
@@ -79,7 +79,7 @@ ms.locfileid: "97018970"
 
 **原則聲明：** 治理工具必須先審核並強制執行安全性基準小組所定義的網路設定需求。
 
-**可能的設計選項：** 在 Azure 中，您可以使用 [Azure 網路](/azure/network-watcher/network-watcher-monitoring-overview)監看員來監視網路活動， [Azure 資訊安全中心](/azure/security-center/security-center-network-recommendations) 有助於找出安全性弱點。 Azure 原則可讓您根據安全性小組定義的限制，限制網路資源和資源設定原則。
+**可能的設計選項：** 在 Azure 中，您可以使用 [Azure 網路](/azure/network-watcher/network-watcher-monitoring-overview)監看員來監視網路活動， [Azure 資訊安全中心](/azure/security-center/security-center-network-recommendations) 可協助找出安全性弱點。 Azure 原則可讓您根據安全性小組定義的限制，限制網路資源和資源設定原則。
 
 ## <a name="security-review"></a>安全性檢閱
 
@@ -87,9 +87,9 @@ ms.locfileid: "97018970"
 
 **原則聲明：** 安全性小組應定期檢查可能影響雲端部署的趨勢和潛在攻擊，以提供雲端中所使用之安全性基準工具的更新。
 
-**可能的設計選項：** 建立包含相關 IT 和治理小組成員的一般安全性審核會議。 請檢查現有的安全性資料和計量，以建立目前原則和安全性基準工具的差距，並更新原則來補救任何新風險。 使用 [Azure Advisor](/azure/advisor/advisor-overview) 和 [Azure 資訊安全中心](/azure/security-center/security-center-intro) ，以針對您的部署特定的新興威脅，採取可行的見解。
+**可能的設計選項：** 建立包含相關 IT 和治理小組成員的一般安全性審核會議。 請檢查現有的安全性資料和計量，以建立目前原則和安全性基準工具的差距，並更新原則來補救任何新風險。 使用 [Azure Advisor](/azure/advisor/advisor-overview) 和 [Azure 資訊安全中心](/azure/security-center/security-center-introduction) 來取得可操作的深入解析，以瞭解您的部署特定的新興威脅。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定的安全性風險。
 

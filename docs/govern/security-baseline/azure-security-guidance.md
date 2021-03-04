@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 787a3fb046e4bebdd25b6fbd40b4b8139e91bd32
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 16a2d068517add917d4c6429be34c79fccd25de1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019259"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792800"
 ---
-<!-- cSpell:ignore DPIAs inexhaustive -->
-
 # <a name="microsoft-security-guidance"></a>Microsoft 安全性指引
 
 ## <a name="tools"></a>工具
@@ -31,9 +29,9 @@ ms.locfileid: "97019259"
 
 **Microsoft 服務信任入口網站** 提供深入的資訊和工具，以協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Microsoft 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一次站。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 入口網站的建立可協助追蹤 Azure 中的法規合規性活動，包括：
 
-- **合規性管理員：** 合規性管理員是 Microsoft 服務信任入口網站中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及確認組織與 Microsoft 雲端服務相關的法規合規性活動，例如 Microsoft 365、Dynamics 365 和 Azure。 您可以在下一節找到更多詳細資料。
+- **合規性管理員：** 合規性管理員是 Microsoft 服務信任入口網站中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及確認組織與 Microsoft 雲端服務（例如 Microsoft 365、Dynamics 365 和 Azure）相關的法規合規性活動。 您可以在下一節找到更多詳細資料。
 - **信任檔：** 有三種類別的指南可提供豐富的資源來評估 Microsoft 雲端、瞭解 Microsoft 在安全性、合規性和隱私權方面的營運，以及協助您改善資料保護功能。 這些指南包括：
-- **Audit reports：** Audit reports 可讓您隨時掌握最新的隱私權、安全性和 Microsoft 雲端服務的合規性相關資訊。 這項資訊包括 ISO、SOC、FedRAMP 和其他的審核報表、bridge 信件，以及與 Microsoft 雲端服務（例如 Azure、Microsoft 365、Dynamics 365 和其他）的獨立協力廠商審核相關的資料。
+- **Audit reports：** Audit reports 可讓您隨時掌握最新的隱私權、安全性和 Microsoft 雲端服務的合規性相關資訊。 這項資訊包括 ISO、SOC、FedRAMP，以及其他與 Microsoft 雲端服務（例如 Azure、Microsoft 365、Dynamics 365 及其他）的獨立協力廠商審核相關的資料。
 - **資料保護指南：** 資料保護指南提供有關 Microsoft 雲端服務如何保護您資料的資訊，以及您可以如何管理組織的雲端資料安全性和合規性。 這些指南包含有關 Microsoft 雲端服務的設計和操作的詳細白皮書、常見問題檔、年度安全性評定報告、滲透測試結果，以及協助您進行風險評估及改善資料保護功能的指引。
 - **Azure 安全性與合規性藍圖：** 藍圖提供的資源可協助您建立及啟動雲端提供的應用程式，協助您遵守嚴格的法規和標準。 具有比其他任何雲端提供者更多的認證，您可以有信心地將關鍵工作負載部署至 Azure，使用包含下列項目的藍圖：
   - 業界專屬的總覽和指引。
@@ -41,17 +39,17 @@ ms.locfileid: "97019259"
   - 具有威脅模型的參考架構。
   - 控制項執行矩陣。
   - 自動化以部署參考架構。
-  - 隱私權資源。 系統會提供資料保護影響評量、資料主體要求和資料缺口通知的檔，以納入您自己的責任計畫，以支援一般資料保護規定 (GDPR) 。
-- **GDPR 入門：** Microsoft 產品和服務可協助組織在收集或處理個人資料時滿足 GDPR 需求。 Microsoft 服務信任入口網站的設計目的，是提供您 Microsoft 服務中可用來解決特定需求的相關資訊。 文件可協助您的 GDPR 權責和了解技術和組織措施。 系統會提供資料保護影響評量、資料主體要求和資料缺口通知的檔，以納入您自己的責任計畫以支援 GDPR。
+  - 隱私權資源。 系統會提供資料保護影響評量、資料主體要求和資料缺口通知的檔，以納入您自己的責任計畫，以支援 (GDPR) 的一般資料保護規定。
+- **GDPR 入門：** Microsoft 產品和服務可協助組織在收集或處理個人資料時滿足 GDPR 需求。 Microsoft 服務信任入口網站的設計目的是提供您 Microsoft 服務中可用來解決特定需求 GDPR 的相關資訊。 文件可協助您的 GDPR 權責和了解技術和組織措施。 系統會提供資料保護影響評量、資料主體要求和資料缺口通知的檔，以納入您自己的責任計畫以支援 GDPR。
   - **資料主體要求：** GDPR 會授與個人 (或資料主體) 與處理其個人資料相關的特定許可權。 這些權利包括修正不正確的資料、清除資料或限制其處理的許可權，以及取得資料的許可權，以及完成將資料傳輸到另一個控制器的要求。
   - **資料缺口：** GDPR 會在發生個人資料違規時，要求資料控制器和處理器的通知需求。 Microsoft 服務信任入口網站提供 Microsoft 如何運作的相關資訊，以防止缺口、Microsoft 如何偵測缺口，以及 Microsoft 將如何回應，並在發生缺口時通知您成為資料控制站。
   - **資料保護影響評量：** Microsoft 可協助控制器完成 GDPR 資料保護影響評量 (Dpia) 。 GDPR 會提供必須執行 Dpia 之案例的 inexhaustive 清單，例如程式碼剖析和類似活動的自動化處理;處理大量特殊的個人資料，以及大規模的可公開存取區域的系統監視。
   - **其他資源：** 除了上述各節所討論的工具指引以外，Microsoft 服務信任入口網站也提供其他資源，包括區域合規性、安全性與合規性中心的額外資源，以及有關 Microsoft 服務信任入口網站、合規性管理員、隱私權和 GDPR 的常見問題。
-- **區域合規性：** Microsoft 服務信任入口網站提供許多合規性檔和指引，讓 Microsoft 線上服務符合不同區域的合規性需求，包括捷克共和國、波蘭及羅馬尼亞。
+- **區域合規性：** Microsoft 服務信任入口網站提供許多合規性檔和指引，讓 Microsoft online services 符合不同區域的合規性需求，包括捷克共和國、波蘭和羅馬尼亞。
 
 ## <a name="unique-intelligent-insights"></a>唯一的 Intelligent Insights
 
-隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。 如需詳細資訊，請參閱 [Azure 資訊安全中心總覽](/azure/security-center/security-center-intro)。
+隨著安全性訊號的數量和複雜度成長，判斷這些訊號是否為可信的威脅然後再做反應，會耗用太多時間。 Microsoft 提供在雲端傳遞，無與倫比廣度的安全性智慧，協助快速偵測和修復威脅。 如需詳細資訊，請參閱 [Azure 資訊安全中心總覽](/azure/security-center/security-center-introduction)。
 
 ## <a name="azure-threat-intelligence"></a>Azure 威脅情報
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: dae5df4aed892e197211887350b506c5ff220183
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1e964a664c7c80d8e8de8a31eeb479c723a51958
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020296"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792817"
 ---
 # <a name="identity-baseline-discipline-template"></a>身分識別基準專業領域範本
 
@@ -26,7 +26,7 @@ ms.locfileid: "97020296"
 
 [下載身分識別基準專業版範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 穩固的治理做法是從[了解業務風險](./business-risks.md)著手。 檢閱有關商務風險的文章，並開始記載與您目前雲端採用方案保持一致的業務風險。
 

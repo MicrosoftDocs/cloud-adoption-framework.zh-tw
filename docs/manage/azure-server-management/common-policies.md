@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1859cd42cdfa5487dd2a14d766debf75739576e3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 1b9c04a3c5b4e7c87e54b41c29c2eb53b4b81665
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631945"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792630"
 ---
 # <a name="common-azure-policy-examples"></a>常見的 Azure 原則範例
 
 [Azure 原則](/azure/governance/policy/overview) 可協助您將治理套用至您的雲端資源。 這種服務可協助您建立護欄，以確保符合治理原則需求的公司範圍。 若要建立原則，請使用 Azure 入口網站或 PowerShell Cmdlet。 本文提供 PowerShell Cmdlet 範例。
 
 > [!NOTE]
-> 使用 Azure 原則， () 的強制原則 `DeployIfNotExists` 不會自動部署到現有的 vm。 需要補救才能讓 Vm 符合規範。 如需詳細資訊，請參閱 [使用 Azure 原則補救不符合](/azure/governance/policy/how-to/remediate-resources)規範的資源。
+> 利用 Azure 原則， (的強制原則 `DeployIfNotExists`) 不會自動部署到現有的 vm。 需要補救才能讓 Vm 符合規範。 如需詳細資訊，請參閱 [使用 Azure 原則補救不符合](/azure/governance/policy/how-to/remediate-resources)規範的資源。
 
 ## <a name="common-policy-examples"></a>一般原則範例
 
@@ -40,14 +40,18 @@ Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn')
 下列腳本說明如何指派原則。 變更 `$SubscriptionID` 值以指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 來登入。
 
 ```powershell
+
 # Specify the value for $SubscriptionID.
+
 $SubscriptionID = <subscription ID>
 $scope = "/subscriptions/$SubscriptionID"
 
 # Replace the -Name GUID with the policy GUID you want to assign.
+
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
 # Replace the locations with the ones you want to specify.
+
 $policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
@@ -72,21 +76,24 @@ Azure 提供各種不同的 VM 大小來支援各種工作負載。 若要控制
 
 ### <a name="deploy-antimalware"></a>部署反惡意程式碼
 
-您可以使用此原則，將具有預設設定的 Microsoft Antimalware 擴充功能部署到未受反惡意程式碼保護的 Vm。
+您可以使用此原則，將具有預設設定的 Microsoft 反惡意程式碼擴充功能，部署到未受反惡意程式碼保護的 Vm。
 
 原則 GUID 為 `2835b622-407b-4114-9198-6f7064cbe0dc` 。
 
 下列腳本說明如何指派原則。 若要使用腳本，請將 `$SubscriptionID` 值變更為指向您想要指派原則的訂用帳戶。 執行腳本之前，請使用 [disconnect-azaccount](/powershell/module/az.accounts/connect-azaccount) Cmdlet 來登入。
 
 ```powershell
+
 # Specify the value for $SubscriptionID.
+
 $subscriptionID = <subscription ID>
 $scope = "/subscriptions/$subscriptionID"
 
 $antimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
 # Replace location "eastus" with the value that you want to use.
-New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus –AssignIdentity
+
+New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus -AssignIdentity
 
 ```
 

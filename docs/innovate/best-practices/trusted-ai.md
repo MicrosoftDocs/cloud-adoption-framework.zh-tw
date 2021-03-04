@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 3c897accf314ca7d787f59051c7d43d8868ed9e8
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 8fa6f164cea1a5382a2a6591052936cb18a76784
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230244"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792749"
 ---
 # <a name="responsible-and-trusted-ai"></a>負責任和受信任的 AI
 
@@ -25,7 +25,7 @@ Microsoft 概述了負責任 AI 的六個主要原則：責任、包容性、可
 
 從道德的觀點來看，AI 在其判斷提示中應為公平和包容性，並負責其決策，而不會區分或阻礙不同的競爭、殘障或背景。
 
-Microsoft 已在2017的工程和研究 [Aether](https://www.microsoft.com/ai/our-approach?activetab=pivot1%3aprimaryr5)中，建立 AI、道德和效果的道德委員會。 委員會的核心責任是建議負責任的問題、技術、流程和最佳作法。 若要深入瞭解 Aether，請參閱 [此 Microsoft Learn 課程模組](/learn/modules/microsoft-responsible-ai-practices/3-microsoft-governance-model)。
+Microsoft 已在2017的工程和研究 [Aether](https://www.microsoft.com/ai/our-approach?activetab=pivot1%3aprimaryr5)中，建立 AI、道德和效果的道德委員會。 委員會的核心責任是建議負責任的問題、技術、流程和最佳作法。 若要深入瞭解 Aether，請參閱 [此 Microsoft 學習課程模組](/learn/modules/microsoft-responsible-ai-practices/3-microsoft-governance-model)。
 
 ### <a name="accountability"></a>責任
 
@@ -53,9 +53,9 @@ Microsoft 開發了 [InterpretML](https://interpret.ml/)，這是一個開放原
 
 - 由於有複雜的內部結構（類神經網路），因此會更難解讀黑色方塊模型。 Explainers 像是橙色或 Shapley additive explanations 加法狀說明 (SHAP) 藉由分析輸入和輸出之間的關聯性來解讀這些模型。
 
-- [Fairlearn](https://fairlearn.github.io/) 是 Azure Machine Learning 的整合和開放原始碼工具組，適用于 SDK 和 AutoML 的圖形化使用者介面。 使用 explainers 來瞭解主要會對模型和網域專家造成哪些影響，以驗證這些影響。
+- [Fairlearn](https://fairlearn.org/) 是 Azure Machine Learning 整合，以及適用于 SDK 和 AutoML 圖形使用者介面的開放原始碼工具組。 使用 explainers 來瞭解主要會對模型和網域專家造成哪些影響，以驗證這些影響。
 
-探索 [Azure Machine Learning 中的 [模型] 可解譯性](/azure/machine-learning/how-to-machine-learning-interpretability) ，以深入瞭解可解釋性。
+探索 [Azure Machine Learning 中的模型可解譯性](/azure/machine-learning/how-to-machine-learning-interpretability) ，以深入瞭解可解釋性。
 
 ### <a name="fairness"></a>公平性
 
@@ -69,7 +69,7 @@ Microsoft 開發了 [InterpretML](https://interpret.ml/)，這是一個開放原
 
 ### <a name="transparency"></a>透明度
 
-達到透明度可協助小組瞭解用來定型模型的資料和演算法、套用至資料的轉換邏輯、產生的最終模型，以及其相關聯的資產。 這項資訊可提供模型建立方式的深入解析，讓它能夠以透明的方式重新複製。 [Azure Machine Learning 工作區](/azure/machine-learning/concept-workspace)中的快照集可以藉由錄製或重新定型與實驗相關的所有定型相關資產和計量，來支援透明度。
+達到透明度可協助小組瞭解用來定型模型的資料和演算法、套用至資料的轉換邏輯、產生的最終模型，以及其相關聯的資產。 這項資訊可提供模型建立方式的深入解析，讓它能夠以透明的方式重新複製。 [Azure Machine Learning 工作區](/azure/machine-learning/concept-workspace)中的快照集會藉由錄製或重新定型與實驗相關的所有定型相關資產和計量，來支援透明度。
 
 ### <a name="privacy-and-security"></a>隱私權和安全性
 
@@ -128,7 +128,7 @@ AI 系統管理員和主管監督 AI、治理和 audit framework 作業和效能
 
 - 監視追蹤儀表板，以協助進行模型監視、結合生產模型的模型計量，並將焦點放在精確度、模型降級、資料漂移、偏差，以及加速/錯誤推斷的變更。
 
-- 您最好採用彈性的部署和重新部署 (，REST API) 讓模型得以實作為開放且中立的架構，以整合模型與商務程式，並產生意見反應迴圈的價值。
+- 採用彈性的部署和重新部署 (最好是 REST API) 可讓模型實作為開放、中立的架構，將模型與商務程式整合，並產生意見反應迴圈的價值。
 
 - 致力於建立模型治理和存取權，並可降低負面的商務和操作衝擊。 以角色為基礎的存取控制標準可決定安全性控制項，以保留受限制的生產環境和 IP。
 

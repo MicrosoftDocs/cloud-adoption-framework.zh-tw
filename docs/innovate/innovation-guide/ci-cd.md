@@ -10,16 +10,18 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
 keywords: 數位轉型，數位轉型服務，雲端採用
-ms.openlocfilehash: 69044c6d7f1a66b7d2cd47dc0cadd1181ae388e4
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 8e1e8f303c16b9be07797ece758599efdf64f971
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632064"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792341"
 ---
 # <a name="empower-cloud-adoption"></a>強化雲端採用
 
 您知道創新和數位轉型對於企業成功是不可或缺的。 數位轉型是採用雲端式和數位技術來取代舊的系統，並從資料中創造更好的客戶體驗、更佳的效率、商業見解和更高的創新。 想要實現創新，不能只靠引進新技術。 您需要著重在讓員工獲得支援，以便推動變革並創造您所尋求的新價值。 開發人員是數位轉型的核心，因此必須加快開發人員的開發速度，才能讓他們有能力實現更多成果。 想要釋放開發團隊的創造力，就必須協助他們具有開發效率、促進安全的全球合作，以及移除障礙，讓他們得以大規模創新。
+
+<!-- docutune:ignore "one thing: drive" -->
 
 ## <a name="generate-value"></a>產生值
 
@@ -99,8 +101,8 @@ GitHub 是最大的開發人員社群，屬於開放原始碼社群的核心。 
 ### <a name="learn-more"></a>深入了解
 
 - [在 GitHub 中開啟開放原始碼](https://azure.microsoft.com/products/github/)
-- [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/choose-azure-opensource/)
-- [Microsoft Teams](/MicrosoftTeams/teams-overview)
+- [在 Azure 上開放原始碼](https://azure.microsoft.com/overview/open-source/)
+- [Microsoft Teams](/microsoftteams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[創新特性](#tab/Characteristics)
 

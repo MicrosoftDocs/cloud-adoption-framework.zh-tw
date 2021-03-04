@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3036bdff7300db9a84cf48a033aa73715ca225ab
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: e8c5216cd0541e7bd9a13e21669a20f0ef3df928
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712768"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792885"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>身分識別基準範例原則聲明
 
@@ -31,7 +31,7 @@ ms.locfileid: "97712768"
 
 **原則聲明：** 部署至雲端的所有資產都應使用由目前治理原則核准的身分識別和角色來控制。
 
-**可能的設計選項：** [Azure Active Directory 條件式存取](/azure/active-directory/conditional-access/overview) 是 Azure 中的預設存取控制機制。
+**可能的設計選項：** [Azure Active Directory 條件式存取](/azure/active-directory/conditional-access/overview) 是 azure 中的預設存取控制機制。
 
 ## <a name="overprovisioned-access"></a>過度佈建的存取
 
@@ -46,11 +46,11 @@ ms.locfileid: "97712768"
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>缺少內部部署與雲端之間的共用管理帳戶
 
-**技術風險：** 在內部部署 Active Directory 有帳戶的 IT 管理或系統管理人員可能沒有足夠的雲端資源存取權，可能無法有效率地解決操作或安全性問題。
+**技術風險：** 在內部部署 Active Directory 上具有帳戶的 IT 管理或系統管理人員可能沒有足夠的雲端資源存取權，可能無法有效率地解決操作或安全性問題。
 
 **原則聲明：** 內部部署 Active Directory 基礎結構中具有更高許可權的所有群組，都應該對應至核准的 Azure 角色。
 
-**可能的設計選項：** 在雲端式 Azure Active Directory 與您的內部部署 Active Directory 之間執行混合式身分識別解決方案，並將必要的內部部署群組新增至執行其工作所需的 Azure 角色。
+**可能的設計選項：** 在雲端式 Azure Active Directory 與內部部署 Active Directory 之間執行混合式身分識別解決方案，並將必要的內部部署群組新增至執行其工作所需的 Azure 角色。
 
 ## <a name="weak-authentication-mechanisms"></a>弱式驗證機制
 
@@ -58,7 +58,7 @@ ms.locfileid: "97712768"
 
 **原則聲明：** 所有帳戶都必須使用多重要素驗證方法來登入受保護的資源。
 
-**可能的設計選項：** 針對 Azure Active Directory，請在您的使用者授權程式中執行 [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks) 。
+**可能的設計選項：** 針對 Azure Active Directory，請在您的使用者授權程式中實行 [Azure 多重要素驗證](/azure/active-directory/authentication/concept-mfa-howitworks) 。
 
 ## <a name="isolated-identity-providers"></a>獨立的身分識別提供者
 
@@ -66,7 +66,7 @@ ms.locfileid: "97712768"
 
 **原則聲明：** 部署任何需要客戶驗證的應用程式，都必須使用與內部使用者的主要身分識別提供者相容的核准身分識別提供者。
 
-**可能的設計選項：** 使用內部和客戶識別提供者之間 [的 Azure Active Directory 來執行同盟，](/azure/active-directory/hybrid/whatis-fed) 或使用 [Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b)
+**可能的設計選項：** 在您的內部和客戶身分識別提供者之間 [，與 Azure Active directory 執行同盟，](/azure/active-directory/hybrid/whatis-fed) 或使用 [AZURE active directory B2B](/azure/active-directory/external-identities/what-is-b2b)
 
 ## <a name="identity-reviews"></a>身分識別檢閱
 
@@ -76,7 +76,7 @@ ms.locfileid: "97712768"
 
 **可能的設計選項：** 建立每季安全性審核會議，其中包括治理小組成員，以及負責管理身分識別服務的 IT 人員。 請參閱現有的安全性資料和計量，以在目前的身分識別管理原則和工具中建立差距，並更新原則來補救任何新風險。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用本文中所述的範例做為開發原則的起點，以解決符合您雲端採用方案的特定商務風險。
 

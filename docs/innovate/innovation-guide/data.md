@@ -1,24 +1,27 @@
 ---
-title: Azure 創新：將資料大眾化
-description: 深入了解 Azure 資料目錄、Azure Data Share，以及可加強資料發現性和理解力的其他工具。
-author: absheik
-ms.author: absheik
-ms.date: 10/17/2019
+title: 資料民主化
+description: 瞭解如何使用 Azure 資料目錄、Azure Data Share 和其他工具來 democratization 資料，以增強資料的探索能力與理解。
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-new, AQC
-ms.openlocfilehash: 1a72507853cf2221ff1b2e4a537e000eddd6e883
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
+keywords: 將大眾化、將大眾化資料、將大眾化資料、資料 democratization、大眾化
+ms.openlocfilehash: cffb167db17bf28c21f4abf0324b91f1ca708f55
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017780"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792307"
 ---
 # <a name="democratize-data"></a>將資料大眾化
 
-增強資料的可搜尋性是將資料大眾化的首要步驟之一。 編目和管理資料共用可協助企業從現有的資訊資產獲得最大價值。 資料目錄能讓管理資料的使用者輕鬆地探索和了解資料來源。 Azure 資料目錄可讓您在企業內部進行管理，Azure Data Share 則可讓您在企業外部進行管理和共用。
+資料 democratization 是讓資訊系統的一般非技術使用者可以存取數位資訊的能力，而不需具備閘道管理員或外部存取資料的協助。 將大眾化資料可協助使用者取得重要資料的自由存取權，而不會產生妨礙生產力的瓶頸。
+
+增強資料的可搜尋性是將資料大眾化的首要步驟之一。 編目和管理資料共用可協助企業從現有的資訊資產獲得最大價值。 藉由將大眾化資料目錄，它可以讓管理資料的使用者輕鬆地探索和瞭解資料來源。 Azure 資料目錄可讓您在企業內部進行管理，Azure Data Share 則可讓您在企業外部進行管理和共用。
 
 提供 Azure 時間序列深入解析和串流分析等資料處理工具的 Azure 服務，則是可供客戶和合作夥伴成功使用以滿足其創新需求的其他功能。
 
@@ -36,7 +39,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 ::: zone target="docs"
 
-**移至 [Azure 資料目錄文件](/azure/data-catalog)**
+**移至 [Azure 資料目錄文件](/azure/data-catalog/)**
 
 ::: zone-end
 
@@ -74,7 +77,7 @@ Azure 資料目錄可解決資料取用者的探索挑戰，還可讓資料產�
 
 ::: zone target="docs"
 
-**移至 [Azure Data Share 文件](/azure/data-share)**
+**移至 [Azure Data Share 文件](/azure/data-share/)**
 
 ::: zone-end
 
@@ -112,7 +115,7 @@ Azure 時間序列深入解析的資料創新功能無限。 它可針對 IoT �
 
 ::: zone target="docs"
 
-**移至 [Azure 時間序列深入解析概觀](/azure/time-series-insights/time-series-insights-update-overview)**
+**移至 [Azure 時間序列深入解析概觀](/azure/time-series-insights/overview-what-is-tsi)**
 
 ::: zone-end
 

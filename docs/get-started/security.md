@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: a61af9ba10bf99168aa2cc389e9a12930745101c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5f44a962c5c24c7946cd8f92d281f096557f48a3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022370"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792953"
 ---
 <!-- docutune:casing IR -->
 
@@ -168,7 +168,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
     - [零信任的使用者存取參考架構](/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842) ，以現代化雲端產生的存取控制架構。
 
-    - [Azure 資訊安全中心](/azure/security-center) 與 [Microsoft cloud 應用程式安全性](/cloud-app-security) ，協助保護雲端資產的安全。
+    - [Azure 資訊安全中心](/azure/security-center/) 和 [Microsoft cloud 應用程式安全性](/cloud-app-security/) ，協助保護雲端資產的安全。
 
   - **安全性意識和教育計畫**，讓所有小組都有基本的重要安全性知識。
 
@@ -206,7 +206,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 
 - **複習 Microsoft 學習和指導方針：** Microsoft 已發佈見解和觀點，可協助您的組織規劃雲端的轉型和新式的安全性策略。 本檔包含記錄的訓練、檔和安全性最佳作法，以及建議的標準。
 
-  如需協助建立方案和架構的技術指引，請參閱 [Microsoft 安全性檔案](/security)。
+  如需協助建立方案和架構的技術指引，請參閱 [Microsoft 安全性檔案](/security/)。
 
 <br>
 
@@ -235,14 +235,14 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
   Microsoft 已發佈指導方針，可協助您建立安全性基準：
   - [適用于策略和架構的 Azure 安全性標準](/security/compass/compass)：用來塑造環境安全性狀態的策略和架構建議。
   - [Azure 安全性基準](/azure/security/benchmarks/introduction)檢驗：保護 Azure 環境的特定設定建議。
-  - [Azure 安全性基準訓練](/learn/modules/create-security-baselines)。
+  - [Azure 安全性基準訓練](/learn/modules/create-security-baselines/)。
 
 - **提供護欄：** 保護應包含自動化的原則審核和強制執行。 針對這些新環境，團隊應致力於審核和強制執行組織的安全性基準。 這些工作可協助將工作負載開發期間的安全性意外降至最低，以及持續整合和持續部署 (的 CI/CD) 工作負載。
 
   Microsoft 在 Azure 中提供數個原生功能來啟用此功能：
   - [安全分數](/azure/security-center/secure-score-security-controls)：使用 Azure 安全性狀態的評分評量來追蹤組織中的安全性工作和專案。
-  - [Azure 藍圖](/azure/governance/blueprints/overview)：雲端架構設計人員和集中式 IT 群組可以定義一組可重複使用的 Azure 資源，以符合組織的標準、模式和需求。
-  - [Azure 原則](/azure/governance/policy)：這是其他服務所使用之可見度和控制項功能的基礎。 Azure 原則已整合到 [Azure Resource Manager](/azure/azure-resource-manager)中，因此您可以在建立之前、期間或之後，在 Azure 中的任何資源上審核變更和強制執行原則。
+  - [Azure 藍圖](/azure/governance/blueprints/overview)：雲端架構設計人員和集中式 IT 群組可以定義一組可重複使用的 azure 資源，以符合組織的標準、模式和需求。
+  - [Azure 原則](/azure/governance/policy/)：這是其他服務所使用之可見度和控制功能的基礎。 Azure 原則已整合至 [Azure Resource Manager](/azure/azure-resource-manager/)，因此您可以在建立之前、期間或之後，在 azure 中的任何資源上審核變更和強制執行原則。
   - [改進登陸區域作業](../ready/considerations/landing-zone-security.md)：使用最佳做法來提升登陸區域內的安全性。
 
 <br>
@@ -269,7 +269,7 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 - 平衡營運和安全性風險。 因為這些環境可能會裝載啟用重要商務程式的生產系統，所以您可能需要以累加方式執行安全性改進，以避免風險的作業停機時間。
 - 依商務重要性排列安全性風險探索和補救的優先順序。 如果遭入侵的工作負載和有高風險風險的工作負載，請從具有高業務影響的工作負載開始著手。
 
-如需詳細資訊，請參閱 [識別和分類商務關鍵應用程式](/azure/architecture/framework/security/applications-services#identify-and-classify-business-critical-applications)。
+如需詳細資訊，請參閱 [識別和分類商務關鍵應用程式](/azure/architecture/framework/security/design-apps-services#identify-and-classify-business-critical-applications)。
 
 <br>
 
@@ -300,14 +300,14 @@ Microsoft 已建立功能和資源，可協助您加速在 Microsoft Azure 上�
 | --- | --- |
 | <li> 雲端治理小組 | <li> 雲端策略小組 <li> 雲端安全性小組 <li> 卓越或中央 IT 團隊的雲端中心 |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 本指南中的步驟可協助您實行一致管理整個企業安全性風險所需的策略、控制項、流程、技能和文化特性。
 
 當您繼續進入雲端安全性的作業模式時，請考慮下列後續步驟：
 
-- 請參閱 [Microsoft 安全性檔案](/security)。 它提供技術指引，協助安全性專業人員建立及改進網路安全性策略、架構和優先順序的藍圖。
+- 請參閱 [Microsoft 安全性檔案](/security/)。 它提供技術指引，協助安全性專業人員建立及改進網路安全性策略、架構和優先順序的藍圖。
 - 查看 [Azure 服務內建安全性控制中的](/azure/security/fundamentals/security-controls)安全性資訊。
-- 複習 azure 安全性工具和服務，以瞭解 [azure 上可用的安全性服務和技術](/azure/security/azure-security-services-technologies)。
+- 複習 azure 安全性工具和服務，以瞭解 [azure 上可用的安全性服務和技術](/azure/security/fundamentals/services-technologies)。
 - 請參閱 [Microsoft 信任中心](https://www.microsoft.com/trustcenter/guidance/risk-assessment)。 其中包含廣泛的指導方針、報告和相關檔，可協助您在法規遵循流程中執行風險評估。
-- 複習可用的協力廠商工具，以協助符合您的安全性需求。 如需詳細資訊，請參閱 [Azure 資訊安全中心中的整合安全性解決方案](/azure/security-center/security-center-partner-integration)。
+- 複習可用的協力廠商工具，以協助符合您的安全性需求。 如需詳細資訊，請參閱 [整合 Azure 資訊安全中心的安全性解決方案](/azure/security-center/security-center-partner-integration)。

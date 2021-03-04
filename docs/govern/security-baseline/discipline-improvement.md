@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 69a833c1cd7018cd29445c18e55e65c8e375b35a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 35441db19fb468e1f993e9e8ca6029975db5f2a5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019124"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792392"
 ---
 # <a name="security-baseline-discipline-improvement"></a>安全性基準專業領域改進
 
@@ -21,9 +21,8 @@ ms.locfileid: "97019124"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發安全性基準專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
-
-*圖1：漸進式雲端治理方法的階段。*
+![雲端治理的漸進式方法階段 ](../../_images/govern/adoption-phases.png)
+ *圖1：雲端治理增量方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的安全性基準專業領域。
 
@@ -68,7 +67,7 @@ ms.locfileid: "97019124"
 - 決定您組織的雲端裝載資料[加密](../../decision-guides/encryption/index.md)策略。
 - 評估您雲端部署的[身分識別](../../decision-guides/identity/index.md)策略。 決定您的雲端式身分識別解決方案將與內部部署身分識別提供者共存或整合。
 - 決定您[軟體定義網路 (SDN)](../../decision-guides/software-defined-network/index.md) 設計的網路界限原，以確保可以獲得安全的虛擬化網路功能。
-- 評估您組織的 [最低許可權存取](/azure/active-directory/users-groups-roles/roles-delegate-by-task) 原則，並使用以工作為基礎的角色來提供特定資源的存取權。
+- 評估您組織的 [最低許可權存取](/azure/active-directory/roles/delegate-by-task) 原則，並使用以工作為基礎的角色來提供特定資源的存取權。
 - 將安全性與監視機制套用至所有雲端服務和虛擬機器。
 - 在可能的情況下自動化[安全性原則](../../decision-guides/policy-enforcement/index.md)。
 - 請檢查您的安全性基準原則，並判斷您是否需要根據最佳做法指導方針來修改方案，例如 [安全性開發生命週期](https://www.microsoft.com/sdl)中所述。
@@ -111,7 +110,7 @@ ms.locfileid: "97019124"
 - 備妥適當的程序，以快速停止未經授權存取並停用可能已被攻擊者入侵的資源。
 - 定期檢閱最新的安全性最佳做法，並在可能的情況下套用建議到您的安全性原則、自動化與監視功能。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您已了解雲端安全性治理的概念，請繼續深入了解 [Microsoft 為 Azure 提供哪些安全性與最佳做法](./azure-security-guidance.md)。
 

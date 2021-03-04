@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 613851203fbc099df242686fd7665cfff7bd1fef
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 885f2a63baf5e3f181016c47d864f7a8a3f77cb6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021299"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792018"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>改善您的初始雲端治理基礎
 
@@ -35,7 +35,7 @@ ms.locfileid: "97021299"
 | 複雜/舊版身分識別管理 | N/A | [專業領域改進](./guides/complex/identity-baseline-improvement.md) |
 | 多層控管 | N/A | [專業領域改進](./guides/complex/multiple-layers-of-governance.md) |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 除了應用程式的最佳作法之外，還可以自訂雲端採用架構的控管方法，以符合獨特的商務限制。 遵循適用的建議之後，請 [評估公司原則以瞭解其他自訂需求](./corporate-policy.md)。
 

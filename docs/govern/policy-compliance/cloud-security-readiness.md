@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3f07432568ca8cbd1d2875034342517a874675e5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4daada6803f18554015f11469e1e31c3efea506a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019939"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792409"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO 雲端整備指南
 
@@ -45,7 +45,6 @@ ms.locfileid: "97019939"
 - [必要的安全性訓練、背景檢查](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
 - [滲透測試、入侵偵測、DDoS、稽核和記錄](https://www.microsoft.com/security/business/operations) \(英文\)
 - [尖端的資料中心](https://www.microsoft.com/cloud-platform/global-datacenters)、實體安全性、[安全網路](/azure/security/security-network-overview)
-- [雲端的 Microsoft Azure 安全性回應](https://aka.ms/securityresponsepaper) \(英文\)
 
 **隱私權與控制：**
 
@@ -71,7 +70,7 @@ ms.locfileid: "97019939"
 - [Microsoft 內部的哪些人員可根據哪些條款存取您的資料 (英文)](https://www.microsoft.com/trust-center/privacy/data-access)
 - [查看 Azure 服務、透明度中樞的認證](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在任何治理策略中採取動作的第一個步驟，就是 [原則審核](./cloud-policy-review.md)。 原則[和合規性](./index.md)在原則審核期間可能是實用的指南。
 

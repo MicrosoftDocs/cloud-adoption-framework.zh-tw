@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 74f0166a50a88bda3ec4e786c52a5b7db4cfee2c
-ms.sourcegitcommit: 4b525fc72f00bb57fff65998083320b7015ad7da
+ms.openlocfilehash: 50a866ae8600875b524bb6746386023e145e5287
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100008650"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792494"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
@@ -144,7 +144,7 @@ ms.locfileid: "100008650"
 
 **交付：**
 
-- 完成 [Microsoft Azure 架構審查](/assessments/?id=azure-architecture-review) ，以評估各種架構和作業決策。
+- 完成 [Microsoft Azure 架構審查](/assessments/?id=azure-architecture-review) ，以評估各種架構和操作決策。
 - 調整 [operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) ，以反映任何必要的 advanced 作業。
 
 **支援交付完成的指導方針：**

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 01a63e5c3e7cd7492266ef016b6b5017b64bd580
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 200ade930c80c800c95deb629f6d54109a337806
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021010"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792052"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>適用于複雜企業的治理指南：支援的敘述
 
@@ -45,9 +45,9 @@ CIO 擁有可以幫助公司的創新想法，但她和她的團隊限於滅火�
 
 - 由於有有機成長和多個地理位置，因此有幾個 IT 小組有獨特的資料主權和合規性需求，會影響特定地理位置內的單一營業單位。
 
-- 每個資料中心都是由一系列的區域租用線所連接，以建立鬆散結合的全球 WAN。
+- 每個資料中心都是由一系列的區域租用線路連線，從而建立鬆散結合的全球 WAN。
 
-- 它會將所有使用者的電子郵件帳戶遷移至 Microsoft 365，以進入雲端。 此移轉已在六個多月前完成。 從那時起，只有少數 IT 資產已部署至雲端。
+- 它透過將所有使用者的電子郵件帳戶遷移至 Microsoft 365 來進入雲端。 此移轉已在六個多月前完成。 從那時起，只有少數 IT 資產已部署至雲端。
 
 - CDO 的主要開發小組正致力於開發/測試能力，以瞭解雲端原生功能。
 
@@ -75,7 +75,7 @@ CIO 擁有可以幫助公司的創新想法，但她和她的團隊限於滅火�
 
 - 隨著這項節省成本，公司還打算變更已認可的資本支出，以做為其營運費用來管理某些 IT 投資。 這種變更將提供更好的成本控制，可用於加速其他規劃的工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 公司已經制訂一項公司原則，使治理實施具體化。 公司原則推動了許多技術決策。
 

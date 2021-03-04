@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: ebc6265566b9925d30df08d16d1214ee33595f58
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ad555ae23b7d02a63a00ecfa4fb9b6d4ab95bccc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022421"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792137"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>開始使用：確保所有組合的效能一致
 
@@ -109,7 +109,7 @@ ms.locfileid: "97022421"
 **支援交付完成的指導方針：**
 
 - [收集清查](../digital-estate/inventory.md)：建立資料來源，以在採用之前分析數位資產。
-- [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
+- [最佳做法： Azure 遷移](../plan/contoso-migration-assessment.md)：使用 azure 遷移來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在增量合理化期間，使用量化分析來識別適用于預算的雲端候選。
 - [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理 + 計費，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：建立具有可採取動作的工作負載、資產和時間軸詳細資料的方案。
