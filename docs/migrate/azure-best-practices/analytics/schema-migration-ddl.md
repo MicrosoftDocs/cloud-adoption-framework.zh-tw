@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: fa5ca7a14edd267789f1c355746b42b751491869
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 8f8656992f3e604914df07d4b59acaec62b92d13
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015332"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785592"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
 # <a name="data-definition-languages-for-schema-migration"></a>架構遷移的資料定義語言
 
-本文描述當您將架構遷移至 Azure Synapse Analytics 時，資料定義語言 (Ddl) 的設計考慮和效能選項。
+本文說明當您將架構遷移至 Azure Synapse Analytics 時， (Ddl) 的資料定義語言的設計考慮和效能選項。
 
 ## <a name="design-considerations"></a>設計考量
 
 ### <a name="preparation-for-migration"></a>準備遷移
 
-當您準備將現有的資料移轉至 Azure Synapse Analytics 時，請務必明確地定義練習的範圍 (特別是) 的初始遷移專案。 事先花在瞭解資料庫物件和相關進程如何遷移的時間，可能會在專案之後減少投入時間和風險。
+當您準備將現有資料移轉至 Azure Synapse Analytics 時，請務必明確地定義練習的範圍 (特別是) 的初始遷移專案。 事先花在瞭解資料庫物件和相關進程如何遷移的時間，可能會在專案之後減少投入時間和風險。
 
 建立要遷移之資料庫物件的清查。 根據來源平臺，此清查將包含下列部分或所有物件：
 
@@ -44,13 +44,13 @@ ms.locfileid: "97015332"
 
 當您使用資料磁片區來估計新目標平臺所需的儲存體時，請務必瞭解源資料庫上的資料壓縮率（如果有的話）。 只要採用來源系統上使用的儲存體數量，就可能會成為調整大小的錯誤基礎。 監視和中繼資料資訊可協助您判斷目前系統中的編制索引、資料複寫、記錄或其他進程的未壓縮原始資料大小和負荷。
 
-要遷移之資料表的未壓縮原始資料大小，是估計新目標 Azure Synapse Analytics 環境所需之儲存空間的好起點。
+要遷移之資料表的未壓縮原始資料大小，是估計新目標 Azure Synapse Analytics 環境所需儲存體的絕佳起點。
 
 新的目標平臺也會包含壓縮因數和索引額外負荷，但這些可能會與來源系統不同。 Azure Synapse Analytics 儲存體定價也包含七天的快照集備份。 相較于現有的環境，這可能會對所需的儲存體整體成本產生影響。
 
 您可以延遲資料模型的效能調整，直到延遲的遷移程式，以及資料倉儲中的實際資料量。 不過，我們建議您稍早執行一些效能微調選項。
 
-例如，在 Azure Synapse Analytics 中，將小型維度資料表定義為複寫資料表，以及將大型事實資料表定義為叢集資料行存放區索引，是合理的。 同樣地，在來源環境中定義的索引可讓您清楚地指出哪些資料行可能會在新環境中建立索引的優點。 當您一開始在載入資料表之前定義資料表時，使用這項資訊會在程式之後節省時間。
+例如，在 Azure Synapse Analytics 中，您可以將小型維度資料表定義為複寫資料表，以及將大型事實資料表定義為叢集資料行存放區索引，是合理的。 同樣地，在來源環境中定義的索引可讓您清楚地指出哪些資料行可能會在新環境中建立索引的優點。 當您一開始在載入資料表之前定義資料表時，使用這項資訊會在程式之後節省時間。
 
 當遷移專案進行時，在 Azure Synapse Analytics 中測量您自己資料的壓縮比率和索引額外負荷是很好的作法。 此量值可讓您進行未來的容量規劃。
 
@@ -61,26 +61,26 @@ ms.locfileid: "97015332"
 
 遷移練習的一個目標，也可能是藉由變更基礎資料模型來將倉儲現代化。 其中一個範例是從 Inmon 樣式的資料模型移至資料保存庫的方法。 您應該在準備階段中決定這一點，並納入轉換至遷移計畫的策略。
 
-在此案例中，建議的方法是先將資料模型依原樣遷移至新的平臺，然後再轉換至 Azure Synapse Analytics 中的新模型。 使用平臺的擴充性和效能特性來執行轉換，而不會影響來源系統。
+在此案例中，建議的方法是先將資料模型依原樣遷移至新的平臺，然後轉換至 Azure Synapse Analytics 中的新模型。 使用平臺的擴充性和效能特性來執行轉換，而不會影響來源系統。
 
 ### <a name="data-model-migration"></a>資料模型遷移
 
-根據來源系統的平臺和來源，部分或全部部分的資料模型可能已在星形或雪花式架構表單中。 若是如此，您可以直接將它遷移至 Azure Synapse Analytics。 此案例是最簡單且最低的風險遷移，以達成目標。 依原樣遷移也可以是更複雜遷移的第一個階段，包括轉換到新的基礎資料模型（例如資料保存庫），如先前所述。
+根據來源系統的平臺和來源，部分或全部部分的資料模型可能已在星形或雪花式架構表單中。 若是如此，您可以直接將其遷移至 Azure Synapse Analytics。 此案例是最簡單且最低的風險遷移，以達成目標。 依原樣遷移也可以是更複雜遷移的第一個階段，包括轉換到新的基礎資料模型（例如資料保存庫），如先前所述。
 
 任何一組關聯式資料表和視圖都可以遷移至 Azure Synapse Analytics。 針對大型資料集的分析查詢工作負載，星形或雪花式資料模型通常可提供最佳的整體效能。 如果源資料模型尚未採用此形式，可能值得使用遷移程式來 reengineer 模型。
 
 如果遷移專案包含對資料模型所做的任何變更，最好的作法就是在新的目標環境中執行這些變更。 也就是說，先遷移現有的模型，然後使用 Azure Synapse Analytics 的強大功能和彈性，將資料轉換為新的模型。 這種方法可將對現有系統的影響降到最低，並使用 Azure Synapse Analytics 的效能和擴充性，以快速且符合成本效益的方式進行任何變更。
 
-您可以將現有的系統移轉為數個層級 (例如，資料內嵌/暫存層、資料倉儲層，以及報告或資料超市層) 。 每一層都包含關聯式資料表和觀點。 雖然您可以將這些全都遷移至 Azure Synapse Analytics，但使用 Azure 生態系統的一些特性和功能可能更符合成本效益且更可靠。 例如：
+您可以將現有的系統移轉為數個層級 (例如，資料內嵌/暫存層、資料倉儲層，以及報告或資料超市層) 。 每一層都包含關聯式資料表和觀點。 雖然您可以將這些都遷移至 Azure Synapse Analytics，但是使用 Azure 生態系統的一些特性和功能可能更符合成本效益且更可靠。 例如：
 
 - **資料內嵌和預備：** 您可以使用 Azure Blob 儲存體搭配 PolyBase，以快速進行 ETL 的部分 (解壓縮、轉換、載入) 或 ELT (解壓縮、載入、轉換) 進程，而不是關聯式資料表。
-- **報表層和資料超市：** Azure Synapse Analytics 的效能特性，可能會讓您不必實際將匯總資料表具現化，以用於報告用途或資料超市。 您可以將這些功能實作為核心資料倉儲或協力廠商資料虛擬化層的觀點。 在基本層級中，您可以完成歷程記錄資料的資料移轉程式，也可能會有累加式更新，如下圖所示：
+- **報表層和資料超市：** Azure Synapse Analytics 的效能特性可能會讓您不必實際將匯總資料表具現化，以用於報告用途或資料超市。 您可以將這些功能實作為核心資料倉儲或協力廠商資料虛擬化層的觀點。 在基本層級中，您可以完成歷程記錄資料的資料移轉程式，也可能會有累加式更新，如下圖所示：
 
    ![說明新式資料倉儲的圖表。](../../../_images/analytics/schema-migration-ddl.png)
 
 如果您可以使用這些或類似的方法，將會減少要遷移的資料表數目。 某些處理常式可能已簡化或消除，進而減少遷移工作負載。 這些方法的適用性取決於個別的使用案例。 但一般原則是考慮盡可能使用 Azure 生態系統的功能和功能來減少遷移工作負載，並建立符合成本效益的目標環境。 這也適用于其他功能，例如備份/還原和工作流程管理與監視。
 
-Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移，而在某些情況下會將部分流程自動化。 如果現有的系統納入協力廠商 ETL 產品，則可能已支援 Azure Synapse Analytics 做為目標環境。 現有的 ETL 工作流程可以重新導向至新的目標資料倉儲。
+Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移，而在某些情況下會將部分流程自動化。 如果現有的系統納入協力廠商 ETL 產品，則可能已支援 Azure Synapse Analytics 作為目標環境。 現有的 ETL 工作流程可以重新導向至新的目標資料倉儲。
 
 ### <a name="data-marts-physical-or-virtual"></a>資料超市：實體或虛擬
 
@@ -92,10 +92,10 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 如果這些資料超市實作為實體資料表，這些資料超市需要額外的儲存體資源來裝載它們以及進行額外的處理，以定期建立和重新整理它們。 實體資料表顯示超市中的資料只是最後一個重新整理作業的最新資料，因此可能不適用於高度變動性的資料儀表板。
 
-隨著可調整規模相當便宜的大量平行處理， (MPP) 架構（例如 Azure Synapse Analytics 和其固有的效能特性），您或許可以提供資料超市功能，而不必將超市具現化為一組實體資料表。 您可以透過下列其中一種方法，有效地虛擬化資料超市來達成此目的：
+隨著可調整規模相當便宜的大量平行處理， (MPP) 架構（例如 Azure Synapse Analytics 和其固有的效能特性），您或許可以提供資料超市功能，而不需要將超市具現化為一組實體資料表。 您可以透過下列其中一種方法，有效地虛擬化資料超市來達成此目的：
 
 - 主要資料倉儲上的 SQL 資料檢視。
-- 使用 Azure Synapse Analytics 或協力廠商虛擬化產品（例如 Denodo）中的功能的虛擬化層。
+- 使用 Azure Synapse Analytics 或協力廠商虛擬化產品（例如 Denodo）等功能的虛擬化層。
 
 這種方法可簡化或消除額外儲存和匯總處理的需求。 它會減少要遷移的資料庫物件總數。
 
@@ -112,13 +112,13 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 ### <a name="data-mapping"></a>資料對應
 
-#### <a name="key-and-integrity-constraints-in-azure-synapse-analytics"></a>Azure Synapse Analytics 中的主要和完整性條件約束
+#### <a name="key-and-integrity-constraints-in-azure-synapse-analytics"></a>Azure Synapse Analytics 中的關鍵和完整性條件約束
 
-目前不會在 Azure Synapse Analytics 內強制執行主鍵和外鍵條件約束。 不過，您可以 `PRIMARY KEY` 在語句中包含子句的定義 `CREATE TABLE` `NOT ENFORCED` 。 這表示協力廠商報告產品可以使用資料表的中繼資料來瞭解資料模型中的索引鍵，因此產生最有效率的查詢。
+Azure Synapse Analytics 中目前未強制執行主鍵和外鍵條件約束。 不過，您可以 `PRIMARY KEY` 在語句中包含子句的定義 `CREATE TABLE` `NOT ENFORCED` 。 這表示協力廠商報告產品可以使用資料表的中繼資料來瞭解資料模型中的索引鍵，因此產生最有效率的查詢。
 
 #### <a name="data-type-support-in-azure-synapse-analytics"></a>Azure Synapse Analytics 中的資料類型支援
 
-某些較舊的資料庫系統包含 Azure Synapse Analytics 內不直接支援之資料類型的支援。 您可以使用支援的資料類型來儲存資料，或將資料轉換為支援的資料類型，以處理這些資料類型。
+某些較舊的資料庫系統包含 Azure Synapse Analytics 中不直接支援的資料類型支援。 您可以使用支援的資料類型來儲存資料，或將資料轉換為支援的資料類型，以處理這些資料類型。
 
 以下是支援的資料類型清單（以字母順序列出）：
 
@@ -192,19 +192,19 @@ Microsoft 合作夥伴提供的產品和服務可協助進行資料倉儲遷移�
 
 盡可能自動化，並使用來源系統中系統目錄的中繼資料，為目標環境產生 Ddl。 可能的話，也會自動產生檔。 WhereScape 等 Microsoft 合作夥伴可以提供特殊的工具和服務，以協助進行自動化。
 
-在目標平臺上執行任何必要的資料模型變更或資料對應優化。 您可以在 Azure Synapse Analytics 中更有效率地進行這些變更。 這種方法可減少可能已接近完整容量之來源系統的影響。
+在目標平臺上執行任何必要的資料模型變更或資料對應優化。 您可以更有效率地在 Azure Synapse Analytics 中進行這些變更。 這種方法可減少可能已接近完整容量之來源系統的影響。
 
 ## <a name="performance-options"></a>效能選項
 
-本節說明 Azure Synapse Analytics 中可用來改善資料模型效能的功能。
+本節說明可讓您用來改善資料模型效能的 Azure Synapse Analytics 中可用的功能。
 
 ### <a name="general-approach"></a>一般方法
 
-平臺的功能會在即將遷移的資料庫上執行效能微調。 索引、資料分割和資料散發是這類效能調整的範例。 當您準備進行遷移時，記錄微調可以捕捉並顯示您可以在 Azure Synapse Analytics 目標環境中套用的優化。
+平臺的功能會在即將遷移的資料庫上執行效能微調。 索引、資料分割和資料散發是這類效能調整的範例。 當您準備進行遷移時，記錄微調可以捕獲並顯示可在 Azure Synapse Analytics 目標環境中套用的優化。
 
 例如，在資料表上存在非唯一索引時，可以指出索引中使用的欄位經常用於篩選、分組或聯結。 這在新的環境中仍是如此，因此當您選擇要為其編制索引的欄位時，請記住這點。 特定來源平臺（例如 Teradata 和 Netezza）的遷移建議會在個別的檔中詳細說明。
 
-使用目標 Azure Synapse Analytics 環境的效能和擴充性來試驗不同的效能選項，例如資料散發。 判斷替代方法的最佳選擇 (例如，針對大型維度資料表) 複寫與雜湊散發。 這並不表示必須從外部來源重載資料。 使用不同的資料分割或分佈選項透過語句來建立任何資料表的複本，就可以快速且輕鬆地測試 Azure Synapse Analytics 中的替代方法 `CREATE TABLE AS SELECT` 。
+使用目標 Azure Synapse Analytics 環境的效能和擴充性，來試驗不同的效能選項，例如資料散發。 判斷替代方法的最佳選擇 (例如，針對大型維度資料表) 複寫與雜湊散發。 這並不表示必須從外部來源重載資料。 使用不同的資料分割或分佈選項透過語句來建立任何資料表的複本，可讓您快速且輕鬆地在 Azure Synapse Analytics 中測試替代方法 `CREATE TABLE AS SELECT` 。
 
 使用 Azure 環境所提供的監視工具來瞭解查詢的執行方式，以及可能發生瓶頸的位置。 協力廠商 Microsoft 合作夥伴也可以使用工具來提供監視儀表板和自動化的資源管理和警示。
 
@@ -214,7 +214,7 @@ Azure Synapse Analytics 和資源中的每個 SQL 作業（例如記憶體或該
 
 ### <a name="temporary-tables"></a>暫存資料表
 
-Azure Synapse Analytics 支援只能在建立它們的會話中看見的臨時表。 它們存在於使用者會話的持續時間內，並會在會話結束時自動卸載。
+Azure Synapse Analytics 支援僅對其建立所在之會話可見的臨時表。 它們存在於使用者會話的持續時間內，並會在會話結束時自動卸載。
 
 若要建立臨時表，請在資料表名稱前面加上雜湊字元 (`#`) 。 您可以使用所有一般的索引和散發選項與臨時表，如下一節所述。
 
@@ -228,7 +228,7 @@ Azure Synapse Analytics 支援只能在建立它們的會話中看見的臨時�
 
 ### <a name="table-distribution-options"></a>資料表散發選項
 
-Azure Synapse Analytics 是一種 MPP 資料庫系統，可跨多個處理節點平行執行，以達到效能和擴充性。
+Azure Synapse Analytics 是 MPP 資料庫系統，可跨多個處理節點平行執行，以達到效能和擴充性。
 
 在多節點環境中執行 SQL 查詢的理想處理案例是平衡工作負載，並為所有節點提供相等的資料量來處理。 這種方法也可讓您將必須在節點之間移動的資料量降到最低或減少，以滿足查詢。
 
@@ -258,7 +258,7 @@ Azure Synapse Analytics 是一種 MPP 資料庫系統，可跨多個處理節點
 
 ### <a name="indexing"></a>編製索引
 
-Azure Synapse Analytics 包含在大型資料表中索引資料的選項，以減少取得記錄所需的資源和時間：
+Azure Synapse Analytics 包含在大型資料表中索引資料的選項，可減少取得記錄所需的資源和時間：
 
 - 叢集資料行存放區索引
 - 叢集索引
@@ -300,7 +300,7 @@ Azure Synapse Analytics 包含在大型資料表中索引資料的選項，以�
 
 ### <a name="statistics"></a>統計資料
 
-當查詢提交至 Azure Synapse Analytics 時，查詢最佳化工具會先處理該查詢。 優化工具會判斷最適合用來有效率地執行查詢的內部方法。
+當查詢提交至 Azure Synapse Analytics 時，它會先由查詢最佳化工具進行處理。 優化工具會判斷最適合用來有效率地執行查詢的內部方法。
 
 優化工具會根據以成本為基礎的演算法來比較可使用的各種查詢執行計畫。 成本預估的精確度取決於可用的統計資料。 確保統計資料是最新狀態是個不錯的作法。
 
@@ -319,9 +319,9 @@ Azure Synapse Analytics 併入了跨混合工作負載管理資源使用率的�
 
 ### <a name="performance-recommendations"></a>效能建議
 
-使用效能改進方法（例如索引或資料散發）來量測新目標環境中類似方法的候選項目，但在 Azure Synapse Analytics 中確認它們是必要的。 `COLLECT STATISTICS`在 ETL/ELT 進程中建立步驟，以確保統計資料是最新的，或選擇自動建立統計資料。
+使用效能改進方法（例如索引或資料散發）來測量新目標環境中類似方法的候選項目，但基準測試可確認它們在 Azure Synapse Analytics 中是必要的。 `COLLECT STATISTICS`在 ETL/ELT 進程中建立步驟，以確保統計資料是最新的，或選擇自動建立統計資料。
 
-瞭解 Azure Synapse Analytics 中可用的微調選項，以及相關公用程式的效能特性，例如 PolyBase 以進行快速的平行資料載入。 使用這些選項來建立有效率的端對端執行。
+瞭解 Azure Synapse Analytics 中可用的微調選項，以及相關公用程式的效能特性，例如 PolyBase 以快速進行平行資料載入。 使用這些選項來建立有效率的端對端執行。
 
 使用 Azure 環境的彈性、擴充性和效能，就地執行任何資料模型變更或效能微調選項。 這種努力會降低對現有來源系統的影響。
 

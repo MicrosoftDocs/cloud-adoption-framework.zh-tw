@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 4d36ef28177eaae36a58b81498c1bbbd6bdb8aab
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 18812370c924a39536dcc6e74f5b7d2bb835e878
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174483"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789349"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -44,7 +44,7 @@ Azure 服務可以模擬傳統的大型主機環境，讓您重複使用現有�
 
 許多大型主機都有 OLTP 系統，為廣大的使用者處理數千、甚或數以百萬計的更新。 這些應用程式通常會使用交易處理和螢幕形式處理軟體，例如客戶資訊控制系統 (CICS) 、資訊管理系統 (IMS) ，以及終端介面處理器 (提示) 。
 
-將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api 結合，例如 ActiveX Data Objects (ADO) 、開放式資料庫連接 (ODBC) 和 JAVA 資料庫連線 (JDBC) 進行資料存取和交易。
+將 OLTP 應用程式移至 Azure 時，您可以使用 Azure 上的虛擬機器 (VM)，將大型主機交易處理 (TP) 監視器的模擬器以基礎結構即服務 (IaaS) 的形式執行。 畫面處理和表單功能也可以由 Web 伺服器實作。 這種方法可以與資料庫 Api （例如 ActiveX Data Objects）結合 (ADO) 、開放式資料庫連接 (ODBC) ，以及 JAVA 資料庫連接 (JDBC) 以進行資料存取和交易。
 
 ### <a name="time-constrained-batch-updates"></a>有時間限制的批次更新
 
@@ -54,7 +54,7 @@ Azure 服務可以模擬傳統的大型主機環境，讓您重複使用現有�
 
 ### <a name="data-ingestion-systems"></a>資料擷取系統
 
-大型主機會從零售業、金融服務業、製造業和處理其他解決方案擷取大型批次的資料進行處理。 透過 Azure，您可以使用簡單的命令列公用程式 (例如 [AzCopy](/azure/storage/common/storage-use-azcopy)) 將資料複製到儲存體位置，或從中複製資料。 您也可以使用 [Azure Data Factory](/azure/data-factory/introduction) 服務從不同的資料存放區擷取資料，以建立和排程資料驅動的工作流程。
+大型主機會從零售業、金融服務業、製造業和處理其他解決方案擷取大型批次的資料進行處理。 透過 Azure，您可以使用簡單的命令列公用程式 (例如 [AzCopy](/azure/storage/common/storage-use-azcopy-v10)) 將資料複製到儲存體位置，或從中複製資料。 您也可以使用 [Azure Data Factory](/azure/data-factory/introduction) 服務從不同的資料存放區擷取資料，以建立和排程資料驅動的工作流程。
 
 除了模擬環境外，Azure 還提供平台即服務 (PaaS) 和分析服務，用以增強現有的大型主機環境。
 
@@ -66,7 +66,7 @@ Azure 服務可以模擬傳統的大型主機環境，讓您重複使用現有�
 
 ![使用模擬軟體將大型主機環境遷移至 Azure 的「隨即轉移」](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-在 Azure 上，模擬環境可用來執行 TP 管理員和使用 JCL 的批次作業。 在資料層中，DB2 會取代為 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview)，但也可以使用 Microsoft SQL Server、DB2 LUW 或 Oracle Database。 模擬器支援 IMS、VSAM 和 SEQ。 系統會將大型主機的系統管理工具取代為 Azure 服務，以及其他廠商在 Vm 中執行的軟體。
+在 Azure 上，模擬環境可用來執行 TP 管理員和使用 JCL 的批次作業。 在資料層中，DB2 會取代為 [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview)，但也可以使用 Microsoft SQL Server、DB2 LUW 或 Oracle Database。 模擬器支援 IMS、VSAM 和 SEQ。 系統會將大型主機的系統管理工具取代為 Azure 服務，以及其他廠商在 Vm 中執行的軟體。
 
 畫面處理和表單輸入功能通常會使用 Web 伺服器來實作，而這些伺服器可以與資料庫 API (例如 ADO、ODBC 和 JDBC) 結合，以進行資料存取和交易。 所應使用的確切 Azure IaaS 元件組合，取決於您慣用的作業系統。 例如：
 
@@ -78,7 +78,7 @@ Azure 服務可以模擬傳統的大型主機環境，讓您重複使用現有�
 
 Azure 中的批次作業不同於大型主機上的一般批次環境。 大型主機批次作業通常是循序的，且倚賴大型主機骨幹所提供 IOPS 來提升效能。 雲端式批次環境會使用平行計算和高速網路來提升效能。
 
-若要使用 Azure 將批次效能最佳化，請考慮使用[計算](/azure/virtual-machines/windows/overview)、[儲存體](/azure/storage/blobs/storage-blobs-introduction)、[網路](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)和[監視](/azure/azure-monitor/overview)選項，如下所示。
+若要使用 Azure 將批次效能最佳化，請考慮使用[計算](/azure/virtual-machines/windows/overview)、[儲存體](/azure/storage/blobs/storage-blobs-introduction)、[網路](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux/)和[監視](/azure/azure-monitor/overview)選項，如下所示。
 
 ### <a name="compute"></a>計算
 
@@ -96,11 +96,11 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 使用︰
 
-- [Azure PREMIUM ssd](/azure/virtual-machines/windows/premium-storage) 或 [azure ultra ssd](/azure/virtual-machines/windows/disks-ultra-ssd) 可獲得最大的可用 IOPS。
+- 適用于最大可用 IOPS 的[azure Premium ssd](/azure/virtual-machines/disks-types#premium-ssd)或[azure ultra 磁片](/azure/virtual-machines/disks-types#ultra-ssd-preview)。
 
 - 將多個磁碟等量分割，使每個儲存體大小有更多 IOPS。
 
-- 分割以將 i/o 分散到多個 Azure 儲存體裝置上。
+- 分割儲存體以將 i/o 分散到多個 Azure 儲存體裝置。
 
 ### <a name="networking"></a>網路
 
@@ -108,7 +108,7 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ### <a name="monitoring"></a>監視
 
-- 使用監視工具、 [Azure 監視器](/azure/azure-monitor/overview)、 [Application Insights](/azure/application-insights/app-insights-overview)和 Azure 記錄可讓系統管理員監視批次執行的任何效能，並協助消除瓶頸。
+- 使用監視工具、 [Azure 監視器](/azure/azure-monitor/overview)、 [Application Insights](/azure/azure-monitor/app/app-insights-overview)和 Azure 記錄可讓系統管理員監視批次執行的任何效能，並協助消除瓶頸。
 
 ## <a name="migrate-development-environments"></a>移轉開發環境
 
@@ -128,13 +128,13 @@ Azure 中的批次作業不同於大型主機上的一般批次環境。 大型�
 
 ## <a name="migrate-databases-and-data"></a>移轉資料庫和資料
 
-應用程式移轉通常牽涉到重新裝載資料層。 您可以將 SQL Server、開放原始碼和其他關係資料庫移轉至 Azure 上完全受控的解決方案，例如[AZURE SQL 受控執行個體](/azure/sql-database/sql-database-managed-instance)、[適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql/overview)，以及[azure 資料庫移轉服務](/azure/dms/dms-overview)的[適用於 MySQL 的 Azure 資料庫](/azure/mysql/overview)。
+應用程式移轉通常牽涉到重新裝載資料層。 您可以將 SQL Server、開放原始碼和其他關係資料庫移轉至 Azure 上完全受控的解決方案，例如[AZURE SQL 受控實例](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)、[適用于于 postgresql 的 azure 資料庫](/azure/postgresql/overview)，以及使用[azure 資料庫移轉服務](/azure/dms/dms-overview)的[適用于 MySQL 的 azure 資料庫](/azure/mysql/overview)。
 
 例如，如果大型主機資料層使用下列項目，則可以進行移轉：
 
-- IBM DB2 或 IMS 資料庫，請使用 Azure SQL Database、SQL Server、DB2 LUW 或 Azure 上的 Oracle Database。
+- IBM DB2 或 IMS 資料庫，在 Azure 上使用 Azure SQL Database、SQL Server、DB2 LUW 或 Oracle 資料庫。
 
-- VSAM 和其他一般檔案，針對 Azure SQL Database、SQL Server、DB2 LUW 或 Oracle 使用索引循序存取方法 (ISAM) 一般檔案。
+- 適用于 Azure SQL Database、SQL Server、DB2 LUW 或 Oracle 的一般檔案，可使用 Azure SQL Database、SQL Server、DB2 或 Oracle 的已編制循序存取方法 (ISAM) 一般檔案。
 
 - 產生日期群組 (Gdg) ，遷移至 Azure 上使用命名慣例和副檔名的檔案，這些檔案會提供類似 Gdg 的功能。
 
@@ -166,11 +166,11 @@ IBM 資料層包含數個您也必須移轉的重要元件。 例如，在移轉
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>執行從大型主機至 Azure 的分段移轉
 
-要將解決方案從大型主機移至 Azure 可能需執行 _分段_ 移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
+要將解決方案從大型主機移至 Azure 可能需執行 *分段* 移轉，藉以讓某些應用程式先移轉，而讓其他應用程式暫時或永久保留在大型主機上。 使用此方法時，系統通常必須允許應用程式和資料庫在大型主機與 Azure 之間交互操作。
 
 常見的案例是，將應用程式移至 Azure，但將應用程式所使用的資料保留在大型主機上。 您可以使用特定軟體讓 Azure 上的應用程式可從大型主機存取資料。 幸運的是，有許多解決方案都提供 Azure 與現有大型主機環境的整合功能、混合式案例的支援，以及長時間的漸進移轉。 Microsoft 合作夥伴、獨立軟體廠商和系統整合商皆可協助您展開此程序。
 
-其中一個選項是 [Microsoft Host Integration Server](/host-integration-server)，這是一個解決方案，可提供分散式關係資料庫架構 (DRDA) 讓 Azure 中的應用程式存取 DB2 中仍保留在大型主機上的資料。 適用于大型主機與 Azure 整合的其他選項包括 IBM、Attunity、Codit、其他廠商和開放原始碼選項的解決方案。
+其中一個選項是 [Microsoft Host Integration Server](/host-integration-server/)，這是一個解決方案，可提供分散式關係資料庫架構 (DRDA) Azure 中的應用程式存取 DB2 中的資料，而該資料仍保留在大型主機上。 適用于大型主機與 Azure 整合的其他選項包括 IBM、Attunity、Codit、其他廠商和開放原始碼選項的解決方案。
 
 ## <a name="partner-solutions"></a>合作夥伴解決方案
 
@@ -182,8 +182,8 @@ Azure 提供經過實證、高度可用且可調整的基礎結構，適用於�
 
 如需詳細資訊，請參閱下列資源：
 
-- [開始使用 Azure](/azure)
+- [開始使用 Azure](/azure/)
 
-- [在 Azure 上部署 IBM DB2 pureScale](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
+- [在 Azure 上部署 IBM DB2 pureScale](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure/)
 
-- [Host Integration Server 文件](/host-integration-server)
+- [Host Integration Server 文件](/host-integration-server/)

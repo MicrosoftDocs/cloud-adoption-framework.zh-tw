@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 116498f442aae4b3e028ecc1c84d3dbee0bd1f20
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: b244492009e80ad2505eb7519c6bf4247971561e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019072"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789366"
 ---
 # <a name="security-baseline-discipline-overview"></a>安全性基準專業領域概觀
 
@@ -24,7 +24,7 @@ ms.locfileid: "97019072"
 
 本文概述開發安全性基準專業領域作為雲端治理策略一部分的方法。 本指引之主要適用對象為組織的雲端架構設計師和雲端治理小組的其他成員。 從此專業領域衍生的決策、原則和流程，應會涉及與您的 IT 和安全性小組相關成員進行互動與討論，特別是負責實作網路、加密和身分識別服務的技術主管。
 
-對於雲端部署成功和更成功的業務推展而言，制定正確的安全性決策極為重要。 如果貴組織沒有網路安全性方面的內部專業知識，請考慮聘請外部安全顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) 雲端採用服務，或聘請其他外部雲端採用專家來討論此專業領域的相關事宜。
+對於雲端部署成功和更成功的業務推展而言，制定正確的安全性決策極為重要。 如果貴組織沒有網路安全性方面的內部專業知識，請考慮聘請外部安全顧問成為此專業領域的一部分。 此外，考慮納入 [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack/) 雲端採用服務，或聘請其他外部雲端採用專家來討論此專業領域的相關事宜。
 
 ## <a name="policy-statements"></a>Policy statements
 

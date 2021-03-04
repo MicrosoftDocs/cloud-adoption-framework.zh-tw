@@ -1,6 +1,6 @@
 ---
-title: Netezza 的 Azure Synapse Analytics 遷移
-description: 使用適用于 Azure 的雲端採用架構，瞭解 Netezza 的分析解決方案，並將其遷移至 Azure Synapse Analytics。
+title: 適用于 Netezza 的 Azure Synapse Analytics 遷移
+description: 使用適用于 Azure 的雲端採用架構，瞭解 Netezza 和遷移至 Azure Synapse Analytics 的分析解決方案。
 author: v-hanki
 ms.author: brblanch
 ms.date: 07/14/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: ad5a3eb7eb845213764bcc82c698417a7c45eb64
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: caf1980187a5f1b06968266ca642c7794a0f166d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015536"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787428"
 ---
 <!-- docutune:casing Informatica Talend Inmon Attunity Qlik nzLua CBT CBTs NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "97015536"
 
 由於 IBM 對 Netezza 的支援結束，目前使用 Netezza 資料倉儲系統的許多組織都想要利用創新的雲端、基礎結構即服務，以及較新環境（例如 Azure）中的平臺即服務供應專案。 許多組織已準備好將昂貴的工作（例如基礎結構維護和平臺開發）移至雲端提供者。
 
-Azure Synapse Analytics 是一種無限制的分析服務，可將企業資料倉儲和大型資料分析整合在一起。 它可讓您自由使用無伺服器隨選或布建資源，以大規模地查詢您的詞彙資料。 瞭解當您將舊版 Netezza 系統移轉至 Azure Synapse 時要做什麼規劃。
+Azure Synapse Analytics 是一項無限制的分析服務，可將企業資料倉儲和大型資料分析整合在一起。 它可讓您自由使用無伺服器隨選或布建資源，以大規模地查詢您的詞彙資料。 瞭解當您將舊版 Netezza 系統移轉至 Azure Synapse 時要做什麼規劃。
 
 Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設計目的是使用大量平行處理技術，以在大型資料磁片區上達到高查詢效能。 但這兩個平臺在主要層面上不同：
 
@@ -49,7 +49,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 - 允許內部技術人員體驗新的程式和工具，讓他們可以使用它們來遷移其他區域。
 - 根據目前的工具和進程建立範本，以用於從來源 Netezza 環境進行額外的遷移。
 
-從支援這些目標的 Netezza 環境初始遷移的絕佳候選，通常是執行 Power BI/分析工作負載，而非 OLTP 工作負載的一種。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
+從支援這些目標的 Netezza 環境初始遷移的絕佳候選，通常是執行 Power BI/分析工作負載而非 OLTP 工作負載的一種。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
 
 針對大小，您在初始練習中遷移的資料量很重要，足以示範 Azure Synapse 環境的功能和優點，並提供簡短的時間來示範價值。 通常符合需求的大小是在 1 tb (TB) 到 10 TB 之間。
 
@@ -71,7 +71,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 使用 Azure 環境的功能自動化和協調遷移程式是合理的。 這種方法會將現有 Netezza 環境的影響降到最低，而這可能已接近完整容量。
 
-Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用 Data Factory 在雲端建立資料驅動的工作流程，以協調和自動化資料移動和資料轉換。 Data Factory 管線可以從不同的資料存放區內嵌資料，然後使用 Azure HDInsight 適用于 Apache Hadoop 和 Apache Spark、Azure Data Lake Analytics 和 Azure Machine Learning 等計算服務來處理和轉換資料。 首先，建立中繼資料來列出您想要遷移的資料表及其位置，然後使用 Data Factory 功能來管理遷移程式。
+Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用 Data Factory 在雲端中建立資料驅動的工作流程，以協調及自動進行資料移動和資料轉換。 Data Factory 管線可以從不同的資料存放區內嵌資料，然後使用 Azure HDInsight for Apache Hadoop 和 Apache Spark、Azure Data Lake Analytics 和 Azure Machine Learning 等計算服務來處理和轉換資料。 首先，建立中繼資料來列出您想要遷移的資料表及其位置，然後使用 Data Factory 功能來管理遷移程式。
 
 ## <a name="design-differences-between-netezza-and-azure-synapse"></a>Netezza 與 Azure Synapse 之間的設計差異
 
@@ -79,7 +79,7 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>多個資料庫與單一資料庫和架構
 
-在 Netezza 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及另一個適用于資料超市的資料庫，有時稱為「 _語義層_」。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
+在 Netezza 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及另一個適用于資料超市的資料庫，有時也稱為「 *語義層*」。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
 Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在目標 Azure Synapse 中使用一系列的架構，以模仿您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和觀點移至新的環境。 例如，您可能會將現有的 Netezza 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
 
@@ -178,7 +178,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 您可以使用 nz_ddl_table 之類的公用程式來存取 Netezza 中的系統目錄資料表。 您可以使用資料表來產生 `CREATE TABLE` DDL 語句，然後您可以在 Azure Synapse 中針對對等的資料表進行編輯。 協力廠商的遷移和 ETL 工具也會使用類別目錄資訊來達成相同的結果。
 
-- **資料解壓縮：** 您可以使用標準 Netezza 公用程式（例如 nzsql 和 nzunload），以及使用外部資料表，將原始資料解壓縮，以從現有的 Netezza 資料表遷移至一般的分隔檔案。 使用 gzip 壓縮檔案，然後使用 AzCopy 或 Azure 資料傳輸服務（例如 Azure 資料箱）將檔案上傳至 Azure Blob 儲存體。
+- **資料解壓縮：** 您可以使用標準 Netezza 公用程式（例如 nzsql 和 nzunload），以及使用外部資料表，將原始資料解壓縮，以從現有的 Netezza 資料表遷移至一般的分隔檔案。 使用 Gzip 壓縮檔案，然後使用 AzCopy 或 azure 資料傳輸服務（例如 Azure 資料箱），將檔案上傳至 Azure Blob 儲存體。
 
   在遷移練習期間，請務必盡可能有效率地將資料解壓縮。 Netezza 的建議方法是使用外部資料表，這也是最快的方法。 您可以平行完成多個解壓縮，以將資料解壓縮的輸送量最大化。
 
@@ -188,7 +188,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
    如果您有足夠的網路頻寬，您可以使用 Data Factory 進程或協力廠商資料移轉或 ETL 產品，將資料從內部部署 Netezza 系統直接解壓縮到 Azure Synapse 資料表或 Azure 資料儲存體。
 
-   解壓縮資料的建議資料格式是分隔的文字檔 (也稱為 _逗點分隔值_) 、優化的資料列單欄式檔案或 Parquet 檔案。
+   解壓縮資料的建議資料格式是分隔的文字檔 (也稱為 *逗點分隔值*) 、優化的資料列單欄式檔案或 Parquet 檔案。
 
 如需有關從 Netezza 環境遷移資料和 ETL 之程式的詳細資訊，請參閱 Netezza 有關資料移轉 ETL 和載入的檔。
 
@@ -207,7 +207,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **資料散發選項：** 在 Netezza 和 Azure Synapse 中，您可以使用 `CREATE TABLE` 語句來指定散發定義。 用於 `DISTRIBUTE ON` Netezza 和 `DISTRIBUTION =` Azure Synapse。
 
-   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的 _維度資料表/事實資料表聯結_ 。 方法是在所有節點之間複寫較小的維度資料表，藉此確保較大資料表的聯結索引鍵值，會有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
+   Azure Synapse 提供另一種方法來達成小型資料表/大型資料表聯結的本機聯結，通常稱為星狀架構模型中的 *維度資料表/事實資料表聯結* 。 方法是在所有節點之間複寫較小的維度資料表，藉此確保較大資料表的聯結索引鍵值，會有可在本機使用的相符維度資料列。 如果資料表很大，則複寫維度資料表的額外負荷相對較低。 在此情況下，最好使用稍早所述的雜湊散發方法。
 
 - **資料索引編制：** Azure Synapse 提供各種使用者可定義的索引編制選項，但是在 Netezza 中，這些選項與系統管理的區域對應的操作和使用方式不同。 若要瞭解 Azure Synapse 中的索引編制選項，請參閱 [Azure SYNAPSE SQL 集區中的索引資料表](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index)。
 
@@ -221,6 +221,6 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **工作負載管理的資源類別：** Azure Synapse 會使用資源類別來管理工作負載。 一般情況下，大型資源類別可提供更佳的個別查詢效能。 較小的資源類別可提供更高層級的平行存取。 您可以使用動態管理檢視來監視使用狀況，以協助確保有效率地使用適當的資源。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-如需有關執行 Netezza 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。
+如需有關實施 Netezza 遷移的詳細資訊，請與您的 Microsoft 帳戶代表討論內部部署的內部部署優惠。

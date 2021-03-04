@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: b455cfe253aecd8187e026bac88d902422650cc7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 858ae7a6c9ebfa63af0148088bd51de3bd04334a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025124"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788431"
 ---
 # <a name="replication-options"></a>複寫選項
 
@@ -30,7 +30,7 @@ ms.locfileid: "97025124"
 - **從其他雲端遷移至 Azure。** 您可以將在其他雲端提供者上佈建的計算執行個體遷移至 Azure VM。 在進行移轉時，Site Recovery 會將這些執行個體視為實體伺服器。
 
 ![Azure Site Recovery ](../../../_images/migrate/asr-replication-image.png)
- _圖1： Azure Site Recovery 將資產移至 Azure 或其他雲端。_
+ *圖1：將資產移至 azure 或其他雲端的 Azure site recovery。*
 
 在您評定內部部署和雲端基礎結構以進行移轉後，Azure Site Recovery 會藉由複寫內部部署機器來提供移轉策略。 透過下列簡單步驟，您可以設定將內部部署 VM、實體伺服器和雲端 VM 執行個體移轉至 Azure 的作業：
 
@@ -46,9 +46,9 @@ ms.locfileid: "97025124"
 
 此服務捨棄多項工具，只使用單一全方位功能的服務，降低雲端移轉的複雜度。 [Azure 資料庫移轉服務](/azure/dms/dms-overview)設計成可將內部部署 SQL Server 資料庫順暢地移至雲端的端對端解決方案。 這是一個完全受控的服務，能夠從多個資料庫來源無縫移轉至 Azure 資料平台，將停機時間降到最低。 它整合了現有工具和服務的某些功能，為客戶提供全方位、高可用性的解決方案。
 
-此服務會使用 Data Migration Assistant 來產生評定報告，以提供建議，以引導您在執行遷移之前完成所需的變更。 由您自行決定是否要執行任何必要補救。 當您準備好開始進行遷移程式時，Azure 資料庫移轉服務會執行所有相關聯的步驟。 移轉程序會善用 Microsoft 決定的最佳做法，因此您可以放心地移轉專案。
+此服務會使用資料移轉小幫手來產生評定報告，以提供建議以引導您完成執行遷移之前所需的變更。 由您自行決定是否要執行任何必要補救。 當您準備好開始進行遷移程式時，Azure 資料庫移轉服務會執行所有相關聯的步驟。 移轉程序會善用 Microsoft 決定的最佳做法，因此您可以放心地移轉專案。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 複寫完成後，即可開始[預備活動](./stage.md)。
 

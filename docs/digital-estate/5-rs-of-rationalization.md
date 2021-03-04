@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b098d1f1b03c83a40249f34d48e07c589eaea507
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 3885cda1a320b52c3f66e780a1f9bca5e84a8adb
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174449"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787734"
 ---
 # <a name="cloud-rationalization"></a>雲端合理化
 
@@ -118,7 +118,7 @@ ms.locfileid: "98174449"
 
 ## <a name="rebuild"></a>重建
 
-在某些情況下，必須克服才能讓應用程式向前邁進的差異可能太大，而無法進一步調整投資。 對於之前符合企業需求的應用程式來說更是如此，但現在在目前的商務程式中不支援或不一致。 在此情況下，會建立新的程式碼基底，以配合 [雲端原生](https://azure.microsoft.com/overview/cloudnative) 方法。
+在某些情況下，必須克服才能讓應用程式向前邁進的差異可能太大，而無法進一步調整投資。 對於之前符合企業需求的應用程式來說更是如此，但現在在目前的商務程式中不支援或不一致。 在此情況下，會建立新的程式碼基底，以配合 [雲端原生](https://azure.microsoft.com/overview/cloudnative/) 方法。
 
 常見的驅動程式可能包括：
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: a7f43c5ec340d7cbf50b570406e27e715e90378a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d738d917f43c2d9e454e30fcb73b8030ba99fd9c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023934"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788125"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>登陸區域的測試驅動開發 (TDD)
 
@@ -67,14 +67,14 @@ ms.locfileid: "97023934"
 雲端採用架構中的控管方法，提供了一段敘述性旅程，讓您瞭解治理小組的自然成熟度。 內嵌在該旅程中的數個範例是「完成定義」和「驗收準則」（以原則聲明的形式）。
 
 - [初始原則聲明](../../govern/guides/complex/initial-corporate-policy.md#policy-statements)：根據早期階段採用需求，管理和初始定義完成的公司原則範例。
-- 身分[識別擴充](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements)：管理 ( 「完成定義」 ) 的公司原則範例，符合擴充登陸區域身分識別管理的需求。
-- [安全性擴充](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-policy-statements)：管理 ( 「完成定義」 ) 的公司原則範例，以符合參考雲端採用方案的安全性需求。
-- [作業擴充](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements)：公司原則的範例，負責管理 ( 「完成定義」 ) 符合基本作業管理需求。
-- [成本擴充](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements)：公司原則的範例，負責 ( 「完成定義」 ) 以符合成本管理需求。
+- 身分 [識別擴充](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements)：公司原則的範例，負責管理 *完成的定義*，以符合擴充登陸區域身分識別管理的需求。
+- [安全性擴充](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-policy-statements)：公司原則的範例，控管 *完成的定義* 符合參考雲端採用方案的安全性需求。
+- [作業擴充](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements)：公司原則的範例，控管 *完成的定義* 符合基本作業管理需求。
+- [成本擴充](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements)：公司原則的範例，控管完成以符合成本管理需求的 *定義* 。
 
-上述範例是基本的範例，可協助開發登陸區域的「完成定義」。 [雲端治理的五個專業領域](../../govern/governance-disciplines.md)都有其他範例原則可供使用。
+上述範例是基本的範例，可協助開發針對登陸區域 *完成的定義* 。 [雲端治理的五個專業領域](../../govern/governance-disciplines.md)都有其他範例原則可供使用。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 若要在 Azure 中加速測試導向開發，請參閱 [azure 的測試導向開發功能](./azure-test-driven-development.md)。
 

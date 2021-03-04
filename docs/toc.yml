@@ -7,30 +7,32 @@ items:
     href: overview.md
   - name: 新功能
     href: get-started/whats-new.md
-  - name: 開始使用
+  - name: 採用旅程
     items:
-      - name: 概觀
-        href: get-started/index.md
-      - name: 基礎一致性
+      - name: 開始使用
         items:
-          - name: 記錄基礎一致性決策
-            href: get-started/cloud-concepts.md
-          - name: Azure 如何運作？
-            href: get-started/what-is-azure.md
-          - name: Azure 基礎概念
-            href: ready/considerations/fundamental-concepts.md
-          - name: 組合階層
-            href: reference/fundamental-concepts/hosting-hierarchy.md
-          - name: Azure 階層支援
-            href: reference/fundamental-concepts/hierarchy-azure-tools.md
-      - name: 加速採用
-        items:
-          - name: 加速移轉
-            href: get-started/migrate.md
-          - name: 建置新的產品與服務
-            href: get-started/innovate.md
-          - name: 去除環境設計和設定的障礙
-            href: get-started/design-and-configuration.md
+          - name: 概觀
+            href: get-started/index.md
+          - name: 基礎一致性
+            items:
+              - name: 記錄基礎一致性決策
+                href: get-started/cloud-concepts.md
+              - name: Azure 如何運作？
+                href: get-started/what-is-azure.md
+              - name: Azure 基礎概念
+                href: ready/considerations/fundamental-concepts.md
+              - name: 組合階層
+                href: reference/fundamental-concepts/hosting-hierarchy.md
+              - name: Azure 階層支援
+                href: reference/fundamental-concepts/hierarchy-azure-tools.md
+          - name: 加速採用
+            items:
+              - name: 加速移轉
+                href: get-started/migrate.md
+              - name: 建置新的產品與服務
+                href: get-started/innovate.md
+              - name: 去除環境設計和設定的障礙
+                href: get-started/design-and-configuration.md
       - name: 改善控制項
         items:
           - name: 讓客戶能夠成功
@@ -57,6 +59,12 @@ items:
             href: get-started/team/cloud-governance.md
           - name: 建置雲端作業小組
             href: get-started/team/cloud-operations.md
+      - name: 採用案例
+        items:
+          - name: 混合式與多重雲端
+            href: scenarios/hybrid/index.md
+          - name: 新式容器
+            href: scenarios/aks/index.md
   - name: 策略
     items:
       - name: 概觀
@@ -232,7 +240,37 @@ items:
                   - name: 管理群組和訂用帳戶組織
                     href: ready/enterprise-scale/management-group-and-subscription-organization.md
                   - name: 網路拓樸和連線能力
-                    href: ready/enterprise-scale/network-topology-and-connectivity.md
+                    items:
+                      - name: 概觀
+                        href: ready/enterprise-scale/network-topology-and-connectivity.md
+                      - name: 規劃 IP 定址
+                        href: ready/azure-best-practices/plan-for-ip-addressing.md
+                      - name: 適用于內部部署和 Azure 資源的 DNS
+                        href: ready/azure-best-practices/dns-for-on-premises-and-azure-resources.md
+                      - name: 大規模的私人連結和 DNS 整合
+                        href: ready/azure-best-practices/private-link-and-dns-integration-at-scale.md
+                      - name: 定義 Azure 網路拓撲
+                        href: ready/azure-best-practices/define-an-azure-network-topology.md
+                      - name: '虛擬 WAN 網路拓撲 (Microsoft 管理的) '
+                        href: ready/azure-best-practices/virtual-wan-network-topology.md
+                      - name: 傳統的 Azure 網路拓撲
+                        href: ready/azure-best-practices/traditional-azure-networking-topology.md
+                      - name: Azure 的連線能力
+                        href: ready/azure-best-practices/connectivity-to-azure.md
+                      - name: Azure PaaS 服務的連線能力
+                        href: ready/azure-best-practices/connectivity-to-azure-paas-services.md
+                      - name: 規劃輸入和輸出網際網路連線能力
+                        href: ready/azure-best-practices/plan-for-inbound-and-outbound-internet-connectivity.md
+                      - name: 規劃應用程式傳遞
+                        href: ready/azure-best-practices/plan-for-app-delivery.md
+                      - name: 規劃登陸區域網路分割
+                        href: ready/azure-best-practices/plan-for-landing-zone-network-segmentation.md
+                      - name: 定義網路加密需求
+                        href: ready/azure-best-practices/define-network-encryption-requirements.md
+                      - name: 規劃流量檢查
+                        href: ready/azure-best-practices/plan-for-traffic-inspection.md
+                      - name: 與其他雲端提供者的連線能力
+                        href: ready/azure-best-practices/connectivity-to-other-cloud-providers.md
                   - name: 管理與監視
                     href: ready/enterprise-scale/management-and-monitoring.md
                   - name: 商務持續性和災害復原

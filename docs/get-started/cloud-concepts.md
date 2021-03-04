@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 13bd784f2012010ff347f1a461b4ddb3cdc2fe1f
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 0e73ed6f0f60f32bb5d50d8b089127e65215d1b5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712037"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788652"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>開始使用：瞭解及記錄基礎對齊決策
 
@@ -26,7 +26,7 @@ ms.locfileid: "97712037"
 
 當您完成本指南時，請使用 [初始決策範本](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)來記錄我們的基本決策。 範本可協助您快速將參與雲端採用生命週期的團隊成員上線，方法是澄清雲端環境的設定和原因。
 
-如果您已經在 Azure 中執行環境，Azure 治理的 [視覺化檢視](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) 可協助您加速檔。 深入瞭解原則、Azure 角色型存取控制 (Azure RBAC) 、Azure 藍圖、訂用帳戶等等。 從收集的資料中，工具會在階層架構上提供可見度、建立租使用者摘要，以及建立有關管理群組和訂用帳戶的細微範圍深入解析。
+如果您已有在 Azure 中執行的環境， [azure 治理視覺化檢視](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) 可協助您加快檔的速度。 深入瞭解原則、Azure 角色型存取控制 (Azure RBAC) 、Azure 藍圖、訂用帳戶等等。 從收集的資料中，工具會在階層架構上提供可見度、建立租使用者摘要，以及建立有關管理群組和訂用帳戶的細微範圍深入解析。
 
 ## <a name="step-1-understand-how-azure-works"></a>步驟1：瞭解 Azure 的運作方式
 
@@ -57,7 +57,7 @@ Azure 技術策略的所有相關人員都應該瞭解基礎概念中的詞彙�
 - 在開始雲端採用之前，[基本概念](../ready/considerations/fundamental-concepts.md)可協助您瞭解重要的 Azure 主題。
 - [Operations management 活頁簿](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)和企業調整方法可協助您瞭解已轉換至雲端營運團隊的工作負載和資產。
 - [雲端採用方案](../plan/plan-intro.md)提供預定在雲端採用的工作負載和資產待處理專案（backlog）。
-- [數位資產分析](../digital-estate/approach.md) 是一種方法，可記錄現有的工作負載，以及預定在雲端採用的資產。 在 Azure 中，數位資產最適合用稱為 [Azure Migrate](/azure/migrate/migrate-support-matrix)的工具表示。
+- [數位資產分析](../digital-estate/approach.md) 是一種方法，可記錄現有的工作負載，以及預定在雲端採用的資產。 在 Azure 中，數位資產最適合用稱為 [Azure 遷移](/azure/migrate/migrate-support-matrix)的工具表示。
 
 <br>
 

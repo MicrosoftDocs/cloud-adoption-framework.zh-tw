@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3cb114a6cd0bf0d7ebf285c0689f4f02e17b88ae
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ea3fdbc23847b1e0c20c84bade64e5d0e96b439e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018868"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787632"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure 中的安全性基準工具
 
@@ -21,7 +21,7 @@ ms.locfileid: "97018868"
 
 下列 Azure 工具清單可協助您成熟支援此專業領域的原則和流程。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) 和 [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure 金鑰保存庫](/azure/key-vault)  | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 原則](/azure/governance/policy/overview) | [Azure 資訊安全中心](/azure/security-center/security-center-intro) | [Azure 監視器](/azure/azure-monitor/overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal/) 和 [azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Key Vault](/azure/key-vault/)  | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 原則](/azure/governance/policy/overview) | [Azure 資訊安全中心](/azure/security-center/security-center-introduction) | [Azure 監視器](/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | 對資源和建立資源套用存取控制   | 是                             | 否              | 是      | 否           | 否                    | 否            |
 | 保護虛擬網路                                    | 是                             | 否              | 否       | 是          | 否                    | 否            |
@@ -37,6 +37,6 @@ ms.locfileid: "97018868"
 
 如需 Azure 安全性工具和服務的完整清單，請參閱 [Azure 可用的安全性服務與技術](/azure/security/fundamentals/services-technologies)。
 
-客戶通常會使用協力廠商工具來啟用安全性基準專業領域活動。 如需詳細資訊，請參閱 [Azure 資訊安全中心中的整合安全性解決方案](/azure/security-center/security-center-partner-integration)文章。
+客戶通常會使用協力廠商工具來啟用安全性基準專業領域活動。 如需詳細資訊，請參閱在 [Azure 資訊安全中心整合安全性解決方案](/azure/security-center/security-center-partner-integration)文章。
 
-除了安全性工具以外，[Microsoft 信任中心](https://www.microsoft.com/microsoft-365/business/compliance-solutions#office-KeyMessages-k3j63yo)也包含廣泛的指引、報告和相關文件，可協助您在移轉規劃程序中執行風險評估。
+除了安全性工具以外， [Microsoft 365 中的合規性管理](https://www.microsoft.com/microsoft-365/enterprise/compliance-management) 還提供廣泛的指引、報告和相關檔，可協助您在遷移規劃過程中執行風險評估。

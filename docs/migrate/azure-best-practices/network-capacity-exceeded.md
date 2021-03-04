@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 1a493c8624d1cbcd4fbf9d4c9a4a6fb559b5d4c1
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 0560917c6a96db4371a77563099ba15e7fe119c6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174806"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788465"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -35,13 +35,13 @@ ms.locfileid: "98174806"
 
 您可以使用此方法，從 HDFS、備份、封存、檔案伺服器和應用程式傳輸資料。 現有的技術指引說明如何使用這種方法，從 [HDFS 存放區](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) 或從磁片使用 [SMB](/azure/databox/data-box-deploy-copy-data)、 [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、 [rest](/azure/databox/data-box-deploy-copy-data-via-rest)或 [資料複製服務](/azure/databox/data-box-deploy-copy-data-via-copy-service) 將資料傳輸至資料箱。
 
-另外還有協力廠商的合作夥伴解決方案，會使用 Azure 資料箱來進行遷移。 使用這些解決方案時，您可以透過離線傳輸移動大量資料，但稍後透過網路以較低的規模進行同步處理。
+另外還有協力廠商合作夥伴解決方案，這些解決方案會使用 Azure 資料箱來進行遷移。 使用這些解決方案時，您可以透過離線傳輸移動大量資料，但稍後透過網路以較低的規模進行同步處理。
 
-![顯示 Azure 資料箱的離線和線上資料傳輸圖表。](../../_images/migrate/data-box.png)
+![顯示使用 Azure 資料箱進行離線和線上資料傳輸的圖表。](../../_images/migrate/data-box.png)
 
 ## <a name="assess-process-changes"></a>評定程序變更
 
-如果工作負載 (或工作負載) 超過網路容量的儲存需求，您仍然可以在離線資料傳輸中使用 Azure 資料箱。
+如果工作負載 (或工作負載) 超過網路容量的儲存體需求，則您仍然可以在離線資料傳輸中使用 Azure 資料箱。
 
 除非網路無法使用，否則網路傳輸是建議的方法。 即使頻寬受到限制，透過網路傳輸資料的速度通常會比實際使用離線傳輸機制來傳送資料更快。
 
@@ -56,7 +56,7 @@ ms.locfileid: "98174806"
 > [!IMPORTANT]
 > 分析結束時，您可能需要更新發行計畫，以反映出貨、還原和同步處理要離線傳輸的資產所需的時間。
 
-**漂移分析：** 分析每個要離線傳輸的資產，以進行儲存和設定漂移。 _儲存體漂移_ 是一段時間內基礎儲存體的變更量。 設定 _漂移_ 會隨著時間而變更資產的設定。 從儲存體複製到資產升級到生產環境的時間，可能會遺失任何漂移。 如果該漂移必須反映在已遷移的資產中，則您必須同步處理本機資產和已遷移的資產。 在遷移執行期間，將此旗標標示為考慮。
+**漂移分析：** 分析每個要離線傳輸的資產，以進行儲存和設定漂移。 *儲存體漂移* 是一段時間內基礎儲存體的變更量。 設定 *漂移* 會隨著時間而變更資產的設定。 從儲存體複製到資產升級到生產環境的時間，可能會遺失任何漂移。 如果該漂移必須反映在已遷移的資產中，則您必須同步處理本機資產和已遷移的資產。 在遷移執行期間，將此旗標標示為考慮。
 
 ## <a name="migration-process-changes"></a>遷移流程變更
 
@@ -66,9 +66,9 @@ ms.locfileid: "98174806"
 
 **複製存放裝置：** 您可以使用此方法來傳送 HDFS、備份、封存、檔案伺服器或應用程式的資料。 現有的技術指引說明如何使用這種方法，從 [HDFS 存放區](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) 或從磁片使用 [SMB](/azure/databox/data-box-deploy-copy-data)、 [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、 [rest](/azure/databox/data-box-deploy-copy-data-via-rest)或 [資料複製服務](/azure/databox/data-box-deploy-copy-data-via-copy-service) 將資料傳輸至資料箱。
 
-另外還有協力廠商的合作夥伴解決方案，會使用 Azure 資料箱來進行遷移。 使用這些解決方案時，您可以透過離線傳輸移動大量資料，但稍後透過網路以較低的規模進行同步處理。
+另外還有協力廠商合作夥伴解決方案，這些解決方案會使用 Azure 資料箱來進行遷移。 使用這些解決方案時，您可以透過離線傳輸移動大量資料，但稍後透過網路以較低的規模進行同步處理。
 
-**寄送裝置：** 複製資料之後，您可以將 [裝置寄送至 Microsoft](/azure/databox/data-box-deploy-picked-up)。 資料收到並匯入之後，就會在 Azure 儲存體帳戶中提供。
+**寄送裝置：** 複製資料之後，您可以將 [裝置寄送至 Microsoft](/azure/databox/data-box-deploy-picked-up)。 資料收到並匯入之後，就會出現在 Azure 儲存體帳戶中。
 
 **還原資產：** 確認儲存體帳戶中有可用 [的資料](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) 。 若是如此，您可以使用資料作為 blob 或 Azure 檔案儲存體。 如果資料是 VHD/VHDX 檔案，您可以將檔案轉換成受控磁片。 隨後，您就可以使用這些受控磁碟來具現化虛擬機器，以建立原始內部部署資產的複本。
 

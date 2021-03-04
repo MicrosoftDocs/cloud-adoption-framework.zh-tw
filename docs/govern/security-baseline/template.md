@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 61bf6a17de600385795b3c7ac5913d1ebb4259e4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: dd81e43538814599f521565fd03e823ec647d1dd
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018936"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789298"
 ---
 # <a name="security-baseline-discipline-template"></a>安全性基準專業領域範本
 
@@ -26,7 +26,7 @@ ms.locfileid: "97018936"
 
 [下載安全性基準專業版範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 紮實的治理實務可從了解商務風險著手。 檢閱有關商務風險的文章，並開始記載與您目前雲端採用方案保持一致的業務風險。
 

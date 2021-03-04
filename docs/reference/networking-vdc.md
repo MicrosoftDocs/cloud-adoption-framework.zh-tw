@@ -2,19 +2,19 @@
 title: 虛擬資料中心：網路觀點
 description: 使用適用于 Azure 的雲端採用架構，瞭解如何使用 Azure 順暢地將基礎結構延伸至雲端，並建立多層式架構。
 author: tracsman
-manager: rossort
 ms.author: brblanch
+manager: rossort
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: efe7a4e957bd2287c4cfe846562788b0c165c3ee
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: ed98a21bf3a987cd15d0485b639283791e95355d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713076"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788091"
 ---
 <!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
@@ -23,7 +23,7 @@ ms.locfileid: "97713076"
 
 從內部部署遷移的應用程式將受益于 Azure 的安全成本效益基礎結構，即使是最基本的應用程式變更也是如此。 即使是如此，企業也應調整其架構以改善靈活性，並利用 Azure 的功能。
 
-Microsoft Azure 利用企業級功能和可靠性來提供超大規模的服務和基礎結構。 這些服務和基礎結構提供許多混合式連線的選擇，因此客戶可以選擇透過網際網路或私人網路連線來存取這些服務和基礎結構。 Microsoft 合作夥伴也可以提供增強的功能，方法是提供最適合在 Azure 中執行的安全性服務和虛擬裝置。
+Microsoft Azure 以企業級功能和可靠性提供超大規模服務和基礎結構。 這些服務和基礎結構提供許多混合式連線的選擇，因此客戶可以選擇透過網際網路或私人網路連線來存取這些服務和基礎結構。 Microsoft 合作夥伴也可以提供增強的功能，方法是提供最適合在 Azure 中執行的安全性服務和虛擬裝置。
 
 客戶可以使用 Azure 將其基礎結構順暢地延伸至雲端，並建立多層式架構。
 
@@ -67,15 +67,15 @@ Microsoft Azure 利用企業級功能和可靠性來提供超大規模的服務�
 
 ### <a name="identity-and-directory-service"></a>身分識別和目錄服務
 
-身分識別和目錄服務是內部部署和雲端資料中心的主要功能。 身分識別涵蓋 VDC 實行內服務存取和授權的所有層面。 為了確保只有經過授權的使用者和程式可以存取您的 Azure 資源，Azure 會使用數種類型的認證進行驗證，包括帳戶密碼、密碼編譯金鑰、數位簽章和憑證。 [Azure Multi-Factor Authentication][multi-factor-authentication] 為使用強式驗證來存取 Azure 服務，提供一層額外的安全性， (電話、文字訊息或行動裝置代理程式更新) ，讓客戶選擇他們偏好的方法。
+身分識別和目錄服務是內部部署和雲端資料中心的主要功能。 身分識別涵蓋 VDC 實行內服務存取和授權的所有層面。 為了確保只有經過授權的使用者和程式可以存取您的 Azure 資源，Azure 會使用數種類型的認證進行驗證，包括帳戶密碼、密碼編譯金鑰、數位簽章和憑證。 [Azure 多重要素驗證][multi-factor-authentication] 可提供額外的安全性層級，以使用強式驗證來存取 Azure 服務， (通話、文字訊息或行動裝置代理程式更新) ，讓客戶選擇他們偏好的方法。
 
 任何大型企業都需要定義身分識別管理程式，以描述如何管理其 VDC 內或之間的個別身分識別、其驗證、授權、角色和許可權。 此程式的目標應該是提高安全性與生產力，同時降低成本、停機時間和重複性的手動工作。
 
-企業組織可能需要針對不同的業務需求混合使用服務，而員工在與不同的專案相關時，通常會有不同的角色。 使用 VDC 時，各具有特定角色定義的不同小組之間必須密切合作，使系統在妥善的控管下執行。 責任、存取權和權限的矩陣可能會很複雜。 VDC 中的身分識別管理是透過 [Azure Active Directory (Azure AD) ][azure-ad] 和 azure 角色型存取控制 (azure RBAC) 來實行。
+企業組織可能需要針對不同的業務需求混合使用服務，而員工在與不同的專案相關時，通常會有不同的角色。 使用 VDC 時，各具有特定角色定義的不同小組之間必須密切合作，使系統在妥善的控管下執行。 責任、存取權和權限的矩陣可能會很複雜。 VDC 中的身分識別管理是透過 azure Active Directory 來執行， [ (AZURE AD) ][azure-ad] 和 azure 角色型存取控制 (azure RBAC) 。
 
 目錄服務是一種共用資訊基礎結構，用以尋找、管理和組織日常項目和網路資源。 這些資源可能包含磁碟區、資料夾、檔案、印表機、使用者、群組、裝置和其他物件。 目錄伺服器會將網路上的每個資源都視為物件。 資源的相關資訊會儲存為與該資源或物件建立關聯的屬性集合。
 
-所有 Microsoft online 商務服務都依賴 Azure Active Directory (Azure AD) 進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，它結合了核心目錄服務、進階身分識別管制及應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
+所有 Microsoft online 商務服務都依賴 Azure Active Directory (Azure AD) 來進行登入和其他身分識別需求。 Azure Active Directory 是全方位、高可用性的身分識別和存取管理的雲端解決方案，它結合了核心目錄服務、進階身分識別管制及應用程式存取管理。 Azure AD 可以與內部部署 Active Directory 整合，以啟用所有雲端式和本機裝載 (內部部署) 應用程式的單一登入。 內部部署 Active Directory 的使用者屬性可以自動同步至 Azure AD。
 
 VDC 實作中的所有權限不一定要由單一全域管理員指派。 相反地，每個特定部門、使用者群組或目錄服務中的服務都可以有管理其在 VDC 實作內專屬資源所需的權限。 建構權限需要平衡。 權限太多可能會阻礙效能效率，而權限太少或鬆散可能會增加安全性風險。 Azure 角色型存取控制 (Azure RBAC) 協助您解決此問題，方法是在 VDC 執行的資源提供更細緻的存取管理。
 
@@ -105,7 +105,7 @@ Azure 網狀架構會將基礎結構資源分配給租用戶工作負載，並�
 
 [Azure 虛擬網路][virtual-network] 和 [虛擬網路對等互連][virtual-network-peering] 是虛擬資料中心內的基本網路元件。 虛擬網路可保證虛擬資料中心資源的隔離界限。 對等互連可讓相同 Azure 區域內的不同虛擬網路、跨區域，甚至是不同訂用帳戶中的網路之間的 vnet 互相通訊。 在虛擬網路內部和兩者之間，流量流程可以由針對 [網路安全性群組][NSG]、防火牆原則 ([Azure 防火牆][AzFW] 或 [網路虛擬裝置][NVA]) 和自訂 [使用者定義路由][UDR]所指定的一組安全性規則來控制。
 
-虛擬網路也是將平臺即服務整合 (PaaS) Azure 產品（例如 [Azure 儲存體][Storage]、 [azure SQL][SQL]和其他具有公用端點的整合式公用服務）的錨點。 您可以使用 [服務端點][ServiceEndpoints] 和 [Azure Private Link][PrivateLink]，將公用服務與私人網路整合。 您甚至可以將公用服務私用，但仍可享受 Azure 管理的 PaaS 服務的優點。
+虛擬網路也是將平臺即服務整合 (PaaS) Azure 產品（例如 [Azure 儲存體][Storage]、 [azure SQL][SQL]和其他具有公用端點的整合式公用服務）的錨點。 您可以使用 [服務端點][ServiceEndpoints] 和 [Azure private Link][PrivateLink]，將公用服務與私人網路整合。 您甚至可以將公用服務私用，但仍可享受 Azure 管理的 PaaS 服務的優點。
 
 ## <a name="virtual-datacenter-overview"></a>虛擬資料中心概觀
 
@@ -113,19 +113,19 @@ Azure 網狀架構會將基礎結構資源分配給租用戶工作負載，並�
 
 您可以根據需求和規模需求，使用下列其中一種高階拓撲來建立虛擬資料中心：
 
-在 _平面拓撲_ 中，所有資源都會部署在單一虛擬網路中。 子網允許流量控制和隔離。
+在 *平面拓撲* 中，所有資源都會部署在單一虛擬網路中。 子網允許流量控制和隔離。
 
 ![11][11]
 
-在 _網狀拓撲_ 中，虛擬網路對等互連會將所有虛擬網路直接連線到彼此。
+在 *網狀拓撲* 中，虛擬網路對等互連會將所有虛擬網路直接連線到彼此。
 
 ![12][12]
 
-對 _等互連中樞和輪輻拓撲_ 非常適合具有委派責任的分散式應用程式和小組。
+對 *等互連中樞和輪輻拓撲* 非常適合具有委派責任的分散式應用程式和小組。
 
 ![13][13]
 
-_Azure 虛擬 WAN 拓撲_ 可支援大規模的分公司案例和全球 WAN 服務。
+*Azure 虛擬 WAN 拓撲* 可支援大規模的分公司案例和全球 WAN 服務。
 
 ![14][14]
 
@@ -136,7 +136,7 @@ _Azure 虛擬 WAN 拓撲_ 可支援大規模的分公司案例和全球 WAN 服�
 中樞通常包含輪輻所耗用的一般服務元件。 以下是常用中央服務的範例：
 
 - 從不受信任的網路存取的第三方在能夠存取輪輻中的工作負載之前進行使用者驗證所需的 Windows Active Directory 基礎結構。 其中包括相關的 Active Directory 同盟服務 (AD FS)。
-- 分散式名稱系統 (DNS) 服務來解析輪輻中工作負載的命名，以存取內部部署和網際網路上的資源（如果未使用 [Azure DNS][DNS] ）。
+- 分散式名稱系統 (DNS) 服務來解析輪輻中工作負載的命名，以存取內部部署和網際網路上的資源（如果未使用 [AZURE DNS][DNS] ）。
 - 公開金鑰基礎結構 (PKI)，用以實作工作負載的單一登入。
 - 輪輻網路區域與網際網路之間的 TCP 和 UDP 流量的流量控制。
 - 輪輻與內部部署之間的流量控制。
@@ -215,7 +215,7 @@ VDC 的設計目的是為了讓中央 IT 小組所建立的群組，在工作負
 
 基礎結構元件提供不同 VDC 實作元件的互相連線，並且存在於中樞和輪輻中。 管理和維護基礎結構元件的責任通常會指派給中央 IT 小組或安全性小組。
 
-IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位址結構描述一致性。 指派給 VDC 實作的私人 IP 位址空間需要一致，而且不會與內部部署網路上指派的私人 IP 位址重疊。
+IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位址結構描述一致性。 指派給 VDC 的私人 IP 位址空間必須一致，且 **不** 會與您內部部署網路上指派的私人 ip 位址重迭。
 
 雖然內部部署邊際路由器或 Azure 環境中的 NAT 可以避免 IP 位址衝突，但是會增加基礎結構元件的複雜性。 管理簡化是 VDC 的其中一個關鍵目標，因此使用 NAT 處理 IP 問題，而有效的解決方案則不是建議的解決方案。
 
@@ -225,12 +225,12 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 - [虛擬網路][virtual-network]。 虛擬網路是 VDC 的其中一個主要元件，可讓您在 Azure 平臺上建立流量隔離界限。 虛擬網路是由單一或多個虛擬網路區段所組成，每個區段都有特定的 IP 網路首碼 (子網，也就是 IPv4 或雙重堆疊 IPv4/IPv6) 。 虛擬網路定義 IaaS 虛擬機器和 PaaS 服務可建立私人通訊的內部周邊區域。 在一個虛擬網路中) 的 Vm (和 PaaS 服務，無法直接與不同虛擬網路中) 的 (Vm 通訊，即使兩個虛擬網路都是由相同的客戶建立，也可以在相同的訂用帳戶下進行。 隔離是很重要的屬性，可確保客戶 VM 和通訊仍然隱蔽於虛擬網路內。 在需要跨網路連線的情況下，下列功能會說明如何完成這項作業。
 - [虛擬網路對等互連][virtual-network-peering]。 用來建立 VDC 基礎結構的基本功能為虛擬網路對等互連，它會透過 Azure 資料中心網路或使用跨區域的 Azure 全球骨幹，連接相同區域中的兩個虛擬網路。
 - [虛擬網路服務端點][ServiceEndpoints]。 服務端點會擴充您的虛擬網路私人位址空間，以包含您的 PaaS 空間。 端點也會透過直接連線，將您虛擬網路的身分識別延伸至 Azure 服務。 端點可讓您將重要的 Azure 服務資源只放到您的虛擬網路保護。
-- [Private Link][PrivateLink]。 Azure Private Link 可讓您透過虛擬網路中的私人端點，存取 Azure PaaS 服務 (例如 [Azure 儲存體][Storage]、 [Azure Cosmos DB][cosmos-db]和 [Azure SQL Database][SQL]) ，以及 azure 裝載的客戶/合作夥伴服務。 虛擬網路和服務間的流量會在通過 Microsoft 骨幹網路時隨之減少，降低資料在網際網路中公開的風險。 您也可以在虛擬網路中建立自己的 [Private Link 服務][PrivateLinkSvc] ，並將其私下提供給您的客戶。 使用 Azure Private Link 的設定和取用體驗在 Azure PaaS、客戶自有服務和共用合作夥伴服務之間是一致的。
+- [Private Link][PrivateLink]。 Azure Private Link 可讓您透過虛擬網路中的私人端點，存取 Azure PaaS (服務，例如 [Azure 儲存體][Storage]、 [azure Cosmos DB][cosmos-db]和 [azure SQL Database][SQL]) ，以及 azure 裝載的客戶/合作夥伴服務。 虛擬網路和服務間的流量會在通過 Microsoft 骨幹網路時隨之減少，降低資料在網際網路中公開的風險。 您也可以在虛擬網路中建立自己的 [私用連結服務][PrivateLinkSvc] ，並將其私下提供給您的客戶。 使用 Azure Private Link 的設定和取用體驗在 Azure PaaS、客戶自有服務和共用合作夥伴服務之間是一致的。
 - [使用者定義的路由][UDR]。 依預設會根據系統路由表來路由虛擬網路中的流量。 使用者定義路由是網路系統管理員可與一或多個子網產生關聯的自訂路由表，可覆寫系統路由表的行為，以及定義虛擬網路內的通訊路徑。 如果有使用者定義的路由，則會確保來自輪輻傳輸的輸出流量會透過特定自訂 Vm 或網路虛擬裝置和負載平衡器存在於中樞和輪輻中。
 - [網路安全性群組][NSG]。 網路安全性群組是安全性規則清單，可作為 IP 來源、IP 目的地、通訊協定、IP 來源埠和 IP 目的地埠的流量篩選， (也稱為「層級 4 5-元組) 。 網路安全性群組可以套用至子網、與 Azure VM 相關聯的虛擬 NIC，或兩者皆適用。 網路安全性群組在中樞和輪輻中執行正確的流程式控制制時，是不可或缺的。 網路安全性群組所提供的安全性層級是您開啟的埠，以及用途的功能。 客戶應該使用主機型防火牆（例如 iptables 或 Windows 防火牆）來套用額外的每個 VM 篩選。
 - [DNS][DNS]。 DNS 可為虛擬資料中心內的資源提供名稱解析。 Azure 可提供 DNS 服務，以進行[公用][DNS]和[私人][PrivateDNS]名稱解析。 私人區域可在虛擬網路內及虛擬網路之間提供名稱解析。 私人區域不僅可以橫跨相同區域內的虛擬網路，也可以橫跨區域和訂用帳戶。 至於公用解析，Azure DNS 可提供 DNS 網域的主機服務，使用 Microsoft Azure 基礎結構提供名稱解析。 只要將您的網域裝載於 Azure，就可以像管理其他 Azure 服務一樣，使用相同的認證、API、工具和計費方式來管理 DNS 記錄。
 - [管理群組][MgmtGrp]、 [訂](../ready/azure-best-practices/scale-subscriptions.md)用帳戶和 [資源群組][RGMgmt] 管理。 訂用帳戶定義自然界限，以在 Azure 中建立多個資源群組。 這種分隔可用於函式、角色隔離或計費。 訂用帳戶中的資源會組合在稱為資源群組的邏輯容器中。 資源群組代表邏輯群組，用來組織虛擬資料中心內的資源。 如果貴組織有多個訂用帳戶，您可能需要一個方法來有效率地管理這些訂用帳戶的存取、原則和相容性。 Azure 管理群組可以在訂用帳戶之上提供範圍層級。 您將訂用帳戶整理到稱為管理群組的容器，並將治理條件套用至管理群組。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。 若要查看階層視圖中的這三個功能，請參閱在雲端採用架構中 [組織您的資源](../ready/azure-setup-guide/organize-resources.md) 。
-- [Azure 角色型存取控制 (AZURE RBAC) ][RBAC]。 Azure RBAC 可以對應組織角色和許可權，以存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要同步處理 Azure Active Directory 與內部部署 Active Directory，您可以在 Azure 中使用您在內部部署使用的相同 Active Directory 群組。 使用 Azure RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，以授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 Azure RBAC 允許繼承許可權。 在父範圍指派的角色也會授與其內含子系的存取權。 使用 Azure RBAC，您可以將職責區隔，並只授與使用者執行其作業所需的存取權數量。 例如，一個員工可以管理訂用帳戶中的虛擬機器，另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
+- [Azure 角色型存取控制 (AZURE RBAC) ][RBAC]。 Azure RBAC 可以對應組織角色和許可權，以存取特定 Azure 資源，讓您限制使用者只能使用特定的動作子集。 如果您要將 Azure Active Directory 與內部部署 Active Directory 同步處理，您可以在 Azure 中使用您在內部部署使用的相同 Active Directory 群組。 使用 Azure RBAC，您可以將適當的角色指派給相關範圍內的使用者、群組和應用程式，以授與存取權。 角色指派的範圍可以是 Azure 訂用帳戶、資源群組或單一資源。 Azure RBAC 允許繼承許可權。 在父範圍指派的角色也會授與其內含子系的存取權。 使用 Azure RBAC，您可以將職責區隔，並只授與使用者執行其作業所需的存取權數量。 例如，一個員工可以管理訂用帳戶中的虛擬機器，另一個則可以管理相同訂用帳戶中的 SQL Server 資料庫。
 
 #### <a name="component-type-perimeter-networks"></a>元件類型：周邊網路
 
@@ -243,10 +243,10 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 - [虛擬網路][virtual-network]、[使用者定義的路由][UDR]和[網路安全性群組][NSG]
 - [網路虛擬設備][NVA]
 - [Azure Load Balancer][ALB]
-- [Azure 應用程式閘道][AppGW] 搭配 [web 應用程式防火牆 (WAF) ][AppGWWAF]
+- 具有[web 應用程式防火牆 (WAF) ][AppGWWAF]的[Azure 應用程式閘道][AppGW]
 - [公用 IP][PIP]
-- [Azure Front Door][azure-front-door] 與 [web 應用程式防火牆 (WAF) ][AFDWAF]
-- [Azure 防火牆][AzFW] 和 [Azure 防火牆管理員][AzFWMgr]
+- 具有[web 應用程式防火牆][AFDWAF]的[AZURE Front][azure-front-door] (WAF) 
+- [Azure 防火牆][AzFW] 和 [azure 防火牆管理員][AzFWMgr]
 - [標準 DDoS 保護][DDoS]
 
 通常，中央 IT 小組和安全性小組必須負責周邊網路的需求定義和操作。
@@ -258,7 +258,7 @@ IT 基礎結構小組的其中一個主要工作是確保整個企業的 IP 位�
 > [!NOTE]
 > 在上圖中，在「DMZ 中樞」中，可以將下列許多功能組合在 Azure 虛擬 WAN 中樞 (例如虛擬網路、使用者定義的路由、網路安全性群組、VPN 閘道、ExpressRoute 閘道、Azure 負載平衡器、Azure 防火牆、防火牆管理員和 DDOS) 。 使用 Azure 虛擬 WAN 中樞可以建立中樞虛擬網路，因此 VDC 更簡單，因為當您部署 Azure 虛擬 WAN 中樞時，Azure 會為您處理大部分的工程複雜度。
 
-[虛擬網路][virtual-network]。 中樞通常建置於具有多個子網的虛擬網路上，以裝載不同類型的服務，以透過 Azure 防火牆、Nva、WAF 和 Azure 應用程式閘道實例來篩選和檢查進出網際網路的流量。
+[虛擬網路][virtual-network]。 中樞通常是建置於具有多個子網的虛擬網路上，以裝載不同類型的服務，以透過 Azure 防火牆、Nva、WAF 和 Azure 應用程式閘道實例來篩選和檢查進出網際網路的流量。
 
 [使用者定義的路由][UDR]。 使用使用者定義的路由，客戶可以部署防火牆、IDS/IPS 和其他虛擬裝置，並透過這些安全性設備來路由傳送網路流量，以進行安全性界限原則強制執行、審核和檢查。 您可以在中樞和輪輻中建立使用者定義的路由，以確保流量會傳輸到 VDC 執行所使用的特定自訂 Vm、網路虛擬裝置和負載平衡器。 為了保證從輪輻傳輸中的虛擬機器產生的流量，到正確的虛擬裝置，您必須將內部負載平衡器的前端 IP 位址設定為下一個躍點，以在輪輻的子網中設定使用者定義的路由。 內部負載平衡器會將內部流量分散到虛擬設備 (負載平衡器後端集區)。
 
@@ -274,9 +274,9 @@ Azure 防火牆或 NVA 防火牆都會使用共同管理平面，其中有一組
 
 建議您針對來自網際網路的流量使用一組 Azure 防火牆執行個體。 對於來自內部部署的流量則使用另一組執行個體。 對兩者僅使用一組防火牆會造成安全性風險，因為這並未提供兩組網路流量之間的安全性周邊。 使用個別的防火牆層級可降低檢查安全性規則的複雜度，並明確指出哪些規則對應到哪個傳入網路要求。
 
-[Azure Load Balancer][ALB] 提供高可用性層級 4 (TCP/UDP) 服務，可將連入流量分散到負載平衡組中所定義的服務實例之間。 從前端端點傳送至負載平衡器的流量 (公用 IP 端點或私人 IP 端點) 可以在一組後端 IP 位址池 (（例如網路虛擬裝置或虛擬機器) ）中，轉散發或不使用位址轉譯。
+[Azure 負載平衡器][ALB] 提供高可用性層級 4 (TCP/UDP) 服務，可將連入流量分散到負載平衡組中所定義的服務實例之間。 從前端端點傳送至負載平衡器的流量 (公用 IP 端點或私人 IP 端點) 可以在一組後端 IP 位址池 (（例如網路虛擬裝置或虛擬機器) ）中，轉散發或不使用位址轉譯。
 
-Azure Load Balancer 也可以探查各種伺服器實例的健全狀況，而且當實例無法回應探查時，負載平衡器會停止將流量傳送至狀況不良的實例。 在虛擬資料中心內，會將外部負載平衡器部署到中樞和輪輻。 在中樞中，負載平衡器可用來有效率地將流量路由傳送到防火牆實例，而在輪輻中，負載平衡器可用來管理應用程式流量。
+Azure 負載平衡器也可以探查各種伺服器實例的健康情況，當實例無法回應探查時，負載平衡器就會停止將流量傳送至狀況不良的實例。 在虛擬資料中心內，會將外部負載平衡器部署到中樞和輪輻。 在中樞中，負載平衡器可用來有效率地將流量路由傳送到防火牆實例，而在輪輻中，負載平衡器可用來管理應用程式流量。
 
 [Azure Front Door][azure-front-door] (AFD) 是 Microsoft 兼具高可用性和高擴充性的 Web 應用程式加速平台、全域 HTTP 負載平衡器、應用程式保護和內容傳遞網路。 AFD 在 Microsoft 全球網路邊緣的100個以上位置執行，可讓您建立、操作及擴充您的動態 web 應用程式和靜態內容。 AFD 為您的應用程式提供世界級使用者效能、統一地區/戳記維護自動化、BCDR 自動化、統一用戶端/使用者資訊、快取和服務見解。 平臺提供：
 
@@ -284,13 +284,13 @@ Azure Load Balancer 也可以探查各種伺服器實例的健全狀況，而且
 - 合規性認證。
 - Azure 開發、操作和原生支援的可審核安全性作法。
 
-Azure Front Door 也提供 web 應用程式防火牆 (WAF) ，以保護 web 應用程式免于遭受常見的弱點和入侵。
+Azure Front 也提供 web 應用程式防火牆 (WAF) ，可保護 web 應用程式免于遭受常見的弱點和入侵。
 
 [Azure 應用程式閘道][AppGW] 是一種專用的虛擬裝置，可提供受控應用程式傳遞控制器。 它為您的應用程式提供各種第7層負載平衡功能。 它可讓您將 CPU 密集 SSL 終止卸載至應用程式閘道，以優化 web 伺服陣列的效能。 它也提供其他第7層路由功能，例如迴圈配置傳入流量、以 cookie 為基礎的會話親和性、以 URL 路徑為基礎的路由，以及在單一應用程式閘道上裝載多個網站的能力。 Web 應用程式防火牆 (WAF) 也是提供為應用程式閘道 WAF SKU 的一部分。 此 SKU 會保護 Web 應用程式免於遭遇常見的 Web 弱點和攻擊。 應用程式閘道可以設定為面向網際網路的閘道、內部私人網路關或兩者的組合。
 
 [公用 ip][PIP]。 使用某些 Azure 功能時，您可以將服務端點與公用 IP 位址建立關聯，以便從網際網路存取您的資源。 此端點會使用 NAT 將流量路由傳送至 Azure 虛擬網路上的內部位址和埠。 這個路徑是外部流量進入虛擬網路的主要方式。 您可以設定公用 IP 位址以決定要傳入的流量，以及該流量在虛擬網路上的轉譯方式和目的地。
 
-[Azure DDoS 保護 Standard][DDoS] 可針對 [基本服務][DDoS] 層級提供額外的緩和功能，而這些服務層級特別針對 Azure 虛擬網路資源進行調整。 DDoS 保護標準很容易啟用，而且不需要變更應用程式。 保護原則會透過專用的流量監視和機器學習演算法進行調整。 原則會套用至與虛擬網路中部署的資源相關聯的公用 IP 位址。 範例包括 Azure Load Balancer、Azure 應用程式閘道和 Azure Service Fabric 實例。 近乎即時的系統產生記錄檔可透過 Azure 監視器的觀點，在攻擊期間和歷程記錄中取得。 應用程式層保護可透過 Azure 應用程式閘道 Web 應用程式防火牆來新增。 針對 IPv4 和 IPv6 Azure 公用 IP 位址提供保護。
+[Azure DDoS 保護標準][DDoS] 針對 [基本服務][DDoS] 層級提供額外的緩和功能，專為 Azure 虛擬網路資源進行微調。 DDoS 保護標準很容易啟用，而且不需要變更應用程式。 保護原則會透過專用的流量監視和機器學習演算法進行調整。 原則會套用至與虛擬網路中部署的資源相關聯的公用 IP 位址。 範例包括 Azure 負載平衡器、Azure 應用程式閘道和 Azure Service Fabric 實例。 近乎即時的系統產生記錄可透過 Azure 監視器視圖，在攻擊期間和歷程記錄中取得。 應用程式層保護可透過 Azure 應用程式閘道 Web 應用程式防火牆來新增。 針對 IPv4 和 IPv6 Azure 公用 IP 位址提供保護。
 
 中樞和輪輻拓撲使用虛擬網路對等互連和使用者定義路由來適當地路由傳送流量。
 
@@ -306,7 +306,7 @@ Azure 提供不同類型的記錄和監視服務，以追蹤 Azure 裝載資源�
 
 [Azure 監視器][AzureMonitor]。 Azure 包含多項服務，能在監視空間內個別執行特定的角色或工作。 這些服務共同提供一套完整的解決方案，可從您的應用程式和支援這些服務的 Azure 資源收集、分析及處理系統產生的記錄。 它們也可以用來監視重要的內部部署資源，以提供混合式監視環境。 瞭解可用的工具和資料是開發應用程式之完整監視策略的第一步。
 
-Azure 監視器有兩種基本類型的記錄：
+Azure 監視器中有兩種基本類型的記錄：
 
 - [計量][Metrics]為數值，可描述系統在特定時間點的某個方面。 它們屬於輕量型，而且能夠支援近乎即時的案例。 對於許多 Azure 資源，您會在 Azure 入口網站的 [概觀] 頁面當中看到 Azure 監視器所收集的資料。 例如，查看任何虛擬機器，您會看到數個圖表顯示效能度量。 選取任何圖表，以在 Azure 入口網站中開啟計量瀏覽器中的資料，這可讓您將一段時間的多個計量值繪製成圖表。 您可以互動方式檢視圖表，或將其釘選到儀表板，利用其他視覺效果進行檢視。
 
@@ -320,7 +320,7 @@ Azure 監視器有兩種基本類型的記錄：
 - **來賓 OS 監視資料：** 您的應用程式執行所在作業系統的相關資料。 此 OS 可能正在 Azure、另一個雲端或內部部署中執行。
 - **Azure 資源監視資料：** 有關 Azure 資源操作的資料。
 - **Azure 訂用帳戶監視資料：** 有關 Azure 訂用帳戶作業和管理的資料，以及有關 Azure 本身健康情況和作業的資料。
-- **Azure 租使用者監視資料：** 租使用者層級 Azure 服務的作業相關資料，例如 Azure Active Directory。
+- **Azure 租使用者監視資料：** 租使用者層級 Azure 服務（例如 Azure Active Directory）作業的相關資料。
 - **自訂來源：** 也可以包含從內部部署來源傳送的記錄。 範例包括內部部署伺服器事件或網路裝置 syslog 輸出。
 
 如果監視資料可以提高您對於運算環境作業的可見性，監視資料才有用處。 Azure 監視器包含數個功能和工具，可對您的應用程式及其相依的其他資源提供寶貴的深入解析。 監視解決方案和功能 (例如 Application Insights 和適用於容器的 Azure 監視器) 可針對您應用程式和特定 Azure 服務的不同層面提供深入解析。
@@ -360,11 +360,11 @@ Azure 監視器也可讓您建立自訂儀表板。 Azure 儀表板可讓您將�
 - **資料驅動：** 經常存取資料庫或其他儲存體的大量資料。
 - **整合式：** 提供與組織內部或外部的其他系統整合。
 
-面向 **客戶的網站 (網際網路面向或內部面向的) ：** 大部分的網際網路應用程式都是網站。 Azure 可透過 IaaS 虛擬機器或 [azure Web Apps][WebApps] 網站 (PaaS) 來執行網站。 Azure Web Apps 會與虛擬網路整合，以將 Web 應用程式部署在輪輻網路區域中。 內部的網站不需要公開公用網際網路端點，因為這些資源可以透過私人虛擬網路的私人非網際網路可路由位址來存取。
+面向 **客戶的網站 (網際網路面向或內部面向的) ：** 大部分的網際網路應用程式都是網站。 Azure 可透過 IaaS 虛擬機器或 [Azure Web Apps][WebApps] 網站 (PaaS) 來執行網站。 Azure Web Apps 會與虛擬網路整合，以將 Web 應用程式部署在輪輻網路區域中。 內部的網站不需要公開公用網際網路端點，因為這些資源可以透過私人虛擬網路的私人非網際網路可路由位址來存取。
 
-**Big data analytics：** 當資料需要擴大至較大的磁片區時，關係資料庫可能無法在資料的極端負載或非結構化特性下執行。 [Azure HDInsight][HDInsight] 是雲端中適用于企業的受控、全方位的開放原始碼分析服務。 您可以使用開放原始碼架構，例如 Hadoop、Apache Spark、Apache Hive、LLAP、Apache Kafka、Apache Storm 和 R。 HDInsight 支援部署到以位置為基礎的虛擬網路，可部署到虛擬資料中心輪輻中的叢集。
+**Big data analytics：** 當資料需要擴大至較大的磁片區時，關係資料庫可能無法在資料的極端負載或非結構化特性下執行。 [Azure HDInsight][HDInsight] 是雲端中適用于企業的受控、全方位的開放原始碼分析服務。 您可以使用開放原始碼架構，例如 Hadoop、Apache Spark、Apache Hive、LLAP、Apache Kafka、Apache 風暴和 R。 HDInsight 支援部署到以位置為基礎的虛擬網路，可部署到虛擬資料中心輪輻中的叢集。
 
-**事件和訊息：** [Azure 事件中樞][EventHubs] 是大型的資料串流平臺和事件內嵌服務。 它每秒可接收和處理數百萬個事件。 它提供低延遲和可設定的時間保留，可讓您將大量資料內嵌至 Azure，並從多個應用程式讀取資料。 單一資料流程可以同時支援即時和批次型管線。
+**事件和訊息：** [Azure 事件中樞][EventHubs] 是一種大型的資料串流平臺和事件內嵌服務。 其每秒可接收和處理數百萬個事件。 它提供低延遲和可設定的時間保留，可讓您將大量資料內嵌至 Azure，並從多個應用程式讀取資料。 單一資料流程可以同時支援即時和批次型管線。
 
 您可以透過 [Azure 服務匯流排][ServiceBus]在應用程式與服務之間實作高度可靠的雲端傳訊服務。 它提供用戶端與伺服器之間的非同步代理訊息、結構化的先進先出 (FIFO) 訊息，以及發佈和訂閱功能。
 
@@ -408,7 +408,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 
 #### <a name="disaster-recovery-diverting-traffic-from-one-region-to-another"></a>災害復原：將流量從一個區域轉移到另一個區域
 
-[Azure 流量管理員][azure-traffic-manager]和[Azure Front Door][azure-front-door]都會定期檢查不同 vdc 實作為接聽端點的服務健康狀態，如果這些端點失敗，則會自動路由至下一個最接近的 vdc。 流量管理員會使用即時使用者度量和 DNS，將使用者路由傳送至最接近的 (，或在失敗期間最接近最接近的時間) 。 Azure Front Door 是 100 Microsoft 骨幹 edge 網站上的反向 proxy，使用任意傳播功能將使用者路由傳送到最接近的接聽端點。
+[Azure 流量管理員][azure-traffic-manager]和[azure 前端][azure-front-door]都會定期檢查不同 vdc 實作為接聽端點的服務健康狀態，如果這些端點失敗，則會自動路由至下一個最接近的 vdc。 流量管理員會使用即時使用者度量和 DNS，將使用者路由傳送至最接近的 (，或在失敗期間最接近最接近的時間) 。 Azure Front 大門是 100 Microsoft 骨幹 edge 網站上的反向 proxy，使用任意傳播將使用者路由傳送到最接近的接聽端點。
 
 ### <a name="summary"></a>摘要
 
@@ -433,8 +433,8 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
     :::column:::
         **負載平衡** <br>
         [Azure Front Door][azure-front-door] <br>
-        [Azure Load Balancer (L4) ][ALB] <br>
-        [應用程式閘道 (L7) ][AppGW] <br>
+        [Azure 負載平衡器 (第4層) ][ALB] <br>
+        [應用程式閘道 (第7層) ][AppGW] <br>
         [Azure 流量管理員][azure-traffic-manager]
     :::column-end:::
     :::column:::
@@ -453,7 +453,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         [Azure Active Directory][azure-ad] <br>
         [Multi-Factor Authentication][multi-factor-authentication] <br>
         [Azure 角色型存取控制][RBAC] \(部分機器翻譯\) <br>
-        [Azure 內建角色][Roles]
+        [Azure 內建角色][Roles] (機器翻譯)
     :::column-end:::
     :::column:::
         **監視** <br>
@@ -462,7 +462,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         [Log Analytics][LogAnalytics]
     :::column-end:::
     :::column:::
-        **最佳作法** <br>
+        **最佳做法** <br>
         [管理群組][MgmtGrp] <br>
         [訂用帳戶管理](../ready/azure-best-practices/scale-subscriptions.md) <br>
         [資源群組管理][RGMgmt] <br>
@@ -476,7 +476,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
         [Azure 防火牆][AzFW] <br>
         [防火牆管理員][AzFWMgr] <br>
         [應用程式閘道 WAF][AppGWWAF] <br>
-        [Front Door WAF][AFDWAF] <br>
+        [前門 WAF][AFDWAF] <br>
         [Azure DDoS][DDoS]
     :::column-end:::
     :::column:::
@@ -493,16 +493,16 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
     :::column-end:::
 :::row-end:::
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - 深入瞭解 [虛擬網路對等互連][virtual-network-peering]，也就是中樞和輪輻拓撲的核心技術。
-- 執行 [Azure Active Directory][azure-ad] 以使用 [Azure 角色型存取控制][RBAC]。
+- 執行 [Azure Active Directory][azure-ad] 以使用 [azure 角色型存取控制][RBAC]。
 - 使用 Azure 角色型存取控制來開發訂用帳戶和資源管理模型，以符合組織的結構、需求和原則。 正在規劃最重要的活動。 分析重組、合併、新的產品線和其他考慮將如何影響您的初始模型，以確保您可以調整規模以符合未來的需求和成長。
 
 <!-- images -->
 
 [0]: ../_images/vdc/networking-vdc-redundant.png "元件重疊範例"
-<!-- _1_ >: ../_images/vdc/networking-vdc-high-level.png "Example of hub and spoke VDC" -->
+<!-- *1* >: ../_images/vdc/networking-vdc-high-level.png "Example of hub and spoke VDC" -->
 [2]: ../_images/vdc/networking-vdc-cluster.png "中樞和輪輻叢集"
 [3]: ../_images/vdc/networking-vdc-spoke-to-spoke.png "支點對支點"
 [4]: ../_images/vdc/networking-vdc-block-level-diagram.png "VDC 的區塊層級圖表"
@@ -522,7 +522,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 [limits]: /azure/azure-resource-manager/management/azure-subscription-service-limits
 [Roles]: /azure/role-based-access-control/built-in-roles
 [virtual-network]: /azure/virtual-network/virtual-networks-overview
-[NSG]: /azure/virtual-network/security-overview
+[NSG]: /azure/virtual-network/network-security-groups-overview
 [PrivateLink]: /azure/private-link/private-link-overview
 [PrivateLinkSvc]: /azure/private-link/private-link-service-overview
 [ServiceEndpoints]: /azure/virtual-network/virtual-network-service-endpoints-overview
@@ -543,7 +543,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 [MgmtGrp]: /azure/governance/management-groups/overview
 [RGMgmt]: /azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
 [ALB]: /azure/load-balancer/load-balancer-overview
-[DDoS]: /azure/virtual-network/ddos-protection-overview
+[DDoS]: /azure/ddos-protection/ddos-protection-overview
 [PIP]: /azure/virtual-network/virtual-network-public-ip-address
 [azure-front-door]: /azure/frontdoor/front-door-overview
 [AFDWAF]: /azure/web-application-firewall/afds/afds-overview
@@ -551,9 +551,9 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 [AppGWWAF]: /azure/web-application-firewall/ag/ag-overview
 [MonitorOverview]: /azure/networking/networking-overview#monitor
 [AzureMonitor]: /azure/azure-monitor/overview
-[Metrics]: /azure/azure-monitor/platform/data-platform-metrics
-[Logs]: /azure/azure-monitor/platform/data-platform-logs
-[LogAnalytics]: /azure/azure-monitor/log-query/get-started-portal
+[Metrics]: /azure/azure-monitor/essentials/data-platform-metrics
+[Logs]: /azure/azure-monitor/logs/data-platform-logs
+[LogAnalytics]: /azure/azure-monitor/logs/log-analytics-tutorial
 [NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
 [WebApps]: /azure/app-service/
 [HDInsight]: /azure/hdinsight/hdinsight-overview
@@ -561,7 +561,7 @@ Azure 資料中心存在於全球許多區域。 選取多個 Azure 資料中心
 [ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
 [azure-traffic-manager]: /azure/traffic-manager/traffic-manager-overview
 [Storage]: /azure/storage/common/storage-introduction
-[SQL]: /azure/sql-database/sql-database-technical-overview
+[SQL]: /azure/azure-sql/database/sql-database-paas-overview
 [cosmos-db]: /azure/cosmos-db/introduction
 [IoT]: /azure/iot-fundamentals/iot-introduction
 [machine-learning]: /azure/machine-learning/overview-what-is-azure-ml

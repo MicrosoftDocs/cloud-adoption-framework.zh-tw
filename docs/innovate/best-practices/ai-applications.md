@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: ai 應用程式，什麼是 ai 應用程式、語音辨識 api、電腦視覺 api、決策邏輯 api
-ms.openlocfilehash: 39d664452d14b13514f7e1b0ff78c0cf66e59468
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: ab9f00265152119cb9db3d7f880e6f7c554ce1f9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100526012"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789264"
 ---
+<!-- docutune:ignore "computer vision APIs" -->
+
 # <a name="what-are-ai-applications"></a>什麼是 AI 應用程式？
 
 AI 應用程式就像是語音辨識 Api、電腦視覺 Api、決策邏輯 Api，以及其他模仿人為原因的智慧型系統等專案。 這些是現今市場中許多軟體產品的基本功能，因為 AI 應用程式能夠以更自然的方式與終端使用者通訊，並提供更好的使用者體驗。 Azure 可讓您和您的團隊能夠在任何地方推出 AI 應用程式，以協助您和您的小組節省時間。
@@ -37,27 +39,26 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 | 服務名稱 | 服務說明 |
 | --- | --- |
 | [電腦視覺](/azure/cognitive-services/computer-vision/) | 電腦視覺 Api 可讓您存取先進的演算法，以處理影像及傳回信息。 |
-| [自訂視覺](/azure/cognitive-services/custom-vision-service/home) | 自訂視覺可讓您建立自訂影像分類器。 |
+| [自訂視覺](/azure/cognitive-services/custom-vision-service/overview) | 自訂視覺可讓您建立自訂影像分類器。 |
 | [臉部](/azure/cognitive-services/face/) | 臉部辨識服務可讓您存取先進的臉部演算法，以偵測和辨識臉部屬性。 |
 |  (預覽版的[表單辨識器](/azure/cognitive-services/form-recognizer/))  | 表單辨識器會識別和解壓縮表單檔中的索引鍵/值組和資料表資料。 然後，它會在原始檔案中輸出結構化資料，包括關聯性。 |
-| [筆跡辨識器](/azure/cognitive-services/ink-recognizer/) (預覽)  | 筆跡辨識器可讓您辨識及分析數位筆跡-筆劃資料、圖形和手寫內容，並輸出具有所有已辨識實體的檔結構。 |
-| [影片索引子](/azure/cognitive-services/video-indexer/video-indexer-overview) | 影片索引子可讓您從影片中取出見解。 |
+| [影片索引子](/azure/media-services/video-indexer/video-indexer-overview) | 影片索引子可讓您從影片中取出見解。 |
 
 ### <a name="speech-recognition-apis"></a>語音辨識 Api
 
 | 服務名稱 | 服務說明 |
 | --- | --- |
 | [語音](/azure/cognitive-services/speech-service/) | 語音服務會將語音啟用功能加入應用程式。 |
-| [說話者](/azure/cognitive-services/speaker-recognition/home "說話者辨識 API") 辨識 (預覽)  | 說話者辨識 API 提供了用於說話者識別和驗證的演算法。 |
-| [Bing 語音](/azure/cognitive-services/speech/home) (淘汰)  | Bing 語音 API 可讓您輕鬆在應用程式中建立語音開啟功能。 |
-| [Translator speech](/azure/cognitive-services/translator-speech/) (淘汰)  | 翻譯工具語音是一種機器翻譯服務。 |
+| [說話者](/azure/cognitive-services/speech-service/speaker-recognition-overview) 辨識 (預覽)  | 說話者辨識 API 提供了用於說話者識別和驗證的演算法。 |
+| [Bing 語音](/azure/cognitive-services/speech-service/how-to-migrate-from-bing-speech) (已淘汰)  | 您可以將現有的 Bing 語音 API 應用程式遷移至語音服務。 |
+| [Translator Speech](/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api) (淘汰)  | 您可以將現有的 Bing Translator Speech API 應用程式遷移至語音服務。 |
 
 ### <a name="language-apis"></a>語言 API
 
 | 服務名稱 | 服務說明 |
 |--|--|
-| [語言理解 (LUIS)](/azure/cognitive-services/luis/) | Language Understanding service (LUIS) 可讓您的應用程式瞭解人在自己的單字中的意義。 |
-| [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker 可讓您從半結構化內容中建立問答服務。 |
+| [語言理解 (LUIS)](/azure/cognitive-services/luis/) | 語言理解服務 (LUIS) 可讓您的應用程式瞭解人在文字中所表達的意思。 |
+| [QnA Maker](/azure/cognitive-services/qnamaker/) | QnA Maker 可讓您從半結構化內容中建立問答服務。 |
 | [文字分析](/azure/cognitive-services/text-analytics/) | 文字分析可針對原始文字進行自然語言處理，進行情感分析、關鍵片語擷取和語言偵測。 |
 | [翻譯工具](/azure/cognitive-services/translator/) | Translator 以近乎即時的方式提供以電腦為基礎的文字轉譯。 |
 
@@ -66,7 +67,7 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 | 服務名稱 | 服務說明 |
 | --- | --- |
 | [異常](/azure/cognitive-services/anomaly-detector/) 偵測器 (預覽)  | 異常偵測器可讓您監視和偵測時間序列資料中的異常狀況。 |
-| [內容仲裁](/azure/cognitive-services/content-moderator/overview "內容仲裁者") | 內容仲裁可監視潛在的冒犯、惡意或具風險之內容。 |
+| [內容仲裁](/azure/cognitive-services/content-moderator/overview) | 內容仲裁可監視潛在的冒犯、惡意或具風險之內容。 |
 | [個人化工具](/azure/cognitive-services/personalizer/) | 個人化工具可讓您從使用者的即時行為中學習，以選擇最量身打造的體驗。 |
 
 ### <a name="supported-cultural-languages"></a>支援的文化特性語言
@@ -87,16 +88,14 @@ Azure 認知服務可簡化將 AI 功能與突破整合到應用程式中的方�
 
 認知服務已獲得認證，例如 CSA STAR 認證、FedRAMP 適中和 HIPAA BAA。
 
-您可以[下載](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)適用於自身稽核及安全性審查的認證。
-
 若要瞭解隱私權和資料管理，請前往 [Microsoft 信任中心](https://servicetrust.microsoft.com/)。
 
 ## <a name="how-are-cognitive-services-and-azure-machine-learning-similar"></a>認知服務和 Azure Machine Learning 有何相似之處？
 
-認知服務和 Azure Machine Learning 具有套用 AI 以增強商務營運的共同目標。 每個服務在各自的供應專案中提供這項功能的方式都不同。 一般而言，這些物件不同：
+認知服務和 Azure Machine Learning 具有套用 AI 以增強商務營運的常見目標。 每個服務在各自的供應專案中提供這項功能的方式都不同。 一般而言，這些物件不同：
 
 - 認知服務適用于沒有機器學習經驗的開發人員。
-- Machine Learning 是專為數據科學家量身打造。
+- 機器學習專為數據科學家量身打造。
 
 ## <a name="how-is-a-cognitive-service-different-from-machine-learning"></a>認知服務與機器學習服務有何不同？
 

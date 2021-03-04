@@ -1,19 +1,19 @@
 ---
 title: 財會結果範例
 description: 使用適用于 Azure 的雲端採用架構，瞭解雲端轉換內容中的會計結果。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: ec906f1c54a2fa148694af2280d0dfa2fd46c411
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5480355807f862268bbfc3c84b7379e165c38629
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013054"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787904"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -25,6 +25,8 @@ ms.locfileid: "97013054"
 
 本文的其餘部分將說明雲端轉換內容中的這些會計成果。
 
+[TransAlta](https://customers.microsoft.com/story/canadian-power-generator-shines-light-on-numbers) 增加的資料深入解析，可從成本規避的初始大規模資本成本中獲益，並以每月為基礎來降低營運成本。
+
 > [!NOTE]
 > 下列範例是假設的，在採用任何雲端策略時，不應將其視為傳回的保證。
 
@@ -34,13 +36,13 @@ ms.locfileid: "97013054"
 
 雲端可協助您創造機會，為客戶提供新產品，或以新的方式提供現有的產品。 新的收益來源為商務世界中許多人的創新、entrepreneurial 和驚喜。 新的收益串流也很容易失敗，而且很多公司都必須將其視為高風險。 當 IT 提議收入相關結果時，可能會有阻力。 若要將可信度新增至這些結果，請與已證明 innovator 的業務領導人合作。 在流程初期驗證收入串流有助於避免企業的障礙。
 
-- **範例：** 公司在過去數百年來銷售書籍。 公司的員工發現內容可透過電子方式傳遞。 員工建立了可在書店中銷售的裝置，可讓您直接下載相同的書籍，在新的書籍銷售額中推動 _$x_ 。
+- **範例：** 公司在過去數百年來銷售書籍。 公司的員工發現內容可透過電子方式傳遞。 員工建立了可在書店中銷售的裝置，可讓您直接下載相同的書籍，在新的書籍銷售額中推動 *$x* 。
 
 ### <a name="revenue-increases"></a>收益增加
 
 透過全球規模與數位觸及，雲端可協助企業增加現有收益來源的收益。 這種類型的結果通常是來自與銷售或行銷領導階層的一致。
 
-- **範例：** 如果銷售人員可以安全地存取公司的數位目錄和庫存量，則銷售 widget 的公司可以銷售更多 widget。 可惜的是，該資料只會在公司的 ERP 系統中，只能透過網路連接的裝置來存取。 建立服務外觀以與 ERP 互動，並將目錄清單和 nonsensitive 庫存層級公開給雲端中的應用程式，可讓銷售人員在與客戶一起存取所需的資料。 使用 Azure Active Directory (Azure AD) 來延伸內部部署 Active Directory，以及將角色型存取整合到應用程式，可讓公司協助確保資料保持安全。 這個簡單的專案可能會影響現有產品線 _x%_ 的收入。
+- **範例：** 如果銷售人員可以安全地存取公司的數位目錄和庫存量，則銷售 widget 的公司可以銷售更多 widget。 可惜的是，該資料只會在公司的 ERP 系統中，只能透過網路連接的裝置來存取。 建立服務外觀以與 ERP 互動，並將目錄清單和 nonsensitive 庫存層級公開給雲端中的應用程式，可讓銷售人員在與客戶一起存取所需的資料。 使用 Azure Active Directory 將內部部署 Active directory 延伸 (Azure AD) ，並將以角色為基礎的存取整合至應用程式，可讓公司協助確保資料保持安全。 這個簡單的專案可能會影響現有產品線 *x%* 的收入。
 
 ### <a name="profit-increases"></a>利潤增加
 
@@ -96,9 +98,9 @@ Coverdell 透過 Azure 將其基礎結構現代化，以節省記錄成本。 Co
 
 如果需要營運費用模型，下列範例可能是可行的商務結果：
 
-- **範例：** 過去三年來，公司的資料中心目前 depreciating 為每年 _$X 美元_ 。 預期需要額外的 _$Y 美元_ 才能重新整理硬體下一年。 我們可以在每個月 _$Z 美元_ 的平均費率將資本支出轉換為營運費用模型，讓您能夠更妥善管理及責任操作技術的營運成本。
+- **範例：** 過去三年來，公司的資料中心目前 depreciating 為每年 *$X 美元* 。 預期需要額外的 *$Y 美元* 才能重新整理硬體下一年。 我們可以在每個月 *$Z 美元* 的平均費率將資本支出轉換為營運費用模型，讓您能夠更妥善管理及責任操作技術的營運成本。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [靈活性成果](./agility-outcomes.md)。
 

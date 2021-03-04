@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 2f4f407df1716008604bfb5b20695f38c48ee114
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a4dbde07ff53efcfa00a15d92916bae856dedeaf
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018800"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789315"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -32,7 +32,7 @@ ms.locfileid: "97018800"
 
 在執行大型主機工作負載時，找不到用來判斷 (個 vcpu) 虛擬中央處理單位數目的通用對應公式。 不過，每秒百萬指令數 (MIPS) 計量通常會對應至 Azure 上的 vCPU。 MIPS 透過針對指定電腦提供常數值的每秒循環次數，來測量大型主機的整體計算能力。
 
-小型組織可能需要低於 500 MIPS，而大型組織通常需要超過 5,000 MIPS。 假設每單一 MIPS 需要 $1000 美元的情況下，大型組織每年需花費大約 5 百萬美元來部署 5,000 MIPS 的基礎結構。 針對此規模的一般 Azure 部署，每年的成本評估大約是 MIPS 基礎結構的十分支一。 如需詳細資訊，請參閱 [Azure 移轉的大型主機釋疑](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) \(英文\) 白皮書中的表格 4。
+小型組織可能需要低於 500 MIPS，而大型組織通常需要超過 5,000 MIPS。 假設每單一 MIPS 需要 $1000 美元的情況下，大型組織每年需花費大約 5 百萬美元來部署 5,000 MIPS 的基礎結構。 針對此規模的一般 Azure 部署，每年的成本評估大約是 MIPS 基礎結構的十分支一。 如需詳細資訊，請參閱 [Azure 移轉的大型主機釋疑](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration/) \(英文\) 白皮書中的表格 4。
 
 MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實際執行的工作負載。 不過，基準測試研究可提供良好的基準，供您預估將需要的 vCPU 數目和類型。 最近的 HPE zRef 基準測試提供下列估計值：
 
@@ -53,7 +53,7 @@ MIPS 與 Azure 的 vCPU 對應的精確計算，取決於 vCPU 的類型和實�
 
 Azure 藉由從多個儲存體裝置 (可能是本機或在其他地理區域中) 複寫資料，提供額外的可用性。 萬一發生 Azure 失敗，計算資源可以存取本機或區域層級的複寫資料。
 
-當您使用 Azure 平臺即服務 (PaaS) 資源（例如 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) 和 [Azure Cosmos DB](/azure/cosmos-db/introduction)）時，Azure 會自動處理容錯移轉。 當您使用 Azure 基礎結構即服務 (IaaS) 時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
+當您使用 Azure 平臺即服務 (PaaS) 資源（例如 [AZURE SQL Database](/azure/azure-sql/database/sql-database-paas-overview) 和 [azure Cosmos DB](/azure/cosmos-db/introduction)）時，azure 會自動處理容錯移轉。 當您使用 Azure 基礎結構即服務 (IaaS) 時，容錯移轉會依賴特定的系統功能，例如 SQL Server Always On 功能、容錯移轉叢集實例和可用性群組。
 
 ## <a name="scalability"></a>延展性
 
@@ -86,11 +86,11 @@ CF 也提供緊密結合的計算，而 Azure 的相應放大功能則是鬆散�
 
 大型主機通常會有個別的邏輯分割區 (LPAR) 用於開發和測試，例如 QA 和暫存 LPAR。 大型主機開發解決方案包括編譯器 (COBOL、PL/I、Assembler) 和編輯器。 最常見的情況是在 IBM 大型主機上執行的 z/OS 作業系統的 Interactive System Productivity Facility (ISPF)。 其他包含 ROSCOE Programming Facility (RPF) 和電腦相關工具，例如 CA Librarian 和 CA-Panvalet。
 
-模擬環境和編譯器可在 x86 平台上使用，因此開發和測試通常是從大型主機移轉至 Azure 的第一個工作負載。 [Azure 中的 DevOps 工具](https://azure.microsoft.com/solutions/devops)的可用性和廣泛使用，正在加速開發和測試環境的移轉。
+模擬環境和編譯器可在 x86 平台上使用，因此開發和測試通常是從大型主機移轉至 Azure 的第一個工作負載。 [Azure 中的 DevOps 工具](https://azure.microsoft.com/solutions/devops/)的可用性和廣泛使用，正在加速開發和測試環境的移轉。
 
 當解決方案已開發完成並在 Azure 上經過測試，且已準備好部署至大型主機，您將需要複製程式碼到大型主機並在該處進行編譯。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [大型主機應用程式移轉](./application-strategies.md)

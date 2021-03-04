@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c6270e657ed776a9d30dd4808182bfc0898710c0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 844fe7471e7b7bdee84720ec01f65099ff3bb937
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025039"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788380"
 ---
 # <a name="decommission-retired-assets"></a>解除委任已淘汰的資產
 
@@ -35,7 +35,7 @@ ms.locfileid: "97025039"
 
 在移轉的複寫過程中，遺漏資料並非罕見的情形。 非定期使用的舊資料更是如此。 在已淘汰的資產關閉後，將資產保留一段時間作為資料的暫時備份，是明智的做法。 公司在終結已淘汰的資產之前，應至少有 30 天的保存和測試期間。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 已淘汰的資產解除委任後，移轉即完成。 您可以藉此機會改善移轉程序，而[回顧](./retrospective.md)可以讓雲端採用小組檢討發行過程，以期能學習並改善。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: b394a4c610818811bf6b2ec764a60800e9074cb4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 31f243e764c5c79eb00bab2a389afffc100d0317
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025311"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787360"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>在移轉前建構工作負載
 
@@ -23,7 +23,7 @@ ms.locfileid: "97025311"
 
 以下是任何移轉工作的典型假設：
 
-- **Iaas。** 通常會假設遷移工作負載主要涉及透過 IaaS 移轉，將虛擬機器從實體資料中心移至雲端資料中心，且需要最低限度的重新開發或重新設定。 這稱為隨即 _轉移_ 。 (接著是例外狀況。)
+- **Iaas。** 通常會假設遷移工作負載主要涉及透過 IaaS 移轉，將虛擬機器從實體資料中心移至雲端資料中心，且需要最低限度的重新開發或重新設定。 這稱為隨即 *轉移* 。 (接著是例外狀況。)
 - **架構一致性。** 在移轉期間對核心架構所做的變更會大幅增加複雜性。 在新平台上進行已變更系統的偵錯，引進了許多可能難以隔離的變數。 基於這個理由，工作負載應該只會在移轉期間經歷次要變更，且應該徹底測試任何變更。
 - **淘汰測試。** 資產的移轉和裝載會耗用營運和潛在的資本費用。 假設任何要遷移的工作負載都已經過審查，以驗證持續的使用量。 選擇淘汰未使用的資產會帶來立即的成本節約。
 - **調整資產大小。** 假設少數內部部署資產完全使用配置的資源。 在移轉之前，假設資產會調整大小以符合實際的使用需求。
@@ -47,7 +47,7 @@ ms.locfileid: "97025311"
 
 在上述所列的每個案例中，替代架構可能是最佳的解決方案。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 定義新架構之後，[即可計算精確的成本預估](./estimate.md)。
 

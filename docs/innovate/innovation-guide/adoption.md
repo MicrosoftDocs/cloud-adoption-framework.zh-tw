@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: 量化資料、量化意見反應、定性意見反應、測試意見反應、客戶意見反應
-ms.openlocfilehash: 72a932f827c658c11f55f353746a171d3defe4c2
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 3f7e58140007dc7991258966691848ca2c3e2632
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632115"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787615"
 ---
 # <a name="prepare-for-customer-feedback"></a>針對客戶意見反應做好準備
 
@@ -26,7 +26,7 @@ ms.locfileid: "100632115"
 - **量化 (測試意見反應)：** 此意見反應會測量我們希望看見的動作。
 - **定性 (客戶意見反應)：** 此意見反應讓我們知道這些計量在客戶心目中所代表的意義。
 
-量化資料是以數位為基礎，使用可量化的度量程式。 量化意見反應可提供資料的數值深入解析，這有助於快速收集客戶的大量答案。 量化意見反應的範例是多個選擇的問題和數值的使用者參與資料。 您可以深入瞭解意見反應，以取得更多關於客戶想法或意見的答案和深入解析。 定性意見反應的範例是客戶問卷，其中包含開放式問題。 客戶意見反應的這兩種方法都會提供寶貴的見解，以改善貴公司的產品和服務。  
+量化資料是以數位為基礎，使用可量化的度量程式。 量化意見反應可提供資料的數值深入解析，這有助於快速收集客戶的大量答案。 量化意見反應的範例是多個選擇的問題和數值的使用者參與資料。 您可以深入瞭解意見反應，以取得更多關於客戶想法或意見的答案和深入解析。 定性意見反應的範例是客戶問卷，其中包含開放式問題。 客戶意見反應的這兩種方法都會提供寶貴的見解，以改善貴公司的產品和服務。
 
 在整合意見反應迴圈之前，您需要有解決方案的共用存放庫。 集中式存放庫可讓您記錄所傳來的專案意見反應，並對這些意見反應採取行動。 [GitHub](https://github.com) 是開放原始碼軟體的居所。 其也是其中一個最常用來裝載商業開發應用程式，所用原始程式碼存放庫的平台。 關於[建置 GitHub 存放庫](/azure/devops/pipelines/repos/github)的文章可協助您開始使用您的存放庫。
 
@@ -63,9 +63,9 @@ Application Insights 是一種監視工具，可針對應用程式的使用量�
 
 ### <a name="learn-more"></a>深入了解
 
-- [設定 Azure 監視器](/azure/azure-monitor/learn/quick-monitor-portal)
-- [開始使用 Azure 監視器 Application Insights](/azure/azure-monitor/learn/tutorial-users)
-- [建置遙測儀表板](/azure/azure-monitor/learn/tutorial-app-dashboards)
+- [設定 Azure 監視器](/azure/azure-monitor/azure-monitor-app-hub)
+- [開始使用 Azure 監視器 Application Insights](/azure/azure-monitor/app/tutorial-users)
+- [建置遙測儀表板](/azure/azure-monitor/app/tutorial-app-dashboards)
 
 ## <a name="quantitative-feedback-for-apis"></a>[適用於 API 的定量意見反應](#tab/Quantitative-APIs)
 

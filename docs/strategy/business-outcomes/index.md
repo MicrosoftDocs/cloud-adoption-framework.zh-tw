@@ -1,19 +1,19 @@
 ---
 title: 轉換旅程的商務結果
 description: 使用「適用於 Azure 的雲端採用架構」，了解與雲端轉換相關聯的商務結果。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 10/28/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: e175460e3e8464e10dacdd809e27e7ebb1647e8c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 4ddf022edeb995b77dd219a3016fbf967abe459b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013020"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787887"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>哪些業務成果與轉換過程相關？
 
@@ -22,6 +22,12 @@ ms.locfileid: "97013020"
 在任何雲端轉換期間，在業務成果方面發言的能力支援透明度和跨功能的合作關係。 業務成果架構從一個簡單的範本開始，以幫助技術人員記錄並取得共識。 此範本可以與數個業務專案關係人一起使用，以收集各種業務成果，每個業務成果都可能受到公司轉換過程的影響。 您能以電子方式使用此範本，更棒的則是將它繪製在白板上，讓業務負責人和專案關係人參與以結果為中心的討論。
 
 若要深入了解業務成果和業務成果範本的相關資訊，請查參閱[記錄業務成果](./business-outcome-template.md)，或下載[業務成果範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx)。
+
+## <a name="optimize-your-cloud-investment-using-cloud-economics"></a>使用雲端經濟效益將雲端投資優化
+
+Azure 中的雲端經濟效益有哪些基礎？ 無論您是在 Azure 中執行現有的工作負載或架構新的解決方案，都能學習最佳作法指引來為您的組織流覽雲端的經濟效益，並根據您的特定工作負載，將您在 Azure 中的營運成本優化。 利用重要的財務和技術指引，開始成功建立您的雲端商務案例，並將您的雲端投資發揮最大效益。
+
+深入瞭解 [雲端經濟效益的運作方式](https://azure.microsoft.com/overview/cloud-economics/)。
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>準備與不同角色的交談
 

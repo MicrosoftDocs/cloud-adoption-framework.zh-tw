@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 7b630741c7d86d6fcf4987172273f328c3521f77
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 06fcd59e26240a01c8b64e391c7e36595cc77de9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174585"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787938"
 ---
 # <a name="balance-competing-priorities"></a>平衡競爭優先順序
 
@@ -68,7 +68,7 @@ ms.locfileid: "98174585"
 **競爭優先順序：**
 
 - **長期作業：** 客戶通常會被想要有一個符合功能與目前營運管理、治理和安全性系統功能同位的雲端環境遭到封鎖。 在目前的客戶研究中，超過90% 的客戶所需的支援必須獲得超過此思維。 這項封鎖程式會插入延遲變慢或阻礙業務影響的月數。
-- **採用時間：** 以雲端為基礎的工具（例如 Azure 原則、Azure 藍圖和管理群組）可讓您輕鬆地在 IT 平臺上進行重構。 此外，預先定義的登陸區域也提供固定的位置，以加速部署至已符合許多功能同位需求的環境。 有機會加快上市時間，同時對長期作業的影響降到很低。
+- **採用時間：** 雲端式工具（例如 Azure 原則、Azure 藍圖和管理群組）可讓您輕鬆地在 IT 平臺上進行重構。 此外，預先定義的登陸區域也提供固定的位置，以加速部署至已符合許多功能同位需求的環境。 有機會加快上市時間，同時對長期作業的影響降到很低。
 
 **最小範圍：** 現成的方法會概述從快速採用長期作業的直接途徑。 這種方法是從啟用環境重構的工具基本簡介開始。 根據這些工具和環境需求，系統會引導客戶選擇預先定義的登陸區域 (每個都使用基礎結構即程式碼模型) 來傳遞。 然後，您可以在雲端採用過程中重構該程式碼，以改善作業、安全性和管理做法。
 
@@ -87,7 +87,7 @@ ms.locfileid: "98174585"
 
 **最小範圍：** 在初期規劃期間，請使用重新裝載選項進行規劃，並清楚瞭解此選項是初始的商業假設，而不是技術決策。 在遷移方法中，雲端採用小組會針對每個已遷移的工作負載挑戰這項假設。 此方法會針對每個工作負載或群組建立遷移處理站的工作負載或工作負載，遵循評定/遷移/升方法。 在評估階段，採用小組會評估每個工作負載的技術符合和架構。 這項評估工作很少會產生單純的隨即轉移方法，因為架構中有許多元件通常會針對重構和現代化進行選取。
 
-**擴充的範圍範例：** 針對要徑任務或高度敏感性的工作負載（例如大型主機或多層式微服務應用程式），評估階段可能需要更深入的工作負載評量。 在這些重新架構的情況下，客戶應該使用 Microsoft Azure Well-Architected 評論和 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 來調整評量期間的工作負載需求。
+**擴充的範圍範例：** 針對要徑任務或高度敏感性的工作負載（例如大型主機或多層式微服務應用程式），評估階段可能需要更深入的工作負載評量。 在這些重新架構的情況下，客戶應該使用 Microsoft Azure Well-Architected 評論和 [Microsoft azure Well-Architected 架構](/azure/architecture/framework) 來調整評量期間的工作負載需求。
 
 ## <a name="balance-during-the-innovation-phase"></a>創新階段期間的平衡
 
@@ -100,7 +100,7 @@ ms.locfileid: "98174585"
 
 **最小範圍：** 創新方法說明如何透過商業價值共識來整合策略和計畫。 然後，本指南將介紹可加速各項創新專業領域的雲端原生工具，並伴隨實施的最佳做法。 最後，流程改進部分會示範如何在雲端採用旅程中採用計畫和策略，以建立客戶的理解方法。 這種方法著重于利用盡可能少的技術來提供創新。
 
-**擴充的範圍範例：** 有時候，創新可能會相依于任務關鍵性或高敏感度的工作負載。 當「客戶」是內部使用者時，開發投入時間可能會是最早反覆運算期間的任務關鍵性和高敏感度。 在這些案例中，採用小組應該使用 Microsoft Azure Well-Architected 複習和 Microsoft Azure Well-Architected Framework 來及早評估程式中的先進架構設計。
+**擴充的範圍範例：** 有時候，創新可能會相依于任務關鍵性或高敏感度的工作負載。 當「客戶」是內部使用者時，開發投入時間可能會是最早反覆運算期間的任務關鍵性和高敏感度。 在這些案例中，採用小組應使用 Microsoft Azure Well-Architected 評論和 Microsoft Azure Well-Architected Framework，在程式初期評估高階的架構設計。
 
 ## <a name="balance-during-the-governance-phase"></a>在治理階段進行平衡
 
@@ -126,7 +126,7 @@ ms.locfileid: "98174585"
 
 **最小範圍：** 管理方法建議您建立雲端原生、無 ops 的基準。 確認無作業基準不符合所有商務需求，請與企業合作來定義承諾，並更妥善地調整投資。 展開基準以符合所有工作負載的一般需求。 然後讓平臺小組或特定工作負載小組在妥善管理的環境內維護妥善管理的解決方案。
 
-**擴充的範圍範例：** 在大部分的環境中，其商業價值的工作負載很小，會比對營運的深度投資。 在這些案例中，IT 小組可能會想要使用 Microsoft Azure Well-Architected 複習和 Microsoft Azure Well-Architected Framework 來引導更深入的作業。
+**擴充的範圍範例：** 在大部分的環境中，其商業價值的工作負載很小，會比對營運的深度投資。 在這些案例中，IT 小組可能會想要使用 Microsoft Azure Well-Architected 評論和 Microsoft Azure Well-Architected Framework 來引導更深入的作業。
 
 ## <a name="balance-during-the-organization-phase"></a>在組織階段進行平衡
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: a146c08eeb645de42cdc06e8a0d7c214e1ca845c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: edd037792a03669f0d2ce8e2ebbf1d62d38bb47a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018171"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789061"
 ---
 # <a name="democratize-data-with-digital-invention"></a>使用數位發明將大眾化資料
 
@@ -35,7 +35,7 @@ ms.locfileid: "97018171"
 
 許多成功的創新都是以最基本的可行產品來啟動 (MVP) ，代表客戶提供手動、資料驅動的流程。 在此指引模型中，員工是資料取用者。 該員工會使用資料來協助客戶。 每次客戶參與手動支援時，就可以測試並驗證假設。 這種方法通常是一種符合成本效益的方法，可在您投入大量整合解決方案之前測試以客戶為焦點的假設。
 
-使用 [Power BI](/power-bi)之類的工具，直接與資料取用者共用資料的主要工具組括自助報告或內嵌在其他體驗內的資料。
+使用 [POWER BI](/power-bi/)之類的工具，直接與資料取用者共用資料的主要工具組括自助報告或內嵌在其他體驗內的資料。
 
 > [!NOTE]
 > 在您共用資料之前，請確定您已閱讀下列各節。 共用資料可能需要治理來提供共用資料的保護。 此外，該資料可能會分散到多個雲端，而且可能需要集中化。 大部分的資料甚至可能位於應用程式內，因此您必須先收集資料，才能共用它。
@@ -61,7 +61,7 @@ ms.locfileid: "97018171"
 
 如果需要資料的集中，您應該先為集中式資料定義適當的資料存放區。 在雲端中建立資料倉儲是很好的作法。 這個可擴充的選項可為您的所有資料提供一個集中位置。 這種類型的解決方案可在線上分析處理 (OLAP) 或 big data 選項中使用。
 
-[OLAP](/azure/architecture/data-guide/relational-data/online-analytical-processing)和[big data](/azure/architecture/data-guide/big-data)解決方案的參考架構可協助您在 Azure 中選擇最相關的解決方案。 如果需要混合式解決方案， [擴充內部部署資料](/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud) 的參考架構也可以協助加速解決方案開發。
+[OLAP](/azure/architecture/data-guide/relational-data/online-analytical-processing)和[big data](/azure/architecture/data-guide/big-data/)解決方案的參考架構可協助您在 Azure 中選擇最相關的解決方案。 如果需要混合式解決方案， [擴充內部部署資料](/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud) 的參考架構也可以協助加速解決方案開發。
 
 > [!IMPORTANT]
 > 根據客戶需求和對齊的解決方案，較簡單的方法可能就已足夠。 雲端架構設計人員應該挑戰團隊考慮較低成本的解決方案，以更快速地驗證客戶假設（尤其是在早期開發期間）。 下列收集資料的章節涵蓋一些可能會針對您的情況建議不同解決方案的案例。
@@ -72,7 +72,7 @@ ms.locfileid: "97018171"
 
 **整合：** 您可以使用傳統的資料移動技術，將位於現有資料存放區中的資料整合到集中式資料存放區。 這在牽涉到多重雲端資料儲存體的案例中特別常見。 這些技術包括從現有的資料存放區解壓縮資料，然後將資料載入中央資料存放區。 在此程式中的某個時間點，資料通常會轉換成更有用且與中央存放區相關。
 
-以雲端為基礎的工具已將這些技巧轉換成依使用量付費的工具，減少進入資料收集和集中的障礙。 Azure 資料庫移轉服務和 Azure Data Factory 等工具都是兩個範例。 [使用 OLAP 資料存放區 Data Factory](/azure/architecture/data-guide/relational-data/etl)的參考架構，就是其中一個這類解決方案的範例。
+以雲端為基礎的工具已將這些技巧轉換成依使用量付費的工具，減少進入資料收集和集中的障礙。 Azure 資料庫移轉服務和 Azure Data Factory 等工具都有兩個範例。 [具有 OLAP 資料存放區之 Data Factory](/azure/architecture/data-guide/relational-data/etl)的參考架構，就是其中一個這類解決方案的範例。
 
 內嵌 **：** 某些資料不在現有的資料存放區中。 當此暫時性資料是創新的主要來源時，您會想要考慮替代方法。 您可以在各種不同的現有來源中找到暫時性資料，例如應用程式、Api、資料流程、IoT 裝置、區塊鏈、應用程式快取、媒體內容，甚至一般檔案。
 
@@ -80,9 +80,9 @@ ms.locfileid: "97018171"
 
 **虛擬化：** 整合和內嵌資料有時可能會使創新變慢。 當資料虛擬化的解決方案可供使用時，它可能代表更合理的方法。 內嵌和整合都可以重複儲存和開發需求、新增資料延遲、增加受攻擊面區域、觸發程式品質問題，以及提高治理工作。 資料虛擬化是將原始資料保留在單一位置，並建立來源資料之傳遞或快取查詢的較現代替代方案。
 
-SQL Server 2017 與 Azure SQL 資料倉儲都支援 [PolyBase](/sql/relational-databases/polybase/polybase-guide)，這是在 Azure 中最常使用的資料虛擬化方法。
+SQL Server 2017 與 Azure SQL 資料倉儲都支援 [PolyBase](/sql/relational-databases/polybase/polybase-guide)，這是 Azure 中最常使用的資料虛擬化方法。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 有了將大眾化資料的策略之後，接下來您會想要評估 [透過應用程式吸引客戶](./apps.md)的方法。
 

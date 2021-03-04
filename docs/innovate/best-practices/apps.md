@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 0c1a4bca2ef0ba15a5046e57606a5b835e8c6e56
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 5bfafe0b34507d8b45fbc154799a2f64cf224935
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100526063"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789247"
 ---
 # <a name="tools-to-engage-via-applications-in-azure"></a>透過 Azure 中的應用程式進行互動的工具
 

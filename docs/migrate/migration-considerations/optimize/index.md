@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: cc43e5d41befaf4142b86ca33fd4c5d9cb44bfba
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: e0db1d3105f530da7b5f845b9e2c3c597f7834df
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025022"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788856"
 ---
 # <a name="release-workloads"></a>發行工作負載
 

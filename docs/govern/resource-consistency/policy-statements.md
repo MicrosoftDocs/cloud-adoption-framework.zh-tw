@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: cb6938f6d4c9214c7dbdb5fb035abafdd5c0f51f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 67adf7d5d6d930116acbbcf7d826c2bed3281dc7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019327"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787666"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>資源一致性原則聲明範例
 
@@ -46,7 +46,7 @@ ms.locfileid: "97019327"
 
 **原則聲明：** 針對任何任務關鍵性應用程式或受保護的資料建立新的訂用帳戶或管理群組，將需要雲端治理小組的評論。 核准的變更會整合到適當的藍圖指派中。
 
-**可能的設計選項：** 鎖定您組織 [Azure 管理群組](/azure/governance/management-groups) 的系統管理存取權，僅限經過核准的治理小組成員，負責控制訂用帳戶的建立和存取控制流程。
+**可能的設計選項：** 鎖定您組織 [Azure 管理群組](/azure/governance/management-groups/) 的系統管理存取權，僅限經過核准的治理小組成員，負責控制訂用帳戶的建立和存取控制流程。
 
 ## <a name="manage-updates-to-virtual-machines"></a>管理虛擬機器的更新
 
@@ -56,7 +56,7 @@ ms.locfileid: "97019327"
 
 <!-- docutune:ignore "consistent update management" -->
 
-**可能的設計選項：** 針對 Azure 裝載的 Vm，您可以使用 [Azure 自動化中的更新管理解決方案](/azure/automation/update-management/overview)，以提供一致的更新管理。
+**可能的設計選項：** 針對 Azure 裝載的 Vm，您可以 [在 Azure 自動化中使用更新管理解決方案](/azure/automation/update-management/overview)，以提供一致的更新管理。
 
 ## <a name="deployment-compliance"></a>部署合規性
 
@@ -67,7 +67,7 @@ ms.locfileid: "97019327"
 - 部署工具必須由雲端治理小組核准，以確保持續治理已部署的資產。
 - 部署腳本必須在可供雲端治理小組存取的中央存放庫中進行維護，以進行定期審核和審核。
 
-**可能的設計選項：** 一致使用 [Azure 藍圖](/azure/governance/blueprints) 來管理自動化部署，可讓您一致地部署符合您組織治理標準和原則的 Azure 資源。
+**可能的設計選項：** 一致使用 [Azure 藍圖](/azure/governance/blueprints/) 來管理自動化部署，可讓您一致地部署符合您組織治理標準和原則的 azure 資源。
 
 ## <a name="monitoring"></a>監視
 
@@ -78,7 +78,7 @@ ms.locfileid: "97019327"
 - 治理工具必須確認所有資產都包含在監視中，以因應資源耗盡、安全性、合規性及優化。
 - 治理工具必須確認正在為所有應用程式和資料收集適當的記錄資料層級。
 
-**可能的設計選項：** [Azure 監視器](/azure/azure-monitor/overview) 是 Azure 中的預設監視服務，並可在部署資源時透過 [Azure 藍圖](/azure/governance/blueprints) 來強制執行一致的監視。
+**可能的設計選項：** [Azure 監視器](/azure/azure-monitor/overview) 是 azure 中的預設監視服務，可在部署資源時透過 [Azure 藍圖](/azure/governance/blueprints/) 強制執行一致的監視。
 
 ## <a name="disaster-recovery"></a>災害復原
 
@@ -86,9 +86,9 @@ ms.locfileid: "97019327"
 
 **原則聲明：** 所有任務關鍵性應用程式和受保護的資料都必須執行備份和復原解決方案，以將中斷或系統失敗的業務影響降到最低。
 
-**可能的設計選項：**[Azure Site Recovery](/azure/site-recovery/site-recovery-overview)服務提供備份、復原和複寫功能，可將商務持續性和嚴重損壞修復的停機時間降到最低， (BCDR) 案例。
+**可能的設計選項：**[Azure Site Recovery](/azure/site-recovery/site-recovery-overview)服務提供備份、復原和複寫功能，可將商務持續性和嚴重損壞修復 (BCDR) 案例中的停機時間降至最低。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定業務風險。
 

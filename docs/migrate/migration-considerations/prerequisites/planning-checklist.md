@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 19db2f286b6b8753a5b9f6f438daf8caa3135a42
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 40199cd5dc33ceb9fc9896a6d47d1d8444a658c1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024886"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788669"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>遷移環境規劃檢查清單：在遷移前驗證環境的就緒程度
 
@@ -23,7 +23,7 @@ ms.locfileid: "97024886"
 
 ## <a name="effort-type-assumption"></a>採用的工作類型
 
-本文和檢查清單均採用 _重新裝載_ 或 _雲端轉換_ 方法來進行雲端移轉。
+本文和檢查清單均採用 *重新裝載* 或 *雲端轉換* 方法來進行雲端移轉。
 
 ## <a name="governance-alignment"></a>控管一致性
 
@@ -66,7 +66,7 @@ ms.locfileid: "97024886"
 
 雲端式身分識別服務是為您的雲端資源提供身分識別與存取管理 (IAM) 的必要條件。 在繼續進行之前，請先讓您的身分識別管理原則與雲端採用方案達成一致。 例如，在移轉現有的內部部署資產時，請考慮使用[目錄同步](../../../decision-guides/identity/index.md)來支援混合式身分識別方法，讓您的內部部署和雲端環境之間在移轉期間和之後都能有一組一致的使用者認證。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 如果環境符合最低需求，即可將其視為通過移轉整備核准的環境。 [文化複雜性和變更管理](./cultural-complexity.md)有助於調整角色和責任，以確保在計劃執行期間能符合適當預期。
 

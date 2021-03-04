@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 69ec8f991d98363be075e7421e3b8743a3b7b795
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: d5b8946757c3fcccb3a7e54363cea3463d8292bd
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492675"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788057"
 ---
 # <a name="skills-readiness-path-during-the-readiness-phase-of-a-migration-journey"></a>在遷移旅程的準備階段期間的技能就緒途徑
 
@@ -31,7 +31,7 @@ ms.locfileid: "100492675"
 在準備階段期間，會呼叫技術人員來建立可裝載、操作及管理已遷移至雲端之工作負載的遷移登陸區域。 您可以使用下列學習路徑來加速開發必要的技能：
 
 - [建立 azure 帳戶](/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。 您的帳戶會保留您所佈建的 Azure 服務，並處理您的個人設定，例如身分識別、計費和喜好設定。
-- [Azure 入口網站](/learn/modules/tour-azure-portal)：導覽 Azure 入口網站功能和服務，以及自訂入口網站。
+- [Azure 入口網站](/learn/modules/tour-azure-portal)：導覽 azure 入口網站的功能和服務，以及自訂入口網站。
 - [Azure 簡介](/learn/modules/welcome-to-azure)：在雲端中建立並設定第一部虛擬機器來開始使用 azure。
 - [Azure 中的安全性簡介](/learn/modules/intro-to-security-in-azure)：討論在雲端工作時保護基礎結構和資料的基本概念。 了解哪些是您的責任，哪些會由 Azure 為您處理。
 - [管理 azure 中的資源](/learn/paths/manage-resources-in-azure)：瞭解如何使用 azure 命令列和入口網站來建立、管理及控制雲端式資源。
@@ -45,7 +45,7 @@ ms.locfileid: "100492675"
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)： Pluralsight 的課程，可協助架構正確的基礎解決方案。
 - [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎結構設計師的 Pluralsight 課程。
-- [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/cloud-architecture-foundations)： Pluralsight 課程可協助架構設計人員設計遷移解決方案。
+- [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/cloud-architecture-foundations)：可協助架構設計人員設計遷移解決方案的 Pluralsight 課程。
 
 ## <a name="deeper-skills-exploration"></a>更深入的技能探索
 
@@ -55,7 +55,7 @@ ms.locfileid: "100492675"
 
 Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 Azure 服務開發技能。
 
-- [對應角色和技能](/azure/cloud-adoption-framework/plan/suggested-skills)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
+- [對應角色和技能](../plan/suggested-skills.md)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
 
 - 探索 [azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx) ，以取得您 azure 知識的官方認知。
 
@@ -63,7 +63,7 @@ Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 
 
 Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術和責任做好準備並不容易。 Microsoft Learn 提供了更有價值的學習方法，可協助您更快達成目標。 獲得點數和等級，並達成更多目標。
 
-下列範例是 Microsoft Learn 上的一些量身訂做的學習路徑，與雲端採用架構的就緒方法一致：
+下列範例是 Microsoft learning 上的一些量身訂做的學習路徑，與雲端採用架構的就緒方法一致：
 
 [Azure 基本](/learn/paths/azure-fundamentals)概念：瞭解雲端概念，例如高可用性、擴充性、彈性、靈活性、容錯和嚴重損壞修復。 瞭解 Azure 雲端運算的優點，以及它如何節省您的時間和金錢。 比較和對比轉換至 Azure 雲端的基本策略。 探索 Azure 中可用的廣泛服務，包括計算、網路、儲存體和安全性。
 
@@ -77,4 +77,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 ## <a name="learn-more"></a>深入了解
 
-如需其他學習路徑，請流覽 [Microsoft Learn 目錄](/learn/browse)。 使用 **角色** 篩選器，讓學習路徑與您的角色一致。
+如需其他學習路徑，請流覽 [Microsoft 學習目錄](/learn/browse)。 使用 **角色** 篩選器，讓學習路徑與您的角色一致。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 537d1879a23cf86c303200eb359d5d75aa02741a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 16a45aa4eceb2f16cb9e8e82ba9e4d7a99976ca9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021282"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789485"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
@@ -46,7 +46,7 @@ ms.locfileid: "97021282"
 
 1. 資源群組的部署方式應將其內容生命週期列入考量。 一起開發、一起管理，並一起淘汰的資源皆屬於相同資源群組。 如需使用資源群組最佳用法的詳細資訊，請參閱[資源一致性決策指南](../../../decision-guides/resource-consistency/index.md)。
 
-1. [區域選取](../../../migrate/azure-best-practices/multiple-regions.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services)。
+1. [區域選取](../../../migrate/azure-best-practices/multiple-regions.md)非常重要，因此必須納入考量，以備妥網路、監視、稽核來進行容錯移轉/容錯回復，並確認[所需的 SKU 可在偏好的區域中取得](https://azure.microsoft.com/global-infrastructure/services/)。
 
 ![大型企業資源組織圖](../../../_images/govern/large-enterprise-resource-organization.png)
 

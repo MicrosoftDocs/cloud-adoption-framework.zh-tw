@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: fc5c44b2197dca8eba6f88a87578e8284ba6fa95
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c80453bbf67e1fb00d3a94cfa03f1d793ed5cc34
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022387"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788635"
 ---
 # <a name="get-started-align-your-organization"></a>開始使用：讓您的組織保持一致
 

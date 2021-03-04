@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 1b624e02181925b1e851b2b8c6be86794b4587ea
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e4515018286a5aa36d26aea7af36625e82020f12
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025294"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788958"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>業務優先順序：維持一致
 
-_轉換_ 通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
+*轉換* 通常定義為大幅或自發性的變更。 對董事會階層而言，變更可能形同大幅的轉換。 但對於在組織中執行變更的人員而言，轉換會有點誤導。 本質上，將轉換解釋為一系列從某個狀態到另一個狀態的適當轉型，會比較恰當。
 
 工作負載的合理化或轉型所需的時間會有所不同，視涉及的技術複雜度而定。 不過，即便此程序可快速地套用至單一工作負載或應用程式群組，要在使用者群間產生實質性的改變，仍需要時間。 要將傳播到現有商務程序的各種層級，則需要更長的時間。 如果預期轉換會形塑消費者的行為模式，可能需要更長的時間才能產生顯著的結果。
 
@@ -47,7 +47,7 @@ _轉換_ 通常定義為大幅或自發性的變更。 對董事會階層而言�
 
 當市場發生變化時，雲端策略小組會與業務部門合作，以了解如何最適當地因應變化。 如果該因應措施需仰賴移轉優先順序的變更，可以調整移轉待處理項目。 這會將先前優先順序較低的工作負載向上移。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 藉由適當調整業務優先順序，雲端採用小組可以放心地開始[評估工作負載](./evaluate.md)，以開發架構和移轉計劃。
 

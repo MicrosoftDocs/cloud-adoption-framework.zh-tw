@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 95d15d8de70d512e4f00868c0be05fc4612fe88d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d1417ad692727afa0c1e509d73bcad29f0cfb198
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026297"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788227"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>調整雲端的現有角色、技能和流程
 
@@ -37,7 +37,7 @@ IT 人員成員通常會考慮取得支援擴充功能和新責任所需的訓�
 
 ## <a name="identify-gaps"></a>找出間距
 
-識別間距是組織準備工作的另一個重要層面。 _間距_ 是您的數位轉型所需但目前不存在於企業中的角色、技能或流程。
+識別間距是組織準備工作的另一個重要層面。 *間距* 是您的數位轉型所需但目前不存在於企業中的角色、技能或流程。
 
 1. 列舉數位轉型所帶來的責任。 強調新的責任，以及即將淘汰的現有責任。
 1. 識別與每個責任相符的區域。 針對每個新的責任，檢查該區域的對齊方式。 某些責任可能會跨越數個區域。 這個交叉點代表一個機會，讓您可以記錄為問題的更好的對齊方式。 如果未將任何區域識別為負責任，請記錄此間距。
@@ -52,7 +52,7 @@ IT 人員成員通常會考慮取得支援擴充功能和新責任所需的訓�
 
 追蹤這些相依性，並記下將支援這些相依性的進程。 也請注意處理常式目前是否存在。 對於需要工具的程式，請確定部署任何工具的時程表符合整體的數位轉換排程。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 確保正確支援已翻譯的角色是小組工作。 若要採取這種指導方針，請參閱組織的就緒程度總覽，以找出正確的小組結構和參與者。
 

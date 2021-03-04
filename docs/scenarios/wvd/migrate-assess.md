@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 57bfdfa758d35a3e55119f975aa3953452b0a9f9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: cb9e7c1b58643a94416c4026a1256d21becb56e7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025651"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787921"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows 虛擬桌面評估
 
@@ -27,9 +27,9 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 
 這些問題的答案是從資料開始。 在計畫方法中（特別是 [最佳作法](../../plan/index.md) 和 [數位資產評](../../digital-estate/index.md)量），應已收集並分析資料，以建立遷移計畫。 不過，此特定工作負載評量中的問題可能需要額外的資料。 開發 Windows 虛擬桌面部署計畫時，需要每位使用者所要使用之桌上型電腦、使用者和工作負載的相關資料。
 
-如果您使用 [Movere](/azure/migrate/migrate-services-overview#movere) 做為資料收集工具，您可能會擁有開發角色所需的資料，並使用 [Azure Migrate](/azure/migrate)中的資料來回答這些問題，就像任何其他遷移案例一樣。
+如果您使用 [Movere](/azure/migrate/migrate-services-overview#movere) 做為資料收集工具，您可能會擁有開發角色所需的資料，並使用 [Azure 遷移](/azure/migrate)中的資料來回答這些問題，就像任何其他遷移案例一樣。
 
-如果您沒有回答本節中所有問題所需的資料，另一個協力廠商軟體廠商可以提供個別的探索程式，以增強您所擁有的資料。 廠商（ [lakeside](/azure/migrate/migrate-services-overview#isv-integration)）也與虛擬桌面基礎結構遷移目標區段內的 Azure Migrate 整合。 廠商可協助您對應 Windows 虛擬桌面部署的計畫，包括角色、主機集區、應用程式和使用者設定檔。
+如果您沒有回答本節中所有問題所需的資料，另一個協力廠商軟體廠商可以提供個別的探索程式，以增強您所擁有的資料。 廠商（ [lakeside](/azure/migrate/migrate-services-overview#isv-integration)）也會與「虛擬桌面基礎結構遷移目標」一節中的「Azure 遷移」進行整合。 廠商可協助您對應 Windows 虛擬桌面部署的計畫，包括角色、主機集區、應用程式和使用者設定檔。
 
 ### <a name="user-personas"></a>使用者角色
 
@@ -46,9 +46,9 @@ Windows 虛擬桌面評估練習是透過資料驅動程式，作為測試假設
 
 上述每個問題的差異將開始以商務功能、成本中心、地理區域和技術需求來說明使用者角色。 下表可協助記錄回應，以填入已完成的評估或設計檔：
 
-| 條件  | 角色群組 &nbsp; 1  | 角色群組 &nbsp; 2  | 角色群組 &nbsp; 3  |
+| 條件 | 角色群組 &nbsp; 1 | 角色群組 &nbsp; 2 | 角色群組 &nbsp; 3 |
 |---------|---------|---------|---------|
-| 集區  | 集區 | 集區 | 專用 (安全性考慮)  |
+| 集區 | 集區 | 集區 | 專用 (安全性考慮)  |
 | 密度 | Light (6 &nbsp; 使用者/vCPU)  | 大量 (2 &nbsp; 使用者/vCPU)  | 專用 (1 &nbsp; 使用者/vCPU)  |
 | 效能 | 低 | 高記憶體 | 低 |
 | GPU | N/A | 必要 | 不適用 |

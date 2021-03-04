@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 94753e80ed7597a1e6ec97177a9c35c201466afe
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c8b1c464c268f873f06564d2dd3162c3847380c8
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024767"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788414"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>卓越的雲端中心 (CCoE) 功能
 
@@ -63,9 +63,9 @@ CCoE 的每個成員都是負責瞭解所需的條件約束、風險和防護，
 
 這項轉換的範例：
 
-| 案例 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
+| 狀況 | 預先 CCoE 的解決方案 | CCoE 後解決方案 |
 |---------|---------|---------|
-| 布建生產 SQL Server | 網路、IT 和資料平臺小組會在幾天或甚至數周的時間內布建各種元件。 | 需要伺服器的團隊部署 Azure SQL Database 的 PaaS 實例。 或者，preapproved 範本可以用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
+| 布建生產 SQL Server | 網路、IT 和資料平臺小組會在幾天或甚至數周的時間內布建各種元件。 | 需要伺服器的小組會部署 Azure SQL Database 的 PaaS 實例。 或者，preapproved 範本可以用來將所有 IaaS 資產部署到雲端（以小時為單位）。 |
 | 布建開發環境 | 網路、IT、開發和 DevOps 團隊同意規格和部署環境。 | 開發小組會定義自己的規格，並根據配置的預算部署環境。 |
 | 更新安全性需求以改善資料保護 | 網路、IT 和安全性小組會在多個環境中更新各種網路裝置和 Vm，以新增保護。 | 雲端治理工具可用來更新可以立即套用至所有雲端環境中所有資產的原則。 |
 
@@ -129,7 +129,7 @@ CCoE 工作可透過商務專案關係人的支援來加速。 CCoE 工作的大
 
 **建立緩衝區：** CCoE 團隊將會試驗新的方法。 其中有些方法無法妥善配合現有的作業或技術限制。 當實驗失敗時，CCoE 發生壓力或要是時，會有一個真正的風險。 從「快速失敗」學習機會的結果中，鼓勵和緩衝處理小組是很重要的。 小組必須負責成長思維，以確保他們從這些實驗中學習，並找出更好的解決方案，也同樣重要。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 CCoE 模型需要雲端平臺功能和雲端自動化功能。 下一步是要調整雲端平臺功能。
 

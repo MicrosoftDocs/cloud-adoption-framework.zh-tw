@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: eb8ef62a66210842d3329e4ad0606a3fc66ec1dd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: feebe11b48b028c17a1a179a9c4af162c882ccb6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024937"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788346"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>針對文化複雜度做準備：調整角色和責任
 
@@ -25,7 +25,7 @@ ms.locfileid: "97024937"
 
 在任何移轉中，都有一些應盡可能由企業執行的重要功能。 IT 人員通常可完成下列工作。 不過，企業參與成員可以協助您在後續的採用過程中降低阻礙。 它也可在整個移轉過程中確保專案關係人重要的相互投資。
 
-| 程序 | 活動 | 描述 |
+| 處理序 | 活動 | 描述 |
 |---------|---------|---------|
 | 評定 | 業務目標 | 定義移轉工作所需的業務成果。 |
 | 評定 | 優先順序 | 確保能符合持續變動的業務優先順序和市場現況。 |
@@ -46,7 +46,7 @@ ms.locfileid: "97024937"
 > [!NOTE]
 > 在下表中，責任方應起始角色的對應。 該資料行應自訂以符合現有的程序，進而達成高效率的執行。 在理想情況下，應該將單一人指派為負責任的合作物件。
 
-| 程序 | 活動 | 描述 | 責任方 |
+| 處理序 | 活動 | 描述 | 責任方 |
 |---------|---------|---------|---------|
 | 必要條件 | 數位資產 | 根據業務成果，使現有的清查符合基本假設。 | 雲端策略小組 |
 | 必要條件 | 移轉待處理項目 | 為要移轉的工作負載設定優先順序。 | 雲端策略小組 |
@@ -60,7 +60,7 @@ ms.locfileid: "97024937"
 > [!CAUTION]
 > 對於這些活動，權限和授權對於責任方會有很大的影響；他們必須能夠直接存取現有環境中的生產系統，或是必須有相關機制可透過其他負責的參與者來保護存取的安全。 此責任方的決定，將直接影響到移轉和最佳化程序中的升階策略。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 當小組對角色和責任有大致的瞭解時，就可以開始準備技術詳細資料來進行遷移。 了解[技術複雜度和變更管理](./technical-complexity.md)可讓雲端採用小組藉由與累加式變更管理程序相呼應，針對移轉的技術複雜性進行準備。
 

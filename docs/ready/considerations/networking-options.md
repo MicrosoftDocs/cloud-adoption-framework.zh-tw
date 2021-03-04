@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f800b897070f363559b4314e8a067e802e0abcec
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 150ca96f40f6a2d068f837402f50f6e617e3ef5a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024138"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788686"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "97024138"
 
 - **您的工作負載是否需要虛擬網路？** 受控平台即服務 (PaaS) 資源類型使用不一定需要虛擬網路的基礎平台網路功能。 如果您的工作負載不需要進階的網路功能，而且您不需要部署基礎結構即服務 (IaaS) 資源，則 [PaaS 資源所提供的預設原生網路功能](../../decision-guides/software-defined-network/paas-only.md)可能會符合您的工作負載連線能力和流量管理需求。
 - **您的工作負載是否需要虛擬網路與內部部署資料中心之間的連線能力？** Azure 提供兩種解決方案來建立混合式網路功能： Azure VPN 閘道和 Azure ExpressRoute。 [AZURE VPN 閘道](/azure/vpn-gateway/vpn-gateway-about-vpngateways) 會透過站對站 vpn，將您的內部部署網路連線到 azure，類似于您可能會如何設定和連接至遠端分公司。 VPN 閘道的最大頻寬為 10 Gbps。 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) 使用 Azure 與您內部部署基礎結構之間的私人連線，提供更高的可靠性和較低的延遲。 ExpressRoute 的頻寬選項範圍從 50 Mbps 到 100 Gbps。
-- **您是否需要使用內部部署網路裝置來檢查和稽核傳出流量？** 針對雲端原生工作負載，您可以使用 [Azure 防火牆](/azure/firewall/overview) 或裝載于雲端的協力廠商 [網路虛擬裝置 (nva) ](https://azure.microsoft.com/solutions/network-appliances) 來檢查和審核進出公用網際網路的流量。 但許多企業 IT 安全性原則都需要網際網路系結的連出流量，才能通過組織內部部署環境中集中管理的裝置。 [強制通道](/azure/virtual-network/virtual-networks-udr-overview)支援這些案例。 並非所有受控服務都支援強制通道。 在虛擬網路內部署服務或功能時，Azure App Service、 [AZURE API 管理](/azure/api-management/api-management-key-concepts)、 [Azure Kubernetes Service (AKS) ](/azure/aks/intro-kubernetes)、 [azure SQL 受控執行個體](/azure/sql-database/sql-database-managed-instance-index)、 [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)和[Azure HDInsight](/azure/hdinsight)等服務和[App Service 環境](/azure/app-service/environment/intro)功能都支援此設定。
+- **您是否需要使用內部部署網路裝置來檢查和稽核傳出流量？** 針對雲端原生工作負載，您可以使用 [Azure 防火牆](/azure/firewall/overview) 或裝載于雲端的協力廠商 [網路虛擬裝置 (nva) ](https://azure.microsoft.com/solutions/network-appliances) 來檢查和審核進出公用網際網路的流量。 但許多企業 IT 安全性原則都需要網際網路系結的連出流量，才能通過組織內部部署環境中集中管理的裝置。 [強制通道](/azure/virtual-network/virtual-networks-udr-overview)支援這些案例。 並非所有受控服務都支援強制通道。 服務和功能（例如 [Azure App service 中的 App Service 環境](/azure/app-service/environment/intro)、 [azure API 管理](/azure/api-management/api-management-key-concepts)、 [azure Kubernetes Service (AKS) ](/azure/aks/intro-kubernetes)、 [azure SQL 受控實例](/azure/sql-database/sql-database-managed-instance-index)、 [azure Databricks](/azure/azure-databricks/what-is-azure-databricks)和 [azure HDInsight](/azure/hdinsight) ）可在虛擬網路內部署服務或功能時支援此設定。
 - **您需要連接多個虛擬網路嗎？** 您可以使用[虛擬網路對等互連](/azure/virtual-network/virtual-network-peering-overview)來連接多個 [Azure 虛擬網路](/azure/virtual-network/virtual-networks-overview)的執行個體。 對等互連可支援跨訂用帳戶和區域的連接。 針對您提供跨多個訂用帳戶共用的服務，或需要管理大量網路對等互連的案例，請考慮採用[中樞和輪輻網路架構](../../decision-guides/software-defined-network/hub-spoke.md)，或使用 [Azure虛擬 WAN](/azure/virtual-wan/virtual-wan-about)。 虛擬網路對等互連只會提供兩個對等互連網路之間的連線能力。 根據預設，它不會跨多個對等互連提供可轉移的連線能力。
 - **您的工作負載是否可透過網際網路存取？** Azure 提供的服務是設計用來協助您管理及保護應用程式和服務的外部存取：
   - [Azure 防火牆](/azure/firewall/overview)
@@ -50,7 +50,7 @@ ms.locfileid: "97024138"
 
 Azure 網路是由提供不同網路功能的多項產品和服務所組成。 作為網路設計程序的一部分，您可以將工作負載需求與下表中的網路案例進行比較，以識別您可以用來提供這些網路功能的 Azure 工具或服務：
 
-| 案例 | 網路產品或服務 |
+| 狀況 | 網路產品或服務 |
 | --- | --- |
 | 我需要網路基礎結構來連接所有項目，從虛擬機器到連入 VPN 連線。 | [Azure 虛擬網路](/azure/virtual-network) |
 | 我需要對我的應用程式或服務進行輸入和輸出連線和要求的平衡。 | [Azure Load Balancer](/azure/load-balancer) |
@@ -72,7 +72,7 @@ Azure 網路是由提供不同網路功能的多項產品和服務所組成。 �
 
 下表摘要說明這些模式支援的主要案例：
 
-| 案例  | 建議的網路架構                                                  |
+| 狀況 | 建議的網路架構 |
 | --- | --- |
 | 所有部署至登陸區域的 Azure 裝載工作負載都將完全以 PaaS 為基礎，不需要虛擬網路，且不屬於更廣泛的雲端採用工作，包括 IaaS 資源。                                                                                                                                                          | [僅限 PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure 裝載的工作負載將會部署 IaaS 型資源 (例如虛擬機器)，否則需要虛擬網路，但不需要連線到您的內部部署環境。                                                                                                                                                                            | [雲端原生](../../decision-guides/software-defined-network/cloud-native.md)      |
