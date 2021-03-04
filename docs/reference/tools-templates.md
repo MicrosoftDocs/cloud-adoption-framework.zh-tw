@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 0a26becab0f8aab80a5e4cf9504e754362ca6091
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 3a121fe48499e12fa578c0a715d3dfb319ef6189
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785762"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116388"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -73,7 +73,7 @@ ms.locfileid: "101785762"
 
 | 資源 | 描述 |
 |----------|-------------|
-| [部署範本](https://aka.ms/adopt/plan/generator) | [知識挖掘](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)範本為您提供結構化的方法，以探索結構化和非結構化資料中包含的潛在見解。 .
+| [部署範本](https://aka.ms/adopt/plan/generator) | Azure DevOps 產生器具有專案檢查清單，可協助您建立 [知識挖掘](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)、 [新式資料倉儲](https://azuredevopsdemogenerator.azurewebsites.net/?name=moddw) 和產業焦點的加速器，例如使用 AI 的 [零售推薦](https://azuredevopsdemogenerator.azurewebsites.net/?name=moddw) 。 這些範本可讓您使用結構化的方法和檢查清單。 每個範本和工作專案都有連結，可協助您開始使用所需的內容、資產和程式碼範例。
 
 
 ## <a name="manage"></a>管理
