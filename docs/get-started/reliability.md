@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: a42115e034e0f737e05feedad44cd5c0c777317f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f20091fbd5c142c6f70024f6647c5977e7456349
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022336"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792987"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>開始使用：使用正確的控制項提升可靠性
 
@@ -52,7 +52,7 @@ ms.locfileid: "97022336"
   - 作業[合規性](../manage/considerations/operational-compliance.md)：中斷的最高百分比，通常是來自資源設定或不佳維護實務的變更。 遵循 [Azure 伺服器管理指南](../manage/azure-server-management/index.md) 來執行雲端原生工具，以管理修補和資源設定的變更。
   - [保護和](../manage/considerations/protect.md)復原：任何平臺上的中斷都是不可避免的。 當發生中斷時，請使用 [備份和復原解決方案](../manage/azure-management-guide/protect-recover.md) 來做好準備，以將持續時間降到最低。
 - [Advanced 作業](../manage/design-principles.md)：使用管理基準做為您的 [業務協調](../manage/considerations/business-alignment.md) 對話的基礎。 它可協助您清楚地討論 [重要性](../manage/considerations/criticality.md)、 [業務衝擊](../manage/considerations/impact.md)和 [營運承諾](../manage/considerations/commitment.md)。 企業調整有助於量化和驗證要求的 [增強基準](../manage/azure-management-guide/enhanced-baseline.md)、特定 [技術平臺](../manage/azure-management-guide/workload-specialization.md)的管理，或 [工作負載特定的作業](../manage/azure-management-guide/platform-specialization.md)。
-- **引導架構審核：** 工作負載層級的架構變更可能需要符合作業需求。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft Azure Well-Architected 評論](/assessments?id=azure-architecture-review)可協助引導這些交談與特定工作負載的技術擁有者。
+- **引導架構審核：** 工作負載層級的架構變更可能需要符合作業需求。 [Microsoft azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft azure Well-Architected 評論](/assessments/?id=azure-architecture-review)可協助引導與特定工作負載的技術擁有者進行這些交談。
 
 <br>
 
@@ -124,7 +124,7 @@ ms.locfileid: "97022336"
 **支援交付完成的指導方針：**
 
 - [收集清查](../digital-estate/inventory.md)：在採用之前，建立資料來源以分析數位資產。
-- [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)：使用 Azure Migrate 來收集清查。
+- [最佳做法： Azure 遷移](../plan/contoso-migration-assessment.md)：使用 azure 遷移來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)：在增量合理化期間，量化分析可針對預算用途找出雲端候選項目。
 - [調整成本模型和預測模型](../digital-estate/calculate.md)：使用 Azure 成本管理 + 計費，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用方案](../plan/plan-intro.md#build-your-cloud-adoption-plan)：建立具有可採取動作的工作負載、資產和時間軸詳細資料的方案。

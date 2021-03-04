@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 30da56d95560a90adf862f56aaf723ffe534e106
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6c295bdb93d35c4832233fa03f525a236af23c69
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022557"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793004"
 ---
 # <a name="get-started-accelerate-migration"></a>開始使用：加速移轉
 
@@ -228,7 +228,7 @@ ms.locfileid: "97022557"
 
 - 部署管理基準。
 - 完成 operations management 活頁簿。
-- 找出需要 Microsoft Azure Well-Architected 評論評量的任何工作負載。
+- 識別任何需要 Microsoft Azure Well-Architected 審核評定的工作負載。
 - 時間軸風險：
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
   - 完成 Microsoft Azure Well-Architected 審核評定：每個應用程式預估一小時。
@@ -243,7 +243,7 @@ ms.locfileid: "97022557"
 
 這些步驟可協助小組透過更佳的變更管理和專案關係人的調整來加速其遷移工作。 這些步驟也會移除常見的封鎖，並更快速地實現商業價值。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 雲端採用架構是一種生命週期解決方案，可協助您開始進行遷移旅程。 它也有助於成熟支援遷移工作的小組。 下列小組可以使用這些後續步驟來繼續成熟其功能。 這些平行處理並不是線性的，也不應視為封鎖程式。 相反地，每個都是平行值串流，可協助改善您組織的整體雲端就緒程度。
 

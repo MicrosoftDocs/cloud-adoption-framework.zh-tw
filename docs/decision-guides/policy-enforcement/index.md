@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: e9fa4ef47cf7e98779a2e09bff8c6afbc6da7da2
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
-ms.translationtype: HT
+ms.openlocfilehash: f8cdf5e0f7c7993968bf5e0e833e3b1e5c9fdca5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712105"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793055"
 ---
 # <a name="policy-enforcement-decision-guide"></a>原則強制執行決策指南
 
@@ -44,7 +44,7 @@ ms.locfileid: "97712105"
 
 除了仰賴 Azure 平台提供的原則強制執行機制，還要確保能夠確認雲端式應用程式和服務皆符合組織原則。 這包括實作在資源變得不相容時，向負責的合作對象發出警示的通知功能。 有效地[記錄和報告](../logging-and-reporting/index.md)您雲端工作負載的合規性狀態，是公司原則強制執行策略中的關鍵部分。
 
-隨著您的雲端資產成長，額外工具 (例如 [Azure 資訊安全中心](/azure/security-center)) 可以提供整合的安全性和威脅偵測，協助套用集中式原則管理和警示您的內部部署和雲端資產。
+隨著您的雲端資產成長，額外工具 (例如 [Azure 資訊安全中心](/azure/security-center/)) 可以提供整合的安全性和威脅偵測，協助套用集中式原則管理和警示您的內部部署和雲端資產。
 
 ## <a name="policy-enforcement"></a>強制執行原則
 

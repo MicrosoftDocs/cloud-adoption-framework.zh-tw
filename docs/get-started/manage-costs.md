@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: ccc8f2d86a9e99544a1022e8864523e56f226d7f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 89c3587961a2a887a02e67ea3de8e3d7ed7002a0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022608"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793021"
 ---
 # <a name="get-started-manage-cloud-costs"></a>開始使用：管理雲端成本
 
@@ -46,7 +46,7 @@ ms.locfileid: "97022608"
 
 **支援交付完成的指導方針：**
 
-- 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 使用 Azure 原則，並特別強調「成本中心」和「技術擁有者」的標記，[來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。
+- 確定所有工作負載和資源都遵循 [適當的命名和標記慣例](../ready/azure-best-practices/naming-and-tagging.md)。 使用 Azure 原則，並對「成本中心」和「技術擁有者」的標記有特別的強調，[來強制執行標記慣例](/azure/governance/policy/tutorials/govern-tags)。
 - 定期檢查並套用 [成本管理專業領域的最佳做法](../govern/cost-management/best-practices.md) ，以引導整個企業的分析和改進。 重要治理作法包括：
 
   - 以 [一般成本最佳作法](../govern/cost-management/best-practices.md) 為依據，以降低調整大小和成本，並停止未使用的電腦。
@@ -56,7 +56,7 @@ ms.locfileid: "97022608"
   - 透過原則來[降低非生產成本](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)，以管理非生產環境。
   - 針對 [成本優化建議](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)採取行動。
 
-- 您可能需要在工作負載層級進行取捨，以實行有效的成本優化變更。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft Azure Well-Architected 評論](/assessments/?id=azure-architecture-review)可協助引導這些交談與特定工作負載的技術擁有者。
+- 您可能需要在工作負載層級進行取捨，以實行有效的成本優化變更。 [Microsoft azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs)和[Microsoft azure Well-Architected 評論](/assessments/?id=azure-architecture-review)可協助引導與特定工作負載的技術擁有者進行這些交談。
 - 如果您不熟悉雲端治理，請使用管理方法來建立 [治理原則、程式和專業領域](../govern/index.md) 。
 - 如果您不熟悉成本管理專業領域，請考慮遵循 [成本管理專業領域的改進文章](../govern/guides/complex/cost-management-improvement.md)，並將焦點放在 [ [執行](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) ] 區段。
 
@@ -103,7 +103,7 @@ ms.locfileid: "97022608"
 **支援交付完成的指導方針：**
 
 - [收集清查](../digital-estate/inventory.md)。 建立資料來源，以在採用之前分析數位資產。
-- [最佳做法： Azure Migrate](../plan/contoso-migration-assessment.md)。 使用 Azure Migrate 來收集清查。
+- [最佳做法： Azure 遷移](../plan/contoso-migration-assessment.md)。 使用 Azure 遷移來收集清查。
 - [增量合理化](../digital-estate/rationalize.md#incremental-rationalization)。 在增量合理化和量化分析期間，請找出用於預算的雲端候選項目。
 - [調整成本模型和預測模型](../digital-estate/calculate.md)。 使用 Azure 成本管理 + 計費，藉由 [建立預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)來調整成本和預測模型。
 - [打造您的雲端採用計畫](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 使用可採取動作的工作負載、資產和時間軸詳細資料來建立方案。 此計畫可提供花費在時間 (或成本預測) 的基礎。 *花費一段時間* ，是成本管理治理專業領域內所有可操作優化分析的初始基準。
@@ -174,7 +174,7 @@ ms.locfileid: "97022608"
 **支援交付完成的指導方針：**
 
 - 使用 [Microsoft Azure Well-Architected 評論](/assessments/?id=azure-architecture-review) 來瞭解架構決策的平衡。
-- 複習 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) ，以取得創新期間成本優化的更深入指引。
+- 請參閱 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework/) ，以取得創新期間成本優化的更深入指引。
 
 <br>
 

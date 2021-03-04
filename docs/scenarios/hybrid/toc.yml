@@ -1,0 +1,265 @@
+# docsTest:ignore "NET Core" "Cloud Operating Model" "Virtual Datacenter" Framework app
+items:
+  - name: 混合式和多重雲端-適用于 Azure 的 Microsoft 雲端採用架構
+    href: scenario-overview.md
+    pdf_name: Hybrid and multicloud - Microsoft Cloud Adoption Framework for Azure
+  - name: 概觀
+    items:
+      - name: 混合式和多重雲端簡介
+        href: index.md
+      - name: 整合作業簡介
+        href: unified-operations.md
+      - name: Azure 產品
+        href: toolchain.md
+  - name: 打造初步策略
+    href: strategy.md
+  - name: 定義您的方案
+    href: plan.md
+  - name: 準備您的環境
+    href: ready.md
+  - name: 移轉到雲端
+    href: migrate.md
+  - name: 管理您的組合
+    href: govern.md
+  - name: 管理您的組合
+    href: manage.md
+  - name: 架構完善的混合式工作負載
+    items:
+      - name: 概觀
+        href: /azure/architecture/framework/hybrid/hybrid-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 成本最佳化
+        href: /azure/architecture/framework/hybrid/hybrid-cost?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 卓越營運
+        href: /azure/architecture/framework/hybrid/hybrid-opex?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 效能效率
+        href: /azure/architecture/framework/hybrid/hybrid-performance-efficiency?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 可靠性
+        href: /azure/architecture/framework/hybrid/hybrid-reliability?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 安全性
+        href: /azure/architecture/framework/hybrid/hybrid-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: 架構
+    items:
+      - name: 概觀
+        href: /azure/architecture/browse/hybrid_index?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 應用程式
+        items:
+          - name: 邊緣 AI
+            href: /azure/architecture/solution-ideas/articles/ai-at-the-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: '邊緣 (的 AI 已中斷連線) '
+            href: /azure/architecture/solution-ideas/articles/ai-at-the-edge-disconnected?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式環境中的 Azure Functions
+            href: /azure/architecture/hybrid/azure-functions-hybrid?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack HCI 上的 Robo 應用程式範例
+            href: /azure/architecture/hybrid/azure-stack-robo?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 在混合式環境中執行容器
+            href: /azure/architecture/hybrid/hybrid-containers?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Edge 上的 AI ML
+            href: /azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 具備 HPC Pack 的混合式 HPC
+            href: /azure/architecture/solution-ideas/articles/hybrid-hpc-in-azure-with-hpc-pack?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式 DevOps
+            href: /azure/architecture/solution-ideas/articles/devops-in-a-hybrid-environment?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 資料
+        items:
+          - name: 使用 Azure Arc 隨處管理 SQL Server
+            href: /azure/architecture/hybrid/azure-arc-sql-server?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 搭配 HDInsight 的混合式巨量資料
+            href: /azure/architecture/solution-ideas/articles/extend-your-on-premises-big-data-investments-with-hdinsight?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 將內部部署資料解決方案延伸至 Azure
+            href: /azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式 ETL 與 Azure Data Factory
+            href: /azure/architecture/example-scenario/data/hybrid-etl-with-adf?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 透過 Azure Stack Edge 在邊緣部署 AI 和機器學習服務
+            href: /azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Logic Apps 的內部部署資料閘道
+            href: /azure/architecture/hybrid/gateway-logic-apps?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 管理性
+        items:
+          - name: 管理已啟用 Azure Arc 的伺服器設定
+            href: /azure/architecture/hybrid/azure-arc-hybrid-config?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式環境中的 Azure 自動化
+            href: /azure/architecture/hybrid/azure-automation-hybrid?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 備份 Azure Stack Hub 上的檔案和應用程式
+            href: /azure/architecture/hybrid/azure-stack-backup?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure 自動化更新管理
+            href: /azure/architecture/hybrid/azure-update-mgmt?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式可用性和效能監控
+            href: /azure/architecture/hybrid/hybrid-perf-monitoring?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 透過 Windows Admin Center 管理混合式 Azure 工作負載
+            href: /azure/architecture/hybrid/hybrid-server-os-mgmt?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 適用於 Kubernetes 叢集的 Azure Arc 混合式管理和部署
+            href: /azure/architecture/hybrid/arc-hybrid-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Hub 虛擬機器的嚴重損壞修復
+            href: /azure/architecture/hybrid/azure-stack-vm-dr?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 跨雲端規模調整
+            href: /azure/architecture/solution-ideas/articles/cross-cloud-scaling?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 網路
+        items:
+          - name: 將內部部署網路連接到 Azure
+            href: /azure/architecture/reference-architectures/hybrid-networking/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 透過 Express Route 連接
+            href: /azure/architecture/reference-architectures/hybrid-networking/expressroute?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 透過 VPN 閘道連接
+            href: /azure/architecture/reference-architectures/hybrid-networking/vpn?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 含 VPN 容錯移轉的 ExpressRoute
+            href: /azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 使用 Azure 網路介面卡的獨立伺服器連線
+            href: /azure/architecture/hybrid/azure-network-adapter?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 混合式 DNS 解決方案
+            href: /azure/architecture/hybrid/hybrid-dns-infra?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 身分識別
+        items:
+          - name: 混合式 Active Directory (AD) 選項
+            href: /azure/architecture/reference-architectures/identity/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 整合 Active Directory 與 Azure AD
+            href: /azure/architecture/reference-architectures/identity/azure-ad?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ' (AD FS) 擴充 Active Directory 與 AD Federation Services'
+            href: /azure/architecture/reference-architectures/identity/adfs?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ' (AD DS) 擴充 Active Directory 與 AD 網域服務'
+            href: /azure/architecture/reference-architectures/identity/adds-forest?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Hub 身分識別整合
+            href: /azure/architecture/solution-ideas/articles/hybrid-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 安全性
+        items:
+          - name: 使用 Azure 安全性中心和 Azure Sentinel 的混合式安全性監視
+            href: /azure/architecture/hybrid/hybrid-security-monitoring?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 使用 Azure 安全性中心和 Azure Sentinel 的混合式安全性監視
+            href: /azure/architecture/solution-ideas/articles/devsecops-in-azure?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 環境整備
+        items:
+          - name: 混合式檔案服務
+            href: /azure/architecture/hybrid/hybrid-file-services?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure 企業雲端檔案共用
+            href: /azure/architecture/hybrid/azure-files-private?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 在混合式環境中使用 Azure 檔案共用
+            href: /azure/architecture/hybrid/azure-file-share?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 適用於企業的 FSLogix
+            href: /azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 適用於災害復原的 Azure Stack 延展式叢集
+            href: /azure/architecture/hybrid/azure-stack-hci-dr?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 適用於遠端辦公室和分支的 Azure Stack
+            href: /azure/architecture/hybrid/azure-stack-robo?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: 最佳作法
+    items:
+      - name: 上線
+        items:
+          - name: Azure
+            items:
+              - name: 具有 ARM 範本的 Azure Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arm-template-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 具有 ARM 範本的 Azure Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arm-template-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 內部部署-本機資料中心
+            items:
+              - name: 使用 shell 腳本的 Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/onboard-server-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 PowerShell 的 Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/onboard-server-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 Vagrant 的 Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/local-vagrant-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 具有 Vagrant 的 Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/local-vagrant-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: VMware
+            items:
+              - name: 建立適用于 Ubuntu 的 VM 範本
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-ubuntu-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 建立適用于 Windows 的 VM 範本
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-windows-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 VMware 的 Linux PowerCLI
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-scaled-powercli-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 VMware PowerCLI 的 Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-scaled-powercli-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 Terraform 的 Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 具有 Terraform 的 Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-terraform-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: AWS-Amazon Web Services
+            items:
+              - name: 使用 Terraform AWS Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: AWS Linux 與 Terraform
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-terraform-al2?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Ansible 的 AWS EC2 上架
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-scale-ansible?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: GCP-Google 雲端提供者
+            items:
+              - name: 使用 Terraform GCP Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/gcp-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: 使用 Terraform GCP 視窗
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/gcp-terraform-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 操作
+        items:
+          - name: 清查和標記資產
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-inventory-tagging?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 修補和更新管理
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-update-management?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 套用原則
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-policies-mma?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 收集和偵測安全性資料
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-security-center?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: 調查及回應安全性威脅
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-azure-sentinel?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: '使用 Microsoft Monitoring Agent 管理 Vm (MMA) '
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-vm-extension-mma?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: MMA 的調整規模設定
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-vm-extension-custom-script?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: 精選 Azure 產品
+    items:
+      - name: 所有混合式和多重雲端產品
+        href: /hybrid/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Arc
+        href: /azure/azure-arc/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Stack HCI
+        href: /azure-stack/hci/overview#azure-stack-hub?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Modular Data Center
+        href: /azure-stack#azure-stack-hub?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Stack HCI
+        href: /azure-stack#azure-stack-hci?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure IoT Edge
+        href: /azure/iot-edge/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Sphere
+        href: /azure-sphere?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Windows for IoT
+        href: /windows/iot-core/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 虛擬 WAN
+        href: /azure/virtual-wan/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: ExpressRoute
+        href: /azure/expressroute/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: VPN 閘道
+        href: /azure/vpn-gateway/vpn-gateway-about-vpngateways?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure 防火牆
+        href: /azure/firewall/overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: 學習模組
+    items:
+      - name: 混合式雲端
+        items:
+          - name: Azure 混合式雲端服務簡介
+            href: /learn/modules/intro-to-azure-hybrid-services/
+          - name: 在 Azure 上設計混合式網路架構
+            href: /learn/modules/design-a-hybrid-network-architecture/
+          - name: 實作混合式網路基礎結構
+            href: /learn/modules/implement-hybrid-network-infrastructure/
+      - name: Azure Arc
+        items:
+          - name: Azure Arc 簡介
+            href: /learn/modules/intro-to-azure-arc/
+          - name: 適用於伺服器的 Arc
+            href: /learn/modules/intro-to-arc-for-servers/
+          - name: Kubernetes 的弧線
+            href: /learn/modules/intro-to-arc-enabled-kubernetes/
+          - name: 混合式基礎結構的 Arc
+            href: /learn/paths/manage-hybrid-infrastructure-with-azure-arc/
+          - name: 混合式工作負載的 Arc
+            href: /learn/modules/manage-hybrid-workloads-azure-arc/
+      - name: Azure Stack
+        items:
+          - name: Azure Stack 簡介
+            href: /learn/modules/intro-to-azure-stack/
+          - name: Azure Stack HCI 基礎
+            href: /learn/paths/azure-stack-hci-foundations/
+          - name: Azure Stack HCI 部署
+            href: /learn/modules/azure-stack-hci-plan-deploy/
+          - name: Azure Stack HCI 技術
+            href: /learn/modules/azure-stack-hci-technologies/
+          - name: Azure Stack HCI-Arc 整合
+            href: /learn/modules/stack-hci-arc-integration/

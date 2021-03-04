@@ -1,0 +1,381 @@
+# docsTest:ignore "NET Core" "Cloud Operating Model" "Virtual Datacenter" Framework app
+items:
+  - name: 新式容器-適用于 Azure 的 Microsoft 雲端採用架構
+    href: index.md
+    pdf_name: Modern containers - Microsoft Cloud Adoption Framework for Azure
+  - name: 策略性影響
+    href: strategy.md
+  - name: 技術規劃
+    href: plan.md
+  - name: 準備您的環境
+    href: ready.md
+  - name: 遷移至新式容器
+    href: migrate.md
+  - name: 使用新式容器創新
+    href: /azure/architecture/reference-architectures/containers/aks-start-here?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+  - name: 管理您的組合
+    href: govern.md
+  - name: 管理您的組合
+    href: manage.md
+  - name: 架構完善的混合式工作負載
+    items:
+      - name: 應用程式開發人員的最佳作法
+        href: /azure/aks/developer-best-practices-resource-management?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Pod 安全性的最佳做法
+        href: /azure/aks/developer-best-practices-pod-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+  - name: 架構
+    items:
+      - name: AKS 基準叢集
+        href: /azure/architecture/reference-architectures/containers/aks/secure-baseline-aks?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: AKS 上的微服務架構
+        href: /azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 使用 AKS 和 Azure DevOps 的微服務
+        href: /azure/architecture/solution-ideas/articles/microservices-with-aks?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 適用於 AKS 的安全 DevOps
+        href: /azure/architecture/solution-ideas/articles/secure-devops-for-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 建立 telehealth 系統
+        href: /azure/architecture/example-scenario/apps/telehealth-system?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 容器型工作負載的 CI/CD 管線
+        href: /azure/architecture/example-scenario/apps/devops-with-aks?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+  - name: 最佳作法
+    items:
+      - name: 概觀
+        href: /azure/architecture/browse/hybrid_index?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 多租用戶
+        items:
+          - name: 叢集隔離
+            href: /azure/aks/operator-best-practices-cluster-isolation?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 基本排程器功能
+            href: /azure/aks/operator-best-practices-scheduler?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 進階排程器功能
+            href: /azure/aks/operator-best-practices-advanced-scheduler?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 驗證和授權
+            href: /azure/aks/operator-best-practices-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 安全性
+        items:
+          - name: 叢集安全性和升級
+            href: /azure/aks/operator-best-practices-cluster-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 容器映射管理與安全性
+            href: /azure/aks/operator-best-practices-container-image-management?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Pod 安全性
+            href: /azure/aks/developer-best-practices-pod-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 網路和儲存體
+        items:
+          - name: 網路連線
+            href: /azure/aks/operator-best-practices-network?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 儲存體和備份
+            href: /azure/aks/operator-best-practices-storage?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: BCDR
+        items:
+          - name: 商務持續性和災害復原
+            href: /azure/aks/operator-best-practices-multi-region?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: AKS day-2 作業指南
+        items:
+          - name: 簡介
+            href: /azure/architecture/operator-guides/aks/day-2-operations-guide?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 分級做法
+            items:
+              - name: 總覽
+                href: /azure/architecture/operator-guides/aks/aks-triage-practices?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 1- 叢集健康情況
+                href: /azure/architecture/operator-guides/aks/aks-triage-cluster-health?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 2- 節點和 Pod 健康情況
+                href: /azure/architecture/operator-guides/aks/aks-triage-node-health?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 3- 工作負載部署
+                href: /azure/architecture/operator-guides/aks/aks-triage-deployment?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 4- 許可控制器
+                href: /azure/architecture/operator-guides/aks/aks-triage-controllers?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 5- 容器登錄連線能力
+                href: /azure/architecture/operator-guides/aks/aks-triage-container-registry?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 修補和升級指引
+            href: /azure/architecture/operator-guides/aks/aks-upgrade-practices?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 常見問題
+            href: /azure/aks/troubleshooting?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+            maintainContext: true
+      - name: 移轉
+        items:
+          - name: 遷移至 AKS
+            href: /azure/aks/aks-migration?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+            maintainContext: true
+          - name: Spring Boot
+            href: /azure/developer/java/migration/migrate-spring-boot-to-azure-kubernetes-service
+            maintainContext: true
+          - name: Tomcat
+            href: /azure/developer/java/migration/migrate-tomcat-to-containers-on-azure-kubernetes-service
+            maintainContext: true
+          - name: Wildfly
+            href: /azure/developer/java/migration/migrate-wildfly-to-wildfly-on-azure-kubernetes-service
+            maintainContext: true
+          - name: WebLogic
+            href: /azure/developer/java/migration/migrate-weblogic-to-wildfly-on-azure-kubernetes-service
+            maintainContext: true
+          - name: WebSphere
+            href: /azure/developer/java/migration/migrate-websphere-to-wildfly-on-azure-kubernetes-service
+            maintainContext: true
+          - name: JBoss EAP
+            href: /azure/developer/java/migration/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service
+            maintainContext: true
+      - name: 控管
+        items:
+          - name: 概觀
+            href: /azure/governance/policy/concepts/policy-for-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Azure Kubernetes Service (AKS)
+            href: /azure/aks/intro-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 已啟用 Azure Arc 的 Kubernetes
+            href: /azure/azure-arc/kubernetes/overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: AKS 引擎
+            href: 'https://github.com/Azure/aks-engine/blob/master/docs/README.md'
+          - name: 安全 pod
+            href: /azure/aks/use-pod-security-on-azure-policy?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 保護 pod 之間的流量
+            href: /azure/aks/use-network-policies?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: AKS API 的授權 IP 存取
+            href: /azure/aks/api-server-authorized-ip-ranges?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: RBAC 和 Azure AD 整合
+            href: /azure/aks/azure-ad-rbac?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Azure AD 整合
+            href: /azure/aks/managed-aad?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Kubernetes 中的受控識別
+            href: /azure/aks/use-managed-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立 Azure AD 服務主體
+            href: /azure/aks/kubernetes-service-principal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 使用 Azure AD Kubernetes 整合來存取其他 Azure 資源
+            href: /azure/aks/use-azure-ad-pod-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 適用于 AKS 設定檔存取的 Azure RBAC
+            href: /azure/aks/control-kubeconfig-access?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 清查和可見性
+        items:
+          - name: 概觀
+            href: /azure/azure-monitor/insights/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 啟用監視概觀
+            href: /azure/azure-monitor/insights/container-insights-onboard?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 針對新的 AKS 叢集啟用
+            href: /azure/azure-monitor/insights/container-insights-enable-new-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 針對現有的 AKS 叢集啟用
+            href: /azure/azure-monitor/insights/container-insights-enable-existing-clusters?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 啟用已啟用 Arc 的叢集
+            href: /azure/azure-monitor/insights/container-insights-enable-arc-enabled-clusters?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 針對混合式叢集啟用
+            href: /azure/azure-monitor/insights/container-insights-hybrid-setup?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 針對 Azure Red Hat OpenShift v3 啟用
+            href: /azure/azure-monitor/insights/container-insights-azure-redhat-setup?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 針對 Azure Red Hat OpenShift v4 啟用
+            href: /azure/azure-monitor/insights/container-insights-azure-redhat4-setup?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 作業合規性
+        items:
+          - name: 升級 AKS 叢集
+            href: /azure/aks/upgrade-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 升級節點映射
+            href: /azure/aks/node-image-upgrade?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 流程節點 OS 更新
+            href: /azure/aks/node-updates-kured?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 保護和復原
+        items:
+          - name: 多租使用者和叢集隔離
+            href: /azure/aks/operator-best-practices-cluster-isolation?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 容器映像管理
+            href: /azure/aks/operator-best-practices-container-image-management?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 儲存體和備份
+            href: /azure/aks/operator-best-practices-storage?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 業務持續性和災害復原 (BCDR)
+            href: /azure/aks/operator-best-practices-multi-region?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 一般作業工作
+        items:
+          - name: 基本排程器功能
+            href: /azure/aks/operator-best-practices-scheduler?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 進階排程器功能
+            href: /azure/aks/operator-best-practices-advanced-scheduler?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 驗證和授權
+            href: /azure/aks/operator-best-practices-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 叢集安全性
+            href: /azure/aks/operator-best-practices-cluster-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 網路
+            href: /azure/aks/operator-best-practices-network?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+  - name: 企業規模的結構集
+    items:
+      - name: 適用于 AKS 企業規模案例的建築集
+        href: enterprise-scale-landing-zone.md
+      - name: 身分識別和存取管理
+        href: eslz-identity-and-access-management.md
+      - name: 網路拓樸和連線能力
+        href: eslz-network-topology-and-connectivity.md
+      - name: 管理與監視
+        href: eslz-management-and-monitoring.md
+      - name: 商務持續性和災害復原
+        href: eslz-business-continuity-and-disaster-recovery.md
+      - name: 安全性治理和合規性
+        href: eslz-security-governance-and-compliance.md
+      - name: 平台自動化和 DevOps
+        href: eslz-platform-automation-and-devops.md
+  - name: Azure 容器產品
+    items:
+      - name: 容器產品決策樹
+        href: /azure/architecture/guide/technology-choices/compute-decision-tree?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Kubernetes Service (AKS)
+        items:
+          - name: 概觀
+            href: /azure/aks/intro-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 在 Azure 入口網站中部署 AKS 叢集
+            href: /azure/aks/kubernetes-walkthrough-portal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 使用 ARM 範本部署 AKS 叢集
+            href: /azure/aks/kubernetes-walkthrough-portal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 使用 Helm 開發
+            href: /azure/aks/quickstart-helm?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 封裝和遷移工作負載
+            items:
+              - name: 1 - 準備應用程式供 AKS 使用
+                href: /azure/aks/tutorial-kubernetes-prepare-app?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 2 - 建立容器登錄
+                href: /azure/aks/tutorial-kubernetes-prepare-acr?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 3 - 建立 Kubernetes 叢集
+                href: /azure/aks/tutorial-kubernetes-deploy-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 4 - 執行應用程式
+                href: /azure/aks/tutorial-kubernetes-deploy-application?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 5 - 調整應用程式
+                href: /azure/aks/tutorial-kubernetes-scale?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 6 - 更新應用程式
+                href: /azure/aks/tutorial-kubernetes-app-update?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 7 - 升級叢集
+                href: /azure/aks/tutorial-kubernetes-upgrade-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: 使用 Kubernetes 進行開發
+        items:
+          - name: 概觀
+            href: /visualstudio/containers/overview-local-process-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Bridge to Kubernetes
+            href: /visualstudio/containers/bridge-to-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Bridge to Kubernetes 的運作方式
+            href: /visualstudio/containers/overview-bridge-to-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 設定 Bridge to Kubernetes
+            href: /visualstudio/containers/configure-bridge-to-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: App Service 方案
+        items:
+          - name: 概觀
+            href: /azure/app-service/overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: ASP.NET Core
+            href: /azure/app-service/quickstart-dotnetcore?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: ASP.NET
+            href: /azure/app-service/quickstart-dotnet-framework?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Node.js
+            href: /azure/app-service/quickstart-nodejs?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: PHP
+            href: /azure/app-service/quickstart-php?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Java
+            href: /azure/app-service/quickstart-java?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Python
+            href: /azure/app-service/quickstart-python?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Ruby
+            href: /azure/app-service/quickstart-ruby?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 靜態 HTML 網站
+            href: /azure/app-service/quickstart-html?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: ARM 範本
+            displayName: Resource Manager
+            href: /azure/app-service/quickstart-arm-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 自訂容器
+            href: /azure/app-service/quickstart-custom-container?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 多個容器應用程式
+            href: /azure/app-service/quickstart-multi-container?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Container Instances
+        items:
+          - name: 概觀
+            href: /azure/container-instances/container-instances-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 關於 Azure Container Instances
+            href: /azure/container-instances/container-instances-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署容器執行個體 - CLI
+            href: /azure/container-instances/container-instances-quickstart?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署容器執行個體 - 入口網站
+            href: /azure/container-instances/container-instances-quickstart-portal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署容器執行個體 - PowerShell
+            href: /azure/container-instances/container-instances-quickstart-powershell?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署容器執行個體 - ARM 範本
+            displayName: Resource Manager
+            href: /azure/container-instances/container-instances-quickstart-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署容器執行個體 - Docker CLI
+            href: /azure/container-instances/quickstart-docker-cli?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Batch
+        items:
+          - name: 概觀
+            href: /azure/batch/batch-technical-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 執行 Batch 作業 - CLI
+            href: /azure/batch/quick-create-cli?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 執行 Batch 作業 - 入口網站
+            href: /azure/batch/quick-create-portal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 執行 Batch 作業 - .NET
+            href: /azure/batch/quick-run-dotnet?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 執行 Batch 作業 - Python
+            href: /azure/batch/quick-run-python?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立 Batch 帳戶 - ARM 範本
+            href: /azure/batch/quick-create-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Service Fabric
+        items:
+          - name: Azure Service Fabric
+            href: /azure/service-fabric/service-fabric-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: Service Fabric 受控叢集
+            href: /azure/service-fabric/overview-managed-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: ARM 範本
+            displayName: Resource Manager
+            href: /azure/service-fabric/quickstart-cluster-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 受控叢集
+            href: /azure/service-fabric/quickstart-managed-cluster-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立 .NET 應用程式
+            href: /azure/service-fabric/service-fabric-quickstart-dotnet?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署 Linux 容器應用程式
+            href: /azure/service-fabric/service-fabric-quickstart-containers-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署 Windows 容器應用程式
+            href: /azure/service-fabric/service-fabric-quickstart-containers?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署 Spring Boot 應用程式
+            href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 部署 Reliable Services 應用程式
+            href: /azure/service-fabric/service-fabric-quickstart-java-reliable-services?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Container Registry
+        items:
+          - name: 概觀
+            href: /azure/container-registry/container-registry-intro?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立容器登錄 - CLI
+            href: /azure/container-registry/container-registry-get-started-azure-cli?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立容器登錄 - 入口網站
+            href: /azure/container-registry/container-registry-get-started-portal?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立容器登錄 - PowerShell
+            href: /azure/container-registry/container-registry-get-started-powershell?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立容器登錄 - ARM 範本
+            displayName: Resource Manager
+            href: /azure/container-registry/container-registry-get-started-geo-replication-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 將事件傳送至事件格線 - CLI
+            href: /azure/container-registry/container-registry-event-grid-quickstart?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立並推送 Java 映像 - CLI
+            href: /azure/container-registry/container-registry-java-quickstart?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Red Hat OpenShift
+        items:
+          - name: Azure Red Hat OpenShift (ARO)
+            href: /azure/openshift/intro-openshift?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 建立 ARO 叢集
+            href: /azure/openshift/tutorial-create-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 連接到 ARO 叢集
+            href: /azure/openshift/tutorial-connect-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 刪除 ARO 叢集
+            href: /azure/openshift/tutorial-delete-cluster?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+      - name: Azure Functions
+        items:
+          - name: Azure Functions
+            href: /azure/azure-functions/functions-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+          - name: 在 Visual Studio Code 中建立您的第一個函式
+            items:
+              - name: C#
+                href: /azure/azure-functions/create-first-function-vs-code-csharp?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: Java
+                href: /azure/azure-functions/create-first-function-vs-code-java?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: JavaScript
+                href: /azure/azure-functions/create-first-function-vs-code-node?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: PowerShell
+                href: /azure/azure-functions/create-first-function-vs-code-powershell?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: Python
+                href: /azure/azure-functions/create-first-function-vs-code-python?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: TypeScript
+                href: /azure/azure-functions/create-first-function-vs-code-typescript?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+              - name: 其他 (Go/Rust)
+                href: /azure/azure-functions/create-first-function-vs-code-other?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/aks/toc.json
+  - name: 學習模組
+    items:
+      - name: Azure 混合式雲端服務簡介
+        href: /learn/modules/intro-to-azure-hybrid-services/
+      - name: 在 Azure 上設計混合式網路架構
+        href: /learn/modules/design-a-hybrid-network-architecture/
