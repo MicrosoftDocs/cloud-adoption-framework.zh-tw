@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: bda70153046a2d6f122a5e970a27f724c646c3a6
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 2924bbf984a8ed570f4d139f4a0a3b0ccf28a1e6
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787751"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115453"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure 中的資源存取管理
 
@@ -94,7 +94,7 @@ Azure 角色會指定使用者在特定資源上所採取的一組許可權。 �
 ![Azure 資源原則 ](../../_images/govern/design/governance-1-19.png)
  *圖11： azure 資源原則。*
 
-下一個控制項會檢查要求不超過 [Azure 訂用帳戶限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)。 例如，每個訂用帳戶的資源群組上限為 980 個。 如果在達到限制時收到要求以部署額外的資源群組，則會拒絕該要求。
+下一個控制項會檢查要求不超過 [Azure 訂用帳戶限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)。 例如，每個訂用帳戶的資源群組上限為 980 個。 如果在達到限制時收到要求以部署額外的資源群組，就會遭到拒絕。
 
 ![Azure 資源限制 ](../../_images/govern/design/governance-1-20.png)
  *圖12： azure 資源限制。*

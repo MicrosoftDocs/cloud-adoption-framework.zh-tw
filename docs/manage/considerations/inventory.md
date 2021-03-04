@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1edcdd42d4b635929410a7e54c2f865f8ab4dc60
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2d0ef37f6de87a496383aac321750a0f514ae280
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016267"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114671"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>雲端管理中的清查和可見度
 
@@ -121,7 +121,7 @@ ITSM 整合通常是處理清查和可見度的第一個範例。 當預期的�
 
 企業在單一雲端提供者內可能需要多個租使用者的原因有很多。 在這些情況下，資料集中化是增強管理基準的必要元件，因為它可以讓您在每個租使用者或環境中提供可見度。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 作業合規性是透過套用管理自動化和控制項來建立清查功能。 瞭解 [操作合規性](./operational-compliance.md) 如何對應至您的程式。
 

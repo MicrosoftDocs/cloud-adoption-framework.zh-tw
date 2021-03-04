@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: c8b1c464c268f873f06564d2dd3162c3847380c8
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ca61c0efb127190d263693112d55acd2e2fb959c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116337"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>卓越的雲端中心 (CCoE) 功能
 
@@ -93,7 +93,7 @@ CCoE 的每個成員都是負責瞭解所需的條件約束、風險和防護，
 
 ## <a name="enable-ccoe-success"></a>啟用 CCoE 成功
 
-繼續使用此模型之前，請務必先驗證公司對於成長思維的承受度，並透過釋出集中責任來緩和。 如先前所述，CCoE 的目的是要交換靈活性和速度的控制權。
+繼續進行此模型之前，請務必考慮公司對於成長思維的承受度，並以釋出中央職責來緩和等級。 如先前所述，CCoE 的目的是要交換靈活性和速度的控制權。
 
 這種類型的變更需要時間、實驗和協商。 在此成熟過程中，將會有一些凹凸和設定的支援。 但是，如果小組保持用心，而不是實驗的建議，則提高靈活性、速度和可靠性的機率就很高。 CCoE 成功或失敗的其中一個最大因素就是支援領導和重要的專案關係人。
 

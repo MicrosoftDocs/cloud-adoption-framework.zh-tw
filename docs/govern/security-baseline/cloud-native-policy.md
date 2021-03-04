@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 214d1d21c20d4626aead29f3d0632a5b2ec2bd2b
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 2b69c41c7ba4991c9aad4d0754d9e2fa38653210
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791151"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115317"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
 [安全性基準專業領域](./index.md)是[雲端治理的五個專業領域](../governance-disciplines.md)之一。 此專業領域著重于一般安全性主題，包括保護網路、數位資產和資料。 本文討論安全性基準專業領域的雲端原生範例原則。
 
 > [!NOTE]
-> Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審核。 假設此範例原則將會在嘗試使用它之前，延伸、驗證，並且針對您的公司原則進行測試。 不建議使用此範例原則的任何方式。
+> Microsoft 並未指揮公司或 IT 原則。 本文將協助您準備進行內部原則審核。 假設此範例原則將會針對您的公司原則進行擴充、驗證及測試，然後再嘗試使用它。 不建議使用此範例原則的任何方式。
 
 ## <a name="policy-alignment"></a>原則對齊
 
-此範例原則會會合成雲端原生案例，這表示 Azure 提供的工具和平臺已足夠管理部署中牽涉到的商務風險。 在此案例中，假設簡單的預設 Azure 服務設定提供足夠的資產保護。
+此範例原則會會合成雲端原生案例，這表示 Azure 提供的工具和平臺已足夠管理部署中牽涉到的商務風險。 在此案例中，假設預設 Azure 服務的簡單設定會提供足夠的資產保護。
 
 ## <a name="cloud-security-and-compliance"></a>雲端安全性與合規性
 
@@ -45,7 +45,7 @@ ms.locfileid: "101791151"
 - 及時 (JIT) ，以工作為基礎授與足夠的存取權，以限制公開 overprivileged 的系統管理員認證。
 - 透過 Azure Active Directory 擴充使用者身分識別，以及跨多個環境存取原則。
 
-雖然在安全性基準專業領域的內容中瞭解身分 [識別基準專業](../identity-baseline/index.md) 領域是很重要的，但 [雲端治理的五個專業領域](../index.md) 會將它視為個別的專業領域。
+雖然在安全性基準專業領域的內容中瞭解身分 [識別基準專業](../identity-baseline/index.md) 領域很重要，但 [雲端治理的五個專業領域](../index.md) 會將它視為個別的專業領域。
 
 ### <a name="network-access-policies"></a>網路存取原則
 
@@ -85,7 +85,7 @@ ms.locfileid: "101791151"
 
 使用雲端可減少部分安全性負擔。 Microsoft 提供 Azure 資料中心的實體安全性，並協助保護雲端平台免於基礎結構威脅，例如 DDoS 攻擊。 由於 Microsoft 有數千名網路安全性專家每天處理安全性，因此偵測、預防或緩和網路攻擊的資源很可觀。 事實上，雖然組織想要擔心雲端是否安全，但現在您可以瞭解 Microsoft 的廠商和特殊基礎結構的投資層級（例如 Microsoft）讓雲端比大部分的內部部署資料中心更安全。
 
-即使在雲端原生安全性基準中進行這項投資，建議任何安全性基準原則都可以擴充預設的雲端原生原則。 以下是應該考慮的擴充原則範例，即使是在雲端原生環境中也一樣：
+即使是在雲端原生安全性基準中進行這項投資，建議任何安全性基準原則都要擴充預設的雲端原生原則。 以下是應該考慮的擴充原則範例，即使是在雲端原生環境中也一樣：
 
 - **保護 Vm。** 安全性應該是每個組織的第一優先項目，若要有效率則需要一些事項。 您必須評估您的安全性狀態、防範安全性威脅，然後偵測並快速回應發生的威脅。
 - **保護 VM 內容。** 設定定期自動備份是保護以免發生使用者錯誤的基本要務。 但這還不夠您也必須確定您的備份可從網路攻擊安全地執行，而且在需要時可供使用。

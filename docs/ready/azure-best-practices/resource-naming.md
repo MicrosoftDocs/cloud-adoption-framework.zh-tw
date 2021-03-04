@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: b7ddc0641e1aaecf2828e74234c0daf5c9b1216b
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 5250b4b3876516bbc3239477435cc08adc59494e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786170"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115742"
 ---
 # <a name="define-your-naming-convention"></a>定義您的命名慣例
 
@@ -21,7 +21,7 @@ ms.locfileid: "101786170"
 
 ![Azure 資源名稱的元件](../../_images/ready/resource-naming.png)
 
-_圖1： Azure 資源名稱的元件。_
+*圖1： Azure 資源名稱的元件。*
 
 ## <a name="naming-scope"></a>命名範圍
 
@@ -33,7 +33,7 @@ _圖1： Azure 資源名稱的元件。_
 
 ![Azure 資源名稱的範圍層級](../../_images/ready/resource-naming-scope.png)
 
-_圖2： Azure 資源名稱的範圍層級。_
+*圖2： Azure 資源名稱的範圍層級。*
 
 資源名稱有長度限制。 當您開發命名慣例時，請務必平衡名稱中內嵌的內容及其範圍和長度限制。 如需詳細資訊，請參閱 [Azure 資源的命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)。
 
@@ -76,93 +76,93 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **管理群組** | 營業單位及/或 <br> 環境類型 | _mg- \<business unit> [- \<environment type> ]_ <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
-| **訂用帳戶** | 帳戶/企業合約 | _\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>_ <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
-| **資源群組** | 訂用帳戶 | _rg- \<app&nbsp;or&nbsp;service&nbsp;name> -<訂用帳戶 &nbsp; 類型>-\<###>_ <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-shared-001` <li> `rg-ad-dir-services-shared-001` |
-| **API 管理服務實例** | 全球 | _apim\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> `apim-navigator-prod` |
-| **受控識別** | 資源群組 | _識別碼\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> <li> `id-appcn-keda-prod-eastus2-001` |
+| **管理群組** | 營業單位及/或 <br> 環境類型 | *mg- \<business unit> [- \<environment type> ]* <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
+| **訂用帳戶** | 帳戶/企業合約 | *\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>* <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
+| **資源群組** | 訂用帳戶 | *rg- \<app&nbsp;or&nbsp;service&nbsp;name> -<訂用帳戶 &nbsp; 類型>-\<###>* <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-shared-001` <li> `rg-ad-dir-services-shared-001` |
+| **API 管理服務實例** | 全球 | *apim\<app&nbsp;or&nbsp;service&nbsp;name>* <br><br> `apim-navigator-prod` |
+| **受控識別** | 資源群組 | *識別碼\<app&nbsp;or&nbsp;service&nbsp;name>* <br><br> <li> `id-appcn-keda-prod-eastus2-001` |
 
 ## <a name="example-names-networking"></a>範例名稱：網路
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **虛擬網路** | 資源群組 | _vnet\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
-| **子網路** | 虛擬網路 | _snet-\<subscription>-\<region>-\<###>_ <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
-| **網路介面 (NIC)** | 資源群組 | _nic-< # # >-\<vm&nbsp;name>-\<subscription>-\<###>_ <br><br> <li> `nic-01-dc1-shared-001` <li> `nic-02-vmhadoop1-prod-001` <li> `nic-02-vmtest1-client-001` |
-| **公用 IP 位址** | 資源群組 | _點數\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<region>-\<###>_ <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
-| **負載平衡器** | 資源群組 | _磅\<app&nbsp;name&nbsp;or&nbsp;role>-<environment>-\<###>_ <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
-| **網路安全性群組 (NSG)** | 子網或 NIC | _nsg\<policy&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<###>_ <br><br> <li> `nsg-weballow-001` <li> `nsg-rdpallow-001` <li> `nsg-sqlallow-001` <li> `nsg-dnsblocked-001` |
-| **局域網路閘道** | 虛擬閘道 | _lgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `lgw-shared-eastus2-001` <li> `lgw-prod-westus-001` <li> `lgw-client-eastus2-001` |
-| **虛擬網路閘道** | 虛擬網路 | _vgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
-| **站對站連線** | 資源群組 | _cn----- \<local&nbsp;gateway&nbsp;name>\<virtual&nbsp;gateway&nbsp;name>_ <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-westus-001` |
-| **VPN 連線** | 資源群組 | _cn- \<subscription1> - ---- \<region1>\<subscription2>-\<region2>-_ <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
-| **路由表** | 資源群組 | _往\<route&nbsp;table&nbsp;name>_ <br><br> <li> `route-navigator` <li> `route-sharepoint` |
-| **DNS 標籤** | 全球 | _\<DNS&nbsp;A&nbsp;record&nbsp;for&nbsp;VM>.\<region>.cloudapp.azure.com_ <br><br> <li> `dc1.westus.cloudapp.azure.com` <li> `web1.eastus2.cloudapp.azure.com` |
+| **虛擬網路** | 資源群組 | *vnet\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
+| **子網路** | 虛擬網路 | *snet-\<subscription>-\<region>-\<###>* <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
+| **網路介面 (NIC)** | 資源群組 | *nic-< # # >-\<vm&nbsp;name>-\<subscription>-\<###>* <br><br> <li> `nic-01-dc1-shared-001` <li> `nic-02-vmhadoop1-prod-001` <li> `nic-02-vmtest1-client-001` |
+| **公用 IP 位址** | 資源群組 | *點數\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<region>-\<###>* <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
+| **負載平衡器** | 資源群組 | *磅\<app&nbsp;name&nbsp;or&nbsp;role>-<environment>-\<###>* <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
+| **網路安全性群組 (NSG)** | 子網或 NIC | *nsg\<policy&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<###>* <br><br> <li> `nsg-weballow-001` <li> `nsg-rdpallow-001` <li> `nsg-sqlallow-001` <li> `nsg-dnsblocked-001` |
+| **局域網路閘道** | 虛擬閘道 | *lgw-\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `lgw-shared-eastus2-001` <li> `lgw-prod-westus-001` <li> `lgw-client-eastus2-001` |
+| **虛擬網路閘道** | 虛擬網路 | *vgw-\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
+| **站對站連線** | 資源群組 | *cn----- \<local&nbsp;gateway&nbsp;name>\<virtual&nbsp;gateway&nbsp;name>* <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-westus-001` |
+| **VPN 連線** | 資源群組 | *cn- \<subscription1> - ---- \<region1>\<subscription2>-\<region2>-* <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
+| **路由表** | 資源群組 | *往\<route&nbsp;table&nbsp;name>* <br><br> <li> `route-navigator` <li> `route-sharepoint` |
+| **DNS 標籤** | 全球 | *\<DNS&nbsp;A&nbsp;record&nbsp;for&nbsp;VM>.\<region>.cloudapp.azure.com* <br><br> <li> `dc1.westus.cloudapp.azure.com` <li> `web1.eastus2.cloudapp.azure.com` |
 
 ## <a name="example-names-compute-and-web"></a>範例名稱：計算和 Web
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **虛擬機器** | 資源群組 | _Vm\<policy name or app name>\<###>_ <br><br> <li> `vmnavigator001` <li> `vmsharepoint001` <li> `vmsqlnode001` <li> `vmhadoop001` |
-| **VM 儲存體帳戶** | 全球 | _stvm\<performance type>\<app name or prod name>\<region>\<###>_ <br><br> <li> `stvmstcoreeastus2001` <li> `stvmpmcoreeastus2001` <li> `stvmstplmeastus2001` <li> `stvmsthadoopeastus2001` |
-| **Web 應用程式** | 全球 | _\<app name> - \<environment> - \<###> azurewebsites.net_ <br><br> <li> `app-navigator-prod-001.azurewebsites.net` <li> `app-accountlookup-dev-001.azurewebsites.net` |
-| **函數應用程式** | 全球 | _func- \<app name> - \<environment> - \<###> . azurewebsites.net_ <br><br> <li> `func-navigator-prod-001.azurewebsites.net` <li> `func-accountlookup-dev-001.azurewebsites.net` |
-| **雲端服務** | 全球 | _\<app name> - \<environment> - \<###> cloudapp.net}_ <br><br> <li> `cld-navigator-prod-001.azurewebsites.net` <li> `cld-accountlookup-dev-001.azurewebsites.net` |
-| **通知中樞命名空間** | 全球 | _ntfns-\<app name>-\<environment>_ <br><br> <li> `ntfns-navigator-prod` <li> `ntfns-emissions-dev` |
-| **通知中樞** | 通知中樞命名空間 | _contoso.ntf\<app name>-\<environment>_ <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
+| **虛擬機器** | 資源群組 | *Vm\<policy name or app name>\<###>* <br><br> <li> `vmnavigator001` <li> `vmsharepoint001` <li> `vmsqlnode001` <li> `vmhadoop001` |
+| **VM 儲存體帳戶** | 全球 | *stvm\<performance type>\<app name or prod name>\<region>\<###>* <br><br> <li> `stvmstcoreeastus2001` <li> `stvmpmcoreeastus2001` <li> `stvmstplmeastus2001` <li> `stvmsthadoopeastus2001` |
+| **Web 應用程式** | 全球 | *\<app name> - \<environment> - \<###> azurewebsites.net* <br><br> <li> `app-navigator-prod-001.azurewebsites.net` <li> `app-accountlookup-dev-001.azurewebsites.net` |
+| **函數應用程式** | 全球 | *func- \<app name> - \<environment> - \<###> . azurewebsites.net* <br><br> <li> `func-navigator-prod-001.azurewebsites.net` <li> `func-accountlookup-dev-001.azurewebsites.net` |
+| **雲端服務** | 全球 | *\<app name> - \<environment> - \<###> cloudapp.net}* <br><br> <li> `cld-navigator-prod-001.azurewebsites.net` <li> `cld-accountlookup-dev-001.azurewebsites.net` |
+| **通知中樞命名空間** | 全球 | *ntfns-\<app name>-\<environment>* <br><br> <li> `ntfns-navigator-prod` <li> `ntfns-emissions-dev` |
+| **通知中樞** | 通知中樞命名空間 | *contoso.ntf\<app name>-\<environment>* <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
 
 ## <a name="example-names-databases"></a>範例名稱：資料庫
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **Azure SQL Database 伺服器** | 全球 | _.sql\<app name>-\<environment>_ <br><br> <li> `sql-navigator-prod` <li> `sql-emissions-dev` |
-| **Azure SQL 資料庫** | Azure SQL Database | _sqldb\<database name>-\<environment>_ <br><br> <li> `sqldb-users-prod` <li> `sqldb-users-dev` |
-| **Azure Cosmos DB 資料庫** | 全球 | _cosmos\<app name>-\<environment>_ <br><br> <li> `cosmos-navigator-prod` <li> `cosmos-emissions-dev` |
-| **Azure Cache for Redis 實例** | 全球 | _redis\<app name>-\<environment>_ <br><br> <li> `redis-navigator-prod` <li> `redis-emissions-dev` |
-| **MySQL 資料庫** | 全球 | _mysql\<app name>-\<environment>_ <br><br> <li> `mysql-navigator-prod` <li> `mysql-emissions-dev` |
-| **PostgreSQL 資料庫** | 全球 | _psql\<app name>-\<environment>_ <br><br> <li> `psql-navigator-prod` <li> `psql-emissions-dev` |
-| **Azure SQL 資料倉儲** | 全球 | _sqldw-\<app name>-\<environment>_ <br><br> <li> `sqldw-navigator-prod` <li> `sqldw-emissions-dev` |
-| **SQL Server Stretch Database** | Azure SQL Database | _sqlstrdb-\<app name>-\<environment>_ <br><br> <li> `sqlstrdb-navigator-prod` <li> `sqlstrdb-emissions-dev` |
+| **Azure SQL Database 伺服器** | 全球 | *.sql\<app name>-\<environment>* <br><br> <li> `sql-navigator-prod` <li> `sql-emissions-dev` |
+| **Azure SQL 資料庫** | Azure SQL Database | *sqldb\<database name>-\<environment>* <br><br> <li> `sqldb-users-prod` <li> `sqldb-users-dev` |
+| **Azure Cosmos DB 資料庫** | 全球 | *cosmos\<app name>-\<environment>* <br><br> <li> `cosmos-navigator-prod` <li> `cosmos-emissions-dev` |
+| **Azure Cache for Redis 實例** | 全球 | *redis\<app name>-\<environment>* <br><br> <li> `redis-navigator-prod` <li> `redis-emissions-dev` |
+| **MySQL 資料庫** | 全球 | *mysql\<app name>-\<environment>* <br><br> <li> `mysql-navigator-prod` <li> `mysql-emissions-dev` |
+| **PostgreSQL 資料庫** | 全球 | *psql\<app name>-\<environment>* <br><br> <li> `psql-navigator-prod` <li> `psql-emissions-dev` |
+| **Azure SQL 資料倉儲** | 全球 | *sqldw-\<app name>-\<environment>* <br><br> <li> `sqldw-navigator-prod` <li> `sqldw-emissions-dev` |
+| **SQL Server Stretch Database** | Azure SQL Database | *sqlstrdb-\<app name>-\<environment>* <br><br> <li> `sqlstrdb-navigator-prod` <li> `sqlstrdb-emissions-dev` |
 
 ## <a name="example-names-storage"></a>範例名稱：儲存體
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **儲存體帳戶 (一般用途)** | 全球 | _st\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
-| **儲存體帳戶 (診斷記錄)** | 全球 | _stdiag\<first 2 letters of subscription name and number>\<region>\<###>_ <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
-| **Azure StorSimple** | 全球 | _ssimp\<app name>-\<environment>_ <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
-| **Azure Container Registry** | 全球 | _Acr\<app name>\<environment>\<###>_ <br><br> <li> `acrnavigatorprod001` |
+| **儲存體帳戶 (一般用途)** | 全球 | *st\<storage name>\<###>* <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
+| **儲存體帳戶 (診斷記錄)** | 全球 | *stdiag\<first 2 letters of subscription name and number>\<region>\<###>* <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
+| **Azure StorSimple** | 全球 | *ssimp\<app name>-\<environment>* <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
+| **Azure Container Registry** | 全球 | *Acr\<app name>\<environment>\<###>* <br><br> <li> `acrnavigatorprod001` |
 
 ## <a name="example-names-ai-and-machine-learning"></a>範例名稱： AI 和機器學習
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **Azue 認知搜尋** | 全球 | _srch-\<app name>-\<environment>_ <br><br> <li> `srch-navigator-prod` <li> `srch-emissions-dev` |
-| **Azure 認知服務** | 資源群組 | _齒輪\<app name>-\<environment>_ <br><br> <li> `cog-navigator-prod` <li> `cog-emissions-dev` |
-| **Azure Machine Learning 工作區** | 資源群組 | _mlw-\<app name>-\<environment>_ <br><br> <li> `mlw-navigator-prod` <li> `mlw-emissions-dev` |
+| **Azue 認知搜尋** | 全球 | *srch-\<app name>-\<environment>* <br><br> <li> `srch-navigator-prod` <li> `srch-emissions-dev` |
+| **Azure 認知服務** | 資源群組 | *齒輪\<app name>-\<environment>* <br><br> <li> `cog-navigator-prod` <li> `cog-emissions-dev` |
+| **Azure Machine Learning 工作區** | 資源群組 | *mlw-\<app name>-\<environment>* <br><br> <li> `mlw-navigator-prod` <li> `mlw-emissions-dev` |
 
 ## <a name="example-names-analytics-and-iot"></a>範例名稱：分析和 IoT
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **Azure Data Factory** | 全球 | _放下\<app name>\<environment>_ <br><br> <li> `adf-navigator-prod` <li> `adf-emissions-dev` |
-| **Azure 串流分析** | 資源群組 | _asa\<app name>-\<environment>_ <br><br> <li> `asa-navigator-prod` <li> `asa-emissions-dev` |
-| **Data Lake Analytics 帳戶** | 全球 | _dla\<app name>\<environment>_ <br><br> <li> `dlanavigatorprod` <li> `dlanavigatorprod` |
-| **Data Lake Storage 帳戶** | 全球 | _Dls\<app name>\<environment>_ <br><br> <li> `dlsnavigatorprod` <li> `dlsemissionsdev` |
-| **事件中樞** | 全球 | _evh-\<app name>-\<environment>_ <br><br> <li> `evh-navigator-prod` <li> `evh-emissions-dev` |
-| **HDInsight-HBase 叢集** | 全球 | _hbase\<app name>-\<environment>_ <br><br> <li> `hbase-navigator-prod` <li> `hbase-emissions-dev` |
-| **HDInsight-Hadoop 叢集** | 全球 | _hadoop\<app name>-\<environment>_ <br><br> <li> `hadoop-navigator-prod` <li> `hadoop-emissions-dev` |
-| **HDInsight-Spark 叢集** | 全球 | _大家\<app name>-\<environment>_ <br><br> <li> `spark-navigator-prod` <li> `spark-emissions-dev` |
-| **IoT 中樞** | 全球 | _iot\<app name>-\<environment>_ <br><br> <li> `iot-navigator-prod` <li> `iot-emissions-dev` |
-| **Power BI Embedded** | 全球 | _pbi\<app name>-\<environment>_ <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
+| **Azure Data Factory** | 全球 | *放下\<app name>\<environment>* <br><br> <li> `adf-navigator-prod` <li> `adf-emissions-dev` |
+| **Azure 串流分析** | 資源群組 | *asa\<app name>-\<environment>* <br><br> <li> `asa-navigator-prod` <li> `asa-emissions-dev` |
+| **Data Lake Analytics 帳戶** | 全球 | *dla\<app name>\<environment>* <br><br> <li> `dlanavigatorprod` <li> `dlanavigatorprod` |
+| **Data Lake Storage 帳戶** | 全球 | *Dls\<app name>\<environment>* <br><br> <li> `dlsnavigatorprod` <li> `dlsemissionsdev` |
+| **事件中樞** | 全球 | *evh-\<app name>-\<environment>* <br><br> <li> `evh-navigator-prod` <li> `evh-emissions-dev` |
+| **HDInsight-HBase 叢集** | 全球 | *hbase\<app name>-\<environment>* <br><br> <li> `hbase-navigator-prod` <li> `hbase-emissions-dev` |
+| **HDInsight-Hadoop 叢集** | 全球 | *hadoop\<app name>-\<environment>* <br><br> <li> `hadoop-navigator-prod` <li> `hadoop-emissions-dev` |
+| **HDInsight-Spark 叢集** | 全球 | *大家\<app name>-\<environment>* <br><br> <li> `spark-navigator-prod` <li> `spark-emissions-dev` |
+| **IoT 中樞** | 全球 | *iot\<app name>-\<environment>* <br><br> <li> `iot-navigator-prod` <li> `iot-emissions-dev` |
+| **Power BI Embedded** | 全球 | *pbi\<app name>-\<environment>* <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
 
 ## <a name="example-names-integration"></a>範例名稱：整合
 
 | 資產類型 | 影響範圍 | 格式和範例|
 |--|--|--|
-| **服務匯流排** | 全球 | _sb- \<app name> - \<environment> . servicebus.windows.net_ <br><br> <li> `sb-navigator-prod` <li> `sb-emissions-dev` |
-| **服務匯流排佇列** | 服務匯流排 | _sbq-\<query descriptor>_ <br><br> <li> `sbq-messagequery` |
-| **服務匯流排主題** | 服務匯流排 | _sbt\<query descriptor>_ <br><br> <li> `sbt-messagequery` |
+| **服務匯流排** | 全球 | *sb- \<app name> - \<environment> . servicebus.windows.net* <br><br> <li> `sb-navigator-prod` <li> `sb-emissions-dev` |
+| **服務匯流排佇列** | 服務匯流排 | *sbq-\<query descriptor>* <br><br> <li> `sbq-messagequery` |
+| **服務匯流排主題** | 服務匯流排 | *sbt\<query descriptor>* <br><br> <li> `sbt-messagequery` |
 
 ## <a name="next-steps"></a>下一步
 

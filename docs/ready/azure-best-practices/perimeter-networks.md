@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: 94a76c26b4848fd5bb8b3c45593e7f3365790098
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 755901d562b5a3b460bb7eefe5050fee90818d60
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787309"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115759"
 ---
 # <a name="perimeter-networks"></a>周邊網路
 
@@ -115,7 +115,7 @@ Azure 應用程式閘道 WAF SKU 包含 Web 應用程式防火牆。 此 SKU 會
 [user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
 [network-virtual-appliances]: /azure/architecture/reference-architectures/dmz/nva-ha
 [azure-firewall]: /azure/firewall/overview
-[perimeter-network]: ../../reference/networking-vdc
+[perimeter-network]: ../../reference/networking-vdc.md
 [alb]: /azure/load-balancer/load-balancer-overview
 [ddos]: /azure/ddos-protection/ddos-protection-overview
 [public-ip]: /azure/virtual-network/virtual-network-public-ip-address

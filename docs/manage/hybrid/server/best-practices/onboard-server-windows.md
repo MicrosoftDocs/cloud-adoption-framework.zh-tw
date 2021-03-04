@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 38b5d79919fa8e4f75af0e9f485e5fec32149aeb
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 91bbb5af82efc6e54c414c7a6a9e80a72e06ce2d
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793683"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114331"
 ---
 # <a name="connect-an-existing-windows-server-instance-to-azure-arc"></a>將現有的 Windows Server 實例連線至 Azure Arc
 
@@ -61,7 +61,7 @@ ms.locfileid: "101793683"
 
     ![Azure 入口網站中空白資源群組的螢幕擷取畫面。](./media/onboard-server/windows-resource-group.png)
 
-4. 下載 [`az-connect-win`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_win.ps1) PowerShell 腳本。
+4. 下載 [`az_connect_win.ps1`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_win.ps1) PowerShell 腳本。
 
 5. 根據您的環境變更環境變數，並將腳本複製到指定的電腦。
 
@@ -73,11 +73,11 @@ ms.locfileid: "101793683"
 
 ![[Azcmagent connect] 命令的螢幕擷取畫面。](./media/onboard-server/azcmagent.png)
 
-![' Az-connect ' Windows 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-windows-2.png)
+![「az_connect_win.ps1」 Windows 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-windows-2.png)
 
 完成時，您將會在資源群組內以新的 Azure Arc 資源連接到您的 Windows Server 實例。
 
-![執行「az_connect」 Windows 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-windows.png)
+![執行「az_connect_win.ps1」 Windows 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-windows.png)
 
 ![Azure 入口網站中已啟用 Azure Arc 資源的螢幕擷取畫面。](./media/onboard-server/windows-resource.png)
 

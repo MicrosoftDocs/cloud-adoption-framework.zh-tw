@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 8fa6f164cea1a5382a2a6591052936cb18a76784
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 907d88b324c51905062d9035bd7d1554f2016294
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792749"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115045"
 ---
 # <a name="responsible-and-trusted-ai"></a>負責任和受信任的 AI
 

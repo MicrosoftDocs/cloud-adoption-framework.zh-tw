@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: b6ad43c6c0f918dd07b5923dedadcfdf765c4fdb
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e2b2eb1530b206615cfef38eb7c5562998b0c813
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016199"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114637"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>雲端管理中的保護與復原
 
@@ -57,7 +57,7 @@ IT 環境中大部分的工作負載都支援特定的商務或技術程式。 �
 
 資料是數位經濟中最有價值的資產。 更有效地保護和復原資料的能力是最常見的增強基準。 針對生產工作負載所需的資料，可能會直接等同于資料遺失，以因應收益或失去獲利。 我們通常會建議雲端管理小組提供支援常見資料平臺的增強式管理基準層級。
 
-在雲端管理團隊執行平臺作業之前，其通常是為了支援平臺即服務 (PaaS) 資料平臺的改善作業。 例如，雲端管理小組很容易針對 Azure SQL Database 或 Azure Cosmos DB 的解決方案強制執行較高頻率的備份或多區域複寫。 這麼做可讓開發小組藉由現代化其資料平臺，輕鬆地改善 RPO。
+在雲端管理團隊執行平臺作業之前，其通常是為了支援平臺即服務 (PaaS) 資料平臺的改善作業。 例如，雲端管理小組很容易針對 Azure SQL Database 或 Azure Cosmos DB 解決方案強制執行較高的備份或多區域複寫頻率。 這麼做可讓開發小組藉由現代化其資料平臺，輕鬆地改善 RPO。
 
 若要深入瞭解此思考流程，請參閱 [平臺作業專業領域](./platform.md)。
 
@@ -73,7 +73,7 @@ IT 環境中大部分的工作負載都支援特定的商務或技術程式。 �
 
 如需這個思考流程的詳細資訊，請參閱 [工作負載作業專業領域](./workload.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 符合此管理基準元件之後，小組就可以繼續進行，以避免其 [平臺作業](./platform.md) 和 [工作負載作業](./workload.md)中斷。
 

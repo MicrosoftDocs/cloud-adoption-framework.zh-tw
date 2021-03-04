@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 56210c7fdef90f9ba50378adce35ab7f8a09b3e3
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 255ad6726b06d5f59e17c11851c7822e969c87f5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101795065"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114518"
 ---
 # <a name="manage-azure-policies-and-deploy-the-azure-monitoring-agent-extension-to-azure-arc-linux-and-windows-servers"></a>管理 Azure 原則，並將 Azure monitoring agent 擴充功能部署至 Azure Arc Linux 和 Windows server
 
@@ -35,7 +35,7 @@ ms.locfileid: "101795065"
 - [Vagrant Ubuntu box](./local-vagrant-ubuntu.md)
 - [Vagrant Windows box](./local-vagrant-windows.md)
 
-請參閱 [Azure 監視器支援的作業系統檔](/azure/azure-monitor/insights/vminsights-enable-overview#supported-operating-systems) ，並確保支援您用於這些程式的 vm。 針對 Linux Vm，請檢查 Linux 發行版本和核心，以確定您使用的是支援的設定。
+請參閱 [Azure 監視器支援的作業系統檔](/azure/azure-monitor/vm/vminsights-enable-overview#supported-operating-systems) ，並確保支援您用於這些程式的 vm。 針對 Linux Vm，請檢查 Linux 發行版本和核心，以確定您使用的是支援的設定。
 
 ## <a name="prerequisites"></a>必要條件
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 4da0e4598c91c971a0ed5112b2a3767e272c07a5
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: c577c5c0b0362ff1c8dcc51e38d97d17450bd5bf
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632421"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115419"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "100632421"
 
 Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群組和資源。 下圖顯示這些層級的關聯性。
 
-   ![管理階層關聯性的圖示](./media/organize-resources/scope-levels.png) _圖 1：四個管理範圍層級之間的關聯性。_
+   ![管理階層關聯性的圖示](./media/organize-resources/scope-levels.png) *圖 1：四個管理範圍層級之間的關聯性。*
 
 - **管理群組：** 這些群組是可協助您針對多個訂用帳戶管理存取、原則及合規性的容器。 管理群組內的所有訂用帳戶都會自動繼承套用到管理群組的條件。
 - **訂用帳戶：** 訂用帳戶會以邏輯方式關聯使用者帳戶以及這些使用者帳戶所建立的資源。 每個訂用帳戶均有可供建立和使用的資源數量限制或配額。 組織可以使用訂用帳戶來管理成本以及由使用者、小組或專案所建立的資源。
@@ -86,7 +86,7 @@ Azure 提供四個管理範圍層級：管理群組、訂用帳戶、資源群�
 - [建立您的初始訂用帳戶](../azure-best-practices/initial-subscriptions.md)
 - [建立額外的 Azure 訂用帳戶以調整您的 Azure 環境](../azure-best-practices/scale-subscriptions.md)
 - [組織和管理您的 Azure 訂用帳戶](../azure-best-practices/organize-subscriptions.md)
-- [使用 Azure 管理群組來組織資源](/azure/azure-resource-manager/management-groups-overview)
+- [使用 Azure 管理群組來組織資源](/azure/governance/management-groups/overview)
 - [了解 Azure 中的資源存取管理](../../govern/resource-consistency/resource-access-management.md)
 - [訂用帳戶服務的限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 

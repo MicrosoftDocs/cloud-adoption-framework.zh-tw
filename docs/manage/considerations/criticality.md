@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 3bd66ccd89a150b2719732b558ffa4879162b099
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fdb560227db780e02f5b822685610a594a5fcea4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016539"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114705"
 ---
 # <a name="business-criticality-in-cloud-management"></a>雲端管理的業務重要性
 
@@ -54,7 +54,7 @@ ms.locfileid: "97016539"
 
 首次審核組合中的每個工作負載可能相當耗時。 為了確保這種情況不會封鎖您更廣泛的雲端策略，建議您的小組同意將預設的重要性套用至所有工作負載。
 
-根據上述的重要性層級資料表，我們建議您採用 _中等_ 重要性作為預設值。 這樣做可讓您的雲端策略小組快速找出需要更高層級重要性的工作負載。
+根據上述的重要性層級資料表，我們建議您採用 *中等* 重要性作為預設值。 這樣做可讓您的雲端策略小組快速找出需要更高層級重要性的工作負載。
 
 ## <a name="use-the-template"></a>使用範本
 
@@ -64,7 +64,7 @@ ms.locfileid: "97016539"
 2. 更新工作表或工作表中的每個工作負載 `Example` `Clean Template` ，以反映資料行中的預設重要性 `Criticality` 。
 3. 企業應該輸入正確的值，以反映與預設重要性的任何偏差。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 當您的小組已定義商務重要性之後，您就可以 [計算並記錄商務衝擊](./impact.md)。
 

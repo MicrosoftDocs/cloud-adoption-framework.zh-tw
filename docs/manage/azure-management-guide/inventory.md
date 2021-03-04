@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 633c54091e8fb8f9dd68c80c0492245e91be7e2a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 1df00dd75d5a19488271daae19979473dc95f0b3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790437"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114841"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -29,7 +29,7 @@ ms.locfileid: "101790437"
 | Process | 工具 | 目的 |
 |---|---|---|
 | 監視 Azure 服務的健康情況 | [Azure 服務健康狀態](/azure/service-health/service-health-overview) | Azure 中所執行服務的健康情況、效能和診斷 |
-| 記錄集中化 | [Log Analytics](/azure/azure-monitor/log-query/log-analytics-overview) | 適用於所有可見性用途的集中式記錄 |
+| 記錄集中化 | [Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) | 適用於所有可見性用途的集中式記錄 |
 | 監視集中化 | [Azure 監視器](/azure/azure-monitor/overview) | 操作資料和趨勢的集中監視 |
 | 虛擬機器清查和變更追蹤 | [變更追蹤與詳細目錄](/azure/automation/change-tracking/overview) | 清查 VM 和監視來賓作業系統層級的變更 |
 | 訂用帳戶監視 | [Azure 活動記錄檔](/azure/azure-monitor/essentials/activity-log) | 監視訂用帳戶層級的變更 |

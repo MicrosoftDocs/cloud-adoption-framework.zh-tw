@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 2fc89b406c05c294ea57d917a2cd2d5a6e05c2d1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: fa2fac47eaaefbc90b56683869f7ca5323a6bf59
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792596"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114773"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -39,7 +39,7 @@ Azure 變更追蹤和清查提供混合式環境的設定狀態警示，以及�
 
 ![Azure 入口網站中 Log Analytics 查詢編輯器的螢幕擷取畫面](./media/change-tracking2.png)
 
-此查詢會搜尋檔案內容的變更，這些檔案的路徑包含「主機」一詞。 您也可以藉由變更 path 參數來搜尋特定的檔案。 (例如：`FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
+此查詢會搜尋檔案內容的變更，這些檔案的路徑包含「主機」一詞。 您也可以藉由變更 path 參數來搜尋特定的檔案。 (例如：`FileSystemPath == "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
 
 查詢傳回結果之後，請選取 [ **新增警示規則** ] 以開啟 [警示規則編輯器]。 您也可以透過 Azure 入口網站中的 Azure 監視器來取得此編輯器。
 

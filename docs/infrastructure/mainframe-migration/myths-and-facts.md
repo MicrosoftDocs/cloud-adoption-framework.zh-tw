@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: db3949faf5f4cd954bbc2fd1fc7977a9ffa09172
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5c0a226143f62a08046382d59a58d4b34ca8282c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018732"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115028"
 ---
 <!-- cSpell:ignore chargebacks IPLs -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "97018732"
 
 相較之下，Azure 提供的替代平臺可以傳遞相等的大型主機功能和功能，且成本較低。 此外，在雲端以訂用帳戶為基礎的訂用帳戶型成本模型中，擁有權 (TCO) 的擁有權總成本，遠低於大型主機電腦的成本。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 > [!div class="nextstepaction"]
 > [將從大型主機切換至 Azure](./migration-strategies.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: fdade53cdc4ebbbe437c5a6242cb51d6174124d1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 47ae0478c8e9a793e0d669fb4c938f621042422b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026178"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115402"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>組織和管理多個 Azure 訂用帳戶
 
@@ -23,7 +23,7 @@ ms.locfileid: "97026178"
 
 Azure 管理群組可協助您有效率地管理訂用帳戶的存取、原則和合規性。 每個管理群組都是一個或多個訂用帳戶的容器。
 
-管理群組會以單一階層的方式排列。 您可以在 Azure Active Directory (Azure AD) 租使用者中定義此階層，以符合組織的結構和需求。 最上層稱為「根管理群組」。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
+管理群組會以單一階層的方式排列。 您可以在 Azure Active Directory 中定義此階層， (Azure AD) 租使用者，以符合組織的結構和需求。 最上層稱為「根管理群組」。 您最多可以在階層中定義六個層級的管理群組。 每個訂用帳戶只能包含在一個管理群組中。
 
 Azure 提供四個層級的管理範圍：
 
@@ -40,7 +40,7 @@ Azure 提供四個層級的管理範圍：
 此繼承模型可讓您在階層中排列訂用帳戶，讓每個訂用帳戶遵循適當的原則和安全性控制。
 
 ![組織 Azure 資源的四個範圍層級 ](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
- _圖1：組織 Azure 資源的四個範圍層級。_
+ *圖1：組織 Azure 資源的四個範圍層級。*
 
 根管理群組上的任何存取權或原則指派，都會套用至目錄中的所有資源。 請仔細考慮要在此範圍上定義的項目。 這應該僅包含您必須擁有的指派。
 
@@ -53,7 +53,7 @@ Azure 提供四個層級的管理範圍：
 如果您希望 Azure 環境成長，您應該立即建立生產和非生產的管理群組，並在管理群組層級套用適當的原則和存取控制。 當新的訂用帳戶新增至每個管理群組時，會繼承適當的控制項。
 
 ![管理群組階層的範例 ](../../_images/ready/management-group-hierarchy-v2.png)
- _圖2：管理群組階層的範例。_
+ *圖2：管理群組階層的範例。*
 
 ## <a name="example-use-cases"></a>使用案例範例
 
@@ -67,11 +67,11 @@ Azure 提供四個層級的管理範圍：
 
 請參閱下列資源，以深入瞭解如何組織及管理您的 Azure 資源。
 
-- [使用 Azure 管理群組來組織資源](/azure/governance/management-groups)
+- [使用 Azure 管理群組來組織資源](/azure/governance/management-groups/)
 - [提升存取權以管理所有 Azure 訂用帳戶和管理群組](/azure/role-based-access-control/elevate-access-global-admin)
 - [將 Azure 資源移至另一個資源群組或訂用帳戶](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 部署 Azure 資源時，檢閱並遵循[建議的命名和標記慣例](./naming-and-tagging.md)。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: d2a50dbdd65048aad15fcbd7b1ca9e02d245fe17
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
-ms.translationtype: HT
+ms.openlocfilehash: a89ae92dc9fd682b2a694610b394792361cf6fc0
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713737"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115504"
 ---
 # <a name="manage-access-to-your-azure-environment-with-azure-role-based-access-control"></a>透過 Azure 角色型存取控制來管理對 Azure 環境的存取
 

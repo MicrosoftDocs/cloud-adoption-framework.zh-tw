@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: a1ea6c6d66c6b47377228a1b35f237ccb71fcbdf
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: bee19608b038200fbb4cb0b1418bcfe45385c583
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794801"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114314"
 ---
 # <a name="use-vmware-powercli-to-scale-onboarding-vmware-vsphere-windows-server-virtual-machines-to-azure-arc"></a>使用 VMware PowerCLI 將 VMware vSphere Windows Server 虛擬機器上架到 Azure Arc
 
@@ -65,7 +65,7 @@ ms.locfileid: "101794801"
     ```
 
     例如：
-  
+
     ```console
     az ad sp create-for-rbac -n "http://AzureArcServers" --role contributor
     ```
@@ -91,9 +91,9 @@ ms.locfileid: "101794801"
 
 1. 使用者編輯 `vars.ps1` PowerCLI 腳本。
 
-2. `scale_deploy.ps1`腳本執行將會起始對 vCenter 的驗證，並會掃描 Azure Arc 候選 vm 所在的目標 VM 資料夾，並將 `vars.ps1` 和 `install-azure-arc-agent.ps1` PowerCLI 腳本複製到該 vm 資料夾中的每個 vm 上，位於[此資料夾](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/windows)中的 vm Windows OS。
+2. `scale_deploy.ps1`腳本執行將會起始對 vCenter 的驗證，並會掃描 Azure Arc 候選 vm 所在的目標 VM 資料夾，並將 `vars.ps1` 和 `install_azure_arc_agent.ps1` PowerCLI 腳本複製到該 vm 資料夾中的每個 vm 上，位於[此資料夾](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/windows)中的 vm Windows OS。
 
-3. `install-azure-arc-agent.ps1`PowerCLI 腳本將會在 vm 來賓 OS 上執行，並會安裝已連線到 Azure arc 的電腦代理程式，以便將 VM 上架到 Azure arc
+3. `install-azure_arc_agent.ps1`PowerCLI 腳本將會在 vm 來賓 OS 上執行，並會安裝已連線到 Azure arc 的電腦代理程式，以便將 VM 上架到 Azure arc
 
 ## <a name="predeployment"></a>前置部署
 
@@ -107,7 +107,7 @@ ms.locfileid: "101794801"
 
 ## <a name="deployment"></a>部署
 
-執行 PowerCLI 腳本之前，您必須先設定 *install-azure-arc-agent.ps1* 腳本將使用的 [環境變數](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/windows/vars.ps1)。 這些變數是以您剛才建立的 Azure 服務主體、您的 Azure 訂用帳戶和租使用者，以及 VMware vSphere 認證和資料為基礎。
+執行 PowerCLI 腳本之前，您必須先設定腳本將使用的 [環境變數](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/windows/vars.ps1) `install_arc_agent.ps1` 。 這些變數是以您剛才建立的 Azure 服務主體、您的 Azure 訂用帳戶和租使用者，以及 VMware vSphere 認證和資料為基礎。
 
 1. 使用命令抓取您的 Azure 訂用帳戶識別碼和租使用者識別碼 `az account list`
 

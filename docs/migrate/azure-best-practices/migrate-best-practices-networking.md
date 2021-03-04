@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3170fccd644e59ecac169e92230e12714fd26495
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 89ff7aea421da39aaa5deaffea706324eba2736c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786918"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116456"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -102,7 +102,7 @@ Azure 為虛擬網路提供下列功能：
 **瞭解更多資訊：**
 
 - 瞭解如何 [設計子網](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)。
-- 瞭解 Contoso （虛構公司）如何 [準備其網路基礎結構來進行遷移](/azure/cloud-adoption-framework/migrate/)。
+- 瞭解 Contoso （虛構公司）如何 [準備其網路基礎結構來進行遷移](../../migrate/index.md)。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>最佳做法：設定 DNS 伺服器
 
@@ -122,7 +122,7 @@ Azure 為虛擬網路提供下列功能：
 
 **瞭解更多資訊：**
 
-- 瞭解 [當您使用自己的 DNS 伺服器時的名稱解析](/azure/cloud-adoption-framework/migrate/)。
+- 瞭解 [當您使用自己的 DNS 伺服器時的名稱解析](../../migrate/index.md)。
 - 瞭解 [DNS 命名規則和限制](../../ready/azure-best-practices/naming-and-tagging.md)。
 
 ## <a name="best-practice-set-up-availability-zones"></a>最佳做法：設定可用性區域
@@ -265,7 +265,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
 
 **解決方案：**
 
-若要將兩個辦公室的路由優化，您需要知道哪個前置詞來自 Azure `West US` ，哪些是來自 azure `East US` 。 您可以使用 BGP 社群值來編碼這項資訊。
+若要將兩個辦公室的路由優化，您需要知道哪個前置詞來自 Azure `West US` ，以及哪個前置詞來自 azure `East US` 。 您可以使用 BGP 社群值來編碼這項資訊。
 
 - 您會將唯一的 BGP 社群值指派給每個 Azure 區域。 例如，12076:51004 代表的 `East US` 12076:51006 `West US` 。
 - 您現在已清楚哪個前置詞屬於哪個 Azure 區域，因此可以設定偏好的 ExpressRoute 線路。

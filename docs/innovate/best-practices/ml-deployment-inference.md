@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: b071b904f71644da4c3883f759442230d8716939
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: c6fe231f81324815f8004a6ed3408ab326a6be02
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230312"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115096"
 ---
 # <a name="machine-learning-inference-during-deployment"></a>部署期間的機器學習推斷
 
@@ -42,13 +42,13 @@ ms.locfileid: "99230312"
 
 針對批次推斷，請考慮下列最佳做法：
 
-- **觸發批次評分：** 使用 Azure Machine Learning 管線以及 `ParallelRunStep` Azure Machine Learning 中的功能，來設定排程或事件型自動化。 流覽至 AI 節目以[使用 Azure Machine Learning `ParallelRunStep` 執行批次推斷](https://channel9.msdn.com/Shows/AI-Show/How-to-do-Batch-Inference-using-AML-ParallelRunStep)，並深入瞭解此程式。
+- **觸發批次評分：** 使用 azure machine Learning 管線和 `ParallelRunStep` Azure Machine learning 中的功能，來設定排程或事件型自動化。 流覽至 AI 節目，以[使用 Azure Machine Learning `ParallelRunStep` 執行批次推斷](https://channel9.msdn.com/Shows/AI-Show/How-to-do-Batch-Inference-using-AML-ParallelRunStep)，並深入瞭解該流程。
 
 - **Batch 推斷的計算選項：** 由於批次推斷程式不會持續執行，因此建議您自動啟動、停止及調整可重複使用的叢集，以處理各種工作負載。 不同的模型需要不同的環境，而且您的解決方案必須能夠部署特定的環境，並在推斷結束時將其移除，以供下一個模型使用計算。 請參閱下列決策樹，以找出適合您模型的計算實例：
 
   [![計算決策樹的圖表。](./media/compute-decision-tree.png)](./media/compute-decision-tree.png#lightbox)
 
-- **執行批次推斷：** Azure 支援批次推斷的多項功能。 其中一項功能是 `ParallelRunStep` Azure Machine Learning，可讓客戶從儲存在 Azure 中的數 tb 的結構化或非結構化資料中得到見解。 `ParallelRunStep` 提供現成可用的平行處理，並可在 Azure Machine Learning 管線內運作。
+- **執行批次推斷：** Azure 支援批次推斷的多項功能。 `ParallelRunStep`Azure Machine Learning 中的一項功能，可讓客戶從儲存在 azure 中的數 tb 的結構化或非結構化資料獲得見解。 `ParallelRunStep` 提供現成的平行處理原則，並可在 Azure Machine Learning 管線內運作。
 
 - **批次推斷挑戰：** 雖然批次推斷是在生產環境中使用和部署模型較簡單的方式，但它的確有選取的挑戰：
 
@@ -66,7 +66,7 @@ ms.locfileid: "99230312"
 
 - **即時推斷的挑戰：** 延遲和效能需求讓您的模型更複雜的即時推斷架構。 系統可能需要以100毫秒或更短的時間回應，在這段期間，它需要取出資料、執行推斷、驗證和儲存模型結果、執行任何必要的商務邏輯，並將結果傳回給系統或應用程式。
 
-- **即時推斷的計算選項：** 實行即時推斷的最佳方式是將模型以容器形式部署至 Docker 或 AKS 叢集，並將它公開為具有 REST API 的 web 服務。 如此一來，模型就會在自己的隔離環境中執行，而且可以像任何其他 web 服務一樣進行管理。 然後可以使用 Docker/AKS 功能來管理、監視、調整規模等等。 模型可以部署在內部部署、雲端或邊緣。 上述計算決策會概述即時推斷。
+- **即時推斷的計算選項：** 實行即時推斷的最佳方式是將模型以容器形式部署至 Docker 或 AKS 叢集，並使用 REST API 將其公開為 web 服務。 如此一來，模型就會在自己的隔離環境中執行，而且可以像任何其他 web 服務一樣進行管理。 然後可以使用 Docker/AKS 功能來管理、監視、調整規模等等。 模型可以部署在內部部署、雲端或邊緣。 上述計算決策會概述即時推斷。
 
 - **Dns 多區域性部署和高可用性：** 區域部署和高可用性架構必須在即時推斷案例中考慮，因為延遲和模型的效能將是解決問題的關鍵。 若要減少 dns 多區域性部署中的延遲，建議將模型盡可能靠近取用點。 模型和支援的基礎結構應遵循企業的高可用性和 DR 原則和策略。
 
@@ -104,8 +104,8 @@ ms.locfileid: "99230312"
 
 ## <a name="next-steps"></a>下一步
 
-探索下列資源以深入瞭解推斷與 Azure Machine Learning：
+探索下列資源以深入瞭解如何使用 Azure Machine Learning 推斷：
 
 - [建置 Azure Machine Learning 管線進行批次評分](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)
-- [使用 Azure Machine Learning 表設計工具執行批次預測](/azure/machine-learning/how-to-run-batch-predictions-designer)
+- [使用 Azure Machine Learning 設計工具執行批次預測](/azure/machine-learning/how-to-run-batch-predictions-designer)
 - [Azure Machine Learning 中的批次推斷](https://techcommunity.microsoft.com/t5/azure-ai/batch-inference-in-azure-machine-learning/ba-p/1417010#:~:text=%20Batch%20Inference%20in%20Azure%20Machine%20Learning%20,Learning%20Pipelines.%20ParallelRunStep%20is%20available%20through...%20More%20)

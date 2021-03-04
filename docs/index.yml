@@ -5,19 +5,19 @@ brand: azure
 metadata:
   title: 適用於 Azure 的 Microsoft 雲端採用架構
   description: 雲端採用架構是文件、實作指引、最佳做法和工具的集合，可加速型您的雲端採用旅程。
-  ms.service: cloud-adoption-framework
-  ms.topic: hub-page
   services: cloud-adoption-framework
-  ms.subservice: overview
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: dad20e2b85cd94c038e3cb2202a849ac5baf0637
-  ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+  ms.topic: hub-page
+  ms.service: cloud-adoption-framework
+  ms.subservice: overview
+  ms.openlocfilehash: 2785c4e826facd9277c2b861f9f4b80976a6a6eb
+  ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100492404"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102115215"
 highlightedContent:
   items:
   - title: 開始您的雲端旅程
@@ -26,7 +26,7 @@ highlightedContent:
   - title: 尋找雲端採用工具和範本
     itemType: download
     url: ./reference/tools-templates.md
-  - title: 什麼是雲端採用架構
+  - title: 什麼是雲端採用架構？
     itemType: overview
     url: ./overview.md
   - title: 雲端採用架構中的新功能

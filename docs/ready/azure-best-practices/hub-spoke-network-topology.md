@@ -2,23 +2,23 @@
 title: 中樞和輪輻網路拓撲
 description: 深入瞭解中樞和輪輻網路拓撲，以更有效率地管理常見的通訊或安全性需求。
 author: tracsman
-manager: rossort
 ms.author: brblanch
+manager: rossort
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: 0e5e7d073ddfa8942a12fdfeb5056082c93c736b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 18d592d56d26bc3d5478f4733e95b96054170b21
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026195"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115858"
 ---
 # <a name="hub-and-spoke-network-topology"></a>中樞和輪輻網路拓撲
 
-_中樞和輪輻_ 是一種網路模型，可有效率地管理常見的通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
+*中樞和輪輻* 是一種網路模型，可有效率地管理常見的通訊或安全性需求。 這也有助於避開 Azure 訂用帳戶的限制。 此模型可解決下列問題：
 
 - **節省成本和管理效率。** 將可由多個工作負載共用的服務 (例如網路虛擬設備 (NVA) 和 DNS 伺服器) 集中在單一位置，讓 IT 能夠將多餘的資源和管理投入量降至最低。
 - **克服訂用帳戶限制。** 大型雲端式工作負載可能需要使用超過單一 Azure 訂用帳戶所允許的資源。 將工作負載虛擬網路從不同的訂用帳戶對等互連到中央中樞，即可克服這些限制。 如需詳細資訊，請參閱 [Azure 訂](/azure/azure-resource-manager/management/azure-subscription-service-limits)用帳戶限制。
@@ -36,7 +36,7 @@ _中樞和輪輻_ 是一種網路模型，可有效率地管理常見的通訊�
 
 ![中樞和輪輻網路拓撲的範例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
 
-_圖1：中樞和輪輻網路拓撲的範例。_
+*圖1：中樞和輪輻網路拓撲的範例。*
 
 如圖所示，Azure 支援兩種類型的中樞和輪輻設計。 它支援通訊、共用資源和集中式安全性原則 (標示為 `VNet hub` 圖表) ，或根據 Azure 虛擬 WAN (標示為 Azure 虛擬 WAN 的設計， `Virtual WAN` 適用于大規模分支對分支和分支對 Azure 通訊的圖表) 。
 
@@ -67,7 +67,7 @@ _圖1：中樞和輪輻網路拓撲的範例。_
 
 ![中樞和輪輻叢集](../../_images/azure-best-practices/network-hub-spokes-cluster.png)
 
-_圖2：中樞和輪輻的群集。_
+*圖2：中樞和輪輻的群集。*
 
 導入多個中樞會增加系統的成本和管理額外負荷。 此狀況只能從使用者效能或災害復原的延展性、系統限制或備援和區域複寫來調整。 在需要多個中樞的案例中，所有中樞都應該致力於提供一組相同的易操作服務。
 
@@ -81,6 +81,6 @@ _圖2：中樞和輪輻的群集。_
 
 ![連線到中樞及彼此連線的輪輻](../../_images/azure-best-practices/network-spoke-to-spoke.png)
 
-_圖3：輪輻彼此連接，以及一個中樞。_
+*圖3：輪輻彼此連接，以及一個中樞。*
 
 支點也可以與作為中樞的支點互相連接。 這種方法會建立雙層階層：較高層級的輪輻 (層級 0) 會變成階層中較低輪輻 (層級 1) 的中樞。 中樞和輪輻執行的輪輻必須將流量轉送到中央中樞，讓流量可以傳輸至內部部署網路或公用網際網路的目的地。 具有兩層中樞的架構引進複雜路由，以移除簡單中樞和輪輻關聯性的優點。

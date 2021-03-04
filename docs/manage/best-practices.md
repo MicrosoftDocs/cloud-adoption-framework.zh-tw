@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 58c57b91518039448da5ef79d8a2c712fdc74c36
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d14e1aa0df8e8923a0ad7611fde658ee1673c2d1
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016590"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114739"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>在雲端中建立營運管理實務
 
@@ -24,7 +24,7 @@ ms.locfileid: "97016590"
 新式作業管理解決方案會建立作業的多重雲端觀點。 透過下列最佳做法管理的資產，可能存在於雲端、現有資料中心，甚至是在競爭雲端提供者中。 目前，架構包含兩個最佳作法參考，以引導雲端中的作業管理成熟度：
 
 - [Azure 伺服器管理](./azure-server-management/index.md)：加入管理作業所需的雲端原生工具和服務的上線指南。
-- [混合式監視](./monitor/index.md)：許多客戶已在 System Center Operations Manager 中進行大量投資。 針對這些客戶，此混合式監視指南可以協助他們比較和對比雲端原生報表工具與 Operations Manager 工具。 這種比較可讓您更輕鬆地決定要用於作業管理的工具。
+- [混合式監視](./monitor/index.md)：許多客戶已在 System Center Operations Manager 中進行大量投資。 對於這些客戶而言，這份混合式監視指南可以協助他們比較和對比雲端原生報表工具與 Operations Manager 工具。 這種比較可讓您更輕鬆地決定要用於作業管理的工具。
 
 ## <a name="cloud-operations"></a>雲端作業
 
@@ -39,9 +39,9 @@ ms.locfileid: "97016590"
 - **清查和可見度：** 作業管理至少需要一種清查資產的方法，並為每個資產的執行狀態建立可見度。
 - **營運合規性：** 定期管理資產的設定、調整大小、成本和效能，是維持效能預期的關鍵。
 - **保護和復原：** 將作業中斷和加速復原降至最低有助於企業避免效能損失和負面的收入衝擊。 偵測和復原是這個專業領域的重要層面。
-- **平臺作業：** 所有的 IT 環境都包含一組常用的平臺。 這些平臺可能包含資料存放區，例如 SQL Server 或 Azure HDInsight。 其他常見的平臺可能包含容器解決方案，例如 Azure Kubernetes Service (AKS) 。 無論平臺為何，平臺作業成熟度都著重于根據如何部署、設定及使用工作負載的一般平臺來自訂作業。
+- **平臺作業：** 所有的 IT 環境都包含一組常用的平臺。 這些平臺可能包含 SQL Server 或 Azure HDInsight 等資料存放區。 其他常見的平臺可能包含容器解決方案，例如 Azure Kubernetes Service (AKS) 。 無論平臺為何，平臺作業成熟度都著重于根據如何部署、設定及使用工作負載的一般平臺來自訂作業。
 - **工作負載作業：** 在最高層級的作業成熟度，雲端營運團隊可以調整重要工作負載的作業。 針對這些工作負載，可用資料可以根據工作負載的使用量，協助自動化補救、調整大小或保護工作負載。
 
-其他指引（例如 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework/)）可協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
+其他指引（例如 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)）可協助您在先前所述的專業領域中，針對每個工作負載進行詳細的架構決策。
 
 雲端採用架構的這一節將會以上述每個主題為依據，以協助提升組織內成熟的雲端作業。

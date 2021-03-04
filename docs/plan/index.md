@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: d58f21be2eb55b58e9c420de66da39a3d2d32ecc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 78fb222c839efacfcb23338987b6912d1643878b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026280"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116303"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>開發雲端採用方案
 

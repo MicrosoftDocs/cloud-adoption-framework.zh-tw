@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 8a60f40671b87b728065daf72ef98535e24c26d7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 527db15029a897f0c4d66b9b1a4aff28d3b60305
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026161"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115997"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>雲端採用方案中的時程表
 
@@ -29,8 +29,8 @@ ms.locfileid: "97026161"
 
 若為任何層級的資料細微性，請使用反覆運算的最後一天做為每個里程碑的日期。 這會將工作負載採用的完成作業與特定日期結合。 您可以使用試算表或依序的專案管理工具（例如 Microsoft Project）來追蹤日期。
 
-## <a name="delivery-plans-in-azure-devops"></a>Azure DevOps 中的傳遞計畫
+## <a name="delivery-plans-in-azure-devops"></a>Azure DevOps 中的傳遞方案
 
 <!-- docutune:casing "Microsoft Delivery Plans" -->
 
-如果您使用 Azure DevOps 來管理您的雲端採用方案，請考慮使用 [Microsoft 傳遞方案擴充](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans)功能。 此延伸模組可以快速建立以反復專案和發行指派為基礎之時程表的視覺標記法。
+如果您是使用 Azure DevOps 來管理您的雲端採用方案，請考慮使用 [Microsoft 傳遞方案擴充](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans)功能。 此延伸模組可以快速建立以反復專案和發行指派為基礎之時程表的視覺標記法。

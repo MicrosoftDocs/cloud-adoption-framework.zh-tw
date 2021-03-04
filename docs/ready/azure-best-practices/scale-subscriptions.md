@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f35c579c3816b61a0dff3650a6322a2807d8f721
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: ba0f6a8c3c05ddfc2c265c028f13dcdae04c224f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632438"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115691"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>建立額外的訂用帳戶以調整 Azure 環境
 
@@ -55,7 +55,7 @@ ms.locfileid: "100632438"
 - 識別負責建立新訂閱的人員。
 - 決定預設訂用帳戶中有哪些資源類型可供使用。
 - 決定所有標準訂用帳戶的型態。 考慮包括 Azure RBAC 存取、原則、標記和基礎結構資源。
-- 可能的話，請以程式設計方式透過服務主體 [建立新的訂閱](/azure/cost-management-billing/manage/programmatically-create-subscription) 。 您必須將 [許可權授與服務主體](/azure/azure-resource-manager/grant-access-to-create-subscription) ，才能建立訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
+- 可能的話，請以程式設計方式透過服務主體 [建立新的訂閱](/azure/cost-management-billing/manage/programmatically-create-subscription) 。 您必須將 [許可權授與服務主體](/azure/cost-management-billing/manage/grant-access-to-create-subscription) ，才能建立訂用帳戶。 定義可透過自動化工作流程要求新訂用帳戶的安全性群組。
 - 如果您是 Enterprise 合約 (EA) 客戶，請要求 Azure 支援服務為您的組織封鎖非 EA 訂用帳戶的建立。
 
 ## <a name="next-steps"></a>下一步

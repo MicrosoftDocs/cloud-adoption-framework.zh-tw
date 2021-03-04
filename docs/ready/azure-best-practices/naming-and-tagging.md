@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 29b6f4d8528e3f8ecd531f33fce791d07cb9f26c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 027504b257fc05e58c42329b78c1e4c8fe91f50b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024359"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115776"
 ---
 # <a name="develop-your-naming-and-tagging-strategy-for-azure-resources"></a>開發 Azure 資源的命名和標記策略
 
@@ -33,7 +33,7 @@ ms.locfileid: "97024359"
 
 ## <a name="purpose-of-naming-and-tagging"></a>命名和標記的用途
 
-為了安全起見，正確地表示和命名您的資源是不可或缺的。 發生安全性事件時，請務必迅速找出受影響的系統、這些系統支援的功能，以及潛在的業務衝擊。 安全性服務（例如 [Azure 資訊安全中心](/azure/security-center/security-center-introduction) 和 [Azure Sentinel](/azure/sentinel) 參考資源與其相關聯的記錄，以及依資源名稱的警示資訊。
+為了安全起見，正確地表示和命名您的資源是不可或缺的。 發生安全性事件時，請務必迅速找出受影響的系統、這些系統支援的功能，以及潛在的業務衝擊。 安全性服務（例如 [azure 資訊安全中心](/azure/security-center/security-center-introduction) 和 [azure Sentinel](/azure/sentinel/) ）參考資源與其相關聯的記錄，以及依資源名稱的警示資訊。
 
 Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-manager/management/resource-name-rules)。 本指引提供詳細的建議，以支援企業雲端採用工作。
 
@@ -47,7 +47,7 @@ Azure 會定義 [azure 資源的命名規則和限制](/azure/azure-resource-man
 
 - 在營運方面，可確保名稱和標記包含 IT 小組用來識別工作負載、應用程式、環境和重要性的資訊，以及用來管理資源的其他實用資訊。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何定義 Azure 資源和資產的命名慣例，以及查看 Azure 中資源和資產的範例名稱。
 

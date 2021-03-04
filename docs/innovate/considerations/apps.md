@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: f5ddb6c25b237dee2f6f0d09aef027aedfb1a8f7
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 1cb3e460efa4f49f2c2d0146835aed19aa7e4aba
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790250"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115011"
 ---
 # <a name="engage-via-applications"></a>透過應用程式參與
 
@@ -27,10 +27,10 @@ ms.locfileid: "101790250"
 
 更快速且正確地回應客戶意見反應、市場變更和創新機會的團隊，通常會在創新中領導各自的市場。 創新應用程式的第一個原則是在 [成長思維](./learn.md#growth-mindset)的考慮下總結：「分享程式碼」。 經過一段時間後，就會從文化焦點中發現創新。 為了維持創新，需要多樣化的觀點和貢獻。
 
-為了準備進行創新，所有應用程式開發都應該以共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是 [GitHub](https://guides.github.com)，可讓您快速建立共用的程式碼存放庫。 此外， [Azure 存放庫](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure 存放庫提供兩種類型的版本控制：
+為了準備進行創新，所有應用程式開發都應該以共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是 [GitHub](https://guides.github.com)，可讓您快速建立共用的程式碼存放庫。 此外， [Azure 存放庫](/azure/devops/repos/get-started/what-is-repos) 是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure 存放庫提供兩種類型的版本控制：
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制。
-- [Team Foundation 版本控制 (TFVC) ](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制。
+- [Git](/azure/devops/repos/get-started/what-is-repos#git)：分散式版本控制。
+- [Team Foundation 版本控制 (TFVC) ](/azure/devops/repos/get-started/what-is-repos#tfvc)：集中式版本控制。
 
 ## <a name="citizen-developers"></a>公民開發人員
 

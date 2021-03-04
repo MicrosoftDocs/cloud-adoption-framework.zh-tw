@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: a702b08b518919b6f3b1a30bf954e81a5b02aeea
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 2f081bb86cab9423c039c5554b623d37dc537d07
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230296"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114977"
 ---
 # <a name="machine-learning-security"></a>機器學習安全性
 
@@ -31,7 +31,7 @@ ms.locfileid: "99230296"
 
 ## <a name="deploy-azure-kubernetes-service-to-secure-an-inference-environment"></a>部署 Azure Kubernetes Service 以保護推斷環境
 
-建議您在生產環境中使用 Azure Kubernetes Service (AKS) 進行推斷。 您的虛擬網路中有兩個可用選項：
+建議在生產環境中使用 Azure Kubernetes Service (AKS) 來進行推斷。 您的虛擬網路中有兩個可用選項：
 
 - 使用公用 IP 位址將 AKS 叢集部署或連結至您的虛擬網路。
 - 將私人 AKS 叢集附加至您的虛擬網路。
@@ -46,7 +46,7 @@ ms.locfileid: "99230296"
 
 - **Docker 橋接器位址** 會指派給 docker 橋接器，該橋接器會以容器的形式執行您的評分腳本。 此位址不得位於您的子網 IP 或 AKS 位址範圍內。
 
-您可以將 AKS 設定為使用內部和私人負載平衡器搭配私人 AKS 叢集。 此案例只允許私人 Ip，而且您可以使用 Python SDK 或 Azure 命令列擴充功能，但不能 Azure Machine Learning studio 執行這項工作。 使用私人負載平衡器時，您必須將「網路參與者」角色授與包含虛擬網路的 AKS 叢集資源群組。
+您可以將 AKS 設定為使用內部和私人負載平衡器搭配私人 AKS 叢集。 此案例只允許私人 Ip，而且您可以使用 Python SDK 或 Azure 命令列擴充功能，但不能使用 Azure Machine Learning studio 進行這項工作。 使用私人負載平衡器時，您必須將「網路參與者」角色授與包含虛擬網路的 AKS 叢集資源群組。
 
 ## <a name="next-steps"></a>下一步
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: 什麼是機器學習服務、azure machine learning、機器學習工具、mlops、自動化機器學習
-ms.openlocfilehash: 3797005099c46e7d2e9a12628e4376e51552a3bc
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d4ef45ff15b8a43dfc2886191aa71e82fd86ed36
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792732"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114994"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -68,7 +68,7 @@ Azure Machine Learning 為開發人員和資料科學家提供其機器學習工
 
 然後，您可以使用 [適用于 Python 的 Azure Machine LEARNING SDK](/python/api/overview/azure/ml/)、 [azure machine Learning studio](https://ml.azure.com/)或 [Machine learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli)來管理已部署的模型。
 
-這些模型可被取用並[即時](/azure/machine-learning/how-to-consume-web-service)或[非同步](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)地傳回大量資料的相關預測。
+您可以使用這些模型，並以 [即時](/azure/machine-learning/how-to-consume-web-service) 或 [非同步方式](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification) 傳回大量資料的預測。
 
 另外，透過進階[機器學習管線](/azure/machine-learning/concept-ml-pipelines)，您可以在資料準備、模型定型與評估及部署的每個步驟上共同作業。 管線可讓您執行下列作業：
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 65f00331e7358466b05f25ed8d48775d251c8aed
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d0a0b6b425b3f1c3ca6c5d2f2a8fc7d4819b8a11
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024478"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116082"
 ---
 # <a name="plan-for-cloud-adoption"></a>規劃雲端採用
 
@@ -39,10 +39,10 @@ ms.locfileid: "97024478"
 2. **定義和排定工作負載的優先順序：** 排定前10個工作負載的優先順序，以建立初始採用待辦專案。
 3. **將資產與工作負載保持一致：** 找出 (提議的資產或現有的) 需要哪些資產才能支援排定優先順序的工作負載。
 4. **複習合理化決策：** 複習合理化決策來精簡採用途徑決策：遷移或創新。
-5. **建立反復專案和發行計畫：** _反覆運算_ 是配置來執行工作的時間區塊。 _版本_ 是在觸發生產進程的變更之前，要完成的工作定義。
+5. **建立反復專案和發行計畫：** *反覆運算* 是配置來執行工作的時間區塊。 *版本* 是在觸發生產進程的變更之前，要完成的工作定義。
 6. **預估時程表：** 根據初始估計值，為發行規劃目的建立粗略的時間軸。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在建立您的雲端採用計畫之前，請確定所有 [必要](./prerequisites.md) 的必要條件已就緒。
 

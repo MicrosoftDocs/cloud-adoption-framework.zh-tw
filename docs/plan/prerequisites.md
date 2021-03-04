@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b8cddcfe51eebcfa36b4f4325687ddf5a1ab9688
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: edd1f389fdf9419f9b81abcb41ec296db11af270
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026246"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116031"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>有效雲端採用方案的必要條件
 
-方案只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入： _策略性_ 和 _策略性_。 下列各節概述每個類別中所需的最小資料點。
+方案只會與放入其中的資料一樣有效。 若要讓雲端採用方案生效，有兩種類型的輸入： *策略性* 和 *策略性*。 下列各節概述每個類別中所需的最小資料點。
 
 ## <a name="strategic-inputs"></a>策略性輸入
 
@@ -39,9 +39,9 @@ ms.locfileid: "97026246"
 
 這些問題對於雲端採用方案的精確度而言是不可或缺的。 您至少必須回答數位資產合理化的問題，才能建立方案。 若要提供精確的時間軸，有關組織和技能的問題也很重要。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-將範本部署至 Azure DevOps Services，以定義您的雲端採用計畫。
+將範本部署至 Azure DevOps Services，以定義您的雲端採用方案。
 
 > [!div class="nextstepaction"]
 > [使用範本定義您的雲端採用方案](./template.md)

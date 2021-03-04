@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: c4ceb3f9404bb210580006f3cfec06ba1a67f65c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 54fd40f34d987c187f5354638af4fcb51f41661a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115674"
 ---
 <!-- docutune:casing "Blueprints: Blueprint definitions" "Blueprints: Get started" -->
 
@@ -70,7 +70,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 移至 **藍圖：藍圖定義**。
 1. 選取您在先前步驟中建立的藍圖。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
-1. 提供 **版本** (例如 _1.0_) 和任何 **變更附註**，然後選取 [發佈]。
+1. 提供 **版本** (例如 `1.0`) 和任何 **變更附注**，然後選取 [ **發行**]。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -81,7 +81,7 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 1. 在 Azure 入口網站中，移至 [藍圖：藍圖定義](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints)。
 1. 選取您在先前步驟中建立的藍圖定義。
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
-1. 提供 **版本** (例如 _1.0_) 和任何 **變更附註**，然後選取 [發佈]。
+1. 提供 **版本** (例如 `1.0`) 和任何 **變更附注**，然後選取 [ **發行**]。
 
 ::: zone-end
 
@@ -91,9 +91,9 @@ Azure 藍圖可讓雲端架構設計師和中央資訊技術人員定義一組�
 
 若要深入了解，請參閱：
 
-- [Azure 藍圖](/azure/governance/blueprints)
+- [Azure 藍圖](/azure/governance/blueprints/)
 - [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準型藍圖範例](/azure/governance/blueprints/samples/#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -131,7 +131,7 @@ Azure 原則是一項服務，您可用來建立、指派和管理原則。 這�
 
 若要深入了解，請參閱：
 
-- [Azure 原則](/azure/governance/policy)
+- [Azure 原則](/azure/governance/policy/)
 - [雲端採用架構：原則強制執行決策指南](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -158,9 +158,9 @@ Azure 資訊安全中心在控管策略中扮演重要角色。 它可協助您�
 
 若要深入了解，請參閱：
 
-- [Azure 資訊安全中心](/azure/security-center)
+- [Azure 資訊安全中心](/azure/security-center/)
 - [Just-In-Time 虛擬機器存取](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [資訊安全中心定價層](https://azure.microsoft.com/pricing/details/security-center)
+- [資訊安全中心定價層](https://azure.microsoft.com/pricing/details/security-center/)
 - [雲端採用架構：安全性基準專業領域](../../govern/security-baseline/index.md)
 
 ::: zone-end

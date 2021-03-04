@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: e2e-hybrid
-ms.openlocfilehash: c289d2653c177391e337e7c0870054886c54e8bd
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 3c63d2a2517f1650a2cdd6bc4cd416f307a15218
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794334"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116371"
 ---
 # <a name="plan-for-hybrid-and-multicloud"></a>規劃混合式和多重雲端
 
@@ -158,7 +158,7 @@ Azure Arc 可簡化跨內部部署、邊緣和多重雲端的複雜和分散式�
 
 ## <a name="hybrid-and-multicloud-readiness-plan"></a>混合式和多重雲端就緒方案
 
-在開始使用之前，是否有此小組應採取的特定技能或額外訓練？
+在開始使用之前，是否有此小組應採取的特定技能或額外訓練？ 若要準備您的混合式和多重雲端遷移旅程的就緒階段，請考慮 [技能就緒途徑](/azure/cloud-adoption-framework/ready/suggested-skills) ，以在組織和技術的就緒程度中增加技能。
 
 ## <a name="next-step-review-your-environment-or-azure-landing-zone"></a>下一步：檢查您的環境或 Azure 登陸區域
 

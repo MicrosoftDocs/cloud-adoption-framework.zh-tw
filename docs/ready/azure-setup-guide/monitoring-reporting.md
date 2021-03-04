@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: c205ecde13f39a35cb5027ee4d855729a9b31493
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: ad428f1aa4c25e08ede9715ddabb5961143712f4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026008"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115368"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 中的監視和報告
 
@@ -34,9 +34,9 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
  開始監視：
 
-- [應用程式](/azure/application-insights/app-insights-overview)
-- [容器](/azure/monitoring/monitoring-container-overview)
-- [虛擬機器](/azure/monitoring/monitoring-service-map)
+- [應用程式](/azure/azure-monitor/app/app-insights-overview)
+- [容器](/azure/azure-monitor/containers/container-insights-overview)
+- [虛擬機器](/azure/azure-monitor/vm/service-map)
 - [網路](/azure/networking/network-monitoring-overview)
 
 若要監視其他資源，請尋找 Azure Marketplace 中的其他解決方案。
@@ -45,7 +45,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 監視器文件](/azure/monitoring-and-diagnostics)。
+若要深入了解，請參閱 [Azure 監視器文件](/azure/azure-monitor/)。
 
 ::: zone-end
 
@@ -93,7 +93,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-如需詳細資訊，請參閱 [Azure 服務健康情況](/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](/azure/service-health/)。
 
 ::: zone-end
 
@@ -123,7 +123,7 @@ Advisor 會依據您所部署的資源以及您在 Azure 中採取的動作來�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure Advisor 文件](/azure/advisor)。
+若要深入了解，請參閱 [Azure Advisor 文件](/azure/advisor/)。
 
 ::: zone-end
 
@@ -153,6 +153,6 @@ Azure 資訊安全中心提供兩個層級：免費層和標準層。 安全性�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center)。
+若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center/)。
 
 ::: zone-end

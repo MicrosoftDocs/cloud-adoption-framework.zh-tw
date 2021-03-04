@@ -1,6 +1,6 @@
 ---
-title: 將雲端採用方案部署到 Azure DevOps
-description: 瞭解如何使用將雲端採用工作與標準化程式保持一致的範本，快速地將待處理專案部署至 Azure DevOps。
+title: 雲端採用方案部署至 Azure DevOps
+description: 瞭解如何使用範本將雲端採用工作與標準化程式保持一致，以將待處理專案快速部署至 Azure DevOps。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 98d10cf0b27381bf24c0283843df0a7cc3907980
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 18de31c4e09090cf1670d5cd37d3c4afcaaeed8e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024444"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116014"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>雲端採用方案和 Azure DevOps
 
@@ -27,34 +27,34 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 1. 確認 [ **選取的範本** ] 欄位設定為 [ **雲端採用方案**]。 如果未選取，請選取 [ **選擇範本** ] 以選擇正確的範本。
 2. 從 [ **選取組織** ] 下拉式清單方塊中選取您的 Azure DevOps 組織。
-3. 輸入新專案的名稱。 雲端採用方案在部署到您的 Azure DevOps 租使用者時，將會有此名稱。
+3. 輸入新專案的名稱。 雲端採用方案在部署至您的 Azure DevOps 租使用者時，將會有此名稱。
 4. 選取 [ **建立專案** ]，根據策略和方案範本在您的租使用者中建立新專案。 進度列會顯示部署專案的進度。
 5. 當部署完成時，請選取 [ **流覽至專案** ] 以查看您的新專案。
 
 建立專案之後，請繼續進行此系列文章，以瞭解如何修改範本，以符合您的雲端採用方案。
 
-如需此工具的其他支援和指引，請參閱 [Azure DevOps Services 示範](/azure/devops/demo-gen)產生器。
+如需此工具的其他支援和指引，請參閱 [Azure DevOps Services 示範](/azure/devops/demo-gen/)產生器。
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>大量編輯雲端採用方案
 
 方案專案部署完成後，您就可以使用 Microsoft Excel 來修改它。 使用 Microsoft Excel 來建立新的工作負載或資產，比使用 Azure DevOps 瀏覽器體驗更容易。
 
-若要準備工作站進行大量編輯，請參閱 [使用 Microsoft Excel 大量加入或修改工作專案](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)。
+若要準備工作站進行大量編輯，請參閱 [使用 Microsoft Excel 大量加入或修改工作專案](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)。
 
-有些使用者可能會想要使用 Microsoft Project 來追蹤其工作、建立待處理專案並指派資源。 以下是將 [Microsoft Project 連接到 Azure DevOps](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)的步驟。
+有些使用者可能會想要使用 Microsoft Project 來追蹤其工作、建立待處理專案並指派資源。 以下是將 [Microsoft Project 連接至 Azure DevOps](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)的步驟。
 
 ## <a name="use-the-cloud-adoption-plan"></a>使用雲端採用方案
 
 雲端採用方案會依活動類型來組織活動：
 
-- **Epics：**_長篇故事_ 代表雲端採用生命週期的整體階段。
+- **Epics：***長篇故事* 代表雲端採用生命週期的整體階段。
 - **功能：** 功能是用來在每個階段中組織特定的目標。 比方說，特定工作負載的遷移是一項功能。
 - **使用者案例：** 使用者案例群組會根據特定目標，進入活動的邏輯集合。
 - 工作 **：** 工作是要完成的實際工作。
 
 在每個圖層上，系統會根據相依性排序活動。 活動會連結至雲端採用架構中的文章，以明確說明目標或工作。
 
-雲端採用方案的清晰觀點來自于 **Epics** 待處理專案（backlog）視圖。 如需變更至 **Epics** 待處理專案（backlog）的說明，請參閱關於 [查看待](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog)處理專案（backlog）的文章。 從這個觀點來看，您可以輕鬆地規劃和管理完成採用生命週期目前階段所需的工作。
+雲端採用方案的清晰觀點來自于 **Epics** 待處理專案（backlog）視圖。 如需變更至 **Epics** 待處理專案（backlog）的說明，請參閱關於 [查看待](/azure/devops/boards/backlogs/define-features-epics#view-a-backlog-or-portfolio-backlog)處理專案（backlog）的文章。 從這個觀點來看，您可以輕鬆地規劃和管理完成採用生命週期目前階段所需的工作。
 
 > [!NOTE]
 > 雲端採用計畫的目前狀態著重于遷移工作。 與治理、創新或作業相關的工作必須手動填入。
@@ -73,7 +73,7 @@ Azure DevOps 是一組雲端式工具，適用于管理反復專案的 Azure 客
 
 這五篇文章有助於開始管理您的採用工作所需的每個調整工作。 下一個步驟可讓您開始進行對齊練習。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 藉由 [定義和排列工作負載的優先順序，](./workloads.md)開始調整您的方案專案。
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: abf59b66640f9c5ce569e5aed1df5007029bc566
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 030c506e5a8485379116950e58e66ed386f5cab5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794380"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114569"
 ---
 # <a name="use-a-terraform-plan-to-deploy-an-amazon-web-services-amazon-elastic-compute-cloud-instance-and-connect-it-to-azure-arc"></a>使用 Terraform 方案來部署 Amazon Web Services Amazon 彈性計算雲端實例，並將其連線到 Azure Arc
 
-本文提供指導方針，說明如何使用提供的 [Terraform](https://www.terraform.io/) 方案將 Amazon Web Services 部署 (AWS) Amazon 彈性計算雲端 (amazon EC2) 實例，並將它連接為已啟用 Azure Arc 的伺服器資源。
+本文提供指導方針，說明如何使用提供的 [Terraform](https://www.terraform.io/) 方案將 Amazon Web Services 部署 (AWS) Amazon 彈性計算雲端 (EC2) 實例，並將它連接為已啟用 Azure Arc 的伺服器資源。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -113,12 +113,12 @@ ms.locfileid: "101794380"
 
 2. Terraform 方案會在 Microsoft Azure 和 AWS 中建立資源。 然後，它會在 AWS EC2 虛擬機器上執行腳本，以安裝 Azure Arc 代理程式和所有必要的構件。 此腳本需要 AWS 和 Azure 環境的特定資訊。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/ubuntu/terraform/scripts/vars.sh)使用適當的值編輯和更新每個變數。
 
-    - `TF-VAR-subscription-id` = 您的 Azure 訂用帳戶識別碼
-    - `TF-VAR-client-id` = 您的 Azure 服務主體應用程式識別碼
-    - `TF-VAR-client-secret` = 您的 Azure 服務主體密碼
-    - `TF-VAR-tenant-id` = 您的 Azure 租使用者識別碼
-    - `AWS-ACCESS-KEY-ID` = AWS 存取金鑰
-    - `AWS-SECRET-ACCESS-KEY` = AWS 秘密金鑰
+    - `TF_VAR_subscription_id` = 您的 Azure 訂用帳戶識別碼
+    - `TF_VAR_client_id` = 您的 Azure 服務主體應用程式識別碼
+    - `TF_VAR_client_secret` = 您的 Azure 服務主體密碼
+    - `TF_VAR_tenant_id` = 您的 Azure 租使用者識別碼
+    - `AWS_ACCESS_KEY_ID` = AWS 存取金鑰
+    - `AWS_SECRET_ACCESS_KEY` = AWS 秘密金鑰
 
 3. 從 Azure CLI 流覽至複製的存放庫 `azure_arc_servers_jumpstart/aws/ubuntu/terraform` 目錄。
 
@@ -128,7 +128,7 @@ ms.locfileid: "101794380"
     source ./scripts/vars.sh
     ```
 
-5. 確定您的 SSH 金鑰可以在 *~/.ssh* 中使用，並將其命名為 `id-rsa.pub` 和 `id-rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/ubuntu/terraform/main.tf) 才能使用具有不同路徑的金鑰。
+5. 確定您的 SSH 金鑰可以在 *~/.ssh* 中使用，並將其命名為 `id_rsa.pub` 和 `id_rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/ubuntu/terraform/main.tf) 才能使用具有不同路徑的金鑰。
 
 6. 執行 `terraform init` 會下載 Terraform AzureRM 提供者的命令。
 
@@ -138,7 +138,7 @@ ms.locfileid: "101794380"
 
 1. 執行 `terraform apply --auto-approve` 命令，並等候計畫完成。 完成時，您會在新的資源群組內部署 AWS Amazon Linux 2 EC2 實例，並將其連接為新的已啟用 Azure Arc 的伺服器。
 
-2. 開啟 Azure 入口網站並流覽至 aws 示範的資源群組。 在 AWS 中建立的虛擬機器將會顯示為資源。
+2. 開啟 Azure 入口網站並流覽至 `arc-aws-demo` 資源群組。 在 AWS 中建立的虛擬機器將會顯示為資源。
 
     ![顯示 azure 入口網站中已啟用 Azure Arc 之伺服器的螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-server.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "101794380"
 
 1. 在 [`install_arc_agent.sh.tmpl`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/ubuntu/terraform/scripts/install_arc_agent.sh.tmpl) 腳本範本中，將區段標記為批註 `run connect command` 並儲存檔案。
 
-    ![顯示 ' ' 已標記為停用 Azure Arc 代理程式自動上線的螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-main-tf.png)
+    ![顯示 ' main.tf ' 已批註的螢幕擷取畫面，以停用 Azure Arc 代理程式的自動上架。](./media/aws-ubuntu/aws-ubuntu-main-tf.png)
 
 2. 藉由執行來取得 AWS VM 的公用 IP `terraform output` 。
 
@@ -166,12 +166,12 @@ ms.locfileid: "101794380"
 
 4. 匯出中的所有環境變數 [`vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/ubuntu/terraform/scripts/vars.sh) 。
 
-    ![使用 ' ' 匯出環境變數的螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-export-variables.png)
+    ![在 ' vars.sh ' 中匯出的環境變數螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-export-variables.png)
 
 5. 執行以下命令：
 
     ```console
-    azcmagent connect --service-principal-id $TF-VAR-client-id --service-principal-secret $TF-VAR-client-secret --resource-group "arc-aws-demo" --tenant-id $TF-VAR-tenant-id --location "westus2" --subscription-id $TF-VAR-subscription-id
+    azcmagent connect --service-principal-id $TF_VAR_client_id --service-principal-secret $TF_VAR_client_secret --resource-group "arc-aws-demo" --tenant-id $TF_VAR_tenant_id --location "westus2" --subscription-id $TF_VAR_subscription_id
     ```
 
     ![[Azcmagent connect] 命令的另一個螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-azcmagent-2.png)
@@ -188,4 +188,4 @@ ms.locfileid: "101794380"
 
   ![如何在 AWS 主控台中終止實例的螢幕擷取畫面。](./media/aws-ubuntu/aws-ubuntu-terminate.png)
 
-如果您以手動方式刪除實例，則也應該刪除 `*./scripts/install_arc_agent.sh` Terraform 方案所建立的實例。
+如果您以手動方式刪除實例，則您也應該刪除 `*./scripts/install_arc_agent.sh` Terraform 方案所建立的。

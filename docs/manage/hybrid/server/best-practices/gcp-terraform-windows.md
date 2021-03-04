@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 33bfa7ef30dabe154c6547f83185160ddd0d3340
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 90ffa0737316616754fd8c8df0e530ea1539371a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794377"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114433"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-google-cloud-platform-windows-instance-and-connect-it-to-azure-arc"></a>使用 Terraform 方案部署 Google Cloud Platform Windows 實例，並將其連線到 Azure Arc
 
@@ -101,12 +101,12 @@ ms.locfileid: "101794377"
 
 2. Terraform 方案會在 Microsoft Azure 和 Google Cloud Platform 中建立資源。 然後，它會在 GCP 的虛擬機器上執行腳本，以安裝 Azure Arc 代理程式和所有必要的構件。 此腳本需要 GCP 和 Azure 環境的特定資訊。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/windows/terraform/scripts/vars.sh)使用適當的值編輯和更新每個變數。
 
-    - `TF-VAR-subscription-id` = 您的 Azure 訂用帳戶識別碼
-    - `TF-VAR-client-id` = 您的 Azure 服務主體應用程式識別碼
-    - `TF-VAR-client-secret` = 您的 Azure 服務主體密碼
-    - `TF-VAR-tenant-id` = 您的 Azure 租使用者識別碼
-    - `TF-VAR-gcp-project-id` = GCP 專案識別碼
-    - `TF-VAR-gcp-credentials-filename` = GCP 認證 JSON 檔案名
+    - `TF_VAR_subscription_id` = 您的 Azure 訂用帳戶識別碼
+    - `TF_VAR_client_id` = 您的 Azure 服務主體應用程式識別碼
+    - `TF_VAR_client_secret` = 您的 Azure 服務主體密碼
+    - `TF_VAR_tenant_id` = 您的 Azure 租使用者識別碼
+    - `TF_VAR_gcp_project_id` = GCP 專案識別碼
+    - `TF_VAR_gcp_credentials_filename` = GCP 認證 JSON 檔案名
 
 3. 從 CLI 流覽至複製的存放庫 `azure_arc_servers_jumpstart/gcp/windows/terraform` 目錄。
 
@@ -138,7 +138,7 @@ Terraform 計畫會自動安裝 Azure Arc 代理程式，並在第一次啟動 V
 
 1. `terraform apply`執行命令之前，請先 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/windows/terraform/main.tf) 開啟並批註 `windows-startup-script-ps1 = local-file.install_arc_agent-ps1.content` 該行，然後儲存檔案。
 
-    ![顯示 ' ' 已標記為停用 Azure Arc 代理程式自動上線的螢幕擷取畫面。](./media/gcp-windows/main-tf.png)
+    ![顯示 ' main.tf ' 已批註的螢幕擷取畫面，以停用 Azure Arc 代理程式的自動上架。](./media/gcp-windows/main-tf.png)
 
 2. 依照 `terraform apply --auto-approve` 上面的指示執行。
 
@@ -146,11 +146,11 @@ Terraform 計畫會自動安裝 Azure Arc 代理程式，並在第一次啟動 V
 
     ![GCP 主控台中的伺服器螢幕擷取畫面。](./media/gcp-windows/gcp-server.png)
 
-    ![顯示如何在 GCP 中重設 Windows server 密碼的螢幕擷取畫面。](./media/gcp-windows/reset-password.png)
+    ![螢幕擷取畫面，顯示如何在 GCP 主控台中重設 Windows server 的密碼。](./media/gcp-windows/reset-password.png)
 
 4. 選取 [ **設定密碼** ] 並指定使用者名稱，以建立 VM 的使用者和密碼。
 
-    ![螢幕擷取畫面，顯示如何在 GCP 中設定 Windows 伺服器的使用者名稱和密碼。](./media/gcp-windows/name-pword.png)
+    ![螢幕擷取畫面，顯示如何在 GCP 主控台中設定 Windows 伺服器的使用者名稱和密碼。](./media/gcp-windows/name-pword.png)
 
 5. 從 GCP 主控台中的 [VM] 頁面選取 RDP 按鈕，然後以您剛才建立的使用者名稱和密碼登入，以 RDP 連線至 VM。
 

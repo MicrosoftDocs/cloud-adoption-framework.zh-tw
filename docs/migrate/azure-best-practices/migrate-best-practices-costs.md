@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c75f3437d5c53f31daf2389061c6874c0d66706a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4aed779e6681c01fe47d0085763a92096f2983ae
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785932"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116439"
 ---
 <!-- docutune:casing ARO -->
 
@@ -91,7 +91,7 @@ ms.locfileid: "101785932"
 
 - 深入瞭解 [VM 類型和大小調整](/azure/virtual-machines/sizes)，以及將大小對應至類型。
 - [VM 實例的規劃大小](/azure/cloud-services/cloud-services-sizes-specs)。
-- 查看 [虛構 Contoso 公司的範例評](/azure/cloud-adoption-framework/migrate/)量。
+- 查看 [虛構 Contoso 公司的範例評](../../migrate/index.md)量。
 
 ## <a name="best-practice-select-the-right-storage"></a>最佳做法：選取正確的儲存體
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 92e6baf8a0807588390f51c69ad31c4df561aa1e
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 4b1e563cab763a8e40f7da1a43baa7dd2448ea0b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175078"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116320"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -75,7 +75,7 @@ ms.locfileid: "98175078"
 
 ### <a name="skills-and-training-to-ready-the-team-for-migration"></a>讓團隊做好遷移的技能和訓練
 
-關於技能，在資料倉儲遷移方面很重要。 因此，請確定您的遷移小組的適當成員已在 Azure 雲端基礎、Azure Blob 儲存體、Azure Data Lake Storage、Azure 資料箱、ExpressRoute、Azure 身分識別管理、Azure Data Factory 和 Azure Synapse 中進行訓練。 當您從現有的資料倉儲進行遷移之後，您的資料模型製作人員很可能需要微調您的 Microsoft Azure Synapse 資料模型。
+關於技能，在資料倉儲遷移方面很重要。 因此，請確定您的遷移小組的適當成員已在 Azure 雲端基礎、Azure Blob 儲存體、Azure Data Lake Storage、Azure 資料箱、ExpressRoute、Azure 身分識別管理、Azure Data Factory 和 Azure Synapse 中進行訓練。 當您從現有的資料倉儲進行遷移之後，您的資料建模者很可能需要微調您的 Microsoft Azure Synapse 資料模型。
 
 ### <a name="assessing-your-existing-data-warehouse"></a>評估您現有的資料倉儲
 
@@ -88,7 +88,7 @@ ms.locfileid: "98175078"
 除了準備和準備您的目標環境的遷移小組，以及評估您目前的設定，也同樣重要的是，在內部部署中設定動作也相當重要，因為生產資料倉儲通常會受到 IT 程式和核准程式的高度控制。 為了避免延遲，請確定您的資料中心基礎結構和營運小組已準備好將您的資料、架構、ETL 作業等遷移至 Azure 雲端。 資料移轉可能會透過下列方式進行：
 
 - AzCopy 至 Azure Blob 儲存體。
-- Microsoft Azure ExpressRoute 直接將壓縮的資料傳輸至 Azure。
+- Microsoft Azure ExpressRoute 可將壓縮的資料直接傳輸到 Azure。
 - 檔案匯出至 Azure 資料箱。
 
 影響選取這些選項的主要因素是資料磁片區大小 (以 tb 為單位的) 和網路速度 (Mbps 的) 。 需要計算以判斷透過網路遷移資料所需的時間，並考慮資料可能會在您的資料倉儲中壓縮並在您匯出時變成未壓縮。 這種情況可能會減緩資料傳送速率。 使用上述任何一種方法來移動資料時，透過 Gzip 重新壓縮資料。 PolyBase 可以直接處理 gzipped 資料。 如果移動資料需要太長的時間，可能會透過 Azure 資料箱來遷移大型資料磁片區。
@@ -97,9 +97,9 @@ ms.locfileid: "98175078"
 
 ### <a name="azure-preparation-for-schema-and-data-migration"></a>適用于架構和資料移轉的 Azure 準備
 
-就 Azure 端的準備工作而言，必須透過 Microsoft Azure ExpressRoute 或 Microsoft Azure 資料箱來管理資料匯入。 Azure Data Factory 管線是將資料載入 Azure Blob 儲存體，然後使用 PolyBase 從該處載入至 Azure Synapse 的理想方式。 因此，Azure 端需要進行準備以開發這類管線。
+就 Azure 端的準備工作而言，必須透過 Microsoft Azure ExpressRoute 或 Microsoft Azure 資料箱來管理資料匯入。 Azure Data Factory 管線是將您的資料載入至 Azure Blob 儲存體，然後使用 PolyBase 從該處載入至 Azure Synapse 的理想方式。 因此，Azure 端需要進行準備以開發這類管線。
 
-替代方法是在 Azure 上使用您現有的 ETL 工具（如果它支援 Azure Synapse），這表示在 Azure Marketplace Azure 上設定工具，以將您的資料匯入資料，並將其載入至 Azure Blob 儲存體。
+替代方法是在 Azure 上使用現有的 ETL 工具（如果它支援 Azure Synapse），這表示在 azure 上設定 azure Marketplace 的工具，並準備管線以匯入您的資料並將其載入至 Azure Blob 儲存體。
 
 ## <a name="defining-a-migration-strategy"></a>定義遷移策略
 
@@ -182,7 +182,7 @@ ms.locfileid: "98175078"
 
 問題在於，如果腳本和公用程式全都在內部部署和 Azure 環境中獨立開發、測試和執行，則管理這些工作可能會很複雜。 這會增加複雜性，特別是在版本控制、測試管理和遷移執行不協調的情況下。
 
-您應該避免這些複雜性，並透過原始檔控制存放庫從共同的位置控制這些複雜性，以管理從開發到測試和生產環境的變更。 遷移執行牽涉到需要在內部部署、網路和 Azure 中執行的工作。 因為 Azure Synapse 是目標環境，所以控制 Azure 的遷移執行可簡化管理。 使用 Azure Data Factory 建立遷移控制管線，以控制內部部署和 Azure 上的執行。 這會引進自動化並將錯誤降至最低。 Data Factory 成為「遷移協調流程」工具，而不只是「企業資料整合」工具。
+您應該避免這些複雜性，並透過原始檔控制存放庫從共同的位置控制這些複雜性，以管理從開發到測試和生產環境的變更。 遷移執行牽涉到需要在內部部署、網路和 Azure 中執行的工作。 因為 Azure Synapse 是目標環境，所以控制 Azure 的遷移執行可簡化管理。 使用 Azure Data Factory 建立遷移控制管線，以控制內部部署和 Azure 上的執行。 這會引進自動化並將錯誤降至最低。 Data Factory 會成為遷移協調流程工具，而不只是企業資料整合工具。
 
 從 Azure 上執行的 Microsoft 合作夥伴控制可供使用的其他選項包括資料倉儲自動化工具，以嘗試將遷移自動化。 例如 WhereScape 和 Attunity 等廠商。 大部分的自動化工具都是以轉移的方法為目標。 在此情況下，這類工具可能不支援某些作業，例如預存程式。 這些產品和數個其他產品會在協力廠商工具專屬的個別指南中詳細說明，以協助您遷移至 Azure Synapse。
 
@@ -226,7 +226,7 @@ ms.locfileid: "98175078"
 
 其目的是要使用自助 BI 工具，以及要遷移之基礎資料倉儲和資料超市的實體架構，來打破商務使用者之間的相依性。 藉由引進資料虛擬化，在資料倉儲和資料超市遷移至 Azure Synapse 的過程中所做的任何架構替代 (例如，將效能優化) 可從商務使用者中隱藏，因為它們只會存取資料虛擬化層中的虛擬資料表。 如果需要結構變更，則只需要變更資料倉儲或資料超市與任何虛擬資料表之間的對應，讓使用者不會察覺這些變更，也不會察覺遷移。
 
-- 在資料倉儲遷移之前，請先封存任何識別為從未使用的現有資料表，因為沒有使用的點遷移資料表。 其中一種可能的方法是將未使用的資料封存到 Azure Blob 儲存體或 Azure Data Lake Storage，並在 Azure Synapse 中建立外部資料表，使其仍在線上。
+- 在資料倉儲遷移之前，請先封存任何識別為從未使用的現有資料表，因為沒有使用的點遷移資料表。 其中一種可能的方法是將未使用的資料封存到 Azure Blob 儲存體或 Azure Data Lake Storage，並在 Azure Synapse 中建立外部資料表，以供該資料仍在線上。
 - 請考慮使用開發版本在 Azure 上引進虛擬機器 (VM) 的可能性 (通常是在此 VM 上執行之現有舊版資料倉儲 DBMS 的免費) 。 這可讓您快速地將現有的資料倉儲架構移至 VM，並將其移至 Azure Synapse，同時在 Azure 雲端上運作。
 - 定義遷移順序和相依性。
 - 確定您的基礎結構和營運小組已準備好將您的資料移轉到遷移專案中。

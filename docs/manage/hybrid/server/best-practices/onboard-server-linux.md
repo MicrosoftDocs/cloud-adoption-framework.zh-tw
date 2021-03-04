@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 6961d80e893d59361ae0c9475972ddfb0e4f87f5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 9bf8b1b8ace2bcebc1151ccebdba04e094f239fd
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793695"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114365"
 ---
 # <a name="connect-an-existing-linux-server-to-azure-arc"></a>將現有的 Linux 伺服器連線至 Azure Arc
 
@@ -61,7 +61,7 @@ ms.locfileid: "101793695"
 
     ![Azure 入口網站的螢幕擷取畫面，其中包含空的資源群組。](./media/onboard-server/linux-resource-group.png)
 
-4. 下載 [`az-connect-linux`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_linux.sh) shell 腳本。
+4. 下載 [`az_connect_linux`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_linux.sh) shell 腳本。
 
 5. 根據您的環境變更環境變數。
 
@@ -73,14 +73,14 @@ ms.locfileid: "101793695"
 
 ## <a name="deployment"></a>部署
 
-使用命令執行腳本 `. ./az-connect-linux.sh` 。
+使用命令執行腳本 `. ./az_connect_linux.sh` 。
 
 > [!NOTE]
-> 額外的點是因為腳本有 *匯出* 函式，而且必須在與其余命令相同的 shell 會話中匯出變數。
+> 額外的點是因為腳本有 _匯出_ 函式，而且必須在與其余命令相同的 shell 會話中匯出變數。
 
 成功完成後，您的 Linux 伺服器就會以新的 Azure Arc 資源連線到資源群組內。
 
-![執行「az_connect」 Linux 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-linux.png)
+![執行 ' az_connect_linux sh ' Linux 腳本的螢幕擷取畫面。](./media/onboard-server/az-connect-linux.png)
 
 ![Azure 入口網站中已啟用 Azure Arc 資源的螢幕擷取畫面。](./media/onboard-server/linux-resource.png)
 

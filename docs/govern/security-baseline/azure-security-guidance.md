@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 16a2d068517add917d4c6429be34c79fccd25de1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 681b37dbcb925b3591f004307a491279547a7cff
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792800"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115334"
 ---
 # <a name="microsoft-security-guidance"></a>Microsoft 安全性指引
 
@@ -27,7 +27,7 @@ ms.locfileid: "101792800"
 
 這些工具的設計目的是協助組織符合複雜的合規性義務，並在選擇和使用 Microsoft 雲端服務時改善資料保護功能。
 
-**Microsoft 服務信任入口網站** 提供深入的資訊和工具，以協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Microsoft 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一次站。 我們在這裡發佈執行雲端服務和工具自助風險評量所需的資訊和資源。 入口網站的建立可協助追蹤 Azure 中的法規合規性活動，包括：
+**Microsoft 服務信任入口網站** 提供深入的資訊和工具，以協助您滿足使用 Microsoft 雲端服務的需求，包括 Azure、Microsoft 365、Dynamics 365 和 Windows。 入口網站是與 Microsoft 雲端相關的安全性、法規、合規性和隱私權資訊的一次站。 這是我們發佈在雲端服務和工具執行自助式風險評量所需的資訊和資源的位置。 入口網站的建立可協助追蹤 Azure 中的法規合規性活動，包括：
 
 - **合規性管理員：** 合規性管理員是 Microsoft 服務信任入口網站中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及確認組織與 Microsoft 雲端服務（例如 Microsoft 365、Dynamics 365 和 Azure）相關的法規合規性活動。 您可以在下一節找到更多詳細資料。
 - **信任檔：** 有三種類別的指南可提供豐富的資源來評估 Microsoft 雲端、瞭解 Microsoft 在安全性、合規性和隱私權方面的營運，以及協助您改善資料保護功能。 這些指南包括：

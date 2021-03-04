@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: f29396b2ac53f1619f8bfe69feccaf0fe27a430c
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: c6ced28a3da6e586836e2d711ec112c86a6554ca
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175095"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116048"
 ---
 # <a name="review-rationalization-decisions"></a>檢閱合理化決策
 
@@ -63,7 +63,7 @@ ms.locfileid: "98175095"
 
 遷移工作所需的技能與創新工作所需的技能不同。 在雲端採用計畫的執行期間，建議您將遷移和創新工作指派給不同的小組。 每個小組都有自己的反復專案、發行和規劃步調。 指派不同的小組可讓您彈性地維護一個雲端採用方案，同時考慮創新和遷移工作。
 
-當您在 Azure DevOps 中管理雲端採用方案時，會藉由將父工作專案 (或長篇) 從雲端遷移變更為雲端創新來反映該管理。 這項微妙的變更有助於確保雲端採用方案中的所有參與者都可以快速追蹤所需的工作，以及補救工作的變更。 此追蹤也有助於將適當的指派對應到相關的雲端採用小組。
+當您在 Azure DevOps 中管理雲端採用方案時，會藉由將父工作專案 (或) 從雲端遷移變更為雲端創新來反映該管理。 這項微妙的變更有助於確保雲端採用方案中的所有參與者都可以快速追蹤所需的工作，以及補救工作的變更。 此追蹤也有助於將適當的指派對應到相關的雲端採用小組。
 
 針對具有多個不同專案的大型、複雜採用方案，請考慮更新反復專案路徑。 變更區域路徑，只會讓指派給該區域路徑的小組看到工作負載。 這項變更可減少可見工作的數目，讓雲端採用小組更輕鬆地工作。 但是，它會增加專案管理程式的複雜性。
 

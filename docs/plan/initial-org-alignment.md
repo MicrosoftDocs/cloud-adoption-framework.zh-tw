@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 332a4b29888ba576a2614d4d3f14fa528de31a10
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e440d87481221067c790aaba79e10cc45a182356
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024495"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116133"
 ---
 # <a name="initial-organization-alignment"></a>初始組織對齊
 
@@ -25,7 +25,7 @@ ms.locfileid: "97024495"
 
 ## <a name="initial-best-practice-structure"></a>初始最佳做法結構
 
-若要建立速度與控制之間的平衡，建議您在雲端採用期間，至少讓使用者負責 _雲端採用_ 和 _雲端治理_。 這可能是人們為每個領域或 _功能_ 分享責任的團隊。 它也可能是同時負責結果及負責工作的個別人員。 在任一案例中，雲端採用和雲端治理都有兩個功能，這兩項功能在快速移動和降低風險之間都有自然的分歧。 以下是兩個小組的組合方式：
+若要建立速度與控制之間的平衡，建議您在雲端採用期間，至少讓使用者負責 *雲端採用* 和 *雲端治理*。 這可能是人們為每個領域或 *功能* 分享責任的團隊。 它也可能是同時負責結果及負責工作的個別人員。 在任一案例中，雲端採用和雲端治理都有兩個功能，這兩項功能在快速移動和降低風險之間都有自然的分歧。 以下是兩個小組的組合方式：
 
 ![雲端採用雲端的卓越中心](../_images/ready/org-ready-best-practice.png)
 
@@ -45,7 +45,7 @@ ms.locfileid: "97024495"
 
 在您記載這些問題的答案之後，您可以建立 [技能的規劃](./adapt-roles-skills-processes.md) ，以定義計畫來準備這些人員以進行未來工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何規劃雲端採用。
 

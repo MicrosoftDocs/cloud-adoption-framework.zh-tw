@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 149162962ac8aa2e8871280bb90d7136bb3f8792
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c954fba8ebc2b29ddda91c831bfcf0154b4244ce
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026263"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116058"
 ---
 # <a name="establish-iterations-and-release-plans"></a>建立反覆項目和發行方案
 
@@ -62,9 +62,9 @@ ms.locfileid: "97026263"
 
 ## <a name="assign-iteration-paths-and-tags"></a>指派反復專案路徑和標記
 
-針對在 Azure DevOps 中管理雲端採用方案的客戶，會將反復專案路徑指派給每個工作和使用者案例，藉以反映先前的處理常式。 我們也建議您將每個工作負載標記為特定版本。 該標記和指派摘要會自動填入時間軸報表。
+對於在 Azure DevOps 中管理雲端採用方案的客戶而言，先前的處理常式會藉由將反復專案路徑指派給每個工作和使用者案例來反映。 我們也建議您將每個工作負載標記為特定版本。 該標記和指派摘要會自動填入時間軸報表。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 [預估時程表](./timelines.md) 以適當地傳達期望。
 

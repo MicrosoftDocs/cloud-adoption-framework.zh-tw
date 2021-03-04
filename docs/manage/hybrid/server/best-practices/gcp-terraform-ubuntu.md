@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: ba39a2e2b8bd9e226c8d81599de1920b9878b9e0
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e1f004ca4572e6faa337730cb18004397e446ae3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101795036"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114399"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-google-cloud-platform-ubuntu-instance-and-connect-it-to-azure-arc"></a>使用 Terraform 方案部署 Google Cloud Platform Ubuntu 實例，並將其連線到 Azure Arc
 
@@ -89,7 +89,7 @@ ms.locfileid: "101795036"
 
     ![如何在 GCP 主控台中建立服務帳戶的螢幕擷取畫面。](./media/gcp-ubuntu/ubuntu-svc-account.png)
 
-4. 最後，請確定您的 SSH 金鑰可在中使用 `~/.ssh` ，並命名為 `id-rsa.pub` 和 `id-rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/main.tf) 才能使用具有不同路徑的金鑰。
+4. 最後，請確定您的 SSH 金鑰可在中使用 `~/.ssh` ，並命名為 `id_rsa.pub` 和 `id_rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/main.tf) 才能使用具有不同路徑的金鑰。
 
 ## <a name="deployment"></a>部署
 
@@ -99,12 +99,12 @@ ms.locfileid: "101795036"
 
 2. Terraform 方案會在 Microsoft Azure 和 Google Cloud Platform 中建立資源。 然後，它會在 GCP 的虛擬機器上執行腳本，以安裝 Azure Arc 代理程式和所有必要的構件。 此腳本需要 GCP 和 Azure 環境的特定資訊。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/scripts/vars.sh)使用適當的值編輯和更新每個變數。
 
-    - `TF-VAR-subscription-id`= 您的 Azure 訂用帳戶識別碼
-    - `TF-VAR-client-id` = 您的 Azure 服務主體應用程式識別碼
-    - `TF-VAR-client-secret` = 您的 Azure 服務主體密碼
-    - `TF-VAR-tenant-id` = 您的 Azure 租使用者識別碼
-    - `TF-VAR-gcp-project-id` = GCP 專案識別碼
-    - `TF-VAR-gcp-credentials-filename` = GCP 認證 JSON 檔案名
+    - `TF_VAR_subscription_id`= 您的 Azure 訂用帳戶識別碼
+    - `TF_VAR_client_id` = 您的 Azure 服務主體應用程式識別碼
+    - `TF_VAR_client_secret` = 您的 Azure 服務主體密碼
+    - `TF_VAR_tenant_id` = 您的 Azure 租使用者識別碼
+    - `TF_VAR_gcp_project_id` = GCP 專案識別碼
+    - `TF_VAR_gcp_credentials_filename` = GCP 認證 JSON 檔案名
 
 3. 從 CLI 流覽至複製的存放庫 `azure_arc_servers_jumpstart/gcp/ubuntu/terraform` 目錄。
 
@@ -150,7 +150,8 @@ ms.locfileid: "101795036"
 
 5. 執行以下命令：
 
-    ```console azcmagent connect --service-principal-ID $tf-VAR-client-ID --service-principal-secret $tf-VAR-client-secret --resource-group "Azure Arc gcp-demo" --tenant-ID $tf-VAR-tenant-ID --location "westus2" --subscription-ID $tf-VAR-subscription-ID
+    ```console
+    azcmagent connect --service-principal-id $TF_VAR_client_id --service-principal-secret $TF_VAR_client_secret --resource-group "Azure Arc gcp-demo" --tenant-id $TF_VAR_tenant_id --location "westus2" --subscription-id $TF_VAR_subscription_id
     ```
 
     ![已成功完成 [azcmagent connect] 命令的螢幕擷取畫面。](./media/gcp-ubuntu/ubuntu-azcmagent.png)
