@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 50fc9c721716bd7be378db247daf3df1319f7d75
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 55289cb5383c490b5e7cc8a24c5c4621257af3e3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794712"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112019"
 ---
 # <a name="use-an-azure-resource-manager-template-to-deploy-and-connect-an-ubuntu-virtual-machine-to-azure-arc"></a>使用 Azure Resource Manager 範本，將 Ubuntu 虛擬機器部署並聯機到 Azure Arc
 
@@ -21,10 +21,10 @@ ms.locfileid: "101794712"
 
 根據預設，azure Vm 會使用 [Azure Instance Metadata Service (IMDS) ](/azure/virtual-machines/windows/instance-metadata-service) 。 藉由將 Azure VM 投影為啟用 Azure Arc 的伺服器，就會建立一個 *衝突* ，在使用 IMDS 時，不允許將 azure Arc 伺服器資源表示為一個。 相反地，Azure Arc 伺服器仍會以原生 Azure VM 的形式「act」。
 
-本指南可讓您使用 Azure Vm 並將其上架至 Azure Arc，以 **供示範之** 用。 您將能夠模擬部署在 Azure 外部的伺服器（例如，內部部署或其他雲端平臺）。
+本指南可讓您使用 Azure Vm 並將其上架至 Azure Arc，以 **供示範之** 用。 您將能夠模擬部署在 Azure 外部的伺服器，例如內部部署或其他雲端平臺。
 
 > [!NOTE]
-> 將 Azure VM 投射為啟用 Azure Arc 的伺服器時，不會預期此情況。 **下列案例不受支援，且僅供示範和測試之用。**
+> Azure VM 不應投射為啟用 Azure Arc 的伺服器。 **下列案例不受支援，且僅供示範和測試之用。**
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -84,7 +84,7 @@ ms.locfileid: "101794712"
 
     1. 設定本機 OS 環境變數。
 
-    2. 產生 `~/.bash-profile` 將在使用者第一次登入時初始化的檔案，以設定環境。 此指令碼會：
+    2. 產生 `~/.bash_profile` 將在使用者第一次登入時初始化的檔案，以設定環境。 此指令碼會：
 
         - 停止並停用 Linux Azure 來賓代理程式服務。
 
@@ -92,9 +92,9 @@ ms.locfileid: "101794712"
 
         - 安裝 Azure Arc 連線的機器代理程式。
 
-        - 移除檔案 `~/.bash-profile` ，使其不會在第一次登入之後執行。
+        - 移除檔案 `~/.bash_profile` ，使其不會在第一次登入之後執行。
 
-4. 使用者會透過 SSH 連線到 Linux VM，此 VM 將會開始 `~/.bash-profile` 執行腳本，並將 VM 上線至 Azure Arc。
+4. 使用者會透過 SSH 連線到 Linux VM，此 VM 將會開始 `~/.bash_profile` 執行腳本，並將 VM 上線至 Azure Arc。
 
     > [!NOTE]
     >  [`install_arc_agent.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/azure/linux/arm_template/scripts/install_arc_agent.sh)Shell 腳本會啟用 OS 防火牆，並設定連入和連出連線的新規則。 預設會允許所有連入和連出流量，但封鎖 Azure 會 IMDS 遠端位址的輸出流量 `169.254.169.254` 。
@@ -110,7 +110,7 @@ ms.locfileid: "101794712"
 3. 若要部署 ARM 範本，請流覽至本機複製的 [部署資料夾](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/azure/linux/arm_template) ，然後執行下列命令：
 
     ```console
-    az group create --name <Name of the Azure resource group> --location <Azure region> --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name <Name of the Azure resource group> --location <Azure region> --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group <Name of the Azure resource group> \
     --name <The name of this deployment> \
@@ -124,7 +124,7 @@ ms.locfileid: "101794712"
     例如：
 
     ```console
-    az group create --name Arc-Servers-Linux-Demo --location "westeurope" --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name Arc-Servers-Linux-Demo --location "westeurope" --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group Arc-Servers-Linux-Demo \
     --name arclinuxdemo \

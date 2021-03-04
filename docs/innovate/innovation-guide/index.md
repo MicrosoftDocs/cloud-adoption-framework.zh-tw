@@ -10,19 +10,19 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, sep-caf-innovate
 keywords: 創新解決方案，雲端採用架構，創新解決方案
-ms.openlocfilehash: 15fd33baa38899db3c8d5f15c083944faf002c5d
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 75981d792211ffef2bbc53c4d7d29a50d2c41096
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788941"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113005"
 ---
 # <a name="azure-innovative-solutions-guide-overview"></a>Azure 創新解決方案指南總覽
 
 ::: zone target="docs"
 
 > [!NOTE]
-> 這份創新解決方案指南提供雲端採用架構中的創新指引起點。 您也可以在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)內取得本指南。
+> 這份創新解決方案指南提供雲端採用架構中的創新指引起點。 也可在 [Azure 快速入門中心](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)中取得。
 
 ::: zone-end
 

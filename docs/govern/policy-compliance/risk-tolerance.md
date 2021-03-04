@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: fa20292f6c2d5993c4d934b1296054767c8d72ea
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 87e65cc4c8048abcaf0d56f041ddfff6aab69ec4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019630"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112291"
 ---
 # <a name="evaluate-risk-tolerance"></a>評估風險承受度
 
@@ -69,7 +69,7 @@ ms.locfileid: "97019630"
 - 風險的發生機率是否會隨著時間提升或降低？
 - 風險本身是否有時間性？ 如果不加以處理，風險會消失還是會加劇？
 
-這些基本問題將能引發更多其他討論。 在進行健康的對話之後，建議將相關的風險記錄下來，並在可行的情況下加以量化。
+這些基本問題將能引發更多其他討論。 在探索健康情況良好的對話之後，建議您記錄相關的風險，並盡可能進行量化。
 
 **風險補救成本：** 判斷移除或降低風險最小化成本的問題。 這些問題可能相當直接，特別是在存在某個範圍的情況下。
 
@@ -95,14 +95,14 @@ ms.locfileid: "97019630"
 - **低風險：** 目前的研究指出風險不太可能發生。
 - **未來風險：** 目前的機率很低。 繼續採用將需要全新的分析。
 - **中度風險：** 可能會影響企業的風險。
-- **高風險：** 經過一段時間後，企業可能會實現這項風險。
+- **高風險：** 經過一段時間後，企業可能會實現這種風險。
 - **拒絕風險：** 風險為「中到高」。 IT 或企業中的動作會降低影響的可能性。
 
 **判斷容錯：**
 
 上述的三個問題集合應該能提供足夠的資料以判斷初始的承受度。 當風險和機率很低，而風險補救成本很高時，企業就不太可能投資補救。 當風險和機率很高時，企業可能會考慮投資，只要成本沒有超過潛在風險。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 此類型的對話可協助商務和 IT 更有效地評估承受度。 這些對話可以用於建立 MVP 原則及漸進式原則檢閱的期間。
 

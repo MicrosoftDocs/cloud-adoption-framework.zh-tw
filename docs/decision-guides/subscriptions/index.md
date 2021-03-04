@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 668a2b7583948a812bda7c0f4f0265117095da49
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a8eba0f8423c0fe7a5037d1e42b70c304acae33f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791542"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113209"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -29,7 +29,7 @@ ms.locfileid: "101791542"
 
 ## <a name="model-your-organization"></a>為您的組織建立模型
 
-由於每個組織都不同，所以 Azure 管理群組的設計非常具有彈性。 將雲端資產模型化以反映您的組織階層，可協助您在更高層級的階層中定義並套用原則，並依賴繼承關係，以確保這些原則會自動套用至較低階層的管理群組。 雖然訂用帳戶可在不同的管理群組之間移動，但是設計初始的管理群組階層，以反映您預期的組織需求，這樣做會很有幫助。
+由於每個組織都不同，所以 Azure 管理群組的設計非常具有彈性。 將雲端資產模型化以反映您的組織階層，可協助您在更高層級的階層中定義並套用原則，並依賴繼承關係，以確保這些原則會自動套用至較低階層的管理群組。 雖然您可以在不同的管理群組之間移動訂用帳戶，但是設計初始管理群組階層，以反映預期的組織需求，是很有説明的。
 
 在完成您的訂用帳戶設計之前，亦請考慮[資源一致性](../resource-consistency/index.md)考量可能會對您的設計選擇產生何種影響。
 
@@ -50,7 +50,7 @@ ms.locfileid: "101791542"
 
 當組織的雲端使用量增長時，通常會建立額外的訂用帳戶，以支援在商務關鍵性、合規性需求、存取控制或資料保護需求中具有基本差異的應用程式。 從初始生產和非生產的訂用帳戶中建置時，支援這些應用程式類別目錄的訂用帳戶會組織在適用的生產或非生產管理群組下。 這些訂用帳戶通常是由中央 IT 小組的作業人員擁有及管理。
 
-![應用程式分類策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
+![應用程式分類策略](../../_images/decision-guides/decision-guide-subscriptions-hierarchy.png)
 
 每個組織將其應用程式分類的方式各有不同，通常會根據特定的應用程式或服務，或是應用程式原型之類的訂用帳戶來分隔訂用帳戶。 此類別通常會設計為支援可能耗用大部分訂用帳戶有限資源的工作負載，或個別的任務關鍵性工作負載，以確保其不會在這些限制之下與其他工作負載競爭。 可能證明個別訂用帳戶的部分工作負載包括：
 
@@ -74,7 +74,7 @@ ms.locfileid: "101791542"
 
 管理群組階層的深度最多可有六層。 這可讓您彈性建立階層，結合其中數種策略，以符合您的組織需求。 例如，下圖顯示結合了業務單位策略與地理策略的組織階層。
 
-![混合的訂用帳戶策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
+![混合的訂用帳戶策略](../../_images/decision-guides/decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>相關資源
 

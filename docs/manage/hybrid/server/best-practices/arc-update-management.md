@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: af9318b4cdcdc62c3b692c81865e23602fcd39ab
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ca1ae4422dbfc245fe85befa8fd66762808b5565
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794724"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112240"
 ---
 # <a name="use-update-management-in-azure-automation-to-manage-operating-system-updates-for-azure-arc-enabled-servers"></a>使用 Azure 自動化中的更新管理來管理已啟用 Azure Arc 之伺服器的作業系統更新
 
@@ -63,7 +63,7 @@ ms.locfileid: "101794724"
     ```console
     az group create --name <Name for your resource group> \
     --location <Location for your resources> \
-    --tags "Project=jumpstart-azure-arc-servers"
+    --tags "Project=jumpstart_azure_arc_servers"
     ```
 
     ![[Az group create] 命令的螢幕擷取畫面。](./media/arc-update-management/az-group-create.png)

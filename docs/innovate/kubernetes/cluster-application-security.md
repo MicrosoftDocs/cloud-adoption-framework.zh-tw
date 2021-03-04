@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: f077924c135a9e91c74e131cc03503a5ad71d7f5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b0dd32f4696676be08dda5ae6c06779f9970d74f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787513"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112954"
 ---
 <!-- cSpell:ignore kured -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "101787513"
 > |---|---|
 > | **熟悉安全性基本知識白皮書。** 安全 Kubernetes 環境的主要目標是確保它所執行的應用程式受到保護、可以快速識別並解決安全性問題，而且將會防止未來發生類似的問題。 | [保障 Kubernetes 安全的最終指南 (白皮書) ](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **檢查叢集節點的安全性強化設定。** 安全性強化的主機 OS 可減少攻擊的介面區，並允許安全地部署容器。 | [AKS 虛擬機器主機中的安全性強化](/azure/aks/security-hardened-vm-host-image)     |
-> | **設定叢集 Kubernetes 以角色為基礎的存取控制 (Kubernetes RBAC) 。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 以角色為基礎的存取控制 (Kubernetes RBAC)  (影片) ](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [整合 Azure AD 與 Azure Kubernetes Service](/azure/aks/azure-ad-integration-cli) <br> [叢集組態檔的限制存取](/azure/aks/control-kubeconfig-access)   |
+> | **設定叢集 Kubernetes 以角色為基礎的存取控制 (Kubernetes RBAC) 。** 此控制機制可讓您指派權限給使用者或使用者群組，以執行像是建立或修改資源，或檢視執行中應用程式工作負載的記錄等動作。 | [瞭解 Kubernetes 以角色為基礎的存取控制 (Kubernetes RBAC)  (影片) ](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=G3R24JSlGjY&index=12) <br> [整合 Azure AD 與 Azure Kubernetes Service](/azure/aks/azure-ad-integration-cli) <br> [叢集組態檔的限制存取](/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>部署至生產環境並套用最佳作法
 
@@ -51,7 +51,7 @@ ms.locfileid: "101787513"
 > | 檢查清單 | 資源 |
 > |---|---|
 > | **使用群組成員資格來控制對叢集的存取。** 設定 Kubernetes 角色型存取控制 (Kubernetes RBAC) ，根據使用者身分識別或群組成員資格來限制對叢集資源的存取。 | [使用 Kubernetes RBAC 和 Azure AD 身分識別來控制對叢集資源的存取](/azure/aks/azure-ad-rbac)    |
-> | **建立秘密管理原則。** 使用 Kubernetes 中的秘密管理來安全地部署及管理機密資訊（例如密碼和憑證）。 | [瞭解 Kubernetes 中的秘密管理 (影片) ](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) |
+> | **建立秘密管理原則。** 使用 Kubernetes 中的秘密管理來安全地部署及管理機密資訊（例如密碼和憑證）。 | [瞭解 Kubernetes 中的秘密管理 (影片) ](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=KmhM33j5WYk&index=10) |
 > | **使用網路原則來保護 pod 內的網路流量。** 套用最低許可權原則來控制叢集中 pod 之間的網路流量。 | [使用網路原則保護 pod 內流量](/azure/aks/use-network-policies) |
 > | **使用授權 Ip 來限制對 API 伺服器的存取。** 將對 API 伺服器的存取限制為一組有限的 IP 位址範圍，以改善叢集安全性並將攻擊面降至最低。 | [保護對 API 伺服器的存取](/azure/aks/api-server-authorized-ip-ranges) |
 > | **限制叢集輸出流量。** 瞭解當您限制叢集的輸出流量時，所允許的埠和位址。 您可以使用 Azure 防火牆或協力廠商防火牆設備來保護輸出流量，並定義這些必要的埠和位址。 | [在 AKS 中控制叢集節點的輸出流量](/azure/aks/limit-egress-traffic) |

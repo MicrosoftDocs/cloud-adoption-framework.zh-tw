@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 01204abd59f06b8d1467ef43bd58dcafbb748f40
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 2cbf5a203a0b03d1247c9293a4c75e33db5caa02
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788975"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112903"
 ---
 <!-- cSpell:ignore autoscaler PDBs -->
 
@@ -71,4 +71,4 @@ ms.locfileid: "101788975"
 > |--|--|
 > | **自動調整叢集以符合應用程式需求。** 為了滿足應用程式的需求，您可能需要使用叢集自動調整程式來調整自動執行工作負載的節點數目。 | <li> [設定 Kubernetes 叢集自動調整程式](/azure/aks/cluster-autoscaler) |
 > | **規劃商務持續性和嚴重損壞修復。** 規劃多區域部署、建立儲存體遷移計畫，以及啟用容器映射的異地複寫。 | <li> [區域部署的最佳作法](/azure/aks/operator-best-practices-multi-region) <li> [Azure Container Registry 異地複寫](/azure/container-registry/container-registry-geo-replication) |
-> | **大規模設定監視和疑難排解。** 在 Kubernetes 中設定應用程式的警示和監視。 瞭解預設設定、如何整合更先進的計量，以及如何新增您自己的自訂監視和警示來可靠地操作您的應用程式。 | <li> [開始使用 Kubernetes (影片的監視和警示) ](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <li> [使用適用于容器的 Azure 監視器來設定警示](/azure/azure-monitor/containers/container-insights-overview) <li> [檢查 &nbsp; &nbsp; &nbsp; 主要元件的診斷記錄](/azure/aks/view-control-plane-logs) <li> [Azure Kubernetes Service (AKS) 診斷](/azure/aks/concepts-diagnostics) |
+> | **大規模設定監視和疑難排解。** 在 Kubernetes 中設定應用程式的警示和監視。 瞭解預設設定、如何整合更先進的計量，以及如何新增您自己的自訂監視和警示來可靠地操作您的應用程式。 | <li> [開始使用 Kubernetes (影片的監視和警示) ](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=W7aN_z-cyUw&index=16) <li> [使用適用于容器的 Azure 監視器來設定警示](/azure/azure-monitor/containers/container-insights-overview) <li> [檢查 &nbsp; &nbsp; &nbsp; 主要元件的診斷記錄](/azure/aks/view-control-plane-logs) <li> [Azure Kubernetes Service (AKS) 診斷](/azure/aks/concepts-diagnostics) |

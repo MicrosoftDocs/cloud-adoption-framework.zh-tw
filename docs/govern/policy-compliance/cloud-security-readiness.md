@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 4daada6803f18554015f11469e1e31c3efea506a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 7a52ba860bfe3de9851d2c7a378d58fe75162b26
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792409"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112376"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO 雲端整備指南
 
@@ -25,9 +25,9 @@ ms.locfileid: "101792409"
 
 就像大部分的原則一樣，組織內的安全性和治理原則通常會成長茁壯。 發生安全性事件時，這些事件會塑造出原則來通知使用者，並降低相同事件重複發生的機會。 此方式雖然自然，卻會產生原則膨脹與技術相依性。 雲端轉換旅程創造出將原則現代化和重設的獨特機會。 在準備任何轉換旅程時，CISO 可透過擔任[原則檢閱](./cloud-policy-review.md)的主要關係人，來建立立即且可測量的值。
 
-在這類審核中，CISO 的角色是在現有原則/合規性的條件約束與雲端提供者的改進安全性狀態之間建立安全的平衡。 此程序的測量可以透過許多形式達成，並通常會以可安全地卸載到雲端提供者的安全性原則數目來測量。
+在這類審核中，CISO 的角色是在現有原則/合規性的條件約束與雲端提供者的改進安全性狀態之間建立安全的平衡。 測量此進度可能需要許多形式，通常是以安全地卸載至雲端提供者的安全性原則數量來測量。
 
-**傳送安全性風險：** 當服務移至基礎結構即服務 (IaaS) 裝載模型時，企業會假設硬體布建的直接風險較低。 但此風險並沒有就此消失，而是被轉換到雲端廠商身上。 如果雲端廠商的硬體布建方法提供相同等級的風險降低風險，在安全的可重複程式中，就會從公司 IT 的職責區域中移除硬體布建執行的風險，並轉移至雲端提供者。 這可減少公司 IT 負責管理的整體安全性風險，不過仍應定期追蹤和審核風險本身。
+**傳送安全性風險：** 當服務移至基礎結構即服務 (IaaS) 裝載模型時，企業會假設硬體布建的直接風險較低。 風險不會被移除，而是轉移給雲端廠商。 如果雲端廠商的硬體布建方法提供相同等級的風險降低風險，在安全的可重複程式中，就會從公司 IT 的職責區域中移除硬體布建執行的風險，並轉移至雲端提供者。 這可降低公司 IT 負責管理的整體安全性風險，不過仍應定期追蹤和審核風險本身。
 
 隨著解決方案進一步「向上堆疊」，以納入平臺即服務 (PaaS) 或軟體即服務 (SaaS) 模型，您可以避免或傳輸額外的風險。 當風險被安全地移到雲端提供者時，執行、監視及強制執行安全性原則或其他合規性原則的成本也都能安全地降低。
 
@@ -44,7 +44,7 @@ ms.locfileid: "101792409"
 - [安全性開發生命週期，內部審核](https://www.microsoft.com/sdl)
 - [必要的安全性訓練、背景檢查](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
 - [滲透測試、入侵偵測、DDoS、稽核和記錄](https://www.microsoft.com/security/business/operations) \(英文\)
-- [尖端的資料中心](https://www.microsoft.com/cloud-platform/global-datacenters)、實體安全性、[安全網路](/azure/security/security-network-overview)
+- [尖端的資料中心](https://azure.microsoft.com/global-infrastructure/)、實體安全性、[安全網路](/azure/security/fundamentals/network-overview)
 
 **隱私權與控制：**
 

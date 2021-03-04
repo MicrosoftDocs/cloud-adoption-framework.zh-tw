@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 4b2934eff75f77ddfc4aa4a6925b7b41e2d003c4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4543821d183169ff4932f62118915c71db2fe6fc
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791916"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113804"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -130,7 +130,7 @@ Contoso 管理員將 Team Foundation Server 實例升級為 Team Foundation Serv
      ![用於驗證 Team Foundation Server 安裝的 [產品待處理專案] 窗格螢幕擷取畫面。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 部分 Team Foundation Server 升級需要在升級完成後執行 [設定功能嚮導]。 [深入了解](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=azure-devops preserve-view=true viewFallbackFrom=vsts)。
+> 部分 Team Foundation Server 升級需要在升級完成後執行 [設定功能嚮導]。 [深入了解](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)。
 
 **需要其他協助？**
 
@@ -479,13 +479,13 @@ Contoso 管理員會執行試執行的遷移，以確定一切都如預期般運
 
 **需要其他協助？**
 
-如需詳細資訊，請參閱 [將存放庫從 TFVC 匯入 Git](/azure/devops/repos/git/import-from-tfvc?view=azure-devops preserve-view=true viewFallbackFrom=vsts)。
+如需詳細資訊，請參閱 [將存放庫從 TFVC 匯入 Git](/azure/devops/repos/git/import-from-tfvc?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
 現在完成遷移後，Contoso 團隊必須執行下列動作：
 
-- 檢閱[匯入之後](/azure/devops/migrate/migration-post-import?view=azure-devops preserve-view=true viewFallbackFrom=vsts)一文，以了解其他匯入活動的相關資訊。
+- 檢閱[匯入之後](/azure/devops/migrate/migration-post-import?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)一文，以了解其他匯入活動的相關資訊。
 - 請刪除 TFVC 存放庫或將其放在唯讀模式中。 不能使用程式碼基底，但可以參考其歷程記錄。
 
 ## <a name="post-migration-training"></a>移轉後訓練

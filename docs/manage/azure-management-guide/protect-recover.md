@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: af73cfe2b5bedfa414968f43193d3fc252268f10
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 358032dd02ad1db252beec3fab50d17a6e68d643
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790420"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113736"
 ---
 <!-- docutune:ignore "provide advanced threat protection" -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "101790420"
 
 對於存在於 Azure 中的資料，Azure 備份提供各種不同的保護層級。 例如，當備份 Azure 虛擬機器和 Azure 檔案儲存體等重要雲端基礎結構元件時，其提供 [ Azure 虛擬機器備份](/azure/backup/backup-azure-vms-introduction) 和 [Azure 檔案備份](/azure/backup/azure-file-share-backup-overview)。 針對較重要的元件（例如在 Azure 虛擬機器中執行的資料庫），它為 [SQL Server](/azure/backup/backup-azure-sql-database) 和 [SAP HANA](/azure/backup/sap-hana-db-about) 提供了更低 RPO 的專用資料庫備份解決方案。
 
-若要瞭解使用 Azure 備份來啟用備份有多麼容易，請參閱下一節，以啟用 Azure 虛擬機器的備份。
+請參閱下一節，以瞭解您可以如何輕鬆地啟用 Azure 虛擬機器的備份。
 
 ### <a name="enable-backup-for-an-azure-vm"></a>啟用 Azure VM 的備份
 

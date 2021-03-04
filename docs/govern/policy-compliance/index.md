@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: f89f34227e26657a80ef2e9eacb9bdf7397b1649
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: c2a019cbfbf1eec798bf4ca9858d415ad93c4884
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792834"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112325"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>準備公司的雲端 IT 原則
 
@@ -43,7 +43,7 @@ ms.locfileid: "101792834"
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>雲端治理的漸進式方法
 
-雲端治理的漸進方法假設不可超過[業務風險容忍](./risk-tolerance.md)。 相反地，它假設治理的角色是要加速業務變更、協助工程師了解架構指導方針，並確保定期交流及補救[業務風險](./business-risk.md)。 另一方面，治理的傳統角色可能會變成工程師或業務整體在採用上的障礙。
+雲端治理的漸進方法假設無法接受超過 [企業風險的承受度](./risk-tolerance.md)。 相反地，它假設治理的角色是要加速業務變更、協助工程師了解架構指導方針，並確保定期交流及補救[業務風險](./business-risk.md)。 另一方面，治理的傳統角色可能會變成工程師或業務整體在採用上的障礙。
 
 若使用雲端治理的漸進方法，建置新解決方案的小組和為企業防範業務風險的小組之間可能會有一些自然的摩擦。 這兩個小組在此模型中可能變成以漸進或短期衝刺方式合作的同事。 作為同事，雲端治理小組和雲端採用小組開始合作，以公開、評估及補救業務風險。 此工作可以建立減少摩擦並在小組織之間建立合作關係的自然方法。
 
@@ -57,7 +57,7 @@ ms.locfileid: "101792834"
 
 ## <a name="incremental-policy-growth"></a>漸進原則成長
 
-漸進原則成長是隨時間增長原則和雲端治理的關鍵機制。 它也是採用漸進模型來治理的關鍵需求。 為了讓此模型正常運作，治理小組必須於每次短期衝刺致力於正在進行的時間配置，才能評估及實作變更治理專業領域。
+漸進原則成長是隨時間增長原則和雲端治理的關鍵機制。 這也是採用累加式模型來進行治理的關鍵需求。 為了讓此模型正常運作，治理小組必須於每次短期衝刺致力於正在進行的時間配置，才能評估及實作變更治理專業領域。
 
 **短期衝刺時間需求：** 在每個反覆項目開始時，每個雲端採用小組都建立要在目前漸進階段中遷移或採用之資產的清單。 雲端治理小組應該要有足夠的時間可檢閱清單、驗證資產的資料分類、評估與每個資產相關聯的任何新風險、更新架構指導方針，並針對變更為小組進行教育。 這些工作通常需要 10-30 小時 (每次短期衝刺)。 此參與層級也應該需要至少一個專職員工來管理大型雲端採用工作中的治理。
 

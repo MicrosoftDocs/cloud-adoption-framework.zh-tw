@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3a528339c88a5ec70381580fefdcd358d9b60c93
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: c21b574516192b25d0249e1cebe37c4d78f94627
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789519"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113039"
 ---
 # <a name="cost-management-sample-policy-statements"></a>成本管理範例原則聲明
 

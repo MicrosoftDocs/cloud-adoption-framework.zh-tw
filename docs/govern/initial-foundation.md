@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: cdbba0f9047a351af9240712f69e4886ea4750d6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: eca952db591f2d906a5189566ee537ff4f4eacf5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020109"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112342"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>建立初始雲端治理基礎
 
@@ -32,7 +32,7 @@ ms.locfileid: "97020109"
 - [標準治理指南](./guides/standard/index.md)：以建議的初始雙訂用帳戶模型為基礎的大部分組織指南，其設計目的是在多個區域中部署，但不橫跨公用和主權/政府雲端。
 - [適用於複雜企業的治理指南](./guides/complex/index.md)：適用於由多個獨立 IT 業務單位或跨公用和主權/政府雲端管理的企業指南。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 管理治理基礎之後，請套用適合的建議，以改善解決方案並防範有形風險。
 

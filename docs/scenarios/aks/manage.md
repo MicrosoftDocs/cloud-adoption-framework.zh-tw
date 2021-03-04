@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 90a99c1c7c817b6bb8e578515f1fae8b8d7ae341
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e8c6d6074e075b6804038269dfb5f570dbe7488c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793662"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112869"
 ---
 # <a name="manage-modern-container-solutions-clusters"></a>管理新式容器解決方案叢集
 
@@ -52,7 +52,7 @@ ms.locfileid: "101793662"
 
 ### <a name="inventory-and-visibility"></a>清查和可見性
 
-監視容器和 AKS 叢集會使用您的作業基準中包含的工具、儀表板和警示。 不過，您可能需要進行更多設定，以將容器中的資料取得至 operations monitoring 工具，例如 [適用于容器的 Azure 監視器](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json toc=/azure/cloud-adoption-framework/toc.json)。 請參閱 [適用于容器的 Azure 監視器總覽](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json toc=/azure/cloud-adoption-framework/toc.json) ，以收集將容器和 AKS platform 作業新增至您的作業基準所需的資料。
+監視容器和 AKS 叢集會使用您的作業基準中包含的工具、儀表板和警示。 不過，您可能需要進行更多設定，以將容器中的資料取得至 operations monitoring 工具，例如 [適用于容器的 Azure 監視器](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json)。 請參閱 [適用于容器的 Azure 監視器總覽](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json) ，以收集將容器和 AKS platform 作業新增至您的作業基準所需的資料。
 
 設定 Azure 監視器以收集容器上的資料之後，您可以在集中式管理程式中監視下欄區域：
 

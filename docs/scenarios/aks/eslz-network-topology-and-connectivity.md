@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 695d46a7641ec300aaf7956537f2b8cd2a3363fa
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d04811ba3f0aa034362cb1683d82074dfd5eb776
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794340"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102111985"
 ---
 # <a name="network-topology-and-connectivity-for-azure-kubernetes-service-aks-enterprise-scale-scenario"></a>適用于 Azure Kubernetes Service (AKS) 企業規模案例的網路拓撲和連線能力
 
@@ -29,7 +29,7 @@ ms.locfileid: "101794340"
 - 虛擬節點可以用來進行快速叢集調整，但有一些 [已知的限制](/azure/aks/virtual-nodes-portal)。
 - AKS 叢集支援基本和標準的 Azure 負載平衡器 Sku。
 - 您可以使用公用或內部負載平衡器來公開 AKS 服務。 內部負載平衡器可以設定在與 Kubernetes 節點相同的子網中，或在專用子網中設定。
-- 適用于 AKS 的 azure 原則和 [Azure 原則附加](/azure/governance/policy/concepts/policy-for-kubernetes "適用於 AKS 的 Azure 原則") 元件可以控制和限制在 AKS 叢集中建立的物件，例如拒絕在叢集中建立公用 IP 位址。
+- 適用于 AKS 的 azure 原則和 [Azure 原則附加](/azure/governance/policy/concepts/policy-for-kubernetes) 元件可以控制和限制在 AKS 叢集中建立的物件，例如拒絕在叢集中建立公用 IP 位址。
 - AKS 使用 CoreDNS 為叢集中執行的 pod 提供名稱解析。
   - CoreDNS 會直接解析叢集內部網域。
   - 其他網域將轉送至 Azure 虛擬網路中所設定的 DNS 伺服器，這會是預設的 Azure DNS 解析程式，或在虛擬網路層級設定的任何自訂 DNS 伺服器。

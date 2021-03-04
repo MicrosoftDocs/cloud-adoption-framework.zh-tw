@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 77f2bd2db91ec8c335675d69ee115fb1f9117bff
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0d8eda2b8f65a305cbd23ba02a80466ced5e657e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016522"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113617"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>在雲端管理中建立商務一致性
 
@@ -38,7 +38,7 @@ ms.locfileid: "97016522"
 
 或者，如果解決方案已部署至雲端，則可以直接在 Azure 中標記這些相同的工作負載和相關聯的資產。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 藉由定義 [工作負載的重要性](./criticality.md)，開始建立商務調整。
 

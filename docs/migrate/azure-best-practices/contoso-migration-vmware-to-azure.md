@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 66b5a9971af9e39bb9333496f4eff09f5975a3d1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 6f2048d17f62cf5f555038f43a394df8112b181b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787003"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113396"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -88,7 +88,7 @@ Contoso 會藉由結合優缺點清單來評估其建議的設計，如下表所
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | <li>高效能的裸機 VMware 基礎結構。 <li>專為 Contoso 所專用的基礎結構，實際上與其他客戶的基礎結構隔離。 <li>因為 Contoso 使用的是使用 VMware 的重新裝載，所以沒有特殊的設定或遷移複雜度。 <li>Contoso 可以使用適用于舊版 Windows 和 SQL 平臺的 [Azure 混合式權益](https://azure.microsoft.com/pricing/hybrid-benefit/) 和 [延伸安全性更新](https://www.microsoft.com/cloud-platform/windows-server-2008) ，來利用其軟體保證的投資。 <li>Contoso 會保留 Azure 中應用程式 Vm 的完整控制權。 <br><br> |
+| **優點** | <li> 高效能的裸機 VMware 基礎結構。 <li> 專為 Contoso 所專用的基礎結構，實際上與其他客戶的基礎結構隔離。 <li> 因為 Contoso 使用的是使用 VMware 的重新裝載，所以沒有特殊的設定或遷移複雜度。 <li> Contoso 可以使用適用于舊版 Windows 和 SQL 平臺的 [Azure 混合式權益](https://azure.microsoft.com/pricing/hybrid-benefit/) 和 [延伸安全性更新](/windows-server/) ，來利用其軟體保證的投資。 <li> Contoso 會保留 Azure 中應用程式 Vm 的完整控制權。 <br><br> |
 | **缺點** | <li>Contoso 必須繼續將應用程式支援為 VMware Vm，而不是將其移至 Azure App Service 和 Azure SQL Database 等受控服務。 <li>Azure VMware 解決方案的設定與定價最少三個大型節點，而不是根據 Azure IaaS 中的個別 Vm。 Contoso 將需要規劃其容量需求，因為公司目前使用的內部部署環境會限制它免于 Azure 中其他服務的隨選本質。 |
 
 > [!NOTE]

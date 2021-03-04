@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 6e7b37b5ff6b299027bc89ab18974a10e5dc4083
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 2ed195a6d5cf4e7c8f0b86244aa5c4f28f5b0178
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174245"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113379"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>雲端管理中的作業合規性
 
@@ -46,8 +46,6 @@ ms.locfileid: "98174245"
 ### <a name="update-consistency"></a>更新一致性
 
 方法的穩定性可能會導致更穩定的作業。 但在雲端管理程式中需要進行一些變更。 尤其是，定期修補和效能變更對於減少中斷和控制成本而言是不可或缺的。
-
-<!-- docutune:ignore "a cloud management methodology" -->
 
 成熟雲端管理方法的其中一個價值，是專注于穩定並控制必要的變更。
 

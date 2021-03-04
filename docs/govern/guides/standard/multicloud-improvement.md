@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 24a6bb40601f40df0fff9f6b21c225413f796b90
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 08fc6d61500fc35de09a878603129070eabab4bf
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020653"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112444"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準企業治理指南：多重雲端改進
 
@@ -32,7 +32,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 從那時起，某些將會影響治理的事項已經改變：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
-- IT 作業或雲端作業主要由 Azure 監視器和相關的自動化程式所管理。
+- IT 作業或雲端作業主要是由 Azure 監視器和相關的自動化程式所管理。
 - 嚴重損壞修復和商務持續性是由 Azure 復原服務保存庫所控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。
@@ -61,7 +61,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 
 ## <a name="incremental-improvement-of-governance-practices"></a>治理做法的累加式改進
 
-本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這些設計變更會一起完成，以達成新的公司原則聲明。
+本文的這一節將會變更治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理 + 計費的實施。 這些設計變更會一起完成，以達成新的公司原則聲明。
 
 1. 網路連線。 此步驟由網路和 IT 安全性小組執行，並由雲端治理小組所支援。 新增從 MPLS/租用線路提供者到新雲端的連線，將會整合網路。 新增路由表和防火牆設定，將控制環境之間的存取與流量。
 2. 合併識別提供者。 根據次要雲端中所裝載的工作負載而定，有各種不同選項可用於合併識別提供者。 以下是一些範例：
@@ -72,7 +72,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
     2. 次要雲端中的 VM 可能會受到用來保護內部部署資產的相同 Azure Site Recovery 流程所保護。
 4. 將資產新增至 Azure 成本管理 + 計費。
     1. Azure 成本管理 + 計費是以多重雲端工具的形式從頭開始設計。
-    2. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理 + 計費相容。 可能需要額外成本。
+    2. 次要雲端中的虛擬機器可能會與 Azure 成本管理相容，以及某些雲端提供者的計費。 可能需要額外成本。
 5. 將資產新增至 Azure 監視器。
     1. Azure 監視器是以混合式雲端工具的形式從頭開始設計。
     2. 次要雲端中的虛擬機器可能會與 Azure 監視器代理程式相容，好讓虛擬機器包含於 Azure 監視器以進行作業監視。

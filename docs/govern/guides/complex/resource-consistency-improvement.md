@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 1078c2d64fb2053f22e8a17602d174e14091a227
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2a0d44baf496be0999cdbee5aa3d5f659a0441f8
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112614"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>適用于複雜企業的治理指南：改善資源一致性專業領域
 
@@ -76,9 +76,9 @@ ms.locfileid: "97020942"
 
 ## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
-本文的這一節將改進治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
+本文的這一節將改進治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
 
-遵循此虛構範例的體驗，會假設已發生受保護的資料變更。 在這個最佳做法的基礎上，下列內容將新增作業監控需求，為任務關鍵型應用程式準備訂用帳戶。
+在此虛構範例的體驗下，假設已發生受保護的資料變更。 在這個最佳做法的基礎上，下列內容將新增作業監控需求，為任務關鍵型應用程式準備訂用帳戶。
 
 **公司 IT 訂** 用帳戶：將下列各項新增至公司 IT 訂用帳戶，作為中樞。
 
@@ -86,7 +86,7 @@ ms.locfileid: "97020942"
     1. 在此使用案例中，雲端作業小組選擇 Azure 監視器作為監視要徑任務應用程式的主要工具。
     1. 該小組也選擇 Azure Site Recovery 作為主要的 BCDR 工具。
 1. Azure Site Recovery 的執行。
-    1. 定義和部署備份和復原程式的 Azure Site Recovery 保存庫。
+    1. 定義及部署用於備份和復原程式的 Azure Site Recovery 保存庫。
     1. 建立 Azure 資源管理範本，以在每個訂用帳戶中建立保存庫。
 1. Azure 監視器的執行。
     1. 一旦識別出關鍵性的訂用帳戶之後，就可以建立 Log Analytics 工作區。
@@ -108,7 +108,7 @@ ms.locfileid: "97020942"
 
 將這些流程和變更新增至治理 MVP，有助於補救與資源治理相關聯的許多風險。 同時還會新增可加強雲端感知作業的復原、大小調整及監視的必要控制項。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 隨著雲端採用成長並提供額外的商業價值，風險和雲端治理需求也會改變。 針對本指南中的虛構公司，下一個觸發程式是當部署規模超過1000個資產到雲端，或每月支出超過每個月 $10000 美元時。 此時，雲端治理小組會新增成本管理控制項。
 

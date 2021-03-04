@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 0892e38abdde324bdb58595bdabc9136d55a20ee
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b8ac9e7f9041fe94d0644e06e342a1a1f6978d8a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794271"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112002"
 ---
 # <a name="use-virtual-machine-extensions-and-an-azure-resource-manager-template-to-deploy-custom-scripts-to-azure-arc-linux-and-windows-servers"></a>使用虛擬機器擴充功能和 Azure Resource Manager 範本，將自訂腳本部署至 Azure Arc Linux 和 Windows server
 
@@ -41,7 +41,7 @@ ms.locfileid: "101794271"
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. 如前文所述，本指南會從您已部署 Vm 或伺服器至 Azure Arc 的位置開始。在以下螢幕擷取畫面中，有一個 GCP 伺服器已與 Azure Arc 連線，並在 Azure 中顯示為資源。
+2. 如先前所述，本指南會從您已部署 Vm 或伺服器至 Azure Arc 的位置開始。下列螢幕擷取畫面顯示已連線到 Azure Arc 的 GCP 伺服器，並在 Azure 中顯示為資源。
 
     ![從已啟用 Azure Arc 之伺服器的資源群組螢幕擷取畫面。](./media/arc-vm-extension-custom-script/resource-group.png)
 
@@ -109,13 +109,13 @@ ms.locfileid: "101794271"
     - Windows：
 
          ```powershell
-         powershell -ExecutionPolicy Unrestricted -File custom-script-windows.ps1
+         powershell -ExecutionPolicy Unrestricted -File custom_script_windows.ps1
          ```
 
     - Linux：
 
          ```bash
-         ./custom-script-linux.sh
+         ./custom_script_linux.sh
          ```
 
 4. 若要部署適用于 Linux 或 Windows 的 ARM 範本，請流覽至 [ [部署] 資料夾](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/extensions/arm) ，並使用符合您作業系統的範本來執行下列命令：
@@ -140,7 +140,7 @@ ms.locfileid: "101794271"
 
   ![每日更新訊息的螢幕擷取畫面。](./media/arc-vm-extension-custom-script/daily-message.png)
 
-- 針對 Windows VM，請使用 RDP 連接 VM，並確認已安裝額外的軟體： Microsoft Edge、7-Zip 和 Visual Studio Code。
+- 透過 RDP 連接到 Windows VM，並確認已安裝其他軟體： Microsoft Edge、7-zip 和 Visual Studio Code。
 
   ![已安裝其他軟體的螢幕擷取畫面。](./media/arc-vm-extension-custom-script/additional-software.png)
 

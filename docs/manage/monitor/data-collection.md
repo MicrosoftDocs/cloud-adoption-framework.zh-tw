@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 7bf30e89bd3560dac8f0a3a9e62f01143a1e7c5f
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: fc3021199c33e495d31134f65693a8459482bfc1
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174279"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113991"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>雲端監視指南：收集正確的資料
 
@@ -29,7 +29,7 @@ ms.locfileid: "98174279"
 - 資源產生了哪些計量需要監視？
 - 服務擁有者、支援小組和其他人員將如何搜尋記錄？
 
-您如何回答這些問題，以及警示的準則，會決定您將如何使用監視平臺。 如果您要從現有的監視平臺或監視工具集進行遷移，請使用「遷移」作為機會重新評估您收集的信號。 尤其是當您遷移或整合雲端式監視平臺（例如 Azure 監視器）時，必須考慮幾個成本因素。 請記住，監視資料必須是可採取動作的。 您需要收集優化的資料，為您提供服務整體健全狀況的「10000英尺」觀點。 定義來識別真實事件的檢測應該盡可能簡單、可預測且可靠。
+您如何回答這些問題，以及警示的準則，會決定您將如何使用監視平臺。 如果您要從現有的監視平臺或監視工具集進行遷移，請使用「遷移」作為機會重新評估您收集的信號。 這特別適用于當您遷移或整合 Azure 監視器等雲端式監視平臺時，需要考慮的幾個成本因素。 請記住，監視資料必須是可採取動作的。 您需要收集優化的資料，為您提供服務整體健全狀況的「10000英尺」觀點。 定義來識別真實事件的檢測應該盡可能簡單、可預測且可靠。
 
 ## <a name="develop-a-monitoring-configuration"></a>開發監視設定
 

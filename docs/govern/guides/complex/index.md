@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 16a45aa4eceb2f16cb9e8e82ba9e4d7a99976ca9
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 9297888230100902b0597a4618754319d6ece647
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789485"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112699"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>適用於複雜企業的治理指南
 
 ## <a name="overview-of-best-practices"></a>最佳做法概觀
 
-這個治理指南會遵循虛構公司在治理成熟度各個階段的體驗， 並以實際的客戶體驗為基礎。 建議的最佳做法則會以該虛構公司的條件約束和需求為主。
+這個治理指南會遵循虛構公司在治理成熟度各個階段的體驗， 它是以真實客戶體驗為基礎。 建議的最佳做法則會以該虛構公司的條件約束和需求為主。
 
 此概觀會根據最佳做法來定義治理的最簡可行產品 (MVP) 以作為快速起點。 它也提供一些治理改進方法的連結，這些改進會隨著新業務或技術風險的出現而進一步新增更多最佳做法。
 

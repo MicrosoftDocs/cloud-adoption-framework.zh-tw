@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1738bdda4147b3f129baab218d408706caa32a95
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9508b43837944ebfeb2bb1c10b93ff8fb9fed36f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016794"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113668"
 ---
 # <a name="set-up-basic-alerts"></a>設定基本警示
 
@@ -21,7 +21,7 @@ ms.locfileid: "97016794"
 
 ## <a name="azure-monitor-alerts"></a>Azure 監視器警示
 
-Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) 功能，可在發生錯誤時透過電子郵件或訊息通知您。 這些功能是以常見的資料監視平臺為基礎，其中包含伺服器和其他資源所產生的記錄和計量。 藉由使用 Azure 監視器中的一組通用工具，您可以分析結合多個資源的資料，並使用它來觸發警示。 這些觸發程式可以包括：
+Azure 監視器提供 [警示](/azure/azure-monitor/alerts/alerts-overview) 功能，可在發生錯誤時透過電子郵件或訊息通知您。 這些功能是以常見的資料監視平臺為基礎，其中包含伺服器和其他資源所產生的記錄和計量。 您可以使用 Azure 監視器中的一組通用工具來分析合併自多個資源的資料，並使用它來觸發警示。 這些觸發程式可以包括：
 
 - 度量值。
 - 記錄搜尋查詢。
@@ -29,9 +29,9 @@ Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) �
 - 基礎 Azure 平臺的健康情況。
 - 測試網站的可用性。
 
-如需此服務所收集的監視資料來源的詳細描述，請參閱 [Azure 監視器資料來源清單](/azure/azure-monitor/platform/data-sources) 。
+如需此服務所收集的監視資料來源的詳細說明，請參閱 [Azure 監視器資料來源清單](/azure/azure-monitor/agents/data-sources) 。
 
-如需使用 Azure 入口網站手動建立及管理警示的詳細資訊，請參閱 [Azure 監視器檔](/azure/azure-monitor/platform/alerts-metric)。
+如需使用 Azure 入口網站手動建立及管理警示的詳細資訊，請參閱 [Azure 監視器檔](/azure/azure-monitor/alerts/alerts-metric)。
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>自動部署建議的警示
 
@@ -50,7 +50,7 @@ Azure 監視器提供 [警示](/azure/azure-monitor/platform/alerts-overview) �
 
 封裝會使用 HPE 伺服器硬體作為範例。 變更相關聯設定檔中的設定，以反映您的 OEM 硬體。 您也可以在設定檔中新增更多效能計數器。 若要部署封裝，請執行檔案 `New-CoreAlerts.ps1` 。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解支援您進行中作業的作業和安全性機制。
 

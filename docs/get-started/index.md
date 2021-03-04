@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: b80987d889bd24ac22ec9a6b41bff2530af4f2e1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 0148b36ea11db868c16f3245dce0f24295dc4894
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792154"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113124"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>開始使用雲端採用架構
 
@@ -45,7 +45,7 @@ ms.locfileid: "101792154"
 | 指南 | 描述 |
 | ----- | ----------- |
 | [我們想要將現有的工作負載遷移至雲端。](./migrate.md)                   | 如果您的主要焦點是將內部部署工作負載遷移至雲端，這份指南是很好的起點。 |
-| [我們想要在雲端中建立新的產品和服務。](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks-start-here?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json)             | 本指南可協助您準備將創新解決方案部署至雲端。                                       |
+| [我們想要在雲端中建立新的產品和服務。](/azure/architecture/reference-architectures/containers/aks-start-here?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json)             | 本指南可協助您準備將創新解決方案部署至雲端。                                       |
 | [我們遭到環境設計和設定封鎖。](./design-and-configuration.md) | 本指南提供快速的方法來設計和設定您的環境。                                           |
 
 ## <a name="improve-controls"></a>改善控制項

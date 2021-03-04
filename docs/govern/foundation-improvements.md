@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 885f2a63baf5e3f181016c47d864f7a8a3f77cb6
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 01cd2dad9ae189547a2ef94fd74162a241b9c6e6
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792018"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113753"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>改善您的初始雲端治理基礎
 

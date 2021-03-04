@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: c6b39638f1560e29c8be4fcdc146510c5f43e700
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a8b0ac0c446e7a163bae5f4fe5c120671c420601
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020007"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112359"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>進行雲端原則審核
 
@@ -27,8 +27,8 @@ ms.locfileid: "97020007"
 
 雲端轉換會建立天然的變化點，以重新考慮過去的舊版原則決策。 雲端中的技術功能和預設流程大幅改變，固有風險也大幅改變。 使用先前的範例，磁帶備份原則從單一失敗點的風險詞幹分析，藉由降低此風險來將資料保留在一個位置，而商務需要將風險設定檔降至最低。 在雲端部署中，有數個選項可提供相同的風險降低，且復原時間目標 (RTO) 更低。 例如：
 
-- 雲端原生解決方案可以啟用 Azure SQL Database 的異地複寫。
-- 混合式解決方案可使用 Azure Site Recovery 將 IaaS 工作負載複寫至 Azure。
+- 雲端原生解決方案可以啟用 Azure SQL 資料庫的異地複寫。
+- 混合式解決方案可以使用 Azure Site Recovery 將 IaaS 工作負載複寫至 Azure。
 
 當執行雲端轉換時，原則通常可控管雲端採用小組可用的許多工具、服務和程序。 如果這些原則是以舊技術為基礎，則可能會妨礙小組推動變革的工作。 在最糟的情況下，移轉小組會完全忽略重要原則，以便採取因應措施。 兩者都不是可接受的結果。
 
@@ -61,7 +61,7 @@ ms.locfileid: "97020007"
   - 也請務必考慮，上述需求中指定的時間軸可能已由不再存在於雲端中的技術條件約束所設定。 在單純套用舊版 RTO/RPO 之前，請務必先瞭解雲端的技術限制和功能。
 - 與雲端採用小組一起檢閱。 根據所實作的解決方案，遵守此資源一致性原則的方法有很多種。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解如何在您的雲端治理策略中包含資料分類。
 

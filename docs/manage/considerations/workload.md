@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 950e48e41b53bd99be14a694992cd920e34df4e9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bea0b70a8a99f44b592e94e7d3355f77add2d8f9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016182"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112308"
 ---
 # <a name="workload-operations-in-cloud-management"></a>雲端管理中的工作負載作業
 
@@ -23,7 +23,7 @@ ms.locfileid: "97016182"
 
 ## <a name="when-to-invest-in-workload-operations"></a>投入工作負載作業的時機
 
-_排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因。 當允許組合茁壯一段時間後，此規則通常會在 IT 組合的評論中加以說明。 根據需要投資的影響，原因可能不同，但一般準則成立：
+*排列準則* (也稱為 *80/20 規則*) 指出80% 的效果來自20% 的原因。 當允許組合茁壯一段時間後，此規則通常會在 IT 組合的評論中加以說明。 根據需要投資的影響，原因可能不同，但一般準則成立：
 
 - 80% 的系統失敗通常是20% 的常見錯誤或錯誤的結果。
 - 80% 的商業價值傾向于組合中的20% 工作負載。
@@ -93,9 +93,9 @@ _排列準則_ (也稱為 _80/20 規則_) 指出80% 的效果來自20% 的原因
 - **管理：** 讓系統在生產環境中執行的作業進程。
 - **安全性：** 保護應用程式和資料免于遭受威脅。
 
-為了協助改善整體作業， [Microsoft Azure Well-Architected 架構](/azure/architecture/framework) 會提供一種方法來評估特定工作負載，以遵守這些要素。 將支柱套用至平臺作業和工作負載作業。
+為了協助改善整體作業， [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) 提供了一種方法來評估特定的工作負載，以遵循這些支柱。 將支柱套用至平臺作業和工作負載作業。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完全瞭解雲端採用架構內的管理方法，現在您已準備好執行雲端管理原則。 瞭解如何在您的作業環境內使此方法可採取動作。
 

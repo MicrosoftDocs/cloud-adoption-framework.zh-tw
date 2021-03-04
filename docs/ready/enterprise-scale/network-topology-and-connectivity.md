@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 06aa20a707b816ea0bd004131747b0dcac1cb832
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 7fe77aaade7da6a4eabcc935c0d26678ac07deb4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788074"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112785"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -78,4 +78,4 @@ ms.locfileid: "101788074"
 
 ## <a name="connectivity-to-other-cloud-providers"></a>與其他雲端提供者的連線能力
 
-本節[提供將 Azure 企業規模登陸區域架構整合至其他雲端提供者的不同連線方法](../azure-best-practices/connectivity-to-other-cloud-providers.md)。
+本節[提供將 Azure 企業規模登陸區域架構整合至其他雲端提供者的不同連線方法](../azure-best-practices/connectivity-to-other-providers.md)。

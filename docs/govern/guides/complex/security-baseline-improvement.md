@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 21d579d72b0c7b7e822261f69efd4980a6cc3e60
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e8a2049249f5c060a1b49d9045fe019b13b8c0c0
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791406"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113719"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -29,7 +29,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 雲端治理小組會繼續隨著敘述而改變。 這兩位小組創始成員現在位居公司內最受尊崇的雲端結構設計師之列。 設定指令碼的集合會隨著新小組處理創新的新部署而不斷增加。 雲端治理小組也成長了。 最近，IT 營運小組的成員已加入雲端治理小組活動，以準備進行雲端作業。 作為此社群推手的雲端結構設計師會被視為雲端守護者和雲端加速者。
 
-雖然差異很微妙，但在建置以治理為重點的 IT 文化時，這是一個重要的區別。 雲端守護者會清除創新的雲端結構設計師所製造的混亂，而這兩個角色具有原本就會產生摩擦且對立的目標。 雲端守護者可協助保護雲端，讓其他雲端結構設計師可以更快速地移動並減少混亂。 雲端加速器會執行兩個函式，但也牽涉到建立範本來加速部署和採用，成為創新加速器以及五個雲端治理專業領域的 defender。
+雖然差異很微妙，但在建立治理導向的 IT 文化時，這是一項重要的區別。 雲端守護者會清除創新的雲端結構設計師所製造的混亂，而這兩個角色具有原本就會產生摩擦且對立的目標。 雲端守護者可協助保護雲端，讓其他雲端結構設計師可以更快速地移動並減少混亂。 雲端加速器會執行兩個函式，但也牽涉到建立範本來加速部署和採用，成為創新加速器以及五個雲端治理專業領域的 defender。
 
 ### <a name="changes-in-the-current-state"></a>處於目前狀態的變更
 

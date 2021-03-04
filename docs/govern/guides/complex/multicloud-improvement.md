@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 676732093b1d26c3b2221999d67ae2f010f6ac0a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5bc49f19dd8127412e2b417600c4be776d7ae0e4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021129"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112665"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>適用于複雜企業的治理指南：多重雲端改進
 
@@ -30,7 +30,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 從那時起，某些將會影響治理的事項已經改變：
 
 - 身分識別會由 Active Directory 的內部部署執行個體來控制。 透過複寫到 Azure Active Directory 來促成混合式身分識別。
-- IT 作業或雲端作業主要由 Azure 監視器和相關的自動化功能來管理。
+- IT 作業或雲端作業主要是透過 Azure 監視器和相關的自動化功能來管理。
 - 商務持續性和嚴重損壞修復 (BCDR) 由 Azure 復原服務保存庫控制。
 - Azure 資訊安全中心可用來監視安全性違規和攻擊。
 - Azure 資訊安全中心和 Azure 監視器可同時用來監視雲端治理。
@@ -59,7 +59,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 
 ## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
-本文的這一節會改善治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
+本文的這一節會改善治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
 
 1. 網路連線。 由治理所支援的網路和 IT 安全性所執行。
     1. 新增從 MPLS 或租用行提供者到新雲端的連線，將會整合網路。 新增路由表和防火牆設定，將控制環境之間的存取與流量。
@@ -70,8 +70,8 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
     1. Azure Site Recovery 從一開始就建立為混合式和多重雲端工具。
     2. 次要雲端中的虛擬機器可能會受到用來保護內部部署資產的相同 Azure Site Recovery 流程所保護。
 4. 將資產新增至 Azure 成本管理 + 計費。
-    1. Azure 成本管理 + 計費從頭開始建立為多重雲端工具。
-    2. 次要雲端中的虛擬機器可能會與某些雲端提供者的 Azure 成本管理 + 計費相容。 可能需要額外成本。
+    1. Azure 成本管理 + 計費已從頭開始建立為多重雲端工具。
+    2. 次要雲端中的虛擬機器可能會與 Azure 成本管理相容，以及某些雲端提供者的計費。 可能需要額外成本。
 5. 將資產新增至 Azure 監視器。
     1. 一開始已從混合式雲端工具建置 Azure 監視器。
     2. 次要雲端中的虛擬機器可能會與 Azure 監視器代理程式相容，能夠將它們包含於 Azure 監視器以進行操作監控。
@@ -81,7 +81,7 @@ Microsoft 認為客戶可以針對特定用途採用多個雲端。 本指南中
 
 根據技術需求或特定商務需求，多重雲端採用應包含在需要的位置。 隨著多重雲端採用的成長，複雜性和安全性風險也隨之增加。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在許多大型企業中，雲端治理的五個專業領域可能會阻礙採用。 下一篇文章有一些有關讓治理成為小組運動的其他想法，以協助確保雲端的長期成功。
 

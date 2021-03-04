@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 16f495d830e4e6feeb20bd162be850d903c2e244
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 16a110dd380149aaa72cbb316cbb549eec12ef42
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101795140"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114263"
 ---
 # <a name="create-a-vmware-vsphere-template-for-windows-server-2019"></a>建立適用于 Windows Server 2019 的 VMware vSphere 範本
 
@@ -80,23 +80,23 @@ ms.locfileid: "101795140"
 
 1. 安裝 VMware 工具並重新啟動。
 
-    ![WMware 工具安裝的第一個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-1.png)
+    ![VMware 工具安裝的第一個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-1.png)
 
-    ![WMware 工具安裝的第二個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-2.png)
+    ![VMware 工具安裝的第二個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-2.png)
 
-    ![WMware 工具安裝的第三個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-3.png)
+    ![VMware 工具安裝的第三個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-3.png)
 
-    ![WMware 工具安裝的第四個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-4.png)
+    ![VMware 工具安裝的第四個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-4.png)
 
-    ![WMware 工具安裝的第五個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-5.png)
+    ![VMware 工具安裝的第五個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-5.png)
 
-    ![WMware 工具安裝的第六張螢幕擷取畫面。](./media/vmware-template/windows-template-tools-6.png)
+    ![VMware 工具安裝的第六個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-6.png)
 
-    ![WMware 工具安裝的第七個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-7.png)
+    ![VMware 工具安裝的第七個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-7.png)
 
-    ![WMware 工具安裝的第八張螢幕擷取畫面。](./media/vmware-template/windows-template-tools-8.png)
+    ![VMware 工具安裝的第八張螢幕擷取畫面。](./media/vmware-template/windows-template-tools-8.png)
 
-    ![WMware 工具安裝的第九個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-9.png)
+    ![VMware 工具安裝的第九個螢幕擷取畫面。](./media/vmware-template/windows-template-tools-9.png)
 
 2. 執行 Windows 更新。
 
@@ -111,7 +111,7 @@ ms.locfileid: "101795140"
     - 停用 Internet Explorer 增強式安全性設定 (ESC)  (稍後可以透過群組原則或 PowerShell 腳本進行微調) 
     - 啟用遠端桌面
     - 在 PowerShell 中，安裝 [Chocolatey](https://chocolatey.org/install)
-  
+
       ```powershell
       Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
       ```

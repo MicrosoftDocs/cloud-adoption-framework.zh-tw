@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: b89f54d380bf8a9e6a828c951d5720f464f2d888
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0894bd86ce474bb26f9f1d2ed6f8b261f53bc193
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016148"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112393"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>套用設計原則和 advanced 作業
 
@@ -78,7 +78,7 @@ CCoE 中角色的自然對齊如下所示：
 
 改善系統設計最能有效改善任何常見平台的作業。 系統設計改進有助於提高穩定性並減少業務中斷。 個別系統的設計不在整個雲端採用架構中所採用環境檢視的範圍內。
 
-做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
+做為此架構的補充，[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) 提供引導原則來改善平台或特定工作負載的品質。 此架構的重點在於改善整個結構的五個要素：
 
 - **成本最佳化：** 管理成本以將傳遞的價值最大化。
 - **卓越的營運績效：** 追隨讓系統在生產環境中順利運作的作業流程。
@@ -88,7 +88,7 @@ CCoE 中角色的自然對齊如下所示：
 
 大部分的業務中斷等同於某種形式的技術債務，或架構缺失。 針對現有部署，您可以將系統設計改善視為對現有技術債務的償還。 針對新部署，則可以將系統設計改善視為技術債務的迴避。 下一節「自動補救」探討瞭解決無法或不應解決的技術債務的方式。
 
-若要改善系統設計，請進一步瞭解 [Microsoft Azure Well-Architected 架構](/azure/architecture/framework)。 當您的系統設計改善時，請返回本文以找出新的機會，以改善及調整整個環境的改進。
+若要改善系統設計，請深入瞭解 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)。 當您的系統設計改善時，請返回本文以找出新的機會，以改善及調整整個環境的改進。
 
 ### <a name="automated-remediation"></a>建議的補救方式
 
@@ -104,12 +104,12 @@ CCoE 中角色的自然對齊如下所示：
 
 為了充分利用任何優化平臺的採用並將維護額外負荷降到最低，您應該將平臺新增至服務類別目錄。 類別目錄中的每個應用程式都可以透過服務類別目錄加以部署以供內部取用，或作為市集供應項目來供外部取用者取用。
 
-如需發行至服務類別目錄的相關資訊，請參閱 [發行至服務類別目錄](/azure/managed-applications/publish-service-catalog-app)的一系列。
+如需發行至服務類別目錄的相關資訊，請參閱 [發行至服務類別目錄](/azure/azure-resource-manager/managed-applications/publish-service-catalog-app)的一系列。
 
-### <a name="continuous-improvement"></a>持續改善
+### <a name="continuous-improvement"></a>持續改進
 
 平台特製化和平台作業都仰賴採用、平台、自動化和管理小組之間的強大意見反應迴圈。 以資料作為這些意見反應迴圈的基礎，可讓每個小組做出明智的決策。 針對可達成長期商務承諾的平臺作業，請務必利用集中式平臺專屬的深入解析。 因為容器和 SQL Server 是兩個最常見的集中管理平臺，請考慮下列文章來開始進行連續的改進資料收集：
 
-- [容器效能](/azure/azure-monitor/insights/container-insights-overview)
+- [容器效能](/azure/azure-monitor/containers/container-insights-overview)
 - [PaaS 資料庫效能](/azure/azure-monitor/insights/azure-sql)
 - [IaaS 資料庫效能](/azure/azure-monitor/insights/sql-assessment)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 5359d9960b4ac2c3054491fac1ba5e31037eef7b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 28ff0ca7457e7f53bcf81358b22128c6d34edef9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021605"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112682"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>部署加速專業領域概觀
 
@@ -41,7 +41,7 @@ ms.locfileid: "97021605"
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png) | <br> [部署加速專業領域範本](./template.md)：下載此範本以記錄部署加速專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png) | <br> [商務風險](./business-risks.md)：了解通常與部署加速專業領域相關聯的動機與風險。|
-| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資部署加速專業領域之正確時機的指標。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png) | <br> 指標[和度量](./metrics-tolerance.md)：瞭解是否為投資部署加速專業領域的正確時機。 |
 | <br> ![遵循圖示](../../_images/govern/process-enforce.png) | <br> [原則遵循流程](./compliance-processes.md)：用以在部署加速專業領域中支援原則合規性的建議流程。 |
 | <br> ![成熟度圖示](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。|
 | <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援部署加速專業領域的 Azure 服務。 |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 99e146fe7d1a7218efc5de212c163ea87739d557
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 8658150b7c472a1eb67c6002f3b7181a9b2e2d11
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794989"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114297"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-vmware-ubuntu-virtual-machine-and-connect-it-to-azure-arc"></a>使用 Terraform 方案部署 VMware Ubuntu 虛擬機器，並將其連線到 Azure Arc
 
@@ -82,17 +82,17 @@ ms.locfileid: "101794989"
 
 2. Terraform 方案會在 Microsoft Azure 和 VMware vSphere 中建立資源。 然後，它會在虛擬機器上執行腳本，以安裝 Azure Arc 代理程式和所有必要的構件。 此腳本需要有關 VMware vSphere 和 Azure 環境的特定資訊。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/ubuntu/terraform/scripts/vars.sh)使用適當的值編輯和更新每個變數。
 
-    - `TF-VAR-subscription-id` = 您的 Azure 訂用帳戶識別碼
-    - `TF-VAR-client-id` = 您的 Azure 服務主體名稱
-    - `TF-VAR-client-secret`= 您的 Azure 服務主體密碼
-    - `TF-VAR-tenant-id` = 您的 Azure 租使用者識別碼
-    - `TF-VAR-resourceGroup` = Azure 資源組名
-    - `TF-VAR-location` = Azure 區域
-    - `TF-VAR-vsphere-user` = vCenter 系統管理員使用者名稱
-    - `TF-VAR-vsphere-password` = vCenter 管理員密碼
-    - `TF-VAR-vsphere-server` = vCenter server FQDN/IP
-    - `TF-VAR-admin-user` = 操作系統管理員使用者名稱
-    - `TF-VAR-admin-password` = 操作系統管理員密碼
+    - `TF_VAR_subscription_id` = 您的 Azure 訂用帳戶識別碼
+    - `TF_VAR_client_id` = 您的 Azure 服務主體名稱
+    - `TF_VAR_client_secret`= 您的 Azure 服務主體密碼
+    - `TF_VAR_tenant_id` = 您的 Azure 租使用者識別碼
+    - `TF_VAR_resourceGroup` = Azure 資源組名
+    - `TF_VAR_location` = Azure 區域
+    - `TF_VAR_vsphere_user` = vCenter 系統管理員使用者名稱
+    - `TF_VAR_vsphere_password` = vCenter 管理員密碼
+    - `TF_VAR_vsphere_server` = vCenter server FQDN/IP
+    - `TF_VAR_admin_user` = 操作系統管理員使用者名稱
+    - `TF_VAR_admin_password` = 操作系統管理員密碼
 
 3. 從 CLI 流覽至複製的存放庫 `azure_arc_servers_jumpstart/vmware/ubuntu/terraform` 目錄。
 
@@ -100,9 +100,9 @@ ms.locfileid: "101794989"
 
     `source ./scripts/vars.sh`
 
-5. 除了 `TF-VAR` 您剛才匯出的環境變數之外，您還可以在中編輯 Terraform 變數， [`terraform.tfvars`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/ubuntu/terraform/terraform.tfvars) 以符合您的 VMware vSphere 環境。
+5. 除了 `TF_VAR` 您剛才匯出的環境變數之外，您還可以在中編輯 Terraform 變數， [`terraform.tfvars`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/ubuntu/terraform/terraform.tfvars) 以符合您的 VMware vSphere 環境。
 
-    ![TF-VAR 環境變數的螢幕擷取畫面](./media/vmware-terraform-ubuntu/variables.png)
+    ![「TF_VAR」環境變數的螢幕擷取畫面](./media/vmware-terraform-ubuntu/variables.png)
 
 6. 執行 `terraform init` 命令，此命令會下載 Terraform AzureRM、local 和 vSphere 提供者。
 
@@ -126,7 +126,7 @@ ms.locfileid: "101794989"
 
   ![已刪除且已啟用 Azure Arc 之伺服器的螢幕擷取畫面。](./media/vmware-terraform-ubuntu/delete-server.png)
 
-  如果您以手動方式刪除實例，則也應該刪除 Terraform 方案所建立的 *install-azure-arc-agent.sh* 。
+  如果您以手動方式刪除實例，則您也應該刪除 `install_arc_agent.sh` Terraform 方案所建立的。
 
 - 如果您想要卸載整個環境，請使用如下 `terraform destroy --auto-approve` 所示的命令。
 

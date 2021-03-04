@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 304136ceb8fe8bdedad89ebf52406722702ea064
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d23ca46ca9373d5fdf2cba652f1502294744fc6b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793038"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113243"
 ---
 # <a name="resource-consistency-decision-guide"></a>資源一致性決策指南
 
@@ -40,7 +40,7 @@ Azure [訂用帳戶設計](../subscriptions/index.md)可依您組織的結構、
 如果您對上述任一點回答了「否」，則應該將有問題的資源放在另一個資源群組中的其他位置。
 
 > [!IMPORTANT]
-> 資源群組也是區域專屬的項目；不過，資源常常會在相同資源群組內的不同區域中，因為其會以如上所述方式一起接受管理。 如需如何選擇區域的詳細資訊，請參閱[多個區域](../../migrate/azure-best-practices/multiple-regions.md)。
+> 資源群組也是特定區域;不過，資源通常會在相同資源群組內的不同區域中，因為它們是以如上所述的方式加以管理。 如需如何選擇區域的詳細資訊，請參閱[多個區域](../../migrate/azure-best-practices/multiple-regions.md)。
 
 ## <a name="deployment-consistency"></a>部署一致性
 
@@ -48,7 +48,7 @@ Azure 平台皆建置在基本的資源分組機制之上，提供的系統可�
 
 [Azure Resource Manager 範本](/azure/azure-resource-manager/templates/overview)可讓您使用預先決定的組態和資源群組結構，以一致的狀態重複部署資源。 Resource Manager 範本可協助您定義一組標準作為部署基礎。
 
-例如，您可以使用標準範本部署，將包含兩個虛擬機器的 Web 伺服器工作負載，部署為結合負載平衡器的 Web 伺服器，以分散伺服器之間的流量。 然後只要需要這類型的工作負載，就可以重複使用此範本建立結構完全相同的虛擬機器與負載平衡器組合，僅需變更涉及的部署名稱和 IP 位址。
+例如，您可以使用標準範本部署，將包含兩個虛擬機器的 Web 伺服器工作負載，部署為結合負載平衡器的 Web 伺服器，以分散伺服器之間的流量。 然後，您可以重複使用此範本，在需要這種類型的工作負載時，以負載平衡器建立結構完全相同的虛擬機器集，只變更所涉及的部署名稱和 IP 位址。
 
 您也可以用程式設計方式部署這些範本，並將它們與您的 CI/CD 系統整合。
 
@@ -70,7 +70,7 @@ Azure 平台皆建置在基本的資源分組機制之上，提供的系統可�
 
 ## <a name="automated-consistency"></a>自動化的一致性
 
-對於大型雲端部署而言，全域治理變得更加重要，而且更複雜。 務必要自動套用和部署資源時，強制執行控管需求，以及針對現有部署更新的需求。
+對於大型雲端部署而言，全域治理變得更加重要，而且更複雜。 部署資源時，請務必自動套用並強制執行治理需求，並符合現有部署的更新需求。
 
 [Azure 藍圖](/azure/governance/blueprints/overview)可讓組織支援 Azure 中大型雲端資產的全域治理。 藍圖超越了標準 Azure Resource Manager 範本所提供的功能，可建立完整且能夠部署資源及套用原則規則的部署協調流程。 藍圖支援下列功能：版本控制、更新使用藍圖之所有訂用帳戶的能力，以及鎖定已部署的訂用帳戶，藉此防止未經授權建立及修改資源。
 

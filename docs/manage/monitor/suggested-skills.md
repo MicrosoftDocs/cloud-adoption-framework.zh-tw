@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: f89da567e6869e77999eb55b9388fabf6f91daca
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 64c70208dc0030a221dd657a5ab83309734c78c5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788567"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113957"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "101788567"
   - [使用 AZURE CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)。
   - [開始使用 Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- 瞭解如何藉由 [在 Azure 中觀看實作為資源管理安全性](/learn/paths/implement-resource-mgmt-security)，以使用原則、Azure 角色型存取控制和其他 Azure 服務來保護資源。
+- 瞭解如何藉由 [在 Azure 中觀看實作為資源管理安全性](/learn/paths/implement-resource-mgmt-security/)，以使用原則、Azure 角色型存取控制和其他 Azure 服務來保護資源。
 
 - [監視 Microsoft Azure 資源和工作負載](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update) 可協助您瞭解如何使用 azure 監視工具來監視 azure 網路資源，以及內部部署資源。
 
@@ -66,7 +66,7 @@ ms.locfileid: "101788567"
 
   - [Microsoft Azure 資料庫監視](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) 腳本可協助您瞭解如何實行和使用 Azure sql Database、Azure Sql 資料倉儲和 AZURE Cosmos DB 的監視。
 
-  - 使用[Azure 監視器 Application Insights 檢測應用](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)程式是深入探討如何使用 APPLICATION insights SDK 從應用程式收集遙測資料，並從應用程式中 Node.js 元件。
+  - 使用[Azure 監視器 Application Insights 檢測應用](https://www.pluralsight.com/courses/microsoft-azure-application-insights-web-application-instrument)程式是深入探討如何使用 APPLICATION insights SDK 從應用程式收集遙測資料，並從應用程式中 Node.js 元件。
 
   - [應用程式的偵錯工具和分析](https://www.pluralsight.com/courses/devintersection-azureai-session-31) 是使用和解讀 Azure 監視器 Application Insights 快照集偵錯工具和分析工具所提供的資料，從 Microsoft 會議會話進行錄製。
 
@@ -88,23 +88,23 @@ Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 
 
 - [對應角色和技能](../../plan/suggested-skills.md)：用於對應雲端事業路徑的資源。 深入瞭解您的雲端角色和建議的技能。 依照您自己的步調遵循學習課程，建立您最需要的技能，以保持相關。
 
-- 探索 [azure 認證訓練和測驗](https://www.microsoft.com/learning/certification-overview.aspx) ，以取得您 azure 知識的官方認知。
+- 探索 [azure 認證訓練和測驗](/learn/certifications/) ，以取得您 azure 知識的官方認知。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps 和專案管理
 
 混合式雲端環境會將未定義的角色、責任和活動中斷。 組織必須移至現代化實務來管理服務（包括 agile 和 DevOps 方法），以簡化且有效率的方式，更符合現今企業的轉換和優化需求。
 
-在遷移至雲端監視平臺的過程中，負責管理企業監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 _開發_ 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供從 GitHub 中的認可和提取要求到工作專案的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure 面板來規劃和追蹤您的工作。
+在遷移至雲端監視平臺的過程中，負責管理企業監視的 IT 小組必須包含 agile 訓練和參與 DevOps 活動。 這也包括在 DevOps 的 *開發* 之後，藉由採取需求並轉換成組織敏捷式需求，來提供可反復調整並符合商務需求的最基本可行監視解決方案。 若要使用原始檔控制來管理反復監視解決方案套件和任何其他相關的輔助專案，請將您的 Azure DevOps Server 專案與 GitHub Enterprise 伺服器存放庫連接。 這會提供從 GitHub 中的認可和提取要求到工作專案的連結。 您可以使用 GitHub Enterprise 進行開發，以支援持續監視整合和部署，同時使用 Azure 面板來規劃和追蹤您的工作。
 
 若要深入瞭解，請參閱下列各項：
 
-- [開始使用 Azure DevOps](/learn/modules/get-started-with-devops)。
+- [開始使用 Azure DevOps](/learn/modules/get-started-with-devops/)。
 
-- [深入瞭解 DevOps Dojo 的基礎](/learn/paths/devops-dojo-white-belt-foundation)。
+- [深入瞭解 DevOps Dojo 的基礎](/learn/paths/devops-dojo-white-belt-foundation/)。
 
-- [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices)。
+- [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices/)。
 
-- [使用 Azure DevOps 自動化您的部署](/learn/paths/automate-deployments-azure-devops)。
+- [使用 Azure DevOps 自動化您的部署](/learn/paths/automate-deployments-azure-devops/)。
 
 ## <a name="other-considerations"></a>其他考量
 
@@ -116,4 +116,4 @@ Microsoft 和合作夥伴會為所有的使用者提供各種選項，以使用 
 
 ## <a name="learn-more"></a>深入了解
 
-若要探索更多學習路徑，請流覽 [Microsoft learning 目錄](/learn/browse)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。
+若要探索更多學習路徑，請流覽 [Microsoft learning 目錄](/learn/browse/)。 使用 [角色] 篩選，將學習路徑與您的角色對齊。

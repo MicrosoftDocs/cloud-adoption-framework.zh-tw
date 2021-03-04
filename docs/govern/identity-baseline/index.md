@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3e0f1ad5cf9c0fc402b456ad2a781302bc554c9a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 614409e05a994fe4c3c1dd4afc8e4587e6a94259
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790743"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112427"
 ---
 # <a name="identity-baseline-discipline-overview"></a>身分識別基準專業領域概觀
 
@@ -41,7 +41,7 @@ ms.locfileid: "101790743"
 |--|--|
 | <br> ![範本圖示](../../_images/govern/process-template.png)   | <br> [身分識別基準專業領域範本](./template.md)：下載此範本以便記錄身分識別基準專業領域。 |
 | <br> ![風險圖示](../../_images/govern/process-risks.png)         | <br> [商務風險](./business-risks.md)：了解通常與身分識別基準專業領域相關聯的動機與風險。 |
-| <br> ![計量圖示](../../_images/govern/process-metrics.png)     | <br> [指標和計量](./metrics-tolerance.md)：了解其是否為投資身分識別基準專業領域正確時機的指標。 |
+| <br> ![計量圖示](../../_images/govern/process-metrics.png)     | <br> 指標[和度量](./metrics-tolerance.md)：瞭解是否為投資身分識別基準專業領域的正確時機。 |
 | <br> ![遵循圖示](../../_images/govern/process-enforce.png)   | <br> [原則遵循流程](./compliance-processes.md)：用以在身分識別基準專業領域中支援原則合規性的建議流程。 |
 | <br> ![成熟度圖示](../../_images/govern/process-maturity.png)   | <br> [成熟度](./discipline-improvement.md)：使雲端管理成熟度與雲端採用階段保持一致。 |
 | <br> ![工具鏈圖示](../../_images/govern/process-toolchain.png) | <br> [工具鏈](./toolchain.md)：可實作來支援身分識別基準專業領域的 Azure 服務。 |

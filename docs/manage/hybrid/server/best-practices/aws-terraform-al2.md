@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 270b73e5533f2da5808d68a45b700112892b6bb9
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ea1ea4913b3adb406806696254bdec0d514341a9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794616"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112223"
 ---
 # <a name="use-a-terraform-plan-to-deploy-an-amazon-linux-2-instance-on-amazon-elastic-compute-cloud-and-connect-it-to-azure-arc"></a>使用 Terraform 計畫在 Amazon 彈性計算雲端上部署 Amazon Linux 2 實例，並將其連線到 Azure Arc
 
-本文提供指導方針，說明如何使用提供的 [Terraform](https://www.terraform.io/) 方案將 Amazon Web Services 部署 (AWS) Amazon 彈性計算雲端 (amazon EC2) Linux 2 實例，並將它連接為已啟用 Azure Arc 的伺服器資源。
+本文提供指導方針，說明如何使用提供的 [Terraform](https://www.terraform.io/) 方案來部署 Amazon Web SERVICES (AWS) Amazon 彈性計算雲端 (EC2) Linux 2 實例，並將它連接為已啟用 Azure Arc 的伺服器資源。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -103,12 +103,12 @@ ms.locfileid: "101794616"
 
 2. Terraform 方案會在 Microsoft Azure 和 AWS 中建立資源。 然後，它會在 AWS EC2 虛擬機器上執行腳本，以安裝 Azure Arc 代理程式和所有必要的構件。 此腳本需要 AWS 和 Azure 環境的特定資訊。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/scripts/vars.sh)使用適當的值編輯和更新每個變數。
 
-    - `TF-VAR-subscription-id`= 您的 Azure 訂用帳戶識別碼
-    - `TF-VAR-client-id`= 您的 Azure 服務主體應用程式識別碼
-    - `TF-VAR-client-secret` = 您的 Azure 服務主體密碼
-    - `TF-VAR-tenant-id`= 您的 Azure 租使用者識別碼
-    - `AWS-ACCESS-KEY-ID` = AWS 存取金鑰
-    - `AWS-SECRET-ACCESS-KEY` = AWS 秘密金鑰
+    - `TF_VAR_subscription_id`= 您的 Azure 訂用帳戶識別碼
+    - `TF_VAR_client_id`= 您的 Azure 服務主體應用程式識別碼
+    - `TF_VAR_client_secret` = 您的 Azure 服務主體密碼
+    - `TF_VAR_tenant_id`= 您的 Azure 租使用者識別碼
+    - `AWS_ACCESS_KEY_ID` = AWS 存取金鑰
+    - `AWS_SECRET_ACCESS_KEY` = AWS 秘密金鑰
 
 3. 從 Azure CLI 流覽至複製的存放庫 `azure_arc_servers_jumpstart/aws/al2/terraform` 目錄。
 
@@ -118,7 +118,7 @@ ms.locfileid: "101794616"
     source ./scripts/vars.sh
     ```
 
-5. 確定您的 SSH 金鑰可在中使用 `~/.ssh` ，並將其命名為 `id-rsa.pub` 和 `id-rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/main.tf) 才能使用具有不同路徑的金鑰。
+5. 確定您的 SSH 金鑰可在中使用 `~/.ssh` ，並將其命名為 `id_rsa.pub` 和 `id_rsa` 。 如果您遵循上述的 ssh keygen 指南來建立金鑰，則應該已經正確設定。 如果沒有，您可能需要修改 [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/main.tf) 才能使用具有不同路徑的金鑰。
 
 6. 執行 `terraform init` 會下載 Terraform AzureRM 提供者的命令。
 
@@ -154,12 +154,12 @@ ms.locfileid: "101794616"
 
 4. 匯出中的所有環境變數 [`vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/scripts/vars.sh)
 
-    ![使用 ' ' 匯出環境變數的螢幕擷取畫面。](./media/aws-terraform-al2/al2-export-variables.png)
+    ![在 ' var.sh ' 中匯出的環境變數螢幕擷取畫面。](./media/aws-terraform-al2/al2-export-variables.png)
 
 5. 執行以下命令：
 
     ```console
-    azcmagent connect --service-principal-id $TF-VAR-client-id --service-principal-secret $TF-VAR-client-secret --resource-group "Arc-Servers-Demo" --tenant-id $TF-VAR-tenant-id --location "westus2" --subscription-id $TF-VAR-subscription-id
+    azcmagent connect --service-principal-id $TF_VAR_client_id --service-principal-secret $TF_VAR_client_secret --resource-group "Arc-Servers-Demo" --tenant-id $TF_VAR_tenant_id --location "westus2" --subscription-id $TF_VAR_subscription_id
     ```
 
     ![[Azcmagent connect] 命令的另一個螢幕擷取畫面。](./media/aws-terraform-al2/al2-azcmagent-2.png)

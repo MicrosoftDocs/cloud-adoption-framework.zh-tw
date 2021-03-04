@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 0205f46467b336f78d89412250b4bf1d53a730b6
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b4dd445fd3ac8e9dc9677ebcae0933cf4bf386e1
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112121"
 ---
 # <a name="use-an-azure-resource-manager-template-to-deploy-and-connect-an-azure-virtual-machine-to-azure-arc"></a>使用 Azure Resource Manager 範本來部署 Azure 虛擬機器並將其連線至 Azure Arc
 
@@ -84,9 +84,9 @@ ms.locfileid: "101794424"
 
     1. 設定本機 OS 環境變數。
 
-    2. 產生名為 *LogonScript.ps1* 的本機 OS 登入腳本。 此指令碼會：
+    2. 產生名為的本機 OS 登入腳本 `LogonScript.ps1` 。 此指令碼會：
 
-        - 建立 *LogonScript 記錄* 檔。
+        - 建立檔案 `LogonScript.log` 。
 
         - 停止及停用 Windows Azure 來賓代理程式服務。
 
@@ -96,7 +96,7 @@ ms.locfileid: "101794424"
 
     3. 停用並防止 Windows Server Manager 在啟動時執行。
 
-4. 使用者透過 RDP 連線到 Windows VM，該 VM 會開始執行 *LogonScript.ps1* ，並將 VM 將上線至 Azure Arc。
+4. 使用者透過 RDP 連線到 Windows VM，該 VM 會開始執行 `LogonScript.ps1` ，並將 VM 將上線至 Azure Arc。
 
 ## <a name="deployment"></a>部署
 
@@ -109,7 +109,7 @@ ms.locfileid: "101794424"
 3. 若要部署 ARM 範本，請流覽至本機複製的 [部署資料夾](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/azure/windows/arm_template) ，然後執行下列命令：
 
     ```console
-    az group create --name <Name of the Azure resource group> --location <Azure Region> --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name <Name of the Azure resource group> --location <Azure Region> --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group <Name of the Azure resource group> \
     --name <The name of this deployment> \
@@ -123,7 +123,7 @@ ms.locfileid: "101794424"
     例如：
 
     ```console
-    az group create --name Arc-Servers-Win-Demo --location "East US" --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name Arc-Servers-Win-Demo --location "East US" --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group Arc-Servers-Win-Demo \
     --name arcwinsrvdemo \

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 5f0a56f08d219663046b746d3a3999360743aba4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 367b08aa62b68120def9e9788129cbe21b483d6c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794593"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102111968"
 ---
 # <a name="deploy-a-local-ubuntu-server-hosted-with-vagrant-and-connect-it-to-azure-arc"></a>部署以 Vagrant 裝載的本機 Ubuntu 伺服器，並將它連線到 Azure Arc
 
@@ -46,7 +46,7 @@ ms.locfileid: "101794593"
         - 如果您是 macOS 使用者，請執行 `brew cask install vagrant`
         - 如果您是 Windows 使用者，您可以使用 [Chocolatey 套件](https://chocolatey.org/packages/vagrant)
         - 如果您是 Linux 使用者，請參閱 [這裡](https://www.vagrantup.com/downloads)
-  
+
 4. 建立 Azure 服務主體。
 
     若要將 Vagrant 的虛擬機器連線到 Azure Arc，需要有指派參與者角色的 Azure 服務主體。 若要建立它，請登入您的 Azure 帳戶，然後執行下列命令。 您也可以在 [Azure Cloud Shell](https://shell.azure.com/)中執行此命令。

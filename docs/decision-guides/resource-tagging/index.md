@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: b11f734353eb52e34da459ee9acdb172aebea030
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b54ebb2c61872c80f6fe10c0454e43a5f558734c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113226"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>資源命名與標記決策指南
 
@@ -75,7 +75,7 @@ ms.locfileid: "101790301"
 | 標記類型 | 範例 | 描述 |
 |--|--|--|
 | 函數 | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | 根據在工作負載內的用途、部署位置的環境，或其他功能與運作詳細資料，將資源分類。 |
-| 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 可依據資源使用方式和對其套用的原則將資源分類。 |
+| 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 依資源的使用方式以及套用的原則，將資源分類。 |
 | 會計 | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | 可允許針對帳單用途將資源與組織內的特定群組建立關聯。 |
 | 合作關係 | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | 可提供涉及哪些 (IT 之外的) 人員與資源相關或受其影響的相關資訊。 |
 | 目的 | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | 可將資源與業務功能相結合，為所做的投資選擇提供更妥善的支援。 |

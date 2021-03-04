@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 0bc21e340218a9a29f162a4cfdfcc88f3bdf6fc3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b0536efe30ed43279c5d0fe4120c1b988b1a6d9e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021928"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113056"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>成本管理原則合規性流程
 
@@ -29,7 +29,7 @@ ms.locfileid: "97021928"
 
 **年度規劃：** 每年會針對所有已部署和已部署的資產執行匯總分析。 透過業務單位、部門、小組及其他適當的分配來推動自助採用，以遵循預算限制。 確保每一個計費單位領導人都知道預算，以及知道如何追蹤費用。
 
-這正是做出預先承諾和預先採購來最大化折扣的好時機。 最好能配合雲端廠商的會計年度來編訂年度預算，以進一步利用年底折扣的選擇。
+這正是做出預先承諾和預先採購來最大化折扣的好時機。 最好將年度預算與雲端廠商的會計年度保持一致，以進一步將年度折扣選項的資本化。
 
 **每季規劃：** 每季查看每個計費單位領導人的預算，以配合預測和實際支出。 如果計劃發生變更或有非預期的支出模式，應校正和重新配置預算。
 
@@ -56,7 +56,7 @@ ms.locfileid: "97021928"
 - **每月預算偏差：** 討論每月費用與計費單位領導人超過20% 預測與實際比率的任何偏差。 記錄解決方法與預測中的變更。
 - **採用步調：** 訂用帳戶層級超過20% 的任何偏差將會觸發帳單單位領導人的評論。 記錄解決方法與預測中的變更。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用「 [成本管理專業領域」範本](./template.md) ，記錄符合目前雲端採用方案的處理常式和觸發程式。
 

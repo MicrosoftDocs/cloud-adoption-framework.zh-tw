@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: e2e-hybrid
-ms.openlocfilehash: c7586b799203b556446d7f34311f8a468308e398
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 571097cc84f7380e25f8a5393afb920c5a4ac9a1
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793665"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112818"
 ---
 # <a name="manage-your-portfolio-across-hybrid-and-multicloud-operations"></a>跨混合式和多重雲端作業管理您的組合
 
@@ -25,7 +25,7 @@ ms.locfileid: "101793665"
 
 [Azure Arc](/azure/azure-arc/overview) 可降低擴充營運基準的複雜度和成本。 在您的資料中心、混合式雲端和多重雲端環境中部署 Azure Arc，將會擴充 azure Resource Manager 中包含的 Azure 原生功能。
 
-若要開始使用跨多個雲端提供者的作業基準，請完成簡單的清查和標記練習。 這個簡單的練習將開始以幾個簡單的步驟擴充您的作業基準：
+若要開始使用橫跨內部部署和多個雲端提供者的作業基準，請完成簡單的清查和標記練習。 這個簡單的練習將開始以幾個簡單的步驟擴充您的作業基準：
 
 - 將的標記新增 `hosting platform` 至所有混合式、多重雲端和邊緣資產。
 - 從 AWS、GCP 等標記資源。
@@ -51,7 +51,7 @@ ms.locfileid: "101793665"
 
 除了標記和上架資產之外，您也可以使用混合式和多重雲端工具，提供許多營運管理專業領域。
 
-使用 Microsoft Monitoring Agent 管理軟體安裝、防毒軟體防護或其他設定管理功能的其中一個範例是成熟的作業管理專業領域。 下列文章示範如何在混合式和多重雲端環境中設定 MMA。
+使用 Microsoft Monitoring Agent (MMA) 管理軟體安裝、防毒軟體防護或其他設定管理功能的其中一個範例是成熟的作業管理專業領域。 下列文章示範如何在混合式和多重雲端環境中設定 MMA。
 
 - [使用 MMA 管理 Vm](../../manage/hybrid/server/best-practices/arc-vm-extension-mma.md)
 - [MMA 的調整規模設定](../../manage/hybrid/server/best-practices/arc-vm-extension-custom-script.md)

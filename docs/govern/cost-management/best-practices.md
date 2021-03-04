@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0a216b5f8e5fc7504e1d685f9ecb58215dcd6776
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 167d95733dbecab3b668e234e314765a414fc6be
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792460"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113192"
 ---
 <!-- docutune:casing ARO -->
 
@@ -106,7 +106,7 @@ ms.locfileid: "101792460"
 | **高效能** | 最快、最強的 CPU。 具有選用的高輸送量網路介面 (RDMA) 的 Vm。 | 關鍵高效能應用程式。 |
 
 - 請務必了解這些 VM 之間的定價差異，以及長期預算影響。
-- 每個類型中都有一些 VM 系列。
+- 每一種類型在其中都有數系列的 Vm。
 - 此外，當您選取某個系列中的 VM 時，您只能在該系列中相應增加或相應減少 VM。 例如， `DS2_v2` 實例可以擴大至 `DS4_v2` ，但無法變更為不同系列（例如實例）的實例 `F2S_v2` 。
 
 **瞭解更多資訊：**
@@ -132,7 +132,7 @@ Azure 提供數種儲存體資料類型。
 | **Blob** | 針對儲存大量非結構化物件（例如文字或二進位資料）進行優化。 | 透過 HTTP/HTTPS 從任意位置存取資料。 <br><br> 針對串流與隨機存取案例使用。 例如，直接將影像與文件提供給瀏覽器、串流視訊與音訊，以及存放備份與災害復原資料。 |
 | **檔案** | 透過 SMB 3.0 存取的受控檔案共用。 | 在遷移內部部署檔案共用時使用，以及提供檔案資料的多個存取與連接。 |
 | **磁碟** | 以分頁 Blob 為基礎。 <br><br> 磁片類型 (速度) ：標準 HDD、標準 SSD、premium SSD 或 ultra 磁片。 <br><br> 磁片管理：非受控 (您管理磁片設定和儲存體) 或受控 (您選取磁片類型，Azure 會為您管理) 的磁片。 | 針對 Vm 使用 premium 磁片。 使用受控磁碟來獲得簡單的管理與規模調整。 |
-| **佇列** | 透過 HTTP 或 HTTPS)  (的經過驗證的呼叫，儲存和取出大量的訊息。 | 連接應用程式元件與非同步訊息佇列。 |
+| **佇列** | 透過 HTTP 或 HTTPS)  (的經過驗證的呼叫，儲存和取出大量的訊息。 | 使用非同步訊息佇列來連接應用程式元件。 |
 | **資料表** | 存放資料表。 | 現在是 Azure Cosmos DB 資料表 API 的一部分。 |
 
 ### <a name="access-tiers"></a>存取層級
