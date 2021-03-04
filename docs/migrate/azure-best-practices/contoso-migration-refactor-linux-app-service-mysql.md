@@ -1,6 +1,6 @@
 ---
-title: 將 Linux 應用程式重構至 Azure App Service、流量管理員和適用於 MySQL 的 Azure 資料庫
-description: 使用適用于 Azure 的雲端採用架構，瞭解如何重構 Linux 服務中心應用程式來 Azure App Service 和適用於 MySQL 的 Azure 資料庫。
+title: 將 Linux 應用程式重構至 Azure App Service、流量管理員及適用于 MySQL 的 Azure 資料庫
+description: 使用適用于 Azure 的雲端採用架構，瞭解如何將 Linux 服務台應用程式重構至 Azure App Service 和適用于 MySQL 的 Azure 資料庫。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2020
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 75961a8b57273c84449f5fa3c95b232859434a45
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 259d3fbbbff40972e5bd9975be61474f88a01f09
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631809"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791950"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
-# <a name="refactor-a-linux-application-by-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>使用 Azure App Service、流量管理員和適用於 MySQL 的 Azure 資料庫重構 Linux 應用程式
+# <a name="refactor-a-linux-application-by-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>使用 Azure App Service、流量管理員和適用于 MySQL 的 Azure 資料庫來重構 Linux 應用程式
 
-本文說明虛構公司 Contoso 如何重構兩層式 [燈泡](https://wikipedia.org/wiki/LAMP_(software_bundle)) 應用程式，並使用 Azure App Service 搭配 GitHub 整合和適用於 MySQL 的 Azure 資料庫，將其從內部部署遷移至 Azure。
+本文說明虛構公司 Contoso 如何重構兩層式 [燈泡](https://wikipedia.org/wiki/LAMP_software_bundle) 應用程式，並使用 Azure App Service 搭配 GitHub 整合和適用于 MySQL 的 azure 資料庫，將其從內部部署遷移至 Azure。
 
-osTicket，我們在此範例中使用的服務台應用程式是以開放原始碼的形式提供。 如果您想要將它用於您自己的測試目的，您可以從 [GitHub 中的 osTicket](https://github.com/osTicket/osTicket)存放庫下載該檔案。
+osTicket，我們在此範例中使用的服務台應用程式是以開放原始碼軟體的形式提供。 如果您想要將它用於您自己的測試目的，您可以從 [GitHub 中的 osTicket](https://github.com/osTicket/osTicket)存放庫下載該檔案。
 
 ## <a name="business-drivers"></a>商業動機
 
@@ -57,13 +57,13 @@ IT 領導小組與商務合作夥伴密切合作，瞭解他們想要達成的�
 
 以下是建議的架構：
 
-- 上的 web 層應用程式將會藉 `OSTICKETWEB` 由在兩個 Azure 區域中建立 Azure App Service web 應用程式來進行遷移。 Contoso 團隊將使用 PHP 7.0 Docker 容器來執行 Linux Azure App Service。
-- 應用程式程式碼將會移至 GitHub，而且 Azure App Service 的 web 應用程式將會設定為透過 GitHub 持續傳遞。
+- 上的 web 層應用程式將會藉 `OSTICKETWEB` 由在兩個 azure 區域中建立 Azure App Service web 應用程式來進行遷移。 Contoso 團隊將使用 PHP 7.0 Docker 容器來執行適用于 Linux 的 Azure App Service。
+- 應用程式程式碼將會移至 GitHub，而且會設定 Azure App Service web 應用程式以使用 GitHub 進行持續傳遞。
 - Azure App Service 將會部署在主要區域 (`East US 2`) 和次要區域 (`Central US`) 。
 - Azure 流量管理員將會在兩個區域中的兩個 web 應用程式前面進行設定。
 - 流量管理員將會在優先順序模式下設定，以強制流量通過 `East US 2` 。
 - 如果中的 Azure 應用程式伺服器 `East US 2` 離線，則使用者可以在中存取已容錯移轉的應用程式 `Central US` 。
-- 應用程式資料庫將會使用 Azure 資料庫移轉服務遷移至適用於 MySQL 的 Azure 資料庫服務。 內部部署資料庫將在本機進行備份，並直接還原到適用於 MySQL 的 Azure 資料庫。
+- 應用程式資料庫將會使用 Azure 資料庫移轉服務遷移至適用于 MySQL 的 Azure 資料庫服務。 內部部署資料庫將在本機進行備份，並直接還原到適用於 MySQL 的 Azure 資料庫。
 - 資料庫會位於資料庫子網中 () 的主要區域， `East US 2` (`PROD-DB-EUS2` 生產網路 () 的) `VNET-PROD-EUS2` 。
 - 由於他們正在遷移生產工作負載，因此應用程式的 Azure 資源會位於生產資源群組中 `ContosoRG` 。
 - 流量管理員資源將會部署在 Contoso 的基礎結構資源群組中 `ContosoInfraRG` 。
@@ -75,10 +75,10 @@ IT 領導小組與商務合作夥伴密切合作，瞭解他們想要達成的�
 
 Contoso 會完成遷移程式，如下所示：
 
-1. 在第一個步驟中，Contoso 管理員會設定 Azure 基礎結構，包括布建 Azure App Service、設定流量管理員，以及布建適用於 MySQL 的 Azure 資料庫實例。
+1. 在第一個步驟中，Contoso 管理員會設定 Azure 基礎結構，包括布建 Azure App Service、設定流量管理員，以及布建適用于 MySQL 的 Azure 資料庫實例。
 2. 準備好 Azure 基礎結構之後，他們會使用 Azure 資料庫移轉服務來遷移資料庫。
-3. 在 Azure 中執行資料庫之後，他們會上傳 GitHub 私用存放庫以進行 Azure App Service 持續傳遞，並使用 osTicket 應用程式載入它。
-4. 在 Azure 入口網站中，他們會執行 Azure App Service，將應用程式從 GitHub 載入至 Docker 容器。
+3. 在 Azure 中執行資料庫之後，他們會將 Azure App Service 的 GitHub 私人存放庫上傳至持續傳遞，並使用 osTicket 應用程式載入它。
+4. 在 Azure 入口網站中，他們會執行 Azure App Service，以將應用程式從 GitHub 載入至 Docker 容器。
 5. 他們會調整 DNS 設定，並設定應用程式的自動調整。
 
 ![Contoso 遷移程式的圖表。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
@@ -107,48 +107,49 @@ Contoso 會完成遷移程式，如下所示：
 
 > [!div class="checklist"]
 >
-> - **步驟1：** 布建 Azure App Service。 Contoso 管理員會在主要和次要區域中佈建 Web 應用程式。
+> - **步驟1：布建 Azure App Service**。 Contoso 管理員會在主要和次要區域中佈建 Web 應用程式。
 > - **步驟2：設定流量管理員**。 他們會在 Web 應用程式前面設定流量管理員，以便路由傳送及平衡流量負載。
-> - **步驟3：** 布建適用於 MySQL 的 Azure 資料庫。 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
+> - **步驟3：布建適用于 MySQL 的 Azure 資料庫**。 在 Azure 中，他們會佈建適用於 MySQL 的 Azure 資料庫執行個體。
 > - **步驟4：遷移資料庫**。 他們會使用 Azure 資料庫移轉服務來遷移資料庫。
 > - **步驟5：設定 GitHub**。 他們會設定應用程式網站和程式碼的本機 GitHub 存放庫。
 > - **步驟6：設定 web 應用程式**。 他們會使用 osTicket 網站來設定 web 應用程式。
 
 ## <a name="step-1-provision-azure-app-service"></a>步驟1：布建 Azure App Service
 
-Contoso 管理員會在每個區域中布建兩個 web 應用程式 (一個) 使用 Azure App Service。
+Contoso 管理員會在每個區域中布建兩個 web 應用程式 (一個使用 Azure App Service) 。
 
-1. 他們會在主要區域中建立 web 應用程式資源 (`osticket-eus2`)  (`East US 2`) via Azure Marketplace。
+1. 他們會在主要區域中建立 web 應用程式資源 (`osticket-eus2`)  (`East US 2`) 透過 Azure Marketplace。
+
 2. 他們會將資源放在生產資源群組中 `ContosoRG` 。
 
     ![在 Linux 中建立 web 應用程式的 [Web 應用程式] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app1.png)
 
-3. 他們會在主要區域中建立 App Service 方案 **SVP-EUS2**，並使用標準大小。
+3. 他們會在主要區域中建立 App Service 方案， `APP-SVP-EUS2` 並使用標準大小。
 
-     ![建立 App Service 方案的 [新增 App Service 方案] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
+     ![用來建立 App Service 方案的 [新增 App Service 方案] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
 
 4. 他們會選取具有 PHP 7.0 執行階段堆疊的 Linux OS，這是一個 Docker 容器。
 
     ![[Web 應用程式] 窗格的螢幕擷取畫面，其中已選取 [Linux OS]、[美國東部 2] 位置和 [PHP 7.0]。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
 
-5. 他們會建立第二個 web 應用程式、 **osticket-cu**，以及適用于 **美國中部** 的 Azure App Service 方案。
+5. 他們會為美國中部建立第二個 web 應用程式 `osticket-cus` 和 Azure App **** Service 方案。
 
     ![選取 [Web 應用程式] 窗格的螢幕擷取畫面，其中包含 Linux OS、美國中部位置和 PHP 7.0。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app4.png)
 
 **需要其他協助？**
 
-- 瞭解 [Azure App Service web 應用程式](/azure/app-service/overview)。
+- 瞭解 [Azure App Service web apps](/azure/app-service/overview)。
 - 了解 [Linux 上的 Azure App Service](/azure/app-service/overview#app-service-on-linux)。
 
 ## <a name="step-2-set-up-traffic-manager"></a>步驟 2：設定流量管理員
 
 Contoso 管理員會設定流量管理員，將輸入的 web 要求導向至在 osTicket web 層上執行的 web 應用程式。
 
-1. 在 Azure Marketplace 中，他們會建立流量管理員資源 **osticket.trafficmanager.net**。 他們使用優先順序路由，讓 **美國東部 2** 是主要網站。 他們會將資源放在其現有的基礎結構資源群組 **>contosoinfrarg** 中。 請注意，流量管理員為全域服務，無法繫結至特定位置。
+1. 在 Azure Marketplace 中，他們會建立流量管理員資源 `osticket.trafficmanager.net` 。 他們使用優先順序路由，讓 **美國東部 2** 是主要網站。 他們會將資源放在其現有的基礎結構資源群組中 `ContosoInfraRG` 。 請注意，流量管理員為全域服務，無法繫結至特定位置。
 
     ![[建立流量管理員設定檔] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/traffic-manager1.png)
 
-2. 他們會使用端點來設定流量管理員。 他們會將美國東部2中的 web 應用程式新增為主要網站、 **osticket eus2**，並在美國中部將 web 應用程式新增為次要網站（ **osticket-cu**）。
+2. 他們會使用端點來設定流量管理員。 他們會將美國東部2中的 web 應用程式新增為主要網站，以及將 `osticket-eus2` 美國中部的 web 應用程式新增為次要網站 `osticket-cus` 。
 
     ![[流量管理員] 中 [新增端點] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/traffic-manager2.png)
 
@@ -167,16 +168,17 @@ Contoso 管理員會在主要區域（美國東部2）中布建 MySQL 資料庫�
 
 1. 在 Azure 入口網站中，他們可會建立適用於 MySQL 的 Azure 資料庫資源。
 
-    ![Azure 入口網站中適用於 MySQL 的 Azure 資料庫連結的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/mysql-1.png)
+    ![Azure 入口網站中 [適用于 MySQL 的 Azure 資料庫] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/mysql-1.png)
 
-2. 他們會為 Azure 資料庫新增名稱 **contosoosticket**。 他們會將資料庫新增至生產資源群組 **ContosoRG** ，然後為其指定認證。
+2. 他們會新增 `contosoosticket` Azure 資料庫的名稱。 他們會將資料庫新增至生產資源群組 `ContosoRG` ，然後為其指定認證。
+
 3. 內部部署 MySQL 資料庫的版本為 5.7，因此他們會為了相容性而選取這個版本。 他們會使用預設大小，以符合其資料庫需求。
 
     ![選取版本5.7 的 [MySQL 伺服器] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/mysql-2.png)
 
 4. 針對 **備份冗余選項**，他們會選取 [ **異地冗余**]。 此選項可讓他們在其次要區域中還原資料庫， (美國中部) 如果發生中斷情況。 只有在布建資料庫時，才能設定此選項。
 
-    ![選取 [Geo-Redundant] 選項的 [備份冗余選項] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/db-redundancy.png)
+    ![[備份冗余選項] 窗格的螢幕擷取畫面，其中已選取 [Geo-Redundant] 選項。](./media/contoso-migration-refactor-linux-app-service-mysql/db-redundancy.png)
 
 5. 他們會設定連線安全性。 在資料庫中，他們會選取 [連線 **安全性** ]，然後設定防火牆規則，以允許資料庫存取 Azure 服務。
 
@@ -186,7 +188,7 @@ Contoso 管理員會在主要區域（美國東部2）中布建 MySQL 資料庫�
 
 ## <a name="step-4-migrate-the-database"></a>步驟 4：遷移資料庫
 
-有幾種方式可以移動 MySQL 資料庫。 每個選項都需要 Contoso 管理員建立目標的適用於 MySQL 的 Azure 資料庫實例。 建立實例之後，他們就可以使用下列兩個路徑中的任一個來遷移資料庫：
+有幾種方式可以移動 MySQL 資料庫。 每個選項都需要 Contoso 管理員為目標建立「適用于 MySQL 的 Azure 資料庫」實例。 建立實例之後，他們就可以使用下列兩個路徑中的任一個來遷移資料庫：
 
 - 步驟4a： Azure 資料庫移轉服務
 - 步驟4b： MySQL 工作臺備份和還原
@@ -196,13 +198,15 @@ Contoso 管理員會在主要區域（美國東部2）中布建 MySQL 資料庫�
 Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-azure-mysql-online)課程，透過 Azure 資料庫移轉服務來遷移資料庫。 他們可以使用 MySQL 5.6 或5.7 來執行線上、離線和混合式 (預覽版) 的遷移。
 
 > [!NOTE]
-> 適用於 MySQL 的 Azure 資料庫支援 MySQL 8.0，但資料庫移轉服務工具尚未支援此版本。
+> 適用于 MySQL 的 Azure 資料庫中支援 MySQL 8.0，但資料庫移轉服務工具尚未支援此版本。
 
 簡言之，Contoso 會執行下列動作：
 
 - 它們可確保符合所有的遷移必要條件：
-  - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。  
-  - 它們可在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會在遷移嚮導中產生下列錯誤：  `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'.` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
+
+  - MySQL 資料庫伺服器來源必須符合適用于 MySQL 的 Azure 資料庫所支援的版本。 適用于 MySQL 的 Azure 資料庫支援 MySQL 整合版、InnoDB 儲存引擎，以及跨來源與目標的相同版本的遷移。
+
+  - 它們可在 `my.ini` (Windows) 或 `my.cnf` (Unix) 中啟用二進位記錄。 若未這麼做，將會在遷移嚮導中產生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'.` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
 
   - 使用者必須擁有該 `ReplicationAdmin` 角色。
 
@@ -216,65 +220,67 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-
 
 - 他們會執行資料庫移轉服務工具，然後執行下列動作：
 
-  a. 建立以 Premium SKU 為基礎的遷移專案。
+  1. 建立以 Premium SKU 為基礎的遷移專案。
 
-    ![[MySQL 總覽] 窗格的螢幕擷取畫面，其中有一則訊息，指出已成功建立遷移服務。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project.png)
+     ![[MySQL 總覽] 窗格的螢幕擷取畫面，其中有一則訊息，指出已成功建立遷移服務。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project.png)
 
-    ![MySQL 的 [新增遷移專案] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project-02.png)
+     ![[新增遷移專案] 窗格的 [MySQL] 螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project-02.png)
 
-  b. 將來源 (內部部署資料庫) 。
+  2. 將來源 (內部部署資料庫) 。
 
-    ![[新增來源詳細資料] 窗格的 [遷移] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-source.png)
+     ![[遷移嚮導] 的螢幕擷取畫面： [新增來源詳細資料] 窗格。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-source.png)
 
-  c. 選取目標。
+  3. 選取目標。
 
-    ![[遷移嚮導] 的 [目標詳細資料] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-target.png)
+     ![[遷移嚮導] 的螢幕擷取畫面 * * [目標詳細資料] 窗格。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-target.png)
 
-  d. 選取要遷移的資料庫。
+  4. 選取要遷移的資料庫。
 
-    ![[對應到目標資料庫] 窗格的 [遷移至目標資料庫] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-databases.png)
+     ![[遷移至目標資料庫] 窗格的 [對應到目標資料庫] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-databases.png)
 
-  e. 設定 [advanced settings]。
+  5. 設定 [advanced settings]。
 
-    ![[遷移設定] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-settings.png)
+     ![[遷移設定] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-settings.png)
 
-  f. 開始複寫並解決任何錯誤。
+  6. 開始複寫並解決任何錯誤。
 
-    ![[伺服器詳細資料] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-monitor.png)
+     ![[伺服器詳細資料] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-monitor.png)
 
-  g. 執行最後的轉換。
+  7. 執行最後的轉換。
 
-    ![OsTicket 詳細資料窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover.png)
+     ![OsTicket 詳細資料窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover.png)
 
-    ![[完成轉換] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete.png)
+     ![[完成切換] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete.png)
 
-    ![[遷移活動狀態] 資料表的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete-02.png)
+     ![[遷移活動狀態] 資料表的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete-02.png)
 
-  h. 恢復任何外鍵和觸發程式。
+  8. 恢復任何外鍵和觸發程式。
 
-  i. 修改應用程式以使用新的資料庫。
+  9. 修改應用程式以使用新的資料庫。
 
-    ![[遷移活動] 資料表的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-apps.png)
+     ![[遷移活動] 資料表的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-apps.png)
 
 ### <a name="step-4b-migrate-the-database-mysql-workbench"></a>步驟4b：將資料庫移轉 (MySQL 工作臺) 
 
 1. Contoso 管理員會檢查 [必要條件，並下載 MySQL 工作臺](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool)。
-2. 他們會按照[安裝指示](https://dev.mysql.com/doc/workbench/en/wb-installing.html)，安裝適用於 Windows 的 MySQL Workbench。 在其上安裝 MySQL 工作臺的電腦必須可透過網際網路存取 OSTICKETMYSQL VM 和 Azure。
-3. 在 MySQL Workbench 中，他們會建立 OSTICKETMYSQL 的 MySQL 連線。
+
+2. 他們會按照[安裝指示](https://dev.mysql.com/doc/workbench/en/wb-installing.html)，安裝適用於 Windows 的 MySQL Workbench。 在其上安裝 MySQL 工作臺的電腦，必須可透過 `osticketmysql` 網際網路存取 VM 和 Azure。
+
+3. 在 MySQL 工作臺中，他們會建立的 MySQL 連接 `osticketmysql` 。
 
     ![[MySQL 工作臺連接詳細資料] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench1.png)
 
 4. 他們會將資料庫匯出為 `osticket` 本機的獨立檔案。
 
-    ![MySQL 工作臺 [資料匯出] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench2.png)
+    ![[MySQL 工作臺] [資料匯出] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench2.png)
 
-5. 在本機備份資料庫之後，系統管理員會建立適用於 MySQL 的 Azure 資料庫實例的連接。
+5. 在本機備份資料庫之後，系統管理員會建立與「適用于 MySQL 的 Azure 資料庫」實例的連接。
 
-    ![MySQL 工作臺的 [設定新連接] 窗格。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench3.png)
+    ![[MySQL 工作臺] [設定新連接] 窗格。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench3.png)
 
-6. 現在，他們可以從獨立的檔案匯入 (restore) 適用於 MySQL 的 Azure 資料庫實例中的資料庫。 建立實例的新架構 `osticket` 。
+6. 現在，他們可以從獨立式檔案匯入「適用于 MySQL 的 Azure 資料庫」實例中的 (還原) 資料庫。 建立實例的新架構 `osticket` 。
 
-    ![MySQL 工作臺 [資料匯入] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench4.png)
+    ![[MySQL 工作臺] * * [資料匯入] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench4.png)
 
 7. 在還原資料之後，系統管理員可以使用 MySQL 工作臺來查詢資料。 資料會顯示在 Azure 入口網站中。
 
@@ -294,19 +300,19 @@ Contoso 管理員會依照 [逐步進行遷移教學](/azure/dms/tutorial-mysql-
 
     ![記事本檔案中所貼上之連接字串的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench9.png)
 
-11. 他們可以透過 Azure 入口網站中 MySQL 實例的 [ **總覽** ] 窗格來確認伺服器名稱和登入。
+11. 他們可以在 Azure 入口網站中，透過 MySQL 實例的 [ **總覽** ] 窗格來確認伺服器名稱和登入。
 
     ![[資源群組] 窗格的螢幕擷取畫面，其中顯示 [伺服器名稱] 和 [伺服器管理員帳戶名稱]。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
 
 ## <a name="step-5-set-up-github"></a>步驟 5︰設定 GitHub
 
-Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 的 Azure 資料庫中設定與 osTicket 資料庫的連線。 然後，他們會將 Web 應用程式載入 Azure App Service 中。
+Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用于 MySQL 的 Azure 資料庫中設定 osTicket 資料庫的連線。 然後，他們會將 Web 應用程式載入 Azure App Service 中。
 
 1. 他們會流覽至 osTicket software 公用 GitHub 存放庫，並將它派生給 Contoso GitHub 帳戶。
 
     ![GitHub 儲存機制頁面的螢幕擷取畫面，其中反白顯示 [分叉] 按鈕。](./media/contoso-migration-refactor-linux-app-service-mysql/github1.png)
 
-2. 在派生存放庫之後，他們會移至 *include* 資料夾，然後尋找並選取 *ost-config php* 檔案。
+2. 將存放庫分叉之後，他們會流覽至該 `include` 資料夾，然後選取該檔案 `ost-config.php` 。
 
     ![GitHub 中 PHP 檔案的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/github2.png)
 
@@ -320,11 +326,11 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
 5. 他們會認可變更。
 
-    ![醒目提示 [編輯] 窗格上的 [認可變更] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/github5.png)
+    ![反白顯示 [編輯] 窗格上的 [認可變更] 按鈕的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/github5.png)
 
-6. 針對 (osticket-eus2 和 osticket-cu) 的每個 web 應用程式，在 Azure 入口網站中，他們會選取左窗格上的 [ **應用程式設定** ]，然後修改設定。
+6. 針對 (和) 的每個 web 應用程式， `osticket-eus2` `osticket-cus` 他們會在 Azure 入口網站中選取左窗格上的 [ **應用程式設定** ]，然後修改設定。
 
-    ![反白顯示 Azure 入口網站中的 [應用程式設定] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/github6.png)
+    ![在 Azure 入口網站中反白顯示 [應用程式設定] 連結的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/github6.png)
 
 7. 他們以名稱輸入連接字串 `osticket` ，並將 [記事本] 中的字串複製到 [ **值] 區域** 中。 他們會選取字串旁邊下拉式清單中的 **MySQL**，並儲存設定。
 
@@ -334,7 +340,7 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
 在遷移程式的最後一個步驟中，Contoso 管理員會使用 osTicket 網站來設定 web 應用程式。
 
-1. 在主要 web 應用程式（osticket-eus2）中，他們會開啟 [ **部署] 選項** ，然後將來源設定為 **GitHub**。
+1. 在主要 web 應用程式中， `osticket-eus2` 他們會開啟 [ **部署] 選項** ，然後將來源設定為 **GitHub**。
 
     ![[部署選項] 窗格的螢幕擷取畫面，其中已選取 GitHub 作為來源。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app1.png)
 
@@ -342,24 +348,24 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
     ![[部署選項] 窗格中 [選項詳細資料] 的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app2.png)
 
-3. 設定這些選項之後，設定會在 Azure 入口網站中顯示為 *擱置* 。
+3. 設定這些選項之後，設定會在 Azure 入口網站中顯示為 [ **擱置** 中]。
 
-    ![顯示擱置網站狀態的 [部署選項] 窗格螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app3.png)
+    ![[部署選項] 窗格的螢幕擷取畫面，其中顯示暫止的網站狀態。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app3.png)
 
-4. 更新設定之後，將 osTicket web 應用程式從 GitHub 載入至執行 Azure App Service 的 Docker 容器之後，網站會顯示為使用中 *狀態*。
+4. 更新設定之後，將 osTicket web 應用程式從 GitHub 載入至執行 Azure App Service 的 Docker 容器之後，網站會顯示為使用中 **狀態**。
 
     ![[部署選項] 窗格的螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
-5. 他們會針對次要 web 應用程式（osticket-cu）重複上述步驟。
+5. 他們會針對次要 web 應用程式重複上述步驟 `osticket-cus` 。
 6. 設定好網站之後，即可透過流量管理員設定檔進行存取。 DNS 名稱是 osTicket 應用程式的新位置。 [深入了解](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)。
 
     ![[流量管理員設定檔] 窗格的螢幕擷取畫面，其中顯示 DNS 名稱。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
-7. Contoso 想要使用容易記住的 DNS 名稱。 在 [ **新增資源記錄** ] 窗格中，他們會建立別名、 **CNAME** 和完整功能變數名稱（ **osticket.contoso.com**），該名稱會指向網域控制站上 DNS 中的流量管理員名稱。
+7. Contoso 想要使用容易記住的 DNS 名稱。 在 [ **新增資源記錄** ] 窗格中，他們會建立別名、CNAME 和完整功能變數名稱， `osticket.contoso.com` 其指向網域控制站上 DNS 中的流量管理員名稱。
 
     ![[新增資源記錄] 窗格的螢幕擷取畫面，其中顯示別名名稱和流量管理員的指標。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. 他們會設定 osticket eus2 和 osticket cu web 應用程式，以允許自訂主機名稱。
+8. 他們會設定 `osticket-eus2` 和 `osticket-cus` web 應用程式，以允許自訂主機名稱。
 
     ![[Ad 主機名稱] 窗格的螢幕擷取畫面，其中反白顯示 [驗證] 按鈕。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 
@@ -367,18 +373,19 @@ Contoso 管理員會建立新的私人 GitHub 存放庫，並在適用於 MySQL 
 
 最後，Contoso 管理員會為應用程式設定自動調整。 自動調整可確保當代理程式使用應用程式時，應用程式實例會根據商務需求而增加和減少。
 
-1. 在 App Service **應用程式 SVP-EUS2** 中，他們會開啟 **縮放單位**。
+1. 在 App Service 中 `APP-SVP-EUS2` ，他們會開啟 **縮放單位**。
+
 2. 他們使用單一規則來設定新的自動調整設定，以在目前實例的 CPU 使用量超過 70% 10 分鐘時，將實例計數增加一個。
 
     ![第一個區域的自動調整設定頁面螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
-3. 他們會在 **應用程式 SVP-cu** 上設定相同的設定，以確保應用程式容錯移轉至次要區域時，會套用相同的行為。 唯一的差別在於它們會將預設實例設定為1，因為這僅適用于容錯移轉。
+3. 他們會在上設定相同的設定， `APP-SVP-CUS` 以確保應用程式容錯移轉至次要區域時，會套用相同的行為。 唯一的差別在於它們會將預設實例設定為1，因為這僅適用于容錯移轉。
 
    ![第二個區域的自動調整設定頁面螢幕擷取畫面。](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
-完成遷移之後，osTicket 應用程式會重構，以使用私人 GitHub 存放庫持續傳遞，以在 Azure App Service web 應用程式中執行。 應用程式會在兩個區域中執行，以提高復原能力。 OsTicket 資料庫在遷移至 PaaS 平臺之後，會在適用於 MySQL 的 Azure 資料庫中執行。
+完成遷移之後，osTicket 應用程式會重構，以在 Azure App Service web 應用程式中執行，並使用私人 GitHub 存放庫持續傳遞。 應用程式會在兩個區域中執行，以提高復原能力。 OsTicket 資料庫在遷移至 PaaS 平臺之後，會在適用于 MySQL 的 Azure 資料庫中執行。
 
 若要在遷移後進行清除，Contoso 會執行下列動作：
 
@@ -404,4 +411,4 @@ Contoso 安全性小組會檢查應用程式，以判斷任何安全性問題。
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
 - PaaS 部署沒有任何授權問題。
-- Contoso 將會使用 [Azure 成本管理和帳單](/azure/cost-management-billing/cost-management-billing-overview) ，以確保他們在 IT 領導的預算內保持不變。
+- Contoso 會使用 [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) ，以確保這些客戶能維持在其 IT 領導階層所建立的預算內。

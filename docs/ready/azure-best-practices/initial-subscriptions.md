@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 7cdfc50b10507ec1407d46af9e14cfc9e812708d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4d78f100772e1779f8e8385ca413b979996403aa
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026229"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789672"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>建立您的初始 Azure 訂用帳戶
 
@@ -35,8 +35,8 @@ ms.locfileid: "97026229"
 - Azure 開發/測試訂用帳戶供應專案適用于非生產工作負載。 這些供應專案提供 Azure 服務和軟體授權的折扣費率。
 - 您的生產環境和非生產環境可能會有不同組的 Azure 原則。 使用不同的訂用帳戶可讓您輕鬆地在訂用帳戶層級套用每個不同的原則。
 - 您可以在非生產訂用帳戶中允許特定類型的 Azure 資源，以供測試之用。 您可以在非生產訂用帳戶中啟用這些資源提供者，而不需要在生產環境中使用它們。
-- 您可以使用開發/測試訂用帳戶作為隔離的沙箱環境。 這些沙箱可讓系統管理員和開發人員快速建立和卸載整組 Azure 資源。 這種隔離也有助於資料保護和安全性考量。
-- 您所定義的可接受成本閾值可能會因生產環境和開發/測試訂用帳戶而異。
+- 您可以使用 Azure 開發/測試訂用帳戶作為隔離的沙箱環境。 這些沙箱可讓系統管理員和開發人員快速建立和卸載整組 Azure 資源。 這種隔離也有助於資料保護和安全性考量。
+- 您所定義的可接受成本閾值可能會因生產環境和非生產環境而異。
 
 ## <a name="sandbox-subscriptions"></a>沙箱訂閱
 
@@ -52,7 +52,7 @@ ms.locfileid: "97026229"
 ![初始訂用帳戶模型，顯示標示為「生產」和「共用服務」的方塊旁邊的索引鍵 ](../../_images/ready/initial-subscription-model-with-shared-services.png)
  _：使用共用服務的訂用帳戶模型。_
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱您可能想要 [建立其他 Azure](./scale-subscriptions.md) 訂用帳戶以符合需求的原因。
 

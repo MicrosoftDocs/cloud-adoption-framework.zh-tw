@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: 創新工具，ai 預測，ai 應用程式，數位創新，ai 代理程式
-ms.openlocfilehash: 1da02626f1b2bc8717439eb2a053d1296f3bad0b
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 21285454e40a8b58136faa5189cd85f0dda7fb9a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525808"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791049"
 ---
 # <a name="use-innovation-tools-with-ai-to-predict-and-influence"></a>使用具 AI 的創新工具來預測及影響
 
-AI 意指人工智慧，其中電腦會偵測資料模式以產生深入解析，以協助企業瞭解客戶的行為。 AI 預測可以預測客戶需求，並將商務程式自動化。 公司可以使用 AI 應用程式和數位創新工具來探索非結構化資料中的潛在資訊，並提供新的方式來與客戶互動，以提供更好的體驗。
+AI 意指 *人工智慧*，其中電腦會偵測資料模式以產生深入解析，以協助企業瞭解客戶的行為。 AI 預測可以預測客戶需求，並將商務程式自動化。 公司可以使用 AI 應用程式和數位創新工具來探索非結構化資料中的潛在資訊，並提供新的方式來與客戶互動，以提供更好的體驗。
 
 您可以透過下列每個解決方案區域，加速這類數位創新。 此頁面左側的目錄中會列出加速數位發明的最佳作法和技術指引。 這些文章會依解決方案區域進行分組：
 
@@ -34,7 +34,7 @@ AI 策略、AI 文化、負責任且可擴充的 AI，以及每個不同商務�
 
 - **AI 文化特性：** 若要成功開發 AI 文化特性，您可能需要變更金鑰才能成為 AI 就緒。 這包括能夠跨企業探索 AI 潛力、辨識和促進讓 AI 成功所需的技能和角色，並提供在財務、行銷、銷售和客戶服務和 AI 應用程式推廣中的相關案例中成功實現 AI 的範例。
 
-- **負責任的 AI：** 負責任的 AI 是由將 AI 導向的 AI 促進的承諾，讓人們優先使用這些原則。 Microsoft AI 原則和資源支援基礎結構和商務架構內的受信任 AI。 若要成功建立 AI 實務，應將負責任的 AI 併入您的數位創新方法。
+- **負責任的 AI：** 負責任的 AI 是 AI 進展的承諾，由將人員優先的原則所驅動。 Microsoft AI 原則和資源支援基礎結構和商務架構內的受信任 AI。 若要成功建立 AI 實務，應將負責任的 AI 併入您的數位創新方法。
 
 - **可擴充的 AI：** 可擴充的 AI 可讓您在所有層級激發創新工具、評估 AI 投資，以及為整個組織的 AI 建立技術流程。 AI 模式和最佳做法可讓您透過企業調整 AI 水準和垂直。
 

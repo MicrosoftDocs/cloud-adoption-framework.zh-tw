@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 350c8787e25b1709a79b1bbcd521572d41e7a51a
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 4c2499dab8bde464d28da5337834cb4a96b6f7f0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631996"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792035"
 ---
 <!-- docutune:casing "SQL Server Health Check" -->
 
@@ -161,6 +161,6 @@ ms.locfileid: "100631996"
 
 容器和 SQL Server 是兩個最常見的集中管理平台。 下列文章可協助您開始在這些平台上收集用於持續改善的資料：
 
-- [容器效能](/azure/azure-monitor/insights/container-insights-overview)
+- [容器效能](/azure/azure-monitor/containers/container-insights-overview)
 - [PaaS 資料庫效能](/azure/azure-monitor/insights/azure-sql)
 - [IaaS 資料庫效能](/azure/azure-monitor/insights/sql-assessment)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: c4db0589f250c88b77b21e994f35356ada877d3a
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 214d1d21c20d4626aead29f3d0632a5b2ec2bd2b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712513"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791151"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>雲端原生安全性基準原則
 
@@ -43,7 +43,7 @@ ms.locfileid: "97712513"
 - 使用 Azure 角色型存取控制 (Azure RBAC) 、多重要素驗證及單一登入 (SSO) 存取資源的授權。
 - 快速緩和疑似入侵的使用者身分識別。
 - 及時 (JIT) ，以工作為基礎授與足夠的存取權，以限制公開 overprivileged 的系統管理員認證。
-- 透過 Azure Active Directory，擴充使用者身分識別，以及跨多個環境存取原則。
+- 透過 Azure Active Directory 擴充使用者身分識別，以及跨多個環境存取原則。
 
 雖然在安全性基準專業領域的內容中瞭解身分 [識別基準專業](../identity-baseline/index.md) 領域是很重要的，但 [雲端治理的五個專業領域](../index.md) 會將它視為個別的專業領域。
 
@@ -56,7 +56,7 @@ ms.locfileid: "97712513"
 - 雲端原生原則可能不允許混合式連線至內部部署資源。 如果混合式連線證明必要，則更健全的企業安全性原則範例會是更相關的參考。
 - 使用者可以使用虛擬網路和網路安全性群組，建立與 Azure 的連線。
 - 原生 Windows Azure 防火牆會限制埠存取，以保護主機免于惡意的網路流量。 這項原則的一個很好的範例，就是封鎖或不要透過 SSH/RDP 將流量直接啟用至 VM 的需求。
-- Azure Web 應用程式防火牆等服務 (WAF) Azure 應用程式閘道和 Azure DDoS 保護的應用程式，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
+- Azure Web 應用程式防火牆等服務 (在 Azure 應用程式閘道和 Azure DDoS 保護應用程式上) WAF，並確保在 Azure 中執行之虛擬機器的可用性。 這些功能不應停用。
 
 ### <a name="data-protection"></a>資料保護
 
@@ -71,9 +71,9 @@ ms.locfileid: "97712513"
 
 ### <a name="security-monitoring"></a>安全性監控
 
-安全性監視是一個主動式策略，可稽核您的資源，以識別不符合組織標準或最佳做法的系統。 Azure 資訊安全中心在混合式雲端工作負載之間提供統一的安全性基準和 Azure 進階威脅防護。 使用資訊安全中心，您可以在工作負載中套用安全性原則、限制暴露於威脅的可能性，以及偵測和回應攻擊，包括：
+安全性監視是一個主動式策略，可稽核您的資源，以識別不符合組織標準或最佳做法的系統。 Azure 資訊安全中心為混合式雲端工作負載提供統一的安全性基準和 Microsoft Defender 以進行身分識別。 使用資訊安全中心，您可以在工作負載中套用安全性原則、限制暴露於威脅的可能性，以及偵測和回應攻擊，包括：
 
-- 在所有內部部署和雲端工作負載中使用 Azure 資訊安全中心統一安全性的觀點。
+- 使用 Azure 資訊安全中心跨所有內部部署和雲端工作負載的安全性統一觀點。
 - 持續監視和安全性評量，以確保合規性並補救任何弱點。
 - 可簡化調查的互動式工具和內容相關威脅情報。
 - 廣泛的記錄，並與現有的安全性資訊整合。
@@ -93,7 +93,7 @@ ms.locfileid: "97712513"
 - **保護和審核資料存取。** 組織應該審核所有資料存取，並使用先進的機器學習功能來呼叫標準存取模式的偏差。
 - **容錯移轉實務。** 具有低容錯能力的雲端作業必須能夠進行容錯移轉，或從網路安全性或平臺事件中復原。 這些程式不能只是記錄，而是每季進行練習。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您已複習過適用于雲端原生解決方案的範例安全性基準原則，請返回原則審核指南以開始建立此範例，以建立您自己的雲端採用原則。
 

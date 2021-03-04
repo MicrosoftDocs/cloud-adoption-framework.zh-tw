@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: db212a8887dcb41c4595877e0af766e47ad80f7b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0f00a68c43c5761954182af2b2edfa318692e121
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021146"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790760"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>適用于複雜企業的治理指南：改善身分識別基準專業領域
 
@@ -71,14 +71,14 @@ IT 小組已核准將 CIO 和 CFO 的計畫推進，以淘汰兩個資料中心�
 
 ## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
-治理 MVP 設計變更為包含新的 Azure 原則，以及虛擬機器上的 Active Directory 執行。 這兩個設計變更會共同實現新的公司原則聲明。
+治理 MVP 設計變更為包含新的 Azure 原則，以及在虛擬機器上執行 Active Directory。 這兩個設計變更會共同實現新的公司原則聲明。
 
 以下是新的最佳做法：
 
-- **安全混合式虛擬網路藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這種最佳做法需要周邊網路來啟用跨網路界限的 Active Directory Domain Services。
+- **安全混合式虛擬網路藍圖：** 混合式網路的內部部署端應設定為允許下列解決方案與內部部署 Active Directory 伺服器之間的通訊。 這種最佳做法需要周邊網路，才能跨網路界限啟用 Active Directory 網域服務。
 - **Azure Resource Manager 範本：**
     1. 定義 NSG 以封鎖外部流量，並允許內部流量。
-    2. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 的虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)。
+    2. 根據黃金映射，在負載平衡的配對中部署兩部 Active Directory 虛擬機器。 在首次開機時，該映像會執行 PowerShell 指令碼，來加入網域並向網域服務註冊。 如需詳細資訊，請參閱[將 Active Directory Domain Services (AD DS) 擴充至 Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)。
 - Azure 原則：將 NSG 套用至所有資源。
 - Azure 藍圖：
     1. 建立名為 `active-directory-virtual-machines` 的藍圖。
@@ -91,7 +91,7 @@ IT 小組已核准將 CIO 和 CFO 的計畫推進，以淘汰兩個資料中心�
 
 將這些變更新增至治理 MVP 有助於補救本文中的許多風險，讓每個雲端採用小組都能快速地超越此障礙。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 隨著雲端採用持續提供額外的商業價值，風險和雲端治理需求也會改變。 以下是可能會發生的一些變更。 針對此虛構公司，下一個觸發程式是在雲端採用計畫中納入受保護的資料。 這種變更需要額外的安全性控制。
 

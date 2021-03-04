@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 2031d327b4cc33be9a3c200de2e83be8e4606510
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fd063e049713ebc45cbd5dcde7bf40a492f6685e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020687"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790233"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準企業治理指南：治理策略背後的敘述
 
@@ -39,9 +39,9 @@ ms.locfileid: "97020687"
 
 以下是該公司的 IT 和雲端作業目前的狀態：
 
-- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 它會將這兩個資料中心分別稱為 _生產_ 和 _DR_ 。
+- IT 負責運作兩個託管的基礎結構環境。 其中一個環境含有生產資產。 另一個環境則含有災害復原和一些開發/測試資產。 這些環境是由兩個不同的提供者所託管。 它會將這兩個資料中心分別稱為 *生產* 和 *DR* 。
 
-- 它會將所有使用者的電子郵件帳戶遷移至 Microsoft 365，以進入雲端。 此移轉已在六個月前完成。 其他一些 IT 資產已部署至雲端。
+- 它透過將所有使用者的電子郵件帳戶遷移至 Microsoft 365 來進入雲端。 此移轉已在六個月前完成。 其他一些 IT 資產已部署至雲端。
 
 - 應用程式開發小組正在開發/測試容量中工作，以瞭解雲端原生功能。
 
@@ -65,7 +65,7 @@ ms.locfileid: "97020687"
 
 - 公司計畫變更已認可的資本支出，使其成為其投資成本，藉此改變 it 投資的方式。 這項改變將提供更好的成本控制，並使 IT 能夠加速完成其他計劃的工作。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 公司已經制訂一項公司原則，使治理實施具體化。 公司原則推動了許多技術決策。
 

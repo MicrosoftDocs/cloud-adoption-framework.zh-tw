@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 4ad9cc8fa155153becb036f2be678b4e292004ae
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: deebdc2b6858bada6411ea78a98e7bcfa6c48654
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017440"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790471"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure 中的增強管理基準
 
@@ -47,10 +47,10 @@ ms.locfileid: "97017440"
 
 此資料表概述客戶增強的管理基準中有哪些流程、工具和潛在影響：
 
-| 專業領域  | Process  | 工具 | 潛在影響 | 深入了解 |
+| 專業領域 | Process | 工具 | 潛在影響 | 深入了解 |
 |---|---|---|---|---|
 | 清查和可見性 | 服務變更追蹤 | Azure Resource Graph | 若能更加深入地了解 Azure 服務的變更，可能會有助於更快地偵測到負面影響或更快速地補救 | [Azure Resource Graph 的概觀](/azure/governance/resource-graph/overview) |
-| 清查和可見性 | IT 服務管理 (ITSM) 整合 | IT 服務管理連接器 | 自動化的 ITSM 連線能更快產生認知。 | [IT 服務管理連接器 (ITSMC)](/azure/azure-monitor/platform/itsmc-overview) |
+| 清查和可見性 | IT 服務管理 (ITSM) 整合 | IT 服務管理連接器 | 自動化的 ITSM 連線能更快產生認知。 | [IT 服務管理連接器 (ITSMC)](/azure/azure-monitor/alerts/itsmc-overview) |
 | 作業合規性 | 作業自動化 | Azure 自動化 | 將作業合規性自動化，以更快、更精確地回應變更。 | 請參閱下列各節 |
 | 作業合規性 | 效能自動化 | Azure 自動化 | 透過效能預期自動執行作業合規性，以解決資源特有的調整或大小調整常見問題。 | 請參閱下列各節 |
 | 作業合規性 | 多重雲端作業 | Azure 自動化 Hybrid Runbook Worker | 將跨越多個雲端的作業自動化。 | [混合式 Runbook 背景工作概觀](/azure/automation/automation-hybrid-runbook-worker) |
@@ -129,6 +129,6 @@ Azure 資訊安全中心提供兩個層級：免費和標準。 安全性建議�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center)。
+若要深入了解，請參閱 [Azure 資訊安全中心文件](/azure/security-center/)。
 
 ::: zone-end

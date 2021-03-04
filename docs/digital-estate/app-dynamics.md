@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 306375d0d399b078cd7257d88c8d74e04bf9ebd5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 561be9cd3c8ceaebc9ba8b7faab8f87297170fc4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023016"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790267"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
@@ -35,11 +35,10 @@ AppDynamics 可以針對大部分的使用案例供應商業見解，而許多�
 
 ## <a name="how-appdynamics-works"></a>AppDynamics 的運作方式
 
-在遷移之前，會將小型的輕量代理程式與您的應用程式一起部署。 代理程式專為各種不同的語言（例如 .NET、JAVA 和 Node.js）所建立。 代理程式會在遷移期間收集效能和診斷資料，並將其傳送至控制器，以相互關聯及分析資訊。 控制器可以位於完全受控的 AppDynamics 環境中，或客戶可以選擇在 Azure 中管理它們。 重要的使用者體驗會識別為「商務交易」，可協助您探索一般應用程式或商務效能的基準。 不論是傳統的伺服器基礎結構、資料庫、中介軟體元件、內部部署或雲端，都能針對整個應用程式和每個商務交易，即時識別所有應用程式元件和相依性。
+在遷移之前，會將小型的輕量代理程式與您的應用程式一起部署。 代理程式專為各種不同的語言（例如 .NET、JAVA 和 Node.js）所建立。 代理程式會在遷移期間收集效能和診斷資料，並將其傳送至控制器，以相互關聯及分析資訊。 控制器可以位於完全受控的 AppDynamics 環境中，或客戶可以選擇在 Azure 中管理它們。 重要的使用者體驗是識別為 *商務交易*，可協助您探索一般應用程式或商務效能的基準。 不論是傳統的伺服器基礎結構、資料庫、中介軟體元件、內部部署或雲端，都能針對整個應用程式和每個商務交易，即時識別所有應用程式元件和相依性。
 
-![AppDynamics 的流程地圖](./media/app-dynamics-flow-map.jpg)
-
-_圖1： AppDynamics 的流程地圖。_
+![AppDynamics flow map ](./media/app-dynamics-flow-map.jpg)
+ *圖1： AppDynamics flow 地圖。*
 
 ## <a name="appdynamics-identifies-business-metrics"></a>AppDynamics 識別商務計量
 
@@ -69,9 +68,8 @@ AppDynamics 可協助您為您的應用程式定義商業價值、找出他們�
 
 可設定的儀表板是許多 AppDynamics 工具的其中一種，可將這些深入解析視覺化。 在此即時範例中，我們會看到整體的轉換漏斗圖，以及針對 abandoners 和購物車總計、客戶區段、地點和一般收益詳細資料，對個別頁面效能的影響。
 
-![AppDynamics 業務影響儀表板](./media/app-dynamics-business-impact-dashboard.jpg)
-
-_圖2： AppDynamics 業務影響儀表板。_
+![AppDynamics 業務影響儀表板 ](./media/app-dynamics-business-impact-dashboard.jpg)
+ *圖2： AppDynamics 業務影響儀表板。*
 
 ## <a name="resources-to-help-identify-business-metrics"></a>協助識別商務計量的資源
 
@@ -91,10 +89,9 @@ _圖2： AppDynamics 業務影響儀表板。_
 
 在此情況下，他們可以看到從48到79% 的轉換率增加，以及基礎效能、回應時間和票證銷售磁片區的改進。
 
-![AppDynamics 遷移比較](./media/app-dynamics-migration-comparison.jpg)
+![AppDynamics 遷移比較 ](./media/app-dynamics-migration-comparison.jpg)
+ *圖3： AppDynamics 遷移比較。*
 
-_圖3： AppDynamics 遷移比較。_
+## <a name="next-steps"></a>下一步
 
-## <a name="next-steps"></a>後續步驟
-
-AppDynamics 可讓組織在其雲端採用策略期間，有獨特的能力來測量業務成果。 造訪 [AppDynamics](https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring/microsoft-azure) ，深入瞭解如何使用 Azure AppDynamics。
+AppDynamics 可讓組織在其雲端採用策略期間，有獨特的能力來測量業務成果。 造訪 [AppDynamics](https://www.appdynamics.com/solutions/azure-monitoring) ，深入瞭解如何使用 Azure AppDynamics。

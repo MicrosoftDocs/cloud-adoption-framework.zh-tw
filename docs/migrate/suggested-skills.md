@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: e36fb243716808df82bf71a46135734f322ef805
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 25c653624aa183cfd80e9460acf87ddb28602259
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175265"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789893"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>雲端移轉的技能整備程度
 
@@ -38,14 +38,14 @@ ms.locfileid: "98175265"
 在評估過程中，架構設計人員將會設計每個工作負載的解決方案。 下列技能資源可協助您準備這些工作的架構設計人員：
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)： Pluralsight 的課程，可協助架構正確的基礎解決方案。
-- [Microsoft Azure 架構：消費者入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 的課程，為架構人員提供 Azure 架構的基本知識。
-- [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing)： Pluralsight 課程可協助架構設計人員設計遷移解決方案。
+- [Microsoft Azure 架構：快速入門](https://www.pluralsight.com/courses/azure-architecture-getting-started)： Pluralsight 的課程，可為架構設計人員提供 Azure 架構的基本知識。
+- [設計 Microsoft Azure 的遷移](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing)：可協助架構設計人員設計遷移解決方案的 Pluralsight 課程。
 
 ## <a name="migrate-skilling-resources"></a>遷移技能資源
 
 下列教學課程可以協助小組準備移轉活動：
 
-- [遷移至 azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 Azure Migrate 將 vm 遷移至 azure。
+- [遷移至 azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)：使用 azure 遷移將 vm 遷移至 azure。
 - [將工作負載重新裝載至 azure](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting)： Pluralsight 課程，教檢視器如何將工作負載重新裝載到 azure。
 - 將[實體和虛擬伺服器遷移至 azure](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers)：將伺服器遷移至 Azure 的 Pluralsight 課程。
 - 將[資料匯入和匯出至 azure](https://www.pluralsight.com/courses/microsoft-azure-import-export-data)：在 azure 上移動資料的 Pluralsight 課程。

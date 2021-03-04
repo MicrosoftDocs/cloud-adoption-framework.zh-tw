@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 7f011b67288b40a82dc4901ca264dfc0f607ed7d
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: b5d2b2020a2e59b5f36624d1323c7f5b5ba3ca68
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712938"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791372"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -49,24 +49,24 @@ ms.locfileid: "97712938"
 - **授權：** 判斷已驗證的使用者可以存取哪些資源，或他們有許可權執行的作業。
 - **審核：** 定期檢查記錄檔和其他資訊，以探索與使用者身分識別相關的安全性問題。 這包括審核可疑的使用模式、定期檢查使用者權限，以確認它們是否正確，以及其他功能。
 
-Azure 只信任一個服務的身分識別，那就是 Azure Active Directory (Azure AD)。 您會將使用者新增至 Azure AD，並且針對上述所有功能使用它。 在查看如何設定 Azure AD 之前，請務必瞭解用來管理這些服務存取權的特殊許可權帳戶。
+Azure 只信任一個服務的身分識別，那就是 Azure Active Directory (Azure AD)。 您會將使用者新增至 Azure AD，並且針對上述所有功能使用它。 在瞭解如何設定 Azure AD 之前，請務必瞭解用來管理這些服務存取權的特殊許可權帳戶。
 
-當貴組織已註冊 Azure 帳戶時，至少會指派一個 Azure **帳戶擁有者**。 此外，也會建立 Azure AD **租** 使用者，除非現有的租使用者已與您的組織使用其他 Microsoft 服務（例如 Microsoft 365）相關聯。 具有 Azure AD 租用戶完整權限的 **全域管理員**，會在建立時產生關聯。
+當貴組織已註冊 Azure 帳戶時，至少會指派一個 Azure **帳戶擁有者**。 此外，也會建立 Azure AD **租** 使用者，除非現有的租使用者已與您組織使用其他 microsoft 服務（例如 microsoft 365）相關聯。 具有 Azure AD 租用戶完整權限的 **全域管理員**，會在建立時產生關聯。
 
-Azure 帳戶擁有者和 Azure AD 全域管理員的使用者身分識別，都會儲存在由 Microsoft 管理的高度安全身分識別系統中。 Azure 帳戶擁有者已獲授權可建立、更新和刪除訂用帳戶。 Azure AD 全域管理員已獲授權可以在 Azure AD 中執行許多動作，但是針對這個設計指南，您將著重於使用者身分識別的建立和刪除。
+Azure 帳戶擁有者和 Azure AD 全域管理員的使用者身分識別，都會儲存在由 Microsoft 管理的高度安全身分識別系統中。 Azure 帳戶擁有者已獲授權可建立、更新和刪除訂用帳戶。 Azure AD 全域管理員已獲授權可在 Azure AD 中執行許多動作，但在此設計指南中，您將著重于使用者身分識別的建立和刪除。
 
 > [!NOTE]
-> 如果現有的 Microsoft 365、Intune 或 Dynamics 365 授權與您的帳戶相關聯，您的組織可能已經有 Azure AD 租使用者。
+> 如果有現有的 Microsoft 365、Intune 或 Dynamics 365 授權與您的帳戶相關聯，您的組織可能已經有現有的 Azure AD 租使用者。
 
 Azure 帳戶擁有者有權建立、更新和刪除訂閱：
 
 ![此圖顯示具有 Azure 帳戶擁有者和 Azure AD 全域管理員的 Azure 帳戶。 ](../../_images/govern/design/governance-3-0.png)
-_圖1：具有 azure 帳戶擁有者和 Azure AD 全域管理員的 azure 帳戶。_
+*圖1：具有 azure 帳戶擁有者和 AZURE AD 全域管理員的 azure 帳戶。*
 
 Azure AD **全域管理員** 有權可以建立使用者帳戶：
 
-![圖表顯示 Azure AD 全域管理員在租使用者中建立必要的使用者帳戶。 ](../../_images/govern/design/governance-3-0a.png)
-_圖2： Azure AD 全域管理員在租使用者中建立必要的使用者帳戶。_
+![此圖顯示 Azure AD 全域管理員在租使用者中建立必要的使用者帳戶。 ](../../_images/govern/design/governance-3-0a.png)
+*圖2： AZURE AD 全域管理員在租使用者中建立必要的使用者帳戶。*
 
 前兩個帳戶 **app1 工作負載擁有** 者和 **app2 工作負載擁有** 者，每個帳戶都與組織中負責管理工作負載的個人相關聯。 **網路作業** 帳戶是由負責共用基礎結構資源的個人所擁有。 最後，**訂用帳戶擁有者** 帳戶是與負責訂用帳戶擁有權的個人相關聯。
 
@@ -85,7 +85,7 @@ _圖2： Azure AD 全域管理員在租使用者中建立必要的使用者帳�
 在這兩個範例中，有訂用帳戶服務管理員會在訂用帳戶範圍內指派內建的擁有者角色。 回想一下，內建擁有者角色會授與擁有權限，包括管理資源的存取權。
 
 ![具有擁有者角色的訂用帳戶服務管理員 ](../../_images/govern/design/governance-2-1.png)
- _圖3：訂用帳戶已獲派內建擁有者角色的服務管理員。_
+ *圖3：訂用帳戶已獲派內建擁有者角色的服務管理員。*
 
 <!-- docutune:casing "group A" "groups A and B" "owner A" -->
 
@@ -107,7 +107,8 @@ _圖2： Azure AD 全域管理員在租使用者中建立必要的使用者帳�
 
 此時，每個工作負載擁有者會在本身的資源群組中隔離。 工作負載擁有者或其小組成員都沒有任何其他資源群組中資源的管理存取權。
 
-![此圖表顯示資源群組 A 和 B 的訂用帳戶。](../../_images/govern/design/governance-2-10.png) gfigure 4：具有兩個工作負載擁有者的訂用帳戶會與自己的資源隔離 group。_
+![此圖表顯示資源群組 A 和 B 的訂用帳戶。 ](../../_images/govern/design/governance-2-10.png)
+*圖4：有兩個工作負載擁有者與自己的資源群組隔離的訂* 用帳戶。
 
 此模型是最低許可權的模型。 每位使用者都會在正確的資源管理範圍指派正確的許可權。
 
@@ -128,7 +129,7 @@ _圖2： Azure AD 全域管理員在租使用者中建立必要的使用者帳�
 請注意，在此模型中，**服務管理員** 執行的動作比在第一個範例中還要少，原因是將管理存取權委派給個別的工作負載擁有者。
 
 ![此圖表顯示資源群組 A 和 B 的服務系統管理員和兩個工作負載擁有者。 ](../../_images/govern/design/governance-2-16.png)
-_圖5：訂用帳戶具有服務管理員和兩個工作負載擁有者，全都獲指派內建擁有者角色。_
+*圖5：訂用帳戶具有服務管理員和兩個工作負載擁有者，全都獲指派內建擁有者角色。*
 
 因為 **工作負載擁有者 A** 和 **工作負載擁有者 B** 都會獲指派訂用帳戶範圍內的內建擁有者角色，所以每個資源群組各自都會繼承內建的擁有者角色。 這表示，他們不僅能完整存取彼此的資源，也可以將管理存取權委派給彼此的資源群組。 例如， **工作負載擁有者 B** 具有將任何其他使用者新增至 **資源群組 A 的** 許可權，並可將任何角色指派給這些使用者，包括內建的擁有者角色。
 
@@ -151,12 +152,12 @@ _圖5：訂用帳戶具有服務管理員和兩個工作負載擁有者，全都
 請回想需求，您在組織中有個人負責訂用帳戶，這個使用者擁有 Azure AD 租用戶中的 **訂用帳戶擁有者** 帳戶。 此帳戶沒有建立訂閱的許可權。 只有 **Azure 帳戶擁有** 者具有執行此動作的許可權：
 
 ![Azure 帳戶擁有者建立訂用帳戶 ](../../_images/govern/design/governance-3-0b.png)
- _圖6： azure 帳戶擁有者建立訂用帳戶。_
+ *圖6： azure 帳戶擁有者建立訂用帳戶。*
 
 一旦建立訂用 **帳戶，Azure 帳戶擁有** 者就可以將訂用帳戶 **擁有** 者帳戶新增至具有 **擁有** 者角色的訂用帳戶：
 
 ![Azure 帳戶擁有者會將訂用帳戶擁有者使用者帳戶新增至具有擁有者角色的訂用帳戶。 ](../../_images/govern/design/governance-3-0c.png)
-_圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新增至具有 **擁有** 者角色的訂用帳戶。_
+*圖7： Azure 帳戶擁有者將訂用帳戶擁有者使用者帳戶新增至具有擁有者角色的訂用帳戶。*
 
 訂用帳戶 **擁有** 者帳戶現在可以建立 **資源群組** ，並委派資源存取管理。
 
@@ -239,13 +240,13 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
 > [!NOTE]
 > 若要深入瞭解 Azure 帳戶與訂用帳戶之間的關聯性，請參閱 [瞭解 azure 中的資源存取](/azure/role-based-access-control/rbac-and-directory-admin-roles)。
 
-依照下列步驟執行：
+請遵循下列步驟：
 
-1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](/azure/active-directory/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
+1. 如果貴組織還沒有帳戶的話，請建立 [Azure 帳戶](/azure/active-directory/fundamentals/sign-up-organization)。 註冊 Azure 帳戶的人員會成為 Azure 帳戶管理員，而且貴組織的領導必須選取個人來承擔這個角色。 這個個人將負責：
     - 建立訂閱。
-    - 建立和管理 [Azure Active Directory () Azure AD ](/azure/active-directory/fundamentals/active-directory-whatis) 儲存這些訂用帳戶使用者身分識別的租使用者。
+    - [ (AZURE AD) ](/azure/active-directory/fundamentals/active-directory-whatis)租使用者建立及管理 Azure Active Directory，以儲存這些訂用帳戶的使用者身分識別。
 2. 您組織的領導小組決定誰負責：
-    - 使用者身分識別的管理;當您的組織的 Azure 帳戶建立時，預設會建立 [Azure AD 租](/azure/active-directory/develop/active-directory-howto-tenant) 使用者，且預設會將帳戶管理員新增為 [Azure AD 全域管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 。 貴組織可以選擇另一個使用者來管理使用者身分識別，方法是[將 Azure AD 全域管理員角色指派給該使用者](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+    - 使用者身分識別的管理;根據預設， [AZURE ad 租](/azure/active-directory/develop/quickstart-create-new-tenant) 使用者會在您組織的 Azure 帳戶建立時建立，而帳戶管理員預設會新增為 [Azure ad 全域管理員](/azure/active-directory/roles/permissions-reference) 。 您的組織可以藉由將 [AZURE AD 全域管理員角色指派給該使用者](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)，來選擇其他使用者來管理使用者身分識別。
     - 訂用帳戶，這表示這些使用者：
         - 管理與該訂用帳戶中資源使用量相關聯的成本。
         - 針對資源存取執行並維護最低許可權模型。
@@ -254,7 +255,7 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
         - 內部部署至 Azure 的網路連線能力。
         - 透過虛擬網路對等互連，在 Azure 內網路連線的擁有權。
     - 工作負載擁有者。
-3. Azure AD 全域管理員會為以下人員[建立新的使用者帳戶](/azure/active-directory/add-users-azure-active-directory)：
+3. Azure AD 全域管理員會 [建立新的使用者帳戶](/azure/active-directory/fundamentals/add-users-azure-active-directory) ：
     - 每個訂用帳戶的訂用帳戶擁有者與每個環境相關聯的人員。 請注意，只有當訂用帳戶 **服務管理員** 不負責管理每個訂用帳戶/環境的資源存取權時，才需要這麼做。
     - 將成為 **網路操作使用者** 的人員。
     - 身為 **工作負載擁有** 者的人員。
@@ -262,11 +263,11 @@ _圖7： Azure 帳戶擁有者將 **訂** 用帳戶擁有者使用者帳戶新�
     - **共用基礎結構** 環境的訂用帳戶。
     - **生產** 環境的訂用帳戶。
     - 適用於 **開發** 環境的訂用帳戶。
-5. Azure 帳戶管理員會[將訂用帳戶服務擁有者新增至每個訂用帳戶](/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)。
+5. Azure 帳戶管理員會[將訂用帳戶服務擁有者新增至每個訂用帳戶](/azure/cost-management-billing/manage/add-change-subscription-administrator#to-assign-a-user-as-an-administrator)。
 6. 建立 **工作負載擁有者** 的核准程序，以要求建立資源群組。 核准程式可透過許多方式來執行，例如透過電子郵件，或者您可以使用像是 [SharePoint 工作流程](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)的流程管理工具。 核准程序可以依照下列步驟：
     - **工作負載擁有者** 為 **開發** 環境、**生產** 環境或兩者中的必要 Azure 資源準備用料表，並且將它提交給 **訂用帳戶擁有者**。
-    - 訂用帳戶 **擁有** 者會審核物料清單並驗證要求的資源，以確保要求的資源適用于其計畫的使用，例如檢查要求的 [虛擬機器大小](/azure/virtual-machines/windows/sizes) 是否正確。
-    - 如果要求未獲得核准，**工作負載擁有者** 會收到通知。 如果要求通過核准，**訂用帳戶擁有者會遵循貴組織的 [命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)來** [建立要求的資源群組](/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)，[新增 **工作負載擁有者**](/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有 [**參與者** 角色](/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的 **工作負載擁有者**。
+    - 訂用帳戶 **擁有** 者會審核物料清單並驗證要求的資源，以確保要求的資源適用于其計畫的使用，例如檢查要求的 [虛擬機器大小](/azure/virtual-machines/sizes) 是否正確。
+    - 如果要求未獲得核准，**工作負載擁有者** 會收到通知。 如果要求通過核准，**訂用帳戶擁有者會遵循貴組織的 [命名慣例](../../ready/azure-best-practices/naming-and-tagging.md)來** [建立要求的資源群組](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)，[新增 **工作負載擁有者**](/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)，其具有 [**參與者** 角色](/azure/role-based-access-control/built-in-roles#contributor)，並且將通知傳送給已建立資源群組的 **工作負載擁有者**。
 7. 為工作負載擁有者建立核准程序，以要求來自共用基礎結構擁有者的虛擬網路對等互連連線。 如同上一個步驟，這個核准程序可以使用電子郵件或處理程序管理工具來實作。
 
 既然您已實作治理模型，您可以部署共用基礎結構服務。

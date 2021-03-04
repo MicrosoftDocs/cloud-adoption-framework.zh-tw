@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 56a46d56101da7e610e45f87b30909e3890d4568
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 41c80e1ad1be85fcc53f015064a1bff28db5f7b7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017389"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790114"
 ---
 <!-- docutune:casing "Update Management" "Guest Configuration" "Blueprints: Getting started" "Blueprints: Blueprint definitions" MMA -->
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure 中的作業合規性
 
-_作業合規性_ 是任何雲端管理基準中的第二個專業領域。
+*作業合規性* 是任何雲端管理基準中的第二個專業領域。
 
 ![雲端管理基準](../../_images/manage/management-baseline.png)
 
@@ -127,9 +127,9 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 若要深入了解，請參閱：
 
-- [Azure 原則](/azure/azure-policy)
+- [Azure 原則](/azure/governance/policy/)
 - [Azure 原則：來賓組態](/azure/governance/policy/concepts/guest-configuration)
-- [雲端採用架構：原則強制執行決策指南](../../decision-guides/policy-enforcement/index.md)
+- [雲端採用架構原則強制決策指南](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure 藍圖
 
@@ -207,7 +207,7 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 1. 檢閱藍圖定義，然後選取 [發佈藍圖]。
 1. 在 [版本] 方塊中輸入版本，例如 "1.0"。
 1. 在 [變更附註] 方塊中，輸入您的附註。
-1. 選取 [發佈] 。
+1. 選取 [發佈]  。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -215,8 +215,8 @@ Azure 原則來賓設定目前只會稽核機器內的設定。 其不會套用�
 
 若要深入了解，請參閱：
 
-- [Azure 藍圖](/azure/governance/blueprints)
-- [雲端採用架構：資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
-- [標準型藍圖範例](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Azure 藍圖](/azure/governance/blueprints/)
+- [雲端採用架構資源一致性決策指南](../../decision-guides/resource-consistency/index.md)
+- [標準型藍圖範例](/azure/governance/blueprints/samples/#standards-based-blueprint-samples)
 
 ::: zone-end

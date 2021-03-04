@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: b7f40bd5a4eca62b3712c0a9b6073512edbdb374
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: a94d1d04f3c0bea3f1b9b6ca45e6e50eb66743cc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712836"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790811"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>身分識別基準專業領域改進
 
@@ -21,9 +21,8 @@ ms.locfileid: "97712836"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發身分識別基準專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
-
-_圖1：漸進式雲端治理方法的階段。_
+![雲端治理的漸進式方法階段 ](../../_images/govern/adoption-phases.png)
+ *圖1：雲端治理增量方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的身分識別基準專業領域。
 
@@ -71,7 +70,7 @@ _圖1：漸進式雲端治理方法的階段。_
 - 整合您的內部部署與雲端目錄。
 - 請考量使用下列存取模型：
   - [最小許可權的系統管理](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) 存取模型。
-  - [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) 存取模型。
+  - 特殊[許可權身分識別管理](/azure/active-directory/privileged-identity-management/pim-configure)存取模型。
 - 完成所有 preintegration 的詳細資料，並查看身分 [識別管理和存取控制安全性最佳作法](/azure/security/fundamentals/identity-management-best-practices)。
   - 啟用單一身分識別單一登入 (SSO) ，也稱為無縫 SSO。
   - 為系統管理員設定多重要素驗證。
@@ -80,7 +79,7 @@ _圖1：漸進式雲端治理方法的階段。_
   - 啟用即時 (JIT) 存取和角色變更警示。
   - 針對指派給內建角色的關鍵系統管理員活動進行風險分析。
   - 請考慮為所有使用者更新推出的增強式驗證。
-  - 啟用 Privileged Identity Management (PIM) for JIT (使用額外系統管理角色的限時啟用) 。
+  - 啟用特殊許可權身分識別管理 (PIM) 適用于 JIT (針對額外的系統管理角色使用限時啟用) 。
   - 將使用者帳戶與全域管理員帳戶分開，以確保系統管理員不會不慎開啟電子郵件，或執行與其全域管理員帳戶) 相關聯的程式。
 
 ## <a name="adopt-and-migrate"></a>採用和移轉
@@ -132,9 +131,9 @@ _圖1：漸進式雲端治理方法的階段。_
 - 請考量實作開發安全性作業 (DevSecOps) 方法。
 - 進行影響分析以測量成本、安全性和使用者採用的結果。
 - 定期產生影響報表，以顯示系統所建立計量的變更，並評估混合式身分 [識別策略](../../decision-guides/identity/index.md)的業務影響。
-- 建立 [Azure 資訊安全中心](/azure/security-center/security-center-intro)所建議的整合監視。
+- 建立 [Azure 資訊安全中心](/azure/security-center/security-center-introduction)所建議的整合監視。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 既然您已瞭解雲端身分識別治理的概念，請檢查身分識別 [基準工具鏈](./toolchain.md) ，以識別在 azure 平臺上開發身分識別基準專業領域時所需的 Azure 工具和功能。
 

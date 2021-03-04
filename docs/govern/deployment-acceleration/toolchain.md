@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: d0577bbcdbd637aa81a07bb956b0d782137121f3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d52eb8ada0d778a2f87991289f32cf4e267064d7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021384"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791423"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure 中的部署加速工具
 
@@ -23,19 +23,19 @@ ms.locfileid: "97021384"
 
 以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 
-|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure 成本管理 + 計費](/azure/cost-management) |
+|  | [Azure 原則](/azure/governance/policy/overview) | [Azure 管理群組](/azure/governance/management-groups/) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure 成本管理 + 計費](/azure/cost-management-billing/) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **實行公司原則**     | 是 | 否  | 否  | 否 | 否 | 否 |
 | **跨訂用帳戶套用原則**     | 必要 | 是  | 否  | 否 | 否 | 否 |
 | **部署定義的資源**     | 否 | 否  | 是  | 否 | 否 | 否 |
-| **建立完全相容的環境**      | 必要 | 必要  | 必要  | 是 | 否 | 否 |
+| **建立完全相容的環境**      | 必要 | 必要 | 必要 | 是 | 否 | 否 |
 | **稽核原則**      | 是 | 否  | 否  | 否 | 否 | 否 |
 | **查詢 Azure 資源**      | 否 | 否  | 否  | 否 | 是 | 否 |
 | **資源成本報告**      | 否 | 否  | 否  | 否 | 否 | 是 |
 
 以下是完成特定部署加速目標可能需要的其他工具。 這些工具通常會在治理小組外部使用，但仍會被視為部署加速專業領域的層面。
 
-|  | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure 原則](/azure/governance/policy/overview) | [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) | [Azure 備份](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
+|  | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal/) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 原則](/azure/governance/policy/overview) | [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) | [Azure 備份](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **手動部署 (單一資產)**     | 是 | 是  | 否  | 無效率 | 否 | 是 |
 | **手動部署 (完整環境)**     | 無效率 | 是 | 否  | 無效率 | 否 | 是 |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 80fa19f514e425bf11fee61a6f245290d49bb3d3
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 9d3bde2d46e3a447a1a3bdcd3ad48634860e8259
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174466"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791304"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>資源一致性專業領域的改進
 
@@ -21,9 +21,8 @@ ms.locfileid: "98174466"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發部署加速專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
-
-*圖1：漸進式雲端治理方法的階段。*
+![雲端治理的漸進式方法階段 ](../../_images/govern/adoption-phases.png)
+ *圖1：雲端治理增量方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定要在這些活動中投入多少錢，以改善資源一致性專業領域。
 
@@ -39,7 +38,7 @@ ms.locfileid: "98174466"
 - 評估您的[資源一致性工具鏈](./toolchain.md)選項。
 - 了解雲端策略的授權需求。
 - 開發草稿架構指導方針檔，並散發給重要的專案關係人。
-- 熟悉您用來以群組方式部署、管理及監視解決方案之所有資源的 Resource Manager。
+- 熟悉您用來以群組方式部署、管理及監視解決方案之所有資源的資源管理員。
 - 教育並涵蓋受到開發架構指導方針影響的人員和小組。
 - 將已設定優先權的資源部署工作新增至您的移轉待辦項目中。
 
@@ -122,7 +121,7 @@ ms.locfileid: "98174466"
 - 協助雲端採用小組和雲端策略小組瞭解並解決這些異常狀況。
 - 判斷是否需要對資源一致性專業領域進行計費和 Sla 的變更。
 - 評估記錄和監視工具，以判斷您的內部部署、雲端閘道或混合式解決方案是否需要調整。
-- 針對業務單位和地理位置分散的群組，請判斷您的組織是否應考慮使用其他雲端管理功能（例如 [Azure 管理群組](/azure/governance/management-groups) ）來更妥善地套用集中式原則，並符合 SLA 需求。
+- 針對業務單位和地理位置分散的群組，請判斷您的組織是否應考慮使用其他雲端管理功能（例如 [Azure 管理群組](/azure/governance/management-groups/) ）來更妥善地套用集中式原則，並符合 SLA 需求。
 
 ## <a name="next-steps"></a>下一步
 
@@ -130,5 +129,5 @@ ms.locfileid: "98174466"
 
 > [!div class="nextstepaction"]
 > [瞭解 Azure](./resource-access-management.md) 
->  中的資源存取管理[瞭解 Azure](https://azure.microsoft.com/support/legal/sla) 
+>  中的資源存取管理[瞭解 Azure](https://azure.microsoft.com/support/legal/sla/) 
 >  的服務等級協定[瞭解記錄、報告和監視](../../decision-guides/logging-and-reporting/index.md)

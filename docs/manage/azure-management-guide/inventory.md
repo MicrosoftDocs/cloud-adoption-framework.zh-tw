@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 1c5f49ff4ea88826b5e2022e7a5a85ffcb65b71f
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
-ms.translationtype: HT
+ms.openlocfilehash: 633c54091e8fb8f9dd68c80c0492245e91be7e2a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492335"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790437"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure 中的清查和可見性
 
@@ -29,11 +29,11 @@ ms.locfileid: "100492335"
 | Process | 工具 | 目的 |
 |---|---|---|
 | 監視 Azure 服務的健康情況 | [Azure 服務健康狀態](/azure/service-health/service-health-overview) | Azure 中所執行服務的健康情況、效能和診斷 |
-| 記錄集中化 | [Log Analytics](/azure-monitor/log-query/log-analytics-overview) | 適用於所有可見性用途的集中式記錄 |
+| 記錄集中化 | [Log Analytics](/azure/azure-monitor/log-query/log-analytics-overview) | 適用於所有可見性用途的集中式記錄 |
 | 監視集中化 | [Azure 監視器](/azure/azure-monitor/overview) | 操作資料和趨勢的集中監視 |
 | 虛擬機器清查和變更追蹤 | [變更追蹤與詳細目錄](/azure/automation/change-tracking/overview) | 清查 VM 和監視來賓作業系統層級的變更 |
-| 訂用帳戶監視 | [Azure 活動記錄](/azure/azure-monitor/platform/activity-log) | 監視訂用帳戶層級的變更 |
-| 來賓作業系統監視 | [適用於 VM 的 Azure 監視器](/azure/azure-monitor/insights/vminsights-overview) | 監視 VM 的變更和效能 |
+| 訂用帳戶監視 | [Azure 活動記錄檔](/azure/azure-monitor/essentials/activity-log) | 監視訂用帳戶層級的變更 |
+| 來賓作業系統監視 | [適用於 VM 的 Azure 監視器](/azure/azure-monitor/vm/vminsights-overview) | 監視 VM 的變更和效能 |
 | 網路監視 | [Azure 網路監看員](/azure/network-watcher/network-watcher-monitoring-overview) | 監視網路變更和效能 |
 | DNS 監視 | [DNS 分析](/azure/azure-monitor/insights/dns-analytics) | DNS 的安全性、效能和作業 |
 
@@ -84,7 +84,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-如需詳細資訊，請參閱 [Azure 服務健康情況](/azure/service-health)。
+如需詳細資訊，請參閱 [Azure 服務健康情況](/azure/service-health/)。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,7 +95,7 @@ Azure 服務健康狀態包含：
 
 ::: zone-end
 
-[Log Analytics 工作區](/azure/azure-monitor/learn/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案會設定為將其資料儲存在特定工作區中。 Azure 監視解決方案會要求所有伺服器都必須連線到工作區，以便能夠儲存和存取其記錄資料。
+[Log Analytics 工作區](/azure/azure-monitor/logs/quick-create-workspace)是用來儲存 Azure 監視器記錄資料的唯一環境。 每個工作區都有自己的資料存放庫和設定。 資料來源和解決方案會設定為將其資料儲存在特定工作區中。 Azure 監視解決方案會要求所有伺服器都必須連線到工作區，以便能夠儲存和存取其記錄資料。
 
 ::: zone target="chromeless"
 
@@ -113,7 +113,7 @@ Azure 服務健康狀態包含：
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Log Analytics 工作區建立文件](/azure/azure-monitor/learn/quick-create-workspace)。
+若要深入了解，請參閱 [Log Analytics 工作區建立文件](/azure/azure-monitor/logs/quick-create-workspace)。
 
 ## <a name="azure-monitor"></a>Azure 監視器
 
@@ -148,9 +148,9 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
  開始監視：
 
-- [應用程式](/azure/application-insights/app-insights-overview)
-- [容器](/azure/monitoring/monitoring-container-overview)
-- [虛擬機器](/azure/monitoring/monitoring-service-map)
+- [應用程式](/azure/azure-monitor/app/app-insights-overview)
+- [容器](/azure/azure-monitor/containers/container-insights-overview)
+- [虛擬機器](/azure/azure-monitor/vm/service-map)
 - [網路](/azure/networking/network-monitoring-overview)
 
 若要監視其他資源，請尋找 Azure Marketplace 中的其他解決方案。
@@ -159,7 +159,7 @@ Azure 監視器針對 Azure 中的所有監視和診斷資料提供了單一的�
 
 ### <a name="learn-more"></a>深入了解
 
-若要深入了解，請參閱 [Azure 監視器文件](/azure/monitoring-and-diagnostics)。
+若要深入了解，請參閱 [Azure 監視器文件](/azure/azure-monitor/)。
 
 ## <a name="onboard-solutions"></a>讓解決方案上線
 

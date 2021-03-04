@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 170f8c68e8bf23030cdf858c63f73a2eb1b82930
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: aa81840791a123d109cc9eff58bfd26584536d29
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022795"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789604"
 ---
 # <a name="get-started-environment-design-and-configuration"></a>開始使用：環境設計和設定
 
@@ -152,7 +152,7 @@ ms.locfileid: "97022795"
 
 - 部署管理基準。
 - 完成 operations management 活頁簿。
-- 找出需要 Microsoft Azure Well-Architected 評論評量的任何工作負載。
+- 識別任何需要 Microsoft Azure Well-Architected 審核評定的工作負載。
 - 時間軸風險：
   - 檢查活頁簿：每個應用程式擁有者預估一小時。
   - 完成 Microsoft Azure Well-Architected 審核評定：每個應用程式預估一小時。
@@ -199,7 +199,7 @@ ms.locfileid: "97022795"
 
 本指南所述的步驟可協助您和您的小組將其路徑加速到已正確設定的企業就緒雲端環境。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在未來的反復專案中，請考慮下列後續步驟，以初步努力：
 

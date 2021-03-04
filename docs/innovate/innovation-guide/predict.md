@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: 將商務程式自動化、ai 創新、機器學習服務、知識挖掘
-ms.openlocfilehash: cc42a37a151c3f0c60fe58d3e1137093de7237f3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 1b61201bba7af957b661fa9f755350482b3db955
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632047"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790199"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "100632047"
 
 Azure 提供先進的機器學習功能。 使用 Azure Machine Learning，在雲端和邊緣之間建置、定型及部署機器學習模型。 使用自動化機器學習更快地開發模型。 使用您選擇的工具和架構，不會被拘束。
 
-如需更多詳細資訊，請參閱 [Azure Machine Learning 概觀](/azure/machine-learning/overview-what-is-azure-ml)和[開始使用您的第一個機器學習實驗](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)。 如需機器學習的開放原始碼模型格式和執行階段的詳細資訊，請參閱 [ONNX Runtime](http://onnxruntime.ai)。
+如需更多詳細資訊，請參閱 [Azure Machine Learning 概觀](/azure/machine-learning/overview-what-is-azure-ml)和[開始使用您的第一個機器學習實驗](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)。 如需機器學習的開放原始碼模型格式和執行階段的詳細資訊，請參閱 [ONNX Runtime](https://www.onnxruntime.ai/)。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -146,7 +146,7 @@ Azure 提供一組稱為認知服務的預先建置 AI 服務，來建置 AI 應
 
 ## <a name="knowledge-mining"></a>知識採礦
 
-知識挖掘利用人工智慧 (AI) ，推動大量非結構化、半結構化和結構化資訊的內容瞭解。 使用 Azure 認知搜尋從您的內容中發現潛在的深入解析，包括文件、影像和媒體。 您可以探索內容中的模式和關聯性、了解情感，以及擷取關鍵片語。
+知識挖掘使用 AI 來推動大量非結構化、半結構化和結構化資訊的內容瞭解。 使用 Azure 認知搜尋從您的內容中發現潛在的深入解析，包括文件、影像和媒體。 您可以探索內容中的模式和關聯性、了解情感，以及擷取關鍵片語。
 
 <!-- docutune:ignore "Azure Search" -->
 

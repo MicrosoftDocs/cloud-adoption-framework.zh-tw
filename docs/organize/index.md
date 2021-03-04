@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 767de31ef0fea9355482894748636ba0a44f1e22
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
-ms.translationtype: HT
+ms.openlocfilehash: 432d047ca827d981a0e1a2e7fd6c57e9b43eddc7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909475"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789774"
 ---
 # <a name="manage-organizational-alignment"></a>管理組織一致性
 

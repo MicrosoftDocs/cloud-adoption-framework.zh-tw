@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 923cb7542d85af87a40beb6c1429a3e47fc440b8
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
-ms.translationtype: HT
+ms.openlocfilehash: af558e03f56fd759474dc2c5900d34d5cf272be4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174653"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789944"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -62,7 +62,7 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 
 ::: zone target="docs"
 
-- [管理 Azure 資源的保留](/azure/billing/billing-manage-reserved-vm-instance)
+- [管理 Azure 資源的保留](/azure/cost-management-billing/reservations/manage-reserved-vm-instance)
 - [調整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)
 - [使用 Azure CLI 調整 Linux 虛擬機器大小](/azure/virtual-machines/linux/change-vm-size)
 
@@ -90,7 +90,7 @@ Azure Migrate 會在其預先移轉評定階段中執行適當大小分析，而
 1. 移至 [SQL 資料庫] 或 [SQL 資料庫]接著選取伺服器。
 1. 選取所需的資料庫。
 1. 選取 [設定] 和所需的新服務層大小。
-1. 選取 [套用]。
+1. 選取 [套用]  。
 
 ::: zone target="chromeless"
 
@@ -128,8 +128,8 @@ Azure 成本管理 + 計費可搭配 Azure Advisor，提供成本最佳化建議
 
 ::: zone target="docs"
 
-- [教學課程：透過建議最佳化成本](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [使用 Azure 成本管理 + 計費避免非預期的費用](/azure/billing/billing-getting-started)
-- [使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)
+- [教學課程：從建議優化成本](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [使用 Azure 成本管理 + 計費避免非預期的費用](/azure/cost-management-billing/cost-management-billing-overview)
+- [使用成本分析探索及分析成本](/azure/cost-management-billing/costs/quick-acm-cost-analysis)
 
 ::: zone-end

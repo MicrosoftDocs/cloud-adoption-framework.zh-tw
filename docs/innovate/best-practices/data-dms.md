@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 01c742497359eef2d610fe5a8357f1262614d782
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bc6989d607f97fae847f712db96428e52ffa0de0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018562"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790675"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>透過遷移和現代化現有的資料來源來收集資料
 
@@ -27,9 +27,9 @@ ms.locfileid: "97018562"
 
 ## <a name="primary-toolset"></a>主要工具組
 
-當您將內部部署資料移轉和現代化時，最常見的 Azure 工具選擇是 [Azure 資料庫移轉服務](/azure/dms)。 這項服務是廣泛 [Azure Migrate](/azure/migrate/migrate-services-overview) 工具鏈的一部分。 針對現有的 SQL Server 資料來源， [Data Migration Assistant](/sql/dma/dma-overview) 可協助您評估及遷移少量的資料結構。
+當您將內部部署資料移轉和現代化時，最常見的 Azure 工具選擇是 [Azure 資料庫移轉服務](/azure/dms/)。 此服務屬於更廣泛的 [Azure 遷移](/azure/migrate/migrate-services-overview) 工具鏈。 針對現有的 SQL Server 資料來源， [資料移轉](/sql/dma/dma-overview) 小幫手可協助您評估及遷移少量的資料結構。
 
-若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源目標資料庫使用 [資料庫移轉服務](/azure/dms) 。 範例包括將 Oracle 資料庫移轉至於 postgresql 或 MongoDB 資料庫以 Azure Cosmos DB。 更常見的是，採用小組會根據基礎結構即服務 (IaaS) ，使用合作夥伴工具或自訂腳本來遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
+若要支援 Oracle 和 NoSQL 遷移，您也可以針對特定類型的來源目標資料庫使用 [資料庫移轉服務](/azure/dms/) 。 範例包括將 Oracle 資料庫移轉至於 postgresql 或 MongoDB 資料庫至 Azure Cosmos DB。 更常見的是，採用小組會根據基礎結構即服務 (IaaS) ，使用合作夥伴工具或自訂腳本來遷移至 Azure Cosmos DB、Azure HDInsight 或虛擬機器選項。
 
 ## <a name="considerations-and-guidance"></a>考慮和指導方針
 
@@ -50,7 +50,7 @@ ms.locfileid: "97018562"
 | 來源 | 目標 | 工具 | 遷移類型 | 指引 |
 |--|--|--|--|--|
 | SQL Server | Azure SQL Database | Database Migration Service | 離線 | [教學課程](/azure/dms/tutorial-sql-server-to-azure-sql) |
-| SQL Server | Azure SQL Database | Database Migration Service | 線上 | [教學課程](/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Azure SQL Database | Database Migration Service | 線上 | [教學課程](/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL 受控執行個體 | Database Migration Service | 離線 | [教學課程](/azure/dms/tutorial-sql-server-to-managed-instance) |
 | SQL Server | Azure SQL 受控執行個體 | Database Migration Service | 線上 | [教學課程](/azure/dms/tutorial-sql-server-managed-instance-online) |
 | RDS SQL Server | Azure SQL Database 或 Azure SQL 受控執行個體 | Database Migration Service | 線上 | [教學課程](/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |

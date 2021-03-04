@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 20e59c014198d5260aad110b21c2eda82ad65369
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f5ddb6c25b237dee2f6f0d09aef027aedfb1a8f7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018375"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790250"
 ---
 # <a name="engage-via-applications"></a>透過應用程式參與
 
@@ -27,7 +27,7 @@ ms.locfileid: "97018375"
 
 更快速且正確地回應客戶意見反應、市場變更和創新機會的團隊，通常會在創新中領導各自的市場。 創新應用程式的第一個原則是在 [成長思維](./learn.md#growth-mindset)的考慮下總結：「分享程式碼」。 經過一段時間後，就會從文化焦點中發現創新。 為了維持創新，需要多樣化的觀點和貢獻。
 
-為了準備進行創新，所有應用程式開發都應該以共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是 [GitHub](https://guides.github.com)，可讓您快速建立共用的程式碼存放庫。 或者， [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure Repos 提供兩種類型的版本控制：
+為了準備進行創新，所有應用程式開發都應該以共用程式碼存放庫開始。 管理程式碼存放庫最廣泛採用的工具是 [GitHub](https://guides.github.com)，可讓您快速建立共用的程式碼存放庫。 此外， [Azure 存放庫](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 是 Azure DevOps Services 中的一組版本控制工具，可用來管理您的程式碼。 Azure 存放庫提供兩種類型的版本控制：
 
 - [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)：分散式版本控制。
 - [Team Foundation 版本控制 (TFVC) ](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)：集中式版本控制。
@@ -36,7 +36,7 @@ ms.locfileid: "97018375"
 
 專業開發人員是創新的重要元件。 當假設有大規模證明時，專業開發人員必須穩定並準備解決方案以進行調整。 本文中參考的大部分原則都需要專業開發人員的支援。 可惜的是，目前的趨勢建議專業開發人員需要比開發人員更大的需求。 此外，當專業開發被視為必要時，創新的成本和步調可能較不理想。 為了因應這些挑戰，公民開發人員提供一種方式來調整開發工作，並加速提早假設測試。
 
-當早期假設可透過應用程式介面的 [Power Apps](/powerapps/powerapps-overview) 、適用于流程和預測的 [AI Builder](/powerapps/use-ai-builder) 、適用于工作流程的 [Microsoft Power Automate](/power-automate) ，以及資料耗用量的 [Power BI](/power-bi) 等工具進行驗證時，使用公民開發人員可能是可行且有效的。
+當早期假設可透過適用于應用程式介面的 [Power Apps](/powerapps/powerapps-overview) 、適用于流程的 AI Builder、適用于流程的 [AI Builder](/powerapps/use-ai-builder) 、適用于工作流程的 [Microsoft Power](/power-automate/) [BI 和 power BI](/power-bi/) 的資料耗用量，來驗證早期的時，使用公民開發人員是可行且有效的
 
 > [!NOTE]
 > 當您依賴公民開發人員來測試假設時，建議您提供一些專業開發人員，以提供支援、評論和指引。 當假設經過大規模驗證之後，將應用程式轉換成更健全的程式設計模型的程式，將會加快創新的速度。 藉由及早在流程定義中牽涉到專業開發人員，您稍後可以實現更簡潔的轉換。
@@ -53,11 +53,11 @@ ms.locfileid: "97018375"
 
 開發人員逐漸推出機器學習和 AI。 一般 Api 的廣泛可用性與預測功能，可讓開發人員透過擴充資料和預測的存取，更符合客戶的需求。
 
-將智慧新增至方案可以啟用語音轉換文字、文字翻譯、電腦視覺甚至是視覺搜尋。 有了這些擴充的功能，開發人員就可以更輕鬆地建立利用智慧來建立互動式和新式體驗的解決方案。
+將智慧新增至解決方案可以啟用語音轉換文字、文字翻譯、電腦視覺，甚至是視覺搜尋。 有了這些擴充的功能，開發人員就可以更輕鬆地建立利用智慧來建立互動式和新式體驗的解決方案。
 
 ### <a name="bots"></a>Bot
 
-Bot 提供的體驗不像使用電腦更像是處理人員，而且至少有一個智慧型機器人。 它們可用來轉移簡單、重複性的工作 (例如，將晚餐保留或收集設定檔資訊) 至可能不再需要直接介入的自動化系統上。 使用者透過文字、互動式卡片和語音與 bot 對話。 聊天機器人互動的範圍可從快速問答至複雜的交談，以智慧方式提供服務的存取權。
+Bot 提供的體驗不像使用電腦更像是處理人員，或至少使用智慧型機器人。 它們可用來轉移簡單、重複性的工作 (例如，將晚餐保留或收集設定檔資訊) 至可能不再需要直接介入的自動化系統上。 使用者透過文字、互動式卡片和語音與 bot 對話。 聊天機器人互動的範圍可從快速問答至複雜的交談，以智慧方式提供服務的存取權。
 
 Bot 非常類似新式的 web 應用程式：它們存留在網際網路上，並使用 Api 來傳送和接收訊息。 視 Bot 的種類而定，Bot 的功能差異很大。 新式 bot 軟體依賴一系列的技術和工具，在各種平臺上提供日益複雜的體驗。 不過，簡單的 Bot 可能只會收到訊息，並以極少的相關程式碼來回應使用者。
 
@@ -83,11 +83,11 @@ Bot 可以執行與其他軟體類型相同的動作：讀取和寫入檔案、�
 
 - 現有的商務邏輯應該符合 (，或接近符合現有客戶需求的) 。
 - 改善的體驗可以更符合特定客戶世代的需求。
-- 最小可行產品 (MVP) 解決方案所需的商務邏輯，通常是透過多 [層](/azure/architecture/guide/architecture-styles/n-tier)式、web 服務、API 或 [微服務](/azure/architecture/guide/architecture-styles/microservices) 設計來集中進行。 此方法包含將現有解決方案包裝在雲端託管的新體驗內。 在 Azure 中，此解決方案可能存在於 Azure App Service。
+- 最小可行產品 (MVP) 解決方案所需的商務邏輯，通常是透過多 [層](/azure/architecture/guide/architecture-styles/n-tier)式、web 服務、API 或 [微服務](/azure/architecture/guide/architecture-styles/microservices) 設計來集中進行。 此方法包含將現有解決方案包裝在雲端託管的新體驗內。 在 Azure 中，此解決方案可能會存留在 Azure App Service 中。
 
 ### <a name="rebuild-an-existing-solution"></a>重建現有的方案
 
-如果無法輕鬆地擴充應用程式，可能需要重構解決方案。 在此方法中，會將工作負載遷移至雲端。 遷移應用程式之後，會將一部分的部分修改或複製為 web 服務或 [微服務](/azure/architecture/guide/architecture-styles/microservices)，並與現有的解決方案平行部署。 以平行服務為基礎的解決方案可視為擴充的解決方案。 此解決方案只會將現有的解決方案包裝在雲端託管的新體驗。 在 Azure 中，此解決方案可能存在於 Azure App Service。
+如果無法輕鬆地擴充應用程式，可能需要重構解決方案。 在此方法中，會將工作負載遷移至雲端。 遷移應用程式之後，會將一部分的部分修改或複製為 web 服務或 [微服務](/azure/architecture/guide/architecture-styles/microservices)，並與現有的解決方案平行部署。 以平行服務為基礎的解決方案可視為擴充的解決方案。 此解決方案只會將現有的解決方案包裝在雲端託管的新體驗。 在 Azure 中，此解決方案可能會存留在 Azure App Service 中。
 
 > [!CAUTION]
 > 重構或重新架構解決方案或集中商務邏輯，可快速觸發耗時的 [技術尖峰](./build.md#reduce-complexity-and-delay-technical-spikes) ，而不是客戶價值的來源。 這是創新的風險，特別是在假設驗證的早期。 有了解決方案設計的創意，就應該有 MVP 的途徑，而不需要重構現有的解決方案。 最好是延遲重構，直到可以大規模驗證初始假設為止。
@@ -104,11 +104,11 @@ Bot 可以執行與其他軟體類型相同的動作：讀取和寫入檔案、�
 
 解決方案中的維護愈多，解決方案將會以較慢的速度進行反覆運算。 這表示您可以藉由降低作業對可用頻寬的影響來加速創新。
 
-若要準備提供創新解決方案所需的許多反覆運算，請務必事先考慮。 例如，藉由 favoring 無伺服器選項，在流程初期將營運負擔降至最低。 在 Azure 中，無伺服器應用程式選項可能包含 [Azure App Service](/azure/app-service/overview) 或 [容器](/azure/containers)。
+若要準備提供創新解決方案所需的許多反覆運算，請務必事先考慮。 例如，藉由 favoring 無伺服器選項，在流程初期將營運負擔降至最低。 在 Azure 中，無伺服器應用程式選項可能包含 [Azure App Service](/azure/app-service/overview) 或 [容器](/azure/containers/)。
 
-Azure 會以平行方式提供無伺服器的交易資料選項，也可降低額外負荷。 [Azure 產品目錄](/azure)提供可裝載資料的資料庫選項，而不需要完整的資料平臺。
+Azure 會以平行方式提供無伺服器的交易資料選項，也可降低額外負荷。 [Azure 產品目錄](/azure/)提供可裝載資料的資料庫選項，而不需要完整的資料平臺。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 根據假設和解決方案，本文中的原則可協助您設計符合 MVP 定義的應用程式，以及與使用者互動。 接下來是授權 [採用](./ci-cd.md)的原則，可讓您更快速且更有效率地將應用程式和資料提供給客戶。
 

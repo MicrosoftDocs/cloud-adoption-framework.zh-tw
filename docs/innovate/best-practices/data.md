@@ -1,6 +1,6 @@
 ---
 title: 將大眾化資料的創新工具
-description: 瞭解 Azure 資料目錄和其他服務，這些服務可協助您快速測試假設，再擴充為更廣泛、成本更高的數位發明。
+description: 深入瞭解 Azure 資料目錄和其他服務，這些服務可協助您快速測試假設，再擴充到更廣泛、成本更高的數位發明。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 8f7f2b5ec27d852bbe4adfffe79671446c898205
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 68545b97525eca19ddfb67179744458ea97ad594
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018579"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792069"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>在 Azure 中將大眾化資料的工具
 
@@ -40,26 +40,26 @@ ms.locfileid: "97018579"
 
 在 Azure 中，下列工具通常用來加速在上述各階段的數位發明：
 
-- [Power BI](/power-bi)
-- [Azure 資料目錄](/azure/data-catalog)
-- [Azure Synapse Analytics](/azure/synapse-analytics)
-- [Azure Cosmos DB](/azure/cosmos-db)
-- [適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql)
-- [適用於 MySQL 的 Azure 資料庫](/azure/mysql)
-- [適用於 MariaDB 的 Azure 資料庫](/azure/mariadb)
-- [適用於 PostgreSQL 的 Azure 資料庫超大規模](/azure/postgresql/concepts-hyperscale-nodes)
+- [Power BI](/power-bi/)
+- [Azure 資料目錄](/azure/data-catalog/)
+- [Azure Synapse Analytics](/azure/synapse-analytics/)
+- [Azure Cosmos DB](/azure/cosmos-db/)
+- [適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql/)
+- [適用於 MySQL 的 Azure 資料庫](/azure/mysql/)
+- [適用於 MariaDB 的 Azure 資料庫](/azure/mariadb/)
+- [適用于于 postgresql 的 Azure 資料庫超大規模](/azure/postgresql/concepts-hyperscale-nodes)
 - [Azure Data Lake 儲存體](/azure/storage/blobs/data-lake-storage-introduction)
-- [Azure 資料庫移轉服務](/azure/dms)
-- [Azure SQL Database，不論是否有 Azure SQL 受控執行個體](/azure/sql-database)
-- [Azure Data Factory](/azure/data-factory)
-- [Azure 串流分析](/azure/stream-analytics)
-- [SQL Server Integration Services](/sql/integration-services)
-- [Azure Stack](/azure-stack)
-- [SQL Server Stretch Database](/sql/sql-server/stretch-database)
-- [Azure StorSimple](/azure/storsimple)
-- [Azure 檔案](/azure/storage/files)
+- [Azure 資料庫移轉服務](/azure/dms/)
+- [Azure SQL Database，不論是否有 Azure SQL 受控實例](/azure/azure-sql/)
+- [Azure Data Factory](/azure/data-factory/)
+- [Azure 串流分析](/azure/stream-analytics/)
+- [SQL Server Integration Services](/sql/integration-services/sql-server-integration-services)
+- [Azure Stack](/azure-stack/)
+- [SQL Server Stretch Database](/sql/sql-server/stretch-database/stretch-database)
+- [Azure StorSimple](/azure/storsimple/)
+- [Azure 檔案](/azure/storage/files/)
 - [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning)
-- [PolyBase](/sql/relational-databases/polybase)
+- [PolyBase](/sql/relational-databases/polybase/polybase-guide)
 
 由於發明會大規模採用，因此每個解決方案的各個層面都需要精簡和技術成熟度。 發生這種情況時，可能需要更多的服務。 使用此頁面左側的目錄，取得與假設測試程式相關的 Azure 工具指引。
 

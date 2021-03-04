@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 266a6e417e651f81d6440b7d7fd0e6d517f7e166
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: b3f2d6def94e2b1610a4c9117eb0f519dd6682f4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018851"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791134"
 ---
 <!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC TWS-OPC CA-SAR IMS/TM IMS/DC "IMS/Data Communications" "Micro Focus Server Enterprise Edition" VSE -->
 <!-- docutune:ignore JOB Natural SPOOL -->
@@ -51,7 +51,7 @@ ms.locfileid: "97018851"
 
 - **程式碼：** 大型主機使用的程式設計語言包括 COBOL、Fortran、PL/I 和 Natural。 工作控制語言 (JCL) 是用來搭配 z/OS 的。
 
-- **資料庫層：** 常見適用於 z/OS 的關聯式資料庫管理系統 (DBMS) 是 IBM DB2。 它會管理稱為 _dbspaces_ 的資料結構，它包含一或多個資料表，並且會指派給稱為 _dbextents_ 的實體資料集儲存體集區。 兩個重要資料庫元件為識別儲存體集區中資料位置的目錄，以及包含資料庫上執行之作業記錄的記錄檔。 支援各種不同的一般檔案資料格式。 適用於 z/OS 的 DB2 通常會使用虛擬儲存體存取方法 (VSAM) 資料集來儲存資料。
+- **資料庫層：** 常見適用於 z/OS 的關聯式資料庫管理系統 (DBMS) 是 IBM DB2。 它會管理稱為 *dbspaces* 的資料結構，它包含一或多個資料表，並且會指派給稱為 *dbextents* 的實體資料集儲存體集區。 兩個重要資料庫元件為識別儲存體集區中資料位置的目錄，以及包含資料庫上執行之作業記錄的記錄檔。 支援各種不同的一般檔案資料格式。 適用於 z/OS 的 DB2 通常會使用虛擬儲存體存取方法 (VSAM) 資料集來儲存資料。
 
 - **管理層：** IBM 大型主機包括排程軟體 (如 TWS OPC)、列印和輸出管理工具 (如 CA-SAR 和 SPOOL)，以及程式碼的原始檔控制系統。 z/OS 的安全存取控制是由資源存取控制設施 (RACF) 處理。 資料庫管理員提供資料庫中資料的存取權，並且在 z/OS 環境中其自己的分割區執行。
 

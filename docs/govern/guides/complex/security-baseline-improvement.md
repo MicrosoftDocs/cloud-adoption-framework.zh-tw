@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: e9ab8d0b28141db65dc0c45e25e630c719a9fe35
-ms.sourcegitcommit: b12b731b1cf22f9e80db108f79734bc4cf17895e
+ms.openlocfilehash: 21d579d72b0c7b7e822261f69efd4980a6cc3e60
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810831"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791406"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>適用于複雜企業的治理指南：改善安全性基準專業領域
 
@@ -95,7 +95,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 ## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進
 
-本節將修改治理 MVP 設計，以包含新的 Azure 原則以及 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
+本節將修改治理 MVP 設計，以包含新的 Azure 原則和 Azure 成本管理 + 計費的實施。 這兩個設計變更將共同實現新的公司原則聲明。
 
 新的最佳作法分為兩類：公司 IT (中樞) 和雲端採用 (輪輻) 。
 
@@ -103,7 +103,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 1. Azure DevOps 存放庫。 在 Azure DevOps 中建立存放庫來存放所有相關的 Azure Resource Manager 範本和指令碼式的組態，並為這些項目設定版本。
 1. 中樞和輪輻範本：
-    1. [使用共用服務參考架構的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)中的指導方針可用來產生公司 IT 中樞所需資產的 Resource Manager 範本。
+    1. [使用共用服務參考架構的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)中的指導方針，可用來產生公司 IT 中樞所需資產的 Resource Manager 範本。
     1. 使用那些範本，此結構就能重複，以作為中央治理策略的一部分。
     1. 除了目前的參考架構之外，您還必須建立網路安全性群組範本，以捕捉虛擬網路裝載防火牆的任何埠封鎖或允許清單需求。 此網路安全性群組與先前的群組不同，因為它會是允許公用流量進入虛擬網路的第一個網路安全性群組。
 1. 建立 Azure 原則。 建立名為的原則 `hub NSG enforcement` ，以強制設定指派給此訂用帳戶中所建立之任何虛擬網路的網路安全性群組。 套用適用于來賓設定的內建原則，如下所示：
@@ -119,8 +119,8 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
     1. 將 `corporate-it-subscription-blueprint` 藍圖套用至每個區域執行個體。
     1. 這將在每個區域中，為每個營業單位建立中樞。 注意：您可以在每個區域的業務單位之間共用中樞，以進一步節省成本。
 1. 透過 Desired State Configuration (DSC) 整合群組原則物件 (GPO)：
-    1. 將 GPO 轉換成 DSC。 GitHub 中的 [Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement) 可以加速這項工作。 務必將 DSC 儲存在存放庫中，並與 Resource Manager 範本平行處理。
-    1. 將 Azure 自動化狀態設定部署至公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
+    1. 將 GPO 轉換成 DSC。 GitHub 中的 [Microsoft 基準管理專案](https://github.com/microsoft/baselinemanagement) 可以加速這項工作。 請務必使用 Resource Manager 範本，以平行方式將 DSC 儲存在存放庫中。
+    1. 將 Azure Automation State Configuration 部署到公司 IT 訂用帳戶的任何實例。 Azure 自動化可用來將 DSC 套用至管理群組內所支援訂用帳戶中部署的 VM。
     1. 目前的藍圖旨在啟用自訂來賓設定原則。 發行該功能之後，將不再需要在此最佳做法中使用 Azure 自動化。
 
 將 **其他治理套用至雲端採用訂用帳戶， (輪輻) ：** 根據，針對應用 `corporate IT subscription` 程式原型支援所專用的每個訂用帳戶所套用之治理 MVP 的微小變更，可能會產生迅速的改進。
@@ -128,11 +128,11 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 在先前的最佳作法反復變更中，我們定義了網路安全性群組，以封鎖公用流量並允許內部流量。 此外，Azure 藍圖已暫時建立 DMZ 和 Active Directory 功能。 在此反復專案中，我們將會建立新版本的 Azure 藍圖，以建立新版本的 Azure 藍圖。
 
 1. 網路對等互連範本。 此範本會將每個訂用帳戶中的虛擬網路與公司 IT 訂用帳戶中的中樞虛擬網路對等互連。
-    1. 上一節的參考架構、 [使用共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)，產生了可啟用虛擬網路對等互連的 Resource Manager 範本。
+    1. 上一節的參考架構、 [使用共用服務的中樞和輪輻拓撲](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)、產生可啟用虛擬網路對等互連的 Resource Manager 範本。
     2. 該範本可作為指南，以修改先前治理反復專案的 DMZ 範本。
     3. 現在，我們會將虛擬網路對等互連新增至先前透過 VPN 連線到本機 edge 裝置的 DMZ 虛擬網路。
     4. 此外，也應該從這個範本移除 VPN，以確保不會將流量直接路由傳送至內部部署資料中心，而不會通過公司 IT 訂用帳戶和防火牆解決方案。 當 ExpressRoute 電路中斷時，您也可以將此 VPN 設定為容錯移轉電路。
-    5. Azure 自動化需要額外的 [網路](/azure/automation/automation-dsc-overview#network-planning) 設定，才能將 DSC 套用至託管 vm。
+    5. Azure 自動化需要額外的 [網路](/azure/automation/automation-dsc-overview#network-planning) 設定，以將 DSC 套用至託管 vm。
 2. 修改網路安全性群組。 封鎖網路安全性群組中的所有公用 **和** 直接內部部署流量。 唯一的輸入流量應透過公司 IT 訂用帳戶中的虛擬網路對等互連。
     1. 在先前的反復專案中，已建立網路安全性群組來封鎖所有公用流量，並允許所有內部流量。 現在我們想要將此網路安全性群組轉換成一點。
     2. 新的網路安全性群組設定應該會封鎖所有公用流量，以及來自本機資料中心的所有流量。
@@ -141,7 +141,7 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
     1. 為包含受保護資料分類的任何管理群組設定 Azure 資訊安全中心。
     2. 依預設，將自動佈建設定為開啟，以確保修補的合規性。
     3. 建立 OS 安全性設定。 用來定義設定的 IT 安全性。
-    4. 在初次使用 Azure 資訊安全中心時支援 IT 安全性。 將安全性中心轉換成 IT 安全性，但仍可繼續存取治理持續改進的目的。
+    4. 在初次使用 Azure 安全性中心時支援 IT 安全性。 將安全性中心轉換成 IT 安全性，但仍可繼續存取治理持續改進的目的。
     5. 建立 Resource Manager 範本，此範本會反映訂用帳戶內 Azure 資訊安全中心設定所需的變更。
 4. 更新所有訂用帳戶的 Azure 原則。
     1. 在所有管理群組和訂用帳戶上稽核並強制執行嚴重性和資料分類，以識別具有受保護資料分類的任何訂用帳戶。
@@ -155,9 +155,9 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
     5. 稽核並強制執行使用者定義的路由表限制。
 6. Azure 藍圖：
     1. 建立名為 `protected-data` 的 Azure 藍圖。
-    2. 將虛擬網路對等、網路安全性群組和 Azure 資訊安全中心範本新增至藍圖。
-    3. 請確定藍圖中 **未** 包含先前反覆運算 Active Directory 的範本。 公司 IT 訂用帳戶將提供所有對 Active Directory 的相依性。
-    4. 終止在先前的反復專案中部署的任何現有 Active Directory Vm。
+    2. 將虛擬網路對等、網路安全性群組和 Azure 安全性中心範本新增至藍圖。
+    3. 請確定藍圖中 **未** 包含先前反復專案中 Active Directory 的範本。 公司 IT 訂用帳戶將提供所有對 Active Directory 的相依性。
+    4. 終止先前的反復專案中部署的任何現有 Active Directory Vm。
     5. 為受保護資料的訂用帳戶新增原則。
     6. 將藍圖發佈至將裝載受保護資料的任何管理群組。
     7. 對每個受影響的訂用帳戶及現有藍圖套用新的藍圖。
@@ -166,9 +166,9 @@ CIO 花了數個月的時間與同事和公司的法務人員合作。 具有網
 
 將這些流程和變更新增至治理 MVP，有助於補救與安全性治理相關聯的許多風險。 同時，它們會新增網路、身分識別，以及保護資料所需的安全性監視工具。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-隨著雲端採用持續並提供額外的商業價值，風險和雲端治理需求也會改變。 針對本指南中的虛構公司，下一個步驟是支援任務關鍵性工作負載。 這是需要資源一致性控制項的時間點。 安全性治理敘述的重要部分，就是複習 Microsoft 為安全性打造的最佳作法。 Azure 安全性基準測試 (ASB) 提供規定的最佳作法和建議，以協助改善 Azure 上的工作負載、資料和服務的安全性。 [請參閱這裡。](https://docs.microsoft.com/azure/security/benchmarks/overview)
+隨著雲端採用持續並提供額外的商業價值，風險和雲端治理需求也會改變。 針對本指南中的虛構公司，下一個步驟是支援任務關鍵性工作負載。 這是需要資源一致性控制項的時間點。 安全性治理敘述的重要部分是回顧 Microsoft 為安全性打造的最佳作法。 Azure 安全性基準測試 (ASB) 提供規定的最佳作法和建議，以協助改善 Azure 上的工作負載、資料和服務的安全性。 [請參閱這裡。](/azure/security/benchmarks/overview)
 
 > [!div class="nextstepaction"]
 > [改善資源一致性專業領域](./resource-consistency-improvement.md)

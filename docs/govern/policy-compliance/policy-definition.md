@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: a148e80e11ee54d14e7741a01830717dfb57e745
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ff6a3836280dc213e63719b2c25ed4be5c2ea104
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019905"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791355"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>定義雲端治理的公司原則
 
@@ -24,7 +24,6 @@ ms.locfileid: "97019905"
 在傳統治理和雲端治理中，公司原則建立作用的治理定義。 大部分的「IT 治理」動作的目的是要實作技術，以監視、強制執行、操作那些公司原則並自動化。 雲端治理建立在類似的概念上。
 
 ![公司治理和治理專業領域](../../_images/operational-transformation-govern-large.png)
-
 *圖 1：公司治理和治理專業領域。*
 
 上圖說明商務風險、原則與合規性，以及監視與強制執行機制之間的關聯性，這些機制需要與您治理策略的一部分互動。 雲端治理的五個專業領域可讓您管理這些互動並實現您的策略。
@@ -60,7 +59,7 @@ ms.locfileid: "97019905"
 
 將雲端原則與傳統 IT 原則整合的需求，主要取決於雲端治理程序的成熟度和雲端資產的規模。 如需在雲端轉換期間處理原則整合的更廣泛的討論，請參閱有關[增量治理和原則 MVP](./index.md) 一文。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 定義原則之後，草擬架構設計指南，為 IT 人員和開發人員提供可採取動作的指導方針。
 

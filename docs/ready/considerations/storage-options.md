@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 752fd6a3eeb803c7767574b2f8502dd869520a39
-ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
+ms.openlocfilehash: 2cab73984d1d90df6629dfe6f52e46a71398e27c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98571952"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789638"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -32,14 +32,14 @@ ms.locfileid: "98571952"
 
 ### <a name="key-questions"></a>重要問題
 
-請回答下列有關工作負載的問題，以協助您根據 Azure 儲存體決策樹來做出決策：
+請回答下列有關工作負載的問題，以協助您根據 Azure 儲存體決策樹進行決策：
 
 - **您的工作負載是否需要磁碟儲存體來支援基礎結構即服務 (IaaS) 虛擬機器的部署？** [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) 提供 IaaS 虛擬機器的虛擬磁片功能。
 - **您是否需要提供可下載的影像、文件或其他媒體作為工作負載的一部分？** [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction)提供[裝載靜態檔案](/azure/storage/blobs/storage-blob-static-website)的功能，該檔案之後可透過網際網路進行下載。 您可以將裝載於 Blob 儲存體中的資產設為公用，或者您可以透過 Azure Active Directory (Azure AD)、共用金鑰或共用存取簽章，[將資產限制為授權的使用者](/azure/storage/common/storage-auth)。
 - **您需要儲存虛擬機器記錄、應用程式記錄檔和分析資料的位置嗎？** 您可以使用 Azure Blob 儲存體來[儲存 Azure 監視器記錄資料](/azure/storage/common/storage-analytics)。
 - **您是否需要提供備份、災害復原或封存工作負載相關資料的位置？** Azure 磁片儲存體使用 Azure Blob 儲存體來提供 [備份和嚴重損壞修復功能](/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。 您也可以使用 Blob 儲存體作為備份其他資源的位置，例如內部部署或裝載於 IaaS VM 的 [SQL Server 資料](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service?view=sql-server-2017)。
-- **您需要支援巨量資料分析工作負載嗎？** [Azure Data Lake Storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) 是以 Azure Blob 儲存體為基礎。 Data Lake Storage gen 2 可以支援大型企業 data Lake 功能。 它也可以處理儲存數 PB 的資訊，同時維持數百 GB 的輸送量。
-- **您是否需要提供雲端原生檔案共用？** Azure 有兩個主要服務，可提供雲端託管的檔案共用： Azure NetApp Files 和 Azure 檔案儲存體。 [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) 提供適用於一般企業工作負載 (例如 SAP) 的高效能 NFS 共用。 [Azure 檔案儲存體](/azure/storage/files/storage-files-introduction)提供可透過 SMB 3.0 和 HTTPS 存取的檔案共用。
+- **您需要支援巨量資料分析工作負載嗎？** [Azure Data Lake storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) 是以 azure Blob 儲存體為基礎。 Data Lake Storage gen 2 可以支援大型企業 data Lake 功能。 它也可以處理儲存數 PB 的資訊，同時維持數百 GB 的輸送量。
+- **您是否需要提供雲端原生檔案共用？** Azure 有兩個主要服務，可提供雲端裝載的檔案共用： Azure NetApp Files 和 Azure 檔案服務。 [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) 提供適用於一般企業工作負載 (例如 SAP) 的高效能 NFS 共用。 [Azure 檔案儲存體](/azure/storage/files/storage-files-introduction)提供可透過 SMB 3.0 和 HTTPS 存取的檔案共用。
 - **您是否需要支援適用於內部部署高效能運算 (HPC) 工作負載的混合式雲端儲存體？** [Avere vFXT for Azure](/azure/avere-vfxt/avere-vfxt-overview) 是一種混合式快取解決方案，可讓您使用雲端式儲存體來擴充內部部署儲存體功能。 針對包含 1000 到 40000 CPU 核心計算伺服器陣列的大量讀取 HPC 工作負載，Avere vFXT for Azure 已最佳化。 Avere vFXT for Azure 可以與內部部署硬體網路連接儲存裝置 (NAS)、Azure Blob 儲存體或兩者整合。
 - **您需要執行大規模的封存，並將您的內部部署資料同步處理至雲端嗎？** [Azure 資料箱](/azure/databox-family)產品的設計，是為了協助您將大量資料從內部部署環境移至雲端。 [Azure 資料箱閘道](/azure/databox-online/data-box-gateway-overview)是位於內部部署環境的虛擬裝置。 資料箱閘道可協助您管理前往雲端的大規模資料移轉。 如果您需要在將資料移至雲端之前進行分析、轉換或篩選，您可以使用 [Azure Data Box Edge](/azure/databox-online/data-box-edge-overview)，這是部署至內部部署環境的已啟用 AI 實體邊緣計算裝置。 Data Box Edge 加速處理，並將資料安全傳輸至 Azure。
 - **您要將現有的內部部署檔案共用擴充為使用雲端儲存空間嗎？** [Azure 檔案同步](/azure/storage/files/storage-sync-files-deployment-guide)可讓您使用 Azure 檔案儲存體服務，作為裝載於內部部署 Windows Server 電腦上檔案共用的延伸模組。 同步處理服務會將 Windows Server 轉換成 Azure 檔案共用的快速快取。 它可讓您存取共用的內部部署電腦使用 Windows Server 上可用的任何通訊協定。
@@ -55,14 +55,14 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 | 狀況 | 建議的 Azure 服務 | 建議服務的考量 |
 |---|---|---|
 | 我有裸機伺服器或 VM (Hyper-V 或 VMware)，並具有執行 LOB 應用程式的直接連接儲存體。 | [Azure 磁片儲存體 (premium SSD) ](/azure/virtual-machines/windows/disks-types#premium-ssd) | 針對生產服務，premium SSD 選項提供一致的低延遲，並結合高 IOPS 和輸送量。 |
-| 我有伺服器將裝載 Web 和行動裝置應用程式。 | [Azure 磁片儲存體 (標準 SSD) ](/azure/virtual-machines/windows/disks-types#standard-ssd) | 在生產環境中，標準 SSD IOPS 和輸送量的 (成本，可能會比高階 SSD) 高出 CPU 的 web 和應用程式伺服器低。 |
+| 我有伺服器將裝載 Web 和行動裝置應用程式。 | [Azure 磁片儲存體 (標準 SSD) ](/azure/virtual-machines/windows/disks-types#standard-ssd) | 在生產環境中，標準 SSD IOPS 和輸送量的 (成本，可能會比高階 SSD) 的成本低，適用于 CPU 系結的 web 和應用程式伺服器。 |
 | 我有企業 SAN 或全快閃陣列。 | [Azure 磁片儲存體 (premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) <br><br> [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | ultra SSD 以 NVMe 為基礎，並提供高 IOPS 和頻寬的快速延遲。 ultra SSD 可進行調整，最高可達 64 TB。 Premium SSD 和 ultra SSD 的選擇取決於尖峰延遲、IOPS 和擴充性需求。 |
-| 我擁有高可用性 (HA) 叢集伺服器 (例如 SQL Server FCI 或 Windows Server 容錯移轉叢集)。 | [Azure 檔案儲存體 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) <br><br> [Azure 磁片儲存體 (premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | 叢集工作負載需要多個節點來裝載相同的容錯移轉或 HA 基礎共用儲存體。 進階檔案共用提供可透過 SMB 掛接的共用儲存體。 您也可以使用 [合作夥伴解決方案](https://azuremarketplace.microsoft.com/marketplace/apps/sios_datakeeper.sios-datakeeper-8?tab=Overview)，在 premium ssd 或 ultra ssd 上設定共用區塊存放裝置。 |
+| 我擁有高可用性 (HA) 叢集伺服器 (例如 SQL Server FCI 或 Windows Server 容錯移轉叢集)。 | [Azure 檔案 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) <br><br> [Azure 磁片儲存體 (premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | 叢集工作負載需要多個節點來裝載相同的容錯移轉或 HA 基礎共用儲存體。 進階檔案共用提供可透過 SMB 掛接的共用儲存體。 您也可以使用 [合作夥伴解決方案](https://azuremarketplace.microsoft.com/marketplace/apps/sios_datakeeper.sios-datakeeper-8?tab=Overview)，在 premium ssd 或 ultra ssd 上設定共用區塊存放裝置。 |
 | 我有關聯式資料庫或資料倉儲工作負載 (例如 SQL Server 或 Oracle)。 | [Azure 磁片儲存體 premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | Premium SSD 和 ultra SSD 的選擇取決於尖峰延遲、IOPS 和擴充性需求。 ultra SSD 也藉由 [移除擴充性的存放集區設定需求](https://azure.microsoft.com/blog/mission-critical-performance-with-ultra-ssd-for-sql-server-on-azure-vm)，來降低複雜度。 |
 | 我有一個 NoSQL 叢集 (例如 Cassandra 或 MongoDB)。 | [Azure 磁片儲存體 (premium SSD) ](/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure 磁片儲存體 premium SSD 供應專案提供一致的低延遲，加上高 IOPS 和輸送量。 |
-| 我正在執行具有持續性磁碟區的容器。 | [Azure 檔案儲存體 (standard 或 premium) ](/azure/storage/files/storage-files-planning) <br><br> [Azure 磁片儲存體 (standard、premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | 檔案 (RWX) 和封鎖 (RWO) 磁碟區驅動程式選項可用於 Azure Kubernetes Service (AKS) 與自訂 Kubernetes 部署。 永久性磁片區可對應至 Azure 磁片儲存體磁片或受控 Azure 檔案儲存體共用。 根據持續性磁碟區的工作負載需求，選擇進階與標準選項。 |
-| 我有 Data Lake (例如 HDFS 資料的 Hadoop 叢集)。 | [Azure Data Lake Storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) <br><br> [Azure 磁片儲存體 (standard 或 premium SSD) ](/azure/virtual-machines/windows/disks-types) | Azure Blob 儲存體 Data Lake Storage gen 2 功能提供伺服器端 HDFS 相容性和 pb 規模的平行分析規模。 它也提供 HA 和可靠性。 如有需要，軟體（例如 Cloudera）可以在主要/背景工作節點上使用 premium 或 standard SSD。 |
-| 我有 SAP 或 SAP HANA 部署。 | [Azure 磁片儲存體 (premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | ultra SSD 經過優化，可為第1層 SAP 工作負載提供快速的延遲。 ultra SSD 現在處於預覽階段。 與 M 系列 Vm 結合進階 SSD 可提供一般可用性選項。 |
+| 我正在執行具有持續性磁碟區的容器。 | [Azure 檔案 (standard 或 premium) ](/azure/storage/files/storage-files-planning) <br><br> [Azure 磁片儲存體 (standard、premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | 檔案 (RWX) 和封鎖 (RWO) 磁碟區驅動程式選項可用於 Azure Kubernetes Service (AKS) 與自訂 Kubernetes 部署。 永久性磁片區可對應至 Azure 磁片儲存體磁片或受控 Azure 檔案共用。 根據持續性磁碟區的工作負載需求，選擇進階與標準選項。 |
+| 我有 Data Lake (例如 HDFS 資料的 Hadoop 叢集)。 | [Azure Data Lake Storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) <br><br> [Azure 磁片儲存體 (standard 或 premium SSD) ](/azure/virtual-machines/windows/disks-types) | Azure Blob 儲存體的 Data Lake Storage gen 2 功能提供伺服器端 HDFS 相容性和 pb 規模的平行分析規模。 它也提供 HA 和可靠性。 如有需要，軟體（例如 Cloudera）可以在主要/背景工作節點上使用 premium 或 standard SSD。 |
+| 我有 SAP 或 SAP HANA 部署。 | [Azure 磁片儲存體 (premium 或 ultra SSD) ](/azure/virtual-machines/windows/disks-types) | ultra SSD 經過優化，可為第1層 SAP 工作負載提供快速的延遲。 ultra SSD 現在處於預覽階段。 Premium SSD 與 M 系列 Vm 結合，提供了一般可用性選項。 |
 | 我有一個災害復原網站，其具有從主要伺服器同步處理的嚴格 RPO/RTO。 | [Azure 分頁 blob](/azure/storage/blobs/storage-blob-pageblob-overview) | 複寫軟體會使用 Azure 分頁 Blob 來啟用 Azure 的低成本複寫，而不需要計算 VM，直到容錯移轉發生為止。 如需詳細資訊，請參閱 [Azure 磁片儲存體檔](/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)。 **注意：** 分頁 blob 最多支援 8 TB。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>檔案和物件儲存體案例
@@ -70,8 +70,8 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 | 狀況 | 建議的 Azure 服務 | 建議服務的考量 |
 |---|---|---|
 | 我使用的是 Windows 檔案伺服器。 | [Azure 檔案](/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | 使用 Azure 檔案同步，您可以在雲端式 Azure 檔案共用上儲存鮮少使用的資料，同時快取您最常使用的內部部署檔案，以進行快速、本機存取。 您也可以使用多網站同步處理，讓檔案在多部伺服器之間保持同步。 如果您打算將工作負載遷移至僅限雲端的部署，Azure 檔案儲存體可能就已足夠。 |
-| 我有企業 NAS (，例如 NetApp 或 Dell-EMC Isilon) 。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure 檔案儲存體 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) | 如果您有內部部署的 NetApp，請考慮使用 Azure NetApp Files 將您的部署遷移至 Azure。 如果您是使用或遷移至 Windows 或 Linux 伺服器，或有基本的檔案共用需求，請考慮使用 Azure 檔案儲存體。 若要繼續進行內部部署存取，請使用 Azure 檔案同步透過雲端階層處理機制，將 Azure 檔案共用與內部部署檔案共用同步。 |
-| 我有一個檔案共用 (SMB 或 NFS)。 | [Azure 檔案儲存體 (standard 或 premium) ](/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | 高階與標準 Azure 檔案儲存體層的選擇取決於 IOPS、輸送量和您的延遲一致性需求。 如果您有內部部署的 NetApp，請考量使用 Azure NetApp Files。 如果您需要將存取控制清單 (ACL) 和時間戳記遷移至雲端，Azure 檔案同步可以將所有這些設定帶入您的 Azure 檔案共用，作為便利的移轉路徑。 |
+| 我有企業 NAS (，例如 NetApp 或 Dell-EMC Isilon) 。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure 檔案 (premium) ](/azure/storage/files/storage-files-planning#storage-tiers) | 如果您有內部部署的 NetApp，請考慮使用 Azure NetApp Files 將您的部署遷移至 Azure。 如果您是使用或遷移至 Windows 或 Linux 伺服器，或有基本的檔案共用需求，請考慮使用 Azure 檔案服務。 若要繼續進行內部部署存取，請使用 Azure 檔案同步，透過雲端階層處理機制，將 Azure 檔案共用與內部部署檔案共用同步。 |
+| 我有一個檔案共用 (SMB 或 NFS)。 | [Azure 檔案 (standard 或 premium) ](/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | Premium 與標準 Azure 檔案層的選擇取決於 IOPS、輸送量和您的延遲一致性需求。 如果您有內部部署的 NetApp，請考量使用 Azure NetApp Files。 如果您需要將存取控制清單 (ACL) 和時間戳記遷移至雲端，Azure 檔案同步可以將所有這些設定帶入您的 Azure 檔案共用，作為便利的移轉路徑。 |
 | 我有適用於數 PB 資料的內部部署物件儲存體系統 (例如 Dell-EMC ECS)。 | [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體提供進階、經常性存取、非經常性存取和封存層，以符合您的工作負載效能和成本需求。 |
 | 我有一個 dfsr 部署或另一個處理分公司的方式。 | [Azure 檔案](/azure/storage/files/storage-files-planning) <br><br> [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | Azure 檔案同步提供多網站同步處理，讓檔案在雲端中的多部伺服器和原生 Azure 檔案共用之間保持同步。 使用雲端階層處理，移至內部部署的固定儲存體使用量。 雲端階層處理會將您的伺服器轉換成相關檔案的快取，同時在 Azure 檔案共用中調整幾乎不存取的資料。 |
 | 我有磁帶媒體櫃 (內部部署或異地) 進行備份和災難復原或長期資料保留。 | [Azure Blob 儲存體 (非經常性存取層或封存層)](/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob 儲存體封存層會有最低的可能成本，但可能需要數小時才能將離線資料複製到非經常性存取層、經常性存取層或進階層儲存體，以允許存取。 非經常性存取層以低成本提供即時存取。 |
@@ -101,21 +101,21 @@ Azure 針對不同的儲存體功能提供多項產品和服務。 除了稍早�
 
 找出最符合您需求的 Azure 工具之後，請使用下表所連結的詳細文件，熟悉這些服務：
 
-| 服務  | 描述 |
+| 服務 | 描述 |
 |---|---|
 | [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob 儲存體是 Microsoft 針對雲端推出的物件儲存體解決方案。 Blob 儲存體已針對儲存大量非結構化資料進行最佳化。 非結構化資料是指不符合特定資料模型或定義的資料，例如文字或二進位資料。 <br><br> Blob 儲存體設計用來： <li> 直接提供映像或文件給瀏覽器。 <li> 儲存檔案供分散式存取。 <li> 串流影片和音訊。 <li> 寫入記錄檔。 <li> 儲存備份和還原、災害復原和封存資料。 <li> 儲存資料供內部部署或 Azure 裝載服務進行分析。 |
 | [Azure Data Lake Storage gen 2](/azure/storage/blobs/data-lake-storage-introduction) | Blob 儲存體支援 Azure Data Lake Storage Gen2，這是適用於雲端的 Microsoft 企業巨量資料分析解決方案。 Azure Data Lake Storage Gen2 提供階層式檔案系統和 Blob 儲存體的各項優點，包括低成本、分層式儲存體、高可用性、強式一致性，以及災害復原功能。 |
-| [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) | Azure 磁片儲存體提供持續、高效能的區塊儲存體，以供 Azure 虛擬機器的電源。 Azure 磁片具有高度耐久性、安全，並為使用 [premium 或 Ultra ssd](/azure/virtual-machines/windows/disks-types)的 vm 提供業界唯一的單一實例 SLA。 Azure 磁片提供可用性設定組和可用性區域的高可用性，可對應至您的 Azure 虛擬機器容錯網域。 此外，Azure 磁碟會作為 Azure 中的最上層資源來管理。 預設會提供 Azure Resource Manager 功能（例如 Azure 角色型存取控制） (Azure RBAC) 、原則和標記。 |
-| [Azure 檔案](/azure/storage/files/storage-files-planning) | Azure 檔案儲存體可提供完全受控的原生 SMB 檔案共用，而不需要執行 VM。 您可以將 Azure 檔案儲存體共用掛接為任何 Azure VM 或內部部署機器的網路磁碟機。 |
+| [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) | Azure 磁片儲存體提供持續、高效能的區塊儲存體，以供 Azure 虛擬機器的電源。 Azure 磁片具有高度耐久性、安全，並為使用 [premium 或 Ultra ssd](/azure/virtual-machines/windows/disks-types)的 vm 提供業界唯一的單一實例 SLA。 Azure 磁片可透過對應至 Azure 虛擬機器容錯網域的可用性設定組和可用性區域，提供高可用性。 此外，Azure 磁碟會作為 Azure 中的最上層資源來管理。 依預設，azure Resource Manager 功能（例如 Azure 角色型存取控制 (Azure RBAC) 、原則和標記）會提供。 |
+| [Azure 檔案](/azure/storage/files/storage-files-planning) | Azure 檔案可提供完全受控的原生 SMB 檔案共用，而不需要執行 VM。 您可以將 Azure 檔案儲存體共用掛接為任何 Azure VM 或內部部署機器的網路磁碟機。 |
 | [Azure 檔案同步](/azure/storage/files/storage-sync-files-planning) | 您可使用 Azure 檔案同步將組織的檔案共用集中在 Azure 檔案服務中，同時保有內部部署檔案伺服器的靈活度、效能及相容性。 Azure 檔案同步會將 Windows Server 轉換成 Azure 檔案共用的快速快取。 |
 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files 服務是企業等級、高效能、計量檔案儲存體服務。 Azure NetApp Files 支援任何工作負載類型，預設為高度可用。 您可以選取服務和效能層級，並且透過服務設定快照集。 |
-| [Azure Data Box Edge](/azure/databox-online/data-box-edge-overview) | Azure 資料箱 Edge 是內部部署網路裝置，可將資料移入和移出 Azure。 Data Box Edge 具有 AI 功能的邊緣計算，可在上傳期間預先處理資料。 「資料箱閘道」是該裝置的虛擬版本，但是具備相同的資料傳輸功能。 |
+| [Azure Data Box Edge](/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge 是內部部署網路裝置，可將資料移入和移出 Azure。 Data Box Edge 具有 AI 功能的邊緣計算，可在上傳期間預先處理資料。 「資料箱閘道」是該裝置的虛擬版本，但是具備相同的資料傳輸功能。 |
 | [Azure 資料箱閘道服務](/azure/databox-online/data-box-gateway-overview) | Azure 資料箱閘道是可讓您順利將資料傳送到 Azure 的儲存體解決方案。 資料箱閘道是虛擬裝置，其基礎是佈建在虛化環境中或 Hypervisor 中的虛擬機器。 虛擬裝置位於內部部署環境，您可以使用 NFS 和 SMB 通訊協定將資料寫入其中。 裝置接著會將您的資料傳輸至 Azure 區塊 Blob 或 Azure 分頁 Blob，或 Azure 檔案儲存體。 |
 | [Avere vFXT for Azure](/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure 是一個適用於資料密集高效能運算 (HPC) 工作的檔案系統快取解決方案。 利用雲端運算的擴充性，讓您的資料隨時隨地都能存取，即使是儲存在您自己的內部部署硬體中的資料也一樣。 |
 
 ## <a name="data-redundancy-and-availability"></a>資料備援和可用性
 
-Azure 儲存體有各種不同的選項，可根據客戶需求來協助確保持久性和高可用性：本地冗余儲存體、區域冗余儲存體、異地冗余儲存體 (GRS) 和讀取權限 GRS (RA-GRS) 。
+Azure 儲存體有各種不同的選項，可根據客戶需求來協助確保持久性和高可用性：本地冗余儲存體、區域冗余儲存體、異地冗余儲存體 (GRS) 和讀取權限 GRS (RA GRS) 。
 
 若要深入了解這些功能，以及如何為您的使用案例決定最佳的備援選項，請參閱 [Azure 儲存體備援](/azure/storage/common/storage-redundancy)。 此外，「儲存體服務」 (Sla) 的服務等級協定會提供以財務為後盾的保證。 如需詳細資訊，請參閱[受控磁碟 SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)、[虛擬機器 SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)和[儲存體帳戶 SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)。
 
@@ -127,13 +127,13 @@ Azure 儲存體有各種不同的選項，可根據客戶需求來協助確保�
 
 - 使用 Azure RBAC 和 Azure AD 來保護儲存體帳戶。
 - 使用用戶端加密、HTTPS 或 SMB 3.0，保護應用程式和 Azure 之間傳輸中資料的安全。
-- 使用 Azure 儲存體加密將資料寫入 Azure 儲存體時，將資料設定為自動加密。
+- 將資料設定為使用 Azure 儲存體加密寫入 Azure 儲存體時自動加密。
 - 使用共用存取簽章，將委派存取權授與 Azure 儲存體中的資料物件。
 - 使用分析來追蹤當某人存取 Azure 中的儲存體時使用的驗證方法。
 
 這些安全性功能適用於 Azure Blob 儲存體 (區塊和頁面)，以及適用於 Azure 檔案儲存體。 取得 [Azure 儲存體安全性指南](/azure/storage/blobs/security-recommendations)中的詳細儲存體安全性指南。
 
-[Azure 儲存體加密](/azure/storage/storage-service-encryption) 提供待用加密，並保護資料安全，以符合組織的安全性和合規性承諾。 所有 Azure 區域中的所有受控磁片、快照集和映射預設都會啟用 Azure 儲存體加密。 從 2017 年 6 月 10 日開始，所有新受控磁碟、快照集、映像和寫入至現有受控磁碟的新資料都會使用 Microsoft 所管理的金鑰進行自動待用加密。 如需詳細資訊，請參閱 [受控磁片的常見問題](/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption)。
+[Azure 儲存體加密](/azure/storage/storage-service-encryption) 提供待用加密，並保護資料安全，以符合組織的安全性和合規性承諾。 所有 Azure 區域中的所有受控磁片、快照集和映射預設都會啟用 azure 儲存體加密。 從 2017 年 6 月 10 日開始，所有新受控磁碟、快照集、映像和寫入至現有受控磁碟的新資料都會使用 Microsoft 所管理的金鑰進行自動待用加密。 如需詳細資訊，請參閱 [受控磁片的常見問題](/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption)。
 
 Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault) 中的金鑰，將連接到 IaaS VM 的受控磁碟加密為待用和傳輸中的作業系統和資料磁碟。 對於 Windows，磁碟機是使用業界標準的 [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview) 加密技術來加密。 對於 Linux，磁碟是使用 [dm-crypt](https://wikipedia.org/wiki/Dm-crypt) (英文) 子系統來加密。 加密程序會與 Azure Key Vault 整合，可讓您控制和管理磁碟加密金鑰。 如需詳細資訊，請參閱 [Windows 和 Linux IaaS 虛擬機器適用的 Azure 磁碟加密](/azure/security/fundamentals/azure-disk-encryption-vms-vmss)。
 
@@ -143,7 +143,7 @@ Azure 磁碟加密可讓您使用儲存在 [Azure Key Vault](https://azure.micro
 
 受控磁片可在所有具有 premium SSD 和標準 SSD 供應專案的 Azure 區域中使用。 雖然 ultra SSD 目前處於公開預覽狀態，但它只會在一個可用性區域（區域）中提供 `East US 2` 。 當您規劃需要 ultra SSD 的任務關鍵性、最上層工作負載時，請確認區域可用性。
 
-經常性存取和非經常性存取 Blob 儲存體、Data Lake Storage Gen2 和 Azure 檔案儲存體儲存體都可在所有 Azure 區域中使用。 封存 bob 儲存體、premium 檔案共用和 premium 區塊 Blob 儲存體僅限特定區域。 我們建議您參閱區域頁面，以檢查區域可用性的最新狀態。
+經常性存取和非經常性存取 Blob 儲存體、Data Lake Storage Gen2 和 Azure 檔案儲存體都可在所有 Azure 區域中使用。 封存 bob 儲存體、premium 檔案共用和 premium 區塊 Blob 儲存體僅限特定區域。 我們建議您參閱區域頁面，以檢查區域可用性的最新狀態。
 
 若要深入了解 Azure 全域基礎結構，請參閱 [Azure 區域頁面](https://azure.microsoft.com/global-infrastructure/regions)。 您也可以參閱依[依區域提供的產品](https://azure.microsoft.com/global-infrastructure/services/?products=storage)頁面，以取得每個 Azure 區域中可用服務的特定詳細資料。
 

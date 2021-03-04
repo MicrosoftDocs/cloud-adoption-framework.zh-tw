@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 5dce13da4babb6289d25d0c363715e6c9f59ea66
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 986fe990af7d04b5ebdfcfdf1876c536d6585e21
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712632"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792001"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure 中的資源一致性工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "97712632"
 
 以下是 Azure 工具清單，可協助您成熟支援此專業領域的原則和流程。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure 自動化](/azure/automation/automation-intro) | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal/) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure 藍圖](/azure/governance/blueprints/overview) | [Azure 自動化](/azure/automation/automation-intro) | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure 備份](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 部署資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
 | 管理資源                             | 是 | 是 | 是 | 是 | 否  | 否 | 否 |
@@ -47,7 +47,7 @@ ms.locfileid: "97712632"
 
 除了這些資源一致性工具和功能外，您還必須監視已部署的資源，以了解效能和健康情況問題。 [Azure 監視器](/azure/azure-monitor/overview)是 Azure 中的預設監視和報告解決方案。 Azure 監視器提供監視雲端資源的功能。 這份清單會顯示哪些功能可解決常見的監視需求。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal) | [Application Insights](/azure/application-insights/app-insights-overview) | [Log Analytics](/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視器 REST API](/rest/api/monitor) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal/) | [Application Insights](/azure/azure-monitor/app/app-insights-overview) | [Log Analytics](/azure/azure-monitor/logs/log-query-overview) | [Azure 監視器 REST API](/rest/api/monitor/) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | 記錄虛擬機器的遙測資料                 | 否           | 否                   | 是           | 否                     |
 | 記錄虛擬網路的遙測資料              | 否           | 否                   | 是           | 否                     |
@@ -61,8 +61,8 @@ ms.locfileid: "97712632"
 規劃部署時，您將需要考量記錄資料儲存位置，以及如何將雲端式[報告和監視服務](../../decision-guides/logging-and-reporting/index.md)與現有的處理程序和工具整合。
 
 > [!NOTE]
-> 組織也會使用第三方 DevOps 工具來監視工作負載和資源。 如需詳細資訊，請參閱 [DevOps 工具](https://azure.microsoft.com/products/devops-tool-integrations)整合。
+> 組織也會使用第三方 DevOps 工具來監視工作負載和資源。 如需詳細資訊，請參閱 [DevOps 工具](https://azure.microsoft.com/products/devops-tool-integrations/)整合。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
-瞭解如何在 Azure 中建立、指派和管理 [原則定義](/azure/governance/policy) 。
+瞭解如何在 Azure 中建立、指派和管理 [原則定義](/azure/governance/policy/) 。

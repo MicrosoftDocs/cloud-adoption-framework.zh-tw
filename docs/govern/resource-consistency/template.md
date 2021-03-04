@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 940b5be82ec811bd74dec5cbef80d9543d62a1ce
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 41d8caf89a054d5e0c63a77b674738b7e24d29b5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019293"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790709"
 ---
 # <a name="resource-consistency-discipline-template"></a>資源一致性專業領域範本
 
-執行變更的第一個步驟是傳達所需的內容。 同樣適用於變更治理做法。 下列範本可作為記錄和通訊原則聲明的起點，以管理雲端中的 IT 作業和管理。
+執行變更的第一個步驟是傳達所需的內容。 同樣適用於變更治理做法。 下列範本可做為記錄和通訊原則聲明的起點，以管理雲端中的 IT 作業和管理。
 
 當您進行討論時，請使用此範本的結構作為模型，來取得定義組織資源一致性原則聲明所需的商務風險、風險承受度、合規性流程和工具。
 
@@ -26,7 +26,7 @@ ms.locfileid: "97019293"
 
 [下載資源一致性專業人員範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 紮實的治理實務可從了解商務風險著手。 檢閱有關商務風險的文章，並開始記載與您目前雲端採用方案保持一致的業務風險。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 1d9f3f82c928ce8855a54a72eabc131d8b6bc937
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9c7d69ced18631d476523788014669d276d56d00
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026331"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789740"
 ---
 # <a name="cloud-strategy-functions"></a>雲端策略功能
 
@@ -37,8 +37,8 @@ ms.locfileid: "97026331"
 
 ## <a name="preparation"></a>準備
 
-- [瞭解 Microsoft Azure 的商業價值](/learn/paths/learn-business-value-of-azure)。
-- [瞭解雲端採用架構如何](/learn/modules/microsoft-cloud-adoption-framework-for-azure) 協助您將企業、人員和技術的策略保持一致。
+- [瞭解 Microsoft Azure 的商業價值](/learn/paths/learn-business-value-of-azure/)。
+- [瞭解雲端採用架構如何](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) 協助您將企業、人員和技術的策略保持一致。
 - 複習 [雲端採用策略](../strategy/index.md) 的流程。
 - 下載 [策略和方案範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)。
 
@@ -90,7 +90,7 @@ ms.locfileid: "97026331"
 - 在整個採用工作中，每個月配置1-2 小時，以審查進度並驗證持續的優先順序。
 - 可能需要額外的時間，從主管小組的委派成員來看，視需要而定。 雲端策略小組的每個成員都應該指派一個委派，該委派可以每週配置5-10 小時，以支援進行中的優先順序問題，以及報告任何緊急需求。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - 開始 [雲端策略小組](../get-started/team/cloud-strategy.md)
 - 藉由建立要使用的[雲端採用小組](../get-started/team/cloud-adoption.md)，讓您的策略與[雲端採用職能](./cloud-adoption.md)保持一致。

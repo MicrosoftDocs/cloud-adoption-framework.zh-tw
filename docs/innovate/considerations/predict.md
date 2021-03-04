@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 5f9af6346280ce68be7f36c79322d003e545f3de
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 83d37d19304c22681f46d5f2017ec2330d3907e4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017865"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790505"
 ---
 # <a name="predict-and-influence"></a>預測和影響
 
@@ -64,19 +64,19 @@ ms.locfileid: "97017865"
 
 使用深入解析作為起點，機器學習會開發並套用預測模型，以將資料中的模式變成大寫。 透過多個定型、測試和採用反復專案，這些模型和演算法可以精確地預測未來的結果。
 
-[Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) 是 Azure 中的雲端原生服務，可根據您的資料來建立和定型模型。 這項工具也包含 [加速開發機器學習演算法的工作流程](/azure/machine-learning/service/concept-azure-machine-learning-architecture)。 此工作流程可透過視覺化介面或 Python 來開發演算法。
+[Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-ml) 是 azure 中的雲端原生服務，可根據您的資料來建立和定型模型。 這項工具也包含 [加速開發機器學習演算法的工作流程](/azure/machine-learning/concept-azure-machine-learning-architecture)。 此工作流程可透過視覺化介面或 Python 來開發演算法。
 
-如需更健全的機器學習模型， [Azure HDInsight 中的 ML 服務](/azure/hdinsight/r-server/r-server-overview) 提供建置於 Apache Hadoop 叢集上的機器學習平臺。 這種方法可讓您更精細地控制基礎叢集、儲存體和計算節點。 Azure HDInsight 也透過 ScaleR 和 SparkR 等工具提供更先進的整合，以根據整合和內嵌資料來建立預測，甚至是使用資料流程中的資料。 [飛行延遲預測解決方案](/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)會在用來根據天氣狀況預測航班延遲時，示範每一個先進的功能。 HDInsight 解決方案也允許企業控制項（例如資料安全性、網路存取和效能監視）讓模式。
+針對更健全的機器學習模型， [Azure HDInsight 中的 ML 服務](/azure/hdinsight/r-server/r-server-overview) 提供建置於 Apache Hadoop 叢集上的機器學習平臺。 這種方法可讓您更精細地控制基礎叢集、儲存體和計算節點。 Azure HDInsight 也會透過 ScaleR 和 SparkR 等工具提供更先進的整合，以根據整合和內嵌資料來建立預測，甚至是使用資料流程中的資料。 [飛行延遲預測解決方案](/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)會在用來根據天氣狀況預測航班延遲時，示範每一個先進的功能。 HDInsight 解決方案也允許企業控制項（例如資料安全性、網路存取和效能監視）讓模式。
 
 ## <a name="predictions"></a>預測
 
 建立並定型模式之後，您可以透過 Api 加以套用，這可以在傳遞數位體驗期間進行預測。 這些 Api 大多是根據您資料中的模式，從經過妥善定型的模型來建立。 當更多客戶將日常工作負載部署到雲端時，雲端提供者所使用的預測 Api 會導致更快速的採用。
 
-[Azure 認知服務](/azure/cognitive-services) 是雲端廠商所建立的預測 API 範例。 此服務包含內容仲裁的預測性 Api、異常偵測，以及個人化內容的建議。 這些 Api 已備妥可供使用，並以 Microsoft 用來定型模型的知名內容模式為基礎。 這些 Api 都會根據您送入 API 的資料進行預測。
+[Azure 認知服務](/azure/cognitive-services/) 是雲端廠商所建立的預測 API 範例。 此服務包含內容仲裁的預測性 Api、異常偵測，以及個人化內容的建議。 這些 Api 已備妥可供使用，並以 Microsoft 用來定型模型的知名內容模式為基礎。 這些 Api 都會根據您送入 API 的資料進行預測。
 
-[Azure Machine Learning](/azure/machine-learning) 可讓您部署自訂建立的演算法，而您只需根據自己的資料來建立和定型。 深入瞭解如何使用 [Azure Machine Learning](/azure/machine-learning/service/how-to-deploy-and-where)部署預測。
+[Azure Machine Learning](/azure/machine-learning/) 可讓您部署自訂建立的演算法，而您只需根據自己的資料來建立和定型。 深入瞭解如何使用 [Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where)部署預測。
 
-[設定 HDInsight](/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters) 叢集會討論在 Azure HDInsight 上公開針對 ML 服務所開發之預測的流程。
+[設定 HDInsight](/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters) 叢集會討論公開針對 Azure HDInsight 上的 ML 服務所開發之預測的流程。
 
 ## <a name="interactions"></a>互動
 
@@ -84,7 +84,7 @@ ms.locfileid: "97017865"
 
 深入瞭解如何透過 [調整的現實解決方案](./devices.md#adjusted-reality)來建立環境體驗。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 熟悉發明和[創新方法](./index.md)的[專業領域](./invention.md)，您現在已準備好瞭解如何以[客戶理解](./build.md)的方式打造。
 

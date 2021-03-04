@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 3d0a1fb138d526f1f666ae8ac2545e67f967bf61
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: ad9f7ba3c9cc0479d0cb0a665d8335ccc6882136
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174313"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790658"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>打造創新商業價值的共識
 
@@ -68,9 +68,9 @@ ms.locfileid: "98174313"
 - **假設機會：** 許多專案關係人和開發團隊通常會有太多的解決方案期望。 不切實際的預期可能是假設太模糊的正負號。 遵循以 [客戶理解的方式建立](./considerations/build.md) 的指引，以建立更清楚的假設。
 - **打造商機：** 小組可能不一致，因為他們不同意解決客戶需求的方式。 這類聲浪通常表示團隊正 [因技術尖峰而延遲](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)。 若要讓小組專注于客戶，請啟動第一次反復專案，並建立 (MVP) 的最小可行產品，以解決部分的假設。 如需協助小組前進的詳細指引，請參閱 [開發數位發明](./considerations/invention.md)。
 - **訓練機會：** 這兩個小組都可能不一致，因為它們需要深度的技術需求和廣泛的功能性需求。 這項需求可能會導致在敏捷式方法中定型的機會。 當小組文化尚未準備好進行 agile 程式時，您可能會發現創新，並保持市場的步調，是一項挑戰。 如需 DevOps 和 agile 實務的訓練資源，請參閱：
-  - [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices)
-  - [使用 Azure DevOps 建置應用程式](/learn/paths/build-applications-with-azure-devops)
-  - [使用 Azure DevOps 部署應用程式](/learn/paths/deploy-applications-with-azure-devops)
+  - [發展您的 DevOps 實務](/learn/paths/evolve-your-devops-practices/)
+  - [使用 Azure DevOps 建置應用程式](/learn/paths/build-applications-with-azure-devops/)
+  - [使用 Azure DevOps 部署應用程式](/learn/paths/deploy-applications-with-azure-devops/)
 
 您可以遵循本文每一節中的方法和待處理專案管理工具，協助建立解決方案的對齊方式。
 

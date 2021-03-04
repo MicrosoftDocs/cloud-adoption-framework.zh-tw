@@ -3,17 +3,17 @@ title: Microsoft 雲端採用架構的新功能
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構的最新更新。
 author: JanetCThomas
 ms.author: janet
-ms.date: 10/30/2020
+ms.date: 03/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: da9c9b4ba21f328f2f5d256a854b0993be6a3356
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: 023f95f419db54de03903161e003704e6c5e0705
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838807"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790981"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -23,15 +23,19 @@ ms.locfileid: "99838807"
 
 此架構與客戶、合作夥伴和內部 Microsoft 小組共同建立。 新的和更新的內容會在推出時發行。 這些版本可讓您與我們一起測試、驗證和精簡指導方針。 我們鼓勵您與我們合作來打造雲端採用架構。
 
-## <a name="january-2021"></a>2021 年 1 月
+## <a name="february-2021"></a>2021年2月
 
-為了協助您加速採用和創新，我們新增了有關使用 GitHub 和更新機器學習的最佳作法的新資訊。 我們也發行了新的文章和影片，可協助您選擇最適合的登陸區域。
+我們已使用雲端經濟效益的簡介來更新並擴充商務成果總覽，並新增一個使用案例，指向每個業務成果類別的成功商務案例。
 
 | 發行項 | 描述 |
 |--|--|
-| [&nbsp;GitHub 如何 &nbsp; 加速 &nbsp; 雲端 &nbsp; 採用](../scenarios/github-velocity/index.md) | 本文將概述使用 GitHub 來加速雲端採用的優點，方法是利用開放原始碼資產、共同作業開發環境、自動化和安全性功能。 |
-| 新的 [機器 &nbsp; 學習](../innovate/best-practices/machine-learning.md) 最佳作法指引 | 我們已更新並擴充了 Machine Learning 的最佳作法指引。 最佳做法包括： <br><br> <li> [如何處理機器學習作業](../innovate/best-practices/how-to-approach-mlops.md)和[MLOps](../innovate/best-practices/mlops-process.md)程式 <li> [機器學習安全性](../innovate/best-practices/ml-security.md) <li> [機器學習推斷和部署](../innovate/best-practices/ml-deployment-inference.md) <li> [判斷模型的計算實例](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [設定機器學習服務工作區](../innovate/best-practices/set-up-ml-workspaces.md) <li> [負責任和受信任的 AI](../innovate/best-practices/trusted-ai.md) |
-| [選擇 &nbsp; &nbsp; 登陸 &nbsp; 區域 &nbsp; 選項](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft 為登陸區域提供兩種實行選項：*從小規模開始、擴大**規模和企業規模*。 您可以使用這篇新文章來檢查這兩個選項，並為您的組織選擇正確的方法。 |
+| [商務 &nbsp; 成果 &nbsp; 總覽](../strategy/business-outcomes/index.md) | 我們已使用雲端經濟效益案例研究的參考來更新每一類商務成果的簡介，並示範組織如何達成相關的商務目標。 重新整理的簡介包含說明案例研究： <br><br> <li> [會計成果](../strategy/business-outcomes/fiscal-outcomes.md) <li> [靈活度成果](../strategy/business-outcomes/agility-outcomes.md) <li> [全球接觸成果](../strategy/business-outcomes/reach-outcomes.md) <li> [客戶參與成果](../strategy/business-outcomes/engagement-outcomes.md)<li> [效能成果](../strategy/business-outcomes/performance-outcomes.md) <li> [永續性目標](../strategy/business-outcomes/sustainability.md) |
+
+## <a name="january-2021"></a>2021 年 1 月
+
+為了協助您加速採用和創新，我們新增了有關使用 GitHub 和更新機器學習的最佳作法的新資訊。 我們已發佈新的文章和影片，可協助您選擇最適合的登陸區域。
+
+| [如何 &nbsp;GitHub &nbsp; 加速 &nbsp; 雲端 &nbsp; 採用](../scenarios/github-velocity/index.md) |本文將概述使用 GitHub 來加速雲端採用的優點，方法是利用開放原始碼資產、共同作業開發環境、自動化和安全性功能。 | | [機器學習的最佳作法](../innovate/best-practices/machine-learning.md) |我們已更新並擴充機器學習的最佳作法指引。 最佳做法包括： <br><br> <li> [如何處理機器學習作業](../innovate/best-practices/how-to-approach-mlops.md)和[MLOps](../innovate/best-practices/mlops-process.md)程式 <li> [機器學習安全性](../innovate/best-practices/ml-security.md) <li> [機器學習推斷和部署](../innovate/best-practices/ml-deployment-inference.md) <li> [判斷模型的計算實例](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [設定機器學習服務工作區](../innovate/best-practices/set-up-ml-workspaces.md) <li> [負責任和受信任的 AI](../innovate/best-practices/trusted-ai.md) | |[選擇 &nbsp; &nbsp; 登陸 &nbsp; 區域 &nbsp; 選項](../ready/landing-zone/choose-landing-zone-option.md)|Microsoft 為登陸區域提供兩種實行選項：*從小規模開始、擴大**規模和企業規模*。 您可以使用這篇新文章來檢查這兩個選項，並為您的組織選擇正確的方法。 |
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -40,18 +44,18 @@ ms.locfileid: "99838807"
 | 發行項 | 描述 |
 |--|--|
 | [開發 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Azure 資源的命名和標記策略](../ready/azure-best-practices/naming-and-tagging.md) | 我們已精簡定義您的命名和標記策略的指導方針。 除了總覽之外，我們也將本指南分為多篇文章，涵蓋這些主題： <br><br> <li> [定義您的命名慣例](../ready/azure-best-practices/resource-naming.md) <li> [適用于各種 Azure 資源類型的建議縮寫](../ready/azure-best-practices/resource-abbreviations.md) <li> [定義您的標記策略](../ready/azure-best-practices/resource-tagging.md) |
-| [將 Moodle 部署遷移至 Azure](../scenarios/lamp/moodle/migration-overview.md) | 瞭解如何將 Moodle 開放原始碼學習管理系統的部署從內部部署環境遷移至 Azure。 您可以使用 Azure 入口網站或部署的 Azure CLI 來提供步驟。 |
+| [將 Moodle 部署遷移至 Azure](../scenarios/lamp/moodle/migration-overview.md) | 瞭解如何將 Moodle 開放原始碼學習管理系統的部署從內部部署環境遷移至 Azure。 針對您的部署使用 Azure 入口網站或 Azure CLI 來提供步驟。 |
 
 ## <a name="october-2020"></a>2020 年 10 月
 
 本月的更新包括整個雲端採用架構的累加式改進，以及支援的 web 資產。
 
-我們最大的投資專注于打造 Microsoft Learn 課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，開始使用模組提供與產業垂直相關的第一項指引，方法是向零售客戶介紹 (Tailwind 商貿) ，我們會遵循所有核心方法模組來遵循。
+我們最大的投資著重于建立 Microsoft 學習課程模組，以加速雲端採用架構的應用。 本月份，我們發行了下列模組。 請注意，「快速入門」課程模組提供與產業垂直相關的第一項指引，方法是 (Tailwind 貿易商) ，我們將遵循所有核心方法模組來追蹤這些課程。
 
-| 模組 | Description |
+| 模組 | 描述 |
 |--|--|
 | [總覽模組](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | 入門層級的架構簡介。 |
-| [開始使用模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
+| [開始使用課程模組](/learn/modules/cloud-adoption-framework-getting-started/) | 快速入門手冊的簡介，以加速應用適當方法來克服特定阻礙。 |
 | [Azure 登陸區域](/learn/modules/cloud-adoption-framework-ready/) | 在建立您的雲端環境之前，請先瞭解您的作業需求，並選擇最適當的 Azure 登陸區域產品，以開始使用。 |
 | [建立企業規模的架構](/learn/paths/enterprise-scale-architecture/) | 遵循一組企業級的設計原則、參考架構和參考實現，大規模建立登陸區域。 四個模組，可建立成功的單一學習路徑。 |
 
@@ -127,7 +131,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 | 發行項 | 描述 |
 |--|--|
 | [負責任的 AI](../strategy/responsible-ai.md) | 瞭解您在實施 AI 解決方案時應考慮的 AI 原則，並瞭解如何建立負責任的 AI 策略。 |
-| [Azure 創新指南：使用 AI 來創新](../innovate/innovation-guide/predict.md) | 瞭解如何使用 AI 進行創新，並根據您的實所需求找出最佳解決方案。 |
+| [Azure 創新指南：使用 AI 創新](../innovate/innovation-guide/predict.md) | 瞭解如何使用 AI 進行創新，並根據您的實所需求找出最佳解決方案。 |
 | [雲端採用架構中的 AI](../innovate/ai/index.md) | 請參閱包含工具、程式和內容 (最佳做法、設定範本和架構指引) 的規範性架構，以簡化大規模採用 AI 和雲端原生的做法。 |
 | [使用 Azure Machine Learning 的 MLOps](../manage/mlops-machine-learning.md) | 深入瞭解機器學習作業 (MLOps) 最佳做法。 |
 | [使用 AI 來創新](../innovate/best-practices/predict.md) | 瞭解 (機器學習服務、AI 應用程式和代理程式、知識挖掘) 和可加速數位發明的最佳作法的 AI 解決方案。 |
@@ -193,7 +197,7 @@ AI 解決方案和最佳作法現在已整合到 Microsoft 雲端採用架構中
 | [重構登陸區域](../ready/landing-zone/refactor.md) | **新文章：** 本文從現成的方法研討會進行繪製，示範從初始範本開始，使用決策樹和重構來擴展登陸區域，並移往未來的企業就緒狀態。 |
 | [擴充登陸區域](../ready/considerations/index.md) | **新文章：** 以重構文章的「平行反覆運算」一節為基礎，顯示各種類型的登陸區域擴充如何將共用原則內嵌至支援的平臺。 本總覽的原始內容已移至目錄中的 [基本登陸區域考慮](../ready/considerations/basic-considerations.md) 節點。 |
 | [登陸區域的測試驅動開發 (TDD)](../ready/considerations/test-driven-development.md) | **新文章：** 重構方法透過採用測試導向的開發週期，來引導登陸區域開發和重構，進而獲得更大的改進。 |
-| [Azure 中的登陸區域 TDD](../ready/considerations/azure-test-driven-development.md) | **新文章：** Azure 治理工具提供了一種豐富的平臺，可用於 TDD 週期或紅色/綠色的測試。 |
+| [Azure 中的登陸區域 TDD](../ready/considerations/azure-test-driven-development.md) | **新文章：** Azure 控管工具提供了一種豐富的平臺，可用於 TDD 週期或紅色/綠色的測試。 |
 | [改善登陸區域安全性](../ready/considerations/landing-zone-security.md) | **新文章：** 此節中的最佳作法簡介，與 TDD 迴圈相關。 |
 | [改善登陸區域作業](../ready/considerations/landing-zone-operations.md) | **新文章：** 管理方法中的最佳做法清單，轉換成該模組化方法，以改善作業、可靠性和效能。 |
 | [改善登陸區域控管](../ready/considerations/landing-zone-governance.md) | **新文章：** 與治理方法相關的最佳做法清單，轉換成該模組化方法以改善治理、成本管理和規模。 |

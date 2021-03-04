@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: bb19bfa0cf8d521b33e570288774128830e9515b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 915af4a7f8e7c410916965b272bc3830901c4021
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021452"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791389"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>部署加速範例原則聲明
 
@@ -31,7 +31,7 @@ ms.locfileid: "97021452"
 
 **原則聲明：** 所有部署至雲端的資產都應盡可能使用範本或自動化腳本進行部署。
 
-**可能的設計選項：** [Azure Resource Manager 範本](/azure/azure-resource-manager/templates/overview) 可讓您使用基礎結構即程式碼，將您的資源部署到 Azure。 您也可以使用 [Terraform](/azure/terraform/terraform-overview) 作為一致的內部部署和雲端式部署工具。
+**可能的設計選項：** [Azure Resource Manager 範本](/azure/azure-resource-manager/templates/overview) 可讓您使用基礎結構即程式碼，將您的資源部署到 Azure。 您也可以使用 [Terraform](/azure/developer/terraform/overview) 作為一致的內部部署和雲端式部署工具。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>缺少系統問題的可見性
 
@@ -42,7 +42,7 @@ ms.locfileid: "97021452"
 - 系統將針對所有生產系統和元件找出關鍵計量和診斷量值，而且會將監視與診斷工具套用至這些系統，並由操作人員定期監控。
 - 作業會考慮使用非生產環境中的監視和診斷工具（例如預備和 QA）來識別系統問題，然後才在生產環境中進行。
 
-**可能的設計選項：** [Azure 監視器](/azure/azure-monitor)（包括 Log Analytics 和 Application Insights）提供收集和分析遙測資料的工具，可協助您瞭解應用程式的執行情況，並主動識別影響它們的問題以及它們所依賴的資源。 此外， [Azure 活動記錄](/azure/azure-monitor/platform/activity-logs-overview) 會報告在平台層級進行的所有變更，並應針對不符合規範的變更進行監視和審核。
+**潛在的設計選項：** [Azure 監視器](/azure/azure-monitor/)（包括 Log Analytics 和 application Insights）提供收集和分析遙測資料的工具，可協助您瞭解應用程式的執行情況，並主動識別影響它們的問題以及它們所依賴的資源。 此外， [Azure 活動記錄](/azure/azure-monitor/essentials/platform-logs-overview) 會報告在平台層級進行的所有變更，並應針對不符合規範的變更進行監視和審核。
 
 ## <a name="configuration-security-reviews"></a>設定安全性檢閱
 
@@ -52,7 +52,7 @@ ms.locfileid: "97021452"
 
 **可能的設計選項：** 建立每月安全性審核會議，其中包括治理小組成員，以及負責設定雲端應用程式和資源的 IT 人員。 請檢查現有的安全性資料和計量，以在目前的部署加速原則和工具之間建立差距，並更新原則來補救任何新風險。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用本文提及的範例作為起點，以開發與您雲端採用方案保持一致的原則來解決特定業務風險。
 

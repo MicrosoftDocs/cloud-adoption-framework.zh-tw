@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 979be1c51363d2e3073527b5bb5a8121b6bacb93
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 668a2b7583948a812bda7c0f4f0265117095da49
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023067"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791542"
 ---
 # <a name="subscription-decision-guide"></a>訂用帳戶決策指南
 
@@ -72,7 +72,7 @@ ms.locfileid: "97023067"
 
 ## <a name="mix-subscription-strategies"></a>混合訂用帳戶策略
 
-管理群組階層的深度最多可有六層。 這可讓您彈性建立階層，結合其中數種策略，以符合您的組織需求。 例如，下圖顯示的組織階層結合了營業單位策略與地理策略。
+管理群組階層的深度最多可有六層。 這可讓您彈性建立階層，結合其中數種策略，以符合您的組織需求。 例如，下圖顯示結合了業務單位策略與地理策略的組織階層。
 
 ![混合的訂用帳戶策略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 

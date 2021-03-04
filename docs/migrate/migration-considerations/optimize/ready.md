@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 4b06c3bf6187d3536af57b772980af76d0b443c3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b355ef12e5a4ac58c6c2a5131816afc28ab0dbe3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024971"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789927"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>讓遷移後的應用程式準備好進行生產環境升階
 
@@ -45,7 +45,7 @@ ms.locfileid: "97024971"
 - **成本驗證 (方案與實際)。** 測試時可能會變更大小和架構。 請確定實際的部署價格仍與原始方案一致。
 - **傳達和執行移轉方案。** 在移轉之前，請先傳達移轉事宜並據此執行。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完成所有整備活動之後，就可以[將工作負載升階](./promote.md)。
 

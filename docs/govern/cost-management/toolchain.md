@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 53e2f872383c23398001ec85320a27d6ec99e6d3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ac9ece45ffc0a0fb1f0ef65385dd7f4372d6e73e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021707"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790828"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure 中的成本管理工具
 
@@ -21,7 +21,7 @@ ms.locfileid: "97021707"
 
 以下是 Azure 原生工具的清單，可協助您成熟支援此專業領域的原則和流程。
 
-| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal)  | [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview)  | [Power BI Desktop 連接器](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure 原則](/azure/governance/policy/overview) |
+| 工具 | [Azure 入口網站](https://azure.microsoft.com/features/azure-portal/) | [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) | [Power BI Desktop 連接器](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure 原則](/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
 | 預算控制     | 否         | 是         | 否         | 是         |
 | 監視對於單一資源的支出    | 是         | 是         | 是         | 否         |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: adb67d071eeee6b0170f93cf178d9a9075900b8d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e206763a8200080858a8afda6ab7ba2b26ecdde9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021639"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791457"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>部署加速專業領域改進
 
@@ -21,9 +21,8 @@ ms.locfileid: "97021639"
 
 本文將概述一些貴公司可參與的潛在工作，以更好的方式來開發部署加速專業領域並使其臻至成熟。 這些工作可以細分為實作雲端解決方案的規劃、建置、採用及操作階段，接著反覆執行以允許開發[雲端治理的累加方法](../guides/index.md#an-incremental-approach-to-cloud-governance)。
 
-![雲端治理增量方法的階段](../../_images/govern/adoption-phases.png)
-
-*圖1：漸進式雲端治理方法的階段。*
+![雲端治理的漸進式方法階段 ](../../_images/govern/adoption-phases.png)
+ *圖1：雲端治理增量方法的階段。*
 
 沒有任何一份文件能夠滿足所有企業需求。 因此，本文將針對治理成熟流程的每個階段，概述建議的最小和潛在範例活動。 這些活動的初始目標是協助您建立 [原則 MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) ，並建立用於增量原則改進的架構。 您的雲端治理小組必須決定投資這些活動的數量，以改善您的身分識別基準專業領域。
 
@@ -51,7 +50,7 @@ ms.locfileid: "97021639"
 
 - 對於新的雲端式應用程式，在開發流程初期引進完全自動化的部署。 此投資將改進測試流程的可靠性，並確保開發、QA 和生產環境之間的一致性。
 - 使用原始檔控制平台 (例如 GitHub 或 Azure DevOps) 來儲存所有部署成品 (例如部署範本或設定指令碼)。
-- 將所有密碼、密碼、憑證和連接字串儲存在 [Azure Key Vault](/azure/key-vault)中。
+- 將所有密碼、密碼、憑證和連接字串儲存在 [Azure Key Vault](/azure/key-vault/)中。
 - 實作您的[部署加速工具鏈](./toolchain.md)之前，請考慮先執行試驗測試，以確定它會盡可能地簡化您的部署。 在部署階段期間套用試驗測試的意見反應，視需要重複。
 - 評估應用程式的邏輯與實體架構，並找機會來將應用程式資源部署自動化，或使用其他雲端式資源改進架構的某些部分。
 - 更新架構指導方針檔，以包含部署和使用者採用方案，並散發給重要的專案關係人。
@@ -97,7 +96,7 @@ ms.locfileid: "97021639"
 - 定期檢閱設定工具和指令碼，以改進流程並找出常見的問題。
 - 與開發、作業及安全性小組合作，以使 DevSecOps 做法臻至成熟，並細分導致低效率的組織定址接收器。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 既然您已瞭解雲端身分識別治理的概念，請檢查身分識別 [基準工具鏈](./toolchain.md) ，以識別您在 azure 平臺上開發身分識別基準專業領域時所需的 Azure 工具和功能。
 

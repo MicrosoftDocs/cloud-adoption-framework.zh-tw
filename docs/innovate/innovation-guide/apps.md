@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, seo-caf-innovate
 keywords: Azure app service，app service azure，app service，組建應用程式，雲端原生應用程式，雲端原生應用程式
-ms.openlocfilehash: e1fe2fb351fed0e092e2d669d2aa7c9384dce2e5
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a21923856c7e3faa10d5cfaf646fc3691858df73
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632098"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790216"
 ---
 # <a name="engage-customers-through-applications"></a>透過應用程式與客戶互動
 
@@ -101,26 +101,26 @@ Azure Bot Service 可新增自然的 Bot 介面，該介面使用 AI 和 Machine
 
 ### <a name="azure-devops"></a>Azure DevOps
 
-在您的創新旅途中，您最後會找到自己通往 DevOps 的道路。 Microsoft 早已擁有稱為 Team Foundation Server (TFS) 的內部部署產品。 在我們自己的創新旅途中，Microsoft 開發了 Azure DevOps，這是一項雲端式服務，可提供建置和發行工具來為您的發行支援許多語言和目的地。 如需詳細資訊，請參閱 [Azure DevOps](/azure/devops)。
+在您的創新旅途中，您最後會找到自己通往 DevOps 的道路。 Microsoft 早已擁有稱為 Team Foundation Server (TFS) 的內部部署產品。 在我們自己的創新旅途中，Microsoft 開發了 Azure DevOps，這是一項雲端式服務，可提供建置和發行工具來為您的發行支援許多語言和目的地。 如需詳細資訊，請參閱 [Azure DevOps](/azure/devops/)。
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不只提供可讓您在 iOS、Android、Windows 和 macOS 上測試雲端原生應用程式的位置，它也提供監視平臺，可使用 Azure 應用程式 Insights 快速輕鬆地分析您的遙測。 如需詳細資訊，請參閱 [Visual Studio App Center](/appcenter)。
+隨著行動應用程式日益普及，人們也越來越需要有一種平台可讓其在具有各種設定的實際裝置上進行自動化測試。 Visual Studio App Center 不僅提供可讓您在 iOS、Android、Windows 和 macOS 上測試雲端原生應用程式的位置，也提供監視平臺，可讓您快速且輕鬆地使用 Azure Application Insights 來分析您的遙測。 如需詳細資訊，請參閱 [Visual Studio App Center](/appcenter/)。
 
-Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](/appcenter/push)。
+Visual Studio App Center 也會提供通知服務，讓您不必個別連絡每個通知服務，就能發出單一呼叫而對您在各平台的應用程式傳送通知。 如需詳細資訊，請參閱 [Visual Studio App Center Push (ACP)](/appcenter/push/)。
 
 ### <a name="learn-more"></a>深入了解
 
 - [App Service 概觀](/azure/app-service/overview)
-- [用於容器的 Web App：執行自訂容器](/azure/app-service/containers/quickstart-docker)
+- [適用于容器的 Web 應用程式：執行自訂容器](/azure/app-service/quickstart-custom-container?pivots=platform-linux)
 - [Azure Functions 簡介](/azure/azure-functions/functions-overview)
-- [適用於 .NET 和 .NET Core 開發人員的 Azure](/dotnet/azure)
-- [Azure SDK for Python 文件](/azure/python)
-- [適用於 Java 雲端開發人員的 Azure](/azure/developer/java)
-- [在 Azure 中建立 PHP Web 應用程式](/azure/app-service/app-service-web-get-started-php)
-- [Azure SDK for JavaScript 文件](/azure/javascript)
-- [Azure SDK for Go 文件](/azure/go)
-- [DevOps 解決方案](https://azure.microsoft.com/solutions/devops)
+- [適用於 .NET 和 .NET Core 開發人員的 Azure](/dotnet/azure/)
+- [Azure SDK for Python 文件](/azure/developer/python/)
+- [適用於 Java 雲端開發人員的 Azure](/azure/developer/java/)
+- [在 Azure 中建立 PHP Web 應用程式](/azure/app-service/quickstart-php)
+- [Azure SDK for JavaScript 文件](/azure/developer/javascript/)
+- [Azure SDK for Go 文件](/azure/developer/go/)
+- [DevOps 解決方案](https://azure.microsoft.com/solutions/devops/)
 
 ## <a name="create-cloud-native-applications"></a>[建立雲端原生應用程式](#tab/CloudNative)
 
@@ -178,7 +178,7 @@ Azure Functions 會提供平台供您在雲端中執行小段程式碼或函式�
 
 Azure Functions 執行階段支援多種語言，包括 C#、Java、JavaScript 和 Python。 如需完整清單，請參閱 [Azure Functions 中支援的語言](/azure/azure-functions/supported-languages)。
 
-函式的另一個優點是能由不同的動作和事件加以觸發，例如 HTTP 觸發程序、計時器觸發程序，以及來自其他 Azure 服務 (像是 Blob 儲存體、EventGrid 和 ServiceBus) 的觸發程序。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
+函式的另一個優點是它們可以由不同的動作和事件觸發，例如 HTTP 觸發程式、計時器觸發程式，以及來自其他 Azure 服務（例如 Blob 儲存體、事件方格和服務匯流排）的觸發程式。 如需觸發程序和繫結的詳細資訊，請參閱 [Azure Functions 觸發程序和繫結概念](/azure/azure-functions/functions-triggers-bindings)。
 
 #### <a name="action"></a>動作
 
@@ -349,5 +349,5 @@ Azure 提供分散式內容傳遞網路 (CDN)，可讓您將資產快取到接�
 ### <a name="learn-more"></a>深入了解
 
 - [Azure Front Door](/azure/frontdoor/front-door-overview)
-- [流量管理員](/azure/traffic-manager)
-- [Azure 內容傳遞網路](/azure/cdn)
+- [流量管理員](/azure/traffic-manager/)
+- [Azure 內容傳遞網路](/azure/cdn/)

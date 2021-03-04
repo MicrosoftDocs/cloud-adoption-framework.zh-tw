@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 93017b233340492a397f0cd15d815e73d72c04d7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7a8aedbf030d9d41cc3491f6f5a1eee37dff3bf5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024750"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789859"
 ---
 <!-- docutune:ignore IS -->
 
@@ -41,7 +41,7 @@ ms.locfileid: "97024750"
 
 - 請參閱 [管理方法](../govern/index.md)。
 - 採用 [治理基準評估](../govern/benchmark.md)。
-- [Azure 中的安全性簡介](/learn/modules/intro-to-security-in-azure)：瞭解在雲端中保護基礎結構和資料的基本概念。 瞭解什麼是您的責任，以及 Azure 為您處理的工作。
+- [Azure 中的安全性簡介](/learn/modules/protect-against-security-threats-azure/)：瞭解在雲端中保護基礎結構和資料的基本概念。 瞭解什麼是您的責任，以及 Azure 為您處理的工作。
 - 瞭解如何跨群組工作以 [管理成本](../organize/cost-conscious-organization.md)。
 
 ## <a name="minimum-scope"></a>最小範圍
@@ -75,7 +75,7 @@ ms.locfileid: "97024750"
 
 雲端治理小組會隨著採用規模的發展，與創新的步調保持一致。 如果您的環境具有繁重的合規性、作業或安全性需求，則更是如此。 如果發生這種情況，您可以將一些責任轉移給現有的 IT 小組，以降低治理小組的範圍。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 有些大型組織有專門專注于 IT 治理的專門團隊。 這些團隊會針對 IT 組合的風險管理進行特殊化。 當這些小組存在時，可以快速加速下列成熟度模型。 但我們鼓勵 IT 治理小組複習雲端治理模型，以瞭解治理在雲端中的變化。 重要文章包括將公司原則延伸至雲端以及五個雲端治理專業領域。
 
