@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1d4b157ec25d6324d58a0ca2e725ece84cf0bab0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3fe0c08b0a9d47c23db390d1a88c4d178d1ac51e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016947"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786034"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>第2階段：上架 Azure 伺服器管理服務
 
@@ -27,13 +27,13 @@ ms.locfileid: "97016947"
 本指南的這一節涵蓋了 Azure 和內部部署伺服器中兩部虛擬機器的下列上架程式：
 
 - **使用入口網站在單一 VM 上啟用管理服務以進行評估。** 您可以使用此程式來熟悉 Azure 伺服器管理服務。
-- **使用入口網站設定訂用帳戶的管理服務。** 此程式可協助您設定 Azure 環境，以便任何布建的新 Vm 都會自動使用管理服務。 如果您想要 Azure 入口網站的腳本和命令列體驗，請使用此方法。
-- **使用 Azure 自動化設定訂用帳戶的管理服務。** 此程式完全自動化。 只要建立訂用帳戶，腳本就會將環境設定為針對任何新布建的 VM 使用管理服務。 如果您熟悉 PowerShell 腳本和 Azure Resource Manager 範本，或者您想要瞭解如何使用這些範本，請使用此方法。
+- **使用入口網站設定訂用帳戶的管理服務。** 此程式可協助您設定 Azure 環境，以便任何布建的新 Vm 都會自動使用管理服務。 如果您偏好使用 Azure 入口網站的腳本和命令列體驗，請使用此方法。
+- **使用 Azure 自動化來設定訂用帳戶的管理服務。** 此程式完全自動化。 只要建立訂用帳戶，腳本就會將環境設定為針對任何新布建的 VM 使用管理服務。 如果您熟悉 PowerShell 腳本和 Azure Resource Manager 範本，或者您想要瞭解如何使用這些範本，請使用此方法。
 
 這兩種方法的程式不同。
 
 > [!NOTE]
-> 當您使用 Azure 入口網站時，上線步驟的順序與自動上線步驟不同。 入口網站提供更簡單的上線體驗。
+> 當您使用 Azure 入口網站時，進行中架步驟的順序與自動上線步驟不同。 入口網站提供更簡單的上線體驗。
 
 下圖顯示管理服務的建議部署模型：
 
@@ -44,7 +44,7 @@ ms.locfileid: "97016947"
 - **自動註冊：** 在伺服器上安裝 Log Analytics 代理程式，並設定為連線至工作區時，會自動將該工作區上所啟用的解決方案套用至伺服器。
 - **加入宣告：** 即使已安裝代理程式並聯機至工作區，仍不會套用解決方案，除非將其新增至工作區中的伺服器範圍設定。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何使用入口網站來上架單一 VM，以評估上執行緒序。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 981a2bdc71f20e0635532b45c2e1c485132ee1aa
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 02a2b5fe45daf2fa73957d44c0033ed0424eb327
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025107"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786697"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>在移轉前修復資產
 
@@ -57,7 +57,7 @@ ms.locfileid: "97025107"
 - **自動化。** 視工作負載和修復需求而定，使用 DevOps 方法編寫部署至新資產的指令碼可能會更有利。
 - **重建。** 當修復成本非常高且商業價值同樣很高時，工作負載可能就相當適合作為重建或重新架構的候選項目。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 修復完成後，[複寫活動](./replicate.md)就準備就緒。
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 5a4f5de75d3550db5446302eccb3d621cf8bc012
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: dfcb3c7c40fafb6343dffed4682eed993c60c3cc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492267"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785048"
 ---
 # <a name="choose-the-landing-zone-for-your-organization"></a>選擇您組織的登陸區域
 
@@ -28,7 +28,7 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwZeg]
 
-您也可以考慮進行協力廠商的實施。 我們的合作夥伴有許多透過其服務提供的實現。 如需詳細資訊，請參閱 [評估 Microsoft 合作夥伴的 Azure 登陸區域](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone)。
+您也可以考慮進行協力廠商的實施。 我們的合作夥伴有許多透過其服務提供的實現。 如需詳細資訊，請參閱 [評估 Microsoft 合作夥伴的 Azure 登陸區域](./partner-landing-zone.md)。
 
 ## <a name="overview-of-landing-zone-options"></a>登陸區域選項的總覽
 
@@ -53,7 +53,7 @@ Microsoft 針對登陸區域提供兩種執行選項：
         **初始考慮**
     :::column-end:::
     :::column:::
-        [作業模型對齊](/azure/cloud-adoption-framework/operating-model/compare#operating-model-comparison)
+        [作業模型對齊](../../operating-model/compare.md#operating-model-comparison)
     :::column-end:::
     :::column:::
         集中式作業
@@ -229,7 +229,7 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 您是否需要基準架構或環境？ 開始-小型和展開的方法提供簡單的起點，讓您可以在其中建立自己的解決方案。 企業規模的方法提供整個 Azure 租使用者的環境，包括雲端原生作業。
 
-如需作業類型的詳細資訊，請參閱 [比較常見的雲端作業模型](/azure/cloud-adoption-framework/operating-model/compare)。
+如需作業類型的詳細資訊，請參閱 [比較常見的雲端作業模型](../../operating-model/compare.md)。
 
 ## <a name="adoption-plan-considerations"></a>採用計畫考慮
 
@@ -241,9 +241,9 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 企業規模可立即提供長期的自我充足性和操作能力。 企業規模也有助於加速、在整個組織中採用合規性。 企業規模的方法為您打造基礎。 企業規模包含有關安全性、身分識別和網路的護欄。 此方法包含適用于 DevOps 和自動化的 CI/CD 管線選項。
 
-如果您從小規模開始著手，則有一些方法可取得自我充足性、採用速度和卓越的營運。 在雲端採用架構內使用治理或管理方法，將這些部分反復地建立到登陸區域解決方案中。 您可以使用「 [雲端採用架構](/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines)」這八個領域的設計指導方針，以反復改善您的設計。
+如果您從小規模開始著手，則有一些方法可取得自我充足性、採用速度和卓越的營運。 在雲端採用架構內使用治理或管理方法，將這些部分反復地建立到登陸區域解決方案中。 您可以使用「 [雲端採用架構](../enterprise-scale/design-guidelines.md)」這八個領域的設計指導方針，以反復改善您的設計。
 
-若要深入瞭解卓越的營運，請參閱 [在數位轉型期間提供卓越的營運](/azure/cloud-adoption-framework/get-started/operational-excellence)。
+若要深入瞭解卓越的營運，請參閱 [在數位轉型期間提供卓越的營運](../../get-started/operational-excellence.md)。
 
 ## <a name="compliance-considerations"></a>相容性考量
 
@@ -254,9 +254,9 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 您的組織可能需要在短時間內擁有必須符合規範的特定工作負載或應用程式，而這項需求可能會影響您的選擇。
 
-從小規模開始，擴充是一種反復合規性的方法。 使用「雲端採用架構」管理和管理方法，以支援敏感性資料或重要工作負載。 如需詳細資訊，請參閱管理雲端的 [方法](/azure/cloud-adoption-framework/govern/methodology) 和雲端 [中的 IT 管理和作業](/azure/cloud-adoption-framework/manage/considerations/)。
+從小規模開始，擴充是一種反復合規性的方法。 使用「雲端採用架構」管理和管理方法，以支援敏感性資料或重要工作負載。 如需詳細資訊，請參閱管理雲端的 [方法](../../govern/methodology.md) 和雲端 [中的 IT 管理和作業](../../manage/considerations/index.md)。
 
-企業規模架構包含了分割和分隔的設計，以支援合規性目標和 [服務啟用架構](/azure/cloud-adoption-framework/ready/enterprise-scale/security-governance-and-compliance#service-enablement-framework) ，以決定如何達成適當的治理、安全性和合規性層級。
+企業規模架構包含了分割和分隔的設計，以支援合規性目標和 [服務啟用架構](../enterprise-scale/security-governance-and-compliance.md#service-enablement-framework) ，以決定如何達成適當的治理、安全性和合規性層級。
 
 可能的話，請先找出要先執行的低風險工作負載。 這項技術可協助您在一段時間內建立基礎結構和技能。 您可以在瞭解雲端的運作方式時，加入治理和管理方法。
 
@@ -274,19 +274,19 @@ Microsoft 針對登陸區域提供兩種執行選項：
 
 企業規模包含所有已設定的重要服務。 從小規模開始，並擴展一些部署的資源。
 
-如需詳細資訊，請參閱 [Azure 就緒的最佳做法](/azure/cloud-adoption-framework/ready/azure-best-practices/)。
+如需詳細資訊，請參閱 [Azure 就緒的最佳做法](../azure-best-practices/index.md)。
 
 這兩種方法都提供自動化功能。
 
 - 從小規模開始，並展開： ARM 範本、Azure 原則和 Azure 藍圖。 可以建立您自己的 CI/CD 管線。
 - 企業級： ARM 範本、Azure 原則、GitHub/Azure DevOps 和 CI/CD 管線選項都包含在參考實行指引中。
 
-從小規模開始，並使用 ARM 範本、Azure 原則和 Azure 藍圖。
+從小規模開始，使用 ARM 範本、Azure 原則和 Azure 藍圖。
 
-- [CAF 基礎藍圖](/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint)
-- [CAF 移轉登陸區域藍圖](/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone)
+- [CAF 基礎藍圖](./foundation-blueprint.md)
+- [CAF 移轉登陸區域藍圖](./migrate-landing-zone.md)
 
-企業規模使用 ARM 範本，Azure 原則，並提供三個參考實行和不同的部署。
+企業規模使用 ARM 範本、Azure 原則，並提供三個參考實行和不同的部署。
 
 - [企業規模的基礎](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md)
 - [企業規模的虛擬 WAN](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md)

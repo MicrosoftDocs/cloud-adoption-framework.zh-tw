@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 2bbaf3c56bdf82824c6577bd64e2cee93a9e2e0e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9e409514d5c6e6e79d644343ebfb862e87693624
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026620"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786408"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>在 Azure 中部署移轉登陸區域
 
@@ -42,7 +42,7 @@ ms.locfileid: "97026620"
 
 ### <a name="identity"></a>身分識別
 
-此實作為選項假設目標訂用帳戶已根據身分[識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)與 Azure Active Directory 實例相關聯
+此實行選項假設目標訂用帳戶已根據身分[識別管理最佳作法](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)，與 Azure Active Directory 實例相關聯
 
 ### <a name="network-topology-and-connectivity"></a>網路拓樸和連線能力
 
@@ -98,14 +98,14 @@ ms.locfileid: "97026620"
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 移轉工具              | 將會部署 Azure Site Recovery，並建立 Azure Migrate 專案。                | [移轉工具決策指南](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | 記錄和監視       | 將會布建 Operational insights 工作區和診斷儲存體帳戶。                |                                                                                                                                                                                                                                                                                       |
-| 網路                      | 將會使用閘道、防火牆、跳躍箱和登陸區域的子網來建立虛擬網路。  | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
+| 網路                      | 將會使用閘道、防火牆、跳躍箱和登陸區域的子網來建立虛擬網路。 | [網路決策](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | 身分識別                     | 假設訂用帳戶已經與 Azure Active Directory 執行個體相關聯。 | [身分識別管理最佳做法](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | 原則                       | 此藍圖目前會假設未套用任何 Azure 原則。                        |                                                                                                                                                                                                                                                                                       |
 | 訂用帳戶設計          | N/A-專為單一生產訂用帳戶所設計。                                              | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | 資源群組              | N/A-專為單一生產訂用帳戶所設計。                                              | [調整訂用帳戶](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | 管理群組            | N/A-專為單一生產訂用帳戶所設計。                                              | [組織和管理訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| 資料                         | N/A                                                                                               | 選擇 Azure 和[azure 資料存放區](/azure/architecture/guide/technology-choices/data-store-overview)[中正確的 SQL Server 選項](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
-| 儲存體                      | N/A                                                                                               | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                                        |
+| 資料                         | N/A                                                                                               | 在 Azure 和[azure 資料存放區](/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)                       |
+| 儲存體                      | N/A                                                                                               | [Azure 儲存體指引](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | 命名和標記標準 | N/A                                                                                               | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
 | 成本管理              | N/A                                                                                               | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
 | 計算                      | N/A                                                                                               | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                                               |
@@ -119,7 +119,7 @@ ms.locfileid: "97026620"
 
 如需有關應對此藍圖或產生的登陸區域進行自訂的指引，請參閱 [登陸區域考慮](../considerations/index.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在部署您的第一個登陸區域之後，您就可以開始展開登陸區域。
 

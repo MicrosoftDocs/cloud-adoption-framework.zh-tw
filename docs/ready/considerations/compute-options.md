@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: d5a4f593e62772dbd45fa9aea3eebfb6360fbcf4
-ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
+ms.openlocfilehash: 85aa7b4ff6692e8abb1808cd0fd2bed895c631de
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625713"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787258"
 ---
 # <a name="review-your-compute-options"></a>檢查您的計算選項
 
@@ -45,7 +45,7 @@ _圖1： Azure 計算服務決策樹。_
 
 - **您是否正在建立全新的應用程式和服務，或從現有的內部部署工作負載遷移？** 開發新的應用程式作為雲端採用工作的一部分，可讓您從設計階段開始，充分利用新式雲端式裝載技術。
 - **如果您要遷移現有的工作負載，可以利用新式雲端技術嗎？** 遷移內部部署工作負載需要分析。 您可以輕鬆地將現有的應用程式和服務優化以利用新式雲端技術，也可以讓您的工作負載使用隨即轉移方法更好嗎？
-- **您的應用程式或服務可以利用容器嗎？** 如果您的應用程式是容器化裝載的絕佳候選項目，您可以利用 [Azure 中的容器服務](https://azure.microsoft.com/product-categories/containers)所提供的資源效率、擴充性和協調流程功能。 [Azure 受控磁片](/azure/virtual-machines/windows/managed-disks-overview)和[Azure 檔案儲存體](/azure/storage/files/storage-files-introduction)都可用於容器化應用程式中的持續性儲存體。
+- **您的應用程式或服務可以利用容器嗎？** 如果您的應用程式是容器化裝載的絕佳候選項目，您可以利用 [Azure 中的容器服務](https://azure.microsoft.com/product-categories/containers)所提供的資源效率、擴充性和協調流程功能。 [Azure 受控磁片](/azure/virtual-machines/windows/managed-disks-overview)和[azure](/azure/storage/files/storage-files-introduction)檔案可用於容器化應用程式中的持續性儲存體。
 - **您的應用程式是以 web 或 API 為基礎，而且會使用 PHP、ASP.NET、Node.js 或類似的技術嗎？** Web 應用程式可以部署到受控的 [Azure App Service](/azure/app-service/overview) 執行個體，因此您不需要維護裝載用的虛擬機器。
 - **您需要完整控制您工作負載的作業系統和裝載環境嗎？** 如果您需要控制裝載環境 (包括作業系統、磁碟、本機執行的軟體和其他設定)，您可以使用 [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines)來裝載您的應用程式和服務。 除了選擇您的虛擬機器大小和效能層級，您對於虛擬磁片儲存體的決策將會影響基礎結構即服務工作負載的相關效能和 Sla。 如需詳細資訊，請參閱 [Azure 磁片儲存體](/azure/virtual-machines/windows/managed-disks-overview) 檔。
 - **您的工作負載是否牽涉到高效能運算 (HPC) 功能？** [Azure Batch](/azure/batch/batch-technical-overview) 能以平台服務的形式為電腦資源提供工作排程及自動調整服務，讓您在雲端輕鬆執行大規模平行應用程式和 HPC 應用程式。
@@ -58,7 +58,7 @@ _圖1： Azure 計算服務決策樹。_
 
 下表說明一些常見的使用案例，以及用來處理這些需求的建議計算服務：
 
-| 狀況  | 計算服務 |
+| 狀況 | 計算服務 |
 | --- | --- |
 | 我需要透過選擇的設定，在幾秒內佈建 Linux 和 Windows 虛擬機器。 | [Azure 虛擬機器](https://azure.microsoft.com/services/virtual-machines) |
 | 我需要透過自動調整達到高可用性，以用幾分鐘的時間建立數千部 VM。 | [虛擬機器擴展集](https://azure.microsoft.com/services/virtual-machine-scale-sets) |

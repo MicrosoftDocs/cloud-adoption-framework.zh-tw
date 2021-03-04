@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 1b93b3c3e500c9ae7291c8d0632ea14f9344241b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: aed5cc0dadc284e35600a63156ea1658dc181f90
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024988"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786629"
 ---
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>要將移轉後的資源升階至生產環境需要什麼？
 
@@ -49,7 +49,7 @@ ms.locfileid: "97024988"
 
 工作負載將需要不同層級的詳細審查和升階程序。 不過，網路重新調整可作為所有升階發行通用的最後步驟。 當其他一切都準備就緒時，請更新 DNS 記錄或 IP 位址，以將流量路由傳送至已移轉的工作負載。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 工作負載升階後，表示發行已完成。 但在移轉的同時，淘汰的資產必須[解除委任](./decommission.md)以停止運作。
 

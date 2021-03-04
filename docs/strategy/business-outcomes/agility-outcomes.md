@@ -1,19 +1,19 @@
 ---
 title: 敏捷結果範例
 description: 使用適用于 Azure 的雲端採用架構，瞭解您公司的市場地位和具競爭力的環境。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 43a25396d4d866489b61df04784023f10dfef34f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c956801bd306a59f53868d1e4418c88fb0341cc5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012238"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787241"
 ---
 # <a name="examples-of-agility-outcomes"></a>敏捷結果範例
 
@@ -21,9 +21,11 @@ ms.locfileid: "97012238"
 
 傳統上，首席投資人員和 IT 小組被視為核心任務關鍵性程式中的穩定性來源。 這仍然成立。 少數企業在 IT 平臺不穩定時可以正常運作。 不過，在現今的商業環境中，預期會有更多的結果。 它可以藉由與企業合作來提供市場優勢，以擴充至簡單的成本中心以外的範圍。 許多首席投資人員和主管都假設穩定性只是它的基準。 針對這些領導人，業務靈活性是 IT 對企業的貢獻量。
 
+「 [運動」圖片和科學](https://customers.microsoft.com/story/845185-academy-motion-picture-arts-sciences-media-entertainment-azure) 的學術將其舊版 web 應用程式遷移至雲端，在豐富、具回應性和跨平臺體驗中提供新的串流應用程式給成員。
+
 ## <a name="why-is-agility-so-important"></a>為什麼敏捷的重要性很重要？
 
-市場變更的速度比以往更快。 從2015年起，只有57公司在過去的財富 500 61 年中仍 &mdash; 有88.6% 的周轉率。 這代表以先前從未聽過的費率進行市場變更。 IT 彈性或甚至是業務 agilities 不太可能會影響到在500年的組織清單，但是這些圖表可協助我們瞭解市場持續改變的步調。
+市場變更的速度比以往更快。 從2015年起，只有57公司在過去的《財富 500 61 年》中仍為88.6% 的周轉率。 這代表以先前從未聽過的費率進行市場變更。 IT 彈性或甚至是業務 agilities 不太可能會影響到在500年的組織清單，但是這些圖表可協助我們瞭解市場持續改變的步調。
 
 針對面臨新生威脅和創公司，企業靈活性可能是商務計畫成功或失敗之間的差異。 快速調整市場變更有助於將現有客戶進行環形防護，或向競爭者索取市場股票。 下一節中的靈活性相關結果有助於在轉換期間傳達雲端的價值。
 
@@ -31,15 +33,15 @@ ms.locfileid: "97012238"
 
 在具備雲端功能的創新工作期間，上市時間是 IT 能夠解決市場變化的重要措施。 在許多情況下，企業領導者可能會有建立應用程式或啟動新產品的現有預算。 明確傳達上市的權益，可以激勵該領導者將預算重新導向至其轉型旅程。
 
-- **範例1：** 美國公司的歐洲部門必須藉由保護支援 UK 作業的資料庫中的客戶資料，以符合 GDPR 規定。 其現有版本的 SQL Server 不支援必要的資料列層級安全性。 就地升級會造成過度干擾。 使用 Azure SQL Database 來複寫及升級資料庫時，客戶會在幾周內新增必要的合規性措施。
+- **範例1：** 美國公司的歐洲部門必須藉由保護支援 UK 作業的資料庫中的客戶資料，以符合 GDPR 規定。 其現有的 SQL Server 版本不支援必要的資料列層級安全性。 就地升級會造成過度干擾。 客戶可以使用 Azure SQL Database 來複寫及升級資料庫，並在幾周內新增必要的合規性措施。
 
-- **範例2：** 物流公司已發現市場的未開發部門，但需要新版本的旗艦版應用程式才能抓住這個市場佔有率。 他們的大型競爭者已經進行了相同的探索。 透過雲端應用程式創新工作的執行，該公司將客戶的對和 DevOps 導向的開發方法帶到更慢的傳統競爭者（ _x_ 個月）。 這是市場進入安全的客戶群。
+- **範例2：** 物流公司已發現市場的未開發部門，但需要新版本的旗艦版應用程式才能抓住這個市場佔有率。 他們的大型競爭者已經進行了相同的探索。 透過雲端應用程式創新工作的執行，該公司將客戶的對和 DevOps 導向的開發方法帶到更慢的傳統競爭者（ *x* 個月）。 這是市場進入安全的客戶群。
 
 <!-- docutune:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora 保健
 
-醫療保健系統將線上服務轉換成易記的數位體驗。 為了轉換其數位服務，Aurora Health 護理將其網站遷移至 Microsoft Azure 平臺，並採用持續創新的策略。
+醫療保健系統會將線上服務轉換成易記的數位體驗。 為了轉換其數位服務，Aurora Health 護理將其網站遷移至 Microsoft Azure 平臺，並採用持續創新的策略。
 
 <!-- cSpell:ignore Jamey Shiels -->
 
@@ -57,7 +59,7 @@ ms.locfileid: "97012238"
 
 - **範例：** 消費性包裝商品公司需要每年數百個資料庫叢集的建立和細分，以滿足業務的營運需求。 您可以快速布建內部部署虛擬主機，但復原虛擬資產的程式很慢，而且需要團隊花費很長的時間。 因此，舊版的內部部署環境會免于膨脹，而且幾乎不會跟上需求。 在雲端遷移之後，您可以更輕鬆地提供已編寫腳本的自我布建資源，並提供計費方法來計費。 這可讓企業在需要時儘快移動，但仍須負責其所需資源的成本。 在雲端中這麼做會將部署限制為僅限企業的預算。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [達成成果](./reach-outcomes.md)。
 

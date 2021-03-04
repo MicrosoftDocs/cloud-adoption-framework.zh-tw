@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9f86a97665d3a6fc4e14165b6f6eed4ac9ffa936
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 9a3304635985e9d4452d9f06d7f4863408fd3d87
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713227"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785800"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 <!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
@@ -24,9 +24,9 @@ ms.locfileid: "97713227"
 
 ## <a name="define-encryption-and-key-management"></a>定義加密與金鑰管理
 
-加密是在 Microsoft Azure 中確保資料隱私權、合規性及資料落地的重要步驟。 其也是許多企業最重要的安全性考量之一。 本節涵蓋與加密及金鑰管理有關的設計考慮和建議。
+加密是在 Microsoft Azure 中確保資料隱私權、合規性及資料的重要步驟。 其也是許多企業最重要的安全性考量之一。 本節涵蓋與加密及金鑰管理有關的設計考慮和建議。
 
-### <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 - 適用于 Azure Key Vault 的訂用帳戶和規模限制： Key Vault 具有金鑰和秘密的交易限制。 若要在特定期間內對每個保存庫進行交易節流，請參閱 [Azure 限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
@@ -38,30 +38,30 @@ ms.locfileid: "97713227"
 
 - 金鑰輪替和密碼到期。
 
-  - 使用 Key Vault 的 [憑證](/azure/key-vault/certificates/about-certificates)來購買憑證和簽署憑證。
+  - 使用 Key Vault 與 [憑證](/azure/key-vault/certificates/about-certificates)來採購和簽署憑證。
   - 警示/通知和自動憑證續約。
 
 - 金鑰、憑證和秘密的嚴重損壞修復需求。
 
-  Key Vault 的服務複寫和容錯移轉功能： [可用性和冗余](/azure/key-vault/general/disaster-recovery-guidance)。
+  Key Vault 服務複寫和容錯移轉功能： [可用性和冗余](/azure/key-vault/general/disaster-recovery-guidance)。
 
 - 監視金鑰、憑證和秘密使用方式。
 
   使用金鑰保存庫或 Azure 監視器 Log Analytics 工作區偵測未經授權的存取： [監視和警示](/azure/key-vault/general/alert)。
 
-- 委派 Key Vault 具現化和特殊許可權存取： [安全存取](/azure/key-vault/general/secure-your-key-vault)。
+- 委派的金鑰保存庫具現化和特殊許可權存取： [安全存取](/azure/key-vault/general/secure-your-key-vault)。
 
 - 針對原生加密機制（例如 Azure 儲存體加密）使用客戶管理金鑰的需求：
-  - [客戶管理的金鑰](/azure/storage/common/storage-encryption-keys-portal)。
+  - [客戶管理的金鑰](/azure/storage/common/customer-managed-keys-configure-key-vault)。
   - 虛擬機器 (Vm) 的完整磁片加密。
   - 傳輸中的資料加密。
   - 待用資料加密。
 
-### <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
-- 使用同盟 Azure Key Vault 模型來避免交易規模限制。
+- 使用同盟的 Azure Key Vault 模型來避免交易規模限制。
 
-- 布建已啟用虛刪除和清除原則的 Azure Key Vault，以允許已刪除物件的保留保護。
+- 布建 Azure Key Vault 並啟用虛刪除和清除原則，以允許已刪除物件的保留保護。
 
 - 藉由限制授權將金鑰、秘密和憑證永久刪除到特殊的自訂 Azure Active Directory (Azure AD) 角色，來遵循最低許可權的模型。
 
@@ -71,19 +71,19 @@ ms.locfileid: "97713227"
 
 - 啟用保存庫上的防火牆和虛擬網路服務端點，以控制金鑰保存庫的存取權。
 
-- 使用平臺中央 Azure 監視器 Log Analytics 工作區，以在每個 Key Vault 實例內審核金鑰、憑證和秘密的使用方式。
+- 使用平臺中央 Azure 監視器 Log Analytics 工作區，以在每個金鑰保存庫實例中審核金鑰、憑證和秘密的使用方式。
 
-- 委派 Key Vault 具現化和特殊許可權存取，並使用 Azure 原則來強制執行一致的合規性設定。
+- 委派金鑰保存庫具現化和特殊許可權存取，並使用 Azure 原則來強制執行一致的合規性設定。
 
 - 預設為主要加密功能的 Microsoft 管理金鑰，並在必要時使用客戶管理的金鑰。
 
-- 請勿針對應用程式金鑰或秘密使用 Key Vault 的集中式實例。
+- 請勿將金鑰保存庫的集中式實例用於應用程式金鑰或秘密。
 
 - 請勿在應用程式之間共用 Key Vault 實例，以避免跨環境共用秘密。
 
 ## <a name="plan-for-governance"></a>為控管做規劃
 
-治理提供多項機制和流程，以便維持控制 Azure 中的應用程式與資源。 Azure 原則在企業技術資產中確保安全性與合規性是不可或缺的。 它可以在 Azure 平臺服務中強制執行重要的管理和安全性慣例，並補充 Azure 角色型存取控制 (Azure RBAC) ，以控制授權使用者可執行檔動作。
+治理提供多項機制和流程，以便維持控制 Azure 中的應用程式與資源。 Azure 原則對於確保企業技術資產中的安全性和合規性而言是不可或缺的。 它可以在 Azure 平臺服務中強制執行重要的管理和安全性慣例，並補充 Azure 角色型存取控制 (Azure RBAC) ，以控制授權使用者可執行檔動作。
 
 **設計考慮：**
 
@@ -97,7 +97,7 @@ ms.locfileid: "97713227"
 
 - 瞭解 Azure 原則有限制，例如任何特定範圍的定義限制： [原則限制](/azure/azure-resource-manager/management/azure-subscription-service-limits)。
 
-- 瞭解法規合規性原則。 這些可能包括 HIPAA、PCI DSS，以及 SOC2 信任服務準則和準則。
+- 瞭解法規合規性原則。 這些可能包括 HIPAA、PCI DSS 或 SOC 2 信任服務原則。
 
 **設計建議：**
 
@@ -115,7 +115,7 @@ ms.locfileid: "97713227"
 
 - 在特定範圍指派內建原則參與者角色，以啟用應用層級的治理。
 
-- 限制在根管理群組範圍中進行的 Azure 原則指派數目，以避免在繼承的範圍內透過排除專案進行管理。
+- 限制在根管理群組範圍所做的 Azure 原則指派數目，以避免在繼承的範圍內透過排除專案進行管理。
 
 ## <a name="define-security-monitoring-and-an-audit-policy"></a>定義安全性監視和稽核原則
 
@@ -123,7 +123,7 @@ ms.locfileid: "97713227"
 
 **設計考慮：**
 
-- Audit data 的資料保留期限。 Azure AD Premium 報表有30天的保留期限。
+- Audit data 的資料保留期限。 Azure AD Premium 報告有30天的保留期限。
 
 - 記錄的長期封存，例如 Azure 活動記錄、VM 記錄和平臺即服務 (PaaS) 記錄檔。
 
@@ -135,7 +135,7 @@ ms.locfileid: "97713227"
 
 - 即時監視和警示的需求。
 
-- 安全性資訊與事件管理與 Azure 資訊安全中心和 Azure Sentinel 的整合。
+- 安全性資訊和事件管理與 Azure 資訊安全中心和 Azure Sentinel 的整合。
 
 - Vm 的弱點評定。
 
@@ -143,11 +143,11 @@ ms.locfileid: "97713227"
 
 - 使用 Azure AD 報告功能來產生存取控制審核報告。
 
-- 將 Azure 活動記錄匯出至適用于長期資料保留的 Azure 監視器記錄。 如有需要，請匯出至 Azure 儲存體的長期儲存期限超過兩年。
+- 將 Azure 活動記錄匯出至 Azure 監視器記錄，以長期保留資料。 如有需要，請匯出至 Azure 儲存體，以長期儲存超過兩年的時間。
 
-- 針對所有訂用帳戶啟用安全中心標準，並使用 Azure 原則以確保合規性。
+- 針對所有訂用帳戶啟用安全中心標準，並使用 Azure 原則確保合規性。
 
-- 透過 Azure 監視器記錄和 Azure 資訊安全中心，監視基礎作業系統修補漂移。
+- 透過 Azure 監視器記錄和 Azure 安全性中心來監視基礎作業系統修補漂移。
 
 - 使用 Azure 原則透過 VM 擴充功能自動部署軟體設定，並強制執行符合規範的基準 VM 設定。
 
@@ -169,7 +169,7 @@ ms.locfileid: "97713227"
 
 - 在資料管理和控制平面作業方面，都能以一致的方式在 Azure 服務之間保持安全。
 
-- 主要平臺元件的多租使用者。 這包括 Hyper-v、Hsm 底層 Key Vault 和資料庫引擎。
+- 主要平臺元件的多租使用者。 這包括 Hyper-v、基礎金鑰保存庫和資料庫引擎的 Hsm。
 
 **設計建議：**
 
@@ -185,7 +185,7 @@ ms.locfileid: "97713227"
 
 - 在適當的情況下，實以零信任方式存取 Azure 平臺。
 
-<!-- docutune:ignore "and conditional access" -->
+<!-- docutune:ignore "and conditional access" "patch and update management" -->
 
 ## <a name="azure-security-benchmark"></a>Azure 安全性效能評定
 
@@ -207,15 +207,15 @@ Azure 安全性基準測試檔會指定安全性控制和服務建議。
 |                              |                                                                       | Azure 服務可以直接與服務端點互動嗎？                                                                              |
 |                              |                                                                       | 它是否支援 Azure Private Link 端點？                                                                                                           |
 |                              |                                                                       | 可以在虛擬網路內部署嗎？                                                                                                            |
-|                              | 預防資料外洩                                          | PaaS 服務在 Azure ExpressRoute Microsoft 對等互連中是否有個別的邊界閘道通訊協定群體？ ExpressRoute 是否會公開服務的路由篩選？ |
-|                              |                                                                       | 服務是否支援端點 Private Link？                                                                                                       |
+|                              | 預防資料外洩                                          | PaaS 服務在 Azure ExpressRoute Microsoft 對等互連中是否有 (BGP) 社區的個別邊界閘道協定？ ExpressRoute 是否會公開服務的路由篩選？ |
+|                              |                                                                       | 服務是否支援私人連結端點？                                                                                                       |
 |                              | 針對管理和資料平面作業強制執行網路流量流程 | 是否可以檢查輸入/離開服務的流量？ 是否可以使用使用者定義的路由來強制 tunnelled 流量？                                    |
 |                              |                                                                       | 管理作業會使用 Azure 共用的公用 IP 範圍嗎？                                                                                 |
 |                              |                                                                       | 管理流量是透過主機上公開的連結本機端點來導向？                                                                |
 |                              | 待用資料加密                                               | 預設會套用加密嗎？                                                                                                            |
 |                              |                                                                       | 可以停用加密嗎？                                                                                                                  |
 |                              |                                                                       | 使用 Microsoft 管理的金鑰或客戶管理的金鑰來執行加密嗎？                                                   |
-|                              | 傳輸中資料加密                                            | 以通訊協定層級加密的服務流量 (安全通訊端層/傳輸層安全性) ？                                                                           |
+|                              | 傳輸中資料加密                                            | 傳送至服務的流量是以通訊協定層級加密 (SSL/TLS) ？                                                                           |
 |                              |                                                                       | 是否有任何 HTTP 端點，是否可以停用？                                                                                        |
 |                              |                                                                       | 基礎服務通訊也會加密嗎？                                                                                          |
 |                              |                                                                       | 使用 Microsoft 管理的金鑰或客戶管理的金鑰來執行加密嗎？  (支援自備加密嗎？ )                                                                                |
@@ -223,21 +223,21 @@ Azure 安全性基準測試檔會指定安全性控制和服務建議。
 |                              |                                                                       | 軟體部署的執行與管理方式為何？                                                                                            |
 |                              |                                                                       | 是否可以強制執行原則來控制來源或程式碼完整性？                                                                                   |
 |                              |                                                                       | 如果軟體是可部署的，則可使用反惡意程式碼功能、弱點管理和安全性監視工具嗎？                                  |
-|                              |                                                                       | 服務是否會以原生方式提供這類功能，例如 Azure Kubernetes Service？                                                                              |
-| 身分識別和存取管理 | 驗證和存取控制                                       | 受 Azure AD 管理的所有控制平面作業？ 是否有嵌套的控制項平面，例如 Azure Kubernetes Service？                             |
+|                              |                                                                       | 服務是否會以原生方式提供這類功能，例如使用 Azure Kubernetes Service？                                                                              |
+| 身分識別和存取管理 | 驗證和存取控制                                       | 所有控制平面作業是否由 Azure AD 控管？ 是否有嵌套的控制項平面，例如使用 Azure Kubernetes Service？                             |
 |                              |                                                                       | 有哪些方法可提供資料平面的存取權？                                                                                      |
 |                              |                                                                       | 資料平面是否與 Azure AD 整合？                                                                                                      |
 |                              |                                                                       | Azure 對 Azure (服務對服務) 驗證是否使用 MSI/服務主體？                                                         |
-|                              |                                                                       | Azure 對 IaaS (透過 Azure AD 的服務對虛擬網路) 驗證嗎？                                                                                   |
+|                              |                                                                       | Azure 對 IaaS (透過 Azure AD 進行的服務對虛擬網路) 驗證嗎？                                                                                   |
 |                              |                                                                       | 如何管理任何適用的金鑰或共用存取簽章？                                                                                                     |
 |                              |                                                                       | 如何撤銷存取權？                                                                                                                   |
 |                              | 責任隔離                                                 | 服務是否會在 Azure AD 內分開控制平面和資料平面作業？                                                                |
 |                              | 多重要素驗證和條件式存取                                            | 是否對使用者強制執行多重要素驗證以進行服務互動？                                                                                            |
 | 控管                   | 資料匯出和匯入                                                  | 服務是否可讓您安全地匯入和匯出資料？                                                                     |
 |                              | 資料隱私權和使用方式                                                  | Microsoft 工程師可以存取資料嗎？                                                                                                     |
-|                              |                                                                       | 是否有任何 Microsoft 支援服務與服務的互動進行審核？                                                                               |
+|                              |                                                                       | 是否有任何 Microsoft 支援服務與服務互動？                                                                               |
 |                              | 資料存留處                                                        | 資料是否包含在服務部署區域中？                                                                                          |
-| 作業                   | 監視                                                            | 服務是否與 Azure 監視器整合？                                                                                               |
+| 作業                   | 監視                                                            | 服務會與 Azure 監視器整合嗎？                                                                                               |
 |                              | 備份管理                                                     | 需要備份哪些工作負載資料？                                                                                                       |
 |                              |                                                                       | 如何捕獲備份？                                                                                                                    |
 |                              |                                                                       | 備份的執行頻率為何？                                                                                                         |

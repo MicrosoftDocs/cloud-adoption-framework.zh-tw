@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 91cb4c04b21cc0965e1fc2b679dae67ebda95855
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 62305dd9f0fa677c994b4c117254303271b4c52c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025957"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786867"
 ---
 <!-- cSpell:ignore ITIL -->
 
@@ -68,7 +68,7 @@ CAB 通常包含來自多個 IT 和業務小組的專家，可為所有 IT 相�
 
 可能的話，應在評定過程中偵測並記載技術變更。 不論核准程序為何，雲端採用小組都應該及早與核准者接洽。 變更核准很快越快開始，核准程序就不太可能阻止移轉活動。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在這些最佳做法的協助下，您可更輕鬆地將適當的低風險核准整合到移轉工作中。 核准工作負載變更之後，雲端採用小組便準備好遷移工作負載。
 

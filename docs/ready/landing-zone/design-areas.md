@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 88eb52e410c9f7a1caf2c3c8f4bfc45bbb743ce0
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 81e8660fbb041abbca8b1bbb5025e597e407fd89
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632523"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785031"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "100632523"
 
 無論部署選項為何，您都應該仔細考慮每個設計區域。 您的決策會影響每個登陸區域相依的平臺基礎。
 
-| 設計區域 | 目標  | 相關方法 |
+| 設計區域 | 目標 | 相關方法 |
 |---|---|---|
 | 企業註冊 | 針對具有 Azure 承諾用量的企業客戶，適當的租使用者建立和註冊是一個重要的初期步驟。 | 就緒 |
 | 身分識別 | 身分識別和存取管理是公用雲端中的主要安全性界限。 它是任何安全且完全符合規範之架構的基礎。 | 就緒 |

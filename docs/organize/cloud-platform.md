@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 87326ff3f61ae0d5743beaaf25a6f4b3cf1361c0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 49f9dbc31a35c247b8c908df7b7d4c563019d690
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026484"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786546"
 ---
 # <a name="cloud-platform-functions"></a>雲端平台功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "97026484"
 
 - [雲端架構的基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations)： Pluralsight 的課程，可協助架構正確的基礎解決方案。
 - [Microsoft Azure 架構](https://www.pluralsight.com/courses/cloud-architecture-foundations)：在 Azure 架構中基礎結構設計師的 Pluralsight 課程。
-- [Azure 網路服務](/learn/modules/intro-to-azure-networking)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
+- [Azure 網路服務](/learn/modules/azure-networking-fundamentals/)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
 
 **請檢閱下列各項：**
 
@@ -73,7 +73,7 @@ ms.locfileid: "97026484"
 - 建立和驗證平臺架構的部署。
 - 查看新平臺需求來源的發行計畫。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 隨著您的雲端平臺變得更好，調整 [雲端自動化功能](./cloud-automation.md) 可加速採用。 它也可以協助建立最佳做法，同時降低業務和技術的風險。
 

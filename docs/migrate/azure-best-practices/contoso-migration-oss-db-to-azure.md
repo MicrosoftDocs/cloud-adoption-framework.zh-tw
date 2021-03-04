@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 1c301eef0bfe30309cb847c1a1b54216f4326f62
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 24e616badb72796d474ab6f8cd6fb1b58f786d81
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015026"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786969"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>將開放原始碼資料庫遷移到 Azure
 
@@ -28,7 +28,7 @@ Contoso 在維護存在於其網路上的開放原始碼資料庫工作負載的
 IT 領導小組與商務合作夥伴密切合作，以瞭解商務和技術需求。 他們想要：
 
 - **提高安全性。** Contoso 必須能夠以更及時且有效率的方式監視和保護所有資料資源。 公司也想要取得更集中的報表系統，並設定資料庫存取模式。
-- **將計算資源優化。** Contoso 已部署大型的內部部署伺服器基礎結構。 公司有數個 SQL Server 實例取用，但未真正使用以有效率方式配置的基礎 CPU、記憶體和磁片。
+- **將計算資源優化。** Contoso 已部署大型的內部部署伺服器基礎結構。 公司有數個使用的 SQL Server 實例，但實際上並不會使用以有效率的方式配置的基礎 CPU、記憶體和磁片。
 - **提高效率。** Contoso 必須移除不必要的程式，並簡化開發人員和使用者的流程。 企業需要快速且不浪費時間或金錢，以更快的速度提供客戶的需求。 在遷移之後，資料庫管理應該減少或最小化。
 - **增加靈活性。** Contoso IT 必須能夠更快因應企業的需求。 它必須比 marketplace 中的變更更快，以實現全球經濟的成功。 它不得取得或成為企業封鎖程式。
 - **規模。** 隨著企業順利成長，Contoso IT 必須提供以相同步調成長的系統。
@@ -50,10 +50,10 @@ Contoso 雲端小組已針對各種不同的遷移，將目標釘選在一起。
 
 ## <a name="solution-design"></a>解決方案設計
 
-Contoso 已經使用[Azure Migrate](/azure/migrate/migrate-services-overview)，執行了其數位資產的[遷移評](../..//plan/contoso-migration-assessment.md)量。
+Contoso 已經使用[Azure 遷移](/azure/migrate/migrate-services-overview)來執行其數位資產的[遷移評](../..//plan/contoso-migration-assessment.md)量。
 
 ![圖表顯示遷移程式。 ](./media/contoso-migration-oss-db-to-azure/migration-process.png)
-_圖1：遷移程式。_
+*圖1：遷移程式。*
 
 ### <a name="solution-review"></a>解決方案檢閱
 
@@ -61,7 +61,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | Azure 會在資料庫工作負載中提供單一的透明窗格。 <br><br> 系統會透過 Azure 成本管理 + 計費來監視成本。 <br><br> 您可以使用 Azure 計費 API 輕鬆地執行商務計費計費。 <br><br> 伺服器和軟體維護只會縮減為以 IaaS 為基礎的環境。 |
+| **優點** | Azure 會在資料庫工作負載中提供單一的透明窗格。 <br><br> 系統會透過 Azure 成本管理 + 計費來監視成本。 <br><br> 使用 Azure 計費 Api，即可輕鬆地執行商務帳單計費。 <br><br> 伺服器和軟體維護只會縮減為以 IaaS 為基礎的環境。 |
 | **缺點** | 由於 IaaS Vm 的需求，所以仍需要在這些電腦上管理軟體。 |
 
 ### <a name="budget-and-management"></a>預算和管理
@@ -92,7 +92,7 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 #### <a name="step-1-discovery"></a>步驟1：探索
 
-Contoso 使用 Azure Migrate 來呈現 Contoso 環境之間的相依性。 Azure Migrate 自動探索 Windows 和 Linux 系統上的應用程式元件，並對應服務之間的通訊。 Azure Migrate 也顯示 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連線。 Contoso 只需要安裝 [Microsoft Monitoring Agent](/azure/azure-monitor/platform/agent-windows) 和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid#install-the-dependency-agent-on-windows)。
+Contoso 使用 Azure 遷移來呈現 Contoso 環境之間的相依性。 Azure 會在 Windows 和 Linux 系統上自動探索探索到的應用程式元件，並對應服務之間的通訊。 Azure 遷移也顯示 Contoso 伺服器、進程、輸入和輸出連線延遲，以及 TCP 連線架構間的埠之間的連線。 Contoso 只需要安裝 [Microsoft Monitoring agent](/azure/azure-monitor/agents/agent-windows) 和 [microsoft Dependency agent](/azure/azure-monitor/vm/vminsights-enable-hybrid#install-the-dependency-agent-on-windows)。
 
 Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些實例中，大約40% 可移至 PaaS 服務。 在剩餘的60% 中，必須將其移至執行個別資料庫軟體的 VM，以 IaaS 為基礎的方法。
 
@@ -110,9 +110,9 @@ Contoso 已識別出超過300個必須遷移的資料庫實例。 在這些實�
 
 | 資料庫類型 | 詳細資料 | 目標 | 移轉指南 |
 | --- | --- | --- | --- |
-| **MySQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MySQL 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-mysql-azure-mysql-online)
-| **PostgreSQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 PostgreSQL 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| **MariaDB** | 所有支援的版本會在遷移前升級為支援的版本 | 適用於 MariaDB 的 Azure 資料庫 (PaaS)  | [指南](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
+| **MySQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用于 MySQL 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-mysql-azure-mysql-online)
+| **PostgreSQL** | 所有支援的版本會在遷移前升級為支援的版本 | 適用于于 postgresql 的 Azure 資料庫 (PaaS)  | [指南](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| **MariaDB** | 所有支援的版本會在遷移前升級為支援的版本 | 適用于適用于 mariadb 的 Azure 資料庫 (PaaS)  | [指南](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
 
 #### <a name="step-4-migration-planning"></a>步驟4：遷移規劃
 
@@ -146,10 +146,10 @@ Contoso 識別出所有資料庫工作負載的封存視窗。 當視窗過期�
 
 Contoso 必須：
 
-- 確定其新的 Azure 資料庫工作負載是安全的。 如需詳細資訊，請參閱 [Azure SQL Database 和 SQL 受控執行個體安全性功能](/azure/azure-sql/database/security-overview)。
+- 確定其新的 Azure 資料庫工作負載是安全的。 如需詳細資訊，請參閱 [AZURE Sql Database 和 SQL 受控實例安全性功能](/azure/azure-sql/database/security-overview)。
 - 檢查防火牆和虛擬網路設定。
-- 設定 Azure Private Link，以便在 Azure 和內部部署網路內保存所有資料庫流量。
-- 啟用 Azure 進階威脅防護。
+- 設定 Azure Private Link，以便將所有資料庫流量保留在 Azure 和內部部署網路內。
+- 啟用 Microsoft Defender 的身分識別。
 
 #### <a name="backups"></a>備份
 

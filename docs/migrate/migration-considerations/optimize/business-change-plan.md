@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 40c3b2cce9a5dfca3f2413856b3b8125d5b5a0c7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d109ec2fc98b8cdfddbcb5b9dc738b9eb1274945
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025090"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785507"
 ---
 <!-- cSpell:ignore Eason -->
 <!-- docutune:casing "Eason Matrix" -->
@@ -26,10 +26,10 @@ ms.locfileid: "97025090"
 
 使用者採用方案著重在使用者會如何採用新技術或指定技術的變更。 此方法已經過時間測試，可用於對使用者介紹新工具。 在典型的使用者採用方案中，IT 著重在與業務環境所引進的技術變更相關聯的安裝、設定、維護和訓練上。
 
-雖然方法可能不一，但大部分的使用者採用方案都有普遍的主題。 這些主題通常會以可配合增量改變的風險控制和促進方法為基礎。 下圖所示的 Eason 矩陣會呈現各種採用類型的主題背後有何驅動因素。
+雖然方法可能不一，但大部分的使用者採用方案都有普遍的主題。 這些主題通常會以可配合增量改變的風險控制和促進方法為基礎。 下圖所示的 Eason 矩陣，代表這些主題在一系列採用型別背後的驅動程式。
 
 ![使用者採用考慮圖表的 Eason 矩陣 ](../../../_images/migrate/eason-matrix.jpg)
- _：使用者採用類型的 Eason 矩陣。_
+ *：使用者採用類型的 Eason 矩陣。*
 
 這些主題通常會以「引進新解決方案給使用者應主要著重於變更的風險控制和促進上」的假設作為基礎。 此外，IT 主要著重於技術變更的風險和該變更的促進上。
 
@@ -60,7 +60,7 @@ ms.locfileid: "97025090"
 
 業務變更方案會因公司而異。 這些問題的目標是要協助讓業務更好地整合到與每個發行相關聯的變更。 不要將每個發行視為要採用的技術變更，而是視為業務變更方案，業務成果就會變得更唾手可得。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在記載並規劃業務變更後，就可以開始進行[業務測試](./business-test.md)。
 
@@ -71,6 +71,6 @@ ms.locfileid: "97025090"
 
 <!-- docutune:disable -->
 
-- Eason，K. (1988) _資訊技術和組織變更_，紐約： Taylor 和 Francis。
+- Eason，K. (1988) *資訊技術和組織變更*，紐約： Taylor 和 Francis。
 
 <!-- docutune:enable -->

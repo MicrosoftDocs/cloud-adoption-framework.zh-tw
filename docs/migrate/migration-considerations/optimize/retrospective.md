@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: d9f4e459e89dff483a30df3e2440f8294f00acae
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: dc836eda778fb98b20e8b7de59e0486e3086df0a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024954"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784776"
 ---
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>回顧如何協助建立成長型思維？
 

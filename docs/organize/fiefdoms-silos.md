@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: dbbd0512d4c3b9b640f265937f1b94c5de47fdc1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 641a1e6da7b0015d978b6e18c53dc415e6806078
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026348"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786221"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織反模式：定址接收器和領域
 
@@ -133,7 +133,7 @@ IT 領域可能是有問題的領導力問題的跡象。 為了克服 IT fiefdo
 
 可能需要與商務專案關係人、業務動機和業務成果保持一致，才能推動必要的變更。 與 [雲端策略小組](./cloud-strategy.md)、 [雲端卓越中心](./cloud-center-of-excellence.md)和 [雲端治理小組](./cloud-governance.md) 合作，可以提供可防禦位置所需的資料點。 必要時，這些小組應參與群組擴大，以解決因 IT 領導力而無法解決的問題。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 中斷組織反模式是小組的工作。 若要採取此指導方針，請參閱組織準備就緒的簡介，以找出正確的團隊結構和參與者：
 

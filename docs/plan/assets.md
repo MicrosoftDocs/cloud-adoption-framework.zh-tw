@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 7210c175ad5c3d77c0f42142b928a318bbc54a0d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7668985c09cb79668cf0b6dbcbba2e2f6f9e1c4c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024529"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786527"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>將資產對齊優先順序的工作負載
 
@@ -34,19 +34,19 @@ ms.locfileid: "97024529"
 
 **現代化：** 當工作負載的目標是將應用程式或其他資產現代化時，這些資料點仍是複雜性的複雜量值。 不過，將現代化商機的輸入新增至工作負載檔可能是明智的做法。
 
-**創新：** 當資料或商務邏輯在雲端採用工作期間進行了材質變更時，就會將其視為 _創新_ 的轉換類型。 當您要建立新的資料或新的商務邏輯時，也是如此。 在任何創新案例中，資產的遷移可能會代表所需的最少投入量。 在這些案例中，小組應該設計一組技術資料輸入來測量相對複雜度。
+**創新：** 當資料或商務邏輯在雲端採用工作期間進行了材質變更時，就會將其視為 *創新* 的轉換類型。 當您要建立新的資料或新的商務邏輯時，也是如此。 在任何創新案例中，資產的遷移可能會代表所需的最少投入量。 在這些案例中，小組應該設計一組技術資料輸入來測量相對複雜度。
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Azure Migrate 提供一組群組函式，可加速應用程式、Vm、資料來源和相依性的匯總。 在概念上定義工作負載之後，您可以使用它們作為依據相依性對應來群組資產的基礎。
+Azure 遷移提供一組群組功能，可加速應用程式、Vm、資料來源和相依性的匯總。 在概念上定義工作負載之後，您可以使用它們作為依據相依性對應來群組資產的基礎。
 
-Azure Migrate 檔提供 [如何根據相依性將機器分組](/azure/migrate/how-to-create-group-machine-dependencies)的指引。
+Azure 遷移檔提供 [如何根據相依性將機器分組](/azure/migrate/how-to-create-group-machine-dependencies)的指引。
 
 ## <a name="configuration-management-database"></a>設定-管理資料庫
 
 某些組織會在其現有的作業管理工具中， (CMDB) 妥善維護的設定管理資料庫。 他們也可以使用 CMDB 來提供稍早所討論的輸入資料點。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 根據資產對齊和工作負載定義來[檢查合理化決策](./review-rationalization.md)。
 

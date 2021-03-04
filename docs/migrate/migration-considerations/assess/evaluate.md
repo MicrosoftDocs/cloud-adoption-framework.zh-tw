@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c52a46a16f757d20d53d4f3920f123ffe126f288
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ed4587e1028f9adf21ca2ee30365de3ae1114911
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025226"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786799"
 ---
 # <a name="evaluate-workload-readiness"></a>評估工作負載整備程度
 
@@ -28,15 +28,15 @@ ms.locfileid: "97025226"
 ## <a name="common-infrastructure-evaluation-activities"></a>一般基礎結構評估活動
 
 - VMware 需求： [檢查 vmware 的 Azure Site Recovery 需求](/azure/site-recovery/vmware-physical-azure-support-matrix)。
-- Hyper-v 需求：請 [參閱 hyper-v 的 Azure Site Recovery 需求](/azure/site-recovery/hyper-v-azure-support-matrix)。
+- Hyper-v 需求： [檢查 hyper-v 的 Azure Site Recovery 需求](/azure/site-recovery/hyper-v-azure-support-matrix)。
 
 務必記載主機組態、複寫的 VM 組態、儲存體需求或網路組態中的任何差異。
 
 ## <a name="common-database-evaluation-activities"></a>一般資料庫評估活動
 
 - 記錄復原點目標 (Rpo) 和復原時間目標 (目前資料庫部署的 Rto) 。 這些會在 [架構活動](./architect.md) 期間用來協助進行決策。
-- 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱 [SQL Server 高可用性解決方案指南](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)。
-- 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應到相容的 Azure PaaS 解決方案，[例如 Azure Cosmos DB](/azure/cosmos-db)、 [Azure SQL Database](/azure/sql-database) [適用於 MySQL 的 Azure 資料庫](/azure/mysql)、[適用於 PostgreSQL 的 Azure 資料庫](/azure/postgresql)或[適用於 MariaDB 的 Azure 資料庫](/azure/mariadb)。
+- 記載高可用性設定的任何需求。 如需瞭解 SQL Server 需求的協助，請參閱 [Sql server 高可用性解決方案指南](/sql/database-engine/sql-server-business-continuity-dr)。
+- 評估 PaaS 相容性。 [Azure 資料移轉指南](https://datamigration.microsoft.com)會將內部部署資料庫對應到相容的 azure PaaS 解決方案，[例如 azure Cosmos DB](/azure/cosmos-db/)、適用于 MySQL 的[azure SQL Database](/azure/azure-sql/) [azure 資料庫](/azure/mysql/)、 [azure database for 于 postgresql](/azure/postgresql/)或[azure database for 適用于 mariadb](/azure/mariadb/)。
 - 當 PaaS 相容性是不需要任何補救的選項時，請洽詢負責[架構活動](./architect.md)的小組。 PaaS 移轉可以大幅節省時間，並降低大部分雲端解決方案的擁有權總成本 (TCO)。
 - 當 PaaS 相容性是需要補救的選項時，請洽詢負責[架構活動](./architect.md)和[補救活動](../migrate/remediate.md)的小組。 在許多情況下，資料庫解決方案的 PaaS 移轉優點可能會超越補救時間的增加。
 - 記載要遷移的每個資料庫的大小和變動率。
@@ -56,7 +56,7 @@ ms.locfileid: "97025226"
 > [!NOTE]
 > 總儲存體會在初始複寫期間直接影響頻寬需求。 不過，儲存體漂移會從複寫點繼續到發行為止。 這表示漂移對可用的頻寬有累積的影響。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 完成系統評估之後，輸出會饋送新[雲端架構](./architect.md)的開發。
 

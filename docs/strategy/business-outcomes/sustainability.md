@@ -1,19 +1,19 @@
 ---
 title: 商務的持續性結果和優點
 description: 瞭解雲端採用架構和雲端運算如何支援您減少碳排放量、更有效率地使用資源，並減少您的環境使用量。
-author: wayneme75
+author: mpvenables
 ms.author: brblanch
-ms.date: 10/21/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: think-tank
-ms.openlocfilehash: c4dc771a9e5d72b2c552f93c08b7cb70ac205f95
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.custom: internal
+ms.openlocfilehash: 4b9b249e305a38987fac2450897c888d31b21e05
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492709"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784572"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
@@ -23,10 +23,17 @@ ms.locfileid: "100492709"
 雖然傳統上是以財務和效率計量來測量雲端的影響和優點，但客戶更常尋求瞭解雲端如何協助他們達成持續性和環境目標。 雲端運算可支援您的組織減少碳排放量、更有效率地使用資源，並減少您的環境耗用量。
 
 觀看下列影片以深入瞭解持續性，以及雲端遷移如何開啟適用于全球且適合您企業的持續性解決方案。
+<!-- markdownlint-disable MD034 -->
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWx4po]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWx4po]
+
+<!-- markdownlint-enable MD034 -->
 
 Microsoft 已領導許多這些領域。 公司自2012起一直都是以碳中立的方式運作，並已將2030的承諾設為負數。 [雲端運算的碳優勢](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)、與 WSP 合作的 Microsoft cloud 研究可支援研究如何將內部部署資料中心移至 microsoft 雲端，以大幅減少碳足跡。
+
+<!-- docutune:casing "Bühler Insights" -->
+
+[Bühler 群組的](https://customers.microsoft.com/story/730776-buhler-group-consumer-goods-azure-iot-germany)IoT 平臺（稱為 Bühler 深入解析，並由 Azure IoT 中樞提供）會產生重要的資料，讓客戶可以監視電腦效能，並為每個產品批次產生準確的記錄，以協助食物生產者將安全、持續性和透明度優化到供應鏈上。
 
 ## <a name="the-microsoft-sustainability-journey"></a>Microsoft 持續性旅程
 
@@ -37,7 +44,7 @@ Microsoft 已領導許多這些領域。 公司自2012起一直都是以碳中�
 - **水：** 減少使用強度和投資管理水的技術。
 - **浪費：** 練習負責任的來源、回收和處置;使用軟體和技術讓大樓更有效率。
 
-深入瞭解 Microsoft 對全球 [規模挑戰的承諾](https://www.microsoft.com/sustainability/approach) 如何協助我們規劃和達成持續性目標。
+深入瞭解 Microsoft 對全球 [規模挑戰的承諾](https://www.microsoft.com/sustainability/approach) ，如何協助我們規劃和達成持續性目標。
 
 ## <a name="examples-of-sustainability-outcomes"></a>持續性結果的範例
 
@@ -57,7 +64,7 @@ Bee'ah 是中東的持續性先鋒，可相信技術和持續性為未來建立�
 
 **步驟2：** 評估您的廠商、合作夥伴和供應商是否正在採取步驟來減少其排放量，以及這些步驟是否符合您的情況。
 
-**步驟3：** 為團隊創造獎勵，以減少碳排放量。 [Microsoft 碳費：理論與實務](https://download.microsoft.com/documents/en-us/csr/environment/microsoft_carbon_fee_guide.pdf) 可協助您的組織推動小組之間的一致和責任。
+**步驟3：** 為團隊創造獎勵，以減少碳排放量。 [Microsoft 碳費：理論與實務](https://download.microsoft.com/documents/en-us/csr/environment/microsoft_carbon_fee_guide.pdf)指南可以協助您的組織推動小組之間的一致和責任。
 
 **步驟4：** 找出我們公司的團隊來登錄其支援，並為改善的區域產生想法。 打造創新文化，其中的個人是具有擁有權的參與者。
 

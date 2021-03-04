@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: bb5643f36ec3ae3b8b22ca41fd13d8cae6a658cf
-ms.sourcegitcommit: 30837e99289338b0cc0f9efb2a5e07aca052e2e8
-ms.translationtype: HT
+ms.openlocfilehash: 80dc2b74e6abc3593c64985a8e853fb852a8ffd3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560726"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784946"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -34,8 +34,8 @@ Azure 和 Azure Migrate 都因能夠裝載 Microsoft 技術而聞名。 但您�
 | **應用程式** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
 | **Data** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [開放原始碼資料庫](../migrate/azure-best-practices/sql-migration.md) | [分析](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) |
 | **混合式** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
-| **技術平台** | SAP (傳統 & HANA) | Kubernetes | [大型主機](../infrastructure/mainframe-migration/index.md) | 
-| **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [多租用戶環境](/azure/lighthouse/how-to/migration-at-scale?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) | NetApp |
+| **技術平台** | SAP (傳統 & HANA) | Kubernetes | [大型主機](../infrastructure/mainframe-migration/index.md) |
+| **其他案例** | [保護工作負載](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [多租用戶環境](/azure/lighthouse/how-to/migration-at-scale?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json) | NetApp |
 
 ## <a name="migrate-methodology"></a>遷移方法
 

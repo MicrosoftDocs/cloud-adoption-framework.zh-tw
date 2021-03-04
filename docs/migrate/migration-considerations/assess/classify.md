@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c41ab530f82af020c5142d40d09e65f45340856d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 594c85a000f9b8ff8a78fd88d3b26869b2a57659
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025277"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786289"
 ---
 # <a name="workload-classification-before-migration"></a>遷移之前的工作負載分類
 
@@ -45,7 +45,7 @@ ms.locfileid: "97025277"
 - 對訂用帳戶設計、管理群組階層或登陸區域需求的任何影響重要性。
 - 記錄重要性的任何需求，其中可能包括特定的流量或使用方式報表、財務分析或其他工具。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 一旦適當分類工作負載，就可以更輕鬆地 [調整業務優先順序](./business-priorities.md)。
 

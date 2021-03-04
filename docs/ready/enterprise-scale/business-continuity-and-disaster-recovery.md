@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: b09e5ca4d5bbe6e2080cc90f5c017858b0fe5fce
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: ff64f7bb30f6fb986c4d74dd64923c85b67af4db
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447297"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786442"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>企業級商務持續性和災害復原 \(部分機器翻譯\)
 
 您的組織或企業需要設計適合的平台層級功能，讓應用程式工作負載可以取用這些功能來滿足其特定需求。 具體來說，這些應用程式工作負載的需求，與復原時間目標 (RTO) 和復原點目標 (RPO) 有關。 請確定您已 (DR) 需求來取得嚴重損壞修復，以便為這些工作負載設計適當的功能。
 
-## <a name="design-considerations"></a>設計考量
+**設計考慮：**
 
 請考慮下列因素：
 
@@ -35,15 +35,15 @@ ms.locfileid: "95447297"
 
   - 資料共用和區域之間的相依性。
 
-  - 相較于可用性設定組，可用性區域對更新網域的影響，以及可以同時進行維護的工作負載百分比。
+  - 更新網域上的可用性區域與可用性設定組的影響，以及可以同時進行維護的工作負載百分比。
 
-  - 支援特定虛擬機器 (VM) 庫存單位可用性區域。
+  - 支援特定虛擬機器 (VM) 庫存單位與可用性區域。
 
-  - 如果使用 Microsoft Azure ultra 磁片儲存體，就需要使用可用性區域。
+  - 如果使用 Microsoft Azure ultra 磁片儲存體，則需要使用可用性區域。
 
 - 應用程式和資料的一致備份。
 
-  - VM 快照集，以及使用 Azure 備份和復原服務保存庫。
+  - VM 快照集，並使用 Azure 備份和復原服務保存庫。
 
   - 訂用帳戶限制，限制復原服務保存庫的數目和每個保存庫的大小。
 
@@ -61,19 +61,19 @@ ms.locfileid: "95447297"
 
   - 維護的工程 DevOps 功能。
 
-- 應用程式金鑰、憑證和秘密的 Azure Key Vault DR。
+- 適用于應用程式金鑰、憑證和秘密的 Azure Key Vault DR。
 
-## <a name="design-recommendations"></a>設計建議
+**設計建議：**
 
 以下是您設計的最佳作法：
 
-- 採用適用于 Azure 至 Azure 虛擬機器嚴重損壞修復案例的 Azure Site Recovery。 這可讓您跨區域複寫工作負載。
+- 使用 azure Site Recovery 進行 Azure 至 Azure 虛擬機器的嚴重損壞修復案例。 這可讓您跨區域複寫工作負載。
 
   Site Recovery 為 VM 工作負載提供內建的平臺功能，以符合低 RPO/RTO 需求（透過即時複寫和復原自動化）。 此外，此服務也可讓您執行復原演練，而不會影響生產環境中的工作負載。 您可以使用 Azure 原則來啟用複寫，也可以審核 Vm 的保護。
 
 - 使用原生 PaaS 服務的嚴重損壞修復功能。
 
-  內建功能提供簡單的解決方案，讓您輕鬆地將複寫和容錯移轉到工作負載架構中，同時簡化設計和部署自動化。 已為其使用的服務定義標準的組織也可以透過 Azure 原則來審核和強制執行服務設定。
+  內建功能提供簡單的解決方案，讓您輕鬆地將複寫和容錯移轉到工作負載架構中，同時簡化設計和部署自動化。 針對其使用的服務定義標準的組織也可以透過 Azure 原則來審核和強制執行服務設定。
 
 - 使用 Azure 原生備份功能。
 

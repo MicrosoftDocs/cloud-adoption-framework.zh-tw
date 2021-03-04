@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 1a3073ff71cc3dfee726249d7ec5dbcdb710abac
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 76c5a449ad0153acb46d8d99254761cc0bc2767d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013598"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785371"
 ---
 # <a name="review-your-data-options"></a>檢查您的資料選項
 
@@ -39,7 +39,7 @@ ms.locfileid: "97013598"
 - **您的工作負載會使用文件或圖形資料嗎？** [Azure Cosmos DB](/azure/cosmos-db/introduction) 是多模型資料庫服務，可支援各種不同的資料類型和 API。 Azure Cosmos DB 也提供文件和圖形資料庫功能。
 - **您的工作負載是否會使用資料行系列資料？** [Azure HDInsight 中的 Apache HBase](/azure/hdinsight/hbase/apache-hbase-overview) 是以 Apache Hadoop 為建置基礎。 它支援無架構資料庫中依資料行系列組織的大量非結構化和半結構化資料。
 - **您的工作負載需要高容量的資料分析功能嗎？** 您可以使用 [Azure SQL 資料倉儲](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)來有效儲存及查詢結構化的 PB 規模資料。 針對非結構化的大型資料工作負載，您可以使用 [Azure data lake](https://azure.microsoft.com/solutions/data-lake) 來儲存及分析 pb 大小的檔案和數兆個的物件。
-- **您的工作負載需要搜尋引擎功能嗎？** 您可以使用 [Azure 認知搜尋](/azure/search/search-what-is-azure-search) 來建立可整合至應用程式的 AI 增強型雲端搜尋索引。
+- **您的工作負載需要搜尋引擎功能嗎？** 您可以使用 [Azure 認知搜尋](/azure/search/search-what-is-azure-search) 來建立 AI 增強的雲端式搜尋索引，這些索引可以整合到您的應用程式中。
 - **您的工作負載會使用時間序列資料嗎？** 建置 [Azure 時間序列深入解析](/azure/time-series-insights/time-series-insights-overview)是為了儲存、視覺化及查詢大量時間序列資料，例如 IoT 裝置所產生的資料。
 
 > [!NOTE]
@@ -49,7 +49,7 @@ ms.locfileid: "97013598"
 
 下表說明一些常見的使用案例需求，以及用來處理這些需求的建議資料庫服務：
 
-| 案例  | 資料服務 |
+| 狀況 | 資料服務 |
 |---|---|
 | 我需要有 NoSQL 選項支援的全域分散式多模型資料庫。 | [Azure Cosmos DB](/azure/cosmos-db/introduction) |
 | 我需要完全受控的關聯式資料庫，並且要能快速佈建、即時調整規模及包含內建智能和安全性。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |
@@ -79,6 +79,6 @@ Azure 可讓您 **以所需** 的規模，將服務提供給客戶和合作夥�
 
 當您準備登陸區域環境時，您可以建立控制項來限制使用者可以部署的資料存放區。 控制項可協助您管理成本並限制安全性風險，同時仍可讓開發人員和 IT 小組部署及設定支援您工作負載所需的資源。
 
-識別並記下登陸區域的需求之後，您可以使用 [Azure 原則](/azure/governance/policy/overview)來控制允許使用者建立的資料庫資源。 控制項可以採用[允許或拒絕建立資料庫資源類型](/azure/governance/policy/samples/allowed-resource-types)的形式。 例如，您可能會限制使用者只能建立 Azure SQL Database 資源。 您也可以在建立資源時使用原則來控制允許的選項，例如 [限制可布建的 SQL Database sku](/azure/governance/policy/samples/allowed-sql-db-skus) ，或只允許在 IaaS VM 上安裝 [特定版本的 SQL Server](/azure/governance/policy/samples/require-sql-12) 。
+識別並記下登陸區域的需求之後，您可以使用 [Azure 原則](/azure/governance/policy/overview)來控制允許使用者建立的資料庫資源。 控制項可以採用[允許或拒絕建立資料庫資源類型](/azure/governance/policy/samples/allowed-resource-types)的形式。 例如，您可能會限制使用者只能建立 Azure SQL Database 資源。 您也可以在建立資源時使用原則來控制允許的選項，例如 [限制可以布建的 Sql Database sku](/azure/governance/policy/samples/allowed-sql-db-skus) ，或只允許在 IaaS VM 上安裝 [特定版本的 sql Server](/azure/governance/policy/samples/require-sql-12) 。
 
 原則的範圍可以設定為資源、資源群組、訂用帳戶和管理群組。 您可以將原則包含在 [Azure 藍圖](/azure/governance/blueprints/overview) 定義中，並在整個雲端資產中重複套用。

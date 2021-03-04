@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: f8384acb0a37d08fd3b352f1a1690cdeecfa39d2
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 37dd0f8c35479969f2bc4bdb5f8cb3d7e11c514c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024784"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785388"
 ---
 # <a name="cloud-adoption-functions"></a>雲端採用功能
 
@@ -35,10 +35,10 @@ ms.locfileid: "97024784"
 
 ## <a name="preparation"></a>準備
 
-- [建立 azure 帳戶](/learn/modules/create-an-azure-account)：使用 azure 的第一個步驟是建立帳戶。
-- [Azure 入口網站](/learn/modules/tour-azure-portal)：導覽 Azure 入口網站功能和服務，以及自訂入口網站。
-- [Azure 簡介](/learn/modules/welcome-to-azure)：開始使用 azure。 在雲端中建立並設定第一部虛擬機器。
-- [Azure 基本](/learn/paths/azure-for-the-data-engineer)概念：瞭解雲端概念、瞭解優點、比較和對比基本策略，以及探索 Azure 中可用的服務廣度。
+- [建立 azure 帳戶](/learn/modules/create-an-azure-account/)：使用 azure 的第一個步驟是建立帳戶。
+- [Azure 入口網站](/learn/modules/tour-azure-portal/)：導覽 azure 入口網站的功能和服務，以及自訂入口網站。
+- [Azure 簡介](/learn/modules/intro-to-azure-fundamentals/)：開始使用 azure。 在雲端中建立並設定第一部虛擬機器。
+- [Azure 基本](/learn/paths/azure-for-the-data-engineer/)概念：瞭解雲端概念、瞭解優點、比較和對比基本策略，以及探索 Azure 中可用的服務廣度。
 - 請參閱 [遷移方法](../migrate/index.md)。
 
 ## <a name="minimum-scope"></a>最小範圍
@@ -80,7 +80,7 @@ ms.locfileid: "97024784"
 
 深入瞭解卓越或[雲端治理小組](./cloud-governance.md)的[雲端中心](./cloud-center-of-excellence.md)功能。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 - [建置雲端採用小組](../get-started/team/cloud-adoption.md)
 - 利用 [雲端治理功能](./cloud-governance.md) 讓雲端採用工作保持一致，以加速採用和實行最佳作法，同時降低商務和技術風險。

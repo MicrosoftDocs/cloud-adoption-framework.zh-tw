@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 7a5149b49e2a50590da2dbbda14f4e6c40ffdc16
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: c36d5b5213d74b0e31890e94b5ac292738e9f2e8
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631486"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787020"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -50,22 +50,22 @@ Contoso 雲端小組已針對此次移轉擬定好各項目標。 並用這些�
 
 ### <a name="current-application"></a>目前的應用程式
 
-MySQL 資料庫會儲存公司人力資源部門的所有層面所使用的員工資料。 以 [燈泡為基礎](https://wikipedia.org/wiki/LAMP_(software_bundle)) 的應用程式是用來處理員工 HR 要求的前端。 Contoso 有全球各地的100000員工，所以執行時間很重要。
+MySQL 資料庫會儲存公司人力資源部門的所有層面所使用的員工資料。 以 [燈泡為基礎](https://wikipedia.org/wiki/LAMP_software_bundle) 的應用程式是用來處理員工 HR 要求的前端。 Contoso 有全球各地的100000員工，所以執行時間很重要。
 
 ### <a name="proposed-solution"></a>建議的解決方案
 
-使用 Azure 資料庫移轉服務，將資料庫移轉至適用於 MySQL 的 Azure 資料庫實例。 修改所有的應用程式和進程，以使用新的適用於 MySQL 的 Azure 資料庫實例。
+使用 Azure 資料庫移轉服務，將資料庫移轉至適用于 MySQL 的 Azure 資料庫實例。 將所有應用程式和進程修改為使用新的適用于 MySQL 的 Azure 資料庫實例。
 
 ### <a name="database-considerations"></a>資料庫考量
 
 在解決方案設計過程中，Contoso 會檢查 Azure 中的功能，以裝載其 MySQL 資料。 下列考慮有助於公司決定使用 Azure：
 
-- 類似于 Azure SQL Database，適用於 MySQL 的 Azure 資料庫允許 [防火牆規則](/azure/mysql/concepts-firewall-rules)。
-- 適用於 MySQL 的 Azure 資料庫可以搭配 [Azure 虛擬網路](/azure/mysql/concepts-data-access-and-security-vnet) 使用，以防止實例可公開存取。
-- 適用於 MySQL 的 Azure 資料庫具有 Contoso 針對其審計員必須符合的必要合規性和隱私權認證。
+- 類似于 Azure SQL Database，適用于 MySQL 的 Azure 資料庫允許 [防火牆規則](/azure/mysql/concepts-firewall-rules)。
+- 適用于 MySQL 的 azure 資料庫可以搭配 [Azure 虛擬網路](/azure/mysql/concepts-data-access-and-security-vnet) 使用，以防止實例可供公開存取。
+- 適用于 MySQL 的 Azure 資料庫具有 Contoso 針對其審計員必須符合的必要合規性和隱私權認證。
 - 報表和應用程式處理效能將會使用讀取複本來增強。
-- 只能將服務公開給內部網路流量的能力， (使用 [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link)沒有公用存取) 。
-- Contoso 選擇不移至適用於 MySQL 的 Azure 資料庫，因為它正在考慮未來使用適用于 mariadb 資料行存放區和圖形資料庫模型。
+- 只能將服務公開給內部網路流量的能力， (沒有使用 [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link)) 公用存取權。
+- Contoso 選擇不移至適用于 MySQL 的 Azure 資料庫，因為它會考慮未來使用適用于 mariadb 資料行存放區和圖形資料庫模型。
 - 除了 MySQL 功能以外，Contoso 還 proponent 了真正的開放原始碼專案，並選擇不使用 MySQL。
 - 從應用程式到資料庫的 [頻寬和延遲](/azure/vpn-gateway/vpn-gateway-about-vpngateways) ，會根據所選的閘道而足夠， (Azure ExpressRoute 或站對站 VPN) 。
 
@@ -75,13 +75,13 @@ Contoso 會透過比較一份優缺點清單，來評估建議設計。
 
 | 考量 | 詳細資料 |
 | --- | --- |
-| **優點** | 適用於 MySQL 的 Azure 資料庫提供99.99% 的財務支援服務等級協定， (SLA) 以獲得 [高可用性](/azure/mysql/concepts-high-availability)。 <br><br> Azure 可讓您在每季的尖峰負載期間擴大或縮小。 Contoso 可以購買 [保留容量](/azure/mysql/concept-reserved-pricing)來節省更多成本。 <br><br> Azure 提供適用於 MySQL 的 Azure 資料庫的時間點還原和異地還原功能。 <br><br> |
-| **缺點** | Contoso 受限於 Azure 中支援的 MySQL 發行版本，目前為10.2 和10.3。 <br><br> 適用於 MySQL 的 Azure 資料庫有一些 [限制](/azure/mysql/concepts-limits)，例如調整儲存體。 |
+| **優點** | 適用于 MySQL 的 Azure 資料庫提供99.99% 的財務支援服務等級協定， (SLA) 以獲得 [高可用性](/azure/mysql/concepts-high-availability)。 <br><br> Azure 可讓您在每季的尖峰負載期間擴大或縮小。 Contoso 可以購買 [保留容量](/azure/mysql/concept-reserved-pricing)來節省更多成本。 <br><br> Azure 針對適用于 MySQL 的 Azure 資料庫提供時間點還原和異地還原功能。 <br><br> |
+| **缺點** | Contoso 受限於 Azure 中支援的 MySQL 發行版本，目前為10.2 和10.3。 <br><br> 適用于 MySQL 的 Azure 資料庫有一些 [限制](/azure/mysql/concepts-limits)，例如調整儲存體。 |
 
 ## <a name="proposed-architecture"></a>建議的架構
 
 ![圖表顯示案例架構。 ](./media/contoso-migration-mysql-to-azure/architecture.png)
-_圖1：案例架構。_
+*圖1：案例架構。*
 
 ### <a name="migration-process"></a>移轉程序
 
@@ -91,7 +91,7 @@ _圖1：案例架構。_
 
 #### <a name="supported-versions"></a>支援的版本
 
-MySQL 使用的是「 _x. z_ 版本控制」配置，其中 _x_ 是主要版本， _y_ 是次要版本，而 _z_ 是修補程式版本。
+MySQL 會使用 `x.y.z` 版本控制配置，其中 `x` 是主要版本、 `y` 次要版本，以及 `z` 修補程式版本。
 
 Azure 目前支援 MySQL 版本10.2.25 和10.3.16。
 
@@ -102,19 +102,19 @@ Azure 會自動管理修補程式更新的升級。 範例10.2.21 至10.2.23。 
 Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其 MySQL 資料庫所在的虛擬網路。 此連接可讓內部部署應用程式在連接字串更新時，透過閘道存取資料庫。
 
 ![圖表顯示遷移程式。 ](./media/contoso-migration-mysql-to-azure/migration-process.png)
-_圖2：遷移程式。_
+*圖2：遷移程式。*
 
 #### <a name="migration"></a>移轉
 
 Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並遵循 [逐步遷移教學](/azure/dms/tutorial-mysql-azure-mysql-online)課程。 他們可以使用 MySQL 5.6 或5.7 來執行線上、離線和混合式 (預覽版) 的遷移。
 
 > [!NOTE]
-> 適用於 MySQL 的 Azure 資料庫支援 MySQL 8.0。 資料庫移轉服務工具尚不支援該版本。
+> 適用于 MySQL 的 Azure 資料庫中支援 MySQL 8.0。 資料庫移轉服務工具尚不支援該版本。
 
 總而言之，他們必須執行下列工作：
 
 - 確定已符合所有的遷移必要條件：
-  - MySQL 資料庫伺服器來源必須符合適用於 MySQL 的 Azure 資料庫支援的版本。 適用於 MySQL 的 Azure 資料庫支援 MySQL 社區版、InnoDB 儲存引擎，以及使用相同版本跨來源和目標進行遷移。
+  - MySQL 資料庫伺服器來源必須符合適用于 MySQL 的 Azure 資料庫所支援的版本。 適用于 MySQL 的 Azure 資料庫支援 MySQL 整合版、InnoDB 儲存引擎，以及跨來源與目標的相同版本的遷移。
   - `my.ini` (Windows) 或 `my.cnf` (Unix) 啟用二進位記錄。 無法啟用二進位記錄，會在遷移嚮導中產生下列錯誤： `Error in binary logging. Variable binlog_row_image has value 'minimal.' please change it to 'full'.` 如需詳細資訊，請參閱 [MySQL 檔](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)。
   - 使用者必須具有 `ReplicationAdmin` 角色。
   - 在不包含外鍵和觸發程式的情況下遷移資料庫架構。
@@ -124,11 +124,11 @@ Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並�
 - 建立新的資料庫移轉服務專案：
 
   ![螢幕擷取畫面顯示如何建立新的資料庫移轉服務專案 ](./media/contoso-migration-mysql-to-azure/migration-dms-new-project.png)
-   _圖3： Azure 資料庫移轉服務專案。_
+   *圖3： Azure 資料庫移轉服務專案。*
 
 #### <a name="migration-by-using-native-tools"></a>使用原生工具進行遷移
 
-除了使用 Azure 資料庫移轉服務以外，Contoso 還可以使用常見的公用程式和工具（例如 MySQL 工作臺、mysqldump、Toad 或 Navicat）來連線到適用於 MySQL 的 Azure 資料庫，並將資料移轉至其中。
+除了使用 Azure 資料庫移轉服務，Contoso 還可以使用常見的公用程式和工具（例如 MySQL 工作臺、mysqldump、Toad 或 Navicat）來連線到 Azure Database for MySQL，並將資料移轉至該資料庫。
 
 - 使用 mysqldump 傾印及還原：
   - 使用 mysqldump 中的 [排除-觸發程式] 選項，以防止在匯入期間執行觸發程式，並改善效能。
@@ -136,7 +136,7 @@ Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並�
   - 使用 mysqldump 中的停用金鑰選項，即可在載入之前停用外鍵條件約束。 移除條件約束可提升效能。
   - 使用 Azure Blob 儲存體來儲存備份檔案，並從該處執行還原，以加快還原速度。
   - 更新應用程式連接字串。
-  - 遷移資料庫之後，Contoso 必須更新連接字串，以指向新的適用於 MySQL 的 Azure 資料庫。
+  - 遷移資料庫之後，Contoso 必須將連接字串更新為指向新的適用于 MySQL 的 Azure 資料庫。
 
 ## <a name="clean-up-after-migration"></a>移轉之後進行清除
 
@@ -150,25 +150,25 @@ Contoso 管理員會使用 Azure 資料庫移轉服務來遷移資料庫，並�
 
 Contoso 必須：
 
-- 確定其新的適用於 MySQL 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用於 MySQL 的 Azure 資料庫中的安全性](/azure/mysql/concepts-security)。
+- 確定其新的適用于 MySQL 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用于 MySQL 的 Azure 資料庫中的安全性](/azure/mysql/concepts-security)。
 - 檢查防火牆和虛擬網路設定。
-- 設定 Private Link，以便在 Azure 和內部部署網路內保存所有資料庫流量。
-- 啟用 Azure 進階威脅防護。
+- 設定 Private Link，以在 Azure 和內部部署網路內保存所有資料庫流量。
+- 啟用 Microsoft Defender 的身分識別。
 
 ### <a name="backups"></a>備份
 
-確定適用於 MySQL 的 Azure 資料庫實例是使用異地還原備份的，以便在發生區域性中斷時，將備份用於配對的區域中。
+請確定使用異地還原來備份適用于 MySQL 的 Azure 資料庫實例，以便在發生區域性中斷的情況下，將備份用於配對的區域中。
 
 > [!IMPORTANT]
-> 請確定適用於 MySQL 的 Azure 資料庫資源有資源鎖定，以防止其遭到刪除。 無法還原已刪除的伺服器。
+> 請確定適用于 MySQL 的 Azure 資料庫資源具有資源鎖定，以防止其遭到刪除。 無法還原已刪除的伺服器。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 適用於 MySQL 的 Azure 資料庫可以向上或向下調整。 監視伺服器和資料庫的效能非常重要，可確保符合需求，同時將成本降至最低。
+- 適用于 MySQL 的 Azure 資料庫可以向上或向下調整。 監視伺服器和資料庫的效能非常重要，可確保符合需求，同時將成本降至最低。
 - CPU 和儲存體都有相關聯的成本。 有數個定價層可供使用。 確定已針對每個資料工作負載選取適當的定價方案。
 - 每個讀取複本會根據選取的計算和儲存體計費。
 - 使用保留容量來節省成本。
 
 ## <a name="conclusion"></a>結論
 
-在本文中，Contoso 將 MySQL 資料庫遷移至適用於 MySQL 的 Azure 資料庫實例。
+在本文中，Contoso 將 MySQL 資料庫遷移至適用于 MySQL 的 Azure 資料庫實例。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: af6077694345492eff1aadf0a4ec9bf36b5d08a5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 92b7394511d2dee4151be80ed53d00cc568194eb
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025498"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786102"
 ---
 # <a name="migrate-or-deploy-windows-virtual-desktop-instances-to-azure"></a>將 Windows 虛擬桌面執行個體遷移或部署至 Azure
 
@@ -48,7 +48,7 @@ ms.locfileid: "97025498"
 如需雲端採用旅程圖的特定元素指引，請參閱：
 
 - [規劃 Windows 虛擬桌面移轉或部署](./plan.md)
-- [檢閱環境或 Azure 登陸區域](./ready.md)
+- [檢查您的環境或 Azure 登陸區域](./ready.md)
 - [完成 Windows 虛擬桌面概念證明](./proof-of-concept.md)
 - [評估 Windows 虛擬桌面移轉或部署](./migrate-assess.md)
 - [部署或遷移 Windows 虛擬桌面執行個體](./migrate-deploy.md)

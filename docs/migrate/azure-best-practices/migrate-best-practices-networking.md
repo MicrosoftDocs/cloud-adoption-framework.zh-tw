@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 62221d86b1bb9b13156118d216e5030fbe1462c7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3170fccd644e59ecac169e92230e12714fd26495
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026059"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786918"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -70,7 +70,7 @@ Azure 為虛擬網路提供下列功能：
 - 您可以在不同的資源群組中執行中樞和輪輻虛擬網路，甚至在不同的訂用帳戶中執行。 當您將不同訂用帳戶中的虛擬網路對等互連時，這些訂用帳戶可以與相同或不同的 Azure Active Directory (Azure AD) 租用戶相關聯。 如此可對每個工作負載進行非集中式管理，同時在中樞網路中維護共用服務。
 
 ![中樞和輪輻拓撲 ](./media/migrate-best-practices-networking/hub-spoke.png)
- _圖1：中樞和輪輻拓撲。_
+ *圖1：中樞和輪輻拓撲。*
 
 **瞭解更多資訊：**
 
@@ -102,7 +102,7 @@ Azure 為虛擬網路提供下列功能：
 **瞭解更多資訊：**
 
 - 瞭解如何 [設計子網](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)。
-- 瞭解 Contoso （虛構公司）如何 [準備其網路基礎結構來進行遷移](/azure/migrate/contoso-migration-infrastructure)。
+- 瞭解 Contoso （虛構公司）如何 [準備其網路基礎結構來進行遷移](/azure/cloud-adoption-framework/migrate/)。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>最佳做法：設定 DNS 伺服器
 
@@ -118,33 +118,33 @@ Azure 為虛擬網路提供下列功能：
 - 在 Azure Resource Manager 中，您可以為虛擬網路和網路介面指定 DNS 伺服器，但最佳做法是只在虛擬網路上使用此設定。
 
     ![虛擬網路的 DNS 伺服器螢幕擷取畫面。](./media/migrate-best-practices-networking/dns2.png)
-    _圖2：虛擬網路的 DNS 伺服器。_
+    *圖2：虛擬網路的 DNS 伺服器。*
 
 **瞭解更多資訊：**
 
-- 瞭解 [當您使用自己的 DNS 伺服器時的名稱解析](/azure/migrate/contoso-migration-infrastructure)。
+- 瞭解 [當您使用自己的 DNS 伺服器時的名稱解析](/azure/cloud-adoption-framework/migrate/)。
 - 瞭解 [DNS 命名規則和限制](../../ready/azure-best-practices/naming-and-tagging.md)。
 
 ## <a name="best-practice-set-up-availability-zones"></a>最佳做法：設定可用性區域
 
-可用性區域增加高可用性，以保護您的應用程式和資料不受資料中心故障影響。 「可用性區域」是 Azure 地區內獨特的實體位置。 每個區域皆由一或多個配備獨立電力、冷卻系統及網路的資料中心所組成。 若要確保復原，所有已啟用的地區中至少要有三個不同的區域。 地區內「可用性區域」的實體區隔可保護應用程式和資料不受資料中心故障影響。
+可用性區域會提高高可用性，以保護您的應用程式和資料不受資料中心故障影響。 「可用性區域」是 Azure 地區內獨特的實體位置。 每個區域皆由一或多個配備獨立電力、冷卻系統及網路的資料中心所組成。 若要確保復原，所有已啟用的地區中至少要有三個不同的區域。 地區內「可用性區域」的實體區隔可保護應用程式和資料不受資料中心故障影響。
 
 以下是您在設定可用性區域時要注意的一些其他幾點：
 
 - 區域冗余服務會跨可用性區域複寫您的應用程式和資料，以防止單一失敗點。
 
-- 使用可用性區域，Azure 可提供 99.99% VM 執行時間的 SLA。
+- 使用可用性區域時，Azure 會提供 99.99% VM 執行時間的 SLA。
 
-    ![Azure 區域內可用性區域的圖表。](./media/migrate-best-practices-networking/availability-zone.png)
+    ![Azure 區域中的可用性區域圖表。](./media/migrate-best-practices-networking/availability-zone.png)
 
-    _圖3：可用性區域。_
+    *圖3：可用性區域。*
 
 - 藉由將運算、儲存體、網路及資料資源共置於某個區域內並複寫至其他區域，您即可在移轉架構內規劃和建置高可用性。 支援「可用性區域」的 Azure 服務分成兩個類別：
   - **區域性服務：** 您可以將資源與特定區域（例如 Vm、受控磁片或 IP 位址）相關聯。
   - **區域冗余服務：** 資源會自動跨區域複寫，例如區域冗余儲存體或 Azure SQL Database。
-- 若要提供區域性容錯功能，您可以部署具有網際網路對應工作負載或應用層的標準 Azure Load Balancer 實例。
+- 若要提供區域性容錯功能，您可以使用網際網路對應的工作負載或應用層來部署標準的 Azure 負載平衡器實例。
 
-    ![標準負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) _圖4：負載平衡器_ 的圖表。
+    ![標準負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) *圖4：負載平衡器* 的圖表。
 
 **瞭解更多資訊：**
 
@@ -189,14 +189,14 @@ Azure 為虛擬網路提供下列功能：
 - 邊界閘道協定 (BGP) 是選擇性功能。 您可以將它與 Azure ExpressRoute 和路由型 VPN 閘道搭配使用，以將內部部署 BGP 路由傳播至虛擬網路。
 
 ![站對站 VPN 的圖表。 ](./media/migrate-best-practices-networking/vpn.png)
-_圖5：站對站 VPN。_
+*圖5：站對站 VPN。*
 
 **瞭解更多資訊：**
 
 - 檢查 [相容的內部部署 VPN 裝置](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
 - 閱讀 [AZURE VPN 閘道總覽](/azure/vpn-gateway/vpn-gateway-about-vpngateways)。
 - 深入瞭解 [高可用性 VPN 連接](/azure/vpn-gateway/vpn-gateway-highlyavailable)。
-- 瞭解如何 [規劃和設計 VPN 閘道](/azure/vpn-gateway/vpn-gateway-plan-design)。
+- 瞭解如何 [規劃和設計 VPN 閘道](/azure/vpn-gateway/vpn-gateway-about-vpngateways)。
 - 檢查 [VPN 閘道設定](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku)。
 - 檢查 [閘道 sku](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)。
 - 瞭解如何 [使用 AZURE VPN 閘道設定 BGP](/azure/vpn-gateway/vpn-gateway-bgp-overview)。
@@ -209,10 +209,6 @@ _圖5：站對站 VPN。_
 - 當您定義閘道子網的位址空間時，請使用虛擬網路位址空間的最後一個部分。
 - 當您使用 Azure 閘道子網時，絕對不會將任何 Vm 或其他裝置（例如 Azure 應用程式閘道）部署到閘道子網。
 - 請勿將網路安全性群組 (NSG) 指派到這個子網路。 這會導致閘道停止運作。
-
-**瞭解更多資訊：**
-
-- [使用此工具](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)來判斷您的 IP 位址空間。
 
 ## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>最佳做法：為分公司執行 Azure 虛擬 WAN
 
@@ -255,7 +251,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
 
 **問題：**
 
-現在假設您有 Azure 部署 (例如，在和中 Azure App Service) `West US` `East US` 。
+現在假設您有 Azure 部署 (例如，和中的 Azure App Service) `West US` `East US` 。
 
 - 您希望每個辦公室的使用者存取與其最接近的 Azure 服務，以獲得最佳體驗。
 - 因此，您想要將洛杉磯的使用者連線到 Azure `West US` ，並將紐約的使用者連線到 azure `East US` 。
@@ -265,7 +261,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
   - 您的 WAN 網路可以假設這兩個前置詞都較接近 `East US` `West US` ，因此會將來自兩個辦公室的使用者路由傳送至中的 ExpressRoute 電路 `East US` 。 這對洛杉磯辦公室的使用者提供更糟的體驗。
 
 ![具有路徑路徑錯誤電路的 VPN 圖表。 ](./media/migrate-best-practices-networking/bgp1.png)
-_圖6： BGP 群體未優化連接。_
+*圖6： BGP 群體未優化連接。*
 
 **解決方案：**
 
@@ -278,7 +274,7 @@ _圖6： BGP 群體未優化連接。_
 - 這項設定可確保當 Microsoft 的兩個路徑都可用時，洛杉磯的使用者會使用「西部」電路連接到該 `West US` 區域，而紐約的使用者會使用「東部線路」連接到該 `East US` 區域。
 
 ![透過正確電路路由路徑的 VPN 圖表。 ](./media/migrate-best-practices-networking/bgp2.png)
-_圖7： BGP 團體優化連接。_
+*圖7： BGP 團體優化連接。*
 
 **瞭解更多資訊：**
 
@@ -310,7 +306,7 @@ Microsoft 與您之間可以共用保護虛擬網路的責任。 Microsoft 提�
 以下是在公司網路中具有兩個安全性界限的單一子網周邊網路範例。
 
 ![Azure 虛擬網路周邊網路部署的圖表。 ](./media/migrate-best-practices-networking/perimeter.png)
-_圖8：周邊網路部署。_
+*圖8：周邊網路部署。*
 
 **瞭解更多資訊：**
 
@@ -348,14 +344,14 @@ _圖8：周邊網路部署。_
 
 - 此 **Sql** 標籤代表 Azure SQL Database 和 Azure SQL 資料倉儲服務的位址前置詞。
 - 如果您將 **sql** 指定為值，就會允許或拒絕 sql 的流量。
-- 如果您只需要允許存取特定 **區域** 中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部地區的 Azure SQL Database，您可以指定服務標記的 **EastUS** 。
-- 標籤代表服務，但不代表服務的特定執行個體。 例如，標記代表 Azure SQL Database 服務，但不代表特定的 SQL Database 或伺服器。
+- 如果您只需要允許存取特定 **區域** 中的 Sql，則可以指定該區域。 例如，如果您只想要允許存取美國東部區域的 Azure SQL Database，您可以為服務標記指定 **EastUS** 。
+- 標籤代表服務，但不代表服務的特定執行個體。 例如，標記代表 Azure SQL Database 服務，但不代表特定的 SQL 資料庫或伺服器。
 - 此標記所表示的所有位址前置詞，也都可用 **網際網路** 標記表示。
 
 **瞭解更多資訊：**
 
-- 瞭解 [ (nsg) 的網路安全性群組 ](/azure/virtual-network/security-overview)。
-- 請參閱 [可供 nsg 的服務標記](/azure/virtual-network/security-overview#service-tags)。
+- 瞭解 [ (nsg) 的網路安全性群組 ](/azure/virtual-network/network-security-groups-overview)。
+- 請參閱 [可供 nsg 的服務標記](/azure/virtual-network/network-security-groups-overview#service-tags)。
 
 ## <a name="best-practice-use-application-security-groups"></a>最佳做法：使用應用程式安全性群組
 
@@ -368,7 +364,7 @@ _圖8：周邊網路部署。_
 **範例︰**
 
 ![應用程式安全性群組 [圖 9] 的圖表 ](./media/migrate-best-practices-networking/asg.png)
- _：應用程式安全性群組範例。_
+ *：應用程式安全性群組範例。*
 
 | 網路介面 | 應用程式安全性群組 |
 | --- | --- |
@@ -389,7 +385,7 @@ _圖8：周邊網路部署。_
 
 **瞭解更多資訊：**
 
-- 深入瞭解 [應用程式安全性群組](/azure/virtual-network/security-overview#application-security-groups)。
+- 深入瞭解 [應用程式安全性群組](/azure/virtual-network/network-security-groups-overview#application-security-groups)。
 
 ### <a name="best-practice-secure-access-to-paas-by-using-virtual-network-service-endpoints"></a>最佳做法：使用虛擬網路服務端點來保護對 PaaS 的存取
 
@@ -400,7 +396,7 @@ _圖8：周邊網路部署。_
 - 在您的虛擬網路中啟用服務端點之後，您可以將虛擬網路規則新增至服務資源，以保護 Azure 服務資源。 這可透過完全移除資源的公用網際網路存取，並只允許來自您虛擬網路的流量，來改善安全性。
 
 ![服務端點的圖表。 ](./media/migrate-best-practices-networking/endpoint.png)
-_圖10：服務端點。_
+*圖10：服務端點。*
 
 **瞭解更多資訊：**
 
@@ -416,11 +412,11 @@ Azure 中的公用 IP 位址可與 VM、負載平衡器、應用程式閘道和 
 - 最佳做法是 VM 不應該使用公用 IP 位址來進行設定。
   - 如果您需要開啟埠，它應該只適用于 web 服務，例如埠80或443。
   - 標準遠端系統管理埠，例如 SSH (22) 和 RDP (3389) 以及所有其他埠，都應該使用 Nsg 設定為 [拒絕]。
-- 更好的做法是將 Vm 放在 Azure Load Balancer 或 Azure 應用程式閘道後方。 然後，如果您需要遠端系統管理埠的存取權，您可以在 Azure 資訊安全中心中使用即時 VM 存取。
+- 更好的做法是將 Vm 放在 Azure 負載平衡器或 Azure 應用程式閘道後方。 然後，如果您需要遠端系統管理埠的存取權，您可以在 Azure 安全性中心使用即時 VM 存取。
 
 **瞭解更多資訊：**
 
-- [Azure 中的公用 IP 位址](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Azure 中的公用 IP 位址](/azure/virtual-network/public-ip-addresses#public-ip-addresses)
 - [使用即時管理虛擬機器存取](/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>針對網路利用 Azure 安全性功能
@@ -432,7 +428,7 @@ Azure 具有平台層級的安全性功能，包括 Azure 防火牆、Web 應用
 Azure 防火牆是受控的雲端式網路安全性服務，可協助保護您的虛擬網路資源。 它是完全具狀態的受控防火牆，具有內建的高可用性和不受限制的雲端擴充性。
 
 ![Azure 防火牆的圖表。 ](./media/migrate-best-practices-networking/firewall.png)
-_圖11： Azure 防火牆。_
+*圖11： Azure 防火牆。*
 
 當您部署服務時，請注意以下幾點：
 
@@ -442,7 +438,7 @@ _圖11： Azure 防火牆。_
 - 當您建立 Azure 防火牆規則時，最好使用 FQDN 標記。
   - FQDN 標籤代表一群與知名 Microsoft 服務相關聯的 FQDN。
   - 您可以使用 FQDN 標籤，以允許必要的輸出網路流量通過防火牆。
-- 例如，若要手動允許 Windows Update 網路流量通過防火牆，您需要建立多個應用程式規則。 藉由使用 FQDN 標籤，您可以建立應用程式規則，並包含 Windows Update 標記。 備有此規則後，流向 Microsoft Windows Update 端點的網路流量就能流過防火牆。
+- 例如，若要手動允許 Windows Update 網路流量通過防火牆，您需要建立多個應用程式規則。 藉由使用 FQDN 標籤，您可以建立應用程式規則並包含 Windows Update 標記。 備有此規則後，流向 Microsoft Windows Update 端點的網路流量就能流過防火牆。
 
 **瞭解更多資訊：**
 
@@ -462,19 +458,19 @@ Web 應用程式防火牆 (WAF) 是 Azure 應用程式閘道的一項功能，�
 - 它可以在應用程式閘道背後同時保護多個 web 應用程式。
 - WAF 已經與 Azure 資訊安全中心整合。
 - 您可以自訂 WAF 規則和規則群組，以符合您的應用程式需求。
-- 最佳做法是，您應該在任何 web 導向應用程式前面使用 WAF，包括 Azure Vm 或 Azure App Service 中的應用程式。
+- 最佳做法是，您應該在任何 web 對向應用程式前面使用 WAF，包括 Azure Vm 或 Azure App Service 中的應用程式。
 
 **瞭解更多資訊：**
 
-- 深入瞭解 [WAF](/azure/application-gateway/waf-overview)。
-- 複習 [WAF 限制和排除](/azure/application-gateway/application-gateway-waf-configuration)專案。
+- 深入瞭解 [WAF](/azure/web-application-firewall/ag/ag-overview)。
+- 複習 [WAF 限制和排除](/azure/web-application-firewall/ag/application-gateway-waf-configuration)專案。
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>最佳做法：執行 Azure 網路監看員
 
 Azure 網路監看員提供的工具可監視 Azure 虛擬網路中的資源和通訊。 例如，您可以監視 VM 與端點之間的通訊，例如另一個 VM 或 FQDN。 您也可以在虛擬網路中查看資源與資源的關聯性，或診斷網路流量問題。
 
 ![網路監看員的螢幕擷取畫面。 ](./media/migrate-best-practices-networking/network-watcher.png)
-_圖12：網路_ 監看員。
+*圖12：網路* 監看員。
 
 以下是更多詳細資料：
 
@@ -487,16 +483,16 @@ _圖12：網路_ 監看員。
 
 **瞭解更多資訊：**
 
-- 閱讀網路監看員 [總覽](/azure/network-watcher)。
+- 閱讀網路監看員 [總覽](/azure/network-watcher/)。
 - 深入瞭解 [NSG 流量記錄](/azure/network-watcher/network-watcher-nsg-flow-logging-overview)。
 
-## <a name="use-partner-tools-in-azure-marketplace"></a>在 Azure Marketplace 中使用合作夥伴工具
+## <a name="use-partner-tools-in-azure-marketplace"></a>使用 Azure Marketplace 中的合作夥伴工具
 
 針對更複雜的網路拓撲，您可以使用 Microsoft 合作夥伴的安全性產品，尤其是網路虛擬設備 (NVA)。
 
 - NVA 是執行網路功能的 VM，例如防火牆、WAN 最佳化或其他網路功能。
 - Nva 會加強虛擬網路安全性和網路功能。 您可以針對高可用性防火牆、入侵預防、入侵偵測、Waf、WAN 優化、路由、負載平衡、VPN、憑證管理、Active Directory 和多重要素驗證進行部署。
-- Nva 適用于 [Azure Marketplace](https://azuremarketplace.microsoft.com)中的許多廠商。
+- [Azure Marketplace](https://azuremarketplace.microsoft.com)中的許多廠商都可使用 nva。
 
 ## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>最佳做法：在中樞網路中執行防火牆和 Nva
 
@@ -504,7 +500,7 @@ _圖12：網路_ 監看員。
 
 | 防火牆類型 | 詳細資料 |
 | --- | --- |
-| WAF | Web 應用程式很常見，其容易受到弱點和潛在攻擊的影響。 Waf 的設計是為了偵測對 web 應用程式的攻擊 (HTTP/HTTPS) 。 相較于傳統防火牆技術，waf 有一組特定功能可保護內部網頁伺服器免于威脅。 |
+| WAF | Web 應用程式很常見，其容易受到弱點和潛在攻擊的影響。 Waf 的設計是為了偵測對 web 應用程式的攻擊 (HTTP/HTTPS) 。 相較於傳統防火牆技術，WAF 有一組特定功能可保護內部網頁伺服器不受威脅。 |
 | Azure 防火牆 | 如同 NVA 防火牆伺服器陣列，Azure 防火牆會使用常見的管理機制和一組安全性規則來保護輪輻網路中所裝載的工作負載。 Azure 防火牆也可協助控制對內部部署網路的存取。 Azure 防火牆具有內建的擴充性。 |
 | NVA 防火牆 | 和 Azure 防火牆一樣，NVA 防火牆伺服器陣列具有一般管理機制和一組安全性規則，可保護輪輻網路中所裝載的工作負載。 NVA 防火牆也可協助控制對內部部署網路的存取。 NVA 防火牆可以在負載平衡器後方手動擴充。 <br><br> 雖然 NVA 防火牆所擁有的特製化軟體比 WAF 還要少，但其具有較廣泛的應用程式範圍，可篩選和檢查任何類型的輸出和輸入流量。 |
 
@@ -514,7 +510,7 @@ _圖12：網路_ 監看員。
 
 - 瞭解如何 [在 Azure 虛擬網路中使用 nva](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 檢閱其他最佳做法：
 

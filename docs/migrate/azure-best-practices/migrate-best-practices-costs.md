@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: d357b3c3f38100c684f97920d320ceb7ea8effc2
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: c75f3437d5c53f31daf2389061c6874c0d66706a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713142"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785932"
 ---
 <!-- docutune:casing ARO -->
 
@@ -37,7 +37,7 @@ ms.locfileid: "97713142"
 
 - 估計成本。
 - 針對 (Vm) 和儲存體的虛擬機器執行適當的大小調整。
-- 使用 Azure Hybrid Benefit。
+- 使用 Azure 混合式權益。
 - 使用 Azure 保留的虛擬機器執行個體。
 - 估計跨訂用帳戶的雲端費用。
 
@@ -50,24 +50,24 @@ ms.locfileid: "97713142"
 - **Azure 定價計算機：** 選取您要評估的產品，例如 Vm 和儲存體。 然後，將成本輸入計算機以建立預估值。
 
   ![Azure 定價計算機的螢幕擷取畫面。](./media/migrate-best-practices-costs/pricing.png)
-    _圖1： Azure 定價計算機。_
+    *圖1： Azure 定價計算機。*
 
-- **Azure Migrate：** 若要預估成本，您必須檢查並考慮在 Azure 中執行工作負載所需的所有資源。 若要取得此資料，您可以建立您的資產清查，包括伺服器、VM、資料庫與儲存體。 您可以使用 Azure Migrate 來收集此資訊。
+- **Azure 遷移：** 若要預估成本，您必須檢查並考慮在 Azure 中執行工作負載所需的所有資源。 若要取得此資料，您可以建立您的資產清查，包括伺服器、VM、資料庫與儲存體。 您可以使用 Azure Migrate 來收集此資訊。
 
   - Azure Migrate 會探索並評量您的內部部署環境以提供清查。
-  - Azure Migrate 可以對應並顯示 Vm 之間的相依性，讓您有完整的圖片。
+  - Azure 遷移可以對應並顯示 Vm 之間的相依性，讓您有完整的圖片。
   - Azure Migrate 評量包含預估的成本。
-    - **計算成本：** 使用您在建立評量時建議的 Azure VM 大小，Azure Migrate 使用 Azure 計費 API 來計算每月預估的 VM 成本。 估計會考慮作業系統、軟體保證、Azure 保留的虛擬機器執行個體、VM 執行時間、位置和貨幣設定。 它會在評量中彙總所有 VM 的成本，並計算每月總計算成本。
-    - **儲存體成本：** Azure Migrate 藉由匯總評量中所有 Vm 的儲存成本，來計算每月總儲存體成本。 您可以透過彙總連結到特定機器之所有磁碟的每月成本，以計算該機器的每月儲存體成本。
+    - **計算成本：** 使用您在建立評量時建議的 Azure VM 大小，Azure 遷移會使用 Azure 計費 Api 來計算每月預估的 VM 成本。 估計會考慮作業系統、軟體保證、Azure 保留的虛擬機器實例、VM 執行時間、位置和貨幣設定。 它會在評量中彙總所有 VM 的成本，並計算每月總計算成本。
+    - **儲存體成本：** Azure 遷移會匯總評估中所有 Vm 的儲存體成本，以計算每月總儲存體成本。 您可以透過彙總連結到特定機器之所有磁碟的每月成本，以計算該機器的每月儲存體成本。
 
-    ![Azure Migrate ](./media/migrate-best-practices-costs/assess.png)
-     _圖2： Azure Migrate 評定_ 的螢幕擷取畫面。
+    ![Azure 遷移圖2的螢幕擷取畫面 ](./media/migrate-best-practices-costs/assess.png)
+     *： azure 遷移評量。*
 
 **瞭解更多資訊：**
 
-- 使用 [Azure 定價計算機](https://azure.microsoft.com/pricing/calculator)。
-- 閱讀 [Azure Migrate 總覽](/azure/migrate/migrate-services-overview)。
-- 閱讀 [Azure Migrate 評](/azure/migrate/concepts-assessment-calculation)量的相關資訊。
+- 使用 [Azure 定價計算機](https://azure.microsoft.com/pricing/calculator/)。
+- 閱讀 [Azure 遷移總覽](/azure/migrate/migrate-services-overview)。
+- 深入瞭解 [Azure 遷移評](/azure/migrate/concepts-assessment-calculation)量。
 - 深入瞭解 [Azure 資料庫移轉服務](/azure/dms/dms-overview)。
 
 ## <a name="best-practice-right-size-vms"></a>最佳做法：適當的 Vm 大小
@@ -77,7 +77,7 @@ ms.locfileid: "97713142"
 | 類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途** | 平衡的 CPU 對記憶體。 | 適用于測試和開發、小型至中型資料庫，以及低至中流量的 web 伺服器。 |
-| **計算最佳化** | CPU 與記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
+| **計算最佳化** | CPU 對記憶體的比例高。 | 適用于中流量 web 伺服器、網路設備、批次處理，以及應用程式伺服器。 |
 | **記憶體優化** | 高記憶體對 CPU。 | 適用于關係資料庫、中型至大型快取，以及記憶體內部分析。 |
 | **儲存體最佳化** | 高磁片輸送量和 i/o。 | 適用于大型資料，以及 SQL 和 NoSQL 資料庫。 |
 | **GPU 最佳化** | 特製化 VM。 單一或多個 GPU。 | 繁重圖形與視訊編輯。 |
@@ -89,9 +89,9 @@ ms.locfileid: "97713142"
 
 **瞭解更多資訊：**
 
-- 深入瞭解 [VM 類型和大小調整](/azure/virtual-machines/windows/sizes)，以及將大小對應至類型。
+- 深入瞭解 [VM 類型和大小調整](/azure/virtual-machines/sizes)，以及將大小對應至類型。
 - [VM 實例的規劃大小](/azure/cloud-services/cloud-services-sizes-specs)。
-- 查看 [虛構 Contoso 公司的範例評](/azure/migrate/contoso-migration-assessment)量。
+- 查看 [虛構 Contoso 公司的範例評](/azure/cloud-adoption-framework/migrate/)量。
 
 ## <a name="best-practice-select-the-right-storage"></a>最佳做法：選取正確的儲存體
 
@@ -130,7 +130,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 | 帳戶類型 | 詳細資料 | 使用方式 |
 | --- | --- | --- |
 | **一般用途 v2 標準** | 支援 blob (區塊、分頁和附加) 、檔案、磁片、佇列和資料表。 <br><br> 支援經常性存取、非經常性存取和封存存取層。 支援區域冗余儲存體 (ZRS) 。 | 用於大部分案例與大部分類型的資料。 標準儲存體帳戶可以是 HDD 或 SSD 型。 |
-| **一般用途 v2 premium** | 支援 Blob 儲存體資料 (分頁 Blob)。 支援經常性存取、非經常性存取和封存存取層。 支援 ZRS。 <br><br> 存放在 SSD 上。 | Microsoft 建議為所有 VM 使用。 |
+| **一般用途 v2 premium** | 支援 Blob 儲存體資料 (分頁 blob) 。 支援經常性存取、非經常性存取和封存存取層。 支援 ZRS。 <br><br> 存放在 SSD 上。 | Microsoft 建議為所有 VM 使用。 |
 | **一般用途 v1** | 不支援存取分層。 不支援 ZRS。 | 如果應用程式需要 Azure 傳統部署模型，請使用。 |
 | **Blob** | 用於存取非結構化物件的特殊化儲存體帳戶。 只 (沒有檔案、佇列、資料表或磁片儲存體服務) 時，才會提供區塊 blob 和附加 blob。 提供與一般用途 v2 相同的持久性、可用性、擴充性和效能。 | 您無法將分頁 blob 儲存在這些帳戶中，因此無法儲存 VHD 檔案。 您可以將存取層設定為經常性存取或非經常性存取層。 |
 
@@ -147,55 +147,55 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 
 **瞭解更多資訊：**
 
-- 複習 [Azure 儲存體定價](https://azure.microsoft.com/pricing/details/storage)。
-- 瞭解 [Azure 匯入/匯出](/azure/storage/common/storage-import-export-service)。
-- 比較 [blob、檔案和磁片儲存體資料類型](/azure/storage/common/storage-decide-blobs-files-disks)。
+- 查看 [Azure 儲存體定價](https://azure.microsoft.com/pricing/details/storage/)。
+- 瞭解 [Azure 匯入/匯出](/azure/import-export/storage-import-export-service)。
+- 比較 [blob、檔案和磁片儲存體資料類型](/azure/storage/common/storage-introduction)。
 - 深入瞭解 [存取層](/azure/storage/blobs/storage-blob-storage-tiers)。
 - 檢查 [不同類型的儲存體帳戶](/azure/storage/common/storage-account-overview)。
-- 瞭解 [Azure 儲存體的冗余](/azure/storage/common/storage-redundancy)，包括 LRS、ZRS、GRS 和讀取權限 GRS。
-- 深入瞭解 [Azure 檔案儲存體](/azure/storage/files/storage-files-introduction)。
+- 深入瞭解 [Azure 儲存體冗余](/azure/storage/common/storage-redundancy)，包括 LRS、ZRS、GRS 和讀取權限 GRS。
+- 深入瞭解 [Azure](/azure/storage/files/storage-files-introduction)檔案儲存體。
 
-## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>最佳做法：利用 Azure Hybrid Benefit
+## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>最佳做法：利用 Azure 混合式權益
 
-整合內部部署 Microsoft 軟體與 Azure 的組合可為您提供競爭力和成本優勢。 如果您目前有透過軟體保證的作業系統或其他軟體授權，您可以透過 Azure Hybrid Benefit 將這些授權帶給雲端。
+整合內部部署 Microsoft 軟體與 Azure 的組合可為您提供競爭力和成本優勢。 如果您目前有透過軟體保證的作業系統或其他軟體授權，您可以透過 Azure 混合式權益，將這些授權帶到雲端。
 
 **瞭解更多資訊：**
 
-- [請看一下](https://azure.microsoft.com/pricing/hybrid-benefit) Azure Hybrid Benefit 節約計算機。
-- 深入瞭解 [Windows Server 的 Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit)。
-- 查看 [SQL Server Azure vm 的定價指導](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)方針。
+- [請看看](https://azure.microsoft.com/pricing/hybrid-benefit/) Azure 混合式權益節省計算機。
+- 深入瞭解 [適用于 Windows Server 的 Azure 混合式權益](https://azure.microsoft.com/pricing/hybrid-benefit/)。
+- 請參閱 [SQL Server Azure vm 的定價指導](/azure/azure-sql/virtual-machines/windows/pricing-guidance)方針。
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>最佳做法：使用保留的 VM 實例
 
 大部分的雲端平臺會使用隨用隨付付款模型。 此模型帶來一些缺點，因為您不一定知道工作負載的動態程度。 當您為工作負載指定清楚的意圖時，您就為基礎結構規劃做出貢獻。
 
-當您使用 Azure 保留的 VM 執行個體時，您會為 VM 實例預付一年或三年期。
+當您使用 Azure 保留的 VM 實例時，您會為 VM 實例預付一年或三年期。
 
 - 預付提供所使用資源的折扣。
 - 您可以大幅降低與隨用隨付價格相較的 VM、Azure SQL Database 計算、Azure Cosmos DB 或其他資源成本。
 - 保留會提供計費折扣，且不會影響資源的執行階段狀態。
 - 您可以取消保留執行個體。
 
-![隨用隨付和 Azure Hybrid Benefit 與保留實例比較的螢幕擷取畫面。 ](./media/migrate-best-practices-costs/reserve.png)
-_圖3： Azure 保留的 VM 執行個體。_
+![隨用隨付和 Azure 混合式權益與保留實例比較的螢幕擷取畫面。 ](./media/migrate-best-practices-costs/reserve.png)
+*圖3： Azure 保留的 VM 實例。*
 
 **瞭解更多資訊：**
 
 - 瞭解 [Azure 保留](/azure/cost-management-billing/reservations/save-compute-costs-reservations)專案。
-- 閱讀 [AZURE 保留的 VM 執行個體常見問題](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)。
-- 查看 [Azure vm 上 SQL Server 的定價指導](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)方針。
+- 閱讀 [Azure 保留的 VM 實例常見問題](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)。
+- 查看 [Azure vm 上的 SQL Server 定價指引](/azure/azure-sql/virtual-machines/windows/pricing-guidance)。
 
 ## <a name="best-practice-aggregate-cloud-spending-across-subscriptions"></a>最佳做法：跨訂用帳戶匯總雲端費用
 
 最後，您很可能會有一個以上的 Azure 訂用帳戶。 例如，您可能需要額外的訂用帳戶來將開發與生產界限分開，或者您的平台可能需要為每個用戶端使用不同的訂用帳戶。 因此，跨所有訂用帳戶將資料報告彙總到單一平台的功能非常有價值。
 
-若要這樣做，您可以使用 Azure 成本管理 + 計費 API。 然後，將資料匯總成單一來源（例如 Azure SQL Database）後，您可以使用 Power BI 之類的工具來呈現匯總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要對成本管理進行主動式見解的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
+若要這樣做，您可以使用 Azure 成本管理 + 計費 Api。 然後，將資料匯總成單一來源（例如 Azure SQL Database）之後，您就可以使用 Power BI 之類的工具來呈現匯總的資料。 您可以建立彙總的訂用帳戶報告，以及精細的報告。 例如，對於需要對成本管理進行主動式見解的使用者，您可以根據部門、資源群組或其他資訊來建立特定的成本觀點。 您不需要將完整的 Azure 帳單資料存取權提供給他們。
 
 **瞭解更多資訊：**
 
-- 閱讀 [Azure 使用量 api 總覽](/azure/billing/billing-consumption-api-overview)。
-- 瞭解如何 [連接到 Power BI Desktop 中的 Azure 使用量見解](/power-bi/desktop-connect-azure-consumption-insights)。
-- 瞭解如何 [使用 azure 角色型存取控制 (AZURE RBAC) 來管理 azure 帳單資訊的存取權 ](/azure/billing/billing-manage-access)。
+- 閱讀 [Azure 使用量 api 總覽](/azure/cost-management-billing/manage/consumption-api-overview)。
+- 瞭解如何 [在 POWER BI Desktop 中連線到 Azure 使用量見解](/power-bi/connect-data/desktop-connect-azure-consumption-insights)。
+- 瞭解如何 [使用 azure 角色型存取控制 (AZURE RBAC) 來管理 azure 帳單資訊的存取權 ](/azure/cost-management-billing/manage/manage-billing-access)。
 
 ## <a name="after-migration"></a>移轉之後
 
@@ -220,7 +220,7 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
   - 您可以將成本管理資料匯出至 Azure 儲存體，以進行分析。
 
   ![成本管理預算的螢幕擷取畫面。 ](./media/migrate-best-practices-costs/budget.png)
-  _圖4： Azure 成本管理 + 計費預算。_
+  *圖4： Azure 成本管理 + 計費預算。*
 
 - 進行成本分析來探索及分析組織成本，以協助您瞭解成本如何累積，並找出花費趨勢。
   - 成本分析可供 Enterprise 合約使用者使用。
@@ -228,15 +228,15 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
   - 您可以取得顯示當月份總成本的成本分析，以及累計每日成本。
 
   ![Azure 成本管理分析 ](./media/migrate-best-practices-costs/analysis.png)
-   _圖5： Azure 成本管理 + 帳單分析_ 的螢幕擷取畫面。
+   *圖5： Azure 成本管理 + 帳單分析* 的螢幕擷取畫面。
 
 - 取得 Advisor 建議，其中顯示如何最佳化及改進效率。
 
 **瞭解更多資訊：**
 
 - 閱讀 [Azure 成本管理 + 計費總覽](/azure/cost-management-billing/cost-management-billing-overview)。
-- 瞭解如何 [使用 Azure 成本管理 + 計費來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices)。
-- 瞭解 [Azure 成本管理 + 計費報表](/azure/cost-management/use-reports)。
+- 瞭解如何 [使用 Azure 成本管理和計費來優化您的雲端投資](/azure/cost-management-billing/costs/cost-mgt-best-practices)。
+- 深入瞭解 [Azure 成本管理 + 計費報表](/azure/cost-management-billing/cloudyn/use-reports)。
 - 取得 [從建議中將成本優化的教學](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)課程。
 - 查看 [Azure 使用量 api](/rest/api/consumption/budgets)。
 
@@ -253,9 +253,9 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
 
 **瞭解更多資訊：**
 
-- 閱讀 [Azure 監視器](/azure/azure-monitor/overview) 和 [Azure Advisor](/azure/advisor/advisor-overview)的總覽。
+- 閱讀 [Azure 監視器](/azure/azure-monitor/overview) 和 [azure Advisor](/azure/advisor/advisor-overview)的總覽。
 - [取得 Azure Advisor 成本建議](/azure/advisor/advisor-cost-recommendations)。
-- 瞭解如何 [從建議中將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)，並 [防止非預期的費用](/azure/billing/billing-getting-started)。
+- 瞭解如何 [從建議中將成本優化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)，並 [防止非預期的費用](/azure/cost-management-billing/cost-management-billing-overview)。
 - 瞭解 [ (ARO) 工具組的 Azure 資源優化](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>最佳做法：實行資源群組預算
@@ -264,12 +264,12 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
 
 **瞭解更多資訊：**
 
-- 瞭解如何 [使用 Azure 預算來管理成本](/azure/billing/billing-cost-management-budget-scenario)。
+- 瞭解如何 [使用 Azure 預算來管理成本](/azure/cost-management-billing/manage/cost-management-budget-scenario)。
 - 請參閱 [建立和管理 Azure 預算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)的教學課程。
 
-## <a name="best-practice-optimize-azure-monitor-retention"></a>最佳做法：優化 Azure 監視器保留
+## <a name="best-practice-optimize-azure-monitor-retention"></a>最佳做法：將 Azure 監視器保留優化
 
-您可以將資源移到 Azure 中並為資源啟用診斷記錄，您可以產生大量的記錄資料。 一般來說，此記錄資料會傳送至對應至 Log Analytics 工作區的儲存體帳戶。 以下是一些優化 Azure 監視器保留的秘訣：
+您可以將資源移到 Azure 中並為資源啟用診斷記錄，您可以產生大量的記錄資料。 一般來說，此記錄資料會傳送至對應至 Log Analytics 工作區的儲存體帳戶。 以下是將 Azure 監視器保留優化的一些秘訣：
 
 - 資料保留期間越長，您有的資料就越多。
 - 並非所有記錄資料都相等，某些資源將會產生比其他資源更多的資料。
@@ -279,7 +279,7 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
 
 **瞭解更多資訊：**
 
-- 瞭解如何 [監視使用量和估計成本](/azure/azure-monitor/platform/usage-estimated-costs)。
+- 瞭解如何 [監視使用量和估計成本](/azure/azure-monitor/usage-estimated-costs)。
 
 ## <a name="best-practice-optimize-storage"></a>最佳做法：將儲存體優化
 
@@ -294,7 +294,7 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
 
 - 深入瞭解 [存取層](/azure/storage/blobs/storage-blob-storage-tiers)。
 - 閱讀 [StorSimple 總覽](/azure/azure-monitor/overview)。
-- 檢查 [StorSimple 定價](https://azure.microsoft.com/pricing/details/storsimple)。
+- 檢查 [StorSimple 定價](https://azure.microsoft.com/pricing/details/storsimple/)。
 
 ## <a name="best-practice-automate-vm-optimization"></a>最佳做法：自動化 VM 優化
 
@@ -305,33 +305,33 @@ Microsoft 提供 Azure 成本管理 + 計費，以協助您追蹤費用。 此�
 **瞭解更多資訊：**
 
 - 瞭解 [垂直](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)自動調整。
-- [排程 VM 自動啟動](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start)。
+- [排程 VM 自動啟動](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start/)。
 - 瞭解如何 [在 Azure 自動化中啟動或停止 vm 的停機時間](/azure/automation/automation-solution-vm-management)。
-- 取得 [Azure Advisor](/azure/advisor/advisor-overview)的詳細資訊，以及 [Azure 資源優化 (ARO) 工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
+- 取得 [Azure Advisor](/azure/advisor/advisor-overview)的詳細資訊，以及 [azure 資源優化 (ARO) 工具](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)組。
 
-## <a name="best-practices-use-azure-logic-apps-and-runbooks-with-budgets-api"></a>最佳做法：使用 Azure Logic Apps 和 runbook 搭配預算 API
+## <a name="best-practices-use-azure-logic-apps-and-runbooks-with-budgets-api"></a>最佳做法：使用 Azure 邏輯應用程式和 runbook 搭配預算 API
 
-Azure 提供 REST API，它可以存取您的租用戶帳單資訊。 您可以使用預算 API 來整合外部系統與工作流程 (透過您從 API 資料建置的計量觸發)。 您可以將使用量與資源資料提取到您慣用的資料分析工具中。 您可以將預算 API 與 Azure Logic Apps 和 runbook 整合。
+Azure 提供 REST API，它可以存取您的租用戶帳單資訊。 您可以使用預算 API 來整合外部系統與工作流程 (透過您從 API 資料建置的計量觸發)。 您可以將使用量與資源資料提取到您慣用的資料分析工具中。 您可以將預算 API 與 Azure 邏輯應用程式和 runbook 整合。
 
 Azure 資源使用情況和 RateCard API 可協助您準確地預測並管理成本。 這些 Api 會實作為資源提供者，並包含在 Azure Resource Manager 所公開的 Api 中。
 
 **瞭解更多資訊：**
 
 - 查看 [Azure 預算 API](/rest/api/consumption/budgets)。
-- 利用 [Azure 計費 API](/azure/billing/billing-usage-rate-card-overview)取得使用方式的見解。
+- 深入瞭解 [Azure 計費 api](/azure/cost-management-billing/manage/consumption-api-overview#usage-details-api)的使用方式。
 
 ## <a name="best-practice-implement-serverless-technologies"></a>最佳做法：實施無伺服器技術
 
 VM 工作負載通常會「依原樣」遷移，以避免停機。 通常，Vm 可以裝載間歇執行、短時間執行的工作，或花費數小時的時間。 範例包括執行排程工作的 Vm，例如 Windows 工作排程器或 PowerShell 腳本。 當這些工作未執行時，您仍然必須吸收 VM 與磁碟儲存體成本。
 
-在遷移並徹底檢查這些類型的工作之後，您可以考慮將它們遷移到無伺服器技術，例如 Azure Functions 或 Azure Batch 作業。 這些解決方案可以降低成本，而您不再需要管理及維護 Vm。
+在遷移並徹底檢查這些類型的工作之後，您可以考慮將它們遷移至無伺服器技術，例如 Azure 函數或 Azure Batch 作業。 這些解決方案可以降低成本，而您不再需要管理及維護 Vm。
 
 **瞭解更多資訊：**
 
-- 了解 [Azure Functions](https://azure.microsoft.com/services/functions)。
-- 了解 [Azure Batch](https://azure.microsoft.com/services/batch)。
+- 了解 [Azure Functions](https://azure.microsoft.com/services/functions/)。
+- 了解 [Azure Batch](https://azure.microsoft.com/services/batch/)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 檢閱其他最佳做法：
 

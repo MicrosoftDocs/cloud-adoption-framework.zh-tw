@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 4c709429bf6d45c231b7aa44e6fa81af9b605fe1
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: b7ddc0641e1aaecf2828e74234c0daf5c9b1216b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909458"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786170"
 ---
 # <a name="define-your-naming-convention"></a>定義您的命名慣例
 
@@ -128,7 +128,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 
 | 資產類型 | 影響範圍 | 格式和範例 |
 |--|--|--|
-| **儲存體帳戶 (一般用途)** | 全球 | _聖\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
+| **儲存體帳戶 (一般用途)** | 全球 | _st\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
 | **儲存體帳戶 (診斷記錄)** | 全球 | _stdiag\<first 2 letters of subscription name and number>\<region>\<###>_ <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
 | **Azure StorSimple** | 全球 | _ssimp\<app name>-\<environment>_ <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
 | **Azure Container Registry** | 全球 | _Acr\<app name>\<environment>\<###>_ <br><br> <li> `acrnavigatorprod001` |
@@ -164,7 +164,7 @@ _圖2： Azure 資源名稱的範圍層級。_
 | **服務匯流排佇列** | 服務匯流排 | _sbq-\<query descriptor>_ <br><br> <li> `sbq-messagequery` |
 | **服務匯流排主題** | 服務匯流排 | _sbt\<query descriptor>_ <br><br> <li> `sbt-messagequery` |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在命名資源和資產時，請參閱建議的縮寫以用於各種 Azure 資源類型。
 

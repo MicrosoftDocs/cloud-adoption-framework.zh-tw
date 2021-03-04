@@ -1,19 +1,19 @@
 ---
 title: 將現有的 Azure 環境轉換成企業規模
 description: 將現有環境上線至企業規模架構
-author: BrianBlanchard
+author: JefferyMitchell
 ms.author: brblanch
 ms.date: 10/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: fba46a86e0b1d71d37e9bfe5ceb25afde8043b87
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: ab93248b465053b7eba13ce490395d4388e51375
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632336"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785779"
 ---
 <!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
 
@@ -25,12 +25,12 @@ ms.locfileid: "100632336"
 
 ## <a name="moving-resources-in-azure"></a>在 Azure 中移動資源
 
-您可以在建立後移動 Azure 中的某些資源，而且有不同的方法可讓組織依使用者的 Azure RBAC 許可權（以及跨範圍）。 下表概述哪些資源可以移動、哪些範圍，以及與每個資源相關聯的優缺點。
+您可以在建立後移動 Azure 中的某些資源，而且有不同的方法可讓組織在範圍內和跨範圍的使用者 Azure RBAC 許可權。 下表概述哪些資源可以移動、哪些範圍，以及與每個資源相關聯的優缺點。
 
 | 影響範圍 | Destination | 優點 | 缺點 |
 |--|--|--|--|
-| 資源群組中的資源 | 可移至相同或不同訂用帳戶中的新資源群組  | 可讓您在部署之後修改資源群組中的資源組合 | -所有 resourceTypes 都不支援 <br> -某些 resourceTypes 有特定的限制或需求 <br> -Resourceid 會更新並影響現有的監視、警示和控制平面作業 <br> -在移動期間鎖定資源群組 <br> -需要評估原則和 RBAC 的前置和移動後作業 |
-| 租使用者中的訂用帳戶  | 可移至不同的管理群組 | 因為不會變更 resourceId 值，所以不會影響訂用帳戶內的現有資源 | 需要評估原則和 RBAC 的前置和移動後作業 |
+| 資源群組中的資源 | 可移至相同或不同訂用帳戶中的新資源群組 | 可讓您在部署之後修改資源群組中的資源組合 | -所有 resourceTypes 都不支援 <br> -某些 resourceTypes 有特定的限制或需求 <br> -Resourceid 會更新並影響現有的監視、警示和控制平面作業 <br> -在移動期間鎖定資源群組 <br> -需要評估原則和 RBAC 的前置和移動後作業 |
+| 租使用者中的訂用帳戶 | 可移至不同的管理群組 | 因為不會變更 resourceId 值，所以不會影響訂用帳戶內的現有資源 | 需要評估原則和 RBAC 的前置和移動後作業 |
 
 為了瞭解您應使用的移動策略，我們將逐步解說兩者的範例：
 
@@ -48,17 +48,17 @@ ms.locfileid: "100632336"
 
 現有的訂用帳戶可能會受限於直接指派的 Azure 原則，或位於其目前所在的管理群組。 評估目前的原則，以及可能存在於新管理群組/管理群組階層中的原則，是很重要的。
 
-Azure Resource Graph 可以用來執行現有資源的清查，並將其設定與目的地現有的原則進行比較。
+您可以使用 Azure Resource Graph 來執行現有資源的清查，並將其設定與目的地現有的原則進行比較。
 
 一旦將訂用帳戶移至具有現有 Azure RBAC 和原則的管理群組之後，請考慮下列選項：
 
 - 任何繼承至已移動訂用帳戶的 Azure RBAC 最多可能需要30分鐘的時間，管理群組快取中的使用者權杖才會重新整理。 若要加速此程式，您可以藉由登出和或要求新的權杖來重新整理權杖。
 - 指派範圍包含已移動之訂用帳戶的任何原則，都只會對現有的資源執行審核作業。 具體而言：
-  - 訂用帳戶中的任何現有資源（受限於 **deployIfNotExists** 原則效果）將會顯示為不符合規範，且不會自動補救，但需要使用者互動以手動執行補救。
-  - 訂用帳戶中的任何現有資源（受 **拒絕** 原則影響）將會顯示為不符合規範，且不會被拒絕。 使用者必須視需要手動減輕此結果。
-  - 訂用帳戶中任何符合 **附加** 和 **修改** 原則效果的現有資源會顯示為不符合規範，且需要使用者互動才能緩和。
-  - 訂用帳戶中任何現有的資源會受到 **audit** 和 **auditIfNotExist** 的規範，且需要使用者互動才能緩和。
-- 針對已移動訂用帳戶中資源的所有新寫入，將會以正常的方式即時受指派的原則。
+  - 訂用帳戶中任何 `DeployIfNotExists` 符合原則效果的現有資源都會顯示為不符合規範，且不會自動補救，但需要使用者互動以手動執行補救。
+  - 訂用帳戶中任何 `Deny` 符合原則效果的現有資源將會顯示為不符合規範，且不會被拒絕。 使用者必須視需要手動減輕此結果。
+  - 訂用帳戶中的任何現有資源 `Append` （受限於和 `Modify` 原則效果）將會顯示為不符合規範，且需要使用者互動才能減輕。
+  - 訂用帳戶中的任何現有資源 `Audit` （受限於和 `AuditIfNotExist` 原則效果）將會顯示為不符合規範，且需要使用者互動才能減輕。
+- 在移動的訂用帳戶中，所有對資源的新寫入會以正常的方式即時受指派原則的制約。
 
 ## <a name="resource-move"></a>資源移動
 
@@ -72,4 +72,4 @@ Azure Resource Graph 可以用來執行現有資源的清查，並將其設定�
 
 ### <a name="post-move-operation"></a>移動後操作
 
-當資源移到相同訂用帳戶中的新資源群組時，仍會套用來自管理群組或/和訂用帳戶範圍的任何繼承 Azure RBAC 和原則。 如果您移至新訂用帳戶中的資源群組，其中訂用帳戶可能會受限於其他 Azure RBAC 和原則指派，則相同的指導方針適用于移動訂用帳戶案例，以驗證資源合規性和存取控制。
+當資源移到相同訂用帳戶中的新資源群組時，仍會套用來自管理群組或/和訂用帳戶範圍的任何繼承 Azure RBAC 和原則。 如果您移至新訂用帳戶中的資源群組-其中訂用帳戶可能會受限於其他 Azure RBAC 和原則指派，則相同的指導方針適用于移動訂用帳戶案例，以驗證資源合規性和存取控制。

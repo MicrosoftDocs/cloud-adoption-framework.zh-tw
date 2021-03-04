@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 51dd3a160c0eb52986b0f798c92d243014b560e6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: 5f5b6c001cc9712e9ce21c022af375d353dc6f43
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025192"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784861"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>雲端採用架構移轉模型
 
@@ -30,7 +30,7 @@ ms.locfileid: "97025192"
 
 ## <a name="envision-an-end-state"></a>構想最終狀態
 
-開始進行移轉工作之前，請務必建立最終狀態的粗略願景。 下圖顯示基礎結構、應用程式和資料的內部部署起點，此起點定義您的「數位資產」。 在移轉程序期間，這些資產會使用[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)中所述五個移轉策略的其中一個來轉換。
+開始進行移轉工作之前，請務必建立最終狀態的粗略願景。 下圖顯示基礎結構、應用程式和資料的內部部署起點，可定義您的 *數位資產*。 在移轉程序期間，這些資產會使用[合理化的五 R 策略](../../digital-estate/5-rs-of-rationalization.md)中所述五個移轉策略的其中一個來轉換。
 
 ![移轉選項的資訊圖](../../_images/migrate/migration-options.png)
 

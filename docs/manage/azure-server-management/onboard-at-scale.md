@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 2f4ddeb537e958ae6582fd66e8fad613266d7ef4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fab9e826186f9eb915a9c3499af5771a84979a60
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017083"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785167"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -37,16 +37,16 @@ ms.locfileid: "97017083"
 
 [Azure 管理工具和服務](./tools-services.md)中討論的所有管理解決方案都需要在 azure 中的虛擬機器以及內部部署伺服器上安裝 Log Analytics 代理程式。 您可以使用 Azure 原則來大規模上架 Azure Vm。 指派原則，以確保代理程式已安裝在您的 Azure Vm 上，並已連線到正確的 Log Analytics 工作區。
 
-Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/definition-structure#initiatives) ，其中包含適用於 VM 的 Azure 監視器所需的 Log Analytics 代理程式和 [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent)。
+Azure 原則有 [內建的原則方案](/azure/governance/policy/concepts/definition-structure#initiatives) ，其中包含適用于 Vm 的 azure 監視器所需的 Log Analytics 代理程式和 [Microsoft Dependency agent](/azure/azure-monitor/vm/vminsights-enable-overview#the-microsoft-dependency-agent)。
 
 > [!NOTE]
-> 如需監視 Azure 的各種代理程式的詳細資訊，請參閱 [azure 監視代理](/azure/azure-monitor/platform/agents-overview)程式的總覽。
+> 如需監視 Azure 的各種代理程式的詳細資訊，請參閱 [azure 監視代理](/azure/azure-monitor/agents/agents-overview)程式的總覽。
 
 ### <a name="assign-policies"></a>指派原則
 
 若要指派上一節中所述的原則：
 
-1. 在 Azure 入口網站中，移至 [**原則**  >  **指派**  >  **指派方案**]。
+1. 在 Azure 入口網站中，移至 **原則**  >  **指派**  >  **指派方案**。
 
     ![入口網站的原則介面螢幕擷取畫面，其中包含指派選項和指派方案選項（稱為 out）。](./media/onboarding-at-scale1.png)
 
@@ -54,7 +54,7 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 3. 選取 [**原則定義**] 旁的省略號 (**...**) 以開啟可用定義的清單。 若要篩選計畫定義，請在 [**搜尋**] 方塊中輸入 **Azure 監視器**：
 
-    ![針對 V M 方案定義啟用 Azure 監視器的螢幕擷取畫面。](./media/onboarding-at-scale2.png)
+    ![啟用適用于 App-v M 方案定義的 Azure 監視器的螢幕擷取畫面。](./media/onboarding-at-scale2.png)
 
 4. **指派名稱** 會自動填入您選取的原則名稱，但您可以加以變更。 您也可以新增選擇性的描述，以提供有關此原則指派的詳細資訊。 [ **指派者** ] 欄位會自動填入已登入的使用者。 此為選擇性欄位，而且支援自訂值。
 
@@ -66,14 +66,14 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 7. 選取 [指派]。
 
-完成嚮導之後，原則指派將會部署至環境。 原則可能需要30分鐘的時間才會生效。 若要進行測試，請在30分鐘之後建立新的 Vm，並根據預設，檢查 VM 上的 Microsoft Monitoring Agent 是否已啟用。
+完成嚮導之後，原則指派將會部署至環境。 原則可能需要30分鐘的時間才會生效。 若要進行測試，請在30分鐘之後建立新的 Vm，並檢查預設是否已在 VM 上啟用 Microsoft Monitoring Agent。
 
 ## <a name="install-agents-on-on-premises-servers"></a>在內部部署伺服器上安裝代理程式
 
 > [!NOTE]
-> 請先建立必要的 [Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account) ，再將 Azure 伺服器管理服務上架到伺服器。
+> 在您將 Azure 伺服器管理服務上線至伺服器之前，請先建立必要的 [Log Analytics 工作區和 Azure 自動化帳戶](./prerequisites.md#create-a-workspace-and-automation-account) 。
 
-針對內部部署伺服器，您必須手動下載並安裝 [Log Analytics 代理程式和 Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) ，並將其設定為連線至正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請移至 Azure 入口網站中的 Log Analytics 工作區，然後選取 [**設定**  >  **Advanced settings**]。
+針對內部部署伺服器，您必須手動下載並安裝 [Log Analytics 代理程式和 Microsoft Dependency agent](/azure/azure-monitor/vm/vminsights-enable-hybrid) ，並將其設定為連接到正確的工作區。 您必須指定工作區識別碼和金鑰資訊。 若要取得該資訊，請在 Azure 入口網站中移至您的 Log Analytics 工作區，然後選取 [**設定**  >  **Advanced settings**]。
 
 ![Azure 入口網站中 Log Analytics 工作區 advanced 設定的螢幕擷取畫面](./media/onboarding-on-premises.png)
 
@@ -83,19 +83,19 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 ### <a name="update-management"></a>更新管理
 
-更新管理解決方案和變更追蹤和清查解決方案都需要 Log Analytics 工作區和 Azure 自動化帳戶。 為確保這些資源已正確設定，建議您在自動化帳戶上架。 如需詳細資訊，請參閱 [更新管理解決方案上架和變更追蹤和清查解決方案](/azure/automation/change-tracking/manage-change-tracking)。
+更新管理解決方案和變更追蹤和清查解決方案都需要 Log Analytics 工作區和 Azure 自動化帳戶。 為確保這些資源已正確設定，建議您在自動化帳戶上架。 如需詳細資訊，請參閱 [將更新管理解決方案上線，以及變更追蹤和清查解決方案](/azure/automation/change-tracking/manage-change-tracking)。
 
-建議您為所有伺服器啟用更新管理的解決方案。 適用于 Azure Vm 和內部部署伺服器的更新管理免費。 如果您透過自動化帳戶啟用更新管理，工作區中就會建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理解決方案所涵蓋的電腦。
+建議您為所有伺服器啟用更新管理解決方案。 適用于 Azure Vm 和內部部署伺服器的「更新管理」是免費的。 如果您透過自動化帳戶啟用「更新管理」，則會在工作區中建立 [範圍](/azure/automation/change-tracking/manage-change-tracking) 設定。 手動更新範圍，以包含更新管理解決方案所涵蓋的機器。
 
-若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取[  >    >  **在所有可用及未來的機器上** 更新管理管理機器]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
+若要涵蓋您現有的伺服器以及未來的伺服器，您需要移除範圍設定。 若要這樣做，請在 Azure 入口網站中查看您的自動化帳戶。 選取 [**更新管理**]  >  **管理**  >  **所有可用及未來機器上的 [啟用** 電腦]。 此設定可讓連線至工作區的所有 Azure Vm 使用更新管理。
 
 ![Azure 入口網站中更新管理的螢幕擷取畫面](./media/onboarding-configuration1.png)
 
 ### <a name="change-tracking-and-inventory-solutions"></a>變更追蹤和清查解決方案
 
-若要將變更追蹤和清查解決方案上架，請依照更新管理的相同步驟執行。 如需有關如何將這些解決方案從您的自動化帳戶上架的詳細資訊，請參閱 [更新管理方案和變更追蹤和清查解決方案上架](/azure/automation/change-tracking/manage-change-tracking)。
+若要將變更追蹤和清查解決方案上架，請遵循與更新管理相同的步驟。 如需如何從自動化帳戶將這些解決方案上線的詳細資訊，請參閱 [將更新管理解決方案上線，以及變更追蹤和清查解決方案](/azure/automation/change-tracking/manage-change-tracking)。
 
-適用于內部部署伺服器的變更追蹤和清查解決方案免費，適用于 Azure Vm 和每月每節點 $6 成本。 此成本涵蓋變更追蹤、清查及 Desired State Configuration。 如果您只想要註冊特定的內部部署伺服器，您可以選擇這些伺服器。 建議您將所有的實際執行伺服器上架。
+適用于 Azure Vm 的變更追蹤和清查解決方案免費，且內部部署伺服器每個節點的成本為 $6。 此成本涵蓋變更追蹤、清查和預期狀態設定。 如果您只想要註冊特定的內部部署伺服器，您可以選擇這些伺服器。 建議您將所有的實際執行伺服器上架。
 
 #### <a name="opt-in-via-the-azure-portal"></a>透過 Azure 入口網站加入宣告
 
@@ -134,14 +134,14 @@ Azure 原則具有 [內建原則方案](/azure/governance/policy/concepts/defini
 
 ### <a name="azure-activity-log"></a>Azure 活動記錄檔
 
-[Azure 活動記錄](/azure/azure-monitor/platform/activity-logs-overview) 也是 Azure 監視器的一部分。 它可讓您深入瞭解 Azure 中發生的訂用帳戶層級事件。
+[Azure 活動記錄](/azure/azure-monitor/essentials/platform-logs-overview) 也是 azure 監視器的一部分。 它可讓您深入瞭解 Azure 中發生的訂用帳戶層級事件。
 
 若要執行此解決方案：
 
 1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
-3. 搜尋 **活動記錄分析** ，然後選取它。
-4. 選取 [建立]。
+3. 搜尋 **活動記錄分析** 並加以選取。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
@@ -154,7 +154,7 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
 3. 搜尋 **Azure Log Analytics 代理程式健康** 情況，然後選取它。
-4. 選取 [建立]。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
@@ -166,10 +166,10 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 
 若要執行此解決方案：
 
-1. 在 Azure 入口網站中，開啟 [**所有服務**]，選取 [**管理 + 治理**  >  **解決方案**]。
+1. 在 Azure 入口網站中，開啟 [**所有服務**]，然後選取 [**管理 + 治理**  >  **解決方案**]。
 2. 在 [ **方案** ] 視圖中，選取 [ **新增**]。
-3. 搜尋，然後選取 [ **反惡意程式碼軟體評定**]。
-4. 選取 [建立]。
+3. 搜尋並選取 **反惡意程式碼評估**。
+4. 選取 [建立]  。
 
 您必須指定您在上一節中為啟用解決方案的工作區所建立的 **工作區名稱** 。
 
@@ -177,13 +177,13 @@ Azure Log Analytics 代理程式健全狀況解決方案會報告您 Windows 和
 
 ### <a name="azure-monitor-for-vms"></a>適用於 VM 的 Azure 監視器
 
-您可以透過 VM 實例的 [view] 頁面啟用 [適用於 VM 的 Azure 監視器](/azure/azure-monitor/insights/vminsights-overview) ，如在 [單一 VM 上啟用管理服務以進行評估](./onboard-single-vm.md)所述。 您不應該直接從 [ **方案** ] 頁面啟用解決方案，如同本文所述的其他解決方案一樣。 針對大規模部署，使用 [自動化](./onboarding-automation.md) 可在工作區中啟用正確的解決方案可能會比較容易。
+您可以透過 VM 實例的 view 頁面啟用適用 [于 vm 的 Azure 監視器](/azure/azure-monitor/vm/vminsights-overview) ，如在 [單一 VM 上啟用管理服務以進行評估](./onboard-single-vm.md)所述。 您不應該直接從 [ **方案** ] 頁面啟用解決方案，如同本文所述的其他解決方案一樣。 針對大規模部署，使用 [自動化](./onboarding-automation.md) 可在工作區中啟用正確的解決方案可能會比較容易。
 
 ### <a name="azure-security-center"></a>Azure 資訊安全中心
 
-建議您至少將所有伺服器上架到 Azure 資訊安全中心的免費層。 此選項可為您的環境提供基本的安全性評定和可採取動作的安全性建議。 標準層提供額外的好處。 如需詳細資訊，請參閱 [Azure 資訊安全中心定價](/azure/security-center/security-center-pricing)。
+建議您至少將所有伺服器上架到 Azure 安全中心的免費層。 此選項可為您的環境提供基本的安全性評定和可採取動作的安全性建議。 標準層提供額外的好處。 如需詳細資訊，請參閱 [Azure 資訊安全中心定價](/azure/security-center/security-center-pricing)。
 
-若要啟用 Azure 資訊安全中心的免費層，請遵循下列步驟：
+若要啟用 Azure 安全中心的免費層，請遵循下列步驟：
 
 1. 移至 [ **Security Center** 入口網站] 頁面。
 2. 在 [ **原則 & 合規性**] 底下，選取 [ **安全性原則**]。

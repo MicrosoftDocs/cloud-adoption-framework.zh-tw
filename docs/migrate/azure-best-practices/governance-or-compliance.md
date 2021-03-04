@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: bb8b123e4b1414a63d58a23e9ca71e5723b39149
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ef20ca5c73424ff5d8f1338f1838efb41ad9138c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013683"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786952"
 ---
 # <a name="governance-or-compliance-strategy"></a>治理或合規性策略
 
@@ -29,7 +29,7 @@ ms.locfileid: "97013683"
 
 **常見的治理方法：** 對於大部分的組織而言， [雲端採用架構治理模型](../../govern/guides/index.md) 是一種足夠的方法。 它是由 (MVP) 實行的最小可行產品所組成，後面接著治理成熟度的目標反復專案，以解決採用計畫中所識別的有形風險。 此方法會提供建立一致性治理所需的最低限度工具，因此小組能夠了解這些工具。 接著，此方法會詳述這些用來解決常見治理顧慮的工具。
 
-**國際標準組織 (ISO) 27001 合規性藍圖：** 如果您的組織需要遵守 ISO 合規性標準， [iso 27001 共用服務藍圖範例](/azure/governance/blueprints/samples/iso27001-shared) 可以成為更有效的 MVP。 藍圖可以產生更豐富的治理條件約束，稍早在反復的流程中。 [ISO 27001 App Service 環境/SQL Database 工作負載藍圖範例](/azure/governance/blueprints/samples/iso27001-ase-sql-workload)會在共用服務藍圖上展開，以對應控制項並部署應用程式環境的通用架構。
+**國際標準組織 (ISO) 27001 合規性藍圖：** 如果您的組織需要遵守 ISO 合規性標準， [iso 27001 共用服務藍圖範例](/azure/governance/blueprints/samples/iso27001-shared/) 可以成為更有效的 MVP。 藍圖可以產生更豐富的治理條件約束，稍早在反復的流程中。 [Iso 27001 App Service 環境/SQL Database 工作負載藍圖範例](/azure/governance/blueprints/samples/iso27001-ase-sql-workload/)會擴充 Iso 27001 共用服務藍圖，以對應控制項並部署應用程式環境的通用架構。
 
 **雲端採用架構企業規模登陸區域：** 您可能需要更健全的治理起點。 如果有，請考慮採用 [雲端採用架構的企業規模登陸區域](../../ready/enterprise-scale/index.md)。 雲端採用架構的企業規模登陸區域方法著重于在24個月內擁有長期目標 (的採用小組) 裝載超過1000的資產 (應用程式、基礎結構或資料資產) 在雲端中。 雲端採用架構企業規模登陸區域是針對這些大型雲端採用工作的複雜治理案例的選擇。
 
@@ -67,7 +67,7 @@ ms.locfileid: "97013683"
 
 在此過程中，專案計劃應該包含雲端治理小組針對生產升級規劃的每個工作負載執行合規性審查的時間配置。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 返回檢查清單，以重新評估遷移工作的任何其他範圍需求。
 

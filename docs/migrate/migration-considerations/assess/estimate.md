@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 8384ffe2a291b82cea444e61974b045c72077bea
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e144cd7dcc796634c7231d8971858ea11828e001
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025260"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784878"
 ---
 # <a name="estimate-cloud-costs"></a>估計雲端成本
 
@@ -35,7 +35,7 @@ ms.locfileid: "97025260"
 
 如果想要將舊版的資本支出方法複寫到會計，請使用上述的 [數位資產大小](#digital-estate-size) 一節所建議的任一種方法的輸出，以取得年度成本單位。 接下來，將年度成本乘以公司的一般硬體更新週期。 硬體更新週期是指公司更換過時硬體的速率，通常以年計算。 每年執行率乘以硬體更新週期，會建立類似於資本支出投資模式的成本結構。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 估計成本之後，即可開始進行移轉。 不過，在開始進行任何移轉之前，最好先檢閱合作關係和支援選項。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 5a5d279ea5da00c3fa9b2f2ad311cf528c21b0af
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5e026a46a8c7b49bba64a73aadb1bac815d2ec2b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024733"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784759"
 ---
 # <a name="cloud-operations-functions"></a>雲端作業功能
 
@@ -30,12 +30,12 @@ ms.locfileid: "97024733"
 - DevOps 團隊
 
 > [!IMPORTANT]
-> 負責雲端營運的個人或團隊通常負責在修復期間對設定進行被動變更。 它們也可能會負責主動式設定變更，以將操作中斷降至最低。 根據組織的雲端作業模式，這些變更可透過基礎結構即程式碼、Azure Pipelines 或入口網站中的直接設定來傳遞。 因為作業小組可能會有較高的許可權，所以填妥此角色的人員必須遵循身分 [識別和存取控制最佳做法](/azure/security/benchmarks/security-control-identity-access-control) ，以將非預期的存取或生產變更降至最低。
+> 負責雲端營運的個人或團隊通常負責在修復期間對設定進行被動變更。 它們也可能會負責主動式設定變更，以將操作中斷降至最低。 根據組織的雲端作業模式，這些變更可透過基礎結構即程式碼、Azure 管線或入口網站中的直接設定來傳遞。 因為作業小組可能會有較高的許可權，所以填妥此角色的人員必須遵循身分 [識別和存取控制最佳做法](/azure/security/benchmarks/security-control-identity-access-control) ，以將非預期的存取或生產變更降至最低。
 
 ## <a name="preparation"></a>準備
 
-- [管理 Azure 中的資源](/learn/paths/manage-resources-in-azure/)：瞭解如何透過 Azure CLI 和入口網站來建立、管理及控制雲端式資源。
-- [Azure 網路服務](/learn/modules/intro-to-azure-networking/)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
+- [管理 azure 中的資源](/learn/paths/manage-resources-in-azure/)：瞭解如何透過 azure CLI 和入口網站來建立、管理及控制雲端式資源。
+- [Azure 網路服務](/learn/modules/azure-networking-fundamentals/)：瞭解 azure 網路功能的基本概念，以及如何提升復原能力並減少延遲。
 
 請檢閱下列各項：
 
@@ -72,7 +72,7 @@ ms.locfileid: "97024733"
 
 針對低層級技術資產維護目前狀態作業的傳統 IT 作業，不在雲端營運團隊的範圍內。 儲存體、CPU、記憶體、網路設備、伺服器和虛擬機器主機等專案都需要持續維護、監視、修復和補救問題，以維護尖峰作業。 在雲端中，其中許多資本成本和營運活動都會轉移給雲端提供者。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 隨著採用和作業規模的考慮，請務必定義和自動化治理的最佳做法，以擴充現有的 IT 需求。 形成雲端卓越中心是調整雲端採用、雲端營運和雲端治理工作的重要步驟。
 

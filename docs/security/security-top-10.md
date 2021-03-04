@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 0c5fed524999b0aa083d81af90de40084b497eae
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: addf252cc68e0a7bb2f7435e3d17804bdb09c38a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713025"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786068"
 ---
 # <a name="azure-security-best-practices"></a>Azure 安全性最佳做法
 
@@ -79,7 +79,7 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
     - [適用于 azure 的安全性基準](/azure/security/benchmarks/security-baselines-overview) -ASB 至個別 Azure 服務的應用程式
   - [Microsoft 安全性最佳作法](/security/compass/microsoft-security-compass-introduction) -影片和檔
 - Azure 法規遵循
-  - Azure 資訊安全中心的[法規合規性](/azure/security-center/security-center-compliance-dashboard)評估
+  - Azure 安全性中心的[法規合規性](/azure/security-center/security-center-compliance-dashboard)評估
 - 身分識別通訊協定和安全性
   - [Azure 安全性檔案網站](/azure/security/)
   - Azure AD 驗證 [YouTube 系列](https://www.youtube.com/playlist?list=PLLasX02E8BPD5vC2XHS_oHaMVmaeHHPLy)
@@ -109,11 +109,11 @@ Microsoft 提供廣泛的資源，協助技術專業人員提升 Azure 資源的
 | 決策         | 描述           | 一般小組  |
 | ------------- |-------------| -----|
 | 網路安全性 | Azure 防火牆的設定和維護、網路虛擬裝置 (以及相關聯的路由) 、Waf、Nsg、Asg 等。 | _[基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md)小組通常著重于網路安全性_  |
-| 網路管理 | 企業級的虛擬網路和子網配置  | _一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組_ |
-| 伺服器端點安全性 | 監視及修復伺服器安全性 (修補、設定、端點安全性等 )   | _通常 [中央 IT 營運](../organize/central-it.md) 和 [基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md) 小組共同合作_ |
-| 事件監視和回應 | 調查和補救 SIEM 或來源主控台中的安全性事件 (Azure 資訊安全中心、Azure AD Identity Protection 等 )  | _一般 [安全性作業](../organize/cloud-security-operations-center.md) 小組_ |
-| 原則管理 | 設定 azure 角色型存取控制的使用方向 (Azure RBAC) 、Azure 資訊安全中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | _通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_ |
-| 身分識別安全性與標準 | Azure AD 目錄、PIM/PAM 使用量、MFA、密碼/同步處理設定、應用程式識別標準的設定方向 | _通常是身分 [識別與金鑰管理](../organize/cloud-security-identity-keys.md)  +  [原則以及標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_  |
+| 網路管理 | 企業級的虛擬網路和子網配置 | _一般來說 [，在中央 IT 作業](../organize/central-it.md)中，現有的網路作業小組_ |
+| 伺服器端點安全性 | 監視及修復伺服器安全性 (修補、設定、端點安全性等 )  | _通常 [中央 IT 營運](../organize/central-it.md) 和 [基礎結構和端點安全性](../organize/cloud-security-infrastructure-endpoint.md) 小組共同合作_ |
+| 事件監視和回應 | 調查和補救 SIEM 或來源主控台中的安全性事件， (Azure 資訊安全中心、Azure AD Identity Protection 等 )  | _一般 [安全性作業](../organize/cloud-security-operations-center.md) 小組_ |
+| 原則管理 | 設定 Azure 角色型存取控制的使用方向 (Azure RBAC) 、Azure 安全性中心、系統管理員保護原則，以及用來管理 Azure 資源的 Azure 原則 | _通常是 [原則和標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_ |
+| 身分識別安全性與標準 | 設定 Azure AD 目錄、PIM/PAM 使用量、MFA、密碼/同步處理設定、應用程式識別標準的方向 | _通常是身分 [識別與金鑰管理](../organize/cloud-security-identity-keys.md)  +  [原則以及標準](../organize/cloud-security-policy-standards.md)  +  [安全性架構](../organize/cloud-security-architecture.md)小組共同_  |
 
 > [!NOTE]
 >
@@ -149,9 +149,9 @@ _您沒有時間規劃危機期間的危機。_
 
 **重要焦點區域**：雖然資源連結中說明了許多詳細資料，但這些都是專注于教育和規劃工作的重要區域：
 
-- **共用的責任模型和雲端架構：** 對安全性分析師而言，Azure 是一種軟體定義的資料中心，可提供許多服務，包括 (熟悉) 的 Vm，以及與內部部署非常不同的 Vm （例如 Azure SQL Azure Functions 等），其中最適合的資料位於服務記錄或特製化的威脅偵測服務中，而不是由) Microsoft 所營運的基礎 OS/ (Vm 的記錄檔或專門的威脅 分析師需要瞭解此內容，並將其整合到其每日工作流程中，以便他們知道預期的資料、取得的位置，以及其所要的格式。
-- **端點資料來源：** 使用原生雲端偵測工具（例如 Azure 資訊安全中心和 EDR 系統）（而不是傳統的直接磁片存取方法），在雲端裝載的伺服器上取得攻擊和惡意程式碼的見解和資料通常更快、更容易且更準確。 雖然直接磁片剖析適用于法律訴訟 (電腦取證的情況，但 [在 Azure) 中](/azure/architecture/example-scenario/forensics/) ，這通常是偵測和調查攻擊的最沒有效率的方法。
-- **網路和身分識別資料來源：** 雲端平臺的許多功能主要是使用身分識別來進行存取控制，例如存取 Azure 入口網站 (但是網路存取控制也廣泛使用) 。 這需要分析師開發人員瞭解雲端身分識別通訊協定，以取得完整、豐富的攻擊者活動 (和合法的使用者活動) 來支援事件調查和補救。 身分識別目錄和通訊協定也會與內部部署不同，因為它們通常是以 SAML、OAuth、OIDC 和雲端目錄為基礎，而不是 LDAP、Kerberos、NTLM 和通常在內部部署環境中找到的 Active Directory。
+- **共用的責任模型和雲端架構：** 對安全性分析師而言，Azure 是一種軟體定義的資料中心，提供許多服務，包括 (熟悉) 的 Vm，以及與內部部署非常不同的 Vm （例如 Azure SQL Azure 函式等），其中最適合的資料位於服務記錄或特製化的威脅偵測服務中，而不是由) Microsoft 所營運的基礎 OS/ (Vm 的記錄檔或專門的 分析師需要瞭解此內容，並將其整合到其每日工作流程中，以便他們知道預期的資料、取得的位置，以及其所要的格式。
+- **端點資料來源：** 使用 Azure 資訊安全中心和 EDR 系統這類原生雲端偵測工具（而不是傳統的直接磁片存取方法），在雲端託管伺服器上取得攻擊和惡意程式碼的見解和資料通常更快、更容易且更準確。 雖然直接磁片剖析適用于法律訴訟 (電腦取證的情況，但 [在 Azure) 中](/azure/architecture/example-scenario/forensics/) ，這通常是偵測和調查攻擊的最沒有效率的方法。
+- **網路和身分識別資料來源：** 雲端平臺的許多功能主要是使用身分識別來進行存取控制，例如存取 Azure 入口網站 (但網路存取控制也廣泛地使用) 。 這需要分析師開發人員瞭解雲端身分識別通訊協定，以取得完整、豐富的攻擊者活動 (和合法的使用者活動) 來支援事件調查和補救。 身分識別目錄和通訊協定也會與內部部署不同，因為它們通常是以 SAML、OAuth、OIDC 和雲端目錄為基礎，而不是 LDAP、Kerberos、NTLM 和 Active Directory （通常位於內部部署環境）。
 - **練習練習：** 模擬的攻擊和回應有助於為您的安全性分析師、威脅獵人及、事件管理員和組織中的其他專案關係人建立組織肌肉記憶體和技術準備。 學習作業並進行調整是事件回應的一個自然部分，但您應該努力將您必須在危機中學習的數量降到最低。
 
 **重要資源：**
@@ -191,7 +191,7 @@ _您沒有時間規劃危機期間的危機。_
 
 **誰**：這通常分為兩組責任：
 
-- **[安全性狀態管理](../organize/cloud-security-posture-management.md)** –這個較新的功能通常是現有弱點管理或治理功能的演進。 這包括使用 Azure 資訊安全中心的安全分數和其他資料來源來監視整體安全性狀態、主動與資源擁有者合作以降低風險，並向安全性領導階層報告風險。
+- **[安全性狀態管理](../organize/cloud-security-posture-management.md)** –這個較新的功能通常是現有弱點管理或治理功能的演進。 這包括使用 Azure 安全性中心的安全分數和其他資料來源來監視整體安全性狀態、主動與資源擁有者合作以降低風險，並向安全性領導階層報告風險。
 - **安全性補救：** 為負責管理這些資源的小組指派責任，以解決這些風險。 這應該是 DevOps 團隊管理自己的應用程式資源，或是在 **[中央 IT 營運](../organize/central-it.md)** 中管理技術專屬的團隊：
 
   - **計算和應用程式資源：**
@@ -199,7 +199,7 @@ _您沒有時間規劃危機期間的危機。_
     - **容器** -應用程式開發和/或基礎結構/IT 作業
     - **Vm/擴展集/計算** -IT/基礎結構作業
   - **資料 & 儲存體資源：**
-    - **SQL/Redis/Data Lake Analytics/Data Lake Store** -資料庫小組
+    - **SQL/Redis/Data Lake Analytics/Data Lake store** -資料庫小組
     - **儲存體帳戶** -儲存體/基礎結構小組
   - **身分識別和存取資源：**
     - 訂用 **帳戶-身分** 識別小組 (s) 
@@ -215,7 +215,7 @@ _您沒有時間規劃危機期間的危機。_
 > [!IMPORTANT]
 > 在不同的資源類型和應用程式之間，如何保護資源的原因、原因和方式的說明通常很類似，但請務必將這些資源與每個小組已經知道並在意的專案建立關聯。 安全性小組應該與其 IT 和 DevOps 的合作關係，以信任的顧問和合作夥伴為焦點，讓這些團隊能成功進行。
 
-**工具**： Azure 資訊安全中心的 [安全分數](/azure/security-center/security-center-secure-score) 可針對各種不同的資產，評估 Azure 中最重要的安全性資訊。 這應該是您的狀態管理起點，而且可以視需要使用自訂的 Azure 原則和其他機制來補充。
+**工具**： Azure 資訊安全中心的 [安全分數](/azure/security-center/security-center-secure-score) 可針對各種不同的資產，為 azure 中最重要的安全性資訊提供評量。 這應該是您的狀態管理起點，而且可以視需要使用自訂的 Azure 原則和其他機制來補充。
 
 **頻率**：設定週期性步調 (通常是每月) ，以使用特定的改進目標來審查 Azure 安全分數和方案計畫。 您可以視需要增加頻率。
 
@@ -224,7 +224,7 @@ _您沒有時間規劃危機期間的危機。_
 
 另請參閱 Azure 安全性基準測試 [GS-2：定義安全性狀態管理原則](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-2-define-security-posture-management-strategy)。
 
-## <a name="6-technology-require-passwordless-or-multi-factor-authentication-mfa"></a>6. 技術：需要無密碼或 Multi-Factor Authentication (MFA) 
+## <a name="6-technology-require-passwordless-or-multi-factor-authentication-mfa"></a>6. 技術：需要無密碼或多重要素驗證 (MFA) 
 
 *您是否願意在企業安全性攻擊者無法猜出或竊取您系統管理員密碼的安全性？*
 
@@ -232,7 +232,7 @@ _您沒有時間規劃危機期間的危機。_
 
 **原因**：就像較新的基本架構金鑰不會保護房子以進行現代化的竊賊，密碼無法保護帳戶以抵禦我們今天看到的常見攻擊。 [您的 Pa $ $word](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984)中描述的技術詳細資料並不重要。
 
-雖然 MFA 是一項繁瑣的額外步驟，但無密碼方法目前會使用生物特徵辨識方法（例如 Windows Hello 和行動 (裝置中的臉部辨識）來改善登入體驗，而不需要記住或輸入密碼) 。 此外，零信任方法會記住受信任的裝置，這會減少提示您有討厭的頻外 MFA 動作 (查看 [使用者登入頻率](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#user-sign-in-frequency)) 。
+雖然 MFA 是一項繁瑣的額外步驟，但無密碼的方法現在可以使用生物特徵辨識方法（例如 Windows Hello 和行動裝置中的臉部辨識）來改善登入體驗 (您不需要記住或輸入密碼) 。 此外，零信任方法會記住受信任的裝置，這會減少提示您有討厭的頻外 MFA 動作 (查看 [使用者登入頻率](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#user-sign-in-frequency)) 。
 
 **誰**：密碼和多重要素方案通常是由身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 及/或 [安全性架構](../organize/cloud-security-architecture.md)所導致。
 
@@ -252,7 +252,7 @@ _您沒有時間規劃危機期間的危機。_
 > [!NOTE]
 > 以文字訊息為基礎的 MFA 現在相對較便宜，讓攻擊者無法略過，因此專注于無密碼 & 更強的 MFA。
 
-另請參閱 Azure 安全性基準測試 [識別碼-4：針對所有以 Azure Active Directory 為基礎的存取，使用強式驗證控制項](/azure/security/benchmarks/security-controls-v2-identity-management#id-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access)。
+另請參閱 Azure 安全性基準測試 [識別碼-4：針對所有以 Azure Active Directory 為基礎的存取使用強式驗證控制項](/azure/security/benchmarks/security-controls-v2-identity-management#id-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access)。
 
 ## <a name="7-technology-integrate-native-firewall-and-network-security"></a>7. 技術：整合原生防火牆和網路安全性
 
@@ -323,16 +323,16 @@ _您沒有時間規劃危機期間的危機。_
 
 *沒有人想要處理多個身分識別和目錄。*
 
-**事項：在** 單一 Azure AD 目錄上標準化，並為 Azure (中的每個應用程式和使用者提供單一身分識別，以) 所有企業身分識別功能。
+**事項：標準化** 單一 azure AD 目錄和 azure (中的每個應用程式和使用者的單一身分識別，以) 所有企業身分識別功能。
 
 > [!NOTE]
-> 這種最佳做法是專門針對企業資源。 針對合作夥伴帳戶，請使用 [AZURE AD B2B](/azure/active-directory/external-identities/what-is-b2b) ，如此就不需要在您的目錄中建立和維護帳戶。 若為客戶/公民帳戶，請使用 [Azure AD B2C](/azure/active-directory-b2c/) 管理它們。
+> 這種最佳做法是專門針對企業資源。 針對合作夥伴帳戶，請使用 [AZURE AD B2B](/azure/active-directory/external-identities/what-is-b2b) ，如此您就不需要在您的目錄中建立和維護帳戶。 若為客戶/公民帳戶，請使用 [AZURE AD B2C](/azure/active-directory-b2c/) 進行管理。
 
 **原因**：多個帳戶和身分識別目錄會針對生產力使用者、開發人員、IT 和身分識別管理員、安全性分析師和其他角色，在日常工作流程中建立不必要的分歧和混淆。
 
 管理多個帳戶和目錄也會為不佳的安全性作法帶來獎勵，例如跨帳戶重複使用相同的密碼，並提高攻擊者可鎖定的過時/放棄帳戶的可能性。
 
-雖然有時可以更輕鬆地根據 LDAP 來 (以 LDAP 為基礎的自訂目錄，以及針對特定應用程式或工作負載 ) ，這樣做會產生更多的整合和維護工作來進行設定和管理。 這在許多方面都很類似，可決定如何設定額外的 Azure 租使用者或其他內部部署 Active Directory 樹系，以及使用現有的企業帳戶。 另請參閱「磁片磁碟機簡單性」 [安全性原則](/azure/architecture/framework/security/security-principles)。
+雖然有時可以更輕鬆地根據 LDAP 來 (以 LDAP 為基礎的自訂目錄，以及針對特定應用程式或工作負載 ) ，這樣做會產生更多的整合和維護工作來進行設定和管理。 這在許多方面類似于設定額外的 Azure 租使用者或其他內部部署 Active Directory 樹系的決策，以及使用現有的企業版。 另請參閱「磁片磁碟機簡單性」 [安全性原則](/azure/architecture/framework/security/security-principles)。
 
 **誰**：這通常是由 [安全性架構](../organize/cloud-security-architecture.md) 或身分 [識別和金鑰管理](../organize/cloud-security-identity-keys.md) 小組所推動的跨小組工作。
 
@@ -345,7 +345,7 @@ _您沒有時間規劃危機期間的危機。_
 
 **如何**：採用以新的 _greenfield_ 功能開始的實用方法 (目前) ，然後透過 _棕色地帶_ 現有的應用程式和服務來清除挑戰，作為後續練習：
 
-- **Greenfield：** 建立並執行明確的原則，讓所有企業身分識別都應該使用單一 Azure AD 目錄，並為每個使用者使用單一帳戶。
+- **Greenfield：** 建立並執行明確的原則，所有企業身分識別都應該使用單一 Azure AD 目錄，並為每個使用者使用單一帳戶。
 
 - **棕色地帶：** 許多組織通常會有多個舊版目錄和身分識別系統。 當進行中的管理衝突的成本超過將其清除的投資時，請解決這些衝突。 雖然身分識別管理和同步處理解決方案可以減輕其中一些問題，但它們缺乏安全性和生產力功能的緊密整合，可讓使用者、系統管理員和開發人員順暢地體驗。
 
@@ -365,7 +365,7 @@ _您沒有時間規劃危機期間的危機。_
 
 ## <a name="10-architecture-use-identity-based-access-control-instead-of-keys"></a>10. 架構：使用以身分識別為基礎的存取控制 (而非金鑰) 
 
-**原因**：在任何可能的情況下，使用 Azure AD 身分識別，而不是金鑰型驗證 (Azure 服務、應用程式、api 等 ) 。
+**什麼**：在可能的情況下，使用 azure AD 身分識別，而非以金鑰為基礎的驗證 (azure 服務、應用程式、api 等 ) 。
 
 **原因**：金鑰型驗證可以用來對雲端服務和 api 進行驗證，但需要安全地管理金鑰，這是執行妥善 (的挑戰，特別是大規模) 。 安全金鑰管理對於開發人員和基礎結構專業人員等非安全性專業人員而言很困難，而且通常無法安全地進行，通常會為組織帶來重大的安全性風險。
 
@@ -389,9 +389,9 @@ _您沒有時間規劃危機期間的危機。_
 3. 以實用的方式 **執行** 變更–從現在採用的新 greenfield 功能開始，以及未來的 (新的 Azure 服務、新的應用程式) ，然後再清除現有的棕色地帶設定。
 4. **監視** 合規性，並追蹤開發人員和基礎結構小組以進行補救。
 
-**技術：** 針對非人力帳戶（例如服務或自動化），請使用 [受控](/azure/active-directory/managed-identities-azure-resources/overview)識別。 Azure 受控識別可以向支援 Azure AD authentication 的 Azure 服務和資源進行驗證。 透過預先定義的存取授與規則來啟用驗證，以避免在原始程式碼或設定檔中使用硬式編碼的認證。
+**技術：** 針對非人力帳戶（例如服務或自動化），請使用 [受控](/azure/active-directory/managed-identities-azure-resources/overview)識別。 Azure 受控識別可以向支援 Azure AD 驗證的 Azure 服務和資源進行驗證。 透過預先定義的存取授與規則來啟用驗證，以避免在原始程式碼或設定檔中使用硬式編碼的認證。
 
-針對不支援受控識別的服務，請使用 Azure AD，改為在資源層級建立具有限制許可權的 [服務主體](/azure/active-directory/develop/app-objects-and-service-principals) 。 我們建議您設定具有憑證認證的服務主體，並切換回用戶端密碼。 在這兩種情況下， [Azure Key Vault](/azure/key-vault/general/overview) 可以搭配使用 azure 受控識別，讓執行時間環境 (例如 azure function) 可以從金鑰保存庫取得認證。
+針對不支援受控識別的服務，請使用 Azure AD 改為在資源層級建立具有限制許可權的 [服務主體](/azure/active-directory/develop/app-objects-and-service-principals) 。 我們建議您設定具有憑證認證的服務主體，並切換回用戶端密碼。 在這兩種情況下， [Azure Key Vault](/azure/key-vault/general/overview) 都可以與 azure 受控識別搭配使用，讓執行時間環境 (例如 Azure 函式) 可以從金鑰保存庫取得認證。
 
 另請參閱 Azure 安全性基準測試 [識別碼-2：安全且自動地管理應用程式識別](/azure/security/benchmarks/security-controls-v2-identity-management#id-2-manage-application-identities-securely-and-automatically)。
 
@@ -406,7 +406,7 @@ _您沒有時間規劃危機期間的危機。_
 在許多組織中一致地播放的其中一個範例是資產的分割：
 
 - _網路安全性小組_ 開發了一套將一般 _網路_ 分割的策略，以根據實體網站、指派的 IP 位址位址/範圍或類似的) 來提高安全性 (
-- 身分 _識別小組_ 會個別根據其對組織的瞭解和知識，為群組和 Active Directory 組織單位開發策略， (ou) 。
+- 身分 _識別小組_ 會個別為群組和 Active Directory 組織單位開發策略， (ou) 根據其對組織的瞭解和知識。
 - _應用程式小組_ 通常會發現很難使用這些系統，因為它們是以有限的輸入和瞭解商務營運、目標和風險來設計的。
 
 在發生這種情況的組織中，小組經常會經歷與防火牆例外的衝突，而這會對安全性 (例外狀況造成負面影響，通常是核准的) 和產能 (部署對於商務需求) 的應用程式功能會變慢

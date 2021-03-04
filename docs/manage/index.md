@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 512d5574110ea46afc256504230ce669efb2de97
-ms.sourcegitcommit: b210ef2a057d61554148b4c4b89485a4a5c9b25c
-ms.translationtype: HT
+ms.openlocfilehash: e6cbf9526f3eb7247a1cc9e1e8cdbe637f059dd3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646308"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786306"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>雲端採用架構中的雲端管理
 
@@ -52,5 +52,3 @@ ms.locfileid: "97646308"
 如果您想要從頭到尾按照本指南操作，此內容可協助您開發健全的雲端作業策略。 本指南會引導您了解此類策略的理論和實作。
 
 您可以套用方法以[建立清楚的商務承諾](./considerations/business-alignment.md)。
-
-<!-- TODO: For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](TODO). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->

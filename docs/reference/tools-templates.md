@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: bf6d4651c4cf145bd21a94c7ac87bd669b7d83cb
-ms.sourcegitcommit: b12b731b1cf22f9e80db108f79734bc4cf17895e
+ms.openlocfilehash: 0a26becab0f8aab80a5e4cf9504e754362ca6091
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810800"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785762"
 ---
 # <a name="tools-and-templates"></a>工具和範本
 
@@ -32,8 +32,8 @@ ms.locfileid: "98810800"
 |----------|-------------|
 | [雲端旅程追蹤器](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | 根據您的業務需求，識別您的雲端採用途徑。 |
 | [策略 &nbsp; 和 &nbsp; 方案 &nbsp; 範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | 當您執行您的雲端採用策略和規劃時，請記錄決策。 |
-| [雲端採用方案產生器](../plan/template.md) | 使用範本將待處理專案部署至 [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) ，以將程式標準化。 |
-| [使用策略-規劃就緒-治理 ADO 範本](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | 使用範本將待處理專案部署至 [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) ，以將程式標準化。 |
+| [雲端採用方案產生器](../plan/template.md) | 使用範本將待處理專案部署至 [Azure](/azure/devops/boards/get-started/what-is-azure-boards) 面板，以將程式標準化。 |
+| [使用策略-規劃就緒-治理 ADO 範本](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | 使用範本將待處理專案部署至 [Azure](/azure/devops/boards/get-started/what-is-azure-boards) 面板，以將程式標準化。 |
 
 ## <a name="ready"></a>就緒
 
@@ -58,8 +58,8 @@ ms.locfileid: "98810800"
 | [身分識別基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于身分識別需求。 |
 | [資源一致性專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于資源一致性。 |
 | [安全性基準專業領域範本](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | 定義原則聲明和設計指引，讓您能夠在組織內成熟雲端治理，並專注于安全性基準。 |
-| [Azure 安全性效能評定](https://docs.microsoft.com/azure/security/benchmarks/overview) | Azure 安全性基準測試 (ASB) 提供規定的最佳作法和建議，以協助改善 Azure 上的工作負載、資料和服務的安全性。 |
-| [Azure 治理視覺化](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理的視覺化程式是 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能（例如 Azure 原則、Azure 角色型存取控制 (Azure RBAC) 和 Azure 藍圖）取得資料。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
+| [Azure 安全性效能評定](/azure/security/benchmarks/overview) | Azure 安全性基準測試 (ASB) 提供規定的最佳作法和建議，以協助改善 Azure 上的工作負載、資料和服務的安全性。 |
+| [Azure 治理視覺化檢視](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure 治理視覺化檢視是一個 PowerShell 腳本，可逐一查看 Azure 租使用者的管理群組階層至訂用帳戶層級。 它會從最相關的 Azure 治理功能（例如 Azure 原則、Azure 角色型存取控制 (Azure RBAC) 和 Azure 藍圖）捕獲資料。 從收集到的資料，視覺化檢視會顯示您的階層地圖、建立租使用者摘要，以及建立有關您管理群組和訂用帳戶的細微範圍深入解析。 |
 
 ## <a name="migrate"></a>移轉
 

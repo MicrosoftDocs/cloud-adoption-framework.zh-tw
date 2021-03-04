@@ -1,19 +1,19 @@
 ---
-title: 開發雲端採用策略
+title: 使用雲端經濟效益開發雲端採用策略
 description: 使用適用於 Azure 的雲端採用架構，了解雲端如何協助您提升商務策略。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
 ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 93676cd9b9ff491d44dff7e752d891d9986fae75
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: f6dc188b4face3657ae7b48c174c93f0c9a75b8d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023951"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786051"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>開發雲端採用策略
 

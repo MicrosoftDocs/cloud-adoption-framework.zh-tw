@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 685282288f7cd313492c4c0509ae3177958cd2f6
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 54b206e73d5dfa8f75a5ce7f6321c969b1688186
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632506"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784793"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>部署工作負載和資產 (基礎結構、應用程式和資料)
 
@@ -97,7 +97,7 @@ Azure 資料庫移轉服務是一個完全受控的服務，可讓您從多個�
 - [Azure 資料庫移轉服務概觀](/azure/dms/dms-overview)
 - [建立 Azure 資料庫移轉服務的執行個體](/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure 入口網站中的 Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
-- [Azure 入口網站：建立移轉專案](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+- [Azure 入口網站：建立遷移專案](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Migration Assistant 會從收集 Azure 帳戶的重要詳細資料來展開移�
 
 如需詳細資訊，請參閱
 
-[將 ASP.NET 應用程式移轉至 Azure](/learn/paths/migrate-dotnet-apps-azure/)
+[將 ASP.NET 應用程式遷移至 Azure](/learn/paths/migrate-dotnet-apps-azure/)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
@@ -184,7 +184,7 @@ Microsoft SQL Server 移轉小幫手 (SSMA) 工具的設計目的，是要自動
 
 ### <a name="azure-cosmos-db-data-migration-tool"></a>Azure Cosmos DB 資料移轉工具
 
-Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cosmos DB 集合和資料表。 您可以從 JSON 檔案、CSV 檔案、SQL、MongoDB、Azure 資料表儲存體、Amazon DynamoDB 及 Azure Cosmos DB SQL API 集合匯入資料。 針對 SQL API 從單一分割區集合移轉到多重分割區集合時，也可以使用資料移轉工具。
+Azure Cosmos DB 資料移轉工具，將資料從各種來源匯入到 Azure Cosmos DB 集合和資料表。 您可以從 JSON 檔案、CSV 檔案、SQL、MongoDB、Azure 資料表儲存體、Amazon DynamoDB，甚至是 Azure Cosmos DB SQL API 集合匯入。 針對 SQL API 從單一分割區集合移轉到多重分割區集合時，也可以使用資料移轉工具。
 
 如需詳細資訊，請參閱
 
@@ -238,7 +238,7 @@ Movere 是一項探索解決方案，可提供規劃雲端移轉所需的資料�
 
 不受追蹤和管理的專案較可能會發生問題。 為確保能有成功的結果，我們認為您必須使用專案管理工具。 目前有許多不同的工具可供使用，而您組織中的專案管理人員可能已有偏好的工具。
 
-Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用 [雲端採用方案和 Azure DevOps](/azure/cloud-adoption-framework/plan/template)中的指示來部署範本。 您可以修改範本以反映要遷移的[工作負載](/azure/cloud-adoption-framework/plan/workloads)和[資產](/azure/cloud-adoption-framework/plan/assets)。
+Azure DevOps 是在雲端移轉期間建議用來管理專案的工具。 為了加速使用 Azure DevOps，雲端採用架構會包含自動部署專案範本的工具。 該範本包括在移轉過程中經常執行的各項工作。 使用 [雲端採用方案和 Azure DevOps](../../plan/template.md)中的指示來部署範本。 您可以修改範本以反映要遷移的[工作負載](../../plan/workloads.md)和[資產](../../plan/assets.md)。
 
 Microsoft 也提供下列各種專案管理工具，可搭配使用以提供更廣泛的功能：
 
@@ -265,4 +265,4 @@ Microsoft Learn 是新的學習方法。 針對雲端採用所帶來的新技術
 
 ## <a name="cost-management"></a>[成本管理](#tab/ManageCost)
 
-當您將資源移轉至雲端環境時，請務必定期執行成本分析。 定期成本分析有助於您避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源的大小，以平衡成本和工作負載，這在[最佳化和轉換](./optimize-and-transform.md)一節中會詳細討論。
+當您將資源移轉至雲端環境時，請務必定期執行成本分析。 定期成本分析有助於您避免產生非預期的使用費用，因為移轉程序對您的服務可能會有額外的使用需求。 您也可以視需要調整資源大小，以平衡成本和工作負載，在「 [優化和轉換](./optimize-and-transform.md) 」一節中會更詳細地討論。

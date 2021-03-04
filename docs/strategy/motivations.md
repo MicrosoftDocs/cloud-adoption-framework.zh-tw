@@ -1,19 +1,19 @@
 ---
 title: 為何要移至雲端？
 description: 使用適用于 Azure 的雲端採用架構，瞭解雲端遷移背後的動機，可協助產生更成功的業務成果。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 822bbee8194c47496b9c56c987ed952e2147f6ba
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 671f11c4eaadf3e6f3864e97589ffc16a48065a7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023832"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784929"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機：為何要移至雲端？
 
@@ -23,7 +23,7 @@ ms.locfileid: "97023832"
 
 ## <a name="motivations"></a>動機
 
-雲端採用所支援的商業轉換可由各種動機來推動。 可能會同時套用數個動機。 下表中的清單目標是要協助您產生相關的動機相關概念。 從該處，您可以設定優先順序並評估動機的潛在影響。 在本文中，您的雲端採用小組應該使用下列清單來與各種主管和業務領導人會面，以瞭解這些動機會受到雲端採用工作的影響。
+雲端採用所支援的商業轉換可由各種動機來推動。 可能會同時套用數個動機。 下表中的清單目標是要協助您產生相關的動機相關概念。 從該處，您可以設定優先順序並評估動機的潛在影響。 在本文中，您的雲端採用小組應該符合各種主管和業務領導人，並使用下列清單來瞭解哪些動機會受到雲端採用工作的影響。
 
 | 重大商業事件 | 移轉 | 創新 |
 |---|---|---|
@@ -41,39 +41,39 @@ ms.locfileid: "97023832"
 
 為了確保最睿智做法決策，遷移過程中的所有參與者都應該清楚知道其動機。 下一節將概述客戶如何透過一致、策略性的方法來引導及影響最睿智做法決策。
 
-## <a name="motivation-driven-strategies"></a>動機驅動策略
+## <a name="motivation-driven-strategies-and-business-outcomes"></a>動機導向的策略和業務成果
 
-本節著重于 _遷移_ 和 _創新_ 動機，以及其對應的策略。
+本節著重于 *遷移* 和 *創新* 動機，以及其對應的策略。
 
 ### <a name="migration"></a>移轉
 
-列在動機資料表頂端附近的 _遷移_ 動機是最常見的，但不一定是採用雲端的最重要原因。 這些結果很重要，但最有效的用途是轉換為其他更實用的 worldviews。 雲端採用這項重要的第一個步驟，通常稱為「 _雲端遷移_」。 架構是指使用「 [遷移](../get-started/migrate.md)」一詞來執行雲端遷移的策略。
+列在動機資料表頂端附近的 *遷移* 動機是最常見的，但不一定是採用雲端的最重要原因。 這些結果很重要，但最有效的用途是轉換為其他更實用的 worldviews。 雲端採用這項重要的第一個步驟，通常稱為「 *雲端遷移*」。 雲端採用架構中的 [遷移方法](../get-started/migrate.md) 會概述 *執行雲端遷移的策略*。
 
-某些動機與遷移策略一致。 這份清單頂端的動機，可能會比接近清單底部的業務影響更小。
+某些動機與遷移策略一致。 這份清單最上方的動機，其業務影響可能會比往下的動機更少。 **遷移動機導向的策略** 有助於產生成功的業務成果，例如：
 
-- 節省成本。
+- 增加成本節約。 閱讀 [客戶案例](https://customers.microsoft.com/story/canadian-power-generator-shines-light-on-numbers)。
 - 降低廠商或技術複雜度。
-- 內部作業的優化。
-- 提高商務靈活性。
+- 優化內部作業。
+- 提高商務靈活性。 閱讀 [客戶案例](https://customers.microsoft.com/story/845185-academy-motion-picture-arts-sciences-media-entertainment-azure)。
 - 準備新的技術功能。
-- 進行調整以符合市場需求。
-- 進行調整以符合地理需求。
+- 調整為市場需求。
+- 調整為地理需求。 閱讀 [客戶案例](https://customers.microsoft.com/story/792289-walgreens-boots-alliance-retailers-azure-sap-migration)。
 
 ### <a name="innovation"></a>創新
 
-資料是新的商品。 新式應用程式是將該資料驅動至各種體驗的供應鏈。 在現今的商業市場中，很難找到不是以資料、見解和客戶體驗為基礎的轉型產品或服務。 _創新_ 清單中較低的動機會符合此架構中的技術策略，作為 [創新方法](../get-started/innovate.md)。
+資料是新的商品，而新式應用程式是推動該資料進入各種體驗的供應鏈。 在現今的商業市場中，很難找到不是以資料、見解和客戶體驗為基礎的轉型產品或服務。 雲端採用架構中的 [創新方法](../get-started/innovate.md)，包含的動機符合上述動機清單的 *創新* 資料行中較低的 *技術策略*。
 
-下列清單包含的動機會導致 IT 組織將焦點放在與遷移策略不同的創新策略上。
+下面所列的動機著重于 IT 組織比遷移策略更多的創新策略。 **創新動機導向的策略** 有助於產生成功的業務成果。
 
 - 提高商務靈活性。
 - 準備新的技術功能。
-- 打造新的技術功能。
-- 進行調整以符合市場需求。
-- 進行調整以符合地理需求。
-- 改善客戶體驗和參與度。
+- 打造新的技術功能。 閱讀 [客戶案例](https://customers.microsoft.com/story/846315-ge-aviation-manufacturing-azure)。
+- 調整為市場需求。
+- 調整為地理需求。
+- 改善客戶體驗和參與度。 閱讀 [客戶案例](https://customers.microsoft.com/story/724203-the-descartes-systems-group-travel-and-transportation-azure-sql-database)。
 - 轉換產品或服務。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解投射的業務成果有助於協助您在記錄動機和支援計量時所需要的交談，以配合您的商務策略。 接下來，請閱讀通常與移至雲端相關的商務成果總覽。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: fb7abb91ce8950b2b455044cc7135065e2c71098
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
-ms.translationtype: HT
+ms.openlocfilehash: ef56557ed05f199486209538d1bd29e2a80a7891
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025872"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784827"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
@@ -42,8 +42,8 @@ ms.locfileid: "97025872"
 
 針對手動成本計算，可使用兩個便利的計算機，根據要移轉的工作負載架構來提供快速成本預估。
 
-- Azure [定價計算機](https://azure.microsoft.com/pricing/calculator)會針對您所選取的 Azure 產品提供成本預估。
-- 有時候，決策需要比較未來的雲端成本和目前的內部部署成本。 [擁有權總成本 (TCO) 計算機](https://azure.microsoft.com/pricing/tco/calculator)可提供此類比較。
+- Azure [定價計算機](https://azure.microsoft.com/pricing/calculator/)會針對您所選取的 Azure 產品提供成本預估。
+- 有時候，決策需要比較未來的雲端成本和目前的內部部署成本。 [擁有權總成本 (TCO) 計算機](https://azure.microsoft.com/pricing/tco/calculator/)可提供此類比較。
 
 這些手動成本計算機可單獨使用，以預測可能的支出和節省數額。 其也可以與 Azure Migrate 的成本預測工具搭配使用，以根據替代架構或效能限制適當調整成本期望。
 
@@ -66,11 +66,11 @@ Azure Migrate 會根據收集器和服務對應所擷取的資料來計算每月
 
 ![成本詳細資料檢視](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
 
-_圖 1：此圖表顯示 Azure Migrate 中評估的成本詳細資料檢視。_
+*圖 1：此圖表顯示 Azure Migrate 中評估的成本詳細資料檢視。*
 
 ### <a name="additional-resources"></a>其他資源
 
-- [使用 Azure Migrate 設定和檢閱評估](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- [使用 Azure Migrate 設定和檢閱評估](/azure/migrate/tutorial-assess-vmware-azure-vm#set-up-an-assessment)
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，請參閱[成本管理專業指導](../../govern/cost-management/index.md)和[成本管理專業領域改善](../../govern/guides/complex/cost-management-improvement.md)。
 
 ## <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[在移轉期間和之後估計和最佳化 VM 成本](#tab/EstimateOptimize)
@@ -106,7 +106,7 @@ Azure 成本管理 + 計費可以提供更全面的消費習慣檢視，包括�
 
 - 如需以更完整的計劃來處理跨大量資產 (基礎結構、應用程式和資料) 的成本管理，請參閱[雲端採用架構治理模型](../../govern/guides/index.md)。 特別是，請參閱[成本管理專業領域](../../govern/cost-management/index.md)，和[成本管理專業領域改善](../../govern/guides/complex/cost-management-improvement.md)。
 - 如需 Azure Advisor 的詳細資訊，請參閱[使用 Azure Advisor 降低服務成本](/azure/advisor/advisor-cost-recommendations)。
-- 如需 Azure 成本管理 + 計費的詳細資訊，請參閱[了解和使用範圍](/azure/cost-management/understand-work-scopes)和[使用成本分析探索及分析成本](/azure/cost-management/quick-acm-cost-analysis)。
+- 如需 Azure 成本管理 + 計費的詳細資訊，請參閱[了解和使用範圍](/azure/cost-management-billing/costs/understand-work-scopes)和[使用成本分析探索及分析成本](/azure/cost-management-billing/costs/quick-acm-cost-analysis)。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[將成本最佳化的提示和秘訣](#tab/TipsTricks)
 
@@ -134,7 +134,7 @@ Azure 成本管理 + 計費可以提供更全面的消費習慣檢視，包括�
 
 ### <a name="use-azure-hybrid-benefit"></a>使用 Azure Hybrid Benefit
 
-如果您在內部部署中已經有 Windows Server 或 SQL Server 授權，您可以使用 [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit) 程式儲存在 Azure 中。 利用 Windows Server 權益，每個授權都涵蓋 OS (最多兩部虛擬機器上) 的費用，而您只需支付基礎計算費用。 您可以使用現有的 SQL Server 授權，最多節省 55% 的 vCore 型 SQL Database 選項。 選項包括 Azure 虛擬機器和 SQL Server Integration Services 中的 SQL Server。
+如果您在內部部署中已經有 Windows Server 或 SQL Server 授權，您可以使用 [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/) 程式儲存在 Azure 中。 利用 Windows Server 權益，每個授權都涵蓋 OS (最多兩部虛擬機器上) 的費用，而您只需支付基礎計算費用。 您可以使用現有的 SQL Server 授權，最多節省 55% 的 vCore 型 SQL Database 選項。 選項包括 Azure 虛擬機器和 SQL Server Integration Services 中的 SQL Server。
 
 ### <a name="low-priority-vms-with-batch"></a>以低優先順序的 VM 搭配 Batch
 

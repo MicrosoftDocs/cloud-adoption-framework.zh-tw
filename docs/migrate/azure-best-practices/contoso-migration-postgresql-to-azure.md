@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 030c036b41532c1cc55321ebcfe4c352a66e9775
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 5373e8e4074198db48ab494a2c735e6b5e207c95
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631520"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785082"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -53,21 +53,21 @@ Contoso 雲端小組已將此遷移的目標釘選出來，並將使用它們來
 
 ### <a name="proposed-solution"></a>建議的解決方案
 
-- 使用 Azure 資料庫移轉服務，將資料庫移轉至適用於 PostgreSQL 的 Azure 資料庫實例。
-- 修改所有的應用程式和進程，以使用新的適用於 PostgreSQL 的 Azure 資料庫實例。
-- 使用連接至適用於 PostgreSQL 的 Azure 資料庫實例的 Azure Data Factory 來建立新的資料處理管線。
+- 使用 Azure 資料庫移轉服務，將資料庫移轉至 Azure Database for 于 postgresql 實例。
+- 修改所有應用程式和進程，以使用新的 Azure Database for 于 postgresql 實例。
+- 使用 Azure Data Factory 來建立新的資料處理管線，以連接到 Azure Database for 于 postgresql 實例。
 
 ### <a name="database-considerations"></a>資料庫考量
 
 在解決方案設計過程中，Contoso 會檢查 Azure 中裝載其于 postgresql 資料的功能。 下列考慮有助於公司決定使用 Azure：
 
-- 類似于 Azure SQL Database，適用於 PostgreSQL 的 Azure 資料庫支援防火牆規則。
-- 適用於 PostgreSQL 的 Azure 資料庫可以搭配虛擬網路使用，以防止實例可公開存取。
-- 適用於 PostgreSQL 的 Azure 資料庫具有 Contoso 必須符合的必要合規性認證。
-- 與 DevOps 和 Azure Data Factory 的整合可讓您建立自動化的資料處理管線。
+- 類似于 Azure SQL Database，Azure Database for 于 postgresql 支援防火牆規則。
+- 適用于于 postgresql 的 Azure 資料庫可以搭配虛擬網路使用，以防止實例可供公開存取。
+- 適用于于 postgresql 的 Azure 資料庫具有 Contoso 必須符合的必要合規性認證。
+- 與 DevOps 和 Azure Data Factory 整合可讓您建立自動化的資料處理管線。
 - 使用讀取複本可以增強處理效能。
 - 支援將您自己的金鑰用於資料加密 (BYOK) 。
-- 只能將服務公開給內部網路流量的能力， (使用 Azure Private Link 的無公用存取) 。
+- 只能將服務公開給內部網路流量的能力， (使用 Azure Private Link) 的無公用存取權。
 - 從應用程式到資料庫的 [頻寬和延遲](/azure/vpn-gateway/vpn-gateway-about-vpngateways) ，會根據所選的閘道而足夠， (Azure ExpressRoute 或站對站 VPN) 。
 
 ### <a name="solution-review"></a>解決方案檢閱
@@ -76,14 +76,13 @@ Contoso 藉由結合一份優缺點來評估其提議的設計。
 
 | 考量 | 詳細資料 |
 |--- | --- |
-| **優點** | 目前所有必要和使用中的功能都可以在適用於 PostgreSQL 的 Azure 資料庫中使用。 <br><br> |
+| **優點** | 所有目前必要和使用中的功能都可在適用于于 postgresql 的 Azure 資料庫中使用。 <br><br> |
 | **缺點** | Contoso 仍需要手動從于 postgresql 的主要版本進行遷移。 |
 
 ## <a name="proposed-architecture"></a>建議的架構
 
-![案例架構的圖表。](./media/contoso-migration-postgresql-to-azure/architecture.png)
-
-_圖1：案例架構。_
+![案例架構的圖表。 ](./media/contoso-migration-postgresql-to-azure/architecture.png)
+*圖1：案例架構。*
 
 ### <a name="migration-process"></a>移轉程序
 
@@ -93,9 +92,9 @@ _圖1：案例架構。_
 
 #### <a name="supported-versions"></a>支援的版本
 
-只支援遷移至相同或更高的版本。 支援將于 postgresql 9.5 遷移至適用於 PostgreSQL 的 Azure 資料庫9.6 或10，但不支援從于 postgresql 11 遷移至於 postgresql 9.6。
+只支援遷移至相同或更高的版本。 支援將于 postgresql 9.5 遷移至適用于于 postgresql 9.6 或10的 Azure 資料庫，但不支援從于 postgresql 11 遷移至於 postgresql 9.6。
 
-Microsoft 的目標是支援適用於 PostgreSQL 的 Azure 資料庫單一伺服器中的 _n-2_ 版于 postgresql 引擎。 這些版本會是目前在 Azure 上的主要版本 (_n_) 和兩個先前的主要版本 (_-2_) 。
+Microsoft 的目標是在 Azure Database for 于 postgresql-單一伺服器中支援 *n-2* 版的于 postgresql 引擎。 這些版本會是目前在 Azure 上的主要版本 (*n*) 和兩個先前的主要版本 (*-2*) 。
 
 如需支援版本的最新更新，請參閱 [支援的于 postgresql 主要版本](/azure/postgresql/concepts-supported-versions)。
 
@@ -104,7 +103,7 @@ Microsoft 的目標是支援適用於 PostgreSQL 的 Azure 資料庫單一伺服
 
 #### <a name="network"></a>網路
 
-Contoso 必須將虛擬網路閘道連線從其內部部署環境設定為其適用於 PostgreSQL 的 Azure 資料庫資料庫所在的虛擬網路。 此連接可讓內部部署應用程式存取資料庫，但不能遷移至雲端。
+Contoso 必須將虛擬網路閘道連線從其內部部署環境設定至其 Azure Database for 于 postgresql 資料庫所在的虛擬網路。 此連接可讓內部部署應用程式存取資料庫，但不能遷移至雲端。
 
 #### <a name="assessment"></a>評量
 
@@ -116,7 +115,7 @@ Contoso 將需要評估目前的資料庫是否有複寫問題。 這些問題�
 - 使用相同名稱來遷移多個資料表，但不同的情況可能會導致無法預期的行為。
 
   ![遷移程式的圖表。 ](./media/contoso-migration-postgresql-to-azure/migration-process.png)
-  _圖2：遷移程式。_
+  *圖2：遷移程式。*
 
 #### <a name="migration"></a>移轉
 
@@ -134,7 +133,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 ### <a name="create-an-azure-database-migration-service-instance"></a>建立 Azure 資料庫移轉服務執行個體
 
-1. 在 [ [Azure 入口網站](https://portal.azure.com)中，選取 [ **新增資源**]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [ **新增資源**]。
 1. 搜尋 **Azure 資料庫移轉服務**，然後選取它。
 1. 選取 [+ 新增]。
 1. 選取服務的訂用帳戶和資源群組。
@@ -145,7 +144,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 1. 選取 [檢閱 + 建立]。
 
     ![[建立遷移服務] 頁面的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
-    _圖3：複習和建立。_
+    *圖3：複習和建立。*
 
 1. 選取 [建立]  。
 
@@ -193,62 +192,60 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 1. 選取 [新增移轉專案]。
 
     ![顯示反白顯示 [新增遷移專案] 選項的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project.png)
-
-    _圖4：啟動新的遷移。_
+    *圖4：啟動新的遷移。*
 
 1. 選取[  >  **線上資料移轉**] 新活動。
 1. 輸入名稱。
 1. 選取 [ **于 postgresql** ] 作為來源。
-1. 在 [目標] 中，選取 [ **適用於 PostgreSQL 的 Azure 資料庫** ]，然後選取 [ **儲存**]。
+1. 針對目標，選取 **Azure Database For 于 postgresql** ，然後選取 [ **儲存**]。
 
     ![顯示 [新增遷移專案] 窗格的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project02.png)
-
-    _圖5：已反白顯示新的遷移專案。_
+    *圖5：已反白顯示新的遷移專案。*
 
 1. 輸入來源資訊，然後選取 [ **儲存**]。
 
     ![顯示輸入來源資訊的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_source.png)
-    _圖6：輸入來源資訊。_
+    *圖6：輸入來源資訊。*
 
 1. 輸入目標資訊，然後選取 [ **儲存**]。
 
     ![顯示選取目標資訊的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_target.png)
-    _圖7：選取目標資訊。_
+    *圖7：選取目標資訊。*
 
 1. 選取要遷移的資料庫。 每個資料庫的架構都應該已在先前遷移。 然後選取 [儲存]。
 
     ![顯示選取資料庫的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_db.png)
-    _圖8：選取資料庫。_
+    *圖8：選取資料庫。*
 
 1. 設定 [advanced] 設定，然後選取 [ **儲存**]。
 
     ![顯示設定 [advanced settings] 的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_advanced.png)
-    _圖9：設定 advanced settings。_
+    *圖9：設定 advanced settings。*
 
 1. 提供活動的名稱，然後選取 [ **執行**]。
 
     ![顯示命名和執行活動的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_summary.png)
-    _圖10：命名和執行活動。_
+    *圖10：命名和執行活動。*
 
 1. 監視移轉。 如果發生任何失敗，請重試。 例如，如果缺少外鍵參考，則為。
 1. `Full load completed`符合資料表計數之後，請選取 [**開始** 轉換]。
 
     ![顯示監視以開始轉換的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_complete.png)
-    _圖11：監視遷移以開始轉換。_
+    *圖11：監視遷移以開始轉換。*
 
 1. 停止來源伺服器中的所有交易。
 1. 選取 [**確認**] 核取方塊，然後選取 [套用 **]。**
 
     ![顯示正在執行轉換的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_cutover.png)
-    _圖12：執行轉換。_
+    *圖12：執行轉換。*
 
 1. 等候轉換完成。
 
     ![顯示完成轉換的螢幕擷取畫面。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_finished.png)
-    _圖13：正在完成轉換。_
+    *圖13：正在完成轉換。*
 
       > [!NOTE]
-      > 先前的資料庫移轉服務步驟也可以透過 [Azure CLI](/azure/dms/tutorial-postgresql-azure-postgresql-online)執行。
+      > 先前的資料庫移轉服務步驟也可以透過 [AZURE CLI](/azure/dms/tutorial-postgresql-azure-postgresql-online)執行。
 
 1. 匯入資料庫架構 (步驟 2) ：
 
@@ -256,7 +253,7 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
         psql -h {host}.postgres.database.azure.com -d dvdrental -U username -f dvdrental_schema_foreign.sql
       ```
 
-1. 重新設定任何使用內部部署資料庫的應用程式或進程，以指向新的適用於 PostgreSQL 的 Azure 資料庫資料庫實例。
+1. 重新設定任何使用內部部署資料庫的應用程式或進程，以指向新的 Azure Database for 于 postgresql 資料庫實例。
 
 1. 在遷移後，Contoso 會在完成遷移之後，確保它也會設定跨區域讀取複本（如有必要）。
 
@@ -272,27 +269,27 @@ Contoso 已選取 Azure 資料庫移轉服務，可讓公司在需要執行主�
 
 Contoso 必須：
 
-- 確定新的適用於 PostgreSQL 的 Azure 資料庫實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用於 PostgreSQL 的 Azure 資料庫-單一伺服器中的安全性](/azure/postgresql/concepts-security)。
+- 請確定新的 Azure Database for 于 postgresql 實例和資料庫都是安全的。 如需詳細資訊，請參閱 [適用于于 postgresql 的 Azure 資料庫中的安全性-單一伺服器](/azure/postgresql/concepts-security)。
 - 請檢查 [防火牆規則](/azure/postgresql/concepts-firewall-rules) 和虛擬網路設定，以確認連線只限于需要它的應用程式。
 - 針對資料加密執行 [BYOK](/azure/postgresql/concepts-data-encryption-postgresql) 。
 - 更新所有應用程式，以要求對資料庫進行 [SSL](/azure/postgresql/concepts-ssl-connection-security) 連接。
-- 設定 [Private Link](/azure/postgresql/concepts-data-access-and-security-private-link) ，以便在 Azure 和內部部署網路內保存所有資料庫流量。
-- 啟用 [Azure 進階威脅防護 (ATP) ](/azure/postgresql/concepts-data-access-and-security-threat-protection)。
+- 設定 [Private Link](/azure/postgresql/concepts-data-access-and-security-private-link) ，以在 Azure 和內部部署網路內保存所有資料庫流量。
+- 啟用 [Microsoft Defender 的身分識別](/azure/postgresql/concepts-data-access-and-security-threat-protection)。
 - 將 Log Analytics 設定為監視安全性以及相關記錄專案的警示。
 
 ### <a name="backups"></a>備份
 
-請確定使用異地還原備份適用於 PostgreSQL 的 Azure 資料庫資料庫。 如此一來，在發生區域性中斷的情況下，備份可以在配對的區域中使用。
+確定 Azure Database for 于 postgresql 資料庫是使用異地還原進行備份。 如此一來，在發生區域性中斷的情況下，備份可以在配對的區域中使用。
 
 > [!IMPORTANT]
-> 請確定適用於 PostgreSQL 的 Azure 資料庫資源具有資源鎖定，以防止其遭到刪除。 無法還原已刪除的伺服器。
+> 請確定 Azure Database for 于 postgresql 資源具有資源鎖定，以防止其遭到刪除。 無法還原已刪除的伺服器。
 
 ### <a name="licensing-and-cost-optimization"></a>授權和成本最佳化
 
-- 適用於 PostgreSQL 的 Azure 資料庫可以向上或向下調整。 伺服器和資料庫的效能監視很重要，可確保符合需求，同時維持最少的成本。
+- 適用于于 postgresql 的 Azure 資料庫可以向上或向下調整。 伺服器和資料庫的效能監視很重要，可確保符合需求，同時維持最少的成本。
 - CPU 和儲存體都有相關聯的成本。 有幾個定價層可供選擇。 請確定已為數據工作負載選取適當的定價方案。
 - 每個讀取複本會根據選取的計算和儲存體計費。
 
 ## <a name="conclusion"></a>結論
 
-在本文中，Contoso 會將其于 postgresql 資料庫移轉至適用於 PostgreSQL 的 Azure 資料庫實例。
+在本文中，Contoso 會將其于 postgresql 資料庫移轉至 Azure Database for 于 postgresql 實例。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 13a26921069334db6caefa11a0b7bac54ecbd269
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3514c5e7ee23b0a33eb7ea8e844e875e0758f52f
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016896"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785626"
 ---
 # <a name="automate-onboarding"></a>自動上線
 
@@ -23,17 +23,17 @@ ms.locfileid: "97016896"
 
 範例檔案說明如何使用 Azure PowerShell Cmdlet 將下列工作自動化：
 
-- 建立 [Log Analytics 工作區](/azure/azure-monitor/platform/manage-access)。  (或，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱 [工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
+- 建立 [Log Analytics 工作區](/azure/azure-monitor/logs/manage-access)。  (或，如果符合需求，請使用現有的工作區。 如需詳細資訊，請參閱 [工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
 - 建立自動化帳戶，或使用符合需求的現有帳戶。 如需詳細資訊，請參閱 [工作區規劃](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)。
 
-- 連結自動化帳戶和 Log Analytics 工作區。 如果您是使用 Azure 入口網站上架，就不需要執行此步驟。
+- 連結自動化帳戶和 Log Analytics 工作區。 如果您是使用 Azure 入口網站進行登入，則不需要執行此步驟。
 
-- 啟用工作區的更新管理解決方案和變更追蹤和清查解決方案。
+- 啟用工作區的更新管理解決方案及變更追蹤和清查解決方案。
 
 - 使用 Azure 原則將 Azure Vm 上架。 原則會在 Azure Vm 上安裝 Log Analytics 代理程式和 Microsoft Dependency Agent。
 
-- 使用[Azure 原則](/azure/backup/backup-azure-auto-enable-backup)自動啟用 vm 的 Azure 備份
+- 使用[Azure 原則](/azure/backup/backup-azure-auto-enable-backup)自動啟用適用于 Vm 的 azure 備份
 
 - 在內部部署伺服器上安裝 Log Analytics 代理程式，以將其上架。
 
@@ -44,9 +44,9 @@ ms.locfileid: "97016896"
 | `New-AMSDeployment.ps1` | 主要的協調腳本，它會自動上架。 它會建立資源群組、位置、工作區和自動化帳戶（如果尚未存在）。 此 PowerShell 腳本需要現有的訂用帳戶。 |
 | `Workspace-AutomationAccount.json` | 部署工作區和自動化帳戶資源的 Resource Manager 範本。 |
 | `WorkspaceSolutions.json` | Resource Manager 範本，可在 Log Analytics 工作區中啟用您想要的解決方案。 |
-| `ScopeConfig.json` | Resource Manager 範本，其使用具有變更追蹤和清查解決方案的內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
-| `Enable-VMInsightsPerfCounters.ps1` | PowerShell 腳本，可適用於 VM 的 Azure 監視器並設定效能計數器。 |
-| `ChangeTracking-FileList.json` | Resource Manager 範本，可定義變更追蹤將監視的檔案清單。 |
+| `ScopeConfig.json` | 一種 Resource Manager 範本，其使用具有變更追蹤和清查解決方案之內部部署伺服器的加入宣告模型。 使用加入宣告模型是選擇性的。 |
+| `Enable-VMInsightsPerfCounters.ps1` | PowerShell 腳本，可啟用適用于 Vm 的 Azure 監視器，並設定效能計數器。 |
+| `ChangeTracking-FileList.json` | 一種 Resource Manager 範本，可定義變更追蹤將監視的檔案清單。 |
 
 使用下列命令來執行 `New-AMSDeployment.ps1` ：
 
@@ -54,7 +54,7 @@ ms.locfileid: "97016896"
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
 ```
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 瞭解如何設定基本警示，以通知您的金鑰管理事件和問題的小組。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: a1e2de16aea7af82795c4227675c5dc72ccf523c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0ad91b2d09e08bf05cca62323e18ed242ef5e1b6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012510"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785320"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -78,8 +78,8 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 | 訂用帳戶設計    | N/A-專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [建立初始訂閱](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | 資源群組        | N/A-專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [調整訂用帳戶](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | 管理群組      | N/A-專為單一生產訂用帳戶所設計。                                                                                                                                                                                                                     | [組織訂閱](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| 資料                   | N/A                                                                                                                                                                                                                                                                      | 選擇 Azure 和[azure 資料存放區](/azure/architecture/guide/technology-choices/data-store-overview)[中正確的 SQL Server 選項](/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
-| 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指導方針](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| 資料                   | N/A                                                                                                                                                                                                                                                                      | 在 Azure 和[azure 資料存放區](/azure/architecture/guide/technology-choices/data-store-overview)[中選擇正確的 SQL Server 選項](/azure/sql-database/sql-database-paas-vs-sql-server-iaas) |
+| 儲存體                | N/A                                                                                                                                                                                                                                                                      | [Azure 儲存體指引](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | 命名標準       | 建立環境時，也會建立唯一的前置詞。 需要全域唯一名稱的資源 (例如儲存體帳戶) 使用此前置詞。 自訂名稱會附加隨機尾碼。 標記使用方式會依照下表所述的方式來強制執行。 | [命名和標記最佳做法](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | 成本管理        | N/A                                                                                                                                                                                                                                                                      | [追蹤成本](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
 | 計算                | N/A                                                                                                                                                                                                                                                                      | [計算選項](../considerations/compute-options.md)                                                                                                                                                                                                         |
@@ -91,7 +91,7 @@ Azure 提供原生服務來部署登陸區域。 其他協力廠商工具也可�
 <!-- TODO: Review capitalization and hyphenation -->
 <!-- TODO: Eliminate either "Tag name" or "Key" column -->
 
-| 標籤名稱          | 描述                                                                                        | Key             | 範例值                                    |
+| 標籤名稱          | 描述                                                                                        | Key               | 範例值                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
 | 業務單位     | 您公司中擁有該資源所屬訂用帳戶或工作負載的最上層部門。 | `BusinessUnit`    | `finance`, `marketing`, `<product-name>`, `corp`, `shared` |
 | 成本中心       | 與此資源相關聯的會計成本中心。                                              | `CostCenter`      | `<cost-center-number>`                                     |
@@ -152,7 +152,7 @@ tags_hub = {
 }
 ```
 
-然後，我們會指定 Log Analytics 名稱和一組分析部署的解決方案。 在這裡，我們保留了網路監視、Active Directory 評定和複寫、DNS 分析和 Key Vault 分析。
+然後，我們會指定 Log Analytics 名稱和一組分析部署的解決方案。 在這裡，我們保留了網路監視、Active Directory 評定和複寫、DNS 分析，以及金鑰保存庫分析。
 
 ```hcl
 
@@ -187,7 +187,7 @@ solution_plan_map = {
 
 ```
 
-接下來，我們設定了 Azure 資訊安全中心的警示參數。
+接下來，我們設定了 Azure 安全性中心的警示參數。
 
 ```hcl
 # Azure Security Center Configuration
@@ -201,7 +201,7 @@ security_center = {
 
 檢查設定之後，您可以部署設定，就像部署 Terraform 環境一樣。 建議您使用 rover，這是可讓您從 Windows、Linux 或 macOS 進行部署的 Docker 容器。 您可以開始使用 [登陸區域](https://github.com/azure/caf-terraform-landingzones)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 基礎登陸區域以分解的方式為複雜的環境奠定基礎。 此版本提供一組簡單的功能，可透過將其他模組新增至藍圖或將其他登陸區域分層在其上進行擴充。
 

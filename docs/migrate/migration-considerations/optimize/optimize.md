@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5cbf8e70e65eeeff04e4c22f8a2f559111f1e247
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0e6aebff9cc0bf7df7ba96dea4107e0ed6bb3fca
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025005"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786663"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>進行雲端資產的效能評定和大小調整
 
@@ -32,7 +32,7 @@ ms.locfileid: "97025005"
 
 在移轉期間，請使用有根據的猜測並進行調整大小的實驗。 不過，要進行真正的資源最佳化，必須要有以雲端環境中的實際效能為基礎的資料。 為了執行真正的最佳化，IT 小組必須先實作監視效能和資源使用率的方法。
 
-## <a name="benchmark-and-optimize-with-azure-cost-management--billing"></a>使用 Azure 成本管理 + 計費進行基準測試和優化
+## <a name="benchmark-and-optimize-with-azure-cost-management--billing"></a>使用 Azure 成本管理和計費進行基準測試和優化
 
 [Azure 成本管理 + 計費](/azure/cost-management-billing/cost-management-billing-overview) 會以透明和精確度來管理雲端支出。 此服務會進行雲端成本的監視、效能評定、配置及最佳化。
 
@@ -40,9 +40,9 @@ ms.locfileid: "97025005"
 
 ## <a name="improve-efficiency"></a>改善效率
 
-使用 Azure 成本管理 + 計費來決定最佳的 VM 使用量、識別閒置的 Vm，或移除閒置的 Vm 和未連結的磁片。 使用大小調整最佳化和低效率報告中的資訊，可建立縮減或移除閒置 VM 的計劃。
+使用 Azure 成本管理 + 計費來決定最佳的 VM 使用量、識別閒置的 Vm，或移除閒置 Vm 和未連結的磁片。 使用大小調整最佳化和低效率報告中的資訊，可建立縮減或移除閒置 VM 的計劃。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 在工作負載經過測試和最佳化後，即可[準備工作負載以進行升階](./ready.md)。
 
