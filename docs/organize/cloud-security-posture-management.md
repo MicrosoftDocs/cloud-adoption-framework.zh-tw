@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 77ad129f12e859c0530aaedf351df0374f8b96ec
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1493bf194f925cc664594e92b1c14578de104a40
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024563"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209079"
 ---
 <!-- docsTest:casing TVM -->
 
@@ -32,8 +32,8 @@ ms.locfileid: "97024563"
 - **威脅和弱點管理 (TVM)** 來建立組織攻擊面和風險的整體觀點，並將其整合至營運和工程決策制定。
 - **探索共用風險：** 瞭解獲批准和待批准雲端服務上企業智慧財產的資料暴露情形。
 - **雲端安全性狀態管理** 可利用雲端檢測來監視和優先處理安全性改進。
-- **技術原則：** 將護欄套用至對技術系統進行審核並強制執行組織的標準和原則。 請參閱 Azure 原則和 [Azure 藍圖](/azure/governance/blueprints/overview)。
-- **威脅** 模型化系統和架構，以及特定的應用程式。
+- **技術原則：** 將護欄套用至對技術系統進行審核並強制執行組織的標準和原則。 如需詳細資訊，請參閱 Azure 原則和 [Azure 藍圖](/azure/governance/blueprints/overview)。
+- **威脅模型** 化系統和架構，以及特定的應用程式。
 
 **新興專業領域：** 安全性狀態管理會利用這些新功能，以狀況良好的方式中斷安全性組織的許多規範，且可能會在角色之間轉移責任或建立新的角色。
 
@@ -50,6 +50,6 @@ ms.locfileid: "97024563"
 - 安全性架構和作業
 - Audit 小組
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 複習雲端安全性 [事件準備](./cloud-security-incident-preparation.md)的功能。

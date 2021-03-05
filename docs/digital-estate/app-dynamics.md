@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 561be9cd3c8ceaebc9ba8b7faab8f87297170fc4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a79fd88354907457cf59ecfba727ca77cacbaf2e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208858"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
@@ -44,7 +44,7 @@ AppDynamics 可以針對大部分的使用案例供應商業見解，而許多�
 
 AppDynamics 可協助您為您的應用程式定義商業價值、找出他們應符合的關鍵計量以保留其價值，並確認它們是否符合其目標業務成果。 AppDynamics 代理程式會直接從應用程式收集這些資料點和傳統的應用程式效能計量（例如回應時間和記憶體使用量），而不需要變更程式碼。
 
-商務計量與業務成果密切相關。 許多組織都有複雜的計量，可測量獨特的業務成果，而且這些結果可以從會計和彈性相關的效能和客戶參與目標的範圍。 AppDynamics 會收集對您的組織而言是特定且有用的計量，而這些計量可以參與遷移前後的目前商務營運。
+商務計量與業務成果密切相關。 許多組織都有複雜的計量，可測量獨特的業務成果，而且這些結果可以從會計和彈性相關的效能和客戶參與目標的範圍。 AppDynamics 會收集對貴組織而言是特定且有用的計量，而這些計量可以在將工作負載遷移至 Azure 之前和之後，對目前的商務營運有所貢獻。
 
 **範例︰**
 

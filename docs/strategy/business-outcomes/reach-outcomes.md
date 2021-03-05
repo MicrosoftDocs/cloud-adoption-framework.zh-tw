@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 5f51ef63c0caefd0b91bfaf206355dff4d38f195
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: dac5b0c3c36f46daa5808b853653c9dd5304bf26
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790012"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208212"
 ---
 <!-- cSpell:ignore Personalizer -->
 <!-- docutune:ignore "global reach" -->
@@ -34,7 +34,7 @@ ms.locfileid: "101790012"
 
 ### <a name="manufacturing-example"></a>製造範例
 
-修飾製造商已找出趨勢。 即使沒有任何銷售小組在該區域中運作，仍會將某些產品寄送到亞太地區地區。 遠端銷售人員所需的最小系統很小，但延遲會防止遠端存取解決方案。 為了充分利用這個趨勢，銷售副總裁想要試驗日本和韓國的銷售團隊。 因為公司已經歷雲端遷移，所以能夠在數天內于日本和南韓國部署必要的系統。 這可讓銷售副總裁在三個月內依 *x%* 成長到區域中的收益。 這兩個市場持續優於全球的其他部分，導致整個區域的銷售營運。
+修飾製造商已找出趨勢。 即使沒有任何銷售小組在該區域中運作，仍會將某些產品寄送到亞太地區地區。 遠端銷售人員所需的最小系統很小，但延遲會防止遠端存取解決方案。 為了充分利用這個趨勢，銷售副總裁想要試驗日本和韓國的銷售團隊。 因為公司已經歷雲端遷移，所以能夠在數天內于日本和南韓國部署必要的系統。 這可讓銷售副總裁在三個月內成長區域中的收益。 這兩個市場持續優於全球的其他部分，導致整個區域的銷售營運。
 
 ### <a name="retail-example"></a>零售範例
 

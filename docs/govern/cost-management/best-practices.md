@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 167d95733dbecab3b668e234e314765a414fc6be
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 4fc396611a849769a241fbb07c655f75bcc1d65c
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102113192"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208875"
 ---
-<!-- docutune:casing ARO -->
-
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Azure 中託管資源的成本和大小最佳作法
 
 在提供治理的專業領域時，成本管理是企業層級的週期性主題。 藉由優化和管理成本，您可以確保 Azure 環境的長期成功。 所有小組都 (（例如財務、管理和應用程式開發團隊）) 瞭解相關聯的成本，並定期進行審查。
@@ -186,7 +184,7 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - 分析資料以產生 Azure 資源群組和資源的預算基準。
 - 識別可讓您減少大小、停止或暫停資源的使用模式，以進一步降低成本。
 
-本節中的最佳作法包括使用 Azure 混合式權益和 Azure 保留的虛擬機器實例、降低訂用帳戶的雲端費用、使用 Azure 成本管理 + 計費來進行成本預算和分析、監視資源和執行資源群組預算，以及優化監視、儲存體和 Vm。
+本節中的最佳作法包括使用 Azure 混合式權益和 Azure 保留的 VM 實例、降低訂用帳戶的雲端費用、使用 Azure 成本管理 + 計費來進行成本預算和分析、監視資源和執行資源群組預算，以及優化監視、儲存體和 Vm。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>最佳做法：利用 Azure 混合式權益
 
@@ -211,8 +209,8 @@ Azure 提供數種儲存體帳戶類型與效能層級。
 - 保留的實例會提供計費折扣，且不會影響資源的執行時間狀態。
 - 您可以取消保留執行個體。
 
-![Azure 保留的虛擬機器實例 ](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
- *圖1： azure 保留的 vm。*
+![Azure 保留的 VM 實例 ](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
+ *圖1： azure 保留的 vm 實例。*
 
 **瞭解更多資訊：**
 

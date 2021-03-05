@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 8d25844c2560fd6463bdb77e1b6d5c5116c33001
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1313d3253d87d60928459521a6cefb43b56ed030
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025753"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208535"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>將工作負載部署到 Azure Stack Hub
 
@@ -25,19 +25,19 @@ ms.locfileid: "97025753"
 
 ## <a name="infrastructure-as-a-service-deployment"></a>基礎結構即服務部署
 
-無論將基礎結構即服務部署 (IaaS) 的原因為何，部署至 Azure Stack Hub 都類似于任何其他 IaaS 部署。 人們通常會將 IaaS 視為 (Vm) 的虛擬機器，但 IaaS 比起。 當您在 Azure 或 Azure Stack 中部署 VM 時，電腦會隨附軟體定義的網路，包括網域名稱系統、公用 Ip、防火牆規則 (也稱為網路安全性群組) ，以及許多其他功能。 VM 部署也會使用 Azure Blob 儲存體，在軟體定義的儲存體上建立 Vm 的磁片。
+無論將基礎結構即服務部署 (IaaS) 的原因為何，部署至 Azure Stack Hub 的方式類似于任何其他 IaaS 部署。 人們通常會將 IaaS 視為 (Vm) 的虛擬機器，但 IaaS 比起。 當您在 Azure 或 Azure Stack 中部署 VM 時，電腦會隨附軟體定義的網路，包括網域名稱系統、公用 Ip、防火牆規則 (也稱為網路安全性群組) ，以及許多其他功能。 VM 部署也會使用 Azure Blob 儲存體，在軟體定義的儲存體上建立 Vm 的磁片。
 
 如需將 Vm 部署至 Azure Stack 的更深入指引，請參閱 [Azure stack 計算總覽](/azure-stack/user/azure-stack-compute-overview?view=azs-2002)。
 
 ## <a name="platform-as-a-service-deployment"></a>平臺即服務部署
 
-在雲端中，所有平臺即服務 (PaaS) 資源會以某種形式的基礎結構服務（例如 VM）執行。 不過，Azure 服務會模糊化這些後端資源，因此您不需要管理這些後端資源。 這些基礎結構資源的混淆和協調是由 Azure Resource Manager 所管理。 使用 Azure Resource Manager 範本部署至 Azure 時，您可能會看到 Resource Manager 的其中一個層面。 這些範本會告訴 Azure 您要叫用的資源提供者，以及您希望如何設定資源。
+在雲端中，所有平臺即服務 (PaaS) 資源會以某種形式的基礎結構服務（例如 VM）執行。 不過，Azure 服務會模糊化這些後端資源，因此您不需要管理這些後端資源。 這些基礎結構資源的混淆和協調是由 Azure Resource Manager 所管理。 使用 Azure Resource Manager 範本部署至 Azure 時，您可能已看過資源管理員的其中一個層面。 這些範本會告訴 Azure 您要叫用的資源提供者，以及您希望如何設定資源。
 
-當雲端在您的資料中心內執行時，您的 stack hub 系統管理員必須稍微熟悉模糊化層級。 在您的使用者或開發人員可以使用 PaaS 資源之前，Azure Stack Hub 的系統管理員必須從 marketplace 安裝資源提供者。 這些資源提供者可讓您的 Azure Stack Hub 實例，在您的 Stack 實例中複寫 Azure 的資源提供者功能。 如需部署 Azure Stack Hub 資源提供者的詳細資訊，請參閱 [Azure Stack IaaS blog 系列](https://azure.microsoft.com/blog/azure-stack-iaas-part-one/)。
+當雲端在您的資料中心內執行時，您的 stack hub 系統管理員必須稍微熟悉模糊化層級。 在您的使用者或開發人員可以使用 PaaS 資源之前，Azure Stack Hub 系統管理員必須從 marketplace 安裝資源提供者。 這些資源提供者可讓您的 Azure Stack Hub 實例，在您的 Stack 實例中複寫 Azure 的資源提供者功能。 如需有關部署 Azure Stack Hub 資源提供者的詳細資訊，請參閱 [Azure Stack IaaS blog 系列](https://azure.microsoft.com/blog/azure-stack-iaas-part-one/)。
 
 ## <a name="deploy-workloads"></a>部署工作負載
 
-在 Azure Stack Hub 系統管理員已正確設定您的堆疊實例之後，就可以繼續進行遷移，如同其他大部分的 Azure 遷移工作一樣。 藉由使用 Azure Stack，您的小組可以執行下列任何一種類型的遷移：
+當 Azure Stack Hub 系統管理員已正確設定您的 stack 實例之後，您可以繼續進行遷移，如同其他大部分的 Azure 遷移工作一樣。 藉由使用 Azure Stack，您的小組可以執行下列任何一種類型的遷移：
 
 - [乙太坊區塊鏈網路](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
 - [AKS 引擎](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)
@@ -48,12 +48,12 @@ ms.locfileid: "97025753"
 
 ## <a name="additional-considerations-during-migration"></a>遷移期間的其他考慮
 
-下列文章可協助您的小組在遷移和現代化期間：
+下列資源可協助您的小組在遷移和現代化期間：
 
-- 擴充[性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)服務，例如依使用量付費、vm 可用性設定組、vm 擴展集、網路介面卡，以及新增和調整 vm 和磁片大小的能力
-- [儲存體容量](https://azure.microsoft.com/blog/azure-stack-iaas-part-3/)，包括上傳及下載的能力，以及捕獲和部署 VM 映射
-- [Azure Stack 快速入門範本](https://github.com/Azure/AzureStack-QuickStart-Templates) GitHub 儲存機制
-- [Azure 快速入門範本](https://github.com/Azure/Azure-QuickStart-Templates) GitHub 儲存機制
+- 擴充[性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)服務，例如依使用量付費、可用性設定組、虛擬機器擴展集、網路介面卡，以及新增和調整 vm 和磁片大小的功能。
+- [儲存體容量](https://azure.microsoft.com/blog/azure-stack-iaas-part-3/)，包括上傳及下載的能力，以及捕獲和部署 VM 映射。
+- [Azure Stack 快速入門範本](https://github.com/Azure/AzureStack-QuickStart-Templates)GitHub 存放庫。
+- [Azure 快速入門範本](https://github.com/Azure/Azure-QuickStart-Templates)GitHub 存放庫。
 
 ## <a name="next-steps"></a>後續步驟
 

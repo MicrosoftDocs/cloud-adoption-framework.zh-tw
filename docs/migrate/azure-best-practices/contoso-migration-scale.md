@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: f6a337a1617dc9615d578e1ab8f8094ec146bced
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a5eca0bcc9a5242be16440d296196b6992de3bc0
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788584"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208076"
 ---
-<!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
+<!-- docutune:casing Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
 <!-- cSpell:ignore VHDs autosnooze unsnooze Hanu Scalr -->
 

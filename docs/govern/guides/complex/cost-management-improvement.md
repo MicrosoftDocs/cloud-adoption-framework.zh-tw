@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 5994af7ded93b8693f637649303120bc820ae3cb
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: de251247209e4ab7d1bb99e70859806e8b59c52b
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208705"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>適用于複雜企業的治理指南：改善成本管理專業領域
 
@@ -57,7 +57,7 @@ ms.locfileid: "101789434"
 - 所有成本必須針對權責目的配置給業務功能。
 - 應該針對最佳化商機持續監視雲端資產。
 - 雲端治理工具必須將資產調整大小選項限制在已核准的設定清單中。 此工具必須確保所有資產都可探索且可透過成本監視解決方案來追蹤。
-- 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 這份檔可協助您精簡預算，並準備額外的自動化工具，以避免使用較昂貴的選項。 在此過程中，應考慮雲端提供者所提供的不同折扣工具，例如 Azure 保留的虛擬機器實例或授權成本降低。
+- 在部署規劃期間，應該記載與裝載生產工作負載相關聯的任何必要雲端資源。 這份檔可協助您精簡預算，並準備額外的自動化工具，以避免使用較昂貴的選項。 在此過程中，應考慮雲端提供者所提供的不同折扣工具，例如 Azure 保留的 VM 實例或授權成本降低。
 - 所有應用程式擁有者都必須參加將工作負載最佳化的實務訓練，以更好的方式來控制雲端成本。
 
 ## <a name="incremental-improvement-of-best-practices"></a>最佳做法的累加式改進

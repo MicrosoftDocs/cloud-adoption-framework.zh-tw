@@ -23,6 +23,10 @@ items:
     href: govern.md
   - name: 管理您的組合
     href: manage.md
+  - name: 企業規模的登陸區域
+    items:
+      - name: 混合式和多重雲端的支援
+        href: enterprise-scale-landing-zone.md
   - name: 架構完善的混合式工作負載
     items:
       - name: 概觀

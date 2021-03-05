@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 38e57822029874c87010f0a935dc65dfc48546e9
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a2fe2068f5a7bc1f782ddd5496e59c2870d9367e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208607"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -243,7 +243,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
     ![在 Azure DevOps 中建立和設定組建的螢幕擷取畫面。](./media/contoso-migration-rebuild/vsts8.png)
     *圖19：建立和設定組建。*
 
-10. 他們會在存放庫 `docker-compose.yaml` 的 *src* 資料夾中指定檔案的路徑。 他們選擇建立服務映射，並包含最新的標記。 當動作變更為 [建置服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動建置服務]。
+10. 他們會指定存放庫資料夾中檔案的路徑 `docker-compose.yaml` `src` 。 他們選擇建立服務映射，並包含最新的標記。 當動作變更為 [建置服務映像] 時，Azure DevOps 工作的名稱會變更為 [自動建置服務]。
 
     ![Azure DevOps 中各種工作建立細節的螢幕擷取畫面。 ](./media/contoso-migration-rebuild/vsts9.png)
     *圖20：工作的詳細資訊。*
@@ -308,10 +308,7 @@ Contoso 會建立 Azure DevOps 專案、設定 CI 組建來建立容器，然後
 
 系統管理員會建立管線：
 
-1. 在 Visual Studio 中，他們會使用先前記下的資料庫連接資訊來更新 */deploy/k8s/config_local. yml* 檔案。
-
-    ![顯示 Visual Studio [新增管線] 按鈕的螢幕擷取畫面。](./media/contoso-migration-rebuild/back-pipe1.png)
-    *圖28：資料庫連接。*
+1. 在 Visual Studio 中，他們會 `/deploy/k8s/config_local.yml` 使用先前記下的資料庫連接資訊來更新檔案。
 
 2. 他們會開啟 Azure DevOps，並在 SmartHotel360 專案中，選取 [**發行**] 窗格上的 [ **+ 新增管線**]。
 
@@ -396,7 +393,7 @@ Contoso 管理員需要部署將供前端應用程式使用的基礎結構。 �
 
 4. 他們會在文字檔中取得儲存體帳戶的存取詳細資料，以供日後參考。
 
-    ![用來捕捉存取詳細資料的文字檔螢幕擷取畫面。](./media/contoso-migration-rebuild/blob2.png)
+    ![用來捕捉存取詳細資料的文字檔螢幕擷取畫面。](./media/contoso-migration-rebuild/blob3.png)
     *圖42：用來捕捉存取詳細資料的文字檔。*
 
 ### <a name="provision-an-azure-cosmos-db-database"></a>布建 Azure Cosmos DB 資料庫

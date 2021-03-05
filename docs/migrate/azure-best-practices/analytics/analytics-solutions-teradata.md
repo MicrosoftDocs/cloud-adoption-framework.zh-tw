@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 909664beb60d1ab8036adfbb44bb3f2e5bb79ce4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 9fd53a221a1763b423e9439900b4cb785714db95
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792171"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208127"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
@@ -35,7 +35,7 @@ Azure Synapse Analytics 是一項無限制的分析服務，可將企業資料�
 
 | 準備        | 遷移                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
-| <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移的資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>找出最適合使用的 Azure 和協力廠商工具和功能。</li><li>及早在新平臺上訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li>從小型和簡單開始。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和 views 的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商務程式。</li><li>遷移或重構 ETL/ELT 增量載入進程。</li></ul> | <ul><li> 監視和記錄遷移程式的所有階段。</li><li>使用獲得的體驗來建立範本，以供未來的遷移之用。</li><li>使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
+| <li> 定義範圍：我們要遷移什麼？ <li> 建立要遷移的資料和進程的清查。 <li> 定義任何資料模型變更。 <li> 找出最適合使用的 Azure 和協力廠商工具和功能。 <li> 及早在新平臺上訓練員工。 <li> 設定 Azure 目標平臺。</li> |  <li> 從小型和簡單開始。 <li> 盡可能自動化。 <li> 使用 Azure 內建工具和功能來減少遷移工作。 <li> 遷移資料表和 views 的中繼資料。 <li> 遷移相關的歷程記錄資料。 <li> 遷移或重構預存程式和商務程式。 <li> 遷移或重構 ETL/ELT 增量載入進程。</li> | <li> 監視和記錄遷移程式的所有階段。 <li> 使用獲得的體驗來建立範本，以供未來的遷移之用。 <li> 使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。 <li> 測試應用程式和查詢工具。 <li> 基準測試和優化查詢效能。</li> |
 
 當您從舊版 Teradata 環境遷移至 Azure Synapse 時，除了 Teradata 檔中所述的一般主題之外，您還必須考慮一些特定因素。
 
@@ -45,9 +45,9 @@ Azure Synapse Analytics 是一項無限制的分析服務，可將企業資料�
 
 - 透過快速提供新環境的優點，證明遷移至 Azure Synapse 的可行性。
 - 允許內部技術人員體驗新的程式和工具，讓他們可以使用它們來遷移其他區域。
-- 根據目前的工具和進程建立範本，以用於從來源 Teradata 環境進行額外的遷移。
+- 根據目前的工具和進程建立範本，以在來源 Teradata 環境的其他遷移中使用。
 
-從支援這些目標的 Teradata 環境初始遷移的絕佳候選，通常是執行 Power BI/分析工作負載而非 OLTP 工作負載的一種。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
+從 Teradata 環境初始遷移的絕佳候選項，是執行 Power BI/分析工作負載而非 OLTP 工作負載的絕佳候選。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
 
 針對大小，您在初始練習中遷移的資料量很重要，足以示範 Azure Synapse 環境的功能和優點，並提供簡短的時間來示範價值。 通常符合需求的大小介於1到 10 tb (TB) 。
 
@@ -95,7 +95,7 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 在 Teradata 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及資料超市的另一個資料庫 (有時稱為 *語義層*) 。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
-Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在 Azure Synapse 中使用一系列的架構，以模仿您從 Teradata 遷移的任何個別資料庫。
+Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在 Azure Synapse 中使用一組架構，以模擬您從 Teradata 遷移的任何不同資料庫。
 
 如果您使用 Teradata 環境中的架構，您可能需要使用新的命名慣例，將現有的 Teradata 資料表和觀點移至新的環境。 例如，您可能會將現有的 Teradata 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
 
@@ -206,7 +206,7 @@ Azure Synapse 不直接支援某些 Teradata 資料類型。 下表顯示這些�
 
 - **資料擷取**
 
-  使用標準 Teradata 公用程式（如和），從現有的 Teradata 資料表遷移原始資料 `BTEQ` `FASTEXPORT` 。 在遷移練習中，盡可能有效率地將資料解壓縮，通常很重要。 我們針對最新版本的 Teradata 所建議的方法是使用 Teradata Parallel Transporter，此公用程式會使用多個平行 `FASTEXPORT` 資料流程來達到最佳輸送量。
+  使用標準 Teradata 公用程式（如和），從現有的 Teradata 資料表遷移原始資料 `BTEQ` `FASTEXPORT` 。 在遷移練習中，盡可能有效率地將資料解壓縮，通常很重要。 針對最新版本的 Teradata，我們建議 Teradata Parallel Transporter，此公用程式會使用多個平行 `FASTEXPORT` 資料流程來達到最佳輸送量。
 
   您可以直接從 Data Factory 呼叫 Teradata Parallel Transporter。 我們建議使用此方法來管理資料移轉程式、Teradata 實例是否在內部部署環境中，或複製到 Azure 環境中的 VM （如先前所述）。
 

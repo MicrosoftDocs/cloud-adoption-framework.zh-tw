@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: c38f725f7a2f7f138594d6167c0c823d04118166
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 53ff4e872ffa5bf6d92061388c89a7b92ecddb21
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632472"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208331"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -70,7 +70,7 @@ WorkBoard 所定義的原則可協助您的組織瞭解 OKRs 的外觀。 目標
 **主要結果：**
 
 1. 使用我們的平臺45% 的 K-12 個學校
-1. 學生參與率的12% 增加（以內部系統測量）
+1. 透過內部系統測量的學生參與率提高12%
 1. 每季家長問卷的95% 滿意度率
 
 **目標2：** 打造技術平臺，以支援企業中的每個人進行創新和建立。

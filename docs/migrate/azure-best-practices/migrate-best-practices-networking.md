@@ -1,6 +1,6 @@
 ---
 title: 針對遷移至 Azure 的工作負載來設定網路的最佳做法
-description: 使用「適用于 Azure 的雲端採用架構」來瞭解為您已遷移的工作負載設定網路的最佳做法。
+description: 使用適用于 Azure 的雲端採用架構來學習最佳作法，以協助您為已遷移的工作負載設定網路功能。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 89ff7aea421da39aaa5deaffea706324eba2736c
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 5914004310b660d42e961fa57152f07ecdcfd073
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102116456"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209130"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -33,8 +33,8 @@ Azure 為虛擬網路提供下列功能：
 - 虛擬網路是專屬於您訂用帳戶的 Azure 雲端邏輯隔離。
 - 您可以在每個 Azure 訂用帳戶和 Azure 區域內實作多個虛擬網路。
 - 每個虛擬網路都與其他虛擬網路隔離。
-- 虛擬網路可以包含 [RFC 1918](https://tools.ietf.org/html/rfc1918)中定義的私人和公用 IP 位址，以 CIDR 標記法表示。 虛擬網路位址空間中指定的公用 IP 位址無法直接從網際網路存取。
-- 虛擬網路可以使用虛擬網路對等互連彼此連接。 已連線的虛擬網路可以位於相同或不同的區域。 因此，一個虛擬網路中的資源可以連接至其他虛擬網路中的資源。
+- 虛擬網路可以包含 [RFC 1918](https://tools.ietf.org/html/rfc1918)中定義的私人和公用 IP 位址，以無類別網域間路由 (CIDR) 標記法來表示。 虛擬網路位址空間中指定的公用 IP 位址無法直接從網際網路存取。
+- 虛擬網路可以使用虛擬網路對等互連彼此連接。 已連線的虛擬網路可以位於相同區域或不同區域;一個虛擬網路中的資源可以連接至其他虛擬網路中的資源。
 - 根據預設，Azure 會在虛擬網路內的子網、已連線的虛擬網路、內部部署網路和網際網路之間路由傳送流量。
 
 規劃您的虛擬網路拓撲時，您應該考慮如何安排 IP 位址空間、如何實行中樞和輪輻網路拓撲、如何將虛擬網路分割成子網、設定 DNS，以及執行 Azure 可用性區域。
@@ -50,7 +50,7 @@ Azure 為虛擬網路提供下列功能：
 - 虛擬網路位址空間不應與內部部署網路範圍重迭。
 - 重迭的位址可能會導致無法連線的網路，以及無法正常運作的路由。
 - 如果網路重迭，您將需要重新設計網路。
-- 如果您絕對無法重新設計網路， (NAT) 的網路位址轉譯可提供協助。 但應該盡可能避免或限制。
+- 如果您絕對無法重新設計網路， (NAT) 的網路位址轉譯會有所説明，但應該盡可能避免或限制。
 
 **瞭解更多資訊：**
 
@@ -133,7 +133,7 @@ Azure 為虛擬網路提供下列功能：
 
 - 區域冗余服務會跨可用性區域複寫您的應用程式和資料，以防止單一失敗點。
 
-- 使用可用性區域時，Azure 會提供 99.99% VM 執行時間的 SLA。
+- 使用可用性區域時，Azure 會為 VM 執行時間提供99.99% 的 SLA。
 
     ![Azure 區域中的可用性區域圖表。](./media/migrate-best-practices-networking/availability-zone.png)
 
@@ -144,7 +144,7 @@ Azure 為虛擬網路提供下列功能：
   - **區域冗余服務：** 資源會自動跨區域複寫，例如區域冗余儲存體或 Azure SQL Database。
 - 若要提供區域性容錯功能，您可以使用網際網路對應的工作負載或應用層來部署標準的 Azure 負載平衡器實例。
 
-    ![標準負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) *圖4：負載平衡器* 的圖表。
+    ![標準 Azure 負載平衡器 ](./media/migrate-best-practices-networking/load-balancer.png) *圖4：負載平衡器* 的圖表。
 
 **瞭解更多資訊：**
 
@@ -260,7 +260,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
   - 如果不知道前置詞來自哪個區域，就無法以不同方式處理前置詞。
   - 您的 WAN 網路可以假設這兩個前置詞都較接近 `East US` `West US` ，因此會將來自兩個辦公室的使用者路由傳送至中的 ExpressRoute 電路 `East US` 。 這對洛杉磯辦公室的使用者提供更糟的體驗。
 
-![具有路徑路徑錯誤電路的 VPN 圖表。 ](./media/migrate-best-practices-networking/bgp1.png)
+![VPN 的圖表，其路由路徑是透過錯誤的線路。 ](./media/migrate-best-practices-networking/bgp1.png)
 *圖6： BGP 群體未優化連接。*
 
 **解決方案：**
@@ -273,7 +273,7 @@ Azure ExpressRoute 服務會在虛擬 Azure 資料中心與內部部署網路之
 - 在我們的範例中，您會將較高的本機喜好設定值指派到 `13.100.0.0/16` 中的 `West US` `East US` 。 同樣地，您可以將較高的本機喜好設定值指派給中的， `23.100.0.0/16` `East US` 而不是 `West US` 。
 - 這項設定可確保當 Microsoft 的兩個路徑都可用時，洛杉磯的使用者會使用「西部」電路連接到該 `West US` 區域，而紐約的使用者會使用「東部線路」連接到該 `East US` 區域。
 
-![透過正確電路路由路徑的 VPN 圖表。 ](./media/migrate-best-practices-networking/bgp2.png)
+![VPN 的圖表，其中包含透過正確電路的路由路徑。 ](./media/migrate-best-practices-networking/bgp2.png)
 *圖7： BGP 團體優化連接。*
 
 **瞭解更多資訊：**
@@ -363,8 +363,8 @@ Microsoft 與您之間可以共用保護虛擬網路的責任。 Microsoft 提�
 
 **範例︰**
 
-![應用程式安全性群組 [圖 9] 的圖表 ](./media/migrate-best-practices-networking/asg.png)
- *：應用程式安全性群組範例。*
+![範例應用程式安全性群組的圖表。 ](./media/migrate-best-practices-networking/asg.png)
+*圖9：應用程式安全性群組範例。*
 
 | 網路介面 | 應用程式安全性群組 |
 | --- | --- |
@@ -407,8 +407,8 @@ Microsoft 與您之間可以共用保護虛擬網路的責任。 Microsoft 提�
 Azure 中的公用 IP 位址可與 VM、負載平衡器、應用程式閘道和 VPN 閘道相關聯。
 
 - 公用 IP 位址可讓網際網路資源對 Azure 資源進行輸入通訊，以及讓 Azure 資源對網際網路進行輸出通訊。
-- 公用 IP 位址會使用基本或標準 SKU 來建立，這有幾項差異。 標準 SKU 可以指派給任何服務，但最常設定於 VM、負載平衡器和應用程式閘道上。
-- 請務必注意，基本的公用 IP 位址不會自動設定 NSG。 您必須設定自己的，並指派規則來控制存取權。 標準 SKU IP 位址具有 NSG 和預設指派的規則。
+- 公用 IP 位址會使用基本 SKU 或標準 SKU 來建立。 標準 Sku 可以指派給任何服務，但通常是在 Vm、負載平衡器和應用程式閘道上進行設定。
+- 基本的公用 IP 位址不會自動設定 NSG。 您必須設定自己的，並指派規則來控制存取權。 標準 SKU IP 位址具有 NSG 和預設指派的規則。
 - 最佳做法是 VM 不應該使用公用 IP 位址來進行設定。
   - 如果您需要開啟埠，它應該只適用于 web 服務，例如埠80或443。
   - 標準遠端系統管理埠，例如 SSH (22) 和 RDP (3389) 以及所有其他埠，都應該使用 Nsg 設定為 [拒絕]。
@@ -421,7 +421,7 @@ Azure 中的公用 IP 位址可與 VM、負載平衡器、應用程式閘道和 
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>針對網路利用 Azure 安全性功能
 
-Azure 具有平台層級的安全性功能，包括 Azure 防火牆、Web 應用程式防火牆和網路監看員。
+Azure 具有平台層級的安全性功能，包括 Azure 防火牆、Azure Web 應用程式防火牆 (WAF) 和 Azure 網路監看員。
 
 ## <a name="best-practice-deploy-azure-firewall"></a>最佳做法：部署 Azure 防火牆
 
@@ -465,9 +465,11 @@ Web 應用程式防火牆 (WAF) 是 Azure 應用程式閘道的一項功能，�
 - 深入瞭解 [WAF](/azure/web-application-firewall/ag/ag-overview)。
 - 複習 [WAF 限制和排除](/azure/web-application-firewall/ag/application-gateway-waf-configuration)專案。
 
-## <a name="best-practice-implement-azure-network-watcher"></a>最佳做法：執行 Azure 網路監看員
+## <a name="best-practice-implement-network-watcher"></a>最佳做法：實行網路監看員
 
-Azure 網路監看員提供的工具可監視 Azure 虛擬網路中的資源和通訊。 例如，您可以監視 VM 與端點之間的通訊，例如另一個 VM 或 FQDN。 您也可以在虛擬網路中查看資源與資源的關聯性，或診斷網路流量問題。
+網路監看員提供的工具可監視 Azure 虛擬網路中的資源和通訊。 例如，您可以監視 VM 與端點之間的通訊，例如另一個 VM 或 FQDN。 您也可以在虛擬網路中查看資源與資源的關聯性，或診斷網路流量問題。
+
+![Azure 網路監看員的螢幕擷取畫面。](./media/migrate-best-practices-networking/network-watcher.png)
 
 ![網路監看員的螢幕擷取畫面。 ](./media/migrate-best-practices-networking/network-watcher.png)
 *圖12：網路* 監看員。

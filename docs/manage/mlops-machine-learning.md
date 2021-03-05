@@ -1,6 +1,6 @@
 ---
 title: 使用 Azure Machine Learning 的 MLOps
-description: 深入瞭解機器學習作業 (MLOps) 原則和做法，以提高工作流程的效率，例如持續整合、傳遞和部署。
+description: 瞭解可提高工作流程效率的 MLOps 原則和做法，例如持續整合、傳遞和部署。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 97ccdbfe3fa430b39a10f9f1bc670fc935dfe403
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 6e9b6734dd982c3e5529f216262d25cf7dcc264b
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114059"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208195"
 ---
-# <a name="machine-learning-operations-with-azure-machine-learning"></a>使用 Azure Machine Learning 進行機器學習作業
+# <a name="mlops-with-azure-machine-learning"></a>使用 Azure Machine Learning 的 MLOps
 
-機器學習作業 (MLOps) 以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，以便：
+*MLOps (機器學習作業)* 以 DevOps 準則和做法為基礎，可提高工作流程的效率，例如持續整合、傳遞和部署。 MLOps 會將這些原則套用至機器學習程式，以便：
 
 - 更快速地實驗和開發模型。
 - 更快速地將模型部署到生產環境。

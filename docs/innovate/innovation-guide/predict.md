@@ -1,5 +1,5 @@
 ---
-title: Azure 創新：使用 AI 來創新
+title: 在 Azure 中使用 AI 創新
 description: 了解 Azure 解決方案以預測客戶的需求、讓商務程序自動化、探索非結構化資料中的潛在資訊，並以新的方式與客戶互動，以提供更好的體驗。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,16 +10,16 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: 將商務程式自動化、ai 創新、機器學習服務、知識挖掘
-ms.openlocfilehash: 1b61201bba7af957b661fa9f755350482b3db955
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: c9d9fecd738d098d42fb4f03343a16d28d55664e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208569"
 ---
 <!-- cSpell:ignore ONNX -->
 
-# <a name="innovate-with-ai"></a>使用 AI 來創新
+# <a name="innovate-with-ai-in-azure"></a>在 Azure 中使用 AI 創新
 
 身為創新者，貴公司有豐富的商業和客戶相關資訊。 您的公司可以使用 AI 創新：
 
@@ -92,7 +92,7 @@ Azure 提供一組稱為認知服務的預先建置 AI 服務，來建置 AI 應
 
     - 如果您知道所要使用的服務名稱，則可在 [搜尋 Marketplace] 方塊中輸入此名稱。 接著選取服務。
 
-    - 如需認知服務 API 的清單，請在 [認知服務] 標題旁選取 [查看更多]。 接著選取服務。
+    - 如需認知服務 Api 的清單，請選取 [**認知服務**] 標題旁的 [**查看更多**]。 接著選取服務。
 
 1. 選取 [建立]，然後遵循入口網站中的步驟來佈建服務。
 

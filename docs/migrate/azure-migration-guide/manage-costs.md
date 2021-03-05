@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: ef56557ed05f199486209538d1bd29e2a80a7891
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4ead518f93dee8421581bd1a7a17c20cb91ee4d3
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207889"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>聚焦在移轉的成本控制機制
 
 無論我們在技術小組中的角色為何，雲端都會對我們的工作方式帶來一些改變。 成本就是這種改變的絕佳範例。 在過去，只有財務和 IT 領導階層才會關心 IT 資產的成本 (基礎結構、應用程式和資料)。 雲端可讓每一位 IT 成員進行決策，並做出為使用者提供更佳支援的決策。 不過，伴隨著這種能力的責任是，在做出這些決策時必須要有成本意識。
 
-本文介紹可協助您在移轉至 Azure 之前、期間和之後做出明智成本決策的工具。
+本文介紹可協助您在將工作負載遷移至 Azure 之前、期間和之後做出明智成本決策的工具。
 
 本文介紹的工具包括：
 

@@ -1,5 +1,5 @@
 ---
-title: 企業規模的安全性、治理和合規性
+title: 企業級安全性、治理和合規性 \(部分機器翻譯\)
 description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構中企業規模的安全性治理和合規性。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,17 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9a3304635985e9d4452d9f06d7f4863408fd3d87
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 333627564f49ff29837e099ed079db03e3bf69f1
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785800"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209011"
 ---
-<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
-<!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
-
-# <a name="enterprise-scale-security-governance-and-compliance"></a>企業規模的安全性、治理和合規性
+# <a name="enterprise-scale-security-governance-and-compliance"></a>企業級安全性、治理和合規性 \(部分機器翻譯\)
 
 本文涵蓋定義加密與金鑰管理、規劃治理、定義安全性監視和稽核原則，以及規劃平臺安全性。 在本文結尾，您可以參考描述架構的表格，以評估 Azure 服務的企業安全性就緒程度。
 
@@ -227,7 +224,7 @@ Azure 安全性基準測試檔會指定安全性控制和服務建議。
 | 身分識別和存取管理 | 驗證和存取控制                                       | 所有控制平面作業是否由 Azure AD 控管？ 是否有嵌套的控制項平面，例如使用 Azure Kubernetes Service？                             |
 |                              |                                                                       | 有哪些方法可提供資料平面的存取權？                                                                                      |
 |                              |                                                                       | 資料平面是否與 Azure AD 整合？                                                                                                      |
-|                              |                                                                       | Azure 對 Azure (服務對服務) 驗證是否使用 MSI/服務主體？                                                         |
+|                              |                                                                       | 驗證是否 bwtween Azure 服務使用受控識別或服務主體？                                                         |
 |                              |                                                                       | Azure 對 IaaS (透過 Azure AD 進行的服務對虛擬網路) 驗證嗎？                                                                                   |
 |                              |                                                                       | 如何管理任何適用的金鑰或共用存取簽章？                                                                                                     |
 |                              |                                                                       | 如何撤銷存取權？                                                                                                                   |

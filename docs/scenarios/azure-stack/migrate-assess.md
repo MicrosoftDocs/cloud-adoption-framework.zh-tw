@@ -1,6 +1,6 @@
 ---
 title: 評估 Azure Stack Hub 遷移的工作負載
-description: 評定 Azure Stack Hub 遷移的工作負載。
+description: 評估 Azure Stack Hub 遷移的工作負載。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2020
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5e271a1144aaa09a45b92125c5d6db473932b751
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 040f6947ee7ac50985e6792b918d6c298096802e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025770"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208552"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>評估 Azure Stack Hub 遷移的工作負載
 
-本文假設您已決定將 [Azure Stack 整合到您的雲端策略](./index.md)，您已開發 [Azure Stack Hub 遷移的計畫](./plan.md)，而且 [您的環境已準備好進行遷移](./ready.md)。
+本文假設您已決定將 [Azure stack 整合到您的雲端策略](./index.md)、已開發 [azure stack Hub 遷移的計畫](./plan.md)，而且 [您的環境已準備好進行遷移](./ready.md)。
 
 在計畫方法的組織數位資產合理化期間，每個工作負載都經過探索和清查，並根據量化資料進行初始決策。 部署每個工作負載之前，請務必使用定性資料來驗證資料和決策。
 
@@ -65,7 +65,7 @@ ms.locfileid: "97025770"
 
 - 藉由檢查 IT 管理的雲端服務和應用程式專屬服務之間的相互關聯，以避免重複工作並將服務等級協定優化 (Sla) 。
 - 考慮在部署和遷移應用程式期間協調服務布建所需的自動化。
-- 為了協助符合您的作業需求，請考慮擴充 [性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/) 服務，例如依使用量付費、虛擬機器 (VM) 可用性設定組、VM 擴展集、網路介面卡，以及新增和調整 vm 和磁片大小的能力。
+- 為了協助符合您的作業需求，請考慮擴充 [性和可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/) 服務，例如依使用量付費、可用性設定組、虛擬機器擴展集、網路介面卡，以及新增和調整 vm 和磁片大小的能力。
 
 ## <a name="monitoring"></a>監視
 

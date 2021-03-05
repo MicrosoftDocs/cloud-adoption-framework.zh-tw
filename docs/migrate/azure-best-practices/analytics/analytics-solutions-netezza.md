@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: caf1980187a5f1b06968266ca642c7794a0f166d
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: f52971a583b00fb9b4c22d5d53e6d871b0e9d27f
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787428"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208161"
 ---
 <!-- docutune:casing Informatica Talend Inmon Attunity Qlik nzLua CBT CBTs NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -37,7 +37,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 | 準備        | 遷移                             | 移轉後 |
 | :----------------- | :----------------------------- | :---------------- |
-| <ul><li> 定義範圍：我們要遷移什麼？</li><li>建立要遷移的資料和進程的清查。</li><li>定義任何資料模型變更。</li><li>找出最適合使用的 Azure 和協力廠商工具和功能。</li><li>及早在新平臺上訓練員工。</li><li>設定 Azure 目標平臺。</li></ul> |  <ul><li> 從小型和簡單開始。</li><li>盡可能自動化。</li><li>使用 Azure 內建工具和功能來減少遷移工作。</li><li>遷移資料表和 views 的中繼資料。</li><li>遷移相關的歷程記錄資料。</li><li>遷移或重構預存程式和商務程式。</li><li>遷移或重構 ETL 或 ELT 增量載入進程。</li></ul> | <ul><li> 監視和記錄遷移程式的所有階段。</li><li>使用獲得的體驗來建立範本，以供未來的遷移之用。</li><li>使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。</li><li>測試應用程式和查詢工具。</li><li>基準測試和優化查詢效能。</li></ul> |
+| <li> 定義範圍：我們要遷移什麼？ <li> 建立要遷移的資料和進程的清查。 <li> 定義任何資料模型變更。 <li> 找出最適合使用的 Azure 和協力廠商工具和功能。 <li> 及早在新平臺上訓練員工。 <li> 設定 Azure 目標平臺。</li> | <li> 從小型和簡單開始。 <li> 盡可能自動化。 <li> 使用 Azure 內建工具和功能來減少遷移工作。 <li> 遷移資料表和 views 的中繼資料。 <li> 遷移相關的歷程記錄資料。 <li> 遷移或重構預存程式和商務程式。 <li> 遷移或重構 ETL 或 ELT 增量載入進程。</li> | <li> 監視和記錄遷移程式的所有階段。 <li> 使用獲得的體驗來建立範本，以供未來的遷移之用。 <li> 使用新平臺的效能和擴充性，視需要 Reengineer 資料模型。 <li> 測試應用程式和查詢工具。 <li> 基準測試和優化查詢效能。</li> |
 
 當您從舊版 Netezza 環境遷移至 Azure Synapse 時，除了 Netezza 檔中所述的一般主題之外，您還必須考慮一些特定因素。
 
@@ -47,7 +47,7 @@ Netezza 和 Azure Synapse 很類似，因為每個都是 SQL database，其設�
 
 - 透過快速提供新環境的優點，證明遷移至 Azure Synapse 的可行性。
 - 允許內部技術人員體驗新的程式和工具，讓他們可以使用它們來遷移其他區域。
-- 根據目前的工具和進程建立範本，以用於從來源 Netezza 環境進行額外的遷移。
+- 根據目前的工具和進程建立範本，以在來源 Netezza 環境的其他遷移中使用。
 
 從支援這些目標的 Netezza 環境初始遷移的絕佳候選，通常是執行 Power BI/分析工作負載而非 OLTP 工作負載的一種。 工作負載應該具有可透過最少量的修改（例如星狀或雪花式架構）遷移的資料模型。
 
@@ -81,7 +81,7 @@ Azure Data Factory 是以雲端為基礎的資料整合服務。 您可以使用
 
 在 Netezza 環境中，您可能會有多個個別的資料庫用於整個環境的不同部分。 例如，您可能會有用於資料內嵌和臨時表的個別資料庫、適用于核心倉儲資料表的資料庫，以及另一個適用于資料超市的資料庫，有時也稱為「 *語義層*」。 以 Azure Synapse 中的 ETL/ELT 管線處理不同的資料庫，可能需要在不同的資料庫之間執行跨資料庫聯結和移動資料。
 
-Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在目標 Azure Synapse 中使用一系列的架構，以模仿您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和觀點移至新的環境。 例如，您可能會將現有的 Netezza 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
+Azure Synapse 環境具有單一資料庫。 架構會用來將資料表分成不同的邏輯群組。 建議您在目標 Azure Synapse 中使用一組架構，以模仿您從 Netezza 遷移的任何個別資料庫。 如果您使用 Netezza 環境中的架構，您可能需要使用新的命名慣例，將現有的 Netezza 資料表和觀點移至新的環境。 例如，您可能會將現有的 Netezza 架構和資料表名稱串連至新的 Azure Synapse 資料表名稱，然後在新的環境中使用架構名稱，以維護原始個別的資料庫名稱。
 
 另一個選項是在基礎資料表上使用 SQL 視圖來維護邏輯結構。 使用 SQL 視圖有一些可能的缺點：
 
@@ -180,7 +180,7 @@ Netezza 會實作為 Azure Synapse 中不直接支援的某些資料庫物件。
 
 - **資料解壓縮：** 您可以使用標準 Netezza 公用程式（例如 nzsql 和 nzunload），以及使用外部資料表，將原始資料解壓縮，以從現有的 Netezza 資料表遷移至一般的分隔檔案。 使用 Gzip 壓縮檔案，然後使用 AzCopy 或 azure 資料傳輸服務（例如 Azure 資料箱），將檔案上傳至 Azure Blob 儲存體。
 
-  在遷移練習期間，請務必盡可能有效率地將資料解壓縮。 Netezza 的建議方法是使用外部資料表，這也是最快的方法。 您可以平行完成多個解壓縮，以將資料解壓縮的輸送量最大化。
+  在遷移練習期間，請務必盡可能有效率地將資料解壓縮。 Netezza 的建議方法是使用外部資料表，這也是最快速的方法。 您可以平行完成多個解壓縮，以將資料解壓縮的輸送量最大化。
 
 以下是外部資料表解壓縮的簡單範例：
 

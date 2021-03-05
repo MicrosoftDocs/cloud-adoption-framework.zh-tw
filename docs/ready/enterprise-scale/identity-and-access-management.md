@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: f1d55875ca62dd78bc9840337f8ff5be49e1ae36
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: c510873857e3767c76eff58b2b9748486f22d527
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909441"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207906"
 ---
 # <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "97909441"
 
 ### <a name="plan-for-identity-and-access-management"></a>規劃身分識別與存取權管理
 
-企業組織在操作存取上通常會遵循最低特殊權限的做法。 您應擴充此模型，以透過 Azure Active Directory (Azure AD) 、Azure 角色型存取控制 (Azure RBAC) 和自訂角色定義來考慮 Azure。 規劃如何在 Azure 中管理資源的控制和資料平面存取是很重要的。 IAM 和 Azure RBAC 的任何設計都必須符合法規、安全性和營運需求，才能接受。
+企業組織在操作存取上通常會遵循最低特殊權限的做法。 您應擴充此模型，以透過 azure Active Directory 來考慮 Azure (Azure AD) 、Azure 角色型存取控制 (Azure RBAC) 和自訂角色定義。 規劃如何在 Azure 中管理資源的控制和資料平面存取是很重要的。 IAM 和 Azure RBAC 的任何設計都必須符合法規、安全性和營運需求，才能接受。
 
 身分識別與存取權管理是多步驟的程序，其中牽涉到仔細規劃身分識別整合和其他安全性考量，例如封鎖舊版驗證、規劃新式密碼。 臨時性規劃也牽涉到選擇企業對企業或企業對消費者的身分識別與存取權管理。 雖然這些需求各有不同，但還是需要考慮企業登陸區域的常見設計考量和建議。
 
@@ -53,24 +53,24 @@ _圖1：身分識別和存取管理。_
 - 您可以使用 [AZURE RBAC](/azure/role-based-access-control/overview) 來管理對資源的資料平面存取。 範例為 Azure Key Vault、儲存體帳戶或 SQL 資料庫。
 - 針對具有 Azure 環境存取權限的任何使用者，部署 Azure AD 條件式存取原則。 這麼做可提供另一種機制，協助保護受控制的 Azure 環境不受未經授權的存取。
 - 針對具有 Azure 環境許可權的任何使用者強制執行多重要素驗證。 強制執行多重要素驗證是許多合規性架構的要件。 它可大幅降低認證竊取和未經授權存取的風險。
-- 使用 [Azure AD Privileged Identity Management (PIM) ](/azure/active-directory/privileged-identity-management/pim-configure) 來建立零的長期存取和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和程式的延伸模組、如所述使用 Azure 原生工具，或視需要使用兩者。
+- 使用 [Azure AD 特殊許可權身分識別管理 (PIM) ](/azure/active-directory/privileged-identity-management/pim-configure) 來建立零的長期存取和最低許可權。 將貴組織的角色對應到所需的最低存取層級。 Azure AD PIM 可以是現有工具和程式的延伸模組，如所述使用 Azure 原生工具，或視需要使用兩者。
 - 當您授與對資源的存取權時，請在 Azure AD PIM 中的 Azure 控制平面資源使用「僅限 Azure AD」的群組。
   - 如果已經有群組管理系統，請將內部部署群組新增至「僅限 Azure AD」群組。
 - 使用 Azure AD PIM 存取權檢閱來定期驗證資源權利。 存取權檢閱是許多合規性架構的一部分。 如此一來，許多組織都已有程式可解決這項需求。
 - 整合 Azure AD 記錄與平臺中央 [Azure 監視器](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)。 Azure 監視器允許 Azure 中的記錄和監視資料使用單一事實來源，這可為組織提供雲端原生選項，以符合記錄收集和保留方面的需求。
 - 如果有任何資料主權需求，可以部署自訂使用者原則來強制執行。
-- 當您考慮下列金鑰角色時，請使用 Azure AD 租使用者內的自訂角色定義：
+- 當您考慮下列金鑰角色時，請在 Azure AD 租使用者中使用自訂角色定義：
 
 | 角色 | 使用方式 | 動作 | 沒有任何動作 |
 |---|---|---|---|
 | Azure 平臺擁有者 (例如內建擁有者角色)                | 管理群組和訂用帳戶生命週期管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | 網路管理 (NetOps)         | 全平臺全球連線管理：虛擬網路、Udr、Nsg、Nva、VPN、Azure ExpressRoute 和其他            | `*/read`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
-| 安全性作業 (SecOps)        | 在整個 Azure 資產和 Azure Key Vault 清除原則之間進行水準視圖安全性系統管理員角色 | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
+| 安全性作業 (SecOps)        | 在整個 Azure 資產和 Azure 金鑰保存庫清除原則中水準視圖的安全性系統管理員角色 | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | 訂用帳戶擁有者                 | 衍生自訂用帳戶擁有者角色之訂用帳戶擁有者的委派角色                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
 | 應用程式擁有者 (DevOps/AppOps)  | 在資源群組層級授與應用程式/作業小組的參與者角色                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - 在所有基礎結構即服務 (IaaS) 資源使用 Azure 資訊安全中心的 Just-In-Time 存取權，以便對 IaaS 虛擬機器的暫時性使用者存取實施網路層級保護。
-- 對 Azure 資源使用 Azure AD 管理的身分識別，來避免以使用者名稱和密碼進行驗證。 因為公用雲端資源的許多安全性缺口源自於內嵌在程式碼或其他文字來源的認證竊取，對寫在程式碼中的存取強制執行受控識別，可大幅降低認證竊取的風險。
+- 對 Azure 資源使用 Azure AD 管理的身分識別，以避免根據使用者名稱與密碼進行驗證。 因為公用雲端資源的許多安全性缺口源自於內嵌在程式碼或其他文字來源的認證竊取，對寫在程式碼中的存取強制執行受控識別，可大幅降低認證竊取的風險。
 - 針對需要較高存取權限的自動化 Runbook，使用特殊權限的身分識別。 違反重要安全性界限的自動化工作流程，應該受相同的工具和原則使用者的相同許可權。
 - 不要將使用者直接新增至 Azure 資源範圍。 相反地，會將使用者新增至已定義的角色，然後將這些角色指派給資源範圍。 直接使用者指派規避集中式管理，大幅增加所需的管理，以防止未經授權的資料存取受限制的資料。
 
@@ -81,16 +81,16 @@ _圖1：身分識別和存取管理。_
 **設計考慮：**
 
 - 請考慮使用集中和委派的責任，來管理在登陸區域內部署的資源。
-- 依賴網域服務和使用舊版通訊協定的應用程式，可以使用 [AZURE AD DS](/azure/active-directory-domain-services)。
+- 依賴網域服務和使用舊版通訊協定的應用程式可以使用 [AZURE AD DS](/azure/active-directory-domain-services)。
 
 **設計建議：**
 
 - 根據角色和安全性需求，使用集中和委派的責任來管理部署在登陸區域內的資源。
 - 特殊權限的作業 (例如建立服務主體物件、在 Azure AD 中註冊應用程式、採購和處理憑證或萬用字元憑證) 都需要特殊存取權限。 請考慮哪些使用者將處理這類要求，以及如何根據所需的努力來保護和監視其帳戶。
-- 如果組織有使用整合式 Windows 驗證的應用程式必須透過 Azure AD 從遠端存取的案例，請考慮使用 [Azure AD 應用程式 Proxy](/azure/active-directory/manage-apps/application-proxy)。
+- 如果組織的案例中必須透過 Azure AD 從遠端存取使用整合式 Windows 驗證的應用程式，請考慮使用 [AZURE Ad 應用程式 Proxy](/azure/active-directory/manage-apps/application-proxy)。
 - 在 Windows Server 上執行的 Azure AD、Azure AD DS 和 AD DS 之間有差異。 評估您的應用程式需求，瞭解並記錄每個使用者將使用的驗證提供者。 針對所有應用程式做出相應的規劃。
 - 評估 Windows Server 上 AD DS 和 Azure AD DS 的工作負載的相容性。
-- 確定您的網路設計可讓需要 Windows Server AD DS 的資源進行本機驗證和管理，以存取適當的網域控制站。
+- 確定您的網路設計允許 Windows Server 上需要 AD DS 的資源進行本機驗證和管理，以存取適當的網域控制站。
   - 針對 Windows Server 上的 AD DS，可考慮使用共用服務環境，此環境能在較大的整體企業網路中提供本機驗證和主機管理。
 - 在主要區域中部署 Azure AD DS，因為此服務只能投射到一個訂用帳戶。
 - 使用受控識別而不是服務主體來向 Azure 服務驗證身分。 這種做法可減少認證竊取的風險。

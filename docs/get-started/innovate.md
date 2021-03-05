@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 50a866ae8600875b524bb6746386023e145e5287
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e367cf3f09b8b85a3d4a2c8d14d52037614678a0
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792494"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208807"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>開始使用：加速雲端中的新產品和服務創新
 
@@ -21,7 +21,9 @@ ms.locfileid: "101792494"
 
 本指南使用下圖中反白顯示的雲端採用架構區段。 創新比標準遷移更不容易預測，但仍適用于更廣泛的雲端採用方案內容中。 本指南可協助您的企業提供創新所需的支援，並提供結構來建立整個雲端採用的平衡組合。
 
-![雲端採用架構的圖表，包括創新方法。](../_images/get-started/innovation-map.png)
+![雲端採用架構的方法，包括創新方法。](../_images/get-started/innovation-map.png)
+
+_圖1：雲端採用架構的方法，包括創新方法。_
 
 ## <a name="step-1-document-the-business-strategy"></a>步驟1：記錄商務策略
 
@@ -207,13 +209,13 @@ ms.locfileid: "101792494"
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>步驟9：評估組織的創新成熟度
 
-為了支援您的創新策略開發，AI 成熟度模型是免費的工具，可協助組織評估其建立和擁有 AI 型系統的能力。 成熟度有四個層級：基本、接近、理想和成熟。 每個層級都包含一組特定的特性，以協助判斷您的組織是否能夠採用特定類型的 AI 解決方案、降低相關聯的風險，以及實行策略。
+為了支援您的創新策略開發， [AI 準備就緒評估工具](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html) 是免費的資源，可協助組織評估其建立和擁有 AI 型系統的能力。 成熟度有四個層級：基本、接近、理想和成熟。 每個層級都包含一組特定的特性，以協助判斷您的組織是否能夠採用特定類型的 AI 解決方案、降低相關聯的風險，以及實行策略。
 
-評量需要5到10分鐘的時間，並測量組織在四個類別中的功能：策略、文化、組織特性和功能。 測量這些類別可讓 AI 成熟度模型計算您的組織分數，並在曲線上提供 AI 創新成熟度的估計。
+評量需要5到10分鐘的時間，並測量組織在四個類別中的功能：策略、文化、組織特性和功能。 測量這些類別可讓 AI 準備就緒評估工具計算您的組織分數，並在曲線上提供 AI 創新成熟度的估計。
 
 **交付：**
 
-- 使用 [Ai 成熟度模型工具](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model) 來評估貴組織的 ai 成熟度，以建立 ai 型系統。
+- 使用 [GARTNER Ai 成熟度模型](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model) 來評估貴組織的 ai 成熟度，以建立以 ai 為基礎的系統。
 
 **支援交付完成的指導方針：**
 

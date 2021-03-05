@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0015a48ca34a02bb2d263cab0e404301e120798a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a4a05791b220fea280a55b9183011fee57ff3df5
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786935"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209147"
 ---
 <!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
@@ -41,19 +41,19 @@ ms.locfileid: "101786935"
 
 ## <a name="best-practice-follow-azure-security-center-recommendations"></a>最佳做法：遵循 Azure 安全性中心建議
 
-Azure 租使用者系統管理員必須啟用安全性功能，以保護工作負載免于遭受攻擊。 Azure 資訊安全中心能提供統一的安全性管理。 從安全性中心，您可以在工作負載之間套用安全性原則、限制暴露于威脅的風險，以及偵測和回應攻擊。 安全性中心會分析 Azure 租使用者之間的資源和設定，並提出安全性建議，包括：
+Azure 租使用者系統管理員必須啟用安全性功能，以保護工作負載免于遭受攻擊。 安全性中心提供統一的安全性管理。 從安全性中心，您可以在工作負載之間套用安全性原則、限制暴露于威脅的風險，以及偵測和回應攻擊。 安全性中心會分析 Azure 租使用者之間的資源和設定，並提出安全性建議，包括：
 
 - **集中式原則管理：** 集中管理所有混合式雲端工作負載的安全性原則，以確保符合公司或法規的安全性需求。
 - **持續安全性評估：** 監視機器、網路、儲存體和資料服務以及應用程式的安全性狀態，以找出潛在的安全性問題。
 - 可 **操作的建議：** 使用優先順序且可採取動作的安全性建議，在攻擊者遭到攻擊之前補救安全性弱點。
 - **排定優先順序的警示和事件：** 使用優先的安全性警示和事件，先將焦點放在最嚴重的威脅。
 
-除了評量和建議之外，Azure 安全性中心還提供可讓您針對特定資源啟用的其他安全性功能。
+除了評量和建議之外，「安全性中心」還提供您可以針對特定資源啟用的其他安全性功能。
 
-- **及時 (JIT) 存取。** 使用對 Azure Vm 上管理埠的即時控制存取，減少網路攻擊面。
+- **及時 (JIT) 存取。** 利用 JIT、受控存取 Azure Vm 上的管理埠，減少網路攻擊面。
   - 在網際網路上開啟 VM RDP 埠3389，會將 Vm 公開給不良執行者的持續活動。 由於 Azure IP 位址是眾所周知的，因此駭客會持續對它們進行探查，以對開啟的 3389 連接埠發動攻擊。
-  - 及時使用網路安全性群組 (Nsg) 和內送規則，以限制特定埠開啟的時間量。
-  - 啟用即時存取後，安全性中心會檢查使用者是否有 Azure 角色型存取控制 (Azure RBAC) VM 的寫入存取權限。 此外，您可以指定使用者如何連線至 Vm 的規則。 如果許可權沒問題，就會核准存取要求，而「安全性中心」會將 Nsg 設定為在您指定的時間量內允許輸入流量進入選取的埠。 當時間過期時，Nsg 會回到其先前的狀態。
+  - JIT 會使用網路安全性群組 (Nsg) 和內送規則，以限制特定埠的開啟時間量。
+  - 啟用 JIT 存取後，安全性中心會檢查使用者是否有 Azure 角色型存取控制 (Azure RBAC) VM 的寫入存取權限。 此外，您可以指定使用者如何連線至 Vm 的規則。 如果許可權沒問題，就會核准存取要求，而「安全性中心」會將 Nsg 設定為在您指定的時間量內允許輸入流量進入選取的埠。 當時間過期時，Nsg 會回到其先前的狀態。
 - **適應性應用程式控制。** 使用動態允許清單來控制 Vm 上執行的應用程式，以將軟體和惡意程式碼保留在 Vm 上。
   - 適應性應用程式控制可讓您核准應用程式，並防止惡意使用者或系統管理員在您的 Vm 上安裝未經核准或調查的軟體應用程式。
     - 您可以封鎖或警示執行惡意應用程式的嘗試、避免不想要或惡意的應用程式，並確保符合您組織的應用程式安全性原則。
@@ -72,25 +72,25 @@ Azure 租使用者系統管理員必須啟用安全性功能，以保護工作�
 
 加密是 Azure 安全性作法相當重要的一部分。 確保加密已在所有層級啟用，可協助防止未經授權的對象取得敏感性資料 (包括傳輸及待用中的資料) 的存取權。
 
-### <a name="encryption-for-infrastructure-as-a-service-iaas"></a>基礎結構即服務 (IaaS) 的加密
+### <a name="encryption-for-infrastructure-as-a-service"></a>基礎結構即服務的加密
 
-- **虛擬機器：** 針對 Vm，您可以使用 Azure 磁片加密來加密您的 Windows 和 Linux IaaS VM 磁片。
+- **虛擬機器：** 針對 Vm，您可以使用 Azure 磁片加密來加密您的 Windows 和 Linux 基礎結構即服務 (IaaS) VM 磁片。
   - Azure 磁片加密會使用適用于 Windows 的 BitLocker，以及適用于 Linux 的 dm crypt，為作業系統和資料磁片提供磁片區加密。
   - 您可以使用由 Azure 所建立的加密金鑰，或是自行提供保護於 Azure Key Vault 中的加密金鑰。
   - 使用 Azure 磁片加密時，IaaS VM 資料會在磁片) 和 VM 開機期間受到待用 (保護。
-    - Azure 資訊安全中心會在您有未加密的 VM 時向您傳送警示。
+    - 如果您有未加密的 Vm，則安全性中心會發出警示。
 - **儲存體：** 保護儲存在 Azure 儲存體中的待用資料。
   - 儲存在 Azure 儲存體帳戶中的資料可以使用符合 FIPS 140-2 規範的 Microsoft 產生的 AES 金鑰進行加密，或者您也可以使用自己的金鑰。
   - 已針對所有新的和現有的儲存體帳戶啟用 Azure 儲存體加密，且無法停用。
 
-### <a name="encryption-for-platform-as-a-service-paas"></a>適用于平臺即服務 (PaaS) 的加密
+### <a name="encryption-for-platform-as-a-service"></a>平臺即服務的加密
 
-不同于 IaaS，您可以在其中管理自己的 Vm 和基礎結構，而在 PaaS 模型平臺中，基礎結構是由提供者管理。 您可以專注于核心應用程式邏輯和功能。 由於 PaaS 服務類型眾多，因此基於安全性目的，我們會對每個服務進行個別評估。 例如，讓我們看看您可能如何啟用 Azure SQL Database 的加密。
+不同于 IaaS，在您管理自己的 Vm 和基礎結構的平臺即服務 (PaaS) 模型平臺和基礎結構是由提供者所管理。 您可以專注于核心應用程式邏輯和功能。 由於 PaaS 服務類型眾多，因此基於安全性目的，我們會對每個服務進行個別評估。 例如，讓我們看看您可能如何啟用 Azure SQL Database 的加密。
 
 - **Always Encrypted：** 使用 SQL Server Management Studio 中的 [永遠加密] 嚮導來保護待用資料。
   - 您可以建立永遠加密金鑰來加密個別的資料行資料。
   - Always Encrypted 金鑰能以加密的形式儲存在資料庫中繼資料中，或是儲存在受信任的金鑰存放區中，例如 Azure Key Vault。
-  - 最可能的情況是，若要使用此功能，您必須進行應用程式變更。
+  - 最有可能的情況是，您必須進行應用程式變更，才能使用此功能。
 - **透明資料加密 (TDE) ：** 使用靜止的資料庫、相關聯的備份和交易記錄檔的即時加密和解密，保護 Azure SQL Database。
   - TDE 可讓加密活動在應用層沒有變更的情況下進行。
   - TDE 可以使用 Microsoft 所提供的加密金鑰，或者您可以攜帶自己的金鑰。
@@ -101,16 +101,16 @@ Azure 租使用者系統管理員必須啟用安全性功能，以保護工作�
 - 啟用 [適用于 Windows vm 的 Azure 磁片加密](/azure/virtual-machines/windows/disk-encryption-overview)。
 - 瞭解待用 [資料的 Azure 儲存體加密](/azure/storage/common/storage-service-encryption)。
 - 閱讀 [Always Encrypted 總覽](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure)。
-- 閱讀有關 [SQL Database 和 Azure Synapse 的透明資料加密](/azure/azure-sql/database/transparent-data-encryption-tde-overview)。
-- 深入瞭解 [使用客戶管理的金鑰進行 AZURE SQL Database 透明資料加密](/azure/azure-sql/database/transparent-data-encryption-byok-overview)。
+- 閱讀有關 [SQL Database 和 Azure Synapse 的 TDE](/azure/azure-sql/database/transparent-data-encryption-tde-overview)。
+- 瞭解 [AZURE SQL DATABASE TDE 與客戶管理的金鑰](/azure/azure-sql/database/transparent-data-encryption-byok-overview)。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>最佳做法：使用反惡意程式碼保護 Vm
 
 尤其是，較舊的 Azure 遷移的 Vm 可能不會安裝適當的反惡意程式碼層級。 Azure 提供免費的端點解決方案，可協助保護 VM 不受病毒、間諜軟體及其他惡意程式碼的威脅。
 
 - 當已知惡意或垃圾軟體嘗試自行安裝時，適用于 Azure 雲端服務和虛擬機器的 Microsoft 反惡意程式碼會產生警示。
-- 它是在背景執行的單一代理程式解決方案，不需要人為介入。
-- 在 Azure 安全性中心，您可以輕鬆地識別未執行 endpoint protection 的 Vm，並視需要安裝 Microsoft 反惡意程式碼。
+- 它是能在無人為介入的情況下於背景中執行的單一代理程式解決方案。
+- 在 [安全性中心] 中，您可以識別未執行 endpoint protection 的 Vm，並視需要安裝 Microsoft 反惡意程式碼。
 
   ![Vm 的反惡意程式碼螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/antimalware.png)
   *圖1：虛擬機器的反惡意程式碼。*
@@ -138,7 +138,7 @@ Azure 提供下列解決方案：
 - **Web 應用程式防火牆：** 這是 Azure 應用程式閘道的一項功能，可為 web 應用程式提供集中式保護。
   - 它能在無需後端程式碼修改的情況下保護 Web 應用程式。
   - 它會在應用程式閘道背後同時保護多個 web 應用程式。
-  - 您可以使用 Azure 監視器來監視 Web 應用程式防火牆。 Web 應用程式防火牆已整合至 Azure 安全性中心。
+  - 您可以使用 Azure 監視器來監視 Web 應用程式防火牆。 Web 應用程式防火牆已整合至「安全性中心」。
 
   ![Azure Key Vault 與安全 web 應用程式的圖表。 ](./media/migrate-best-practices-security-management/web-apps.png)
   *圖2： Azure Key Vault。*
@@ -155,8 +155,8 @@ Azure 提供下列解決方案：
 在您移轉工作負載並在 Azure 中執行它們的同時，具有工作負載存取權的人員也會四處移動。 您的安全性小組應該定期檢閱針對您 Azure 租用戶和資源群組的存取權。 Azure 提供身分識別管理和存取控制安全性的供應專案，包括 Azure 角色型存取控制 (Azure RBAC) ，以授與存取 Azure 資源的許可權。
 
 - Azure RBAC 會為安全性主體指派存取權限。 安全性主體代表使用者、群組 (一組使用者) 、服務主體 (應用程式和服務所使用的身分識別) ，以及受控識別 (Azure) 自動管理的 Azure Active Directory 身分識別。
-- Azure RBAC 可將角色指派給安全性主體，例如擁有者、參與者和讀取者，以及角色定義 () 的許可權集合，以定義角色可執行檔作業。
-- Azure RBAC 也可以設定設定角色界限的範圍。 範圍可以設定於數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
+- Azure RBAC 可將角色指派給安全性主體 (例如擁有者、參與者和讀取者) 和角色定義 () 定義角色可執行之作業的許可權集合。
+- Azure RBAC 也可以設定設定角色界限的範圍。 範圍可以設定于數個層級上，包括管理群組、訂用帳戶、資源群組或資源。
 - 確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
 
 確定具有 Azure 存取權的系統管理員只能存取您想要允許的資源。 如果 Azure 中預先定義的角色不夠細微，您可以建立自訂角色以區分並限制存取權限。
@@ -166,13 +166,13 @@ Azure 提供下列解決方案：
 
 **瞭解更多資訊：**
 
-- 瞭解 [ (AZURE RBAC) 的 azure 角色型存取控制 ](/azure/role-based-access-control/overview)。
+- 瞭解 [AZURE RBAC](/azure/role-based-access-control/overview)。
 - 瞭解如何透過 [AZURE RBAC 和 azure 入口網站](/azure/role-based-access-control/role-assignments-portal)來管理存取權。
 - 瞭解 [自訂角色](/azure/role-based-access-control/custom-roles)。
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>最佳做法：審核審核和安全性記錄
 
-Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動記錄。 記錄會擷取在 Azure 租用戶中執行的作業、其發生的時間，以及執行它們的人員。
+Azure AD 提供出現在 Azure 監視器中的活動記錄。 記錄會擷取在 Azure 租用戶中執行的作業、其發生的時間，以及執行它們的人員。
 
 - 稽核記錄會顯示租用戶中的工作歷程記錄。 登入活動記錄會顯示執行該工作的人員。
 - 安全性報告的存取方式取決於您的 Azure AD 授權。 您可以使用免費和基本授權，取得有風險的使用者和登入清單。利用 premium 授權，您可以取得基礎事件資訊。
@@ -191,10 +191,10 @@ Azure Active Directory (Azure AD) 提供會在 Azure 監視器中顯示的活動
 
 Azure 提供能提供進階安全性選項的其他安全性功能。 請注意，下列的一些最佳作法需要附加元件授權和 premium 選項。
 
-- **(AU) 中執行 Azure AD 管理單位。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以和內部部署組織單位 (OU) 類似的方式，將 Azure 資源隔離在容器內。 若要使用 AU，AU 系統管理員必須擁有 premium Azure AD 授權。 如需詳細資訊，請參閱 [Azure Active Directory 中的管理單位管理](/azure/active-directory/roles/administrative-units)。
-- **使用多重要素驗證。** 如果您有進階 Azure AD 授權，您可以在系統管理員帳戶上啟用並強制執行多重要素驗證。 網路釣魚是用來入侵帳戶認證的最常見方式。 當不良執行者有系統管理員帳號憑證時，不會將其從最接近的動作中停止，例如刪除您所有的資源群組。 您可以用數種方式建立多重要素驗證，包括電子郵件、驗證器應用程式和電話簡訊。 身為系統管理員，您可以選取最不具侵入性的選項。 多重要素驗證會與威脅分析和條件式存取原則整合，以隨機要求多重要素驗證挑戰回應。 深入了解[安全性指引](/azure/active-directory/authentication/howto-mfa-getstarted)，以及[如何設定多重要素驗證](/azure/active-directory/authentication/howto-mfa-getstarted)。
-- **實作條件式存取。** 在大多數中小型組織中，Azure 系統管理員和支援小組可能會位於單一地理位置。 在此情況下，大部分的登入都是來自相同的區域。 如果這些位置的 IP 位址是相當靜態的，您應該不會在這些區域以外看到系統管理員登入。 即使遠端不良執行者危及系統管理員的認證，您也可以執行與多重要素驗證結合的條件式存取等安全性功能，以防止從遠端位置登入。 這也可以防止來自隨機 IP 位址的欺騙位置。 深入瞭解 [條件式存取](/azure/active-directory/conditional-access/overview) ，並查看 Azure AD 中條件式存取的 [最佳做法](/azure/active-directory/conditional-access/overview) 。
-- **審查企業應用程式許可權。** 經過一段時間後，系統管理員會選擇 Microsoft 和協力廠商連結，而不知道其對組織的影響。 連結可以呈現將許可權指派給 Azure 應用程式的同意畫面。 這可能會允許存取讀取 Azure AD 資料，甚至是完整存取權來管理整個 Azure 訂用帳戶。 您應定期檢查您的系統管理員和使用者允許存取 Azure 資源的應用程式。 確定這些應用程式只具有必要的許可權。 此外，您也可以使用應用程式頁面的連結傳送電子郵件給使用者，讓他們知道他們允許存取其組織資料的應用程式。 如需詳細資訊，請參閱 [我的應用程式清單中的未預期應用程式](/azure/active-directory/manage-apps/application-types)，以及 [如何控制](/azure/active-directory/manage-apps/assign-user-or-group-access-portal) Azure AD 中的應用程式指派。
+- **(AU) 中執行 Azure AD 管理單位。** 使用基本的 Azure 存取控制來委派系統管理工作以支援人員，可能會是一件相當困難的事。 給予支援人員存取權以管理 Azure AD 中的所有群組，對組織的安全性而言可能不是理想的方法。 使用 AU 可讓您以類似的方式，將 Azure 資源隔離到容器中， (Ou) 的內部部署組織單位。 若要使用 AU，AU 系統管理員必須擁有 premium Azure AD 授權。 如需詳細資訊，請參閱 [AZURE AD 中的管理單位管理](/azure/active-directory/users-groups-roles/directory-administrative-units)。
+- **使用多重要素驗證。** 如果您有進階 Azure AD 授權，您可以在系統管理員帳戶上啟用並強制執行多重要素驗證。 網路釣魚是用來入侵帳戶認證的最常見方式。 當不良執行者有系統管理員帳號憑證時，不會將其從最接近的動作中停止，例如刪除您所有的資源群組。 您可以用數種方式建立多重要素驗證，包括電子郵件、驗證器應用程式和電話簡訊。 身為系統管理員，您可以選取最不具侵入性的選項。 多重要素驗證會與威脅分析和條件式存取原則整合，以隨機要求多重要素驗證挑戰回應。 深入了解[安全性指引](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)，以及[如何設定多重要素驗證](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)。
+- **實作條件式存取。** 在大多數中小型組織中，Azure 系統管理員和支援小組可能會位於單一地理位置。 在此情況下，大部分的登入都是來自相同的區域。 如果這些位置的 IP 位址是相當靜態的，您應該不會在這些區域以外看到系統管理員登入。 即使遠端不良執行者危及系統管理員的認證，您也可以執行與多重要素驗證結合的條件式存取等安全性功能，以防止從遠端位置登入。 這也可以防止來自隨機 IP 位址的欺騙位置。 深入瞭解 [條件式存取](/azure/active-directory/conditional-access/overview) ，並查看 Azure AD 中條件式存取的 [最佳做法](/azure/active-directory/conditional-access/best-practices) 。
+- **審查企業應用程式許可權。** 經過一段時間後，系統管理員會選擇 Microsoft 和協力廠商連結，而不知道其對組織的影響。 連結可以呈現將許可權指派給 Azure 應用程式的同意畫面。 這可能會允許存取讀取 Azure AD 資料，甚至是完整存取權來管理整個 Azure 訂用帳戶。 您應定期檢查您的系統管理員和使用者允許存取 Azure 資源的應用程式。 確定這些應用程式只具有必要的許可權。 此外，您也可以使用應用程式頁面的連結傳送電子郵件給使用者，讓他們知道他們允許存取其組織資料的應用程式。 如需詳細資訊，請參閱 [我的應用程式清單中的未預期應用程式](/azure/active-directory/manage-apps/application-types)，以及 [如何控制](/azure/active-directory/manage-apps/remove-user-or-group-access-portal) Azure AD 中的應用程式指派。
 
 ## <a name="managed-migrated-workloads"></a>管理已移轉的工作負載
 
@@ -324,7 +324,7 @@ Azure 原則會評估您的資源，掃描那些不符合您原則規範的資�
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>最佳做法：實行 BCDR 策略
 
-規劃商務持續性和嚴重損壞修復 (BCDR) 是您應在 Azure 遷移規劃過程中完成的重要練習。 就法律規定而言，您的合約可能包含 *強制不可抗力* 子句，因為有更大的強制，例如颶風或地震。 但您也有義務確保服務會繼續執行，並在發生嚴重損壞時復原所需的功能。 您達成此義務的能力，可能會左右您公司的未來發展。
+規劃 BCDR 是您應在 Azure 遷移規劃過程中完成的重要練習。 就法律規定而言，您的合約可能包含 *強制不可抗力* 子句，因為有更大的強制，例如颶風或地震。 但是您必須確保在發生嚴重損壞時，必要的服務仍繼續執行和復原。 您達成此義務的能力，可能會左右您公司的未來發展。
 
 廣義來說，您的 BCDR 策略必須考慮：
 
@@ -464,7 +464,7 @@ Azure 資源會產生相當多的記錄計量和遙測資料。 根據預設，�
 
 - 當您的監視資料中發現條件時，警示會主動通知您。 您接著便可以在系統使用者注意到這些問題之前解決他們。 您可以針對計量值、記錄搜尋查詢、活動記錄事件、平臺健康情況和網站可用性發出警示。
 - 觸發警示時，您可以執行邏輯應用程式腳本。 劇本可協助您針對特定警示自動化並協調回應。 劇本是以 Azure Logic Apps 為基礎。 您可以使用邏輯應用程式範本來建立腳本，或建立您自己的工作手冊。
-- 作為一個簡單的範例，您可以建立會在針對網路安全性群組發生連接埠掃描時觸發的警示。 您可以設定能執行並封鎖掃描來源之 IP 位址的劇本。
+- 簡單的範例，您可以建立警示，以在 NSG 的埠掃描發生時觸發。 您可以設定能執行並封鎖掃描來源之 IP 位址的劇本。
 - 另一個範例是具有記憶體流失的應用程式。 當記憶體使用量達到某個程度時，範本便可以回收處理程序。
 
   ![警示的螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/alerts.png)
@@ -480,7 +480,9 @@ Azure 資源會產生相當多的記錄計量和遙測資料。 根據預設，�
 Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及監控所有項目，從簡單 Web 應用程式到複雜的雲端應用程式皆包含在內。 它也包含了自訂的儀表板各種協助工具選項。
 
 - 您可以建立多個儀表板，並與可存取您 Azure 訂用帳戶的其他人共用。
-- 透過此共用模型，您的團隊便能檢視 Azure 環境，讓他們可以主動管理雲端中的系統。
+- 透過此共用模型，您的小組可以看到 Azure 環境，以協助他們在管理雲端中的系統時主動主動。
+
+  ![Azure 儀表板的螢幕擷取畫面。](./media/migrate-best-practices-security-management/dashboard.png)
 
   ![Azure 儀表板的螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/dashboard.png)
   *圖16： Azure 儀表板。*
@@ -515,7 +517,7 @@ Azure 入口網站是網頁型的統一主控台，可讓您建置、管理及�
 - 此外，您可以向 System Center Configuration Manager 註冊 Azure Vm。 然後，您可以將 Configuration Manager 工作負載遷移至 Azure，並從單一 web 介面進行報告和軟體更新。
 
   ![VM 更新的圖表。 ](./media/migrate-best-practices-security-management/updates.png)
-  *圖18：更新。*
+  *圖18： VM 更新。*
 
 **瞭解更多資訊：**
 
@@ -538,8 +540,9 @@ Azure 在 Azure 自動化中具有變更追蹤解決方案：
 - 邏輯會套用至接收的資料，而雲端服務會記錄資料。
 - 在 [變更追蹤] 儀表板上，您可以輕鬆地查看在伺服器基礎結構中所做的變更。
 
-  ![變更管理的螢幕擷取畫面。 ](./media/migrate-best-practices-security-management/change.png)
-  *圖19：變更管理。*
+  ![變更管理圖表的螢幕擷取畫面。](./media/migrate-best-practices-security-management/change.png)
+
+  _圖19：變更管理圖表。_
 
 **瞭解更多資訊：**
 

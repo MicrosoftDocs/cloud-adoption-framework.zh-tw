@@ -1,6 +1,6 @@
 ---
 title: 平台自動化和 DevOps
-description: 平臺自動化和 DevOps。
+description: 瞭解適用于 Azure 的 Microsoft 雲端採用架構中的平臺自動化和 DevOps。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 77b04dc10f6a41f73ec5a38e2ae50558a8ec7cd4
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 2d62ae49e60c32f8f66175e92a4c4538cf701fb9
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227000"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209113"
 ---
-<!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
-
 # <a name="platform-automation-and-devops"></a>平台自動化和 DevOps
 
 ![平臺自動化和 DevOps 的圖表。](./media/devops.png)
@@ -55,7 +53,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 平臺即程式碼 (管理範本、腳本和其他資產) 。
 
-  - 負責 Azure Active Directory 租使用者內 Microsoft Azure 的整體作業 (管理服務主體、圖形 API 註冊，以及定義) 的角色。
+  - 負責在 Azure Active Directory 租使用者中的 Microsoft Azure 上進行整體作業 (管理服務主體、註冊 Microsoft Graph API，以及定義) 的角色。
 
 - **SecOps** (安全性作業) 
 
@@ -89,7 +87,7 @@ _圖1：平臺自動化和 DevOps。_
 
   - 提供中央應用程式 DevOps 函式，以支援沒有現有 DevOps 功能的應用程式或商務案例，以建立一個 (例如，) 的開發功能較低的繼承應用程式。
 
-  - 使用以原則導向的方法搭配清楚的 Azure RBAC 界限，跨應用程式小組集中強制執行一致性和安全性。 這可確保使用 Azure RBAC 和 Azure 原則的組合來取得最小許可權的方法，且該工作負載隨時都符合 Azure 原則指派的規範。
+  - 使用以原則導向的方法搭配清楚的 Azure RBAC 界限，跨應用程式小組集中強制執行一致性和安全性。 這可確保使用 Azure RBAC 和 Azure 原則的組合來採用最低許可權方法，且該工作負載隨時都符合 Azure 原則指派的規範。
 
   - 為了加速採用 Azure，中央平臺小組應建立一組常用的範本和程式庫，讓應用程式小組進行繪製。 例如，水準 (的跨函式) 指導方針，可協助您透過主題專業知識支援遷移，並確保與整體目標企業規模架構一致。
 
@@ -147,4 +145,4 @@ _圖1：平臺自動化和 DevOps。_
 
   - 成本管理 (全面的) 。
 
-根據這些建議的 Azure DevOps 模型，可為中央團隊提供所需的控制項，以及應用程式小組所需的遷移彈性。
+以這些建議為基礎的 Azure DevOps 模型，可針對中央小組和應用程式小組所需的遷移靈活性提供所需的控制。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: cefb7a92c6ed7ada514eef199f2890b3c7b65000
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2b24872323bd4d771634564a64532aa216652731
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208841"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>利用音效作業模型與組織對齊，讓客戶成功
 
@@ -34,7 +34,7 @@ ms.locfileid: "97022676"
 
 除了常見的封鎖者之外，您也可以透過作業模型的累加式改善，在組合間調整一些重要的機會。 尤其是，客戶通常想要調整卓越的營運、成本優化、安全性、可靠性、效能或人員管理。 在組合層級調整這些交談有助於將特定工作負載的團隊最佳作法帶入所有其他專案和工作負載。
 
-## <a name="get-started-guides-to-enable-teams-through-an-operating-model"></a>透過作業模型啟用小組的入門指南
+## <a name="getting-started-guides-to-enable-teams-through-an-operating-model"></a>透過作業模型啟用小組的入門指南
 
 下列指南將協助您開始使用作業模型對齊，並隨著時間進行改善。
 
@@ -49,13 +49,15 @@ ms.locfileid: "97022676"
 
 ## <a name="shared-architecture-principles"></a>共用架構原則
 
-妥善管理的作業模型的核心原則是以一組常見的架構原則為基礎。 本文章系列中的入門指南將協助支援小組，因為它們會在雲端平臺和整個工作負載組合中調整這些原則。
+妥善管理的作業模型的核心原則是以一組常見的架構原則為基礎。 本文章系列中的快速入門手冊可協助支援小組，因為它們會在雲端平臺和整個工作負載組合中調整這些原則。
 
 ![說明共用架構原則的圖表。](../_images/shared-principles.png)
 
-這些原則會在 Azure Advisor、Microsoft Azure Well-Architected Framework 和 Azure 架構中心中的解決方案之間共用：
+_圖1：共用架構的原則。_
+
+這些原則可在 azure Advisor、Microsoft Azure Well-Architected Framework 和 Azure 架構中心內的解決方案之間共用：
 
 - [Azure Advisor](/azure/advisor/advisor-overview) 會評估跨解決方案、工作負載和完整組合的個別資產原則。
-- [Azure 架構中心](/azure/architecture/) 套用這些原則來開發和管理特定的技術解決方案。
-- [Microsoft Azure Well-Architected 架構](/azure/architecture/framework/) 有助於在工作負載之間平衡這些原則，以引導架構決策。
+- [Azure 架構中心](/azure/architecture/) 會套用這些原則，以開發及管理特定的技術解決方案。
+- [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) 有助於在工作負載之間平衡這些原則，以引導架構決策。
 - [雲端採用架構](../index.yml) 可確保這些原則會跨組合進行調整，以透過妥善管理的環境來實現採用小組。

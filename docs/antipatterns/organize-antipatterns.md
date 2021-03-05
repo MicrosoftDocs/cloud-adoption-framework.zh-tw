@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: think-tank
-ms.openlocfilehash: 0b8908e6e0a9c6444f9a0426ca6240846fd42c5f
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 188520559e408610fa022156ba6d07597dd50b32
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117271"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207872"
 ---
 # <a name="cloud-organizational-antipatterns"></a>雲端組織反模式
 
 客戶通常會遇到其組織結構內的雲端採用反模式。 許多因素可能會導致下列問題：
 
-- 工具組
+- 工具
 - 合作夥伴
 - 工程師
 - IT 部門不一致

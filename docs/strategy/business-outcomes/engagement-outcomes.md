@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 8d45fffa960e4d96ae7b85944c25d12f0c0c79c1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d68e0225152866a91a738972579a7776f64b88f9
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785303"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208433"
 ---
 <!-- docutune:casing ExakTime "Descartes MacroPoint" -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "101785303"
 
 在客戶著迷轉換（例如雲端應用程式創新工作）期間，客戶會從直接參與進行回應。 它們也非常感謝開發小組快速地滿足他們的需求。 週期時間是六個 Sigma 詞彙，指的是從開始到函數完成的持續時間。 對於投資大幅提升客戶參與度的公司領導人而言，週期時間可能是一項強大的業務成果。
 
-### <a name="shorten-release-cycles"></a>縮短髮行週期
+**範例︰**
 
 提供企業對企業 (B2B) 服務的服務公司正在嘗試將市場佔有率保留在競爭市場。 如果客戶離開競爭服務提供者，發現其過於複雜的技術解決方案會干擾其商務程式，而這是離開的主要原因。 在此情況下，週期時間是必要的。
 
@@ -46,7 +46,7 @@ ms.locfileid: "101785303"
 
 客戶滿意度和經驗是成功組織的核心。 釋出您的員工以專注于卓越的客戶服務，可能會對客戶忠誠度和保留有強烈的影響。 有了目前提供的 AI 技術，客戶來電期間的許多步驟都可以自動化，讓 contact center 代理程式更多時間專注于提供卓越的客戶服務。
 
-### <a name="improve-customer-experience"></a>改善客戶體驗
+**範例︰**
 
 保險公司已實行數位代理程式，可快速回應客戶的要求。 藉由建立 Azure Bot 服務解決方案，可透過公司網站和行動應用程式取得這些數位代理程式。 保險公司將增強的客戶服務體驗延伸到其連絡人中心，以實行現場通話轉譯、情感分析和關鍵字組偵測。 這些資訊可協助 contact center 代理程式提供建議的後續步驟和表單處理。 這會降低客戶撥打電話中心的重複次數，並讓 contact center 代理程式更專注于提供絕佳的客戶體驗。
 

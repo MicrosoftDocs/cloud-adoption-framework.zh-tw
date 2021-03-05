@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 907d88b324c51905062d9035bd7d1554f2016294
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 5f6f1ea6dd601d6f479802605cc34b312c31910e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102115045"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208688"
 ---
 # <a name="responsible-and-trusted-ai"></a>負責任和受信任的 AI
 
@@ -83,7 +83,7 @@ Microsoft 開發了 [InterpretML](https://interpret.ml/)，這是一個開放原
 
 - **澄清系統的功能。** 如果 AI 系統使用或產生計量，請務必將它們全部顯示出來，並加以追蹤。
 
-- **明確說明系統可以做的事。** 協助使用者瞭解 AI 的精確度不會是 100-%，而且會設定 AI 系統可能發生錯誤的預期。
+- **明確說明系統可以做的事。** 協助使用者瞭解 AI 不會完全精確，並設定 AI 系統可能發生錯誤時的期望。
 
 ### <a name="during-interaction"></a>在互動期間
 

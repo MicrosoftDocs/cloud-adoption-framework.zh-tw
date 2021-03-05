@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 05eef909e46b14f5f72212a7c8f5babf2d7933c3
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a34ed14ee6bb6dd407cd46290d1167c7ce9f39da
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784589"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208263"
 ---
 # <a name="examples-of-performance-outcomes"></a>效能結果範例
 
@@ -31,7 +31,7 @@ ms.locfileid: "101784589"
 
 - **範例1：** 服務公司會使用裝載多個營運基礎結構資產的主機服務提供者。 這些系統會導致頻繁中斷和效能不佳。 公司將其資產遷移至 Azure，以利用雲端的 SLA 和效能控制。 任何停機都會花費大約每分鐘 $15000 美元的停機時間。 在每個月的四到八個小時中斷之間，很容易就能證明這個組織的轉型。
 
-- **範例2：** 消費者投資公司在雲端應用程式創新工作的初期階段。 Agile 程式和 DevOps 的成熟不錯，但應用程式效能卻尖峰。 作為更成熟的轉換，公司根據使用需求啟動了監視和自動調整大小的程式。 公司使用 Azure 效能管理工具消除了調整大小問題，而導致交易中的5% 增加。
+- **範例2：** 消費者投資公司在雲端應用程式創新工作的初期階段。 Agile 程式和 DevOps 的成熟不錯，但應用程式效能卻尖峰。 作為更成熟的轉換，公司根據使用需求啟動了監視和自動調整大小的程式。 公司使用 Azure 效能管理工具消除了調整大小問題，而導致交易中的增加5%。
 
 ## <a name="reliability"></a>可靠性
 

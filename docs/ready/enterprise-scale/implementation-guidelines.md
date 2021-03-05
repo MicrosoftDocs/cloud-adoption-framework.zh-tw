@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 0e760195cc2ea0afb00c472086a0ed7a6fe9b2f9
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a7a3fdc5312053504d7ec1ef594661bd8b994dac
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632404"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207940"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -25,11 +25,11 @@ ms.locfileid: "100632404"
 
 <!-- docutune:disable -->
 
-1. **企業規模架構必須符合下列條件：** 包含必須由 Azure 和 Azure Active Directory (Azure AD) 系統管理員所執行的活動，才能建立初始設定。 這些活動是依本質順序排列，而且主要是一次性活動。
+1. **企業規模架構必須符合下列條件：** 包含必須由 Azure 和 Azure Active Directory 執行的活動， (Azure AD) 系統管理員來建立初始設定。 這些活動是依本質順序排列，而且主要是一次性活動。
 
-2. **(檔案中啟用新的區域，> 新的 > 區域) ：** 包含需要將企業規模平臺擴展至新的 Azure 區域時，所需的活動。
+2. **啟用新區域 (檔案-> 新 > 區域) ：** 包含需要將企業規模平臺擴展至新的 Azure 區域時，所需的活動。
 
-3. **將新的登陸區域 (檔案部署 > 新的 > 登陸區域) ：** 這些是具現化新登陸區域所需的週期性活動。
+3. **部署新的登陸區域 (檔案-> 新 > 的登陸區域) ：** 這些是具現化新登陸區域所需的週期性活動。
 
 <!-- docutune:enable -->
 
@@ -41,7 +41,7 @@ ms.locfileid: "100632404"
 
 ### <a name="enterprise-agreement-enrollment-and-azure-ad-tenants"></a>Enterprise 合約註冊和 Azure AD 租使用者
 
-1. 設定 Enterprise 合約 (EA) 系統管理員和通知帳戶。
+1. 設定 (EA) 系統管理員和通知帳戶的 Enterprise 合約。
 
 2. 建立部門：商務網域/異地/組織。
 
@@ -49,7 +49,7 @@ ms.locfileid: "100632404"
 
 4. 如果要從內部部署同步處理身分識別，請設定每個 Azure AD 租使用者的 Azure AD Connect。
 
-5. 透過 Azure AD Privileged Identity Management (PIM) 來建立對 Azure 資源的持續存取，以及透過的即時存取。
+5. 透過 Azure AD 特殊許可權身分識別管理 (PIM) ，建立對 Azure 資源的持續存取，以及即時存取。
 
 ### <a name="management-group-and-subscription"></a>管理群組和訂用帳戶
 
@@ -61,11 +61,11 @@ ms.locfileid: "100632404"
 
 4. 設定 Git 存放庫，以裝載 IaC 和服務主體，以用於持續整合和持續部署的平臺管線。
 
-5. 使用訂用帳戶和管理群組範圍 Azure AD PIM 來建立自訂角色定義和管理權利。
+5. 針對訂用帳戶和管理群組範圍使用 Azure AD PIM 來建立自訂角色定義和管理權利。
 
 6. 在下表中為登陸區域建立 Azure 原則指派。
 
-   | Name | 描述 |
+   | 名稱 | 描述 |
    |--|--|
    | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.js | 拒絕在所有登陸區域上建立具有公用端點的服務。 |
    | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /Landing%20Zones%20 (landingzones) /。) 上的 AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.js | 確保備份已設定並部署至登陸區域中的所有 Vm。 |
@@ -81,7 +81,7 @@ ms.locfileid: "100632404"
 
 1. 在下表的沙箱管理群組範圍中建立 Azure 原則指派：
 
-  | Name                  |     描述                                                                                     | 指派注意事項 |
+  | 名稱                  |     描述                                                                                     | 指派注意事項 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
   | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/) /.AzState)  | 防止對訂用帳戶以外的其他 Vnet 建立 VNET 對等互連連線。 | 請確定此原則僅指派至沙箱管理群組階層的範圍層級。 |
   | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.js | 在沙箱訂用帳戶中被拒絕建立的資源。 這會導致無法建立任何混合式連線資源; *例如 VPN/ExpressRoute/VirtualWAN* | 指派此原則時，請選取下列資源以拒絕建立： VPN 閘道： `microsoft.network/vpngateways` 、P2S 閘道： `microsoft.network/p2svpngateways` 、虛擬 wan： `microsoft.network/virtualwans` 、虛擬 WAN 中樞： `microsoft.network/virtualhubs` 、expressroute 線路： `microsoft.network/expressroutecircuits` 、expressroute 閘道： `microsoft.network/expressroutegateways` 、expressroute 埠： `microsoft.network/expressrouteports` 、Expressroute 交叉連線： `microsoft.network/expressroutecrossconnections` 和局域網路閘道： `microsoft.network/localnetworkgateways` 。 |
@@ -91,7 +91,7 @@ ms.locfileid: "100632404"
 
 1. 針對將部署虛擬中樞和虛擬網路的每個 Azure 區域，配置適當的虛擬網路 CIDR 範圍。
 
-2. 如果您決定透過 Azure 原則建立網路資源，請將下表所列的原則指派給連線訂用帳戶。 如此一來，Azure 原則可確保系統會根據提供的參數來建立下列清單中的資源。
+2. 如果您決定透過 Azure 原則建立網路資源，請將下表所列的原則指派給連線訂用帳戶。 如此一來，Azure 原則便可確保根據提供的參數來建立下列清單中的資源。
    - 建立 Azure 虛擬 WAN 標準實例。
    - 為每個區域建立 Azure 虛擬 WAN 虛擬中樞。 請確定每個虛擬中樞都至少部署一個閘道 (Azure ExpressRoute 或 VPN) 。
    - 藉由在每個虛擬中樞內部署 Azure 防火牆來保護虛擬中樞。
@@ -114,7 +114,7 @@ ms.locfileid: "100632404"
 
 下列清單顯示當您在執行企業規模部署的網路資源時，所使用的 Azure 原則指派：
 
-| Name                     | 描述                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.js | 建立防火牆原則。 |
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.js | 此原則會部署虛擬中樞、Azure 防火牆和 VPN/ExpressRoute 閘道。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
@@ -126,9 +126,9 @@ ms.locfileid: "100632404"
 
 2. 建立自訂角色定義。
 
-3. 啟用 Azure AD PIM 並探索 Azure 資源，以加速 PIM。
+3. 啟用 Azure AD PIM，並探索 Azure 資源以加速 PIM。
 
-4. 使用 Azure AD PIM，建立 Azure 控制平面資源管理的僅限 Azure AD 群組。
+4. 使用 Azure AD PIM 建立 azure 控制平面資源管理的僅限 Azure AD 群組。
 
 5. 套用下表所列的原則，以確保 Azure 服務符合企業需求。
 
@@ -138,16 +138,16 @@ ms.locfileid: "100632404"
 
 您應使用下列原則來強制執行全公司的合規性狀態。
 
-| Name                       | 描述                                                        |
+| 名稱                       | 描述                                                        |
 |----------------------------|--------------------------------------------------------------------|
 | [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.js   | 指定可在其中部署資源的允許區域。 |
 | [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.js         | 指定可在其中部署資源群組的允許區域。 |
 | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.js           | 公司拒絕的資源。 |
-| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.js     | 允許在啟用 Azure Web 應用程式防火牆的情況下部署應用程式閘道。 |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.js     | 允許使用 Azure Web 應用程式防火牆部署的應用程式閘道 (WAF) 啟用。 |
 | [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.js         | 拒絕 IP 轉送。 |
 | [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.js     | 拒絕來自網際網路的 RDP 連接。 |
 | [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.js    | 拒絕建立子網，而不使用 NSG。 |
-| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.js              | 設定 Azure 資訊安全中心連續匯出至您的 Log Analytics 工作區。 |
+| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.js              | 設定 Azure 安全性中心對 Log Analytics 工作區的連續匯出。 |
 | [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.js      | 啟用安全中心的監視功能。 |
 | [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.js        | 確定訂用帳戶已啟用安全中心標準。 |
 | [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.js | 啟用診斷活動記錄，並轉送至 Log Analytics。 |
@@ -156,13 +156,13 @@ ms.locfileid: "100632404"
 
 ### <a name="platform-identity"></a>平臺身分識別
 
-1. 如果您透過 Azure 原則建立身分識別資源，請將下表所列的原則指派給身分識別訂用帳戶。 如此一來，Azure 原則可確保會根據提供的參數來建立下列清單中的資源。
+1. 如果您透過 Azure 原則建立身分識別資源，請將下表所列的原則指派給身分識別訂用帳戶。 如此一來，Azure 原則便可確保根據提供的參數來建立下列清單中的資源。
 
 2. 部署 Active Directory 網域控制站。
 
 下列清單顯示當您在執行企業規模部署的身分識別資源時，可以使用的原則。
 
-| Name                         | 描述                                                               |
+| 名稱                         | 描述                                                               |
 |------------------------------|---------------------------------------------------------------------------|
 | [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/)  | 由安全性中心自動建立的資料保護。 |
 | [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.js | 將虛擬網路部署到身分識別訂用帳戶中，以裝載 (例如 DC) 。 |
@@ -175,18 +175,18 @@ ms.locfileid: "100632404"
 
 3. 在 Log Analytics 中設定記錄檔的長期封存和保留期。
 
-4. 設定 Azure Key Vault 以儲存平臺秘密。
+4. 設定 Azure Key Vault 來儲存平臺秘密。
 
-5. 如果您透過 Azure 原則建立平臺管理資源，請將下表所列的原則指派給管理訂用帳戶。 如此一來，Azure 原則可確保會根據提供的參數來建立下列清單中的資源。
+5. 如果您透過 Azure 原則建立平臺管理資源，請將下表所列的原則指派給管理訂用帳戶。 如此一來，Azure 原則便可確保根據提供的參數來建立下列清單中的資源。
 
-| Name                   | 描述                                                                            |
+| 名稱                   | 描述                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.js | Configuration Log Analytics 工作區。 |
 | [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.js | 部署 Log Analytics 工作區。 |
 
-## <a name="file--new--region"></a>檔案 > 新的 > 區域
+## <a name="file---new---region"></a>檔案-> 新 > 區域
 
-1. 如果您透過 Azure 原則建立網路資源，請將下表所列的原則指派給連線訂用帳戶。 如此一來，Azure 原則可確保會根據提供的參數來建立下列清單中的資源。
+1. 如果您透過 Azure 原則建立網路資源，請將下表所列的原則指派給連線訂用帳戶。 如此一來，Azure 原則便可確保根據提供的參數來建立下列清單中的資源。
 
     - 在連接訂用帳戶中，于現有的虛擬 WAN 內建立新的虛擬中樞。
     - 安全虛擬中樞，方法是在虛擬中樞內部署 Azure 防火牆，並將現有或新的防火牆原則連結到 Azure 防火牆。
@@ -198,18 +198,18 @@ ms.locfileid: "100632404"
 
 4.  (選擇性) 透過 ExpressRoute 私用對等互連設定加密。
 
-| Name                     | 描述                                                                            |
+| 名稱                     | 描述                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.) 上的 AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.js | 此原則會將虛擬中樞、Azure 防火牆和閘道部署 (VPN/ExpressRoute) 。 它也會在連線的虛擬網路上設定 Azure 防火牆的預設路由。 |
 
 <!-- docutune:disable -->
 
-## <a name="file--new--landing-zone-for-applications-and-workloads"></a>適用于應用程式和工作負載的檔案 > 新的 > 登陸區域
+## <a name="file---new---landing-zone-for-applications-and-workloads"></a>適用于應用程式和工作負載的檔案 > 新 > 登陸區域
 
 <!-- docutune:enable -->
 
 1. 建立訂用帳戶，並將它移至 `Landing Zones` 管理群組範圍下。
 
-2. 建立訂閱的 Azure AD 群組，例如 `Owner` 、 `Reader` 和 `Contributor` 。
+2. 建立訂用帳戶的 Azure AD 群組，例如 `Owner` 、 `Reader` 和 `Contributor` 。
 
 3. 為已建立的 Azure AD 群組建立 Azure AD PIM 權利。
