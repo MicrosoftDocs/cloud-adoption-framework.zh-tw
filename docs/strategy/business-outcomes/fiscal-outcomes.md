@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 5480355807f862268bbfc3c84b7379e165c38629
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 8c9cc17567152fd173db064e5e166fab993a85ab
+ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787904"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102515357"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財會結果範例
 
@@ -25,7 +25,7 @@ ms.locfileid: "101787904"
 
 本文的其餘部分將說明雲端轉換內容中的這些會計成果。
 
-[TransAlta](https://customers.microsoft.com/story/canadian-power-generator-shines-light-on-numbers) 增加的資料深入解析，可從成本規避的初始大規模資本成本中獲益，並以每月為基礎來降低營運成本。
+[Sentara 醫療保健](https://customers.microsoft.com/story/769786-sentara-healthcare-health-provider-azure) 將其資料移至 Azure，為成員提供更好的行動應用程式體驗、更快速地將臨床醫師的存取權提供給重要資料，以提供更快速的診斷、降低 IT 團隊的成本，並以更敏捷、更具變更的組織改善患者護理。
 
 > [!NOTE]
 > 下列範例是假設的，在採用任何雲端策略時，不應將其視為傳回的保證。

@@ -7,16 +7,16 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 344aba49d1689d30cf6c31ef931fbefb852e329e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ddeeb4518141224cf0f210c208cf80a718f4f3f7
+ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101794856"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102515340"
 ---
 # <a name="construction-set-for-aks-enterprise-scale-scenario"></a>適用于 AKS 企業規模案例的建築集
 
-AKS 建築集是 Terraform 範本的開放原始碼集合，可讓您用來自動部署能夠裝載 Azure Kubernetes Service (AKS) 的環境。 它可以提供特定的架構方法和參考，以準備企業規模的登陸區域。 登陸區域會遵守雲端採用架構的架構和最佳作法。
+企業級 AKS 結構集代表 Azure Kubernetes Service (AKS) 登陸區域的策略性設計路徑和目標技術狀態。 AKS 建築集會提供架構方法和參考，以準備可調整的 Azure Kubernetes Service (AKS) 叢集的登陸區域訂閱。 建築集登陸區域的執行遵循雲端採用架構的架構和最佳作法。
 
 客戶採用 AKS 的各種方式。 您可以調整此結構，以產生符合 *您* 的方式的架構，並將您的組織放在持續調整的路徑上。
 
